@@ -213,12 +213,21 @@ describe('Economics exam-topic registry', () => {
       // Section A Q8 under costs of production (the APC is national income);
       // and Section B Q8(a) and Q8(b) under government intervention (youth
       // unemployment is employment and unemployment, the national debt
-      // fiscal policy).
-      matchedAssociations: 716,
-      referenceAnomalyAssociations: 187,
+      // fiscal policy). The 2013 Ordinary review added eleven: Section A Q6
+      // under formulas and Section B Q4, Q7 and Q8 under acronyms (study-aid
+      // headings); Section A Q1 and Q6 under the labour market (the factors
+      // of production are scarcity and choice, the sofas' costs costs of
+      // production); Section A Q9 and Section B Q5(a)-(b) under growth and
+      // development (infrastructure is fiscal policy, the circular flow and
+      // consumer spending national income); Section B Q3 and Q5(a)-(b) under
+      // government intervention (labour and the public sector are filed under
+      // their own topics); and Section B Q5(c) under globalisation (the black
+      // economy is national income).
+      matchedAssociations: 705,
+      referenceAnomalyAssociations: 198,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 642,
+      matchedQuestionTopicLinks: 631,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

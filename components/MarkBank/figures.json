@@ -57279,5 +57279,96 @@
     "year": 2013,
     "level": "higher",
     "attribution": "SEC Leaving Certificate Economics 2013 Higher Level — © State Examinations Commission"
+  },
+  "economics-2013-OL-scheme-p08-q8-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2013-OL-scheme-p08-q8-diagram.png",
+    "md5": "b5e9d6100efe68bddc05798dbf4f83da",
+    "alt": "The marking scheme’s diagram: P against Q, curve 1 rising steeply, U-shaped curve 2, a falling D=AR line and a steeper falling curve 3. A line from Q1 rises to curve 2 and to D=AR; arrows run left from D=AR to P1 and from curve 2 to C1.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2013 OL Section A Q8(b)",
+    "year": 2013,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2013 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2013-OL-scheme-p09-q1a-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2013-OL-scheme-p09-q1a-diagram.png",
+    "md5": "b4fe2865147f64a02436db9fd9a06259",
+    "alt": "The marking scheme’s completed diagram: P against Q, a horizontal line D = AR = MR, a U-shaped AC curve touching it at E and an MC curve rising through E. The line is labelled P1 / C1 on the price axis, and an arrow runs down from E to Q1.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2013 OL Section B Q1(a)(ii)",
+    "year": 2013,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2013 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2013-OL-scheme-p13-q2a-graph": {
+    "src": "/exam-figures/economics/markbank/economics-2013-OL-scheme-p13-q2a-graph.png",
+    "md5": "4f15bd39d09c2533795387cdf984a698",
+    "alt": "The marking scheme’s completed graph: Price € 300 to 700 on the vertical axis and Quantity (units) 200 to 1,000 on the horizontal. A falling D/C through five dots and a rising S/C through five dots cross at 500 and 600; an arrow runs left to PE 500 and an arrow runs down to QE 600.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2013 OL Section B Q2(a)",
+    "year": 2013,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2013 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2013-OL-paper-p02-q1-table": {
+    "src": "/exam-figures/economics/markbank/economics-2013-OL-paper-p02-q1-table.png",
+    "md5": "06970543c71a636ff8ffa2c42aad07a0",
+    "alt": "Four items, Carpenter, Business Owner, Natural Gas and Buildings, above a table of the four factors, LAND, LABOUR, CAPITAL and ENTERPRISE, each with a blank Represented by box.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2013 OL Section A Q1",
+    "year": 2013,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2013 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2013-OL-paper-p04-q1-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2013-OL-paper-p04-q1-diagram.png",
+    "md5": "043c63bb588f12e3eef5cb04ec205605",
+    "alt": "A diagram with P on the vertical axis and Q on the horizontal: a horizontal line D = AR = MR, a U-shaped AC curve touching it at E and an MC curve rising through E. The labels P, Q, MC, AC, AR and MR are underlined.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2013 OL Section B Q1(a)",
+    "year": 2013,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2013 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2013-OL-paper-p05-q2a-table": {
+    "src": "/exam-figures/economics/markbank/economics-2013-OL-paper-p05-q2a-table.png",
+    "md5": "dd77a9d868e4e964653eeda337f031c9",
+    "alt": "A table: Price € 300, 400, 500, 600, 700; Quantity Demanded (units) 1,000, 800, 600, 400, 200; Quantity Supplied (units) 200, 400, 600, 800, 1,000.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2013 OL Section B Q2(a)",
+    "year": 2013,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2013 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2013-OL-paper-p07-q5-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2013-OL-paper-p07-q5-diagram.png",
+    "md5": "5d8af79f4da394b26f491ae32bb61bbe",
+    "alt": "A circular flow diagram of an open economy without government: Households and Firms joined by Supply factors of production and Supply goods & services, with Financial Institutions and Foreign Markets below. Line 1 runs from firms to households across the top, line 2 from households to firms, line 3 from households to financial institutions, line 4 from households to foreign markets, and line 5 from foreign markets up to firms; Investment runs from financial institutions to firms.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2013 OL Section B Q5",
+    "year": 2013,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2013 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2013-OL-paper-p03-q8-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2013-OL-paper-p03-q8-diagram.png",
+    "md5": "c20f3abbbefa69848fc81bfba2e66186",
+    "alt": "A diagram: P against Q, curve 1 rising steeply, U-shaped curve 2, a falling D=AR line and a steeper falling curve 3, with a line down to Q1; beside it an answer box with rows for curves 1, 2 and 3 and a blank Name column.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2013 OL Section A Q8",
+    "year": 2013,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2013 Ordinary Level — © State Examinations Commission"
   }
 }

@@ -23,6 +23,7 @@ import ordinary2015Review from '../scripts/markbank/authoring/reviews/economics-
 import higher2014Review from '../scripts/markbank/authoring/reviews/economics-2014-hl-ev.json';
 import ordinary2014Review from '../scripts/markbank/authoring/reviews/economics-2014-ol-ev.json';
 import higher2013Review from '../scripts/markbank/authoring/reviews/economics-2013-hl-ev.json';
+import ordinary2013Review from '../scripts/markbank/authoring/reviews/economics-2013-ol-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -332,10 +333,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // Old syllabus English: every sitting from 2013 Higher through 2020 Higher reviewed (variants 19-32).
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(34);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(40);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(32);
+    // Old syllabus English: every sitting from 2013 through 2020 Higher reviewed (variants 19-33).
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(33);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(39);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(33);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -1578,6 +1579,66 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     // No stem carries a table's text: each table is the crop beside the ask.
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Disposable Income Savings',
       'STATEMENT ELASTIC', ' at 1m', ' at 2m']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 70 independently counted 2013 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2013);
+    const tasks = ordinary2013Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(70);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2013Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2013, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2013 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75.
+      const total = question.tasks.reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2013 Ordinary ladders at their printed steps and reads each Statement / Explanation row whole', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2013-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    for (const [id, steps] of [['sa-q1', [6, 6, 2, 2]], ['sa-q2', [6, 6, 2, 2]], ['sa-q4', [10, 3, 3]], ['sa-q6-a', [3, 2, 2, 2]],
+      ['sb-q6-a-ii', [6, 2]], ['sb-q6-a-iii', [8, 4]], ['sb-q6-b-i', [8, 4]], ['sb-q6-c-ii', [8, 4]], ['sb-q6-c-iii', [8, 4]],
+      ['sb-q7-a-ii', [8, 4]], ['sb-q7-a-iii', [8, 4]], ['sb-q7-b-i', [8, 4]], ['sb-q7-b-ii', [8, 4]], ['sb-q7-c-iii', [8, 4]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // The printed items that must be read to answer follow the ask.
+    expect(card('sa-q2').questionText).toContain('(iv) The state of the firm’s production technology.');
+    expect(card('sa-q4').questionText).toContain('Transactionary Precautionary Speculative');
+    // A Statement / Explanation row is the statement with its own explanation, never a neighbour's.
+    expect(card('sb-q5-c-ii').rows[0].group!.options).toContain(
+      'Unemployment — Those who have lost jobs cannot afford VAT inclusive prices and/or are prepared to take a job for cash only, to avoid paying income tax.');
+    expect(card('sb-q7-c-iii').rows[0].group!.options[0].startsWith('Employment — The Irish MNCs will create jobs')).toBe(true);
+    // Section B Q4(c): all three measures, each one argument in favour and one against at 5.
+    expect(card('sb-q4-c').rows.map(r => r.marks)).toEqual([5, 5, 5, 5, 5, 5]);
+    for (const c of ORDINARY.filter(item => item.year === 2013 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = ORDINARY.filter(c => c.year === 2013)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    // No list numeral or table header reaches a card, and no stem carries a table's text.
+    expect(text).not.toMatch(/"\d\. [A-Z]/);
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Statement Explanation',
+      'Quantity Demanded', 'ANSWER BOX']) {
       expect(text, junk).not.toContain(junk);
     }
   });

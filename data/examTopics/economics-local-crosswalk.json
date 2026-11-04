@@ -18,11 +18,11 @@
     "referenceReportedAssociations": 1851,
     "referenceOfficialAssociations": 1120,
     "referenceMockAssociations": 731,
-    "matchedAssociations": 716,
+    "matchedAssociations": 705,
     "sourceBlockedAssociations": 217,
-    "referenceAnomalyAssociations": 187,
+    "referenceAnomalyAssociations": 198,
     "matchedLogicalCards": 517,
-    "matchedQuestionTopicLinks": 642,
+    "matchedQuestionTopicLinks": 631,
     "retainedLocalLogicalCards": 32,
     "localPaperVariants": 66,
     "localPhysicalMappings": 1098,
@@ -13933,7 +13933,7 @@
       "section": "B",
       "question": 3,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -13941,7 +13941,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B3"
-      }
+      },
+      "reason": "Reviewed SEC source: Labour, wage differentials, occupational mobility and the IT skills shortage are The Labour Market (2-1); the public sector and its numbers are Fiscal Policy & the Budget (3-1), and its job losses also Employment & Unemployment (3-2). Eight tasks totalling 75. a(i) 7; a(ii) 2 at 6 (3 + 3) from eight; a(iii) the definition 4 + one factor 2 from six. b(i) the public sector 5 + an example 5; b(ii) one reason at 6 (3 + 3) from three; b(iii) 2 at 5 (2 + 3) from six. c(i) 2 at 6 (3 + 3) from five; c(ii) any 2 actions at 6 (3 + 3), from any two of the three groups."
     },
     {
       "topicId": "economics-ordinary-24-government-intervention",
@@ -13971,7 +13972,7 @@
       "section": "B",
       "question": 5,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -13979,7 +13980,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B5"
-      }
+      },
+      "reason": "Reviewed SEC source: The circular flow, consumer expenditure and the black economy are National Income (3-0), as earlier reviews file the black economy; the government’s actions to raise spending are Fiscal Policy & the Budget (3-1). Seven tasks totalling 75. a(i) the five lines at 4; a(ii) the three activities 3 + 3 + 4. b(i) 2 at 5 (2 + 3) from six; b(ii) 2 at 5 (2 + 3) from six. c(i) 5 one example from two; c(ii) 2 at 5 (2 + 3) from four; c(iii) 2 at 5 (2 + 3) from five."
     },
     {
       "topicId": "economics-ordinary-24-government-intervention",
@@ -15638,7 +15640,7 @@
       "section": "A",
       "question": 1,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -15646,7 +15648,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "1"
-      }
+      },
+      "reason": "Reviewed SEC source: The factors of production and their examples are Scarcity & Choice (0-1). The four spaces: 2 at 6 + 2 at 2, the first two correct 6 each: one card."
     },
     {
       "topicId": "economics-ordinary-32-the-labour-market",
@@ -15657,7 +15660,7 @@
       "section": "A",
       "question": 6,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -15665,7 +15668,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "reason": "Reviewed SEC source: Fixed and variable costs, total cost and profit are Costs of Production, Revenue & Profit (1-5). a the four costs placed, 1 at 3 + 3 at 2; b(i) 5 the total cost; b(ii) 3 the profit."
     },
     {
       "topicId": "economics-ordinary-32-the-labour-market",
@@ -18372,7 +18376,7 @@
       "section": "A",
       "question": 9,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -18380,7 +18384,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "9"
-      }
+      },
+      "reason": "Reviewed SEC source: Public infrastructure spending is Fiscal Policy & the Budget (3-1), as capital spending; a public hospital is also Government Intervention (1-3). The explanation 7 (any one of three) + one benefit 10 from five: one card, two rows."
     },
     {
       "topicId": "economics-ordinary-51-economic-growth-development",
@@ -18410,7 +18415,7 @@
       "section": "B",
       "question": 5,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -18418,7 +18423,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B5"
-      }
+      },
+      "reason": "Reviewed SEC source: The circular flow, consumer expenditure and the black economy are National Income (3-0), as earlier reviews file the black economy; the government’s actions to raise spending are Fiscal Policy & the Budget (3-1). Seven tasks totalling 75. a(i) the five lines at 4; a(ii) the three activities 3 + 3 + 4. b(i) 2 at 5 (2 + 3) from six; b(ii) 2 at 5 (2 + 3) from six. c(i) 5 one example from two; c(ii) 2 at 5 (2 + 3) from four; c(iii) 2 at 5 (2 + 3) from five."
     },
     {
       "topicId": "economics-ordinary-51-economic-growth-development",
@@ -19010,7 +19016,7 @@
       "section": "B",
       "question": 5,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -19018,7 +19024,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B5"
-      }
+      },
+      "reason": "Reviewed SEC source: The circular flow, consumer expenditure and the black economy are National Income (3-0), as earlier reviews file the black economy; the government’s actions to raise spending are Fiscal Policy & the Budget (3-1). Seven tasks totalling 75. a(i) the five lines at 4; a(ii) the three activities 3 + 3 + 4. b(i) 2 at 5 (2 + 3) from six; b(ii) 2 at 5 (2 + 3) from six. c(i) 5 one example from two; c(ii) 2 at 5 (2 + 3) from four; c(iii) 2 at 5 (2 + 3) from five."
     },
     {
       "topicId": "economics-ordinary-52-globalisation",
@@ -19718,7 +19725,7 @@
       "section": "B",
       "question": 4,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -19726,7 +19733,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B4"
-      }
+      },
+      "reason": "Reviewed SEC source: Privatisation is Government Intervention (1-3), as earlier reviews file it; VAT and the Budget 2013 measures are Fiscal Policy & the Budget (3-1); a sugar tax is Government Intervention (1-3). Seven tasks totalling 75. a(i) 5; a(ii) 2 at 5 (2 + 3) from seven; a(iii) 2 at 5 (2 + 3) from seven. b(i) 5; b(ii) 2 at 5 (2 + 3) from five; b(iii) 1 at 5 (2 + 3) from five. c each of the three measures one argument in favour 5 (2 + 3) and one against 5 (2 + 3): one card, six heading rows."
     },
     {
       "topicId": "economics-ordinary-acronyms",
@@ -19737,7 +19745,7 @@
       "section": "B",
       "question": 7,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -19745,7 +19753,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B7"
-      }
+      },
+      "reason": "Reviewed SEC source: Imports, their benefits, restricting them and tourism are International Trade & Competitiveness (4-2); Irish multinationals are Globalisation (4-1). Eight tasks totalling 75. a(i) 2 one example from three; a(ii) and a(iii) the 1st 8 (6 + 2) and the 2nd 4 (2 + 2), from five and from eight. b(i) and b(ii) the 1st 8 (6 + 2) and the 2nd 4 (2 + 2), from seven and from five. c(i) 9; c(ii) 4 one MNC from four; c(iii) the 1st benefit 8 and the 2nd 4 from six."
     },
     {
       "topicId": "economics-ordinary-acronyms",
@@ -19756,7 +19765,7 @@
       "section": "B",
       "question": 8,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -19764,7 +19773,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B8"
-      }
+      },
+      "reason": "Reviewed SEC source: DIRT is Fiscal Policy & the Budget (3-1), as 2015 OL files it; savings, the banks and the characteristics of money are Financial Sector (3-4); the ECB is Monetary Policy & Inflation (3-3); the euro’s advantages and disadvantages for Ireland are Globalisation (4-1), and its interest rates also Monetary Policy & Inflation (3-3). Eight tasks totalling 75. a(i) 7; a(ii) 2 at 5 (2 + 3) from nine; a(iii) one advantage 4 + one disadvantage 4: two heading rows. b(i) one reason at 6 (3 + 3) from three; b(ii) one effect per group at 6 (3 + 3): three heading rows. c(i) 6; c(ii) durable 4 + two other characteristics at 4 from five; c(iii) one advantage 4 + one disadvantage 4: two heading rows."
     },
     {
       "topicId": "economics-ordinary-acronyms",
@@ -20252,7 +20262,7 @@
       "section": "A",
       "question": 6,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -20260,7 +20270,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "reason": "Reviewed SEC source: Fixed and variable costs, total cost and profit are Costs of Production, Revenue & Profit (1-5). a the four costs placed, 1 at 3 + 3 at 2; b(i) 5 the total cost; b(ii) 3 the profit."
     },
     {
       "topicId": "economics-ordinary-formulas",
@@ -20867,7 +20878,7 @@
     "subjectId": "economics",
     "authority": "SEC question paper; canonical curriculum node IDs",
     "reviewedAt": "2026-11-04",
-    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2013 Higher, 2014-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 34 physical variants pending.",
+    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2013-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 33 physical variants pending.",
     "questions": [
       {
         "level": "higher",
@@ -29606,6 +29617,279 @@
         ],
         "reason": "Youth unemployment and the measures against it are Employment & Unemployment (3-2); the national debt is Fiscal Policy & the Budget (3-1); an ageing population is Economic Growth (3-5), as 2015 HL files it, and its pressures on pensions and the labour supply Fiscal Policy & the Budget (3-1) and The Labour Market (2-1). Five tasks totalling 75. a(i) 3 at 5 (2 + 3) from seven; a(ii) 3 at 5 (2 + 3) from nine. b(i) 3 at 6 (3 + 3) from six; b(ii) 2 at 6 (3 + 3) from five. c 3 at 5 (2 + 3) from six.",
         "paperSha256": "81429fe2e245b2bb093263e730e4a951f1be5f51614595750bda13465dab04c1"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "1",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-0-1"
+        ],
+        "reason": "The factors of production and their examples are Scarcity & Choice (0-1). The four spaces: 2 at 6 + 2 at 2, the first two correct 6 each: one card.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "2",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-1-2"
+        ],
+        "reason": "What influences an individual firm’s supply is The Firm (Supply) (1-2). The four TRUE/FALSE answers: 2 at 6 + 2 at 2: one card.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "3",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-1-1",
+          "economics-1-2"
+        ],
+        "reason": "Consumers’ online purchasing is The Consumer (Demand) (1-1); its effects on retailers are The Firm (Supply) (1-2). One reason 10 from six + one effect for retailers 6 from five: one card, two rows.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "4",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-3-4"
+        ],
+        "reason": "Keynes’s motives for holding money are Financial Sector (3-4), as 2015 OL files them. The three motives: 10 + 3 + 3, the first correct 10: one card.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "5",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-4-0"
+        ],
+        "reason": "Aid to LDCs and its effects are Growth & Development (4-0). One reason 10 from four + one effect for LDCs 6 from five: one card, two rows.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "6",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-1-5"
+        ],
+        "reason": "Fixed and variable costs, total cost and profit are Costs of Production, Revenue & Profit (1-5). a the four costs placed, 1 at 3 + 3 at 2; b(i) 5 the total cost; b(ii) 3 the profit.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "7",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-1-3",
+          "economics-3-1"
+        ],
+        "reason": "Private health insurance and the pressure on public health services are Government Intervention (1-3); state health funding is also Fiscal Policy & the Budget (3-1). One reason 11 from five + one effect 6 from four: one card, two rows.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "8",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0"
+        ],
+        "reason": "Monopoly equilibrium is Market Structures (2-0). a the three curves at 5 (3 + 2); b 2 (1 + 1), the price and the average cost shown (hidden solution diagram).",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "9",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1",
+          "economics-1-3"
+        ],
+        "reason": "Public infrastructure spending is Fiscal Policy & the Budget (3-1), as capital spending; a public hospital is also Government Intervention (1-3). The explanation 7 (any one of three) + one benefit 10 from five: one card, two rows.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "B1",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0",
+          "economics-1-0",
+          "economics-3-1"
+        ],
+        "reason": "Perfect competition, its labels and characteristics are Market Structures (2-0); petrol and diesel prices and their effects are The Market Economy (1-0); the measures to reduce motorists’ costs (VAT, NCT, motor tax) are Fiscal Policy & the Budget (3-1). Seven cards for eight asks, totalling 75. a(i) the six labels at 4; a(ii) Q1, C1 and P1, 3 at 2 (hidden solution diagram). b(i) 7; b(ii) and (iii) share one 2 at 7 (4 + 3), a characteristic with its note: one card covers both. c(i) 4 one reason from four; c(ii) one effect per category, 2 at 5 (2 + 3): two heading rows; c(iii) 2 at 5 (2 + 3) from four.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "B2",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          5
+        ],
+        "canonicalNodeIds": [
+          "economics-1-0",
+          "economics-1-1",
+          "economics-0-1"
+        ],
+        "reason": "Demand, supply and equilibrium are The Market Economy (1-0); normal, substitute and complementary goods and a shift in demand are The Consumer (Demand) (1-1); financial and opportunity cost are Scarcity & Choice (0-1). Five cards for seven asks, totalling 75. a(i)-(iii) share one graph: D/C 10 (5 points at 2), S/C 10, the four labels at 1, and Pe and Qe 2 at 3: one card (hidden solution graph). b(i) any two of three terms at 5; b(ii) the shift 2 + its explanation 3 + two measures at 5 (2 + 3) from four. c(i) each cost 6; c(ii) the financial cost 5 + the opportunity cost 3.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "B3",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          6
+        ],
+        "canonicalNodeIds": [
+          "economics-2-1",
+          "economics-3-1",
+          "economics-3-2"
+        ],
+        "reason": "Labour, wage differentials, occupational mobility and the IT skills shortage are The Labour Market (2-1); the public sector and its numbers are Fiscal Policy & the Budget (3-1), and its job losses also Employment & Unemployment (3-2). Eight tasks totalling 75. a(i) 7; a(ii) 2 at 6 (3 + 3) from eight; a(iii) the definition 4 + one factor 2 from six. b(i) the public sector 5 + an example 5; b(ii) one reason at 6 (3 + 3) from three; b(iii) 2 at 5 (2 + 3) from six. c(i) 2 at 6 (3 + 3) from five; c(ii) any 2 actions at 6 (3 + 3), from any two of the three groups.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "B4",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          6
+        ],
+        "canonicalNodeIds": [
+          "economics-1-3",
+          "economics-3-1"
+        ],
+        "reason": "Privatisation is Government Intervention (1-3), as earlier reviews file it; VAT and the Budget 2013 measures are Fiscal Policy & the Budget (3-1); a sugar tax is Government Intervention (1-3). Seven tasks totalling 75. a(i) 5; a(ii) 2 at 5 (2 + 3) from seven; a(iii) 2 at 5 (2 + 3) from seven. b(i) 5; b(ii) 2 at 5 (2 + 3) from five; b(iii) 1 at 5 (2 + 3) from five. c each of the three measures one argument in favour 5 (2 + 3) and one against 5 (2 + 3): one card, six heading rows.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "B5",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          7
+        ],
+        "canonicalNodeIds": [
+          "economics-3-0",
+          "economics-3-1"
+        ],
+        "reason": "The circular flow, consumer expenditure and the black economy are National Income (3-0), as earlier reviews file the black economy; the government’s actions to raise spending are Fiscal Policy & the Budget (3-1). Seven tasks totalling 75. a(i) the five lines at 4; a(ii) the three activities 3 + 3 + 4. b(i) 2 at 5 (2 + 3) from six; b(ii) 2 at 5 (2 + 3) from six. c(i) 5 one example from two; c(ii) 2 at 5 (2 + 3) from four; c(iii) 2 at 5 (2 + 3) from five.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "B6",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          8
+        ],
+        "canonicalNodeIds": [
+          "economics-3-2",
+          "economics-3-5",
+          "economics-3-1",
+          "economics-2-1"
+        ],
+        "reason": "Emigration, its causes and effects, and unemployment, its measurement, causes and remedies are Employment & Unemployment (3-2); an ageing population is Economic Growth (3-5), as 2015 HL files it, and the retirement age also Fiscal Policy & the Budget (3-1) and The Labour Market (2-1). Eight tasks totalling 75. a(i) 4; a(ii) the 1st reason 6 (4 + 2) and the 2nd 2; a(iii) the 1st effect 8 (6 + 2) and the 2nd 4 (2 + 2), negative or positive. b(i) the 1st effect 8 (6 + 2) and the 2nd 4; b(ii) one reason at 9 (6 + 3) from four. c(i) 6; c(ii) the 1st reason 8 and the 2nd 4; c(iii) one measure each for consumers and the government, the 1st 8 and the 2nd 4.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "B7",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          8
+        ],
+        "canonicalNodeIds": [
+          "economics-4-2",
+          "economics-4-1"
+        ],
+        "reason": "Imports, their benefits, restricting them and tourism are International Trade & Competitiveness (4-2); Irish multinationals are Globalisation (4-1). Eight tasks totalling 75. a(i) 2 one example from three; a(ii) and a(iii) the 1st 8 (6 + 2) and the 2nd 4 (2 + 2), from five and from eight. b(i) and b(ii) the 1st 8 (6 + 2) and the 2nd 4 (2 + 2), from seven and from five. c(i) 9; c(ii) 4 one MNC from four; c(iii) the 1st benefit 8 and the 2nd 4 from six.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2013,
+        "n": "B8",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          9
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1",
+          "economics-3-4",
+          "economics-3-3",
+          "economics-4-1"
+        ],
+        "reason": "DIRT is Fiscal Policy & the Budget (3-1), as 2015 OL files it; savings, the banks and the characteristics of money are Financial Sector (3-4); the ECB is Monetary Policy & Inflation (3-3); the euro’s advantages and disadvantages for Ireland are Globalisation (4-1), and its interest rates also Monetary Policy & Inflation (3-3). Eight tasks totalling 75. a(i) 7; a(ii) 2 at 5 (2 + 3) from nine; a(iii) one advantage 4 + one disadvantage 4: two heading rows. b(i) one reason at 6 (3 + 3) from three; b(ii) one effect per group at 6 (3 + 3): three heading rows. c(i) 6; c(ii) durable 4 + two other characteristics at 4 from five; c(iii) one advantage 4 + one disadvantage 4: two heading rows.",
+        "paperSha256": "7a1c4b2981ef952d4d5ac50cd95b94d43861b29238506468e83bbe384377a5b9"
       }
     ]
   }

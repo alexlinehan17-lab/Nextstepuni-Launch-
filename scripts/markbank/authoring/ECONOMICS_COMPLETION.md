@@ -2287,3 +2287,72 @@ Checks:
 - reconcile: 1,732/2,197, with 2013 HL at 57/57.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2013 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 40 scheme pages were viewed:
+- paper pp10-12 are blank;
+- scheme pp1-4 are the cover, the note on published schemes, the title page
+  and the support notes with the index, and pp39-40 blank or the back cover.
+  The cover is in Irish ("An Ardteistiméireacht 2013 … Gnáthleibhéal"), but
+  the scheme is the English one (its title page reads LEAVING CERTIFICATE 2013
+  MARKING SCHEME ECONOMICS ORDINARY LEVEL);
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+The appenders behind the scheme file look for "Ordinary Level" on the cover
+and refuse this one. The scheme file was built with the appenders pointed at
+the file itself (gen_md_cover.sh, kept in the lane folder's economics/tools),
+and no shared code changed. The tables, block order, column runs and fractions are all appended.
+
+There are 70 routes for the 76 printed asks (15 in Section A, 61 in Section B).
+Three cards cover more than one printed ask, because the scheme prices them
+together: A Q2(i)-(iv) (2 at 6 + 2 at 2), B1(b)(ii)-(iii) (2 at 7, a
+characteristic with its note) and B2(a)(i)-(iii) (one graph). No printed
+choice is credited with a list for each side. 8 crops: 3 hidden scheme
+solutions and 5 paper data crops.
+
+Decisions:
+- Many answers sit in two-column Statement / Explanation tables. The
+  table-cell rendering prints each statement cell with its explanation on the
+  next line, so each option is "<statement> — <explanation>". Where an earlier
+  table prints the same statement cell ("Increased VAT rates", "Unemployment"
+  in B5(c)(ii), "Employment" in B7(c)(iii)), the cell rendering does not repeat
+  it, so those rows are read whole and checked against the page.
+- A Q4: "10 marks+3 marks + 3 marks" for the three motives is claimed in the
+  order the answers are correct, the first 10. The scheme does not say whether
+  the 10 belongs to the transactionary motive.
+- A Q3, A Q5, A Q7 and A Q9 price their two parts "x marks + y marks" in the
+  ask's order: the reason (or explanation) first, then the effect (or benefit).
+  A Q9's 7 + 10 shows the order is positional, not a ladder.
+- Items that must be read to answer are typed from the text layer: the A Q2
+  sentences and the A Q4 motives. The A Q1 items and table are the crop beside
+  the ask, as are the diagrams and the B2 schedule.
+- B4(c) asks for each of the three Budget 2013 measures. It is one card of six
+  heading rows, an argument for and one against each measure at 5.
+- B3(c)(ii): "ANY 2 actions at 6", one for each of two of the three groups. The
+  options keep the scheme's order (IT companies, then colleges, then the
+  government), and the note names that order.
+- Ladders are claimed at their printed steps (A Q1 and A Q2 6 + 6 + 2 + 2, A Q6(a)
+  3 + 2 + 2 + 2, B6(a)(ii) 6 + 2, and 8 + 4 on B6(a)(iii), B6(b)(i), B6(c)(ii)-(iii),
+  B7(a)(ii)-(iii), B7(b)(i)-(ii) and B7(c)(iii)).
+
+Refcheck: two short asks were read by hand (B4(b)(i), B7(c)(ii)).
+
+Topic review: 11 reference anomalies, each a commercial heading the review
+files elsewhere. A Q6 sits under formulas, and B4, B7 and B8 under acronyms
+(study-aid headings). A Q1 and A Q6 sit under the labour market, but the
+factors of production are scarcity and choice, and the sofas' costs are costs
+of production. A Q9 and B5(a)-(b) sit under growth and development, but
+infrastructure is fiscal policy, and the circular flow and consumer spending
+are national income. B3 and B5(a)-(b) sit under government intervention. B5(c)
+sits under globalisation, but the black economy is national income.
+
+Checks:
+- econ_review: 33/66.
+- build: 1,856 cards, 0 dropped.
+- Build rule: 366 claims on this paper, 0 untraceable (31 trace by halves).
+- reconcile: 1,808/2,197, with 2013 OL at 76/76.
+- refcheck: 0 wrong.
+- cardlint: clean.
