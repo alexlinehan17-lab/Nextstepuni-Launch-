@@ -364,6 +364,76 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   return { ok: true, allocation: { parts: built, directions: directions.filter(note => note && !seen.has(note) && seen.add(note)) } };
 }
 
+/** The marks a printed band table's values cover: "6-7 … 5 … 4 … 3 … 0-2", "10, 11 … 0, 1, 2, 3". */
+const bandValues = (table: string): Set<number> => {
+  const values = new Set<number>();
+  for (const match of table.matchAll(/(\d+)\s*[-–]\s*(\d+)|(\d+)/g)) {
+    if (match[3] !== undefined) values.add(Number(match[3]));
+    else for (let value = Number(match[1]); value <= Number(match[2]); value++) values.add(value);
+  }
+  return values;
+};
+const covers = (values: Set<number>, top: number) => Array.from({ length: top + 1 }, (_, value) => value).every(value => values.has(value));
+const subsetSums = (terms: number[]) => [...terms.reduce((sums, term) => new Set([...sums, ...[...sums].map(sum => sum + term)]), new Set([0]))].sort((a, b) => a - b);
+
+/** Steps a row whose marks the scheme prints a scale for, where the row is still one tick worth 0 or all of it
+ *  (coordinator decision, batch 4: step only where the scheme prints a per-point price or a ladder; never infer one):
+ *  - a count note, "Trí phointe eolais ag teastáil anseo: 2 mharc an ceann ar na trí phointe eolais", for the row's
+ *    marks: one step per point ([0, 2, 4, 6]);
+ *  - the row's own printed split, "Forbairt = 7 marc (4 mharc + 3 mharc)": the totals its parts make ([0, 3, 4, 7]),
+ *    or every mark where a band table prices each part in single marks ("Dhá phointe eolais = 6 mharc = 3 mharc +
+ *    3 mharc" under "Catagóir Marc as 3 Sármhaith 3 An-mhaith/Maith 2 Measartha 1 Lag/An-lag 0");
+ *  - a band table headed by the row's marks whose printed values cover every mark from 0 ("Catagóir Marc as 7
+ *    Sármhaith 6-7 … Lag/An-lag 0-2", "Catagóir An plé (23 marc) … 21-23 … 0-9", "Pointe eolais Marc as 6 Léiriú
+ *    sármhaith 6 … Léiriú an-lag 0-1"): every mark.
+ *  A row with steps or under a ladder is never touched; nothing is read from outside the criterion's own guidance. */
+/** The coordinator's batch-4 decision covers rows of 6 marks or more; 22 rows of 4-5 marks carry the same printed band
+ *  tables ("Pointe amháin eolais = 4 mharc" under "Catagóir Marc as 4 …") and wait for a decision of their own. */
+const MIN_STEPPED = 6;
+export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[]): IrishAllocation => {
+  const text = guidance.join(' ').replace(/\s+/g, ' ');
+  const counts = new Map<number, number[]>();
+  for (const match of text.matchAll(/(\S+)\s+phointe eolais ag teastáil(?: anseo)?:?\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais/gi)) {
+    const count = WORDS[match[1].toLowerCase()] ?? Number(match[1]);
+    const each = Number(match[2]);
+    if (count > 1 && each > 0 && (WORDS[match[3].toLowerCase()] ?? Number(match[3])) === count) counts.set(count * each, cumulative(Array(count).fill(each)));
+  }
+  const bands = new Map<number, Set<number>>();
+  const headed = /(?:Catagóir\s+Marc as (\d+)|Catagóir\s+(?:An plé|Plé|Eolas)\s*\((\d+)\s*m?h?arc\)|Pointe eolais Marc as (\d+)|Catagóir\s+Plé\s+(?=Marcanna))([\s\S]*?(?:Lag\/\s?An-lag|Léiriú an-lag)[^0-9]*?(?:\d+\s*[-–]\s*\d+|\d+(?:\s*,\s*\d+)*))/g;
+  for (const match of text.matchAll(headed)) {
+    const values = bandValues(match[4].replace(/\([^)]*\)/g, ' '));
+    // "Catagóir Plé Marcanna …" (2026) prints no price in its header: its top printed value is the price it scales.
+    const top = Number(match[1] ?? match[2] ?? match[3] ?? Math.max(...values));
+    if (covers(values, top) && Math.max(...values) === top) bands.set(top, values);
+  }
+  const splitOf = (row: IrishAnswerRow): number[] | undefined => {
+    const at = text.indexOf(row.text.slice(0, 30));
+    if (at < 0) return undefined;
+    const price = new RegExp(String.raw`^[^=]{0,200}?=\s*${row.marks}\s*m?h?arc\s*(?:=\s*|\(\s*)(\d+\s*m?h?arc(?:\s*\+\s*\d+\s*m?h?arc)+)`).exec(text.slice(at));
+    return price ? price[1].match(/\d+/g)!.map(Number) : undefined;
+  };
+  const stepsFor = (row: IrishAnswerRow): number[] | undefined => {
+    const counted = counts.get(row.marks);
+    if (counted) return counted;
+    const split = splitOf(row);
+    if (split && split.reduce((a, b) => a + b, 0) === row.marks) {
+      return split.every(part => bands.has(part)) ? range(row.marks) : subsetSums(split);
+    }
+    return bands.has(row.marks) ? range(row.marks) : undefined;
+  };
+  return {
+    ...allocation,
+    parts: allocation.parts.map(part => (part.ladder ? part : {
+      ...part,
+      rows: part.rows.map(row => {
+        if (row.steps || row.marks < MIN_STEPPED) return row;
+        const steps = stepsFor(row);
+        return steps && steps.length > 2 ? { ...row, steps } : row;
+      }),
+    })),
+  };
+};
+
 export function irishTariffsFor(source: IrishAnswerSource): IrishAllocation | undefined {
   const result = parseIrishTariffs(source);
   return result.ok ? result.allocation : undefined;

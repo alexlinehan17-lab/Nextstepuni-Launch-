@@ -13586,7 +13586,8 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an úsáid a bhaineann an file as do rogha ceann amháin díobh seo a leanas chun an príomhthéama sin a chur in iúl: íomhánna, codarsnacht nó mothúcháin. Eolas = 13 mharc Príomhthéama = 2 mharc Plé ar an úsáid a bhaineann an file as íomhánna (dhá cheann, ar a laghad ag teastáil) nó codarsnacht (dhá phointe eolais, ar a laghad ag teastáil) nó mothúcháin (dhá cheann, ar a laghad ag teastáil) = 11 mharc Mura ndéantar ach sampla nó pointe eolais amháin a phlé, tá an freagra easnamhach. Gaeilge (5 mharc) Sárchumas maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Cumas an-mhaith maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Cumas maith maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Cumas measartha maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Cumas lag/an-lag maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht)"
+            "Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an úsáid a bhaineann an file as do rogha ceann amháin díobh seo a leanas chun an príomhthéama sin a chur in iúl: íomhánna, codarsnacht nó mothúcháin. Eolas = 13 mharc Príomhthéama = 2 mharc Plé ar an úsáid a bhaineann an file as íomhánna (dhá cheann, ar a laghad ag teastáil) nó codarsnacht (dhá phointe eolais, ar a laghad ag teastáil) nó mothúcháin (dhá cheann, ar a laghad ag teastáil) = 11 mharc Mura ndéantar ach sampla nó pointe eolais amháin a phlé, tá an freagra easnamhach. Gaeilge (5 mharc) Sárchumas maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Cumas an-mhaith maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Cumas maith maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Cumas measartha maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht) Cumas lag/an-lag maidir leis na príomhghnéithe de cheart na teanga (gramadach, comhréir, struchtúr, deilbhíocht)",
+            "Catagóir Plé (11 mharc) Marcanna Sármhaith Plé sármhaith le tagairtí cruinne, ábhartha agus téagartha don dán 10-11 An-mhaith Plé an-mhaith le tagairtí cruinne, ábhartha agus téagartha don dán 8-9 Maith Plé maith le tagairtí cruinne, ábhartha agus téagartha don dán 6-7 Measartha Eolas bearnach nó míchruinn nó lochtach 4-5 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-3"
           ]
         },
         {
@@ -32125,7 +32126,8 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an léiriú a thugtar dúinn ar an bpríomhthéama sin ó thús deireadh an dáin. Eolas = 13 mharc Príomhthéama = 2 mharc Plé ar an léiriú a thugtar ar an bpríomhthéama = 11 mharc"
+            "Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an léiriú a thugtar dúinn ar an bpríomhthéama sin ó thús deireadh an dáin. Eolas = 13 mharc Príomhthéama = 2 mharc Plé ar an léiriú a thugtar ar an bpríomhthéama = 11 mharc",
+            "Catagóir Plé (11 mharc) Marcanna Sármhaith Plé sármhaith le tagairtí cruinne, ábhartha agus téagartha don dán 10-11 An-mhaith Plé an-mhaith le tagairtí cruinne, ábhartha agus téagartha don dán 8-9 Maith Plé maith le tagairtí cruinne, ábhartha agus téagartha don dán 6-7 Measartha Plé measartha Eolas bearnach, míchruinn agus lochtach 4-5 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-3"
           ]
         },
         {
@@ -32143,7 +32145,7 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "Cén ghné den dán is fearr leat? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) Eolas = 5 mharc An ghné a lua = 1 mharc Pointe amháin eolais faoin ngné áirithe sin = 4 mharc Mar phointe eolais, ní mór don iarrthóir míniú a thabhairt ar an ngné sin i gcomhthéacs an dáin agus tagairtí a úsáid do línte cuí an dáin. Catagóir Plé (11 mharc) Marcanna Sármhaith Plé sármhaith le tagairtí cruinne, ábhartha agus téagartha don dán 10-11 An-mhaith Plé an-mhaith le tagairtí cruinne, ábhartha agus téagartha don dán 8-9 Maith Plé maith le tagairtí cruinne, ábhartha agus téagartha don dán 6-7 Measartha Plé measartha Eolas bearnach, míchruinn agus lochtach 4-5 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-3 Catagóir Marc as 4 Sármhaith An-mhaith Maith Measartha Lag/An-lag"
+            "Cén ghné den dán is fearr leat? (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) Eolas = 5 mharc An ghné a lua = 1 mharc Pointe amháin eolais faoin ngné áirithe sin = 4 mharc Mar phointe eolais, ní mór don iarrthóir míniú a thabhairt ar an ngné sin i gcomhthéacs an dáin agus tagairtí a úsáid do línte cuí an dáin. Catagóir Marc as 4 Sármhaith An-mhaith Maith Measartha Lag/An-lag"
           ]
         },
         {
@@ -41481,7 +41483,8 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "(a) (i) Maidir le dán seanaimseartha roghnach (dán a cumadh sa tréimhse roimh 1850) a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dáin. Eolas = 13 mharc Príomhthéama = 2 mharc Plé ar fhorbairt an phríomhthéama sin ó thús deireadh an dáin = 11 mharc"
+            "(a) (i) Maidir le dán seanaimseartha roghnach (dán a cumadh sa tréimhse roimh 1850) a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dáin. Eolas = 13 mharc Príomhthéama = 2 mharc Plé ar fhorbairt an phríomhthéama sin ó thús deireadh an dáin = 11 mharc",
+            "Catagóir Plé (11 mharc) Marcanna Sármhaith Plé sármhaith le tagairtí cruinne, ábhartha agus téagartha don dán 10-11 An-mhaith Plé an-mhaith le tagairtí cruinne, ábhartha agus téagartha don dán 8-9 Maith Plé maith le tagairtí cruinne, ábhartha agus téagartha don dán 6-7 Measartha Plé measartha Eolas bearnach, míchruinn agus lochtach 4-5 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-3"
           ]
         },
         {
@@ -41519,7 +41522,7 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "(iii) Scríobh síos an teicníc fhileata is mó a thaitníonn leat sa dán. Tabhair dhá phointe eolais as an dán faoin teicníc sin. Eolas = 7 marc An teicníc fhileata a lua = 1 mharc Dhá phointe eolais = 3 mharc + 3 mharc Catagóir Plé (11 mharc) Marcanna Sármhaith Plé sármhaith le tagairtí cruinne, ábhartha agus téagartha don dán 10-11 An-mhaith Plé an-mhaith le tagairtí cruinne, ábhartha agus téagartha don dán 8-9 Maith Plé maith le tagairtí cruinne, ábhartha agus téagartha don dán 6-7 Measartha Plé measartha Eolas bearnach, míchruinn agus lochtach 4-5 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-3 Pointe eolais Marc as 4 Sármhaith 4 An-mhaith 3 Maith 2 Measartha 1 Lag/An-lag 0"
+            "(iii) Scríobh síos an teicníc fhileata is mó a thaitníonn leat sa dán. Tabhair dhá phointe eolais as an dán faoin teicníc sin. Eolas = 7 marc An teicníc fhileata a lua = 1 mharc Dhá phointe eolais = 3 mharc + 3 mharc Pointe eolais Marc as 4 Sármhaith 4 An-mhaith 3 Maith 2 Measartha 1 Lag/An-lag 0"
           ]
         },
         {
@@ -41596,7 +41599,8 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "(b) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an léiriú a thugtar ar an bpríomhthéama sin ó thús deireadh an dáin. Eolas = 13 mharc Príomhthéama = 2 mharc Plé ar an léiriú a thugtar ar an bpríomhthéama sin ó thús deireadh an dáin = 11 mharc"
+            "(b) (i) Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa, scríobh síos príomhthéama an dáin, dar leat. Déan plé ar an léiriú a thugtar ar an bpríomhthéama sin ó thús deireadh an dáin. Eolas = 13 mharc Príomhthéama = 2 mharc Plé ar an léiriú a thugtar ar an bpríomhthéama sin ó thús deireadh an dáin = 11 mharc",
+            "Catagóir Plé (11 mharc) Marcanna Sármhaith Plé sármhaith le tagairtí cruinne, ábhartha agus téagartha don dán 10-11 An-mhaith Plé an-mhaith le tagairtí cruinne, ábhartha agus téagartha don dán 8-9 Maith Plé maith le tagairtí cruinne, ábhartha agus téagartha don dán 6-7 Measartha Plé measartha Eolas bearnach, míchruinn agus lochtach 4-5 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-3"
           ]
         },
         {
@@ -41614,7 +41618,7 @@
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "(ii) Cén teicníc fhileata is mó a théann i bhfeidhm ort sa dán seo? Eolas = 5 mharc (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) An teicníc fhileata a lua = 1 mharc Pointe amháin eolais = 4 mharc   Catagóir Plé (11 mharc) Marcanna Sármhaith Plé sármhaith le tagairtí cruinne, ábhartha agus téagartha don dán 10-11 An-mhaith Plé an-mhaith le tagairtí cruinne, ábhartha agus téagartha don dán 8-9 Maith Plé maith le tagairtí cruinne, ábhartha agus téagartha don dán 6-7 Measartha Plé measartha Eolas bearnach, míchruinn agus lochtach 4-5 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-3 Pointe eolais Marc as 4 Sármhaith 4 An-mhaith 3 Maith 2 Measartha 1 Lag/An-lag 0"
+            "(ii) Cén teicníc fhileata is mó a théann i bhfeidhm ort sa dán seo? Eolas = 5 mharc (Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.) An teicníc fhileata a lua = 1 mharc Pointe amháin eolais = 4 mharc Pointe eolais Marc as 4 Sármhaith 4 An-mhaith 3 Maith 2 Measartha 1 Lag/An-lag 0"
           ]
         },
         {
