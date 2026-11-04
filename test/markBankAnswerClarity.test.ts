@@ -287,19 +287,20 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     };
     for (const { card, criteria } of irishCards) for (const criterion of criteria) if (criterion.allocation) checkAllocation(card, criterion);
     const unstructured = (criteria: typeof irishCards[number]['criteria']) => criteria.some(criterion => priced(criterion) && !criterion.allocation);
-    expect(exact).toHaveLength(527);
+    expect(exact).toHaveLength(569);
     const structured = exact.filter(({ criteria }) => !unstructured(criteria));
-    expect(structured).toHaveLength(523);
+    expect(structured).toHaveLength(567);
 
-    // What is still prose, pinned by id: four reading excerpts on main's cards whose answers the scheme
-    // prices in a shape answers.ts does not read yet (unpriced bullets under a ladder, a section total
-    // inside the excerpt). They had no rows on main either; the 2022 Higher Fógra a hAon, whose tariff lines the
-    // text layer broke, has rows since its paper review cut one criterion per printed question. Every reviewed
-    // practice card now carries the rows of its printed scheme.
+    // What is still prose, pinned by id: two 2021 Ordinary reading excerpts on main's cards whose answers the scheme
+    // prices in a shape answers.ts does not read yet (unpriced bullets under a ladder). They had no rows on main
+    // either. The archive review cuts one criterion per printed part: the 2022 Higher Fógra a hAon (tariff lines the
+    // text layer broke) and Léamhthuiscint B Q1 and Q5 (a price inside the qualifier's brackets, a split printed
+    // before the brace) have rows since their papers were reviewed. Every reviewed practice card carries the rows
+    // of its printed scheme.
     // Fix one and take it off this list.
     const fallback = exact.filter(({ criteria }) => unstructured(criteria));
     expect(fallback.map(({ card }) => card.id).sort()).toEqual([
-      'irish-2021-ol-p2-reading-a-q2', 'irish-2021-ol-p2-reading-b-q5', 'irish-2022-hl-p2-reading-b-q1', 'irish-2022-hl-p2-reading-b-q5',
+      'irish-2021-ol-p2-reading-a-q2', 'irish-2021-ol-p2-reading-b-q5',
     ]);
 
     // Literature: the Eolas criterion prices what the student must do ("Príomhthéama = 2 mharc",
@@ -309,7 +310,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(literature).toHaveLength(261);
     // An option whose tariff summary the parser does not read yet, pinned by id.
     expect(literature.filter(({ criteria }) => unstructured(criteria)).map(({ card }) => card.id).sort()).toEqual([
-      'irish-2022-hl-p2-poetry-3b-a', 'irish-2025-ol-p2-poetry-3a-a',
+      'irish-2025-ol-p2-poetry-3a-a',
     ]);
     // Every other exact criterion (the Ordinary composition "Tasc" 0/2 tariffs) is already a button;
     // the welded ones are the exact criteria above that are still prose.

@@ -111,6 +111,11 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   // A SymbolMT bullet the builders have not yet repaired (U+F0B7) and a repaired one (•) cut alike.
   let text = ownLines.join(' ').split(BULLET).join(' • ').replace(/•/g, ' • ');
   text = text.replace(QUALIFIED_PRICE, (_, price: string, qualifier: string) => `: ${qualifier} ${price}`);
+  // A price printed inside the qualifier's brackets, "(gan aon cháiliú = 1 mharc)", reads as the qualified price above.
+  text = text.replace(/\s*\((gan\s[^()=]*?)\s*(=\s*\d+\s*m?h?arc\b)\)/g, (_, qualifier: string, price: string) => `: (${qualifier}) ${price}`);
+  // A split printed before the brace, "(Dhá bhealach: 2 mharc + 1 mharc) {3 mharc}", is the brace's own split.
+  text = text.replace(/\((Dhá\s[^():]*):\s*(\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)+)\)\s*\{\s*(\d+\s*m?h?arc\b)\s*\}/g,
+    (_, label: string, split: string, total: string) => `(${label}) {${total}: ${split}}`);
   text = text.replace(SUFFICES, note => { directions.push(tidy(note)); return ' '; });
   text = text.replace(/\s+/g, ' ').trim().replace(HEADER, '');
   text = text.replace(NOTE, (_, note: string) => { directions.push(tidy(note)); return ' '; });

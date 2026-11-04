@@ -14,6 +14,7 @@ import inventory from '../scripts/markbank/authored/irish-archive-inventory.json
 import higher2022P1 from '../scripts/markbank/authored/irish-higher-2022-p1-component-review.json';
 import ordinary2022P1 from '../scripts/markbank/authored/irish-ordinary-2022-p1-component-review.json';
 import ordinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
+import higher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import { irishMarks } from '../components/MarkBank/SessionScreen';
@@ -74,17 +75,21 @@ describe('Irish archive review: Paper 1 (listening and composition)', () => {
 
 const PAPER_TWO = [
   { file: ordinary2022P2, fileid: 'LC001GLP200IV.pdf', legacy: 22, practice: 42, readingWhole: 10 },
+  { file: higher2022P2, fileid: 'LC001ALP200IV.pdf', legacy: 27, practice: 42, readingWhole: 12 },
 ];
+// The Higher files name their added cards readingPracticeCardIds, the Ordinary ones practiceCardIds.
+const practiceIds = (review: { practiceCardIds?: string[]; readingPracticeCardIds?: string[] }) =>
+  review.practiceCardIds ?? review.readingPracticeCardIds ?? [];
 
 describe('Irish archive review: Paper 2 (reading and literature)', () => {
   for (const paper of PAPER_TWO) {
     const { review } = paper.file;
     it(`${review.year} ${review.level} ${paper.fileid}: ${paper.legacy} retained cards and ${paper.practice} practice parts`, () => {
       expect(review.legacyCardIds).toHaveLength(paper.legacy);
-      expect(review.practiceCardIds).toHaveLength(paper.practice);
+      expect(practiceIds(review)).toHaveLength(paper.practice);
       expect(review.readingWholeCardIds).toHaveLength(paper.readingWhole);
-      expect(paper.file.cards.map(c => c.id).sort()).toEqual([...review.practiceCardIds].sort());
-      for (const id of [...review.legacyCardIds, ...review.practiceCardIds]) {
+      expect(paper.file.cards.map(c => c.id).sort()).toEqual([...practiceIds(review)].sort());
+      for (const id of [...review.legacyCardIds, ...practiceIds(review)]) {
         const c = card(id);
         expect(tariffReconciles(c), id).toBe(true);
         expect(irishMarks(c, irishFullScores(c)), id).toBe(c.totalMarks);
@@ -98,7 +103,7 @@ describe('Irish archive review: Paper 2 (reading and literature)', () => {
         for (const criterion of parts) expect(criterion.allocation, `${id} ${criterion.id}`).toBeDefined();
       }
       const row = inventory.papers.find(p => p.key === `${review.year}|${review.level}|${paper.fileid}`)!;
-      expect(row.markBankCardIds.slice().sort()).toEqual([...review.legacyCardIds, ...review.practiceCardIds].sort());
+      expect(row.markBankCardIds.slice().sort()).toEqual([...review.legacyCardIds, ...practiceIds(review)].sort());
       expect(row).toMatchObject({ fullVisualReview: 'complete', bankAtlasTaskParity: 'complete', partAndSelectionReconciliation: 'complete' });
     });
   }
