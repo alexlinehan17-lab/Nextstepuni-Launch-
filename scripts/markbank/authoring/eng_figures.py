@@ -573,6 +573,13 @@ REJECTED = {
     # 2020 Higher, looked at 2026-11-04 (the residue cuts it by eye):
     **{(2020, 'hl', 8, 'a', r): 'a stray "d" from the ask in its corner'
        for r in ('i', 'ii')},
+    # 2016 Ordinary, looked at 2026-11-04 (the residue cuts each by eye):
+    (2016, 'ol', 1, 'm', None): 'takes in the page footer "Page 2 of 7"',
+    **{(2016, 'ol', 2, 'a', r): 'takes in Question 2\'s head and (a)\'s prose'
+       for r in ('i', 'ii')},
+    **{(2016, 'ol', 5, 'a', r): 'cuts off the first drawing of A and half of C'
+       for r in ('i', 'ii')},
+    (2016, 'ol', 6, 'a', None): 'cuts the four drawings off at the waist',
     # 2016 Higher, looked at 2026-11-04 (the residue cuts each by eye):
     **{(2016, 'hl', 2, 'b', r): 'the axes sketch alone; the card shows it under the '
                                 'results table'

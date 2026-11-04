@@ -304,6 +304,12 @@ WELDED_HEADS = {
     # split off, Question 4's head filed as the tail of Q3(g), and its (a)-(d)
     # were read as repeats of Q3's letters and lost.
     ('biology', 2012, 'ol'): ['(g) An organ is a group of systems. T F'],
+    # 2016 OL Engineering page 3 sets Question 2's "(a)" on a line of its own
+    # under the head, and the text layer reads it into the head's block after
+    # "(45 marks)", with no full stop before it for TRAILING_MARKER to carry.
+    # With no (a) read, (b), (c) and (d) were not taken as letters either, and
+    # Question 2's asks filed as three letterless romans.
+    ('engineering', 2016, 'ol'): ['Question 2. (45 marks)'],
 }
 # Subjects where a letter going BACKWARDS inside a question is never a new
 # part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'
