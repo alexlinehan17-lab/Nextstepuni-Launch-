@@ -1393,6 +1393,20 @@ const economicsAdditionIds = new Set([
   'econ-2015-ol-sb-q7-b-ii', 'econ-2015-ol-sb-q7-c-i', 'econ-2015-ol-sb-q7-c-ii', 'econ-2015-ol-sb-q8-a-i',
   'econ-2015-ol-sb-q8-a-ii', 'econ-2015-ol-sb-q8-a-iii', 'econ-2015-ol-sb-q8-b-i', 'econ-2015-ol-sb-q8-b-ii',
   'econ-2015-ol-sb-q8-b-iii', 'econ-2015-ol-sb-q8-c-i', 'econ-2015-ol-sb-q8-c-ii',
+  // 2014 Higher (old syllabus, the paper's first cards, 2026-11-04): 54, none replacing a frozen ID
+  'econ-2014-hl-sa-q1', 'econ-2014-hl-sa-q2-i', 'econ-2014-hl-sa-q2-ii', 'econ-2014-hl-sa-q3', 'econ-2014-hl-sa-q4',
+  'econ-2014-hl-sa-q5', 'econ-2014-hl-sa-q6', 'econ-2014-hl-sa-q7', 'econ-2014-hl-sa-q8', 'econ-2014-hl-sa-q9',
+  'econ-2014-hl-sb-q1-a-i', 'econ-2014-hl-sb-q1-a-ii', 'econ-2014-hl-sb-q1-b-i', 'econ-2014-hl-sb-q1-b-ii',
+  'econ-2014-hl-sb-q1-b-iii', 'econ-2014-hl-sb-q1-c-i', 'econ-2014-hl-sb-q1-c-ii', 'econ-2014-hl-sb-q2-a-i',
+  'econ-2014-hl-sb-q2-a-ii', 'econ-2014-hl-sb-q2-b-i', 'econ-2014-hl-sb-q2-b-ii', 'econ-2014-hl-sb-q2-c',
+  'econ-2014-hl-sb-q3-a-i', 'econ-2014-hl-sb-q3-a-ii', 'econ-2014-hl-sb-q3-b', 'econ-2014-hl-sb-q3-c-i',
+  'econ-2014-hl-sb-q3-c-ii', 'econ-2014-hl-sb-q4-a', 'econ-2014-hl-sb-q4-b-i', 'econ-2014-hl-sb-q4-b-ii',
+  'econ-2014-hl-sb-q4-c-i', 'econ-2014-hl-sb-q4-c-ii', 'econ-2014-hl-sb-q5-a-i', 'econ-2014-hl-sb-q5-a-ii',
+  'econ-2014-hl-sb-q5-a-iii', 'econ-2014-hl-sb-q5-a-iv', 'econ-2014-hl-sb-q5-b', 'econ-2014-hl-sb-q5-c-i',
+  'econ-2014-hl-sb-q5-c-ii', 'econ-2014-hl-sb-q5-c-iii', 'econ-2014-hl-sb-q6-a-i', 'econ-2014-hl-sb-q6-a-ii',
+  'econ-2014-hl-sb-q6-b', 'econ-2014-hl-sb-q6-c', 'econ-2014-hl-sb-q7-a-i', 'econ-2014-hl-sb-q7-a-ii',
+  'econ-2014-hl-sb-q7-b-i', 'econ-2014-hl-sb-q7-b-ii', 'econ-2014-hl-sb-q7-c-i', 'econ-2014-hl-sb-q7-c-ii',
+  'econ-2014-hl-sb-q8-a', 'econ-2014-hl-sb-q8-b-i', 'econ-2014-hl-sb-q8-b-ii', 'econ-2014-hl-sb-q8-c',
 ]);
 const economicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('econ-'));
 /* Agricultural Science keeps its 869 pre-audit IDs frozen (438 Higher + 431
@@ -1710,7 +1724,8 @@ describe('Mark Bank card preservation', () => {
     // + 62 for 2016 Higher (672 -> 734); + 81 for 2016 Ordinary (734 -> 815).
     // + 58 for 2015 Higher (815 -> 873).
     // + 71 for 2015 Ordinary (873 -> 944).
-    expect(economicsAdditionIds.size).toBe(944);
+    // + 54 for 2014 Higher (944 -> 998).
+    expect(economicsAdditionIds.size).toBe(998);
     expect(economicsAliasIds).toHaveLength(36);
     for (const id of economicsAdditionIds) {
       const deck = id.includes('-hl-') ? higher : ordinary;
@@ -1727,7 +1742,7 @@ describe('Mark Bank card preservation', () => {
     }
     const additions = (level: string) => [...economicsAdditionIds].filter(id => id.includes(level)).length;
     const aliased = (level: string) => economicsAliasIds.filter(id => id.includes(level)).length;
-    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([509, 24, 435, 12]);
+    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([563, 24, 435, 12]);
     expect(ECON_HIGHER).toHaveLength(383 - aliased('-hl-') + additions('-hl-'));
     expect(ECON_ORDINARY).toHaveLength(314 - aliased('-ol-') + additions('-ol-'));
   });

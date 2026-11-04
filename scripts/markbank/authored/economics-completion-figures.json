@@ -6643,5 +6643,269 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-HL-scheme-p10-q1bi-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2014 HL Section B Q1(b)(i)",
+    "description": "The marking scheme’s diagram: P on the vertical axis and Q on the horizontal, and a straight line rising to the right labelled Supply.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2014/LC034ALP000EV.pdf",
+      "page": 10,
+      "rectPoints": [
+        185,
+        316,
+        380,
+        462
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-HL-scheme-p11-q1biii-diagrams.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2014 HL Section B Q1(b)(iii)",
+    "description": "The marking scheme’s two diagrams, each P against Q. Increase in quantity supplied: S2 to the right of S1, with an arrow from S1 to S2. Decrease in quantity supplied: S2 to the left of S1, with an arrow from S1 to S2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2014/LC034ALP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        70,
+        543,
+        515,
+        702
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-HL-scheme-p12-q1ci-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2014 HL Section B Q1(c)(i)",
+    "description": "The marking scheme’s diagram: P against Q, a vertical Supply line at 80,000 and a falling Demand line crossing it level with €65 on the price axis.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2014/LC034ALP000EV.pdf",
+      "page": 12,
+      "rectPoints": [
+        160,
+        148,
+        375,
+        290
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-HL-scheme-p14-q2bi-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2014 HL Section B Q2(b)(i)",
+    "description": "The marking scheme’s diagram: Price against Quantity, a falling D=AR line and a steeper MR line, a U-shaped AC curve touching D=AR at C and an MC curve rising through X, where it cuts MR, and through W, the lowest point of AC. Dashed lines run from C to P2 on the price axis and from C down through X to Q2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2014/LC034ALP000EV.pdf",
+      "page": 14,
+      "rectPoints": [
+        135,
+        80,
+        395,
+        280
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-HL-scheme-p17-q3b-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2014 HL Section B Q3(b)",
+    "description": "The marking scheme’s working: -1 over 10c, times €1.60 + €1.70 (€3.30) over 20 + 19 (39), = -0.846 (-0.85).",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2014/LC034ALP000EV.pdf",
+      "page": 17,
+      "rectPoints": [
+        140,
+        150,
+        440,
+        190
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-HL-scheme-p23-q5ai-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2014 HL Section B Q5(a)(i)",
+    "description": "The marking scheme’s working, headed (i) Consumption in 2013: Y = C + I + G + X – M; 80,000 = C + 10,000 + 40,000 + 100,000 – 120,000; 80,000 = C + 30,000; 80,000 – 30,000 = C; C = 50,000.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2014/LC034ALP000EV.pdf",
+      "page": 23,
+      "rectPoints": [
+        58,
+        250,
+        360,
+        335
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-HL-scheme-p23-q5aii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2014 HL Section B Q5(a)(ii)",
+    "description": "The marking scheme’s working, headed (ii) Marginal Propensity to Consume: MPC = ΔC over ΔY; MPC = 6,000 over 10,000 = 0.6 (60%).",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2014/LC034ALP000EV.pdf",
+      "page": 23,
+      "rectPoints": [
+        58,
+        378,
+        270,
+        462
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-HL-scheme-p23-q5aiii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2014 HL Section B Q5(a)(iii)",
+    "description": "The marking scheme’s working, headed (iii) Imports in 2014: Y = C + I + G + X – M; 90,000 = 56,000 + 15,000 + 34,000 + 110,000 – M; 90,000 = 215,000 – M; M = 125,000.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2014/LC034ALP000EV.pdf",
+      "page": 23,
+      "rectPoints": [
+        58,
+        505,
+        360,
+        585
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-HL-scheme-p23-q5aiv-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2014 HL Section B Q5(a)(iv)",
+    "description": "The marking scheme’s working, headed (iv) Marginal Propensity to Import: MPM = ΔM over ΔY; MPM = 5,000 over 10,000 = 0.5 (50%).",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2014/LC034ALP000EV.pdf",
+      "page": 23,
+      "rectPoints": [
+        58,
+        637,
+        270,
+        722
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-HL-scheme-p25-q5cii-response.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2014 HL Section B Q5(c)(ii)",
+    "description": "The marking scheme’s possible response, six bullets: GNP = GDP + Net Factor Income from Abroad (NFIA); GDP measures the value of all goods and services produced in the country in the period, the fundamental measure of economic activity; the difference between GDP and GNP is significant in Ireland as NFIA is a relatively large negative; NFIA is negative because the profits repatriated by MNCs exceed those returned by Irish MNCs abroad, and interest on Irish debt held by non-residents adds to it; these outflows keep GDP consistently and considerably larger than GNP in Ireland; although GDP is used for comparison with other EU countries, GNP is probably a better measure of Irish economic activity, as it reflects only the part produced and shared by Irish nationals.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2014/LC034ALP000EV.pdf",
+      "page": 25,
+      "rectPoints": [
+        40,
+        416,
+        572,
+        695
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-HL-paper-p05-q1a-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2014 HL Section B Q1(a)",
+    "description": "A table: No of Units Consumed 1, 2, 3, 4, 5; Total Utility in Units/Utils 20, 45, 60, 70, 75; Marginal Utility in Units/Utils 20, 25, 15, 10, 5.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2014/LC034ALP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        100,
+        205,
+        505,
+        278
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2014-HL-paper-p07-q5a-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2014 HL Section B Q5(a)",
+    "description": "A table of Y, C, I, G, X and M. 2013: €80,000, €?, €10,000, €40,000, €100,000, €120,000. 2014: €90,000, €56,000, €15,000, €34,000, €110,000, €?.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2014/LC034ALP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        82,
+        108,
+        522,
+        177
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]

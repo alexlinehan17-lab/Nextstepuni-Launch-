@@ -1,5 +1,2441 @@
 [
  {
+  "id": "econ-2014-hl-sa-q1",
+  "topicId": "economics-0-1",
+  "conceptId": "opportunity-cost-for-the-government",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q1",
+  "questionText": "Define the term ‘opportunity cost’. State one example of an opportunity cost facing the Irish Government.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 + 8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-definition",
+    "kind": "point",
+    "verbatim": "Opportunity cost is the cost of forgone alternatives involved in making a choice / the cost of something in terms of the next best alternative.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The definition, 8 marks."
+   },
+   {
+    "id": "r-example",
+    "kind": "anyN",
+    "verbatim": "An example facing the government — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One example, 8 marks: these are the scheme’s sample responses, not a closed list.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Spending on a new hospital the opportunity cost is the infrastructural project which must be deferred.",
+      "Cuts in taxes next year implies less money to spend on other projects.",
+      "The interest on government debt involves a sacrifice of government services such as education."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sa-q2-i",
+  "topicId": "economics-1-5",
+  "conceptId": "when-mc-is-below-ac",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q2(i)",
+  "questionText": "Is this statement true? Circle the correct answer. YES / NO",
+  "stem": "If the marginal cost (MC) is less than average cost (AC), then AC must be falling when output increases.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "YES",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The circled answer, 1 mark: the scheme circles YES."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sa-q2-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "why-ac-falls",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q2(ii)",
+  "questionText": "Explain the reason for your answer:",
+  "stem": "If the marginal cost (MC) is less than average cost (AC), then AC must be falling when output increases.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "15",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "If the additional cost of producing one extra unit is less than the average total cost then producing that extra unit lowers the average total cost.",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The explanation, 15 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sa-q3",
+  "topicId": "economics-3-2",
+  "conceptId": "structural-unemployment",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q3",
+  "questionText": "Define the term ‘structural unemployment’ and outline one policy response that the Irish Government could take to reduce it.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-definition",
+    "kind": "point",
+    "verbatim": "Structural unemployment arises from a change in the structure in an industry brought about by the changing pattern of demand in the economy / or increasing mechanisation (technical progress).",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The definition, 10 marks."
+   },
+   {
+    "id": "r-policy",
+    "kind": "anyN",
+    "verbatim": "One policy response — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One policy measure, 6 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "A retraining scheme so that long-term unemployed workers can be upskilled for the jobs available and then rejoin the workforce e.g. the Momentum Programme",
+      "Governments ‘Springboard’ programme: Third level courses aimed at increasing graduates in areas where job vacancies exist."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sa-q4",
+  "topicId": "economics-1-1",
+  "conceptId": "complementary-goods",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q4",
+  "questionText": "Explain the meaning of the term ‘complementary goods’ (i.e. joint demand). State one example.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "Goods which are consumed together / are used in conjunction with one another / a rise in the price of one good will lead to a decrease in the demand for another good.",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The explanation, 12 marks."
+   },
+   {
+    "id": "r-example",
+    "kind": "point",
+    "verbatim": "Computer consoles and software/games; cars and petrol.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "An example, 4 marks: the scheme gives two."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sa-q5",
+  "topicId": "economics-2-0",
+  "conceptId": "assumptions-of-monopoly",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q5",
+  "questionText": "State three assumptions/characteristics underlying the theory of monopoly.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An assumption — any three",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Three assumptions: the 1st correct answer 6 marks, the 2nd and 3rd 5 each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "There is only one firm in the industry / the firm is the industry.",
+      "The firm controls price or output / the firm is a price maker.",
+      "The firm aims to maximizes profits / it produces where MC = MR.",
+      "Barriers to entry exist in the industry.",
+      "A unique product is sold / there are no close substitutes."
+     ],
+     "perOptionSteps": [
+      6,
+      5,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sa-q6",
+  "topicId": "economics-4-2",
+  "conceptId": "a-stronger-euro-against-the-dollar",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q6",
+  "questionText": "Outline two possible economic effects for the Irish Economy of the euro (€) appreciating in value against the US dollar ($).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 + 7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect — any two",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "Two effects: the 1st correct answer 10 marks, the 2nd 7.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 10,
+     "options": [
+      "Import prices are cheaper Price of imports from the US are likely to decrease. This results in a lower import bill for Irish producers / increase in imports from the US.",
+      "Export Prices Dearer Price of exports from Ireland to US are likely to increase and therefore become less competitive. This may result in reduced exports to the US.",
+      "Falling Employment With a reduction in exports, employment in those industries which depend on Irish exports to the US will fall.",
+      "Effect on tourism revenue in Ireland There is likely to be a drop in tourism from the US as it will now be more expensive in dollar terms to holiday in Ireland. More Irish people may holiday in the US.",
+      "Foreign Direct Investment / Irish investment in US FDI from the US may be discouraged as it will now be costlier in dollar terms to invest in Ireland. Investment by Irish companies in the US may be encouraged as it is cheaper in Euro terms."
+     ],
+     "perOptionSteps": [
+      10,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sa-q7",
+  "topicId": "economics-0-1",
+  "conceptId": "the-return-to-enterprise",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q7",
+  "questionText": "Outline two ways in which the return to the factor of production enterprise differs from the return to other factors of production.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 + 7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A way — any two",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "Two ways: the 1st correct response 10 marks, the 2nd 7.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 10,
+     "options": [
+      "It can earn a loss It is the only factor that can earn a loss due to fall in demand or excessive production costs.",
+      "Returns can vary The returns can vary enormously from supernormal profits to losses.",
+      "Return is residual Enterprise receives its return only after the other factors have been paid for. It is different from the other factors since their payments are agreed in advance. The returns to the other factors are contractual."
+     ],
+     "perOptionSteps": [
+      10,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sa-q8",
+  "topicId": "economics-3-1",
+  "conceptId": "exiting-the-bailout",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q8",
+  "questionText": "Outline two possible economic implications for the Irish economy of having exited this programme.",
+  "stem": "Ireland recently emerged from the EU/IMF/ECB ‘Troika Bailout Programme’. (December 15th 2013)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "11 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An implication — any two",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "Two implications: the 1st correct response 11 marks, the 2nd 6. The expected responses given are not exhaustive.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 11,
+     "options": [
+      "Increased consumer confidence — Consumers may feel more confident about the Irish economy which may lead to increased spending, leading to employment and increased tax revenue for the government.",
+      "Increased economic sovereignty — The Irish Government may have more scope to make taxation and expenditure decisions / may regain a greater degree of control over the national budget.",
+      "More difficult for government to maintain fiscal discipline — It may be more difficult for the Irish Government to maintain fiscal discipline as they are no longer under direct supervision of the Troika. Due to less direct supervision the Irish Government may undertake inappropriate fiscal policies.",
+      "Increased governance by outside agencies — Annual budget will be scrutinised each year in Brussels / new EU rules and warning systems have been put in place to avoid public finance crises etc.",
+      "Improved global perception of Irish economy — Exiting the bailout programme may send a positive signal to bond markets and to international investors leading to possible reductions in the interest rate on government debt. Triple ‘A’ credit rating restored / our improved global image may attract more FDI."
+     ],
+     "perOptionSteps": [
+      11,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sa-q9",
+  "topicId": "economics-2-2",
+  "conceptId": "social-costs-and-benefits-of-pylons",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q9",
+  "questionText": "Outline two possible social costs and two possible social benefits of an investment by ‘EirGrid’ in upgrading Ireland's electricity network by erecting high-voltage power lines (pylons).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 4 + 4 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Two social costs and two social benefits",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "Two costs and two benefits, on one ladder: the 1st correct response 5 marks, the 2nd, 3rd and 4th 4 each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Social Costs — Visual intrusion on the landscape This may have a consequent negative impact on the tourism sector. Loss of visual amenity to local people.",
+      "Social Costs — Possible health implications The electromagnetic fields may have a negative impact on health / the noise pollution.",
+      "Social Costs — Potential damage to wildlife habitats / agriculture / equine industry The construction and maintenance of the new power lines through rural areas may damage local wildlife habitat / local farms and the horse-breeding industry.",
+      "Social Costs — Decline in land and house prices in areas close to pylons.",
+      "Social Benefits — Improved infrastructure / secure supply of electricity The improvement in the infrastructure may secure our supply of electricity and thereby may encourage FDI.",
+      "Social Benefits — Opportunities within the renewable energy sector Some entrepreneurs may invest in this sector resulting in increased employment within this sector.",
+      "Social Benefits — Increased capacity of renewable energy This would reduce our carbon emissions, reduce our dependence on imports and reduce the amount of money leaving the country to pay for these imports (roughly 85% of Ireland's energy needs are imported)."
+     ],
+     "perOptionSteps": [
+      5,
+      4,
+      4,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q1-a-i",
+  "topicId": "economics-1-1",
+  "conceptId": "diminishing-marginal-utility",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q1(a)(i)",
+  "questionText": "State and explain the law illustrated in the above table.",
+  "stem": "",
+  "figureKey": "economics-2014-HL-paper-p05-q1a-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-statement",
+    "kind": "point",
+    "verbatim": "This table illustrates the Law of Diminishing Marginal Utility.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The statement, 4 marks."
+   },
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "This law states that as a consumer consumes more units of a good the extra satisfaction or marginal utility derived from each additional unit consumed will eventually decline. After the consumption of the second unit of the good in the above example, the marginal utility of the third unit consumed is 15 utils of satisfaction compared to a marginal utility of 25 utils for the second unit consumed.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The explanation, 9 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q1-a-ii",
+  "topicId": "economics-1-1",
+  "conceptId": "assumptions-of-diminishing-utility",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q1(a)(ii)",
+  "questionText": "Outline two assumptions underlying this law.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An assumption — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two assumptions, 6 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Applies after ‘the origin’ The law only applies after a certain minimum quantity of the item has been consumed e.g. A full orange consumed equals ‘the origin’ rather than segments of it.",
+      "Consumer tastes do not change It is assumed that consumers’ tastes remain the same, thus utility means the same thing for the commodity in question.",
+      "Consumer incomes do not change It is assumed that consumers’ incomes do not change in the time period being examined, which would affect consumption patterns.",
+      "No time lapse between the consumption of successive units which permits a change in taste It is assumed that there is a relatively short time period between consumption points."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q1-b-i",
+  "topicId": "economics-1-2",
+  "conceptId": "the-law-of-supply",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q1(b)(i)",
+  "questionText": "State the ‘Law of Supply’, and illustrate with a labelled diagram.",
+  "stem": "",
+  "figureKey": "economics-2014-HL-scheme-p10-q1bi-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-statement",
+    "kind": "point",
+    "verbatim": "The law of supply states that there is a positive relationship between the price of a good and the quantity supplied of that good i.e. if the price rises / quantity supplied rises and if price falls quantity supplied falls, ceteris paribus (all other things being equal).",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The statement, 4 marks."
+   },
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "illustrate with a labelled diagram",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The diagram, 4 marks: a rising supply curve against P and Q, as the figure shows.",
+    "ask": true
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q1-b-ii",
+  "topicId": "economics-1-2",
+  "conceptId": "technical-progress-and-supply",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q1(b)(ii)",
+  "questionText": "Explain how technical progress affects the supply curve.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Technical progress, such as the introduction of a labour saving device: Will reduce production costs / increase the productivity of the firm (more output per worker) The supply curve shifts out to the right (at each level of price there will be an increase in the supply).",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The explanation, 6 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q1-b-iii",
+  "topicId": "economics-1-2",
+  "conceptId": "what-shifts-supply",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q1(b)(iii)",
+  "questionText": "Outline, with the aid of labelled diagrams, two other factors that would cause a shift in the supply curve.",
+  "stem": "",
+  "figureKey": "economics-2014-HL-scheme-p11-q1biii-diagrams",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 8",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 8
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A factor, with its diagram — any two",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "2 factors stated, explained with correctly labelled diagram: 8 marks each. The scheme’s two diagrams, an increase and a decrease in supply, are shown with the answer.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Cost of inputs If there is an increase in input prices that a firm uses in the production of its good, then it will be more costly to produce the good. They will not continue to supply the same quantity of the good at the old prices, there will be a reduction in supply. The supply curve will shift to the left.",
+      "Number of sellers in the market If the number of firms in the industry decreased e.g. due to rationalisation, then the overall quantity supplied will decrease, with a leftward shift in the supply curve.",
+      "Changes in Taxation/Subsidy A subsidy will shift the supply curve to the right by the amount of the subsidy. Taxes on goods cause price increases and this affects the quantities firms may or may not be willing to supply.",
+      "Changes in the price of related goods in production When a producer sells several products the quantity of any one good it is willing to supply at any given price depends on the prices of its other co-produced goods. Example: Oil refinery produces gasoline from crude oil but it also produces heating oil and other products from the same raw material. If the price of gasoline increases relative to heating oil, then the supply of gasoline will increase.",
+      "Changes in expectations When suppliers have some choice about when they put their goods up for sale, changes in the expected future price of the good can lead a supplier to supply less or more of the good today.",
+      "Changes in unplanned factors If the weather improves unexpectedly then the supply of agricultural products may increase and supply curve may shift to the right."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q1-c-i",
+  "topicId": "economics-1-0",
+  "conceptId": "the-sold-out-concert",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q1(c)(i)",
+  "questionText": "Draw one labelled diagram, showing a market demand curve and a market supply curve that would be consistent with the above information. Explain your answer.",
+  "stem": "Macklemore announces a concert in Ireland at a venue with a maximum capacity of 80,000 people. The tickets are priced at €65 and the concert sells out in hours.",
+  "figureKey": "economics-2014-HL-scheme-p12-q1ci-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "Draw one labelled diagram, showing a market demand curve and a market supply curve that would be consistent with the above information",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The diagram, 8 marks: a vertical supply curve at 80,000 and a demand curve crossing it at €65, as the figure shows.",
+    "ask": true
+   },
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "Supply of Macklemore tickets is fixed, therefore the supply curve is vertical or perfectly inelastic. The equilibrium quantity is 80,000. and the equilibrium price is €65.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The explanation, 4 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q1-c-ii",
+  "topicId": "economics-1-1",
+  "conceptId": "consumer-surplus-and-ticket-prices",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q1(c)(ii)",
+  "questionText": "Explain, using the concept of Consumer Surplus, why it might make sense for the concert promoters to have different ticket prices (e.g. VIP section, seating section and standing section) for this concert.",
+  "stem": "Macklemore announces a concert in Ireland at a venue with a maximum capacity of 80,000 people. The tickets are priced at €65 and the concert sells out in hours.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A point of explanation — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two points of explanation, 4 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Consumer surplus Consumer surplus is the difference between what a consumer actually pays for a product i.e. the market price and what s/he would have paid rather than go without the product. Some concert goers are likely to be bigger fans than others and so would be willing to pay more than €65 to go to the concert.",
+      "The concert promoter can extract consumer surplus by offering something extra To extract this consumer surplus the concert promoter may charge these concert goers a higher price for tickets closer to the stage, for seated tickets or for advance ticket purchase for fan club members. The VIP tickets could allow fans meet with band members plus other perks etc.",
+      "Example For example the promoter could charge €100 for front row seats tickets. Those who pay this will forgo a consumer surplus of €35; those who pay €85 for seated tickets will forgo €20 of consumer surplus. In this way the sales revenue of the promoter will increase as these consumers have been charged what they are willing to pay and will therefore buy the tickets. A person who faces a price for a ticket higher than what s/he is willing to pay will not buy a ticket."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q2-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "assumptions-of-imperfect-competition",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(a)(i)",
+  "questionText": "State and explain three assumptions underlying the theory of imperfect competition.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 4 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An assumption — any three",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "Three assumptions: the 1st correct answer 5 marks, the 2nd and 3rd 4 each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "There are many buyers An individual buyer, by his/her own actions, can not influence the market price of the goods.",
+      "There are many sellers in the industry An individual seller can influence the quantity sold by the price it charges for its output.",
+      "Product differentiation exists The goods supplied by the firm are not homogenous but are close substitutes. Firms use branding to distinguish their products from one another.",
+      "Freedom of entry and exit No barriers to entry exist within the industry. It is possible for firms to enter/leave the industry as they wish.",
+      "Reasonable knowledge Within the industry each firm has reasonable knowledge of profits made by other firms. Consumers have a reasonable knowledge of the prices being charged for different products.",
+      "Each firm attempts to maximise profits Firms produce where MC = MR. Each firm will attempt to minimise costs of production."
+     ],
+     "perOptionSteps": [
+      5,
+      4,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q2-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "demand-curves-of-the-two-firms",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(a)(ii)",
+  "questionText": "Explain why a firm’s demand curve under imperfect competition differs from a firm’s demand curve under perfect competition.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-perfect",
+    "kind": "point",
+    "verbatim": "Perfect competition — The demand curve facing a perfectly competitive firm is horizontal or perfectly elastic (D=AR=MR). This is because each firm is selling an identical (i.e. homogeneous) product and each firm's quantity sold is small relative to the total market size. Any attempt to undercut the market price will result in complete switching to identical products of competitors.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The perfectly competitive firm’s demand curve, 6 marks."
+   },
+   {
+    "id": "r-imperfect",
+    "kind": "point",
+    "verbatim": "Imperfect competition — The demand curve facing a firm in imperfect competition is downward-sloping. This is because each firm sells a differentiated product, which creates scope for brand loyalty. Each firm has a product that consumers view as somewhat distinct from the products of competing firms. If the firm increases the product price there will be a reduction in demand as some consumers will switch to rival firms' goods (close substitutes) that have become relatively cheaper.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The imperfectly competitive firm’s demand curve, 6 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q2-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "long-run-equilibrium-in-imperfect-competition",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(b)(i)",
+  "questionText": "Explain, with the aid of a diagram, the long run equilibrium of a firm in imperfect competition.",
+  "stem": "",
+  "figureKey": "economics-2014-HL-scheme-p14-q2bi-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 + 8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "Explain, with the aid of a diagram",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The diagram, 10 marks: MC cutting MR at X, the price P2 and output Q2 read off the AR curve at C, where AC is tangent to AR above its lowest point W, as the figure shows.",
+    "ask": true
+   },
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "Equilibrium / profit maximisation occurs (at point X) where MC = MR (MC is rising and cuts MR from below). The level of output produced is Q2 and the price the firm sells this output at is P2. The average cost of production is shown at point C / not producing at lowest point of AC. This firm is earning normal profits because AR = AC.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The explanation of the long-run equilibrium, 8 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q2-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "why-imperfect-competition-is-inefficient",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(b)(ii)",
+  "questionText": "With reference to your diagram in (b) (i) explain why the firm is not making socially efficient use of scarce resources.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 4",
+   "answer": 3,
+   "ofParts": 4,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A point of information — any three",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three points of information, 4 marks each: the scheme’s one possible response, read by its sentences.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "An imperfectly competitive firm does not produce at the socially efficient lowest point on its AC curve, point W.",
+      "They are not producing at the lowest point of AC due to product differentiation. Product differentiation makes a firm's product appear different through additional costs such as advertising and branding.",
+      "Price exceeds the marginal cost of production. The extent of the difference between P and MC represents the degree of monopoly power the firm is able to exert in the market for its differentiated product.",
+      "Because it is not producing at the lowest point of the average cost curve, there is spare/excess capacity in its operations and society does not benefit from maximum utilisation of resources. Consumers gain variety at the expense of social efficiency."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q2-c",
+  "topicId": "economics-2-0",
+  "conceptId": "the-irish-grocery-market",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(c)",
+  "questionText": "Suggest a market structure which most closely reflects this situation. Explain your answer.",
+  "stem": "“A few large retailers (e.g. Tesco, SuperValu, Dunnes Stores, Aldi, Lidl) dominate the Irish grocery market at present.”",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 + 5 + 5 + 5 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-structure",
+    "kind": "point",
+    "verbatim": "Oligopoly",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "Choice of market structure: 1 mark."
+   },
+   {
+    "id": "r-explanation",
+    "kind": "anyN",
+    "verbatim": "An explanation — any four",
+    "marks": 19,
+    "openList": true,
+    "contextNote": "Four explanations: the 1st, 2nd and 3rd correct responses 5 marks each, the 4th 4. Reference must be made to the Irish grocery market.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "The Irish grocery market is dominated by a few large sellers The industry is dominated by a few large retailers, who hold a major share of the market / high concentration ratio. The large multiples dominate the grocery trade in Ireland. While Tesco’s dominant market share is falling the share of the market held by Lidl and Aldi is expanding. The Musgrave Group is also a large player which owns Centra and SuperValu.",
+      "Barriers to entry exist New firms may find it difficult to enter due to high barriers to entry such as economies of scale, brand proliferation and control by existing firms of the channels of distribution. Limit Pricing may also be used by the existing firms, so future entrants to the market are discouraged. Apart from the entry of Aldi and Lidl no new firms have entered the Irish grocery trade in recent years.",
+      "Mutual interdependence between the large retailers Firms interact by taking account of each other’s marketing/pricing strategies. They are concerned with maintaining or increasing their share of the total market e.g. the current wave of below cost selling/loss leaders, which has become part of the pricing strategy of Dunnes Stores, Aldi, Lidl etc.",
+      "The products sold are close substitutes / product differentiation Competitive advertising is very important as is heavy ‘product loyalty’ promotions in-store e.g. loyalty cards etc. Large multiples also use ‘brand names’ to maintain consumer loyalty. The multiple may also use advertising and marketing campaigns to create differentiation in the mind of consumers, even though its product is more or less identical to the products of rivals/ positioning strategies attempt to increase brand recognition and loyalty. The multiples engage in extensive advertising on TV and newspapers.",
+      "Non price competition The large retailers that have a tacit understanding not to compete on price often engage in intense non- price competition using advertising and other means to try and increase their sales. There may be short-lived price wars or price competition based around a few well-known products as happened with the multiples before the Christmas period. Price wars occur when tacit collusion breaks down and prices collapse."
+     ],
+     "perOptionSteps": [
+      5,
+      5,
+      5,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q3-a-i",
+  "topicId": "economics-1-4",
+  "conceptId": "categories-of-ped",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q3(a)(i)",
+  "questionText": "Define the categories of Price Elasticity of Demand (PED): elastic, inelastic and unit elastic.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 x 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-elastic",
+    "kind": "point",
+    "verbatim": "Elastic demand — The percentage / proportionate change in the price of the good causes a greater than percentage / proportionate change in quantity demanded of the good.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Elastic demand, 5 marks."
+   },
+   {
+    "id": "r-inelastic",
+    "kind": "point",
+    "verbatim": "Inelastic Demand — The percentage / proportionate change in price of the good causes a lesser percentage/proportionate change in the quantity demanded of the good.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Inelastic Demand, 5 marks."
+   },
+   {
+    "id": "r-unitary",
+    "kind": "point",
+    "verbatim": "Unitary Elastic Demand — The percentage / proportionate change in the price of the good is equal to the percentage / proportionate change in the quantity demanded of the good.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Unitary Elastic Demand, 5 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q3-a-ii",
+  "topicId": "economics-1-4",
+  "conceptId": "what-shapes-ped",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q3(a)(ii)",
+  "questionText": "State three factors that affect PED and explain how each factor affects it.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A factor — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three factors, 5 marks each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "The amount and availability of close substitutes When a good has a close substitute and its price is increased the demand for the good will be elastic because people will switch to the cheaper substitute. Where a good has no substitutes and its price is increased there is no substitute to switch to and so it will be inelastic.",
+      "The proportion of income which is spent on the good In general the greater the proportion of income which is spent on a good, the more elastic the demand this good is likely to be in response to a change in its own price. An increase of 50% in the price of a box of matches is unlikely to have a significant effect on the demand for it as it constitutes only a small % of income.",
+      "The length of time allowed for adjustment to price changes The longer any price change persists, the greater will be the PED. If the price of electricity rose by 80% a consumer may economise on the use of various electrical appliances in the short term. In the long term the consumer will have to consider substituting other forms of energy. The longer the time period available to figure out possible changes, the more electricity will be saved. The demand will at first be highly inelastic but as time goes on will become more elastic.",
+      "The durability of the good The more durable the good, the more elastic is the demand for it likely to be in response to a change in its own price. In the case of products such as cars if there is an increase in price, it is likely that the public will extend the life of their existing car and postpone the purchase of a replacement.",
+      "Number of alternative uses the good has A good which has a large number of alternative uses will usually have an elastic demand. For example sugar is used in direct consumption, for sweetening purposes, baking, food processing etc. Any increase in the price of sugar may only result in a small fall in demand in each of these markets but the overall total fall may be significant and so will be price elastic."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q3-b",
+  "topicId": "economics-1-4",
+  "conceptId": "the-ped-of-petrol",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q3(b)",
+  "questionText": "A consumer/motorist buys 20 litres of petrol when the price is €1.60 per litre. When the price increases to €1.70, as a result of an increase in carbon tax, the consumer buys 19 litres. Calculate the consumer's Price Elasticity of Demand (PED). (Show all your workings.) Is this demand for petrol price elastic or price inelastic? Outline the implication of your answer for government revenue.",
+  "stem": "",
+  "figureKey": "economics-2014-HL-scheme-p17-q3b-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 + 2 + 8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-ped",
+    "kind": "point",
+    "verbatim": "PED — - 0.846 (- 0.85)",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The PED, 10 marks. The figure shows the working as printed: −1 over 10c times €1.60 + €1.70 (€3.30) over 20 + 19 (39)."
+   },
+   {
+    "id": "r-inelastic",
+    "kind": "point",
+    "verbatim": "Demand for petrol is inelastic.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Inelastic, 2 marks."
+   },
+   {
+    "id": "r-implication",
+    "kind": "point",
+    "verbatim": "An increase in the price of petrol will yield an increase in revenue for the government, because the percentage increase in price will be greater than the percentage decrease in quantity demanded, resulting in increased tax revenue for the government.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The implication for government revenue, 8 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q3-c-i",
+  "topicId": "economics-1-4",
+  "conceptId": "ped-and-total-revenue",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q3(c)(i)",
+  "questionText": "If the firm wishes to maximise total sales revenue, should it lower or raise the price of the product? Explain your answer.",
+  "stem": "A firm is considering a change to its product's price. It conducts market research which reveals that the Price Elasticity of Demand (PED) for the product is -2.5. Use this information to answer the following question:",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This good is a price elastic good because its absolute value is greater than 1 (a 1% reduction in price will cause a 2.5% increase in quantity demanded). To increase total sales revenue the firm should reduce price. This is because the percentage increase in quantity demanded is greater than the percentage decrease in price.",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The answer with its reason, 12 marks: reduce the price."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q3-c-ii",
+  "topicId": "economics-1-4",
+  "conceptId": "yed-in-a-recession",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q3(c)(ii)",
+  "questionText": "In the case of an economy which is expected to remain in recession for the next five years, what, if any, will be the likely impact on the demand for the product? Explain your answer.",
+  "stem": "A firm is considering a change to its product's price. It conducts market research which reveals that the Price Elasticity of Demand (PED) for the product is -2.5. The market research also reveals Income Elasticity of Demand (YED) for the product is +4.5. Use this information to answer the following question:",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "13",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This good could be considered by consumers to be a luxury good because its YED is greater than 1 (a 1% reduction in income will cause a 4.5% reduction in quantity demanded). So as incomes fall in a recession / quantity demanded should fall by a larger percentage than the percentage fall in income.",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "The likely impact with its reason, 13 marks. Other acceptable answers marked on their merits."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q4-a",
+  "topicId": "economics-2-1",
+  "conceptId": "factor-incomes-and-derived-demand",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q4(a)",
+  "questionText": "Explain, with the aid of an example, each of the following terms: • Derived Demand • Transfer Earnings • Supply Price • Economic Rent.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 x (3 + 2)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-derived",
+    "kind": "point",
+    "verbatim": "Derived demand — Is where a factor of production is demanded not for its own sake but for its contribution to the production process.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Derived demand explained, 3 marks."
+   },
+   {
+    "id": "r-transfer",
+    "kind": "point",
+    "verbatim": "Transfer Earnings — Can be defined as the earnings of a factor in the next best alternative employment.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Transfer Earnings explained, 3 marks."
+   },
+   {
+    "id": "r-supply",
+    "kind": "point",
+    "verbatim": "Supply Price — Is the minimum payment necessary to bring a factor into use and maintain it in that particular use.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Supply Price explained, 3 marks."
+   },
+   {
+    "id": "r-economic",
+    "kind": "point",
+    "verbatim": "Economic Rent — This is any payment to a factor of production above the necessary supply price of a factor.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Economic Rent explained, 3 marks."
+   },
+   {
+    "id": "r-examples",
+    "kind": "anyN",
+    "verbatim": "An example of each term",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Explanation: 3 marks each/example: 2 marks each = 20 marks. The scheme prints an example for derived demand and asks for an appropriate example of each of the others.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Derived demand — An example of derived demand is the demand for land around Dublin and other large cities, which existed during the boom as a consequence of the demand for housing.",
+      "Transfer Earnings — Appropriate example.",
+      "Supply Price — Appropriate example.",
+      "Economic Rent — Appropriate example."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q4-b-i",
+  "topicId": "economics-0-1",
+  "conceptId": "characteristics-of-land",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q4(b)(i)",
+  "questionText": "Outline two economic characteristics of ‘land’.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A characteristic — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two characteristics, 5 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Land is fixed in supply An increase in price being offered for land will not bring about an increased supply. The supply curve for land is a vertical straight line. Quantities of land can be reclaimed and soil erosion may take place but these have little effect on total supply.",
+      "Land has no cost of production to society as a whole As land is a gift provided by nature it has no cost of production to society as a whole. Any payment to land is above its supply price of zero and this is termed economic rent.",
+      "Land is a non-specific factor Land can be used for various purposes. It can be switched from agricultural use to industrial / residential use."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q4-b-ii",
+  "topicId": "economics-1-2",
+  "conceptId": "where-a-firm-locates",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q4(b)(ii)",
+  "questionText": "Discuss three economic factors which influence a firm’s decision on where to locate its operations within Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A factor — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three factors, 5 marks each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Closeness to similar firms Many IT/ Tech companies (Google, LinkedIn, Facebook) have now located within the same area in Dublin (known as the \"Silicon valley\" of Dublin). The essential support services are available close by.",
+      "Availability of a skilled workforce Firms need a workforce with diverse language skills / engineering skills / IT Specialists so that they can commence operations and do so with minimum training costs.",
+      "Proximity to market / raw materials A firm which relies on a steady flow of consumers must locate close to the market i.e. a boutique. A firm which relies on the usage of large amount of raw materials must locate close to the availability of these e.g. a power generating station.",
+      "Well developed infrastructure Having a well developed infrastructure is crucial when firms are deciding where to locate. This includes road, rail and air transport network etc. The availability of high speed broadband is also critical in this regard.",
+      "Government Incentives Availability of Advance Factories together with attractive grants are another consideration to take into account when deciding where to locate. The IDA and Enterprise Ireland provide supports.",
+      "Commercial Property Prices With the downturn in the economy and the property crash, commercial property prices together with commercial rents have significantly reduced. This has made Ireland a more attractive place to locate industry. Google has purchased commercial property recently in Barrow Street, Dublin.",
+      "Social Infrastructure Firms will consider the availability of schools, hospitals, parks etc so that their workforce can have a good lifestyle.",
+      "Planning Laws Irish planning laws are flexible enough to facilitate large multinationals who wish to set up here. Such laws facilitated the construction of the Swedish Ikea outlet close to Dublin, which led to the largest retail outlet in the history of the state, being built."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q4-c-i",
+  "topicId": "economics-1-0",
+  "conceptId": "why-house-prices-fell",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q4(c)(i)",
+  "questionText": "State and explain three factors that caused the price of residential property to fall considerably in Ireland in the years following 2007.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A factor — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three factors, 5 marks each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Property market collapse As a result of more and more land being rezoned and the construction boom, the supply of property exceeded the demand for it, except in the larger cities (Dublin). Many parts of the country now have ghost housing estates, particularly in areas in the West of Ireland.",
+      "The Banking Crisis Due to a change in lending guidelines and greater credit controls following the banking collapse, many banks now are unable to lend out money as the criteria to secure loans makes it almost impossible for them to do so. There are also fewer banks operating in the Irish economy now.",
+      "Economic recession / Weaker demand in housing market With the downturn in the economy and the accompanying drop in economic growth, there has been a decrease in the demand for housing. Increases in taxation have resulted in lower disposable incomes leading to reduced demand and prices. Economic uncertainty resulted in some people not trading up to larger houses.",
+      "Emigration With the downturn in the economy and lack of job opportunities, many young people have been forced to leave the country, with a consequent drop in demand for residential property.",
+      "Speculation in housing During the boom, increases in property prices fuelled speculative demand with more people seeking investment opportunities. With the onset of the recession, fewer people were willing to invest in property as it is deemed a very unstable investment."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q4-c-ii",
+  "topicId": "economics-3-4",
+  "conceptId": "the-impact-of-mortgage-arrears",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q4(c)(ii)",
+  "questionText": "Discuss one possible economic impact of mortgage arrears on each of following: • the household • the banking sector • the Irish Government.",
+  "stem": "Mortgage arrears (i.e. the inability to meet mortgage loan obligations) is the biggest single personal debt issue for many households.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 x 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-households",
+    "kind": "anyN",
+    "verbatim": "Households — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One impact on households, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Lack of consumer confidence Increasing debt leading to less spending in the economy and less aggregate demand. Consumers are deleveraging rather than consuming. Mortgage arrears can therefore decrease consumer confidence and hence consumer spending. This can have a negative impact on the economy and society as a whole resulting in reduced spending and a reduction in aggregate demand.",
+      "Reduced creditworthiness Mortgage arrears may mean that households’ creditworthiness could be adversely affected thus limiting their ability to borrow.",
+      "Less houses for sale / depressed property market People may be less willing to sell their homes because they will realise losses. This may also have implications on the ‘mobility of labour’ and the flexibility needed to move to areas where employment opportunities arise. There is little movement in the property market.",
+      "Social housing requirement When people fall into arrears and their house is eventually repossessed, those people then end up on the social housing list, thus leading to an even longer waiting list. The burden on the tax payer becomes even greater."
+     ]
+    }
+   },
+   {
+    "id": "r-banks",
+    "kind": "anyN",
+    "verbatim": "The banking sector — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One impact on the banking sector, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Debt write-down deals Banks may suffer loss of profits due to non-repayment of loans. They must develop strategies to deal with outstanding debt- the forced restructuring of loans into interest only, split mortgages and the extra cost of debt collection. This will have an impact on the banks’ ability to lend and on its own indebtedness.",
+      "Subject to more regulation and legislation Banks may be subject to more regulation on debt write-off /restructuring / insolvency legislation where it has to agree as a creditor to a solution. Their ability to meet the stress tests being carried out by ECB may also be affected.",
+      "Unemployment in the Banking Sector Irish banks together with some foreign banks operating here, have pursued a policy of rationalisation, thus radically reducing the number of employees in the sector. The major banks have both pursued the policy of reducing staffing numbers in an effort to cut costs.",
+      "Collapse in share prices of bank stocks Investors have lost confidence in the banks and so their share prices have fallen resulting in reduction in profits, reduction in the capital value of the banks, increase in bank debt and the nationalisation of some banks."
+     ]
+    }
+   },
+   {
+    "id": "r-government",
+    "kind": "anyN",
+    "verbatim": "Irish Government — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One impact on the Irish Government, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Reduced Tax Revenue for Government Since many people have been unable to sell their property due to slowdown in property sales, there is a consequent loss of revenue from property transactions including stamp duty for the government etc. Also as people are not buying there is a loss of transaction taxes for the government. Consumers because they have reduced disposable incomes are not spending and so tax revenue to the government may be affected.",
+      "More debt write-offs / Guarantor for the Irish banks The government have de facto become guarantor for the Irish banks. Bank losses are ultimately pushed onto the Irish taxpayers/ Recapitalisation of the banking sector due to non-repayment of capital. Thus, the government may be on the line for future bank liabilities (capital injections).",
+      "Increased demand for Social and Affordable Housing As a consequence of debt default repossessions and the fact that consumers are finding it more difficult to secure a mortgage, a greater proportion of people are being forced to look to the government to provide social housing. In the greater Dublin area, the housing waiting list has increased dramatically.",
+      "New measures introduced by government to deal with banking/housing crisis The government has had to introduce new legislation, increase regulation of the banking sector and try to help households to cope with mortgage arrears. Measures include: a new Insolvency Act to aid banks to write down debt following bankruptcy / More regulation of banks to deal with arrears / new codes of behaviour for debt collection / A national mortgage-to-rent scheme allows people in mortgage difficulties to switch from owning their home to renting it as a social tenant. People who take up this option no longer own their own home."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q5-a-i",
+  "topicId": "economics-3-0",
+  "conceptId": "consumption-from-the-identity",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q5(a)(i)",
+  "questionText": "The level of Consumption in 2013",
+  "stem": "The following table shows the level of National Income (Y), Consumption (C), Investment (I), Government Spending (G), Exports (X) and Imports (M) for 2013 and 2014. Use this data to calculate the following: (Show all your workings.)",
+  "figureKey": "economics-2014-HL-scheme-p23-q5ai-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C = 50,000",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Consumption in 2013, 5 marks. The figure shows the working as printed."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2014-HL-paper-p07-q5a-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2014-hl-sb-q5-a-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "the-mpc",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q5(a)(ii)",
+  "questionText": "The Marginal Propensity to Consume (MPC)",
+  "stem": "The following table shows the level of National Income (Y), Consumption (C), Investment (I), Government Spending (G), Exports (X) and Imports (M) for 2013 and 2014. Use this data to calculate the following: (Show all your workings.)",
+  "figureKey": "economics-2014-HL-scheme-p23-q5aii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "MPC — 0.6 (60%)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The MPC, 5 marks. The figure shows the working as printed."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2014-HL-paper-p07-q5a-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2014-hl-sb-q5-a-iii",
+  "topicId": "economics-3-0",
+  "conceptId": "imports-from-the-identity",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q5(a)(iii)",
+  "questionText": "The level of Imports in 2014",
+  "stem": "The following table shows the level of National Income (Y), Consumption (C), Investment (I), Government Spending (G), Exports (X) and Imports (M) for 2013 and 2014. Use this data to calculate the following: (Show all your workings.)",
+  "figureKey": "economics-2014-HL-scheme-p23-q5aiii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "M = 125,000",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Imports in 2014, 5 marks. The figure shows the working as printed."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2014-HL-paper-p07-q5a-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2014-hl-sb-q5-a-iv",
+  "topicId": "economics-3-0",
+  "conceptId": "the-mpm",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q5(a)(iv)",
+  "questionText": "The Marginal Propensity to Import (MPM).",
+  "stem": "The following table shows the level of National Income (Y), Consumption (C), Investment (I), Government Spending (G), Exports (X) and Imports (M) for 2013 and 2014. Use this data to calculate the following: (Show all your workings.)",
+  "figureKey": "economics-2014-HL-scheme-p23-q5aiv-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "MPM — 0.5 (50%)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The MPM, 5 marks. The figure shows the working as printed."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2014-HL-paper-p07-q5a-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2014-hl-sb-q5-b",
+  "topicId": "economics-4-1",
+  "conceptId": "what-multinationals-bring",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q5(b)",
+  "questionText": "Discuss the economic benefits Multinational Companies (MNCs) can bring to a small economy such as Ireland.",
+  "stem": "“Ireland heads Forbes’ list of the best countries for business.” (Forbes Magazine Dec 4 2013)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 @ 5",
+   "answer": 4,
+   "ofParts": 11,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A benefit — any four",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four points of information, 5 marks each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Employment / improved standard of living / economic growth Multinational companies employ many people here in Ireland particularly in the technology, pharmaceutical and medical devices, chemical industries. Employment boosts income and spending within localities. Employment will also be created in support industries.",
+      "Balance of Payments Benefits Multinational companies have a major impact on the Balance of Payments by boosting the level of exports from Ireland and earning much needed revenue for the economy.",
+      "Investment in Research & Development and Education The level of investment directed towards universities and other third level institutions that are involved in research and development, has increased dramatically. This in turn has meant that Ireland can continue to be to the forefront of technological advancement / new technology and management techniques leading to increased production capacity into the future.",
+      "Increased Government Revenue for the economy As more and more multinational companies set up here, there is a greater contribution being made by these companies towards the exchequer in the form of corporation tax and both direct and indirect taxes.",
+      "Increased demand for Commercial Property As Google, Facebook, LinkedIn etc. have decided to locate here, there has been an increase in the demand for both office space and commercial property, particularly in Dublin.",
+      "Promotes regional development Many multinational companies have located in the West of Ireland and other peripheral locations, due to the existence of grants and advance factories thus greatly aiding the government’s aim of balanced regional development.",
+      "New technology introduced The introduction of new technology increases the skill base of Irish workers which improves employee mobility and expertise.",
+      "Benefits to indigenous companies With the presence of more multinational companies, there is a knock on effect for indigenous companies e.g. transport/logistics companies involved in the distribution of products together with packaging companies etc.",
+      "Improved reputation for future FDI As more and more international / multinational firms choose to locate here, Ireland's reputation as a location to transact business improves.",
+      "Indigenous MNCs encourage more FDI Ireland's reputation for doing large scale business here increases FDI confidence in Ireland. MNCs such as CRH, the Kerry Group, Glanbia, Paddy Power etc. encourage more inward investment.",
+      "Development of a \"silicon valley\" (clusters of MNCs with core competencies) Inflow of high-tech firms in clusters. New technology firms are attracted to areas where technology firms have already located."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q5-c-i",
+  "topicId": "economics-3-0",
+  "conceptId": "gdp-and-gnp",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q5(c)(i)",
+  "questionText": "Define each of the underlined terms.",
+  "stem": "Economists use Gross Domestic Product (GDP) and Gross National Product (GNP) as measures of economic activity.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-gdp",
+    "kind": "point",
+    "verbatim": "Gross Domestic Product can be defined as the total output produced by the factors of production in the domestic economy irrespective of whether the factors are owned by Irish nationals or foreigners.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "GDP, 6 marks."
+   },
+   {
+    "id": "r-gnp",
+    "kind": "point",
+    "verbatim": "Gross National Product is defined as the total output produced (value of goods and services) by Irish owned factors of production in Ireland and elsewhere. It is a measure of the income accruing to a country’s residents.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "GNP, 6 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q5-c-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "gnp-or-gdp-for-ireland",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q5(c)(ii)",
+  "questionText": "Which of these terms do you consider to be a more useful measure of economic activity for Ireland? Explain your answer.",
+  "stem": "Economists use Gross Domestic Product (GDP) and Gross National Product (GNP) as measures of economic activity.",
+  "figureKey": "economics-2014-HL-scheme-p25-q5cii-response",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Although GDP is used for comparison with other EU countries, GNP is probably a better measure of Irish economic activity as GNP reflects only the part of economic activity that is produced and shared by Irish nationals.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The choice with its explanation, 8 marks. The scheme prints one possible response, shown in full in the figure; this is its conclusion."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q5-c-iii",
+  "topicId": "economics-3-0",
+  "conceptId": "limits-of-national-income-statistics",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q5(c)(iii)",
+  "questionText": "Discuss three limitations of national income statistics.",
+  "stem": "Economists use Gross Domestic Product (GDP) and Gross National Product (GNP) as measures of economic activity.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A limitation — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three points of information, 5 marks each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Population distortions Population changes must be considered with changes in national income when assessing a country’s economic performance. If national income grows at a slower rate than population, then average income per head may decrease and the average standard of living may fall. Per capita income may be a more meaningful measure of living standards than national income.",
+      "Constant prices and current prices / Inflation An increase in prices will increase national income but the standard of living may fall. So changes in national income must be compared with changes in prices to consider the impact on standard of living / economic performance. GDP calculated at constant prices is a better reflection of economic growth than GDP at market prices.",
+      "Hidden social costs attached to increases in national income / externalities involved If a firm increases output national income increases. However, a hidden cost may be increased pollution etc. Positive and negative externalities such as congestion, waste disposal and attractiveness of areas are excluded.",
+      "Distribution of national income and poverty National Income statistics give headline figures as to the overall economic performance. Further research needs to be undertaken to find how income is distributed. e.g., two countries might have the same level of GNP. However, the income distribution might be very different in both countries with consequences for the welfare of its citizens.",
+      "Shadow economy transactions not measured The black economy is excluded from the calculation of national income. The value of unreported transactions is difficult to ascertain thus underestimating the level of national income.",
+      "Nature of the goods produced A country which spends a small amount on military equipment and a larger amount on health, education etc. will have a better standard of living than one where the reverse is the case i.e. much of its wealth is on armaments. There is a large difference in terms of relative economic well-being between the two countries yet the National Income data doesn’t reflect this difference."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q6-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "the-governments-economic-aims",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q6(a)(i)",
+  "questionText": "State and explain four current economic aims/objectives of the Irish Government.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 @ 5",
+   "answer": 4,
+   "ofParts": 7,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An aim — any four",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four points of information, 5 marks each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "To reduce unemployment Unemployment currently stands at 11.8%. The government have introduced a number of initiatives to improve employment prospects e.g. Job Bridge for the long term unemployed/provision of SOLAS courses. The government aims to reduce unemployment to 10% by 2016.",
+      "To reduce the national debt/sustainable public finances Irish debt currently stands at 124% of GDP and the government must aim to reduce this. Although we have exited from the bailout, we are still under the direction of the Troika and they will continue to monitor our national debt reduction efforts. The funds from the sale of state assets may be used to reduce the debt. Restraint and discipline is required. The Government aim is to bring the fiscal deficit to 3% of GDP by 2015.",
+      "Achievement of economic growth By economic growth we mean an increase in output per person in the economy (expansion of the productive capacity of the economy). Thus an increase in output per person implies an increase in income per person. We are under the direction of the Troika to return economic growth to the Irish Economy.",
+      "Boost exports / improve competitiveness / attracting investment By taking steps to improve competitiveness, the government hopes that Irish exports will continue to grow and so help create jobs. They also aim to reduce cost of utilities. This may make Ireland more attractive for FDI. Trade missions by the IDA and Enterprise Ireland to China etc. to encourage FDI.",
+      "Broaden the tax base / greater tax revenue certainty The government has introduced the local property tax, septic tank tax inspection charge and plans to introduce a water tax. These taxes will provide stability and increased certainty for the collection of government revenue.",
+      "Sustainable economic development The government aims to increase investment in renewable energy so as to reduce carbon emissions and allow Ireland to be more sustainable. Measures include availability of grants for home insulation etc.",
+      "Balanced regional development The IDA has had advance factories built outside of the Dublin region. It is hoped that employment will be created in the regions so as to boost economic activity."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q6-a-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "conflicting-aims",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q6(a)(ii)",
+  "questionText": "Outline two possible conflicts that could arise between some of these Government aims/objectives.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A conflict — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two conflicts, 5 marks each. Other acceptable answers marked on their merits.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Sustainable government finances vs. economic growth/employment growth Government policies to increase employment may cause an increase in government spending and a resultant budget deficit. This may be short term though as an increase in employment will lead to a higher level of tax revenue in the future thus reducing the deficit.",
+      "Sustainable government finances vs. regional development Huge capital expenditure required (broadband and services such as hospitals and schools) to develop regionally, adversely affecting the budget deficit.",
+      "Full employment vs. equality Achieving equality means that the government has to divert resources from one section of society to another. The gains made towards equality may be made at the expense of reduced efficiency and lower employment. e.g., a tax on employers may result in fewer workers being employed.",
+      "Economic Growth vs. just social policy"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q6-b",
+  "topicId": "economics-1-3",
+  "conceptId": "privatising-state-assets",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q6(b)",
+  "questionText": "Discuss arguments for and against the privatisation of state assets.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 x 5 + 2 x 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-for",
+    "kind": "anyN",
+    "verbatim": "An argument for — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "2 arguments for: 5 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Revenue for government The government could use the revenue from the sale of the asset to reduce its level of borrowings into the future. This is one of the recommendations from the Troika during the recent ‘bailout’ programme.",
+      "More competition Competition in the industry could improve services offered to customers and lead to more competitive prices on goods and services e.g. air travel in Ireland. Rationalisation ensures maximum efficiency from available resources.",
+      "Enterprise culture Increased share ownership may lead to growth in an enterprise culture within the country and so help employment.",
+      "Access to finance Through the sale of additional shares on the stock exchange, private companies have access to extra finance.",
+      "Greater incentives for innovation Employees may have a greater incentive to innovate and improve productivity as they may reap greater rewards for their innovations within the privatised sector e.g. higher bonuses.",
+      "Shedding of loss making companies By selling off loss making companies the burden on the state is removed and so the burden on taxpayers should be reduced."
+     ]
+    }
+   },
+   {
+    "id": "r-against",
+    "kind": "anyN",
+    "verbatim": "An argument against — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "2 arguments against: 5 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Increased Prices/ falling standards of service The quality of services provided by the new company may deteriorate in an effort to cut costs. Prices may be increased to increase revenues.",
+      "Loss of jobs and reduced job security Jobs may be lost through rationalisation of services and this may lead to higher social welfare costs.",
+      "Loss of a State Resource / loss of annual profits Taxpayers lose critical infrastructure, which was once owned by the state. The state will lose profits made by profitable state firms.",
+      "Foreign Ownership With the sale of a state owned asset, overseas buyers may become the owners of an Irish company and so control of the asset may go outside the state.",
+      "Loss of essential public services The newly privatised company may cut those services which are non-profit making and this may affect lower income groups in particular."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q6-c",
+  "topicId": "economics-3-1",
+  "conceptId": "consequences-of-austerity",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q6(c)",
+  "questionText": "Outline four possible economic consequences for the Irish economy arising from the austerity measures introduced in recent Irish Government budgets.",
+  "stem": "In The Irish Times (November 2013) the economist Joseph Stiglitz predicted a \"lost decade\" for the Irish economy, due to the extended period of austerity. (Austerity refers to government measures introduced to reduce a Budget Deficit.)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 + 6 + 6 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A consequence — any four",
+    "marks": 25,
+    "openList": true,
+    "contextNote": "Four consequences: the 1st correct response 7 marks, the 2nd, 3rd and 4th 6 each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 7,
+     "options": [
+      "Increased unemployment / emigration Reduced state services leads to less disposable income, which leads to less businesses (fall in production, reduction of the workforce, possible closure) leading to unemployment. The unemployment rate has grown as a result of these austerity measures. Some people have been forced to emigrate, having being made redundant here.",
+      "Loss of business confidence / lack of investment With increased austerity and less disposable income available, loss of confidence in the Irish economy has led to entrepreneurs looking abroad seeking investment opportunities. Return on investment is viewed as being less reliable.",
+      "Reduction in aggregate demand / spending / lack of economic growth As a direct result of government cuts in social welfare payments etc. there is less disposable income available for consumption, so aggregate demand decreases leading to reduction in economic growth.",
+      "Fall in living standards / increased Taxation / cuts in benefits and welfare service / greater inequality With the austerity measures which were introduced by the government, there has been an increase in stealth taxes (regressive) and new forms of taxation such as the local property tax, household charge etc. The above have resulted in a fall in living standards.",
+      "Increased indebtedness Within the economy, the increase in stealth taxes may lead to increased indebtedness. The high levels of personal debt is now having a negative impact on banks, credit unions etc. A credit squeeze may result.",
+      "Role of the government increases The role of the government becomes much more strategic in a time of protracted austerity e.g. if people cannot afford health insurance etc., then the government may have to step in and provide medical cards. There may also be a need for further investment in rent allowance schemes, social and affordable housing etc.",
+      "More regional inequality Peripheral areas of the country have suffered to a much greater degree during this period of prolonged austerity. Some Business closures with a consequent loss of jobs has been a feature of these regions."
+     ],
+     "perOptionSteps": [
+      7,
+      6,
+      6,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q7-a-i",
+  "topicId": "economics-4-0",
+  "conceptId": "development-against-growth",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q7(a)(i)",
+  "questionText": "Distinguish between the terms ‘economic development’ and ‘economic growth’ with reference to Less Developed Countries (LDCs).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-development",
+    "kind": "point",
+    "verbatim": "Economic Development — Occurs where an increase in the level of income / standard of living/output/GNP per person in a country, accompanied by a change in the structure of society.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Economic development, 5 marks."
+   },
+   {
+    "id": "r-growth",
+    "kind": "point",
+    "verbatim": "Economic Growth — It can be defined as an increase in GNP per head without any changes in the structure of society.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Economic growth, 5 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q7-a-ii",
+  "topicId": "economics-4-0",
+  "conceptId": "characteristics-of-ldcs",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q7(a)(ii)",
+  "questionText": "Outline three characteristics of LDCs.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A characteristic — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three points of information, 5 marks each. Other acceptable answers marked on their merits.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "High population growth rates in LDCs",
+      "Famine in LDCs / low life expectancy",
+      "High foreign debts / lack of capital",
+      "High percentage of the population engaged in extractive / primary industries in LDCs",
+      "Poor infrastructure in LDCs",
+      "Poor levels of education / literacy in LDCs",
+      "Exploitation by multinationals, individuals within the country and foreign countries",
+      "Political corruption / less stable political institutions"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q7-b-i",
+  "topicId": "economics-4-0",
+  "conceptId": "types-of-foreign-aid",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q7(b)(i)",
+  "questionText": "Describe three types of foreign aid available to LDCs.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 7,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A type of aid — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three points of information, 5 marks each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Direct financial aid by governments This is also known as official development assistance, grants and loans. Governments may provide aid to help in emergency situations. They can also assist with the development of infrastructure and the provision of education, health programmes etc.",
+      "Financial aid through voluntary agencies Various international voluntary agencies provide direct aid to LDCs on a permanent basis or in times of emergency.",
+      "Aid (other than financial aid) by foreign citizens Foreign citizens could work in LDCs and provide a necessary service e.g. teach, build or provide healthcare etc. Foreign citizens can help by buying ‘fair trade’ products which ensure higher prices for producers and hence a better standard of living for citizens in LDCs. Foreign citizens could donate food, clothes, livestock etc so as to improve the standard of living of citizens in LDCs.",
+      "Restructuring of national debts If national debts of LDCs are cancelled or re-structured more funds would become available for the LDCs to use for economic development in their countries.",
+      "Multinationals setting up in LDCs Multinationals, by providing employment opportunities, provide workers with skills. The fair wages received could help boost domestic demand, provide tax revenue for the state and boost employment.",
+      "Improve trade terms with LDCs Most LDCs suffer from unfavourable terms of trade. If access to markets in the developed world was improved and /or the terms of trade available were more favourable then LDCs could increase exports and/or obtain higher prices for their exports boosting their national incomes.",
+      "Assist LDCs with skills and technologies Governments or voluntary agencies could provide skills and technologies to the LDCs so that living standards could improve and this could boost their productive capacity."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q7-b-ii",
+  "topicId": "economics-4-0",
+  "conceptId": "when-aid-fails",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q7(b)(ii)",
+  "questionText": "Discuss why foreign aid may not always result in economic growth in LDCs.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two points of information, 5 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Unfair distribution of benefits / Widening poverty gap / trickle down effects The increased wealth may not trickle down to the people who most need it and economic growth may not result. Any wealth that exists in the poorest countries is often concentrated in the hands of a small ruling elite. In many cases military dictatorships are the norm and they wish to maintain the status quo. The money may be used for the purchase of armaments and other non-essential projects.",
+      "Costs to the environment Increased pollution, disfigurement of the landscape/environment, large scale urban sprawl may negate any positive effects from the foreign aid.",
+      "Rapid population growth / standard of living In LDCs there are rapidly rising populations and the implications of such population growth is that any economic growth is completely outweighed by an increase in population. The impact of the foreign aid may be hard to discern as it may not improve the standard of living.",
+      "Culture of dependency rather than improvement of local economy In some LDCs, a culture of dependency may exist and this may prove to be a major barrier to promoting economic growth and development. Entrepreneurship demands ingenuity and inventiveness. A culture of dependency reduces the desire for risk taking ventures and ultimately profit making.",
+      "Food aid dependency/ reduced incentive for production / growth In order for economic growth to be sustained, economic projects must be undertaken and the focus on provision of food aid exclusively must be reduced. The whole notion of subsistence must be replaced by a desire for excess production and a move away from the primary production area. Secondary and tertiary sectors should be encouraged.",
+      "High profile projects In some LDCs, the provision of adequate infrastructure together with land drainage and irrigation schemes, roads, housing, factories and communication facilities are bypassed in favour of ‘high profile’ projects. Governments need to prioritise those projects which will ultimately lead to economic self-sufficiency and increase the productive capacity of LDCs. The provision of skills and technologies will ultimately help with improving standards of living and increasing productive capacity."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q7-c-i",
+  "topicId": "economics-4-2",
+  "conceptId": "benefits-of-free-trade",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q7(c)(i)",
+  "questionText": "Outline two economic benefits claimed for ‘free trade’.",
+  "stem": "“The World Trade Organisation (WTO) is the only international organisation dealing with the global rules of trade between nations.”",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A benefit — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two benefits, 5 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Greater choice of commodities / higher standard of living Trade allows us benefit from a greater variety of goods and services, than would be available without trade. We lack some essential raw materials for production and thus must import these. Trade increases our standard of living.",
+      "More competitive prices of goods and services Trade results in greater competition on the market which should lead to more competitive prices for consumers.",
+      "Strengthens home economy / boosts employment / investment opportunities Employment will be created in those industries which are expanding due to the benefits of trade. A healthy trading economy generates confidence in the economy and investment is thus encouraged. GDP is boosted and an incentive to grow may develop.",
+      "Companies benefit from economies of large scale production With trade, specialisation will take place. Companies will increase production and may benefit from economies of scale. Domestic firms may become more competitive and more efficient."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q7-c-ii",
+  "topicId": "economics-4-2",
+  "conceptId": "why-countries-protect",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q7(c)(ii)",
+  "questionText": "Outline three reasons why countries might choose to impose barriers to free trade.",
+  "stem": "“The World Trade Organisation (WTO) is the only international organisation dealing with the global rules of trade between nations.”",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three reasons, 5 marks each. Other acceptable answers marked on their merits.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Protect infant industry Small firms need to be protected to give them time to expand and gain economies of scale, which will allow them compete on an international basis.",
+      "Prevent dumping A country may ban dumping of foreign goods on its home market if the government sees such dumping as a threat to domestic producers.",
+      "Protect employment on the domestic / home market A country may impose restrictions on imports to protect goods which can be produced at home, thus protecting job opportunities in the home market.",
+      "Encourage the domestic production of vital goods / national security A country may impose restrictions on the import of certain goods to reduce its dependence on foreign supplies of such goods. Governments do not want to be exclusively dependent on foreign markets for supplies of strategically important goods such as food, fuel etc. Free trade may result in the spread of animal diseases. During such crises governments may ban the importation of cattle to protect this vital industry."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q8-a",
+  "topicId": "economics-3-1",
+  "conceptId": "the-deficit-and-the-debt",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q8(a)",
+  "questionText": "Explain the relationship between a government Budget Deficit and the National Debt.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 + 10",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-deficit",
+    "kind": "point",
+    "verbatim": "A government budget deficit exists when total government expenditure exceeds total government revenue. A budget deficit is financed by increased government borrowing.",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The budget deficit, 10 marks."
+   },
+   {
+    "id": "r-debt",
+    "kind": "point",
+    "verbatim": "National debt is the total amount (cumulative) of government borrowing which is outstanding (due / owed). A budget deficit will result in an increased national debt in absolute terms and a higher cost of servicing the national debt.",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The national debt and the relationship, 10 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q8-b-i",
+  "topicId": "economics-3-1",
+  "conceptId": "the-canons-of-taxation",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q8(b)(i)",
+  "questionText": "Discuss Adam Smiths' four Canons of Taxation in his book, An Inquiry into the Nature and Causes of the Wealth of Nations (1776).",
+  "stem": "“The Irish Tax system has evolved over time to reflect changing economic and social conditions and will need to be equally responsive to new developments in the future.” (Commission on Taxation Report, 2009)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 x 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r-equity",
+    "kind": "point",
+    "verbatim": "Equity — The ability-to-pay principle/Taking a higher proportion of income in tax as income rises. The better able should bear a greater burden of taxation, whether or not they benefit. The idea of this canon is that taxes should be progressive and so income tax in Ireland is equitable as those on higher incomes pay a greater proportion in taxation.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Equity, 6 marks."
+   },
+   {
+    "id": "r-economy",
+    "kind": "point",
+    "verbatim": "Economy — The costs of collecting taxes should be as low as possible. The income collected should be greater than the cost of collection. The raising of revenue for government is the main aim of taxation. If the taxes imposed are difficult to administer it may result in costs of collection being high relative to the yield from the taxation. The majority of the tax take should be available for the welfare of the economy. The local property tax is economic at it can be collected on-line.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Economy, 6 marks."
+   },
+   {
+    "id": "r-certainty",
+    "kind": "point",
+    "verbatim": "Certainty — The amount paid should be certain and clear/ A taxpayer should know when they are paying tax and how much tax they are paying. Similarly the government should know how much they are collecting and when they will receive it. Various taxes such as VAT receipts must be forwarded to the Revenue Commission at certain specified times.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Certainty, 6 marks."
+   },
+   {
+    "id": "r-convenience",
+    "kind": "point",
+    "verbatim": "Convenience — The tax should be collected in a way and at a time which is convenient for the taxpayer. It is more convenient to have tax deducted at source e.g. PAYE rather to receive a bill for the total amount due in a single payment after the income has been spent. VAT is collected at the time of purchase and so is convenient for the taxpayer.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Convenience, 6 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q8-b-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "principles-of-a-modern-tax-system",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q8(b)(ii)",
+  "questionText": "Outline two other principles which could be considered in a modern tax system. Justify your answers.",
+  "stem": "“The Irish Tax system has evolved over time to reflect changing economic and social conditions and will need to be equally responsive to new developments in the future.” (Commission on Taxation Report, 2009)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A principle, justified — any two",
+    "marks": 11,
+    "openList": true,
+    "contextNote": "Two principles: the 1st correct response 6 marks, the 2nd 5. Other acceptable answers marked on their merits.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "A tax system should have a limited disincentive effect on work / saving If the rate of personal income tax is considered too high (Ireland’s effective highest rate is 51%) and a large proportion of additional income is taxed away this may discourage people from supplying additional effort or labour. Plans for a higher rate of income tax to be charged on people earning over €100,000 may deter foreigners from working in Ireland. The current rate of DIRT of 41% may deter people from saving.",
+      "A tax system should have a limited disincentive effect on investing The current rate of CPT 12.5% is a factor in attracting FDI. If this rate of tax were to increase it may deter MNCs from locating in Ireland and it may mean that some companies re-locate their operations.",
+      "Taxes should have a stabilising impact on the economy thus developing into automatic stabilisers A tax system should prevent the level of economic activity rising too fast as it would otherwise during a period of economic growth. Similarly in a recession, the amount collected in taxes falls, so the decrease in demand is not as great as it would otherwise be.",
+      "Tax rates should be consistent with national economic objectives The taxes levied should help the government achieve other economic/social objectives e.g. raising excise, VAT rates on alcohol may discourage consumption; the introduction of a ‘sugar tax’ may help reduce Irish obesity levels; the ‘carbon taxes’ may help reduce our carbon emissions.",
+      "Tax evasion should not be possible"
+     ],
+     "perOptionSteps": [
+      6,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2014-hl-sb-q8-c",
+  "topicId": "economics-3-1",
+  "conceptId": "from-direct-to-indirect-tax",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q8(c)",
+  "questionText": "Outline possible economic consequences of the Irish Government shifting the burden of taxation from direct taxation to indirect taxation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 @ 5",
+   "answer": 4,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A consequence — any four",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four points of information, 5 marks each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Encourages enterprise, investment, employment and employment promotion Lower rates of direct tax may incentivise workers and companies as direct taxes tend to be progressive. More take-home pay will increase the incentive to work. Rewards for risk taking encourages effort. Lower rates of direct taxes may lead to increased FDI.",
+      "Moving from direct to indirect can make the tax system more regressive Indirect taxes tend to be regressive. Lower income groupings may end up paying a greater proportion of their income in this form of tax because they spend a greater portion of their income. In 2010 a carbon tax was introduced in Ireland resulting in higher costs of purchase. Indirect taxes do not take account of ability to pay.",
+      "Evasion is more difficult with indirect tax Since the indirect tax e.g. VAT is included in the selling price of the good or service, it is impossible to evade. If you buy a good, then you must pay the tax on that good.",
+      "Revenue collected is not as certain with indirect tax The revenue collected is not as predictable as that from direct taxation. This may hinder the government’s financial planning. Indirect taxes can distort demand patterns thus making it more difficult to predict the amount of revenue that will be collected.",
+      "Indirect taxes can be inflationary A rise in VAT / Excise duties will increase the CPI in the short term. This may cause consumers to possibly decrease their spending and /or defer their spending.",
+      "May lead to a growth in the ‘shadow economy’ An increase in the rates of indirect taxation may cause some consumers to switch to the shadow economy as they seek lower prices for some goods and services."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2015-hl-sa-q1",
   "topicId": "economics-0-1",
   "conceptId": "why-choice-is-fundamental",

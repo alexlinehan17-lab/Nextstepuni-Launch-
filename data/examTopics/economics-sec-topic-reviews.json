@@ -2,7 +2,7 @@
   "subjectId": "economics",
   "authority": "SEC question paper; canonical curriculum node IDs",
   "reviewedAt": "2026-11-04",
-  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2015-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 37 physical variants pending.",
+  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2014 Higher, 2015-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 36 physical variants pending.",
   "questions": [
     {
       "level": "higher",
@@ -7936,6 +7936,275 @@
       ],
       "reason": "The circular flow, national income, its formula, consumer spending and the multiplier are National Income (3-0); an open economy is International Trade & Competitiveness (4-2). Eight tasks totalling 75. a(i) line 1 4 (2 + 2), line 2 3, line 3 4 (2 + 2); a(ii) 2 @ 4 (2 + 2), households and firms; a(iii) the answer 3 + the explanation 3. b(i) 5 (the scheme prints 4 + 1 under its one sentence); b(ii) 3 @ 5 the three letters; b(iii) 2 @ 5 (3 + 2) from four. c(i) 6 (3 + 3) for each of MPM and MPS; c(ii) 8, the four starred figures at 2.",
       "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "1",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-0-1",
+        "economics-3-1"
+      ],
+      "reason": "Opportunity cost is Scarcity & Choice (0-1); the government’s own choices are also Fiscal Policy & the Budget (3-1). The definition 8 + one example 8 from three sample responses: one card, two rows.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "2",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-1-5"
+      ],
+      "reason": "Marginal and average cost are Costs of Production, Revenue & Profit (1-5). i the circled answer (YES) 1; ii the explanation 15.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "3",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-3-2"
+      ],
+      "reason": "Structural unemployment and the policies to reduce it are Employment & Unemployment (3-2). The definition 10 + one policy measure 6 from two.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "4",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "reason": "Complementary goods (joint demand) are The Consumer (Demand) (1-1). The explanation 12 + the example 4.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "5",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "reason": "The assumptions of monopoly are Market Structures (2-0). Three assumptions from five: the 1st correct answer 6, then 5 + 5.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "6",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-4-2"
+      ],
+      "reason": "The euro’s exchange rate against the dollar is International Trade & Competitiveness (4-2). Two effects from five: the 1st correct answer 10, the 2nd 7.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "7",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-0-1"
+      ],
+      "reason": "Enterprise as a factor of production and its return are Scarcity & Choice (0-1). Two ways from three: the 1st correct response 10, the 2nd 7.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "8",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-4-1"
+      ],
+      "reason": "Exiting the EU/IMF/ECB programme, fiscal discipline and the budget are Fiscal Policy & the Budget (3-1); the Troika and FDI are also Globalisation (4-1). Two implications from five: the 1st correct response 11, the 2nd 6.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "9",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-2-2",
+        "economics-0-1"
+      ],
+      "reason": "Social costs and benefits of a public investment are externalities, Market Failure (2-2); weighing them is also Scarcity & Choice (0-1). Two social costs and two social benefits on one ladder: the 1st correct response 5, the 2nd, 3rd and 4th 4 each: one card.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "B1",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1",
+        "economics-1-2",
+        "economics-1-0"
+      ],
+      "reason": "Diminishing marginal utility and consumer surplus are The Consumer (Demand) (1-1); the law of supply and shifts in supply are The Firm (Supply) (1-2); a fixed-capacity market’s demand and supply are The Market Economy (1-0). Seven tasks totalling 75. a(i) the statement 4 + the explanation 9; a(ii) 2 @ 6 from four. b(i) the statement 4 + the diagram 4 (hidden solution diagram); b(ii) 6; b(iii) 2 factors @ 8, each stated and explained with its diagram (hidden solution diagrams). c(i) the diagram 8 + the explanation 4 (hidden solution diagram); c(ii) 2 points @ 4 from three.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "B2",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "reason": "Imperfect competition, its long-run equilibrium and oligopoly are Market Structures (2-0). Five tasks totalling 75. a(i) three assumptions from six: the 1st correct answer 5, then 4 + 4; a(ii) perfect competition 6 + imperfect competition 6. b(i) the diagram 10 (hidden solution diagram) + the explanation 8; b(ii) 3 points @ 4. c the market structure 1 + four explanations at 5 + 5 + 5 + 4 from five, with reference to the Irish grocery market.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "B3",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-1-4",
+        "economics-3-1"
+      ],
+      "reason": "Price and income elasticity of demand are Elasticity (1-4); the carbon tax’s yield is also Fiscal Policy & the Budget (3-1). Five tasks totalling 75. a(i) the three definitions @ 5; a(ii) 3 factors @ 5 from five. b one part of three asks: the PED working 10 (hidden working crop) + inelastic 2 + the implication for government revenue 8. c(i) 12; c(ii) 13.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "B4",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-2-1",
+        "economics-0-1",
+        "economics-1-2",
+        "economics-1-0",
+        "economics-3-4"
+      ],
+      "reason": "Derived demand, transfer earnings, supply price and economic rent are factor incomes, The Labour Market (2-1); land as a factor of production is Scarcity & Choice (0-1); where a firm locates is The Firm (Supply) (1-2); residential property prices are The Market Economy (1-0); mortgage arrears are Financial Sector (3-4). Five tasks totalling 75. a the four terms, each explanation 3 + example 2. b(i) 2 characteristics @ 5 from three; b(ii) 3 factors @ 5 from eight. c(i) 3 factors @ 5 from five; c(ii) one impact per category @ 5: households, the banking sector and the government, three heading rows.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "B5",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-4-1"
+      ],
+      "reason": "The national income identity, the MPC, the MPM, GDP, GNP and the limits of national income statistics are National Income (3-0); multinational companies are Globalisation (4-1). Eight tasks totalling 75. a(i)-(iv) each 5, the answer with its working (hidden working crops). b 4 points @ 5 from eleven. c(i) GDP 6 + GNP 6; c(ii) 8, the scheme’s one possible response; c(iii) 3 points @ 5 from six.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "B6",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-1-3"
+      ],
+      "reason": "The government’s economic aims, their conflicts and austerity are Fiscal Policy & the Budget (3-1); privatisation is Government Intervention (1-3). Four tasks totalling 75. a(i) 4 points @ 5 from seven; a(ii) 2 conflicts @ 5 from four. b 2 arguments for @ 5 from six + 2 against @ 5 from five, both required. c four consequences from seven: the 1st correct response 7, the 2nd, 3rd and 4th 6.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "B7",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        8
+      ],
+      "canonicalNodeIds": [
+        "economics-4-0",
+        "economics-4-2",
+        "economics-4-1"
+      ],
+      "reason": "Economic development, LDCs and foreign aid are Growth & Development (4-0); free trade and barriers to it are International Trade & Competitiveness (4-2); the WTO is also Globalisation (4-1). Six tasks totalling 75. a(i) economic development 5 + economic growth 5; a(ii) 3 points @ 5 from eight. b(i) 3 points @ 5 from seven; b(ii) 2 points @ 5 from six. c(i) 2 benefits @ 5 from four; c(ii) 3 reasons @ 5 from four.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2014,
+      "n": "B8",
+      "fileid": "LC034ALP000EV.pdf",
+      "pages": [
+        8
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1"
+      ],
+      "reason": "The budget deficit, the national debt, the canons of taxation and the mix of direct and indirect taxes are Fiscal Policy & the Budget (3-1). Four tasks totalling 75. a the budget deficit 10 + the national debt 10. b(i) the four canons @ 6; b(ii) two principles from five: the 1st correct response 6, the 2nd 5. c 4 points @ 5 from six.",
+      "paperSha256": "f1f48479f0b3298944436833fd4387987b08cad000c26c65751ce8bd2a8e3a24"
     }
   ]
 }

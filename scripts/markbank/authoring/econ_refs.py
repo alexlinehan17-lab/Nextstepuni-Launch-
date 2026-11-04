@@ -158,6 +158,7 @@ HAND_CHECKED = {
     'econ-2015-ol-sb-q1-c-i',         # 2015 OL p5: "(i) Explain the term brand loyalty." (six words)
     'econ-2015-ol-sb-q3-a-i',         # 2015 OL p7: "(i) Explain the underlined term above." (five words)
     'econ-2015-ol-sb-q5-b-i',         # 2015 OL p8: "(i) Explain the economic term embargo." (six words)
+    'econ-2014-hl-sb-q7-a-ii',        # 2014 HL p8: "(ii) Outline three characteristics of LDCs." (five words)
 }
 
 

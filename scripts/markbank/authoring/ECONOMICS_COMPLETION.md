@@ -2105,3 +2105,58 @@ Checks:
 - reconcile: 1,552/2,197, with 2015 OL at 80/80.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2014 Higher English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 40 scheme pages were viewed:
+- paper pp9-12 are blank;
+- scheme pp1-4 are the cover, the note on published schemes, the title page
+  and the support notes with the index, and pp38-40 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 54 routes for the 54 printed asks (10 in Section A, 44 in Section B),
+one card per ask. No printed choice is credited with a list for each side. 12
+crops: 10 hidden scheme solutions and 2 paper data crops.
+
+Decisions:
+- The scheme draws its bullets in SymbolMT, and the text layer reports each one
+  as the letter "x" at the start of a line. No slice crosses one. A bullet list
+  is cut at its bullets. A response whose bullets belong together (the B1(c)(i)
+  and B2(b)(i) explanations, two A Q8 implications) is read where the scheme
+  file prints it without them (its column rendering), so it still traces. The
+  B5(c)(ii) response does not appear whole in any rendering. Its row is the
+  scheme's concluding bullet (GNP is probably the better measure), and the
+  whole six-bullet response is the hidden crop.
+- Ladders are claimed at their printed steps: A Q5 6 + 5 + 5, A Q6 and A Q7
+  10 + 7, A Q8 11 + 6, A Q9 5 + 4 + 4 + 4 (two costs and two benefits on one
+  ladder), B2(a)(i) 5 + 4 + 4, B2(c) 5 + 5 + 5 + 4 after the 1 for oligopoly,
+  B6(c) 7 + 6 + 6 + 6, B8(b)(ii) 6 + 5.
+- A diagram the scheme prices without words (B1(b)(i) 4, B1(c)(i) 8,
+  B2(b)(i) 10) is claimed by the card's own ask, with the scheme's diagram as
+  the hidden figure.
+- B4(a): each term's explanation is a row at 3, and the examples are a 4 @ 2
+  menu. The scheme prints an example for derived demand only and "Appropriate
+  example." for the others.
+- B3(b) is one unnumbered part with three asks (calculate, elastic or
+  inelastic, the implication): one card, 10 + 2 + 8, with the working as the
+  hidden crop.
+- B5(a)(i)-(iv) each have their working crop as the hidden figure, and the
+  data table is the crop beside each ask.
+- B2(b)(i): one crop blanks the heading below the diagram, "Explanation of
+  long run equilibrium:", which sits level with the Q2 and Quantity labels.
+  Nothing of the diagram is touched.
+
+Refcheck: one short ask was read by hand (B7(a)(ii)).
+
+Topic review: no reference anomalies. All 16 of the commercial reference's
+2014 Higher associations match the review.
+
+Checks:
+- econ_review: 30/66.
+- build: 1,659 cards, 0 dropped.
+- Build rule: 223 claims on this paper, 0 untraceable (13 trace by halves).
+- reconcile: 1,606/2,197, with 2014 HL at 54/54.
+- refcheck: 0 wrong.
+- cardlint: clean.

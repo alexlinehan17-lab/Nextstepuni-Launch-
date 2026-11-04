@@ -20,6 +20,7 @@ import higher2016Review from '../scripts/markbank/authoring/reviews/economics-20
 import ordinary2016Review from '../scripts/markbank/authoring/reviews/economics-2016-ol-ev.json';
 import higher2015Review from '../scripts/markbank/authoring/reviews/economics-2015-hl-ev.json';
 import ordinary2015Review from '../scripts/markbank/authoring/reviews/economics-2015-ol-ev.json';
+import higher2014Review from '../scripts/markbank/authoring/reviews/economics-2014-hl-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -329,10 +330,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // Old syllabus English: every sitting from 2015 through 2020 Higher reviewed (variants 19-29).
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(37);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(43);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(29);
+    // Old syllabus English: every sitting from 2014 Higher through 2020 Higher reviewed (variants 19-30).
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(36);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(42);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(30);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -1388,6 +1389,67 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     // No stem carries a table's text: each table is the crop beside the ask.
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '100 50,000',
       '2,000 1,000', 'Factor of Production', 'SENTENCE']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 54 independently counted 2014 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2014);
+    const tasks = higher2014Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(54);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2014Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2014, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2014 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75.
+      const total = question.tasks.reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2014 Higher ladders at their printed steps and reads the SymbolMT bullets as one response', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2014-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    // First-correct-response ladders, each at its printed steps.
+    for (const [id, steps] of [['sa-q5', [6, 5, 5]], ['sa-q6', [10, 7]], ['sa-q7', [10, 7]], ['sa-q8', [11, 6]],
+      ['sa-q9', [5, 4, 4, 4]], ['sb-q2-a-i', [5, 4, 4]], ['sb-q6-c', [7, 6, 6, 6]], ['sb-q8-b-ii', [6, 5]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    expect(card('sb-q2-c').rows[1].group!.perOptionSteps).toEqual([5, 5, 5, 4]);
+    // The scheme draws its bullets in SymbolMT, which the text layer reports as the letter x: none reaches a card.
+    const text = CARDS.filter(c => c.year === 2014)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    expect(text).not.toMatch(/(?:^|[\s"])x [A-Z]/);
+    expect(card('sb-q1-c-i').rows[1].verbatim).toContain('vertical or perfectly inelastic. The equilibrium quantity is 80,000.');
+    // A diagram the scheme prints without words is claimed by the card's own ask, beside the hidden figure.
+    for (const id of ['sb-q1-b-i', 'sb-q1-c-i', 'sb-q2-b-i']) {
+      const diagram = card(id).rows.find(r => r.id === 'r-diagram')!;
+      expect(card(id).questionText, id).toContain(diagram.verbatim);
+      expect(card(id).figure?.solution, id).toBe(true);
+    }
+    // B4(a): each term's explanation at 3, and an example of each at 2.
+    expect(card('sb-q4-a').rows.map(r => r.marks)).toEqual([3, 3, 3, 3, 8]);
+    for (const c of CARDS.filter(item => item.year === 2014 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    // No stem carries a table's text: each table is the crop beside the ask.
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '20 45 60',
+      '€80,000 €?']) {
       expect(text, junk).not.toContain(junk);
     }
   });
