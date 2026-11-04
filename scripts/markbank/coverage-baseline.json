@@ -394,12 +394,12 @@
   },
   "history": {
     "cards": 4658,
-    "contentHash": "c233e2b37c51f571",
-    "coveragePct": 100.0,
+    "contentHash": "aeb3a119ee5c3388",
+    "coveragePct": 94.2,
     "covered": 4658,
     "excluded": 0,
-    "leaves": 4658,
-    "open": 0,
+    "leaves": 4943,
+    "open": 285,
     "orphans": 0,
     "papers": {
       "count": 66,

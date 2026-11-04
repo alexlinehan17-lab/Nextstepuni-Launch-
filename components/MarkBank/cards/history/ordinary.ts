@@ -47763,8 +47763,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Document B gives Faulkner’s attitude to the London government", marks: null },
     { id: "r-2", kind: "point", verbatim: "There is no mention of Faulkner or the London government in document A. Document B states that Faulkner “felt betrayed” by the London government", marks: null },
-    { id: "r-3", kind: "point", verbatim: "He has not been given enough help to cope with all the problems caused by the strike", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Identification of doc B and quote from doc B required.", marks: null, contextNote: "5M + 5M Max = 10M" },
+    { id: "r-3", kind: "point", verbatim: "He has not been given enough help to cope with all the problems caused by the strike", marks: null, contextNote: "Identification of doc B and quote from doc B required. 5M + 5M Max = 10M" },
     ],
     sourceMaterial: {
           "kind": "source-text",

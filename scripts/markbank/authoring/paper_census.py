@@ -3824,7 +3824,36 @@ def census_subject(subject):
                     'type': 'marks-checksum',
                     'where': f"{p['year']} {p['level']} {p.get('paper') or ''}",
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
+    if subject == 'history':
+        papers.extend(census_history_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+def census_history_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    History's deferred sittings (hist_paper.DEFERRED_PAPERS: 2022 and 2023,
+    Later Modern, both levels) are papers of their own, keyed 'Deferred' as
+    Physics and Home Economics key theirs (codex/home-economics-continuation-
+    20261101, census_physics_deferred), so a deferred ask never lands on a
+    June leaf with the same address. The checksum is not run on them.
+    """
+    from hist_paper import HistPaper, DEFERRED_PAPERS          # noqa: E402
+    papers = []
+    for year, level, field in DEFERRED_PAPERS:
+        P = HistPaper(year, level, field, 'deferred')
+        parts, texts = set(P.asks), dict(P.asks)
+        leaves = list(leaves_of(parts))
+        flags = [f for f in continuity_flags(parts, texts, 'history')
+                 if not short_ask_ok('history', year, level, f)]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'history'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
 
 
 def report(result):

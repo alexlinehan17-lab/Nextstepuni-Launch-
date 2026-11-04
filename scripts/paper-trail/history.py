@@ -29,6 +29,7 @@ import fitz
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
 CORPUS = ROOT / "paper-trail-corpus" / "exampapers"
+DEFERRED_CORPUS = ROOT / "paper-trail-corpus" / "deferredexams"
 INDEX_PATH = ROOT / "paperTrailData.ts"
 TAGS_PATH = HERE / "topic-tags" / "tags" / "history.json"
 BASELINE_PATH = ROOT / "test" / "fixtures" / "historyTopicQuestionBaseline.json"
@@ -45,6 +46,21 @@ TOPIC_MAIN_IDS = {
 # was generated.  Its official DQB is Ireland Topic 2, case study: GAA to 1891.
 NEW_DQB_TAGS = {
     2026: {"primary": "history-2-7", "secondary": "history-2-4"},
+}
+
+# The SEC's deferred sittings in the Atlas, each its own paper (index entries
+# marked "sitting": "deferred", fileid "...-deferred.pdf", as Physics and Home
+# Economics file theirs), English editions, admitted one at a time as each is
+# carded in the Mark Bank (hist_paper.DEFERRED_PAPERS lists every one set).
+DEFERRED_SITTINGS: set[tuple[int, str]] = set()
+# A deferred sitting sets its own documents question, and in 2023 the two
+# levels set different case studies. Each tag is the case study the paper's
+# page 2 names (the guard word must be printed there) under its topic.
+DEFERRED_DQB_TAGS = {
+    (2022, "higher"): ({"primary": "history-2-19", "secondary": "history-2-16"}, "Apprentice Boys"),
+    (2022, "ordinary"): ({"primary": "history-2-19", "secondary": "history-2-16"}, "Apprentice Boys"),
+    (2023, "higher"): ({"primary": "history-2-17", "secondary": "history-2-16"}, "Sunningdale"),
+    (2023, "ordinary"): ({"primary": "history-2-18", "secondary": "history-2-16"}, "Coleraine"),
 }
 
 IRELAND_HEADING = re.compile(
@@ -74,7 +90,9 @@ def paper_index() -> list[dict]:
     # Reviewed window only: June sittings from 2010. The deferred sitting and the
     # 1995-2009 archive papers carry no answer maps or Mark Bank cards.
     return [entry for entry in json.loads(re.sub(r",\s*]$", "]", match.group(1)))
-            if not entry.get("sitting") and entry["year"] >= 2010]
+            if (not entry.get("sitting") and entry["year"] >= 2010)
+            or (entry.get("sitting") == "deferred" and entry["lang"] == "ev"
+                and (entry["year"], entry["level"]) in DEFERRED_SITTINGS)]
 
 
 def identity(item: dict) -> str:
@@ -336,6 +354,7 @@ def main() -> None:
     hosted_maps: list[tuple[int, str, dict]] = []
     corrections: list[dict] = []
     dqb_topics_by_year: dict[int, str] = {}
+    deferred_dqb_topics: dict[int, str] = {}
 
     for entry in entries:
         if len(entry["papers"]) != 1:
@@ -344,12 +363,18 @@ def main() -> None:
             )
         item = entry["papers"][0]
         fileid = item["doc"]["f"]
-        paper_path = CORPUS / str(entry["year"]) / fileid
+        deferred = entry.get("sitting") == "deferred"
+        paper_path = (DEFERRED_CORPUS / str(entry["year"]) / fileid.replace("-deferred", "")
+                      if deferred else CORPUS / str(entry["year"]) / fileid)
         if not paper_path.exists():
             raise FileNotFoundError(paper_path)
 
         with fitz.open(paper_path) as document:
             dqb = dqb_topic(document, paper_path)
+            if deferred:
+                deferred_tag, guard = DEFERRED_DQB_TAGS[(entry["year"], entry["level"])]
+                if guard not in clean(document[1].get_text("text")):
+                    raise RuntimeError(f"{paper_path}: documents question is not the {guard} case study")
             anchors, section_three, paper_corrections = topic_anchors(
                 document,
                 paper_path,
@@ -365,14 +390,14 @@ def main() -> None:
             )
 
         dqb_key = f"{dqb[0]}{dqb[1]}"
-        prior_dqb = dqb_topics_by_year.setdefault(entry["year"], dqb_key)
+        prior_dqb = (deferred_dqb_topics if deferred else dqb_topics_by_year).setdefault(entry["year"], dqb_key)
         if prior_dqb != dqb_key:
             raise RuntimeError(
                 f"{entry['year']}: level/language editions disagree on DQB "
                 f"{prior_dqb} != {dqb_key}"
             )
 
-        dqb_tag = year_dqb_tags.get(entry["year"])
+        dqb_tag = deferred_tag if deferred else year_dqb_tags.get(entry["year"])
         if not dqb_tag:
             raise RuntimeError(f"{entry['year']}: no canonical DQB tag")
         dqb_main = TOPIC_MAIN_IDS[dqb[0]][dqb[1]]

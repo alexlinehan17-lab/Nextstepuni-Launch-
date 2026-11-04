@@ -64,6 +64,23 @@ def papers_dir():
     return os.path.join(ROOT, 'examiner-reports', 'history', 'papers')
 
 
+# The SEC's DEFERRED sittings of History, as the Paper Trail index lists them
+# (paperTrailData.ts, entries with "sitting": "deferred"): 2022 and 2023 only,
+# Later Modern only, both levels. The archive's deferredexams/ holds LC004 (the
+# Later Modern paper) for those two years and no LC096, and no History paper
+# at all for 2024 or 2025. Each is its own sitting: its own paper and scheme,
+# its own census paper ('Deferred'), cited "... — Deferred sitting".
+DEFERRED_PAPERS = [(2022, 'hl', 'lm'), (2022, 'ol', 'lm'), (2023, 'hl', 'lm'), (2023, 'ol', 'lm')]
+
+
+def deferred_paper_path(year, level, field):
+    """The deferred sitting's English paper, read straight from the archive."""
+    if (year, level, field) not in DEFERRED_PAPERS:
+        raise FileNotFoundError(f'no deferred History paper for {year} {level} {field}')
+    return os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year),
+                        f'LC004{"A" if level == "hl" else "G"}LP000EV.pdf')
+
+
 def _glyphs():
     table = {}
     for name in ('glyphmap.json', 'glyphmap-history.json'):
@@ -164,6 +181,16 @@ MISPRINTS = {
     # same answers "Ireland: Topic 6". The documents question's own head,
     # "Later Modern Ireland: Topic 5" (page 2), is printed right and untouched.
     (2010, 'ol', 'lm'): {'Ireland: Topic 5': 'Ireland: Topic 6'},
+    # The 2022 deferred Ordinary paper prints two question numbers without
+    # their stop, both checked on the rendered page: "4 Apart from security,
+    # ..." (Ireland Topic 3 A, page 6) and "3 Why did the astronauts have to
+    # work hard?" (Europe Topic 6 A, page 14). Unread, each question ran on
+    # into the one before it and the census lost an ask in each unit.
+    (2022, 'ol', 'lm', 'deferred'): {
+        '4 Apart from security, what was one other reason the animals were shot?':
+            '4. Apart from security, what was one other reason the animals were shot?',
+        '3 Why did the astronauts have to work hard?':
+            '3. Why did the astronauts have to work hard?'},
 }
 EXTRA = re.compile(r'^Answer the questions below if you are following the '
                    r'Alternative Instructions', re.I)
@@ -426,10 +453,11 @@ class HistPaper:
     every topic, so a bare question number is not an address here.
     """
 
-    def __init__(self, year, level, field):
+    def __init__(self, year, level, field, sitting=None):
         self.year, self.level, self.field = year, level, field
-        self.path = os.path.join(papers_dir(),
-                                 f'{year}-{level}-{field}-paper.pdf')
+        self.sitting = sitting
+        self.path = (deferred_paper_path(year, level, field) if sitting == 'deferred'
+                     else os.path.join(papers_dir(), f'{year}-{level}-{field}-paper.pdf'))
         if not os.path.exists(self.path):
             raise FileNotFoundError(self.path)
         self.asks = {}
@@ -448,7 +476,8 @@ class HistPaper:
 
     # -- reading ---------------------------------------------------------
     def _read(self):
-        misprints = MISPRINTS.get((self.year, self.level, self.field), {})
+        misprints = MISPRINTS.get((self.year, self.level, self.field)
+                                  + ((self.sitting,) if self.sitting else ()), {})
         section = None          # '1' | '2' | '3'
         topic = None            # int
         part = None             # 'A' | 'B' | 'C' | None

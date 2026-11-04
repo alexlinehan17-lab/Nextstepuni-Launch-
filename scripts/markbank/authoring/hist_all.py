@@ -163,6 +163,18 @@ ESSAY_PAPERS = {
 # the essay papers; each joins one at a time, as it is read and reviewed
 # (2021-2026 in lane batches 1-2, then back from 2020).
 PAPERS = sorted(ESSAY_PAPERS, key=lambda p: (p[0], p[1], FIELD_KEYS.index(p[2])))
+# The deferred sittings carded so far (hist_paper.DEFERRED_PAPERS lists every
+# one the SEC set), each its own sitting: ids "hist-2023-hl-deferred-lm-...",
+# citations "... — Deferred sitting", the form Physics and Home Economics use.
+DEFERRED_ESSAY_PAPERS = set()
+DEFERRED = 'deferred'
+DEFERRED_REF = ' — Deferred sitting'
+
+
+def sittings_to_card():
+    """(year, level, field, sitting) for every paper carded: June first, then deferred."""
+    return ([(y, l, f, None) for y, l, f in PAPERS]
+            + [(y, l, f, DEFERRED) for y, l, f in sorted(DEFERRED_ESSAY_PAPERS)])
 
 # Topic titles the SCHEME misprints, keyed (year, level, field, unit): (the
 # title it prints, a word the paper's questions under the unit and the
@@ -241,9 +253,9 @@ def slug(unit):
     return f's{section}t{topic}' + (part.lower() if part else '')
 
 
-def card_id(year, level, field, key):
+def card_id(year, level, field, key, sitting=None):
     unit, q, letter, roman = key
-    bits = ['hist', str(year), level, field, slug(unit)]
+    bits = ['hist', str(year), level] + ([sitting] if sitting else []) + [field, slug(unit)]
     if q is not None:
         bits.append(f'q{q}')
     if letter:
@@ -253,17 +265,16 @@ def card_id(year, level, field, key):
     return '-'.join(bits)
 
 
-def question_ref(year, level, field, key):
+def question_ref(year, level, field, key, sitting=None):
     unit, q, letter, roman = key
     ref = f'{year} {level.upper()} {FIELDS[field]} Section {unit}'
-    if q is None and letter is None and roman is None:
-        return ref
-    ref += ' Q' + ('' if q is None else str(q))
-    if letter:
-        ref += f'({letter})'
-    if roman:
-        ref += f'({roman})'
-    return ref
+    if q is not None or letter is not None or roman is not None:
+        ref += ' Q' + ('' if q is None else str(q))
+        if letter:
+            ref += f'({letter})'
+        if roman:
+            ref += f'({roman})'
+    return ref + (DEFERRED_REF if sitting == DEFERRED else '')
 
 
 def source_material(P, year, level, field, unit, pages, title, label):
@@ -274,6 +285,7 @@ def source_material(P, year, level, field, unit, pages, title, label):
         'pages': pages,
         'attribution': (f'SEC History {year} '
                         f'{"Higher" if level == "hl" else "Ordinary"} Level '
+                        f'{"deferred " if P.sitting == DEFERRED else ""}'
                         f'examination paper, {FIELDS[field]} — '
                         '© State Examinations Commission.'),
         'presentationNote': ('Read the exact source as it appeared in the '
@@ -406,7 +418,7 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
             return 'the printed choice and its instruction could not be read whole'
         question = '\n'.join([instruction, *items])
     card = {
-        'id': card_id(year, level, field, key),
+        'id': card_id(year, level, field, key, P.sitting),
         'subjectId': 'history',
         'kind': 'rubric',
         'level': LEVEL_WORD[level],
@@ -566,7 +578,7 @@ def split_card(P, year, level, field, key, ask, section, topic_id, ref):
             row['contextNote'] = note
         rows.append(row)
     card = {
-        'id': card_id(year, level, field, key),
+        'id': card_id(year, level, field, key, P.sitting),
         'subjectId': 'history',
         'level': LEVEL_WORD[level],
         'year': year,
@@ -622,7 +634,7 @@ def unanswered_card(P, S, year, level, field, key, section, ref, note):
     topic_section, topic = P.case_study
     question = P.asks[key]
     card = {
-        'id': card_id(year, level, field, key),
+        'id': card_id(year, level, field, key, P.sitting),
         'subjectId': 'history',
         'level': LEVEL_WORD[level],
         'year': year,
@@ -657,7 +669,7 @@ def tariff_only_card(P, year, level, field, key, ask, section, topic_id, ref):
         return "the part's printed split does not add up to its ceiling"
     question = P.asks[key]
     card = {
-        'id': card_id(year, level, field, key),
+        'id': card_id(year, level, field, key, P.sitting),
         'subjectId': 'history',
         'level': LEVEL_WORD[level],
         'year': year,
@@ -695,11 +707,11 @@ def build():
         refused[reason] += 1
         examples[reason].append(ref)
 
-    for year, level, field in PAPERS:
+    for year, level, field, sitting in sittings_to_card():
         if True:
             if True:
-                P = HistPaper(year, level, field)
-                S = HistScheme(year, level, field)
+                P = HistPaper(year, level, field, sitting)
+                S = HistScheme(year, level, field, sitting)
                 derived = derive_unpriced_parts(P, S)
                 for d in derived:
                     tariff_checks.setdefault('derived', []).append(f'{year} {level} {field} {d}')
@@ -795,7 +807,7 @@ def build():
 
                 # --- one card, or one exclusion, per printed ask.
                 for key in sorted(P.asks, key=lambda k: tuple(str(x) for x in k)):
-                    ref = question_ref(year, level, field, key)
+                    ref = question_ref(year, level, field, key, sitting)
                     unit = key[0]
                     section, topic, part = unit_parts(unit)
                     ask = S.by_key.get(key)
@@ -834,7 +846,8 @@ def build():
                         refuse('the ask sits under no syllabus topic', ref)
                         continue
 
-                    if ask.kind == 'banded' and (year, level, field) in ESSAY_PAPERS:
+                    if ask.kind == 'banded' and ((year, level, field) in ESSAY_PAPERS
+                                                 or sitting == DEFERRED):
                         # An essay is priced whole on its unit; a lettered
                         # documents part priced by its split alone is not.
                         if key[2]:
@@ -936,7 +949,7 @@ def build():
                                    'contextNote': ' — '.join(x for x in (rows[0].get('contextNote'),
                                                                          *(ask.partial_lines or [f'{alt} = {n}M'])) if x)}
                     card = {
-                        'id': card_id(year, level, field, key),
+                        'id': card_id(year, level, field, key, P.sitting),
                         'subjectId': 'history',
                         'level': LEVEL_WORD[level],
                         'year': year,

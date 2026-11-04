@@ -49,9 +49,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 
 
-def scheme_path(year, level):
+def scheme_path(year, level, sitting=None):
     return os.path.join(ROOT, 'examiner-reports', 'history', 'schemes',
-                        f'{year}-{level}.md')
+                        f'{year}-{level}{"-deferred" if sitting == "deferred" else ""}.md')
 
 
 # The two title pages that divide the document. They are printed alone on their
@@ -600,7 +600,10 @@ INSTRUCTION_POINT = re.compile(
     r'|Points? could include|The answer could contain'
     # 2011 Higher: "Comments must relate to both the Apprentice Boys and the
     # Bogsiders.", "Accept religion as relating to identity, culture, ...".
-    r'|Comments must relate to\b|Accept (?:religion|any linkage)\b'
+    r'|Comments must relate to\b|Accept (?:religion|any linkage|arguments)\b'
+    # "Identification of doc B and quote from doc B required. 5M + 5M Max =
+    # 10M" (2023 Ordinary, both sittings): the split's own condition.
+    r'|Identification of doc [AB]\b'
     # A half-answer cap printed under the answer: "NB: Reasons If only one
     # reason = max 5M" (2012 Higher Q3).
     r'|NB:\s*\w+\s+If only (?:one|ONE)\b)', re.I)
@@ -656,14 +659,25 @@ SENTENCE = re.compile(
 # paper at either level (paper_census.py declares that sitting absent, with
 # its evidence), and its two schemes print LATER MODERN alone.
 ONE_FIELD = {2020: 'lm'}
+# The deferred sittings set Later Modern alone (hist_paper.DEFERRED_PAPERS),
+# and their four schemes print a Later Modern half only, as 2020's do.
+DEFERRED_ONE_FIELD = 'lm'
+# Whole printed lines a scheme sets wrongly, keyed (year, level, sitting):
+# {printed line: the line the SEC meant}. The 2023 deferred Higher scheme
+# heads its documents question's fourth part "Contextualisation (40 marks)"
+# with no "4." (page 9, checked on the rendered page), where parts 1-3 are
+# numbered and every June scheme prints "4. Contextualisation (40 marks)".
+SCHEME_LINE_MISPRINTS = {
+    (2023, 'hl', 'deferred'): {'Contextualisation (40 marks)': '4. Contextualisation (40 marks)'},
+}
 
 
-def _field_bounds(lines, field, year):
+def _field_bounds(lines, field, year, one=None):
     """The first and last-plus-one line of one field of study's half."""
     starts = {}
     for key, pat in FIELD_TITLE.items():
         hits = [i for i, l in enumerate(lines) if pat.match(l.strip())]
-        expected = 1 if ONE_FIELD.get(year, key) == key else 0
+        expected = 1 if (one or ONE_FIELD.get(year, key)) == key else 0
         if len(hits) != expected:
             raise AssertionError(
                 f'{key}: expected {expected} "{pat.pattern}" title line(s), '
@@ -679,14 +693,14 @@ def _field_bounds(lines, field, year):
     return lo, hi
 
 
-def _halve(raw, field, year):
+def _halve(raw, field, year, one=None):
     """The lines of ONE field of study, in order."""
     lines = []
     for line in raw.split('\n'):
         if APPENDED.match(line):
             break
         lines.append(line.rstrip())
-    lo, hi = _field_bounds(lines, field, year)
+    lo, hi = _field_bounds(lines, field, year, one)
     return [l.strip() for l in lines[lo:hi]]
 
 
@@ -891,7 +905,7 @@ def _directions_to_notes(points):
     return kept
 
 
-def _halve_pages(raw, field, year):
+def _halve_pages(raw, field, year, one=None):
     """The scheme page of every line _halve() returns, in the same order.
 
     The same boundaries as _halve(), read again with the "## Page N" markers
@@ -907,7 +921,7 @@ def _halve_pages(raw, field, year):
         if m:
             page = int(m.group(1))
         pages.append(page)
-    lo, hi = _field_bounds(lines, field, year)
+    lo, hi = _field_bounds(lines, field, year, one)
     return pages[lo:hi]
 
 
@@ -938,15 +952,35 @@ class Ask:
 
 
 class HistScheme:
-    def __init__(self, year, level, field):
+    def __init__(self, year, level, field, sitting=None):
         self.year, self.level, self.field = year, level, field
-        self.path = scheme_path(year, level)
+        self.sitting = sitting
+        self.path = scheme_path(year, level, sitting)
         if not os.path.exists(self.path):
             raise FileNotFoundError(self.path)
         with open(self.path, encoding='utf-8') as fh:
             self.raw = fh.read()
-        self.lines = _halve(self.raw, field, year)
-        self.pages = _halve_pages(self.raw, field, year)
+        if sitting == 'deferred':
+            # The deferred schemes are set in a font whose hyphen is U+2010
+            # throughout ("1815‐1870", "B ‐ Max CM = 20 marks", "8‐10 marks"),
+            # and 2022's spaces its words with U+00A0, where every June
+            # scheme prints "-" and " ". The provenance gate folds both
+            # (schemeText.normalise); the reader reads them as the one
+            # character each is.
+            self.raw = (self.raw.replace('\u2010', '-').replace('\u2011', '-')
+                        .replace('\u00a0', ' '))
+            fixes = SCHEME_LINE_MISPRINTS.get((year, level, sitting), {})
+            if fixes:
+                lines = self.raw.split('\n')
+                for printed, meant in fixes.items():
+                    hits = [i for i, l in enumerate(lines) if l.strip() == printed]
+                    if len(hits) != 1:
+                        raise AssertionError(f'{year} {level} {sitting}: misprint {printed!r} found {len(hits)} times')
+                    lines[hits[0]] = meant
+                self.raw = '\n'.join(lines)
+        one = DEFERRED_ONE_FIELD if sitting == 'deferred' else None
+        self.lines = _halve(self.raw, field, year, one)
+        self.pages = _halve_pages(self.raw, field, year, one)
         assert len(self.pages) == len(self.lines)
         # 2018 prints an essay's ceiling over two lines, "1. Max. CM = 60" and
         # "Max. OE = 40". They are one entry: the second is joined onto the
@@ -1383,11 +1417,15 @@ class HistScheme:
                 ask.notes.append(m.group(0).strip())
                 point = point[m.end():].strip()
             if INSTRUCTION_POINT.match(point):
-                if IF_ONLY.search(point) and repaired:
+                if (IF_ONLY.search(point) or point.startswith('Identification of doc')) and repaired:
                     # A half-answer cap ("NB: Reasons If only one reason = max
                     # 5M") is the student's to apply: it stays on the card, as
                     # the last answer row's note.
                     label0, point0, note0 = repaired[-1]
+                    # The tariff reader took the part's marks off the closing
+                    # "Max = 10M"; the note keeps them, as hist_rows does.
+                    if re.search(r'\bMax\s*=\s*$', point) and ask.total:
+                        point = f'{point} {ask.total}M'
                     repaired[-1] = (label0, point0, ' — '.join(x for x in (note0, point) if x))
                 ask.notes.append(point)
                 continue
