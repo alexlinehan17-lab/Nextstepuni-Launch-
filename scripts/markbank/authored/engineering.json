@@ -2617,6 +2617,1572 @@
   "questionFigureIncludesPrompt": false
  },
  {
+  "id": "eng-2015-ol-q1-a",
+  "topicId": "eng-3-1",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(a)",
+  "questionText": "List two safety precautions to be observed when using a strip heater to bend acrylic.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wear protective gloves when handling hot plastic sheet.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Be careful not to overheat the acrylic sheet.",
+    "marks": null
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '3 + 2 Marks'.",
+  "questionFigureKey": "engineering-2015-OL-paper-q1a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q1-b",
+  "topicId": "eng-1-2",
+  "conceptId": "term-electrical-conductor-relation-properties-metals",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(b)",
+  "questionText": "Explain the term electrical conductor in relation to the properties of metals.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Metals are excellent conductors of electricity, which means an electrical current can pass through metals easily.",
+    "marks": 5
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '5 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q1-c",
+  "topicId": "eng-2-11",
+  "conceptId": "operations-where-centre-lathe-tailstock-used",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(c)",
+  "questionText": "State two operations where a centre lathe tailstock is used.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Drilling the centre of round bars.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Supporting the end of long bars when machining.",
+    "marks": null
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '3 + 2 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q1-d",
+  "topicId": "eng-2-13",
+  "conceptId": "advantages-using-computer-aided-manufacture-cam",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(d)",
+  "questionText": "State two advantages of using Computer Aided Manufacture (CAM).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Machine parts can be designed, drawn and edited on computer before manufacture.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Computers can be used to control the manufacturing process, providing accuracy and very high levels of finish.",
+    "marks": null
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '3 + 2 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q1-e",
+  "topicId": "eng-3-14",
+  "conceptId": "reasons-why-testing-essential-project-work",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(e)",
+  "questionText": "Outline two reasons why testing is essential in project work.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To establish if the final product operates as required.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To identify design aspects which might be improved.",
+    "marks": null
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '3 + 2 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q1-f",
+  "topicId": "eng-3-7",
+  "conceptId": "reasons-why-quality-finish-important-manufacturing",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(f)",
+  "questionText": "State two reasons why the quality of finish is important in the manufacturing process.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To ensure the product is safe to use.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To improve the overall appearance / presentation of the final product.",
+    "marks": null
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '3 + 2 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q1-g",
+  "topicId": "eng-2-15",
+  "conceptId": "mechanism-labelled-shown-opposite",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(g)",
+  "questionText": "Name the mechanism labelled A, shown opposite.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cam and Follower.",
+    "marks": 5
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '3 + 2 Marks' beside the one answer, 'Cam and Follower.'",
+  "questionFigureKey": "engineering-2015-OL-paper-q1g-crop",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cam and Follower.",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2015-ol-q1-h",
+  "topicId": "eng-2-11",
+  "conceptId": "thread-forms-suitable-each-following-engineering",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(h)",
+  "questionText": "Name the thread forms suitable for each of the following: Engineering machine vice, Machine screw.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) Engineering machine vice – Buttress / Square thread.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) Machine screw – Vee form / ISO Metric thread.",
+    "marks": null
+   }
+  ],
+  "stem": "SECTION A – 30 marks Give brief answers to any six of the following:",
+  "notes": "The scheme prints '3+2 Marks'.",
+  "questionFigureKey": "engineering-2015-OL-paper-q1h-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q1-i",
+  "topicId": "eng-2-15",
+  "conceptId": "main-operating-features-any-following-spot",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(i)",
+  "questionText": "Describe the main operating features of any one of the following:\nSpot welding machine\nRack and pinion mechanism\nPlastic dip coating tank.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Spot welding machine: A spot welding machine has two copper electrodes which clamp the sheet metals to be welded. When the spot welding machine is turned on, a current flows from one electrode through the two sheet metal parts to the other electrode. A resistance to the flow of current builds up between the two sheets causing both pieces to heat up and melt at a point. The process only takes a few seconds and a nugget is formed at the weld area.",
+    "marks": 12,
+    "accepts": [
+     "Rack and pinion mechanism: A rack and pinion is used to convert between rotary (circular) and linear (straight line) motion. The rack is the flat, toothed part, the pinion is the gear. A rack and pinion can convert from rotary to linear or from linear to rotary. Rack and pinions are commonly used on drilling machines to bring down the drill into the work. The feed lever rotates the pinion and moves the rack, causing the drill spindle to move down in a straight line.",
+     "Plastic dip coating tank: The plastic dip coating tank consists of a fluidizing unit (tank) and a blower unit. The fluidizing unit has two compartments which are separated from each other by a porous material. The upper compartment contains the plastic powder and the air supply is connected to the lower one. Air passes up through the porous material and causes the plastic power to act like a fluid. The component is heated to 180ºC and dipped into the tank. The plastic close to the article melts and sticks to the component providing an even coating all over. The component is then removed and the molten plastic is allowed to cool and harden covering the article in a protective coating. A plastic dip coating tank is used to put a more socially acceptable finish on articles made from steel, such as shopping baskets and kitchen utensils."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any one: Good clear description Award 12 (11) Marks'. Section B is 'Any three parts @ 12 + 12 + 11 Marks': the card carries the 12 a part earns answered first or second; answered third it earns 11.",
+  "figureKey": "engineering-2015-OL-scheme-q1i-sol",
+  "questionFigureKey": "engineering-2015-OL-paper-q1i-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q1-j",
+  "topicId": "eng-3-14",
+  "conceptId": "any-following-software-wireless-technology-computer",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(j)",
+  "questionText": "Explain any two of the following: Software, Wireless technology, Computer simulation, USB port.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Software: Software is a programme or instruction which tells a computer to perform certain tasks. Computers which control CNC machines need software loaded to allow the computer communicate with the CNC device. Common software includes MS word, Solidworks, PowerPoint etc.",
+    "marks": 12,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Software: Software is a programme or instruction which tells a computer to perform certain tasks. Computers which control CNC machines need software loaded to allow the computer communicate with the CNC device. Common software includes MS word, Solidworks, PowerPoint etc.",
+      "Wireless technology: Wireless technology allows computers / phones / audio devices share information without the use of connecting cables. Information data is moved between computers by radio waves allowing laptops to move about within wireless networks. The cost and complexity of cable connections is removed.",
+      "Computer simulation: A computer simulation provides a computer generated animation of a procedure or process. Utilised in many fields from training of aircraft pilots to safety checks on machining operations, CNC software provides a simulation facility to trial run programs before manufacture.",
+      "USB port: A USB port is a standard cable connection hardware device on personal computers and consumer electronics. USB ports allow stand-alone electronic devices to be connected via cables to a computer (or to each other). USB stands for Universal Serial Bus, an industry standard for short-distance digital data communications. USB allows data to be transferred between devices. USB ports can also supply electric power across the cable to devices without their own power source."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any two: Good clear description Award 6 + 6(5)'. Section B is 'Any three parts @ 12 + 12 + 11 Marks': the card carries the 12 a part earns answered first or second; answered third it earns 11."
+ },
+ {
+  "id": "eng-2015-ol-q1-k",
+  "topicId": "eng-3-8",
+  "conceptId": "define-term-brittleness-material-brittle",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(k)",
+  "questionText": "Define the term brittleness and name a material which is brittle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A brittle material can be fractured easily by an impact. Brittleness is the opposite to toughness.",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Glass / Hardened Steel is an example of a brittle material.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Definition Award 6' and 'Example Award 6(5)'. Section B is 'Any three parts @ 12 + 12 + 11 Marks': the card carries the 12 a part earns answered first or second; answered third it earns 11."
+ },
+ {
+  "id": "eng-2015-ol-q1-l",
+  "topicId": "eng-3-14",
+  "conceptId": "any-following-printed-circuit-board-pcb",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(l)",
+  "questionText": "Explain any two of the following: Printed circuit board (PCB), Metal alloy, Knurling, Worm and worm wheel.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Printed circuit board (PCB): Printed circuit boards are used to connect electric components together. A printed circuit board (PCB) is usually a plastic board about 1.6mm thick with a thin layer of copper on one side. Unwanted portions of the copper are routed or etched away to leave pads and strips which form electrical connections between the components. The components are soldered to the pads. The strips allow the current to move from component to component.",
+    "marks": 12,
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Printed circuit board (PCB): Printed circuit boards are used to connect electric components together. A printed circuit board (PCB) is usually a plastic board about 1.6mm thick with a thin layer of copper on one side. Unwanted portions of the copper are routed or etched away to leave pads and strips which form electrical connections between the components. The components are soldered to the pads. The strips allow the current to move from component to component.",
+      "Metal alloy: A metal alloy is a material composed of two or more metals or a metal and a nonmetal such as carbon. High speed steel and stainless steel are examples of alloy steels where the addition of various elements such as tungsten or chromium improve the properties or give new properties such as resistance to corrosion or the ability to retain hardness and strength.",
+      "Knurling: Knurling is the operation of impressing serrations on articles to enable them to be gripped securely by hand. The knurl can be of diamond or straight patterned. Usually performed on a centre lathe where the work is rotated at a slow speed and a pair of wheels are pressed against it. The wheels rotate with the work.",
+      "Worm and worm wheel: A worm and worm wheel is a gear system which consists of a worm gear and a worm wheel. The worm gear, which looks like a screw thread, can be fixed to a motor spindle. It meshes with the worm wheel which can be fixed to a driving shaft. A worm and worm wheel gear system provides large speed reduction while increasing output torque. The worm gear runs at 90º to the worm wheel and only allows drive from worm to worm wheel."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any two: Good description Award 6 + 6 (5)'. Section B is 'Any three parts @ 12 + 12 + 11 Marks': the card carries the 12 a part earns answered first or second; answered third it earns 11."
+ },
+ {
+  "id": "eng-2015-ol-q1-m",
+  "topicId": "eng-2-11",
+  "conceptId": "cutting-tools-shown-i-ii",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q1(m)",
+  "questionText": "Name the two cutting tools shown at (i) and (ii).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) Plug Tap",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) Counter sink drill",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Name Award 6 + 6 (5)', for (i) and (ii) in that order. Section B is 'Any three parts @ 12 + 12 + 11 Marks': the card carries the 12 a part earns answered first or second; answered third it earns 11.",
+  "questionFigureKey": "engineering-2015-OL-paper-q1m-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q2-a",
+  "topicId": "eng-1-4",
+  "conceptId": "each-furnaces-shown",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q2(a)",
+  "questionText": "Name each of the furnaces shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) Electric arc furnace",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) Basic oxygen furnace",
+    "marks": 4
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(iii) Blast furnace",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints 'Name Award 3 @ 4 Marks'.",
+  "questionFigureKey": "engineering-2015-OL-paper-q2a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q2-b-i",
+  "topicId": "eng-1-4",
+  "conceptId": "draw-diagram-furnace-label-main-parts",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q2(b)(i)",
+  "questionText": "Select one of the furnaces shown above and answer each of the following: Draw a diagram of the furnace and label the main parts;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Select one of the furnaces shown above and answer each of the following: Draw a diagram of the furnace and label the main parts;",
+    "marks": 4,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints 'Any furnace Award 1 @ 4 Marks'. The furnaces are named at Q2(a): an electric arc, a basic oxygen and a blast furnace.",
+  "figureKey": "engineering-2015-OL-scheme-q2bi-sol",
+  "questionFigureKey": "engineering-2015-OL-paper-q2a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q2-b-ii",
+  "topicId": "eng-1-4",
+  "conceptId": "materials-charge",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q2(b)(ii)",
+  "questionText": "Select one of the furnaces shown above and answer each of the following: Name the materials in the charge;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Pig iron, Scrap steel & Lime.",
+    "marks": 3,
+    "accepts": [
+     "Pig iron & scrap metal",
+     "Iron ore, coke and limestone provide the charge"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Award 3 @ 3 Marks' for (ii)-(iv), for the furnace selected. The furnaces are named at Q2(a): an electric arc, a basic oxygen and a blast furnace.",
+  "questionFigureKey": "engineering-2015-OL-paper-q2a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q2-b-iii",
+  "topicId": "eng-1-4",
+  "conceptId": "how-charge-heated-or-melted",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q2(b)(iii)",
+  "questionText": "Select one of the furnaces shown above and answer each of the following: Describe how the charge is heated or melted;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Heat for this furnace is produced by an electric arc created by current flowing between the carbon electrodes and the charge.",
+    "marks": 3,
+    "accepts": [
+     "Oxygen blown onto the surface of the molten metal produces intense heat which burns unwanted impurities from the charge.",
+     "As the coke burns it provides heat to melt the charge."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Award 3 @ 3 Marks' for (ii)-(iv), for the furnace selected. The furnaces are named at Q2(a): an electric arc, a basic oxygen and a blast furnace.",
+  "questionFigureKey": "engineering-2015-OL-paper-q2a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q2-b-iv",
+  "topicId": "eng-1-4",
+  "conceptId": "metal-produced",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q2(b)(iv)",
+  "questionText": "Select one of the furnaces shown above and answer each of the following: Name the metal produced.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "High Quality Steel",
+    "marks": 3,
+    "accepts": [
+     "Steel.",
+     "Pig iron."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Award 3 @ 3 Marks' for (ii)-(iv), for the furnace selected. The furnaces are named at Q2(a): an electric arc, a basic oxygen and a blast furnace.",
+  "questionFigureKey": "engineering-2015-OL-paper-q2a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q2-c",
+  "topicId": "eng-3-8",
+  "conceptId": "identify-suitable-material-manufacture-each-components",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q2(c)",
+  "questionText": "Identify a suitable material for the manufacture of each of the components shown below: (i) Frying pan, (ii) Engineering square, (iii) Hot water cylinder.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) Frying pan - Aluminium / Cast iron / Copper",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) Engineering square - High carbon steel",
+    "marks": 4
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(iii) Hot water cylinder - Copper",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints 'Suitable material Award 3 @ 4 Marks'.",
+  "questionFigureKey": "engineering-2015-OL-paper-q2c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q2-d",
+  "topicId": "eng-1-5",
+  "conceptId": "metals-used-produce-each-alloys-listed",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q2(d)",
+  "questionText": "Name the metals used to produce each of the alloys listed below: (i) Brass, (ii) Solder.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) Brass - Copper / Zinc",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) Solder - Lead / Tin",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints 'Metals Award 2 @ 4 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q3-a",
+  "topicId": "eng-2-6",
+  "conceptId": "any-following",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q3(a)",
+  "questionText": "Explain any two of the following: (i) Case hardening, (ii) Annealing, (iii) Work hardening.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Case hardening: Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part then heated to a cherry red and quenched, producing a hardened skin with a tough core.",
+    "marks": 16,
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Case hardening: Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part then heated to a cherry red and quenched, producing a hardened skin with a tough core.",
+      "Annealing: Annealing is carried out to soften metal and to remove internal stresses. The metal is heated to the required temperature and allowed to cool down as slow as possible.",
+      "Work hardening: Work hardening is the buildup of stresses inside a metal due to hammering or shaping a metal cold. When a metal is hammered or shaped when cold it can become hard and brittle. Some metals are prone to work hardening. Copper and aluminium are typical examples where hardness values can be increased by working on the metal when cold."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any two descriptions: Award 2 @ 8 marks'."
+ },
+ {
+  "id": "eng-2015-ol-q3-b",
+  "topicId": "eng-2-6",
+  "conceptId": "how-head-engineering-hammer-shown-could",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q3(b)",
+  "questionText": "Describe how the head of the engineering hammer shown could be hardened and tempered.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hardening The head of the hammer is hardened by heating the head to a dark red colour and then cooling rapidly in clean water / oil. The head will become non-magnetic on reaching the required temperature. It must be dipped vertically and moved about in the water / oil to achieve proper cooling.",
+    "marks": 8
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Tempering To temper the hammer head, first polish with emery cloth so that the tempering colours can appear. Heat the head slowly to allow the colours to appear as the temperature rises. When the correct colour is achieved i.e. dark brown, cool it in oil or water.",
+    "marks": 7
+   }
+  ],
+  "notes": "The scheme prints 'Description Award 1 @ 8 Marks' and 'Award 1 @ 7 Marks', for the hardening and the tempering in that order.",
+  "questionFigureKey": "engineering-2015-OL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q3-c",
+  "topicId": "eng-3-1",
+  "conceptId": "safety-precautions-be-observed-when-handling",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q3(c)",
+  "questionText": "State two safety precautions to be observed when handling hot metals during heat treatment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Do not hold hot metals in your hand, always use thongs to secure.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Use protective equipment to guard against steam / hot splashes.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Reasons Award 2 @ 3 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q3-d",
+  "topicId": "eng-2-6",
+  "conceptId": "effects-using-each-following-when-cooling",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q3(d)",
+  "questionText": "Outline the effects of using each of the following, when cooling metals during heat treatment: • Water • Oil. OR State two applications for robotics in the manufacturing industry.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Water causes the component to lose heat much quicker than if were quenched in oil. This results in the steel having an increased hardness. Care needs to be taken in its use as distortion can occur.",
+    "marks": 4,
+    "route": "a"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Oil is less drastic than water in quenching and presents less risk of distortion and cracking. Oil gives better control of hardening with slightly less brittleness. Care needs to be taken in its use as fumes are given off by the oil.",
+    "marks": 4,
+    "route": "a"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Welding of car frames.",
+    "marks": 4,
+    "route": "b"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Spray painting car bodies.",
+    "marks": 4,
+    "route": "b"
+   }
+  ],
+  "notes": "The scheme prints 'Difference Award 2 @ 4 Marks' and 'Robotics Award 2 @ 4 Marks'. The paper sets two (d)s either side of an OR, the cooling media and robotics; the scheme prices both \"Award 2 @ 4 Marks\", so they are one card, each branch a route."
+ },
+ {
+  "id": "eng-2015-ol-q4-a",
+  "topicId": "eng-2-10",
+  "conceptId": "any-following-soft-soldering-terms",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q4(a)",
+  "questionText": "Describe any three of the following soft soldering terms: (i) Flux, (ii) Sweating, (iii) Cored solder, (iv) Tinning.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Flux A flux is used to remove oxides from the surface of the parts being soldered and to prevent further oxidation when the parts are heated. A flux can be active or passive.",
+    "marks": 9,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Flux A flux is used to remove oxides from the surface of the parts being soldered and to prevent further oxidation when the parts are heated. A flux can be active or passive.",
+      "Sweating Sweating is a process used when joining two pieces together by soldering. When sweating, both surfaces are coated separately with solder then placed together and heated until the solder on both melts and unites. When the solder cools, both parts are held together.",
+      "Cored solder Cored solder, supplied in wire form, contains flux inside small holes which run the length of the solder wire. This allows the flux to be deposited as soon as the solder is melted. Cored solder is used when joining electrical components together or when populating PCB’s.",
+      "Tinning Tinning is the process used when a thin layer of solder is required to cover components before sweating. The tip of a soldering iron is often tinned to ensure good heat transfer when soldering."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Description Award 3 @ 3 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q4-b-i",
+  "topicId": "eng-2-10",
+  "conceptId": "types-flame-can-be-produced-when",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q4(b)(i)",
+  "questionText": "Name three types of flame which can be produced when using the oxy-acetylene torch.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Neutral flame,",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Oxidising flame,",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Carbursing flame.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Flames Award 3 @ 3 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q4-b-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "proportions-oxygen-acetylene-required-each-flames",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q4(b)(ii)",
+  "questionText": "State the proportions of oxygen and acetylene required for each of the three flames at 4(b)(i).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A neutral flame contains equals amounts of oxygen and acetylene.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "An oxidising flame contains more oxygen than acetylene.",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A carburising flame contains a greater ratio of acetylene then oxygen.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Proportions Award 3 @ 3 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q4-c-i",
+  "topicId": "eng-2-10",
+  "conceptId": "how-heat-produced-during-manual-metal",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q4(c)(i)",
+  "questionText": "Describe how heat is produced during manual metal arc welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Heat is produced by an electric current passing from the electrode to the work piece in the form of an arc. The electrode touches the piece to start the arc and then withdrawn slightly to maintain it.",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints 'Descriptions Award 3 @ 4 Marks' for the three parts answered."
+ },
+ {
+  "id": "eng-2015-ol-q4-c-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "suitable-method-used-join-light-gauge",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q4(c)(ii)",
+  "questionText": "Name a suitable method used to join light gauge aluminium.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pop riveting / machine screws can be used to join light gauge aluminium sheet.",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints 'Descriptions Award 3 @ 4 Marks' for the three parts answered."
+ },
+ {
+  "id": "eng-2015-ol-q4-c-iii",
+  "topicId": "eng-2-10",
+  "conceptId": "safety-precautions-be-observed-when-soldering",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q4(c)(iii)",
+  "questionText": "List two safety precautions to be observed when soldering electrical circuits.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Always return the soldering iron back into its stand when soldering is completed.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Be careful not to burn the electrical cable on the soldering iron.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Descriptions Award 3 @ 4 Marks' for the three parts answered."
+ },
+ {
+  "id": "eng-2015-ol-q4-c-iv",
+  "topicId": "eng-2-10",
+  "conceptId": "type-machine-screw-shown-suggest-suitable",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q4(c)(iv)",
+  "questionText": "Name the type of machine screw shown and suggest a suitable application.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Countersunk machine screw.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Used when the screw head needs to fit flush with material being joined.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Descriptions Award 3 @ 4 Marks' for the three parts answered.",
+  "questionFigureKey": "engineering-2015-OL-paper-q4civ-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q4-d",
+  "topicId": "eng-3-1",
+  "conceptId": "reasons-why-face-must-be-protected",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q4(d)",
+  "questionText": "Explain two reasons why the face must be protected during manual metal arc welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To protect the face and eyes from the intense heat produced.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To protect against UV light thus reducing damage to eyes and skin.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Safety Award 2 @ 3 Marks'.",
+  "questionFigureKey": "engineering-2015-OL-paper-q4d-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q5-a-i",
+  "topicId": "eng-1-9",
+  "conceptId": "identify-manufacturing-process-used-production-each",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q5(a)(i)",
+  "questionText": "The three items shown below are manufactured from plastic materials. Identify a manufacturing process used in the production of each of the items shown above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ice cube tray: - Vacuum forming",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Sports bottle: - Blow moulding / Injection moulding (cap)",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Tooth brush: - Injection moulding / Caldering / Extrusion",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Name Award 3 @ 3 Marks'. \"Caldering\" is the scheme's spelling.",
+  "questionFigureKey": "engineering-2015-OL-paper-q5a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q5-a-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "aid-diagram-manufacturing-processes-named-5",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q5(a)(ii)",
+  "questionText": "The three items shown below are manufactured from plastic materials. Describe with the aid of a diagram, one of the manufacturing processes named in 5(a)(i).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Vacuum forming: Vacuum forming is used to make articles from thermoplastic sheet. The sheet is clamped and a heater raises the temperature of the sheet until it becomes soft and flexible. The mould table is raised and air is from beneath the sheet allowing atmospheric pressure to push down, forcing the sheet to take up the shape of the mould. When the mould table is lowered the vacuumed formed sheet can be removed for finishing.",
+    "marks": 9,
+    "accepts": [
+     "Blow Moulding: In blow moulding a heated thermoplastic tube called a parison is extruded between the two halves of a split mould. The mould closes around the parison and air is blown into it forcing the parison out against the wall of the mould. The component is allowed to cool before being removed from the opened mould.",
+     "Injection moulding: Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly. The mould opens and ejects the part."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any one process: Process Award 9 Marks'.",
+  "figureKey": "engineering-2015-OL-scheme-q5aii-sol",
+  "questionFigureKey": "engineering-2015-OL-paper-q5a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q5-b",
+  "topicId": "eng-3-1",
+  "conceptId": "safety-precautions-be-observed-when-machining",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q5(b)",
+  "questionText": "State two safety precautions to be observed when machining acrylic.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Acrylic can shatter and break easily, always ensure the correct cutting speed and feeds are selected when turning on a centre lathe.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "When drilling, ensure the acrylic sheet is supported underneath and reduce feed to help the drill cut through successfully.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints 'Any two: Safety Award 2 @ 3 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q5-c",
+  "topicId": "eng-1-9",
+  "conceptId": "any-following-terms-associated-plastic-technology",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q5(c)",
+  "questionText": "Explain any three of the following terms associated with plastic technology: (i) Thermoplastic, (ii) Fibreglass, (iii) Thermoforming, (iv) Thermosetting plastic.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Thermoplastic Thermoplastics are linear chain type polymers and are relatively soft and flexible, they melt easily and can be repeatedly softened and remoulded.",
+    "marks": 15,
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Thermoplastic Thermoplastics are linear chain type polymers and are relatively soft and flexible, they melt easily and can be repeatedly softened and remoulded.",
+      "Fibreglass Fibreglass is a fiber reinforced plastic where the reinforcement fiber is made of glass. The glass fiber may be randomly arranged but is commonly woven into a mat. The plastic matrix may be a thermosetting plastic- most often epoxy / polyester resin. Figreglass is strong as resists impact.",
+      "Thermoforming Thermoforming is a manufacturing process where a plastic sheet is heated until the plastic becomes soft and pliable. A strip heater can be used to heat acrylic sheet for thermoforming. The sheet can then be formed to a specific shape and then trimmed to create a usable product.",
+      "Thermosetting plastic Thermosetting plastics are three dimensional in structure with strong cross-links between molecules. They are therefore rigid and hard, they cannot be reset once they have hardened in the mould."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any three: Explanation Award 3 @ 5 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q5-d",
+  "topicId": "eng-1-9",
+  "conceptId": "procedure-used-produce-highly-finished-edge",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q5(d)",
+  "questionText": "Describe a procedure used to produce a highly finished edge on an acrylic sheet.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw file edge to remove saw cut or cross file marks. Use wet and dry emery paper to remove draw file marks. Finish with a plastic polish.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Description Award 1 @ 6 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q6-a",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-any-lathe-components-shown",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q6(a)",
+  "questionText": "Identify any three of the lathe components shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "(i) Knurling tool",
+    "marks": 15,
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "(i) Knurling tool",
+      "(ii) Centre drill / Slocombe drill",
+      "(iii) Parting off cutting tool",
+      "(iv) Fixed steady"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any three lathe components: Name Award 3 @ 5 Marks'.",
+  "questionFigureKey": "engineering-2015-OL-paper-q6a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q6-b",
+  "topicId": "eng-2-11",
+  "conceptId": "any-following-relation-machining",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q6(b)",
+  "questionText": "Explain any three of the following in relation to machining: (i) Taper turning, (ii) Spindle speed, (iii) Cutting fluids, (iv) Feed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Taper turning A turning process used on a centre lathe to produce a taper or angled finish on a round bar.",
+    "marks": 15,
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Taper turning A turning process used on a centre lathe to produce a taper or angled finish on a round bar.",
+      "Spindle speed This is the speed at which the chuck is rotating in RPM. Spindle speed can be altered by selecting various gear or pulley options.",
+      "Cutting fluids Cutting fluids are used when machining i.e. on a centre lathe or band saw. They help reduce heat and provide a lubricant at the cutting face between the cutting tool and material.",
+      "Feed Feed is the amount per revolution which the drill moves into the material being drilled."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any three terms: Explanation Award 3 @ 5 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q6-c-i",
+  "topicId": "eng-2-11",
+  "conceptId": "chuck-or-cad",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q6(c)(i)",
+  "questionText": "A chuck for use in a centre lathe is shown. Name this chuck.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Four jaw chuck",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints 'Centre lathe part Award 3 @ 5 Marks'. The paper sets two (c)s either side of an OR: the chuck (c), whose (i)-(iii) are carded apart, and the CNC (c), carded at the letter.",
+  "questionFigureKey": "engineering-2015-OL-paper-q6c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q6-c-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "applications-chuck-shown-or-x-axis",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q6(c)(ii)",
+  "questionText": "A chuck for use in a centre lathe is shown. Describe two applications for the chuck shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Holding square bar when turning.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Eccentric turning.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Centre lathe part Award 3 @ 5 Marks'. The paper sets two (c)s either side of an OR: the chuck (c), whose (i)-(iii) are carded apart, and the CNC (c), carded at the letter.",
+  "questionFigureKey": "engineering-2015-OL-paper-q6c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q6-c-iii",
+  "topicId": "eng-3-1",
+  "conceptId": "safety-precaution-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q6(c)(iii)",
+  "questionText": "A chuck for use in a centre lathe is shown. State one safety precaution to be observed when using this type of chuck.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "When eccentric turning do not select a high spindle speed.",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints 'Centre lathe part Award 3 @ 5 Marks'. The paper sets two (c)s either side of an OR: the chuck (c), whose (i)-(iii) are carded apart, and the CNC (c), carded at the letter.",
+  "questionFigureKey": "engineering-2015-OL-paper-q6c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q6-c",
+  "topicId": "eng-2-13",
+  "conceptId": "chuck-use-centre-lathe-shown-or",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q6(c)",
+  "questionText": "Explain any three of the following in relation to Computer Numerical Control (CNC) machining: (i) CAD, (ii) X-axis, (iii) Stepper motor, (iv) Safety switch.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "(i) Computer Aided Design / Drawing",
+    "marks": 15,
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "(i) Computer Aided Design / Drawing",
+      "(ii) Distances perpendicular to a CNC lathe centre line.",
+      "(iii) Motors used on a CNC lathe which allows the cutting tool to move in a number of predetermined steps. Steps are controlled by electrical pulses.",
+      "(iv) The safety switch is operated by the acrylic guard. If the acrylic guard is not closed the CNC lathe will not operate."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any three terms: Explanation Award 3 @ 5 Marks'. The paper sets two (c)s either side of an OR: the chuck (c), whose (i)-(iii) are carded apart, and the CNC (c), carded at the letter."
+ },
+ {
+  "id": "eng-2015-ol-q7-a",
+  "topicId": "eng-3-12",
+  "conceptId": "any-following-terms-relation-limits-fits",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q7(a)",
+  "questionText": "Describe any two of the following terms in relation to limits and fits: (i) Lower limit, (ii) Interference fit, (iii) Allowance.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Lower limit The lower limit is the smallest dimension allowed when machining.",
+    "marks": 10,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Lower limit The lower limit is the smallest dimension allowed when machining.",
+      "Interference fit: Interference fit results when the size of the shaft is larger than the size of the hole diameter. No clearance exists and a force is required to force the shaft into the hole.",
+      "Allowance: The allowance is the difference between the dimensions of a shaft and hole when assembled. In a clearance fit there is always a space between the shaft and hole which is called the allowance."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any two terms: Description Award 2 @ 5 Marks'."
+ },
+ {
+  "id": "eng-2015-ol-q7-b",
+  "topicId": "eng-3-12",
+  "conceptId": "hole-shaft-assembly-manufactured-dimensions-shown",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q7(b)",
+  "questionText": "A hole and shaft assembly are manufactured to the dimensions shown. State the: (i) Nominal diameter of the hole; (ii) Largest diameter of the hole; (iii) Smallest diameter of the shaft; (iv) The type of fit which will result from the assembly of the largest hole and the smallest shaft.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nominal diameter of the hole: 20",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Largest diameter of the hole: 20.06",
+    "marks": 5
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Smallest diameter of the shaft: 19.92",
+    "marks": 5
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Clearance fit",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints 'Calculations Award 4 @ 5 Marks'.",
+  "questionFigureKey": "engineering-2015-OL-paper-q7b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q7-c",
+  "topicId": "eng-3-12",
+  "conceptId": "any-instruments-shown-application-each-instrument",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q7(c)",
+  "questionText": "Name any three of the instruments shown and give one application for each instrument named.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "(i) Engineering protractor - for checking and marking angles",
+    "marks": 15,
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "(i) Engineering protractor - for checking and marking angles",
+      "(ii) Vee block and clamp - for holding round bars when marking out or drilling.",
+      "(iii) Digital micrometer - for accurate measurement of machine parts",
+      "(iv) Digital vernier height gauge - for accurate marking out of machine parts."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any three: Name & application Award 3 @ 5 Marks'. The paper sets two (c)s either side of an OR: the instruments (c), carded at the letter, and the electronic components (c), one card for each component photographed and captioned (i)-(iii).",
+  "questionFigureKey": "engineering-2015-OL-paper-q7c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q7-c-i",
+  "topicId": "eng-2-16",
+  "conceptId": "part",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q7(c)(i)",
+  "questionText": "Name each of the electronic components shown below and outline the function of each component named.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) DC electrical motor: To provide rotary movement to whatever is connected to its shaft i.e. gears, wheels, pulleys.",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints 'Name & function Award 3 @ 5 Marks'. The paper sets two (c)s either side of an OR: the instruments (c), carded at the letter, and the electronic components (c), one card for each component photographed and captioned (i)-(iii).",
+  "questionFigureKey": "engineering-2015-OL-paper-q7cor-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q7-c-ii",
+  "topicId": "eng-2-16",
+  "conceptId": "part",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q7(c)(ii)",
+  "questionText": "Name each of the electronic components shown below and outline the function of each component named.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(ii) Light Bulb: Provides light, converts electrical energy into light and heat energy.",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints 'Name & function Award 3 @ 5 Marks'. The paper sets two (c)s either side of an OR: the instruments (c), carded at the letter, and the electronic components (c), one card for each component photographed and captioned (i)-(iii).",
+  "questionFigureKey": "engineering-2015-OL-paper-q7cor-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2015-ol-q7-c-iii",
+  "topicId": "eng-2-16",
+  "conceptId": "page-6-6-blank-page-page",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2015 OL Q7(c)(iii)",
+  "questionText": "Name each of the electronic components shown below and outline the function of each component named.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(iii) Transistor: Operates as an electrical switch or can be used to amplify an electrical signal.",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints 'Name & function Award 3 @ 5 Marks'. The paper sets two (c)s either side of an OR: the instruments (c), carded at the letter, and the electronic components (c), one card for each component photographed and captioned (i)-(iii).",
+  "questionFigureKey": "engineering-2015-OL-paper-q7cor-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
   "id": "eng-2016-hl-q5-a-i",
   "topicId": "eng-2-10",
   "conceptId": "select-suitable-welding-process-used-manufacture",

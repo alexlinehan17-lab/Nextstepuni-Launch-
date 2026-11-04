@@ -692,6 +692,26 @@ SHORT_ASKS = {
     **{('engineering', 2013, 'ol', f'Q7(c)({r})'): ('', f'p6: the caption "({r})" under the {n} of four instrument drawings, '
                                                        'under "Name any three of the instruments shown and give one application for each instrument named."')
        for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    # 2015 OL, each opened on its page (2026-11-04).
+    **{('engineering', 2015, 'ol', f'Q2(a)({r})'): ('', f'p3: the caption "({r})" over the {n} of three furnace drawings, '
+                                                       'under "Name each of the furnaces shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    ('engineering', 2015, 'ol', 'Q2(d)(i)'): ('Brass,', 'p3: the alloy "(i) Brass," in "(i) Brass, (ii) Solder." under '
+                                                        '"Name the metals used to produce each of the alloys listed below:"'),
+    ('engineering', 2015, 'ol', 'Q4(a)(i)'): ('Flux,', 'p4: the term "(i) Flux," in "(i) Flux, (ii) Sweating, (iii) Cored '
+                                                       'solder, (iv) Tinning." under "Describe any three of the following '
+                                                       'soft soldering terms:"'),
+    **{('engineering', 2015, 'ol', f'Q6(a)({r})'): ('', f'p5: the caption "({r})" under the {n} of four lathe-component '
+                                                       'photographs, under "Identify any three of the lathe components shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2015, 'ol', 'Q6(b)(iv)'): ('Feed.', 'p5: the term "(iv) Feed." in "(i) Taper turning, (ii) Spindle '
+                                                        'speed, (iii) Cutting fluids, (iv) Feed." under "Explain any three of '
+                                                        'the following in relation to machining:"'),
+    **{('engineering', 2015, 'ol', f'Q7(c)({r})'): ('', f'p6: the caption "({r})" under the {n} of four instrument photographs, '
+                                                       'under "Name any three of the instruments shown and give one '
+                                                       'application for each instrument named."; the OR branch\'s (c) '
+                                                       'captions only (i) to (iii)')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iv', 'fourth'))},
     **{('engineering', 2016, 'ol', f'Q6(a)({r})'): ('', f'p6: the caption "({r})" under the {n} of four lathe-operation drawings, '
                                                        'under "Name any three of the lathe operations shown."')
        for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
@@ -763,11 +783,11 @@ SHORT_ASKS = {
 
 # A paper whose question marks add up to a different total from its sitting's
 # other years because its FORMAT differs, each total checked on the paper's
-# own question heads. Engineering Ordinary 2016-2019 print Question 1 at
+# own question heads. Engineering Ordinary 2015-2019 print Question 1 at
 # "(65 marks)" and Questions 2-7 at "(45 marks)" (335), where 2021 on print
 # seven questions at 50 (350). The checksum stands down only while the reader
 # sums exactly the printed total.
-PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2016, 2017, 2018, 2019)}
+PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2015, 2016, 2017, 2018, 2019)}
 
 
 def short_ask_ok(subject, year, level, flag):
@@ -1002,6 +1022,16 @@ TARIFF_FIRST_HEADS = {'engineering'}
 # off already (INLINE_QHEAD). Keyed by sitting, read for that sitting alone.
 TRAILING_HEAD_MARKS = {('engineering', 2016, 'ol')}
 TRAILING_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?\)\s*$', re.I)
+# A head set INSIDE a block, between one question's last ask and the next
+# question's first: 2015 OL Engineering page 3 reads "(d) Name the metals used
+# to produce each of the alloys listed below: (i) Brass, (ii) Solder. Question
+# 3. (45 marks) (a) Explain any two of the following: ..." as one block, and
+# page 4 the same for Question 5. Neither head was ever at a block start, both
+# 45s were dropped, and the paper summed to 245 over five questions where it
+# prints 335 over seven. Every head in such a block is read, with the tariff
+# printed straight after it. Keyed by sitting, read for that sitting alone.
+INLINE_HEAD_MARKS = {('engineering', 2015, 'ol')}
+INLINE_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?\)', re.I)
 
 
 def marks_by_question(P_files, subject, sitting=None):
@@ -1042,6 +1072,14 @@ def marks_by_question(P_files, subject, sitting=None):
                     h = re.match(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+)',
                                  un)
                     block = un
+            if sitting in INLINE_HEAD_MARKS:
+                heads = list(INLINE_HEAD.finditer(block))
+                if heads:
+                    for m in heads:
+                        q = int(m.group(1))
+                        if (section, q) not in out:
+                            out[(section, q)] = int(m.group(2))
+                    continue
             if not h and sitting in TRAILING_HEAD_MARKS:
                 tail = TRAILING_HEAD.search(block.strip())
                 if tail:

@@ -340,6 +340,11 @@ _BARE_RUN = re.compile(r'^\([a-h]\)(?:\s+\([a-h]\))+$')
 # lose (i)-(m). 2012 and 2014 OL lose no caption romans. On the Higher papers it
 # moves other readings (Q8(a)(i)) and is never on.
 BARE_ROMAN_RUNS = {('engineering', y, 'ol') for y in (2010, 2013, 2016, 2017, 2018, 2019, 2026)}
+# 2015 OL, switched on once FIGURE_BLOCKS takes Q1(h)'s and Q1(m)'s captions
+# out first (below): the split then recovers Q2(a)(ii), the second furnace
+# drawing's caption, and Q6(a)(iii), the third lathe component's, both printed
+# on paper page 3 and page 5 (rendered and read 2026-11-04).
+BARE_ROMAN_RUNS.add(('engineering', 2015, 'ol'))
 _BARE_ROMAN = r'\((?:i{1,3}|iv|vi{0,3}|ix|x)\)'
 _BARE_ROMAN_RUN = re.compile(rf'^{_BARE_ROMAN}(?:\s+{_BARE_ROMAN})+$')
 # Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
@@ -618,6 +623,20 @@ FIGURE_BLOCKS[('engineering', 2026, 'ol')] = ['saddle seat frame', 'tyre', 'moun
 # thread rolled at (ii) shown below"); read as markers, the captions made a
 # Q1(m)(ii) holding the page footer and the Section B heading. One ask, no parts.
 FIGURE_BLOCKS[('engineering', 2011, 'hl')] = ['(i) (ii)']
+# 2015 OL Engineering paper page 2. Q1(h) captions its two thread pictures
+# "(i)" and "(ii)" ("Name the thread forms suitable for each of the following:
+# (i) Engineering machine vice, (ii) Machine screw.", the names set on the same
+# line), and the text layer hands the two labels over as a block of their own
+# after Section B's "(i) Describe the main operating features ...": read as
+# markers they made the letter (i) a roman run, the census counting Q1(i)(i)
+# "...of the following: A" and Q1(i)(ii) "Spot welding machine ...". Q1(m)
+# names its two tool photographs "(i)" and "(ii)" in its own sentence ("Name
+# the two cutting tools shown at (i) and (ii).") and the labels came as two
+# more blocks, making a Q1(m)(i) with no words and a Q1(m)(ii) holding the
+# page footer. "A" is (g)'s label on the cam drawing ("Name the mechanism
+# labelled A"), read into Q1(i)'s words. All four are the pictures' labels:
+# no ask is printed there, so each part is one ask, as 2011 HL Q1(m) is.
+FIGURE_BLOCKS[('engineering', 2015, 'ol')] = ['(i) (ii)', '(i)', '(ii)', 'A']
 _TRAILING_OR = re.compile(r'\s+OR\s*$')
 _BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
 
