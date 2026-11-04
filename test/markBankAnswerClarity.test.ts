@@ -522,6 +522,12 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Document A is a primary source', 5, undefined],
       ['It is the recollection/words of a North Vietnamese soldier who fought against the US in Vietnam', 5, 'Reason = 5M'],
     ]);
+    // Closed by the part's marks printed bare: "... searchlights = 3M" / "... against the sky = 2M 5M" (2016 HL Q1(d)).
+    const bareTotal = cards.find(card => card.id === 'hist-2016-hl-lm-s1-q1d')!;
+    expect(bareTotal.rows.map(row => [row.verbatim, row.marks])).toEqual([
+      ['Huge burning urns; flood-lighting by hundreds of powerful searchlights', 3],
+      ['The mystical quality of the ritual was exaggerated; lights played eerily against the sky', 2],
+    ]);
   });
 
   it('Accounting: every task carries the scheme’s priced lines as rows that add up to it, or is listed in the residue with its reason', () => {
