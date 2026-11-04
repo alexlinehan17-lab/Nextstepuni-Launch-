@@ -542,6 +542,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Massive German air raids', 6, [0, 3, 6], 'air raids alone = 3m'],
       ['One opinion', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Oriental rugs', 8, [0, 4, 8], 'Rugs ONLY = 4M'],
+      ['Residents and foreign-owned businesses in the town', 5, [0, 3, 5], 'TWO groups = 5m, ONE group = 3m'],
       ['Swastika', 8, [0, 4, 8], 'Germanic cross = 4M'],
       ['TWO New World commodities (@ 3M each) which were landed at Seville', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['TWO countries which were rivals to Dutch trade @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
