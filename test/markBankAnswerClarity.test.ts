@@ -481,10 +481,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => row.kind === 'point' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
     // "… 5M + 5M Max =" left on a row by the tariff reader: the printed split is the row's note now.
     expect(rows.filter(({ row }) => /\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=\s*$/i.test(row.verbatim)).map(({ card }) => card.id)).toEqual([]);
-    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(20);
+    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(23);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(174);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(179);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['A new life', 'Better wages', 'Better work standards'],
@@ -560,6 +560,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Opinions of him differed from pure white to deepest black/ from hero to villain', 6, [0, 3, 6], '„Opinions of him differed‟ only = 3M'],
       ['Oriental rugs', 8, [0, 4, 8], 'Rugs ONLY = 4M'],
       ['Private/ family houses', 6, [0, 3, 6], '„Houses‟ only = 3M'],
+      ['Reasons given for selecting phrase', 8, [0, 4, 8], 'Examples: If it is true that masked and armed men blocked roads, it is objective; If it is true that workers were threatened at workplaces such as H & W, it is objective; If it is not true that such things happened, it is biased. — Mark quality of explanation on its merits. — Max = 10M'],
       ['Residents and foreign-owned businesses in the town', 5, [0, 3, 5], 'TWO groups = 5m, ONE group = 3m'],
       ['Swastika', 8, [0, 4, 8], 'Germanic cross = 4M'],
       ['TWO New World commodities (@ 3M each) which were landed at Seville', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],

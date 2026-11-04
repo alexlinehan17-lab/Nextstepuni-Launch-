@@ -1560,6 +1560,1828 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s1-q1a", topicId: "hist-lm-irl-5", conceptId: "men-done-avoid-being-identified",
+    section: "1", questionRef: "2010 OL Later Modern Section 1 Q1(a)",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "What have the men in document A done to avoid being identified?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They wore masks", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s1-q1b", topicId: "hist-lm-irl-5", conceptId: "did-men-set-road-blocks",
+    section: "1", questionRef: "2010 OL Later Modern Section 1 Q1(b)",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "In document A, why did the men set up road blocks?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To prevent people from going to work", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s1-q1c", topicId: "hist-lm-irl-5", conceptId: "workers-harland-wolff-ordered",
+    section: "1", questionRef: "2010 OL Later Modern Section 1 Q1(c)",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "In document A, what were the workers in Harland and Wolff ordered to do?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They were ordered to go home", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s1-q1d", topicId: "hist-lm-irl-5", conceptId: "error-did-government",
+    section: "1", questionRef: "2010 OL Later Modern Section 1 Q1(d)",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "According to document B, what error did the government make?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To leave the power supplies of the state outside the control of the government", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s1-q1e", topicId: "hist-lm-irl-5", conceptId: "attitude-bbc-towards-strike",
+    section: "1", questionRef: "2010 OL Later Modern Section 1 Q1(e)",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "According to document B, what was the attitude of the BBC towards the strike?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "BBC were very much in favour of the strike", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s1-q2a", topicId: "hist-lm-irl-5", conceptId: "attempts-reasons-success-strike",
+    section: "1", questionRef: "2010 OL Later Modern Section 1 Q2(a)",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "Which document, A or B, attempts to give reasons for the success of the strike? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A or Document B", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Document A refers to (1) roadblocks (2) threats (3) electricity", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Document B refers to (1) neglect of duty by government (2) electricity (3) BBC support", marks: 4, contextNote: "Mark quality of explanation on its merits. — Reference to both documents = 4M + 4M Max = 10M" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s1-q2b", topicId: "hist-lm-irl-5", conceptId: "more-valuable-historian-reason",
+    section: "1", questionRef: "2010 OL Later Modern Section 1 Q2(b)",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "Which document, A or B, would be more valuable to a historian? Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A or Document B", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Document A is a first-hand account by a Northern Ireland politician directly recalling events", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Document B is opinion voiced by a Dublin politician regarding the reasons for or the context of events", marks: 4, contextNote: "Mark quality of explanation on its merits. — Reference to both documents = 4M + 4M Max = 10M" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s1-q3a", topicId: "hist-lm-irl-5", conceptId: "objective-biased-reason",
+    section: "1", questionRef: "2010 OL Later Modern Section 1 Q3(a)",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "Is document A objective or biased? Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Objective or biased", marks: 2 },
+    { id: "r-2", kind: "criterion", verbatim: "Reasons given for selecting phrase", marks: 8, contextNote: "Examples: If it is true that masked and armed men blocked roads, it is objective; If it is true that workers were threatened at workplaces such as H & W, it is objective; If it is not true that such things happened, it is biased. — Mark quality of explanation on its merits. — Max = 10M", permittedMarks: [0,4,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s1-q3b", topicId: "hist-lm-irl-5", conceptId: "does-criticise-bbc",
+    section: "1", questionRef: "2010 OL Later Modern Section 1 Q3(b)",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "Why does document B criticise the BBC?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "BBC (1) were very much in favour of the strike (2) did not monitor NI broadcasts (3) did not know what was going on (4) were effectively running a rebel radio station", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s1-q4", topicId: "hist-lm-irl-5", conceptId: "sunningdale-agreement-did-most-unionists-oppose",
+    section: "1", questionRef: "2010 OL Later Modern Section 1 Q4",
+    stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
+    questionText: "What was the Sunningdale Agreement and why did most Unionists oppose it?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[0], schemePages: [7] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t1a-q1", topicId: "hist-lm-irl-1", conceptId: "bishop-moriarty-duty-bishop",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 1 A Q1",
+    stem: "In this edited extract Bishop David Moriarty of Kerry denounces those who took part in the Fenian uprising in Kerry on 12 February, 1867. Read it and answer the questions which follow.\n\nMy dear Brethren – it is the duty of the bishop of a diocese to give advice and correction when his people have been led into error and to rebuke them if they have committed any crime.\nSince we met here last Sunday some people in Kerry have been betrayed into an act of madness…It would seem that some dozen men left the town of Cahirciveen on Wednesday evening with the aim of making war on the Queen of England and of upsetting the British Empire.\nIt is just twelve months ago since I explained in my last Lenten letter the deep guiltiness of rebellion against lawful authority, so they cannot plead they were not instructed and forewarned. They resisted the laws of God, and by so doing, they purchased damnation for themselves.",
+    questionText: "According to Bishop Moriarty, what is the duty of the bishop?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To give advice and correction (when in error) OR to rebuke them (when they commit crime)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t1a-q2", topicId: "hist-lm-irl-1", conceptId: "aim-men-who-left-cahirciveen-wednesday",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 1 A Q2",
+    stem: "In this edited extract Bishop David Moriarty of Kerry denounces those who took part in the Fenian uprising in Kerry on 12 February, 1867. Read it and answer the questions which follow.\n\nMy dear Brethren – it is the duty of the bishop of a diocese to give advice and correction when his people have been led into error and to rebuke them if they have committed any crime.\nSince we met here last Sunday some people in Kerry have been betrayed into an act of madness…It would seem that some dozen men left the town of Cahirciveen on Wednesday evening with the aim of making war on the Queen of England and of upsetting the British Empire.\nIt is just twelve months ago since I explained in my last Lenten letter the deep guiltiness of rebellion against lawful authority, so they cannot plead they were not instructed and forewarned. They resisted the laws of God, and by so doing, they purchased damnation for themselves.",
+    questionText: "What was the aim of the men who left Cahirciveen on Wednesday?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To make war on the Queen of England OR to upset then British Empire", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t1a-q3", topicId: "hist-lm-irl-1", conceptId: "did-bishop-his-last-lenten-letter",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 1 A Q3",
+    stem: "In this edited extract Bishop David Moriarty of Kerry denounces those who took part in the Fenian uprising in Kerry on 12 February, 1867. Read it and answer the questions which follow.\n\nMy dear Brethren – it is the duty of the bishop of a diocese to give advice and correction when his people have been led into error and to rebuke them if they have committed any crime.\nSince we met here last Sunday some people in Kerry have been betrayed into an act of madness…It would seem that some dozen men left the town of Cahirciveen on Wednesday evening with the aim of making war on the Queen of England and of upsetting the British Empire.\nIt is just twelve months ago since I explained in my last Lenten letter the deep guiltiness of rebellion against lawful authority, so they cannot plead they were not instructed and forewarned. They resisted the laws of God, and by so doing, they purchased damnation for themselves.",
+    questionText: "What did the bishop explain in his last Lenten letter?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The guiltiness of rebelling against lawful authority", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t1a-q4", topicId: "hist-lm-irl-1", conceptId: "did-these-men-purchase-damnation-themselves",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 1 A Q4",
+    stem: "In this edited extract Bishop David Moriarty of Kerry denounces those who took part in the Fenian uprising in Kerry on 12 February, 1867. Read it and answer the questions which follow.\n\nMy dear Brethren – it is the duty of the bishop of a diocese to give advice and correction when his people have been led into error and to rebuke them if they have committed any crime.\nSince we met here last Sunday some people in Kerry have been betrayed into an act of madness…It would seem that some dozen men left the town of Cahirciveen on Wednesday evening with the aim of making war on the Queen of England and of upsetting the British Empire.\nIt is just twelve months ago since I explained in my last Lenten letter the deep guiltiness of rebellion against lawful authority, so they cannot plead they were not instructed and forewarned. They resisted the laws of God, and by so doing, they purchased damnation for themselves.",
+    questionText: "How did these men “purchase damnation for themselves”?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By resisting the laws of God", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t1a-q5", topicId: "hist-lm-irl-1", conceptId: "who-leader-fenian-movement-ireland",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 1 A Q5",
+    stem: "In this edited extract Bishop David Moriarty of Kerry denounces those who took part in the Fenian uprising in Kerry on 12 February, 1867. Read it and answer the questions which follow.\n\nMy dear Brethren – it is the duty of the bishop of a diocese to give advice and correction when his people have been led into error and to rebuke them if they have committed any crime.\nSince we met here last Sunday some people in Kerry have been betrayed into an act of madness…It would seem that some dozen men left the town of Cahirciveen on Wednesday evening with the aim of making war on the Queen of England and of upsetting the British Empire.\nIt is just twelve months ago since I explained in my last Lenten letter the deep guiltiness of rebellion against lawful authority, so they cannot plead they were not instructed and forewarned. They resisted the laws of God, and by so doing, they purchased damnation for themselves.",
+    questionText: "Who was the leader of the Fenian movement in Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "James Stephens", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t1b", topicId: "hist-lm-irl-1", conceptId: "william-carleton-movement-repeal-union-young",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 1 B",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Write a short paragraph on one of the following:\n1. William Carleton.\n2. The movement for repeal of the Union.\n3. Young Ireland.\n4. The impact of the railways.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t1c", topicId: "hist-lm-irl-1", conceptId: "did-daniel-connell-campaign-catholic-emancipation",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 1 C",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "Answer one of the following:\n1. How did Daniel O’Connell campaign for Catholic Emancipation, and what did it achieve?\n2. What help did non-government groups give to people in need during the Famine?\n3. What did Thomas Davis and/or Charles Kickham contribute to Irish affairs?\n4. What changes did the Synod of Thurles, 1850, bring about in the Catholic Church?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t2a-q1", topicId: "hist-lm-irl-2", conceptId: "where-parnell-staying",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 2 A Q1",
+    stem: "In this edited extract, Parnell announces Gladstone’s acceptance of Home Rule for Ireland. Read it and answer the questions which follow.\n\nIt was on a wet February night in 1886 that Parnell made the announcement of Gladstone’s conversion to Home Rule for Ireland. He made it in his sitting-room in Morrison’s Hotel, Dublin.\nWith his usual lack of concern for personal comfort, he had neglected to order a fire. His mutton chop was growing cold, and his pint of Rhine wine was unopened.\nAll of a sudden, he remarked, casually and without emphasis: “We are going to have a Home Rule Bill.”",
+    questionText: "Where was Parnell staying?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Morrison’s Hotel", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t2a-q2", topicId: "hist-lm-irl-2", conceptId: "provided-parnell-evening-meal",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 2 A Q2",
+    stem: "In this edited extract, Parnell announces Gladstone’s acceptance of Home Rule for Ireland. Read it and answer the questions which follow.\n\nIt was on a wet February night in 1886 that Parnell made the announcement of Gladstone’s conversion to Home Rule for Ireland. He made it in his sitting-room in Morrison’s Hotel, Dublin.\nWith his usual lack of concern for personal comfort, he had neglected to order a fire. His mutton chop was growing cold, and his pint of Rhine wine was unopened.\nAll of a sudden, he remarked, casually and without emphasis: “We are going to have a Home Rule Bill.”",
+    questionText: "What had been provided for Parnell’s evening meal?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mutton chop (and Rhine wine)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t2a-q3", topicId: "hist-lm-irl-2", conceptId: "evidence-offered-parnell-lack-concern-personal",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 2 A Q3",
+    stem: "In this edited extract, Parnell announces Gladstone’s acceptance of Home Rule for Ireland. Read it and answer the questions which follow.\n\nIt was on a wet February night in 1886 that Parnell made the announcement of Gladstone’s conversion to Home Rule for Ireland. He made it in his sitting-room in Morrison’s Hotel, Dublin.\nWith his usual lack of concern for personal comfort, he had neglected to order a fire. His mutton chop was growing cold, and his pint of Rhine wine was unopened.\nAll of a sudden, he remarked, casually and without emphasis: “We are going to have a Home Rule Bill.”",
+    questionText: "What evidence is offered for Parnell’s lack of concern for personal comforts?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He neglected to order a fire", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t2a-q4", topicId: "hist-lm-irl-2", conceptId: "announcement-did-parnell",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 2 A Q4",
+    stem: "In this edited extract, Parnell announces Gladstone’s acceptance of Home Rule for Ireland. Read it and answer the questions which follow.\n\nIt was on a wet February night in 1886 that Parnell made the announcement of Gladstone’s conversion to Home Rule for Ireland. He made it in his sitting-room in Morrison’s Hotel, Dublin.\nWith his usual lack of concern for personal comfort, he had neglected to order a fire. His mutton chop was growing cold, and his pint of Rhine wine was unopened.\nAll of a sudden, he remarked, casually and without emphasis: “We are going to have a Home Rule Bill.”",
+    questionText: "What announcement did Parnell make?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "“We are going to have a Home Rule Bill.”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t2a-q5", topicId: "hist-lm-irl-2", conceptId: "fate-home-rule-bill-1886",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 2 A Q5",
+    stem: "In this edited extract, Parnell announces Gladstone’s acceptance of Home Rule for Ireland. Read it and answer the questions which follow.\n\nIt was on a wet February night in 1886 that Parnell made the announcement of Gladstone’s conversion to Home Rule for Ireland. He made it in his sitting-room in Morrison’s Hotel, Dublin.\nWith his usual lack of concern for personal comfort, he had neglected to order a fire. His mutton chop was growing cold, and his pint of Rhine wine was unopened.\nAll of a sudden, he remarked, casually and without emphasis: “We are going to have a Home Rule Bill.”",
+    questionText: "What was the fate of the Home Rule Bill, 1886?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It was defeated (by 343 to 311 in the Commons)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t2b", topicId: "hist-lm-irl-2", conceptId: "early-years-gaa-douglas-hyde-belfast",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 2 B",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Write a short paragraph on one of the following:\n1. The early years of the GAA.\n2. Douglas Hyde.\n3. The Belfast shipyards.\n4. The Irish Volunteers.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t2c", topicId: "hist-lm-irl-2", conceptId: "elections-1885-1886-important-home-rule",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 2 C",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "Answer one of the following:\n1. Why were the elections of 1885 and 1886 important for the Home Rule Party?\n2. What did Michael Davitt and/or Charles Stewart Parnell contribute to the movement for land reform?\n3. How important was James Larkin in the strike and lock-out in Dublin in 1913?\n4. What part did Edward Carson play in opposing the demand for Home Rule for all Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t3a-q1", topicId: "hist-lm-irl-3", conceptId: "did-mccormack-offer-archbishop",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 3 A Q1",
+    stem: "This is an edited extract from a letter written by the Irish singer John Count McCormack to the Archbishop of Dublin before the Eucharistic Congress, 1932. Read it and answer the questions which follow.\n\n18 September 1931 My Dear Archbishop,\nMay I offer your Grace my service during the Eucharistic Congress, whether in a ceremonial role, or in my more familiar role as singer.\nOn the 8th of this month we had a most wonderful High Mass celebrated here in Los Angeles on the occasion of the 150th anniversary of the founding of the city. I was specially privileged by being invited to sing the ‘Panis Angelicus’ by the great Catholic composer César Franck.\nIt would be a great honour and I would consider it a privilege to sing ‘Panis Angelicus’ during the opening High Mass of the Eucharistic Congress.\nYour most affectionate servant,\nJohn Count McCormack",
+    questionText: "What did McCormack offer the archbishop?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "His service during the Eucharistic Congress OR to sing during the opening High Mass", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t3a-q2", topicId: "hist-lm-irl-3", conceptId: "occasion-high-mass-celebrated-los-angeles",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 3 A Q2",
+    stem: "This is an edited extract from a letter written by the Irish singer John Count McCormack to the Archbishop of Dublin before the Eucharistic Congress, 1932. Read it and answer the questions which follow.\n\n18 September 1931 My Dear Archbishop,\nMay I offer your Grace my service during the Eucharistic Congress, whether in a ceremonial role, or in my more familiar role as singer.\nOn the 8th of this month we had a most wonderful High Mass celebrated here in Los Angeles on the occasion of the 150th anniversary of the founding of the city. I was specially privileged by being invited to sing the ‘Panis Angelicus’ by the great Catholic composer César Franck.\nIt would be a great honour and I would consider it a privilege to sing ‘Panis Angelicus’ during the opening High Mass of the Eucharistic Congress.\nYour most affectionate servant,\nJohn Count McCormack",
+    questionText: "What was the occasion of the High Mass celebrated in Los Angeles?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The 150th anniversary of the founding of the city", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t3a-q3", topicId: "hist-lm-irl-3", conceptId: "hymn-did-mccormack-sing-high-mass",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 3 A Q3",
+    stem: "This is an edited extract from a letter written by the Irish singer John Count McCormack to the Archbishop of Dublin before the Eucharistic Congress, 1932. Read it and answer the questions which follow.\n\n18 September 1931 My Dear Archbishop,\nMay I offer your Grace my service during the Eucharistic Congress, whether in a ceremonial role, or in my more familiar role as singer.\nOn the 8th of this month we had a most wonderful High Mass celebrated here in Los Angeles on the occasion of the 150th anniversary of the founding of the city. I was specially privileged by being invited to sing the ‘Panis Angelicus’ by the great Catholic composer César Franck.\nIt would be a great honour and I would consider it a privilege to sing ‘Panis Angelicus’ during the opening High Mass of the Eucharistic Congress.\nYour most affectionate servant,\nJohn Count McCormack",
+    questionText: "What hymn did McCormack sing at the High Mass?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "“Panis Angelicus”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t3a-q4", topicId: "hist-lm-irl-3", conceptId: "who-composed-hymn",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 3 A Q4",
+    stem: "This is an edited extract from a letter written by the Irish singer John Count McCormack to the Archbishop of Dublin before the Eucharistic Congress, 1932. Read it and answer the questions which follow.\n\n18 September 1931 My Dear Archbishop,\nMay I offer your Grace my service during the Eucharistic Congress, whether in a ceremonial role, or in my more familiar role as singer.\nOn the 8th of this month we had a most wonderful High Mass celebrated here in Los Angeles on the occasion of the 150th anniversary of the founding of the city. I was specially privileged by being invited to sing the ‘Panis Angelicus’ by the great Catholic composer César Franck.\nIt would be a great honour and I would consider it a privilege to sing ‘Panis Angelicus’ during the opening High Mass of the Eucharistic Congress.\nYour most affectionate servant,\nJohn Count McCormack",
+    questionText: "Who composed this hymn?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "César Franck", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t3a-q5", topicId: "hist-lm-irl-3", conceptId: "study-case-study-mccormack-offer-accepted",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 3 A Q5",
+    stem: "This is an edited extract from a letter written by the Irish singer John Count McCormack to the Archbishop of Dublin before the Eucharistic Congress, 1932. Read it and answer the questions which follow.\n\n18 September 1931 My Dear Archbishop,\nMay I offer your Grace my service during the Eucharistic Congress, whether in a ceremonial role, or in my more familiar role as singer.\nOn the 8th of this month we had a most wonderful High Mass celebrated here in Los Angeles on the occasion of the 150th anniversary of the founding of the city. I was specially privileged by being invited to sing the ‘Panis Angelicus’ by the great Catholic composer César Franck.\nIt would be a great honour and I would consider it a privilege to sing ‘Panis Angelicus’ during the opening High Mass of the Eucharistic Congress.\nYour most affectionate servant,\nJohn Count McCormack",
+    questionText: "From your study of this case study, was McCormack’s offer accepted or rejected? Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Accepted. Any ONE valid explanation", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t3b", topicId: "hist-lm-irl-3", conceptId: "civil-war-1922-1923-unionist-party",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 3 B",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "Write a short paragraph on one of the following:\n1. The Civil War, 1922-1923.\n2. The Unionist Party in power, 1921-1949.\n3. Anglo-Irish relations under de Valera, 1932-1939.\n4. Education in Ireland, North and/or South.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,9] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t3c", topicId: "hist-lm-irl-3", conceptId: "important-patrick-pearse-during-1916-rising",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 3 C",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "Answer one of the following:\n1. How important was Patrick Pearse during the 1916 Rising?\n2. What did William T. Cosgrave contribute to Irish affairs between 1922 and 1932?\n3. What was the effect of World War II on Belfast?\n4. Why was Evie Hone important in the cultural life of Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,9] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t4a-q1", topicId: "hist-lm-irl-4", conceptId: "will-most-emigrants-regret",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 4 A Q1",
+    stem: "This edited extract from a newspaper article regrets the level of female emigration in 1908. Read it and answer the questions which follow.\n\nMost Irish emigrants will bitterly regret in loneliness and homesickness the day when they left their own land and their own people.\nIrish girls, attracted by hopes of fantastic wages abroad, give up more than they know. Instead of the simple village life or the friendly relations existing in good Irish households, they choose at a distance the uncertain splendours of joining a despised servant class. Moreover, they take on themselves the terrible risk of utter failure far away from all home help.\nIt is surely true that not one Irish girl abroad is ever happy again at heart.",
+    questionText: "What will most emigrants regret?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The day they left Ireland", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t4a-q2", topicId: "hist-lm-irl-4", conceptId: "attracts-irish-girls-abroad",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 4 A Q2",
+    stem: "This edited extract from a newspaper article regrets the level of female emigration in 1908. Read it and answer the questions which follow.\n\nMost Irish emigrants will bitterly regret in loneliness and homesickness the day when they left their own land and their own people.\nIrish girls, attracted by hopes of fantastic wages abroad, give up more than they know. Instead of the simple village life or the friendly relations existing in good Irish households, they choose at a distance the uncertain splendours of joining a despised servant class. Moreover, they take on themselves the terrible risk of utter failure far away from all home help.\nIt is surely true that not one Irish girl abroad is ever happy again at heart.",
+    questionText: "What attracts Irish girls to go abroad?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Hopes of) fantastic wages", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t4a-q3", topicId: "hist-lm-irl-4", conceptId: "despised-class-irish-girls-join-when",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 4 A Q3",
+    stem: "This edited extract from a newspaper article regrets the level of female emigration in 1908. Read it and answer the questions which follow.\n\nMost Irish emigrants will bitterly regret in loneliness and homesickness the day when they left their own land and their own people.\nIrish girls, attracted by hopes of fantastic wages abroad, give up more than they know. Instead of the simple village life or the friendly relations existing in good Irish households, they choose at a distance the uncertain splendours of joining a despised servant class. Moreover, they take on themselves the terrible risk of utter failure far away from all home help.\nIt is surely true that not one Irish girl abroad is ever happy again at heart.",
+    questionText: "What despised class do Irish girls join when they emigrate?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Servant class", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t4a-q4", topicId: "hist-lm-irl-4", conceptId: "surely-true-all-irish-girls-who",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 4 A Q4",
+    stem: "This edited extract from a newspaper article regrets the level of female emigration in 1908. Read it and answer the questions which follow.\n\nMost Irish emigrants will bitterly regret in loneliness and homesickness the day when they left their own land and their own people.\nIrish girls, attracted by hopes of fantastic wages abroad, give up more than they know. Instead of the simple village life or the friendly relations existing in good Irish households, they choose at a distance the uncertain splendours of joining a despised servant class. Moreover, they take on themselves the terrible risk of utter failure far away from all home help.\nIt is surely true that not one Irish girl abroad is ever happy again at heart.",
+    questionText: "What is surely true of all Irish girls who emigrate?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Not one girl is ever happy again at heart", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t4a-q5", topicId: "hist-lm-irl-4", conceptId: "did-many-emigrants-meet-anti-irish",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 4 A Q5",
+    stem: "This edited extract from a newspaper article regrets the level of female emigration in 1908. Read it and answer the questions which follow.\n\nMost Irish emigrants will bitterly regret in loneliness and homesickness the day when they left their own land and their own people.\nIrish girls, attracted by hopes of fantastic wages abroad, give up more than they know. Instead of the simple village life or the friendly relations existing in good Irish households, they choose at a distance the uncertain splendours of joining a despised servant class. Moreover, they take on themselves the terrible risk of utter failure far away from all home help.\nIt is surely true that not one Irish girl abroad is ever happy again at heart.",
+    questionText: "Why did many emigrants meet with anti-Irish sentiment abroad?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid explanation", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t4b", topicId: "hist-lm-irl-4", conceptId: "role-gaa-among-irish-emigrants-molly",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 4 B",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Write a short paragraph on one of the following:\n1. The role of the GAA among Irish emigrants.\n2. The Molly Maguires.\n3. Joe Kennedy and/or Boss Croker.\n4. The aims of the Holy Ghost mission to Nigeria, 1945-1966.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t4c", topicId: "hist-lm-irl-4", conceptId: "grosse-isle-important-history-irish-emigration",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 4 C",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Answer one of the following:\n1. Why is Grosse Isle so important in the history of Irish emigration?\n2. Why did de Valera go to America and how successful was his mission there, June 1919- December 1920?\n3. What do we learn about Irish emigrants in Britain from the life and writings of Domhnall Mac Amhlaigh?\n4. What did Archbishop Daniel Mannix and/or Mother Mary Martin contribute to the Irish diaspora?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,10] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t6a-q1", topicId: "hist-lm-irl-6", conceptId: "storyteller-lost-his-audience",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 6 A Q1",
+    stem: "In this cartoon, from the early 1960s, the old man by the fire (seanchaí / storyteller) has lost his audience. Study it and answer the questions which follow.",
+    questionText: "Why has the storyteller lost his audience?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because of the television", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t6a-q2", topicId: "hist-lm-irl-6", conceptId: "suggested-traditional-music-also-under-threat",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 6 A Q2",
+    stem: "In this cartoon, from the early 1960s, the old man by the fire (seanchaí / storyteller) has lost his audience. Study it and answer the questions which follow.",
+    questionText: "How is it suggested that traditional music, also, might be under threat?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because there is pop music on the television", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t6a-q3", topicId: "hist-lm-irl-6", conceptId: "does-cartoon-show-television-appeal-people",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 6 A Q3",
+    stem: "In this cartoon, from the early 1960s, the old man by the fire (seanchaí / storyteller) has lost his audience. Study it and answer the questions which follow.",
+    questionText: "How does the cartoon show that television could appeal to people of different ages?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Old and young are all watching television together", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t6a-q4", topicId: "hist-lm-irl-6", conceptId: "house-fully-modernised",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 6 A Q4",
+    stem: "In this cartoon, from the early 1960s, the old man by the fire (seanchaí / storyteller) has lost his audience. Study it and answer the questions which follow.",
+    questionText: "Has the house been fully modernised? Briefly explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Yes OR No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Any ONE valid explanation", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t6a-q5", topicId: "hist-lm-irl-6", conceptId: "did-gay-byrne-contribute-impact-irish",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 6 A Q5",
+    stem: "In this cartoon, from the early 1960s, the old man by the fire (seanchaí / storyteller) has lost his audience. Study it and answer the questions which follow.",
+    questionText: "How did Gay Byrne contribute to the impact of RTÉ on Irish society, 1962-1972?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid contribution", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t6b", topicId: "hist-lm-irl-6", conceptId: "lemass-impact-vatican-anglo-irish-relations",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 6 B",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. Seán Lemass.\n2. The impact of Vatican II.\n3. Anglo-Irish relations, 1949-1989.\n4. Changes in the status of women, 1949-1989.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s2t6c", topicId: "hist-lm-irl-6", conceptId: "irish-fisheries-affected-membership-eec-did",
+    section: "2", questionRef: "2010 OL Later Modern Section 2 Topic 6 C",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Answer one of the following:\n1. How were Irish fisheries affected by membership of the EEC?\n2. What did Jack Lynch achieve as Taoiseach?\n3. What were the political successes and failures of Charles Haughey as Taoiseach?\n4. What did Breandán Ó hEithir and/or Sylvia Meehan contribute to Irish life?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,10] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t1a-q1", topicId: "hist-lm-eur-1", conceptId: "rioters-armed",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 1 A Q1",
+    stem: "This picture shows a riot in Berlin in 1848. Study it and answer the questions which follow.",
+    questionText: "How are the rioters armed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Rifles / bayonets / swords", marks: 6, contextNote: "Any TWO 3M x 2 = 6M" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t1a-q2", topicId: "hist-lm-eur-1", conceptId: "barricade-formed",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 1 A Q2",
+    stem: "This picture shows a riot in Berlin in 1848. Study it and answer the questions which follow.",
+    questionText: "How has the barricade been formed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Using overturned carriages", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t1a-q3", topicId: "hist-lm-eur-1", conceptId: "evidence-there-rioters-themselves-attacked",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 1 A Q3",
+    stem: "This picture shows a riot in Berlin in 1848. Study it and answer the questions which follow.",
+    questionText: "What evidence is there that the rioters have themselves been attacked?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Some have been injured OR cannonballs on the ground", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t1a-q4", topicId: "hist-lm-eur-1", conceptId: "say-people-picture-poor",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 1 A Q4",
+    stem: "This picture shows a riot in Berlin in 1848. Study it and answer the questions which follow.",
+    questionText: "Would you say that the people in the picture are poor? Briefly explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Any ONE valid explanation", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t1a-q5", topicId: "hist-lm-eur-1", conceptId: "did-1848-revolution-germany-fail",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 1 A Q5",
+    stem: "This picture shows a riot in Berlin in 1848. Study it and answer the questions which follow.",
+    questionText: "Why did the 1848 revolution in Germany fail?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t1b", topicId: "hist-lm-eur-1", conceptId: "feargus-connor-movement-towards-unification-italy",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 1 B",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Write a short paragraph on one of the following:\n1. Feargus O’Connor.\n2. The movement towards the unification of Italy.\n3. Charles Darwin.\n4. Napoleon III.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t1c", topicId: "hist-lm-eur-1", conceptId: "reforms-did-robert-owen-robert-peel",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 1 C",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "Answer one of the following:\n1. What reforms did Robert Owen and/or Robert Peel introduce in Britain?\n2. What role did Karl Marx play in the development of socialism?\n3. In what ways did Baron Haussmann improve the city of Paris?\n4. How important was Otto von Bismarck in German affairs up to 1871?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t2a-q1", topicId: "hist-lm-eur-2", conceptId: "weapons-did-german-soldiers-carry",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 2 A Q1",
+    stem: "This is an edited extract from a German soldier’s account of the first day of the Battle of the Somme. Read it and answer the questions which follow.\n\nThe men in the dugouts waited, ready, belts full of hand-grenades around them and gripping their rifles. It was of vital importance to lose not a second in taking up position in the open to meet the British infantry that would advance immediately behind the artillery fire.\nAt 7.30 a.m., the hurricane of shells stopped. Our men at once climbed up from the dugouts to daylight and ran to the nearest shell holes. The machine guns were pulled out of the dugouts and hurriedly placed in position.\nA few minutes later, when the first British line of soldiers were within a hundred yards, the rattle of machine gun and rifle fire broke out along the whole line of shell holes. The British advance rapidly began to crumble under the hail of shells and bullets. All along the line, men could be seen throwing up their arms and collapsing, never to move again. The badly wounded rolled about in their agony.",
+    questionText: "What weapons did the German soldiers carry?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hand-grenades", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "rifles", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t2a-q2", topicId: "hist-lm-eur-2", conceptId: "did-men-once-left-dugouts",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 2 A Q2",
+    stem: "This is an edited extract from a German soldier’s account of the first day of the Battle of the Somme. Read it and answer the questions which follow.\n\nThe men in the dugouts waited, ready, belts full of hand-grenades around them and gripping their rifles. It was of vital importance to lose not a second in taking up position in the open to meet the British infantry that would advance immediately behind the artillery fire.\nAt 7.30 a.m., the hurricane of shells stopped. Our men at once climbed up from the dugouts to daylight and ran to the nearest shell holes. The machine guns were pulled out of the dugouts and hurriedly placed in position.\nA few minutes later, when the first British line of soldiers were within a hundred yards, the rattle of machine gun and rifle fire broke out along the whole line of shell holes. The British advance rapidly began to crumble under the hail of shells and bullets. All along the line, men could be seen throwing up their arms and collapsing, never to move again. The badly wounded rolled about in their agony.",
+    questionText: "What did the men do once they left the dugouts?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They ran to the nearest shell holes", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t2a-q3", topicId: "hist-lm-eur-2", conceptId: "close-british-soldiers-when-germans-opened",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 2 A Q3",
+    stem: "This is an edited extract from a German soldier’s account of the first day of the Battle of the Somme. Read it and answer the questions which follow.\n\nThe men in the dugouts waited, ready, belts full of hand-grenades around them and gripping their rifles. It was of vital importance to lose not a second in taking up position in the open to meet the British infantry that would advance immediately behind the artillery fire.\nAt 7.30 a.m., the hurricane of shells stopped. Our men at once climbed up from the dugouts to daylight and ran to the nearest shell holes. The machine guns were pulled out of the dugouts and hurriedly placed in position.\nA few minutes later, when the first British line of soldiers were within a hundred yards, the rattle of machine gun and rifle fire broke out along the whole line of shell holes. The British advance rapidly began to crumble under the hail of shells and bullets. All along the line, men could be seen throwing up their arms and collapsing, never to move again. The badly wounded rolled about in their agony.",
+    questionText: "How close were the British soldiers when the Germans opened fire?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Within a) hundred yards", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t2a-q4", topicId: "hist-lm-eur-2", conceptId: "happened-british-line-advance",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 2 A Q4",
+    stem: "This is an edited extract from a German soldier’s account of the first day of the Battle of the Somme. Read it and answer the questions which follow.\n\nThe men in the dugouts waited, ready, belts full of hand-grenades around them and gripping their rifles. It was of vital importance to lose not a second in taking up position in the open to meet the British infantry that would advance immediately behind the artillery fire.\nAt 7.30 a.m., the hurricane of shells stopped. Our men at once climbed up from the dugouts to daylight and ran to the nearest shell holes. The machine guns were pulled out of the dugouts and hurriedly placed in position.\nA few minutes later, when the first British line of soldiers were within a hundred yards, the rattle of machine gun and rifle fire broke out along the whole line of shell holes. The British advance rapidly began to crumble under the hail of shells and bullets. All along the line, men could be seen throwing up their arms and collapsing, never to move again. The badly wounded rolled about in their agony.",
+    questionText: "What happened to the British line of advance?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It rapidly began to crumble", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t2a-q5", topicId: "hist-lm-eur-2", conceptId: "apart-battle-somme-major-battle-world",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 2 A Q5",
+    stem: "This is an edited extract from a German soldier’s account of the first day of the Battle of the Somme. Read it and answer the questions which follow.\n\nThe men in the dugouts waited, ready, belts full of hand-grenades around them and gripping their rifles. It was of vital importance to lose not a second in taking up position in the open to meet the British infantry that would advance immediately behind the artillery fire.\nAt 7.30 a.m., the hurricane of shells stopped. Our men at once climbed up from the dugouts to daylight and ran to the nearest shell holes. The machine guns were pulled out of the dugouts and hurriedly placed in position.\nA few minutes later, when the first British line of soldiers were within a hundred yards, the rattle of machine gun and rifle fire broke out along the whole line of shell holes. The British advance rapidly began to crumble under the hail of shells and bullets. All along the line, men could be seen throwing up their arms and collapsing, never to move again. The badly wounded rolled about in their agony.",
+    questionText: "Apart from the Battle of the Somme, name one major battle in World War I.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE major battle during World War I", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t2b", topicId: "hist-lm-eur-2", conceptId: "bismarck-foreign-policy-anti-semitism-france",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 2 B",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Write a short paragraph on one of the following:\n1. Bismarck’s foreign policy.\n2. Anti-Semitism in France and/or Russia.\n3. Marie Curie.\n4. Wilfred Owen.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t2c", topicId: "hist-lm-eur-2", conceptId: "naval-policy-wilhelm-did-affect-relations",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 2 C",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "Answer one of the following:\n1. What was the naval policy of Wilhelm II, and how did it affect relations with Britain?\n2. Why was the career of Pope Leo XIII important in the history of the Catholic Church?\n3. What did you learn about World War I from your study of women in the workforce?\n4. Why was Woodrow Wilson important in European affairs?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t3a-q1", topicId: "hist-lm-eur-3", conceptId: "people-picture-organised-equipped",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 3 A Q1",
+    stem: "This is a picture of a Nuremberg Rally. Study it and answer the questions which follow.",
+    questionText: "How are the people in the picture organised and equipped?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Helmets", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "backpacks", marks: 3, contextNote: "in a line (3M)" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t3a-q2", topicId: "hist-lm-eur-3", conceptId: "nazi-emblem-symbol-centre-platform",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 3 A Q2",
+    stem: "This is a picture of a Nuremberg Rally. Study it and answer the questions which follow.",
+    questionText: "Which Nazi emblem (symbol) is in the centre of the platform?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Swastika", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t3a-q3", topicId: "hist-lm-eur-3", conceptId: "nazi-emblem-side-platform",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 3 A Q3",
+    stem: "This is a picture of a Nuremberg Rally. Study it and answer the questions which follow.",
+    questionText: "Which Nazi emblem is at each side of the platform?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Eagle / Reichsadler", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t3a-q4", topicId: "hist-lm-eur-3", conceptId: "way-picture-contribute-nazi-propaganda",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 3 A Q4",
+    stem: "This is a picture of a Nuremberg Rally. Study it and answer the questions which follow.",
+    questionText: "In what way would this picture contribute to Nazi propaganda?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid explanation", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t3a-q5", topicId: "hist-lm-eur-3", conceptId: "did-leni-riefenstahl-help-nazi-regime",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 3 A Q5",
+    stem: "This is a picture of a Nuremberg Rally. Study it and answer the questions which follow.",
+    questionText: "How did Leni Riefenstahl help the Nazi regime?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid contribution", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t3b", topicId: "hist-lm-eur-3", conceptId: "growth-radio-cinema-1920-1945-holocaust",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 3 B",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Write a short paragraph on one of the following:\n1. The growth in radio and cinema, 1920-1945.\n2. The Holocaust.\n3. France during World War II.\n4. The Battle of Stalingrad.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,11] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t3c", topicId: "hist-lm-eur-3", conceptId: "did-jarrow-march-take-place-october",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 3 C",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "Answer one of the following:\n1. Why did the Jarrow march take place, October 1936, and what did it achieve?\n2. What social and economic changes did Lenin and/or Stalin bring about in Russia?\n3. What developments took place in church-state relations in Italy under Mussolini?\n4. How successful was Winston Churchill as a wartime leader between 1940 and 1945?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,11] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t4a-q1", topicId: "hist-lm-eur-4", conceptId: "created-traffic-jams-previous-day",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 4 A Q1",
+    stem: "This edited extract from a newspaper article describes motoring problems during the oil crisis in Britain in 1973. Study it and answer the questions which follow.\n\nPetrol-hunting motorists created their own fuel-consuming traffic jams yesterday. When garages opened after the weekend, rationing was almost everywhere to be found, while some angry drivers rang the motoring organisations to report increases in the price of petrol.\nThe AA (Automobile Association) estimated that a quarter of Britain’s petrol stations remained closed yesterday. The extreme shortage was partially caused by motorists stocking up more than usual on Friday and Saturday and many garages ran dry over the weekend.\nThe situation will only improve with fresh deliveries of petrol to the garages. The government’s appeals for motorists to drive slowly and stay off the roads on Sunday are not enough.",
+    questionText: "What had created traffic jams on the previous day?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Petrol-hunting motorists", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t4a-q2", topicId: "hist-lm-eur-4", conceptId: "proportion-garages-remained-closed",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 4 A Q2",
+    stem: "This edited extract from a newspaper article describes motoring problems during the oil crisis in Britain in 1973. Study it and answer the questions which follow.\n\nPetrol-hunting motorists created their own fuel-consuming traffic jams yesterday. When garages opened after the weekend, rationing was almost everywhere to be found, while some angry drivers rang the motoring organisations to report increases in the price of petrol.\nThe AA (Automobile Association) estimated that a quarter of Britain’s petrol stations remained closed yesterday. The extreme shortage was partially caused by motorists stocking up more than usual on Friday and Saturday and many garages ran dry over the weekend.\nThe situation will only improve with fresh deliveries of petrol to the garages. The government’s appeals for motorists to drive slowly and stay off the roads on Sunday are not enough.",
+    questionText: "According to the AA, what proportion of garages had remained closed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A quarter", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t4a-q3", topicId: "hist-lm-eur-4", conceptId: "partially-caused-extreme-shortage",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 4 A Q3",
+    stem: "This edited extract from a newspaper article describes motoring problems during the oil crisis in Britain in 1973. Study it and answer the questions which follow.\n\nPetrol-hunting motorists created their own fuel-consuming traffic jams yesterday. When garages opened after the weekend, rationing was almost everywhere to be found, while some angry drivers rang the motoring organisations to report increases in the price of petrol.\nThe AA (Automobile Association) estimated that a quarter of Britain’s petrol stations remained closed yesterday. The extreme shortage was partially caused by motorists stocking up more than usual on Friday and Saturday and many garages ran dry over the weekend.\nThe situation will only improve with fresh deliveries of petrol to the garages. The government’s appeals for motorists to drive slowly and stay off the roads on Sunday are not enough.",
+    questionText: "What partially caused the extreme shortage?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Motorists stocking up (on Friday and Saturday)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t4a-q4", topicId: "hist-lm-eur-4", conceptId: "will-improve-situation",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 4 A Q4",
+    stem: "This edited extract from a newspaper article describes motoring problems during the oil crisis in Britain in 1973. Study it and answer the questions which follow.\n\nPetrol-hunting motorists created their own fuel-consuming traffic jams yesterday. When garages opened after the weekend, rationing was almost everywhere to be found, while some angry drivers rang the motoring organisations to report increases in the price of petrol.\nThe AA (Automobile Association) estimated that a quarter of Britain’s petrol stations remained closed yesterday. The extreme shortage was partially caused by motorists stocking up more than usual on Friday and Saturday and many garages ran dry over the weekend.\nThe situation will only improve with fresh deliveries of petrol to the garages. The government’s appeals for motorists to drive slowly and stay off the roads on Sunday are not enough.",
+    questionText: "What will improve the situation?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fresh deliveries of petrol (to the garages)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t4a-q5", topicId: "hist-lm-eur-4", conceptId: "caused-oil-crisis-1973",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 4 A Q5",
+    stem: "This edited extract from a newspaper article describes motoring problems during the oil crisis in Britain in 1973. Study it and answer the questions which follow.\n\nPetrol-hunting motorists created their own fuel-consuming traffic jams yesterday. When garages opened after the weekend, rationing was almost everywhere to be found, while some angry drivers rang the motoring organisations to report increases in the price of petrol.\nThe AA (Automobile Association) estimated that a quarter of Britain’s petrol stations remained closed yesterday. The extreme shortage was partially caused by motorists stocking up more than usual on Friday and Saturday and many garages ran dry over the weekend.\nThe situation will only improve with fresh deliveries of petrol to the garages. The government’s appeals for motorists to drive slowly and stay off the roads on Sunday are not enough.",
+    questionText: "What caused the oil crisis in 1973?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t4b", topicId: "hist-lm-eur-4", conceptId: "berlin-during-cold-war-jean-monnet",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 4 B",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Write a short paragraph on one of the following:\n1. Berlin during the Cold War.\n2. Jean Monnet.\n3. The consumer society.\n4. Margaret Thatcher.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t4c", topicId: "hist-lm-eur-4", conceptId: "did-hungarian-rising-1956-take-place",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 4 C",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "Answer one of the following questions:\n1. Why did the Hungarian Rising (1956) take place and why did it end in failure?\n2. What changes in the Catholic Church did the Second Vatican Council bring about?\n3. How successful was Mikhail Gorbachev as a political leader?\n4. What was the impact of changes in one or more of the following: the mass media; nuclear power; the computer?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t5a-q1", topicId: "hist-lm-eur-5", conceptId: "group-conducted-movement-independence",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 5 A Q1",
+    stem: "This edited extract gives an account of Tanzanian independence from British rule. Read it and answer the questions which follow.\n\nIn Tanganyika the nationalist movement for independence from Britain was conducted by the Tanganyika African National Union (TANU) led by Dr Julius Nyerere, who had been educated at Edinburgh University.\nNyerere insisted that the new independent government must be African, but also made it clear to the British government that whites had nothing to fear from black rule.\nIn 1961 Macmillan’s government, impressed by Nyerere’s ability and sincerity, gave independence with black majority rule. The island of Zanzibar was later united with Tanganiyka and in 1964 the country took the new name Tanzania. Nyerere remained President until his retirement in 1985.",
+    questionText: "What group conducted the movement for independence?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "TANU", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t5a-q2", topicId: "hist-lm-eur-5", conceptId: "did-nyerere-insist-upon",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 5 A Q2",
+    stem: "This edited extract gives an account of Tanzanian independence from British rule. Read it and answer the questions which follow.\n\nIn Tanganyika the nationalist movement for independence from Britain was conducted by the Tanganyika African National Union (TANU) led by Dr Julius Nyerere, who had been educated at Edinburgh University.\nNyerere insisted that the new independent government must be African, but also made it clear to the British government that whites had nothing to fear from black rule.\nIn 1961 Macmillan’s government, impressed by Nyerere’s ability and sincerity, gave independence with black majority rule. The island of Zanzibar was later united with Tanganiyka and in 1964 the country took the new name Tanzania. Nyerere remained President until his retirement in 1985.",
+    questionText: "What did Nyerere insist upon?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "That the new government must be African", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t5a-q3", topicId: "hist-lm-eur-5", conceptId: "who-prime-minister-britain-1961",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 5 A Q3",
+    stem: "This edited extract gives an account of Tanzanian independence from British rule. Read it and answer the questions which follow.\n\nIn Tanganyika the nationalist movement for independence from Britain was conducted by the Tanganyika African National Union (TANU) led by Dr Julius Nyerere, who had been educated at Edinburgh University.\nNyerere insisted that the new independent government must be African, but also made it clear to the British government that whites had nothing to fear from black rule.\nIn 1961 Macmillan’s government, impressed by Nyerere’s ability and sincerity, gave independence with black majority rule. The island of Zanzibar was later united with Tanganiyka and in 1964 the country took the new name Tanzania. Nyerere remained President until his retirement in 1985.",
+    questionText: "Who was Prime Minister of Britain in 1961?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Macmillan", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t5a-q4", topicId: "hist-lm-eur-5", conceptId: "new-did-country-take-1964",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 5 A Q4",
+    stem: "This edited extract gives an account of Tanzanian independence from British rule. Read it and answer the questions which follow.\n\nIn Tanganyika the nationalist movement for independence from Britain was conducted by the Tanganyika African National Union (TANU) led by Dr Julius Nyerere, who had been educated at Edinburgh University.\nNyerere insisted that the new independent government must be African, but also made it clear to the British government that whites had nothing to fear from black rule.\nIn 1961 Macmillan’s government, impressed by Nyerere’s ability and sincerity, gave independence with black majority rule. The island of Zanzibar was later united with Tanganiyka and in 1964 the country took the new name Tanzania. Nyerere remained President until his retirement in 1985.",
+    questionText: "What new name did the country take in 1964?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tanzania", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t5a-q5", topicId: "hist-lm-eur-5", conceptId: "policy-ujamaa",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 5 A Q5",
+    stem: "This edited extract gives an account of Tanzanian independence from British rule. Read it and answer the questions which follow.\n\nIn Tanganyika the nationalist movement for independence from Britain was conducted by the Tanganyika African National Union (TANU) led by Dr Julius Nyerere, who had been educated at Edinburgh University.\nNyerere insisted that the new independent government must be African, but also made it clear to the British government that whites had nothing to fear from black rule.\nIn 1961 Macmillan’s government, impressed by Nyerere’s ability and sincerity, gave independence with black majority rule. The island of Zanzibar was later united with Tanganiyka and in 1964 the country took the new name Tanzania. Nyerere remained President until his retirement in 1985.",
+    questionText: "Briefly, what was the policy of ujamaa?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE brief valid explanation", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t5b", topicId: "hist-lm-eur-5", conceptId: "charles-gaulle-achmad-sukarno-problems-faced",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 5 B",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Write a short paragraph on one of the following:\n1. Charles de Gaulle.\n2. Achmad Sukarno.\n3. Problems faced by development workers in Africa.\n4. How Britain became a multi-racial society.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t5c", topicId: "hist-lm-eur-5", conceptId: "important-mohandas-gandhi-movement-indian-independence",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 5 C",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Answer one of the following:\n1. How important was Mohandas Gandhi in the movement for Indian independence?\n2. How effective a leader was Gamal Abdul Nasser during the Suez Crisis, 1956?\n3. What impact did the secession of Katanga have on the Congo?\n4. What problems in race relations developed in France in the 1980s and what attempts were made to solve them?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t6a-q1", topicId: "hist-lm-eur-6", conceptId: "when-where-whom-speech-made",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 6 A Q1",
+    stem: "This is an edited extract from a televised speech by President John F. Kennedy on 22 October, 1962 during the Cuban missile crisis. Read it and answer the questions which follow.\n\nThe government, as promised, has maintained the closest surveillance (watch) of the Soviet military build-up on the island of Cuba. Within the past few weeks, unmistakable evidence has established the fact that a series of offensive missile sites is now in preparation.\nThe urgent transformation of Cuba into an important strategic base is an explicit threat to the peace and security of all the Americas. This secret, swift build-up of Communist missiles cannot be accepted by this country.",
+    questionText: "When, where and by whom was this speech made?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "JF Kennedy", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "1962", marks: 3, contextNote: "on television (3M) Any 2 X 3M" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t6a-q2", topicId: "hist-lm-eur-6", conceptId: "country-responsible-military-build",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 6 A Q2",
+    stem: "This is an edited extract from a televised speech by President John F. Kennedy on 22 October, 1962 during the Cuban missile crisis. Read it and answer the questions which follow.\n\nThe government, as promised, has maintained the closest surveillance (watch) of the Soviet military build-up on the island of Cuba. Within the past few weeks, unmistakable evidence has established the fact that a series of offensive missile sites is now in preparation.\nThe urgent transformation of Cuba into an important strategic base is an explicit threat to the peace and security of all the Americas. This secret, swift build-up of Communist missiles cannot be accepted by this country.",
+    questionText: "What country is responsible for the military build-up?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Soviet Union", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t6a-q3", topicId: "hist-lm-eur-6", conceptId: "specific-threat-americas-identified",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 6 A Q3",
+    stem: "This is an edited extract from a televised speech by President John F. Kennedy on 22 October, 1962 during the Cuban missile crisis. Read it and answer the questions which follow.\n\nThe government, as promised, has maintained the closest surveillance (watch) of the Soviet military build-up on the island of Cuba. Within the past few weeks, unmistakable evidence has established the fact that a series of offensive missile sites is now in preparation.\nThe urgent transformation of Cuba into an important strategic base is an explicit threat to the peace and security of all the Americas. This secret, swift build-up of Communist missiles cannot be accepted by this country.",
+    questionText: "What specific threat to the Americas is identified?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Threat to peace and security of the Americas OR threat of Soviet strategic base", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t6a-q4", topicId: "hist-lm-eur-6", conceptId: "kennedy-attitude-does-united-states-towards",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 6 A Q4",
+    stem: "This is an edited extract from a televised speech by President John F. Kennedy on 22 October, 1962 during the Cuban missile crisis. Read it and answer the questions which follow.\n\nThe government, as promised, has maintained the closest surveillance (watch) of the Soviet military build-up on the island of Cuba. Within the past few weeks, unmistakable evidence has established the fact that a series of offensive missile sites is now in preparation.\nThe urgent transformation of Cuba into an important strategic base is an explicit threat to the peace and security of all the Americas. This secret, swift build-up of Communist missiles cannot be accepted by this country.",
+    questionText: "According to Kennedy, what attitude does the United States have towards the build-up of communist missiles?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It was not acceptable to the US", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t6a-q5", topicId: "hist-lm-eur-6", conceptId: "did-cuban-missile-crisis-come-end",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 6 A Q5",
+    stem: "This is an edited extract from a televised speech by President John F. Kennedy on 22 October, 1962 during the Cuban missile crisis. Read it and answer the questions which follow.\n\nThe government, as promised, has maintained the closest surveillance (watch) of the Soviet military build-up on the island of Cuba. Within the past few weeks, unmistakable evidence has established the fact that a series of offensive missile sites is now in preparation.\nThe urgent transformation of Cuba into an important strategic base is an explicit threat to the peace and security of all the Americas. This secret, swift build-up of Communist missiles cannot be accepted by this country.",
+    questionText: "How did the Cuban missile crisis come to an end?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid point", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2010 Ordinary Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t6b", topicId: "hist-lm-eur-6", conceptId: "multinational-corporation-1945-1968-changing-role",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 6 B",
+    stem: "The United States and world, 1945-1989",
+    questionText: "Write a short paragraph on one of the following:\n1. The multinational corporation, 1945-1968.\n2. The changing role of women and the family.\n3. Muhammad Ali.\n4. Religion in modern American culture.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [7,8,12] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC004GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2010 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2010-ol-lm-s3t6c", topicId: "hist-lm-eur-6", conceptId: "did-montgomery-bus-boycott-1956-contribute",
+    section: "3", questionRef: "2010 OL Later Modern Section 3 Topic 6 C",
+    stem: "The United States and world, 1945-1989",
+    questionText: "Answer one of the following:\n1. What did the Montgomery bus boycott (1956) contribute the Civil Rights Movement?\n2. How successful was Lyndon Johnson as a political leader at home and abroad?\n3. How did the United States achieve a Moon landing in 1969 and what was its importance?\n4. What did Norman Mailer and/or Marilyn Monroe contribute to American culture?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [7,8,12] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2011, level: "ordinary",
     paperFileid: "LC004GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2011 Ordinary Level — © State Examinations Commission.",

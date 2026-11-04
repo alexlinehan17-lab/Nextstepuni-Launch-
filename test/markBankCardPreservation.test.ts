@@ -1269,8 +1269,8 @@ const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith(
  * from 2020 back (lane batch 3). */
 const HISTORY_NEW_POINT_IDS = new Set(['hist-2021-ol-lm-s1-q3b']);
 const HISTORY_ADDITIONS = {
-  counts: [1669, 2066],
-  hashes: ['e32ac5b14d170f4758690d5fa3b8affcbf9d84bae1395410070952f0b706c194', '07c098ee037d96e3e50dc3e5803aba51870851fd43d1c8f39879c506d4fc4966'],
+  counts: [1669, 2153],
+  hashes: ['e32ac5b14d170f4758690d5fa3b8affcbf9d84bae1395410070952f0b706c194', 'b0d14e843e1686ed1fb2c50d13b6748b39cf7b49cf353958dab16966d980eece'],
 };
 const historyEssayIds = new Set([...HISTORY_HIGHER, ...HISTORY_ORDINARY]
   .filter(card => card.kind === 'rubric' || card.year === 2026 || card.year <= 2020 || HISTORY_NEW_POINT_IDS.has(card.id))
