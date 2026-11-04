@@ -494,7 +494,8 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     ]);
     // A row that is the scheme pricing an answer it does not print says so.
     // ("ONE valid export (e.g. wool, butter, etc.)" prints its examples, so it is an answer.)
-    const tariffWording = rows.filter(({ row }) => /^(?:ONE|TWO|THREE|One valid|Two valid|Any valid)\b/.test(row.verbatim)
+    const tariffWording = rows.filter(({ row }) => row.kind !== 'anyN'
+      && /^(?:ONE|TWO|THREE|One valid|Two valid|Any valid|Any (?:ONE|TWO|THREE))\b/.test(row.verbatim)
       && !/\be\.g\./.test(row.verbatim));
     expect(tariffWording.length).toBeGreaterThan(80);
     expect(tariffWording.filter(({ row }) => !(row.contextNote ?? '').includes('The scheme prints no answer here')).map(({ card }) => card.id)).toEqual([]);

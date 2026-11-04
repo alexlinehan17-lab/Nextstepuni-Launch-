@@ -362,7 +362,7 @@ def essay_card(P, S, year, level, field, key, ask, section, topic_id, ref):
 PRICED_COMPONENT = re.compile(r'([A-Z][A-Za-z \u2019\'-]{1,40}?)\s*=\s*(\d{1,3})M\b')
 TARIFF_CEILING = re.compile(r'\bMax\.?\s*=\s*(\d{1,3})M\b')
 NO_PRINTED_ANSWER = 'The scheme prints no answer here: any correct one earns the marks.'
-TARIFF_WORDING = re.compile(r'^(?:ONE|TWO|THREE|[Oo]ne valid|[Tt]wo valid|[Aa]ny valid)\b(?![^.]*\.\s*\S)')
+TARIFF_WORDING = re.compile(r'^(?:ONE|TWO|THREE|[Oo]ne valid|[Tt]wo valid|[Aa]ny valid|Any (?:ONE|TWO|THREE))\b(?![^.]*\.\s*\S)')
 
 
 def split_card(P, year, level, field, key, ask, section, topic_id, ref):
@@ -658,7 +658,9 @@ def build():
                     # print ("ONE valid reason", "ONE decision of the Synod of
                     # Thurles") says so, in the bank's fixed words.
                     for row in card['rows']:
-                        if TARIFF_WORDING.match(row['verbatim']):
+                        # An any-N group ("Any TWO" over its printed options)
+                        # prints its answers; only a plain row can lack one.
+                        if row['kind'] != 'anyN' and TARIFF_WORDING.match(row['verbatim']):
                             row['contextNote'] = ' — '.join(
                                 x for x in (row.get('contextNote'), NO_PRINTED_ANSWER) if x)
                     cards.append(card)

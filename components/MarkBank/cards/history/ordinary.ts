@@ -2125,7 +2125,7 @@ export const CARDS: SecCard[] = [
     questionText: "Are the men fully aware of what lies before them? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any ONE valid specific reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid specific reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3136,7 +3136,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, why was Hugh O’Neill defeated in the Nine Years’ War?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason why O’Neill lost the Nine Years’ War", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason why O’Neill lost the Nine Years’ War", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -3281,7 +3281,7 @@ export const CARDS: SecCard[] = [
     questionText: "For what purpose were Irish colleges founded in continental Europe in the seventeenth century?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any ONE valid purpose for the founding of Irish colleges abroad", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid purpose for the founding of Irish colleges abroad", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4434,7 +4434,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, mention one change that was beginning to emerge in rural society before 1775.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any ONE valid change emerging in rural society before 1775", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid change emerging in rural society before 1775", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -12292,7 +12292,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe one difference between Brehon Law and common law.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any ONE valid difference", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid difference", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -15963,7 +15963,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why were English officials in Ireland hostile to poets/bards?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
