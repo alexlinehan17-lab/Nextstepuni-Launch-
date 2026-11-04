@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import authored from '../components/MarkBank/cards/irish/foundation-2014-authored.json';
 import inventory from '../scripts/markbank/authored/irish-archive-inventory.json';
@@ -7,6 +7,17 @@ import { CARDS as ALL_CARDS } from '../components/MarkBank/cards/irish/foundatio
 import { combinedListeningAssessment, irishMarks } from '../components/MarkBank/SessionScreen';
 import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/examTopics/registry';
 import { tariffReconciles } from '../types/markBank';
+
+// CI has neither PyMuPDF nor the scheme corpus: the source guard runs where both are present.
+const hasPyMuPDF = (() => {
+  try {
+    execFileSync('python3', ['-c', 'import fitz'], { stdio: 'ignore' });
+    return true;
+  } catch {
+    return false;
+  }
+})();
+const canReadScheme = hasPyMuPDF && existsSync('paper-trail-corpus/markingschemes/2014/LC001BLP000IV.pdf');
 
 const cards=ALL_CARDS.filter(c=>c.year===2014);
 const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
@@ -152,7 +163,7 @@ describe('2014 Foundation independently reviewed boundaries',()=>{
     expect(map.band).toEqual([3,17]);
   });
 
-  it('rejects unknown or stale raw selections and retains readable scheme glyphs',()=>{
+  it.skipIf(!canReadScheme)('rejects unknown or stale raw selections and retains readable scheme glyphs',()=>{
     const result=execFileSync('python3',['-c',String.raw`
 import sys,json,fitz
 sys.path.insert(0,'scripts/markbank/authoring')

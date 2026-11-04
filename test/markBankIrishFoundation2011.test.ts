@@ -1,5 +1,5 @@
 import {describe,expect,it} from 'vitest';
-import {readFileSync} from 'node:fs';
+import {existsSync,readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import written from '../components/MarkBank/cards/irish/foundation-2011-authored.json';
 import aural from '../components/MarkBank/cards/irish/foundation-2011-aural-authored.json';
@@ -14,6 +14,9 @@ const guide=(n:string,id:string)=>get(n).criteria.find(c=>c.id===id)!.guidance.j
 // Our own examiner notes are the card's English note, never its scheme guidance (irish_lifted.py).
 const note=(n:string)=>get(n).markingGuideNote;
 const cards=CARDS.filter(c=>c.year===2011);
+// CI has neither PyMuPDF nor the paper corpus: the source guards run where both are present.
+const hasPyMuPDF=(()=>{try{execFileSync('python3',['-c','import fitz'],{stdio:'ignore'});return true;}catch{return false;}})();
+const canReadPapers=hasPyMuPDF&&existsSync('paper-trail-corpus/exampapers/2011/LC001BLP100IV.pdf');
 const loadMap=(file:string)=>JSON.parse(readFileSync(`public/paper-answers/2011/${file}.pdf.json`,'utf8'));
 
 describe('2011 Foundation separate written and listening papers',()=>{
@@ -156,7 +159,7 @@ describe('2011 Foundation separate written and listening papers',()=>{
     const instructions=w.q.find((q:{n:string})=>q.n==='3').practiceInstruction;
     expect(instructions.match(/the first column gives 2 marks for pastimes/g)).toHaveLength(1);
   });
-  it('rejects unknown/stale raw directives and reconstructs printed words without removing real repeated letters',()=>{
+  it.skipIf(!canReadPapers)('rejects unknown/stale raw directives and reconstructs printed words without removing real repeated letters',()=>{
     const result=execFileSync('python3',['-c',String.raw`
 import json,sys,fitz
 sys.path.insert(0,'scripts/markbank/authoring')
