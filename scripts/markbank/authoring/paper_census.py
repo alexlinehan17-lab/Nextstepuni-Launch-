@@ -666,6 +666,54 @@ SHORT_ASKS = {
                                                       'instrument named."; the OR branch\'s (c) sets only (i) to '
                                                       '(iii), and the word read is the callout "PCB" printed on that '
                                                       'branch\'s circuit-board photograph'),
+    # 2010-2019, the census audit of 2026-11-04: every one opened on its page.
+    # 2010 HL Q1(g) and Q1(o) print one-word items; the Ordinary entries are
+    # photograph and drawing captions with no words, recovered for 2010, 2013 and
+    # 2016-2019 by paper.BARE_ROMAN_RUNS.
+    **{('engineering', 2010, 'hl', f'Q1(g)({r})'): (w, f'p3: the abbreviation "({r}) {w.rstrip(".")}" under "Select any '
+                                                   'two of the abbreviations shown and explain their meaning:"')
+       for r, w in (('i', 'LED'), ('ii', 'IC'), ('iii', 'http'), ('iv', 'DVD.'))},
+    **{('engineering', 2010, 'hl', f'Q1(o)({r})'): (w, f'p4: the movement "({r}) {w}" under "Explain, with the aid of '
+                                                   'suitable diagrams, any three of the following types of movement used '
+                                                   'in an accelerometer:"')
+       for r, w in (('iii', 'Shock;'), ('iv', 'Tilt;'))},
+    **{('engineering', 2010, 'ol', f'Q6(a)({r})'): ('', f'p5: the caption "({r})" under the {n} of four lathe-part drawings, '
+                                                       'under "Identify any three of the lathe parts shown:"')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    **{('engineering', 2010, 'ol', f'Q7(c)({r})'): ('', f'p6: the caption "({r})" under the {n} of four tool drawings, '
+                                                       'under "Name and give one application for any three of the tools shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    **{('engineering', 2013, 'ol', f'Q4(b)({r})'): ('', f'p4: the caption "({r})" under the {n} of three flame drawings, '
+                                                       'under "Name and describe the three types of oxy-acetylene flame shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    **{('engineering', 2013, 'ol', f'Q6(a)({r})'): ('', f'p5: the caption "({r})" under the {n} of four lathe-operation drawings, '
+                                                       'under "Name any three of the lathe operations shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    **{('engineering', 2013, 'ol', f'Q7(c)({r})'): ('', f'p6: the caption "({r})" under the {n} of four instrument drawings, '
+                                                       'under "Name any three of the instruments shown and give one application for each instrument named."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    **{('engineering', 2016, 'ol', f'Q6(a)({r})'): ('', f'p6: the caption "({r})" under the {n} of four lathe-operation drawings, '
+                                                       'under "Name any three of the lathe operations shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2017, 'ol', 'Q1(h)(i)'): ('', 'p2: the caption "(i)" under the first of two safety symbols, under '
+                                                  '"Identify each of the safety symbols shown."'),
+    ('engineering', 2017, 'ol', 'Q7(c)(iii)'): ('', 'p8: the caption "(iii)" under the third of four instrument photographs, '
+                                                    'under "Name any three of the instruments shown and give one '
+                                                    'application for each instrument named."'),
+    ('engineering', 2017, 'ol', 'Q7(c)(iv)'): ('B C', 'p8: the caption "(iv)" under the fourth instrument photograph; the '
+                                                      'words read are the labels "B" and "C" of the OR branch\'s circuit '
+                                                      'photograph'),
+    **{('engineering', 2018, 'ol', f'Q2(a)({r})'): ('', f'p3: the caption "({r})" under the {n} of three furnace drawings, '
+                                                       'under "Name and state the functions of each of the following furnaces."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    ('engineering', 2018, 'ol', 'Q7(c)(iii)'): ('', 'p8: the caption "(iii)" under the third of four instrument photographs, '
+                                                    'under "Name any three of the instruments shown and give one '
+                                                    'application of each instrument named."'),
+    ('engineering', 2018, 'ol', 'Q7(c)(iv)'): ('A', 'p8: the caption "(iv)" under the fourth instrument photograph; the word '
+                                                    'read is the label "A" of the OR branch\'s circuit photograph'),
+    **{('engineering', 2019, 'ol', f'Q6(a)({r})'): ('', f'p7: the caption "({r})" under the {n} of four lathe-part photographs, '
+                                                       'under "Name any three of the lathe parts shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
     ('engineering', 2026, 'ol', 'Q1(k)(iii)'): ('5G.', 'p2: the term "(iii) 5G." in "(i) Smart technology, (ii) '
                                                        'Cybersecurity, (iii) 5G." under "Explain any one of the '
                                                        'following:"'),
@@ -683,6 +731,15 @@ SHORT_ASKS = {
     ('engineering', 2026, 'ol', 'Q6(b)(iv)'): ('Feed.', 'p7: the term "(iv) Feed." under "Explain any three of the '
                                                         'following in relation to machining:"'),
 }
+
+
+# A paper whose question marks add up to a different total from its sitting's
+# other years because its FORMAT differs, each total checked on the paper's
+# own question heads. Engineering Ordinary 2017-2019 print Question 1 at
+# "(65 marks)" and Questions 2-7 at "(45 marks)" (335), where 2021 on print
+# seven questions at 50 (350). The checksum stands down only while the reader
+# sums exactly the printed total.
+PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2017, 2018, 2019)}
 
 
 def short_ask_ok(subject, year, level, flag):
@@ -3898,7 +3955,8 @@ def census_subject(subject):
             # Higher prints 128 and 2021 Higher 64, and a tie flagged 2021.
             if n < 2:
                 continue
-            if p['marksSum'] != want:
+            if p['marksSum'] != want and \
+                    PRINTED_TOTALS.get((subject, p['year'], p['level'])) != p['marksSum']:
                 p['flags'].append({
                     'type': 'marks-checksum',
                     'where': f"{p['year']} {p['level']} {p.get('paper') or ''}",
