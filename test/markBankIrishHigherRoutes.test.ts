@@ -109,9 +109,18 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
       const resolved = resolveSibling({subjectId:'irish',year,level:'higher',lang:'iv',paperKey:'p2',fileid:'LC001ALP200IV.pdf',n:'P-2A-a-an-lasair-choille'})!;
       expect(answerMapUrls(resolved)[0]).toBe(`/paper-answers/${year}/LC001ALP200IV.pdf.json`);
       const map = JSON.parse(readFileSync(`public/paper-answers/${year}/LC001ALP200IV.pdf.json`,'utf8'));
-      const legacy = map.q.filter((q: { n: string }) => /^\d+$/.test(q.n))
+      // The twelve shipped reading anchors stay byte-identical; the literature questions the paper
+      // prints (Ceist 2 Prós, Ceist 3 Filíocht) are added after them as the reviewed tasks' parents.
+      const legacy = map.q.filter((q: { n: string }) => /^\d+$/.test(q.n) && Number(q.n) <= 12)
         .map(({paperRegion,schemeRegion,printOrder,...original}: Record<string, unknown>) => original);
       expect(legacy).toHaveLength(12);
+      expect(map.q.filter((q: { n: string }) => /^\d+$/.test(q.n) && Number(q.n) > 12)
+        .map((q: { n: string; label: string }) => [q.n, q.label])).toEqual(year === 2022
+        ? [['13', 'Ceist 2 · Prós'], ['14', 'Ceist 3 · Filíocht']]
+        : [['13', 'Ceist 2 · Prós'], ['14', 'Ceist 3 · Filíocht'], ['15', 'Ceist 4 · Litríocht Bhreise']]);
+      for (const task of map.q.filter((q: { n: string }) => /^[PF]-/.test(q.n))) {
+        expect(task.parentN, task.n).toBe(task.n.startsWith('P-') ? '13' : '14');
+      }
       expect(createHash('sha256').update(JSON.stringify(legacy)).digest('hex')).toBe(year === 2022
         ? '1e563fe88d83be836a4a4d3d02b9fa50d8db754d0f2e59218720173f5c47fdef'
         : '59c189047fa108b5f2e66888a2557ae388efc65e48fda35fd7cd44070ccf589e');

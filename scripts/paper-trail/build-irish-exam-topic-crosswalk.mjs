@@ -1149,6 +1149,87 @@ const tagPapers = papers
   }));
 fs.writeFileSync(TAGS_PATH, JSON.stringify(tagPapers, null, 2) + '\n');
 
+
+// Main's answer-map contract (components/PaperTrail/paperRegion.ts, test/paperTrailAnswers.test.ts):
+// a printed question anchor is numeric; every reviewed practice task inside it names that printed
+// question as parentN and supplies its own audited paperRegion, so it never shortens a printed
+// question's derived crop. Each lettered task is rooted by the PRINTED question it sits in, matched
+// by the printed anchor's own label. 2022-2025 Paper 2 maps anchor only the twelve (Ordinary: ten)
+// reading questions, so the literature questions the paper prints (Ceist 2 Prós, Ceist 3 Filíocht,
+// Higher Ceist 4 Litríocht Bhreise) are added as printed anchors, labelled as the 2026 maps label
+// them, numbered on from the reading run, at the paper's existing section anchors (P-A, F-A, X).
+const LITERATURE_PARENTS = [
+  { prefix: 'P-', label: 'Ceist 2 · Prós', section: 'P-A', test: /^Ceist 2 · Prós\b/ },
+  { prefix: 'F-', label: 'Ceist 3 · Filíocht', section: 'F-A', test: /^Ceist 3 · Filíocht\b/ },
+  { prefix: 'X-', label: 'Ceist 4 · Litríocht Bhreise', section: 'X', test: /^Ceist 4\b/ },
+];
+function rootReviewedTasks(paper, artifact, input) {
+  const numeric = q => /^\d+$/.test(q.n);
+  // The storage sidecar read back on the next run already holds the literature anchors this
+  // function added; rebuild them every run so the output does not depend on the last one.
+  const own = new Set(artifact.q.map(q => q.n));
+  const entries = input.filter(q => !(numeric(q) && !own.has(q.n) && LITERATURE_PARENTS.some(item => item.label === q.label)));
+  const printed = () => entries.filter(numeric);
+  const byLabel = test => printed().find(q => test.test(q.label ?? ''));
+  const added = [];
+  const parentFor = task => {
+    const n = task.n;
+    let m;
+    if ((m = n.match(/^L-([ABC])-/))) return byLabel(new RegExp(`Cuid ${m[1]}$`));
+    if (paper.level !== 'foundation' && n.startsWith('W-')) return byLabel(/Cheapadóireacht$/);
+    if ((m = n.match(/^R-([AB])-(\d+)/)) || (m = n.match(/^R-([AB])$/))) {
+      return (m[2] && byLabel(new RegExp(`^Léamhthuiscint ${m[1]} · Ceist ${m[2]}$`))) || byLabel(/^Ceist 1 · Léamhthuiscint\b/);
+    }
+    if (/^G-[AB]$/.test(n)) return byLabel(/^Ceist 1 · Léamhthuiscint\b/);
+    if (paper.level === 'foundation') {
+      if ((m = n.match(/^A-(\d+)/))) return byLabel(/^Cluastuiscint$/) || byLabel(new RegExp(`^Question ${m[1]}$`));
+      if (n.startsWith('R-')) return byLabel(/^Léamhthuiscint$/);
+      if (n.startsWith('W-')) return byLabel(/^Scríbhneoireacht$/);
+    }
+    const literature = LITERATURE_PARENTS.find(item => n.startsWith(item.prefix));
+    if (literature) {
+      const existing = byLabel(literature.test);
+      if (existing) return existing;
+      const section = artifact.q.find(q => q.n === literature.section);
+      if (!section) throw new Error(`${paper.year} ${paper.fileid}: no ${literature.section} section anchor for ${n}`);
+      const anchor = {
+        n: String(Math.max(...printed().map(q => Number(q.n))) + 1),
+        label: literature.label, pP: section.pP, pY: section.pY,
+        region: [], mode: 'crop', conf: 1, printOrder: 0, children: [],
+      };
+      entries.push(anchor); added.push(anchor);
+      return anchor;
+    }
+    return undefined;
+  };
+  for (const task of entries.filter(q => !numeric(q))) {
+    const parent = parentFor(task);
+    if (!parent) throw new Error(`${paper.year} ${paper.fileid}: reviewed task ${task.n} has no printed parent question`);
+    if (!task.paperRegion?.length) throw new Error(`${paper.year} ${paper.fileid}: reviewed task ${task.n} has no audited paper region`);
+    task.parentN = parent.n;
+    parent.children?.push(task);
+  }
+  for (const anchor of added) {
+    // The added printed question spans its tasks: scheme pages and paper pages as whole pages.
+    const schemePages = [...new Set(anchor.children.flatMap(q => (q.schemeRegion ?? q.region).map(r => r.p)))].sort((a, b) => a - b);
+    const lastPage = Math.max(...anchor.children.flatMap(q => q.paperRegion.map(r => r.p)));
+    anchor.region = schemePages.map(p => ({ p, r: [0, 0, 1, 1] }));
+    anchor.paperRegion = Array.from({ length: lastPage - anchor.pP + 1 }, (_, i) => ({ p: anchor.pP + i, r: [0, 0, 1, 1] }));
+    const first = Math.min(...anchor.children.map(q => q.printOrder));
+    anchor.printOrder = first - 0.5;
+    delete anchor.children;
+  }
+  if (added.length) {
+    // Renumber the physical order as a unique integer run with the added questions before their tasks.
+    const ordered = [...entries].sort((a, b) => a.printOrder - b.printOrder);
+    ordered.forEach((q, i) => { q.printOrder = i + 1; });
+    // Keep printed anchors in ascending n order in the array (main's numeric-order gate).
+    const tasks = entries.filter(q => !numeric(q));
+    return [...printed().sort((a, b) => Number(a.n) - Number(b.n)), ...tasks];
+  }
+  return entries;
+}
+
 const hostedAnchorMaps = [];
 for (const paper of papers) {
   // Reviewed Foundation regions override older section anchors that sometimes
@@ -1231,6 +1312,7 @@ for (const paper of papers) {
     // The band must include every reviewed scheme page, including Q4's tail.
     const orderFor = new Map(artifact.q.map(q => [q.n,q.printOrder]));
     answerMap.q = answerMap.q.map(q => ({...q,printOrder:orderFor.get(q.n)}));
+    answerMap.q = rootReviewedTasks(paper, artifact, answerMap.q);
     const schemePages = answerMap.q.flatMap(q => (q.schemeRegion ?? q.region).map(r => r.p));
     answerMap.band = [Math.min(...schemePages),Math.max(...schemePages)+1];
     for (const folder of [ANSWERS_ROOT, path.join(ROOT, 'public/paper-answers')]) {
