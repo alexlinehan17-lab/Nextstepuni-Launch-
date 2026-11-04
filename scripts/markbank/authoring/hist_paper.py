@@ -121,7 +121,9 @@ SECTION = re.compile(r'^SECTION\s+(\d)\s*:', re.I)
 # no case-study topic at all.
 # 2016 Ordinary Later Modern prints "Ireland: Topic5", with no space.
 TOPIC = re.compile(
-    r'^(Ireland|Europe(?: and the wider world)?)\s*:\s*Topic\s*(\d)\s*$', re.I)
+    # 2011 Ordinary Later Modern names its documents question's topic with its
+    # field in front: "Later Modern Ireland: Topic 5".
+    r'^(?:(?:Later|Early) Modern )?(Ireland|Europe(?: and the wider world)?)\s*:\s*Topic\s*(\d)\s*$', re.I)
 # "A (30 marks)" heads an Ordinary topic's first priced part. 2021 Ordinary
 # Early Modern prints "B 30 marks)" for Europe Topic 1 — the opening bracket is
 # missing from the SEC's own page. It is a MISPRINT, recorded below rather than
@@ -154,6 +156,14 @@ MISPRINTS = {
     # (page 5) and "(30 marks)" over Early Modern Europe Topic 6 B (page 14).
     (2013, 'ol', 'lm'): {'(40 marks)': 'C (40 marks)'},
     (2013, 'ol', 'em'): {'(30 marks)': 'B (30 marks)'},
+    # 2010 Ordinary Later Modern numbers its last Section 2 topic "Ireland:
+    # Topic 5" (page 8), titled "Government, economy and society in the
+    # Republic of Ireland, 1949-1989": that is Topic 6. The cover sets the
+    # documents question on "Later Modern Ireland: Topic 5" and offers
+    # "Ireland: Topics 1, 2, 3, 4, 6" in Section 2, and the scheme heads the
+    # same answers "Ireland: Topic 6". The documents question's own head,
+    # "Later Modern Ireland: Topic 5" (page 2), is printed right and untouched.
+    (2010, 'ol', 'lm'): {'Ireland: Topic 5': 'Ireland: Topic 6'},
 }
 EXTRA = re.compile(r'^Answer the questions below if you are following the '
                    r'Alternative Instructions', re.I)
@@ -177,7 +187,9 @@ CITATION_LINE = re.compile(
 # The dash the SEC sets around a document label is not always the ASCII one:
 # 2022 uses U+2010 HYPHEN throughout, and the narrower class missed every
 # document head on that paper.
-DOCUMENT_HEAD = re.compile('^[\u2010-\u2015\\-]\\s*Document\\s+([AB])\\s*[\u2010-\u2015\\-]')
+# 2011 Higher Later Modern prints its first head bare, "Document A", and its
+# second framed, "-Document B-".
+DOCUMENT_HEAD = re.compile('^(?:[\u2010-\u2015\\-]\\s*Document\\s+([AB])\\s*[\u2010-\u2015\\-]|Document\\s+[AB]\\s*$)')
 # The SEC drops the definite article on some papers: "Case study to which
 # documents relate:". Requiring it left three Ordinary papers with no case
 # study on their documents cards.
@@ -248,14 +260,16 @@ def lines(path):
 #                     own height opens a new block (the leading between the
 #                     lines of one paragraph is about a fifth of it, the gap the
 #                     SEC leaves between instruction and extract more than all
-#                     of it);
+#                     of it; 2011-2012 Ordinary Early Modern leave half a line
+#                     between the instruction and each of the extract's
+#                     paragraphs alike);
 #   PARAGRAPH_INDENT  points a line must start in from its block's left edge
 #                     to count as indented;
 #   COLUMN_SPACE      a space between two words wider than this is a table's
 #                     column, not a word space (word spaces measure 2-6 points
 #                     on these papers).
 #   NARROW            see below.
-PARAGRAPH_GAP = 0.6
+PARAGRAPH_GAP = 0.45
 PARAGRAPH_INDENT = 8.0
 COLUMN_SPACE = 12.0
 # A block whose longest line stops this share of the stem's measure short of

@@ -437,6 +437,48 @@ def unit_source_pages(P, unit):
     return pages
 
 
+# A documents part's scheme entry that restates the task and answers nothing:
+# "Yes or No?", "Primary or secondary?", "Which is more sympathetic to bardic
+# poets, A or B?", "Compare role of poet as set out in Document A with role of
+# poet as set out in Document B" (2010-2011 Ordinary).
+DIRECTION_ONLY = re.compile(r'^(?:[A-Z][^.?]{0,100}\?(?: One reason only required| [A-Z][^?]{0,100}\.?)?|Compare\b[^.?]{0,120})$')
+
+
+def scale_marks(notes):
+    """Every mark a printed band grid allows, "Excellent = 9-10 mks ... Weak = 0-2 mk"."""
+    bands = [(int(a), int(b or a)) for a, b in
+             re.findall(r'=\s*(\d+)(?:\s*-\s*(\d+))?\s*mks?\b', ' '.join(notes))]
+    return sorted({m for a, b in bands for m in range(a, b + 1)})
+
+
+def derive_unpriced_parts(P, S):
+    """Price a documents part the scheme answers but prints no marks for.
+
+    2011 Higher Early Modern Q3(b) answers Spenser "as a poet" and "as a
+    colonist", "Mark each 0-5 according to quality", and prints no total; the
+    paper prices Q3 at (20) and the scheme prices Q3(a) at "max 10M". The part
+    takes what the paper's question total leaves, as an unanswered part does
+    (unanswered_card): only when it is the question's one unpriced part and
+    every other part is priced. Returns what was derived, for the report."""
+    out = []
+    for q in sorted({a.key[1] for a in S.asks if a.key[0] == '1' and a.key[2]}):
+        parts = [a for a in S.asks if a.key[0] == '1' and a.key[1] == q and a.key[2]]
+        unpriced = [a for a in parts if a.total is None]
+        printed = P.marks.get(('1', q, None, None))
+        if len(unpriced) != 1 or printed is None:
+            continue
+        siblings = sum(a.total for a in parts if a.total is not None)
+        if not 0 < printed - siblings <= printed:
+            continue
+        ask = unpriced[0]
+        ask.total = printed - siblings
+        ask.notation = f'{ask.total}M'
+        ask.derived = (printed, siblings)
+        out.append(f'Section 1 Q{q}({ask.key[2]}): paper {printed} - scheme {siblings} '
+                   f'= {ask.total} for the part the scheme answers unpriced')
+    return out
+
+
 def split_card(P, year, level, field, key, ask, section, topic_id, ref):
     """A part the scheme prices component by component, answering each: one
     row per component at its printed marks (hist_scheme
@@ -447,6 +489,11 @@ def split_card(P, year, level, field, key, ask, section, topic_id, ref):
     for i, (label, point, note) in enumerate(ask.points, start=1):
         row = {'id': f'r-{i}', 'kind': 'point', 'verbatim': point,
                'marks': ask.components[i - 1][1]}
+        steps = ask.steps.get(i - 1)
+        if steps:
+            # A component marked on its own printed scale (2012 Ordinary Q3(a)).
+            row['kind'] = 'criterion'
+            row['permittedMarks'] = steps
         if note:
             row['contextNote'] = note
         rows.append(row)
@@ -585,6 +632,9 @@ def build():
             if True:
                 P = HistPaper(year, level, field)
                 S = HistScheme(year, level, field)
+                derived = derive_unpriced_parts(P, S)
+                for d in derived:
+                    tariff_checks.setdefault('derived', []).append(f'{year} {level} {field} {d}')
 
                 # --- Law 4, join one: the topic title, on both documents.
                 scheme_titles = [(u, bag(t))
@@ -777,6 +827,24 @@ def build():
                             row['contextNote'] = ' — '.join(notes)
                         rows.append(row)
 
+                    grid_marks = scale_marks(ask.notes)
+                    # A grid printed per element ("Each document to be marked as
+                    # follows:" / "Excellent = 5 mks ... Weak = 0-1 mk 10M") covers
+                    # the part's whole tariff, every mark of it, element by element.
+                    if (grid_marks and grid_marks == list(range(0, grid_marks[-1] + 1))
+                            and ask.total and ask.total % grid_marks[-1] == 0):
+                        grid_marks = list(range(0, ask.total + 1))
+                    if (single and key[0] == '1' and key[2] and DIRECTION_ONLY.match(rows[0]['verbatim'])
+                            and grid_marks == list(range(0, (ask.total or 0) + 1))):
+                        # The scheme restates the task and marks it on its band
+                        # grid, printing no answer: "Yes or No?" / "Mark quality
+                        # of answer on its merits." / "Excellent = 9-10 mks ...
+                        # Weak = 0-2 mk 10M" (2010-2011 Ordinary). The row is
+                        # the printed direction, stepped at every mark the grid
+                        # prints.
+                        rows[0] = {'id': 'r-1', 'kind': 'criterion', 'verbatim': rows[0]['verbatim'],
+                                   'marks': ask.total, 'permittedMarks': grid_marks,
+                                   'contextNote': NO_PRINTED_ANSWER}
                     partials = [(alt, n) for alt, n in getattr(ask, 'partials', [])
                                 if 0 < n < (ask.total or 0)]
                     if single and len(partials) == 1:
@@ -786,7 +854,8 @@ def build():
                         alt, n = partials[0]
                         rows[0] = {'id': 'r-1', 'kind': 'criterion', 'verbatim': rows[0]['verbatim'],
                                    'marks': ask.total, 'permittedMarks': [0, n, ask.total],
-                                   'contextNote': ' — '.join(x for x in (rows[0].get('contextNote'), f'{alt} = {n}M') if x)}
+                                   'contextNote': ' — '.join(x for x in (rows[0].get('contextNote'),
+                                                                         *(ask.partial_lines or [f'{alt} = {n}M'])) if x)}
                     card = {
                         'id': card_id(year, level, field, key),
                         'subjectId': 'history',
@@ -808,6 +877,16 @@ def build():
                                ' and divides it between no marking point, so '
                                'the rows carry no marks of their own.')),
                     }
+                    if getattr(ask, 'derived', None):
+                        printed, siblings = ask.derived
+                        card['notes'] = (
+                            f'{FIELDS[field]} field of study. The paper prices question {key[1]} '
+                            f'at ({printed}) and the scheme prices its other part at {siblings}M, '
+                            f'so this part is worth {ask.total}; the scheme prints its answer '
+                            f'and no marks for it'
+                            + ('.' if single else
+                               ', and divides it between no marking point, so '
+                               'the rows carry no marks of their own.'))
                     stem = P.stems.get(unit)
                     if unit == '1' and P.case_title:
                         stem = f'Case study: {P.case_title}'

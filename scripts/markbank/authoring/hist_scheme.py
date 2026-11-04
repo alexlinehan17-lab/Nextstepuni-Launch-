@@ -136,6 +136,9 @@ SPLIT_BARE_TOTAL = re.compile(r'(?<=M)\s+(\d{1,3})M$')
 INLINE_COMPONENT = re.compile(r'\s*([A-Z0-9][^=]*?)\s*=\s*(\d{1,3})M\b')
 
 
+LEAD_PRICED = re.compile(r'(?:^|\s)(?P<lead>Any (?:ONE|TWO) valid \w+ for (?P<n>\d{1,2})M):\s*(?P<answer>\S.*)$')
+
+
 def _answered_split(text):
     """(total, [(component, marks, answer or None), ...]) or None."""
     lines = [' '.join(t.split()) for t in text]
@@ -159,9 +162,27 @@ def _answered_split(text):
         # (non-Catholic)" / "churches = 3M (6)"), so they are read off the
         # whole entry, and must account for every word of it.
         joined = ' '.join(lines[:-1] + ([last] if last else []))
+        # The last component may price itself in its own lead: "Business as
+        # usual OR Not business as usual = 3M" / "Any ONE valid reason for 3M:
+        # The shops and warehouses were closed/ The hotels were all crowded
+        # (6)" (2012 Ordinary). Its answer is what follows the colon, and the
+        # lead, as printed, is its note.
+        tail = None
+        m_lead = LEAD_PRICED.search(joined)
+        if m_lead:
+            tail = (m_lead.group('lead').strip(), int(m_lead.group('n')), m_lead.group('answer').strip())
+            joined = joined[:m_lead.start()]
         parts = [(name.strip(), int(n)) for name, n in INLINE_COMPONENT.findall(joined)]
         rebuilt = ' '.join(f'{name} = {n}M' for name, n in parts)
-        if (len(parts) < 2 or ' '.join(rebuilt.split()) != ' '.join(joined.split())
+        if tail:
+            if (len(parts) < 1 or ' '.join(rebuilt.split()) != ' '.join(joined.split())
+                    or sum(n for _name, n in parts) + tail[1] != total):
+                return None
+            return total, [(name, n, None) for name, n in parts] + [tail]
+        # A full stop printed after a price closes its component: "Yes = 3M.
+        # It says that they were there "by the dozen" = 3M (6)" (2012).
+        printed = re.sub(r'(?<=\dM)\.(?=\s|$)', '', joined)
+        if (len(parts) < 2 or ' '.join(rebuilt.split()) != ' '.join(printed.split())
                 or sum(n for _name, n in parts) != total):
             return None
         return total, [(name, n, None) for name, n in parts]
@@ -199,14 +220,78 @@ PS_CLOSING = re.compile(
     r'(?:(?P<split>[A-Z][^=.]{0,60}?=\s*\d+M(?:\s*\+\s*\d+M)+)\s*)?Max\s*=\s*(?P<total>\d+)M\s*$')
 PS_INSTRUCTION = re.compile(
     r'(?:Mark quality of explanation on its merits\.|Both documents must be mentioned\.'
-    r'|Must be clearly stated\.?|Expect and allow overlap[^.]*\.|\(If candidate[^)]*\)'
+    r'|Must be clearly stated\.?|Expect and allow overlap[^.]*\.|Allow overlap[^.]*\.|\(If candidate[^)]*\)'
     r'|Document [AB] is not acceptable as an answer because[^.]*\.)')
-PS_DOCUMENT_POINT = re.compile(r'(?:^|(?<=[.!?\u201d"]))\s+(?=Document [AB]\b)')
+PS_DOCUMENT_POINT = re.compile(r'(?:^|(?<=[.!?\u201d"]))\s+(?=Document [AB]\b)|\s*\x00\s*')
+DOC_LINE_START = re.compile(r'^\s*Document [AB]\b')
+PS_SCALE = re.compile(
+    r'(?:Explanation|Answer)s? (?:to )?be marked on a sliding scale out of (?P<n>\d{1,2}):\s*'
+    r'(?P<grid>(?:(?:Excellent|Very good|Good|Fair|Weak|Poor)\s*=\s*\d+(?:\s*-\s*\d+)?\s*mks\s*)+)$')
+
+
+# A STANCE AND ITS REASONS, priced together (2010-2011 Ordinary Q3(a)):
+#     "Reasonable advice? Yes or No = 2M" / "Two reasons for Yes or No = 4M +
+#     4M" / the reasons the scheme gives, a lower price among them ("Above
+#     quote only = 2M") / "Mark quality of explanation on its merits. Max =
+#     10M"
+# and "Objective or biased = 2M Reasons given for selecting phrase = 4M + 4M"
+# on one line, the reasons under "Examples:". The stance is a row at its
+# price; the reasons are one row priced at their sum and stepped at each
+# printed term, the scheme's reasons kept, as printed, as its note.
+SR_PRICE = re.compile(r'(?P<label>[A-Z][^=]{0,60}?)\s*=\s*(?P<terms>\d{1,2}M(?:\s*\+\s*\d{1,2}M)*)')
+
+
+def _stepped_reasons(text):
+    """(total, [(statement, marks, note)], {row index: steps}) or None."""
+    lines = [' '.join(t.split()) for t in text if t.strip()]
+    if len(lines) < 3:
+        return None
+    closing = re.search(r'(?:^|\s)Max\s*=\s*(\d+)M\s*$', lines[-1])
+    if not closing:
+        return None
+    total = int(closing.group(1))
+    head, i = [], 0
+    while i < len(lines) and len(head) < 2:
+        found = list(SR_PRICE.finditer(lines[i]))
+        if not found or ''.join(m.group(0) for m in found).replace(' ', '') != lines[i].replace(' ', ''):
+            break
+        head += [(m.group('label').strip(), [int(x) for x in re.findall(r'(\d+)M', m.group('terms'))])
+                 for m in found]
+        i += 1
+    if (len(head) != 2 or len(head[0][1]) != 1 or len(head[1][1]) < 2
+            or head[0][1][0] + sum(head[1][1]) != total):
+        return None
+    body = lines[i:-1] + ([lines[-1][:closing.start()].strip()] if lines[-1][:closing.start()].strip() else [])
+    if not body:
+        return None
+    instructions = [b for b in body if PS_INSTRUCTION.fullmatch(b)]
+    reasons = [b for b in body if not PS_INSTRUCTION.fullmatch(b)]
+    if not reasons:
+        return None
+    # A lower price for part of a reason stays on a line of its own.
+    note_parts, run = [], []
+    for line in reasons:
+        if re.match(r'^[A-Z].*\bonly\s*=\s*\d+M$', line):
+            if run:
+                note_parts.append(' '.join(run))
+                run = []
+            note_parts.append(line)
+        else:
+            run.append(line)
+    if run:
+        note_parts.append(' '.join(run))
+    note = ' — '.join(note_parts + instructions + [' '.join(closing.group(0).split())])
+    terms = head[1][1]
+    steps = [sum(terms[:k]) for k in range(len(terms) + 1)]
+    return total, [(head[0][0], head[0][1][0], None), (head[1][0], sum(terms), note)], {1: steps}
 
 
 def _priced_statements(text):
-    """(total, [(statement, marks, note or None), ...]) or None."""
-    joined = ' '.join(' '.join(text).split())
+    """(total, [(statement, marks, note or None), ...], {row index: mark steps}) or None."""
+    # A document's point opens a printed line of its own: "Document B describes
+    # him as a little old man ..." (2012). The mark (a NUL, never printed) lets
+    # the split find it where no full stop precedes it.
+    joined = ' '.join(' '.join(('\x00' + t) if DOC_LINE_START.match(t) else t for t in text).split())
     closing = PS_CLOSING.search(joined)
     if not closing or '= ' not in joined[:closing.start()]:
         return None
@@ -216,7 +301,7 @@ def _priced_statements(text):
     pieces = re.split(r'\s*=\s*(\d{1,2})M\b', joined[:closing.start()])
     rows = []
     for i in range(0, len(pieces) - 1, 2):
-        segment, marks = pieces[i], int(pieces[i + 1])
+        segment, marks = pieces[i].replace('\x00', ''), int(pieces[i + 1])
         # An instruction that opens a segment belongs to the statement before.
         while True:
             m = PS_INSTRUCTION.match(segment.strip())
@@ -235,8 +320,31 @@ def _priced_statements(text):
     if not rows:
         return None
     priced = sum(r[1] for r in rows)
+    steps = {}
+    scale_note = None
+    scale = PS_SCALE.search(rest)
+    if scale:
+        # The explanation the statement needs, marked on its own printed scale:
+        # "Document A is a primary source = 5M" / the explanation / "Mark
+        # quality of explanation on its merits." / "Explanation be marked on a
+        # sliding scale out of 5: Excellent = 5 mks ... Weak = 0-1 mks" / "Max =
+        # 10M" (2012 Ordinary Q3(a)). The scale's own bands are the steps.
+        answer = rest[:scale.start()].replace('\x00', ' ').strip()
+        out_of = int(scale.group('n'))
+        bands = [(int(a), int(b or a)) for a, b in
+                 re.findall(r'=\s*(\d+)(?:\s*-\s*(\d+))?\s*mks', scale.group('grid'))]
+        marks_on_scale = sorted({m for a, b in bands for m in range(a, b + 1)})
+        if (not answer or not re.match(r'[A-Z]', answer) or priced + out_of != total
+                or marks_on_scale != list(range(0, out_of + 1))):
+            return None
+        rows.append([' '.join(answer.split()), out_of, []])
+        steps[len(rows) - 1] = marks_on_scale
+        scale_note = ' '.join(scale.group(0).split())
+        rest = ''
+        priced += out_of
     if rest:
-        points = [p.strip() for p in PS_DOCUMENT_POINT.split(rest) if p.strip()]
+        points = [p.replace('\x00', '').strip() for p in PS_DOCUMENT_POINT.split(rest.replace('\x00', ' \x00'))
+                  if p.replace('\x00', '').strip()]
         if (not split or len(points) != len(split) or priced + sum(split) != total
                 or not all(p.startswith('Document ') for p in points)):
             return None
@@ -249,9 +357,11 @@ def _priced_statements(text):
         # hist_all cards as such.
         return None
     rows[-1][2].extend(rest_notes)
-    rows[-1][2].append(' '.join(closing.group(0).split()))
+    if scale_note:
+        rows[-1][2].append(scale_note)
+    rows[-1][2].append(' '.join(closing.group(0).replace('\x00', '').split()))
     return total, [(statement, marks, ' — '.join(notes) or None)
-                   for statement, marks, notes in rows]
+                   for statement, marks, notes in rows], steps
 
 
 # An Ordinary Level Part A answer.
@@ -287,6 +397,13 @@ BULLET = re.compile(r'^[•●▪·]\s*(.*)$')
 TRAILING_M = re.compile(r'\s*(\d{1,3})M\s*(?:max)?\s*$', re.I)
 WHOLE_SCALE = re.compile(r'\b(?:Answer to be marked|answer as a whole and mark) on a sliding scale out of (\d{1,2})\b', re.I)
 PARTIAL_RULE = re.compile(r'^Answers? referring\b.*\bonly\b', re.I)
+IF_ONLY = re.compile(r'\bIf only (?:one|ONE)\b')
+# Each element's own ceiling: "One strength well developed = max 5M" (2010 Higher Q3(b)).
+ELEMENT_MAX = re.compile(r'^One (?:strength|weakness) well developed = max \d+M$')
+COMMENTS_MUST = re.compile(r'^Comments must relate to Documents? [AB](?: and [AB])?\s*\.?\s*(?=[A-Z])')
+ONLY_PARTIAL = re.compile(r'^[A-Z].*\((?P<n>\d{1,2})M only\)$')
+COUNT_RULE = re.compile(r'^[A-Z][\w ]*: (?:two|TWO) = \d{1,2}M; (?:one|ONE) = (?P<n>\d{1,2})M\b')
+ZERO_ONLY = re.compile(r'^[A-Z].*\bonly\s*=\s*0M$')
 # The ask's CEILING, wherever the SEC writes it: "Max = 10M", "max 10M",
 # "Max. 5m". It is the authority on what a part is worth, because the flat
 # figures beside it are the split ("5M + 5M") or a partial-credit rule ("If
@@ -308,9 +425,13 @@ SCHEME_FURNITURE = re.compile(
 # The cue that introduces the examiner's own list. Everything after it is
 # content; the sentence before it is the scheme's own summary answer.
 CUE = re.compile(
-    r'^(?:Answers?|Points?|Reasons?|Supporting points?|The answer|'
+    r'^(?:(?:Answers?|Points?|Reasons?|Supporting points?|The answer|'
     r'Relevant points?|Possible points?|Such points?)\b[^.]*'
-    r'(?:include|contain)\b.*:?\s*$', re.I)
+    r'(?:include|contain)\b.*:?\s*$'
+    # Each element's ceiling printed over the answers it heads, "One strength
+    # well developed = max 5M" (2010 Higher Q3(b)): a note, and the answers
+    # under it stay answers.
+    r'|One (?:strength|weakness) well developed = max \d+M$)', re.I)
 
 # The marking APPARATUS: the band grid, the tariff arithmetic and the
 # instructions to the examiner. None of it is an answer, and all of it survives
@@ -335,6 +456,14 @@ GRID_LINE = re.compile(
     r'|Weak\s*[:=]|Poor\s*[:=]'
     r'|Reference to (?:both|only|ALL|BOTH)'
     r'|Answer referring to'
+    # 2010-2012 Higher: the per-reason scales and the caps for half an answer,
+    # "Comment on each document. Mark each 0-5 according to quality", "Each
+    # group (Apprentice Boys and Bogsiders) to be marked as follows:-", "Answer
+    # offering one reason only = 8M max", "One strength well developed = max 5M".
+    r'|Comment on [^.]{0,80}\.\s*Mark each\b|Mark each(?: document| reason)? 0-5\b'
+    r'|Each (?:reason|group|point)\b.{0,60}\bto be marked\b'
+    r'|One strength and one weakness to be marked'
+    r'|Answer offering\b'
     r'|Look for (?:two|three|ONE|TWO)\b'
     r'|One reason, well explained'
     r'|Max\.?\s*=|Max\.?\s*CM|Max\.?\s*OE'
@@ -389,7 +518,13 @@ INSTRUCTION_POINT = re.compile(
     r'|Accept\b[^.]{0,60}\bmark\b'
     r'|Examiners?\b|Reference to (?:both|only|ALL|BOTH)'
     r'|Look for\b|Answers? (?:could|may|might) include'
-    r'|Points? could include|The answer could contain)', re.I)
+    r'|Points? could include|The answer could contain'
+    # 2011 Higher: "Comments must relate to both the Apprentice Boys and the
+    # Bogsiders.", "Accept religion as relating to identity, culture, ...".
+    r'|Comments must relate to\b|Accept (?:religion|any linkage)\b'
+    # A half-answer cap printed under the answer: "NB: Reasons If only one
+    # reason = max 5M" (2012 Higher Q3).
+    r'|NB:\s*\w+\s+If only (?:one|ONE)\b)', re.I)
 
 # A sentence that tells the candidate or the examiner what the answer must
 # do, set inside the scheme's model answer: "Candidates should refer to the doc
@@ -417,7 +552,9 @@ INSTRUCTION_RUN_ON = re.compile(
 # one of its own — "...be kept within the city walls, etc. Doc B" in the 2023
 # Early Modern scheme. Left in place it closes a marking row with the heading
 # of the NEXT one.
-TRAILING_DOC_LABEL = re.compile(r'\s+(Doc\.?(?:ument)?\s*[AB])\s*[:.]?\s*$')
+# Never the object of the sentence it ends: "Compare role of poet as set out in
+# Document A with role of poet as set out in Document B" (2011 Ordinary).
+TRAILING_DOC_LABEL = re.compile(r'(?<!\bin)(?<!\bof)(?<!\bfrom)(?<!\bwith)(?<!\band)\s+(Doc\.?(?:ument)?\s*[AB])\s*[:.]?\s*$')
 
 # A document heading the scheme sets over its own bullets ("Document A:" on a
 # line of its own). It says which document the points under it come from, so it
@@ -589,21 +726,33 @@ CS_START = re.compile(
     r'|To apply the principle|Here, in question 4|Note\b|[ABC]\.\s|Cumulative Mark\b'
     # 2013 Early Modern letters the three parts without a stop: "B This answer ..."
     r'|[ABC] (?=This answer|A stimulus|A short|A longer|Typically)'
+    # 2010-2011 Early Modern carry the Later Modern half's lettering on: the
+    # three parts are printed "D.", "E." and "F." under "The marking of parts
+    # A, B and C will proceed as follows:".
+    r'|[DEF]\.\s(?=This answer|A stimulus|A short|A longer|Typically)'
     r'|Overall Evaluation\b|This is the total mark|In awarding\b|The marking of parts'
     r'|Each Topic is divided|LC 20\d\d:|(?:Excellent|Very good|Good|Fair|Poor|Weak|Very weak):\s*\d'
     r'|\(maximum:|IRELAND and|Section [23]\b|\(\d{3} marks\)'
     # 2013's Q4 ceilings, one to a line: "NB: Why did Katanga break away? ONLY =
-    # Max 10M" / "How did outsiders become involved in the crisis? ONLY = Max 10M"
-    r'|NB:|[A-Z][^=]*\? ONLY = Max)')
+    # Max 10M" / "How did outsiders become involved in the crisis? ONLY = Max 10M",
+    # and 2012's, without the ONLY: "NB: What are the reasons why Britain
+    # partitioned India in 1947? = Max 20M" / "What are the reasons why Britain
+    # left India in 1947? = Max 10M"
+    r'|NB:|[A-Z][^=]*\? (?:ONLY )?= Max)')
+# A part's letter as a scheme that runs its lettering on from the other field prints it.
+CONTINUED_PART = {'A': 'D', 'B': 'E', 'C': 'F'}
+# The leads of the two lists the Core Statement apparatus prints.
+CS_LIST_LEAD = re.compile(r'^(?:A Core Statement may be defined as one of the following:'
+                          r'|To apply the principle of marking by Core Statement, examiners will proceed as follows:)$')
 # One of those ceilings: the element the answer treats alone, and its maximum.
-CS_Q4_ONLY = re.compile(r'^(?:NB:\s*)?(?P<when>[A-Z][^=]*\? ONLY) = Max (?P<max>\d+)M$')
+CS_Q4_ONLY = re.compile(r'^(?:NB:\s*)?(?P<when>[A-Z][^=]*\?(?: ONLY)?) = Max (?P<max>\d+)M$')
 PM_BAND = re.compile(
     r'^(Excellent|Very good|Good|Fair|Poor|Weak|Very weak):\s*(\d+)-(\d+)\s*(marks?)\b\s*(.*)$')
 PM_CEILING = re.compile(
     r'^Cumulative Mark = Max\.? (\d+) marks Overall Evaluation = Max\.? (\d+) marks$')
 PM_START = re.compile(
     r'^(?:(?:Excellent|Very good|Good|Fair|Poor|Weak|Very weak):\s*\d'
-    r'|\((?:i|ii|iii|iv|v|vi|vii)\)\s|\(Summation\b|•'
+    r'|' + r'\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x|xi|xii|xiii|xiv)\)\s' + r'|\(Summation\b|•'
     r'|Cumulative Mark\b|Overall Evaluation\b|Maximum (?:CM|OE)\b'
     r'|Marking the Answer|In awarding\b|Having divided\b|The examiner will\b'
     r'|A paragraph or paragraph equivalent|These marks are awarded'
@@ -699,6 +848,8 @@ class Ask:
         self.note = None        # an essay's printed NOTE, verbatim
         self.note_max = None    # the first CM ceiling that NOTE prints
         self.note_caps = []     # every ceiling it prints: [("If only ONE", 50)]
+        self.steps = {}         # split asks: {row index: the printed mark steps}
+        self.partial_lines = [] # lower prices printed on lines of their own, as printed
         self.cm_max = self.oe_max = None   # an essay's printed maxima
         self.page = None        # the scheme page the ask is priced on
 
@@ -934,6 +1085,7 @@ class HistScheme:
         """
         ceiling = None
         flat = None
+        partial = None
         out = []
         for line in lines:
             # A partial-credit rule printed after the part's own marks, "10M" /
@@ -941,6 +1093,14 @@ class HistScheme:
             # (2013 Higher), is not its ceiling. ("Answer referring to one
             # document only = 5M max 10M" carries the ceiling too, and is.)
             if PARTIAL_RULE.match(line) and len(re.findall(r'\d+\s*M\b', line)) == 1:
+                continue
+            if ((IF_ONLY.search(line) or ELEMENT_MAX.match(line)) and MAX_M.search(line)
+                    and len(re.findall(r'\d+\s*M\b', line)) == 1):
+                # "NB: Reasons If only one reason = max 5M" over the part's own
+                # "10M" (2012 Higher Q3): the cap for a half answer, neither the
+                # part's ceiling nor its marks. Kept whole, as printed.
+                partial = int(MAX_M.search(line).group(1))
+                out.append(line.strip())
                 continue
             for m in MAX_M.finditer(line):
                 value = int(m.group(1))
@@ -971,6 +1131,8 @@ class HistScheme:
                 m = WHOLE_SCALE.search(line)
                 if m:
                     ceiling = int(m.group(1))
+        if ceiling is None and flat is None:
+            ceiling = partial
         return (ceiling if ceiling is not None else flat), out
 
     def _finish(self, ask, buf):
@@ -985,12 +1147,13 @@ class HistScheme:
         if not text:
             self.refused.append((ask.key, 'the scheme states nothing here'))
             return
-        priced = (_priced_statements(text)
+        priced = ((_stepped_reasons(text) or _priced_statements(text))
                   if ask.key[0] == '1' and ask.key[2] and self.level == 'ol' else None)
         if priced:
             ask.kind = 'split'
             ask.total = priced[0]
             ask.components = [(statement, marks, None) for statement, marks, _n in priced[1]]
+            ask.steps = priced[2]
             ask.notation = ' '.join(PS_CLOSING.search(' '.join(' '.join(text).split())).group(0).split())
             ask.evidence = ' '.join(' '.join(text).split())[:400]
             ask.points = [(None, statement, note) for statement, _m, note in priced[1]]
@@ -1006,7 +1169,9 @@ class HistScheme:
                        or SPLIT_BARE_TOTAL.search(' '.join(text[-1].split())))
             ask.notation = ' '.join(closing.group(0).split())
             ask.evidence = ' '.join(' '.join(text).split())[:400]
-            ask.points = [(None, answer or name, f'{name} = {marks}M' if answer else None)
+            ask.points = [(None, answer or name,
+                           (name if LEAD_PRICED.match(f' {name}: x') else f'{name} = {marks}M')
+                           if answer else None)
                           for name, marks, answer in ask.components]
             ask.cue = ' '.join(' '.join(p for _l, p, _n in ask.points).split())
             self._add(ask)
@@ -1015,13 +1180,28 @@ class HistScheme:
         # stripped: "One opinion = 5M" is the scheme dividing a total, and once
         # the 5M has been removed "One opinion =" no longer looks like it.
         grid = [bool(GRID_LINE.match(line)) for line in text]
+        # A lower price printed on a line of its own under the answer: "The
+        # Nazi-Soviet Non-aggression Pact (6)" / "Marriage/agreement between
+        # Hitler and Stalin (3M only)" / "Marriage/wedding only = 0M" (2012
+        # Ordinary A1), and "Famine, Civil War, Political instability 5M" /
+        # "Threats: two = 5M; one = 3M; "wolf and tiger" alone = 0" (2012
+        # Higher Q1(d)). Each is the scheme's step, kept as printed.
+        own_partials = []
+        for i, line in enumerate(text):
+            flat_line = ' '.join(line.split())
+            m = (ONLY_PARTIAL.match(flat_line) or COUNT_RULE.match(flat_line)) if i else None
+            if m or (i and ZERO_ONLY.match(flat_line)):
+                grid[i] = True
+                ask.partial_lines.append(flat_line)
+                if m:
+                    own_partials.append((flat_line, int(m.group('n'))))
         # An alternative answer the scheme prices below the part's own marks,
         # on a line of its own: 2017 Ordinary Q1(e) "Swastika 8M" over
         # "Germanic cross = 4M". Kept, price and all, for the card's row.
         ask.partials = [(m.group(1).strip(), int(m.group(2)))
                         for line, is_grid in zip(text, grid) if is_grid
                         for m in [COMPONENT.match(' '.join(line.split()))]
-                        if m and not m.group(1).lower().startswith('max')]
+                        if m and not m.group(1).lower().startswith('max')] + own_partials
         parent = (self.dbq_totals.get(ask.key[1]) if ask.key[0] == '1'
                   else None)
         ask.total, cleaned = self._tariff(
@@ -1102,7 +1282,20 @@ class HistScheme:
                 doc_label = ' '.join(m.group(1).replace('.', '. ').split())
                 point = point[:m.start()].strip()
                 ask.notes.append(f'the next points are from {doc_label}')
+            m = COMMENTS_MUST.match(point)
+            if m and point[m.end():].strip():
+                # "Comments must relate to Documents A and B" run on into the
+                # answer it heads, no stop between (2011 Higher Q3(a)): the
+                # instruction is a note, the answer stays the row.
+                ask.notes.append(m.group(0).strip())
+                point = point[m.end():].strip()
             if INSTRUCTION_POINT.match(point):
+                if IF_ONLY.search(point) and repaired:
+                    # A half-answer cap ("NB: Reasons If only one reason = max
+                    # 5M") is the student's to apply: it stays on the card, as
+                    # the last answer row's note.
+                    label0, point0, note0 = repaired[-1]
+                    repaired[-1] = (label0, point0, ' — '.join(x for x in (note0, point) if x))
                 ask.notes.append(point)
                 continue
             note = None
@@ -1223,6 +1416,11 @@ class HistScheme:
             if m:
                 out[m.group(1).lower()]['max'] = int(m.group(2))
                 continue
+            # The two ceilings on lines of their own (2011 Higher Early Modern).
+            m = re.match(r'^(Cumulative Mark|Overall Evaluation) = Max\.? (\d+) marks$', text)
+            if m:
+                out['cm' if m.group(1) == 'Cumulative Mark' else 'oe']['max'] = int(m.group(2))
+                continue
             if re.match(r'^Cumulative Mark \(CM\)(?: \(Maximum = \d+ marks\))?$', text):
                 state = 'cm'
                 continue
@@ -1238,7 +1436,10 @@ class HistScheme:
                     band['descriptor'] = m.group(5).strip()
                 out[state]['bands'].append(band)
                 continue
-            if re.match(r'^\((?:i|ii|iii|iv|v|vi|vii)\)\s', text):
+            # The seven kinds, numbered (i)-(vii); the 2012 Higher Early Modern
+            # scheme carries its Later Modern list's numbering on, (viii)-(xiv),
+            # and the kinds are kept as printed.
+            if re.match(r'^\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x|xi|xii|xiii|xiv)\)\s', text):
                 out['cm']['paragraphKinds'].append(text)
                 continue
             if re.match(r'^\(Summation which is mere repetition', text):
@@ -1328,15 +1529,28 @@ class HistScheme:
                       if re.match(r'^(?:Notes on individual topics|SECTION 2\s*:)', self.lines[i]))
 
         def logical(lo, hi):
-            out, pages = [], set()
+            # The 2012 Ordinary scheme draws its bullets as shapes, so the two
+            # bulleted lists (the Core Statement kinds and the procedure) reach
+            # the text layer unmarked. After a list's lead, when its first item
+            # carries no bullet, a line opening with a capital opens the next
+            # item; a wrapped item's continuation opens lower-case, as it is
+            # printed. Bulleted lists read exactly as before.
+            out, pages, unbulleted = [], set(), False
             for i in range(lo, hi):
                 line = self.lines[i]
                 if (not line or PAGE_MARK.match(line) or PAGE_FOOTER.match(line)
                         or SCHEME_FURNITURE.match(line)):
                     continue
                 pages.add(self.pages[i])
+                lead = bool(out) and CS_LIST_LEAD.match(' '.join(out[-1].split()))
+                if lead:
+                    unbulleted = not line.startswith('•')
                 if not out or CS_START.match(line):
                     out.append(line)
+                    if not lead:
+                        unbulleted = False
+                elif unbulleted and line[:1].isupper():
+                    out.append(f'• {line}')
                 else:
                     out[-1] = f'{out[-1]} {line}'
             return [' '.join(l.split()) for l in out], pages
@@ -1390,11 +1604,16 @@ class HistScheme:
             rule = None
             if q4_only:
                 caps = [CS_Q4_ONLY.match(t) for t in q4_only]
-                if all(0 < int(m.group('max')) < ceiling for m in caps):
+                # A line at the full ceiling restates the question asked
+                # ("... why Britain partitioned India in 1947? = Max 20M", 2012):
+                # it stays in the note and caps nothing. Every other line is a
+                # ceiling below the part's, one switch each.
+                lower = [m for m in caps if 0 < int(m.group('max')) < ceiling]
+                if lower and all(0 < int(m.group('max')) <= ceiling for m in caps):
                     # One printed line per element cap, kept as printed.
                     rule = {'note': '\n'.join(q4_only),
                             'caps': [{'when': ' '.join(m.group('when').split()), 'max': int(m.group('max'))}
-                                     for m in caps]}
+                                     for m in lower]}
             for text in q4_notes:
                 m = CS_Q4_CAP.match(text)
                 if m and rule is None and 0 < int(m.group('max')) < ceiling:
@@ -1412,7 +1631,7 @@ class HistScheme:
                'schemeGuidance': [], 'pages': sorted(s23_pages | q4_pages)}
         state = None
         for text in s23:
-            m = re.match(rf'^{unit}\.? This answer will be marked by the principle of Core Statement', text)
+            m = re.match(rf'^(?:{unit}|{CONTINUED_PART[unit]})\.? This answer will be marked by the principle of Core Statement', text)
             if m:
                 out['schemeGuidance'].append(text)
                 mm = re.search(r'maximum Cumulative Mark of (\d+) will be allowed for Core Statements and a maximum of (\d+) marks', text)

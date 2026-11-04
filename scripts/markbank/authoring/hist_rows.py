@@ -46,6 +46,7 @@ INLINE = re.compile(r'\s*\(\s*(\d+)\s*[Mm]\s*\)')
 # in the same answer, and only when the prices then add up to the tariff.
 INLINE_LOOSE = re.compile(r'\s*\(\s*(\d+)\s*[Mm]?\s*\)')
 BARE_M = re.compile(r'\s*\(\s*()[Mm]\s*\)')
+EACH_TAIL = re.compile(r'\s+(\d+)\s*M each$')
 MULTIPLIED = re.compile(r'\s*\((\d+)\s*M\s*x\s*(\d+)\)', re.I)
 PAIR = re.compile(r'\s*\(\s*(\d+)\s*[Mm]\s*\+\s*(\d+)\s*[Mm]\s*\)')
 DANGLING = re.compile(r'\s*(\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=)\s*$', re.I)
@@ -62,8 +63,14 @@ PARTIAL = re.compile(r'^(?P<head>.*\S)\s*\((?P<note>[^()]*?=\s*(?P<n>\d+)\s*[Mm]
 # Also "Efficient/ Hard-working/ Intelligent/ Shrewd TWO @ 3M each" and "Salt
 # fish, hides, cattle, hobby-horses Any THREE @ 2M each" (2014-2019 Ordinary).
 ANY_OF_NOTE = re.compile(r'^(?:\((any (one|two|three))(?: for)?\s*(\d+)m(?:\s*\+\s*(\d+)m)*\)'
-                         r'|((?:Any )?(?:ONE|TWO|THREE)) @ (\d+)M(?: each)?)$', re.I)
+                         r'|((?:Any )?(?:ONE|TWO|THREE|[1-3])) (?:@|for) (\d+)M(?: each)?)$', re.I)
 WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4}
+# The count printed as a figure after a dash: "Pleasant situation/ Gorgeous
+# buildings/ Population/ Obedience and loyalty - Any 2 for 3M each" (2011).
+DASH_ANY = re.compile(r'\s+-\s+(?P<note>Any [1-3] (?:for|@) \d+M(?: each)?)$')
+# The second of two priced answers printed as an answer the scheme does not
+# give: "Attackers (3M) Any ONE valid reason (3M) (6)" (2011 Ordinary).
+TAIL_PRICED = re.compile(r'^Any (?:ONE|TWO) valid [^()]*\(\d+\s*M\)$')
 NUMBER_WORDS = {n: w for w, n in WORDS.items()}
 
 
@@ -190,13 +197,18 @@ def split_priced(card):
                 rows[:] = [group]
         return card
 
+    dash = DASH_ANY.search(text) if not row.get('contextNote') else None
+    if dash:
+        text = row['verbatim'] = text[:dash.start()].rstrip()
+        row['contextNote'] = dash.group('note')
     any_of = ANY_OF_NOTE.match(row.get('contextNote') or '')
     if any_of:
         if any_of.group(1):
             lead, count, per = any_of.group(1), WORDS[any_of.group(2).lower()], int(any_of.group(3))
         else:
             lead = any_of.group(5)
-            count, per = WORDS[lead.split()[-1].lower()], int(any_of.group(6))
+            last = lead.split()[-1].lower()
+            count, per = (int(last) if last.isdigit() else WORDS[last]), int(any_of.group(6))
             if not lead.lower().startswith('any'):
                 lead = f'Any {lead}'
         options = [tidy(x) for x in text.split('/') if tidy(x)]
@@ -217,7 +229,11 @@ def split_priced(card):
             and sum(int(t.group(1)) for t in loose) == total):
         tokens = loose
     elif (not tokens and len(loose) >= 2 and all(0 < int(t.group(1)) < total for t in loose)
-            and sum(int(t.group(1)) for t in loose) == total):
+            and sum(int(t.group(1)) for t in loose) == total
+            # Never a printed numbering, "BBC (1) were very much in favour of
+            # the strike (2) did not monitor NI broadcasts (3) ... (4) ..."
+            # (2010 Ordinary): 1 + 2 + 3 + 4 is the part's 10 by chance.
+            and [int(t.group(1)) for t in loose] != list(range(1, len(loose) + 1))):
         # Every price printed without its M: "DMP prevented looting (3) and the
         # call-out of the military (3)" (2013 Ordinary, (6)). Read only when
         # the bracketed figures add up to the tariff exactly.
@@ -251,6 +267,17 @@ def split_priced(card):
             if row.get('contextNote'):
                 rows[0]['contextNote'] = row['contextNote']
             return card
+    each = EACH_TAIL.search(text)
+    if not tokens and each and int(each.group(1)) and total % int(each.group(1)) == 0:
+        # "Mathematics, Literature and Religion 2M each" (2010 Ordinary, (6)):
+        # each named item at its price, when the count is the items'.
+        items = [tidy(x) for x in re.split(r',\s*|\s+and\s+', text[:each.start()]) if tidy(x)]
+        if len(items) * int(each.group(1)) == total and len(items) > 1:
+            rows[:] = [{'id': f'r-{i}', 'kind': 'point', 'verbatim': item, 'marks': int(each.group(1))}
+                       for i, item in enumerate(items, start=1)]
+            if row.get('contextNote'):
+                rows[0]['contextNote'] = row['contextNote']
+            return card
     bare = list(BARE_M.finditer(text))
     if (tokens and len(bare) == 1 and bare[0].start() > tokens[-1].end()
             and 0 < total - sum(int(t.group(1)) for t in tokens)):
@@ -270,6 +297,16 @@ def split_priced(card):
                     'permittedMarks': [0, int(partial.group('n')), total]}]
         if row.get('contextNote'):
             _note(rows[0], row['contextNote'])
+        return card
+    note_price = INLINE.search(row.get('contextNote') or '')
+    if (len(tokens) == 1 and note_price and TAIL_PRICED.match(row.get('contextNote') or '')
+            and text[tokens[0].end():].strip() in ('', '.')
+            and int(tokens[0].group(1)) + int(note_price.group(1)) == total):
+        note = row['contextNote']
+        rows[:] = [{'id': 'r-1', 'kind': 'point', 'verbatim': tidy(text[:tokens[0].start()]),
+                    'marks': int(tokens[0].group(1))},
+                   {'id': 'r-2', 'kind': 'point', 'verbatim': tidy(note[:note_price.start()]),
+                    'marks': int(note_price.group(1))}]
         return card
     if len(tokens) < 2:
         return card
