@@ -456,33 +456,21 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     session.resetSession();
   };
 
-  // ── QUIZ: a quick check on what was studied, once the session is safely saved ──
-  if (session.phase === 'idle' && savedSummary && quizEnabled && !savedSummary.quizDone) {
-    const finishQuiz = () => setSavedSummary(current => current ? { ...current, quizDone: true } : current);
-    return (
-      <Suspense fallback={null}>
-        <StudySessionQuiz
-          uid={user.uid}
-          subject={savedSummary.subject}
-          topicSelection={savedSummary.topicSelection}
-          profileSubjects={studentProfile?.subjects}
-          examDate={studentProfile?.examStartDate}
-          character={user.avatar}
-          onDone={finishQuiz}
-          onSkip={finishQuiz}
-        />
-      </Suspense>
-    );
-  }
-
-  // ── SAVED: the points just earned, and where to spend them ──
+  // Keep the existing saved screen underneath the review. The receipt/debrief
+  // has already saved the session; closing practice simply returns here.
   if (session.phase === 'idle' && savedSummary) {
-    return <StudySessionSaved
-      subject={savedSummary.subject} seconds={savedSummary.seconds} points={savedSummary.points}
-      character={user.avatar}
-      onIsland={onGoToIsland}
-      onStudyAgain={() => setSavedSummary(null)}
-    />;
+    const finishQuiz = () => setSavedSummary(current => current ? { ...current, quizDone: true } : current);
+    return <>
+      <StudySessionSaved
+        subject={savedSummary.subject} seconds={savedSummary.seconds} points={savedSummary.points}
+        character={user.avatar} onIsland={onGoToIsland} onStudyAgain={() => setSavedSummary(null)}
+      />
+      {quizEnabled && !savedSummary.quizDone && <Suspense fallback={null}>
+        <StudySessionQuiz uid={user.uid} subject={savedSummary.subject} seconds={savedSummary.seconds}
+          topicSelection={savedSummary.topicSelection} profileSubjects={studentProfile?.subjects}
+          examDate={studentProfile?.examStartDate} onDone={finishQuiz} onSkip={finishQuiz} />
+      </Suspense>}
+    </>;
   }
 
   // ── SETUP PHASE ──

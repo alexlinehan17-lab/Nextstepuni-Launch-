@@ -18,6 +18,8 @@ interface CourseInfo {
 }
 import Avatar from "../Avatar";
 import JourneyWelcome from "./JourneyWelcome";
+import BuildDrawer from "./BuildDrawer";
+import KobraScope, { Button } from "../approved-ui-runtime";
 import { usePaperIsland } from "../../hooks/usePaperIsland";
 import {
   knownLandmarks,
@@ -66,6 +68,7 @@ import { cohortLabel, type YearIsland } from "./year/yearIslands";
 import "./paper/paper.css";
 import "./visitors/visitors.css";
 import "./year/year.css";
+import "./journey-workspace.css";
 
 interface JourneyViewProps {
   onBack: () => void;
@@ -341,7 +344,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
     });
   };
   return (
-    <div
+    <KobraScope
       className={`journey-paper island-views coast tone-pencilatlas ${building ? "is-building" : "is-viewing"}`}
     >
       <main className="student-app">
@@ -374,6 +377,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
         </header>
         <div className="coast-world">
           <div className="coast-map-area">
+            {building && <div className="journey-build-heading"><span className="eyebrow">YOUR ISLAND / BUILD MODE</span><strong>{editing ? 'Make room for something new.' : 'A little more of your world.'}</strong><span>{editing ? 'Swap the selected tile, or remove it.' : 'Choose a tile. Pick an open corner. Make it yours.'}</span></div>}
             {classmate ? (
               <ClassmateIsland
                 key={classmate.uid}
@@ -453,7 +457,6 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                 <button onClick={() => setPanel("fieldbook")}>
                   <BookOpen size={18} />
                   <span>Fieldbook</span>
-                  <small>{seen.length}</small>
                 </button>
                 {kept.length < discoveries.length && <button
                   className="sticker-finder"
@@ -463,7 +466,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                 >
                   <Compass size={18} /><span>Find a sticker</span>
                 </button>}
-                <button className="visitor-dock" aria-label="Wandering visitors" title="Wandering visitors" onClick={()=>{setFieldbookSection("visitors");setPanel("fieldbook");}}><img src={crewArt(visiting?.id??"luma")} alt="" width="35" height="35"/><span>Visitors</span>{waitingVisitors.length>0&&<small>{waitingVisitors.length}</small>}</button>
+                <button className="visitor-dock" aria-label="Wandering visitors" title="Wandering visitors" onClick={()=>{setFieldbookSection("visitors");setPanel("fieldbook");}}><img src={crewArt(visiting?.id??"luma")} alt="" width="35" height="35"/><span>Visitors</span></button>
                 <button
                   className="primary-action"
                   aria-label="Build your island"
@@ -473,13 +476,13 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                 </button>
               </div>
             )}
-            <button
+            <Button variant="outline"
               className="coast-done quiet-action"
               hidden={!building}
               onClick={() => changeMode(false)}
             >
-              Done <Check size={15} />
-            </button>
+              Done building <Check size={15} />
+            </Button>
             {!classmate && (notice || error) && (
               <div
                 key={error || notice?.id}
@@ -499,11 +502,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
               </div>
             )}
           </div>
-          <div
-            className="coast-build-tray"
-            inert={!building}
-            aria-hidden={!building}
-          >
+          <BuildDrawer open={building}>
             <TileShelf
               chosen={chosen}
               chosenWonder={chosenWonder}
@@ -527,6 +526,8 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                 note={editor.note}
                 busy={busy}
                 onReplace={() => void replaceTile()}
+                onUndo={() => void undo()}
+                canUndo={!!world.history.length}
                 onRemove={() => void removeTile()}
                 onClose={() => setEditing(null)}
               />
@@ -541,7 +542,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                 busy={busy}
               />
             )}
-          </div>
+          </BuildDrawer>
         </div>
       </main>
       {panel && (
@@ -761,6 +762,6 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
           )}
         </Overlay>
       )}
-    </div>
+    </KobraScope>
   );
 }

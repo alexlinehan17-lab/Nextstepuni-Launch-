@@ -1,0 +1,7 @@
+import type { EvidenceRole } from './supportState';
+/** Fictional learning case. Never imported into a student's evidence trail. */
+export const practiceEvidence: {id:string;title:string;origin:string;text:string;role:EvidenceRole;reason:string}[] = [
+  {id:'staff',title:'Three staff describe an easier swap',origin:'Fictional interview note · one café',text:'Three employees said shift swaps were easier after a scheduling app was introduced. They were not asked about stress or overall wellbeing.',role:'Supports',reason:'It supports a narrower point about swapping shifts. It does not establish overall wellbeing, and three people in one workplace are a limited sample.'},
+  {id:'messages',title:'An employee describes pressure to reply',origin:'Fictional interview note · same café',text:'One employee said out-of-hours notifications made them feel they should respond when they were not working.',role:'Challenges',reason:'This raises a possible cost that the blanket claim misses. It does not prove that everyone had the same experience.'},
+  {id:'supplier',title:'The supplier promises greater flexibility',origin:'Fictional product-page summary',text:'The company selling the app describes flexible scheduling as a product benefit. The page contains no employee study or research method.',role:'Context',reason:'This explains the supplier’s proposition. A promotional claim is not independent evidence of an effect on employee wellbeing.'},
+];

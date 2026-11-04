@@ -47,6 +47,16 @@ describe('dev student Launchpad profile handoff', () => {
     expect(within(card).getByRole('heading', { name: 'Planner & Study' })).toBeInTheDocument();
     expect(within(card as HTMLElement).queryByText('Needs Profile')).not.toBeInTheDocument();
   });
+  test('opens Coursework Studio from its own illustrated Launchpad card and task search', () => {
+    render(<InnovationZone onBack={vi.fn()} user={createDevStudentSession()} initialSubjectProfile={createDevStudentProfile(new Date('2026-08-09T12:00:00.000Z'))} settings={{language:'en',avatar:'',darkMode:false,cardStyle:'default',defaultWorkMinutes:25}} updateSetting={vi.fn()} />);
+    fireEvent.change(screen.getByRole('searchbox', {name:'Find a tool or task'}), {target:{value:'teacher feedback'}});
+    const card=screen.getByRole('button', {name:'Open Coursework Studio'});
+    expect(card.querySelector('image')).toHaveAttribute('href','/assets/tools/coursework-companion.png');
+    expect(card).toBeEnabled();
+    fireEvent.click(card);
+    expect(navigation.setActiveTool).toHaveBeenCalledWith('coursework-companion');
+    expect(screen.queryByRole('button',{name:'Open Irish Oral Trainer'})).not.toBeInTheDocument();
+  });
   test('filters the desktop catalogue by task as well as tool name', () => {
     render(<InnovationZone onBack={vi.fn()} user={createDevStudentSession()} initialSubjectProfile={createDevStudentProfile(new Date('2026-08-09T12:00:00.000Z'))} settings={{language:'en',avatar:'',darkMode:false,cardStyle:'default',defaultWorkMinutes:25}} updateSetting={vi.fn()} />);
     fireEvent.change(screen.getByRole('searchbox', {name:'Find a tool or task'}), {target:{value:'Paper Trail'}});
