@@ -48,6 +48,7 @@ import ordinary2021P2 from '../components/MarkBank/cards/irish/ordinary-2021-p2-
 import higher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
 import higher2021P2 from '../components/MarkBank/cards/irish/higher-2021-p2-authored.json';
 import higher2020P1 from '../components/MarkBank/cards/irish/higher-2020-p1-authored.json';
+import higher2020P2 from '../components/MarkBank/cards/irish/higher-2020-p2-authored.json';
 import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
@@ -178,6 +179,7 @@ const addedIrishRoutes = new Set([
   ...higher2021P2.cards.map(card => card.id),
   // 2020 onwards: papers with no legacy cards, carded new from their reviewed paper and scheme.
   ...higher2020P1.cards.map(card => card.id),
+  ...higher2020P2.cards.map(card => card.id),
 ]);
 
 // Paper-reviewed Ordinary additions are tracked the same way beside the frozen

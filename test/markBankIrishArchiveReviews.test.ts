@@ -15,6 +15,7 @@ import higher2022P1 from '../scripts/markbank/authored/irish-higher-2022-p1-comp
 import higher2021P1 from '../scripts/markbank/authored/irish-higher-2021-p1-component-review.json';
 import ordinary2021P1 from '../scripts/markbank/authored/irish-ordinary-2021-p1-component-review.json';
 import higher2020P1 from '../components/MarkBank/cards/irish/higher-2020-p1-authored.json';
+import higher2020P2 from '../components/MarkBank/cards/irish/higher-2020-p2-authored.json';
 import ordinary2022P1 from '../scripts/markbank/authored/irish-ordinary-2022-p1-component-review.json';
 import ordinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
 import higher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
@@ -115,6 +116,34 @@ describe('Irish archive review: Paper 2 (reading and literature)', () => {
       }
       const row = inventory.papers.find(p => p.key === `${review.year}|${review.level}|${paper.fileid}`)!;
       expect(row.markBankCardIds.slice().sort()).toEqual([...review.legacyCardIds, ...practiceIds(review)].sort());
+      expect(row).toMatchObject({ fullVisualReview: 'complete', bankAtlasTaskParity: 'complete', partAndSelectionReconciliation: 'complete' });
+    });
+  }
+});
+
+// New Paper 2 cards (2020 has no legacy cards): every card is the file's own, carded from the reviewed paper and scheme.
+const NEW_PAPER_TWO = [
+  { file: higher2020P2, fileid: 'LC001ALP200IV.pdf', cards: 78, readingWhole: 12 },
+];
+
+describe('Irish archive review: new Paper 2 cards', () => {
+  for (const paper of NEW_PAPER_TWO) {
+    const { review } = paper.file;
+    it(`${review.year} ${review.level} ${paper.fileid}: ${paper.cards} cards, every printed part its own criterion`, () => {
+      expect(paper.file.cards).toHaveLength(paper.cards);
+      expect(review.readingWholeCardIds).toHaveLength(paper.readingWhole);
+      for (const { id } of paper.file.cards) {
+        const c = card(id);
+        expect(tariffReconciles(c), id).toBe(true);
+        expect(irishMarks(c, irishFullScores(c)), id).toBe(c.totalMarks);
+        expect(shown(c), id).not.toMatch(OURS);
+        if (c.practiceFocus) expect(c.practiceFocus, id).toMatch(/^[A-Z][a-z]/);
+        for (const criterion of criteria(c).filter(x => x.kind === 'award' && x.guidanceKind !== 'quality')) {
+          expect(criterion.allocation, `${id} ${criterion.id}`).toBeDefined();
+        }
+      }
+      const row = inventory.papers.find(p => p.key === `${review.year}|${review.level}|${paper.fileid}`)!;
+      expect(row.markBankCardIds.slice().sort()).toEqual(paper.file.cards.map(c => c.id).sort());
       expect(row).toMatchObject({ fullVisualReview: 'complete', bankAtlasTaskParity: 'complete', partAndSelectionReconciliation: 'complete' });
     });
   }

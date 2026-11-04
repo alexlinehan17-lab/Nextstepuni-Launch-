@@ -93,6 +93,11 @@ const SUFFICES = /\((?:Is leor|aon|Ní mór)\s[^()]*(?:\([^()]*\)[^()]*)*\)/g;
 /** "… nó áitiúla = 1 mharc (gan ‘in 2024’ sa fhreagra)": the qualifier is the condition of the answer it
  *  follows. It stays on that row, as a second slice: "… nó áitiúla: (gan ‘in 2024’ sa fhreagra) · 1m". */
 const QUALIFIED_PRICE = /\s*(=\s*\d+\s*m?h?arc\b)\s*(\(gan\s[^()=]*\))/g;
+/** "… in áit faoi leith (2 mharc) in imeacht tréimhse áirithe ama (1 mharc) = 3 mharc" (2020 Higher A 1(a)): one answer
+ *  printing how its own price divides. Where the bracketed prices add up to the price after them they are part of the
+ *  answer's text, not tariffs: a word joiner (U+2060) holds each one together until the rows are cut, then goes. */
+const INLINE_SPLIT = /(?:[^•=()]*\(\d+\s*m?h?arc\)){2,}[^•=()]*(?==\s*(\d+)\s*m?h?arc\b)/g;
+const HELD = '\u2060';
 
 /** Whether a line is the card's printed question, read past the paper's hyphens and spacing. */
 const letters = (value: string) => value.toLowerCase().replace(/[^a-záéíóú]+/g, '');
@@ -111,6 +116,10 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   // A SymbolMT bullet the builders have not yet repaired (U+F0B7) and a repaired one (•) cut alike.
   let text = ownLines.join(' ').split(BULLET).join(' • ').replace(/•/g, ' • ');
   text = text.replace(QUALIFIED_PRICE, (_, price: string, qualifier: string) => `: ${qualifier} ${price}`);
+  text = text.replace(INLINE_SPLIT, (answer: string, total: string) => {
+    const split = [...answer.matchAll(/\((\d+)\s*m?h?arc\)/g)].reduce((sum, m) => sum + Number(m[1]), 0);
+    return split === Number(total) ? answer.replace(/\((\d+)\s*(m?h?arc)\)/g, `($1${HELD}$2)`) : answer;
+  });
   // A price printed inside the qualifier's brackets, "(gan aon cháiliú = 1 mharc)", reads as the qualified price above.
   text = text.replace(/\s*\((gan\s[^()=]*?)\s*(=\s*\d+\s*m?h?arc\b)\)/g, (_, qualifier: string, price: string) => `: (${qualifier}) ${price}`);
   // A split printed before the brace, "(Dhá bhealach: 2 mharc + 1 mharc) {3 mharc}", is the brace's own split.
@@ -266,7 +275,7 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     } else if (unpriced.length > 0) {
       return { ok: false, reason: 'unpriced answers beside priced ones' };
     }
-    const rows: IrishAnswerRow[] = part.rows.map((row, rowIndex) => ({ id: `r${rowIndex + 1}`, text: row.text, marks: row.marks ?? 0 }));
+    const rows: IrishAnswerRow[] = part.rows.map((row, rowIndex) => ({ id: `r${rowIndex + 1}`, text: row.text.split(HELD).join(' '), marks: row.marks ?? 0 }));
     const max = Math.max(0, ...rows.map(row => row.marks));
     if (part.ladder) {
       if (part.ladder[part.ladder.length - 1] !== part.tariff) return { ok: false, reason: 'ladder does not reach the tariff' };
