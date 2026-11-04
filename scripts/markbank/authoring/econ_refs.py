@@ -141,6 +141,10 @@ HAND_CHECKED = {
     'econ-2018-ol-sb-q7-a-i',         # 2018 OL p9: "(i) Explain the term open economy." (five words)
     'econ-2017-hl-sb-q5-b-i',         # 2017 HL p7: "(i) Describe two trade protectionist measures." (five words)
     'econ-2017-hl-sb-q7-b-i',         # 2017 HL p8: "(i) Explain the term privatisation." (four words)
+    'econ-2017-ol-sb-q4-c-i',         # 2017 OL p7: "(i) Explain the term price inflation." (five words)
+    'econ-2017-ol-sb-q5-a-i',         # 2017 OL p8: "(i) Explain the term multiplier." (four words)
+    'econ-2017-ol-sb-q5-c-i',         # 2017 OL p8: "(i) Explain the term economic growth." (five words)
+    'econ-2017-ol-sb-q7-b-i',         # 2017 OL p9: "(i) Explain the underlined term." (four words)
 }
 
 

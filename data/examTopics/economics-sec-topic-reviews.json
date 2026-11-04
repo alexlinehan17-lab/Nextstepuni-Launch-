@@ -2,7 +2,7 @@
   "subjectId": "economics",
   "authority": "SEC question paper; canonical curriculum node IDs",
   "reviewedAt": "2026-11-04",
-  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2019 Higher and Ordinary English and 2017, 2018 and 2020 Higher and 2018 Ordinary English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 42 physical variants pending.",
+  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2017, 2018 and 2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 41 physical variants pending.",
   "questions": [
     {
       "level": "higher",
@@ -6568,6 +6568,284 @@
       ],
       "reason": "Natural increase, migration and emigration are Employment & Unemployment (3-2); the consequences of a growing population are Economic Growth (3-5); social housing is Government Intervention (1-3) and Fiscal Policy & the Budget (3-1). Five tasks totalling 75. a(i) 2 at 5; a(ii) 5 net migration -28,558; a(iii) 3 at 5 (2 + 3) over the push and pull columns. b 4 points, 7 (4 + 3) + 6 + 6 + 6: one menu claimed at 7, 6, 6, 6. c 4 points at 5 (2 + 3), at least one social and one economic: one menu.",
       "paperSha256": "e4d858471117b411a69aa80a5e109ce1a745b94b64f83172245a62aa13732ac5"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "1",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1"
+      ],
+      "reason": "VAT, DIRT, PAYE and customs duty are taxes: Fiscal Policy & the Budget (3-1). 4 x 4 the four matches (A 5, B 4, C 1, D 2): one card, a row per tax.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "2",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-1-5"
+      ],
+      "reason": "Fixed costs are Costs of Production, Revenue & Profit (1-5). i 3 + 3 + 4 the quantity axis, the costs axis and the fixed-cost line at €3,000 (hidden solution graph); ii 6 the explanation and an example, printed as one 6: questionTotal, unpriced rows.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "3",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-3-1"
+      ],
+      "reason": "Cross-border shopping is International Trade & Competitiveness (4-2); its effect on the government’s finances (VAT, excise duty, social welfare) is Fiscal Policy & the Budget (3-1). 2 x 8 one effect on retailers from three and one on the government’s finances from four: two heading rows.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "4",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-4-2"
+      ],
+      "reason": "Visible and invisible exports and imports are International Trade & Competitiveness (4-2). 4 x 4 the four ticks, a row each.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "5",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-4-1",
+        "economics-3-3"
+      ],
+      "reason": "The IMF and the WTO are Globalisation (4-1); the ECB is Monetary Policy & Inflation (3-3). 5 + 6 + 5 the three names (IMF 5, ECB 6, WTO 5), a row each.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "6",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-0-1",
+        "economics-3-1",
+        "economics-3-5"
+      ],
+      "reason": "Opportunity cost is Scarcity & Choice (0-1); spending on third-level education is Fiscal Policy & the Budget (3-1), and its advantages (a better educated workforce, productivity, FDI) are also Economic Growth (3-5). 7 opportunity cost and 2 x 5 two advantages from five: one card, a row for the term and a two-claim row.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "7",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "reason": "A shift in the demand for new cars is The Consumer (1-1). i 7 the new demand curve D1 drawn and labelled (hidden solution diagram); ii 2 x 5 two reasons from five.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "8",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-1-3",
+        "economics-3-1",
+        "economics-0-2"
+      ],
+      "reason": "New taxes on disposable packaging are Government Intervention (1-3), as taxes also Fiscal Policy & the Budget (3-1), and as a measure against waste Sustainability (0-2). 10 + 7 one advantage from six and one disadvantage from four, priced on one ladder by order: the first correct response 10, the second 7.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "9",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "reason": "Long-run equilibrium in perfect competition is Market Structures (2-0). i 4 + 4 + 4 the three labels; ii 5 No, with the reason (AR = AC).",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "B1",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-3"
+      ],
+      "reason": "Monopoly and barriers to entry are Market Structures (2-0); state companies and their losses are Government Intervention (1-3). Five cards for six asks, totalling 75. a(i) 6 @ 4 the six labels; a(ii) 6 for P1 and C1 together (hidden solution diagram): questionTotal, unpriced rows. b(i) and (ii) share one 3 x 7, a barrier with its note, so one card covers both: three from six. c(i) 1 x 8 from four; c(ii) 2 x 8 from four.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "B2",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-0-1",
+        "economics-1-1",
+        "economics-1-0",
+        "economics-1-4"
+      ],
+      "reason": "Economic goods and their characteristics are Scarcity & Choice (0-1); normal, substitute and complementary goods are The Consumer (1-1); market demand, supply and equilibrium are The Market Economy (1-0); income elasticity of demand is Elasticity (1-4). Five cards for seven asks, totalling 75. a(i) 2 x 5 any two of three characteristics; a(ii) 2 x 5 any two of three terms. b(i)-(iii) share one graph priced D 10 (5 points at 2), S 10 (5 points at 2), the four labels P, Q, D/C and S/C 4 on one line, and P1 and Q1 2 x 3: the labels line spans (i) and (ii) and the scheme prints no Summary of Mark Allocations to split it, so one card covers the three (hidden solution graph). c(i) 6 x 2 the six symbols; c(ii) 5 the answer + 8 the reason.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "B3",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-0-1",
+        "economics-2-1",
+        "economics-3-2",
+        "economics-3-3"
+      ],
+      "reason": "The factors of production are Scarcity & Choice (0-1); public and private sector pay and wage differentials are The Labour Market (2-1); a wage increase’s inflation is also Monetary Policy & Inflation (3-3); emigrants returning are Employment & Unemployment (3-2). Six tasks totalling 75. a 4 x 5 the four factors. b(i) 2 x 7 (4 + 3) public and private sector with an example of each; b(ii) 1 x 8 (4 + 4) from five; b(iii) 1 x 8 (4 + 4) from six. c(i) 2 x 6 (3 + 3) from seven; c(ii) 7 (4 + 3) + 6 (3 + 3) by order, two measures from five.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "B4",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-3-4",
+        "economics-3-3"
+      ],
+      "reason": "Money, barter, interest rates and savings are Financial Sector (3-4); price inflation is Monetary Policy & Inflation (3-3). Seven tasks totalling 75. a(i) 2 x 5 money and barter; a(ii) 1 x 5 from three; a(iii) 2 x 5 from four. b(i) 2 x 6 interest rate and savings; b(ii) 2 x 7 (4 + 3) from seven. c(i) 8; c(ii) 2 x 8 (4 + 4) any two of three developments, each with its statement and explanation.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "B5",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        8
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-4-2",
+        "economics-3-5"
+      ],
+      "reason": "The multiplier and the circular flow of income are National Income (3-0); an open economy is International Trade & Competitiveness (4-2); economic growth is Economic Growth (3-5). Eight tasks totalling 75. a(i) 5; a(ii) 10 (2 + 3 + 3 + 2, printed beside the 1, the 0.15, the 0.25 and the 2.5); a(iii) 6 (2 + 2 + 2, beside the €10 million, the 2.5 and the €25 million). b(i) 5; b(ii) 3 x 5 the three lines; b(iii) 2 x 5 any two of three pairs. c(i) 8; c(ii) 2 x 8 (4 + 4) from six.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "B6",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        9
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-3-2"
+      ],
+      "reason": "The current budget, its income and spending, Budget 2017 measures and taxation rates are Fiscal Policy & the Budget (3-1); falling unemployment is Employment & Unemployment (3-2). Six tasks totalling 75. a(i) 5 (1 + 1 + 1 + 2, printed beside the two figures, the minus sign and the €2,697m); a(ii) 2 x 5 one example each side from seven; a(iii) 2 x 5 (3 + 2) the two effects. b 4 x 6, one argument for and one against any two of three measures: one card, a two-claim row a side. c(i) 2 x 8 (4 + 4) from four; c(ii) 2 x 5 (3 + 2): YES and NO each with its own list, so one route per side, counted once.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "B7",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        9
+      ],
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-3-1",
+        "economics-4-1"
+      ],
+      "reason": "The balance of trade and Brexit are International Trade & Competitiveness (4-2); corporation tax is Fiscal Policy & the Budget (3-1); where a multinational locates and the EU are Globalisation (4-1). Seven tasks totalling 75. a(i) 9; a(ii) 8 the balance and deficit, printed as one 8: questionTotal, unpriced rows; a(iii) 8 (1 + 1 + 1, 1 + 1 + 1 and 2, printed beside each figure and the surplus). b(i) 8; b(ii) 2 x 8 (4 + 4) from nine. c(i) 6; c(ii) 2 x 10 (4 + 6) any two of three areas.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2017,
+      "n": "B8",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        10
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-3-5",
+        "economics-1-3",
+        "economics-2-1",
+        "economics-3-1"
+      ],
+      "reason": "The CSO is National Income (3-0), as 2018 OL files it; the census and a growing population are Economic Growth (3-5), as are its effect on the labour market (The Labour Market, 2-1) and state services (Fiscal Policy & the Budget, 3-1); obesity measures and privatisation are Government Intervention (1-3); rural broadband’s advantages are Economic Growth (3-5). Six tasks totalling 75. a(i) 9; a(ii) 5; a(iii) 2 x 8 (4 + 4) any two of three areas. b 2 x 10 (5 + 5) from seven. c(i) 9; c(ii) 2 x 8 (4 + 4) from four.",
+      "paperSha256": "44276740a43074bba23f38431e47f6242311462f960ad786e33edb6f09f7ed41"
     }
   ]
 }

@@ -1775,3 +1775,64 @@ Checks:
 - reconcile: 1,205/2,197, with 2017 HL at 61/61.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2017 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 36 scheme pages were viewed:
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- scheme pp34-35 are blank and p36 the back cover; paper pp11-12 are blank.
+
+There are 63 routes for the 65 printed asks (12 in Section A, 53 in Section B).
+Two cards cover more than one ask, and one ask has two routes:
+- B1(b)(i)-(ii) is one card: the scheme prices a barrier with its note, 3 x 7.
+- B2(b)(i)-(iii) is one card: one graph priced D 10, S 10, the four labels
+  "P, Q, D/C and S/C = 4 marks" on one line, and P1 and Q1 2 x 3. The labels
+  line spans (i) and (ii), and with no summary to split it a per-part price
+  would be a guess.
+- B6(c)(ii) has YES and NO routes, each credited with its own list.
+
+19 crops: 8 hidden scheme solutions and 11 paper data crops. None is a whole
+question; each is the table, diagram or formula the ask needs.
+
+Decisions:
+- The scheme's text layer sets its spaces as no-break spaces (U+00A0) on 759
+  lines. `Old` now reads them as spaces before slicing. No other old-syllabus
+  scheme file holds one, so every other Economics card is byte-identical (the
+  1,306 cards authored before this paper are unchanged).
+- Raised marks beside the figures of a working are claimed as printed:
+  - B5(a)(ii): 1 (2), 0.15 (3), 0.25 (3), 2.5 (2).
+  - B5(a)(iii): €10 million (2), 2.5 (2), €25 million (2).
+  - B6(a)(i): income 1, then the minus sign's 1 and the expenditure's 1 on one
+    row (a minus sign is not claimable alone), then the surplus 2.
+  - B7(a)(iii): each printed line's three 1s on one row (new exports 3, new
+    balance 3), then the surplus 2.
+  The text layer sets each raised numeral flat against its figure, so a row
+  holds the figure alone and the hidden crop shows the working as printed.
+- Ladders at their printed steps: A Q8 10 + 7 (one advantage and one
+  disadvantage, priced by order) and B3(c)(ii) 7 + 6.
+- Totals over several answers are questionTotal: A Q2(ii) 6, B1(a)(ii) 6 and
+  B7(a)(ii) 8.
+- Category tables (B4(c)(ii), B7(c)(ii), B8(a)(iii)) name each option by its
+  development or area. Where the statement and explanation are adjacent cells
+  (B4(c)(ii), B8(a)(iii)) the option holds both; in B7(c)(ii) one statement
+  cell heads three explanations, so each option is one explanation.
+- B6(b): one argument for and one against any two of three Budget 2017
+  measures: two rows of two claims at 6, each option named by its measure.
+- A Q4's four statements follow the ask as typed text from the paper's table
+  rows, so a phone reader is not left to the table's small print alone.
+
+Refcheck: four short asks were read by hand, and B4(b)(i) folds its stem into
+the ask (B3(b)(i) opens with the same six words).
+
+Topic review: 13 reference anomalies, each recorded with the review's reason
+(5 are acronyms and formulas study-aid headings).
+
+Checks:
+- econ_review: 25/66.
+- build: 1,333 cards, 0 dropped.
+- Build rule: 264 claims on this paper, 0 untraceable (41 trace by halves).
+- reconcile: 1,270/2,197, with 2017 OL at 65/65.
+- refcheck: 0 wrong.
+- cardlint: clean.

@@ -5301,5 +5301,423 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-scheme-p05-q2-graph.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2017 OL Section A Q2(i)",
+    "description": "The marking scheme’s completed graph: € Costs on the vertical axis and Quantity (Units) 1 to 4 on the horizontal. A horizontal line at €3,000, labelled Fixed Costs, runs across from the costs axis.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2017/LC034GLP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        75,
+        415,
+        562,
+        580
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-scheme-p07-q7-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2017 OL Section A Q7(i)",
+    "description": "The marking scheme’s completed diagram: P on the vertical axis and Q on the horizontal. The demand curve D slopes down from left to right, and a second downward-sloping curve D1 lies to its right.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2017/LC034GLP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        395,
+        362,
+        548,
+        484
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-scheme-p09-q1a-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2017 OL Section B Q1(a)(ii)",
+    "description": "The marking scheme’s completed monopoly diagram: P/C against Q, a falling AR line, a steeper falling MR line, a U-shaped AC curve and an MC curve rising through G, where MC meets MR above Q1. From Q1 a line rises to AR, and arrows run left from AR to P1 and from AC to C1 on the vertical axis, C1 below P1.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2017/LC034GLP000EV.pdf",
+      "page": 9,
+      "rectPoints": [
+        30,
+        125,
+        505,
+        392
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-scheme-p13-q2b-graph.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2017 OL Section B Q2(b)",
+    "description": "The marking scheme’s completed graph: Price € 400 to 800 against Quantity (units) 400 to 1,200. Demand D falls through five points from (400, 800) to (1,200, 400); supply S rises through five points from (400, 400) to (1,200, 800). They cross at a price of 600, marked P1 on the price axis, and a quantity of 800, marked Q1 on the quantity axis.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2017/LC034GLP000EV.pdf",
+      "page": 13,
+      "rectPoints": [
+        55,
+        330,
+        580,
+        660
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-scheme-p21-q5aii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2017 OL Section B Q5(a)(ii)",
+    "description": "The marking scheme’s working: 1 over MPS + MPM; then 1 over 0.15 + 0.25, the 1 marked with a raised 2 and each of 0.15 and 0.25 with a raised 3; then 2.5, marked with a raised 2; 10 marks.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2017/LC034GLP000EV.pdf",
+      "page": 21,
+      "rectPoints": [
+        250,
+        262,
+        560,
+        370
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-scheme-p21-q5aiii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2017 OL Section B Q5(a)(iii)",
+    "description": "The marking scheme’s working: €10 million x 2.5 = €25 million, each of the three figures marked with a raised 2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2017/LC034GLP000EV.pdf",
+      "page": 21,
+      "rectPoints": [
+        215,
+        425,
+        470,
+        452
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-scheme-p24-q6ai-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2017 OL Section B Q6(a)(i)",
+    "description": "The marking scheme’s working: Current budget surplus: €53,245m minus €50,548m = €2,697m. The two figures and the minus sign each carry a raised 1, and the answer a raised 2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2017/LC034GLP000EV.pdf",
+      "page": 24,
+      "rectPoints": [
+        70,
+        183,
+        400,
+        228
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-scheme-p28-q7aiii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2017 OL Section B Q7(a)(iii)",
+    "description": "The marking scheme’s working: New visible exports: €22,000m + €2,000m = €24,000m; New Balance of Trade: €24,000m - €23,500m = €500m, each of the six figures marked with a raised 1; It is a surplus, marked with a raised 2.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2017/LC034GLP000EV.pdf",
+      "page": 28,
+      "rectPoints": [
+        75,
+        490,
+        420,
+        578
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-paper-p02-q1-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2017 OL Section A Q1",
+    "description": "A table: Tax A VAT, B DIRT, C PAYE, D Customs duty; Explanation 1 A tax on income, 2 A tax on goods imported into a country, 3 A tax on the profit made on disposal of an asset, 4 A tax on interest earned on deposits in financial institutions, 5 A tax on purchases of goods and services.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2017/LC034GLP000EV.pdf",
+      "page": 2,
+      "rectPoints": [
+        62,
+        118,
+        562,
+        232
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-paper-p02-q2-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2017 OL Section A Q2",
+    "description": "A table: Quantity (units of output) 1, 2, 3, 4; Fixed costs in € 3,000, 3,000, 3,000, 3,000.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2017/LC034GLP000EV.pdf",
+      "page": 2,
+      "rectPoints": [
+        62,
+        330,
+        562,
+        372
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-paper-p03-q4-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2017 OL Section A Q4",
+    "description": "A table to tick: four statements, each with a box under Visible exports, Invisible exports, Visible imports and Invisible imports. The statements: Expenditure of Irish soccer supporters having travelled to Austria; Irish firms selling cheese in Germany; Foreign tourists using Ryanair to travel to Ireland; Irish consumers buying cars in the UK and bringing them back to Ireland.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2017/LC034GLP000EV.pdf",
+      "page": 3,
+      "rectPoints": [
+        62,
+        288,
+        562,
+        466
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-paper-p04-q7-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2017 OL Section A Q7",
+    "description": "A diagram with P on the vertical axis and Q on the horizontal: one demand curve D sloping down from left to right.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2017/LC034GLP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        418,
+        70,
+        562,
+        190
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-paper-p04-q9-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2017 OL Section A Q9",
+    "description": "A diagram with P on the vertical axis and Q on the horizontal: line 1 rises steeply, line 2 is U-shaped and line 3 is horizontal at P1; lines 1 and 2 meet on line 3 above Q1. Beside it an answer box: Number 1, 2, 3 and a blank Full label column.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2017/LC034GLP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        55,
+        505,
+        565,
+        668
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-paper-p05-q1-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2017 OL Section B Q1(a)",
+    "description": "A diagram with P on the vertical axis and Q on the horizontal: a falling AR line, a steeper falling MR line, a U-shaped AC curve and an MC curve rising through point G, where MC meets MR above Q1. A vertical line runs from Q1 up to AR. The labels P, MC, AC, AR, MR and Q are underlined.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2017/LC034GLP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        36,
+        188,
+        510,
+        466
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-paper-p06-q2b-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2017 OL Section B Q2(b)",
+    "description": "A table: Price € 400, 500, 600, 700, 800; Quantity Demanded (units) 1,200, 1,000, 800, 600, 400; Quantity Supplied (units) 400, 600, 800, 1,000, 1,200.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2017/LC034GLP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        120,
+        236,
+        515,
+        352
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-paper-p06-q2c-formula.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2017 OL Section B Q2(c)",
+    "description": "The printed formula: ∆Q over ∆Y, times Y1 + Y2 over Q1 + Q2.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2017/LC034GLP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        262,
+        538,
+        360,
+        578
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-paper-p08-q5a-formula.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2017 OL Section B Q5(a)",
+    "description": "The printed formula: 1 over MPS + MPM.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2017/LC034GLP000EV.pdf",
+      "page": 8,
+      "rectPoints": [
+        228,
+        62,
+        312,
+        100
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-paper-p08-q5b-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2017 OL Section B Q5(b)",
+    "description": "A circular flow diagram: Households and Firms joined by arrows labelled Supply factors of production, Supply goods and services and Spending on goods and services; an arrow from Firms to Households numbered 1; from Households an arrow numbered 2 to Financial Institutions, and from there Investments to Firms; from Households Imports to Foreign Markets, and from Foreign Markets an arrow numbered 3 to Firms.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2017/LC034GLP000EV.pdf",
+      "page": 8,
+      "rectPoints": [
+        88,
+        246,
+        508,
+        560
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2017-OL-paper-p09-q7a-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2017 OL Section B Q7(a)",
+    "description": "A table: Visible Exports €m 22,000; Visible Imports €m 23,500.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2017/LC034GLP000EV.pdf",
+      "page": 9,
+      "rectPoints": [
+        88,
+        438,
+        490,
+        490
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]

@@ -161,12 +161,20 @@ describe('Economics exam-topic registry', () => {
       // topics); each is recorded with the review's reason. The 2017 Higher
       // review added three: Section A Q1 and Q9 under government intervention
       // (public pay and third-level fees are fiscal policy) and Section B Q8(c)
-      // under topical questions.
-      matchedAssociations: 776,
-      referenceAnomalyAssociations: 127,
+      // under topical questions. The 2017 Ordinary review added thirteen:
+      // Section A Q1 and Q5 and Section B Q8(a) under acronyms and Section B
+      // Q2(c) and Q5(a) under formulas (study-aid headings); Section A Q3 and
+      // Q6 and Section B Q3(b)-(c), Q5(b) and Q7(c) under government
+      // intervention (cross-border shopping, third-level spending, public pay
+      // and emigration, the circular flow and Brexit are filed under their own
+      // topics); Section A Q3 under growth and development; and Section A Q4
+      // and Section B Q6(a)-(b) under globalisation (visible trade is
+      // international trade, the current budget fiscal policy).
+      matchedAssociations: 763,
+      referenceAnomalyAssociations: 140,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 699,
+      matchedQuestionTopicLinks: 686,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

@@ -41,6 +41,12 @@ class Old(Sheet):
 
     def __init__(self, year, level, fileid):
         super().__init__(year, level, fileid)
+        # The 2017 OL scheme's text layer sets its spaces as no-break spaces
+        # (U+00A0) on 759 lines, so an anchor typed with a space never matches
+        # them. Read as spaces: the provenance gate ignores spacing, and no
+        # other old-syllabus scheme file holds one.
+        self.scheme_md = self.scheme_md.replace('\xa0', ' ')
+        self.full_md = self.full_md.replace('\xa0', ' ')
         body = self.full_md.split(BLOCKS_MARK, 1)
         self.block_md = body[1].split('<!-- markbank:', 1)[0] if len(body) > 1 else ''
         # One line, so an anchor matches across the rendering's line breaks.
