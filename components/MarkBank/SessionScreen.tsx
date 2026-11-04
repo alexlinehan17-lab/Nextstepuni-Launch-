@@ -96,6 +96,8 @@ import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning
 import { questionParts } from './questionParts';
 import { stemWithListBreaks } from './stemText';
 import { anyNHeading, marksWord, unclaimedName } from './sessionText';
+import RouteHeading from './RouteHeading';
+import { cardRoutes, routeDisplayOrder, routeHeadAt, routeSelection } from './routes';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -906,7 +908,8 @@ const MarkRowView: React.FC<{
           {blockedReason ?? 'This mark only counts if the point above was right.'}
         </span>
       )}
-      {canSynonym && !claimed && (
+      {/* Not on a locked row: claiming it would switch the card to the route it belongs to. */}
+      {canSynonym && !claimed && !blocked && (
         <button
           type="button"
           onClick={() => onClaim(id, 'synonym')}
@@ -2491,6 +2494,17 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     setPicks(prev => ({ ...prev, ...allPicks }));
   }, [assessmentCard, studyReview]);
 
+  /** "Select all" on one answer route: only one route scores (routes.ts). */
+  const claimRoute = useCallback((route: string) => {
+    if (!assessmentCard || !isPointCard(assessmentCard)) return;
+    studyReview?.onCue('tap');
+    setSchemeInteracted(true);
+    const chosen = routeSelection(assessmentCard.rows, route);
+    if (assessmentCard.questionBonus) chosen.claims[assessmentCard.questionBonus.id] = 'yes';
+    setClaims(prev => ({ ...prev, ...chosen.claims }));
+    setPicks(prev => ({ ...prev, ...chosen.picks }));
+  }, [assessmentCard, studyReview]);
+
   const advanceStudy = useCallback((result?: SessionCardResult) => {
     if (!card || !studyReview || advancedStudyCard.current === card.id) return;
     advancedStudyCard.current = card.id;
@@ -3076,7 +3090,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     }}>
                       The scheme
                     </span>
-                    {isPointCard(assessmentCard) && !wholeResponseAssessment && (
+                    {isPointCard(assessmentCard) && !wholeResponseAssessment && cardRoutes(assessmentCard.rows).length < 2 && (
                       <button
                         type="button" onClick={claimAll}
                         style={{
@@ -3105,9 +3119,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         </p>
                       </div>
 
-                      {assessmentCard.rows.map((row, i) => {
+                      {routeDisplayOrder(assessmentCard.rows).map(i => {
+                        const row = assessmentCard.rows[i];
                         const id = rowId(row, i);
                         const taskGroup = assessmentCard.taskGroups?.find(group => group.rowIds[0] === id);
+                        const routeHead = routeHeadAt(assessmentCard.rows, i);
                         return (
                           <React.Fragment key={id}>
                           {taskGroup && (
@@ -3115,6 +3131,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                               {taskGroup.label} · {taskGroup.marks} {marksWord(taskGroup.marks)}
                             </h3>
                           )}
+                          {routeHead && <RouteHeading head={routeHead} taken={routeTaken} onSelectAll={claimRoute} />}
                           <MarkRowView
                             row={row} id={id} index={i}
                             wholeResponse={wholeResponseAssessment}
