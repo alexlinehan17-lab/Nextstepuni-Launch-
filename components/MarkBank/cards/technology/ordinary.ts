@@ -41,6 +41,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Ear protection must be worn by the user.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secA-q1-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secA-q1-art.png",
+          "srcHash": "3150874ed58b27a43930ca3384602625",
+          "alt": "A round safety sign: a white outline of a head wearing ear defenders on a solid blue disc.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -55,6 +64,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A safety sign that is blue in colour indicates a mandatory instruction.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secA-q1-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secA-q1-art.png",
+          "srcHash": "3150874ed58b27a43930ca3384602625",
+          "alt": "A round safety sign: a white outline of a head wearing ear defenders on a solid blue disc.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -98,6 +116,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The material allows light to enhance the edge profile of the project.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secA-q3-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secA-q3-art.png",
+          "srcHash": "9413a2591cb32ed745dfe1e57b43caa5",
+          "alt": "Photograph of a lamp: a clear acrylic sheet engraved with a cartoon panda spinning a basketball, glowing purple above a black base.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -113,6 +140,15 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "1. Cross filing/draw filing", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "2. Polishing, etc.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secA-q3-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secA-q3-art.png",
+          "srcHash": "9413a2591cb32ed745dfe1e57b43caa5",
+          "alt": "Photograph of a lamp: a clear acrylic sheet engraved with a cartoon panda spinning a basketball, glowing purple above a black base.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -231,6 +267,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The image shows a push-car for a child, designed and manufactured by the Swiss designer Wolfgang Sirch. In the box provided, make a well proportioned 2D sketch of the push-car when viewed in the direction of arrow A.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secA-q7-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secA-q7-art.png",
+          "srcHash": "6192b7c87776ac822f91f2a6ab202e6a",
+          "alt": "Photograph of a child's push-car: an oval plywood seat over a lower oval deck, a wooden handlebar and four grey wheels with red hubs, with an arrow lettered A pointing at it from the lower right.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "technology-2019-OL-scheme-secA-q7",
           "src": "/exam-figures/technology/markbank/technology-2019-OL-scheme-secA-q7.png",
@@ -278,6 +323,15 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "1. High strength/stability", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "2. Flexibility, etc.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secA-q9-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secA-q9-art.png",
+          "srcHash": "f220fec10c40ca4f8684cbcfaf490462",
+          "alt": "Photograph of a piece of furniture bent from one continuous sheet of plywood: a flat top curving down into a side with a hand slot, with a rack for magazines underneath.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -293,6 +347,15 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "1. Chipboard", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "2. Veneered MDF, etc.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secA-q9-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secA-q9-art.png",
+          "srcHash": "f220fec10c40ca4f8684cbcfaf490462",
+          "alt": "Photograph of a piece of furniture bent from one continuous sheet of plywood: a flat top curving down into a side with a hand slot, with a rack for magazines underneath.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -407,6 +470,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Computer Aided Design– software used by engineers/architects for design purposes, etc.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secB-q2a-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secB-q2a-art.png",
+          "srcHash": "82a68af037c22bb54689bee753462b60",
+          "alt": "CAD rendering on a grid of a blue open rectangular case with fixing lugs, beside a flat blue piece with a rectangular cut-out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -421,6 +493,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Accuracy, efficiency, high quality of manufacture, etc.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secB-q2a-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secB-q2a-art.png",
+          "srcHash": "82a68af037c22bb54689bee753462b60",
+          "alt": "CAD rendering on a grid of a blue open rectangular case with fixing lugs, beside a flat blue piece with a rectangular cut-out.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -766,6 +847,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Complete the flowchart to operate the gate in the following sequence: • The system is powered on • When the cattle enter the holding area the motor activates, moving the gate forward • The motor stops after 10 seconds • The motor reverses direction for 10 seconds and then stops.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q1b-art.png",
+          "srcHash": "7f883a65a652671bf70321192049f744",
+          "alt": "Photograph of a cattle gate system: a steel overhead frame carrying a gate across a pen of cows in a holding yard.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "technology-2019-OL-scheme-secC-q1b-i",
           "src": "/exam-figures/technology/markbank/technology-2019-OL-scheme-secC-q1b-i.png",
@@ -789,6 +879,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any valid alternative solution accepted.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q1b-art.png",
+          "srcHash": "7f883a65a652671bf70321192049f744",
+          "alt": "Photograph of a cattle gate system: a steel overhead frame carrying a gate across a pen of cows in a holding yard.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "technology-2019-OL-scheme-secC-q1b-ii",
           "src": "/exam-figures/technology/markbank/technology-2019-OL-scheme-secC-q1b-ii.png",
@@ -812,6 +911,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Infrared, motion, pressure switch, etc.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q1b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q1b-art.png",
+          "srcHash": "7f883a65a652671bf70321192049f744",
+          "alt": "Photograph of a cattle gate system: a steel overhead frame carrying a gate across a pen of cows in a holding yard.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1187,6 +1295,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A Universal Serial Bus (USB) is a common interface that enables communication between PCs, peripheral devices, media devices, external hard drives, printers, etc.", marks: 8, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q3b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q3b-art.png",
+          "srcHash": "54cb878fea0630c90bd020d7acfbaa67",
+          "alt": "Photograph of the end of a black cable with a USB Type-C plug.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1204,6 +1321,15 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "charging - can carry more power, so they can be used to charge larger devices like laptops", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "symmetrical in design– as its reversable, it’s easier to plug in to a device.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q3b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q3b-art.png",
+          "srcHash": "54cb878fea0630c90bd020d7acfbaa67",
+          "alt": "Photograph of the end of a black cable with a USB Type-C plug.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1218,6 +1344,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Storage devices, notebooks, docking station, tablet computers, smartphones, etc.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q3b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q3b-art.png",
+          "srcHash": "54cb878fea0630c90bd020d7acfbaa67",
+          "alt": "Photograph of the end of a black cable with a USB Type-C plug.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1336,6 +1471,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Greater reliability in manufacturing is likely to be achieved when higher quality equipment is used, equipment to be used needs to be fit for purpose, etc.", marks: 8, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q4b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q4b-art.png",
+          "srcHash": "dfc8efcd23846342dbba80578622fde9",
+          "alt": "Diagram: grapes labelled Input, an arrow to a factory labelled Transformation Process, an arrow to a wine bottle labelled Output, and arrows running back labelled Customer Feedback across the top and Performance Feedback across the bottom.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1350,6 +1494,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Performance of manufacturing processes, identify customer needs, analysis on the quality of a product, etc.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q4b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q4b-art.png",
+          "srcHash": "dfc8efcd23846342dbba80578622fde9",
+          "alt": "Diagram: grapes labelled Input, an arrow to a factory labelled Transformation Process, an arrow to a wine bottle labelled Output, and arrows running back labelled Customer Feedback across the top and Performance Feedback across the bottom.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1364,6 +1517,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Use higher grade raw materials, improve packaging design, increasing the cost of a product can give a perception of a higher quality product, etc.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q4b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q4b-art.png",
+          "srcHash": "dfc8efcd23846342dbba80578622fde9",
+          "alt": "Diagram: grapes labelled Input, an arrow to a factory labelled Transformation Process, an arrow to a wine bottle labelled Output, and arrows running back labelled Customer Feedback across the top and Performance Feedback across the bottom.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1378,6 +1540,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Greater collaboration, clarity with roles/responsibilities for employees, effective communication, incentives for productivity, etc.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q4c-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q4c-art.png",
+          "srcHash": "26654b975976ac13e90cd76962960313",
+          "alt": "Photograph of workers in a vineyard tipping a crate of dark grapes into a large bin.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1392,6 +1563,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Increased profits, less conflict/complaints from employees, improvement in a company’s reputation, etc.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q4c-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q4c-art.png",
+          "srcHash": "26654b975976ac13e90cd76962960313",
+          "alt": "Photograph of workers in a vineyard tipping a crate of dark grapes into a large bin.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1547,6 +1727,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Upcycle the moulded plastic to create a new product, reuse the wheels, melt down the aluminium for reuse, recycle/reuse nuts and bolts/screws, incineration only when necessary, etc.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q5c-ii-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q5c-ii-art.png",
+          "srcHash": "ce6f9af264917f9b918acecaf0b13e07",
+          "alt": "Photograph of a small dog fitted with a two-wheeled support wheelchair strapped to its body, its hind legs resting on the frame.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1561,6 +1750,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A thin decorative layer of wood (or plastic) that is applied to a coarser product such as chipboard, MDF, etc.", marks: 6, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q5d-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q5d-art.png",
+          "srcHash": "6b320a02a1d4f16a76c38f9a847d59f4",
+          "alt": "Photograph of a stack of chipboard panels, each faced with a different wood-grain veneer, their cut edges showing the chipboard core.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1575,6 +1773,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Cheaper, less use of hardwoods, desired properties such as stability, strength, etc.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-OL-paper-secC-q5d-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-OL-paper-secC-q5d-art.png",
+          "srcHash": "6b320a02a1d4f16a76c38f9a847d59f4",
+          "alt": "Photograph of a stack of chipboard panels, each faced with a different wood-grain veneer, their cut edges showing the chipboard core.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",

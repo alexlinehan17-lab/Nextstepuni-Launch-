@@ -1019,6 +1019,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Draw the given circuit in your answerbook. Identify the pins on the IC and complete the circuit to include an LED output.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-HL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-HL-paper-secC-q2b-art.png",
+          "srcHash": "3a94a1c42b197c048c8125f525f5c318",
+          "alt": "Circuit diagram: resistors R1 and R2 and capacitor C in series between a 12 V rail and a 0 V rail, wired to a 555 IC whose output line ends unconnected.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "technology-2019-HL-scheme-secC-q2b-i",
           "src": "/exam-figures/technology/markbank/technology-2019-HL-scheme-secC-q2b-i.png",
@@ -1042,6 +1051,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Adjust the size of the resistors and/or the capacitor.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-HL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-HL-paper-secC-q2b-art.png",
+          "srcHash": "3a94a1c42b197c048c8125f525f5c318",
+          "alt": "Circuit diagram: resistors R1 and R2 and capacitor C in series between a 12 V rail and a 0 V rail, wired to a 555 IC whose output line ends unconnected.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1056,6 +1074,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "f = 1.44 / (R1 + 2R2) × C = 1.44 / (2000 + (2 × 39000)) × 0.00001 = 1.8 Hz", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-HL-paper-secC-q2b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-HL-paper-secC-q2b-art.png",
+          "srcHash": "3a94a1c42b197c048c8125f525f5c318",
+          "alt": "Circuit diagram: resistors R1 and R2 and capacitor C in series between a 12 V rail and a 0 V rail, wired to a 555 IC whose output line ends unconnected.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1332,11 +1359,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2019 Higher Level — © State Examinations Commission.",
     id: "tech-2019-hl-c4b-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2019 HL Section C Q4(b)(i)",
+    stem: "An Irish business can import and re-package the electronic toy shown at €40 per unit. The costs of manufacturing the same product in Ireland are shown below. The selling price of the toy is €50 per unit (both methods of production).",
     questionText: "Using a break-even graph, or otherwise, calculate the BEQ.",
     tariffModel: {"kind":"fixed","notation":"(16 marks, 8+4+4)"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "BEQ = Fixed Costs/ (Import cost– variable costs) = 30,000 / 40 - 20 = 1500", marks: 8, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-HL-paper-secC-q4b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-HL-paper-secC-q4b-art.png",
+          "srcHash": "7dd72d6bcba83d78ff1585656d832c34",
+          "alt": "Picture of the electronic toy, a small blue robot with LED eyes, beside a table: Cost of machinery €25,000; Cost of tooling €5,000; Variable Costs €20 per unit; Sales Forecast 20,000 units.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
     figure: {
           "candId": "technology-2019-HL-scheme-secC-q4b-i",
           "src": "/exam-figures/technology/markbank/technology-2019-HL-scheme-secC-q4b-i.png",
@@ -1354,11 +1391,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2019 Higher Level — © State Examinations Commission.",
     id: "tech-2019-hl-c4b-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2019 HL Section C Q4(b)(ii)",
+    stem: "An Irish business can import and re-package the electronic toy shown at €40 per unit. The costs of manufacturing the same product in Ireland are shown below. The selling price of the toy is €50 per unit (both methods of production).",
     questionText: "Determine whether it is more cost-effective for the electronic toy to be imported or manufactured in Ireland.",
     tariffModel: {"kind":"fixed","notation":"(16 marks, 8+4+4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "It is more cost effective for the electronic toy to be manufactured in Ireland.", marks: 4, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-HL-paper-secC-q4b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-HL-paper-secC-q4b-art.png",
+          "srcHash": "7dd72d6bcba83d78ff1585656d832c34",
+          "alt": "Picture of the electronic toy, a small blue robot with LED eyes, beside a table: Cost of machinery €25,000; Cost of tooling €5,000; Variable Costs €20 per unit; Sales Forecast 20,000 units.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1367,6 +1414,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2019 Higher Level — © State Examinations Commission.",
     id: "tech-2019-hl-c4b-iii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2019 HL Section C Q4(b)(iii)",
+    stem: "An Irish business can import and re-package the electronic toy shown at €40 per unit. The costs of manufacturing the same product in Ireland are shown below. The selling price of the toy is €50 per unit (both methods of production).",
     questionText: "Calculate the profit earned on 20,000 units by importing and re-packaging the toy and the profit earned on 20,000 units by manufacturing the toy in Ireland.",
     tariffModel: {"kind":"questionTotal","notation":"(16 marks, 8+4+4)"}, totalMarks: 4,
     rows: [
@@ -1376,6 +1424,15 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Import profit = €1,000,000 - €800,000 = €200,000", marks: null, openList: true },
     { id: "r-5", kind: "point", verbatim: "Manufactured profit = €1,000,000 - €430,000 = €570,000", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2019-HL-paper-secC-q4b-art",
+          "src": "/exam-figures/technology/markbank/technology-2019-HL-paper-secC-q4b-art.png",
+          "srcHash": "7dd72d6bcba83d78ff1585656d832c34",
+          "alt": "Picture of the electronic toy, a small blue robot with LED eyes, beside a table: Cost of machinery €25,000; Cost of tooling €5,000; Variable Costs €20 per unit; Sales Forecast 20,000 units.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2019 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",

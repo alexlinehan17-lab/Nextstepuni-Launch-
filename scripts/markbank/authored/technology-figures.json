@@ -4365,6 +4365,186 @@
   ]
  },
  {
+  "file": "technology-2019-OL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A round safety sign: a white outline of a head wearing ear defenders on a solid blue disc.",
+  "questionRef": "2019 OL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   394,
+   74,
+   523,
+   196
+  ]
+ },
+ {
+  "file": "technology-2019-OL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a lamp: a clear acrylic sheet engraved with a cartoon panda spinning a basketball, glowing purple above a black base.",
+  "questionRef": "2019 OL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   413,
+   571,
+   530,
+   757
+  ]
+ },
+ {
+  "file": "technology-2019-OL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a child's push-car: an oval plywood seat over a lower oval deck, a wooden handlebar and four grey wheels with red hubs, with an arrow lettered A pointing at it from the lower right.",
+  "questionRef": "2019 OL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   82,
+   128,
+   258,
+   260
+  ]
+ },
+ {
+  "file": "technology-2019-OL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a piece of furniture bent from one continuous sheet of plywood: a flat top curving down into a side with a hand slot, with a rack for magazines underneath.",
+  "questionRef": "2019 OL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   401,
+   581,
+   536,
+   689
+  ]
+ },
+ {
+  "file": "technology-2019-OL-paper-secB-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "CAD rendering on a grid of a blue open rectangular case with fixing lugs, beside a flat blue piece with a rectangular cut-out.",
+  "questionRef": "2019 OL Section B Q2(a)",
+  "booklet": "039",
+  "page": 1,
+  "rect": [
+   378,
+   82,
+   552,
+   170
+  ]
+ },
+ {
+  "file": "technology-2019-OL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a cattle gate system: a steel overhead frame carrying a gate across a pen of cows in a holding yard.",
+  "questionRef": "2019 OL Section C Q1(b)",
+  "booklet": "039",
+  "page": 3,
+  "rect": [
+   389,
+   249,
+   575,
+   349
+  ]
+ },
+ {
+  "file": "technology-2019-OL-paper-secC-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the end of a black cable with a USB Type-C plug.",
+  "questionRef": "2019 OL Section C Q3(b)",
+  "booklet": "039",
+  "page": 5,
+  "rect": [
+   90,
+   263,
+   214,
+   357
+  ]
+ },
+ {
+  "file": "technology-2019-OL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Diagram: grapes labelled Input, an arrow to a factory labelled Transformation Process, an arrow to a wine bottle labelled Output, and arrows running back labelled Customer Feedback across the top and Performance Feedback across the bottom.",
+  "questionRef": "2019 OL Section C Q4(b)",
+  "booklet": "039",
+  "page": 6,
+  "rect": [
+   360,
+   246,
+   576,
+   368
+  ]
+ },
+ {
+  "file": "technology-2019-OL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of workers in a vineyard tipping a crate of dark grapes into a large bin.",
+  "questionRef": "2019 OL Section C Q4(c)",
+  "booklet": "039",
+  "page": 6,
+  "rect": [
+   53,
+   494,
+   235,
+   600
+  ]
+ },
+ {
+  "file": "technology-2019-OL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a stack of chipboard panels, each faced with a different wood-grain veneer, their cut edges showing the chipboard core.",
+  "questionRef": "2019 OL Section C Q5(d)",
+  "booklet": "039",
+  "page": 7,
+  "rect": [
+   403,
+   653,
+   546,
+   775
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit diagram: resistors R1 and R2 and capacitor C in series between a 12 V rail and a 0 V rail, wired to a 555 IC whose output line ends unconnected.",
+  "questionRef": "2019 HL Section C Q2(b)",
+  "booklet": "039",
+  "page": 4,
+  "rect": [
+   357,
+   266,
+   558,
+   414
+  ]
+ },
+ {
+  "file": "technology-2019-HL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Picture of the electronic toy, a small blue robot with LED eyes, beside a table: Cost of machinery €25,000; Cost of tooling €5,000; Variable Costs €20 per unit; Sales Forecast 20,000 units.",
+  "questionRef": "2019 HL Section C Q4(b)",
+  "booklet": "039",
+  "page": 6,
+  "rect": [
+   106,
+   420,
+   535,
+   592
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -4542,6 +4722,21 @@
    493,
    533,
    649
+  ]
+ },
+ {
+  "file": "technology-2019-OL-paper-secC-q5c-ii-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a small dog fitted with a two-wheeled support wheelchair strapped to its body, its hind legs resting on the frame.",
+  "questionRef": "2019 OL Section C Q5(c)",
+  "booklet": "039",
+  "page": 7,
+  "rect": [
+   69,
+   114,
+   238,
+   229
   ]
  },
  {

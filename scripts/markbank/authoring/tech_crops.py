@@ -1584,6 +1584,42 @@ LABEL_KEYS.update({
         {'letter': 'A', 'meaning': 'the curved metal linkage (named in the ask)'}],
 })
 
+# 2019, both levels: the pictures a stem or ask points at in words the
+# cropper's worklist does not hear ("The image shows ...", "this safety sign",
+# "the given circuit", "the dog wheelchair above", the cost table "shown
+# below"). Found in the batch browser check: every shipped 2020-2026 card
+# whose text says "The image/graphic shows" carries its picture, and these
+# 2019 cards did not. Each rect measured on the page and looked at.
+BY_EYE.update({
+    # Ordinary Section A: the ear-defender sign, the acrylic lamp, the
+    # push-car with arrow A (its answer box to the right left out), the
+    # plywood table and magazine rack.
+    'technology-2019-OL-paper-secA-q1-art': ('014', 1, (394, 74, 523, 196)),
+    'technology-2019-OL-paper-secA-q3-art': ('014', 1, (413, 571, 530, 757)),
+    'technology-2019-OL-paper-secA-q7-art': ('014', 3, (82, 128, 258, 260)),
+    'technology-2019-OL-paper-secA-q9-art': ('014', 3, (401, 581, 536, 689)),
+    # Ordinary Sections B and C: the CAD housing, the cattle gate, the USB
+    # Type-C plug, the grapes-to-wine transformation graphic, the harvest
+    # photograph, the chipboard samples; and 5(c)(ii)'s "dog wheelchair
+    # above", which is 5(a)'s photograph on the same page.
+    'technology-2019-OL-paper-secB-q2a-art': ('039', 1, (378, 82, 552, 170)),
+    'technology-2019-OL-paper-secC-q1b-art': ('039', 3, (389, 249, 575, 349)),
+    'technology-2019-OL-paper-secC-q3b-art': ('039', 5, (90, 263, 214, 357)),
+    'technology-2019-OL-paper-secC-q4b-art': ('039', 6, (360, 246, 576, 368)),
+    'technology-2019-OL-paper-secC-q4c-art': ('039', 6, (53, 494, 235, 600)),
+    'technology-2019-OL-paper-secC-q5c-ii-art': ('039', 7, (69, 114, 238, 229)),
+    'technology-2019-OL-paper-secC-q5d-art': ('039', 7, (403, 653, 546, 775)),
+    # Higher 2(b): "Draw the given circuit" -- the 555 astable as printed.
+    'technology-2019-HL-paper-secC-q2b-art': ('039', 4, (357, 266, 558, 414)),
+    # Higher 4(b): the toy and the manufacturing-cost table every roman is
+    # worked from.
+    'technology-2019-HL-paper-secC-q4b-art': ('039', 6, (106, 420, 535, 592)),
+})
+WHITEOUT.update({
+    # The ends of 2(b)(ii) "adjusted." and (i) "output." beside the circuit.
+    'technology-2019-HL-paper-secC-q2b-art': [(356, 333, 372, 377)],
+})
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.

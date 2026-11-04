@@ -990,6 +990,52 @@ REVIEWED.update({
 
 # 2019 Ordinary (Technology lane, 4 November 2026).
 REVIEWED.update({
+    # Pictures the 2019 stems point at, added after the batch browser check.
+    'technology-2019-OL-paper-secA-q1-art':
+        'A round safety sign: a white outline of a head wearing ear defenders '
+        'on a solid blue disc.',
+    'technology-2019-OL-paper-secA-q3-art':
+        'Photograph of a lamp: a clear acrylic sheet engraved with a cartoon '
+        'panda spinning a basketball, glowing purple above a black base.',
+    'technology-2019-OL-paper-secA-q7-art':
+        "Photograph of a child's push-car: an oval plywood seat over a lower "
+        'oval deck, a wooden handlebar and four grey wheels with red hubs, '
+        'with an arrow lettered A pointing at it from the lower right.',
+    'technology-2019-OL-paper-secA-q9-art':
+        'Photograph of a piece of furniture bent from one continuous sheet of '
+        'plywood: a flat top curving down into a side with a hand slot, with a '
+        'rack for magazines underneath.',
+    'technology-2019-OL-paper-secB-q2a-art':
+        'CAD rendering on a grid of a blue open rectangular case with fixing '
+        'lugs, beside a flat blue piece with a rectangular cut-out.',
+    'technology-2019-OL-paper-secC-q1b-art':
+        'Photograph of a cattle gate system: a steel overhead frame carrying a '
+        'gate across a pen of cows in a holding yard.',
+    'technology-2019-OL-paper-secC-q3b-art':
+        'Photograph of the end of a black cable with a USB Type-C plug.',
+    'technology-2019-OL-paper-secC-q4b-art':
+        'Diagram: grapes labelled Input, an arrow to a factory labelled '
+        'Transformation Process, an arrow to a wine bottle labelled Output, '
+        'and arrows running back labelled Customer Feedback across the top and '
+        'Performance Feedback across the bottom.',
+    'technology-2019-OL-paper-secC-q4c-art':
+        'Photograph of workers in a vineyard tipping a crate of dark grapes '
+        'into a large bin.',
+    'technology-2019-OL-paper-secC-q5c-ii-art':
+        'Photograph of a small dog fitted with a two-wheeled support '
+        'wheelchair strapped to its body, its hind legs resting on the frame.',
+    'technology-2019-OL-paper-secC-q5d-art':
+        'Photograph of a stack of chipboard panels, each faced with a '
+        'different wood-grain veneer, their cut edges showing the chipboard '
+        'core.',
+    'technology-2019-HL-paper-secC-q2b-art':
+        'Circuit diagram: resistors R1 and R2 and capacitor C in series '
+        'between a 12 V rail and a 0 V rail, wired to a 555 IC whose output '
+        'line ends unconnected.',
+    'technology-2019-HL-paper-secC-q4b-art':
+        'Picture of the electronic toy, a small blue robot with LED eyes, '
+        'beside a table: Cost of machinery €25,000; Cost of tooling €5,000; '
+        'Variable Costs €20 per unit; Sales Forecast 20,000 units.',
     'technology-2019-OL-paper-secA-q6-art':
         'Drawing of a mechanism of two parts: a grey toothed wheel lettered A '
         'with a red arrow showing its direction of turning, and a small pivoted '
