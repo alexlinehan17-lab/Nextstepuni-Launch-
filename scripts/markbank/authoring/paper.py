@@ -592,7 +592,13 @@ def _join_gutter_markers(blocks):
         for j in list(range(i + 1, min(i + 4, len(blocks)))) + \
                 list(range(i - 1, max(i - 4, -1), -1)):
             o = blocks[j]
-            if j in used or o[0] <= b[0] or _MARKER_ONLY.match(' '.join(o[4].split())):
+            # An empty block is never the question: 2020 Higher boxes each
+            # short question and sets its marker in a box-high gutter block,
+            # which overlaps every blank answer-line block beneath it, and
+            # the first of those was taken as Q3's text while the question
+            # itself was filed under Q2.
+            if j in used or o[0] <= b[0] or not o[4].split() \
+                    or _MARKER_ONLY.match(' '.join(o[4].split())):
                 continue
             # Same line, give or take a leading-height's slack.
             if abs(o[1] - b[1]) <= 14 or (b[1] <= o[3] and o[1] <= b[3]):
