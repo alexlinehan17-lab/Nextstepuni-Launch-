@@ -30629,7 +30629,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was one argument in favour of the Sunningdale Agreement given by Brian Faulkner in document A?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "One argument by Faulkner from doc A", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "One argument by Faulkner from doc A", marks: 5, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",

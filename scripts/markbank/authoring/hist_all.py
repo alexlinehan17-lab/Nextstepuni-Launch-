@@ -453,6 +453,22 @@ PRICED_COMPONENT = re.compile(r'([A-Z][A-Za-z \u2019\'-]{1,40}?)\s*=\s*(\d{1,3})
 TARIFF_CEILING = re.compile(r'\bMax\.?\s*=\s*(\d{1,3})M\b')
 NO_PRINTED_ANSWER = 'The scheme prints no answer here: any correct one earns the marks.'
 TARIFF_WORDING = re.compile(r'^(?:ONE|TWO|THREE|[Oo]ne valid|[Tt]wo valid|[Aa]ny valid|Any (?:ONE|TWO|THREE))\b(?![^.]*\.\s*\S)')
+# The same pricing in the schemes' other words, swept across every History card
+# (2026-11-04): a verdict left open either way ("Yes or No", "Reasonable
+# advice? Yes or No"), with or without its unprinted reason ("Yes or No with
+# ONE valid explanation", "Yes or No? Any ONE valid reason"); a bare reason
+# or explanation ("one reason", "a valid reason", "explanation", "Brief
+# explanation of the event"); and a price that restates its ask ("Any
+# reasonable description of extent of Pale", "Brief and clear definition of
+# the Enlightenment", "One argument by Faulkner from doc A", "Any two valid
+# countries of destination (3M + 3M)"). A row that prints its verdict ("Yes.
+# Any ONE valid reason") prints part of its answer, so it is not one of these.
+OPEN_TARIFF_WORDING = re.compile(
+    r'^(?:(?:Reasonable advice\? )?Yes (?:or|OR) [Nn]o'
+    r'(?:\? Any ONE valid reason| with ONE valid (?:reason|explanation))?'
+    r'|(?:[Oo]ne |[Aa] valid )?reason|(?:Brief )?explanation(?: of the event)?'
+    r'|Any reasonable description of [^.]+|Brief and clear definition of [^.]+'
+    r'|One argument by [^.]+ from doc [A-E]|Any two valid [^.(]+\(3M \+ 3M\))$')
 
 
 # A row that runs one document's point straight into the next, unstopped
@@ -469,6 +485,19 @@ RUN_ON_CONNECTIVES = frozenset(
     'where which what how when whether is are was were be does do did says said '
     'say shows show states state if a an this its his her their compared contrast '
     'contrasting same similar against regarding re versus vs - – — / &'.split())
+
+
+def note_unprinted(row):
+    """Say, in the bank's fixed words, that a row prices an answer its scheme
+    does not print ("ONE valid reason", "Yes or No"). An any-N group ("Any
+    TWO" over its printed options) prints its answers; only a plain row can
+    lack one."""
+    if (row['kind'] != 'anyN'
+            and (TARIFF_WORDING.match(row['verbatim'])
+                 or OPEN_TARIFF_WORDING.match(row['verbatim']))
+            and NO_PRINTED_ANSWER not in (row.get('contextNote') or '')):
+        row['contextNote'] = ' — '.join(
+            x for x in (row.get('contextNote'), NO_PRINTED_ANSWER) if x)
 
 
 def document_lines(text):
@@ -609,6 +638,7 @@ def split_card(P, year, level, field, key, ask, section, topic_id, ref):
             row['permittedMarks'] = steps
         if note:
             row['contextNote'] = note
+        note_unprinted(row)
         rows.append(row)
     card = {
         'id': card_id(year, level, field, key, P.sitting),
@@ -1036,15 +1066,11 @@ def build():
                     card = step_counted(split_priced(card))
                     # A row that is the scheme pricing an answer it does not
                     # print ("ONE valid reason", "ONE decision of the Synod of
-                    # Thurles") says so, in the bank's fixed words.
+                    # Thurles") says so, in the bank's fixed words
+                    # (note_unprinted), and a run-on document point keeps its
+                    # own line (document_lines).
                     for row in card['rows']:
-                        # An any-N group ("Any TWO" over its printed options)
-                        # prints its answers; only a plain row can lack one.
-                        if row['kind'] != 'anyN' and TARIFF_WORDING.match(row['verbatim']):
-                            row['contextNote'] = ' — '.join(
-                                x for x in (row.get('contextNote'), NO_PRINTED_ANSWER) if x)
-                        # A run-on document point keeps its own line
-                        # (document_lines).
+                        note_unprinted(row)
                         if row['kind'] != 'anyN':
                             row['verbatim'] = document_lines(row['verbatim'])
                     cards.append(card)

@@ -20052,7 +20052,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Yes OR No",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    },
    {
     "id": "r-2",
@@ -23586,7 +23587,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Yes or No? Any ONE valid reason",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -25500,7 +25502,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Yes or No? Any ONE valid reason",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -45553,7 +45556,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Reasonable advice? Yes or No",
-    "marks": 2
+    "marks": 2,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    },
    {
     "id": "r-2",
@@ -46969,7 +46973,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Yes or No with ONE valid explanation",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -48846,7 +48851,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Yes or No with ONE valid reason",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -50523,7 +50529,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Any reasonable description of extent of Pale",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -53943,7 +53950,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Any reasonable description of extent of Dutch empire",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -272864,7 +272872,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Brief and clear definition of the Enlightenment",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -273241,7 +273250,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Brief and clear definition of the Reign of Terror",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -370655,7 +370665,8 @@
     "id": "r-2",
     "kind": "point",
     "verbatim": "one reason",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -394689,13 +394700,15 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Yes or no",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "a valid reason",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -420732,7 +420745,8 @@
     "id": "r-2",
     "kind": "point",
     "verbatim": "explanation",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -422208,13 +422222,15 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Yes or No",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "reason",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -426297,7 +426313,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Brief explanation of the event",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -453485,7 +453502,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Brief explanation",
-    "marks": 6
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -468859,7 +468877,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "One argument by Faulkner from doc A",
-    "marks": 5
+    "marks": 5,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '5M' for this ask.",
@@ -479679,7 +479698,8 @@
      0,
      3,
      6
-    ]
+    ],
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",

@@ -2811,7 +2811,7 @@ export const CARDS: SecCard[] = [
     questionText: "Has the house been fully modernised? Briefly explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes OR No", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Yes OR No", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     { id: "r-2", kind: "point", verbatim: "Any ONE valid explanation", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
@@ -4223,7 +4223,7 @@ export const CARDS: SecCard[] = [
     questionText: "Was Rinuccini’s visit to Kilkenny a success or a failure? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or No? Any ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Yes or No? Any ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -4947,7 +4947,7 @@ export const CARDS: SecCard[] = [
     questionText: "Was the Jesuit mission to China a success or a failure? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or No? Any ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Yes or No? Any ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -5749,7 +5749,7 @@ export const CARDS: SecCard[] = [
     questionText: "Did the sermon, mentioned in document A, give reasonable advice? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Reasonable advice? Yes or No", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "Reasonable advice? Yes or No", marks: 2, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     { id: "r-2", kind: "criterion", verbatim: "Two reasons for Yes or No", marks: 8, contextNote: "Sermon advised “restraint towards people of different religious persuasions” — Above quote only = 2M — Seems to be reasonable advice to behave respectfully to others, to not give offence which could lead to trouble At the same time the Apprentice Boys are asked to keep “firmness in defence of their Protestant heritage”, to assert themselves and keep the faith — Mark quality of explanation on its merits. — Max = 10M", permittedMarks: [0,4,8] },
     ],
     sourceMaterial: {
@@ -6317,7 +6317,7 @@ export const CARDS: SecCard[] = [
     questionText: "Are these people the very poorest? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or No with ONE valid explanation", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Yes or No with ONE valid explanation", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7015,7 +7015,7 @@ export const CARDS: SecCard[] = [
     questionText: "Was fighting taking place when the photograph was taken? Explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or No with ONE valid reason", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Yes or No with ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -7729,7 +7729,7 @@ export const CARDS: SecCard[] = [
     questionText: "Approximately, what was the extent of the Pale?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any reasonable description of extent of Pale", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Any reasonable description of extent of Pale", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -9028,7 +9028,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was the extent of the Dutch empire in Asia?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any reasonable description of extent of Dutch empire", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Any reasonable description of extent of Dutch empire", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -38393,7 +38393,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what was the Enlightenment?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Brief and clear definition of the Enlightenment", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Brief and clear definition of the Enlightenment", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -38537,7 +38537,7 @@ export const CARDS: SecCard[] = [
     questionText: "Briefly, what was the Reign of Terror which took place in France during the period, 5 September 1793 – 28 July 1794?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Brief and clear definition of the Reign of Terror", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Brief and clear definition of the Reign of Terror", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -51598,7 +51598,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "English point-of-view", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "one reason", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "one reason", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -53962,8 +53962,8 @@ export const CARDS: SecCard[] = [
     questionText: "Was Gaelic law better than European law in relation to marriage? Give a reason for your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or no", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "a valid reason", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Yes or no", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    { id: "r-2", kind: "point", verbatim: "a valid reason", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -56968,7 +56968,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "explanation", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "explanation", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -57520,8 +57520,8 @@ export const CARDS: SecCard[] = [
     questionText: "Overall, was Stalin a good employer, according to the writer? Briefly explain your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Yes or No", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "reason", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Yes or No", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    { id: "r-2", kind: "point", verbatim: "reason", marks: 3, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -59205,7 +59205,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was the ‘Boston Massacre’ (5 March, 1770)?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Brief explanation of the event", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Brief explanation of the event", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -62808,7 +62808,7 @@ export const CARDS: SecCard[] = [
     questionText: "What was “witch‐hunting”?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Brief explanation", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Brief explanation", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -66010,7 +66010,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two countries to which Irish people emigrated during the nineteenth century.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Any two valid countries of destination (3M + 3M)", marks: 6, permittedMarks: [0,3,6] },
+    { id: "r-1", kind: "criterion", verbatim: "Any two valid countries of destination (3M + 3M)", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks.", permittedMarks: [0,3,6] },
     ],
     sourceMaterial: {
           "kind": "source-text",

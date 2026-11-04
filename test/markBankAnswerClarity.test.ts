@@ -542,7 +542,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Any TWO of Beethoven’s compositions 3 + 3', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO valid aims from the war @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO valid aims of the Geraldine League (3M x 2)', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
-      ['Any two valid countries of destination (3M + 3M)', 6, [0, 3, 6], undefined],
+      ['Any two valid countries of destination (3M + 3M)', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['As a colonist: Spenser considers the bardic poets a threat to the security of the colony because they encourage young men to admire the disobedient and rebellious He is very judgemental about the bards and their poems which gives the impression that, as a colonist, he is culturally superior', 5, [0, 1, 2, 3, 4, 5], undefined],
       ['BBC (1) were very much in favour of the strike (2) did not monitor NI broadcasts (3) did not know what was going on (4) were effectively running a rebel radio station', 10, [0, 5, 10], undefined],
       ['Battleship/ Warship', 6, [0, 3, 6], 'Ship = 3M'],
