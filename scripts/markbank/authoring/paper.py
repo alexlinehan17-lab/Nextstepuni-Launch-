@@ -296,6 +296,20 @@ BACKWARD_LETTER_IS_TEXT = {'biology'}
 # Each marker in such a block is read on its own.
 BARE_MARKER_RUNS = {'biology'}
 _BARE_RUN = re.compile(r'^\([a-h]\)(?:\s+\([a-h]\))+$')
+# Engineering captions a row of photographs with nothing but their romans, and
+# the text layer can hand two captions over as one block: 2026 OL Q2(d) (paper
+# page 3, y 757) sets three mechanism photographs captioned "(i)", "(ii)" and
+# "(iii)", the block "(ii) (iii)" was taken as one marker -- the last -- and
+# (ii) vanished (census flag roman-gap Q2(d), sub-markers found i and iii).
+# Each caption in such a block is read on its own, as Biology's letters are.
+# Gated to the sitting. Applied to every Engineering paper, the same split
+# also recovers caption romans that the 2010-2019 Ordinary papers lose the
+# same way (2010, 2011, 2013 and 2015-2019), but it moves other readings with
+# them (the 2010-2013 Higher papers' Q8(a)(i); 2014 and 2015 OL re-key
+# Q1(h)-(m)), which are those sittings' audits to make.
+BARE_ROMAN_RUNS = {('engineering', 2026, 'ol')}
+_BARE_ROMAN = r'\((?:i{1,3}|iv|vi{0,3}|ix|x)\)'
+_BARE_ROMAN_RUN = re.compile(rf'^{_BARE_ROMAN}(?:\s+{_BARE_ROMAN})+$')
 # Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
 # 'Leaving Certificate, 2021' — the strict form let footers leak into leaf
 # text.
@@ -546,6 +560,14 @@ DRAWN_RULE_HEADS = {('chemistry', 2015, 'ol'): ['5. The diagram shows a small pa
 FIGURE_BLOCKS = {('chemistry', 2012, 'hl'): [
     '(i) C6H14 (l) → 4H2 (g) + (l) (ii) C14H30 (l) → C7H16 (l) + C3H6 (g) + X (g) '
     '(iii) CH3(CH2)6CH3 (l) → (l)']}
+# 2026 OL Engineering Q2(c) (paper page 3) labels its mountain-bike photograph
+# "saddle seat", "frame", "tyre" and "mountain bike" (x 291-549, y 496-641), and
+# the text layer sets those callouts after Q2(d)'s captions, so they were read
+# as the words of Q2(d)(iii), the third mechanism photograph's caption. They are
+# the photograph's labels, which Q2(c)(i) asks about ("for each of the parts
+# labelled on the mountain bike shown"): no ask is printed there. Gated to the
+# sitting.
+FIGURE_BLOCKS[('engineering', 2026, 'ol')] = ['saddle seat frame', 'tyre', 'mountain bike']
 _TRAILING_OR = re.compile(r'\s+OR\s*$')
 _BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
 
@@ -1229,7 +1251,9 @@ class Paper:
                     if t:
                         carry = t.group(1)
                         piece = piece[:t.start(1)].rstrip()
-                    if piece and self.subject in BARE_MARKER_RUNS and _BARE_RUN.match(piece):
+                    if piece and ((self.subject in BARE_MARKER_RUNS and _BARE_RUN.match(piece))
+                                  or ((self.subject, self.year, self.level) in BARE_ROMAN_RUNS
+                                      and _BARE_ROMAN_RUN.match(piece))):
                         yield from piece.split()
                     elif piece:
                         yield piece

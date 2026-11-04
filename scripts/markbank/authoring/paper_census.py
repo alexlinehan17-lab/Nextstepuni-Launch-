@@ -665,6 +665,22 @@ SHORT_ASKS = {
                                                       'instrument named."; the OR branch\'s (c) sets only (i) to '
                                                       '(iii), and the word read is the callout "PCB" printed on that '
                                                       'branch\'s circuit-board photograph'),
+    ('engineering', 2026, 'ol', 'Q1(k)(iii)'): ('5G.', 'p2: the term "(iii) 5G." in "(i) Smart technology, (ii) '
+                                                       'Cybersecurity, (iii) 5G." under "Explain any one of the '
+                                                       'following:"'),
+    ('engineering', 2026, 'ol', 'Q2(b)(ii)'): ('Brass,', 'p3: the alloy "Brass," in "(i) Cast iron, (ii) Brass, '
+                                                         '(iii) Solder." under "Name the metals used to produce any two '
+                                                         'of the alloys listed below:"'),
+    **{('engineering', 2026, 'ol', f'Q2(d)({r})'): ('', f'p3: the caption "({r})" under the {n} of three mechanism '
+                                                        'photographs, under "Name any two of the mechanisms shown, and '
+                                                        'give one application of each mechanism named."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    ('engineering', 2026, 'ol', 'Q4(b)(i)'): ('Flux,', 'p5: the term "(i) Flux," under "Describe any two of the '
+                                                       'following soft soldering terms:"'),
+    ('engineering', 2026, 'ol', 'Q6(b)(ii)'): ('Swarf,', 'p7: the term "(ii) Swarf," under "Explain any three of the '
+                                                         'following in relation to machining:"'),
+    ('engineering', 2026, 'ol', 'Q6(b)(iv)'): ('Feed.', 'p7: the term "(iv) Feed." under "Explain any three of the '
+                                                        'following in relation to machining:"'),
 }
 
 

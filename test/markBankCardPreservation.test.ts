@@ -1019,7 +1019,7 @@ const decks = [
 ] as const;
 
 // [count, idHash] of eng_residue/additions.json, re-pinned as each sitting lands.
-const ENGINEERING_ADDITIONS = [223, 'd53cfb9a8773e76a4073a3d882e6934730ce8daf2702e0a549c2ede75fab81cf'] as const;
+const ENGINEERING_ADDITIONS = [283, '8d6dea7ced9b6e5b583adf02b26ff1a797869721317bf8c2809c5163353592f0'] as const;
 const idHash = (ids: readonly string[]) => createHash('sha256')
   .update([...ids].sort().join('\n'))
   .digest('hex');
@@ -1365,6 +1365,7 @@ describe('Mark Bank card preservation', () => {
     //   2025 HL: +10 (654 -> 664; Q3(b)(i) and (ii) on one card, one graph answering both); q3-b-iii rebuilt in place
     //   2025 OL: +24 (664 -> 688); eng-2025-ol-q2-c-i stays withdrawn, its successor is q2-c-i-v2; q1-l, q2-c-ii, q3-a, q4-c-i, q4-c-iv, q5-a-i, q5-d, q6-c-i, q6-c-iii rebuilt in place
     //   2026 HL: +89 (688 -> 777; the sitting's first cards; Q6(c)'s robotic-arm branch carded apart, priced differently)
+    //   2026 OL: +60 (777 -> 837; the sitting's first cards; Q7(c)'s PCB branch carded apart, priced differently)
     const live = new Set([...ENGINEERING_HIGHER, ...ENGINEERING_ORDINARY].map(card => card.id));
     for (const id of engineeringAdditionIds) expect(live.has(id), `missing Engineering addition ${id}`).toBe(true);
     expect(engineeringAdditionIds.size).toBe(ENGINEERING_ADDITIONS[0]);

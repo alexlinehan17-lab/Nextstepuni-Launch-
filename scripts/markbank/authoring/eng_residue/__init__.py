@@ -18,6 +18,9 @@ A module holds:
          -paper-q<part>-art, the name eng_all reads for a part's own picture;
          scheme crops that ARE the answer are -scheme-q<part>-sol and solution.
   CARDS  [dict(key=(q, letter, roman), why=..., ...lib.card arguments...)]
+  FOLDED {card id: why} -- an automatic card for ONE option of a printed list
+         ("Explain any three of the following: ... (iv) Feed."), which the
+         module's card for the list's letter carries instead.
 
 A residue card the automatic author already builds is an error, not a merge:
 the entry is stale and must go, or the two would disagree about one id --
@@ -75,6 +78,21 @@ def build(A, year, level, built, figure_keys, topic_for_part, keeps_stem,
             raise SystemExit(f'eng_residue {year} {level} {cid}: already {topic}; '
                              f'the TOPICS entry is stale')
         hit[0]['topicId'] = topic
+    # An option of a printed list the automatic author carded on its own,
+    # because the reader priced that roman and refused its siblings. The
+    # printed choice is ONE card, at the letter, so the option's card is
+    # dropped here and the module must build that letter's card below. Only
+    # a card that never shipped may be folded: a shipped id is withdrawn
+    # through WITHDRAWN and cardAliases.ts, never dropped here.
+    folded = getattr(mod, 'FOLDED', {})
+    for cid, why in folded.items():
+        if cid not in built or not why:
+            raise SystemExit(f'eng_residue {year} {level} {cid}: FOLDED entry for a '
+                             f'card the author does not build, or with no reason')
+        if not why.startswith('never shipped'):
+            raise SystemExit(f'eng_residue {year} {level} {cid}: only a card that '
+                             f'never shipped is folded; say so ("never shipped: ...")')
+        A.cards[:] = [c for c in A.cards if c['id'] != cid]
     for entry in getattr(mod, 'CARDS', []):
         q, letter, roman = entry['key']
         cid = entry.get('id') or part_id(year, level, q, letter, roman)
@@ -137,4 +155,9 @@ def build(A, year, level, built, figure_keys, topic_for_part, keeps_stem,
         except Refused as exc:
             raise SystemExit(f'{where}: {exc}')
         made.append(cid)
+    for cid in folded:
+        letter_card = cid.rsplit('-', 1)[0]
+        if letter_card not in made:
+            raise SystemExit(f'eng_residue {year} {level} {cid}: folded, but the module '
+                             f'builds no {letter_card} to carry it')
     return made
