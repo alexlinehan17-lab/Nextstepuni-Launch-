@@ -15383,7 +15383,9 @@ export const CARDS: SecCard[] = [
     questionText: "What goods did the Dutch source in Asia?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tea, silk, spices", marks: 6, contextNote: "All THREE @ 2M each" },
+    { id: "r-1", kind: "point", verbatim: "Tea", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "silk", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "spices", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -17166,7 +17168,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why did the early motorist have to ‘dress up for protection’?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "There was no roof, door or windscreen", marks: 6, contextNote: "Any TWO @ 3M each" },
+    { id: "r-1", kind: "anyN", verbatim: "Any TWO", marks: null, group: {"claimMax":2,"perOption":3,"options":["There was no roof","door","windscreen"]} },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -18709,7 +18711,9 @@ export const CARDS: SecCard[] = [
     questionText: "What ideals did the United Irishmen take from the French Revolution?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Liberty, equality, fraternity", marks: 6, contextNote: "All THREE @ 2M each" },
+    { id: "r-1", kind: "point", verbatim: "Liberty", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "equality", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "fraternity", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",

@@ -90,6 +90,13 @@ PER_TIMES = re.compile(r'\b(\d+)\s*M\s*x\s*(\d+)\b', re.I)
 PER_PLUS = re.compile(r'\b(\d+)\s*M?(?:\s*\+\s*(\d+)\s*M?)+\b', re.I)
 
 
+# A list printed as a sentence, "A, B or C".
+OXFORD_LIST = re.compile(r'^[^,/]+(?:,\s*[^,/]+)+\s+(?:or|and)\s+[^,/]+$')
+# The count and price printed beside the answers, as the row's note: "Any TWO
+# @ 3M each", "All THREE @ 2M each" (2012-2017 Ordinary).
+NOTE_COUNTED = re.compile(r'^(?P<all>Any|All) (?P<n>TWO|THREE|FOUR) (?:@|for) (?P<per>\d+)M(?: each)?$')
+
+
 def step_counted(card):
     """A counted row with its price per answer is stepped at that price.
 
@@ -107,6 +114,23 @@ def step_counted(card):
     if row['kind'] != 'point' or row.get('marks') != total:
         return card
     text = row['verbatim']
+    note = NOTE_COUNTED.match(row.get('contextNote') or '')
+    if note and WORDS[note.group('n').lower()] * int(note.group('per')) == total:
+        # The answers are printed and the price per answer is the note.
+        n, per = WORDS[note.group('n').lower()], int(note.group('per'))
+        items = [tidy(x) for x in re.split(r',\s*|\s+(?:or|and)\s+', text) if tidy(x)]
+        if note.group('all') == 'All' and len(items) == n:
+            # "Liberty, equality, fraternity" under "All THREE @ 2M each": each
+            # answer at its price, as "(2M x 3)" is.
+            rows[:] = [{'id': f'r-{i}', 'kind': 'point', 'verbatim': item, 'marks': per}
+                       for i, item in enumerate(items, start=1)]
+            return card
+        if note.group('all') == 'Any':
+            # The answers run together where no option can be told from the
+            # next ("Von Eckstadt Vienna 1848" under "Any TWO @ 3M each"): the
+            # row is stepped at the printed price.
+            rows[:] = [{**row, 'kind': 'criterion', 'permittedMarks': [per * k for k in range(n + 1)]}]
+        return card
     count = COUNTED.search(text)
     if not count:
         return card
@@ -179,6 +203,10 @@ def split_priced(card):
         if len(options) == 1:
             # The alternatives listed with commas: "Nantes, Bordeaux, Lisbon, Cadiz".
             options = [tidy(x) for x in text.split(',') if tidy(x)]
+        if len(options) <= count and OXFORD_LIST.match(text):
+            # The alternatives listed as a sentence: "There was no roof, door or
+            # windscreen" under "Any TWO @ 3M each" (2017 Ordinary).
+            options = [tidy(x) for x in re.split(r',\s*|\s+(?:or|and)\s+', text) if tidy(x)]
         if count * per == total and len(options) > count:
             rows[:] = [{'id': row['id'], 'kind': 'anyN', 'verbatim': lead, 'marks': None,
                         'group': {'claimMax': count, 'perOption': per, 'options': options}}]

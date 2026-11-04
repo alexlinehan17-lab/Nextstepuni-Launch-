@@ -509,6 +509,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Salt fish', 'hides', 'cattle', 'hobby-horses'],
       ['Stoking the fire', 'Fetching water', 'Bringing in stacks of bread'],
       ['Tapestries', 'Mirrors', 'Candle holders', 'Upholstered furniture'],
+      ['There was no roof', 'door', 'windscreen'],
       ['They dressed badly', 'wore shaggy jackets', 'kept their hands in their pockets', 'did not speak clearly.'],
       ['To watch over everyone', 'To warn in a friendly was those who are misbehaving', 'To report to ministers if necessary'],
       ['Training', 'Maintenance allowance', 'Bonus pay'],
@@ -521,12 +522,11 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(tariffWording.length).toBeGreaterThan(80);
     expect(tariffWording.filter(({ row }) => !(row.contextNote ?? '').includes('The scheme prints no answer here')).map(({ card }) => card.id)).toEqual([]);
     // A six-mark answer with a printed partial ("Green ribbons (ribbons = 3m)") is a stepped row: the partial is its note.
+    // So is a row that prints a count and the price of each ("Any TWO ... @ 3M each"): 0, 3 or 6.
     expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks, row.contextNote]).sort()).toEqual([
       // Each a printed partial or alternative as a step on its row ("Green ribbons (ribbons = 3m)",
       // "Swastika 8M" / "Germanic cross = 4M"), a price for an answer the scheme does not print
       // ("One opinion = 5M"), or the bank's unprinted row where the scheme prints no answer at all.
-      // A row that prints a count and the price of each, naming no answers ("Any TWO ... @ 3M each"), is
-      // stepped at that price: 0, 3 or 6.
       ['Any TWO countries invaded by Napoleon 3M + 3M', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO features from second paragraph of text @ 3M each', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Any TWO of Beethoven’s compositions 3 + 3', 6, [0, 3, 6], 'The scheme prints no answer here: any correct one earns the marks.'],

@@ -108155,9 +108155,20 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Tea, silk, spices",
-    "marks": 6,
-    "contextNote": "All THREE @ 2M each"
+    "verbatim": "Tea",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "silk",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "spices",
+    "marks": 2
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
@@ -130843,10 +130854,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "There was no roof, door or windscreen",
-    "marks": 6,
-    "contextNote": "Any TWO @ 3M each"
+    "kind": "anyN",
+    "verbatim": "Any TWO",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "There was no roof",
+      "door",
+      "windscreen"
+     ]
+    }
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
@@ -134733,9 +134752,20 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Liberty, equality, fraternity",
-    "marks": 6,
-    "contextNote": "All THREE @ 2M each"
+    "verbatim": "Liberty",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "equality",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "fraternity",
+    "marks": 2
    }
   ],
   "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
