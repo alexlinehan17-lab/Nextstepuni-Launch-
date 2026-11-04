@@ -8205,5 +8205,203 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2011-OL-scheme-p05-q4-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2011 OL Section A Q4(b)",
+    "description": "The marking scheme’s diagram: lines 1 to 5 as the paper numbers them, with a line dropped from where the rising curve 2 cuts the lowest point of the U-shaped curve 3, on the horizontal line 4, down to the axis 5.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2011/LC034GLP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        28,
+        95,
+        330,
+        272
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2011-OL-scheme-p06-q9-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2011 OL Section A Q9",
+    "description": "The marking scheme’s working: Y = C + I + G + X – M; Y = €2,400m + €300m - €200m. Answer: €2,500 m.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2011/LC034GLP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        130,
+        605,
+        540,
+        680
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2011-OL-scheme-p07-q1a-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2011 OL Section B Q1(a)(ii)",
+    "description": "The marking scheme’s monopoly diagram: P against Q, a falling AR line and a steeper MR line, a U-shaped AC curve and an MC curve rising through MR. A line rises from the output where MC cuts MR to the AC curve and on to AR; arrows run left to C1 from the AC curve and to P1 from AR.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2011/LC034GLP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        110,
+        125,
+        380,
+        322
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2011-OL-scheme-p11-q2a-graph.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2011 OL Section B Q2(a)(i)–(iii)",
+    "description": "The marking scheme’s graph: Price € against Quantity (units), a D/C falling through the five points of the schedule from (200, 5) to (600, 1) and an S/C rising from (200, 1) to (600, 5). They cross at 3 and 400, marked PE on the price axis and QE on the quantity axis.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2011/LC034GLP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        60,
+        335,
+        580,
+        658
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2011-OL-scheme-p17-q4aii-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2011 OL Section B Q4(a)(ii)",
+    "description": "The marking scheme’s working: Visible Exports = €24,000m; Less: Visible Imports: €23,600m + €600m = €24,200m; (€200m).",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2011/LC034GLP000EV.pdf",
+      "page": 17,
+      "rectPoints": [
+        40,
+        600,
+        490,
+        656
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2011-OL-paper-p02-q4-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2011 OL Section A Q4",
+    "description": "A diagram of a firm in perfect competition with five numbered lines: 1 the vertical axis, 2 a curve rising steeply, 3 a U-shaped curve, 4 a horizontal line touching the bottom of the U where curve 2 cuts it, and 5 the horizontal axis; beside it an answer box numbered 1 to 5 with a column for each name.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2011/LC034GLP000EV.pdf",
+      "page": 2,
+      "rectPoints": [
+        30,
+        605,
+        562,
+        798
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2011-OL-paper-p04-q1-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2011 OL Section B Q1(a)",
+    "description": "A monopoly diagram: P against Q, a falling AR line, a steeper falling MR line, a U-shaped AC curve and an MC curve rising through MR; a line from Q1 rises through the point where MC cuts MR to AC and AR.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2011/LC034GLP000EV.pdf",
+      "page": 4,
+      "rectPoints": [
+        140,
+        170,
+        420,
+        362
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2011-OL-paper-p05-q2-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2011 OL Section B Q2",
+    "description": "A table of the umbrella market: at €1.00, 600 demanded and 200 supplied; €2.00, 500 and 300; €3.00, 400 and 400; €4.00, 300 and 500; €5.00, 200 and 600.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2011/LC034GLP000EV.pdf",
+      "page": 5,
+      "rectPoints": [
+        140,
+        124,
+        460,
+        229
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2011-OL-paper-p06-q4-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2011 OL Section B Q4(a)",
+    "description": "A table of a country’s trade in € million: Visible Exports 24,000, Visible Imports 23,600, Balance of Trade 400, Surplus.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2011/LC034GLP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        60,
+        429,
+        560,
+        478
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]

@@ -57778,5 +57778,109 @@
     "year": 2011,
     "level": "higher",
     "attribution": "SEC Leaving Certificate Economics 2011 Higher Level — © State Examinations Commission"
+  },
+  "economics-2011-OL-scheme-p05-q4-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2011-OL-scheme-p05-q4-diagram.png",
+    "md5": "21f90bee5ca4a32a77f152bf6074e513",
+    "alt": "The marking scheme’s diagram: lines 1 to 5 as the paper numbers them, with a line dropped from where the rising curve 2 cuts the lowest point of the U-shaped curve 3, on the horizontal line 4, down to the axis 5.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 OL Section A Q4(b)",
+    "year": 2011,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2011 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2011-OL-scheme-p06-q9-working": {
+    "src": "/exam-figures/economics/markbank/economics-2011-OL-scheme-p06-q9-working.png",
+    "md5": "6a9dc62141a1ebe74e7d9b3b10d70f30",
+    "alt": "The marking scheme’s working: Y = C + I + G + X – M; Y = €2,400m + €300m - €200m. Answer: €2,500 m.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 OL Section A Q9",
+    "year": 2011,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2011 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2011-OL-scheme-p07-q1a-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2011-OL-scheme-p07-q1a-diagram.png",
+    "md5": "4ec5a069c7cffdfd868c83a5f8a28a41",
+    "alt": "The marking scheme’s monopoly diagram: P against Q, a falling AR line and a steeper MR line, a U-shaped AC curve and an MC curve rising through MR. A line rises from the output where MC cuts MR to the AC curve and on to AR; arrows run left to C1 from the AC curve and to P1 from AR.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 OL Section B Q1(a)(ii)",
+    "year": 2011,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2011 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2011-OL-scheme-p11-q2a-graph": {
+    "src": "/exam-figures/economics/markbank/economics-2011-OL-scheme-p11-q2a-graph.png",
+    "md5": "c4cb3401e9af9bf06ad03e4d4b3b7b81",
+    "alt": "The marking scheme’s graph: Price € against Quantity (units), a D/C falling through the five points of the schedule from (200, 5) to (600, 1) and an S/C rising from (200, 1) to (600, 5). They cross at 3 and 400, marked PE on the price axis and QE on the quantity axis.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 OL Section B Q2(a)(i)–(iii)",
+    "year": 2011,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2011 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2011-OL-scheme-p17-q4aii-working": {
+    "src": "/exam-figures/economics/markbank/economics-2011-OL-scheme-p17-q4aii-working.png",
+    "md5": "d400e08212a74e44e85e6adfd9f449c5",
+    "alt": "The marking scheme’s working: Visible Exports = €24,000m; Less: Visible Imports: €23,600m + €600m = €24,200m; (€200m).",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 OL Section B Q4(a)(ii)",
+    "year": 2011,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2011 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2011-OL-paper-p02-q4-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2011-OL-paper-p02-q4-diagram.png",
+    "md5": "cdab6e77e97d98ca5310bb71cf290c91",
+    "alt": "A diagram of a firm in perfect competition with five numbered lines: 1 the vertical axis, 2 a curve rising steeply, 3 a U-shaped curve, 4 a horizontal line touching the bottom of the U where curve 2 cuts it, and 5 the horizontal axis; beside it an answer box numbered 1 to 5 with a column for each name.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 OL Section A Q4",
+    "year": 2011,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2011 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2011-OL-paper-p04-q1-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2011-OL-paper-p04-q1-diagram.png",
+    "md5": "6816b81610be01bc8bc98f35fc7a24e7",
+    "alt": "A monopoly diagram: P against Q, a falling AR line, a steeper falling MR line, a U-shaped AC curve and an MC curve rising through MR; a line from Q1 rises through the point where MC cuts MR to AC and AR.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 OL Section B Q1(a)",
+    "year": 2011,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2011 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2011-OL-paper-p05-q2-table": {
+    "src": "/exam-figures/economics/markbank/economics-2011-OL-paper-p05-q2-table.png",
+    "md5": "f3487fb160d86913492346b157828137",
+    "alt": "A table of the umbrella market: at €1.00, 600 demanded and 200 supplied; €2.00, 500 and 300; €3.00, 400 and 400; €4.00, 300 and 500; €5.00, 200 and 600.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 OL Section B Q2",
+    "year": 2011,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2011 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2011-OL-paper-p06-q4-table": {
+    "src": "/exam-figures/economics/markbank/economics-2011-OL-paper-p06-q4-table.png",
+    "md5": "be0c7b52c3fd2a2facf922698b1a22e6",
+    "alt": "A table of a country’s trade in € million: Visible Exports 24,000, Visible Imports 23,600, Balance of Trade 400, Surplus.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2011 OL Section B Q4(a)",
+    "year": 2011,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2011 Ordinary Level — © State Examinations Commission"
   }
 }

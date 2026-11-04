@@ -2621,3 +2621,72 @@ Checks:
 - reconcile: 1,989/2,198, with 2011 HL at 55/55.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2011 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 36 scheme pages were viewed:
+- paper pp9-12 are blank;
+- scheme pp1-3 are the cover, a blank page and the support notes with the
+  index, and pp33-36 blank or the back cover;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part;
+- the cover prints its level in capitals ("ORDINARY LEVEL"), and the
+  appenders' cover check looks for "Ordinary Level". So the scheme file was
+  built with that check pointed at the file (economics/tools/gen_md_cover.sh),
+  visually verified as the English Ordinary scheme. No shared code changed.
+
+There are 71 routes for the 81 printed asks (17 in Section A, 64 in Section B).
+Six cards each cover asks that the scheme prices together:
+- A Q1(i)-(iii), A Q2(i)-(iii) and A Q7(i)-(iv): the paper numbers the items
+  of one question.
+- B1(b)(i)-(ii): each barrier is stated and explained, 11 + 5 + 5.
+- B2(a)(i)-(iii): one diagram.
+- B2(b)(i)-(iii): the three answers for each of the two statements.
+B2(c)(i) (one advantage OR one disadvantage) and B7(c)(ii) (agree or
+disagree) have one route each, and each question's 75 counts one of them. 9
+crops: 5 hidden scheme solutions and 4 paper data crops.
+
+Decisions:
+- A Q1: each missing word is claimed at its printed price (2 + 2, 3 + 3,
+  3 + 3).
+- A Q5: both printed lists are typed after the ask, each column read down (as
+  2016 OL A Q5). The four open matches are 6 + 6 + 2 + 2, and D is matched for
+  illustration.
+- A Q6: the scheme's one sentence is read as its four capitalised points (any
+  two at 4), then the two circled goods 5 + 4.
+- A Q9: the three figures at 3, the two signs at 2 and the answer 4, with the
+  working as the hidden crop.
+- B3(a)(ii): each definition is 5, with the scheme's "4 marks" and "1 marks"
+  printed beside it. The fixed-cost definition after "or" is accepted.
+- B3(b)(i): the public sector 3 + an example 2, and the private sector 2 + an
+  example 2, as printed.
+- B6(c)(i): "Infrastructure: 6 marks" and "(Examples: ...: 3 marks)" are read
+  as the explanation 3 and an example 3. The note says so.
+- B8(c)(i): the scheme's one sentence is read as its two parts on the printed
+  ladder, 4 + 2. The note says so.
+- One answer for each group the paper names: B1(c)(iii) (any two of three
+  groups at 6), B7(b)(ii) (three groups at 6), B8(a)(iii) (three at 4) and
+  B8(b)(ii) (two at 6).
+- The paper prints "Explain the underlined term." for several parts. Those
+  cards carry their stem in their question, as 2012 OL does.
+
+Topic review: 11 reference anomalies, each a commercial heading the review
+files elsewhere:
+- A Q1, B5 and B8 under acronyms, and A Q9 and B6 under formulas (study-aid
+  headings).
+- A Q6 under the market economy: an economic good is scarcity and choice.
+- A Q8, B5 and B8 under government intervention: the government's aims, the
+  budget and the retirement age are fiscal policy.
+- A Q5 and B4 under globalisation: barriers to trade and tourism are
+  international trade.
+B3 is filed under government intervention as well, for the national minimum
+wage.
+
+Checks:
+- econ_review: 37/66.
+- build: 2,108 cards, 0 dropped.
+- Build rule: 350 claims on this paper, 0 untraceable (33 trace by halves).
+- reconcile: 2,070/2,198, with 2011 OL at 81/81.
+- refcheck: 0 wrong.
+- cardlint: clean.

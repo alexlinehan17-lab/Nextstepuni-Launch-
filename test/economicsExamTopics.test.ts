@@ -242,12 +242,20 @@ describe('Economics exam-topic registry', () => {
       // added two: Section A Q2 under government intervention (a mixed
       // economy is the market economy, as earlier reviews file economic
       // systems) and Section A Q7 under international trade (multinationals
-      // re-locating are globalisation).
-      matchedAssociations: 688,
-      referenceAnomalyAssociations: 215,
+      // re-locating are globalisation). The 2011 Ordinary review added
+      // eleven: Section A Q1 and Section B Q5 and Q8 under acronyms and
+      // Section A Q9 and Section B Q6 under formulas (study-aid headings);
+      // Section A Q6 under the market economy (an economic good is scarcity
+      // and choice); Section A Q8 and Section B Q5 and Q8 under government
+      // intervention (the government's aims, the budget and the retirement
+      // age are fiscal policy); and Section A Q5 and Section B Q4 under
+      // globalisation (barriers to trade and tourism are international
+      // trade).
+      matchedAssociations: 677,
+      referenceAnomalyAssociations: 226,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 614,
+      matchedQuestionTopicLinks: 603,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

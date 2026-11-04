@@ -27,6 +27,7 @@ import ordinary2013Review from '../scripts/markbank/authoring/reviews/economics-
 import higher2012Review from '../scripts/markbank/authoring/reviews/economics-2012-hl-ev.json';
 import ordinary2012Review from '../scripts/markbank/authoring/reviews/economics-2012-ol-ev.json';
 import higher2011Review from '../scripts/markbank/authoring/reviews/economics-2011-hl-ev.json';
+import ordinary2011Review from '../scripts/markbank/authoring/reviews/economics-2011-ol-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -336,10 +337,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // Old syllabus English: every sitting from 2011 Higher through 2020 Higher reviewed (variants 19-36).
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(30);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(36);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(36);
+    // Old syllabus English: every sitting from 2011 through 2020 Higher reviewed (variants 19-37).
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(29);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(35);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(37);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -1835,6 +1836,67 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Step 2:',
       'Number of units of output Fixed Costs', 'CO emissions / 2']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 71 independently counted 2011 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2011);
+    const tasks = ordinary2011Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(71);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2011Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2011, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2011 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each stance counted once.
+      const total = question.tasks.filter(task => !['-disadvantage', '-disagree'].some(s => task.cardId.endsWith(s))).reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2011 Ordinary ladders at their printed steps and keeps the asks the scheme prices together on one card', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2011-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    for (const [id, steps] of [['sa-q2', [8, 4, 4]], ['sa-q3', [12, 4]], ['sa-q5', [6, 6, 2, 2]], ['sa-q7', [6, 6, 3, 2]],
+      ['sa-q8', [9, 4, 4]], ['sb-q1-b', [11, 5, 5]], ['sb-q8-c-i', [4, 2]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // Asks the scheme prices together are one card each, cited as a range.
+    for (const [id, cite] of [['sa-q1', '(i)–(iii)'], ['sa-q2', '(i)–(iii)'], ['sa-q7', '(i)–(iv)'], ['sb-q1-b', '(b)(i)–(ii)'],
+      ['sb-q2-a', '(a)(i)–(iii)'], ['sb-q2-b', '(b)(i)–(iii)']] as const) {
+      expect(card(id).questionRef, id).toContain(cite);
+    }
+    // Each missing word at its printed price.
+    expect(card('sa-q1').rows.map(r => r.marks)).toEqual([2, 2, 3, 3, 3, 3]);
+    // Printed choices the scheme credits side by side: one route each, the same total.
+    for (const [a, b] of [['sb-q2-c-i-advantage', 'sb-q2-c-i-disadvantage'], ['sb-q7-c-ii-agree', 'sb-q7-c-ii-disagree']] as const) {
+      expect(card(a).totalMarks, a).toBe(card(b).totalMarks);
+    }
+    // One answer for each group the paper names.
+    expect(card('sb-q7-b-ii').rows.map(r => r.marks)).toEqual([6, 6, 6]);
+    expect(card('sb-q8-a-iii').rows.map(r => r.marks)).toEqual([4, 4, 4]);
+    for (const c of ORDINARY.filter(item => item.year === 2011 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = ORDINARY.filter(c => c.year === 2011)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '10. Maintain',
+      'Price Quantity Demanded', 'Visible Exports Visible Imports']) {
       expect(text, junk).not.toContain(junk);
     }
   });
