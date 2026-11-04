@@ -103,7 +103,7 @@ describe('2020 Foundation independently reviewed boundaries',()=>{
       expect(guide).toContain('50%');
       expect(guide).not.toContain('80–90 focal: 0');
       expect(guide).not.toContain('Sármhaith 9–11');
-      expect(guide).toContain('belongs only to the modified marking scheme');
+      expect(story.markingGuideNote).toContain('belongs only to the modified marking scheme');
     }
     expect(get('W-5A').schemePages).toEqual([13]);
     expect(get('W-5B').schemePages).toEqual([14,15]);

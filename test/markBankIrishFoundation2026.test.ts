@@ -12,6 +12,8 @@ import { tariffReconciles } from '../types/markBank';
 
 const cards=ALL_CARDS.filter(c=>c.year===2026);
 const get=(key:string)=>authored.cards.find(c=>c.atlasQuestionId===key)!;
+// Our own examiner notes are the card's English note, never its scheme guidance (irish_lifted.py).
+const note=(n:string)=>get(n).markingGuideNote;
 const guide=(key:string,id:string)=>get(key).criteria.find(c=>c.id===id)!.guidance.join(' ');
 
 describe('2026 Foundation source reconciliation',()=>{
@@ -75,7 +77,7 @@ describe('2026 Foundation source reconciliation',()=>{
       }
       expect(expected[j].reduce((sum,[,marks])=>sum+marks,0)).toBe(j<3?25:30);
     }
-    expect(guide('R-3A-4','answer')).toContain('rathúil on the paper');
+    expect(note('R-3A-4')).toContain('rathúil on the paper');
     expect(get('R-3C-1').questionText).toContain('“Taibhse mór”\n“Taibhsín bídeach”\n“Teach dhá stór”');
   });
 
@@ -95,7 +97,7 @@ describe('2026 Foundation source reconciliation',()=>{
     expect(letter.questionText).toContain('Turas go Londain\nDé hAoine 9 Meitheamh – Dé Domhnaigh 11 Meitheamh\nCostas €200');
     expect(letter.sourceDiscrepancyNotice).toContain('Foirm Iarratais');
     for(const key of ['W-4A','W-4B','W-5A','W-5B']) {
-      expect(guide(key,'gaeilge')).toContain('An-mhaith 6–8; Maith / Maith go leor 3–5; Lag / An-lag 0–2');
+      expect(guide(key,'gaeilge')).not.toContain('An-mhaith 6–8; Maith / Maith go leor 3–5'); // our typed band summary
       expect(guide(key,'gaeilge')).not.toContain('An-mhaith 7–8');
     }
     expect(cardsForTopic('irish-2-8',cards)).toContain(cards.find(c=>c.id==='irish-2026-fl-w-4b')!);
@@ -107,8 +109,9 @@ describe('2026 Foundation source reconciliation',()=>{
       const c=get('W-'+slot);
       expect(c.criteria.filter(r=>r.kind==='award').map(r=>r.maxMarks)).toEqual([34,11]);
       expect(c.criteria.find(r=>r.id==='length')).toMatchObject({kind:'deduction',maxMarks:4,deductFrom:'cumarsaid'});
-      expect(guide('W-'+slot,'cumarsaid')).toContain('30, 26, 22, 18 or 14');
-      expect(guide('W-'+slot,'length')).toContain('Fad = −0');
+      expect(note('W-'+slot)).toContain('30, 26, 22, 18 or 14');
+      expect(note('W-'+slot)).toContain('Fad = −0');
+      expect(guide('W-'+slot,'length')).toBe('Líon Focal Pionós 80-90 0 60-79 - 2 30-59 - 3 <30 - 4'); // the printed table (PDF 12)
     }
     expect(get('W-5A').sourceDiscrepancyNotice).toContain('Féile cheoil');
     expect(guide('W-5B','cumarsaid')).toContain('An madra caillte');

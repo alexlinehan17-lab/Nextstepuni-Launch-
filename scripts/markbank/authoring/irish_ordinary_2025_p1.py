@@ -148,7 +148,7 @@ def material():
             assert chunk.endswith('mharc') and '3 mharc' in chunk, (seg[0], cid, chunk[-60:])
             seg[5][i] = (cid, label, prompt, chunk, pages)
     assert sum(len(seg[5]) for seg in segments) == 20
-    general = 'Nóta (scheme PDF 7): ' + stext[6].split('Nóta:', 1)[1].split('Cuid A (24 marc)', 1)[0].strip()
+    general = 'Nóta: ' + stext[6].split('Nóta:', 1)[1].split('Cuid A (24 marc)', 1)[0].strip()
     assert general.endswith('chomh maith.')
 
     marking = stext[9][stext[9].index('Freagair do rogha dhá cheann'):]

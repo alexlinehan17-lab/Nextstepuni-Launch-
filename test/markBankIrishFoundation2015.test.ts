@@ -102,8 +102,8 @@ describe('2015 Foundation independently reviewed boundaries',()=>{
       expect(guide).not.toMatch(/[\uE000-\uF8FF]/);
       expect(guide).not.toContain('80–90 focal: 0');
       expect(guide).not.toContain('Sármhaith 9–11');
-      expect(guide).toContain('modified marking scheme');
-      expect(guide).toContain('Do not apply that conversion to the standard rubric');
+      expect(story.markingGuideNote).toContain('modified marking scheme');
+      expect(story.markingGuideNote).toContain('Do not apply that conversion to the standard rubric');
     }
     expect(get('W-5A').schemePages).toEqual([13]);
     expect(get('W-5B').schemePages).toEqual([14]);

@@ -14,6 +14,7 @@ import json
 import re
 from pathlib import Path
 from irish_choice import withdraw_combinations
+from irish_lifted import printed, scheme_words_in
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001BLP000IV'
@@ -360,7 +361,7 @@ def build():
         '- An t-am a rachaidh sibh abhaile — Pictiúr 4\n\n'
         'N.B. Bíodh an leagan amach cuí ar do fhreagra: tús agus críoch oiriúnach.',
         'irish-9-3',['letterWriting'],[15],[11,12],[
-            criterion('iarracht','Iarracht ar an bhfreagra',1,['Iarracht ar an bhfreagra = 1 mharc.']),
+            criterion('iarracht','Iarracht ar fhreagra',1,[printed(scheme_guidance(11,12)[0]+' '+scheme_guidance(11,12)[1], r'Iarracht ar fhreagra\s*= 1 mharc')]),
             criterion('beannu','Beannú',1,['Beannú = 1 mharc.']),
             criterion('slan','Slán / Síniú',1,['Slán / Síniú = 1 mharc.']),
             criterion('pictiur1','Pictiúr 1',7,[scheme_guidance(12,12)[0].split('Pictiúr 1',1)[1].split('Pictiúr 3',1)[0]]),
@@ -428,6 +429,7 @@ def main():
     parser.add_argument('--check',action='store_true')
     args=parser.parse_args()
     data,scheme=build()
+    scheme_words_in(data)  # guidance carries the SEC's words only (irish_lifted.py)
     content=json.dumps(data,ensure_ascii=False,indent=2)+'\n'
     scheme_text='# Gaeilge Bonnleibhéal 2017 — SEC marking scheme\n\n'+'\n\n'.join(f'## PDF page {i+1}\n\n'+scheme_page_text(p) for i,p in enumerate(scheme))
     scheme_text = '\n'.join(line.rstrip() for line in scheme_text.splitlines()).rstrip()+'\n'

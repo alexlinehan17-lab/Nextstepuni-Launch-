@@ -1718,7 +1718,7 @@
       "section": "2",
       "atlasQuestionId": "P-2A-a-i",
       "questionRef": "2023 OL Paper 2 Prós 2A(a) · Hurlamaboc · (i)",
-      "questionText": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2A Prós Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c) thíos.\n(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(i) Cén fáth a mbeidh cóisir i dteach mhuintir Albright? (5 marc)",
+      "questionText": "(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(i) Cén fáth a mbeidh cóisir i dteach mhuintir Albright? (5 marc)",
       "totalMarks": 5,
       "topicId": "irish-4-5",
       "conceptId": "irish-ol-p2-prose-2a-a-i",
@@ -1768,7 +1768,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2A Prós Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c) thíos."
     },
     {
       "id": "irish-2023-ol-p2-prose-2a-a-ii",
@@ -1778,7 +1779,7 @@
       "section": "2",
       "atlasQuestionId": "P-2A-a-ii",
       "questionRef": "2023 OL Paper 2 Prós 2A(a) · Hurlamaboc · (ii)",
-      "questionText": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2A Prós Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c) thíos.\n(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(ii) Scríobh síos dhá phointe eolais faoi na hullmhúcháin atá déanta ag Lisín don chóisir. (5 marc)",
+      "questionText": "(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(ii) Scríobh síos dhá phointe eolais faoi na hullmhúcháin atá déanta ag Lisín don chóisir. (5 marc)",
       "totalMarks": 5,
       "topicId": "irish-4-5",
       "conceptId": "irish-ol-p2-prose-2a-a-ii",
@@ -1825,7 +1826,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2A Prós Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c) thíos."
     },
     {
       "id": "irish-2023-ol-p2-prose-2a-a-iii",
@@ -1835,7 +1837,7 @@
       "section": "2",
       "atlasQuestionId": "P-2A-a-iii",
       "questionRef": "2023 OL Paper 2 Prós 2A(a) · Hurlamaboc · (iii)",
-      "questionText": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2A Prós Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c) thíos.\n(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(iii) Luaigh dhá rud faoin gcuma atá ar Lisín. (5 marc)",
+      "questionText": "(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(iii) Luaigh dhá rud faoin gcuma atá ar Lisín. (5 marc)",
       "totalMarks": 5,
       "topicId": "irish-4-5",
       "conceptId": "irish-ol-p2-prose-2a-a-iii",
@@ -1882,7 +1884,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2A Prós Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c) thíos."
     },
     {
       "id": "irish-2023-ol-p2-prose-2a-a-iv",
@@ -1892,7 +1895,7 @@
       "section": "2",
       "atlasQuestionId": "P-2A-a-iv",
       "questionRef": "2023 OL Paper 2 Prós 2A(a) · Hurlamaboc · (iv)",
-      "questionText": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2A Prós Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c) thíos.\n(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(iv) Tabhair dhá phointe eolais faoi Ruán agus Cuán, an bheirt mhac atá ag Lisín agus Pól. (5 marc)",
+      "questionText": "(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(iv) Tabhair dhá phointe eolais faoi Ruán agus Cuán, an bheirt mhac atá ag Lisín agus Pól. (5 marc)",
       "totalMarks": 5,
       "topicId": "irish-4-5",
       "conceptId": "irish-ol-p2-prose-2a-a-iv",
@@ -1939,7 +1942,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2A Prós Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c) thíos."
     },
     {
       "id": "irish-2023-ol-p2-prose-2a-a-v",
@@ -1949,7 +1953,7 @@
       "section": "2",
       "atlasQuestionId": "P-2A-a-v",
       "questionRef": "2023 OL Paper 2 Prós 2A(a) · Hurlamaboc · (v)",
-      "questionText": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2A Prós Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c) thíos.\n(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(v) Tabhair dhá rud a léiríonn go bhfuil ag éirí go sármhaith le Pól, fear céile Lisín. (5 marc)",
+      "questionText": "(a) Freagair na ceisteanna thíos faoin ngiota as an úrscéal Hurlamaboc.\nHurlamaboc\n(v) Tabhair dhá rud a léiríonn go bhfuil ag éirí go sármhaith le Pól, fear céile Lisín. (5 marc)",
       "totalMarks": 5,
       "topicId": "irish-4-5",
       "conceptId": "irish-ol-p2-prose-2a-a-v",
@@ -1996,7 +2000,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2A Prós Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c) thíos."
     },
     {
       "id": "irish-2023-ol-p2-prose-2a-c-an-lasair-choille",
@@ -2006,7 +2011,7 @@
       "section": "2",
       "atlasQuestionId": "P-2A-c-an-lasair-choille",
       "questionRef": "2023 OL Paper 2 Prós 2A(c) · An Lasair Choille",
-      "questionText": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2A Prós Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c) thíos.\n(c) Freagair an cheist thíos faoin scannán Cáca Milis nó faoin dráma An Lasair Choille.\nAn Lasair Choille\nTabhair cuntas ar an gcineál saoil atá ag an bhfear óg, Séamas, agus é ag tabhairt aire don seanfhear, Micil, sa dráma An Lasair Choille. (25 marc)",
+      "questionText": "(c) Freagair an cheist thíos faoin scannán Cáca Milis nó faoin dráma An Lasair Choille.\nAn Lasair Choille\nTabhair cuntas ar an gcineál saoil atá ag an bhfear óg, Séamas, agus é ag tabhairt aire don seanfhear, Micil, sa dráma An Lasair Choille. (25 marc)",
       "totalMarks": 25,
       "topicId": "irish-4-8",
       "conceptId": "irish-ol-p2-prose-2a-c-an-lasair-choille",
@@ -2081,11 +2086,11 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh] — applied once to this whole 25-mark answer."
+            "[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]"
           ]
         }
       ],
-      "markingGuideNote": "One complete SEC response: five points at 5 (2 for the bare point + 3 for development); the 0–4 Gaeilge deduction applies once. The sample points are indicative rather than exhaustive. 2A(c) offers Cáca Milis or An Lasair Choille; this card is An Lasair Choille.",
+      "markingGuideNote": "One complete SEC response: five points at 5 (2 for the bare point + 3 for development); the 0–4 Gaeilge deduction applies once. The sample points are indicative rather than exhaustive. 2A(c) offers Cáca Milis or An Lasair Choille; this card is An Lasair Choille. applied once to this whole 25-mark answer.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Prós Ainmnithe",
@@ -2095,7 +2100,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 2A (Prós Ainmnithe) nó 2B (Prós Roghnach).\n2A Prós Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c) thíos."
     },
     {
       "id": "irish-2023-ol-p2-poetry-3a-a-i",
@@ -2105,7 +2111,7 @@
       "section": "2",
       "atlasQuestionId": "F-3A-a-i",
       "questionRef": "2023 OL Paper 2 Filíocht 3A(a) · Géibheann · (i)",
-      "questionText": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c).\n(a) Géibheann\n(i) Tabhair dhá phointe eolais, i d’fhocail féin, faoin íomhá (faoin bpictiúr) den ainmhí a fhaighimid sna línte 1-8 den dán. (8 marc)",
+      "questionText": "(a) Géibheann\n(i) Tabhair dhá phointe eolais, i d’fhocail féin, faoin íomhá (faoin bpictiúr) den ainmhí a fhaighimid sna línte 1-8 den dán. (8 marc)",
       "totalMarks": 8,
       "topicId": "irish-5-2",
       "conceptId": "irish-ol-p2-poetry-3a-a-i",
@@ -2158,7 +2164,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c)."
     },
     {
       "id": "irish-2023-ol-p2-poetry-3a-a-ii",
@@ -2168,7 +2175,7 @@
       "section": "2",
       "atlasQuestionId": "F-3A-a-ii",
       "questionRef": "2023 OL Paper 2 Filíocht 3A(a) · Géibheann · (ii)",
-      "questionText": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c).\n(a) Géibheann\n(ii) Déan cur síos, i d’fhocail féin, ar dhá athrú atá ar shaol an ainmhí anois sna línte 9-17. (8 marc)",
+      "questionText": "(a) Géibheann\n(ii) Déan cur síos, i d’fhocail féin, ar dhá athrú atá ar shaol an ainmhí anois sna línte 9-17. (8 marc)",
       "totalMarks": 8,
       "topicId": "irish-5-2",
       "conceptId": "irish-ol-p2-poetry-3a-a-ii",
@@ -2221,7 +2228,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c)."
     },
     {
       "id": "irish-2023-ol-p2-poetry-3a-a-iii",
@@ -2231,7 +2239,7 @@
       "section": "2",
       "atlasQuestionId": "F-3A-a-iii",
       "questionRef": "2023 OL Paper 2 Filíocht 3A(a) · Géibheann · (iii)",
-      "questionText": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c).\n(a) Géibheann\n(iii) Scríobh síos an mothúchán is láidre sa dán, dar leat.\nTabhair dhá shampla, i d’fhocail féin, den mhothúchán sin sa dán. (9 marc)",
+      "questionText": "(a) Géibheann\n(iii) Scríobh síos an mothúchán is láidre sa dán, dar leat.\nTabhair dhá shampla, i d’fhocail féin, den mhothúchán sin sa dán. (9 marc)",
       "totalMarks": 9,
       "topicId": "irish-5-2",
       "conceptId": "irish-ol-p2-poetry-3a-a-iii",
@@ -2285,7 +2293,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c)."
     },
     {
       "id": "irish-2023-ol-p2-poetry-3a-b-i",
@@ -2295,7 +2304,7 @@
       "section": "2",
       "atlasQuestionId": "F-3A-b-i",
       "questionRef": "2023 OL Paper 2 Filíocht 3A(b) · An tEarrach Thiar · (i)",
-      "questionText": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c).\n(b) An tEarrach Thiar\n(i) Déan cur síos, i d’fhocail féin, ar an íomhá (ar an bpictiúr) den fhear a thugann an file dúinn i véarsa a dó den dán. (Is leor dhá phointe eolais.) (8 marc)",
+      "questionText": "(b) An tEarrach Thiar\n(i) Déan cur síos, i d’fhocail féin, ar an íomhá (ar an bpictiúr) den fhear a thugann an file dúinn i véarsa a dó den dán. (Is leor dhá phointe eolais.) (8 marc)",
       "totalMarks": 8,
       "topicId": "irish-5-3",
       "conceptId": "irish-ol-p2-poetry-3a-b-i",
@@ -2349,7 +2358,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c)."
     },
     {
       "id": "irish-2023-ol-p2-poetry-3a-b-ii",
@@ -2359,7 +2369,7 @@
       "section": "2",
       "atlasQuestionId": "F-3A-b-ii",
       "questionRef": "2023 OL Paper 2 Filíocht 3A(b) · An tEarrach Thiar · (ii)",
-      "questionText": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c).\n(b) An tEarrach Thiar\n(ii) Scríobh síos, i d’fhocail féin, dhá phointe eolais faoin gcurrach i véarsa a ceathair. (8 marc)",
+      "questionText": "(b) An tEarrach Thiar\n(ii) Scríobh síos, i d’fhocail féin, dhá phointe eolais faoin gcurrach i véarsa a ceathair. (8 marc)",
       "totalMarks": 8,
       "topicId": "irish-5-3",
       "conceptId": "irish-ol-p2-poetry-3a-b-ii",
@@ -2413,7 +2423,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c)."
     },
     {
       "id": "irish-2023-ol-p2-poetry-3a-b-iii",
@@ -2423,7 +2434,7 @@
       "section": "2",
       "atlasQuestionId": "F-3A-b-iii",
       "questionRef": "2023 OL Paper 2 Filíocht 3A(b) · An tEarrach Thiar · (iii)",
-      "questionText": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c).\n(b) An tEarrach Thiar\n(iii) Ar thaitin saol an oileáin leis an bhfile, dar leat?\nTabhair dhá fháth, i d’fhocail féin, le do fhreagra. (9 marc)",
+      "questionText": "(b) An tEarrach Thiar\n(iii) Ar thaitin saol an oileáin leis an bhfile, dar leat?\nTabhair dhá fháth, i d’fhocail féin, le do fhreagra. (9 marc)",
       "totalMarks": 9,
       "topicId": "irish-5-3",
       "conceptId": "irish-ol-p2-poetry-3a-b-iii",
@@ -2478,7 +2489,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c)."
     },
     {
       "id": "irish-2023-ol-p2-poetry-3a-c-i",
@@ -2488,7 +2500,7 @@
       "section": "2",
       "atlasQuestionId": "F-3A-c-i",
       "questionRef": "2023 OL Paper 2 Filíocht 3A(c) · Mo ghrá-sa (idir lúibíní) · (i)",
-      "questionText": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c).\n(c) Mo ghrá-sa (idir lúibíní)\n(i) Scríobh síos, dhá phointe eolais, i d’fhocail féin, a thugann an file dúinn faoin bhfear sna línte 1-8 den dán. (8 marc)",
+      "questionText": "(c) Mo ghrá-sa (idir lúibíní)\n(i) Scríobh síos, dhá phointe eolais, i d’fhocail féin, a thugann an file dúinn faoin bhfear sna línte 1-8 den dán. (8 marc)",
       "totalMarks": 8,
       "topicId": "irish-5-4",
       "conceptId": "irish-ol-p2-poetry-3a-c-i",
@@ -2542,7 +2554,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c)."
     },
     {
       "id": "irish-2023-ol-p2-poetry-3a-c-ii",
@@ -2552,7 +2565,7 @@
       "section": "2",
       "atlasQuestionId": "F-3A-c-ii",
       "questionRef": "2023 OL Paper 2 Filíocht 3A(c) · Mo ghrá-sa (idir lúibíní) · (ii)",
-      "questionText": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c).\n(c) Mo ghrá-sa (idir lúibíní)\n(ii) Déan cur síos, i d’fhocail féin, ar an íomhá (ar an bpictiúr) den fhear a thugann an file dúinn sna línte 9-16 den dán. (Is leor dhá phointe eolais.) (8 marc)",
+      "questionText": "(c) Mo ghrá-sa (idir lúibíní)\n(ii) Déan cur síos, i d’fhocail féin, ar an íomhá (ar an bpictiúr) den fhear a thugann an file dúinn sna línte 9-16 den dán. (Is leor dhá phointe eolais.) (8 marc)",
       "totalMarks": 8,
       "topicId": "irish-5-4",
       "conceptId": "irish-ol-p2-poetry-3a-c-ii",
@@ -2606,7 +2619,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c)."
     },
     {
       "id": "irish-2023-ol-p2-poetry-3a-c-iii",
@@ -2616,7 +2630,7 @@
       "section": "2",
       "atlasQuestionId": "F-3A-c-iii",
       "questionRef": "2023 OL Paper 2 Filíocht 3A(c) · Mo ghrá-sa (idir lúibíní) · (iii)",
-      "questionText": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe — Freagair do rogha dhá cheann as (a), (b) nó (c).\n(c) Mo ghrá-sa (idir lúibíní)\n(iii) An maith leat an dán seo?\nTabhair dhá fháth, i d’fhocail féin, le do fhreagra. (9 marc)",
+      "questionText": "(c) Mo ghrá-sa (idir lúibíní)\n(iii) An maith leat an dán seo?\nTabhair dhá fháth, i d’fhocail féin, le do fhreagra. (9 marc)",
       "totalMarks": 9,
       "topicId": "irish-5-4",
       "conceptId": "irish-ol-p2-poetry-3a-c-iii",
@@ -2671,7 +2685,8 @@
         ],
         "attribution": "© State Examinations Commission.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
-      }
+      },
+      "stem": "Freagair 3A (Filíocht Ainmnithe) nó 3B (Filíocht Roghnach).\n3A Filíocht Ainmnithe\nFreagair do rogha dhá cheann as (a), (b) nó (c)."
     }
   ]
 }

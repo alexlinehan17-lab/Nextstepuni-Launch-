@@ -41,7 +41,7 @@ describe('2022 Foundation independently reviewed boundaries',()=>{
     }
     expect(authored.cards.filter(c=>c.atlasQuestionId.startsWith('A-')).map(c=>c.criteria[0].guidance[0])).toEqual([
       'Múinteoir ceoil = an dara pictiúr','Páirt i scannáin mhóra: 7 marc. Páirt i Ros na Rún: 5 mharc.',
-      'Páras = an tríú pictiúr','Chun na radhairc a fheiceáil','Ionad Sláinte = an tríú pictiúr',
+      'Páras = an an tríú pictiúr','Chun na radhairc a fheiceáil','Ionad Sláinte = an tríú pictiúr',
       'An bosca ag an mbarr ar dheis (tic nó saighead sa bhosca)','Báisteach = an tríú pictiúr',
       '28 céim Celsius: 8 marc. 22 céim Celsius: 6 mharc.','Fuair sí tatú','€220','Beidh sí ag staidéar',
       'Scannán rómánsúil','A chol ceathracha','Uaireadóir galánta',
@@ -82,7 +82,8 @@ describe('2022 Foundation independently reviewed boundaries',()=>{
     }
     for(const c of authored.cards.filter(c=>c.section==='3')) {
       expect(c.totalMarks).toBe(45);
-      expect(c.criteria.find(r=>r.id==='gaeilge')!.guidance[0]).toBe('Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Lag 2–4; An-lag 1; Easnamhach 0.');
+      // Our typed summary of the band table is not the scheme's words; the printed descriptor stays.
+      expect(c.criteria.find(r=>r.id==='gaeilge')!.guidance.join(' ')).not.toContain('Sármhaith 9–11; An-mhaith 7–8;');
     }
     expect(get('W-4A').criteria.map(c=>c.maxMarks)).toEqual([1,10,13,5,5,11]);
     expect(get('W-4A').criteria.find(c=>c.id==='pictiur2')!.guidance.join(' ')).toContain('comhartha euro');

@@ -106,7 +106,9 @@ describe('2026 Ordinary Paper 2 source reconciliation', () => {
       expect(route.totalMarks, route.id).toBe(25);
       expect(route.taskRequirements[0], route.id).toBe('Freagair do rogha dhá cheann as (a), (b) nó (c).');
     }
-    expect(get('F-3B-a').questionText).toContain('Níl cead an dán roghnach céanna a úsáid faoi dhó');
+    // The section's printed lines lead in to the question (the card's stem), as on the 2022 and 2024 Higher routes.
+    expect(get('F-3B-a').stem).toContain('Níl cead an dán roghnach céanna a úsáid faoi dhó');
+    expect(get('F-3B-a').questionText).not.toContain('Níl cead');
     expect(authored.review).not.toHaveProperty('pairedRouteCardIds');
     const route = cards.find(c => c.id === 'irish-2026-ol-p2-prose-2a-a-caca-milis')!;
     if (route.rubric.system !== 'irish') throw new Error('Wrong rubric');

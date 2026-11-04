@@ -71,7 +71,8 @@ describe('2023 Higher Paper 1 source reconciliation (retained legacy cards)', ()
       }
       expect(card.questionText).toContain('Freagair do rogha CEANN AMHÁIN de A, B nó C anseo thíos.');
     }
-    const s4 = titles.filter(c => c.criteria[2].guidance.some(g => g.startsWith('S4 applies to this title')));
+    // Which titles S4 applies to is our note (the card's English note), not a line of the scheme's guidance.
+    const s4 = titles.filter(c => c.markingGuideNote.includes('S4 applies to this title'));
     expect(s4.map(c => c.atlasQuestionId)).toEqual(['W-A-c', 'W-A-e']);
     expect(get('composition-c-b').questionText).toContain('An dea-obair a dhéanann cumainn charthanachta.');
     expect(get('composition-b-b').questionText).toContain('Níl aon tinteán mar do thinteán féin.');

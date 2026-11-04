@@ -87,14 +87,14 @@ describe('2018 Foundation independently reviewed boundaries',()=>{
       expect(form.sourceMaterial.pages).toEqual([15]);
       expect(form.schemePages).toEqual([11,12]);
       const fields=form.criteria[0].guidance.join(' ');
-      expect(fields).toContain('21 ÷ 2 = 10½ → 11');
-      expect(fields).toContain('Do not round each half-mark field separately');
+      expect(form.markingGuideNote).toContain('21 ÷ 2 = 10½ → 11');
+      expect(form.markingGuideNote).toContain('Do not round each half-mark field separately');
       expect(fields).toContain('Facebook, Twitter, Snapchat');
       expect(fields).toContain('ach gan an dara ceann a chur san áireamh');
       const paragraph=form.criteria[1].guidance.join(' ');
       expect(paragraph).toContain('as 5 mharc mura bhfuil an t-alt');
       expect(paragraph).toContain('25%');
-      expect(paragraph).toContain('paragraph award only');
+      expect(form.markingGuideNote).toContain('paragraph award only');
       expect(paragraph).not.toContain('35–40 focal: 0');
     }
   });
@@ -109,7 +109,7 @@ describe('2018 Foundation independently reviewed boundaries',()=>{
       expect(guide).toContain('50%');
       expect(guide).not.toContain('80–90 focal: 0');
       expect(guide).not.toContain('Sármhaith 9–11');
-      expect(guide).toContain('belongs only to the modified marking scheme');
+      expect(story.markingGuideNote).toContain('belongs only to the modified marking scheme');
     }
     expect(get('W-5A').schemePages).toEqual([13]);
     expect(get('W-5B').schemePages).toEqual([14,15]);

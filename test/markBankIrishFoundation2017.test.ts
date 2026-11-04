@@ -48,7 +48,7 @@ describe('2017 Foundation independently reviewed boundaries',()=>{
     const expected=[
       ['20 Aibreán','Innealtóireacht','10.30 p.m.','Glaoch teileafóin','Oifigeach Pearsanra'],
       ['Gar do chósta Dhún na nGall','Ar bhád farantóireachta','Sráidbhaile saoire','Radhairc bhreátha','Gaeilge'],
-      ['Sa leabharlann phoiblí','SEC answer key: Déardaoin — 5 mharc.','Matamaitic','A sé a chlog','An leabharlannaí'],
+      ['Sa leabharlann phoiblí','Déardaoin — 5 mharc.','Matamaitic','A sé a chlog','An leabharlannaí'],
       ['Láithreoir teilifíse','Ní raibh a lán cairde aici','Dlí','Clár cúrsaí reatha','Go bialann Indiach'],
       ['Márta','Glas','I Nua-Eabhrac','Peil agus iománaíocht','Iarracht níos mó Gaeilge a labhairt'],
       ['An t-ionad campála','Ag spalpadh','Tuismitheoirí','Peil','Gach lá gan sos'],
@@ -105,7 +105,7 @@ describe('2017 Foundation independently reviewed boundaries',()=>{
       expect(guide).not.toMatch(/[\uE000-\uF8FF]/);
       expect(guide).not.toContain('80–90 focal: 0');
       expect(guide).not.toContain('Sármhaith 9–11');
-      expect(guide).toContain('belongs only to the modified marking scheme');
+      expect(story.markingGuideNote).toContain('belongs only to the modified marking scheme');
     }
     expect(get('W-5A').schemePages).toEqual([13]);
     expect(get('W-5B').schemePages).toEqual([14,15]);

@@ -3127,7 +3127,6 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Maith go leor 4; Lag 2–3; An-lag 1; Easnamhach 0.",
             "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
             "Bronn marc as 11 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
@@ -3244,7 +3243,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Timpeall 40 focal. Tábla foilsithe: 20–40 focal: 0; 1–19 focal: −1. Foilsítear uasteorainn −3 ach ní thugtar tairseacha breise: ná cum rialacha eile."
+            "Líon Focal Pionós 20-40 -0 1-19 - 1"
           ],
           "deductFrom": "paragraph"
         },
@@ -3269,7 +3268,6 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Maith go leor 4; Lag 2–3; An-lag 1; Easnamhach 0.",
             "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
             "Bronn marc as 11 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
@@ -3382,7 +3380,6 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Maith go leor 4; Lag 2–3; An-lag 1; Easnamhach 0.",
             "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
             "Bronn marc as 11 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
@@ -3401,7 +3398,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "80–90 focal: 0; 60–79: −2; 30–59: −3; <30: −4."
+            "Líon Focal Pionós 80-90 0 60-79 - 2 30-59 - 3 <30 - 4"
           ],
           "deductFrom": "cumarsaid"
         }
@@ -3515,7 +3512,6 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Maith go leor 4; Lag 2–3; An-lag 1; Easnamhach 0.",
             "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
             "Bronn marc as 11 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
@@ -3534,7 +3530,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "80–90 focal: 0; 60–79: −2; 30–59: −3; <30: −4."
+            "Líon Focal Pionós 80-90 0 60-79 - 2 30-59 - 3 <30 - 4"
           ],
           "deductFrom": "cumarsaid"
         }

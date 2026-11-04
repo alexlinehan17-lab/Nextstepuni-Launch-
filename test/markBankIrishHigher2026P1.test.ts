@@ -52,8 +52,9 @@ describe('2026 Higher Paper 1 source reconciliation',()=>{
       expect(card.audioMaterial).toMatchObject({playbackUrl:AUDIO,canonicalUrl:AUDIO,secFileid:'LC001ZLP017IV.mp3'});
       expect(card.schemeFileid).toBe('LC001ALP100IV');
     }
-    expect(guide('L-B-C2-M1-2')).toContain('“bonn a bhuachan”');
-    expect(guide('L-C-P2-2')).toContain('“seirbhísí óga”');
+    // Where the paper's wording differs from the scheme's is our note, not a line of the scheme's guidance.
+    expect(get('L-B-C2-M1-2').markingGuideNote).toContain('“bonn a bhuachan”');
+    expect(get('L-C-P2-2').markingGuideNote).toContain('“seirbhísí óga”');
     expect(get('L-A-F1-2').criteria[0].guidance[0]).toContain('2 mharc + 2 mharc');
   });
 
@@ -79,7 +80,7 @@ describe('2026 Higher Paper 1 source reconciliation',()=>{
       expect(guide(card.atlasQuestionId)).toContain('76-80 marc');
       expect(guide(card.atlasQuestionId)).toContain('Gaeilge (68)');
       expect(card.questionText).toContain(`An rogha don chárta seo: ${card.atlasQuestionId.slice(2,3)}(${card.atlasQuestionId.slice(4)}).`);
-      expect(guide(card.atlasQuestionId).includes('S4 applies to this title'),card.id).toBe(['W-A-a','W-A-b','W-A-c'].includes(card.atlasQuestionId));
+      expect(card.markingGuideNote.includes('S4 applies to this title'),card.id).toBe(['W-A-a','W-A-b','W-A-c'].includes(card.atlasQuestionId));
     }
     expect(get('W-A-a').questionText).toContain('An Ghaeilge agus an cultúr Gaelach – ag dul ó neart go neart?');
     expect(get('W-B-b').questionText).toContain('Bíonn siúlach scéalach.');

@@ -14,6 +14,7 @@ import json
 import re
 from pathlib import Path
 from irish_choice import withdraw_combinations
+from irish_lifted import printed, printed_length, scheme_words_in
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001BLP000IV'
@@ -299,7 +300,7 @@ def build():
         'irish-9-3',['letterWriting'],[15],[11,12],[
             criterion('seoladh','Seoladh',2,['Dhá chuid (1 + 1), as Gaeilge. Glac lena leithéid de “Bóthar Crumlin” nó “Sráid Patrick”. Ná glac le hainm an bhaile i mBéarla.']),
             criterion('data','Dáta',1,['Glac le figiúirí.']),
-            criterion('beannu','Beannú',1,['Ainm ar bith, fiú a chara.']),
+            criterion('beannu','Beannú',1,[printed(' '.join(scheme_guidance(11,12)), r'Beannú: Ainm ar bith nó a chara')]),
             criterion('crioch','Críoch / Slán',2,['Dhá chuid ag teastáil: Slán … agus ainm.']),
             *[criterion(f'pictiur{i}',f'Pictiúr {i} · '+('dhá phointe eolais' if i<3 else 'dhá rud'),7,
                 [scheme_guidance(12,12)[0].split(f'Pictiúr {i}',1)[1].split(f'Pictiúr {i+1}',1)[0].split('Cuir tic',1)[0]]) for i in range(1,5)],
@@ -336,7 +337,7 @@ def build():
                     scheme_guidance(16,16)[0].split('Cruinneas Gaeilge',1)[0],
                 ]),
                 copy.deepcopy(language),
-                criterion('length','Fad',4,['80–90 focal: 0; 60–79: −2; 30–59: −3; <30: −4.'],deduct_from='cumarsaid')],
+                criterion('length','Fad',4,[printed_length(' '.join(scheme_guidance(13 if slot=='5A' else 14,end)))],deduct_from='cumarsaid')],
             ['Scríobh timpeall 90 focal in Iris na Scoile.','Tabhair cúig thagairt ar a laghad don ócáid sna pictiúir.'],
             'References in the scheme are indicative, not a closed selection pool. One shared communication award and one language award cover the whole response. The communication ceiling is reduced by four per missing reference. For 5(b), cover each of the four pictures plus a fifth detail. Apply the word-count penalty only within communication.'))
     # The 2021 paper selects ONE writing response: no paired writing routes.
@@ -372,6 +373,7 @@ def main():
     parser.add_argument('--check',action='store_true')
     args=parser.parse_args()
     data,scheme=build()
+    scheme_words_in(data)  # guidance carries the SEC's words only (irish_lifted.py)
     content=json.dumps(data,ensure_ascii=False,indent=2)+'\n'
     scheme_text='# Gaeilge Bonnleibhéal 2021 — SEC marking scheme\n\n'+'\n\n'.join(f'## PDF page {i+1}\n\n'+p.get_text() for i,p in enumerate(scheme))
     outputs={OUT:content,ROOT/'examiner-reports/irish/schemes/2021-fl.md':scheme_text}

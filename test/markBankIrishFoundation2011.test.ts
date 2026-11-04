@@ -11,6 +11,8 @@ import {tariffReconciles} from '../types/markBank';
 import {examTopicIdsForQuestion,curriculumNodeIdsForExamTopic} from '../data/examTopics/registry';
 const get=(n:string)=>written.cards.find(c=>c.atlasQuestionId===n)!;
 const guide=(n:string,id:string)=>get(n).criteria.find(c=>c.id===id)!.guidance.join(' ');
+// Our own examiner notes are the card's English note, never its scheme guidance (irish_lifted.py).
+const note=(n:string)=>get(n).markingGuideNote;
 const cards=CARDS.filter(c=>c.year===2011);
 const loadMap=(file:string)=>JSON.parse(readFileSync(`public/paper-answers/2011/${file}.pdf.json`,'utf8'));
 
@@ -60,7 +62,7 @@ describe('2011 Foundation separate written and listening papers',()=>{
     expect(written.cards.filter(c=>/^R-1-/.test(c.atlasQuestionId)).map(c=>c.criteria[0].guidance[0]).join('')).toBe('EJAHDIFCGB');
     const expected=[
       ['25 Márta','Innealtóireacht','San Institiúid Teicneolaíochta','Taithí oibre sa Chuntasaíocht','A teastas breithe'],
-      ['Gaeltacht Chiarraí','SEC answer key: Ranganna Céilí — 5 mharc.','Ar chúl an tí','Tae nó caife','Ceoltóirí na háite'],
+      ['Gaeltacht Chiarraí','Ranganna Céilí — 5 mharc.','Ar chúl an tí','Tae nó caife','Ceoltóirí na háite'],
       ['75','Gadaí','Sa chistin','A iníon Áine','Os comhair na cúirte'],
       ['Ar an teilifís','D’oibrigh sé i siopa búistéara','2006','Fear a’tí','Fir na hÉireann'],
       ['Ceol traidisiúnta','Seachtain','An phíb uilleann','D’fhill Willie ar Chontae an Chláir','Cairde Willie'],
@@ -72,8 +74,8 @@ describe('2011 Foundation separate written and listening papers',()=>{
       expect(c.schemePages).toEqual(j<3?[4]:partial?[5,6]:[5]);
       expect(c.criteria[0].permittedMarks).toEqual(partial?[0,2,4,6]:[0,j<3?5:6]);
     }
-    expect(guide('R-2B-2','answer')).toContain('absent from the passage and options');
-    expect(guide('R-2B-2','answer')).toContain('scheme does not explicitly award');
+    expect(note('R-2B-2')).toContain('absent from the passage and options');
+    expect(note('R-2B-2')).toContain('scheme does not explicitly award');
     expect(guide('R-3A-2','answer')).toContain('Búistéar, sorcas, thiomáin sé bád');
     expect(guide('R-3B-4','answer')).toContain('D’fhill sé abhaile');
     expect(guide('R-3C-2','answer')).toContain('Is bhí an t-ocras mór dá chrá');
@@ -84,12 +86,12 @@ describe('2011 Foundation separate written and listening papers',()=>{
     expect(guide('W-4A','pictiur4')).toContain('Ospidéal na bPáistí');
     expect(get('W-4B').criteria.map(c=>c.maxMarks)).toEqual([2,1,1,12,2,2,2,8]);
     expect(get('W-4B').questionText).toContain('CUIREADH chuig Úna');
-    expect(guide('W-4B','pictiur1')).toContain('Published day-rule conflict');
+    expect(note('W-4B')).toContain('Published day-rule conflict');
     expect(guide('W-4B','pictiur2')).toContain('Ná glac le cóipeáil glan');
     expect(get('W-5A').criteria.map(c=>c.maxMarks)).toEqual([2,1,1,2,4,12,4,4,10]);
     expect(get('W-5A').schemePages).toEqual([13,14,15]);
     expect(get('W-5A').questionText).toContain('(Dhá phointe ag teastáil)');
-    expect(guide('W-5A','pictiur3')).toContain('No unsupported per-reference tariff');
+    expect(note('W-5A')).toContain('No unsupported per-reference tariff');
     expect(get('W-5A').markingGuideNote).toContain('actual totals 30+10');
   });
   it('keeps the form with its three printed August dates as one card and confines paragraph length to its15-mark award',()=>{
@@ -101,16 +103,16 @@ describe('2011 Foundation separate written and listening papers',()=>{
       expect(c.questionText).toContain('ar an dáta i mí Lúnasa is fearr leat le haghaidh agallaimh: 15ú / 17ú / 19ú');
       expect(c.questionText).toContain('Phil de Róiste');expect(c.criteria.map(r=>r.maxMarks)).toEqual([15,15,10]);
       expect(c.schemePages).toEqual([15,16]);expect(c.sourceMaterial.pages).toEqual([13]);
-      expect(c.criteria[0].guidance.join(' ')).toContain('21÷2=10½→11');
-      expect(c.criteria[0].guidance.join(' ')).toContain('undoubled values therefore sum 14');
-      expect(c.criteria[1].guidance.join(' ')).toContain('32 of 40 words→one-fifth');
+      expect(c.markingGuideNote).toContain('21÷2=10½→11');
+      expect(c.markingGuideNote).toContain('undoubled values therefore sum 14');
+      expect(c.markingGuideNote).toContain('32 of 40 words→one-fifth');
       expect(c.criteria[1].guidance.join(' ')).not.toContain('Mathamatics');
     }
   });
   it('does not import the later missing-reference penalty or alter other writing awards',()=>{
     for(const key of ['W-6A','W-6B']){
       expect(get(key).criteria.map(c=>[c.id,c.maxMarks])).toEqual([['cumarsaid',37],['gaeilge',13]]);
-      expect(guide(key,'cumarsaid')).toContain('does not specify a fixed 5-mark deduction');
+      expect(note(key)).toContain('does not specify a fixed 5-mark deduction');
       expect(guide(key,'cumarsaid')).not.toContain('ceiling32');
       expect(guide(key,'cumarsaid')).not.toMatch(/[\uE000-\uF8FF]/);
     }

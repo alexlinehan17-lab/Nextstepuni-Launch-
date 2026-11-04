@@ -21,6 +21,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from irish_lifted import scheme_words_in
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001ALP200IV'
@@ -339,6 +340,7 @@ def main():
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
     data = build()
+    scheme_words_in(data)  # guidance carries the SEC's words only (irish_lifted.py)
     content = json.dumps(data, ensure_ascii=False, indent=2) + '\n'
     if args.check:
         assert OUT.exists() and OUT.read_text() == content, f'Stale output: {OUT}'

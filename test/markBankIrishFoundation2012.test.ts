@@ -71,7 +71,7 @@ describe('2012 Foundation independently reviewed boundaries',()=>{
       expect(c.schemePages).toEqual(j<3?[4]:partials[`${slot}-${i}`]?[5,6]:[5]);
     }
     expect(get('R-3A-3').criteria[0].guidance.join(' ')).toContain('3 mharc: Ag canadh; Ag obair i gclubanna');
-    expect(get('R-3B-5').criteria[0].guidance.join(' ')).toContain('abairt iomlán');
+    expect(get('R-3B-5').criteria[0].guidance.join(' ')).not.toContain('Glac leis an abairt iomlán'); // our gloss, not the scheme's
     expect(get('R-3C-3').criteria[0].guidance.join(' ')).toContain('0 marc: líne2 leis féin');
     // Choice is not a route: each part keeps its own partial tariff; no pair card repeats it.
     expect(authored.cards.some(c=>/^R-[23]-[ABC]{2}$/.test(c.atlasQuestionId))).toBe(false);
@@ -102,15 +102,15 @@ describe('2012 Foundation independently reviewed boundaries',()=>{
       expect(form.sourceMaterial.pages).toEqual([15]);
       expect(form.schemePages).toEqual([11,12]);
       const fields=form.criteria[0].guidance.join(' '),paragraph=form.criteria[1].guidance.join(' ');
-      expect(fields).toContain('21 ÷2 =10½ →11');
-      expect(fields).toContain('cúig ábhar10; trí spórt6');
+      expect(form.markingGuideNote).toContain('21 ÷2 =10½ →11');
+      expect(fields).not.toContain('cúig ábhar10; trí spórt6'); // our typed summary of the printed column
       expect(fields).toContain('Márta');
       expect(fields).toContain('Math, Mathamatics nó Maths');
       expect(fields).toContain('Socer, Soccer, Saccer');
       expect(fields).toContain('Snúcar');
-      expect(paragraph).toContain('20 of40 words → deduct50%');
-      expect(paragraph).toContain('off-topic ceiling5');
-      expect(paragraph).toContain('No fixed number of references is required');
+      expect(form.markingGuideNote).toContain('20 of40 words → deduct50%');
+      expect(form.markingGuideNote).toContain('off-topic ceiling5');
+      expect(form.markingGuideNote).toContain('No fixed number of references is required');
       expect(paragraph).not.toContain('ceiling8');
     }
   });
@@ -121,12 +121,12 @@ describe('2012 Foundation independently reviewed boundaries',()=>{
       expect(story.totalMarks).toBe(50);
       expect(story.criteria.map(c=>[c.id,c.maxMarks])).toEqual([['cumarsaid',37],['gaeilge',13]]);
       const guide=story.criteria[0].guidance.join(' ');
-      expect(guide).toContain('ceiling32, communication27 minus9 =18');
-      expect(guide).toContain('ceiling27, communication20 minus10 =10');
-      expect(guide).toContain('never to language or the other question');
+      expect(story.markingGuideNote).toContain('ceiling32, communication27 minus9 =18');
+      expect(story.markingGuideNote).toContain('ceiling27, communication20 minus10 =10');
+      expect(story.markingGuideNote).toContain('never to language or the other question');
       expect(guide).not.toMatch(/[\uE000-\uF8FF]/);
       expect(guide).not.toContain('80–90 focal: 0');
-      expect(story.criteria[1].guidance.join(' ')).toContain('no four-mark language conversion table is printed in2012');
+      expect(story.markingGuideNote).toContain('no four-mark language conversion table is printed in2012');
     }
     expect(get('W-5A').schemePages).toEqual([13,14]);
     expect(get('W-5B').schemePages).toEqual([14,15]);

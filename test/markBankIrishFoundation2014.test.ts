@@ -63,7 +63,7 @@ describe('2014 Foundation independently reviewed boundaries',()=>{
     }
     expect(get('R-3A-4').criteria[0].guidance.join(' ')).toContain('Caitheann sí éadaí faiseanta');
     expect(get('R-3B-2').criteria[0].guidance.join(' ')).toContain('ómós don ghrian');
-    expect(get('R-3C-2').criteria[0].guidance.join(' ')).toContain('an véarsa ar fad: pionós −4');
+    expect(get('R-3C-2').criteria[0].guidance.join(' ')).not.toContain('an véarsa ar fad: pionós −4'); // our typed gloss, not the scheme's
     // Choice is not a route: each part keeps its own partial tariff; no pair card repeats it.
     expect(authored.cards.some(c=>/^R-[23]-[ABC]{2}$/.test(c.atlasQuestionId))).toBe(false);
   });
@@ -89,8 +89,8 @@ describe('2014 Foundation independently reviewed boundaries',()=>{
       expect(form.sourceMaterial.pages).toEqual([15]);
       expect(form.schemePages).toEqual([13,14]);
       const fields=form.criteria[0].guidance.join(' ');
-      expect(fields).toContain('21 ÷ 2 = 10½ → 11');
-      expect(fields).toContain('Do not round each half-mark field separately');
+      expect(form.markingGuideNote).toContain('21 ÷ 2 = 10½ → 11');
+      expect(form.markingGuideNote).toContain('Do not round each half-mark field separately');
       expect(fields).toContain('Cén post ba mhaith leat?');
       expect(form.questionText).toContain('Cuir tic le ceann amháin');
       expect(fields).toContain('Bebo');
@@ -99,7 +99,7 @@ describe('2014 Foundation independently reviewed boundaries',()=>{
       expect(paragraph).not.toContain('marc níos airde ná 8');
       expect(paragraph).toContain('as (5) mura bhfuil sé');
       expect(paragraph).toContain('25%');
-      expect(paragraph).toContain('paragraph award only');
+      expect(form.markingGuideNote).toContain('paragraph award only');
       expect(paragraph).not.toContain('35–40 focal: 0');
     }
   });
@@ -114,7 +114,7 @@ describe('2014 Foundation independently reviewed boundaries',()=>{
       expect(guide).toContain('50%');
       expect(guide).not.toContain('80–90 focal: 0');
       expect(guide).not.toContain('Sármhaith 9–11');
-      expect(guide).toContain('Do not apply that conversion to the standard rubric');
+      expect(story.markingGuideNote).toContain('Do not apply that conversion to the standard rubric');
     }
     expect(get('W-5A').schemePages).toEqual([15]);
     expect(get('W-5B').schemePages).toEqual([16]);

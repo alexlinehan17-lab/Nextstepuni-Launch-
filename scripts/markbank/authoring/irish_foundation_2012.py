@@ -14,6 +14,7 @@ import json
 import re
 from pathlib import Path
 from irish_choice import withdraw_combinations
+from irish_lifted import scheme_words_in
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001BLP000IV'
@@ -403,6 +404,7 @@ def main():
     parser.add_argument('--check',action='store_true')
     args=parser.parse_args()
     data,scheme=build()
+    scheme_words_in(data)  # guidance carries the SEC's words only (irish_lifted.py)
     content=json.dumps(data,ensure_ascii=False,indent=2)+'\n'
     scheme_text='# Gaeilge Bonnleibhéal 2012 — SEC marking scheme\n\n'+'\n\n'.join(f'## PDF page {i+1}\n\n'+scheme_page_text(p) for i,p in enumerate(scheme))
     scheme_text = '\n'.join(line.rstrip() for line in scheme_text.splitlines()).rstrip()+'\n'

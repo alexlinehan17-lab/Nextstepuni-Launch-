@@ -2226,8 +2226,7 @@
           ],
           "guidanceKind": "exact-answer",
           "guidance": [
-            "SEC answer key: Déardaoin — 5 mharc.",
-            "Published source discrepancy: the passage on paper page8 says Tomás received the half-day at two on Wednesday (Dé Céadaoin), but scheme page5 prints Déardaoin. Both choices appear in the question. The paper and scheme conflict; the scheme does not explicitly award Dé Céadaoin. Compare both originals when reviewing this answer; do not treat the scheme answer as an uncontested reading of the passage."
+            "Déardaoin — 5 mharc."
           ]
         }
       ],
@@ -3315,12 +3314,11 @@
           "guidanceKind": "quality",
           "guidance": [
             "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric."
+            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
         }
       ],
-      "markingGuideNote": "Award the published picture submarks and one shared ten-mark language award. Follow the exact 2017 activity/place partial credit, date, fee and band-name rules within the affected picture awards. Required headings are not choices.",
+      "markingGuideNote": "Award the published picture submarks and one shared ten-mark language award. Follow the exact 2017 activity/place partial credit, date, fee and band-name rules within the affected picture awards. Required headings are not choices. The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 4(a)",
@@ -3361,7 +3359,7 @@
       "criteria": [
         {
           "id": "iarracht",
-          "label": "Iarracht ar an bhfreagra",
+          "label": "Iarracht ar fhreagra",
           "kind": "award",
           "maxMarks": 1,
           "permittedMarks": [
@@ -3370,7 +3368,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Iarracht ar an bhfreagra = 1 mharc."
+            "Iarracht ar fhreagra = 1 mharc"
           ]
         },
         {
@@ -3488,12 +3486,11 @@
           "guidanceKind": "quality",
           "guidance": [
             "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric."
+            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
         }
       ],
-      "markingGuideNote": "The invitation reply stays whole: layout3, picture1=7(4+3), picture3=9(3+3+3), picture4=11(4+4+3), and one shared language10. Picture2 is the invitation source, not another assessed response. The two concert details are open information, not a printed choice menu. No address/date or word-count penalty is specified.",
+      "markingGuideNote": "The invitation reply stays whole: layout3, picture1=7(4+3), picture3=9(3+3+3), picture4=11(4+4+3), and one shared language10. Picture2 is the invitation source, not another assessed response. The two concert details are open information, not a printed choice menu. No address/date or word-count penalty is specified. The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 4(b) · Freagra ar chuireadh",
@@ -3596,16 +3593,14 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Cumas Cumarsáide = 37 marc; Cruinneas Gaeilge = 13 mharc. Mark both parts, then enter the final whole-response mark after any published proportional length adjustment.",
+            "Cumas Cumarsáide = 37 marc; Cruinneas Gaeilge = 13 mharc.",
             "11 Ceist 5 Freagair (a) NÓ (b). (50 marc) (a) Cuntas (50 marc) Cumas Cumarsáide = 37 marc = 50 marc Cruinneas Gaeilge = 13 mharc Tasc → Cuntas (timpeall 90 focal) a scríobh in Iris na Scoile bunaithe ar an ábhar: “Glantachán Earraigh sa Chlub Óige” mar atá léirithe sa phictiúr. Cumas Cumarsáide = 37 marc • Níor mhór cúig thagairt ar a laghad a bheith sa chuntas d’imeachtaí nó do thosca na hócáide. Tá caighdeán na cumarsáide le cur san áireamh. Ná glac le cóipeáil lom. • Pionós (-5 ón 37 atá ar fáil) i gcás gach tagairt in easnamh. (37-5t = 32) • Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an ócáid a léirítear. • Ná glac le Béarla. • Tá timpeall 90 focal ag teastáil. • Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta: (mar shampla: mura bhfuil ann ach 45 focal, an t-alt a mharcáil as an marc atá ar fáil don iarracht agus ansin 50% a bhaint den mharc bronnta). • An marc atá ar fáil don iarracht agus na marcanna bronnta agus bainte a léiriú. Glac le tagairtí do na rudaí seo a leanas: Insint faoi bheith i láthair ag an nglantachán earraigh; an dáta; an t-am; daoine eile a bhí ag an nglantachán; an obair a bhí ar siúl - ag péinteáil, ag glanadh, ag scuabadh, ag gearradh féir, ag cur plandaí, ag bailiú bruscair…; an t-atmaisféar; an aimsir; an áit/an club óige; comhartha “Fáilte”; ceol á sheinm; an oíche; ceol/dioscó/ag damhsa agus ag canadh; bia/deochanna ar fáil ag an nglantachán; ag ithe agus ag ól; agallamh…láithreoir ón raidió; ag caint agus ag gáire; éadaí; tuairim faoin nglantachán earraigh; ar thaitin an glantachán leat?; mar a mhothaigh tú nuair a bhí an glantachán earraigh thart... Léirigh na tagairtí ar an script mar seo: T1, T2 , T3 , T4 , T5 Cruinneas Gaeilge = 13 mharc Léiriú na marcanna ag bun an fhreagra: Cumarsáid Cum (37) = Cruinneas Gaeilge Cr (13) =",
             "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
-            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric.",
-            "If too short, subtract the appropriate percentage of the awarded mark: the SEC example is 45 words → mark the attempt, then deduct 50% of the awarded mark. Apply this only to this story. No later-year fixed length table is printed."
+            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
         }
       ],
-      "markingGuideNote": "First assess communication /37 and language /13. Reduce the communication ceiling by five per missing reference; for 5(b), cover each of the four pictures plus a fifth detail. The final story score includes the scheme’s proportional short-length reduction (45 words: halve the awarded mark). Enter that final mark out of 50. References are indicative, not a closed pool.",
+      "markingGuideNote": "First assess communication /37 and language /13. Reduce the communication ceiling by five per missing reference; for 5(b), cover each of the four pictures plus a fifth detail. The final story score includes the scheme’s proportional short-length reduction (45 words: halve the awarded mark). Enter that final mark out of 50. References are indicative, not a closed pool. Mark both parts, then enter the final whole-response mark after any published proportional length adjustment. The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric. If too short, subtract the appropriate percentage of the awarded mark: the SEC example is 45 words → mark the attempt, then deduct 50% of the awarded mark. Apply this only to this story. No later-year fixed length table is printed.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 5(a)",
@@ -3705,17 +3700,15 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Cumas Cumarsáide = 37 marc; Cruinneas Gaeilge = 13 mharc. Mark both parts, then enter the final whole-response mark after any published proportional length adjustment.",
+            "Cumas Cumarsáide = 37 marc; Cruinneas Gaeilge = 13 mharc.",
             "12 Nó (b) Eachtra (50 marc) Cumas Cumarsáide = 37 marc = 50 marc Cruinneas Gaeilge = 13 mharc Tasc → Scríobh faoi Eachtra (timpeall 90 focal) a tharla agus tú ag an gclub leadóige le do chara. Cumas Cumarsáide = 37 marc • Bheadh tagairt amháin do gach aon phictiúr tábhachtach le go mbeadh fás nádúrtha ag baint leis an eachtra. Cúig thagairt ag teastáil san iomlán. Tá caighdeán na cumarsáide le cur san áireamh. Ná glac le cóipeáil lom. • Pionós (-5) i gcás gach tagairt in easnamh. (37-5t= 32) • Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an ócáid a léirítear. • Ná glac le Béarla. • Tá timpeall 90 focal ag teastáil. • Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta: (mar shampla: mura bhfuil ann ach 45 focal, an t-alt a mharcáil as an marc atá ar fáil don iarracht agus ansin 50% a bhaint den mharc bronnta). • An marc atá ar fáil don iarracht agus na marcanna bronnta agus bainte a léiriú. Cruinneas Gaeilge = 13 mharc Tá cúig thagairt ag teastáil. Ceann do gach pictiúr (T1, T2, T3, T4) agus aon tagairt amháin eile (T5 ). Pionós -5 i leith gach tagairt atá in easnamh a bhaint den 37 marc atá ar fáil don Chumarsáid anseo. Marcáil an Chumarsáid as an marc atá fágtha ina dhiaidh sin (37, 32, 27, 22, nó 17). Glac leis na tagairtí seo a leanas: Pictiúr 1 A bheith i láthair nó ag dul go dtí an Club Leadóige; go raibh comórtas leadóige ar siúl; an lá; an t-am; an aimsir; cé a bhí in éineacht leat; éadaí/trealamh/málaí spóirt; conas a mhothaigh tú… Pictiúr 2 An t-am; an aimsir; an slua/an lucht féachana; an imirt; an cluiche dúbailte; mar a mhothaigh tú; ag cur allais; an scór… Pictiúr 3 Bhuamar an cluiche/an comórtas; an corn/duais airgid/seic; bhronn…an corn orainn; áthas/bród…",
             "13 Pictiúr 4 An bhialann; an t-am; an bia; gléasta suas; daoine eile a bhí sa bhialann; an freastalaí; tuairimí faoin mbéile; bhaineamar taitneamh as... Léirigh na tagairtí ar an script mar seo: T1, T2, T3, T4, T5 Cruinneas Gaeilge = 13 mharc Léiriú na marcanna ag bun an fhreagra: Cumarsáid Cum (37) = Cruinneas Gaeilge Cr (13) =",
             "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
-            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric.",
-            "If too short, subtract the appropriate percentage of the awarded mark: the SEC example is 45 words → mark the attempt, then deduct 50% of the awarded mark. Apply this only to this story. No later-year fixed length table is printed."
+            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
         }
       ],
-      "markingGuideNote": "First assess communication /37 and language /13. Reduce the communication ceiling by five per missing reference; for 5(b), cover each of the four pictures plus a fifth detail. The final story score includes the scheme’s proportional short-length reduction (45 words: halve the awarded mark). Enter that final mark out of 50. References are indicative, not a closed pool.",
+      "markingGuideNote": "First assess communication /37 and language /13. Reduce the communication ceiling by five per missing reference; for 5(b), cover each of the four pictures plus a fifth detail. The final story score includes the scheme’s proportional short-length reduction (45 words: halve the awarded mark). Enter that final mark out of 50. References are indicative, not a closed pool. Mark both parts, then enter the final whole-response mark after any published proportional length adjustment. The band table on PDF page16 belongs only to the modified marking scheme. Do not apply it as the standard language rubric. If too short, subtract the appropriate percentage of the awarded mark: the SEC example is 45 words → mark the attempt, then deduct 50% of the awarded mark. Apply this only to this story. No later-year fixed length table is printed.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 5(b)",

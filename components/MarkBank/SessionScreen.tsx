@@ -2175,6 +2175,7 @@ const listeningCriterionId = (cardId: string, criterionId: string) =>
  * This object is presentation-only; the commit path still writes every real id.
  */
 export const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishListeningCard => {
+  const shownDirections = new Set<string>();
   const first = cards[0];
   const sourceDocuments = new Map<string, CardSourceMaterial>();
   for (const card of cards) {
@@ -2214,6 +2215,9 @@ export const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishL
         id: listeningCriterionId(card.id, criterion.id),
         ...(criterion.deductFrom ? { deductFrom: listeningCriterionId(card.id, criterion.deductFrom) } : {}),
         label: `${listeningSectionLabel(card)} · ${criterion.label}`,
+        // The scheme's general note, repeated on every one-question card, is shown once on the sheet.
+        ...(criterion.allocation ? { allocation: { ...criterion.allocation,
+          directions: criterion.allocation.directions.filter(note => !shownDirections.has(note) && Boolean(shownDirections.add(note))) } } : {}),
       }))),
       markingGuideNote: [...new Set(cards.map(card => card.rubric.markingGuideNote))].join(' '),
     },

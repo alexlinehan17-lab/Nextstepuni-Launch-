@@ -3350,7 +3350,7 @@
           "guidanceKind": "quality",
           "guidance": [
             "Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Maith go leor 3–4; Lag 2; An-lag 1; Easnamhach 0.",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
+            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Litriú.",
             "Bronn marc as 11 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
         }
@@ -3405,7 +3405,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Dhá chuid (1 + 1), as Gaeilge. Glac lena leithéid de “Bóthar Crumlin” nó “Sráid Patrick”. Ná glac le hainm an bhaile i mBéarla."
+            "Glac lena leithéid de “Bóthar Crumlin” nó “Sráid Patrick”. Ná glac le hainm an bhaile i mBéarla."
           ]
         },
         {
@@ -3433,7 +3433,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Ainm ar bith, fiú a chara."
+            "Beannú: Ainm ar bith nó a chara"
           ]
         },
         {
@@ -3553,7 +3553,7 @@
           "guidanceKind": "quality",
           "guidance": [
             "Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Maith go leor 3–4; Lag 2; An-lag 1; Easnamhach 0.",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
+            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Litriú.",
             "Bronn marc as 11 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
         }
@@ -3670,7 +3670,7 @@
           "guidanceKind": "quality",
           "guidance": [
             "Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Maith go leor 3–4; Lag 2; An-lag 1; Easnamhach 0.",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
+            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Litriú.",
             "Bronn marc as 11 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
         },
@@ -3688,7 +3688,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "80–90 focal: 0; 60–79: −2; 30–59: −3; <30: −4."
+            "Líon Focal Pionós ó thaobh an fhaid de 80-90 Gan aon phionós 60-79 - 2 mharc 30-59 - 3 mharc < 30 focal - 4 mharc"
           ],
           "deductFrom": "cumarsaid"
         }
@@ -3803,7 +3803,7 @@
           "guidanceKind": "quality",
           "guidance": [
             "Sármhaith 9–11; An-mhaith 7–8; Maith 5–6; Maith go leor 3–4; Lag 2; An-lag 1; Easnamhach 0.",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Foclóir: cruinneas agus oiriúnacht foclóra. Litriú.",
+            "Dul na Gaeilge: struchtúr na Gaeilge agus beachtas gramadaí. Litriú.",
             "Bronn marc as 11 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
         },
@@ -3821,7 +3821,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "80–90 focal: 0; 60–79: −2; 30–59: −3; <30: −4."
+            "Líon Focal Pionós ó thaobh an fhaid de 80-90 Gan aon phionós 60-79 - 2 mharc 30-59 - 3 mharc < 30 focal - 4 mharc"
           ],
           "deductFrom": "cumarsaid"
         }

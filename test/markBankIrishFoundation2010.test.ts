@@ -10,6 +10,8 @@ import {tariffReconciles} from '../types/markBank';
 import {examTopicIdsForQuestion,curriculumNodeIdsForExamTopic} from '../data/examTopics/registry';
 const get=(n:string)=>written.cards.find(c=>c.atlasQuestionId===n)!;
 const guide=(n:string,id:string)=>get(n).criteria.find(c=>c.id===id)!.guidance.join(' ');
+// Our own examiner notes are the card's English note, never its scheme guidance (irish_lifted.py).
+const note=(n:string)=>get(n).markingGuideNote;
 const cards=CARDS.filter(c=>c.year===2010);
 const map=JSON.parse(readFileSync('public/paper-answers/2010/LC001BLP100IV.pdf.json','utf8'));
 const q=(n:string)=>map.q.find((q:{n:string})=>q.n===n);
@@ -49,7 +51,7 @@ describe('2010 Foundation written paper, with the listening paper held as a sour
       expect(c.criteria[0].permittedMarks).toEqual(partial?[0,4,6]:[0,j<3?5:6]);
     }
     expect(guide('R-3A-3','answer')).toContain('An t-alt iomlán');
-    expect(guide('R-3A-3','answer')).toContain('Ceol draíochta 6−2 = 4');
+    expect(note('R-3A-3')).toContain('Ceol draíochta 6−2 = 4');
     expect(guide('R-3B-2','answer')).toContain('eolas iomarcach');
     expect(guide('R-3C-4','answer')).toContain('Má scríobhtar an véarsa ar fad: 6 - 6 = 0');
     expect(guide('R-3C-4','answer')).toContain('Má scríobhtar dhá líne');
@@ -59,7 +61,7 @@ describe('2010 Foundation written paper, with the listening paper held as a sour
     expect(get('W-4A').criteria.map(c=>c.maxMarks)).toEqual([1,6,9,3,3,8]);
     expect(guide('W-4A','pictiur1')).toContain('-1 a bhaint i gcás aimsir mhí-oiriúnach');
     expect(guide('W-4A','pictiur2')).toContain('7 leis féin … 0 marc');
-    expect(guide('W-4A','pictiur3')).toContain('scheme Pictiúr 3 is the photograph');
+    expect(note('W-4A')).toContain('scheme Pictiúr 3 is the photograph');
     expect(guide('W-4A','pictiur4')).toContain('Club Óige Inis ( leis féin )');
     expect(guide('W-4A','leagan')).not.toContain('Na Treoracha');
     expect(get('W-4B').criteria.map(c=>c.maxMarks)).toEqual([2,1,1,6,6,6,8]);
@@ -88,15 +90,15 @@ describe('2010 Foundation written paper, with the listening paper held as a sour
       expect(c.questionText).toContain('Áine Bhreathnach');expect(c.questionText).toContain('Cuir tic (✓)');
       expect(c.criteria.map(r=>r.maxMarks)).toEqual([15,15,10]);
       expect(c.schemePages).toEqual([14,15]);expect(c.sourceMaterial.pages).toEqual([13]);
-      expect(c.criteria[0].guidance.join(' ')).toContain('21÷2=10½→11');
-      expect(c.criteria[0].guidance.join(' ')).toContain('undoubled values sum 14½');
-      expect(c.criteria[1].guidance.join(' ')).toContain('about 32 of 40 words → one-fifth');
+      expect(c.markingGuideNote).toContain('21÷2=10½→11');
+      expect(c.markingGuideNote).toContain('undoubled values sum 14½');
+      expect(c.markingGuideNote).toContain('about 32 of 40 words → one-fifth');
     }
   });
   it('does not import later story penalties and scores the story from its own awards only',()=>{
     for(const key of ['W-6A','W-6B']){
       expect(get(key).criteria.map(c=>[c.id,c.maxMarks])).toEqual([['cumarsaid',37],['gaeilge',13]]);
-      expect(guide(key,'cumarsaid')).toContain('no fixed 5-mark deduction');
+      expect(note(key)).toContain('no fixed 5-mark deduction');
       expect(guide(key,'cumarsaid')).not.toMatch(/[-]|ATBL/);
     }
     expect(get('W-6A').schemePages).toEqual([15,16]);expect(get('W-6B').schemePages).toEqual([16]);

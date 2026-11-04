@@ -3014,11 +3014,11 @@
           "guidance": [
             "Nach mbeidh sí óg arís",
             "6 mharc: Is deir sí linn go minic / Nach mbeidh sí óg arís (an dá líne).",
-            "Líne bhreise amháin: pionós −2; an véarsa ar fad: pionós −4. Enter the resulting mark for this answer only."
+            "Líne bhreise amháin: pionós −2"
           ]
         }
       ],
-      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part. pionós −4. Enter the resulting mark for this answer only.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint · Ceist 3(c)(2)",
@@ -3328,12 +3328,11 @@
           "guidanceKind": "quality",
           "guidance": [
             "Dul na Gaeilge: struchtúr na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas foclóra. Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "PDF page17 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric."
+            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
         }
       ],
-      "markingGuideNote": "Award the published picture submarks and one shared ten-mark language award. Follow the exact 2014 activity/place partial credit, date, fee, Sharon Shannon and school sports-hall rules within the affected picture awards. Required headings are not choices.",
+      "markingGuideNote": "Award the published picture submarks and one shared ten-mark language award. Follow the exact 2014 activity/place partial credit, date, fee, Sharon Shannon and school sports-hall rules within the affected picture awards. Required headings are not choices. PDF page17 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 4(a)",
@@ -3397,8 +3396,6 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Na Ceisteanna = 15 mharc. Úsáid an colún dúbailte: uimhir theileafóin2; seoladh4; aois2; dáta breithe2; scrúdú2; cúig ábhar10; trí chaitheamh aimsire3; réiteach le daoine1; obair go luath gach maidin1; modh taistil1; post1; dáta ag bun1. Iomlán30 ÷ 2 = 15.",
-            "Round up once after adding the doubled question awards and dividing by two: 21 ÷ 2 = 10½ → 11. Do not round each half-mark field separately.",
             " Uimhir theileafóin 1 mharc 2 mharc Seoladh 2 mharc 4 mharc Aois 1 mharc 2 mharc Dáta Breithe 1 mharc 2 mharc Cén Scrúdú Teistiméireachta? 1 mharc 2 mharc Cúig Ábhar scoile sa scrúdú 5 mharc 10 marc Trí chaitheamh aimsire 1½ mharc 3 mharc An réitíonn tú go maith le daoine? ½ mharc 1 mharc Obair go luath gach maidin ½ mharc 1 mharc Cén modh taistil atá agat? ½ mharc 1 mharc Cén post ba mhaith leat? (tic) ½ mharc 1 mharc Dáta (ag bun na foirme) ½ mharc 1 mharc 15 mharc 30 ÷ 2 = 15 N.B. Ná bíodh ½ mharc le feiceáil in aon áit (m.sh. 21 ÷ 2 = 10½ = 11 mharc) • Uimhir theileafóin: Beifear ag súil leis an gcód i gcás an fhóin póca: 085 1234567 • Seoladh: Beidh dhá chuid ag teastáil, as Gaeilge más féidir. (2+2) • Aois: Glac le figiúirí ach an aois a bheith réasúnta cruinn. • Dáta Breithe: Dhá chuid ag teastáil, i bhfocail nó i bhfigiúirí: 23/4/1998, Márta 1998, 23 Márta … • Cén Scrúdú Teistiméireachta? : Glac leis na scrúduithe seo a leanas: Ardteist, Teastas Sóisearach nó fiú Meánteist. • Cúig Ábhar scoile sa scrúdú: Ná glac le hábhar ar bith i mBéarla seachas LCVP. Glac le hábhar ar bith a dhéantar ar scoil agus iarracht déanta ar é a litriú i gceart as Gaeilge. Cuir tic le gach ábhar. • Trí chaitheamh aimsire: Glac le drochlitriú más léir gur leagan Gaeilge atá ann. (Sacar, Galf ...) Glac le ceann amháin díobh seo: Facebook, Twitter, Bebo… ach gan an dara ceann a chur san áireamh.",
             "• An réitíonn tú go maith le daoine? : Freagra cumarsáideach ag teastáil. • An mbeidh tú sásta a bheith ag obair go luath gach maidin?: Freagra cumarsáideach. • Cén modh taistil atá agat? Glac le Rothar, Gluaisrothar, Carr, Tacsaí, Bus, Traein, Siúl nó Rith. • Dáta (ag bun na foirme): Glac le figiúirí. (ii) "
           ]
@@ -3428,8 +3425,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            " Gearr (timpeall 40 focal) 15 mharc ▪ Cumarsáid a mharcáil as (15) má tá an t-alt “ad rem”. ▪ Cumarsáid a mharcáil as (5) mura bhfuil sé “ad rem”. ▪ Timpeall 40 focal ag teastáil. ▪ Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta. Mar shampla mura bhfuil ann ach 30 focal agus é a bheith “ad rem”, déanfar an t-alt a mharcáil as 15 mharc agus bainfear 25% den mharc bronnta. ",
-            "Mark the relevant paragraph out of15. Off-topic ceiling5. Then apply the published proportional short-length reduction to this paragraph award only. Example: 30 of40 words → deduct25% of the awarded paragraph mark. Enter that final paragraph score; keep the form-answer and shared-language scores separate."
+            " Gearr (timpeall 40 focal) 15 mharc ▪ Cumarsáid a mharcáil as (15) má tá an t-alt “ad rem”. ▪ Cumarsáid a mharcáil as (5) mura bhfuil sé “ad rem”. ▪ Timpeall 40 focal ag teastáil. ▪ Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta. Mar shampla mura bhfuil ann ach 30 focal agus é a bheith “ad rem”, déanfar an t-alt a mharcáil as 15 mharc agus bainfear 25% den mharc bronnta. "
           ]
         },
         {
@@ -3453,12 +3449,11 @@
           "guidanceKind": "quality",
           "guidance": [
             "Dul na Gaeilge: struchtúr na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas foclóra. Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "PDF page17 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric."
+            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
         }
       ],
-      "markingGuideNote": "One whole40-mark form: questions15 (half marks combined then rounded up once), paragraph15 with its own proportional length adjustment and off-topic ceiling5, shared language10 across questions and paragraph. The printed options (Cócaire, Doirseoir, Freastalaí) are a choice inside this one task, so one card carries the whole task.",
+      "markingGuideNote": "One whole40-mark form: questions15 (half marks combined then rounded up once), paragraph15 with its own proportional length adjustment and off-topic ceiling5, shared language10 across questions and paragraph. The printed options (Cócaire, Doirseoir, Freastalaí) are a choice inside this one task, so one card carries the whole task. Round up once after adding the doubled question awards and dividing by two: 21 ÷ 2 = 10½ → 11. Do not round each half-mark field separately. Mark the relevant paragraph out of15. Off-topic ceiling5. Then apply the published proportional short-length reduction to this paragraph award only. Example: 30 of40 words → deduct25% of the awarded paragraph mark. Enter that final paragraph score; keep the form-answer and shared-language scores separate. PDF page17 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 4(b)",
@@ -3557,16 +3552,13 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Cumas Cumarsáide = 37 marc; Cruinneas Gaeilge = 13 mharc. Mark both parts, then enter the final whole-response mark after any published proportional length adjustment.",
+            "Cumas Cumarsáide = 37 marc; Cruinneas Gaeilge = 13 mharc.",
             "Ceist 5 Freagair (a) NÓ (b). (50 marc) (a) Cuntas (50 marc) Cumas Cumarsáide = 37 marc ) = 50 marc Cruinneas Gaeilge = 13 mharc ) (a)Tasc → Cuntas (timpeall 90 focal) a scríobh in Iris na Scoile bunaithe ar “Fhéile Cheoil” mar atá léirithe sa phictiúr. Cumas Cumarsáide = 37 marc • Níor mhór cúig thagairt ar a laghad a bheith sa chuntas d’imeachtaí nó do thosca na hócáide. Tá caighdeán na cumarsáide le cur san áireamh. Ná glac le cóipeáil lom. • Pionós (-5 ón 37 atá ar fáil) i gcás gach tagairt in easnamh. (37-5t= 32) • Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an ócáid a léirítear. • Ná glac le Béarla • Tá timpeall 90 focal ag teastáil. • Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta: (mar shampla:- mura bhfuil ann ach 45 focal, an t-alt a mharcáil as an marc atá ar fáil don iarracht agus ansin timpeall 50% a bhaint den mharc bronnta). • An marc atá ar fáil don iarracht agus na marcanna bronnta agus bainte a léiriú. Glac le tagairtí do na rudaí seo: An lá; am; aimsir; áit; cead isteach, ticéid, táille. Bia agus deoch; Banna ceoil, ceolchoirm, comórtas (ceoil/damhsa), rince, dioscó Siopa (Póstaeir/T-Léinte) Bus abhaile.....atmaisféar, cairde, slua, éadaí, spéaclaí dubha. Conas ar thaitin an fhéile cheoil leat? Cruinneas Gaeilge = 13 mharc",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas foclóra. Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo.",
-            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "PDF page17 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric.",
-            "If too short, subtract the appropriate percentage of the awarded mark: the SEC example is 45 words → mark the attempt, then deduct approximately 50% of the awarded mark. Apply this only to this story. No later-year fixed length table is printed."
+            "Dul na Gaeilge: struchtúr na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas foclóra. Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo."
           ]
         }
       ],
-      "markingGuideNote": "First assess communication /37 and language /13. Reduce the communication ceiling by five per missing reference; for 5(b), cover each of the four pictures plus a fifth detail. The final story score includes the scheme’s proportional short-length reduction (45 words: deduct approximately 50% of the awarded mark). Enter that final mark out of 50. References are indicative, not a closed pool.",
+      "markingGuideNote": "First assess communication /37 and language /13. Reduce the communication ceiling by five per missing reference; for 5(b), cover each of the four pictures plus a fifth detail. The final story score includes the scheme’s proportional short-length reduction (45 words: deduct approximately 50% of the awarded mark). Enter that final mark out of 50. References are indicative, not a closed pool. Mark both parts, then enter the final whole-response mark after any published proportional length adjustment. PDF page17 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric. If too short, subtract the appropriate percentage of the awarded mark: the SEC example is 45 words → mark the attempt, then deduct approximately 50% of the awarded mark. Apply this only to this story. No later-year fixed length table is printed.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 5(a)",
@@ -3665,16 +3657,13 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Cumas Cumarsáide = 37 marc; Cruinneas Gaeilge = 13 mharc. Mark both parts, then enter the final whole-response mark after any published proportional length adjustment.",
+            "Cumas Cumarsáide = 37 marc; Cruinneas Gaeilge = 13 mharc.",
             "Nó (b) Eachtra (50 marc) Cumas Cumarsáide = 37 marc ) = 50 marc Cruinneas Gaeilge = 13 mharc ) (a)Tasc → Scríobh faoi Eachtra a tharla agus tú amuigh ag siúl le do chara. Cumas Cumarsáide = 37 marc • Bheadh tagairt amháin do gach aon phictiúr tábhachtach chun go mbeadh fás nádúrtha ag baint leis an eachtra. Cúig thagairt ag teastáil san iomlán. Tá caighdeán na cumarsáide le cur san áireamh. Ná glac le cóipeáil lom. • Pionós (-5) i gcás gach tagairt in easnamh. (37-5t= 32) • Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an ócáid a léirítear. • Ná glac le Béarla. • Tá timpeall 90 focal ag teastáil. • Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta: (mar shampla:- mura bhfuil ann ach 45 focal, an t-alt a mharcáil as an marc atá ar fáil don iarracht agus ansin timpeall 50% a bhaint den mharc bronnta). • An marc atá ar fáil don iarracht agus na marcana bronnta agus bainte a léiriú. Cruinneas Gaeilge = 13 mharc Glac leis na tagairtí seo leanas: Pictiúr 1: Cailín ar rothar, duine ag tiomáint, ag siúl, aimsir, am, siopa, luas an chairr, ceol (raidió) sa charr Pictiúr 2: Tharla timpiste, ní raibh an tiománaí ag tabhairt aire, bhuail (leag) an carr an cailín, thit sí, scread sí, gortaíodh í, uafás, glaoch teileafóin, fón póca… Pictiúr 3: Otharcharr, sínteáin/giollaí, garda/leabhar nótaí, tiománaí ag caint leis an ngarda, stop an trácht, turas go dtí an t-ospidéal… Pictiúr 4: An cailín san ospidéal, an mháthair ann, cuairteoirí, cos bhriste, plástar, bronntanas Milk Tray, áthas...",
-            "Dul na Gaeilge: struchtúr na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas foclóra. Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo.",
-            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "PDF page17 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric.",
-            "If too short, subtract the appropriate percentage of the awarded mark: the SEC example is 45 words → mark the attempt, then deduct approximately 50% of the awarded mark. Apply this only to this story. No later-year fixed length table is printed."
+            "Dul na Gaeilge: struchtúr na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas foclóra. Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo."
           ]
         }
       ],
-      "markingGuideNote": "First assess communication /37 and language /13. Reduce the communication ceiling by five per missing reference; for 5(b), cover each of the four pictures plus a fifth detail. The final story score includes the scheme’s proportional short-length reduction (45 words: deduct approximately 50% of the awarded mark). Enter that final mark out of 50. References are indicative, not a closed pool.",
+      "markingGuideNote": "First assess communication /37 and language /13. Reduce the communication ceiling by five per missing reference; for 5(b), cover each of the four pictures plus a fifth detail. The final story score includes the scheme’s proportional short-length reduction (45 words: deduct approximately 50% of the awarded mark). Enter that final mark out of 50. References are indicative, not a closed pool. Mark both parts, then enter the final whole-response mark after any published proportional length adjustment. PDF page17 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric. If too short, subtract the appropriate percentage of the awarded mark: the SEC example is 45 words → mark the attempt, then deduct approximately 50% of the awarded mark. Apply this only to this story. No later-year fixed length table is printed.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 5(b)",

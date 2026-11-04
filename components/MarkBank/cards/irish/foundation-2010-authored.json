@@ -1727,12 +1727,11 @@
           "guidanceKind": "exact-answer",
           "guidance": [
             "Ceol traidisiúnta",
-            "Glac leis na freagraí seo ar 6 marc: Ceol traidisiúnta, traidisiúnta, Ní rac ná miotal trom a sheinneann Sharon ach ceol traidisiúnta ceol traidisiúnta bunaithe ar thraidisiún na hÉireann (agus ar thraidisiún na cruinne) An t-alt iomlán Ceol draíochta = (6 - 2) = 4 mharc Bosca ceoil = 0 Ceol = 0",
-            "Accepted forms 6. Ceol draíochta 6−2 = 4; Bosca ceoil and Ceol 0. Enter the final mark for this part only."
+            "Glac leis na freagraí seo ar 6 marc: Ceol traidisiúnta, traidisiúnta, Ní rac ná miotal trom a sheinneann Sharon ach ceol traidisiúnta ceol traidisiúnta bunaithe ar thraidisiún na hÉireann (agus ar thraidisiún na cruinne) An t-alt iomlán Ceol draíochta = (6 - 2) = 4 mharc Bosca ceoil = 0 Ceol = 0"
           ]
         }
       ],
-      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part. Accepted forms 6. Ceol draíochta 6−2 = 4; Bosca ceoil and Ceol 0. Enter the final mark for this part only.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint · Ceist 3(a)(3)",
@@ -1939,12 +1938,11 @@
           "guidanceKind": "exact-answer",
           "guidance": [
             "Chun dul ar bord loinge lena hathair",
-            "Glac leis na freagraí seo ar 6 mharc: chun dul ar bord loinge chun dul ar bord loinge lena hathair ghearr sí an ghruaig fhada rua a bhí uirthi chun dul ar bord loinge ghearr sí an ghruaig fhada rua a bhí uirthi chun dul ar bord loinge (lena hathair) Má bhíonn iomarcaíocht sa fhreagra: (6 - 2) i gcás freagra ina bhfuil eolas iomarcach.",
-            "Accepted forms 6; an answer with excess information 6−2 = 4. Enter the final mark for this part only."
+            "Glac leis na freagraí seo ar 6 mharc: chun dul ar bord loinge chun dul ar bord loinge lena hathair ghearr sí an ghruaig fhada rua a bhí uirthi chun dul ar bord loinge ghearr sí an ghruaig fhada rua a bhí uirthi chun dul ar bord loinge (lena hathair) Má bhíonn iomarcaíocht sa fhreagra: (6 - 2) i gcás freagra ina bhfuil eolas iomarcach."
           ]
         }
       ],
-      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part. Accepted forms 6; an answer with excess information 6−2 = 4. Enter the final mark for this part only.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint · Ceist 3(b)(2)",
@@ -2307,12 +2305,11 @@
           "guidanceKind": "exact-answer",
           "guidance": [
             "Síol",
-            "Glac leis na freagraí seo ar 6 mharc: Síol D’ith sé síol (Is) d’ith sé síol go craosach Má scríobhtar dhá líne: 6 - 2 = 4 Má scríobhtar an véarsa ar fad: 6 - 6 = 0",
-            "Accepted forms 6; two lines of the poem 6−2 = 4; the whole stanza 6−6 = 0. Enter the final mark for this part only."
+            "Glac leis na freagraí seo ar 6 mharc: Síol D’ith sé síol (Is) d’ith sé síol go craosach Má scríobhtar dhá líne: 6 - 2 = 4 Má scríobhtar an véarsa ar fad: 6 - 6 = 0"
           ]
         }
       ],
-      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part. Accepted forms 6; two lines of the poem 6−2 = 4; the whole stanza 6−6 = 0. Enter the final mark for this part only.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint · Ceist 3(c)(4)",
@@ -2476,9 +2473,7 @@
           "guidanceKind": "quality",
           "guidance": [
             "Na Treoracha: 21 marc Iarrtar ort tic a chur le gach pointe a fhreagraíonn do na treoracha nó do na tagairtí. I gcoitinne, -1 a bhaint i gcás aimsir mhí-oiriúnach in úsáid.",
-            "Cé a chuirfidh tús leis an rás? = 3 marc. Ainm fir le hionramháil ag teastáil. Tús/i láthair/fear an tí/aoi speisialta + Ainm fir … 3 marc Ionramháil + ainm mná Ainm fir gan ionramháil … 2 marc",
-            "Picture numbering: the paper prints panels 1, 2, an unnumbered photograph and 3. The scheme counts four pictures, so scheme Pictiúr 3 is the photograph and scheme Pictiúr 4 is the panel printed 3.",
-            "Scheme PDF 9 asks “Cé a chuirfidh tús leis an rás?” where the paper asks about an turas; both original wordings are kept."
+            "Cé a chuirfidh tús leis an rás? = 3 marc. Ainm fir le hionramháil ag teastáil. Tús/i láthair/fear an tí/aoi speisialta + Ainm fir … 3 marc Ionramháil + ainm mná Ainm fir gan ionramháil … 2 marc"
           ]
         },
         {
@@ -2495,8 +2490,7 @@
           "guidanceKind": "quality",
           "guidance": [
             "Na Treoracha: 21 marc Iarrtar ort tic a chur le gach pointe a fhreagraíonn do na treoracha nó do na tagairtí. I gcoitinne, -1 a bhaint i gcás aimsir mhí-oiriúnach in úsáid.",
-            "Cá rachaidh an t-airgead? 3 mharc Caithfidh ionramháil a bheith déanta. Rachaidh an t-airgead go/go dtí Club Óige, Inis Beidh an t-airgead ag dul go/go dtí Club Óige Inis Airgead ar son Chlub Óige Inis …… Airgead do/ag dul go/ag dul go dtí Club Óige Inis Airgead go dtí Club Óige Inis … 3 marc An Club/Club Óige/ (Inis) Airgead = Club Óige Inis Airgead: Club Óige Inis … 2 marc Club Óige Inis ( leis féin ) … 0 Marc",
-            "Picture numbering: the paper prints panels 1, 2, an unnumbered photograph and 3. The scheme counts four pictures, so scheme Pictiúr 3 is the photograph and scheme Pictiúr 4 is the panel printed 3."
+            "Cá rachaidh an t-airgead? 3 mharc Caithfidh ionramháil a bheith déanta. Rachaidh an t-airgead go/go dtí Club Óige, Inis Beidh an t-airgead ag dul go/go dtí Club Óige Inis Airgead ar son Chlub Óige Inis …… Airgead do/ag dul go/ag dul go dtí Club Óige Inis Airgead go dtí Club Óige Inis … 3 marc An Club/Club Óige/ (Inis) Airgead = Club Óige Inis Airgead: Club Óige Inis … 2 marc Club Óige Inis ( leis féin ) … 0 Marc"
           ]
         },
         {
@@ -2517,13 +2511,11 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Dul na Gaeilge: struchtúir na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla.",
-            "Bronn marc as 8 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010."
+            "Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla."
           ]
         }
       ],
-      "markingGuideNote": "Whole 30-mark notice: layout 1, pictures 6+9+3+3, shared language 8. Apply the general −1 for an inappropriate tense to the affected point. Scheme pictures 3 and 4 are the unnumbered photograph and the panel printed 3. Retain the exact 2010 activity, starting-place, day, date, time, fee and Club Óige Inis rules; later 40-mark notice tariffs do not apply.",
+      "markingGuideNote": "Whole 30-mark notice: layout 1, pictures 6+9+3+3, shared language 8. Apply the general −1 for an inappropriate tense to the affected point. Scheme pictures 3 and 4 are the unnumbered photograph and the panel printed 3. Retain the exact 2010 activity, starting-place, day, date, time, fee and Club Óige Inis rules; later 40-mark notice tariffs do not apply. Picture numbering: the paper prints panels 1, 2, an unnumbered photograph and 3. The scheme counts four pictures, so scheme Pictiúr 3 is the photograph and scheme Pictiúr 4 is the panel printed 3. Scheme PDF 9 asks “Cé a chuirfidh tús leis an rás?” where the paper asks about an turas; both original wordings are kept. Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 4(a) · Fógra",
@@ -2682,13 +2674,11 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Dul na Gaeilge: struchtúir na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla.",
-            "Bronn marc as 8 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010."
+            "Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla."
           ]
         }
       ],
-      "markingGuideNote": "Whole 30-mark reply: greeting 2, reply attempt 1, signature 1, six required details at 3 each (pictures 1, 3, 4), shared language 8. The six details are required headings, not alternatives. The handwritten invitation in picture 2 is transcribed from the paper; the original page remains the authority. The scheme prints −1 for past tense on the picture 3 and 4 points.",
+      "markingGuideNote": "Whole 30-mark reply: greeting 2, reply attempt 1, signature 1, six required details at 3 each (pictures 1, 3, 4), shared language 8. The six details are required headings, not alternatives. The handwritten invitation in picture 2 is transcribed from the paper; the original page remains the authority. The scheme prints −1 for past tense on the picture 3 and 4 points. Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 4(b) · Freagra",
@@ -2826,8 +2816,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Insint faoin obair a dhéanann tú san óstán: (4 + 4 + 4) Glac le tagairt réasúnta ar bith, ach caithfidh ionramháil a bheith déanta air. Cineál oibre agus ionramháil = 4 marc Cineál oibre gan ionramháil / coinníollacha oibre = 3 marc Tuairim faoin obair = 3 marc Cineál oibre agus ionramháil = 4 marc Ag freastal ar na custaiméirí / ag glanadh suas / ag obair sa ghairdín Ag glanadh fuinneoga/ ag scuabadh urláir / ag líonadh seilfeanna Ag glanadh an ghairdín / ag tabhairt earraí amach do na custaiméirí Ag caint leis na custaiméirí / ag díol earraí / ag bailiú boscaí etc Cineál oibre gan ionramháil / coinníollacha oibre = 3 marc Bím ag glanadh / ag scuabadh / ag díol / ag caint Bím ag obair ón Luan go hAoine Oibrím ó 9.00 go 5.00 / Tosaím ar a naoi / Críochnaím ar a sé / Faighim €10 san uair Tuairim faoin obair = 3 marc Tá an t-airgead go maith Is maith liom an obair / Tá an obair go maith / crua / dian / simplí / Is maith liom an bainisteoir / Tá an bainisteoir cantalach / deas Bíonn an-chraic againn Tá mé ag obair go dian = 1 marc",
-            "Source wording note: the scheme heading says “san óstán”, but the paper, the examples and the rest of the scheme concern the hardware store. The original wording is kept; assess the printed Ollstór task."
+            "Insint faoin obair a dhéanann tú san óstán: (4 + 4 + 4) Glac le tagairt réasúnta ar bith, ach caithfidh ionramháil a bheith déanta air. Cineál oibre agus ionramháil = 4 marc Cineál oibre gan ionramháil / coinníollacha oibre = 3 marc Tuairim faoin obair = 3 marc Cineál oibre agus ionramháil = 4 marc Ag freastal ar na custaiméirí / ag glanadh suas / ag obair sa ghairdín Ag glanadh fuinneoga/ ag scuabadh urláir / ag líonadh seilfeanna Ag glanadh an ghairdín / ag tabhairt earraí amach do na custaiméirí Ag caint leis na custaiméirí / ag díol earraí / ag bailiú boscaí etc Cineál oibre gan ionramháil / coinníollacha oibre = 3 marc Bím ag glanadh / ag scuabadh / ag díol / ag caint Bím ag obair ón Luan go hAoine Oibrím ó 9.00 go 5.00 / Tosaím ar a naoi / Críochnaím ar a sé / Faighim €10 san uair Tuairim faoin obair = 3 marc Tá an t-airgead go maith Is maith liom an obair / Tá an obair go maith / crua / dian / simplí / Is maith liom an bainisteoir / Tá an bainisteoir cantalach / deas Bíonn an-chraic againn Tá mé ag obair go dian = 1 marc"
           ]
         },
         {
@@ -2884,13 +2873,11 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Dul na Gaeilge: struchtúir na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010."
+            "Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla."
           ]
         }
       ],
-      "markingGuideNote": "Whole 40-mark letter: layout 6 (2+1+1+2), pictures 4+12+4+4, shared language 10. Picture 3 needs one customer reference; picture 4 needs two references to depicted activities, with −1 for an activity absent from the picture. The activity examples are illustrative, not a closed menu. No length penalty is printed.",
+      "markingGuideNote": "Whole 40-mark letter: layout 6 (2+1+1+2), pictures 4+12+4+4, shared language 10. Picture 3 needs one customer reference; picture 4 needs two references to depicted activities, with −1 for an activity absent from the picture. The activity examples are illustrative, not a closed menu. No length penalty is printed. Source wording note: the scheme heading says “san óstán”, but the paper, the examples and the rest of the scheme concern the hardware store. The original wording is kept; assess the printed Ollstór task. Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 5(a) · Litir",
@@ -2959,9 +2946,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Use the printed doubled column: phone 1; address 3; age 1; birth date 2; current job 2; certificate exam 2; five subjects 10; three sports 3; garden 1; tractor 1; early start 1; previous golf 1; interview date 1; bottom date 1. Total 30, divide once by 2 and round up once: 21÷2=10½→11.",
-            "Tasc → Foirm Iarratais a líonadh ina bhfuil ceisteanna le freagairt agus alt beag a bhaineann go dlúth leis an bhfoirm iarratais a scríobh. Cumas Cumarsáide = 30 marc Uimhir theileafóin ½ marc 1 marc Seoladh 1½ marc 3 marc Aois ½ marc 1 marc Dáta Breithe ½ marc 2 marc Cén post atá agat faoi láthair 1 marc 2 marc Cén Scrúdú Teistiméireachta… 1 marc 2 marc Cúig Ábhar scoile sa scrúdú 5 marc 10 marc Luaigh trí sport a d’imir tú… 1½ marc 3 marc An bhfuil gairdín agat sa bhaile ½ marc 1 marc Ábalta tarracóir a thiomáint ½ marc 1 marc Obair ar a seacht a chlog…. ½ marc 1 marc Ar imir tú Galf riamh? ½ marc 1 marc Tic leis an dáta an agallaimh ½ marc 1 marc Dáta (ag bun na foirme) ½ marc 1 marc 15 marc 30 ÷ 2 = 15 = 15 marc N.B. Ná bíodh ½ marc le feiceáil in aon áit, e.g. 21 ÷ 2 = 10½ = 11 marc",
-            "Published table conflict: the undoubled birth-date row prints ½, while the doubled row prints 2. The undoubled values sum 14½ despite the printed total 15. This rubric follows the explicit doubled 30÷2 method and its 15-mark total; both original columns remain visible."
+            "Tasc → Foirm Iarratais a líonadh ina bhfuil ceisteanna le freagairt agus alt beag a bhaineann go dlúth leis an bhfoirm iarratais a scríobh. Cumas Cumarsáide = 30 marc Uimhir theileafóin ½ marc 1 marc Seoladh 1½ marc 3 marc Aois ½ marc 1 marc Dáta Breithe ½ marc 2 marc Cén post atá agat faoi láthair 1 marc 2 marc Cén Scrúdú Teistiméireachta… 1 marc 2 marc Cúig Ábhar scoile sa scrúdú 5 marc 10 marc Luaigh trí sport a d’imir tú… 1½ marc 3 marc An bhfuil gairdín agat sa bhaile ½ marc 1 marc Ábalta tarracóir a thiomáint ½ marc 1 marc Obair ar a seacht a chlog…. ½ marc 1 marc Ar imir tú Galf riamh? ½ marc 1 marc Tic leis an dáta an agallaimh ½ marc 1 marc Dáta (ag bun na foirme) ½ marc 1 marc 15 marc 30 ÷ 2 = 15 = 15 marc N.B. Ná bíodh ½ marc le feiceáil in aon áit, e.g. 21 ÷ 2 = 10½ = 11 marc"
           ]
         },
         {
@@ -2990,8 +2975,7 @@
           "guidanceKind": "quality",
           "guidance": [
             "Thart ar 40 focal ag teastáil. Marcáil as (15) má tá an t-alt “ad rem”, agus as (5) mura bhfuil sé “ad rem”. Sa chás nach mbíonn an t-alt fada go leor, bainfear céatadán cuí den mharc a bhronntar (e.g. mura bhfuil ann ach 20 focal, déanfar an t-alt a marcáil as (15) marc agus bainfear 50% den mharc a bhronntar.) = 15 marc",
-            "An tAlt beag: 15 marc Caithfidh an t-alt a bheith ad rem, dírithe ar an téama, a bheith ag obair sa K Club i gCill Dara. Glac le tagairt don saghas oibre/spóirt, tuairim ar bith faoin obair féin, nó coinníollacha oibre nó aon tagairt eile a thaispeánann go bhfuil ábhar an ailt ar aigne an iarrthóra. Má tá sé ad rem é a mheas as 15 mar phíosa cumarsáideach. Mura bhfuil sé ad rem caithfear é a mharcáil as 5. Níl méid áirithe pointí ag teastáil -- más léir go bhfuil fáth ar bith ag an scríbhneoir gur mhaith leis/léi bheith ag obair i ngalfchlub nó ar mhachaire gailf, glac leis go bhfuil sé ad rem. Glac le tagairtí do thréithe pearsanta, pearsantacht, taithí oibre, cúrsaí airgid, suim i sport nó a bheith faoin aer, etc. Tá 40 focal ag teastáil. Ná glac le focail Bhéarla. Sa chás nach bhfuil an t-alt fada go leor baintear céatadán cuí den mharc a bhronntar, e.g. mura bhfuil ann ach thart faoi 32 fhocal, bainfear an cúigiú cuid den mharc bronnta.",
-            "Assess the relevant paragraph /15, off-topic /5. Reduce only its awarded mark proportionally if short: 20 of 40 words → 50% reduction (PDF 14); about 32 of 40 words → one-fifth reduction (PDF 15). No fixed reference count or later-year 8-mark ceiling is printed."
+            "An tAlt beag: 15 marc Caithfidh an t-alt a bheith ad rem, dírithe ar an téama, a bheith ag obair sa K Club i gCill Dara. Glac le tagairt don saghas oibre/spóirt, tuairim ar bith faoin obair féin, nó coinníollacha oibre nó aon tagairt eile a thaispeánann go bhfuil ábhar an ailt ar aigne an iarrthóra. Má tá sé ad rem é a mheas as 15 mar phíosa cumarsáideach. Mura bhfuil sé ad rem caithfear é a mharcáil as 5. Níl méid áirithe pointí ag teastáil -- más léir go bhfuil fáth ar bith ag an scríbhneoir gur mhaith leis/léi bheith ag obair i ngalfchlub nó ar mhachaire gailf, glac leis go bhfuil sé ad rem. Glac le tagairtí do thréithe pearsanta, pearsantacht, taithí oibre, cúrsaí airgid, suim i sport nó a bheith faoin aer, etc. Tá 40 focal ag teastáil. Ná glac le focail Bhéarla. Sa chás nach bhfuil an t-alt fada go leor baintear céatadán cuí den mharc a bhronntar, e.g. mura bhfuil ann ach thart faoi 32 fhocal, bainfear an cúigiú cuid den mharc bronnta."
           ]
         },
         {
@@ -3014,13 +2998,11 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Dul na Gaeilge: struchtúir na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010."
+            "Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla."
           ]
         }
       ],
-      "markingGuideNote": "Whole 40-mark form: fields 15 using the doubled column 30÷2 rounded up once, paragraph 15 after its own length adjustment, shared language 10. The printed undoubled birth-date ½ conflicts with the doubled 2 and the total 15; compare both columns. The printed options (21 Iúil, 28 Iúil, 4 Lúnasa) are a choice inside this one task, so one card carries the whole task.",
+      "markingGuideNote": "Whole 40-mark form: fields 15 using the doubled column 30÷2 rounded up once, paragraph 15 after its own length adjustment, shared language 10. The printed undoubled birth-date ½ conflicts with the doubled 2 and the total 15; compare both columns. The printed options (21 Iúil, 28 Iúil, 4 Lúnasa) are a choice inside this one task, so one card carries the whole task. Use the printed doubled column: phone 1; address 3; age 1; birth date 2; current job 2; certificate exam 2; five subjects 10; three sports 3; garden 1; tractor 1; early start 1; previous golf 1; interview date 1; bottom date 1. Total 30, divide once by 2 and round up once: 21÷2=10½→11. Published table conflict: the undoubled birth-date row prints ½, while the doubled row prints 2. The undoubled values sum 14½ despite the printed total 15. This rubric follows the explicit doubled 30÷2 method and its 15-mark total; both original columns remain visible. Assess the relevant paragraph /15, off-topic /5. Reduce only its awarded mark proportionally if short: 20 of 40 words → 50% reduction (PDF 14); about 32 of 40 words → one-fifth reduction (PDF 15). No fixed reference count or later-year 8-mark ceiling is printed. Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 5(b)",
@@ -3110,8 +3092,7 @@
           "guidanceKind": "quality",
           "guidance": [
             "Tasc → Cuntas (timpeall 90 focal) a scríobh d’Iris na Scoile bunaithe ar Lá ar an Trá leis an gClub Óige mar atá léirithe sa phictiúr. Cumas Cumarsáide = 37 marc (i) Níor mhór cúig thagairt ar a laghad a bheith sa chuntas d’imeachtaí nó do thosca na hócáide. (ii) Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an ócáid a léirítear. (iii) Ní ghlactar le Béarla. (iv) Tá timpeall 90 focal ag teastáil. Sa chás nach mbíonn an t-alt fada go leor, baintear céatadán cuí den mharc a bhronntar. Cruinneas Gaeilge = 13 marc Nóta Beifear ag súil le tagairtí dá leithéid seo a leanas: Ag teacht chuig an trá nó ag imeacht ón dtrá leis an gClub Óige An lá / am / áit a raibh sé ar siúl Costas An duine / na daoine a bhí in éineacht leat An aimsir Na himeachtaí a bhí ar siúl ann: Ceol / Damhsa / Rince / Ag seinm ceoil / Ag éisteacht le ceol /Ag canadh / dioscó Comórtas damhsa / Duaiseanna Ag ithe / ag ól / picnic/ ceapairí etc. Cheannaigh mé lón / bia / cannaí (ach ionramháil a bheith déanta) Ag imirt cluichí (Eitpheil) ar an trá. Ag rith ar an trá/ Ag rásaíocht",
-            "Ag snámh san fharraige/uisce. Ag bádóireacht/ag seoltóireacht/ag iomramh Tuairim faoin lá. Bus abhaile / tagairt don am (ar fhág tú an trá / ar bhain tú an baile amach).",
-            "Assess communication /37 against the five required references. Apply the proportional short-length reduction to this awarded communication mark only; language /13 remains separate. The 2010 scheme prints no fixed 5-mark deduction per missing reference."
+            "Ag snámh san fharraige/uisce. Ag bádóireacht/ag seoltóireacht/ag iomramh Tuairim faoin lá. Bus abhaile / tagairt don am (ar fhág tú an trá / ar bhain tú an baile amach)."
           ]
         },
         {
@@ -3137,13 +3118,11 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Dul na Gaeilge: struchtúir na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla.",
-            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010."
+            "Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla."
           ]
         }
       ],
-      "markingGuideNote": "Whole 50-mark story: communication 37 after proportional length adjustment plus language 13. Example references are illustrative and are not a closed choose-five pool. No later-year fixed penalty or worked length table is imported.",
+      "markingGuideNote": "Whole 50-mark story: communication 37 after proportional length adjustment plus language 13. Example references are illustrative and are not a closed choose-five pool. No later-year fixed penalty or worked length table is imported. Assess communication /37 against the five required references. Apply the proportional short-length reduction to this awarded communication mark only; language /13 remains separate. The 2010 scheme prints no fixed 5-mark deduction per missing reference. Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 6(a)",
@@ -3230,8 +3209,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Tasc → Scríobh faoi Eachtra a tharla agus tú amuigh ag rothaíocht le do chara. Cumas Cumarsáide = 37 marc (i) Bheadh tagairt amháin do gach aon phictiúr tábhachtach mar aon le aon tagairt amháin eile le go mbeadh fás nádúrtha ag baint leis an eachtra. (ii) Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an ócáid a léirítear. (iii) Ní ghlactar le Béarla (iv) Tá timpeall 90 focal ag teastáil. Sa chás nach mbeadh an t-alt fada go leor, baintear céatadán cuí den marc a bhronntar. Cruinneas Gaeilge = 13 marc Nóta Beifear ag súil le tagairtí dá leithéid seo a leanas: Pictiúr 1 : ag rothaíocht / an aimsir / cara ag marcaíocht ar chapall / an áit. Pictiúr 2 : madra ag tafann/ eagla ar an gcapall / an capall ag preabadh (léim) / titim den chapall / eagla / geit. Pictiúr 3: Ag breith ar an gcapall / ag cabhrú /ag tabhairt aire don chailín / caipín/ ag dul suas ar an gcapall arís. Pictiúr 4 : Ar ais ar an gcapall / áthas (gliondar) ar gach duine / buíochas a ghabháil/ ag fágáil slán.",
-            "Assess communication /37 against the five required references. Apply the proportional short-length reduction to this awarded communication mark only; language /13 remains separate. The 2010 scheme prints no fixed 5-mark deduction per missing reference."
+            "Tasc → Scríobh faoi Eachtra a tharla agus tú amuigh ag rothaíocht le do chara. Cumas Cumarsáide = 37 marc (i) Bheadh tagairt amháin do gach aon phictiúr tábhachtach mar aon le aon tagairt amháin eile le go mbeadh fás nádúrtha ag baint leis an eachtra. (ii) Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an ócáid a léirítear. (iii) Ní ghlactar le Béarla (iv) Tá timpeall 90 focal ag teastáil. Sa chás nach mbeadh an t-alt fada go leor, baintear céatadán cuí den marc a bhronntar. Cruinneas Gaeilge = 13 marc Nóta Beifear ag súil le tagairtí dá leithéid seo a leanas: Pictiúr 1 : ag rothaíocht / an aimsir / cara ag marcaíocht ar chapall / an áit. Pictiúr 2 : madra ag tafann/ eagla ar an gcapall / an capall ag preabadh (léim) / titim den chapall / eagla / geit. Pictiúr 3: Ag breith ar an gcapall / ag cabhrú /ag tabhairt aire don chailín / caipín/ ag dul suas ar an gcapall arís. Pictiúr 4 : Ar ais ar an gcapall / áthas (gliondar) ar gach duine / buíochas a ghabháil/ ag fágáil slán."
           ]
         },
         {
@@ -3257,13 +3235,11 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Dul na Gaeilge: struchtúir na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla.",
-            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010."
+            "Foclóir: cruinneas sa stór focal. Litriú: moltar gan an iomarca béime a chur ar an ngné seo ag an leibhéal seo. Ná glac le Béarla."
           ]
         }
       ],
-      "markingGuideNote": "Whole 50-mark story: communication 37 after proportional length adjustment plus language 13. Example references are illustrative and are not a closed choose-five pool. No later-year fixed penalty or worked length table is imported.",
+      "markingGuideNote": "Whole 50-mark story: communication 37 after proportional length adjustment plus language 13. Example references are illustrative and are not a closed choose-five pool. No later-year fixed penalty or worked length table is imported. Assess communication /37 against the five required references. Apply the proportional short-length reduction to this awarded communication mark only; language /13 remains separate. The 2010 scheme prints no fixed 5-mark deduction per missing reference. Reasonable-accommodation guidance is on scheme PDF 17. No four-point language-conversion table is printed in 2010.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 6(b)",

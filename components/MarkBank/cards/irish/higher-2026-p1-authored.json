@@ -291,7 +291,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1(a)",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -302,7 +302,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cén t-ainm atá ar an trucail chaife atá luaite san fhógra seo? 2 mharc Sos Beag = 2 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -357,7 +357,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1(b)",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -368,7 +368,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cad iad na huaireanta oibre a bheidh ag an oibrí barista? 2 mharc A naoi a chlog go dtí a cúig a chlog = 2 mharc A naoi go dtí a cúig = 2 mharc 9 go dtí 5 = 2 mharc 9 - 5 = 2 mharc 9 a.m. – 5 p.m. = 2 mharc 09:00 – 17:00 = 2 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -423,7 +423,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 4,
           "permittedMarks": [
@@ -436,7 +436,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Scríobh síos dhá cháilíocht atá riachtanach don phost mar oibrí barista. 2 mharc + 2 mharc Taithí (ar bheith ag obair) mar fhreastalaí = 2 mharc Teastas i sláinteachas bia = 2 mharc Scileanna maithe cumarsáide = 2 mharc Scileanna cumarsáide = 1 mharc Teastas i sláinteachas/i sláinte bhia/i mbia sláintiúil/i mbia = 1 mharc Scileanna maithe = 1 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -491,7 +491,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 3",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -502,7 +502,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cén tuarastal a gheobhaidh an t-oibrí barista? 2 mharc Ceithre euro déag san uair = 2 mharc €14 san uair = 2 mharc Ceithre euro déag/€14 = 1 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -557,7 +557,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -568,7 +568,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cathain a chuirfear tús le scéim cónaithe Gaeilge do mhic léinn na chéad bhliana i gColáiste na Tríonóide? 2 mharc I mí Mheán Fómhair = 2 mharc Meán Fómhair = 2 mharc 09/2026 = 2 mharc 09/26 = 2 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -623,7 +623,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 4,
           "permittedMarks": [
@@ -636,7 +636,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Scríobh síos dhá rud a chaithfidh an mac léinn a bheith sásta a dhéanamh de réir choinníollacha na scéime. 2 mharc + 2 mharc Lóistín a roinnt le cainteoirí Gaeilge/le Gaeilgeoirí (eile) = 2 mharc An Ghaeilge a labhairt gach lá = 2 mharc An Ghaeilge a labhairt = 1 mharc (A bheith) páirteach/páirt in imeachtaí Gaelacha/Gaeilge = 2 mharc Lóistín a roinnt = 1 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -691,7 +691,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 3",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -702,7 +702,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cé mhéad mac léinn a roghnófar don scéim cónaithe tar éis na n-agallamh? 2 mharc 12/dhá mhac léinn déag/a dó dhéag/dháréag = 2 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -757,7 +757,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -768,7 +768,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cathain a d’imir Pól i gcluiche ceannais peile an chontae? 2 mharc Coicís ó shin = 2 mharc Dhá sheachtain ó shin = 2 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -823,7 +823,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 4,
           "permittedMarks": [
@@ -836,7 +836,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Scríobh síos dhá phointe eolais faoin gcalaois a rinneadh ar Phól agus an liathróid ina sheilbh aige. 2 mharc + 2 mharc Rug imreoir (ón bhfoireann eile) ar a gheansaí = 2 mharc Rugadh ar a gheansaí = 2 mharc Leagadh go talamh é/leagadh é = 2 mharc Thit sé (go ciotach) ar a rúitín = 2 mharc Rug imreoir ón bhfoireann eile air = 2 mharc Rug imreoir air = 1 mharc Thit sé go ciotach = 2 mharc Thit sé = 1 mharc Bhris/ghortaigh sé a rúitín = 2 mharc Bhí sé ag imirt i lár na páirce = 1 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -891,7 +891,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 3",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -902,7 +902,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Luaigh cúis amháin a raibh díomá an domhain ar Phól. 2 mharc Chaill sé bronnadh an choirn = 2 mharc Chaill sé bronnadh = 1 mharc Ní raibh sé in ann dul chuig an gcóisir sa chlub(theach) an oíche sin = 2 mharc Ní raibh sé in ann dul chuig an gcóisir sa chlub(theach) = 2 mharc Ní raibh sé ag an gcóisir sa chlub(theach) = 2 mharc Ní raibh sé in ann dul chuig an gcóisir an oíche sin = 2 mharc Ní raibh sé ag an gcóisir an oíche sin = 2 mharc Ní raibh sé in ann dul chuig an gclub(theach) an oíche sin = 2 mharc Ní raibh sé in ann dul chuig an gcóisir/ní raibh sé ag an gcóisir = 1 mharc Ní raibh sé in ann dul chuig an gclub(theach)/ní raibh sé sa chlub(theach) = 1 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -957,7 +957,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 4,
           "permittedMarks": [
@@ -970,7 +970,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Scríobh síos an dá phointe eolais faoin tsaoire a bhí beartaithe ag Pól agus ag a chairde. 2 mharc + 2 mharc (Saoire) rothaíochta/rotha(i)r/rothaí/rothaithe = 2 mharc (Saoire) i ndeisceart na Fraince = 2 mharc (Saoire) sa Fhrainc = 1 mharc Bhí air an tsaoire a chur ar ceal = 2 mharc Curtha ar ceal = 2 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -1025,7 +1025,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -1036,7 +1036,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cad a cheannaigh Pól nuair a chuir sé an tsaoire in áirithe? 2 mharc Árachas taistil = 2 mharc Árachas = 2 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -1091,7 +1091,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -1102,7 +1102,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cén baile ina raibh Fleadh Cheoil na hÉireann ar siúl? 2 mharc Loch Garman = 2 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -1157,7 +1157,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 4,
           "permittedMarks": [
@@ -1170,12 +1170,11 @@
           "guidanceKind": "exact",
           "guidance": [
             "Scríobh síos dhá chúis nár éirigh le Sinéad bonn a bhuachan i gcraobhchomórtas an bhosca ceoil faoi ocht mbliana déag. 2 mharc + 2 mharc Níor sheinn sí (na poirt) chomh maith agus ab fhéidir léi = 2 mharc Mhothaigh/bhraith/bhí sí an-neirbhíseach = 2 mharc Mhothaigh/bhraith/bhí sí neirbhíseach = 1 mharc An-neirbhíseach = 2 mharc Neirbhíseach = 1 mharc (Bhí sí) in iomaíocht le ceoltóirí iontacha eile = 2 mharc (Bhí sí) in iomaíocht le ceoltóirí eile = 1 mharc Bhí na ceoltóirí eile go hiontach = 2 mharc Níor sheinn sí (na poirt) go maith = 1 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí.",
-            "Paper wording “duais a bhuachan”; the scheme prints “bonn a bhuachan”. The accepted answers are unchanged."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
-      "markingGuideNote": "One printed question at its published 4-mark tariff (two points at 2 + 2). Listed answers and tariffs come from the 2026 SEC scheme; equivalent wording with the same meaning is accepted. Scheme PDF 3 and 10: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card.",
+      "markingGuideNote": "One printed question at its published 4-mark tariff (two points at 2 + 2). Listed answers and tariffs come from the 2026 SEC scheme; equivalent wording with the same meaning is accepted. Scheme PDF 3 and 10: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card. Paper wording “duais a bhuachan”; the scheme prints “bonn a bhuachan”. The accepted answers are unchanged.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Cuid B · Comhrá a Dó · An Chéad Mhír · Ceist 2",
@@ -1226,7 +1225,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 3",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -1237,7 +1236,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cén rud ba mhó a chuaigh i bhfeidhm ar Shinéad ag an bhFleadh? 2 mharc An meas (atá ag daoine) ar cheol agus ar rince traidisiúnta na hÉireann = 2 mharc An meas (atá ag daoine) ar cheol agus ar rince traidisiúnta = 2 mharc An meas (atá ag daoine) ar cheol agus ar rince na hÉireann = 2 mharc An meas (atá ag daoine) ar cheol traidisiúnta na hÉireann = 1 mharc An meas (atá ag daoine) ar rince traidisiúnta na hÉireann = 1 mharc An meas (atá ag daoine) ar cheol traidisiúnta = 1 mharc An meas (atá ag daoine) ar rince traidisiúnta = 1 mharc An meas (atá ag daoine) ar cheol na hÉireann = 1 mharc An meas (atá ag daoine) ar rince na hÉireann = 1 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -1292,7 +1291,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -1303,7 +1302,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cén ráfla a chuala Sinéad faoin réalta cheoil Ed Sheeran? 2 mharc (Go mbeadh sé) i láthair i gceann de na tithe tábhairne/i dteach tábhairne oíche Dé Máirt = 2 mharc Go mbeadh sé (i láthair) i gceann de na tithe tábhairne/I dteach tábhairne oíche Dé Máirt = 2 mharc (Go mbeadh sé) i láthair i gceann de na tithe tábhairne/i dteach tábhairne = 1 mharc (Go mbeadh sé) i láthair Dé Máirt = 1 mharc Go mbeadh sé (i láthair) i gceann de na tithe tábhairne/i dteach tábhairne = 1 mharc (Go mbeadh sé) ag an bhFleadh = 1 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -1358,7 +1357,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -1369,7 +1368,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cén churiarracht dhomhanda Guinness a sáraíodh ag an bhFleadh? 2 mharc An banna céilí is mó riamh = 2 mharc An banna céilí is mó = 2 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -1424,7 +1423,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 3",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -1435,7 +1434,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cé mhéad ceoltóir a bhí ag seinm le chéile nuair a sáraíodh an churiarracht dhomhanda sin? 2 mharc 1018 = 2 mharc Míle ocht déag = 2 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -1490,7 +1489,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -1501,7 +1500,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cé mhéad bliain atá an sobaldráma Ros na Rún á chraoladh ar TG4? 2 mharc Tríocha = 2 mharc 30 = 2 mharc Ón mbliain 1996 = 2 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -1556,7 +1555,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 4,
           "permittedMarks": [
@@ -1569,7 +1568,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Scríobh síos an dá rud a mheallann an lucht féachana dílis chuig an sobaldráma Ros na Rún. 2 mharc + 2 mharc Téamaí comhaimseartha = 2 mharc Téamaí = 1 mharc Léiriú ar an saol i bpobal Gaeltachta = 2 mharc Léiriú ar an saol sa Ghaeltacht = 2 mharc Léiriú ar an bpobal Gaeltachta = 2 mharc Léiriú ar an saol = 1 mharc Léiriú ar an nGaeltacht = 1 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -1624,7 +1623,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 3",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -1635,7 +1634,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cén tseirbhís dhigiteach nua atá curtha ar fáil ar Sheinnteoir TG4 le déanaí? 2 mharc Is féidir gach clár a shruthú (air) lá sula gcraoltar ar an teilifís é = 2 mharc Is féidir gach clár a shruthú (air) = 1 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -1690,7 +1689,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 2,
           "permittedMarks": [
@@ -1701,7 +1700,7 @@
           "guidanceKind": "exact",
           "guidance": [
             "Cén dáta ar a raibh Oíche na hÓige ar siúl den chéad uair anuraidh? 2 mharc Ar an aonú lá is fiche de mhí na Samhna/de Shamhain = 2 mharc 21/11 = 2 mharc 21ú Samhain = 2 mharc 21 Samhain = 2 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
@@ -1756,7 +1755,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 4,
           "permittedMarks": [
@@ -1769,12 +1768,11 @@
           "guidanceKind": "exact",
           "guidance": [
             "Scríobh síos dhá dheis a thugann rannpháirtíocht i gclubanna agus i seirbhísí óga do dhaoine óga. 2 mharc + 2 mharc Bualadh le cairde nua = 2 mharc Cairde nua = 1 mharc Scileanna nua a fhoghlaim = 2 mharc Scileanna nua = 1 mharc Scileanna a fhoghlaim = 1 mharc Muinín a fhorbairt = 2 mharc Muinín = 1 mharc Níos mó suime (a chur) i gcúrsaí folláine/i bhfolláine = 2 mharc Cúrsaí folláine/folláine = 1 mharc",
-            "Nótaí (scheme PDF 6): Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí.",
-            "Paper wording “seirbhísí óige”; the scheme prints “seirbhísí óga”. The accepted answers are unchanged."
+            "Nótaí: Níor chóir a mheas nach féidir glacadh le haon fhreagra ach amháin na freagraí a thugtar ar an scéim mharcála. Is féidir glacadh le nathanna cainte, frásaí agus focail a bhfuil a gciall cosúil leo siúd atá ar an scéim mharcála chomh maith. Ba cheart freagraí cealaithe a chur san áireamh sa chás nár tugadh aon fhreagra eile. Sa chás go bhfreagraíonn iarrthóir ceist níos mó ná uair amháin, ná glac leis an bhfreagra sa chás go ndéanann an freagra breise an freagra ceart neamhbhailí."
           ]
         }
       ],
-      "markingGuideNote": "One printed question at its published 4-mark tariff (two points at 2 + 2). Listed answers and tariffs come from the 2026 SEC scheme; equivalent wording with the same meaning is accepted. Scheme PDF 3 and 10: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card.",
+      "markingGuideNote": "One printed question at its published 4-mark tariff (two points at 2 + 2). Listed answers and tariffs come from the 2026 SEC scheme; equivalent wording with the same meaning is accepted. Scheme PDF 3 and 10: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card. Paper wording “seirbhísí óige”; the scheme prints “seirbhísí óga”. The accepted answers are unchanged.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Cuid C · Píosa a Dó · Ceist 2",
@@ -1971,12 +1969,11 @@
           "guidance": [
             "Cumas Gaeilge (80 marc) (i) Fairsinge agus Saibhreas Stór Gaeilge an iarrthóra agus (ii) Beachtas maidir le máistreacht na cruinnúsáide ar na príomhghnéithe (gramadach, comhréir, struchtúr, deilbhíocht) de cheart na Gaeilge. Dhá ghné i gceist sa Chumas Gaeilge: Stór Gaeilge agus dul na teanga Beachtas/Cruinneas na Gaeilge • Máistreacht an iarrthóra ar an teanga chun na smaointe a ionramháil • Cumas an iarrthóra chun a smaointe faoin ábhar a scríobh síos go tuisceanach soiléir, gan bunrialacha na teanga a shárú • Fairsingeacht agus saibhreas an fhoclóra • An Chomhréir - struchtúir na n-abairtí Caighdeán an iarrthóra i gcruinnláimhseáil ghramadach na Gaeilge: • Aimsirí na mbriathra • Litriú • Séimhiú • Urú • An Chlaoninsint • Réamhfhocail • Díochlaontaí na n-ainmfhocal Tá sé fíorthábhachtach idirdhealú a dhéanamh idir mórbhotúin chomhréire agus mionbhotúin ghramadaí agus litrithe. Cuimhnigh ar an treoir atá ar an scrúdpháipéar: Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Sa chás go scríobhtar ábhar seachtrach nach bhfuil ábhartha cuirfear as an áireamh an t-ábhar neamhábhartha sin. D’fhéadfadh a bheith mar thoradh ar an gcinneadh sin nach sásóidh an iarracht cheapadóireachta na riachtanais ó thaobh fad de, agus dá thoradh sin, go ngearrfar pionós ar an iarracht. Nuair nach bhfuil an iarracht ar fad ábhartha, cuirtear lúibín cearnach ag tús an phíosa/an ailt nach bhfuil ábhartha agus lúibín cearnach eile ag deireadh an phíosa/ an ailt sin. Cuirtear líne chorrach cheartingearach ar thaobh na láimhe deise den phíosa/den alt nach bhfuil ábhartha.",
             "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
-            "S4 applies to this title: “Easnamhach i gcás A (a), A (b) agus A (c)” — Stíl (5) Ábhar (10) Gaeilge (54)."
+            "“Easnamhach i gcás A (a), A (b) agus A (c)” — Stíl (5) Ábhar (10) Gaeilge (54)."
           ]
         }
       ],
-      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. AISTE nó ALT NUACHTÁIN/IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route.",
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. AISTE nó ALT NUACHTÁIN/IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route. Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award. S4 applies to this title.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht A(a)",
@@ -2163,12 +2160,11 @@
           "guidance": [
             "Cumas Gaeilge (80 marc) (i) Fairsinge agus Saibhreas Stór Gaeilge an iarrthóra agus (ii) Beachtas maidir le máistreacht na cruinnúsáide ar na príomhghnéithe (gramadach, comhréir, struchtúr, deilbhíocht) de cheart na Gaeilge. Dhá ghné i gceist sa Chumas Gaeilge: Stór Gaeilge agus dul na teanga Beachtas/Cruinneas na Gaeilge • Máistreacht an iarrthóra ar an teanga chun na smaointe a ionramháil • Cumas an iarrthóra chun a smaointe faoin ábhar a scríobh síos go tuisceanach soiléir, gan bunrialacha na teanga a shárú • Fairsingeacht agus saibhreas an fhoclóra • An Chomhréir - struchtúir na n-abairtí Caighdeán an iarrthóra i gcruinnláimhseáil ghramadach na Gaeilge: • Aimsirí na mbriathra • Litriú • Séimhiú • Urú • An Chlaoninsint • Réamhfhocail • Díochlaontaí na n-ainmfhocal Tá sé fíorthábhachtach idirdhealú a dhéanamh idir mórbhotúin chomhréire agus mionbhotúin ghramadaí agus litrithe. Cuimhnigh ar an treoir atá ar an scrúdpháipéar: Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Sa chás go scríobhtar ábhar seachtrach nach bhfuil ábhartha cuirfear as an áireamh an t-ábhar neamhábhartha sin. D’fhéadfadh a bheith mar thoradh ar an gcinneadh sin nach sásóidh an iarracht cheapadóireachta na riachtanais ó thaobh fad de, agus dá thoradh sin, go ngearrfar pionós ar an iarracht. Nuair nach bhfuil an iarracht ar fad ábhartha, cuirtear lúibín cearnach ag tús an phíosa/an ailt nach bhfuil ábhartha agus lúibín cearnach eile ag deireadh an phíosa/ an ailt sin. Cuirtear líne chorrach cheartingearach ar thaobh na láimhe deise den phíosa/den alt nach bhfuil ábhartha.",
             "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
-            "S4 applies to this title: “Easnamhach i gcás A (a), A (b) agus A (c)” — Stíl (5) Ábhar (10) Gaeilge (54)."
+            "“Easnamhach i gcás A (a), A (b) agus A (c)” — Stíl (5) Ábhar (10) Gaeilge (54)."
           ]
         }
       ],
-      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. AISTE nó ALT NUACHTÁIN/IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route.",
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. AISTE nó ALT NUACHTÁIN/IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route. Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award. S4 applies to this title.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht A(b)",
@@ -2355,12 +2351,11 @@
           "guidance": [
             "Cumas Gaeilge (80 marc) (i) Fairsinge agus Saibhreas Stór Gaeilge an iarrthóra agus (ii) Beachtas maidir le máistreacht na cruinnúsáide ar na príomhghnéithe (gramadach, comhréir, struchtúr, deilbhíocht) de cheart na Gaeilge. Dhá ghné i gceist sa Chumas Gaeilge: Stór Gaeilge agus dul na teanga Beachtas/Cruinneas na Gaeilge • Máistreacht an iarrthóra ar an teanga chun na smaointe a ionramháil • Cumas an iarrthóra chun a smaointe faoin ábhar a scríobh síos go tuisceanach soiléir, gan bunrialacha na teanga a shárú • Fairsingeacht agus saibhreas an fhoclóra • An Chomhréir - struchtúir na n-abairtí Caighdeán an iarrthóra i gcruinnláimhseáil ghramadach na Gaeilge: • Aimsirí na mbriathra • Litriú • Séimhiú • Urú • An Chlaoninsint • Réamhfhocail • Díochlaontaí na n-ainmfhocal Tá sé fíorthábhachtach idirdhealú a dhéanamh idir mórbhotúin chomhréire agus mionbhotúin ghramadaí agus litrithe. Cuimhnigh ar an treoir atá ar an scrúdpháipéar: Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Sa chás go scríobhtar ábhar seachtrach nach bhfuil ábhartha cuirfear as an áireamh an t-ábhar neamhábhartha sin. D’fhéadfadh a bheith mar thoradh ar an gcinneadh sin nach sásóidh an iarracht cheapadóireachta na riachtanais ó thaobh fad de, agus dá thoradh sin, go ngearrfar pionós ar an iarracht. Nuair nach bhfuil an iarracht ar fad ábhartha, cuirtear lúibín cearnach ag tús an phíosa/an ailt nach bhfuil ábhartha agus lúibín cearnach eile ag deireadh an phíosa/ an ailt sin. Cuirtear líne chorrach cheartingearach ar thaobh na láimhe deise den phíosa/den alt nach bhfuil ábhartha.",
             "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
-            "S4 applies to this title: “Easnamhach i gcás A (a), A (b) agus A (c)” — Stíl (5) Ábhar (10) Gaeilge (54)."
+            "“Easnamhach i gcás A (a), A (b) agus A (c)” — Stíl (5) Ábhar (10) Gaeilge (54)."
           ]
         }
       ],
-      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. AISTE nó ALT NUACHTÁIN/IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route.",
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. AISTE nó ALT NUACHTÁIN/IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route. Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award. S4 applies to this title.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht A(c)",
@@ -2546,12 +2541,11 @@
           "guidanceKind": "quality",
           "guidance": [
             "Cumas Gaeilge (80 marc) (i) Fairsinge agus Saibhreas Stór Gaeilge an iarrthóra agus (ii) Beachtas maidir le máistreacht na cruinnúsáide ar na príomhghnéithe (gramadach, comhréir, struchtúr, deilbhíocht) de cheart na Gaeilge. Dhá ghné i gceist sa Chumas Gaeilge: Stór Gaeilge agus dul na teanga Beachtas/Cruinneas na Gaeilge • Máistreacht an iarrthóra ar an teanga chun na smaointe a ionramháil • Cumas an iarrthóra chun a smaointe faoin ábhar a scríobh síos go tuisceanach soiléir, gan bunrialacha na teanga a shárú • Fairsingeacht agus saibhreas an fhoclóra • An Chomhréir - struchtúir na n-abairtí Caighdeán an iarrthóra i gcruinnláimhseáil ghramadach na Gaeilge: • Aimsirí na mbriathra • Litriú • Séimhiú • Urú • An Chlaoninsint • Réamhfhocail • Díochlaontaí na n-ainmfhocal Tá sé fíorthábhachtach idirdhealú a dhéanamh idir mórbhotúin chomhréire agus mionbhotúin ghramadaí agus litrithe. Cuimhnigh ar an treoir atá ar an scrúdpháipéar: Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Sa chás go scríobhtar ábhar seachtrach nach bhfuil ábhartha cuirfear as an áireamh an t-ábhar neamhábhartha sin. D’fhéadfadh a bheith mar thoradh ar an gcinneadh sin nach sásóidh an iarracht cheapadóireachta na riachtanais ó thaobh fad de, agus dá thoradh sin, go ngearrfar pionós ar an iarracht. Nuair nach bhfuil an iarracht ar fad ábhartha, cuirtear lúibín cearnach ag tús an phíosa/an ailt nach bhfuil ábhartha agus lúibín cearnach eile ag deireadh an phíosa/ an ailt sin. Cuirtear líne chorrach cheartingearach ar thaobh na láimhe deise den phíosa/den alt nach bhfuil ábhartha.",
-            "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award."
+            "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc"
           ]
         }
       ],
-      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. AISTE nó ALT NUACHTÁIN/IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route.",
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. AISTE nó ALT NUACHTÁIN/IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route. Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht A(d)",
@@ -2737,12 +2731,11 @@
           "guidanceKind": "quality",
           "guidance": [
             "Cumas Gaeilge (80 marc) (i) Fairsinge agus Saibhreas Stór Gaeilge an iarrthóra agus (ii) Beachtas maidir le máistreacht na cruinnúsáide ar na príomhghnéithe (gramadach, comhréir, struchtúr, deilbhíocht) de cheart na Gaeilge. Dhá ghné i gceist sa Chumas Gaeilge: Stór Gaeilge agus dul na teanga Beachtas/Cruinneas na Gaeilge • Máistreacht an iarrthóra ar an teanga chun na smaointe a ionramháil • Cumas an iarrthóra chun a smaointe faoin ábhar a scríobh síos go tuisceanach soiléir, gan bunrialacha na teanga a shárú • Fairsingeacht agus saibhreas an fhoclóra • An Chomhréir - struchtúir na n-abairtí Caighdeán an iarrthóra i gcruinnláimhseáil ghramadach na Gaeilge: • Aimsirí na mbriathra • Litriú • Séimhiú • Urú • An Chlaoninsint • Réamhfhocail • Díochlaontaí na n-ainmfhocal Tá sé fíorthábhachtach idirdhealú a dhéanamh idir mórbhotúin chomhréire agus mionbhotúin ghramadaí agus litrithe. Cuimhnigh ar an treoir atá ar an scrúdpháipéar: Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Sa chás go scríobhtar ábhar seachtrach nach bhfuil ábhartha cuirfear as an áireamh an t-ábhar neamhábhartha sin. D’fhéadfadh a bheith mar thoradh ar an gcinneadh sin nach sásóidh an iarracht cheapadóireachta na riachtanais ó thaobh fad de, agus dá thoradh sin, go ngearrfar pionós ar an iarracht. Nuair nach bhfuil an iarracht ar fad ábhartha, cuirtear lúibín cearnach ag tús an phíosa/an ailt nach bhfuil ábhartha agus lúibín cearnach eile ag deireadh an phíosa/ an ailt sin. Cuirtear líne chorrach cheartingearach ar thaobh na láimhe deise den phíosa/den alt nach bhfuil ábhartha.",
-            "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award."
+            "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc"
           ]
         }
       ],
-      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. AISTE nó ALT NUACHTÁIN/IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route.",
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. AISTE nó ALT NUACHTÁIN/IRISE is a choice of writing form inside one response, marked by the same Stíl/Ábhar/Gaeilge scheme; it is not a separate route. Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht A(e)",
@@ -2925,12 +2918,11 @@
           "guidanceKind": "quality",
           "guidance": [
             "Cumas Gaeilge (80 marc) (i) Fairsinge agus Saibhreas Stór Gaeilge an iarrthóra agus (ii) Beachtas maidir le máistreacht na cruinnúsáide ar na príomhghnéithe (gramadach, comhréir, struchtúr, deilbhíocht) de cheart na Gaeilge. Dhá ghné i gceist sa Chumas Gaeilge: Stór Gaeilge agus dul na teanga Beachtas/Cruinneas na Gaeilge • Máistreacht an iarrthóra ar an teanga chun na smaointe a ionramháil • Cumas an iarrthóra chun a smaointe faoin ábhar a scríobh síos go tuisceanach soiléir, gan bunrialacha na teanga a shárú • Fairsingeacht agus saibhreas an fhoclóra • An Chomhréir - struchtúir na n-abairtí Caighdeán an iarrthóra i gcruinnláimhseáil ghramadach na Gaeilge: • Aimsirí na mbriathra • Litriú • Séimhiú • Urú • An Chlaoninsint • Réamhfhocail • Díochlaontaí na n-ainmfhocal Tá sé fíorthábhachtach idirdhealú a dhéanamh idir mórbhotúin chomhréire agus mionbhotúin ghramadaí agus litrithe. Cuimhnigh ar an treoir atá ar an scrúdpháipéar: Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Sa chás go scríobhtar ábhar seachtrach nach bhfuil ábhartha cuirfear as an áireamh an t-ábhar neamhábhartha sin. D’fhéadfadh a bheith mar thoradh ar an gcinneadh sin nach sásóidh an iarracht cheapadóireachta na riachtanais ó thaobh fad de, agus dá thoradh sin, go ngearrfar pionós ar an iarracht. Nuair nach bhfuil an iarracht ar fad ábhartha, cuirtear lúibín cearnach ag tús an phíosa/an ailt nach bhfuil ábhartha agus lúibín cearnach eile ag deireadh an phíosa/ an ailt sin. Cuirtear líne chorrach cheartingearach ar thaobh na láimhe deise den phíosa/den alt nach bhfuil ábhartha.",
-            "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award."
+            "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc"
           ]
         }
       ],
-      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. Each printed title is a separate route; the story itself is open.",
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. Each printed title is a separate route; the story itself is open. Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht B(a)",
@@ -3113,12 +3105,11 @@
           "guidanceKind": "quality",
           "guidance": [
             "Cumas Gaeilge (80 marc) (i) Fairsinge agus Saibhreas Stór Gaeilge an iarrthóra agus (ii) Beachtas maidir le máistreacht na cruinnúsáide ar na príomhghnéithe (gramadach, comhréir, struchtúr, deilbhíocht) de cheart na Gaeilge. Dhá ghné i gceist sa Chumas Gaeilge: Stór Gaeilge agus dul na teanga Beachtas/Cruinneas na Gaeilge • Máistreacht an iarrthóra ar an teanga chun na smaointe a ionramháil • Cumas an iarrthóra chun a smaointe faoin ábhar a scríobh síos go tuisceanach soiléir, gan bunrialacha na teanga a shárú • Fairsingeacht agus saibhreas an fhoclóra • An Chomhréir - struchtúir na n-abairtí Caighdeán an iarrthóra i gcruinnláimhseáil ghramadach na Gaeilge: • Aimsirí na mbriathra • Litriú • Séimhiú • Urú • An Chlaoninsint • Réamhfhocail • Díochlaontaí na n-ainmfhocal Tá sé fíorthábhachtach idirdhealú a dhéanamh idir mórbhotúin chomhréire agus mionbhotúin ghramadaí agus litrithe. Cuimhnigh ar an treoir atá ar an scrúdpháipéar: Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Sa chás go scríobhtar ábhar seachtrach nach bhfuil ábhartha cuirfear as an áireamh an t-ábhar neamhábhartha sin. D’fhéadfadh a bheith mar thoradh ar an gcinneadh sin nach sásóidh an iarracht cheapadóireachta na riachtanais ó thaobh fad de, agus dá thoradh sin, go ngearrfar pionós ar an iarracht. Nuair nach bhfuil an iarracht ar fad ábhartha, cuirtear lúibín cearnach ag tús an phíosa/an ailt nach bhfuil ábhartha agus lúibín cearnach eile ag deireadh an phíosa/ an ailt sin. Cuirtear líne chorrach cheartingearach ar thaobh na láimhe deise den phíosa/den alt nach bhfuil ábhartha.",
-            "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award."
+            "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc"
           ]
         }
       ],
-      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. Each printed title is a separate route; the story itself is open.",
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. Each printed title is a separate route; the story itself is open. Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht B(b)",
@@ -3301,12 +3292,11 @@
           "guidanceKind": "quality",
           "guidance": [
             "Cumas Gaeilge (80 marc) (i) Fairsinge agus Saibhreas Stór Gaeilge an iarrthóra agus (ii) Beachtas maidir le máistreacht na cruinnúsáide ar na príomhghnéithe (gramadach, comhréir, struchtúr, deilbhíocht) de cheart na Gaeilge. Dhá ghné i gceist sa Chumas Gaeilge: Stór Gaeilge agus dul na teanga Beachtas/Cruinneas na Gaeilge • Máistreacht an iarrthóra ar an teanga chun na smaointe a ionramháil • Cumas an iarrthóra chun a smaointe faoin ábhar a scríobh síos go tuisceanach soiléir, gan bunrialacha na teanga a shárú • Fairsingeacht agus saibhreas an fhoclóra • An Chomhréir - struchtúir na n-abairtí Caighdeán an iarrthóra i gcruinnláimhseáil ghramadach na Gaeilge: • Aimsirí na mbriathra • Litriú • Séimhiú • Urú • An Chlaoninsint • Réamhfhocail • Díochlaontaí na n-ainmfhocal Tá sé fíorthábhachtach idirdhealú a dhéanamh idir mórbhotúin chomhréire agus mionbhotúin ghramadaí agus litrithe. Cuimhnigh ar an treoir atá ar an scrúdpháipéar: Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Sa chás go scríobhtar ábhar seachtrach nach bhfuil ábhartha cuirfear as an áireamh an t-ábhar neamhábhartha sin. D’fhéadfadh a bheith mar thoradh ar an gcinneadh sin nach sásóidh an iarracht cheapadóireachta na riachtanais ó thaobh fad de, agus dá thoradh sin, go ngearrfar pionós ar an iarracht. Nuair nach bhfuil an iarracht ar fad ábhartha, cuirtear lúibín cearnach ag tús an phíosa/an ailt nach bhfuil ábhartha agus lúibín cearnach eile ag deireadh an phíosa/ an ailt sin. Cuirtear líne chorrach cheartingearach ar thaobh na láimhe deise den phíosa/den alt nach bhfuil ábhartha.",
-            "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award."
+            "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc"
           ]
         }
       ],
-      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. “ar son … nó ina aghaidh” is the speaker’s stance inside one speech (consistent with the English corpus “for or against” tasks); both stances are marked identically.",
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. “ar son … nó ina aghaidh” is the speaker’s stance inside one speech (consistent with the English corpus “for or against” tasks); both stances are marked identically. Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht C(a)",
@@ -3489,12 +3479,11 @@
           "guidanceKind": "quality",
           "guidance": [
             "Cumas Gaeilge (80 marc) (i) Fairsinge agus Saibhreas Stór Gaeilge an iarrthóra agus (ii) Beachtas maidir le máistreacht na cruinnúsáide ar na príomhghnéithe (gramadach, comhréir, struchtúr, deilbhíocht) de cheart na Gaeilge. Dhá ghné i gceist sa Chumas Gaeilge: Stór Gaeilge agus dul na teanga Beachtas/Cruinneas na Gaeilge • Máistreacht an iarrthóra ar an teanga chun na smaointe a ionramháil • Cumas an iarrthóra chun a smaointe faoin ábhar a scríobh síos go tuisceanach soiléir, gan bunrialacha na teanga a shárú • Fairsingeacht agus saibhreas an fhoclóra • An Chomhréir - struchtúir na n-abairtí Caighdeán an iarrthóra i gcruinnláimhseáil ghramadach na Gaeilge: • Aimsirí na mbriathra • Litriú • Séimhiú • Urú • An Chlaoninsint • Réamhfhocail • Díochlaontaí na n-ainmfhocal Tá sé fíorthábhachtach idirdhealú a dhéanamh idir mórbhotúin chomhréire agus mionbhotúin ghramadaí agus litrithe. Cuimhnigh ar an treoir atá ar an scrúdpháipéar: Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus an t-ábhar a scríobhtar. Sa chás go scríobhtar ábhar seachtrach nach bhfuil ábhartha cuirfear as an áireamh an t-ábhar neamhábhartha sin. D’fhéadfadh a bheith mar thoradh ar an gcinneadh sin nach sásóidh an iarracht cheapadóireachta na riachtanais ó thaobh fad de, agus dá thoradh sin, go ngearrfar pionós ar an iarracht. Nuair nach bhfuil an iarracht ar fad ábhartha, cuirtear lúibín cearnach ag tús an phíosa/an ailt nach bhfuil ábhartha agus lúibín cearnach eile ag deireadh an phíosa/ an ailt sin. Cuirtear líne chorrach cheartingearach ar thaobh na láimhe deise den phíosa/den alt nach bhfuil ábhartha.",
-            "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award."
+            "Catagóir Aicme Raon marcanna 1. Stór Gaeilge 2. Beachtas / Cruinneas na Gaeilge • Fairsingeacht agus Saibhreas atá sármhaith • Cruinneas sármhaith (den chuid is mó) Sármhaith Ard 76-80 marc Meánach 72-75 marc Íseal 68-71 marc • Fairsingeacht agus Saibhreas atá an-mhaith • Cruinneas an-mhaith (den chuid is mó) An-mhaith Ard 64-67 marc Meánach 60-63 marc Íseal 56-59 marc • Fairsingeacht agus Saibhreas atá maith • Cruinneas maith (den chuid is mó) Maith Ard 52-55 marc Meánach 48-51 marc Íseal 44-47 marc • Fairsingeacht agus Saibhreas atá measartha • Cruinneas measartha (den chuid is mó) Measartha Ard 40-43 marc Meánach 36-39 marc Íseal 32-35 marc • Fairsingeacht agus Saibhreas atá lag • Cruinneas lag (den chuid is mó) Lag Ard 28-31 marc Meánach 24-27 marc Íseal 20-23 marc • Fairsingeacht agus Saibhreas atá an-lag • Cruinneas an-lag (den chuid is mó) An-lag Ard 16-19 marc Meánach 12-15 marc Íseal 8-11 marc An-íseal 0-7 marc"
           ]
         }
       ],
-      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. “ar son … nó ina aghaidh” is the speaker’s stance inside one speech (consistent with the English corpus “for or against” tasks); both stances are marked identically.",
+      "markingGuideNote": "Whole 100-mark composition: Stíl 5, Ionramháil Ábhair 15, Cumas Gaeilge 80, assessed as one unit. Deficient-length attempts use the printed S1–S4 grades. “ar son … nó ina aghaidh” is the speaker’s stance inside one speech (consistent with the English corpus “for or against” tasks); both stances are marked identically. Scéim Mharcála Mhodhnaithe (scheme PDF 49): for eligible candidates spelling and the listed grammar features are not counted in the 80-mark Cumas Gaeilge award.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht C(b)",

@@ -31,6 +31,7 @@ if [ "$MODE" = "--check" ]; then
     if ! python3 "$A/$g" --check >/dev/null; then echo "STALE: $g does not reproduce its committed output" >&2; exit 1; fi
     echo "OK $g"
   done
+  python3 $A/irish_tools/lift_audit.py
 fi
 if [ "$MODE" != "--check" ]; then
   for m in $LEDGERS; do python3 "$m"; done

@@ -15,6 +15,7 @@ import json
 import re
 from pathlib import Path
 from irish_choice import withdraw_combinations
+from irish_lifted import printed_length, scheme_words_in
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001BLP100IV'
@@ -283,7 +284,10 @@ def build():
                  sourceDiscrepancyNotice='Nóta foinse: tá “Ceist 4(b) Foirm Iarratais” sa scéim mhodhnaithe (PDF 15), ach is litir í Ceist 4(b) in 2026.',
                  additionalTopicIds=['irish-2-8'])
     p12, p13, p14 = guide(12), guide(13), guide(14)
-    length = criterion('length', 'Fad', 4, ['Líon focal: 80–90: 0; 60–79: −2; 30–59: −3; <30: −4. Apply only when marking communication out of 34; with only T1–T4 (marking out of 30, 26, 22, 18 or 14) Fad = −0.'], deduct_from='cumarsaid')
+    # The printed word-count table (PDF 12); our note on when it applies moves to the card's note (irish_lifted).
+    length = criterion('length', 'Fad', 4, [printed_length(guide(12)),
+                       'Apply only when marking communication out of 34; with only T1–T4 (marking out of 30, 26, 22, 18 or 14) Fad = −0.'],
+                       deduct_from='cumarsaid')
     caps = 'Five references (T1–T5) are needed to mark communication out of 34. Deduct 4 for each missing reference and mark the remainder out of 30, 26, 22, 18 or 14. Length is penalised at most once.'
     stories = []
     captions = [('Ina suí ar bhinse', 'Ag comhrá'), ('Ar strae', 'Trína chéile'), ('Ag lorg', 'Faighte'), ('Sábháilte', 'Áthas')]
@@ -345,6 +349,7 @@ def main():
     args = parser.parse_args()
     data, scheme = build()
     scheme_md = '# Gaeilge Bonnleibhéal 2026 — SEC marking scheme\n\n' + '\n\n'.join(f'## PDF page {i + 1}\n\n' + p.get_text() for i, p in enumerate(scheme))
+    scheme_words_in(data)  # guidance carries the SEC's words only (irish_lifted.py)
     outputs = {OUT: json.dumps(data, ensure_ascii=False, indent=2) + '\n',
                ROOT / 'examiner-reports/irish/schemes/2026-fl.md': '\n'.join(line.rstrip() for line in scheme_md.splitlines()).rstrip() + '\n'}
     for path, value in outputs.items():

@@ -51,6 +51,8 @@ from irish_higher_2023_p2 import apply_legacy_review as apply_higher_2023_p2_rev
 from irish_ordinary_2023_p1 import apply_legacy_review as apply_ordinary_2023_p1_review
 from irish_ordinary_2023_p2 import apply_legacy_review as apply_ordinary_2023_p2_review
 from irish_furniture import strip_card
+from irish_gaeilge import lifted as lifted_gaeilge
+from irish_lifted import printed_lead_in, scheme_words
 
 # Boxed page headings removed from reviewed keys (irish_furniture.py): exact strings only, counts pinned per paper.
 HEADING_SCOPE = {(2022, 'higher', 2): 4, (2023, 'higher', 2): 2, (2024, 'higher', 2): 10, (2025, 'higher', 2): 2,
@@ -701,22 +703,36 @@ def listening_cards(year: int, level: str, paper_pages: list[str], scheme_pages:
     return cards
 
 
+def printed_text(text: str) -> str:
+    """A scheme page's text on one line, without the page number the SEC prints at its top."""
+    return re.sub(r'^\d+\s+', '', re.sub(r'\s+', ' ', text).strip())
+
+
+def between(text: str, start: str, end: str | None = None) -> str:
+    begin = text.index(start) + len(start)
+    return text[begin:text.index(end, begin) if end else len(text)].strip()
+
+
 def composition_scheme(year: int, level: str, scheme_pages: list[str]) -> tuple[int, list[dict]]:
+    """The composition criteria with the scheme's own words for each (lift, never write)."""
+    pages = [printed_text(text) for text in scheme_pages]
     if level == 'higher':
         page = next((index + 1 for index, text in enumerate(scheme_pages)
                      if 'Stíl chuí scríbhneoireachta' in text), None)
         if page is None:
             raise AssertionError(f'{year} HL: composition rubric page missing')
+        descriptors = next(text for text in pages if 'Stíl chuí scríbhneoireachta (5 mharc)' in text)
+        stil = between(descriptors, 'Stíl chuí scríbhneoireachta (5 mharc)', 'Ionramháil Ábhair (15 mharc)')
+        abhar = between(descriptors, 'Ionramháil Ábhair (15 mharc)')
+        cumas = next(index for index, text in enumerate(pages) if 'Cumas Gaeilge (80 marc)' in text)
+        gaeilge = [pages[cumas][pages[cumas].index('Cumas Gaeilge (80 marc)'):], pages[cumas + 1]]
+        assert stil.startswith('Stíl (5 mharc) = 5 mharc'), (year, stil[:60])
+        assert all(band in abhar for band in ['13, 14, 15', '11, 12', '9, 10', '6, 7, 8', '3, 4, 5', '0, 1, 2']), year
+        assert all(band in gaeilge[1] for band in ['76-80', '64-67', '52-55', '40-43', '28-31', '16-19', '0-7']), year
         criteria = [
-            criterion('stil', 'Stíl chuí scríbhneoireachta', 5,
-                      ['5 marks where the required writing style is used; 0 where a different form is substituted.'],
-                      guidance_kind='quality', permitted=[0, 5]),
-            criterion('abhar', 'Ábhar', 15,
-                      ['Valid, worthwhile content based on the chosen title, with a definite continuous connection between title and response.'],
-                      guidance_kind='indicative'),
-            criterion('gaeilge', 'Cumas Gaeilge', 80,
-                      ['Fairsinge agus saibhreas stór Gaeilge; beachtas agus cruinneas in grammar, syntax, structure and word formation.'],
-                      guidance_kind='quality'),
+            criterion('stil', 'Stíl chuí scríbhneoireachta', 5, [stil], guidance_kind='quality', permitted=[0, 5]),
+            criterion('abhar', 'Ábhar', 15, [abhar], guidance_kind='indicative'),
+            criterion('gaeilge', 'Cumas Gaeilge', 80, gaeilge, guidance_kind='quality'),
         ]
         return page, criteria
 
@@ -726,13 +742,18 @@ def composition_scheme(year: int, level: str, scheme_pages: list[str]) -> tuple[
                  and re.search(r'Ábhar', text, re.I)), None)
     if page is None:
         raise AssertionError(f'{year} OL: composition rubric page missing')
+    text = pages[page - 1]
+    tasc = between(text, 'An Tasc (2 mharc)', 'An tÁbhar (8 marc)')
+    abhar = between(text, 'An tÁbhar (8 marc)', 'An Cumas Gaeilge (40 marc)')
+    # The page ends with the examiner's marking panel ("T (Tasc) (2) = …") and the section heading.
+    cumas = re.split(r'\s*T \(Tasc\) \(2\) =|\s*Cuid II\b', text[text.index('An Cumas Gaeilge (40 marc)'):])[0].strip()
+    bands = next(pages[index] for index in range(page - 1, len(pages)) if pages[index].startswith('Réimse Catagóir'))
+    assert tasc.startswith('Tá 2 mharc le bronnadh'), (year, tasc[:60])
+    assert all(band in bands for band in ['Sármhaith', 'An-mhaith', 'Maith go leor', 'Easnamhach']), year
     criteria = [
-        criterion('tasc', 'Tasc', 2,
-                  ['2 marks when the printed task is fulfilled.'], guidance_kind='exact', permitted=[0, 2]),
-        criterion('abhar', 'Ábhar', 8,
-                  ['Relevant content which stays connected to the selected task.'], guidance_kind='indicative'),
-        criterion('gaeilge', 'Cumas agus Cruinneas Gaeilge', 40,
-                  ['Use the published 40-mark quality grid for command of Irish and accuracy.'],
+        criterion('tasc', 'Tasc', 2, [tasc], guidance_kind='exact', permitted=[0, 2]),
+        criterion('abhar', 'Ábhar', 8, [abhar], guidance_kind='indicative'),
+        criterion('gaeilge', 'Cumas agus Cruinneas Gaeilge', 40, [cumas, bands],
                   guidance_kind='quality', permitted=range_marks(40, even=True)),
     ]
     return page, criteria
@@ -1025,8 +1046,16 @@ def prose_poetry_zones(document: PagedText, level: str) -> dict[str, tuple[str, 
     return out
 
 
+LITERATURE_DEDUCTION = '[Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh]'
+
+
 def literature_cards(year: int, level: str, paper_pages: list[str], scheme_pages: list[str]) -> list[dict]:
     cards: list[dict] = []
+    if level == 'higher':
+        table, note, _, _ = lifted_gaeilge(fitz.open(scheme_path(year, level)), 18)
+        gaeilge_table = (table, note)
+    else:
+        assert LITERATURE_DEDUCTION in printed_text(' '.join(scheme_pages)), f'{year} OL: literature deduction not printed'
     level_ref = 'HL' if level == 'higher' else 'OL'
     document = section_from_pages(paper_pages)
     zones = prose_poetry_zones(document, level)
@@ -1054,15 +1083,12 @@ def literature_cards(year: int, level: str, paper_pages: list[str], scheme_pages
         if reviewed_scheme_pages:
             scheme_page = reviewed_scheme_pages[0]
         if level == 'higher':
-            criteria.append(criterion(
-                'gaeilge', 'Gaeilge', 5,
-                ['5 sárchumas; 4 cumas an-mhaith; 3 cumas maith; 2 cumas sásúil; 1 cumas lag; 0 gan fiúntas.'],
-                guidance_kind='quality'))
+            # The scheme's printed five-row Gaeilge table and its literature note (irish_gaeilge.lifted).
+            criteria.append(criterion('gaeilge', 'Gaeilge', 5, list(gaeilge_table), guidance_kind='quality'))
         else:
-            criteria.append(criterion(
-                'gaeilge-deduction', 'Gaeilge lochtach', 4,
-                ['Apply only the 0–4 language deduction printed by the scheme; this is subtracted from Eolas.'],
-                guidance_kind='quality', kind='deduction'))
+            # The 0-4 language deduction exactly as the scheme prints it beside each literature key.
+            criteria.append(criterion('gaeilge-deduction', 'Gaeilge lochtach', 4, [LITERATURE_DEDUCTION],
+                                      guidance_kind='quality', kind='deduction'))
         restrictions = []
         if section_key.endswith('b'):
             restrictions.append('Ná húsáid ábhar ainmnithe i bhfreagra ar an ábhar roghnach.')
@@ -1357,6 +1383,10 @@ def main() -> int:
         if card.get('reviewedAt') and key in HEADING_SCOPE:
             stripped[key] = stripped.get(key, 0) + strip_card(card)
     assert stripped == HEADING_SCOPE, stripped
+    # The section's printed lines lead in to a literature question, and guidance carries the SEC's words only;
+    # our English notes move to the card's note (irish_lifted.py).
+    printed_lead_in(cards)
+    scheme_words(cards)
     manifest = serialise(cards)
     ledger = json.dumps(census(cards), ensure_ascii=False, indent=2) + '\n'
     schemes = scheme_text_exports()

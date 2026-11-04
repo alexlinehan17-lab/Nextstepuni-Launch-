@@ -14,6 +14,7 @@ import json
 import re
 from pathlib import Path
 from irish_choice import withdraw_combinations
+from irish_lifted import printed_length, scheme_words_in
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001BLP000IV'
@@ -256,7 +257,7 @@ def build():
             prompt,'irish-9-4',['pictures','story'],[page],list(range(13 if slot=='5A' else 14,end+1)),[
                 criterion('cumarsaid','Cumas Cumarsáide',34,[paragraph.split('Cruinneas Gaeilge',1)[0] for paragraph in scheme_guidance(13 if slot=='5A' else 14,end)]),
                 copy.deepcopy(language),
-                criterion('length','Fad',4,['80–90 focal: 0; 60–79: −2; 30–59: −3; <30: −4.'],deduct_from='cumarsaid')],
+                criterion('length','Fad',4,[printed_length(' '.join(scheme_guidance(13 if slot=='5A' else 14,end)))],deduct_from='cumarsaid')],
             ['Scríobh timpeall 90 focal in Iris na Scoile.','Tabhair cúig thagairt ar a laghad don ócáid sna pictiúir.'],
             'References in the scheme are indicative, not a closed selection pool. One shared communication award and one language award cover the whole response. The scheme requires a reference to each of the four pictures plus another detail for 5(b).'))
     writing={'4A':[notice],'4B':[letter],'5A':[stories[0]],'5B':[stories[1]]}
@@ -300,6 +301,7 @@ def main():
     parser.add_argument('--check',action='store_true')
     args=parser.parse_args()
     data,scheme=build()
+    scheme_words_in(data)  # guidance carries the SEC's words only (irish_lifted.py)
     content=json.dumps(data,ensure_ascii=False,indent=2)+'\n'
     scheme_text='# Gaeilge Bonnleibhéal 2023 — SEC marking scheme\n\n'+'\n\n'.join(f'## PDF page {i+1}\n\n'+p.get_text() for i,p in enumerate(scheme))
     outputs={OUT:content,ROOT/'examiner-reports/irish/schemes/2023-fl.md':scheme_text}

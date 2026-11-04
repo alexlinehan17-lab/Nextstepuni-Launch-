@@ -14,6 +14,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from irish_lifted import scheme_words_in
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001ALP100IV'
@@ -90,7 +91,7 @@ def build():
     # ---- Cuid I: An Chluastuiscint (60) -------------------------------------------------
     general = stext[5].split('Nótaí:', 1)[1].split('Siombailí Anótála', 1)[0].strip()
     assert general.startswith('Níor chóir a mheas') and general.endswith('neamhbhailí.')
-    general = 'Nótaí (scheme PDF 6): ' + general
+    general = 'Nótaí: ' + general  # as the scheme prints it on PDF 6
     language = ('Scheme PDF 3 and 10: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.” This 0–3 deduction applies once to the whole '
                 'listening section (Tuiscint 60 − Cumas Gaeilge 0–3), never inside a single card.')
     a7 = stext[6].split('FÓGRA A hAON (10 marc)', 1)[1]
@@ -163,7 +164,8 @@ def build():
             printed = prompt if re.match(r'\d\.', prompt) else f'{n[0]}. {prompt}'
             add(f'{key}-{n}', f'{slug}-q{n}', f'{ref} · Ceist {n[0]}' + (f'({n[1]})' if len(n) > 1 else ''),
                 intro[part] + '\n\n' + heading + '\n' + printed, topic, [page], [scheme_page],
-                [criterion('eolas', 'Tuiscint / Eolas', marks, guidance, 'exact')], requirements,
+                # The box is labelled by its own printed question, as the 2023–2025 sheets are ("Fógra a hAon · Ceist 1(a)").
+                [criterion('eolas', f'Ceist {n[0]}' + (f'({n[1]})' if len(n) > 1 else ''), marks, guidance, 'exact')], requirements,
                 f'One printed question at its published {marks}-mark tariff' + (' (two points at 2 + 2)' if marks == 4 else '') + '. ' + note,
                 audioMaterial=dict(audio, label=ref))
 
@@ -247,6 +249,7 @@ def main():
     data, scheme = build()
     scheme_md = '# Gaeilge Ardleibhéal 2026 — SEC marking scheme (Páipéar 1 agus 2)\n\n' + '\n\n'.join(
         f'## PDF page {i + 1}\n\n' + p.get_text() for i, p in enumerate(scheme))
+    scheme_words_in(data)  # guidance carries the SEC's words only (irish_lifted.py)
     outputs = {OUT: json.dumps(data, ensure_ascii=False, indent=2) + '\n',
                ROOT / 'examiner-reports/irish/schemes/2026-hl.md': '\n'.join(line.rstrip() for line in scheme_md.splitlines()).rstrip() + '\n'}
     for path, value in outputs.items():

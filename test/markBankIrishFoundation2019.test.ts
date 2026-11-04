@@ -77,7 +77,7 @@ describe('2019 Foundation independently reviewed boundaries',()=>{
     const notice=get('W-4A');
     expect(notice.criteria.map(c=>c.maxMarks)).toEqual([1,8,13,4,4,10]);
     expect(notice.questionText).toContain('Cead isteach?');
-    expect(notice.criteria.find(c=>c.id==='pictiur3')!.guidance.join(' ')).toContain('Sinéad Aherne');
+    expect(notice.criteria.find(c=>c.id==='pictiur3')!.guidance.join(' ')).not.toContain('Sinéad Aherne (Pictiúr 3).'); // our own answer line, not the scheme's
     expect(notice.criteria.find(c=>c.id==='pictiur2')!.guidance.join(' ')).toContain('Pionós -2');
     expect(notice.criteria.find(c=>c.id==='pictiur4')!.guidance.join(' ')).toContain('Airgead go dtí an seomra ríomhairí');
     // One printed letter, one card (decision 5): "do dheartháir / do dheirfiúr" stays in the printed text.
@@ -110,7 +110,7 @@ describe('2019 Foundation independently reviewed boundaries',()=>{
       expect(guide).toContain('50%');
       expect(guide).not.toContain('80–90 focal: 0');
       expect(guide).not.toContain('Sármhaith 9–11');
-      expect(guide).toContain('belongs only to the modified marking scheme');
+      expect(story.markingGuideNote).toContain('belongs only to the modified marking scheme');
     }
     expect(get('W-5A').schemePages).toEqual([13]);
     expect(get('W-5B').schemePages).toEqual([14,15]);

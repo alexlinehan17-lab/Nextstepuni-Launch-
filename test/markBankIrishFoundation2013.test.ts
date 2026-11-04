@@ -79,7 +79,7 @@ describe('2013 Foundation independently reviewed boundaries',()=>{
     const notice=get('W-4A');
     expect(notice.criteria.map(c=>c.maxMarks)).toEqual([1,8,13,4,4,10]);
     expect(notice.criteria.find(c=>c.id==='pictiur1')!.guidance.join(' ')).toContain('comórtas ceoil');
-    expect(notice.criteria.find(c=>c.id==='pictiur2')!.guidance.join(' ')).toContain('Published allocation discrepancy');
+    expect(notice.markingGuideNote).toContain('Published allocation discrepancy');
     expect(notice.criteria.find(c=>c.id==='pictiur3')!.guidance.join(' ')).toContain('Niall Horan');
     expect(notice.criteria.find(c=>c.id==='pictiur4')!.guidance.join(' ')).toContain('Scoil Áine');
     const letter=get('W-4B');
@@ -102,12 +102,12 @@ describe('2013 Foundation independently reviewed boundaries',()=>{
       expect(story.totalMarks).toBe(50);
       expect(story.criteria.map(c=>[c.id,c.maxMarks])).toEqual([['cumarsaid',37],['gaeilge',13]]);
       const guide=story.criteria[0].guidance.join(' ');
-      expect(guide).toContain('ceiling32, communication27 minus9 =18');
-      expect(guide).toContain('ceiling27, communication20 minus10 =10');
-      expect(guide).toContain('never to language or the other question');
+      expect(story.markingGuideNote).toContain('ceiling32, communication27 minus9 =18');
+      expect(story.markingGuideNote).toContain('ceiling27, communication20 minus10 =10');
+      expect(story.markingGuideNote).toContain('never to language or the other question');
       expect(guide).not.toMatch(/[\uE000-\uF8FF]/);
       expect(guide).not.toContain('80–90 focal: 0');
-      expect(story.criteria[1].guidance.join(' ')).toContain('Do not apply that conversion to the standard rubric');
+      expect(story.markingGuideNote).toContain('Do not apply that conversion to the standard rubric');
     }
     expect(get('W-5A').schemePages).toEqual([13,14]);
     expect(get('W-5B').schemePages).toEqual([14,15]);

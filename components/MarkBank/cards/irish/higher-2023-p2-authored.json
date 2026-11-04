@@ -758,12 +758,11 @@
           "guidanceKind": "exact",
           "guidance": [
             "2. (a) Scríobh síos dhá phointe eolais faoi mhuintir Tom Crean agus é ag fás aníos gar d’Abhainn an Scáil in iarthar Chiarraí. (Alt 2) (Dhá phointe eolais) {3 mharc: 2 mharc + 1 mharc} An chéad phointe eolais atá ceart = 2 mharc; an dara pointe eolais atá ceart = 1 mharc • Ba dhuine d’aon duine dhéag clainne é • Bhí feirm bheag ag a mhuintir • (Cosúil le formhór na dteaghlach eile sa cheantar), bhí siad ag síorstreachailt leis an mbochtaineacht • Bhí cuimhne láidir sa phobal ar an nGorta Mór fós",
-            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
-            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
       ],
-      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total. Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3).",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint A",
@@ -1045,7 +1044,7 @@
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Bhí ualach an-trom le tarraingt acu (ar thalamh reoite) • Bhí an aimsir feanntach fuar • Bhí a mbeatha i mbaol (i rith an ama) • Bhí eagla orthu go minic go dtitfeadh siad trí na scoilteanna san oighear",
+            "(b) (i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Bhí ualach an-trom le tarraingt acu (ar thalamh reoite) • Bhí an aimsir feanntach fuar • Bhí a mbeatha i mbaol (i rith an ama) • Bhí eagla orthu go minic go dtitfeadh siad trí na scoilteanna san oighear",
             "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
@@ -1102,7 +1101,7 @@
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Bhí ualach an-trom le tarraingt acu (ar thalamh reoite) • Bhí an aimsir feanntach fuar • Bhí a mbeatha i mbaol (i rith an ama) • Bhí eagla orthu go minic go dtitfeadh siad trí na scoilteanna san oighear",
+            "(b) (i) Scríobh síos dhá phointe eolais faoin gcruatan a d’fhulaing Crean agus na fir eile ar an turas leis na carranna sleamhnáin. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Bhí ualach an-trom le tarraingt acu (ar thalamh reoite) • Bhí an aimsir feanntach fuar • Bhí a mbeatha i mbaol (i rith an ama) • Bhí eagla orthu go minic go dtitfeadh siad trí na scoilteanna san oighear",
             "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
@@ -1331,7 +1330,7 @@
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Shiúil sé féin chuig an mbunchampa • Shiúil sé 56 ciliméadar • Shiúil sé trasna na hoighearmhá • Shiúil sé ar feadh beagnach ocht n-uair déag an chloig • Gan le hithe aige ach trí bhriosca agus dhá phíosa seacláide",
+            "(b) (i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Shiúil sé féin chuig an mbunchampa • Shiúil sé 56 ciliméadar • Shiúil sé trasna na hoighearmhá • Shiúil sé ar feadh beagnach ocht n-uair déag an chloig • Gan le hithe aige ach trí bhriosca agus dhá phíosa seacláide",
             "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
@@ -1388,7 +1387,7 @@
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Shiúil sé féin chuig an mbunchampa • Shiúil sé 56 ciliméadar • Shiúil sé trasna na hoighearmhá • Shiúil sé ar feadh beagnach ocht n-uair déag an chloig • Gan le hithe aige ach trí bhriosca agus dhá phíosa seacláide",
+            "(b) (i) Luaigh dhá phointe eolais faoin siúl ab éigean do Crean a dhéanamh chun cabhair a lorg dá chomrádaithe. (Alt 4) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Shiúil sé féin chuig an mbunchampa • Shiúil sé 56 ciliméadar • Shiúil sé trasna na hoighearmhá • Shiúil sé ar feadh beagnach ocht n-uair déag an chloig • Gan le hithe aige ach trí bhriosca agus dhá phíosa seacláide",
             "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
@@ -1680,12 +1679,11 @@
           "guidanceKind": "exact",
           "guidance": [
             "6. (a) Aimsigh sampla de bhriathar san Aimsir Fháistineach in Alt 1 agus sampla d’ainmfhocal firinscneach sa tuiseal ginideach uatha in Alt 3. {3 mharc: 2 mharc + 1 mharc} Tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Sampla de bhriathar san Aimsir Fháistineach in Alt 1: (a) bheidh; beidh; bainfidh; déanfaidh Sampla d’ainmfhocal firinscneach sa tuiseal ginideach uatha in Alt 3: adhmaid; Antartaigh; oighir; sleamhnáin; ama",
-            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
-            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
       ],
-      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total. Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3).",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint A",
@@ -2121,12 +2119,11 @@
           "guidanceKind": "exact",
           "guidance": [
             "2. (a) Luaigh dhá aidhm de chuid na n-imeachtaí a d’eagraigh an eagraíocht Léargas in Éirinn le linn Bhliain Eorpach na hÓige. (Alt 2) (Dhá aidhm) {3 mharc: 2 mharc + 1 mharc} An chéad aidhm atá ceart = 2 mharc; an dara haidhm atá ceart = 1 mharc • Deis a thabhairt do dhaoine óga as gach cúlra teacht le chéile agus a gcuid smaointe faoi na dúshláin mhóra atá rompu sa todhchaí a chur in iúl = dhá aidhm • Spéis daoine óga a mhúscailt ina bheith mar thoscairí ag comhdhálacha éagsúla na hóige = aidhm amháin • Daoine óga a spreagadh le bheith ina ngníomhairí ar son an athraithe = aidhm amháin",
-            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
-            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
       ],
-      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total. Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3).",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint B",
@@ -2294,7 +2291,7 @@
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2) (Dhá ábhar) {2 mharc: 1 mharc + 1 mharc} • An cuimsiú = 1 mharc • An comhionannas = 1 mharc • An t-athrú aeráide = 1 mharc • An taisteal inbhuanaithe = 1 mharc",
+            "(ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2) (Dhá ábhar) {2 mharc: 1 mharc + 1 mharc} • An cuimsiú = 1 mharc • An comhionannas = 1 mharc • An t-athrú aeráide = 1 mharc • An taisteal inbhuanaithe = 1 mharc",
             "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
@@ -2351,7 +2348,7 @@
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2) (Dhá ábhar) {2 mharc: 1 mharc + 1 mharc} • An cuimsiú = 1 mharc • An comhionannas = 1 mharc • An t-athrú aeráide = 1 mharc • An taisteal inbhuanaithe = 1 mharc",
+            "(ii) Cad iad na hábhair a bhí á bplé ag na daoine óga sna ceardlanna sna carráistí ar an traein speisialta ‘All Aboard’? (Alt 2) (Dhá ábhar) {2 mharc: 1 mharc + 1 mharc} • An cuimsiú = 1 mharc • An comhionannas = 1 mharc • An t-athrú aeráide = 1 mharc • An taisteal inbhuanaithe = 1 mharc",
             "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
@@ -2410,12 +2407,11 @@
           "guidanceKind": "exact",
           "guidance": [
             "3. (a) Scríobh síos dhá shlí a mbaineann mic léinn na n-institiúidí tríú leibhéal tairbhe as clár Erasmus+. (Alt 3) (Dhá shlí) {3 mharc: 2 mharc + 1 mharc} An chéad slí atá ceart = 2 mharc; an dara slí atá ceart = 1 mharc • Forbraítear féinmhuinín na mac léinn • Foghlaimíonn siad faoi chultúir éagsúla • Cruthaítear caidreamh gairmiúil le daoine ó thíortha eile • Neartaítear a bhféiniúlacht Eorpach",
-            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
-            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
       ],
-      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total. Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3).",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint B",
@@ -2525,7 +2521,7 @@
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Tugann na daoine óga seo cúnamh sna háiteanna is mó a bhfuil gá leis • Cuidíonn siad leis na pobail siúd atá i ngátar • Déanann siad leas na bpobal sin atá i ngátar",
+            "(b) (i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Tugann na daoine óga seo cúnamh sna háiteanna is mó a bhfuil gá leis • Cuidíonn siad leis na pobail siúd atá i ngátar • Déanann siad leas na bpobal sin atá i ngátar",
             "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
@@ -2582,7 +2578,7 @@
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Tugann na daoine óga seo cúnamh sna háiteanna is mó a bhfuil gá leis • Cuidíonn siad leis na pobail siúd atá i ngátar • Déanann siad leas na bpobal sin atá i ngátar",
+            "(b) (i) Tabhair dhá phointe eolais faoin obair dheonach a dhéanann na daoine óga ar fud na hEorpa mar chuid den Chór Dlúthpháirtíochta Eorpach. (Alt 3) (Dhá phointe eolais) {2 mharc: 1 mharc + 1 mharc} An chéad phointe eolais atá ceart = 1 mharc; an dara pointe eolais atá ceart = 1 mharc • Tugann na daoine óga seo cúnamh sna háiteanna is mó a bhfuil gá leis • Cuidíonn siad leis na pobail siúd atá i ngátar • Déanann siad leas na bpobal sin atá i ngátar",
             "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
@@ -2697,7 +2693,7 @@
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3) (Dhá rud) {2 mharc: 1 mharc + 1 mharc} An chéad rud atá ceart = 1 mharc; an dara rud atá ceart = 1 mharc • Foghlaimíonn siad faoi ról Pharlaimint na hEorpa • Foghlaimíonn siad faoina gcearta mar shaoránaigh de chuid an Aontais Eorpaigh",
+            "(ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3) (Dhá rud) {2 mharc: 1 mharc + 1 mharc} An chéad rud atá ceart = 1 mharc; an dara rud atá ceart = 1 mharc • Foghlaimíonn siad faoi ról Pharlaimint na hEorpa • Foghlaimíonn siad faoina gcearta mar shaoránaigh de chuid an Aontais Eorpaigh",
             "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
@@ -2754,7 +2750,7 @@
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3) (Dhá rud) {2 mharc: 1 mharc + 1 mharc} An chéad rud atá ceart = 1 mharc; an dara rud atá ceart = 1 mharc • Foghlaimíonn siad faoi ról Pharlaimint na hEorpa • Foghlaimíonn siad faoina gcearta mar shaoránaigh de chuid an Aontais Eorpaigh",
+            "(ii) Luaigh an dá rud a fhoghlaimíonn scoláirí dara leibhéal sa togra ‘Clár Scoileanna Ambasadóra Pharlaimint na hEorpa’. (Alt 3) (Dhá rud) {2 mharc: 1 mharc + 1 mharc} An chéad rud atá ceart = 1 mharc; an dara rud atá ceart = 1 mharc • Foghlaimíonn siad faoi ról Pharlaimint na hEorpa • Foghlaimíonn siad faoina gcearta mar shaoránaigh de chuid an Aontais Eorpaigh",
             "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
@@ -2813,12 +2809,11 @@
           "guidanceKind": "exact",
           "guidance": [
             "4. (a) Scríobh síos dhá rud a dúirt Harry McCann faoin gcaoi ar chuir paindéim Covid-19 isteach ar shaol na hóige. (Alt 4) (Dhá rud) {3 mharc: 2 mharc + 1 mharc} An chéad rud atá ceart = 2 mharc; an dara rud atá ceart = 1 mharc • Bhí ar dhaoine óga go leor íobairtí a dhéanamh = rud amháin • Bhí ar dhaoine óga a saol, a n-ionchais agus a n-aislingí a chur ar athlá = dhá rud • Bhí ar dhaoine óga a saol a chur ar athlá = rud amháin • Bhí ar dhaoine óga a n-ionchais a chur ar athlá = rud amháin • Bhí ar dhaoine óga a n-aislingí a chur ar athlá = rud amháin • Bhí orthu fás aníos i saol ‘nua-normálta’ = rud amháin",
-            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
-            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
       ],
-      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total. Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3).",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint B",
@@ -2987,12 +2982,11 @@
           "guidanceKind": "exact",
           "guidance": [
             "5. (a) Cad iad na rudaí atá tábhachtach má táimid le hEoraip ionchuimsitheach dhigiteach a bhaint amach? (Alt 5) (Dhá rud) {3 mharc: 2 mharc + 1 mharc} An chéad rud atá ceart = 2 mharc; an dara rud atá ceart = 1 mharc • Oideachas agus cúram sláinte meabhrach a bheith ar fáil do chách = dhá rud • Oideachas a bheith ar fáil do chách = rud amháin • Cúram sláinte meabhrach a bheith ar fáil do chách = rud amháin",
-            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
-            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
       ],
-      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total. Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3).",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint B",
@@ -3164,12 +3158,11 @@
           "guidanceKind": "exact",
           "guidance": [
             "6. (a) Aimsigh sampla d’ainmfhocal baininscneach sa tuiseal ginideach uatha in Alt 2 agus sampla den bhriathar saor san Aimsir Chaite in Alt 4. {3 mharc: 2 mharc + 1 mharc} Tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Sampla d’ainmfhocal baininscneach sa tuiseal ginideach uatha in Alt 2: na hÓige, na hEorpa, Feabhra, aeráide Sampla den bhriathar saor san Aimsir Chaite in Alt 4: cruthaíodh",
-            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin.",
-            "Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3)."
+            "Freagair Léamhthuiscint A agus Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc ar gach ceann. Tá trí mharc ag gabháil le cuid (a). Tá dhá chuid i gceist (b): (i) agus (ii) agus dhá mharc ar (b) (i) agus dhá mharc ar (b) (ii). Glacfar le freagraí i bhfocail an iarrthóra nó i bhfocail an tsleachta, de réir mar a éilíonn an cheist. Maidir le 6 (a) sa dá Léamhthuiscint tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Tá 12 mharc ag gabháil le Ceist 6 (b) sa dá chás. Ní mór d’iarrthóirí Ceist 6 (b) a fhreagairt ina bhfocail féin."
           ]
         }
       ],
-      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total. Order-dependent award: the first correct item earns 2 and the other 1 (0, 2 or 3).",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint B",

@@ -151,7 +151,7 @@ describe('2024 Foundation independent source reconciliation', () => {
     expect(notice.criteria.find(c=>c.id==='pictiur4')!.guidance.join(' ')).toContain('Giomnáisiam');
     const form=get('W-4B');
     expect(form.criteria.map(c=>[c.id,c.maxMarks])).toEqual([['fields',19],['paragraph',15],['length',3],['gaeilge',11]]);
-    expect(form.criteria.find(c=>c.id==='length')!.guidance.join(' ')).toContain('35–40 focal: 0; 25–34 focal: −1; 10–24 focal: −2; <10 focal: −3');
+    expect(form.criteria.find(c=>c.id==='length')!.guidance).toEqual(['Líon Focal Pionós 35-40 0 25-34 - 1 10-24 - 2 <10 - 3']); // the printed table (PDF 12)
     expect(form.criteria.find(c=>c.id==='length')).toMatchObject({kind:'deduction',deductFrom:'paragraph'});
     expect(form.questionText).toContain('post samhraidh mar fhreastalaí sa bhialann seo');
     for(const slot of ['5A','5B']) {

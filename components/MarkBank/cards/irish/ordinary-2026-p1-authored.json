@@ -275,7 +275,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1(a)",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -341,7 +341,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1(b)",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -407,7 +407,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2(a)",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -473,7 +473,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2(b)",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -539,7 +539,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1(a)",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -605,7 +605,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1(b)",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -671,7 +671,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2(a)",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -737,7 +737,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2(b)",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -803,7 +803,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -869,7 +869,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -935,7 +935,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -1001,7 +1001,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -1067,7 +1067,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -1133,7 +1133,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -1199,7 +1199,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -1265,7 +1265,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -1331,7 +1331,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -1397,7 +1397,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -1463,7 +1463,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 1",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -1529,7 +1529,7 @@
       "criteria": [
         {
           "id": "eolas",
-          "label": "Tuiscint / Eolas",
+          "label": "Ceist 2",
           "kind": "award",
           "maxMarks": 3,
           "permittedMarks": [
@@ -1689,12 +1689,11 @@
             " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála.",
             "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
             "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
-            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1"
           ]
         }
       ],
-      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes. Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht A(i)",
@@ -1829,12 +1828,11 @@
             " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála.",
             "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
             "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
-            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1"
           ]
         }
       ],
-      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes. Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht A(ii)",
@@ -1969,12 +1967,11 @@
             " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála.",
             "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
             "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
-            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1"
           ]
         }
       ],
-      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes. Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht A(iii)",
@@ -2106,12 +2103,11 @@
             " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála.",
             "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
             "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
-            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1"
           ]
         }
       ],
-      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes. Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht B(i)",
@@ -2243,12 +2239,11 @@
             " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála.",
             "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
             "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
-            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1"
           ]
         }
       ],
-      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes. Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht B(ii)",
@@ -2380,12 +2375,11 @@
             " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála.",
             "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
             "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
-            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1"
           ]
         }
       ],
-      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes. Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht C(i)",
@@ -2517,12 +2511,11 @@
             " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála.",
             "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
             "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
-            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1"
           ]
         }
       ],
-      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes. Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht C(ii)",
@@ -2654,12 +2647,11 @@
             " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála.",
             "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
             "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
-            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1"
           ]
         }
       ],
-      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes. Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht D(i)",
@@ -2791,12 +2783,11 @@
             " Tá dhá ghné i gceist le cumas: (i) Cumas Gaeilge = Fairsinge, saibhreas agus oiriúnacht Stór Gaeilge an iarrthóra (foclóir cuí, oiriúnach, dul na Gaeilge, nathanna cainte agus frásaí oiriúnacha) agus (ii) Cruinneas Gaeilge = Beachtas maidir le cruinnúsáid phríomhghnéithe de cheart na Gaeilge (struchtúir/comhréir na teanga, aimsirí na mbriathra, séimhiú, urú, réamhfhocail, claoninsint...) agus litriú Nóta: Is ceart creidiúint a thabhairt do dhea-Ghaeilge le tic a chur leis na múnlaí maithe cainte agus is ceart na mórbhotúin sa teanga a mharcáil trí líne chorrach chothrománach a chur fúthu. Nóta: Caithfidh an Scrúdaitheoir an marc a bhronntar as 2 (Tasc), an marc a bhronntar as 8 (Ábhar) agus an marc a bhronntar as 40 (Gaeilge) a thaispeáint ar an bpainéal marcála.",
             "Na Siombailí Anótála Marcála Siombailí Anótála Cur Síos Arna Léiriú Tic Cumas agus Cruinneas Gaeilge ceart/ábhartha/lena ngabhann fiúntas Líne chorrach chothrománach Líne faoi earráid teanga/ghramadaí/litrithe M Míléamh Easpa ceangail ag an ábhar atá scríofa leis an teideal F1 Iarracht róghearr Níos lú ná leathleathanach (8-11 líne i gcás A, B agus D agus 6-8 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F2 Iarracht róghearr Níos lú ná leathleathanach (4-7 líne i gcás A, B agus D agus 3-5 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal F3 Iarracht róghearr Níos lú ná leathleathanach (1-3 líne i gcás A, B agus D agus 1-2 líne i gcás chorp na litreach/ an ríomhphoist) scríofa agus é ábhartha agus bainteach leis an teideal Líne chorrach cheartingearach Líne ar thaobh na láimhe deise den phíosa nach mbaineann le hábhar/leis an teideal Crosáil/X X in aice le gach píosa/ag bun gach píosa nach mbaineann le hábhar/leis an teideal",
             "Réimse Catagóir 40 Sármhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 95% 38 Meánach 90% 36 Íseal 85% 34 An-mhaith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 80% 32 Meánach 75% 30 Íseal 70% 28 Maith (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 65% 26 Meánach 60% 24 Íseal 55% 22 Maith go leor (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 50% 20 Meánach 45% 18 Íseal 40% 16 Lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 35% 14 Meánach 30% 12 Íseal 25% 10 An-lag (i) Cumas Gaeilge (ii) Cruinneas Gaeilge Ard 20% 8 Meánach 15% 6 Íseal 10% 4 Easnamhach (i) Cumas Gaeilge (ii) Cruinneas Gaeilge 5% 2",
-            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1",
-            "Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted."
+            "Réimse Catagóir 40 36 30 20 10 Siombailí M F1 F2 F3 Sármhaith Ard 38 34 29 19 10 Meánach 36 32 27 18 9 Íseal 34 31 26 17 9 An-mhaith Ard 32 29 24 16 8 Meánach 30 27 23 15 8 Íseal 28 25 21 14 7 Maith Ard 26 23 20 13 7 Meánach 24 22 18 12 6 Íseal 22 20 17 11 6 Maith go leor Ard 20 18 15 10 5 Meánach 18 16 14 9 5 Íseal 16 14 12 8 4 Lag Ard 14 13 11 7 4 Meánach 12 11 9 6 3 Íseal 10 9 8 5 3 An-lag Ard 8 7 6 4 2 Meánach 6 5 5 3 2 Íseal 4 4 3 2 1 Easnamhach 2 2 2 1 1"
           ]
         }
       ],
-      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes.",
+      "markingGuideNote": "Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. Short attempts use the published M/F1/F2/F3 columns (36/30/20/10) on scheme PDF 13. The letter or email (C) and the conversation partner (D) are flexible forms inside one response, not separate routes. Scéim Mharcála Mhodhnaithe (scheme PDF 34–35): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Ceapadóireacht D(ii)",

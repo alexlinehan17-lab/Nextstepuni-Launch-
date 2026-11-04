@@ -3081,11 +3081,11 @@
           "guidance": [
             "Buataisí",
             "6 mharc: Chuir mé orm mo bhuataisí / Is shiúil mé amach gan náire (an dá líne).",
-            "Céad trí líne de Véarsa3: pionós −2; Véarsa3 ar fad: pionós −4. Enter the final score for this answer only."
+            "pionós −2; Véarsa3 ar fad: pionós −4."
           ]
         }
       ],
-      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part. Enter the final score for this answer only.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint · Ceist 3(c)(4)",
@@ -3233,8 +3233,7 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            " Cén lá? (4 mharc) Bronn 4 mharc ar aon lá ainmnithe: inniu, amárach, anocht, ag an deireadh seachtaine, gach Luan Pionós (-1 mharc) má bhíonn an t-am mí-oiriúnach...inné, aréir, ar maidin, Dé Luain seo caite... Dáta? (3 mharc) Glac le figiúirí don dáta agus an mhí litrithe ar 4 mharc...12 Lúnasa, 1 Iúil...nó glac le raon dátaí, mar shampla, 14-17 Meitheamh Bronn 2 mharc (Pionós (-1 mharc)) má bhíonn an dáta scríofa i bhfigiúirí amháin, mar shampla, 3/6/13 Má bhíonn an mhí litrithe ach gan dáta luaite, tá pionós (-1 mharc) i gceist, mar shampla, Márta, Meitheamh... Am? (3 mharc) Samplaí: a hocht a chlog, 8p.m., 4p.m.-6p.m., am lóin, meánlae Cead Isteach? (3 mharc) Beifear ag súil le méid áirithe airgid le comhartha euro agus ceangal éigin le cead isteach: Cead Isteach €5, cúig euro ag an doras, Ticéad €5 Méid airgid leis féin, Pionós (-1mharc) nó Pionós (-1 mharc) má fhágtar an focal euro nó an comhartha € ar lár.",
-            "Published allocation discrepancy: the date heading is “Dáta? (3 mharc)” and the overview gives picture2 as4+3+3+3=13, but one sentence prints “ar4mharc”. This rubric retains the explicit three-mark date allocation and thirteen-mark picture total; compare both original scheme pages. The conflicting sentence is preserved above."
+            " Cén lá? (4 mharc) Bronn 4 mharc ar aon lá ainmnithe: inniu, amárach, anocht, ag an deireadh seachtaine, gach Luan Pionós (-1 mharc) má bhíonn an t-am mí-oiriúnach...inné, aréir, ar maidin, Dé Luain seo caite... Dáta? (3 mharc) Glac le figiúirí don dáta agus an mhí litrithe ar 4 mharc...12 Lúnasa, 1 Iúil...nó glac le raon dátaí, mar shampla, 14-17 Meitheamh Bronn 2 mharc (Pionós (-1 mharc)) má bhíonn an dáta scríofa i bhfigiúirí amháin, mar shampla, 3/6/13 Má bhíonn an mhí litrithe ach gan dáta luaite, tá pionós (-1 mharc) i gceist, mar shampla, Márta, Meitheamh... Am? (3 mharc) Samplaí: a hocht a chlog, 8p.m., 4p.m.-6p.m., am lóin, meánlae Cead Isteach? (3 mharc) Beifear ag súil le méid áirithe airgid le comhartha euro agus ceangal éigin le cead isteach: Cead Isteach €5, cúig euro ag an doras, Ticéad €5 Méid airgid leis féin, Pionós (-1mharc) nó Pionós (-1 mharc) má fhágtar an focal euro nó an comhartha € ar lár."
           ]
         },
         {
@@ -3291,13 +3290,12 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Dul na Gaeilge: struchtúr na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas foclóra. Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "PDF page16 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric."
+            "Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo.",
+            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
         }
       ],
-      "markingGuideNote": "Layout1; required pictures8+13+4+4; one language award10. Preserve the printed1-mark deductions for an indefinite venue, unsuitable day, date without a named month/day, fee, and unintegrated guest name. Published date wording conflicts with the3-mark heading: see picture2 guidance and the original scheme.",
+      "markingGuideNote": "Layout1; required pictures8+13+4+4; one language award10. Preserve the printed1-mark deductions for an indefinite venue, unsuitable day, date without a named month/day, fee, and unintegrated guest name. Published date wording conflicts with the3-mark heading: see picture2 guidance and the original scheme. Published allocation discrepancy: the date heading is “Dáta? (3 mharc)” and the overview gives picture2 as4+3+3+3=13, but one sentence prints “ar4mharc”. This rubric retains the explicit three-mark date allocation and thirteen-mark picture total; compare both original scheme pages. The conflicting sentence is preserved above. PDF page16 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 4(a)",
@@ -3491,13 +3489,12 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Dul na Gaeilge: struchtúr na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas foclóra. Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo.",
-            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "PDF page16 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric."
+            "Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo.",
+            "Bronn marc as 10 ar chaighdeán na Gaeilge san iarracht iomlán."
           ]
         }
       ],
-      "markingGuideNote": "One whole40-mark letter: layout6 (2+1+1+2), picture content24 (3+9+6+6), sharedlanguage10. One friend is an open recipient; dó/dí is flexible pronoun wording, not separate prescribed task prompts. The required1/3/2/2 details have non-exhaustive examples, not finite selection menus. No length penalty is printed.",
+      "markingGuideNote": "One whole40-mark letter: layout6 (2+1+1+2), picture content24 (3+9+6+6), sharedlanguage10. One friend is an open recipient; dó/dí is flexible pronoun wording, not separate prescribed task prompts. The required1/3/2/2 details have non-exhaustive examples, not finite selection menus. No length penalty is printed. PDF page16 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 4(b) · Litir",
@@ -3587,10 +3584,8 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Reduce the communication ceiling by5 for each missing reference. Assess communication against that ceiling, then reduce the awarded communication mark proportionally for insufficient length. Keep the language mark separate.",
             "Ceist 5 Freagair (a) NÓ (b) (50 marc) 5(a) Cuntas (50 marc) Cumas Cumarsáide = 37 marc Cruinneas Gaeilge = 13 mharc Tasc → Cuntas (timpeall 90 focal) a scríobh in Iris Na Scoile bunaithe ar “Oíche Speisialta sa Chlub Óige” mar atá léirithe sa phictiúr. Cumas Cumarsáide = 37 marc • Níor mhór cúig thagairt ar a laghad a bheith sa chuntas d'imeachtaí nó do thosca na hócáide. • Cuir tic le gach tagairt atá inghlactha. • Bain 5 mharc ar gach pointe atá in easnamh. M.sh. (37-5t = 32) nó (37-10t = 27) a léiriú. • Déanfar an mharcáil don chumarsáid as an marc atá fágtha. • Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an ócáid a léirítear. • Ná glac le Béarla. • Tá timpeall 90 focal ag teastáil. • Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta: (mar shampla:- mura bhfuil ann ach 45 focal, an t-alt a mharcáil as 37 marc agus timpeall 50% a bhaint den mharc bronnta.) Tá cúig thagairt ag teastáil. Cuirtear tic le gach tagairt inghlactha.",
-            "Glac leis na tagairtí seo: A bheith i láthair ag an ócáid...an oíche / an t-am / an áit / daoine eile a bheith ann / costas / breithlá an chlub / na himeachtaí éagsúla atá ar siúl sa phictiúr / tagairtí don bhia / tuairim faoin oíche speisialta... Samplaí den chóras marcála má bhíonn tagairt(í) in easnamh san iarracht. 60 focal san iarracht agus tagairt in easnamh (37-5t = 32); Cum (32) = 27 – 9f = 18 45 focal san iarracht agus dhá thagairt in easnamh (37-10t = 27); Cum (27) = 20 – 10f = 10 An Cruinneas Gaeilge a mheas as 13 mharc. CR(13) =7 Suimigh na marcanna CUM (32) = 27 – 9f = 18 CR(13) = 7 25 ==== Nó ",
-            "Published worked examples:60 words, one missing reference → ceiling32, communication27 minus9 =18.45words, two missing references → ceiling27, communication20 minus10 =10. Language is assessed separately /13 (example7). Apply the length adjustment only to this story’s communication score, never to language or the other question."
+            "Glac leis na tagairtí seo: A bheith i láthair ag an ócáid...an oíche / an t-am / an áit / daoine eile a bheith ann / costas / breithlá an chlub / na himeachtaí éagsúla atá ar siúl sa phictiúr / tagairtí don bhia / tuairim faoin oíche speisialta... Samplaí den chóras marcála má bhíonn tagairt(í) in easnamh san iarracht. 60 focal san iarracht agus tagairt in easnamh (37-5t = 32); Cum (32) = 27 – 9f = 18 45 focal san iarracht agus dhá thagairt in easnamh (37-10t = 27); Cum (27) = 20 – 10f = 10 An Cruinneas Gaeilge a mheas as 13 mharc. CR(13) =7 Suimigh na marcanna CUM (32) = 27 – 9f = 18 CR(13) = 7 25 ==== Nó "
           ]
         },
         {
@@ -3616,13 +3611,11 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Dul na Gaeilge: struchtúr na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas foclóra. Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo.",
-            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "PDF page16 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric."
+            "Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo."
           ]
         }
       ],
-      "markingGuideNote": "Communication37 with a5-mark ceiling reduction per missing reference and proportional length adjustment; language13 assessed separately. For5(b), cover all four pictures plus a fifth detail. These references are required content with indicative examples, not a finite task pool.",
+      "markingGuideNote": "Communication37 with a5-mark ceiling reduction per missing reference and proportional length adjustment; language13 assessed separately. For5(b), cover all four pictures plus a fifth detail. These references are required content with indicative examples, not a finite task pool. Reduce the communication ceiling by5 for each missing reference. Assess communication against that ceiling, then reduce the awarded communication mark proportionally for insufficient length. Keep the language mark separate. Published worked examples:60 words, one missing reference → ceiling32, communication27 minus9 =18.45words, two missing references → ceiling27, communication20 minus10 =10. Language is assessed separately /13 (example7). Apply the length adjustment only to this story’s communication score, never to language or the other question. PDF page16 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 5(a)",
@@ -3709,10 +3702,8 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Reduce the communication ceiling by5 for each missing reference. Assess communication against that ceiling, then reduce the awarded communication mark proportionally for insufficient length. Keep the language mark separate.",
             " Eachtra (50 marc) Cumas Cumarsáide = 37 marc Cruinneas Gaeilge = 13 mharc Tasc → Scríobh faoi Eachtra a tharla agus tú ag an Linn Snámha le do chara. Cumas Cumarsáide (37 marc) • Bheadh tagairt amháin do gach aon phictiúr tábhachtach maraon le haon tagairt amháin eile le go mbeadh fás nádúrtha ag baint leis an eachtra. • Cuir tic le gach tagairt atá inghlactha. • Bain 5 mharc ar gach pointe atá in easnamh. M.sh. (37-5t = 32) nó (37-10t = 27) ... a léiriú. • Déanfar an mharcáil don chumarsáid as an marc atá fágtha.",
-            "• Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an ócáid a léirítear. • Ná glac le Béarla. • Tá timpeall 90 focal ag teastáil. • Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta: (mar shampla:- mura bhfuil ann ach 45 focal, an t-alt a mharcáil as 37 marc agus timpeall 50% a bhaint den mharc bronnta). Tá cúig thagairt ag teastáil,ceann amháin do gach pictiúr agus ceann amháin eile. Samplaí inghlactha ó na pictiúir éagsúla: Pictiúr 1: An áit,an linn snámha,na daoine agus na rudaí atá ar siúl acu,an aimsir,an timpeallacht Pictiúr 2: An eachtra a tharla don pháiste agus mar a chuaigh an eachtra i bhfeidhm ar na daoine eile / ar an madra sa phictiúr. Pictiúr 3: Mar a mhothaigh an páiste i ndiaidh na heachtra...mar a ghníomhaíonn na daoine eile i ndiaidh na heachtra. Pictiúr 4: Na rudaí a bhí ar siúl ag na daoine éagsúla sa phictiúr / an t-athrú a tháinig ar chúrsaí / ar an aimsir. 60 focal san iarracht agus tagairt in easnamh (37-5t = 32); Cum (32) = 27 – 9f = 18 45 focal san iarracht agus dhá thagairt in easnamh (37-10t = 27); Cum (27) = 20 – 10f = 10 An Cruinneas Gaeilge a mheas as 13 mharc. CR(13) = 7 Suimigh na marcanna mar atá léirithe i gcás cuid 5(a)",
-            "Published worked examples:60 words, one missing reference → ceiling32, communication27 minus9 =18.45words, two missing references → ceiling27, communication20 minus10 =10. Language is assessed separately /13 (example7). Apply the length adjustment only to this story’s communication score, never to language or the other question."
+            "• Glactar le foirm ar bith nó pearsa ar bith a fhad is atá an cur síos cumarsáideach, bunaithe ar an ócáid a léirítear. • Ná glac le Béarla. • Tá timpeall 90 focal ag teastáil. • Sa chás nach mbeadh an t-alt fada go leor, bainfear céatadán cuí den mharc bronnta: (mar shampla:- mura bhfuil ann ach 45 focal, an t-alt a mharcáil as 37 marc agus timpeall 50% a bhaint den mharc bronnta). Tá cúig thagairt ag teastáil,ceann amháin do gach pictiúr agus ceann amháin eile. Samplaí inghlactha ó na pictiúir éagsúla: Pictiúr 1: An áit,an linn snámha,na daoine agus na rudaí atá ar siúl acu,an aimsir,an timpeallacht Pictiúr 2: An eachtra a tharla don pháiste agus mar a chuaigh an eachtra i bhfeidhm ar na daoine eile / ar an madra sa phictiúr. Pictiúr 3: Mar a mhothaigh an páiste i ndiaidh na heachtra...mar a ghníomhaíonn na daoine eile i ndiaidh na heachtra. Pictiúr 4: Na rudaí a bhí ar siúl ag na daoine éagsúla sa phictiúr / an t-athrú a tháinig ar chúrsaí / ar an aimsir. 60 focal san iarracht agus tagairt in easnamh (37-5t = 32); Cum (32) = 27 – 9f = 18 45 focal san iarracht agus dhá thagairt in easnamh (37-10t = 27); Cum (27) = 20 – 10f = 10 An Cruinneas Gaeilge a mheas as 13 mharc. CR(13) = 7 Suimigh na marcanna mar atá léirithe i gcás cuid 5(a)"
           ]
         },
         {
@@ -3738,13 +3729,11 @@
           ],
           "guidanceKind": "quality",
           "guidance": [
-            "Dul na Gaeilge: struchtúr na Gaeilge agus cruinneas gramadaí. Foclóir: cruinneas foclóra. Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo.",
-            "Bronn marc as 13 ar chaighdeán na Gaeilge san iarracht iomlán.",
-            "PDF page16 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric."
+            "Litriú: cé go mbeadh sé seo san áireamh moltar gan iomarca béime a chur ar an ngné seo ag an leibhéal seo."
           ]
         }
       ],
-      "markingGuideNote": "Communication37 with a5-mark ceiling reduction per missing reference and proportional length adjustment; language13 assessed separately. For5(b), cover all four pictures plus a fifth detail. These references are required content with indicative examples, not a finite task pool.",
+      "markingGuideNote": "Communication37 with a5-mark ceiling reduction per missing reference and proportional length adjustment; language13 assessed separately. For5(b), cover all four pictures plus a fifth detail. These references are required content with indicative examples, not a finite task pool. Reduce the communication ceiling by5 for each missing reference. Assess communication against that ceiling, then reduce the awarded communication mark proportionally for insufficient length. Keep the language mark separate. Published worked examples:60 words, one missing reference → ceiling32, communication27 minus9 =18.45words, two missing references → ceiling27, communication20 minus10 =10. Language is assessed separately /13 (example7). Apply the length adjustment only to this story’s communication score, never to language or the other question. PDF page16 describes the modified marking scheme and its four-mark language score scaled to10 or13. Do not apply that conversion to the standard rubric.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Scríobh · Ceist 5(b)",

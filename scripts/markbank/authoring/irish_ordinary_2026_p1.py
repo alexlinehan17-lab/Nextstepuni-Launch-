@@ -18,6 +18,7 @@ import json
 import re
 from pathlib import Path
 from irish_choice import withdraw_combinations
+from irish_lifted import scheme_words_in
 
 ROOT = Path(__file__).resolve().parents[3]
 FILE = 'LC001GLP100IV'
@@ -144,7 +145,8 @@ def build():
             assert '3 mharc' in chunk and comparable(re.sub(r'^\d\. (\([ab]\) )?', '', prompt)[:25]) in comparable(chunk), (key, n, chunk[:60])
             add(f'{key}-{n}', f'{slug}-q{n}', f'{ref} · Ceist {n[0]}' + (f'({n[1]})' if len(n) > 1 else ''),
                 intro[part] + '\n\n' + heading + '\n' + prompt, topic, [page], [spage],
-                [criterion('eolas', 'Tuiscint / Eolas', 3, [chunk], 'exact')], requirements,
+                # The box is labelled by its own printed question, as the 2023–2025 sheets are ("Fógra a hAon · Ceist 1(a)").
+                [criterion('eolas', f'Ceist {n[0]}' + (f'({n[1]})' if len(n) > 1 else ''), 3, [chunk], 'exact')], requirements,
                 'One printed question at its published 3-mark tariff. Listed answers come from the 2026 SEC scheme. ' + language,
                 audioMaterial=dict(audio, label=ref))
     listening = [c for c in cards]
@@ -241,6 +243,7 @@ def main():
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
     data = build()
+    scheme_words_in(data)  # guidance carries the SEC's words only (irish_lifted.py)
     content = json.dumps(data, ensure_ascii=False, indent=2) + '\n'
     if args.check:
         assert OUT.exists() and OUT.read_text() == content, f'Stale output: {OUT}'
