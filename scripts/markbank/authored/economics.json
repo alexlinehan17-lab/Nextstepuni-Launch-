@@ -1,5 +1,3102 @@
 [
  {
+  "id": "econ-2017-hl-sa-q1",
+  "topicId": "economics-3-1",
+  "conceptId": "opportunity-costs-of-restoring-public-pay",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q1",
+  "questionText": "Outline two opportunity costs for the Irish economy of this restoration.",
+  "stem": "The Irish government is under pressure to restore public sector pay to pre‐financial crisis levels.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 8",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 8
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An opportunity cost — any two",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Two opportunity costs, 8 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Less funds available to improve state services such as improving the health services.",
+      "Less funds available to hire more public servants such as teachers, gardaí, nurses etc.",
+      "Less funds available to increase social welfare payments such as old age pensions / other allowances.",
+      "Less funds available to reduce taxation rates such as income tax rates or VAT rates.",
+      "Less funds available to invest in capital infrastructure such as provision of social housing.",
+      "Less funds available to help repay the national debt."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sa-q2",
+  "topicId": "economics-2-1",
+  "conceptId": "labour-and-capital-true-or-false",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q2",
+  "questionText": "Indicate by means of a tick (✓) which of the following statements is TRUE or FALSE.",
+  "stem": "",
+  "figureKey": "economics-2017-HL-scheme-p05-q2-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4 + 3 + 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Each statement ticked correctly",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "All four: the 1st correct response 6 marks, the 2nd 4, the 3rd and 4th 3 each. The completed table is shown with the answer.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 6,
+     "options": [
+      "TRUE — The labour force includes part-time workers.",
+      "FALSE — Quasi-rent is economic rent earned by a factor of production in the long run.",
+      "TRUE — The market value of an existing bond rises if the rate of interest falls.",
+      "TRUE — Capital Widening refers to the situation where the capital stock is increasing at the same rate as the labour force."
+     ],
+     "perOptionSteps": [
+      6,
+      4,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2017-HL-paper-p02-q2-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2017-hl-sa-q3-a",
+  "topicId": "economics-3-1",
+  "conceptId": "direct-and-indirect-taxation",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q3(a)",
+  "questionText": "Distinguish between Direct Taxation and Indirect Taxation and state one example of each.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 x 5 + 2 x 1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-direct",
+    "kind": "point",
+    "verbatim": "Direct Taxation — These are taxes on all forms of income or wealth. They are paid directly by the taxpayer to the Government.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Direct taxation, 5 marks."
+   },
+   {
+    "id": "r-indirect",
+    "kind": "point",
+    "verbatim": "Indirect Taxation — These are taxes on consumption / spending. They are taxes on the purchase of goods and services. They are collected by an intermediary and paid to the Government",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Indirect taxation, 5 marks."
+   },
+   {
+    "id": "r-direct-example",
+    "kind": "point",
+    "verbatim": "Example — PAYE, Corporation Tax, Capital gains tax.",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "An example of a direct tax, 1 mark."
+   },
+   {
+    "id": "r-indirect-example",
+    "kind": "point",
+    "verbatim": "Example — VAT, Excise Duties, stamp duties.",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "An example of an indirect tax, 1 mark."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sa-q3-b",
+  "topicId": "economics-3-1",
+  "conceptId": "why-indirect-taxes-are-inequitable",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q3(b)",
+  "questionText": "Why are Indirect Taxes sometimes seen as inequitable?",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They are inequitable because those on lower incomes pay a higher proportion of their income on the tax.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The reason, 4 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sa-q4",
+  "topicId": "economics-3-4",
+  "conceptId": "limits-on-credit-creation",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q4",
+  "questionText": "State three limitations on the power of banks to create credit.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A limitation — any three",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Three limitations: the first 6 marks, the other two 5 each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Limited availability of suitable borrowers",
+      "Limited ability to attract cash deposits",
+      "Lack of demand for loans / credit by customers",
+      "Customers' demands for cash/Liquidity ratios",
+      "Controls by European Central Bank/Reserve ratios",
+      "Ability of banks to raise capital on international markets."
+     ],
+     "perOptionSteps": [
+      6,
+      5,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sa-q5",
+  "topicId": "economics-4-2",
+  "conceptId": "consequences-of-a-weaker-sterling",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q5",
+  "questionText": "State and explain two possible economic consequences of the above situation for the Irish Economy.",
+  "stem": "After plans for ‘Brexit’ were revealed there was a ‘flash crash’ where the value of the Pound Sterling (£) fell sharply against the Euro (€).",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 8",
+   "answer": 2,
+   "ofParts": 8,
+   "perPart": 8
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An economic consequence — any two",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Two consequences, 8 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Irish export prices to the UK become relatively more expensive resulting in decreased demand for Irish exports in the UK / Reduction in demand from the Irish agricultural food sector.",
+      "Less UK tourists visiting Ireland as Ireland becomes more expensive to visit.",
+      "Falling employment in sectors exposed to the UK market (e.g. indigenous firms in food, tourism).",
+      "Import prices from UK become relatively cheaper resulting in increased demand for sterling imports.",
+      "Decreased costs of production for Irish firms importing materials from the UK.",
+      "Reduced FDI from UK firms as it is now more expensive for them to do so.",
+      "Creates uncertainty and uncertainty leads to lower investment.",
+      "Effect on balance of trade / payments: if exports fall and imports rise then the BOT/BOP will dis-improve."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sa-q6-a",
+  "topicId": "economics-2-0",
+  "conceptId": "labelling-a-monopoly-diagram",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q6(a)",
+  "questionText": "Label the lines/curves in the diagram",
+  "stem": "The diagram below shows a firm operating under conditions of Monopoly.",
+  "figureKey": "economics-2017-HL-scheme-p06-q6-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 at 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-mr",
+    "kind": "point",
+    "verbatim": "MR",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "MR, 2 marks. The labelled diagram is shown with the answer."
+   },
+   {
+    "id": "r-ar",
+    "kind": "point",
+    "verbatim": "AR (D)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "AR (D), 2 marks. The labelled diagram is shown with the answer."
+   },
+   {
+    "id": "r-mc",
+    "kind": "point",
+    "verbatim": "MC",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "MC, 2 marks. The labelled diagram is shown with the answer."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2017-HL-paper-p03-q6-diagram",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2017-hl-sa-q6-b",
+  "topicId": "economics-2-0",
+  "conceptId": "long-run-equilibrium-in-monopoly",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q6(b)",
+  "questionText": "Use the diagram to explain the long run equilibrium position for a firm in Monopoly.",
+  "stem": "The diagram below shows a firm operating under conditions of Monopoly.",
+  "figureKey": "economics-2017-HL-scheme-p06-q6-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "11 graded",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Equilibrium is where MC = MR .",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme grades the explanation out of 11 and does not price its points."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Firms produces Q1 and sells it at P1.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "A point the scheme lists."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Costs are shown at C1.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "A point the scheme lists."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "SNPs are being earned as AR > AC/ barriers to entry exist.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "A point the scheme lists; it also accepts its alternative."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Firm is not efficient at it is not producing at the lowest point of AC",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Claim the complete explanation: 11 marks in all."
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2017-HL-paper-p03-q6-diagram",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2017-hl-sa-q7-a",
+  "topicId": "economics-1-4",
+  "conceptId": "calculating-cross-price-elasticity",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q7(a)",
+  "questionText": "A consumer buys 80 units of Good A when the price of Good B is €100. When the price of Good B falls to €90 (the price of Good A remaining unchanged), the consumer buys 120 units of Good A. Using an appropriate formula, calculate this consumer’s cross price elasticity of demand for Good A. (Show your workings.)",
+  "stem": "",
+  "figureKey": "economics-2017-HL-scheme-p07-q7a-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-workings",
+    "kind": "point",
+    "verbatim": "= - 4 x 0.95",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The workings, 8 marks: 1 for each of the eight items the scheme sets in its fraction, 40 over −10 times 100 + 90 (190) over 80 + 120 (200). The figure shows it as printed."
+   },
+   {
+    "id": "r-answer",
+    "kind": "point",
+    "verbatim": "= - 3.8",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The correct answer, 4 marks (2 + 2)."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sa-q7-b",
+  "topicId": "economics-1-4",
+  "conceptId": "substitute-or-complement",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q7(b)",
+  "questionText": "Is Good A a substitute or a complement to Good B? Explain your answer.",
+  "stem": "A consumer buys 80 units of Good A when the price of Good B is €100. When the price of Good B falls to €90 (the price of Good A remaining unchanged), the consumer buys 120 units of Good A. Using an appropriate formula, calculate this consumer’s cross price elasticity of demand for Good A. (Show your workings.)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-answer",
+    "kind": "point",
+    "verbatim": "Good A is a Complement.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Complement, 2 marks."
+   },
+   {
+    "id": "r-reason",
+    "kind": "point",
+    "verbatim": "It has a Negative CED. Price and demand move in opposite directions: as the price of Good B falls the demand for Good A rises.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The reason, 3 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sa-q8",
+  "topicId": "economics-3-1",
+  "conceptId": "conflicting-policy-objectives",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q8",
+  "questionText": "Explain how the following Government policy objectives may conflict with each other. Economic growth versus Balance of Payments equilibrium: Economic growth versus a Just Social Policy:",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Each conflict explained",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "Both conflicts: the first correct response 12 marks, the second 5. For the second the scheme also gives an example: To achieve a just social policy the government may impose high taxes on the high-income earners and transfer this income to those on social welfare/High taxes could force these people out of the economy and so seriously impede the effort to achieve economic growth.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 12,
+     "options": [
+      "Economic growth versus Balance of Payments equilibrium — Economic growth means more employment and more money circulating in the economy. As Ireland has a high MPM this will automatically cause an increase in imports which could result in a Balance of Payments deficit.",
+      "Economic growth versus a Just Social Policy — Economic growth tends to benefit incomes of the better off. The benefits of economic growth may not be equitably distributed across the economy. Social policies such as taxation etc. are needed to redistribute benefits of economic growth."
+     ],
+     "perOptionSteps": [
+      12,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sa-q9",
+  "topicId": "economics-3-1",
+  "conceptId": "third-level-fees",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2017 HL Section A Q9",
+  "questionText": "Outline one possible economic advantage and one possible economic disadvantage of this for the economy:",
+  "stem": "The Irish government is considering the reintroduction of tuition fees for third‐level education.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One advantage and one disadvantage",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "One advantage and one disadvantage: the first correct response 9 marks, the second 8.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 9,
+     "options": [
+      "Possible economic advantages — Reduced cost for taxpayers The cost to the state for each student attending HEIs is reduced and so the taxpayer is saved this amount. Taxpayers who don’t go to 3rd level won’t feel aggrieved that they must pay the cost.",
+      "Possible economic advantages — Opportunity costs The provision of free higher education puts significant strain on government finances, which may be better utilised in other areas (e.g. health, social welfare, vocational training, provide money to develop research in higher education, apprenticeships).",
+      "Possible economic advantages — Incentives The charging of fees alters the incentives faced by potential students. Those students best suited to careers that do not require a HEI education, may be deterred by the prospect of fees and instead take up opportunities in vocational training or apprenticeships.",
+      "Possible economic advantages — Greater course engagement For those students who do attend HEIs, the need to pay fees may act to encourage greater engagement with their course and higher academic attainment/Private benefit to higher education and those who benefit pay.",
+      "Possible economic advantages — Fairness Graduates for HEIs often enter professions with higher earnings than others. Graduates for HEIs are also more likely to grow their level of earnings over their career. Thus, as the greatest beneficiaries for HEI education, it is only fair that students should pay for their education.",
+      "Possible economic advantages — HEI funding Tuition fees can act as a new source of revenue for HEIs, enabling investment in greater research, better facilities, more course options targeted to industry needs, more staff etc. This can create benefits in terms of the quality of research and education provided.",
+      "Possible economic disadvantages — Increased debt on individuals Where students must take on debt to cover tuition fees, future consumption and access to credit may be adversely affected.",
+      "Possible economic disadvantages — May lead to greater inequality Tuition fees may act as a disincentive or may prohibit those from disadvantaged backgrounds from pursuing a third level education. The resulting reduction in social mobility could lead to increased inequality.",
+      "Possible economic disadvantages — Reduced positive externalities Third level education, through the innovations and expertise it generates, creates external benefits (i.e. benefits that do not accrue directly to the student, but are instead enjoyed by wider society). By reducing the number of people willing to undertake a third level education, fees may also reduce the number of positive externalities such as the skills of the population and possibly discourage the location of FDIs.",
+      "Possible economic disadvantages — Undermining of certain discipline areas that create social benefits To ensure sufficient future income is earned in order to justify fee payments, students may be forced to opt for university courses connected with high-earning jobs. Courses in areas such as arts and humanities may as a result suffer a reduction in graduate numbers, despite the important contribution such graduates make to society."
+     ],
+     "perOptionSteps": [
+      9,
+      8
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q1-a",
+  "topicId": "economics-1-0",
+  "conceptId": "distinguishing-market-concepts",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q1(a)",
+  "questionText": "In the case of any two of the following distinguish between the concepts. (i) The Law of Demand and the Law of Supply. (ii) Consumer Surplus and Producer Surplus. (iii) Derived Demand and Joint Demand.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 + 6 + 6 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Each concept defined — two pairs",
+    "marks": 25,
+    "openList": true,
+    "contextNote": "Two pairs, four concepts: the 1st correct response 7 marks, the remaining three 6 each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 7,
+     "options": [
+      "The Law of Demand states that as prices rise the quantity demanded will fall and vice versa, ceteris paribus (all other things being equal). We illustrate the law of demand using a downward-sloping line from left to right. There is an inverse or negative relationship between the price of a good and the quantity demanded of that good.",
+      "The Law of Supply states that as prices rise the quantity supplied will rise and vice versa ceteris paribus (all other things being equal). We illustrate the law of supply using an upward-sloping line from left to right. There is a positive relationship between the price of a good and the quantity supplied of that good.",
+      "Consumer Surplus is the difference between what a consumer actually pays for a good and the maximum s/he was willing to pay for the good rather than do without it. The utility gained from a good or service in excess of the amount paid for it.",
+      "Producer Surplus is the difference between what a producer receives for a good and the minimum s/he was willing to accept for the good. The extra earnings obtained by the producer above the minimum required for them to supply the good or service.",
+      "Derived Demand is where a factor of production is not demanded for its own sake but rather for its contribution to the production process.",
+      "Joint Demand is where two (or more) goods are used in conjunction with each other in order to achieve utility. They are complementary goods, for example, golf clubs and golf balls."
+     ],
+     "perOptionSteps": [
+      7,
+      6,
+      6,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q1-b-i",
+  "topicId": "economics-1-0",
+  "conceptId": "technological-advance-and-electric-cars",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q1(b)(i)",
+  "questionText": "A technological advance in the production process of electric cars.",
+  "stem": "Assume the market for electric cars is in equilibrium. Describe with the aid of a separate diagram in each case the effects each of the following market situations is likely to have on the equilibrium position for electric cars.",
+  "figureKey": "economics-2017-HL-scheme-p10-q1bi-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Diagram 5 + explanation 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "anyN",
+    "verbatim": "The diagram — each element",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The diagram, 5 marks: 1 for each element the scheme lists. The completed diagram is shown with the answer.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 1,
+     "options": [
+      "D",
+      "S1",
+      "S2",
+      "Indication of lower equilibrium price",
+      "higher quantity"
+     ]
+    }
+   },
+   {
+    "id": "r-shift",
+    "kind": "point",
+    "verbatim": "S/C shifts to the right (S2)",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The shift, 1 mark."
+   },
+   {
+    "id": "r-price",
+    "kind": "point",
+    "verbatim": "New lower equilibrium price – P2",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The new price, 1 mark."
+   },
+   {
+    "id": "r-quantity",
+    "kind": "point",
+    "verbatim": "New higher equilibrium quantity – Q2",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The new quantity, 1 mark."
+   },
+   {
+    "id": "r-reason",
+    "kind": "anyN",
+    "verbatim": "The reason — any one",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The reason behind the change, 2 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "The technological advance will lead to an increase in the supply of electric cars due to increased efficiency/lower unit production costs",
+      "There will be a surplus of electric cars at price P1. This surplus will cause the price to fall to P2."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q1-b-ii",
+  "topicId": "economics-1-0",
+  "conceptId": "motor-tax-and-electric-cars",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q1(b)(ii)",
+  "questionText": "The motor tax on petrol engine cars is expected to rise in the near future.",
+  "stem": "Assume the market for electric cars is in equilibrium. Describe with the aid of a separate diagram in each case the effects each of the following market situations is likely to have on the equilibrium position for electric cars.",
+  "figureKey": "economics-2017-HL-scheme-p10-q1bii-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Diagram 5 + explanation 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "anyN",
+    "verbatim": "The diagram — each element",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The diagram, 5 marks: 1 for each element the scheme lists. The completed diagram is shown with the answer.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 1,
+     "options": [
+      "S",
+      "D1",
+      "D2",
+      "Indication of higher equilibrium price",
+      "quantity"
+     ]
+    }
+   },
+   {
+    "id": "r-shift",
+    "kind": "point",
+    "verbatim": "D/C shifts to the right (D2)",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The shift, 1 mark."
+   },
+   {
+    "id": "r-price",
+    "kind": "point",
+    "verbatim": "New higher equilibrium price – P2",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The new price, 1 mark."
+   },
+   {
+    "id": "r-quantity",
+    "kind": "point",
+    "verbatim": "New higher equilibrium quantity – Q2",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The new quantity, 1 mark."
+   },
+   {
+    "id": "r-reason",
+    "kind": "anyN",
+    "verbatim": "The reason — any one",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The reason behind the change, 2 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "The demand for electric cars will increase as a substitute good has now become more expensive.",
+      "This increase in demand will result in an excess demand or a shortage which will drive price up to P2."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q1-b-iii",
+  "topicId": "economics-1-0",
+  "conceptId": "public-transport-subsidies-and-electric-cars",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q1(b)(iii)",
+  "questionText": "The government increases subsidies on public transport, reducing prices for its commuters.",
+  "stem": "Assume the market for electric cars is in equilibrium. Describe with the aid of a separate diagram in each case the effects each of the following market situations is likely to have on the equilibrium position for electric cars.",
+  "figureKey": "economics-2017-HL-scheme-p11-q1biii-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Diagram 5 + explanation 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "anyN",
+    "verbatim": "The diagram — each element",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The diagram, 5 marks: 1 for each element the scheme lists. The completed diagram is shown with the answer.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 1,
+     "options": [
+      "S",
+      "D1",
+      "D2",
+      "Indication of lower equilibrium price",
+      "quantity"
+     ]
+    }
+   },
+   {
+    "id": "r-shift",
+    "kind": "point",
+    "verbatim": "D/C shifts to the left (D2)",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The shift, 1 mark."
+   },
+   {
+    "id": "r-price",
+    "kind": "point",
+    "verbatim": "New lower equilibrium price – P2",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The new price, 1 mark."
+   },
+   {
+    "id": "r-quantity",
+    "kind": "point",
+    "verbatim": "New lower equilibrium quantity - Q2",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The new quantity, 1 mark."
+   },
+   {
+    "id": "r-reason",
+    "kind": "anyN",
+    "verbatim": "The reason — any one",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The reason behind the change, 2 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "The demand for electric cars will decrease as a substitute service has now become more affordable / cheaper.",
+      "This decrease in demand will result in an excess supply which will drive price down to P2."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q1-c-i",
+  "topicId": "economics-1-3",
+  "conceptId": "illustrating-a-rent-control",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q1(c)(i)",
+  "questionText": "Assume the average monthly equilibrium rental price is €1,078. On one diagram, illustrate the effect on the market if the Irish Government introduced a rent control that sets the maximum rent at €715.",
+  "stem": "The average monthly rental price for private residential property in Ireland is €1,078. (Source: Daft.ie 2016)",
+  "figureKey": "economics-2017-HL-scheme-p11-q1ci-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 x 1 + 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-labels",
+    "kind": "anyN",
+    "verbatim": "Each label — 1 mark",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The diagram, 8 marks: 1 for each of the eight labels the scheme lists. The completed diagram is shown with the answer.",
+    "group": {
+     "claimMax": 8,
+     "perOption": 1,
+     "options": [
+      "P",
+      "Q",
+      "S",
+      "D",
+      "€ 1,078",
+      "QE",
+      "S1",
+      "D1"
+     ]
+    }
+   },
+   {
+    "id": "r-ceiling",
+    "kind": "point",
+    "verbatim": "€715",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The €715 maximum rent, 2 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q1-c-ii",
+  "topicId": "economics-1-3",
+  "conceptId": "consequences-of-a-rent-control",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q1(c)(ii)",
+  "questionText": "Discuss the likely economic consequences of such a rent control (i.e. price ceiling on rental costs) on the Irish rental property market.",
+  "stem": "The average monthly rental price for private residential property in Ireland is €1,078. (Source: Daft.ie 2016)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An economic consequence — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two consequences, 5 marks each (2 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Effect on demand The rent price would decrease to €715 and the quantity demanded would increase as more people can now afford to rent. The impact of the price ceiling/rent control is a shortage or excess demand at this new price level.",
+      "Effect on consumers Rent controls can reduce exploitation of consumers, especially where there is a lack of competition. They can help people on low incomes to afford rental housing. It will allow those on lower incomes to have an improved standard of living. If landlords do not invest in their properties then consumers may have to settle for poor quality accommodation.",
+      "Effect on landlords The quantity supplied of rental property will fall if developers / landlords consider the rental return to be too low. Some landlords may decide to sell their properties or withdraw from the market. Some landlords will have less income to invest and maintain their property, resulting in a deterioration in the quality of properties.",
+      "Allocation of available supply Problems arise over how to allocate supply to meet the excess demand in the market, since price cannot increase. This could involve a ‘first-come, first-served’ basis or ‘seller’s preference’, both of which are deemed to be unfair. Landlords may require large deposits from new tenants.",
+      "Difficulties for government / black market It will be difficult for the government to monitor and enforce price controls in markets. There is a danger of a shadow market/black market being created."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q2-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "short-and-long-run-in-perfect-competition",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(a)(i)",
+  "questionText": "Show, by means of two separate labelled diagrams, the short run and long run equilibrium positions of a profit maximising firm in perfect competition.",
+  "stem": "",
+  "figureKey": "economics-2017-HL-scheme-p13-q2ai-diagrams",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Short run 9 at 1 + long run 8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-short",
+    "kind": "anyN",
+    "verbatim": "The short-run diagram — each element",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The short-run diagram, 9 marks: 1 for each of the nine elements the scheme lists.",
+    "group": {
+     "claimMax": 9,
+     "perOption": 1,
+     "options": [
+      "P",
+      "Q",
+      "AC",
+      "MC",
+      "P = AR = MR",
+      "P1",
+      "Q1",
+      "C1",
+      "Equilibrium point"
+     ]
+    }
+   },
+   {
+    "id": "r-tangent",
+    "kind": "point",
+    "verbatim": "AC (2m) at a tangent to AR (2m)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The long-run diagram: AC at a tangent to AR, 2 marks each."
+   },
+   {
+    "id": "r-long",
+    "kind": "anyN",
+    "verbatim": "The long-run diagram — each further element",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Then P2, C2, Q2 and the equilibrium point, 1 mark each. Both completed diagrams are shown with the answer.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "P2",
+      "C2",
+      "Q2",
+      "Equilibrium point"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q2-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "short-and-long-run-compared",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(a)(ii)",
+  "questionText": "Compare the short run equilibrium position with the long run equilibrium position of a perfectly competitive firm under the following headings: • Price and Output • Profits • Efficiency.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 x 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-price",
+    "kind": "point",
+    "verbatim": "Price and Output — When new firms enter the industry the market price falls and the firm must accept the market price. The price in the long run is lower than it is in the short run as the firm must accept the market price. The firm’s output in the long run is lower than in the short run. • As new firms enter the industry each firm will supply a smaller fraction of the total output.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Price and Output, 6 marks."
+   },
+   {
+    "id": "r-profits",
+    "kind": "point",
+    "verbatim": "Profits — In the short run the firm earns SNP as AR>AC . • In the long run, new firms “compete” away the SNP so only normal profit is earned where AR=AC.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Profits, 6 marks."
+   },
+   {
+    "id": "r-efficiency",
+    "kind": "point",
+    "verbatim": "Efficiency — In the short run as there is SNP there is no incentive for firms to be efficient and they do not produce at the lowest point of the AC curve. • In the long run, only firms that are efficient and produce at the lowest point on the AC curve will survive.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Efficiency, 6 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q2-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "marginal-revenue-in-perfect-competition",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(b)(i)",
+  "questionText": "Using your knowledge of perfect competition, what is the marginal revenue earned by this firm? Explain your answer.",
+  "stem": "The table below shows data for a perfectly competitive firm in equilibrium.",
+  "figureKey": "economics-2017-HL-paper-p05-q2b-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 (4 + 4)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-answer",
+    "kind": "point",
+    "verbatim": "In Perfect Competition MR = AR thus MR = €50",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The answer, 4 marks."
+   },
+   {
+    "id": "r-reason",
+    "kind": "point",
+    "verbatim": "In perfect competition the firm is a price taker /The demand curve is horizontal/ The AR and MR are equal and constant/Each additional good is sold at the market price.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The explanation, 4 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q2-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "should-the-firm-continue",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(b)(ii)",
+  "questionText": "Should this firm continue in business? Explain your answer.",
+  "stem": "The table below shows data for a perfectly competitive firm in equilibrium.",
+  "figureKey": "economics-2017-HL-paper-p05-q2b-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "12 (4 + 4 + 4)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This firm should continue in business in the short run even though it is making a loss.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme prices the answer 12 (4 + 4 + 4) without tying each 4 to a line."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The Price (i.e. AR) €50 is below the ATC of €60. The firm is making a loss of €10 per unit.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Part of the answer."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The firm is actually covering all of its variable costs and part of its fixed costs.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Part of the answer."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Thus, the firm should continue in business in the short run and absorb some of the loss and hope, by adjusting it costs or production levels, to cover all of its costs in the long run.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Claim the complete answer: 12 marks in all."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q2-c-i",
+  "topicId": "economics-2-0",
+  "conceptId": "the-artisan-food-market-structure",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(c)(i)",
+  "questionText": "State a market structure which most closely reflects this situation, giving reasons for your answer.",
+  "stem": "Bord Bia reported the total value of the Artisan Food market to be growing strongly, leading to more firms entering the industry. (Bord Bia defines Artisan Food as being “high‐quality, distinctive and produced in small quantities”, e.g., farmhouse cheeses, breads etc.)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 2 x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-structure",
+    "kind": "point",
+    "verbatim": "The Artisan Food market is imperfectly competitive (monopolistically competitive).",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The market structure, 4 marks."
+   },
+   {
+    "id": "r-reasons",
+    "kind": "anyN",
+    "verbatim": "A reason — any two",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two reasons, 3 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "There are many firms in this industry with a relatively small market share/Each artisan producer is too small to influence the overall market.",
+      "There is freedom of entry and exit to/from the industry as no barriers to entry exist.",
+      "Product differentiation exists: The goods are differentiated which gives each firm some power over price but as close substitutes are available they take into account the effect on demand if they change their price."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q2-c-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "the-demand-curve-in-imperfect-competition",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q2(c)(ii)",
+  "questionText": "Explain the shape of the demand curve of a firm in this market structure.",
+  "stem": "Bord Bia reported the total value of the Artisan Food market to be growing strongly, leading to more firms entering the industry. (Bord Bia defines Artisan Food as being “high‐quality, distinctive and produced in small quantities”, e.g., farmhouse cheeses, breads etc.)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-shape",
+    "kind": "point",
+    "verbatim": "An imperfectly competitive firm faces a downward (negatively) sloping demand curve.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The shape, 4 marks."
+   },
+   {
+    "id": "r-why",
+    "kind": "point",
+    "verbatim": "Because it sells a differentiated product, it has some market power over price and it can decide what price to charge. Each firm has a product that consumers view as somewhat distinct from the products of competing firms. If the firm increases the product price there will be a reduction in demand as some consumers will switch to rival firms’ goods (close substitutes) that have become relatively cheaper.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Why, 6 marks, graded."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q3-a-i",
+  "topicId": "economics-1-5",
+  "conceptId": "fixed-and-variable-cost",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(a)(i)",
+  "questionText": "Calculate the fixed cost and the variable cost when output is 3,000 units.",
+  "stem": "The table below shows the output and the total cost of a firm producing wireless earphones. The firm charges €13 per unit of output. Use this table to answer the questions which follow. (Show your workings.)",
+  "figureKey": "economics-2017-HL-paper-p06-q3a-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "FC = €5,000 because at Output 0, TC = €5,000 VC = TC – FC. At 3,000 units: 24,000 – 5,000 = €19,000",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Both costs with their workings, 5 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q3-a-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "average-variable-cost",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(a)(ii)",
+  "questionText": "Calculate the average variable cost when output is 5,000 units.",
+  "stem": "The table below shows the output and the total cost of a firm producing wireless earphones. The firm charges €13 per unit of output. Use this table to answer the questions which follow. (Show your workings.)",
+  "figureKey": "economics-2017-HL-paper-p06-q3a-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "AVC = VC/Q. At 5,000 units: VC = €45,000 - €5,000 = €40,000 . AVC = 40,000 / 5,000 = €8 per unit .",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The average variable cost with its working, 5 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q3-a-iii",
+  "topicId": "economics-1-5",
+  "conceptId": "total-profit",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(a)(iii)",
+  "questionText": "Calculate total profit if 4,000 units are sold.",
+  "stem": "The table below shows the output and the total cost of a firm producing wireless earphones. The firm charges €13 per unit of output. Use this table to answer the questions which follow. (Show your workings.)",
+  "figureKey": "economics-2017-HL-paper-p06-q3a-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Total Profit = Total Revenue (P x Q) – Total Cost (4,000 x €13) = €52,000 – 32,000 = €20,000",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The profit with its working, 4 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q3-a-iv",
+  "topicId": "economics-1-5",
+  "conceptId": "graphing-average-and-marginal-cost",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(a)(iv)",
+  "questionText": "Using the data in the table above, draw one graph showing the average cost and the marginal cost of the firm, labelling them AC and MC. (You may use graph paper.)",
+  "stem": "The table below shows the output and the total cost of a firm producing wireless earphones. The firm charges €13 per unit of output. Use this table to answer the questions which follow. (Show your workings.)",
+  "figureKey": "economics-2017-HL-scheme-p16-q3aiv-graph",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 6 + 4 at 1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-ac",
+    "kind": "anyN",
+    "verbatim": "Each point on the AC curve (output — AC)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The six AC points, 1 mark each, from the scheme’s completed table. The graph is shown with the answer.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 1,
+     "options": [
+      "1,000 — 13",
+      "2,000 — 9",
+      "3,000 — 8",
+      "4,000 — 8",
+      "5,000 — 9",
+      "6,000 — 10"
+     ]
+    }
+   },
+   {
+    "id": "r-mc",
+    "kind": "anyN",
+    "verbatim": "Each point on the MC curve (output — MC)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The six MC points, 1 mark each.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 1,
+     "options": [
+      "1,000 — 8",
+      "2,000 — 5",
+      "3,000 — 6",
+      "4,000 — 8",
+      "5,000 — 13",
+      "6,000 — 15"
+     ]
+    }
+   },
+   {
+    "id": "r-labels",
+    "kind": "anyN",
+    "verbatim": "Each label",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The axis and curve labels, 1 mark each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "Costs",
+      "Quantity",
+      "MC",
+      "AC"
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "economics-2017-HL-paper-p06-q3a-table",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "econ-2017-hl-sb-q3-b-i",
+  "topicId": "economics-1-5",
+  "conceptId": "marginal-efficiency-of-capital",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(b)(i)",
+  "questionText": "Explain the term Marginal Efficiency of Capital (MEC).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It is the extra profit earned as result of employing one extra unit of capital .",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The explanation, 10 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q3-b-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "why-mec-falls",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(b)(ii)",
+  "questionText": "Outline two possible reasons for a fall in MEC.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two reasons, 5 marks each (2 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Cost of capital increases / Rate of interest increases",
+      "Increase in cost of capital goods",
+      "Selling price of the good falling",
+      "Fall in productivity of the extra capital being used."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q3-c-i",
+  "topicId": "economics-2-1",
+  "conceptId": "marginal-revenue-product-of-labour",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(c)(i)",
+  "questionText": "Explain with the aid of a diagram the Marginal Revenue Product of labour (MRPL).",
+  "stem": "",
+  "figureKey": "economics-2017-HL-scheme-p17-q3ci-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-diagram",
+    "kind": "point",
+    "verbatim": "Explain with the aid of a diagram",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The diagram, 5 marks. The scheme’s diagram is shown with the answer.",
+    "ask": true
+   },
+   {
+    "id": "r-explanation",
+    "kind": "point",
+    "verbatim": "The marginal revenue product of labour is the additional revenue earned from the employment of one additional worker. It is computed by multiplying the product price by the MPPL . 5 marks and 1 other of the following points: For a competitive profit-maximising firm the MRPL curve is the firm’s demand curve for labour: A firm will employ the quantity of labour at which the wage rate equals the marginal productivity of labour/A profit-maximising level of employment is given where a firm hires up to a point where the wage paid to the last worker employed equals his/her marginal revenue productivity of labour/Therefore the MRP curve is the demand curve for labour because it shows the quantity of labour demanded at each price or wage rate. OR The reasons why MRPL slopes downwards: The MRPL usually slope downwards from left to right, showing the lower the wage rate, the larger the number of workers employed. It slopes downward due to the following: The Law of diminishing returns: as more and more workers are employed, their marginal product begins to decline as each worker adds less to production. Hence the MRP of each extra unit of labour is less than the previous unit. The law of demand: to sell a greater output a firm will have to reduce the price of its product. As a greater number of units are produced, they can only be sold at lower prices. Hence the MRP of each extra unit of labour declines. 5 marks Diagram + explanation of MRPL + one other point at",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The explanation of MRPL, 5 marks."
+   },
+   {
+    "id": "r-other",
+    "kind": "anyN",
+    "verbatim": "One other point — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One other point, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "For a competitive profit-maximising firm the MRPL curve is the firm’s demand curve for labour: A firm will employ the quantity of labour at which the wage rate equals the marginal productivity of labour/A profit-maximising level of employment is given where a firm hires up to a point where the wage paid to the last worker employed equals his/her marginal revenue productivity of labour/Therefore the MRP curve is the demand curve for labour because it shows the quantity of labour demanded at each price or wage rate.",
+      "The reasons why MRPL slopes downwards: The MRPL usually slope downwards from left to right, showing the lower the wage rate, the larger the number of workers employed. It slopes downward due to the following: The Law of diminishing returns: as more and more workers are employed, their marginal product begins to decline as each worker adds less to production. Hence the MRP of each extra unit of labour is less than the previous unit. The law of demand: to sell a greater output a firm will have to reduce the price of its product. As a greater number of units are produced, they can only be sold at lower prices. Hence the MRP of each extra unit of labour declines."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q3-c-ii",
+  "topicId": "economics-2-1",
+  "conceptId": "mrpl-and-public-sector-pay",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q3(c)(ii)",
+  "questionText": "Discuss the reasons why MRPL might not be a suitable method for setting wages in the public sector.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two reasons, 5 marks each (2 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Physical output not always produced. Many jobs particularly in public sector are services/no tangible end products, so it is difficult to measure output, thus making it difficult to measure Marginal Physical Product (MPP) and consequently MRP.",
+      "The goods/services produced within public sector are often not sold on the open market or at market prices. Estimating price or marginal revenue is therefore difficult.",
+      "When capital and labour are used together it is difficult to estimate the marginal productivity is of labour alone."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q4-a-i",
+  "topicId": "economics-3-0",
+  "conceptId": "methods-of-measuring-national-income",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q4(a)(i)",
+  "questionText": "One method for calculating National Income is the output method. Outline two other methods used to calculate National Income.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 at 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-income",
+    "kind": "point",
+    "verbatim": "The Income method — They can add up all the income earned / rent, wages, interest and profits from supplying factors of production (land, labour, capital and enterprise) in a country in a period of time. . Based on data collected by the Revenue Commissioners for the purpose of income tax assessment.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The income method, 6 marks."
+   },
+   {
+    "id": "r-expenditure",
+    "kind": "point",
+    "verbatim": "The expenditure method — They can add the total amount of money spent on (final) goods and services in the country during the year (consumers, firms, government, and the foreign sector on domestically produced goods and services). Add the value of exports and subtract the value of imports.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The expenditure method, 6 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q4-a-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "double-counting",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q4(a)(ii)",
+  "questionText": "Describe the problem of ‘double counting’ when compiling National Income statistics.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "8 graded",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "‘Double counting’ occurs if the expenditure on intermediate goods is included in the calculation of national output. When measuring economic activity using the output method, care needs to be taken to distinguish between final and intermediate goods to avoid the problem of double counting.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme grades the description out of 8 and does not price its paragraphs."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Sometimes it is very difficult to distinguish between intermediate and final goods/To avoid the problem of double counting statisticians could include the final value of all finished goods, with the value of intermediate goods excluded or sum the value added at each stage of production/As a good goes through the various stages of production, it increases in value and it is this increase in value which is included in the national income accounts.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Claim the complete description: 8 marks in all."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q4-b-i",
+  "topicId": "economics-3-0",
+  "conceptId": "the-circular-flow-of-income",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q4(b)(i)",
+  "questionText": "Explain, with the aid of a diagram, the Circular Flow of Income in an open economy.",
+  "stem": "",
+  "figureKey": "economics-2017-HL-scheme-p20-q4bi-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Diagram 13 + explanation 10",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 23,
+  "rows": [
+   {
+    "id": "r-sectors",
+    "kind": "anyN",
+    "verbatim": "Each sector identified",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The five sectors, 1 mark each.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 1,
+     "options": [
+      "HOUSEHOLDS",
+      "FIRMS",
+      "GOVERNMENT",
+      "FINANCIAL INSTITUTIONS",
+      "FOREIGN MARKETS"
+     ]
+    }
+   },
+   {
+    "id": "r-flows",
+    "kind": "anyN",
+    "verbatim": "Each flow, its component and direction",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The eight flows, 1 mark each: the scheme gives ½ for the component and ½ for the direction. The completed diagram is shown with the answer.",
+    "group": {
+     "claimMax": 8,
+     "perOption": 1,
+     "options": [
+      "Incomes for supplying F.O.P's",
+      "Spending on the output of firms",
+      "Tax",
+      "Government Expenditure",
+      "Savings",
+      "Investment",
+      "Imports",
+      "Exports"
+     ]
+    }
+   },
+   {
+    "id": "r-explanation",
+    "kind": "anyN",
+    "verbatim": "The explanation — each point",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The explanation, 10 marks: 2 for each of the five points the scheme lists.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "Households supply the factors of production to firms who, in turn, pay households for these factor inputs (wages, rent, profit and interest).",
+      "Firms produce goods and services from the factors of production and households spend income on these goods and services.",
+      "Not all income is spent, some is saved. Households save money with financial institutions and these institutions lend money back for investment purposes.",
+      "The Government also affects the CFOI through taxation and government expenditure. Governments spend money on goods and services and also on transfer payments. Its expenditure is financed by raising revenue through both direct and indirect taxation .",
+      "Finally firms export to the rest of the world and firms and households import from the rest of the world."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q4-b-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "budget-2017-and-the-circular-flow",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q4(b)(ii)",
+  "questionText": "Outline how each of the following Budget 2017 policies should affect the circular flow of income. • Capital spending on road and rail projects to increase by €4.5 billion. • A reduction in the amount of the universal social charge (USC) that workers must pay.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-capital",
+    "kind": "point",
+    "verbatim": "Increased Capital spending on road and rail projects of €4.5 billion — This is an injection into the circular flow of income. • Aggregate demand will increase by the injection times the multiplier to increase the Circular Flow Of Income.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Capital spending, 6 marks."
+   },
+   {
+    "id": "r-usc",
+    "kind": "point",
+    "verbatim": "A reduction in the amount of the universal social charge (USC) that workers must pay. — This is a reduction in taxes and so a reduction in a leakage. Workers have more disposable in- come and this should lead to increased con- sumer spending. • Aggregate demand will increase by the injection times the multiplier. or • Some workers might decide to save the increase in income due to reduced USC so the increase/multiplier is less than expected.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The USC reduction, 6 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q4-c-i",
+  "topicId": "economics-3-0",
+  "conceptId": "uses-of-national-income-statistics",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q4(c)(i)",
+  "questionText": "Describe three uses of a country’s National Income statistics.",
+  "stem": "The CSO recorded an increase in GDP of 26.3% for Ireland in 2015. Experts agreed that this figure, though calculated using approved methods, overestimated the true GDP increase.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A use — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three uses, 5 marks each (2 + 3).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Indication of alterations in the standard of living.",
+      "Means of comparing the standard of living in different countries.",
+      "Assists the government in formulating economic policy/future budgetary planning/evidence on which to base economic policy.",
+      "To evaluate economic activities/ To provide a benchmark against which progress can be monitored.",
+      "EU Budget Contributions / Financial aid from the EU."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q4-c-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "an-overestimated-gdp",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q4(c)(ii)",
+  "questionText": "Outline an economic implication for the Irish Government of using an overestimated GDP figure.",
+  "stem": "The CSO recorded an increase in GDP of 26.3% for Ireland in 2015. Experts agreed that this figure, though calculated using approved methods, overestimated the true GDP increase.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An implication — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One implication, 5 marks (2 + 3). Other acceptable answers are marked on their merits.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "It would make it look like our economy was growing faster than it was thus the government may spend more resulting in increased borrowing leading to increased indebtedness/ damage our international reputation",
+      "Our GDP figures are used to calculate various ratios on which monies from the EU are made available to member states. So it would mean that we receive less from the EU or contribute more to the EU’s budget.",
+      "It would indicate, incorrectly, that our Debt to GDP ratio has improved. This may result in pressure from the EU to run a tighter budget policy (move to a balanced budget)."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q5-a-i",
+  "topicId": "economics-4-2",
+  "conceptId": "absolute-and-comparative-advantage",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q5(a)(i)",
+  "questionText": "Distinguish between the concepts Absolute Advantage and Comparative Advantage in relation to international trade, using an example to support your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 8 graded",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-absolute",
+    "kind": "point",
+    "verbatim": "Absolute Advantage — The capability of a county to produce more of a given product using fewer factor inputs than another country.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Absolute advantage, 4 marks."
+   },
+   {
+    "id": "r-comparative",
+    "kind": "point",
+    "verbatim": "Comparative Advantage — The ability of a country to produce a particular product at a lower opportunity cost (relatively more efficiently) than another country. Comparative advantage reflects the relative opportunity cost.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Comparative advantage with a suitable example, 8 marks, graded. The scheme’s further points: Even if one country has an absolute advantage in producing all goods, different countries could still have different comparative advantages. If one country has a comparative advantage over another, both parties can benefit from trading because each party will receive a product at a price that is lower than its own opportunity cost of producing that product. Comparative advantage drives countries to specialise in the production of the goods for which they have the lowest opportunity cost, which leads to increased productivity. Absolute advantage is important, but comparative advantage is what determines what a country will specialise in."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q5-a-ii",
+  "topicId": "economics-4-2",
+  "conceptId": "why-one-country-produces-better",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q5(a)(ii)",
+  "questionText": "State and explain reasons why one country might be better than another country in the production of a particular good.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 6",
+   "answer": 3,
+   "ofParts": 7,
+   "perPart": 6
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason — any three",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Three reasons, 6 marks each (3 + 3).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Suitable climate and land quality/natural resources exist",
+      "Better access to capital markets",
+      "Access to raw materials",
+      "Availability of an educated and skilled workforce",
+      "Beneficial tax rates",
+      "Lower costs of production, wages, electricity, broadband etc./ Superior infrastructure",
+      "Stable government; strong favourable macro- economic environment in which to do business."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q5-b-i",
+  "topicId": "economics-4-2",
+  "conceptId": "trade-protectionist-measures",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q5(b)(i)",
+  "questionText": "Describe two trade protectionist measures.",
+  "stem": "In his 1958 study, “Economic Development” T. K. Whitaker urged the Irish Government to stop sheltering ‘behind a protectionist blockade’ and to accept instead the challenge of free trade.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A protectionist measure — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two measures, 5 marks each (2 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Tariffs Tax on imports of a particular good which raises the price paid by consumers, therefore making the goods less attractive to buy. It should increase the demand for output of domestic firms (i.e. home produced goods) and domestic firms can now charge a higher price due to the protective effect of the tariff. Should earn extra revenue for government.",
+      "Quotas A limit / ceiling on the quantity of a particular good that can be imported. Because they limit the supply of a good, they drive the price of the good up. Domestic producers are guaranteed a share of the total market but they could exploit this/abuse their position by selling at inflated domestic prices. It does not raise revenue for the government.",
+      "Embargoes This is a total ban on the importation of a particular good into a country. They could be imposed for economic, political or health reasons.",
+      "Administrative barriers Rules and regulations on the importing of a particular good. They often come in the form of health and safety standards or measures designed to give consumers protection.",
+      "Export subsidies A payment to the domestic producer of a particular good that reduces producers’ average production costs.",
+      "Exchange Control regulations A country limits the amount of foreign currencies available to importers to buy imported goods."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q5-b-ii",
+  "topicId": "economics-4-2",
+  "conceptId": "protecting-infant-industries",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q5(b)(ii)",
+  "questionText": "Discuss the economic arguments for and against a government introducing trade protectionist measures to protect ‘infant industries’.",
+  "stem": "In his 1958 study, “Economic Development” T. K. Whitaker urged the Irish Government to stop sheltering ‘behind a protectionist blockade’ and to accept instead the challenge of free trade.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 at 5 (2 + 3)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An argument for or against — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three arguments, 5 marks each (2 + 3). (Must have at least one for and one against)",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "For — New businesses need to find their feet/learn how to produce goods efficiently/safeguarding domestic output/develop their own competitive advantage before they can compete with well-established foreign competitors.",
+      "For — Some countries might be enticed to give aid to these businesses in the hope that they grow and provide employment for domestic workers in the future.",
+      "For — By imposing tariffs on competing products from the rest of the world a government may hope that the domestic industry will be able to establish itself (i.e. benefit from economies of scale) and be able to compete with foreign firms in the long run.",
+      "For — Infant industry may provide goods of national importance and for this reason the government may protect them.",
+      "Against — The ‘infant’ industry may have an incentive to keep the protection in place for as long as possible and remain inefficient / may not innovate and improve its products / consumers may pay more for lower quality products than they would get from foreign competitors.",
+      "Against — How does a government choose which firm/industry to support? Could it lead to a desire by more firms to seek protection?",
+      "Against — How long should a government support an industry? When will the firm be able to compete on its own? Firm may become over dependent on the protection.",
+      "Against — May lead to retaliation by other countries who may decide not to trade with that country."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q5-c-i",
+  "topicId": "economics-4-2",
+  "conceptId": "terms-of-trade",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q5(c)(i)",
+  "questionText": "Explain the phrase terms of trade.",
+  "stem": "The table below shows Ireland’s terms of trade for selected years. (Base",
+  "figureKey": "economics-2017-HL-paper-p07-q5c-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An explanation — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The explanation, 5 marks: any one of the scheme’s statements.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "A country’s terms of trade is a ratio of its export prices to its import prices.",
+      "Index of Export prices / Index of Import prices x 100.",
+      "The terms of trade tells us how much we have to pay for imports or how much our exports earn in terms of our imports.",
+      "The terms of trade is the price a nation gets for goods sold to its trading partner relative to the price that a nation pays for goods bought from its trading partner."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q5-c-ii",
+  "topicId": "economics-4-2",
+  "conceptId": "calculating-the-terms-of-trade",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q5(c)(ii)",
+  "questionText": "Calculate the terms of trade for 2011 from the data in the table above. (Show your workings.)",
+  "stem": "The table below shows Ireland’s terms of trade for selected years. (Base",
+  "figureKey": "economics-2017-HL-paper-p07-q5c-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(96.6 / 98.7 ) x 100 = 97.9",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The terms of trade with the working, 5 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q5-c-iii",
+  "topicId": "economics-4-2",
+  "conceptId": "effects-of-improving-terms-of-trade",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q5(c)(iii)",
+  "questionText": "Outline the possible effects on the Irish economy of the movement shown in the Terms of Trade for 2015, relative to the base year 2010.",
+  "stem": "The table below shows Ireland’s terms of trade for selected years. (Base",
+  "figureKey": "economics-2017-HL-paper-p07-q5c-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two effects, 5 marks each (2 + 3). Other acceptable answers are marked on their merits.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Effect on export sector As prices for exports have increased it may result in increased revenue for the export industry / It could lead to a reduction in demand for Irish exports depending on the elasticities of demand for the product.",
+      "Effect on imports An improvement indicates falling import prices relative to export prices. Ireland’s standard of living may improve as a result of the cheaper / increased availability of imports.",
+      "Effect on Employment If exports increase then the increased demand will result in increased domestic employment in export industries. If demand for Irish exports fall then this could reduce employment.",
+      "Effects on Government revenue Increased exports may result in increased profits for firms increasing Corporation Profits Tax. Increased employment results in increased income tax revenues and VAT."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q6-a-i",
+  "topicId": "economics-3-3",
+  "conceptId": "calculating-the-cpi",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q6(a)(i)",
+  "questionText": "Explain briefly how the Consumer Price Index (CPI) is calculated.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "8 graded",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Choosing a representative base year.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme grades the explanation out of 8 and does not price its steps."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Decide what goods will be put in the CPI (Based on the ‘National Average Family Shopping Basket.)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "A step the scheme lists."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Gather data: get the price of each good for each time period being observed.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "A step the scheme lists."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Find how much a typical consumer spends on the good as a proportion of total income (attach a ‘weight’ to each good.)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "A step the scheme lists."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Multiply the price change index (the simple price index) for each good by its weight.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "A step the scheme lists."
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Add up all the price changes to get the overall change in prices.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Claim the complete explanation: 8 marks in all."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q6-a-ii",
+  "topicId": "economics-3-3",
+  "conceptId": "limitations-of-the-cpi",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q6(a)(ii)",
+  "questionText": "Discuss three possible limitations of the CPI as an accurate measure of changes in the cost of living in Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 4",
+   "answer": 3,
+   "ofParts": 7,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A limitation — any three",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three limitations, 4 marks each (2 + 2).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Limitations of an average.",
+      "Introduction of new products/ new products are not included in the index.",
+      "Rural versus urban lifestyles Both urban and rural households are represented by the present set of weights but this may not reflect accurately changes in their respective cost of living.",
+      "Switching by consumers to cheaper brands/Substitution bias. When prices rise the CPI does not measure the extent to which people may switch to cheaper brands.",
+      "Quality of products/the index does not take account of changes in the quality of products. Higher prices may reflect an improvement in the quality of the product.",
+      "Only measures changes to prices/not a cost of living index. The CPI only measures changes to prices not changes in the cost of living because it doesn’t take into account all the items which affect a person’s living standards i.e. income tax, social welfare etc.",
+      "Static weights/The weights used are those which apply in the base year. The importance of some items in the base year changes over time because of changes in prices, taste and income."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q6-b-i",
+  "topicId": "economics-3-3",
+  "conceptId": "demand-pull-and-cost-push-inflation",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q6(b)(i)",
+  "questionText": "Define the terms demand‐pull inflation and cost‐push inflation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 at 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-demand-pull",
+    "kind": "point",
+    "verbatim": "Demand-pull inflation — Is a type of inflation that occurs when there is persistent / continuous increases in aggregate demand/ When the economy cannot produce enough goods & services to meet demand, causing prices to rise/Aggregate demand is greater than aggregate supply and this causes prices in general to rise. It usually occurs when an economy is close to or at full employment as increases in demand are more likely to be met by price increases rather than increased output.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Demand-pull inflation, 5 marks."
+   },
+   {
+    "id": "r-cost-push",
+    "kind": "point",
+    "verbatim": "Cost-push inflation — Cost-push inflation is caused by persistent / continuous rises in the costs of production caused by firms reacting to increased costs by reducing their output. The selling price of goods are increased to compensate for an increase in the costs of production.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Cost-push inflation, 5 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q6-b-ii-good",
+  "topicId": "economics-3-3",
+  "conceptId": "is-low-inflation-good-or-bad",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q6(b)(ii) — good",
+  "questionText": "The Irish inflation rate was at, or close to, 0% between 2013 and 2016. Is such a low rate of inflation good or bad for (a) households and (b) firms? Explain your answer in each case. Justify the choice: GOOD.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 at 5 (2 + 3)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-households",
+    "kind": "anyN",
+    "verbatim": "Households — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One effect on households, 5 marks (2 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Real wages maintained It is good for households as there are no changes in price and the real value of wages remains unchanged.",
+      "No decline in standard of living The value of money / purchasing power is maintained so they do not suffer a decline in living standards.",
+      "Better planning Households can plan better for their expenses and save more."
+     ]
+    }
+   },
+   {
+    "id": "r-firms",
+    "kind": "anyN",
+    "verbatim": "Firms — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One effect on firms, 5 marks (2 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Improved competitiveness / increased exports If inflation rate is lower than competitors then it gives rise to a cost advantage over competitors and may lead to increased sales.",
+      "Wage costs reduced Trade Unions might be less likely to look for pay increases, which will help keep wage costs down.",
+      "Increased investment Firms may be more likely to invest and expand due to more stable costs/prices.",
+      "Better planning As prices and costs are not changing it adds more certainty to the economic environment and makes it easier to allocate resources."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q6-b-ii-bad",
+  "topicId": "economics-3-3",
+  "conceptId": "is-low-inflation-good-or-bad",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q6(b)(ii) — bad",
+  "questionText": "The Irish inflation rate was at, or close to, 0% between 2013 and 2016. Is such a low rate of inflation good or bad for (a) households and (b) firms? Explain your answer in each case. Justify the choice: BAD.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 at 5 (2 + 3)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-households",
+    "kind": "anyN",
+    "verbatim": "Households — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One effect on households, 5 marks (2 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Reduced spending Consumers/households may postpone spending because they expect prices to fall even further in the future.",
+      "Increased debt burden Borrowers/households lose out because the real burden of their debt such as their mortgage repayments rises."
+     ]
+    }
+   },
+   {
+    "id": "r-firms",
+    "kind": "anyN",
+    "verbatim": "Firms — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One effect on firms, 5 marks (2 + 3).",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Reduced demand for output / reduced profits No price change can be due to a lack of demand in the economy/no economic growth (great recession since 2008). Profits will be affected by that.",
+      "Increased debt burden Low inflation causes the real rate of interest charged on borrowings to rise and so the cost of repayments rise, increasing the debt burden.",
+      "Reduced incentive to expand A very low rate of inflation might not incentivise firms to increase production / to expand as it can be the sign of an unhealthy economy.",
+      "No rent reductions Contracts for rents in the boom assumed inflation with upward only rent reviews. When prices fell, fixed rents caused major difficulties for firms.",
+      "Risk of deflation A 0% rate of inflation runs the risk of deflation and all the problems it brings such as falling demand, reduced investment, lower profits etc."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q6-b-iii",
+  "topicId": "economics-3-3",
+  "conceptId": "the-ecb-and-inflation",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q6(b)(iii)",
+  "questionText": "Outline how the European Central Bank’s (ECB) monetary policy changes might affect the rate of inflation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A monetary policy change — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two points, 5 marks each (2 + 3).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Interest rates — If the ECB increase interest rates, it will discourage borrowing and encourage savings. This will reduce the rate of inflation. Interest rate increases will reduce prices and therefore inflation in the long term.",
+      "Money Supply — If money supply grows faster than real output, there will be more money chasing fewer goods and services available and so inflation will rise. An expansionary monetary policy stimulates demand and increases prices.",
+      "Availability of credit — If credit becomes more readily accessed, this will increase spending and can lead to increased inflation."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q6-c-i",
+  "topicId": "economics-1-0",
+  "conceptId": "why-house-prices-rose",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q6(c)(i)",
+  "questionText": "State and explain three factors that caused the price of residential property to increase considerably since 2013.",
+  "stem": "“From the trough in early 2013, residential property prices nationally have increased by 49.1%.” (Source: CSO, Residential Property Price Index, December 2016)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 5",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A factor — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three factors, 5 marks each (2 + 3).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Recovery in employment and incomes / Confidence in the economy Recovery in employment means more people could afford to purchase property, increasing the demand and price. Confidence in the economy has improved so people are willing to borrow again to purchase property.",
+      "Lack of supply There has not been enough new properties built to match the increased demand. This lack of supply of houses lead to increased prices. Hidden costs of developing sites for builders may push up prices.",
+      "Pent up demand for houses During the recession with falling employment and incomes people held back from buying properties. This is now reversed leading to increased prices.",
+      "Cost of borrowing / incentives Interest rates are at a very low level and this makes the cost of mortgage repayment cheaper. The government is providing incentives to buy houses currently such as tax incentives.",
+      "Financial institutions are more stable Following the recession with the closure of some banks and the re-capitalisation of the remaining banks, financial institutions are now more stable and are granting more mortgages.",
+      "Increasing urbanisation The majority of this national increase in the price of residential property is because of price increases in Dublin and other large cities. This is down to the increased urbanisation of the country as people go in search of jobs and improved standard of services.",
+      "Demographics An increasing percentage of the population is moving into the age group that is interested in buying property. This coupled with increased employment is leading to increased demand for property.",
+      "Central Bank Guidelines The Central Bank has eased the deposit requirements for 1st time buyers and this may boost demand and increase prices."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q6-c-ii",
+  "topicId": "economics-1-0",
+  "conceptId": "consequences-of-rising-house-prices",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q6(c)(ii)",
+  "questionText": "Discuss two possible economic consequences of the above situation.",
+  "stem": "“From the trough in early 2013, residential property prices nationally have increased by 49.1%.” (Source: CSO, Residential Property Price Index, December 2016)",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An economic consequence — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two consequences, 5 marks each (2 + 3). Other acceptable answers are marked on their merits.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Increased pressure on the rental market There will be increased pressure on the rental market as individuals unable to afford houses continue to rent.",
+      "Increased government revenue The government will receive more revenue from stamp duties /Local Property Tax as the prices of properties increase.",
+      "Increased construction of property Construction might begin again in the housing market if the prices become sufficiently high and this will have a positive effect on employment.",
+      "Overheating of the property market Further increases in property prices can be expected and this may lead to a continuing boom and bust in the Irish property market.",
+      "Reduction in demand for other goods and services People will be burdened with a high debt/income ratio trying to purchase property at higher prices. This may depress the demand for other goods and services.",
+      "Lack of affordability Some people might never be able to get on the property ladder and face uncertain and increasing rents, reducing their standard of living.",
+      "Wealth effect The assets have gone up in value. Negative equity diminished hence the wealth of individuals will have increased. Could lead to disparities in wealth between regions due to different property values.",
+      "May discourage FDI Expensive property may be a factor discouraging some companies locating in Ireland as it is too expensive for employees to find homes."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q7-a",
+  "topicId": "economics-3-1",
+  "conceptId": "national-debt-fiscal-policy-deficit-and-avoidance",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q7(a)",
+  "questionText": "Explain the following terms: • National Debt • Fiscal Policy • Budget Deficit • Tax Avoidance.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 at 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-debt",
+    "kind": "point",
+    "verbatim": "National debt is the value of total outstanding debt / borrowing owed by the state.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The national debt, 5 marks."
+   },
+   {
+    "id": "r-fiscal",
+    "kind": "point",
+    "verbatim": "Fiscal policy — Is any change in government spending and taxation that is designed to change overall spending in an economy / The use of government spending and taxation to influence economic growth/Any action taken by the government which influences the timing , magnitude and structure of current revenue and expenditure.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Fiscal policy, 5 marks."
+   },
+   {
+    "id": "r-deficit",
+    "kind": "point",
+    "verbatim": "Budget deficit is when total government expenditure exceeds total government revenue.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "A budget deficit, 5 marks."
+   },
+   {
+    "id": "r-avoidance",
+    "kind": "point",
+    "verbatim": "Tax avoidance is the arranging of one’s affairs within the law so as to minimise /avoid tax liabilities.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Tax avoidance, 5 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q7-b-i",
+  "topicId": "economics-1-3",
+  "conceptId": "privatisation",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q7(b)(i)",
+  "questionText": "Explain the term privatisation.",
+  "stem": "The National Broadband Plan is the government’s commitment, over the next five years, to bring high speed broadband to every home and business in rural Ireland. In July 2016 the government announced that this national infrastructure will be privatised when built.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The selling of a state owned company / asset in whole or in part to the private sector.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The explanation, 5 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q7-b-ii",
+  "topicId": "economics-1-3",
+  "conceptId": "arguments-on-privatisation",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q7(b)(ii)",
+  "questionText": "State and explain the economic arguments for and against privatisation using any Irish example.",
+  "stem": "The National Broadband Plan is the government’s commitment, over the next five years, to bring high speed broadband to every home and business in rural Ireland. In July 2016 the government announced that this national infrastructure will be privatised when built.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 at 5 (2 + 3) + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "r-arguments",
+    "kind": "anyN",
+    "verbatim": "An argument for or against — any four",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four arguments, 5 marks each (2 + 3). Minimum of one point for AND one point against.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "For — Revenue for government The government could use the revenue from the sale of the asset to reduce its level of borrowings into the future.",
+      "For — More competition Competition in the industry could improve services offered to customers and lead to more competitive prices for goods and services e.g. air travel in Ireland/Aer Tricity, Energia due to ESB infrastructure being privatised.",
+      "For — Employment opportunities In the case of a new firm, if it increases its market share, then this may result in a growth in employment together with additional job security for existing employees. IAG purchase of Aer Lingus.",
+      "For — Enterprise culture Increased share ownership may lead to growth in an enterprise culture within the country and so help employment.",
+      "For — Access to finance/overseas markets Through the sale of additional shares on the stock exchange, private companies have access to extra finance. Companies can expand overseas and compete for business abroad.",
+      "For — Greater incentives for innovation Employees may have more incentive to innovate and improve productivity as they may reap greater rewards for their innovations within the privatised sector e.g. higher bonuses.",
+      "For — Shedding of loss making companies By selling loss making companies the burden on the state is removed and so the burden on taxpayers should be reduced. If Bus Éireann sold its Expressway services its costs may be reduced.",
+      "For — Less pressure on the government finances There is no further requirement for on-going government investment in the company and the government can still have some control through regulation.",
+      "Against — Increased Prices/ falling standards of service The quality of services provided by the new company may deteriorate in an effort to save costs. Prices may be increased to increase revenue.",
+      "Against — Loss of jobs and reduced job security Jobs may be lost through rationalisation of services and this may lead to higher social welfare costs.",
+      "Against — Loss of a State Resource / loss of annual profits Taxpayers lose critical infrastructure, which was once owned by the state. The state will lose profits made by profitable state firms. Loss of control e.g. Bord Gais (retained the pipeline network).",
+      "Against — Foreign Ownership With the sale of a state owned asset, overseas buyers may become the owners of an Irish company and so control of the asset may go outside the state. National Lottery and Aer Lingus.",
+      "Against — Cost of the Sale During the privatisation process, all costs in preparation for such a sale, legal work etc. must be paid for by the taxpayer.",
+      "Against — Curtailment in pay and pensions increases The owners of the newly privatised company may limit pay and pension increases due to its employees or change its employees’ conditions of employment resulting in a worsening of these.",
+      "Against — Loss of essential public services The newly privatised firm may cut those services which are non-profit making and this may affect lower income groups in particular.",
+      "Against — Possible abuse of monopoly power If the newly privatised company is in a monopoly position it could abuse its power and increase prices."
+     ]
+    }
+   },
+   {
+    "id": "r-example",
+    "kind": "anyN",
+    "verbatim": "A valid Irish example — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Reference to any valid example, 5 marks. These are the examples the scheme prints.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Aer Tricity, Energia",
+      "IAG purchase of Aer Lingus.",
+      "If Bus Éireann sold its Expressway services its costs may be reduced.",
+      "Bord Gais (retained the pipeline network).",
+      "National Lottery and Aer Lingus."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q7-c",
+  "topicId": "economics-0-0",
+  "conceptId": "contributions-to-economic-thought",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q7(c)",
+  "questionText": "Outline the key contributions to economic thought by any three of the following economists: (i) Adam Smith (ii) Milton Friedman (iii) Karl Marx (iv) Thomas Robert Malthus (v) John Maynard Keynes.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 (3+2) + 4 (2+2) x 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An economist, with two of the contributions the scheme lists — any three",
+    "marks": 25,
+    "openList": true,
+    "contextNote": "Three economists, two contributions each: the 1st correct response 5 marks (3 + 2) and each of the rest 4 (2 + 2), so 9 for the first economist and 8 for each of the other two.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 9,
+     "options": [
+      "Adam Smith The pursuit of self -interest This best benefits the individual and hence best benefits society. The Division of Labour Increased productivity and increased country’s wealth. His example; the manufacture of pins illustrated the benefits of the division of labour. Labour Theory of Value The value of a product was equal to the amount of labour that went into producing the product. State protection of property rights Encourages the accumulation of personal wealth. 'Invisible hand of competition' Allows a self-regulating market to operate thus ensuring economic progress is achieved. Perfect Competition Free entry into markets; profits sufficient to reward entrepreneurs; inefficiency penalised and price based on the cost of production. Monopolies would not persist. Laissez-faire / limited government intervention There is no justification for government intervention except for defence/justice. Canons of Taxation To fund the state’s defence/justice systems taxation was necessary and he developed the four principles of a fair tax system: equity, economy, certainty and convenience. Paradox of Value He distinguished between ‘value in use’ and ‘value in exchange’. Some items had an immense utility (i.e. air, water) but are not exchanged, while others (i.e. diamonds) possessed little utility but could command a high value in exchange. Advocated Free Trade He advocated international free trade unhindered by the imposition of tariffs so that markets could operate effectively and allow the gains from trade to be spread between nations.",
+      "Milton Friedman Favoured Monetary policy: It should be the main instrument used by the government to manage the economy. Strict control of money supply to control inflation: Monetarists suggest strict control of the money supply so as to control inflation. Reduction in inflation leads to improved competitiveness: This increases competitiveness which may lead to increased exports and job creation in the long run. Laissez faire principles: He favoured a return to laissez faire principles - with minimum state intervention; de-regulation of markets; privatisation of state bodies. Supply side policies: He favoured policies which improved market efficiency / boosted supply: de-regulation of markets; reduc- ing the ability of trade unions to interfere with the labour market.",
+      "Karl Marx Labour Theory of Value The value of a good was the labour cost needed to produce the good. Labour was paid enough to rear a family but workers were required to work a number of hours in excess of the hours necessary to meet these costs. For this the worker was producing value / profit for the employer. This excess value of output pro- duced over wages was called ‘surplus value’ of production and represented the exploitation of the workers by the capitalist. Marx said that only 2 sources of income existed: value and surplus value, both created by workers and should be kept by workers. Distribution of Capitalist profits Capitalists reinvest in new machinery which reduces the demand for labour, leading to unemployment. A recession sets in. Smaller businesses fail and bigger ones take control of markets. Machinery de-skills labour and competition between workers for jobs allows capitalists to worsen working conditions and reduce pay further. Conflict between classes would lead to the replacement of capitalism by socialism Employers become fewer and bigger. Numbers unemployed grow. They organise themselves. Revolution occurs and workers take control of society in a socialist state where they would have full control over all means of production and where wealth would be distributed fairly. Theory of exploitation of labour in a capitalist system Marx argued that workers were paid subsistence / minimum wages by their employers. The value of the goods produced by a worker was more than the wages paid to the worker. The difference between the two he called the “surplus value” or profit to the employer/ Labour produced a “surplus value” which went to the capitalists in the form of profit. This illustrated that workers were exploited and in time would be replaced by capital resulting in their unemployment.",
+      "Thomas Robert Malthus Theory on Population and food supply Malthus stated that population increases in a geometric progression (i.e. 2, 4, 8, 16 etc.) while food supply increases in an arithmetic progression (i.e. 2, 3, 4, 5 etc.). Therefore, population would outgrow the means of subsistence. Malthus believed that only natural causes could check excessive population growth i.e. war, famine and vice. Subsistence Wages Theory / Iron Law of Wages He believed that any increase in wages above the subsistence level would cause an increase in population which would in turn cause wage levels to fall down to the subsistence level.",
+      "John Maynard Keynes National Income at less than full employment Keynes observed that national income could reach equilibrium without reaching full employment and hence he suggested government intervention to help create jobs when required. Output is demand determined The size of national income depends on expenditure i.e. C = I + G + X – M. Favoured government intervention in the economy The job of the government is to manage the economy. The government can use fiscal policy to create full employment. Investment decisions by entrepreneurs He stated that investment decisions by entrepreneurs depended more on businessmen’s expectations than on the rate of interest. New Economic Concepts – The Multiplier He developed new tools to explain his theories including the multiplier: Any initial increase in spending will cause a much greater increase in GNP due to the fact that one person’s expenditure is another person’s in- come. He developed concepts such as: - MPC, MPM, etc. Liquidity Preference Theory People may prefer to hold their wealth in money form for three reasons: transactionary; precautionary and speculative reasons. Managed system of exchange rates He favoured a system of foreign exchange rates which could be ‘managed’ by the state rather than the gold standard."
+     ],
+     "perOptionSteps": [
+      9,
+      8,
+      8
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q8-a-i",
+  "topicId": "economics-3-2",
+  "conceptId": "natural-increase-and-net-migration",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q8(a)(i)",
+  "questionText": "Explain the terms natural increase and net migration.",
+  "stem": "The information below refers to data taken from the Census of Population in Ireland.",
+  "figureKey": "economics-2017-HL-paper-p08-q8a-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 at 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-natural",
+    "kind": "point",
+    "verbatim": "Natural Increase is the amount that total births exceed total deaths during a period of time.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Natural increase, 5 marks."
+   },
+   {
+    "id": "r-migration",
+    "kind": "point",
+    "verbatim": "Net migration is defined as the difference between emigration (people leaving a country) and immigration (people coming to a country) during a period of time .",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Net migration, 5 marks."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q8-a-ii",
+  "topicId": "economics-3-2",
+  "conceptId": "calculating-net-migration",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q8(a)(ii)",
+  "questionText": "Using the above data, calculate net migration between 2011 and 2016. (Show your workings.)",
+  "stem": "The information below refers to data taken from the Census of Population in Ireland.",
+  "figureKey": "economics-2017-HL-paper-p08-q8a-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "– 28,558 = Net Migration",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Net migration, 5 marks, with the scheme’s workings: population change = natural increase + net migration; 4,757,976 – 4,588,252 = +169,724 = 198,282 + net migration."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q8-a-iii",
+  "topicId": "economics-3-2",
+  "conceptId": "why-people-emigrate",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q8(a)(iii)",
+  "questionText": "State and explain three reasons why people emigrate from Ireland.",
+  "stem": "The information below refers to data taken from the Census of Population in Ireland.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 at 5 (2 + 3)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A push or pull factor — any three",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three reasons, 5 marks each (2 + 3).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Push factors — Economic recession in Ireland This resulted in increasing unemployment and with fewer available job opportunities people emigrate.",
+      "Push factors — Wage rates in Ireland Wage rates in Ireland have fallen. This means that the standard of living is declining and so people are seeking a better standard of living abroad.",
+      "Push factors — Various income levies /new taxes The introduction of the various income levies / new taxes have resulted in a reduced standard of living. Those people who are mobile may seek a higher standard of living abroad.",
+      "Pull factors — Job opportunities abroad Those people who can are emigrating to find jobs in countries where vacancies exist e.g. Canada etc.",
+      "Pull factors — Develop skills abroad Some workers, as part of their professional development, emigrate to develop their skills such as teachers and nurses.",
+      "Pull factors — Better standard of living The possibility of better pay rates; lower taxes and better promotional opportunities is attracting younger people to emigration.",
+      "Pull factors — Better lifestyle/ Existence of Irish networks abroad Some people are emigrating to achieve a better lifestyle; may consider outlook abroad is more positive and the existence of Irish communities (diaspora) makes emigration easier.",
+      "Pull factors — Immigrants returning to their home countries Return to their families due to improved economic prospects there etc."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q8-b",
+  "topicId": "economics-3-5",
+  "conceptId": "consequences-of-a-growing-population",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q8(b)",
+  "questionText": "Discuss the economic consequences of Ireland’s increasing population.",
+  "stem": "The 2016 Census of Population in Ireland showed that the Irish population has grown since 2011 and now exceeds 4.7 million.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 (4 + 3) + 6 + 6 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An economic consequence — any four",
+    "marks": 25,
+    "openList": true,
+    "contextNote": "Four points: the first 7 marks (4 + 3), the other three 6 each (3 + 3).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 7,
+     "options": [
+      "Increased demand for goods & services / Larger domestic market for firms With a rising population the demand for goods & services within the country grows. This may lead to increased opportunities for investment. Firms who increase output may benefit from economies of scale.",
+      "Increased pressure on services / increased utilisation of services A rising population may put further pressure on essential services e.g. health services, schools etc. However, if the population lives in under-populated areas then services will be more fully utilised.",
+      "Increased pressure on the country’s infrastructure Greater pressure is exerted on the infrastructure of the country leading to bottlenecks e.g. increased traffic jams on the M50 etc.",
+      "Land values / housing shortages As population density increases, available land becomes scarce and hence the price of land increases. In those areas where the population is increasing rapidly this may lead to a worsening of the current housing shortage.",
+      "Economic Planning An increase in population should lead to an increase in planning by both central and local authorities for future development/provision of services. If the increase has not been planned for adequately then shortages will develop in certain sectors i.e. housing, education, social services etc.",
+      "Government employment strategy will need to reflect increasing need for work The numbers joining the labour market will increase making it important for the government to prioritise the creation of employment.",
+      "Impact on Government finances (tax and social welfare etc.) Depending on the source of the population growth the increasing population will have implications for tax revenue and for spending by the government (on infrastructure and social welfare spending).",
+      "Dependency ratio (could increase or decrease depending on the source of the population growth) • If increased numbers are in the labour force it will lower the dependency ratio and lead to increased tax revenues for the state. or • If the increase in population is due to an increase in the birth rate then the dependency ratio will increase requiring additional state finances."
+     ],
+     "perOptionSteps": [
+      7,
+      6,
+      6,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2017-hl-sb-q8-c",
+  "topicId": "economics-1-3",
+  "conceptId": "benefits-of-social-housing",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2017 HL Section B Q8(c)",
+  "questionText": "Discuss the social benefits and economic benefits of investment in social housing in Ireland.",
+  "stem": "In December 2016 the European Investment Bank opened a permanent office in Dublin. It has agreed to provide a loan to the Irish Housing Finance Agency to finance a large social housing project in Ireland.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 @ 5",
+   "answer": 4,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A social or economic benefit — any four",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Four points, 5 marks each (2 + 3). Must have a minimum of 1 social AND 1 economic point",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Reduced homelessness/reduced poverty and deprivation rates People who will now have homes should experience a reduction in poverty as they have a permanent address and this may allow them find employment and experience an improved standard of living.",
+      "Less Government spending on rent supplements If people are in permanent accommodation then this should mean that the government will spend less on rent supplements and the monies saved can be put to alternative uses. Reduced payments by the government providing emergency accommodation.",
+      "Improved stability /well being A home address leads to greater stability, a better opportunity to plan for the future, improved morale and well-being and much improved quality of life. Those people who move from hostels / small rented apartments will experience greater security.",
+      "Revitalisation of local communities Areas where social housing is built will be revitalised, it should help distressed neighbourhoods and improve the quality of lives in those areas.",
+      "Economic benefits to local communities The increase in population in areas where the social housing is completed should result in increased spending in those communities, resulting in possible employment opportunities in local businesses.",
+      "Less pressure on private property market An increase in permanent accommodation should lead to a decrease in the need for rental accommodation, reduce the demand in the private property market and have a positive effect on house prices / rents.",
+      "Employment in the construction sector There should be an increase in employment in the construction sector. This will allow those who emigrated during the recession to return to Ireland. It may also result in an increase in people entering apprenticeships.",
+      "Economic growth /Spending increases There will be an increase in demand for goods and services associated with the construction industry which will benefit the suppliers of these goods and services. This should lead to economic growth and a positive impact on government finances (increased PAYE and VAT receipts to the government as a result of increased economic activity)/ Assuming that the housing is affordable, people may have more disposable income which allows for increased spending."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2018-hl-sa-q1-a",
   "topicId": "economics-2-0",
   "conceptId": "the-price-taker",

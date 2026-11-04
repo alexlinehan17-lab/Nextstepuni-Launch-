@@ -1718,3 +1718,60 @@ and nothing else:
 - Economics drops 2,206 -> 2,197.
 The coverage ratchet refuses a shrinking denominator, so the baseline was
 re-measured with `--accept-regression` for this deliberate correction.
+
+## 2017 Higher English, old syllabus (lane, 2026-11-04)
+
+All 8 paper pages and 40 scheme pages were viewed:
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- p40 is the back cover.
+
+There are 62 routes for the 61 printed asks (12 in Section A, 49 in Section B).
+The one extra route is the Section B Q6(b)(ii) good/bad stance, each side
+credited with its own table. 17 crops: 11 hidden scheme solutions and 6 paper
+data crops.
+
+Decisions:
+- Printed choices are one card each:
+  - B1(a) "any two of three pairs": six definitions, claimed at 7, 6, 6, 6.
+  - B7(c) "any three of five economists". The scheme prices two contributions
+    an economist, 5 (3+2) for the 1st correct response and 4 (2+2) for every
+    other, so the card claims three economists at 9, 8, 8. Each option is that
+    economist's contiguous list from the block-order rendering. A per-
+    contribution menu would need 28 options, past the build's 25-option
+    ceiling. The economist options run 600-1,800 characters.
+- Ladders are claimed at their printed steps:
+  - A Q2 "6 + 4 + 3 + 3".
+  - A Q4 "6 + 5 + 5".
+  - A Q8 "12 + 5".
+  - A Q9 "9 + 8" (side-labelled, one advantage and one disadvantage).
+  - B8(b) "7 (4+3) + 6 + 6 + 6".
+- Diagram tariffs that list their marked elements ("D / S1 / S2 / Indication
+  of lower equilibrium price, higher quantity: 1 marks each") are menus of
+  those elements at 1 each, split where the scheme prints its slashes. The
+  B1(b) explanation is split as the scheme prices it: shift 1, price 1,
+  quantity 1, and the printed reason 2 (either of its two bullets).
+- Graded totals over printed points are questionTotal with unpriced rows:
+  A Q6(b), B2(b)(ii), B4(a)(ii) and B6(a)(i).
+- A Q7(a): workings 8 (8 items at 1) and the answer 4. The working is a
+  hidden crop, and the row holds its printed line "= - 4 x 0.95".
+- B4(b)(i): 5 sectors at 1, 8 flows at 1 each (the scheme's ½ for component
+  plus ½ for direction) and the explanation's five bullets at 2.
+- B7(b)(ii): four arguments at 5 plus a 5-mark menu of the Irish examples the
+  scheme prints.
+
+Refcheck: two short asks were read by hand.
+
+Topic review: 3 reference anomalies:
+- A Q1 under government intervention (public pay is fiscal policy).
+- A Q9 under government intervention (third-level fees are fiscal policy).
+- B8(c) under topical questions.
+
+Checks:
+- econ_review: 24/66.
+- build: 1,270 cards, 0 dropped.
+- Build rule: 332 claims, 0 untraceable.
+- reconcile: 1,205/2,197, with 2017 HL at 61/61.
+- refcheck: 0 wrong.
+- cardlint: clean.

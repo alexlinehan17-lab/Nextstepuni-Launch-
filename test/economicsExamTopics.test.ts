@@ -158,12 +158,15 @@ describe('Economics exam-topic registry', () => {
       // acronyms and Section B Q6(a) under formulas (study-aid headings), and
       // Section B Q4(b)-(c), Q5(a) and (c) and Q7(b) under national income
       // (savings, the budget and visible trade are filed under their own
-      // topics); each is recorded with the review's reason.
-      matchedAssociations: 779,
-      referenceAnomalyAssociations: 124,
+      // topics); each is recorded with the review's reason. The 2017 Higher
+      // review added three: Section A Q1 and Q9 under government intervention
+      // (public pay and third-level fees are fiscal policy) and Section B Q8(c)
+      // under topical questions.
+      matchedAssociations: 776,
+      referenceAnomalyAssociations: 127,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 702,
+      matchedQuestionTopicLinks: 699,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

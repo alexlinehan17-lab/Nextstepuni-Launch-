@@ -11827,6 +11827,316 @@
       "pages": [
         10
       ]
+    },
+    "econ-2017-hl-sa-q1": {
+      "pages": [
+        2
+      ]
+    },
+    "econ-2017-hl-sa-q2": {
+      "pages": [
+        2
+      ]
+    },
+    "econ-2017-hl-sa-q3-a": {
+      "pages": [
+        2
+      ]
+    },
+    "econ-2017-hl-sa-q3-b": {
+      "pages": [
+        2
+      ]
+    },
+    "econ-2017-hl-sa-q4": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2017-hl-sa-q5": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2017-hl-sa-q6-a": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2017-hl-sa-q6-b": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2017-hl-sa-q7-a": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2017-hl-sa-q7-b": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2017-hl-sa-q8": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2017-hl-sa-q9": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2017-hl-sb-q1-a": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2017-hl-sb-q1-b-i": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2017-hl-sb-q1-b-ii": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2017-hl-sb-q1-b-iii": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2017-hl-sb-q1-c-i": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2017-hl-sb-q1-c-ii": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2017-hl-sb-q2-a-i": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2017-hl-sb-q2-a-ii": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2017-hl-sb-q2-b-i": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2017-hl-sb-q2-b-ii": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2017-hl-sb-q2-c-i": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2017-hl-sb-q2-c-ii": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2017-hl-sb-q3-a-i": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q3-a-ii": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q3-a-iii": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q3-a-iv": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q3-b-i": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q3-b-ii": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q3-c-i": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q3-c-ii": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q4-a-i": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q4-a-ii": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q4-b-i": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q4-b-ii": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q4-c-i": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q4-c-ii": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2017-hl-sb-q5-a-i": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q5-a-ii": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q5-b-i": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q5-b-ii": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q5-c-i": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q5-c-ii": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q5-c-iii": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q6-a-i": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q6-a-ii": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q6-b-i": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q6-b-ii-good": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q6-b-ii-bad": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q6-b-iii": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q6-c-i": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q6-c-ii": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2017-hl-sb-q7-a": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2017-hl-sb-q7-b-i": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2017-hl-sb-q7-b-ii": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2017-hl-sb-q7-c": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2017-hl-sb-q8-a-i": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2017-hl-sb-q8-a-ii": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2017-hl-sb-q8-a-iii": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2017-hl-sb-q8-b": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2017-hl-sb-q8-c": {
+      "pages": [
+        8
+      ]
     }
   },
   "home-economics": {

@@ -139,6 +139,8 @@ HAND_CHECKED = {
     'econ-2018-ol-sb-q5-b-i',         # 2018 OL p8: "(i) Name each tax above." (four words)
     'econ-2018-ol-sb-q5-c-i',         # 2018 OL p8: "(i) Explain the term opportunity cost." (five words)
     'econ-2018-ol-sb-q7-a-i',         # 2018 OL p9: "(i) Explain the term open economy." (five words)
+    'econ-2017-hl-sb-q5-b-i',         # 2017 HL p7: "(i) Describe two trade protectionist measures." (five words)
+    'econ-2017-hl-sb-q7-b-i',         # 2017 HL p8: "(i) Explain the term privatisation." (four words)
 }
 
 
