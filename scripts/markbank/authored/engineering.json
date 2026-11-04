@@ -14909,7 +14909,7 @@
  },
  {
   "id": "eng-2024-hl-q3-c-ii",
-  "topicId": "eng-1-5",
+  "topicId": "eng-3-8",
   "conceptId": "aid-diagram-s-suitable-non-destructive",
   "level": "higher",
   "year": 2024,
@@ -15425,7 +15425,7 @@
  },
  {
   "id": "eng-2024-hl-q5-c-iii",
-  "topicId": "eng-3-8",
+  "topicId": "eng-1-3",
   "conceptId": "why-fcc-crystalline-structures-most-associated",
   "level": "higher",
   "year": 2024,
@@ -15739,7 +15739,7 @@
  },
  {
   "id": "eng-2024-hl-q7-a-ii",
-  "topicId": "eng-2-13",
+  "topicId": "eng-1-9",
   "conceptId": "aid-diagram-s-principle-operation-manufacturing",
   "level": "higher",
   "year": 2024,
@@ -15766,37 +15766,6 @@
    }
   ],
   "notes": "The scheme prints '8'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q7ai-art",
-  "questionFigureIncludesPrompt": false
- },
- {
-  "id": "eng-2024-hl-q7-a-iii",
-  "topicId": "eng-1-9",
-  "conceptId": "identify-suitable-polymer-additive-used-improve",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 HL Q7(a)(iii)",
-  "questionText": "Identify a suitable polymer additive which is used to improve the properties of the hose pipe for each of the following: Hose reel cover • increased flexibility • greater resistance to UV rays.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Plasticisers are added to improve the flexibility of the polymer material.",
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Stabilisers are used to help resist UV rays and the degrading effects of the environment.",
-    "marks": 3
-   }
-  ],
   "questionFigureKey": "engineering-2024-HL-paper-q7ai-art",
   "questionFigureIncludesPrompt": false
  },
@@ -16461,44 +16430,6 @@
   "questionFigureIncludesPrompt": false
  },
  {
-  "id": "eng-2024-hl-q9-b-ii",
-  "topicId": "eng-2-15",
-  "conceptId": "identify-mechanism-shown-opposite-suitable-use",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 HL Q9(b)(ii)",
-  "questionText": "Identify the mechanism shown opposite and give one suitable use for the mechanism.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "a positive, mechanical connection between rotating shafts, which are usually not parallel, but intersecting.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "used to transmit motion, power, or both.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "found on four-wheel drive (4WD), rear-wheel drive (RWD) and all-wheel drive (AWD) vehicles, agricultural machinery etc.",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '6 marks'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q9bii-art",
-  "questionFigureIncludesPrompt": false
- },
- {
   "id": "eng-2024-hl-q9-b-iii",
   "topicId": "eng-2-15",
   "conceptId": "advantages-using-helical-gears-over-spur",
@@ -16718,6 +16649,349 @@
    }
   ],
   "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2024-hl-q1-g",
+  "topicId": "eng-1-5",
+  "conceptId": "identify-reasons-selection-aluminium-manufacture-roof",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(g)",
+  "questionText": "Identify two reasons for the selection of aluminium to manufacture the roof bar shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Aluminium has a good strength-to-weight ratio, it will not rust, can be formed into the shape easily, etc.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '3 + 2'.",
+  "questionFigureKey": "engineering-2024-HL-paper-q1g-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-hl-q1-l",
+  "topicId": "eng-3-1",
+  "conceptId": "advantage-disadvantage-cordless-power-tools",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(l)",
+  "questionText": "Outline one advantage and one disadvantage of cordless power tools.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Offer greater flexibility and portability.",
+    "marks": 3,
+    "accepts": [
+     "Removes tripping hazard of power cords.",
+     "No need for a mains power source, etc."
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Limited battery life.",
+    "marks": 2,
+    "accepts": [
+     "Expensive to buy.",
+     "Corded tools are typically lighter than cordless tools, etc."
+    ]
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '3 + 2': any one advantage, then any one disadvantage."
+ },
+ {
+  "id": "eng-2024-hl-q1-m",
+  "topicId": "eng-2-15",
+  "conceptId": "solar-panels-may-be-tilted-optimise",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(m)",
+  "questionText": "Solar panels may be tilted to optimise the capture of solar energy. Suggest a suitable mechanism which could be used to tilt a solar panel.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Solar panel",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Tilting mechanism: screw might be automated and driven by a motor to raise and lower the top of the panel creating an adjustable tilt.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Panel mount. A light sensor tracking circuit can be used to drive the motor and tilt the panel for most effective operation.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints 'Suggested solution', 5 marks.",
+  "figureKey": "engineering-2024-HL-scheme-q1m-sol",
+  "questionFigureKey": "engineering-2024-HL-paper-q1m-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-hl-q3-b-i",
+  "topicId": "eng-3-8",
+  "conceptId": "using-graph-paper-supplied-plot-stress",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q3(b)(i)",
+  "questionText": "Using the graph paper supplied, plot the stress-strain diagram for the alloy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Using the graph paper supplied, plot the stress-strain diagram for the alloy.",
+    "marks": 10,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints 'Draw stress-strain graph', 10 marks.",
+  "figureKey": "engineering-2024-HL-scheme-q3bi-sol",
+  "questionFigureKey": "engineering-2024-HL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-hl-q3-b-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "calculate-young-s-modulus-elasticity-alloy",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q3(b)(ii)",
+  "questionText": "Calculate Young’s Modulus of Elasticity for the alloy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculate Young’s Modulus of Elasticity for the alloy.",
+    "marks": 4,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "figureKey": "engineering-2024-HL-scheme-q3bii-sol",
+  "questionFigureKey": "engineering-2024-HL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-hl-q5-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "draw-equilibrium-diagram-according-given-data",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q5(b)(i)",
+  "questionText": "Draw the equilibrium diagram according to the given data and label the liquidus and solidus lines.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the equilibrium diagram according to the given data and label the liquidus and solidus lines.",
+    "marks": 10,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "figureKey": "engineering-2024-HL-scheme-q5bi-sol",
+  "questionFigureKey": "engineering-2024-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-hl-q5-b-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "sketch-cooling-curve-alloy-30-metal",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q5(b)(ii)",
+  "questionText": "Sketch the cooling curve for the alloy with 30% metal B, referring to the solidification temperatures in the table above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sketch the cooling curve for the alloy with 30% metal B, referring to the solidification temperatures in the table above.",
+    "marks": 4,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "figureKey": "engineering-2024-HL-scheme-q5bii-sol",
+  "questionFigureKey": "engineering-2024-HL-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-hl-q6-a-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "aid-diagram-s-process-tungsten-inert",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q6(a)(ii)",
+  "questionText": "Describe, with the aid of a diagram(s), the process of tungsten inert gas (TIG) welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An arc is formed between the non-consumable tungsten electrode and the metal being welded. The inert gas shielded arc is used to flux the joint, argon or helium are typically used to prevent oxygen getting to the joint area. A filler metal (welding rod) is added manually to the weld pool when necessary. A high frequency generator provides a path for the welding current. Both AC and DC power can be used in TIG welding techniques. TIG welding is a highly skilled welding process and is generally a manual operation.",
+    "marks": 10
+   }
+  ],
+  "figureKey": "engineering-2024-HL-scheme-q6aii-sol",
+  "questionFigureKey": "engineering-2024-HL-paper-q6ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-hl-q6-b-iii",
+  "topicId": "eng-2-10",
+  "conceptId": "example-term-inert-gas-used-metal",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q6(b)(iii)",
+  "questionText": "Explain, with an example, the term inert gas as used in metal inert gas (MIG) welding.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An inert gas such as argon is used in MIG welding to protect the molten weld pool from atmospheric contaminants like nitrogen and hydrogen. Without shielding gas, the finished weld would be very weak and subject to porosity. The inert gas results in less toxic fumes compared to using a flux/coating, no slag is formed.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+ },
+ {
+  "id": "eng-2024-hl-q7-a-iii",
+  "topicId": "eng-1-9",
+  "conceptId": "identify-suitable-polymer-additive-used-improve",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q7(a)(iii)",
+  "questionText": "Identify a suitable polymer additive which is used to improve the properties of the hose pipe for each of the following: • increased flexibility • greater resistance to UV rays.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Plasticisers are added to improve the flexibility of the polymer material.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Stabilisers are used to help resist UV rays and the degrading effects of the environment.",
+    "marks": 3
+   }
+  ],
+  "questionFigureKey": "engineering-2024-HL-paper-q7ai-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-hl-q9-b-ii",
+  "topicId": "eng-2-15",
+  "conceptId": "identify-mechanism-shown-opposite-suitable-use",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q9(b)(ii)",
+  "questionText": "Identify the mechanism shown opposite and give one suitable use for the mechanism.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Universal Joint or Coupling,",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "a positive, mechanical connection between rotating shafts, which are usually not parallel, but intersecting.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "used to transmit motion, power, or both.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "found on four-wheel drive (4WD), rear-wheel drive (RWD) and all-wheel drive (AWD) vehicles, agricultural machinery etc.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'.",
+  "questionFigureKey": "engineering-2024-HL-paper-q9bii-art",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "eng-2024-ol-q1-a",

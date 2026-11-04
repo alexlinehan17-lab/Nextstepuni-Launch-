@@ -51724,5 +51724,121 @@
   "year": 2023,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-paper-q1g-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q1g-crop.png",
+  "md5": "766f88c6567ec054207463b94038b76f",
+  "alt": "The table or diagram printed with 2024 HL Q1(g), as the State Examinations Commission set it. It reads: Roof bar.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q1(g)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-paper-q1m-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q1m-crop.png",
+  "md5": "58e5c112cb44a1d86b3b165e4f223b42",
+  "alt": "The table or diagram printed with 2024 HL Q1(m), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q1(m)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-paper-q3b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q3b-crop.png",
+  "md5": "f39fc8f651a132008beadc23988dda53",
+  "alt": "The table or diagram printed with 2024 HL Q3(b), as the State Examinations Commission set it. It reads: (b) The results shown were obtained from a tensile test on an aluminum alloy specimen. Stress (N/mm2) 45 90 135 200 275 308 335 345 340 Strain (×1000) 0.50 1.00 1.50 2.25 3.25 4.00 5.00 6.50 7.50.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q3(b)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-paper-q5b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q5b-crop.png",
+  "md5": "a13b19a089db48c35a0f6e9e440463a7",
+  "alt": "The table or diagram printed with 2024 HL Q5(b), as the State Examinations Commission set it. It reads: (b) The table shows the solidification temperatures for various alloys of metal A and metal B. % of metal B in alloy 0 10 20 30 40 50 60 70 80 90 100 Start of solidification (°C) 270 332 400 445 492 524 552 580 603 618 630 End of solidification (°C) 270 272 280 300 318 340 368 404 449 510 630.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q5(b)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-scheme-q1m-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-scheme-q1m-sol.png",
+  "md5": "5b9e0ffab699cf10d4e0bc2a50fe44a1",
+  "alt": "The marking scheme's printed answer for 2024 HL Q1(m), as the State Examinations Commission set it. It reads: TilƟng a solar panel: Suggested soluƟon:.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q1(m)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-scheme-q3bi-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-scheme-q3bi-sol.png",
+  "md5": "651e64f8e92f2d6411492091c8cdf966",
+  "alt": "The marking scheme's printed answer for 2024 HL Q3(b)(i), as the State Examinations Commission set it. It reads: 400 (N/mm2) 300 Stress 200 100 0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 Strain (× 1000).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q3(b)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-scheme-q3bii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-scheme-q3bii-sol.png",
+  "md5": "bb67d9560e4b03cf04a300551939b0b5",
+  "alt": "The marking scheme's printed answer for 2024 HL Q3(b)(ii), as the State Examinations Commission set it. It reads: stress 135 (ii) Young’s Modulus of ElasƟcity = = = 90 kN/mm² strain 1.50.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q3(b)(ii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-scheme-q5bi-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-scheme-q5bi-sol.png",
+  "md5": "a34991cbeaa368d24960a7277442a869",
+  "alt": "The marking scheme's printed answer for 2024 HL Q5(b)(i), as the State Examinations Commission set it. It reads: 700 ⁰C 600 Liquidus line 500 Temperature 400 300 Solidus line 200 100 0 10 20 30 40 50 60 70 80 90 100 % Metal B.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q5(b)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-scheme-q5bii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-scheme-q5bii-sol.png",
+  "md5": "01b103b9ce3ede6ece2d853bbce8f597",
+  "alt": "The marking scheme's printed answer for 2024 HL Q5(b)(ii), as the State Examinations Commission set it. It reads: Start of solidiﬁcaƟon 445⁰C °C End of solidiﬁcaƟon 300⁰C Temperature Time.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q5(b)(ii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-scheme-q6aii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-scheme-q6aii-sol.png",
+  "md5": "56ca754bc8dccbb2c0d7564006bc0d36",
+  "alt": "The marking scheme's printed answer for 2024 HL Q6(a)(ii), as the State Examinations Commission set it. It reads: Fixed tungsten electrode Inert gas Tube Gas Hand-held welding rod Arc Gas Shielding Molten weld pool Power source.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q6(a)(ii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
  }
 }
