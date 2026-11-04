@@ -85,7 +85,7 @@ YEARS = (2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('hl', 'ol')
 # The sittings carded, each added whole as its papers are read and reviewed.
 SITTINGS = [(year, level) for year in YEARS for level in LEVELS
-            if year <= 2025 or (year, level) in set()]
+            if year <= 2025 or (year, level) in {(2026, 'hl')}]
 FIELD_KEYS = ('lm', 'em')
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
@@ -115,6 +115,8 @@ ESSAY_PAPERS = {
     (2025, 'hl', 'lm'),
     (2025, 'ol', 'em'),
     (2025, 'ol', 'lm'),
+    (2026, 'hl', 'em'),
+    (2026, 'hl', 'lm'),
 }
 
 # NextStepUni's own guidance under the panel, never presented as the SEC's,
