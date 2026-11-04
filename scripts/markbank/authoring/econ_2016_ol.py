@@ -107,7 +107,16 @@ add('sa-q4-c', '1-5', 'average-cost', ref('A', 4, '(c)'), H.q(3, 'Cost of produc
     stem=q4, **A)
 
 # Q5 ─ economists and their ideas
-add('sa-q5', '0-0', 'economists-and-their-ideas', ref('A', 5), H.q(3, 'Match the economic ideas listed below with the related economist:', ' Economic Idea'),
+# The two printed lists follow the ask, each column read down as printed (the text layer
+# interleaves them row by row, which would set each idea beside an economist it is not).
+q5_ideas = [H.q(3, a, b) for a, b in (('A. The Multiplier', ' 1. Karl'), ('B. Law of Comparative', ' 2. Adam'),
+                                      ('C. Laissez Faire', ' 3. John'), ('D. Worker exploitation', ' 4. David'))]
+q5_who = [H.q(3, a, b) for a, b in (('1. Karl Marx', ' B. Law'), ('2. Adam Smith', ' C. Laissez'),
+                                    ('3. John Maynard Keynes', ' D. Worker'), ('4. David Ricardo', ' Economic Idea A'))]
+q5_idea_h, q5_who_h = H.q(3, 'Economic Idea Economist', ' A. The').rsplit(' ', 1)
+add('sa-q5', '0-0', 'economists-and-their-ideas', ref('A', 5),
+    f"{H.q(3, 'Match the economic ideas listed below with the related economist:', ' Economic Idea')} "
+    f"{q5_idea_h}: {' '.join(q5_ideas)} {q5_who_h}: {' '.join(q5_who)}",
     '8 + 4 + 2 + 2', 16,
     [anyN('r-1', 'Each idea matched', 16, 4, 8,
           [f'{H.traced(idea)} — {H.traced(who)}' for idea, who in (

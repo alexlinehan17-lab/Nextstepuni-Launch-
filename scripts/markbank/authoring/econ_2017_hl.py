@@ -53,7 +53,10 @@ ticks = [('TRUE', 'The labour force includes part-time workers.'),
          ('FALSE', 'Quasi-rent is economic rent earned by a factor of production in the long run.'),
          ('TRUE', 'The market value of an existing bond rises if the rate of interest falls.'),
          ('TRUE', 'Capital Widening refers to the situation where the capital stock is increasing at')]
-add('sa-q2', '2-1', 'labour-and-capital-true-or-false', ref('A', 2), H.q(2, 'Indicate by means of a tick', ' STATEMENT'),
+add('sa-q2', '2-1', 'labour-and-capital-true-or-false', ref('A', 2),
+    # The printed statements follow the ask, from the paper's own table rows: set at phone
+    # width the table's text falls near 8 px, and the card cannot be answered without them.
+    f"{H.q(2, 'Indicate by means of a tick', ' STATEMENT')} {H.q(2, 'The labour force includes part', ' (16 marks)')}",
     '6 + 4 + 3 + 3', 16,
     [anyN('r-1', 'Each statement ticked correctly', 16, 4, 6,
           [f"{H.traced(t)} — {H.traced(st)}" + (' ' + H.traced('the same rate as the labour force.') if st.endswith('increasing at') else '')

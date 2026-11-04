@@ -235,7 +235,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2016 Ordinary Level — © State Examinations Commission.",
     id: "econ-2016-ol-sa-q5", topicId: "economics-0-0", conceptId: "economists-and-their-ideas",
     section: "A", questionRef: "2016 OL Section A Q5",
-    questionText: "Match the economic ideas listed below with the related economist:",
+    questionText: "Match the economic ideas listed below with the related economist: Economic Idea: A. The Multiplier B. Law of Comparative Advantage C. Laissez Faire D. Worker exploitation in a capitalist system. Economist: 1. Karl Marx 2. Adam Smith 3. John Maynard Keynes 4. David Ricardo",
     tariffModel: {"kind":"fixed","notation":"8 + 4 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Each idea matched", marks: 16, contextNote: "All four (the scheme’s answer row: A 3, B 4, C 2, D 1): the first correct response 8 marks, the 2nd 4, the 3rd and 4th 2 each.", openList: true, group: {"claimMax":4,"perOption":8,"options":["The Multiplier — John Maynard Keynes","Law of Comparative Advantage — David Ricardo","Laissez Faire — Adam Smith","Worker exploitation in a capitalist system. — Karl Marx"],"perOptionSteps":[8,4,2,2]} },
@@ -2108,7 +2108,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2017 Ordinary Level — © State Examinations Commission.",
     id: "econ-2017-ol-sa-q1", topicId: "economics-3-1", conceptId: "matching-taxes-to-explanations",
     section: "A", questionRef: "2017 OL Section A Q1",
-    questionText: "In relation to the following taxes, match the tax with its appropriate explanation. (One explanation has no match.)",
+    questionText: "In relation to the following taxes, match the tax with its appropriate explanation. (One explanation has no match.) Tax: A VAT B DIRT C PAYE D Customs duty Explanation: 1 A tax on income. 2 A tax on goods imported into a country. 3 A tax on the profit made on disposal of an asset. 4 A tax on interest earned on deposits in financial institutions. 5 A tax on purchases of goods and services.",
     tariffModel: {"kind":"fixed","notation":"4 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
     rows: [
     { id: "r-a", kind: "point", verbatim: "A VAT — 5 A tax on purchases and services.", marks: 4, contextNote: "VAT, 4 marks: the scheme’s answer row puts 5 under A.", openList: true },

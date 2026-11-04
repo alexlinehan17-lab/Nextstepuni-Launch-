@@ -56,7 +56,16 @@ def unpriced(pairs):
 
 # Q1 ─ matching taxes
 add('sa-q1', '3-1', 'matching-taxes-to-explanations', ref('A', 1),
-    H.q(2, 'In relation to the following taxes, match the tax', ' Tax Explanation'), '4 x 4', 16,
+    # The two printed columns follow the ask, each read down as printed (the text layer
+    # interleaves them row by row, which would set each tax beside a wrong explanation).
+    ' '.join([H.q(2, 'In relation to the following taxes, match the tax', ' Tax Explanation'),
+              H.q(2, 'Tax Explanation', ' A VAT').split()[0] + ':',
+              *[H.q(2, a, b) for a, b in (('A VAT', ' 1 A tax'), ('B DIRT', ' 2 A tax'), ('C PAYE', ' 3 A tax'),
+                                          ('D Customs duty', ' 4 A tax'))],
+              H.q(2, 'Tax Explanation', ' A VAT').split()[1] + ':',
+              *[H.q(2, a, b) for a, b in (('1 A tax on income.', ' B DIRT'), ('2 A tax on goods imported', ' C PAYE'),
+                                          ('3 A tax on the profit', ' D Customs'), ('4 A tax on interest', ' 5 A tax'),
+                                          ('5 A tax on purchases', ' TAX A B'))]]), '4 x 4', 16,
     [point(f'r-{letter.lower()}', f'{letter} {H.traced(tax)} — {H.traced(expl)}', 4, f'{tax}, 4 marks: the scheme’s answer row puts {expl[0]} under {letter}.')
      for letter, tax, expl in (('A', 'VAT', '5 A tax on purchases and services.'), ('B', 'DIRT', '4 A tax on interest earned on deposits in financial institutions.'),
                                ('C', 'PAYE', '1 A tax on income.'), ('D', 'Customs duty', '2 A tax on goods imported into a country.'))],

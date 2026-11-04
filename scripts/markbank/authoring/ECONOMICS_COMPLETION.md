@@ -1967,3 +1967,21 @@ Checks:
 - reconcile: 1,415/2,197, with 2016 OL at 82/82.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## Batch 2 browser check: printed statements in four question texts (lane, 2026-11-04)
+
+The batch-2 phone check (390 px) showed four cards whose items appear only in a
+wide printed table, set at phone width with text near 7.6-8.3 px. Each card's
+ask cannot be answered without those items:
+- 2017 HL Section A Q2, true or false;
+- 2018 HL Section A Q5, true or false;
+- 2017 OL Section A Q1, taxes to explanations;
+- 2016 OL Section A Q5, ideas to economists.
+
+Each now carries the paper's printed items after its ask, sliced from the
+paper's text layer, as 2017 OL A Q4 and 2016 OL A Q2 already did. The matching
+tables are set column by column, as the page prints them. The text layer
+interleaves the two columns row by row, which would set each tax or idea
+beside an answer it is not. The table crop stays beside the typed text. Only
+these four cards' questionText changed. Every other card is byte-identical,
+and refcheck places all four.

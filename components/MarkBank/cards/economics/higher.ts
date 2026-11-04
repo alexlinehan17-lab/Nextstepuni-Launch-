@@ -1683,7 +1683,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2017 Higher Level — © State Examinations Commission.",
     id: "econ-2017-hl-sa-q2", topicId: "economics-2-1", conceptId: "labour-and-capital-true-or-false",
     section: "A", questionRef: "2017 HL Section A Q2",
-    questionText: "Indicate by means of a tick (✓) which of the following statements is TRUE or FALSE.",
+    questionText: "Indicate by means of a tick (✓) which of the following statements is TRUE or FALSE. The labour force includes part‐time workers. Quasi‐rent is economic rent earned by a factor of production in the long run. The market value of an existing bond rises if the rate of interest falls. Capital Widening refers to the situation where the capital stock is increasing at the same rate as the labour force.",
     tariffModel: {"kind":"fixed","notation":"6 + 4 + 3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Each statement ticked correctly", marks: 16, contextNote: "All four: the 1st correct response 6 marks, the 2nd 4, the 3rd and 4th 3 each. The completed table is shown with the answer.", openList: true, group: {"claimMax":4,"perOption":6,"options":["TRUE — The labour force includes part-time workers.","FALSE — Quasi-rent is economic rent earned by a factor of production in the long run.","TRUE — The market value of an existing bond rises if the rate of interest falls.","TRUE — Capital Widening refers to the situation where the capital stock is increasing at the same rate as the labour force."],"perOptionSteps":[6,4,3,3]} },
@@ -3542,7 +3542,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2018 Higher Level — © State Examinations Commission.",
     id: "econ-2018-hl-sa-q5", topicId: "economics-3-0", conceptId: "national-income-true-or-false",
     section: "A", questionRef: "2018 HL Section A Q5",
-    questionText: "Read each statement below and indicate if the statement is TRUE or FALSE. [Tick (✓) the correct box.]",
+    questionText: "Read each statement below and indicate if the statement is TRUE or FALSE. [Tick (✓) the correct box.] ‘Double counting’ could occur when economic activity is measured using the expenditure method. Exports represent an injection into the circular flow of income. Gross Domestic Product (GDP) includes a provision for depreciation. Primary school teacher salaries are categorised as transfer payments in Ireland.",
     tariffModel: {"kind":"fixed","notation":"2 x 6, 2 x 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Each statement ticked correctly", marks: 16, contextNote: "All four: the first two correct 6 marks each, the other two 2 each. The completed table is shown with the answer.", openList: true, group: {"claimMax":4,"perOption":6,"options":["FALSE — ‘Double counting’ could occur when economic activity is measured using the expenditure method.","TRUE — Exports represent an injection into the circular flow of income.","FALSE — Gross Domestic Product (GDP) includes a provision for depreciation.","FALSE — Primary school teacher salaries are categorised as transfer payments in Ireland."],"perOptionSteps":[6,6,2,2]} },

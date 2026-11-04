@@ -82,7 +82,10 @@ statements = [('FALSE', '‘Double counting’ could occur when economic activit
               ('TRUE', 'Exports represent an injection into the circular flow of', 'Gross Domestic'),
               ('FALSE', 'Gross Domestic Product (GDP) includes a provision for', 'Primary school'),
               ('FALSE', 'Primary school teacher salaries are categorised as', '6 State and explain')]
-add('sa-q5', '3-0', 'national-income-true-or-false', ref('A', 5), H.q(3, 'Read each statement below', ' STATEMENT'),
+add('sa-q5', '3-0', 'national-income-true-or-false', ref('A', 5),
+    # The printed statements follow the ask, from the paper's own table rows: set at phone
+    # width the table's text falls near 8 px, and the card cannot be answered without them.
+    f"{H.q(3, 'Read each statement below', ' STATEMENT')} {H.q(3, '‘Double counting’ could occur', ' (16 marks)')}",
     '2 x 6, 2 x 2', 16,
     [anyN('r-1', 'Each statement ticked correctly', 16, 4, 6,
           [f"{H.traced(tick)} — {H.opt(a, b).replace(' ✓', '').replace('✓', '').strip()}" for tick, a, b in statements],
