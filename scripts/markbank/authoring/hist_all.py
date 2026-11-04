@@ -146,8 +146,19 @@ PAPERS = sorted(ESSAY_PAPERS, key=lambda p: (p[0], p[1], FIELD_KEYS.index(p[2]))
 # Section 3 unit. The answers ("Universal grief", "About a million in debt",
 # "ONE achievement of Philip II as king of Spain") are the paper's Topic 2
 # questions on the Venetian ambassador's report on the death of Philip II.
+# 2016 repeats the Early Modern slip at both levels and adds one in Later
+# Modern. Higher Early Modern's Europe Topic 2 essays sit under Topic 1's
+# title (and its number, which hist_scheme renumbers); their NOTE asks for
+# "strengths + weaknesses", as the paper's Q1 does of Spain under Philip II.
+# Ordinary Early Modern's Topic 2 answers ("Duke of Sidonia", the Armada) are
+# headed with Topic 1's title. Ordinary Later Modern's Ireland Topic 3 answers
+# (Kathleen Lynn: Liberty Hall, Chief Medical Officer, the Easter Rising) are
+# headed with Topic 4's title, "The Irish Diaspora, 1840-1966".
 SCHEME_TITLE_MISPRINTS = {
     (2017, 'ol', 'em', '3 Topic 2'): ('Europe from Renaissance to Reformation, 1492-1567', 'Philip II'),
+    (2016, 'hl', 'em', '3 Topic 2'): ('Europe from Renaissance to Reformation, 1492-1567', 'strengths'),
+    (2016, 'ol', 'em', '3 Topic 2'): ('Europe from Renaissance to Reformation, 1492-1567', 'Sidonia'),
+    (2016, 'ol', 'lm', '2 Topic 3'): ('The Irish Diaspora, 1840-1966', 'Easter Rising'),
 }
 
 # NextStepUni's own guidance under the panel, never presented as the SEC's,
@@ -392,8 +403,8 @@ TARIFF_WORDING = re.compile(r'^(?:ONE|TWO|THREE|[Oo]ne valid|[Tt]wo valid|[Aa]ny
 
 
 def split_card(P, year, level, field, key, ask, section, topic_id, ref):
-    """A documents part the scheme prices component by component, answering
-    each: one row per component at its printed marks (hist_scheme
+    """A part the scheme prices component by component, answering each: one
+    row per component at its printed marks (hist_scheme
     `_answered_split`). A component answered under its own line keeps that
     line, price and all, as the row's note."""
     question = P.asks[key]
@@ -421,10 +432,17 @@ def split_card(P, year, level, field, key, ask, section, topic_id, ref):
                   f'{ask.notation!r} for this ask: each component at its '
                   f'printed marks.'),
     }
-    if P.case_title:
-        card['stem'] = f'Case study: {P.case_title}'
-    card['sourceMaterial'] = source_material(
-        P, year, level, field, '1', P.document_pages, 'The documents', 'OFFICIAL DOCUMENTS')
+    unit = key[0]
+    stem = f'Case study: {P.case_title}' if unit == '1' and P.case_title else P.stems.get(unit)
+    if stem and len(stem) >= 20:
+        card['stem'] = stem
+    if unit == '1':
+        card['sourceMaterial'] = source_material(
+            P, year, level, field, '1', P.document_pages, 'The documents', 'OFFICIAL DOCUMENTS')
+    else:
+        # A Part A answer priced component by component (2016 Ordinary A4).
+        card['sourceMaterial'] = source_material(
+            P, year, level, field, unit, [P.unit_pages[unit]], 'The extract', 'OFFICIAL EXTRACT')
     return card
 
 
@@ -484,14 +502,18 @@ def build():
 
                 # --- Law 4, join one: the topic title, on both documents.
                 scheme_titles = [(u, bag(t))
-                                 for u, t in S.topic_titles.items()]
+                                 for u, t in S.topic_titles.items()
+                                 if (year, level, field, u) not in SCHEME_TITLE_MISPRINTS]
                 for unit, title in sorted(P.topic_titles.items()):
                     misprint = SCHEME_TITLE_MISPRINTS.get((year, level, field, unit))
                     if misprint:
                         printed, word = misprint
-                        own_text = ' '.join(v for k, v in P.asks.items() if k[0].startswith(f'{unit} '))
-                        answers = ' '.join(p for a in S.asks if a.key[0].startswith(f'{unit} ')
-                                           for _l, p, _n in a.points)
+                        own_text = ' '.join(v for k, v in P.asks.items()
+                                    if k[0] == unit or k[0].startswith(f'{unit} '))
+                        scheme_asks = [a for a in S.asks
+                                       if a.key[0] == unit or a.key[0].startswith(f'{unit} ')]
+                        answers = ' '.join([p for a in scheme_asks for _l, p, _n in a.points]
+                                           + [a.note or '' for a in scheme_asks])
                         if S.topic_titles.get(unit) != printed or word not in own_text or word not in answers:
                             refuse('a recorded scheme title misprint no longer reads as recorded',
                                    f'{year} {level} {field} {unit}')

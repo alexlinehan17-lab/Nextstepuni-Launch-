@@ -41,6 +41,10 @@ import re
 import sys
 
 INLINE = re.compile(r'\s*\(\s*(\d+)\s*[Mm]\s*\)')
+# The same price with its "M" dropped by the SEC: "Parnell (2M) Davitt (2M)
+# Croke (2)" (2016 Ordinary). Read only beside at least one full "(nM)" price
+# in the same answer, and only when the prices then add up to the tariff.
+INLINE_LOOSE = re.compile(r'\s*\(\s*(\d+)\s*[Mm]?\s*\)')
 PAIR = re.compile(r'\s*\(\s*(\d+)\s*[Mm]\s*\+\s*(\d+)\s*[Mm]\s*\)')
 DANGLING = re.compile(r'\s*(\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=)\s*$', re.I)
 JOINER = re.compile(r'^(?:and/or|and|with|plus|or|&)\b\s*', re.I)
@@ -51,7 +55,10 @@ PARTIAL = re.compile(r'^(?P<head>.*\S)\s*\((?P<note>[^()]*?=\s*(?P<n>\d+)\s*[Mm]
 # "Chapel bell/convent chimes/organ (any two for 3m + 3m)": the scheme's
 # alternatives, any two of which earn 3m each. hist_scheme has already lifted
 # the bracket onto the row's note.
-ANY_OF_NOTE = re.compile(r'^\((any (one|two|three))(?: for)?\s*(\d+)m(?:\s*\+\s*(\d+)m)*\)$', re.I)
+# ... and "To watch over everyone/ ... / To report to ministers if necessary Any
+# TWO @ 4M" (2016 Ordinary Q1(a)), the price per alternative, unbracketed.
+ANY_OF_NOTE = re.compile(r'^(?:\((any (one|two|three))(?: for)?\s*(\d+)m(?:\s*\+\s*(\d+)m)*\)'
+                         r'|(Any (?:ONE|TWO|THREE)) @ (\d+)M)$', re.I)
 WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4}
 
 
@@ -104,14 +111,21 @@ def split_priced(card):
 
     any_of = ANY_OF_NOTE.match(row.get('contextNote') or '')
     if any_of:
-        count = WORDS[any_of.group(2).lower()]
-        per = int(any_of.group(3))
+        if any_of.group(1):
+            lead, count, per = any_of.group(1), WORDS[any_of.group(2).lower()], int(any_of.group(3))
+        else:
+            lead = any_of.group(5)
+            count, per = WORDS[lead.split()[1].lower()], int(any_of.group(6))
         options = [tidy(x) for x in text.split('/') if tidy(x)]
         if count * per == total and len(options) > count:
-            rows[:] = [{'id': row['id'], 'kind': 'anyN', 'verbatim': any_of.group(1), 'marks': None,
+            rows[:] = [{'id': row['id'], 'kind': 'anyN', 'verbatim': lead, 'marks': None,
                         'group': {'claimMax': count, 'perOption': per, 'options': options}}]
             return card
     tokens = list(INLINE.finditer(text))
+    loose = list(INLINE_LOOSE.finditer(text))
+    if (tokens and len(loose) > len(tokens) and sum(int(t.group(1)) for t in tokens) < total
+            and sum(int(t.group(1)) for t in loose) == total):
+        tokens = loose
     partial = PARTIAL.match(text)
     if not tokens and partial and 0 < int(partial.group('n')) < total:
         rows[:] = [{'id': row['id'], 'kind': 'criterion', 'verbatim': tidy(partial.group('head')),

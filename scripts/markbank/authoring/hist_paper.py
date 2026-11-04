@@ -109,7 +109,7 @@ FURNITURE = re.compile(
     # Modern, Columbus's log) was dropped as furniture. A date line names June
     # and carries no sentence of its own.
     r'|(?:Monday|Tuesday|Wednesday|Thursday|Friday)\b(?=[^.]*\b(?:JUNE|June)\b)(?![^.]*\.\s+[A-Z])'
-    r'|\d{4}\.\s*M\d+|\d{4}L\d+|Page \d+$|Page \d+ of \d+$|\d{1,3}$)', re.I)
+    r'|\d{4}\.\s*M\d+|\d{4}L\d+|Page \d+$|Page \d+ of \d+(?:\s*\[Turn over\]?)?$|\d{1,3}$)', re.I)
 
 # Where the examination material stops.
 END_OF_MATERIAL = re.compile(r'^(?:Copyright notice|Acknowledgements?)\b', re.I)
@@ -119,8 +119,9 @@ SECTION = re.compile(r'^SECTION\s+(\d)\s*:', re.I)
 # Early Modern paper heads its documents question "Europe: Topic 1" — the same
 # area, abbreviated — and the full-name-only pattern left that paper's DBQ with
 # no case-study topic at all.
+# 2016 Ordinary Later Modern prints "Ireland: Topic5", with no space.
 TOPIC = re.compile(
-    r'^(Ireland|Europe(?: and the wider world)?)\s*:\s*Topic\s+(\d)\s*$', re.I)
+    r'^(Ireland|Europe(?: and the wider world)?)\s*:\s*Topic\s*(\d)\s*$', re.I)
 # "A (30 marks)" heads an Ordinary topic's first priced part. 2021 Ordinary
 # Early Modern prints "B 30 marks)" for Europe Topic 1 — the opening bracket is
 # missing from the SEC's own page. It is a MISPRINT, recorded below rather than

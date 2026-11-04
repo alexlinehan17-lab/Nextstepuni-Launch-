@@ -92830,8 +92830,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Oil paintings (3M) and water colours (3)",
-    "marks": 6
+    "verbatim": "Oil paintings",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "water colours",
+    "marks": 3
    }
   ],
   "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",

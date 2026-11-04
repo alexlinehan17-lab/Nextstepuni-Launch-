@@ -79,7 +79,18 @@ SEC_HEAD = re.compile(r'^SECTION\s+([23])\s*:')
 # "Ireland: Topic 1", "Ireland:Topic 6", "Ireland:  Topic 2" — the SEC's own
 # spacing varies and one year drops the space after the colon entirely.
 TOPIC_HEAD = re.compile(
-    r'^(Ireland|Europe and the wider world)\s*:\s*Topic\s+(\d)\b', re.I)
+    r'^(Ireland|Europe and the wider world)\s*:\s*Topic\s*(\d)\b', re.I)
+# A topic NUMBER the scheme misprints, keyed (year, level, field): {(section,
+# printed number): (the paper's number, a phrase the first essay's NOTE must
+# carry)}. 2016 Higher Early Modern sets Europe Topics 2-6 (Topic 1 is the
+# documents question, Calvin's Geneva); its scheme heads the first block
+# "Europe and the wider world: Topic1" with Topic 1's title, over the four
+# essays of the paper's Topic 2. Their NOTE is "TWO elements (strengths +
+# weaknesses)", and the paper's Topic 2 Q1 asks "What were the strengths and
+# weaknesses of Spain under Philip II?".
+SCHEME_TOPIC_MISPRINTS = {
+    (2016, 'hl', 'em'): {('3', 1): (2, 'strengths + weaknesses')},
+}
 # A Higher Level essay: the whole scheme entry for a 100-mark question.
 ESSAY = re.compile(r'^(\d)\.\s+Max\.?\s*CM\s*=?\s*(\d+)\s+Max\.?\s*OE\s*=?\s*(\d+)')
 # The note the scheme prints under an essay's ceiling: "NOTE: TWO elements
@@ -110,19 +121,47 @@ COMPONENT = re.compile(r'^([A-Z][^=]{0,80}?)\s*=\s*(\d{1,3})M$')
 SPLIT_TOTAL = re.compile(r'(?:^|\s)((?:\d{1,3})M(?:\s*\+\s*\d{1,3}M)+)\s+(\d{1,3})M$')
 
 
+# The same split closed by the part's printed tariff alone, each component its
+# own answer: "A4. No = 3M" / "It had official observers from other Christian
+# (non-Catholic) churches = 3M (6)" (2016 Ordinary Later Modern).
+SPLIT_TARIFF = re.compile(r'\s*\((\d{1,3})\)$')
+# ... or by the part's marks printed bare after the last component: "Huge
+# burning urns; flood-lighting by hundreds of powerful searchlights = 3M" /
+# "The mystical quality of the ritual was exaggerated; lights played eerily
+# against the sky = 2M 5M" (2016 Higher Q1(d)).
+SPLIT_BARE_TOTAL = re.compile(r'(?<=M)\s+(\d{1,3})M$')
+INLINE_COMPONENT = re.compile(r'\s*([A-Z][^=]*?)\s*=\s*(\d{1,3})M\b')
+
+
 def _answered_split(text):
     """(total, [(component, marks, answer or None), ...]) or None."""
     lines = [' '.join(t.split()) for t in text]
     if not lines:
         return None
     m = SPLIT_TOTAL.search(lines[-1])
-    if not m:
-        return None
-    terms = [int(x) for x in re.findall(r'(\d{1,3})M', m.group(1))]
-    total = int(m.group(2))
-    if sum(terms) != total:
+    if m:
+        terms = [int(x) for x in re.findall(r'(\d{1,3})M', m.group(1))]
+        total = int(m.group(2))
+    else:
+        m = SPLIT_TARIFF.search(lines[-1]) or SPLIT_BARE_TOTAL.search(lines[-1])
+        if not m:
+            return None
+        total, terms = int(m.group(1)), None
+    if terms is not None and sum(terms) != total:
         return None
     last = lines[-1][:m.start()].strip()
+    if terms is None:
+        # Closed by the tariff alone. The components run on across the printed
+        # lines ("No = 3M It had official observers from other Christian
+        # (non-Catholic)" / "churches = 3M (6)"), so they are read off the
+        # whole entry, and must account for every word of it.
+        joined = ' '.join(lines[:-1] + ([last] if last else []))
+        parts = [(name.strip(), int(n)) for name, n in INLINE_COMPONENT.findall(joined)]
+        rebuilt = ' '.join(f'{name} = {n}M' for name, n in parts)
+        if (len(parts) < 2 or ' '.join(rebuilt.split()) != ' '.join(joined.split())
+                or sum(n for _name, n in parts) != total):
+            return None
+        return total, [(name, n, None) for name, n in parts]
     comps = []
     for line in lines[:-1] + ([last] if last else []):
         c = COMPONENT.match(line)
@@ -136,6 +175,80 @@ def _answered_split(text):
         return None
     return total, [(name, marks, ' '.join(answer) or None)
                    for name, marks, answer in comps]
+
+
+# PRICED STATEMENTS, the older Ordinary comparison part (2013-2016): the
+# scheme states the answer and prices it statement by statement, sets its
+# instructions among them, and closes on the part's split and maximum.
+#     "Yes. Ellen Wilkinson took part in the march according to both Document
+#     A and Document B = 2M Must be clearly stated" / "Document A is from a
+#     book ... after their 8.45 am parade = 4M" / "Document B states ... = 4M"
+#     / "Mark quality of explanation on its merits." / "Reference to both
+#     documents = 4M + 4M Max = 10M"                      (2016 Q2(a))
+# Where the documents' own points carry no price of their own, the closing
+# split prices them, one term to a document:
+#     "Document B = 2M" / "Document A describes only a typical morning ..." /
+#     "Document B gives background information ..." / ... / "Reference to
+#     both documents = 4M + 4M Max = 10M"                 (2016 Q2(b))
+# Recognised only when every priced statement and document point adds up to
+# the printed maximum; anything else is read as before.
+PS_CLOSING = re.compile(
+    r'(?:(?P<split>[A-Z][^=.]{0,60}?=\s*\d+M(?:\s*\+\s*\d+M)+)\s*)?Max\s*=\s*(?P<total>\d+)M\s*$')
+PS_INSTRUCTION = re.compile(
+    r'(?:Mark quality of explanation on its merits\.|Both documents must be mentioned\.'
+    r'|Must be clearly stated\.?|Expect and allow overlap[^.]*\.|\(If candidate[^)]*\)'
+    r'|Document [AB] is not acceptable as an answer because[^.]*\.)')
+PS_DOCUMENT_POINT = re.compile(r'(?:^|(?<=[.!?\u201d"]))\s+(?=Document [AB]\b)')
+
+
+def _priced_statements(text):
+    """(total, [(statement, marks, note or None), ...]) or None."""
+    joined = ' '.join(' '.join(text).split())
+    closing = PS_CLOSING.search(joined)
+    if not closing or '= ' not in joined[:closing.start()]:
+        return None
+    total = int(closing.group('total'))
+    split = ([int(x) for x in re.findall(r'(\d+)M', closing.group('split'))]
+             if closing.group('split') else None)
+    pieces = re.split(r'\s*=\s*(\d{1,2})M\b', joined[:closing.start()])
+    rows = []
+    for i in range(0, len(pieces) - 1, 2):
+        segment, marks = pieces[i], int(pieces[i + 1])
+        # An instruction that opens a segment belongs to the statement before.
+        while True:
+            m = PS_INSTRUCTION.match(segment.strip())
+            if not m or not rows:
+                break
+            rows[-1][2].append(m.group(0))
+            segment = segment.strip()[m.end():]
+        notes = PS_INSTRUCTION.findall(segment)
+        statement = ' '.join(PS_INSTRUCTION.sub(' ', segment).split())
+        if not statement or not re.match(r'[A-Z]', statement):
+            return None
+        rows.append([statement, marks, notes])
+    rest = pieces[-1]
+    rest_notes = PS_INSTRUCTION.findall(rest)
+    rest = ' '.join(PS_INSTRUCTION.sub(' ', rest).split())
+    if not rows:
+        return None
+    priced = sum(r[1] for r in rows)
+    if rest:
+        points = [p.strip() for p in PS_DOCUMENT_POINT.split(rest) if p.strip()]
+        if (not split or len(points) != len(split) or priced + sum(split) != total
+                or not all(p.startswith('Document ') for p in points)):
+            return None
+        rows += [[p, n, []] for p, n in zip(points, split)]
+    elif priced != total:
+        return None
+    if not any(len(statement.split()) >= 5 for statement, _m, _n in rows):
+        # Labels only ("One opinion = 5M" / "Explanation = 5M" / "Max = 10M",
+        # 2021 Q3(b)): the scheme prices an answer it does not print, which
+        # hist_all cards as such.
+        return None
+    rows[-1][2].extend(rest_notes)
+    rows[-1][2].append(' '.join(closing.group(0).split()))
+    return total, [(statement, marks, ' — '.join(notes) or None)
+                   for statement, marks, notes in rows]
 
 
 # An Ordinary Level Part A answer.
@@ -567,7 +680,14 @@ class HistScheme:
         self.dbq_totals = {}
         self.dbq_names = {}
         self.topic_titles = {}
+        self.topic_guard = None
         self._read()
+        if self.topic_guard:
+            unit, phrase = self.topic_guard
+            first = self.by_key.get((unit, 1, None, None))
+            if not first or phrase not in (first.note or ''):
+                raise AssertionError(f'{year} {level} {field}: recorded topic misprint for {unit} '
+                                     f'no longer reads as recorded')
 
     # -- reading ---------------------------------------------------------
     def _read(self):
@@ -641,6 +761,10 @@ class HistScheme:
                 topic, extra = int(m.group(2)), False
                 if section == '1':
                     section = '2' if m.group(1).lower() == 'ireland' else '3'
+                renumber = SCHEME_TOPIC_MISPRINTS.get(
+                    (self.year, self.level, self.field), {}).get((section, topic))
+                if renumber:
+                    topic, self.topic_guard = renumber[0], (f'{section} Topic {renumber[0]}', renumber[1])
                 # The topic's printed TITLE follows on the next line, exactly
                 # as it does on the paper. hist_all.py joins the two documents
                 # on it.
@@ -763,6 +887,10 @@ class HistScheme:
                     continue
                 ceiling = value
             m = TRAILING_M.search(line)
+            if m and line[:m.start()].rstrip().endswith('@'):
+                # A price per item, "Any TWO @ 4M" (2016 Ordinary Q1(a)), is
+                # not the part's marks, which follow on a line of their own.
+                m = None
             if m:
                 if flat is None:
                     flat = int(m.group(1))
@@ -787,11 +915,26 @@ class HistScheme:
         if not text:
             self.refused.append((ask.key, 'the scheme states nothing here'))
             return
+        priced = (_priced_statements(text)
+                  if ask.key[0] == '1' and ask.key[2] and self.level == 'ol' else None)
+        if priced:
+            ask.kind = 'split'
+            ask.total = priced[0]
+            ask.components = [(statement, marks, None) for statement, marks, _n in priced[1]]
+            ask.notation = ' '.join(PS_CLOSING.search(' '.join(' '.join(text).split())).group(0).split())
+            ask.evidence = ' '.join(' '.join(text).split())[:400]
+            ask.points = [(None, statement, note) for statement, _m, note in priced[1]]
+            ask.cue = ' '.join(' '.join(p for _l, p, _n in ask.points).split())
+            self._add(ask)
+            return
         split = _answered_split(text)
         if split:
             ask.kind = 'split'
             ask.total, ask.components = split
-            ask.notation = ' '.join(SPLIT_TOTAL.search(' '.join(text[-1].split())).group(0).split())
+            closing = (SPLIT_TOTAL.search(' '.join(text[-1].split()))
+                       or SPLIT_TARIFF.search(' '.join(text[-1].split()))
+                       or SPLIT_BARE_TOTAL.search(' '.join(text[-1].split())))
+            ask.notation = ' '.join(closing.group(0).split())
             ask.evidence = ' '.join(' '.join(text).split())[:400]
             ask.points = [(None, answer or name, f'{name} = {marks}M' if answer else None)
                           for name, marks, answer in ask.components]

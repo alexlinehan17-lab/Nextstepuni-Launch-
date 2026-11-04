@@ -12651,7 +12651,8 @@ export const CARDS: SecCard[] = [
     questionText: "Apart from stained glass, what other art forms did Evie Hone work on in Ireland?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Oil paintings (3M) and water colours (3)", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Oil paintings", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "water colours", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
