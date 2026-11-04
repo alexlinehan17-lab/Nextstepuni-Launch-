@@ -611,6 +611,16 @@ REJECTED = {
        for r in ('i', 'ii')},
     (2017, 'hl', 8, 'c', 'i'): 'a stray glyph from the ask at its left edge',
     (2017, 'hl', 8, 'c', 'ii'): 'takes in (c)\'s prose beside the car',
+    # 2014 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2014, 'hl', 1, 'o', r): 'cuts off B and the containment structure\'s label'
+       for r in ('i', 'ii')},
+    **{(2014, 'hl', 3, 'b', r): 'cuts off the temperature axis and its values'
+       for r in ('i', 'ii')},
+    **{(2014, 'hl', 4, 'a', r): 'takes in the page\'s "(50 marks)"'
+       for r in ('i', 'ii')},
+    **{(2014, 'hl', 6, 'a', r): 'cuts off the label "casing for games controller"'
+       for r in ('i', 'ii')},
+    (2014, 'hl', 8, 'a', None): 'takes in the page\'s "(50 marks)"',
     # 2015 Higher, looked at 2026-11-04 (the residue cuts each by eye):
     **{(2015, 'hl', 2, 'b', r): 'cuts off the stress axis, its values and the fractured '
                                 'specimen at C'
