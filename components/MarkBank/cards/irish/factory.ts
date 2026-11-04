@@ -163,7 +163,7 @@ const derivedFrom = (id: string): boolean => {
 const primaryAllocation = (card: AuthoredIrishCard, criterion: Criterion) => allocationFor(card, criterion) ?? siblingAllocation(card, criterion);
 const sameCriterion = (a: Criterion, b: Criterion) => a.id === b.id && a.maxMarks === b.maxMarks
   && a.guidance.length === b.guidance.length && a.guidance.every((line, index) => line === b.guidance[index]);
-const FREAGRAI = /^(.*?)\((\d+)\s*m?h?arc(?:\s*\+\s*(\d+)\s*m?h?arc)?\)\s*Freagraí:\s*(.+)$/;
+const FREAGRAI = /^(.*?)\((\d+)\s*m?h?arc(?:\s*\+\s*(\d+)\s*m?h?arc)?\)\s*Freagraí(?: samplacha)?:\s*(.+)$/;
 
 /** Rows for a derived practice card whose own criterion the readers cannot cut (it is a slot of a part, or the
  *  part alone), always from the same printed scheme and never added to:
@@ -190,6 +190,13 @@ const derivedAllocation = (card: AuthoredIrishCard, criterion: Criterion): Irish
         directions: whole!.directions };
     }
   }
+  return freagraiAllocation(criterion);
+};
+
+/** A literature sub-question list the scheme prices as "(a) … (2 mharc) Freagraí: x… y…" (or "Freagraí samplacha:"
+ *  with bullets): each printed sub-question a part, each listed answer a row at the part's per-answer price. Any card's
+ *  priced criterion of that shape gets these rows, the parent question's as well as its one-part practice cards'. */
+const freagraiAllocation = (criterion: Criterion): IrishAllocation | undefined => {
   const parts: IrishAnswerPart[] = [];
   const directions: string[] = [];
   for (const line of ownGuidance(criterion)) {
@@ -201,7 +208,9 @@ const derivedAllocation = (card: AuthoredIrishCard, criterion: Criterion): Irish
       if (!match) return undefined;
       const each = Number(match[2]);
       const tariff = each + (match[3] ? Number(match[3]) : 0);
-      const answers = match[4].split('…').map(answer => answer.trim()).filter(Boolean);
+      // A bulleted list is cut at its bullets; otherwise at each "…", never inside a quoted answer (‘… …’).
+      const answers = (match[4].includes('•') ? match[4].split('•') : match[4].split(/…(?![^‘’]*’)/))
+        .map(answer => answer.trim()).filter(Boolean);
       if (!answers.length) return undefined;
       parts.push({ id: `p${parts.length + 1}`, prompt: match[1].trim(), tariff,
         rows: answers.map((text, index) => ({ id: `r${index + 1}`, text, marks: each })) });
@@ -212,7 +221,8 @@ const derivedAllocation = (card: AuthoredIrishCard, criterion: Criterion): Irish
 
 const cloneCriteria = (card: AuthoredIrishCard): IrishCriterion[] =>
   card.criteria.map(criterion => {
-    const allocation = primaryAllocation(card, criterion) ?? derivedAllocation(card, criterion);
+    const allocation = primaryAllocation(card, criterion) ?? derivedAllocation(card, criterion)
+      ?? (pricedAward(criterion) ? freagraiAllocation(criterion) : undefined);
     return {
       ...criterion,
       permittedMarks: [...criterion.permittedMarks],

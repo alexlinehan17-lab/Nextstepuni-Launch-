@@ -305,10 +305,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // tariffs.ts cuts that into rows and steps; the sample points stay a list under each part.
     const literature = irishCards.filter(({ card }) => /Prose|Poetry|Literature|Prós|Filíocht|Litríocht/.test(card.questionRef));
     expect(literature).toHaveLength(276);
-    // An option whose tariff summary the parser does not read yet, pinned by id.
-    expect(literature.filter(({ criteria }) => unstructured(criteria)).map(({ card }) => card.id).sort()).toEqual([
-      'irish-2025-ol-p2-poetry-3a-a',
-    ]);
+    // Every literature option's priced parts cut into rows. The last, 2025 Ordinary 3A(a)(i) (rowless on main), cuts
+    // its "(2 mharc) Freagraí: …" sub-question list like its practice cards (cards/irish/factory.ts, freagraiAllocation).
+    expect(literature.filter(({ criteria }) => unstructured(criteria)).map(({ card }) => card.id).sort()).toEqual([]);
     // Every other exact criterion (the Ordinary composition "Tasc" 0/2 tariffs) is already a button;
     // the welded ones are the exact criteria above that are still prose.
     const welded = irishCards.flatMap(({ criteria }) => criteria)
