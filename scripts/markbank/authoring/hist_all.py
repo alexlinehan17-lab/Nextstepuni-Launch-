@@ -168,6 +168,7 @@ PAPERS = sorted(ESSAY_PAPERS, key=lambda p: (p[0], p[1], FIELD_KEYS.index(p[2]))
 # citations "... — Deferred sitting", the form Physics and Home Economics use.
 DEFERRED_ESSAY_PAPERS = {
     (2022, 'hl', 'lm'),
+    (2022, 'ol', 'lm'),
     (2023, 'hl', 'lm'),
     (2023, 'ol', 'lm'),
 }

@@ -464156,6 +464156,4656 @@
   "stem": "The United States and the world, 1945-1989"
  },
  {
+  "id": "hist-2022-ol-deferred-lm-s1-q1a",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "1",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "big-parade",
+  "questionRef": "2022 OL Later Modern Section 1 Q1(a) — Deferred sitting",
+  "questionText": "How big was the parade in document A?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2½ miles long/100 clubs, 5,000 Apprentice Boys and 100 bands/took over an hour to pass by",
+    "marks": 8
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: The Apprentice Boys of Derry",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s1-q1b",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "1",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "many-clubs-took-part-parade",
+  "questionRef": "2022 OL Later Modern Section 1 Q1(b) — Deferred sitting",
+  "questionText": "How many clubs took part in the parade in document A?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "One hundred clubs",
+    "marks": 8
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: The Apprentice Boys of Derry",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s1-q1c",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "1",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "mention-place-apart-northern-ireland-visitors",
+  "questionRef": "2022 OL Later Modern Section 1 Q1(c) — Deferred sitting",
+  "questionText": "Mention one place, apart from Northern Ireland, from which visitors came to Derry, according to document A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Canada/Scotland/Liverpool/Philadelphia/Donegal/Monaghan",
+    "marks": 8
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: The Apprentice Boys of Derry",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s1-q1d",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "1",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "many-bands-took-part-parade",
+  "questionRef": "2022 OL Later Modern Section 1 Q1(d) — Deferred sitting",
+  "questionText": "How many bands took part in the parade in document B?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "100 bands",
+    "marks": 8
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: The Apprentice Boys of Derry",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s1-q1e",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "1",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "did-committee-apprentice-boys",
+  "questionRef": "2022 OL Later Modern Section 1 Q1(e) — Deferred sitting",
+  "questionText": "According to document B, what did the committee of Apprentice Boys do?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They decorated the city",
+    "marks": 8
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: The Apprentice Boys of Derry",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s1-q2a",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "1",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "agree-number-people-visiting-derry-number",
+  "questionRef": "2022 OL Later Modern Section 1 Q2(a) — Deferred sitting",
+  "questionText": "Do the documents agree on the number of people visiting Derry and the number of Apprentice Boys who took part in the parade? Refer to both documents in your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Yes, both documents agree on the number of people visiting Derry. Both doc A and doc B put the number of visitors at 35,000. Both doc A and doc B also state that 5,000 Apprentice Boys took part in the parade.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "“the number of people visiting the city on 12 August was put at 35,000” and the “parade contained…5,000 Apprentice Boys”.",
+    "marks": null,
+    "contextNote": "Doc A"
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "“About 35,000 people visited Derry yesterday” and “Some 5,000 Apprentice Boys took part in the procession”.",
+    "marks": null,
+    "contextNote": "Doc B"
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
+  "stem": "Case study: The Apprentice Boys of Derry",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s1-q2b",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "1",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "agree-1964-special-anniversary-year",
+  "questionRef": "2022 OL Later Modern Section 1 Q2(b) — Deferred sitting",
+  "questionText": "Do the documents agree that 1964 was a special anniversary year? Refer to both documents in your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Both documents refer to 1964 being the 275th anniversary of the Siege of Derry",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The Apprentice Boys organisation was set up to commemorate the Siege of Derry and the 275th anniversary is a significant anniversary",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The documents mention that it was the 275th anniversary but don’t comment directly on its significance",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Doc A lists all the groups taking part, the transport required and the places people came from, which reflects the importance of the 1964 parade",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Doc B describes the special decorations which were put up around the city.",
+    "marks": null
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
+  "stem": "Case study: The Apprentice Boys of Derry",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s1-q3a",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "1",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "tells-more-decoration-city",
+  "questionRef": "2022 OL Later Modern Section 1 Q3(a) — Deferred sitting",
+  "questionText": "Which document tells us more about the decoration of the city? Explain your answer with reference to both documents .",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Doc B tells us more about the decoration of the city",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Doc A refers to the “brightly decorated city” but gives no further details",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Doc B says that “colourful decoration” was a “feature” of this year’s parade",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "It tells us the decorations were organised by a “committee of the Apprentice Boys, supported by local businesses",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "It also says that the corporation of Derry “decorated Craigavon Bridge and Guildhall Square” and gave the Apprentice Boys the loan of decorations for other city streets.",
+    "marks": null
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
+  "stem": "Case study: The Apprentice Boys of Derry",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s1-q3b",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "1",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "primary-source",
+  "questionRef": "2022 OL Later Modern Section 1 Q3(b) — Deferred sitting",
+  "questionText": "Which document, A or B, is a primary source? Explain your answer with reference to both documents.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Doc B is a primary source",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Doc A is a secondary source, written by historian Brian Walker",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "His book was published in 2001, 37 years after the parade of 1964",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "He was probably not present at the 1964 parade as he uses phrases such as “It was reported” and “It was estimated”",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Doc B is a newspaper report from the day after the parade took place",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "It is likely that the reporter was present in Derry for the parade as phrases such as “A feature this year was…” indicates that the reporter witnessed the parade",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "The information given is direct and was up to date when published.",
+    "marks": null
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
+  "stem": "Case study: The Apprentice Boys of Derry",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s1-q4",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "1",
+  "topicId": "hist-lm-irl-5",
+  "conceptId": "activities-apprentice-boys-derry-considered-controversial",
+  "questionRef": "2022 OL Later Modern Section 1 Q4 — Deferred sitting",
+  "questionText": "Why were the activities of the Apprentice Boys of Derry considered controversial?",
+  "totalMarks": 20,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "Mark by the principle of Core Statement. Max = 20M"
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "Here, in question 4 of the DBQ, the examiner will be looking to award 5 marks each to four Core Statements for the full 20 marks allocation.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m."
+  },
+  "notes": "Later Modern field of study. The scheme prints '4. Contextualisation (20 marks) Why were the activities of t' for this ask and no model answer.",
+  "stem": "Case study: The Apprentice Boys of Derry"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t1a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "who-achieved-victory-against-government",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 1 A Q1 — Deferred sitting",
+  "questionText": "Who achieved victory against the government?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Daniel O’Connell",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract relates to Daniel O’Connell and the fight for Catholic Emancipation. Read it and answer the questions which follow.\n\nThe Clare election in 1828 was a turning point. O’Connell managed a huge victory against the government candidate. He was well supported by the clergy whose influence on the poor uneducated peasants was enormous. At the final count, O’Connell was elected by a majority of about eleven hundred votes.\nThe British government feared a rising and granted Catholic Emancipation in April 1829. O’Connell was now the undisputed leader in Ireland. In February 1830, O’Connell became the first Catholic in modern history to sit in the House of Commons.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t1a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "who-great-influence-uneducated-peasants",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 1 A Q2 — Deferred sitting",
+  "questionText": "Who had great influence on the uneducated peasants?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The clergy",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract relates to Daniel O’Connell and the fight for Catholic Emancipation. Read it and answer the questions which follow.\n\nThe Clare election in 1828 was a turning point. O’Connell managed a huge victory against the government candidate. He was well supported by the clergy whose influence on the poor uneducated peasants was enormous. At the final count, O’Connell was elected by a majority of about eleven hundred votes.\nThe British government feared a rising and granted Catholic Emancipation in April 1829. O’Connell was now the undisputed leader in Ireland. In February 1830, O’Connell became the first Catholic in modern history to sit in the House of Commons.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t1a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "fear-british-government",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 1 A Q3 — Deferred sitting",
+  "questionText": "What was the fear of the British government?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A rising/rebellion",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract relates to Daniel O’Connell and the fight for Catholic Emancipation. Read it and answer the questions which follow.\n\nThe Clare election in 1828 was a turning point. O’Connell managed a huge victory against the government candidate. He was well supported by the clergy whose influence on the poor uneducated peasants was enormous. At the final count, O’Connell was elected by a majority of about eleven hundred votes.\nThe British government feared a rising and granted Catholic Emancipation in April 1829. O’Connell was now the undisputed leader in Ireland. In February 1830, O’Connell became the first Catholic in modern history to sit in the House of Commons.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t1a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "significant-connell-winning-seat-election",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 1 A Q4 — Deferred sitting",
+  "questionText": "What was significant about O’Connell winning a seat in the election?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He was the first Catholic in modern times to sit in the House of Commons",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract relates to Daniel O’Connell and the fight for Catholic Emancipation. Read it and answer the questions which follow.\n\nThe Clare election in 1828 was a turning point. O’Connell managed a huge victory against the government candidate. He was well supported by the clergy whose influence on the poor uneducated peasants was enormous. At the final count, O’Connell was elected by a majority of about eleven hundred votes.\nThe British government feared a rising and granted Catholic Emancipation in April 1829. O’Connell was now the undisputed leader in Ireland. In February 1830, O’Connell became the first Catholic in modern history to sit in the House of Commons.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t1a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "other-campaign-connell-involved",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 1 A Q5 — Deferred sitting",
+  "questionText": "Name one other campaign that O’Connell was involved in.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Repeal/anti-slavery/Famine relief, etc.",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract relates to Daniel O’Connell and the fight for Catholic Emancipation. Read it and answer the questions which follow.\n\nThe Clare election in 1828 was a turning point. O’Connell managed a huge victory against the government candidate. He was well supported by the clergy whose influence on the poor uneducated peasants was enormous. At the final count, O’Connell was elected by a majority of about eleven hundred votes.\nThe British government feared a rising and granted Catholic Emancipation in April 1829. O’Connell was now the undisputed leader in Ireland. In February 1830, O’Connell became the first Catholic in modern history to sit in the House of Commons.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t1b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "mother-mary-aikenhead-industrial-development-belfast",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 1 B — Deferred sitting",
+  "questionText": "Write a short paragraph on one of the following:\n1. Mother Mary Aikenhead.\n2. Industrial development in Belfast.\n3 William Carleton.\n4. The Fenians in Ireland.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Ireland and the Union, 1815-1870"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t1c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-1",
+  "conceptId": "did-synod-thurles-1850-affect-catholic",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 1 C — Deferred sitting",
+  "questionText": "Answer one of the following:\n1. How did the Synod of Thurles, 1850, affect the Catholic Church?\n2. What contribution did William Dargan make to Ireland?\n3. What were private responses to help victims of the Famine?\n4. What role did Thomas Davis play in the Young Ireland Movement?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Ireland and the Union, 1815-1870"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t2a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "where-writer-going",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 2 A Q1 — Deferred sitting",
+  "questionText": "Where was the writer going?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The post office",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, which refers to the 1913 strike and lockout, Stephen Gilligan describes a police baton-charge during which he witnessed the killing of James Nolan. Read it and answer the questions which follow.\n\nI was going down to the post office with a telegram and saw the police charge. The people had no chance to escape. The first thing they knew was the batons coming down on them.\nI heard a voice saying, ‘Now, give it to them, lads!’ I pretended I was a reporter and escaped.\nI saw Nolan trying to get away. A police constable, 224C, struck him with a baton. The other policeman, 149C, struck him across the neck.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t2a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "weapon-did-police-use",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 2 A Q2 — Deferred sitting",
+  "questionText": "What weapon did the police use?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Batons",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, which refers to the 1913 strike and lockout, Stephen Gilligan describes a police baton-charge during which he witnessed the killing of James Nolan. Read it and answer the questions which follow.\n\nI was going down to the post office with a telegram and saw the police charge. The people had no chance to escape. The first thing they knew was the batons coming down on them.\nI heard a voice saying, ‘Now, give it to them, lads!’ I pretended I was a reporter and escaped.\nI saw Nolan trying to get away. A police constable, 224C, struck him with a baton. The other policeman, 149C, struck him across the neck.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t2a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "did-writer-escape",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 2 A Q3 — Deferred sitting",
+  "questionText": "How did the writer escape?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "By pretending to be a reporter",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, which refers to the 1913 strike and lockout, Stephen Gilligan describes a police baton-charge during which he witnessed the killing of James Nolan. Read it and answer the questions which follow.\n\nI was going down to the post office with a telegram and saw the police charge. The people had no chance to escape. The first thing they knew was the batons coming down on them.\nI heard a voice saying, ‘Now, give it to them, lads!’ I pretended I was a reporter and escaped.\nI saw Nolan trying to get away. A police constable, 224C, struck him with a baton. The other policeman, 149C, struck him across the neck.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t2a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "happened-james-nolan",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 2 A Q4 — Deferred sitting",
+  "questionText": "What happened to James Nolan?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He was struck with batons/killed",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, which refers to the 1913 strike and lockout, Stephen Gilligan describes a police baton-charge during which he witnessed the killing of James Nolan. Read it and answer the questions which follow.\n\nI was going down to the post office with a telegram and saw the police charge. The people had no chance to escape. The first thing they knew was the batons coming down on them.\nI heard a voice saying, ‘Now, give it to them, lads!’ I pretended I was a reporter and escaped.\nI saw Nolan trying to get away. A police constable, 224C, struck him with a baton. The other policeman, 149C, struck him across the neck.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t2a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "outcome-1913-strike-lock-out",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 2 A Q5 — Deferred sitting",
+  "questionText": "What was one outcome of the 1913 strike and lock-out?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid outcome",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, which refers to the 1913 strike and lockout, Stephen Gilligan describes a police baton-charge during which he witnessed the killing of James Nolan. Read it and answer the questions which follow.\n\nI was going down to the post office with a telegram and saw the police charge. The people had no chance to escape. The first thing they knew was the batons coming down on them.\nI heard a voice saying, ‘Now, give it to them, lads!’ I pretended I was a reporter and escaped.\nI saw Nolan trying to get away. A police constable, 224C, struck him with a baton. The other policeman, 149C, struck him across the neck.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t2b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "michael-davitt-operative-movement-arthur-griffith",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 2 B — Deferred sitting",
+  "questionText": "Write a short paragraph on one of the following:\n1. Michael Davitt.\n2. The Co-operative Movement.\n3. Arthur Griffith and the first Sinn Féin party.\n4. W.B. Yeats.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Movements for political and social reform, 1870-1914"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t2c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-2",
+  "conceptId": "role-did-charles-stewart-parnell-home",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 2 C — Deferred sitting",
+  "questionText": "Answer one of the following:\n1. What role did Charles Stewart Parnell have in the Home Rule movement?\n2. What was the role of Edward Carson in Irish affairs?\n3. Why were Gaelic games in need of revival in 1884, and what changes were implemented by the GAA?\n4. How did Isabella Tod and/or Hanna Sheehy-Skeffington promote improvements for women?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Movements for political and social reform, 1870-1914"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t3a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "many-animals-shot",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 3 A Q1 — Deferred sitting",
+  "questionText": "How many animals were shot?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "33 animals",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract from The Northern Whig, (21/04/1941), deals with the shooting of animals at Belfast Zoo. Read it and answer the questions which follow.\n\nThirty-three animals at Belfast Zoo were shot on Saturday. It was known that people in the area were afraid that the animals might escape during an air raid. The Ministry of Public Security decided to take no risk. Also, animal feed was scarce.\nThe shooting was done by Sergeant E. V. Murray and by Constable Thomas Ward. Constable Ward is an excellent shot and served in the Irish Guards in the last war.\nThe animals included five lions, two lionesses and two cubs, as well as polar bears, wolves, a tiger, hyena and puma.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t3a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "did-locals-fear",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 3 A Q2 — Deferred sitting",
+  "questionText": "What did the locals fear?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "That animals might escape during an air raid",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract from The Northern Whig, (21/04/1941), deals with the shooting of animals at Belfast Zoo. Read it and answer the questions which follow.\n\nThirty-three animals at Belfast Zoo were shot on Saturday. It was known that people in the area were afraid that the animals might escape during an air raid. The Ministry of Public Security decided to take no risk. Also, animal feed was scarce.\nThe shooting was done by Sergeant E. V. Murray and by Constable Thomas Ward. Constable Ward is an excellent shot and served in the Irish Guards in the last war.\nThe animals included five lions, two lionesses and two cubs, as well as polar bears, wolves, a tiger, hyena and puma.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t3a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "constable-ward-chosen-shoot-animals",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 3 A Q3 — Deferred sitting",
+  "questionText": "Why was Constable Ward chosen to shoot the animals?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He was an excellent shot/marksman",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract from The Northern Whig, (21/04/1941), deals with the shooting of animals at Belfast Zoo. Read it and answer the questions which follow.\n\nThirty-three animals at Belfast Zoo were shot on Saturday. It was known that people in the area were afraid that the animals might escape during an air raid. The Ministry of Public Security decided to take no risk. Also, animal feed was scarce.\nThe shooting was done by Sergeant E. V. Murray and by Constable Thomas Ward. Constable Ward is an excellent shot and served in the Irish Guards in the last war.\nThe animals included five lions, two lionesses and two cubs, as well as polar bears, wolves, a tiger, hyena and puma.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t3a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "apart-security-other-reason-animals-shot",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 3 A Q4 — Deferred sitting",
+  "questionText": "Apart from security, what was one other reason the animals were shot?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Animal feed was scarce",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract from The Northern Whig, (21/04/1941), deals with the shooting of animals at Belfast Zoo. Read it and answer the questions which follow.\n\nThirty-three animals at Belfast Zoo were shot on Saturday. It was known that people in the area were afraid that the animals might escape during an air raid. The Ministry of Public Security decided to take no risk. Also, animal feed was scarce.\nThe shooting was done by Sergeant E. V. Murray and by Constable Thomas Ward. Constable Ward is an excellent shot and served in the Irish Guards in the last war.\nThe animals included five lions, two lionesses and two cubs, as well as polar bears, wolves, a tiger, hyena and puma.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t3a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "other-impact-world-war-belfast",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 3 A Q5 — Deferred sitting",
+  "questionText": "Briefly, what was one other impact of World War II on Belfast?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid impact",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract from The Northern Whig, (21/04/1941), deals with the shooting of animals at Belfast Zoo. Read it and answer the questions which follow.\n\nThirty-three animals at Belfast Zoo were shot on Saturday. It was known that people in the area were afraid that the animals might escape during an air raid. The Ministry of Public Security decided to take no risk. Also, animal feed was scarce.\nThe shooting was done by Sergeant E. V. Murray and by Constable Thomas Ward. Constable Ward is an excellent shot and served in the Irish Guards in the last war.\nThe animals included five lions, two lionesses and two cubs, as well as polar bears, wolves, a tiger, hyena and puma.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t3b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "patrick-pearse-cosgrave-problems-caused-world",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 3 B — Deferred sitting",
+  "questionText": "Write a short paragraph on one of the following:\n1. Patrick Pearse.\n2. W. T. Cosgrave.\n3. The problems caused by World War II for Éamon de Valera.\n4. Developments in education, 1922-1949.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The pursuit of sovereignty and the impact of partition, 1912-1949"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t3c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-3",
+  "conceptId": "role-did-michael-collins-play-irish",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 3 C — Deferred sitting",
+  "questionText": "Answer one of the following:\n1. What role did Michael Collins play in Irish affairs?\n2. How did Church and State prepare for the Eucharistic Congress, 1932?\n3. What contribution did Evie Hone and/or Countess Markievicz make to Irish affairs?\n4. What did James Craig achieve as prime minister of Northern Ireland?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    11
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The pursuit of sovereignty and the impact of partition, 1912-1949"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t4a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "did-people-travel-grosse-isle-1847",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 4 A Q1 — Deferred sitting",
+  "questionText": "Why did people travel to Grosse Isle in 1847?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To escape starvation",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "Study the following extract on Grosse Isle and answer the questions which follow.\n\nIn 1847, 100,000 Irish people travelled to Grosse Isle to escape starvation. The first “Famine” ship arrived on May 17, 1847. More and more ships arrived each day. On these coffin ships, the number of passengers stricken by fever increased dramatically.\nHastily built, Grosse Isle’s quarantine hospitals lacked proper sanitation, supplies and space to accommodate all the sick patients. Many of the doctors at Grosse Isle had never seen the effects of cholera let alone treated it.\nBeing taken to a quarantine hospital was soon viewed as more a death sentence than an opportunity to get better.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t4a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "when-did-first-famine-ship-arrive",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 4 A Q2 — Deferred sitting",
+  "questionText": "When did the first famine ship arrive?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "May 17",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1847",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "Study the following extract on Grosse Isle and answer the questions which follow.\n\nIn 1847, 100,000 Irish people travelled to Grosse Isle to escape starvation. The first “Famine” ship arrived on May 17, 1847. More and more ships arrived each day. On these coffin ships, the number of passengers stricken by fever increased dramatically.\nHastily built, Grosse Isle’s quarantine hospitals lacked proper sanitation, supplies and space to accommodate all the sick patients. Many of the doctors at Grosse Isle had never seen the effects of cholera let alone treated it.\nBeing taken to a quarantine hospital was soon viewed as more a death sentence than an opportunity to get better.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t4a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "problems-hospital-grosse-isle",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 4 A Q3 — Deferred sitting",
+  "questionText": "What were the problems in the hospital on Grosse Isle?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lack of sanitation/supplies/space/doctors had no experience of cholera",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "Study the following extract on Grosse Isle and answer the questions which follow.\n\nIn 1847, 100,000 Irish people travelled to Grosse Isle to escape starvation. The first “Famine” ship arrived on May 17, 1847. More and more ships arrived each day. On these coffin ships, the number of passengers stricken by fever increased dramatically.\nHastily built, Grosse Isle’s quarantine hospitals lacked proper sanitation, supplies and space to accommodate all the sick patients. Many of the doctors at Grosse Isle had never seen the effects of cholera let alone treated it.\nBeing taken to a quarantine hospital was soon viewed as more a death sentence than an opportunity to get better.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t4a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "did-people-feel-being-taken-quarantine",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 4 A Q4 — Deferred sitting",
+  "questionText": "How did people feel about being taken to a quarantine hospital?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They viewed it as a death sentence",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "Study the following extract on Grosse Isle and answer the questions which follow.\n\nIn 1847, 100,000 Irish people travelled to Grosse Isle to escape starvation. The first “Famine” ship arrived on May 17, 1847. More and more ships arrived each day. On these coffin ships, the number of passengers stricken by fever increased dramatically.\nHastily built, Grosse Isle’s quarantine hospitals lacked proper sanitation, supplies and space to accommodate all the sick patients. Many of the doctors at Grosse Isle had never seen the effects of cholera let alone treated it.\nBeing taken to a quarantine hospital was soon viewed as more a death sentence than an opportunity to get better.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t4a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "apart-canada-other-countries-irish-people",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 4 A Q5 — Deferred sitting",
+  "questionText": "Apart from Canada, name two other countries to which Irish people emigrated during the Famine.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "TWO other countries",
+    "marks": 6,
+    "contextNote": "(3m + 3m) — The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "Study the following extract on Grosse Isle and answer the questions which follow.\n\nIn 1847, 100,000 Irish people travelled to Grosse Isle to escape starvation. The first “Famine” ship arrived on May 17, 1847. More and more ships arrived each day. On these coffin ships, the number of passengers stricken by fever increased dramatically.\nHastily built, Grosse Isle’s quarantine hospitals lacked proper sanitation, supplies and space to accommodate all the sick patients. Many of the doctors at Grosse Isle had never seen the effects of cholera let alone treated it.\nBeing taken to a quarantine hospital was soon viewed as more a death sentence than an opportunity to get better.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t4b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "john-devoy-orange-order-canada-australia",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 4 B — Deferred sitting",
+  "questionText": "Write a short paragraph on one of the following:\n1. John Devoy.\n2. The Orange Order in Canada and Australia.\n3. The impact of emigration on Ireland, 1920-1966.\n4. John F. Kennedy.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    12
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The Irish diaspora, 1840-1966"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t4c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-4",
+  "conceptId": "did-valera-visit-america-june-1919",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 4 C — Deferred sitting",
+  "questionText": "Answer one of the following:\n1. Why did de Valera visit America (June, 1919 - December, 1920), and was the visit a success?\n2. What difficulties and opportunities did Irish immigrants in Britain experience, 1920-1966?\n3. What challenges faced the Holy Ghost missionaries in Nigeria, 1945-1966?\n4. How did Maureen O’Hara and/or Paul O’Dwyer illustrate Irish-American experience?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    12
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The Irish diaspora, 1840-1966"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t6a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "role-did-patrick-hillery-perform",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 6 A Q1 — Deferred sitting",
+  "questionText": "What role did Patrick Hillery perform?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He negotiated Irish entry to the EEC",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "Patrick Hillery conducted Irish negotiations to enter the EEC. In this edited extract he comments on the outcome for fisheries. Read it and answer the questions which follow.\n\nAfter difficult negotiations it was agreed that member states would be allowed to restrict fishing within a 6-mile limit. For Ireland, this would be extended to twelve miles in an area from Lough Foyle to Cork, for all species of fish. This was the absolute maximum that could be achieved and was, basically, what the Irish had asked for.\nThe Irish fishing fleet is now among the most modern in Europe and has been developed with EU support. In the twelve years after 1976 the volume of fish landed at Irish ports tripled.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t6a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "area-did-mile-fishing-limit-apply",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 6 A Q2 — Deferred sitting",
+  "questionText": "In what area did the 12-mile fishing limit apply?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "From Lough Foyle to Cork",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "Patrick Hillery conducted Irish negotiations to enter the EEC. In this edited extract he comments on the outcome for fisheries. Read it and answer the questions which follow.\n\nAfter difficult negotiations it was agreed that member states would be allowed to restrict fishing within a 6-mile limit. For Ireland, this would be extended to twelve miles in an area from Lough Foyle to Cork, for all species of fish. This was the absolute maximum that could be achieved and was, basically, what the Irish had asked for.\nThe Irish fishing fleet is now among the most modern in Europe and has been developed with EU support. In the twelve years after 1976 the volume of fish landed at Irish ports tripled.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t6a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "ireland-satisfied-outcome-negotiations-reason",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 6 A Q3 — Deferred sitting",
+  "questionText": "Was Ireland satisfied with the outcome of the negotiations? Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Yes",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "they got what they had asked for",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "Patrick Hillery conducted Irish negotiations to enter the EEC. In this edited extract he comments on the outcome for fisheries. Read it and answer the questions which follow.\n\nAfter difficult negotiations it was agreed that member states would be allowed to restrict fishing within a 6-mile limit. For Ireland, this would be extended to twelve miles in an area from Lough Foyle to Cork, for all species of fish. This was the absolute maximum that could be achieved and was, basically, what the Irish had asked for.\nThe Irish fishing fleet is now among the most modern in Europe and has been developed with EU support. In the twelve years after 1976 the volume of fish landed at Irish ports tripled.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t6a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "did-irish-fishing-change-result-eec",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 6 A Q4 — Deferred sitting",
+  "questionText": "How did Irish fishing change as a result of EEC membership?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Fishing fleet modernised/volume of fish landed at Irish ports tripled",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "Patrick Hillery conducted Irish negotiations to enter the EEC. In this edited extract he comments on the outcome for fisheries. Read it and answer the questions which follow.\n\nAfter difficult negotiations it was agreed that member states would be allowed to restrict fishing within a 6-mile limit. For Ireland, this would be extended to twelve miles in an area from Lough Foyle to Cork, for all species of fish. This was the absolute maximum that could be achieved and was, basically, what the Irish had asked for.\nThe Irish fishing fleet is now among the most modern in Europe and has been developed with EU support. In the twelve years after 1976 the volume of fish landed at Irish ports tripled.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t6a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "way-irish-agriculture-affected-eec-membership",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 6 A Q5 — Deferred sitting",
+  "questionText": "What was one way in which Irish agriculture was affected by EEC membership?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid effect",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "Patrick Hillery conducted Irish negotiations to enter the EEC. In this edited extract he comments on the outcome for fisheries. Read it and answer the questions which follow.\n\nAfter difficult negotiations it was agreed that member states would be allowed to restrict fishing within a 6-mile limit. For Ireland, this would be extended to twelve miles in an area from Lough Foyle to Cork, for all species of fish. This was the absolute maximum that could be achieved and was, basically, what the Irish had asked for.\nThe Irish fishing fleet is now among the most modern in Europe and has been developed with EU support. In the twelve years after 1976 the volume of fish landed at Irish ports tripled.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t6b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "changing-attitudes-irish-language-1949-1989",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 6 B — Deferred sitting",
+  "questionText": "Write a short paragraph on one of the following:\n1. Changing attitudes to the Irish language, 1949-1989.\n2. Vatican II and its impact on Irish society.\n3. Jack Lynch.\n4. Garret FitzGerald.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    12
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Government, economy and society in the Republic of Ireland, 1949-1989"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s2t6c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "2",
+  "topicId": "hist-lm-irl-6",
+  "conceptId": "role-did-whitaker-play-irish-affairs",
+  "questionRef": "2022 OL Later Modern Section 2 Topic 6 C — Deferred sitting",
+  "questionText": "Answer one of the following:\n1. What role did T.K. Whitaker play in Irish affairs?\n2. What impact did RTÉ have on Irish society, 1962-1972?\n3. How did Sylvia Meehan and/or Mary Robinson bring about change in Irish life?\n4. What contribution did Charles Haughey make to Irish politics?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    12
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Government, economy and society in the Republic of Ireland, 1949-1989"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t1a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "where-when-did-uprising-take-place",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 1 A Q1 — Deferred sitting",
+  "questionText": "Where and when did the uprising take place?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Vienna",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "March 1848",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract describes an uprising in Vienna and the fall of Metternich. Read it and answer the questions which follow.\n\nThere was an uprising in Vienna in March 1848. Large numbers of workers, armed with their work tools, marched in from the suburbs, pulling up lampposts. They used these to smash the city gates which had been closed by the authorities.\nIn the main square, the Ballhausplatz, troops were met with a hail of stones and opened fire. Barricades went up. As the workers broke through, alarmed members of the middle class demanded Metternich’s resignation.\nOn 13 March the Chancellor gave in, announcing his resignation. He left Vienna the following day and made his way to England.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t1a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "items-did-workers-use-weapons",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 1 A Q2 — Deferred sitting",
+  "questionText": "What items did the workers use as weapons?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Work tools/lampposts",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract describes an uprising in Vienna and the fall of Metternich. Read it and answer the questions which follow.\n\nThere was an uprising in Vienna in March 1848. Large numbers of workers, armed with their work tools, marched in from the suburbs, pulling up lampposts. They used these to smash the city gates which had been closed by the authorities.\nIn the main square, the Ballhausplatz, troops were met with a hail of stones and opened fire. Barricades went up. As the workers broke through, alarmed members of the middle class demanded Metternich’s resignation.\nOn 13 March the Chancellor gave in, announcing his resignation. He left Vienna the following day and made his way to England.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t1a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "where-city-did-main-fighting-take",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 1 A Q3 — Deferred sitting",
+  "questionText": "Where in the city did the main fighting take place?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The main square/the Ballhausplatz",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract describes an uprising in Vienna and the fall of Metternich. Read it and answer the questions which follow.\n\nThere was an uprising in Vienna in March 1848. Large numbers of workers, armed with their work tools, marched in from the suburbs, pulling up lampposts. They used these to smash the city gates which had been closed by the authorities.\nIn the main square, the Ballhausplatz, troops were met with a hail of stones and opened fire. Barricades went up. As the workers broke through, alarmed members of the middle class demanded Metternich’s resignation.\nOn 13 March the Chancellor gave in, announcing his resignation. He left Vienna the following day and made his way to England.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t1a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "who-demanded-metternich-resignation",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 1 A Q4 — Deferred sitting",
+  "questionText": "Who demanded Metternich’s resignation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The middle class",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract describes an uprising in Vienna and the fall of Metternich. Read it and answer the questions which follow.\n\nThere was an uprising in Vienna in March 1848. Large numbers of workers, armed with their work tools, marched in from the suburbs, pulling up lampposts. They used these to smash the city gates which had been closed by the authorities.\nIn the main square, the Ballhausplatz, troops were met with a hail of stones and opened fire. Barricades went up. As the workers broke through, alarmed members of the middle class demanded Metternich’s resignation.\nOn 13 March the Chancellor gave in, announcing his resignation. He left Vienna the following day and made his way to England.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t1a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "mention-reason-rebellion-broke-out-austrian",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 1 A Q5 — Deferred sitting",
+  "questionText": "Mention one reason why rebellion broke out in the Austrian Empire in 1848.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid reason",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract describes an uprising in Vienna and the fall of Metternich. Read it and answer the questions which follow.\n\nThere was an uprising in Vienna in March 1848. Large numbers of workers, armed with their work tools, marched in from the suburbs, pulling up lampposts. They used these to smash the city gates which had been closed by the authorities.\nIn the main square, the Ballhausplatz, troops were met with a hail of stones and opened fire. Barricades went up. As the workers broke through, alarmed members of the middle class demanded Metternich’s resignation.\nOn 13 March the Chancellor gave in, announcing his resignation. He left Vienna the following day and made his way to England.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t1b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "developments-music-art-giuseppe-mazzini-italian",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 1 B — Deferred sitting",
+  "questionText": "Write a short paragraph on one of the following:\n1. Developments in music and/or art.\n2. Giuseppe Mazzini and Italian unity.\n3. Feargus O’Connor.\n4. Serfdom in Russia.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Nationalism and state formation in Europe, 1815-1871"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t1c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-1",
+  "conceptId": "causes-1848-revolution-germany-did-fail",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 1 C — Deferred sitting",
+  "questionText": "Answer one of the following:\n1. What were the causes of the 1848 Revolution in Germany and why did it fail?\n2. How did Robert Owen’s model village at New Lanark improve the lives of his workers?\n3. What was the impact of Haussmann’s redevelopment of Paris?\n4. During the period 1815-1871, what important developments took place in science and/or technology?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Nationalism and state formation in Europe, 1815-1871"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t2a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "who-wrote-letter-whom-addressed",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 2 A Q1 — Deferred sitting",
+  "questionText": "Who wrote the letter in this extract and to whom was it addressed?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Village women",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "to Queen Mary",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a letter to Queen Mary (1910), complaining about the impact of the motor car on English village life. Read it and answer the questions which follow.\n\nThe village women of the United Kingdom beseech your Majesty to help us to get some relief from the motor cars.\nOur children are always in danger; our clothes are ruined by the dust; we cannot open our windows; our rest is spoiled by the noise at night.\nIf they could be made to go slowly through the villages it would be a great thing. But we are only poor people and the great majority of those who use motor cars are rich. They take no account of us.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t2a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "ways-motor-cars-made-life-unpleasant",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 2 A Q2 — Deferred sitting",
+  "questionText": "What were two ways in which motor cars made life unpleasant for village dwellers?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Danger for children/dust on clothes/dust in houses/noise",
+    "marks": 6,
+    "contextNote": "Any TWO (3m + 3m)"
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a letter to Queen Mary (1910), complaining about the impact of the motor car on English village life. Read it and answer the questions which follow.\n\nThe village women of the United Kingdom beseech your Majesty to help us to get some relief from the motor cars.\nOur children are always in danger; our clothes are ruined by the dust; we cannot open our windows; our rest is spoiled by the noise at night.\nIf they could be made to go slowly through the villages it would be a great thing. But we are only poor people and the great majority of those who use motor cars are rich. They take no account of us.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t2a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "improve-matters-villagers",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 2 A Q3 — Deferred sitting",
+  "questionText": "What would improve matters for the villagers?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "If cars would go more slowly",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a letter to Queen Mary (1910), complaining about the impact of the motor car on English village life. Read it and answer the questions which follow.\n\nThe village women of the United Kingdom beseech your Majesty to help us to get some relief from the motor cars.\nOur children are always in danger; our clothes are ruined by the dust; we cannot open our windows; our rest is spoiled by the noise at night.\nIf they could be made to go slowly through the villages it would be a great thing. But we are only poor people and the great majority of those who use motor cars are rich. They take no account of us.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t2a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "did-car-drivers-pay-attention-villagers",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 2 A Q4 — Deferred sitting",
+  "questionText": "Why, according to the extract, did car drivers pay no attention to the villagers?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Villagers are poor and car owners are rich",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a letter to Queen Mary (1910), complaining about the impact of the motor car on English village life. Read it and answer the questions which follow.\n\nThe village women of the United Kingdom beseech your Majesty to help us to get some relief from the motor cars.\nOur children are always in danger; our clothes are ruined by the dust; we cannot open our windows; our rest is spoiled by the noise at night.\nIf they could be made to go slowly through the villages it would be a great thing. But we are only poor people and the great majority of those who use motor cars are rich. They take no account of us.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t2a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "did-karl-benz-contribute-early-history",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 2 A Q5 — Deferred sitting",
+  "questionText": "How did Karl Benz contribute to the early history of the motor car?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid contribution by Karl Benz",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a letter to Queen Mary (1910), complaining about the impact of the motor car on English village life. Read it and answer the questions which follow.\n\nThe village women of the United Kingdom beseech your Majesty to help us to get some relief from the motor cars.\nOur children are always in danger; our clothes are ruined by the dust; we cannot open our windows; our rest is spoiled by the noise at night.\nIf they could be made to go slowly through the villages it would be a great thing. But we are only poor people and the great majority of those who use motor cars are rich. They take no account of us.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t2b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "krupp-family-anti-semitism-russia-western",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 2 B — Deferred sitting",
+  "questionText": "Write a short paragraph on one of the following:\n1. The Krupp family.\n2. Anti-Semitism in Russia.\n3. The Western Front during World War I.\n4. Rosa Luxemburg.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Nation states and international tensions, 1871-1920"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t2c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-2",
+  "conceptId": "successes-failures-bismarck-chancellor-germany-did",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 2 C — Deferred sitting",
+  "questionText": "Answer one of the following:\n1. What were the successes and failures of Bismarck as Chancellor of Germany?\n2. How did the foreign policy of Wilhelm II affect Anglo-German relations?\n3. What was the contribution of women to the workforce during World War I?\n4. What was Woodrow Wilson’s contribution to the affairs of Europe?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Nation states and international tensions, 1871-1920"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t3a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "who-speaking-where",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 3 A Q1 — Deferred sitting",
+  "questionText": "Who is speaking and where?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The Mayor of Jarrow",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "at Ripon",
+    "marks": 3
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract on the Jarrow March, 1936, the Mayor of Jarrow speaks at Ripon. Read it and answer the questions which follow.\n\nIn every town on our way to London we are going to put before the people the plight of our depressed town.\nWe feel that while the rest of the country may be progressing, we in the north-eastern corner are left entirely on our own. We feel if the nation needed our services in 1914-1918, we need its support now.\nWe are here, too, on behalf of all the towns in our position. We ask that our unemployed men be allowed to work, to earn sufficient money to keep their wives and children.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t3a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "where-did-jarrow-march-begin-where",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 3 A Q2 — Deferred sitting",
+  "questionText": "Where did the Jarrow March begin and where did it end?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jarrow to London",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract on the Jarrow March, 1936, the Mayor of Jarrow speaks at Ripon. Read it and answer the questions which follow.\n\nIn every town on our way to London we are going to put before the people the plight of our depressed town.\nWe feel that while the rest of the country may be progressing, we in the north-eastern corner are left entirely on our own. We feel if the nation needed our services in 1914-1918, we need its support now.\nWe are here, too, on behalf of all the towns in our position. We ask that our unemployed men be allowed to work, to earn sufficient money to keep their wives and children.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t3a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "north-eastern-corner-england-different-rest",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 3 A Q3 — Deferred sitting",
+  "questionText": "How is the north-eastern corner of England different from the rest of the nation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It is making no progress/it has been left on its own",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract on the Jarrow March, 1936, the Mayor of Jarrow speaks at Ripon. Read it and answer the questions which follow.\n\nIn every town on our way to London we are going to put before the people the plight of our depressed town.\nWe feel that while the rest of the country may be progressing, we in the north-eastern corner are left entirely on our own. We feel if the nation needed our services in 1914-1918, we need its support now.\nWe are here, too, on behalf of all the towns in our position. We ask that our unemployed men be allowed to work, to earn sufficient money to keep their wives and children.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t3a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "request-made-behalf-wives-children-jarrow",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 3 A Q4 — Deferred sitting",
+  "questionText": "What request is made on behalf of wives and children in Jarrow?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "That their unemployed men be allowed to work",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract on the Jarrow March, 1936, the Mayor of Jarrow speaks at Ripon. Read it and answer the questions which follow.\n\nIn every town on our way to London we are going to put before the people the plight of our depressed town.\nWe feel that while the rest of the country may be progressing, we in the north-eastern corner are left entirely on our own. We feel if the nation needed our services in 1914-1918, we need its support now.\nWe are here, too, on behalf of all the towns in our position. We ask that our unemployed men be allowed to work, to earn sufficient money to keep their wives and children.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t3a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "service-did-jarrow-supply-nation-during",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 3 A Q5 — Deferred sitting",
+  "questionText": "What service did Jarrow supply to the nation during the period 1914-1918?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Support for the war effort/ship-building",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract on the Jarrow March, 1936, the Mayor of Jarrow speaks at Ripon. Read it and answer the questions which follow.\n\nIn every town on our way to London we are going to put before the people the plight of our depressed town.\nWe feel that while the rest of the country may be progressing, we in the north-eastern corner are left entirely on our own. We feel if the nation needed our services in 1914-1918, we need its support now.\nWe are here, too, on behalf of all the towns in our position. We ask that our unemployed men be allowed to work, to earn sufficient money to keep their wives and children.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t3b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "vladimir-ilyich-lenin-weimar-germany-vichy",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 3 B — Deferred sitting",
+  "questionText": "Write a short paragraph on one of the following:\n1. Vladimir Ilyich Lenin.\n2. Weimar Germany.\n3. Vichy France.\n4. Charlie Chaplin.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Dictatorship and democracy in Europe, 1920-1945"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t3c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-3",
+  "conceptId": "importance-stalin-show-trials-did-church",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 3 C — Deferred sitting",
+  "questionText": "Answer one of the following:\n1. What was the importance of Stalin’s show trials?\n2. How did church-state relations develop under Mussolini?\n3. How did Hitler use the Nuremberg Rallies to promote Nazism in Germany?\n4. In what ways did technological advances influence World War II?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    13
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Dictatorship and democracy in Europe, 1920-1945"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t4a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "pulled-down",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 4 A Q1 — Deferred sitting",
+  "questionText": "What was pulled down?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A statue of Stalin",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the Hungarian Uprising, 1956. Read it and answer the questions which follow.\n\nDuring demonstrations in Budapest on 23 October, 1956, a giant statue of Stalin was pulled down. There were calls for the end of communist rule in Hungary and the establishment of a democratic regime.\nOn the following morning, before Soviet troops could arrive, Imre Nagy was appointed Prime Minister and promised immediate reforms.\n‘Travellers from Budapest today,’ the Manchester Guardian was soon reporting, ‘told of Russian tanks at every main street intersection around the city and of hearing fighting in the streets’.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t4a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "called",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 4 A Q2 — Deferred sitting",
+  "questionText": "What was called for?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The end of communist rule/establishment of a democratic regime",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the Hungarian Uprising, 1956. Read it and answer the questions which follow.\n\nDuring demonstrations in Budapest on 23 October, 1956, a giant statue of Stalin was pulled down. There were calls for the end of communist rule in Hungary and the establishment of a democratic regime.\nOn the following morning, before Soviet troops could arrive, Imre Nagy was appointed Prime Minister and promised immediate reforms.\n‘Travellers from Budapest today,’ the Manchester Guardian was soon reporting, ‘told of Russian tanks at every main street intersection around the city and of hearing fighting in the streets’.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t4a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "did-imre-nagy-promise",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 4 A Q3 — Deferred sitting",
+  "questionText": "What did Imre Nagy promise?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Immediate reforms",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the Hungarian Uprising, 1956. Read it and answer the questions which follow.\n\nDuring demonstrations in Budapest on 23 October, 1956, a giant statue of Stalin was pulled down. There were calls for the end of communist rule in Hungary and the establishment of a democratic regime.\nOn the following morning, before Soviet troops could arrive, Imre Nagy was appointed Prime Minister and promised immediate reforms.\n‘Travellers from Budapest today,’ the Manchester Guardian was soon reporting, ‘told of Russian tanks at every main street intersection around the city and of hearing fighting in the streets’.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t4a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "mention-activity-witnessed-travellers-budapest",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 4 A Q4 — Deferred sitting",
+  "questionText": "Mention one activity witnessed by travellers from Budapest.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Russian tanks in the streets/fighting to be heard",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the Hungarian Uprising, 1956. Read it and answer the questions which follow.\n\nDuring demonstrations in Budapest on 23 October, 1956, a giant statue of Stalin was pulled down. There were calls for the end of communist rule in Hungary and the establishment of a democratic regime.\nOn the following morning, before Soviet troops could arrive, Imre Nagy was appointed Prime Minister and promised immediate reforms.\n‘Travellers from Budapest today,’ the Manchester Guardian was soon reporting, ‘told of Russian tanks at every main street intersection around the city and of hearing fighting in the streets’.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t4a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "did-soviet-russia-crush-hungarian-uprising",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 4 A Q5 — Deferred sitting",
+  "questionText": "Why did Soviet Russia crush the Hungarian Uprising?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid reason",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the Hungarian Uprising, 1956. Read it and answer the questions which follow.\n\nDuring demonstrations in Budapest on 23 October, 1956, a giant statue of Stalin was pulled down. There were calls for the end of communist rule in Hungary and the establishment of a democratic regime.\nOn the following morning, before Soviet troops could arrive, Imre Nagy was appointed Prime Minister and promised immediate reforms.\n‘Travellers from Budapest today,’ the Manchester Guardian was soon reporting, ‘told of Russian tanks at every main street intersection around the city and of hearing fighting in the streets’.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t4b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "welfare-moves-towards-european-unity-pope",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 4 B — Deferred sitting",
+  "questionText": "Write a short paragraph on one of the following:\n1. The welfare state.\n2. Moves towards European unity.\n3. Pope John Paul II.\n4. Impact of advances in nuclear power.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    14
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Division and realignment in Europe, 1945-1992"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t4c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-4",
+  "conceptId": "part-played-affairs-soviet-russia-alexander",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 4 C — Deferred sitting",
+  "questionText": "Answer one of the following:\n1. What part was played in the affairs of Soviet Russia by Alexander Solzhenitsyn and/or Mikhail Gorbachev?\n2. What was the impact of the oil crisis, 1973, on Europe?\n3. What were the successes and failures of Margaret Thatcher as a political leader?\n4. What did you learn about youth and popular culture (including sport), 1945-1992?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    14
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Division and realignment in Europe, 1945-1992"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t5a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "did-millions-people-hear-gandhi-talks",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 5 A Q1 — Deferred sitting",
+  "questionText": "How did millions of people hear Gandhi’s talks?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Through radio broadcasts",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an account by a reporter who knew Mohandas Gandhi well. Read it and answer the questions which follow.\n\nGandhi’s evening prayer meeting gave him a great pulpit from which to comment on any subject. The crowds who came at twilight to hear him ran into thousands, his listeners into millions, as his talks were broadcast on the radio.\nGandhi gave people advice on health and diet. He criticised machinery, saying that the wooden plough was more sacred than the tractor.\nThis disturbed me since he delivered his thoughts through a modern microphone and would step off his prayer platform into a limousine. I thought him inconsistent.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t5a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "advice-did-gandhi",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 5 A Q2 — Deferred sitting",
+  "questionText": "What advice did Gandhi give?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Advice on health and diet",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an account by a reporter who knew Mohandas Gandhi well. Read it and answer the questions which follow.\n\nGandhi’s evening prayer meeting gave him a great pulpit from which to comment on any subject. The crowds who came at twilight to hear him ran into thousands, his listeners into millions, as his talks were broadcast on the radio.\nGandhi gave people advice on health and diet. He criticised machinery, saying that the wooden plough was more sacred than the tractor.\nThis disturbed me since he delivered his thoughts through a modern microphone and would step off his prayer platform into a limousine. I thought him inconsistent.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t5a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "shown-gandhi-criticised-modern-technology",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 5 A Q3 — Deferred sitting",
+  "questionText": "How is it shown that Gandhi criticised modern technology?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He said the wooden plough was more sacred than the tractor",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an account by a reporter who knew Mohandas Gandhi well. Read it and answer the questions which follow.\n\nGandhi’s evening prayer meeting gave him a great pulpit from which to comment on any subject. The crowds who came at twilight to hear him ran into thousands, his listeners into millions, as his talks were broadcast on the radio.\nGandhi gave people advice on health and diet. He criticised machinery, saying that the wooden plough was more sacred than the tractor.\nThis disturbed me since he delivered his thoughts through a modern microphone and would step off his prayer platform into a limousine. I thought him inconsistent.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t5a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "disturbed-writer",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 5 A Q4 — Deferred sitting",
+  "questionText": "Briefly, what disturbed the writer?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "That he used modern technology/travelled by car/was inconsistent",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an account by a reporter who knew Mohandas Gandhi well. Read it and answer the questions which follow.\n\nGandhi’s evening prayer meeting gave him a great pulpit from which to comment on any subject. The crowds who came at twilight to hear him ran into thousands, his listeners into millions, as his talks were broadcast on the radio.\nGandhi gave people advice on health and diet. He criticised machinery, saying that the wooden plough was more sacred than the tractor.\nThis disturbed me since he delivered his thoughts through a modern microphone and would step off his prayer platform into a limousine. I thought him inconsistent.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t5a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "circumstances-mohandas-gandhi-death",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 5 A Q5 — Deferred sitting",
+  "questionText": "What were the circumstances of Mohandas Gandhi’s death?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Assassination",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an account by a reporter who knew Mohandas Gandhi well. Read it and answer the questions which follow.\n\nGandhi’s evening prayer meeting gave him a great pulpit from which to comment on any subject. The crowds who came at twilight to hear him ran into thousands, his listeners into millions, as his talks were broadcast on the radio.\nGandhi gave people advice on health and diet. He criticised machinery, saying that the wooden plough was more sacred than the tractor.\nThis disturbed me since he delivered his thoughts through a modern microphone and would step off his prayer platform into a limousine. I thought him inconsistent.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t5b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "charles-gaulle-chi-minh-julius-nyerere",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 5 B — Deferred sitting",
+  "questionText": "Write a short paragraph on one of the following:\n1. Charles de Gaulle.\n2. Ho Chi Minh.\n3. Julius Nyerere and the policy of ujamaa.\n4. The Arab-Israeli conflict.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    14
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "European retreat from empire and the aftermath, 1945-1990"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t5c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-5",
+  "conceptId": "challenges-faced-development-workers-africa-did",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 5 C — Deferred sitting",
+  "questionText": "Answer one of the following:\n1. What challenges were faced by development workers in Africa?\n2. Why did Katanga secede from the Congo and in what ways did this affect the Congo?\n3. How did problems develop in race relations in France in the 1980s and how successfully were they dealt with?\n4. What were the achievements of Nadine Gordimer?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    14
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "European retreat from empire and the aftermath, 1945-1990"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t6a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "job-done-astronauts-before-started-training",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 6 A Q1 — Deferred sitting",
+  "questionText": "What job was done by the astronauts before they started training as astronauts?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They were test pilots.",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract by journalist Walter Cronkite describing the training of US astronauts. Read it and answer the questions which follow.\n\nThe first astronauts set a tough example to follow. They worked hard. Test pilots all, they had learned the difficult, demanding and dangerous craft of flying airplanes that no one had ever flown before.\nNow, besides mastering all the complicated technology of the new space machines, they were put through a gruelling routine of physical fitness and intense classroom learning. They studied physics, astronomy, geology and the geography of both the earth and the moon.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t6a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "does-writer-say-job-dangerous",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 6 A Q2 — Deferred sitting",
+  "questionText": "Why does the writer say that this job was dangerous?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They flew aircraft that no one had ever flown before",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract by journalist Walter Cronkite describing the training of US astronauts. Read it and answer the questions which follow.\n\nThe first astronauts set a tough example to follow. They worked hard. Test pilots all, they had learned the difficult, demanding and dangerous craft of flying airplanes that no one had ever flown before.\nNow, besides mastering all the complicated technology of the new space machines, they were put through a gruelling routine of physical fitness and intense classroom learning. They studied physics, astronomy, geology and the geography of both the earth and the moon.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t6a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "did-astronauts-work-hard",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 6 A Q3 — Deferred sitting",
+  "questionText": "Why did the astronauts have to work hard?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They had to work on complicated technology/physical fitness/ classroom learning/they had many skills, subjects to learn",
+    "marks": 6
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract by journalist Walter Cronkite describing the training of US astronauts. Read it and answer the questions which follow.\n\nThe first astronauts set a tough example to follow. They worked hard. Test pilots all, they had learned the difficult, demanding and dangerous craft of flying airplanes that no one had ever flown before.\nNow, besides mastering all the complicated technology of the new space machines, they were put through a gruelling routine of physical fitness and intense classroom learning. They studied physics, astronomy, geology and the geography of both the earth and the moon.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t6a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "subjects-studied-astronauts",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 6 A Q4 — Deferred sitting",
+  "questionText": "What were two subjects studied by the astronauts?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Physics/astronomy/geology/geography",
+    "marks": 6,
+    "contextNote": "(any TWO, 3m + 3m)"
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract by journalist Walter Cronkite describing the training of US astronauts. Read it and answer the questions which follow.\n\nThe first astronauts set a tough example to follow. They worked hard. Test pilots all, they had learned the difficult, demanding and dangerous craft of flying airplanes that no one had ever flown before.\nNow, besides mastering all the complicated technology of the new space machines, they were put through a gruelling routine of physical fitness and intense classroom learning. They studied physics, astronomy, geology and the geography of both the earth and the moon.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t6a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "did-set-itself-goal-landing-moon",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 6 A Q5 — Deferred sitting",
+  "questionText": "Briefly, why did the US set itself the goal of landing on the moon?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid reason",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Later Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract by journalist Walter Cronkite describing the training of US astronauts. Read it and answer the questions which follow.\n\nThe first astronauts set a tough example to follow. They worked hard. Test pilots all, they had learned the difficult, demanding and dangerous craft of flying airplanes that no one had ever flown before.\nNow, besides mastering all the complicated technology of the new space machines, they were put through a gruelling routine of physical fitness and intense classroom learning. They studied physics, astronomy, geology and the geography of both the earth and the moon.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2022 Ordinary Level deferred examination paper, Later Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t6b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "economic-boom-1945-1968-joe-mccarthy",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 6 B — Deferred sitting",
+  "questionText": "Write a short paragraph on one of the following:\n1. The US economic boom, 1945-1968.\n2. Joe McCarthy and the “red scare”.\n3. Betty Friedan.\n4. Star Wars.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    14
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'B - Max CM = 20 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The United States and the world, 1945-1989"
+ },
+ {
+  "id": "hist-2022-ol-deferred-lm-s3t6c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2022,
+  "section": "3",
+  "topicId": "hist-lm-eur-6",
+  "conceptId": "did-president-harry-truman-pursue-successful",
+  "questionRef": "2022 OL Later Modern Section 3 Topic 6 C — Deferred sitting",
+  "questionText": "Answer one of the following:\n1. How did President Harry Truman pursue a successful foreign policy?\n2. Why did the Montgomery bus boycott (1955-1956) take place and did it achieve its aims?\n3. Why did involvement in Vietnam cause controversy?\n4. What did Billy Graham contribute to religion in the US? There is no examination material on this page.",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s Overall Evaluation of the answer. See the sliding scale below.",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked.",
+     "A valid explanation, opinion or comment which is relevant to the question asked.",
+     "A significant introductory OR concluding statement which is relevant to the question asked."
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement.",
+     "Each completed Core Statement is awarded 5 marks.",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks."
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    9,
+    10,
+    14
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Later Modern field of study. The scheme prints 'C - Max CM = 30 marks  Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The United States and the world, 1945-1989"
+ },
+ {
   "id": "hist-2023-hl-deferred-lm-s1-q1a",
   "subjectId": "history",
   "level": "higher",
