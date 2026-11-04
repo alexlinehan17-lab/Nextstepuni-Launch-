@@ -45,6 +45,17 @@ describe('an Irish tariff cut into rows', () => {
     expect(parts[3].rows.map(row => [row.text, row.marks])).toEqual([['Ainm an dáin', 1], ['Ainm an fhile', 1]]);
   });
 
+  test('rows that are the tariff\'s components can all be claimed, so full marks are reachable', () => {
+    // "Tréith 1 a lua = 2 mharc", "sampla … = 4 mharc", twice: 12. An answer list would cap the claims at
+    // tariff over best answer (3 here), which left 10 of 12 the most a student could place.
+    const card = byId('irish-2021-hl-p2-reading-a-q6');
+    const eolas = card.rubric.criteria[0];
+    const part = eolas.allocation!.parts.find(candidate => candidate.tariff === 12)!;
+    expect(part.rows.map(row => row.marks)).toEqual([2, 4, 2, 4]);
+    const all = Object.fromEntries(part.rows.map(row => [irishRowScoreId(eolas.id, part.id, row.id), 1]));
+    expect(irishCriterionMarks(eolas, all)).toBe(12);
+  });
+
   test('the last reading question: a grammar ladder over the printed examples and a two-trait composite', () => {
     const card = byId('irish-2021-hl-p2-reading-b-q6');
     const eolas = card.rubric.criteria[0];

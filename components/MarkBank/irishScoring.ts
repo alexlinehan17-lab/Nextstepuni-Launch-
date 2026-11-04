@@ -20,8 +20,11 @@ export const irishRowClaimed = (criterionId: string, part: IrishAnswerPart, rowI
 /** How many answers a sub-question asks for: its tariff over its full answer, or its ladder's length. */
 export const irishPartCount = (part: IrishAnswerPart): number => {
   if (part.ladder) return part.ladder.length;
-  // Rows priced as a tariff ("Tréith 1 = 13 mharc", "Dhá phointe eolais = 4 + 4") are all claimable at once.
+  // Rows priced as a tariff ("Tréith 1 = 13 mharc", "Dhá phointe eolais = 4 + 4") are all claimable at once,
+  // and so are rows that are the tariff's components ("Tréith 1 a lua = 2 mharc", "sampla … = 4 mharc" of 6):
+  // an answer list prices alternatives, which never add up to the sub-question exactly when their marks differ.
   if (part.rows.some(row => row.steps)) return part.rows.length;
+  if (part.rows.length > 1 && part.rows.reduce((sum, row) => sum + row.marks, 0) === part.tariff) return part.rows.length;
   const max = Math.max(0, ...part.rows.map(row => row.marks));
   return max > 0 ? Math.max(1, Math.floor(part.tariff / max)) : 1;
 };
