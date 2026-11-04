@@ -68,11 +68,16 @@ describe('Irish scheme text becomes sub-questions and rows', () => {
     ]);
   });
 
-  it('keeps the language rule as a direction and stops where the excerpt runs into the next section', () => {
-    const allocation = allocationOf('irish-2022-hl-p1-listening-c-p2');
-    expect(allocation.directions).toEqual(['Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.']);
-    expect(allocation.parts).toHaveLength(3);
-    expect(allocation.parts.flatMap(part => part.rows).some(row => /Roinn ar an bpáipéar/.test(row.text))).toBe(false);
+  it('stops where the excerpt runs into the next section; the section-level language rule is the card note', () => {
+    // The 2022 Higher listening review gives each printed question its own criterion; the scheme's 0-3 deduction
+    // applies to the whole section once, so it is the card's note, never a row or a per-question direction.
+    const card = byId('irish-2022-hl-p1-listening-c-p2');
+    if (card.rubric.system !== 'irish') throw new Error('not irish');
+    expect(card.rubric.criteria.map(criterion => criterion.id)).toEqual(['q1', 'q2', 'q3']);
+    const rows = card.rubric.criteria.flatMap(criterion => criterion.allocation?.parts.flatMap(part => part.rows) ?? []);
+    expect(rows.length).toBeGreaterThan(0);
+    expect(rows.some(row => /Roinn ar an bpáipéar|Bainfear ó 0 go 3/.test(row.text))).toBe(false);
+    expect(card.rubric.markingGuideNote).toContain('Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.');
   });
 
   it('leaves alone an excerpt whose bullets the ladder prices unpriced; the Q6 composite tariff is read by tariffs.ts', () => {

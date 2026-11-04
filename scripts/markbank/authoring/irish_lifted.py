@@ -241,11 +241,35 @@ def printed_tasks(card: dict) -> dict:
     return card
 
 
+# The SEC typesets bullets and arrows in SymbolMT, whose codes the text layer returns as private-use characters
+# (U+F0xx) that no student font draws. Adobe Symbol encoding gives each code its character: 0xB7 is the bullet,
+# 0xAE the right arrow. The fonts were read from the PDFs (2019, 2021, 2022, 2024), not guessed.
+SYMBOL_PUA = {'\uf0b7': '•', '\uf0ae': '→'}
+PUA = re.compile('[\ue000-\uf8ff]')
+
+
+def symbol_text(text: str) -> str:
+    for code, char in SYMBOL_PUA.items():
+        text = text.replace(code, char)
+    return text
+
+
+def repair_glyphs(card: dict) -> dict:
+    for field in ('questionText', 'stem', 'markingGuideNote'):
+        if card.get(field):
+            card[field] = symbol_text(card[field])
+    card['taskRequirements'] = [symbol_text(line) for line in card.get('taskRequirements', [])]
+    for criterion in card['criteria']:
+        criterion['guidance'] = [symbol_text(line) for line in criterion['guidance']]
+    return card
+
+
 def printed_question(cards: list[dict]) -> list[dict]:
     """A card's question is the paper's print only. The chosen option is already the one printed option the card
     shows, and a Foundation card's page is in its source reader, so both lines go; a card that practises one answer
     of a printed pair says so in English, in `practiceFocus` (shown as "Practise: …"), never in the question."""
     for card in cards:
+        repair_glyphs(card)
         text = OPTION_LINE.sub('', card['questionText'])
         if PAGE_POINTER.match(text):
             assert card.get('sourceMaterial', {}).get('pages'), (card['id'], 'page pointer without a source reader')
@@ -268,6 +292,9 @@ def written(card: dict) -> list[str]:
     notice = card.get('sourceDiscrepancyNotice')
     if notice and not english(notice):
         out.append(f'sourceDiscrepancyNotice: {notice[:60]}')
+    shown = [card.get('questionText') or '', card.get('stem') or '', card.get('markingGuideNote') or '',
+             *card.get('taskRequirements', []), *(line for criterion in card['criteria'] for line in criterion['guidance'])]
+    out += [f'private-use glyph {hex(ord(match.group(0)))}' for line in shown for match in [PUA.search(line)] if match]
     out += [f'taskRequirements: {fragment[:80]}' for line in card.get('taskRequirements', []) if line not in ENGLISH_TASKS
             for fragment in (f.strip() for f in SPLIT.split(line) if f and f.strip())
             if not task_printed(fragment, text) and not english_task(fragment)]

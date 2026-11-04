@@ -9,6 +9,7 @@ import {CARDS} from '../components/MarkBank/cards/irish/foundation';
 import {combinedListeningAssessment,irishMarks} from '../components/MarkBank/SessionScreen';
 import {tariffReconciles} from '../types/markBank';
 import {examTopicIdsForQuestion,curriculumNodeIdsForExamTopic} from '../data/examTopics/registry';
+import { PAPERS_PENDING_FULL_REVIEW } from './fixtures/irishArchiveProgress';
 const get=(n:string)=>written.cards.find(c=>c.atlasQuestionId===n)!;
 const guide=(n:string,id:string)=>get(n).criteria.find(c=>c.id===id)!.guidance.join(' ');
 // Our own examiner notes are the card's English note, never its scheme guidance (irish_lifted.py).
@@ -192,6 +193,6 @@ print('Both source guards and duplicate-glyph reconstruction passed')
       expect(batch.review.reviewedSchemePages).toHaveLength(20);
     }
     expect(written.review.reviewedPaperPages).toHaveLength(16);expect(aural.review.reviewedPaperPages).toHaveLength(8);
-    expect(inventory.summary.papersPendingFullReview).toBe(57);expect(inventory.summary.orphanCardIds).toEqual([]);
+    expect(inventory.summary.papersPendingFullReview).toBe(PAPERS_PENDING_FULL_REVIEW);expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });

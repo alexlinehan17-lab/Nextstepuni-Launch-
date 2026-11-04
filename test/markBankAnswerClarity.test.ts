@@ -289,17 +289,17 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     const unstructured = (criteria: typeof irishCards[number]['criteria']) => criteria.some(criterion => priced(criterion) && !criterion.allocation);
     expect(exact).toHaveLength(507);
     const structured = exact.filter(({ criteria }) => !unstructured(criteria));
-    expect(structured).toHaveLength(502);
+    expect(structured).toHaveLength(503);
 
     // What is still prose, pinned by id: four reading excerpts on main's cards whose answers the scheme
     // prices in a shape answers.ts does not read yet (unpriced bullets under a ladder, a section total
-    // inside the excerpt) and one listening extract whose tariff lines the text layer broke. They had no
-    // rows on main either. Every reviewed practice card now carries the rows of its printed scheme.
+    // inside the excerpt). They had no rows on main either; the 2022 Higher Fógra a hAon, whose tariff lines the
+    // text layer broke, has rows since its paper review cut one criterion per printed question. Every reviewed
+    // practice card now carries the rows of its printed scheme.
     // Fix one and take it off this list.
     const fallback = exact.filter(({ criteria }) => unstructured(criteria));
     expect(fallback.map(({ card }) => card.id).sort()).toEqual([
-      'irish-2021-ol-p2-reading-a-q2', 'irish-2021-ol-p2-reading-b-q5', 'irish-2022-hl-p1-listening-a-f1', 'irish-2022-hl-p2-reading-b-q1',
-      'irish-2022-hl-p2-reading-b-q5',
+      'irish-2021-ol-p2-reading-a-q2', 'irish-2021-ol-p2-reading-b-q5', 'irish-2022-hl-p2-reading-b-q1', 'irish-2022-hl-p2-reading-b-q5',
     ]);
 
     // Literature: the Eolas criterion prices what the student must do ("Príomhthéama = 2 mharc",

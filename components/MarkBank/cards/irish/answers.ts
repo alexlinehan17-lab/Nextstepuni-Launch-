@@ -108,7 +108,8 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     directions.push(tidy(line));
     return false;
   });
-  let text = ownLines.join(' ').split(BULLET).join(' • ');
+  // A SymbolMT bullet the builders have not yet repaired (U+F0B7) and a repaired one (•) cut alike.
+  let text = ownLines.join(' ').split(BULLET).join(' • ').replace(/•/g, ' • ');
   text = text.replace(QUALIFIED_PRICE, (_, price: string, qualifier: string) => `: ${qualifier} ${price}`);
   text = text.replace(SUFFICES, note => { directions.push(tidy(note)); return ' '; });
   text = text.replace(/\s+/g, ' ').trim().replace(HEADER, '');
