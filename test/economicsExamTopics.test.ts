@@ -251,12 +251,22 @@ describe('Economics exam-topic registry', () => {
       // age are fiscal policy); and Section A Q5 and Section B Q4 under
       // globalisation (barriers to trade and tourism are international
       // trade). The 2010 Higher review added one: Section B Q4(c) under
-      // national income (the national debt is fiscal policy).
-      matchedAssociations: 676,
-      referenceAnomalyAssociations: 227,
+      // national income (the national debt is fiscal policy). The 2010
+      // Ordinary review added ten: Section A Q1 and Section B Q7 under
+      // acronyms and Section B Q4(b) under formulas (study-aid headings);
+      // Section A Q4 under the market economy (opportunity cost is scarcity
+      // and choice); Section A Q5 and Q6 under government intervention (the
+      // budget deficit is fiscal policy, more third-level students economic
+      // growth); Section A Q8 under the labour market (entrepreneurship is
+      // scarcity and choice); Section B Q7 and Q4(c) under economic growth
+      // and development (deflation and savings are monetary policy and the
+      // financial sector, emigration employment); and Section B Q8 under
+      // globalisation (trade and the exchange rate are international trade).
+      matchedAssociations: 666,
+      referenceAnomalyAssociations: 237,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 602,
+      matchedQuestionTopicLinks: 592,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

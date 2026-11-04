@@ -29,6 +29,7 @@ import ordinary2012Review from '../scripts/markbank/authoring/reviews/economics-
 import higher2011Review from '../scripts/markbank/authoring/reviews/economics-2011-hl-ev.json';
 import ordinary2011Review from '../scripts/markbank/authoring/reviews/economics-2011-ol-ev.json';
 import higher2010Review from '../scripts/markbank/authoring/reviews/economics-2010-hl-ev.json';
+import ordinary2010Review from '../scripts/markbank/authoring/reviews/economics-2010-ol-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -338,10 +339,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // Old syllabus English: every sitting from 2010 Higher through 2020 Higher reviewed (variants 19-38).
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(28);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(34);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(38);
+    // Old syllabus English: every sitting from 2010 through 2020 Higher reviewed (variants 19-39).
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(27);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(33);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(39);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -1958,6 +1959,67 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     const text = CARDS.filter(c => c.year === 2010)
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', 'Quantity Demanded Quantity Supplied']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 65 independently counted 2010 Ordinary routes, tariffs, sources and Atlas topics', () => {
+    const cards = ORDINARY.filter(card => card.year === 2010);
+    const tasks = ordinary2010Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(65);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of ordinary2010Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'ordinary', 2010, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034GLP000EV');
+        expect(card.questionRef.startsWith(`2010 OL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75.
+      const total = question.tasks.reduce((sum, task) => sum + task.marks, 0);
+      expect(total, `OL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2010 Ordinary ladders at their printed steps and keys the misprinted Section B Q6(b) romans as the scheme does', () => {
+    const card = (s: string) => {
+      const found = ORDINARY.find(c => c.id === `econ-2010-ol-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    for (const [id, steps] of [['sa-q3', [8, 4, 4]], ['sa-q6', [10, 7]], ['sa-q7', [5, 4, 4, 4]], ['sb-q1-a-ii', [5, 4]],
+      ['sb-q1-b', [12, 6, 6]], ['sb-q5-a', [7, 7, 6]], ['sb-q6-a', [7, 7, 6]]] as const) {
+      expect(card(id).rows[0].group!.perOptionSteps, id).toEqual(steps);
+    }
+    // A Q1: 4 + 2 + 2 beside each name, the first correct word at 4.
+    expect(card('sa-q1').rows.map(r => r.group!.perOptionSteps)).toEqual([[4, 2, 2], [4, 2, 2]]);
+    // The paper prints Section B Q6(b) as (i), (i), (ii); the scheme numbers them (i)-(iii), and so do the cards.
+    for (const [id, cite] of [['sb-q6-b-i', '(b)(i)'], ['sb-q6-b-ii', '(b)(ii)'], ['sb-q6-b-iii', '(b)(iii)']] as const) {
+      expect(card(id).questionRef.endsWith(cite), id).toBe(true);
+    }
+    expect(card('sb-q6-b-ii').rows[0].contextNote).toContain('misprint');
+    // Undivided prices claim the complete answer.
+    for (const id of ['sa-q4', 'sa-q9']) expect(card(id).tariffModel.kind, id).toBe('questionTotal');
+    // Asks the scheme prices together are one card each, cited as a range.
+    for (const [id, cite] of [['sa-q1', '(i)–(ii)'], ['sa-q3', '(i)–(iii)'], ['sb-q5-a', '(a)(i)–(iii)'], ['sb-q6-a', '(a)(i)–(iii)']] as const) {
+      expect(card(id).questionRef, id).toContain(cite);
+    }
+    const asked = ORDINARY.filter(c => c.year === 2010).map(c => c.questionText);
+    expect(new Set(asked).size).toBe(asked.length);
+    for (const c of ORDINARY.filter(item => item.year === 2010 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    const text = ORDINARY.filter(c => c.year === 2010)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate']) {
       expect(text, junk).not.toContain(junk);
     }
   });

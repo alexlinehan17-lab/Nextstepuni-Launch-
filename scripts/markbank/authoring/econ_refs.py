@@ -178,6 +178,7 @@ HAND_CHECKED = {
     'econ-2010-hl-sb-q4-a-i',         # 2010 HL p5: "(i) Explain briefly the underlined terms." (five words; the stem carries the terms)
     'econ-2010-hl-sb-q6-a-i',         # 2010 HL p6: "(i) Explain the underlined terms." (four words; the stem carries the terms)
     'econ-2010-hl-sb-q6-c',           # 2010 HL p6: "(c) ... Outline four features of ‘Monetarism’." (five words after its stem)
+    'econ-2010-ol-sb-q4-c-i',         # 2010 OL p7: "(i) Explain the two underlined terms." (five words; the stem carries the terms)
 }
 
 

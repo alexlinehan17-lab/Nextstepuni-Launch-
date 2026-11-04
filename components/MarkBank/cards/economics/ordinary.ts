@@ -30,6 +30,1735 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sa-q1", topicId: "economics-4-1", conceptId: "the-imf-and-the-wto",
+    section: "A", questionRef: "2010 OL Section A Q1(i)–(ii)",
+    questionText: "What economic institutions do the following initials stand for? (i) IMF (ii) WTO",
+    tariffModel: {"kind":"fixed","notation":"(4 + 2 + 2) x 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-imf", kind: "anyN", verbatim: "IMF — each word of its name", marks: 8, contextNote: "IMF in full: the scheme prints 4 + 2 + 2 beside the name without saying which word earns the 4, so the first correct word is claimed at 4 and the other two at 2.", openList: true, group: {"claimMax":3,"perOption":4,"options":["International","Monetary","Fund"],"perOptionSteps":[4,2,2]} },
+    { id: "r-wto", kind: "anyN", verbatim: "WTO — each word of its name", marks: 8, contextNote: "WTO in full: 4 + 2 + 2 beside the name, read the same way.", openList: true, group: {"claimMax":3,"perOption":4,"options":["World","Trade","Organisation"],"perOptionSteps":[4,2,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sa-q2", topicId: "economics-4-0", conceptId: "helping-less-developed-countries",
+    section: "A", questionRef: "2010 OL Section A Q2",
+    questionText: "Many Irish citizens donate financial aid to organisations that assist citizens in less developed countries (LDCs). Name one organisation involved in this activity. State one economic measure, other than financial donations, that Irish citizens can take to improve economic activity in LDCs.",
+    tariffModel: {"kind":"fixed","notation":"8 + 8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-organisation", kind: "anyN", verbatim: "An organisation — any one", marks: 8, contextNote: "One organisation, 8 marks: the scheme names six and adds “etc.”", openList: true, group: {"claimMax":1,"perOption":8,"options":["Goal","Concern","Trócaire","Red Cross","World Vision","Bóthar"]} },
+    { id: "r-measure", kind: "anyN", verbatim: "A measure — any one", marks: 8, contextNote: "One measure, 8 marks.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Buy goods produced in LDCs (trade not aid) This could result in more money flowing into LDCs thereby increasing their wealth.","Put pressure on governments in developed countries to change trading practices. By exerting pressure on governments in the developed world, trade policies could change ensuring fairer treatment of LDCs.","Campaign for debt reduction. Through campaigning highlight the importance of debt reduction in LDCs and thereby change public opinion/govt. policy.","Encourage multinationals to adopt fair trade and fair employment practices. Citizens can, through various measures (e.g. boycotts of products), ensure that MNCs do not exploit the people or resources of LDCs.","Volunteer to work in a LDC. Citizens could work in an LDC and provide a necessary service e.g. teach or build or provide healthcare etc.","Buy Fair Trade products Citizens can help by buying ‘fair trade’ products which ensure higher prices for producers and hence a better standard of living for citizens in LDCs.","Donations other than financial aid. Citizens could donate food, clothes, livestock etc so as to improve the standard of living of citizens in LDCs."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sa-q3", topicId: "economics-2-0", conceptId: "which-market-structure",
+    section: "A", questionRef: "2010 OL Section A Q3(i)–(iii)",
+    questionText: "Name the market structure (Perfect Competition, Imperfect Competition or Monopoly) to which each statement below applies: (i) Product differentiation exists (ii) Products are homogeneous/identical (iii) Firm has complete control over price or output",
+    tariffModel: {"kind":"fixed","notation":"8 + 4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each statement named", marks: 16, contextNote: "All three: 1st correct answer: 8 marks. 2nd & 3rd: 2 at 4 marks each.", openList: true, group: {"claimMax":3,"perOption":8,"options":["Product differentiation exists — Imperfect Competition","Products are homogeneous/identical — Perfect Competition","Firm has complete control over price or output — Monopoly"],"perOptionSteps":[8,4,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sa-q4", topicId: "economics-0-1", conceptId: "opportunity-cost-and-an-example",
+    section: "A", questionRef: "2010 OL Section A Q4",
+    questionText: "Explain the term opportunity cost and give one example.",
+    tariffModel: {"kind":"questionTotal","notation":"16","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-explanation", kind: "point", verbatim: "The cost of foregone alternatives.", marks: null, accepts: ["The cost of passing up the next best choice when making a decision."], contextNote: "The explanation: the scheme accepts either of its two.", openList: true },
+    { id: "r-example", kind: "point", verbatim: "The opportunity cost of going to college is the money you would have earned if you took employment instead.", marks: null, contextNote: "An example: the scheme accepts any relevant one. Claim the complete answer: the scheme prices the explanation and the example 16 marks together, without dividing them.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sa-q5", topicId: "economics-3-1", conceptId: "unemployment-and-the-budget-deficit",
+    section: "A", questionRef: "2010 OL Section A Q5",
+    questionText: "State two economic effects which an increasing level of unemployment may have on the Government’s Current Budget Deficit.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 8","answer":2,"ofParts":8,"perPart":8}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 16, contextNote: "Two effects, 8 marks each.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Social welfare payments will increase resulting in an increase in the budget deficit.","Increased expenditure on job promotion / training courses by the government which increases the budget deficit.","More staff may have to be employed in the government departments to deal with the increase in the demand for their services e.g. Department of Social Welfare.","Reduced income tax revenue due to the fall in numbers employed.","Reduced corporation tax revenue due to the decline in economic activity in the state.","Reduced indirect tax revenue due to a reduction in spending.","Increased government expenditure on medical cards, rent allowance, school books etc.","Government must find other sources of income to cover extra costs of unemployment / or reduce expenditure in other areas."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sa-q6", topicId: "economics-3-5", conceptId: "advantages-of-third-level-education",
+    section: "A", questionRef: "2010 OL Section A Q6",
+    questionText: "Currently more people are availing of third-level education in Ireland. Outline two economic advantages of this development for the Irish economy.",
+    tariffModel: {"kind":"fixed","notation":"10 + 7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An advantage — any two", marks: 17, contextNote: "Two advantages: 1st correct answer: 10 marks. 2nd correct answer: 7 marks.", openList: true, group: {"claimMax":2,"perOption":10,"options":["Future employment prospects for these citizens may improve.","Standard of living for these citizens may increase, resulting in increased economic growth.","Workforce becomes more highly skilled / more productive / businesses may become more efficient.","More educated workforce may help attract FDI / encourage entrepreneurship in Ireland.","More educated workforce may result in better / more enlightened decision making by government.","Towns / cities where 3rd level colleges are located may benefit from increased economic activity.","Opportunity costs: more people availing of third level education may result in a reduction in social welfare payments."],"perOptionSteps":[10,7]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sa-q7", topicId: "economics-1-1", conceptId: "substitutes-and-complements-for-phones",
+    section: "A", questionRef: "2010 OL Section A Q7",
+    questionText: "The following items are either substitutes or complements for Mobile Phones. From the list below, identify which of the items are substitutes and which of the items are complements. Write your answers in the spaces provided. Mobile Credit, e-mail, Landline Telephone, Mobile Ringtones & Apps",
+    tariffModel: {"kind":"fixed","notation":"5 + 4 + 4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each item placed", marks: 17, contextNote: "All four: 1st correct answer: 5 marks. 2nd, 3rd & 4th correct answer: 4 marks each.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Substitutes for mobile phone — e-mail","Substitutes for mobile phone — Landline Telephone","Complements for mobile phone — Mobile Credit","Complements for mobile phone — Mobile Ringtones & Apps"],"perOptionSteps":[5,4,4,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2010-OL-paper-p03-q7-table",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-paper-p03-q7-table.png",
+          "srcHash": "fc4fea4da9115f9c51b32a694238a5cc",
+          "alt": "A row of four items: Mobile Credit, e-mail, Landline Telephone and Mobile Ringtones & Apps. Then “Answer:” and a grid of two rows, Substitutes for mobile phone and Complements for mobile phone, each with two empty spaces numbered (1) and (2).",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sa-q8", topicId: "economics-0-1", conceptId: "why-entrepreneurship-matters",
+    section: "A", questionRef: "2010 OL Section A Q8",
+    questionText: "Entrepreneurship is important in the development of an economy. Explain the underlined term and state one economic reason why entrepreneurship is important.",
+    tariffModel: {"kind":"fixed","notation":"10 + 7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-explanation", kind: "point", verbatim: "Entrepreneurship is the risk undertaken by an individual in combining the other factors into a production unit to produce a product or provide a service in the hope of making a profit.", marks: 10, contextNote: "The explanation, 10 marks.", openList: true },
+    { id: "r-reason", kind: "anyN", verbatim: "A reason — any one", marks: 7, contextNote: "One reason, 7 marks.", openList: true, group: {"claimMax":1,"perOption":7,"options":["Creates employment Entrepreneurs need workers to produce goods/services.","Organises production Entrepreneurs organise the other factors of production into production units.","Decides what commodities will be produced Entrepreneurs decide which goods and services are going to be produced and in what quantities, by anticipating consumer demand.","Decides prices to be charged Entrepreneurs decide what price to charge for their goods and services hoping there will be a demand at these price levels.","Encourages further investment Entrepreneurs put both their money and skills into a business in the hope of making a profit and this may encourage further investment in the economy if successful.","Provides an outlet for savers funds Entrepreneurs provide an investment outlet for savers funds, generating a return on savings.","Generates revenue for the government Entrepreneurs help generate revenue for the government through taxation revenues.","May increase exports If the goods produced are exported this will help improve the balance of payments position.","Creates wealth within the country / economic growth Successful entrepreneurs create wealth which helps increase the standard of living."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sa-q9", topicId: "economics-4-2", conceptId: "effects-of-cross-border-shopping",
+    section: "A", questionRef: "2010 OL Section A Q9",
+    questionText: "State two economic effects on the economy of the Republic of Ireland of an increasing number of shoppers travelling to Northern Ireland to shop (cross-border shopping).",
+    tariffModel: {"kind":"questionTotal","notation":"17","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: null, contextNote: "Any two of these. Claim the complete answer: the scheme prices the two effects 17 marks together, without saying what one effect is worth.", openList: true, group: {"claimMax":2,"perOption":null,"options":["Taxation revenue falls due to reduced VAT / Excise revenues to the Irish government.","Unemployment: Job losses in the republic due to reduced spending and closure of some businesses.","More competitive pricing: Retailers in the South may reduce prices in order to compete with retailers in Northern Ireland.","Taxation policy: The Irish government may consider reducing VAT in the Republic of Ireland to reduce the price difference between North and South.","Increased imports into the Republic resulting in an adverse effect on the balance of payments position / reduced circular flow of income within the country.","Closure of businesses / bankruptcy due to decreased demand, sales and revenues.","Pressure to change government policies by business organisations i.e. IBEC to change economic policies so as to reduce costs in the retail sector."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q1-a-i", topicId: "economics-2-0", conceptId: "lines-of-the-monopolist",
+    section: "B", questionRef: "2010 OL Section B Q1(a)(i)",
+    stem: "The diagram below represents a Monopoly firm in equilibrium.",
+    questionText: "Copy the diagram into your answerbook. Clearly label each of the lines numbered 1 to 3.",
+    tariffModel: {"kind":"fixed","notation":"3 @ 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1 — Marginal Cost", marks: 4, contextNote: "Line 1, 4 marks ( 2 + 2 ).", openList: true },
+    { id: "r-2", kind: "point", verbatim: "2 — Average Cost", marks: 4, contextNote: "Line 2, 4 marks ( 2 + 2 ).", openList: true },
+    { id: "r-3", kind: "point", verbatim: "3 — Marginal Revenue", marks: 4, contextNote: "Line 3, 4 marks ( 2 + 2 ).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2010-OL-paper-p04-q1-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-paper-p04-q1-diagram.png",
+          "srcHash": "aa0da4408a61f437579022496f08cd17",
+          "alt": "A diagram titled Monopoly, the vertical axis Price and the horizontal axis Quantity: a straight falling line labelled AR, a steeper falling line 3, a U-shaped curve 2 and a curve 1 rising steeply. A line rises from Q1 on the horizontal axis to a dot on the AR line, passing a second dot where it meets curve 2.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q1-a-ii", topicId: "economics-2-0", conceptId: "price-and-cost-of-the-monopolist",
+    section: "B", questionRef: "2010 OL Section B Q1(a)(ii)",
+    stem: "The diagram below represents a Monopoly firm in equilibrium.",
+    questionText: "The above firm produces Q1. Show on your diagram: • the price the firm will charge for Q1. (use label P1) • the average cost of producing this output. (use label C1)",
+    tariffModel: {"kind":"fixed","notation":"5 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each label shown", marks: 9, contextNote: "Both: 1st correct response: 5 marks. 2nd correct response: 4 marks. P1 is level with the point where the line up from Q1 meets the AR line, and C1 with the point where it meets the average cost curve, as the scheme’s diagram shows.", openList: true, group: {"claimMax":2,"perOption":5,"options":["P1 the price charged for this output","C1 the average cost of producing this output"],"perOptionSteps":[5,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2010-OL-paper-p04-q1-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-paper-p04-q1-diagram.png",
+          "srcHash": "aa0da4408a61f437579022496f08cd17",
+          "alt": "A diagram titled Monopoly, the vertical axis Price and the horizontal axis Quantity: a straight falling line labelled AR, a steeper falling line 3, a U-shaped curve 2 and a curve 1 rising steeply. A line rises from Q1 on the horizontal axis to a dot on the AR line, passing a second dot where it meets curve 2.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2010-OL-scheme-p09-q1a-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-scheme-p09-q1a-diagram.png",
+          "srcHash": "326ccee2aaf3310457cf5f77f644e178",
+          "alt": "The marking scheme’s diagram titled Monopoly, the vertical axis Price and the horizontal axis Quantity: a straight falling line AR, a steeper falling line labelled Marginal Revenue, a U-shaped curve labelled Average Cost, and a curve labelled Marginal Cost rising steeply through the point E where it crosses Marginal Revenue. A line rises from Q1 on the horizontal axis through E to a dot on the AR line, from which an arrow runs left to P1 on the vertical axis; a second arrow runs left to C1 from a lower dot, where the same line meets the Average Cost curve.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q1-b", topicId: "economics-2-0", conceptId: "barriers-to-entry-with-examples",
+    section: "B", questionRef: "2010 OL Section B Q1(b)",
+    questionText: "Explain each of the following barriers to entry and illustrate your answer with an example in each case: • Patents and Copyrights; • Legal monopolies/state monopolies; • Economies of scale.",
+    tariffModel: {"kind":"fixed","notation":"12 + 6 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each barrier explained, with an example", marks: 24, contextNote: "All three, each with an example: 1st Correct explanation 12 marks, the 2nd and 3rd at 6 marks each. The scheme’s examples for each barrier are in its table, shown with the answer.", openList: true, group: {"claimMax":3,"perOption":12,"options":["Patents and Copyrights — A patent/ copyright confers the sole right on a business to a particular manufacturing process for a particular commodity.","Legal monopolies / state monopolies — The government may grant to a company the sole right to supply a good or service so that there is a legal restriction on competition.","Economies of scale — Arise where the largest supplier in an industry has a significant cost advantage over competitors because of its large size. It is unlikely that a potential competitor would be willing to make the capital investment needed to enter the monopolist's market."],"perOptionSteps":[12,6,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2010-OL-scheme-p10-q1b-table",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-scheme-p10-q1b-table.png",
+          "srcHash": "fd53e52d643a536ef71f935d0128a2c7",
+          "alt": "The marking scheme’s table of the three barriers, each explanation beside its examples. Patents and Copyrights: A patent/ copyright confers the sole right on a business to a particular manufacturing process for a particular commodity; examples iPad and Apple iPhone. Legal monopolies / state monopolies: The government may grant to a company the sole right to supply a good or service so that there is a legal restriction on competition; examples Provision of bus services in Dublin City by Dublin Bus, An Post letter post and Iarnród Eireann. Economies of scale: Arise where the largest supplier in an industry has a significant cost advantage over competitors because of its large size. It is unlikely that a potential competitor would be willing to make the capital investment needed to enter the monopolist's market; examples Gas pipeline, Eircom: telephone lines, ESB: Grid lines and Iarnrod Eireann: Train tracks.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q1-c-i", topicId: "economics-2-0", conceptId: "advantages-of-the-an-post-monopoly",
+    section: "B", questionRef: "2010 OL Section B Q1(c)(i)",
+    stem: "An Post is a monopoly firm in the delivery of ‘letter-post’. The demand for letter-post is falling and some small rural post offices are being closed.",
+    questionText: "State and explain two advantages of this monopoly for consumers.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":5,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An advantage — any two", marks: 10, contextNote: "Two advantages, 5 marks each (3 to state it, 2 to explain it).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Convenience The post offices are spread throughout the country and are open six days a week which is very convenient for members of the public.","Relatively cheap cost of the service/ provision of unprofitable services The cost of this service is relatively cheap at 55c per standard letter / letter post is delivered to all parts of the country even remote areas where it may be unprofitable to do so.","Range of services provided A post office in a rural area ensures the provision of many essential services e.g. collection of state benefits; bill payments; facilities for savings; money transmission etc.","Banking services in areas where no banks operate. People can use their AIB bank account in the post office where AIB does not have a branch.","Social benefits Delivery of post means that people who are housebound will have contact with an individual thereby ensuring their wellbeing. The local post office provides a meeting place for people."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q1-c-ii", topicId: "economics-1-1", conceptId: "why-letter-post-demand-is-falling",
+    section: "B", questionRef: "2010 OL Section B Q1(c)(ii)",
+    stem: "An Post is a monopoly firm in the delivery of ‘letter-post’. The demand for letter-post is falling and some small rural post offices are being closed.",
+    questionText: "Explain two reasons for the falling demand for letter-post.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":3,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 10, contextNote: "Two reasons, 5 marks each (3 + 2).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Change in the price of the good. The increased cost of posting a letter has led to a reduction in demand by consumers.","Change in consumer tastes / fashion. Shift to other forms of communication such as texting, phone calls e-mails & fax messages.","Change in price of substitutes. The price of alternative means of communicating is relatively cheaper hence an increase in the use of texting; e-mails etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q1-c-iii", topicId: "economics-3-2", conceptId: "closing-rural-post-offices",
+    section: "B", questionRef: "2010 OL Section B Q1(c)(iii)",
+    stem: "An Post is a monopoly firm in the delivery of ‘letter-post’. The demand for letter-post is falling and some small rural post offices are being closed.",
+    questionText: "Discuss two effects of the closure of small rural post offices for the local economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":4,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 10, contextNote: "Two effects, 5 marks each (3 + 2).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Loss of essential services. The provision of essential services like the collection of state benefits; bill payments; facilities for savings; money transmission etc. is lost to the communities served by these post offices.","Loss of banking services. People in these rural areas will no longer be able to avail of An Post banking services.","Increase in rural unemployment. The people who operated these post offices will lose their jobs and other small business may be forced to close also due to lack of business.","Decline in rural communities. The loss of essential services may mean that these communities are no longer viable making them less attractive places to live in. Also, with less economic activity taking place there are less opportunities for new businesses to develop."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q2-a-i", topicId: "economics-1-1", conceptId: "marginal-utility",
+    section: "B", questionRef: "2010 OL Section B Q2(a)(i)",
+    questionText: "As consumers consume more units of a good their marginal utility will eventually fall. Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"5 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Marginal utility is the extra utility /satisfaction gained", marks: 5, contextNote: "The extra utility or satisfaction, 5 marks: the scheme prints 7 marks beside the ask, and 5 marks and 2 marks beneath the two halves of its sentence, read here in that order.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "when you consume one extra unit of a good.", marks: 2, contextNote: "One extra unit, 2 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q2-a-ii", topicId: "economics-1-1", conceptId: "a-good-whose-utility-may-not-fall",
+    section: "B", questionRef: "2010 OL Section B Q2(a)(ii)",
+    stem: "As consumers consume more units of a good their marginal utility will eventually fall.",
+    questionText: "Suggest one good a person may consume which may not result in a fall in their marginal utility. Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"5 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-good", kind: "anyN", verbatim: "A good — any one", marks: 5, contextNote: "The good, 5 marks: the scheme names three and adds “etc.”", openList: true, group: {"claimMax":1,"perOption":5,"options":["Cigarettes","Alcohol","Medicines"]} },
+    { id: "r-explanation", kind: "anyN", verbatim: "The explanation — any one", marks: 3, contextNote: "The explanation, 3 marks.", openList: true, group: {"claimMax":1,"perOption":3,"options":["For addictive goods the consumer may get the same utility from each extra unit consumed.","Medicine: each additional dose is as important as the previous one.","For addictive goods larger and larger quantities may be required to ‘fulfil the need’ of the consumer."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q2-a-iii", topicId: "economics-1-1", conceptId: "when-diminishing-marginal-utility-sets-in",
+    section: "B", questionRef: "2010 OL Section B Q2(a)(iii)",
+    stem: "As consumers consume more units of a good their marginal utility will eventually fall.",
+    questionText: "Complete the following table in your answerbook. State at what point diminishing marginal utility sets in and explain your choice.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2 + 2 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-4", kind: "point", verbatim: "4 — 20", marks: 2, contextNote: "The marginal utility of the 4th unit, 2 marks: 95 less 75.", openList: true },
+    { id: "r-5", kind: "point", verbatim: "5 — 15", marks: 2, contextNote: "The 5th unit, 2 marks: 110 less 95.", openList: true },
+    { id: "r-6", kind: "point", verbatim: "6 — 5", marks: 2, contextNote: "The 6th unit, 2 marks: 115 less 110. The scheme prints 2 marks 2 marks 2 marks beneath the three values.", openList: true },
+    { id: "r-point", kind: "point", verbatim: "After the 3rd unit is consumed / on the consumption of the 4th unit", marks: 2, contextNote: "Where diminishing marginal utility sets in, 2 marks.", openList: true },
+    { id: "r-why", kind: "point", verbatim: "On the consumption of the 4th unit the consumer’s marginal utility has fallen from 40 units to 20 units.", marks: 2, contextNote: "The explanation, 2 marks. The completed table is shown with the answer.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2010-OL-paper-p05-q2a-table",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-paper-p05-q2a-table.png",
+          "srcHash": "21bd4c3e3f63b4d7c42929f93f62e483",
+          "alt": "A table: Number of units consumed 1 to 6; Total utility in units 10, 35, 75, 95, 110 and 115; Marginal utility in units 10, 25 and 40, then a question mark for each of units 4, 5 and 6.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2010-OL-scheme-p12-q2aiii-table",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-scheme-p12-q2aiii-table.png",
+          "srcHash": "e73847d9b1167d5c75fd61353466ac71",
+          "alt": "The marking scheme’s completed table. Number of units consumed 1 to 6; Total utility in units 10, 35, 75, 95, 110 and 115; Marginal utility in units 10, 25 and 40, then the three answers in large bold type: 20, 15 and 5.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q2-b-i", topicId: "economics-1-0", conceptId: "a-black-market",
+    section: "B", questionRef: "2010 OL Section B Q2(b)(i)",
+    questionText: "The diagram below represents the supply of seats for the Rihanna concert in the O2 Stadium. After the tickets for the concert are sold a ‘black market’ may develop for the tickets. Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A black market — either", marks: 6, contextNote: "The explanation, 6 marks: the scheme accepts either.", openList: true, group: {"claimMax":1,"perOption":6,"options":["An unofficial /illegal market.","Sellers offer tickets on this market at prices other than their face value."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2010-OL-paper-p05-q2b-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-paper-p05-q2b-diagram.png",
+          "srcHash": "7b2cb7817de7593abb48a97f5e3f1f96",
+          "alt": "A diagram, the vertical axis Price and the horizontal axis No. of seats, with a thick vertical line S1 rising from the horizontal axis.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q2-b-ii", topicId: "economics-1-0", conceptId: "a-fixed-supply-of-seats",
+    section: "B", questionRef: "2010 OL Section B Q2(b)(ii)",
+    stem: "The diagram below represents the supply of seats for the Rihanna concert in the O2 Stadium. After the tickets for the concert are sold a ‘black market’ may develop for the tickets.",
+    questionText: "Explain the relationship between the price of tickets and the supply of seats, as shown in the diagram.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "As the price of tickets change the supply of seats remains unchanged / fixed.", marks: 6, contextNote: "The relationship, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2010-OL-paper-p05-q2b-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-paper-p05-q2b-diagram.png",
+          "srcHash": "7b2cb7817de7593abb48a97f5e3f1f96",
+          "alt": "A diagram, the vertical axis Price and the horizontal axis No. of seats, with a thick vertical line S1 rising from the horizontal axis.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q2-b-iii", topicId: "economics-1-0", conceptId: "effects-of-a-ticket-black-market",
+    section: "B", questionRef: "2010 OL Section B Q2(b)(iii)",
+    stem: "The diagram below represents the supply of seats for the Rihanna concert in the O2 Stadium. After the tickets for the concert are sold a ‘black market’ may develop for the tickets.",
+    questionText: "Discuss two effects for potential ticket buyers if a ‘black market’ develops for the tickets.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 4","answer":2,"ofParts":4,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 8, contextNote: "Two effects, 4 marks each.", openList: true, group: {"claimMax":2,"perOption":4,"options":["It is likely that tickets will sell for a much higher price.","There is a possibility that the tickets could be ‘fake’ and so entry is prohibited to the concert.","Additional security procedures may be introduced to gain entry into the concert, thus preventing the entry of any holders of forged tickets.","Promoters, seeing that demand exceeds supply, may offer an extra date for another concert."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2010-OL-paper-p05-q2b-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-paper-p05-q2b-diagram.png",
+          "srcHash": "7b2cb7817de7593abb48a97f5e3f1f96",
+          "alt": "A diagram, the vertical axis Price and the horizontal axis No. of seats, with a thick vertical line S1 rising from the horizontal axis.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q2-c-i", topicId: "economics-1-1", conceptId: "why-hotel-demand-is-falling",
+    section: "B", questionRef: "2010 OL Section B Q2(c)(i)",
+    stem: "The demand for hotel accommodation in Ireland has been decreasing.",
+    questionText: "State and explain two possible economic reasons for this development.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":5,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 10, contextNote: "Two reasons, 5 marks each (3 to state it, 2 to explain it).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Drop in incomes/ holidays a luxury item in an economic downturn. Consumer incomes have fallen, resulting in reduced demand for hotel accommodation (luxury good).","Increase in savings. Consumers are cautious about spending due to their fear for the future and so have reduced their spending.","Decline in foreign tourists / more expensive euro. Less foreign tourists visiting Ireland due to the worldwide economic recession/the perceived high cost of living in Ireland and the increase in the value of euro relative to the US $/£ sterling.","Economic recession With reduced economic activity business activity is declining and this has resulted in a reduced demand for hotel accommodation for business conferences; meetings etc. Businesses may choose video conferencing rather than travelling to hotel venues for meetings.","Prices of alternatives. Prices of guest houses, self catering and hostel accommodation may offer better value for money giving a cheaper alternative during a recession."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q2-c-ii", topicId: "economics-1-0", conceptId: "falling-demand-and-the-hotel-industry",
+    section: "B", questionRef: "2010 OL Section B Q2(c)(ii)",
+    stem: "The demand for hotel accommodation in Ireland has been decreasing.",
+    questionText: "State and explain two economic effects of this development for the hotel industry.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":5,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 10, contextNote: "Two effects, 5 marks each (3 + 2).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Lower revenues/ profits: with declining sales profits have fallen for existing hotels.","Closures: some hotels, unable to cover costs, have closed temporarily or permanently. Some hotels are experiencing a decline in their flow of income.","Rising Unemployment: reduced sales means fewer workers are required, resulting in job losses.","Lower prices: hotels are offering lower prices/special offers to attract consumers.","Loss making hotels: continue to trade because they are generating cash inflows to help repay loans borrowed for their development."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q2-c-iii", topicId: "economics-1-2", conceptId: "reviving-hotel-demand",
+    section: "B", questionRef: "2010 OL Section B Q2(c)(iii)",
+    stem: "The demand for hotel accommodation in Ireland has been decreasing.",
+    questionText: "Suggest two economic measures which the hotel industry could take to reverse this trend. Explain each measure.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":4,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A measure — any two", marks: 10, contextNote: "Two measures, 5 marks each (3 + 2).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Reduce prices / Improve quality of services By reducing the price of the accommodation packages available more people may consider booking hotel accommodation. Improve quality so that people feel they are getting better value for money.","Advertising / Promotion. The industry could increase awareness of the available offers within the country. The industry could offer special promotions for different groups e.g. for senior citizens etc.","Broaden the range of services / link with other local amenities Hotels could provide spa treatments; activities for children; special programmes targeting certain sectors i.e. holidays for single people etc. They could link with cruise providers, theatres etc to attract customers.","Target UK / Northern Irish consumers. The Irish Tourist Board/Tourism Ireland may offer incentives for senior citizens to holiday in Ireland and so use hotel accommodation."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q3-a", topicId: "economics-1-1", conceptId: "what-affects-demand",
+    section: "B", questionRef: "2010 OL Section B Q3(a)",
+    questionText: "State and explain four factors which affect the demand for a good or service.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 @ 5","answer":4,"ofParts":8,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A factor — any four", marks: 20, contextNote: "Four factors, 5 marks each (2 to state it, 3 to explain it).", openList: true, group: {"claimMax":4,"perOption":5,"options":["Price of the good itself. Generally as the price of a good falls consumers will buy more of that good/they are getting better value for their money.","Price of complementary good. If the price of a complementary good rises then demand for this good falls - e.g. an increase in the price of petrol will result in a drop in the demand for large cars.","Prices of substitute good. If the price of a substitute good rises then demand for this good rises, as it has become relatively cheaper e.g. if the price of butter increases the demand for margarine will increase.","Income of the consumer. For most goods as income rises the demand for them increases and vice versa e.g. smaller quantities of goods are bought when a person becomes unemployed.","The consumer’s tastes / preference for a commodity. When a commodity comes into fashion or into season there is an increase in the quantity demanded at each price. Advertising attempts to influence taste in favour of the good.","Expectations concerning future prices / availability of income. If a consumer expects that future prices are likely to be greater than they are at present, then there will be an increase in the demand for the good at each price.","Government regulations. If the government initiates a programme to curtail consumption of a particular product then it may affect the demand for a good e.g. a health education campaign to curtail cigarette consumption.","Unplanned factors. If there was a sudden heatwave this may result in an increase in the demand for suncream / icecream."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q3-b-i", topicId: "economics-1-0", conceptId: "lines-of-the-sugar-beet-market",
+    section: "B", questionRef: "2010 OL Section B Q3(b)(i)",
+    stem: "The diagram below represents the market demand and market supply for sugar beet.",
+    questionText: "Copy the diagram into your answerbook. Label each of the lines numbered 1 and 2.",
+    tariffModel: {"kind":"fixed","notation":"2 @ 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1 — SUPPLY", marks: 3, contextNote: "Line 1, 3 marks.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "2 — DEMAND", marks: 3, contextNote: "Line 2, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2010-OL-paper-p06-q3b-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-paper-p06-q3b-diagram.png",
+          "srcHash": "f9c8ce5caa109544d58cfd289122382c",
+          "alt": "A diagram, the vertical axis P and the horizontal axis Q, with a rising line 1 and a falling line 2 crossing it.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q3-b-ii", topicId: "economics-1-0", conceptId: "equilibrium-in-the-sugar-beet-market",
+    section: "B", questionRef: "2010 OL Section B Q3(b)(ii)",
+    stem: "The diagram below represents the market demand and market supply for sugar beet.",
+    questionText: "Show on your diagram: • The market equilibrium price (P1) charged for sugar beet; • The market equilibrium quantity (Q1) sold on the market.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-price", kind: "point", verbatim: "The market equilibrium price (P1) charged for sugar beet; — P1", marks: 3, contextNote: "The equilibrium price, 3 marks.", openList: true },
+    { id: "r-quantity", kind: "point", verbatim: "The market equilibrium quantity (Q1) sold on the market. — Q1", marks: 3, contextNote: "The equilibrium quantity, 3 marks: P1 and Q1 read off where the demand line crosses supply line 1, as the scheme’s diagram shows.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2010-OL-paper-p06-q3b-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-paper-p06-q3b-diagram.png",
+          "srcHash": "f9c8ce5caa109544d58cfd289122382c",
+          "alt": "A diagram, the vertical axis P and the horizontal axis Q, with a rising line 1 and a falling line 2 crossing it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2010-OL-scheme-p16-q3b-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-scheme-p16-q3b-diagram.png",
+          "srcHash": "d3f7b8b91f9b666c59821cf6d1bf90ab",
+          "alt": "The marking scheme’s diagram, the vertical axis P and the horizontal axis Q: a rising line labelled 1 - SUPPLY, a falling line labelled 2 - DEMAND crossing it, and a thick rising line labelled NEW SUPPLY CURVE to the right of line 1. Arrows run left to P1 from where the demand line crosses line 1, and to P2, lower, from where it crosses the new supply curve; arrows drop from the same two points to Q1 and to Q2, further right, on the horizontal axis.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q3-b-iii", topicId: "economics-1-2", conceptId: "a-subsidy-for-sugar-beet",
+    section: "B", questionRef: "2010 OL Section B Q3(b)(iii)",
+    stem: "The diagram below represents the market demand and market supply for sugar beet.",
+    questionText: "If the sugar beet producers received a subsidy, to encourage production of sugar beet as a bio fuel; • Show and explain the effect this would have on the market supply curve; • Show the effect this would have on the equilibrium price and equilibrium quantity. (use labels P2 and Q2)",
+    tariffModel: {"kind":"fixed","notation":"6 + 8 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    rows: [
+    { id: "r-curve", kind: "point", verbatim: "New Labelled Supply Curve.", marks: 6, contextNote: "The new supply curve, labelled, 6 marks ( 3 marks + 3 marks): drawn to the right of the old one, as the scheme’s diagram shows.", openList: true },
+    { id: "r-why", kind: "point", verbatim: "This subsidy would lower the costs of production for suppliers and so increase supply", marks: 8, contextNote: "The explanation, 8 marks.", openList: true },
+    { id: "r-p2", kind: "point", verbatim: "New lower P2.", marks: 2, contextNote: "The new price, 2 marks.", openList: true },
+    { id: "r-q2", kind: "point", verbatim: "New higher quantity supplied, Q2.", marks: 2, contextNote: "The new quantity, 2 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2010-OL-paper-p06-q3b-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-paper-p06-q3b-diagram.png",
+          "srcHash": "f9c8ce5caa109544d58cfd289122382c",
+          "alt": "A diagram, the vertical axis P and the horizontal axis Q, with a rising line 1 and a falling line 2 crossing it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2010-OL-scheme-p16-q3b-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-scheme-p16-q3b-diagram.png",
+          "srcHash": "d3f7b8b91f9b666c59821cf6d1bf90ab",
+          "alt": "The marking scheme’s diagram, the vertical axis P and the horizontal axis Q: a rising line labelled 1 - SUPPLY, a falling line labelled 2 - DEMAND crossing it, and a thick rising line labelled NEW SUPPLY CURVE to the right of line 1. Arrows run left to P1 from where the demand line crosses line 1, and to P2, lower, from where it crosses the new supply curve; arrows drop from the same two points to Q1 and to Q2, further right, on the horizontal axis.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q3-c-i", topicId: "economics-1-4", conceptId: "the-greater-fall-in-demand",
+    section: "B", questionRef: "2010 OL Section B Q3(c)(i)",
+    stem: "Suppose the Price Elasticity of Demand (PED) for two goods was as follows: iPhone: PED = - 3.8 Petrol: PED = - 0.5 If the price of each good was to increase by 10%:",
+    questionText: "Which good will experience the greatest fall in quantity demanded? Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"8 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-answer", kind: "point", verbatim: "iPhones will experience the biggest fall in quantity demanded.", marks: 8, contextNote: "The answer, 8 marks.", openList: true },
+    { id: "r-iphone", kind: "point", verbatim: "iPhone: Qd will fall by 3.8 x 10 = 38%", marks: 2, contextNote: "The iPhone’s fall, 2 marks: the scheme prints 2 marks beneath each half of its explanation.", openList: true },
+    { id: "r-petrol", kind: "point", verbatim: "while the demand for petrol will only fall by 0.5 x 10 = 5%", marks: 2, contextNote: "Petrol’s fall, 2 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q3-c-ii", topicId: "economics-1-4", conceptId: "a-luxury-and-a-necessity",
+    section: "B", questionRef: "2010 OL Section B Q3(c)(ii)",
+    stem: "Suppose the Price Elasticity of Demand (PED) for two goods was as follows: iPhone: PED = - 3.8 Petrol: PED = - 0.5 If the price of each good was to increase by 10%:",
+    questionText: "Which good would you consider a ‘luxury’ good and which would you consider a ‘necessity’? Explain your answers.",
+    tariffModel: {"kind":"fixed","notation":"8 + 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 13,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each good classed, with why — the iPhone and petrol", marks: 13, contextNote: "One answer for each good, one per group: the iPhone (the first two options) and petrol (the last two). First correct answer: 8 marks. State 6 marks. Explain 2 marks. Second correct answer: 5 marks. State 3 marks. Explain 2 marks.", openList: true, group: {"claimMax":2,"perOption":8,"options":["iPhone — Luxury goods tend to be price elastic","iPhone — When people’s income increase they tend to buy more of this good.","Petrol — Necessities tend to be price inelastic","Petrol — When people’s income fall they still tend to buy the good."],"perOptionSteps":[8,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q4-a-i", topicId: "economics-3-0", conceptId: "lines-of-the-open-circular-flow",
+    section: "B", questionRef: "2010 OL Section B Q4(a)(i)",
+    stem: "The diagram below represents the Circular Flow of Income in an open economy without Government.",
+    questionText: "State clearly what each of the lines numbered 1 to 4 represents.",
+    tariffModel: {"kind":"fixed","notation":"4 @ 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1 — Payment / for factors of production", marks: 3, contextNote: "Line 1, 3 marks: 2 marks + 1 mark (wages).", openList: true },
+    { id: "r-2", kind: "point", verbatim: "2 — Supply /commodities or goods & services", marks: 3, contextNote: "Line 2, 3 marks: 2 marks + 1 mark.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "3 — Imports", marks: 3, contextNote: "Line 3, 3 marks.", openList: true },
+    { id: "r-4", kind: "point", verbatim: "4 — Exports", marks: 3, contextNote: "Line 4, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2010-OL-paper-p07-q4a-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-paper-p07-q4a-diagram.png",
+          "srcHash": "9ada624cd9f5f375a9919c12dd2598de",
+          "alt": "The Circular Flow of Income in an open economy without Government: ovals for Households, Firms and two Foreign Markets. Line 1 runs along the top from Firms to Households. Between the two, an arrow labelled Supply factors of production runs from Households to Firms, line 2 runs back from Firms to Households, and an arrow labelled Spending on domestic goods/services runs from Households to Firms beneath it. Line 3 runs from Households down to the first Foreign Markets, and line 4 from the second Foreign Markets up to Firms.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q4-a-ii", topicId: "economics-3-0", conceptId: "activities-around-the-open-flow",
+    section: "B", questionRef: "2010 OL Section B Q4(a)(ii)",
+    stem: "The diagram below represents the Circular Flow of Income in an open economy without Government.",
+    questionText: "Referring to the diagram above, explain briefly the types of activities which take place between the following: • households and firms; • households and foreign markets; • firms and foreign markets.",
+    tariffModel: {"kind":"fixed","notation":"5 + 4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 13,
+    rows: [
+    { id: "r-households-firms", kind: "anyN", verbatim: "Households and firms — either", marks: 5, contextNote: "Households and firms, 5 marks: the scheme accepts either.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Households: supply factors of production / labour (to firms) and in return receive an income.","Firms: supply commodities (goods & services) to households, who spend their income on these."]} },
+    { id: "r-imports", kind: "point", verbatim: "Households and foreign markets — Households: spend part of their income buying imports (from foreign markets).", marks: 4, contextNote: "Households and foreign markets, 4 marks.", openList: true },
+    { id: "r-exports", kind: "point", verbatim: "Firms and foreign markets — Firms export some of their goods (to foreign markets) and receive income for these.", marks: 4, contextNote: "Firms and foreign markets, 4 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2010-OL-paper-p07-q4a-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-paper-p07-q4a-diagram.png",
+          "srcHash": "9ada624cd9f5f375a9919c12dd2598de",
+          "alt": "The Circular Flow of Income in an open economy without Government: ovals for Households, Firms and two Foreign Markets. Line 1 runs along the top from Firms to Households. Between the two, an arrow labelled Supply factors of production runs from Households to Firms, line 2 runs back from Firms to Households, and an arrow labelled Spending on domestic goods/services runs from Households to Firms beneath it. Line 3 runs from Households down to the first Foreign Markets, and line 4 from the second Foreign Markets up to Firms.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q4-b-i", topicId: "economics-3-0", conceptId: "national-income-with-trade",
+    section: "B", questionRef: "2010 OL Section B Q4(b)(i)",
+    stem: "Given: National Income as Y = C + I + G + (X - M).",
+    questionText: "If National Income, without imports and exports, is €1,500m calculate national income if exports are €70m and imports are €100m. Show your workings.",
+    tariffModel: {"kind":"fixed","notation":"10 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-working", kind: "point", verbatim: "€1,500m + €70m - €100m", marks: 10, contextNote: "The working, 10 marks: Each correct underlined component 2 mark = 10 marks. The scheme underlines five: €1,500m, the plus, €70m, the minus and €100m. The working is shown with the answer.", openList: true },
+    { id: "r-answer", kind: "point", verbatim: "€1,470m", marks: 2, contextNote: "The answer, 2 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2010-OL-scheme-p19-q4bi-working",
+          "src": "/exam-figures/economics/markbank/economics-2010-OL-scheme-p19-q4bi-working.png",
+          "srcHash": "35dd5f44759596fd9ae025bad712010d",
+          "alt": "The marking scheme’s working, in two columns. WORKINGS: Y = €1,500m + X – M., then €1,500m + €70m - €100m with each of its five parts underlined (€1,500m, the plus, €70m, the minus and €100m), and beneath them “Each correct underlined component 2 mark = 10 marks.” ANSWER: €1,470m, 2 marks.",
+          "attribution": "SEC Leaving Certificate Economics 2010 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q4-b-ii", topicId: "economics-3-0", conceptId: "the-multiplier-by-example",
+    section: "B", questionRef: "2010 OL Section B Q4(b)(ii)",
+    questionText: "The economist John Maynard Keynes developed the concept of the Multiplier to help understand how an economy works. Explain, using an example, the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "If the multiplier for an economy is 2 and there in an injection of €10m into the economy then national income will increase by €20m.", marks: 8, contextNote: "The multiplier explained by an example, 8 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q4-c-i", topicId: "economics-3-2", conceptId: "emigration-and-immigration",
+    section: "B", questionRef: "2010 OL Section B Q4(c)(i)",
+    stem: "There is more emigration than immigration in Ireland at present.",
+    questionText: "Explain the two underlined terms.",
+    tariffModel: {"kind":"fixed","notation":"3 + 2 + 3 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-emig-who", kind: "point", verbatim: "Emigration — Movement of Irish nationals", marks: 3, contextNote: "Emigration, the movement of Irish nationals, 3 marks: the scheme prints ( 3 ) and ( 2 ) beside the two halves of each explanation, 5 marks for each term.", openList: true },
+    { id: "r-emig-where", kind: "point", verbatim: "Emigration — to reside elsewhere", marks: 2, contextNote: "Emigration, to reside elsewhere, 2 marks.", openList: true },
+    { id: "r-immig-who", kind: "point", verbatim: "Immigration — Movement of foreign nationals", marks: 3, contextNote: "Immigration, the movement of foreign nationals, 3 marks.", openList: true },
+    { id: "r-immig-where", kind: "point", verbatim: "Immigration — to reside in Ireland", marks: 2, contextNote: "Immigration, to reside in Ireland, 2 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q4-c-ii", topicId: "economics-3-2", conceptId: "why-emigration-exceeds-immigration",
+    section: "B", questionRef: "2010 OL Section B Q4(c)(ii)",
+    stem: "There is more emigration than immigration in Ireland at present.",
+    questionText: "State and explain two reasons for the above situation.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":6,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 10, contextNote: "Two reasons, 5 marks each (2 to state it, 3 to explain it).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Economic recession in Ireland. This has resulted in increasing unemployment and with fewer job opportunities people are emigrating/ FDI is relocating to low cost economies.","Wage rates in Ireland. Wage rates in Ireland are falling. This means that the standard of living is declining and so people are seeking a better standard of living abroad.","Prospects for economic recovery are poor. Some people are concerned for the future and so are seeking job opportunities elsewhere.","Foreign nationals returning to their home countries. With the decline in the economy many foreign nationals who came to Ireland for work in the boom period are now returning home because of the lack of employment opportunities and the high cost of living in Ireland.","Job opportunities abroad. Those people who can are emigrating to find available jobs in those countries where vacancies exist e.g. Canada; Australia and London (construction jobs in UK in the run up to the 2012 Olympics).","Rising levels of taxation in Ireland. The introduction of the various income levies have resulted in a reduced standard of living. Those people who are mobile may seek a higher standard of living abroad."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q4-c-iii", topicId: "economics-3-2", conceptId: "emigration-labour-and-state-services",
+    section: "B", questionRef: "2010 OL Section B Q4(c)(iii)",
+    stem: "There is more emigration than immigration in Ireland at present.",
+    questionText: "State and explain the possible economic effects which increased emigration may have on each of the following: • Irish Labour market; • Demand for State services;",
+    tariffModel: {"kind":"fixed","notation":"2 x 5 (2 + 3)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-labour", kind: "anyN", verbatim: "Irish Labour market — any one", marks: 5, contextNote: "One effect on the Irish labour market, 5 marks (2 to state it, 3 to explain it): the scheme prints 2 x 5 marks, 2 x 2 marks each beneath its statements and 2 x 3 marks each beneath its explanations. It prints four statements beside two explanations; each explanation is paired with the statement it restates, and the other two statements stand alone.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Decreases in size — With increasing emigration the size/nature of the labour market will fall/change.","Increased dependency ratio","Labour shortages may develop — With increased emigration shortages of labour may develop in certain sectors resulting in raising wage levels to fill the shortages.","Loss of skills"]} },
+    { id: "r-services", kind: "point", verbatim: "Demand for State services — May decrease. — With less people living in Ireland the demand for all services provided by the state will decrease e.g. education, health, housing, state benefits etc.", marks: 5, contextNote: "The effect on the demand for State services, 5 marks (2 + 3): the scheme gives one.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q5-a", topicId: "economics-3-1", conceptId: "direct-tax-capital-spending-and-the-national-debt",
+    section: "B", questionRef: "2010 OL Section B Q5(a)(i)–(iii)",
+    questionText: "Explain the following terms: (i) Direct tax; (ii) Government Capital Spending; (iii) National debt.",
+    tariffModel: {"kind":"fixed","notation":"7 + 7 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each term explained — one for each", marks: 20, contextNote: "One explanation for each term, one per term: the scheme prints (7 marks +7 marks +6 marks) beneath its table without saying which term earns which, claimed here as the first two correct answers 7 each and the 3rd 6. The scheme gives two explanations of a direct tax.", openList: true, group: {"claimMax":3,"perOption":7,"options":["Direct tax — a tax on incomes / property / wealth of people /of firms","Direct tax — a tax paid directly to the government","Government Capital Spending — any outlay by government that provides long-term benefits/infrastructure","National debt — this is the total amount of government borrowing not repaid to date"],"perOptionSteps":[7,7,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q5-b-i", topicId: "economics-3-1", conceptId: "explaining-the-canons-of-taxation",
+    section: "B", questionRef: "2010 OL Section B Q5(b)(i)",
+    stem: "The economist Adam Smith developed the following Canons of Taxation as principles which could ensure a good taxation system. EQUITY ECONOMY CERTAINTY CONVENIENCE",
+    questionText: "Explain each of the above canons of taxation.",
+    tariffModel: {"kind":"fixed","notation":"4 @ 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "r-equity", kind: "anyN", verbatim: "Equity — either", marks: 5, contextNote: "Equity, 5 marks: the scheme accepts either (4 at 5 marks each per correct explanation).", openList: true, group: {"claimMax":1,"perOption":5,"options":["The ability of each person to pay the tax must be taken into account","Takes a higher proportion of income in tax as income rises"]} },
+    { id: "r-economy", kind: "anyN", verbatim: "Economy — either", marks: 5, contextNote: "Economy, 5 marks: either.", openList: true, group: {"claimMax":1,"perOption":5,"options":["the revenue collected should exceed the costs of collection","the costs of assessment and collection should be as low as possible."]} },
+    { id: "r-certainty", kind: "point", verbatim: "the taxpayer/collector should know how much tax to pay / is to be collected", marks: 5, contextNote: "Certainty, 5 marks.", openList: true },
+    { id: "r-convenience", kind: "anyN", verbatim: "Convenience — either", marks: 5, contextNote: "Convenience, 5 marks: either.", openList: true, group: {"claimMax":1,"perOption":5,"options":["the tax should be collected in a way / manner which is convenient to the taxpayer.","the tax should be collected at a time which is convenient to the taxpayer."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q5-b-ii", topicId: "economics-3-1", conceptId: "a-further-principle-of-taxation",
+    section: "B", questionRef: "2010 OL Section B Q5(b)(ii)",
+    stem: "The economist Adam Smith developed the following Canons of Taxation as principles which could ensure a good taxation system. EQUITY ECONOMY CERTAINTY CONVENIENCE",
+    questionText: "In addition to these canons discuss one further principle you would consider important to a good taxation system.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 5","answer":1,"ofParts":4,"perPart":5}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A principle — any one", marks: 5, contextNote: "One principle, 5 marks.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Redistribution — The tax should help the government re-distribute the wealth of the country / achieve other economic objectives.","Evasion — It should be impossible to evade paying the tax.","Incentive to work/save — The tax should not act as a disincentive to work, save or invest.","Brain drain. — The tax rate should not be so high as to discourage people from working in Ireland."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q5-c-i", topicId: "economics-1-3", conceptId: "effects-of-third-level-fees",
+    section: "B", questionRef: "2010 OL Section B Q5(c)(i)",
+    questionText: "Discuss the possible economic effects which the following proposals, if implemented, could have on the Irish economy. Introduction of third level college fees",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":7,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 10, contextNote: "Two effects of third level college fees, 5 marks each: the scheme prints 3 x 10 marks each: 2 distinct points at 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Current expenditure by government will decrease as it now would no longer have to pay for the fees.","As families now pay the fees this will reduce their disposable income and so spending falls resulting in a decrease in indirect tax revenue collected.","Some people may not now be able to attend college and have to rely on state benefits which will result in increased government current expenditure.","Less qualified people available to develop the smart economy.","Opportunity costs: government now has this money available for other uses / reduced borrowing.","Equity: those who can afford to do so can now pay for themselves.","With a reduction in skills the country may become a less attractive location for investment."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q5-c-ii", topicId: "economics-3-1", conceptId: "effects-of-a-later-retirement-age",
+    section: "B", questionRef: "2010 OL Section B Q5(c)(ii)",
+    questionText: "Discuss the possible economic effects which the following proposals, if implemented, could have on the Irish economy. Increase in the statutory retirement age from 65 to 68 years",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":4,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 10, contextNote: "Two effects of the later retirement age, 5 marks each: the scheme prints 3 x 10 marks each: 2 distinct points at 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Government finances should improve as people will be paying tax for longer.","Will result in a reduction in the number of people seeking pensions and so reduce government current expenditure.","Less job vacancies for young people may mean that unemployment may increase and so this will increase government current expenditure.","With less job vacancies it may result in an increase in emigration."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q5-c-iii", topicId: "economics-3-1", conceptId: "effects-of-a-household-property-tax",
+    section: "B", questionRef: "2010 OL Section B Q5(c)(iii)",
+    questionText: "Discuss the possible economic effects which the following proposals, if implemented, could have on the Irish economy. Introduction of a household property tax",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":5,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 10, contextNote: "Two effects of a household property tax, 5 marks each: the scheme prints 3 x 10 marks each: 2 distinct points at 5 marks each.", openList: true, group: {"claimMax":2,"perOption":5,"options":["This should lead to an increase in government taxation revenue.","Disposable incomes will drop resulting in a reduction in spending and so less indirect tax revenue collected e.g. VAT / Excise duties.","May result in less people buying houses, so reduced demand leading to lower house prices and unemployment in the construction and related sectors.","Inequitable: may be regressive if ability to pay is not taken in to account.","Purchasing / speculation in the property market may decline resulting in Lower prices."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q6-a", topicId: "economics-3-4", conceptId: "barter-interest-and-creditworthiness",
+    section: "B", questionRef: "2010 OL Section B Q6(a)(i)–(iii)",
+    questionText: "Explain the following terms: (i) Barter; (ii) Interest rate; (iii) Creditworthy customer.",
+    tariffModel: {"kind":"fixed","notation":"7 + 7 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each term explained — one for each", marks: 20, contextNote: "One explanation for each term, one per term: the scheme prints (7 marks +7 marks + 6 marks) beneath its table without saying which term earns which, claimed here as the first two correct answers 7 each and the 3rd 6. The scheme gives two explanations of a creditworthy customer.", openList: true, group: {"claimMax":3,"perOption":7,"options":["Barter — Swapping of one item for another.","Interest rate — the price of money / the cost of borrowing / the return on savings","Creditworthy customer — able to repay loans /other debts on time","Creditworthy customer — showing that one can behave in a financially responsible way"],"perOptionSteps":[7,7,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q6-b-i", topicId: "economics-3-4", conceptId: "commercial-banks-in-ireland",
+    section: "B", questionRef: "2010 OL Section B Q6(b)(i)",
+    questionText: "Name two commercial banks operating in Ireland.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 3","answer":2,"ofParts":4,"perPart":3}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A commercial bank — any two", marks: 6, contextNote: "Two banks, 3 marks each.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Allied Irish Banks","Bank of Ireland","Permanent TSB","Ulster Bank"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q6-b-ii", topicId: "economics-3-4", conceptId: "functions-of-commercial-banks",
+    section: "B", questionRef: "2010 OL Section B Q6(b)(ii)",
+    questionText: "Discuss two main functions of commercial banks.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":6,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A function — any two", marks: 10, contextNote: "Two functions, 5 marks each (3 to state it, 2 to explain it). The paper prints this part as “(i)” by misprint; the scheme numbers it (ii).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Savings Facilities Commercial banks offer security for depositors’ funds and pay interest on their savings.","Lending A range of loans, overdrafts and mortgages are provided by commercial banks.","Operate cheque system/current accounts They enable the business community and the general public to make payments by cheque/they provide an efficient clearing system for cheques.","24 Hour Banking This service is operated through a variety of methods including ATM’s, telephone banking and internet banking.","Computerised Transfer of Money/Automated Bill Payment Included in the range of automated fund transfer facilities offered by commercial banks are standing orders, direct debits, credit transfers and pay-path.","Foreign Exchange Commercial banks have a range of facilities which enable international traders and the public to make or receive payment in foreign currencies e.g. eurocheques, foreign currency."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q6-b-iii", topicId: "economics-3-4", conceptId: "why-regulate-commercial-banks",
+    section: "B", questionRef: "2010 OL Section B Q6(b)(iii)",
+    questionText: "Outline one economic reason why commercial banks should be regulated.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 4","answer":1,"ofParts":5,"perPart":4}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any one", marks: 4, contextNote: "One reason, 4 marks (2 to state it, 2 to explain it). The paper prints this part as “(ii)” by misprint; the scheme numbers it (iii).", openList: true, group: {"claimMax":1,"perOption":4,"options":["Protect consumers. Regulation will ensure that the interests of the banks’ consumers are protected and that savers’ deposits are secure.","Proper lending policies. Regulation will ensure that the banks follow correct lending procedures and that excessive/reckless lending is avoided.","Banking system stability. Regulation will ensure that the banking system should remain stable.","Economic stability / confidence. Proper regulation may ensure that the banks operate efficiently resulting in public confidence in the banking system / allow for the flow of credit and for economic growth of the economy. Prevent a “run on the banks” developing.","Less need for government intervention. If the banks are properly regulated then there will be less need for the government to become involved as it has had to do with the guarantees for savers deposits; nationalisation of Anglo Irish Bank and the setting up of NAMA."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q6-c-i", topicId: "economics-3-3", conceptId: "ecb-in-full",
+    section: "B", questionRef: "2010 OL Section B Q6(c)(i)",
+    stem: "The ECB decides the main interest rate within the euro zone.",
+    questionText: "What do the initials ECB represent?",
+    tariffModel: {"kind":"fixed","notation":"10","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "European Central Bank", marks: 10, contextNote: "The name, 10 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q6-c-ii", topicId: "economics-3-3", conceptId: "effects-of-higher-ecb-rates",
+    section: "B", questionRef: "2010 OL Section B Q6(c)(ii)",
+    stem: "The ECB decides the main interest rate within the euro zone.",
+    questionText: "If the ECB was to increase interest rates, state and explain the effects this development could have on each of the following: • Borrowers; • Savers; • Irish Economy.",
+    tariffModel: {"kind":"fixed","notation":"3 x 5 (3 + 2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "r-borrowers", kind: "anyN", verbatim: "Borrowers — any one", marks: 5, contextNote: "One effect on borrowers, 5 marks (3 to state it, 2 to explain it).", openList: true, group: {"claimMax":1,"perOption":5,"options":["Higher cost of borrowing — The cost of borrowing would increase so more money is needed to meet repayments.","Higher cost of borrowing — Disposable income would fall so the standard of living will fall.","Higher cost of borrowing — Less people may be encouraged to borrow, resulting in a reduced standard of living/decline in business activity."]} },
+    { id: "r-savers", kind: "anyN", verbatim: "Savers — any one", marks: 5, contextNote: "One effect on savers, 5 marks (3 + 2).", openList: true, group: {"claimMax":1,"perOption":5,"options":["Higher returns — Savers would earn a higher rate of return on their savings.","Higher returns — This may encourage people to save more."]} },
+    { id: "r-economy", kind: "anyN", verbatim: "Irish Economy — any one", marks: 5, contextNote: "One effect on the Irish economy, 5 marks (3 + 2). The scheme prints three statements (the national debt, economic growth and demand for wage increases) beside four explanations: the first and third explanations restate the national debt and wage demands and are set beside them, and the other two stand alone.", openList: true, group: {"claimMax":1,"perOption":5,"options":["National Debt. — Cost of repaying interest on the National debt increases.","Less spending by consumers may result in reduced tax revenues for the government. With reduced revenue, spending by the government on services may fall.","Demand for wage increases. — Workers may demand wage increases to compensate for reduction in the standard of living.","Job losses may result in increased social welfare expenditure."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q6-c-iii", topicId: "economics-3-4", conceptId: "functions-of-the-central-bank",
+    section: "B", questionRef: "2010 OL Section B Q6(c)(iii)",
+    stem: "The ECB decides the main interest rate within the euro zone.",
+    questionText: "State and explain two functions of the Central Bank of Ireland.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":8,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A function — any two", marks: 10, contextNote: "Two functions, 5 marks each (3 to state it, 2 to explain it).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Prints / Issues legal tender. • The Central Bank has the sole authority to print and mint euro currency in Ireland. • It distributes the euro through the financial institutions within Ireland.","Governments Bank. • All government revenues are paid into the central bank. • All payments made by the government are taken out of the government’s account in the bank. • Keeps the government’s accounts.","Bankers' Bank. • It acts as a Clearing House for the commercial banks who maintain accounts here. • The Central Bank acts as lender of last resort.","Regulator of Financial sector / Issues licences to financial institutions. • It regulates the financial sector in Ireland including credit unions, building societies, the IFSC operations, etc.","Official external reserves. • These are this country’s official holdings of gold, foreign currencies and other reserves held as security against the issue of the euro. • The Central Bank manages these reserves on behalf of the country.","Maintain Price Stability. The key role which the Central Bank plays is to maintain price stability through the ECBs monetary policy operations so as to ensure competitiveness within the EU.","Provides Consumer Information / Economic Research – Central Bank Reports. • The Central Bank regularly provides information on all aspects of the economy through its Central Bank reports and provision of statistics relating to the Irish economy. • It also conducts research on various matters concerning the economy.","Implements EU monetary policy • The Central Bank, on behalf of the ECB, implements the base interest rate in the economy. It monitors money supply and the availability of credit in Ireland."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q7-a-i", topicId: "economics-3-0", conceptId: "cso-in-full",
+    section: "B", questionRef: "2010 OL Section B Q7(a)(i)",
+    stem: "Consumer prices fell at an annual rate of 6.6% in October 2009, according to figures issued by the CSO.",
+    questionText: "What do the initials CSO represent?",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Central Statistics Office", marks: 6, contextNote: "The name, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q7-a-ii", topicId: "economics-3-3", conceptId: "falling-consumer-prices",
+    section: "B", questionRef: "2010 OL Section B Q7(a)(ii)",
+    stem: "Consumer prices fell at an annual rate of 6.6% in October 2009, according to figures issued by the CSO.",
+    questionText: "State the economic term used for the situation underlined above.",
+    tariffModel: {"kind":"fixed","notation":"4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Deflation", marks: 4, contextNote: "The term, 4 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q7-a-iii", topicId: "economics-3-3", conceptId: "effects-of-deflation",
+    section: "B", questionRef: "2010 OL Section B Q7(a)(iii)",
+    stem: "Consumer prices fell at an annual rate of 6.6% in October 2009, according to figures issued by the CSO.",
+    questionText: "Discuss the effects which the above development may have for each of the following: • People in receipt of social welfare; • Savers; • Employees.",
+    tariffModel: {"kind":"fixed","notation":"3 x 5 (3 + 2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "r-welfare", kind: "anyN", verbatim: "Social Welfare Recipients — any one", marks: 5, contextNote: "One effect on people in receipt of social welfare, 5 marks (3 to state it, 2 to explain it): 3 at 5 marks each: 3 marks + 2marks. Each statement is set beside the explanation that restates it; an explanation that restates none stands alone.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Lower cost of living — The cost of living would decrease with lower prices.","Improved standard of living — Purchasing power would increase so the standard of living will rise/ fixed incomes will buy more goods/services.","Government may reduce rates of social welfare in an effort to save money."]} },
+    { id: "r-savers", kind: "anyN", verbatim: "Savers — any one", marks: 5, contextNote: "One effect on savers, 5 marks (3 + 2).", openList: true, group: {"claimMax":1,"perOption":5,"options":["Increased rate of return — Savers would earn a higher real rate of return on their savings.","Increased savings — People would have more disposable income and this may encourage people to save more."]} },
+    { id: "r-employees", kind: "anyN", verbatim: "Employees — any one", marks: 5, contextNote: "One effect on employees, 5 marks (3 + 2).", openList: true, group: {"claimMax":1,"perOption":5,"options":["Increased disposable income/ higher standard of living. — With more disposable income the employees’ standard of living may rise.","Reduced wage demands. — Employees may now moderate their demands for wage increases / less industrial unrest.","Discourage spending — Deflation may discourage spending which reduces demand and may result in job losses.","Employees may increase spending and this may lead to increased demand and increased employment."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q7-b-i", topicId: "economics-3-4", conceptId: "savings",
+    section: "B", questionRef: "2010 OL Section B Q7(b)(i)",
+    questionText: "Savings within the Irish economy are increasing. Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Savings means not spending part of your income / money", marks: 8, contextNote: "The explanation, 8 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q7-b-ii", topicId: "economics-3-4", conceptId: "why-savings-are-rising",
+    section: "B", questionRef: "2010 OL Section B Q7(b)(ii)",
+    stem: "Savings within the Irish economy are increasing.",
+    questionText: "Discuss one reason for this development.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 4","answer":1,"ofParts":4,"perPart":4}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any one", marks: 4, contextNote: "One reason, 4 marks (2 to state it, 2 to explain it).", openList: true, group: {"claimMax":1,"perOption":4,"options":["Consumers behaving cautiously Due to the economic recession people are pessimistic about the future. This pessimism means that consumers are postponing spending.","Lack of confidence in the economy People are saving more ‘for a rainy day’ and trying to build up a cushion of savings for the future e.g. saving to enable them pay their mortgage in the future.","Postponing spending Consumers may save in deflationary periods as they expect the prices to fall further and therefore postpone spending.","More difficult to get credit Because it is more difficult to get loans consumers must now save in order to buy those goods which they cannot afford."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q7-b-iii", topicId: "economics-3-0", conceptId: "why-spending-beats-saving-now",
+    section: "B", questionRef: "2010 OL Section B Q7(b)(iii)",
+    stem: "Savings within the Irish economy are increasing.",
+    questionText: "State and explain two possible economic reasons why an increase in consumer spending, rather than saving, may be better for the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 4","answer":2,"ofParts":5,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 8, contextNote: "Two reasons, 4 marks each (2 + 2).", openList: true, group: {"claimMax":2,"perOption":4,"options":["Help create jobs / prevents job losses. Increased spending will increase demand and may lead to an increased demand for labour resulting in reduced unemployment.","Economic growth / stimulate economic activity. Increased spending will increase income levels within the economy and this should further stimulate economic growth and increase the standard of living.","Restore confidence in economy. Increased employment; rising income levels and an improving standard of living may help restore consumer confidence in our economy and further boost economic growth.","Improve Government finances. Indirect tax revenues should increase followed by increased direct tax revenue (from increased employment) and this combined with reduced social welfare payments should improve government finances.","Investment by entrepreneurs. Improved confidence and increased economic growth may lead to increased investment by entrepreneurs."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q7-c-i", topicId: "economics-3-0", conceptId: "the-black-economy-and-an-example",
+    section: "B", questionRef: "2010 OL Section B Q7(c)(i)",
+    stem: "The smuggling of cigarettes into Ireland is an example of an activity in the ‘black economy’.",
+    questionText: "Explain the underlined term and give one other example of such an activity.",
+    tariffModel: {"kind":"fixed","notation":"4 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-explanation", kind: "point", verbatim: "Activity which takes place which is not recorded and therefore not included in national income accounts.", marks: 4, contextNote: "The explanation, 4 marks.", openList: true },
+    { id: "r-example", kind: "anyN", verbatim: "Another example — either", marks: 6, contextNote: "One other example, 6 marks: the scheme gives two.", openList: true, group: {"claimMax":1,"perOption":6,"options":["A teacher giving grinds, without declaring the income for tax purposes.","A plumber fixing a washing machine for a cash payment, and not declaring the income for tax purposes."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q7-c-ii", topicId: "economics-3-0", conceptId: "why-cigarettes-are-smuggled",
+    section: "B", questionRef: "2010 OL Section B Q7(c)(ii)",
+    stem: "The smuggling of cigarettes into Ireland is an example of an activity in the ‘black economy’.",
+    questionText: "State and explain two possible reasons for smuggling activity.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":6,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 10, contextNote: "Two reasons, 5 marks each (3 to state it, 2 to explain it).", openList: true, group: {"claimMax":2,"perOption":5,"options":["High price of cigarettes in Ireland / high taxes on cigarettes. Price of cigarettes is quite high in Ireland due to high indirect tax rates and excise duties so consumers may buy cigarettes which are offered at a lower price illegally.","Inadequate security measures. As an island nation it is difficult to patrol all borders, seaports and airports and therefore it is considered easy to smuggle cigarettes into Ireland/ Ireland is considered a tobacco smuggling blackspot.","Ease of movement within the EU. With the enlargement of the EU there is a big increase in travel by EU nationals into Ireland and this facilitates smuggling activities.","Inadequate penalties/excessive leniency in imposing penalties. Some people are prepared to smuggle as the penalties are not severe enough to act as deterrents.","Illegal goods. The importation of some goods is banned by law e.g. illegal drugs. The only way of getting these into the country is by smuggling.","Market demand exists. Some people may be willing to buy smuggled goods at lower prices on the black market because they have reduced incomes in a recession."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q7-c-iii", topicId: "economics-3-0", conceptId: "effects-of-cigarette-smuggling",
+    section: "B", questionRef: "2010 OL Section B Q7(c)(iii)",
+    stem: "The smuggling of cigarettes into Ireland is an example of an activity in the ‘black economy’.",
+    questionText: "Discuss two economic effects of this development for the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":7,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An effect — any two", marks: 10, contextNote: "Two effects, 5 marks each (3 + 2).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Opportunity Costs. All indirect tax revenue on these cigarettes is lost to the exchequer which could have been used by the government for state services (schools and hospitals) / it may have to find additional sources of revenue / or reduce the volume of services which it provides.","Increased health care costs. The wide availability of smuggled cigarettes may increase smoking and inevitably result in higher future health costs to be borne by the taxpayer.","Decline in legitimate business activity. Those businesses which sell cigarettes legitimately will suffer a decline in sales, leading to possible job losses and a decline in economic activity / lower national income recorded.","Increased government expenditure. To curb this activity the government will have to increase spending on policing / security which will lead to further pressure on the state’s finances / necessity to raise taxes.","Loss of tax revenues. The government will suffer from reduced tax revenues because of lower sales in legitimate markets / consumers are buying products on illegal markets and not paying tax, costing the exchequer at least €400m annually","Increase crime levels. An increase in black economic activities results in increased crime which may instill fear in citizens and further reduce economic activities.","Standards of products Because of lack of regulation products may be unsafe / harmful to consumers."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q8-a-i", topicId: "economics-4-2", conceptId: "an-open-economy-and-economic-growth",
+    section: "B", questionRef: "2010 OL Section B Q8(a)(i)",
+    stem: "The Irish economy is an open economy which relies on exports to help economic growth.",
+    questionText: "Explain each of the underlined terms.",
+    tariffModel: {"kind":"fixed","notation":"5 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-open", kind: "point", verbatim: "Open economy: an economy which engages in trade / imports and exports/interdependent on other countries", marks: 5, contextNote: "An open economy, 5 marks.", openList: true },
+    { id: "r-growth", kind: "point", verbatim: "Economic Growth: an increase in GNP per head.", marks: 2, contextNote: "Economic growth, 2 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q8-a-ii", topicId: "economics-4-2", conceptId: "why-exports-matter",
+    section: "B", questionRef: "2010 OL Section B Q8(a)(ii)",
+    stem: "The Irish economy is an open economy which relies on exports to help economic growth.",
+    questionText: "State and explain three reasons why exports are so important for the Irish economy.",
+    tariffModel: {"kind":"fixed","notation":"10 + 4 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any three", marks: 18, contextNote: "Three reasons: 18 marks: 1st Correct 10 marks; 2nd /3rd points at 4 marks.", openList: true, group: {"claimMax":3,"perOption":10,"options":["Job creation. Exports mean increased demand for goods produced in Ireland, leading to increased employment.","Increased GNP / Economic growth The monies received from exports will lead to increased incomes within the country.","Increased sales / profits. Domestic firms can increase their sales/profits by exporting their excess output onto a foreign market.","Earn foreign currencies. The receipt of foreign currencies can boost our country’s reserves / provide the finance to help pay for imports.","Attract investment. Strong exports will enhance confidence in the country and may help attract investment into Ireland."],"perOptionSteps":[10,4,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q8-b-i", topicId: "economics-4-2", conceptId: "invisible-imports",
+    section: "B", questionRef: "2010 OL Section B Q8(b)(i)",
+    questionText: "Spending by Irish people attending sporting events abroad would be an example of an invisible import. Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"5 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The purchase of foreign services", marks: 5, contextNote: "The purchase of foreign services, 5 marks: the scheme prints 7 marks above its sentence, and 5 marks and 2 marks beneath its two halves, read here in that order.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "by Irish consumers.", marks: 2, contextNote: "By Irish consumers, 2 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q8-b-ii", topicId: "economics-4-2", conceptId: "other-invisible-imports",
+    section: "B", questionRef: "2010 OL Section B Q8(b)(ii)",
+    stem: "Spending by Irish people attending sporting events abroad would be an example of an invisible import.",
+    questionText: "State two other examples of invisible imports.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 3","answer":2,"ofParts":3,"perPart":3}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An example — any two", marks: 6, contextNote: "Two examples, 3 marks each: 3 marks + 3 marks each.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Irish people using foreign financial services.","Foreign rock bands performing in Ireland.","Ryanair using maintenance crews in countries outside Ireland."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q8-b-iii", topicId: "economics-4-2", conceptId: "why-restrict-imports",
+    section: "B", questionRef: "2010 OL Section B Q8(b)(iii)",
+    stem: "Spending by Irish people attending sporting events abroad would be an example of an invisible import.",
+    questionText: "State and explain two reasons why some governments wish to restrict imports.",
+    tariffModel: {"kind":"fixed","notation":"8 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 12, contextNote: "Two reasons: 1st correct 8 marks; 2nd correct 4 marks.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Protect domestic industries. New industries may have difficulty competing with established industries in other countries and so the government may choose to protect them by limiting competitive imports.","Protect domestic employment. Foreign competition costs people their jobs. By limiting imports such jobs may be protected.","Protect against ‘Cheap Labour’ economies. Domestic firms may not be able to compete with those countries who gain their advantage by paying their workers low wages. A government may restrict imports from these countries.","National Security. Free trade may result in the spread of animal diseases i.e. foot and mouth disease. During such crises the government banned the importation of cattle to protect this vital industry.","To protect human rights. Some countries may apply sanctions to those countries in which human rights’ abuses exist.","Production of strategic goods. The production of certain commodities which a country deems essential to the operation of the economy (energy, food) may be safeguarded from competition to ensure continuity of supply.","To prevent dumping. The government may restrict trade to prevent dumping as it may result in undermining domestic firms thereby resulting in their closure.","Protect the Balance of Payments A government may wish to restrict imports so that imports are reduced, thereby protecting our Balance of Payments and preventing it moving towards a deficit."],"perOptionSteps":[8,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2010, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2010 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2010-ol-sb-q8-c", topicId: "economics-4-2", conceptId: "a-dearer-euro-against-sterling",
+    section: "B", questionRef: "2010 OL Section B Q8(c)(i)–(iii)",
+    stem: "During 2009 the euro (€) increased in value relative to the UK pound sterling (£).",
+    questionText: "Discuss the economic effects of the above development on each of the following: (i) Irish firms exporting to the UK; (ii) Irish imports from the UK; (iii) Employment within Ireland.",
+    tariffModel: {"kind":"fixed","notation":"11 + 7 + 7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One effect for each — exporters, imports, employment", marks: 25, contextNote: "One effect for each of (i), (ii) and (iii), one per group: 1st correct answer: 11 marks. State: 6 marks. Explain: 5 marks. 2nd & 3rd correct answers: 2 x 7 marks each. State: 4 marks. Explain: 3 marks. The scheme lists four effects on Irish firms exporting to the UK, then four on Irish imports from the UK, then two on employment within Ireland, in that order here. Each statement is set beside the explanation that restates it; an explanation that restates none stands alone.", openList: true, group: {"claimMax":3,"perOption":11,"options":["Exports dearer — The prices of Irish exports in pound sterling have increased.","Reduced demand/sales — This may result in a reduced demand for Irish exports in the UK.","Reduced sales revenue — Sales revenue may decline resulting in possible job losses / closure of the some firms.","Irish firms may have to change markets to other EU countries.","Imports cheaper — The prices of UK imports in euro have decreased.","Increased imports — This may result in an increased demand for UK imports into Ireland.","Decreased inflation — Lower prices may lead to a fall in the inflation rate.","Cheaper raw materials may result in lower costs of production.","Decreases — With fewer exports to the UK, firms in this exporting sector will decline resulting in unemployment.","If imports are raw materials then the prices of the finished goods could fall leading to increased demand and job opportunities"],"perOptionSteps":[11,7,7]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2010 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2011, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2011 Ordinary Level — © State Examinations Commission.",

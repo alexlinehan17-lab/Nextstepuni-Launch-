@@ -2749,3 +2749,71 @@ Checks:
 - reconcile: 2,124/2,198, with 2010 HL at 54/54.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2010 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 33 scheme pages were viewed:
+- paper pp10-12 are blank;
+- scheme pp1-3 are the cover, a blank page and the title page with the index
+  and support notes, and p33 the back cover;
+- scheme page numbers are the PDF's, one ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part;
+- the cover prints its level in capitals ("ORDINARY LEVEL"). So the scheme file
+  was built with the appenders' cover check pointed at the file
+  (economics/tools/gen_md_cover.sh), visually verified as the English
+  Ordinary scheme. No shared code changed.
+
+There are 65 routes for the 74 printed asks (12 in Section A, 62 in Section B).
+Five cards each cover asks that the scheme prices together: A Q1(i)-(ii), A
+Q3(i)-(iii), B5(a)(i)-(iii), B6(a)(i)-(iii) and B8(c)(i)-(iii). B6(b) is
+printed "(i) Name ... (i) Discuss ... (ii) Outline ...", an SEC misprint. The
+scheme numbers the three parts (i)-(iii), and so do the reader (the census fix
+above) and the cards. The (ii) and (iii) cards say in a note that the paper
+prints them "(i)" and "(ii)". No printed choice is credited with a list for
+each side. 11 crops: 5 hidden scheme solutions and 6 paper data crops.
+
+Decisions:
+- A Q1: "4 + 2 + 2" beside each name does not say which word earns the 4, so
+  the first correct word is claimed at 4 and the other two at 2.
+- A Q4 (the explanation and the example, 16) and A Q9 (two effects, a bare 17)
+  print one total over the answer without dividing it, so they are
+  questionTotal cards. A Q9's menu row carries no per-option price, as the
+  live Chemistry 2026 OL Q11(d)B(vi) card does.
+- B2(a)(i) "7 marks" with 5 and 2 beneath the two halves of its sentence, and
+  B8(b)(i) the same way: read in that order, and the notes say so.
+- B5(a) and B6(a) "(7 marks +7 marks +6 marks)" beneath a table of three
+  terms: the first two correct answers 7 each and the 3rd 6. The notes say
+  the scheme does not say which term earns which.
+- B1(b): three barriers, each explained with an example, 12 + 6 + 6. The
+  scheme's examples are in its table, which is the hidden crop.
+- B4(b)(i): the working at 10 (the scheme underlines five components at 2)
+  and the answer 2.
+- Ladders across groups claim one answer a group, and the notes name the
+  groups: B3(c)(ii) 8 + 5 and B8(c) 11 + 7 + 7.
+- Statement / Explanation tables whose rows do not line up (B4(c)(iii),
+  B6(c)(ii), B7(a)(iii), B8(c)) pair each statement with the explanation that
+  restates it, and the notes say so.
+
+Refcheck: one short ask was read by hand (B4(c)(i)).
+
+Topic review: 10 reference anomalies, each a commercial heading the review
+files elsewhere:
+- A Q1 and B7 under acronyms, and B4(b) under formulas (study-aid headings).
+- A Q4 under the market economy: opportunity cost is scarcity and choice.
+- A Q5 under government intervention: the budget deficit is fiscal policy.
+- A Q6 under government intervention: more third-level students is economic
+  growth.
+- A Q8 under the labour market: entrepreneurship is scarcity and choice.
+- B7 and B4(c) under economic growth and development: deflation and savings
+  are monetary policy and the financial sector, and emigration is employment.
+- B8 under globalisation: trade and the exchange rate are international
+  trade.
+
+Checks:
+- econ_review: 39/66.
+- build: 2,227 cards, 0 dropped.
+- Build rule: 298 claims on this paper, 0 untraceable (26 trace by halves).
+- reconcile: 2,198/2,198 (100%), with 2010 OL at 74/74, 0 excluded, 0 open.
+- refcheck: 0 wrong.
+- cardlint: clean.

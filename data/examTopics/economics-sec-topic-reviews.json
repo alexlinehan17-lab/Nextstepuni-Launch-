@@ -2,7 +2,7 @@
   "subjectId": "economics",
   "authority": "SEC question paper; canonical curriculum node IDs",
   "reviewedAt": "2026-11-04",
-  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2010 Higher, 2011-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 28 physical variants pending.",
+  "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2010-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 27 physical variants pending.",
   "questions": [
     {
       "level": "higher",
@@ -10368,6 +10368,282 @@
       ],
       "reason": "Economic growth is Economic Growth (3-5), price levels Monetary Policy & Inflation (3-3), the current budgetary position Fiscal Policy & the Budget (3-1) and employment Employment & Unemployment (3-2), as 2016 HL files the economy’s performance; an ageing population is Economic Growth (3-5), as 2015 HL files it; emigration is Employment & Unemployment (3-2); savings are Financial Sector (3-4), as 2012 HL files them. Five cards for eight asks totalling 75. a(i)-(iv) one card, as the scheme prices the four areas together, 7 + 6 + 6 + 6, without saying which earns the 7: one ladder, one point for each area, the first correct area 7. b(i) 2 at 5 from six; b(ii) 3 at 5 from eight. c(i) 2 at 5 from six; c(ii) 3 at 5 from seven.",
       "paperSha256": "9d5588f38e3be6a87f5ce0fe4e67ce7635e2b504352cb68296a58a1c454fa694"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "1",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-4-1"
+      ],
+      "reason": "The IMF and the WTO are Globalisation (4-1), as 2017 OL files them. One card for the two names, the paper numbering them (i)-(ii): each name 8, the scheme printing 4 + 2 + 2 beside its three words.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "2",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-4-0"
+      ],
+      "reason": "Aid to LDCs and measures to help them are Growth & Development (4-0), as 2013 OL files aid to LDCs. One organisation 8 from six + one measure 8 from seven: one card, two rows.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "3",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "reason": "Product differentiation, homogeneous goods and control over price are Market Structures (2-0). One card for the three statements, the paper numbering them (i)-(iii): the 1st correct answer 8, the 2nd and 3rd 4 each.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "4",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-0-1"
+      ],
+      "reason": "Opportunity cost is Scarcity & Choice (0-1), as 2012 OL files it. The explanation (either of two) and an example, priced 16 together without a split: one questionTotal card.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "5",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        2
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-3-2"
+      ],
+      "reason": "The current budget deficit is Fiscal Policy & the Budget (3-1); rising unemployment is also Employment & Unemployment (3-2). Two effects from eight at 8: one card.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "6",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-3-5"
+      ],
+      "reason": "The advantages of more people in third-level education (a better educated workforce, productivity, FDI) are Economic Growth (3-5), as 2017 OL files the advantages of education. Two advantages from seven: the 1st correct 10, the 2nd 7.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "7",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "reason": "Substitute and complementary goods are The Consumer (Demand) (1-1), as 2013 OL files them. The four items placed as substitutes or complements: the 1st correct 5, the 2nd, 3rd and 4th 4 each: one card, the item table as the crop.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "8",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-0-1"
+      ],
+      "reason": "Entrepreneurship is Scarcity & Choice (0-1), as 2012 OL files the entrepreneur. The explanation 10 + one reason 7 from nine: one card, two rows.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "9",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        3
+      ],
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-3-1",
+        "economics-3-2"
+      ],
+      "reason": "Cross-border shopping is International Trade & Competitiveness (4-2), as 2017 OL files it; its effect on tax revenue is also Fiscal Policy & the Budget (3-1), and on jobs Employment & Unemployment (3-2). Two effects from seven, priced 17 together without a split: one questionTotal card.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B1",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        4
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-1",
+        "economics-3-2"
+      ],
+      "reason": "Monopoly, its equilibrium and barriers to entry are Market Structures (2-0), as 2011 OL files them; the falling demand for letter-post is The Consumer (Demand) (1-1); the closure of rural post offices and its effects on jobs and communities are Employment & Unemployment (3-2), as 2019 OL files them. Six tasks totalling 75. a(i) the three lines at 4 (2 + 2); a(ii) P1 and C1, the 1st correct 5 and the 2nd 4 (hidden solution diagram, the paper’s diagram beside the ask). b the three barriers, each explained with an example, the 1st correct explanation 12 and the 2nd and 3rd 6 (the scheme’s table of explanations and examples as the hidden solution). c(i) 2 at 5 (3 + 2) from five; c(ii) 2 at 5 from three; c(iii) 2 at 5 from four.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B2",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1",
+        "economics-1-0",
+        "economics-1-2",
+        "economics-4-2"
+      ],
+      "reason": "Marginal utility and diminishing marginal utility are The Consumer (Demand) (1-1); a fixed supply of seats and a black market for tickets are The Market Economy (1-0), as 2012 OL files a fixed supply of tickets; the falling demand for hotel accommodation is The Consumer (Demand) (1-1), its effects for the hotel industry The Market Economy (1-0), and the industry’s measures to reverse it The Firm (Supply) (1-2), as 2011 OL files Irish Rail’s actions to raise demand; tourism is also International Trade & Competitiveness (4-2). Nine tasks totalling 75. a(i) 7, the scheme printing 5 and 2 beneath the two halves of its sentence; a(ii) the good 5 from three + the explanation 3 from three; a(iii) the three marginal utilities at 2, the point 2 and its explanation 2 (hidden solution table, the paper’s table beside the ask). b(i) 6, either explanation; b(ii) 6; b(iii) 2 at 4 from four. c(i) 2 at 5 (3 + 2) from five; c(ii) 2 at 5 from five; c(iii) 2 at 5 from four.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B3",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1",
+        "economics-1-0",
+        "economics-1-2",
+        "economics-1-4",
+        "economics-1-3"
+      ],
+      "reason": "The determinants of demand are The Consumer (Demand) (1-1); market demand, supply and equilibrium are The Market Economy (1-0); a subsidy shifting supply is The Firm (Supply) (1-2), and the subsidy also Government Intervention (1-3); price elasticity of demand, luxuries and necessities are Elasticity (1-4). Six tasks totalling 75. a 4 at 5 (2 + 3) from eight. b(i) the two lines at 3; b(ii) P1 3 + Q1 3; b(iii) the new labelled supply curve 6 (3 + 3), its explanation 8, P2 2 and Q2 2 (hidden solution diagram for (ii) and (iii), the paper’s diagram beside the ask). c(i) the answer 8 + the two halves of its explanation 2 + 2; c(ii) one answer for each good, the 1st correct 8 (6 + 2) and the 2nd 5 (3 + 2).",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B4",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-3-2"
+      ],
+      "reason": "The circular flow, national income with trade and the multiplier are National Income (3-0); emigration and immigration, their causes and effects are Employment & Unemployment (3-2). Seven tasks totalling 75. a(i) the four lines at 3 (lines 1 and 2 at 2 + 1); a(ii) households and firms 5 (either), households and foreign markets 4, firms and foreign markets 4. b(i) the working 10 (five underlined components at 2) + the answer 2 (hidden solution working); b(ii) 8. c(i) each term 5, its two halves at 3 and 2; c(ii) 2 at 5 (2 + 3) from six; c(iii) one effect each on the labour market and on the demand for state services at 5 (2 + 3).",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B5",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        8
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-1-3",
+        "economics-2-1"
+      ],
+      "reason": "Direct tax, capital spending, the national debt, the canons of taxation, the retirement age and a household property tax are Fiscal Policy & the Budget (3-1), as 2012 OL files the household charge; third-level fees are Government Intervention (1-3), as 2011 OL files them; the retirement age’s effect on jobs is also The Labour Market (2-1), as 2015 HL files it. Six cards for eight asks totalling 75. a(i)-(iii) one card, the scheme printing (7 marks +7 marks +6 marks) beneath its three terms without saying which earns which: one ladder, one explanation per term. b(i) each canon 5; b(ii) one principle 5 from four. c(i), (ii) and (iii) each 2 at 5 from the scheme’s points for that proposal (3 x 10).",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B6",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        8
+      ],
+      "canonicalNodeIds": [
+        "economics-3-4",
+        "economics-3-3"
+      ],
+      "reason": "Barter, interest rates, creditworthiness, commercial banks and the Central Bank’s functions are Financial Sector (3-4), as 2017 OL files money, barter and interest rates; the ECB and a rise in its interest rate are Monetary Policy & Inflation (3-3). Seven cards for nine asks totalling 75. a(i)-(iii) one card, the scheme printing (7 marks +7 marks + 6 marks) beneath its three terms without saying which earns which: one ladder, one explanation per term. b(i) 2 banks at 3 from four; b(ii) 2 at 5 (3 + 2) from six; b(iii) 4 (2 + 2) from five; the paper prints b as “(i) ... (i) ... (ii)”, an SEC misprint, and the scheme and the reader number them (i)-(iii). c(i) 10; c(ii) one effect each on borrowers, savers and the Irish economy at 5 (3 + 2); c(iii) 2 at 5 (3 + 2) from eight.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B7",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        9
+      ],
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-3-3",
+        "economics-3-4",
+        "economics-3-1"
+      ],
+      "reason": "The CSO is National Income (3-0), as 2016 OL files it; deflation and its effects are Monetary Policy & Inflation (3-3); savings and why they rise are Financial Sector (3-4), as 2017 OL files savings; spending rather than saving is National Income (3-0); the black economy and cigarette smuggling are National Income (3-0), as earlier reviews file the black economy, and the lost tax revenue also Fiscal Policy & the Budget (3-1). Nine tasks totalling 75. a(i) 6; a(ii) 4; a(iii) one effect each on social welfare recipients, savers and employees at 5 (3 + 2). b(i) 8; b(ii) 4 (2 + 2) from four; b(iii) 2 at 4 (2 + 2) from five. c(i) the explanation 4 + one other example 6, either of two; c(ii) 2 at 5 (3 + 2) from six; c(iii) 2 at 5 from seven.",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2010,
+      "n": "B8",
+      "fileid": "LC034GLP000EV.pdf",
+      "pages": [
+        9
+      ],
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-3-5",
+        "economics-3-2"
+      ],
+      "reason": "The open economy, exports, invisible imports, restricting imports and the euro’s exchange rate against sterling are International Trade & Competitiveness (4-2); economic growth is also Economic Growth (3-5), and employment within Ireland Employment & Unemployment (3-2). Six cards for eight asks totalling 75. a(i) an open economy 5 + economic growth 2; a(ii) three reasons from five, the 1st correct 10 and the 2nd and 3rd 4. b(i) 7, the scheme printing 5 and 2 beneath the two halves of its sentence; b(ii) 2 examples at 3 from three; b(iii) two reasons from eight, the 1st correct 8 and the 2nd 4. c(i)-(iii) one card, the scheme pricing one effect per group on one ladder: the 1st correct 11 (6 + 5), the 2nd and 3rd 7 (4 + 3).",
+      "paperSha256": "2e7a0ea822e0c04595d0b68152d692a60f210ae9f859423591b8d694bacc10ef"
     }
   ]
 }
