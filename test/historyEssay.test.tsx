@@ -246,4 +246,22 @@ describe('an essay in a Mark Bank session', () => {
     expect(screen.queryByText('Check your complete response.')).not.toBeInTheDocument();
     expect(screen.getByText(/No History essay placement selected yet/)).toBeInTheDocument();
   });
+
+  it('suggests no grade until the whole answer is placed on an OE band', () => {
+    render(<SessionScreen cards={[famine]} subjectLabel="History" onGrade={vi.fn()} onFinish={vi.fn()} onExit={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    for (const mark of [12, 10]) {
+      fireEvent.click(screen.getByRole('button', { name: /^Add (a|another) paragraph$/ }));
+      const ladders = screen.getAllByRole('group', { name: /^Bands for paragraph/ });
+      fireEvent.click(within(ladders.at(-1)!).getByRole('button', { name: new RegExp(`^Claim ${mark} marks for`) }));
+    }
+    // Two paragraphs, no OE: a running total, not a placement.
+    expect(screen.getByText(/Your History essay placement is not finished/)).toBeInTheDocument();
+    expect(screen.queryByText(/that looks like/)).not.toBeInTheDocument();
+    expect(document.querySelector('[data-suggested]')).toBeNull();
+    const oe = screen.getByRole('group', { name: 'Overall Evaluation bands' });
+    fireEvent.click(within(oe).getByRole('button', { name: 'Claim 30 marks for Very good: 28-33 marks' }));
+    expect(screen.getByText(/Your History essay placement is 52 of 100 marks/)).toBeInTheDocument();
+    expect(document.querySelector('[data-suggested]')).not.toBeNull();
+  });
 });

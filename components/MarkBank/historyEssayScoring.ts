@@ -91,6 +91,13 @@ export function historyOeMark(rubric: HistoryEssayRubric, scores: HistoryEssaySc
   return onLadder(rubric.oe.bands, value) ? value : null;
 }
 
+/** Whether the whole answer has been placed. An essay is placed in two halves,
+ *  paragraph by paragraph and then as a whole, so until its OE is placed the
+ *  CM is a running total rather than a placement, and a grade suggested from
+ *  it would read a half-placed essay as missed. */
+export const historyEssayPlacementComplete = (rubric: HistoryEssayRubric, scores: HistoryEssayScores): boolean =>
+  historyOeMark(rubric, scores) !== null;
+
 export function historyEssayMarks(card: SecRubricCard, scores: HistoryEssayScores): number {
   if (card.rubric.system !== 'history-essay') return 0;
   const { cm } = historyCmTally(card.rubric, scores);

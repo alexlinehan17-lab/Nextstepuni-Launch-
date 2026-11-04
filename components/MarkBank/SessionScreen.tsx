@@ -93,7 +93,7 @@ import FrenchRubricPanel from './FrenchRubricPanel';
 import FrenchQuestionChoices from './FrenchQuestionChoices';
 import { frenchMarks, type FrenchScoreId } from './frenchRubric';
 import HistoryEssayPanel from './HistoryEssayPanel';
-import { historyEssayMarks, type HistoryEssayScoreId } from './historyEssayScoring';
+import { historyEssayMarks, historyEssayPlacementComplete, type HistoryEssayScoreId } from './historyEssayScoring';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
 import { stemWithListBreaks } from './stemText';
@@ -2412,6 +2412,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const suggested = assessmentCard
     ? isRubricCard(assessmentCard) ? suggestRubricGrade(assessmentCard, rubricScores) : suggestGrade(assessmentCard, rowClaims, picks)
     : 'shaky';
+  /* A History essay is placed in two halves, paragraph by paragraph and then
+     as a whole. Until the whole answer is placed on an OE band its marks are a
+     running total, and a grade suggested from them preselected "Missed it"
+     after two paragraphs. Every other rubric is placed in one go. */
+  const placementPending = Boolean(assessmentCard && isRubricCard(assessmentCard)
+    && assessmentCard.rubric.system === 'history-essay'
+    && !historyEssayPlacementComplete(assessmentCard.rubric, rubricScores));
   const rubricLabel = assessmentCard && isRubricCard(assessmentCard)
     ? assessmentCard.rubric.system === 'pclm' ? 'PCLM'
       : assessmentCard.rubric.system === 'irish' ? 'Irish rubric'
@@ -3345,7 +3352,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         ? <>No {rubricLabel} placement selected yet. Use the SEC grid above for a mark-based suggestion, or choose your own grade now.</>
                         : <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
                       : isRubricCard(assessmentCard)
-                        ? <>Your {rubricLabel} placement is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
+                        ? placementPending
+                          ? <>Your {rubricLabel} placement is not finished. Place the whole answer on an OE band for a mark-based suggestion, or choose your own grade now.</>
+                          : <>Your {rubricLabel} placement is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
                         : showsRowMarks(assessmentCard)
                         ? <>You claimed {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
                         : <>That looks like {GRADE_COPY[suggested]}.</>}
@@ -3357,7 +3366,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       360px hit area and makes the rail read as a toolbar. */}
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 168px))', gap: 8 }}>
                     {(['missed', 'shaky', 'got'] as MarkBankGrade[]).map(g => {
-                      const isSuggested = schemeInteracted && g === suggested;
+                      const isSuggested = schemeInteracted && !placementPending && g === suggested;
                       return (
                         <button
                           key={g}
