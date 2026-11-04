@@ -481,10 +481,10 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(rows.filter(({ row }) => row.kind === 'point' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
     // "… 5M + 5M Max =" left on a row by the tariff reader: the printed split is the row's note now.
     expect(rows.filter(({ row }) => /\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=\s*$/i.test(row.verbatim)).map(({ card }) => card.id)).toEqual([]);
-    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(17);
+    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(20);
     // The shapes the pass reads, pinned so a regenerated deck shows any change.
     const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
-    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(160);
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(169);
     // "X/Y/Z (any two for 3m + 3m)" is an any-two group over the scheme's own alternatives too.
     expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options).sort()).toEqual([
       ['A new life', 'Better wages', 'Better work standards'],
@@ -541,10 +541,12 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['Battleship/ Warship', 6, [0, 3, 6], 'Ship = 3M'],
       ['By launching the Dreadnought', 6, [0, 3, 6], '‘Quickly’ ALONE = 3M'],
       ['Clonmel prison', 6, [0, 3, 6], 'Clonmel only (3m), prison only (3m)'],
+      ['Cusack was its founder/ One of its first Secretaries', 6, [0, 3, 6], 'Supporter ONLY = 3M'],
       ['Explanation', 5, undefined, 'The scheme prints no answer here: any correct one earns the marks.'],
       ['Famine, Civil War, Political instability', 5, [0, 3, 5], 'Threats: two = 5M; one = 3M; “wolf and tiger” alone = 0'],
       ['Green ribbons', 6, [0, 3, 6], 'ribbons = 3m'],
       ['Hans Place', 8, [0, 4, 8], 'London ONLY = 4M'],
+      ['Healy scored the first goal ever in an All-Ireland Championship', 6, [0, 3, 6], '‘first goal’ ONLY = 3M'],
       ['It is an original document from the period called the Pacification of Ghent (8 Nov 1576) signed four days after the sack of Antwerp. It was actually drafted by the prelates, nobles, towns and states of the Netherlands.', 5, [0, 1, 2, 3, 4, 5], 'Mark quality of explanation on its merits. — Explanation be marked on a sliding scale out of 5: Excellent = 5 mks Very good = 4 mks Good = 3 mks Fair = 2 mks Weak = 0-1 mks — Max = 10M'],
       ['Less than half', 6, [0, 3, 6], 'Half ONLY = 3M'],
       ['Massive German air raids', 6, [0, 3, 6], 'air raids alone = 3m'],
@@ -562,7 +564,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       ['The original six members had access to Irish, British and Danish fisheries', 6, [0, 3, 6], 'access to Irish fisheries alone = 3m'],
       ['The scheme prints no answer for this part.', 10, undefined, 'The scheme prints one Criticism answer, under (a), and it is about the King’s proclamation (document B), which part (b) asks about. It prints nothing for this part.'],
       ['Third class', 8, [0, 4, 8], 'Train ONLY = 4M'],
+      ['Two reasons for Yes or No', 8, [0, 4, 8], 'Sermon advised “restraint towards people of different religious persuasions” — Above quote only = 2M — Seems to be reasonable advice to behave respectfully to others, to not give offence which could lead to trouble At the same time the Apprentice Boys are asked to keep “firmness in defence of their Protestant heritage”, to assert themselves and keep the faith — Mark quality of explanation on its merits. — Max = 10M'],
       ['Von Eckstadt Vienna 1848', 6, [0, 3, 6], 'Any TWO @ 3M each'],
+      ['We can see men, women and children – presumably families', 6, [0, 3, 6], 'Children ONLY = 3M'],
     ]);
     expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
     // 2020 OL Q3(a) prices each component and answers the one that needs an answer:
