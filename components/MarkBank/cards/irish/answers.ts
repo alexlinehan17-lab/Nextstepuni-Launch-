@@ -60,8 +60,12 @@ const TOKEN = new RegExp(String.raw`=\s*${MARC}((?:\s*\+\s*\d+\s*m?h?arc\b)*)` +
   String.raw`|(?<![=+:{\d])\b${MARC}`, 'g');
 /** "(dhá phointe eolais anseo = 2 mharc + 1 mharc = 3 mharc)" inside an answer. */
 const NOTE = /\(([^()]*=\s*\d+\s*m?h?arc[^()]*)\)/g;
-/** "An chéad phointe eolais atá ceart", "an dara húsáid atá ceart". */
-const RULE = /^(?:an\s+)?(?:chéad|dara|tríú|ceathrú)\s.*\s(?:ceart|cheart)$/i;
+/** "An chéad phointe eolais atá ceart", "an dara húsáid atá ceart", and the first rule as 2017 Ordinary Reading B 3(b) prints
+ *  it, "Fáth amháin atá ceart = 3 mharc; an dara fáth atá ceart = 2 mharc". */
+const RULE = /^(?:(?:an\s+)?(?:chéad|dara|tríú|ceathrú)\s.*\s|[A-ZÁÉÍÓÚa-záéíóú]+ amháin atá\s)(?:ceart|cheart)$/i;
+/** "Aon dá cheann de na rudaí ón liosta thíos = 3 mharc + 2 mharc", "2 cheann ón liosta = 3 mharc + 2 mharc" (2017 Ordinary
+ *  Reading A 2(a), A 5(b), B 5(b)): how the list after it is priced, a rule, never an answer. */
+const LIST_RULE = /^(?:Aon\s+)?(?:dá|dhá|\d+)\s+cheann\b[^•=]*\bliosta\b/i;
 const DIRECTION = /^(?:Bainfear\b|Glacfar\b|Ní mór\b|Gearrfar\b|Tabharfar\b|Tá .* mharc ag gabháil\b)/i;
 /** Where the lifted excerpt runs on into the scheme's next section. */
 const FURNITURE = /^(?:Eolas\s*\(|Iomlán|Móriomlán|Cuid [ABC]\b|I gcás\b|\d+ Roinn\b|An Tasc\b|An tÁbhar\b|Marcanna\b|An Mharcáil\b)/i;
@@ -89,9 +93,10 @@ interface Draft { prompt?: string; tariff: number; ladder?: number[]; rows: { te
 const PART_NOTE = /^Nóta:/;
 const SECTION_SUMMARY = /^(?:Freagair Léamhthuiscint|Tá Ceist \d+\s*[–-]\s*\d+ ar cómharc|Order-dependent award)/;
 /** "(Is leor aon trí cinn as na ceithre cinn: …)", "(Ní mór ‘…’ a bheith sa fhreagra chun an dara marc a
- *  ghnóthú)", "(Tá gá le ‘conradh’ … a lua sa fhreagra chun an dá mharc a bhronnadh.)" after an answer: how much of
- *  it suffices or what it must contain, a direction. */
-const SUFFICES = /\((?:Is leor|aon|Ní mór|Tá gá le)\s[^()]*(?:\([^()]*\)[^()]*)*\)/g;
+ *  ghnóthú)", "(Tá gá le ‘conradh’ … a lua sa fhreagra chun an dá mharc a bhronnadh.)", "(Má fhágtar ainmfhocal nó aidiacht
+ *  amháin ar lár is fiú 3 mharc an freagra.)" (2017 Ordinary Reading A 3(b)) after an answer: how much of it suffices, what it
+ *  must contain or what it is worth without a word, a direction. */
+const SUFFICES = /\((?:Is leor|aon|Ní mór|Tá gá le|Má fhágtar)\s[^()]*(?:\([^()]*\)[^()]*)*\)/g;
 /** "… nó áitiúla = 1 mharc (gan ‘in 2024’ sa fhreagra)", "… = 2 mharc (Gan ainmneacha an dá thír luaite, …)": the qualifier is the condition of the answer it
  *  follows, as "= 0 marc (gá le cáiliú)" (2018 Higher B 1(b)(ii)) is. It stays on that row, as a second slice:
  *  "… nó áitiúla: (gan ‘in 2024’ sa fhreagra) · 1m". */
@@ -225,6 +230,15 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
       if (marks > source.totalMarks) { stopped = true; break; }
       // "= 2 mharc + 1 mharc = 3 mharc": the second price restates the first.
       if (!tidy(segment)) continue;
+      // "Aon dá cheann … ón liosta … = 3 mharc + 2 mharc": the list's rule, a direction; its price is the part's ladder where the
+      // part has none yet and the price adds up to the part's tariff, and the listed answers after it are claimed by count.
+      const listed = splitBullets(segment);
+      if (current && plus && LIST_RULE.test(listed.lead) && listed.bullets.length === 0) {
+        directions.push(listed.lead);
+        const terms = [Number(answer), ...[...plus.matchAll(/\d+/g)].map(m => Number(m[0]))];
+        if (!current.ladder && terms.reduce((a, b) => a + b, 0) === current.tariff) current.ladder = cumulative(terms);
+        continue;
+      }
       // The bullets before the priced one are its alternatives at the same price.
       const problem = addAnswers(segment, marks);
       if (problem) return { ok: false, reason: problem };

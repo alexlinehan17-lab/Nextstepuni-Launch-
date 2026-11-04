@@ -34,11 +34,16 @@ const OPENER = new RegExp(String.raw`\(\s*${MARC}\s*\)|\{\s*${MARC}(?::\s*((?:\d
 const PRICED = new RegExp(String.raw`([^•¶\n]{2,400}?)\s*=\s*${MARC}${SUM}(?!\s*(?:ar|an|ceann)\b)`, 'g');
 const SAMPLES = /\b(?:Freagraí samplacha|Pointí eolais féideartha|(?<!\bas\s)Samplaí|Freagra samplach|Sampla cruinn:)\s*:?\s*/i;
 const BAND_TABLE = /\bCatagóir\b[\s\S]*?Lag\/An-lag[^•]*?\d+\s*-\s*\d+(?:\s+\d+\s*-\s*\d+)*/;
-/** "5 phointe eolais ag teastáil (5 mharc an ceann ar an gcéad trí phointe eolais + 4 mharc an ceann ar an dá phointe eolais eile)".
+/** "5 phointe eolais ag teastáil (5 mharc an ceann ar an gcéad trí phointe eolais + 4 mharc an ceann ar an dá phointe eolais eile)",
+ *  also printed with a full stop before the bracket closes ("… ar na trí phointe eolais eile.)", 2017 Ordinary 2B(a)).
  *  The counts are words with fadas ("dá", "trí"), so they are read as \S+: a \w+ never matched them. */
-const LADDER = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann ar an g?c?[ée]ad\s+(\S+)\s+phointe eolais(?:\s*\+\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais eile)?\s*\)/i;
+const LADDER = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann ar an g?c?[ée]ad\s+(\S+)\s+phointe eolais(?:\s*\+\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais eile)?\.?\s*\)/i;
 const NOTE = /(?<=^|\s|\()(?:Nóta:|Ní mór(?=\s)|Is leor(?=\s)|Caithfidh(?=\s)|Bainfear(?=\s)|Gearrfar(?=\s)|Glacfar(?=\s)|Tabharfar(?=\s)|Mura mbíonn(?=\s)|Cuir lúibíní(?=\s)|Dá bharr sin(?=\s)|Gan tréith(?=\s)|Tá [^\s]+ mharc ag gabháil(?=\s)|Sampla cruinn gan(?=\s)|Is samplaí de fhreagraí(?=\s)|Léirigh na marcanna(?=\s)|Ag bun(?=\s))[^•{}¶]*?(?:[.?!](?=\s|\)|$)|(?=\s\(?(?:i|ii|iii|iv|v)\)\s|\sNóta:|\sTreoir:|\s•|\s¶|\s\(\d+\s*m?h?arc\)|\s\{\d|$))/g;
 const DEDUCTION = /\[Gaeilge lochtach:[^\]]*\]/g;
+/** "Línte cuí ón dán gan rian an iarrthóra orthu = 2 mharc + 2 mharc" printed straight after a price, with no "Nóta:" before it
+ *  (2017 Ordinary 3A(b)(iii)): what lines lifted without the candidate's own words earn instead, a direction as its "Nóta:"
+ *  form is, never a row. */
+const LIFTED_LINES = /(?<=\bm?h?arc\s)Línte cuí(?=\s)[^•=¶]*?=\s*\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)*/g;
 /** "Trí phointe eolais ag teastáil anseo: 2 mharc an ceann ar na trí phointe eolais": how a row divides, a direction. */
 const COUNT_NOTE = /\b(?:Dhá|Trí|Ceithre|Cúig|\d+)\s+phointe eolais ag teastáil(?: anseo)?:?\s*\d+\s*m?h?arc an ceann ar (?:an|na)[^•=(]*?(?=\s[A-ZÁÉÍÓÚ(]|$)/g;
 /** "5 mharc = 2 mharc ar lomphointe eolais + 3 mharc ar fhorbairt": how one point's marks divide, a direction. */
@@ -97,6 +102,7 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   text = text.replace(NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
   text = text.replace(SPLIT_NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
   text = text.replace(COUNT_NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
+  text = text.replace(LIFTED_LINES, note => { directions.push(tidy(note)); return ' ¶ '; });
   // A note the scheme sets in brackets ("(Is leor dhá phointe eolais.)") leaves its brackets behind: they go with it.
   text = text.replace(/\(\s*¶\s*\)/g, ' ¶ ');
   text = text.replace(/\s+/g, ' ');
@@ -183,6 +189,19 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
           marks: ladderedRow.marks, steps: cumulative(values), at: first ? leadLadder.index : ladderedRow.at, end: leadLadder.index + leadLadder[0].length });
       }
     }
+    // "4 phointe eolais ag teastáil (5 mharc an ceann) = 20 marc" (2017 Ordinary 2B(b)): the price of each point, printed with
+    // the row's price. The row keeps its printed count and steps one point at a time ([0, 5, 10, 15, 20]), only where the
+    // points add up to the row's marks exactly.
+    const eachPrice = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann\s*\)(?=\s*=\s*\d+\s*m?h?arc\b)/i.exec(body);
+    if (eachPrice) {
+      const counted = tokens.find((token): token is Extract<Token, { kind: 'row' }> => token.kind === 'row' && !token.steps
+        && token.at <= eachPrice.index + eachPrice[0].length && token.end > eachPrice.index);
+      const [count, each] = [Number(eachPrice[1]), Number(eachPrice[2])];
+      if (counted && count > 1 && count * each === counted.marks) {
+        counted.text = tidy(eachPrice[0]);
+        counted.steps = cumulative(Array(count).fill(each));
+      }
+    }
     tokens.sort((a, b) => a.at - b.at);
     debug?.push(...tokens.map(token => token.kind === 'open' ? `  OPEN ${token.tariff} ladder=${token.ladder ?? ''} @${token.at}` : `  ROW ${token.marks} steps=${token.steps ?? ''} "${token.text.slice(0, 60)}" @${token.at}`));
     // The prompt is the sub-question as printed, up to the first note the scheme sets inside it
@@ -194,7 +213,7 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
     const ladderText = LADDER.exec(body);
     // "5 phointe eolais ag teastáil (5 mharc … + 4 mharc …)" with no "Na heachtraí … = 22 marc" printed before it
     // (2020 Ordinary 2B(b)): the ladder's own words are the criterion's row, at the total its points add to, in its steps.
-    const ladderWords = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann ar an g?c?[ée]ad\s+(\S+)\s+phointe eolais(?:\s*\+\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais eile)?\s*\)/i.exec(body);
+    const ladderWords = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann ar an g?c?[ée]ad\s+(\S+)\s+phointe eolais(?:\s*\+\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais eile)?\.?\s*\)/i.exec(body);
     if (ladderWords && !tokens.some(token => token.kind === 'row')) {
       const firstCount = WORDS[ladderWords[3].toLowerCase()] ?? Number(ladderWords[3]);
       const values = [...Array(firstCount).fill(Number(ladderWords[2])), ...Array(Math.max(0, Number(ladderWords[1]) - firstCount)).fill(ladderWords[4] ? Number(ladderWords[4]) : Number(ladderWords[2]))];

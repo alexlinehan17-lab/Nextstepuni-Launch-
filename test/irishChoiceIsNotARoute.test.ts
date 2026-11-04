@@ -42,7 +42,7 @@ describe('Irish: choice is not a route', () => {
     expect(raw.filter(c => /-prose-2b-[a-c]-(scannan|drama)$/.test(c.id)).map(c => c.id)).toEqual([]);
     // A paper that prints one 2B question (2018 Higher) has no option letter on the id.
     const filmOrPlay = raw.filter(c => /^irish-20\d\d-(hl|ol)-p2-prose-2b(?:-[a-c])?$/.test(c.id) && /scannán roghnach/.test(c.questionText));
-    expect(filmOrPlay.map(c => c.id).sort()).toEqual(['irish-2018-hl-p2-prose-2b', 'irish-2019-ol-p2-prose-2b-b', 'irish-2021-ol-p2-prose-2b-b', 'irish-2022-hl-p2-prose-2b-a', 'irish-2023-ol-p2-prose-2b-c',
+    expect(filmOrPlay.map(c => c.id).sort()).toEqual(['irish-2017-ol-p2-prose-2b-a', 'irish-2018-hl-p2-prose-2b', 'irish-2019-ol-p2-prose-2b-b', 'irish-2021-ol-p2-prose-2b-b', 'irish-2022-hl-p2-prose-2b-a', 'irish-2023-ol-p2-prose-2b-c',
       'irish-2024-hl-p2-prose-2b-a', 'irish-2024-ol-p2-prose-2b-c', 'irish-2026-hl-p2-prose-2b-a', 'irish-2026-ol-p2-prose-2b-a']);
     for (const card of filmOrPlay) expect(card.questionText, card.id).toMatch(/dráma roghnach/);
     // Prescribed Cáca Milis and An Lasair Choille keep a card each (different headings).
