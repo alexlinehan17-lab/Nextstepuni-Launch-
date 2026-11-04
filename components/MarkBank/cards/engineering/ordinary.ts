@@ -302,7 +302,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "engineering-2018-OL-scheme-q2bi-sol",
           "src": "/exam-figures/engineering/markbank/engineering-2018-OL-scheme-q2bi-sol.png",
-          "srcHash": "2d9b79f85d497b748098dbbe7ec7c675",
+          "srcHash": "bd0886dd60900470c501a3ff7b84f934",
           "alt": "The marking scheme's printed answer for 2018 OL Q2(b)(i), as the State Examinations Commission set it. It reads: Charge Double bell Blast furnace Tuyere Molten Iron Slag Furnace lid Carbon electrodes Electric arc furnace Tapping spout Inspection door Charge Tilting rollers Basic oxygen furnace Fume hood Water cooled oxygen lance Refractory lining Pouring hole Slag Steel shell Molten steel.",
           "attribution": "SEC Leaving Certificate Engineering 2018 Ordinary Level — © State Examinations Commission",
           "solution": true,

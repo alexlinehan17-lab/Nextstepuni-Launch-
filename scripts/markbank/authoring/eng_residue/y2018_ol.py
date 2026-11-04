@@ -75,7 +75,7 @@ CROPS = {
     'engineering-2018-OL-scheme-q2bi-sol': dict(
         doc='scheme', page=8, parts=[(8, (135, 186, 430, 395)), (8, (100, 428, 472, 586)),
                                      (8, (100, 628, 450, 812))],
-        mask=[(130, 189, 178, 205)], solution=True, ref='2018 OL Q2(b)(i)'),
+        mask=[(130, 182, 180, 206)], solution=True, ref='2018 OL Q2(b)(i)'),
     'engineering-2018-OL-scheme-q5aii-sol': dict(
         doc='scheme', page=14, parts=[(14, (80, 336, 280, 456)), (14, (80, 498, 275, 586)),
                                       (14, (62, 645, 282, 748))],
