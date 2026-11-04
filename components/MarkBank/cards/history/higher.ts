@@ -262,6 +262,177 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
       "descriptor": "Very poor answer which, at best, offers only scraps of information."
      }
     ],
+    "directionsLead": "In awarding the OE, the examiner will evaluate the quality of the answer, taking into account the following, as appropriate:",
+    "directions": [
+     "To what extent has the candidate shown the ability to analyse the issues involved in the question asked (ie: more than mere narrative)?",
+     "To what extent has the candidate marshalled the relevant evidence to support his/her analysis?",
+     "To what extent has the candidate shown the ability to argue a case and to reach conclusions (ie: to answer the question as asked)?"
+    ]
+   },
+   "markingGuideNote": "Place each paragraph you wrote, in the order you wrote it, on the one band that fits it. The CM stops at its maximum, so a paragraph past it counts 0m. Then place your whole answer on one OE band.",
+   "schemeFileid": "LC004ALP000EV",
+   "cm": {
+    "mode": "paragraph",
+    "max": 60,
+    "definition": "Cumulative Mark (CM) for historical content which is accurate and relevant to the question as asked.",
+    "paragraphLead": "The examiner will divide the answer into paragraphs or paragraph equivalents:",
+    "paragraphKinds": [
+     "(i) A relevant introduction giving the background situation and/or defining the terms and explaining the approach;",
+     "(ii) An episode, phase or stage in a sequence of events;",
+     "(iii) An aspect of a topic/issue, with supporting factual references;",
+     "(iv) A point in an argument or discussion, with supporting factual references;",
+     "(v) An explanation of a concept or term, with supporting factual references;",
+     "(vi) A number of significant, relevant statements of fact, explanation or comment which, although not connected or related, can be taken together and assessed as a paragraph equivalent;",
+     "(vii) A good concluding paragraph or summation, which is not mere repetition."
+    ],
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       11,
+       12
+      ],
+      "printed": "Excellent: 11-12 marks",
+      "descriptor": "Outstanding piece of analysis, exposition or commentary. Clearly expressed, accurate and substantial information."
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "printed": "Very good: 8-10 marks",
+      "descriptor": "Very good material, accurately and clearly expressed."
+     },
+     {
+      "label": "Good",
+      "marks": [
+       6,
+       7
+      ],
+      "printed": "Good: 6-7 marks",
+      "descriptor": "Worthwhile information, reasonably well expressed."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4,
+       5
+      ],
+      "printed": "Fair: 3-5 marks",
+      "descriptor": "Limited information/barely stated."
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks",
+      "descriptor": "Trivial/irrelevant/grave errors."
+     }
+    ],
+    "directions": [
+     "(Summation which is mere repetition = max. 4 marks)"
+    ]
+   }
+  },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "To mark the answer, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at this level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "oe": {
+    "max": 40,
+    "definition": "Overall Evaluation (OE) for the quality of the answer as a whole in the context of the set question.",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "printed": "Excellent: 34-40 marks",
+      "descriptor": "Excellent in its treatment of the set question, particularly if it shows detailed learning, wide reading, analysis or extensive coverage."
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "printed": "Very good: 28-33 marks",
+      "descriptor": "Very good – but not excellent - in its treatment of the set question, ie: accurate and substantial."
+     },
+     {
+      "label": "Good",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "printed": "Good: 22-27 marks",
+      "descriptor": "Good standard treatment of the set question, without being exceptional in the information or the commentary supplied."
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "printed": "Fair: 16-21 marks",
+      "descriptor": "Fair attempt at the set question, but has identifiable defects, eg: incomplete coverage, irrelevant data, factual inaccuracies."
+     },
+     {
+      "label": "Weak",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "printed": "Weak: 10-15 marks",
+      "descriptor": "Poor, in that it fails to answer the question as set, but has some merit."
+     },
+     {
+      "label": "Very weak",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "printed": "Very weak: 0-9 marks",
+      "descriptor": "Very poor answer which, at best, offers only scraps of information."
+     }
+    ],
     "directionsLead": "In awarding the OE, the examiner will evaluate the quality of the answer, taking into account the following, as appropriate: To what extent has the candidate shown the ability to analyse the issues involved in the question asked (ie: more than mere narrative)? To what extent has the candidate marshalled the relevant evidence to support his/her analysis? To what extent has the candidate shown the ability to argue a case and to reach conclusions (ie: to answer the question as asked)?",
     "directions": []
    },
@@ -951,177 +1122,6 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
      "(xii) An explanation of a concept or term, with supporting factual references;",
      "(xiii) A number of significant, relevant statements of fact, explanation or comment which, although not connected or related, can be taken together and assessed as a paragraph equivalent;",
      "(xiv) A good concluding paragraph or summation, which is not mere repetition."
-    ],
-    "bands": [
-     {
-      "label": "Excellent",
-      "marks": [
-       11,
-       12
-      ],
-      "printed": "Excellent: 11-12 marks",
-      "descriptor": "Outstanding piece of analysis, exposition or commentary. Clearly expressed, accurate and substantial information."
-     },
-     {
-      "label": "Very good",
-      "marks": [
-       8,
-       9,
-       10
-      ],
-      "printed": "Very good: 8-10 marks",
-      "descriptor": "Very good material, accurately and clearly expressed."
-     },
-     {
-      "label": "Good",
-      "marks": [
-       6,
-       7
-      ],
-      "printed": "Good: 6-7 marks",
-      "descriptor": "Worthwhile information, reasonably well expressed."
-     },
-     {
-      "label": "Fair",
-      "marks": [
-       3,
-       4,
-       5
-      ],
-      "printed": "Fair: 3-5 marks",
-      "descriptor": "Limited information/barely stated."
-     },
-     {
-      "label": "Poor",
-      "marks": [
-       0,
-       1,
-       2
-      ],
-      "printed": "Poor: 0-2 marks",
-      "descriptor": "Trivial/irrelevant/grave errors."
-     }
-    ],
-    "directions": [
-     "(Summation which is mere repetition = max. 4 marks)"
-    ]
-   }
-  },
-  {
-   "system": "history-essay",
-   "schemeGuidance": [
-    "To mark the answer, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at this level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
-   ],
-   "oe": {
-    "max": 40,
-    "definition": "Overall Evaluation (OE) for the quality of the answer as a whole in the context of the set question.",
-    "bands": [
-     {
-      "label": "Excellent",
-      "marks": [
-       34,
-       35,
-       36,
-       37,
-       38,
-       39,
-       40
-      ],
-      "printed": "Excellent: 34-40 marks",
-      "descriptor": "Excellent in its treatment of the set question, particularly if it shows detailed learning, wide reading, analysis or extensive coverage."
-     },
-     {
-      "label": "Very good",
-      "marks": [
-       28,
-       29,
-       30,
-       31,
-       32,
-       33
-      ],
-      "printed": "Very good: 28-33 marks",
-      "descriptor": "Very good – but not excellent - in its treatment of the set question, ie: accurate and substantial."
-     },
-     {
-      "label": "Good",
-      "marks": [
-       22,
-       23,
-       24,
-       25,
-       26,
-       27
-      ],
-      "printed": "Good: 22-27 marks",
-      "descriptor": "Good standard treatment of the set question, without being exceptional in the information or the commentary supplied."
-     },
-     {
-      "label": "Fair",
-      "marks": [
-       16,
-       17,
-       18,
-       19,
-       20,
-       21
-      ],
-      "printed": "Fair: 16-21 marks",
-      "descriptor": "Fair attempt at the set question, but has identifiable defects, eg: incomplete coverage, irrelevant data, factual inaccuracies."
-     },
-     {
-      "label": "Weak",
-      "marks": [
-       10,
-       11,
-       12,
-       13,
-       14,
-       15
-      ],
-      "printed": "Weak: 10-15 marks",
-      "descriptor": "Poor, in that it fails to answer the question as set, but has some merit."
-     },
-     {
-      "label": "Very weak",
-      "marks": [
-       0,
-       1,
-       2,
-       3,
-       4,
-       5,
-       6,
-       7,
-       8,
-       9
-      ],
-      "printed": "Very weak: 0-9 marks",
-      "descriptor": "Very poor answer which, at best, offers only scraps of information."
-     }
-    ],
-    "directionsLead": "In awarding the OE, the examiner will evaluate the quality of the answer, taking into account the following, as appropriate:",
-    "directions": [
-     "To what extent has the candidate shown the ability to analyse the issues involved in the question asked (ie: more than mere narrative)?",
-     "To what extent has the candidate marshalled the relevant evidence to support his/her analysis?",
-     "To what extent has the candidate shown the ability to argue a case and to reach conclusions (ie: to answer the question as asked)?"
-    ]
-   },
-   "markingGuideNote": "Place each paragraph you wrote, in the order you wrote it, on the one band that fits it. The CM stops at its maximum, so a paragraph past it counts 0m. Then place your whole answer on one OE band.",
-   "schemeFileid": "LC004ALP000EV",
-   "cm": {
-    "mode": "paragraph",
-    "max": 60,
-    "definition": "Cumulative Mark (CM) for historical content which is accurate and relevant to the question as asked.",
-    "paragraphLead": "The examiner will divide the answer into paragraphs or paragraph equivalents:",
-    "paragraphKinds": [
-     "(i) A relevant introduction giving the background situation and/or defining the terms and explaining the approach;",
-     "(ii) An episode, phase or stage in a sequence of events;",
-     "(iii) An aspect of a topic/issue, with supporting factual references;",
-     "(iv) A point in an argument or discussion, with supporting factual references;",
-     "(v) An explanation of a concept or term, with supporting factual references;",
-     "(vi) A number of significant, relevant statements of fact, explanation or comment which, although not connected or related, can be taken together and assessed as a paragraph equivalent;",
-     "(vii) A good concluding paragraph or summation, which is not mere repetition."
     ],
     "bands": [
      {
@@ -4303,6 +4303,747 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s1-q1a", topicId: "hist-lm-irl-5", conceptId: "traditional-uniform-marchers",
+    section: "1", questionRef: "2011 HL Later Modern Section 1 Q1(a)",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "According to document A, what was the traditional uniform of the marchers?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bowler hats, crimson sashes, large cuffs", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2011 Higher Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s1-q1b", topicId: "hist-lm-irl-5", conceptId: "forms-music-accompanied-marchers",
+    section: "1", questionRef: "2011 HL Later Modern Section 1 Q1(b)",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "What forms of music accompanied the marchers in document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Flute and drum bands, Protestant tunes such as “The Wearing of the Sash” and “Derry’s Walls”", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2011 Higher Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s1-q1c", topicId: "hist-lm-irl-5", conceptId: "did-bogsiders-complain-felt-like-animals",
+    section: "1", questionRef: "2011 HL Later Modern Section 1 Q1(c)",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "According to document B, why did the Bogsiders complain that they felt like animals in a zoo?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because they were being gazed down upon or peered at by spectators and Apprentice Boys from the parapets", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2011 Higher Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s1-q1d", topicId: "hist-lm-irl-5", conceptId: "tune-out-place",
+    section: "1", questionRef: "2011 HL Later Modern Section 1 Q1(d)",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "According to document A, what tune was out of place?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "“Will Ye No’ Come Back Again”", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2011 Higher Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s1-q2a", topicId: "hist-lm-irl-5", conceptId: "describes-apprentice-boys-march-solemn-procession",
+    section: "1", questionRef: "2011 HL Later Modern Section 1 Q2(a)",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "Document B describes the Apprentice Boys’ march as ‘a solemn procession’. Does document A support or contradict that description? Give reasons for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The answer may say that Document A contradicts the description of the parade in Document B as “a solemn procession” or it may say that it supports the description", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Document A contradicts the description of the parade as “a solemn procession” as follows: Document A speaks of a “great folk festival” imbued with “good humour” which is hardly a “solemn procession” Document A says that after the service “the air was filled with music”, with bands “pumping out the traditional tunes”, which sounds more rousing or stirring rather than “solemn” Document A supports the description of the parade as “a solemn procession” as follows: “Banners fluttering”/ “wore traditional uniform” shows that the marchers were serious about rank = solemn/ “swords drawn” = serious = solemn/ “restraint and steadfastness” = serious solemn virtues preached.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2011 Higher Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s1-q2b", topicId: "hist-lm-irl-5", conceptId: "evidence-agree-religion-important-apprentice-boys",
+    section: "1", questionRef: "2011 HL Later Modern Section 1 Q2(b)",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "From the evidence of the documents, would you agree that religion was important both to Apprentice Boys and to Bogsiders? Give reasons for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Apprentice Boys: Religion was important to the Apprentice Boys because a large crowd attended church service on the morning of the parade The sermon called for restraint towards people of different religions, indicating a respect for religion in general The call for steadfastness in defence of Protestant heritage is a strong statement of how historically important their religion was for them The bands played endless renderings of Protestant tunes such as “The Wearing of the Sash” and “Derry’s Walls” Being dressed up in their Sunday best might indicate a particular respect for the Sabbath and religion in general Bogsiders: Most Catholics stayed at home, heeding the appeals of moderate Catholic leaders", marks: null },
+    { id: "r-2", kind: "point", verbatim: "This shows a respect for their own religion", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Catholics were sick of what they felt was Protestant triumphalism which showed society was sectarian and that religion was important", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2011 Higher Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s1-q3a", topicId: "hist-lm-irl-5", conceptId: "does-show-tensions-arisen-northern-ireland",
+    section: "1", questionRef: "2011 HL Later Modern Section 1 Q3(a)",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "How does document B show the tensions that had arisen in Northern Ireland between the dates of the two marches, 1967 and 1969? Refer to both documents in your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A describes the 1967 march as “a great folk festival” characterised by “good humour”, a colourful musical social and traditional occasion which set out to offend no-one Document B describes the 1969 march as one fraught with tension, with Catholic Bogsiders feeling “sick of Protestants and police cordons and riot tenders and drumbeating”, oppressed by the marchers’ triumphalism and the security apparatus of the state Catholics were not part of the traditional spectacle but stayed at home “irritated, ill-humoured and apprehensive” The intervening events in Northern Ireland 1967-1969 had clearly increased sectarian tensions and the entrenchment of the two communities in Derry", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2011 Higher Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s1-q3b", topicId: "hist-lm-irl-5", conceptId: "given-illustrate-strengths-weaknesses-work-journalists",
+    section: "1", questionRef: "2011 HL Later Modern Section 1 Q3(b)",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "How do the given documents illustrate strengths and weaknesses of the work of journalists as historical source material?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Strengths and weaknesses of the work of journalists as historical source material as seen in the given documents Factual reporting or colour/opinion pieces", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Both documents purport to be factual accounts of the 1967 and 1969 Apprentice Boys’ marches", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Insofar as reports stick to the facts they are useful for historical accuracy", marks: null },
+    { id: "r-4", kind: "point", verbatim: "If the journalist’s accounts go beyond facts and into the realm of opinion, they may be more limited in their usefulness", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Strength of journalist’s report is that it is immediate and conveys sense of what it was like to actually be there", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Weakness is that it cannot of itself go further than that", marks: null },
+    { id: "r-7", kind: "point", verbatim: "A snapshot of an event in a news report cannot provide historical context which growing up in the tradition or historical research can supply If we can trust the individual journalist to supply unbiased copy which is fair to all sides, then such testimony will be valuable – but that is a big “if” Strengths and weaknesses to be marked separately as follows:-", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2011 Higher Level examination paper, Later Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s1-q4", topicId: "hist-lm-irl-5", conceptId: "significance-activities-apprentice-boys-derry-unionists",
+    section: "1", questionRef: "2011 HL Later Modern Section 1 Q4",
+    stem: "Case study: The Apprentice Boys of Derry",
+    questionText: "What was the significance of the activities of the Apprentice Boys of Derry for both Unionists and Nationalists in Northern Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[0], schemePages: [9,10] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t1-q1", topicId: "hist-lm-irl-1", conceptId: "changes-political-structures-ireland-1815-1870",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 1 Q1",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "What were the changes in the political structures in Ireland, 1815-1870?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t1-q2", topicId: "hist-lm-irl-1", conceptId: "did-famine-begin-did-last-long",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 1 Q2",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "How did the Famine begin and why did it last so long?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (How Famine began + Why it lasted so long) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t1-q3", topicId: "hist-lm-irl-1", conceptId: "did-charles-kickham-james-stephens-contribute",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 1 Q3",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "What did Charles Kickham and/or James Stephens contribute to Fenianism?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t1-q4", topicId: "hist-lm-irl-1", conceptId: "did-more-contribute-cultural-religious-identity",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 1 Q4",
+    stem: "Ireland and the Union, 1815-1870",
+    questionText: "What did one or more of the following contribute to cultural/religious identity in Ireland: William Carleton; Thomas Davis; Cardinal Paul Cullen?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t2-q1", topicId: "hist-lm-irl-2", conceptId: "attempts-made-gain-home-rule-1870",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 2 Q1",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "What attempts were made to gain Home Rule, 1870-1886, and why were those attempts unsuccessful?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Attempts to gain HR + Why unsuccessful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t2-q2", topicId: "hist-lm-irl-2", conceptId: "did-unionism-develop-during-period-1886",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 2 Q2",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "How did Unionism develop during the period 1886-1914?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t2-q3", topicId: "hist-lm-irl-2", conceptId: "did-douglas-hyde-yeats-contribute-cultural",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 2 Q3",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "What did Douglas Hyde and/or W.B. Yeats contribute to cultural life in Ireland?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t2-q4", topicId: "hist-lm-irl-2", conceptId: "effectively-did-james-larkin-seek-improvements",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 2 Q4",
+    stem: "Movements for political and social reform, 1870-1914",
+    questionText: "How effectively did James Larkin seek improvements for workers?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t3-q1", topicId: "hist-lm-irl-3", conceptId: "did-more-contribute-irish-affairs-patrick",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 3 Q1",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "What did one or more of the following contribute to Irish affairs: Patrick Pearse; Arthur Griffith; Countess Markievicz?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t3-q2", topicId: "hist-lm-irl-3", conceptId: "did-irish-government-contribute-consolidation-democracy",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 3 Q2",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "How did the Irish government contribute to the consolidation of democracy, 1922-1932?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t3-q3", topicId: "hist-lm-irl-3", conceptId: "strengths-weaknesses-amon-valera-political-leader",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 3 Q3",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "What were the strengths and weaknesses of Éamon de Valera as a political leader?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t3-q4", topicId: "hist-lm-irl-3", conceptId: "impact-northern-ireland-international-developments-during",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 3 Q4",
+    stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
+    questionText: "What was the impact on Northern Ireland of international developments during the period 1932-1945?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t4-q1", topicId: "hist-lm-irl-4", conceptId: "during-period-1840-1914-did-many",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 4 Q1",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "During the period 1840-1914, why did so many Irish people emigrate to the US and to what extent did they become assimilated?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Why so much emigration to US + How much assimilation) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t4-q2", topicId: "hist-lm-irl-4", conceptId: "valera-mission-america-june-1919-december",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 4 Q2",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "Why was de Valera’s mission to America (June 1919 - December 1920) controversial?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t4-q3", topicId: "hist-lm-irl-4", conceptId: "main-social-economic-challenges-facing-irish",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 4 Q3",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "What were the main social and economic challenges facing the Irish in Britain, 1920-1966?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t4-q4", topicId: "hist-lm-irl-4", conceptId: "successful-irish-missionaries-africa-asia",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 4 Q4",
+    stem: "The Irish diaspora, 1840-1966",
+    questionText: "How successful were Irish missionaries in Africa and/or Asia?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t6-q1", topicId: "hist-lm-irl-6", conceptId: "during-period-1949-1989-main-developments",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 6 Q1",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "During the period 1949-1989, what were the main developments in one or more of the following: education; health; social welfare?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t6-q2", topicId: "hist-lm-irl-6", conceptId: "affected-republic-ireland-more-membership-membership",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 6 Q2",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "Which affected the Republic of Ireland more, membership of the UN or membership of the EEC? Argue your case, referring to both.",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (UN membership + EEC membership) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t6-q3", topicId: "hist-lm-irl-6", conceptId: "contribution-irish-affairs-charles-haughey-garret",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 6 Q3",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "What was the contribution to Irish affairs of Charles Haughey and/or Garret FitzGerald?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s2t6-q4", topicId: "hist-lm-irl-6", conceptId: "did-more-contribute-changing-attitudes-republic",
+    section: "2", questionRef: "2011 HL Later Modern Section 2 Topic 6 Q4",
+    stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
+    questionText: "What did one or more of the following contribute to changing attitudes in the Republic of Ireland: T.K. Whitaker; Gay Byrne; Mary Robinson?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t1-q1", topicId: "hist-lm-eur-1", conceptId: "robert-owen-aims-setting-model-village",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 1 Q1",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "What were Robert Owen’s aims in setting up the model village at New Lanark, and to what extent was New Lanark a success?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Owen’s aim + How successful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t1-q2", topicId: "hist-lm-eur-1", conceptId: "did-more-seek-bring-change-karl",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 1 Q2",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "How did one or more of the following seek to bring about change: Karl Marx; Mikhail Bakunin; Feargus O’Connor?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t1-q3", topicId: "hist-lm-eur-1", conceptId: "moves-made-towards-italian-unity-during",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 1 Q3",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "What moves were made towards Italian unity during the period 1815-1871?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t1-q4", topicId: "hist-lm-eur-1", conceptId: "effectively-did-napoleon-iii-handle-france",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 1 Q4",
+    stem: "Nationalism and state formation in Europe, 1815-1871",
+    questionText: "How effectively did Napoleon III handle France’s internal and external affairs?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (internal affairs + external affairs) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t2-q1", topicId: "hist-lm-eur-2", conceptId: "main-international-tensions-europe-1871-1914",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 2 Q1",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "What were the main international tensions in Europe, 1871-1914?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t2-q2", topicId: "hist-lm-eur-2", conceptId: "problems-posed-church-relations-germany-anti",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 2 Q2",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "What problems were posed by Church-State relations in Germany and/or Anti-Semitism in France?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t2-q3", topicId: "hist-lm-eur-2", conceptId: "did-literature-world-war-reflect-conduct",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 2 Q3",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "How did the literature of World War I reflect both the conduct of war and changing attitudes towards it?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (conduct of war + changing attitudes to war) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t2-q4", topicId: "hist-lm-eur-2", conceptId: "did-learn-science-technology-medicine-study",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 2 Q4",
+    stem: "Nation states and international tensions, 1871-1920",
+    questionText: "What did you learn about science/technology/medicine from your study of one or more of the following: the Krupp family; the invention and early history of the motor car; Marie Curie?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t3-q1", topicId: "hist-lm-eur-3", conceptId: "extent-did-lenin-stalin-bring-social",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 3 Q1",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "To what extent did Lenin and/or Stalin bring about social and economic change?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t3-q2", topicId: "hist-lm-eur-3", conceptId: "effective-internal-external-policies-benito-mussolini",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 3 Q2",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "How effective were the internal and external policies of Benito Mussolini?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (internal policies + external policies) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t3-q3", topicId: "hist-lm-eur-3", conceptId: "main-characteristics-nazi-germany-1933-1939",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 3 Q3",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "What were the main characteristics of the Nazi state in Germany, 1933-1939?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t3-q4", topicId: "hist-lm-eur-3", conceptId: "did-more-achieve-britain-during-period",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 3 Q4",
+    stem: "Dictatorship and democracy in Europe, 1920-1945",
+    questionText: "What did one or more of the following achieve in Britain during the period 1920-1945: J.M. Keynes; those who took part in the Jarrow March, October 1936; Winston Churchill?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t4-q1", topicId: "hist-lm-eur-4", conceptId: "successful-soviet-russia-controlling-eastern-europe",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 4 Q1",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "How successful was Soviet Russia in controlling Eastern Europe, 1945-1992?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t4-q2", topicId: "hist-lm-eur-4", conceptId: "social-economic-effects-growth-european-unity",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 4 Q2",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "What were the social and economic effects of the growth in European unity, 1945-1992?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t4-q3", topicId: "hist-lm-eur-4", conceptId: "impact-margaret-thatcher-britain-internal-external",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 4 Q3",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "What was the impact of Margaret Thatcher on Britain’s internal and external affairs?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (internal affairs + external affairs) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t4-q4", topicId: "hist-lm-eur-4", conceptId: "historical-importance-second-vatican-council-pope",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 4 Q4",
+    stem: "Division and realignment in Europe, 1945-1992",
+    questionText: "What was the historical importance of the Second Vatican Council and/or Pope John Paul II?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,17] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t5-q1", topicId: "hist-lm-eur-5", conceptId: "did-british-withdrawal-palestine-1956-suez",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 5 Q1",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "How did British withdrawal from Palestine and/or the 1956 Suez Crisis contribute to tensions in the Middle East?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t5-q2", topicId: "hist-lm-eur-5", conceptId: "did-katanga-break-away-congo-did",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 5 Q2",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "Why did Katanga break away from the Congo and how did the crisis that followed develop an international dimension?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Why Katanga seceded + How international dimension developed) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t5-q3", topicId: "hist-lm-eur-5", conceptId: "did-france-become-multi-racial-country",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 5 Q3",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "How did France become a multi-racial country and how did race relations develop there in the 1980s?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (How France became multi-racial + How did race relations develop in 1980s) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t5-q4", topicId: "hist-lm-eur-5", conceptId: "significance-more-personalities-mohandas-gandhi-achmad",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 5 Q4",
+    stem: "European retreat from empire and the aftermath, 1945-1990",
+    questionText: "What was the significance of one or more of the following personalities: Mohandas Gandhi; Achmad Sukarno; Chinua Achebe?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t6-q1", topicId: "hist-lm-eur-6", conceptId: "did-presidency-develop-roosevelt-reagan",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 6 Q1",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "How did the US Presidency develop from Roosevelt to Reagan?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t6-q2", topicId: "hist-lm-eur-6", conceptId: "contribution-martin-luther-king-affairs",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 6 Q2",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "What was the contribution of Martin Luther King to US affairs?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t6-q3", topicId: "hist-lm-eur-6", conceptId: "did-lose-vietnam-war-significance-moon",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 6 Q3",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "Why did the US lose the Vietnam War and/or what was the significance of the Moon landing?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,18] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2011, level: "higher",
+    paperFileid: "LC004ALP000EV",
+    schemeCitation: "Marking by paragraph quoted from the SEC marking scheme, History 2011 Higher Level — © State Examinations Commission.",
+    id: "hist-2011-hl-lm-s3t6-q4", topicId: "hist-lm-eur-6", conceptId: "did-more-contribute-american-culture-marilyn",
+    section: "3", questionRef: "2011 HL Later Modern Section 3 Topic 6 Q4",
+    stem: "The United States and the world, 1945-1989",
+    questionText: "What did one or more of the following contribute to American culture: Marilyn Monroe; Muhammad Ali; Billy Graham?",
+    totalMarks: 100,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,18] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2012, level: "higher",
     paperFileid: "LC004ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2012 Higher Level — © State Examinations Commission.",
@@ -4541,7 +5282,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What were Daniel O’Connell’s most important aims and to what extent did he achieve them?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Aims + To what extent were they achieved) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[2], cm: { ...ESSAY_MARKING[2].cm, elementRule: {"note":"NOTE: TWO elements (Aims + To what extent were they achieved) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4553,7 +5294,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "How effective were government and/or private responses to the Famine?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4565,7 +5306,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "How did one or more of the following affect economy and society up to 1870: education; the railways; industrial development in Belfast?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4577,7 +5318,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What were the main developments in science and technology and/or the creative arts in Ireland during the period 1815-1870?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4589,7 +5330,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What did you learn about the history of women from your study of one or more of the following: the Suffrage movement; Isabella Tod; Hanna Sheehy-Skeffington?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4601,7 +5342,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What were Parnell’s strengths and weaknesses as a political leader?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Strengths + Weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[2], cm: { ...ESSAY_MARKING[2].cm, elementRule: {"note":"NOTE: TWO elements (Strengths + Weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4613,7 +5354,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What was the Ulster Question and how did Unionism develop, 1870-1914?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[3], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4625,7 +5366,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What did one or more of the following contribute to cultural revival during the period 1870-1914: the GAA; the Gaelic League; the Anglo-Irish Literary Revival?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4637,7 +5378,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "How did the threat and use of physical force affect Ireland during the period 1912-1923?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4649,7 +5390,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "How did the government of Northern Ireland deal with economic problems and/or threats to security, 1920-1945?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4661,7 +5402,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "What was the significance of the Eucharistic Congress, 1932?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[3], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[4], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4673,7 +5414,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "How did Anglo-Irish relations develop during the period 1923-1949?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4685,7 +5426,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What was the importance of Grosse Isle in the history of Irish emigration?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4697,7 +5438,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What part was played by one or more of the following in the affairs of Irish-America: the Molly Maguires; John Devoy; Boss Croker; Joe Kennedy?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4709,7 +5450,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "How did the life and writings of Domhnall Mac Amhlaigh reflect Irish emigrant experience?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4721,7 +5462,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What did you learn about Irish emigration in the twentieth century from your study of one or more of the following: film and music; John F. Kennedy; tourism and heritage?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4733,7 +5474,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "How effective was the contribution of Terence O’Neill to the affairs of Northern Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4745,7 +5486,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What was the significance of the Coleraine University controversy and/or the activities of the Apprentice Boys of Derry?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[3], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[4], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4757,7 +5498,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What political attempts were made to resolve the “Troubles”, 1969-1993?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4769,7 +5510,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What was the impact of one or more of the following on Northern Ireland up to 1993: Bernadette Devlin; Ian Paisley; Seamus Heaney?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4781,7 +5522,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "To what extent did the status of women change during the period 1949-1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4793,7 +5534,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Who faced the greater challenges as Taoiseach, Seán Lemass or Jack Lynch? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Seán Lemass + Jack Lynch) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[2], cm: { ...ESSAY_MARKING[2].cm, elementRule: {"note":"NOTE: TWO elements (Seán Lemass + Jack Lynch) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4805,7 +5546,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "How did Anglo-Irish relations develop during the period 1949-1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4817,7 +5558,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "What was the impact of the EEC on Irish fisheries and/or what was the impact of television on Irish society?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4829,7 +5570,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What was Metternich’s contribution to European affairs, 1815-1848?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4841,7 +5582,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Why was there Revolution in Germany, 1848, and why did it fail?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Why the Revolution + Why the failure) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[2], cm: { ...ESSAY_MARKING[2].cm, elementRule: {"note":"NOTE: TWO elements (Why the Revolution + Why the failure) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4853,7 +5594,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What did one or more of the following contribute to cultural nationalism: music; art; literature and language?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4865,7 +5606,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "How did one or more of the following seek to bring about change in Britain, 1815-1871: Robert Owen; Feargus O’Connor; Robert Peel?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4877,7 +5618,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "How did Wilhelm II’s policy of Weltpolitik affect international relations?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4889,7 +5630,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "During the period 1900-1920, how was Russia affected by war and revolution?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4901,7 +5642,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "What did you learn about World War I from your study of the conduct of war and/or women in the workforce during World War I?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4913,7 +5654,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "What was the contribution to European affairs of one or more of the following: Pope Leo XIII; Rosa Luxemburg; Woodrow Wilson?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4925,7 +5666,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "What were the main challenges facing France, 1920-1945?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4937,7 +5678,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "What were the main characteristics of Stalin’s rule in Russia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4949,7 +5690,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "To what extent was Hitler’s foreign policy, 1933-1939, responsible for the outbreak of World War II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4961,7 +5702,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "How did anti-Semitism and the Holocaust affect Europe, 1920-1945?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4973,7 +5714,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Why, and to what extent, did Europe move towards unity, 1945-1973?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Why + To what extent) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[2], cm: { ...ESSAY_MARKING[2].cm, elementRule: {"note":"NOTE: TWO elements (Why + To what extent) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4985,7 +5726,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "What was the impact of the 1973 Oil Crisis on the economies of Western Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4997,7 +5738,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "What did you learn about the history of the Soviet Union from your study of one or more of the following: Nikita Khrushchev; Alexander Solzhenitsyn; Mikhail Gorbachev?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5009,7 +5750,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "During the period 1945-1992, what developments took place in one or more of the following: religious practice; youth and popular culture; the mass media?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5021,7 +5762,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "How well did President Harry Truman or President Lyndon Johnson handle the challenges he faced?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,17] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5033,7 +5774,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "To what extent did the US economy experience both success and decline during the period 1945-1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Success + Decline) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,17] },
+    rubric: { ...ESSAY_MARKING[2], cm: { ...ESSAY_MARKING[2].cm, elementRule: {"note":"NOTE: TWO elements (Success + Decline) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5045,7 +5786,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "What part did one or more of the following play in US foreign policy: Korea; Cuba; SALT and Star Wars?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,17] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5057,7 +5798,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "What was the significance of one or more of the following in US history: Hollywood, 1945- 1968; the Montgomery bus boycott; religion in modern American culture?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,17] },
+    rubric: { ...ESSAY_MARKING[2], schemePages: [11,12,17] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5290,7 +6031,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "How was the power of the House of Kildare weakened and destroyed, 1494-1540?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,29] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5302,7 +6043,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What were the terms of the policy of Surrender and Regrant and what were its short-term and long-term consequences?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (terms + consequences) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,29] },
+    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (terms + consequences) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5314,7 +6055,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Why was there a plantation in Laois and Offaly and how were the plans implemented?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (why + how) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,29] },
+    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why + how) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5326,7 +6067,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What religious policies were introduced into Ireland during the reign of Henry VIII and Edward VI and to what extent were they successful?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Henry VIII + Edward VI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,29] },
+    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Henry VIII + Edward VI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5338,7 +6079,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "How successful were Elizabeth I and her deputies in dealing with the threat posed by Shane O’Neill?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,29] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5350,7 +6091,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "How did Dublin and the Pale change during the reign of Elizabeth I?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,29] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5362,7 +6103,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "What role was played by Meiler Magrath in Elizabethan Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,29] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5374,7 +6115,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "To what extent was English power in Ireland extended during the reign of Elizabeth I?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,29] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5386,7 +6127,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "What religious policies were introduced into Ireland by James I?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,30] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5398,7 +6139,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "What was the impact of Buckingham and/or Strafford on Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,30] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5410,7 +6151,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "What were the origins of the 1641 rebellion and to what extent do the depositions of 1641 illustrate the state of Ireland at that time?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (origins + to what extent) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,30] },
+    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (origins + to what extent) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5422,7 +6163,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "How important were Louvain and the Four Masters in preserving and promoting Gaelic culture and history?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (Louvain + Four Masters) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,30] },
+    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Louvain + Four Masters) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5434,7 +6175,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "To what extent did the Acts of Settlement and Explanation restore the fortunes of Catholics in Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,30] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5446,7 +6187,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Which groups in Ireland supported James II and William III in the War of the Two Kings and for what reasons?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,30] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5458,7 +6199,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "How did Dublin develop during the period 1660-1715?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,30] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5470,7 +6211,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "How did the Cattle and Navigation Acts restrict trade and what impact had they on the economy of Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,30] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5482,7 +6223,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom - tensions in mid-18th century Ireland, 1715-1770",
     questionText: "How did the Ponsonbys become influential in Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,30] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5494,7 +6235,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom - tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What were the concerns of Dean Swift in his pamphleteering?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,30] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5506,7 +6247,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom - tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What did you learn about Irish rural society from your study of landlords, middlemen, cottiers and labourers?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,30] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5518,7 +6259,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom - tensions in mid-18th century Ireland, 1715-1770",
     questionText: "How effective were Charles O’Conor and the Catholic Committee in getting relief for Catholics in Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,30] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5530,7 +6271,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "What did you learn about the lives of women in Ireland from your study of one or more of the following: Mary Anne McCracken; Nano Nagle; Eibhlín Dhubh Ní Chonaill?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,31] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5542,7 +6283,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "To what extent did the 1798 Rebellion in Wexford represent the aims and ideas of the United Irishmen?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,31] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5554,7 +6295,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "What were the main reasons for the rise of Belfast, 1770-1815?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,31] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5566,7 +6307,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "How did Georgian architecture transform Dublin and/or other urban centres in Ireland, 1770-1815?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,31] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5578,7 +6319,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "What were Charles V’s most important aims and to what extent did he achieve them?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (aims + to what extent) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,31] },
+    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (aims + to what extent) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5590,7 +6331,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "Why did Lutheranism become so firmly established in Germany?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,31] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5602,7 +6343,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "How did the discovery of the New World affect Spain in general and Seville in particular?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,31] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5614,7 +6355,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "What was the contribution of one or more of the following to the Renaissance: Niccolò Machiavelli; Michelangelo Buonarroti; Pieter Breughel the Elder?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,31] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5626,7 +6367,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "How was the rise of new powers illustrated by one or more of the following: Sweden; Holland; Muscovy?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,32] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5638,7 +6379,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Why was Count Olivares surprised by the revolt of the Catalans and what consequences had the revolt for Catalonia and for Spain?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], cm: { ...ESSAY_MARKING[5].cm, elementRule: {"note":"NOTE: TWO elements (why + what consequences) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,32] },
+    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why + what consequences) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [27,28,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5650,7 +6391,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "To what extent did Marie de Medici and/or Queen Christina of Sweden exercise real political power?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,32] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5662,7 +6403,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "What was the contribution of René Descartes and/or Galileo to learning in Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,32] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5674,7 +6415,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "How far did Louis XIV expand the borders of France and make them more defensible?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,32] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5686,7 +6427,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "What was the main business of the English East India Company and how did it increase its influence and power at home and abroad?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,32] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5698,7 +6439,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "What was the impact of Peter the Great on Russia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,32] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5710,7 +6451,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "In what ways did Isaac Newton and/or Gottfried Wilhelm Leibnitz contribute to the advancement of science?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,32] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5722,7 +6463,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "To what extent was the international trade in tobacco, sugar, and slaves dependent on the West Indies slave plantations?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,33] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,33] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5734,7 +6475,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "What did one or more of the following contribute to the communication of ideas: the Encyclopédie; the newspaper; the salon?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,33] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,33] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5746,7 +6487,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "How did European powers reorganise and strengthen their armies, 1715-1775?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,33] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,33] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5758,7 +6499,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "To what extent was the Boston Tea Party a key event in the outbreak of the American Revolution?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,33] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,33] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5770,7 +6511,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "What was the impact of the agricultural and industrial revolutions on the city of Manchester?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,33] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,33] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5782,7 +6523,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "To what extent did the First and Second Estates in France contribute to the crisis that led to the end of the Ancien Régime?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,33] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,33] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5794,7 +6535,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "How successful was the Committee of Public Safety in keeping order at home and in preventing invasion?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,33] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,33] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5806,7 +6547,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "What lasting reforms were introduced by Napoleon in France and in Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [27,28,33] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [27,28,33] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6033,7 +6774,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What were the main social and economic developments in Ireland during the period 1815-1850?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6045,7 +6786,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What were Daniel O’Connell’s strengths and weaknesses as a political leader?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6057,7 +6798,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Which brought about greater change, Fenianism or Liberal reforms? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Fenianism + Liberal reforms) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Fenianism + Liberal reforms) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6069,7 +6810,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What did Cardinal Paul Cullen and/or Mother Mary Aikenhead contribute to Irish affairs?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6081,7 +6822,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "How did the Home Rule movement develop during the period 1870-1886?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6093,7 +6834,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What were the social and economic effects of industrial development in Belfast and/or the Co-operative movement?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6105,7 +6846,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "During the period 1870-1914, which was more successful, land agitation or the 1913 strike and lockout? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (land agitation + 1913 strike and lockout) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (land agitation + 1913 strike and lockout) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6117,7 +6858,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "How did one or more of the following provoke controversy: the GAA; the Suffrage movement; the Anglo-Irish Literary Revival?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6129,7 +6870,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "What were the fortunes of the Sinn Féin movement during the period 1912-1922?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6141,7 +6882,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "During the period 1922-1939, how successful were Irish governments in responding to the economic challenges they faced?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6153,7 +6894,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "How did Anglo-Irish relations develop under Éamon de Valera, 1932-1945?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6165,7 +6906,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "What was the impact of World War II on Ireland, North and South?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (North + South) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (North + South) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6177,7 +6918,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What were the main challenges and opportunities facing Irish emigrants in North America, 1840-1920?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (challenges + opportunities) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (challenges + opportunities) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6189,7 +6930,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What were the main trends in Irish emigration, 1920-1966?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6201,7 +6942,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What was the role played in the Catholic Church by Mother Mary Martin and/or the Holy Ghost mission to Nigeria, 1945-1966?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6213,7 +6954,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What was the impact John F. Kennedy on Ireland and the US?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Ireland + USA) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Ireland + USA) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6225,7 +6966,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "How was Northern Ireland affected by developments in one or more of the following: education; health; housing?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6237,7 +6978,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What were Brian Faulkner’s strengths and weaknesses as a political leader?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6249,7 +6990,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What was the impact of Republican and Loyalist terrorism on Northern Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6273,7 +7014,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Is the term ‘wasted years’ a fair description of the period 1949-1959 in the Republic of Ireland? Give reasons for your answer.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6285,7 +7026,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "What were the main social and economic changes that took place in the Republic of Ireland, 1949-1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6297,7 +7038,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Which contributed to greater change in the Republic of Ireland, Vatican II or RTÉ? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Vatican II + RTÉ) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Vatican II + RTÉ) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6309,7 +7050,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "What did Charles Haughey and/or Garret FitzGerald contribute to Irish affairs?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6333,7 +7074,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Between 1815 and 1871, how did Germany achieve greater unity and power than Italy?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Germany + Italy) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Germany + Italy) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6345,7 +7086,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What were the achievements of Baron Haussmann and/or Charles Darwin?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6357,7 +7098,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "How did one or more of the following seek to bring about change: Robert Owen; Karl Marx; Mikhail Bakunin?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6369,7 +7110,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Did Bismarck show more competence in his handling of foreign or domestic affairs? Give reasons for your answer, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (foreign affairs + domestic affairs) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (foreign affairs + domestic affairs) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6393,7 +7134,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "During the period 1871-1920, what were the main developments in one or more of the following: Church/State tensions in Italy; Anti-Semitism in France; economic crisis in Tsarist Russia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6405,7 +7146,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "How did the invention and early history of the motor car affect Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6417,7 +7158,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "What were the characteristics of fascist regimes in Europe in the inter-war period?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6429,7 +7170,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "How did Stalin transform the Soviet economy and/or use show trials to consolidate his power?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6441,7 +7182,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "What were the challenges facing Britain in peace and war, 1920-1945?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (peacetime + wartime) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (peacetime + wartime) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6453,7 +7194,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "What did you learn about radio and cinema, 1920-1945, from your study of one or more of the following: Charlie Chaplin; Leni Riefenstahl; Bing Crosby?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6465,7 +7206,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "How did the Cold War develop in Europe, 1945-1992?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6477,7 +7218,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "During the period 1945-1992, how did communist governments handle the economic challenges they faced?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6489,7 +7230,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "How effective was Margaret Thatcher’s leadership in domestic and foreign affairs?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (domestic affairs + foreign affairs) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (domestic affairs + foreign affairs) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6501,7 +7242,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "What was the contribution to European affairs of one or more of the following: Jean Monnet; Jacques Delors; Pope John Paul II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6513,7 +7254,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "What were the main developments in race relations in the US, 1945-1968?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,17] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6525,7 +7266,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Which president was more successful in his handling of US foreign policy, Harry Truman or Lyndon Johnson? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Truman + Johnson) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,17] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Truman + Johnson) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6537,7 +7278,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "What was the impact on the US economy of one or more of the following: the multinational corporation; the military-industrial complex; international competition from Japan and Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,17] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,17] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6549,7 +7290,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "What was the contribution of religion and/or the mass media to modern American culture?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,17] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,17] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6782,7 +7523,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What were the distinctive features of Gaelic culture and society in early sixteenth century Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6794,7 +7535,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What were the strengths and weaknesses of the House of Kildare in the time of Gearóid Mór?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6806,7 +7547,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "How successful or otherwise were the policies pursued by Henry VIII in Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6818,7 +7559,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What led to the Plantation of Laois/Offaly and how successfully did those who got land settle there?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (causes + outcomes for settlers) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (causes + outcomes for settlers) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6830,7 +7571,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "What did you learn about Gaelic Ireland from your study of one or more of the following: Meiler Magrath; Grace O’Malley; Tadhg Dall Ó hUiginn?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6842,7 +7583,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "In what ways did land and religion contribute to the outbreak of war in Munster?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (land + religion) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (land + religion) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6854,7 +7595,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "What features of the Elizabethan Church Settlement were applied in Ireland and how successful were these religious policies in Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (feature applied + how successful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (feature applied + how successful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6866,7 +7607,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "Who posed a greater threat to Elizabethan rule in Ireland, Shane O’Neill or Hugh O’Neill? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Shane O’Neill + Hugh O’Neill) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Shane O’Neill + Hugh O’Neill) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6878,7 +7619,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "What political, economic and religious changes did settlers introduce into Ulster as a result of the Plantation of Ulster?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (political + economic + religious changes) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [26,27,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (political + economic + religious changes) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [26,27,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6890,7 +7631,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "What did you learn about Irish history from your study of one or more of the following: Keating’s Foras Feasa; the work of the Four Masters; the depositions of 1641?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6902,7 +7643,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "How did the Cromwellian Plantation affect landowners?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6914,7 +7655,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "What important roles were played by Louvain and other Irish colleges abroad in Irish cultural and religious affairs?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Louvain + other Irish colleges) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Louvain + other Irish colleges) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6926,7 +7667,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "What were the principal issues fought over in the War of the Two Kings and why were so many soldiers from continental Europe involved?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (causes of war + continental involvement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (causes of war + continental involvement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6938,7 +7679,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "What terms were agreed at the Treaty of Limerick and how far were the agreed terms implemented?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (terms of Treaty + how far implemented) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (terms of Treaty + how far implemented) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6950,7 +7691,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "What were the main concerns of William Molyneux in his writings and how influential was his political pamphleteering?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (his concerns + his influence) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (his concerns + his influence) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6962,7 +7703,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "What did you learn about Gaelic Ireland from your study of the Jacobite poets and/or Dáibhí Ó Bruadair?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6974,7 +7715,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What did you learn about society and economy, 1715-1770, from your study of one or more of the following: population change; the potato; poverty, famine and disease?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6986,7 +7727,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What were the Penal Laws and to what extent were they relaxed, 1715-1770?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (what were penal laws + to what extent were they relaxed) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,30] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (what were penal laws + to what extent were they relaxed) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6998,7 +7739,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "How did the structures of central government administration contribute to the privilege and power of families such as the Ponsonbys?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7010,7 +7751,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What was the contribution of one or more of the following to cultural life in Ireland: the rise of the Dublin theatre; na Cúirteanna Filíochta; Turlough O’Carolan?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7022,7 +7763,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "What were the political aims of Henry Grattan and how far did he achieve them?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (aims + achievement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,30] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (aims + achievement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7034,7 +7775,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "What did Wolfe Tone hope to achieve in Irish politics and why did he fail?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (aims + why he failed) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,30] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (aims + why he failed) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7046,7 +7787,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "What were the main developments in Georgian culture in one or more of the following: architecture; art; literature and learning?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7058,7 +7799,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "What did you learn about Catholic affairs from your study of one or more of the following: Fr. Arthur O’Leary; Maynooth College; Nano Nagle?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7070,7 +7811,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "During the reign of Charles V what developments took place in the structure of the Holy Roman Empire and/or Spain’s international relations?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,31] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7082,7 +7823,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "How did Desiderius Erasmus contribute to both the Renaissance and the Reformation?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Renaissance + Reformation) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,31] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Renaissance + Reformation) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7094,7 +7835,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "What was the importance for Tudor England of the divorce of Henry VIII and Catherine of Aragon and/or the reign of Mary Tudor?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,31] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7106,7 +7847,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "How important was Geneva in making Calvinism an organized and expansionary creed?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,31] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7118,7 +7859,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "How and why did the Inquisition investigate Galileo and what were the outcomes of its findings?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (how and why + outcomes) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,31] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (how and why + outcomes) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7130,7 +7871,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "How did the Netherlands acquire an empire overseas and how valuable was this empire for the Dutch?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (how empire was acquired + how valuable) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,31] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (how empire was acquired + how valuable) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7142,7 +7883,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "How did the policies of Cardinal Richelieu contribute to the development of French absolutism?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,31] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7154,7 +7895,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "How did one or more of the following contribute to baroque music and/or art: Claudio Monteverdi; Peter Paul Rubens; Gian Lorenzo Bernini?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,31] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,31] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7166,7 +7907,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "What did John Sobieski want for Poland and how successful was he in achieving his aims?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (aims + how successful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,32] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (aims + how successful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7178,7 +7919,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "How did the (English) East India Company change the conduct of international trade?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,32] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7190,7 +7931,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "During the period 1660-1715, how did one or more of the following develop: Gallicanism; anti-Popery in England; the Huguenots; the Orthodox Church in Russia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,32] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7202,7 +7943,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "What was the significance of the court of Versailles and/or the Grand Tour?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,32] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7214,7 +7955,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "Why did the American colonists revolt against British rule and what was the British reaction to the revolt?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why revolution + British reaction) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,32] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why revolution + British reaction) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7226,7 +7967,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "To what extent did Frederick the Great use Enlightenment ideas in his rule of Prussia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,32] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7238,7 +7979,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "What developments took place in international trade and/or road and canal building during the period 1715-1775?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,32] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7250,7 +7991,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "How did one or more of the following help the spread of Enlightenment ideas: de Montesquieu; Voltaire; Diderot; Rousseau?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,32] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,32] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7262,7 +8003,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "Why did revolution break out in France in 1789 and why were Louis XVI and his supporters unable to control it?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why revolution + why Louis failed to control) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,33] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why revolution + why Louis failed to control) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,33] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7274,7 +8015,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "What was the importance for revolutionary France of the Civil Constitution of the Clergy and/or the Committee of Public Safety?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,33] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,33] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7286,7 +8027,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "What were the achievements of one or more of the following: James Madison; Mary Wollstonecraft; Ludwig van Beethoven?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [26,27,33] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [26,27,33] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7298,7 +8039,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "What resistance to his rule did Napoleon experience at home and abroad?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (at home + abroad) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,33] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (at home + abroad) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [26,27,33] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7533,7 +8274,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "How effective was Daniel O’Connell’s contribution to the campaigns for Catholic Emancipation and Repeal?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Emancipation + Repeal) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Emancipation + Repeal) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7545,7 +8286,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "During the period 1815-1850, what were the factors that contributed to the development of an economic crisis in Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7557,7 +8298,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What was the contribution of Thomas Davis and/or James Stephens to the development of Irish nationalism?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7569,7 +8310,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "From your study of religion in Ireland, 1815-1870, what was the importance of Mother Mary Aikenhead and/or the Synod of Thurles (1850) and the Romanisation of the Catholic Church?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7581,7 +8322,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What did Parnell contribute to the movements for Home Rule and land reform?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Home Rule + land reform) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Home Rule + land reform) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7593,7 +8334,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "During the period up to1914, was the Unionist movement successful?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7605,7 +8346,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Was the Dublin strike and lockout (1913) a total failure? Argue your case.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7617,7 +8358,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "From your study of culture and religion, 1870-1914, how important was one or more of the following: Douglas Hyde and the Gaelic League; the consolidation of Catholic identity; W.B. Yeats and the Anglo-Irish Literary Revival?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7629,7 +8370,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What were the main trends in Irish emigration, 1840-1920?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7641,7 +8382,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "How did one or more of the following seek to foster a sense of identity among emigrants, 1840-1966: the churches; the GAA; the Orange Order?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7653,7 +8394,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What were the challenges and opportunities facing Irish emigrants in Britain, 1920-1966?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (challenges + opportunities) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (challenges + opportunities) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7665,7 +8406,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "From your study of the Irish abroad, 1840-1966, how important was one or more of the following: Grosse Isle; the creation of Irish images through film and music; Paul O’Dwyer?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7677,7 +8418,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What were the main social and economic changes that took place in Northern Ireland, 1949-1993?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7689,7 +8430,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "Which was more successful, the Sunningdale Agreement (1973) or the Anglo-Irish Agreement (1985)? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Sunningdale + Anglo-Irish Agreement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Sunningdale + Anglo-Irish Agreement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7701,7 +8442,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "How did the people of Northern Ireland express their religious affiliation and cultural identity, 1949-1993?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7713,7 +8454,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What was the contribution to Northern Irish affairs of Bernadette Devlin and/or Margaret Thatcher?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7725,7 +8466,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "How was Ireland affected by the First Programme for Economic Expansion, 1958-1963, and/or EEC membership?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7737,7 +8478,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "How effective was Jack Lynch as Taoiseach in his handling of internal and external affairs?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (internal + external affairs) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (internal + external affairs) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7749,7 +8490,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "How did Garret FitzGerald and/or Mary Robinson help to bring about change in the Republic of Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7773,7 +8514,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What were the main political developments in the Germanic lands during the period 1815-1871?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7785,7 +8526,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Why was France politically unstable during the period 1815-1871?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7797,7 +8538,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What were the main social and economic developments in Europe, 1815-1871?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7809,7 +8550,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What were the key developments in one or more of the following during the period 1815-1871: science; technology; city planning?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7821,7 +8562,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "How did German foreign policy develop under Bismarck and Wilhelm II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Bismarck + Wilhelm II) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Bismarck + Wilhelm II) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7833,7 +8574,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "What were the main social and economic developments in Europe during the period 1871-1914?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7845,7 +8586,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "What was the impact of anti-Semitism in France and Russia, 1871-1920?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (France + Russia) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (France + Russia) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7857,7 +8598,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "What did you learn about World War I and the post-war Peace Settlement from your study of one or more of the following: the conduct of the war; women in the workforce; Woodrow Wilson?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7869,7 +8610,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "How did the Jarrow March (1936) illustrate the social and economic problems facing Britain during the inter-war period?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7881,7 +8622,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "How did church-state relations develop under Mussolini and Hitler?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Mussolini + Hitler) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Mussolini + Hitler) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7893,7 +8634,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "What were the fortunes of France during the period 1920-1945?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7905,7 +8646,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "What challenges faced the Soviet Union in peace and war, 1924-1945?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7917,7 +8658,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "By the time of the Hungarian Uprising (1956), to what extent had the Soviet Union succeeded in its policy of “sovietisation” in Eastern Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7929,7 +8670,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Why was the EEC established and how did it develop during the period 1957-1973?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why established + development) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why established + development) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7941,7 +8682,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "What was the contribution to European affairs of Mikhail Gorbachev and/or Pope John Paul II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7965,7 +8706,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "What were the main social and economic effects on Africa of European retreat from Empire, 1945-1990?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7977,7 +8718,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Which had greater consequences, British withdrawal from Palestine or British withdrawal from India? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Palestine + India) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Palestine + India) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7989,7 +8730,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Why did the Suez Crisis (1956) and/or the secession of Katanga from the Congo assume an international dimension?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8013,7 +8754,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Why did race relations remain a major issue in the US, 1945-1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8025,7 +8766,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "What were the strengths and weaknesses of Lyndon Johnson as a political leader?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8037,7 +8778,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "What were the significant developments in the US economy, 1945-1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8049,7 +8790,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "How did the Americans achieve a successful moon landing in 1969 and what was its importance for the US?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (how achieved + importance) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (how achieved + importance) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8279,7 +9020,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What new law was made by Sir Edward Poynings in 1494 and why was it important?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8291,7 +9032,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "To what extent did religious change take place in Ireland during the reigns of Henry VIII and Edward VI?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Henry VIII + Edward VI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Henry VIII + Edward VI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8303,7 +9044,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What were the main features of urban life and trade in Ireland, 1494-1558?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8315,7 +9056,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What was the role of Bardic schools in the cultural life of Ireland, 1494-1558?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8327,7 +9068,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "To what extent did the rules governing the Plantation of Ulster inhibit good relations between the settlers and the natives of that province?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8339,7 +9080,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "What were the causes of the 1641 war in Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8351,7 +9092,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "What was the impact of Cromwell on Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8363,7 +9104,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "Why was a figure such as Piaras Feiritéar under threat in Ireland, 1603-1660?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8375,7 +9116,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Who was represented in the Parliament of 1689 and what did it achieve?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8387,7 +9128,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "What was the role of Patrick Sarsfield in the War of the Two Kings?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8399,7 +9140,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "What were the aims of the Cattle and Navigation Acts and how did they affect Irish trade?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (aims + effects) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (aims + effects) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8411,7 +9152,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "During the period 1660-1715, to what extent was Ireland influenced by one or more of the following: the Jacobite poets; political pamphleteering; the emergence of science?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8423,7 +9164,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What were the main features of the Irish rural economy, 1715-1770?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8435,7 +9176,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "During the period 1715-1770, to what extent were the Penal Laws against Catholics enforced?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8447,7 +9188,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "Why was Fr. Sheehy brought to trial, how was the trial conducted, and what was the outcome?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (why + how + outcome) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (why + how + outcome) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8459,7 +9200,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What was the contribution of the Conolly family and/or Arthur Guinness to Irish life, 1715-1770?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8471,7 +9212,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "What was the impact of the American War of Independence on Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8483,7 +9224,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "What were the aims of the United Irishmen and how successful were they in achieving them?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (aims + achievement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (aims + achievement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8495,7 +9236,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "How did Ireland’s trade and economy develop, 1770-1815?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8507,7 +9248,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "What was the contribution of Eibhlín Dhubh Ní Chonaill to Gaelic culture?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8519,7 +9260,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "What was the contribution of Niccolo Machiavelli and/or Jacob Fugger to his chosen field of endeavour?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8531,7 +9272,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "How did the discovery of the New World affect Europe socially and economically?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8543,7 +9284,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "How did Henry VIII’s divorce of Catherine of Aragon influence politics and religion in England?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (politics + religion) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (politics + religion) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8555,7 +9296,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "What distinguished Calvin and/or Luther as religious reformers?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8567,7 +9308,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567-1609",
     questionText: "What was the impact on Spain of the defeat of the Spanish Armada and/or the revolt of the Netherlands?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8579,7 +9320,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567-1609",
     questionText: "Why did the port of Antwerp decline?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8591,7 +9332,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567-1609",
     questionText: "How important was the Council of Trent in the Counter-Reformation?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8603,7 +9344,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567-1609",
     questionText: "How did Tycho Brahe contribute to science and/or how did Michel de Montaigne contribute to literature?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8615,7 +9356,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Why did the Inquisition see Galileo as a threat and how did it deal with him?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why + how) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why + how) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8627,7 +9368,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "What were the consequences of the Thirty Years War for the Hapsburg Empire?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8639,7 +9380,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "How did Cardinal Richelieu contribute to the development of French absolutism?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8651,7 +9392,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "What were the key social and economic developments in Europe, 1609-1660?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8663,7 +9404,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "To what extent was the Court of Versailles a statement of absolute monarchy in France?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8675,7 +9416,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "How far-reaching were the reforms of Peter the Great in Russia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8687,7 +9428,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "What factors led to the restoration and subsequent fall of the Stuart monarchy in England?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (restoration + fall) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (restoration + fall) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8699,7 +9440,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "How important were the contributions of Isaac Newton and Gottfried Wilhelm Leibnitz to the sciences?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Newton + Leibnitz) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Newton + Leibnitz) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8711,7 +9452,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "What were the causes of the American Revolution?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8723,7 +9464,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "During the period 1715-1775, what significant developments took place in international trade?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8735,7 +9476,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "How effective a leader was Catherine the Great of Russia and/or Frederick the Great of Prussia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8747,7 +9488,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "What were the key political and social ideas of the Enlightenment?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8759,7 +9500,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "What were the causes of the French Revolution?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8771,7 +9512,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "What were the aims and achievements of the Committee of Public Safety?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (aims + achievements) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (aims + achievements) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8783,7 +9524,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "How did the agricultural and industrial revolutions bring about social and economic change in Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (agricultural + industrial) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (agricultural + industrial) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8795,7 +9536,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "What was Napoleon’s impact on Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9030,7 +9771,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What were the main social and economic developments in Ireland, 1815-1870?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9042,7 +9783,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Why did Daniel O’Connell fail to achieve Repeal of the Act of Union?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9054,7 +9795,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "How effective were government and private responses to the Great Famine?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (government + private) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (government + private) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9066,7 +9807,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What was the contribution to Irish affairs of William Carleton and/or Cardinal Paul Cullen?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9078,7 +9819,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "To what extent would you agree that the political careers of Butt and Parnell ended in failure?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Butt + Parnell) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Butt + Parnell) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9090,7 +9831,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What was the impact of land agitation and land reform during the period 1870-1909?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9102,7 +9843,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Why and how did Unionists oppose self-government for Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why + how) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why + how) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9114,7 +9855,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What was the contribution to Irish affairs of one or more of the following: the GAA, 1884-1891; the suffrage movement; the first Sinn Féin party?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9126,7 +9867,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What was the role of Grosse Isle in the history of Irish emigration?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9138,7 +9879,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What part was played in US affairs by one or more of the following: the Molly Maguires; Boss Croker; Joe Kennedy?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9150,7 +9891,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "How did Protestant churches and/or the Orange Order seek to foster an Ulster-Scottish identity among emigrants?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9162,7 +9903,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "From your study of the Irish abroad during the period 1840-1966, what did you learn of the importance of one or more of the following: Bishop Edward Galvin; Maureen O’Hara; Domhnall Mac Amhlaigh?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9174,7 +9915,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "Would you agree that there was considerable social and economic change in Northern Ireland, 1949-1969, but that nothing changed politically?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (social and economic change + political change) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (social and economic change + political change) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9186,7 +9927,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What was the contribution of Terence O’Neill and/or Ian Paisley to the affairs of Northern Ireland in the period up to 1993?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9198,7 +9939,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What was the Sunningdale Agreement and why did the power-sharing executive, 1973-1974, collapse?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Sunningdale + collapse of executive) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Sunningdale + collapse of executive) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9210,7 +9951,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "In what ways did the “Troubles” have a social and economic impact and/or give rise to cultural responses?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9222,7 +9963,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "How did Anglo-Irish relations develop during the period, 1949-1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9234,7 +9975,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "How did T. K. Whitaker and Seán Lemass respond to the challenges of their time?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Whitaker + Lemass) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Whitaker + Lemass) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9246,7 +9987,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "How did involvement in the EEC, 1973-1989, affect the Republic of Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9258,7 +9999,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "During the period, 1949-1989, what developments took place in one or more of the following: education; the status of women; broadcasting?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9270,7 +10011,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What was the system of Metternich and to what extent was it under attack, 1815-1848?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Metternich system + under attack) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Metternich system + under attack) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9282,7 +10023,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What changes took place in agriculture and industry, 1815-1871?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (agriculture + industry) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (agriculture + industry) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9294,7 +10035,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "During the period 1815-1871, how did city planning develop, with special reference to Haussmann’s Paris?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9306,7 +10047,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "During the period 1815-1871, what obstacles lay in the path of Italian unification and to what extent were they overcome?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (obstacles + overcoming obstacles) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (obstacles + overcoming obstacles) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9318,7 +10059,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "During the period 1871-1914, how did one or more of the following contribute to international tensions: colonial rivalries; the naval policy of Wilhelm II; Serbia and its neighbours?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9330,7 +10071,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "How did economic crises and wars affect Tsarist Russia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (economic crises + wars) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (economic crises + wars) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9342,7 +10083,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "How did European states manage relations with the churches and/or religious minorities such as the Jews during the period 1871-1914?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9354,7 +10095,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "During the period 1871-1920, what developments took place in one or more of the following: the motor car; science and technology; medicine?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9366,7 +10107,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "What were the social and economic problems facing Germany, 1920-1939, and how were they dealt with?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (problems + dealing with problems) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (problems + dealing with problems) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9378,7 +10119,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "How did Mussolini and/or Stalin use propaganda and terror to remain in power?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (propaganda + terrror) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (propaganda + terrror) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9390,7 +10131,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "To what extent did Hitler’s foreign policy, 1933-1939, contribute to the outbreak of World War II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9402,7 +10143,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "What were the economic and social problems of Britain during the inter-war years and/or what was the impact of World War II on its civilian population?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9414,7 +10155,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "How was Europe affected by moves towards unity, 1945-1957, and/or the 1973 Oil Crisis?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9426,7 +10167,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "How effective were the efforts of Nikita Khrushchev and/or Mikhail Gorbachev in reforming the Soviet Union?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9438,7 +10179,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "What was the importance of one or more of the following: Simone de Beauvoir; Margaret Thatcher; Jacques Delors?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9450,7 +10191,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "During the period 1945-1992, what changes took place in religious practice and/or youth and popular culture (including sport)?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9462,7 +10203,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "What was the importance, for both countries, of Britain’s withdrawal from India?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Britain + India) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Britain + India) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9474,7 +10215,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "What were the effects of Julius Nyerere’s policy of ujamaa and/or the Lomé Conventions?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9486,7 +10227,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "To what extent did Britain and France become multi-racial societies, 1945-1990?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Britain + France) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Britain + France) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9498,7 +10239,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "What was the importance of one or more of the following: David Ben-Gurion; Gamal Abdul Nasser; Nadine Gordimer?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9510,7 +10251,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "During the period 1945-1989, what was the importance for US foreign policy of one or more of the following: Berlin; Korea; Cuba?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9522,7 +10263,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Why did the Montgomery bus boycott (1956) take place, how was it carried out, and to what extent was it successful?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (why + how + successful?) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (why + how + successful?) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9534,7 +10275,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "What was the American Dream and to what extent was it reflected in life in the US, 1945- 1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (American Dream + American reality) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (American Dream + American reality) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9546,7 +10287,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "During the period 1945-1989, what advances were made by the Americans in military, space and information technology?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9780,7 +10521,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "How did the policies of Poynings and Skeffington contribute to the fall from power of the earls of Kildare?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Poynings + Skeffington) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Poynings + Skeffington) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9792,7 +10533,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What was the impact on Ireland during this period of the dissolution of the monasteries and/or other religious changes?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9804,7 +10545,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What were the roles of the lords, freeholders and churls in Gaelic society?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (lords + freeholders + churls) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (lords + freeholders + churls) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9816,7 +10557,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Why was a policy of plantation introduced in Laois and Offaly, how was it carried out, and to what extent was it successful?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (why + how + how successful) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [23,24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (why + how + how successful) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [23,24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9828,7 +10569,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "What were the Irish policies of Sir Thomas Wentworth and how did they contribute to his fall?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (his policies + contribution to his fall) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (his policies + contribution to his fall) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9840,7 +10581,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "What did you learn about land ownership in Ireland from your study of state and private plantation?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9852,7 +10593,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "How did Ireland change as a result of the Cromwellian military campaign?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9864,7 +10605,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "How important were the Four Masters and/or the Louvain mission in preserving Irish culture?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9876,7 +10617,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Why did Charles II’s Irish policies please neither Catholics nor Protestants?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Catholics + Protestants) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Catholics + Protestants) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9888,7 +10629,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "What were the main factors affecting Irish trade, 1660-1715?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9900,7 +10641,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Why was religious discrimination a policy in Ireland and what was its impact on Irish society during this period?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why policy + what impact) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why policy + what impact) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9912,7 +10653,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "What was the significance of the end of the Gaelic Bardic system and/or the Jacobite poets?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9924,7 +10665,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What role did the Protestant Ascendancy play in Ireland, 1715-1770?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9936,7 +10677,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What were the concerns of Dean Swift in his Drapier’s letters?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9948,7 +10689,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What were the main causes of agrarian unrest, what forms did the unrest take and what were its results, 1715-1770?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (causes + forms of unrest + results) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (causes + forms of unrest + results) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9960,7 +10701,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "During the period 1715-1770, what cultural developments were noteworthy in one or more of the following: theatre; music; poetry?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9972,7 +10713,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "To what extent did Henry Grattan and the Volunteers change Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9984,7 +10725,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Would you agree that the United Irishmen failed to unite Irishmen? Argue your case, with special reference to the Wexford Rebellion.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9996,7 +10737,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "During this period what was the social and economic impact of the cotton and linen industries and/or the rise of Belfast?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10008,7 +10749,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Who founded Maynooth College, why was it founded, and to what extent were the aims of its founders achieved?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (founders + reasons + aims achieved) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (founders + reasons + aims achieved) If only TWO, Max. CM = 50 If only ONE, Max CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10020,7 +10761,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "How did the discovery of the New World affect Europe in general and Seville in particular?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Europe + Seville) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Europe + Seville) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10032,7 +10773,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "How important was Machiavelli and/or Michelangelo to the Renaissance?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10044,7 +10785,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "Why did the Reformation begin in Germany and why was it only a partial success?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Germany + partial success) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Germany + partial success) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10056,7 +10797,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "What was the distinctive contribution of Calvin’s Geneva to the Reformation?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10068,7 +10809,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567-1609",
     questionText: "Why did Philip II launch the Spanish Armada and why did it fail?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Why Armada + why failure) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Why Armada + why failure) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10080,7 +10821,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567-1609",
     questionText: "Why did the port of Antwerp decline and what were the social and economic effects of its decline?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Why decline + what effects) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Why decline + what effects) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10092,7 +10833,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567-1609",
     questionText: "What were the aims and achievements of Catherine de Medici?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (aims + achievements) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (aims + achievements) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10104,7 +10845,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567-1609",
     questionText: "What was the significance of the Jesuits and/or the Council of Trent in the Counter- Reformation?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10116,7 +10857,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "What were the effects of the military revolution and/or military leaders, such as Wallenstein, on the Thirty Years War?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10128,7 +10869,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "How did the policies of Olivares contribute to the revolt of the Catalans and why did the revolt last so long?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (policies of Olivares + why so long) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (policies of Olivares + why so long) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10140,7 +10881,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "How and why did the Dutch establish an empire in Asia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (how + why) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (how + why) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10152,7 +10893,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "How did Hugo Grotius contribute to new modes of political thought?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10164,7 +10905,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "To what extent did the policies of Louis XIV undermine France?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10176,7 +10917,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Why did the Streltsy revolt and how was the revolt put down?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why revolt + how put down) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why revolt + how put down) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10188,7 +10929,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Why did trading companies like the (English) East India Company become important in international trade at this time?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10200,7 +10941,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "How and why was anti-Catholicism such a striking feature, at many levels of society in England, at this time?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (how + why) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (how + why) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10212,7 +10953,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "What did one or more of the following contribute to the Enlightenment: Montesquieu; Voltaire; Diderot; Rousseau?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10224,7 +10965,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "During this period how did one or more of the following contribute to international trade: sugar; tobacco; slaves?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10236,7 +10977,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "How significant was the Boston Tea Party in the American Revolution?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10248,7 +10989,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "How enlightened a ruler was one or more of the following: Catherine the Great of Russia; Frederick the Great of Prussia; Maria Theresa of Austria?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10260,7 +11001,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "What events and ideas led to the outbreak of revolution in France in 1789?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (events + ideas) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (events + ideas) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10272,7 +11013,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "Why was the Committee of Public Safety established and what did it achieve?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (aims + achievements) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (aims + achievements) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10284,7 +11025,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "How did the agricultural and industrial revolutions affect Manchester during this period?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (agricultural + industrial) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (agricultural + industrial) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [23,24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10296,7 +11037,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "How did Napoleon’s campaigns contribute to the rise of nationalism across Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [23,24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [23,24,25,29] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10530,7 +11271,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "During the period 1815-1870, in what ways did the Belfast region develop differently from the rest of Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10542,7 +11283,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What were the aims of Daniel O’Connell and to what extent did he achieve them?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (aims + extent of achievement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (aims + extent of achievement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10554,7 +11295,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "How did one or more of the following contribute to the relief of distress in Ireland: the Poor Law; government responses to the Famine; Asenath Nicholson?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10566,7 +11307,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What did one or more of the following contribute to the development of Irish nationalism: Thomas Davis; Charles Kickham; James Stephens?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10578,7 +11319,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What was the contribution of Davitt and Parnell to land agitation and land reform?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Davitt + Parnell) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Davitt + Parnell) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10590,7 +11331,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What were the issues and outcomes of the elections of 1885 and 1886 and/or the 1913 Dublin strike and lockout?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10602,7 +11343,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "During the period 1870-1914, how successful was Unionism in resisting Home Rule?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10614,7 +11355,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What was the contribution of the Gaelic League and/or the Anglo-Irish Literary Revival to Irish life?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10626,7 +11367,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "What were the main events in Dublin during the 1916 Rising, and was Ireland, in Yeats’ phrase, ‘changed utterly’ as a result?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Dublin 1916 + Was Ireland “changed utterly”?) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Dublin 1916 + Was Ireland “changed utterly”?) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10638,7 +11379,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Why did the conduct and outcome of the Treaty negotiations, October-December, 1921, prove contentious?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10650,7 +11391,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "During the period 1912-1940, what were the strengths and weaknesses of James Craig as a political leader?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10662,7 +11403,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "How well did Irish governments cope with the social and economic problems they faced, 1923-1945?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10674,7 +11415,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "How did one or more of the following contribute to Irish nationalism as an international force: John Devoy; Archbishop Daniel Mannix; De Valera in America (June, 1919-December, 1920)?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10686,7 +11427,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "How successful were the efforts of Ulster Unionists to lobby international support among Ulster emigrants?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10698,7 +11439,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "During the period 1920-1966, why did so many Irish emigrants choose Britain as their destination and to what extent were they assimilated?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (UK as choice of destination + assimilation) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (UK as choice of destination + assimilation) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10710,7 +11451,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What were the successes and failures of the Holy Ghost mission to Nigeria, 1945-1966?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10722,7 +11463,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "During the period 1949-1969, how successful was the government of Northern Ireland in responding to problems posed by the economy and/or community relations?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (social and economic change + political change) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (social and economic change + political change) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10734,7 +11475,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "Why did controversy arise from the activities of the Apprentice Boys of Derry or the siting of a new university at Coleraine?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10746,7 +11487,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What were the strengths and weaknesses of Brian Faulkner as a political leader?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10758,7 +11499,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What was the impact of one or more of the following on Northern Ireland: Bernadette Devlin; John Hume; Seamus Heaney?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10770,7 +11511,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "During the period 1949-1959, how effective were Irish governments in tackling the problems they faced?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10782,7 +11523,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "What did Seán Lemass achieve in internal and external affairs, and what did he leave undone?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (internal affairs + external affairs + outstanding issues) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (internal affairs + external affairs + outstanding issues) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10794,7 +11535,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Which had the greater impact on Irish society, Vatican II or the EEC? Argue your case, referring to both in your answer.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10806,7 +11547,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "How did one or more of the following contribute to change in the Republic of Ireland: Sylvia Meehan; Mary Robinson; Garret FitzGerald?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10818,7 +11559,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Why was there a wave of revolutions across Europe in 1848 and why did the 1848 Revolution in Germany fail?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Why European revolutions? + Why revolution in Germany failed?) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Why European revolutions? + Why revolution in Germany failed?) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10830,7 +11571,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Who was the more successful reformer, Robert Owen or Robert Peel? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10842,7 +11583,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "How did Balkan nationalism develop, 1815-1871, and to what extent did it threaten the stability of Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Development of Balkan nationalism + Threat to European stability) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Development of Balkan nationalism + Threat to European stability) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10854,7 +11595,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What were the achievements of Charles Darwin and/or Victor Hugo?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10866,7 +11607,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "During the period 1871-1914, would you agree that Wilhelm II’s foreign policy was more provocative than Bismarck’s? Argue your case, referring to both in your answer.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10878,7 +11619,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "How did industry develop in Europe, 1870-1914, and what was its impact on society?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (development of industry + its impact on society) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (development of industry + its impact on society) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10890,7 +11631,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "What did you learn about World War I from your study of the conduct of war and/or the literature of the war?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10902,7 +11643,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "What was the contribution to European affairs of one or more of the following: Pope Leo XIII; Marie Curie; Rosa Luxemburg?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10914,7 +11655,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "How successful was Soviet Russia in controlling Eastern Europe, 1945-1992?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10926,7 +11667,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "What was the impact on the western economies of one or more of the following: Marshall Aid; moves towards European unity, 1945-1973; the 1973 Oil Crisis?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10938,7 +11679,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "During the period 1945-1992, how did one or more of the following develop: affluence, leisure time and the consumer society; nuclear power; the computer?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10950,7 +11691,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "What were the achievements of one or more of the following: Alexander Solzhenitsyn; Simone de Beauvoir; John Lennon?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10962,7 +11703,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "To what extent did Britain contribute to tensions in the Middle East, 1945-1966?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10974,7 +11715,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "What was the importance of the secession of Katanga in its national and international contexts?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (national context + international context) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (national context + international context) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10986,7 +11727,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Which managed race relations better, Britain or France? Argue your case, referring to both in your answer.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10998,7 +11739,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "What was the contribution to post-colonial literature of Nadine Gordimer and/or Chinua Achebe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11010,7 +11751,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Who was the greater president, Truman or Johnson? Argue your case, referring to both in your answer.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11022,7 +11763,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "During the period 1945-1989, what was the impact on US society of McCarthyism and/or the anti-war movement?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11034,7 +11775,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "What were the strengths and weaknesses of the US economy, 1945-1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11046,7 +11787,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "What was the significance of the moon landing (1969) and/or Star Wars?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -11278,7 +12019,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What were the challenges facing Gearóid Mór, the 8th Earl of Kildare?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11290,7 +12031,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "How effective was Mary Tudor’s religious or plantation policy in Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11302,7 +12043,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "What was the distinctive role of women under Gaelic law?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11314,7 +12055,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Did the Reformation under Henry VIII and Edward VI fail in Ireland? Explain your answer.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Henry VIII + Edward VI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Henry VIII + Edward VI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11326,7 +12067,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "Why did insecurity about land titles and religion lead to rebellion in Munster and to the destruction of Desmond?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (land titles + religion) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (land titles + religion) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11338,7 +12079,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "What notable developments were there in the city of Dublin during the reign of Elizabeth I?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11350,7 +12091,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "What political and religious circumstances in Ireland allowed Meiler Magrath to flourish during the reign of Elizabeth I?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (political + religious) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (political + religious) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11362,7 +12103,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "Why did it prove so difficult to defeat Hugh O’Neill in the Nine Years War?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11374,7 +12115,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "How did the newcomers to Ulster settle there during the plantation?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11386,7 +12127,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "What was the religious and cultural importance for Ireland of the Irish colleges abroad?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11398,7 +12139,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "What do the depositions of 1641 reveal about relations between native and planter in Ulster?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11410,7 +12151,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony - the struggle for mastery in Ireland, 1603-1660",
     questionText: "Why is Cromwell’s campaign in Ireland associated with violence and atrocity?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11422,7 +12163,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "What notable developments were there in Restoration Dublin?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11434,7 +12175,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "What were the reasons for the War of the Two Kings between James II and William III and what was its outcome?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (reasons + outcome) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (reasons + outcome) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11446,7 +12187,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "How did the Cattle and Navigation Acts affect Irish trade?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Cattle Act + Navigation Act) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Cattle Act + Navigation Act) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11458,7 +12199,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "What was the contribution of Samuel Louis Crommelin and/or Robert Boyle to Irish life?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11470,7 +12211,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What role did the Ponsonbys play in Irish politics and government, 1715-1770?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11482,7 +12223,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What concerns about Ireland were expressed by Dean Swift in Drapier’s letters and in other pamphlets?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11494,7 +12235,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What problems were associated with the pressures of population increase in rural Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11506,7 +12247,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "What was the contribution to Irish life of Turlough O’Carolan and/or Margaret (Peg) Woffington?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11518,7 +12259,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "How did one or more of the following contribute to rural discontent: land hunger; secret agrarian organisations; rural sectarianism?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11530,7 +12271,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "What were Henry Grattan’s strengths and weaknesses as a political leader?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11542,7 +12283,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Why was Maynooth College founded, 1795, and what was its contribution to Irish affairs in its first two decades?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why founded + its contribution) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why founded + its contribution) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11554,7 +12295,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Why did the introduction of the Act of Union prove contentious?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11566,7 +12307,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567-1609",
     questionText: "What were the strengths and weaknesses of Spain under Philip II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11578,7 +12319,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567-1609",
     questionText: "Would you agree that religion was by no means the only cause of the French Wars of Religion?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11590,7 +12331,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567-1609",
     questionText: "How did Matteo Ricci contribute to the Jesuit mission in China?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11602,7 +12343,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567-1609",
     questionText: "What were key developments in one or more of the following: printing; popular literature; astronomy?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11614,7 +12355,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Why did the Catalans revolt and why did their revolt last so long?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (reasons for revolt + why so long) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (reasons for revolt + why so long) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11626,7 +12367,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "How did the Thirty Years War begin and to what extent did it reflect the “military revolution” of the age?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (how war began + how it reflected “military revolution”) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (how war began + how it reflected “military revolution”) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11638,7 +12379,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "How was the European economy affected by one or more of the following: the decline of old industry; the rise of the entrepreneur; the Dutch empire in Asia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11650,7 +12391,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Why was Galileo brought before the Inquisition, how was he treated and why did this case become so famous?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (why brought before Inquisition? + how treated + why case became famous) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (why brought before Inquisition? + how treated + why case became famous) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11662,7 +12403,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Why did Louis XIV engage in so many wars during his reign and what were the consequences for France?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why so many wars + consequences for France) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why so many wars + consequences for France) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11674,7 +12415,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "What were the changes brought about by Peter the Great both in Russia and in Russia’s relations with the outside world?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (internal affairs + external affairs) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (internal affairs + external affairs) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11686,7 +12427,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "How significant for England was the trading power of the East India Company?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11698,7 +12439,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "How influential was the court of Versailles in France and beyond?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (in France + in other countries) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (in France + in other countries) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11710,7 +12451,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "How did the reign of Frederick William I and/or Frederick II increase the power and prestige of Prussia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11722,7 +12463,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "Why did the American colonists revolt and why did their revolt become a revolution?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why the revolt + why revolt became a revolution) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why the revolt + why revolt became a revolution) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11734,7 +12475,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "What was the importance of the West Indies slave plantations for international trade?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11746,7 +12487,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "How did one or more of the following contribute to the communication of ideas: the Encyclopédie; the novel; the salon?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11758,7 +12499,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "What important changes took place in France between the outbreak of revolution in 1789 and the execution of Louis XVI in 1793?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11770,7 +12511,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "What was the impact of Napoleon on France and on Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (France + Europe) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (France + Europe) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11782,7 +12523,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "What were the social and economic effects of one or more of the following: the end of feudalism and nobility; the abolition of the slave trade; the emancipation of the Jews?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11794,7 +12535,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "From your study of the Civil Constitution of the Clergy and/or church-state relations under Napoleon, what was the role of religion in France? (100) Blank",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12025,7 +12766,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "During the period 1815‐1870, what was the impact on Ireland of one or more of the following: emigration; education; industrial development in Belfast?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12037,7 +12778,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "What were the responses of Charles Trevelyan and/or Asenath Nicholson to Famine in Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12049,7 +12790,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "What were the strengths and weaknesses of Fenianism as a political movement?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12061,7 +12802,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "What were the developments in the creative arts and/or science and technology during the period 1815‐1870?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12073,7 +12814,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870‐1914",
     questionText: "How did the Home Rule movement develop under Butt and Parnell during the period 1870‐1886?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Butt + Parnell) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Butt + Parnell) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12085,7 +12826,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870‐1914",
     questionText: "What were the political aims of Edward Carson and how successful were his efforts to achieve them?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Carson’s aims + how successful was he) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Carson’s aims + how successful was he) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12097,7 +12838,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870‐1914",
     questionText: "From your study of Irish social and economic history, 1870‐1914, what was the importance of land reform and/or the co‐operative movement?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12109,7 +12850,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870‐1914",
     questionText: "During the period 1870‐1914, what was the contribution to Irish affairs of the GAA and/or the Suffrage movement?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12121,7 +12862,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "During the period 1912‐1920, which factors contributed most to the partition of Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12133,7 +12874,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "During the period 1922‐1939, who achieved more in Anglo‐Irish relations, Cosgrave or de Valera? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Cosgrave + de Valera) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Cosgrave + de Valera) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12145,7 +12886,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "During the period 1922‐1949, how did the 1932 Eucharistic Congress and/or the state’s language and education policies contribute to Irish identity?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12157,7 +12898,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "What was the impact of World War II on Ireland, North and South?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (North + South) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (North + South) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12169,7 +12910,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "What were the challenges and opportunities facing Irish emigrants in the US, 1840‐1920?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (challenges + opportunities) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (challenges + opportunities) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12181,7 +12922,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "What was the significance of one or more of the following among the Irish diaspora: Archbishop Daniel Mannix; Domhnall Mac Amhlaigh; Paul O’Dwyer?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12193,7 +12934,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "How successful were Irish missionaries in Africa and Asia, 1945‐1966?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12205,7 +12946,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "What did you learn from your study of the creation of Irish images through film and music and/or links between Ireland and the wider Irish community through tourism and heritage?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12217,7 +12958,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "What were the main social and economic problems facing Northern Ireland, 1949‐1969, and how effectively were they tackled?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (main problems + how effectively tackled) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (main problems + how effectively tackled) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12229,7 +12970,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "Why did the Civil Rights movement emerge in Northern Ireland and was it successful?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why NICRA emerged + was it successful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why NICRA emerged + was it successful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12241,7 +12982,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "What was the contribution of Terence O’Neill and/or Ian Paisley to the affairs of Northern Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12253,7 +12994,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "From your study of culture and religion in Northern Ireland, 1949‐1993, what did you learn about one or more of the following: the Apprentice Boys of Derry; ecumenism; cultural responses to the “Troubles”?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12265,7 +13006,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949‐1989",
     questionText: "How well did Irish governments cope with the social and economic problems they faced, 1949‐1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12277,7 +13018,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949‐1989",
     questionText: "What did Jack Lynch and/or Charles Haughey contribute to Irish affairs?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12289,7 +13030,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949‐1989",
     questionText: "During the period 1949‐1989, what was the importance of one or more of the following: changing attitudes towards Irish language and culture; the impact of RTÉ, 1962‐1972; Archbishop John Charles McQuaid?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12301,7 +13042,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949‐1989",
     questionText: "To what extent did the status of women change during the period 1949‐1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12313,7 +13054,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "During the period 1815‐1848, what was the contribution of Metternich to European diplomacy?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12325,7 +13066,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "Which country achieved greater unity and strength during the period 1815‐1871, Italy or Germany? Argue your case, referring to both countries.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Italy + Germany) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Italy + Germany) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12337,7 +13078,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "During the period 1815‐1871, which responded more effectively to social change in Europe, trade unionism and socialism or mass politics? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (trade unionism and socialism + mass politics) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (trade unionism and socialism + mass politics) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12349,7 +13090,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "During the period 1815‐1871, what was the importance of cultural nationalism and/or Haussmann’s Paris?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12361,7 +13102,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "During the period 1871‐1914, what was the impact on Germany of industrialisation and the invention and early history of the motor car?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (industrialisation + invention and early history of motor car) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (industrialisation + invention and early history of motor car) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12373,7 +13114,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "What were the causes of the New Imperialism and how did the New Imperialism affect Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (causes of New Imperialism + effect on Europe) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (causes of New Imperialism + effect on Europe) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12385,7 +13126,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "What was the impact of war and revolution on Russia, 1900‐1920?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12397,7 +13138,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "What did you learn about World War I and the post‐war Peace Settlement from your study of one or more of the following: Douglas Haig; women in the workforce; Woodrow Wilson?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12409,7 +13150,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "How successful as Soviet leader was Nikita Khrushchev?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12421,7 +13162,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "How effective was Margaret Thatcher’s leadership in domestic and foreign affairs?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (domestic affairs + foreign affairs) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (domestic affairs + foreign affairs) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12433,7 +13174,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "What were the strengths and weaknesses of the Western economies, 1945‐1990?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12445,7 +13186,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "What was the importance of the Second Vatican Council and/or the papacy of John Paul II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12457,7 +13198,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "What was the importance, for both countries, of British withdrawal from India?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Britain + India) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Britain + India) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12469,7 +13210,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "What internal and external problems faced Sukarno’s Indonesia, and how effective were his attempts to resolve them?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (internal and external problems + how well did Sukarno resolve them) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (internal and external problems + how well did Sukarno resolve them) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12481,7 +13222,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "From your study of social and economic history, what did you learn about Julius Nyerere and the policy of ujamaa and/or trade, aid and famine in post‐colonial Africa?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12493,7 +13234,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "During the period 1945‐1990, what was the importance of the spread of Islam and Christianity in Africa and/or the Islamic faith in Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12505,7 +13246,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "From Roosevelt to Reagan, would you agree that American presidents always acted for the good of America? Argue your case referring to more than one president.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: At least TWO US Presidents If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: At least TWO US Presidents If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12517,7 +13258,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "What was the contribution of Martin Luther King to the events of the Montgomery bus boycott and to other aspects of US life?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Montgomery bus boycott + other aspects of US life) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Montgomery bus boycott + other aspects of US life) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12529,7 +13270,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "What were the achievements of the US economy, 1945‐1968, and what factors limited its growth, 1968‐1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (boom 1945-1968 + decline 1968-1989) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (boom 1945-1968 + decline 1968-1989) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12541,7 +13282,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "How did one or more of the following challenge widely‐held views in the US: Norman Mailer; Betty Friedan; Muhammad Ali?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12775,7 +13516,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494‐1558",
     questionText: "What were the strengths and weaknesses of the House of Kildare under Gearóid Mór?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12787,7 +13528,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494‐1558",
     questionText: "What was the impact of the dissolution of the monasteries and/or the policy of surrender and regrant?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12799,7 +13540,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494‐1558",
     questionText: "From your study of Gaelic Ireland, what did you learn about family and kin and/or the bardic schools?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12811,7 +13552,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494‐1558",
     questionText: "To what extent did religious change take place in Ireland during the reigns of Edward VI and Mary Tudor?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Edward VI + Mary Tudor) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Edward VI + Mary Tudor) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12823,7 +13564,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "What were the causes of the Desmond rebellion in Munster and why was it so destructive?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (causes of Desmond rebellion + why was it so destructive) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (causes of Desmond rebellion + why was it so destructive) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12835,7 +13576,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "How did Dublin and the Pale change during the reign of Elizabeth I?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12847,7 +13588,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "From your study of culture and religion, what did you learn about Tadhg Dall Ó hUiginn and/or Meiler Magrath?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12859,7 +13600,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "Who posed the greater threat to Tudor power in Ireland, Shane O’Neill or Hugh O’Neill? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Shane O’Neill + Hugh O’Neill) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Shane O’Neill + Hugh O’Neill) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12871,7 +13612,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony ‐ the struggle for mastery in Ireland, 1603‐1660",
     questionText: "How did Ulster change as a result of the Plantation of Ulster?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12883,7 +13624,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony ‐ the struggle for mastery in Ireland, 1603‐1660",
     questionText: "What were the Irish policies of Sir Thomas Wentworth and how did they contribute to his fall?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (His Irish policies + how they contributed to his fall) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (His Irish policies + how they contributed to his fall) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12895,7 +13636,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony ‐ the struggle for mastery in Ireland, 1603‐1660",
     questionText: "What was the impact of Cromwell on Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12907,7 +13648,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony ‐ the struggle for mastery in Ireland, 1603‐1660",
     questionText: "What visions of Ireland are found in one or more of the following: Keating’s Foras Feasa; the Four Masters; the depositions of 1641?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12919,7 +13660,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "What did Tyrconnell and the Parliament of 1689 achieve for Catholics and how were those achievements overturned?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (achievements + how they were overturned) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (achievements + how they were overturned) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12931,7 +13672,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "What were the factors affecting Irish trade, 1660‐1715?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12943,7 +13684,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "What were the concerns of William Molyneux in his pamphleteering?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12955,7 +13696,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "From your study of culture, religion and science, what did you learn about one or more of the following: Dáibhí Ó Bruadair; Oliver Plunkett; Robert Boyle?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12967,7 +13708,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "What did you learn about Irish politics and administration from your study of the Ponsonbys?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12979,7 +13720,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "What were the Penal Laws and to what extent were they relaxed during the period 1715‐1770?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (what were the penal laws + to what extent were they relaxed) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (what were the penal laws + to what extent were they relaxed) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12991,7 +13732,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "What were the main features of the Irish economy, 1715‐1770?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13003,7 +13744,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "What was the importance of the Cúirteanna Filíochta and/or the writings of Dean Swift?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13015,7 +13756,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "Would you agree that Henry Grattan and/or Wolfe Tone achieved nothing? Argue your case.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13027,7 +13768,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "What were the main achievements of Georgian culture in one or more of the following: architecture; art; literature and learning?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13039,7 +13780,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "What were the main reasons for the rise of Belfast, 1770‐1815?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13051,7 +13792,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "Why and how was the Act of Union passed and what was its effect on Dublin?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why and how Union was passed + its effect on Dublin) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why and how Union was passed + its effect on Dublin) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13063,7 +13804,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567‐1609",
     questionText: "What was the contribution of William the Silent to the Revolt of the Netherlands?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13075,7 +13816,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567‐1609",
     questionText: "How successful in achieving its aims was the Council of Trent and/or the Jesuit mission in China?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13087,7 +13828,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567‐1609",
     questionText: "How did political and religious considerations affect the policies of Catherine de Medici?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (political + religious) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (political + religious) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13099,7 +13840,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later 16th century, 1567‐1609",
     questionText: "From your study of Elizabethan England, what did you learn about one or more of the following: Anglicanism; the Spanish Armada; Sir Walter Raleigh?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13111,7 +13852,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "What was the contribution to French absolutism of Marie de’ Medici and/or Cardinal Richelieu?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13123,7 +13864,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "What were the fortunes of the Dutch empire in Asia, 1609‐1660?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13135,7 +13876,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "What was the contribution to empirical science of Galileo Galilei and/or René Descartes?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13147,7 +13888,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "What were the significant developments in baroque music and art?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (music + art) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (music + art) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13159,7 +13900,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐1715",
     questionText: "What were the key features of the absolute monarchy of Louis XIV?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13171,7 +13912,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐1715",
     questionText: "What factors led to the restoration of the Stuart monarchy in England and to its fall within thirty years?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (causes of Stuart restoration + its fall) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (causes of Stuart restoration + its fall) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13183,7 +13924,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐1715",
     questionText: "What did you find significant about one or more of the following: smuggling and piracy; the expansion of cities; the Grand Tour?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13195,7 +13936,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐1715",
     questionText: "What was the contribution to science/technology of one or more of the following: Isaac Newton; Gottfried Wilhelm Leibnitz; Sébastien le Prestre de Vauban?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13207,7 +13948,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "What did the Boston Tea Party and/or Benjamin Franklin contribute to the American Revolution?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13219,7 +13960,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "How enlightened a ruler was Catherine the Great of Russia and/or Maria Theresa of Austria?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13231,7 +13972,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "What developments took place in international trade (tobacco, sugar, slaves) and/or road and canal building, 1715‐1775?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13243,7 +13984,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "What was the contribution of one or more of the following to the spread of knowledge: historical and scientific criticism; the salon; Jean Jacques Rousseau?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13255,7 +13996,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "What caused revolution to break out in France in 1789 and why were the King and his advisers unable to control it?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (immediate causes of revolution + why king and advisers failed to deal with it) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (immediate causes of revolution + why king and advisers failed to deal with it) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13267,7 +14008,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "How did the agricultural and industrial revolutions contribute to the growth of Manchester?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (agricultural + industrial revolution) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (agricultural + industrial revolution) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13279,7 +14020,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "What lasting changes did Napoleon introduce into France and Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (France + Europe) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (France + Europe) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13291,7 +14032,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "What was the importance of one or more of the following: Mary Wollstonecraft; Madame de Staël; Ludwig van Beethoven?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -13524,7 +14265,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "How effective were government and/or private responses to the Famine?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13536,7 +14277,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "From your study of the campaigns for Catholic Emancipation and Repeal of the Union, what did you learn about O’Connell as a political leader?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Emancipation + Repeal) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Emancipation + Repeal) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13548,7 +14289,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "What was the contribution to Irish life of two of the following: Mother Mary Aikenhead; William Carleton; William Dargan?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO people If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO people If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13560,7 +14301,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "What was the contribution to Irish nationalism of the Young Ireland movement and/or Fenianism?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13572,7 +14313,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870‐1914",
     questionText: "What was the importance of one or more of the following: land agitation and land reform; the co‐operative movement; industrial development in Belfast?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13584,7 +14325,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870‐1914",
     questionText: "Would you agree that Charles Stewart Parnell’s achievements and failures were both significant? Explain your answer.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Parnell’s achievements + his failures) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Parnell’s achievements + his failures) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13596,7 +14337,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870‐1914",
     questionText: "What was the contribution of James Connolly and/or James Larkin to the Irish labour movement?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13608,7 +14349,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870‐1914",
     questionText: "During the period 1870‐1914, what was the role of two of the following in shaping Irish identity: the GAA; Douglas Hyde; W.B. Yeats?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements from GAA/ Hyde/ Yeats If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements from GAA/ Hyde/ Yeats If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13620,7 +14361,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "How did the Sinn Féin movement develop during the period 1912‐1923?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13632,7 +14373,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "Why were both the negotiations and the terms of the Anglo‐Irish Treaty, 1921, controversial?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Treaty negotiations + Treaty terms) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Treaty negotiations + Treaty terms) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13644,7 +14385,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "During the period 1922‐1945, how effective were the governments of both Cosgrave and de Valera in dealing with threats to the security of the state?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Cosgrave’s government + de Valera’s government) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Cosgrave’s government + de Valera’s government) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13656,7 +14397,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "During the period 1922‐1949, how successful were attempts to make independent Ireland a Gaelic and Catholic society?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Gaelic + Catholic) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Gaelic + Catholic) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13668,7 +14409,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "Why was there anti‐Irish sentiment in both Britain and the US in the nineteenth century?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Britain + US) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Britain + US) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13680,7 +14421,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "To what extent did Irish nationalism or Ulster unionism become an international force by 1922?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13692,7 +14433,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "What was the role of the Catholic Church in the Irish diaspora?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13704,7 +14445,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "How did the creation of Irish images through film and music contribute to the growth of tourism and heritage?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13716,7 +14457,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "During the period 1949‐1969, what was the significance of developments in education, health and housing in Northern Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (education + health + housing) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (education + health + housing) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13728,7 +14469,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "Would you agree that Terence O’Neill and/or Brian Faulkner failed as a political leader? Argue your case.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13740,7 +14481,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "How did the “Troubles” erupt in 1969 and why did they last so long?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (how “Troubles” erupted? + why last so long?) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (how “Troubles” erupted? + why last so long?) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13752,7 +14493,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "How did two of the following provoke controversy: the Apprentice Boys of Derry; the career of Bernadette Devlin; Margaret Thatcher and Northern Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements to choose from THREE If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements to choose from THREE If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13764,7 +14505,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "During the period 1815‐1848, what was the system of Metternich and to what extent was it a system designed to resist change?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Metternich system + resistance to change) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Metternich system + resistance to change) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13776,7 +14517,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "During the period 1815‐1871, who moved his country more successfully towards unity, Mazzini or Bismarck? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO people (Mazzini + Bismarck) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO people (Mazzini + Bismarck) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13788,7 +14529,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "What were the main developments in agriculture and industry, 1815‐1871?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (agriculture + industry) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (agriculture + industry) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13800,7 +14541,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "During the period 1815‐1871, what was the contribution to French affairs of Baron Haussmann and/or Victor Hugo?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13812,7 +14553,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "What were Bismarck’s strengths and weaknesses as Chancellor of Germany?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Bismarck’s strengths + his weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Bismarck’s strengths + his weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13824,7 +14565,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "How did both economic crisis and the impact of war contribute to the collapse of Tsarist Russia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (economic crisis + impact of war) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (economic crisis + impact of war) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13836,7 +14577,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "How did international tensions contribute to the outbreak of World War I or hamper the Peace Settlement at the end of World War I?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13848,7 +14589,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "How did industry develop in Europe, 1871‐1918, and how did its development affect society?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (industrial development + its effect on society) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (industrial development + its effect on society) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13860,7 +14601,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920‐1945",
     questionText: "How did Hitler and the Nazi party secure absolute control over Germany in the period 1920‐1938?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13872,7 +14613,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920‐1945",
     questionText: "What problems faced France in the years 1920‐1945, and to what extent were these problems overcome?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (French problems + to what extent overcome) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (French problems + to what extent overcome) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13884,7 +14625,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920‐1945",
     questionText: "How effective a leader was Winston Churchill or Josef Stalin during World War II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13896,7 +14637,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920‐1945",
     questionText: "What was the contribution to cinema of one or more of the following: Charlie Chaplin; Leni Riefenstahl; Bing Crosby?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13908,7 +14649,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "Why, and to what extent, did Europe move towards unity in the years 1945‐1973?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why + to what extent move to European unity) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why + to what extent move to European unity) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13920,7 +14661,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "What led to the division of Germany at the end of World War II and how did Berlin become a focus of tension during the Cold War?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why Germany divided + tensions focused on Berlin) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why Germany divided + tensions focused on Berlin) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13932,7 +14673,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "Why was there an uprising in Hungary in 1956 and why did the Soviet Union take steps to crush it?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why Hungary rebelled + why USSR went to stop it) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why Hungary rebelled + why USSR went to stop it) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13944,7 +14685,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "How did two of the following challenge widely‐held views: Alexander Solzhenitsyn; Simone de Beauvoir; John Lennon?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO people to choose from THREE If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO people to choose from THREE If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13956,7 +14697,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "What were the causes and consequences of British withdrawal from India?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (causes + consequences) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (causes + consequences) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13968,7 +14709,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "What problems were caused by the withdrawal from Africa of one or more of the following: Britain; Belgium; Portugal?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13980,7 +14721,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "How did France’s loss of empire contribute to the rise of racial tensions during the 1980s?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13992,7 +14733,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "What were the origins of Arab‐Israeli conflict and how did Israel survive the threats to its existence in the period 1945‐1956?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (causes of conflict + how Israel survived) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (causes of conflict + how Israel survived) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14004,7 +14745,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "How effectively did President Harry Truman tackle the problems he faced at home and abroad?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: At least TWO elements (home + abroad) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: At least TWO elements (home + abroad) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14016,7 +14757,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "What was the importance, for both countries, of US involvement in Vietnam?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO countries (US + Vietnam) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO countries (US + Vietnam) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14028,7 +14769,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "What did Marilyn Monroe and/or Billy Graham contribute to American life?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14040,7 +14781,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "During the period 1945‐1989, what was the significance of advances made in space travel and information technology?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (space travel + information technology) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (space travel + information technology) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -14275,7 +15016,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "What did you learn about Gaelic Ireland from your study of one or more of the following: Tadhg Dall Ó hUiginn; Grace O’Malley; Meiler Magrath?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14287,7 +15028,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "Why did insecurity about land and religion lead to rebellion in Munster and what were the results of the Desmond rebellion?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (causes + results of Munster rebellion) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (causes + results of Munster rebellion) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14299,7 +15040,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "What steps were taken to promote the religious policies of Elizabeth in Ireland and to what extent were they successful?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (promotion of religious + how successful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (promotion of religious + how successful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14311,7 +15052,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "What threats faced the Lordship of Tír Eoghain under Hugh O’Neill?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14323,7 +15064,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
     questionText: "How did relations between natives and planters in Ulster develop during the period 1603‐ 1641?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14335,7 +15076,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
     questionText: "Why did Sir Thomas Wentworth (Earl of Strafford) make enemies in Ireland and how did they contribute to his downfall?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Wentworth’s enemies + his downfall) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Wentworth’s enemies + his downfall) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14347,7 +15088,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
     questionText: "What were the main features of the Cromwellian military campaign and what was its impact on Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (military campaign + impact on Ireland) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (military campaign + impact on Ireland) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14359,7 +15100,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
     questionText: "What was the contribution to Irish culture of one or more of the following: the Louvain mission; the Four Masters; Piaras Feiritéar?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14371,7 +15112,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "Why did Charles II’s Irish policies please neither Catholics nor Protestants?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14383,7 +15124,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "What was the social and economic importance of Restoration Dublin?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14395,7 +15136,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "What was the contribution to Irish affairs of Dáibhí Ó Bruadair and/or the Jacobite poets?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14407,7 +15148,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "What was the contribution to Irish affairs of Samuel Louis Crommelin and/or William Molyneux?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,26] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14419,7 +15160,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "From your study of one or more of the following, what did you learn about Irish government and administration during the period 1715‐1770: courts; grand juries; assizes; boroughs; parliament?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14431,7 +15172,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "What tensions in Irish society were highlighted by the Whiteboys and/or the trial of Father Sheehy?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14443,7 +15184,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "What was the contribution to Irish life of Dean Swift and/or Arthur Guinness?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14455,7 +15196,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "During the period 1715‐1770, what cultural developments were noteworthy in one or more of the following: theatre; music; poetry?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14467,7 +15208,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "What did you learn about the lives of women in Ireland from your study of one or more of the following: Nano Nagle; Eibhlín Dhubh Ní Chonaill; Mary Anne McCracken?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14479,7 +15220,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "Argue for or against the view that the era of Grattan’s Parliament, 1782‐1800, was a golden age for Ireland.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14491,7 +15232,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "What were the main features of Irish rural society and/or the rise of Belfast during the period 1770‐1815?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14503,7 +15244,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "What caused the Wexford Rebellion, 1798, and how was it put down?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (causes of rebellion + how it was put down) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (causes of rebellion + how it was put down) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14515,7 +15256,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492‐1567",
     questionText: "What impulses drove the explorers and conquerors who sailed to the New World and/or what was the impact of the discovery of the New World on Seville?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14527,7 +15268,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492‐1567",
     questionText: "How did Desiderius Erasmus contribute to both the Renaissance and the Reformation?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Renaissance + Reformation) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Renaissance + Reformation) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14539,7 +15280,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492‐1567",
     questionText: "In what ways did Martin Luther contribute to the spread of the Reformation in Germany?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14551,7 +15292,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492‐1567",
     questionText: "How successful was Charles V in suppressing Protestantism and/or leading a crusade against the Turks?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14563,7 +15304,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
     questionText: "How did the defeat of the Spanish Armada affect Spain?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14575,7 +15316,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
     questionText: "What was the social and economic importance of the decline of Antwerp?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14587,7 +15328,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
     questionText: "How important was religion in causing of the French Wars of Religion? Argue your case.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14599,7 +15340,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
     questionText: "What were the key developments in the later sixteenth century in one or more of the following: demographic trends; structure of family; patterns of inheritance?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14611,7 +15352,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "What were the characteristics of French absolutism?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14623,7 +15364,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "How did the Dutch establish an empire in Asia and what was its impact on the home country?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (establishment of empire + impact on Netherlands) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (establishment of empire + impact on Netherlands) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14635,7 +15376,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "From your study of society and economy, what did you learn about one or more of the following: serfdom and varieties of peasantry; women, work and family; witch‐ hunting?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14647,7 +15388,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "In what ways was the Inquisition’s treatment of Galileo and/or relations between Anglicans and Puritans in England divisive?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14659,7 +15400,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐ 1715",
     questionText: "What was the influence of Versailles and/or the Grand Tour on European culture and society?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14671,7 +15412,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐ 1715",
     questionText: "How did trading companies such as the English East India Company and/or the development of the money market contribute to social and economic change, 1660‐1715?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14683,7 +15424,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐ 1715",
     questionText: "What did Peter the Great do to modernise Russia and expand its frontiers?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (modernisation of Russia + expansion of frontiers) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (modernisation of Russia + expansion of frontiers) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14695,7 +15436,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐ 1715",
     questionText: "What did state patronage contribute to the development of the arts and/or science during the period 1660‐1715?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14707,7 +15448,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "What were key social, economic and political ideas of the Enlightenment?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (social and economic + political ideas) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (social and economic + political ideas) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14719,7 +15460,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "What was the social and economic importance of slave plantations for both the West Indies and other parts of the world?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (West Indies + other parts of the world) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (West Indies + other parts of the world) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14731,7 +15472,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "What were the causes of the American Revolution?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14743,7 +15484,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "How did the reign of Frederick William I and/or Frederick II (The Great) increase the power and prestige of Prussia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14755,7 +15496,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "What caused revolution to break out in France in 1789 and what was the role of the Committee of Public Safety in the French Revolution?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (causes of revolution + Committee of Public Safety) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (causes of revolution + Committee of Public Safety) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14767,7 +15508,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "How did the agricultural and industrial revolutions change Britain?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (agricultural + industrial) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (agricultural + industrial) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14779,7 +15520,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "Why were church‐state relations so difficult in France and in Napoleonic Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (France + Napoleonic Europe) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (France + Napoleonic Europe) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14791,7 +15532,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "Was the impact of Napoleon on France and on Europe more negative than positive? Argue your case, referring to both France and Europe.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [24,25,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [24,25,29] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -15022,7 +15763,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "To what extent was O’Connell’s leadership responsible both for the success of the Emancipation campaign and the failure of the Repeal campaign?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Success of emancipation + failure of repeal) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Success of emancipation + failure of repeal) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15034,7 +15775,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "During the period 1845‐1849, which was more effective, government responses to Famine or private responses to Famine? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Government responses + private responses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Government responses + private responses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15046,7 +15787,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "What did Charles Kickham and/or James Stephens contribute to Fenianism?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15058,7 +15799,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "How did cultural and religious identities develop in Ireland, 1815‐1870?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (cultural + religious) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (cultural + religious) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15070,7 +15811,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870‐1914",
     questionText: "Which was more successful in achieving its aims, land agitation or the 1913 strike and lockout? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (land agitation + 1913 strike and lockout) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (land agitation + 1913 strike and lockout) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15082,7 +15823,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870‐1914",
     questionText: "What were Edward Carson’s successes and failures as a political leader?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Carson’s successes + his failures) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Carson’s successes + his failures) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15094,7 +15835,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870‐1914",
     questionText: "During the period 1870‐1914, what was the contribution to Irish affairs of one or more of the following: the Suffrage movement; the first Sinn Féin party; the Irish Volunteers?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15106,7 +15847,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870‐1914",
     questionText: "How did cultural and religious identities develop in Ireland, 1870‐1914?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (cultural + religious) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (cultural + religious) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15118,7 +15859,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "What was the military and political significance of one or more of the following: the 1916 Rising; the War of Independence; the Civil War?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (military + political) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (military + political) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15130,7 +15871,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "What were the main events of the Eucharistic Congress, 1932, and what was its significance for church and state?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (main events + significance) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (main events + significance) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15142,7 +15883,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "What was the impact on Northern Ireland of the world economic crisis of the inter‐war period and/or World War II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15154,7 +15895,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "How did Anglo‐Irish relations develop during the period 1923‐1949?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15166,7 +15907,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "What did you learn about Irish emigration from your study of Grosse Isle?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15178,7 +15919,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "In what ways and to what extent did emigration foster Irish nationalism and/or Ulster Scottish identity?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15190,7 +15931,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "During the period 1920‐1966, what drew Irish emigrants to Britain and what were the challenges they faced there?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (what drew emigrants to Britain + challenges) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (what drew emigrants to Britain + challenges) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15202,7 +15943,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "To what extent did one or more of the following contribute to an Irish “spiritual empire”: Archbishop Daniel Mannix; Bishop Edward Galvin; Mother Mary Martin?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15214,7 +15955,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "To what extent did Terence O’Neill differ from Lord Brookeborough as leader of Northern Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Brookeborough + O’Neill) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Brookeborough + O’Neill) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15226,7 +15967,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "What was the Coleraine University controversy and in what ways did it contribute to tensions in Northern Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Coleraine controversy + tensions in NI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Coleraine controversy + tensions in NI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15238,7 +15979,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "What was the importance of two of the following: the Sunningdale Agreement (1973); the Anglo‐Irish Agreement (1985); the Downing Street Declaration (1993)?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements to choose from THREE (Sunningdale + Anglo-Irish Agreement + Downing St. Declaration) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements to choose from THREE (Sunningdale + Anglo-Irish Agreement + Downing St. Declaration) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15250,7 +15991,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "From your study of Northern Ireland, 1949‐1993, what did you learn about one or more of the following: religious affiliation and cultural identity; ecumenism; Ian Paisley?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15262,7 +16003,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "How did Germany evolve from Confederation to Empire during the period 1815‐1871?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15274,7 +16015,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "How did Balkan nationalism develop during the period 1815‐1871?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15286,7 +16027,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "Who was the more effective reformer, Robert Owen or Robert Peel? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Robert Owen + Robert Peel) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Robert Owen + Robert Peel) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15298,7 +16039,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "During the period 1815‐1871, what were key developments in science and technology?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15310,7 +16051,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "What were the main causes of international tension during the period 1871‐1914?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15322,7 +16063,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "From your study of social and economic history, what did you learn about industrialisation in Tsarist Russia and/or the invention and early history of the motor car?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15334,7 +16075,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "During the period 1871‐1914, what problems were posed by Church‐State tensions in Germany and/or anti‐Semitism in France?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15346,7 +16087,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "From your study of World War I, what did you learn about two of the following: the outbreak of war in 1914; how the war was fought; the literature of World War I?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements from three (outbreak of WWI + how fought + literature of WWI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements from three (outbreak of WWI + how fought + literature of WWI) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15358,7 +16099,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920‐1945",
     questionText: "During the inter‐war years, what were the characteristics of fascist regimes in Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: Regimes (plural) If only ONE regime, Max. CM = 50","caps":[{"when":"If only ONE regime","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: Regimes (plural) If only ONE regime, Max. CM = 50","caps":[{"when":"If only ONE regime","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15370,7 +16111,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920‐1945",
     questionText: "During the period 1920‐1939, what social and economic problems faced Britain and how effectively were they tackled?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (problems + how effectively tackled) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (problems + how effectively tackled) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15382,7 +16123,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920‐1945",
     questionText: "What did you learn about Stalin’s leadership from his handling of one or more of the following: the Soviet economy; the show trials; wartime alliances, 1939‐1945?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15394,7 +16135,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920‐1945",
     questionText: "How did developments in technology affect warfare during World War II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15406,7 +16147,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "How did the Cold War develop in Europe and how did it end?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (develop + end) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (develop + end) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15418,7 +16159,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "What was the social and economic impact on Europe of one or more of the following: movements towards European unity, 1945‐1973; the 1973 Oil Crisis; the changing role of women?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15430,7 +16171,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "What was the contribution to Soviet affairs of Nikita Khrushchev and/or Mikhail Gorbachev?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15442,7 +16183,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "During the period 1945‐1992, what was the importance of changes in youth and popular culture (including sport) and/or the mass media?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15454,7 +16195,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "What was the contribution of Mohandas Gandhi and/or David Ben‐Gurion to his country’s affairs?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15466,7 +16207,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "Why did Katanga secede from the Congo and why did the secession bring about international involvement?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (secede + international involvement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (secede + international involvement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15478,7 +16219,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "Was decolonisation a positive experience for former colonies? Argue your case, referring to two or more former colonies.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO or more former colonies If only ONE former colony, Max. CM = 50","caps":[{"when":"If only ONE former colony","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO or more former colonies If only ONE former colony, Max. CM = 50","caps":[{"when":"If only ONE former colony","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15490,7 +16231,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "How were the problems that emerged in multi‐racial Britain and France similar and how did they differ?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Britain + France) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Britain + France) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15502,7 +16243,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "Why and how did the US become involved in war in Korea and/or Vietnam?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15514,7 +16255,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "During the period 1945‐1989, to what extent did the movement for racial equality achieve meaningful change in the US?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15526,7 +16267,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "How did the US achieve a successful moon landing in 1969 and what was its national and international significance for the US?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (achieve a moon landing + national significance + international significance) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (achieve a moon landing + national significance + international significance) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15538,7 +16279,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "What was the contribution to American life of one or more of the following: Joe McCarthy; Billy Graham; Norman Mailer?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -15774,7 +16515,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "How did Dublin and the Pale change during the reign of Elizabeth I?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Dublin + Pale) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Dublin + Pale) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15786,7 +16527,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "What steps were taken towards a plantation in Munster and to what extent was the plantation successful?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (steps taken + to what extent successful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (steps taken + to what extent successful) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15798,7 +16539,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "What did you learn about Irish church history from your study of one or more of the following: Richard Creagh; Adam Loftus; Meiler Magrath?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15810,7 +16551,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "How and why did the Ulster rebellion, from 1594, become a national war (the Nine Years’ War)?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15822,7 +16563,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
     questionText: "What social, economic and religious changes were brought about by the Plantation of Ulster?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (social and economic + religious) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (social and economic + religious) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15834,7 +16575,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
     questionText: "Why was there a revolt against the government in Ireland in 1641 and what did you learn about it from your study of the depositions of 1641?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (why was there a revolt + the depositions) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (why was there a revolt + the depositions) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15846,7 +16587,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
     questionText: "What were the characteristics of Cromwell’s military campaign in Ireland and of the Cromwellian land settlement?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (military campaign + land settlement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (military campaign + land settlement) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15858,7 +16599,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
     questionText: "What was the contribution of the Irish colleges abroad (including Louvain) to culture and religion?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (culture + religion) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (culture + religion) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15870,7 +16611,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "What were the fortunes of Catholics in Ireland during the reigns of Charles II and James II, 1660‐1688?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Charles II + James II) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Charles II + James II) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15882,7 +16623,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "During the period 1660‐1715, what were the main factors affecting Irish trade?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15894,7 +16635,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "During the period 1660‐1715, what was the importance of the end of the Gaelic bardic system and/or political pamphleteering?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15906,7 +16647,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "What was the contribution of Robert Boyle to the emergence of science in Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,27] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15918,7 +16659,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "During the period 1715‐1770, what was the “Protestant Nation” and what were its principal political concerns?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (the “Protestant Nation” + its political concerns) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (the “Protestant Nation” + its political concerns) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15930,7 +16671,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "What were the main causes of agrarian unrest, what forms did the unrest take and what were its results, 1715‐1770?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (causes + forms + results) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [25,26,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (causes + forms + results) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [25,26,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15942,7 +16683,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "What was the contribution of Charles Lucas and/or Arthur Guinness to Irish affairs?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15954,7 +16695,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "What was the contribution to Irish life of one or more of the following: the rise of the Dublin theatre; na Cúirteanna Filíochta; Turlough O’Carolan?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15966,7 +16707,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "How effective was the contribution of Henry Grattan to Irish affairs?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15978,7 +16719,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "During the period 1770‐1815, what was the social and economic impact of the cotton and linen industries and/or the rise of Belfast?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15990,7 +16731,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "During the period 1770‐1815, to what extent did conditions improve for Catholics?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,28] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16002,7 +16743,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "What arguments were put forward for and against the Act of Union?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (for + against) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,28] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (for + against) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16014,7 +16755,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492‐1567",
     questionText: "What was the contribution to his chosen field of Niccolò Machiavelli and/or Pieter Breughel the Elder?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16026,7 +16767,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492‐1567",
     questionText: "How did printing contribute to the Renaissance and/or the Reformation?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16038,7 +16779,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492‐1567",
     questionText: "How effective in achieving its aims was Calvin’s Geneva?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16050,7 +16791,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492‐1567",
     questionText: "Assess the threat of the Turks towards Europe during the period 1492‐1567.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16062,7 +16803,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
     questionText: "What were the effects on Spain of the reign of Philip II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16074,7 +16815,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
     questionText: "How effective in achieving its aims was the Jesuit mission in China and/or the Council of Trent?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16086,7 +16827,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
     questionText: "What did you learn about social and economic history during the period 1567‐1609 from your study of one or more of the following: inflation; demographic trends; the shifting balance of trade; techniques of land use?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16098,7 +16839,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
     questionText: "What were the achievements of one or more of the following: Michel de Montaigne; Sir Walter Raleigh; Tycho Brahe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16110,7 +16851,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "During the period 1609‐1660, how did the Dutch empire in Asia develop and what was its impact on the home country?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (develop + impact) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,29] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (develop + impact) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16122,7 +16863,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "What was the contribution to French absolutism of Marie de’ Medici and/or Cardinal Richelieu?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16134,7 +16875,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "During the period 1609‐1660, to what extent was there a “military revolution”, with special reference to the Thirty Years War?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16146,7 +16887,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "What were the achievements of one or more of the following: Gian Lorenzo Bernini; Hugo Grotius; René Descartes?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,29] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,29] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16158,7 +16899,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐1715",
     questionText: "How did the (English) East India Company develop and what was its impact on both England and India?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: THREE elements (develop + impact on England + impact on India) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [25,26,30] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: THREE elements (develop + impact on England + impact on India) If only TWO, Max. CM = 50 If only ONE, Max. CM = 40","caps":[{"when":"If only TWO","max":50},{"when":"If only ONE","max":40}]} }, schemePages: [25,26,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16170,7 +16911,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐1715",
     questionText: "What were the principal characteristics of the absolute monarchy of Louis XIV?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16182,7 +16923,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐1715",
     questionText: "What initiatives were taken by Peter the Great to transform Russia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16194,7 +16935,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐1715",
     questionText: "What were the achievements of one or more of the following: Sébastien le Prestre de Vauban; Isaac Newton; Gottfried Wilhelm Leibnitz?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16206,7 +16947,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "How did the reign of Frederick William I and/or Frederick II increase the power and prestige of Prussia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16218,7 +16959,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "From your study of social and economic history, what did you learn about one or more of the following: urban growth; the new middle class; road and canal building?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16230,7 +16971,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "What were the principal ideas of the Enlightenment and to what extent did the salon contribute to their dissemination?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (principal ideas + role of the salon) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,30] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (principal ideas + role of the salon) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16242,7 +16983,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "What was the Boston Tea Party and how did it contribute to the outbreak of the American Revolution?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Tea Party + its role in causing the Revolution) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,30] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Tea Party + its role in causing the Revolution) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16254,7 +16995,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "What was the importance, in French history, of the Civil Constitution of the Clergy and/or the Committee of Public Safety?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16266,7 +17007,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "What did you learn about social and economic history during the period 1775‐1815 from your study of one or more of the following: the rise of industrial towns; the impact of war; population growth?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16278,7 +17019,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "How do you account for Napoleon’s early victories and eventual defeat?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (victories + defeat) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,30] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (victories + defeat) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [25,26,30] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16290,7 +17031,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "What were the characteristics of cultural nationalism, 1775‐1815?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [25,26,30] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [25,26,30] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -16545,7 +17286,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "During the period 1815-1870, what was the importance of the Tithe War and/or Liberal reforms?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16557,7 +17298,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Would you agree that the campaign for Catholic Emancipation, 1823-1829, had both political and religious dimensions? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (political + religious dimensions) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (political + religious dimensions) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16569,7 +17310,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "What was the contribution to Irish affairs of Charles Trevelyan and/or Asenath Nicholson?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16581,7 +17322,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "During the period 1815-1870, what was the contribution of two of the following to the development of cultural and religious identity in Ireland: Thomas Davis; William Carleton; Cardinal Paul Cullen?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16593,7 +17334,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "How effective were Parnell’s attempts to achieve land reform and Home Rule?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (land reform + Home Rule) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (land reform + Home Rule) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16605,7 +17346,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "From your study of social and economic history, 1870-1914, what was the importance of two of the following: the industrialisation of Belfast; educational reforms; the co-operative movement?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16617,7 +17358,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What were the achievements of the Unionist movement, 1886-1914?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16629,7 +17370,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "What was the contribution to the cultural and political activity of the period 1870-1914 of two of the following: the GAA; the Gaelic League; W.B. Yeats?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (two of the GAA, the Gaelic League and/or W.B. Yeats) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (two of the GAA, the Gaelic League and/or W.B. Yeats) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16641,7 +17382,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "During the period 1912-1921, what attempts were made to obtain self-government for Ireland, and to what extent were they successful?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (attempts to gain self-government + success) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (attempts to gain self-government + success) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16653,7 +17394,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "During the period 1923-1945, how effectively did Irish governments tackle the social and economic problems they faced?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16665,7 +17406,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "What were the successes and failures of Éamon de Valera as a political leader?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (successes + failures) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (successes + failures) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16677,7 +17418,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "What attempts were made to promote cultural identity in Ireland, North and South? Refer to one or more of the following: language; religion; education.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (North + South) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (North + South) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16689,7 +17430,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What conditions did Irish emigrants to Great Britain encounter during the period 1840-1920 and/or 1920-1966?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16701,7 +17442,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "To what extent did de Valera in America (June, 1919 - December, 1920) achieve his aims?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16713,7 +17454,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "What were the achievements of the Holy Ghost mission to Nigeria, 1945-1966?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16725,7 +17466,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "How did the careers of two of the following illustrate Irish-American experience: Boss Croker; Maureen O’Hara; Paul O’Dwyer?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16737,7 +17478,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "During the period 1949-1969, how effectively did Northern Irish governments respond to the social and economic problems they faced?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16749,7 +17490,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What was the Sunningdale Agreement and why did the power-sharing executive, 1973-1974, collapse?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Sunningdale Agreement + collapse) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Sunningdale Agreement + collapse) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16761,7 +17502,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "What was the contribution of Ian Paisley to the affairs of Northern Ireland?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16773,7 +17514,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "During your study of Northern Ireland, 1949-1993, what did you learn about Seamus Heaney and/or cultural responses to the “Troubles”?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16785,7 +17526,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "During the period 1949-1959, how effective were Irish governments in tackling the challenges they faced?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16797,7 +17538,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "What were the strengths and weaknesses of Seán Lemass as a political leader?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (strengths + weaknesses) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16809,7 +17550,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "How did Anglo-Irish relations develop during the period 1949-1989?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16821,7 +17562,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "What was the impact of RTÉ or EEC membership on Irish society?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16833,7 +17574,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "How effective was Metternich’s leadership of international politics, 1815-1848?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16845,7 +17586,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What vision of society had two of the following: Feargus O’Connor; Karl Marx; Mikhail Bakunin?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16857,7 +17598,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What was the contribution to French affairs of Baron Haussmann and/or Victor Hugo?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16869,7 +17610,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "What developments took place in cultural nationalism (music, art and literature) or science (electricity, biology and technology)?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16881,7 +17622,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "What problems were caused by the naval policy of Wilhelm II?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16893,7 +17634,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "How did industry (including the motor car) develop in Europe, 1871-1914?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16905,7 +17646,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "What did you learn about the literature of World War I and/or the expression of national identity through literature and the arts, 1871-1914?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16917,7 +17658,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "What was the importance of two of the following: Rosa Luxemburg; Marie Curie; Woodrow Wilson?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements from three If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements from three If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16929,7 +17670,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "Which had the greater social and economic problems during the inter-war period, Britain or Germany? Argue your case, referring to both.",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (Britain + Germany) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (Britain + Germany) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16941,7 +17682,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "What were the main characteristics of Stalin’s rule in Russia?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16953,7 +17694,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "During the period 1920-1945, how did anti-Semitism and the Holocaust affect Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16965,7 +17706,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "From your study of World War II, what did you learn about two of the following: wartime alliances; the Home Front; Vichy France?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16977,7 +17718,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "During the period 1945-1992, to what extent did Soviet Russia control Eastern Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16989,7 +17730,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "How effective was Margaret Thatcher’s leadership in domestic and foreign affairs?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements (domestic + foreign) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements (domestic + foreign) If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -17001,7 +17742,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "From your study of Western Europe, 1945-1992, what did you learn about marriage, the family and the changing role of women, and/or the impact of the Second Vatican Council?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -17013,7 +17754,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "What was the social and economic impact of two of the following: Marshall Aid; the 1973 Oil Crisis; the computer up to 1992?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: TWO elements If only ONE, Max. CM = 50","caps":[{"when":"If only ONE","max":50}]} }, schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -17025,7 +17766,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "How did British withdrawal affect India and/or Palestine?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -17037,7 +17778,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "What international reaction was aroused by the Suez Crisis, 1956, and/or the secession of Katanga, 1960-1965?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -17049,7 +17790,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "What were the social and economic effects of European withdrawal from empire on former colonies in Africa?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], cm: { ...ESSAY_MARKING[6].cm, elementRule: {"note":"NOTE: colonies (plural) If only ONE former colony, Max. CM = 50","caps":[{"when":"If only ONE former colony","max":50}]} }, schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], cm: { ...ESSAY_MARKING[1].cm, elementRule: {"note":"NOTE: colonies (plural) If only ONE former colony, Max. CM = 50","caps":[{"when":"If only ONE former colony","max":50}]} }, schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -17061,7 +17802,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "During the period 1945-1990, what challenges were posed by the growth of the Islamic faith in Europe?",
     totalMarks: 100,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[1], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "question",
