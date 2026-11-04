@@ -573,6 +573,16 @@ REJECTED = {
     # 2020 Higher, looked at 2026-11-04 (the residue cuts it by eye):
     **{(2020, 'hl', 8, 'a', r): 'a stray "d" from the ask in its corner'
        for r in ('i', 'ii')},
+    # 2017 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2017, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis and its values'
+       for r in ('i', 'ii', 'iii')},
+    **{(2017, 'hl', 4, 'a', r): 'takes in (a)\'s prose beside the spring'
+       for r in ('i', 'ii')},
+    **{(2017, 'hl', 7, 'c', r): 'the magnetic chuck alone; the card carries the OR '
+                                'branch\'s 3-D printer beside it'
+       for r in ('i', 'ii')},
+    (2017, 'hl', 8, 'c', 'i'): 'a stray glyph from the ask at its left edge',
+    (2017, 'hl', 8, 'c', 'ii'): 'takes in (c)\'s prose beside the car',
 }
 
 
