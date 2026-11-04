@@ -148,8 +148,27 @@ CHOICE_INSTRUCTION = re.compile(
     r'^(?:Write a short paragraph on one of the following|Answer one of the following)\b.*:\s*$')
 
 
+class Line(tuple):
+    """One printed line: its page, where it starts and ends across the page,
+    its text, its top and bottom, the width of its first word, and the widest
+    space between two of its words. A plain tuple underneath, so the reader can
+    unpack the first three as it always has."""
+    __slots__ = ()
+    page = property(lambda self: self[0])
+    x0 = property(lambda self: self[1])
+    text = property(lambda self: self[2])
+    top = property(lambda self: self[3])
+    bottom = property(lambda self: self[4])
+    x1 = property(lambda self: self[5])
+    first_width = property(lambda self: self[6])
+    widest_space = property(lambda self: self[7])
+
+
 def lines(path):
-    """(page, x0, text) for every printed line, in reading order."""
+    """A `Line` for every printed line, in reading order.
+
+    The geometry rides along so a printed extract can keep its own paragraphs:
+    see `paragraphs`."""
     with pymupdf.open(path) as doc:
         for pno in range(doc.page_count):
             rows = []
@@ -161,12 +180,135 @@ def lines(path):
                 for row in rows:
                     if abs(row['mid'] - mid) <= 4.0:
                         row['w'].append((x0, x1, word))
+                        row['top'] = min(row['top'], y0)
+                        row['bottom'] = max(row['bottom'], y1)
                         break
                 else:
-                    rows.append({'mid': mid, 'w': [(x0, x1, word)]})
+                    rows.append({'mid': mid, 'w': [(x0, x1, word)],
+                                 'top': y0, 'bottom': y1})
             for row in sorted(rows, key=lambda r: r['mid']):
                 ws = sorted(row['w'])
-                yield pno + 1, ws[0][0], ' '.join(w for _a, _b, w in ws)
+                # A bullet is set apart from its item's first word on purpose,
+                # and so is a diary entry's date ("03/02/1829:" and then a tab
+                # to the entry): the space after a line's first word is the
+                # label's, not a column's, so only the spaces after it count.
+                body = ws[1:] if BULLET.fullmatch(ws[0][2]) else ws
+                spaces = [b[0] - a[1] for a, b in zip(ws[1:], ws[2:])]
+                yield Line((pno + 1, ws[0][0],
+                            ' '.join(w for _a, _b, w in ws),
+                            row['top'], row['bottom'], max(x for _a, x, _w in ws),
+                            body[0][1] - body[0][0] if body else 0.0,
+                            max(spaces, default=0.0)))
+
+
+# How a printed extract's paragraphs are found again; see `paragraphs`.
+#   PARAGRAPH_GAP     a gap above a line wider than this share of the line's
+#                     own height opens a new block (the leading between the
+#                     lines of one paragraph is about a fifth of it, the gap the
+#                     SEC leaves between instruction and extract more than all
+#                     of it);
+#   PARAGRAPH_INDENT  points a line must start in from its block's left edge
+#                     to count as indented;
+#   COLUMN_SPACE      a space between two words wider than this is a table's
+#                     column, not a word space (word spaces measure 2-6 points
+#                     on these papers).
+#   NARROW            see below.
+PARAGRAPH_GAP = 0.6
+PARAGRAPH_INDENT = 8.0
+COLUMN_SPACE = 12.0
+# A block whose longest line stops this share of the stem's measure short of
+# the stem's right edge is set line by line (verse, a list, a table).
+NARROW = 0.12
+BULLET = re.compile(r'[•●▪◦‣]')
+SENTENCE_END = re.compile(r'[.?!:;…][\'"’”»)\]]*$')
+
+
+def _short(prev, line, right):
+    """Whether `prev` stopped short where `line`'s first word would have fitted.
+
+    A line set by wrapping runs on until the next word will not fit, so a line
+    that stops earlier was ended on purpose: the last line of a paragraph, a
+    date over an entry, a heading, a line of verse, a row of a table — or, now
+    and then, a line the setter broke by hand in mid-sentence ("... in a
+    speech to the Reichstag," and then "11 December 1899, ...")."""
+    return right - prev.x1 > line.first_width + 0.3 * (prev.bottom - prev.top)
+
+
+def _opens_paragraph(prev, line, edge, right, verse):
+    """Whether the paper starts a new printed line at `line`."""
+    if BULLET.match(line.text):
+        return True                             # a bulleted item
+    if prev.widest_space > COLUMN_SPACE or line.widest_space > COLUMN_SPACE:
+        return True                             # a row of a printed table
+    indented = line.x0 > edge + PARAGRAPH_INDENT
+    finished = bool(SENTENCE_END.search(prev.text))
+    if verse:
+        # Every line of verse is its own line, bar the indented rest of an
+        # item whose first line is unfinished.
+        return not (indented and not finished)
+    if _short(prev, line, right) and (finished or indented):
+        # The paragraph above ended there. A short line that ends in mid-
+        # sentence and is followed by a line at the edge is a hand-made wrap,
+        # not a paragraph, so it runs on.
+        return True
+    # A first-line indent opens a paragraph only after a finished sentence;
+    # after an unfinished one the indent is a hanging indent, the rest of an
+    # item that opened at the edge ("03/02/1829: I have been appointed ...").
+    return indented and finished
+
+
+def paragraphs(stem_lines):
+    """The printed lines of an extract as the paper sets them out.
+
+    An Ordinary Part A opens with the SEC's own instruction ("In this edited
+    extract, ... Read it and answer the questions which follow."), leaves a gap,
+    and then prints the extract: paragraphs that open on an indent, dated diary
+    entries, bulleted items, now and then a table. Joined as one run of words,
+    the instruction ran straight into the extract and the extract's paragraphs
+    into each other. Nothing is added or taken away here: every word is the
+    word the reader lifted, in order, and only the breaks the page prints come
+    back — a blank line where the paper leaves a gap, a new line where it
+    starts one.
+
+    `stem_lines` are (text, Line) pairs: the text is the reader's own, misprint
+    repairs and all; the Line says where it sat. The edges are measured within
+    the lines between two gaps, so an extract set in from the margin as a whole
+    is one block, not one paragraph to a line. A page turn is not a gap."""
+    blocks = []
+    for text, line in stem_lines:
+        prev = blocks[-1][-1][1] if blocks else None
+        if (prev is None or (line.page == prev.page and line.top - prev.bottom
+                             > PARAGRAPH_GAP * (prev.bottom - prev.top))):
+            blocks.append([])
+        blocks[-1].append((text, line))
+    stem_edge = min(line.x0 for _t, line in stem_lines)
+    stem_right = max(line.x1 for _t, line in stem_lines)
+    out = []
+    for block in blocks:
+        edge = min(line.x0 for _t, line in block)
+        right = max(line.x1 for _t, line in block)
+        # Verse, and lists set line by line: a block of three or more lines
+        # whose longest stops well short of the measure the rest of the stem
+        # is set to, or whose lines mostly stop short of its longest and mostly
+        # in mid-sentence. Its right edge is then no measure of where a line
+        # should have wrapped, so each printed line stands as the paper sets
+        # it. (Prose set as a run of one-line paragraphs stops short too, but
+        # at the end of a sentence each time, and runs to the full measure.)
+        shorts = [a[1] for a, b in zip(block, block[1:])
+                  if _short(a[1], b[1], right)]
+        unfinished = [x for x in shorts if not SENTENCE_END.search(x.text)]
+        narrow = stem_right - right > NARROW * (stem_right - stem_edge)
+        verse = len(block) >= 3 and (narrow or (
+            2 * len(shorts) > len(block) - 1
+            and 2 * len(unfinished) > len(shorts)))
+        paras = []
+        for i, (text, line) in enumerate(block):
+            if i == 0 or _opens_paragraph(block[i - 1][1], line, edge, right,
+                                          verse):
+                paras.append([])
+            paras[-1].append(text)
+        out.append('\n'.join(' '.join(' '.join(p).split()) for p in paras))
+    return '\n\n'.join(b for b in out if b)
 
 
 class HistPaper:
@@ -244,7 +386,8 @@ class HistPaper:
             token = f'{section} Topic {topic}'
             return f'{token} {part}' if part else token
 
-        for pno, _x, raw in lines(self.path):
+        for printed in lines(self.path):
+            pno, _x, raw = printed[:3]
             page = pno
             line = ' '.join(raw.split())
             line = misprints.get(line, line)
@@ -393,14 +536,13 @@ class HistPaper:
                 cur = (unit_key(), int(m.group(1)), None, None)
                 buf = [m.group(2)]
                 if part == 'A' and stem_buf:
-                    self.stems[unit_key()] = ' '.join(
-                        ' '.join(stem_buf).split())
+                    self.stems[unit_key()] = paragraphs(stem_buf)
                     stem_buf = []
                 continue
             if cur is not None:
                 buf.append(line)
             elif (part == 'A' or extra) and not stem_closed:
-                stem_buf.append(line)
+                stem_buf.append((line, printed))
         flush()
         # Every Ordinary A part carries the printed extract its questions ask
         # about; the stem is recorded against the unit, not the leaf, because

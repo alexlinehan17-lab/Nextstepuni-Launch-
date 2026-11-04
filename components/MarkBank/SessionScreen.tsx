@@ -96,7 +96,7 @@ import HistoryEssayPanel from './HistoryEssayPanel';
 import { historyEssayMarks, historyEssayPlacementComplete, type HistoryEssayScoreId } from './historyEssayScoring';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
-import { stemWithListBreaks } from './stemText';
+import { stemWithListBreaks, stemWithPrintedBreaks } from './stemText';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -2898,9 +2898,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             </div>
 
             {assessmentCard.stem && !printedQuestionReplacesText && (
-              /* A printed bullet list keeps one item to a line; see stemText. */
+              /* A printed bullet list keeps one item to a line; a History stem
+                 keeps the paper's own paragraph breaks. See stemText. */
               <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2, whiteSpace: 'pre-line' }}>
-                {stemWithListBreaks(assessmentCard.stem)}
+                {assessmentCard.subjectId === 'history'
+                  ? stemWithPrintedBreaks(assessmentCard.stem)
+                  : stemWithListBreaks(assessmentCard.stem)}
               </p>
             )}
 
