@@ -94,6 +94,7 @@ EXCLUSIONS = os.path.join(DIR, 'exclusions', 'history.json')
 ESSAY_PAPERS = {
     (2015, 'hl', 'em'),
     (2015, 'hl', 'lm'),
+    (2015, 'ol', 'em'),
     (2015, 'ol', 'lm'),
     (2016, 'hl', 'em'),
     (2016, 'hl', 'lm'),

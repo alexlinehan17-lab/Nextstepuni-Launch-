@@ -2905,6 +2905,1807 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s1-q1a", topicId: "hist-em-irl-2", conceptId: "did-neill-donnell-plan-respect-pale",
+    section: "1", questionRef: "2015 OL Early Modern Section 1 Q1(a)",
+    stem: "Case study: The Lordship of Tír Eoghain",
+    questionText: "What did O’Neill and O’Donnell plan in respect of the Pale, according to document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To invade the Pale", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s1-q1b", topicId: "hist-em-irl-2", conceptId: "who-did-neill-appoint-invade-delvin",
+    section: "1", questionRef: "2015 OL Early Modern Section 1 Q1(b)",
+    stem: "Case study: The Lordship of Tír Eoghain",
+    questionText: "Who did O’Neill appoint to invade Delvin, according to document A?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "McMahon, Cormack, McHenry and O’Reilly", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s1-q1c", topicId: "hist-em-irl-2", conceptId: "did-hugh-neill-offer-prove-his",
+    section: "1", questionRef: "2015 OL Early Modern Section 1 Q1(c)",
+    stem: "Case study: The Lordship of Tír Eoghain",
+    questionText: "How did Hugh O’Neill offer to prove his loyalty to King James, according to document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He offered to help defeat other Irish rebels", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s1-q1d", topicId: "hist-em-irl-2", conceptId: "did-james-restore-hugh-neill",
+    section: "1", questionRef: "2015 OL Early Modern Section 1 Q1(d)",
+    stem: "Case study: The Lordship of Tír Eoghain",
+    questionText: "What did James I restore to Hugh O’Neill, according to document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The rank and dignity of Earl", marks: 10 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s1-q2a", topicId: "hist-em-irl-2", conceptId: "did-policies-hugh-neill-earl-tyrone",
+    section: "1", questionRef: "2015 OL Early Modern Section 1 Q2(a)",
+    stem: "Case study: The Lordship of Tír Eoghain",
+    questionText: "How did the policies of Hugh O’Neill, Earl of Tyrone, change to the English Crown between 1600 and in 1603? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Documents A and B show a total turn-around by O’Neill", marks: null },
+    { id: "r-2", kind: "point", verbatim: "From being a rebel against the Crown planning to invade the Pale with his allies in 1600 (document A) he becomes a loyal servant of King James, accepting a royal pardon and even offering to fight against other rebels.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s1-q2b", topicId: "hist-em-irl-2", conceptId: "tells-more-power-influence-hugh-neill",
+    section: "1", questionRef: "2015 OL Early Modern Section 1 Q2(b)",
+    stem: "Case study: The Lordship of Tír Eoghain",
+    questionText: "Which document, A or B, tells us more about the power and influence of Hugh O’Neill, Earl of Tyrone? Explain your answer, referring to both documents.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An argument can be made that either document better shows O’Neill’s influence", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Document A shows that he has many allies across the various Irish families", marks: null },
+    { id: "r-3", kind: "point", verbatim: "He could raise a contingent of bonnaughts", marks: null },
+    { id: "r-4", kind: "point", verbatim: "He was in charge of the military plan (“he has commanded ... he has appointed McMahon, etc”) Document B shows O’Neill’s power and influence in a different way", marks: null },
+    { id: "r-5", kind: "point", verbatim: "He has convinced Mountjoy and the Queen, that he now repents of his earlier rebelliousness", marks: null },
+    { id: "r-6", kind: "point", verbatim: "He convinced Mountjoy that he had abandoned adherence to foreign powers and offered to serve against other rebels in Ireland.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s1-q3a", topicId: "hist-em-irl-2", conceptId: "evidence-there-extent-hugh-neill-preparations",
+    section: "1", questionRef: "2015 OL Early Modern Section 1 Q3(a)",
+    stem: "Case study: The Lordship of Tír Eoghain",
+    questionText: "What evidence is there in document A of the extent of Hugh O’Neill’s preparations?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 10, contextNote: "The scheme prints one Criticism answer, under (a), and it is about the King’s proclamation (document B), which part (b) asks about. It prints nothing for this part.", unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s1-q3b", topicId: "hist-em-irl-2", conceptId: "evidence-there-attitude-king-towards-hugh",
+    section: "1", questionRef: "2015 OL Early Modern Section 1 Q3(b)",
+    stem: "Case study: The Lordship of Tír Eoghain",
+    questionText: "What evidence is there in document B of the attitude of the King towards Hugh O’Neill?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Document A is a proclamation by the King in which he pardons O’Neill and accepts him as a “good subject” and restores his “rank and dignity” as Earl", marks: null },
+    { id: "r-2", kind: "point", verbatim: "He acknowledges him as his subject and as a nobleman of Ireland", marks: null },
+    { id: "r-3", kind: "point", verbatim: "He offers him royal protection.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s1-q4", topicId: "hist-em-irl-2", conceptId: "did-nine-years-war-affect-power",
+    section: "1", questionRef: "2015 OL Early Modern Section 1 Q4",
+    stem: "Case study: The Lordship of Tír Eoghain",
+    questionText: "How did the Nine Years’ War affect the power and influence of Hugh O’Neill in Ireland?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[0], schemePages: [19] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t1a-q1", topicId: "hist-em-irl-1", conceptId: "dublin-important-chiericati",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 1 A Q1",
+    stem: "Francesco Chiericati, a traveller to Ireland, wrote to Isabella d’Este Gonzaga in 1517 describing his visit. Read the following edited extract and answer the questions that follow.\n\nBy the gracious permission of the King Henry VIII, we crossed the sea to a city in Ireland called Dublin. This is one of the three metropolitan cities, and is the capital of all Ireland. Here is collected the Grand Council of the Kingdom and as it is a maritime place it is sufficiently populous.\nHere there are countless vessels which carry away salt fish, hides, cattle and Irish hobby-horses, and import wine and merchandise of many kinds. There we were honourably entertained by the Very Rev. Archbishop and by the illustrious Earl of Kildare, viceroy of the island.",
+    questionText: "Why was Dublin important, according to Chiericati?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "One of three metropolitan cities/ capital city/ meeting place of the Grand Council of the Kingdom/ maritime centre/ populous", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t1a-q2", topicId: "hist-em-irl-1", conceptId: "busy-port-dublin-chiericati",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 1 A Q2",
+    stem: "Francesco Chiericati, a traveller to Ireland, wrote to Isabella d’Este Gonzaga in 1517 describing his visit. Read the following edited extract and answer the questions that follow.\n\nBy the gracious permission of the King Henry VIII, we crossed the sea to a city in Ireland called Dublin. This is one of the three metropolitan cities, and is the capital of all Ireland. Here is collected the Grand Council of the Kingdom and as it is a maritime place it is sufficiently populous.\nHere there are countless vessels which carry away salt fish, hides, cattle and Irish hobby-horses, and import wine and merchandise of many kinds. There we were honourably entertained by the Very Rev. Archbishop and by the illustrious Earl of Kildare, viceroy of the island.",
+    questionText: "How busy was the port of Dublin, according to Chiericati?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Very busy/ “Countless vessels”/ Much exports and imports", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t1a-q3", topicId: "hist-em-irl-1", conceptId: "important-people-who-entertained-chiericati-dublin",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 1 A Q3",
+    stem: "Francesco Chiericati, a traveller to Ireland, wrote to Isabella d’Este Gonzaga in 1517 describing his visit. Read the following edited extract and answer the questions that follow.\n\nBy the gracious permission of the King Henry VIII, we crossed the sea to a city in Ireland called Dublin. This is one of the three metropolitan cities, and is the capital of all Ireland. Here is collected the Grand Council of the Kingdom and as it is a maritime place it is sufficiently populous.\nHere there are countless vessels which carry away salt fish, hides, cattle and Irish hobby-horses, and import wine and merchandise of many kinds. There we were honourably entertained by the Very Rev. Archbishop and by the illustrious Earl of Kildare, viceroy of the island.",
+    questionText: "Name two important people who entertained Chiericati in Dublin?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Archbishop", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Earl of Kildare/ The Viceroy", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t1a-q4", topicId: "hist-em-irl-1", conceptId: "exports-dublin-did-chiericati-mention",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 1 A Q4",
+    stem: "Francesco Chiericati, a traveller to Ireland, wrote to Isabella d’Este Gonzaga in 1517 describing his visit. Read the following edited extract and answer the questions that follow.\n\nBy the gracious permission of the King Henry VIII, we crossed the sea to a city in Ireland called Dublin. This is one of the three metropolitan cities, and is the capital of all Ireland. Here is collected the Grand Council of the Kingdom and as it is a maritime place it is sufficiently populous.\nHere there are countless vessels which carry away salt fish, hides, cattle and Irish hobby-horses, and import wine and merchandise of many kinds. There we were honourably entertained by the Very Rev. Archbishop and by the illustrious Earl of Kildare, viceroy of the island.",
+    questionText: "What exports from Dublin did Chiericati mention?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Salt fish, hides, cattle, hobby-horses", marks: 6, contextNote: "Any THREE @ 2M each" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t1a-q5", topicId: "hist-em-irl-1", conceptId: "where-kildare-main-castle-fitzgeralds-time",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 1 A Q5",
+    stem: "Francesco Chiericati, a traveller to Ireland, wrote to Isabella d’Este Gonzaga in 1517 describing his visit. Read the following edited extract and answer the questions that follow.\n\nBy the gracious permission of the King Henry VIII, we crossed the sea to a city in Ireland called Dublin. This is one of the three metropolitan cities, and is the capital of all Ireland. Here is collected the Grand Council of the Kingdom and as it is a maritime place it is sufficiently populous.\nHere there are countless vessels which carry away salt fish, hides, cattle and Irish hobby-horses, and import wine and merchandise of many kinds. There we were honourably entertained by the Very Rev. Archbishop and by the illustrious Earl of Kildare, viceroy of the island.",
+    questionText: "Where in Kildare was the main castle of the Fitzgeralds at the time?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Maynooth", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t1b", topicId: "hist-em-irl-1", conceptId: "gear-8th-earl-kildare-con-bacach",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 1 B",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "Write a short paragraph on one of the following:\n1. Gearóid Mór, the 8th Earl of Kildare.\n2. Con Bacach O’Neill.\n3. The Observantine reform.\n4. Pastoralism and transhumance in Gaelic society.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t1c", topicId: "hist-em-irl-1", conceptId: "did-house-kildare-lose-power-1536",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 1 C",
+    stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
+    questionText: "Answer one of the following:\n1. How did the House of Kildare lose power in 1536-1537?\n2. What rights had women in marriage under Gaelic law?\n3. What influence had poets who were trained in Bardic schools in Gaelic Ireland?\n4. What changes did Henry VIII introduce into the church in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t3a-q1", topicId: "hist-em-irl-3", conceptId: "when-did-miche-irigh-his-companions",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 3 A Q1",
+    stem: "This edited extract is from an account by a modern scholar of the importance of the work of the Four Masters. Read it and answer the questions that follow.\n\nBr Micheál Ó Cléirigh and his companions worked in the fragile period of troubled peace in Ireland between the death of Elizabeth in 1603 to the outbreak of war in 1641. They travelled throughout Ireland systematically copying all the historical texts they could lay their hands on and sending them to the relative safety of the Spanish Netherlands. The originals of most manuscripts that they copied, and that remained in Ireland, were subsequently lost, most probably in the wars of the mid and late seventeenth century.",
+    questionText: "When did Micheál Ó Cléirigh and his companions (the Four Masters) do their work in Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Between 1603 and 1641", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t3a-q2", topicId: "hist-em-irl-3", conceptId: "manuscripts-did-copy",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 3 A Q2",
+    stem: "This edited extract is from an account by a modern scholar of the importance of the work of the Four Masters. Read it and answer the questions that follow.\n\nBr Micheál Ó Cléirigh and his companions worked in the fragile period of troubled peace in Ireland between the death of Elizabeth in 1603 to the outbreak of war in 1641. They travelled throughout Ireland systematically copying all the historical texts they could lay their hands on and sending them to the relative safety of the Spanish Netherlands. The originals of most manuscripts that they copied, and that remained in Ireland, were subsequently lost, most probably in the wars of the mid and late seventeenth century.",
+    questionText: "What manuscripts did they copy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Historical texts", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t3a-q3", topicId: "hist-em-irl-3", conceptId: "did-copies-manuscripts",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 3 A Q3",
+    stem: "This edited extract is from an account by a modern scholar of the importance of the work of the Four Masters. Read it and answer the questions that follow.\n\nBr Micheál Ó Cléirigh and his companions worked in the fragile period of troubled peace in Ireland between the death of Elizabeth in 1603 to the outbreak of war in 1641. They travelled throughout Ireland systematically copying all the historical texts they could lay their hands on and sending them to the relative safety of the Spanish Netherlands. The originals of most manuscripts that they copied, and that remained in Ireland, were subsequently lost, most probably in the wars of the mid and late seventeenth century.",
+    questionText: "What did they do with their copies of manuscripts?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They sent them to the Spanish Netherlands", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t3a-q4", topicId: "hist-em-irl-3", conceptId: "happened-manuscripts-remained-ireland",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 3 A Q4",
+    stem: "This edited extract is from an account by a modern scholar of the importance of the work of the Four Masters. Read it and answer the questions that follow.\n\nBr Micheál Ó Cléirigh and his companions worked in the fragile period of troubled peace in Ireland between the death of Elizabeth in 1603 to the outbreak of war in 1641. They travelled throughout Ireland systematically copying all the historical texts they could lay their hands on and sending them to the relative safety of the Spanish Netherlands. The originals of most manuscripts that they copied, and that remained in Ireland, were subsequently lost, most probably in the wars of the mid and late seventeenth century.",
+    questionText: "What happened to the manuscripts that remained in Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Most were lost (probably in the wars)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t3a-q5", topicId: "hist-em-irl-3", conceptId: "four-masters-important-sources-medieval-irish",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 3 A Q5",
+    stem: "This edited extract is from an account by a modern scholar of the importance of the work of the Four Masters. Read it and answer the questions that follow.\n\nBr Micheál Ó Cléirigh and his companions worked in the fragile period of troubled peace in Ireland between the death of Elizabeth in 1603 to the outbreak of war in 1641. They travelled throughout Ireland systematically copying all the historical texts they could lay their hands on and sending them to the relative safety of the Spanish Netherlands. The originals of most manuscripts that they copied, and that remained in Ireland, were subsequently lost, most probably in the wars of the mid and late seventeenth century.",
+    questionText: "Why were the Four Masters so important for the sources for medieval Irish history?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid reason", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t3b", topicId: "hist-em-irl-3", conceptId: "sir-thomas-wentworth-graces-luke-wadding",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 3 B",
+    stem: "Kingdom and colony: The struggle for mastery in Ireland, 1603-1660",
+    questionText: "Write a short paragraph on one of the following:\n1. Sir Thomas Wentworth and the Graces.\n2. Luke Wadding.\n3. Elizabeth Butler, Countess of Ormond.\n4. Protestantism in Ireland, 1603-1641.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t3c", topicId: "hist-em-irl-3", conceptId: "did-scottish-migrants-come-ulster-early",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 3 C",
+    stem: "Kingdom and colony: The struggle for mastery in Ireland, 1603-1660",
+    questionText: "Answer one of the following:\n1. Why did Scottish migrants come to Ulster in the early seventeenth century and what changes did they introduce?\n2. How did Richard Boyle and his family influence events in Ireland?\n3. How did Archbishop Rinuccini fare in his mission to Ireland?\n4. What part did Sir Phelim O’Neill play in the 1641 rebellion?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t4a-q1", topicId: "hist-em-irl-4", conceptId: "kinds-game-preserved-lord-lieutenant-his",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 4 A Q1",
+    stem: "This is from a proclamation, 14 November 1661, ‘Preserving game near Dublin and the Curragh for the recreation of the Lord Lieutenant and Council’. Read it and answer the questions that follow.\n\nWe do hereby in his majesty’s name strictly charge and command all persons whatsoever that they do not presume to kill or take any pheasant, partridge, grouse, hares or any prohibited game whatsoever, either by hawks, nets, guns, setting dogs, grey-hounds, or any other engine whatsoever, in any place or places within seven miles from the city of Dublin, as also within the bounds of the Curragh of Kildare, or within three miles distance from the same, except only that the counselors of state may take their recreation with hawks or otherwise within these said limits.\nAnd we do strictly charge and command that no person or persons whatsoever within the realm of Ireland do presume to use or keep any setters, but that it may be lawful for the master of his majesty’s game, or his deputies, to seize, take, and destroy such setters at their pleasure.",
+    questionText: "What kinds of game were preserved for the Lord Lieutenant and his Council in 1661?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pheasant, partridge, grouse, hares", marks: 6, contextNote: "Any THREE @ 2M each" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t4a-q2", topicId: "hist-em-irl-4", conceptId: "where-game-preserved-lord-lieutenant-his",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 4 A Q2",
+    stem: "This is from a proclamation, 14 November 1661, ‘Preserving game near Dublin and the Curragh for the recreation of the Lord Lieutenant and Council’. Read it and answer the questions that follow.\n\nWe do hereby in his majesty’s name strictly charge and command all persons whatsoever that they do not presume to kill or take any pheasant, partridge, grouse, hares or any prohibited game whatsoever, either by hawks, nets, guns, setting dogs, grey-hounds, or any other engine whatsoever, in any place or places within seven miles from the city of Dublin, as also within the bounds of the Curragh of Kildare, or within three miles distance from the same, except only that the counselors of state may take their recreation with hawks or otherwise within these said limits.\nAnd we do strictly charge and command that no person or persons whatsoever within the realm of Ireland do presume to use or keep any setters, but that it may be lawful for the master of his majesty’s game, or his deputies, to seize, take, and destroy such setters at their pleasure.",
+    questionText: "Where was game preserved for the Lord Lieutenant and his Council in 1661?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Within 7 miles of Dublin/ Inside and within 3 miles of the Curragh", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t4a-q3", topicId: "hist-em-irl-4", conceptId: "methods-capturing-game-recorded-proclamation",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 4 A Q3",
+    stem: "This is from a proclamation, 14 November 1661, ‘Preserving game near Dublin and the Curragh for the recreation of the Lord Lieutenant and Council’. Read it and answer the questions that follow.\n\nWe do hereby in his majesty’s name strictly charge and command all persons whatsoever that they do not presume to kill or take any pheasant, partridge, grouse, hares or any prohibited game whatsoever, either by hawks, nets, guns, setting dogs, grey-hounds, or any other engine whatsoever, in any place or places within seven miles from the city of Dublin, as also within the bounds of the Curragh of Kildare, or within three miles distance from the same, except only that the counselors of state may take their recreation with hawks or otherwise within these said limits.\nAnd we do strictly charge and command that no person or persons whatsoever within the realm of Ireland do presume to use or keep any setters, but that it may be lawful for the master of his majesty’s game, or his deputies, to seize, take, and destroy such setters at their pleasure.",
+    questionText: "What methods of capturing game are recorded in the above proclamation?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hawks, nets, guns, setting dogs, greyhounds", marks: 6, contextNote: "Any THREE @ 2M each" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t4a-q4", topicId: "hist-em-irl-4", conceptId: "master-his-majesty-game-setting-dogs",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 4 A Q4",
+    stem: "This is from a proclamation, 14 November 1661, ‘Preserving game near Dublin and the Curragh for the recreation of the Lord Lieutenant and Council’. Read it and answer the questions that follow.\n\nWe do hereby in his majesty’s name strictly charge and command all persons whatsoever that they do not presume to kill or take any pheasant, partridge, grouse, hares or any prohibited game whatsoever, either by hawks, nets, guns, setting dogs, grey-hounds, or any other engine whatsoever, in any place or places within seven miles from the city of Dublin, as also within the bounds of the Curragh of Kildare, or within three miles distance from the same, except only that the counselors of state may take their recreation with hawks or otherwise within these said limits.\nAnd we do strictly charge and command that no person or persons whatsoever within the realm of Ireland do presume to use or keep any setters, but that it may be lawful for the master of his majesty’s game, or his deputies, to seize, take, and destroy such setters at their pleasure.",
+    questionText: "What may the master of his majesty’s game do with any setting dogs in Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He may seize, take and destroy the setters", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t4a-q5", topicId: "hist-em-irl-4", conceptId: "lord-lieutenant-ireland-during-period-1660",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 4 A Q5",
+    stem: "This is from a proclamation, 14 November 1661, ‘Preserving game near Dublin and the Curragh for the recreation of the Lord Lieutenant and Council’. Read it and answer the questions that follow.\n\nWe do hereby in his majesty’s name strictly charge and command all persons whatsoever that they do not presume to kill or take any pheasant, partridge, grouse, hares or any prohibited game whatsoever, either by hawks, nets, guns, setting dogs, grey-hounds, or any other engine whatsoever, in any place or places within seven miles from the city of Dublin, as also within the bounds of the Curragh of Kildare, or within three miles distance from the same, except only that the counselors of state may take their recreation with hawks or otherwise within these said limits.\nAnd we do strictly charge and command that no person or persons whatsoever within the realm of Ireland do presume to use or keep any setters, but that it may be lawful for the master of his majesty’s game, or his deputies, to seize, take, and destroy such setters at their pleasure.",
+    questionText: "Name one Lord Lieutenant of Ireland during the period 1660-1715.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE Lord Lieutenant from 1660 to 1715", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t4b", topicId: "hist-em-irl-4", conceptId: "restoration-dublin-cattle-navigation-acts-regium",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 4 B",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "Write a short paragraph on one of the following:\n1. Restoration Dublin.\n2. The Cattle and Navigation Acts.\n3. The Regium Donum.\n4. Tories and Rapparees.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t4c", topicId: "hist-em-irl-4", conceptId: "achievements-william-molyneux-fields-science-philosophy",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 4 C",
+    stem: "Establishing a colonial ascendancy, 1660-1715",
+    questionText: "Answer one of the following:\n1. What were the achievements of William Molyneux in the fields of science and philosophy?\n2. What was Oliver Plunkett’s contribution to Irish affairs, 1670-1681?\n3. Why was the Parliament of 1689 controversial?\n4. Who were the Jacobite poets and what were their concerns?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t5a-q1", topicId: "hist-em-irl-5", conceptId: "quarantine-imposed",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 5 A Q1",
+    stem: "This extract is from a proclamation Imposing quarantine on shipping from the Mediterranean, 3 September 1720. Read it and answer the questions that follow.\n\nHaving received information that Marseilles and other places in the Mediterranean are infected with the plague, and… to prevent the infection that might be by ships coming into his majesty’s ports:\nFirst, that all ships or vessels arriving in any ports of this kingdom from the Mediterranean do make their quarantine for forty days, which shall commence from the day each ship will come to anchor in the place appointed for such quarantine, and not before.\nSecondly, that the places for performing quarantine by such ships shall be ports such as Baltimore, Carlingford, Killybegs or Clew Bay.\nThirdly, that until and during the time for making such quarantine, no person coming, or goods imported in any such vessel, shall come on shore or be landed within any place.",
+    questionText: "Why was quarantine imposed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The plague/ To prevent infection", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t5a-q2", topicId: "hist-em-irl-5", conceptId: "ships-put-quarantine-proclamation",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 5 A Q2",
+    stem: "This extract is from a proclamation Imposing quarantine on shipping from the Mediterranean, 3 September 1720. Read it and answer the questions that follow.\n\nHaving received information that Marseilles and other places in the Mediterranean are infected with the plague, and… to prevent the infection that might be by ships coming into his majesty’s ports:\nFirst, that all ships or vessels arriving in any ports of this kingdom from the Mediterranean do make their quarantine for forty days, which shall commence from the day each ship will come to anchor in the place appointed for such quarantine, and not before.\nSecondly, that the places for performing quarantine by such ships shall be ports such as Baltimore, Carlingford, Killybegs or Clew Bay.\nThirdly, that until and during the time for making such quarantine, no person coming, or goods imported in any such vessel, shall come on shore or be landed within any place.",
+    questionText: "What ships were put in quarantine according to the proclamation above?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "All ships from the Mediterranean", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t5a-q3", topicId: "hist-em-irl-5", conceptId: "long-quarantine-last",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 5 A Q3",
+    stem: "This extract is from a proclamation Imposing quarantine on shipping from the Mediterranean, 3 September 1720. Read it and answer the questions that follow.\n\nHaving received information that Marseilles and other places in the Mediterranean are infected with the plague, and… to prevent the infection that might be by ships coming into his majesty’s ports:\nFirst, that all ships or vessels arriving in any ports of this kingdom from the Mediterranean do make their quarantine for forty days, which shall commence from the day each ship will come to anchor in the place appointed for such quarantine, and not before.\nSecondly, that the places for performing quarantine by such ships shall be ports such as Baltimore, Carlingford, Killybegs or Clew Bay.\nThirdly, that until and during the time for making such quarantine, no person coming, or goods imported in any such vessel, shall come on shore or be landed within any place.",
+    questionText: "How long was the quarantine to last?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Forty days", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t5a-q4", topicId: "hist-em-irl-5", conceptId: "place-used-quarantine-ships",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 5 A Q4",
+    stem: "This extract is from a proclamation Imposing quarantine on shipping from the Mediterranean, 3 September 1720. Read it and answer the questions that follow.\n\nHaving received information that Marseilles and other places in the Mediterranean are infected with the plague, and… to prevent the infection that might be by ships coming into his majesty’s ports:\nFirst, that all ships or vessels arriving in any ports of this kingdom from the Mediterranean do make their quarantine for forty days, which shall commence from the day each ship will come to anchor in the place appointed for such quarantine, and not before.\nSecondly, that the places for performing quarantine by such ships shall be ports such as Baltimore, Carlingford, Killybegs or Clew Bay.\nThirdly, that until and during the time for making such quarantine, no person coming, or goods imported in any such vessel, shall come on shore or be landed within any place.",
+    questionText: "Name one place that was used to quarantine ships?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Baltimore/ Carlingford/ Killybegs/ Clew Bay", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t5a-q5", topicId: "hist-em-irl-5", conceptId: "apart-putting-ships-quarantine-mention-problem",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 5 A Q5",
+    stem: "This extract is from a proclamation Imposing quarantine on shipping from the Mediterranean, 3 September 1720. Read it and answer the questions that follow.\n\nHaving received information that Marseilles and other places in the Mediterranean are infected with the plague, and… to prevent the infection that might be by ships coming into his majesty’s ports:\nFirst, that all ships or vessels arriving in any ports of this kingdom from the Mediterranean do make their quarantine for forty days, which shall commence from the day each ship will come to anchor in the place appointed for such quarantine, and not before.\nSecondly, that the places for performing quarantine by such ships shall be ports such as Baltimore, Carlingford, Killybegs or Clew Bay.\nThirdly, that until and during the time for making such quarantine, no person coming, or goods imported in any such vessel, shall come on shore or be landed within any place.",
+    questionText: "Apart from putting ships in quarantine, mention one problem associated with merchant shipping in Ireland, 1715-1770.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid problem of merchant shipping", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t5b", topicId: "hist-em-irl-5", conceptId: "drapier-letters-whiteboys-planned-towns-turlough",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 5 B",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "Write a short paragraph on one of the following:\n1. Drapier’s letters.\n2. The Whiteboys.\n3. Planned towns.\n4. Turlough O’Carolan.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t5c", topicId: "hist-em-irl-5", conceptId: "important-ponsonbys-government-ireland-successful-stage",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 5 C",
+    stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
+    questionText: "Answer one of the following:\n1. How important were the Ponsonbys in the government of Ireland?\n2. How successful was the stage career of Peg Woofington (1720-1760)?\n3. What were the achievements of John Hely-Hutchinson as a scholar and a statesman?\n4. Why was Fr. Sheehy put on trial and what was the outcome?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t6a-q1", topicId: "hist-em-irl-6", conceptId: "reward-able-seaman-who-volunteered",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 6 A Q1",
+    stem: "The following from the proclamation, Reward to those who shall enlist in the Royal Navy, 4 August 1790. Read it and answer the questions that follow.\n\nIt is judged expedient for his majesty’s service, that bounties and rewards should be given to all such seamen and landmen as shall voluntarily enter themselves to serve on board his majesty’s fleet. We do therefore hereby order and declare that the sum of three pounds British be paid to every able seaman, and forty shillings British to every ordinary seaman, not under the age of twenty, nor above the age of fifty-five years; and also twenty shillings British to every landman, not under the age of eighteen, nor above the age of thirty-five years.\nThose bounties and rewards are to be paid before such persons leave the port they enter at, and to be continued until the 31st day of August. ..",
+    questionText: "What was the reward for an able seaman who volunteered?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "£3", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t6a-q2", topicId: "hist-em-irl-6", conceptId: "reward-ordinary-seaman-who-volunteered",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 6 A Q2",
+    stem: "The following from the proclamation, Reward to those who shall enlist in the Royal Navy, 4 August 1790. Read it and answer the questions that follow.\n\nIt is judged expedient for his majesty’s service, that bounties and rewards should be given to all such seamen and landmen as shall voluntarily enter themselves to serve on board his majesty’s fleet. We do therefore hereby order and declare that the sum of three pounds British be paid to every able seaman, and forty shillings British to every ordinary seaman, not under the age of twenty, nor above the age of fifty-five years; and also twenty shillings British to every landman, not under the age of eighteen, nor above the age of thirty-five years.\nThose bounties and rewards are to be paid before such persons leave the port they enter at, and to be continued until the 31st day of August. ..",
+    questionText: "What was the reward for an ordinary seaman who volunteered?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "40 shillings/ £2", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t6a-q3", topicId: "hist-em-irl-6", conceptId: "age-limits-ordinary-seaman-who-volunteered",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 6 A Q3",
+    stem: "The following from the proclamation, Reward to those who shall enlist in the Royal Navy, 4 August 1790. Read it and answer the questions that follow.\n\nIt is judged expedient for his majesty’s service, that bounties and rewards should be given to all such seamen and landmen as shall voluntarily enter themselves to serve on board his majesty’s fleet. We do therefore hereby order and declare that the sum of three pounds British be paid to every able seaman, and forty shillings British to every ordinary seaman, not under the age of twenty, nor above the age of fifty-five years; and also twenty shillings British to every landman, not under the age of eighteen, nor above the age of thirty-five years.\nThose bounties and rewards are to be paid before such persons leave the port they enter at, and to be continued until the 31st day of August. ..",
+    questionText: "What were the age limits for an ordinary seaman who volunteered?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Aged between 12 and 55", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t6a-q4", topicId: "hist-em-irl-6", conceptId: "where-bounties-rewards-paid-persons-who",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 6 A Q4",
+    stem: "The following from the proclamation, Reward to those who shall enlist in the Royal Navy, 4 August 1790. Read it and answer the questions that follow.\n\nIt is judged expedient for his majesty’s service, that bounties and rewards should be given to all such seamen and landmen as shall voluntarily enter themselves to serve on board his majesty’s fleet. We do therefore hereby order and declare that the sum of three pounds British be paid to every able seaman, and forty shillings British to every ordinary seaman, not under the age of twenty, nor above the age of fifty-five years; and also twenty shillings British to every landman, not under the age of eighteen, nor above the age of thirty-five years.\nThose bounties and rewards are to be paid before such persons leave the port they enter at, and to be continued until the 31st day of August. ..",
+    questionText: "Where were the bounties and rewards to be paid to persons who volunteered to join the Royal Navy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "At the port/ Before they leave the port they enter at", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t6a-q5", topicId: "hist-em-irl-6", conceptId: "reason-royal-navy-needed-extra-seamen",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 6 A Q5",
+    stem: "The following from the proclamation, Reward to those who shall enlist in the Royal Navy, 4 August 1790. Read it and answer the questions that follow.\n\nIt is judged expedient for his majesty’s service, that bounties and rewards should be given to all such seamen and landmen as shall voluntarily enter themselves to serve on board his majesty’s fleet. We do therefore hereby order and declare that the sum of three pounds British be paid to every able seaman, and forty shillings British to every ordinary seaman, not under the age of twenty, nor above the age of fifty-five years; and also twenty shillings British to every landman, not under the age of eighteen, nor above the age of thirty-five years.\nThose bounties and rewards are to be paid before such persons leave the port they enter at, and to be continued until the 31st day of August. ..",
+    questionText: "Give a reason why the Royal Navy needed extra seamen in 1790.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason for extra recruiting", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t6b", topicId: "hist-em-irl-6", conceptId: "free-trade-grattan-parliament-wolfe-tone",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 6 B",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Free trade and Grattan’s Parliament.\n2. Wolfe Tone and the United Irishmen.\n3. Fr. Arthur O’Leary.\n4. Eibhlín Dhubh Ní Chonaill.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s2t6c", topicId: "hist-em-irl-6", conceptId: "did-rebellion-wexford-end-failure-conditions",
+    section: "2", questionRef: "2015 OL Early Modern Section 2 Topic 6 C",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
+    questionText: "Answer one of the following:\n1. Why did the rebellion in Wexford end in failure?\n2. What conditions led to the rise of Belfast?\n3. How important was the establishment of Maynooth College?\n4. What did Nano Nagle contribute to education in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t1a-q1", topicId: "hist-em-eur-1", conceptId: "who-painted-portrait-pope-leo-his",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 1 A Q1",
+    stem: "Giorgio Vasari (1511-74) described Raphael’s portrait of Pope Leo X in the following extract. Read Vasari’s account and answer the questions that follow.\n\nWhile in Rome, Raphael painted a large picture in which he portrayed Pope Leo, Cardinal Giulio de’ Medici, and Cardinal de’ Rossi. In this work the figures appear to be truly in the round rather than painted. One can see the pile of the velvet, and the Pope’s damask robes rustling and shining, the soft and natural fur of the linings, and the gold and silk imitated so skilfully that they seem to be real gold and silk rather than paint.\nThen there is an illuminated book of parchment which is utterly realistic and an inexpressibly beautiful little bell of wrought silver. Among the other details, there is also on the Pope’s throne, a ball of burnished gold which is so bright that like a mirror it reflects the light from the windows, the Pope’s shoulders, and the walls around the room.",
+    questionText: "Who painted a portrait of Pope Leo and two of his cardinals?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Raphael", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t1a-q2", topicId: "hist-em-eur-1", conceptId: "utterly-realistic-painting-vasari",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 1 A Q2",
+    stem: "Giorgio Vasari (1511-74) described Raphael’s portrait of Pope Leo X in the following extract. Read Vasari’s account and answer the questions that follow.\n\nWhile in Rome, Raphael painted a large picture in which he portrayed Pope Leo, Cardinal Giulio de’ Medici, and Cardinal de’ Rossi. In this work the figures appear to be truly in the round rather than painted. One can see the pile of the velvet, and the Pope’s damask robes rustling and shining, the soft and natural fur of the linings, and the gold and silk imitated so skilfully that they seem to be real gold and silk rather than paint.\nThen there is an illuminated book of parchment which is utterly realistic and an inexpressibly beautiful little bell of wrought silver. Among the other details, there is also on the Pope’s throne, a ball of burnished gold which is so bright that like a mirror it reflects the light from the windows, the Pope’s shoulders, and the walls around the room.",
+    questionText: "What was utterly realistic in the painting according to Vasari?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An illuminated book of parchment", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t1a-q3", topicId: "hist-em-eur-1", conceptId: "did-vasari-admire-painted-fabrics-picture",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 1 A Q3",
+    stem: "Giorgio Vasari (1511-74) described Raphael’s portrait of Pope Leo X in the following extract. Read Vasari’s account and answer the questions that follow.\n\nWhile in Rome, Raphael painted a large picture in which he portrayed Pope Leo, Cardinal Giulio de’ Medici, and Cardinal de’ Rossi. In this work the figures appear to be truly in the round rather than painted. One can see the pile of the velvet, and the Pope’s damask robes rustling and shining, the soft and natural fur of the linings, and the gold and silk imitated so skilfully that they seem to be real gold and silk rather than paint.\nThen there is an illuminated book of parchment which is utterly realistic and an inexpressibly beautiful little bell of wrought silver. Among the other details, there is also on the Pope’s throne, a ball of burnished gold which is so bright that like a mirror it reflects the light from the windows, the Pope’s shoulders, and the walls around the room.",
+    questionText: "What did Vasari admire about the painted fabrics in the picture?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They seem to be real", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t1a-q4", topicId: "hist-em-eur-1", conceptId: "did-vasari-admire-painting-ball-gold",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 1 A Q4",
+    stem: "Giorgio Vasari (1511-74) described Raphael’s portrait of Pope Leo X in the following extract. Read Vasari’s account and answer the questions that follow.\n\nWhile in Rome, Raphael painted a large picture in which he portrayed Pope Leo, Cardinal Giulio de’ Medici, and Cardinal de’ Rossi. In this work the figures appear to be truly in the round rather than painted. One can see the pile of the velvet, and the Pope’s damask robes rustling and shining, the soft and natural fur of the linings, and the gold and silk imitated so skilfully that they seem to be real gold and silk rather than paint.\nThen there is an illuminated book of parchment which is utterly realistic and an inexpressibly beautiful little bell of wrought silver. Among the other details, there is also on the Pope’s throne, a ball of burnished gold which is so bright that like a mirror it reflects the light from the windows, the Pope’s shoulders, and the walls around the room.",
+    questionText: "What did Vasari admire about the painting of the ball of gold on the Pope’s throne?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It is so bright that it reflects light like a mirror", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t1a-q5", topicId: "hist-em-eur-1", conceptId: "apart-raphael-michelangelo-renaissance-artist",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 1 A Q5",
+    stem: "Giorgio Vasari (1511-74) described Raphael’s portrait of Pope Leo X in the following extract. Read Vasari’s account and answer the questions that follow.\n\nWhile in Rome, Raphael painted a large picture in which he portrayed Pope Leo, Cardinal Giulio de’ Medici, and Cardinal de’ Rossi. In this work the figures appear to be truly in the round rather than painted. One can see the pile of the velvet, and the Pope’s damask robes rustling and shining, the soft and natural fur of the linings, and the gold and silk imitated so skilfully that they seem to be real gold and silk rather than paint.\nThen there is an illuminated book of parchment which is utterly realistic and an inexpressibly beautiful little bell of wrought silver. Among the other details, there is also on the Pope’s throne, a ball of burnished gold which is so bright that like a mirror it reflects the light from the windows, the Pope’s shoulders, and the walls around the room.",
+    questionText: "Apart from Raphael and Michelangelo, name one Renaissance artist.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE artist other than Michelangelo and Raphael", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t1b", topicId: "hist-em-eur-1", conceptId: "niccol-machiavelli-vital-revolution-martin-luther",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 1 B",
+    stem: "Europe from Renaissance to Reformation, 1492-1567",
+    questionText: "Write a short paragraph on one of the following:\n1. Niccolò Machiavelli.\n2. The “Vital Revolution”.\n3. Martin Luther.\n4. The Hapsburg/Valois wars.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t1c", topicId: "hist-em-eur-1", conceptId: "important-michelangelo-buonarroti-artist-did-christopher",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 1 C",
+    stem: "Europe from Renaissance to Reformation, 1492-1567",
+    questionText: "Answer one of the following:\n1. How important was Michelangelo Buonarroti as an artist?\n2. How did Christopher Columbus plan and carry out his first voyage across the Atlantic?\n3. Why did Geneva become an important centre of the Reformation?\n4. How did the divorce of Henry VIII and Catherine of Aragon affect religion in England?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t2a-q1", topicId: "hist-em-eur-2", conceptId: "when-did-jesuits-arrive-imperial-capital",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 2 A Q1",
+    stem: "Read the following extract from a book by a modern scholar about Matteo Ricci and the Jesuit Mission to China and answer the questions that follow.\n\nWith the Jesuits’ arrival at the imperial capital in late January 1601, a central goal of Matteo Ricci’s strategy for securing the mission had been accomplished. With a Jesuit ensconced at Peking - by order of the emperor himself - the reputation of the Society of Jesus in China would improve along with that of Ricci himself.\nIt is not easy to overstate the importance of Ricci’s acceptance at court. The fact that he quickly became a minor celebrity at the capital was crucial for the safety of the mission and for its future expansion. As soon as Ricci and Pantoja settled down, they drew a stream of mandarins and literati visitors curious to see the exotic goods they brought to present to the emperor.",
+    questionText: "When did the Jesuits arrive in the imperial capital of Peking?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(January) 1601", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t2a-q2", topicId: "hist-em-eur-2", conceptId: "who-gave-jesuits-permission-settle-peking",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 2 A Q2",
+    stem: "Read the following extract from a book by a modern scholar about Matteo Ricci and the Jesuit Mission to China and answer the questions that follow.\n\nWith the Jesuits’ arrival at the imperial capital in late January 1601, a central goal of Matteo Ricci’s strategy for securing the mission had been accomplished. With a Jesuit ensconced at Peking - by order of the emperor himself - the reputation of the Society of Jesus in China would improve along with that of Ricci himself.\nIt is not easy to overstate the importance of Ricci’s acceptance at court. The fact that he quickly became a minor celebrity at the capital was crucial for the safety of the mission and for its future expansion. As soon as Ricci and Pantoja settled down, they drew a stream of mandarins and literati visitors curious to see the exotic goods they brought to present to the emperor.",
+    questionText: "Who gave the Jesuits permission to settle in Peking?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Emperor", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t2a-q3", topicId: "hist-em-eur-2", conceptId: "did-many-mandarins-literati-visit-jesuits",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 2 A Q3",
+    stem: "Read the following extract from a book by a modern scholar about Matteo Ricci and the Jesuit Mission to China and answer the questions that follow.\n\nWith the Jesuits’ arrival at the imperial capital in late January 1601, a central goal of Matteo Ricci’s strategy for securing the mission had been accomplished. With a Jesuit ensconced at Peking - by order of the emperor himself - the reputation of the Society of Jesus in China would improve along with that of Ricci himself.\nIt is not easy to overstate the importance of Ricci’s acceptance at court. The fact that he quickly became a minor celebrity at the capital was crucial for the safety of the mission and for its future expansion. As soon as Ricci and Pantoja settled down, they drew a stream of mandarins and literati visitors curious to see the exotic goods they brought to present to the emperor.",
+    questionText: "Why did many mandarins and literati visit the Jesuits?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To see the exotic goods (to be presented to the Emperor)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t2a-q4", topicId: "hist-em-eur-2", conceptId: "crucial-safety-jesuit-mission",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 2 A Q4",
+    stem: "Read the following extract from a book by a modern scholar about Matteo Ricci and the Jesuit Mission to China and answer the questions that follow.\n\nWith the Jesuits’ arrival at the imperial capital in late January 1601, a central goal of Matteo Ricci’s strategy for securing the mission had been accomplished. With a Jesuit ensconced at Peking - by order of the emperor himself - the reputation of the Society of Jesus in China would improve along with that of Ricci himself.\nIt is not easy to overstate the importance of Ricci’s acceptance at court. The fact that he quickly became a minor celebrity at the capital was crucial for the safety of the mission and for its future expansion. As soon as Ricci and Pantoja settled down, they drew a stream of mandarins and literati visitors curious to see the exotic goods they brought to present to the emperor.",
+    questionText: "What was crucial for the safety of the Jesuit mission?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ricci’s acceptance at court/ Ricci became a minor celebrity", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t2a-q5", topicId: "hist-em-eur-2", conceptId: "mention-matteo-ricci-achievements-during-his",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 2 A Q5",
+    stem: "Read the following extract from a book by a modern scholar about Matteo Ricci and the Jesuit Mission to China and answer the questions that follow.\n\nWith the Jesuits’ arrival at the imperial capital in late January 1601, a central goal of Matteo Ricci’s strategy for securing the mission had been accomplished. With a Jesuit ensconced at Peking - by order of the emperor himself - the reputation of the Society of Jesus in China would improve along with that of Ricci himself.\nIt is not easy to overstate the importance of Ricci’s acceptance at court. The fact that he quickly became a minor celebrity at the capital was crucial for the safety of the mission and for its future expansion. As soon as Ricci and Pantoja settled down, they drew a stream of mandarins and literati visitors curious to see the exotic goods they brought to present to the emperor.",
+    questionText: "Mention one of Matteo Ricci’s achievements during his time in China.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid achievement by Ricci", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t2b", topicId: "hist-em-eur-2", conceptId: "techniques-land-use-europe-1567-1609",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 2 B",
+    stem: "Religion and power: politics in the late 16th century, 1567-1609",
+    questionText: "Write a short paragraph on one of the following:\n1. Techniques of land use in Europe, 1567-1609.\n2. William the Silent.\n3. Elizabethan England.\n4. Tycho Brahe and astronomy.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t2c", topicId: "hist-em-eur-2", conceptId: "significance-spanish-armada-spain-did-port",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 2 C",
+    stem: "Religion and power: politics in the late 16th century, 1567-1609",
+    questionText: "Answer one of the following:\n1. What was the significance of the Spanish Armada for Spain?\n2. Why did the port of Antwerp decline in this period?\n3. What were the main aims of Catherine de Medici and did she achieve them?\n4. Why is the French writer, Michel de Montaigne, considered to be a key personality from this period?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t3a-q1", topicId: "hist-em-eur-3", conceptId: "charles-received-road-dover-london",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 3 A Q1",
+    stem: "This is an account of the return of Charles II to London from exile for his restoration as King of England. Read it and answer the questions that follow.\n\nOn Monday Charles went to Rochester. The next day, being 29 May 1660, and his birthday, he entered London; all the ways from Dover thither being so full of people, and acclamations, as if the whole kingdom had been gathered.\nAbout and above Greenwich the lord mayor and aldermen met him, with all such protestations of joy as can hardly be imagined. And the concourse was so great, that the king rode in a crowd from the bridge to Temple Bar; and he no sooner came to Whitehall, but the two houses of parliament solemnly cast themselves at his feet, with all vows of affection and fidelity to the world’s end.",
+    questionText: "How was Charles II received on the road from Dover to London?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Large crowds/ Acclamations", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t3a-q2", topicId: "hist-em-eur-3", conceptId: "who-met-charles-greenwich",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 3 A Q2",
+    stem: "This is an account of the return of Charles II to London from exile for his restoration as King of England. Read it and answer the questions that follow.\n\nOn Monday Charles went to Rochester. The next day, being 29 May 1660, and his birthday, he entered London; all the ways from Dover thither being so full of people, and acclamations, as if the whole kingdom had been gathered.\nAbout and above Greenwich the lord mayor and aldermen met him, with all such protestations of joy as can hardly be imagined. And the concourse was so great, that the king rode in a crowd from the bridge to Temple Bar; and he no sooner came to Whitehall, but the two houses of parliament solemnly cast themselves at his feet, with all vows of affection and fidelity to the world’s end.",
+    questionText: "Who met Charles at Greenwich?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The lord mayor", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "aldermen", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t3a-q3", topicId: "hist-em-eur-3", conceptId: "did-king-get-temple-bar",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 3 A Q3",
+    stem: "This is an account of the return of Charles II to London from exile for his restoration as King of England. Read it and answer the questions that follow.\n\nOn Monday Charles went to Rochester. The next day, being 29 May 1660, and his birthday, he entered London; all the ways from Dover thither being so full of people, and acclamations, as if the whole kingdom had been gathered.\nAbout and above Greenwich the lord mayor and aldermen met him, with all such protestations of joy as can hardly be imagined. And the concourse was so great, that the king rode in a crowd from the bridge to Temple Bar; and he no sooner came to Whitehall, but the two houses of parliament solemnly cast themselves at his feet, with all vows of affection and fidelity to the world’s end.",
+    questionText: "How did the king get to Temple Bar?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He rode in a crowd to Temple Bar", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t3a-q4", topicId: "hist-em-eur-3", conceptId: "happened-whitehall",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 3 A Q4",
+    stem: "This is an account of the return of Charles II to London from exile for his restoration as King of England. Read it and answer the questions that follow.\n\nOn Monday Charles went to Rochester. The next day, being 29 May 1660, and his birthday, he entered London; all the ways from Dover thither being so full of people, and acclamations, as if the whole kingdom had been gathered.\nAbout and above Greenwich the lord mayor and aldermen met him, with all such protestations of joy as can hardly be imagined. And the concourse was so great, that the king rode in a crowd from the bridge to Temple Bar; and he no sooner came to Whitehall, but the two houses of parliament solemnly cast themselves at his feet, with all vows of affection and fidelity to the world’s end.",
+    questionText: "What happened at Whitehall?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Members of both houses cast themselves at his feet", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "vows of affection and fidelity", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t3a-q5", topicId: "hist-em-eur-3", conceptId: "charles-exile-1651-1660",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 3 A Q5",
+    stem: "This is an account of the return of Charles II to London from exile for his restoration as King of England. Read it and answer the questions that follow.\n\nOn Monday Charles went to Rochester. The next day, being 29 May 1660, and his birthday, he entered London; all the ways from Dover thither being so full of people, and acclamations, as if the whole kingdom had been gathered.\nAbout and above Greenwich the lord mayor and aldermen met him, with all such protestations of joy as can hardly be imagined. And the concourse was so great, that the king rode in a crowd from the bridge to Temple Bar; and he no sooner came to Whitehall, but the two houses of parliament solemnly cast themselves at his feet, with all vows of affection and fidelity to the world’s end.",
+    questionText: "Why had Charles II been in exile, 1651-1660?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Statement of why Charles II had been in exile", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t3b", topicId: "hist-em-eur-3", conceptId: "revolt-catalans-witch-hunting-marie-medici",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 3 B",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "Write a short paragraph on one of the following:\n1. The revolt of the Catalans.\n2. Witch-hunting.\n3. Marie de’ Medici.\n4. The Thirty Years War.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t3c", topicId: "hist-em-eur-3", conceptId: "power-dutch-empire-asia-galileo-put",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 3 C",
+    stem: "The eclipse of Old Europe, 1609-1660",
+    questionText: "Answer one of the following:\n1. What power had the Dutch empire in Asia?\n2. Why was Galileo put on trial by the Inquisition and what was the outcome?\n3. How did Richelieu contribute to the rise of French absolutism?\n4. What was the contribution of Claudio Monteverdi and/or Peter Paul Rubens to baroque music and art?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,23] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t4a-q1", topicId: "hist-em-eur-4", conceptId: "tre-famous",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 4 A Q1",
+    stem: "Read the following account of André le Nôtre, the creator of French landscape gardening, who died in 1700 and answer the questions that follow.\n\nLe Nôtre died about this time. He had lived in perfect health for eighty-eight years and retained his faculties, excellent taste and capability until the last. He was celebrated for designing the fine gardens that adorn all France and have so lowered the reputation of Italian gardens that the most famous landscape architects of Italy now come to France to study and admire.\nLe Nôtre was honest, honourable and plain-spoken. Everybody loved and respected him, for he never stepped out of his place or forgot it and was always perfectly disinterested, working for private patrons as for the king himself, and with the same care and industry. His only thought was to aid nature and reveal true beauty at as low a cost as possible. There was an artlessness about him, a simple- hearted candour that was perfectly delightful.",
+    questionText: "What was le Nôtre famous for?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Landscape gardening", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t4a-q2", topicId: "hist-em-eur-4", conceptId: "european-country-famous-landscape-gardening-before",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 4 A Q2",
+    stem: "Read the following account of André le Nôtre, the creator of French landscape gardening, who died in 1700 and answer the questions that follow.\n\nLe Nôtre died about this time. He had lived in perfect health for eighty-eight years and retained his faculties, excellent taste and capability until the last. He was celebrated for designing the fine gardens that adorn all France and have so lowered the reputation of Italian gardens that the most famous landscape architects of Italy now come to France to study and admire.\nLe Nôtre was honest, honourable and plain-spoken. Everybody loved and respected him, for he never stepped out of his place or forgot it and was always perfectly disinterested, working for private patrons as for the king himself, and with the same care and industry. His only thought was to aid nature and reveal true beauty at as low a cost as possible. There was an artlessness about him, a simple- hearted candour that was perfectly delightful.",
+    questionText: "What European country had been famous for landscape gardening before le Nôtre?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Italy", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t4a-q3", topicId: "hist-em-eur-4", conceptId: "who-did-tre-work",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 4 A Q3",
+    stem: "Read the following account of André le Nôtre, the creator of French landscape gardening, who died in 1700 and answer the questions that follow.\n\nLe Nôtre died about this time. He had lived in perfect health for eighty-eight years and retained his faculties, excellent taste and capability until the last. He was celebrated for designing the fine gardens that adorn all France and have so lowered the reputation of Italian gardens that the most famous landscape architects of Italy now come to France to study and admire.\nLe Nôtre was honest, honourable and plain-spoken. Everybody loved and respected him, for he never stepped out of his place or forgot it and was always perfectly disinterested, working for private patrons as for the king himself, and with the same care and industry. His only thought was to aid nature and reveal true beauty at as low a cost as possible. There was an artlessness about him, a simple- hearted candour that was perfectly delightful.",
+    questionText: "Who did le Nôtre work for?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "For private patrons/ For the King", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t4a-q4", topicId: "hist-em-eur-4", conceptId: "aims-tre-his-landscape-gardening",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 4 A Q4",
+    stem: "Read the following account of André le Nôtre, the creator of French landscape gardening, who died in 1700 and answer the questions that follow.\n\nLe Nôtre died about this time. He had lived in perfect health for eighty-eight years and retained his faculties, excellent taste and capability until the last. He was celebrated for designing the fine gardens that adorn all France and have so lowered the reputation of Italian gardens that the most famous landscape architects of Italy now come to France to study and admire.\nLe Nôtre was honest, honourable and plain-spoken. Everybody loved and respected him, for he never stepped out of his place or forgot it and was always perfectly disinterested, working for private patrons as for the king himself, and with the same care and industry. His only thought was to aid nature and reveal true beauty at as low a cost as possible. There was an artlessness about him, a simple- hearted candour that was perfectly delightful.",
+    questionText: "What were the aims of le Nôtre in his landscape gardening?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To aid nature/ To reveal true beauty (at as low cost as possible)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t4a-q5", topicId: "hist-em-eur-4", conceptId: "famous-garden-his-design",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 4 A Q5",
+    stem: "Read the following account of André le Nôtre, the creator of French landscape gardening, who died in 1700 and answer the questions that follow.\n\nLe Nôtre died about this time. He had lived in perfect health for eighty-eight years and retained his faculties, excellent taste and capability until the last. He was celebrated for designing the fine gardens that adorn all France and have so lowered the reputation of Italian gardens that the most famous landscape architects of Italy now come to France to study and admire.\nLe Nôtre was honest, honourable and plain-spoken. Everybody loved and respected him, for he never stepped out of his place or forgot it and was always perfectly disinterested, working for private patrons as for the king himself, and with the same care and industry. His only thought was to aid nature and reveal true beauty at as low a cost as possible. There was an artlessness about him, a simple- hearted candour that was perfectly delightful.",
+    questionText: "Name one famous garden of his design.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE Le Nôtre garden", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t4b", topicId: "hist-em-eur-4", conceptId: "peter-great-russia-fall-stuart-monarchy",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 4 B",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "Write a short paragraph on one of the following:\n1. Peter the Great of Russia.\n2. The fall of the Stuart monarchy.\n3. The expansion of cities in Europe, 1660-1715.\n4. Gottfried Wilhelm Leibnitz.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t4c", topicId: "hist-em-eur-4", conceptId: "where-did-english-east-india-company",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 4 C",
+    stem: "Europe in the age of Louis XIV, 1660-1715",
+    questionText: "Answer one of the following:\n1. Where did English East India Company operate and what was its main business?\n2. Who were the Streltsy and what were their aims?\n3. What were the highlights of the naval career of Sir Henry Morgan?\n4. How much influence did Madame de Maintenon have over Louis XIV and his royal court?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t5a-q1", topicId: "hist-em-eur-5", conceptId: "many-died-result-lisbon-earthquake",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 5 A Q1",
+    stem: "Lisbon was destroyed by an earthquake on All Saints’ Day, 1 November 1751, and about one hundred thousand people died. The following is an extract from a letter written by Voltaire to a friend. He is very shocked and he questions the assumptions of the time. Read it and answer the questions that follow.\n\nThis is indeed a cruel piece of natural philosophy! We shall find it difficult to discover how the laws of movement operate in such fearful disasters in the best of all possible worlds – where a hundred thousand ants, our neighbours, are crushed in a second on ant-heaps, half dying undoubtedly in inexpressible agonies, beneath debris from which it was impossible to extricate them, families all over Europe reduced to beggary, and the fortunes of a hundred merchants swallowed up in the ruins of Lisbon.\nWhat a game of chance human life is! What will the preachers say – especially if the Palace of the Inquisition is left standing! That ought to teach men not to persecute men: for while a few sanctimonious humbugs are burning a few fanatics, the earth opens and swallows up all alike.",
+    questionText: "How many died as a result of the Lisbon earthquake?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "100,000", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t5a-q2", topicId: "hist-em-eur-5", conceptId: "not-possible-save-more-people",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 5 A Q2",
+    stem: "Lisbon was destroyed by an earthquake on All Saints’ Day, 1 November 1751, and about one hundred thousand people died. The following is an extract from a letter written by Voltaire to a friend. He is very shocked and he questions the assumptions of the time. Read it and answer the questions that follow.\n\nThis is indeed a cruel piece of natural philosophy! We shall find it difficult to discover how the laws of movement operate in such fearful disasters in the best of all possible worlds – where a hundred thousand ants, our neighbours, are crushed in a second on ant-heaps, half dying undoubtedly in inexpressible agonies, beneath debris from which it was impossible to extricate them, families all over Europe reduced to beggary, and the fortunes of a hundred merchants swallowed up in the ruins of Lisbon.\nWhat a game of chance human life is! What will the preachers say – especially if the Palace of the Inquisition is left standing! That ought to teach men not to persecute men: for while a few sanctimonious humbugs are burning a few fanatics, the earth opens and swallows up all alike.",
+    questionText: "Why was it not possible to save more people?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "All happened so suddenly “in a second”/ Impossible to extricate victims from under the debris", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t5a-q3", topicId: "hist-em-eur-5", conceptId: "many-merchants-lost-fortunes-result-earthquake",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 5 A Q3",
+    stem: "Lisbon was destroyed by an earthquake on All Saints’ Day, 1 November 1751, and about one hundred thousand people died. The following is an extract from a letter written by Voltaire to a friend. He is very shocked and he questions the assumptions of the time. Read it and answer the questions that follow.\n\nThis is indeed a cruel piece of natural philosophy! We shall find it difficult to discover how the laws of movement operate in such fearful disasters in the best of all possible worlds – where a hundred thousand ants, our neighbours, are crushed in a second on ant-heaps, half dying undoubtedly in inexpressible agonies, beneath debris from which it was impossible to extricate them, families all over Europe reduced to beggary, and the fortunes of a hundred merchants swallowed up in the ruins of Lisbon.\nWhat a game of chance human life is! What will the preachers say – especially if the Palace of the Inquisition is left standing! That ought to teach men not to persecute men: for while a few sanctimonious humbugs are burning a few fanatics, the earth opens and swallows up all alike.",
+    questionText: "How many merchants lost fortunes as a result of the earthquake?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A hundred", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t5a-q4", topicId: "hist-em-eur-5", conceptId: "will-difficult-voltaire",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 5 A Q4",
+    stem: "Lisbon was destroyed by an earthquake on All Saints’ Day, 1 November 1751, and about one hundred thousand people died. The following is an extract from a letter written by Voltaire to a friend. He is very shocked and he questions the assumptions of the time. Read it and answer the questions that follow.\n\nThis is indeed a cruel piece of natural philosophy! We shall find it difficult to discover how the laws of movement operate in such fearful disasters in the best of all possible worlds – where a hundred thousand ants, our neighbours, are crushed in a second on ant-heaps, half dying undoubtedly in inexpressible agonies, beneath debris from which it was impossible to extricate them, families all over Europe reduced to beggary, and the fortunes of a hundred merchants swallowed up in the ruins of Lisbon.\nWhat a game of chance human life is! What will the preachers say – especially if the Palace of the Inquisition is left standing! That ought to teach men not to persecute men: for while a few sanctimonious humbugs are burning a few fanatics, the earth opens and swallows up all alike.",
+    questionText: "What will be difficult to explain, according to Voltaire?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It will be hard to explain if the Palace of the Inquisition is left standing", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t5a-q5", topicId: "hist-em-eur-5", conceptId: "mention-contribution-voltaire-european-enlightenment",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 5 A Q5",
+    stem: "Lisbon was destroyed by an earthquake on All Saints’ Day, 1 November 1751, and about one hundred thousand people died. The following is an extract from a letter written by Voltaire to a friend. He is very shocked and he questions the assumptions of the time. Read it and answer the questions that follow.\n\nThis is indeed a cruel piece of natural philosophy! We shall find it difficult to discover how the laws of movement operate in such fearful disasters in the best of all possible worlds – where a hundred thousand ants, our neighbours, are crushed in a second on ant-heaps, half dying undoubtedly in inexpressible agonies, beneath debris from which it was impossible to extricate them, families all over Europe reduced to beggary, and the fortunes of a hundred merchants swallowed up in the ruins of Lisbon.\nWhat a game of chance human life is! What will the preachers say – especially if the Palace of the Inquisition is left standing! That ought to teach men not to persecute men: for while a few sanctimonious humbugs are burning a few fanatics, the earth opens and swallows up all alike.",
+    questionText: "Mention one contribution by Voltaire to the European Enlightenment.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any ONE valid contribution by Voltaire", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t5b", topicId: "hist-em-eur-5", conceptId: "catherine-great-mercantilism-laissez-faire-benjamin",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 5 B",
+    stem: "Establishing Empires, 1715-1775",
+    questionText: "Write a short paragraph on one of the following:\n1. Catherine the Great.\n2. Mercantilism and laissez-faire.\n3. Benjamin Franklin.\n4. Road and canal building.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t5c", topicId: "hist-em-eur-5", conceptId: "significance-encyclop-die-european-culture-did",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 5 C",
+    stem: "Establishing Empires, 1715-1775",
+    questionText: "Answer one of the following:\n1. What was the significance of the Encyclopédie in European culture?\n2. How did the international trade in sugar and slaves impact on the West Indies slave plantations?\n3. What were the origins of the American Revolution?\n4. What were the aims and achievements of Frederick the Great of Prussia or of Maria Theresa of Austria?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t6a-q1", topicId: "hist-em-eur-6", conceptId: "whom-did-marat-address-pamphlet",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 6 A Q1",
+    stem: "Read the following extract from a pamphlet by the radical journalist, Jean-Paul Marat, warning against enemies of the revolution, and answer the questions that follow.\n\nCitizens of every age and every station! The measures taken by the National Assembly are not the kind to save you from destruction. It is all up with you, for always, if you do not run to arms, if you do not recapture that heroic valour which, on 14 July and 5 October, twice saved France.\nBring back the King to within your walls. Keep him under careful guard, and let him answer to you for what happens. Lock up the Austrian woman [Queen Marie Antoinette] and her brother-in-law so that they may no longer conspire. Seize all the ministers and their henchmen and put them in irons Hurry, hurry, if there is still time, or soon countless enemy legions will pounce upon you. Soon you will see the privileged orders rise again.",
+    questionText: "To whom did Marat address this pamphlet?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "All citizens", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t6a-q2", topicId: "hist-em-eur-6", conceptId: "members-royal-family-does-marat-urge",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 6 A Q2",
+    stem: "Read the following extract from a pamphlet by the radical journalist, Jean-Paul Marat, warning against enemies of the revolution, and answer the questions that follow.\n\nCitizens of every age and every station! The measures taken by the National Assembly are not the kind to save you from destruction. It is all up with you, for always, if you do not run to arms, if you do not recapture that heroic valour which, on 14 July and 5 October, twice saved France.\nBring back the King to within your walls. Keep him under careful guard, and let him answer to you for what happens. Lock up the Austrian woman [Queen Marie Antoinette] and her brother-in-law so that they may no longer conspire. Seize all the ministers and their henchmen and put them in irons Hurry, hurry, if there is still time, or soon countless enemy legions will pounce upon you. Soon you will see the privileged orders rise again.",
+    questionText: "What members of the royal family does Marat urge the people to seize and imprison?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "King", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Queen", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "Her brother-n-law", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t6a-q3", topicId: "hist-em-eur-6", conceptId: "other-leaders-does-marat-urge-people",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 6 A Q3",
+    stem: "Read the following extract from a pamphlet by the radical journalist, Jean-Paul Marat, warning against enemies of the revolution, and answer the questions that follow.\n\nCitizens of every age and every station! The measures taken by the National Assembly are not the kind to save you from destruction. It is all up with you, for always, if you do not run to arms, if you do not recapture that heroic valour which, on 14 July and 5 October, twice saved France.\nBring back the King to within your walls. Keep him under careful guard, and let him answer to you for what happens. Lock up the Austrian woman [Queen Marie Antoinette] and her brother-in-law so that they may no longer conspire. Seize all the ministers and their henchmen and put them in irons Hurry, hurry, if there is still time, or soon countless enemy legions will pounce upon you. Soon you will see the privileged orders rise again.",
+    questionText: "What other leaders does Marat urge the people to seize and imprison?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "All the ministers (and their henchmen)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t6a-q4", topicId: "hist-em-eur-6", conceptId: "does-warn-will-happen-when-tries",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 6 A Q4",
+    stem: "Read the following extract from a pamphlet by the radical journalist, Jean-Paul Marat, warning against enemies of the revolution, and answer the questions that follow.\n\nCitizens of every age and every station! The measures taken by the National Assembly are not the kind to save you from destruction. It is all up with you, for always, if you do not run to arms, if you do not recapture that heroic valour which, on 14 July and 5 October, twice saved France.\nBring back the King to within your walls. Keep him under careful guard, and let him answer to you for what happens. Lock up the Austrian woman [Queen Marie Antoinette] and her brother-in-law so that they may no longer conspire. Seize all the ministers and their henchmen and put them in irons Hurry, hurry, if there is still time, or soon countless enemy legions will pounce upon you. Soon you will see the privileged orders rise again.",
+    questionText: "What does he warn will happen when he tries to frighten the people into taking action?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The enemy legions will pounce on the people/ The privileged orders will rise again", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t6a-q5", topicId: "hist-em-eur-6", conceptId: "reason-outbreak-french-revolution-1789",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 6 A Q5",
+    stem: "Read the following extract from a pamphlet by the radical journalist, Jean-Paul Marat, warning against enemies of the revolution, and answer the questions that follow.\n\nCitizens of every age and every station! The measures taken by the National Assembly are not the kind to save you from destruction. It is all up with you, for always, if you do not run to arms, if you do not recapture that heroic valour which, on 14 July and 5 October, twice saved France.\nBring back the King to within your walls. Keep him under careful guard, and let him answer to you for what happens. Lock up the Austrian woman [Queen Marie Antoinette] and her brother-in-law so that they may no longer conspire. Seize all the ministers and their henchmen and put them in irons Hurry, hurry, if there is still time, or soon countless enemy legions will pounce upon you. Soon you will see the privileged orders rise again.",
+    questionText: "Give one reason for the outbreak of the French Revolution in 1789.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid cause of the French Revolution", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2015 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t6b", topicId: "hist-em-eur-6", conceptId: "reasons-population-growth-europe-1775-1815",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 6 B",
+    stem: "Empires in Revolution, 1775-1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Reasons for population growth in Europe, 1775-1815.\n2. Tom Paine.\n3. Madame de Stael.\n4. The abolition of the slave trade.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2015 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2015-ol-em-s3t6c", topicId: "hist-em-eur-6", conceptId: "impact-france-civil-constitution-clergy-did",
+    section: "3", questionRef: "2015 OL Early Modern Section 3 Topic 6 C",
+    stem: "Empires in Revolution, 1775-1815",
+    questionText: "Answer one of the following:\n1. What was the impact on France of the Civil Constitution of the Clergy?\n2. How did the Industrial Revolution change Manchester?\n3. What was the impact of Napoleon on Europe?\n4. What was the contribution of Mary Wollstonecraft to European thought?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [19,20,24] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "ordinary",
     paperFileid: "LC004GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2016 Ordinary Level — © State Examinations Commission.",

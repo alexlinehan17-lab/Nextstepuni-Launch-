@@ -138,6 +138,11 @@ MISPRINTS = {
     # marks" under the topic. Unread, the part's four questions ran on as
     # part B's, and the census lost the ask.
     (2018, 'ol', 'lm'): {'(40 marks)': 'C (40 marks)'},
+    # 2015 Ordinary Early Modern prints two part B heads without their letter:
+    # "30 marks)" over Europe Topic 3 B (page 11) and "(30 marks)" over Europe
+    # Topic 6 B (page 14), both checked on the rendered page. Every other
+    # topic prints "B (30 marks)".
+    (2015, 'ol', 'em'): {'30 marks)': 'B (30 marks)', '(30 marks)': 'B (30 marks)'},
 }
 EXTRA = re.compile(r'^Answer the questions below if you are following the '
                    r'Alternative Instructions', re.I)
