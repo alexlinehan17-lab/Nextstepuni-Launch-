@@ -4531,5 +4531,225 @@
     },
     "lettersVisible": [],
     "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-HL-scheme-p08-q5-ticks.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2018 HL Section A Q5",
+    "description": "The marking scheme’s completed table: four statements with TRUE and FALSE columns. Ticks: double counting could occur when activity is measured by the expenditure method, FALSE; exports are an injection into the circular flow, TRUE; GDP includes a provision for depreciation, FALSE; primary teacher salaries are transfer payments, FALSE.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2018/LC034ALP000EV.pdf",
+      "page": 8,
+      "rectPoints": [
+        65,
+        100,
+        500,
+        282
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-HL-scheme-p11-q1aii-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2018 HL Section B Q1(a)(ii)",
+    "description": "The marking scheme’s diagram: Price against Quantity, a rising supply line S and a falling demand line D crossing at the equilibrium price PE. At the higher price P1 a horizontal line marks the surplus between QD on D and QS on S, with a downward arrow from the surplus towards PE. Each of the nine labels carries a raised 1, its mark.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2018/LC034ALP000EV.pdf",
+      "page": 11,
+      "rectPoints": [
+        125,
+        330,
+        490,
+        575
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-HL-scheme-p12-q1bi-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2018 HL Section B Q1(b)(i)",
+    "description": "The marking scheme’s diagram: Price (€) from 20 to 100 against Quantity (units) from 0 to 800. A vertical supply curve S/C at 400 and a falling demand curve D/C through five plotted points, (0, 100), (200, 80), (400, 60), (600, 40) and (800, 20), meet at PE 60 and QE 400. The triangle above 60 and left of 400 is shaded as Consumer Surplus, and the rectangle below 60 and left of 400 as Total Revenue.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2018/LC034ALP000EV.pdf",
+      "page": 12,
+      "rectPoints": [
+        85,
+        205,
+        470,
+        520
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-HL-scheme-p16-q2bi-diagram.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2018 HL Section B Q2(b)(i)",
+    "description": "The marking scheme’s diagram: P against Q, a demand curve kinked at B (A to B shallow, B to C steep, D = AR) and a marginal revenue line with a vertical gap between D and E below the kink. A U-shaped AC curve touches the demand curve near G, and the MC curve rises through the gap. Dashed lines from B meet the price axis at P1 and the quantity axis at Q1.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2018/LC034ALP000EV.pdf",
+      "page": 16,
+      "rectPoints": [
+        90,
+        155,
+        480,
+        445
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-HL-scheme-p18-q3a-graph.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2018 HL Section B Q3(a)(ii)",
+    "description": "The marking scheme’s graph, MC / MR: Costs/Revenue (€) from 0 to 60 against output from 1 to 7. MC passes through 20, 10, 15, 20, 30, 45 and 50 at outputs 1 to 7; MR is a horizontal line at 30. They cross at output 5, marked with an arrow down to the output axis.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2018/LC034ALP000EV.pdf",
+      "page": 18,
+      "rectPoints": [
+        40,
+        418,
+        505,
+        690
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-HL-scheme-p44-q8aiv-working.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": true,
+    "questionRef": "2018 HL Section B Q8(a)(iv)",
+    "description": "The marking scheme’s workings set as fractions. MPC = change in C over change in Y = 20,000 over 50,000 = 0.4; MPM = 10,000 over 50,000 = 0.2; MPS = 1 – MPC = 0.6. Method 1: 1 over MPS + MPM, 1 over 0.6 + 0.2, 1 over 0.8, 1.25. Method 2: 1 over 1 – (MPC – MPM), 1 over 1 – (0.4 – 0.2), 1 over 0.8, 1.25. Also: MUL = increase in income over increase in injections, 50,000 over 10,000 + 30,000, 1.25.",
+    "source": {
+      "file": "paper-trail-corpus/markingschemes/2018/LC034ALP000EV.pdf",
+      "page": 44,
+      "rectPoints": [
+        70,
+        525,
+        500,
+        765
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-HL-paper-p03-q5-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2018 HL Section A Q5",
+    "description": "A table of four statements with blank TRUE and FALSE columns: ‘Double counting’ could occur when economic activity is measured using the expenditure method; Exports represent an injection into the circular flow of income; Gross Domestic Product (GDP) includes a provision for depreciation; Primary school teacher salaries are categorised as transfer payments in Ireland.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2018/LC034ALP000EV.pdf",
+      "page": 3,
+      "rectPoints": [
+        85,
+        322,
+        545,
+        460
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-HL-paper-p06-q1b-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2018 HL Section B Q1(b)",
+    "description": "A table: Price (€) €100, €80, €60, €40, €20; Quantity Demanded 0, 200, 400, 600, 800; Quantity Supplied 400 at every price.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2018/LC034ALP000EV.pdf",
+      "page": 6,
+      "rectPoints": [
+        133,
+        336,
+        540,
+        440
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-HL-paper-p07-q3a-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2018 HL Section B Q3(a)",
+    "description": "A table: Output (units) 0 to 7; Total Cost (€) 20, 40, 50, 65, 85, 115, 160, 210.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2018/LC034ALP000EV.pdf",
+      "page": 7,
+      "rectPoints": [
+        124,
+        424,
+        520,
+        466
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
+  },
+  {
+    "file": "economics-2018-HL-paper-p10-q8a-table.png",
+    "kind": "figure",
+    "truncated": false,
+    "drawingComplete": true,
+    "solution": false,
+    "questionRef": "2018 HL Section B Q8(a)",
+    "description": "A table with columns Y, C, I, X and M. 2016: ?, 80,000, 20,000, 90,000, 90,000. 2017: 150,000, 100,000, 30,000, 120,000, ?.",
+    "source": {
+      "file": "paper-trail-corpus/exampapers/2018/LC034ALP000EV.pdf",
+      "page": 10,
+      "rectPoints": [
+        122,
+        97,
+        495,
+        152
+      ],
+      "scale": 4
+    },
+    "lettersVisible": [],
+    "labelMeanings": []
   }
 ]

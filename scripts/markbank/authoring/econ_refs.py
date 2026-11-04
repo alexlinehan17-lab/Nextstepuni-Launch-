@@ -128,6 +128,12 @@ HAND_CHECKED = {
     'econ-2020-hl-sa-q6-i',           # 2020 HL p4: "(i) Define the term fiscal policy:" (five words)
     'econ-2020-hl-sb-q3-a-i',         # 2020 HL p8: "(i) Define the underlined term." (four words)
     'econ-2020-hl-sb-q4-c-i',         # 2020 HL p9: "(i) Define internal economies of scale." (five words)
+    'econ-2018-hl-sb-q4-a-i',         # 2018 HL p8: "(i) Define the term labour productivity." (five words)
+    'econ-2018-hl-sb-q5-b-i',         # 2018 HL p8: "(i) Explain the term indirect tax." (five words)
+    'econ-2018-hl-sb-q5-c-i',         # 2018 HL p8: "(i) Define the term budget deficit." (five words)
+    'econ-2018-hl-sb-q8-a-iv',        # 2018 HL p10: "(iv) the size of the Multiplier." (four words)
+    'econ-2018-hl-sa-q9-a',           # 2018 HL p5: "(a) Define the term price discrimination." (five words)
+    'econ-2018-hl-sb-q3-a-i',         # 2018 HL p7: "(i) Define the term marginal cost." (five words)
 }
 
 

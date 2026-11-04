@@ -1246,6 +1246,26 @@ const economicsAdditionIds = new Set([
   'econ-2020-hl-sb-q8-a', 'econ-2020-hl-sb-q8-b-i', 'econ-2020-hl-sb-q8-b-ii', 'econ-2020-hl-sb-q8-b-iii',
   'econ-2020-hl-sb-q8-b-iv', 'econ-2020-hl-sb-q8-b-v', 'econ-2020-hl-sb-q8-c-i', 'econ-2020-hl-sb-q8-c-ii',
   'econ-2020-hl-sb-q8-c-iii',
+  // 2018 Higher (old syllabus, the paper's first cards, 2026-11-04): 72, none replacing a frozen ID
+  'econ-2018-hl-sa-q1-a', 'econ-2018-hl-sa-q1-b', 'econ-2018-hl-sa-q2', 'econ-2018-hl-sa-q3',
+  'econ-2018-hl-sa-q4-a', 'econ-2018-hl-sa-q4-b', 'econ-2018-hl-sa-q5', 'econ-2018-hl-sa-q6',
+  'econ-2018-hl-sa-q7-a', 'econ-2018-hl-sa-q7-b', 'econ-2018-hl-sa-q8', 'econ-2018-hl-sa-q9-a',
+  'econ-2018-hl-sa-q9-b', 'econ-2018-hl-sb-q1-a-i', 'econ-2018-hl-sb-q1-a-ii', 'econ-2018-hl-sb-q1-b-i',
+  'econ-2018-hl-sb-q1-b-ii', 'econ-2018-hl-sb-q1-b-iii', 'econ-2018-hl-sb-q1-b-iv', 'econ-2018-hl-sb-q1-c-i',
+  'econ-2018-hl-sb-q1-c-ii', 'econ-2018-hl-sb-q2-a-i', 'econ-2018-hl-sb-q2-a-ii', 'econ-2018-hl-sb-q2-b-i',
+  'econ-2018-hl-sb-q2-b-ii', 'econ-2018-hl-sb-q2-c-i', 'econ-2018-hl-sb-q2-c-ii', 'econ-2018-hl-sb-q3-a-i',
+  'econ-2018-hl-sb-q3-a-ii', 'econ-2018-hl-sb-q3-a-iii', 'econ-2018-hl-sb-q3-a-iv', 'econ-2018-hl-sb-q3-b-i',
+  'econ-2018-hl-sb-q3-b-ii', 'econ-2018-hl-sb-q3-b-iii', 'econ-2018-hl-sb-q3-c-i', 'econ-2018-hl-sb-q3-c-ii',
+  'econ-2018-hl-sb-q4-a-i', 'econ-2018-hl-sb-q4-a-ii', 'econ-2018-hl-sb-q4-b-i', 'econ-2018-hl-sb-q4-b-ii',
+  'econ-2018-hl-sb-q4-b-iii', 'econ-2018-hl-sb-q4-c-i', 'econ-2018-hl-sb-q4-c-ii', 'econ-2018-hl-sb-q4-c-iii',
+  'econ-2018-hl-sb-q5-a-i', 'econ-2018-hl-sb-q5-a-ii-monetary', 'econ-2018-hl-sb-q5-a-ii-fiscal',
+  'econ-2018-hl-sb-q5-b-i', 'econ-2018-hl-sb-q5-b-ii', 'econ-2018-hl-sb-q5-b-iii', 'econ-2018-hl-sb-q5-c-i',
+  'econ-2018-hl-sb-q5-c-ii', 'econ-2018-hl-sb-q5-c-iii-no', 'econ-2018-hl-sb-q5-c-iii-yes',
+  'econ-2018-hl-sb-q6-a-i', 'econ-2018-hl-sb-q6-a-ii', 'econ-2018-hl-sb-q6-b', 'econ-2018-hl-sb-q6-c',
+  'econ-2018-hl-sb-q7-a-i', 'econ-2018-hl-sb-q7-a-ii', 'econ-2018-hl-sb-q7-a-iii', 'econ-2018-hl-sb-q7-a-iv',
+  'econ-2018-hl-sb-q7-b', 'econ-2018-hl-sb-q7-c-i', 'econ-2018-hl-sb-q7-c-ii', 'econ-2018-hl-sb-q8-a-i',
+  'econ-2018-hl-sb-q8-a-ii', 'econ-2018-hl-sb-q8-a-iii', 'econ-2018-hl-sb-q8-a-iv', 'econ-2018-hl-sb-q8-b',
+  'econ-2018-hl-sb-q8-c-i', 'econ-2018-hl-sb-q8-c-ii',
 ]);
 const economicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('econ-'));
 /* Agricultural Science keeps its 869 pre-audit IDs frozen (438 Higher + 431
@@ -1558,8 +1578,8 @@ describe('Mark Bank card preservation', () => {
     const higher = new Map(ECON_HIGHER.map(card => [card.id, card]));
     const ordinary = new Map(ECON_ORDINARY.map(card => [card.id, card]));
     // 2026-11-04: + 70 for 2019 Higher, the first old-syllabus paper carded (192 -> 262);
-    // + 66 for 2019 Ordinary (262 -> 328); + 75 for 2020 Higher (328 -> 403).
-    expect(economicsAdditionIds.size).toBe(403);
+    // + 66 for 2019 Ordinary (262 -> 328); + 75 for 2020 Higher (328 -> 403); + 72 for 2018 Higher (403 -> 475).
+    expect(economicsAdditionIds.size).toBe(475);
     expect(economicsAliasIds).toHaveLength(36);
     for (const id of economicsAdditionIds) {
       const deck = id.includes('-hl-') ? higher : ordinary;
@@ -1576,7 +1596,7 @@ describe('Mark Bank card preservation', () => {
     }
     const additions = (level: string) => [...economicsAdditionIds].filter(id => id.includes(level)).length;
     const aliased = (level: string) => economicsAliasIds.filter(id => id.includes(level)).length;
-    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([255, 24, 148, 12]);
+    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([327, 24, 148, 12]);
     expect(ECON_HIGHER).toHaveLength(383 - aliased('-hl-') + additions('-hl-'));
     expect(ECON_ORDINARY).toHaveLength(314 - aliased('-ol-') + additions('-ol-'));
   });

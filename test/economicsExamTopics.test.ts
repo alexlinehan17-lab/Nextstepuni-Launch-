@@ -147,12 +147,18 @@ describe('Economics exam-topic registry', () => {
       // marginal revenue product of labour), Section B Q8 under economic
       // concepts (national income terms), and four topical-questions headings
       // (Section A Q5, Q7 and Q8 and Section B Q1(c)), a heading no syllabus
-      // node falls back to.
-      matchedAssociations: 802,
-      referenceAnomalyAssociations: 101,
+      // node falls back to. The 2018 Higher review added seven: Section A Q4
+      // under economic concepts (diminishing returns are costs), Q7 under
+      // globalisation (income inequality), Section B Q6(a)-(b) under the
+      // financial sector (migration and the single market), Q7(a) under
+      // topical questions, Q8(b) under government intervention and under
+      // growth and development (FDI is globalisation), and Q8(c) under
+      // government intervention (the environment is sustainability).
+      matchedAssociations: 795,
+      referenceAnomalyAssociations: 108,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 720,
+      matchedQuestionTopicLinks: 714,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

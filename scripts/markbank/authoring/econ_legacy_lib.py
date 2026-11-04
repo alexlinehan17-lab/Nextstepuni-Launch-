@@ -21,7 +21,7 @@ from econ_lib import JUNK, as_option, defurnish, tidy
 
 BLOCKS_MARK = '<!-- pdf-block-order: appended by append-scheme-blocks.py -->'
 UNDERSCORES = re.compile(r'\s*_{2,}\s*')
-TAIL = re.compile(r'(?:(?:\s+\d(?:st|nd|rd|th)\s*:\s*\d{1,2}\b)+|\s+(?:\d{1,2}\.|\((?:i{1,3}|iv|vi{0,3}|ix|x)\)|OR|or|graded|\+|&|(?:Q\s+)?Possible responses\s+Max(?:\s+Mark)?)|\s*•)\s*$')
+TAIL = re.compile(r'(?:(?:\s+\d(?:st|nd|rd|th)\s*:\s*\d{1,2}\b)+|\s+(?:\d{1,2}\.|\((?:i{1,3}|iv|vi{0,3}|ix|x)\)|OR|or|graded|\+|&|(?:Q\s+)?Possible responses\s+Max(?:\s+Mark)?|Q\s+Possible responses(?:\s+\d{1,2})?)|\s*•)\s*$')
 # The marks column's "graded" printed at the END of a line follows the slice
 # rather than splitting it; cut there, the slice is still contiguous.
 TRAILING_GRADED = re.compile(r'\s+(?:graded|&)\s*$')
@@ -30,7 +30,10 @@ TRAILING_GRADED = re.compile(r'\s+(?:graded|&)\s*$')
 # U+02C2 and U+02C3, which the app's font sets as small raised marks a student
 # can misread ("PED ˂1"). The page prints the signs, so the card shows them. The
 # provenance gate's normalise() ignores both forms, so the slice still traces.
-PRINTED_SIGNS = str.maketrans({'\u02c2': '<', '\u02c3': '>'})
+PRINTED_SIGNS = str.maketrans({'\u02c2': '<', '\u02c3': '>',
+                               # The 2018 HL scheme's arrowhead sub-bullet (➢) is a private-use
+                               # glyph the build's glyph map does not cover; set as the bullet it is.
+                               '\uf0d8': '•'})
 
 
 class Old(Sheet):
@@ -124,12 +127,19 @@ class Old(Sheet):
 
         From the primary rendering, unless the marks column runs through one of
         them ("graded" inside it, not merely after it), and then from the block
-        order, which holds every paragraph whole.
+        order, which holds every paragraph whole. source='cells' slices the
+        table-cell rendering instead.
         """
         if source in ('auto', 'primary'):
             opts = self._cut(tidy(defurnish(self.chunk(start, end, occ))), firsts, start)
             if source == 'primary' or not any(re.search(r'\bgraded\b', o) for o in opts):
                 return [self.traced(o) for o in opts]
+        if source == 'cells':
+            # The table-cell rendering holds a response cell whole, clear of the
+            # marks column's notes ("Two points in favour and two against"),
+            # which both other renderings weave into the bullets beside them.
+            opts = self._cut(tidy(defurnish(self._flat_raw(self.cell_flat, start, end.strip(), occ))), firsts, start)
+            return [self.traced(o) for o in opts]
         opts = self._cut(tidy(defurnish(self._bo_raw(start, end.strip(), occ))), firsts, start)
         return [self.traced(o) for o in opts]
 

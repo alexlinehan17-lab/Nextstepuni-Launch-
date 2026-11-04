@@ -18,11 +18,11 @@
     "referenceReportedAssociations": 1851,
     "referenceOfficialAssociations": 1120,
     "referenceMockAssociations": 731,
-    "matchedAssociations": 802,
+    "matchedAssociations": 795,
     "sourceBlockedAssociations": 217,
-    "referenceAnomalyAssociations": 101,
+    "referenceAnomalyAssociations": 108,
     "matchedLogicalCards": 517,
-    "matchedQuestionTopicLinks": 720,
+    "matchedQuestionTopicLinks": 714,
     "retainedLocalLogicalCards": 32,
     "localPaperVariants": 66,
     "localPhysicalMappings": 1098,
@@ -564,7 +564,7 @@
       "section": "A",
       "question": 4,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -572,7 +572,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "4"
-      }
+      },
+      "reason": "Reviewed SEC source: The law of diminishing marginal returns is Costs of Production, Revenue & Profit (1-5). a 10 the law; b 6 (2 + 4) printed beside the answer and its reason together, without saying which earns which: questionTotal, unpriced rows."
     },
     {
       "topicId": "economics-higher-11-economic-concepts",
@@ -3396,7 +3397,7 @@
       "section": "B",
       "question": 8,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -3404,7 +3405,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "B8"
-      }
+      },
+      "reason": "Reviewed SEC source: The national income identity, net exports, savings and the multiplier are National Income (3-0); FDI is Globalisation (4-1); protecting the environment and carbon emissions are Sustainability (0-2). Seven tasks totalling 75. a(i) 5 100,000; a(ii) 6 net exports 20,000; a(iii) 3 savings 50,000; a(iv) 6 the multiplier 1.25 (workings printed as fractions; hidden crop). b 7 + 6 + 6 + 6, two benefits and two challenges (1 @ 7 and 3 @ 6), not tied to a side: one menu claimed at 7, 6, 6, 6. c(i) 3 x 5 (2 + 3) from five; c(ii) 3 @ 5 (2 + 3), one measure each for individuals, firms and the government: three heading rows."
     },
     {
       "topicId": "economics-higher-24-government-intervention",
@@ -3415,7 +3417,7 @@
       "section": "B",
       "question": 8,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -3423,7 +3425,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "B8"
-      }
+      },
+      "reason": "Reviewed SEC source: The national income identity, net exports, savings and the multiplier are National Income (3-0); FDI is Globalisation (4-1); protecting the environment and carbon emissions are Sustainability (0-2). Seven tasks totalling 75. a(i) 5 100,000; a(ii) 6 net exports 20,000; a(iii) 3 savings 50,000; a(iv) 6 the multiplier 1.25 (workings printed as fractions; hidden crop). b 7 + 6 + 6 + 6, two benefits and two challenges (1 @ 7 and 3 @ 6), not tied to a side: one menu claimed at 7, 6, 6, 6. c(i) 3 x 5 (2 + 3) from five; c(ii) 3 @ 5 (2 + 3), one measure each for individuals, firms and the government: three heading rows."
     },
     {
       "topicId": "economics-higher-24-government-intervention",
@@ -8640,7 +8643,7 @@
       "section": "B",
       "question": 6,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -8648,7 +8651,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "B6"
-      }
+      },
+      "reason": "Reviewed SEC source: Migration and its consequences are Employment & Unemployment (3-2); the Single European Market is Globalisation (4-1); development aid for LDCs is Growth & Development (4-0). Four tasks totalling 75. a(i) 3 x 5 (2 + 3) from five; a(ii) 3 x 5 (2 + 3) from nine. b 7 + 6 + 6 + 6, two points in favour and two against (1 @ 7 and 3 @ 6 in the summary), not tied to a side: one menu of both lists claimed at 7, 6, 6, 6. c 4 @ 5 (2 + 3), two benefits (2 x 5) and two challenges (2 x 5): two heading rows."
     },
     {
       "topicId": "economics-higher-45-the-financial-sector",
@@ -9126,7 +9130,7 @@
       "section": "B",
       "question": 8,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -9134,7 +9138,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "B8"
-      }
+      },
+      "reason": "Reviewed SEC source: The national income identity, net exports, savings and the multiplier are National Income (3-0); FDI is Globalisation (4-1); protecting the environment and carbon emissions are Sustainability (0-2). Seven tasks totalling 75. a(i) 5 100,000; a(ii) 6 net exports 20,000; a(iii) 3 savings 50,000; a(iv) 6 the multiplier 1.25 (workings printed as fractions; hidden crop). b 7 + 6 + 6 + 6, two benefits and two challenges (1 @ 7 and 3 @ 6), not tied to a side: one menu claimed at 7, 6, 6, 6. c(i) 3 x 5 (2 + 3) from five; c(ii) 3 @ 5 (2 + 3), one measure each for individuals, firms and the government: three heading rows."
     },
     {
       "topicId": "economics-higher-51-economic-growth-and-development",
@@ -9524,7 +9529,7 @@
       "section": "A",
       "question": 7,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -9532,7 +9537,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "7"
-      }
+      },
+      "reason": "Reviewed SEC source: Policies to reduce income inequality are Fiscal Policy & the Budget (3-1). a 2 @ 6 (3 + 3) two policies from the printed list; b 1 x 5 one challenge from five."
     },
     {
       "topicId": "economics-higher-52-globalisation",
@@ -10786,7 +10792,7 @@
       "section": "B",
       "question": 7,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -10794,7 +10800,8 @@
         "paperKey": "single",
         "fileid": "LC034ALP000EV.pdf",
         "questionNumber": "B7"
-      }
+      },
+      "reason": "Reviewed SEC source: Growth is Economic Growth (3-5), employment Employment & Unemployment (3-2), inflation Monetary Policy & Inflation (3-3) and the national debt and capital spending Fiscal Policy & the Budget (3-1); banking regulation is Financial Sector (3-4). Seven tasks totalling 75. a 4 x 5 (2 + 1 + 2), each area priced 5 as an approximate figure, an accurate trend and a comment, over the scheme’s heading and points for that area (unpriced rows). b 7 + 6 + 6 + 6, minimum of two for citizens and two for the banking industry, not tied to a side: one menu of both lists claimed at 7, 6, 6, 6. c(i) 3 x 6 (3 + 3) from seven; c(ii) 2 x 6 (3 + 3) from six."
     },
     {
       "topicId": "economics-higher-61-topical-questions-and-statistics",
@@ -20781,7 +20788,7 @@
     "subjectId": "economics",
     "authority": "SEC question paper; canonical curriculum node IDs",
     "reviewedAt": "2026-11-04",
-    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2019 Higher and Ordinary English and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 45 physical variants pending.",
+    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2019 Higher and Ordinary English and 2018 and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 44 physical variants pending.",
     "questions": [
       {
         "level": "higher",
@@ -26533,6 +26540,280 @@
         ],
         "reason": "Transfer payments, benefits-in-kind, net factor income, the national income identity and the multiplier are National Income (3-0); the national debt and the NTMA are Fiscal Policy & the Budget (3-1). Nine tasks totalling 75. a 7 + 7 + 7 (5 + 2) the three terms, each with an example. b 6 @ 5: (i) G 60,000; (ii) Y 250,000; (iii) MPM; (iv) 0.1 (working printed as a fraction; hidden crop); (v) the multiplier 2.5 (5, hidden crop) and its meaning (5). c(i) 6; c(ii) 6 (3 + 3) the NTMA and one other function from eight; c(iii) 3 x 4 (2 + 2) from five.",
         "paperSha256": "81029e754f0df3c2f328bf22b9e58f18b2c3751e40035b4810169920b0d7fa35"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "1",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0"
+        ],
+        "reason": "The perfectly competitive firm as a price taker is Market Structures (2-0). a 8: 4 + 4, two of the three printed statements; b 2 @ 4 (2 + 2) two characteristics from seven.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "2",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-3-3"
+        ],
+        "reason": "The effects of a rise in interest rates are Monetary Policy & Inflation (3-3). 2 @ 8 (4 + 4) two effects from nine. The (i)/(ii) are ruled answer slots.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "3",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-4-2"
+        ],
+        "reason": "A customs union is International Trade & Competitiveness (4-2). 12 + 4 beside the one printed explanation: one card, one row at 16.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "4",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-1-5"
+        ],
+        "reason": "The law of diminishing marginal returns is Costs of Production, Revenue & Profit (1-5). a 10 the law; b 6 (2 + 4) printed beside the answer and its reason together, without saying which earns which: questionTotal, unpriced rows.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "5",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-3-0"
+        ],
+        "reason": "Double counting, injections, GDP and transfer payments are National Income (3-0). Four TRUE/FALSE ticks, 2 @ 6 and 2 @ 2 (the scheme prints 2 x 6, 2 x 2) without tying a price to a statement: one card, the four ticks claimed at 6, 6, 2, 2.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "6",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1"
+        ],
+        "reason": "Adam Smith’s canons of taxation are Fiscal Policy & the Budget (3-1). 1 @ 5 and 3 @ 4 over the four canons: one card, claimed at 5, 4, 4, 4.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "7",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1"
+        ],
+        "reason": "Policies to reduce income inequality are Fiscal Policy & the Budget (3-1). a 2 @ 6 (3 + 3) two policies from the printed list; b 1 x 5 one challenge from five.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "8",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-2-1",
+          "economics-3-1"
+        ],
+        "reason": "Raising the retirement age is The Labour Market (2-1); its effects on revenue and pension spending are also Fiscal Policy & the Budget (3-1). 6 + 6 + 5 (6: 3+3, 6: 3+3, 5: 3+2) over three consequences from five: one card, claimed at 6, 6, 5. The (i)-(iii) are ruled answer slots.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "9",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          5
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0"
+        ],
+        "reason": "Price discrimination is Market Structures (2-0). a 8 the definition; b 3 x 3 three conditions from three. The (i)-(iii) are ruled answer slots.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B1",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          6
+        ],
+        "canonicalNodeIds": [
+          "economics-1-1",
+          "economics-1-0",
+          "economics-1-2",
+          "economics-1-5"
+        ],
+        "reason": "Movements along and shifts in demand, consumer surplus and total revenue are The Consumer (1-1); equilibrium and a surplus are The Market Economy (1-0); a fixed-capacity supply curve is The Firm (Supply) (1-2); total revenue at a fixed price is Costs of Production, Revenue & Profit (1-5). Eight tasks totalling 75. a(i) 5 + 5 movement along and shift; a(ii) diagram 9 (9 x 1, the nine labels the scheme marks) + explanation 6; hidden solution diagram. b(i) diagram 13: six labels 6 x 1, vertical S/C at 400 units 2, five points on D/C 5 x 1; hidden solution diagram. b(ii) 6; b(iii) 2 @ 6; b(iv) 2 + 2 the two areas. c(i) 6 €24,000; c(ii) 9 graded over four printed paragraphs (unpriced rows).",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B2",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          7
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0",
+          "economics-1-3"
+        ],
+        "reason": "Oligopoly, the kinked demand curve and collusion are Market Structures (2-0); measures against anti-competitive practice are Government Intervention (1-3). Six tasks totalling 75. a(i) 6; a(ii) 4 @ 6 (3 + 3), two advantages (2 x 6) and two disadvantages (2 x 6): two heading rows. b(i) diagram 9 (9 x 1) + explanation 8 (4 @ 2) from five; hidden solution diagram. b(ii) 8 graded over three printed paragraphs (unpriced rows). c(i) 2 x 5 (2 + 3) from three; c(ii) 2 x 5 (2 + 3) from four.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B3",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          7
+        ],
+        "canonicalNodeIds": [
+          "economics-1-5",
+          "economics-1-4",
+          "economics-4-2"
+        ],
+        "reason": "Marginal cost and profit maximisation are Costs of Production, Revenue & Profit (1-5); price elasticity of supply and of demand are Elasticity (1-4); a fall in sterling’s value is International Trade & Competitiveness (4-2). Nine tasks totalling 75. a(i) 5; a(ii) graph 8: seven MC points x 1 and the label 1 (hidden solution table and graph); a(iii) 2 + 2 indicating the level and 4 the explanation; a(iv) 4 €35. b(i) 5; b(ii) 10 graded over three printed paragraphs (unpriced rows); b(iii) 2 x 5 (2 + 3) from seven. c(i) 7; c(ii) 2 x 9 graded, two of the three printed explanations.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B4",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          8
+        ],
+        "canonicalNodeIds": [
+          "economics-2-1",
+          "economics-1-5",
+          "economics-4-1"
+        ],
+        "reason": "Labour productivity and the mobility of labour are The Labour Market (2-1); economies of scale are Costs of Production, Revenue & Profit (1-5), the stem’s globalisation Globalisation (4-1). Eight tasks totalling 75. a(i) 8; a(ii) 2 x 6 (3 + 3) from four. b(i) 9; b(ii) 2 x 7 (3 + 4) from eleven; b(iii) 1 x 7 (3 + 4) one disadvantage from four. c(i) 5 + 5 occupational and geographic; c(ii) 2 x 5 (2 + 3) from seven; c(iii) 5 (2 + 3) one measure from eight.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B5",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          8
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1",
+          "economics-3-3",
+          "economics-1-3"
+        ],
+        "reason": "Fiscal policy, indirect taxes and budget deficits are Fiscal Policy & the Budget (3-1); monetary policy and the Eurozone are Monetary Policy & Inflation (3-3); non-tax interventions in consumer behaviour are Government Intervention (1-3). Eight tasks, ten routes; 75 with the (a)(ii) and (c)(iii) choices counted once. a(i) 5 + 5 fiscal and monetary policy; a(ii) 2 x 5 (2 + 3) on monetary policy OR fiscal policy: the scheme lists each separately, so two routes. b(i) 5; b(ii) 3 x 5 from seven; b(iii) 5 (2 + 3) from four. c(i) 6; c(ii) 2 x 6 (3 + 3) from seven; c(iii) 2 x 6 (3 + 3): the scheme credits NO and YES with different lists, so two stance routes.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B6",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          9
+        ],
+        "canonicalNodeIds": [
+          "economics-3-2",
+          "economics-4-1",
+          "economics-4-0"
+        ],
+        "reason": "Migration and its consequences are Employment & Unemployment (3-2); the Single European Market is Globalisation (4-1); development aid for LDCs is Growth & Development (4-0). Four tasks totalling 75. a(i) 3 x 5 (2 + 3) from five; a(ii) 3 x 5 (2 + 3) from nine. b 7 + 6 + 6 + 6, two points in favour and two against (1 @ 7 and 3 @ 6 in the summary), not tied to a side: one menu of both lists claimed at 7, 6, 6, 6. c 4 @ 5 (2 + 3), two benefits (2 x 5) and two challenges (2 x 5): two heading rows.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B7",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          9
+        ],
+        "canonicalNodeIds": [
+          "economics-3-5",
+          "economics-3-2",
+          "economics-3-3",
+          "economics-3-1",
+          "economics-3-4"
+        ],
+        "reason": "Growth is Economic Growth (3-5), employment Employment & Unemployment (3-2), inflation Monetary Policy & Inflation (3-3) and the national debt and capital spending Fiscal Policy & the Budget (3-1); banking regulation is Financial Sector (3-4). Seven tasks totalling 75. a 4 x 5 (2 + 1 + 2), each area priced 5 as an approximate figure, an accurate trend and a comment, over the scheme’s heading and points for that area (unpriced rows). b 7 + 6 + 6 + 6, minimum of two for citizens and two for the banking industry, not tied to a side: one menu of both lists claimed at 7, 6, 6, 6. c(i) 3 x 6 (3 + 3) from seven; c(ii) 2 x 6 (3 + 3) from six.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
+      },
+      {
+        "level": "higher",
+        "lang": "ev",
+        "year": 2018,
+        "n": "B8",
+        "fileid": "LC034ALP000EV.pdf",
+        "pages": [
+          10
+        ],
+        "canonicalNodeIds": [
+          "economics-3-0",
+          "economics-4-1",
+          "economics-0-2"
+        ],
+        "reason": "The national income identity, net exports, savings and the multiplier are National Income (3-0); FDI is Globalisation (4-1); protecting the environment and carbon emissions are Sustainability (0-2). Seven tasks totalling 75. a(i) 5 100,000; a(ii) 6 net exports 20,000; a(iii) 3 savings 50,000; a(iv) 6 the multiplier 1.25 (workings printed as fractions; hidden crop). b 7 + 6 + 6 + 6, two benefits and two challenges (1 @ 7 and 3 @ 6), not tied to a side: one menu claimed at 7, 6, 6, 6. c(i) 3 x 5 (2 + 3) from five; c(ii) 3 @ 5 (2 + 3), one measure each for individuals, firms and the government: three heading rows.",
+        "paperSha256": "e03eb41e49b80c15b745ed0d33c9eaa1aa1dbd809149dbcafc257713d4f0c960"
       }
     ]
   }

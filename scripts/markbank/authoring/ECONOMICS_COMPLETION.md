@@ -1565,3 +1565,69 @@ Checks:
 - reconcile: 1,004/2,206, with 2020 HL at 75/75, 0 excluded and 0 orphans.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2018 Higher English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 52 scheme pages were viewed. Scheme page numbers here
+are the PDF's, two ahead of the printed numbers:
+- pp1-5 are the SEC cover, the note, the title, the notes and index, and the
+  Summary of Mark Allocations, which agrees with every tariff;
+- pp50-52 are blank or the back cover.
+
+There are 72 routes for the 70 printed asks: 13 in Section A and 57 in
+Section B. Section B Q5(a)(ii) asks about monetary policy OR fiscal policy,
+and Q5(c)(iii) is NO or YES. The scheme gives each its own list, so each has
+two routes. Census `census-2018-hl.py`; record and bind
+`record/record-2018-hl.py` and `bind-2018-hl.py`; 10 crops
+`crops/crop-2018-hl.py` (6 hidden scheme solutions, 4 paper data crops,
+none of them a whole question).
+
+Decisions on tariffs the scheme does not attribute:
+- Descending ladders over a list are one menu at the printed steps:
+  - Section A Q5: "2 x 6, 2 x 2" over the four ticks.
+  - Section A Q6: "1 x 5, 3 x 4" over the four canons.
+  - Section A Q8: "6 + 6 + 5".
+  - Section B Q6(b), Q7(b) and Q8(b): "7+6+6+6", two of each side, not tied to
+    a side. One menu of both sides' lists, each option named by its side.
+- Section A Q1(a) "8: 4 + 4" beside three statements: any two at 4.
+- Section A Q4(b) "6 (2 + 4)" beside the answer and its reason together:
+  questionTotal, unpriced rows.
+- Graded totals over printed paragraphs are questionTotal with unpriced rows
+  (the 2019 HL rule): Section B Q1(c)(ii), Q2(b)(ii) and Q3(b)(ii).
+- Section B Q7(a) "4 x 5 (2 + 1 + 2)", each area priced as 2 marks + 1 mark +
+  2 marks for an approximate figure, an accurate trend and a comment. Each
+  area is a questionTotal card whose rows are the area's figure and points.
+  The scheme prints one debt bullet twice; it is shown once.
+- Section B Q1(a)(ii) "Diagram: 9 (9 x 1)": the scheme marks nine labels
+  with a raised 1, and each label is a menu option at 1.
+- Section B Q3(a)(ii) "MC: 7 points x 1 marks, Label: 1 mark": the seven
+  values come from the scheme's completed MC table as "output — MC" options,
+  plus a 1-mark row for the label.
+
+Lifting fixes in `econ_legacy_lib` (2019 and 2020 output byte-identical):
+- `split(..., source='cells')` slices the table-cell rendering. It holds a
+  response cell whole, where the other two renderings weave in the marks
+  column's notes ("Two points in favour and two against").
+- TAIL trims a continued page's "Q Possible responses 7" header.
+- The 2018 scheme's arrowhead sub-bullet, private-use U+F0D8, which the
+  build's glyph map does not cover, is set as "•".
+
+Refcheck: six asks of four or five words were read by hand against paper pp5,
+7, 8 and 10.
+
+Topic review: 7 commercial headings are reference anomalies:
+- Section A Q4 under economic concepts.
+- Section A Q7 under globalisation.
+- Section B Q6(a)-(b) under the financial sector.
+- Section B Q7(a) under topical questions.
+- Section B Q8(b) under government intervention and under growth and
+  development.
+- Section B Q8(c) under government intervention.
+
+Checks:
+- econ_review: 22/66.
+- build: 1,136 cards, 0 dropped.
+- Build rule: 337 claims, 0 untraceable.
+- reconcile: 1,074/2,206, with 2018 HL at 70/70, 0 excluded and 0 orphans.
+- refcheck: 0 wrong.
+- cardlint: clean.

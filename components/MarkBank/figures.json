@@ -55843,5 +55843,121 @@
     "year": 2020,
     "level": "higher",
     "attribution": "SEC Leaving Certificate Economics 2020 Higher Level — © State Examinations Commission"
+  },
+  "economics-2018-HL-scheme-p08-q5-ticks": {
+    "src": "/exam-figures/economics/markbank/economics-2018-HL-scheme-p08-q5-ticks.png",
+    "md5": "29e8085309b22a25ccf18b2b41ebe6c9",
+    "alt": "The marking scheme’s completed table: four statements with TRUE and FALSE columns. Ticks: double counting could occur when activity is measured by the expenditure method, FALSE; exports are an injection into the circular flow, TRUE; GDP includes a provision for depreciation, FALSE; primary teacher salaries are transfer payments, FALSE.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2018 HL Section A Q5",
+    "year": 2018,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2018 Higher Level — © State Examinations Commission"
+  },
+  "economics-2018-HL-scheme-p11-q1aii-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2018-HL-scheme-p11-q1aii-diagram.png",
+    "md5": "daac9ff79b253ad006db54c99a332188",
+    "alt": "The marking scheme’s diagram: Price against Quantity, a rising supply line S and a falling demand line D crossing at the equilibrium price PE. At the higher price P1 a horizontal line marks the surplus between QD on D and QS on S, with a downward arrow from the surplus towards PE. Each of the nine labels carries a raised 1, its mark.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2018 HL Section B Q1(a)(ii)",
+    "year": 2018,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2018 Higher Level — © State Examinations Commission"
+  },
+  "economics-2018-HL-scheme-p12-q1bi-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2018-HL-scheme-p12-q1bi-diagram.png",
+    "md5": "96448c8a199ee2d70fe90adc4f69893b",
+    "alt": "The marking scheme’s diagram: Price (€) from 20 to 100 against Quantity (units) from 0 to 800. A vertical supply curve S/C at 400 and a falling demand curve D/C through five plotted points, (0, 100), (200, 80), (400, 60), (600, 40) and (800, 20), meet at PE 60 and QE 400. The triangle above 60 and left of 400 is shaded as Consumer Surplus, and the rectangle below 60 and left of 400 as Total Revenue.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2018 HL Section B Q1(b)(i)",
+    "year": 2018,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2018 Higher Level — © State Examinations Commission"
+  },
+  "economics-2018-HL-scheme-p16-q2bi-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2018-HL-scheme-p16-q2bi-diagram.png",
+    "md5": "638e393d37d2b2dcf431e552398e8578",
+    "alt": "The marking scheme’s diagram: P against Q, a demand curve kinked at B (A to B shallow, B to C steep, D = AR) and a marginal revenue line with a vertical gap between D and E below the kink. A U-shaped AC curve touches the demand curve near G, and the MC curve rises through the gap. Dashed lines from B meet the price axis at P1 and the quantity axis at Q1.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2018 HL Section B Q2(b)(i)",
+    "year": 2018,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2018 Higher Level — © State Examinations Commission"
+  },
+  "economics-2018-HL-scheme-p18-q3a-graph": {
+    "src": "/exam-figures/economics/markbank/economics-2018-HL-scheme-p18-q3a-graph.png",
+    "md5": "39af6398c42d0e53c5e3995993e78b32",
+    "alt": "The marking scheme’s graph, MC / MR: Costs/Revenue (€) from 0 to 60 against output from 1 to 7. MC passes through 20, 10, 15, 20, 30, 45 and 50 at outputs 1 to 7; MR is a horizontal line at 30. They cross at output 5, marked with an arrow down to the output axis.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2018 HL Section B Q3(a)(ii)",
+    "year": 2018,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2018 Higher Level — © State Examinations Commission"
+  },
+  "economics-2018-HL-scheme-p44-q8aiv-working": {
+    "src": "/exam-figures/economics/markbank/economics-2018-HL-scheme-p44-q8aiv-working.png",
+    "md5": "977d568c650e03f179d82f709c0128fd",
+    "alt": "The marking scheme’s workings set as fractions. MPC = change in C over change in Y = 20,000 over 50,000 = 0.4; MPM = 10,000 over 50,000 = 0.2; MPS = 1 – MPC = 0.6. Method 1: 1 over MPS + MPM, 1 over 0.6 + 0.2, 1 over 0.8, 1.25. Method 2: 1 over 1 – (MPC – MPM), 1 over 1 – (0.4 – 0.2), 1 over 0.8, 1.25. Also: MUL = increase in income over increase in injections, 50,000 over 10,000 + 30,000, 1.25.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2018 HL Section B Q8(a)(iv)",
+    "year": 2018,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2018 Higher Level — © State Examinations Commission"
+  },
+  "economics-2018-HL-paper-p03-q5-table": {
+    "src": "/exam-figures/economics/markbank/economics-2018-HL-paper-p03-q5-table.png",
+    "md5": "611da2173cef7d974dd9f07e3e5b83d1",
+    "alt": "A table of four statements with blank TRUE and FALSE columns: ‘Double counting’ could occur when economic activity is measured using the expenditure method; Exports represent an injection into the circular flow of income; Gross Domestic Product (GDP) includes a provision for depreciation; Primary school teacher salaries are categorised as transfer payments in Ireland.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2018 HL Section A Q5",
+    "year": 2018,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2018 Higher Level — © State Examinations Commission"
+  },
+  "economics-2018-HL-paper-p06-q1b-table": {
+    "src": "/exam-figures/economics/markbank/economics-2018-HL-paper-p06-q1b-table.png",
+    "md5": "dd06b8f534a5ce65c151ac8ef4d56701",
+    "alt": "A table: Price (€) €100, €80, €60, €40, €20; Quantity Demanded 0, 200, 400, 600, 800; Quantity Supplied 400 at every price.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2018 HL Section B Q1(b)",
+    "year": 2018,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2018 Higher Level — © State Examinations Commission"
+  },
+  "economics-2018-HL-paper-p07-q3a-table": {
+    "src": "/exam-figures/economics/markbank/economics-2018-HL-paper-p07-q3a-table.png",
+    "md5": "bb219f56d65368a3858eefaed0af56c7",
+    "alt": "A table: Output (units) 0 to 7; Total Cost (€) 20, 40, 50, 65, 85, 115, 160, 210.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2018 HL Section B Q3(a)",
+    "year": 2018,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2018 Higher Level — © State Examinations Commission"
+  },
+  "economics-2018-HL-paper-p10-q8a-table": {
+    "src": "/exam-figures/economics/markbank/economics-2018-HL-paper-p10-q8a-table.png",
+    "md5": "16652eb020e33f40a51ad7fef73b4fd7",
+    "alt": "A table with columns Y, C, I, X and M. 2016: ?, 80,000, 20,000, 90,000, 90,000. 2017: 150,000, 100,000, 30,000, 120,000, ?.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2018 HL Section B Q8(a)",
+    "year": 2018,
+    "level": "higher",
+    "attribution": "SEC Leaving Certificate Economics 2018 Higher Level — © State Examinations Commission"
   }
 }

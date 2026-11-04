@@ -12,6 +12,7 @@ import inventory from '../scripts/markbank/authoring/economics-source-inventory.
 import higher2019Review from '../scripts/markbank/authoring/reviews/economics-2019-hl-ev.json';
 import ordinary2019Review from '../scripts/markbank/authoring/reviews/economics-2019-ol-ev.json';
 import higher2020Review from '../scripts/markbank/authoring/reviews/economics-2020-hl-ev.json';
+import higher2018Review from '../scripts/markbank/authoring/reviews/economics-2018-hl-ev.json';
 import higher2021Review from '../scripts/markbank/authoring/reviews/economics-2021-hl-ev.json';
 import ordinary2021Review from '../scripts/markbank/authoring/reviews/economics-2021-ol-ev.json';
 import paperReview from '../scripts/markbank/authoring/reviews/economics-2022-hl-ev.json';
@@ -321,10 +322,10 @@ describe('Economics SEC source review (completion remains pending)', () => {
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();
     expect(inventoried).toEqual(indexed);
     expect(inventory.complete).toBe(false);
-    // Old syllabus: 2019 Higher and Ordinary and 2020 Higher English are the nineteenth to twenty-first reviewed variants.
-    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(45);
-    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(51);
-    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(21);
+    // Old syllabus: 2018 Higher, 2019 Higher and Ordinary and 2020 Higher English, the nineteenth to twenty-second reviewed variants.
+    expect(inventory.summary.paperVariantsWithoutMarkBankCards).toBe(44);
+    expect(inventory.summary.paperVariantsWithoutPrimaryMarkBankCards).toBe(50);
+    expect(inventory.summary.paperVariantsWithValidatedVisualReview).toBe(22);
     expect(inventory.papers.every(paper => paper.paper.sha256.length === 64
       && paper.scheme.sha256.length === 64 && paper.paper.pages > 0 && paper.scheme.pages > 0)).toBe(true);
   });
@@ -1066,6 +1067,61 @@ else: raise AssertionError('accepted omitted Irish choose-two directive')
     const text = ORDINARY.filter(c => c.year === 2019)
       .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
     for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate']) {
+      expect(text, junk).not.toContain(junk);
+    }
+  });
+
+  it('matches all 72 independently counted 2018 Higher routes, tariffs, sources and Atlas topics', () => {
+    const cards = CARDS.filter(card => card.year === 2018);
+    const tasks = higher2018Review.questions.flatMap(question => question.tasks);
+    expect(tasks).toHaveLength(72);
+    expect(cards.map(card => card.id).sort()).toEqual(tasks.map(task => task.cardId).sort());
+    for (const question of higher2018Review.questions) {
+      const atlasNodes = examTopicIdsForQuestion('economics', 'higher', 2018, 'main', question.n,
+        'single', 'ev').flatMap(curriculumNodeIdsForExamTopic);
+      const sectionB = question.n.startsWith('B');
+      for (const task of question.tasks) {
+        const card = cards.find(value => value.id === task.cardId)!;
+        expect(card.totalMarks, task.cardId).toBe(task.marks);
+        expect(card.topicId, task.cardId).toBe(task.topicId);
+        expect(atlasNodes, task.cardId).toContain(task.topicId);
+        expect(card.sourceMaterial?.pages, task.cardId).toEqual(question.paperPages);
+        expect(card.paperFileid, task.cardId).toBe('LC034ALP000EV');
+        expect(card.questionRef.startsWith(`2018 HL Section ${sectionB ? 'B' : 'A'} Q${question.n.replace('B', '')}`),
+          task.cardId).toBe(true);
+      }
+      // Section A questions are 16 or 17; Section B 75, with each route pair (NO/YES, monetary/fiscal) counted once.
+      const once = question.tasks.filter(task => !/-(no|fiscal)$/.test(task.cardId))
+        .reduce((sum, task) => sum + task.marks, 0);
+      expect(once, `HL Q${question.n}`).toBe(sectionB ? 75 : Number(question.n) <= 5 ? 16 : 17);
+    }
+  });
+
+  it('claims 2018 Higher ladders at their printed steps and keeps every crop to the part the ask needs', () => {
+    const card = (s: string) => {
+      const found = CARDS.find(c => c.id === `econ-2018-hl-${s}`)!;
+      if (found.kind !== 'question') throw new Error('Expected question');
+      return found;
+    };
+    expect(card('sa-q5').rows[0].group!.perOptionSteps).toEqual([6, 6, 2, 2]);
+    expect(card('sa-q5').rows[0].group!.options.map(o => o.split(' — ')[0])).toEqual(['FALSE', 'TRUE', 'FALSE', 'FALSE']);
+    expect(card('sa-q6').rows[0].group!.perOptionSteps).toEqual([5, 4, 4, 4]);
+    expect(card('sa-q8').rows[0].group!.perOptionSteps).toEqual([6, 6, 5]);
+    for (const s of ['sb-q6-b', 'sb-q7-b', 'sb-q8-b']) {
+      expect(card(s).rows[0].group!.perOptionSteps, s).toEqual([7, 6, 6, 6]);
+      // Each side's list is read from the table cells, clear of the marks column's notes.
+      for (const o of card(s).rows[0].group!.options) expect(o, s).not.toMatch(/Two points|Minimum of|Two benefits|favour and two/);
+    }
+    for (const c of CARDS.filter(item => item.year === 2018 && item.questionFigure)) {
+      expect(c.figure?.solution, c.id).toBe(true);
+      expect(c.questionFigure?.includesPrompt, c.id).toBe(false);
+    }
+    expect(card('sb-q8-a-iv').rows[0].verbatim).toBe('1.25');
+    expect(card('sb-q5-b-iii').rows[0].group!.options).toContain(
+      'Government grants The government could provide grants for retrofitting of houses / encouraging better energy use etc.');
+    const text = CARDS.filter(c => c.year === 2018)
+      .map(c => JSON.stringify([c.stem, c.questionText, c.rows.map(r => [r.verbatim, r.group?.options])])).join('\n');
+    for (const junk of ['Possible responses', 'P a g e', '⟨', '____', 'graded', 'Leaving Certificate', '']) {
       expect(text, junk).not.toContain(junk);
     }
   });
