@@ -1269,8 +1269,8 @@ const biologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith(
  * from 2020 back (lane batch 3). */
 const HISTORY_NEW_POINT_IDS = new Set(['hist-2021-ol-lm-s1-q3b']);
 const HISTORY_ADDITIONS = {
-  counts: [1722, 2332],
-  hashes: ['fe223ce5f9a54dc817f75e4f6066b0b79294d066eb0d68d1476040db433a9a37', 'd7536f0ec711c5ad4ec03468f3c43a8130d8c01c84f33b87444058230adce4d4'],
+  counts: [1775, 2332],
+  hashes: ['edd7cca52497d08fc3979826d166f90f4f0e57b385e56d918bd61fc55fc4c69d', 'd7536f0ec711c5ad4ec03468f3c43a8130d8c01c84f33b87444058230adce4d4'],
 };
 // The deferred sittings (2022-2023, "hist-2023-hl-deferred-lm-...") join the
 // same way, each its own sitting and every id new.

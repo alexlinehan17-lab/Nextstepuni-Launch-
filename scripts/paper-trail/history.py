@@ -52,7 +52,7 @@ NEW_DQB_TAGS = {
 # marked "sitting": "deferred", fileid "...-deferred.pdf", as Physics and Home
 # Economics file theirs), English editions, admitted one at a time as each is
 # carded in the Mark Bank (hist_paper.DEFERRED_PAPERS lists every one set).
-DEFERRED_SITTINGS: set[tuple[int, str]] = {(2023, 'higher'), (2023, 'ordinary')}
+DEFERRED_SITTINGS: set[tuple[int, str]] = {(2022, 'higher'), (2023, 'higher'), (2023, 'ordinary')}
 # A deferred sitting sets its own documents question, and in 2023 the two
 # levels set different case studies. Each tag is the case study the paper's
 # page 2 names (the guard word must be printed there) under its topic.
@@ -311,6 +311,10 @@ def alternative_anchor(
 def dqb_templates(existing: list[dict]) -> dict[int, dict]:
     templates: dict[int, dict] = {}
     for paper in existing:
+        # A deferred sitting sets its own documents question (DEFERRED_DQB_TAGS);
+        # it never speaks for the June sitting's.
+        if str(paper.get("fileid", "")).endswith("-deferred.pdf"):
+            continue
         questions = [
             question
             for question in paper.get("q", [])
