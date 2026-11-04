@@ -589,6 +589,8 @@ describe('the question comes first and stays', () => {
       expect(member.rubric.criteria.every(criterion => criterion.allocation)).toBe(true);
       for (const criterion of member.rubric.criteria) claimIrishCriterion(criterion, `${section} · ${criterion.label}`);
     }
+    // The "Official answers and tariff" chip heads each fógra's run of boxes once, not every box.
+    expect(screen.getAllByText('Official answers and tariff')).toHaveLength(2);
     expect(screen.getByText('18 / 18')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /^Got it/i }));
     expect(onGrade).toHaveBeenCalledTimes(2);
@@ -602,6 +604,15 @@ describe('the question comes first and stays', () => {
     expect(document.querySelector('audio')).not.toBeInTheDocument();
     expect(screen.getByText('The next visible exercise.')).toBeInTheDocument();
     expect(screen.queryByTestId('mark-bank-listening-questions')).not.toBeInTheDocument();
+  });
+
+  test('heads each announcement\'s run of one-question listening boxes with one guidance chip', () => {
+    // 2026 Higher Cuid A ships one card per printed question; the sheet still reads as two announcements.
+    const listening = IRISH_HIGHER.filter(entry => entry.year === 2026 && /^irish-2026-hl-p1-listening-a-f[12]-/.test(entry.id));
+    expect(listening).toHaveLength(7);
+    renderSession(listening);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getAllByText('Official answers and tariff')).toHaveLength(2);
   });
 
   test('reads numbered question parts with their wording instead of as isolated numbers', () => {

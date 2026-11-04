@@ -1260,6 +1260,10 @@ const IrishRubricPanel: React.FC<{
     if (criterion.guidanceKind === 'quality') return 'Published quality description';
     return 'Possible directions — not a checklist';
   };
+  // A listening sheet namespaces each card's criteria ("<card>/<criterion>") and labels them "<extract> · <box>":
+  // one run per extract, so the 2026 one-question cards of an announcement share its chip too.
+  const chipRun = (criterion: IrishCriterion) => (criterion.id.includes('/')
+    ? criterion.label.split(/\s+·\s+/).slice(0, -1).join(' · ') : '');
 
   const scoreControl = (criterion: IrishCriterion) => {
     const id = irishScoreId(criterion.id);
@@ -1394,7 +1398,7 @@ const IrishRubricPanel: React.FC<{
         </p>
 
         <div style={{ display: 'grid', gap: 10 }}>
-          {rubric.criteria.map(criterion => (
+          {rubric.criteria.map((criterion, index) => (
             <section key={criterion.id} style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}>
               <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
                 <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>
@@ -1404,13 +1408,17 @@ const IrishRubricPanel: React.FC<{
                   {criterion.kind === 'deduction' ? '0 to −' : '/ '}{criterion.maxMarks}
                 </span>
               </div>
-              <span style={{
-                display: 'inline-block', marginTop: 7, padding: '3px 6px', borderRadius: 5,
-                background: 'var(--mb-raised)', color: LABEL,
-                font: `750 8.5px/1.2 ${SANS}`, letterSpacing: '.075em', textTransform: 'uppercase',
-              }}>
-                {guidanceLabel(criterion)}
-              </span>
+              {/* One chip per run: an announcement's question boxes share one "Official answers" label. */}
+              {(index === 0 || guidanceLabel(rubric.criteria[index - 1]) !== guidanceLabel(criterion)
+                || chipRun(rubric.criteria[index - 1]) !== chipRun(criterion)) && (
+                <span style={{
+                  display: 'inline-block', marginTop: 7, padding: '3px 6px', borderRadius: 5,
+                  background: 'var(--mb-raised)', color: LABEL,
+                  font: `750 8.5px/1.2 ${SANS}`, letterSpacing: '.075em', textTransform: 'uppercase',
+                }}>
+                  {guidanceLabel(criterion)}
+                </span>
+              )}
               {criterion.allocation ? (
                 <div style={{ marginTop: 10 }}>
                   <IrishAllocationPanel
