@@ -50,7 +50,8 @@ print(json.dumps([strip_text(c) for c in cases], ensure_ascii=False))`));
       '2024 ordinary P1': 9, '2025 ordinary P1': 9, '2024 ordinary P2': 2, '2025 ordinary P2': 2,
     });
     const reviewed = raw.filter(c => c.level !== 'foundation' && c.reviewedAt);
-    expect(reviewed.length).toBeGreaterThan(700);
+    // 703 until decision 4 withdrew the three 2022 Higher 3B(a) device cards (2026-11-04).
+    expect(reviewed.length).toBeGreaterThanOrEqual(700);
     const left = reviewed.filter(c => c.criteria.some(r => r.guidance.some(g => PINNED.some(h => g.includes(h)))));
     expect(left.map(c => c.id)).toEqual([]);
   });

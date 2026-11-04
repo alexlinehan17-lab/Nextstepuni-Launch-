@@ -6,7 +6,6 @@ identities survive. New routes are generated from the actual printed pools.
 from __future__ import annotations
 import copy
 import hashlib
-import itertools
 import re
 from pathlib import Path
 import fitz
@@ -35,6 +34,11 @@ def section(text, start, end=None):
         tail = tail[:stop.start()]
     return tail.strip()
 
+
+# 2022 3B(a) device cards withdrawn on 2026-11-04 (decision 4): the device is the student's choice inside one
+# printed question, not a separate route. Branch-only, never on main, so no aliases.
+WITHDRAWN_3BA_ROUTES = frozenset(('irish-2022-hl-p2-poetry-3b-a-iomhanna', 'irish-2022-hl-p2-poetry-3b-a-codarsnacht',
+                                  'irish-2022-hl-p2-poetry-3b-a-mothuchain'))
 
 # The paraphrase every 2022/2024 literature route carried until 2026-11-04 (decision 2): it added a
 # "0 gan fiúntas" row the scheme never prints. Kept only to record what the lifted table replaced.
@@ -79,7 +83,8 @@ def classify_selections(year, pages):
             ('prose-or-poetry', r'Freagair Ceist 2 \(Prós\) nó Ceist 3 \(Filíocht\)\.',
              '2022 outer exam choice. Both response families remain available for independent practice.'),
             ('poetry-technique', r'Déan plé ar an úsáid a bhaineann an file as do rogha ceann amháin díobh seo a leanas chun an príomhthéama sin a chur in iúl: íomhánna, codarsnacht nó mothúcháin\.',
-             'Closed choose-one pool: three complete 30-mark routes, each retaining compulsory (ii)/(iii) and shared Gaeilge.'),
+             'Choose-one device inside the same optional poem, not a choice of text: one card, one grid and one Atlas topic '
+             '(irish-5-6); the device chosen is part of the answer (decision 4, 2026-11-04).'),
         ]
     else:
         rules += [('open-character', r'roghnaigh duine de na carachtair \(na pearsana\) sa ghearrscéal sin\.',
@@ -216,18 +221,10 @@ def apply_review(cards):
                 f'Filíocht 3B({option}) · Dán roghnach',
                 ['Freagair (i), (ii) agus (iii).', 'Níl cead aon ábhar a bhaineann le Filíocht Ainmnithe a úsáid i bhfreagra ar an bhFilíocht Roghnach.'])
         if year == 2022:
-            # Keep the historical unspecialised ID, and add the C(3,1) routes.
-            pool_text = section(poetry_a, r'a chur in iúl: ', r'\. \(15 mharc\)')
-            pool = re.split(r', | nó ', pool_text)
+            # 3B(a)(i) names one device of three inside the same poem: still one printed question (decision 4).
+            pool = re.split(r', | nó ', section(poetry_a, r'a chur in iúl: ', r'\. \(15 mharc\)'))
             assert pool == ['íomhánna','codarsnacht','mothúcháin'], ('Changed finite pool',pool)
-            slugs = ['iomhanna','codarsnacht','mothuchain']
-            original = by_id[base+'poetry-3b-a']
-            for ((choice,slug),) in itertools.combinations(zip(pool,slugs),1):
-                put('poetry-3b-a-'+slug,'F-3B-a-'+slug,
-                    original['questionText']+' An rogha don chárta seo: '+choice+'.',
-                    'irish-5-6',[12],[37,38],copy.deepcopy(original['criteria'][:-1]),
-                    'Filíocht 3B(a) · '+choice, original['taskRequirements']+['Rogha (i): '+choice+'.'],
-                    template=original['id'], route=choice)
+            assert not WITHDRAWN_3BA_ROUTES & {c['id'] for c in cards}, 'withdrawn 3B(a) route card came back'
         reviews.append(dict(year=year,level='higher',paperFileid='LC001ALP200IV.pdf',
                             paperSha256=paper_hash,schemeSha256=scheme_hash,reviewDate='2026-10-07',
                             scope=('Q2 and Q3B only; full paper review remains pending' if year==2022 else
@@ -235,9 +232,13 @@ def apply_review(cards):
                             reviewedPaperPages=paper_pages,
                             reviewedSchemePages=list(range(27,33))+list(range(37 if year==2022 else 38,41)),
                             cardIds=reviewed_ids,selectionDecisions=decisions,
+                            **(dict(withdrawnCardIds=sorted(WITHDRAWN_3BA_ROUTES), withdrawnAt='2026-11-04',
+                                    withdrawnReason='3B(a)(i) asks for one device (íomhánna, codarsnacht nó mothúcháin) inside one '
+                                                    'optional poem: one printed question, one grid, one Atlas topic. Branch-only cards, '
+                                                    'never live, so no aliases (decision 4).') if year == 2022 else {}),
                             gaeilgeCorrection=dict(date='2026-11-04', cardIds=list(reviewed_ids),
                                                    replaced=PARAPHRASED_GAEILGE, **gaeilge_pages,
                                                    note='The shared Gaeilge award is the scheme\'s printed five-row table (5 to 1) and its literature note, lifted; the paraphrase added a 0 row the scheme does not print.')))
     assert original_ids <= {c['id'] for c in cards}
-    assert len(cards) == 405 and len({c['id'] for c in cards}) == 405
+    assert len(cards) == 402 and len({c['id'] for c in cards}) == 402
     return cards, reviews

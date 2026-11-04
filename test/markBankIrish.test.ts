@@ -123,14 +123,15 @@ const family = (card: { id: string }) => {
 
 describe('Irish legacy generated-card ledger (not a completeness audit)', () => {
   // 451 until 2026-10-12, when the 2022 and 2024 Higher optional-drama routes were withdrawn:
-  // the optional film or play is one card (one grid, one Atlas heading).
+  // the optional film or play is one card (one grid, one Atlas heading). 449 until 2026-11-04,
+  // when the three 2022 Higher 3B(a) device routes were withdrawn the same way (decision 4).
   it('accounts for the generated cards on twenty recent written papers', () => {
     expect(census.paperCount).toBe(20);
-    expect(census.cardUnitCount).toBe(449);
-    expect(census.authoredCount).toBe(449);
+    expect(census.cardUnitCount).toBe(446);
+    expect(census.authoredCount).toBe(446);
     expect(census.queuedCount).toBe(0);
-    expect(census.asks).toHaveLength(449);
-    expect(new Set(census.asks.map(ask => ask.id)).size).toBe(449);
+    expect(census.asks).toHaveLength(446);
+    expect(new Set(census.asks.map(ask => ask.id)).size).toBe(446);
     expect(census.papers.every(paper =>
       paper.cardUnits === paper.authored + paper.queued)).toBe(true);
   });
@@ -144,18 +145,18 @@ describe('Irish legacy generated-card ledger (not a completeness audit)', () => 
         const [level, paper] = key.split('-');
         expect(census.asks.filter(ask => ask.year === year
           && ask.level === level && ask.paper === Number(paper)), `${year} ${key}`)
-          .toHaveLength(count + (key === 'hl-2' ? year === 2022 ? 4 : year === 2024 ? 45 : 0 : 0));
+          .toHaveLength(count + (key === 'hl-2' ? year === 2022 ? 1 : year === 2024 ? 45 : 0 : 0));
       }
     }
   });
 
   it('maps the census and generated manifest one-to-one to the live decks', () => {
-    expect(HIGHER).toHaveLength(264);
-    expect(HIGHER_DECK.length + ORDINARY_DECK.length).toBe(449 + REVIEWED_IDS.size);
+    expect(HIGHER).toHaveLength(261);
+    expect(HIGHER_DECK.length + ORDINARY_DECK.length).toBe(446 + REVIEWED_IDS.size);
     expect(ORDINARY).toHaveLength(185);
-    expect(ALL).toHaveLength(449);
-    expect(manifest.cardCount).toBe(449);
-    expect(new Set(ALL.map(card => card.id)).size).toBe(449);
+    expect(ALL).toHaveLength(446);
+    expect(manifest.cardCount).toBe(446);
+    expect(new Set(ALL.map(card => card.id)).size).toBe(446);
     expect(ALL.map(card => card.id).sort()).toEqual(census.asks.map(ask => ask.id).sort());
     expect(manifest.cards.map(card => card.id).sort())
       .toEqual(census.asks.map(ask => ask.id).sort());
@@ -383,7 +384,7 @@ describe('Irish marking grammar', () => {
     }
 
     const literature = ALL.filter(card => family(card) === 'literature');
-    expect(literature).toHaveLength(135);
+    expect(literature).toHaveLength(132);
     expect(literature.every(card => irishRubric(card).criteria[0].guidanceKind === 'indicative'))
       .toBe(true);
     expect(literature.every(card =>
@@ -416,7 +417,7 @@ describe('Irish marking grammar', () => {
   it('awards Higher literature language marks but subtracts the Ordinary penalty', () => {
     const higher = HIGHER.filter(card => family(card) === 'literature');
     const ordinary = ORDINARY.filter(card => family(card) === 'literature');
-    expect(higher).toHaveLength(75);
+    expect(higher).toHaveLength(72);
     expect(ordinary).toHaveLength(60);
     expect(higher.every(card => irishRubric(card).criteria.at(-1)?.kind === 'award'))
       .toBe(true);

@@ -173,19 +173,20 @@ describe('Irish exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(irishCrosswalk.summary).toMatchObject({
       localPaperVariants: 91,
-      localPhysicalMappings: 2536,
-      distinctStudentFacingQuestions: 2536,
+      localPhysicalMappings: 2533,
+      distinctStudentFacingQuestions: 2533,
       referenceMappedLocalQuestions: 686,
-      retainedLocalQuestions: 1850,
+      retainedLocalQuestions: 1847,
       hostedPaperAnchorMaps: 91,
       preservedBaselineVariants: 26,
       preservedBaselineCards: 286,
       newlyAddedPaperVariants: 65,
-      newlyAddedPhysicalMappings: 2250,
+      newlyAddedPhysicalMappings: 2247,
     });
     expect(papers).toHaveLength(91);
-    // 2566 until 2026-11-04: decision 5 folds 30 Foundation option entries into their 11 printed tasks.
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(2536);
+    // 2566 until 2026-11-04: decision 5 folds 30 Foundation option entries into their 11 printed tasks,
+    // then decision 4 withdraws the three 2022 Higher 3B(a) device entries (2536 -> 2533).
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(2533);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
     const indexPapers = reviewedArchiveEntries('irish').flatMap(entry => entry.papers);
@@ -206,7 +207,7 @@ describe('Irish exam-topic registry', () => {
     const topics = new Map(taxonomy.topics.map(topic => [topic.id, topic]));
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(examQuestionTopicMappingsForSubject('irish').filter(mapping => mapping.lang === 'iv'))
-      .toHaveLength(2536);
+      .toHaveLength(2533);
     for (const paper of papers) {
       for (const question of paper.q) {
         const ids = browseTopicIdsForQuestion(paper, question);
@@ -251,7 +252,7 @@ describe('Irish exam-topic registry', () => {
     ]);
   });
 
-  it('ships a finite paper-only fallback for all 2536 cards', () => {
+  it('ships a finite paper-only fallback for all 2533 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(VAULT_PREFER_ANCHORS.get('irish')?.('LC001ALP100IV.pdf')).toBe(true);
     for (const paper of papers) {
@@ -273,9 +274,9 @@ describe('Irish exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 2536 questions while keeping provider-only and oral buckets visibly empty', () => {
+  it('surfaces all 2533 questions while keeping provider-only and oral buckets visibly empty', () => {
     expect(subjectAtlasStats('irish')).toMatchObject({
-      questions: 2536,
+      questions: 2533,
       topics: 68,
       yearMin: 2010,
       yearMax: 2026,

@@ -51,32 +51,28 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
     }
   });
 
-  it('mechanically covers C(3,1) optional-poetry routes without losing (ii), (iii) or shared Gaeilge', () => {
-    const choices = ['íomhánna','codarsnacht','mothúcháin'];
-    const slugs = ['iomhanna','codarsnacht','mothuchain'];
-    const routes = CARDS.filter(c => /^irish-2022-hl-p2-poetry-3b-a-/.test(c.id));
-    expect(routes.map(c => c.id)).toEqual(slugs.map(s => 'irish-2022-hl-p2-poetry-3b-a-'+s));
-    expect(new Set(routes.map(c => c.id)).size).toBe(3);
-    routes.forEach((card,index) => {
-      expect(card.questionText).toContain('An rogha don chárta seo: '+choices[index]+'.');
-      expect(card.questionText).toMatch(/\(i\).*\(ii\).*\(iii\)/);
-      expect(card.questionText.startsWith('(a) (i)')).toBe(true);
-      expect(card.questionText).toContain('Conas a chuaigh an dán seo i bhfeidhm ort?');
-      expect(card.questionText).toContain('shaol agus ar shaothar an fhile');
-      expect(card.totalMarks).toBe(30);
-      if (card.rubric.system !== 'irish') throw new Error('Wrong rubric');
-      expect(card.rubric.criteria.map(c => [c.id,c.maxMarks])).toEqual([
-        ['eolas-i',13],['eolas-ii',5],['eolas-iii',7],['gaeilge',5],
-      ]);
-      expect(card.rubric.criteria[0].guidance.join(' ')).toContain('ar a laghad');
-      expect(card.rubric.criteria[2].guidance.join(' ')).toContain('bronn 0 ar an mír ar fad');
-      expect(irishMarks(card,irishFullScores(card))).toBe(30);
-    });
-    expect(byId.has('irish-2022-hl-p2-poetry-3b-a')).toBe(true);
+  it('keeps 2022 3B(a) as one card: the device (íomhánna, codarsnacht nó mothúcháin) is the student\'s choice inside one question', () => {
+    // Decision 4 (2026-11-04): the three device cards were branch-only and are withdrawn; no aliases.
+    expect(CARDS.filter(c => /^irish-2022-hl-p2-poetry-3b-a-/.test(c.id))).toEqual([]);
+    const card = byId.get('irish-2022-hl-p2-poetry-3b-a')!;
+    expect(card.questionText).toContain('íomhánna, codarsnacht nó mothúcháin');
+    expect(card.questionText).toMatch(/\(i\).*\(ii\).*\(iii\)/);
+    expect(card.questionText.startsWith('(a) (i)')).toBe(true);
+    expect(card.questionText).not.toContain('An rogha don chárta seo');
+    expect(card.totalMarks).toBe(30);
+    if (card.rubric.system !== 'irish') throw new Error('Wrong rubric');
+    expect(card.rubric.criteria.map(c => [c.id,c.maxMarks])).toEqual([
+      ['eolas-i',13],['eolas-ii',5],['eolas-iii',7],['gaeilge',5],
+    ]);
+    expect(card.rubric.criteria[0].guidance.join(' ')).toContain('ar a laghad');
+    expect(card.rubric.criteria[2].guidance.join(' ')).toContain('bronn 0 ar an mír ar fad');
+    expect(irishMarks(card,irishFullScores(card))).toBe(30);
+    const review = reviews.find(r => r.year === 2022)!;
+    expect(review.withdrawnCardIds).toEqual(['irish-2022-hl-p2-poetry-3b-a-codarsnacht','irish-2022-hl-p2-poetry-3b-a-iomhanna','irish-2022-hl-p2-poetry-3b-a-mothuchain']);
   });
 
-  it('joins all seventeen reviewed responses to exact Atlas task, topic and paper/scheme regions', () => {
-    expect(reviewed).toHaveLength(17);
+  it('joins all fourteen reviewed responses to exact Atlas task, topic and paper/scheme regions', () => {
+    expect(reviewed).toHaveLength(14);
     for (const raw of reviewed) {
       if (!('atlasQuestionId' in raw) || !('reviewedPaperPages' in raw) || !('schemePages' in raw)) throw new Error('Missing reviewed identity');
       const card = byId.get(raw.id)!;
@@ -127,7 +123,8 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
       expect(createHash('sha256').update(JSON.stringify(legacy)).digest('hex')).toBe(year === 2022
         ? '1e563fe88d83be836a4a4d3d02b9fa50d8db754d0f2e59218720173f5c47fdef'
         : '59c189047fa108b5f2e66888a2557ae388efc65e48fda35fd7cd44070ccf589e');
-      expect(map.q.filter((q: { n: string }) => /^[PF]-/.test(q.n))).toHaveLength(year === 2022 ? 10 : 9);
+      // 2022: ten until decision 4 withdrew the three 3B(a) device tasks (2026-11-04).
+      expect(map.q.filter((q: { n: string }) => /^[PF]-/.test(q.n))).toHaveLength(year === 2022 ? 7 : 9);
       expect(map.q.some((q: { n: string }) => q.n === 'R-A')).toBe(false);
       const anchors = JSON.parse(readFileSync(`public/paper-anchors/${year}/LC001ALP200IV.pdf.json`,'utf8'));
       expect(anchors.paperOnly).toBe(1);

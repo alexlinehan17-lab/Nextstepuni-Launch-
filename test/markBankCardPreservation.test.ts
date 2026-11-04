@@ -130,12 +130,11 @@ import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-educ
 // Additive partial-review routes are checked separately while the original
 // Irish 215-ID hash stays frozen. Do not refresh it during the archive audit.
 // The 2022/2024 optional-drama routes were withdrawn on 2026-10-12 (branch-only, never
-// live): the live 2B(a) card now carries the optional film or play.
+// live): the live 2B(a) card now carries the optional film or play. The 2022 3B(a) device
+// routes (-iomhanna, -codarsnacht, -mothuchain) were withdrawn on 2026-11-04 the same way
+// (decision 4): the live 3B(a) card carries the printed choice.
 const addedIrishRoutes = new Set([
   'irish-2022-hl-p2-prose-2a-a-an-lasair-choille',
-  'irish-2022-hl-p2-poetry-3b-a-iomhanna',
-  'irish-2022-hl-p2-poetry-3b-a-codarsnacht',
-  'irish-2022-hl-p2-poetry-3b-a-mothuchain',
   'irish-2024-hl-p2-prose-2a-a-an-lasair-choille',
   ...['a','b'].flatMap(passage => [1,2,3,4,5].flatMap(number =>
     ['a','bi','bii'].map(part => `irish-2024-hl-p2-reading-${passage}-q${number}-${part}`))),

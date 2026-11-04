@@ -27,15 +27,15 @@
     },
     "matchedLocalCardLinks": 744,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 2536,
-    "distinctStudentFacingQuestions": 2536,
+    "localPhysicalMappings": 2533,
+    "distinctStudentFacingQuestions": 2533,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 1850,
+    "retainedLocalQuestions": 1847,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 2250,
+    "newlyAddedPhysicalMappings": 2247,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -31928,45 +31928,6 @@
       "n": "P-2A-a-an-lasair-choille",
       "topicIds": [
         "irish-higher-prescribed-prose-archive"
-      ],
-      "provenance": "retained-local"
-    },
-    {
-      "level": "higher",
-      "lang": "iv",
-      "year": 2022,
-      "fileid": "LC001ALP200IV.pdf",
-      "paperKey": "p2",
-      "kind": "p2",
-      "n": "F-3B-a-iomhanna",
-      "topicIds": [
-        "irish-higher-studied-poetry-filiocht-roghnach"
-      ],
-      "provenance": "retained-local"
-    },
-    {
-      "level": "higher",
-      "lang": "iv",
-      "year": 2022,
-      "fileid": "LC001ALP200IV.pdf",
-      "paperKey": "p2",
-      "kind": "p2",
-      "n": "F-3B-a-codarsnacht",
-      "topicIds": [
-        "irish-higher-studied-poetry-filiocht-roghnach"
-      ],
-      "provenance": "retained-local"
-    },
-    {
-      "level": "higher",
-      "lang": "iv",
-      "year": 2022,
-      "fileid": "LC001ALP200IV.pdf",
-      "paperKey": "p2",
-      "kind": "p2",
-      "n": "F-3B-a-mothuchain",
-      "topicIds": [
-        "irish-higher-studied-poetry-filiocht-roghnach"
       ],
       "provenance": "retained-local"
     },
