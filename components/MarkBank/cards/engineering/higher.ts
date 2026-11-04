@@ -846,14 +846,6 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Have a ventilation system in place to deal with the toxic fumes.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Have all electrical units earthed and connections properly insulated.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2021-HL-paper-q6bi-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q6bi-art.png",
-          "srcHash": "38e3446d12f0548fd99ef96b3bac03e4",
-          "alt": "The table or diagram printed with 2021 HL Q6(b)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -969,14 +961,6 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Some chemical by-products may also be hazardous.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Petroleum products are likely to be long-life, presenting a challenge for disposal at end-of- life.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2021-HL-paper-q7bii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q7bii-art.png",
-          "srcHash": "360b58f9c648a69d07c6feee7727a3f2",
-          "alt": "The table or diagram printed with 2021 HL Q7(b)(ii), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -991,14 +975,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "The ethylene monomer (or mer) consists of hydrogen and carbon atoms as shown in the diagram.", marks: null },
     { id: "r-2", kind: "point", verbatim: "There is a strong and a weak bond between the carbon atoms. This monomer polymerises to form polyethylene by addition polymerisation.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2021-HL-paper-q7bii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q7bii-art.png",
-          "srcHash": "360b58f9c648a69d07c6feee7727a3f2",
-          "alt": "The table or diagram printed with 2021 HL Q7(b)(ii), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1012,14 +988,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Any three) 6 + 6 + 6", marks: 6 },
     ],
-    questionFigure: {
-          "candId": "engineering-2021-HL-paper-q7bii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q7bii-art.png",
-          "srcHash": "360b58f9c648a69d07c6feee7727a3f2",
-          "alt": "The table or diagram printed with 2021 HL Q7(b)(ii), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3246,14 +3214,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "A selection of plasticisers makes the polymer flexible, easier to mould and non-toxic.", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "Pigments give the plastic hull its tinted colour.", marks: 2 },
     ],
-    questionFigure: {
-          "candId": "engineering-2023-HL-paper-q7bi-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q7bi-art.png",
-          "srcHash": "bd55b86b2a330396878d031fe087d6fb",
-          "alt": "The table or diagram printed with 2023 HL Q7(b)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3314,14 +3274,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Used to produce fencing panels as plastic wood, containers, insulation, waterproof membrane sheets, etc.", marks: 8 },
     ],
-    questionFigure: {
-          "candId": "engineering-2023-HL-paper-q7ci-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q7ci-art.png",
-          "srcHash": "bdb96034637cf7e252e6ae923080ecce",
-          "alt": "The table or diagram printed with 2023 HL Q7(c)(i), as the State Examinations Commission set it. It reads: 1., collect, 2., sort, 3. shred, 4., wash, 5., fabricate, Polymer recycling process.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4795,14 +4747,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Helical gears are quieter in operation, have a greater gear meshing area which makes the stronger, helical gear teeth run smoother as they mesh with a number of teeth at the same time while spur gears only mesh one tooth at a time.", marks: 6 },
     ],
-    questionFigure: {
-          "candId": "engineering-2024-HL-paper-q9bi-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q9bi-art.png",
-          "srcHash": "eda3928788c576ad0829fc193917260c",
-          "alt": "The table or diagram printed with 2024 HL Q9(b)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4817,14 +4761,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Clutches are used in devices that have two rotating shafts. One of the shafts is typically driven by a motor or pulley, and the other shaft drives another device. The clutch connects the two shafts so that they can either be locked together and spin at the same speed or be decoupled and spin at different speeds.", marks: null },
     { id: "r-2", kind: "point", verbatim: "When your foot is off the clutch pedal in a manual car, springs push the pressure plate against the clutch disc, which in turn presses against the flywheel. This locks the engine to the transmission input shaft, causing them to spin at the same speed.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2024-HL-paper-q9bi-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q9bi-art.png",
-          "srcHash": "eda3928788c576ad0829fc193917260c",
-          "alt": "The table or diagram printed with 2024 HL Q9(b)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4840,14 +4776,6 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "It consists of a wire coil with a soft iron core. If a small current is passed through the coil, the iron core is magnetised and a pivoted armature is attracted towards the magnetised core.", marks: null },
     { id: "r-3", kind: "point", verbatim: "The movement of the armature closes the contacts and may open other contacts. These contacts can be used to control larger currents or a secondary circuit.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2024-HL-paper-q9bi-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q9bi-art.png",
-          "srcHash": "eda3928788c576ad0829fc193917260c",
-          "alt": "The table or diagram printed with 2024 HL Q9(b)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5533,14 +5461,6 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Ensure that the angles and alignment are accurate and secure the workpieces using clamps, jigs, or fixtures.", marks: null },
     { id: "r-5", kind: "point", verbatim: "Some metals, like high-carbon steel or thick materials, may require preheating to prevent cracking. Use a torch or heating element to bring the metal to the desired temperature.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2025-HL-paper-q6bv-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q6bv-art.png",
-          "srcHash": "f2ed35041036c773008d76f907281a36",
-          "alt": "The table or diagram printed with 2025 HL Question 6(b)(v), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5556,14 +5476,6 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "To form a slag coating which protects the weld from oxidation and ensures a slow cooling rate for the weld, this prevents cracks and brittleness.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Facilitates the striking action of the arc between the work and electrode.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2025-HL-paper-q6bv-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q6bv-art.png",
-          "srcHash": "f2ed35041036c773008d76f907281a36",
-          "alt": "The table or diagram printed with 2025 HL Question 6(b)(v), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5577,14 +5489,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Acetylene is safely stored in colour coded cylinders that contain a porous material soaked with a solvent like acetone. This method keeps the gas dissolved at low pressures, reducing the risk of explosion. The cylinders are stored upright in cool, well-ventilated areas, with safety features like pressure relief devices to further ensure safe storage.", marks: 6 },
     ],
-    questionFigure: {
-          "candId": "engineering-2025-HL-paper-q6bv-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q6bv-art.png",
-          "srcHash": "f2ed35041036c773008d76f907281a36",
-          "alt": "The table or diagram printed with 2025 HL Question 6(b)(v), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5599,14 +5503,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Friction welding is a solid-state fusion process that produces full contact, high quality joints. By rotating one work piece at high- speed relative to another, a compressive axial force is applied.", marks: null },
     { id: "r-2", kind: "point", verbatim: "This generates sufficient temperature to cause the interface to plasticise and fuse.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2025-HL-paper-q6bv-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q6bv-art.png",
-          "srcHash": "f2ed35041036c773008d76f907281a36",
-          "alt": "The table or diagram printed with 2025 HL Question 6(b)(v), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6024,14 +5920,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Bevel gears have a conical shape and are used to transmit rotational power through shafts that are typically at an angle of 90° to each other. They are typically used for motor transmission differential drives.", marks: 6 },
     ],
-    questionFigure: {
-          "candId": "engineering-2025-HL-paper-q9biii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q9biii-art.png",
-          "srcHash": "69edd2b5098351d4c4482b3de50ac745",
-          "alt": "The table or diagram printed with 2025 HL Q9(b)(iii), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6046,14 +5934,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Thermostats allow you to control the temperature of each room individually, rather heating the entire floor or entire property at the same time.", marks: null },
     { id: "r-2", kind: "point", verbatim: "This reduces energy wastage and excessive heat use, resulting in financial savings. Smart thermostats allow the user to control their heating system remotely.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2025-HL-paper-q9biii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q9biii-art.png",
-          "srcHash": "69edd2b5098351d4c4482b3de50ac745",
-          "alt": "The table or diagram printed with 2025 HL Q9(b)(iii), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6089,14 +5969,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "A single acting cylinder is a pneumatic output device that requires compressed air to make the piston move. If the air is removed the piston will return because of the spring.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Force of air moves ram No compressed air Compressed air applied", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2025-HL-paper-q9biii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q9biii-art.png",
-          "srcHash": "69edd2b5098351d4c4482b3de50ac745",
-          "alt": "The table or diagram printed with 2025 HL Q9(b)(iii), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6112,13 +5984,5 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "It consists of two conductive plates separated by an insulating material (dielectric). When a voltage is applied, electrons accumulate on one plate, creating a negative charge, while the other plate becomes positively charged. This creates an electric field between the plates, storing energy.", marks: null },
     { id: "r-3", kind: "point", verbatim: "When the circuit allows current to flow, the capacitor discharges, releasing the stored energy. Capacitors are used for energy storage, filtering and timing applications in electrical and electronic circuits.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2025-HL-paper-q9biii-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q9biii-art.png",
-          "srcHash": "69edd2b5098351d4c4482b3de50ac745",
-          "alt": "The table or diagram printed with 2025 HL Q9(b)(iii), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
-    },
   } as SecCard,
 ];

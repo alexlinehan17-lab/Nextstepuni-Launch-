@@ -3,6 +3,8 @@
 
     python3 scripts/markbank/authoring/eng_lift.py 2021 hl scheme 14            # every line, with its box
     python3 scripts/markbank/authoring/eng_lift.py 2021 hl scheme 14 36 60 560 120   # what a box lifts
+    python3 scripts/markbank/authoring/eng_lift.py --record 2021 hl   # the sitting's lifts into its .md
+    python3 scripts/markbank/authoring/eng_lift.py --check 2021 hl    # re-lift every recorded line
 
 The automatic author (eng_all.py) reads the scheme through eng_scheme, and on
 the parts it refuses the reader is usually what is wrong, not the scheme: a
@@ -98,6 +100,80 @@ def lift(year, level, doc, page, rect, *, bullet=True):
     return Lift(text, (year, level, doc, page, tuple(rect)))
 
 
+START = '<!-- markbank:eng-lifts -->'
+END = '<!-- /markbank:eng-lifts -->'
+
+
+def _lifts_in(obj, out):
+    # Duck-typed: run as __main__ this module's Lift is not the class the
+    # residue module imported, and isinstance would see no lifts at all.
+    if isinstance(obj, str) and hasattr(obj, 'source'):
+        out.append(obj)
+    elif isinstance(obj, dict):
+        for v in obj.values():
+            _lifts_in(v, out)
+    elif isinstance(obj, (list, tuple)):
+        for v in obj:
+            _lifts_in(v, out)
+    return out
+
+
+def record(year, level):
+    """Append (idempotently) the sitting's scheme lifts to its .md.
+
+    The provenance gate reads the markdown, and the flat extraction welds a
+    diagram's callouts into the prose printed beside it ("the scissor arm is
+    scissor pushed upwards raising the platform"), so a row lifted cleanly by
+    rectangle cannot trace there although the SEC printed every word of it in
+    order. Each lift the sitting's eng_residue module uses is written into an
+    APPEND-ONLY block with the page and rectangle it came from, so a reviewer
+    can lift it again and get the same words -- `check` below does exactly
+    that. Like the column and page-run renderings, it only adds lines: every
+    claim that traces today still traces.
+    """
+    import re as _re
+    import eng_residue
+    mod = eng_residue.module(year, level)
+    lifts = _lifts_in(getattr(mod, 'CARDS', []), []) if mod else []
+    lines, seen = [], set()
+    for lf in lifts:
+        y, l, doc, page, rect = lf.source
+        if doc != 'scheme' or (y, l) != (year, level) or str(lf) in seen:
+            continue
+        seen.add(str(lf))
+        lines.append(f'p{page} [{", ".join(f"{v:g}" for v in rect)}] {lf}')
+    md = os.path.join(BASE, 'schemes', f'{year}-{level}.md')
+    text = open(md, encoding='utf-8').read()
+    if START in text:
+        text = _re.sub(_re.escape(START) + r'.*?' + _re.escape(END) + r'\n?', '',
+                       text, flags=_re.S)
+    body = f'{START}\n' + '\n'.join(lines) + f'\n{END}\n'
+    with open(md, 'w', encoding='utf-8') as fh:
+        fh.write(text.rstrip('\n') + '\n\n' + body)
+    print(f'engineering {year} {level}: recorded {len(lines)} lifts in {os.path.basename(md)}')
+
+
+def check(year, level):
+    """Every recorded lift, lifted again from its page: the same words?"""
+    import re as _re
+    md = os.path.join(BASE, 'schemes', f'{year}-{level}.md')
+    text = open(md, encoding='utf-8').read()
+    m = _re.search(_re.escape(START) + r'\n(.*?)' + _re.escape(END), text, _re.S)
+    bad = 0
+    for line in (m.group(1).splitlines() if m else []):
+        if not line.strip():
+            continue
+        g = _re.match(r'^p(\d+) \[([^\]]+)\] (.*)$', line)
+        rect = [float(v) for v in g.group(2).split(',')]
+        again = lift(year, level, 'scheme', int(g.group(1)), rect)
+        if str(again) != g.group(3):
+            bad += 1
+            print(f'MISMATCH p{g.group(1)} {rect}: {g.group(3)[:60]!r} != {again[:60]!r}')
+    print(f'engineering {year} {level}: {len((m.group(1).splitlines()) if m else [])} '
+          f'recorded lifts, {bad} mismatched')
+    return bad
+
+
 def dump(year, level, doc, page):
     pg = _doc(year, level, doc)[page - 1]
     for b in pg.get_text('dict')['blocks']:
@@ -108,6 +184,9 @@ def dump(year, level, doc, page):
 
 
 if __name__ == '__main__':
+    if sys.argv[1] in ('--record', '--check'):
+        fn = record if sys.argv[1] == '--record' else check
+        sys.exit(1 if fn(int(sys.argv[2]), sys.argv[3]) else 0)
     y, l, d, p = int(sys.argv[1]), sys.argv[2], sys.argv[3], int(sys.argv[4])
     if len(sys.argv) > 8:
         print(repr(lift(y, l, d, p, [float(v) for v in sys.argv[5:9]])))

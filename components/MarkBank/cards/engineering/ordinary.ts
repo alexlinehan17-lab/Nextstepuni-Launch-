@@ -375,14 +375,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "When manual arc welding, slag forms on top of the weld helping to pull impurities out of the weld. The slag also forms a shield from the atmosphere reducing oxidisation of the weld. The shield also slows down the cooling rate of the weld when solidifying.", marks: 4 },
     ],
-    questionFigure: {
-          "candId": "engineering-2021-OL-paper-q4bi-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q4bi-art.png",
-          "srcHash": "7dfcc4ecadb58fc60dd4d4c40a6b6adb",
-          "alt": "The table or diagram printed with 2021 OL Q4(b)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -397,14 +389,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Always wear correct PPE such as a face welding mask.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Ensure the area is dry and all electric cables are in good condition.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2021-OL-paper-q4bi-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q4bi-art.png",
-          "srcHash": "7dfcc4ecadb58fc60dd4d4c40a6b6adb",
-          "alt": "The table or diagram printed with 2021 OL Q4(b)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1608,14 +1592,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Resistance / Spot welding.", marks: 5 },
     ],
-    questionFigure: {
-          "candId": "engineering-2023-OL-paper-q4ci-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4ci-art.png",
-          "srcHash": "9c7c728188a46f8bbb4d3ee39d13b518",
-          "alt": "The table or diagram printed with 2023 OL Q4(c)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1629,14 +1605,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The removal of grease and corrosion from joints before soldering ensures that the solder will adhere / join to the surface of the metals when the correct heat is applied. This will aid in a successful soldered joint.", marks: 5 },
     ],
-    questionFigure: {
-          "candId": "engineering-2023-OL-paper-q4ci-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4ci-art.png",
-          "srcHash": "9c7c728188a46f8bbb4d3ee39d13b518",
-          "alt": "The table or diagram printed with 2023 OL Q4(c)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2240,14 +2208,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The chemicals in adhesives can be dangerous especially if they evaporate and form a mist or vapor in the air. Working in a well- ventilated area will help to disperse the vapours reducing the danger of inhaling the chemicals.", marks: 5 },
     ],
-    questionFigure: {
-          "candId": "engineering-2024-OL-paper-q4ci-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q4ci-art.png",
-          "srcHash": "0dd4f1d8ed0949d80739662640f07f18",
-          "alt": "The table or diagram printed with 2024 OL Q4(c)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2261,14 +2221,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flux helps to remove oxide layer which forms on the surface of metals being soldered. The flux increases the wetting ability of the solder, causing it to flow more uniformly over the surfaces being soldered, thus a better more successful joint is achieved.", marks: 5 },
     ],
-    questionFigure: {
-          "candId": "engineering-2024-OL-paper-q4ci-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q4ci-art.png",
-          "srcHash": "0dd4f1d8ed0949d80739662640f07f18",
-          "alt": "The table or diagram printed with 2024 OL Q4(c)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2282,14 +2234,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Locknuts are used in assembling project work because the nylon insert ensures that they do not loosen due to vibrations.", marks: 5 },
     ],
-    questionFigure: {
-          "candId": "engineering-2024-OL-paper-q4ci-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q4ci-art.png",
-          "srcHash": "0dd4f1d8ed0949d80739662640f07f18",
-          "alt": "The table or diagram printed with 2024 OL Q4(c)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2778,14 +2722,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Pop riveting / Machine screws.", marks: 5 },
     ],
-    questionFigure: {
-          "candId": "engineering-2025-OL-paper-q4civ-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2025-OL-paper-q4civ-art.png",
-          "srcHash": "5e7bcfea2764d63b9b724ffc3cecc592",
-          "alt": "The table or diagram printed with 2025 OL Q4(c)(iv), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2800,14 +2736,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Flux cleans the surfaces and protects them from oxidation during the soldering process, ensuring better adhesion.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Flux enhances the wetting properties of the solder, allowing it to flow more easily and uniformly across the surfaces being joined.", marks: null },
     ],
-    questionFigure: {
-          "candId": "engineering-2025-OL-paper-q4civ-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2025-OL-paper-q4civ-art.png",
-          "srcHash": "5e7bcfea2764d63b9b724ffc3cecc592",
-          "alt": "The table or diagram printed with 2025 OL Q4(c)(iv), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
-    },
   } as SecCard,
   {
     ...base, kind: "question",

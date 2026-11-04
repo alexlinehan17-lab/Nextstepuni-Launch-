@@ -631,6 +631,9 @@ def main():
     # keyed by the part they were cut FOR. A card that carries the crop is no
     # longer a ghost, so this is read before the figure gate below.
     figs = {}
+    # A roman's crop offered to the rest of its letter, kept apart from the
+    # crops cut for a part itself -- see the lookup below.
+    shared = {}
     manifest = os.path.join(ROOT, 'components/MarkBank/figures.json')
     if os.path.exists(manifest):
         for key in json.load(open(manifest)):
@@ -646,7 +649,7 @@ def main():
                 # describes its operation from the labels on it. Registering
                 # the letter as well is what lets the siblings find it.
                 if rm:
-                    figs.setdefault((year, level, q, le, None), key)
+                    shared.setdefault((year, level, q, le, None), key)
 
     idx = R.leaf_index(census_subject('engineering'))
     cards, refused = [], collections.Counter()
@@ -849,6 +852,43 @@ def main():
             figure = (figs.get((year, level, q, key[1], key[2]))
                       or figs.get((year, level, q, letter, roman))
                       or figs.get((year, level, q, key[1], None)))
+            # A sibling roman's picture only where this part, or the letter it
+            # sits under, points at printed matter. One iron-carbon diagram is
+            # printed for the whole of 2021 Higher Q4(b) -- "(b) The diagram
+            # shows ..." -- and every roman beneath it reads off it; but under
+            # "Answer any three of the following:" each roman is a question of
+            # its own, and 2021 Higher Q7(b)(i), "Describe the main differences
+            # between natural rubber and synthetic rubber", was shown the
+            # plastic pultrusion line printed for (b)(ii). Forty such cards
+            # across 2021-2025 carried a picture of a different question.
+            if not figure and shared.get((year, level, q, key[1], None)):
+                try:
+                    up = ' '.join(((A.paper.text(q, key[1], None) or '') + ' '
+                                   + (A.paper.stem(q, key[1]) or '')).split())
+                except Exception:                            # noqa: BLE001
+                    up = ''
+                need = f'{joined} {up}'
+                own = shared[(year, level, q, key[1], None)]
+                part = re.search(r'-q\d+([a-m])([ivx]+)-art$', own)
+                # ... or this part refers to the one the picture was cut for
+                # ("any one of the manufacturing processes named by you at
+                # 5(a)(i) above"), or the letter's stem is the picture's own
+                # caption and this ask names it ("Brake disc" over "a suitable
+                # hardening heat treatment process for the brake disc").
+                cites = bool(part) and re.search(
+                    rf'\b{q}\s*\(\s*{part.group(1)}\s*\)\s*\(\s*{part.group(2)}\s*\)',
+                    whole)
+                try:
+                    caption = ' '.join((A.paper.stem(q, key[1]) or '').split())
+                except Exception:                            # noqa: BLE001
+                    caption = ''
+                captioned = (caption and len(caption.split()) <= 4
+                             and not re.search(r'[.?!:]$', caption)
+                             and caption.lower() in ' '.join(whole.split()).lower())
+                if (cardlint.FIG_REF.search(need)
+                        or cardlint.NAMES_LETTERS.search(need)
+                        or cites or captioned):
+                    figure = own
             here = (year, level) + key
             if here in WITHHELD:
                 note(WITHHELD[here])
@@ -1033,7 +1073,8 @@ def main():
         # gates. Last, so nothing above can move because of them.
         residue[(year, level)] = eng_residue.build(
             A, year, level, {c['id'] for c in A.cards}, set(figs_all),
-            topic_for_part, keeps_stem, concept_for)
+            topic_for_part, keeps_stem, concept_for,
+            checked=lambda key, y=year, lv=level: CHECKED.get((y, lv) + key))
         cards.extend(A.cards)
 
     if args.verdicts:

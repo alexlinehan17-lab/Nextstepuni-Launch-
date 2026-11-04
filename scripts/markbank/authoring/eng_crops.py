@@ -61,8 +61,27 @@ def describe(year, level, spec):
 
 def render(year, level, spec, out):
     with pymupdf.open(path_for(year, level, spec['doc'])) as doc:
-        pix = doc[spec['page'] - 1].get_pixmap(clip=pymupdf.Rect(*spec['rect']),
-                                               dpi=DPI)
+        page = doc[spec['page'] - 1]
+        if spec.get('image'):
+            # The embedded photograph itself, where the page sets prose over
+            # or against its edges and no rectangle takes the picture without
+            # a fragment of a neighbouring line: the image whose placement on
+            # the page is `rect`, drawn alone at the same resolution.
+            want = pymupdf.Rect(*spec['rect'])
+            for im in page.get_images(full=True):
+                for r in page.get_image_rects(im[0]):
+                    if abs(r.x0 - want.x0) < 2 and abs(r.y0 - want.y0) < 2 \
+                            and abs(r.x1 - want.x1) < 2 and abs(r.y1 - want.y1) < 2:
+                        pix = pymupdf.Pixmap(doc, im[0])
+                        if pix.alpha or pix.n > 3:
+                            pix = pymupdf.Pixmap(pymupdf.csRGB, pix)
+                        scale = DPI / 72 * want.width / pix.width
+                        if scale < 1:
+                            pix.shrink(int(1 / scale).bit_length() - 1)
+                        pix.save(out)
+                        return
+            raise SystemExit(f'{out}: no image placed at {spec["rect"]} on page {spec["page"]}')
+        pix = page.get_pixmap(clip=pymupdf.Rect(*spec['rect']), dpi=DPI)
         pix.save(out)
 
 
@@ -85,7 +104,7 @@ def main():
     for name, spec in crops.items():
         if not name.startswith(stem):
             raise SystemExit(f'{name}: a {args.year} {args.level} crop is named {stem}...')
-        if spec.get('solution') != (spec['doc'] == 'scheme'):
+        if bool(spec.get('solution')) != (spec['doc'] == 'scheme'):
             raise SystemExit(f'{name}: a scheme crop is a solution and a paper crop is not')
     if args.review:
         os.makedirs(args.review, exist_ok=True)

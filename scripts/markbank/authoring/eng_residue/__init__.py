@@ -20,7 +20,9 @@ A module holds:
   CARDS  [dict(key=(q, letter, roman), why=..., ...lib.card arguments...)]
 
 A residue card the automatic author already builds is an error, not a merge:
-the entry is stale and must go, or the two would disagree about one id.
+the entry is stale and must go, or the two would disagree about one id --
+unless the entry says `replaces=`: the automatic card was opened and is
+wrong, and the reviewed card takes its place under the same id.
 """
 import importlib
 import os
@@ -54,7 +56,7 @@ def part_id(year, level, q, letter, roman):
 
 
 def build(A, year, level, built, figure_keys, topic_for_part, keeps_stem,
-          concept_for):
+          concept_for, checked=lambda key: None):
     """Add this sitting's residue cards to A.cards. -> [card ids]"""
     mod = module(year, level)
     if mod is None:
@@ -66,7 +68,16 @@ def build(A, year, level, built, figure_keys, topic_for_part, keeps_stem,
         where = f'eng_residue {year} {level} {cid}'
         if not entry.get('why'):
             raise SystemExit(f'{where}: say what the page shows (why=)')
-        if cid in built:
+        if entry.get('replaces'):
+            # A card the automatic author builds and a person has opened and
+            # found WRONG -- a tariff for an answer, half a sentence, an axis
+            # read as prose. Rebuilt under the SAME id from the page, so a
+            # student's history stays with it; `replaces` says what was wrong.
+            if cid not in built:
+                raise SystemExit(f'{where}: replaces a card the automatic author '
+                                 f'no longer builds -- the entry is stale')
+            A.cards[:] = [c for c in A.cards if c['id'] != cid]
+        elif cid in built:
             raise SystemExit(f'{where}: the automatic author already builds this '
                              f'card -- the entry is stale; remove it')
         for fk in (entry.get('figure'), entry.get('question_figure')):
@@ -99,6 +110,10 @@ def build(A, year, level, built, figure_keys, topic_for_part, keeps_stem,
         if 'labels' in kwargs:
             kwargs['labels'] = labels
         kwargs.setdefault('source', 'table')
+        # The automatic author's reviewed observation about this page, where
+        # it has one (eng_all.CHECKED), unless the entry gives its own.
+        if 'checked' not in kwargs and checked((q, letter, roman)):
+            kwargs['checked'] = checked((q, letter, roman))
         try:
             A.card(q, letter, roman, topic=topic,
                    concept=entry.get('concept') or concept_for(ask),
