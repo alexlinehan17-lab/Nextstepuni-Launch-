@@ -266,7 +266,7 @@ def build():
                 questionRef=f'{YEAR} OL Paper 1 Ceapadóireacht {group}({roman})', questionText=body, totalMarks=50, topicId=topic,
                 conceptId=f'irish-composition-{group.lower()}', paperPage=7, schemePage=10, taskRequirements=COMPOSITION_REQUIREMENTS,
                 criteria=[criterion('tasc', 'An Tasc', 2, [c['marking'].split('An tÁbhar (8 marc)')[0]], permitted=[0, 2]),
-                          criterion('abhar', 'An tÁbhar', 8, [c['marking'].split('An tÁbhar (8 marc)', 1)[1].split('An Cumas Gaeilge (40 marc)')[0]], 'indicative'),
+                          criterion('abhar', 'An tÁbhar', 8, [c['marking'].split('An tÁbhar (8 marc)', 1)[1].split('An Cumas Gaeilge (40 marc)')[0]]),
                           criterion('gaeilge', 'An Cumas Gaeilge', 40, [c['marking'].split('An Cumas Gaeilge (40 marc)', 1)[1], c['table40'],
                                     'Scéim Mharcála Mhodhnaithe (scheme PDF 27–28): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted.'])],
                 markingGuideNote=f'Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. The {YEAR} scheme prints the 40-mark table (scheme PDF 11) '
