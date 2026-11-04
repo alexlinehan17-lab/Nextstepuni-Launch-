@@ -1374,6 +1374,25 @@ const economicsAdditionIds = new Set([
   'econ-2015-hl-sb-q7-b', 'econ-2015-hl-sb-q7-c-i', 'econ-2015-hl-sb-q7-c-ii', 'econ-2015-hl-sb-q8-a-agree',
   'econ-2015-hl-sb-q8-a-disagree', 'econ-2015-hl-sb-q8-b-i', 'econ-2015-hl-sb-q8-b-ii', 'econ-2015-hl-sb-q8-c-i',
   'econ-2015-hl-sb-q8-c-ii',
+  // 2015 Ordinary (old syllabus, the paper's first cards, 2026-11-04): 71, none replacing a frozen ID
+  'econ-2015-ol-sa-q1', 'econ-2015-ol-sa-q2', 'econ-2015-ol-sa-q3', 'econ-2015-ol-sa-q4', 'econ-2015-ol-sa-q5',
+  'econ-2015-ol-sa-q6', 'econ-2015-ol-sa-q7-i', 'econ-2015-ol-sa-q7-ii', 'econ-2015-ol-sa-q8',
+  'econ-2015-ol-sa-q9-a', 'econ-2015-ol-sa-q9-b', 'econ-2015-ol-sb-q1-a-i', 'econ-2015-ol-sb-q1-a-ii',
+  'econ-2015-ol-sb-q1-b-i', 'econ-2015-ol-sb-q1-b-ii', 'econ-2015-ol-sb-q1-c-i', 'econ-2015-ol-sb-q1-c-ii',
+  'econ-2015-ol-sb-q1-c-iii', 'econ-2015-ol-sb-q2-a', 'econ-2015-ol-sb-q2-b-i', 'econ-2015-ol-sb-q2-b-ii',
+  'econ-2015-ol-sb-q2-b-iii', 'econ-2015-ol-sb-q2-c-i', 'econ-2015-ol-sb-q2-c-ii', 'econ-2015-ol-sb-q3-a-i',
+  'econ-2015-ol-sb-q3-a-ii', 'econ-2015-ol-sb-q3-a-iii', 'econ-2015-ol-sb-q3-b-i', 'econ-2015-ol-sb-q3-b-ii',
+  'econ-2015-ol-sb-q3-c-i', 'econ-2015-ol-sb-q3-c-ii', 'econ-2015-ol-sb-q4-a', 'econ-2015-ol-sb-q4-b-i',
+  'econ-2015-ol-sb-q4-b-ii', 'econ-2015-ol-sb-q4-b-iii', 'econ-2015-ol-sb-q4-c-i', 'econ-2015-ol-sb-q4-c-ii-marx',
+  'econ-2015-ol-sb-q4-c-ii-smith', 'econ-2015-ol-sb-q4-c-ii-malthus', 'econ-2015-ol-sb-q4-c-ii-ricardo',
+  'econ-2015-ol-sb-q5-a-i', 'econ-2015-ol-sb-q5-a-ii', 'econ-2015-ol-sb-q5-a-iii', 'econ-2015-ol-sb-q5-b-i',
+  'econ-2015-ol-sb-q5-b-ii', 'econ-2015-ol-sb-q5-b-iii', 'econ-2015-ol-sb-q5-c', 'econ-2015-ol-sb-q6-a-i',
+  'econ-2015-ol-sb-q6-a-ii', 'econ-2015-ol-sb-q6-a-iii', 'econ-2015-ol-sb-q6-b-i', 'econ-2015-ol-sb-q6-b-ii',
+  'econ-2015-ol-sb-q6-b-iii', 'econ-2015-ol-sb-q6-c-i', 'econ-2015-ol-sb-q6-c-ii', 'econ-2015-ol-sb-q6-c-iii',
+  'econ-2015-ol-sb-q7-a-i', 'econ-2015-ol-sb-q7-a-ii', 'econ-2015-ol-sb-q7-a-iii', 'econ-2015-ol-sb-q7-b-i',
+  'econ-2015-ol-sb-q7-b-ii', 'econ-2015-ol-sb-q7-c-i', 'econ-2015-ol-sb-q7-c-ii', 'econ-2015-ol-sb-q8-a-i',
+  'econ-2015-ol-sb-q8-a-ii', 'econ-2015-ol-sb-q8-a-iii', 'econ-2015-ol-sb-q8-b-i', 'econ-2015-ol-sb-q8-b-ii',
+  'econ-2015-ol-sb-q8-b-iii', 'econ-2015-ol-sb-q8-c-i', 'econ-2015-ol-sb-q8-c-ii',
 ]);
 const economicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('econ-'));
 /* Agricultural Science keeps its 869 pre-audit IDs frozen (438 Higher + 431
@@ -1690,7 +1709,8 @@ describe('Mark Bank card preservation', () => {
     // + 72 for 2018 Ordinary (475 -> 547); + 62 for 2017 Higher (547 -> 609); + 63 for 2017 Ordinary (609 -> 672);
     // + 62 for 2016 Higher (672 -> 734); + 81 for 2016 Ordinary (734 -> 815).
     // + 58 for 2015 Higher (815 -> 873).
-    expect(economicsAdditionIds.size).toBe(873);
+    // + 71 for 2015 Ordinary (873 -> 944).
+    expect(economicsAdditionIds.size).toBe(944);
     expect(economicsAliasIds).toHaveLength(36);
     for (const id of economicsAdditionIds) {
       const deck = id.includes('-hl-') ? higher : ordinary;
@@ -1707,7 +1727,7 @@ describe('Mark Bank card preservation', () => {
     }
     const additions = (level: string) => [...economicsAdditionIds].filter(id => id.includes(level)).length;
     const aliased = (level: string) => economicsAliasIds.filter(id => id.includes(level)).length;
-    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([509, 24, 364, 12]);
+    expect([additions('-hl-'), aliased('-hl-'), additions('-ol-'), aliased('-ol-')]).toEqual([509, 24, 435, 12]);
     expect(ECON_HIGHER).toHaveLength(383 - aliased('-hl-') + additions('-hl-'));
     expect(ECON_ORDINARY).toHaveLength(314 - aliased('-ol-') + additions('-ol-'));
   });

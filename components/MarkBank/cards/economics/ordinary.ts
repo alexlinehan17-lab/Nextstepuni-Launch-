@@ -30,6 +30,1882 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sa-q1", topicId: "economics-0-1", conceptId: "factors-and-their-examples",
+    section: "A", questionRef: "2015 OL Section A Q1(i)–(iv)",
+    questionText: "Insert the factor of production or an appropriate example of the factor of production into the four spaces provided below.",
+    tariffModel: {"kind":"fixed","notation":"8 + 4 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each space filled", marks: 16, contextNote: "All four spaces: the first correct response 8 marks, the 2nd 4, the 3rd and 4th 2 each. The spaces sit in the paper’s table: (i) the example of land, (ii) the factor of a teacher, (iii) the example of capital, (iv) the factor of a business owner.", openList: true, group: {"claimMax":4,"perOption":8,"options":["(i) AGRICULTURAL LAND oil & gas deposits etc.","(ii) LABOUR","(iii) MACHINERY, infrastructure etc.","(iv) ENTERPRISE"],"perOptionSteps":[8,4,2,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-OL-paper-p02-q1-table",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p02-q1-table.png",
+          "srcHash": "8e91b5307508543b903b6c5a4066e65b",
+          "alt": "A table of two rows. Factor of Production: LAND, (ii) blank, CAPITAL, (iv) blank. Example: (i) blank, TEACHER, (iii) blank, BUSINESS OWNER.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sa-q2", topicId: "economics-2-0", conceptId: "perfect-competition-true-or-false",
+    section: "A", questionRef: "2015 OL Section A Q2(i)–(iv)",
+    questionText: "Which of the characteristics / assumptions listed below refer to Perfect Competition? (Write True or False after each sentence.) (i) The goods are homogenous / identical. (ii) Barriers to entry exist in this market. (iii) There are many buyers and sellers in the market. (iv) The goods are close substitutes.",
+    tariffModel: {"kind":"fixed","notation":"8 + 4 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each sentence marked correctly", marks: 16, contextNote: "All four: the first correct response 8 marks, the 2nd 4, the 3rd and 4th 2 each.", openList: true, group: {"claimMax":4,"perOption":8,"options":["TRUE — (i) The goods are homogenous / identical.","FALSE — (ii) Barriers to entry exist in this market.","TRUE — (iii) There are many buyers and sellers in the market.","FALSE — (iv) The goods are close substitutes."],"perOptionSteps":[8,4,2,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sa-q3", topicId: "economics-3-1", conceptId: "corporation-tax-at-12-5",
+    section: "A", questionRef: "2015 OL Section A Q3",
+    questionText: "The rate of Corporation Tax in Ireland is currently 12.5 %. Explain the underlined term and outline one possible reason why the Irish Government retained the rate at 12.5 % in Budget 2015.",
+    tariffModel: {"kind":"fixed","notation":"10 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-explanation", kind: "point", verbatim: "This is a tax on the profits made by businesses (in Ireland).", marks: 10, contextNote: "The explanation, 10 marks (5 + 5).", openList: true },
+    { id: "r-reason", kind: "anyN", verbatim: "A reason — any one", marks: 6, contextNote: "One reason, 6 marks.", openList: true, group: {"claimMax":1,"perOption":6,"options":["To continue to attract foreign direct investment (FDI) into Ireland.","To have a competitive tax rate.","To enable businesses in Ireland re-invest more profits and thereby remain competitive.","To enable businesses to expand their operations and increase employment.","To increase economic growth.","To increase exports: some firms may export the output produced.","To improve government finances through increased CPT, Income tax and VAT."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sa-q4", topicId: "economics-4-2", conceptId: "visible-exports-and-invisible-imports",
+    section: "A", questionRef: "2015 OL Section A Q4",
+    questionText: "Choose the correct words from the list below to complete the following two statements: Sale Purchase Goods Services Statement A: Visible exports are defined as the … of Irish … to foreign countries. Statement B: Invisible imports are defined as the … of foreign … by Irish people.",
+    tariffModel: {"kind":"fixed","notation":"6 + 6 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each word placed", marks: 16, contextNote: "The four words, as the scheme completes the statements: Visible exports are defined as the Sale of Irish Goods to foreign countries. Invisible imports are defined as the Purchase of foreign Services by Irish people. The first 2 correct responses 6 marks each, the 3rd and 4th 2 each.", openList: true, group: {"claimMax":4,"perOption":6,"options":["Statement A — Sale","Statement A — Goods","Statement B — Purchase","Statement B — Services"],"perOptionSteps":[6,6,2,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sa-q5", topicId: "economics-4-0", conceptId: "ldcs-and-supporting-them",
+    section: "A", questionRef: "2015 OL Section A Q5(a)–(b)",
+    questionText: "State two economic characteristics of Less Developed Countries (LDCs). Outline one way Ireland (the Irish Government or Irish citizens) could support LDCs.",
+    tariffModel: {"kind":"fixed","notation":"6 + 6 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two characteristics and one way", marks: 16, contextNote: "Two characteristics for (a) and one way for (b). The scheme prices the three on one ladder, not by part: the first 2 correct responses 6 marks each, the 3rd 4.", openList: true, group: {"claimMax":3,"perOption":6,"options":["(a) State two economic characteristics — Low per capita income / low standard of living / widespread poverty","(a) State two economic characteristics — Inadequate/poor infrastructure","(a) State two economic characteristics — Large percentage of the population engaged in extractive/primary industries.","(a) State two economic characteristics — Lack of capital","(a) State two economic characteristics — Poor provision of state services/low literacy levels/ disease and a poor standard of health","(a) State two economic characteristics — High National /Foreign Debt","(a) State two economic characteristics — High levels of unemployment","(a) State two economic characteristics — Possible exploitation by multinationals: low wage rates for workers / lack of care for the environment / low export prices","(a) State two economic characteristics — High population growth rates","(a) State two economic characteristics — Famine/ low life expectancy.","(b) Outline one way — Citizens could buy goods produced in LDCs / buy Fair Trade products.","(b) Outline one way — Citizens could campaign for debt reduction / change in government policies.","(b) Outline one way — Citizens could volunteer to work in LDCs.","(b) Outline one way — Donations including financial aid by citizens.","(b) Outline one way — Irish government could increase financial aid to LDCs (in line with UN target).","(b) Outline one way — Irish government, through the EU, could seek a re-negotiation of the debts of LDCs."],"perOptionSteps":[6,6,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sa-q6", topicId: "economics-3-3", conceptId: "ecb-cpi-and-wto",
+    section: "A", questionRef: "2015 OL Section A Q6",
+    questionText: "What do the following letters stand for? (Write each answer in the space provided.) ECB CPI WTO",
+    tariffModel: {"kind":"fixed","notation":"6 + 6 + 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each name in full", marks: 17, contextNote: "All three: the first 2 correct responses 6 marks each (2 + 2 + 2), the 3rd 5 (2 + 2 + 1).", openList: true, group: {"claimMax":3,"perOption":6,"options":["ECB — European Central Bank","CPI — Consumer Price Index","WTO — World Trade Organisation"],"perOptionSteps":[6,6,5]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sa-q7-i", topicId: "economics-1-4", conceptId: "the-negative-sign",
+    section: "A", questionRef: "2015 OL Section A Q7(i)",
+    stem: "Suppose the Apple iPhone 6 has a Price Elasticity of Demand (PED) of – 2.8.",
+    questionText: "Explain what is meant by the negative (–) sign.",
+    tariffModel: {"kind":"fixed","notation":"10","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "This means that as the price of this good rises quantity demanded falls.", marks: 10, contextNote: "The explanation, 10 marks (5 + 5).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sa-q7-ii", topicId: "economics-1-4", conceptId: "reading-price-elasticity",
+    section: "A", questionRef: "2015 OL Section A Q7(ii)",
+    stem: "Suppose the Apple iPhone 6 has a Price Elasticity of Demand (PED) of – 2.8.",
+    questionText: "Circle the correct answer in each case to complete the following statement. A 10% decrease in the market price of this Apple iPhone 6 will result in a fall / rise in the quantity demanded by 28% / 2.8%.",
+    tariffModel: {"kind":"fixed","notation":"4 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each circled answer", marks: 7, contextNote: "Both circled answers, as the scheme boxes them: a rise, by 28%. The first correct 4 marks, the second 3.", openList: true, group: {"claimMax":2,"perOption":4,"options":["rise","28%"],"perOptionSteps":[4,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sa-q8", topicId: "economics-3-2", conceptId: "the-brain-drain",
+    section: "A", questionRef: "2015 OL Section A Q8",
+    questionText: "Some economists say Ireland is experiencing a ‘Brain Drain’ due to emigration. Explain the underlined term and state one other economic problem that Ireland may experience due to emigration.",
+    tariffModel: {"kind":"fixed","notation":"10 + 7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-explanation", kind: "point", verbatim: "The emigration of many of the most highly educated Irish workers to rich countries.", marks: 10, contextNote: "The explanation, 10 marks.", openList: true },
+    { id: "r-problem", kind: "anyN", verbatim: "One other economic problem — any one", marks: 7, contextNote: "One other problem, 7 marks.", openList: true, group: {"claimMax":1,"perOption":7,"options":["Possible higher dependency ratio / increased taxation.","The state loses out on its investment in the education/training of these citizens.","Smaller domestic market and reduced opportunities for investment by businesses / entrepreneurs."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sa-q9-a", topicId: "economics-1-1", conceptId: "benefits-of-online-shopping",
+    section: "A", questionRef: "2015 OL Section A Q9(a)",
+    stem: "There are more Irish consumers buying/shopping online (internet).",
+    questionText: "Outline two economic benefits of this development for Irish consumers.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":4,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A benefit — any two", marks: 12, contextNote: "Two benefits, 6 marks each.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Greater choice of goods and services: More choice than may be available in your local town.","More competitive prices: retailers may offer lower prices online due to increased sales / lower costs / economies of scale / discounts to online buyers.","Convenience: people can buy from their own homes 24/7.","Savings: lower costs of shopping for consumer: no need to travel to shops saving on fuel, parking fees etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sa-q9-b", topicId: "economics-3-0", conceptId: "costs-of-online-shopping",
+    section: "A", questionRef: "2015 OL Section A Q9(b)",
+    stem: "There are more Irish consumers buying/shopping online (internet).",
+    questionText: "Outline one possible economic cost of this development for the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 5","answer":1,"ofParts":4,"perPart":5}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A cost — any one", marks: 5, contextNote: "One cost, 5 marks.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Decline in domestic economic activity due to the possible reduction in people shopping.","Job losses: retailers reduce number of employees due to reduced store sales.","Reduction in tax revenues for Government: reduced VAT takings, possible reduction in CPT, Income tax and USC.","Possible increased imports into the economy: resulting in a leakage from the circular flow of income."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q1-a-i", topicId: "economics-2-0", conceptId: "labels-of-imperfect-competition",
+    section: "B", questionRef: "2015 OL Section B Q1(a)(i)",
+    stem: "The diagram below represents the long run equilibrium of a firm in Imperfect Competition. Copy the diagram into your answer book.",
+    questionText: "State what each of the 5 labels circled above represent.",
+    tariffModel: {"kind":"fixed","notation":"5 @ 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    rows: [
+    { id: "r-p", kind: "point", verbatim: "P — Price", marks: 5, contextNote: "P, 5 marks.", openList: true },
+    { id: "r-q", kind: "point", verbatim: "Q — Quantity", marks: 5, contextNote: "Q, 5 marks.", openList: true },
+    { id: "r-ac", kind: "point", verbatim: "AC — Average Cost", marks: 5, contextNote: "AC, 5 marks (3 + 2).", openList: true },
+    { id: "r-mc", kind: "point", verbatim: "MC — Marginal Cost", marks: 5, contextNote: "MC, 5 marks (3 + 2).", openList: true },
+    { id: "r-ar", kind: "point", verbatim: "AR — Average Revenue", marks: 5, contextNote: "AR, 5 marks (3 + 2).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-OL-paper-p05-q1-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p05-q1-diagram.png",
+          "srcHash": "c07880301d5f3afa9c3d21b29cc18a57",
+          "alt": "A diagram with P on the vertical axis and Q on the horizontal: a falling AR line, a steeper falling line marked Marginal Revenue, a U-shaped AC curve touching AR at a dot and an MC curve rising through the point S, where it meets the Marginal Revenue line. The labels P, Q, AC, MC and AR are circled.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q1-a-ii", topicId: "economics-2-0", conceptId: "equilibrium-in-imperfect-competition",
+    section: "B", questionRef: "2015 OL Section B Q1(a)(ii)",
+    stem: "The diagram below represents the long run equilibrium of a firm in Imperfect Competition. Copy the diagram into your answer book.",
+    questionText: "The firm is in equilibrium at point S. Show on your diagram: • The quantity the firm will produce in equilibrium (use label Q1) • The price the firm will charge for Q1. (use label P1)",
+    tariffModel: {"kind":"fixed","notation":"3 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each label shown", marks: 5, contextNote: "Q1 and P1: the 1st correct response 3 marks, the 2nd 2. The completed diagram is shown with the answer.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Q1 the quantity the firm will produce","P1 the price charged for this output"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2015-OL-paper-p05-q1-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p05-q1-diagram.png",
+          "srcHash": "c07880301d5f3afa9c3d21b29cc18a57",
+          "alt": "A diagram with P on the vertical axis and Q on the horizontal: a falling AR line, a steeper falling line marked Marginal Revenue, a U-shaped AC curve touching AR at a dot and an MC curve rising through the point S, where it meets the Marginal Revenue line. The labels P, Q, AC, MC and AR are circled.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2015-OL-scheme-p09-q1a-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-scheme-p09-q1a-diagram.png",
+          "srcHash": "e764cb7d7c050f3c8f16eb1f4dd599ee",
+          "alt": "The marking scheme’s completed diagram: P against Q, a falling AR line, a steeper falling MR line, a U-shaped AC curve touching AR at a dot and an MC curve rising through S, where MC meets MR. An arrow runs down from S to Q1 on the quantity axis, and from the dot on AR an arrow runs left to P1 on the price axis.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q1-b-i", topicId: "economics-2-0", conceptId: "barriers-to-entry",
+    section: "B", questionRef: "2015 OL Section B Q1(b)(i)",
+    stem: "There are no barriers to entry in Imperfect Competition.",
+    questionText: "Explain the term barriers to entry.",
+    tariffModel: {"kind":"fixed","notation":"4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Are those factors which may prevent other firms from entering a market/ an industry.", marks: 4, contextNote: "The explanation, 4 marks. Example only (2 marks): Example: a single firm may have sole ownership of a factor of production/key resource.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q1-b-ii", topicId: "economics-2-0", conceptId: "characteristics-of-imperfect-competition",
+    section: "B", questionRef: "2015 OL Section B Q1(b)(ii)–(iii)",
+    stem: "There are no barriers to entry in Imperfect Competition.",
+    questionText: "State two other characteristics of Imperfect Competition. Write brief notes on each of these.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 8","answer":2,"ofParts":5,"perPart":8}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A characteristic, with its note — any two", marks: 16, contextNote: "Two characteristics, 8 marks each (4 + 4): the scheme prices (ii) and (iii) together.", openList: true, group: {"claimMax":2,"perOption":8,"options":["There are many buyers. • No individual buyer can influence by his/her own actions the market price of the goods.","There are many sellers. • Each seller acts independently. • An individual seller can influence the quantity sold by the price it charges for its output.","Differentiated products. • There are differences between the goods produced. • It’s possible for firms to use branding / advertising to distinguish their good from that of their competitors.","Almost Perfect knowledge In the market every firm has almost full knowledge as to profits earned by other firms in the industry.","Each firm tries to maximise profits. • The sole aim of each firm is to produce that quantity where MC = MR. • Each firm will also try to minimise costs."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q1-c-i", topicId: "economics-2-0", conceptId: "brand-loyalty",
+    section: "B", questionRef: "2015 OL Section B Q1(c)(i)",
+    stem: "Firms in Imperfect Competition advertise to build brand loyalty.",
+    questionText: "Explain the term brand loyalty.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The desire by customers to stick with one brand and always buy that brand (e.g. always buying Barry’s tea instead of Lyons tea).", marks: 5, contextNote: "The explanation, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q1-c-ii", topicId: "economics-2-0", conceptId: "advantages-of-advertising",
+    section: "B", questionRef: "2015 OL Section B Q1(c)(ii)",
+    stem: "Firms in Imperfect Competition advertise to build brand loyalty.",
+    questionText: "State and explain one possible advantage of advertising for the consumer and one possible advantage for the seller.",
+    tariffModel: {"kind":"fixed","notation":"2 x 5 (3 + 2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-consumer", kind: "anyN", verbatim: "To the consumer — any one", marks: 5, contextNote: "One advantage for the consumer, 5 marks (3 + 2).", openList: true, group: {"claimMax":1,"perOption":5,"options":["Provides information / awareness / choice Consumers become more informed of prices, special offers, and the availability of new products / services. Wider choice of goods and services.","More competitive prices May lead to increased competition which could decrease prices further.","Economies of scale If sales increases then firms may increase production and so consumers may benefit from lower prices, due to economies of scale."]} },
+    { id: "r-seller", kind: "anyN", verbatim: "To the seller — any one", marks: 5, contextNote: "One advantage for the seller, 5 marks (3 + 2).", openList: true, group: {"claimMax":1,"perOption":5,"options":["Increased Sales / Profits If more consumers are informed then sales/profits may increase.","Bigger share of the market If sales increase the firm may increase its share of the market, leading to an improved corporate image.","New firms Enables new firms to enter a market more easily because it gives entrants a means to attract customers away from existing firms."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q1-c-iii", topicId: "economics-2-0", conceptId: "disadvantages-of-advertising",
+    section: "B", questionRef: "2015 OL Section B Q1(c)(iii)",
+    stem: "Firms in Imperfect Competition advertise to build brand loyalty.",
+    questionText: "State and explain one possible disadvantage of advertising for the consumer and one possible disadvantage for the seller.",
+    tariffModel: {"kind":"fixed","notation":"2 x 5 (3 + 2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-consumer", kind: "anyN", verbatim: "To the consumer — any one", marks: 5, contextNote: "One disadvantage for the consumer, 5 marks (3 + 2).", openList: true, group: {"claimMax":1,"perOption":5,"options":["Higher prices The firm may increase prices to pay for the increased costs.","False / Misleading information Consumers may be receiving inaccurate/incomplete information leading to confusion / incorrect information.","Impulse buying The advertising may result in customer buying on impulse/ may create a desire that otherwise might not exist.","Harmful commodities Advertising may encourage the consumption of harmful commodities e.g. alcohol which may endanger the health of the consumer.","May eliminate competition Advertising, if extensive, may act as a barrier to entry into the industry and result in less competition for consumers."]} },
+    { id: "r-seller", kind: "anyN", verbatim: "To the seller — any one", marks: 5, contextNote: "One disadvantage for the seller, 5 marks (3 + 2).", openList: true, group: {"claimMax":1,"perOption":5,"options":["Increased costs Advertising increases the costs of the firm.","Expectations of consumers The business may not meet the (increased) expectations of consumers and, eventually, image/reputation of the business may be affected.","Legal action If the advertising is false/misleading the firm could face legal action.","Pressure to improve performance Advertising by competitors can put pressure on individual firms to improve quality in order to maintain market share."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q2-a", topicId: "economics-1-0", conceptId: "drawing-the-smartphone-market",
+    section: "B", questionRef: "2015 OL Section B Q2(a)(i)–(iii)",
+    stem: "The information below represents the market demand and supply schedules for Smartphones.",
+    questionText: "Using the above information and one diagram: (i) Draw and label the market demand curve for Smartphones. (ii) Draw and label the market supply curve for Smartphones. (iii) Show on your diagram: • The market equilibrium price for Smartphones (use P1) • The market equilibrium quantity for Smartphones (use Q1). (You may use graph paper if you wish.)",
+    tariffModel: {"kind":"fixed","notation":"10 + 10 + 4 + 3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 30,
+    rows: [
+    { id: "r-demand", kind: "point", verbatim: "D/C: 5 points at 2 marks each", marks: 10, contextNote: "The demand curve, 10 marks: its five points at 2 each.", openList: true },
+    { id: "r-supply", kind: "point", verbatim: "S/C: 5 points at 2 marks each", marks: 10, contextNote: "The supply curve, 10 marks: its five points at 2 each.", openList: true },
+    { id: "r-labels", kind: "anyN", verbatim: "Each label", marks: 4, contextNote: "The four labels, (4 at 1 mark each): the scheme prices them on one line, which spans (i) and (ii).", openList: true, group: {"claimMax":4,"perOption":1,"options":["P","Q","D/C","S/C"]} },
+    { id: "r-p1", kind: "point", verbatim: "P1 — 300", marks: 3, contextNote: "The equilibrium price P1, 3 marks (the scheme’s P1 and Q1 : 2 x 3 marks each). (1 mark each if lines drawn but P1 and Q1 are not labelled).", openList: true },
+    { id: "r-q1", kind: "point", verbatim: "Q1 — 30,000", marks: 3, contextNote: "The equilibrium quantity Q1, 3 marks. The completed graph is shown with the answer.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2015-OL-paper-p06-q2-table",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p06-q2-table.png",
+          "srcHash": "7c382c94ef7b74897dec765e15133d8f",
+          "alt": "A table: Price € 100, 200, 300, 400, 500; Quantity Demanded (units) 50,000, 40,000, 30,000, 20,000, 10,000; Quantity Supplied (units) 10,000, 20,000, 30,000, 40,000, 50,000.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2015-OL-scheme-p12-q2a-graph",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-scheme-p12-q2a-graph.png",
+          "srcHash": "5629727a2f545d44a98124ce9d8ac716",
+          "alt": "The marking scheme’s completed graph: Price € 100 to 500 on the vertical axis and Quantity (units) 10,000 to 50,000 on the horizontal. A falling line D/C through five dots and a rising line S/C through five dots cross at 300 and 30,000; an arrow runs left from the crossing to P1 300 and an arrow runs down to Q1 30,000.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q2-b-i", topicId: "economics-1-0", conceptId: "which-curve-shifts",
+    section: "B", questionRef: "2015 OL Section B Q2(b)(i)",
+    stem: "The demand curve for Smartphones OR the supply curve for Smartphones may shift to the right or to the left due to the following: • a fault in the manufacturer’s Smartphone design is discovered leading to their recall • a range of new Apps is made available and included with the Smartphone. In relation to each development above, answer the following three questions:",
+    questionText: "State whether the demand curve or the supply curve will shift",
+    tariffModel: {"kind":"fixed","notation":"5 + 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-fault", kind: "point", verbatim: "Fault in the Manufacturer’s design — Supply Curve", marks: 5, accepts: ["Reputational damage may cause Demand Curve to shift to the left."], contextNote: "The design fault, 5 marks. The scheme’s alternative answer for the whole column (10) is also accepted.", openList: true },
+    { id: "r-apps", kind: "point", verbatim: "A range of new Apps is made available — Demand Curve", marks: 5, accepts: ["Supply Curve may shift to the right as more companies increase the amount of aps. produced."], contextNote: "The new Apps, 5 marks. The scheme’s alternative answer for the whole column (10) is also accepted.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q2-b-ii", topicId: "economics-1-0", conceptId: "which-way-the-curve-shifts",
+    section: "B", questionRef: "2015 OL Section B Q2(b)(ii)",
+    stem: "The demand curve for Smartphones OR the supply curve for Smartphones may shift to the right or to the left due to the following: • a fault in the manufacturer’s Smartphone design is discovered leading to their recall • a range of new Apps is made available and included with the Smartphone. In relation to each development above, answer the following three questions:",
+    questionText: "State whether the curve you mention will shift to the right or the left",
+    tariffModel: {"kind":"fixed","notation":"3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-fault", kind: "point", verbatim: "Fault in the Manufacturer’s design — Left", marks: 3, contextNote: "The design fault, 3 marks.", openList: true },
+    { id: "r-apps", kind: "point", verbatim: "A range of new Apps is made available — Right", marks: 3, contextNote: "The new Apps, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q2-b-iii", topicId: "economics-1-0", conceptId: "why-the-curve-shifts",
+    section: "B", questionRef: "2015 OL Section B Q2(b)(iii)",
+    stem: "The demand curve for Smartphones OR the supply curve for Smartphones may shift to the right or to the left due to the following: • a fault in the manufacturer’s Smartphone design is discovered leading to their recall • a range of new Apps is made available and included with the Smartphone. In relation to each development above, answer the following three questions:",
+    questionText: "Explain why the curve has shifted in the direction you have stated.",
+    tariffModel: {"kind":"fixed","notation":"2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    rows: [
+    { id: "r-fault", kind: "point", verbatim: "Fault in the Manufacturer’s design — Less smartphones will be supplied at each price.", marks: 2, accepts: ["Reputational damage may cause Demand Curve to shift to the left."], contextNote: "The design fault, 2 marks. The scheme’s alternative answer for the whole column (10) is also accepted.", openList: true },
+    { id: "r-apps", kind: "point", verbatim: "A range of new Apps is made available — More smartphones will be demanded due to improvements", marks: 2, accepts: ["Supply Curve may shift to the right as more companies increase the amount of aps. produced."], contextNote: "The new Apps, 2 marks. The scheme’s alternative answer for the whole column (10) is also accepted.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q2-c-i", topicId: "economics-1-3", conceptId: "why-charge-for-water",
+    section: "B", questionRef: "2015 OL Section B Q2(c)(i)",
+    stem: "Domestic users in most European countries pay for the provision of clean water and wastewater service provision.",
+    questionText: "Outline two economic reasons for the introduction of water charges for households.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":3,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 12, contextNote: "Two reasons, 6 marks each (3 + 3).", openList: true, group: {"claimMax":2,"perOption":6,"options":["Revenue These charges will help raise revenue for Irish Water and so pay for the provision of clean water.","Development of infrastructure The revenue received will be used to invest in improving water supply infrastructure resulting in less water wastage through damaged pipes.","Water conservation If households have to pay for natural resources (water) then they may economise on its use."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q2-c-ii", topicId: "economics-1-3", conceptId: "effects-of-water-charges",
+    section: "B", questionRef: "2015 OL Section B Q2(c)(ii)",
+    stem: "Domestic users in most European countries pay for the provision of clean water and wastewater service provision.",
+    questionText: "State and explain one possible economic effect which these water charges may have for each of the following: • households who pay these water charges • the Irish Government.",
+    tariffModel: {"kind":"fixed","notation":"7 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 13,
+    rows: [
+    { id: "r-households", kind: "anyN", verbatim: "Households — any one", marks: 7, contextNote: "One effect on households, 7 marks: State: 4 marks. Explain: 3 marks.", openList: true, group: {"claimMax":1,"perOption":7,"options":["Lower standard of living Disposable incomes will fall and this will reduce the standard of living.","Opportunity cost This charge involves an opportunity cost in that the income could have been spent on something else.","Reduce consumption of water Households may reduce their consumption of water and so reduce wastage."]} },
+    { id: "r-government", kind: "anyN", verbatim: "Irish Government — any one", marks: 6, contextNote: "One effect on the government, 6 marks (3 + 3).", openList: true, group: {"claimMax":1,"perOption":6,"options":["Reduced consumer spending People will have less disposable incomes to spend so demand in economy may fall and this may reduce economic growth.","Public unrest People may protest and refuse to pay causing public discontent.","Increased employment More people employed installing meters resulting in less social welfare spending and increased tax revenues."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q3-a-i", topicId: "economics-0-1", conceptId: "the-entrepreneur",
+    section: "B", questionRef: "2015 OL Section B Q3(a)(i)",
+    stem: "Emma O’Neill is an entrepreneur and has set up a business designing and creating gardens. The table below shows her estimated costs of production and total revenues over a range of output.",
+    questionText: "Explain the underlined term above.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An entrepreneur undertakes the risk in setting up a business.", marks: 6, accepts: ["An entrepreneur combines the other factors of production into a production unit."], contextNote: "The explanation, 6 marks. The scheme also accepts its second statement.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q3-a-ii", topicId: "economics-1-5", conceptId: "costs-and-profit-for-the-garden-designer",
+    section: "B", questionRef: "2015 OL Section B Q3(a)(ii)",
+    stem: "Emma O’Neill is an entrepreneur and has set up a business designing and creating gardens. The table below shows her estimated costs of production and total revenues over a range of output.",
+    questionText: "Using the table calculate the total costs at A and B (show your workings in your answer book) and the total profit at C and D (show your workings in your answer book).",
+    tariffModel: {"kind":"fixed","notation":"4 x 4 (1 + 1 + 2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-a", kind: "point", verbatim: "A. €2,000 + €3,300 = €5,300", marks: 4, contextNote: "A, 4 marks (1 + 1 + 2).", openList: true },
+    { id: "r-b", kind: "point", verbatim: "B. €2,000 + €5,000 = €7,000", marks: 4, contextNote: "B, 4 marks (1 + 1 + 2).", openList: true },
+    { id: "r-c", kind: "point", verbatim: "C. €6,500 – €5,300 = €1,200", marks: 4, contextNote: "C, 4 marks (1 + 1 + 2).", openList: true },
+    { id: "r-d", kind: "point", verbatim: "D. €8,800 – €7,000 = €1,800", marks: 4, contextNote: "D, 4 marks (1 + 1 + 2).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-OL-paper-p07-q3-table",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p07-q3-table.png",
+          "srcHash": "b5522eaf60d1e19d1c8e203e15c45124",
+          "alt": "A table in €: for 1 to 4 units of output, Fixed Costs 2,000 each; Variable Costs 1,000, 1,800, 3,300, 5,000; Total Costs 3,000, 3,800, A, B; Total Revenue 2,800, 4,300, 6,500, 8,800; Total Profit/Loss (200), 500, C, D.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q3-a-iii", topicId: "economics-1-5", conceptId: "fixed-and-variable-costs-of-gardening",
+    section: "B", questionRef: "2015 OL Section B Q3(a)(iii)",
+    stem: "Emma O’Neill is an entrepreneur and has set up a business designing and creating gardens. The table below shows her estimated costs of production and total revenues over a range of output.",
+    questionText: "The following are examples of costs incurred by a garden designer: Lawnmower Plants/shrubs Truck Fertiliser Identify which of the above are fixed costs and which are variable costs. Explain your answer in each case.",
+    tariffModel: {"kind":"fixed","notation":"4 x 1 + 2 x 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-identify", kind: "anyN", verbatim: "Each cost placed", marks: 4, contextNote: "Identify 4 costs: 4 at 1 marks = 4 marks.", openList: true, group: {"claimMax":4,"perOption":1,"options":["Fixed costs — Lawnmower","Fixed costs — Truck","Variable costs — Plants/Shrubs","Variable costs — Fertiliser"]} },
+    { id: "r-fixed", kind: "point", verbatim: "Fixed costs — These remain the same irrespective of the number of gardens created/ not determined by the quantity of output produced.", marks: 2, contextNote: "Why they are fixed, 2 marks.", openList: true },
+    { id: "r-variable", kind: "point", verbatim: "Variable costs — These will increase as more gardens are created/ change in line with the output produced.", marks: 2, contextNote: "Why they are variable, 2 marks: 2 explanations: 2 at 2 marks = 4 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q3-b-i", topicId: "economics-2-1", conceptId: "labour-and-the-minimum-wage",
+    section: "B", questionRef: "2015 OL Section B Q3(b)(i)",
+    stem: "If the business continues to expand Emma may consider employing additional labour at the national minimum wage rate.",
+    questionText: "Explain each of the underlined terms.",
+    tariffModel: {"kind":"fixed","notation":"6 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-labour", kind: "point", verbatim: "Labour — Labour is defined as the human effort involved in the production of goods and services / receives a wage in return.", marks: 6, contextNote: "Labour, 6 marks (4 + 2).", openList: true },
+    { id: "r-nmw", kind: "point", verbatim: "National Minimum Wage Rate — The lowest wage employers must by law pay their employees.", marks: 6, contextNote: "The national minimum wage, 6 marks (4 + 2). The scheme prints 7 beside it, but sets it as 4 + 2, and only 6 fits the paper’s (24) for (b).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q3-b-ii", topicId: "economics-2-1", conceptId: "why-take-on-workers",
+    section: "B", questionRef: "2015 OL Section B Q3(b)(ii)",
+    stem: "If the business continues to expand Emma may consider employing additional labour at the national minimum wage rate.",
+    questionText: "State and explain two factors which may encourage Emma to employ additional workers.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":3,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A factor — any two", marks: 12, contextNote: "Two factors, 6 marks each (3 + 3).", openList: true, group: {"claimMax":2,"perOption":6,"options":["Increased demand for output If there is an increase in the demand for Emma’s services this may lead to an increase in demand for extra workers.","Government policies If the government were to make it less expensive to employ workers then Emma may employ extra workers e.g. a reduction in employer’s PRSI; reduced corporation tax; incentives for employing a long-term unemployed person etc.","Reduction in the national minimum wage If the national minimum wage rate was reduced, costs of production may fall and profitability may rise. This may result in Emma being able to hire additional workers."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q3-c-i", topicId: "economics-0-1", conceptId: "why-entrepreneurship-matters",
+    section: "B", questionRef: "2015 OL Section B Q3(c)(i)",
+    questionText: "Outline two reasons why entrepreneurship is important for the Irish economy, other than creating employment.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":4,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 12, contextNote: "Two reasons, 6 marks each (3 + 3).", openList: true, group: {"claimMax":2,"perOption":6,"options":["Improve the Balance of Payments If the goods produced are exported, this will improve the Balance of Payments position.","Encourage further investment / economic growth (GNP) Entrepreneurs put their money and skills into a business in the hope of making a profit which may encourage further investment in the economy, if successful.","Innovation: new products Successful entrepreneurs may invest part of their profits into developing new products which benefit society.","Helps generate tax revenue for the government / reduce current expenditure Entrepreneurs by producing output, providing services and creating employment help generate tax revenue for the government which helps fund state expenditure. The amount of social welfare spending may be reduced."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q3-c-ii", topicId: "economics-0-1", conceptId: "encouraging-entrepreneurship",
+    section: "B", questionRef: "2015 OL Section B Q3(c)(ii)",
+    questionText: "Outline one action which each of the following could take to encourage entrepreneurship: • the Irish Government • Irish consumers.",
+    tariffModel: {"kind":"fixed","notation":"6 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One action for each — the government and consumers", marks: 9, contextNote: "One action for the government and one for consumers: the 1st correct response 6 marks (3 + 3), the 2nd 3 (2 + 1).", openList: true, group: {"claimMax":2,"perOption":6,"options":["The Irish Government — Enterprise education Greater emphasis on enterprise education in schools and colleges could be encouraged and more individuals may be willing to undertake the risks involved.","The Irish Government — Government policies If government reduced corporation tax then individuals may see the possibility of greater profitability. A reduction in VAT rates may increase demand for goods and provide greater investment opportunities. Reduction in regulations involved in setting up a business may encourage more people to become entrepreneurs. Government grants and other incentives for establishing a business /create a favourable business environment.","The Irish Government — Labour market skills/training If the government improved worker skills through increased training / education then this increasingly skilled workforce may become entrepreneurs.","The Irish Government — Develop the country’s infrastructure Investment in communications technology through broadband access makes it easier for people to start a business. Road transport/ power etc.","The Irish Government — Promoting/maintaining stability in the banking sector By stabilising the banks the government may make it possible for the banks to provide credit and so encourage people to borrow and establish a business.","Irish consumers — Increase spending in domestic market An increase in consumer spending will increase demand leading to increased business activity.","Irish consumers — Buy Irish If Irish consumers buy products manufactured in Ireland this may encourage more people to set up businesses in Ireland.","Irish consumers — Shop local If Irish consumers shop in their local towns this will generate increased demand, which may lead to people setting up more businesses.","Irish consumers — Change in attitude towards business failure If failure is accepted as part of business it may encourage a more positive attitude towards entrepreneurship and encourage risk taking."],"perOptionSteps":[6,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q4-a", topicId: "economics-3-4", conceptId: "functions-of-money",
+    section: "B", questionRef: "2015 OL Section B Q4(a)",
+    questionText: "Medium of exchange and measure of value are functions of money. Explain each of the underlined terms and state one other function of money.",
+    tariffModel: {"kind":"fixed","notation":"7 + 7 + 7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 21,
+    rows: [
+    { id: "r-medium", kind: "point", verbatim: "Medium of exchange — An item that buyers give to sellers when they want to purchase goods and services.", marks: 7, contextNote: "Medium of exchange, 7 marks.", openList: true },
+    { id: "r-measure", kind: "point", verbatim: "Measure of Value — The yardstick people use to post prices and record debts.", marks: 7, accepts: ["Money enables a value/price to be put on goods & services."], contextNote: "Measure of value, 7 marks. The scheme also accepts its second statement.", openList: true },
+    { id: "r-other", kind: "anyN", verbatim: "One other function — any one", marks: 7, contextNote: "One other function, 7 marks.", openList: true, group: {"claimMax":1,"perOption":7,"options":["Store of Wealth","Standard for Deferred Payment"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q4-b-i", topicId: "economics-3-1", conceptId: "dirt-in-full",
+    section: "B", questionRef: "2015 OL Section B Q4(b)(i)",
+    stem: "The rate of DIRT is one factor which influences the level of personal savings.",
+    questionText: "What do the initials DIRT stand for?",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Deposit Interest Retention Tax", marks: 8, contextNote: "DIRT in full, 8 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q4-b-ii", topicId: "economics-3-4", conceptId: "savings",
+    section: "B", questionRef: "2015 OL Section B Q4(b)(ii)",
+    questionText: "The rate of DIRT is one factor which influences the level of personal savings. Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Savings: that part of a person’s income which is not spent.", marks: 6, contextNote: "The explanation, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q4-b-iii", topicId: "economics-3-4", conceptId: "what-shapes-saving",
+    section: "B", questionRef: "2015 OL Section B Q4(b)(iii)",
+    stem: "The rate of DIRT is one factor which influences the level of personal savings.",
+    questionText: "State and explain two factors, other than the rate of DIRT, which may influence the level of savings of an individual.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 8","answer":2,"ofParts":6,"perPart":8}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A factor — any two", marks: 16, contextNote: "Two factors, 8 marks each (4 + 4).", openList: true, group: {"claimMax":2,"perOption":8,"options":["Interest rates • If the interest rates being offered by the financial institutions are considered low by the potential saver then a person may decide not to save. • If the rate of interest is higher than the rate of inflation this may encourage people to save.","Income levels • The greater a person’s level of income the greater is the ability to save.","Level of Inflation • Inflation results in a reduction in the real rate of return on savings. • Inflation means that you must spend more to buy goods and services and so your ability to save is diminished.","Levels of Social Welfare Benefits • If the levels of social welfare benefits provided by the state are very good this may dissuade people from saving as they know the state will provide adequately for them.","Tax levels • If rates of income tax decrease then disposable incomes rise this may result in a greater ability to save. • The introduction of the new water tax will reduce disposable income and may lower savings.","Future expectations / confidence in the economy • If people are concerned about the future of the economy this may result in a loss of consumer confidence and people may be encouraged to save."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q4-c-i", topicId: "economics-3-4", conceptId: "keynes-motives",
+    section: "B", questionRef: "2015 OL Section B Q4(c)(i)",
+    questionText: "The economist John Maynard Keynes stated that people have three motives for holding wealth in the form of cash. • Transactionary • Precautionary • Speculative Explain any two of the above motives.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 8","answer":2,"ofParts":3,"perPart":8}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A motive — any two", marks: 16, contextNote: "Two motives, 8 marks each.", openList: true, group: {"claimMax":2,"perOption":8,"options":["Transactionary — Cash is needed to buy goods and services","Precautionary — Cash is needed for emergencies / for ‘a rainy day’","Speculative — Cash is needed to take advantage of possible profitable investment opportunities."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q4-c-ii-marx", topicId: "economics-0-0", conceptId: "another-economists-contribution",
+    section: "B", questionRef: "2015 OL Section B Q4(c)(ii) — marx",
+    questionText: "Name one other economist who contributed to economic thought and outline one of this person’s contributions. Answer for: Karl Marx.",
+    tariffModel: {"kind":"fixed","notation":"2 + 3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-name", kind: "point", verbatim: "Karl Marx", marks: 2, contextNote: "The economist named, 2 marks.", openList: true },
+    { id: "r-statement", kind: "point", verbatim: "Labour Theory of Value", marks: 3, contextNote: "The contribution stated, 3 marks.", openList: true },
+    { id: "r-explanation", kind: "point", verbatim: "The value of an item equals the amount of labour that went into producing that item.", marks: 3, contextNote: "The contribution explained, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q4-c-ii-smith", topicId: "economics-0-0", conceptId: "another-economists-contribution",
+    section: "B", questionRef: "2015 OL Section B Q4(c)(ii) — smith",
+    questionText: "Name one other economist who contributed to economic thought and outline one of this person’s contributions. Answer for: Adam Smith.",
+    tariffModel: {"kind":"fixed","notation":"2 + 3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-name", kind: "point", verbatim: "Adam Smith", marks: 2, contextNote: "The economist named, 2 marks.", openList: true },
+    { id: "r-statement", kind: "anyN", verbatim: "A contribution stated — any one", marks: 3, contextNote: "The contribution stated, 3 marks: the scheme lists three for Adam Smith.", openList: true, group: {"claimMax":1,"perOption":3,"options":["Canons of Taxation","Perfect Competition","Laissez Faire"]} },
+    { id: "r-explanation", kind: "point", verbatim: "The principles of a fair taxation system: equitable, economic, convenient and certain.", marks: 3, contextNote: "The contribution explained, 3 marks: the scheme’s explanation is of the Canons of Taxation.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q4-c-ii-malthus", topicId: "economics-0-0", conceptId: "another-economists-contribution",
+    section: "B", questionRef: "2015 OL Section B Q4(c)(ii) — malthus",
+    questionText: "Name one other economist who contributed to economic thought and outline one of this person’s contributions. Answer for: Thomas Malthus.",
+    tariffModel: {"kind":"fixed","notation":"2 + 3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-name", kind: "point", verbatim: "Thomas Malthus", marks: 2, contextNote: "The economist named, 2 marks.", openList: true },
+    { id: "r-statement", kind: "point", verbatim: "Theory of Population", marks: 3, contextNote: "The contribution stated, 3 marks.", openList: true },
+    { id: "r-explanation", kind: "point", verbatim: "Population grows geometrically while food supply grows arithmetically, resulting in an inadequate food supply.", marks: 3, contextNote: "The contribution explained, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q4-c-ii-ricardo", topicId: "economics-0-0", conceptId: "another-economists-contribution",
+    section: "B", questionRef: "2015 OL Section B Q4(c)(ii) — ricardo",
+    questionText: "Name one other economist who contributed to economic thought and outline one of this person’s contributions. Answer for: David Ricardo.",
+    tariffModel: {"kind":"fixed","notation":"2 + 3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-name", kind: "point", verbatim: "David Ricardo", marks: 2, contextNote: "The economist named, 2 marks.", openList: true },
+    { id: "r-statement", kind: "point", verbatim: "Law of Comparative Advantage", marks: 3, contextNote: "The contribution stated, 3 marks.", openList: true },
+    { id: "r-explanation", kind: "point", verbatim: "Where one country is most efficient in the production of all commodities it should specialise in the production of the one in which it is relatively most efficient and trade for the rest of its requirements.", marks: 3, contextNote: "The contribution explained, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q5-a-i", topicId: "economics-4-2", conceptId: "the-balance-of-trade",
+    section: "B", questionRef: "2015 OL Section B Q5(a)(i)",
+    questionText: "Explain the term Balance of Trade.",
+    tariffModel: {"kind":"fixed","notation":"6 (3 + 3)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "This is the difference between visible exports and visible imports.", marks: 6, contextNote: "The explanation, 6 marks (3 + 3).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q5-a-ii", topicId: "economics-4-2", conceptId: "calculating-the-balance-of-trade",
+    section: "B", questionRef: "2015 OL Section B Q5(a)(ii)",
+    stem: "You are given the following information about a country’s trade in a year.",
+    questionText: "Using the above data calculate the Balance of Trade and explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"6 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-working", kind: "point", verbatim: "€25,000 m - €24,200 m = €800m", marks: 6, contextNote: "The working and the balance, 6 marks (2 + 2 + 2).", openList: true },
+    { id: "r-surplus", kind: "point", verbatim: "It is a surplus balance of trade.", marks: 2, contextNote: "The surplus, 2 marks (the scheme’s 4 marks: 2 + 2).", openList: true },
+    { id: "r-because", kind: "point", verbatim: "Because visible exports are greater than visible imports.", marks: 2, contextNote: "The reason, 2 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-OL-paper-p08-q5a-table",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p08-q5a-table.png",
+          "srcHash": "1d32d63b8b746a052dc40fa3aef335b5",
+          "alt": "A table of one row: Visible Exports €million 25,000; Visible Imports €million 24,200; Balance of Trade €million ?; Surplus or Deficit ?.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q5-a-iii", topicId: "economics-4-2", conceptId: "a-new-balance-of-trade",
+    section: "B", questionRef: "2015 OL Section B Q5(a)(iii)",
+    stem: "You are given the following information about a country’s trade in a year.",
+    questionText: "If the level of visible imports above increased by €1,000m, calculate the new Balance of Trade and state if it is a surplus or deficit. (Show your workings.)",
+    tariffModel: {"kind":"fixed","notation":"4 + 4 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-imports", kind: "point", verbatim: "New visible imports — €25,200", marks: 4, contextNote: "4 marks: the scheme’s raised 1 beside each of €24,200m and €1,000m and 2 beside €25,200m.", openList: true },
+    { id: "r-balance", kind: "point", verbatim: "New Balance of Trade — - €200", marks: 4, contextNote: "4 marks: 1 beside each of €25,000m and €25,200m and 2 beside the -€200.", openList: true },
+    { id: "r-deficit", kind: "point", verbatim: "It is a deficit", marks: 2, contextNote: "2 marks. The figure shows the working as printed.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2015-OL-paper-p08-q5a-table",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p08-q5a-table.png",
+          "srcHash": "1d32d63b8b746a052dc40fa3aef335b5",
+          "alt": "A table of one row: Visible Exports €million 25,000; Visible Imports €million 24,200; Balance of Trade €million ?; Surplus or Deficit ?.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2015-OL-scheme-p22-q5aiii-working",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-scheme-p22-q5aiii-working.png",
+          "srcHash": "b949ae55c27a3c4a740a750e034d8e3d",
+          "alt": "The marking scheme’s working: New visible imports: €24,200 m + €1,000 m = €25,200 m; New Balance of Trade: €25,000 m - €25,200 m = - €200; It is a deficit. A raised 1 sits beside each figure added or subtracted and a raised 2 beside each result and beside deficit.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q5-b-i", topicId: "economics-4-2", conceptId: "an-embargo",
+    section: "B", questionRef: "2015 OL Section B Q5(b)(i)",
+    stem: "Exports of beef from Ireland should increase due to the ending of a 16-year embargo on European beef imports into the US market.",
+    questionText: "Explain the economic term embargo.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "This is a total ban on the importation of a good into a country.", marks: 5, contextNote: "The explanation, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q5-b-ii", topicId: "economics-4-2", conceptId: "beef-as-a-visible-export",
+    section: "B", questionRef: "2015 OL Section B Q5(b)(ii)",
+    stem: "Exports of beef from Ireland should increase due to the ending of a 16-year embargo on European beef imports into the US market.",
+    questionText: "Is the export of beef from Ireland a visible export or an invisible export? Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-answer", kind: "point", verbatim: "Answer: Visible export", marks: 3, contextNote: "The answer, 3 marks.", openList: true },
+    { id: "r-explanation", kind: "point", verbatim: "Explanation: It is the purchase of an Irish good by a citizen in the US.", marks: 3, contextNote: "The explanation, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q5-b-iii", topicId: "economics-4-2", conceptId: "benefits-of-more-exports",
+    section: "B", questionRef: "2015 OL Section B Q5(b)(iii)",
+    stem: "Exports of beef from Ireland should increase due to the ending of a 16-year embargo on European beef imports into the US market.",
+    questionText: "State and explain two economic benefits of an increase in exports for the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 7","answer":2,"ofParts":6,"perPart":7}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A benefit — any two", marks: 14, contextNote: "Two benefits, 7 marks each: State: 4 marks. Explain: 3 marks.", openList: true, group: {"claimMax":2,"perOption":7,"options":["Employment creation Exports mean increased demand for goods produced in Ireland, leading to increased employment.","Increased GNP / Economic growth The monies received from exports (injection into the circular flow) will lead to increased incomes within the country.","Increased sales / profits Domestic firms can increase their sales/profits by exporting their excess output onto a foreign market / economies of scale/earn foreign currencies.","The receipt of foreign currencies can boost our country’s reserves / provides the finance to help pay for imports.","Attract investment Strong exports will increase confidence in the Irish economy and may help attract further investment into Ireland.","Government finances Increased economic activity will generate increased tax revenues for the government e.g. VAT / PAYE etc."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q5-c", topicId: "economics-4-2", conceptId: "a-weaker-euro-against-sterling",
+    section: "B", questionRef: "2015 OL Section B Q5(c)(i)–(iii)",
+    stem: "You are given the following information regarding the euro (€) and the UK pound sterling (£) exchange rate. Year 1: €1 = £1.00 Year 2: €1 = £0.80 The euro (€) has fallen in value relative to the UK pound sterling (£).",
+    questionText: "Explain the possible effects which this fall in the value of the euro may have on each of the following: (i) Ireland’s exports to the UK (ii) Ireland’s imports from the UK (iii) Employment in Ireland.",
+    tariffModel: {"kind":"fixed","notation":"12 + 6 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The effect on each — all three", marks: 24, contextNote: "All three areas, each its effect and explanation. The scheme prices them by order, not by area: the 1st correct answer 12 marks (state 6, explain 6), the 2nd and 3rd 6 each (3 + 3).", openList: true, group: {"claimMax":3,"perOption":12,"options":["Ireland’s exports to the UK — • Exports cheaper • Increased demand for Irish exports • Increased sales revenue for Irish exporters The prices of Irish exports in pound sterling decreases, resulting in increased demand for Irish exports in the UK.","Ireland’s imports from the UK — • Imports dearer • Decreased imports The prices of UK imports in euro will increase resulting in decreased demand for UK imports.","Employment in Ireland — • Increase With increased exports to the UK, businesses in the exporting sector may grow, resulting in increased employment."],"perOptionSteps":[12,6,6]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q6-a-i", topicId: "economics-3-1", conceptId: "the-current-budget-deficit",
+    section: "B", questionRef: "2015 OL Section B Q6(a)(i)",
+    stem: "The estimated Government current budget for 2015 is as follows: Government Current Income €45,255 m Government Current Expenditure €48,985 m",
+    questionText: "Calculate the current budget deficit. (Show your workings.)",
+    tariffModel: {"kind":"fixed","notation":"1 + 2 + 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-income", kind: "point", verbatim: "Government current income — €45,255", marks: 1, contextNote: "1 mark, printed beside the income figure.", openList: true },
+    { id: "r-expenditure", kind: "point", verbatim: "Less government current expenditure — €48,985", marks: 2, contextNote: "2 marks, the scheme’s 1 beside the minus sign and 1 beside the expenditure figure.", openList: true },
+    { id: "r-deficit", kind: "point", verbatim: "Current budget deficit — (€ 3,730)", marks: 2, contextNote: "2 marks, printed beside the answer: 3 at 1 mark each and correct answer 2 marks. The figure shows the working.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-OL-scheme-p25-q6ai-working",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-scheme-p25-q6ai-working.png",
+          "srcHash": "d812d80587bca38c194ef22b0efb6bb0",
+          "alt": "The marking scheme’s working: €45,255 m - €48,985 m = (€ 3,730), with a raised 1 beside €45,255, beside the minus sign and beside €48,985, and a raised 2 beside the answer.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q6-a-ii", topicId: "economics-3-1", conceptId: "reducing-the-deficit",
+    section: "B", questionRef: "2015 OL Section B Q6(a)(ii)",
+    stem: "The estimated Government current budget for 2015 is as follows: Government Current Income €45,255 m Government Current Expenditure €48,985 m",
+    questionText: "Suggest two ways the government could reduce this deficit.",
+    tariffModel: {"kind":"fixed","notation":"2 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-spending", kind: "point", verbatim: "Reduce current government expenditure or examples of this e.g. reduce social welfare spending.", marks: 5, contextNote: "Cutting spending, 5 marks.", openList: true },
+    { id: "r-income", kind: "point", verbatim: "Increase current government income or examples of this e.g. increase income tax.", marks: 5, contextNote: "Raising income, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q6-a-iii", topicId: "economics-3-1", conceptId: "current-income-and-expenditure",
+    section: "B", questionRef: "2015 OL Section B Q6(a)(iii)",
+    stem: "The estimated Government current budget for 2015 is as follows: Government Current Income €45,255 m Government Current Expenditure €48,985 m",
+    questionText: "State one example of Government current income and one example of Government current expenditure.",
+    tariffModel: {"kind":"fixed","notation":"2 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-income", kind: "anyN", verbatim: "Government current income — any one", marks: 5, contextNote: "One example of current income, 5 marks.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Direct tax revenue (or example)","Indirect tax revenue (or example)","Interest on loans given to semi-states / local authorities","Surpluses of semi-state bodies.","Departmental balances.","Prize Bond scheme.","Fees charged for state services"]} },
+    { id: "r-expenditure", kind: "anyN", verbatim: "Government current expenditure — any one", marks: 5, contextNote: "One example of current expenditure, 5 marks.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Salaries of all state employees","Cost of running government departments","Costs of running state institutions. (schools, hospitals, prisons, CSO, Ombudsman)","Social welfare payments","National debt service.","Grants to local authorities.","Ireland’s contribution to the EU budget."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q6-b-i", topicId: "economics-3-1", conceptId: "the-usc",
+    section: "B", questionRef: "2015 OL Section B Q6(b)(i)",
+    stem: "In Budget 2015 the Government reduced the higher rate of income tax from 41% to 40% and reduced some of the rates of USC.",
+    questionText: "What do the initials USC stand for?",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Universal Social Charge", marks: 6, contextNote: "The name, 6 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q6-b-ii", topicId: "economics-3-1", conceptId: "income-tax-as-a-direct-tax",
+    section: "B", questionRef: "2015 OL Section B Q6(b)(ii)",
+    stem: "In Budget 2015 the Government reduced the higher rate of income tax from 41% to 40% and reduced some of the rates of USC.",
+    questionText: "Is income tax a direct or indirect tax? Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-answer", kind: "point", verbatim: "Answer: Direct tax.", marks: 3, contextNote: "The answer, 3 marks.", openList: true },
+    { id: "r-explanation", kind: "point", verbatim: "Explanation: It is a tax levied on income.", marks: 3, contextNote: "The explanation, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q6-b-iii", topicId: "economics-3-1", conceptId: "a-lower-income-tax-rate",
+    section: "B", questionRef: "2015 OL Section B Q6(b)(iii)",
+    stem: "In Budget 2015 the Government reduced the higher rate of income tax from 41% to 40% and reduced some of the rates of USC.",
+    questionText: "Explain one possible economic effect which the reduction in the rate of income tax may have on any two of the following: • the government’s current budget deficit • the level of employment in Ireland • the level of emigration from Ireland.",
+    tariffModel: {"kind":"fixed","notation":"2 x 3 + 2 x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-statement", kind: "anyN", verbatim: "The effect stated — any two areas", marks: 6, contextNote: "The effect on two of the three areas, 3 marks each: the scheme’s Statement column, 2 at 3 marks.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Government’s current budget deficit — Deficit may increase.","Government’s current budget deficit — Deficit may decrease.","Level of employment in Ireland — May increase.","Level of emigration from Ireland — May fall."]} },
+    { id: "r-explanation", kind: "anyN", verbatim: "The effect explained — the same two areas", marks: 6, contextNote: "The explanation for each of the two areas, 3 marks each: the scheme’s Explanation column, 2 at 3 marks. The budget deficit’s first explanation goes with Deficit may increase, the other two with Deficit may decrease.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Government’s current budget deficit — If there is no increase in employment then the level of income tax revenue will fall.","Government’s current budget deficit — If there is an increase in employment then the level of income tax revenue may rise.","Government’s current budget deficit — Level of indirect tax revenues may rise if the level of spending rises.","Level of employment in Ireland — If spending increases this may boost demand and so employment may increase.","Level of employment in Ireland — As disposable incomes increase employees may moderate wage demands, costs may fall and this may lead to increased demand for employees.","Level of emigration from Ireland — More disposable incomes may encourage workers to remain in Ireland.","Level of emigration from Ireland — If demand rises due to higher disposable incomes further job opportunities may result so less need to emigrate."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q6-c-i", topicId: "economics-1-3", conceptId: "reducing-cigarette-consumption",
+    section: "B", questionRef: "2015 OL Section B Q6(c)(i)",
+    stem: "The tax on a packet of twenty cigarettes was increased by 40c in Budget 2015.",
+    questionText: "Outline one other measure which could be taken to reduce the consumption of cigarettes.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 6","answer":1,"ofParts":5,"perPart":6}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A measure — any one", marks: 6, contextNote: "One measure, 6 marks: State: 3 marks. Explanation: 3 marks.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Introduce plain packaging. — This may limit advertising and may reduce demand.","Ban vending machines in pubs. — This will reduce availability and may reduce demand / consumption.","Restrict number of sales outlets. — The sale of cigarettes could be banned in certain outlets e.g. petrol stations, shops which are close to schools and colleges.","Subsidise products available to help people quit smoking. — Subsidising such products reduce the costs for the consumer.","Provide Information on the negative effects of cigarette consumption. — The use of more shocking advertisements on the health effects of cigarette consumption may shock people into quitting smoking."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q6-c-ii", topicId: "economics-1-3", conceptId: "smoking-less-for-individuals",
+    section: "B", questionRef: "2015 OL Section B Q6(c)(ii)",
+    stem: "The tax on a packet of twenty cigarettes was increased by 40c in Budget 2015.",
+    questionText: "State and explain two economic benefits for individuals if they reduce their consumption of cigarettes.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":5,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A benefit — any two", marks: 10, contextNote: "Two benefits, 5 marks each (3 + 2).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Greater disposable incomes: If individuals buy fewer cigarettes then they will have more disposable income.","Healthier lifestyle: individuals may be healthier with less ill effects from cigarette consumption.","Reduced spending on healthcare: With reduced illnesses individuals will spend less on doctor’s visits, healthcare etc.","Reduced healthcare insurance premiums: cheaper health insurance premiums.","Increased life expectancy: Individuals may live longer if they reduce their consumption of cigarettes."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q6-c-iii", topicId: "economics-2-2", conceptId: "smoking-less-for-society",
+    section: "B", questionRef: "2015 OL Section B Q6(c)(iii)",
+    stem: "The tax on a packet of twenty cigarettes was increased by 40c in Budget 2015.",
+    questionText: "State and explain two benefits for society if the consumption of cigarettes falls.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":4,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A benefit — any two", marks: 10, contextNote: "Two benefits, 5 marks each (3 + 2).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Greater productivity/reduction in absenteeism: workers may be absent less frequently / less payments on social welfare / more productive economy.","Reduction in cancer related deaths / less congested health services: less social costs to society.","Population healthier: resulting in reduced demand for health services / reduced pressure on hospitals.","Improved environment: less litter on the streets and reduced cleaning costs."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q7-a-i", topicId: "economics-3-1", conceptId: "social-housing-as-capital-spending",
+    section: "B", questionRef: "2015 OL Section B Q7(a)(i)",
+    stem: "Following Budget 2015 the Government announced plans to spend €2.2bn on social housing over the next three years. Note: Social Housing refers to housing supplied by the Government to people on low incomes at rents which are lower than free market rents.",
+    questionText: "Does this spending on social housing represent current expenditure or capital expenditure by the government? Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-answer", kind: "point", verbatim: "Answer: Capital expenditure", marks: 3, contextNote: "The answer, 3 marks.", openList: true },
+    { id: "r-explanation", kind: "point", verbatim: "Explanation: Citizens will benefit from social housing over a number of years.", marks: 3, accepts: ["This is a once-off / long-term item of expenditure."], contextNote: "The explanation, 3 marks. The scheme also accepts its second statement.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q7-a-ii", topicId: "economics-3-1", conceptId: "advantages-of-social-housing",
+    section: "B", questionRef: "2015 OL Section B Q7(a)(ii)",
+    stem: "Following Budget 2015 the Government announced plans to spend €2.2bn on social housing over the next three years. Note: Social Housing refers to housing supplied by the Government to people on low incomes at rents which are lower than free market rents.",
+    questionText: "Outline two advantages of expenditure on social housing for the Irish economy.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 7","answer":2,"ofParts":6,"perPart":7}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An advantage — any two", marks: 14, contextNote: "Two advantages, 7 marks each: State: 4 marks. Explain: 3 marks.", openList: true, group: {"claimMax":2,"perOption":7,"options":["Reduced homelessness — With more housing available for those people who are homeless the number sleeping in the streets will decrease.","Improved standard of living — Those people who move from hostels / small rented apartments will experience an improved standard of living / improved security.","Generates employment in construction industry — Demand for workers in the construction industry will increase due to increased building of houses.","Reduced rental prices — With increased supply of housing the prices for rental property may decrease for tenants.","Improved infrastructure — The state’s infrastructure improves and this increases the overall welfare in Irish society.","Economic growth — There will be an increase in demand for goods and services associated with the construction industry which will benefit the suppliers of these goods and services."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q7-a-iii", topicId: "economics-0-1", conceptId: "the-opportunity-cost-of-social-housing",
+    section: "B", questionRef: "2015 OL Section B Q7(a)(iii)",
+    stem: "Following Budget 2015 the Government announced plans to spend €2.2bn on social housing over the next three years. Note: Social Housing refers to housing supplied by the Government to people on low incomes at rents which are lower than free market rents.",
+    questionText: "Explain, using an example, one opportunity cost of this investment in social housing.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-cost", kind: "point", verbatim: "The government could spend the money on health care.", marks: 3, contextNote: "The opportunity cost, 3 marks: Any one example stated and explained: 6 marks (3 + 3).", openList: true },
+    { id: "r-example", kind: "point", verbatim: "They could open wards in hospitals / invest in new ambulances.", marks: 3, contextNote: "The example, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q7-b-i", topicId: "economics-3-5", conceptId: "measuring-growth",
+    section: "B", questionRef: "2015 OL Section B Q7(b)(i)",
+    stem: "“The Irish economy is forecast to grow by 3.7% in 2015, marking a third successive year of growth.” (Central Bank Quarterly Bulletin, 2015)",
+    questionText: "State one measure of economic growth.",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A measure — any one", marks: 7, contextNote: "One measure, 7 marks.", openList: true, group: {"claimMax":1,"perOption":7,"options":["Gross National Product / GNP","Gross Domestic Product / GDP"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q7-b-ii", topicId: "economics-3-5", conceptId: "who-gains-from-growth",
+    section: "B", questionRef: "2015 OL Section B Q7(b)(ii)",
+    stem: "“The Irish economy is forecast to grow by 3.7% in 2015, marking a third successive year of growth.” (Central Bank Quarterly Bulletin, 2015)",
+    questionText: "State and explain one benefit of economic growth for each of the following in the Irish economy: • Irish citizens • Businesses • Government finances.",
+    tariffModel: {"kind":"fixed","notation":"3 x 6 (3 + 3)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    rows: [
+    { id: "r-irish", kind: "anyN", verbatim: "Irish citizens — any one", marks: 6, contextNote: "One benefit for Irish citizens, 6 marks: State: 3 marks, Explain: 3 marks.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Employment opportunities — If sales increase more workers will be required / existing jobs may be made more secure.","Increased standard of living — Citizens will have a higher disposable income.","Improved state services — If state revenues improve then the government may improve state services / develop state infrastructure.","Less need to emigrate — If more jobs are created then less citizens may need to emigrate."]} },
+    { id: "r-businesses", kind: "anyN", verbatim: "Businesses — any one", marks: 6, contextNote: "One benefit for businesses, 6 marks: State: 3 marks, Explain: 3 marks.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Increased sales / profits — Sales increase leading to increased profits.","Expansion / less risk of closure — Increased sales will allow businesses continue in production / to expand."]} },
+    { id: "r-government", kind: "anyN", verbatim: "Government finances — any one", marks: 6, contextNote: "One benefit for government finances, 6 marks: State: 3 marks, Explain: 3 marks.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Tax revenues — Increased employment will result in increased tax revenues. CT will increase if profits rise. VAT/ Excise duties should increase.","Social welfare spending — Expenditure on social welfare should fall if employment rises.","Reduced borrowing / Ability to repay debt — The improvement in the state’s finances may mean that the level of state borrowing will fall / Government could meet its budgetary targets."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q7-c-i", topicId: "economics-4-1", conceptId: "why-join-the-eu",
+    section: "B", questionRef: "2015 OL Section B Q7(c)(i)",
+    stem: "Ireland has been a member of the European Union (EU) since 1973.",
+    questionText: "Outline two reasons why countries may want to become members of the EU.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":8,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 12, contextNote: "Two reasons, 6 marks each (3 + 3).", openList: true, group: {"claimMax":2,"perOption":6,"options":["Assess to a larger market: businesses will be able to sell to a market of over 500 million consumers.","Free trade: removal of trade barriers will help reduce costs for businesses and help them compete.","Economic growth: with increased trade, the economy will grow (export-led growth).","Free movement of people: members can move freely to live, work and complete their education in EU states.","Education: qualifications are recognised which makes employment easier.","Inward investment: businesses outside the EU may wish to access large EU markets.","Access to Social Cohesion Fund: the EU invests in poorer regions to decrease regional disparities.","Consumer benefits: freedom of shopping, competitive prices and better consumer protection."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q7-c-ii", topicId: "economics-4-1", conceptId: "disadvantages-of-eu-membership",
+    section: "B", questionRef: "2015 OL Section B Q7(c)(ii)",
+    stem: "Ireland has been a member of the European Union (EU) since 1973.",
+    questionText: "Outline two possible economic disadvantages for Ireland of membership of the EU.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 6","answer":2,"ofParts":3,"perPart":6}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A disadvantage — any two", marks: 12, contextNote: "Two disadvantages, 6 marks each (3 + 3).", openList: true, group: {"claimMax":2,"perOption":6,"options":["Cost to Ireland: Ireland is now a net contributor to the EU Budget.","Pressure to adopt EU policies (austerity/fishing quotas etc.): since the economic downturn the Irish government has been required to reduce government spending and to meet budget targets set out by the EU (austerity policy).","Bureaucracy and red tape: extra bureaucracy within the EU results in higher costs for businesses and it also takes decision making further away from local communities."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q8-a-i", topicId: "economics-3-0", conceptId: "lines-of-a-simple-circular-flow",
+    section: "B", questionRef: "2015 OL Section B Q8(a)(i)",
+    stem: "The diagram below represents the Circular Flow of Income in an economy without government or international trade.",
+    questionText: "Copy the diagram into your answerbook. Clearly label each of the lines 1 to 3.",
+    tariffModel: {"kind":"fixed","notation":"4 + 3 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 11,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1 — Supply factors of production to firms", marks: 4, contextNote: "Line 1, 4 marks (2 + 2).", openList: true },
+    { id: "r-2", kind: "point", verbatim: "2 — Spending / payment for goods and services.", marks: 3, contextNote: "Line 2, 3 marks.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "3 — Households receive factor income for supplying inputs (factors of production)", marks: 4, contextNote: "Line 3, 4 marks (2 + 2).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-OL-paper-p10-q8a-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p10-q8a-diagram.png",
+          "srcHash": "e89f63b3a32569bdce519358931a7f52",
+          "alt": "A circular flow diagram: Households on the left and Firms on the right. A curved line along the top, labelled Production of domestic goods/services, has its arrow pointing to Households. Below it line 1 runs from Households to Firms; beneath the ovals line 2 runs from Households to Firms and line 3 from Firms to Households.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q8-a-ii", topicId: "economics-3-0", conceptId: "households-and-firms",
+    section: "B", questionRef: "2015 OL Section B Q8(a)(ii)",
+    stem: "The diagram below represents the Circular Flow of Income in an economy without government or international trade.",
+    questionText: "Explain the types of transactions / activities which take place between households and firms.",
+    tariffModel: {"kind":"fixed","notation":"2 x 4 (2 + 2)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-households", kind: "point", verbatim: "Households: supply factors of production (to firms) and in return receive an income.", marks: 4, contextNote: "Households, 4 marks (2 + 2).", openList: true },
+    { id: "r-firms", kind: "point", verbatim: "Firms: sell commodities (goods & services) to households, who spend their income on these.", marks: 4, contextNote: "Firms, 4 marks (2 + 2).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-OL-paper-p10-q8a-diagram",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p10-q8a-diagram.png",
+          "srcHash": "e89f63b3a32569bdce519358931a7f52",
+          "alt": "A circular flow diagram: Households on the left and Firms on the right. A curved line along the top, labelled Production of domestic goods/services, has its arrow pointing to Households. Below it line 1 runs from Households to Firms; beneath the ovals line 2 runs from Households to Firms and line 3 from Firms to Households.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q8-a-iii", topicId: "economics-4-2", conceptId: "is-ireland-open",
+    section: "B", questionRef: "2015 OL Section B Q8(a)(iii)",
+    questionText: "Is Ireland an open economy? Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-answer", kind: "point", verbatim: "Answer: It is an open economy.", marks: 3, contextNote: "The answer, 3 marks.", openList: true },
+    { id: "r-explanation", kind: "point", verbatim: "Explanation: it engages in trade i.e. it imports and exports goods and services.", marks: 3, contextNote: "The explanation, 3 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q8-b-i", topicId: "economics-3-0", conceptId: "national-income",
+    section: "B", questionRef: "2015 OL Section B Q8(b)(i)",
+    questionText: "National Income is calculated using the following formula: National Income = Consumption + I + Government Spending + X – M Explain the underlined term.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Income earned by the permanent residents of a country from current economic activity in one year.", marks: 5, contextNote: "The explanation, 5 marks: the scheme prints 4 marks and 1 mark beneath its one sentence.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q8-b-ii", topicId: "economics-3-0", conceptId: "i-x-and-m",
+    section: "B", questionRef: "2015 OL Section B Q8(b)(ii)",
+    stem: "National Income is calculated using the following formula: National Income = Consumption + I + Government Spending + X – M",
+    questionText: "State what each of the letters I, X and M stand for.",
+    tariffModel: {"kind":"fixed","notation":"3 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "r-i", kind: "point", verbatim: "I: Investment expenditure.", marks: 5, contextNote: "I, 5 marks.", openList: true },
+    { id: "r-x", kind: "point", verbatim: "X: Exports.", marks: 5, contextNote: "X, 5 marks.", openList: true },
+    { id: "r-m", kind: "point", verbatim: "M: Imports", marks: 5, contextNote: "M, 5 marks.", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q8-b-iii", topicId: "economics-3-0", conceptId: "why-consumer-spending-is-rising",
+    section: "B", questionRef: "2015 OL Section B Q8(b)(iii)",
+    stem: "National Income is calculated using the following formula: National Income = Consumption + I + Government Spending + X – M",
+    questionText: "The level of consumer spending (consumption) is beginning to rise in Ireland. Outline two possible reasons for this increase in consumer spending.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":4,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any two", marks: 10, contextNote: "Two reasons, 5 marks each (3 + 2).", openList: true, group: {"claimMax":2,"perOption":5,"options":["Increase in employment — Employment is increasing in Ireland and this results in higher disposable income for the newly employed people to spend on goods and services.","Decrease in income tax rate / USC rate — In Budget 2015 the government reduced the top rate of tax from 41% to 40% and so taxpayers have more disposable income.","Increase in consumer confidence — Some consumers are feeling more confident about the future economic prospects and this means that some consumers are beginning to spend increasing amounts of their disposable income.","Competitive credit terms from car dealerships — Some car dealerships are offering 0% finance in order to encourage consumers to buy new cars."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q8-c-i", topicId: "economics-3-0", conceptId: "mpm-and-mps",
+    section: "B", questionRef: "2015 OL Section B Q8(c)(i)",
+    stem: "The Multiplier formula for an open economy is:",
+    questionText: "Explain the terms MPM and MPS.",
+    tariffModel: {"kind":"fixed","notation":"6 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-mpm", kind: "point", verbatim: "MPM: Marginal Propensity to Import — The proportion of extra income which is spent on imports.", marks: 6, contextNote: "MPM, 6 marks (3 + 3).", openList: true },
+    { id: "r-mps", kind: "point", verbatim: "MPS: Marginal Propensity to Save — The proportion of extra income which is saved.", marks: 6, contextNote: "MPS, 6 marks (3 + 3).", openList: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    figure: {
+          "candId": "economics-2015-OL-paper-p10-q8c-formula",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p10-q8c-formula.png",
+          "srcHash": "c58ec785098c1a89ff1aee3696028281",
+          "alt": "The printed formula: 1 over MPS + MPM.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2015 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2015-ol-sb-q8-c-ii", topicId: "economics-3-0", conceptId: "calculating-the-multiplier",
+    section: "B", questionRef: "2015 OL Section B Q8(c)(ii)",
+    stem: "The Multiplier formula for an open economy is:",
+    questionText: "Assume that MPM is 0.3 and MPS is 0.2. Calculate, using the above formula, the size of the Multiplier. (Show all your workings.)",
+    tariffModel: {"kind":"fixed","notation":"4 x 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Each starred figure", marks: 8, contextNote: "8 marks: each * figure at 2 marks each. The figure shows the working as printed: 1 over 0.3 + 0.2, and the answer 2.", openList: true, group: {"claimMax":4,"perOption":2,"options":["1*","0.3*","0.2*","2*"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Economics 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
+    questionFigure: {
+          "candId": "economics-2015-OL-paper-p10-q8c-formula",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p10-q8c-formula.png",
+          "srcHash": "c58ec785098c1a89ff1aee3696028281",
+          "alt": "The printed formula: 1 over MPS + MPM.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "economics-2015-OL-scheme-p33-q8cii-working",
+          "src": "/exam-figures/economics/markbank/economics-2015-OL-scheme-p33-q8cii-working.png",
+          "srcHash": "917dbd8190aa80562708a83ff3d0652a",
+          "alt": "The marking scheme’s working: 1* over 0.3* + 0.2*, and beneath it the answer 2*.",
+          "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2016, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2016 Ordinary Level — © State Examinations Commission.",

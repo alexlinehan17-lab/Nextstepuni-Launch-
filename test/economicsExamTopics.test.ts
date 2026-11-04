@@ -183,12 +183,21 @@ describe('Economics exam-topic registry', () => {
       // minimum wage and conferences are filed under their own topics). The
       // 2015 Higher review added one: Section A Q9 under government
       // intervention (an ageing population's pension and retirement policy is
-      // fiscal policy and the labour market).
-      matchedAssociations: 748,
-      referenceAnomalyAssociations: 155,
+      // fiscal policy and the labour market). The 2015 Ordinary review added
+      // eleven: Section A Q6, Section B Q4(b) and Section B Q6 under acronyms
+      // and Section B Q8 under formulas (study-aid headings); Section A Q1
+      // under the labour market (land is a factor of production); Section A
+      // Q4 and Section B Q5 under globalisation (visible trade and the
+      // exchange rate are international trade); Section A Q3 under government
+      // intervention (corporation tax is fiscal policy); Section A Q8 under
+      // government intervention and under growth and development (emigration
+      // is employment and unemployment); and Section B Q6 under national
+      // income (the current budget is fiscal policy).
+      matchedAssociations: 737,
+      referenceAnomalyAssociations: 166,
       sourceBlockedAssociations: 217,
       matchedLogicalCards: 517,
-      matchedQuestionTopicLinks: 672,
+      matchedQuestionTopicLinks: 661,
       retainedLocalLogicalCards: 32,
     });
     expect(evidence.policy.excludedCommercialContent).toContain('Question text');

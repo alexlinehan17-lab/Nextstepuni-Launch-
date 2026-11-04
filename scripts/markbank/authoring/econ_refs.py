@@ -155,6 +155,9 @@ HAND_CHECKED = {
     'econ-2016-ol-sb-q1-b-i',         # 2016 OL p5: "(i) Explain the underlined term." (four words; the only one on p5)
     'econ-2015-hl-sb-q1-b-i',         # 2015 HL p5: "(i) Exceptionally wet weather conditions" (four words; the stem carries the ask)
     'econ-2015-hl-sb-q7-c-i',         # 2015 HL p8: "(i) Define the term economic growth." (five words)
+    'econ-2015-ol-sb-q1-c-i',         # 2015 OL p5: "(i) Explain the term brand loyalty." (six words)
+    'econ-2015-ol-sb-q3-a-i',         # 2015 OL p7: "(i) Explain the underlined term above." (five words)
+    'econ-2015-ol-sb-q5-b-i',         # 2015 OL p8: "(i) Explain the economic term embargo." (six words)
 }
 
 

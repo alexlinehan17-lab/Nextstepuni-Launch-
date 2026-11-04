@@ -56813,5 +56813,142 @@
     "year": 2015,
     "level": "higher",
     "attribution": "SEC Leaving Certificate Economics 2015 Higher Level — © State Examinations Commission"
+  },
+  "economics-2015-OL-scheme-p09-q1a-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2015-OL-scheme-p09-q1a-diagram.png",
+    "md5": "e764cb7d7c050f3c8f16eb1f4dd599ee",
+    "alt": "The marking scheme’s completed diagram: P against Q, a falling AR line, a steeper falling MR line, a U-shaped AC curve touching AR at a dot and an MC curve rising through S, where MC meets MR. An arrow runs down from S to Q1 on the quantity axis, and from the dot on AR an arrow runs left to P1 on the price axis.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2015 OL Section B Q1(a)(ii)",
+    "year": 2015,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2015-OL-scheme-p12-q2a-graph": {
+    "src": "/exam-figures/economics/markbank/economics-2015-OL-scheme-p12-q2a-graph.png",
+    "md5": "5629727a2f545d44a98124ce9d8ac716",
+    "alt": "The marking scheme’s completed graph: Price € 100 to 500 on the vertical axis and Quantity (units) 10,000 to 50,000 on the horizontal. A falling line D/C through five dots and a rising line S/C through five dots cross at 300 and 30,000; an arrow runs left from the crossing to P1 300 and an arrow runs down to Q1 30,000.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2015 OL Section B Q2(a)",
+    "year": 2015,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2015-OL-scheme-p22-q5aiii-working": {
+    "src": "/exam-figures/economics/markbank/economics-2015-OL-scheme-p22-q5aiii-working.png",
+    "md5": "b949ae55c27a3c4a740a750e034d8e3d",
+    "alt": "The marking scheme’s working: New visible imports: €24,200 m + €1,000 m = €25,200 m; New Balance of Trade: €25,000 m - €25,200 m = - €200; It is a deficit. A raised 1 sits beside each figure added or subtracted and a raised 2 beside each result and beside deficit.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2015 OL Section B Q5(a)(iii)",
+    "year": 2015,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2015-OL-scheme-p25-q6ai-working": {
+    "src": "/exam-figures/economics/markbank/economics-2015-OL-scheme-p25-q6ai-working.png",
+    "md5": "d812d80587bca38c194ef22b0efb6bb0",
+    "alt": "The marking scheme’s working: €45,255 m - €48,985 m = (€ 3,730), with a raised 1 beside €45,255, beside the minus sign and beside €48,985, and a raised 2 beside the answer.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2015 OL Section B Q6(a)(i)",
+    "year": 2015,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2015-OL-scheme-p33-q8cii-working": {
+    "src": "/exam-figures/economics/markbank/economics-2015-OL-scheme-p33-q8cii-working.png",
+    "md5": "917dbd8190aa80562708a83ff3d0652a",
+    "alt": "The marking scheme’s working: 1* over 0.3* + 0.2*, and beneath it the answer 2*.",
+    "solution": true,
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2015 OL Section B Q8(c)(ii)",
+    "year": 2015,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2015-OL-paper-p02-q1-table": {
+    "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p02-q1-table.png",
+    "md5": "8e91b5307508543b903b6c5a4066e65b",
+    "alt": "A table of two rows. Factor of Production: LAND, (ii) blank, CAPITAL, (iv) blank. Example: (i) blank, TEACHER, (iii) blank, BUSINESS OWNER.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2015 OL Section A Q1",
+    "year": 2015,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2015-OL-paper-p05-q1-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p05-q1-diagram.png",
+    "md5": "c07880301d5f3afa9c3d21b29cc18a57",
+    "alt": "A diagram with P on the vertical axis and Q on the horizontal: a falling AR line, a steeper falling line marked Marginal Revenue, a U-shaped AC curve touching AR at a dot and an MC curve rising through the point S, where it meets the Marginal Revenue line. The labels P, Q, AC, MC and AR are circled.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2015 OL Section B Q1(a)",
+    "year": 2015,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2015-OL-paper-p06-q2-table": {
+    "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p06-q2-table.png",
+    "md5": "7c382c94ef7b74897dec765e15133d8f",
+    "alt": "A table: Price € 100, 200, 300, 400, 500; Quantity Demanded (units) 50,000, 40,000, 30,000, 20,000, 10,000; Quantity Supplied (units) 10,000, 20,000, 30,000, 40,000, 50,000.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2015 OL Section B Q2(a)",
+    "year": 2015,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2015-OL-paper-p07-q3-table": {
+    "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p07-q3-table.png",
+    "md5": "b5522eaf60d1e19d1c8e203e15c45124",
+    "alt": "A table in €: for 1 to 4 units of output, Fixed Costs 2,000 each; Variable Costs 1,000, 1,800, 3,300, 5,000; Total Costs 3,000, 3,800, A, B; Total Revenue 2,800, 4,300, 6,500, 8,800; Total Profit/Loss (200), 500, C, D.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2015 OL Section B Q3(a)(ii)",
+    "year": 2015,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2015-OL-paper-p08-q5a-table": {
+    "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p08-q5a-table.png",
+    "md5": "1d32d63b8b746a052dc40fa3aef335b5",
+    "alt": "A table of one row: Visible Exports €million 25,000; Visible Imports €million 24,200; Balance of Trade €million ?; Surplus or Deficit ?.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2015 OL Section B Q5(a)",
+    "year": 2015,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2015-OL-paper-p10-q8a-diagram": {
+    "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p10-q8a-diagram.png",
+    "md5": "e89f63b3a32569bdce519358931a7f52",
+    "alt": "A circular flow diagram: Households on the left and Firms on the right. A curved line along the top, labelled Production of domestic goods/services, has its arrow pointing to Households. Below it line 1 runs from Households to Firms; beneath the ovals line 2 runs from Households to Firms and line 3 from Firms to Households.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2015 OL Section B Q8(a)",
+    "year": 2015,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission"
+  },
+  "economics-2015-OL-paper-p10-q8c-formula": {
+    "src": "/exam-figures/economics/markbank/economics-2015-OL-paper-p10-q8c-formula.png",
+    "md5": "c58ec785098c1a89ff1aee3696028281",
+    "alt": "The printed formula: 1 over MPS + MPM.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2015 OL Section B Q8(c)",
+    "year": 2015,
+    "level": "ordinary",
+    "attribution": "SEC Leaving Certificate Economics 2015 Ordinary Level — © State Examinations Commission"
   }
 }

@@ -2037,3 +2037,71 @@ Checks:
 - reconcile: 1,472/2,197, with 2015 HL at 57/57.
 - refcheck: 0 wrong.
 - cardlint: clean.
+
+## 2015 Ordinary English, old syllabus (lane, 2026-11-04)
+
+All 12 paper pages and 36 scheme pages were viewed:
+- paper pp11-12 are blank;
+- scheme pp1-2 are the cover and the note on published schemes, pp3-4 the
+  title page and the support notes with the index, and pp34-36 blank;
+- scheme page numbers are the PDF's, two ahead of the printed ones;
+- the scheme prints no Summary of Mark Allocations, so every tariff is read
+  beside its part.
+
+There are 71 routes for the 80 printed asks (18 in Section A, 62 in Section
+B). There are fewer routes than asks because a ladder the scheme prices
+across parts is one card: A Q1 and A Q2 (four spaces each), A Q5(a)-(b),
+B1(b)(ii)-(iii), B2(a)(i)-(iii) and B5(c)(i)-(iii). Section B Q4(c)(ii) has one
+route for each economist the scheme names (Marx, Smith, Malthus, Ricardo), and
+the question's 75 counts one of them. 12 crops: 5 hidden scheme solutions and
+7 paper data crops.
+
+Decisions:
+- Stems stop before printed tables, and each table is the crop beside the
+  typed ask. Printed items that must be read to answer are typed from the
+  text layer: the A Q2 sentences (the table's header row dropped), the A Q4
+  word list and statements (ruled blanks set as an ellipsis), the A Q6
+  letters, the B3(a)(iii) costs, and the B5(c) rates, which are two boxed
+  lines and not a table. B6(a)'s two budget figures are one printed line of
+  labelled values, so they stay in the stem.
+- Ladders are claimed at their printed steps: A Q1 and A Q2 8 + 4 + 2 + 2, A
+  Q4 6 + 6 + 2 + 2, A Q5 6 + 6 + 4 (its (a) and (b) share one ladder, so one
+  card), A Q6 6 + 6 + 5, A Q7(ii) 4 + 3, B1(a)(ii) 3 + 2, B3(c)(ii) 6 + 3 and
+  B5(c) 12 + 6 + 6 (one card for (i)-(iii)).
+- B3(b)(i): the scheme prints "7 marks" beside the national minimum wage but
+  sets it as 4 + 2, and only 6 fits the paper's (24) for (b) with labour at 6
+  and (ii) at 2 @ 6. It is priced 6.
+- B2(b): each development's row carries the scheme's alternative answer (the
+  design fault may shift demand left; the Apps may shift supply right) as an
+  accepted alternative for (i) and (iii); its direction matches (ii) anyway.
+- B6(b)(iii): the scheme prices its Statement and Explanation columns apart
+  (12 marks: 2 at 3 marks, 2 at 3 marks), and its cells never print a
+  statement beside its own explanation, so the card is two rows: a statement
+  2 @ 3 and an explanation 2 @ 3, each response named by its category.
+- B6(a)(i) and B5(a)(iii): the raised marks beside the working are each a
+  claim (B6(a)(i) 1 + 2 + 2 with the minus sign joined to the expenditure
+  figure), and the working is the hidden solution crop.
+- B8(c)(ii): "each * figure at 2 marks": the four starred figures are a 4 @ 2
+  menu, with the working as the hidden crop.
+- B1(b)(ii)-(iii) is one card: the scheme prices each characteristic with its
+  note, 2 at 8 (4 + 4).
+
+Refcheck: three short asks were read by hand (B1(c)(i), B3(a)(i), B5(b)(i)).
+
+Topic review: 11 reference anomalies, each a commercial heading the review
+files elsewhere. A Q6, B4(b) and B6 sit under acronyms and B8 under formulas
+(study-aid headings). A Q1 sits under the labour market, but land is a factor
+of production. A Q4 and B5 sit under globalisation, but visible trade and the
+exchange rate are international trade. A Q3 sits under government
+intervention, but corporation tax is fiscal policy. A Q8 sits under government
+intervention and under growth and development, but emigration is employment
+and unemployment. B6 sits under national income, but the current budget is
+fiscal policy.
+
+Checks:
+- econ_review: 29/66.
+- build: 1,605 cards, 0 dropped.
+- Build rule: 283 claims on this paper, 0 untraceable (44 trace by halves).
+- reconcile: 1,552/2,197, with 2015 OL at 80/80.
+- refcheck: 0 wrong.
+- cardlint: clean.

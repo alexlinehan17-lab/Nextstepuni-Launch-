@@ -18,11 +18,11 @@
     "referenceReportedAssociations": 1851,
     "referenceOfficialAssociations": 1120,
     "referenceMockAssociations": 731,
-    "matchedAssociations": 748,
+    "matchedAssociations": 737,
     "sourceBlockedAssociations": 217,
-    "referenceAnomalyAssociations": 155,
+    "referenceAnomalyAssociations": 166,
     "matchedLogicalCards": 517,
-    "matchedQuestionTopicLinks": 672,
+    "matchedQuestionTopicLinks": 661,
     "retainedLocalLogicalCards": 32,
     "localPaperVariants": 66,
     "localPhysicalMappings": 1098,
@@ -13691,7 +13691,7 @@
       "section": "A",
       "question": 3,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -13699,7 +13699,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "3"
-      }
+      },
+      "reason": "Reviewed SEC source: Corporation tax and its rate in the Budget are Fiscal Policy & the Budget (3-1); attracting FDI is also Globalisation (4-1). 10 (5 + 5) the explanation + 6 one reason from seven."
     },
     {
       "topicId": "economics-ordinary-24-government-intervention",
@@ -13710,7 +13711,7 @@
       "section": "A",
       "question": 8,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -13718,7 +13719,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "8"
-      }
+      },
+      "reason": "Reviewed SEC source: Emigration and the brain drain are Employment & Unemployment (3-2). 10 the explanation + 7 one other problem from three."
     },
     {
       "topicId": "economics-ordinary-24-government-intervention",
@@ -15546,7 +15548,7 @@
       "section": "A",
       "question": 1,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -15554,7 +15556,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "1"
-      }
+      },
+      "reason": "Reviewed SEC source: The factors of production and their examples are Scarcity & Choice (0-1). The four spaces (i)-(iv): the first correct response 8, the 2nd 4, the 3rd and 4th 2 each: one card."
     },
     {
       "topicId": "economics-ordinary-32-the-labour-market",
@@ -16392,7 +16395,7 @@
       "section": "B",
       "question": 6,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -16400,7 +16403,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B6"
-      }
+      },
+      "reason": "Reviewed SEC source: The current budget, income tax and the USC are Fiscal Policy & the Budget (3-1); measures against smoking and their benefits for individuals are Government Intervention (1-3), and the benefits for society Market Failure (2-2), as a demerit good’s external costs. Nine tasks totalling 75. a(i) 5, the three marked figures at 1 and the answer 2; a(ii) 2 @ 5; a(iii) 2 @ 5, one each side from seven. b(i) 6; b(ii) the answer 3 + the explanation 3; b(iii) any two of three, each the statement 3 + the explanation 3. c(i) 6 (3 + 3) from five; c(ii) 2 @ 5 (3 + 2) from five; c(iii) 2 @ 5 (3 + 2) from four."
     },
     {
       "topicId": "economics-ordinary-41-national-income",
@@ -18258,7 +18262,7 @@
       "section": "A",
       "question": 8,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -18266,7 +18270,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "8"
-      }
+      },
+      "reason": "Reviewed SEC source: Emigration and the brain drain are Employment & Unemployment (3-2). 10 the explanation + 7 one other problem from three."
     },
     {
       "topicId": "economics-ordinary-51-economic-growth-development",
@@ -18873,7 +18878,7 @@
       "section": "A",
       "question": 4,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -18881,7 +18886,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "4"
-      }
+      },
+      "reason": "Reviewed SEC source: Visible exports and invisible imports are International Trade & Competitiveness (4-2). The four words placed (Sale, Goods, Purchase, Services): the first 2 correct 6 each, the 3rd and 4th 2 each: one card."
     },
     {
       "topicId": "economics-ordinary-52-globalisation",
@@ -18892,7 +18898,7 @@
       "section": "B",
       "question": 5,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -18900,7 +18906,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B5"
-      }
+      },
+      "reason": "Reviewed SEC source: The balance of trade, embargoes, exports and the exchange rate are International Trade & Competitiveness (4-2); employment is also Employment & Unemployment (3-2). Seven cards for nine asks, totalling 75. a(i) 6 (3 + 3); a(ii) the working 6 (2 + 2 + 2) + the surplus and its reason 2 + 2; a(iii) 10, the raised marks beside each figure (1 + 1 + 2, 1 + 1 + 2) and the deficit 2. b(i) 5; b(ii) the answer 3 + the explanation 3; b(iii) 2 @ 7 (4 + 3) from six. c(i)-(iii) share one ladder, the 1st correct answer 12 (6 + 6) and the 2nd and 3rd 6 (3 + 3): one card covers the three."
     },
     {
       "topicId": "economics-ordinary-52-globalisation",
@@ -19575,7 +19582,7 @@
       "section": "A",
       "question": 6,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -19583,7 +19590,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "6"
-      }
+      },
+      "reason": "Reviewed SEC source: The ECB and the CPI are Monetary Policy & Inflation (3-3); the WTO is Globalisation (4-1). The three names: the first 2 correct 6 each (2 + 2 + 2), the 3rd 5 (2 + 2 + 1)."
     },
     {
       "topicId": "economics-ordinary-acronyms",
@@ -19594,7 +19602,7 @@
       "section": "B",
       "question": 6,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -19602,7 +19610,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B6"
-      }
+      },
+      "reason": "Reviewed SEC source: The current budget, income tax and the USC are Fiscal Policy & the Budget (3-1); measures against smoking and their benefits for individuals are Government Intervention (1-3), and the benefits for society Market Failure (2-2), as a demerit good’s external costs. Nine tasks totalling 75. a(i) 5, the three marked figures at 1 and the answer 2; a(ii) 2 @ 5; a(iii) 2 @ 5, one each side from seven. b(i) 6; b(ii) the answer 3 + the explanation 3; b(iii) any two of three, each the statement 3 + the explanation 3. c(i) 6 (3 + 3) from five; c(ii) 2 @ 5 (3 + 2) from five; c(iii) 2 @ 5 (3 + 2) from four."
     },
     {
       "topicId": "economics-ordinary-acronyms",
@@ -19613,7 +19622,7 @@
       "section": "B",
       "question": 4,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -19621,7 +19630,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B4"
-      }
+      },
+      "reason": "Reviewed SEC source: Money and savings are Financial Sector (3-4); DIRT is Fiscal Policy & the Budget (3-1), as 2018 OL files it; Keynes’s motives for holding money are Financial Sector (3-4); economists’ contributions are Economics as a Way of Thinking (0-0). Six tasks totalling 75. a 2 @ 7 the two terms + 7 one other function from two. b(i) 8; b(ii) 6; b(iii) 2 @ 8 (4 + 4) from seven. c(i) any two of three motives @ 8; c(ii) 8, the name 2 + the statement 3 + the explanation 3: the scheme lists each economist’s own, so one route per economist, counted once."
     },
     {
       "topicId": "economics-ordinary-acronyms",
@@ -20163,7 +20173,7 @@
       "section": "B",
       "question": 8,
       "sitting": "main",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -20171,7 +20181,8 @@
         "paperKey": "single",
         "fileid": "LC034GLP000EV.pdf",
         "questionNumber": "B8"
-      }
+      },
+      "reason": "Reviewed SEC source: The circular flow, national income, its formula, consumer spending and the multiplier are National Income (3-0); an open economy is International Trade & Competitiveness (4-2). Eight tasks totalling 75. a(i) line 1 4 (2 + 2), line 2 3, line 3 4 (2 + 2); a(ii) 2 @ 4 (2 + 2), households and firms; a(iii) the answer 3 + the explanation 3. b(i) 5 (the scheme prints 4 + 1 under its one sentence); b(ii) 3 @ 5 the three letters; b(iii) 2 @ 5 (3 + 2) from four. c(i) 6 (3 + 3) for each of MPM and MPS; c(ii) 8, the four starred figures at 2."
     },
     {
       "topicId": "economics-ordinary-formulas",
@@ -20835,7 +20846,7 @@
     "subjectId": "economics",
     "authority": "SEC question paper; canonical curriculum node IDs",
     "reviewedAt": "2026-11-04",
-    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2015 Higher, 2016-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 38 physical variants pending.",
+    "reviewScope": "Complete visual paper/scheme reviews: 2022–2024 Higher/Ordinary English/Irish; 2025 Higher and Ordinary English; 2026 Higher and Ordinary English; 2021 Higher and Ordinary English (the 2021 Ordinary review replaces the targeted Q3 mapping); 2015-2019 Higher and Ordinary and 2020 Higher English (old syllabus; Section B keyed B1-B8 as the Atlas numbers it). Remaining 37 physical variants pending.",
     "questions": [
       {
         "level": "higher",
@@ -28496,6 +28507,279 @@
         ],
         "reason": "The budget deficit is Fiscal Policy & the Budget (3-1); balanced regional development is Economic Growth (3-5), as 2019 OL files it, and its policies Government Intervention (1-3); emigration and returning emigrants are Employment & Unemployment (3-2). Five tasks totalling 75. a the reference to the Irish economy 6 (3 + 3) + 2 points at 7 (4 + 3): agree or disagree, each with its own list, so one route per side, counted once. b(i) 3 @ 5 (2 + 3) from five; b(ii) 2 @ 5 (2 + 3) from five. c(i) 4 @ 5 (2 + 3) from the negative and positive columns; c(ii) 2 @ 5 (2 + 3) from six.",
         "paperSha256": "cd13d198b6a02aa03b9271b29d4e0a2a8e7a220c3932034ed6a8314895d2c40f"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "1",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-0-1"
+        ],
+        "reason": "The factors of production and their examples are Scarcity & Choice (0-1). The four spaces (i)-(iv): the first correct response 8, the 2nd 4, the 3rd and 4th 2 each: one card.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "2",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0"
+        ],
+        "reason": "The assumptions of perfect competition are Market Structures (2-0). The four TRUE/FALSE answers: the first correct response 8, the 2nd 4, the 3rd and 4th 2 each: one card.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "3",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          2
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1",
+          "economics-4-1"
+        ],
+        "reason": "Corporation tax and its rate in the Budget are Fiscal Policy & the Budget (3-1); attracting FDI is also Globalisation (4-1). 10 (5 + 5) the explanation + 6 one reason from seven.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "4",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-4-2"
+        ],
+        "reason": "Visible exports and invisible imports are International Trade & Competitiveness (4-2). The four words placed (Sale, Goods, Purchase, Services): the first 2 correct 6 each, the 3rd and 4th 2 each: one card.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "5",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-4-0"
+        ],
+        "reason": "LDCs and how Ireland could support them are Growth & Development (4-0). One card for both asks: the scheme prices the two characteristics of (a) and the one way of (b) on one ladder, the first 2 correct responses 6 each and the 3rd 4.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "6",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          3
+        ],
+        "canonicalNodeIds": [
+          "economics-3-3",
+          "economics-4-1"
+        ],
+        "reason": "The ECB and the CPI are Monetary Policy & Inflation (3-3); the WTO is Globalisation (4-1). The three names: the first 2 correct 6 each (2 + 2 + 2), the 3rd 5 (2 + 2 + 1).",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "7",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-1-4"
+        ],
+        "reason": "Price elasticity of demand is Elasticity (1-4). i 10 (5 + 5); ii the two circled answers (rise, 28%) 4 + 3.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "8",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-3-2"
+        ],
+        "reason": "Emigration and the brain drain are Employment & Unemployment (3-2). 10 the explanation + 7 one other problem from three.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "9",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          4
+        ],
+        "canonicalNodeIds": [
+          "economics-1-1",
+          "economics-3-0",
+          "economics-4-2"
+        ],
+        "reason": "Online shopping’s benefits for consumers are The Consumer (1-1); its costs for the economy (domestic activity, tax revenue, imports as a leakage) are National Income (3-0), and imports International Trade & Competitiveness (4-2). a 2 @ 6 from four; b 5 one cost from four.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "B1",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          5
+        ],
+        "canonicalNodeIds": [
+          "economics-2-0"
+        ],
+        "reason": "Imperfect competition, barriers to entry, brand loyalty and advertising are Market Structures (2-0). Seven cards for eight asks, totalling 75. a(i) 5 @ 5 the five labels; a(ii) Q1 and P1, the 1st correct 3 and the 2nd 2 (hidden solution diagram). b(i) 4 the explanation (an example alone 2); b(ii) and (iii) share one 2 @ 8 (4 + 4), a characteristic with its note: one card covers both. c(i) 5; c(ii) and c(iii) each 2 @ 5 (3 + 2), one for the consumer and one for the seller: two heading rows.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "B2",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          6
+        ],
+        "canonicalNodeIds": [
+          "economics-1-0",
+          "economics-1-3",
+          "economics-3-1"
+        ],
+        "reason": "Demand, supply, equilibrium and their shifts are The Market Economy (1-0); water charges are Government Intervention (1-3), and as a charge on households also Fiscal Policy & the Budget (3-1). Six cards for eight asks, totalling 75. a(i)-(iii) share one graph priced D/C 10 (5 points at 2), S/C 10, the four labels P, Q, D/C and S/C at 1, and P1 and Q1 2 x 3: one card (hidden solution graph). b one column per development: (i) which curve 5 + 5; (ii) which way 3 + 3; (iii) why 2 + 2, with the scheme’s alternative answer accepted. c(i) 2 @ 6 (3 + 3) from three; c(ii) households 7 (4 + 3) + the government 6 (3 + 3): two heading rows.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "B3",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          7
+        ],
+        "canonicalNodeIds": [
+          "economics-0-1",
+          "economics-1-5",
+          "economics-2-1"
+        ],
+        "reason": "The entrepreneur and entrepreneurship are Scarcity & Choice (0-1); fixed, variable and total costs and profit are Costs of Production, Revenue & Profit (1-5); labour, the minimum wage and taking on workers are The Labour Market (2-1). Seven tasks totalling 75. a(i) 6; a(ii) A, B, C and D each 4 (1 + 1 + 2); a(iii) the four costs at 1 + the two explanations at 2. b(i) labour 6 (4 + 2) + the national minimum wage 6: the scheme prints 7 beside the second but sets it as 4 + 2, and only 6 fits the paper’s (24); b(ii) 2 @ 6 (3 + 3) from three. c(i) 2 @ 6 (3 + 3) from four; c(ii) one action for each of the government and consumers, the 1st correct 6 (3 + 3) and the 2nd 3 (2 + 1).",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "B4",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          7
+        ],
+        "canonicalNodeIds": [
+          "economics-3-4",
+          "economics-3-1",
+          "economics-0-0"
+        ],
+        "reason": "Money and savings are Financial Sector (3-4); DIRT is Fiscal Policy & the Budget (3-1), as 2018 OL files it; Keynes’s motives for holding money are Financial Sector (3-4); economists’ contributions are Economics as a Way of Thinking (0-0). Six tasks totalling 75. a 2 @ 7 the two terms + 7 one other function from two. b(i) 8; b(ii) 6; b(iii) 2 @ 8 (4 + 4) from seven. c(i) any two of three motives @ 8; c(ii) 8, the name 2 + the statement 3 + the explanation 3: the scheme lists each economist’s own, so one route per economist, counted once.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "B5",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          8
+        ],
+        "canonicalNodeIds": [
+          "economics-4-2",
+          "economics-3-2"
+        ],
+        "reason": "The balance of trade, embargoes, exports and the exchange rate are International Trade & Competitiveness (4-2); employment is also Employment & Unemployment (3-2). Seven cards for nine asks, totalling 75. a(i) 6 (3 + 3); a(ii) the working 6 (2 + 2 + 2) + the surplus and its reason 2 + 2; a(iii) 10, the raised marks beside each figure (1 + 1 + 2, 1 + 1 + 2) and the deficit 2. b(i) 5; b(ii) the answer 3 + the explanation 3; b(iii) 2 @ 7 (4 + 3) from six. c(i)-(iii) share one ladder, the 1st correct answer 12 (6 + 6) and the 2nd and 3rd 6 (3 + 3): one card covers the three.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "B6",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          9
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1",
+          "economics-1-3",
+          "economics-2-2"
+        ],
+        "reason": "The current budget, income tax and the USC are Fiscal Policy & the Budget (3-1); measures against smoking and their benefits for individuals are Government Intervention (1-3), and the benefits for society Market Failure (2-2), as a demerit good’s external costs. Nine tasks totalling 75. a(i) 5, the three marked figures at 1 and the answer 2; a(ii) 2 @ 5; a(iii) 2 @ 5, one each side from seven. b(i) 6; b(ii) the answer 3 + the explanation 3; b(iii) any two of three, each the statement 3 + the explanation 3. c(i) 6 (3 + 3) from five; c(ii) 2 @ 5 (3 + 2) from five; c(iii) 2 @ 5 (3 + 2) from four.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "B7",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          9
+        ],
+        "canonicalNodeIds": [
+          "economics-3-1",
+          "economics-0-1",
+          "economics-3-5",
+          "economics-4-1",
+          "economics-1-3"
+        ],
+        "reason": "Capital spending on social housing is Fiscal Policy & the Budget (3-1), and social housing Government Intervention (1-3); opportunity cost is Scarcity & Choice (0-1); economic growth is Economic Growth (3-5); EU membership is Globalisation (4-1). Seven tasks totalling 75. a(i) the answer 3 + the explanation 3; a(ii) 2 @ 7 (4 + 3) from six; a(iii) 6 (3 + 3) the opportunity cost with its example. b(i) 7; b(ii) 3 @ 6 (3 + 3), one each for citizens, businesses and the government’s finances: three heading rows. c(i) 2 @ 6 (3 + 3) from eight; c(ii) 2 @ 6 (3 + 3) from three.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
+      },
+      {
+        "level": "ordinary",
+        "lang": "ev",
+        "year": 2015,
+        "n": "B8",
+        "fileid": "LC034GLP000EV.pdf",
+        "pages": [
+          10
+        ],
+        "canonicalNodeIds": [
+          "economics-3-0",
+          "economics-4-2"
+        ],
+        "reason": "The circular flow, national income, its formula, consumer spending and the multiplier are National Income (3-0); an open economy is International Trade & Competitiveness (4-2). Eight tasks totalling 75. a(i) line 1 4 (2 + 2), line 2 3, line 3 4 (2 + 2); a(ii) 2 @ 4 (2 + 2), households and firms; a(iii) the answer 3 + the explanation 3. b(i) 5 (the scheme prints 4 + 1 under its one sentence); b(ii) 3 @ 5 the three letters; b(iii) 2 @ 5 (3 + 2) from four. c(i) 6 (3 + 3) for each of MPM and MPS; c(ii) 8, the four starred figures at 2.",
+        "paperSha256": "3be031efd6377c74e5ecc24b762635680b2110e0454f581cf2cc9f019df2b4f9"
       }
     ]
   }
