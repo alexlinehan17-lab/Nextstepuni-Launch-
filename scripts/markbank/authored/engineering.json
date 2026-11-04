@@ -14296,13 +14296,13 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 7,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "Operating machinery such as the lathe / pillar drilling etc.",
-    "marks": 3
+    "marks": 4
    },
    {
     "id": "r-2",
@@ -14312,7 +14312,7 @@
    }
   ],
   "stem": "Give brief answers to any eight of the following:",
-  "notes": "The scheme prints '4 (3) + 3 Marks'."
+  "notes": "The scheme prints '4 (3) + 3 Marks'. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)."
  },
  {
   "id": "eng-2021-ol-q1-b",
@@ -14327,16 +14327,17 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 7,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces i.e., a pop riveted joint.",
-    "marks": 6
+    "marks": 7
    }
   ],
-  "stem": "Give brief answers to any eight of the following:"
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '7 (6) Marks'. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)."
  },
  {
   "id": "eng-2021-ol-q1-c",
@@ -14351,18 +14352,19 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 7,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "A chain and sprocket mechanism can be used as part of a driving mechanism in a bicycle.",
-    "marks": 6
+    "marks": 7
    }
   ],
   "stem": "Give brief answers to any eight of the following:",
   "questionFigureKey": "engineering-2021-OL-paper-q1c-art",
-  "questionFigureIncludesPrompt": false
+  "questionFigureIncludesPrompt": false,
+  "notes": "The scheme prints '7 (6) Marks'. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)."
  },
  {
   "id": "eng-2021-ol-q1-d",
@@ -14377,13 +14379,13 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 7,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "Solar energy.",
-    "marks": 3
+    "marks": 4
    },
    {
     "id": "r-2",
@@ -14392,30 +14394,7 @@
     "marks": 3
    }
   ],
-  "notes": "The scheme prints '4 (3) + 3 Marks'."
- },
- {
-  "id": "eng-2021-ol-q1-f",
-  "topicId": "eng-1-4",
-  "conceptId": "example-ferrous-metal-example-non-ferrous",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 OL Q1(f)",
-  "questionText": "State one example of a ferrous metal and one example of a non‐ferrous metal.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Steel is a ferrous metal. (ii) Brass is a non-ferrous metal.",
-    "marks": 6
-   }
-  ]
+  "notes": "The scheme prints '4 (3) + 3 Marks'. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)."
  },
  {
   "id": "eng-2021-ol-q1-g",
@@ -14430,59 +14409,17 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 7,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "Engineering continues to contribute to the development of electrical and hybrid vehicles for the transport industry.",
-    "marks": 6
-   }
-  ],
-  "stem": "Give brief answers to any eight of the following:"
- },
- {
-  "id": "eng-2021-ol-q1-j",
-  "topicId": "eng-3-14",
-  "conceptId": "any-following-laser-cutting-bluetooth-drone",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 OL Q1(j)",
-  "questionText": "Describe any one of the following: Laser cutting, Bluetooth, Drone.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Laser cutting is a technology that uses a laser to slice materials.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Laser cutting works by directing the output of a high-power laser most commonly through mirrors. Laser mirrors and CNC (computer numerical control) are used to direct the laser beam generated onto the material. The laser beam is directed at the material through a focusing lens, which then either melts, burns or vaporizes away the material. This leaves an edge with a high-quality surface finish.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Bluetooth is used as a short-range wireless interconnection of mobile phones, computers, sound systems, game controllers, printers, and other electronic devices.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "A drone may be explained as any unmanned robot either preprogrammed or remotely controlled. This includes robots designed for water, land and air use. The most common drone is an aerial one, either an RPA (remote piloted aircraft) or UAV (unmanned/unpiloted aerial vehicle). A remote-piloted aircraft, RPA, is controlled remotely either by a short-range remote control or from a more sophisticated remote base station. Used in both commercial and military applications, these drones are often like a helicopter and can come with more than one rotor blade. An unmanned aerial vehicle, UAV, is preprogrammed prior to flight to do a specific set of tasks on a specific flight path.",
-    "marks": null
+    "marks": 7
    }
   ],
   "stem": "Give brief answers to any eight of the following:",
-  "notes": "The scheme prints '6 marks'."
+  "notes": "The scheme prints '7 (6) Marks'. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)."
  },
  {
   "id": "eng-2021-ol-q1-k",
@@ -14497,13 +14434,13 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 7,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "A brittle material can be fractured easily by an impact. Brittleness is the opposite to toughness.",
-    "marks": 3
+    "marks": 4
    },
    {
     "id": "r-2",
@@ -14513,44 +14450,7 @@
    }
   ],
   "stem": "Give brief answers to any eight of the following:",
-  "notes": "The scheme prints 'Definition Award 4 (3), Name Award 3'."
- },
- {
-  "id": "eng-2021-ol-q1-l",
-  "topicId": "eng-2-11",
-  "conceptId": "any-following-pilot-hole-countersink-bit",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2021 OL Q1(l)",
-  "questionText": "Explain any one of the following: Pilot hole, Countersink bit, Swarf.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A pilot hole must be drilled before using a large drill. This keeps the large drill central as it guides the drill through the piece when drilling.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "A countersinking bit is used to enlarge the mouths of holes to accommodate the heads of countersunk head screws / rivets or fixings. Countersinking allows the fixing to be sunk below the surface of the hole.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Swarf is the waste material produced when the chip is cut from the workpiece.",
-    "marks": null
-   }
-  ],
-  "stem": "Give brief answers to any eight of the following:",
-  "notes": "The scheme prints '6 marks'."
+  "notes": "The scheme prints 'Definition Award 4 (3), Name Award 3'. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)."
  },
  {
   "id": "eng-2021-ol-q2-d",
@@ -15327,13 +15227,13 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 7,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "Tool A is an adjustable spanner.",
-    "marks": 3
+    "marks": 4
    },
    {
     "id": "r-2",
@@ -15343,7 +15243,7 @@
    }
   ],
   "stem": "Give brief answers to any eight of the following:",
-  "notes": "The scheme prints '4 (3) + 3 Marks'; Question 1 is answered any eight, two at 7 marks and six at 6.",
+  "notes": "The scheme prints '4 (3) + 3 Marks'. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3).",
   "figureKey": "engineering-2021-OL-paper-q1e-art",
   "labelKey": [
    {
@@ -15366,13 +15266,13 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 7,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "Name: The electronic component show is a Light Emitting Diode (L.E.D.).",
-    "marks": 3
+    "marks": 4
    },
    {
     "id": "r-2",
@@ -15382,7 +15282,7 @@
    }
   ],
   "stem": "Give brief answers to any eight of the following:",
-  "notes": "The scheme prints '4 (3) + 3 Marks'; Question 1 is answered any eight, two at 7 marks and six at 6. The scheme sets this answer as \"(g)\".",
+  "notes": "The scheme prints '4 (3) + 3 Marks'. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3). The scheme sets this answer as \"(g)\".",
   "questionFigureKey": "engineering-2021-OL-paper-q1h-crop",
   "questionFigureIncludesPrompt": false
  },
@@ -15399,13 +15299,13 @@
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 7,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "Chuck key.",
-    "marks": 3
+    "marks": 4
    },
    {
     "id": "r-2",
@@ -15414,7 +15314,7 @@
     "marks": 3
    }
   ],
-  "notes": "The scheme prints '4 (3) + 3 Marks'; Question 1 is answered any eight, two at 7 marks and six at 6.",
+  "notes": "The scheme prints '4 (3) + 3 Marks'. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3).",
   "figureKey": "engineering-2021-OL-paper-q1m-crop",
   "labelKey": [
    {
@@ -15435,33 +15335,113 @@
   "questionRef": "2021 OL Q1(i)",
   "questionText": "Describe the main operating features of any one of the following: Air compressor Strip heater Three‐jaw chuck.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "The compressor show has an electric motor, a compressor unit, and a storage tank. The electric motor drives the compressor unit which sucks air into a cylinder through an inlet valve. The air is then squashed (compressed) by a piston and forced into the storage tank. As the compressor continues to run, pressure builds up inside the storage tank. When it reaches a set level the electrical motor cuts off, stopping the compressor. The storage tank now stores the compressed air for use. When the pressure drops inside the storage tank, the electric motor starts again to bring up the level of pressure inside the storage tank.",
+    "marks": 7,
+    "accepts": [
+     "A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required, the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by controlling the heating temperature.",
+     "A 3-jaw chuck is used for holding round or hexagonal work. The chuck has three jaws which are located on a scroll plate. When the chuck key is used, the scroll plate rotates moving all three jaws together, automatically centering the work when the chuck is closed (self-centering). Two sets of jaws are supplied with these chucks. One set for gripping small diameter and hollow work. The other for gripping large diameter work. The jaws of each set are stamped 1, 2 and 3 and corresponding numbers are stamped beside each slot on the chuck. This is to ensure that each jaw is returned to its proper slot after removal."
+    ]
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints 'Award 7 (6) Marks', for any one. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3).",
+  "questionFigureKey": "engineering-2021-OL-paper-q1i-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2021-ol-q1-f",
+  "topicId": "eng-1-4",
+  "conceptId": "example-ferrous-metal-example-non-ferrous",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(f)",
+  "questionText": "State one example of a ferrous metal and one example of a non‐ferrous metal.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "The compressor show has an electric motor, a compressor unit, and a storage tank. The electric motor drives the compressor unit which sucks air into a cylinder through an inlet valve. The air is then squashed (compressed) by a piston and forced into the storage tank. As the compressor continues to run, pressure builds up inside the storage tank. When it reaches a set level the electrical motor cuts off, stopping the compressor. The storage tank now stores the compressed air for use. When the pressure drops inside the storage tank, the electric motor starts again to bring up the level of pressure inside the storage tank.",
-    "marks": null
+    "verbatim": "(i) Steel is a ferrous metal.",
+    "marks": 4
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required, the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by controlling the heating temperature.",
-    "marks": null
-   },
+    "verbatim": "(ii) Brass is a non-ferrous metal.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints '4 (3) + 3 Marks'. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)."
+ },
+ {
+  "id": "eng-2021-ol-q1-j",
+  "topicId": "eng-3-14",
+  "conceptId": "any-following-laser-cutting-bluetooth-drone",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(j)",
+  "questionText": "Describe any one of the following: Laser cutting, Bluetooth, Drone.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
    {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "A 3-jaw chuck is used for holding round or hexagonal work. The chuck has three jaws which are located on a scroll plate. When the chuck key is used, the scroll plate rotates moving all three jaws together, automatically centering the work when the chuck is closed (self-centering). Two sets of jaws are supplied with these chucks. One set for gripping small diameter and hollow work. The other for gripping large diameter work. The jaws of each set are stamped 1, 2 and 3 and corresponding numbers are stamped beside each slot on the chuck. This is to ensure that each jaw is returned to its proper slot after removal.",
-    "marks": null
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Laser cutting: Laser cutting is a technology that uses a laser to slice materials. Laser cutting works by directing the output of a high-power laser most commonly through mirrors. Laser mirrors and CNC (computer numerical control) are used to direct the laser beam generated onto the material. The laser beam is directed at the material through a focusing lens, which then either melts, burns or vaporizes away the material. This leaves an edge with a high-quality surface finish.",
+    "marks": 7,
+    "accepts": [
+     "Bluetooth: Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Bluetooth is used as a short-range wireless interconnection of mobile phones, computers, sound systems, game controllers, printers, and other electronic devices.",
+     "Drone: A drone may be explained as any unmanned robot either preprogrammed or remotely controlled. This includes robots designed for water, land and air use. The most common drone is an aerial one, either an RPA (remote piloted aircraft) or UAV (unmanned/unpiloted aerial vehicle). A remote-piloted aircraft, RPA, is controlled remotely either by a short-range remote control or from a more sophisticated remote base station. Used in both commercial and military applications, these drones are often like a helicopter and can come with more than one rotor blade. An unmanned aerial vehicle, UAV, is preprogrammed prior to flight to do a specific set of tasks on a specific flight path."
+    ]
    }
   ],
   "stem": "Give brief answers to any eight of the following:",
-  "notes": "The scheme prints 'Award 7 (6) Marks'.",
-  "questionFigureKey": "engineering-2021-OL-paper-q1i-crop",
-  "questionFigureIncludesPrompt": false
+  "notes": "The scheme prints 'Explain Award 7 (6) Marks', for any one. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)."
+ },
+ {
+  "id": "eng-2021-ol-q1-l",
+  "topicId": "eng-2-11",
+  "conceptId": "any-following-pilot-hole-countersink-bit",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q1(l)",
+  "questionText": "Explain any one of the following: Pilot hole, Countersink bit, Swarf.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Pilot hole: A pilot hole must be drilled before using a large drill. This keeps the large drill central as it guides the drill through the piece when drilling.",
+    "marks": 7,
+    "accepts": [
+     "Countersinking bit: A countersinking bit is used to enlarge the mouths of holes to accommodate the heads of countersunk head screws / rivets or fixings. Countersinking allows the fixing to be sunk below the surface of the hole.",
+     "Swarf: Swarf is the waste material produced when the chip is cut from the workpiece."
+    ]
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints 'Explain 7 (6) Marks', for any one. Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': the card carries the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)."
  },
  {
   "id": "eng-2021-ol-q2-a",

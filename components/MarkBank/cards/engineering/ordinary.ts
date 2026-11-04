@@ -2030,9 +2030,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Q1(a)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Give two examples where Personal Protective Equipment (PPE) must be worn in the Engineering room.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Operating machinery such as the lathe / pillar drilling etc.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Operating machinery such as the lathe / pillar drilling etc.", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "Using oxygen acetylene gas welding equipment i.e. leather gloves /apron / welding goggles must be worn.", marks: 3 },
     ],
   } as SecCard,
@@ -2045,9 +2045,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Q1(b)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Explain the engineering term permanent joint.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces i.e., a pop riveted joint.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces i.e., a pop riveted joint.", marks: 7 },
     ],
   } as SecCard,
   {
@@ -2059,9 +2059,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Q1(c)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "State one application of the chain and sprocket mechanism shown.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A chain and sprocket mechanism can be used as part of a driving mechanism in a bicycle.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "A chain and sprocket mechanism can be used as part of a driving mechanism in a bicycle.", marks: 7 },
     ],
     questionFigure: {
           "candId": "engineering-2021-OL-paper-q1c-art",
@@ -2081,23 +2081,10 @@ export const CARDS: SecCard[] = [
     id: "eng-2021-ol-q1-d", topicId: "eng-3-14", conceptId: "forms-renewable-energy",
     section: "A", questionRef: "2021 OL Q1(d)",
     questionText: "Name two forms of renewable energy.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Solar energy.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Solar energy.", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "Wind energy.", marks: 3 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2021-ol-q1-f", topicId: "eng-1-4", conceptId: "example-ferrous-metal-example-non-ferrous",
-    section: "A", questionRef: "2021 OL Q1(f)",
-    questionText: "State one example of a ferrous metal and one example of a non‐ferrous metal.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Steel is a ferrous metal. (ii) Brass is a non-ferrous metal.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -2109,26 +2096,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Q1(g)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "State one contribution engineering makes to the transport industry.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Engineering continues to contribute to the development of electrical and hybrid vehicles for the transport industry.", marks: 6 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2021-ol-q1-j", topicId: "eng-3-14", conceptId: "any-following-laser-cutting-bluetooth-drone",
-    section: "A", questionRef: "2021 OL Q1(j)",
-    stem: "Give brief answers to any eight of the following:",
-    questionText: "Describe any one of the following: Laser cutting, Bluetooth, Drone.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Laser cutting is a technology that uses a laser to slice materials.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Laser cutting works by directing the output of a high-power laser most commonly through mirrors. Laser mirrors and CNC (computer numerical control) are used to direct the laser beam generated onto the material. The laser beam is directed at the material through a focusing lens, which then either melts, burns or vaporizes away the material. This leaves an edge with a high-quality surface finish.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Bluetooth is used as a short-range wireless interconnection of mobile phones, computers, sound systems, game controllers, printers, and other electronic devices.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "A drone may be explained as any unmanned robot either preprogrammed or remotely controlled. This includes robots designed for water, land and air use. The most common drone is an aerial one, either an RPA (remote piloted aircraft) or UAV (unmanned/unpiloted aerial vehicle). A remote-piloted aircraft, RPA, is controlled remotely either by a short-range remote control or from a more sophisticated remote base station. Used in both commercial and military applications, these drones are often like a helicopter and can come with more than one rotor blade. An unmanned aerial vehicle, UAV, is preprogrammed prior to flight to do a specific set of tasks on a specific flight path.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Engineering continues to contribute to the development of electrical and hybrid vehicles for the transport industry.", marks: 7 },
     ],
   } as SecCard,
   {
@@ -2140,26 +2110,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Q1(k)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Define the term brittleness in relation to the properties of materials and name one material which is brittle.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A brittle material can be fractured easily by an impact. Brittleness is the opposite to toughness.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "A brittle material can be fractured easily by an impact. Brittleness is the opposite to toughness.", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "Glass / Hardened Steel / Cast iron is an example of a brittle material.", marks: 3 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2021-ol-q1-l", topicId: "eng-2-11", conceptId: "any-following-pilot-hole-countersink-bit",
-    section: "A", questionRef: "2021 OL Q1(l)",
-    stem: "Give brief answers to any eight of the following:",
-    questionText: "Explain any one of the following: Pilot hole, Countersink bit, Swarf.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A pilot hole must be drilled before using a large drill. This keeps the large drill central as it guides the drill through the piece when drilling.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "A countersinking bit is used to enlarge the mouths of holes to accommodate the heads of countersunk head screws / rivets or fixings. Countersinking allows the fixing to be sunk below the surface of the hole.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Swarf is the waste material produced when the chip is cut from the workpiece.", marks: null },
     ],
   } as SecCard,
   {
@@ -2575,9 +2529,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Q1(e)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Identify tool A shown opposite and give one use for this tool.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tool A is an adjustable spanner.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Tool A is an adjustable spanner.", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "An adjustable spanner is used to loosen or tighten a nut or bolt.", marks: 3 },
     ],
     figure: {
@@ -2601,9 +2555,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Q1(h)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Name the electronic component shown and suggest one suitable application of this component.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name: The electronic component show is a Light Emitting Diode (L.E.D.).", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Name: The electronic component show is a Light Emitting Diode (L.E.D.).", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "Application: Light Emitting Diodes can be used as indicators on TV’s / PC’s / electrical kettles etc. to show they have been turned on.", marks: 3 },
     ],
     questionFigure: {
@@ -2624,9 +2578,9 @@ export const CARDS: SecCard[] = [
     id: "eng-2021-ol-q1-m", topicId: "eng-2-11", conceptId: "component-b-shown-its-function",
     section: "A", questionRef: "2021 OL Q1(m)",
     questionText: "Name component B shown and state its function.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Chuck key.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Chuck key.", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.", marks: 3 },
     ],
     figure: {
@@ -2650,11 +2604,9 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Q1(i)",
     stem: "Give brief answers to any eight of the following:",
     questionText: "Describe the main operating features of any one of the following: Air compressor Strip heater Three‐jaw chuck.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The compressor show has an electric motor, a compressor unit, and a storage tank. The electric motor drives the compressor unit which sucks air into a cylinder through an inlet valve. The air is then squashed (compressed) by a piston and forced into the storage tank. As the compressor continues to run, pressure builds up inside the storage tank. When it reaches a set level the electrical motor cuts off, stopping the compressor. The storage tank now stores the compressed air for use. When the pressure drops inside the storage tank, the electric motor starts again to bring up the level of pressure inside the storage tank.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required, the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by controlling the heating temperature.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "A 3-jaw chuck is used for holding round or hexagonal work. The chuck has three jaws which are located on a scroll plate. When the chuck key is used, the scroll plate rotates moving all three jaws together, automatically centering the work when the chuck is closed (self-centering). Two sets of jaws are supplied with these chucks. One set for gripping small diameter and hollow work. The other for gripping large diameter work. The jaws of each set are stamped 1, 2 and 3 and corresponding numbers are stamped beside each slot on the chuck. This is to ensure that each jaw is returned to its proper slot after removal.", marks: null },
+    { id: "r-1", kind: "alt", verbatim: "The compressor show has an electric motor, a compressor unit, and a storage tank. The electric motor drives the compressor unit which sucks air into a cylinder through an inlet valve. The air is then squashed (compressed) by a piston and forced into the storage tank. As the compressor continues to run, pressure builds up inside the storage tank. When it reaches a set level the electrical motor cuts off, stopping the compressor. The storage tank now stores the compressed air for use. When the pressure drops inside the storage tank, the electric motor starts again to bring up the level of pressure inside the storage tank.", marks: 7, accepts: ["A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required, the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by controlling the heating temperature.","A 3-jaw chuck is used for holding round or hexagonal work. The chuck has three jaws which are located on a scroll plate. When the chuck key is used, the scroll plate rotates moving all three jaws together, automatically centering the work when the chuck is closed (self-centering). Two sets of jaws are supplied with these chucks. One set for gripping small diameter and hollow work. The other for gripping large diameter work. The jaws of each set are stamped 1, 2 and 3 and corresponding numbers are stamped beside each slot on the chuck. This is to ensure that each jaw is returned to its proper slot after removal."] },
     ],
     questionFigure: {
           "candId": "engineering-2021-OL-paper-q1i-crop",
@@ -2665,6 +2617,48 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission",
           "includesPrompt": false
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-f", topicId: "eng-1-4", conceptId: "example-ferrous-metal-example-non-ferrous",
+    section: "A", questionRef: "2021 OL Q1(f)",
+    questionText: "State one example of a ferrous metal and one example of a non‐ferrous metal.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Steel is a ferrous metal.", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "(ii) Brass is a non-ferrous metal.", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-j", topicId: "eng-3-14", conceptId: "any-following-laser-cutting-bluetooth-drone",
+    section: "A", questionRef: "2021 OL Q1(j)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Describe any one of the following: Laser cutting, Bluetooth, Drone.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Laser cutting: Laser cutting is a technology that uses a laser to slice materials. Laser cutting works by directing the output of a high-power laser most commonly through mirrors. Laser mirrors and CNC (computer numerical control) are used to direct the laser beam generated onto the material. The laser beam is directed at the material through a focusing lens, which then either melts, burns or vaporizes away the material. This leaves an edge with a high-quality surface finish.", marks: 7, accepts: ["Bluetooth: Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Bluetooth is used as a short-range wireless interconnection of mobile phones, computers, sound systems, game controllers, printers, and other electronic devices.","Drone: A drone may be explained as any unmanned robot either preprogrammed or remotely controlled. This includes robots designed for water, land and air use. The most common drone is an aerial one, either an RPA (remote piloted aircraft) or UAV (unmanned/unpiloted aerial vehicle). A remote-piloted aircraft, RPA, is controlled remotely either by a short-range remote control or from a more sophisticated remote base station. Used in both commercial and military applications, these drones are often like a helicopter and can come with more than one rotor blade. An unmanned aerial vehicle, UAV, is preprogrammed prior to flight to do a specific set of tasks on a specific flight path."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q1-l", topicId: "eng-2-11", conceptId: "any-following-pilot-hole-countersink-bit",
+    section: "A", questionRef: "2021 OL Q1(l)",
+    stem: "Give brief answers to any eight of the following:",
+    questionText: "Explain any one of the following: Pilot hole, Countersink bit, Swarf.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Pilot hole: A pilot hole must be drilled before using a large drill. This keeps the large drill central as it guides the drill through the piece when drilling.", marks: 7, accepts: ["Countersinking bit: A countersinking bit is used to enlarge the mouths of holes to accommodate the heads of countersunk head screws / rivets or fixings. Countersinking allows the fixing to be sunk below the surface of the hole.","Swarf: Swarf is the waste material produced when the chip is cut from the workpiece."] },
+    ],
   } as SecCard,
   {
     ...base, kind: "diagram",
