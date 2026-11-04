@@ -57,8 +57,9 @@ describe('Irish scheme text becomes sub-questions and rows', () => {
   });
 
   it('reads an Ordinary grid where the answer comes before its tariff', () => {
-    expect(parts(allocationOf('irish-2021-ol-p1-listening-a-f1'))).toEqual([
-      ['Líon isteach an t-eolas atá á lorg sa ghreille anseo. Cén ollscoil a chuir amach an fógra seo?', 3, undefined,
+    expect(cardParts('irish-2021-ol-p1-listening-a-f1')).toEqual([
+      // Each grid question is its own criterion since the 2021 Ordinary review; the grid's lead-in is the card's question.
+      ['Cén ollscoil a chuir amach an fógra seo?', 3, undefined,
         [['(Ollscoil) na hÉireann, Gaillimh', 3], ['Gaillimh', 3], ['Éireann/Éirinn/Éire', 2]]],
       ['Cén cineál Gaeilge atá riachtanach don phost seo?', 3, undefined, [['Líofa', 3]]],
       ['Cén tuarastal a gheobhaidh an duine a cheapfar?', 3, undefined, [['€30,000', 3], ['Tríocha míle', 3], ['30,000', 3]]],
