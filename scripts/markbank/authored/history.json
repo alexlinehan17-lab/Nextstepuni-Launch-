@@ -22783,6 +22783,4611 @@
   "stem": "The United States and the world, 1945‐1989"
  },
  {
+  "id": "hist-2019-ol-em-s1-q1a",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "1",
+  "topicId": "hist-em-irl-1",
+  "conceptId": "where-lands-granted-francis-cosby",
+  "questionRef": "2019 OL Early Modern Section 1 Q1(a)",
+  "questionText": "In document A, where are the lands granted to Francis Cosby?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Laois",
+    "marks": 8
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: The Plantation of Laois/Offaly",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s1-q1b",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "1",
+  "topicId": "hist-em-irl-1",
+  "conceptId": "rent-redmond-fitzgerald-required-pay",
+  "questionRef": "2019 OL Early Modern Section 1 Q1(b)",
+  "questionText": "In document B, what rent is Redmond Óg Fitzgerald required to pay?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sixteen pounds (a year)",
+    "marks": 8
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: The Plantation of Laois/Offaly",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s1-q1c",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "1",
+  "topicId": "hist-em-irl-1",
+  "conceptId": "whom-must-permission-sought-before-land",
+  "questionRef": "2019 OL Early Modern Section 1 Q1(c)",
+  "questionText": "In document A, from whom must permission be sought before land can be transferred?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The Lord Deputy and Council",
+    "marks": 8
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: The Plantation of Laois/Offaly",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s1-q1d",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "1",
+  "topicId": "hist-em-irl-1",
+  "conceptId": "royal-fort-mentioned",
+  "questionRef": "2019 OL Early Modern Section 1 Q1(d)",
+  "questionText": "Which royal fort is mentioned in document B?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Daingean (in Offaly)",
+    "marks": 8
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: The Plantation of Laois/Offaly",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s1-q1e",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "1",
+  "topicId": "hist-em-irl-1",
+  "conceptId": "where-birds-breeding",
+  "questionRef": "2019 OL Early Modern Section 1 Q1(e)",
+  "questionText": "Where are the birds breeding in document B?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In the woods (on the granted land in Offaly)",
+    "marks": 8
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '8M' for this ask.",
+  "stem": "Case study: The Plantation of Laois/Offaly",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s1-q2a",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "1",
+  "topicId": "hist-em-irl-1",
+  "conceptId": "purposes-cosby-fitzgerald-sufficient-weapons",
+  "questionRef": "2019 OL Early Modern Section 1 Q2(a)",
+  "questionText": "For what purposes are Cosby and Fitzgerald to have ‘sufficient weapons’? Refer to both documents in your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Both documents refer to the need for planters to have ‘sufficient weapons’",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Document A states that Cosby should be sufficiently armed to defend himself in Laois and in the service of the King",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Document B states that Fitzgerald should be sufficiently armed to defend himself in Offaly and in the service of the King.",
+    "marks": null
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
+  "stem": "Case study: The Plantation of Laois/Offaly",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s1-q2b",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "1",
+  "topicId": "hist-em-irl-1",
+  "conceptId": "cosby-fitzgerald-pay-taxes-same-purpose",
+  "questionRef": "2019 OL Early Modern Section 1 Q2(b)",
+  "questionText": "Are Cosby and Fitzgerald to pay taxes for the same purpose? Refer to both documents in your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Both documents agree that Cosby and Fitzgerald are to pay taxes for the same purpose, that is to pay for the upkeep of the two royal forts, one in Laois and the other at Daingean, Co Offaly",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Documents A and B state this in exactly the same terms.",
+    "marks": null
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
+  "stem": "Case study: The Plantation of Laois/Offaly",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s1-q3a",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "1",
+  "topicId": "hist-em-irl-1",
+  "conceptId": "show-native-irish-excluded-lands-granted",
+  "questionRef": "2019 OL Early Modern Section 1 Q3(a)",
+  "questionText": "Show, by reference to both documents, that the native Irish are to be excluded from the lands granted.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Both documents show that the native Irish of Laois/Offaly are to be excluded from the land allocated to the planters",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Document A states simply that nobody called O’Moore was to be granted land in Laois",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "And not just O’Moores, the strongest Irish clan in Laois, but anyone else with an Irish-sounding surname",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Document B states almost word for word the same rule excluding native Irish families from the planted land",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "It says that no land was to be given to an O’Connor (the largest Irish clan in Offaly) or any such Irish name",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Although the person granted land in Offaly, Redmond Óg Fitzgerald, had an Irish name, this was not a problem for the King because the Fitzgeralds could be trusted due to their long track record of alliance, loyalty and service.",
+    "marks": null
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
+  "stem": "Case study: The Plantation of Laois/Offaly",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s1-q3b",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "1",
+  "topicId": "hist-em-irl-1",
+  "conceptId": "does-birds-prey",
+  "questionRef": "2019 OL Early Modern Section 1 Q3(b)",
+  "questionText": "Does each document refer to birds of prey? Explain your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "There is no reference to ‘birds of prey’ in document A, only in document B. Document B ends by saying that falcons and other birds of prey breeding in the woods are not included as part of the grant of land to the planter",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This is presumably because there was high-value royal status attached to the falcon and similar birds.",
+    "marks": null
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '10M' for this ask and divides it between no marking point, so the rows carry no marks of their own.",
+  "stem": "Case study: The Plantation of Laois/Offaly",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL DOCUMENTS",
+   "title": "The documents",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s1-q4",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "1",
+  "topicId": "hist-em-irl-1",
+  "conceptId": "purpose-plantation-laois-offaly-did-achieve",
+  "questionRef": "2019 OL Early Modern Section 1 Q4",
+  "questionText": "What was the purpose of the Plantation of Laois/Offaly and did it achieve its purpose?",
+  "totalMarks": 20,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "Mark by the principle of Core Statement. Max = 20M"
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "Here, in question 4 of the Documents-based Question, the examiner will be looking to award 5 marks each to four Core Statements for the full 20 marks allocation.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m."
+  },
+  "notes": "Early Modern field of study. The scheme prints '4. Contextualisation (20 marks) Mark by the principle of Cor' for this ask and no model answer.",
+  "stem": "Case study: The Plantation of Laois/Offaly"
+ },
+ {
+  "id": "hist-2019-ol-em-s2t2a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-2",
+  "conceptId": "whom-did-meiler-ill-treat",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 2 A Q1",
+  "questionText": "Whom did Meiler ill‐treat?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "People in general/ John O’Mullony",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t2a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-2",
+  "conceptId": "when-did-incident-occur",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 2 A Q2",
+  "questionText": "When did the incident occur?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "22 July 1572",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t2a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-2",
+  "conceptId": "weapon-used",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 2 A Q3",
+  "questionText": "What weapon was used?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Scian/ Knife",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t2a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-2",
+  "conceptId": "harm-done-mullony",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 2 A Q4",
+  "questionText": "According to the extract, what harm was done to O’Mullony?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "All the flesh from his scalp was removed",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t2a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-2",
+  "conceptId": "meiler-mcgrath-controversial-figure-elizabethan-ireland",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 2 A Q5",
+  "questionText": "Briefly, why was Meiler McGrath a controversial figure in Elizabethan Ireland?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid statement explaining why Meiler McGrath was controversial",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t2b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-2",
+  "conceptId": "shane-neill-desmond-rebellion-policy-composition",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 2 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Shane O’Neill.\n2. The Desmond Rebellion.\n3. The policy of composition.\n4. Archbishop Richard Creagh.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    19
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Rebellion and conquest in Elizabethan Ireland, 1558‐1603"
+ },
+ {
+  "id": "hist-2019-ol-em-s2t2c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-2",
+  "conceptId": "main-features-elizabethan-dublin-tadhg-dall",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 2 C",
+  "questionText": "Answer one of the following:\n1. What were the main features of Elizabethan Dublin?\n2. Why was Tadhg Dall Ó hUiginn important in Gaelic Ireland?\n3. How did Hugh O’Neill conduct the Nine Years War against Elizabethan forces?\n4. What was significant about the life of Agnes Campbell and/or Grace O’Malley?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    19
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Rebellion and conquest in Elizabethan Ireland, 1558‐1603"
+ },
+ {
+  "id": "hist-2019-ol-em-s2t3a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-3",
+  "conceptId": "where-did-most-migrants-come",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 3 A Q1",
+  "questionText": "From where did most of the migrants come?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(South-west) Scotland",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to Scots migration to Ulster. Read it and answer the questions which follow.\n\nScottish nobles were encouraged to come. There were Lowland‐Scots farmers who had been evicted from their holdings in Scotland.\nThere were settler’s relatives, dependents and neighbours. There were artisans (skilled workers). Also, there were horse thieves and other fugitives from justice.\nMost came from south‐west Scotland. The English who migrated had more capital but the Scots were the more determined planters.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t3a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-3",
+  "conceptId": "did-lowland-scots-farmers-leave-scotland",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 3 A Q2",
+  "questionText": "Why did Lowland‐Scots farmers leave Scotland?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Because they had been evicted from their holdings",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to Scots migration to Ulster. Read it and answer the questions which follow.\n\nScottish nobles were encouraged to come. There were Lowland‐Scots farmers who had been evicted from their holdings in Scotland.\nThere were settler’s relatives, dependents and neighbours. There were artisans (skilled workers). Also, there were horse thieves and other fugitives from justice.\nMost came from south‐west Scotland. The English who migrated had more capital but the Scots were the more determined planters.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t3a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-3",
+  "conceptId": "did-some-migrants-know-another-before",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 3 A Q3",
+  "questionText": "Did some of the migrants know one another before they arrived in Ulster? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They sometimes knew one another already because they were “relatives, dependents and neighbours”",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to Scots migration to Ulster. Read it and answer the questions which follow.\n\nScottish nobles were encouraged to come. There were Lowland‐Scots farmers who had been evicted from their holdings in Scotland.\nThere were settler’s relatives, dependents and neighbours. There were artisans (skilled workers). Also, there were horse thieves and other fugitives from justice.\nMost came from south‐west Scotland. The English who migrated had more capital but the Scots were the more determined planters.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t3a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-3",
+  "conceptId": "difference-between-english-scots-who-migrated",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 3 A Q4",
+  "questionText": "What was the difference between the English and the Scots who migrated to Ulster?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The English had more capital (money to invest)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "but the Scots were more determined planters",
+    "marks": 3
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to Scots migration to Ulster. Read it and answer the questions which follow.\n\nScottish nobles were encouraged to come. There were Lowland‐Scots farmers who had been evicted from their holdings in Scotland.\nThere were settler’s relatives, dependents and neighbours. There were artisans (skilled workers). Also, there were horse thieves and other fugitives from justice.\nMost came from south‐west Scotland. The English who migrated had more capital but the Scots were the more determined planters.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t3a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-3",
+  "conceptId": "did-plantation-become-issue-between-natives",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 3 A Q5",
+  "questionText": "Why did plantation become an issue between natives and newcomers?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid reason why plantations brought friction between natives and newcomers",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to Scots migration to Ulster. Read it and answer the questions which follow.\n\nScottish nobles were encouraged to come. There were Lowland‐Scots farmers who had been evicted from their holdings in Scotland.\nThere were settler’s relatives, dependents and neighbours. There were artisans (skilled workers). Also, there were horse thieves and other fugitives from justice.\nMost came from south‐west Scotland. The English who migrated had more capital but the Scots were the more determined planters.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t3b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-3",
+  "conceptId": "sir-arthur-chichester-trial-strafford-sir",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 3 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Sir Arthur Chichester.\n2. The trial of Strafford (Sir Thomas Wentworth).\n3. Cromwell’s campaign in Ireland.\n4. Piaras Feiritéar.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    19
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660"
+ },
+ {
+  "id": "hist-2019-ol-em-s2t3c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-3",
+  "conceptId": "purpose-irish-college-louvain-did-achieve",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 3 C",
+  "questionText": "Answer one of the following:\n1. What was the purpose of an Irish college in Louvain and what did it achieve?\n2. How important was Elizabeth Butler, Countess of Ormond, in Irish affairs?\n3. What influence had Archbishop Rinuccini on Irish affairs?\n4. What successes and failures had Owen Roe O’Neill in Ireland?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    19
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660"
+ },
+ {
+  "id": "hist-2019-ol-em-s2t4a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-4",
+  "conceptId": "who-real-king",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 4 A Q1",
+  "questionText": "Who was the ‘real king’?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "James (James II, Stuart of Scotland)",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract from a Jacobite poem (dated 1690) Dáibhí Ó Bruadair predicts success for James II and for the Catholic cause. Read it and answer the questions which follow.\n\nWe now have a real king over us,\nJames, son of Charles, from the country of Alba (Scotland),\nWho brings protection and joy to our priests.\nAnd Irish Catholics – after suffering insults and outrages –\nNow have the forces of cities and fortresses.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t4a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-4",
+  "conceptId": "james-country-origin",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 4 A Q2",
+  "questionText": "What was James’ country of origin?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Alba/ Scotland",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract from a Jacobite poem (dated 1690) Dáibhí Ó Bruadair predicts success for James II and for the Catholic cause. Read it and answer the questions which follow.\n\nWe now have a real king over us,\nJames, son of Charles, from the country of Alba (Scotland),\nWho brings protection and joy to our priests.\nAnd Irish Catholics – after suffering insults and outrages –\nNow have the forces of cities and fortresses.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t4a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-4",
+  "conceptId": "james-brought-priests",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 4 A Q3",
+  "questionText": "What had James brought to priests?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Protection and joy",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract from a Jacobite poem (dated 1690) Dáibhí Ó Bruadair predicts success for James II and for the Catholic cause. Read it and answer the questions which follow.\n\nWe now have a real king over us,\nJames, son of Charles, from the country of Alba (Scotland),\nWho brings protection and joy to our priests.\nAnd Irish Catholics – after suffering insults and outrages –\nNow have the forces of cities and fortresses.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t4a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-4",
+  "conceptId": "irish-catholics-suffered",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 4 A Q4",
+  "questionText": "What had Irish Catholics suffered?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Insults and outrages",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract from a Jacobite poem (dated 1690) Dáibhí Ó Bruadair predicts success for James II and for the Catholic cause. Read it and answer the questions which follow.\n\nWe now have a real king over us,\nJames, son of Charles, from the country of Alba (Scotland),\nWho brings protection and joy to our priests.\nAnd Irish Catholics – after suffering insults and outrages –\nNow have the forces of cities and fortresses.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t4a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-4",
+  "conceptId": "james-successful-ireland-1690-reason",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 4 A Q5",
+  "questionText": "Was James II successful in Ireland in 1690? Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid statement about James’s fortune in Ireland in 1690",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract from a Jacobite poem (dated 1690) Dáibhí Ó Bruadair predicts success for James II and for the Catholic cause. Read it and answer the questions which follow.\n\nWe now have a real king over us,\nJames, son of Charles, from the country of Alba (Scotland),\nWho brings protection and joy to our priests.\nAnd Irish Catholics – after suffering insults and outrages –\nNow have the forces of cities and fortresses.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t4b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-4",
+  "conceptId": "duchess-tyrconnell-cattle-navigation-acts-regium",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 4 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The Duchess of Tyrconnell.\n2. The Cattle and Navigation Acts.\n3. The Regium Donum.\n4. William Molyneux.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    19
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Establishing a colonial ascendancy, 1660‐1715"
+ },
+ {
+  "id": "hist-2019-ol-em-s2t4c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-4",
+  "conceptId": "notable-developments-took-place-restoration-dublin",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 4 C",
+  "questionText": "Answer one of the following:\n1. What notable developments took place in Restoration Dublin?\n2. How did Oliver Plunkett become a victim of penal legislation?\n3. What decisions were made in the Parliament of 1689?\n4. How successful was Patrick Sarsfield as a military leader?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    19
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Establishing a colonial ascendancy, 1660‐1715"
+ },
+ {
+  "id": "hist-2019-ol-em-s2t5a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-5",
+  "conceptId": "crimes-sheehy-accused-1764",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 5 A Q1",
+  "questionText": "Of what crimes was Fr. Sheehy accused in 1764?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "High treason",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "rebellion",
+    "marks": 3
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the trial of Fr. Nicholas Sheehy. Read it and answer the questions which follow.\n\nFather Nicholas Sheehy was accused, by the Tipperary grand jury in 1764, of ‘high treason and rebellion’, and was tried in Dublin in 1766. The case was thrown out because of the non‐ appearance of a key‐witness, named John Bridge.\nHowever, this led to a further trial, in Clonmel, at which the priest was accused of complicity in the murder of the missing witness. The trial lasted for five hours. He was found guilty, and three days later he was publicly hanged and quartered on the main street of Clonmel.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t5a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-5",
+  "conceptId": "case-thrown-out-dublin-trial",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 5 A Q2",
+  "questionText": "Why was the case thrown out at the Dublin trial?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Because of non-appearance of a key witness (John Bridge)",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the trial of Fr. Nicholas Sheehy. Read it and answer the questions which follow.\n\nFather Nicholas Sheehy was accused, by the Tipperary grand jury in 1764, of ‘high treason and rebellion’, and was tried in Dublin in 1766. The case was thrown out because of the non‐ appearance of a key‐witness, named John Bridge.\nHowever, this led to a further trial, in Clonmel, at which the priest was accused of complicity in the murder of the missing witness. The trial lasted for five hours. He was found guilty, and three days later he was publicly hanged and quartered on the main street of Clonmel.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t5a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-5",
+  "conceptId": "crime-sheehy-accused-clonmel-trial",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 5 A Q3",
+  "questionText": "Of what crime was Fr. Sheehy accused at the Clonmel trial?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Complicity in murder (of the missing witness)",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the trial of Fr. Nicholas Sheehy. Read it and answer the questions which follow.\n\nFather Nicholas Sheehy was accused, by the Tipperary grand jury in 1764, of ‘high treason and rebellion’, and was tried in Dublin in 1766. The case was thrown out because of the non‐ appearance of a key‐witness, named John Bridge.\nHowever, this led to a further trial, in Clonmel, at which the priest was accused of complicity in the murder of the missing witness. The trial lasted for five hours. He was found guilty, and three days later he was publicly hanged and quartered on the main street of Clonmel.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t5a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-5",
+  "conceptId": "outcome-clonmel-trial",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 5 A Q4",
+  "questionText": "What was the outcome of the Clonmel trial?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He (Fr Sheehy) was found guilty",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the trial of Fr. Nicholas Sheehy. Read it and answer the questions which follow.\n\nFather Nicholas Sheehy was accused, by the Tipperary grand jury in 1764, of ‘high treason and rebellion’, and was tried in Dublin in 1766. The case was thrown out because of the non‐ appearance of a key‐witness, named John Bridge.\nHowever, this led to a further trial, in Clonmel, at which the priest was accused of complicity in the murder of the missing witness. The trial lasted for five hours. He was found guilty, and three days later he was publicly hanged and quartered on the main street of Clonmel.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t5a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-5",
+  "conceptId": "did-students-abroad-study-priesthood-time",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 5 A Q5",
+  "questionText": "Why did students go abroad to study for the priesthood at this time?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid reason why students went abroad to study for the priesthood",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the trial of Fr. Nicholas Sheehy. Read it and answer the questions which follow.\n\nFather Nicholas Sheehy was accused, by the Tipperary grand jury in 1764, of ‘high treason and rebellion’, and was tried in Dublin in 1766. The case was thrown out because of the non‐ appearance of a key‐witness, named John Bridge.\nHowever, this led to a further trial, in Clonmel, at which the priest was accused of complicity in the murder of the missing witness. The trial lasted for five hours. He was found guilty, and three days later he was publicly hanged and quartered on the main street of Clonmel.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t5b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-5",
+  "conceptId": "planned-towns-john-hely-hutchinson-margaret",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 5 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Planned towns.\n2. John Hely Hutchinson.\n3. Margaret (Peg) Woffington.\n4. The decline of the Irish language.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    20
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770"
+ },
+ {
+  "id": "hist-2019-ol-em-s2t5c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-5",
+  "conceptId": "role-did-ponsonbys-play-eighteenth-century",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 5 C",
+  "questionText": "Answer one of the following:\n1. What role did the Ponsonbys play in eighteenth‐century Ireland?\n2. In what ways did Dean Swift’s pamphleteering influence politics and society in Ireland?\n3. What rural conditions gave rise to the Whiteboys and what methods did they employ?\n4. How did Arthur Guinness contribute to the development of industry in Ireland?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    20
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770"
+ },
+ {
+  "id": "hist-2019-ol-em-s2t6a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-6",
+  "conceptId": "many-workers-employed-john-mccracken",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 6 A Q1",
+  "questionText": "How many workers were employed by John McCracken?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "200",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, historian Jonathan Bardon describes the cotton industry in Belfast in the early1800s.\n\nJohn McCracken had 200 workers in his mill close to Donegall Street; his six‐horsepower engine burned 600 tons of coal a year. John Milford’s mill on Winetavern Street was five storeys high and its 24 carding machines and 5,364 spindles were turned by a ten‐horsepower engine.\nThe Falls Cotton Mills had three factories; two were turned by water and the third driven by steam. Between 1800 and 1812, £350,000 was invested in cotton machinery in Belfast.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t6a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-6",
+  "conceptId": "where-john-milford-mill-located",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 6 A Q2",
+  "questionText": "Where was John Milford’s mill located?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Winetavern Street",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, historian Jonathan Bardon describes the cotton industry in Belfast in the early1800s.\n\nJohn McCracken had 200 workers in his mill close to Donegall Street; his six‐horsepower engine burned 600 tons of coal a year. John Milford’s mill on Winetavern Street was five storeys high and its 24 carding machines and 5,364 spindles were turned by a ten‐horsepower engine.\nThe Falls Cotton Mills had three factories; two were turned by water and the third driven by steam. Between 1800 and 1812, £350,000 was invested in cotton machinery in Belfast.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t6a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-6",
+  "conceptId": "sources-power-used-falls-cotton-mills",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 6 A Q3",
+  "questionText": "What sources of power were used in the Falls Cotton Mills?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Water power",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "steam power",
+    "marks": 3
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, historian Jonathan Bardon describes the cotton industry in Belfast in the early1800s.\n\nJohn McCracken had 200 workers in his mill close to Donegall Street; his six‐horsepower engine burned 600 tons of coal a year. John Milford’s mill on Winetavern Street was five storeys high and its 24 carding machines and 5,364 spindles were turned by a ten‐horsepower engine.\nThe Falls Cotton Mills had three factories; two were turned by water and the third driven by steam. Between 1800 and 1812, £350,000 was invested in cotton machinery in Belfast.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t6a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-6",
+  "conceptId": "much-money-invested-cotton-machinery-1800",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 6 A Q4",
+  "questionText": "How much money was invested in cotton machinery, 1800‐1812?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "£350,000",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, historian Jonathan Bardon describes the cotton industry in Belfast in the early1800s.\n\nJohn McCracken had 200 workers in his mill close to Donegall Street; his six‐horsepower engine burned 600 tons of coal a year. John Milford’s mill on Winetavern Street was five storeys high and its 24 carding machines and 5,364 spindles were turned by a ten‐horsepower engine.\nThe Falls Cotton Mills had three factories; two were turned by water and the third driven by steam. Between 1800 and 1812, £350,000 was invested in cotton machinery in Belfast.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t6a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-6",
+  "conceptId": "apart-cotton-other-textile-produced-belfast",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 6 A Q5",
+  "questionText": "Apart from cotton, name one other textile produced in Belfast in the early 1800s.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE textile, other than cotton, which was made in Belfast at that time",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "In this edited extract, historian Jonathan Bardon describes the cotton industry in Belfast in the early1800s.\n\nJohn McCracken had 200 workers in his mill close to Donegall Street; his six‐horsepower engine burned 600 tons of coal a year. John Milford’s mill on Winetavern Street was five storeys high and its 24 carding machines and 5,364 spindles were turned by a ten‐horsepower engine.\nThe Falls Cotton Mills had three factories; two were turned by water and the third driven by steam. Between 1800 and 1812, £350,000 was invested in cotton machinery in Belfast.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s2t6b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-6",
+  "conceptId": "ireland-population-grew-1770-1815-henry",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 6 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Why Ireland’s population grew, 1770‐1815.\n2. Henry Grattan.\n3. Eibhlín Dhubh Ní Chonaill.\n4. Georgian culture.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    20
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The end of the Irish kingdom and the establishment of the Union, 1770‐1815"
+ },
+ {
+  "id": "hist-2019-ol-em-s2t6c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "2",
+  "topicId": "hist-em-irl-6",
+  "conceptId": "reasons-did-rebellion-break-out-wexford",
+  "questionRef": "2019 OL Early Modern Section 2 Topic 6 C",
+  "questionText": "Answer one of the following:\n1. For what reasons did a rebellion break out in Wexford in 1798?\n2. Why was Maynooth College established in 1795 and did it achieve its aims?\n3. In what ways did Wolfe Tone influence developments in Ireland?\n4. How did Nano Nagle contribute to education and learning in Ireland?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    20
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The end of the Irish kingdom and the establishment of the Union, 1770‐1815"
+ },
+ {
+  "id": "hist-2019-ol-em-s3t1a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-1",
+  "conceptId": "seville-awarded-1503",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 1 A Q1",
+  "questionText": "What was Seville awarded in 1503?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Right to trade with the New World",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a recent article on Seville. Read it and answer the questions which follow.\n\nIn 1503 the city of Seville, in Castile, was awarded the exclusive right to trade with the New World. The Casa de Contratacion (House of Trade) was set up there to control all vessels, goods and passengers between Spain and the Indies.\nAll ships bound for America had to leave from Seville, land at specified ports on the other side, and return to Seville.\nThe explorer Amerigo Vespucci was appointed chief navigator to the Casa in 1508. He was responsible for licensing ships’ captains and producing maps of routes and overseas territories.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t1a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-1",
+  "conceptId": "casa-contratacion-set",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 1 A Q2",
+  "questionText": "Why was the Casa de Contratacion set up?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To control all trade (vessels, goods, passengers) between Spain and the Indies",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a recent article on Seville. Read it and answer the questions which follow.\n\nIn 1503 the city of Seville, in Castile, was awarded the exclusive right to trade with the New World. The Casa de Contratacion (House of Trade) was set up there to control all vessels, goods and passengers between Spain and the Indies.\nAll ships bound for America had to leave from Seville, land at specified ports on the other side, and return to Seville.\nThe explorer Amerigo Vespucci was appointed chief navigator to the Casa in 1508. He was responsible for licensing ships’ captains and producing maps of routes and overseas territories.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t1a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-1",
+  "conceptId": "role-amerigo-vespucci-casa",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 1 A Q3",
+  "questionText": "What role had Amerigo Vespucci in the Casa?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Chief navigator/ Responsibility for licensing ships’ captains",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a recent article on Seville. Read it and answer the questions which follow.\n\nIn 1503 the city of Seville, in Castile, was awarded the exclusive right to trade with the New World. The Casa de Contratacion (House of Trade) was set up there to control all vessels, goods and passengers between Spain and the Indies.\nAll ships bound for America had to leave from Seville, land at specified ports on the other side, and return to Seville.\nThe explorer Amerigo Vespucci was appointed chief navigator to the Casa in 1508. He was responsible for licensing ships’ captains and producing maps of routes and overseas territories.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t1a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-1",
+  "conceptId": "sorts-maps-produced",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 1 A Q4",
+  "questionText": "What sorts of maps were produced?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Maps of routes and overseas territories",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a recent article on Seville. Read it and answer the questions which follow.\n\nIn 1503 the city of Seville, in Castile, was awarded the exclusive right to trade with the New World. The Casa de Contratacion (House of Trade) was set up there to control all vessels, goods and passengers between Spain and the Indies.\nAll ships bound for America had to leave from Seville, land at specified ports on the other side, and return to Seville.\nThe explorer Amerigo Vespucci was appointed chief navigator to the Casa in 1508. He was responsible for licensing ships’ captains and producing maps of routes and overseas territories.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t1a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-1",
+  "conceptId": "chief-commodities-new-world-landed-seville",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 1 A Q5",
+  "questionText": "What chief commodities from the New World landed at Seville?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "TWO New World commodities (@ 3M each) which were landed at Seville",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from a recent article on Seville. Read it and answer the questions which follow.\n\nIn 1503 the city of Seville, in Castile, was awarded the exclusive right to trade with the New World. The Casa de Contratacion (House of Trade) was set up there to control all vessels, goods and passengers between Spain and the Indies.\nAll ships bound for America had to leave from Seville, land at specified ports on the other side, and return to Seville.\nThe explorer Amerigo Vespucci was appointed chief navigator to the Casa in 1508. He was responsible for licensing ships’ captains and producing maps of routes and overseas territories.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t1b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-1",
+  "conceptId": "michelangelo-buonarroti-struggle-against-turks-desiderius",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 1 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Michelangelo Buonarroti.\n2. The struggle against the Turks.\n3. Desiderius Erasmus.\n4. The Counter‐Reformation.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    21
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Europe from Renaissance to Reformation, 1492‐1567"
+ },
+ {
+  "id": "hist-2019-ol-em-s3t1c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-1",
+  "conceptId": "ways-did-emperor-charles-respond-problems",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 1 C",
+  "questionText": "Answer one of the following:\n1. In what ways did Emperor Charles V respond to the problems of Empire?\n2. How did Christopher Columbus plan and carry out his first voyage across the Atlantic?\n3. How did the divorce of Henry VIII and Catherine of Aragon affect England and Europe?\n4. In what ways did Calvin make Geneva a centre of the Reformation?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    21
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Europe from Renaissance to Reformation, 1492‐1567"
+ },
+ {
+  "id": "hist-2019-ol-em-s3t2a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-2",
+  "conceptId": "sort-ship-san-felipe",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 2 A Q1",
+  "questionText": "What sort of ship was the San Felipe?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A galleon",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an eye‐witness account of the Spanish Armada. Read it and answer the questions which follow.\n\nThe enemy inflicted much damage on the galleon San Felipe which had five guns on the starboard side and another on the upper deck put out of action.\nThe commanding officer, Don Francisco de Toledo, saw that his pumps were broken, his rigging in shreds and his ship almost a wreck.\nDon Francisco ordered the grappling hooks and the muskets to be brought out.\nHe shouted to the enemy to come to close quarters. They replied, calling on him to surrender.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t2a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-2",
+  "conceptId": "who-commanding-officer-san-felipe",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 2 A Q2",
+  "questionText": "Who was the commanding officer of the San Felipe?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Don Francisco de Toledo",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an eye‐witness account of the Spanish Armada. Read it and answer the questions which follow.\n\nThe enemy inflicted much damage on the galleon San Felipe which had five guns on the starboard side and another on the upper deck put out of action.\nThe commanding officer, Don Francisco de Toledo, saw that his pumps were broken, his rigging in shreds and his ship almost a wreck.\nDon Francisco ordered the grappling hooks and the muskets to be brought out.\nHe shouted to the enemy to come to close quarters. They replied, calling on him to surrender.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t2a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-2",
+  "conceptId": "shown-san-felipe-almost-wreck",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 2 A Q3",
+  "questionText": "How is it shown that the San Felipe was almost a wreck?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ship’s pumps were broken",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "its rigging in shreds",
+    "marks": 3
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an eye‐witness account of the Spanish Armada. Read it and answer the questions which follow.\n\nThe enemy inflicted much damage on the galleon San Felipe which had five guns on the starboard side and another on the upper deck put out of action.\nThe commanding officer, Don Francisco de Toledo, saw that his pumps were broken, his rigging in shreds and his ship almost a wreck.\nDon Francisco ordered the grappling hooks and the muskets to be brought out.\nHe shouted to the enemy to come to close quarters. They replied, calling on him to surrender.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t2a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-2",
+  "conceptId": "did-don-francisco-shout-enemy",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 2 A Q4",
+  "questionText": "What did Don Francisco shout to the enemy?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Come to close quarters",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an eye‐witness account of the Spanish Armada. Read it and answer the questions which follow.\n\nThe enemy inflicted much damage on the galleon San Felipe which had five guns on the starboard side and another on the upper deck put out of action.\nThe commanding officer, Don Francisco de Toledo, saw that his pumps were broken, his rigging in shreds and his ship almost a wreck.\nDon Francisco ordered the grappling hooks and the muskets to be brought out.\nHe shouted to the enemy to come to close quarters. They replied, calling on him to surrender.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t2a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-2",
+  "conceptId": "did-defeat-armada-affect-spain",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 2 A Q5",
+  "questionText": "Briefly, how did the defeat of the Armada affect Spain?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE effect on Spain of the defeat of the Armada",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This is an edited extract from an eye‐witness account of the Spanish Armada. Read it and answer the questions which follow.\n\nThe enemy inflicted much damage on the galleon San Felipe which had five guns on the starboard side and another on the upper deck put out of action.\nThe commanding officer, Don Francisco de Toledo, saw that his pumps were broken, his rigging in shreds and his ship almost a wreck.\nDon Francisco ordered the grappling hooks and the muskets to be brought out.\nHe shouted to the enemy to come to close quarters. They replied, calling on him to surrender.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t2b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-2",
+  "conceptId": "close-council-trent-rise-muscovy-catherine",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 2 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Close of the Council of Trent.\n2. The rise of Muscovy.\n3. Catherine de Medici.\n4. Tycho Brahe.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    21
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Religion and power: politics in the later sixteenth century, 1567‐1609"
+ },
+ {
+  "id": "hist-2019-ol-em-s3t2c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-2",
+  "conceptId": "did-matteo-ricci-contribute-jesuit-mission",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 2 C",
+  "questionText": "Answer one of the following:\n1. What did Matteo Ricci contribute to the Jesuit mission in China?\n2. What role did William the Silent play in the Revolt of the Netherlands?\n3. How successful was Elizabeth I as ruler of England?\n4. For what reasons did Antwerp decline as a great trading port?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    21
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Religion and power: politics in the later sixteenth century, 1567‐1609"
+ },
+ {
+  "id": "hist-2019-ol-em-s3t3a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-3",
+  "conceptId": "organisation-governed-area",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 3 A Q1",
+  "questionText": "What organisation governed the area?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dutch East India Company",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the Dutch empire in Asia. Read it and answer the questions which follow.\n\nThe Dutch empire in Asia included the islands of Java, Sumatra, the Celebes, most of Borneo, the Moluccas and Bali.\nIt was run by the Dutch East India Company, whose most able leader was Jon Pieterzoon Coen. He managed to exclude English and Spanish competition from the Indonesian islands.\nCoen captured the Banda Islands in 1621. As a result, the Dutch came to control the supply of nutmeg and mace. Also, they took steps to cut down clove trees to keep the price high in the European market.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t3a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-3",
+  "conceptId": "who-its-most-able-leader",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 3 A Q2",
+  "questionText": "Who was its ‘most able leader’?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Jon Pieterzoon Coen",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the Dutch empire in Asia. Read it and answer the questions which follow.\n\nThe Dutch empire in Asia included the islands of Java, Sumatra, the Celebes, most of Borneo, the Moluccas and Bali.\nIt was run by the Dutch East India Company, whose most able leader was Jon Pieterzoon Coen. He managed to exclude English and Spanish competition from the Indonesian islands.\nCoen captured the Banda Islands in 1621. As a result, the Dutch came to control the supply of nutmeg and mace. Also, they took steps to cut down clove trees to keep the price high in the European market.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t3a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-3",
+  "conceptId": "did-dutch-come-control-supply-nutmeg",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 3 A Q3",
+  "questionText": "How did the Dutch come to control the supply of nutmeg and mace?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "By capturing the Banda Islands",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the Dutch empire in Asia. Read it and answer the questions which follow.\n\nThe Dutch empire in Asia included the islands of Java, Sumatra, the Celebes, most of Borneo, the Moluccas and Bali.\nIt was run by the Dutch East India Company, whose most able leader was Jon Pieterzoon Coen. He managed to exclude English and Spanish competition from the Indonesian islands.\nCoen captured the Banda Islands in 1621. As a result, the Dutch came to control the supply of nutmeg and mace. Also, they took steps to cut down clove trees to keep the price high in the European market.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t3a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-3",
+  "conceptId": "did-dutch-cut-down-clove-trees",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 3 A Q4",
+  "questionText": "Why did the Dutch cut down the clove trees?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To keep the price high (by reducing supply)",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the Dutch empire in Asia. Read it and answer the questions which follow.\n\nThe Dutch empire in Asia included the islands of Java, Sumatra, the Celebes, most of Borneo, the Moluccas and Bali.\nIt was run by the Dutch East India Company, whose most able leader was Jon Pieterzoon Coen. He managed to exclude English and Spanish competition from the Indonesian islands.\nCoen captured the Banda Islands in 1621. As a result, the Dutch came to control the supply of nutmeg and mace. Also, they took steps to cut down clove trees to keep the price high in the European market.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t3a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-3",
+  "conceptId": "major-country-rival-dutch-asia",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 3 A Q5",
+  "questionText": "What major country was a rival to the Dutch in Asia?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE rival country such as England or Spain",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the Dutch empire in Asia. Read it and answer the questions which follow.\n\nThe Dutch empire in Asia included the islands of Java, Sumatra, the Celebes, most of Borneo, the Moluccas and Bali.\nIt was run by the Dutch East India Company, whose most able leader was Jon Pieterzoon Coen. He managed to exclude English and Spanish competition from the Indonesian islands.\nCoen captured the Banda Islands in 1621. As a result, the Dutch came to control the supply of nutmeg and mace. Also, they took steps to cut down clove trees to keep the price high in the European market.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t3b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-3",
+  "conceptId": "thirty-years-war-hugo-grotius-rise",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 3 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The Thirty Years War.\n2. Hugo Grotius.\n3. Rise of empirical science.\n4. The rise of Sweden.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    21
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The eclipse of Old Europe, 1609‐1660"
+ },
+ {
+  "id": "hist-2019-ol-em-s3t3c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-3",
+  "conceptId": "did-catalans-rise-revolt-outcome-revolt",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 3 C",
+  "questionText": "Answer one of the following:\n1. Why did the Catalans rise in revolt and what was the outcome of their revolt?\n2. What did Cardinal Richelieu aim to achieve for France and how far did he succeed?\n3. What did Claudio Monteverdi and/or Peter Paul Rubens contribute to European culture?\n4. How did Galileo Galilei and/or René Descartes contribute to the advancement of science?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    21
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "The eclipse of Old Europe, 1609‐1660"
+ },
+ {
+  "id": "hist-2019-ol-em-s3t4a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-4",
+  "conceptId": "who-streltsy",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 4 A Q1",
+  "questionText": "Who were the Streltsy?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(A corps of) professional soldiers",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract deals with Peter the Great’s military reforms. Read it and answer the questions which follow.\n\nRussia needed a corps of professional soldiers (the Streltsy). Accordingly, Peter the Great raised the first Russian standing army. He replaced Western mercenaries (soldiers who fight for a foreign army for money) by introducing compulsory military service in 1705. From then on, one recruit – who would serve for life – had to be provided by every twenty peasant households.\nIn this way he raised an infantry (soldiers who fight on foot) to complement Cossack cavalrymen. Also, Peter brought in Western commanders to train his army and provided soldiers with uniforms and Western flintlock muskets with bayonets.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t4a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-4",
+  "conceptId": "did-peter-great-introduce-1705",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 4 A Q2",
+  "questionText": "What did Peter the Great introduce in 1705?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Compulsory military service",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract deals with Peter the Great’s military reforms. Read it and answer the questions which follow.\n\nRussia needed a corps of professional soldiers (the Streltsy). Accordingly, Peter the Great raised the first Russian standing army. He replaced Western mercenaries (soldiers who fight for a foreign army for money) by introducing compulsory military service in 1705. From then on, one recruit – who would serve for life – had to be provided by every twenty peasant households.\nIn this way he raised an infantry (soldiers who fight on foot) to complement Cossack cavalrymen. Also, Peter brought in Western commanders to train his army and provided soldiers with uniforms and Western flintlock muskets with bayonets.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t4a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-4",
+  "conceptId": "length-time-soldier-recruit-serve-army",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 4 A Q3",
+  "questionText": "For what length of time would a soldier‐recruit serve in the army?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A lifetime",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract deals with Peter the Great’s military reforms. Read it and answer the questions which follow.\n\nRussia needed a corps of professional soldiers (the Streltsy). Accordingly, Peter the Great raised the first Russian standing army. He replaced Western mercenaries (soldiers who fight for a foreign army for money) by introducing compulsory military service in 1705. From then on, one recruit – who would serve for life – had to be provided by every twenty peasant households.\nIn this way he raised an infantry (soldiers who fight on foot) to complement Cossack cavalrymen. Also, Peter brought in Western commanders to train his army and provided soldiers with uniforms and Western flintlock muskets with bayonets.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t4a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-4",
+  "conceptId": "raised-complement-cossack-cavalrymen",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 4 A Q4",
+  "questionText": "What was raised to complement the Cossack cavalrymen?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Infantry/ foot soldiers",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract deals with Peter the Great’s military reforms. Read it and answer the questions which follow.\n\nRussia needed a corps of professional soldiers (the Streltsy). Accordingly, Peter the Great raised the first Russian standing army. He replaced Western mercenaries (soldiers who fight for a foreign army for money) by introducing compulsory military service in 1705. From then on, one recruit – who would serve for life – had to be provided by every twenty peasant households.\nIn this way he raised an infantry (soldiers who fight on foot) to complement Cossack cavalrymen. Also, Peter brought in Western commanders to train his army and provided soldiers with uniforms and Western flintlock muskets with bayonets.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t4a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-4",
+  "conceptId": "did-peter-great-build-new-city",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 4 A Q5",
+  "questionText": "Why did Peter the Great build a new city (St. Petersburg) on the Baltic shore?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ONE valid reason why Peter built a new city on the Baltic shore",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here: any correct one earns the marks."
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract deals with Peter the Great’s military reforms. Read it and answer the questions which follow.\n\nRussia needed a corps of professional soldiers (the Streltsy). Accordingly, Peter the Great raised the first Russian standing army. He replaced Western mercenaries (soldiers who fight for a foreign army for money) by introducing compulsory military service in 1705. From then on, one recruit – who would serve for life – had to be provided by every twenty peasant households.\nIn this way he raised an infantry (soldiers who fight on foot) to complement Cossack cavalrymen. Also, Peter brought in Western commanders to train his army and provided soldiers with uniforms and Western flintlock muskets with bayonets.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t4b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-4",
+  "conceptId": "expansion-cities-fall-stuart-monarchy-england",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 4 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. The expansion of cities.\n2. The fall of the Stuart monarchy in England.\n3. Jan de Witt.\n4. Madame de Maintenon.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    22
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Europe in the age of Louis XIV, 1660‐1715"
+ },
+ {
+  "id": "hist-2019-ol-em-s3t4c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-4",
+  "conceptId": "did-learn-english-east-india-company",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 4 C",
+  "questionText": "Answer one of the following:\n1. What did you learn about the (English) East India Company?\n2. How successful was John Sobieski in his attempts to strengthen Poland?\n3. What did you learn about the court of Versailles?\n4. What did Isaac Newton and/or Gottfried Wilhelm Leibnitz contribute to the advancement of science?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    22
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Europe in the age of Louis XIV, 1660‐1715"
+ },
+ {
+  "id": "hist-2019-ol-em-s3t5a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-5",
+  "conceptId": "who-edited-encyclop-die",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 5 A Q1",
+  "questionText": "Who edited the Encyclopédie?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Denis Diderot",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Jean d’Alembert",
+    "marks": 3
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract relates to the Encyclopédie. Read it and answer the questions which follow.\n\nThe Encyclopéidie, edited by Denis Diderot and Jean d’Alembert, appeared in seventeen volumes between 1751 and 1772.\nDiderot contributed articles on arts and crafts and d’Alembert dealt with the sciences.\nMany articles implied criticism of religion and the government (although it treated the monarchy with respect).\nThe editors fought bitter battles with the government censors and there were periods when its publication was suspended altogether.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t5a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-5",
+  "conceptId": "topics-did-diderot-contribute-articles",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 5 A Q2",
+  "questionText": "On what topics did Diderot contribute articles?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Arts and crafts",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract relates to the Encyclopédie. Read it and answer the questions which follow.\n\nThe Encyclopéidie, edited by Denis Diderot and Jean d’Alembert, appeared in seventeen volumes between 1751 and 1772.\nDiderot contributed articles on arts and crafts and d’Alembert dealt with the sciences.\nMany articles implied criticism of religion and the government (although it treated the monarchy with respect).\nThe editors fought bitter battles with the government censors and there were periods when its publication was suspended altogether.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t5a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-5",
+  "conceptId": "subjects-did-alembert-deal",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 5 A Q3",
+  "questionText": "With what subjects did d’Alembert deal?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sciences",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract relates to the Encyclopédie. Read it and answer the questions which follow.\n\nThe Encyclopéidie, edited by Denis Diderot and Jean d’Alembert, appeared in seventeen volumes between 1751 and 1772.\nDiderot contributed articles on arts and crafts and d’Alembert dealt with the sciences.\nMany articles implied criticism of religion and the government (although it treated the monarchy with respect).\nThe editors fought bitter battles with the government censors and there were periods when its publication was suspended altogether.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t5a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-5",
+  "conceptId": "did-encyclop-die-face-censorship",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 5 A Q4",
+  "questionText": "Why did the Encyclopédie face censorship?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Because the government considered many of its articles critical of them.",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract relates to the Encyclopédie. Read it and answer the questions which follow.\n\nThe Encyclopéidie, edited by Denis Diderot and Jean d’Alembert, appeared in seventeen volumes between 1751 and 1772.\nDiderot contributed articles on arts and crafts and d’Alembert dealt with the sciences.\nMany articles implied criticism of religion and the government (although it treated the monarchy with respect).\nThe editors fought bitter battles with the government censors and there were periods when its publication was suspended altogether.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t5a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-5",
+  "conceptId": "enlightenment",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 5 A Q5",
+  "questionText": "Briefly, what was the Enlightenment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Brief and clear definition of the Enlightenment",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract relates to the Encyclopédie. Read it and answer the questions which follow.\n\nThe Encyclopéidie, edited by Denis Diderot and Jean d’Alembert, appeared in seventeen volumes between 1751 and 1772.\nDiderot contributed articles on arts and crafts and d’Alembert dealt with the sciences.\nMany articles implied criticism of religion and the government (although it treated the monarchy with respect).\nThe editors fought bitter battles with the government censors and there were periods when its publication was suspended altogether.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    13
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t5b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-5",
+  "conceptId": "mercantilism-laissez-faire-robert-clive-road",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 5 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Mercantilism and laissez‐faire.\n2. Robert Clive.\n3. Road and canal building.\n4. Jean‐Jacques Rousseau.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    22
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Establishing empires, 1715 ‐ 1775"
+ },
+ {
+  "id": "hist-2019-ol-em-s3t5c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-5",
+  "conceptId": "boston-tea-party-important-american-revolution",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 5 C",
+  "questionText": "Answer one of the following:\n1. What was the Boston Tea Party and how was it important in the American Revolution?\n2. What did Catherine the Great of Russia achieve for her country?\n3. What did Frederick the Great, King of Prussia, achieve at home and abroad?\n4. How did the West Indies slave plantations influence international trade?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    22
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Establishing empires, 1715 ‐ 1775"
+ },
+ {
+  "id": "hist-2019-ol-em-s3t6a-q1",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-6",
+  "conceptId": "age-marie-antoinette-when-she-became",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 6 A Q1",
+  "questionText": "What age was Marie Antoinette when she became Queen of France?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "19",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the trial and execution of Queen Marie Antoinette. Read it and answer the questions which follow.\n\nOne of the most high‐profile victims of the French Revolution was Marie Antoinette, the widow of Louis XVI. She was born in 1755, married to Louis in 1770 and became Queen at age nineteen when she succeeded to the throne in 1774.\nOn 14 October 1793 she was brought before the Revolutionary Tribunal and tried for high treason.\nHer trial caused no difficulty: she was widely unpopular because, being a member of the Austrian ruling family, she was suspected of being an ally of the enemies of France.\nTwo days later, on 16 October, she was condemned, and guillotined on the same day.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t6a-q2",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-6",
+  "conceptId": "offence-marie-antoinette-charged-revolutionary-tribunal",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 6 A Q2",
+  "questionText": "With what offence was Marie Antoinette charged by the Revolutionary Tribunal?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "High treason",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the trial and execution of Queen Marie Antoinette. Read it and answer the questions which follow.\n\nOne of the most high‐profile victims of the French Revolution was Marie Antoinette, the widow of Louis XVI. She was born in 1755, married to Louis in 1770 and became Queen at age nineteen when she succeeded to the throne in 1774.\nOn 14 October 1793 she was brought before the Revolutionary Tribunal and tried for high treason.\nHer trial caused no difficulty: she was widely unpopular because, being a member of the Austrian ruling family, she was suspected of being an ally of the enemies of France.\nTwo days later, on 16 October, she was condemned, and guillotined on the same day.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t6a-q3",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-6",
+  "conceptId": "marie-antoinette-unpopular-france",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 6 A Q3",
+  "questionText": "Why was Marie Antoinette unpopular in France?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Because she was Austrian/ not French/ suspected of being ally of France’s enemies",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the trial and execution of Queen Marie Antoinette. Read it and answer the questions which follow.\n\nOne of the most high‐profile victims of the French Revolution was Marie Antoinette, the widow of Louis XVI. She was born in 1755, married to Louis in 1770 and became Queen at age nineteen when she succeeded to the throne in 1774.\nOn 14 October 1793 she was brought before the Revolutionary Tribunal and tried for high treason.\nHer trial caused no difficulty: she was widely unpopular because, being a member of the Austrian ruling family, she was suspected of being an ally of the enemies of France.\nTwo days later, on 16 October, she was condemned, and guillotined on the same day.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t6a-q4",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-6",
+  "conceptId": "event-took-place-october-1793",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 6 A Q4",
+  "questionText": "What event took place on 16 October 1793?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "She was condemned to death/ executed/guillotined",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the trial and execution of Queen Marie Antoinette. Read it and answer the questions which follow.\n\nOne of the most high‐profile victims of the French Revolution was Marie Antoinette, the widow of Louis XVI. She was born in 1755, married to Louis in 1770 and became Queen at age nineteen when she succeeded to the throne in 1774.\nOn 14 October 1793 she was brought before the Revolutionary Tribunal and tried for high treason.\nHer trial caused no difficulty: she was widely unpopular because, being a member of the Austrian ruling family, she was suspected of being an ally of the enemies of France.\nTwo days later, on 16 October, she was condemned, and guillotined on the same day.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t6a-q5",
+  "subjectId": "history",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-6",
+  "conceptId": "reign-terror-took-place-france-during",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 6 A Q5",
+  "questionText": "Briefly, what was the Reign of Terror which took place in France during the period, 5 September 1793 – 28 July 1794?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Brief and clear definition of the Reign of Terror",
+    "marks": 6
+   }
+  ],
+  "notes": "Early Modern field of study. The scheme prints '6M' for this ask.",
+  "stem": "This edited extract refers to the trial and execution of Queen Marie Antoinette. Read it and answer the questions which follow.\n\nOne of the most high‐profile victims of the French Revolution was Marie Antoinette, the widow of Louis XVI. She was born in 1755, married to Louis in 1770 and became Queen at age nineteen when she succeeded to the throne in 1774.\nOn 14 October 1793 she was brought before the Revolutionary Tribunal and tried for high treason.\nHer trial caused no difficulty: she was widely unpopular because, being a member of the Austrian ruling family, she was suspected of being an ally of the enemies of France.\nTwo days later, on 16 October, she was condemned, and guillotined on the same day.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL EXTRACT",
+   "title": "The extract",
+   "pages": [
+    14
+   ],
+   "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+   "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+  }
+ },
+ {
+  "id": "hist-2019-ol-em-s3t6b",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-6",
+  "conceptId": "mary-wollstonecraft-emancipation-jews-abolition-slave",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 6 B",
+  "questionText": "Write a short paragraph on one of the following:\n1. Mary Wollstonecraft.\n2. Emancipation of the Jews.\n3. Abolition of the slave trade.\n4. Madame de Staël.",
+  "totalMarks": 30,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "B. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 20 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    22
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'B - Max CM = 20 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Empires in revolution, 1775‐1815"
+ },
+ {
+  "id": "hist-2019-ol-em-s3t6c",
+  "subjectId": "history",
+  "kind": "rubric",
+  "level": "ordinary",
+  "year": 2019,
+  "section": "3",
+  "topicId": "hist-em-eur-6",
+  "conceptId": "did-louis-xvi-conduct-affairs-led",
+  "questionRef": "2019 OL Early Modern Section 3 Topic 6 C",
+  "questionText": "Answer one of the following:\n1. How did Louis XVI conduct the affairs of state and what led to his downfall?\n2. What were the aims of the Committee of Public Safety?\n3. What did Napoleon hope to achieve by the ‘continental system’?\n4. What did Ludwig van Beethoven contribute to European culture?",
+  "totalMarks": 40,
+  "rubric": {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "C. This answer will be marked by the principle of Core Statement, as defined above. A maximum Cumulative Mark of 30 will be allowed for Core Statements and a maximum of 10 marks will be allowed for the examiner’s",
+    "In awarding both CM and OE, the examiner will approach the material with an open mind as to the range of valid answers which may be expected of a candidate at Ordinary Level and with an understanding of the scope of knowledge and historical skills which the syllabus demands."
+   ],
+   "cm": {
+    "mode": "core-statement",
+    "max": 30,
+    "definition": "This is the total mark awarded for Core Statements, subject to a maximum of 20 marks in part B and a maximum of 30 marks in part C.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "directions": []
+   },
+   "oe": {
+    "max": 10,
+    "lead": "In awarding OE, the examiner will consider how well the answer responds to the heading or addresses the set question. The following grading table will apply:",
+    "bands": [
+     {
+      "label": "Excellent",
+      "marks": [
+       9,
+       10
+      ],
+      "printed": "Excellent: 9-10 marks"
+     },
+     {
+      "label": "Very good",
+      "marks": [
+       7,
+       8
+      ],
+      "printed": "Very good: 7-8 marks"
+     },
+     {
+      "label": "Good",
+      "marks": [
+       5,
+       6
+      ],
+      "printed": "Good: 5-6 marks"
+     },
+     {
+      "label": "Fair",
+      "marks": [
+       3,
+       4
+      ],
+      "printed": "Fair: 3-4 marks"
+     },
+     {
+      "label": "Poor",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "printed": "Poor: 0-2 marks"
+     }
+    ],
+    "directions": []
+   },
+   "schemePages": [
+    17,
+    18,
+    22
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m. Then place your whole answer on one OE band."
+  },
+  "notes": "Early Modern field of study. The scheme prints 'C - Max CM = 30 marks Max OE = 10 marks' for this ask and no model answer.",
+  "stem": "Empires in revolution, 1775‐1815"
+ },
+ {
   "id": "hist-2020-hl-lm-s1-q1a",
   "subjectId": "history",
   "level": "higher",

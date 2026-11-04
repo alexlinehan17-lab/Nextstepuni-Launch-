@@ -259,6 +259,39 @@ const ESSAY_MARKING: Array<Omit<HistoryEssayRubric, 'schemePages'>> = [
      3,
      4
     ],
+    "directions": []
+   }
+  },
+  {
+   "system": "history-essay",
+   "schemeGuidance": [
+    "Mark by the principle of Core Statement. Max = 20M"
+   ],
+   "markingGuideNote": "Count the Core Statements you completed and place an incomplete last one if you wrote one. The CM stops at its maximum, so a Core Statement past it counts 0m.",
+   "schemeFileid": "LC004GLP000EV",
+   "cm": {
+    "mode": "core-statement",
+    "max": 20,
+    "definition": "Here, in question 4 of the Documents-based Question, the examiner will be looking to award 5 marks each to four Core Statements for the full 20 marks allocation.",
+    "statementLead": "A Core Statement may be defined as one of the following:",
+    "statementKinds": [
+     "A significant factual statement which is relevant to the question asked",
+     "A valid explanation, opinion or comment which is relevant to the question asked",
+     "A significant introductory OR concluding statement which is relevant to the question asked"
+    ],
+    "procedureLead": "To apply the principle of marking by Core Statement, examiners will proceed as follows:",
+    "procedure": [
+     "Having read the answer, it should be broken up into Core Statements, with a tick (√ ) put at the end of each completed Core Statement",
+     "Each completed Core Statement is awarded 5 marks",
+     "An incomplete Core Statement at the end of an answer may merit 1-4 marks"
+    ],
+    "perStatement": 5,
+    "incomplete": [
+     1,
+     2,
+     3,
+     4
+    ],
     "directions": [
      "Note that the question is looking for the success and/or failure of the Lyndon Johnson’s policies in Vietnam."
     ]
@@ -2723,6 +2756,1832 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s1-q1a", topicId: "hist-em-irl-1", conceptId: "where-lands-granted-francis-cosby",
+    section: "1", questionRef: "2019 OL Early Modern Section 1 Q1(a)",
+    stem: "Case study: The Plantation of Laois/Offaly",
+    questionText: "In document A, where are the lands granted to Francis Cosby?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Laois", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s1-q1b", topicId: "hist-em-irl-1", conceptId: "rent-redmond-fitzgerald-required-pay",
+    section: "1", questionRef: "2019 OL Early Modern Section 1 Q1(b)",
+    stem: "Case study: The Plantation of Laois/Offaly",
+    questionText: "In document B, what rent is Redmond Óg Fitzgerald required to pay?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sixteen pounds (a year)", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s1-q1c", topicId: "hist-em-irl-1", conceptId: "whom-must-permission-sought-before-land",
+    section: "1", questionRef: "2019 OL Early Modern Section 1 Q1(c)",
+    stem: "Case study: The Plantation of Laois/Offaly",
+    questionText: "In document A, from whom must permission be sought before land can be transferred?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The Lord Deputy and Council", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s1-q1d", topicId: "hist-em-irl-1", conceptId: "royal-fort-mentioned",
+    section: "1", questionRef: "2019 OL Early Modern Section 1 Q1(d)",
+    stem: "Case study: The Plantation of Laois/Offaly",
+    questionText: "Which royal fort is mentioned in document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Daingean (in Offaly)", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s1-q1e", topicId: "hist-em-irl-1", conceptId: "where-birds-breeding",
+    section: "1", questionRef: "2019 OL Early Modern Section 1 Q1(e)",
+    stem: "Case study: The Plantation of Laois/Offaly",
+    questionText: "Where are the birds breeding in document B?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In the woods (on the granted land in Offaly)", marks: 8 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s1-q2a", topicId: "hist-em-irl-1", conceptId: "purposes-cosby-fitzgerald-sufficient-weapons",
+    section: "1", questionRef: "2019 OL Early Modern Section 1 Q2(a)",
+    stem: "Case study: The Plantation of Laois/Offaly",
+    questionText: "For what purposes are Cosby and Fitzgerald to have ‘sufficient weapons’? Refer to both documents in your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Both documents refer to the need for planters to have ‘sufficient weapons’", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Document A states that Cosby should be sufficiently armed to defend himself in Laois and in the service of the King", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Document B states that Fitzgerald should be sufficiently armed to defend himself in Offaly and in the service of the King.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s1-q2b", topicId: "hist-em-irl-1", conceptId: "cosby-fitzgerald-pay-taxes-same-purpose",
+    section: "1", questionRef: "2019 OL Early Modern Section 1 Q2(b)",
+    stem: "Case study: The Plantation of Laois/Offaly",
+    questionText: "Are Cosby and Fitzgerald to pay taxes for the same purpose? Refer to both documents in your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Both documents agree that Cosby and Fitzgerald are to pay taxes for the same purpose, that is to pay for the upkeep of the two royal forts, one in Laois and the other at Daingean, Co Offaly", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Documents A and B state this in exactly the same terms.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s1-q3a", topicId: "hist-em-irl-1", conceptId: "show-native-irish-excluded-lands-granted",
+    section: "1", questionRef: "2019 OL Early Modern Section 1 Q3(a)",
+    stem: "Case study: The Plantation of Laois/Offaly",
+    questionText: "Show, by reference to both documents, that the native Irish are to be excluded from the lands granted.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Both documents show that the native Irish of Laois/Offaly are to be excluded from the land allocated to the planters", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Document A states simply that nobody called O’Moore was to be granted land in Laois", marks: null },
+    { id: "r-3", kind: "point", verbatim: "And not just O’Moores, the strongest Irish clan in Laois, but anyone else with an Irish-sounding surname", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Document B states almost word for word the same rule excluding native Irish families from the planted land", marks: null },
+    { id: "r-5", kind: "point", verbatim: "It says that no land was to be given to an O’Connor (the largest Irish clan in Offaly) or any such Irish name", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Although the person granted land in Offaly, Redmond Óg Fitzgerald, had an Irish name, this was not a problem for the King because the Fitzgeralds could be trusted due to their long track record of alliance, loyalty and service.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s1-q3b", topicId: "hist-em-irl-1", conceptId: "does-birds-prey",
+    section: "1", questionRef: "2019 OL Early Modern Section 1 Q3(b)",
+    stem: "Case study: The Plantation of Laois/Offaly",
+    questionText: "Does each document refer to birds of prey? Explain your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "There is no reference to ‘birds of prey’ in document A, only in document B. Document B ends by saying that falcons and other birds of prey breeding in the woods are not included as part of the grant of land to the planter", marks: null },
+    { id: "r-2", kind: "point", verbatim: "This is presumably because there was high-value royal status attached to the falcon and similar birds.", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL DOCUMENTS",
+          "title": "The documents",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s1-q4", topicId: "hist-em-irl-1", conceptId: "purpose-plantation-laois-offaly-did-achieve",
+    section: "1", questionRef: "2019 OL Early Modern Section 1 Q4",
+    stem: "Case study: The Plantation of Laois/Offaly",
+    questionText: "What was the purpose of the Plantation of Laois/Offaly and did it achieve its purpose?",
+    totalMarks: 20,
+    rubric: { ...ESSAY_MARKING[3], schemePages: [17] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t2a-q1", topicId: "hist-em-irl-2", conceptId: "whom-did-meiler-ill-treat",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 2 A Q1",
+    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+    questionText: "Whom did Meiler ill‐treat?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "People in general/ John O’Mullony", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t2a-q2", topicId: "hist-em-irl-2", conceptId: "when-did-incident-occur",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 2 A Q2",
+    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+    questionText: "When did the incident occur?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "22 July 1572", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t2a-q3", topicId: "hist-em-irl-2", conceptId: "weapon-used",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 2 A Q3",
+    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+    questionText: "What weapon was used?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Scian/ Knife", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t2a-q4", topicId: "hist-em-irl-2", conceptId: "harm-done-mullony",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 2 A Q4",
+    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+    questionText: "According to the extract, what harm was done to O’Mullony?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "All the flesh from his scalp was removed", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t2a-q5", topicId: "hist-em-irl-2", conceptId: "meiler-mcgrath-controversial-figure-elizabethan-ireland",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 2 A Q5",
+    stem: "This is an edited extract from an accusation made against Meiler Magrath, Archbishop of Cashel.\n\nMeiler treats people cruelly. John O’Mullony is but one of those he has ill‐treated.\nOn 22 July, 1572 Meiler took John by the hair of his forehead and cut, with an Irish skeane (scian: knife), all the flesh from his forehead to the crown of the poor man’s head.\nAll this was because O’Mullony demanded payment of arrears of wages that Meiler owed him.",
+    questionText: "Briefly, why was Meiler McGrath a controversial figure in Elizabethan Ireland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid statement explaining why Meiler McGrath was controversial", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t2b", topicId: "hist-em-irl-2", conceptId: "shane-neill-desmond-rebellion-policy-composition",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 2 B",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
+    questionText: "Write a short paragraph on one of the following:\n1. Shane O’Neill.\n2. The Desmond Rebellion.\n3. The policy of composition.\n4. Archbishop Richard Creagh.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t2c", topicId: "hist-em-irl-2", conceptId: "main-features-elizabethan-dublin-tadhg-dall",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 2 C",
+    stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
+    questionText: "Answer one of the following:\n1. What were the main features of Elizabethan Dublin?\n2. Why was Tadhg Dall Ó hUiginn important in Gaelic Ireland?\n3. How did Hugh O’Neill conduct the Nine Years War against Elizabethan forces?\n4. What was significant about the life of Agnes Campbell and/or Grace O’Malley?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,19] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t3a-q1", topicId: "hist-em-irl-3", conceptId: "where-did-most-migrants-come",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 3 A Q1",
+    stem: "This edited extract refers to Scots migration to Ulster. Read it and answer the questions which follow.\n\nScottish nobles were encouraged to come. There were Lowland‐Scots farmers who had been evicted from their holdings in Scotland.\nThere were settler’s relatives, dependents and neighbours. There were artisans (skilled workers). Also, there were horse thieves and other fugitives from justice.\nMost came from south‐west Scotland. The English who migrated had more capital but the Scots were the more determined planters.",
+    questionText: "From where did most of the migrants come?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(South-west) Scotland", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t3a-q2", topicId: "hist-em-irl-3", conceptId: "did-lowland-scots-farmers-leave-scotland",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 3 A Q2",
+    stem: "This edited extract refers to Scots migration to Ulster. Read it and answer the questions which follow.\n\nScottish nobles were encouraged to come. There were Lowland‐Scots farmers who had been evicted from their holdings in Scotland.\nThere were settler’s relatives, dependents and neighbours. There were artisans (skilled workers). Also, there were horse thieves and other fugitives from justice.\nMost came from south‐west Scotland. The English who migrated had more capital but the Scots were the more determined planters.",
+    questionText: "Why did Lowland‐Scots farmers leave Scotland?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because they had been evicted from their holdings", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t3a-q3", topicId: "hist-em-irl-3", conceptId: "did-some-migrants-know-another-before",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 3 A Q3",
+    stem: "This edited extract refers to Scots migration to Ulster. Read it and answer the questions which follow.\n\nScottish nobles were encouraged to come. There were Lowland‐Scots farmers who had been evicted from their holdings in Scotland.\nThere were settler’s relatives, dependents and neighbours. There were artisans (skilled workers). Also, there were horse thieves and other fugitives from justice.\nMost came from south‐west Scotland. The English who migrated had more capital but the Scots were the more determined planters.",
+    questionText: "Did some of the migrants know one another before they arrived in Ulster? Explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "They sometimes knew one another already because they were “relatives, dependents and neighbours”", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t3a-q4", topicId: "hist-em-irl-3", conceptId: "difference-between-english-scots-who-migrated",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 3 A Q4",
+    stem: "This edited extract refers to Scots migration to Ulster. Read it and answer the questions which follow.\n\nScottish nobles were encouraged to come. There were Lowland‐Scots farmers who had been evicted from their holdings in Scotland.\nThere were settler’s relatives, dependents and neighbours. There were artisans (skilled workers). Also, there were horse thieves and other fugitives from justice.\nMost came from south‐west Scotland. The English who migrated had more capital but the Scots were the more determined planters.",
+    questionText: "What was the difference between the English and the Scots who migrated to Ulster?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The English had more capital (money to invest)", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "but the Scots were more determined planters", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t3a-q5", topicId: "hist-em-irl-3", conceptId: "did-plantation-become-issue-between-natives",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 3 A Q5",
+    stem: "This edited extract refers to Scots migration to Ulster. Read it and answer the questions which follow.\n\nScottish nobles were encouraged to come. There were Lowland‐Scots farmers who had been evicted from their holdings in Scotland.\nThere were settler’s relatives, dependents and neighbours. There were artisans (skilled workers). Also, there were horse thieves and other fugitives from justice.\nMost came from south‐west Scotland. The English who migrated had more capital but the Scots were the more determined planters.",
+    questionText: "Why did plantation become an issue between natives and newcomers?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason why plantations brought friction between natives and newcomers", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t3b", topicId: "hist-em-irl-3", conceptId: "sir-arthur-chichester-trial-strafford-sir",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 3 B",
+    stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
+    questionText: "Write a short paragraph on one of the following:\n1. Sir Arthur Chichester.\n2. The trial of Strafford (Sir Thomas Wentworth).\n3. Cromwell’s campaign in Ireland.\n4. Piaras Feiritéar.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t3c", topicId: "hist-em-irl-3", conceptId: "purpose-irish-college-louvain-did-achieve",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 3 C",
+    stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
+    questionText: "Answer one of the following:\n1. What was the purpose of an Irish college in Louvain and what did it achieve?\n2. How important was Elizabeth Butler, Countess of Ormond, in Irish affairs?\n3. What influence had Archbishop Rinuccini on Irish affairs?\n4. What successes and failures had Owen Roe O’Neill in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,19] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t4a-q1", topicId: "hist-em-irl-4", conceptId: "who-real-king",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 4 A Q1",
+    stem: "In this edited extract from a Jacobite poem (dated 1690) Dáibhí Ó Bruadair predicts success for James II and for the Catholic cause. Read it and answer the questions which follow.\n\nWe now have a real king over us,\nJames, son of Charles, from the country of Alba (Scotland),\nWho brings protection and joy to our priests.\nAnd Irish Catholics – after suffering insults and outrages –\nNow have the forces of cities and fortresses.",
+    questionText: "Who was the ‘real king’?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "James (James II, Stuart of Scotland)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t4a-q2", topicId: "hist-em-irl-4", conceptId: "james-country-origin",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 4 A Q2",
+    stem: "In this edited extract from a Jacobite poem (dated 1690) Dáibhí Ó Bruadair predicts success for James II and for the Catholic cause. Read it and answer the questions which follow.\n\nWe now have a real king over us,\nJames, son of Charles, from the country of Alba (Scotland),\nWho brings protection and joy to our priests.\nAnd Irish Catholics – after suffering insults and outrages –\nNow have the forces of cities and fortresses.",
+    questionText: "What was James’ country of origin?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Alba/ Scotland", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t4a-q3", topicId: "hist-em-irl-4", conceptId: "james-brought-priests",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 4 A Q3",
+    stem: "In this edited extract from a Jacobite poem (dated 1690) Dáibhí Ó Bruadair predicts success for James II and for the Catholic cause. Read it and answer the questions which follow.\n\nWe now have a real king over us,\nJames, son of Charles, from the country of Alba (Scotland),\nWho brings protection and joy to our priests.\nAnd Irish Catholics – after suffering insults and outrages –\nNow have the forces of cities and fortresses.",
+    questionText: "What had James brought to priests?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Protection and joy", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t4a-q4", topicId: "hist-em-irl-4", conceptId: "irish-catholics-suffered",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 4 A Q4",
+    stem: "In this edited extract from a Jacobite poem (dated 1690) Dáibhí Ó Bruadair predicts success for James II and for the Catholic cause. Read it and answer the questions which follow.\n\nWe now have a real king over us,\nJames, son of Charles, from the country of Alba (Scotland),\nWho brings protection and joy to our priests.\nAnd Irish Catholics – after suffering insults and outrages –\nNow have the forces of cities and fortresses.",
+    questionText: "What had Irish Catholics suffered?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Insults and outrages", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t4a-q5", topicId: "hist-em-irl-4", conceptId: "james-successful-ireland-1690-reason",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 4 A Q5",
+    stem: "In this edited extract from a Jacobite poem (dated 1690) Dáibhí Ó Bruadair predicts success for James II and for the Catholic cause. Read it and answer the questions which follow.\n\nWe now have a real king over us,\nJames, son of Charles, from the country of Alba (Scotland),\nWho brings protection and joy to our priests.\nAnd Irish Catholics – after suffering insults and outrages –\nNow have the forces of cities and fortresses.",
+    questionText: "Was James II successful in Ireland in 1690? Give a reason for your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid statement about James’s fortune in Ireland in 1690", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t4b", topicId: "hist-em-irl-4", conceptId: "duchess-tyrconnell-cattle-navigation-acts-regium",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 4 B",
+    stem: "Establishing a colonial ascendancy, 1660‐1715",
+    questionText: "Write a short paragraph on one of the following:\n1. The Duchess of Tyrconnell.\n2. The Cattle and Navigation Acts.\n3. The Regium Donum.\n4. William Molyneux.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,19] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t4c", topicId: "hist-em-irl-4", conceptId: "notable-developments-took-place-restoration-dublin",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 4 C",
+    stem: "Establishing a colonial ascendancy, 1660‐1715",
+    questionText: "Answer one of the following:\n1. What notable developments took place in Restoration Dublin?\n2. How did Oliver Plunkett become a victim of penal legislation?\n3. What decisions were made in the Parliament of 1689?\n4. How successful was Patrick Sarsfield as a military leader?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,19] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t5a-q1", topicId: "hist-em-irl-5", conceptId: "crimes-sheehy-accused-1764",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 5 A Q1",
+    stem: "This edited extract refers to the trial of Fr. Nicholas Sheehy. Read it and answer the questions which follow.\n\nFather Nicholas Sheehy was accused, by the Tipperary grand jury in 1764, of ‘high treason and rebellion’, and was tried in Dublin in 1766. The case was thrown out because of the non‐ appearance of a key‐witness, named John Bridge.\nHowever, this led to a further trial, in Clonmel, at which the priest was accused of complicity in the murder of the missing witness. The trial lasted for five hours. He was found guilty, and three days later he was publicly hanged and quartered on the main street of Clonmel.",
+    questionText: "Of what crimes was Fr. Sheehy accused in 1764?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "High treason", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "rebellion", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t5a-q2", topicId: "hist-em-irl-5", conceptId: "case-thrown-out-dublin-trial",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 5 A Q2",
+    stem: "This edited extract refers to the trial of Fr. Nicholas Sheehy. Read it and answer the questions which follow.\n\nFather Nicholas Sheehy was accused, by the Tipperary grand jury in 1764, of ‘high treason and rebellion’, and was tried in Dublin in 1766. The case was thrown out because of the non‐ appearance of a key‐witness, named John Bridge.\nHowever, this led to a further trial, in Clonmel, at which the priest was accused of complicity in the murder of the missing witness. The trial lasted for five hours. He was found guilty, and three days later he was publicly hanged and quartered on the main street of Clonmel.",
+    questionText: "Why was the case thrown out at the Dublin trial?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because of non-appearance of a key witness (John Bridge)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t5a-q3", topicId: "hist-em-irl-5", conceptId: "crime-sheehy-accused-clonmel-trial",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 5 A Q3",
+    stem: "This edited extract refers to the trial of Fr. Nicholas Sheehy. Read it and answer the questions which follow.\n\nFather Nicholas Sheehy was accused, by the Tipperary grand jury in 1764, of ‘high treason and rebellion’, and was tried in Dublin in 1766. The case was thrown out because of the non‐ appearance of a key‐witness, named John Bridge.\nHowever, this led to a further trial, in Clonmel, at which the priest was accused of complicity in the murder of the missing witness. The trial lasted for five hours. He was found guilty, and three days later he was publicly hanged and quartered on the main street of Clonmel.",
+    questionText: "Of what crime was Fr. Sheehy accused at the Clonmel trial?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Complicity in murder (of the missing witness)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t5a-q4", topicId: "hist-em-irl-5", conceptId: "outcome-clonmel-trial",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 5 A Q4",
+    stem: "This edited extract refers to the trial of Fr. Nicholas Sheehy. Read it and answer the questions which follow.\n\nFather Nicholas Sheehy was accused, by the Tipperary grand jury in 1764, of ‘high treason and rebellion’, and was tried in Dublin in 1766. The case was thrown out because of the non‐ appearance of a key‐witness, named John Bridge.\nHowever, this led to a further trial, in Clonmel, at which the priest was accused of complicity in the murder of the missing witness. The trial lasted for five hours. He was found guilty, and three days later he was publicly hanged and quartered on the main street of Clonmel.",
+    questionText: "What was the outcome of the Clonmel trial?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He (Fr Sheehy) was found guilty", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t5a-q5", topicId: "hist-em-irl-5", conceptId: "did-students-abroad-study-priesthood-time",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 5 A Q5",
+    stem: "This edited extract refers to the trial of Fr. Nicholas Sheehy. Read it and answer the questions which follow.\n\nFather Nicholas Sheehy was accused, by the Tipperary grand jury in 1764, of ‘high treason and rebellion’, and was tried in Dublin in 1766. The case was thrown out because of the non‐ appearance of a key‐witness, named John Bridge.\nHowever, this led to a further trial, in Clonmel, at which the priest was accused of complicity in the murder of the missing witness. The trial lasted for five hours. He was found guilty, and three days later he was publicly hanged and quartered on the main street of Clonmel.",
+    questionText: "Why did students go abroad to study for the priesthood at this time?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason why students went abroad to study for the priesthood", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t5b", topicId: "hist-em-irl-5", conceptId: "planned-towns-john-hely-hutchinson-margaret",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 5 B",
+    stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
+    questionText: "Write a short paragraph on one of the following:\n1. Planned towns.\n2. John Hely Hutchinson.\n3. Margaret (Peg) Woffington.\n4. The decline of the Irish language.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,20] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t5c", topicId: "hist-em-irl-5", conceptId: "role-did-ponsonbys-play-eighteenth-century",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 5 C",
+    stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
+    questionText: "Answer one of the following:\n1. What role did the Ponsonbys play in eighteenth‐century Ireland?\n2. In what ways did Dean Swift’s pamphleteering influence politics and society in Ireland?\n3. What rural conditions gave rise to the Whiteboys and what methods did they employ?\n4. How did Arthur Guinness contribute to the development of industry in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,20] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t6a-q1", topicId: "hist-em-irl-6", conceptId: "many-workers-employed-john-mccracken",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 6 A Q1",
+    stem: "In this edited extract, historian Jonathan Bardon describes the cotton industry in Belfast in the early1800s.\n\nJohn McCracken had 200 workers in his mill close to Donegall Street; his six‐horsepower engine burned 600 tons of coal a year. John Milford’s mill on Winetavern Street was five storeys high and its 24 carding machines and 5,364 spindles were turned by a ten‐horsepower engine.\nThe Falls Cotton Mills had three factories; two were turned by water and the third driven by steam. Between 1800 and 1812, £350,000 was invested in cotton machinery in Belfast.",
+    questionText: "How many workers were employed by John McCracken?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "200", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t6a-q2", topicId: "hist-em-irl-6", conceptId: "where-john-milford-mill-located",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 6 A Q2",
+    stem: "In this edited extract, historian Jonathan Bardon describes the cotton industry in Belfast in the early1800s.\n\nJohn McCracken had 200 workers in his mill close to Donegall Street; his six‐horsepower engine burned 600 tons of coal a year. John Milford’s mill on Winetavern Street was five storeys high and its 24 carding machines and 5,364 spindles were turned by a ten‐horsepower engine.\nThe Falls Cotton Mills had three factories; two were turned by water and the third driven by steam. Between 1800 and 1812, £350,000 was invested in cotton machinery in Belfast.",
+    questionText: "Where was John Milford’s mill located?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Winetavern Street", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t6a-q3", topicId: "hist-em-irl-6", conceptId: "sources-power-used-falls-cotton-mills",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 6 A Q3",
+    stem: "In this edited extract, historian Jonathan Bardon describes the cotton industry in Belfast in the early1800s.\n\nJohn McCracken had 200 workers in his mill close to Donegall Street; his six‐horsepower engine burned 600 tons of coal a year. John Milford’s mill on Winetavern Street was five storeys high and its 24 carding machines and 5,364 spindles were turned by a ten‐horsepower engine.\nThe Falls Cotton Mills had three factories; two were turned by water and the third driven by steam. Between 1800 and 1812, £350,000 was invested in cotton machinery in Belfast.",
+    questionText: "What sources of power were used in the Falls Cotton Mills?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Water power", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "steam power", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t6a-q4", topicId: "hist-em-irl-6", conceptId: "much-money-invested-cotton-machinery-1800",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 6 A Q4",
+    stem: "In this edited extract, historian Jonathan Bardon describes the cotton industry in Belfast in the early1800s.\n\nJohn McCracken had 200 workers in his mill close to Donegall Street; his six‐horsepower engine burned 600 tons of coal a year. John Milford’s mill on Winetavern Street was five storeys high and its 24 carding machines and 5,364 spindles were turned by a ten‐horsepower engine.\nThe Falls Cotton Mills had three factories; two were turned by water and the third driven by steam. Between 1800 and 1812, £350,000 was invested in cotton machinery in Belfast.",
+    questionText: "How much money was invested in cotton machinery, 1800‐1812?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "£350,000", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t6a-q5", topicId: "hist-em-irl-6", conceptId: "apart-cotton-other-textile-produced-belfast",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 6 A Q5",
+    stem: "In this edited extract, historian Jonathan Bardon describes the cotton industry in Belfast in the early1800s.\n\nJohn McCracken had 200 workers in his mill close to Donegall Street; his six‐horsepower engine burned 600 tons of coal a year. John Milford’s mill on Winetavern Street was five storeys high and its 24 carding machines and 5,364 spindles were turned by a ten‐horsepower engine.\nThe Falls Cotton Mills had three factories; two were turned by water and the third driven by steam. Between 1800 and 1812, £350,000 was invested in cotton machinery in Belfast.",
+    questionText: "Apart from cotton, name one other textile produced in Belfast in the early 1800s.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE textile, other than cotton, which was made in Belfast at that time", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t6b", topicId: "hist-em-irl-6", conceptId: "ireland-population-grew-1770-1815-henry",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 6 B",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Why Ireland’s population grew, 1770‐1815.\n2. Henry Grattan.\n3. Eibhlín Dhubh Ní Chonaill.\n4. Georgian culture.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,20] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s2t6c", topicId: "hist-em-irl-6", conceptId: "reasons-did-rebellion-break-out-wexford",
+    section: "2", questionRef: "2019 OL Early Modern Section 2 Topic 6 C",
+    stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
+    questionText: "Answer one of the following:\n1. For what reasons did a rebellion break out in Wexford in 1798?\n2. Why was Maynooth College established in 1795 and did it achieve its aims?\n3. In what ways did Wolfe Tone influence developments in Ireland?\n4. How did Nano Nagle contribute to education and learning in Ireland?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,20] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t1a-q1", topicId: "hist-em-eur-1", conceptId: "seville-awarded-1503",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 1 A Q1",
+    stem: "This is an edited extract from a recent article on Seville. Read it and answer the questions which follow.\n\nIn 1503 the city of Seville, in Castile, was awarded the exclusive right to trade with the New World. The Casa de Contratacion (House of Trade) was set up there to control all vessels, goods and passengers between Spain and the Indies.\nAll ships bound for America had to leave from Seville, land at specified ports on the other side, and return to Seville.\nThe explorer Amerigo Vespucci was appointed chief navigator to the Casa in 1508. He was responsible for licensing ships’ captains and producing maps of routes and overseas territories.",
+    questionText: "What was Seville awarded in 1503?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Right to trade with the New World", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t1a-q2", topicId: "hist-em-eur-1", conceptId: "casa-contratacion-set",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 1 A Q2",
+    stem: "This is an edited extract from a recent article on Seville. Read it and answer the questions which follow.\n\nIn 1503 the city of Seville, in Castile, was awarded the exclusive right to trade with the New World. The Casa de Contratacion (House of Trade) was set up there to control all vessels, goods and passengers between Spain and the Indies.\nAll ships bound for America had to leave from Seville, land at specified ports on the other side, and return to Seville.\nThe explorer Amerigo Vespucci was appointed chief navigator to the Casa in 1508. He was responsible for licensing ships’ captains and producing maps of routes and overseas territories.",
+    questionText: "Why was the Casa de Contratacion set up?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To control all trade (vessels, goods, passengers) between Spain and the Indies", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t1a-q3", topicId: "hist-em-eur-1", conceptId: "role-amerigo-vespucci-casa",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 1 A Q3",
+    stem: "This is an edited extract from a recent article on Seville. Read it and answer the questions which follow.\n\nIn 1503 the city of Seville, in Castile, was awarded the exclusive right to trade with the New World. The Casa de Contratacion (House of Trade) was set up there to control all vessels, goods and passengers between Spain and the Indies.\nAll ships bound for America had to leave from Seville, land at specified ports on the other side, and return to Seville.\nThe explorer Amerigo Vespucci was appointed chief navigator to the Casa in 1508. He was responsible for licensing ships’ captains and producing maps of routes and overseas territories.",
+    questionText: "What role had Amerigo Vespucci in the Casa?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Chief navigator/ Responsibility for licensing ships’ captains", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t1a-q4", topicId: "hist-em-eur-1", conceptId: "sorts-maps-produced",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 1 A Q4",
+    stem: "This is an edited extract from a recent article on Seville. Read it and answer the questions which follow.\n\nIn 1503 the city of Seville, in Castile, was awarded the exclusive right to trade with the New World. The Casa de Contratacion (House of Trade) was set up there to control all vessels, goods and passengers between Spain and the Indies.\nAll ships bound for America had to leave from Seville, land at specified ports on the other side, and return to Seville.\nThe explorer Amerigo Vespucci was appointed chief navigator to the Casa in 1508. He was responsible for licensing ships’ captains and producing maps of routes and overseas territories.",
+    questionText: "What sorts of maps were produced?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Maps of routes and overseas territories", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t1a-q5", topicId: "hist-em-eur-1", conceptId: "chief-commodities-new-world-landed-seville",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 1 A Q5",
+    stem: "This is an edited extract from a recent article on Seville. Read it and answer the questions which follow.\n\nIn 1503 the city of Seville, in Castile, was awarded the exclusive right to trade with the New World. The Casa de Contratacion (House of Trade) was set up there to control all vessels, goods and passengers between Spain and the Indies.\nAll ships bound for America had to leave from Seville, land at specified ports on the other side, and return to Seville.\nThe explorer Amerigo Vespucci was appointed chief navigator to the Casa in 1508. He was responsible for licensing ships’ captains and producing maps of routes and overseas territories.",
+    questionText: "What chief commodities from the New World landed at Seville?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "TWO New World commodities (@ 3M each) which were landed at Seville", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t1b", topicId: "hist-em-eur-1", conceptId: "michelangelo-buonarroti-struggle-against-turks-desiderius",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 1 B",
+    stem: "Europe from Renaissance to Reformation, 1492‐1567",
+    questionText: "Write a short paragraph on one of the following:\n1. Michelangelo Buonarroti.\n2. The struggle against the Turks.\n3. Desiderius Erasmus.\n4. The Counter‐Reformation.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t1c", topicId: "hist-em-eur-1", conceptId: "ways-did-emperor-charles-respond-problems",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 1 C",
+    stem: "Europe from Renaissance to Reformation, 1492‐1567",
+    questionText: "Answer one of the following:\n1. In what ways did Emperor Charles V respond to the problems of Empire?\n2. How did Christopher Columbus plan and carry out his first voyage across the Atlantic?\n3. How did the divorce of Henry VIII and Catherine of Aragon affect England and Europe?\n4. In what ways did Calvin make Geneva a centre of the Reformation?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t2a-q1", topicId: "hist-em-eur-2", conceptId: "sort-ship-san-felipe",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 2 A Q1",
+    stem: "This is an edited extract from an eye‐witness account of the Spanish Armada. Read it and answer the questions which follow.\n\nThe enemy inflicted much damage on the galleon San Felipe which had five guns on the starboard side and another on the upper deck put out of action.\nThe commanding officer, Don Francisco de Toledo, saw that his pumps were broken, his rigging in shreds and his ship almost a wreck.\nDon Francisco ordered the grappling hooks and the muskets to be brought out.\nHe shouted to the enemy to come to close quarters. They replied, calling on him to surrender.",
+    questionText: "What sort of ship was the San Felipe?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A galleon", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t2a-q2", topicId: "hist-em-eur-2", conceptId: "who-commanding-officer-san-felipe",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 2 A Q2",
+    stem: "This is an edited extract from an eye‐witness account of the Spanish Armada. Read it and answer the questions which follow.\n\nThe enemy inflicted much damage on the galleon San Felipe which had five guns on the starboard side and another on the upper deck put out of action.\nThe commanding officer, Don Francisco de Toledo, saw that his pumps were broken, his rigging in shreds and his ship almost a wreck.\nDon Francisco ordered the grappling hooks and the muskets to be brought out.\nHe shouted to the enemy to come to close quarters. They replied, calling on him to surrender.",
+    questionText: "Who was the commanding officer of the San Felipe?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Don Francisco de Toledo", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t2a-q3", topicId: "hist-em-eur-2", conceptId: "shown-san-felipe-almost-wreck",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 2 A Q3",
+    stem: "This is an edited extract from an eye‐witness account of the Spanish Armada. Read it and answer the questions which follow.\n\nThe enemy inflicted much damage on the galleon San Felipe which had five guns on the starboard side and another on the upper deck put out of action.\nThe commanding officer, Don Francisco de Toledo, saw that his pumps were broken, his rigging in shreds and his ship almost a wreck.\nDon Francisco ordered the grappling hooks and the muskets to be brought out.\nHe shouted to the enemy to come to close quarters. They replied, calling on him to surrender.",
+    questionText: "How is it shown that the San Felipe was almost a wreck?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ship’s pumps were broken", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "its rigging in shreds", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t2a-q4", topicId: "hist-em-eur-2", conceptId: "did-don-francisco-shout-enemy",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 2 A Q4",
+    stem: "This is an edited extract from an eye‐witness account of the Spanish Armada. Read it and answer the questions which follow.\n\nThe enemy inflicted much damage on the galleon San Felipe which had five guns on the starboard side and another on the upper deck put out of action.\nThe commanding officer, Don Francisco de Toledo, saw that his pumps were broken, his rigging in shreds and his ship almost a wreck.\nDon Francisco ordered the grappling hooks and the muskets to be brought out.\nHe shouted to the enemy to come to close quarters. They replied, calling on him to surrender.",
+    questionText: "What did Don Francisco shout to the enemy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Come to close quarters", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t2a-q5", topicId: "hist-em-eur-2", conceptId: "did-defeat-armada-affect-spain",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 2 A Q5",
+    stem: "This is an edited extract from an eye‐witness account of the Spanish Armada. Read it and answer the questions which follow.\n\nThe enemy inflicted much damage on the galleon San Felipe which had five guns on the starboard side and another on the upper deck put out of action.\nThe commanding officer, Don Francisco de Toledo, saw that his pumps were broken, his rigging in shreds and his ship almost a wreck.\nDon Francisco ordered the grappling hooks and the muskets to be brought out.\nHe shouted to the enemy to come to close quarters. They replied, calling on him to surrender.",
+    questionText: "Briefly, how did the defeat of the Armada affect Spain?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE effect on Spain of the defeat of the Armada", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t2b", topicId: "hist-em-eur-2", conceptId: "close-council-trent-rise-muscovy-catherine",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 2 B",
+    stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
+    questionText: "Write a short paragraph on one of the following:\n1. Close of the Council of Trent.\n2. The rise of Muscovy.\n3. Catherine de Medici.\n4. Tycho Brahe.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t2c", topicId: "hist-em-eur-2", conceptId: "did-matteo-ricci-contribute-jesuit-mission",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 2 C",
+    stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
+    questionText: "Answer one of the following:\n1. What did Matteo Ricci contribute to the Jesuit mission in China?\n2. What role did William the Silent play in the Revolt of the Netherlands?\n3. How successful was Elizabeth I as ruler of England?\n4. For what reasons did Antwerp decline as a great trading port?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t3a-q1", topicId: "hist-em-eur-3", conceptId: "organisation-governed-area",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 3 A Q1",
+    stem: "This edited extract refers to the Dutch empire in Asia. Read it and answer the questions which follow.\n\nThe Dutch empire in Asia included the islands of Java, Sumatra, the Celebes, most of Borneo, the Moluccas and Bali.\nIt was run by the Dutch East India Company, whose most able leader was Jon Pieterzoon Coen. He managed to exclude English and Spanish competition from the Indonesian islands.\nCoen captured the Banda Islands in 1621. As a result, the Dutch came to control the supply of nutmeg and mace. Also, they took steps to cut down clove trees to keep the price high in the European market.",
+    questionText: "What organisation governed the area?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dutch East India Company", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t3a-q2", topicId: "hist-em-eur-3", conceptId: "who-its-most-able-leader",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 3 A Q2",
+    stem: "This edited extract refers to the Dutch empire in Asia. Read it and answer the questions which follow.\n\nThe Dutch empire in Asia included the islands of Java, Sumatra, the Celebes, most of Borneo, the Moluccas and Bali.\nIt was run by the Dutch East India Company, whose most able leader was Jon Pieterzoon Coen. He managed to exclude English and Spanish competition from the Indonesian islands.\nCoen captured the Banda Islands in 1621. As a result, the Dutch came to control the supply of nutmeg and mace. Also, they took steps to cut down clove trees to keep the price high in the European market.",
+    questionText: "Who was its ‘most able leader’?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Jon Pieterzoon Coen", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t3a-q3", topicId: "hist-em-eur-3", conceptId: "did-dutch-come-control-supply-nutmeg",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 3 A Q3",
+    stem: "This edited extract refers to the Dutch empire in Asia. Read it and answer the questions which follow.\n\nThe Dutch empire in Asia included the islands of Java, Sumatra, the Celebes, most of Borneo, the Moluccas and Bali.\nIt was run by the Dutch East India Company, whose most able leader was Jon Pieterzoon Coen. He managed to exclude English and Spanish competition from the Indonesian islands.\nCoen captured the Banda Islands in 1621. As a result, the Dutch came to control the supply of nutmeg and mace. Also, they took steps to cut down clove trees to keep the price high in the European market.",
+    questionText: "How did the Dutch come to control the supply of nutmeg and mace?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By capturing the Banda Islands", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t3a-q4", topicId: "hist-em-eur-3", conceptId: "did-dutch-cut-down-clove-trees",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 3 A Q4",
+    stem: "This edited extract refers to the Dutch empire in Asia. Read it and answer the questions which follow.\n\nThe Dutch empire in Asia included the islands of Java, Sumatra, the Celebes, most of Borneo, the Moluccas and Bali.\nIt was run by the Dutch East India Company, whose most able leader was Jon Pieterzoon Coen. He managed to exclude English and Spanish competition from the Indonesian islands.\nCoen captured the Banda Islands in 1621. As a result, the Dutch came to control the supply of nutmeg and mace. Also, they took steps to cut down clove trees to keep the price high in the European market.",
+    questionText: "Why did the Dutch cut down the clove trees?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To keep the price high (by reducing supply)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t3a-q5", topicId: "hist-em-eur-3", conceptId: "major-country-rival-dutch-asia",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 3 A Q5",
+    stem: "This edited extract refers to the Dutch empire in Asia. Read it and answer the questions which follow.\n\nThe Dutch empire in Asia included the islands of Java, Sumatra, the Celebes, most of Borneo, the Moluccas and Bali.\nIt was run by the Dutch East India Company, whose most able leader was Jon Pieterzoon Coen. He managed to exclude English and Spanish competition from the Indonesian islands.\nCoen captured the Banda Islands in 1621. As a result, the Dutch came to control the supply of nutmeg and mace. Also, they took steps to cut down clove trees to keep the price high in the European market.",
+    questionText: "What major country was a rival to the Dutch in Asia?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE rival country such as England or Spain", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t3b", topicId: "hist-em-eur-3", conceptId: "thirty-years-war-hugo-grotius-rise",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 3 B",
+    stem: "The eclipse of Old Europe, 1609‐1660",
+    questionText: "Write a short paragraph on one of the following:\n1. The Thirty Years War.\n2. Hugo Grotius.\n3. Rise of empirical science.\n4. The rise of Sweden.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,21] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t3c", topicId: "hist-em-eur-3", conceptId: "did-catalans-rise-revolt-outcome-revolt",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 3 C",
+    stem: "The eclipse of Old Europe, 1609‐1660",
+    questionText: "Answer one of the following:\n1. Why did the Catalans rise in revolt and what was the outcome of their revolt?\n2. What did Cardinal Richelieu aim to achieve for France and how far did he succeed?\n3. What did Claudio Monteverdi and/or Peter Paul Rubens contribute to European culture?\n4. How did Galileo Galilei and/or René Descartes contribute to the advancement of science?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,21] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t4a-q1", topicId: "hist-em-eur-4", conceptId: "who-streltsy",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 4 A Q1",
+    stem: "This edited extract deals with Peter the Great’s military reforms. Read it and answer the questions which follow.\n\nRussia needed a corps of professional soldiers (the Streltsy). Accordingly, Peter the Great raised the first Russian standing army. He replaced Western mercenaries (soldiers who fight for a foreign army for money) by introducing compulsory military service in 1705. From then on, one recruit – who would serve for life – had to be provided by every twenty peasant households.\nIn this way he raised an infantry (soldiers who fight on foot) to complement Cossack cavalrymen. Also, Peter brought in Western commanders to train his army and provided soldiers with uniforms and Western flintlock muskets with bayonets.",
+    questionText: "Who were the Streltsy?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(A corps of) professional soldiers", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t4a-q2", topicId: "hist-em-eur-4", conceptId: "did-peter-great-introduce-1705",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 4 A Q2",
+    stem: "This edited extract deals with Peter the Great’s military reforms. Read it and answer the questions which follow.\n\nRussia needed a corps of professional soldiers (the Streltsy). Accordingly, Peter the Great raised the first Russian standing army. He replaced Western mercenaries (soldiers who fight for a foreign army for money) by introducing compulsory military service in 1705. From then on, one recruit – who would serve for life – had to be provided by every twenty peasant households.\nIn this way he raised an infantry (soldiers who fight on foot) to complement Cossack cavalrymen. Also, Peter brought in Western commanders to train his army and provided soldiers with uniforms and Western flintlock muskets with bayonets.",
+    questionText: "What did Peter the Great introduce in 1705?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Compulsory military service", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t4a-q3", topicId: "hist-em-eur-4", conceptId: "length-time-soldier-recruit-serve-army",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 4 A Q3",
+    stem: "This edited extract deals with Peter the Great’s military reforms. Read it and answer the questions which follow.\n\nRussia needed a corps of professional soldiers (the Streltsy). Accordingly, Peter the Great raised the first Russian standing army. He replaced Western mercenaries (soldiers who fight for a foreign army for money) by introducing compulsory military service in 1705. From then on, one recruit – who would serve for life – had to be provided by every twenty peasant households.\nIn this way he raised an infantry (soldiers who fight on foot) to complement Cossack cavalrymen. Also, Peter brought in Western commanders to train his army and provided soldiers with uniforms and Western flintlock muskets with bayonets.",
+    questionText: "For what length of time would a soldier‐recruit serve in the army?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A lifetime", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t4a-q4", topicId: "hist-em-eur-4", conceptId: "raised-complement-cossack-cavalrymen",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 4 A Q4",
+    stem: "This edited extract deals with Peter the Great’s military reforms. Read it and answer the questions which follow.\n\nRussia needed a corps of professional soldiers (the Streltsy). Accordingly, Peter the Great raised the first Russian standing army. He replaced Western mercenaries (soldiers who fight for a foreign army for money) by introducing compulsory military service in 1705. From then on, one recruit – who would serve for life – had to be provided by every twenty peasant households.\nIn this way he raised an infantry (soldiers who fight on foot) to complement Cossack cavalrymen. Also, Peter brought in Western commanders to train his army and provided soldiers with uniforms and Western flintlock muskets with bayonets.",
+    questionText: "What was raised to complement the Cossack cavalrymen?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Infantry/ foot soldiers", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t4a-q5", topicId: "hist-em-eur-4", conceptId: "did-peter-great-build-new-city",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 4 A Q5",
+    stem: "This edited extract deals with Peter the Great’s military reforms. Read it and answer the questions which follow.\n\nRussia needed a corps of professional soldiers (the Streltsy). Accordingly, Peter the Great raised the first Russian standing army. He replaced Western mercenaries (soldiers who fight for a foreign army for money) by introducing compulsory military service in 1705. From then on, one recruit – who would serve for life – had to be provided by every twenty peasant households.\nIn this way he raised an infantry (soldiers who fight on foot) to complement Cossack cavalrymen. Also, Peter brought in Western commanders to train his army and provided soldiers with uniforms and Western flintlock muskets with bayonets.",
+    questionText: "Why did Peter the Great build a new city (St. Petersburg) on the Baltic shore?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ONE valid reason why Peter built a new city on the Baltic shore", marks: 6, contextNote: "The scheme prints no answer here: any correct one earns the marks." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t4b", topicId: "hist-em-eur-4", conceptId: "expansion-cities-fall-stuart-monarchy-england",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 4 B",
+    stem: "Europe in the age of Louis XIV, 1660‐1715",
+    questionText: "Write a short paragraph on one of the following:\n1. The expansion of cities.\n2. The fall of the Stuart monarchy in England.\n3. Jan de Witt.\n4. Madame de Maintenon.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t4c", topicId: "hist-em-eur-4", conceptId: "did-learn-english-east-india-company",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 4 C",
+    stem: "Europe in the age of Louis XIV, 1660‐1715",
+    questionText: "Answer one of the following:\n1. What did you learn about the (English) East India Company?\n2. How successful was John Sobieski in his attempts to strengthen Poland?\n3. What did you learn about the court of Versailles?\n4. What did Isaac Newton and/or Gottfried Wilhelm Leibnitz contribute to the advancement of science?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t5a-q1", topicId: "hist-em-eur-5", conceptId: "who-edited-encyclop-die",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 5 A Q1",
+    stem: "This edited extract relates to the Encyclopédie. Read it and answer the questions which follow.\n\nThe Encyclopéidie, edited by Denis Diderot and Jean d’Alembert, appeared in seventeen volumes between 1751 and 1772.\nDiderot contributed articles on arts and crafts and d’Alembert dealt with the sciences.\nMany articles implied criticism of religion and the government (although it treated the monarchy with respect).\nThe editors fought bitter battles with the government censors and there were periods when its publication was suspended altogether.",
+    questionText: "Who edited the Encyclopédie?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Denis Diderot", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Jean d’Alembert", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t5a-q2", topicId: "hist-em-eur-5", conceptId: "topics-did-diderot-contribute-articles",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 5 A Q2",
+    stem: "This edited extract relates to the Encyclopédie. Read it and answer the questions which follow.\n\nThe Encyclopéidie, edited by Denis Diderot and Jean d’Alembert, appeared in seventeen volumes between 1751 and 1772.\nDiderot contributed articles on arts and crafts and d’Alembert dealt with the sciences.\nMany articles implied criticism of religion and the government (although it treated the monarchy with respect).\nThe editors fought bitter battles with the government censors and there were periods when its publication was suspended altogether.",
+    questionText: "On what topics did Diderot contribute articles?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Arts and crafts", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t5a-q3", topicId: "hist-em-eur-5", conceptId: "subjects-did-alembert-deal",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 5 A Q3",
+    stem: "This edited extract relates to the Encyclopédie. Read it and answer the questions which follow.\n\nThe Encyclopéidie, edited by Denis Diderot and Jean d’Alembert, appeared in seventeen volumes between 1751 and 1772.\nDiderot contributed articles on arts and crafts and d’Alembert dealt with the sciences.\nMany articles implied criticism of religion and the government (although it treated the monarchy with respect).\nThe editors fought bitter battles with the government censors and there were periods when its publication was suspended altogether.",
+    questionText: "With what subjects did d’Alembert deal?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sciences", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t5a-q4", topicId: "hist-em-eur-5", conceptId: "did-encyclop-die-face-censorship",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 5 A Q4",
+    stem: "This edited extract relates to the Encyclopédie. Read it and answer the questions which follow.\n\nThe Encyclopéidie, edited by Denis Diderot and Jean d’Alembert, appeared in seventeen volumes between 1751 and 1772.\nDiderot contributed articles on arts and crafts and d’Alembert dealt with the sciences.\nMany articles implied criticism of religion and the government (although it treated the monarchy with respect).\nThe editors fought bitter battles with the government censors and there were periods when its publication was suspended altogether.",
+    questionText: "Why did the Encyclopédie face censorship?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because the government considered many of its articles critical of them.", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t5a-q5", topicId: "hist-em-eur-5", conceptId: "enlightenment",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 5 A Q5",
+    stem: "This edited extract relates to the Encyclopédie. Read it and answer the questions which follow.\n\nThe Encyclopéidie, edited by Denis Diderot and Jean d’Alembert, appeared in seventeen volumes between 1751 and 1772.\nDiderot contributed articles on arts and crafts and d’Alembert dealt with the sciences.\nMany articles implied criticism of religion and the government (although it treated the monarchy with respect).\nThe editors fought bitter battles with the government censors and there were periods when its publication was suspended altogether.",
+    questionText: "Briefly, what was the Enlightenment?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Brief and clear definition of the Enlightenment", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                13
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t5b", topicId: "hist-em-eur-5", conceptId: "mercantilism-laissez-faire-robert-clive-road",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 5 B",
+    stem: "Establishing empires, 1715 ‐ 1775",
+    questionText: "Write a short paragraph on one of the following:\n1. Mercantilism and laissez‐faire.\n2. Robert Clive.\n3. Road and canal building.\n4. Jean‐Jacques Rousseau.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t5c", topicId: "hist-em-eur-5", conceptId: "boston-tea-party-important-american-revolution",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 5 C",
+    stem: "Establishing empires, 1715 ‐ 1775",
+    questionText: "Answer one of the following:\n1. What was the Boston Tea Party and how was it important in the American Revolution?\n2. What did Catherine the Great of Russia achieve for her country?\n3. What did Frederick the Great, King of Prussia, achieve at home and abroad?\n4. How did the West Indies slave plantations influence international trade?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t6a-q1", topicId: "hist-em-eur-6", conceptId: "age-marie-antoinette-when-she-became",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 6 A Q1",
+    stem: "This edited extract refers to the trial and execution of Queen Marie Antoinette. Read it and answer the questions which follow.\n\nOne of the most high‐profile victims of the French Revolution was Marie Antoinette, the widow of Louis XVI. She was born in 1755, married to Louis in 1770 and became Queen at age nineteen when she succeeded to the throne in 1774.\nOn 14 October 1793 she was brought before the Revolutionary Tribunal and tried for high treason.\nHer trial caused no difficulty: she was widely unpopular because, being a member of the Austrian ruling family, she was suspected of being an ally of the enemies of France.\nTwo days later, on 16 October, she was condemned, and guillotined on the same day.",
+    questionText: "What age was Marie Antoinette when she became Queen of France?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "19", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t6a-q2", topicId: "hist-em-eur-6", conceptId: "offence-marie-antoinette-charged-revolutionary-tribunal",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 6 A Q2",
+    stem: "This edited extract refers to the trial and execution of Queen Marie Antoinette. Read it and answer the questions which follow.\n\nOne of the most high‐profile victims of the French Revolution was Marie Antoinette, the widow of Louis XVI. She was born in 1755, married to Louis in 1770 and became Queen at age nineteen when she succeeded to the throne in 1774.\nOn 14 October 1793 she was brought before the Revolutionary Tribunal and tried for high treason.\nHer trial caused no difficulty: she was widely unpopular because, being a member of the Austrian ruling family, she was suspected of being an ally of the enemies of France.\nTwo days later, on 16 October, she was condemned, and guillotined on the same day.",
+    questionText: "With what offence was Marie Antoinette charged by the Revolutionary Tribunal?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "High treason", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t6a-q3", topicId: "hist-em-eur-6", conceptId: "marie-antoinette-unpopular-france",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 6 A Q3",
+    stem: "This edited extract refers to the trial and execution of Queen Marie Antoinette. Read it and answer the questions which follow.\n\nOne of the most high‐profile victims of the French Revolution was Marie Antoinette, the widow of Louis XVI. She was born in 1755, married to Louis in 1770 and became Queen at age nineteen when she succeeded to the throne in 1774.\nOn 14 October 1793 she was brought before the Revolutionary Tribunal and tried for high treason.\nHer trial caused no difficulty: she was widely unpopular because, being a member of the Austrian ruling family, she was suspected of being an ally of the enemies of France.\nTwo days later, on 16 October, she was condemned, and guillotined on the same day.",
+    questionText: "Why was Marie Antoinette unpopular in France?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Because she was Austrian/ not French/ suspected of being ally of France’s enemies", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t6a-q4", topicId: "hist-em-eur-6", conceptId: "event-took-place-october-1793",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 6 A Q4",
+    stem: "This edited extract refers to the trial and execution of Queen Marie Antoinette. Read it and answer the questions which follow.\n\nOne of the most high‐profile victims of the French Revolution was Marie Antoinette, the widow of Louis XVI. She was born in 1755, married to Louis in 1770 and became Queen at age nineteen when she succeeded to the throne in 1774.\nOn 14 October 1793 she was brought before the Revolutionary Tribunal and tried for high treason.\nHer trial caused no difficulty: she was widely unpopular because, being a member of the Austrian ruling family, she was suspected of being an ally of the enemies of France.\nTwo days later, on 16 October, she was condemned, and guillotined on the same day.",
+    questionText: "What event took place on 16 October 1793?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She was condemned to death/ executed/guillotined", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t6a-q5", topicId: "hist-em-eur-6", conceptId: "reign-terror-took-place-france-during",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 6 A Q5",
+    stem: "This edited extract refers to the trial and execution of Queen Marie Antoinette. Read it and answer the questions which follow.\n\nOne of the most high‐profile victims of the French Revolution was Marie Antoinette, the widow of Louis XVI. She was born in 1755, married to Louis in 1770 and became Queen at age nineteen when she succeeded to the throne in 1774.\nOn 14 October 1793 she was brought before the Revolutionary Tribunal and tried for high treason.\nHer trial caused no difficulty: she was widely unpopular because, being a member of the Austrian ruling family, she was suspected of being an ally of the enemies of France.\nTwo days later, on 16 October, she was condemned, and guillotined on the same day.",
+    questionText: "Briefly, what was the Reign of Terror which took place in France during the period, 5 September 1793 – 28 July 1794?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Brief and clear definition of the Reign of Terror", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL EXTRACT",
+          "title": "The extract",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC History 2019 Ordinary Level examination paper, Early Modern — © State Examinations Commission.",
+          "presentationNote": "Read the exact source as it appeared in the examination paper, then answer the question above."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t6b", topicId: "hist-em-eur-6", conceptId: "mary-wollstonecraft-emancipation-jews-abolition-slave",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 6 B",
+    stem: "Empires in revolution, 1775‐1815",
+    questionText: "Write a short paragraph on one of the following:\n1. Mary Wollstonecraft.\n2. Emancipation of the Jews.\n3. Abolition of the slave trade.\n4. Madame de Staël.",
+    totalMarks: 30,
+    rubric: { ...ESSAY_MARKING[1], schemePages: [17,18,22] },
+  } as SecCard,
+  {
+    ...base, kind: "rubric",
+    year: 2019, level: "ordinary",
+    paperFileid: "LC096GLP000EV",
+    schemeCitation: "Marking by Core Statement quoted from the SEC marking scheme, History 2019 Ordinary Level — © State Examinations Commission.",
+    id: "hist-2019-ol-em-s3t6c", topicId: "hist-em-eur-6", conceptId: "did-louis-xvi-conduct-affairs-led",
+    section: "3", questionRef: "2019 OL Early Modern Section 3 Topic 6 C",
+    stem: "Empires in revolution, 1775‐1815",
+    questionText: "Answer one of the following:\n1. How did Louis XVI conduct the affairs of state and what led to his downfall?\n2. What were the aims of the Committee of Public Safety?\n3. What did Napoleon hope to achieve by the ‘continental system’?\n4. What did Ludwig van Beethoven contribute to European culture?",
+    totalMarks: 40,
+    rubric: { ...ESSAY_MARKING[2], schemePages: [17,18,22] },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2020, level: "ordinary",
     paperFileid: "LC004GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, History 2020 Ordinary Level — © State Examinations Commission.",
@@ -2960,7 +4819,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: Lyndon Johnson and Vietnam, 1963-1968",
     questionText: "Do you consider the policies of Lyndon Johnson in Vietnam a success or a failure? Give reasons for your answer.",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[3], schemePages: [5] },
+    rubric: { ...ESSAY_MARKING[4], schemePages: [5] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3093,7 +4952,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Write a short paragraph on one of the following:\n1. The Tithe War.\n2. Thomas Davis.\n3. Impact of the railways.\n4. James Stephens.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [5,6,7] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,7] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -3105,7 +4964,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Answer one of the following:\n1. In what ways did private charities respond to the Famine, 1845-1849?\n2. What did William Carleton and/or Charles Kickham contribute to Irish affairs?\n3. In what ways did Mother Mary Aikenhead contribute to Irish society?\n4. What decisions were made at the Synod of Thurles, 1850?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,7] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [5,6,7] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3238,7 +5097,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Write a short paragraph on one of the following:\n1. Isaac Butt.\n2. The GAA, 1884-1891.\n3. The Belfast shipyards.\n4. Edward Carson.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [5,6,7] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,7] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -3250,7 +5109,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Answer one of the following:\n1. What did Michael Davitt and/or Charles Stewart Parnell contribute to land agitation and land reform?\n2. How did James Larkin influence events in Dublin during 1913?\n3. How did Isabella Tod and/or Hanna Sheehy-Skeffington seek improvements for women?\n4. In what ways did W.B. Yeats and/or Douglas Hyde contribute to cultural revival in Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,7] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [5,6,7] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3383,7 +5242,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Write a short paragraph on one of the following:\n1. Arthur Griffith.\n2. The War of Independence.\n3. W.T. Cosgrave.\n4. Anglo-Irish relations, 1922-1949.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [5,6,7] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,7] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -3395,7 +5254,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Answer one of the following:\n1. What did Patrick Pearse and/or Countess Markievicz contribute to the Easter Rising, 1916?\n2. What part did Michael Collins play in negotiating and defending the Anglo-Irish Treaty?\n3. What was the experience of Belfast during World War II?\n4. In what ways was the Eucharistic Congress, 1932, an important event for Church and State?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,7] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [5,6,7] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3529,7 +5388,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Write a short paragraph on one of the following:\n1. Grosse Isle.\n2. The role of the Orange Order among emigrants.\n3. Mother Mary Martin.\n4. The impact of John F. Kennedy.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [5,6,8] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,8] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -3541,7 +5400,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Answer one of the following:\n1. In what ways did John Devoy contribute to Irish-America?\n2. Why and to where did many Irish people emigrate during the period 1920-1966?\n3. Was the Holy Ghost Mission to Nigeria a success or a failure? Argue your case.\n4. In what ways did Maureen O’Hara and/or Paul O’Dwyer illustrate Irish-American experience?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,8] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [5,6,8] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3673,7 +5532,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "Write a short paragraph on one of the following:\n1. The Welfare State in Northern Ireland.\n2. Margaret Thatcher.\n3. The Downing Street Declaration, 1993.\n4. Ian Paisley.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [5,6,8] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,8] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -3685,7 +5544,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "Answer one of the following:\n1. How did Terence O’Neill attempt to bring about change in Northern Ireland?\n2. Why was Coleraine, and not Derry city, chosen as the site for a new university in Ulster?\n3. What did the Sunningdale Agreement contain, and why did it come to an end?\n4. How did the poetry of Seamus Heaney reflect a cultural response to the “Troubles”?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,8] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [5,6,8] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3818,7 +5677,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Write a short paragraph on one of the following:\n1. Ireland and the United Nations.\n2. Anglo-Irish relations, 1949-1989.\n3. Changes in education.\n4. Breandán Ó hEithir.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [5,6,8] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,8] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -3830,7 +5689,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Answer one of the following:\n1. What did T.K. Whitaker aim to achieve with the First Programme for Economic Expansion, 1958-1963?\n2. In what ways did membership of the EEC affect the development of Irish fisheries?\n3. How did Raidió Telefís Éireann (RTÉ) impact on Irish society, 1962-1972?\n4. What did Garret FitzGerald and/or Charles Haughey achieve as Taoiseach?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,8] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [5,6,8] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3962,7 +5821,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Write a short paragraph on one of the following:\n1. Robert Peel.\n2. Karl Marx.\n3. Urban growth and migration.\n4. Balkan nationalism.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [5,6,9] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,9] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -3974,7 +5833,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Answer one of the following:\n1. What were the main causes of the 1848 revolution in Germany?\n2. What major changes did Haussmann bring about in the city of Paris?\n3. What did Otto von Bismarck and/or Napoleon III contribute towards German unity?\n4. Do you consider Robert Owen’s model village at New Lanark a success or a failure? Argue your case.",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,9] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [5,6,9] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4108,7 +5967,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Write a short paragraph on one of the following:\n1. Anti-Semitism in France.\n2. Tsarist Russia.\n3. Pope Leo XIII.\n4. Wilfred Owen.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [5,6,9] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,9] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4120,7 +5979,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Answer one of the following:\n1. How did Bismarck conduct affairs in Europe, 1871-1890?\n2. What main developments took place in the invention and early history of the motor car?\n3. In what ways did Rosa Luxemburg and/or Woodrow Wilson influence events in Europe?\n4. What was the importance of the life and work of Marie Curie?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,9] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [5,6,9] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4252,7 +6111,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "Write a short paragraph on one of the following:\n1. Benito Mussolini.\n2. The Home Front during World War II.\n3. The technology of warfare.\n4. The Holocaust.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [5,6,9] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,9] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4264,7 +6123,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "Answer one of the following:\n1. How did Hitler conduct German foreign policy between 1933 and 1939?\n2. For what reasons did Stalin conduct show trials, and how did they affect Soviet society?\n3. What did Bing Crosby and/or Charlie Chaplin contribute to the world of radio and cinema?\n4. In what ways was the Jarrow March, 1936, a response to the social and economic conditions of Britain in the 1930s?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,9] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [5,6,9] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4397,7 +6256,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Write a short paragraph on one of the following:\n1. The Berlin airlift, 1948.\n2. The “Sovietisation” of Eastern Europe.\n3. Jacques Delors.\n4. Mikhail Gorbachev.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [5,6,10] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,10] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4409,7 +6268,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Answer one of the following:\n1. What were the origins of the Hungarian Uprising, 1956, and why did it not succeed?\n2. What decisions were made at the Second Vatican Council, 1962-1965?\n3. How did the Oil Crisis of 1973 affect the western economies, 1973-1992?\n4. What did Simone de Beauvoir and/or John Lennon contribute to European culture?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,10] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [5,6,10] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4542,7 +6401,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Write a short paragraph on one of the following:\n1. Julius Nyerere.\n2. The Lomé Conventions.\n3. Race relations in France in the 1980s.\n4. Nadine Gordimer.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[4], schemePages: [5,6,10] },
+    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,10] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4554,7 +6413,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Answer one of the following:\n1. Why did Britain withdraw from India in 1947, and what settlement did Britain negotiate before leaving?\n2. For what reasons did Katanga break away from the Congo, and how did it lead to war?\n3. How did Charles de Gaulle respond to Algerian demands for independence?\n4. What typical problems did development workers encounter in Africa, 1945-1990?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[5], schemePages: [5,6,10] },
+    rubric: { ...ESSAY_MARKING[6], schemePages: [5,6,10] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4799,7 +6658,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Montgomery bus boycott, 1956",
     questionText: "What part did Martin Luther King play in the Montgomery bus boycott?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[6], schemePages: [8] },
+    rubric: { ...ESSAY_MARKING[7], schemePages: [8] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4932,7 +6791,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Write a short paragraph on one of the following:\n1. The Irish countryside in 1815.\n2. William Carleton.\n3. The Tithe War.\n4. Emigration from Ireland, 1815-1870.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [8,9,10] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,10] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -4944,7 +6803,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Answer one of the following:\n1. What were the successes and failures in the political career of Daniel O’Connell?\n2. What did Thomas Davis and/or James Stephens contribute to Irish affairs?\n3. What decisions did the Synod of Thurles, 1850, make in relation to the Catholic Church?\n4. How did William Dargan contribute to economic development in Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,10] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [8,9,10] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5078,7 +6937,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Write a short paragraph on one of the following:\n1. The first Home Rule Bill, 1886.\n2. The Belfast shipyards.\n3. The Gaelic League.\n4. The first Sinn Féin Party.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [8,9,10] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,10] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5090,7 +6949,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Answer one of the following:\n1. What did Parnell and/or Davitt contribute to the movement for land reform?\n2. What major developments took place within the GAA between 1884 and 1891?\n3. How did Isabella Tod and/or Hanna Sheehy-Skeffington seek improvements for women?\n4. What were the circumstances which led to the 1913 strike and lockout?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,10] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [8,9,10] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5223,7 +7082,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Write a short paragraph on one of the following:\n1. Countess Markievicz.\n2. The 1918 election.\n3. The Eucharistic Congress, 1932.\n4. Evie Hone.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [8,9,10] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,10] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5235,7 +7094,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Answer one of the following:\n1. What terms were agreed in the Anglo-Irish Treaty, December 1921?\n2. Did Éamon de Valera experience success and/or failure in his political career, 1917-1945?\n3. What did W.T. Cosgrave achieve as head of government, 1923-1932?\n4. What did the people of Belfast experience during World War II?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,10] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [8,9,10] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5368,7 +7227,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Write a short paragraph on one of the following:\n1. Ulster-Scottish emigration to North America.\n2. The Molly Maguires.\n3. Boss Croker.\n4. Maureen O’Hara.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [8,9,11] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,11] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5380,7 +7239,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Answer one of the following:\n1. How did Grosse Isle cope with the arrival of Irish emigrants at the time of the Great Famine?\n2. What did de Valera hope to achieve in America, June, 1919-December, 1920?\n3. What did Joe Kennedy and/or John F. Kennedy contribute to the diaspora?\n4. What were the achievements of Archbishop Daniel Mannix and/or Mother Mary Martin?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,11] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [8,9,11] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5513,7 +7372,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "Write a short paragraph on one of the following:\n1. The impact of the Welfare State.\n2. Conn and Patricia McCluskey.\n3. The emergence of the Provisional IRA.\n4. James Molyneaux.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [8,9,11] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,11] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5525,7 +7384,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "Answer one of the following:\n1. What did the Apprentice Boys of Derry celebrate and why did their celebrations cause controversy?\n2. What was agreed at Sunningdale and why did the power-sharing executive fail?\n3. How did Ian Paisley and/or John Hume influence events in Northern Ireland?\n4. How did the Irish Republic respond to the “Troubles” in Northern Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,11] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [8,9,11] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5657,7 +7516,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Write a short paragraph on one of the following:\n1. Changes in education, 1949-1989.\n2. Ireland’s involvement with the UN.\n3. The impact of Vatican II.\n4. Garret FitzGerald.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [8,9,11] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,11] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5669,7 +7528,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Answer one of the following:\n1. What impact had the First Programme for Economic Expansion on Irish society?\n2. Did membership of the EEC help or hinder the development of Irish fishing? Argue your case.\n3. What did you learn about the role of women in Irish society from your study of one or more of the following: the changing status of women; Sylvia Meehan; Mary Robinson?\n4. What did Charles Haughey achieve as Taoiseach?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,11] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [8,9,11] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5803,7 +7662,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Write a short paragraph on one of the following:\n1. Napoleon III.\n2. Changes in agriculture, 1815-1871.\n3. Changes in industry, 1815-1871.\n4. Victor Hugo.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [8,9,12] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5815,7 +7674,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Answer one of the following:\n1. What changes did Haussmann make to the city of Paris?\n2. What were the aims and achievements of Giuseppe Mazzini?\n3. What did Feargus O’Connor and/or Robert Peel contribute to English affairs?\n4. What was new and different about Robert Owen’s model village at New Lanark?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,12] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [8,9,12] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5947,7 +7806,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Write a short paragraph on one of the following:\n1. The early history of the motor car.\n2. Anti-Semitism in France or Russia.\n3. Wilfred Owen.\n4. Rosa Luxemburg.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [8,9,12] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -5959,7 +7818,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Answer one of the following:\n1. What tensions emerged between Church and State in Germany and/or Italy?\n2. In what ways did Leo XIII respond to the problems of industrial society?\n3. What was Wilhelm II’s naval policy and why did it alarm the British government?\n4. How did Woodrow Wilson contribute to war and peace in Europe?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,12] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [8,9,12] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6092,7 +7951,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "Write a short paragraph on one of the following:\n1. Vladimir Ilyich Lenin.\n2. Hitler’s foreign policy, 1933-1939.\n3. Wartime alliances, 1939-1945.\n4. The Holocaust.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [8,9,12] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6104,7 +7963,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "Answer one of the following:\n1. How did Church/State relations develop under Mussolini and/or Hitler?\n2. Why did the Jarrow March, October 1936, take place and was it a success or a failure?\n3. What social and economic changes did Stalin bring about in Soviet Russia?\n4. What did Charlie Chaplin and/or Bing Crosby contribute to Anglo-American popular culture?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,12] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [8,9,12] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6236,7 +8095,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Write a short paragraph on one of the following:\n1. The Second Vatican Council.\n2. Advances in the biological sciences.\n3. Alexander Solzhenitsyn.\n4. John Lennon.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [8,9,13] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6248,7 +8107,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Answer one of the following:\n1. What were the reasons for the Hungarian Uprising, 1956, and how did Soviet Russia respond?\n2. How did the 1973 Oil Crisis affect the Western economies between 1973 and 1992?\n3. What did Jean Monnet and/or Jacques Delors contribute to European unity?\n4. In what ways did Mikhail Gorbachev attempt to reform the Communist system in Soviet Russia?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,13] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [8,9,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6381,7 +8240,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Write a short paragraph on one of the following:\n1. British withdrawal from India, 1945-1947.\n2. Charles de Gaulle.\n3. The Lomé Conventions.\n4. Nadine Gordimer.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [8,9,13] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6393,7 +8252,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Answer one of the following:\n1. In what ways did David Ben-Gurion respond to the Arab-Israeli conflict?\n2. What was Julius Nyerere’s policy of ujamaa and how successful was it?\n3. What part did Ho Chi Minh and/or Achmad Sukarno play in his country’s history?\n4. How did France become a multi-racial society and how did its government deal with problems in race relations in the 1980s?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [8,9,13] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [8,9,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6637,7 +8496,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Jesuit mission in China",
     questionText: "What was achieved by the Jesuit mission in China?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[9], schemePages: [20] },
+    rubric: { ...ESSAY_MARKING[10], schemePages: [20] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6769,7 +8628,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Write a short paragraph on one of the following:\n1. The Kildare rebellion, 1534-1535.\n2. Towns and guilds.\n3. The monasteries and their dissolution.\n4. Manus O’Donnell.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,22] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,22] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6781,7 +8640,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Answer one of the following:\n1. Why was Gearóid Mór, 8th Earl of Kildare, so powerful in Irish affairs?\n2. How were students trained in Bardic Schools and how did they earn their living afterwards?\n3. What policies did Sir Anthony St. Leger implement, and were they successful?\n4. How was the plantation of Laois/Offaly organised and to what extent was it successful?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,22] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,22] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6913,7 +8772,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "Write a short paragraph on one of the following:\n1. Archbishop Richard Creagh.\n2. The university question.\n3. Tadhg Dall Ó hUiginn.\n4. Recusancy in Ireland, 1560-1603.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,22] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,22] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -6925,7 +8784,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "Answer one of the following:\n1. What were the main features of Elizabethan Dublin?\n2. Why was James Fitzmaurice Fitzgerald important in the Desmond rebellion?\n3. What leadership did Hugh O’Neill provide in the Nine Years’ War?\n4. What did you find interesting or unusual about the clerical career of Meiler Magrath?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,22] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,22] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7058,7 +8917,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "Write a short paragraph on one of the following:\n1. Origins of the 1641 rebellion.\n2. The Four Masters.\n3. Archbishop Rinuccini.\n4. Piaras Feiritéar.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,22] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,22] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7070,7 +8929,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom v. colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "Answer one of the following:\n1. What was the purpose of the Irish College in Louvain and what did it achieve?\n2. What part did Richard Boyle and his family play in Irish affairs?\n3. What successes and failures did Owen Roe O’Neill have in Ireland?\n4. What were the main events of Cromwell’s campaign in Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,22] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,22] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7203,7 +9062,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Write a short paragraph on one of the following:\n1. Patrick Sarsfield.\n2. The Duchess of Tyrconnell.\n3. Restoration Dublin.\n4. The Penal Laws.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,23] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7215,7 +9074,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Answer one of the following:\n1. Why were the policies of Charles II unpopular in Ireland?\n2. What decisions were made in the Parliament of 1689?\n3. What were the major concerns of the Jacobite poets?\n4. What was the contribution to Irish affairs of Robert Boyle and/or William Molyneux?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,23] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,23] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7349,7 +9208,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "Write a short paragraph on one of the following:\n1. The expansion of the provision trade.\n2. Planned towns and model villages.\n3. Thomas Wyse.\n4. Na Cúirteanna Filíochta.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,23] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7361,7 +9220,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "Answer one of the following:\n1. What role did the Ponsonbys play in eighteenth-century Ireland?\n2. In what ways did Swift’s pamphleteering influence politics and society in Ireland?\n3. What evidence was given at the trial of Father Nicholas Sheehy in Clonmel in 1766?\n4. How did Turlough O’Carolan contribute to the cultural life of Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,23] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,23] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7494,7 +9353,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Write a short paragraph on one of the following:\n1. The wartime boom, 1793-1815.\n2. Eibhlín Dhubh Ní Chonaill.\n3. The Orange Order.\n4. Nano Nagle.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,23] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7506,7 +9365,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Answer one of the following:\n1. What were the aims and achievements of Henry Grattan?\n2. What did Wolfe Tone hope to achieve and why did he fail?\n3. How did Maynooth College contribute to culture and religion in Ireland?\n4. What main events took place during the Wexford Rebellion, 1798?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,23] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,23] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7638,7 +9497,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "Write a short paragraph on one of the following:\n1. The divorce of Henry VIII and Catherine of Aragon.\n2. Michelangelo Buonarroti.\n3. Desiderius Erasmus.\n4. The Counter-Reformation.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,24] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,24] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7650,7 +9509,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "Answer one of the following:\n1. How successful was Emperor Charles V in the struggle against the Turks?\n2. How did Christopher Columbus plan and carry out his first voyage across the Atlantic?\n3. Why was Martin Luther important in establishing the Reformation in the German states?\n4. In what ways did Geneva become an important city for religious change?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,24] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,24] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7783,7 +9642,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Write a short paragraph on one of the following:\n1. The Thirty Years War.\n2. Hugo Grotius.\n3. Queen Christina of Sweden.\n4. The Hapsburg Empire.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,24] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,24] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7795,7 +9654,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Answer one of the following:\n1. Why did the Catalans rise in revolt and what was the outcome of their revolt?\n2. What part did Marie de’ Medici play in the affairs of France?\n3. How did the Dutch gain an empire in Asia and what was its impact on the home country?\n4. What did Claudio Monteverdi and/or Peter Paul Rubens contribute to European culture?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,24] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,24] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7929,7 +9788,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Write a short paragraph on one of the following:\n1. Developments in agriculture.\n2. Sir Henry Morgan.\n3. The fall of James II in England.\n4. Madame de Maintenon.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,24] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,24] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -7941,7 +9800,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Answer one of the following:\n1. How did Louis XIV extend the frontiers of France?\n2. What were the aims of the (English) East India Company and what steps were taken to achieve them?\n3. How did Jan de Witt influence events in Holland?\n4. What was achieved by Isaac Newton and/or Gottfried Wilhelm Leibnitz?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,24] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,24] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8074,7 +9933,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "Write a short paragraph on one of the following:\n1. Mercantilism and laissez-faire.\n2. Catherine the Great.\n3. Jean Jacques Rousseau.\n4. The influence of the salon.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,25] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8086,7 +9945,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "Answer one of the following:\n1. What ideas did the Encyclopédie put forward?\n2. What developments led directly to the Boston Tea Party, 1773?\n3. What did Frederick the Great, King of Prussia, achieve at home and abroad?\n4. In what ways did the Duke of Bridgewater contribute to economy and society?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,25] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8218,7 +10077,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "Write a short paragraph on one of the following:\n1. Tom Paine.\n2. Abolition of the slave trade.\n3. The emancipation of the Jews.\n4. Ludwig van Beethoven.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,25] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8230,7 +10089,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "Answer one of the following:\n1. What was the importance, in France, of the Committee of Public Safety and/or the Civil Constitution of the Clergy?\n2. How did Manchester grow and what problems arose from its development?\n3. What resistance did Napoleon encounter in the German states?\n4. What was the influence of Mary Wollstonecraft and/or Madame de Staёl?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,25] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8476,7 +10335,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Coleraine University controversy",
     questionText: "Why was Coleraine, rather than Derry, chosen as the site of Northern Ireland’s second university?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[10], schemePages: [11] },
+    rubric: { ...ESSAY_MARKING[11], schemePages: [11] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8608,7 +10467,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Write a short paragraph on one of the following:\n1. The Tithe War.\n2. Thomas Davis.\n3. Industrial development in Belfast.\n4. Cardinal Paul Cullen.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8620,7 +10479,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Answer one of the following:\n1. How did Daniel O’Connell conduct the Repeal campaign and why did it fail?\n2. How did Asenath Nicholson and/or Charles Trevelyan respond to the Famine in Ireland?\n3. What was the role of Charles Kickham and/or James Stephens in Fenianism?\n4. What did William Carleton and/or William Dargan contribute to Irish life?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8753,7 +10612,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Write a short paragraph on one of the following:\n1. Isabella Tod.\n2. The co-operative movement.\n3. The 1913 strike and lockout.\n4. Hanna Sheehy-Skeffington.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8765,7 +10624,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Answer one of the following:\n1. What was the importance of the elections of 1885 and 1886 for Ireland?\n2. What was the contribution of Michael Davitt to Irish affairs?\n3. What did W.B. Yeats contribute to cultural revival in Ireland?\n4. Why and how did Unionists campaign against Home Rule for Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8898,7 +10757,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Write a short paragraph on one of the following:\n1. The Home Rule party, 1912-1918.\n2. Michael Collins.\n3. Belfast during World War II.\n4. Evie Hone.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -8910,7 +10769,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Answer one of the following:\n1. What was the contribution of Patrick Pearse to Irish affairs?\n2. What did W.T. Cosgrave achieve as head of government, 1923-1932?\n3. What main events took place during the Eucharistic Congress, 1932?\n4. How did de Valera pursue a policy of neutrality during World War II?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9044,7 +10903,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Write a short paragraph on one of the following:\n1. Domhnall Mac Amhlaigh.\n2. Anti-Irish sentiment in Britain in the 19th century.\n3. Archbishop Daniel Mannix.\n4. The Orange Order in Canada and Australia.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9056,7 +10915,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Answer one of the following:\n1. Why is Grosse Isle important in the history of Irish emigration?\n2. How successful was the Holy Ghost Mission to Nigeria, 1945-1966?\n3. What were the achievements of Bishop Edward Galvin and/or Mother Mary Martin?\n4. In what ways did Maureen O’Hara and/or Paul O’Dwyer illustrate Irish-American experience?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9188,7 +11047,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Write a short paragraph on one of the following:\n1. Changing attitudes towards the Irish language, 1949-1989.\n2. Irish membership of the United Nations.\n3. The impact of the EEC on fisheries.\n4. Jack Lynch.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9200,7 +11059,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Answer one of the following:\n1. How did Seán Lemass and/or T.K. Whitaker attempt to make life better for Irish people?\n2. What impact did RTÉ have on Irish society?\n3. What was the contribution of Archbishop John Charles McQuaid to Irish affairs?\n4. What did Charles Haughey achieve during his two terms as Taoiseach?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9334,7 +11193,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Write a short paragraph on one of the following:\n1. Clemens Metternich.\n2. Robert Peel.\n3. Serfdom in Russia.\n4. Ludwig van Beethoven.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9346,7 +11205,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Answer one of the following:\n1. Why did the 1848 revolution in Germany end in failure?\n2. During the period 1815-1871, what moves did Italy make towards unity?\n3. What were the achievements of Charles Darwin and/or Victor Hugo?\n4. What changes did Haussmann bring about in the city of Paris?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9478,7 +11337,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Write a short paragraph on one of the following:\n1. Anti-Semitism in France.\n2. Pope Leo XIII.\n3. Wilfred Owen.\n4. Woodrow Wilson and Europe.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9490,7 +11349,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Answer one of the following:\n1. What did Wilhelm II contribute to international affairs?\n2. What developments took place in the invention and early history of the motor car?\n3. What did women contribute to the war effort during World War I?\n4. What was the importance of Marie Curie and/or Rosa Luxemburg?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9622,7 +11481,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "Write a short paragraph on one of the following:\n1. Vladimir Ilyich Lenin.\n2. Stalin’s show trials.\n3. The Holocaust.\n4. Bing Crosby.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9634,7 +11493,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "Answer one of the following:\n1. How did Hitler conduct foreign policy between 1933 and 1939?\n2. Why did the Jarrow March take place, and did it achieve its aims?\n3. How well did Winston Churchill and/or Josef Stalin lead his country during World War II?\n4. What was the contribution to cinema of Charlie Chaplin and/or Leni Riefenstahl?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9766,7 +11625,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Write a short paragraph on one of the following:\n1. The Berlin airlift, 1948-1949.\n2 The 1973 oil crisis.\n3. Simone de Beauvoir.\n4. Margaret Thatcher.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9778,7 +11637,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Answer one of the following:\n1. Why did an uprising take place in Hungary in 1956 and why did it end in failure?\n2. What was the impact on Europe of moves towards unity, 1945-1957?\n3. What changes were introduced by Mikhail Gorbachev in the Soviet Union?\n4. What did John Lennon contribute to popular culture and the mass media?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9911,7 +11770,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Write a short paragraph on one of the following:\n1. The Suez crisis, 1956.\n2. The Lomé conventions.\n3. Ho Chi Minh.\n4. Nadine Gordimer.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -9923,7 +11782,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Answer one of the following:\n1. Why did Britain withdraw from India and what problems were associated with the withdrawal?\n2. Why did Katanga break away from the Congo and what was the outcome of that action?\n3. How did Charles de Gaulle respond to Algerian demands for independence?\n4. What part did Achmad Sukarno play in Indonesian history?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10055,7 +11914,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Write a short paragraph on one of the following:\n1. Harry Truman.\n2. The Cuban missile crisis.\n3. Muhammad Ali.\n4. Urban poverty, drugs and crime.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10067,7 +11926,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Answer one of the following:\n1. How did Marilyn Monroe represent Hollywood and the American Dream?\n2. How was the Montgomery bus boycott, 1955-1956, carried out and how successful was it?\n3. What was the importance of the 1969 moon landing?\n4. In what ways did Betty Friedan and/or Norman Mailer criticise aspects of American life? There is no examination material on this page.",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10308,7 +12167,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: Meiler Magrath’s clerical career",
     questionText: "What does the clerical career of Meiler Magrath tell us of life in Ireland at this time?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[10], schemePages: [23] },
+    rubric: { ...ESSAY_MARKING[11], schemePages: [23] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10440,7 +12299,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Write a short paragraph on one of the following:\n1. Towns and guilds.\n2. The policy of Surrender and Regrant.\n3. Manus O’Donnell.\n4. The religious policies of Queen Mary I.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10452,7 +12311,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Answer one of the following:\n1. Why was Gearóid Mór, 8th earl of Kildare, so powerful in Ireland?\n2. What rights had women under Gaelic law?\n3. What changes did Henry VIII introduce in the church in Ireland?\n4. Why was the Laois/Offaly area subjected to plantation?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10584,7 +12443,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "Write a short paragraph on one of the following:\n1. Elizabeth Butler, countess of Ormond.\n2. The Cromwellian transplantations.\n3. The Annals of the Four Masters.\n4. Richard Boyle and his family.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10596,7 +12455,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "Answer one of the following:\n1. How did Sir Thomas Wentworth (earl of Strafford) make enemies in Ireland and how did his enemies contribute to his downfall?\n2. How successful in Ireland were the military campaigns of Owen Roe O’Neill?\n3. What influence had Archbishop Rinuccini on Irish affairs?\n4. What was the importance of Louvain for Irish Catholics?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10729,7 +12588,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Write a short paragraph on one of the following:\n1. Samuel Louis Crommelin.\n2. Archbishop Oliver Plunkett.\n3. Robert Boyle.\n4. Tories and Rapparees.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10741,7 +12600,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Answer one of the following:\n1. What notable developments took place in Restoration Dublin?\n2. What part did Richard Talbot, earl of Tyrconnell, play in Irish affairs?\n3. What were the successes and failures in the military career of Patrick Sarsfield?\n4. How did William Molyneux contribute to Irish political life?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10874,7 +12733,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "Write a short paragraph on one of the following:\n1. Political effects of the Seven Years’ War, 1756-1763, in Ireland.\n2. Dean Jonathan Swift.\n3. Na Cúirteanna Filíochta.\n4. Margaret (Peg) Woffington.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,26] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -10886,7 +12745,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "Answer one of the following:\n1. What evidence was given at the trial of Father Sheehy and what was the outcome of the trial?\n2. Who were the Ponsonbys and why were they powerful?\n3. What conditions gave rise to the Whiteboys and what methods did they use?\n4. How did Charles O’Conor and/or Thomas Wyse help to improve the position of Catholics?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,26] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,26] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -11018,7 +12877,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Write a short paragraph on one of the following:\n1. Economic growth in Ireland.\n2. The Orange Order.\n3. The rise of Belfast.\n4. Eibhlín Dhubh Ní Chonaill.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,26] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11030,7 +12889,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Answer one of the following:\n1. What did Henry Grattan hope to achieve and why did he fail?\n2. Why was Maynooth College established and what was its importance?\n3. What did Nano Nagle contribute to Irish life?\n4. What were the causes of the Wexford Rebellion, 1798, and how was it put down?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,26] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,26] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -11164,7 +13023,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "Write a short paragraph on one of the following:\n1. Hernan Cortes.\n2. Martin Luther.\n3. Astronomy.\n4. The Counter-Reformation.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,27] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11176,7 +13035,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "Answer one of the following:\n1. How did Seville become the port of the New World?\n2. What was the influence of Niccolò Machiavelli and/or Desiderius Erasmus?\n3. In what ways did Jean Calvin make Geneva a centre of the Reformation?\n4. What did Michelangelo Buonarroti and/or Pieter Breughel the Elder contribute to culture?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,27] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -11308,7 +13167,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567-1609",
     questionText: "Write a short paragraph on one of the following:\n1. The Council of Trent.\n2. Tycho Brahe.\n3. The rise of Muscovy.\n4. The Holy Roman Empire under Rudolf II.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,27] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11320,7 +13179,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567-1609",
     questionText: "Answer one of the following:\n1. How successful a ruler was Catherine de Medici?\n2. What part was played by Matteo Ricci in the Jesuit mission in China?\n3. What was the purpose of the Spanish Armada and why did it fail in its objective?\n4. What were the achievements of Jacobus Arminius and/or Michel de Montaigne?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,27] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -11453,7 +13312,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Write a short paragraph on one of the following:\n1. The revolt of the Catalans.\n2. Women, work and family.\n3. Queen Christina of Sweden.\n4. Peter Paul Rubens.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,27] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11465,7 +13324,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Answer one of the following:\n1. What did Cardinal Richelieu aim to achieve for France and did he succeed?\n2. What did you find interesting about the career of Galileo?\n3. What were the achievements of Gian Lorenzo Bernini and/or René Descartes?\n4. How important was Albrecht von Wallenstein in the Thirty Years War?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,27] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -11597,7 +13456,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Write a short paragraph on one of the following:\n1. Isaac Newton.\n2. Sir Henry Morgan.\n3. Jan de Witt.\n4. The Huguenots.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,28] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11609,7 +13468,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Answer one of the following:\n1. What were the aims of the (English) East India Company and how did its activities benefit England?\n2. Why did Peter the Great of Russia visit other countries and why did he develop the Streltsy?\n3. What did you find interesting about the Grand Tour and/or the court of Versailles?\n4. What was the influence of Sébastien le Prestre de Vauban and/or Gottfried Wilhelm Leibnitz?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,28] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,28] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -11741,7 +13600,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "Write a short paragraph on one of the following:\n1. Poverty, disease and population growth.\n2. Robert Clive.\n3. Maria Theresa of Austria.\n4. The duke of Bridgewater.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,28] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11753,7 +13612,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "Answer one of the following:\n1. What was the importance of the Encyclopédie?\n2. How important a leader was Catherine the Great?\n3. What political ambitions did Frederick the Great pursue in Europe?\n4. What did the West Indies slave plantations contribute to international trade?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,28] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,28] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -11885,7 +13744,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "Write a short paragraph on one of the following:\n1. William Pitt.\n2. Madame de Staёl.\n3. The emancipation of the Jews.\n4. Ludwig van Beethoven.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,28] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -11897,7 +13756,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "Answer one of the following:\n1. What conditions led to the growth of Manchester?\n2. How important was Maximilien de Robespierre in the French Revolution?\n3. What was the influence of Mary Wollstonecraft and/or Joseph Fouché?\n4. What were the successes and failures of Napoleon as a military leader? There is no examination material on this page.",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,28] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,28] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12141,7 +14000,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Sunningdale Agreement and the power-sharing executive, 1973-1974",
     questionText: "What arguments were made for and/or against the Sunningdale Agreement?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[10], schemePages: [10] },
+    rubric: { ...ESSAY_MARKING[11], schemePages: [10] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12273,7 +14132,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Write a short paragraph on one of the following:\n1. The impact of the railways.\n2. Mother Mary Aikenhead.\n3. Young Ireland.\n4. James Stephens.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12285,7 +14144,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Answer one of the following:\n1. How did Daniel O’Connell conduct the campaign for Catholic Emancipation and what was its outcome?\n2. What decisions were made at the Synod of Thurles, 1850?\n3. What industrial development took place in Belfast, 1815-1870, and how did it affect the people of the area?\n4. What did William Carleton and/or Charles Kickham contribute to Irish affairs?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12418,7 +14277,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Write a short paragraph on one of the following:\n1. The Co-operative Movement.\n2. W.B. Yeats.\n3. Douglas Hyde.\n4. The first Sinn Féin party.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12430,7 +14289,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Answer one of the following:\n1. What successes and failures had Charles Stewart Parnell as leader of the Home Rule Party?\n2. Why was the GAA established and what problems did it face in its early years?\n3. How did James Connolly and/or James Larkin seek to improve conditions for workers?\n4. What did Isabella Tod and/or Hanna Sheehy-Skeffington contribute to Irish affairs?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12562,7 +14421,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Write a short paragraph on one of the following:\n1. Patrick Pearse.\n2. The Treaty and the Civil War.\n3. James Craig.\n4. Developments in education, 1922-1949.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12574,7 +14433,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Answer one of the following:\n1. How effective was W.T. Cosgrave as leader of the new Irish government, 1923-1932?\n2. What did Éamon de Valera achieve as head of government, 1932-1948?\n3. What problems faced the people of Belfast during World War II?\n4. What cultural achievements do you attribute to the artist Evie Hone?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12707,7 +14566,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Write a short paragraph on one of the following:\n1. Anti-Irish sentiment in Britain and the US in the nineteenth century.\n2. The Molly Maguires.\n3. The role of the GAA among Irish emigrants.\n4. John Devoy.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12719,7 +14578,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Answer one of the following:\n1. Why was Grosse Isle established and did it achieve its purpose?\n2. What were the achievements of Archbishop Daniel Mannix and/or Bishop Edward Galvin?\n3. What did you learn about the life and writings of Domhnall Mac Amhlaigh?\n4. In what ways did the Holy Ghost mission to Nigeria (1945-1966) succeed in its aims?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12851,7 +14710,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Write a short paragraph on one of the following:\n1. Changing attitudes to the Irish language, 1949-1989.\n2. Irish membership of the United Nations.\n3. Breandán Ó hEithir.\n4. Sylvia Meehan.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -12863,7 +14722,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Answer one of the following:\n1. What did T.K. Whitaker propose for economic development in Ireland?\n2. How did membership of the EEC affect Irish fisheries?\n3. How effective was the leadership of Jack Lynch and/or Garret FitzGerald?\n4. What did Charles Haughey achieve during his two terms as Taoiseach?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -12996,7 +14855,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Write a short paragraph on one of the following:\n1. Clemens Metternich.\n2. Victor Hugo.\n3. Balkan nationalism.\n4. Developments in music and/or art.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13008,7 +14867,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Answer one of the following:\n1. What were Robert Owen’s aims for New Lanark and what steps did he take to achieve them?\n2. For what reasons did the 1848 Revolution in Germany end in failure?\n3. What did Feargus O’Connor and/or Robert Peel contribute to society in England?\n4. What solutions to the problems of society did Karl Marx and/or Mikhail Bakunin put forward?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -13140,7 +14999,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Write a short paragraph on one of the following:\n1. The Second International.\n2. Anti-Semitism in Russia.\n3. Marie Curie.\n4. Rosa Luxemburg.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13152,7 +15011,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Answer one of the following:\n1. How effective was Bismarck’s foreign policy, 1871-1890?\n2. What did you learn about the invention and early history of the motor car?\n3. What was the importance of the naval policy of Wilhelm II of Germany?\n4. In what ways did Woodrow Wilson influence European affairs?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -13285,7 +15144,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "Write a short paragraph on one of the following:\n1. Leni Riefenstahl.\n2. Winston Churchill.\n3. Anti-Semitism and the Holocaust.\n4. Wartime alliances, 1939-1945.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13297,7 +15156,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920-1945",
     questionText: "Answer one of the following:\n1. How did Benito Mussolini manage church-state relations in Italy?\n2. What did you learn about Soviet Russia from Stalin’s show trials in the 1930s?\n3. How was the Jarrow March, October 1936, a result of economic and social problems in Britain and did it achieve its aims?\n4. How did Charlie Chaplin and/or Bing Crosby represent Anglo-American popular culture, 1920-1945?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -13429,7 +15288,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Write a short paragraph on one of the following:\n1. Marshall Aid.\n2 The Welfare State.\n3. The establishment of the EEC.\n4. John Lennon.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13441,7 +15300,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Answer one of the following:\n1. Why did the Hungarian Uprising, 1956, take place, and what were its consequences?\n2. What changes did the Second Vatican Council bring in the Catholic Church?\n3. What were the successes and failures of Mikhail Gorbachev as leader of Soviet Russia?\n4. What was the impact of advances in the biological sciences and/or nuclear power?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -13574,7 +15433,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Write a short paragraph on one of the following:\n1. Immigration patterns and policies in Britain, 1945-1990.\n2. The Suez Crisis, 1956.\n3. The “winds of change” in Africa.\n4. Achmad Sukarno.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13586,7 +15445,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Answer one of the following:\n1. What difficulties were associated with British withdrawal from India, 1945-1947?\n2. How did Charles de Gaulle respond to the demand for Algerian independence?\n3. Why did problems arise in race relations in France in the 1980s and how did French governments respond?\n4. What did you learn about the life and writings of Nadine Gordimer and/or English as a world language?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -13718,7 +15577,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Write a short paragraph on one of the following:\n1. The US economic boom, 1945-1968.\n2. Urban poverty, drugs and crime.\n3. Betty Friedan.\n4. Norman Mailer.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -13730,7 +15589,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Answer one of the following:\n1. What advances were made in military and/or space technology, 1945-1989?\n2. Why did the Montgomery bus boycott (1955-1956) take place and did it achieve its aims?\n3. What difficulties did President Lyndon Johnson experience as a result of US involvement in the war in Vietnam?\n4. What did Billy Graham contribute to religion in the United States?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -14096,7 +15955,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: Elizabethan Dublin",
     questionText: "In what ways did Dublin change during the reign of Elizabeth I, 1558-1603?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[10], schemePages: [22] },
+    rubric: { ...ESSAY_MARKING[11], schemePages: [22] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -14229,7 +16088,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Write a short paragraph on one of the following:\n1. How Gearóid Mór, 8th Earl of Kildare, became so powerful.\n2. Eleanor Fitzgerald.\n3. The dissolution of the monasteries.\n4. The policy of surrender and regrant.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [22,23,24] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,24] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14241,7 +16100,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Answer one of the following:\n1. Why did the power of the House of Kildare decline under Gearóid Óg, 9th Earl of Kildare?\n2. What marriage rights did women have under Gaelic law?\n3. What was the role of Con Bacach O’Neill in Irish affairs?\n4. What was the purpose of the Laois-Offaly Plantation, and did it achieve its aims?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,24] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [22,23,24] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -14374,7 +16233,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "Write a short paragraph on one of the following:\n1. Trade: imports and exports.\n2. Elizabeth Butler, Countess of Ormond.\n3. Cromwellian transplantations.\n4. The Four Masters.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [22,23,24] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,24] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14386,7 +16245,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "Answer one of the following:\n1. In what ways did the Scots migration to Ulster affect the area?\n2. What did Richard Boyle and his family contribute to Irish affairs?\n3. What was the importance of the Irish college in Louvain?\n4. What did Sir Thomas Wentworth (Earl of Strafford) contribute to Irish affairs?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,24] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [22,23,24] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -14518,7 +16377,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Write a short paragraph on one of the following:\n1. William Molyneux.\n2. The Cattle and Navigation Acts.\n3. Beginnings of the linen industry.\n4. Introduction of the Penal Laws.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [22,23,24] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,24] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14530,7 +16389,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Answer one of the following:\n1. What decisions were made at the Irish Parliament of 1689?\n2. What were the aims of the Jacobite poets and why did the Gaelic bardic system come to an end?\n3. What successes and failures did Patrick Sarsfield have in Ireland?\n4. What did Robert Boyle contribute to the emergence of science in Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,24] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [22,23,24] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -14662,7 +16521,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th-century Ireland, 1715-1770",
     questionText: "Write a short paragraph on one of the following:\n1. Dean Jonathan Swift.\n2. Margaret (Peg) Woffington.\n3. Absentee landlords.\n4. Women and rural society.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [22,23,25] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14674,7 +16533,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th-century Ireland, 1715-1770",
     questionText: "Answer one of the following:\n1. Why were the Ponsonbys important in Irish affairs?\n2. How did Arthur Guinness contribute to Irish economy and society?\n3. How did Charles O’Conor and/or Thomas Wyse seek improvements for Catholics?\n4. Why was Fr. Nicholas Sheehy put on trial and what was the outcome?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,25] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [22,23,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -14806,7 +16665,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Write a short paragraph on one of the following:\n1. Reasons for Ireland’s population growth, 1770-1815.\n2. Georgian architecture.\n3. Wolfe Tone.\n4. Nano Nagle.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [22,23,25] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14818,7 +16677,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Answer one of the following:\n1. In what ways did Henry Grattan influence events in Ireland?\n2. How did Mary Anne McCracken and Eibhlín Dhubh Ní Chonaill contribute to Irish life?\n3. What factors led to the rise of Belfast?\n4. What main events took place during the Wexford Rebellion?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,25] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [22,23,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -14952,7 +16811,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "Write a short paragraph on one of the following:\n1. Niccolò Machiavelli.\n2. Pieter Breughel the Elder.\n3. The Counter-Reformation.\n4. Family size and patterns of marriage.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [22,23,26] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -14964,7 +16823,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492-1567",
     questionText: "Answer one of the following:\n1. Why did Henry VIII wish to divorce his wife, Catherine of Aragon, and what steps did he take to do so?\n2. How successful was Charles V as Holy Roman Emperor?\n3. What were the main characteristics of life in Calvin’s Geneva?\n4. What cultural achievements do you associate with Michelangelo Buonarroti?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,26] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [22,23,26] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -15097,7 +16956,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567-1609",
     questionText: "Write a short paragraph on one of the following:\n1. The close of the Council of Trent.\n2. Jacobus Arminius.\n3. The rise of Muscovy.\n4. Sir Walter Raleigh.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [22,23,26] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15109,7 +16968,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567-1609",
     questionText: "Answer one of the following:\n1. For what reasons did Antwerp decline as a great trading port?\n2. What role did William the Silent play in the Revolt of the Netherlands?\n3. How successful was Catherine de Medici as ruler of France?\n4. What were the aims of the Jesuit mission to China and to what extent did the mission achieve its aims?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,26] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [22,23,26] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -15241,7 +17100,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Write a short paragraph on one of the following:\n1. Witch-hunting.\n2. The commercial revolution.\n3. Claudio Monteverdi.\n4. René Descartes.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [22,23,26] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15253,7 +17112,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Answer one of the following:\n1. Why did the Catalans revolt and how successful were they?\n2. How did Cardinal Richelieu promote royal power in France?\n3. Why was Albrecht von Wallenstein important in the Thirty Years War?\n4. What were the achievements of Peter Paul Rubens and/or Gian Lorenzo Bernini?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,26] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [22,23,26] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -15386,7 +17245,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Write a short paragraph on one of the following:\n1. Poland under John Sobieski.\n2. Jan de Witt.\n3. The War of the Spanish Succession.\n4. The Grand Tour.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [22,23,27] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15398,7 +17257,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Answer one of the following:\n1. What was distinctive about the Streltsy and/or other aspects of Peter the Great’s rule in Russia?\n2. What were the main characteristics of life at the court of Versailles?\n3. What did you learn about the activities of Sir Henry Morgan?\n4. What did Isaac Newton and/or Gottfried Wilhelm Leibnitz achieve in the area of science?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,27] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [22,23,27] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -15530,7 +17389,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "Write a short paragraph on one of the following:\n1. Poverty, disease and population growth.\n2. Mercantilism and laissez-faire.\n3. Voltaire.\n4. The Duke of Bridgewater.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [22,23,27] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15542,7 +17401,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "Answer one of the following:\n1. What did Catherine the Great achieve for her country?\n2. How would you describe life in the West Indies slave plantations?\n3. What did you learn about the life and achievements of Maria Theresa of Austria?\n4. What was the Boston Tea Party, 1773, and how did it contribute to the outbreak of the American Revolution?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,27] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [22,23,27] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -15674,7 +17533,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "Write a short paragraph on one of the following:\n1. The emancipation of the Jews.\n2. William Pitt.\n3. The abolition of the slave trade.\n4. James Madison.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [22,23,27] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -15686,7 +17545,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "Answer one of the following:\n1. How did King Louis XVI respond to developments in France, 1789-1793?\n2. What were the activities of the Committee of Public Safety?\n3. What impact did Napoleon have on France and/or Europe?\n4. What cultural achievements do you associate with Ludwig van Beethoven?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [22,23,27] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [22,23,27] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -16053,7 +17912,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: Stalin’s show trials",
     questionText: "In what ways did the show trials affect Stalin’s Russia?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[11], schemePages: [11] },
+    rubric: { ...ESSAY_MARKING[12], schemePages: [11] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -16185,7 +18044,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Write a short paragraph on one of the following:\n1. The Tithe War.\n2. William Dargan.\n3. Mother Mary Aikenhead.\n4. Industrial development in Belfast.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16197,7 +18056,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Answer one of the following:\n1. How did Daniel O’Connell campaign for Catholic Emancipation in 1829?\n2. In what ways did Charles Trevelyan and/or Asenath Nicholson respond to the Famine?\n3. How did the writings of William Carleton contribute to our understanding of Irish life?\n4. From your studies, what did you learn about James Stephens and Fenianism?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -16329,7 +18188,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Write a short paragraph on one of the following:\n1. The Home Rule movement under Isaac Butt.\n2. Educational reforms: schools and universities.\n3. Edward Carson.\n4. Hanna Sheehy-Skeffington.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16341,7 +18200,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Answer one of the following:\n1. How did Charles Stewart Parnell and/or Michael Davitt contribute to the movement for land reform?\n2. What developments took place within the GAA between 1884 and 1891?\n3. What events took place in Dublin during the 1913 strike and lockout?\n4. In what ways did Douglas Hyde and/or W.B. Yeats contribute to cultural revival in Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -16473,7 +18332,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Write a short paragraph on one of the following:\n1. The impact of World War I on Ireland.\n2. Countess Markievicz.\n3. W.T. Cosgrave.\n4. Developments in education, 1922-1949.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16485,7 +18344,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Answer one of the following:\n1. How important was the role of Michael Collins in Irish affairs?\n2. What preparations were made by Church and by State to ensure the success of the Eucharistic Congress, 1932?\n3. How successfully did Éamon de Valera manage Irish affairs between 1932 and 1939?\n4. What did the people of Belfast experience during World War II?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,13] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [11,12,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -16618,7 +18477,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Write a short paragraph on one of the following:\n1. John Devoy.\n2. The Molly Maguires.\n3. The Orange Order in Canada and Australia.\n4. Bishop Edward Galvin.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16630,7 +18489,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Answer one of the following:\n1. How successful was Éamon de Valera’s mission to America, June 1919 – December 1920?\n2. What were the achievements of Archbishop Daniel Mannix and/or Mother Mary Martin?\n3. What was the experience of Domhnall Mac Amhlaigh as an Irish immigrant in Britain?\n4. In what ways did Maureen O’Hara and/or Paul O’Dwyer illustrate the Irish-American experience?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -16762,7 +18621,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "Write a short paragraph on one of the following:\n1. Bernadette Devlin.\n2. James Molyneaux.\n3. Cultural response to the “Troubles”.\n4. The Downing Street Declaration, 1993.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16774,7 +18633,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "Answer one of the following:\n1. What reforms were introduced in health and housing, 1949-1969?\n2. What did the Apprentice Boys of Derry celebrate and why did their celebrations cause controversy?\n3. What was the Sunningdale Agreement, 1973, and was it successful?\n4. How did one of the following influence events in Northern Ireland: John Hume; Gerry Adams; Ian Paisley?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -16907,7 +18766,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Write a short paragraph on one of the following:\n1. Changing attitudes to the Irish language, 1949-1989.\n2. Irish involvement in the UN.\n3. Charles Haughey.\n4. Breandán Ó hEithir.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -16919,7 +18778,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Answer one of the following:\n1. What was the impact of RTÉ on Irish life, 1962-1972?\n2. Did membership of the EEC help or hinder the development of Irish fisheries? Argue your case.\n3. From your studies, how significant was the contribution of Sylvia Meehan and/or Mary Robinson to Irish life?\n4. What did Garrett FitzGerald achieve during his two terms in office as Taoiseach?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,14] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [11,12,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -17051,7 +18910,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Write a short paragraph on one of the following:\n1. The system of Metternich, 1815-1848.\n2. Developments in science.\n3. Giuseppe Mazzini.\n4. Serfdom in Russia.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -17063,7 +18922,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Answer one of the following:\n1. What did Robert Owen hope to achieve at New Lanark and did he succeed?\n2. For what reasons did the 1848 Revolution in Germany end in failure?\n3. In what ways did Baron Haussmann improve the city of Paris?\n4. From your studies, what did you learn about Karl Marx and/or Mikhail Bakunin?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -17196,7 +19055,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Write a short paragraph on one of the following:\n1. Anti-Semitism in France.\n2. Pope Leo XIII.\n3. The Second International.\n4. Wilfred Owen.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -17208,7 +19067,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Answer one of the following:\n1. What were the successes and failures of Bismarck as Chancellor of Germany?\n2. How did the invention and early history of the motor car change life in Europe?\n3. What did women contribute to the war effort during World War I?\n4. What was significant about the life and work of Marie Curie and/or Rosa Luxemburg?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -17340,7 +19199,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Write a short paragraph on one of the following:\n1. Marshall Aid.\n2. Jean Monnet.\n3. The impact of the Oil Crisis, 1973.\n4. Pope John Paul II.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -17352,7 +19211,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Answer one of the following:\n1. How significant was the role of Imre Nagy and/or Nikita Khrushchev during the Hungarian Uprising, 1956?\n2. What impact did Jacques Delors and/or Margaret Thatcher have on European affairs?\n3. In what ways did Mikhail Gorbachev attempt to reform Soviet Russia?\n4. What did Simone de Beauvoir and/or John Lennon contribute to modern culture?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,15] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [11,12,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -17485,7 +19344,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Write a short paragraph on one of the following:\n1. The Suez Crisis, 1956.\n2. Charles de Gaulle and Algeria.\n3. The Lomé Conventions.\n4. Nadine Gordimer.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -17497,7 +19356,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Answer one of the following:\n1. How did David Ben-Gurion and/or Gamal Abdul Nasser deal with Arab-Israeli conflict?\n2. For what reasons did Katanga break away from the Congo and why did this lead to war?\n3. What problems did development workers encounter in Africa, 1945-1990?\n4. How did the government of Britain and/or France deal with problems in race relations?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -17629,7 +19488,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Write a short paragraph on one of the following:\n1. Joe McCarthy.\n2. The Cuban Missile Crisis.\n3. Billy Graham.\n4. SALT and Star Wars.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -17641,7 +19500,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Answer one of the following:\n1. What part was played by Martin Luther King in the Montgomery bus boycott, 1956?\n2. During the 1960s and 1970s, how did the anti-war movement develop in the United States?\n3. How was a successful moon landing achieved in 1969 and what was its importance?\n4. What did Betty Friedan and/or Marilyn Monroe contribute to American life?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [11,12,16] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [11,12,16] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -18003,7 +19862,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: Seville, the port of the New World",
     questionText: "In what ways did the discovery of the New World affect Seville?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[10], schemePages: [23] },
+    rubric: { ...ESSAY_MARKING[11], schemePages: [23] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -18136,7 +19995,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Write a short paragraph on one of the following:\n1. Gearóid Óg, 9th Earl of Kildare.\n2. Towns and guilds.\n3. The monasteries and their dissolution.\n4. The Bardic Schools.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -18148,7 +20007,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Answer one of the following:\n1. How did Gearóid Mór, 8th Earl of Kildare, become so powerful?\n2. What policies did Sir Anthony St. Leger implement and were they successful?\n3. What were the policies in Ireland of Queen Mary I?\n4. How important was Manus O’Donnell as a chieftain and as a scholar?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -18280,7 +20139,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "Write a short paragraph on one of the following:\n1. Richard Creagh.\n2. The policy of composition.\n3. Tadhg Dall Ó hUiginn.\n4. The Pale and the burden of the army.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -18292,7 +20151,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "Answer one of the following:\n1. What were the main features of Elizabethan Dublin?\n2. Why did James Fitzmaurice Fitzgerald lead a revolt in Munster and what was its outcome?\n3. What leadership did Hugh O’Neill provide in the Nine Years’ War?\n4. Why is the clerical career of Meiler Magrath considered controversial?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -18424,7 +20283,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "Write a short paragraph on one of the following:\n1. Sir Arthur Chichester.\n2. Elizabeth Butler, Countess of Ormond.\n3. The state of Ireland in 1641.\n4. Cromwellian transplantations.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -18436,7 +20295,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "Answer one of the following:\n1. How did Sir Thomas Wentworth (Earl of Strafford) make enemies in Ireland and how did they contribute to his downfall?\n2. What did Richard Boyle, and his family, contribute to Irish affairs?\n3. How did Archbishop Rinuccini influence events in Ireland?\n4. What did Owen Roe O’Neill achieve in Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,25] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -18568,7 +20427,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Write a short paragraph on one of the following:\n1. Robert Boyle.\n2. The Cattle and Navigation Acts.\n3. Dáibhí Ó Bruadair.\n4. Samuel Louis Crommelin.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,26] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -18580,7 +20439,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Answer one of the following:\n1. Why were the Penal Laws applied to Oliver Plunkett and with what effect?\n2. What important developments took place in Restoration Dublin?\n3. What were the successes and failures of the military career of Patrick Sarsfield?\n4. How did William Molyneux contribute to Irish life?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,26] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,26] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -18712,7 +20571,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "Write a short paragraph on one of the following:\n1. The Ponsonbys.\n2. Dean Jonathan Swift.\n3. The increase in smuggling.\n4. Na Cúirteanna Filíochta.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,26] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -18724,7 +20583,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "Answer one of the following:\n1. What evidence was given at the trial of Fr. Nicholas Sheehy and what was the outcome?\n2. What conditions gave rise to the Whiteboys and what methods did they use?\n3. How did Turlough O’Carolan contribute to Irish life?\n4. How did Arthur Guinness contribute to the development of industry in Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,26] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,26] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -18856,7 +20715,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Write a short paragraph on one of the following:\n1. Mary Anne McCracken.\n2. Georgian culture.\n3. Eibhlín Dhubh Ní Chonaill.\n4. The Act of Union.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,26] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,26] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -18868,7 +20727,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Answer one of the following:\n1. What conditions led to the rise of Belfast?\n2. What did Wolfe Tone hope to achieve and why did he fail?\n3. What did Nano Nagle contribute to Irish life?\n4. For what reasons was the establishment of Maynooth College important?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,26] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,26] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -19001,7 +20860,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567-1609",
     questionText: "Write a short paragraph on one of the following:\n1. The Council of Trent.\n2. Sir Walter Raleigh.\n3. Michel de Montaigne.\n4. The Holy Roman Empire under Rudolf II.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,27] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -19013,7 +20872,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567-1609",
     questionText: "Answer one of the following:\n1. What part was played by Matteo Ricci in the Jesuit mission in China?\n2. What was the purpose of the Spanish Armada and why did it fail?\n3. How important was the role of William the Silent in the Revolt of the Netherlands?\n4. What did you find interesting about the life and work of Tycho Brahe?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,27] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -19145,7 +21004,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Write a short paragraph on one of the following:\n1. Queen Christina of Sweden.\n2. Witch-hunting in Europe.\n3. The Papacy and the Jesuits.\n4. How the Thirty Years’ War began.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,27] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -19157,7 +21016,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Answer one of the following:\n1. What part did Marie de’ Medici play in the affairs of France?\n2. How did the Dutch establish an empire in Asia and what was its impact on the home country?\n3. What scientific discoveries were made by Galileo and why were they controversial?\n4. What were the achievements of Claudio Monteverdi and/or Peter Paul Rubens?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,27] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -19290,7 +21149,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Write a short paragraph on one of the following:\n1. The expansion of cities.\n2. The War of the Spanish Succession.\n3. Sir Henry Morgan.\n4. The court of Versailles.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,27] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -19302,7 +21161,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Answer one of the following:\n1. What were the aims of the English East India Company and how did its activities benefit England?\n2. Who were the Streltsy and how did Peter the Great respond to their rebellion?\n3. What challenges did Poland face under John Sobieski?\n4. What was the influence of Isaac Newton and/or Gottfried Wilhelm Leibnitz?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,27] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,27] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -19436,7 +21295,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "Write a short paragraph on one of the following:\n1. Maria Theresa.\n2. Robert Clive.\n3. Road and canal building.\n4. The Encyclopédie.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,28] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -19448,7 +21307,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "Answer one of the following:\n1. What were the main achievements of Frederick the Great, at home and abroad?\n2. What were the main features of life on a West Indies slave plantation?\n3. What ideas did Voltaire and/or Rousseau contribute to the Enlightenment?\n4. Why was the Boston Tea Party, 1773, an important event?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,28] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,28] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -19580,7 +21439,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "Write a short paragraph on one of the following:\n1. The Agricultural Revolution.\n2. The abolition of the slave trade.\n3. Napoleon’s invasion of Russia.\n4. Tom Paine.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [23,24,28] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,28] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -19592,7 +21451,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "Answer one of the following:\n1. How did Manchester become a great industrial city?\n2. How did the activities of the Committee of Public Safety affect France?\n3. What ideas were put forward by Madame de Staël and/or Mary Wollstonecraft?\n4. What cultural achievements do you attribute to Ludwig van Beethoven?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [23,24,28] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [23,24,28] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -19954,7 +21813,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Jarrow March, October 1936",
     questionText: "Was the Jarrow March a success or a failure? Give reasons for your answer.",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[11], schemePages: [10] },
+    rubric: { ...ESSAY_MARKING[12], schemePages: [10] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -20086,7 +21945,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Write a short paragraph on one of the following:\n1. Emigration from Ireland, 1815-1870.\n2. William Carleton.\n3. Young Ireland.\n4. James Stephens.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -20098,7 +21957,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815-1870",
     questionText: "Answer one of the following:\n1. How did Daniel O’Connell conduct the Repeal campaign and why did it fail?\n2. How did Charles Trevelyan and/or Asenath Nicholson respond to Famine in Ireland?\n3. What industrial development took place in Belfast, 1815-1870, and how did it affect the people of the area?\n4. What did Mother Mary Aikenhead and/or Cardinal Paul Cullen contribute to Irish affairs?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -20230,7 +22089,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Write a short paragraph on one of the following:\n1. The Co-operative Movement.\n2. W.B. Yeats.\n3. Douglas Hyde.\n4. The Irish Volunteers.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -20242,7 +22101,7 @@ export const CARDS: SecCard[] = [
     stem: "Movements for political and social reform, 1870-1914",
     questionText: "Answer one of the following:\n1. What part did Michael Davitt play in Irish affairs?\n2. Why was the GAA established and what problems did it face in its early years?\n3. How did Edward Carson campaign against Home Rule for Ireland?\n4. What did Isabella Tod and/or Hanna Sheehy-Skeffington contribute to Irish affairs?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -20374,7 +22233,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Write a short paragraph on one of the following:\n1. Countess Markievicz.\n2. Evie Hone.\n3. The economy of Northern Ireland, 1920-1939.\n4. Developments in education, 1922-1949.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -20386,7 +22245,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912-1949",
     questionText: "Answer one of the following:\n1. What was the role of Michael Collins in Irish affairs?\n2. What did W.T. Cosgrave achieve in his handling of the economy and/or Anglo-Irish relations, 1923-1932?\n3. What took place during the Eucharistic Congress, 1932, and what was its importance?\n4. What did Éamon de Valera achieve as head of government, 1932-1948?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -20518,7 +22377,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Write a short paragraph on one of the following:\n1. Ulster-Scottish emigration to North America.\n2. The Molly Maguires.\n3. Boss Croker.\n4. The impact of John F. Kennedy.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -20530,7 +22389,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840-1966",
     questionText: "Answer one of the following:\n1. How did Grosse Isle cope with the arrival of Irish immigrants at the time of the Great Famine?\n2. What part did the GAA and/or the Catholic Church play in sustaining a sense of Irishness among emigrants?\n3. What did you learn about the life and work of Domhnall Mac Amhlaigh?\n4. What were the achievements of Maureen O’Hara and/or Paul O’Dwyer?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -20662,7 +22521,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "Write a short paragraph on one of the following:\n1. Terence O’Neill.\n2. The activities of the Apprentice Boys of Derry.\n3. Seamus Heaney.\n4. The emergence of the Provisional IRA.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -20674,7 +22533,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949-1993",
     questionText: "Answer one of the following:\n1. What part was played by Conn and Patricia McCluskey in the affairs of Northern Ireland?\n2. What arguments were put forward for and against the choice of Coleraine as the site of Northern Ireland’s second university?\n3. What was agreed at Sunningdale, 1973, and why did the power-sharing executive fail, 1974?\n4. How did Ian Paisley influence events in Northern Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -20806,7 +22665,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Write a short paragraph on one of the following:\n1. Irish involvement in the UN.\n2. Changes in Irish education, 1949-1989.\n3. Jack Lynch.\n4. Changing attitudes towards the Irish language, 1949-1989.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -20818,7 +22677,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949-1989",
     questionText: "Answer one of the following:\n1. What did Seán Lemass achieve as Taoiseach?\n2. What was the impact of RTÉ on Irish life?\n3. How did Archbishop John Charles McQuaid influence Irish life?\n4. What was the contribution to Irish affairs of Sylvia Meehan and/or Mary Robinson?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -20950,7 +22809,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Write a short paragraph on one of the following:\n1. Serfdom in Russia.\n2. Otto von Bismarck’s contribution to German unity.\n3. Victor Hugo.\n4. Changes in agriculture in Europe, 1815-1871.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -20962,7 +22821,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815-1871",
     questionText: "Answer one of the following:\n1. What did Robert Owen hope to achieve at New Lanark and how successful was he?\n2. What did Giuseppe Mazzini contribute to Italian unity?\n3. What changes were made by Haussmann in Paris and how did they affect the people of the city?\n4. What was the importance of the work of Karl Marx and/or Charles Darwin?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21095,7 +22954,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Write a short paragraph on one of the following:\n1. Anti-Semitism in France.\n2. Economic crisis in Tsarist Russia.\n3. Why European countries wanted to expand their overseas empires.\n4. Woodrow Wilson and Europe.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -21107,7 +22966,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871-1920",
     questionText: "Answer one of the following:\n1. What problems arose from the naval policy of Wilhelm II?\n2. What did you learn about the invention and early history of the motor car, 1871-1920?\n3. What part was played in World War I by Wilfred Owen or Douglas Haig?\n4. What was the importance of Rosa Luxemburg and/or Marie Curie?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21239,7 +23098,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Write a short paragraph on one of the following:\n1. The Berlin Airlift, 1948-1949.\n2. Marshall Aid.\n3. Moves towards European unity, 1945-1957.\n4. John Lennon.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -21251,7 +23110,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945-1992",
     questionText: "Answer one of the following:\n1. What part was played by Imre Nagy and/or Nikita Khrushchev in the Hungarian Uprising, 1956?\n2. What was the 1973 Oil Crisis and in what ways did it affect the lives of people in Europe?\n3. What did Mikhail Gorbachev hope to achieve and how successful was he?\n4. What were the achievements of Margaret Thatcher and/or Simone de Beauvoir?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21383,7 +23242,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Write a short paragraph on one of the following:\n1. The Lomé Conventions.\n2. The Suez Crisis, 1956.\n3. Julius Nyerere and the policy of ujamaa.\n4. Charles de Gaulle’s response to the demand for Algerian independence.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -21395,7 +23254,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945-1990",
     questionText: "Answer one of the following:\n1. What problems arose from British withdrawal from India, 1945-1947?\n2. What problems faced the Indonesian leader, Achmad Sukarno, and how did he tackle them?\n3. What problems arose in race relations in France in the 1980s and how did French governments respond?\n4. What did you learn about the life and work of Nadine Gordimer?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21527,7 +23386,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Write a short paragraph on one of the following:\n1. The fortunes of US multinational corporations, 1945-1968.\n2. Betty Friedan.\n3. Norman Mailer.\n4. Star Wars (the Strategic Defence Initiative).",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -21539,7 +23398,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945-1989",
     questionText: "Answer one of the following:\n1. In what ways did Korea and/or Cuba present problems for the US?\n2. Why did the Montgomery bus boycott (1955-1956) take place and did it achieve its aims?\n3. Why did the US become involved in Vietnam and why did it, eventually, withdraw from Vietnam?\n4. What were the achievements of Muhammad Ali and/or Marilyn Monroe?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -21903,7 +23762,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The divorce of Henry VIII and Catherine of Aragon",
     questionText: "What steps did Henry VIII take to end his marriage to Catherine of Aragon?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[10], schemePages: [20] },
+    rubric: { ...ESSAY_MARKING[11], schemePages: [20] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22035,7 +23894,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Write a short paragraph on one of the following:\n1. Family and kin in Gaelic Ireland.\n2. Towns and guilds.\n3. The monasteries and their dissolution.\n4. Manus O’Donnell.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,22] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,22] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -22047,7 +23906,7 @@ export const CARDS: SecCard[] = [
     stem: "Reform and Reformation in Tudor Ireland, 1494-1558",
     questionText: "Answer one of the following:\n1. How did the House of Kildare decline under Gearóid Óg Fitzgerald?\n2. How were students trained in Bardic Schools and how did they earn their living afterwards?\n3. What did the policy of Surrender and Regrant seek to achieve and was it successful?\n4. How was the Plantation of Laois/Offaly organised and was it successful?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,22] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,22] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22179,7 +24038,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "Write a short paragraph on one of the following:\n1. The university question.\n2. Agnes Campbell.\n3. Tadhg Dall Ó hUiginn.\n4. Hugh O’Neill as military leader.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,22] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,22] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -22191,7 +24050,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558-1603",
     questionText: "Answer one of the following:\n1. What part did Shane O’Neill play in Irish affairs?\n2. What were the main features of Elizabethan Dublin?\n3. How was the Plantation of Munster organised and was it successful?\n4. What did you learn about the clerical career of Richard Creagh and/or Meiler Magrath?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,22] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,22] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22323,7 +24182,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "Write a short paragraph on one of the following:\n1. Trade: imports and exports.\n2. Piaras Feiritéar.\n3. Oliver Cromwell in Ireland.\n4. Elizabeth Butler, Countess of Ormond.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,22] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,22] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -22335,7 +24194,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603-1660",
     questionText: "Answer one of the following:\n1. How was the Plantation of Ulster organised and was it successful?\n2. What did Richard Boyle (Earl of Cork) and his family contribute to Irish affairs?\n3. What was the importance of the Irish College in Louvain?\n4. What did Sir Thomas Wentworth (Earl of Strafford) contribute to Irish affairs?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,22] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,22] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22467,7 +24326,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Write a short paragraph on one of the following:\n1. Samuel Louis Crommelin.\n2. Irish brigades abroad.\n3. The Duchess of Tyrconnell.\n4. Robert Boyle and the emergence of science in Ireland.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,23] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -22479,7 +24338,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660-1715",
     questionText: "Answer one of the following:\n1. What decisions were made at the Irish Parliament of 1689?\n2. What were the main features of Restoration Dublin?\n3. What was the contribution of Dáibhí Ó Bruadair to Irish affairs?\n4. How did penal legislation affect the life and work of Oliver Plunkett?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,23] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,23] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22611,7 +24470,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "Write a short paragraph on one of the following:\n1. The political effects of the Seven Years’ War in Ireland.\n2. Women and rural society.\n3. The trial of Fr. Nicholas Sheehy.\n4. Dean Jonathan Swift.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,23] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -22623,7 +24482,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid-18th century Ireland, 1715-1770",
     questionText: "Answer one of the following:\n1. Who were the Ponsonbys and why were they important?\n2. What was the contribution of Arthur Guinness to Irish life?\n3. How did Margaret (Peg) Woffington and/or Turlough O’Carolan contribute to Irish cultural life?\n4. How did Charles O’Conor and/or Thomas Wyse help towards improving the position of Catholics?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,23] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,23] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22755,7 +24614,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Write a short paragraph on one of the following:\n1. Population change, 1770-1815.\n2. The rise of Belfast.\n3. Wolfe Tone.\n4. Nano Nagle’s contribution to education in Ireland.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,23] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -22767,7 +24626,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770-1815",
     questionText: "Answer one of the following:\n1. What part did Henry Grattan play in Irish affairs?\n2. What did Eibhlín Dhubh Ní Chonaill contribute to Irish culture?\n3. Why was Maynooth College founded, 1795, and did it achieve its aims?\n4. For what reasons did a rebellion break out in Wexford, 1798, and how was it put down?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,23] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,23] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -22899,7 +24758,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567-1609",
     questionText: "Write a short paragraph on one of the following:\n1. The decisions reached at the Council of Trent.\n2. Jacobus Arminius.\n3. Sir Walter Raleigh.\n4. The rise of Muscovy.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,24] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,24] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -22911,7 +24770,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567-1609",
     questionText: "Answer one of the following:\n1. What were the reasons for the decline of the port of Antwerp?\n2. What was the part played by Catherine de Medici and/or Admiral Coligny in the French Wars of Religion?\n3. What methods were used by the Jesuits in their mission in China to achieve their aims and were they successful?\n4. What were the achievements of Michel de Montaigne and/or Tycho Brahe?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,24] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,24] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23043,7 +24902,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Write a short paragraph on one of the following:\n1. Why the Catalans revolted, 1640.\n2. Peter Paul Rubens.\n3. Witch-hunting.\n4. The rise of Sweden.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,24] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,24] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -23055,7 +24914,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609-1660",
     questionText: "Answer one of the following:\n1. What were the aims of Marie de’ Medici and did she achieve her aims?\n2. Why was Galileo put on trial by the Inquisition and what was the outcome?\n3. What part did Albrecht von Wallenstein play in the Thirty Years War?\n4. What were the achievements of Claudio Monteverdi and/or Hugo Grotius?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,24] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,24] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23187,7 +25046,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Write a short paragraph on one of the following:\n1. The Restoration of the monarchy in England.\n2. John Sobieski.\n3. Sir Henry Morgan.\n4. The court of Versailles.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,24] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,24] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -23199,7 +25058,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660-1715",
     questionText: "Answer one of the following:\n1. What were the main aims of the English East India Company and what steps were taken to achieve them?\n2. What were the achievements of Peter the Great, at home and abroad?\n3. What did Isaac Newton contribute to the advance of science?\n4. What did you learn about the Grand Tour?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,24] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,24] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23332,7 +25191,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "Write a short paragraph on one of the following:\n1. Changes in farming in the eighteenth century.\n2. The influence of the salon.\n3. Robert Clive.\n4. The Duke of Bridgewater.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,25] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -23344,7 +25203,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715-1775",
     questionText: "Answer one of the following:\n1. What were the main achievements, at home and abroad, of Maria Theresa of Austria?\n2. What were the main features of life on a West Indian slave plantation?\n3. What ideas did Voltaire and/or Rousseau put forward?\n4. For what reasons has Frederick II of Prussia become known as ‘Frederick the Great’?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,25] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23477,7 +25336,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "Write a short paragraph on one of the following:\n1. The abolition of the Atlantic slave trade.\n2. The emancipation of the Jews.\n3. Maximilien de Robespierre.\n4. Ludwig van Beethoven.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [20,21,25] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,25] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -23489,7 +25348,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775-1815",
     questionText: "Answer one of the following:\n1. What problems arose from the growth of Manchester?\n2. What did you learn about the Civil Constitution of the Clergy?\n3. What was the influence of Mary Wollstonecraft and/or Madame de Staël?\n4. What resistance did Napoleon face from Britain and/or the German states?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [20,21,25] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [20,21,25] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23851,7 +25710,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The GAA to 1891",
     questionText: "In what ways did the GAA develop in the years 1884 to 1891?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[11], schemePages: [10] },
+    rubric: { ...ESSAY_MARKING[12], schemePages: [10] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -23983,7 +25842,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "Write a short paragraph on one of the following:\n1. The Tithe War.\n2. William Carleton.\n3. Charles Kickham.\n4. Industrial development in Belfast.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -23995,7 +25854,7 @@ export const CARDS: SecCard[] = [
     stem: "Ireland and the Union, 1815‐1870",
     questionText: "Answer one of the following:\n1. During the period 1815‐1870, what was the impact of emigration on Ireland?\n2. What were successes and failures in the career of Daniel O’Connell?\n3. What was the importance of Thomas Davis and/or James Stephens?\n4. What did Asenath Nicholson and/or Mother Mary Aikenhead contribute to Irish life?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24127,7 +25986,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "Write a short paragraph on one of the following:\n1. Patrick Pearse.\n2. The War of Independence, 1919‐1921.\n3. The Eucharistic Congress, 1932.\n4. The fortunes of the Irish language, 1922‐1949.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -24139,7 +25998,7 @@ export const CARDS: SecCard[] = [
     stem: "The pursuit of sovereignty and the impact of partition, 1912‐1949",
     questionText: "Answer one of the following:\n1. What was the role of Countess Markievicz and/or Evie Hone in Irish affairs?\n2. What part did Michael Collins play in negotiating and defending the Anglo‐Irish Treaty?\n3. How did Éamon de Valera handle Anglo‐Irish relations, 1932‐1939?\n4. What problems did Belfast experience during World War II?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24271,7 +26130,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "Write a short paragraph on one of the following:\n1. Grosse Isle.\n2. The Orange Order in Canada.\n3. Mother Mary Martin.\n4. Maureen O’Hara.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -24283,7 +26142,7 @@ export const CARDS: SecCard[] = [
     stem: "The Irish diaspora, 1840‐1966",
     questionText: "Answer one of the following:\n1. What were the achievements of Archbishop Daniel Mannix and/or Bishop Edward Galvin?\n2. How successful was Éamon de Valera’s mission to America, June 1919‐December 1920?\n3. What problems faced Irish immigrants in Britain, 1920‐1966?\n4. What was the impact of Joe Kennedy and/or John F. Kennedy?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,12] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,12] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24416,7 +26275,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "Write a short paragraph on one of the following:\n1. Conn and Patricia McCluskey.\n2. Seamus Heaney.\n3. Why the power‐sharing executive collapsed, 1974.\n4. The impact of the “Troubles” on the economy of Northern Ireland.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -24428,7 +26287,7 @@ export const CARDS: SecCard[] = [
     stem: "Politics and society in Northern Ireland, 1949‐1993",
     questionText: "Answer one of the following:\n1. How did Terence O’Neill attempt to bring about change in Northern Ireland?\n2. Why did the establishment of a university at Coleraine provoke controversy?\n3. What influence had Bernadette Devlin and/or Gerry Adams on the affairs of Northern Ireland?\n4. How did Margaret Thatcher respond to the “Troubles” in Northern Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24560,7 +26419,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949‐1989",
     questionText: "Write a short paragraph on one of the following:\n1. Changes in Irish education, 1949‐1989.\n2. Irish involvement in the United Nations (UN).\n3. Sylvia Meehan.\n4. Garret FitzGerald.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -24572,7 +26431,7 @@ export const CARDS: SecCard[] = [
     stem: "Government, economy and society in the Republic of Ireland, 1949‐1989",
     questionText: "Answer one of the following:\n1. What was the contribution of T.K. Whitaker to Irish affairs?\n2. What was the impact of the EEC on Irish fisheries?\n3. What was the contribution of Gay Byrne and/or Breandán Ó hEithir to Irish cultural life?\n4. What problems faced Jack Lynch as Taoiseach and how did he respond to them?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,13] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,13] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24704,7 +26563,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "Write a short paragraph on one of the following:\n1. The system of Metternich.\n2. Karl Marx.\n3. Robert Owen’s New Lanark.\n4. Serfdom in Russia.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -24716,7 +26575,7 @@ export const CARDS: SecCard[] = [
     stem: "Nationalism and state formation in Europe, 1815‐1871",
     questionText: "Answer one of the following:\n1. Why did the 1848 revolution in Germany fail?\n2. What did Giuseppe Mazzini contribute to Italian unity?\n3. During the years 1815‐1871, what important changes took place in one or more of the following: music; art; literature?\n4. What key developments took place in science and technology, 1815‐1871?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24848,7 +26707,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "Write a short paragraph on one of the following:\n1. Anti‐Semitism in Russia.\n2. The Second International, 1889‐1914.\n3. Marie Curie.\n4. Wilfred Owen.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -24860,7 +26719,7 @@ export const CARDS: SecCard[] = [
     stem: "Nation states and international tensions, 1871‐1920",
     questionText: "Answer one of the following:\n1. What were successes and failures of Otto von Bismarck as Chancellor of Germany?\n2. What did women contribute to the war effort during World War I?\n3. What were the achievements of the Krupp family and/or Karl Benz?\n4. What was Woodrow Wilson’s contribution to the affairs of Europe?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -24992,7 +26851,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920‐1945",
     questionText: "Write a short paragraph on one of the following:\n1. J.M. Keynes.\n2. Hitler’s foreign policy, 1933‐1939.\n3. The fall of France, 1940.\n4. Josef Stalin as war leader during World War II.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -25004,7 +26863,7 @@ export const CARDS: SecCard[] = [
     stem: "Dictatorship and democracy in Europe, 1920‐1945",
     questionText: "Answer one of the following:\n1. How did Benito Mussolini manage church‐state relations in Italy?\n2. Why did the Jarrow March take place, October 1936, and did it achieve its aims?\n3. What was the contribution of Joseph Goebbels and/or Leni Riefenstahl to Nazi Germany?\n4. How did Charlie Chaplin and/or Bing Crosby contribute to popular culture?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,14] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,14] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25137,7 +26996,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "Write a short paragraph on one of the following:\n1. Marshall Aid.\n2. The development of nuclear power.\n3. John Lennon.\n4. Pope John Paul II.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -25149,7 +27008,7 @@ export const CARDS: SecCard[] = [
     stem: "Division and realignment in Europe, 1945‐1992",
     questionText: "Answer one of the following:\n1. How did Berlin become a divided city and what was the importance of the Berlin Blockade, 1948‐ 1949?\n2. What was the 1973 Oil Crisis and how did it affect life and work in Europe?\n3. What was the impact of Jacques Delors and/or Margaret Thatcher on European affairs?\n4. How successful a leader was Mikhail Gorbachev, at home and abroad?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25281,7 +27140,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "Write a short paragraph on one of the following:\n1. British withdrawal from India, 1945‐1947.\n2. The Lomé Conventions.\n3. Ho Chi Minh.\n4. Achmad Sukarno.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -25293,7 +27152,7 @@ export const CARDS: SecCard[] = [
     stem: "European retreat from empire and the aftermath, 1945‐1990",
     questionText: "Answer one of the following:\n1. What challenges were faced by development workers in Africa?\n2. Why did Katanga secede from the Congo and in what ways did this affect the region?\n3. How did developments in Algeria and/or race relations at home cause problems for France?\n4. What were the main achievements of Chinua Achebe?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25425,7 +27284,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "Write a short paragraph on one of the following:\n1. The US economy, 1945‐1968.\n2. Marilyn Monroe.\n3. Muhammad Ali.\n4. Multiculturalism in the US, 1968‐1989.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[12], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -25437,7 +27296,7 @@ export const CARDS: SecCard[] = [
     stem: "The United States and the world, 1945‐1989",
     questionText: "Answer one of the following:\n1. How and why did Joe McCarthy become a controversial figure?\n2. What was the role of Martin Luther King in the Montgomery bus boycott?\n3. How did the US achieve a moon landing in 1969 and what was its importance?\n4. In what ways did Betty Friedan criticise aspects of American life?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[13], schemePages: [10,11,15] },
+    rubric: { ...ESSAY_MARKING[14], schemePages: [10,11,15] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25795,7 +27654,7 @@ export const CARDS: SecCard[] = [
     stem: "Case study: The Plantation of Laois‐Offaly",
     questionText: "What was the purpose of the Plantation of Laois‐Offaly and did it achieve its purpose?",
     totalMarks: 20,
-    rubric: { ...ESSAY_MARKING[10], schemePages: [19] },
+    rubric: { ...ESSAY_MARKING[11], schemePages: [19] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -25927,7 +27786,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "Write a short paragraph on one of the following:\n1. Archbishop Adam Loftus.\n2. Grace O’Malley.\n3. Elizabethan Dublin.\n4. Recusancy in Ireland, 1559‐1603.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [19,20,21] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,21] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -25939,7 +27798,7 @@ export const CARDS: SecCard[] = [
     stem: "Rebellion and conquest in Elizabethan Ireland, 1558‐1603",
     questionText: "Answer one of the following:\n1. What were the aims of Shane O’Neill and did he achieve them?\n2. Why was Tadhg Dall Ó hUiginn important in Gaelic Ireland?\n3. Why was there a plantation in Munster and how was it organised?\n4. What leadership did Hugh O’Neill provide in the Nine Years’ War?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,21] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [19,20,21] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26071,7 +27930,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
     questionText: "Write a short paragraph on one of the following:\n1. Sir Arthur Chichester.\n2. The trial of Strafford, 1641.\n3. The depositions of 1641.\n4. Keating’s Foras Feasa.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [19,20,21] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,21] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -26083,7 +27942,7 @@ export const CARDS: SecCard[] = [
     stem: "Kingdom versus colony – the struggle for mastery in Ireland, 1603‐1660",
     questionText: "Answer one of the following:\n1. What was the purpose of the Irish College in Louvain and what did it achieve?\n2. How did Archbishop Rinuccini and/or Owen Roe O’Neill influence events in Ireland?\n3. What was the importance of Piaras Feiritéar and/or Luke Wadding?\n4. What were the main events of Cromwell’s campaign in Ireland?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,21] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [19,20,21] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26215,7 +28074,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "Write a short paragraph on one of the following:\n1. The Parliament of 1689.\n2. Oliver Plunkett.\n3. Robert Boyle.\n4. Restoration Dublin.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [19,20,21] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,21] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -26227,7 +28086,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing a colonial ascendancy, 1660‐1715",
     questionText: "Answer one of the following:\n1. To what extent were the policies of Charles II unpopular in Ireland?\n2. What were the themes of the Jacobite poets?\n3. How successful was Patrick Sarsfield as a military leader?\n4. What was the contribution of Samuel Louis Crommelin to Irish affairs?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,21] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [19,20,21] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26359,7 +28218,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "Write a short paragraph on one of the following:\n1. The Ponsonbys.\n2. Margaret (Peg) Woffington.\n3. Turlough O’Carolan.\n4. Na Cúirteanna Filíochta.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [19,20,22] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,22] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -26371,7 +28230,7 @@ export const CARDS: SecCard[] = [
     stem: "Colony versus kingdom – tensions in mid‐18th century Ireland, 1715‐1770",
     questionText: "Answer one of the following:\n1. What conditions gave rise to the Whiteboys and were their methods successful?\n2. What evidence was given at the trial of Father Nicholas Sheehy and what was its outcome?\n3. In what ways did Dean Swift contribute to Irish affairs?\n4. How did Arthur Guinness contribute to the development of Irish industry?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,22] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [19,20,22] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26503,7 +28362,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "Write a short paragraph on one of the following:\n1. Henry Grattan.\n2. The Orange Order.\n3. Fr. Arthur O’Leary.\n4. Why Ireland’s population grew, 1770‐1815.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [19,20,22] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,22] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -26515,7 +28374,7 @@ export const CARDS: SecCard[] = [
     stem: "The end of the Irish kingdom and the establishment of the Union, 1770‐1815",
     questionText: "Answer one of the following:\n1. What did Eibhlín Dhubh Ní Chonaill and/or Nano Nagle contribute to Irish life?\n2. What factors led to the rise of Belfast?\n3. What did Wolfe Tone hope to achieve and why did he fail?\n4. What main events took place during the Wexford Rebellion, 1798?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,22] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [19,20,22] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26647,7 +28506,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492‐1567",
     questionText: "Write a short paragraph on one of the following:\n1. The development of printing.\n2. Niccolò Machiavelli.\n3. Jacob Fugger.\n4. The Counter‐Reformation.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [19,20,23] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -26659,7 +28518,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe from Renaissance to Reformation, 1492‐1567",
     questionText: "Answer one of the following:\n1. Why did Henry VIII want to divorce Catherine of Aragon and what steps did he take to do so?\n2. What were the achievements of Michelangelo Buonarroti?\n3. In what ways did the discovery of the New World affect Europe?\n4. What part did Martin Luther play in the Reformation in Germany?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,23] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [19,20,23] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26791,7 +28650,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
     questionText: "Write a short paragraph on one of the following:\n1. Techniques of land use in Europe, 1567‐1609.\n2. The rise of Muscovy.\n3. Jacobus Arminius.\n4. Tycho Brahe.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [19,20,23] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -26803,7 +28662,7 @@ export const CARDS: SecCard[] = [
     stem: "Religion and power: politics in the later sixteenth century, 1567‐1609",
     questionText: "Answer one of the following:\n1. What was the purpose of the Spanish Armada and why did it fail?\n2. What role did William the Silent play in the Revolt of the Netherlands?\n3. How successful a ruler of France was Catherine de Medici?\n4. Why is Michel de Montaigne considered a key personality of this period?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,23] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [19,20,23] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -26935,7 +28794,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "Write a short paragraph on one of the following:\n1. Women, work and family.\n2. Claudio Monteverdi.\n3. The Dutch empire in Asia.\n4. Albrecht von Wallenstein.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [19,20,23] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,23] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -26947,7 +28806,7 @@ export const CARDS: SecCard[] = [
     stem: "The eclipse of Old Europe, 1609‐1660",
     questionText: "Answer one of the following:\n1. Why did the Catalans revolt and how was the revolt put down?\n2. What did Cardinal Richelieu contribute to the rise of French absolutism?\n3. What were the achievements of Peter Paul Rubens and/or Gian Lorenzo Bernini?\n4. What were the achievements of Galileo and/or Descartes?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,23] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [19,20,23] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27079,7 +28938,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐1715",
     questionText: "Write a short paragraph on one of the following:\n1. Anti‐Popery in England.\n2. Poland under Sobieski.\n3. The Grand Tour.\n4. Peter the Great’s travels abroad.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [19,20,24] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,24] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -27091,7 +28950,7 @@ export const CARDS: SecCard[] = [
     stem: "Europe in the age of Louis XIV, 1660‐1715",
     questionText: "Answer one of the following:\n1. Why did Louis XIV establish his court at Versailles and what were the characteristics of life there?\n2. What were the main events in the career of Sir Henry Morgan?\n3. What changes took place in agriculture during the period 1660‐1715?\n4. What were the achievements of Isaac Newton and/or Gottfried Wilhelm Leibnitz?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,24] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [19,20,24] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27223,7 +29082,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "Write a short paragraph on one of the following:\n1. Maria Theresa of Austria.\n2. Poverty, disease and population growth.\n3. Road and canal building.\n4. The salon.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [19,20,24] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,24] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -27235,7 +29094,7 @@ export const CARDS: SecCard[] = [
     stem: "Establishing empires, 1715‐1775",
     questionText: "Answer one of the following:\n1. What was the importance of the Encyclopédie?\n2. How important a leader was Catherine the Great?\n3. In what ways did the West Indies slave plantations contribute to international trade?\n4. What did you learn about the life and work of Benjamin Franklin?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,24] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [19,20,24] },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -27367,7 +29226,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "Write a short paragraph on one of the following:\n1. Mary Wollstonecraft.\n2. The Agricultural Revolution.\n3. The Civil Constitution of the Clergy.\n4. Madame de Staël.",
     totalMarks: 30,
-    rubric: { ...ESSAY_MARKING[7], schemePages: [19,20,24] },
+    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,24] },
   } as SecCard,
   {
     ...base, kind: "rubric",
@@ -27379,7 +29238,7 @@ export const CARDS: SecCard[] = [
     stem: "Empires in revolution, 1775‐1815",
     questionText: "Answer one of the following:\n1. Why did Louis XVI become unpopular in France and how was he overthrown?\n2. How did Manchester become a great industrial city?\n3. What changes did Napoleon make in France and Europe?\n4. What developments led to the abolition of the slave trade?",
     totalMarks: 40,
-    rubric: { ...ESSAY_MARKING[8], schemePages: [19,20,24] },
+    rubric: { ...ESSAY_MARKING[9], schemePages: [19,20,24] },
   } as SecCard,
   {
     ...base, kind: "question",
