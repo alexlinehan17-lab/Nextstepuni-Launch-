@@ -126,7 +126,9 @@ describe('Irish exam-topic registry', () => {
       referenceOfficialAssociations: 842,
       referenceMockAssociations: 563,
       referenceProviderSampleAssociations: 76,
-      matchedAssociations: 534,
+      // 534 until 2026-11-04: the two Foundation W-4B headings the SEC paper itself files elsewhere
+      // (sourceTopicCorrection) are reference anomalies, as other subjects record theirs.
+      matchedAssociations: 532,
       sourceBlockedAssociations: 308,
       sourceBlockedByReason: {
         deferred: 91,
@@ -134,8 +136,15 @@ describe('Irish exam-topic registry', () => {
         sample: 28,
         'oral-material': 60,
       },
-      matchedLocalCardLinks: 744,
+      referenceAnomalyAssociations: 2,
+      matchedLocalCardLinks: 742,
     });
+    const anomalies = irishCrosswalk.associations.filter(item => item.resolution === 'reference-anomaly');
+    expect(anomalies.map(item => `${item.year} ${item.heading} ${item.topicId}`)).toEqual([
+      '2024 2024 - Question 4 - Part B irish-foundation-write-a-letter',
+      '2017 2017 - Section 2 - Question 4 - Part b irish-foundation-write-from-pictures',
+    ]);
+    expect(anomalies.every(item => 'reason' in item && /^StudyClix files this \d{4} foundation heading under .+ SEC \d{4} Foundation PDF page \d+ identifies this task as /.test(String(item.reason)))).toBe(true);
     expect(irishCrosswalk.policy.excludedContent).toContain('No commercial mock question');
     const blocked = irishCrosswalk.associations.filter(item => item.resolution === 'source-blocked');
     expect(blocked).toHaveLength(308);

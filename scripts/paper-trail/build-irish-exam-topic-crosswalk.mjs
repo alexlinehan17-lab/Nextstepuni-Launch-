@@ -1125,6 +1125,24 @@ const localQuestionMappings = papers.flatMap(paper => paper.q.map(question => {
   };
 }));
 
+// A matched heading whose every local target the SEC paper itself files under another topic
+// (sourceTopicCorrection) is the reference's mis-grouping, not a parity gap: it is recorded as a
+// reference anomaly with the paper's own reason, as other subjects record theirs. The local tags
+// and the retained part-reference metadata are unchanged.
+const correctedQuestions = new Map(localQuestionMappings.filter(mapping => mapping.sourceTopicCorrection)
+  .map(mapping => [[mapping.level, mapping.year, mapping.fileid, mapping.n].join('|'), mapping]));
+for (const association of matched) {
+  const corrections = association.target.questionNumbers.map(number => correctedQuestions.get(
+    [association.target.level, association.year, association.target.fileid, number].join('|')));
+  if (corrections.every(mapping => mapping?.sourceTopicCorrection.excludedReferenceTopicIds.includes(association.topicId))) {
+    association.resolution = 'reference-anomaly';
+    association.reason = `StudyClix files this ${association.year} ${association.target.level} heading under ${association.topicId}. `
+      + corrections[0].sourceTopicCorrection.reason;
+  }
+}
+const parityMatched = associations.filter(association => association.resolution === 'matched');
+const referenceAnomalies = associations.filter(association => association.resolution === 'reference-anomaly');
+
 const mappingIdentities = localQuestionMappings.map(mapping => [
   mapping.level, mapping.lang, mapping.year, mapping.fileid, mapping.n,
 ].join('|'));
@@ -1339,10 +1357,11 @@ const summary = {
   referenceOfficialAssociations: associations.length,
   referenceMockAssociations: referenceTopics.reduce((sum, topic) => sum + topic.mockQuestionCount, 0),
   referenceProviderSampleAssociations: referenceTopics.reduce((sum, topic) => sum + topic.providerSampleQuestionCount, 0),
-  matchedAssociations: matched.length,
+  matchedAssociations: parityMatched.length,
   sourceBlockedAssociations: sourceBlocked.length,
   sourceBlockedByReason: blockedByReason,
-  matchedLocalCardLinks: matched.reduce((sum, association) => sum + association.target.questionNumbers.length, 0),
+  referenceAnomalyAssociations: referenceAnomalies.length,
+  matchedLocalCardLinks: parityMatched.reduce((sum, association) => sum + association.target.questionNumbers.length, 0),
   localPaperVariants: papers.length,
   localPhysicalMappings: localQuestionMappings.length,
   distinctStudentFacingQuestions: logicalQuestions.size,
@@ -1382,7 +1401,8 @@ const paperKeyCode = paperKey => ({ single: 's', p1: '1', p2: '2', aural: 'a', o
 const sittingCode = sitting => ({ main: 'm', deferred: 'd', sample: 'x' })[sitting];
 const runtimePartReferences = associations.flatMap(association => {
   const index = topicIndex.get(association.topicId);
-  if (association.resolution === 'matched') {
+  // A reference anomaly keeps its local target: its heading stays part-aware metadata on that question.
+  if (association.target) {
     return association.target.questionNumbers.map(number => [
       index,
       association.year - 2000,
