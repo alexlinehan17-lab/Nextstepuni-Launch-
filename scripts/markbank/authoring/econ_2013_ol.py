@@ -121,7 +121,9 @@ add('sa-q4', '3-4', 'keynes-motives', ref('A', 4),
     f"{H.q(2, 'John Maynard Keynes stated that people have three motives', ' Transactionary')} Transactionary Precautionary Speculative",
     '10 + 3 + 3', 16,
     [ladder('r-1', 'Each motive explained', 16, [f'{H.traced(m)} — {cc(e)}' for m, e in motives], [10, 3, 3],
-            'All three: ' + H.traced('10 marks+3 marks + 3 marks') + ', claimed in the order the answers are correct.')],
+            # The scheme sets its tariff centred beneath the table, against no motive (page rendered and looked at).
+            'All three. The scheme prints ' + H.traced('10 marks+3 marks + 3 marks') + ' beneath its table without saying '
+            'which motive earns the 10; it is claimed here as the first correct answer 10, the 2nd and 3rd 3 each.')],
     kind='fixed', **A)
 
 # Q5 ─ aid to LDCs

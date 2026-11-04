@@ -2070,7 +2070,10 @@ Decisions:
   B5(c) 12 + 6 + 6 (one card for (i)-(iii)).
 - B3(b)(i): the scheme prints "7 marks" beside the national minimum wage but
   sets it as 4 + 2, and only 6 fits the paper's (24) for (b) with labour at 6
-  and (ii) at 2 @ 6. It is priced 6.
+  and (ii) at 2 @ 6. It is priced 6, and the card's note says so: "The scheme
+  prints 7 for this part but sets it out as 4 + 2; 6 fits the paper's 24
+  marks." (coordinator, 2026-11-04: a price we chose always carries its
+  reason).
 - B2(b): each development's row carries the scheme's alternative answer (the
   design fault may shift demand left; the Apps may shift supply right) as an
   accepted alternative for (i) and (iii); its direction matches (ii) anyway.
@@ -2321,8 +2324,10 @@ Decisions:
   in B5(c)(ii), "Employment" in B7(c)(iii)), the cell rendering does not repeat
   it, so those rows are read whole and checked against the page.
 - A Q4: "10 marks+3 marks + 3 marks" for the three motives is claimed in the
-  order the answers are correct, the first 10. The scheme does not say whether
-  the 10 belongs to the transactionary motive.
+  order the answers are correct, the first 10. The rendered scheme page sets
+  the tariff centred beneath the table, against no motive, so the card's note
+  says the scheme does not say which motive earns the 10 (coordinator,
+  2026-11-04).
 - A Q3, A Q5, A Q7 and A Q9 price their two parts "x marks + y marks" in the
   ask's order: the reason (or explanation) first, then the effect (or benefit).
   A Q9's 7 + 10 shows the order is positional, not a ladder.

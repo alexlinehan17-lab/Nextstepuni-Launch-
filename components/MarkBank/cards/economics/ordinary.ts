@@ -117,7 +117,7 @@ export const CARDS: SecCard[] = [
     questionText: "John Maynard Keynes stated that people have three motives for holding their wealth in the form of cash. In the spaces provided briefly explain each motive. Transactionary Precautionary Speculative",
     tariffModel: {"kind":"fixed","notation":"10 + 3 + 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Each motive explained", marks: 16, contextNote: "All three: 10 marks+3 marks + 3 marks, claimed in the order the answers are correct.", openList: true, group: {"claimMax":3,"perOption":10,"options":["Transactionary — Cash is needed to buy goods and services","Precautionary — Cash is needed for emergencies / for ‘a rainy day’","Speculative — Cash is needed to take advantage of possible profitable investment opportunities"],"perOptionSteps":[10,3,3]} },
+    { id: "r-1", kind: "anyN", verbatim: "Each motive explained", marks: 16, contextNote: "All three. The scheme prints 10 marks+3 marks + 3 marks beneath its table without saying which motive earns the 10; it is claimed here as the first correct answer 10, the 2nd and 3rd 3 each.", openList: true, group: {"claimMax":3,"perOption":10,"options":["Transactionary — Cash is needed to buy goods and services","Precautionary — Cash is needed for emergencies / for ‘a rainy day’","Speculative — Cash is needed to take advantage of possible profitable investment opportunities"],"perOptionSteps":[10,3,3]} },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -4301,7 +4301,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"6 + 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
     rows: [
     { id: "r-labour", kind: "point", verbatim: "Labour — Labour is defined as the human effort involved in the production of goods and services / receives a wage in return.", marks: 6, contextNote: "Labour, 6 marks (4 + 2).", openList: true },
-    { id: "r-nmw", kind: "point", verbatim: "National Minimum Wage Rate — The lowest wage employers must by law pay their employees.", marks: 6, contextNote: "The national minimum wage, 6 marks (4 + 2). The scheme prints 7 beside it, but sets it as 4 + 2, and only 6 fits the paper’s (24) for (b).", openList: true },
+    { id: "r-nmw", kind: "point", verbatim: "National Minimum Wage Rate — The lowest wage employers must by law pay their employees.", marks: 6, contextNote: "The national minimum wage, 6 marks. The scheme prints 7 for this part but sets it out as 4 + 2; 6 fits the paper’s 24 marks.", openList: true },
     ],
     sourceMaterial: {
           "kind": "source-illustration",

@@ -270,8 +270,8 @@ add('sb-q3-b-i', '2-1', 'labour-and-the-minimum-wage', ref('B', 3, '(b)(i)'), H.
     '6 + 6', 12,
     [point('r-labour', f"{H.traced('Labour')} — {cc('Labour is defined as the human effort')}", 6, 'Labour, 6 marks (4 + 2).'),
      point('r-nmw', f"{H.traced('National Minimum Wage Rate')} — {cc('The lowest wage employers must by')}", 6,
-           'The national minimum wage, 6 marks (4 + 2). The scheme prints 7 beside it, but sets it as 4 + 2, and only 6 '
-           'fits the paper’s (24) for (b).')],
+           'The national minimum wage, 6 marks. The scheme prints 7 for this part but sets it out as 4 + 2; 6 fits the '
+           'paper’s 24 marks.')],
     stem=q3b, **B)
 pick('sb-q3-b-ii', '2-1', 'why-take-on-workers', ref('B', 3, '(b)(ii)'),
      H.q(7, 'State and explain two factors which may encourage Emma to employ additional workers.', ' (24 marks)'), 'A factor — any two',

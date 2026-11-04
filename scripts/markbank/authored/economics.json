@@ -3042,7 +3042,7 @@
     "verbatim": "Each motive explained",
     "marks": 16,
     "openList": true,
-    "contextNote": "All three: 10 marks+3 marks + 3 marks, claimed in the order the answers are correct.",
+    "contextNote": "All three. The scheme prints 10 marks+3 marks + 3 marks beneath its table without saying which motive earns the 10; it is claimed here as the first correct answer 10, the 2nd and 3rd 3 each.",
     "group": {
      "claimMax": 3,
      "perOption": 10,
@@ -16031,7 +16031,7 @@
     "verbatim": "National Minimum Wage Rate — The lowest wage employers must by law pay their employees.",
     "marks": 6,
     "openList": true,
-    "contextNote": "The national minimum wage, 6 marks (4 + 2). The scheme prints 7 beside it, but sets it as 4 + 2, and only 6 fits the paper’s (24) for (b)."
+    "contextNote": "The national minimum wage, 6 marks. The scheme prints 7 for this part but sets it out as 4 + 2; 6 fits the paper’s 24 marks."
    }
   ],
   "notes": ""
