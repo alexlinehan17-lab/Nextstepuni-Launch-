@@ -95,7 +95,7 @@ import { frenchMarks, type FrenchScoreId } from './frenchRubric';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
 import { stemWithListBreaks } from './stemText';
-import { anyNHeading, marksWord } from './sessionText';
+import { anyNHeading, marksWord, unclaimedName } from './sessionText';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -2386,15 +2386,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         if (r.parts) return partsMarksClaimed(r, rowId(r, i), rowClaims) === 0;
         return (rowClaims[rowId(r, i)] ?? 'no') === 'no';
       })
-      // The scheme's own wording, minus any "Label — " prefix the card carries.
-      // Except on a matching or true/false card, where the scheme's whole answer
-      // IS the prefix's tail — a letter or a verdict. "e · a · d" and
-      // "false · false · false" name nothing; there the label is the content.
-      // Case is kept as printed: a gamete "R" is not "r", nor "C H O" "c h o".
-      .map(r => {
-        const tail = r.verbatim.split(/\s[—-]\s/).pop() ?? r.verbatim;
-        return tail.trim().length <= 6 ? r.verbatim : tail;
-      });
+      // The scheme's own wording, minus an unambiguous "Label — " prefix;
+      // working, dates and ranges keep their minus signs (see sessionText).
+      .map(r => unclaimedName(r.verbatim));
   }, [assessmentCard, rowClaims]);
   /* Three names fit the band; beyond that the count carries it. Naming all six
      would wrap the bar and push the grade buttons around. */
@@ -3296,11 +3290,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 background: left === 0 ? SUCCESS_TINT : 'var(--mb-raised)',
                 color: left === 0 ? SUCCESS_TEXT : INK_2,
                 font: `500 12px/1.5 ${SANS}`,
-                // Whole-response criteria can be paragraphs long. This is a
-                // summary; the full wording remains in the scheme above.
-                display: '-webkit-box', WebkitBoxOrient: 'vertical',
-                WebkitLineClamp: 3, overflow: 'hidden',
               }}>
+                {/* Whole-response criteria can be paragraphs long. This is a
+                    summary; the full wording remains in the scheme above. The
+                    clamp sits INSIDE the padding: clamped on the padded box, a
+                    fourth line showed through the bottom padding. */}
+                <div data-testid="mark-bank-unclaimed-summary" style={{
+                  display: '-webkit-box', WebkitBoxOrient: 'vertical',
+                  WebkitLineClamp: 3, overflow: 'hidden',
+                }}>
                 {left === 0 ? (
                   <span style={{
                     font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em', textTransform: 'uppercase',
@@ -3323,6 +3321,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     )}
                   </>
                 )}
+                </div>
               </div>
             )}
 
