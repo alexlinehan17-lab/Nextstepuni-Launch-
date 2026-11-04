@@ -42,7 +42,11 @@ BULLET = re.compile(r'^[•●·‣➢▪\-]\s*')
 LINE_TOL = 3.0
 
 _DOCS = {}
-ENG_GLYPHS = {'\u019e': 'tf'}
+# U+F0FB: a private-use code the text layer gives one glyph of 2015 HL scheme
+# p11 ("heated to 850?C", x 313-343, y 256-272). Cropped out of the page and
+# looked at, it is the degree ring; it is the only U+F0FB in the 60 Engineering
+# papers and schemes, so the repair can reach nothing else.
+ENG_GLYPHS = {'\u019e': 'tf', '\uf0fb': '\u00b0'}
 
 
 def path_for(year, level, doc):

@@ -611,6 +611,12 @@ REJECTED = {
        for r in ('i', 'ii')},
     (2017, 'hl', 8, 'c', 'i'): 'a stray glyph from the ask at its left edge',
     (2017, 'hl', 8, 'c', 'ii'): 'takes in (c)\'s prose beside the car',
+    # 2015 Higher, looked at 2026-11-04 (the residue cuts each by eye):
+    **{(2015, 'hl', 2, 'b', r): 'cuts off the stress axis, its values and the fractured '
+                                'specimen at C'
+       for r in ('i', 'ii')},
+    **{(2015, 'hl', 3, 'b', r): 'cuts off the "% Carbon" axis and its values'
+       for r in ('i', 'ii')},
 }
 
 
