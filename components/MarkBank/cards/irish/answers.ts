@@ -241,6 +241,14 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
       current!.rows.push({ text: tidy(head.slice(question + 1)), marks: tariff });
       continue;
     }
+    // A grid row the paper prints as a statement ("Scríobh síos lá amháin … gach seachtain. Déardaoin 3 mharc",
+    // 2020 Ordinary Fógra a hAon): the card's printed question, then its first answer at that price.
+    const statement = head.indexOf('. ');
+    if (!current && statement > 0 && printedQuestion(source.questionText, head.slice(0, statement + 1))) {
+      open(tidy(head.slice(0, statement + 1)), tariff);
+      current!.rows.push({ text: tidy(head.slice(statement + 1)), marks: tariff });
+      continue;
+    }
     // The 2026 question cards open with the question as the paper prints it ("Luaigh cúis amháin … ar Phól. 2 mharc"):
     // a statement, not a question, but the card's own sub-question all the same.
     if (!current && head && printedQuestion(source.questionText, head)) { open(head, tariff); continue; }
