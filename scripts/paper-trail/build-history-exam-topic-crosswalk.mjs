@@ -148,12 +148,15 @@ const expectedSectionFamily = section => {
   if (section === '3' || section === 'C') return 'E';
   return null;
 };
-const preferredEnglishPaper = (level, year) => {
+// A deferred sitting is its own Atlas paper (fileid "...-deferred.pdf"), so a
+// year can hold two English papers: the June one and the deferred one.
+const preferredEnglishPaper = (level, year, sitting = 'main') => {
   const papers = localPapers.filter(paper => (
     paper.level === level
     && paper.lang === 'ev'
     && paper.year === year
     && paper.paperKey === 'single'
+    && (sitting === 'deferred') === String(paper.fileid).endsWith('-deferred.pdf')
   ));
   if (papers.length > 1) throw new Error(`Ambiguous ${level} English History paper for ${year}`);
   return papers[0] ?? null;
@@ -164,7 +167,7 @@ const associations = LEVELS.flatMap(level => reference.levels[level].topics.flat
   const slot = topicSlot(topic);
   return topic.officialQuestionHeadings.map(heading => {
     const parsed = parseHeading(heading);
-    if (parsed.sitting === 'deferred') {
+    if (parsed.sitting === 'deferred' && !preferredEnglishPaper(level, parsed.year, 'deferred')) {
       return {
         topicId: topic.id,
         heading,
@@ -177,7 +180,7 @@ const associations = LEVELS.flatMap(level => reference.levels[level].topics.flat
       };
     }
 
-    const paper = preferredEnglishPaper(level, parsed.year);
+    const paper = preferredEnglishPaper(level, parsed.year, parsed.sitting);
     if (!paper) {
       return {
         topicId: topic.id,

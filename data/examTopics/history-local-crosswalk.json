@@ -11,21 +11,21 @@
   },
   "summary": {
     "referenceHeadingAssociations": 466,
-    "matchedHeadingAssociations": 405,
-    "sourceBlockedHeadingAssociations": 59,
+    "matchedHeadingAssociations": 428,
+    "sourceBlockedHeadingAssociations": 36,
     "referenceAnomalyAssociations": 2,
-    "matchedLocalCardLinks": 501,
+    "matchedLocalCardLinks": 530,
     "referenceMappedPrintedQuestions": 501,
-    "localPaperVariants": 68,
-    "localQuestionMappings": 1028,
+    "localPaperVariants": 72,
+    "localQuestionMappings": 1089,
     "distinctLocalQuestions": 514,
-    "referenceMappedLocalQuestions": 1002,
-    "retainedLocalQuestions": 26,
+    "referenceMappedLocalQuestions": 1062,
+    "retainedLocalQuestions": 27,
     "preservedBaselinePaperVariants": 18,
     "preservedBaselineCards": 72,
-    "addedLocalPaperVariants": 50,
-    "addedLocalCards": 956,
-    "hostedPaperAnchorMaps": 68
+    "addedLocalPaperVariants": 54,
+    "addedLocalCards": 1017,
+    "hostedPaperAnchorMaps": 72
   },
   "curriculumCrosswalk": {
     "history-higher-1irl-ireland-and-the-union": [
@@ -248,9 +248,16 @@
       "level": "higher",
       "year": 2023,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R2:1",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "I1"
+        ]
+      }
     },
     {
       "topicId": "history-higher-1irl-ireland-and-the-union",
@@ -275,9 +282,16 @@
       "level": "higher",
       "year": 2022,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R2:1",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "I1"
+        ]
+      }
     },
     {
       "topicId": "history-higher-1irl-ireland-and-the-union",
@@ -580,9 +594,16 @@
       "level": "higher",
       "year": 2023,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R2:2",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "I2"
+        ]
+      }
     },
     {
       "topicId": "history-higher-2irl-movements-for-politicalsocial-reform",
@@ -607,9 +628,16 @@
       "level": "higher",
       "year": 2022,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R2:2",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "I2"
+        ]
+      }
     },
     {
       "topicId": "history-higher-2irl-movements-for-politicalsocial-reform",
@@ -909,9 +937,16 @@
       "level": "higher",
       "year": 2023,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R2:3",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "I3"
+        ]
+      }
     },
     {
       "topicId": "history-higher-3irl-sovereignty-and-the-impact-of-partition",
@@ -936,9 +971,16 @@
       "level": "higher",
       "year": 2022,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R2:3",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "I3"
+        ]
+      }
     },
     {
       "topicId": "history-higher-3irl-sovereignty-and-the-impact-of-partition",
@@ -1244,9 +1286,16 @@
       "level": "higher",
       "year": 2023,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R2:4",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "I4"
+        ]
+      }
     },
     {
       "topicId": "history-higher-4irl-the-irish-diaspora",
@@ -1566,9 +1615,19 @@
       "level": "higher",
       "year": 2023,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R1:1,2,3,4",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      }
     },
     {
       "topicId": "history-higher-5irl-politics-and-society-in-northern-ireland",
@@ -1596,9 +1655,19 @@
       "level": "higher",
       "year": 2022,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R1:1-4",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      }
     },
     {
       "topicId": "history-higher-5irl-politics-and-society-in-northern-ireland",
@@ -1904,9 +1973,16 @@
       "level": "higher",
       "year": 2023,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R2:5",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "I6"
+        ]
+      }
     },
     {
       "topicId": "history-higher-6irl-republic-government-society-economy",
@@ -1931,9 +2007,16 @@
       "level": "higher",
       "year": 2022,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R2:5",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "I6"
+        ]
+      }
     },
     {
       "topicId": "history-higher-6irl-republic-government-society-economy",
@@ -2239,9 +2322,16 @@
       "level": "higher",
       "year": 2023,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R3:1",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "E1"
+        ]
+      }
     },
     {
       "topicId": "history-higher-eur1-nationalism-and-state-formation",
@@ -2266,9 +2356,16 @@
       "level": "higher",
       "year": 2022,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R3:1",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "E1"
+        ]
+      }
     },
     {
       "topicId": "history-higher-eur1-nationalism-and-state-formation",
@@ -2568,9 +2665,16 @@
       "level": "higher",
       "year": 2023,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R3:2",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "E2"
+        ]
+      }
     },
     {
       "topicId": "history-higher-eur2-nation-states-and-international-tensions",
@@ -2595,9 +2699,16 @@
       "level": "higher",
       "year": 2022,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R3:2",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "E2"
+        ]
+      }
     },
     {
       "topicId": "history-higher-eur2-nation-states-and-international-tensions",
@@ -2903,9 +3014,16 @@
       "level": "higher",
       "year": 2023,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R3:3",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "E3"
+        ]
+      }
     },
     {
       "topicId": "history-higher-eur3-dictatorship-and-democracy",
@@ -2930,9 +3048,16 @@
       "level": "higher",
       "year": 2022,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R3:3",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "E3"
+        ]
+      }
     },
     {
       "topicId": "history-higher-eur3-dictatorship-and-democracy",
@@ -3238,9 +3363,16 @@
       "level": "higher",
       "year": 2023,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R3:4",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "E4"
+        ]
+      }
     },
     {
       "topicId": "history-higher-eur4-division-and-realignment",
@@ -3265,9 +3397,16 @@
       "level": "higher",
       "year": 2022,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R3:4",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "E4"
+        ]
+      }
     },
     {
       "topicId": "history-higher-eur4-division-and-realignment",
@@ -3567,9 +3706,16 @@
       "level": "higher",
       "year": 2023,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R3:5",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "E5"
+        ]
+      }
     },
     {
       "topicId": "history-higher-eur5-retreat-from-empire-and-the-aftermath",
@@ -3594,9 +3740,16 @@
       "level": "higher",
       "year": 2022,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R3:5",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "E5"
+        ]
+      }
     },
     {
       "topicId": "history-higher-eur5-retreat-from-empire-and-the-aftermath",
@@ -3882,9 +4035,16 @@
       "level": "higher",
       "year": 2023,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R3:6",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "E6"
+        ]
+      }
     },
     {
       "topicId": "history-higher-eur6-the-united-states-and-the-world",
@@ -3909,9 +4069,16 @@
       "level": "higher",
       "year": 2022,
       "sitting": "deferred",
-      "resolution": "source-blocked",
-      "referenceQuestionNumber": "R3:6",
-      "reason": "The entitled local SEC History corpus has no deferred-sitting booklet for this factual heading. It is retained pending acquisition and independent verification of the official paper and marking scheme; no StudyClix-hosted question image or PDF is copied."
+      "resolution": "matched",
+      "target": {
+        "level": "higher",
+        "lang": "ev",
+        "paperKey": "single",
+        "fileid": "LC004ALP000EV-deferred.pdf",
+        "questionNumbers": [
+          "E6"
+        ]
+      }
     },
     {
       "topicId": "history-higher-eur6-the-united-states-and-the-world",
@@ -10182,6 +10349,186 @@
     },
     {
       "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "1",
+      "topicIds": [
+        "history-higher-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "2",
+      "topicIds": [
+        "history-higher-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "3",
+      "topicIds": [
+        "history-higher-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "4",
+      "topicIds": [
+        "history-higher-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I1",
+      "topicIds": [
+        "history-higher-1irl-ireland-and-the-union"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I2",
+      "topicIds": [
+        "history-higher-2irl-movements-for-politicalsocial-reform"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I3",
+      "topicIds": [
+        "history-higher-3irl-sovereignty-and-the-impact-of-partition"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I4",
+      "topicIds": [
+        "history-higher-4irl-the-irish-diaspora"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I6",
+      "topicIds": [
+        "history-higher-6irl-republic-government-society-economy"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E1",
+      "topicIds": [
+        "history-higher-eur1-nationalism-and-state-formation"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E2",
+      "topicIds": [
+        "history-higher-eur2-nation-states-and-international-tensions"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E3",
+      "topicIds": [
+        "history-higher-eur3-dictatorship-and-democracy"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E4",
+      "topicIds": [
+        "history-higher-eur4-division-and-realignment"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E5",
+      "topicIds": [
+        "history-higher-eur5-retreat-from-empire-and-the-aftermath"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E6",
+      "topicIds": [
+        "history-higher-eur6-the-united-states-and-the-world"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
       "lang": "iv",
       "year": 2023,
       "fileid": "LC004ALP000IV.pdf",
@@ -10545,6 +10892,198 @@
       "lang": "ev",
       "year": 2023,
       "fileid": "LC004GLP000EV.pdf",
+      "paperKey": "single",
+      "n": "ALT",
+      "topicIds": [
+        "history-ordinary-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "1",
+      "topicIds": [
+        "history-ordinary-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "2",
+      "topicIds": [
+        "history-ordinary-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "3",
+      "topicIds": [
+        "history-ordinary-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "4",
+      "topicIds": [
+        "history-ordinary-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I1",
+      "topicIds": [
+        "history-ordinary-1-irl-ireland-and-the-union"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I2",
+      "topicIds": [
+        "history-ordinary-2-irl-movements-for-politicalsocial-reform"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I3",
+      "topicIds": [
+        "history-ordinary-3-irl-sovereignty-and-the-impact-of-partition"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I4",
+      "topicIds": [
+        "history-ordinary-4irl-the-irish-diaspora"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I6",
+      "topicIds": [
+        "history-ordinary-6irl-republic-government-society-economy"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E1",
+      "topicIds": [
+        "history-ordinary-eur1-nationalism-and-state-formation"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E2",
+      "topicIds": [
+        "history-ordinary-eur2-nation-states-and-international-tensions"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E3",
+      "topicIds": [
+        "history-ordinary-eur3-dictatorship-and-democracy"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E4",
+      "topicIds": [
+        "history-ordinary-eur4-division-and-realignment"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E5",
+      "topicIds": [
+        "history-ordinary-eur5-retreat-from-empire-and-the-aftermath"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E6",
+      "topicIds": [
+        "history-ordinary-eur6-the-united-states-and-the-world"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2023,
+      "fileid": "LC004GLP000EV-deferred.pdf",
       "paperKey": "single",
       "n": "ALT",
       "topicIds": [
@@ -10926,6 +11465,186 @@
     },
     {
       "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "1",
+      "topicIds": [
+        "history-higher-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "2",
+      "topicIds": [
+        "history-higher-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "3",
+      "topicIds": [
+        "history-higher-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "4",
+      "topicIds": [
+        "history-higher-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I1",
+      "topicIds": [
+        "history-higher-1irl-ireland-and-the-union"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I2",
+      "topicIds": [
+        "history-higher-2irl-movements-for-politicalsocial-reform"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I3",
+      "topicIds": [
+        "history-higher-3irl-sovereignty-and-the-impact-of-partition"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I4",
+      "topicIds": [
+        "history-higher-4irl-the-irish-diaspora"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I6",
+      "topicIds": [
+        "history-higher-6irl-republic-government-society-economy"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E1",
+      "topicIds": [
+        "history-higher-eur1-nationalism-and-state-formation"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E2",
+      "topicIds": [
+        "history-higher-eur2-nation-states-and-international-tensions"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E3",
+      "topicIds": [
+        "history-higher-eur3-dictatorship-and-democracy"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E4",
+      "topicIds": [
+        "history-higher-eur4-division-and-realignment"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E5",
+      "topicIds": [
+        "history-higher-eur5-retreat-from-empire-and-the-aftermath"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004ALP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E6",
+      "topicIds": [
+        "history-higher-eur6-the-united-states-and-the-world"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "higher",
       "lang": "iv",
       "year": 2022,
       "fileid": "LC004ALP000IV.pdf",
@@ -11277,6 +11996,186 @@
       "lang": "ev",
       "year": 2022,
       "fileid": "LC004GLP000EV.pdf",
+      "paperKey": "single",
+      "n": "E6",
+      "topicIds": [
+        "history-ordinary-eur6-the-united-states-and-the-world"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "1",
+      "topicIds": [
+        "history-ordinary-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "2",
+      "topicIds": [
+        "history-ordinary-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "3",
+      "topicIds": [
+        "history-ordinary-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "4",
+      "topicIds": [
+        "history-ordinary-5irl-politics-and-society-in-northern-ireland"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I1",
+      "topicIds": [
+        "history-ordinary-1-irl-ireland-and-the-union"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I2",
+      "topicIds": [
+        "history-ordinary-2-irl-movements-for-politicalsocial-reform"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I3",
+      "topicIds": [
+        "history-ordinary-3-irl-sovereignty-and-the-impact-of-partition"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I4",
+      "topicIds": [
+        "history-ordinary-4irl-the-irish-diaspora"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "I6",
+      "topicIds": [
+        "history-ordinary-6irl-republic-government-society-economy"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E1",
+      "topicIds": [
+        "history-ordinary-eur1-nationalism-and-state-formation"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E2",
+      "topicIds": [
+        "history-ordinary-eur2-nation-states-and-international-tensions"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E3",
+      "topicIds": [
+        "history-ordinary-eur3-dictatorship-and-democracy"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E4",
+      "topicIds": [
+        "history-ordinary-eur4-division-and-realignment"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
+      "paperKey": "single",
+      "n": "E5",
+      "topicIds": [
+        "history-ordinary-eur5-retreat-from-empire-and-the-aftermath"
+      ],
+      "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "ev",
+      "year": 2022,
+      "fileid": "LC004GLP000EV-deferred.pdf",
       "paperKey": "single",
       "n": "E6",
       "topicIds": [
