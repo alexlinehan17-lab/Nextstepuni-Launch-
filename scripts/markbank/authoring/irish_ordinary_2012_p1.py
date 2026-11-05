@@ -262,7 +262,8 @@ def build():
     for key, suffix, ref, page, topic, (tariff, spage), questions in SEGMENTS:
         # The criterion carries its own printed question first, then the only price the scheme prints for it (the section's
         # “3 marc × N” line); the scheme prints no answer, so the question is claimed whole at its 3 marks (0 or 3).
-        criteria = [criterion(cid, label, 3, [prompt, tariff], 'exact', permitted=[0, 3]) for cid, label, prompt in questions]
+        # The scheme prints only the tariff for these questions: the chip says "Tariff" (coordinator, batch 7).
+        criteria = [dict(criterion(cid, label, 3, [prompt, tariff], 'exact', permitted=[0, 3]), tariffOnly=True) for cid, label, prompt in questions]
         cards.append(dict(
             id=f'irish-{YEAR}-ol-p1-listening-{suffix}', year=YEAR, level='ordinary', paper=1, section='1',
             questionRef=f'{YEAR} OL Paper 1 Cluastuiscint {ref}', questionText=SEGMENT_TEXT[key](questions),

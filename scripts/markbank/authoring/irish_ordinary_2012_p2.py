@@ -97,8 +97,11 @@ def page_text(page):
 
 
 def criterion(id, label, marks, guidance, kind='exact', permitted=None, deduction=False):
+    # The 2012 Ordinary scheme prints only the tariff of every reading and literature ask, no answer: each award but the
+    # language deduction carries tariffOnly, and its chip says "Tariff" (coordinator, batch 7).
     return dict(id=id, label=label, kind='deduction' if deduction else 'award', maxMarks=marks,
-                permittedMarks=permitted or list(range(marks + 1)), guidanceKind=kind, guidance=guidance)
+                permittedMarks=permitted or list(range(marks + 1)), guidanceKind=kind, guidance=guidance,
+                **({} if deduction else {'tariffOnly': True}))
 
 
 def selection_decisions(paper):

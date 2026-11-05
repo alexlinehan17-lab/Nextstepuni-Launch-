@@ -353,7 +353,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "1. (a) Cad as do thuismitheoirí Evanne Ní Choileáin (b) Dhá scoil ar fhreastail sí orthu = 10 marc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question.",
@@ -410,7 +411,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "2. (a) Cineál ceoil is maith léi (b) An rud a rinne sí ar scoil a chabhraigh léi níos déanaí = 10 marc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question.",
@@ -467,7 +469,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "3. (a) An teanga a ndearna sí staidéar uirthi ar ollscoil Bh Á C (b) Dhá chomhlacht lena bhfuair sí taithí oibre = 10 marc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question.",
@@ -524,7 +527,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "4. Dhá phíosa eolais faoin a cuid oibre le RTÉ = 10 marc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question.",
@@ -581,7 +585,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "5. (a) Na laochra is mó ina saol (b) An fáth a bhfuil meas mór aici ar Kieran Boland = 10 marc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question.",
@@ -638,7 +643,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "1. (a) Cá bhfuil Dáithí ar an ollscoil anois (b) Cén airde é = 10 marc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question.",
@@ -695,7 +701,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "2. (a) Dhá sport, seachas an leadóg, a d’imir sé (b) An áit a mbíodh sé ag traenáil agus é san Idirbhliain = 10 mar"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question.",
@@ -752,7 +759,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "3. (a) Dhá chlub leadóige ar imir Dáithí leo (b) Cá fhad a chaith sé i gcampa Mhoyá = 10 marc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question.",
@@ -809,7 +817,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "4. (a) An fáth ar fhill Dáithí ar Choláiste Eoin (b) Dhá bhuntáiste atá ag Dáithí in Ollscoil Memphis = 10 marc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question.",
@@ -866,7 +875,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "5. (a) A mbeidh ar siúl ag Dáithí an samhradh seo (b) An aidhm atá ag Dáithí = 10 marc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One SEC price for the whole question (10); the scheme restates what each part asks and does not split the price between them, so the question is claimed whole (0 or 10). The scheme prints no answer for this part. Scheme: “[Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh.]” — one deduction from each passage total (50), never inside a single question.",
@@ -929,7 +939,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "6 phointe eolais. ( 5 mharc ar an gcéad phointe + 5 phointe eile ar 4 mharc an ceann)."
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "gaeilge-deduction",
@@ -1006,7 +1017,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "4 phointe eolais. (7 marc ar an gcéad phointe + 6 mharc an ceann ar trí phointe eile)."
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "gaeilge-deduction",
@@ -1080,7 +1092,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(a) Maidir le sliocht as úrscéal a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas ar an bpríomhphearsa (bpríomhcharachtar) ann. (23 mharc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "teideal",
@@ -1094,7 +1107,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "Ní mór teideal an úrscéil sin, mar aon le hainm an údair, a scríobh síos go soiléir. (2 mharc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "gaeilge-deduction",
@@ -1168,7 +1182,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(b) Maidir le scéal béaloidis a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas ar na príomhimeachtaí (rudaí) a tharla sa scéal sin. (23 mharc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "teideal",
@@ -1182,7 +1197,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "Ní mór teideal an scéil sin a scríobh síos go soiléir. (2 mharc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "gaeilge-deduction",
@@ -1257,7 +1273,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(i) (a) Cad as don ainmhí seo? (Géibheann thíos) (b) Cá bhfuil an t-ainmhí anois, dar leat? (c) Cad a rinne an t-ainmhí uair amháin? (d) Cad a dhéanann an t-ainmhí anois? (8 marc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "eolas-ii",
@@ -1271,7 +1288,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(ii) Luaigh dhá mhothúchán atá sa dán. Déan cur síos, i d’fhocail féin, ar an dá mhothúchán sin sa dán. (8 marc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "eolas-iii",
@@ -1285,7 +1303,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(iii) Ar thaitin an dán seo leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "gaeilge-deduction",
@@ -1360,7 +1379,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(i) (a) Conas atá an aimsir sa dán seo? (An tEarrach Thiar thíos) (b) Cén dath a bhí ar an bhfeamainn? (c) Cá bhfios duit go raibh an iascaireacht go maith? (d) Cathain a d’fhill na hiascairí ar an gcladach? (8 marc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "eolas-ii",
@@ -1374,7 +1394,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(ii) Luaigh dhá íomhá (phictiúr) atá sa dán. Déan cur síos i d’fhocail féin, ar an dá íomhá sin sa dán. (8 marc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "eolas-iii",
@@ -1388,7 +1409,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "gaeilge-deduction",
@@ -1463,7 +1485,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(a) (i) Maidir le dán nua-aimseartha amháin a chum bean agus a ndearna tú staidéar air le linn do chúrsa, inis i d’fhocail féin, cad is téama don dán sin, dar leat. (8 marc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "eolas-ii",
@@ -1477,7 +1500,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(ii) Roghnaigh dhá mhothúchán a úsáideann an file sa dán seo agus déan cur síos orthu i d’fhocail féin. (8 marc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "eolas-iii",
@@ -1491,7 +1515,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(iii) Ar thaitin an dán leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth) (7 marc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "teideal",
@@ -1505,7 +1530,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go soiléir. (2 mharc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "gaeilge-deduction",
@@ -1580,7 +1606,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(b) (i) Maidir le dán nua-aimseartha amháin a chum fear agus a ndearna tú staidéar air le linn do chúrsa, inis cén mothúchán is mó atá sa dán, dar leat. Cuir fáthanna le do fhreagra. (Is leor dhá fháth) (8 marc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "eolas-ii",
@@ -1594,7 +1621,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(ii) Roghnaigh dhá íomhá (phictiúr) a úsáideann an file sa dán seo agus déan cur síos orthu i d’fhocail féin. (8 marc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "eolas-iii",
@@ -1608,7 +1636,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (7 marc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "teideal",
@@ -1622,7 +1651,8 @@
           "guidanceKind": "exact",
           "guidance": [
             "Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go soiléir. (2 mharc)"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "gaeilge-deduction",
@@ -1696,7 +1726,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(i) (a) Cad as don ainmhí seo? (Géibheann thíos) (b) Cá bhfuil an t-ainmhí anois, dar leat? (c) Cad a rinne an t-ainmhí uair amháin? (d) Cad a dhéanann an t-ainmhí anois? (8 marc)"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One printed sub-question at its published tariff (8), claimed whole: the scheme prints no split, scale or sample answers for it. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
@@ -1753,7 +1784,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(ii) Luaigh dhá mhothúchán atá sa dán. Déan cur síos, i d’fhocail féin, ar an dá mhothúchán sin sa dán. (8 marc)"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One printed sub-question at its published tariff (8), claimed whole: the scheme prints no split, scale or sample answers for it. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
@@ -1810,7 +1842,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(iii) Ar thaitin an dán seo leat? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One printed sub-question at its published tariff (9), claimed whole: the scheme prints no split, scale or sample answers for it. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
@@ -1867,7 +1900,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(i) (a) Conas atá an aimsir sa dán seo? (An tEarrach Thiar thíos) (b) Cén dath a bhí ar an bhfeamainn? (c) Cá bhfios duit go raibh an iascaireacht go maith? (d) Cathain a d’fhill na hiascairí ar an gcladach? (8 marc)"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One printed sub-question at its published tariff (8), claimed whole: the scheme prints no split, scale or sample answers for it. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
@@ -1924,7 +1958,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(ii) Luaigh dhá íomhá (phictiúr) atá sa dán. Déan cur síos i d’fhocail féin, ar an dá íomhá sin sa dán. (8 marc)"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One printed sub-question at its published tariff (8), claimed whole: the scheme prints no split, scale or sample answers for it. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",
@@ -1981,7 +2016,8 @@
           "guidanceKind": "indicative",
           "guidance": [
             "(iii) An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.) (9 marc)"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "One printed sub-question at its published tariff (9), claimed whole: the scheme prints no split, scale or sample answers for it. The 0–4 Gaeilge deduction applies once to this whole 25-mark answer, never inside one sub-question.",

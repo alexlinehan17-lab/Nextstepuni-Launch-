@@ -735,6 +735,8 @@ export interface IrishCriterion {
   maxMarks: number;
   permittedMarks: number[];
   guidanceKind: IrishGuidanceKind;
+  /** The scheme prints only this part's tariff, no answer (2012 Ordinary): its chip says "Tariff". */
+  tariffOnly?: boolean;
   /** Verbatim or tightly bounded scheme guidance, never invented content. */
   guidance: string[];
   /** The exact guidance as claimable rows, where cards/irish/answers.ts could

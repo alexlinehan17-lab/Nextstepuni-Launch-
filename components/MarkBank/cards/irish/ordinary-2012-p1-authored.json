@@ -221,7 +221,8 @@
           "guidance": [
             "Cén post atá i gceist san fhógra seo?",
             "Fógra 1: 3 marc × 4 = 12 marc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "g2",
@@ -236,7 +237,8 @@
           "guidance": [
             "Cén contae ina bhfuil an scoil seo suite?",
             "Fógra 1: 3 marc × 4 = 12 marc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "g3",
@@ -251,7 +253,8 @@
           "guidance": [
             "Cé mhéad dalta atá ag freastal ar an scoil seo?",
             "Fógra 1: 3 marc × 4 = 12 marc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "g4",
@@ -266,7 +269,8 @@
           "guidance": [
             "Cad é an lá deireanach le haghaidh iarratas?",
             "Fógra 1: 3 marc × 4 = 12 marc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "Each printed question is marked at its own published tariff (3 marks), from the 2012 SEC marking scheme. The scheme prints no answer for this part. The 2012 scheme prints each listening section’s tariff (3 marks a question, PDF 4–5) and the recording’s script (PDF 5–8), but no answer key: each printed question is claimed whole at its 3 marks, and nothing is taken from the script as an answer. Scheme PDF 5: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.",
@@ -332,7 +336,8 @@
           "guidance": [
             "Cathain a rinneadh an ceiliúradh speisialta?",
             "Fógra 2: 3 marc × 4 = 12 marc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "q1b",
@@ -347,7 +352,8 @@
           "guidance": [
             "Tabhair píosa amháin eolais faoi Dhara Ó Cinnéide.",
             "Fógra 2: 3 marc × 4 = 12 marc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "q2a",
@@ -362,7 +368,8 @@
           "guidance": [
             "Cén leabhar as ar léigh na daltaí scoile?",
             "Fógra 2: 3 marc × 4 = 12 marc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "q2b",
@@ -377,7 +384,8 @@
           "guidance": [
             "Cén tír a bhfuil ceangal láidir aici le Corca Dhuibhne?",
             "Fógra 2: 3 marc × 4 = 12 marc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "Each printed question is marked at its own published tariff (3 marks), from the 2012 SEC marking scheme. The scheme prints no answer for this part. The 2012 scheme prints each listening section’s tariff (3 marks a question, PDF 4–5) and the recording’s script (PDF 5–8), but no answer key: each printed question is claimed whole at its 3 marks, and nothing is taken from the script as an answer. Scheme PDF 5: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.",
@@ -443,7 +451,8 @@
           "guidance": [
             "Cén uair a cuireadh amach an taighde seo?",
             "Comhrá 1: 3 marc × 4 = 12 mharc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "m1-q2",
@@ -458,7 +467,8 @@
           "guidance": [
             "Cén áit ar cheart seans a bheith ag daoine óga a dhul?",
             "Comhrá 1: 3 marc × 4 = 12 mharc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "m2-q1",
@@ -473,7 +483,8 @@
           "guidance": [
             "Luaigh rud amháin a deirtear faoi dhaoine óga sa taighde seo.",
             "Comhrá 1: 3 marc × 4 = 12 mharc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "m2-q2",
@@ -488,7 +499,8 @@
           "guidance": [
             "Cad é an lá scoile atá ag Rónán faoi láthair?",
             "Comhrá 1: 3 marc × 4 = 12 mharc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "Each printed question is marked at its own published tariff (3 marks), from the 2012 SEC marking scheme. The scheme prints no answer for this part. The 2012 scheme prints each listening section’s tariff (3 marks a question, PDF 4–5) and the recording’s script (PDF 5–8), but no answer key: each printed question is claimed whole at its 3 marks, and nothing is taken from the script as an answer. Scheme PDF 5: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.",
@@ -554,7 +566,8 @@
           "guidance": [
             "Cá raibh an searmanas speisialta seo ar siúl?",
             "Comhrá 2: 3 marc × 4 = 12 mharc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "m1-q2",
@@ -569,7 +582,8 @@
           "guidance": [
             "Cé mhéad ama a thóg sé ar Ronnie Delaney an rás sin 1500 méadar a rith?",
             "Comhrá 2: 3 marc × 4 = 12 mharc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "m2-q1",
@@ -584,7 +598,8 @@
           "guidance": [
             "Cén post a bhí ag athair Ronnie Delaney?",
             "Comhrá 2: 3 marc × 4 = 12 mharc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "m2-q2",
@@ -599,7 +614,8 @@
           "guidance": [
             "Cén chuid dá chorp a ghortaigh Ronnie Delaney?",
             "Comhrá 2: 3 marc × 4 = 12 mharc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "Each printed question is marked at its own published tariff (3 marks), from the 2012 SEC marking scheme. The scheme prints no answer for this part. The 2012 scheme prints each listening section’s tariff (3 marks a question, PDF 4–5) and the recording’s script (PDF 5–8), but no answer key: each printed question is claimed whole at its 3 marks, and nothing is taken from the script as an answer. Scheme PDF 5: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.",
@@ -665,7 +681,8 @@
           "guidance": [
             "Cathain a seoladh an leabhar Waves of Tory?",
             "Píosa 1: 3 marc × 2 = 6 mharc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "q2",
@@ -680,7 +697,8 @@
           "guidance": [
             "Cathain a fhillleann an t-údar ar Thoraí?",
             "Píosa 1: 3 marc × 2 = 6 mharc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "Each printed question is marked at its own published tariff (3 marks), from the 2012 SEC marking scheme. The scheme prints no answer for this part. The 2012 scheme prints each listening section’s tariff (3 marks a question, PDF 4–5) and the recording’s script (PDF 5–8), but no answer key: each printed question is claimed whole at its 3 marks, and nothing is taken from the script as an answer. Scheme PDF 5: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.",
@@ -746,7 +764,8 @@
           "guidance": [
             "Cé mhéad seomra a bheidh sna tithe nua?",
             "Píosa 2: 3 marc × 2 = 6 marc"
-          ]
+          ],
+          "tariffOnly": true
         },
         {
           "id": "q2",
@@ -761,7 +780,8 @@
           "guidance": [
             "Cén uimhir theileafóin atá ag Oifigí an Chomharchumainn?",
             "Píosa 2: 3 marc × 2 = 6 marc"
-          ]
+          ],
+          "tariffOnly": true
         }
       ],
       "markingGuideNote": "Each printed question is marked at its own published tariff (3 marks), from the 2012 SEC marking scheme. The scheme prints no answer for this part. The 2012 scheme prints each listening section’s tariff (3 marks a question, PDF 4–5) and the recording’s script (PDF 5–8), but no answer key: each printed question is claimed whole at its 3 marks, and nothing is taken from the script as an answer. Scheme PDF 5: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.",

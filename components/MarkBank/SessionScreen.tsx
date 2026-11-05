@@ -1256,6 +1256,7 @@ const IrishRubricPanel: React.FC<{
   const total = irishMarks(card, scores);
 
   const guidanceLabel = (criterion: IrishCriterion) => {
+    if (criterion.tariffOnly) return 'Tariff';
     if (criterion.guidanceKind === 'exact') return 'Official answers and tariff';
     if (criterion.guidanceKind === 'quality') return 'Published quality description';
     return 'Possible directions — not a checklist';
