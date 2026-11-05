@@ -822,9 +822,10 @@ const decks = [
    * 2014 Ordinary's three held 10-mark asks added.
    * 2012 Higher, 20 band-grid cards, added.
    * 2012 Ordinary, 25 band-grid cards, added.
-   * 2011 Higher, 20 band-grid cards, added. */
+   * 2011 Higher, 20 band-grid cards, added.
+   * 2011 Ordinary, 24 band-grid cards, added. */
   ['religious-education:higher', RE_HIGHER, 358, 'c33d4dc6803778188ca3c3f0ece73c8279d50a1bf88aa16f61307e4dad01c0f8'],
-  ['religious-education:ordinary', RE_ORDINARY, 358, 'd40b5c8d5df765a53c9ee468524d5e58d8473e69799549f175d1941fdb46924b'],
+  ['religious-education:ordinary', RE_ORDINARY, 382, 'c7fc627cd7e0773e8248f84c96b3293193b1bc8fc5eba652195d253cfea36458'],
   /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
    * replaced — it is a new subject and this is its first baseline. It ships
    * as ONE deck because the paper is common level: there is no Higher or
@@ -1530,6 +1531,7 @@ describe('Mark Bank card preservation', () => {
     // Religious Education 2012 Higher, 20 asks, 20 band-grid cards: 23,972.
     // Religious Education 2012 Ordinary, 25 asks, 25 band-grid cards: 23,997.
     // Religious Education 2011 Higher, 20 asks, 20 band-grid cards: 24,017.
+    // Religious Education 2011 Ordinary, 24 asks, 24 band-grid cards: 24,041.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1546,9 +1548,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(24_017 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(24_041 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(24_017 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(24_041 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
