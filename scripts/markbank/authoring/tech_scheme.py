@@ -80,6 +80,11 @@ BAND = re.compile(
 SECTION_TOTALS = {24, 40, 72, 200, 300, 130, 100}
 
 SECTION_HEAD = re.compile(r'^Section\s+([ABC])\b')
+# The paper code a booklet's cover prints top right: "2014. M104 BC".
+COVER_CODE = re.compile(r'^\d{4}\.\s*M\d{3}\b')
+# One letter's price in a Section B/C question's heading line: "(a) - 8 marks",
+# "(c) OR (d) - 6 marks" (2010-2014, where no part prints its own tariff).
+HEADER_PRICE = re.compile(r'\(([a-d])\)\s*(?:OR\s*\(([a-d])\)\s*)?[-\u2013]\s*(\d{1,2})\s*marks?\b', re.I)
 OPTION_HEAD = re.compile(r'^Option\s+(\d)\b')
 # "1." at Section A; "2(a)" and "2(a) (i)" in Sections B and C. The dot form
 # is Section A's alone -- Section B never prints "2." -- so the two heads
@@ -295,6 +300,22 @@ class TechScheme:
             head_q, head_letter = None, None
             pages = set()
 
+        # The 2010-2014 schemes print no tariff on a part: Section A is priced
+        # by its rubric ("All questions carry 6 marks") and each Section B/C
+        # question by the line under its heading, "(a) - 8 marks, (b) - 10
+        # marks, (c) OR (d) - 6 marks". A block those print the total for is
+        # closed by the next head, heading or option, at that total and with
+        # no split -- never a guessed one.
+        header_marks, header_note = {}, {}
+
+        def close_by_header():
+            if lines and head_q is not None and head_letter in header_marks:
+                close(header_marks[head_letter], [], header_note[head_letter])
+
+        def close_by_rubric():
+            if section == 'A' and lines and head_q is not None and rubric_marks:
+                close(rubric_marks, [], f'All questions carry {rubric_marks} marks')
+
         for text in _lines(raw):
             pm = PAGE_MARK.match(text)
             if pm:
@@ -341,6 +362,29 @@ class TechScheme:
             # Ordinary scheme sets Question 3(d)'s "(6 Marks, 4+2)" on the same
             # line as the running footer, and dropping the line whole dropped
             # the tariff with it -- one priced block lost, silently.
+            prices = list(HEADER_PRICE.finditer(text))
+            if len(prices) >= 2:
+                close_by_header()
+                header_marks, header_note = {}, {}
+                for hp in prices:
+                    for letter in (hp.group(1), hp.group(2)):
+                        if letter:
+                            header_marks[letter.lower()] = int(hp.group(3))
+                            header_note[letter.lower()] = hp.group(0).strip()
+                if BC_HEAD.match(text) and section in ('B', 'C'):
+                    # "4(a) (a) - 10 marks, (b) - 20 marks, ..." (2019
+                    # Ordinary): the heading's prices printed level with the
+                    # first part's head. The head stays; the prices come off.
+                    text = (text[:prices[0].start()] + ' ' + text[prices[-1].end():]).strip()
+                elif not SECTION_HEAD.match(text):
+                    continue
+            if section == 'A' and (COVER_CODE.match(text) or text.strip() == 'Blank Page'):
+                # The end of the Section A booklet: its blank back page, then
+                # the next booklet's cover ("2014. M104 BC"). A rubric-priced
+                # last question closes here, or the cover's lines run on into
+                # it as answers (2014 Higher Q15).
+                close_by_rubric()
+                continue
             if FURNITURE.match(text):
                 if not TARIFF.search(text) and not BAND.search(text):
                     continue
@@ -358,6 +402,8 @@ class TechScheme:
                 # which shifted every real head out of reach of the
                 # forward-only guard and left all fifteen questions unnumbered
                 # and off by one.
+                close_by_rubric()
+                close_by_header()
                 lines, roman, head_q, head_letter = [], None, None, None
                 started = True
             if sh and sh.group(1) > section and any(
@@ -374,12 +420,15 @@ class TechScheme:
                 continue
             oh = OPTION_HEAD.match(text)
             if oh and section == 'C':
+                close_by_header()
                 lines, roman, head_q, head_letter = [], None, None, None
                 last_q = int(oh.group(1)) - 1
                 continue
 
             m = BC_HEAD.match(text) if section in ('B', 'C') else None
             if m:
+                if (int(m.group(1)), m.group(2)) != (head_q, head_letter):
+                    close_by_header()
                 started = True
                 head_q, head_letter = int(m.group(1)), m.group(2)
                 roman = None
@@ -508,6 +557,8 @@ class TechScheme:
                 # above it (2026 Higher Q1: "...unused land around airport,"
                 # / "etc."); dropped, the list reads as closed.
                 lines[-1] = (lines[-1][0], f'{lines[-1][1].rstrip()} etc.')
+        close_by_rubric()
+        close_by_header()
         self.order = order
 
     def priced(self):

@@ -1,5 +1,110 @@
 [
  {
+  "file": "technology-2014-HL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Part of a transistor circuit: an NPN transistor with an ammeter marked IB in its base lead and an ammeter marked IC in its collector lead.",
+  "questionRef": "2014 HL Section A Q5",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   440,
+   398,
+   562,
+   502
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A block labelled Load on a level surface, with an arrow F = 300N pushing it, and a distance of 0.85 m from position A to position B.",
+  "questionRef": "2014 HL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   170,
+   455,
+   452,
+   552
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a desktop laser printer with its paper tray open at the front.",
+  "questionRef": "2014 HL Section A Q13",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   55,
+   490,
+   226,
+   600
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing of a universal joint: two shafts joined by two forked yokes and a cross-shaped piece.",
+  "questionRef": "2014 HL Section A Q15",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   155,
+   520,
+   442,
+   708
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a plug-in ultrasonic pest deterrent with a glowing panel, and a 555 timer circuit between +V and 0V with resistors R1 and R2 and a capacitor C on pins 7, 6 and 2, a capacitor on pin 5, and pin 3 left open.",
+  "questionRef": "2014 HL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   195,
+   195,
+   565,
+   365
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secC-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A cutaway drawing of a DC motor, with arrows labelled A, B and C pointing to three of its parts.",
+  "questionRef": "2014 HL Section C Q2(c)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   410,
+   450,
+   560,
+   590
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Above, a product life-cycle graph of Sales against Time: a curve rising, peaking and falling, divided by vertical lines into stages numbered 1, 2, 3 and 4. Below, two Sales against time graphs: Laptop computer, a curve rising quickly to a long rounded peak then falling; Electronic toy, a tall narrow spike.",
+  "questionRef": "2014 HL Section C Q4(c)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   160,
+   120,
+   445,
+   412
+  ]
+ },
+ {
   "file": "technology-2015-HL-paper-secA-q5-art.png",
   "kind": "figure",
   "truncated": false,
@@ -7140,6 +7245,186 @@
   ]
  },
  {
+  "file": "technology-2014-HL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The plastics recycling logo: three chasing arrows in a triangle round the number 2, with HDPE printed under it.",
+  "questionRef": "2014 HL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   450,
+   522,
+   524,
+   612
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A critical path node: a box with EST in the top row, Activity Name and Duration in the middle, LST in the bottom row, and arrows X and Y pointing to the top-right and bottom-right cells.",
+  "questionRef": "2014 HL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   372,
+   600,
+   561,
+   740
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a laptop stand: a sloping platform on a hinged base.",
+  "questionRef": "2014 HL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   408,
+   48,
+   560,
+   135
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secB-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The official emblem of the 2014 FIFA World Cup: a trophy shape formed by three hands in green and yellow, over FIFA WORLD CUP Brasil.",
+  "questionRef": "2014 HL Section B Q2(a)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   459,
+   68,
+   582,
+   226
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A robotic arm diagram: a Motor at the left end of a bar, a 2.5 kg mass at the right end, the two 1.1 m apart; beside it a photograph of the rover arm with its Turret labelled.",
+  "questionRef": "2014 HL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   100,
+   268,
+   540,
+   405
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a white wall-mounted air conditioning unit.",
+  "questionRef": "2014 HL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   396,
+   283,
+   580,
+   390
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of an outdoor weather sensor on a pole and an indoor display unit, and a truth table captioned truth table with columns Switch, Night, Temp and Alarm over all eight combinations, Alarm 1 only for Switch 1, Night 0, Temp 1.",
+  "questionRef": "2014 HL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   155,
+   605,
+   565,
+   785
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secC-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table with columns Feature and Software package; the features Slide transition, Use of counters, Mute, play and pause, and Crop, the package column blank.",
+  "questionRef": "2014 HL Section C Q3(c)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   90,
+   518,
+   390,
+   624
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a small camera lens block.",
+  "questionRef": "2014 HL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   454,
+   500,
+   561,
+   589
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a red alarm casing mounted on a wall, an arrow, and a drawing of a person on a ladder fixing the casing high on a house wall.",
+  "questionRef": "2014 HL Section C Q4(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   145,
+   530,
+   505,
+   680
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a computer workstation: a red seat on a steel frame with screens on an arm, labelled Steel frame and Adjustable screens.",
+  "questionRef": "2014 HL Section C Q5(b)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   335,
+   160,
+   566,
+   366
+  ]
+ },
+ {
+  "file": "technology-2014-HL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a model hydrogen car beside a small hydrogen refuelling station and a solar panel.",
+  "questionRef": "2014 HL Section C Q5(d)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   402,
+   618,
+   578,
+   770
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -9743,5 +10028,109 @@
   "description": "The marking scheme's own sketches for 2015 OL Section C 5(d)(ii), as the State Examinations Commission printed them: a Machine screw and a Stud, each shown in section holding a plate to a block, and a Grub screw with an arrow to its place in a gear's boss.",
   "solution": true,
   "questionRef": "2015 OL Section C Q5(d)(ii)"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secA-q4.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2014 HL Section A Q4, as the State Examinations Commission printed it: a boxed calculation, VR = 75 over 150 = 1:2 and RPM = 1500 x 1 over 2 = 750 rpm (written as stacked fractions), then (ii)'s question and its answer: Prevent build-up of heat by reducing friction, reduce noise, minimise wear, stop rusting, etc.",
+  "solution": true,
+  "questionRef": "2014 HL Section A Q4"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secA-q11.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2014 HL Section A Q11, as the State Examinations Commission printed it: a boxed calculation, Work = force x distance = 300 x 0.85 = 255 joule (Note: 1Nm = 1joule); Power = Work over Time = 255 over 3 = 85 watt (written as stacked fractions).",
+  "solution": true,
+  "questionRef": "2014 HL Section A Q11"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secB-q2d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own photograph for 2014 HL Section B 2(d)(ii), as the State Examinations Commission printed it: a shin guard held on by black straps, an arrow pointing to a strap.",
+  "solution": true,
+  "questionRef": "2014 HL Section B Q2(d)"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secB-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own photograph for 2014 HL Section B 3(b)(iii), as the State Examinations Commission printed it: a close-up of a Mars rover wheel on its axle.",
+  "solution": true,
+  "questionRef": "2014 HL Section B Q3(b)"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secC-q1a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketches for 2014 HL Section C 1(a)(ii), as the State Examinations Commission printed them: a sphere with a point located by a radius and two angles, and a cylinder with a point located by a radius, an angle and a height.",
+  "solution": true,
+  "questionRef": "2014 HL Section C Q1(a)"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secC-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own flowcharts for 2014 HL Section C 1(b), as the State Examinations Commission printed them. (i): Start, Red LED on, then a decision Desired temp.?; on Yes Green LED on, on No fan on, each looping back to above the decision. (ii): the same, with fan on followed by a decision Motor temp. high? leading to Alarm on. Between them the scheme reprints (ii)'s question and Any valid alternative solution accepted.",
+  "solution": true,
+  "questionRef": "2014 HL Section C Q1(b)"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secC-q1d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own pneumatic circuit for 2014 HL Section C 1(d)(ii), as the State Examinations Commission printed it: a push-button valve with ports 1, 2 and 3, a flow control valve, and a single-acting cylinder with a spring return.",
+  "solution": true,
+  "questionRef": "2014 HL Section C Q1(d)"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secC-q2a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2014 HL Section C 2(a)(ii), as the State Examinations Commission printed it: Power = V squared over R = (240) squared over 24 = 2.4 kW x 12 = 28.8 kWh; Cost = 28.8 x 0.25 = 7.20 euro.",
+  "solution": true,
+  "questionRef": "2014 HL Section C Q2(a)"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secC-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own drawings for 2014 HL Section C 2(c)(ii), as the State Examinations Commission printed them: a motor M wired through a double-pole switch and a relay, and a small gearbox.",
+  "solution": true,
+  "questionRef": "2014 HL Section C Q2(c)"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secC-q2d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own logic circuit for 2014 HL Section C 2(d)(i), as the State Examinations Commission printed it: Night through a NOT gate and Temp. into an AND gate, whose output with Switch goes into a second AND gate, giving Alarm.",
+  "solution": true,
+  "questionRef": "2014 HL Section C Q2(d)"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secC-q4b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2014 HL Section C 4(b)(ii), as the State Examinations Commission printed it: A: Cp = Tolerance Range over 6 sigma = (7.95 - 7.85) over 6(0.04077) = 0.41; B: Cp = Tolerance Range over 6 sigma = (7.95 - 7.85) over 6(0.01620) = 1.03, each written as stacked fractions.",
+  "solution": true,
+  "questionRef": "2014 HL Section C Q4(b)"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secC-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own photograph for 2014 HL Section C 5(b)(iii), as the State Examinations Commission printed it: a screen bracket bolted to the frame, with two red arrows pointing to the bolts.",
+  "solution": true,
+  "questionRef": "2014 HL Section C Q5(b)"
+ },
+ {
+  "file": "technology-2014-HL-scheme-secC-q5c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own photograph for 2014 HL Section C 5(c)(i), as the State Examinations Commission printed it: a person reclining in the workstation chair, labelled Screen and Tilt backwards and raise foot position.",
+  "solution": true,
+  "questionRef": "2014 HL Section C Q5(c)"
  }
 ]

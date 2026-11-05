@@ -1750,6 +1750,73 @@ REVIEWED.update({
         'the weld bead around the joint.',
 })
 
+# 2014 Higher, each crop rendered and looked at.
+REVIEWED.update({
+    'technology-2014-HL-paper-secA-q3-art':
+        'The plastics recycling logo: three chasing arrows in a triangle round '
+        'the number 2, with HDPE printed under it.',
+    'technology-2014-HL-paper-secA-q5-art':
+        'Part of a transistor circuit: an NPN transistor with an ammeter marked '
+        'IB in its base lead and an ammeter marked IC in its collector lead.',
+    'technology-2014-HL-paper-secA-q6-art':
+        'A critical path node: a box with EST in the top row, Activity Name and '
+        'Duration in the middle, LST in the bottom row, and arrows X and Y '
+        'pointing to the top-right and bottom-right cells.',
+    'technology-2014-HL-paper-secA-q7-art':
+        'Photograph of a laptop stand: a sloping platform on a hinged base.',
+    'technology-2014-HL-paper-secA-q11-art':
+        'A block labelled Load on a level surface, with an arrow F = 300N pushing '
+        'it, and a distance of 0.85 m from position A to position B.',
+    'technology-2014-HL-paper-secA-q13-art':
+        'Photograph of a desktop laser printer with its paper tray open at the front.',
+    'technology-2014-HL-paper-secA-q15-art':
+        'Line drawing of a universal joint: two shafts joined by two forked yokes '
+        'and a cross-shaped piece.',
+    'technology-2014-HL-paper-secB-q2a-art':
+        'The official emblem of the 2014 FIFA World Cup: a trophy shape formed '
+        'by three hands in green and yellow, over FIFA WORLD CUP Brasil.',
+    'technology-2014-HL-paper-secB-q3b-art':
+        'A robotic arm diagram: a Motor at the left end of a bar, a 2.5 kg mass '
+        'at the right end, the two 1.1 m apart; beside it a photograph of the '
+        'rover arm with its Turret labelled.',
+    'technology-2014-HL-paper-secC-q1b-art':
+        'Photograph of a white wall-mounted air conditioning unit.',
+    'technology-2014-HL-paper-secC-q2b-art':
+        'Photograph of a plug-in ultrasonic pest deterrent with a glowing panel, '
+        'and a 555 timer circuit between +V and 0V with resistors R1 and R2 and '
+        'a capacitor C on pins 7, 6 and 2, a capacitor on pin 5, and pin 3 left '
+        'open.',
+    'technology-2014-HL-paper-secC-q2c-art':
+        'A cutaway drawing of a DC motor, with arrows labelled A, B and C pointing '
+        'to three of its parts.',
+    'technology-2014-HL-paper-secC-q2d-art':
+        'Photographs of an outdoor weather sensor on a pole and an indoor display '
+        'unit, and a truth table captioned truth table with columns Switch, '
+        'Night, Temp and Alarm over all eight combinations, Alarm 1 only for '
+        'Switch 1, Night 0, Temp 1.',
+    'technology-2014-HL-paper-secC-q3c-art':
+        'A table with columns Feature and Software package; the features Slide '
+        'transition, Use of counters, Mute, play and pause, and Crop, the '
+        'package column blank.',
+    'technology-2014-HL-paper-secC-q4b-art':
+        'Photograph of a small camera lens block.',
+    'technology-2014-HL-paper-secC-q4c-art':
+        'Above, a product life-cycle graph of Sales against Time: a curve rising, '
+        'peaking and falling, divided by vertical lines into stages numbered 1, '
+        '2, 3 and 4. Below, two Sales against time graphs: Laptop computer, a '
+        'curve rising quickly to a long rounded peak then falling; Electronic '
+        'toy, a tall narrow spike.',
+    'technology-2014-HL-paper-secC-q4d-art':
+        'Photograph of a red alarm casing mounted on a wall, an arrow, and a '
+        'drawing of a person on a ladder fixing the casing high on a house wall.',
+    'technology-2014-HL-paper-secC-q5b-art':
+        'Photograph of a computer workstation: a red seat on a steel frame with '
+        'screens on an arm, labelled Steel frame and Adjustable screens.',
+    'technology-2014-HL-paper-secC-q5d-art':
+        'Photograph of a model hydrogen car beside a small hydrogen refuelling '
+        'station and a solar panel.',
+})
+
 REJECTED = {
     'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
     'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',

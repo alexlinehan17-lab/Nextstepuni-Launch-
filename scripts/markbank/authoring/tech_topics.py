@@ -288,6 +288,16 @@ TOPIC_OVERRIDES = {
     'tech-2015-ol-b3b-iii': 'tech-core-structures',# speed reduction mechanism
     'tech-2015-ol-b3c-i': 'tech-core-graphics',    # CAD
     'tech-2015-ol-b3c-ii': 'tech-core-materials',  # CAM
+    # 2014 Higher.
+    'tech-2014-hl-a1': 'tech-core-materials',      # incineration (waste, environment)
+    'tech-2014-hl-a2': 'tech-core-materials',      # smart fabrics
+    'tech-2014-hl-a3': 'tech-core-materials',      # HDPE, thermoplastics
+    'tech-2014-hl-a7': 'tech-core-design',         # ergonomic laptop stand
+    'tech-2014-hl-a10': 'tech-core-design',        # rapid prototyping
+    'tech-2014-hl-a14': 'tech-core-ict',           # social networking
+    'tech-2014-hl-b2d': 'tech-core-materials',     # shin guard materials and fastening
+    'tech-2014-hl-b3b': 'tech-core-structures',    # torque, drive mechanism
+    'tech-2014-hl-b3c': 'tech-core-ict',           # bitmap and vector images
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]

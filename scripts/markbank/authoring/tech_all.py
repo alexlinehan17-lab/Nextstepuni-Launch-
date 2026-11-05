@@ -365,9 +365,12 @@ def graphic_fragments(points):
     # 2019 Ordinary 2(c)(i) gives the Deming stages with a DASH for the colon --
     # "Plan– identify problems", "Study- consider/examine the findings" -- the
     # same heading-and-answer line.
+    # ...and an abbreviation spelled out, "EST - Earliest Start Time", "X -
+    # EFT - Earliest Finish Time" (2014 Higher Q6's critical-path terms).
     labelled = [p for p in points
                 if re.match(r'^[A-Z][A-Za-z /-]{1,24}:\s+\S', p)
-                or re.match(r'^[A-Z][a-z]{1,24}\s?[\u2013\u2014-]\s+[a-z]', p)]
+                or re.match(r'^[A-Z][a-z]{1,24}\s?[\u2013\u2014-]\s+[a-z]', p)
+                or re.match(r'^(?:[A-Z]\s[\u2013\u2014-]\s)?[A-Z]{2,6}\s[\u2013\u2014-]\s+[A-Z][a-z]+\s', p)]
     if len(labelled) >= 0.5 * len(points):
         return False
     short = [p for p in points if len(p) < 46]
@@ -401,6 +404,14 @@ def reflow(points, scheme_norm=''):
     for line in points:
         text = clean(line)
         if not text:
+            continue
+        if out and '=' in text and len(text) >= 6 and out[-1].rstrip().endswith(text.rstrip()):
+            # A worked answer that opens by restating the formula the line
+            # above ends with -- the ask's "Note: hFE = Ic / Ib", then the
+            # scheme's "hFE = Ic / Ib" / "= 0.05 / 0.00025" (2014 Higher
+            # Q5(ii)) -- starts its own point. Joined, the answer rode on the
+            # reprint and was thrown away with it.
+            out.append(text)
             continue
         if out:
             prev = out[-1]
@@ -519,7 +530,7 @@ def card_id(year, level, section, q, letter, roman):
             + (letter or '') + (f'-{roman}' if roman else ''))
 
 
-def rows_for(points, marks, total, cap=MAX_ROWS):
+def rows_for(points, marks, total, cap=MAX_ROWS, single_ask=True):
     """(rows, tariff model) for one card, or None to refuse.
 
     `marks` is the printed split for this card's own answers, when the scheme
@@ -527,7 +538,7 @@ def rows_for(points, marks, total, cap=MAX_ROWS):
     nothing -- the rule that has cost this bank five incidents when broken.
     """
     points = points[:min(cap, MAX_ROWS)]
-    if marks is None and len(points) == 1:
+    if marks is None and len(points) == 1 and single_ask:
         # One stated answer for a priced part: the part's tariff IS that row's
         # mark. Nothing is divided, so nothing is guessed.
         marks = [total]
@@ -1197,7 +1208,12 @@ def author(bind_figures=True):
                     model = {'kind': 'fixed'}
                 else:
                     trimmed = len(points) - min(len(points), CAP[section])
-                    rows, model = rows_for(points, marks, total, CAP[section])
+                    # A card covering several printed asks, priced only as a
+                    # whole (2014 Higher 2(d): a drawn (i) and a worded (ii)
+                    # at "(c) OR (d) - 14 marks"), never hands its total to a
+                    # lone surviving row: that row answers one of the asks.
+                    rows, model = rows_for(points, marks, total, CAP[section],
+                                           single_ask=len(covered) == 1)
                     shown = sum(r['marks'] or 0 for r in rows)
                     if model['kind'] == 'fixed' and shown != total:
                         note('the rows do not sum to the printed tariff', question)

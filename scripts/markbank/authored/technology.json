@@ -1,5 +1,1981 @@
 [
  {
+  "id": "tech-2014-hl-a1",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q1(i), (ii)",
+  "questionText": "(i) Outline one advantage of incineration. (ii) Outline one disadvantage of incineration.",
+  "stem": "In June 2011, An Bord Pleanála refused planning permission for a €160 million twin-incinerator project at Ringaskiddy, Co. Cork.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Efficient method of disposing of large volumes of refuse, can be used to generate heat or electricity, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Health concerns of dioxins released, reduced incentive to recycle, air pollution, ash disposal, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a2",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q2(i), (ii)",
+  "questionText": "(i) Explain what is meant by a smart fabric. (ii) Give one other example of a smart material.",
+  "stem": "‘GORE-TEX®’ is classified as a smart fabric and is used extensively for all-weather outdoor clothing.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Smart fabrics are materials whose properties change/react in a controlled fashion to external stimuli such as temperature, moisture, electric field, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Thermo-chromatic materials will respond to changes in heat by changing colour. Photo-chromatic materials respond to changes in light intensity. Polymorphs, muscle wire, etc. are smart materials.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a3",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q3(i), (ii)",
+  "questionText": "(i) Explain the meaning of the term HDPE. (ii) Outline the main difference between thermoplastic and thermosetting plastic materials.",
+  "stem": "Many plastic products have the logo shown embossed or printed on them.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2014-HL-paper-secA-q3-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "High density Polyethylene",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Thermoplastics will mould more than once and are recyclable.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Polyethylene and polyvinyl chloride (PVC) are examples.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Thermosetting plastics can only be shaped once and are usually harder and will withstand higher temperatures. Polyester resin and phenol formaldehyde are common thermosets.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a4",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q4(i), (ii)",
+  "questionText": "(i) If the engine sprocket revolves at 1500 rpm, what is the rpm of the sprocket on the back wheel? (ii) Give two reasons why lubrication is used for this sprocket system.",
+  "stem": "The sprocket on the engine of a scooter has 75 teeth and the sprocket on the back wheel has 150 teeth.",
+  "figureKey": "technology-2014-HL-scheme-secA-q4",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) If the engine sprocket revolves at 1500 rpm, what is the rpm of the sprocket on the back wheel? (ii) Give two reasons why lubrication is used for this sprocket system.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a5",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q5(i), (ii)",
+  "questionText": "(i) Give two main functions of a transistor. (ii) Calculate the gain (hFE) of the transistor shown if the ammeter readings at IB = 250µA and IC = 50mA. Note: hFE = Ic / Ib",
+  "stem": "Part of a transistor testing circuit which includes two ammeters is shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2014-HL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Electronic switch and current amplifier.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "hFE = Ic / Ib = 0.05 / 0.00025 = 200",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a6",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q6(i), (ii)",
+  "questionText": "(i) Explain the terms EST and LST. (ii) Identify the missing terms at X and at Y.",
+  "stem": "A node used in the construction of a critical path diagram is shown below. These diagrams are used to ensure that projects are completed within the specified time.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2014-HL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "EST - Earliest Start Time",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "LST - Latest Start Time",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "X - EFT - Earliest Finish Time",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Y - LFT - Latest Finish Time",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a7",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q7(i), (ii)",
+  "questionText": "(i) Explain the term ergonomic. (ii) Outline two reasons why laptop stands are now commonly used in the workplace.",
+  "stem": "An ergonomic laptop stand is shown in the graphic.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2014-HL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The study of designing equipment and devices which fit the human form.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Dissipation of heat, providing a better position for screen and keyboard to prevent injury due to prolonged use, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a8",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q8(i), (ii)",
+  "questionText": "(i) Outline one method used to analyse an existing product. (ii) Explain the purpose of a Quality Control (QC) system in product manufacture.",
+  "stem": "Product development can involve learning from other designs which have features similar to those required by the new product.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reverse engineering, accelerated tests, bench marking, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Quality control (QC) is a procedure intended to ensure that a manufactured product adheres to a defined set of quality criteria or meets the requirements of the client or customer.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a9",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q9",
+  "questionText": "A hotel elevator has a load carrying capacity of 8 persons (average weight 80 kg). The elevator has a factor of safety of 4. Calculate the design load of the elevator.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Capacity = 8 × 80kg = 640kg",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Design load = 640 × 4 = 2560kg",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a10",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q10(i), (ii)",
+  "questionText": "(i) Name one rapid prototyping method. (ii) Outline two reasons for manufacturing a prototype of a new product before full production commences.",
+  "stem": "Rapid prototyping is used in the development of new products.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3D printing, additive processes, CNC, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Identify faults/modifications prior to full production, less expensive to alter prototypes than production parts, visualise the scale/size of a product, potential saving on material costs, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a11",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q11",
+  "questionText": "Calculate the power required to move the load shown in the graphic below from position A to position B in three seconds.",
+  "stem": "",
+  "figureKey": "technology-2014-HL-scheme-secA-q11",
+  "questionFigureKey": "technology-2014-HL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculate the power required to move the load shown in the graphic below from position A to position B in three seconds.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a12",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q12(i), (ii)",
+  "questionText": "(i) List three sources of renewable energy. (ii) Outline two factors which contribute to a worldwide increase in the demand for energy.",
+  "stem": "The European Union aims to generate 20% of its energy from renewable sources by 2020. (Renewables Directive 2009/28/EC)",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any three renewable sources including solar, wind, tidal, geothermal, biomass, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Increase in global population, greater industrial use for energy, development in use of electronic devices, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a13",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q13",
+  "questionText": "Make well-proportioned freehand sketches of two principal orthographic views of the printer shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2014-HL-paper-secA-q13-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any two orthographic views (elevation, plan, either end view)",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a14",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q14",
+  "questionText": "Social networking sites play a significant role in the lives of many people. Describe the impact of on-line advertising and real-time reporting as features of social networking. On-line advertising: Real-time reporting:",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Has the potential to transform methods of advertising as campaigns can be targeted effectively to potential buyers, consumers can have instant access to large volumes of information, consumers have the power to influence large groups of people through recommendation or sharing negative opinion, on-line brand communities are spread by social networking, reduction in sales of print media, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Current trends are captured as they are happening, information and misinformation is instant, popularity of content is instant and collated which will drive succeeding topics, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-a15",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2014 HL Section A Q15",
+  "questionText": "Use two graphic techniques to enhance the representation of the universal joint shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2014-HL-paper-secA-q15-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "All questions carry 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Two distinct graphic techniques required.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-b2a",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(a)(i), (ii)",
+  "questionText": "(i) State two reasons for creating an emblem for a large sporting event. (ii) Outline two ways in which ideas could be generated in order to develop a design for the emblem.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2014-HL-paper-secB-q2a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Create an identity for the event, advertising, merchandising etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Brainstorming, product research, mind map, survey, competition, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 8 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-b2b",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(b)(i), (ii), (iii)",
+  "questionText": "(i) State two advantages of using barcodes. (ii) Explain the term ‘biometric’. (iii) Outline two Quality Attributes of an effective security system.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Speed of operation, track stock, used for automated systems, reduce risk of errors, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The identification of humans by their characteristics or traits. Systems include fingerprint, face recognition, DNA, palm print, iris recognition, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Loudness of siren output, reliability of circuitry, type of material, waterproof, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-b2c",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(c)(i), (ii)",
+  "questionText": "(i) Describe two pieces of hardware required for wireless communication. (ii) Outline two advantages of using a wireless communication system.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The key hardware components of a wireless communication are headset, microphone, hub, network card, access point, router, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Allows flexibility of access, allows multi-users and range of devices to be used,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "safety - no trailing cables, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-b2d",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q2(d)(i), (ii)",
+  "questionText": "(i) List one property required of the material used to manufacture the outer shell and one property of the material used to manufacture the inner lining. (ii) Describe, using notes and annotated sketches, a method of fastening the shin guard in place during a match.",
+  "stem": "",
+  "figureKey": "technology-2014-HL-scheme-secB-q2d",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Outer shell - Impact resistant, durable, strong, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Inner lining - comfort, mouldable, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Velcro straps are attached to the shin guard.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "They are tightened to fit into place.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-b3a",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q3(a)(i), (ii)",
+  "questionText": "(i) Suggest two reasons for using radioisotope power rather than solar power systems. (ii) Outline two technological benefits accruing to society from the science and engineering developed for space exploration.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Provides consistent power even in darkness, greater power output, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Development of efficient power systems, strong lightweight materials, transmission of information across long distances, remote control, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 8 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-b3b",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q3(b)(i), (ii), (iii)",
+  "questionText": "(i) Name any two electronic devices that might be attached to the turret. (ii) A servo motor is used to move the robotic arm. From the data given below calculate the torque of the motor required to move the arm. Note: g = 9.8m/s2 (iii) Each wheel of the Mars rover is driven independently and designed to rotate with very little friction as this reduces power usage. Sketch and label a drive mechanism for the rover wheel and include a means of reducing friction as the wheel rotates.",
+  "stem": "",
+  "figureKey": "technology-2014-HL-scheme-secB-q3b",
+  "questionFigureKey": "technology-2014-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Camera system, dust removal tool, rock drill, x-ray spectrometer, laser, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Torque = force x distance = (2.5 x 9.8) x 1.1 = 26.95 Nm",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Any suitable annotated sketch of a drive mechanism – Examples: gearbox system, pulley system, chain and sprocket system, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Means of reducing friction: bearing system, automatic lubricators, nylon inserts, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-b3c",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q3(c)(i), (ii)",
+  "questionText": "(i) Compare bitmap and vector based images, making reference to quality and sharpness. (ii) Outline a process of editing to reduce the brightness of a photograph sent back from the Mars rover.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bitmap– made of pixels in a grid, tiny dots of individual colour, resolution dependent e.g., photographs.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Vector– series of geometric objects such as lines and curves. Each object has properties such as colour, width, size, etc. High quality, sharp images are developed.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Brightness, colour, contrast, etc. can be edited using photo-editing software.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Colour filtering allows for the selection of a % brightness which can brighten or darken a photo, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-b3d",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2014 HL Section B Q3(d)(i), (ii)",
+  "questionText": "(i) Distinguish clearly, with examples, between ceramic and composite materials. (ii) Describe a comparison test which could be used to inform the selection of materials capable of withstanding the extremes of temperature expected on Mars.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ceramic materials are inorganic, non-metallic materials made from compounds and formed by heat and subsequent cooling. Examples include clay and superconductors.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Composite materials are made from two or more constituent materials with significantly different physical or chemical properties that when combined, produce a material with enhanced properties. Common examples include concrete and fibre-reinforced plastics.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Any suitable test outlined that makes reference to the effects on the properties of various materials due to the extremes of temperature, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 6 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c1a",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q1(a)(i), (ii)",
+  "questionText": "(i) Outline the suitability of 3D printing for prototyping a mobile phone. (ii) Explain, using sketches, the terms polar coordinate system and cylindrical coordinate system.",
+  "stem": "",
+  "figureKey": "technology-2014-HL-scheme-secC-q1a",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Design created in CAD, can be edited and reprinted, quick reproduction, tactile, colour and shape can be edited, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Polar: Radius, angle and longitude/ latitude required to specify points in space, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Cylindrical: Radius, height and angle required to specify points in space, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c1b",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q1(b)(i), (ii)",
+  "questionText": "(i) Draw a flowchart for the operation of this air conditioning unit. (ii) Modify the flowchart to include an alert for the user if the motor in the air conditioning unit overheats.",
+  "stem": "",
+  "figureKey": "technology-2014-HL-scheme-secC-q1b",
+  "questionFigureKey": "technology-2014-HL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(b) - 16 marks"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) Draw a flowchart for the operation of this air conditioning unit. (ii) Modify the flowchart to include an alert for the user if the motor in the air conditioning unit overheats.",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 16 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c1c",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q1(c)(i), (ii)",
+  "questionText": "(i) Ekso uses a closed-loop control system to maintain proper positioning of the exoskeleton. Outline the principles of a closed-loop system of control. (ii) Compare servo motors and stepper motors as sources of motive power.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 14 marks"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A closed loop control system monitors its movements through the provision of feedback.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "When working with DC motors, shaft encoders are commonly used as accurate feedback can be provided, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Servo motors give smooth control with good torque and precision, 80-90% efficient, quiet without vibration, limited rotation in some servos, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Stepper motors are easy to control using a pulsing sequence, torque is greater at low speeds, can provide a holding torque even when not powered, reasonable cost, continuous rotation, precision, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 14 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c1d",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q1(d)(i), (ii)",
+  "questionText": "(i) Describe the main features of a pneumatic control system and give two common applications. (ii) A barrier to control cars entering and leaving a car park is raised and lowered by pneumatic control. Draw a suitable pneumatic control circuit to operate the barrier.",
+  "stem": "",
+  "figureKey": "technology-2014-HL-scheme-secC-q1d",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 14 marks"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Air compressor supplies air that is filtered, pressure regulated and lubricated. Pneumatic cylinders and valves are controlled to convert stored energy into motion, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Used for automatic doors, drills, paint spraying, clamping, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 14 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c2a",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q2(a)(i), (ii)",
+  "questionText": "(i) Distinguish clearly, with examples, between conductor, insulator and semiconductor materials. (ii) An electrical heater with a resistance of 24 ohms is connected to a 240V supply for 12 hours. Calculate the cost of operation if electrical energy costs 25 cents per kWh.",
+  "stem": "",
+  "figureKey": "technology-2014-HL-scheme-secC-q2a",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Conductors allow current to pass e.g. copper. Insulators prevent current flow, e.g. PVC.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Semi-conductors allow small amounts of current to flow, e.g. Silicon.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c2b",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q2(b)(i), (ii), (iii)",
+  "questionText": "(i) The circuit shown is astable. Describe what is meant by an astable circuit. (ii) The soft-glow nightlight stays on continuously while the ultrasonic sound is emitted at intervals. Describe how the given circuit could be modified to achieve this. (iii) For the given circuit, if the value of C is 10μF, R1 is 10kΩ and R2 is 68kΩ calculate the frequency. Note: f = 1.44 / (2R2 + R1) × C",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2014-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 16 marks"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The circuit is called an astable because it is not stable in any state. The output is continually changing between 'low' and 'high' which produces output at intervals.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The light circuit can be placed in parallel with the 555 timing circuit. The ultrasonic sounder needs to be connected to pin no. 3 and to the zero voltage rail, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "f = 1.44 / (2R2+R1) × C f = 1.44 / (136,000+10,000) × 0.00001 = 0.99Hz",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 16 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c2c",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q2(c)(i), (ii)",
+  "questionText": "(i) Name parts A, B and C of the DC motor shown. (ii) Describe one electrical and one mechanical method used to change the direction of rotation of a DC motor.",
+  "stem": "",
+  "figureKey": "technology-2014-HL-scheme-secC-q2c",
+  "questionFigureKey": "technology-2014-HL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Contacts/Brushes",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Commutator",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Permanent magnet (stator)",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 14 marks"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A - Contacts/Brushes, B - Commutator and C - Permanent magnet (stator)",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Electrical: DPDT switch, relay circuit, PIC control, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Mechanical: Gearbox, extra gear, cross belt pulley system, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 14 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c2d",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q2(d)(i), (ii)",
+  "questionText": "(i) Draw a logic circuit to reflect the given truth table. (ii) Name any sensor which could be used in the weather station.",
+  "stem": "",
+  "figureKey": "technology-2014-HL-scheme-secC-q2d",
+  "questionFigureKey": "technology-2014-HL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 14 marks"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Thermistor, LDR, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 14 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c3a",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q3(a)(i), (ii)",
+  "questionText": "(i) Describe two potential health problems related to the prolonged use of mobile computing devices. (ii) Outline one method of reducing the potential health impact of using a laptop computer.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Repetitive strain injury, back problems associated with poor posture, eye strain, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Use of a docking device promotes better seating position, take regular breaks, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c3b",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q3(b)(i), (ii), (iii)",
+  "questionText": "(i) A large company has a LAN. The IT manager of the company wants to replace it with a WLAN. Explain the differences between a LAN and a WLAN. (ii) Explain the term ad-hoc in relation to wireless networking. (iii) Differentiate between infrared and radio frequency in relation to wireless transmission.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 16 marks"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "LAN is a local area network- this connects computers in a limited area using cables.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "WLAN is a wireless local area network which allows devices within range to be connected with wire-free interface, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Ad-hoc mode is a method for wireless devices to directly communicate with each other. This allows all wireless devices within range of each other to discover and communicate in peer-to-peer fashion without involving central access points, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "IR transmit and receive systems are inexpensive and are generally reliable. The carrier frequency of infrared signals is typically in the order of around 38 kHz, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Radio Frequency (RF) do not require line of sight and do not have to be aimed at the equipment.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "RF offers greater range than IR. It is omni-directional and allows the control of devices in other rooms, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 16 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c3c",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q3(c)(i), (ii)",
+  "questionText": "(i) Describe the advantages and disadvantages for a company of using proprietary software rather than open source software. (ii) Word processing software allows font editing to enhance a document. For each of the following items of functionality, name a software package which includes that feature.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2014-HL-paper-secC-q3c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 14 marks"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Proprietary software or \"closed source\" software has source code that cannot be modified by anyone but the person, team, or organisation who created it and maintains exclusive control over it.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Open source is software whose source code is available for modification or enhancement by others.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Proprietary software allows the user to create and share files without the need for additional expertise, business users are less prone to infiltration by viruses and will have software vendor support. Open source software will increase control of the user, promote better programming, update quickly and can be free to use.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Slide transition Presentation e.g. PowerPoint, Keynote, Prezi.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Use of counters Web design e.g. Dreamweaver, Word Press.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Mute, play and pause Media player e.g. Windows media player, iTunes.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Crop Graphics or desktop publishing e.g. Publisher.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 14 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c3d",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q3(d)(i), (ii)",
+  "questionText": "(i) Distinguish between voice recognition and chip and pin as methods of verifying data. (ii) Outline what is meant by each of the terms: computer hacking, spam, data encryption.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 14 marks"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Voice recognition involves the use of a computer program to identify/authenticate the speech pattern of an individual voice. The speech pattern is compared against data stored on a computer hard drive.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "‘Chip and pin’ has contact pads on a card which allows electronic access which can be verified by a unique personal identification number.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Computer hacking exploits and modifies computer software for access to protected information.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Spam is the use of electronic messaging systems to send unsolicited bulk messages (spam), especially advertising, indiscriminately. Encryption means to scramble data in such a way that only someone with access to the code / key can read it.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 14 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c4a",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q4(a)(i), (ii)",
+  "questionText": "(i) Outline what is meant by a modular approach to design. (ii) Explain the terms reverse engineering and feasibility study.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Modular design is a form of splitting an object into smaller portions such that when they are done, they are joined together to form one complete system.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Modular design is employed when building cars, computers or high-rise buildings, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Reverse engineering is the process of discovering the technological principles of an existing device, object, or system through analysis of its structure, function, and operation. It often involves disassembling the device, object or program and analysing its components and workings in detail.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Their best features can then be incorporated into a new design.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "A feasibility study is an analysis of the ability to complete a project successfully, taking into account legal, economic, technological, scheduling and other factors. It allows project managers to investigate the possible negative and positive outcomes of a project before investing too much time and money.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c4b",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q4(b)(i), (ii), (iii)",
+  "questionText": "(i) Explain the difference between a process that is capable and a process that is not capable. (ii) For a product such as Phonebloks to be successful, all blocks need to be made to specifications that ensure they are interchangeable and will fit into any assembly of the same type. The graphic shows a camera block-lens which is produced by two different manufacturers. Measurement of samples from the manufacturers of the camera lens are given below: Manufacturer A - standard deviation = 0.04077 Manufacturer B - standard deviation = 0.01620 The lens must have an outside diameter between 7.85 mm and 7.95 mm. Calculate the process capability index for each manufacturer where: Cp = Tolerance Range (iii) Which manufacturer should be chosen to manufacture the lens? Justify your selection.",
+  "stem": "",
+  "figureKey": "technology-2014-HL-scheme-secC-q4b",
+  "questionFigureKey": "technology-2014-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 16 marks"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Capable process means that the normal distribution curve falls within the design specifications– most parts produced would pass an inspection test, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Not capable means it falls outside the specifications/tolerances desired– an unacceptable number of parts would fail an inspection test, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Manufacturer B - tolerances will be met all of the time, no products will have defects, process is capable.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 16 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c4c",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q4(c)(i), (ii)",
+  "questionText": "(i) Name and briefly describe the four stages in the life cycle of a product. (ii) Discuss the differences between the life cycle graphs of the electronic devices shown below.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2014-HL-paper-secC-q4c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 14 marks"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Introduction - Design/Research/Testing/Manufacture/Marketing/Distribution/Sales, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Growth - Marketing/Acceptance/Sales growth, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Maturity - Sales peak/plateau, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Decline - Obsolescence/superceeded/sales decline, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "This laptop computer shown exhibits a life cycle with an initially exceptionally strong sales growth and an immediate acceptance of the product. This product is seen as fashionable with a popular style in its market. It also demonstrates a shortened life cycle as sales decline faster than the standard life cycle.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "The electronic toy is a ‘fad’ product that is around for a short period and is generated by hype.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Sales peak very quickly and this product has a very short life cycle, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 14 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c4d",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q4(d)(i), (ii)",
+  "questionText": "(i) Reliability and durability are quality dimensions. Briefly outline what is meant by each of these terms. (ii) The graphics show the casing for a domestic alarm. Suggest three important characteristics of the alarm casing.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2014-HL-paper-secC-q4d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 14 marks"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reliability – The probability a product operates correctly for a given time frame under specified conditions. This is a key element for users who need the product to work without fail.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Durability – Measures the length of a product’s life. The item will be used until it is no longer economical to operate it. This happens when the repair rate and the associated costs increase.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Waterproof seal,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Weather resistant material,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Capable of holding circuit,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Heat resistant,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Durable, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 14 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c5a",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(a)(i), (ii)",
+  "questionText": "(i) Describe the main properties of thermosetting plastics, ferrous metals and softwoods. Use specific examples in each case to support your answer. (ii) Outline two potential hazards when using adhesives to bond materials.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Thermosetting can only be set once. They are hard and have a high melting point e.g. Bakelite.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Ferrous metal contain iron. Steels are magnetic, malleable and ductile.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Softwoods are generally evergreen, soft and mature quickly e.g. pine.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Adhesives can produce dangerous fumes, ventilation is needed.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Care must be taken not to bond skin. Suitable adhesive must be selected to ensure good adhesion.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c5b",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(b)(i), (ii), (iii)",
+  "questionText": "(i) Suggest two reasons why the workstation frame is made from steel. (ii) The seat is made from four polypropylene parts. Outline a manufacturing process suitable for the production of these parts. (iii) Explain, using notes and annotated sketches, a method of attaching the adjustable screens to the steel frame.",
+  "stem": "",
+  "figureKey": "technology-2014-HL-scheme-secC-q5b",
+  "questionFigureKey": "technology-2014-HL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 16 marks"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ease of fabrication, can be welded, readily available, cost effective, strong and ductile, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Description of a suitable manufacturing process, e.g. injection moulding.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Brackets can be fixed using nuts and bolts. This allows the screens to be replaced if needed.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 16 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c5c",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(c)(i), (ii)",
+  "questionText": "(i) The computer workstation above was found to have a number of design limitations. In particular, the seating arrangement was uncomfortable for long term use. Outline, using notes and annotated sketches, a modification that would rectify this issue. (ii) The keyboard shelf is hinged to allow easy access to the workstation. Explain why accelerated testing was used to test the hinge and describe how such a test could be carried out.",
+  "stem": "",
+  "figureKey": "technology-2014-HL-scheme-secC-q5c",
+  "questionFigureKey": "technology-2014-HL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 14 marks"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The seating position could be adjusted to tilt backwards, use of pivot joints, height adjustment etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Any valid alternative solution.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Accelerated testing is used to test objects when the expected life is too long to capture suitable data.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The test is set up with the hinge to be automatically opened and closed to simulate the operating action of the hinge. The number of movements can be measured or set for the testing process.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "An indication of the expected hinge life and degradation can then be ascertained, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 14 marks' for this question."
+ },
+ {
+  "id": "tech-2014-hl-c5d",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2014,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2014 HL Section C Q5(d)(i), (ii)",
+  "questionText": "(i) Give two reasons for the development of technologies such as the hydrogen fuel cell. (ii) Outline the environmental impact of producing this model car, from the production of the initial polymers to end-of-life disposal.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2014-HL-paper-secC-q5d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 14 marks"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Need to seek alternative source of fuels, necessary to investigate sources of cleaner technologies than fossil fuels, effective use of renewable energies, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Thermoplastics are produced chemically from oil in the process of polymerisation.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The sourcing and refining of oil and chemical processing impacts on the environment and energy use.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Processing into shape by electrically-driven industrial moulding machines.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "The model then uses further energy as it must be assembled, packaged, transported and retailed.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "At the end of life, the model may be recycled by heating and shaping again.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Alternatively, if disposed in landfill, thermoplastics are slow to decompose, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 14 marks' for this question."
+ },
+ {
   "id": "tech-2015-hl-a1-i",
   "topicId": "tech-core-materials",
   "conceptId": "core-materials",

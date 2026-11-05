@@ -2673,6 +2673,9 @@ ASK_ONLY.update({
 })
 # 2(b)(i)'s circuit reaches left over the ends of (ii)'s answer lines.
 SOLUTION_NOT_ZONE.add('technology-2015-HL-scheme-secC-q2b-i')
+# 2014 Higher 1(b)'s two flowcharts are one crop with (ii)'s ask between
+# them; the flowcharts' own label zones strip their lettering.
+SOLUTION_NOT_ZONE.add('technology-2014-HL-scheme-secC-q1b')
 WHITEOUT.update({
     'technology-2015-HL-scheme-secC-q2b-i': [(326, 230, 347, 264)],
 })
@@ -2856,6 +2859,164 @@ MD_LINE_FIX[(2015, 'ol')] = [
     # 5(d)(ii): the Grub screw sketch's caption, read onto the band's line.
     (r'^Grub screw (Fair description- 4 marks\) \(10 Marks, 4\+6\))$', r'\1'),
 ]
+# 2014 Higher. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    'technology-2014-HL-paper-secA-q3-art': ('014', 1, (450, 522, 524, 612)),
+    'technology-2014-HL-paper-secA-q5-art': ('014', 2, (440, 398, 562, 502)),
+    'technology-2014-HL-paper-secA-q6-art': ('014', 2, (372, 600, 561, 740)),
+    'technology-2014-HL-paper-secA-q7-art': ('014', 3, (408, 48, 560, 135)),
+    'technology-2014-HL-paper-secA-q11-art': ('014', 4, (170, 455, 452, 552)),
+    'technology-2014-HL-paper-secA-q13-art': ('014', 5, (55, 490, 226, 600)),
+    'technology-2014-HL-paper-secA-q15-art': ('014', 6, (155, 520, 442, 708)),
+    'technology-2014-HL-paper-secB-q2a-art': ('015', 1, (459, 68, 582, 226)),
+    # 3(b): the arm's data diagram and the turret photograph.
+    'technology-2014-HL-paper-secB-q3b-art': ('015', 2, (100, 268, 540, 405)),
+    'technology-2014-HL-paper-secC-q1b-art': ('015', 3, (396, 283, 580, 390)),
+    # 2(b): the deterrent device and its 555 circuit.
+    'technology-2014-HL-paper-secC-q2b-art': ('015', 4, (195, 195, 565, 365)),
+    'technology-2014-HL-paper-secC-q2c-art': ('015', 4, (410, 450, 560, 590)),
+    # 2(d): the weather station and the given truth table.
+    'technology-2014-HL-paper-secC-q2d-art': ('015', 4, (155, 605, 565, 785)),
+    'technology-2014-HL-paper-secC-q3c-art': ('015', 5, (90, 518, 390, 624)),
+    'technology-2014-HL-paper-secC-q4b-art': ('015', 6, (454, 500, 561, 589)),
+    # 4(c): the numbered life-cycle graph (i) names the stages of, and the two
+    # devices' graphs (ii) compares, with (ii)'s ask between them blanked.
+    'technology-2014-HL-paper-secC-q4c-art': ('015', 7, (160, 120, 445, 412)),
+    'technology-2014-HL-paper-secC-q4d-art': ('015', 7, (145, 530, 505, 680)),
+    'technology-2014-HL-paper-secC-q5b-art': ('015', 8, (335, 160, 566, 366)),
+    'technology-2014-HL-paper-secC-q5d-art': ('015', 8, (402, 618, 578, 770)),
+})
+WHITEOUT.update({
+    # 3(b)(ii)'s ask, printed left of the arm diagram.
+    'technology-2014-HL-paper-secB-q3b-art': [(100, 268, 400, 318)],
+    # Q6(ii)'s answer line, under the node's bottom-left corner.
+    'technology-2014-HL-paper-secA-q6-art': [(370, 724, 440, 740)],
+    # 2(c)(ii)'s "Any valid alternative solution accepted." under the gearbox.
+    'technology-2014-HL-scheme-secC-q2c': [(360, 580, 500, 590)],
+    # 2(b)'s stem, printed above the device.
+    'technology-2014-HL-paper-secC-q2b-art': [(195, 195, 390, 246)],
+    # The end of "appliances." beside the motor.
+    'technology-2014-HL-paper-secC-q2c-art': [(410, 484, 442, 500)],
+    # 2(d)'s stem and asks, printed around the station's pictures.
+    'technology-2014-HL-paper-secC-q2d-art': [(155, 605, 412, 642), (155, 735, 412, 785)],
+    'technology-2014-HL-paper-secC-q4c-art': [(160, 262, 445, 292)],
+})
+FIGURE_SHARED.update({
+    # 5(c): "The computer workstation above".
+    'technology-2014-HL-paper-secC-q5c-art': 'technology-2014-HL-paper-secC-q5b-art',
+})
+LABEL_KEYS.update({
+    # 2(c)(i): the scheme's own words for the motor's letters.
+    (2014, 'hl', 'C', 2, 'c'): [
+        {'letter': 'A', 'meaning': 'Contacts/Brushes'},
+        {'letter': 'B', 'meaning': 'Commutator'},
+        {'letter': 'C', 'meaning': 'Permanent magnet (stator)'}],
+})
+# 2014 Higher. The scheme's own drawn answers and worked fractions.
+SOLUTIONS.update({
+    'technology-2014-HL-scheme-secA-q4': (4, (85, 138, 420, 300),
+        "The marking scheme's own answer to 2014 HL Section A Q4, as the State "
+        "Examinations Commission printed it: a boxed calculation, VR = 75 over "
+        "150 = 1:2 and RPM = 1500 x 1 over 2 = 750 rpm (written as stacked "
+        "fractions), then (ii)'s question and its answer: Prevent build-up of "
+        "heat by reducing friction, reduce noise, minimise wear, stop rusting, etc."),
+    'technology-2014-HL-scheme-secA-q11': (6, (80, 580, 528, 705),
+        "The marking scheme's own answer to 2014 HL Section A Q11, as the State "
+        "Examinations Commission printed it: a boxed calculation, Work = force x "
+        "distance = 300 x 0.85 = 255 joule (Note: 1Nm = 1joule); Power = Work "
+        "over Time = 255 over 3 = 85 watt (written as stacked fractions)."),
+    'technology-2014-HL-scheme-secB-q2d': (11, (288, 662, 350, 768),
+        "The marking scheme's own photograph for 2014 HL Section B 2(d)(ii), as "
+        "the State Examinations Commission printed it: a shin guard held on by "
+        "black straps, an arrow pointing to a strap."),
+    'technology-2014-HL-scheme-secB-q3b': (12, (321, 336, 441, 405),
+        "The marking scheme's own photograph for 2014 HL Section B 3(b)(iii), as "
+        "the State Examinations Commission printed it: a close-up of a Mars "
+        "rover wheel on its axle."),
+    'technology-2014-HL-scheme-secC-q1a': (13, (91, 214, 546, 292),
+        "The marking scheme's own sketches for 2014 HL Section C 1(a)(ii), as the "
+        "State Examinations Commission printed them: a sphere with a point "
+        "located by a radius and two angles, and a cylinder with a point "
+        "located by a radius, an angle and a height."),
+    'technology-2014-HL-scheme-secC-q1b': (13, (60, 398, 548, 760),
+        "The marking scheme's own flowcharts for 2014 HL Section C 1(b), as the "
+        "State Examinations Commission printed them. (i): Start, Red LED on, "
+        "then a decision Desired temp.?; on Yes Green LED on, on No fan on, "
+        "each looping back to above the decision. (ii): the same, with fan on "
+        "followed by a decision Motor temp. high? leading to Alarm on. Between "
+        "them the scheme reprints (ii)'s question and Any valid alternative "
+        "solution accepted."),
+    'technology-2014-HL-scheme-secC-q1d': (14, (200, 590, 445, 665),
+        "The marking scheme's own pneumatic circuit for 2014 HL Section C "
+        "1(d)(ii), as the State Examinations Commission printed it: a "
+        "push-button valve with ports 1, 2 and 3, a flow control valve, and a "
+        "single-acting cylinder with a spring return."),
+    'technology-2014-HL-scheme-secC-q2a': (15, (140, 157, 470, 200),
+        "The marking scheme's own answer to 2014 HL Section C 2(a)(ii), as the "
+        "State Examinations Commission printed it: Power = V squared over R = "
+        "(240) squared over 24 = 2.4 kW x 12 = 28.8 kWh; Cost = 28.8 x 0.25 = "
+        "7.20 euro."),
+    'technology-2014-HL-scheme-secC-q2c': (15, (110, 519, 500, 590),
+        "The marking scheme's own drawings for 2014 HL Section C 2(c)(ii), as "
+        "the State Examinations Commission printed them: a motor M wired "
+        "through a double-pole switch and a relay, and a small gearbox."),
+    'technology-2014-HL-scheme-secC-q2d': (15, (190, 628, 450, 746),
+        "The marking scheme's own logic circuit for 2014 HL Section C 2(d)(i), "
+        "as the State Examinations Commission printed it: Night through a NOT "
+        "gate and Temp. into an AND gate, whose output with Switch goes into a "
+        "second AND gate, giving Alarm."),
+    'technology-2014-HL-scheme-secC-q4b': (17, (112, 606, 490, 700),
+        "The marking scheme's own answer to 2014 HL Section C 4(b)(ii), as the "
+        "State Examinations Commission printed it: A: Cp = Tolerance Range over "
+        "6 sigma = (7.95 - 7.85) over 6(0.04077) = 0.41; B: Cp = Tolerance Range "
+        "over 6 sigma = (7.95 - 7.85) over 6(0.01620) = 1.03, each written as "
+        "stacked fractions."),
+    'technology-2014-HL-scheme-secC-q5b': (19, (157, 282, 292, 348),
+        "The marking scheme's own photograph for 2014 HL Section C 5(b)(iii), as "
+        "the State Examinations Commission printed it: a screen bracket bolted "
+        "to the frame, with two red arrows pointing to the bolts."),
+    'technology-2014-HL-scheme-secC-q5c': (19, (345, 409, 575, 485),
+        "The marking scheme's own photograph for 2014 HL Section C 5(c)(i), as "
+        "the State Examinations Commission printed it: a person reclining in the "
+        "workstation chair, labelled Screen and Tilt backwards and raise foot "
+        "position."),
+})
+ASK_ONLY.update({
+    'technology-2014-HL-scheme-secA-q4',
+    'technology-2014-HL-scheme-secA-q11',
+    'technology-2014-HL-scheme-secC-q1b',
+})
+LABEL_ZONES.setdefault((2014, 'hl'), []).extend([
+    (4, (430, 398, 560, 495)),     # Q5's circuit reprinted, IB and IC
+    (4, (362, 605, 556, 742)),     # Q6's node reprinted, X and Y
+    (6, (170, 455, 452, 545)),     # Q11's load diagram reprinted
+    (13, (355, 504, 545, 760)),    # 1(b)(ii)'s flowchart
+    (13, (60, 398, 255, 565)),     # 1(b)(i)'s flowchart
+    (15, (190, 628, 450, 746)),    # 2(d)(i)'s gates
+    (18, (385, 258, 565, 328)),    # 4(c)(ii)'s graphs reprinted
+    (19, (345, 405, 575, 485)),    # 5(c)(i)'s photograph and labels
+])
+MD_LINE_FIX[(2014, 'hl')] = [
+    # 1(a)(ii): two columns of notes welded line by line; each column's
+    # words, in order, on a line of its own.
+    (r'^Polar: Radius, angle and longitude/ Cylindrical: Radius, height and angle required$',
+     'Polar: Radius, angle and longitude/ latitude required to specify points in space, etc.'),
+    (r'^latitude required to specify points in to specify points in space, etc\.$',
+     'Cylindrical: Radius, height and angle required to specify points in space, etc.'),
+    (r'^space, etc\.$', ''),
+    # 2(c)(ii): the same, the electrical and mechanical methods.
+    (r'^Electrical: DPDT switch, relay circuit, Mechanical: Gearbox, extra gear,$',
+     'Electrical: DPDT switch, relay circuit, PIC control, etc.'),
+    (r'^PIC control, etc\. cross belt pulley system, etc\.$',
+     'Mechanical: Gearbox, extra gear, cross belt pulley system, etc.'),
+    # 3(c)(ii): the answer table's header row, which answers nothing.
+    (r'^Feature Software package$', ''),
+    # 4(b)(i): one sentence broken before "specifications", joined.
+    (r'^Capable process means that the normal distribution curve falls within the design$', ''),
+    (r'^(specifications\u2013 most parts produced would pass an inspection test, etc\.)$',
+     r'Capable process means that the normal distribution curve falls within the design \1'),
+]
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -2911,6 +3072,9 @@ ASK_STRIP = {
     (2016, 'hl', 'B', 3, 'd', 'i'): [r'^Construct a Gantt chart for the project\.$'],
     # 2016 Ordinary Q3: the answer lines' numbers "1 2" after the ask.
     (2016, 'ol', 'A', 3, None, None): [r'\s+1 2(?: Solar Paper®)?$'],
+    # 2014 Higher Q6: the node's lettering, X and Y, and the answer lines'
+    # EST/LST labels, read after the stem.
+    (2014, 'hl', 'A', 6, None, None): [r'\s+X EST EST Activity Name Duration LST LST Y X Y$'],
     # 2015 Ordinary 5(a): (ii)'s two alloys, set beside the wheel photograph,
     # read onto the letter's stem.
     (2015, 'ol', 'C', 5, 'a', 'i'): [r'(?:^|\s+)1\. Bronze\. 2\. Solder\.$'],
