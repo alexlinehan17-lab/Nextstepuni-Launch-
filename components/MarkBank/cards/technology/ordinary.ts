@@ -1150,10 +1150,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "X- NOT gate Y- OR gate.", marks: 6, openList: true },
     ],
     questionFigure: {
-          "candId": "technology-2015-OL-paper-secC-q2d-art",
-          "src": "/exam-figures/technology/markbank/technology-2015-OL-paper-secC-q2d-art.png",
-          "srcHash": "2de90fbe2ad0b47dd2c54695eee10da3",
-          "alt": "A logic circuit: input A into gate X giving C, and C with input B into gate Y giving D; below it a truth table with columns A, B, C and D, A and B filled in (00, 01, 10, 11) and C and D blank.",
+          "candId": "technology-2015-OL-paper-secC-q2d-i-art",
+          "src": "/exam-figures/technology/markbank/technology-2015-OL-paper-secC-q2d-i-art.png",
+          "srcHash": "d41cf0df4adf34878eb0d0ae2dc8fa2c",
+          "alt": "A logic circuit: input A into gate X giving C, and C with input B into gate Y giving D.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Technology 2015 Ordinary Level — © State Examinations Commission",
           "includesPrompt": false

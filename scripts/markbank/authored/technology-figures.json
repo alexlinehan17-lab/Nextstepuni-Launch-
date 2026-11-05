@@ -7530,6 +7530,21 @@
   ]
  },
  {
+  "file": "technology-2015-OL-paper-secC-q2d-i-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A logic circuit: input A into gate X giving C, and C with input B into gate Y giving D.",
+  "questionRef": "2015 OL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   412,
+   586,
+   524,
+   652
+  ]
+ },
+ {
   "file": "technology-2026-HL-scheme-secA-q8.png",
   "kind": "figure",
   "truncated": false,

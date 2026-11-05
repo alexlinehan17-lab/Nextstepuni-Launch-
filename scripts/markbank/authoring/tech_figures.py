@@ -1724,6 +1724,9 @@ REVIEWED.update({
         'A logic circuit: input A into gate X giving C, and C with input B into '
         'gate Y giving D; below it a truth table with columns A, B, C and D, A '
         'and B filled in (00, 01, 10, 11) and C and D blank.',
+    'technology-2015-OL-paper-secC-q2d-i-art':
+        'A logic circuit: input A into gate X giving C, and C with input B into '
+        'gate Y giving D.',
     'technology-2015-OL-paper-secC-q3d-art':
         'Photographs of three cable connectors labelled A, B and C: a flat '
         'rectangular metal plug, a slim round plug with bands on its tip, and a '

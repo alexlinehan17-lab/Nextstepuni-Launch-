@@ -2719,6 +2719,8 @@ BY_EYE.update({
     'technology-2015-OL-paper-secC-q2c-art': ('015', 4, (52, 450, 170, 571)),
     # 2(d): the two gates (X, Y) and the truth table (ii) completes.
     'technology-2015-OL-paper-secC-q2d-art': ('015', 4, (205, 584, 524, 790)),
+    # 2(d)(i) names the gates: the gates alone, at a size a phone shows.
+    'technology-2015-OL-paper-secC-q2d-i-art': ('015', 4, (412, 586, 524, 652)),
     'technology-2015-OL-paper-secC-q3d-art': ('015', 5, (52, 630, 470, 718)),
     'technology-2015-OL-paper-secC-q4b-art': ('015', 6, (401, 213, 542, 368)),
     'technology-2015-OL-paper-secC-q4c-art': ('015', 6, (38, 446, 186, 560)),

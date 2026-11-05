@@ -59280,5 +59280,16 @@
   "year": 2015,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Technology 2015 Ordinary Level — © State Examinations Commission"
+ },
+ "technology-2015-OL-paper-secC-q2d-i-art": {
+  "src": "/exam-figures/technology/markbank/technology-2015-OL-paper-secC-q2d-i-art.png",
+  "md5": "d41cf0df4adf34878eb0d0ae2dc8fa2c",
+  "alt": "A logic circuit: input A into gate X giving C, and C with input B into gate Y giving D.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Section C Q2(d)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Technology 2015 Ordinary Level — © State Examinations Commission"
  }
 }
