@@ -1,6 +1,6 @@
 {
  "v": 1,
- "cardCount": 345,
+ "cardCount": 370,
  "cards": [
   {
    "id": "re-2026-hl-a-1-a",
@@ -52614,6 +52614,3904 @@
      19
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-a-1-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2020 HL Section A Q1(a)(i)",
+   "topicId": "re-a",
+   "conceptId": "decide-good-evil-suffering-part-life",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "How do I decide what is good or evil? Why is suffering part of life? Describe how people searching for answers to one of the above questions can be seen today in any of the following: art, literature, music or youth culture.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of how the search for meaning finds expression by giving an accurate account of how people searching for answers to one of the questions stated above can be seen today in art or literature or music or youth culture e.g.",
+    "points": [
+     "Art/Youth Culture — ‘At Eternity's Gate’ by Vincent Van Gogh shows suffering as part of the human condition etc.",
+     "Literature/Youth Culture — ‘Harry Potter’ by J.K. Rowling shows people choosing to act for the good of others or in a way that harms others etc.",
+     "Music/Youth Culture — 'Where is the love' by the Black Eyed Peas asks why is there so much suffering in the world etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow for a variety of approaches and reference to art, literature, music or youth culture in general."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     3
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-a-1-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2020 HL Section A Q1(a)(ii)",
+   "topicId": "re-a",
+   "conceptId": "thinking-socrates-ancient-greece-either-moral",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline the thinking of Socrates, in Ancient Greece, on either the moral good or the purpose of life.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the philosophical thought of Ancient Greece by setting out accurate information on Socrates’ idea of either the moral good or the purpose of life e.g.",
+    "points": [
+     "Moral good — Socrates sought universal principles, objective truths that go beyond mere opinion or sentiment and hold true for all people in all situations etc.",
+     "Purpose of life — to achieve lasting happiness by living a virtuous life; acquisition of knowledge, caring for the soul etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-a-1-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2020 HL Section A Q1(b)",
+   "topicId": "re-a",
+   "conceptId": "polytheism-featured-establishment-monotheistic-religions-christianity",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Examine how polytheism featured in the establishment of one of the following monotheistic religions: ◆ CHRISTIANITY ◆ ISLAM ◆ JUDAISM",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of polytheism and monotheism by looking closely at how belief in many gods can be seen in the founding story of one religion listed in the question e.g.",
+    "points": [
+     "Christianity — Jesus preached a monotheistic understanding of God at a time when Palestine was ruled by the Romans who held polytheistic beliefs; some first Christian communities were established in places associated with polytheistic practices e.g. Thessalonica etc.",
+     "Islam — Muhammad removed images of many gods from the Ka’ba and established Islam as a monotheistic religion etc.",
+     "Judaism — Abraham lived within a polytheistic culture in Ur; Moses at Mount Sinai found the Jewish people worshipping a golden bull etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "34 - 40",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "28 - 33",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "22 - 27",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "16 - 21",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "10 - 15",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "4 - 9",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 3",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     4,
+     5
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-a-2-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2020 HL Section A Q2(a)",
+   "topicId": "re-a",
+   "conceptId": "match-halted-because-players-insulted-spectators",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Match halted because players are insulted by spectators using racist symbols and language. Describe another example of how people use a form of symbolic language and explain why it features in secular or religious life today.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of symbolic language by giving an accurate account of how people use symbolic language and why it is displayed in secular and/or religious life today using a different example, to that given in the question e.g.",
+    "points": [
+     "Secular — giving a sympathy card to a person who is grieving as a sign of comfort, support or solidarity; exchanging rings in a wedding ceremony as a sign of commitment etc.",
+     "Religious — Christians make the sign of the cross to express faith in Jesus Christ; Jewish people share a Sabbath meal as a sign of their commitment to the Covenant etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     5
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-a-2-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2020 HL Section A Q2(b)(i)",
+   "topicId": "re-a",
+   "conceptId": "understanding-god-gods-transcendent-found-religions",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline how the understanding of God/gods/the transcendent found in one of the above religions is reflected in their moral code.",
+   "stem": "◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the relationship between religious faith and an ethical code by setting out accurate information on how the understanding of God/gods/the transcendent, found in one religion listed in the question, is evident in its moral code e.g.",
+    "points": [
+     "Buddhism — the understanding of the Buddha as the ‘Enlightened One’ is reflected in the way his teaching features in the Eightfold Path e.g. practice right action, intention etc.",
+     "Christianity — the understanding of God as loving and forgiving is reflected in the moral code of ‘loving your neighbour as yourself’ etc.",
+     "Hinduism — the belief in various gods as manifestations of Brahman (e.g. the goddess Parvati’s symbols of power emphasise how she will destroy evil and protect people in time of need) is reflected in the way believers observe the Law of Karma etc.",
+     "Islam — the belief in Allah as compassionate and merciful influences believers to also be compassionate especially to the poor and needy e.g. the Zakat etc.",
+     "Judaism — the belief in one all-powerful God is reflected in the first three commandments of the Decalogue etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     6
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-a-2-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2020 HL Section A Q2(b)(ii)",
+   "topicId": "re-a",
+   "conceptId": "values-held-members-religions-relate-seen",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Examine how the values held by members of two of the above religions relate to what is seen as important from a non-religious point of view in society today.",
+   "stem": "◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the relationship between religious faith and a non-religious worldview by looking closely at how one or more ideals held by two religions listed in the question relate to a non-religious viewpoint in society today e.g.",
+    "points": [
+     "Buddhism — the Eightfold Path’s ‘right action’ promotes behaviour that is for the good of others; laws in secular culture today prevent people from harming others etc.",
+     "Christianity — Jesus’ message to ‘love your neighbour’ calls on believers to work for justice and care for the needy; equality and human rights are enshrined in laws and values in secular society today etc.",
+     "Hinduism — the ‘Law of Karma’ in Hinduism promotes the concept of reward and punishment based on action; laws in secular society punish those who harm others etc.",
+     "Islam — the ‘Zakat’ imperative for almsgiving; charitable organisations in secular society today aim to help those who live in poverty etc.",
+     "Judaism — Genesis presents human beings as caretakers of the environment; laws in secular society (e.g. carbon tax etc.) promote taking care of the environment etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers; implicit reference to how one or more ideals held by two religions listed in the question relate to a non-religious viewpoint in society today."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     6,
+     7
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-b-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2020 HL Section B Q(a)(i)",
+   "topicId": "re-b",
+   "conceptId": "discovering-message-jesus-nazareth-played-role",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Profile how re-discovering the message of Jesus of Nazareth played a role in the establishment of one of the movements listed below: • CÉLI DÉ • LIBERATION THEOLOGY • LUTHER’S REFORMS • THE MENDICANT ORDERS • THE SECOND VATICAN COUNCIL",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an ability to recognise a moment of adaptation and reform in the Christian tradition by accurately tracing how returning to the original message of Jesus played a role in the founding of one of the movements listed in the question e.g.",
+    "points": [
+     "Céli Dé — sought a renewal of an ascetic tradition and reform of the monastic tradition by emphasising the teaching of Jesus about the Kingdom of God, importance of prayer, work and commitment etc.",
+     "Liberation Theology — emphasised the understanding of Jesus as a liberator struggling to aid the poor and oppressed; the inclusive nature of the Kingdom of God etc.",
+     "Luther's Reforms — called for the reform of practices in the Roman Catholic Church and a return to its origins in the teaching of Jesus outlined in the Gospels etc.",
+     "The Mendicant Orders — Jesus’ life of poverty and dedication to pastoral care influenced the establishment of this form of monasticism by its emphasis on poverty and seeking to educate the laity etc.",
+     "The Second Vatican Council — Jesus’ teaching about love of neighbour, peace and equality influenced the Council to call for active involvement of the laity, focus on social justice and better relations between all Christian Churches i.e. ecumenism etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     8
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-b-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2020 HL Section B Q(a)(ii)",
+   "topicId": "re-b",
+   "conceptId": "investigate-christian-denomination-today-sees-itself",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Investigate how one Christian denomination today sees itself as carrying on the mission of Jesus through its teaching and work.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an appreciation of the life and teaching of Jesus of Nazareth for Christians today by looking closely at one Christian denomination today and drawing accurate conclusions about how it is carrying on the mission of Jesus through its teaching and work e.g.",
+    "points": [
+     "The Anglican Communion and Roman Catholic Church — try to carry on Jesus’ teaching about unity by working together in the World Council of Churches to promote unity between all Christians etc.",
+     "The ‘City Missions’ of the Methodist Church in Ireland — try to witness to the way Jesus reached out to the poor and afflicted; reflects Jesus’ teaching about creating a just and inclusive society etc.",
+     "The religious orders of Christian denominations — try to carry on Jesus’ teaching about caring for the sick and dying etc.",
+     "Christian denominations work through organisations (Trócaire and Christian Aid etc.) — try to carry on Jesus’ teaching about sharing by developing resources in Third World countries etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "26 - 30",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "21 - 25",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "12 -16",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "8 - 11",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "3-7",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 2",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow implicit reference to either the teaching or work of one Christian denomination."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     9
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-b-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2020 HL Section B Q(b)",
+   "topicId": "re-b",
+   "conceptId": "examples-during-his-life-jesus-showed",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Describe two examples of how during his life Jesus showed an awareness of what the Jewish people expected of the Messiah.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of messianic expectations at the time of Jesus by giving an accurate account of two examples of how Jesus showed awareness of Jewish expectations of the Messiah e.g.",
+    "points": [
+     "Jesus’ entry into Jerusalem draws on elements of the Jewish expectation that the Messiah would be a descendant of King David etc.",
+     "Jesus’ miracle of the loaves and fishes reflects the Jewish expectation that the Messiah would be a powerful prophet like Moses etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 15,
+    "gridHead": "15Mx2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "13 - 15",
+      "marks": [
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "11 - 12",
+      "marks": [
+       11,
+       12
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "6 - 7",
+      "marks": [
+       6,
+       7
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "4 - 5",
+      "marks": [
+       4,
+       5
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 3",
+      "marks": [
+       2,
+       3
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     9,
+     10
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-c-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "C",
+   "questionRef": "2020 HL Section C Q(a)(i)",
+   "topicId": "re-c",
+   "conceptId": "another-trend-emerged-among-major-world",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline another trend that has emerged among the major world religions within Ireland in recent years.",
+   "stem": "The 2016 Irish Census shows an increase in the members of different religions in Ireland.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of trends within religious traditions by setting out accurate information on a new or particular focus that is evident among the major world religions in Ireland today other than the increase in the members of different religions e.g.",
+    "points": [
+     "The promotion of ecumenism, encouraging respect and unity between members of different Christian denominations within Ireland in recent years etc.",
+     "The need for facilities to accommodate different communities of faith in certain areas within Ireland in recent years i.e. Islam — mosques etc. Judaism — kosher food etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers referring to a particular or general trend among the major world religions in Ireland e.g. Care for the Environment – encouraging protection and respect for the environment, creation etc."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     11
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-c-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "C",
+   "questionRef": "2020 HL Section C Q(a)(ii)",
+   "topicId": "re-c",
+   "conceptId": "choose-religion-religion-christianity-judaism-buddhism",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Choose one religion from List A and one religion from List B below: List A: ◆ CHRISTIANITY ◆ JUDAISM List B:◆ BUDDHISM ◆ HINDUISM ◆ ISLAM Compare a challenge faced by members of the religions you have chosen above as they look to the future development of their traditions.",
+   "stem": "The 2016 Irish Census shows an increase in the members of different religions in Ireland.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of major world religions in contemporary culture by giving an accurate account of the similarity and/or difference in the challenge faced by members of one religion from list A and one religion from list B in the question e.g.",
+    "points": [
+     "Similar — both Christians and Buddhists face problems witnessing to their founders’ teaching on compassion and kindness, in a world where individualism and the accumulation of wealth are promoted etc.",
+     "Different — Judaism faces the challenge of declining numbers and assimilation through inter-marriage and smaller communities worldwide; whereas the rapid growth of Islam poses the challenge of integration into communities where it is not the dominant belief system etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "26 - 30",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "21 - 25",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "12 -16",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "8 - 11",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "3-7",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 2",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow implicit reference to a similarity or difference; one challenge common to two different world religions; two different challenges."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     11,
+     12
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-c-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "C",
+   "questionRef": "2020 HL Section C Q(b)",
+   "topicId": "re-c",
+   "conceptId": "key-belief-reflected-lifestyle-its-members",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Examine how a key belief of one of the following is reflected in the lifestyle of its members: • AN AFRICAN TRADITIONAL RELIGION • BAHA’I FAITH • A CHINESE RELIGION • A NEW RELIGIOUS MOVEMENT • SIKH RELIGION",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a new religious movement or other living tradition by looking closely at how a key belief of one religious tradition/movement listed in the question is displayed in the lifestyle of its members e.g.",
+    "points": [
+     "An African Traditional Religion — belief in a spirit world influences believers to make offerings to the gods, spirits etc.",
+     "Baha'i Faith — Belief that the Baha’u’llah was a prophet influences believers to study his writings and work to fulfil his teaching etc.",
+     "A Chinese Religion — belief in a divine will is reflected in living a life of virtue etc.",
+     "A New Religious Movement e.g. Hare Krishna movement – belief that Krishna is the ‘Supreme Lord’ influences believers to chant the names of Krishna etc.",
+     "Sikh Religion — belief that the sacred text guides believers through life influences believers to have a place in their home where it is read etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "26 - 30",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "21 - 25",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "12 -16",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "8 - 11",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "3-7",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 2",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     12,
+     13
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-d-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "D",
+   "questionRef": "2020 HL Section D Q(a)(i)",
+   "topicId": "re-d",
+   "conceptId": "deciding-right-wrong-issue-approached-points",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Compare how deciding what is right and wrong about as issue would be approached from each of the following points of view: • FUNDAMENTALISM • RELATIVISM",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of morality by setting out accurate information on a similarity and/or difference in how deciding what is right or wrong about an issue would be approached from the viewpoints of fundamentalism and relativism.e.g.",
+    "points": [
+     "Similarity — both fundamentalism (right and wrong determined by the literal application of a religion’s scriptures or laws etc.) and relativism (right and wrong based on subjective attitudes; depends upon the situation etc.) set out to do what they believe to be good and just in a situation etc.",
+     "Difference — Relativism holds that there is no objective truth about what is right or wrong in a situation, whereas fundamentalism holds that the authority of scripture/law dictates what is moral and immoral in all situations etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers and implicit reference to similarity and/or difference."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     14
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-d-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "D",
+   "questionRef": "2020 HL Section D Q(a)(ii)",
+   "topicId": "re-d",
+   "conceptId": "difference-between-understanding-moral-failure-christian",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline a difference between the understanding of moral failure in a Christian denomination and how it is understood within one of the following religions: ◆ BUDDHISM ◆ HINDUISM ◆ ISLAM ◆ JUDAISM",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of moral failure in different world religions by setting out accurate information on a difference between a Christian understanding of moral failure and that found in one of the religions listed in the question e.g.",
+    "points": [
+     "Differences in the understanding of moral failure i.e. Hinduism — a person failing to do their duty as determined by their stage in life and position in society etc. Christianity — failing to live up to the believer’s personal relationship with God etc.",
+     "Differences in the degrees of seriousness in moral failure i.e. Islam — obedience to the will of Allah is emphasised and sins against Allah (Shirk) are the most serious etc. Christianity — moral failure/sin can be mortal or venial depending on its gravity etc.",
+     "Differences in the rites associated with atoning for moral failure i.e. Judaism — Yom Kippur; Roman Catholicism — Sacrament of Reconciliation etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "26 - 30",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "21 - 25",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "12 -16",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "8 - 11",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "3-7",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 2",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     14,
+     15
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-d-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "D",
+   "questionRef": "2020 HL Section D Q(b)",
+   "topicId": "re-d",
+   "conceptId": "involved-stages-development-person's-conscience-making",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Describe what is involved in two stages of the development of a person's conscience making reference to the role that religion can play in this process.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the process of conscience development by giving an accurate account of what is entailed in two stages in the growth of a person’s judgement of right and wrong making reference to the part that religion can play in the process e.g.",
+    "points": [
+     "Informing a person's conscience by referring to a moral code or sacred text — the Five Precepts of Buddhism could guide a believer not to act in a way that would harm any living thing etc.",
+     "Considering the views of others, the consequences, the alternatives etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 15,
+    "gridHead": "15M x2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "13 - 15",
+      "marks": [
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "11 - 12",
+      "marks": [
+       11,
+       12
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "6 - 7",
+      "marks": [
+       6,
+       7
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "4 - 5",
+      "marks": [
+       4,
+       5
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 3",
+      "marks": [
+       2,
+       3
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     15,
+     16
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-e-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "E",
+   "questionRef": "2020 HL Section E Q(a)",
+   "topicId": "re-e",
+   "conceptId": "roles-men-women-worship-linked-understanding",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Explain how the roles of men and women in worship are linked to the understanding of God/gods/the transcendent in two of the following religions: ◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of gender roles in religious traditions by giving an accurate account of the connection between the way men and women worship and the understanding of God/gods/the transcendent in two religions listed in the question e.g.",
+    "points": [
+     "Buddhism — belief in the Buddha as the ‘Enlightened One’ is expressed in the way men and women stand barefoot facing his statute or chanting, making offerings etc.",
+     "Christianity — the way men and women recall the Last supper in the Eucharist celebration reflects an understanding of Jesus as the incarnation etc.",
+     "Hinduism — the way men and women light candles at the shrines of deities that represent different aspects of Brahman, etc.",
+     "Islam — the understanding of Allah as all powerful can be seen in the way Islamic men and women perform Salat etc.",
+     "Judaism — the understanding of God as all powerful, can be seen in the way Jewish men and women observe the Sabbath Laws as outlined in the Torah etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20M x2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     17
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-e-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "E",
+   "questionRef": "2020 HL Section E Q(b)",
+   "topicId": "re-e",
+   "conceptId": "women-faith-contributed-different-ways-religious",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Women of faith have contributed in different ways to each of the following: • RELIGIOUS ORDERS • RELIGIOUS WRITING • SOCIAL REFORM • SPIRITUAL THINKING Discuss the questions raised for people today by the work of two women from different categories listed above.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the contribution of women to the development of religious traditions by examining and drawing accurate conclusions about the questions raised for people today by the work of women from two categories listed in the question e.g.",
+    "points": [
+     "Religious Orders — Nano Nagle, founder of the Presentation Order, could raise questions about how to help the poor in society today etc.",
+     "Religious Writing — Joyce Rupp’s books on spirituality could make people today reflect on prayer and ways of bringing the spiritual into their everyday lives etc.",
+     "Social Reform — Dorothy Day could make people ask questions about how to live in solidarity with the poor and marginalised in society today etc.",
+     "Spiritual Thinking — Hildegard of Bingen could make people today ask questions about corruption etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     18
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-f-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "F",
+   "questionRef": "2020 HL Section F Q(a)",
+   "topicId": "re-f",
+   "conceptId": "teaching-major-world-religion-encourages-its",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Describe how the teaching of a major world religion encourages its members to address the causes of two of the following issues: • DISCRIMINATION • HUNGER • POVERTY",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a religious perspective on justice and peace by giving an accurate account of how the teaching of a major world religion could influence its members to tackle the causes of two of the issues listed in the question e.g.",
+    "points": [
+     "Christianity — the teaching of Jesus on ‘right relationship’ and treating all equally could influence believers to work against the causes of discrimination/hunger/poverty etc.",
+     "Buddhism — the Eightfold Path could influence believers to think and act in ways that are fair and compassionate through right action etc.",
+     "Islam — the Zakat’s emphasis on charity could influence believers to work against the causes of discrimination/hunger/poverty etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20M x2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     19
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-f-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "F",
+   "questionRef": "2020 HL Section F Q(b)",
+   "topicId": "re-f",
+   "conceptId": "teachings-influence-religious-response-environmental-crisis",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Explain how two of the following teachings could influence a religious response to an environmental crisis: • THE CREATION TEXTS IN GENESIS • THE FIVE PRECEPTS OF THE BUDDHA • VICEREGENT OF THE EARTH IN ISLAM",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of how religious believers are compelled to act and campaign on an environmental issue by giving an account of how two of the religious teachings given in the question could influence the reaction of believers to an environmental crisis e.g.",
+    "points": [
+     "The Creation Texts in Genesis – the teaching that God placed humans as stewards of creation could influence believers to protect creation etc.",
+     "The Five Precepts of the Buddha – first precept calls for abstaining from killing living beings; the second precept ‘not to take what is not given’ could encourage reflection on the consumption of natural resources etc.",
+     "Viceregent of the Earth in Islam – believers are called upon to look after creation as its guardians etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     19,
+     20
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-g-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "G",
+   "questionRef": "2020 HL Section G Q(a)",
+   "topicId": "re-g",
+   "conceptId": "importance-placed-both-private-communal-prayer",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Discuss the importance placed on both private and communal prayer by members of one of the following religions in their relationship with God/gods/the divine: ◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a variety of prayer traditions and contexts by examining and drawing accurate conclusions about the significance of both private and communal prayer in the relationship members of one religion listed in the question have with God/gods/the divine e.g.",
+    "points": [
+     "Buddhism – focuses on inner reflection, private rather than communal worship through meditation; acts of worship at a shrine, image of the Buddha etc. Communal worship can be seen in the way believers gather with monks to pray in Buddhist Temples/ monasteries etc.",
+     "Christianity – private prayer deepens a personal relationship with God; communal prayer deepens a personal relationship with God and others in the community etc.",
+     "Hinduism – focuses more on private than on communal prayer; puja, is valued as an act of devotion towards Brahman and can take place in front of a shrine in the home or at a Hindu Temple etc.",
+     "Islam – performing Salat (prayer) privately five times a day shows a willingness to submit to the will of Allah; communal prayer on Fridays is a means of strengthening faith with the whole community and showing devotion to Allah etc.",
+     "Judaism – private and communal prayers are both valued in Judaism; communal prayer with synagogue services on the Sabbath affirms membership of the community etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     21
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-g-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "G",
+   "questionRef": "2020 HL Section G Q(b)",
+   "topicId": "re-g",
+   "conceptId": "similarities-differences-understanding-meditation-form-prayer",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline two similarities and two differences in the understanding of meditation as a form of prayer within the Buddhist and Christian traditions.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of Buddhist and Christian meditation by setting out accurate information on two similarities and two differences in the understanding of meditation as a form of prayer within the Buddhist and Christian traditions e.g.",
+    "points": [
+     "Similarities: Buddhists and Christians see emptying the mind of unnecessary distractions as essential for connecting to a sense of the sacred or otherness; both use mindfulness techniques to achieve this etc.",
+     "Differences: Buddhism — meditation involves an emptying of the mind/consciousness in order to achieve enlightenment etc. Christianity — meditation leads a person to union with Christ and is seen as an experience of encounter with God etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow implicit reference to similarities and differences."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     22
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-h-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "H",
+   "questionRef": "2020 HL Section H Q(a)(i)",
+   "topicId": "re-h",
+   "conceptId": "evangelists-communities",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "The Evangelists and their communities.",
+   "stem": "• THE GOSPEL OF JOHN • THE GOSPEL OF LUKE • THE GOSPEL OF MARK • THE GOSPEL OF MATTHEW Compare what was involved in how two of the above Gospels came to be written using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of how the Bible came to be written by giving an accurate account of a similarity and/or a difference in how the evangelists and their communities affected the way two of the Gospels listed in the question came to be written e.g.",
+    "points": [
+     "Similarity: Mark written for Christians suffering persecution in Rome, focusing on Jesus as an active healer and miracle worker, who cared for all etc. Luke was written for non- Jewish converts to Christianity; focusing on how Jesus welcomed gentiles and Jews, emphasizing his mercy and compassion etc.",
+     "Difference: Matthew written for Jewish Christian communities, focusing on the relationship between Jesus and Jewish traditions; Jesus is presented as the Messiah spoken of by the prophets and his teaching is seen within the context of Mosaic law etc. The needs of educated Greek converts influenced Luke to emphasise the universal and inclusive nature of salvation; Jesus is presented as a model and teacher of prayer, discipleship etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow implicit reference to a similarity and/or a difference."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     23
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-h-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "H",
+   "questionRef": "2020 HL Section H Q(a)(ii)",
+   "topicId": "re-h",
+   "conceptId": "variety-gospel-material",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "The variety of Gospel material.",
+   "stem": "• THE GOSPEL OF JOHN • THE GOSPEL OF LUKE • THE GOSPEL OF MARK • THE GOSPEL OF MATTHEW Compare what was involved in how two of the above Gospels came to be written using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of how the Bible came to be written by giving an accurate account of a similarity and/or a difference in how the variety of Gospel material affected the way two of the Gospels listed in the question came to be written e.g.",
+    "points": [
+     "Similarity: Sources used e.g. Luke and Matthew — probably used the Gospel of Mark and the hypothetical source referred to as the ‘Q’ source etc.; display agreement on key facts e.g. Jesus’ Baptism; episodes involved in Jesus’ life, death and resurrection; similar literary form e.g. similar wording in parables etc.",
+     "Difference: Synoptic Gospels — different accounts of the words used by Jesus e.g. The Lord’s Prayer; different accounts of the events involved in Jesus’ life, death and resurrection etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow implicit reference to a similarity and/or a difference."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     24
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-h-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "H",
+   "questionRef": "2020 HL Section H Q(b)(i)",
+   "topicId": "re-h",
+   "conceptId": "original-background-context-texts",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "The original background/context of the texts.",
+   "stem": "• HANNAH’S SONG OF THANKS (1 Sam 2:1-10) • ISRAEL RESTORED (Is 52:13 - 53:12) • THE TEN COMMANDMENTS (Ex 20:1-21) Compare two of the above texts, from the Hebrew Scriptures, using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of biblical texts by giving an accurate account of a similarity and/or a difference in the original background/context of two of the texts from the Hebrew Scriptures listed in the question e.g.",
+    "points": [
+     "Similarity: Israel Restored and the Ten Commandments were both composed during times of difficulty within Jewish history i.e. Israel Restored ― the fourth of a series of servant songs written by a disciple of Isaiah to give hope and consolation to Jewish exiles in Babylon etc. Ten Commandments/Decalogue ― divine words spoken to Moses during the Exodus etc.",
+     "Difference: Hannah’s Song of Thanks ― an ancient poem adapted to tell the story of the birth of Samuel; praising God for being powerful yet on the side of the powerless etc. Ten Commandments/Decalogue ― divine words that cannot be adapted as they contain the obligations of God’s Covenant with the people of Israel at Sinai etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow implicit reference to a similarity and/or a difference."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     24,
+     25
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2020-hl-h-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2020,
+   "level": "higher",
+   "section": "H",
+   "questionRef": "2020 HL Section H Q(b)(ii)",
+   "topicId": "re-h",
+   "conceptId": "meaning-significance-texts-within-christian-jewish",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "The meaning and significance of the texts within the Christian and Jewish traditions.",
+   "stem": "• HANNAH’S SONG OF THANKS (1 Sam 2:1-10) • ISRAEL RESTORED (Is 52:13 - 53:12) • THE TEN COMMANDMENTS (Ex 20:1-21) Compare two of the above texts, from the Hebrew Scriptures, using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2020 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of biblical texts by giving an accurate account of a similarity and/or a difference in the meaning and significance in the Christian and Jewish traditions of two texts listed in the question e.g.",
+    "points": [
+     "Similarity: Both Hannah’s Song of Thanks and Israel Restored show God’s concern for his people when they suffer or are oppressed i.e. Hannah’s Song of Thanks — God being on the side of the powerless would have comforted the Hebrews oppressed by the Philistines; in the Christian tradition this is recalled in Mary’s Magnificat (Luke 1) etc. Israel Restored — the suffering servant (innocent of wrongdoing) is praised and exalted by God because he atones for the sins of the people through his own suffering; this image of the suffering servant is taken up in the Gospels etc.",
+     "Difference: Ten Commandments — outline the obligation in the Jewish and Christian traditions to be faithful to the Covenant with God etc. Hannah’s Song of Thanks — celebrates God’s knowledge and strength, his interventions on behalf of the poor and his triumph over his adversaries etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow implicit reference to the Christian or Jewish traditions; a similarity and/or a difference."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     25,
+     26
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
    }
   }
  ]

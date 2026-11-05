@@ -678,19 +678,19 @@
     "refsHash": "c737847455bc4dc6"
   },
   "religious-education": {
-    "cards": 345,
-    "contentHash": "797537f97f8c5b9e",
-    "coveragePct": 43.9,
-    "covered": 345,
+    "cards": 370,
+    "contentHash": "c8ab91a6c07118c5",
+    "coveragePct": 47.1,
+    "covered": 370,
     "excluded": 0,
     "leaves": 786,
-    "open": 441,
+    "open": 416,
     "orphans": 0,
     "papers": {
       "count": 31,
       "hash": "138b8842e0c6dc51"
     },
-    "refsHash": "620db852732b4db1"
+    "refsHash": "bd94385845bdcafd"
   },
   "romanian": {
     "cards": 50,
