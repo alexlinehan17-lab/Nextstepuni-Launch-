@@ -62,6 +62,7 @@ from eng_scheme import EngScheme                            # noqa: E402
 from eng_topics import topic_for, concept_for               # noqa: E402
 import cardlint                                             # noqa: E402
 import eng_lists                                            # noqa: E402
+import eng_rownotes                                         # noqa: E402
 import eng_residue                                          # noqa: E402
 import eng_deferred                                         # noqa: E402
 
@@ -1095,6 +1096,10 @@ def main():
     eng_lists.vertical_lists(cards)
     eng_lists.table_cells(cards)
     eng_lists.degree_signs(cards)
+    # A card's notes never ship; what a student must see (an OR, the "12 + 12
+    # + 11" price, a reading of the scheme, scheme text no row carries, a
+    # misprint) goes on the row it qualifies, as the row's contextNote.
+    eng_rownotes.promote(cards)
 
     if args.verdicts:
         with open(args.verdicts, 'w', encoding='utf-8') as fh:

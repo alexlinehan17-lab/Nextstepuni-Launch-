@@ -179,7 +179,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the main operating features of any one of the following: Strip heater, Vernier height gauge, Cam and follower.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Strip heater A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by thermostatically controlling the heating temperature.", marks: 12, accepts: ["Vernier height gauge A Vernier height gauge is a precision measuring instrument used for accurately measuring heights and testing for parallel. The gauge consists of a heavy base and a fixed main scale rule with a sliding vernier scale attached. When used on the surface plate, the relationship between the main scale and vernier scale has the potential to provide limits of 0.02 mm. A finger or knife edge made of hardened steel, fixed to the sliding vernier scale, is used to scribe lines when marking out. The use of lock and fine adjustment screws helps the user to achieve accurate settings.","Cam and follower A cam is a specially shaped piece of material which is fixed to an axle or shaft. A follower is a device designed to move up and down as it follows the shape or profile of the rotating cam. The shape of the cam controls the movement of the follower. Depending on design, a cam and follower can be used to convert one type of motion into another. The most common design is based on a rotary cam which changes the rotary motion of the cam into reciprocating motion of the follower. The follower is kept in contact with the cam by its own weight or by pressure exerted on it."] },
+    { id: "r-1", kind: "alt", verbatim: "Strip heater A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by thermostatically controlling the heating temperature.", marks: 12, accepts: ["Vernier height gauge A Vernier height gauge is a precision measuring instrument used for accurately measuring heights and testing for parallel. The gauge consists of a heavy base and a fixed main scale rule with a sliding vernier scale attached. When used on the surface plate, the relationship between the main scale and vernier scale has the potential to provide limits of 0.02 mm. A finger or knife edge made of hardened steel, fixed to the sliding vernier scale, is used to scribe lines when marking out. The use of lock and fine adjustment screws helps the user to achieve accurate settings.","Cam and follower A cam is a specially shaped piece of material which is fixed to an axle or shaft. A follower is a device designed to move up and down as it follows the shape or profile of the rotating cam. The shape of the cam controls the movement of the follower. Depending on design, a cam and follower can be used to convert one type of motion into another. The most common design is based on a rotary cam which changes the rotary motion of the cam into reciprocating motion of the follower. The follower is kept in contact with the cam by its own weight or by pressure exerted on it."], contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     ],
   } as SecCard,
   {
@@ -192,7 +192,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the computing terms: Network, DVD-R, External hard drive, Broadband.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Network A computer network is a collection of computers, printers and other equipment, which are connected together so that they can communicate with each other. The linking of computers by special cables or radio waves known as wireless networks allow data and resources to be shared among users.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Network A computer network is a collection of computers, printers and other equipment, which are connected together so that they can communicate with each other. The linking of computers by special cables or radio waves known as wireless networks allow data and resources to be shared among users.","DVD-R Digital Versatile Disc or Digital Video Disk is a type of CD that can have a potential storage capacity of up to 8GB of data, enough for a full-length movie. DVD-R is a DVD recordable format only which means that data, once written to a DVD-R, cannot be changed, whereas a DVD-RW can be rewritten multiple times. A DVD-R provides portable memory in the form of a compact disk, however, a DVD player or drive is required to read its contents.","External hard drive An external hard drive is a portable magnetic disk which can be connected externally to a PC or Laptop by way of a USB socket. The term ‘hard’ is used to distinguish it from a soft, or floppy disk. Hard disks hold more data, are faster than floppy disks and allow large amounts of information to be transferred between computers. Many users now use external hard drives to backup important data.","Broadband Broadband provides high speed internet access by delivering multiple channels of data over single communication mediums such as DSL, Wireless or Satellite. Providing an always on connection, broadband facilitates fast access to data, voice or video."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Network A computer network is a collection of computers, printers and other equipment, which are connected together so that they can communicate with each other. The linking of computers by special cables or radio waves known as wireless networks allow data and resources to be shared among users.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Network A computer network is a collection of computers, printers and other equipment, which are connected together so that they can communicate with each other. The linking of computers by special cables or radio waves known as wireless networks allow data and resources to be shared among users.","DVD-R Digital Versatile Disc or Digital Video Disk is a type of CD that can have a potential storage capacity of up to 8GB of data, enough for a full-length movie. DVD-R is a DVD recordable format only which means that data, once written to a DVD-R, cannot be changed, whereas a DVD-RW can be rewritten multiple times. A DVD-R provides portable memory in the form of a compact disk, however, a DVD player or drive is required to read its contents.","External hard drive An external hard drive is a portable magnetic disk which can be connected externally to a PC or Laptop by way of a USB socket. The term ‘hard’ is used to distinguish it from a soft, or floppy disk. Hard disks hold more data, are faster than floppy disks and allow large amounts of information to be transferred between computers. Many users now use external hard drives to backup important data.","Broadband Broadband provides high speed internet access by delivering multiple channels of data over single communication mediums such as DSL, Wireless or Satellite. Providing an always on connection, broadband facilitates fast access to data, voice or video."]} },
     ],
   } as SecCard,
   {
@@ -205,7 +205,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define compressive strength in relation to the properties of metals and give one application where a metal needs to be strong in compression.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The compressive strength of a metal is the metal’s ability to support a heavy weight or withstand large equal and opposite push forces.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "The compressive strength of a metal is the metal’s ability to support a heavy weight or withstand large equal and opposite push forces.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Tubular metal legs of chairs need to have good compressive strength to support the weight of the person sitting down.", marks: 6 },
     ],
     figure: {
@@ -228,7 +228,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Worm and wheel drive, Electrical fuse, Morse taper sleeve, Plastic dip coating.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Worm and wheel drive A worm and wheel drive is a gear system which consists of a worm gear and a wormwheel. The worm gear, which looks like a screw thread, is fixed to a drive shaft or motor axel. It meshes with the wormwheel which is fixed to the driven shaft. The worm gear runs at 90º to the wormwheel. A worm and wheel drive provides large speed reduction while increasing output torque. This gear system only allows drive from worm to wormwheel.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Worm and wheel drive A worm and wheel drive is a gear system which consists of a worm gear and a wormwheel. The worm gear, which looks like a screw thread, is fixed to a drive shaft or motor axel. It meshes with the wormwheel which is fixed to the driven shaft. The worm gear runs at 90º to the wormwheel. A worm and wheel drive provides large speed reduction while increasing output torque. This gear system only allows drive from worm to wormwheel.","Electrical fuse An electrical fuse generally consists of a thin wire inside a glass or ceramic tube and is commonly found inside electrical plugs. The fuse prevents too much electricity flowing into the appliance if a fault occurs. It’s purpose is to protect the low voltage electronics found inside all electrical appliances. The fuse acts as a deliberate weak link in a circuit. When the fuse ‘blows’ the thin wire melts and the electricity supply to the appliance is cut off.","Morse taper sleeve A morse taper sleeve can be used to hold tools such as taper shank drills and reamers in drilling machines and in lathe tailstocks. The morse taper sleeve is used when the taper shank of a tool is too small for the machine socket in which it is to be used. The shank of the tool is inserted into the sleeve, which is then inserted into the tapered socket of the machine. The morse taper sleeve maintains the frictional drive between the machine spindle and the cutting tool being used.","Plastic dip coating Plastic dip coating is used to put a more socially acceptable finish on articles made from steel, such as shopping baskets and kitchen utensils etc. The article is heated to 180 º C in an oven and dipped into a tank where fluidised power particles of polyethylene melts and adheres to its surface. When removed, the particles fuse together and cool, providing an attractive and protective coating."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Worm and wheel drive A worm and wheel drive is a gear system which consists of a worm gear and a wormwheel. The worm gear, which looks like a screw thread, is fixed to a drive shaft or motor axel. It meshes with the wormwheel which is fixed to the driven shaft. The worm gear runs at 90º to the wormwheel. A worm and wheel drive provides large speed reduction while increasing output torque. This gear system only allows drive from worm to wormwheel.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Worm and wheel drive A worm and wheel drive is a gear system which consists of a worm gear and a wormwheel. The worm gear, which looks like a screw thread, is fixed to a drive shaft or motor axel. It meshes with the wormwheel which is fixed to the driven shaft. The worm gear runs at 90º to the wormwheel. A worm and wheel drive provides large speed reduction while increasing output torque. This gear system only allows drive from worm to wormwheel.","Electrical fuse An electrical fuse generally consists of a thin wire inside a glass or ceramic tube and is commonly found inside electrical plugs. The fuse prevents too much electricity flowing into the appliance if a fault occurs. It’s purpose is to protect the low voltage electronics found inside all electrical appliances. The fuse acts as a deliberate weak link in a circuit. When the fuse ‘blows’ the thin wire melts and the electricity supply to the appliance is cut off.","Morse taper sleeve A morse taper sleeve can be used to hold tools such as taper shank drills and reamers in drilling machines and in lathe tailstocks. The morse taper sleeve is used when the taper shank of a tool is too small for the machine socket in which it is to be used. The shank of the tool is inserted into the sleeve, which is then inserted into the tapered socket of the machine. The morse taper sleeve maintains the frictional drive between the machine spindle and the cutting tool being used.","Plastic dip coating Plastic dip coating is used to put a more socially acceptable finish on articles made from steel, such as shopping baskets and kitchen utensils etc. The article is heated to 180 º C in an oven and dipped into a tank where fluidised power particles of polyethylene melts and adheres to its surface. When removed, the particles fuse together and cool, providing an attractive and protective coating."]} },
     ],
   } as SecCard,
   {
@@ -241,7 +241,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the mechanism shown and explain how it operates.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A ratchet and pawl mechanism", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "A ratchet and pawl mechanism", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "A ratchet and pawl mechanism is used to allow a shaft, axle or pin to rotate in one direction only. The diagram shows a ratchet and pawl mechanism which will only rotate in an anticlockwise direction. As the ratchet rotates anticlockwise, the curved surface on the ratchet lifts the pawl, allowing the ratchet to rotate. When the ratchet rotates in a clockwise direction, the spring pulls the pawl in behind a tooth, stopping rotation. A ratchet and pawl can be used in mechanisms such as ratchet spanners, fishing reels, ratchet screwdrivers, micrometers and winding mechanisms of watches", marks: 6 },
     ],
     questionFigure: {
@@ -286,7 +286,7 @@ export const CARDS: SecCard[] = [
     questionText: "For the furnace selected at 2(a)(i), name the material produced and suggest one suitable application for this material.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Cupola Furnace : Cast Iron - Castings for machine frames/beds, lathe slide ways.", marks: 6, accepts: ["Electric Arc : High Carbon/Alloy Steels - Metal cutting tools/hammer heads","Blast Furnace : Pig Iron - Production of Cast Iron / Steel"] },
+    { id: "r-1", kind: "alt", verbatim: "Cupola Furnace : Cast Iron - Castings for machine frames/beds, lathe slide ways.", marks: 6, accepts: ["Electric Arc : High Carbon/Alloy Steels - Metal cutting tools/hammer heads","Blast Furnace : Pig Iron - Production of Cast Iron / Steel"], contextNote: "The scheme prints '(ii) Name & Application Award 6 Marks'; its marks grid prints 'Two parts @ 3 each'." },
     ],
   } as SecCard,
   {
@@ -414,7 +414,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the main difference between low carbon steel and high carbon steel. OR Describe two applications of robotics in the car manufacturing industry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Percentage content of carbon", marks: 5, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Percentage content of carbon", marks: 5, contextNote: "The paper sets two (d)s either side of an OR, the two steels and robotics in car manufacture; the scheme prices both \"Award 1 @ 5 Marks, Award 1 @ 4 Marks\", so both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "High carbon steel can be hardened throughout.", marks: 4, route: "a" },
     { id: "r-3", kind: "point", verbatim: "Welding of car frames", marks: 5, route: "b" },
     { id: "r-4", kind: "point", verbatim: "Spray painting car bodies.", marks: 4, route: "b" },
@@ -712,7 +712,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe one method of taper turning on a centre lathe and identify one safety precaution to be observed when taper turning. OR Identify three advantages of a Computer Numerical Controlled (CNC) lathe over a Manual lathe.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Setting the angle on the top / compound slide: Here the compound slide is swiveled on its base, locked at the required angle and the tool fed by hand using the slide handle.", marks: 8, route: "a" },
+    { id: "r-1", kind: "anyN", verbatim: "Setting the angle on the top / compound slide: Here the compound slide is swiveled on its base, locked at the required angle and the tool fed by hand using the slide handle.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, one method of taper turning and the advantages of a CNC lathe; each is priced at 12, so both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "anyN", verbatim: "Ensure the cutting tool does not run into the chuck when rotating the compound slide handle.", marks: 4, route: "a" },
     { id: "r-3", kind: "anyN", verbatim: "Safer machining", marks: 12, route: "b", group: {"claimMax":3,"perOption":4,"options":["Safer machining","Higher accuracy achieved","Faster production output","Uniformity of end product","Less operational involvement in production","Improved quality control."]} },
     ],
@@ -784,7 +784,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name and give one application for any three of the tools shown. OR Identify any three of the electronic components A, B, C and D shown in the circuit.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Vernier calipers - for the accurate measurement of inside, outside and depth sizes.", marks: 15, route: "a", group: {"claimMax":3,"perOption":5,"options":["(i) Vernier calipers - for the accurate measurement of inside, outside and depth sizes.","(ii) Plug gauge - for checking the size of holes.","(iii) Outside calipers - for checking the diameter of shafts.","(iv) Engineers protractor - used for measuring or marking out angles."]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Vernier calipers - for the accurate measurement of inside, outside and depth sizes.", marks: 15, contextNote: "The paper sets two (c)s either side of an OR, the tools and the circuit components, each \"any three\" of four; the scheme prices both \"Award 3 @ 5 Marks\", so both branches are on this card: claim the rows for the branch you answered.", route: "a", group: {"claimMax":3,"perOption":5,"options":["(i) Vernier calipers - for the accurate measurement of inside, outside and depth sizes.","(ii) Plug gauge - for checking the size of holes.","(iii) Outside calipers - for checking the diameter of shafts.","(iv) Engineers protractor - used for measuring or marking out angles."]} },
     { id: "r-2", kind: "anyN", verbatim: "A- Push to make switch", marks: 15, route: "b", group: {"claimMax":3,"perOption":5,"options":["A- Push to make switch","B- Battery","C- Motor","D- Bulb"]} },
     ],
     questionFigure: {
@@ -897,7 +897,7 @@ export const CARDS: SecCard[] = [
     questionText: "What is galvanised iron?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Galvanised iron is the term given to steel when coated with zinc.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Galvanised iron is the term given to steel when coated with zinc.", marks: 5, contextNote: "The scheme prints no mark under (f); its grid prints 'Any six @ 5 marks each'." },
     ],
   } as SecCard,
   {
@@ -949,7 +949,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the main operating features of any one of the following: Ratchet and pawl, Micrometer, Lathe tailstock.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Ratchet and pawl mechanism A ratchet and pawl mechanism is used to allow a shaft, axle or pin to rotate in one direction only. The teeth on the ratchet wheel are so shaped that the pawl slides over them in one direction and engages to restrict movement in the other direction. Ratchet and pawl mechanisms are used in ratchet spanners, fishing reels, ratchet screwdrivers, micrometers and winding machines etc.", marks: 12, accepts: ["Micrometer A micrometer is a precision measuring instrument used for accurately Measuring small distances of up to 0.01mm. Usually based on a caliper design, the operation of a micrometer depends on the opening and closing of a screw thread (spindle). Articles are measured between the face of an anvil and the end face of the screw thread. One complete turn of the screw thread closes the micrometer a distance equal to the pitch of the spindle thread.","Lathe Tailstock A tailstock is part of a centre lathe. The tailstock sits on the lathe bed at the opposite end to the lathe headstock. It can be clamped to the bed at any point. The tailstock contains a barrel which slides in the body when you turn the hand wheel. The barrel can be locked in any position. The barrel can accommodate different tools for drilling, reaming or for supporting long shafts when machining. The tailstock can be moved from side to side on its base, this feature is used for taper turning."] },
+    { id: "r-1", kind: "alt", verbatim: "Ratchet and pawl mechanism A ratchet and pawl mechanism is used to allow a shaft, axle or pin to rotate in one direction only. The teeth on the ratchet wheel are so shaped that the pawl slides over them in one direction and engages to restrict movement in the other direction. Ratchet and pawl mechanisms are used in ratchet spanners, fishing reels, ratchet screwdrivers, micrometers and winding machines etc.", marks: 12, accepts: ["Micrometer A micrometer is a precision measuring instrument used for accurately Measuring small distances of up to 0.01mm. Usually based on a caliper design, the operation of a micrometer depends on the opening and closing of a screw thread (spindle). Articles are measured between the face of an anvil and the end face of the screw thread. One complete turn of the screw thread closes the micrometer a distance equal to the pitch of the spindle thread.","Lathe Tailstock A tailstock is part of a centre lathe. The tailstock sits on the lathe bed at the opposite end to the lathe headstock. It can be clamped to the bed at any point. The tailstock contains a barrel which slides in the body when you turn the hand wheel. The barrel can be locked in any position. The barrel can accommodate different tools for drilling, reaming or for supporting long shafts when machining. The tailstock can be moved from side to side on its base, this feature is used for taper turning."], contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     ],
   } as SecCard,
   {
@@ -962,7 +962,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following in relation to computers: Wireless connection, USB key, Graphics card, Video conferencing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Wireless connection Wireless connection allows computers / phones share information without the use of connecting cables. Information data is moved between computers by radio waves allowing laptops to move about within wireless networks. The cost and complexity of cable connections is removed.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Wireless connection Wireless connection allows computers / phones share information without the use of connecting cables. Information data is moved between computers by radio waves allowing laptops to move about within wireless networks. The cost and complexity of cable connections is removed.","USB key A USB (Universal Serial Bus) key is a small portable data memory storage device. The key consists of a flash memory device integrated with a USB interface with can be inserted into a PC or laptop’s USB port. USB keys are removable and rewritable and physically much smaller than CD’s or DVD’s. Because of their design USB keys are faster, have thousands of times more storage capacity and are more durable and reliable because of their lack of moving parts.","Graphics card A graphic card is a printed circuit board that plugs into a computer to give it display capabilities. The graphics card generates output images for a display monitor or screen. Graphic cards, located in expansion slots, can offer added functions such as improved rendering of 3D & 2D drawings, video capture, TV-tuner adapter, MPEG-2/MPEG-4 decoding, firewall, light pen, and TV output etc.","Video conferencing Video conferencing uses telecommunications of audio and video to bring people at different locations together for a meeting. This can be as simple as a conversation between two people in private offices or involve several different locations with more than one person in large rooms. Video conferencing can also be used to share documents, computer - displayed information and whiteboards."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Wireless connection Wireless connection allows computers / phones share information without the use of connecting cables. Information data is moved between computers by radio waves allowing laptops to move about within wireless networks. The cost and complexity of cable connections is removed.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Wireless connection Wireless connection allows computers / phones share information without the use of connecting cables. Information data is moved between computers by radio waves allowing laptops to move about within wireless networks. The cost and complexity of cable connections is removed.","USB key A USB (Universal Serial Bus) key is a small portable data memory storage device. The key consists of a flash memory device integrated with a USB interface with can be inserted into a PC or laptop’s USB port. USB keys are removable and rewritable and physically much smaller than CD’s or DVD’s. Because of their design USB keys are faster, have thousands of times more storage capacity and are more durable and reliable because of their lack of moving parts.","Graphics card A graphic card is a printed circuit board that plugs into a computer to give it display capabilities. The graphics card generates output images for a display monitor or screen. Graphic cards, located in expansion slots, can offer added functions such as improved rendering of 3D & 2D drawings, video capture, TV-tuner adapter, MPEG-2/MPEG-4 decoding, firewall, light pen, and TV output etc.","Video conferencing Video conferencing uses telecommunications of audio and video to bring people at different locations together for a meeting. This can be as simple as a conversation between two people in private offices or involve several different locations with more than one person in large rooms. Video conferencing can also be used to share documents, computer - displayed information and whiteboards."]} },
     ],
   } as SecCard,
   {
@@ -975,7 +975,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define elasticity in relation to the properties of metals and give one example of where the property of elasticity is required.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Elasticity Elasticity is the ability of a material to return to its original shape when freed from a force which was distorting it.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Elasticity Elasticity is the ability of a material to return to its original shape when freed from a force which was distorting it.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Materials used to produce compression or tension springs need to have good elasticity to ensure they exert the correct type of force when trying to return to their original shape.", marks: 6 },
     ],
   } as SecCard,
@@ -989,7 +989,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Engraving, Printed circuit board (PCB), Parting-off tool, Lacquering.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Engraving Engraving is a process of cutting designs or text into metal surfaces with sharp tools. Different shaped tools may be used to provide a range of designs while power tools are often used for engraving letters and numbers on ornamental objects.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Engraving Engraving is a process of cutting designs or text into metal surfaces with sharp tools. Different shaped tools may be used to provide a range of designs while power tools are often used for engraving letters and numbers on ornamental objects.","Printed circuit board (PCB) A printed circuit board (PCB) is usually a plastic board about 1.6mm thick with a thin layer of copper on one side. Unwanted portions of the copper are routed or etched away to leave pads and strips which form electrical connections between the components. The components are soldered to the pads. The strips allow the current to move from component to component.","Parting-off tool Parting – off is a machining process of cutting off metal in the centre lathe. A narrow tool is fed into and through the centre of the work. The tool is kept as narrow as possible to reduce waste and power requirements.","Lacquering Lacquering is the process of applying a lacquer or varnish to metals to protect and preserve their surface finish. Lacquers are applied by brushing or spraying and can be used on both ferrous and non ferrous metals."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Engraving Engraving is a process of cutting designs or text into metal surfaces with sharp tools. Different shaped tools may be used to provide a range of designs while power tools are often used for engraving letters and numbers on ornamental objects.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Engraving Engraving is a process of cutting designs or text into metal surfaces with sharp tools. Different shaped tools may be used to provide a range of designs while power tools are often used for engraving letters and numbers on ornamental objects.","Printed circuit board (PCB) A printed circuit board (PCB) is usually a plastic board about 1.6mm thick with a thin layer of copper on one side. Unwanted portions of the copper are routed or etched away to leave pads and strips which form electrical connections between the components. The components are soldered to the pads. The strips allow the current to move from component to component.","Parting-off tool Parting – off is a machining process of cutting off metal in the centre lathe. A narrow tool is fed into and through the centre of the work. The tool is kept as narrow as possible to reduce waste and power requirements.","Lacquering Lacquering is the process of applying a lacquer or varnish to metals to protect and preserve their surface finish. Lacquers are applied by brushing or spraying and can be used on both ferrous and non ferrous metals."]} },
     ],
   } as SecCard,
   {
@@ -1002,7 +1002,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the cutting tool shown and explain its function.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A combination centre or slocombe drill.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "A combination centre or slocombe drill.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "A combination centre drill is used to locate the centre of round bars when drilling on the centre lathe. The combination centre drill is also used to produce the correct seating for the tailstock centre and / or headstock centre when supporting work between centres.", marks: 6 },
     ],
     questionFigure: {
@@ -1060,7 +1060,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name suitable components manufactured from any three of the following metals: (i) Aluminium, (ii) Cast iron, (iii) Lead, (iv) High-speed steel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Aiuminium - Airplane bodies", marks: 9, group: {"claimMax":3,"perOption":3,"options":["(i) Aiuminium - Airplane bodies","(ii) Cast Iron - Bench vices","(iii) Lead - Roof flashing","(vi) High-speed steel - Twist drills"]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Aiuminium - Airplane bodies", marks: 9, contextNote: "The scheme spells aluminium 'Aiuminium' and numbers high-speed steel '(vi)', the paper's (iv).", group: {"claimMax":3,"perOption":3,"options":["(i) Aiuminium - Airplane bodies","(ii) Cast Iron - Bench vices","(iii) Lead - Roof flashing","(vi) High-speed steel - Twist drills"]} },
     ],
   } as SecCard,
   {
@@ -1073,7 +1073,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two advantages of using metal alloys.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Stainless steel is resistant to corrosion and is suitable for household kitchen use.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Stainless steel is resistant to corrosion and is suitable for household kitchen use.", marks: 3, contextNote: "The scheme opens: 'Alloys improve the properties of metals or give them new properties.'" },
     { id: "r-2", kind: "point", verbatim: "High speed steel can retain its hardness at high temperatures and is suitable for making H.S.S. cutting tools.", marks: 3 },
     ],
   } as SecCard,
@@ -1158,7 +1158,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe any two of the following material properties: (i) Brittleness, (ii) Malleability, (iii) Conductivity.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + 4"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(i) Brittleness A brittle material can easily be fractured by an impact. Glass is an example of a brittle material.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "(i) Brittleness A brittle material can easily be fractured by an impact. Glass is an example of a brittle material.", marks: null, contextNote: "The paper sets two (d)s either side of an OR: the material properties, \"Award 1 @ 5 Marks, Award 1 @ 4 Marks\", answered on one card, and pneumatics, whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "(ii) Malleability A property which allows a material to be exerted in all directions without rupture, by rolling or hammering. The malleability of most metals is increased by heating.", marks: null },
     { id: "r-3", kind: "point", verbatim: "(iii) Conductivity This is the ability of a material to allow heat or electricity to flow through it. Silver, copper and aluminium are good conductors of heat and electricity.", marks: null },
     ],
@@ -1173,7 +1173,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the engineering technology term pneumatics.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pneumatics uses compressed air to do work. Stored energy in compressed air can open and close pistons or turn pneumatic motors.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Pneumatics uses compressed air to do work. Stored energy in compressed air can open and close pistons or turn pneumatic motors.", marks: 5, contextNote: "The paper sets two (d)s either side of an OR: the material properties, \"Award 1 @ 5 Marks, Award 1 @ 4 Marks\", answered on one card, and pneumatics, whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2011-OL-paper-q3dor-crop",
@@ -1195,7 +1195,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one application for a pneumatic circuit.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A simple pneumatic circuit is the compressed air drill used by dentists for drilling teeth.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "A simple pneumatic circuit is the compressed air drill used by dentists for drilling teeth.", marks: 4, contextNote: "The paper sets two (d)s either side of an OR: the material properties, \"Award 1 @ 5 Marks, Award 1 @ 4 Marks\", answered on one card, and pneumatics, whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2011-OL-paper-q3dor-crop",
@@ -1462,7 +1462,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two reasons for using cutting fluids when machining.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To improve surface finish", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "To improve surface finish", marks: 5, contextNote: "The scheme prints 'Cutting fluids Award 3 @ 5 Marks' for (b): two parts on this card, one at (ii)." },
     { id: "r-2", kind: "point", verbatim: "To allow faster cutting speeds", marks: 5 },
     ],
   } as SecCard,
@@ -1476,7 +1476,7 @@ export const CARDS: SecCard[] = [
     questionText: "List one safety precaution to be observed when using cutting fluids on the centre lathe.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Change cutting fluid regularly to reduce rancidity", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Change cutting fluid regularly to reduce rancidity", marks: 5, contextNote: "The scheme prints 'Cutting fluids Award 3 @ 5 Marks' for (b): two parts at (i), one on this card." },
     ],
   } as SecCard,
   {
@@ -1489,7 +1489,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the cutting-tool angles labelled A and B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A is the Rake angle", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "A is the Rake angle", marks: 5, contextNote: "The scheme prints 'Name & description Award 3 @ 5 Marks' for the turning (c): two parts on this card, one at (ii). The paper sets two (c)s either side of an OR: the cutting-tool angles (c), whose (i) and (ii) each have a card of their own, and the CNC (c), \"Any three\" of four terms, answered on one card." },
     { id: "r-2", kind: "point", verbatim: "B is the Clearance angle", marks: 5 },
     ],
     questionFigure: {
@@ -1512,7 +1512,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the function of any one of the cutting-tool angles A and B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Rake angle Rake aids the removal of the chip being cut. Increasing the rake reduces the amount of power consumed in cutting and also the amount of heat generated.", marks: 5, accepts: ["Clearance angle The clearance angle ensures that only the cutting edge of the tool comes into contact with the work. Without clearance, the tool would just rub against the work without cutting."] },
+    { id: "r-1", kind: "alt", verbatim: "Rake angle Rake aids the removal of the chip being cut. Increasing the rake reduces the amount of power consumed in cutting and also the amount of heat generated.", marks: 5, accepts: ["Clearance angle The clearance angle ensures that only the cutting edge of the tool comes into contact with the work. Without clearance, the tool would just rub against the work without cutting."], contextNote: "The scheme prints 'Name & description Award 3 @ 5 Marks' for the turning (c): two parts at (i), one on this card. The paper sets two (c)s either side of an OR: the cutting-tool angles (c), whose (i) and (ii) each have a card of their own, and the CNC (c), \"Any three\" of four terms, answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2011-OL-paper-q6c-crop",
@@ -1534,7 +1534,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any three of the following Computer Numerical Control (CNC) machining terms: (i) CAD, (ii) Simulation, (iii) G codes, (iv) CNC program.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) CAD The term CAD, Computer Aided Drawing / Design, refers to the use of computers in the production of 2D or 3D drawings. 2D dimensioned drawings can be used for manufacturing while 3D drawings can be used to help visualise design ideas.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["(i) CAD The term CAD, Computer Aided Drawing / Design, refers to the use of computers in the production of 2D or 3D drawings. 2D dimensioned drawings can be used for manufacturing while 3D drawings can be used to help visualise design ideas.","(ii) Simulation This is a means of performing a test run of a CNC program. The machining of the component can be simulated on the computer screen. It allows the detection of errors thus avoiding lathe damage and waste of material.","(iii) G Codes Determine the tool path. The cutting tool will move in a particular way depending on the number following the letter G. G01, for example, will cause the tool to travel in a straight line.","(iv) CNC program A CNC program contains co-ordinates for defining the positions that the tool must move to during various operations, commands for controlling the tool movement and commands for controlling the chuck. Distances perpendicular to the lathe centre line are given as X co-ordinates and distances parallel to the centre line are given Z co-ordinat"]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) CAD The term CAD, Computer Aided Drawing / Design, refers to the use of computers in the production of 2D or 3D drawings. 2D dimensioned drawings can be used for manufacturing while 3D drawings can be used to help visualise design ideas.", marks: 15, contextNote: "The paper sets two (c)s either side of an OR: the cutting-tool angles (c), whose (i) and (ii) each have a card of their own, and the CNC (c), \"Any three\" of four terms, answered on one card.", group: {"claimMax":3,"perOption":5,"options":["(i) CAD The term CAD, Computer Aided Drawing / Design, refers to the use of computers in the production of 2D or 3D drawings. 2D dimensioned drawings can be used for manufacturing while 3D drawings can be used to help visualise design ideas.","(ii) Simulation This is a means of performing a test run of a CNC program. The machining of the component can be simulated on the computer screen. It allows the detection of errors thus avoiding lathe damage and waste of material.","(iii) G Codes Determine the tool path. The cutting tool will move in a particular way depending on the number following the letter G. G01, for example, will cause the tool to travel in a straight line.","(iv) CNC program A CNC program contains co-ordinates for defining the positions that the tool must move to during various operations, commands for controlling the tool movement and commands for controlling the chuck. Distances perpendicular to the lathe centre line are given as X co-ordinates and distances parallel to the centre line are given Z co-ordinat"]} },
     ],
   } as SecCard,
   {
@@ -1595,7 +1595,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name and give one application for any three of the instruments shown below. OR Draw the circuit symbols for any three of the following electronic components: (i) LED, (ii) Fixed resistor, (iii) Motor, (iv) Transistor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Plug gauge - for checking the size of holes", marks: 15, route: "a", group: {"claimMax":3,"perOption":5,"options":["(i) Plug gauge - for checking the size of holes","(ii) Height gauge - for accurate marking out of components","(iii) Feeler gauges - for checking the gap between two surfaces","(iv) Surface plate - for marking out and checking flat surfaces"]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Plug gauge - for checking the size of holes", marks: 15, contextNote: "The paper sets two (c)s either side of an OR, the instruments and the circuit symbols, each \"any three\" of four; the scheme prices both \"Award 3 @ 5 Marks\", so both branches are on this card: claim the rows for the branch you answered.", route: "a", group: {"claimMax":3,"perOption":5,"options":["(i) Plug gauge - for checking the size of holes","(ii) Height gauge - for accurate marking out of components","(iii) Feeler gauges - for checking the gap between two surfaces","(iv) Surface plate - for marking out and checking flat surfaces"]} },
     { id: "r-2", kind: "anyN", verbatim: "(i) LED", marks: 15, route: "b", group: {"claimMax":3,"perOption":5,"options":["(i) LED","(ii) Fixed resistor","(iii) Motor","(iv) Transistor"]} },
     ],
     questionFigure: {
@@ -1779,7 +1779,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the main operating features of any one of the following: Four-jaw independent chuck, Plastic dip-coating tank, Sprocket and chain mechanism.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Four Jaw Independent Chuck: The four jaw independent chuck can be used for eccentric turning and for gripping square, round, rectangular and irregular shapes. The four jaw independent chuck allows the work to be centered more accurately than a three jaw, but takes longer. The jaws can be moved independently of one another, each being actuated by its own screw. The jaws are also reversible and therefore only one set is required.", marks: 12, accepts: ["Plastic dip-coating tank A plastic dip coating tank is used to put a more socially acceptable finish on components made from steel, such as shopping baskets and kitchen utensils. The plastic dip coating tank consists of a fluidizing unit and a blower unit. The fluidizing unit has two compartments which are separated from each other by a porous material. The upper compartment contains the plastic power and the air supply is connected to the lower one. Air passes up through the porous material and causes the plastic power to act like a fluid. The component is heated to 180ºC and dipped into the tank. The plastic close to the component melts and sticks to the component providing an even coating all over. The component is then removed and the molten plastic is allowed to cool and harden covering the component in a protective coating.","Sprocket and chain mechanism Sprocket and chain mechanisms are usually made of alloy steels and provide direct positive drives. There main advantages are high torque transmission with no slippage. A good example of a sprocket and chain drive is on a bicycle. The pedal sprocket (driver) is larger than the wheel sprocket (driven). Both sprockets have ‘vee’ shaped teeth which a specially designed chain made up of links fits over. Each link contains two pivot pins which allow the chain to move around the sprockets. A sprocket and chain mechanism requires lubrication to function successfully. Other applications are on motorcycles, go-karts and camshaft drives of some engines."] },
+    { id: "r-1", kind: "alt", verbatim: "Four Jaw Independent Chuck: The four jaw independent chuck can be used for eccentric turning and for gripping square, round, rectangular and irregular shapes. The four jaw independent chuck allows the work to be centered more accurately than a three jaw, but takes longer. The jaws can be moved independently of one another, each being actuated by its own screw. The jaws are also reversible and therefore only one set is required.", marks: 12, accepts: ["Plastic dip-coating tank A plastic dip coating tank is used to put a more socially acceptable finish on components made from steel, such as shopping baskets and kitchen utensils. The plastic dip coating tank consists of a fluidizing unit and a blower unit. The fluidizing unit has two compartments which are separated from each other by a porous material. The upper compartment contains the plastic power and the air supply is connected to the lower one. Air passes up through the porous material and causes the plastic power to act like a fluid. The component is heated to 180ºC and dipped into the tank. The plastic close to the component melts and sticks to the component providing an even coating all over. The component is then removed and the molten plastic is allowed to cool and harden covering the component in a protective coating.","Sprocket and chain mechanism Sprocket and chain mechanisms are usually made of alloy steels and provide direct positive drives. There main advantages are high torque transmission with no slippage. A good example of a sprocket and chain drive is on a bicycle. The pedal sprocket (driver) is larger than the wheel sprocket (driven). Both sprockets have ‘vee’ shaped teeth which a specially designed chain made up of links fits over. Each link contains two pivot pins which allow the chain to move around the sprockets. A sprocket and chain mechanism requires lubrication to function successfully. Other applications are on motorcycles, go-karts and camshaft drives of some engines."], contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     ],
     figure: {
           "candId": "engineering-2012-OL-scheme-q1i-sol",
@@ -1801,7 +1801,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following computer terms: Webcam, Computer network, Search engine, Mobile application (app).",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Webcam A webcam is a video camera that feeds its images in real time to a computer or computer network, often via USB, ethernet, or Wi-Fi. Their most popular use is the establishment of video links, permitting computers to act as videophones or videoconference stations. The common use as a video camera for the World Wide Web gave the webcam its name. Other popular uses include security surveillance, computer vision, video broadcasting and for recording social videos.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Webcam A webcam is a video camera that feeds its images in real time to a computer or computer network, often via USB, ethernet, or Wi-Fi. Their most popular use is the establishment of video links, permitting computers to act as videophones or videoconference stations. The common use as a video camera for the World Wide Web gave the webcam its name. Other popular uses include security surveillance, computer vision, video broadcasting and for recording social videos.","Computer network A computer network is a collection of computers, printers and other equipment, which are connected together so that they can communicate with each other. The linking of computers by special cables or radio waves know as wireless networks allow data and resources to be shared among users.","Search engine The World Wide Web, contains hundreds of millions web sites and pages waiting to present information on many topics. Search engines such as ‘Google’ are special sites on the Web that are designed to help people find information stored on other sites. Search engines perform three basic tasks: • They search the Internet or select pieces of the Internet based on important words. • They keep an index of the words they find, and where they find them. • They allow users to look for words or combinations of words found in that index. Today’s search engines can index hundreds of millions of pages and respond to tens of millions of queries each day.","Mobile application (app) A mobile application (app) is application software which is developed for small low-power handheld devices such as mobile phones or personal digital assistants. These applications are either pre-installed on phones during manufacture, downloaded by customers from various mobile software distributors, or web applications. There is a vast range of mobile app available from games, business, travel to educational applications."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Webcam A webcam is a video camera that feeds its images in real time to a computer or computer network, often via USB, ethernet, or Wi-Fi. Their most popular use is the establishment of video links, permitting computers to act as videophones or videoconference stations. The common use as a video camera for the World Wide Web gave the webcam its name. Other popular uses include security surveillance, computer vision, video broadcasting and for recording social videos.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Webcam A webcam is a video camera that feeds its images in real time to a computer or computer network, often via USB, ethernet, or Wi-Fi. Their most popular use is the establishment of video links, permitting computers to act as videophones or videoconference stations. The common use as a video camera for the World Wide Web gave the webcam its name. Other popular uses include security surveillance, computer vision, video broadcasting and for recording social videos.","Computer network A computer network is a collection of computers, printers and other equipment, which are connected together so that they can communicate with each other. The linking of computers by special cables or radio waves know as wireless networks allow data and resources to be shared among users.","Search engine The World Wide Web, contains hundreds of millions web sites and pages waiting to present information on many topics. Search engines such as ‘Google’ are special sites on the Web that are designed to help people find information stored on other sites. Search engines perform three basic tasks: • They search the Internet or select pieces of the Internet based on important words. • They keep an index of the words they find, and where they find them. • They allow users to look for words or combinations of words found in that index. Today’s search engines can index hundreds of millions of pages and respond to tens of millions of queries each day.","Mobile application (app) A mobile application (app) is application software which is developed for small low-power handheld devices such as mobile phones or personal digital assistants. These applications are either pre-installed on phones during manufacture, downloaded by customers from various mobile software distributors, or web applications. There is a vast range of mobile app available from games, business, travel to educational applications."]} },
     ],
   } as SecCard,
   {
@@ -1814,7 +1814,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define the term tensile strength in relation to the properties of materials and give one application where a material needs to be strong in tension.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tensile strength: The ability of a metal to withstand a pulling force is know as it’s tensile strength.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Tensile strength: The ability of a metal to withstand a pulling force is know as it’s tensile strength.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Example: Fishing line / a tow bar requires a high degree of tensile strength as does a crane hook.", marks: 6 },
     ],
   } as SecCard,
@@ -1828,7 +1828,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Pulley drive system, Ratchet and pawl, Pop riveting, Enameling.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Pulley drive system A pulley drive system is used to transmit motion and force from one shaft to another by way of pulleys and belts. Household machines such as sewing machines, spin driers and washing machines are often driven by round grooved pulleys and round rubber belts. Machine tools such as drilling machines and lathes use vee pulleys and vee belts. Belt and pulley drive systems can also be used to transfer rotary motion from a motor spindle to a drive axle on class projects.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Pulley drive system A pulley drive system is used to transmit motion and force from one shaft to another by way of pulleys and belts. Household machines such as sewing machines, spin driers and washing machines are often driven by round grooved pulleys and round rubber belts. Machine tools such as drilling machines and lathes use vee pulleys and vee belts. Belt and pulley drive systems can also be used to transfer rotary motion from a motor spindle to a drive axle on class projects.","Ratchet and pawl A ratchet and pawl is used to allow a shaft, axle or pin to rotate in one direction only. The teeth on the ratchet wheel are so shaped that the pawl slides over them in one direction and engages with them so as to restrict movement in the other direction. A ratchet and pawl can be used in ratchet spanners, fishing reels, ratchet screwdrivers, micrometers and winding machines etc.","Pop riveting Pop riveting is used for joining light gauge material. A special tool is used to draw a pin through the rivet enlarging one end of the rivet until the pin breaks leaving it’s head behind. A pop rivet has an advantage in that it can be used to join hollow sheet metal articles where only one side of the joint is accessible.","Enameling Enameling involves fusing enamel, which is basically coloured glass, onto metal surfaces. The enamel is mostly applied in power form and then fired. The firing can be done with a blow torch but a kiln is more suitable. The enamel can be transparent, translucent or opaque and can be confined to certain areas of the surface if desired. A number o metals can be enameled, e.g. copper, silver, gold and steel."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Pulley drive system A pulley drive system is used to transmit motion and force from one shaft to another by way of pulleys and belts. Household machines such as sewing machines, spin driers and washing machines are often driven by round grooved pulleys and round rubber belts. Machine tools such as drilling machines and lathes use vee pulleys and vee belts. Belt and pulley drive systems can also be used to transfer rotary motion from a motor spindle to a drive axle on class projects.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Pulley drive system A pulley drive system is used to transmit motion and force from one shaft to another by way of pulleys and belts. Household machines such as sewing machines, spin driers and washing machines are often driven by round grooved pulleys and round rubber belts. Machine tools such as drilling machines and lathes use vee pulleys and vee belts. Belt and pulley drive systems can also be used to transfer rotary motion from a motor spindle to a drive axle on class projects.","Ratchet and pawl A ratchet and pawl is used to allow a shaft, axle or pin to rotate in one direction only. The teeth on the ratchet wheel are so shaped that the pawl slides over them in one direction and engages with them so as to restrict movement in the other direction. A ratchet and pawl can be used in ratchet spanners, fishing reels, ratchet screwdrivers, micrometers and winding machines etc.","Pop riveting Pop riveting is used for joining light gauge material. A special tool is used to draw a pin through the rivet enlarging one end of the rivet until the pin breaks leaving it’s head behind. A pop rivet has an advantage in that it can be used to join hollow sheet metal articles where only one side of the joint is accessible.","Enameling Enameling involves fusing enamel, which is basically coloured glass, onto metal surfaces. The enamel is mostly applied in power form and then fired. The firing can be done with a blow torch but a kiln is more suitable. The enamel can be transparent, translucent or opaque and can be confined to certain areas of the surface if desired. A number o metals can be enameled, e.g. copper, silver, gold and steel."]} },
     ],
   } as SecCard,
   {
@@ -1841,7 +1841,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the cutting tool shown and explain its function.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Circular split die / button die", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Circular split die / button die", marks: null, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "A circular split die is used for cutting external threads on round bars and on pipes. The circular die is fitted into a stock, placed on top of the bar and rotated forward and backward to cut the thread. The split permits a small amount of opening and closing of the die to aid in the cutting of the thread.", marks: null },
     ],
     questionFigure: {
@@ -2024,7 +2024,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following metal properties: (i) Toughness, (ii) Ductility, (iii) Melting point.\nOR\n(i) Describe one application for robotics in the manufacturing industry.\n(ii) State one advantage for using robotics in the manufacturing industry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Toughness: This is the ability of a material to withstand an impact or hammering load.", marks: 8, route: "a", group: {"claimMax":2,"perOption":4,"options":["Toughness: This is the ability of a material to withstand an impact or hammering load.","Ductility: Ductility is the ability of a metal to be drawn into wire. A material is ductile when it can be permanently stretched by a tensile force without fracture.","Melting point: The melting point of a material is the temperature at which a material changes from a solid state to a liquid state."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Toughness: This is the ability of a material to withstand an impact or hammering load.", marks: 8, contextNote: "The paper sets two (d)s either side of an OR, the metal properties and robotics in manufacturing; the scheme prices both \"Award 2 @ 4 Marks\", so both branches are on this card: claim the rows for the branch you answered.", route: "a", group: {"claimMax":2,"perOption":4,"options":["Toughness: This is the ability of a material to withstand an impact or hammering load.","Ductility: Ductility is the ability of a metal to be drawn into wire. A material is ductile when it can be permanently stretched by a tensile force without fracture.","Melting point: The melting point of a material is the temperature at which a material changes from a solid state to a liquid state."]} },
     { id: "r-2", kind: "anyN", verbatim: "Suitable applications are welding, component placing or spray painting.", marks: 4, route: "b" },
     { id: "r-3", kind: "anyN", verbatim: "Using robots to perform repetitive tasks, helps to increase productivity.", marks: 4, route: "b" },
     ],
@@ -2153,7 +2153,7 @@ export const CARDS: SecCard[] = [
     questionText: "State any two functions of a flux in the soldering process.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To remove oxides from metal and / or prevent the formation of new oxides.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "To remove oxides from metal and / or prevent the formation of new oxides.", marks: null, contextNote: "The scheme prints 'Good description Award 3 @ 4 Marks' for (c): two parts on this card, one at (ii)." },
     { id: "r-2", kind: "point", verbatim: "To reduce surface tension allowing the solder to flow easily i.e. capillary attraction.", marks: null },
     { id: "r-3", kind: "point", verbatim: "To assist the alloying action of the solder with the work.", marks: null },
     ],
@@ -2168,7 +2168,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the difference between a passive flux and an active flux.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A passive flux is non-corrosive and resin based. It prevents oxidation during soldering. Suitable for electrical work and other applications where it is not possible to wash away the flux from the joint afterwards.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "A passive flux is non-corrosive and resin based. It prevents oxidation during soldering. Suitable for electrical work and other applications where it is not possible to wash away the flux from the joint afterwards.", marks: null, contextNote: "The scheme prints 'Good description Award 3 @ 4 Marks' for (c): two parts at (i), one on this card." },
     { id: "r-2", kind: "point", verbatim: "An active flux is corrosive and removes oxides from the surface and prevents further oxidation during soldering. When using an active flux, the joint must be thoroughly washed afterwards.", marks: null },
     ],
   } as SecCard,
@@ -2334,7 +2334,7 @@ export const CARDS: SecCard[] = [
     questionText: "A work-holding method used to turn long shafts on a centre lathe is shown. Name the work-holding method shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Turning between centres", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Turning between centres", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the work-holding (c), whose (i)-(iii) each have a card of their own, and the CNC (c), \"Any three\" of four terms, answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2012-OL-paper-q6c-crop",
@@ -2356,7 +2356,7 @@ export const CARDS: SecCard[] = [
     questionText: "A work-holding method used to turn long shafts on a centre lathe is shown. Name two other methods of work-holding on the lathe.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Three jaw chuck,", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Three jaw chuck,", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the work-holding (c), whose (i)-(iii) each have a card of their own, and the CNC (c), \"Any three\" of four terms, answered on one card." },
     { id: "r-2", kind: "point", verbatim: "Four jaw independent chuck", marks: null },
     ],
     questionFigure: {
@@ -2379,7 +2379,7 @@ export const CARDS: SecCard[] = [
     questionText: "A work-holding method used to turn long shafts on a centre lathe is shown. State one safety precaution to be observed when turning long shafts on the centre lathe.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Ensure all components i.e. driving plate / dog carrier / live & dead centres are secured and tightened correctly.", marks: 5, accepts: ["Stay clear of all rotating parts."] },
+    { id: "r-1", kind: "alt", verbatim: "Ensure all components i.e. driving plate / dog carrier / live & dead centres are secured and tightened correctly.", marks: 5, accepts: ["Stay clear of all rotating parts."], contextNote: "The paper sets two (c)s either side of an OR: the work-holding (c), whose (i)-(iii) each have a card of their own, and the CNC (c), \"Any three\" of four terms, answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2012-OL-paper-q6c-crop",
@@ -2401,7 +2401,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any three of the following Computer Numerical Control (CNC) machining terms: (i) CAD/CAM, (ii) Z Axis, (iii) G Codes, (iv) Canned cycle.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "CAD/CAM Stands for Computer Aided Design and Computer Aided Manufacture. Such a system enables us to design and draw the part on the computer screen. Then by selecting the appropriate command the computer will write the part program for output to a CNC lathe for manufacture.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["CAD/CAM Stands for Computer Aided Design and Computer Aided Manufacture. Such a system enables us to design and draw the part on the computer screen. Then by selecting the appropriate command the computer will write the part program for output to a CNC lathe for manufacture.","Z Axis A CNC lathe controls the movement of the cutting tool along two axes identified as the ‘X’ and ‘Z’ axis. The Z axis runs parallel to centre line of the work billet.","G Codes Determine the tool path. The cutting tool will move in a particular way depending on the number following the letter G. G01, for example, will cause the tool to travel in a straight line.","Canned cycle A canned cycle enables a number of repetitive operations to be carried out by a single block of program. Peck drilling (G83) is and example of a canned cycle."]} },
+    { id: "r-1", kind: "anyN", verbatim: "CAD/CAM Stands for Computer Aided Design and Computer Aided Manufacture. Such a system enables us to design and draw the part on the computer screen. Then by selecting the appropriate command the computer will write the part program for output to a CNC lathe for manufacture.", marks: 15, contextNote: "The paper sets two (c)s either side of an OR: the work-holding (c), whose (i)-(iii) each have a card of their own, and the CNC (c), \"Any three\" of four terms, answered on one card.", group: {"claimMax":3,"perOption":5,"options":["CAD/CAM Stands for Computer Aided Design and Computer Aided Manufacture. Such a system enables us to design and draw the part on the computer screen. Then by selecting the appropriate command the computer will write the part program for output to a CNC lathe for manufacture.","Z Axis A CNC lathe controls the movement of the cutting tool along two axes identified as the ‘X’ and ‘Z’ axis. The Z axis runs parallel to centre line of the work billet.","G Codes Determine the tool path. The cutting tool will move in a particular way depending on the number following the letter G. G01, for example, will cause the tool to travel in a straight line.","Canned cycle A canned cycle enables a number of repetitive operations to be carried out by a single block of program. Peck drilling (G83) is and example of a canned cycle."]} },
     ],
   } as SecCard,
   {
@@ -2452,7 +2452,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name and give one application for any three of the instruments shown. OR Draw the circuit symbols for any three of the following electronic components: (i) Bulb, (ii) Battery, (iii) Switch, (iv) Variable resistor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Engineers protractor - for accurate marking out of angles", marks: 15, route: "a", group: {"claimMax":3,"perOption":5,"options":["(i) Engineers protractor - for accurate marking out of angles","(ii) Depth gauge - for accurate measuring the depth of holes/slots/shoulders","(iii) Radius gauges - for checking internal & external radii","(iv) Vee block & clamp - for holding round bars when drilling or marking out"]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Engineers protractor - for accurate marking out of angles", marks: 15, contextNote: "The paper sets two (c)s either side of an OR, the instruments and the circuit symbols, each \"any three\" of four; the scheme prices both \"Award 3 @ 5 Marks\", so both branches are on this card: claim the rows for the branch you answered.", route: "a", group: {"claimMax":3,"perOption":5,"options":["(i) Engineers protractor - for accurate marking out of angles","(ii) Depth gauge - for accurate measuring the depth of holes/slots/shoulders","(iii) Radius gauges - for checking internal & external radii","(iv) Vee block & clamp - for holding round bars when drilling or marking out"]} },
     { id: "r-2", kind: "anyN", verbatim: "(i) Bulb", marks: 15, route: "b", group: {"claimMax":3,"perOption":5,"options":["(i) Bulb","(ii) Battery","(iii) Switch","(iv) Variable resistor"]} },
     ],
     questionFigure: {
@@ -2630,7 +2630,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with reference to the diagrams, the main operating features of any one of the following:\nStrip heater\nWorm and wheel mechanism\nBox and pan folding machine.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Strip Heater: A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by thermostatically controlling the heating temperature.", marks: 12, accepts: ["Worm and wheel mechanism A worm and wheel mechanism is a gear arrangement in which a worm, in the form of a screw, drives a wheel similar to a spur gear. A worm and wheel mechanism is used to change the direction of rotation through 90°, reduce rotational speed and increase output torque. This gear system is often used in project work to change the high speed of DC electrical motors into more useful speeds and torques. The worm drives the wheel, if the wheel tries to drive the worm, the system is designed to lock.","Box and pan folding machine A box and pan folding machine is used to form and bend light gauge sheet metal. It consists of an upper jaw which can be adjusted to accommodate different material thicknesses and different bend radius. The lower jaw is fixed but split to allow a hand operated lever lift the outer half of the lower jaw and bend the clamped material to the required angle."] },
+    { id: "r-1", kind: "alt", verbatim: "Strip Heater: A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by thermostatically controlling the heating temperature.", marks: 12, accepts: ["Worm and wheel mechanism A worm and wheel mechanism is a gear arrangement in which a worm, in the form of a screw, drives a wheel similar to a spur gear. A worm and wheel mechanism is used to change the direction of rotation through 90°, reduce rotational speed and increase output torque. This gear system is often used in project work to change the high speed of DC electrical motors into more useful speeds and torques. The worm drives the wheel, if the wheel tries to drive the worm, the system is designed to lock.","Box and pan folding machine A box and pan folding machine is used to form and bend light gauge sheet metal. It consists of an upper jaw which can be adjusted to accommodate different material thicknesses and different bend radius. The lower jaw is fixed but split to allow a hand operated lever lift the outer half of the lower jaw and bend the clamped material to the required angle."], contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     ],
     questionFigure: {
           "candId": "engineering-2013-OL-paper-q1i-crop",
@@ -2652,7 +2652,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Skype, VDU, Virus, Social networks.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Skype Skype is software downloadable from the internet. Skype software allows internet users communicate with peers by voice using a microphone, video by using a webcam, and instant messaging by text. Skype also offers file transfer, and videoconferencing facilities. Phone calls can also be coordinated within Skype but standard landline telephones and mobile phones on the traditional telephone networks are charged.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Skype Skype is software downloadable from the internet. Skype software allows internet users communicate with peers by voice using a microphone, video by using a webcam, and instant messaging by text. Skype also offers file transfer, and videoconferencing facilities. Phone calls can also be coordinated within Skype but standard landline telephones and mobile phones on the traditional telephone networks are charged.","VDU A VDU is a visual display unit or monitor used to output visual data on a computer. The monitor comprises the display device circuitry and enclosure. The technology used for the display device continues to evolve but is typically a thin film transistor liquid crystal display thin panel. Their aspect ratio of 16:9 allows high quality picture display for entertainment purposes.","Virus A program or piece of code that operates by attaching itself to some other program or downloaded file. When this program starts the virus code runs, replicates itself and infects other programs or documents on the PC without the user’s knowledge. Written with the deliberate intention of corrupting files, a computer virus can seriously damage or completely destroy files or software on a computer.","Social networks Social networks offer online services, platforms, or sites that focus on the sharing of information such as interests, activities, backgrounds, or real-life connections between people. A social network service consists of a representation of each user, often a profile, his / her social links, and a variety of additional services. Most social network services are web-based and provide a means for users to interact over the Internet by e-mail and or instant messaging"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Skype Skype is software downloadable from the internet. Skype software allows internet users communicate with peers by voice using a microphone, video by using a webcam, and instant messaging by text. Skype also offers file transfer, and videoconferencing facilities. Phone calls can also be coordinated within Skype but standard landline telephones and mobile phones on the traditional telephone networks are charged.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Skype Skype is software downloadable from the internet. Skype software allows internet users communicate with peers by voice using a microphone, video by using a webcam, and instant messaging by text. Skype also offers file transfer, and videoconferencing facilities. Phone calls can also be coordinated within Skype but standard landline telephones and mobile phones on the traditional telephone networks are charged.","VDU A VDU is a visual display unit or monitor used to output visual data on a computer. The monitor comprises the display device circuitry and enclosure. The technology used for the display device continues to evolve but is typically a thin film transistor liquid crystal display thin panel. Their aspect ratio of 16:9 allows high quality picture display for entertainment purposes.","Virus A program or piece of code that operates by attaching itself to some other program or downloaded file. When this program starts the virus code runs, replicates itself and infects other programs or documents on the PC without the user’s knowledge. Written with the deliberate intention of corrupting files, a computer virus can seriously damage or completely destroy files or software on a computer.","Social networks Social networks offer online services, platforms, or sites that focus on the sharing of information such as interests, activities, backgrounds, or real-life connections between people. A social network service consists of a representation of each user, often a profile, his / her social links, and a variety of additional services. Most social network services are web-based and provide a means for users to interact over the Internet by e-mail and or instant messaging"]} },
     ],
   } as SecCard,
   {
@@ -2665,7 +2665,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define the term electrical conductivity in relation to the properties of materials and name a material which is a good electrical conductor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Electrical conductivity: Electrical conductivity is the ability of a material to allow electric current to pass through. Metals are excellent electrical conductors.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Electrical conductivity: Electrical conductivity is the ability of a material to allow electric current to pass through. Metals are excellent electrical conductors.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Example: Copper / Gold / Brass", marks: 6 },
     ],
   } as SecCard,
@@ -2679,7 +2679,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Variable resistor, Rack and pinion, Compressive force, Hand vice.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Variable resistor A variable resistor is a resistor which can have the resistance between the central terminal and the end terminals changed by turning the spindle. The resistance can be set between zero and the value marked on its case. An LDR or Thermistor can also behave as a variable resistor.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Variable resistor A variable resistor is a resistor which can have the resistance between the central terminal and the end terminals changed by turning the spindle. The resistance can be set between zero and the value marked on its case. An LDR or Thermistor can also behave as a variable resistor.","Rack and pinion A rack and pinion is used to convert between rotary (circular) and linear (straight line) motion. The rack is the flat, toothed part, the pinion is the gear. A rack and pinion can convert from rotary to linear or from linear to rotary. Rack and pinions are commonly used on drilling machines to bring down the drill into the work. The feed lever rotates the pinion and moves the rack, causing the drill spindle to move down in a straight line.","Compressive force A compressive (squashing) force occurs when a bar is subjected to a push. If the push on one end results in an equal and opposite push on the other end then the bar is said to be in compression.","Hand vice A hand vice is used for holding metal while it is being drilled. Small work which has to be drilled and that cannot be held in a machine vice i.e. small pieces of sheet or strip is held in a hand vice for safety."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Variable resistor A variable resistor is a resistor which can have the resistance between the central terminal and the end terminals changed by turning the spindle. The resistance can be set between zero and the value marked on its case. An LDR or Thermistor can also behave as a variable resistor.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Variable resistor A variable resistor is a resistor which can have the resistance between the central terminal and the end terminals changed by turning the spindle. The resistance can be set between zero and the value marked on its case. An LDR or Thermistor can also behave as a variable resistor.","Rack and pinion A rack and pinion is used to convert between rotary (circular) and linear (straight line) motion. The rack is the flat, toothed part, the pinion is the gear. A rack and pinion can convert from rotary to linear or from linear to rotary. Rack and pinions are commonly used on drilling machines to bring down the drill into the work. The feed lever rotates the pinion and moves the rack, causing the drill spindle to move down in a straight line.","Compressive force A compressive (squashing) force occurs when a bar is subjected to a push. If the push on one end results in an equal and opposite push on the other end then the bar is said to be in compression.","Hand vice A hand vice is used for holding metal while it is being drilled. Small work which has to be drilled and that cannot be held in a machine vice i.e. small pieces of sheet or strip is held in a hand vice for safety."]} },
     ],
   } as SecCard,
   {
@@ -2692,7 +2692,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify the mechanism shown and suggest one suitable application for it.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name: Ratchet and pawl", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Name: Ratchet and pawl", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Application: A ratchet and pawl is used in mechanisms such as ratchet spanners, fishing reels, ratchet screwdrivers, micrometers and the winding mechanisms of watches.", marks: 6 },
     ],
     questionFigure: {
@@ -2884,7 +2884,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following terms: (i) Work hardening, (ii) Brittleness, (iii) Tempering.\nOR\n(i) Describe one application for pneumatics in the manufacturing industry.\n(ii) State one advantage of using pneumatics in the manufacturing industry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Work hardening: When a metal is hammered or shaped when cold it becomes hard and brittle at the point where the cold - working occurs. Some metals are prone to work hardening, copper and aluminium are typical examples where hardness values can be increased by cold working.", marks: 8, route: "a", group: {"claimMax":2,"perOption":4,"options":["Work hardening: When a metal is hammered or shaped when cold it becomes hard and brittle at the point where the cold - working occurs. Some metals are prone to work hardening, copper and aluminium are typical examples where hardness values can be increased by cold working.","Brittleness: A brittle material will fracture if subjected to an impact or blow. Glass is an example of a brittle material.","Tempering: Tempering is a heat treatment process used to reduce the hardness level of components which have been hardened and are too hard to use."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Work hardening: When a metal is hammered or shaped when cold it becomes hard and brittle at the point where the cold - working occurs. Some metals are prone to work hardening, copper and aluminium are typical examples where hardness values can be increased by cold working.", marks: 8, contextNote: "The paper sets two (d)s either side of an OR, the metal terms and pneumatics in manufacturing; the scheme prices both \"Award 2 @ 4 Marks\", so both branches are on this card: claim the rows for the branch you answered.", route: "a", group: {"claimMax":2,"perOption":4,"options":["Work hardening: When a metal is hammered or shaped when cold it becomes hard and brittle at the point where the cold - working occurs. Some metals are prone to work hardening, copper and aluminium are typical examples where hardness values can be increased by cold working.","Brittleness: A brittle material will fracture if subjected to an impact or blow. Glass is an example of a brittle material.","Tempering: Tempering is a heat treatment process used to reduce the hardness level of components which have been hardened and are too hard to use."]} },
     { id: "r-2", kind: "anyN", verbatim: "Suitable applications: assembly lines /operation of screwdriver heads, component placing, dentist drill or robot gripper operation.", marks: 4, route: "b" },
     { id: "r-3", kind: "anyN", verbatim: "Once equipment is installed pneumatics provides a relativity cheap form of energy for doing work also pneumatic equipment operates at a relatively quiet level.", marks: 4, route: "b" },
     ],
@@ -3169,7 +3169,7 @@ export const CARDS: SecCard[] = [
     questionText: "A turning process used on a centre lathe is shown below. Name the turning process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Taper turning.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Taper turning.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the turning (c), whose (i)-(iii) each have a card of their own, and the CNC (c), \"Any three\" of four labelled parts, answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2013-OL-paper-q6c-crop",
@@ -3191,7 +3191,7 @@ export const CARDS: SecCard[] = [
     questionText: "A turning process used on a centre lathe is shown below. Name part A used in the turning process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Top / compound slide.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Top / compound slide.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the turning (c), whose (i)-(iii) each have a card of their own, and the CNC (c), \"Any three\" of four labelled parts, answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2013-OL-paper-q6c-crop",
@@ -3213,7 +3213,7 @@ export const CARDS: SecCard[] = [
     questionText: "A turning process used on a centre lathe is shown below. State one safety precaution to be observed when using the turning process in 6(c)(i).",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ensure the top slide is securely tightened before use.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Ensure the top slide is securely tightened before use.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the turning (c), whose (i)-(iii) each have a card of their own, and the CNC (c), \"Any three\" of four labelled parts, answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2013-OL-paper-q6c-crop",
@@ -3235,7 +3235,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any three of the parts labelled A, B, C and D on the Computer Numerical Controlled lathe shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A: Chuck", marks: 15, group: {"claimMax":3,"perOption":5,"options":["A: Chuck","B: Jog Keys","C: Stepper motor","D: Cutting tool"]} },
+    { id: "r-1", kind: "anyN", verbatim: "A: Chuck", marks: 15, contextNote: "The paper sets two (c)s either side of an OR: the turning (c), whose (i)-(iii) each have a card of their own, and the CNC (c), \"Any three\" of four labelled parts, answered on one card.", group: {"claimMax":3,"perOption":5,"options":["A: Chuck","B: Jog Keys","C: Stepper motor","D: Cutting tool"]} },
     ],
     questionFigure: {
           "candId": "engineering-2013-OL-paper-q6cor-crop",
@@ -3295,7 +3295,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any three of the instruments shown and give one application for each instrument named. OR Name any three of the components shown below and state a suitable use for each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Vernier height gauge - for accurate marking out.", marks: 15, route: "a", group: {"claimMax":3,"perOption":5,"options":["(i) Vernier height gauge - for accurate marking out.","(ii) Micrometer - for accurate measuring.","(iii) Plug gauge - for checking the diameter of internal holes.","(iv) Outside calipers - for checking the outside diameter of round bars."]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Vernier height gauge - for accurate marking out.", marks: 15, contextNote: "The paper sets two (c)s either side of an OR, the instruments and the electronic components, each \"Any three\" of four photographs captioned (i)-(iv); the scheme prices both \"Award 3 @ 5 Marks\", so both branches are on this card: claim the rows for the branch you answered.", route: "a", group: {"claimMax":3,"perOption":5,"options":["(i) Vernier height gauge - for accurate marking out.","(ii) Micrometer - for accurate measuring.","(iii) Plug gauge - for checking the diameter of internal holes.","(iv) Outside calipers - for checking the outside diameter of round bars."]} },
     { id: "r-2", kind: "anyN", verbatim: "(i) LED: Can be used as a power on indicator in circuits.", marks: 15, route: "b", group: {"claimMax":3,"perOption":5,"options":["(i) LED: Can be used as a power on indicator in circuits.","(ii) Toggle switch: Used to turn circuits on or off.","(iii) Variable resistor: Can be used to control the flow of current in circuits.","(iv) Battery: Provides electrical energy to circuits."]} },
     ],
     questionFigure: {
@@ -3480,7 +3480,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the main operating features of any one of the following:\nPop riveting gun\nRatchet and pawl mechanism\nBrazing hearth.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Pop riveting gun: A pop riveting gun is used to create a pop riveted joint in sheet metal. A pop rivet is placed into the gun and passed through a pre-drilled hole in the metals to be joined. As the handles of the gun are squeezed, a clamping mechanism grips the shaft of the rivet and draws it back. The enlarged end of the shaft causes the remaining part of the rivet to expand thereby clamping the sheet metal together. When the tensile force on the rivet gets too great the shaft breaks off leaving the pop rivet joint behind.", marks: 12, accepts: ["Ratchet and pawl mechanism: A ratchet and pawl mechanism is used when rotation is required in one direction only. As the ratchet is rotated clockwise the spring loaded pawl pushes outwards as it lifts over the ratchet’s teeth. However, if the ratchet tries to rotate anti-clockwise the pawl does not release thereby preventing rotation.","Brazing hearth: A brazing hearth can be used for heating metals when joining by brazing or soldering. The brazing hearth is equipped with a torch, a compressor and a fire brick lined hearth. The fuel gas is mixed with the air and when ignited a flame burns at the end of the torch. The fire brick lining acts as an insulator to reduce heat loss and ensure rapid heating."] },
+    { id: "r-1", kind: "alt", verbatim: "Pop riveting gun: A pop riveting gun is used to create a pop riveted joint in sheet metal. A pop rivet is placed into the gun and passed through a pre-drilled hole in the metals to be joined. As the handles of the gun are squeezed, a clamping mechanism grips the shaft of the rivet and draws it back. The enlarged end of the shaft causes the remaining part of the rivet to expand thereby clamping the sheet metal together. When the tensile force on the rivet gets too great the shaft breaks off leaving the pop rivet joint behind.", marks: 12, accepts: ["Ratchet and pawl mechanism: A ratchet and pawl mechanism is used when rotation is required in one direction only. As the ratchet is rotated clockwise the spring loaded pawl pushes outwards as it lifts over the ratchet’s teeth. However, if the ratchet tries to rotate anti-clockwise the pawl does not release thereby preventing rotation.","Brazing hearth: A brazing hearth can be used for heating metals when joining by brazing or soldering. The brazing hearth is equipped with a torch, a compressor and a fire brick lined hearth. The fuel gas is mixed with the air and when ignited a flame burns at the end of the torch. The fire brick lining acts as an insulator to reduce heat loss and ensure rapid heating."], contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     ],
     questionFigure: {
           "candId": "engineering-2014-OL-paper-q1i-crop",
@@ -3502,7 +3502,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Computer tablet, Scanner, Streaming media, 3D printer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Computer tablet: A computer table is a portable hand held device which allows the user to complete many of the tasks that a personal computer would. Typically tablets do not have keyboards but use touchscreen control. Tablets also have additional features such as cameras and can download and operate apps.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Computer tablet: A computer table is a portable hand held device which allows the user to complete many of the tasks that a personal computer would. Typically tablets do not have keyboards but use touchscreen control. Tablets also have additional features such as cameras and can download and operate apps.","Scanner: A scanner is an input device which uses a lamp to capture a copy of an image or document. The scanner then digitises this image into a variety of file formats e.g. jpeg, pdf, tiff etc. These files can then be imported into documents or printed as required.","Streaming media: Streaming media is video and / or audio data transmitted over a computer network for immediate playback rather than for file download and playback offline. Examples of streaming video and audio include internet radio and television broadcasts, film and corporate webcasts.","3D printer: A 3D printer is a machine for producing prototype 3D models of design solutions from a variety of different materials. A digital file is sent to the 3D printer in a similar way to that of a normal printer however the resulting print is a physical 3D model. The file may be generated using 3D CAD software or a physical 3D scan of an existing object."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Computer tablet: A computer table is a portable hand held device which allows the user to complete many of the tasks that a personal computer would. Typically tablets do not have keyboards but use touchscreen control. Tablets also have additional features such as cameras and can download and operate apps.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Computer tablet: A computer table is a portable hand held device which allows the user to complete many of the tasks that a personal computer would. Typically tablets do not have keyboards but use touchscreen control. Tablets also have additional features such as cameras and can download and operate apps.","Scanner: A scanner is an input device which uses a lamp to capture a copy of an image or document. The scanner then digitises this image into a variety of file formats e.g. jpeg, pdf, tiff etc. These files can then be imported into documents or printed as required.","Streaming media: Streaming media is video and / or audio data transmitted over a computer network for immediate playback rather than for file download and playback offline. Examples of streaming video and audio include internet radio and television broadcasts, film and corporate webcasts.","3D printer: A 3D printer is a machine for producing prototype 3D models of design solutions from a variety of different materials. A digital file is sent to the 3D printer in a similar way to that of a normal printer however the resulting print is a physical 3D model. The file may be generated using 3D CAD software or a physical 3D scan of an existing object."]} },
     ],
   } as SecCard,
   {
@@ -3515,7 +3515,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define the term malleability and name a material which is malleable.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Malleability: Malleability is the ability of a material to be flattened out in all directions by rolling or hammering.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Malleability: Malleability is the ability of a material to be flattened out in all directions by rolling or hammering.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Example: Copper / Lead / Aluminium", marks: 6 },
     ],
   } as SecCard,
@@ -3529,7 +3529,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Light dependent resistor (LDR), Compressor, Engraving, Self-locking nut.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Light dependent resistor (LDR): A light dependent resistor is a resistor whose resistance varies based on the amount of light falling on it. Bright – low resistance, Dark – high resistance.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Light dependent resistor (LDR): A light dependent resistor is a resistor whose resistance varies based on the amount of light falling on it. Bright – low resistance, Dark – high resistance.","Compressor: A compressor is a machine which takes in air from its surroundings and stores it under pressure in a reservoir tank. This air is then used to do work such as powering tools or spray painting.","Engraving: Engraving refers to the use of sharp tools to cut grooves in metal or any other material. Text or designs may be engraved into the surface of the material. An engraver with a vibrating head can be used to perform the task.","Self-locking nut: A self-locking nut uses a nylon insert to prevent it from loosening due to vibration. When the nut is tightened onto a machine screw or threaded bar, the thread is cut into the nylon. The nylon grips the bar and will not allow the nut to loosen."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Light dependent resistor (LDR): A light dependent resistor is a resistor whose resistance varies based on the amount of light falling on it. Bright – low resistance, Dark – high resistance.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Light dependent resistor (LDR): A light dependent resistor is a resistor whose resistance varies based on the amount of light falling on it. Bright – low resistance, Dark – high resistance.","Compressor: A compressor is a machine which takes in air from its surroundings and stores it under pressure in a reservoir tank. This air is then used to do work such as powering tools or spray painting.","Engraving: Engraving refers to the use of sharp tools to cut grooves in metal or any other material. Text or designs may be engraved into the surface of the material. An engraver with a vibrating head can be used to perform the task.","Self-locking nut: A self-locking nut uses a nylon insert to prevent it from loosening due to vibration. When the nut is tightened onto a machine screw or threaded bar, the thread is cut into the nylon. The nylon grips the bar and will not allow the nut to loosen."]} },
     ],
   } as SecCard,
   {
@@ -3542,7 +3542,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the two drive systems shown at (i) and (ii).",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(i) Stepped pulleys", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "(i) Stepped pulleys", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "(ii) Compound gear train.", marks: 6 },
     ],
     questionFigure: {
@@ -3726,7 +3726,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following metal properties: (i) Elasticity, (ii) Toughness, (iii) Conductivity. OR State two advantages of using robotics in the manufacturing industry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Elasticity The ability of a material to return to its original shape when freed from a force which was distorting it e.g. rubber.", marks: 8, route: "a", group: {"claimMax":2,"perOption":4,"options":["Elasticity The ability of a material to return to its original shape when freed from a force which was distorting it e.g. rubber.","Toughness This property enables a material to withstand blows or an impact e.g. steel.","Conductivity This is the ability of a material to allow heat or electricity to flow through it e.g. copper."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Elasticity The ability of a material to return to its original shape when freed from a force which was distorting it e.g. rubber.", marks: 8, contextNote: "The paper sets two (d)s either side of an OR, the metal properties and robotics in manufacturing; the scheme prices both \"Award 2 @ 4 Marks\", so both branches are on this card: claim the rows for the branch you answered.", route: "a", group: {"claimMax":2,"perOption":4,"options":["Elasticity The ability of a material to return to its original shape when freed from a force which was distorting it e.g. rubber.","Toughness This property enables a material to withstand blows or an impact e.g. steel.","Conductivity This is the ability of a material to allow heat or electricity to flow through it e.g. copper."]} },
     { id: "r-2", kind: "anyN", verbatim: "Robots do not take breaks therefore they can run continuously with little downtime.", marks: 4, route: "b" },
     { id: "r-3", kind: "anyN", verbatim: "Robotics is used in industry to automate processes and perform repetitive tasks.", marks: 4, route: "b" },
     ],
@@ -4010,7 +4010,7 @@ export const CARDS: SecCard[] = [
     questionText: "A part for a centre lathe is shown opposite. Name this lathe part. OR A CNC lathe is shown below. What do the letters CNC stand for?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tailstock", marks: 5, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Tailstock", marks: 5, contextNote: "The paper sets two (c)s either side of an OR, the tailstock and the CNC lathe; the scheme prices the romans of both \"Award 3 @ 5 Marks\", so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Computer Numerical Control.", marks: 5, route: "b" },
     ],
     questionFigure: {
@@ -4033,7 +4033,7 @@ export const CARDS: SecCard[] = [
     questionText: "A part for a centre lathe is shown opposite. Describe two operations that can be performed on a centre lathe using the part shown. OR A CNC lathe is shown below. Describe one advantage of a CNC lathe over a manual lathe.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Drilling and supporting long bars on the lathe.", marks: 5, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Drilling and supporting long bars on the lathe.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR, the tailstock and the CNC lathe; the scheme prices the romans of both \"Award 3 @ 5 Marks\", so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Greater accuracy and faster machining time.", marks: 5, route: "b" },
     ],
     questionFigure: {
@@ -4056,7 +4056,7 @@ export const CARDS: SecCard[] = [
     questionText: "A part for a centre lathe is shown opposite. State one safety precaution to be observed when using this lathe part. OR A CNC lathe is shown below. State one safety precaution to be observed when operating a CNC lathe.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "When turning between centres, ensure both levers of the tailstock are locked in place to prevent the bar from coming loose.", marks: 5, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "When turning between centres, ensure both levers of the tailstock are locked in place to prevent the bar from coming loose.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR, the tailstock and the CNC lathe; the scheme prices the romans of both \"Award 3 @ 5 Marks\", so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Always keep the safety guard closed during operation.", marks: 5, route: "b" },
     ],
     questionFigure: {
@@ -4127,7 +4127,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any three of the instruments shown and give one application of each instrument named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Feeler gauge - for checking the size of required gaps – spark plug", marks: 15, group: {"claimMax":3,"perOption":5,"options":["(i) Feeler gauge - for checking the size of required gaps – spark plug","(ii) Surface plate - for accurate marking our using a vernier height gauge.","(iii) Go/NoGo gauge - for checking parts are between specific higher & lower limits.","(iv) Adjustable bevel - for checking angles when bending metal sheet."]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Feeler gauge - for checking the size of required gaps – spark plug", marks: 15, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), each symbol drawn and captioned (i)-(iii) on a card of its own.", group: {"claimMax":3,"perOption":5,"options":["(i) Feeler gauge - for checking the size of required gaps – spark plug","(ii) Surface plate - for accurate marking our using a vernier height gauge.","(iii) Go/NoGo gauge - for checking parts are between specific higher & lower limits.","(iv) Adjustable bevel - for checking angles when bending metal sheet."]} },
     ],
     questionFigure: {
           "candId": "engineering-2014-OL-paper-q7c-crop",
@@ -4149,7 +4149,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name each of the electronic components represented by the circuit symbols shown and outline the function of each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Light emitting diode - Can be used as a power on indicator in circuits.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Light emitting diode - Can be used as a power on indicator in circuits.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), each symbol drawn and captioned (i)-(iii) on a card of its own." },
     ],
     questionFigure: {
           "candId": "engineering-2014-OL-paper-q7cor-crop",
@@ -4171,7 +4171,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name each of the electronic components represented by the circuit symbols shown and outline the function of each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Toggle switch - Used to turn circuits on or off.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Toggle switch - Used to turn circuits on or off.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), each symbol drawn and captioned (i)-(iii) on a card of its own." },
     ],
     questionFigure: {
           "candId": "engineering-2014-OL-paper-q7cor-crop",
@@ -4193,7 +4193,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name each of the electronic components represented by the circuit symbols shown and outline the function of each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Battery - Provides electrical energy to circuits.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Battery - Provides electrical energy to circuits.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), each symbol drawn and captioned (i)-(iii) on a card of its own." },
     ],
     questionFigure: {
           "candId": "engineering-2014-OL-paper-q7cor-crop",
@@ -4314,7 +4314,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the mechanism labelled A, shown opposite.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cam and Follower.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Cam and Follower.", marks: 5, contextNote: "The scheme prints '3 + 2 Marks' beside the one answer, 'Cam and Follower.'" },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q1g-crop",
@@ -4360,7 +4360,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the main operating features of any one of the following:\nSpot welding machine\nRack and pinion mechanism\nPlastic dip coating tank.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Spot welding machine: A spot welding machine has two copper electrodes which clamp the sheet metals to be welded. When the spot welding machine is turned on, a current flows from one electrode through the two sheet metal parts to the other electrode. A resistance to the flow of current builds up between the two sheets causing both pieces to heat up and melt at a point. The process only takes a few seconds and a nugget is formed at the weld area.", marks: 12, accepts: ["Rack and pinion mechanism: A rack and pinion is used to convert between rotary (circular) and linear (straight line) motion. The rack is the flat, toothed part, the pinion is the gear. A rack and pinion can convert from rotary to linear or from linear to rotary. Rack and pinions are commonly used on drilling machines to bring down the drill into the work. The feed lever rotates the pinion and moves the rack, causing the drill spindle to move down in a straight line.","Plastic dip coating tank: The plastic dip coating tank consists of a fluidizing unit (tank) and a blower unit. The fluidizing unit has two compartments which are separated from each other by a porous material. The upper compartment contains the plastic powder and the air supply is connected to the lower one. Air passes up through the porous material and causes the plastic power to act like a fluid. The component is heated to 180ºC and dipped into the tank. The plastic close to the article melts and sticks to the component providing an even coating all over. The component is then removed and the molten plastic is allowed to cool and harden covering the article in a protective coating. A plastic dip coating tank is used to put a more socially acceptable finish on articles made from steel, such as shopping baskets and kitchen utensils."] },
+    { id: "r-1", kind: "alt", verbatim: "Spot welding machine: A spot welding machine has two copper electrodes which clamp the sheet metals to be welded. When the spot welding machine is turned on, a current flows from one electrode through the two sheet metal parts to the other electrode. A resistance to the flow of current builds up between the two sheets causing both pieces to heat up and melt at a point. The process only takes a few seconds and a nugget is formed at the weld area.", marks: 12, accepts: ["Rack and pinion mechanism: A rack and pinion is used to convert between rotary (circular) and linear (straight line) motion. The rack is the flat, toothed part, the pinion is the gear. A rack and pinion can convert from rotary to linear or from linear to rotary. Rack and pinions are commonly used on drilling machines to bring down the drill into the work. The feed lever rotates the pinion and moves the rack, causing the drill spindle to move down in a straight line.","Plastic dip coating tank: The plastic dip coating tank consists of a fluidizing unit (tank) and a blower unit. The fluidizing unit has two compartments which are separated from each other by a porous material. The upper compartment contains the plastic powder and the air supply is connected to the lower one. Air passes up through the porous material and causes the plastic power to act like a fluid. The component is heated to 180ºC and dipped into the tank. The plastic close to the article melts and sticks to the component providing an even coating all over. The component is then removed and the molten plastic is allowed to cool and harden covering the article in a protective coating. A plastic dip coating tank is used to put a more socially acceptable finish on articles made from steel, such as shopping baskets and kitchen utensils."], contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q1i-crop",
@@ -4391,7 +4391,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Software, Wireless technology, Computer simulation, USB port.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Software: Software is a programme or instruction which tells a computer to perform certain tasks. Computers which control CNC machines need software loaded to allow the computer communicate with the CNC device. Common software includes MS word, Solidworks, PowerPoint etc.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Software: Software is a programme or instruction which tells a computer to perform certain tasks. Computers which control CNC machines need software loaded to allow the computer communicate with the CNC device. Common software includes MS word, Solidworks, PowerPoint etc.","Wireless technology: Wireless technology allows computers / phones / audio devices share information without the use of connecting cables. Information data is moved between computers by radio waves allowing laptops to move about within wireless networks. The cost and complexity of cable connections is removed.","Computer simulation: A computer simulation provides a computer generated animation of a procedure or process. Utilised in many fields from training of aircraft pilots to safety checks on machining operations, CNC software provides a simulation facility to trial run programs before manufacture.","USB port: A USB port is a standard cable connection hardware device on personal computers and consumer electronics. USB ports allow stand-alone electronic devices to be connected via cables to a computer (or to each other). USB stands for Universal Serial Bus, an industry standard for short-distance digital data communications. USB allows data to be transferred between devices. USB ports can also supply electric power across the cable to devices without their own power source."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Software: Software is a programme or instruction which tells a computer to perform certain tasks. Computers which control CNC machines need software loaded to allow the computer communicate with the CNC device. Common software includes MS word, Solidworks, PowerPoint etc.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Software: Software is a programme or instruction which tells a computer to perform certain tasks. Computers which control CNC machines need software loaded to allow the computer communicate with the CNC device. Common software includes MS word, Solidworks, PowerPoint etc.","Wireless technology: Wireless technology allows computers / phones / audio devices share information without the use of connecting cables. Information data is moved between computers by radio waves allowing laptops to move about within wireless networks. The cost and complexity of cable connections is removed.","Computer simulation: A computer simulation provides a computer generated animation of a procedure or process. Utilised in many fields from training of aircraft pilots to safety checks on machining operations, CNC software provides a simulation facility to trial run programs before manufacture.","USB port: A USB port is a standard cable connection hardware device on personal computers and consumer electronics. USB ports allow stand-alone electronic devices to be connected via cables to a computer (or to each other). USB stands for Universal Serial Bus, an industry standard for short-distance digital data communications. USB allows data to be transferred between devices. USB ports can also supply electric power across the cable to devices without their own power source."]} },
     ],
   } as SecCard,
   {
@@ -4404,7 +4404,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define the term brittleness and name a material which is brittle.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A brittle material can be fractured easily by an impact. Brittleness is the opposite to toughness.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "A brittle material can be fractured easily by an impact. Brittleness is the opposite to toughness.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Glass / Hardened Steel is an example of a brittle material.", marks: 6 },
     ],
   } as SecCard,
@@ -4418,7 +4418,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Printed circuit board (PCB), Metal alloy, Knurling, Worm and worm wheel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Printed circuit board (PCB): Printed circuit boards are used to connect electric components together. A printed circuit board (PCB) is usually a plastic board about 1.6mm thick with a thin layer of copper on one side. Unwanted portions of the copper are routed or etched away to leave pads and strips which form electrical connections between the components. The components are soldered to the pads. The strips allow the current to move from component to component.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Printed circuit board (PCB): Printed circuit boards are used to connect electric components together. A printed circuit board (PCB) is usually a plastic board about 1.6mm thick with a thin layer of copper on one side. Unwanted portions of the copper are routed or etched away to leave pads and strips which form electrical connections between the components. The components are soldered to the pads. The strips allow the current to move from component to component.","Metal alloy: A metal alloy is a material composed of two or more metals or a metal and a nonmetal such as carbon. High speed steel and stainless steel are examples of alloy steels where the addition of various elements such as tungsten or chromium improve the properties or give new properties such as resistance to corrosion or the ability to retain hardness and strength.","Knurling: Knurling is the operation of impressing serrations on articles to enable them to be gripped securely by hand. The knurl can be of diamond or straight patterned. Usually performed on a centre lathe where the work is rotated at a slow speed and a pair of wheels are pressed against it. The wheels rotate with the work.","Worm and worm wheel: A worm and worm wheel is a gear system which consists of a worm gear and a worm wheel. The worm gear, which looks like a screw thread, can be fixed to a motor spindle. It meshes with the worm wheel which can be fixed to a driving shaft. A worm and worm wheel gear system provides large speed reduction while increasing output torque. The worm gear runs at 90º to the worm wheel and only allows drive from worm to worm wheel."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Printed circuit board (PCB): Printed circuit boards are used to connect electric components together. A printed circuit board (PCB) is usually a plastic board about 1.6mm thick with a thin layer of copper on one side. Unwanted portions of the copper are routed or etched away to leave pads and strips which form electrical connections between the components. The components are soldered to the pads. The strips allow the current to move from component to component.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Printed circuit board (PCB): Printed circuit boards are used to connect electric components together. A printed circuit board (PCB) is usually a plastic board about 1.6mm thick with a thin layer of copper on one side. Unwanted portions of the copper are routed or etched away to leave pads and strips which form electrical connections between the components. The components are soldered to the pads. The strips allow the current to move from component to component.","Metal alloy: A metal alloy is a material composed of two or more metals or a metal and a nonmetal such as carbon. High speed steel and stainless steel are examples of alloy steels where the addition of various elements such as tungsten or chromium improve the properties or give new properties such as resistance to corrosion or the ability to retain hardness and strength.","Knurling: Knurling is the operation of impressing serrations on articles to enable them to be gripped securely by hand. The knurl can be of diamond or straight patterned. Usually performed on a centre lathe where the work is rotated at a slow speed and a pair of wheels are pressed against it. The wheels rotate with the work.","Worm and worm wheel: A worm and worm wheel is a gear system which consists of a worm gear and a worm wheel. The worm gear, which looks like a screw thread, can be fixed to a motor spindle. It meshes with the worm wheel which can be fixed to a driving shaft. A worm and worm wheel gear system provides large speed reduction while increasing output torque. The worm gear runs at 90º to the worm wheel and only allows drive from worm to worm wheel."]} },
     ],
   } as SecCard,
   {
@@ -4431,7 +4431,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the two cutting tools shown at (i) and (ii).",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(i) Plug Tap", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "(i) Plug Tap", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "(ii) Counter sink drill", marks: 6 },
     ],
     questionFigure: {
@@ -4478,7 +4478,7 @@ export const CARDS: SecCard[] = [
     questionText: "Select one of the furnaces shown above and answer each of the following: Draw a diagram of the furnace and label the main parts;",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Select one of the furnaces shown above and answer each of the following: Draw a diagram of the furnace and label the main parts;", marks: 4, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.", ask: true },
+    { id: "r-1", kind: "point", verbatim: "Select one of the furnaces shown above and answer each of the following: Draw a diagram of the furnace and label the main parts;", marks: 4, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The furnaces are named at Q2(a): an electric arc, a basic oxygen and a blast furnace.", ask: true },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q2a-crop",
@@ -4509,7 +4509,7 @@ export const CARDS: SecCard[] = [
     questionText: "Select one of the furnaces shown above and answer each of the following: Name the materials in the charge;",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Pig iron, Scrap steel & Lime.", marks: 3, accepts: ["Pig iron & scrap metal","Iron ore, coke and limestone provide the charge"] },
+    { id: "r-1", kind: "alt", verbatim: "Pig iron, Scrap steel & Lime.", marks: 3, accepts: ["Pig iron & scrap metal","Iron ore, coke and limestone provide the charge"], contextNote: "The furnaces are named at Q2(a): an electric arc, a basic oxygen and a blast furnace." },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q2a-crop",
@@ -4531,7 +4531,7 @@ export const CARDS: SecCard[] = [
     questionText: "Select one of the furnaces shown above and answer each of the following: Describe how the charge is heated or melted;",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Heat for this furnace is produced by an electric arc created by current flowing between the carbon electrodes and the charge.", marks: 3, accepts: ["Oxygen blown onto the surface of the molten metal produces intense heat which burns unwanted impurities from the charge.","As the coke burns it provides heat to melt the charge."] },
+    { id: "r-1", kind: "alt", verbatim: "Heat for this furnace is produced by an electric arc created by current flowing between the carbon electrodes and the charge.", marks: 3, accepts: ["Oxygen blown onto the surface of the molten metal produces intense heat which burns unwanted impurities from the charge.","As the coke burns it provides heat to melt the charge."], contextNote: "The furnaces are named at Q2(a): an electric arc, a basic oxygen and a blast furnace." },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q2a-crop",
@@ -4553,7 +4553,7 @@ export const CARDS: SecCard[] = [
     questionText: "Select one of the furnaces shown above and answer each of the following: Name the metal produced.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "High Quality Steel", marks: 3, accepts: ["Steel.","Pig iron."] },
+    { id: "r-1", kind: "alt", verbatim: "High Quality Steel", marks: 3, accepts: ["Steel.","Pig iron."], contextNote: "The furnaces are named at Q2(a): an electric arc, a basic oxygen and a blast furnace." },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q2a-crop",
@@ -4663,7 +4663,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the effects of using each of the following, when cooling metals during heat treatment:\n• Water\n• Oil.\nOR\nState two applications for robotics in the manufacturing industry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Water causes the component to lose heat much quicker than if were quenched in oil. This results in the steel having an increased hardness. Care needs to be taken in its use as distortion can occur.", marks: 4, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Water causes the component to lose heat much quicker than if were quenched in oil. This results in the steel having an increased hardness. Care needs to be taken in its use as distortion can occur.", marks: 4, contextNote: "The paper sets two (d)s either side of an OR, the cooling media and robotics; the scheme prices both \"Award 2 @ 4 Marks\", so both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Oil is less drastic than water in quenching and presents less risk of distortion and cracking. Oil gives better control of hardening with slightly less brittleness. Care needs to be taken in its use as fumes are given off by the oil.", marks: 4, route: "a" },
     { id: "r-3", kind: "point", verbatim: "Welding of car frames.", marks: 4, route: "b" },
     { id: "r-4", kind: "point", verbatim: "Spray painting car bodies.", marks: 4, route: "b" },
@@ -4810,7 +4810,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Ice cube tray: - Vacuum forming", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "Sports bottle: - Blow moulding / Injection moulding (cap)", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "Tooth brush: - Injection moulding / Caldering / Extrusion", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "Tooth brush: - Injection moulding / Caldering / Extrusion", marks: 3, contextNote: "\"Caldering\" is the scheme's spelling." },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q5a-crop",
@@ -4938,7 +4938,7 @@ export const CARDS: SecCard[] = [
     questionText: "A chuck for use in a centre lathe is shown. Name this chuck.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Four jaw chuck", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Four jaw chuck", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the chuck (c), whose (i)-(iii) each have a card of their own, and the CNC (c), answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q6c-crop",
@@ -4960,7 +4960,7 @@ export const CARDS: SecCard[] = [
     questionText: "A chuck for use in a centre lathe is shown. Describe two applications for the chuck shown.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Holding square bar when turning.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Holding square bar when turning.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the chuck (c), whose (i)-(iii) each have a card of their own, and the CNC (c), answered on one card." },
     { id: "r-2", kind: "point", verbatim: "Eccentric turning.", marks: null },
     ],
     questionFigure: {
@@ -4983,7 +4983,7 @@ export const CARDS: SecCard[] = [
     questionText: "A chuck for use in a centre lathe is shown. State one safety precaution to be observed when using this type of chuck.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "When eccentric turning do not select a high spindle speed.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "When eccentric turning do not select a high spindle speed.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the chuck (c), whose (i)-(iii) each have a card of their own, and the CNC (c), answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q6c-crop",
@@ -5005,7 +5005,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any three of the following in relation to Computer Numerical Control (CNC) machining: (i) CAD, (ii) X-axis, (iii) Stepper motor, (iv) Safety switch.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Computer Aided Design / Drawing", marks: 15, group: {"claimMax":3,"perOption":5,"options":["(i) Computer Aided Design / Drawing","(ii) Distances perpendicular to a CNC lathe centre line.","(iii) Motors used on a CNC lathe which allows the cutting tool to move in a number of predetermined steps. Steps are controlled by electrical pulses.","(iv) The safety switch is operated by the acrylic guard. If the acrylic guard is not closed the CNC lathe will not operate."]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Computer Aided Design / Drawing", marks: 15, contextNote: "The paper sets two (c)s either side of an OR: the chuck (c), whose (i)-(iii) each have a card of their own, and the CNC (c), answered on one card.", group: {"claimMax":3,"perOption":5,"options":["(i) Computer Aided Design / Drawing","(ii) Distances perpendicular to a CNC lathe centre line.","(iii) Motors used on a CNC lathe which allows the cutting tool to move in a number of predetermined steps. Steps are controlled by electrical pulses.","(iv) The safety switch is operated by the acrylic guard. If the acrylic guard is not closed the CNC lathe will not operate."]} },
     ],
   } as SecCard,
   {
@@ -5056,7 +5056,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any three of the instruments shown and give one application for each instrument named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Engineering protractor - for checking and marking angles", marks: 15, group: {"claimMax":3,"perOption":5,"options":["(i) Engineering protractor - for checking and marking angles","(ii) Vee block and clamp - for holding round bars when marking out or drilling.","(iii) Digital micrometer - for accurate measurement of machine parts","(iv) Digital vernier height gauge - for accurate marking out of machine parts."]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Engineering protractor - for checking and marking angles", marks: 15, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), each component photographed and captioned (i)-(iii) on a card of its own.", group: {"claimMax":3,"perOption":5,"options":["(i) Engineering protractor - for checking and marking angles","(ii) Vee block and clamp - for holding round bars when marking out or drilling.","(iii) Digital micrometer - for accurate measurement of machine parts","(iv) Digital vernier height gauge - for accurate marking out of machine parts."]} },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q7c-crop",
@@ -5078,7 +5078,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name each of the electronic components shown below and outline the function of each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(i) DC electrical motor: To provide rotary movement to whatever is connected to its shaft i.e. gears, wheels, pulleys.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "(i) DC electrical motor: To provide rotary movement to whatever is connected to its shaft i.e. gears, wheels, pulleys.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), each component photographed and captioned (i)-(iii) on a card of its own." },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q7cor-crop",
@@ -5100,7 +5100,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name each of the electronic components shown below and outline the function of each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(ii) Light Bulb: Provides light, converts electrical energy into light and heat energy.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "(ii) Light Bulb: Provides light, converts electrical energy into light and heat energy.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), each component photographed and captioned (i)-(iii) on a card of its own." },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q7cor-crop",
@@ -5122,7 +5122,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name each of the electronic components shown below and outline the function of each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(iii) Transistor: Operates as an electrical switch or can be used to amplify an electrical signal.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "(iii) Transistor: Operates as an electrical switch or can be used to amplify an electrical signal.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), each component photographed and captioned (i)-(iii) on a card of its own." },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q7cor-crop",
@@ -5271,7 +5271,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the main operating features of any one of the following:\nWorm and wheel mechanism\nTailstock\nVacuum forming machine.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Worm and wheel mechanism A worm and wheel mechanism is a gear arrangement in which a worm, in the form of a screw, drives a wheel similar to a spur gear. A worm and wheel mechanism is used to change the direction of rotation through 90°, reduce rotational speed and increase output torque. This gear system is often used in project work to change the high speed of DC electrical motors into more useful speeds and torques. The worm drives the wheel, if the wheel tries to drive the worm, the system is designed to lock.", marks: 12, accepts: ["Tailstock The tailstock is part of a centre lathe which can be moved along the bed slideways of the lathe and may be clamped in any desired position. The bore of the tailstock barrel is tapered to take a lathe centre, which is used to support the outer end of long work. The tailstock barrel can also accommodate drill chucks, taper shank drills and reamers.","Vacuum forming machine A vacuum forming machine is used to heat a plastic sheet before pulling the air out from below it, causing a vacuum. Because of the vacuum, the soft plastic sheet is pressed down over a pattern by atmospheric pressure. In school a vacuum forming machine is used to form / shape thin sheets of plastic, usually polystyrene into 3D hallow shapes such as dishes or box like shapes. To achieve this a vacuum forming machine includes electrical heating elements to soften the plastic sheet which has been clamped, a movable table to allow the pattern to be raised up into the sheet and a vacuum pump to extract the air."] },
+    { id: "r-1", kind: "alt", verbatim: "Worm and wheel mechanism A worm and wheel mechanism is a gear arrangement in which a worm, in the form of a screw, drives a wheel similar to a spur gear. A worm and wheel mechanism is used to change the direction of rotation through 90°, reduce rotational speed and increase output torque. This gear system is often used in project work to change the high speed of DC electrical motors into more useful speeds and torques. The worm drives the wheel, if the wheel tries to drive the worm, the system is designed to lock.", marks: 12, accepts: ["Tailstock The tailstock is part of a centre lathe which can be moved along the bed slideways of the lathe and may be clamped in any desired position. The bore of the tailstock barrel is tapered to take a lathe centre, which is used to support the outer end of long work. The tailstock barrel can also accommodate drill chucks, taper shank drills and reamers.","Vacuum forming machine A vacuum forming machine is used to heat a plastic sheet before pulling the air out from below it, causing a vacuum. Because of the vacuum, the soft plastic sheet is pressed down over a pattern by atmospheric pressure. In school a vacuum forming machine is used to form / shape thin sheets of plastic, usually polystyrene into 3D hallow shapes such as dishes or box like shapes. To achieve this a vacuum forming machine includes electrical heating elements to soften the plastic sheet which has been clamped, a movable table to allow the pattern to be raised up into the sheet and a vacuum pump to extract the air."], contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     ],
     questionFigure: {
           "candId": "engineering-2016-OL-paper-q1i-crop",
@@ -5293,7 +5293,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Drone, Hardware, Virus, High definition (HD).",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Drone A drone may be explained as any unmanned robot either preprogrammed or remotely controlled. This includes robots designed for water, land and air use. The most common drone is an aerial one, either an RPA (remote piloted aircraft) or UAV (unmanned/unpiloted aerial vehicle). A remote-piloted aircraft, RPA, is controlled remotely either by a short-range remote control or from a more sophisticated remote base station. Used in both commercial and military applications, these drones are often similar to a helicopter and can come with more than one rotor blade. An unmanned aerial vehicle, UAV, is preprogrammed prior to flight to do a specific set of tasks on a specific flight path.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Drone A drone may be explained as any unmanned robot either preprogrammed or remotely controlled. This includes robots designed for water, land and air use. The most common drone is an aerial one, either an RPA (remote piloted aircraft) or UAV (unmanned/unpiloted aerial vehicle). A remote-piloted aircraft, RPA, is controlled remotely either by a short-range remote control or from a more sophisticated remote base station. Used in both commercial and military applications, these drones are often similar to a helicopter and can come with more than one rotor blade. An unmanned aerial vehicle, UAV, is preprogrammed prior to flight to do a specific set of tasks on a specific flight path.","Hardware All the physical parts of a computer system are classified as hardware. Keyboard, mouse, VDU and printers are examples of computer hardware. Hardware can be further subdivied into either input or output devices. A keyboard is an example of a computer input device and a VDU / monitor is an example of a computer output device. Many hardware devices are connected to PCs via USB ports.","Virus A program or piece of code that operates by attaching itself to some other program or downloaded file. When this program starts the virus code runs, replicates itself and infects other programs or documents on the PC without the user’s knowledge. Written with the deliberate intention of corrupting files, a computer virus can seriously damage or completely destroy files or software on a computer.","High definition (HD) High definition (HD) is a system for screen display or resolution of images that are sharper and more detailed than normal. Expressed in pixels, HD is achieved by having many more than the standard number of scanning lines per frame. High definition television (HDTV) has a resolution of approx. 1080 lines which offers approx. 2.07 mega pixels per frame, thus providing a much sharper and clearer image."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Drone A drone may be explained as any unmanned robot either preprogrammed or remotely controlled. This includes robots designed for water, land and air use. The most common drone is an aerial one, either an RPA (remote piloted aircraft) or UAV (unmanned/unpiloted aerial vehicle). A remote-piloted aircraft, RPA, is controlled remotely either by a short-range remote control or from a more sophisticated remote base station. Used in both commercial and military applications, these drones are often similar to a helicopter and can come with more than one rotor blade. An unmanned aerial vehicle, UAV, is preprogrammed prior to flight to do a specific set of tasks on a specific flight path.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Drone A drone may be explained as any unmanned robot either preprogrammed or remotely controlled. This includes robots designed for water, land and air use. The most common drone is an aerial one, either an RPA (remote piloted aircraft) or UAV (unmanned/unpiloted aerial vehicle). A remote-piloted aircraft, RPA, is controlled remotely either by a short-range remote control or from a more sophisticated remote base station. Used in both commercial and military applications, these drones are often similar to a helicopter and can come with more than one rotor blade. An unmanned aerial vehicle, UAV, is preprogrammed prior to flight to do a specific set of tasks on a specific flight path.","Hardware All the physical parts of a computer system are classified as hardware. Keyboard, mouse, VDU and printers are examples of computer hardware. Hardware can be further subdivied into either input or output devices. A keyboard is an example of a computer input device and a VDU / monitor is an example of a computer output device. Many hardware devices are connected to PCs via USB ports.","Virus A program or piece of code that operates by attaching itself to some other program or downloaded file. When this program starts the virus code runs, replicates itself and infects other programs or documents on the PC without the user’s knowledge. Written with the deliberate intention of corrupting files, a computer virus can seriously damage or completely destroy files or software on a computer.","High definition (HD) High definition (HD) is a system for screen display or resolution of images that are sharper and more detailed than normal. Expressed in pixels, HD is achieved by having many more than the standard number of scanning lines per frame. High definition television (HDTV) has a resolution of approx. 1080 lines which offers approx. 2.07 mega pixels per frame, thus providing a much sharper and clearer image."]} },
     ],
   } as SecCard,
   {
@@ -5306,7 +5306,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define the term malleability and name a material which is malleable.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Malleability: Malleability is the ability of a material to be hammered / flattened out in all directions without breaking.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Malleability: Malleability is the ability of a material to be hammered / flattened out in all directions without breaking.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "alt", verbatim: "Lead", marks: 6, accepts: ["Gold"] },
     ],
   } as SecCard,
@@ -5320,7 +5320,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Tensile force, Countersink drill, Thermal conductor, Solar panel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Tensile force A tensile force is a pulling force acting from opposite ends of a piece away from each other. A tensile force tries to stretch the component.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Tensile force A tensile force is a pulling force acting from opposite ends of a piece away from each other. A tensile force tries to stretch the component.","Countersink drill A countersinking drill is a cutter which widens the mouth of a hole to accommodate a CSK screw. Countersinking drills have point angles of either 60⁰ or 90⁰.","Thermal conductor A thermal conductor is a material that allows energy in the form of heat, to be transferred within the material, without any movement of the material itself. Heat travels quickly through thermal conductors, like metals i.e. copper.","Solar panel Solar panels are devices that convert light into electricity. They are called solar panels because the most powerful source of light available is the Sun, called Sol by astronomers. Solar panels are often called photovoltaic panels which means \"light- electricity.\" Solar panels are now used to power / charge many devices such as calculators and mobile phones."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Tensile force A tensile force is a pulling force acting from opposite ends of a piece away from each other. A tensile force tries to stretch the component.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Tensile force A tensile force is a pulling force acting from opposite ends of a piece away from each other. A tensile force tries to stretch the component.","Countersink drill A countersinking drill is a cutter which widens the mouth of a hole to accommodate a CSK screw. Countersinking drills have point angles of either 60⁰ or 90⁰.","Thermal conductor A thermal conductor is a material that allows energy in the form of heat, to be transferred within the material, without any movement of the material itself. Heat travels quickly through thermal conductors, like metals i.e. copper.","Solar panel Solar panels are devices that convert light into electricity. They are called solar panels because the most powerful source of light available is the Sun, called Sol by astronomers. Solar panels are often called photovoltaic panels which means \"light- electricity.\" Solar panels are now used to power / charge many devices such as calculators and mobile phones."]} },
     ],
   } as SecCard,
   {
@@ -5333,7 +5333,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the machine component shown and explain its function.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name: Morse tapered sleeve", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Name: Morse tapered sleeve", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Function: A Morse tapered sleeve is used to fit onto a smaller Morse taper drill or sleeve so as to be fitted into the spindle of a drilling machine or tailstock.", marks: 6 },
     ],
     questionFigure: {
@@ -5497,7 +5497,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe any two of the following material properties: (i) Brittleness (ii) Ductility (iii) Toughness. OR State two applications for a compressor in industry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Brittleness: Brittleness is the inability of a material to withstand impact i.e. a brittle material will fracture if subjected to an impact or blow.", marks: 8, route: "a", group: {"claimMax":2,"perOption":4,"options":["Brittleness: Brittleness is the inability of a material to withstand impact i.e. a brittle material will fracture if subjected to an impact or blow.","Ductility: Ductility is the ability of a material to be stretched without breaking. A metal must be ductile to be drawn into wire.","Toughness: Toughness is the ability of a material to withstand blows or an impact."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Brittleness: Brittleness is the inability of a material to withstand impact i.e. a brittle material will fracture if subjected to an impact or blow.", marks: 8, contextNote: "The paper sets two (d)s either side of an OR, the material properties and the compressor's applications; the scheme prices both \"Award 2 @ 4 Marks\", so both branches are on this card: claim the rows for the branch you answered.", route: "a", group: {"claimMax":2,"perOption":4,"options":["Brittleness: Brittleness is the inability of a material to withstand impact i.e. a brittle material will fracture if subjected to an impact or blow.","Ductility: Ductility is the ability of a material to be stretched without breaking. A metal must be ductile to be drawn into wire.","Toughness: Toughness is the ability of a material to withstand blows or an impact."]} },
     { id: "r-2", kind: "anyN", verbatim: "Changing tyres on cars / lorries / buses", marks: 4, route: "b" },
     { id: "r-3", kind: "anyN", verbatim: "Tightening of machine screws on assembly lines.", marks: 4, route: "b" },
     ],
@@ -5786,7 +5786,7 @@ export const CARDS: SecCard[] = [
     questionText: "A machining tool for a centre lathe is shown. Name the process in which this machining tool is used.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Knurling.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Knurling.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the knurling tool (c), whose (i)-(iii) each have a card of their own, and the CNC lathe (c), answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2016-OL-paper-q6c-crop",
@@ -5808,7 +5808,7 @@ export const CARDS: SecCard[] = [
     questionText: "A machining tool for a centre lathe is shown. Describe two things to be considered when setting up this machining tool.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Make sure it is on centre and square to work.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Make sure it is on centre and square to work.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the knurling tool (c), whose (i)-(iii) each have a card of their own, and the CNC lathe (c), answered on one card." },
     { id: "r-2", kind: "point", verbatim: "Make sure it is well secured in the tool post.", marks: null },
     ],
     questionFigure: {
@@ -5831,7 +5831,7 @@ export const CARDS: SecCard[] = [
     questionText: "A machining tool for a centre lathe is shown. State one safety precaution to be observed when using the machining tool shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Ensure the tool does not collide with the chuck.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Ensure the tool does not collide with the chuck.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the knurling tool (c), whose (i)-(iii) each have a card of their own, and the CNC lathe (c), answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2016-OL-paper-q6c-crop",
@@ -5853,7 +5853,7 @@ export const CARDS: SecCard[] = [
     questionText: "State three advantages of operating a lathe by computer numerical control (CNC) rather than manual control.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Better accuracy achieved due to precise movement of the cutting tool.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Better accuracy achieved due to precise movement of the cutting tool.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the knurling tool (c), whose (i)-(iii) each have a card of their own, and the CNC lathe (c), answered on one card." },
     { id: "r-2", kind: "point", verbatim: "Self-contained work area, safer for the user.", marks: 5 },
     { id: "r-3", kind: "point", verbatim: "Consistent replication of pieces.", marks: 5 },
     ],
@@ -5906,7 +5906,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any three of the instruments shown and give one application for each instrument named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Outside calipers - for checking the outside diameter of round bars.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["(i) Outside calipers - for checking the outside diameter of round bars.","(ii) Depth gauge - for measuring the depth of holes/slots/shoulders.","(iii) Radius gauges - comparing a radius for size / shape","(iv) Dial gauge - can be used to check the concentricity of a rotating bar in a centre lathe."]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Outside calipers - for checking the outside diameter of round bars.", marks: 15, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), each component photographed and captioned (i)-(iii) on a card of its own.", group: {"claimMax":3,"perOption":5,"options":["(i) Outside calipers - for checking the outside diameter of round bars.","(ii) Depth gauge - for measuring the depth of holes/slots/shoulders.","(iii) Radius gauges - comparing a radius for size / shape","(iv) Dial gauge - can be used to check the concentricity of a rotating bar in a centre lathe."]} },
     ],
     questionFigure: {
           "candId": "engineering-2016-OL-paper-q7c-crop",
@@ -5928,7 +5928,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name each of the electronic components shown below and outline the function of each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(i) LED: Can be used as a power on indicator in circuits.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "(i) LED: Can be used as a power on indicator in circuits.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), each component photographed and captioned (i)-(iii) on a card of its own." },
     ],
     questionFigure: {
           "candId": "engineering-2016-OL-paper-q7cor-crop",
@@ -5950,7 +5950,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name each of the electronic components shown below and outline the function of each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(ii) Toggle switch: Used to turn circuits on or off.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "(ii) Toggle switch: Used to turn circuits on or off.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), each component photographed and captioned (i)-(iii) on a card of its own." },
     ],
     questionFigure: {
           "candId": "engineering-2016-OL-paper-q7cor-crop",
@@ -5972,7 +5972,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name each of the electronic components shown below and outline the function of each component named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(iii) Fixed resistor: Prevents too much current getting to components and damaging them.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "(iii) Fixed resistor: Prevents too much current getting to components and damaging them.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), each component photographed and captioned (i)-(iii) on a card of its own." },
     ],
     questionFigure: {
           "candId": "engineering-2016-OL-paper-q7cor-crop",
@@ -6128,7 +6128,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the main operating features of any one of the following:\nHydraulic lifting platform\nRatchet and pawl mechanism\nScroll saw.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Hydraulic lifting platform The hydraulic lifting platform consists of a hydraulic ram attached to one side of a scissor/parallel linkage mechanism. The other side of the linkage mechanism is attached to a fixed pivot. When hydraulic oil is compressed inside the hydraulic ram, the scissor arms either move closer together or further apart. As one side of the scissor arm is secured to a fixed pivoted at the bottom, movement of the hydraulic arm opens or closes the scissor mechanism resulting in lifting or lowering the platform.", marks: 12, accepts: ["Ratchet and pawl mechanism A ratchet and pawl mechanism is used when rotation is required in one direction only. As the ratchet is rotated clockwise the pawl pushes outwards as it lifts over the ratchet’s teeth. However, if the ratchet tries to rotate anti-clockwise the pawl does not release thereby preventing rotation.","Scroll saw A scroll saw includes an electric motor and a crank mechanism. The crank mechanism converts the rotary motion of the motor into reciprocating motion of a thin blade. The up and down motion of the thin blade can be used to cut intricate shapes in wood or metals. A small rubber bellows, fixed to the crank mechanism, is used to produce a small air flow which is directed at the cutting face to remove waste material as it is cut. A guard is attached to the top of the scroll saw arm and should always be used when cutting."] },
+    { id: "r-1", kind: "alt", verbatim: "Hydraulic lifting platform The hydraulic lifting platform consists of a hydraulic ram attached to one side of a scissor/parallel linkage mechanism. The other side of the linkage mechanism is attached to a fixed pivot. When hydraulic oil is compressed inside the hydraulic ram, the scissor arms either move closer together or further apart. As one side of the scissor arm is secured to a fixed pivoted at the bottom, movement of the hydraulic arm opens or closes the scissor mechanism resulting in lifting or lowering the platform.", marks: 12, accepts: ["Ratchet and pawl mechanism A ratchet and pawl mechanism is used when rotation is required in one direction only. As the ratchet is rotated clockwise the pawl pushes outwards as it lifts over the ratchet’s teeth. However, if the ratchet tries to rotate anti-clockwise the pawl does not release thereby preventing rotation.","Scroll saw A scroll saw includes an electric motor and a crank mechanism. The crank mechanism converts the rotary motion of the motor into reciprocating motion of a thin blade. The up and down motion of the thin blade can be used to cut intricate shapes in wood or metals. A small rubber bellows, fixed to the crank mechanism, is used to produce a small air flow which is directed at the cutting face to remove waste material as it is cut. A guard is attached to the top of the scroll saw arm and should always be used when cutting."], contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     ],
     questionFigure: {
           "candId": "engineering-2017-OL-paper-q1i-crop",
@@ -6150,7 +6150,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Bluetooth, 3-D printer, Cloud technology, GPS.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Bluetooth Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Used as a short-range wireless interconnection of mobile phones, computers, and other electronic devices.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Bluetooth Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Used as a short-range wireless interconnection of mobile phones, computers, and other electronic devices.","3D printer 3D printing is an additive manufacturing process where 3D objects are produced from a digital file. Components are produced by laying down successful layers of material until the object is produced. Each layer can be seen as a thinly sliced horizontal cross-section of the eventual object. Plastics and metals are commonly used as materials.","Cloud technology Cloud technology is computing over the internet. Cloud technology provides shared processing and resources to other computers and other devices. Storing of information, photographs etc. is a popular use of cloud technology i.e. One Drive, Google Drive, Dropbox etc.","GPS GPS is a global positioning system. GPS allows detailed navigation using satalite technology to find out ones position. GPS can be used to plan how best to travel between two locations proving direction, travel time, fuel consumption etc."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Bluetooth Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Used as a short-range wireless interconnection of mobile phones, computers, and other electronic devices.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Bluetooth Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Used as a short-range wireless interconnection of mobile phones, computers, and other electronic devices.","3D printer 3D printing is an additive manufacturing process where 3D objects are produced from a digital file. Components are produced by laying down successful layers of material until the object is produced. Each layer can be seen as a thinly sliced horizontal cross-section of the eventual object. Plastics and metals are commonly used as materials.","Cloud technology Cloud technology is computing over the internet. Cloud technology provides shared processing and resources to other computers and other devices. Storing of information, photographs etc. is a popular use of cloud technology i.e. One Drive, Google Drive, Dropbox etc.","GPS GPS is a global positioning system. GPS allows detailed navigation using satalite technology to find out ones position. GPS can be used to plan how best to travel between two locations proving direction, travel time, fuel consumption etc."]} },
     ],
   } as SecCard,
   {
@@ -6163,7 +6163,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define the term compressive strength in relation to the properties of materials and give one application where a material needs to be strong in compression.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Compressive strength Compressive strength is the ability of a material to be squashed or pushed together without breaking.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Compressive strength Compressive strength is the ability of a material to be squashed or pushed together without breaking.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Application: The legs of a chair need to be strong in compression as does the cast iron base and column of a pillar drilling machine.", marks: 6 },
     ],
   } as SecCard,
@@ -6177,7 +6177,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Carbon footprint, Self-locking nut, Pop riveting, Light emitting diode (LED).",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Carbon footprint Carbon footprint is the total amount of greenhouse gas emissions by an individual or business. Usually expressed in equivalent tons of carbon dioxide (CO2).", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Carbon footprint Carbon footprint is the total amount of greenhouse gas emissions by an individual or business. Usually expressed in equivalent tons of carbon dioxide (CO2).","Self-locking nut A self-locking nut has a nylon insert which will tighten on a thread and prevent the nut from loosening.","Pop riveting Pop riveting is a permanent assembly technique using a pop riveting gun and rivets. The gun will pull the nail part of the rivet, deforming the other end around the pieces being assembled.","Light emitting diode (LED) A light emitting diode is a small light which will only give out light if connected in the correct way. Popular use of a light emitting diode is a power on indicator in devices such as laptops, phones, cookers etc. As they require low energy to operate, uses now include car lights, TV screens and household lighting."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Carbon footprint Carbon footprint is the total amount of greenhouse gas emissions by an individual or business. Usually expressed in equivalent tons of carbon dioxide (CO2).", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Carbon footprint Carbon footprint is the total amount of greenhouse gas emissions by an individual or business. Usually expressed in equivalent tons of carbon dioxide (CO2).","Self-locking nut A self-locking nut has a nylon insert which will tighten on a thread and prevent the nut from loosening.","Pop riveting Pop riveting is a permanent assembly technique using a pop riveting gun and rivets. The gun will pull the nail part of the rivet, deforming the other end around the pieces being assembled.","Light emitting diode (LED) A light emitting diode is a small light which will only give out light if connected in the correct way. Popular use of a light emitting diode is a power on indicator in devices such as laptops, phones, cookers etc. As they require low energy to operate, uses now include car lights, TV screens and household lighting."]} },
     ],
   } as SecCard,
   {
@@ -6190,7 +6190,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the mechanism shown and suggest one suitable application for it.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name: Worm and wheel mechanism.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Name: Worm and wheel mechanism.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 Marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Application: Lifting mechanism for a toy crane.", marks: 6 },
     ],
     questionFigure: {
@@ -6396,7 +6396,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following terms: (i) Malleability, (ii) Tensile strength, (iii) Work hardening.\nOR\n(i) State one advantage for the use of robotics in manufacturing.\n(ii) State one disadvantage for the use of robotics in manufacturing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Malleability: Malleability is the ability of a material to be hammered / formed into a flat sheet without breaking.", marks: 8, route: "a", group: {"claimMax":2,"perOption":4,"options":["Malleability: Malleability is the ability of a material to be hammered / formed into a flat sheet without breaking.","Tensile strength: Tensile strength is the ability of a material to withstand being pulled apart or stretched.","Work hardening: When a metal is hammered or shaped when cold it becomes hard and brittle at the point where the cold - working occurs. Some metals are prone to work hardening, copper and aluminium are typical examples where hardness values can be increased by cold working."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Malleability: Malleability is the ability of a material to be hammered / formed into a flat sheet without breaking.", marks: 8, contextNote: "The paper sets two (d)s either side of an OR, the metal properties and robotics in manufacturing; the scheme prices both at 8, \"Award 2 @ 4 Marks\" and \"Award 1 @ 4 Marks\" twice, so both branches are on this card: claim the rows for the branch you answered.", route: "a", group: {"claimMax":2,"perOption":4,"options":["Malleability: Malleability is the ability of a material to be hammered / formed into a flat sheet without breaking.","Tensile strength: Tensile strength is the ability of a material to withstand being pulled apart or stretched.","Work hardening: When a metal is hammered or shaped when cold it becomes hard and brittle at the point where the cold - working occurs. Some metals are prone to work hardening, copper and aluminium are typical examples where hardness values can be increased by cold working."]} },
     { id: "r-2", kind: "anyN", verbatim: "Robotics offer precision placement of components in manufacturing.", marks: 4, route: "b" },
     { id: "r-3", kind: "anyN", verbatim: "Robots are expensive and need qualified personnel to service and programme.", marks: 4, route: "b" },
     ],
@@ -6617,7 +6617,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe any three of the following terms associated with plastics:\n(i) Thermoplastic;\n(ii) Elastic memory;\n(iii) Thermosetting plastic;\n(iv) Plastic dip coating tank.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Thermoplastic Thermoplastic is a plastic which can soften over and over again. Thermoplastic can also be recycled.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["Thermoplastic Thermoplastic is a plastic which can soften over and over again. Thermoplastic can also be recycled.","Elastic memory Elastic memory is where a thermoplastic product will return to its original manufactured state if heated a seconded time.","Thermosetting plastic Thermosetting plastic is a plastic which cannot be re-softened a second time. It is difficult to recycle a thermosetting plastic.","Plastic dip coating tank A plastic dip coating tank is a container which holds powered thermoplastic material. A metal piece is heated to approx.. 180⁰C and dipped into the power which needs to be aerated (fluidized). The plastic power sticks to the hot metal and melts forming a protective coating around the piece. The metal piece is removed and allowed to cool."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Thermoplastic Thermoplastic is a plastic which can soften over and over again. Thermoplastic can also be recycled.", marks: 15, contextNote: "The paper asks for any three. The scheme heads this part 'Any two descriptions' but prints 'Award 3 @ 5 Marks' and 'Total (15) Marks'.", group: {"claimMax":3,"perOption":5,"options":["Thermoplastic Thermoplastic is a plastic which can soften over and over again. Thermoplastic can also be recycled.","Elastic memory Elastic memory is where a thermoplastic product will return to its original manufactured state if heated a seconded time.","Thermosetting plastic Thermosetting plastic is a plastic which cannot be re-softened a second time. It is difficult to recycle a thermosetting plastic.","Plastic dip coating tank A plastic dip coating tank is a container which holds powered thermoplastic material. A metal piece is heated to approx.. 180⁰C and dipped into the power which needs to be aerated (fluidized). The plastic power sticks to the hot metal and melts forming a protective coating around the piece. The metal piece is removed and allowed to cool."]} },
     ],
   } as SecCard,
   {
@@ -6726,7 +6726,7 @@ export const CARDS: SecCard[] = [
     questionText: "A chuck for use in a centre lathe is shown. Name this chuck. OR A CNC lathe used for CAD/CAM technology is shown. What do the letters CAD/CAM stand for?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name: 3-jaw self-centering chuck.", marks: 5, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Name: 3-jaw self-centering chuck.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR, the lathe chuck and the CNC lathe; the scheme prices their romans alike, (i) \"Award 1 @ 5 Marks\", (ii) \"Award 2 @ 3+2 Marks\" and (iii) \"Award 1 @ 5 Marks\", so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "CAD / CAM: Computer Aided Design / Computer Aided Manufacture", marks: 5, route: "b" },
     ],
     questionFigure: {
@@ -6749,7 +6749,7 @@ export const CARDS: SecCard[] = [
     questionText: "A chuck for use in a centre lathe is shown. Name two other methods for holding work on a centre lathe. OR A CNC lathe used for CAD/CAM technology is shown. Describe two advantages of using CAD/CAM technology in industry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "4-jaw independent chuck,", marks: 3, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "4-jaw independent chuck,", marks: 3, contextNote: "The paper sets two (c)s either side of an OR, the lathe chuck and the CNC lathe; the scheme prices their romans alike, (i) \"Award 1 @ 5 Marks\", (ii) \"Award 2 @ 3+2 Marks\" and (iii) \"Award 1 @ 5 Marks\", so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "faceplate.", marks: 2, route: "a" },
     { id: "r-3", kind: "point", verbatim: "Precision of product.", marks: 3, route: "b" },
     { id: "r-4", kind: "point", verbatim: "Easy to make alterations", marks: 2, route: "b" },
@@ -6774,7 +6774,7 @@ export const CARDS: SecCard[] = [
     questionText: "A chuck for use in a centre lathe is shown. State one safety precaution to be observed when using this type of chuck. OR A CNC lathe used for CAD/CAM technology is shown. State one safety precaution to be observed when operating a CNC lathe.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Remove chuck key before use.", marks: 5, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Remove chuck key before use.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR, the lathe chuck and the CNC lathe; the scheme prices their romans alike, (i) \"Award 1 @ 5 Marks\", (ii) \"Award 2 @ 3+2 Marks\" and (iii) \"Award 1 @ 5 Marks\", so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Perform a simulation of the machining process to ensure no collisions.", marks: 5, route: "b" },
     ],
     questionFigure: {
@@ -6835,7 +6835,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any three of the instruments shown and give one application for each instrument named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Outside calipers - for gauging the outside diameter of round bars.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["(i) Outside calipers - for gauging the outside diameter of round bars.","(ii) Vee block & clamp - used for holding round bars when drilling or marking out.","(iii) Digital calipers - used to accurately display the inside, outside and depth measurements of components.","(iv) Feeler gauges - used to accurately set the gap / distance between two Surfaces i.e. spark plug."]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Outside calipers - for gauging the outside diameter of round bars.", marks: 15, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), whose (i) and (ii) each have a card of their own.", group: {"claimMax":3,"perOption":5,"options":["(i) Outside calipers - for gauging the outside diameter of round bars.","(ii) Vee block & clamp - used for holding round bars when drilling or marking out.","(iii) Digital calipers - used to accurately display the inside, outside and depth measurements of components.","(iv) Feeler gauges - used to accurately set the gap / distance between two Surfaces i.e. spark plug."]} },
     ],
     questionFigure: {
           "candId": "engineering-2017-OL-paper-q7c-crop",
@@ -6857,7 +6857,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any three of the electronic components labelled A, B, C or D.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A:Battery,", marks: 9, group: {"claimMax":3,"perOption":3,"options":["A:Battery,","B:Switch,","C:Variable resistor,","D:Motor."]} },
+    { id: "r-1", kind: "anyN", verbatim: "A:Battery,", marks: 9, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), whose (i) and (ii) each have a card of their own.", group: {"claimMax":3,"perOption":3,"options":["A:Battery,","B:Switch,","C:Variable resistor,","D:Motor."]} },
     ],
     questionFigure: {
           "candId": "engineering-2017-OL-paper-q7cor-crop",
@@ -6879,7 +6879,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the function of each of the electronic components named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Battery: Provides electricity energy.", marks: 6, group: {"claimMax":3,"perOption":2,"options":["Battery: Provides electricity energy.","Switch: Turns on or off a circuit.","Variable resistor: Slows down the flow of current in a circuit.","Motor: Converts electricity energy into mechanical energy (rotary)."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Battery: Provides electricity energy.", marks: 6, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), whose (i) and (ii) each have a card of their own.", group: {"claimMax":3,"perOption":2,"options":["Battery: Provides electricity energy.","Switch: Turns on or off a circuit.","Variable resistor: Slows down the flow of current in a circuit.","Motor: Converts electricity energy into mechanical energy (rotary)."]} },
     ],
     questionFigure: {
           "candId": "engineering-2017-OL-paper-q7cor-crop",
@@ -7043,7 +7043,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the main operating features of any one of the following:\nFour-jaw independent chuck\nStrip heater\nKnurling tool.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Four jaw independent chuck The jaws in this chuck can be moved independently of one another, each being controlled by its own screw. They are also reversible and therefore only one set is required. The four jaw independent chuck is used for eccentric turning and for gripping square, round, rectangular and irregular shapes. The work can be centered more accurately in this chuck than in the self-centering one, but it takes longer. The concentric circles on the face of the chuck serve as a guide when positioning the work.", marks: 12, accepts: ["Strip heater A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by thermostatically controlling the heating temperature.","Knurling tool A knurling tool is used on a centre lathe to apply a grip to the surface of a piece i.e. scriber / centre punch. The knurling tool is fitted to the tool post and set at 90⁰ to work. The knurling tool has two opposing rollers which are pressed into the piece and when moved parallel to the axis of the work will produce a diamond pattern on the surface of the material."] },
+    { id: "r-1", kind: "alt", verbatim: "Four jaw independent chuck The jaws in this chuck can be moved independently of one another, each being controlled by its own screw. They are also reversible and therefore only one set is required. The four jaw independent chuck is used for eccentric turning and for gripping square, round, rectangular and irregular shapes. The work can be centered more accurately in this chuck than in the self-centering one, but it takes longer. The concentric circles on the face of the chuck serve as a guide when positioning the work.", marks: 12, accepts: ["Strip heater A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by thermostatically controlling the heating temperature.","Knurling tool A knurling tool is used on a centre lathe to apply a grip to the surface of a piece i.e. scriber / centre punch. The knurling tool is fitted to the tool post and set at 90⁰ to work. The knurling tool has two opposing rollers which are pressed into the piece and when moved parallel to the axis of the work will produce a diamond pattern on the surface of the material."], contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     ],
     questionFigure: {
           "candId": "engineering-2018-OL-paper-q1i-crop",
@@ -7065,7 +7065,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Virus, CNC laser cutter, Social networks, Web browser.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Virus A program or piece of code that operates by attaching itself to some other program or downloaded file. When this program starts the virus code runs, replicates itself and infects other programs or documents on the PC without the user’s knowledge. Written with the deliberate intention of corrupting files, a computer virus can seriously damage or completely destroy files or software on a computer.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Virus A program or piece of code that operates by attaching itself to some other program or downloaded file. When this program starts the virus code runs, replicates itself and infects other programs or documents on the PC without the user’s knowledge. Written with the deliberate intention of corrupting files, a computer virus can seriously damage or completely destroy files or software on a computer.","CNC laser cutter A CNC laser cutter uses a laser beam to cut through the work piece. Laser cutters are used to cut materials precisely and are capable of very accurate work. CNC laser cutters can also be used for etching a range of materials such as glass, plastics and woods. A 2D vector drawing needs to be generated which is then sent to the laser cutter. Care needs to be taken with the exhaust fumes, particularly when cutting plastics.","Social networks Social networks are platforms for individuals to chat over the internet using certain applications on their computers or phones. They provide an opportunity for people to stay in contact from different parts of the world. Facebook, WhatsApp and Wechat are examples of usable applications.","Web browser A web browser provides a platform for the user to access the internet for information. It provides an access point to search, gather and store information as required."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Virus A program or piece of code that operates by attaching itself to some other program or downloaded file. When this program starts the virus code runs, replicates itself and infects other programs or documents on the PC without the user’s knowledge. Written with the deliberate intention of corrupting files, a computer virus can seriously damage or completely destroy files or software on a computer.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Virus A program or piece of code that operates by attaching itself to some other program or downloaded file. When this program starts the virus code runs, replicates itself and infects other programs or documents on the PC without the user’s knowledge. Written with the deliberate intention of corrupting files, a computer virus can seriously damage or completely destroy files or software on a computer.","CNC laser cutter A CNC laser cutter uses a laser beam to cut through the work piece. Laser cutters are used to cut materials precisely and are capable of very accurate work. CNC laser cutters can also be used for etching a range of materials such as glass, plastics and woods. A 2D vector drawing needs to be generated which is then sent to the laser cutter. Care needs to be taken with the exhaust fumes, particularly when cutting plastics.","Social networks Social networks are platforms for individuals to chat over the internet using certain applications on their computers or phones. They provide an opportunity for people to stay in contact from different parts of the world. Facebook, WhatsApp and Wechat are examples of usable applications.","Web browser A web browser provides a platform for the user to access the internet for information. It provides an access point to search, gather and store information as required."]} },
     ],
   } as SecCard,
   {
@@ -7078,7 +7078,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define the term electrical insulator in relation to the properties of materials and name one material which is a good electrical insulator.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Electrical insulator: An electrical insulator prevents the flow of current (electricity) through it.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Electrical insulator: An electrical insulator prevents the flow of current (electricity) through it.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Name: Plastic / Rubber", marks: 6 },
     ],
   } as SecCard,
@@ -7092,7 +7092,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Printed Circuit Board (PCB), Rack and pinion, Parting-off tool, Variable resistor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Printed circuit board (PCB) A PCB is a thin board made of fiberglass, composite epoxy, or other insulating material. Conductive pathways are etched or \"printed\" onto board, connecting different components on the PCB, such as transistors, resistors, and integrated circuits. PCBs are used in both desktop and laptop computers.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Printed circuit board (PCB) A PCB is a thin board made of fiberglass, composite epoxy, or other insulating material. Conductive pathways are etched or \"printed\" onto board, connecting different components on the PCB, such as transistors, resistors, and integrated circuits. PCBs are used in both desktop and laptop computers.","Rack and pinion A rack and pinion is a gear mechanism where rotary motion of the pinion moves the rack in a linear motion or linear motion of the rack will rotate the pinion. Can be used to move the table of a drilling machine up or down.","Parting off tool A parting off tool is a lathe cutting tool which can be used to cut pieces at 90⁰ to their axis on the lathe.","Variable resistor A variable resistor can be used to adjust the flow of current in a circuit. A dimmer switch (variable resistor) allows the user to adjust the light levels in a room."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Printed circuit board (PCB) A PCB is a thin board made of fiberglass, composite epoxy, or other insulating material. Conductive pathways are etched or \"printed\" onto board, connecting different components on the PCB, such as transistors, resistors, and integrated circuits. PCBs are used in both desktop and laptop computers.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Printed circuit board (PCB) A PCB is a thin board made of fiberglass, composite epoxy, or other insulating material. Conductive pathways are etched or \"printed\" onto board, connecting different components on the PCB, such as transistors, resistors, and integrated circuits. PCBs are used in both desktop and laptop computers.","Rack and pinion A rack and pinion is a gear mechanism where rotary motion of the pinion moves the rack in a linear motion or linear motion of the rack will rotate the pinion. Can be used to move the table of a drilling machine up or down.","Parting off tool A parting off tool is a lathe cutting tool which can be used to cut pieces at 90⁰ to their axis on the lathe.","Variable resistor A variable resistor can be used to adjust the flow of current in a circuit. A dimmer switch (variable resistor) allows the user to adjust the light levels in a room."]} },
     ],
   } as SecCard,
   {
@@ -7105,7 +7105,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the cutting tool shown and state its function.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name: Countersink drill", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Name: Countersink drill", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Function: A countersinking drill is a cutter which widens the mouth of a hole to accommodate a CSK screw, the screw fits flush with the surface. Countersinking drills have point angles of either 60⁰ or 90⁰.", marks: 6 },
     ],
     questionFigure: {
@@ -7353,7 +7353,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following metal properties: (i) Conductivity, (ii) Brittleness, (iii) Toughness. OR State two applications of robotics in industry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Conductivity: Conductivity is the ability of a material to allow heat or current to pass through it.", marks: 8, route: "a", group: {"claimMax":2,"perOption":4,"options":["Conductivity: Conductivity is the ability of a material to allow heat or current to pass through it.","Brittleness: Brittleness is the inability of a material to withstand impact i.e. a brittle material will fracture if subjected to an impact or blow.","Toughness: Toughness is the ability of a material to withstand a blow or an impact."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Conductivity: Conductivity is the ability of a material to allow heat or current to pass through it.", marks: 8, contextNote: "The paper sets two (d)s either side of an OR, the metal properties and robotics in industry; the scheme prices both \"Award 2 @ 4 Marks\", so both branches are on this card: claim the rows for the branch you answered.", route: "a", group: {"claimMax":2,"perOption":4,"options":["Conductivity: Conductivity is the ability of a material to allow heat or current to pass through it.","Brittleness: Brittleness is the inability of a material to withstand impact i.e. a brittle material will fracture if subjected to an impact or blow.","Toughness: Toughness is the ability of a material to withstand a blow or an impact."]} },
     { id: "r-2", kind: "anyN", verbatim: "Welding metal parts on car assembly lines.", marks: 4, route: "b" },
     { id: "r-3", kind: "anyN", verbatim: "Pick and place electronic components on PCB’s.", marks: 4, route: "b" },
     ],
@@ -7711,7 +7711,7 @@ export const CARDS: SecCard[] = [
     questionText: "A part for a centre lathe is shown opposite. Name the lathe part shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name: Four-way toolpost", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Name: Four-way toolpost", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the toolpost (c), whose (i)-(iii) each have a card of their own, and the CNC lathe (c), answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2018-OL-paper-q6ci-art",
@@ -7733,7 +7733,7 @@ export const CARDS: SecCard[] = [
     questionText: "A part for a centre lathe is shown opposite. Describe the function of the lathe part shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Function: Holds up to 4 tools and allows each to be use as needed by rotating the tool post through 90⁰.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Function: Holds up to 4 tools and allows each to be use as needed by rotating the tool post through 90⁰.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the toolpost (c), whose (i)-(iii) each have a card of their own, and the CNC lathe (c), answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2018-OL-paper-q6ci-art",
@@ -7755,7 +7755,7 @@ export const CARDS: SecCard[] = [
     questionText: "A part for a centre lathe is shown opposite. State two safety precautions to be observed when using the lathe part shown.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Make sure the cutting tool is secured correctly before use", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Make sure the cutting tool is secured correctly before use", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the toolpost (c), whose (i)-(iii) each have a card of their own, and the CNC lathe (c), answered on one card." },
     { id: "r-2", kind: "point", verbatim: "Make sure all tools are on centre when setting up in the tool post.", marks: null },
     ],
     questionFigure: {
@@ -7778,7 +7778,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe any three of the following in relation to the operation of a CNC lathe: (i) Safety guard (ii) Stepper motor (iii) Part programme (iv) CAM.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Safety guard The safety guard encloses the working area of a CNC lathe, if it is opened the lathe will turn off. The guard is see through to allow the user to watch what is happening.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["Safety guard The safety guard encloses the working area of a CNC lathe, if it is opened the lathe will turn off. The guard is see through to allow the user to watch what is happening.","Stepper motor A stepper motor turns in steps. A full rotation might require 200 steps, a half rotation 100 steps. The number of steps will determine how many rotations the motor will achieve. If a computer is used to control the number of steps, very accurate control of movement is achieved making it suitable for a CNC lathe.","Part programme The CNC lathe requires a control programme or code to move the cutting tool and control speeds automatically. The code or control programme must be written before the CNC lathe will machine the part. This programme is used to instruct the CNC lathe how to produce the required part.","CAM CAM stands for ‘Computer Aided Manufacture’. This is where computers are used to produce drawings and control machines to manufacture a component."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Safety guard The safety guard encloses the working area of a CNC lathe, if it is opened the lathe will turn off. The guard is see through to allow the user to watch what is happening.", marks: 15, contextNote: "The paper sets two (c)s either side of an OR: the toolpost (c), whose (i)-(iii) each have a card of their own, and the CNC lathe (c), answered on one card.", group: {"claimMax":3,"perOption":5,"options":["Safety guard The safety guard encloses the working area of a CNC lathe, if it is opened the lathe will turn off. The guard is see through to allow the user to watch what is happening.","Stepper motor A stepper motor turns in steps. A full rotation might require 200 steps, a half rotation 100 steps. The number of steps will determine how many rotations the motor will achieve. If a computer is used to control the number of steps, very accurate control of movement is achieved making it suitable for a CNC lathe.","Part programme The CNC lathe requires a control programme or code to move the cutting tool and control speeds automatically. The code or control programme must be written before the CNC lathe will machine the part. This programme is used to instruct the CNC lathe how to produce the required part.","CAM CAM stands for ‘Computer Aided Manufacture’. This is where computers are used to produce drawings and control machines to manufacture a component."]} },
     ],
   } as SecCard,
   {
@@ -7844,7 +7844,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any three of the instruments shown and give one application of each instrument named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Surface table", marks: 9, group: {"claimMax":3,"perOption":3,"options":["(i) Surface table","(ii) Vernier height gauge","(iii) Gap gauge","(iv) Engineer’s protractor"]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Surface table", marks: 9, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), whose (i) and (ii) each have a card of their own.", group: {"claimMax":3,"perOption":3,"options":["(i) Surface table","(ii) Vernier height gauge","(iii) Gap gauge","(iv) Engineer’s protractor"]} },
     { id: "r-2", kind: "anyN", verbatim: "(i) Surface table - Used with a Vernier height gauge for marking out.", marks: 6, group: {"claimMax":3,"perOption":2,"options":["(i) Surface table - Used with a Vernier height gauge for marking out.","(ii) Vernier height gauge - Used for accurately marking out pieces.","(iii) Gap gauge - Used for checking linear measurements.","(iv) Engineer’s protractor - Used to accurately measure angles."]} },
     ],
     questionFigure: {
@@ -7867,7 +7867,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the circuit symbol for any three of the electronic components labelled A, B, C or D.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Draw the circuit symbol for any three of the electronic components labelled A, B, C or D.", marks: 9, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.", ask: true },
+    { id: "r-1", kind: "point", verbatim: "Draw the circuit symbol for any three of the electronic components labelled A, B, C or D.", marks: 9, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), whose (i) and (ii) each have a card of their own.", ask: true },
     ],
     questionFigure: {
           "candId": "engineering-2018-OL-paper-q7cor-crop",
@@ -7898,7 +7898,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the function of each of the electronic components selected at 7 (c)(i) above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A: LED, will light up indicating current flow.", marks: 6, group: {"claimMax":3,"perOption":2,"options":["A: LED, will light up indicating current flow.","B: Fixed resistor, protects the LED slowing down the current flow.","C: Toggle switch, turns on or off the flow of current in the circuit.","D: Battery, provides electricity energy to the circuit."]} },
+    { id: "r-1", kind: "anyN", verbatim: "A: LED, will light up indicating current flow.", marks: 6, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), whose (i) and (ii) each have a card of their own.", group: {"claimMax":3,"perOption":2,"options":["A: LED, will light up indicating current flow.","B: Fixed resistor, protects the LED slowing down the current flow.","C: Toggle switch, turns on or off the flow of current in the circuit.","D: Battery, provides electricity energy to the circuit."]} },
     ],
     questionFigure: {
           "candId": "engineering-2018-OL-paper-q7cor-crop",
@@ -8063,7 +8063,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the main operating features of any one of the following:\nPop riveting gun\nShears\nTailstock.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Pop riveting gun A pop riveting gun is used to create a pop riveted joint in sheet metal. A pop rivet is placed into the gun and passed through a pre-drilled hole in the metals to be joined. As the handles of the gun are squeezed, a clamping mechanism grips the shaft of the rivet and draws it back. The enlarged end of the shaft causes the remaining part of the rivet to expand thereby clamping the sheet metal together. When the tensile force on the rivet gets too great the shaft breaks off leaving the pop rivet joint behind.", marks: 12, accepts: ["Shears The material is clamped into position. A moving blade then comes down across a fixed blade to cut the material by a shearing action. For larger shears the moving blade may be set on an angle or \"rocked\" in order to shear the material progressively from one side to the other; this angle is referred to as the shear angle.","Tailstock The tailstock is part of a centre lathe which can be moved along the bedway. The tailstock facilitates drilling, tapping, reaming or supporting the outer end of long work. A chuck or rotating centre can be fitted into the barrel and this can be moved forward or back by rotating a hand wheel located at the back of the tailstock. A second lever can be used to clamp the tailstock in any desired position on the bedway."] },
+    { id: "r-1", kind: "alt", verbatim: "Pop riveting gun A pop riveting gun is used to create a pop riveted joint in sheet metal. A pop rivet is placed into the gun and passed through a pre-drilled hole in the metals to be joined. As the handles of the gun are squeezed, a clamping mechanism grips the shaft of the rivet and draws it back. The enlarged end of the shaft causes the remaining part of the rivet to expand thereby clamping the sheet metal together. When the tensile force on the rivet gets too great the shaft breaks off leaving the pop rivet joint behind.", marks: 12, accepts: ["Shears The material is clamped into position. A moving blade then comes down across a fixed blade to cut the material by a shearing action. For larger shears the moving blade may be set on an angle or \"rocked\" in order to shear the material progressively from one side to the other; this angle is referred to as the shear angle.","Tailstock The tailstock is part of a centre lathe which can be moved along the bedway. The tailstock facilitates drilling, tapping, reaming or supporting the outer end of long work. A chuck or rotating centre can be fitted into the barrel and this can be moved forward or back by rotating a hand wheel located at the back of the tailstock. A second lever can be used to clamp the tailstock in any desired position on the bedway."], contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     ],
     questionFigure: {
           "candId": "engineering-2019-OL-paper-q1i-crop",
@@ -8085,7 +8085,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Hacking, Virtual reality, Mobile technology, Skype.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Hacking Is the activity of illegally trying to obtain data trough accessing another person’s or an organisations computer device. Hacking can be done by a person known as a ‘hacker’ or achieved through a virus / program.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Hacking Is the activity of illegally trying to obtain data trough accessing another person’s or an organisations computer device. Hacking can be done by a person known as a ‘hacker’ or achieved through a virus / program.","Virtual reality Virtual reality uses computer-generated graphics to produce a simulation of three-dimensional images or environments which can be interacted with in a seemingly real or physical way by the user. Using special electronic equipment, such as VR headsets/helmets the user feels part of a scene or that they can take part in activities by way of a screen inside the headset. Gloves with sensors are often supplied to enhance the experience.","Mobile technology Electronic equipment such as mobile phones, tablets, laptops, etc. that you can use in multiple locations without the need to hardwire (wireless) to other units. The user has full access and use of all functions while on the move with the device. Mobile technology uses specific platforms where transmitters and receivers send and receive data on specific wavelengths.","Skype Skype is a software used on electronic devices to voice call or video call with a single person or a group of people anywhere in the world. The software allows both voice and visual communication with others through your computer, tablet or mobile phone."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Hacking Is the activity of illegally trying to obtain data trough accessing another person’s or an organisations computer device. Hacking can be done by a person known as a ‘hacker’ or achieved through a virus / program.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Hacking Is the activity of illegally trying to obtain data trough accessing another person’s or an organisations computer device. Hacking can be done by a person known as a ‘hacker’ or achieved through a virus / program.","Virtual reality Virtual reality uses computer-generated graphics to produce a simulation of three-dimensional images or environments which can be interacted with in a seemingly real or physical way by the user. Using special electronic equipment, such as VR headsets/helmets the user feels part of a scene or that they can take part in activities by way of a screen inside the headset. Gloves with sensors are often supplied to enhance the experience.","Mobile technology Electronic equipment such as mobile phones, tablets, laptops, etc. that you can use in multiple locations without the need to hardwire (wireless) to other units. The user has full access and use of all functions while on the move with the device. Mobile technology uses specific platforms where transmitters and receivers send and receive data on specific wavelengths.","Skype Skype is a software used on electronic devices to voice call or video call with a single person or a group of people anywhere in the world. The software allows both voice and visual communication with others through your computer, tablet or mobile phone."]} },
     ],
   } as SecCard,
   {
@@ -8098,7 +8098,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define the term hazard in relation to health and safety and give one example of a hazard.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hazard: A hazard is a potential source of harm / danger or health effect on an individual or individuals.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Hazard: A hazard is a potential source of harm / danger or health effect on an individual or individuals.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Example: Operating a centre lathe without wearing personal protection equipment.", marks: 6 },
     ],
   } as SecCard,
@@ -8112,7 +8112,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following: Countersink drill, Blind hole, Swarf, Reamer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Counter sinking drill A countersinking drill is a cutter which widens the mouth of a hole to accommodate a CSK screw, the screw fits flush with the surface. Countersinking drills have point angles of either 60⁰ or 90⁰.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Counter sinking drill A countersinking drill is a cutter which widens the mouth of a hole to accommodate a CSK screw, the screw fits flush with the surface. Countersinking drills have point angles of either 60⁰ or 90⁰.","Blind hole A blind hole refers to a hole that is reamed, drilled, or milled to a specified depth without breaking through to the other side of the workpiece.","Swarf Swarf is the waste material produced when the chip is cut from the workpiece. Swarf is produced when drilling on a drilling machine or turning on the centre lathe.","Reamer Reamers are designed to enlarge the size of a previously formed hole by a small amount but with a high degree of accuracy and finish. There are also non-precision reamers which are used for more basic enlargement of holes or for removing burrs."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Counter sinking drill A countersinking drill is a cutter which widens the mouth of a hole to accommodate a CSK screw, the screw fits flush with the surface. Countersinking drills have point angles of either 60⁰ or 90⁰.", marks: 12, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11.", group: {"claimMax":2,"perOption":6,"options":["Counter sinking drill A countersinking drill is a cutter which widens the mouth of a hole to accommodate a CSK screw, the screw fits flush with the surface. Countersinking drills have point angles of either 60⁰ or 90⁰.","Blind hole A blind hole refers to a hole that is reamed, drilled, or milled to a specified depth without breaking through to the other side of the workpiece.","Swarf Swarf is the waste material produced when the chip is cut from the workpiece. Swarf is produced when drilling on a drilling machine or turning on the centre lathe.","Reamer Reamers are designed to enlarge the size of a previously formed hole by a small amount but with a high degree of accuracy and finish. There are also non-precision reamers which are used for more basic enlargement of holes or for removing burrs."]} },
     ],
   } as SecCard,
   {
@@ -8125,7 +8125,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the type of chuck shown and give a suitable application of it.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name: Four jaw independent chuck.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Name: Four jaw independent chuck.", marks: 6, contextNote: "Section B is 'Any three parts @ 12 + 12 + 11 marks': this card shows the 12 a part earns answered first or second; a part answered third earns 11." },
     { id: "r-2", kind: "point", verbatim: "Application: Used to hold square or rectangular bar for machining on a centre lathe.", marks: 6 },
     ],
     questionFigure: {
@@ -8384,7 +8384,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following terms: (i) Malleability, (ii) Tensile strength, (iii) Brittleness.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Malleability: The ability to be hammered or rolled into a thin sheet without fracturing.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Malleability: The ability to be hammered or rolled into a thin sheet without fracturing.","Tensile strength: Tensile strength is the maximum force or load applied to a piece before it breaks or fractures, divided by the original cross-sectional area.","Brittleness: A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Malleability: The ability to be hammered or rolled into a thin sheet without fracturing.", marks: 8, contextNote: "The paper sets two (d)s either side of an OR: the metal properties (d), answered on one card, and the robotics (d), whose (i) and (ii) each have a card of their own.", group: {"claimMax":2,"perOption":4,"options":["Malleability: The ability to be hammered or rolled into a thin sheet without fracturing.","Tensile strength: Tensile strength is the maximum force or load applied to a piece before it breaks or fractures, divided by the original cross-sectional area.","Brittleness: A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials."]} },
     ],
   } as SecCard,
   {
@@ -8397,7 +8397,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two engineering manufacturing processes where robots are used.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Car manufacture", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "Car manufacture", marks: 2, contextNote: "The paper sets two (d)s either side of an OR: the metal properties (d), answered on one card, and the robotics (d), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "circuit board assembly.", marks: 2 },
     ],
   } as SecCard,
@@ -8411,7 +8411,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two advantages of robotics in manufacturing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Accuracy of manufacture,", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "Accuracy of manufacture,", marks: 2, contextNote: "The paper sets two (d)s either side of an OR: the metal properties (d), answered on one card, and the robotics (d), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "speed of production", marks: 2 },
     ],
   } as SecCard,
@@ -8700,7 +8700,7 @@ export const CARDS: SecCard[] = [
     questionText: "Dumbbell bars have a series of patterns, usually featuring diagonal lines going in opposite directions, to form a grip. Name a lathe process used to produce these patterns.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Knurling", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Knurling", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the knurling (c), whose (i)-(iii) each have a card of their own, and the chess piece (c), answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2019-OL-paper-q6cii-art",
@@ -8722,7 +8722,7 @@ export const CARDS: SecCard[] = [
     questionText: "Dumbbell bars have a series of patterns, usually featuring diagonal lines going in opposite directions, to form a grip. Describe this lathe process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A knurling tool set against a piece of round section of bar. The lathe is set so that the chuck revolves at a low speed. The knurling tool is then pressed against the rotating steel and pressure is slowly increased until the tool produces a pattern on the bar.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "A knurling tool set against a piece of round section of bar. The lathe is set so that the chuck revolves at a low speed. The knurling tool is then pressed against the rotating steel and pressure is slowly increased until the tool produces a pattern on the bar.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the knurling (c), whose (i)-(iii) each have a card of their own, and the chess piece (c), answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2019-OL-paper-q6cii-art",
@@ -8744,7 +8744,7 @@ export const CARDS: SecCard[] = [
     questionText: "Dumbbell bars have a series of patterns, usually featuring diagonal lines going in opposite directions, to form a grip. State two safety precautions to be observed during this lathe process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Have no loose clothing hanging near the turning bar on the lathe/wear PPE", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Have no loose clothing hanging near the turning bar on the lathe/wear PPE", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the knurling (c), whose (i)-(iii) each have a card of their own, and the chess piece (c), answered on one card." },
     ],
     questionFigure: {
           "candId": "engineering-2019-OL-paper-q6cii-art",
@@ -8766,7 +8766,7 @@ export const CARDS: SecCard[] = [
     questionText: "A large number of copies of the chess piece shown below have to be machined. State three advantages of using a computer numerical control lathe (CNC lathe) rather than using a manual control lathe to produce these chess pieces.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Easier and quicker to mass produce the piece shown on a CNC lathe", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Easier and quicker to mass produce the piece shown on a CNC lathe", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: the knurling (c), whose (i)-(iii) each have a card of their own, and the chess piece (c), answered on one card." },
     { id: "r-2", kind: "point", verbatim: "Less chance of errors if made on a CNC lathe", marks: 5 },
     { id: "r-3", kind: "point", verbatim: "Reduced labor cost", marks: 5 },
     ],
@@ -8828,7 +8828,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any three of the instruments shown and give one application of each instrument named.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Plug gauge", marks: 9, group: {"claimMax":3,"perOption":3,"options":["(i) Plug gauge","(ii) Combination set","(iii) Digital Vernier calipers","(iv) Feeler gauge"]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Plug gauge", marks: 9, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), whose (i) and (ii) each have a card of their own.", group: {"claimMax":3,"perOption":3,"options":["(i) Plug gauge","(ii) Combination set","(iii) Digital Vernier calipers","(iv) Feeler gauge"]} },
     { id: "r-2", kind: "anyN", verbatim: "(i) Plug gauge - Used to check the diameter size of internal holes.", marks: 6, group: {"claimMax":3,"perOption":2,"options":["(i) Plug gauge - Used to check the diameter size of internal holes.","(ii) Combination set - Can be used for multiple marking out exercises such as marking angles, measuring and to locate the exact centre of a round bar.","(iii) Digital Vernier calipers - Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.","(iv) Feeler gauge - Used to check the gap between two parts."]} },
     ],
     questionFigure: {
@@ -8851,7 +8851,7 @@ export const CARDS: SecCard[] = [
     questionText: "The electronic components below can be used in the manufacture of the Model Space Rover shown. Name any three of the electronic components shown below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A. DC Motor", marks: 6, group: {"claimMax":3,"perOption":2,"options":["A. DC Motor","B. A buzzer","C. A switch","D. Light Emitting Diode (LED)"]} },
+    { id: "r-1", kind: "anyN", verbatim: "A. DC Motor", marks: 6, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), whose (i) and (ii) each have a card of their own.", group: {"claimMax":3,"perOption":2,"options":["A. DC Motor","B. A buzzer","C. A switch","D. Light Emitting Diode (LED)"]} },
     ],
     questionFigure: {
           "candId": "engineering-2019-OL-paper-q7cor-crop",
@@ -8873,7 +8873,7 @@ export const CARDS: SecCard[] = [
     questionText: "The electronic components below can be used in the manufacture of the Model Space Rover shown. State the function of each component, named by you, in 7(c)(i).",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A. DC Motor – Used to provide mechanical movement.", marks: 9, group: {"claimMax":3,"perOption":3,"options":["A. DC Motor – Used to provide mechanical movement.","B. A buzzer – Used to provide an audible warning etc.","C. A switch – Used to turn on / off the control circuit.","D. Light Emitting Diode (LED) – Used as an indicator to show the circuit is on."]} },
+    { id: "r-1", kind: "anyN", verbatim: "A. DC Motor – Used to provide mechanical movement.", marks: 9, contextNote: "The paper sets two (c)s either side of an OR: the instruments (c), answered on one card, and the electronic components (c), whose (i) and (ii) each have a card of their own.", group: {"claimMax":3,"perOption":3,"options":["A. DC Motor – Used to provide mechanical movement.","B. A buzzer – Used to provide an audible warning etc.","C. A switch – Used to turn on / off the control circuit.","D. Light Emitting Diode (LED) – Used as an indicator to show the circuit is on."]} },
     ],
     questionFigure: {
           "candId": "engineering-2019-OL-paper-q7cor-crop",
@@ -8896,7 +8896,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two examples where Personal Protective Equipment (PPE) must be worn in the Engineering room.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Operating machinery such as the lathe / pillar drilling etc.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Operating machinery such as the lathe / pillar drilling etc.", marks: 4, contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)." },
     { id: "r-2", kind: "point", verbatim: "Using oxygen acetylene gas welding equipment i.e. leather gloves /apron / welding goggles must be worn.", marks: 3 },
     ],
   } as SecCard,
@@ -8911,7 +8911,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the engineering term permanent joint.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces i.e., a pop riveted joint.", marks: 7 },
+    { id: "r-1", kind: "point", verbatim: "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces i.e., a pop riveted joint.", marks: 7, contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)." },
     ],
   } as SecCard,
   {
@@ -8925,7 +8925,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one application of the chain and sprocket mechanism shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A chain and sprocket mechanism can be used as part of a driving mechanism in a bicycle.", marks: 7 },
+    { id: "r-1", kind: "point", verbatim: "A chain and sprocket mechanism can be used as part of a driving mechanism in a bicycle.", marks: 7, contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)." },
     ],
     questionFigure: {
           "candId": "engineering-2021-OL-paper-q1c-art",
@@ -8947,7 +8947,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two forms of renewable energy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Solar energy.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Solar energy.", marks: 4, contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)." },
     { id: "r-2", kind: "point", verbatim: "Wind energy.", marks: 3 },
     ],
   } as SecCard,
@@ -8962,7 +8962,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one contribution engineering makes to the transport industry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Engineering continues to contribute to the development of electrical and hybrid vehicles for the transport industry.", marks: 7 },
+    { id: "r-1", kind: "point", verbatim: "Engineering continues to contribute to the development of electrical and hybrid vehicles for the transport industry.", marks: 7, contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)." },
     ],
   } as SecCard,
   {
@@ -8976,7 +8976,7 @@ export const CARDS: SecCard[] = [
     questionText: "Define the term brittleness in relation to the properties of materials and name one material which is brittle.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A brittle material can be fractured easily by an impact. Brittleness is the opposite to toughness.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "A brittle material can be fractured easily by an impact. Brittleness is the opposite to toughness.", marks: 4, contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)." },
     { id: "r-2", kind: "point", verbatim: "Glass / Hardened Steel / Cast iron is an example of a brittle material.", marks: 3 },
     ],
   } as SecCard,
@@ -9382,7 +9382,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify tool A shown opposite and give one use for this tool.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tool A is an adjustable spanner.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Tool A is an adjustable spanner.", marks: 4, contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)." },
     { id: "r-2", kind: "point", verbatim: "An adjustable spanner is used to loosen or tighten a nut or bolt.", marks: 3 },
     ],
     figure: {
@@ -9408,7 +9408,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name the electronic component shown and suggest one suitable application of this component.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name: The electronic component show is a Light Emitting Diode (L.E.D.).", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Name: The electronic component show is a Light Emitting Diode (L.E.D.).", marks: 4, contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3). The scheme sets this answer as \"(g)\"." },
     { id: "r-2", kind: "point", verbatim: "Application: Light Emitting Diodes can be used as indicators on TV’s / PC’s / electrical kettles etc. to show they have been turned on.", marks: 3 },
     ],
     questionFigure: {
@@ -9431,7 +9431,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name component B shown and state its function.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Chuck key.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Chuck key.", marks: 4, contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)." },
     { id: "r-2", kind: "point", verbatim: "A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.", marks: 3 },
     ],
     figure: {
@@ -9457,7 +9457,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the main operating features of any one of the following:\nAir compressor\nStrip heater\nThree‐jaw chuck.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The compressor show has an electric motor, a compressor unit, and a storage tank. The electric motor drives the compressor unit which sucks air into a cylinder through an inlet valve. The air is then squashed (compressed) by a piston and forced into the storage tank. As the compressor continues to run, pressure builds up inside the storage tank. When it reaches a set level the electrical motor cuts off, stopping the compressor. The storage tank now stores the compressed air for use. When the pressure drops inside the storage tank, the electric motor starts again to bring up the level of pressure inside the storage tank.", marks: 7, accepts: ["A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required, the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by controlling the heating temperature.","A 3-jaw chuck is used for holding round or hexagonal work. The chuck has three jaws which are located on a scroll plate. When the chuck key is used, the scroll plate rotates moving all three jaws together, automatically centering the work when the chuck is closed (self-centering). Two sets of jaws are supplied with these chucks. One set for gripping small diameter and hollow work. The other for gripping large diameter work. The jaws of each set are stamped 1, 2 and 3 and corresponding numbers are stamped beside each slot on the chuck. This is to ensure that each jaw is returned to its proper slot after removal."] },
+    { id: "r-1", kind: "alt", verbatim: "The compressor show has an electric motor, a compressor unit, and a storage tank. The electric motor drives the compressor unit which sucks air into a cylinder through an inlet valve. The air is then squashed (compressed) by a piston and forced into the storage tank. As the compressor continues to run, pressure builds up inside the storage tank. When it reaches a set level the electrical motor cuts off, stopping the compressor. The storage tank now stores the compressed air for use. When the pressure drops inside the storage tank, the electric motor starts again to bring up the level of pressure inside the storage tank.", marks: 7, accepts: ["A strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. Thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required, the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by controlling the heating temperature.","A 3-jaw chuck is used for holding round or hexagonal work. The chuck has three jaws which are located on a scroll plate. When the chuck key is used, the scroll plate rotates moving all three jaws together, automatically centering the work when the chuck is closed (self-centering). Two sets of jaws are supplied with these chucks. One set for gripping small diameter and hollow work. The other for gripping large diameter work. The jaws of each set are stamped 1, 2 and 3 and corresponding numbers are stamped beside each slot on the chuck. This is to ensure that each jaw is returned to its proper slot after removal."], contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)." },
     ],
     questionFigure: {
           "candId": "engineering-2021-OL-paper-q1i-crop",
@@ -9479,7 +9479,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one example of a ferrous metal and one example of a non‐ferrous metal.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(i) Steel is a ferrous metal.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "(i) Steel is a ferrous metal.", marks: 4, contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)." },
     { id: "r-2", kind: "point", verbatim: "(ii) Brass is a non-ferrous metal.", marks: 3 },
     ],
   } as SecCard,
@@ -9494,7 +9494,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe any one of the following: Laser cutting, Bluetooth, Drone.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Laser cutting: Laser cutting is a technology that uses a laser to slice materials. Laser cutting works by directing the output of a high-power laser most commonly through mirrors. Laser mirrors and CNC (computer numerical control) are used to direct the laser beam generated onto the material. The laser beam is directed at the material through a focusing lens, which then either melts, burns or vaporizes away the material. This leaves an edge with a high-quality surface finish.", marks: 7, accepts: ["Bluetooth: Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Bluetooth is used as a short-range wireless interconnection of mobile phones, computers, sound systems, game controllers, printers, and other electronic devices.","Drone: A drone may be explained as any unmanned robot either preprogrammed or remotely controlled. This includes robots designed for water, land and air use. The most common drone is an aerial one, either an RPA (remote piloted aircraft) or UAV (unmanned/unpiloted aerial vehicle). A remote-piloted aircraft, RPA, is controlled remotely either by a short-range remote control or from a more sophisticated remote base station. Used in both commercial and military applications, these drones are often like a helicopter and can come with more than one rotor blade. An unmanned aerial vehicle, UAV, is preprogrammed prior to flight to do a specific set of tasks on a specific flight path."] },
+    { id: "r-1", kind: "alt", verbatim: "Laser cutting: Laser cutting is a technology that uses a laser to slice materials. Laser cutting works by directing the output of a high-power laser most commonly through mirrors. Laser mirrors and CNC (computer numerical control) are used to direct the laser beam generated onto the material. The laser beam is directed at the material through a focusing lens, which then either melts, burns or vaporizes away the material. This leaves an edge with a high-quality surface finish.", marks: 7, accepts: ["Bluetooth: Bluetooth is a wireless technology which allows mobile devices to be connected over short distances. Bluetooth is used as a short-range wireless interconnection of mobile phones, computers, sound systems, game controllers, printers, and other electronic devices.","Drone: A drone may be explained as any unmanned robot either preprogrammed or remotely controlled. This includes robots designed for water, land and air use. The most common drone is an aerial one, either an RPA (remote piloted aircraft) or UAV (unmanned/unpiloted aerial vehicle). A remote-piloted aircraft, RPA, is controlled remotely either by a short-range remote control or from a more sophisticated remote base station. Used in both commercial and military applications, these drones are often like a helicopter and can come with more than one rotor blade. An unmanned aerial vehicle, UAV, is preprogrammed prior to flight to do a specific set of tasks on a specific flight path."], contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)." },
     ],
   } as SecCard,
   {
@@ -9508,7 +9508,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any one of the following: Pilot hole, Countersink bit, Swarf.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Pilot hole: A pilot hole must be drilled before using a large drill. This keeps the large drill central as it guides the drill through the piece when drilling.", marks: 7, accepts: ["Countersinking bit: A countersinking bit is used to enlarge the mouths of holes to accommodate the heads of countersunk head screws / rivets or fixings. Countersinking allows the fixing to be sunk below the surface of the hole.","Swarf: Swarf is the waste material produced when the chip is cut from the workpiece."] },
+    { id: "r-1", kind: "alt", verbatim: "Pilot hole: A pilot hole must be drilled before using a large drill. This keeps the large drill central as it guides the drill through the piece when drilling.", marks: 7, accepts: ["Countersinking bit: A countersinking bit is used to enlarge the mouths of holes to accommodate the heads of countersunk head screws / rivets or fixings. Countersinking allows the fixing to be sunk below the surface of the hole.","Swarf: Swarf is the waste material produced when the chip is cut from the workpiece."], contextNote: "Question 1 is 'Any eight. Two @ 7 marks, six @ 6 marks': this card shows the printed price, 7 (two-part answers 4 + 3); a part marked at the bracketed price earns 6 (3 + 3)." },
     ],
   } as SecCard,
   {
@@ -9549,7 +9549,7 @@ export const CARDS: SecCard[] = [
     questionText: "Select one of the furnaces shown at Q2(a) above and, with the aid of a suitable diagram, answer each of the following: (i) Label the main parts of the furnace;",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Select one of the furnaces shown at Q2(a) above and, with the aid of a suitable diagram, answer each of the following: (i) Label the main parts of the furnace;", marks: 6, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.", ask: true },
+    { id: "r-1", kind: "point", verbatim: "Select one of the furnaces shown at Q2(a) above and, with the aid of a suitable diagram, answer each of the following: (i) Label the main parts of the furnace;", marks: 6, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The scheme answers for whichever furnace was chosen: A, the basic oxygen furnace, first; then B, the blast furnace; then C, the electric arc furnace.", ask: true },
     ],
     questionFigure: {
           "candId": "engineering-2021-OL-paper-q2a-crop",
@@ -9940,7 +9940,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following terms: (i) Malleability, (ii) Compressive strength, (iii) Ductility, (iv) Tensile strength.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Malleability: The ability of a material to be hammered and/or formed without breaking.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["(i) Malleability: The ability of a material to be hammered and/or formed without breaking.","(ii) Compressive strength: The ability of a material to withstand being squashed or pushed together.","(iii) Ductility: A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","(iv) Tensile strength: The ability of a material to withstand being pulled apart or stretched."]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Malleability: The ability of a material to be hammered and/or formed without breaking.", marks: 12, contextNote: "The paper sets this (d) and the robotics (d) beneath it either side of an OR.", group: {"claimMax":2,"perOption":6,"options":["(i) Malleability: The ability of a material to be hammered and/or formed without breaking.","(ii) Compressive strength: The ability of a material to withstand being squashed or pushed together.","(iii) Ductility: A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","(iv) Tensile strength: The ability of a material to withstand being pulled apart or stretched."]} },
     ],
   } as SecCard,
   {
@@ -9953,7 +9953,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two advantages of robotics in manufacturing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Robotics offer precision placement of components in manufacturing.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Robotics offer precision placement of components in manufacturing.", marks: 3, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following terms\"." },
     { id: "r-2", kind: "point", verbatim: "Robotics offer precision when performing manufacturing processes such as welding & paint spraying.", marks: 3 },
     ],
   } as SecCard,
@@ -9967,7 +9967,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two ways in which the use of robotic technology can improve the safety of a work environment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.", marks: 3, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following terms\"." },
     { id: "r-2", kind: "point", verbatim: "The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).", marks: 3 },
     ],
   } as SecCard,
@@ -10596,7 +10596,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following metal properties: (i) Brittleness, (ii) Melting point, (iii) Toughness, (iv) Elasticity.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Brittleness: A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["(i) Brittleness: A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.","(ii) Melting point: Melting point is the temperature at which a metal changes its state from solid to liquid.","(iii) Toughness: This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.","(iv) Elasticity: The property of elasticity is the ability of an object or material to return to its original shape after being stretched."]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Brittleness: A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.", marks: 12, contextNote: "The paper sets this (d) and the robotics (d) beneath it either side of an OR.", group: {"claimMax":2,"perOption":6,"options":["(i) Brittleness: A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.","(ii) Melting point: Melting point is the temperature at which a metal changes its state from solid to liquid.","(iii) Toughness: This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.","(iv) Elasticity: The property of elasticity is the ability of an object or material to return to its original shape after being stretched."]} },
     ],
   } as SecCard,
   {
@@ -10609,7 +10609,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one example of the use of robotics in any two of the following: (i) medicine;",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(i) Medicine: Performing operations from a distance", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "(i) Medicine: Performing operations from a distance", marks: 6, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\"." },
     ],
   } as SecCard,
   {
@@ -10622,7 +10622,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one example of the use of robotics in any two of the following: (ii) gardening;",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(ii) Gardening: Robotic lawnmowers", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "(ii) Gardening: Robotic lawnmowers", marks: 6, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\"." },
     ],
   } as SecCard,
   {
@@ -10635,7 +10635,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one example of the use of robotics in any two of the following: (iii) manufacturing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(iii) Manufacturing: Robotic welding", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "(iii) Manufacturing: Robotic welding", marks: 6, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\"." },
     ],
   } as SecCard,
   {
@@ -11550,7 +11550,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following metal properties: (i) Toughness, (ii) Ductility, (iii) Malleability.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "(i) Toughness: This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["(i) Toughness: This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.","(ii) Ductility: A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","(iii) Malleability: The ability to be hammered or rolled into a thin sheet without fracturing."]} },
+    { id: "r-1", kind: "anyN", verbatim: "(i) Toughness: This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.", marks: 12, contextNote: "The paper sets this (d) and the robotics (d) beneath it either side of an OR.", group: {"claimMax":2,"perOption":6,"options":["(i) Toughness: This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.","(ii) Ductility: A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","(iii) Malleability: The ability to be hammered or rolled into a thin sheet without fracturing."]} },
     ],
   } as SecCard,
   {
@@ -11563,7 +11563,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two areas where robotic technology is used in health care.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.", marks: 3, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\"." },
     { id: "r-2", kind: "point", verbatim: "Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world.", marks: 3 },
     ],
   } as SecCard,
@@ -11577,7 +11577,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two ways in which exoskeleton suits can help the recovery process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Exoskeleton suits can help people with spinal cord injuries gain some mobility, helping to improve cardiovascular health, slow the loss of fat tissue, build lean muscle mass, improve bowel function, and aid in pain management", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Exoskeleton suits can help people with spinal cord injuries gain some mobility, helping to improve cardiovascular health, slow the loss of fat tissue, build lean muscle mass, improve bowel function, and aid in pain management", marks: 3, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\"." },
     { id: "r-2", kind: "point", verbatim: "Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves.", marks: 3 },
     ],
     questionFigure: {
@@ -11631,7 +11631,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name two lathe processes used in the manufacture of the thumbscrew. OR What does CNC stand for?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Knurling", marks: 3, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Knurling", marks: 3, contextNote: "The paper sets two (c)s either side of an OR. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Parting off.", marks: 3, route: "a" },
     { id: "r-3", kind: "point", verbatim: "CNC - Computer Numerical Control.", marks: 6, route: "b" },
     ],
@@ -11757,7 +11757,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one use of a solenoid.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A solenoid is an electromagnet, used to convert electrical energy into mechanical work. It can be used to open and close pneumatic valves / turn on or off an electrical switch / operate as a locking mechanism….", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "A solenoid is an electromagnet, used to convert electrical energy into mechanical work. It can be used to open and close pneumatic valves / turn on or off an electrical switch / operate as a locking mechanism….", marks: 6, contextNote: "The paper sets this (c) as the alternative, after an OR, to \"(c) Name any three of the instruments shown\"." },
     ],
     questionFigure: {
           "candId": "engineering-2023-OL-paper-q7ci-crop",
@@ -11779,7 +11779,7 @@ export const CARDS: SecCard[] = [
     questionText: "Why does the light emitting diode shown have one long leg and one short leg?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The LED shown has one long leg and one short leg to ensure it is connected into a circuit the correct way i.e. The long leg is connected to the positive and the short leg to the negative connection.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "The LED shown has one long leg and one short leg to ensure it is connected into a circuit the correct way i.e. The long leg is connected to the positive and the short leg to the negative connection.", marks: 6, contextNote: "The paper sets this (c) as the alternative, after an OR, to \"(c) Name any three of the instruments shown\"." },
     ],
     questionFigure: {
           "candId": "engineering-2023-OL-paper-q7cii-crop",
@@ -11801,7 +11801,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the function of the colour bands on the fixed resistor shown.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The colour bands on a fixed resistor are used to calculate the resistance in ohms, of a fixed resistor.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "The colour bands on a fixed resistor are used to calculate the resistance in ohms, of a fixed resistor.", marks: null, contextNote: "The paper sets this (c) as the alternative, after an OR, to \"(c) Name any three of the instruments shown\"." },
     { id: "r-2", kind: "point", verbatim: "Brown, Black, Orange (1 0) X 1000 = 10000 Ohms or 10 KΩ", marks: null },
     ],
     questionFigure: {
@@ -12404,7 +12404,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following metal properties: (i) Elasticity, (ii) Melting point, (iii) Compressive strength.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Elasticity: The property of elasticity is the ability of an object or material to return to its original shape after being stretched.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Elasticity: The property of elasticity is the ability of an object or material to return to its original shape after being stretched.","Melting point: Melting point is the temperature at which a metal changes its state from solid to liquid.","Compressive strength: Compressive strength is the ability of a material to withstand heavy loads before failure."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Elasticity: The property of elasticity is the ability of an object or material to return to its original shape after being stretched.", marks: 12, contextNote: "The paper sets this (d) and the robotics (d) beneath it either side of an OR.", group: {"claimMax":2,"perOption":6,"options":["Elasticity: The property of elasticity is the ability of an object or material to return to its original shape after being stretched.","Melting point: Melting point is the temperature at which a metal changes its state from solid to liquid.","Compressive strength: Compressive strength is the ability of a material to withstand heavy loads before failure."]} },
     ],
   } as SecCard,
   {
@@ -12417,7 +12417,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one advantage for each of the robotic processes shown below: Robotic lawn mowing,",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Robotic lawn mowing: A robotic lawnmower is autonomous, it can cut the grass at any time during the day or night, it does not need a human to operate it.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Robotic lawn mowing: A robotic lawnmower is autonomous, it can cut the grass at any time during the day or night, it does not need a human to operate it.", marks: 4, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\"." },
     ],
     questionFigure: {
           "candId": "engineering-2024-OL-paper-q3di-crop",
@@ -12439,7 +12439,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one advantage for each of the robotic processes shown below: Robotic waste sorting,",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Robotic waste sorting: Robotic waste sorting can operate continuously, is more efficient. It is also more hygienic as humans do not have to handle contaminated waste products.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Robotic waste sorting: Robotic waste sorting can operate continuously, is more efficient. It is also more hygienic as humans do not have to handle contaminated waste products.", marks: 4, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\"." },
     ],
     questionFigure: {
           "candId": "engineering-2024-OL-paper-q3dii-crop",
@@ -12461,7 +12461,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one advantage for each of the robotic processes shown below: Robotic welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Robotic welding: Robotic welding can continually produce a much higher level of quality and precision and integrates well with mass production processes.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Robotic welding: Robotic welding can continually produce a much higher level of quality and precision and integrates well with mass production processes.", marks: 4, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\"." },
     ],
     questionFigure: {
           "candId": "engineering-2024-OL-paper-q3diii-crop",
@@ -12573,7 +12573,7 @@ export const CARDS: SecCard[] = [
     questionText: "A part for a centre lathe is shown opposite. Name the centre lathe part shown. OR CNC Laser cutting is frequently used in schools and industry as part of the manufacturing process. Explain the term CNC.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Tailstock", marks: 6, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Tailstock", marks: 6, contextNote: "The paper sets two (c)s either side of an OR; the scheme prints 'Award 1 @ 6 Marks' for each (i). Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "CNC - Computer Numerical Control.", marks: 6, route: "b" },
     ],
     questionFigure: {
@@ -12596,7 +12596,7 @@ export const CARDS: SecCard[] = [
     questionText: "A part for a centre lathe is shown opposite. Identify one use for this centre lathe part.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Drilling / Supporting long work / Reaming / Threading", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Drilling / Supporting long work / Reaming / Threading", marks: 6, contextNote: "The paper sets two (c)s either side of an OR, the centre lathe part and CNC laser cutting; the scheme prices their (ii)s and (iii)s differently, so each branch has its own cards." },
     ],
     questionFigure: {
           "candId": "engineering-2024-OL-paper-q6ci-crop",
@@ -12618,7 +12618,7 @@ export const CARDS: SecCard[] = [
     questionText: "CNC Laser cutting is frequently used in schools and industry as part of the manufacturing process. List two advantages of using a CNC laser cutter in engineering manufacture.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mass production of complex parts.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Mass production of complex parts.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR, the centre lathe part and CNC laser cutting; the scheme prices their (ii)s and (iii)s differently, so each branch has its own cards." },
     { id: "r-2", kind: "point", verbatim: "High level of precision accuracy.", marks: 4 },
     ],
     questionFigure: {
@@ -12641,7 +12641,7 @@ export const CARDS: SecCard[] = [
     questionText: "A part for a centre lathe is shown opposite. State two safety precautions to be observed when using a centre lathe.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Wear safety goggles.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Wear safety goggles.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR, the centre lathe part and CNC laser cutting; the scheme prices their (ii)s and (iii)s differently, so each branch has its own cards." },
     { id: "r-2", kind: "point", verbatim: "Do not remove swarf using hands.", marks: 4 },
     ],
     questionFigure: {
@@ -12664,7 +12664,7 @@ export const CARDS: SecCard[] = [
     questionText: "CNC Laser cutting is frequently used in schools and industry as part of the manufacturing process. Identify one safety precaution to be observed when using a CNC laser cutter.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Do not leave a CNC laser machine operating unattended.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Do not leave a CNC laser machine operating unattended.", marks: 6, contextNote: "The paper sets two (c)s either side of an OR, the centre lathe part and CNC laser cutting; the scheme prices their (ii)s and (iii)s differently, so each branch has its own cards." },
     ],
     questionFigure: {
           "candId": "engineering-2024-OL-paper-q6cii-or-crop",
@@ -12699,7 +12699,7 @@ export const CARDS: SecCard[] = [
     questionText: "A waste pipe and plug are machined to the dimensions shown below. State the:\n(i) Nominal diameter of the hole;\n(ii) Smallest diameter of the shaft;\n(iii) Largest diameter of the hole;",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nominal diameter of the hole; 24.00 mm", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Nominal diameter of the hole; 24.00 mm", marks: 5, contextNote: "The scheme prints 'Award 4 @ 5 Marks' for (i)-(iv); (iv) has a card of its own." },
     { id: "r-2", kind: "point", verbatim: "Smallest diameter of the shaft; 24.97 mm", marks: 5 },
     { id: "r-3", kind: "point", verbatim: "Largest diameter of the hole; 24.05 mm", marks: 5 },
     ],
@@ -12768,7 +12768,7 @@ export const CARDS: SecCard[] = [
     questionText: "The test circuit shown uses crocodile clips for assembly. Name the three electronic components labelled A, B and C.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A - Battery", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "A - Battery", marks: 2, contextNote: "The paper sets this (c) as the alternative, after an OR, to \"(c) Name any three of the instruments shown\"." },
     { id: "r-2", kind: "point", verbatim: "B - Toggle switch", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "C - L.E.D.", marks: 2 },
     ],
@@ -12796,7 +12796,7 @@ export const CARDS: SecCard[] = [
     questionText: "The test circuit shown uses crocodile clips for assembly. Draw the electronic symbol for each of the electronic components A, B and C.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Battery:", marks: 2 },
+    { id: "r-1", kind: "criterion", verbatim: "Battery:", marks: 2, contextNote: "The paper sets this (c) as the alternative, after an OR, to \"(c) Name any three of the instruments shown\"." },
     { id: "r-2", kind: "criterion", verbatim: "Toggle switch:", marks: 2 },
     { id: "r-3", kind: "criterion", verbatim: "L.E.D.:", marks: 2 },
     ],
@@ -13346,7 +13346,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following metal properties: (i) Toughness, (ii) Melting point, (iii) Brittleness.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Toughness:‐ This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Toughness:‐ This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.","Melting point:‐ Melting point is the temperature at which a metal changes its state from solid to liquid.","Brittleness:‐ A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Toughness:‐ This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.", marks: 12, contextNote: "The paper sets this (d) and the robotics (d) beneath it either side of an OR.", group: {"claimMax":2,"perOption":6,"options":["Toughness:‐ This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.","Melting point:‐ Melting point is the temperature at which a metal changes its state from solid to liquid.","Brittleness:‐ A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials."]} },
     ],
   } as SecCard,
   {
@@ -13359,7 +13359,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain how robotic technology has changed each of the areas shown below: Parcel deliveries,",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Parcel deliveries Robotic technology improves sorting accuracy, reducing errors in shipping and ensuring parcels reach the correct destinations. Autonomous delivery robots and drones are also emerging to handle last‐mile deliveries, providing faster and more reliable service for customers.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Parcel deliveries Robotic technology improves sorting accuracy, reducing errors in shipping and ensuring parcels reach the correct destinations. Autonomous delivery robots and drones are also emerging to handle last‐mile deliveries, providing faster and more reliable service for customers.", marks: 4, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\"." },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q3di-crop",
@@ -13381,7 +13381,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain how robotic technology has changed each of the areas shown below: Medical procedures,",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Medical procedure Robotic‐assisted surgeries, such as those using the Da Vinci system, allow surgeons to perform highly complex procedures with enhanced precision, stability, and control. This minimizes damage to surrounding tissues, leads to smaller incisions, and shortens recovery times.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Medical procedure Robotic‐assisted surgeries, such as those using the Da Vinci system, allow surgeons to perform highly complex procedures with enhanced precision, stability, and control. This minimizes damage to surrounding tissues, leads to smaller incisions, and shortens recovery times.", marks: 4, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\"." },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q3dii-crop",
@@ -13403,7 +13403,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain how robotic technology has changed each of the areas shown below: Mass production.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mass production Industrial robots on production lines can work continuously without fatigue, significantly increasing production speed. Robots handle repetitive tasks such as assembly, welding, and painting with consistency, improving output and lowering production costs.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Mass production Industrial robots on production lines can work continuously without fatigue, significantly increasing production speed. Robots handle repetitive tasks such as assembly, welding, and painting with consistency, improving output and lowering production costs.", marks: 4, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following metal properties\"." },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q3diii-crop",
@@ -13657,7 +13657,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any two centre lathe processes used to manufacture the stunt bike pegs. OR Outline one advantage of using CAD in the design and manufacturing process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Knurling", marks: 3, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Knurling", marks: 3, contextNote: "The paper sets two (c)s either side of an OR; the scheme prints 'Award 2 @ 3 Marks' for the lathe processes and 'Award 1 @ 6 Marks' for the advantage of CAD. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Drilling", marks: 3, route: "a" },
     { id: "r-3", kind: "point", verbatim: "CAD software enables developers to work more quickly, cut production costs and decrease errors.", marks: 6, route: "b" },
     ],
@@ -13681,7 +13681,7 @@ export const CARDS: SecCard[] = [
     questionText: "Specify any two items of personal protective equipment (PPE) that should be worn when operating a centre lathe. OR Give two advantages of using CNC machines.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Wear goggles.", marks: 4, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Wear goggles.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR, the stunt bike pegs and CAD/CNC, and the scheme prices their (iii)s alike, \"Award 2 @ 4 Marks\". Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Protective clothing i.e. gloves", marks: 4, route: "a" },
     { id: "r-3", kind: "point", verbatim: "High precision", marks: 4, route: "b" },
     { id: "r-4", kind: "point", verbatim: "capable of producing highly complex parts.", marks: 4, route: "b" },
@@ -14125,7 +14125,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify the mandatory safety symbol shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The mandatory safety symbol shown requires safety goggles", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "The mandatory safety symbol shown requires safety goggles", marks: 6, contextNote: "The scheme's sentence breaks off after 'to be wo' on the page, so the answer is given up to 'goggles'." },
     ],
     questionFigure: {
           "candId": "engineering-2026-OL-paper-q1j-art",
@@ -14399,7 +14399,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following material properties: (i) Malleability, (ii) Elasticity, (iii) Tensile strength.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Malleability The ability of a material to be hammered and/or formed without breaking.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["Malleability The ability of a material to be hammered and/or formed without breaking.","Elasticity The ability of a material to deform under stress and return to its original shape and size when the force is removed.","Tensile strength The ability of a material to withstand being pulled apart or stretched."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Malleability The ability of a material to be hammered and/or formed without breaking.", marks: 12, contextNote: "The paper sets this (d) and the robotics (d) beneath it either side of an OR.", group: {"claimMax":2,"perOption":6,"options":["Malleability The ability of a material to be hammered and/or formed without breaking.","Elasticity The ability of a material to deform under stress and return to its original shape and size when the force is removed.","Tensile strength The ability of a material to withstand being pulled apart or stretched."]} },
     ],
   } as SecCard,
   {
@@ -14412,7 +14412,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer any two of the following: Describe two ways that robotic technology can improve workplace safety.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Remote controlled robots can perform inspections in high-voltage areas, eliminating the need for humans to be exposed to dangerous environments.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Remote controlled robots can perform inspections in high-voltage areas, eliminating the need for humans to be exposed to dangerous environments.", marks: 3, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following material properties\"." },
     { id: "r-2", kind: "point", verbatim: "Robots can be utilised to handle repetitive, heavy or strenuous lifting tasks that could cause muscle strains or back injuries.", marks: 3 },
     ],
   } as SecCard,
@@ -14426,7 +14426,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer any two of the following: Identify two manufacturing processes where robotic technology is used.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Industrial robots are used to perform arc welding, spot welding and laser welding.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Industrial robots are used to perform arc welding, spot welding and laser welding.", marks: 3, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following material properties\"." },
     { id: "r-2", kind: "point", verbatim: "Pick and place robots are used to identify, grab, and move items from one location to another, such as placing components onto circuit boards or sorting products into packages.", marks: 3 },
     ],
   } as SecCard,
@@ -14440,7 +14440,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer any two of the following: Explain the term pneumatics.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pneumatics refers to the use of compressed air to generate energy and create motion. Pneumatic technology has a wide range of uses from air brakes, to dental drills, exercise machines and jackhammers.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Pneumatics refers to the use of compressed air to generate energy and create motion. Pneumatic technology has a wide range of uses from air brakes, to dental drills, exercise machines and jackhammers.", marks: 6, contextNote: "The paper sets this (d) as the alternative, after an OR, to \"(d) Explain any two of the following material properties\"." },
     ],
   } as SecCard,
   {
@@ -14635,7 +14635,7 @@ export const CARDS: SecCard[] = [
     questionText: "The thumb screw shown opposite has been knurled on a centre lathe. Describe the process of knurling. OR Modern engineering workshops use a variety of CNC machines for manufacturing components. Explain the term CNC.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A knurling tool is fitted to the tool post and set at 90° to work. The center lathe is then turned on at a very slow speed. The knurling tool is moved into the workpiece. Two opposing rollers which press into the piece are moved parallel to the axis of the work producing a diamond pattern on the surface of the material. A lubricant should be used on the workpiece and rollers to help reduce friction.", marks: 6, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "A knurling tool is fitted to the tool post and set at 90° to work. The center lathe is then turned on at a very slow speed. The knurling tool is moved into the workpiece. Two opposing rollers which press into the piece are moved parallel to the axis of the work producing a diamond pattern on the surface of the material. A lubricant should be used on the workpiece and rollers to help reduce friction.", marks: 6, contextNote: "The paper sets two (c)s either side of an OR, the knurled thumb screw and CNC machines, and the scheme prices them alike: (i) 6, (ii) 3 + 3, (iii) 4 + 4. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "The term CNC refers to a Computer Numerically Controlled manufacturing machine. The CNC machine follows a computer program to manufacture pre-designed parts.", marks: 6, route: "b" },
     ],
     questionFigure: {
@@ -14658,7 +14658,7 @@ export const CARDS: SecCard[] = [
     questionText: "The thumb screw shown opposite has been knurled on a centre lathe. Name two other machining processes that can be performed on a centre lathe. OR Modern engineering workshops use a variety of CNC machines for manufacturing components. Name two CNC machines which may be found in a modern engineering workshop.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Drilling, using the tailstock.", marks: 3, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Drilling, using the tailstock.", marks: 3, contextNote: "The paper sets two (c)s either side of an OR, the knurled thumb screw and CNC machines, and the scheme prices them alike: (i) 6, (ii) 3 + 3, (iii) 4 + 4. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Parting off.", marks: 3, route: "a" },
     { id: "r-3", kind: "point", verbatim: "CNC lathe", marks: 3, route: "b" },
     { id: "r-4", kind: "point", verbatim: "3D printer.", marks: 3, route: "b" },
@@ -14683,7 +14683,7 @@ export const CARDS: SecCard[] = [
     questionText: "The thumb screw shown opposite has been knurled on a centre lathe. Identify any two integrated safety features found on a centre lathe. OR Modern engineering workshops use a variety of CNC machines for manufacturing components. State two advantages of using CNC machines to produce engineering components.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Interlocked chuck guard, a protective shield covering the rotating chuck. If the guard is lifted away from the chuck, an interlock switch automatically stops the rotating chuck.", marks: 4, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Interlocked chuck guard, a protective shield covering the rotating chuck. If the guard is lifted away from the chuck, an interlock switch automatically stops the rotating chuck.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR, the knurled thumb screw and CNC machines, and the scheme prices them alike: (i) 6, (ii) 3 + 3, (iii) 4 + 4. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Emergency stop button or foot pedal, a large easily accessible, mushroom shaped button or foot pedal designed to immediately stop the operation of the centre lathe.", marks: 4, route: "a" },
     { id: "r-3", kind: "point", verbatim: "CNC manufacturing machines can produce complex parts to a high degree of accuracy.", marks: 4, route: "b" },
     { id: "r-4", kind: "point", verbatim: "CNC machines can provide 24/7 operation with minimal labor and improved safety.", marks: 4, route: "b" },
@@ -14809,7 +14809,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any three of the instruments shown at A, B, C and D below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A Vernier height gauge", marks: 9, group: {"claimMax":3,"perOption":3,"options":["A Vernier height gauge","B Dividers","C Vernier callipers","D Vee block and Clamp"]} },
+    { id: "r-1", kind: "anyN", verbatim: "A Vernier height gauge", marks: 9, contextNote: "The paper sets two (c)s either side of an OR, measuring instruments and the 555 timer PCB; the scheme prices their parts differently ((i) 3 + 3 + 3 against 3 + 3, (ii) 5 against 6, (iii) 2 + 2 against 6), so each branch has its own cards.", group: {"claimMax":3,"perOption":3,"options":["A Vernier height gauge","B Dividers","C Vernier callipers","D Vee block and Clamp"]} },
     ],
     questionFigure: {
           "candId": "engineering-2026-OL-paper-q7c-crop",
@@ -14831,7 +14831,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain why it is important to zero a measuring tool before use.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "To ensure accuracy, consistency and reliability in measurements.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "To ensure accuracy, consistency and reliability in measurements.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR, measuring instruments and the 555 timer PCB; the scheme prices their parts differently ((i) 3 + 3 + 3 against 3 + 3, (ii) 5 against 6, (iii) 2 + 2 against 6), so each branch has its own cards." },
     ],
   } as SecCard,
   {
@@ -14844,7 +14844,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two advantages of a digital readout on measuring instruments.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Helps to eliminate reading errors.", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "Helps to eliminate reading errors.", marks: 2, contextNote: "The paper sets two (c)s either side of an OR, measuring instruments and the 555 timer PCB; the scheme prices their parts differently ((i) 3 + 3 + 3 against 3 + 3, (ii) 5 against 6, (iii) 2 + 2 against 6), so each branch has its own cards." },
     { id: "r-2", kind: "point", verbatim: "Speeds up the measuring process, easy to read in low light levels.", marks: 2 },
     ],
   } as SecCard,
@@ -14858,7 +14858,7 @@ export const CARDS: SecCard[] = [
     questionText: "The 555 Timer PCB (printed circuit board) shown, can be used in project work. Identify any two electronic components on the PCB shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Capacitor", marks: 6, group: {"claimMax":2,"perOption":3,"options":["Capacitor","Switch","Fixed resistor","LED","Diode","Transistor","Variable resistor","IC (Integrated Circuit)","Connector block"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Capacitor", marks: 6, contextNote: "The paper sets two (c)s either side of an OR, measuring instruments and the 555 timer PCB; the scheme prices their parts differently ((i) 3 + 3 + 3 against 3 + 3, (ii) 5 against 6, (iii) 2 + 2 against 6), so each branch has its own cards.", group: {"claimMax":2,"perOption":3,"options":["Capacitor","Switch","Fixed resistor","LED","Diode","Transistor","Variable resistor","IC (Integrated Circuit)","Connector block"]} },
     ],
     questionFigure: {
           "candId": "engineering-2026-OL-paper-q7c-or-crop",
@@ -14880,7 +14880,7 @@ export const CARDS: SecCard[] = [
     questionText: "The 555 Timer PCB (printed circuit board) shown, can be used in project work. Explain one benefit of using PCBs in project work.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Components are soldered directly to copper tracks eliminating loose wires, improving reliability of circuit construction and operation.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Components are soldered directly to copper tracks eliminating loose wires, improving reliability of circuit construction and operation.", marks: 6, contextNote: "The paper sets two (c)s either side of an OR, measuring instruments and the 555 timer PCB; the scheme prices their parts differently ((i) 3 + 3 + 3 against 3 + 3, (ii) 5 against 6, (iii) 2 + 2 against 6), so each branch has its own cards." },
     ],
     questionFigure: {
           "candId": "engineering-2026-OL-paper-q7c-or-crop",
@@ -14902,7 +14902,7 @@ export const CARDS: SecCard[] = [
     questionText: "The 555 Timer PCB (printed circuit board) shown, can be used in project work. State one other application of a timer circuit.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Timer circuits are used in microwaves to count down the cooking time.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Timer circuits are used in microwaves to count down the cooking time.", marks: 6, contextNote: "The paper sets two (c)s either side of an OR, measuring instruments and the 555 timer PCB; the scheme prices their parts differently ((i) 3 + 3 + 3 against 3 + 3, (ii) 5 against 6, (iii) 2 + 2 against 6), so each branch has its own cards." },
     ],
     questionFigure: {
           "candId": "engineering-2026-OL-paper-q7c-or-crop",

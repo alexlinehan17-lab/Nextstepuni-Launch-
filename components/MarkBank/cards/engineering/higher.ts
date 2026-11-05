@@ -344,7 +344,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain, with the aid of suitable diagrams, any three of the following types of movement used in an accelerometer:\n(i) Acceleration;\n(ii) Vibration;\n(iii) Shock;\n(iv) Tilt;\n(v) Rotation.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 3 + 3"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Acceleration An increase in velocity can be sensed.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Acceleration An increase in velocity can be sensed.", marks: null, contextNote: "The scheme numbers rotation '(iv)', the paper's (v)." },
     { id: "r-2", kind: "point", verbatim: "Vibration If the accelerometer is shaken, then a vibrating force is applied.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Shock A sudden movement, perhaps by falling or striking.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Tilt The accelerometer being moved at an angle", marks: null },
@@ -1007,7 +1007,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of suitable diagrams, the main features of one of the following:\n(i) Electro-slag welding;\n(ii) Oxyacetylene welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Electro-slag welding is automatic welding process used to join thicker plates(5). The gap between the plates to be welded can be quite large as it is filled with molten metal. Water cooled copper shoes(3) prevent this molten metal escaping from the joint. The carriage, shoes and electrode(1) all move together leaving the solidified weld(4) behind.", marks: 16, accepts: ["A fusion welding process, heat is concentrated on the joint edges until the metal melts and starts to flow. The molten metal fuses as the joining edges meet. Oxygen and acetylene gas are burned at the tip of the nozzle on the welding torch. Oxidation of the joint faces is prevented by an envelope made up of the products of combustion. A filler metal, in rod form, can be added."] },
+    { id: "r-1", kind: "alt", verbatim: "Electro-slag welding is automatic welding process used to join thicker plates(5). The gap between the plates to be welded can be quite large as it is filled with molten metal. Water cooled copper shoes(3) prevent this molten metal escaping from the joint. The carriage, shoes and electrode(1) all move together leaving the solidified weld(4) behind.", marks: 16, accepts: ["A fusion welding process, heat is concentrated on the joint edges until the metal melts and starts to flow. The molten metal fuses as the joining edges meet. Oxygen and acetylene gas are burned at the tip of the nozzle on the welding torch. Oxidation of the joint faces is prevented by an envelope made up of the products of combustion. A filler metal, in rod form, can be added."], contextNote: "The paper sets two (c)s either side of an OR: electro-slag or oxyacetylene welding, \"(Any one) 16\", answered on one card, and the robotics (c), whose (i), (ii) and (iii) each have a card of their own." },
     ],
     figure: {
           "candId": "engineering-2010-HL-scheme-q5c-sol",
@@ -1029,7 +1029,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the advantages of using robotic control for each of the following engineering applications: Spray painting vehicle body parts;",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Robotic control can be set to follow a similar pattern for each car part with ‘lead-through’ programming giving a consistent level of finish.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Robotic control can be set to follow a similar pattern for each car part with ‘lead-through’ programming giving a consistent level of finish.", marks: 6, contextNote: "The paper sets two (c)s either side of an OR: electro-slag or oxyacetylene welding, \"(Any one) 16\", answered on one card, and the robotics (c), whose (i), (ii) and (iii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2010-HL-paper-q5cor-crop",
@@ -1051,7 +1051,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the advantages of using robotic control for each of the following engineering applications: Testing gas pipes;",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In hazardous environments, robotic control can be employed from a remote distance using sensors and imaging equipment.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "In hazardous environments, robotic control can be employed from a remote distance using sensors and imaging equipment.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: electro-slag or oxyacetylene welding, \"(Any one) 16\", answered on one card, and the robotics (c), whose (i), (ii) and (iii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2010-HL-paper-q5cor-crop",
@@ -1073,7 +1073,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the advantages of using robotic control for each of the following engineering applications: Placement of electronic components on circuit boards.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Precise movements can be expected from robotic control ensuring a high level of accuracy and quality of work.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Precise movements can be expected from robotic control ensuring a high level of accuracy and quality of work.", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: electro-slag or oxyacetylene welding, \"(Any one) 16\", answered on one card, and the robotics (c), whose (i), (ii) and (iii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2010-HL-paper-q5cor-crop",
@@ -1328,7 +1328,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of suitable diagrams, the essential features of one of the following:\n(i) Magnetic chuck;\n(ii) Four-jaw chuck.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Traditionally associated with grinding machines, the magnetic chuck has been adapted for use with other machines. Used for holding ferromagnetic workpieces, a magnetic chuck consists of an accurately centered permanent magnet face. Electromagnets or permanent magnets are brought into contact with fixed ferrous plates, or pole pieces, contained within a housing. These pole pieces are usually flush with the housing surface. The part (workpiece) to be held forms the closing of the magnetic loop or path, onto those fixed plates, providing a secure anchor for the workpiece. There are two basic types of magnetic chucks now available (electromagnetic and permanent), but they come in a variety of sizes, shapes and modifications to suit many different applications. Electromagnetic chucks are charged by an electrical current while permanent-type magnetic chucks are based on permanent magnets. Both types can be turned on and off.", marks: 16, accepts: ["Four-jaw independent jaw chucks have significant advantages: • They can be used to hold irregular shaped parts. • With the use of a dial indicator, they can be used to centre parts with a great deal of accuracy. • Four-jaw chucks can be used to deliberately hold a part off centre. • They can clamp material in a tighter grip. This is a valuable asset when machining cams, crankshafts and other similar parts. Four-jaw chucks can be used to clamp externally or internally. The disadvantage of the four-jaw chuck is that the jaws must be individually set, adding considerable time to bar setups. Four-jaw chucks are also available as self-centring chucks and are designed to have all the jaws move in unison. The jaws are driven by a spiral scroll. Self centring chucks will not duplicate the accuracy that can be attained with jaws that are moved independently, but they will usually \"get the job done\", saving a machinist much time and effort. Its main purpose is to quickly centre and hold square or round materials but the material must be quite accurately round or square for all four jaws to grip properly."] },
+    { id: "r-1", kind: "alt", verbatim: "Traditionally associated with grinding machines, the magnetic chuck has been adapted for use with other machines. Used for holding ferromagnetic workpieces, a magnetic chuck consists of an accurately centered permanent magnet face. Electromagnets or permanent magnets are brought into contact with fixed ferrous plates, or pole pieces, contained within a housing. These pole pieces are usually flush with the housing surface. The part (workpiece) to be held forms the closing of the magnetic loop or path, onto those fixed plates, providing a secure anchor for the workpiece. There are two basic types of magnetic chucks now available (electromagnetic and permanent), but they come in a variety of sizes, shapes and modifications to suit many different applications. Electromagnetic chucks are charged by an electrical current while permanent-type magnetic chucks are based on permanent magnets. Both types can be turned on and off.", marks: 16, accepts: ["Four-jaw independent jaw chucks have significant advantages: • They can be used to hold irregular shaped parts. • With the use of a dial indicator, they can be used to centre parts with a great deal of accuracy. • Four-jaw chucks can be used to deliberately hold a part off centre. • They can clamp material in a tighter grip. This is a valuable asset when machining cams, crankshafts and other similar parts. Four-jaw chucks can be used to clamp externally or internally. The disadvantage of the four-jaw chuck is that the jaws must be individually set, adding considerable time to bar setups. Four-jaw chucks are also available as self-centring chucks and are designed to have all the jaws move in unison. The jaws are driven by a spiral scroll. Self centring chucks will not duplicate the accuracy that can be attained with jaws that are moved independently, but they will usually \"get the job done\", saving a machinist much time and effort. Its main purpose is to quickly centre and hold square or round materials but the material must be quite accurately round or square for all four jaws to grip properly."], contextNote: "The paper sets two (c)s either side of an OR: the magnetic or four-jaw chuck, \"Any one @ 16\", answered on one card, and the CNC (c), whose (i) and (ii) each have a card of their own." },
     ],
     figure: {
           "candId": "engineering-2010-HL-scheme-q7c-sol",
@@ -1350,7 +1350,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the term CNC.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "CNC – Computer Numerical Control uses numbers and values to compile machining programmes.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "CNC – Computer Numerical Control uses numbers and values to compile machining programmes.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR: the magnetic or four-jaw chuck, \"Any one @ 16\", answered on one card, and the CNC (c), whose (i) and (ii) each have a card of their own." },
     ],
   } as SecCard,
   {
@@ -1363,7 +1363,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the use of CNC technologies with reference to each of the following:\nEfficiency\nAccuracy\nCost.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Efficiency: Industrial machines are robust and will compile and run programmes in the fastest ways possible with minimal ‘down-time’.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Efficiency: Industrial machines are robust and will compile and run programmes in the fastest ways possible with minimal ‘down-time’.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR: the magnetic or four-jaw chuck, \"Any one @ 16\", answered on one card, and the CNC (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Accuracy: CNC will produce items of the same size consistently.", marks: 4 },
     { id: "r-3", kind: "point", verbatim: "Cost: The initial price of machines and training is high. It may not be cost- effective to produce once-off products by CNC but significant savings will arise as the volume of products increases.", marks: 4 },
     ],
@@ -1414,7 +1414,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of suitable diagrams, a mechanism to control the vertical movement of the dental chair shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The hydraulic ram is positioned under the chair, as shown in the diagram, and is fixed to the base of the chair to raise the seat. The hydraulic mechanism has been chosen as it provides a strong, smooth, accurate and reasonably silent movement. As the person in the chair will not determine the height of the chair, the control panel can be positioned either: On the back of the seat as shown or On a separate pedestal close to the chair. This allows the dentist to alter the chair height as required.", marks: 16 },
+    { id: "r-1", kind: "point", verbatim: "The hydraulic ram is positioned under the chair, as shown in the diagram, and is fixed to the base of the chair to raise the seat. The hydraulic mechanism has been chosen as it provides a strong, smooth, accurate and reasonably silent movement. As the person in the chair will not determine the height of the chair, the control panel can be positioned either: On the back of the seat as shown or On a separate pedestal close to the chair. This allows the dentist to alter the chair height as required.", marks: 16, contextNote: "The scheme prints 'There are a variety of ways that the chair could be raised and lowered. Suggested solution is based on the principle of the use of a hydraulic ram.' The paper sets two (c)s either side of an OR: the dental chair's mechanism, \"16\", answered on one card, and the parking-light circuit (c), whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2010-HL-paper-q8c-crop",
@@ -1445,7 +1445,7 @@ export const CARDS: SecCard[] = [
     questionText: "The circuit shown is used to automatically turn on car parking lights: Identify the electronic components A, B, C and D.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A – Light dependent resistor", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "A – Light dependent resistor", marks: 2, contextNote: "The paper sets two (c)s either side of an OR: the dental chair's mechanism, \"16\", answered on one card, and the parking-light circuit (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "B – Variable resistor", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "C – Bulb", marks: 2 },
     { id: "r-4", kind: "point", verbatim: "D – Relay.", marks: 2 },
@@ -1470,7 +1470,7 @@ export const CARDS: SecCard[] = [
     questionText: "The circuit shown is used to automatically turn on car parking lights: Describe two functions of component D in this circuit.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The relay acts as a switch when the transistor is on.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "The relay acts as a switch when the transistor is on.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR: the dental chair's mechanism, \"16\", answered on one card, and the parking-light circuit (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "It allows the 12V circuit to activate from a 9V sensing circuit.", marks: 4 },
     ],
     questionFigure: {
@@ -2543,7 +2543,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a suitable diagram, the main features of one of the following:\n(i) Seam resistance welding;\n(ii) Submerged arc welding (SAW).",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Seam resistance welding: A form of resistance welding that uses copper roller electrodes to provide a continuous run of overlapping spot welds as the current is activated at set intervals. One of the electrodes may be driven by an electric motor. The workpiece is moved between the rollers and pulses of current are supplied. Each pulse is set to last long enough to produce a spot weld. The time interval is controlled so that these spots overlap by approx. 40% of their length along the seam.", marks: 16, accepts: ["In submerged arc welding, a bare wire electrode is used. It is fed automatically from a spool and generates an electric arc to heat the metal. The flux, in powder form, is fed from a hopper to completely cover the joint and the tip of the electrode. The arc creates the heat to melt the joint, flux and electrode. A slag is formed to provide a protective coating for the weld. The excess flux powder can be collected and used again. Submerged arc welding is a fully automated process. Applications: used for large scale straight line welds such as steel reinforcing beams, shipbuilding and bridge construction."] },
+    { id: "r-1", kind: "alt", verbatim: "Seam resistance welding: A form of resistance welding that uses copper roller electrodes to provide a continuous run of overlapping spot welds as the current is activated at set intervals. One of the electrodes may be driven by an electric motor. The workpiece is moved between the rollers and pulses of current are supplied. Each pulse is set to last long enough to produce a spot weld. The time interval is controlled so that these spots overlap by approx. 40% of their length along the seam.", marks: 16, accepts: ["In submerged arc welding, a bare wire electrode is used. It is fed automatically from a spool and generates an electric arc to heat the metal. The flux, in powder form, is fed from a hopper to completely cover the joint and the tip of the electrode. The arc creates the heat to melt the joint, flux and electrode. A slag is formed to provide a protective coating for the weld. The excess flux powder can be collected and used again. Submerged arc welding is a fully automated process. Applications: used for large scale straight line welds such as steel reinforcing beams, shipbuilding and bridge construction."], contextNote: "The paper sets two (c)s either side of an OR: seam resistance or submerged arc welding, \"(Any one) 16\", answered on one card, and the robotics (c), whose (i) and (ii) each have a card of their own." },
     ],
     figure: {
           "candId": "engineering-2011-HL-scheme-q5c-sol",
@@ -2565,7 +2565,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the robotic control terms:\nwork envelope and\ndegree of freedom.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Work envelope: The volume of space in which a robot can operate is called the ‘Work Envelope’.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Work envelope: The volume of space in which a robot can operate is called the ‘Work Envelope’.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR: seam resistance or submerged arc welding, \"(Any one) 16\", answered on one card, and the robotics (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Degree of freedom: A description of the ways in which a robot arm can move. A single joint will provide one degree of freedom. To provide a variety of degrees of freedom, different robotic joints can be used such as rotary (elbow, waist, etc.) or linear joints (sliding, etc.). The simple Carthesian robot shown has three degrees of freedom (x, y and z).", marks: 4 },
     ],
     questionFigure: {
@@ -2597,7 +2597,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline one advantage of the use of stepper motors rather than DC motors in robotic control.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Stepper motors can be precisely controlled to move in small increments, they may not ‘run-on’ when switched, high torque value, reliability, etc.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "Stepper motors can be precisely controlled to move in small increments, they may not ‘run-on’ when switched, high torque value, reliability, etc.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR: seam resistance or submerged arc welding, \"(Any one) 16\", answered on one card, and the robotics (c), whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2011-HL-paper-q5cor-crop",
@@ -2782,7 +2782,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of diagrams, a suitable cutting operation for each of the milling cutters shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Slot drill: The slot drill has cutting edges on the end and along the helical sides, this allows this cutter to cut into the metal like a drill as well as cut grooves and slots.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "Slot drill: The slot drill has cutting edges on the end and along the helical sides, this allows this cutter to cut into the metal like a drill as well as cut grooves and slots.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR: the two milling cutters, \"8 + 8\" and both asked, answered on one card, and the CNC safety (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Dovetail cutter: These cutters are used to cut dovetail profiles on slide-ways for machine parts.", marks: 8 },
     ],
     questionFigure: {
@@ -2814,7 +2814,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe three safety features integrated into the design of a CNC lathe or a CNC milling machine.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4 + 4"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Machining area is covered with a large acrylic screen.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Machining area is covered with a large acrylic screen.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the two milling cutters, \"8 + 8\" and both asked, answered on one card, and the CNC safety (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Emergency stop button is located prominently on the front of the machine.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Interlocking switches prevent the machine operating without guards in place.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Programme will alert to potential safety issues such as excessive cutting depth or feed rate.", marks: null },
@@ -2866,7 +2866,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a suitable diagram, a mechanism to control the steering of the go-kart shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "There are a variety of ways that go-karts can be steered including linkages. The steering wheel is connected to the pinion wheel by a column. The wheels are connected to the frame by an axle. The steering rack and tie bars form a linkage that keeps the wheels straight until the pinion drives the rack and moves the linkage to the left or right. The wheels can then turn in the same direction allowing the wheels to steer.", marks: 16 },
+    { id: "r-1", kind: "point", verbatim: "There are a variety of ways that go-karts can be steered including linkages. The steering wheel is connected to the pinion wheel by a column. The wheels are connected to the frame by an axle. The steering rack and tie bars form a linkage that keeps the wheels straight until the pinion drives the rack and moves the linkage to the left or right. The wheels can then turn in the same direction allowing the wheels to steer.", marks: 16, contextNote: "The scheme prints 'Suggested solution is based on the principle of the use of a rack and pinion steering, other viable solutions are acceptable.' The paper sets two (c)s either side of an OR: the go-kart's steering, \"16\", answered on one card, and the relay (c), whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2011-HL-paper-q8c-crop",
@@ -2897,7 +2897,7 @@ export const CARDS: SecCard[] = [
     questionText: "The electronic component shown is commonly used as a switching device: Identify the component shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Relay.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Relay.", marks: 6, contextNote: "The paper sets two (c)s either side of an OR: the go-kart's steering, \"16\", answered on one card, and the relay (c), whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2011-HL-paper-q8cor-crop",
@@ -2919,7 +2919,7 @@ export const CARDS: SecCard[] = [
     questionText: "The electronic component shown is commonly used as a switching device: Describe the operation of this component, making reference to the coil, armature and contacts.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The relay acts as a switching interface to allow low voltage circuits to drive much higher voltage circuits. When a small current is passed through the coil, it has a magnetising effect on the soft iron plate. As it is drawn to the coil, the linkage pivots and the contacts are closed. These contacts can be used to Relays are widely used to control many devices including higher voltage lights and motors.", marks: 10 },
+    { id: "r-1", kind: "point", verbatim: "The relay acts as a switching interface to allow low voltage circuits to drive much higher voltage circuits. When a small current is passed through the coil, it has a magnetising effect on the soft iron plate. As it is drawn to the coil, the linkage pivots and the contacts are closed. These contacts can be used to Relays are widely used to control many devices including higher voltage lights and motors.", marks: 10, contextNote: "The paper sets two (c)s either side of an OR: the go-kart's steering, \"16\", answered on one card, and the relay (c), whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2011-HL-paper-q8cor-crop",
@@ -3301,7 +3301,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a suitable diagram, one method used to secure a nylon gearwheel to the shaft of the DC motor shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The gear wheel is located on the motor shaft and secured with a slotted grub screw.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "The gear wheel is located on the motor shaft and secured with a slotted grub screw.", marks: 5, contextNote: "The scheme prints '5' under 'suggested solution:'." },
     ],
     questionFigure: {
           "candId": "engineering-2012-HL-paper-q1m-art",
@@ -3581,7 +3581,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of suitable diagrams, one non-destructive test used to check for internal faults in welded joints.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "X-ray / Radiography testing: Radiation from an x-ray tube is passed through the weld. If no defects are present, the amount of absorption is uniform across the area exposed to the x-ray beam. If a defect is present in the weld, a smaller amount of rays is absorbed giving a variation in the intensity of the emergent beam. This can be detected by placing a photographic film on the side of the material opposite the radiation source. On a negative film, the defect shows as a dark spot.", marks: 10 },
+    { id: "r-1", kind: "point", verbatim: "X-ray / Radiography testing: Radiation from an x-ray tube is passed through the weld. If no defects are present, the amount of absorption is uniform across the area exposed to the x-ray beam. If a defect is present in the weld, a smaller amount of rays is absorbed giving a variation in the intensity of the emergent beam. This can be detected by placing a photographic film on the side of the material opposite the radiation source. On a negative film, the defect shows as a dark spot.", marks: 10, contextNote: "The scheme adds 'Ultrasonic testing is another suitable method to check for internal faults in welded joints.'" },
     ],
     figure: {
           "candId": "engineering-2012-HL-scheme-q2cii-sol",
@@ -3719,7 +3719,7 @@ export const CARDS: SecCard[] = [
     questionText: "The table shows the solidification temperatures for various alloys of Cadmium and Bismuth. Label and describe the main features of the diagram;",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Liquid: the two metals are soluble in each other in the liquid state.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Liquid: the two metals are soluble in each other in the liquid state.", marks: null, contextNote: "The scheme prints '5 + 5' for the part, without saying which marks the labels earn and which the descriptions." },
     { id: "r-2", kind: "point", verbatim: "Liquidus line: the change from fully liquid to pasty state. Above the liquidus line, the alloy is liquid. This is the beginning of solidification.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Liquid and bismuth: solid bismuth and liquid.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Liquid and cadmium: solid cadmium and liquid.", marks: null },
@@ -3896,7 +3896,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of suitable diagrams, the main features of one of the following:\n(i) Tungsten Inert Gas (TIG) welding;\n(ii) Manual metal arc (MMA) welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Tungsten Inert Gas (TIG) welding: An arc is formed between the non-consumable electrode and the metal being welded. The inert gas shielded arc is used to flux the joint, Argon is often used to prevent oxygen getting to the joint area. A filler metal is added manually to the weld pool when necessary. A high frequency generator provides a path for the welding current.", marks: 16, accepts: ["Manual metal arc (MMA) welding: Electricity is passed through an electrode which jumps between the electrode and the work piece. This causes an arc which produces great heat melting the consumable electrode and the work piece causing the edges to fuse together. The weld pool is protected from oxidation by the gasses produced by melting the chemicals on the electrode coating. This wire electrode also acts as a filler material to fill the gap between the two parts being joined. A slag is formed which protects the weld area from oxidation and minimises cracking of the weld as it allows the joint cool slowly. MMA welding is made more effective with the use of an adjustable transformer to allow for different thicknesses of steel to be welded. MMA welding has many operational uses such as repair work on construction steel."] },
+    { id: "r-1", kind: "alt", verbatim: "Tungsten Inert Gas (TIG) welding: An arc is formed between the non-consumable electrode and the metal being welded. The inert gas shielded arc is used to flux the joint, Argon is often used to prevent oxygen getting to the joint area. A filler metal is added manually to the weld pool when necessary. A high frequency generator provides a path for the welding current.", marks: 16, accepts: ["Manual metal arc (MMA) welding: Electricity is passed through an electrode which jumps between the electrode and the work piece. This causes an arc which produces great heat melting the consumable electrode and the work piece causing the edges to fuse together. The weld pool is protected from oxidation by the gasses produced by melting the chemicals on the electrode coating. This wire electrode also acts as a filler material to fill the gap between the two parts being joined. A slag is formed which protects the weld area from oxidation and minimises cracking of the weld as it allows the joint cool slowly. MMA welding is made more effective with the use of an adjustable transformer to allow for different thicknesses of steel to be welded. MMA welding has many operational uses such as repair work on construction steel."], contextNote: "The paper sets two (c)s either side of an OR: TIG or MMA welding, \"(Any one) 16\", answered on one card, and the robot spot-welding (c), whose (i) and (ii) each have a card of their own." },
     ],
     figure: {
           "candId": "engineering-2012-HL-scheme-q5c-sol",
@@ -3918,7 +3918,7 @@ export const CARDS: SecCard[] = [
     questionText: "Resistance spot welding is extensively used in robot controlled engineering manufacture. Explain why resistance spot welding is suitable for robotic control.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Relatively easy to programme and control movements.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Relatively easy to programme and control movements.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: TIG or MMA welding, \"(Any one) 16\", answered on one card, and the robot spot-welding (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Equipment can be light and portable.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Settings can be preset and rarely need adjustment.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Non consumable electrodes.", marks: null },
@@ -3943,7 +3943,7 @@ export const CARDS: SecCard[] = [
     questionText: "Resistance spot welding is extensively used in robot controlled engineering manufacture. Identify two other industrial processes where robotic control is widely used.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Painting,", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Painting,", marks: null, contextNote: "The paper sets two (c)s either side of an OR: TIG or MMA welding, \"(Any one) 16\", answered on one card, and the robot spot-welding (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "circuit assembly,", marks: null },
     { id: "r-3", kind: "point", verbatim: "fabrication,", marks: null },
     { id: "r-4", kind: "point", verbatim: "placing of parts,", marks: null },
@@ -4042,7 +4042,7 @@ export const CARDS: SecCard[] = [
     questionText: "Distinguish between thermoplastics and thermoset plastics using each of the following headings: Properties.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Thermoplastics — Low melting point", marks: 2, accepts: ["Thermoplastics — Allows for easy moulding","Thermoplastics — Easily disrupted by heat","Thermoplastics — Low tensile strength","Thermoplastics — Branched structures have higher tensile strength than linear","Thermoplastics — Ideal for recycling"] },
+    { id: "r-1", kind: "alt", verbatim: "Thermoplastics — Low melting point", marks: 2, accepts: ["Thermoplastics — Allows for easy moulding","Thermoplastics — Easily disrupted by heat","Thermoplastics — Low tensile strength","Thermoplastics — Branched structures have higher tensile strength than linear","Thermoplastics — Ideal for recycling"], contextNote: "The scheme prints '2 + 2' under the two columns of properties, read here as one property from each column, 2 each." },
     { id: "r-2", kind: "alt", verbatim: "Thermosetting plastics — High melting point", marks: 2, accepts: ["Thermosetting plastics — High tensile strength","Thermosetting plastics — Good thermal insulation","Thermosetting plastics — Can withstand high temperatures without losing rigidity","Thermosetting plastics — Stiff and less flexible"] },
     ],
   } as SecCard,
@@ -4194,7 +4194,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline, with the aid of diagrams, the essential differences between the machining terms in each of the following:\n(i) Loading and glazing of grinding wheels;\n(ii) Forming and generating on the lathe.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Loading: a grinding wheel becomes loaded with small particles when grinding debris becomes trapped in the space between the abrasive grains and the wheel. This will cause overheating of the work piece.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Loading: a grinding wheel becomes loaded with small particles when grinding debris becomes trapped in the space between the abrasive grains and the wheel. This will cause overheating of the work piece.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR: loading and glazing, and forming and generating, \"4 + 4\" each and both asked, answered on one card, and the computer technology (c), whose (i)-(iii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Glazing: the grinding wheel has a shiny appearance as the abrasive particles have lost their edge and failed to break away from the wheel. The grinding wheel not cut effectively. These faults are caused by inappropriate choice of grinding wheel for the material being ground.", marks: 4 },
     { id: "r-3", kind: "point", verbatim: "Forming is when the surface produced is a copy of the tool producing it. Contour work and screw cutting are examples of forming.", marks: 4 },
     { id: "r-4", kind: "point", verbatim: "Generating moves the tool in various directions until the required surface is machined. Facing and taper turning on the lathe are examples of machining by generation.", marks: 4 },
@@ -4210,7 +4210,7 @@ export const CARDS: SecCard[] = [
     questionText: "Industrial engineering was one of the earliest areas to use computer technology. Describe any one use of computer technology in each of the following areas: Research;",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Research: use of the internet to gather relevant information, forums to seek expertise and advice", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Research: use of the internet to gather relevant information, forums to seek expertise and advice", marks: 6, contextNote: "The paper sets two (c)s either side of an OR: loading and glazing, and forming and generating, \"4 + 4\" each and both asked, answered on one card, and the computer technology (c), whose (i)-(iii) each have a card of their own." },
     ],
   } as SecCard,
   {
@@ -4223,7 +4223,7 @@ export const CARDS: SecCard[] = [
     questionText: "Industrial engineering was one of the earliest areas to use computer technology. Describe any one use of computer technology in each of the following areas: Product design;",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Product design: computer simulation of potential products in use, production of computer drawings, ability to produce realistic drawings and manipulate solid 3D models", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Product design: computer simulation of potential products in use, production of computer drawings, ability to produce realistic drawings and manipulate solid 3D models", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: loading and glazing, and forming and generating, \"4 + 4\" each and both asked, answered on one card, and the computer technology (c), whose (i)-(iii) each have a card of their own." },
     ],
   } as SecCard,
   {
@@ -4236,7 +4236,7 @@ export const CARDS: SecCard[] = [
     questionText: "Industrial engineering was one of the earliest areas to use computer technology. Describe any one use of computer technology in each of the following areas: Production techniques.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Production techniques: use of CNC machines to mass produce objects very efficiently", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Production techniques: use of CNC machines to mass produce objects very efficiently", marks: 5, contextNote: "The paper sets two (c)s either side of an OR: loading and glazing, and forming and generating, \"4 + 4\" each and both asked, answered on one card, and the computer technology (c), whose (i)-(iii) each have a card of their own." },
     ],
   } as SecCard,
   {
@@ -4294,7 +4294,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of suitable diagrams, one method of providing independent drive to each wheel of the all-terrain surveillance vehicle shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "There are a variety of ways that of providing independent drive to each wheel of an all-terrain vehicle. This all terrain surveillance vehicle has the facility to drive each wheel separately as each wheel has a motor control system. These motors are centrally controlled to turn on each motor when required.", marks: 16 },
+    { id: "r-1", kind: "point", verbatim: "There are a variety of ways that of providing independent drive to each wheel of an all-terrain vehicle. This all terrain surveillance vehicle has the facility to drive each wheel separately as each wheel has a motor control system. These motors are centrally controlled to turn on each motor when required.", marks: 16, contextNote: "The scheme prints 'Suggested solution is based on the principle of the use of a separate drive to each wheel, other viable solutions are acceptable.' The paper sets two (c)s either side of an OR: the all-terrain vehicle's drive, \"16\", answered on one card, and the IC microchip (c), whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2012-HL-paper-q8c-crop",
@@ -4325,7 +4325,7 @@ export const CARDS: SecCard[] = [
     questionText: "Integrated circuit (IC) microchips are used in many electrical appliances. Identify one semi-conductive material used in the manufacture of integrated circuits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Silicon.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Silicon.", marks: 6, contextNote: "The paper sets two (c)s either side of an OR: the all-terrain vehicle's drive, \"16\", answered on one card, and the IC microchip (c), whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2012-HL-paper-q8ci-art",
@@ -4347,7 +4347,7 @@ export const CARDS: SecCard[] = [
     questionText: "Integrated circuit (IC) microchips are used in many electrical appliances. Outline two advantages of using IC microchips rather than building circuits using traditional components.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + 5"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "IC’s allow more complex circuits to be constructed.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "IC’s allow more complex circuits to be constructed.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the all-terrain vehicle's drive, \"16\", answered on one card, and the IC microchip (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Circuits are more likely to be reliable as digital principles are encouraged.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Circuits will be more reliable.", marks: null },
     ],
@@ -5425,7 +5425,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of suitable diagrams, the main features of one of the following:\n(i) Metal inert gas (MIG) welding;\n(ii) Electro-slag welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "MIG welding: A semi-automatic process. A consumable bare wire electrode is fed continuously into the weld pool area through the welding torch. An inert gas, such as Argon, creates a protective shield around the weld pool giving a fluxing action. The feed rate and flow rate of the gas are set by the operator. This allows the operator to guide the torch along the weld once the arc is generated between the electrode and the work. MIG welding does not produce a slag on the weld.", marks: 16, accepts: ["Electro-slag welding is an automatic welding process used to join thicker plates(5). The gap between the plates to be welded can be quite large as it is filled with molten metal. Water cooled copper shoes(3) prevent this molten metal escaping from the joint. The carriage, shoes and electrode(1) all move together leaving the solidified weld(4) behind."] },
+    { id: "r-1", kind: "alt", verbatim: "MIG welding: A semi-automatic process. A consumable bare wire electrode is fed continuously into the weld pool area through the welding torch. An inert gas, such as Argon, creates a protective shield around the weld pool giving a fluxing action. The feed rate and flow rate of the gas are set by the operator. This allows the operator to guide the torch along the weld once the arc is generated between the electrode and the work. MIG welding does not produce a slag on the weld.", marks: 16, accepts: ["Electro-slag welding is an automatic welding process used to join thicker plates(5). The gap between the plates to be welded can be quite large as it is filled with molten metal. Water cooled copper shoes(3) prevent this molten metal escaping from the joint. The carriage, shoes and electrode(1) all move together leaving the solidified weld(4) behind."], contextNote: "The paper sets two (c)s either side of an OR: the MIG and electro-slag (c), \"(Any one) 16\", answered on one card, and the robotic welding (c), whose (i) and (ii) each have a card of their own." },
     ],
     figure: {
           "candId": "engineering-2013-HL-scheme-q5c-sol",
@@ -5447,7 +5447,7 @@ export const CARDS: SecCard[] = [
     questionText: "The use of robotic welding has increased steadily over the past 25 years and now accounts for approximately 20% of all industrial robotic applications. Name two types of welding suitable for robotic control.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Seam welding,", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Seam welding,", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the MIG and electro-slag (c), \"(Any one) 16\", answered on one card, and the robotic welding (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "spot welding,", marks: null },
     { id: "r-3", kind: "point", verbatim: "projection welding,", marks: null },
     { id: "r-4", kind: "point", verbatim: "MIG,", marks: null },
@@ -5473,7 +5473,7 @@ export const CARDS: SecCard[] = [
     questionText: "The use of robotic welding has increased steadily over the past 25 years and now accounts for approximately 20% of all industrial robotic applications. Identify two other industrial processes that can be controlled by robotic techniques.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Painting,", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Painting,", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the MIG and electro-slag (c), \"(Any one) 16\", answered on one card, and the robotic welding (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "circuit assembly,", marks: null },
     { id: "r-3", kind: "point", verbatim: "fabrication,", marks: null },
     { id: "r-4", kind: "point", verbatim: "placing of parts,", marks: null },
@@ -5534,7 +5534,7 @@ export const CARDS: SecCard[] = [
     questionText: "Two internal polymer structures X and Y are represented below. With reference to the two polymer structures at X and Y: Name each structure;",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A - linear structure", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "A - linear structure", marks: 2, contextNote: "The scheme answers under A and B; the paper prints the two structures as X and Y, the linear one first." },
     { id: "r-2", kind: "point", verbatim: "B - cross-linked structure", marks: 2 },
     ],
     questionFigure: {
@@ -5557,7 +5557,7 @@ export const CARDS: SecCard[] = [
     questionText: "Two internal polymer structures X and Y are represented below. With reference to the two polymer structures at X and Y: Identify one polymer associated with each structure;",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A - thermoplastics such as polyethylene, PVC", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "A - thermoplastics such as polyethylene, PVC", marks: 2, contextNote: "The scheme answers under A and B; the paper prints the two structures as X and Y, the linear one first." },
     { id: "r-2", kind: "point", verbatim: "B - thermosets such as epoxy resins", marks: 2 },
     ],
     questionFigure: {
@@ -5580,7 +5580,7 @@ export const CARDS: SecCard[] = [
     questionText: "Two internal polymer structures X and Y are represented below. With reference to the two polymer structures at X and Y: State two properties associated with each structure.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A - can be heated and reheated into shape, low melting point, allows for easy moulding, easily disrupted by heat, low tensile strength, ideal for recycling", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "A - can be heated and reheated into shape, low melting point, allows for easy moulding, easily disrupted by heat, low tensile strength, ideal for recycling", marks: 4, contextNote: "The scheme answers under A and B; the paper prints the two structures as X and Y, the linear one first." },
     { id: "r-2", kind: "point", verbatim: "B - will not recycle, high melting point, high tensile strength, good thermal insulation, can withstand high temperatures without loosing rigidity, stiff and less flexible.", marks: 4 },
     ],
     questionFigure: {
@@ -5735,7 +5735,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of suitable diagrams, the differences between gang milling and straddle milling.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Gang milling: This is when milling cutters are mounted side by side on the arbour. This may be used to mill a complex surface in one pass. The cutting profile is generated by the size and shape of the cutter.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Gang milling: This is when milling cutters are mounted side by side on the arbour. This may be used to mill a complex surface in one pass. The cutting profile is generated by the size and shape of the cutter.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: gang and straddle milling, \"16\", answered on one card, and the CNC (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Straddle milling: The milling cutters are mounted on the arbour and are separated by spacing cutters. It is used to mill two surfaces parallel to each other.", marks: null },
     ],
     figure: {
@@ -5794,7 +5794,7 @@ export const CARDS: SecCard[] = [
     questionText: "The computer-controlled machine shown moves the cutter in the directions shown. Describe clearly, with the aid of diagrams, suitable drive mechanisms to control the cutter movement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The drive to move the cutter left and right into position and to raise and lower the cutter can be driven by rack and pinion. As the pinion rotates, the rack is driven in a linear movement. The speed of movement is determined by the rotating speed of the pinion. The rack can be driven in both directions by reversing the pinion.", marks: 16 },
+    { id: "r-1", kind: "point", verbatim: "The drive to move the cutter left and right into position and to raise and lower the cutter can be driven by rack and pinion. As the pinion rotates, the rack is driven in a linear movement. The speed of movement is determined by the rotating speed of the pinion. The rack can be driven in both directions by reversing the pinion.", marks: 16, contextNote: "The scheme prints 'Suggested solution - other viable solutions are acceptable.' The paper sets two (c)s either side of an OR: the computer-controlled machine's drives, \"16\", answered on one card, and the IC circuit (c), whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2013-HL-paper-q8c-crop",
@@ -5825,7 +5825,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name and describe the functions of component A in this circuit.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The relay acts as a switch when the transistor is on.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "The relay acts as a switch when the transistor is on.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR: the computer-controlled machine's drives, \"16\", answered on one card, and the IC circuit (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "It allows the 120V circuit to activate from a 12V sensing circuit.", marks: 4 },
     ],
     questionFigure: {
@@ -6141,7 +6141,7 @@ export const CARDS: SecCard[] = [
     questionText: "The screen of the portable computer tablet shown is made from glass. Outline one advantage and one disadvantage of using glass screens.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Advantages: durable surface, less prone to scratching than alternatives, widely available, transparent, etc.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Advantages: durable surface, less prone to scratching than alternatives, widely available, transparent, etc.", marks: 3, contextNote: "The scheme prints '3 + 2' under its advantages and disadvantages, in that order." },
     { id: "r-2", kind: "point", verbatim: "Disadvantages: brittle, heavier than alternatives, need to be thicker than plastics, etc.", marks: 2 },
     ],
     questionFigure: {
@@ -6193,7 +6193,7 @@ export const CARDS: SecCard[] = [
     questionText: "Discuss the contribution that any one of the following has made to technology: (i) Jack Kilby (ii) Marie Curie (iii) John Dunlop.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Jack Kilby Jack Kilby (1923 – 2005) was an American electrical engineer who took part in the realization of the first integrated circuit while working at Texas Instruments in 1958. He was awarded the Nobel Prize in physics in 2000. He is also the inventor of the handheld calculator and the thermal printer.", marks: 5, accepts: ["Marie Curie (1867 – 1934) was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity and discovered two elements - polonium and radium. She was the first woman to win a Nobel Prize and the only person to win in multiple sciences.","John Dunlop. John Dunlop (1840 – 1921) was a Scottish inventor who moved to Northern Ireland. He was one of the founders of a rubber company and is recognised for the development of the pneumatic tyre."] },
+    { id: "r-1", kind: "alt", verbatim: "Jack Kilby Jack Kilby (1923 – 2005) was an American electrical engineer who took part in the realization of the first integrated circuit while working at Texas Instruments in 1958. He was awarded the Nobel Prize in physics in 2000. He is also the inventor of the handheld calculator and the thermal printer.", marks: 5, accepts: ["Marie Curie (1867 – 1934) was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity and discovered two elements - polonium and radium. She was the first woman to win a Nobel Prize and the only person to win in multiple sciences.","John Dunlop. John Dunlop (1840 – 1921) was a Scottish inventor who moved to Northern Ireland. He was one of the founders of a rubber company and is recognised for the development of the pneumatic tyre."], contextNote: "The scheme's note on Marie Curie is shown as printed." },
     ],
     figure: {
           "candId": "engineering-2014-HL-scheme-q1h-sol",
@@ -6990,7 +6990,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe each of the following: The composition and uses for each of the three principal flames in oxy-acetylene welding. OR Outline two reasons why robotic welding is suitable for large scale industrial production.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Neutral flame: A balanced proportion of oxygen and acetylene. Maximum combustion as all carbon from the acetylene is used. Has a working temperature of up to 3300°C. The most extensively used flame for oxy-acetylene welding. Oxidising flame: Contains excess oxygen. Has a working temperature of up to 3500°C. Used to weld copper and brass, it would oxidise steel. Flame appears smaller. Carburising flame: Contains excess acetylene. It has a working temperature of 3150°C. Used to weld aluminium and alloy steel where it gives protection against oxidation. Flame is bigger with the distinctive acetylene feather.", marks: 8, route: "a" },
+    { id: "r-1", kind: "anyN", verbatim: "Neutral flame: A balanced proportion of oxygen and acetylene. Maximum combustion as all carbon from the acetylene is used. Has a working temperature of up to 3300°C. The most extensively used flame for oxy-acetylene welding. Oxidising flame: Contains excess oxygen. Has a working temperature of up to 3500°C. Used to weld copper and brass, it would oxidise steel. Flame appears smaller. Carburising flame: Contains excess acetylene. It has a working temperature of 3150°C. Used to weld aluminium and alloy steel where it gives protection against oxidation. Flame is bigger with the distinctive acetylene feather.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, the flames and joint protection, and robotic welding; the scheme prices each (i) at 8 and each (ii) at 8, so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "anyN", verbatim: "Production is efficient,", marks: 8, route: "b", group: {"claimMax":2,"perOption":4,"options":["Production is efficient,","consistently accurate,","reliable,"]} },
     ],
     figure: {
@@ -7013,7 +7013,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe each of the following: Any three methods of joint protection when welding. OR Identify two methods to control the movement of industrial robots.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "In metal arc welding process the 'stick' electrode is covered with an extruded coating of flux. The heat of the arc melts the flux which generates a gaseous shield to keep air away from the molten pool and also flux ingredients react with unwanted impurities such as surface oxides, creating a slag which floats to the surface of the weld pool. This forms a crust which protects the weld while it is cooling. • In MIG and TIG welding, the inert gas shield keeps the weld clean. • Submerged arc welding (SAW) is a high-productivity welding method in which the arc is struck beneath a covering layer of flux. This increases arc quality, since contaminants in the atmosphere are blocked by the flux. Working conditions are much improved over other arc welding processes, since the flux hides the arc and almost no smoke is produced. • Oxyacetylene flame.", marks: 8, route: "a" },
+    { id: "r-1", kind: "anyN", verbatim: "In metal arc welding process the 'stick' electrode is covered with an extruded coating of flux. The heat of the arc melts the flux which generates a gaseous shield to keep air away from the molten pool and also flux ingredients react with unwanted impurities such as surface oxides, creating a slag which floats to the surface of the weld pool. This forms a crust which protects the weld while it is cooling. • In MIG and TIG welding, the inert gas shield keeps the weld clean. • Submerged arc welding (SAW) is a high-productivity welding method in which the arc is struck beneath a covering layer of flux. This increases arc quality, since contaminants in the atmosphere are blocked by the flux. Working conditions are much improved over other arc welding processes, since the flux hides the arc and almost no smoke is produced. • Oxyacetylene flame.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, the flames and joint protection, and robotic welding; the scheme prices each (i) at 8 and each (ii) at 8, so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "anyN", verbatim: "Electro-mechanical,", marks: 8, route: "b", group: {"claimMax":2,"perOption":4,"options":["Electro-mechanical,","pneumatic,","hydraulic,"]} },
     ],
   } as SecCard,
@@ -7153,7 +7153,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer part (i) or part (ii): (i) Describe, with the aid of suitable diagrams, each of the following:\n• a single point cutting tool\n• a multi-point cutting tool\n• an abrasive cutting tool.\n(ii) Describe how carbide cutting tools are manufactured and state two advantages of using carbide cutting tools.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Single point cutting tool: Carbide insert cutting tool Multi-point cutting tool: Drill bit or milling cutter Abrasive cutting tool: Grinding machines", marks: 16, accepts: ["During the production of tungsten carbide cutting tool inserts, cobalt and tungsten powder are mixed with cemented carbide and pressed into shape. The process: • Carbon black, tungsten metal and metal oxides are mixed and heated until the carbon bonds with the tungsten (carburises). • Mix the tungsten carbide powder with wax and cobalt. • This is mixed very thoroughly using a ball mill to give you a final powder. • This final powder is put in a mould and pressed to the desired shape. • Heat (pre-sinter) the pressed, final powder enough so that is sticks together and shapes like soft chalk. • Put the soft chalk pieces in a very hot, high pressure, special atmosphere oven and do the final sinter where the powder cooks, shrinks and gets very hard , this is the final piece of tungsten carbide. Advantages of using carbide cutting tools: Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS. Experienced operators will ensure longer tool life. Tools are not sharpened which is time consuming and dependent on the skill of the operator for effectiveness, inserts are replaced. Inserts can have a number of cutting edges integrated into their design."] },
+    { id: "r-1", kind: "alt", verbatim: "Single point cutting tool: Carbide insert cutting tool Multi-point cutting tool: Drill bit or milling cutter Abrasive cutting tool: Grinding machines", marks: 16, accepts: ["During the production of tungsten carbide cutting tool inserts, cobalt and tungsten powder are mixed with cemented carbide and pressed into shape. The process: • Carbon black, tungsten metal and metal oxides are mixed and heated until the carbon bonds with the tungsten (carburises). • Mix the tungsten carbide powder with wax and cobalt. • This is mixed very thoroughly using a ball mill to give you a final powder. • This final powder is put in a mould and pressed to the desired shape. • Heat (pre-sinter) the pressed, final powder enough so that is sticks together and shapes like soft chalk. • Put the soft chalk pieces in a very hot, high pressure, special atmosphere oven and do the final sinter where the powder cooks, shrinks and gets very hard , this is the final piece of tungsten carbide. Advantages of using carbide cutting tools: Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS. Experienced operators will ensure longer tool life. Tools are not sharpened which is time consuming and dependent on the skill of the operator for effectiveness, inserts are replaced. Inserts can have a number of cutting edges integrated into their design."], contextNote: "The paper sets two (c)s either side of an OR: \"Answer part (i) or part (ii)\" on cutting tools, \"Any one @ 16\", answered on one card, and the CNC (c), whose (i)-(iii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2014-HL-paper-q7c-crop",
@@ -7184,7 +7184,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe each of the following with reference to CNC machining: The advantages of CNC machining in industrial engineering.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 3"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mass production to same specification", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Mass production to same specification", marks: null, contextNote: "The paper sets two (c)s either side of an OR: \"Answer part (i) or part (ii)\" on cutting tools, \"Any one @ 16\", answered on one card, and the CNC (c), whose (i)-(iii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Minimal setting-up between batch productions of components", marks: null },
     { id: "r-3", kind: "point", verbatim: "Multi-tool loading for components.", marks: null },
     ],
@@ -7199,7 +7199,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe each of the following with reference to CNC machining: Two safety features integrated into CNC software.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 3"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Software can be programmed to simulate cutting action", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Software can be programmed to simulate cutting action", marks: null, contextNote: "The paper sets two (c)s either side of an OR: \"Answer part (i) or part (ii)\" on cutting tools, \"Any one @ 16\", answered on one card, and the CNC (c), whose (i)-(iii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Software can be programmed to prevent cutting tool crashing into chuck", marks: null },
     { id: "r-3", kind: "point", verbatim: "Software allows for different material selection.", marks: null },
     ],
@@ -7214,7 +7214,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe each of the following with reference to CNC machining: The role of simulation in CNC machining.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Simulation: CNC machine programmes allow the cutting of the workpiece to be simulated on the screen, this may identify inappropriate cutting actions before any material is machined.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Simulation: CNC machine programmes allow the cutting of the workpiece to be simulated on the screen, this may identify inappropriate cutting actions before any material is machined.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR: \"Answer part (i) or part (ii)\" on cutting tools, \"Any one @ 16\", answered on one card, and the CNC (c), whose (i)-(iii) each have a card of their own." },
     ],
   } as SecCard,
   {
@@ -7280,7 +7280,7 @@ export const CARDS: SecCard[] = [
     questionText: "It is proposed to design a model based on the DeLorean DMC-12 sports car shown. Describe, with the aid of a suitable diagram, a mechanism that would allow the gull-wing doors in the model to open and close.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Use a gear train to open and close the doors. Gear connected to a driving motor. This arrangement will give a reduced speed for the operation of the door and increase the turning power to lift the heavy doors. The motor can be controlled by switching that allows the motor to reverse as well as drive forward, speed control is also feasible. A DPDT switch can be used. Pneumatic cylinder, Servo motors and Stepper motor could also be considered.", marks: 16 },
+    { id: "r-1", kind: "point", verbatim: "Use a gear train to open and close the doors. Gear connected to a driving motor. This arrangement will give a reduced speed for the operation of the door and increase the turning power to lift the heavy doors. The motor can be controlled by switching that allows the motor to reverse as well as drive forward, speed control is also feasible. A DPDT switch can be used. Pneumatic cylinder, Servo motors and Stepper motor could also be considered.", marks: 16, contextNote: "The scheme prints 'Suggested solution - other viable solutions are acceptable.' The paper sets two (c)s either side of an OR: the gull-wing doors, answered as one part for 16, and the timer circuit (c), whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2014-HL-paper-q8c-crop",
@@ -7311,7 +7311,7 @@ export const CARDS: SecCard[] = [
     questionText: "With reference to the timer circuit shown below: Name the components that determine the timing of the circuit.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Variable resistor,", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Variable resistor,", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the gull-wing doors, answered as one part for 16, and the timer circuit (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "capacitor,", marks: null },
     { id: "r-3", kind: "point", verbatim: "555 timer.", marks: null },
     ],
@@ -7483,7 +7483,7 @@ export const CARDS: SecCard[] = [
     questionText: "The computer tablet shown uses touchscreen technology. Give one advantage and one disadvantage of touchscreen technology.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Advantages: Touchscreen devices have limited buttons, have a simpler user interfaces, easy to navigate, fast to use with a simplified interface, easy to clean.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Advantages: Touchscreen devices have limited buttons, have a simpler user interfaces, easy to navigate, fast to use with a simplified interface, easy to clean.", marks: 3, contextNote: "The scheme prints '3 + 2' under its advantages and disadvantages, in that order." },
     { id: "r-2", kind: "point", verbatim: "Disadvantages: The screen has to be big enough to be able to touch the buttons without missing. In direct sunlight it may be difficult to read the screen. The screens can get very dirty. User has to be within arms-reach of the device.", marks: 2 },
     ],
     questionFigure: {
@@ -7702,7 +7702,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline two ways in which the steel structure of the roller coaster seat may be protected from corrosion.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Galvanising,", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Galvanising,", marks: null, contextNote: "After the methods, the scheme prints: 'These methods will prevent the oxygen in the air attacking the metal surface.'" },
     { id: "r-2", kind: "point", verbatim: "painting,", marks: null },
     { id: "r-3", kind: "point", verbatim: "metal cladding,", marks: null },
     { id: "r-4", kind: "point", verbatim: "plastic coating,", marks: null },
@@ -8310,7 +8310,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using the following guidelines, compare resistance seam welding and resistance spot welding:\n• Electrode shape\n• Principle of operation\n• Weld joint\n• Application.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Resistance spot welding Electrode shape The electrode is in the shape of a round bar with tapered ends where it contacts the material.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Resistance spot welding Electrode shape The electrode is in the shape of a round bar with tapered ends where it contacts the material.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: resistance seam and spot welding, answered as one part for 16, and the Robocoaster (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Resistance seam welding Electrode shape The electrodes are disc shapes as they need to rotate during the process.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Resistance spot welding Principle of operation The components to be joined are placed between the electrodes and then pressed together. A nugget weld is achieved as current is passed through the electrodes generating a large heat between the metals. It is very effectively used to join sheet metal together and is recognised by the distinctive circular mark left at the site of the weld.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Resistance seam welding Principle of operation A form of resistance welding that uses copper roller electrodes to provide a continuous run of overlapping welds as the current is activated at set intervals. One of the electrodes may be driven by an electric motor. The workpiece is moved between the rollers and pulses of current are supplied. Each pulse is set to last long enough to produce a weld.", marks: null },
@@ -8339,7 +8339,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the importance of each of the following in relation to the Robocoaster device shown opposite:\n• Degrees of freedom\n• Working envelope.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Degree of freedom A description of the number of axes the robot arm can move. A single joint will provide one degree of freedom. To provide a variety of degrees of freedom, different robotic joints can be used such as rotary or linear joints. The degrees of freedom will determine how the robocoaster will move and are normally programmed in a series of motions.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Degree of freedom A description of the number of axes the robot arm can move. A single joint will provide one degree of freedom. To provide a variety of degrees of freedom, different robotic joints can be used such as rotary or linear joints. The degrees of freedom will determine how the robocoaster will move and are normally programmed in a series of motions.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR: resistance seam and spot welding, answered as one part for 16, and the Robocoaster (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Working Envelope The defined area of space through which a robot can move. This is also known as the work cell. The robocoaster must ensure that the working envelope for each device is safe for passengers.", marks: 4 },
     ],
     questionFigure: {
@@ -8362,7 +8362,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline two reasons why programmable robots are used in the on-going development of compact mechanised thrill machines for amusement parks.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Programmable robots allow for very precise movements.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Programmable robots allow for very precise movements.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: resistance seam and spot welding, answered as one part for 16, and the Robocoaster (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Motions are accurate, consistent and repeatable.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Speed of movements can be adjusted and controlled.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Movements can be reprogrammed and adjusted to change sensation of thrill machines.", marks: null },
@@ -8612,7 +8612,7 @@ export const CARDS: SecCard[] = [
     questionText: "Machining on the lathe can produce metal chips such as those illustrated at A, B and C below. Identify the metal cutting chips shown at A and B and distinguish clearly between them making reference to material properties. OR CNC machining has many applications in engineering manufacture. Give two advantages and two disadvantages of CNC machining.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "A – Continuous chip", marks: 2, route: "a" },
+    { id: "r-1", kind: "anyN", verbatim: "A – Continuous chip", marks: 2, contextNote: "The paper sets two (c)s either side of an OR, the metal chips and CNC machining; the scheme prices each (i) at 8 and each (ii) at 8, so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "anyN", verbatim: "Soft, ductile material such as aluminium.", marks: 2, route: "a" },
     { id: "r-3", kind: "anyN", verbatim: "B – Discontinuous chip", marks: 2, route: "a" },
     { id: "r-4", kind: "anyN", verbatim: "More brittle materials with brass as an example.", marks: 2, route: "a" },
@@ -8639,7 +8639,7 @@ export const CARDS: SecCard[] = [
     questionText: "Machining on the lathe can produce metal chips such as those illustrated at A, B and C below. Analyse the impact on safety and surface finish of the chip formation shown at C. OR CNC machining has many applications in engineering manufacture. Identify two factors to be taken into account when selecting CNC machining for the manufacture of the chess pieces shown opposite.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "As the built-up edge enlarges, the cutting edge will not cut effectively as the tool cutting angles are compromised. The surface finish will deteriorate and machining will not be smooth. The machine is likely to be subjected to excess vibration.", marks: 8, route: "a" },
+    { id: "r-1", kind: "anyN", verbatim: "As the built-up edge enlarges, the cutting edge will not cut effectively as the tool cutting angles are compromised. The surface finish will deteriorate and machining will not be smooth. The machine is likely to be subjected to excess vibration.", marks: 8, contextNote: "The scheme prints '4 + 4' under each branch's answer; its answer on the chip at C is one paragraph, shown whole. The paper sets two (c)s either side of an OR, the metal chips and CNC machining; the scheme prices each (i) at 8 and each (ii) at 8, so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "anyN", verbatim: "Choice of material to manufacture pieces", marks: 8, route: "b", group: {"claimMax":2,"perOption":4,"options":["Choice of material to manufacture pieces","Size of pieces","Volume of pieces to be manufactured in this batch","Design shape and detail."]} },
     ],
     questionFigure: {
@@ -8693,7 +8693,7 @@ export const CARDS: SecCard[] = [
     questionText: "A worm and worm wheel mechanism is used to tension the volleyball net shown opposite. Describe, with the aid of a diagram, a suitable method for adjusting the height of the net shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The height of the net can be adjusted using a pin which fits into the tubular frame. The outer tube is drilled in the position shown. The inner tube has a series of holes drilled which allow for the height to be adjusted.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "The height of the net can be adjusted using a pin which fits into the tubular frame. The outer tube is drilled in the position shown. The inner tube has a series of holes drilled which allow for the height to be adjusted.", marks: 8, contextNote: "The scheme prints 'Suggested solution - other viable solutions are acceptable.'" },
     ],
     questionFigure: {
           "candId": "engineering-2015-HL-paper-q8a-crop",
@@ -8737,7 +8737,7 @@ export const CARDS: SecCard[] = [
     questionText: "The robot shown is capable of moving in a number of different directions. With the aid of suitable diagrams, identify and describe clearly each of the following: a mechanism to move the robot's arm; OR Relays are used in numerous electrical circuits, usually allowing low voltage circuits to drive higher voltage circuits. Describe, with the aid of a diagram, the principle of operation of a relay.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Mechanism to move the robot’s arm The worm wheel will rotate precisely. This will give a swiveling action at the shoulder or elbow joints. This mechanism will provide a slow, deliberate motion to the robot arm.", marks: 8, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Mechanism to move the robot’s arm The worm wheel will rotate precisely. This will give a swiveling action at the shoulder or elbow joints. This mechanism will provide a slow, deliberate motion to the robot arm.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, the robot and the relay; the scheme prices each (i) at 8 and each (ii) at 8, so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "A relay is an electromagnetic device that changes switching contacts when it receives an electric signal. It consists of a wire coil with a soft iron core. If a small current is passed through the coil, the iron core is magnetised and a pivoted armature is attracted towards the magnetised core. The movement of the armature closes the contacts and may open other contacts. These contacts can be used to control larger currents or a secondary circuit. The relay is a switch and changes electrical energy into mechanical energy.", marks: 8, route: "b" },
     ],
     questionFigure: {
@@ -8769,7 +8769,7 @@ export const CARDS: SecCard[] = [
     questionText: "The robot shown is capable of moving in a number of different directions. With the aid of suitable diagrams, identify and describe clearly each of the following: a mechanism to allow the robot to travel on a flat surface. OR Relays are used in numerous electrical circuits, usually allowing low voltage circuits to drive higher voltage circuits. Identify two applications for relays.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Mechanism to allow robot to travel on a flat surface Gear connected to a driving motor. This arrangement will give a reduced speed for the movement of the robot. The motor can be controlled by switching that allows the motor to reverse as well as drive forward, speed control is also feasible. A DPDT switch can be used Servo motors and Stepper motor could also be considered.", marks: 8, route: "a" },
+    { id: "r-1", kind: "anyN", verbatim: "Mechanism to allow robot to travel on a flat surface Gear connected to a driving motor. This arrangement will give a reduced speed for the movement of the robot. The motor can be controlled by switching that allows the motor to reverse as well as drive forward, speed control is also feasible. A DPDT switch can be used Servo motors and Stepper motor could also be considered.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, the robot and the relay; the scheme prices each (i) at 8 and each (ii) at 8, so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "anyN", verbatim: "Controlling a high-voltage circuit with a low-voltage signal, such as in audio amplifiers", marks: 8, route: "b", group: {"claimMax":2,"perOption":4,"options":["Controlling a high-voltage circuit with a low-voltage signal, such as in audio amplifiers","Controlling a high-current circuit with a low-current signal, as in the starter solenoid of a vehicle","It is used in an electric door chime","Switching from dip lights to head lights","Relays are quite common in home appliances where there is an electronic control such as turning on a motor or a light."]} },
     ],
     questionFigure: {
@@ -9122,7 +9122,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give one advantage and one disadvantage of laser technology in metal cutting.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Advantages: Capable of cutting varied materials and thicknesses. It is reliable, fast, easily and accurately repeatable and there is no secondary clean-up process required for most materials.", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Advantages: Capable of cutting varied materials and thicknesses. It is reliable, fast, easily and accurately repeatable and there is no secondary clean-up process required for most materials.", marks: 3, contextNote: "The scheme prints '3 + 2' under its advantages and disadvantages, in that order." },
     { id: "r-2", kind: "point", verbatim: "Disadvantages: High power consumption and can be expensive. Poorly adjusted lasers can cause burning and may have difficulty cutting reflective metals like copper, brass and aluminum.", marks: 2 },
     ],
   } as SecCard,
@@ -10022,7 +10022,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a suitable diagram(s), oxy-acetylene welding with reference to each of the following:\nequipment used\nflame types\nintegrated safety features\napplications.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Oxy-acetylene equipment include: Acetylene cylinder Oxygen cylinder Oxygen and acetylene hoses Welding torch Pressure gauges Flashback arrestors.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Oxy-acetylene equipment include: Acetylene cylinder Oxygen cylinder Oxygen and acetylene hoses Welding torch Pressure gauges Flashback arrestors.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the oxy-acetylene welding (c), answered as one part for 16, and the robotic milking machine (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Three flame types: Neutral flame - equal portions of both gases; Oxidising flame - excess oxygen gas; Carburising flame - excess acetylene gas.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Integrated safety features: The colour coding on the cylinders and the hoses helps prevent any possible mix-up of the gases and connections. The oxygen cylinder is usually thinner and taller than the acetylene cylinder. The connections for the different gases have either left or right hand thread forms. The flashback arrestors prevent the flame returning to the cylinders. Cylinders can be turned off when finished operating the equipment.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Applications: Oxy-acetylene is used for welding most types of metals depending on which flame type used. A neutral flame is used for general steel welding. An oxidising flame is used for brass and bronze welding. A carburising flame is used for aluminium alloys and alloy steel welding. A cutting torch can be attached instead of the welding torch for the process of ‘gas cutting’.", marks: null },
@@ -10047,7 +10047,7 @@ export const CARDS: SecCard[] = [
     questionText: "Discuss one advantage and one disadvantage of robotic milking machines in modern dairy farming.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Elimination of labour - The farmer is freed from the milking process and associated rigid schedule, and labour is devoted to supervision of animals, feeding, etc.", marks: 4, accepts: ["Milking consistency – The milking process is consistent for every cow and every visit, and is not influenced by different persons milking the cows.","Increased frequency – Milking frequency may increase to three times per day, however typically 2.5 times per day is achieved.","Perceived lower stress environment – There is a perception that elective milking schedules reduce cow stress."] },
+    { id: "r-1", kind: "alt", verbatim: "Elimination of labour - The farmer is freed from the milking process and associated rigid schedule, and labour is devoted to supervision of animals, feeding, etc.", marks: 4, accepts: ["Milking consistency – The milking process is consistent for every cow and every visit, and is not influenced by different persons milking the cows.","Increased frequency – Milking frequency may increase to three times per day, however typically 2.5 times per day is achieved.","Perceived lower stress environment – There is a perception that elective milking schedules reduce cow stress."], contextNote: "The paper sets two (c)s either side of an OR: the oxy-acetylene welding (c), answered as one part for 16, and the robotic milking machine (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "alt", verbatim: "Higher initial cost – Systems can cost upwards in the region of approximately €200,000 per milking unit. Whether it is economically beneficial to invest in robotic milking machines instead of a conventional milking parlor depends on constructions costs, investments in the milking system and cost of labour.", marks: 4, accepts: ["Increased electricity costs - To operate the robots, but this can be more than outweighed by reduced labour input.","Reduced contact between farmer and herd – Effective dairy farming requires that the farmer be fully aware of herd condition. In conventional milking, the cows are observed before milking equipment is attached and ill or injured cows can be earmarked for attention. Automatic milking removes the farmer from such close contact with the animal with the possibility that illness may go unnoticed for longer periods and both milk quality and cow welfare suffer."] },
     ],
     questionFigure: {
@@ -10227,7 +10227,7 @@ export const CARDS: SecCard[] = [
     questionText: "The face milling cutter shown, is fitted with interchangeable tungsten carbide inserts. Describe briefly how the tungsten carbide inserts are manufactured.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "During the production of tungsten carbide cutting tool inserts, cobalt and tungsten powder are mixed with cemented carbide and pressed into shape.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "During the production of tungsten carbide cutting tool inserts, cobalt and tungsten powder are mixed with cemented carbide and pressed into shape.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the tungsten carbide inserts (c), whose (i) and (ii) each have a card of their own, and the CNC or manual machining (c), \"6 + 6 + 4\" over its three applications, answered on one card." },
     { id: "r-2", kind: "point", verbatim: "The process: Carbon black, tungsten metal and metal oxides are mixed and heated until the carbon bonds with the tungsten (carburises).", marks: null },
     { id: "r-3", kind: "point", verbatim: "Mix the tungsten carbide powder with wax and cobalt.", marks: null },
     { id: "r-4", kind: "point", verbatim: "This is mixed very thoroughly using a ball mill to give you a final powder.", marks: null },
@@ -10255,7 +10255,7 @@ export const CARDS: SecCard[] = [
     questionText: "The face milling cutter shown, is fitted with interchangeable tungsten carbide inserts. Outline two advantages and two disadvantages of an interchangeable tungsten carbide insert.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.", marks: 4, accepts: ["Experienced operators will ensure longer tool life.","Tools are not sharpened which is time consuming and dependent on the skill of the operator for effectiveness, inserts are replaced.","Inserts can have a number of cutting edges integrated into their design."] },
+    { id: "r-1", kind: "alt", verbatim: "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.", marks: 4, accepts: ["Experienced operators will ensure longer tool life.","Tools are not sharpened which is time consuming and dependent on the skill of the operator for effectiveness, inserts are replaced.","Inserts can have a number of cutting edges integrated into their design."], contextNote: "The paper sets two (c)s either side of an OR: the tungsten carbide inserts (c), whose (i) and (ii) each have a card of their own, and the CNC or manual machining (c), \"6 + 6 + 4\" over its three applications, answered on one card." },
     { id: "r-2", kind: "alt", verbatim: "Tungsten carbide inserts are extremely hard and brittle and shatter easily.", marks: 4, accepts: ["They are expensive to purchase and replace.","Limited use on materials other than round bars."] },
     ],
     questionFigure: {
@@ -10278,7 +10278,7 @@ export const CARDS: SecCard[] = [
     questionText: "Indicate whether CNC machining or manual machining is most suitable for each of the following applications. Justify your selection in each case:\n(i) The production of plumbing fittings;\n(ii) Customised pieces for a chess set;\n(iii) Repair of damaged alloy car wheels.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "CNC machining as plumbing fittings are mass produced in high volume.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "CNC machining as plumbing fittings are mass produced in high volume.", marks: 6, contextNote: "The paper sets two (c)s either side of an OR: the tungsten carbide inserts (c), whose (i) and (ii) each have a card of their own, and the CNC or manual machining (c), \"6 + 6 + 4\" over its three applications, answered on one card." },
     { id: "r-2", kind: "point", verbatim: "Manual machining allows individualised pieces to be produced for each chess set. This demonstration of skill in crafting may make the set more valuable. Accuracy may not be essential.", marks: 6 },
     { id: "r-3", kind: "point", verbatim: "Manual machining will be more efficient as wheels may be damaged to a greater or lesser extent. Manual methods will require less setting up for each wheel. In some circumstances, mechanised machining could be employed if large batches of the same wheel are to be machined.", marks: 4 },
     ],
@@ -10293,7 +10293,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a diagram(s), the operation of this type of lift mechanism.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The most common lift table design incorporates hydraulic cylinders and an electrically powered pump to actuate the scissor lifting mechanism. As the cylinder extends, the scissor arm is pushed upwards raising the platform.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "The most common lift table design incorporates hydraulic cylinders and an electrically powered pump to actuate the scissor lifting mechanism. As the cylinder extends, the scissor arm is pushed upwards raising the platform.", marks: null, contextNote: "The scheme prints '8' under 'Suggested solutions - other viable solutions are acceptable.'" },
     { id: "r-2", kind: "point", verbatim: "Lift tables can be mounted in a pit for floor-level loading, especially useful for access by wheelchair users.", marks: null },
     ],
     questionFigure: {
@@ -10378,7 +10378,7 @@ export const CARDS: SecCard[] = [
     questionText: "The kart shown opposite is designed to reach high speeds and also to perform quick turning movements. Describe clearly, with the aid of a diagram(s), a suitable steering mechanism for the kart shown. OR The mobile phone shown has a solar charger. Outline one energy conversion that takes place as the phone charges.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The use of a linkage system or rack and pinion mechanism would be suitable solutions for the steering mechanism of the kart. The steering wheel can be connected to the pinion and when rotated it will move the rack in a linear manner either left or right. The wheels in turn are connected via a linkage to the rack and this will allow the wheels turn.", marks: 8, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "The use of a linkage system or rack and pinion mechanism would be suitable solutions for the steering mechanism of the kart. The steering wheel can be connected to the pinion and when rotated it will move the rack in a linear manner either left or right. The wheels in turn are connected via a linkage to the rack and this will allow the wheels turn.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, the kart and the solar phone charger; the scheme prices each (i) at 8 and each (ii) at 8 (4 + 4 for the charger's), so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "alt", verbatim: "Light energy to chemical energy.", marks: 8, accepts: ["Chemical energy to electrical energy.","Light energy to electrical energy."], route: "b" },
     ],
     questionFigure: {
@@ -10410,7 +10410,7 @@ export const CARDS: SecCard[] = [
     questionText: "The kart shown opposite is designed to reach high speeds and also to perform quick turning movements. Describe, with the aid of a diagram(s), a rear wheel drive propulsion unit for the kart. OR The mobile phone shown has a solar charger. Identify two other methods for charging a mobile phone.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The use toothed belts, gear drive or chain and sprocket would be suitable solutions for the rear wheel drive propulsion unit of the kart. A chain and sprocket would provide a strong drive between the motor and the wheels. A DPDT switch provides the option for forward and reverse drive of the go-cart.", marks: 8, route: "a" },
+    { id: "r-1", kind: "anyN", verbatim: "The use toothed belts, gear drive or chain and sprocket would be suitable solutions for the rear wheel drive propulsion unit of the kart. A chain and sprocket would provide a strong drive between the motor and the wheels. A DPDT switch provides the option for forward and reverse drive of the go-cart.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, the kart and the solar phone charger; the scheme prices each (i) at 8 and each (ii) at 8 (4 + 4 for the charger's), so this card holds this part of both branches: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "anyN", verbatim: "Mains electrical charger with transformer.", marks: 8, route: "b", group: {"claimMax":2,"perOption":4,"options":["Mains electrical charger with transformer.","Battery charger.","USB.","Wind-up mechanical charger."]} },
     ],
     questionFigure: {
@@ -10896,7 +10896,7 @@ export const CARDS: SecCard[] = [
     questionText: "Wireless technologies such as Wi-Fi and Bluetooth are widely used nowadays. Outline one advantage and one disadvantage of wireless technology.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "ease of connection,", marks: 3, accepts: ["no physical connection required,"] },
+    { id: "r-1", kind: "alt", verbatim: "ease of connection,", marks: 3, accepts: ["no physical connection required,"], contextNote: "The scheme prints '3 + 2' under its advantages and disadvantages, in that order." },
     { id: "r-2", kind: "alt", verbatim: "concern over security for sensitive information,", marks: 2, accepts: ["limited connectivity in remote areas,"] },
     ],
   } as SecCard,
@@ -11049,7 +11049,7 @@ export const CARDS: SecCard[] = [
     questionText: "Robotic joints are mainly powered by electric motors, as shown opposite. Describe the main features of this motor;",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Main features of Servo Motor: Provides smooth control with high torque (full at high speed) Can rotate to a specific point with great accuracy – up to ten times finer than a stepper motor Provides feedback and can correct if position is distorted due to built-in encoder – corrective Only use power as required – load dependant Self-cooling, fully enclosed, ideal for robot arms More accurate than stepper motor Not suitable for continuous rotation", marks: 6, accepts: ["Main features of Stepper Motor: Digital input allows motor shaft to move in discrete steps Does not have corrective capacity Very high holding torque. Also at start up and low speeds Require high currents, even when stationary Simple drive electronics Good accuracy and excellent repeatability Excellent reliability Rugged – will work in any environment Control and torque are reduced at high speed"] },
+    { id: "r-1", kind: "alt", verbatim: "Main features of Servo Motor: Provides smooth control with high torque (full at high speed) Can rotate to a specific point with great accuracy – up to ten times finer than a stepper motor Provides feedback and can correct if position is distorted due to built-in encoder – corrective Only use power as required – load dependant Self-cooling, fully enclosed, ideal for robot arms More accurate than stepper motor Not suitable for continuous rotation", marks: 6, accepts: ["Main features of Stepper Motor: Digital input allows motor shaft to move in discrete steps Does not have corrective capacity Very high holding torque. Also at start up and low speeds Require high currents, even when stationary Simple drive electronics Good accuracy and excellent repeatability Excellent reliability Rugged – will work in any environment Control and torque are reduced at high speed"], contextNote: "'This motor' is the one named in (p)(i); the scheme gives the features of a servo motor and of a stepper motor." },
     ],
     questionFigure: {
           "candId": "engineering-2017-HL-paper-q1pi-art",
@@ -11110,7 +11110,7 @@ export const CARDS: SecCard[] = [
     questionText: "The construction of Formula One cars and the materials used are strictly controlled by regulations to maximise the safety of the cars. Front, side and rear impact tests focus on the car’s survival cell (cockpit), which must be designed to withstand high impact. Name and describe, with the aid of a diagram(s) a suitable impact testing procedure to examine the suitability of the material used in the survival cell.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Izod Test 167 joules striking energy. Test specimen is vertical. Test piece is clamped at one end. Test piece notch is facing the pendulum. The distance the pendulum travels after breaking the piece will give the toughness value.", marks: 8, accepts: ["Charpy Test 300 joules striking energy. Test specimen is Horizontal. Test piece is clamped at both ends. Test piece notch is facing away from the pendulum. The distance the pendulum travels after breaking the piece will give the toughness value."] },
+    { id: "r-1", kind: "alt", verbatim: "Izod Test 167 joules striking energy. Test specimen is vertical. Test piece is clamped at one end. Test piece notch is facing the pendulum. The distance the pendulum travels after breaking the piece will give the toughness value.", marks: 8, accepts: ["Charpy Test 300 joules striking energy. Test specimen is Horizontal. Test piece is clamped at both ends. Test piece notch is facing away from the pendulum. The distance the pendulum travels after breaking the piece will give the toughness value."], contextNote: "The scheme prints 'Descriptions of car impact tests will be accepted.'" },
     ],
     figure: {
           "candId": "engineering-2017-HL-scheme-q2ai-sol",
@@ -11577,7 +11577,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a suitable diagram(s), any one of the following:\n(i) The transformer-rectifier circuit used in manual metal arc welding.\n(ii) The essential differences between Metal Inert Gas (MIG) welding and Tungsten Inert Gas (TIG) welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The transformer-rectifier circuit used in manual metal arc welding. A - Transformer: A step-down transformer is used to change the mains voltage from 220V to a suitable level (80-100V) for welding. This will provide the high current needed for welding. This type of transformer has more turns on the primary coil than the secondary coil and will induce alternating current (AC) at a lower voltage. B - Rectifier: The rectifier changes alternating current (AC) to direct current (DC). It consists of four diodes which allows two of the diodes to conduct on each half-cycle of the AC supply. C - Capacitor: The capacitor is employed to provide a smooth supply of low voltage DC.", marks: 16, accepts: ["MIG welding: A semi-automatic process. A consumable bare wire electrode is fed continuously into the weld pool area through the welding torch. An inert gas, such as Argon, creates a protective shield around the weld pool giving a fluxing action. The feed rate and flow rate of the gas are set by the operator. This allows the operator to guide the torch along the weld once the arc is generated between the electrode and the work. MIG welding does not produce a slag on the weld. Tungsten inert gas welding, TIG, TAGS. An arc is formed between the non-consumable electrode and the metal being welded. The inert gas shielded arc is used to flux the joint, argon is often used to prevent oxygen getting to the joint area. A stainless steel filler metal is added manually to the weld pool when necessary. A high frequency generator provides a path for the welding current."] },
+    { id: "r-1", kind: "alt", verbatim: "The transformer-rectifier circuit used in manual metal arc welding. A - Transformer: A step-down transformer is used to change the mains voltage from 220V to a suitable level (80-100V) for welding. This will provide the high current needed for welding. This type of transformer has more turns on the primary coil than the secondary coil and will induce alternating current (AC) at a lower voltage. B - Rectifier: The rectifier changes alternating current (AC) to direct current (DC). It consists of four diodes which allows two of the diodes to conduct on each half-cycle of the AC supply. C - Capacitor: The capacitor is employed to provide a smooth supply of low voltage DC.", marks: 16, accepts: ["MIG welding: A semi-automatic process. A consumable bare wire electrode is fed continuously into the weld pool area through the welding torch. An inert gas, such as Argon, creates a protective shield around the weld pool giving a fluxing action. The feed rate and flow rate of the gas are set by the operator. This allows the operator to guide the torch along the weld once the arc is generated between the electrode and the work. MIG welding does not produce a slag on the weld. Tungsten inert gas welding, TIG, TAGS. An arc is formed between the non-consumable electrode and the metal being welded. The inert gas shielded arc is used to flux the joint, argon is often used to prevent oxygen getting to the joint area. A stainless steel filler metal is added manually to the weld pool when necessary. A high frequency generator provides a path for the welding current."], contextNote: "The paper sets two (c)s either side of an OR: the welding (c), any one of (i) and (ii) for 16, answered as one part, and the robotic vacuum cleaner (c), whose (i) and (ii) each have a card of their own." },
     ],
     figure: {
           "candId": "engineering-2017-HL-scheme-q5c-sol",
@@ -11599,7 +11599,7 @@ export const CARDS: SecCard[] = [
     questionText: "The Dyson 360 Eye™ robot vacuum cleaner uses battery power to operate and also incorporates link app technology. Outline one advantage and one disadvantage of robotic vacuum cleaners linked to mobile apps.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The robotic vacuum cleaner will clean when the householder is away from the premises.", marks: 4, accepts: ["The owner can view on the app, the area that is cleaned and not cleaned.","It has a very low noise output.","Its size means a large storage area is not required when idle."] },
+    { id: "r-1", kind: "alt", verbatim: "The robotic vacuum cleaner will clean when the householder is away from the premises.", marks: 4, accepts: ["The owner can view on the app, the area that is cleaned and not cleaned.","It has a very low noise output.","Its size means a large storage area is not required when idle."], contextNote: "The paper sets two (c)s either side of an OR: the welding (c), any one of (i) and (ii) for 16, answered as one part, and the robotic vacuum cleaner (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "alt", verbatim: "The vacuum cleaner may have an electrical malfunction and need to be rebooted.", marks: 4, accepts: ["If the internet connection is down the cleaner will not communicate with the app."] },
     ],
   } as SecCard,
@@ -11613,7 +11613,7 @@ export const CARDS: SecCard[] = [
     questionText: "The Dyson 360 Eye™ robot vacuum cleaner uses battery power to operate and also incorporates link app technology. Describe the importance of the 360° camera incorporated in the vacuum cleaner.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The Dyson 360 Eye™ robot constantly observes and interprets its surroundings. It sees all around the room at once. This unique 360° vision system uses complex mathematics, probability theory, geometry and trigonometry to map and navigate a room. So it knows where it is, where it’s been and where it’s yet to clean. It uses this technology also to locate its docking station and recharge the battery.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "The Dyson 360 Eye™ robot constantly observes and interprets its surroundings. It sees all around the room at once. This unique 360° vision system uses complex mathematics, probability theory, geometry and trigonometry to map and navigate a room. So it knows where it is, where it’s been and where it’s yet to clean. It uses this technology also to locate its docking station and recharge the battery.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR: the welding (c), any one of (i) and (ii) for 16, answered as one part, and the robotic vacuum cleaner (c), whose (i) and (ii) each have a card of their own." },
     ],
   } as SecCard,
   {
@@ -11680,7 +11680,7 @@ export const CARDS: SecCard[] = [
     questionText: "Select a suitable thermoplastic for the frame tubing and give one reason for your selection.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Nylon", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "Nylon", marks: 2, contextNote: "The scheme prints 'Nylon is strong, difficult to break and lightweight' and '2 + 2'." },
     { id: "r-2", kind: "alt", verbatim: "strong,", marks: 2, accepts: ["difficult to break","lightweight"] },
     ],
     questionFigure: {
@@ -11774,7 +11774,7 @@ export const CARDS: SecCard[] = [
     questionText: "Magnetic chucks, similar to the one shown, are used to hold workpieces during various machining processes. Explain, with the aid of a diagram(s), the basic operation of a magnetic chuck. OR The use of 3-D printers, similar to the one shown, is rapidly growing in schools and in industry. These 3-D printers are operated by computer numerical control (CNC). Explain why stepper motors are used to control movements in CNC machines.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Magnetic chuck Traditionally associated with grinding machines, the magnetic chuck has been adapted for use with other machines. Used for holding ferromagnetic workpieces, a magnetic chuck consists of an accurately centered permanent magnet face. Electromagnets or permanent magnets are brought into contact with fixed ferrous plates, or pole pieces, contained within a housing. These pole pieces are usually flush with the housing surface. The part (workpiece) to be held forms the closing of the magnetic loop or path, onto those fixed plates, providing a secure anchor for the workpiece. There are two basic types of magnetic chucks now available (electromagnetic and permanent), but they come in a variety of sizes, shapes and modifications to suit many different applications. Electromagnetic chucks are charged by an electrical current while permanent-type magnetic chucks are based on permanent magnets. Both types can be turned on and off.", marks: 8, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Magnetic chuck Traditionally associated with grinding machines, the magnetic chuck has been adapted for use with other machines. Used for holding ferromagnetic workpieces, a magnetic chuck consists of an accurately centered permanent magnet face. Electromagnets or permanent magnets are brought into contact with fixed ferrous plates, or pole pieces, contained within a housing. These pole pieces are usually flush with the housing surface. The part (workpiece) to be held forms the closing of the magnetic loop or path, onto those fixed plates, providing a secure anchor for the workpiece. There are two basic types of magnetic chucks now available (electromagnetic and permanent), but they come in a variety of sizes, shapes and modifications to suit many different applications. Electromagnetic chucks are charged by an electrical current while permanent-type magnetic chucks are based on permanent magnets. Both types can be turned on and off.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, magnetic chucks and CNC 3-D printers; the scheme prices each (i) at 8 and each (ii) at 4 + 4. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Incremental movement allows for precision control of cutting. Reliability of operation. Good power output to give torque required for operation.", marks: 8, route: "b" },
     ],
     questionFigure: {
@@ -11806,7 +11806,7 @@ export const CARDS: SecCard[] = [
     questionText: "Magnetic chucks, similar to the one shown, are used to hold workpieces during various machining processes. State one advantage and one disadvantage of magnetic chucks. OR The use of 3-D printers, similar to the one shown, is rapidly growing in schools and in industry. These 3-D printers are operated by computer numerical control (CNC). Identify two other modern manufacturing machines which can be operated using CNC.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "They provide quick clamping with a firm grip.", marks: 4, accepts: ["They can accommodate large batches of workpieces.","They can often accommodate unusual workpiece shapes."], route: "a" },
+    { id: "r-1", kind: "alt", verbatim: "They provide quick clamping with a firm grip.", marks: 4, accepts: ["They can accommodate large batches of workpieces.","They can often accommodate unusual workpiece shapes."], contextNote: "The paper sets two (c)s either side of an OR, magnetic chucks and CNC 3-D printers; the scheme prices each (i) at 8 and each (ii) at 4 + 4. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "alt", verbatim: "The metals need to be magnetic.", marks: 4, accepts: ["The workpiece must have a flat surface and be able to make good contact with the chuck."], route: "a" },
     { id: "r-3", kind: "anyN", verbatim: "CNC lathe,", marks: 8, route: "b", group: {"claimMax":2,"perOption":4,"options":["CNC lathe,","CNC Milling,.","CNC Router."]} },
     ],
@@ -11830,7 +11830,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a diagram, a suitable mechanism which allows a turnstile to rotate in one direction only.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A Ratchet and Pawl is a device that allows continuous linear or rotary motion in only one direction while preventing motion in the opposite direction. This would be a suitable mechanism for the operation of the turnstile.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "A Ratchet and Pawl is a device that allows continuous linear or rotary motion in only one direction while preventing motion in the opposite direction. This would be a suitable mechanism for the operation of the turnstile.", marks: 8, contextNote: "The scheme prints '8' under 'Suggested solutions - other viable solutions are acceptable.'" },
     ],
     figure: {
           "candId": "engineering-2017-HL-scheme-q8ai-sol",
@@ -11878,7 +11878,7 @@ export const CARDS: SecCard[] = [
     questionText: "A car suitable for wheelchair users is shown opposite. Describe, with the aid of a diagram, a suitable mechanism to allow the sliding door to open. OR The electronic circuit shown has components, including ICs, soldered on to a PCB. Explain the terms IC and PCB.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The use of a toothed belt and pulley mechanism could operate a sliding door(s) for the car. As the motor rotates the belt will also rotate on the pulleys and link assembly brackets attached to the top and bottom of the belt will move the doors in opposite directions.", marks: 8, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "The use of a toothed belt and pulley mechanism could operate a sliding door(s) for the car. As the motor rotates the belt will also rotate on the pulleys and link assembly brackets attached to the top and bottom of the belt will move the doors in opposite directions.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, the wheelchair car and the PCB; the scheme prices (i) at 8 for the car and 4 + 4 for the PCB, and each (ii) at 8, under 'Suggested solutions, suitable alternatives are considered'. The scheme adds 'Servo motors and Stepper motor could also be considered for both parts of the question.' Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "IC – Integrated Circuit", marks: 4, route: "b" },
     { id: "r-3", kind: "point", verbatim: "PCB – Printed Circuit Board", marks: 4, route: "b" },
     ],
@@ -11911,7 +11911,7 @@ export const CARDS: SecCard[] = [
     questionText: "A car suitable for wheelchair users is shown opposite. Describe, with the aid of a diagram, a mechanism which will allow the ramp be automated. OR The electronic circuit shown has components, including ICs, soldered on to a PCB. Outline the procedure for soldering the PCB shown, making reference to equipment, safety and to ensuring a high quality joint.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The use a worm and worm wheel drive would be a suitable solution for the automatic ramp of the car. This would provide an increase in torque and a speed reduction. A low-cost motor could also be used with this mechanism. The worm wheel could be attached to the pivot hinge of the ramp allowing it to be rotated into position. A DPDT switch would provide the option for forward and reverse drive of the ramp while a variable resistor could be used to vary the speed of the drive.", marks: 8, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "The use a worm and worm wheel drive would be a suitable solution for the automatic ramp of the car. This would provide an increase in torque and a speed reduction. A low-cost motor could also be used with this mechanism. The worm wheel could be attached to the pivot hinge of the ramp allowing it to be rotated into position. A DPDT switch would provide the option for forward and reverse drive of the ramp while a variable resistor could be used to vary the speed of the drive.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, the wheelchair car and the PCB; the scheme prices (i) at 8 for the car and 4 + 4 for the PCB, and each (ii) at 8, under 'Suggested solutions, suitable alternatives are considered'. The scheme adds 'Servo motors and Stepper motor could also be considered for both parts of the question.' Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Safety: hot electric soldering iron, control of fumes, use of lead in solder, cleaning agents Equipment: solder, soldering iron, stand with sponge, clamping equipment. Procedure: Ensure soldering iron tip is clean, tin with solder. Hold soldering iron at an angle to the PCB heating the component and pad simultaneously. Touch the solder wire between the iron and component lead allowing the solder to melt. Remove the soldering iron allowing the solder to cool. Continue for each component to be soldered. Check that each joint is effectively soldered.", marks: 8, route: "b" },
     ],
     questionFigure: {
@@ -13161,7 +13161,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of suitable diagrams, the three flame types associated with oxy-acetylene welding with reference to each of the following:\n• Constituents of each flame\n• Ratio of oxygen to acetylene gases in each flame\n• Temperature of each flame\n• Uses of each flame.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Neutral flame: A balanced proportion of oxygen and acetylene. Maximum combustion as all carbon from the acetylene is used. Has a working temperature of up to 3300°C. The most extensively used flame for oxy-acetylene welding.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Neutral flame: A balanced proportion of oxygen and acetylene. Maximum combustion as all carbon from the acetylene is used. Has a working temperature of up to 3300°C. The most extensively used flame for oxy-acetylene welding.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the oxy-acetylene flames (c), answered as one part for 16, and the robotic lawn mower (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Oxidising flame: Contains excess oxygen. Has a working temperature of up to 3500°C. Used to weld copper and brass, it would oxidise steel. Flame appears smaller.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Carburising flame: Contains excess acetylene. It has a working temperature of 3150°C. Used to weld aluminium and alloy steel where it gives protection against oxidation. Flame is bigger with the distinctive acetylene feather.", marks: null },
     ],
@@ -13310,7 +13310,7 @@ export const CARDS: SecCard[] = [
     questionText: "Grinding wheels are subject to conditions such as loading and glazing which affects the cutting ability of the grinding wheel. Explain, with the aid of a diagram(s), the differences between loading and glazing of grinding wheels. OR In modern CNC systems, CAD software is used to define the dimensions of a part while CAM software is used to control the machine. Explain two of the following terms in relation to CNC technology:\n• Machine tool envelope\n• Software simulation\n• Closed loop control.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Loading: a grinding wheel becomes loaded with small particles when grinding debris becomes trapped in the space between the abrasive grains and the wheel. This will cause overheating of the work piece. Glazing: the grinding wheel has a shiny appearance as the abrasive particles have lost their edge and failed to break away from the wheel. The grinding wheel will not cut effectively. These faults are caused by inappropriate choice of grinding wheel for the material being ground.", marks: 8, route: "a" },
+    { id: "r-1", kind: "anyN", verbatim: "Loading: a grinding wheel becomes loaded with small particles when grinding debris becomes trapped in the space between the abrasive grains and the wheel. This will cause overheating of the work piece. Glazing: the grinding wheel has a shiny appearance as the abrasive particles have lost their edge and failed to break away from the wheel. The grinding wheel will not cut effectively. These faults are caused by inappropriate choice of grinding wheel for the material being ground.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, grinding wheels and CNC technology; the scheme prices each (i) and each (ii) at 8. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "anyN", verbatim: "Machine tool envelope: area that includes all axes, spindles, chucks, turrets, tool holders, tailstocks, fixtures, clamps and stock.", marks: 8, route: "b", group: {"claimMax":2,"perOption":4,"options":["Machine tool envelope: area that includes all axes, spindles, chucks, turrets, tool holders, tailstocks, fixtures, clamps and stock.","Software simulation: Simulation software is essentially a program that allows the user to observe an operation through simulation without actually performing that operation. Simulation software is used widely to design equipment so that the final product will be as close to design specs as possible without expensive in-process modification.","Closed Loop Control: On commercial metalworking machines, closed loop controls are standard and required in order to provide the accuracy, speed and repeatability demanded. In a closed loop system, feedback is provided to the controller so that it can correct for errors in position, velocity and acceleration, which can arise due to variations in load or temperature."]} },
     ],
     figure: {
@@ -13333,7 +13333,7 @@ export const CARDS: SecCard[] = [
     questionText: "Grinding wheels are subject to conditions such as loading and glazing which affects the cutting ability of the grinding wheel. Describe a suitable wheel dressing process used to repair a grinding wheel. OR In modern CNC systems, CAD software is used to define the dimensions of a part while CAM software is used to control the machine. Identify two safety features incorporated into modern CNC machines.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "In the grinding process, wheel dressing is used to restore the cutting surface of any irregularities. Grinding wheels are designed to have a self-dressing action in which grains should break free and expose sharp edges. Wheel dressing will renew a sharp cutting face and correct irregularities such as wheel concentricity and any undulations in the wheel. A wheel dressing tool, such as the star dresser shown, is a long handled tool with a row of free running, hardened and serrated, wavy discs or star-shaped cutters running at right angles to the handle. These are presented to the grinding wheel as it is turned off and slows down. Force is applied to the face of the slowing wheel with the result that the hardened disk knocks the abrasive grains out and expose sharp edges.", marks: 8, route: "a" },
+    { id: "r-1", kind: "anyN", verbatim: "In the grinding process, wheel dressing is used to restore the cutting surface of any irregularities. Grinding wheels are designed to have a self-dressing action in which grains should break free and expose sharp edges. Wheel dressing will renew a sharp cutting face and correct irregularities such as wheel concentricity and any undulations in the wheel. A wheel dressing tool, such as the star dresser shown, is a long handled tool with a row of free running, hardened and serrated, wavy discs or star-shaped cutters running at right angles to the handle. These are presented to the grinding wheel as it is turned off and slows down. Force is applied to the face of the slowing wheel with the result that the hardened disk knocks the abrasive grains out and expose sharp edges.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, grinding wheels and CNC technology; the scheme prices each (i) and each (ii) at 8. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "anyN", verbatim: "Work area covered with clear guard.", marks: 8, route: "b", group: {"claimMax":2,"perOption":4,"options":["Work area covered with clear guard.","Emergency stop buttons.","Test-run software.","Interlocking guard."]} },
     ],
     figure: {
@@ -13440,7 +13440,7 @@ export const CARDS: SecCard[] = [
     questionText: "The 3-wheel electric-motor golf cruiser shown opposite has given people with reduced mobility the opportunity to continue to play golf. Describe, with the aid of a diagram, a suitable steering mechanism for the golf cruiser shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The use of a linkage system or rack and pinion mechanism would be suitable solutions for the steering mechanism of the golf cruiser. The steering wheel can be connected to the pinion and when rotated it will move the rack in a linear manner either left or right. The wheels in turn are connected via a linkage to the rack and this will allow the wheels turn.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "The use of a linkage system or rack and pinion mechanism would be suitable solutions for the steering mechanism of the golf cruiser. The steering wheel can be connected to the pinion and when rotated it will move the rack in a linear manner either left or right. The wheels in turn are connected via a linkage to the rack and this will allow the wheels turn.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR: the golf cruiser (c), (i) 8 and (ii) 4 + 4, and the IC chips (c), (i) 2 + 2, (ii) 4 and (iii) 4 + 4; priced differently, each branch has its own cards." },
     ],
     questionFigure: {
           "candId": "engineering-2018-HL-paper-q8c-crop",
@@ -13471,7 +13471,7 @@ export const CARDS: SecCard[] = [
     questionText: "The 3-wheel electric-motor golf cruiser shown opposite has given people with reduced mobility the opportunity to continue to play golf. Describe two advantages for having a single rear wheel cruiser over a single front wheel cruiser.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Greater stability for the vehicle", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Greater stability for the vehicle","Better under braking as weight is to the front.","Better aerodynamics","No chance of “nosedive” when cornering"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Greater stability for the vehicle", marks: 8, contextNote: "The paper sets two (c)s either side of an OR: the golf cruiser (c), (i) 8 and (ii) 4 + 4, and the IC chips (c), (i) 2 + 2, (ii) 4 and (iii) 4 + 4; priced differently, each branch has its own cards.", group: {"claimMax":2,"perOption":4,"options":["Greater stability for the vehicle","Better under braking as weight is to the front.","Better aerodynamics","No chance of “nosedive” when cornering"]} },
     ],
     questionFigure: {
           "candId": "engineering-2018-HL-paper-q8c-crop",
@@ -13493,7 +13493,7 @@ export const CARDS: SecCard[] = [
     questionText: "Integrated Circuit (IC) chips are used in many electronic devices. Describe two benefits of using IC chips.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Can be programmed", marks: 4, group: {"claimMax":2,"perOption":2,"options":["Can be programmed","ICs are cheap","ICs are very small in size","They are reusable, dependable, cost effective and energy efficient."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Can be programmed", marks: 4, contextNote: "The paper sets two (c)s either side of an OR: the golf cruiser (c), (i) 8 and (ii) 4 + 4, and the IC chips (c), (i) 2 + 2, (ii) 4 and (iii) 4 + 4; priced differently, each branch has its own cards.", group: {"claimMax":2,"perOption":2,"options":["Can be programmed","ICs are cheap","ICs are very small in size","They are reusable, dependable, cost effective and energy efficient."]} },
     ],
   } as SecCard,
   {
@@ -13506,7 +13506,7 @@ export const CARDS: SecCard[] = [
     questionText: "Integrated Circuit (IC) chips are used in many electronic devices. Outline the importance of using a heat sink in the soldering of IC circuits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Using a heat sink in soldering the microcontrollers will take away the heat from the microcontroller which will prevent it from overheating and possibly being damaged by the heat of the soldering iron.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Using a heat sink in soldering the microcontrollers will take away the heat from the microcontroller which will prevent it from overheating and possibly being damaged by the heat of the soldering iron.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR: the golf cruiser (c), (i) 8 and (ii) 4 + 4, and the IC chips (c), (i) 2 + 2, (ii) 4 and (iii) 4 + 4; priced differently, each branch has its own cards." },
     ],
   } as SecCard,
   {
@@ -13519,7 +13519,7 @@ export const CARDS: SecCard[] = [
     questionText: "Integrated Circuit (IC) chips are used in many electronic devices. State two common output components used in electronic circuits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "LED,", marks: 8, group: {"claimMax":2,"perOption":4,"options":["LED,","bulbs,","motors,","LCD display,","servo,"]} },
+    { id: "r-1", kind: "anyN", verbatim: "LED,", marks: 8, contextNote: "The paper sets two (c)s either side of an OR: the golf cruiser (c), (i) 8 and (ii) 4 + 4, and the IC chips (c), (i) 2 + 2, (ii) 4 and (iii) 4 + 4; priced differently, each branch has its own cards.", group: {"claimMax":2,"perOption":4,"options":["LED,","bulbs,","motors,","LCD display,","servo,"]} },
     ],
   } as SecCard,
   {
@@ -13890,7 +13890,7 @@ export const CARDS: SecCard[] = [
     questionText: "The heavy-duty conveyor wheel shown is driven by a stepper motor. Describe with the aid of a diagram, one method of securely attaching this wheel to the stepper motor shaft.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Use a key way to attach the wheel onto the motor which is secured using a grub screw.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Use a key way to attach the wheel onto the motor which is secured using a grub screw.", marks: 5, contextNote: "The scheme prints 'Alternative suggestions accepted'." },
     ],
     questionFigure: {
           "candId": "engineering-2019-HL-paper-q1e-art",
@@ -14014,7 +14014,7 @@ export const CARDS: SecCard[] = [
     questionText: "The hiking stick is telescopic to cater for people of different heights. Explain, with aid of a diagram, how the hiking stick may be designed to accommodate a telescopic adjustment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The shaft can have a series of holes drilled, this allows a threaded or spring-loaded pin to set the height. Tubular shafts fit into each other.", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "The shaft can have a series of holes drilled, this allows a threaded or spring-loaded pin to set the height. Tubular shafts fit into each other.", marks: 5, contextNote: "The scheme prints '5', for a suggested solution: 'other feasible solutions accepted'." },
     ],
     figure: {
           "candId": "engineering-2019-HL-scheme-q1j-sol",
@@ -14663,7 +14663,7 @@ export const CARDS: SecCard[] = [
     questionText: "Compare, with the aid of suitable diagrams, resistance spot welding and resistance seam welding, using the following headings:\n• Electrode shape\n• Welding procedure\n• Applications of each weld type\n• Safety considerations.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Resistance spot welding Electrode shape: The electrode is in the shape of a round bar with tapered ends where it contacts the material.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Resistance spot welding Electrode shape: The electrode is in the shape of a round bar with tapered ends where it contacts the material.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the resistance welding (c), answered as one part for 16, and the exoskeleton suit (c), whose (i) and (ii) are 4 + 4 each." },
     { id: "r-2", kind: "point", verbatim: "Resistance seam welding Electrode shape: The electrodes are disc shapes as they need to rotate during the process.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Resistance spot welding Welding procedure: The components to be joined are placed between the electrodes and then pressed together. A nugget weld is achieved as current is passed through the electrodes generating a large heat between the metals. It is very effectively used to join sheet metal together and is recognised by the distinctive circular mark left at the site of the weld.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Resistance seam welding Welding procedure: A form of resistance welding that uses copper roller electrodes to provide a continuous run of overlapping welds as the current is activated at set intervals. One of the electrodes may be driven by an electric motor. The workpiece is moved between the rollers and pulses of current are supplied. Each pulse is set to last long enough to produce a weld.", marks: null },
@@ -14692,7 +14692,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline two other applications of robotic control in medicine.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Remote surgery,", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Remote surgery,","microsurgery,","telepresence allows a specialist to use robots to treat patients in remote locations,","medical transportation robots can navigate through large facilities,","robots can be used to sanitise and disinfect rooms from infections,","prescription dispensing systems"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Remote surgery,", marks: 8, contextNote: "The paper sets two (c)s either side of an OR: the resistance welding (c), answered as one part for 16, and the exoskeleton suit (c), whose (i) and (ii) are 4 + 4 each.", group: {"claimMax":2,"perOption":4,"options":["Remote surgery,","microsurgery,","telepresence allows a specialist to use robots to treat patients in remote locations,","medical transportation robots can navigate through large facilities,","robots can be used to sanitise and disinfect rooms from infections,","prescription dispensing systems"]} },
     ],
     questionFigure: {
           "candId": "engineering-2019-HL-paper-q5ci-art",
@@ -14858,7 +14858,7 @@ export const CARDS: SecCard[] = [
     questionText: "Tungsten carbide is the material of choice in the manufacture of mining tips, drill bits and other cutting tools. Explain how tungsten carbide insert tips are manufactured. OR Computer Numerical Control (CNC) technology is to the forefront of precision engineering manufacture. Explain the following aspects of CNC technology:\n• Impact on productivity\n• Reliability.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "During the production of tungsten carbide cutting tool inserts, cobalt and tungsten powder are mixed with cemented carbide and pressed into shape. The process: Carbon black, tungsten metal and metal oxides are mixed and heated until the carbon bonds with the tungsten (carburises). Mix the tungsten carbide powder with wax and cobalt. This is mixed very thoroughly using a ball mill to give you a final powder. This final powder is put in a mould and pressed to the desired shape. Heat (pre-sinter) the pressed, final powder enough so that is sticks together and shapes like soft chalk. Put the soft chalk pieces in a very hot, high pressure, special atmosphere oven and do the final sinter where the powder cooks, shrinks and gets very hard, this is the final piece of tungsten carbide.", marks: 8, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "During the production of tungsten carbide cutting tool inserts, cobalt and tungsten powder are mixed with cemented carbide and pressed into shape. The process: Carbon black, tungsten metal and metal oxides are mixed and heated until the carbon bonds with the tungsten (carburises). Mix the tungsten carbide powder with wax and cobalt. This is mixed very thoroughly using a ball mill to give you a final powder. This final powder is put in a mould and pressed to the desired shape. Heat (pre-sinter) the pressed, final powder enough so that is sticks together and shapes like soft chalk. Put the soft chalk pieces in a very hot, high pressure, special atmosphere oven and do the final sinter where the powder cooks, shrinks and gets very hard, this is the final piece of tungsten carbide.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, tungsten carbide inserts and CNC technology; the scheme prices each (i) and each (ii) at 8. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Impact on productivity: products can be manufactured precisely at greater speeds than by using traditional technology, less expertise is required, machines will run without interruption, tool changes are automated, etc.", marks: 4, route: "b" },
     { id: "r-3", kind: "point", verbatim: "Reliability: CNC machines will produce high quality products on a consistent basis, accuracy is assured, etc.", marks: 4, route: "b" },
     ],
@@ -14873,7 +14873,7 @@ export const CARDS: SecCard[] = [
     questionText: "Tungsten carbide is the material of choice in the manufacture of mining tips, drill bits and other cutting tools. Outline two advantages of the use of tungsten carbide insert tips. OR Computer Numerical Control (CNC) technology is to the forefront of precision engineering manufacture. Describe the following CNC machining operations:\n• Automatic tool change\n• Test run.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.", marks: 8, route: "a", group: {"claimMax":2,"perOption":4,"options":["Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.","Experienced operators will ensure longer tool life.","Tools are not sharpened which is time consuming and dependent on the skill of the operator for effectiveness, inserts are replaced.","Inserts can have a number of cutting edges integrated into their design."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, tungsten carbide inserts and CNC technology; the scheme prices each (i) and each (ii) at 8. Both branches are on this card: claim the rows for the branch you answered.", route: "a", group: {"claimMax":2,"perOption":4,"options":["Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.","Experienced operators will ensure longer tool life.","Tools are not sharpened which is time consuming and dependent on the skill of the operator for effectiveness, inserts are replaced.","Inserts can have a number of cutting edges integrated into their design."]} },
     { id: "r-2", kind: "anyN", verbatim: "Automatic tool change: It allows the machine to work with a large number of tools without an operator. When required, stored tools will assume a fixed position (tool change position) to allow the machine pick up the required tool.", marks: 4, route: "b" },
     { id: "r-3", kind: "anyN", verbatim: "Test run: the machine will simulate the cutting operations of a designed workpiece to ensure that the CNC machine will produce a suitable workpiece in the most efficient method.", marks: 4, route: "b" },
     ],
@@ -15018,7 +15018,7 @@ export const CARDS: SecCard[] = [
     questionText: "The crop spraying unit shown opposite is suitable for attaching to a quad bike and has retractable boom spraying arms. Describe, with the aid of a diagram, a suitable retractable mechanism for the spray boom. OR A control circuit for electronic appliances and devices is shown. This circuit generally delivers a 6-12V power supply. Describe the function of the transformer in the circuit shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The boom arms can retract into a storage position by folding the linkages, this can be powered by hydraulics or manually folded and locked into position.", marks: 8, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "The boom arms can retract into a storage position by folding the linkages, this can be powered by hydraulics or manually folded and locked into position.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, the crop sprayer and the control circuit; the scheme prices each (i) and each (ii) at 8. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "A transformer will reduce the voltage in a power supply circuit usually from 240 V mains supply to 6-12 V.", marks: 8, route: "b" },
     ],
     questionFigure: {
@@ -15050,7 +15050,7 @@ export const CARDS: SecCard[] = [
     questionText: "The crop spraying unit shown opposite is suitable for attaching to a quad bike and has retractable boom spraying arms. Describe one advantage and one disadvantage of retractable boom spraying arms. OR A control circuit for electronic appliances and devices is shown. This circuit generally delivers a 6-12V power supply. Identify one other component in the circuit shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Advantages: provides a large spraying area making the process faster, boom stores more efficiently when folded, product can easily be transported, etc.", marks: 4, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Advantages: provides a large spraying area making the process faster, boom stores more efficiently when folded, product can easily be transported, etc.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR, the crop sprayer and the control circuit; the scheme prices each (i) and each (ii) at 8. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Disadvantages: lightweight arms can damage if obstacles catch it, the rear facing arms demand driver concentration as the arms are considerably wider than the vehicle, need to be folded when going through narrow gaps, etc.", marks: 4, route: "a" },
     { id: "r-3", kind: "alt", verbatim: "PCB,", marks: 8, accepts: ["capacitors,","diode,","bridge rectifier,","inductor coil."], route: "b" },
     ],
@@ -16124,7 +16124,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a diagram(s), the features of the submerged arc welding process shown, with reference to equipment, operation and applications.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In submerged arc welding, a bare wire electrode is used. It is fed automatically from a spool and generates an electric arc to heat the metal. The flux, in powder form, is fed from a hopper to completely cover the joint and the tip of the electrode. The arc creates the heat to melt the joint, flux and electrode. A slag is formed to provide a protective coating for the weld. The excess flux powder can be collected and used again. Submerged arc welding is a fully automated process.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "In submerged arc welding, a bare wire electrode is used. It is fed automatically from a spool and generates an electric arc to heat the metal. The flux, in powder form, is fed from a hopper to completely cover the joint and the tip of the electrode. The arc creates the heat to melt the joint, flux and electrode. A slag is formed to provide a protective coating for the weld. The excess flux powder can be collected and used again. Submerged arc welding is a fully automated process.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the submerged arc welding (c), answered as one part for 16, and the robotic cleaner (c), whose (i) and (ii) are 4 + 4 each." },
     { id: "r-2", kind: "point", verbatim: "Applications: used for large scale, straight line welds such as steel reinforcing beams, shipbuilding and bridge construction.", marks: null },
     ],
     questionFigure: {
@@ -16156,7 +16156,7 @@ export const CARDS: SecCard[] = [
     questionText: "Robotic floor cleaners are widely used in areas such as airports and shopping centres utilising a variety of sensors to accurately navigate in such spaces. Explain the difference between proximity sensors and navigation sensors in relation to the operation of the robotic cleaner.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Proximity Sensors Proximity sensors are similar to parking sensors on a car. They detect near-by objects and avoid them during the cleaning process.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Proximity Sensors Proximity sensors are similar to parking sensors on a car. They detect near-by objects and avoid them during the cleaning process.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR: the submerged arc welding (c), answered as one part for 16, and the robotic cleaner (c), whose (i) and (ii) are 4 + 4 each." },
     { id: "r-2", kind: "point", verbatim: "Navigation Sensors Navigation sensors rely on GPS and virtual walls to determine where the cleaner has cleaned and where it has yet to clean.", marks: 4 },
     ],
   } as SecCard,
@@ -16170,7 +16170,7 @@ export const CARDS: SecCard[] = [
     questionText: "Robotic floor cleaners are widely used in areas such as airports and shopping centres utilising a variety of sensors to accurately navigate in such spaces. Outline two advantages the robotic cleaner has over human-based cleaning operations.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Robotic cleaners can work 24/7.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Robotic cleaners can work 24/7.","Cleans better and more consistently than humans.","The is no down time with these cleaners.","Reduces fatigue, errors and injuries resulting from repetitive strain.","It is automated and is better suited than humans for maximum uptime and repeatability."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Robotic cleaners can work 24/7.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR: the submerged arc welding (c), answered as one part for 16, and the robotic cleaner (c), whose (i) and (ii) are 4 + 4 each.", group: {"claimMax":2,"perOption":4,"options":["Robotic cleaners can work 24/7.","Cleans better and more consistently than humans.","The is no down time with these cleaners.","Reduces fatigue, errors and injuries resulting from repetitive strain.","It is automated and is better suited than humans for maximum uptime and repeatability."]} },
     ],
   } as SecCard,
   {
@@ -16338,7 +16338,7 @@ export const CARDS: SecCard[] = [
     questionText: "A prototype of the camera handle shown is turned on a centre lathe. Describe, with the aid of diagrams, three operations used in making the camera handle on a centre lathe.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Parallel turning – reducing the metal diameter.", marks: 9, group: {"claimMax":3,"perOption":3,"options":["Parallel turning – reducing the metal diameter.","Facing – getting a good finish on the front face.","Centre drilling/Drilling - Drilling a hole in the workpiece","Boring / Internal threading Widening the drill hole precisely then creating the internal thread.","Knurling – putting finger grips on the workpiece.","Grooving / Parting-off - cutting the grooves and then cutting the piece to the correct length."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Parallel turning – reducing the metal diameter.", marks: 9, contextNote: "The paper sets two (c)s either side of an OR, the camera handle and CNC technology; the scheme prices them differently ((i) 3 + 3 + 3 against 4 + 4, (ii) 7 against 4 + 4), so each branch has its own cards.", group: {"claimMax":3,"perOption":3,"options":["Parallel turning – reducing the metal diameter.","Facing – getting a good finish on the front face.","Centre drilling/Drilling - Drilling a hole in the workpiece","Boring / Internal threading Widening the drill hole precisely then creating the internal thread.","Knurling – putting finger grips on the workpiece.","Grooving / Parting-off - cutting the grooves and then cutting the piece to the correct length."]} },
     ],
     questionFigure: {
           "candId": "engineering-2020-HL-paper-q7ci-art",
@@ -16369,7 +16369,7 @@ export const CARDS: SecCard[] = [
     questionText: "A prototype of the camera handle shown is turned on a centre lathe. Explain, with the aid of diagrams, the differences between generating and forming in machining processes.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Generating refers to the creation of workpiece due to the feed trajectory of the cutting tool, examples include straight turning, taper turning and profile milling.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Generating refers to the creation of workpiece due to the feed trajectory of the cutting tool, examples include straight turning, taper turning and profile milling.", marks: null, contextNote: "The paper sets two (c)s either side of an OR, the camera handle and CNC technology; the scheme prices them differently ((i) 3 + 3 + 3 against 4 + 4, (ii) 7 against 4 + 4), so each branch has its own cards." },
     { id: "r-2", kind: "point", verbatim: "Forming involves the creation of workpiece shape due to the shape of the cutting tool; common examples include form turning and drilling.", marks: null },
     ],
     questionFigure: {
@@ -16401,7 +16401,7 @@ export const CARDS: SecCard[] = [
     questionText: "Manufacturing companies use CNC technology to mass produce musical instruments such as electric guitars. Explain each of the following in relation to CNC technology:\n• Machine tool calibration\n• Closed loop control.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Machine Tool Calibration is the process of measuring, diagnosing and correcting the manufacturing error within your Machine Tool or CNC machine. Most large machine tools come directly from the manufacturer with a set of tolerances, calibration is the resetting of machines and tools to agreed dimensions for machining operations.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Machine Tool Calibration is the process of measuring, diagnosing and correcting the manufacturing error within your Machine Tool or CNC machine. Most large machine tools come directly from the manufacturer with a set of tolerances, calibration is the resetting of machines and tools to agreed dimensions for machining operations.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR, the camera handle and CNC technology; the scheme prices them differently ((i) 3 + 3 + 3 against 4 + 4, (ii) 7 against 4 + 4), so each branch has its own cards." },
     { id: "r-2", kind: "point", verbatim: "Closed loop control is a control system with feedback. It continuously measures the output value of the system and compares output value with the desired value. If the value of the output and input are not equal, then an adjustment is made.", marks: 4 },
     ],
     questionFigure: {
@@ -16424,7 +16424,7 @@ export const CARDS: SecCard[] = [
     questionText: "Manufacturing companies use CNC technology to mass produce musical instruments such as electric guitars. Explain the benefits of using CNC technology over the hand crafting of musical instruments.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "CNC machining accurately produces piece after piece to the exact same dimensions, this is impractical with handcrafting of instruments. CNC machines repeatedly product object to the same measurements.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "CNC machining accurately produces piece after piece to the exact same dimensions, this is impractical with handcrafting of instruments. CNC machines repeatedly product object to the same measurements.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR, the camera handle and CNC technology; the scheme prices them differently ((i) 3 + 3 + 3 against 4 + 4, (ii) 7 against 4 + 4), so each branch has its own cards." },
     { id: "r-2", kind: "point", verbatim: "While initial set-up time may be long in CNC machines, once the program runs production time is fast and productivity and output is increased.", marks: 4 },
     ],
     questionFigure: {
@@ -16559,7 +16559,7 @@ export const CARDS: SecCard[] = [
     questionText: "The all-terrain surveillance vehicle shown opposite operates on tracks and has a camera capable of rotating through 360°. Describe, with the aid of a diagram, a suitable drive mechanism for the surveillance vehicle. OR Photovoltaic (PV) panels are often used to power flashing beacons at pedestrian and train crossings. Outline one energy conversion that takes place in the photovoltaic panels.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The use of a worm and worm wheel mechanism would provide the drive for the surveillance vehicle. The drive motor is attached to the worm and the worm wheel and shaft is connected to the drive tracks on both sides. This also provides control for speed reduction and increased torque.", marks: 8, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "The use of a worm and worm wheel mechanism would provide the drive for the surveillance vehicle. The drive motor is attached to the worm and the worm wheel and shaft is connected to the drive tracks on both sides. This also provides control for speed reduction and increased torque.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, the surveillance vehicle and the photovoltaic panels; the scheme prices each (i) and each (ii) at 8. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "The energy conversion which takes place in a photovoltaic panel is solar energy to electrical energy. Solar battery charging systems can convert solar to chemical energy and then chemical to electrical energy.", marks: 8, route: "b" },
     ],
     questionFigure: {
@@ -16591,7 +16591,7 @@ export const CARDS: SecCard[] = [
     questionText: "The all-terrain surveillance vehicle shown opposite operates on tracks and has a camera capable of rotating through 360°. Describe, with the aid of a diagram, a suitable mechanism which will rotate the camera through 360°. OR Photovoltaic (PV) panels are often used to power flashing beacons at pedestrian and train crossings. Describe one advantage and one disadvantage of the use of photovoltaic panels.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Using bevel gear mechanism would provide the possibility of 360° rotation for the camera. This mechanism transmits rotation through 90°. The motor is attached to the top smaller bevel gear and the camera shaft is attached to the larger bevel gear.", marks: 8, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Using bevel gear mechanism would provide the possibility of 360° rotation for the camera. This mechanism transmits rotation through 90°. The motor is attached to the top smaller bevel gear and the camera shaft is attached to the larger bevel gear.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, the surveillance vehicle and the photovoltaic panels; the scheme prices each (i) and each (ii) at 8. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "alt", verbatim: "Advantages of photovoltaic (PV) panels Electricity produced by solar cells is clean and silent. As these panels do not use fuel other than sunshine, PV systems do not release any harmful air or water pollution into the environment, deplete natural resources, endanger animal or human health.", marks: 4, accepts: ["Advantages of photovoltaic (PV) panels Photovoltaic systems are quiet and visually unobtrusive.","Advantages of photovoltaic (PV) panels Small-scale solar plants can take advantage of unused space on rooftops of existing buildings.","Advantages of photovoltaic (PV) panels Solar energy is a locally available renewable resource.","Advantages of photovoltaic (PV) panels Solar energy can be used to charge battery or capacitor systems and release energy when sun is not available."], route: "b" },
     { id: "r-3", kind: "alt", verbatim: "Disadvantages of photovoltaic panels Some toxic chemicals, like cadmium and arsenic, are used in the PV production process. These environmental impacts are minor and can be easily controlled through recycling and proper disposal.", marks: 4, accepts: ["Disadvantages of photovoltaic panels Solar energy is somewhat more expensive to produce than conventional sources of energy due in part to the cost of manufacturing PV devices and in part to the conversion efficiencies of the equipment.","Disadvantages of photovoltaic panels Solar power is a variable energy source, with energy production dependent on the sun. Solar facilities may produce no power at all some of the time, which could lead to an energy shortage if too much of a region's power comes from solar power."], route: "b" },
     ],
@@ -17825,7 +17825,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using the graph paper supplied, plot the stress - strain diagram for the alloy.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Using the graph paper supplied, plot the stress - strain diagram for the alloy.", marks: 10, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.", ask: true },
+    { id: "r-1", kind: "point", verbatim: "Using the graph paper supplied, plot the stress - strain diagram for the alloy.", marks: 10, contextNote: "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The scheme heads this answer \"(b) (ii)\"; its marks grid prices the plot as (b)(i), 10 marks.", ask: true },
     ],
     questionFigure: {
           "candId": "engineering-2021-HL-paper-q3b-crop",
@@ -18056,7 +18056,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a diagram(s), one other method of lifting a ride-on lawnmower safely.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "This lift table design incorporates hydraulic cylinders and an electrically powered pump to actuate the scissor lifting mechanism. As the cylinder extends, the scissor arm is pushed upwards raising the platform.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "This lift table design incorporates hydraulic cylinders and an electrically powered pump to actuate the scissor lifting mechanism. As the cylinder extends, the scissor arm is pushed upwards raising the platform.", marks: 8, contextNote: "The scheme prints: Suggested solution - other viable solutions are acceptable." },
     ],
     figure: {
           "candId": "engineering-2021-HL-scheme-q9aii-sol",
@@ -19273,7 +19273,7 @@ export const CARDS: SecCard[] = [
     questionText: "Photovoltaic power stations (solar farms) contain a large array of solar panels, as shown, that supply electricity to the power grid. Outline one advantage and one disadvantage of solar farms in Ireland.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Renewable energy source.", marks: 3, accepts: ["Reduced electricity bills.","Diverse applications.","Low maintenance costs."] },
+    { id: "r-1", kind: "alt", verbatim: "Renewable energy source.", marks: 3, accepts: ["Reduced electricity bills.","Diverse applications.","Low maintenance costs."], contextNote: "The scheme prints '3 + 2': any one advantage, then any one disadvantage." },
     { id: "r-2", kind: "alt", verbatim: "Weather dependent.", marks: 2, accepts: ["Expensive to initially set-up.","Use up lots of space.","Solar energy is expensive to store."] },
     ],
     questionFigure: {
@@ -19894,7 +19894,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one advantage and one disadvantage of using polymers in the manufacture of domestic products.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Lower production costs", marks: 3, accepts: ["Potential for innovative design","Can be produced in a range of colours","May be recyclable"] },
+    { id: "r-1", kind: "alt", verbatim: "Lower production costs", marks: 3, accepts: ["Potential for innovative design","Can be produced in a range of colours","May be recyclable"], contextNote: "The scheme prints '3 + 2' under its columns of advantages and disadvantages, read here as 3 for the advantage and 2 for the disadvantage, in the order asked." },
     { id: "r-2", kind: "alt", verbatim: "Tendency to be disposable", marks: 2, accepts: ["May not last as long","Many products are not designed to be strong","Many products are not made from recyclable polymers"] },
     ],
   } as SecCard,
@@ -20021,7 +20021,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline one advantage and one disadvantage of a fully electric vehicle (EV).",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Can use renewable energy sources", marks: 3, accepts: ["Cost of fossil fuels","Cleaner environment","Less noise"] },
+    { id: "r-1", kind: "alt", verbatim: "Can use renewable energy sources", marks: 3, accepts: ["Cost of fossil fuels","Cleaner environment","Less noise"], contextNote: "The scheme prints '3 + 2' under its columns of advantages and disadvantages, read here as 3 for the advantage and 2 for the disadvantage, in the order asked." },
     { id: "r-2", kind: "alt", verbatim: "Range of travel without recharging", marks: 2, accepts: ["Expensive to initially purchase","Lack of public charging points","Cost of electricity"] },
     ],
     questionFigure: {
@@ -20604,7 +20604,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a diagram(s), Submerged arc welding (SAW), with reference to each of the following:\nprinciple of operation\nweld pool protection\nsafety features\napplications.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Submerged Arc Welding: Operation: In submerged arc welding, a bare wire electrode is used. It is fed automatically from a spool and generates an electric arc to heat the metal. Weld pool protection: The flux, in powder form, is fed from a hopper to completely cover the joint and the tip of the electrode. The arc creates the heat to melt the joint, flux and electrode. A slag is formed to provide a protective coating for the weld. The excess flux powder can be collected and used again. Safety features: Submerged arc welding is an automated process. The operator may guide and monitor the welding process from a safe distance, a camera may assist this process. Large and heavy objects can be welded with consistent quality welds and movement. Applications: used for large‐scale straight‐line welds such as steel reinforcing beams, shipbuilding and bridge construction.", marks: 16 },
+    { id: "r-1", kind: "point", verbatim: "Submerged Arc Welding: Operation: In submerged arc welding, a bare wire electrode is used. It is fed automatically from a spool and generates an electric arc to heat the metal. Weld pool protection: The flux, in powder form, is fed from a hopper to completely cover the joint and the tip of the electrode. The arc creates the heat to melt the joint, flux and electrode. A slag is formed to provide a protective coating for the weld. The excess flux powder can be collected and used again. Safety features: Submerged arc welding is an automated process. The operator may guide and monitor the welding process from a safe distance, a camera may assist this process. Large and heavy objects can be welded with consistent quality welds and movement. Applications: used for large‐scale straight‐line welds such as steel reinforcing beams, shipbuilding and bridge construction.", marks: 16, contextNote: "The paper sets two (c)s either side of an OR: submerged arc welding, \"16\", answered on one card, and the robotics (c), whose (i) and (ii) each have a card of their own." },
     ],
     figure: {
           "candId": "engineering-2022-HL-deferred-scheme-q6c-sol",
@@ -20626,7 +20626,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline two advantages of using servo motors rather than DC motors in robotic control systems.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Servo motors have excellent speed control with more precise movement than DC motors,", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Servo motors have excellent speed control with more precise movement than DC motors,", marks: null, contextNote: "The paper sets two (c)s either side of an OR: submerged arc welding, \"16\", answered on one card, and the robotics (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "they are highly reliable,", marks: null },
     { id: "r-3", kind: "point", verbatim: "they will deliver high output power relative to their size,", marks: null },
     { id: "r-4", kind: "point", verbatim: "provide more constant torque at higher speed,", marks: null },
@@ -20653,7 +20653,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two reasons why robotic welding is suitable for vehicle manufacture.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Produces consistent, high‐quality welds.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Produces consistent, high‐quality welds.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: submerged arc welding, \"16\", answered on one card, and the robotics (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Improved yields and productivity due to speed of robotic welding,", marks: null },
     { id: "r-3", kind: "point", verbatim: "A range of welding processes can be used in robotic welding such as resistance welding, MIG, etc", marks: null },
     ],
@@ -20876,7 +20876,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of suitable diagrams, the essential features of each of the following:\n(i) Magnetic chuck;\n(ii) Up-cut milling.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Magnetic chuck Used for holding ferromagnetic workpieces, a magnetic chuck consists of an accurately centred permanent magnet face. Electromagnets or permanent magnets are brought into contact with fixed ferrous plates, or pole pieces, contained within a housing. These pole pieces are usually flush with the housing surface. The part (workpiece) to be held forms the closing of the magnetic loop or path, onto those fixed plates, providing a secure anchor for the workpiece. There are two basic types of magnetic chucks now available (electromagnetic and permanent), but they come in a variety of sizes, shapes and modifications to suit many different applications. Electromagnetic chucks are charged by an electrical current while permanent‐type magnetic chucks are based on permanent magnets. Both types can be turned on and off.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "Magnetic chuck Used for holding ferromagnetic workpieces, a magnetic chuck consists of an accurately centred permanent magnet face. Electromagnets or permanent magnets are brought into contact with fixed ferrous plates, or pole pieces, contained within a housing. These pole pieces are usually flush with the housing surface. The part (workpiece) to be held forms the closing of the magnetic loop or path, onto those fixed plates, providing a secure anchor for the workpiece. There are two basic types of magnetic chucks now available (electromagnetic and permanent), but they come in a variety of sizes, shapes and modifications to suit many different applications. Electromagnetic chucks are charged by an electrical current while permanent‐type magnetic chucks are based on permanent magnets. Both types can be turned on and off.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR: the magnetic chuck and up-cut milling, \"8\" each and both asked, answered on one card, and the CNC (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Up‐cut milling: The conventional milling method. In this process the milling cutter is rotating against the direction of the workpiece. There is a danger of the workpiece lifting out of the vice, therefore effective clamping is necessary. A smoother cutting action is achieved.", marks: 8 },
     ],
     figure: {
@@ -20899,7 +20899,7 @@ export const CARDS: SecCard[] = [
     questionText: "Modern CNC machines are used to produce complex parts. Describe two advantages of CNC machining over traditional machining methods.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "They repeatedly produce parts to maximum accuracy.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "They repeatedly produce parts to maximum accuracy.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the magnetic chuck and up-cut milling, \"8\" each and both asked, answered on one card, and the CNC (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "CNC machines allow multiple axes of simultaneous motion, resulting in 2D and 3D machining ability.", marks: null },
     { id: "r-3", kind: "point", verbatim: "CNC machines allow for efficient mass production.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Minimal setting‐up between batch productions of components.", marks: null },
@@ -20927,7 +20927,7 @@ export const CARDS: SecCard[] = [
     questionText: "Modern CNC machines are used to produce complex parts. Outline the benefits of simulation with reference to:\nEnvironment\nQuality control.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Simulation has an environmental impact by the reduction of energy and material use in the design stage of a product. Circuits can be tested for functionality by simulation without construction.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Simulation has an environmental impact by the reduction of energy and material use in the design stage of a product. Circuits can be tested for functionality by simulation without construction.", marks: 4, contextNote: "The scheme opens: 'Simulation tools are mathematical applications designed to predict the behaviour, performance and outcome of programmed manufacturing processes. They provide the means for testing and verifying the program before the instructions are sent to the machine.' The paper sets two (c)s either side of an OR: the magnetic chuck and up-cut milling, \"8\" each and both asked, answered on one card, and the CNC (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Quality can be made more efficient as design improvement can be enacted quickly by simulation rather than fabricating a product. Machining simulation can optimise production methods and run machines at full capacity. Breakdown is less frequent as machining can be monitored automatically with predictive maintenance.", marks: 4 },
     ],
     questionFigure: {
@@ -20981,7 +20981,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using a diagram, explain how tilt, in the arced direction ‘X’, may be achieved.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "suggested solution: A hydraulic cylinder can be used to create the tilt required by the forklift. The fulcrum at the base of the will allow the arched tilt in direction X. Note: the hydraulic chain and pulley mechanism could be used to lift the forklift arms.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "suggested solution: A hydraulic cylinder can be used to create the tilt required by the forklift. The fulcrum at the base of the will allow the arched tilt in direction X. Note: the hydraulic chain and pulley mechanism could be used to lift the forklift arms.", marks: 8, contextNote: "The scheme's second sentence reads 'The fulcrum at the base of the will allow', a word missing as printed." },
     ],
     questionFigure: {
           "candId": "engineering-2022-HL-deferred-paper-q9a-crop",
@@ -21056,7 +21056,7 @@ export const CARDS: SecCard[] = [
     questionText: "Rotating turntables can be used to display new car models, as they provide stable and controlled rotation. Describe, with the aid of a suitable diagram(s), a turntable that will provide each of the following:\n(i) Low speed rotary drive.\n(ii) Support and stability.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The pin gear mechanism shown will deliver a low speed drive for the turntable as the motor is attached to the small pinion which drives the turntable via a larger gear or pin wheel.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "The pin gear mechanism shown will deliver a low speed drive for the turntable as the motor is attached to the small pinion which drives the turntable via a larger gear or pin wheel.", marks: 8, contextNote: "The scheme opens: 'Mechanisms such as worm and wheel, chain drives, gearbox and motor, internal annular gear, external pin gear drives can be considered.' The paper sets two (c)s either side of an OR: the turntable's drive and support, \"8 + 8\", answered on one card, and the relay and stepper motor (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "The drive mechanism and motor are attached to the turntable structure. As these turntables are large, a system of stabilising wheels gives support to the structure and drive mechanism. This ensures that the turntable remains stable.", marks: 8 },
     ],
     questionFigure: {
@@ -21088,7 +21088,7 @@ export const CARDS: SecCard[] = [
     questionText: "Electronic systems use a range of components in control technology. Relays and stepper motors are two examples. Explain, using a diagram, the principle of operation for a relay.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A relay is an electromagnetic device that changes switching contacts when it receives an electric signal. It consists of a wire coil with a soft iron core. If a small current is passed through the coil, the iron core is magnetised and a pivoted armature is attracted towards the magnetised core. The movement of the armature closes the contacts and may open other contacts. These contacts can be used to control larger currents or a secondary circuit.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "A relay is an electromagnetic device that changes switching contacts when it receives an electric signal. It consists of a wire coil with a soft iron core. If a small current is passed through the coil, the iron core is magnetised and a pivoted armature is attracted towards the magnetised core. The movement of the armature closes the contacts and may open other contacts. These contacts can be used to control larger currents or a secondary circuit.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR: the turntable's drive and support, \"8 + 8\", answered on one card, and the relay and stepper motor (c), whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2022-HL-deferred-paper-q9cor-crop",
@@ -21119,7 +21119,7 @@ export const CARDS: SecCard[] = [
     questionText: "Electronic systems use a range of components in control technology. Relays and stepper motors are two examples. Outline two advantages of using stepper motors in control technology.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Will deliver precise movement.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Will deliver precise movement.", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the turntable's drive and support, \"8 + 8\", answered on one card, and the relay and stepper motor (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Stepper motors are compact.", marks: null },
     { id: "r-3", kind: "point", verbatim: "They have excellent speed control.", marks: null },
     { id: "r-4", kind: "point", verbatim: "They are highly reliable due to the absence of motor contact brushes.", marks: null },
@@ -22450,7 +22450,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a diagram, a case hardening process.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The piece is packed in a box with a carbon rich material such as charcoal and placed in a furnace at 920°C (above UCT). This allows the carbon to diffuse into the piece.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "The piece is packed in a box with a carbon rich material such as charcoal and placed in a furnace at 920°C (above UCT). This allows the carbon to diffuse into the piece.", marks: null, contextNote: "The scheme prints: Suggested answer other solutions accepted. 8 marks." },
     { id: "r-2", kind: "point", verbatim: "The longer the component is in the furnace the greater the depth of penetration of carbon.", marks: null },
     { id: "r-3", kind: "point", verbatim: "The result is a very hard coarse outer shell.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Grain refining is necessary to prevent cracking and this is done by putting the piece into a bath of molten salt at 780°C for half an hour and then quenching it in water.", marks: null },
@@ -23215,7 +23215,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify two examples of how this technology could benefit the environment.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Entertainment and gaming", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Entertainment and gaming", marks: null, contextNote: "The scheme answers with examples of extended reality, under the heading 'Examples of Extended Reality include:'" },
     { id: "r-2", kind: "point", verbatim: "Education and training", marks: null },
     { id: "r-3", kind: "point", verbatim: "Medical/surgical training", marks: null },
     { id: "r-4", kind: "point", verbatim: "Military – defence training", marks: null },
@@ -23352,7 +23352,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe the principle of operation for any test carried out on this machine.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Charpy test. The notched bar specimen is clamped horizontally with the notch facing the striker. The pendulum is released from a striking energy of 300 joules. The specimen is deformed or broken with the resultant follow through giving a numerical value for the toughness of the material.", marks: 8, accepts: ["Izod test The notched bar specimen is clamped vertically with the notch facing the striker. The pendulum is released from a striking energy of 167 joules. The specimen is deformed or broken with the resultant follow through giving a numerical value for the toughness of the material."] },
+    { id: "r-1", kind: "alt", verbatim: "Charpy test. The notched bar specimen is clamped horizontally with the notch facing the striker. The pendulum is released from a striking energy of 300 joules. The specimen is deformed or broken with the resultant follow through giving a numerical value for the toughness of the material.", marks: 8, accepts: ["Izod test The notched bar specimen is clamped vertically with the notch facing the striker. The pendulum is released from a striking energy of 167 joules. The specimen is deformed or broken with the resultant follow through giving a numerical value for the toughness of the material."], contextNote: "The scheme opens: 'Two impact tests can be performed on this machine.'" },
     ],
     questionFigure: {
           "candId": "engineering-2023-HL-deferred-paper-q3b-crop",
@@ -23851,7 +23851,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a diagram(s), the principle of MIG welding, with reference to each of the following:\nEquipment\nElectrode type\nWeld pool protection\nApplication.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "MIG Welding: MIG welding is semi-automatic process that can be automated through the use of robotics. Equipment: A DC power source is used to provide variable electrical current to generate the required temperature for welding. The welding unit has a motorised wire feed unit to supply continuous electrode and inert gas through the flexible hosepipe leading to the welding gun. Electrode type: A spool of bare wire electrode is fed continuously to the welding gun. Composition and thickness can vary to suit the application. No slag is produced. Weld pool protection: The weld pool is protected from contamination by inert gas, fed from a pressure regulated cylinder through the hosepipe and distributed at the nozzle to the weld area. Typical inert gases; argon, nitrogen, carbon dioxide or helium. Application: light and heavy gauge mild steel is the most common. Can also be used to weld aluminium (AC), stainless steel and copper, with appropriate settings.", marks: 16 },
+    { id: "r-1", kind: "point", verbatim: "MIG Welding: MIG welding is semi-automatic process that can be automated through the use of robotics. Equipment: A DC power source is used to provide variable electrical current to generate the required temperature for welding. The welding unit has a motorised wire feed unit to supply continuous electrode and inert gas through the flexible hosepipe leading to the welding gun. Electrode type: A spool of bare wire electrode is fed continuously to the welding gun. Composition and thickness can vary to suit the application. No slag is produced. Weld pool protection: The weld pool is protected from contamination by inert gas, fed from a pressure regulated cylinder through the hosepipe and distributed at the nozzle to the weld area. Typical inert gases; argon, nitrogen, carbon dioxide or helium. Application: light and heavy gauge mild steel is the most common. Can also be used to weld aluminium (AC), stainless steel and copper, with appropriate settings.", marks: 16, contextNote: "The paper sets two (c)s either side of an OR: MIG welding, \"16\", answered on one card, and the farming robotics (c), whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2023-HL-deferred-paper-q6c-crop",
@@ -23913,7 +23913,7 @@ export const CARDS: SecCard[] = [
     questionText: "Select a suitable screen protector material for the smart watch shown opposite. Justify your selection.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Polycarbonate", marks: 6, accepts: ["Thermoplastic polyurethane (TPU)","Polyethylene terephthalate (PET)","Toughened Glass …"] },
+    { id: "r-1", kind: "alt", verbatim: "Polycarbonate", marks: 6, accepts: ["Thermoplastic polyurethane (TPU)","Polyethylene terephthalate (PET)","Toughened Glass …"], contextNote: "The scheme lists materials and prints no justification for them." },
     ],
     questionFigure: {
           "candId": "engineering-2023-HL-deferred-paper-q7bi-crop",
@@ -24090,7 +24090,7 @@ export const CARDS: SecCard[] = [
     questionText: "Tungsten carbide inserts are commonly used on milling cutters.\n(i) Outline two advantages of using carbide inserts for machining.\n(ii) Explain how tungsten carbide cutting inserts are manufactured.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.","Long life and cost effective","Easily replaced, do not require sharpening"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR: the carbide inserts (c), whose (i) \"4 + 4\" and (ii) \"8\" are answered together on one card, and the CNC (c), whose (i) and (ii) each have a card of their own.", group: {"claimMax":2,"perOption":4,"options":["Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.","Long life and cost effective","Easily replaced, do not require sharpening"]} },
     { id: "r-2", kind: "anyN", verbatim: "During the production of tungsten carbide cutting tool inserts, cobalt and tungsten powder are mixed with cemented carbide and pressed into shape. The process: Carbon black, tungsten metal and metal oxides are mixed and heated until the carbon bonds with the tungsten (carburises). Mix the tungsten carbide powder with wax and cobalt. This is mixed very thoroughly using a ball mill to give a final powder. This final powder is put in a mould and pressed to the desired shape. Heat (pre-sinter) the pressed, final powder enough so that is sticks together and shapes like soft chalk. Put the soft chalk pieces in a very hot, high pressure oven and sinter to 1600 °C where the powder cooks, shrinks and hardens to tungsten carbide.", marks: 8 },
     ],
     questionFigure: {
@@ -24113,7 +24113,7 @@ export const CARDS: SecCard[] = [
     questionText: "Laser cutting technology is widely used in both schools and in industry. Using computer numerical control (CNC), they can perform precise movements. Explain why stepper motors are used to control the axial movements on a CNC machine.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Stepper motors provide a high degree of precision in their rotational movement with excellent speed control. They are strong and reliable, capable of repeatability with complex movements. They can work in a range of environments and require minimal maintenance.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "Stepper motors provide a high degree of precision in their rotational movement with excellent speed control. They are strong and reliable, capable of repeatability with complex movements. They can work in a range of environments and require minimal maintenance.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR: the carbide inserts (c), whose (i) \"4 + 4\" and (ii) \"8\" are answered together on one card, and the CNC (c), whose (i) and (ii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2023-HL-deferred-paper-q8cor-crop",
@@ -24135,7 +24135,7 @@ export const CARDS: SecCard[] = [
     questionText: "Laser cutting technology is widely used in both schools and in industry. Using computer numerical control (CNC), they can perform precise movements. Outline two advantages of simulation technology in CNC machining.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Can detect and correct any errors or collisions in the CNC code", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Can detect and correct any errors or collisions in the CNC code", marks: null, contextNote: "The paper sets two (c)s either side of an OR: the carbide inserts (c), whose (i) \"4 + 4\" and (ii) \"8\" are answered together on one card, and the CNC (c), whose (i) and (ii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Saves time and money by avoiding costly mistakes", marks: null },
     { id: "r-3", kind: "point", verbatim: "Preserves the integrity of the machine", marks: null },
     { id: "r-4", kind: "point", verbatim: "Reduces wastage of material ….", marks: null },
@@ -24276,7 +24276,7 @@ export const CARDS: SecCard[] = [
     questionText: "The ride-on lawnmover shown opposite features a number of control and safety mechanisms.\n(i) Describe, with the aid of a diagram(s), a suitable steering mechanism to control the directional movement of the lawnmover.\n(ii) Explain the operation of any safety mechanism that could prevent the mower blades rotating when the operator is not seated.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Suitable steering mechanisms: Rack and Pinion/ linkage system: • Pinion is connected to the steering column and wheel. • As pinion rotates the rack will move left or right. • Track rods, connected through the ball joints, will move the stub axles on their pivot points, thus turning the wheels left or right. Linear actuated system: • Mechanical or hydraulic method of rotating the vertical axle by rack and pinion or linkage mechanism", marks: 10 },
+    { id: "r-1", kind: "point", verbatim: "Suitable steering mechanisms: Rack and Pinion/ linkage system: • Pinion is connected to the steering column and wheel. • As pinion rotates the rack will move left or right. • Track rods, connected through the ball joints, will move the stub axles on their pivot points, thus turning the wheels left or right. Linear actuated system: • Mechanical or hydraulic method of rotating the vertical axle by rack and pinion or linkage mechanism", marks: 10, contextNote: "The paper sets two (c)s either side of an OR: the lawnmower (c), whose (i) \"10\" and (ii) \"6\" are answered together on one card, and the circuit board (c), whose (i), (ii) and (iii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Safety mechanism for blade rotation - Pressure sensitive switching. A possible solution is to install a kill-switch, which cuts power to the mower when the operator is not seated. A push to make switch (PTM) is fitted under the rear of the seat. The seat bracket is pivoted at the front and supported at the rear by two compression springs. The seat can hinge forward. When the seat is in the downward position, no pressure is applied to the switch, due to the resistance of compression springs. When the operator is seated, enough pressure is applied to push the switch down, thus completing the circuit and allowing engagement of the blade drive. When the operator rises from the seat, the switch will cut-out, as the compression springs allow the switch to return to the off position.", marks: 6 },
     ],
     questionFigure: {
@@ -24308,7 +24308,7 @@ export const CARDS: SecCard[] = [
     questionText: "The control unit shown below is an example of a printed circuit board with some common electronic components. Identify component X and component Y.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Component X is an integrated chip (IC).", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "Component X is an integrated chip (IC).", marks: 2, contextNote: "The paper sets two (c)s either side of an OR: the lawnmower (c), whose (i) \"10\" and (ii) \"6\" are answered together on one card, and the circuit board (c), whose (i), (ii) and (iii) each have a card of their own." },
     { id: "r-2", kind: "point", verbatim: "Component Y is a potentiometer.", marks: 2 },
     ],
     questionFigure: {
@@ -24331,7 +24331,7 @@ export const CARDS: SecCard[] = [
     questionText: "The control unit shown below is an example of a printed circuit board with some common electronic components. Explain the function of component X or Y.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "An integrated chip (X) can function as an amplifier, timer, counter, logic gate, microcontroller or microprocessor. They are the building blocks of modern electronic circuits.", marks: 6, accepts: ["Potentiometer (Y) (rotary or linear) can manually adjust resistance in a circuit. Commonly used to control audio volume, motor speed and light intensity."] },
+    { id: "r-1", kind: "alt", verbatim: "An integrated chip (X) can function as an amplifier, timer, counter, logic gate, microcontroller or microprocessor. They are the building blocks of modern electronic circuits.", marks: 6, accepts: ["Potentiometer (Y) (rotary or linear) can manually adjust resistance in a circuit. Commonly used to control audio volume, motor speed and light intensity."], contextNote: "The paper sets two (c)s either side of an OR: the lawnmower (c), whose (i) \"10\" and (ii) \"6\" are answered together on one card, and the circuit board (c), whose (i), (ii) and (iii) each have a card of their own." },
     ],
     questionFigure: {
           "candId": "engineering-2023-HL-deferred-paper-q9cor-crop",
@@ -25594,7 +25594,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline one advantage and one disadvantage of cordless power tools.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Offer greater flexibility and portability.", marks: 3, accepts: ["Removes tripping hazard of power cords.","No need for a mains power source, etc."] },
+    { id: "r-1", kind: "alt", verbatim: "Offer greater flexibility and portability.", marks: 3, accepts: ["Removes tripping hazard of power cords.","No need for a mains power source, etc."], contextNote: "The scheme prints '3 + 2': any one advantage, then any one disadvantage." },
     { id: "r-2", kind: "alt", verbatim: "Limited battery life.", marks: 2, accepts: ["Expensive to buy.","Corded tools are typically lighter than cordless tools, etc."] },
     ],
   } as SecCard,
@@ -25609,7 +25609,7 @@ export const CARDS: SecCard[] = [
     questionText: "Solar panels may be tilted to optimise the capture of solar energy. Suggest a suitable mechanism which could be used to tilt a solar panel.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1. Solar panel", marks: null },
+    { id: "r-1", kind: "point", verbatim: "1. Solar panel", marks: null, contextNote: "The scheme prints 'Suggested solution', 5 marks." },
     { id: "r-2", kind: "point", verbatim: "2. Tilting mechanism: screw might be automated and driven by a motor to raise and lower the top of the panel creating an adjustable tilt.", marks: null },
     { id: "r-3", kind: "point", verbatim: "3. Panel mount. A light sensor tracking circuit can be used to drive the motor and tilt the panel for most effective operation.", marks: null },
     ],
@@ -27313,7 +27313,7 @@ export const CARDS: SecCard[] = [
     questionText: "Various mechanisms are used in the 3D printer shown to control the movement of the printing head and table. Describe, with the aid of a diagram(s), a suitable mechanism which will allow the printing head assembly to move up and down. OR An Irish company EnergyServ, specialises in the design and installation of solar carports. Outline two benefits of the solar carport shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A leadscrew mechanism would be suitable for controlling the movement of the printing head. The leadscrew will translate turning motion into linear motion. The pitch or lead is the distance the nut travels along the screw for every complete revolution. A stepper motor will rotate the leadscrew precisely to ensure that the printing head will raise and lower the correct distance.", marks: 8, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "A leadscrew mechanism would be suitable for controlling the movement of the printing head. The leadscrew will translate turning motion into linear motion. The pitch or lead is the distance the nut travels along the screw for every complete revolution. A stepper motor will rotate the leadscrew precisely to ensure that the printing head will raise and lower the correct distance.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR. The scheme prints '8' for the leadscrew, a suggested solution ('other viable solutions are acceptable'), and '4 + 4' for the solar carport's two benefits. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Energy Generation Solar carports are equipped with solar panels on their roofs, allowing them to generate renewable energy from sunlight. This energy can be used to power nearby buildings, charge electric vehicles or be fed back into the grid, reducing energy costs and dependence on fossil fuels.", marks: 4, route: "b" },
     { id: "r-3", kind: "point", verbatim: "Vehicle Protection Solar carports provide shade and protection for vehicles parked underneath. This helps protect cars from weather elements like rain, snow and UV rays, which can prolong the life of the vehicle's paint and interior while keeping the car cooler in hot weather.", marks: 4, route: "b" },
     ],
@@ -27346,7 +27346,7 @@ export const CARDS: SecCard[] = [
     questionText: "Various mechanisms are used in the 3D printer shown to control the movement of the printing head and table. Outline the function of the limit switch shown on the 3D printer. OR An Irish company EnergyServ, specialises in the design and installation of solar carports. Describe how solar energy can provide electrical power to the vehicle shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Limit switches are used to detect the presence or absence of an object. The limit switch in the 3D printer is used to define the limit of travel of the printing head. As the printing head reaches its lowest position it engages the limit switch and prevents it from travelling too far and causing damage to the machine.", marks: 8, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "Limit switches are used to detect the presence or absence of an object. The limit switch in the 3D printer is used to define the limit of travel of the printing head. As the printing head reaches its lowest position it engages the limit switch and prevents it from travelling too far and causing damage to the machine.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR; the scheme prints '8' for each (ii). Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "Solar energy is harnessed by solar panels or photovoltaic (PV) cells that are installed on the roof of the carport. The captured sunlight is converted from direct current (DC) to alternating current (AC) and either used immediately or stored in batteries. The energy is then supplied to an electric vehicle (EV) through a charging station, where it recharges the vehicle’s battery. In some cases, EVs can also use integrated solar panels for direct energy generation, although this is usually supplementary. This process enables the use of clean, renewable energy to power electric vehicles, reducing reliance on fossil fuels and lowering carbon emissions.", marks: 8, route: "b" },
     ],
     questionFigure: {
@@ -28778,7 +28778,7 @@ export const CARDS: SecCard[] = [
     questionText: "Welding defects include porosity, cracking and incomplete fusion. Explain the meaning of weld porosity and outline two methods used to prevent weld porosity occurring.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Weld porosity refers to small holes or gas pockets that form inside a weld, caused by trapped gases during the welding process. This can weaken the strength and quality of the weld.", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Weld porosity refers to small holes or gas pockets that form inside a weld, caused by trapped gases during the welding process. This can weaken the strength and quality of the weld.", marks: 6, contextNote: "The paper sets two (c)s either side of an OR, welding defects and the Dexai robotic arm; the scheme prices their (i)s and (ii)s differently, so each branch has its own cards." },
     { id: "r-2", kind: "point", verbatim: "Clean the material thoroughly by removing oil, rust, paint and moisture from the metal surface before welding.", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "Use correct shielding methods such as argon gas to protect the weld area from air contamination.", marks: 2 },
     ],
@@ -28802,7 +28802,7 @@ export const CARDS: SecCard[] = [
     questionText: "The Dexai robotic arm shown is a collaborative robot used in commercial kitchens to automate food preparation tasks. Identify two other areas where robotic arms are used in modern engineering industries.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Automated welding – Used in automotive and manufacturing industries for precision welding.", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Automated welding – Used in automotive and manufacturing industries for precision welding.","Assembly line operations – Robotic arms can assemble components quickly and accurately in electronics, aerospace and machinery production.","Spray painting – Used to apply paint evenly and efficiently in industries such as automotive and appliance manufacturing, improving finish quality and reducing waste."]} },
+    { id: "r-1", kind: "anyN", verbatim: "Automated welding – Used in automotive and manufacturing industries for precision welding.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR, welding defects and the Dexai robotic arm; the scheme prices their (i)s and (ii)s differently, so each branch has its own cards.", group: {"claimMax":2,"perOption":4,"options":["Automated welding – Used in automotive and manufacturing industries for precision welding.","Assembly line operations – Robotic arms can assemble components quickly and accurately in electronics, aerospace and machinery production.","Spray painting – Used to apply paint evenly and efficiently in industries such as automotive and appliance manufacturing, improving finish quality and reducing waste."]} },
     ],
     questionFigure: {
           "candId": "engineering-2026-HL-paper-q6c-or-crop",
@@ -28824,7 +28824,7 @@ export const CARDS: SecCard[] = [
     questionText: "Welding defects include porosity, cracking and incomplete fusion. Outline why weld cracks or incomplete fusion may occur during welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Weld cracks may occur from rapid cooling, high residual stress, or using the wrong filler material. They often start at weak points and can spread through the weld.", marks: 6, accepts: ["Incomplete fusion happens when the weld metal does not fully bond with the base metal or previous weld passes. This is usually caused by insufficient heat, poor technique or incorrect welding angles."] },
+    { id: "r-1", kind: "alt", verbatim: "Weld cracks may occur from rapid cooling, high residual stress, or using the wrong filler material. They often start at weak points and can spread through the weld.", marks: 6, accepts: ["Incomplete fusion happens when the weld metal does not fully bond with the base metal or previous weld passes. This is usually caused by insufficient heat, poor technique or incorrect welding angles."], contextNote: "The paper sets two (c)s either side of an OR, welding defects and the Dexai robotic arm; the scheme prices their (i)s and (ii)s differently, so each branch has its own cards." },
     ],
     questionFigure: {
           "candId": "engineering-2026-HL-paper-q6c-crop",
@@ -28846,7 +28846,7 @@ export const CARDS: SecCard[] = [
     questionText: "The Dexai robotic arm shown is a collaborative robot used in commercial kitchens to automate food preparation tasks. Explain the following terms in relation to robotic arm control:\n• Working envelope\n• Degrees of freedom.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Working envelope: Working envelope refers to the three-dimensional space within which a robotic arm can move and operate. It defines the maximum range or boundary that the robot can reach in all directions, based on its design, joint configuration and axis movement.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Working envelope: Working envelope refers to the three-dimensional space within which a robotic arm can move and operate. It defines the maximum range or boundary that the robot can reach in all directions, based on its design, joint configuration and axis movement.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR, welding defects and the Dexai robotic arm; the scheme prices their (i)s and (ii)s differently, so each branch has its own cards." },
     { id: "r-2", kind: "point", verbatim: "Degrees of freedom: The degrees of freedom (DOF) describe the number of independent movements a robotic arm can make. Each joint or axis adds one degree of freedom. Having 6 DOF allows the robot to place its tool anywhere within its workspace and orient it in any required direction.", marks: 4 },
     ],
     questionFigure: {
@@ -28970,7 +28970,7 @@ export const CARDS: SecCard[] = [
     questionText: "CNC machines have revolutionised engineering practices in recent decades. Describe each of the following CNC features:\n• G-code\n• Stepper motor\n• Leadscrew\n• Control panel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "G-code: Geometric code is the main programming language used to drive CNC machines. G-codes will direct tool paths, set feed rate and spindle rotation.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "G-code: Geometric code is the main programming language used to drive CNC machines. G-codes will direct tool paths, set feed rate and spindle rotation.", marks: 4, contextNote: "The paper sets this (c) as the alternative, after an OR, to \"(c) Face milling is a common machining process\"." },
     { id: "r-2", kind: "point", verbatim: "Stepper motor: uses an electromagnetic brushless motor to precisely control movement in increments.", marks: 4 },
     { id: "r-3", kind: "point", verbatim: "Leadscrew: translates rotary motion of the stepper motor into linear motion which drives the machine carriages.", marks: 4 },
     { id: "r-4", kind: "point", verbatim: "Control panel: the HMI that allows operators to interact with the CNC machine. It allows digital instructions to be loaded, monitored and executed.", marks: 4 },
@@ -28986,7 +28986,7 @@ export const CARDS: SecCard[] = [
     questionText: "Face milling is a common machining process. Explain, with the aid of a diagram(s), the process of face milling.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Face milling is a machining process where a rotating cutting tool with multiple teeth removes material from the surface of a workpiece creating a flat, smooth face. The cutting edges on the end and outer sides of the tool remove material as it moves across the surface.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Face milling is a machining process where a rotating cutting tool with multiple teeth removes material from the surface of a workpiece creating a flat, smooth face. The cutting edges on the end and outer sides of the tool remove material as it moves across the surface.", marks: null, contextNote: "The paper sets a second (c), on CNC features, after an OR." },
     { id: "r-2", kind: "point", verbatim: "The cutter axis is perpendicular to the surface being machined.", marks: null },
     { id: "r-3", kind: "point", verbatim: "The tool rotates and either the workpiece or the tool moves in a straight path.", marks: null },
     { id: "r-4", kind: "point", verbatim: "It is commonly used to produce flat surfaces, improve surface finish or reduce part thickness.", marks: null },
@@ -29012,7 +29012,7 @@ export const CARDS: SecCard[] = [
     questionText: "Face milling is a common machining process. Describe the effects of cutting fluids on:\n• Material surface finish\n• Cutting-tool life.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Material surface finish: Cutting fluids help cool and lubricate the cutting area, reducing friction and heat. This results in a smoother surface finish on the material.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Material surface finish: Cutting fluids help cool and lubricate the cutting area, reducing friction and heat. This results in a smoother surface finish on the material.", marks: 4, contextNote: "The paper sets a second (c), on CNC features, after an OR." },
     { id: "r-2", kind: "point", verbatim: "Cutting tool life: By lowering heat and friction, cutting fluids reduce tool wear and overheating, which extends the cutting tool’s lifespan.", marks: 4 },
     ],
   } as SecCard,
@@ -29049,7 +29049,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe a suitable mechanism that could be used to operate the can crusher shown opposite.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A crank and slider mechanism converts rotary motion into linear motion. In this system, the crank is powered by a motor and rotates 360°, transferring motion through a connecting rod to the slider, which moves back and forth in a straight line. The force of this linear motion is used to crush a can placed in the holding chamber. Once the crushing stroke is complete, the crushed can falls out, allowing a new can to take its place. This mechanism is efficient for repetitive tasks that require controlled, straight-line movement from a rotary input.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "A crank and slider mechanism converts rotary motion into linear motion. In this system, the crank is powered by a motor and rotates 360°, transferring motion through a connecting rod to the slider, which moves back and forth in a straight line. The force of this linear motion is used to crush a can placed in the holding chamber. Once the crushing stroke is complete, the crushed can falls out, allowing a new can to take its place. This mechanism is efficient for repetitive tasks that require controlled, straight-line movement from a rotary input.", marks: 8, contextNote: "The scheme prints 'Suggested solution - other viable solutions are acceptable', 8 marks." },
     ],
     questionFigure: {
           "candId": "engineering-2026-HL-paper-q9aii-crop",
@@ -29117,7 +29117,7 @@ export const CARDS: SecCard[] = [
     questionText: "The Easyrig camera system shown opposite is a device designed to assist camera operators during filming. Describe, with the aid of a diagram(s), a suitable mechanism that would allow adjustment of the camera boom angle. OR The outdoor wall light shown includes components such as a solar panel, rechargeable battery and a light-dependent resistor (LDR). Describe two energy conversions that take place in the wall light shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The camera boom is free to rotate about a fixed pivot point. The angle can be adjusted by removing the thumbscrew and replacing it into one of the adjustment holes available.", marks: 8, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "The camera boom is free to rotate about a fixed pivot point. The angle can be adjusted by removing the thumbscrew and replacing it into one of the adjustment holes available.", marks: 8, contextNote: "The paper sets two (c)s either side of an OR. The scheme prints '8' for the camera boom, a suggested solution ('other viable solutions are acceptable'), and '4 + 4' for the wall light's conversions. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "During the day, the solar panel converts solar energy into electrical energy, which is then stored in a rechargeable battery as chemical energy. At night the battery releases this chemical energy, converting it back into electrical energy to power the LED. The LED then converts the electrical energy into light energy, illuminating the area.", marks: 8, route: "b" },
     ],
     questionFigure: {
@@ -29149,7 +29149,7 @@ export const CARDS: SecCard[] = [
     questionText: "The Easyrig camera system shown opposite is a device designed to assist camera operators during filming. State two features on an Easyrig system that will assist the camera operator. OR The outdoor wall light shown includes components such as a solar panel, rechargeable battery and a light-dependent resistor (LDR). Outline the purpose of the light-dependent resistor (LDR) in the wall light shown.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "It transfers the weight of the camera from the arms and shoulders to the hips and back, significantly reducing fatigue and physical strain. This allows operators to shoot for extended periods with greater comfort.", marks: 4, route: "a" },
+    { id: "r-1", kind: "point", verbatim: "It transfers the weight of the camera from the arms and shoulders to the hips and back, significantly reducing fatigue and physical strain. This allows operators to shoot for extended periods with greater comfort.", marks: 4, contextNote: "The paper sets two (c)s either side of an OR; the scheme prints '4 + 4' for the Easyrig features and '8' for the LDR. Both branches are on this card: claim the rows for the branch you answered.", route: "a" },
     { id: "r-2", kind: "point", verbatim: "The system also improves stability and control, resulting in smoother handheld or moving shots. Additionally, the Easyrig enhances mobility, enabling operators to move freely while maintaining steady footage.", marks: 4, route: "a" },
     { id: "r-3", kind: "point", verbatim: "The light-dependent resistor (LDR) detects the surrounding light level. During the day when light levels are high, the LDR's resistance is low, allowing the circuit to stay off and preventing the light from turning on. At night when light levels drop, the LDR’s resistance increases, triggering the circuit to turn on the LED, using stored battery power to provide illumination.", marks: 8, route: "b" },
     ],
