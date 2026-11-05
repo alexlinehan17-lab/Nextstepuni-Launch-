@@ -99,7 +99,11 @@ APPENDIX = re.compile(r'^APPENDIX\b', re.I)
 #   2. (a) AND (b) = 20 marks     /  2. (a) OR (b) =10 marks
 CHOICE_HEAD = re.compile(
     r'^1\s*\.\s*\(\s*([ab])\s*\)\s*(.*?)\s*\((\d{1,3})\s*marks?\)\s*$', re.I)
-Q2_HEAD = re.compile(r'^2\s*\.\s*\(\s*a\s*\)\s*(?:AND|OR)\s*\(\s*b\s*\)\s*=?\s*'
+# The 2010-2020 schemes print the parts' groups between the letters and the
+# total — "2. (a) and (b) (2+2) + (3 + 3) + (1 +1+1) + (1 +1+1) + 4= 20 marks" —
+# and those groups are read by each item's own tariffs, never from here.
+Q2_HEAD = re.compile(r'^2\s*\.\s*\(\s*a\s*\)\s*(?:AND|OR)\s*\(\s*b\s*\)\s*'
+                     r'(?:\(?[\d\s+()]*\)?\s*)?=?\s*'
                      r'(\d{1,3})\s*marks?\s*$', re.I)
 # Inside Question 2, each alternative is a titled 10-mark text.
 #   (a) LA ABEJA ES DECLARADA EL SER VIVO MÁS IMPORTANTE DEL PLANETA (10 marks)
@@ -298,7 +302,7 @@ class Ask:
 
     __slots__ = ('section', 'q', 'letter', 'roman', 'title', 'terms', 'total',
                  'quota', 'options', 'points', 'notes', 'line', 'fault',
-                 'head_notation', 'lead_points')
+                 'head_notation', 'lead_points', 'bracket_parts')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -439,7 +443,12 @@ class EsScheme:
         for n, (section, i, title, total) in enumerate(spans):
             end = spans[n + 1][1] if n + 1 < len(spans) else len(block)
             if title is not None:
-                self.titles[(section, None)] = _clean_title(title)
+                # "1. (b) Journalistic Text GLOVO (50 marks)" (2020) names the
+                # text by its last word after the kind of text it is; the kind
+                # is not part of the title the paper prints.
+                self.titles[(section, None)] = _clean_title(re.sub(
+                    r'^(?:Journalistic\s+Text|Prescribed\s+literature)\s*[:–-]?\s*',
+                    '', title, flags=re.I))
             self.unit_totals.setdefault(section, total)
             if section == 'A2':
                 self._read_q2(block[i + 1:end], offset + i + 1)
@@ -465,11 +474,22 @@ class EsScheme:
         for n, (i, m) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(block)
             q = int(m.group(1))
-            total, groups = parse_head_tariff(m.group(2))
+            head = m.group(2)
+            body = block[i + 1:end]
+            # The 2010-2020 schemes can print the ask's whole direction on its
+            # head: "Q. 5 3m + 3m+ 3m+ 3m = 12 marks for any four relevant
+            # points (12m)". The tariff is read up to "marks", and what follows
+            # it is the part's first printed line.
+            tail = re.match(r'^(.+?=\s*\d{1,3}\s*marks?)\s+(\S.*)$', head, re.I)
+            if tail and parse_head_tariff(tail.group(1))[0] is not None \
+                    and parse_head_tariff(head)[0] is None:
+                head = tail.group(1)
+                body = [tail.group(2)] + list(body)
+            total, groups = parse_head_tariff(head)
             if total is not None:
                 self.q_totals[(section, q)] = total
-            self._read_parts(section, q, None, None, block[i + 1:end],
-                             offset + i + 1, total, groups, m.group(2))
+            self._read_parts(section, q, None, None, body,
+                             offset + i + 1, total, groups, head)
 
     # -- Higher Section B ---------------------------------------------------
     def _read_hl_b(self, block, offset):
@@ -769,11 +789,29 @@ class EsScheme:
             # two halves, not two answers.
             points = [(' '.join(' '.join(answers).split()), total)]
 
+        # One answer the scheme prices in pieces with square brackets: "He
+        # delivered newspapers and bottles of milk [3m] and was a jockey [1m]
+        # (4m)". The scheme's explanatory page says a square bracket shows "a
+        # breakdown of marks within the question", so each bracket closes a
+        # component the examiner pays on its own. Read only where the brackets
+        # account for the whole tariff and nothing priced follows the last one.
+        bracket_parts = None
+        if not quota and len(points) == 1 and total:
+            raw = ' '.join(' '.join((b or '').split()) for b in body
+                           if b and not PAGE.match(b.strip()))
+            raw = PART_TARIFF.sub('', raw).strip()
+            segs = re.split(r'\[\s*(\d{1,2})\s*m(?:arks?)?\s*\]', raw)
+            if len(segs) >= 5 and not segs[-1].strip(' .,;'):
+                pieces = [(segs[i].strip(' ,;'), int(segs[i + 1]))
+                          for i in range(0, len(segs) - 1, 2)]
+                if all(p for p, _n in pieces) and sum(n for _p, n in pieces) == total:
+                    bracket_parts = pieces
+
         return Ask(section=section, q=q, letter=letter, roman=roman,
                    title=self.titles.get((section, q)), terms=terms, total=total,
                    quota=quota, options=options, points=points, notes=notes,
                    line=line, fault=fault, head_notation=notation,
-                   lead_points=lead_points)
+                   lead_points=lead_points, bracket_parts=bracket_parts)
 
     # -- lookups ------------------------------------------------------------
     def ref(self, ask):

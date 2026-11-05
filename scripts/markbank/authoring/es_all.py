@@ -66,7 +66,7 @@ LEVELS = ('hl', 'ol')
 # The sittings carded so far, one commit each. A sitting is added here only
 # once its cards have been read against the paper and the scheme.
 CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
-    (2026, 'hl'), (2026, 'ol'), (2020, 'ol'),
+    (2026, 'hl'), (2026, 'ol'), (2020, 'ol'), (2020, 'hl'),
 }
 # The 2021-2025 sittings shipped before this lane. Their cards keep the shapes
 # they shipped with until a reviewed change re-cuts them; every later sitting
@@ -74,7 +74,7 @@ CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
 FROZEN_SHAPES = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS}
 # The sittings whose "direction" asks (Higher A1a Q5, A1b Q4) are carded with
 # the scheme's own direction on an unprinted row. 2021-2025 still exclude them.
-DIRECTION_CARDED = {(2026, 'hl')}
+DIRECTION_CARDED = {(2026, 'hl'), (2020, 'hl')}
 
 # The one row text a card may carry that is not a slice of the scheme, from
 # UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).
@@ -100,7 +100,10 @@ MAX_ROWS = 5
 # nothing a student can check themselves against; "[Any mark from 0 to 6 may be
 # awarded for this question]" prices a rewriting task the same way.
 DIRECTION_ONLY = re.compile(
-    r'^Discussion on any\b|^Any mark from\b|^Marks? awarded\b', re.I)
+    r'^Discussion on any\b|^Any mark from\b|^Marks? awarded\b'
+    # 2020 prints the direction on Q.5's own head: "= 12 marks for any four
+    # relevant points (12m)".
+    r'|^for any \w+ relevant points\b', re.I)
 
 # The section a card is filed under, which SecCardBase types as a single
 # letter. The section TOKEN in a citation carries more than that — "A1a" is
@@ -219,8 +222,43 @@ def _stem_text(block):
     return re.sub(r'\s*\(\s*\d{1,3}\s*marks?\s*\)\s*', ' ', text, flags=re.I).strip()
 
 
+# 2020 Higher: the paper says "See Loose Insert", and the SEC never published the
+# English-version loose sheet (examinations.ie answers 404 for LC012ALP015EV
+# and LC012ALPO15EV; the Paper Trail index lists no 2020 EV "Section B"). It did
+# publish the Irish-version sheet, LC012ALP015IV — "Page 7 of 16/Lch 7 de 16",
+# headed "SECTION B / ROINN B" as the English sheets of other years are, and
+# carrying the article itself in Spanish: "LA MODA RÁPIDA", the title the 2020
+# scheme heads its Section B answers with. Read from that sheet, never from the
+# question paper, whose page 7 is blank but for the pointer.
+BORROWED_INSERT = {2020: 'LC012ALP015IV'}
+
+
 def source_material(P, token, region, language, level, year):
     """The pages this card's text is printed on, in the booklet that prints it."""
+    if token == 'B' and level == 'hl' and not P.insert_pages and year in BORROWED_INSERT:
+        fileid = BORROWED_INSERT[year]
+        path = os.path.join(ROOT, 'paper-trail-corpus', 'exampapers', str(year),
+                            f'{fileid}.pdf')
+        import pymupdf
+        with pymupdf.open(path) as doc:
+            text = ' '.join(doc[0].get_text().split())
+            pages = list(range(1, doc.page_count + 1))
+        title = region.title or ''
+        assert title and title in text, (year, title)
+        return {
+            'kind': 'source-text',
+            'label': 'SECTION B — LOOSE SHEET',
+            'title': f'{title} — answer in {language}',
+            'pages': pages,
+            'sourceFileid': fileid,
+            'attribution': (f'SEC Spanish {year} Higher Level examination — Section B '
+                            f'text, printed on the loose sheet supplied with the paper '
+                            f'(Irish-version sheet). © State Examinations Commission.'),
+            'presentationNote': (
+                'The SEC published this year\'s loose sheet only with the '
+                'Irish-version paper. The article on it is the Spanish text the '
+                'questions refer to; read it exactly as it was printed, then answer.'),
+        }
     if token == 'B' and level == 'hl' and P.insert_pages:
         return {
             'kind': 'source-text',
@@ -471,9 +509,15 @@ def _direction_rows(ask, language, rule):
 def _rows_for(ask, language, rule, stepped=False):
     """The card's marking rows, or None (a direction) or a refusal string."""
     note = language_note(language, rule)
-    if ask.notes:
+    notes = list(ask.notes or [])
+    if stepped:
+        # A bracket that only states a price ("[2m]", "[1+1m]") is already on
+        # the row as its marks; quoting it again says nothing.
+        notes = [n for n in notes if not re.fullmatch(
+            r'\s*\d{1,2}(?:\s*\+\s*\d{1,2})*\s*m(?:arks?)?\s*', n, re.I)]
+    if notes:
         note += (' The scheme adds: '
-                 + '; '.join(f'“{n}”' for n in ask.notes[:3]) + '.')
+                 + '; '.join(f'“{n}”' for n in notes[:3]) + '.')
     if ask.total is None or not ask.terms:
         return None
     if ask.quota:
@@ -513,6 +557,18 @@ def _rows_for(ask, language, rule, stepped=False):
     if any(DIRECTION_ONLY.match(text) for text, _m in ask.points):
         return None
     points = list(ask.points)
+    if stepped and len(points) == 1 and ask.bracket_parts:
+        # One answer priced in bracketed components: one row, each component
+        # claimed on its own marks, the row scoring their sum.
+        parts = [{'id': f'p{i}', 'verbatim': text, 'marks': marks,
+                  'permittedMarks': [0, marks]}
+                 for i, (text, marks) in enumerate(ask.bracket_parts, start=1)]
+        sums = {0}
+        for _t, m in ask.bracket_parts:
+            sums |= {x + m for x in sums}
+        return [{'id': 'r-1', 'kind': 'criterion', 'verbatim': points[0][0],
+                 'marks': ask.total, 'permittedMarks': sorted(sums),
+                 'parts': parts, 'contextNote': note}]
     if stepped and len(points) == 1 and ask.terms and len(ask.terms) > 1:
         text = points[0][0]
         pieces = [p.strip() for p in text.split(';') if p.strip()]

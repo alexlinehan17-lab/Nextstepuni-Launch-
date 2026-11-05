@@ -10,10 +10,10 @@
  * from the paper's geometry and committed (spanish-atlas.json); this test
  * holds the deck to it.
  *
- * Two 2021-2025 Atlas faults predate the map and are pinned here so they can
- * only shrink: cards whose paper has no Atlas question of their own (2022
- * Higher Question 2), and cards whose Atlas question is tagged under another
- * topic than the card's. A card of any later sitting has neither.
+ * Two Higher Atlas faults (2020-2025) predate the map and are pinned here so
+ * they can only shrink: cards whose paper has no Atlas question of their own,
+ * and cards whose Atlas question is tagged under another topic than the
+ * card's. No Ordinary card and no 2026 card has either.
  */
 
 import { describe, expect, it } from 'vitest';
@@ -37,12 +37,19 @@ describe('Spanish cards in the Topic Atlas', () => {
     expect(Object.keys(map.cards).filter(id => !cards.some(card => card.id === id))).toEqual([]);
   });
 
-  it('pins the 2021-2025 gaps and topic residue so they can only shrink', () => {
-    expect(Object.keys(map.gaps).length).toBeLessThanOrEqual(6);
-    expect(Object.keys(map.gaps).every(id => /^es-2022-hl-a2-/.test(id))).toBe(true);
-    expect(map.topicResidue.length).toBeLessThanOrEqual(40);
+  it('pins the known Higher Atlas faults so they can only shrink', () => {
+    // The Higher Atlas of 2020-2025 predates this map: some printed questions
+    // have no Atlas entry of their own (2022 Question 2; 2020 A1b Q4), and some
+    // entries are tagged one task over (the literature Q5 as journalism, the
+    // journalistic Q3/Q4 as short texts, Question 2 as journalism). Every card
+    // they touch is named here; a repair moves it out, nothing moves it in.
+    expect(Object.keys(map.gaps).sort()).toEqual([
+      'es-2020-hl-a1b-4',
+      ...['a-i', 'a-ii', 'a-iii', 'b-i', 'b-ii', 'b-iii'].map(part => `es-2022-hl-a2-${part}`),
+    ]);
+    expect(map.topicResidue.length).toBeLessThanOrEqual(49);
     for (const id of [...Object.keys(map.gaps), ...map.topicResidue]) {
-      expect(Number(id.split('-')[1]), id).toBeLessThanOrEqual(2025);
+      expect(id, id).toMatch(/^es-20(2[0-5])-hl-/);
     }
   });
 

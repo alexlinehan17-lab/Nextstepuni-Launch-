@@ -77,7 +77,9 @@ def place(found, page, y, section, q):
     # section and question is the answer, wherever the card's part falls: 2022
     # Higher anchors its journalistic Q1 at the top of page 8 and Q2 at the top
     # of page 9, and Q1(b)-(e) are printed on page 9 too.
-    own = [a for a in above if _label_q(a['label']) == q and _label_section(a['label']) in (None, section[0])]
+    own = [a for a in above if _label_q(a['label']) == q
+           and _label_section(a['label']) in (None, section[0])
+           and _label_route(a['label']) in (None, section if section in ('A1a', 'A1b', 'A2') else None)]
     if q is not None and own:
         return own[-1], None
     if not above:
@@ -120,7 +122,7 @@ def _label_route(label):
     Question 2's two short items ("Q2(a)", "Q2 (Bee / …)", "2 Short …")."""
     if re.search(r'1\s*\(\s*a\s*\)|\bLit', label):
         return 'A1a'
-    if re.search(r'1\s*\(\s*b\s*\)|\bJourn', label):
+    if re.search(r'1\s*\(\s*b\s*\)|\bJourn|\bperiod[ií]stic', label, re.I):
         return 'A1b'
     if re.search(r'\bQ\s*2\b|·\s*2\s', label) and _label_section(label) in (None, 'A'):
         return 'A2'

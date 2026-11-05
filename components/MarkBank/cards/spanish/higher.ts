@@ -33,6 +33,1026 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1a-1-a", topicId: "spanish-7-3", conceptId: "llena",
+    section: "A", questionRef: "2020 HL Section A1a Q1(a)",
+    stem: "Busca en el pasaje y escribe en los espacios correspondientes las palabras o frases del texto que correspondan (más o menos) a las siguientes:",
+    questionText: "llena (lines 1-10)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "cargada", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in Spanish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1a-1-b", topicId: "spanish-7-3", conceptId: "contesta",
+    section: "A", questionRef: "2020 HL Section A1a Q1(b)",
+    stem: "Busca en el pasaje y escribe en los espacios correspondientes las palabras o frases del texto que correspondan (más o menos) a las siguientes:",
+    questionText: "contesta (lines 10-20)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "responde", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in Spanish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1a-1-c", topicId: "spanish-7-3", conceptId: "casuales",
+    section: "A", questionRef: "2020 HL Section A1a Q1(c)",
+    stem: "Busca en el pasaje y escribe en los espacios correspondientes las palabras o frases del texto que correspondan (más o menos) a las siguientes:",
+    questionText: "casuales (lines 20-26)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ocasionales", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in Spanish",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1a-2-a", topicId: "spanish-7-3", conceptId: "portera-barriendo-portal",
+    section: "A", questionRef: "2020 HL Section A1a Q2(a)",
+    stem: "Explain in ENGLISH the following phrases as they are used in the text.",
+    questionText: "…la portera barriendo el portal. (line 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The caretaker sweeping the entrance", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in English",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1a-2-b", topicId: "spanish-7-3", conceptId: "pero-asiste",
+    section: "A", questionRef: "2020 HL Section A1a Q2(b)",
+    stem: "Explain in ENGLISH the following phrases as they are used in the text.",
+    questionText: "…pero que no asiste… (line 14)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "but that she doesn’t attend......", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in English",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1a-2-c", topicId: "spanish-7-3", conceptId: "cual-separo",
+    section: "A", questionRef: "2020 HL Section A1a Q2(c)",
+    stem: "Explain in ENGLISH the following phrases as they are used in the text.",
+    questionText: "…del cual se separó... (line 17)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "from whom she separated…", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in English",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1a-3", topicId: "spanish-7-3", conceptId: "topics-does-alien-discuss-with-caretaker",
+    section: "A", questionRef: "2020 HL Section A1a Q3",
+    questionText: "What topics does the alien discuss with the caretaker?\nGive three details from the extract. (Answer in ENGLISH.)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” The scheme adds: “First correct answer = 4m”.", group: {"claimMax":3,"perOption":4,"options":["Weather","Traffic","Noise","High prices","Youth","Drugs","Death penalty","Neighbours","Nature"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in English",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1a-4", topicId: "spanish-7-3", conceptId: "does-caretaker-describe-neighbour-from-extract",
+    section: "A", questionRef: "2020 HL Section A1a Q4",
+    questionText: "How does the caretaker describe the neighbour?\nGive three details from the extract. (Answer in ENGLISH.)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” The scheme adds: “First correct answer = 4m”.", group: {"claimMax":3,"perOption":4,"options":["good person","pays (service charge) on time","doesn’t go to the neighbourhood meetings","single/ not married","previously married","has a child","separated"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in English",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1a-5", topicId: "spanish-7-3", conceptId: "describe-character-alien-may-not-support",
+    section: "A", questionRef: "2020 HL Section A1a Q5",
+    questionText: "Describe the character of the alien.\nYou may not support your answer by reference to the extract on this examination paper.\n(Answer in ENGLISH.)\nN.B. WRITE THE ANSWERS TO QUESTION 5 ON PAGE 14.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 12, contextNote: "The scheme prints no answer for this ask. In its place it prints “for any four relevant points” and “No marks given for answers supported by reference to the extract”, under the tariff “3m + 3m+ 3m+ 3m = 12 marks”. The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", permittedMarks: [0,3,6,9,12], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "PRESCRIBED LITERATURE: Eduardo Mendoza: Sin noticias de Gurb — answer in English",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1b-1-a", topicId: "spanish-5-0", conceptId: "does-glovo-app-allow",
+    section: "A", questionRef: "2020 HL Section A1b Q1(a)",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "What does the Glovo app allow you to do? (para 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":4,"options":["Order anything that you want, and you will receive it in your house or office in a question of minutes","With the app you can do the shopping without leaving your house and others will do it for you"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "NUEVA FORMA DE HACER LAS COMPRAS: GLOVO — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1b-1-b", topicId: "spanish-5-0", conceptId: "before-started-glovo-jobs-did-sasha",
+    section: "A", questionRef: "2020 HL Section A1b Q1(b)",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "Before he started Glovo, what jobs did Sasha do? (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "He delivered newspapers and bottles of milk and was a jockey", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", permittedMarks: [0,1,3,4], parts: [{"id":"p1","verbatim":"He delivered newspapers and bottles of milk","marks":3,"permittedMarks":[0,3]},{"id":"p2","verbatim":"and was a jockey","marks":1,"permittedMarks":[0,1]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "NUEVA FORMA DE HACER LAS COMPRAS: GLOVO — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1b-1-c", topicId: "spanish-5-0", conceptId: "does-oscar-tell-cities-where-glovo",
+    section: "A", questionRef: "2020 HL Section A1b Q1(c)",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "What does Óscar tell us about the cities where Glovo is found? Give three details. (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” The scheme adds: “First correct answer = 2m”.", group: {"claimMax":3,"perOption":2,"options":["big","innovative","cosmopolitan","only in cities with more than 500,000 inhabitants","large numbers of millennials"],"perOptionSteps":[2,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "NUEVA FORMA DE HACER LAS COMPRAS: GLOVO — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1b-1-d", topicId: "spanish-5-0", conceptId: "glovo-different-from-its-competitors",
+    section: "A", questionRef: "2020 HL Section A1b Q1(d)",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "How is Glovo different from its competitors? (para 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Won’t just bring you food but a range of other things", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "NUEVA FORMA DE HACER LAS COMPRAS: GLOVO — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1b-1-e", topicId: "spanish-5-0", conceptId: "does-lorena-love-her-job",
+    section: "A", questionRef: "2020 HL Section A1b Q1(e)",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "Why does Lorena love her job? (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "It’s varied", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-2", kind: "point", verbatim: "she only works the hours she wants to", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "NUEVA FORMA DE HACER LAS COMPRAS: GLOVO — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1b-2-a", topicId: "spanish-5-0", conceptId: "medio",
+    section: "A", questionRef: "2020 HL Section A1b Q2(a)",
+    stem: "Escribe en ESPAÑOL en los espacios correspondientes las palabras o frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+    questionText: "medio (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "mitad", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "NUEVA FORMA DE HACER LAS COMPRAS: GLOVO — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1b-2-b", topicId: "spanish-5-0", conceptId: "todavia-hay",
+    section: "A", questionRef: "2020 HL Section A1b Q2(b)",
+    stem: "Escribe en ESPAÑOL en los espacios correspondientes las palabras o frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+    questionText: "todavía hay (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "aún quedan", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "NUEVA FORMA DE HACER LAS COMPRAS: GLOVO — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1b-2-c", topicId: "spanish-5-0", conceptId: "cifras",
+    section: "A", questionRef: "2020 HL Section A1b Q2(c)",
+    stem: "Escribe en ESPAÑOL en los espacios correspondientes las palabras o frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+    questionText: "cifras (para 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "estadísticas", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "NUEVA FORMA DE HACER LAS COMPRAS: GLOVO — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1b-3-a", topicId: "spanish-5-0", conceptId: "crear-propia-empresa",
+    section: "A", questionRef: "2020 HL Section A1b Q3(a)",
+    stem: "Explain in ENGLISH the meaning of the following in their context:",
+    questionText: "… para crear su propia empresa. (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… to set up his own company", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "NUEVA FORMA DE HACER LAS COMPRAS: GLOVO — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1b-3-b", topicId: "spanish-5-0", conceptId: "tipico-usuario-muy-acostumbrado-tipo-servicio",
+    section: "A", questionRef: "2020 HL Section A1b Q3(b)",
+    stem: "Explain in ENGLISH the meaning of the following in their context:",
+    questionText: "…un típico usuario muy acostumbrado a este tipo de servicio. (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… a typical customer/user used to this type of service", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "NUEVA FORMA DE HACER LAS COMPRAS: GLOVO — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1b-3-c", topicId: "spanish-5-0", conceptId: "llevando-caracteristica-mochila-amarilla",
+    section: "A", questionRef: "2020 HL Section A1b Q3(c)",
+    stem: "Explain in ENGLISH the meaning of the following in their context:",
+    questionText: "… llevando la característica mochila amarilla… (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… carrying/ wearing the characteristic yellow backpack…", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” The scheme adds: “some idea of ‘characteristic’ needed”." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "NUEVA FORMA DE HACER LAS COMPRAS: GLOVO — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a1b-4", topicId: "spanish-5-0", conceptId: "expresa-otro-modo-espanol-frases-siguientes",
+    section: "A", questionRef: "2020 HL Section A1b Q4",
+    questionText: "Explica (o expresa de otro modo) en ESPAÑOL una de las frases siguientes:\n….. necesitas una cosa … (para 2)\nO\n... una gran cantidad… (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 6, contextNote: "The scheme prints no answer for this ask. In its place it prints “Any mark from 0 to 6 may be awarded for this question. No marks for answers in English.”, under the tariff “(6 marks)”. The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", permittedMarks: [0,1,2,3,4,5,6], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "NUEVA FORMA DE HACER LAS COMPRAS: GLOVO — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a2-a-i", topicId: "spanish-5-1", conceptId: "who-paddlesurf-ideal",
+    section: "A", questionRef: "2020 HL Section A2 Q(a)(i)",
+    questionText: "Who is Paddlesurf ideal for?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "People of all ages including children and elderly", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", permittedMarks: [0,2,4], parts: [{"id":"p1","verbatim":"People of all ages","marks":2,"permittedMarks":[0,2]},{"id":"p2","verbatim":"including children and elderly","marks":2,"permittedMarks":[0,2]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "EL SURF DE REMO — answer in English",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a2-a-ii", topicId: "spanish-5-1", conceptId: "championships-held-alicante-last-september",
+    section: "A", questionRef: "2020 HL Section A2 Q(a)(ii)",
+    questionText: "Give two details about the championships held in Alicante last September.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["More than 200 participants (from all parts of Spain)","amateurs","elite"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "EL SURF DE REMO — answer in English",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a2-b-i", topicId: "spanish-5-1", conceptId: "where-castellanos-moriscos-have-these-items",
+    section: "A", questionRef: "2020 HL Section A2 Q(b)(i)",
+    questionText: "Where in Castellanos de Moriscos have these items been found? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The park, library and sports centre", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "OBJETOS PERDIDOS TENDRÁN NUEVOS DUEÑOS — answer in English",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a2-b-ii", topicId: "spanish-5-1", conceptId: "sports-items-have-been-found",
+    section: "A", questionRef: "2020 HL Section A2 Q(b)(ii)",
+    questionText: "What sports items have been found? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":3,"perOption":1,"options":["Runners /shoes","Skates","Rackets","Bicycles"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "OBJETOS PERDIDOS TENDRÁN NUEVOS DUEÑOS — answer in English",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-a2-b-iii", topicId: "spanish-5-1", conceptId: "will-happen-end-october",
+    section: "A", questionRef: "2020 HL Section A2 Q(b)(iii)",
+    questionText: "What will happen at the end of October?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Articles will be offered to less fortunate families", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "OBJETOS PERDIDOS TENDRÁN NUEVOS DUEÑOS — answer in English",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-1-a", topicId: "spanish-5-0", conceptId: "tal-vez",
+    section: "B", questionRef: "2020 HL Section B Q1(a)",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "tal vez (para 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "quizás", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in Spanish",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-1-b", topicId: "spanish-5-0", conceptId: "sueldo-razonable",
+    section: "B", questionRef: "2020 HL Section B Q1(b)",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "sueldo razonable (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "salario justo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in Spanish",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-1-c", topicId: "spanish-5-0", conceptId: "compro-mas-menos",
+    section: "B", questionRef: "2020 HL Section B Q1(c)",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "compró más o menos (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "adquirió unos", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in Spanish",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-1-d", topicId: "spanish-5-0", conceptId: "alumnos-recomiendan",
+    section: "B", questionRef: "2020 HL Section B Q1(d)",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "los alumnos recomiendan (para 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "los estudiantes proponen", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in Spanish",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-1-e", topicId: "spanish-5-0", conceptId: "intentan-crear",
+    section: "B", questionRef: "2020 HL Section B Q1(e)",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "intentan crear (para 7)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "planean establecer", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in Spanish",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-2-a", topicId: "spanish-5-0", conceptId: "nos-preguntamos-impacto-negativo",
+    section: "B", questionRef: "2020 HL Section B Q2(a)",
+    stem: "Write in ENGLISH the meaning (in the context) of the following phrases:",
+    questionText: "… nos preguntamos sobre el impacto negativo... (para 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… we wonder/ask ourselves about the negative impact….", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in English",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-2-b", topicId: "spanish-5-0", conceptId: "cantidades-agua-necesitan-son-inmensas",
+    section: "B", questionRef: "2020 HL Section B Q2(b)",
+    stem: "Write in ENGLISH the meaning (in the context) of the following phrases:",
+    questionText: "... las cantidades de agua que se necesitan son inmensas. (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "... the quantities of water needed are immense....", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in English",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-2-c", topicId: "spanish-5-0", conceptId: "realizaron-estudio-investigar",
+    section: "B", questionRef: "2020 HL Section B Q2(c)",
+    stem: "Write in ENGLISH the meaning (in the context) of the following phrases:",
+    questionText: "…realizaron un estudio para investigar… (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… (they) carried out a study to investigate…", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in English",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-3-a", topicId: "spanish-5-0", conceptId: "coste",
+    section: "B", questionRef: "2020 HL Section B Q3(a)",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "coste (1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "precio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in Spanish",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-3-b", topicId: "spanish-5-0", conceptId: "riesgo",
+    section: "B", questionRef: "2020 HL Section B Q3(b)",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "riesgo (2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "peligro", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in Spanish",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-3-c", topicId: "spanish-5-0", conceptId: "asi",
+    section: "B", questionRef: "2020 HL Section B Q3(c)",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "así que (4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "por eso", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in Spanish",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-3-d", topicId: "spanish-5-0", conceptId: "modo",
+    section: "B", questionRef: "2020 HL Section B Q3(d)",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "modo (5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "manera", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in Spanish",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-3-e", topicId: "spanish-5-0", conceptId: "resuelven",
+    section: "B", questionRef: "2020 HL Section B Q3(e)",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "resuelven (7)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "solucionan", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in Spanish",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-4-a", topicId: "spanish-5-0", conceptId: "learn-many-factory-workers",
+    section: "B", questionRef: "2020 HL Section B Q4(a)",
+    stem: "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+    questionText: "What do we learn about many of the factory workers? Give three details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "they work long days", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-2", kind: "point", verbatim: "for low wages", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "in unhealthy conditions", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in English",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-4-b", topicId: "spanish-5-0", conceptId: "aim-project-launched-students-daniel-sanchez",
+    section: "B", questionRef: "2020 HL Section B Q4(b)",
+    stem: "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+    questionText: "What is the aim of the project launched by the students and Daniel Sánchez?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "to find ways to generate awareness", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-2", kind: "point", verbatim: "about the consumption of fast fashion", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "and its impact on the planet", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in English",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Higher Level — © State Examinations Commission.",
+    id: "es-2020-hl-b-4-c", topicId: "spanish-5-0", conceptId: "julia-ferrer-makes-suggestions-when-clothes",
+    section: "B", questionRef: "2020 HL Section B Q4(c)",
+    stem: "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+    questionText: "Julia Ferrer makes suggestions for when we go clothes shopping. Explain one in detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":5,"options":["To buy less , we all have a lot of clothes that we don’t use ; we should always consider if we really need that shirt/ item","Buy intelligently , quality brands that last","Don’t throw clothing in the rubbish sell it or recycle it"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "LA MODA RÁPIDA — answer in English",
+          "pages": [
+                1
+          ],
+          "sourceFileid": "LC012ALP015IV",
+          "attribution": "SEC Spanish 2020 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper (Irish-version sheet). © State Examinations Commission.",
+          "presentationNote": "The SEC published this year's loose sheet only with the Irish-version paper. The article on it is the Spanish text the questions refer to; read it exactly as it was printed, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC012ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2021 Higher Level — © State Examinations Commission.",
@@ -5332,7 +6352,7 @@ export const CARDS: SecCard[] = [
     questionText: "What advantages does Mario say his lifestyle has? (para 4)",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "He doesn’t (have to) do (household) chores", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” The scheme adds: “2m”; “1+1m”." },
+    { id: "r-1", kind: "point", verbatim: "He doesn’t (have to) do (household) chores", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
     { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":2,"perOption":1,"options":["taking out the rubbish","sweeping the floors","cutting the grass"]} },
     ],
     sourceMaterial: {
