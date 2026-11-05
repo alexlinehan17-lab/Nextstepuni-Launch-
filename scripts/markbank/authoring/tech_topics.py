@@ -317,6 +317,17 @@ TOPIC_OVERRIDES = {
     'tech-2013-hl-a12': 'tech-core-project',       # process time, productivity
     'tech-2013-hl-a14': 'tech-core-materials',     # materials for the bag's parts
     'tech-2013-hl-b2b': 'tech-core-design',        # sustainability, ergonomics, marketing
+    # 2013 Ordinary.
+    'tech-2013-ol-a1': 'tech-core-ict',            # libraries' storage of information
+    'tech-2013-ol-a4': 'tech-core-energy',         # DPDT switch
+    'tech-2013-ol-a5': 'tech-core-materials',      # scroll saw safety
+    'tech-2013-ol-a8': 'tech-core-design',         # designed with sustainability in mind
+    'tech-2013-ol-a9': 'tech-core-structures',     # bevel gears
+    'tech-2013-ol-a11': 'tech-core-ict',           # QR codes
+    'tech-2013-ol-b2b': 'tech-core-materials',     # the alarm's casing and its manufacture
+    'tech-2013-ol-b2c': 'tech-core-project',       # work breakdown structure, Gantt chart
+    'tech-2013-ol-b3a': 'tech-core-materials',     # modern materials in sports equipment
+    'tech-2013-ol-b3d': 'tech-core-project',       # cause and effect diagram (quality)
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]

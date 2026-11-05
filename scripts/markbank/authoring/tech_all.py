@@ -887,9 +887,25 @@ def author(bind_figures=True):
                     raw_ask = re.sub(pattern, '', raw_ask).strip()
 
                 del BACKED_OFF[:]
+                # A card covering every roman of its letter (2010-2014, priced
+                # only by letter) is cued by the letter's head sentence too:
+                # the scheme reprints it first ("Graphics A, B and C show
+                # various power accessories.", 2013 Ordinary 2(a)), and read
+                # against the romans alone that reprint scored as a mismatch.
+                # Only where the romans alone do not cue it: read with the head
+                # first, 2013 Higher 4(b)'s reprinted head walked on into its
+                # first answer line.
+                whole_letter = roman is None and len([k for k in covered if k[3]]) > 1
+                letter_head = clean(texts.get((section, q, letter, None), '')) if whole_letter else ''
                 cue, points = split_cue([clean(l) for l in lines], ask)
-                backed_off = clean(BACKED_OFF[0]) if BACKED_OFF else None
                 score = cue_score(cue, ask)
+                if letter_head and score < CUE_FLOOR \
+                        and len(re.findall(r"[a-z']{3,}", cue.lower())) >= MIN_CUE_WORDS:
+                    del BACKED_OFF[:]
+                    cue_ask = f'{letter_head} {ask}'
+                    cue, points = split_cue([clean(l) for l in lines], cue_ask)
+                    score = cue_score(cue, cue_ask)
+                backed_off = clean(BACKED_OFF[0]) if BACKED_OFF else None
                 cue_words = len(re.findall(r"[a-z']{3,}", cue.lower()))
                 if cue_words < MIN_CUE_WORDS:
                     # The part's own cue can be a single word -- 2021 Higher
@@ -936,7 +952,6 @@ def author(bind_figures=True):
                 # names every one of them.
                 pieces = []
                 lost_picture = not figure and points_at_print(question)
-                whole_letter = roman is None and len([k for k in covered if k[3]]) > 1
                 for piece in stem_pieces(section, q, letter, roman, texts, stems, whole_letter):
                     if stem_owner and piece == letter_stem:
                         continue

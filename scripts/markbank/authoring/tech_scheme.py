@@ -316,7 +316,18 @@ class TechScheme:
             if section == 'A' and lines and head_q is not None and rubric_marks:
                 close(rubric_marks, [], f'All questions carry {rubric_marks} marks')
 
-        for text in _lines(raw):
+        all_lines = list(_lines(raw))
+
+        def head_again(at, number):
+            """Whether a later Section A line opens with this question number."""
+            for later in all_lines[at + 1:]:
+                if SECTION_HEAD.match(later):
+                    return False
+                if re.match(rf'{number}\.\s+\S', later):
+                    return True
+            return False
+
+        for idx, text in enumerate(all_lines):
             pm = PAGE_MARK.match(text)
             if pm:
                 page = int(pm.group(1)) - 1
@@ -457,9 +468,15 @@ class TechScheme:
                 # opened Question 2, so every later block took its
                 # neighbour's number. A list item numbered one less, which was
                 # itself no head, makes this line its successor.
+                # ...but only where the number is printed again as a head
+                # further on in the section: 2013 Ordinary Q2 ends its answer
+                # "2. U.V resistant..." and the next line is Question 3's own
+                # head "3. The use of nuclear-thermal rockets...", which is
+                # never printed again.
                 list_next = bool(m and lines and head_q is not None
                                  and int(m.group(1)) - 1 <= head_q
-                                 and re.match(rf'{int(m.group(1)) - 1}\.\s', lines[-1][1] or ''))
+                                 and re.match(rf'{int(m.group(1)) - 1}\.\s', lines[-1][1] or '')
+                                 and head_again(idx, int(m.group(1))))
                 if m and not list_next and last_q < int(m.group(1)) <= last_q + 3 \
                         and (head_q is None or int(m.group(1)) > head_q):
                     if lines and head_q is not None and rubric_marks:

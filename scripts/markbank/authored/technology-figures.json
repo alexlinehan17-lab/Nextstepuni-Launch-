@@ -225,6 +225,141 @@
   ]
  },
  {
+  "file": "technology-2013-OL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A rendering of a red two-step footstool with an arrow labelled A pointing at its side.",
+  "questionRef": "2013 OL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   65,
+   125,
+   282,
+   265
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a keyring torch with a small solar panel on top and three LEDs shining.",
+  "questionRef": "2013 OL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   394,
+   372,
+   524,
+   501
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A rendering of a blue folded acrylic phone holder with circular holes.",
+  "questionRef": "2013 OL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   373,
+   102,
+   524,
+   275
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing of a jug-shaped electric kettle with a handle and a switch.",
+  "questionRef": "2013 OL Section A Q12",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   220,
+   599,
+   377,
+   766
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secB-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two children on a see-saw, labelled Child A and Child B, and the pivot labelled Fulcrum.",
+  "questionRef": "2013 OL Section B Q3(c)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   50,
+   480,
+   255,
+   594
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an air compressor with arrows labelled Electric Motor, Pump and Reservoir, and below it the symbol of a pneumatic component, a cylinder with a spring.",
+  "questionRef": "2013 OL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   255,
+   425,
+   585,
+   600
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A line drawing of a robot inside the outline of the space it can reach, labelled Work Envelope.",
+  "questionRef": "2013 OL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   455,
+   612,
+   585,
+   705
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit between +V and 0V: a push switch A, a variable resistor and a resistor charging a capacitor B, feeding a pair of transistors that drive a motor with a fan.",
+  "questionRef": "2013 OL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   355,
+   262,
+   567,
+   424
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A box labelled Container with a card circled on its side, and the card enlarged: Part Description Mirror-Left-Door, Part Number 2542, Qty 200, Lead Time 1 week, Order Date 11/10, Supplier Ace Car Parts Ltd, Due Date 18/10, Planner Mary K., Location Rack 2A.",
+  "questionRef": "2013 OL Section C Q4(d)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   340,
+   606,
+   562,
+   795
+  ]
+ },
+ {
   "file": "technology-2014-HL-paper-secA-q5-art.png",
   "kind": "figure",
   "truncated": false,
@@ -8520,6 +8655,426 @@
   ]
  },
  {
+  "file": "technology-2013-OL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two library logos: a figure reading a book on a blue square, captioned 1982, and a figure at a laptop in a blue circle, captioned 2009.",
+  "questionRef": "2013 OL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   453,
+   72,
+   532,
+   262
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a racing yacht heeling in the sea, arrows labelled Sail and Hull.",
+  "questionRef": "2013 OL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   89,
+   320,
+   227,
+   424
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Aerial photograph of a rocket standing on its launch pad.",
+  "questionRef": "2013 OL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   381,
+   571,
+   529,
+   656
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a black slide switch with three pins underneath.",
+  "questionRef": "2013 OL Section A Q4",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   64,
+   75,
+   206,
+   199
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a scroll saw on a bench with a dust hose and a red stop button.",
+  "questionRef": "2013 OL Section A Q5",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   368,
+   355,
+   528,
+   494
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The Saorview logo, captioned Ireland's free digital television service.",
+  "questionRef": "2013 OL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   371,
+   588,
+   533,
+   750
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of two cone-shaped toothed gears meshing at an angle.",
+  "questionRef": "2013 OL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   398,
+   571,
+   528,
+   690
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A square black and white QR code, three corner markers and a block pattern.",
+  "questionRef": "2013 OL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   400,
+   320,
+   520,
+   438
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secB-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a heap of short cylindrical wood pellets.",
+  "questionRef": "2013 OL Section B Q2(a)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   446,
+   64,
+   570,
+   166
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An exploded view of a carbon monoxide alarm: a cover labelled Casing, a circuit board labelled PCB and a tray labelled Base.",
+  "questionRef": "2013 OL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   422,
+   221,
+   583,
+   448
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secB-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A diagram of a gas well: a drilling rig above ground and a pipe turning sideways below a layer labelled Water Table, cracks spreading from it.",
+  "questionRef": "2013 OL Section B Q2(d)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   412,
+   647,
+   557,
+   780
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secB-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a tennis racket with a white and red frame.",
+  "questionRef": "2013 OL Section B Q3(a)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   445,
+   106,
+   543,
+   212
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an exercise machine with a padded seat and leg rollers, an arrow labelled A pointing to its frame.",
+  "questionRef": "2013 OL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   428,
+   229,
+   570,
+   432
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secB-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A cause and effect diagram: Causes Materials, Machinery used to manufacture, People and Methods of assembly leading to the Effect, Faulty exercise machine.",
+  "questionRef": "2013 OL Section B Q3(d)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   381,
+   675,
+   556,
+   779
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q1a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An 18 pin PIC chip with each pin labelled.",
+  "questionRef": "2013 OL Section C Q1(a)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   483,
+   81,
+   567,
+   190
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A flowchart: Start, LDR? looping back on N, Motor On, Wait 20, Motor Off, Stop; beside it a photograph of a window blind, labelled Blind.",
+  "questionRef": "2013 OL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   372,
+   206,
+   585,
+   398
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs labelled A, B and C: a yellow box with two sockets, a small solar panel with leads, and two coin-shaped cells.",
+  "questionRef": "2013 OL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   104,
+   86,
+   513,
+   186
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An integrated circuit marked 4071 with its pins numbered, and an enlarged balloon detail of one gate with pins 4, 5 and 6.",
+  "questionRef": "2013 OL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   394,
+   612,
+   555,
+   797
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an Irish Rail train with a WiFi logo.",
+  "questionRef": "2013 OL Section C Q3(a)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   94,
+   63,
+   251,
+   140
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A laptop advertisement: Hard Disk 640GB / 6GB RAM / Operating System Windows 7, 64 Bit / WiFi Connectivity / Multi Card Reader / 4 USB Ports / Screen Resolution 1920x1080 Pixels / Blue Ray Disc Rewritable and DVD Multi Drive, beside a photograph of the laptop.",
+  "questionRef": "2013 OL Section C Q3(b)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   89,
+   243,
+   562,
+   364
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An orange button reading Online Booking with a hand cursor.",
+  "questionRef": "2013 OL Section C Q3(c)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   412,
+   481,
+   560,
+   551
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A yellow sign reading Prevent Cyberbullying!",
+  "questionRef": "2013 OL Section C Q3(d)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   36,
+   666,
+   171,
+   758
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q4a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a blue five-door concept car, seen from the front.",
+  "questionRef": "2013 OL Section C Q4(a)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   53,
+   79,
+   188,
+   170
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of four glass jars of orange and lemon marmalade.",
+  "questionRef": "2013 OL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   392,
+   196,
+   555,
+   300
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q5a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs captioned Pottery vase, rain jacket and Toothbrush bristles.",
+  "questionRef": "2013 OL Section C Q5(a)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   139,
+   90,
+   524,
+   192
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A rendering of a docking station for an MP3 player, two stacks of acrylic shelves with arrows labelled A, B and C, and a photograph of a metal tube captioned Aluminium tube insert.",
+  "questionRef": "2013 OL Section C Q5(b)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   296,
+   305,
+   580,
+   505
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q5c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A diagram of two soldered joints on a board: GOOD JOINT (volcano shape), shiny solder, and BAD JOINT (dry joint), dull solder, with copper tracks, component, component lead and PCB or stripboard labelled.",
+  "questionRef": "2013 OL Section C Q5(c)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   25,
+   542,
+   200,
+   650
+  ]
+ },
+ {
+  "file": "technology-2013-OL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a hand holding a Kindle e-book reader.",
+  "questionRef": "2013 OL Section C Q5(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   437,
+   691,
+   555,
+   806
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -11403,5 +11958,53 @@
   "description": "The marking scheme's own drawing for 2013 HL Section C 5(b)(ii), as the State Examinations Commission printed it: an injection moulding machine labelled Hopper, Heater, Ram, Hydraulic Fluid, Motor, Screw and Mould.",
   "solution": true,
   "questionRef": "2013 HL Section C Q5(b)"
+ },
+ {
+  "file": "technology-2013-OL-scheme-secA-q4.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own symbol for 2013 OL Section A Q4(i), as the State Examinations Commission printed it: a double-pole double-throw switch, two switch arms linked by a dashed line, each able to touch one of two contacts.",
+  "solution": true,
+  "questionRef": "2013 OL Section A Q4"
+ },
+ {
+  "file": "technology-2013-OL-scheme-secA-q7.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2013 OL Section A Q7, as the State Examinations Commission printed it: the footstool's end seen in the direction of arrow A, an upright side panel with a hand slot at the top, two small holes at each step and an arched cut-out at the foot.",
+  "solution": true,
+  "questionRef": "2013 OL Section A Q7"
+ },
+ {
+  "file": "technology-2013-OL-scheme-secB-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own drawing for 2013 OL Section B 2(b)(ii), as the State Examinations Commission printed it: an injection moulding machine, a hopper feeding a heated barrel with a screw, a hydraulic system behind it and the mould at the front.",
+  "solution": true,
+  "questionRef": "2013 OL Section B Q2(b)"
+ },
+ {
+  "file": "technology-2013-OL-scheme-secB-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own work breakdown structure for 2013 OL Section B 2(c)(i), as the State Examinations Commission printed it: Design PCB then Populate/solder PCB; Design Base then Injection Mould Base; Design Casing then Injection Mould Casing; all three leading to Assembly, then Test.",
+  "solution": true,
+  "questionRef": "2013 OL Section B Q2(c)"
+ },
+ {
+  "file": "technology-2013-OL-scheme-secC-q1a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2013 OL Section C 1(a)(i), as the State Examinations Commission printed it: an 18 pin chip outline with a notch at the top, an arrow labelled Pin number 1 pointing to the top left pin beside the notch.",
+  "solution": true,
+  "questionRef": "2013 OL Section C Q1(a)"
+ },
+ {
+  "file": "technology-2013-OL-scheme-secC-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own modified flowchart for 2013 OL Section C 1(b)(ii): Start, LDR? looping back on N, Motor On, then a decision Limit Switch looping back on N, and on Y Motor Off.",
+  "solution": true,
+  "questionRef": "2013 OL Section C Q1(b)"
  }
 ]

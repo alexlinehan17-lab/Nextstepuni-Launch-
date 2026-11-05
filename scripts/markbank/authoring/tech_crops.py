@@ -1807,6 +1807,12 @@ LISTED_STEPS = {
     # 2013 Higher Q11, scheme page 6: each labelled part and its force, one
     # per line ("The main arm Bending force").
     (2013, 'hl', 'A', 11, None, None),
+    # 2013 Ordinary Q6, Q8 and Q10, scheme pages 5-7: short answers one per
+    # line (advantages of digital TV and of the torch's design, the steps to
+    # make the phone holder).
+    (2013, 'ol', 'A', 6, None, None),
+    (2013, 'ol', 'A', 8, None, None),
+    (2013, 'ol', 'A', 10, None, None),
 }
 
 # Scheme lines that reuse the ask's own words and are nonetheless a marking
@@ -3362,6 +3368,139 @@ MD_LINE_FIX[(2013, 'hl')] = [
     (r'^MDF, Laminboard, etc\.$', ''),
 ]
 
+# 2013 Ordinary. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    'technology-2013-OL-paper-secA-q1-art': ('014', 1, (453, 72, 532, 262)),
+    'technology-2013-OL-paper-secA-q2-art': ('014', 1, (89, 320, 227, 424)),
+    'technology-2013-OL-paper-secA-q3-art': ('014', 1, (381, 571, 529, 656)),
+    'technology-2013-OL-paper-secA-q4-art': ('014', 2, (64, 75, 206, 199)),
+    'technology-2013-OL-paper-secA-q5-art': ('014', 2, (368, 355, 528, 494)),
+    'technology-2013-OL-paper-secA-q6-art': ('014', 2, (371, 588, 533, 750)),
+    'technology-2013-OL-paper-secA-q7-art': ('014', 3, (65, 125, 282, 265)),
+    'technology-2013-OL-paper-secA-q8-art': ('014', 3, (394, 372, 524, 501)),
+    'technology-2013-OL-paper-secA-q9-art': ('014', 3, (398, 571, 528, 690)),
+    'technology-2013-OL-paper-secA-q10-art': ('014', 4, (373, 102, 524, 275)),
+    'technology-2013-OL-paper-secA-q11-art': ('014', 4, (400, 320, 520, 438)),
+    'technology-2013-OL-paper-secA-q12-art': ('014', 4, (220, 599, 377, 766)),
+    'technology-2013-OL-paper-secB-q2a-art': ('015', 1, (446, 64, 570, 166)),
+    'technology-2013-OL-paper-secB-q2b-art': ('015', 1, (422, 221, 583, 448)),
+    'technology-2013-OL-paper-secB-q2d-art': ('015', 1, (412, 647, 557, 780)),
+    'technology-2013-OL-paper-secB-q3a-art': ('015', 2, (445, 106, 543, 212)),
+    'technology-2013-OL-paper-secB-q3b-art': ('015', 2, (428, 229, 570, 432)),
+    'technology-2013-OL-paper-secB-q3c-art': ('015', 2, (50, 480, 255, 594)),
+    'technology-2013-OL-paper-secB-q3d-art': ('015', 2, (381, 675, 556, 779)),
+    'technology-2013-OL-paper-secC-q1a-art': ('015', 3, (483, 81, 567, 190)),
+    'technology-2013-OL-paper-secC-q1b-art': ('015', 3, (372, 206, 585, 398)),
+    # 1(c): the compressor and, for (ii), the component "shown below".
+    'technology-2013-OL-paper-secC-q1c-art': ('015', 3, (255, 425, 585, 600)),
+    'technology-2013-OL-paper-secC-q1d-art': ('015', 3, (455, 612, 585, 705)),
+    'technology-2013-OL-paper-secC-q2a-art': ('015', 4, (104, 86, 513, 186)),
+    'technology-2013-OL-paper-secC-q2b-art': ('015', 4, (355, 262, 567, 424)),
+    'technology-2013-OL-paper-secC-q2d-art': ('015', 4, (394, 612, 555, 797)),
+    'technology-2013-OL-paper-secC-q3a-art': ('015', 5, (94, 63, 251, 140)),
+    'technology-2013-OL-paper-secC-q3b-art': ('015', 5, (89, 243, 562, 364)),
+    'technology-2013-OL-paper-secC-q3c-art': ('015', 5, (412, 481, 560, 551)),
+    'technology-2013-OL-paper-secC-q3d-art': ('015', 5, (36, 666, 171, 758)),
+    'technology-2013-OL-paper-secC-q4a-art': ('015', 6, (53, 79, 188, 170)),
+    'technology-2013-OL-paper-secC-q4b-art': ('015', 6, (392, 196, 555, 300)),
+    'technology-2013-OL-paper-secC-q4d-art': ('015', 6, (340, 606, 562, 795)),
+    'technology-2013-OL-paper-secC-q5a-art': ('015', 7, (139, 90, 524, 192)),
+    'technology-2013-OL-paper-secC-q5b-art': ('015', 7, (296, 305, 580, 505)),
+    'technology-2013-OL-paper-secC-q5c-art': ('015', 7, (25, 542, 200, 650)),
+    'technology-2013-OL-paper-secC-q5d-art': ('015', 7, (437, 691, 555, 806)),
+})
+WHITEOUT.update({
+    'technology-2013-OL-paper-secC-q1c-art': [(255, 425, 438, 548)],
+    'technology-2013-OL-paper-secA-q4-art': [(60, 72, 84, 96)],
+    'technology-2013-OL-paper-secC-q2d-art': [(394, 612, 408, 722)],
+    'technology-2013-OL-scheme-secB-q2b': [(345, 305, 366, 319)],
+    'technology-2013-OL-scheme-secC-q1a': [(440, 140, 470, 192)],
+    'technology-2013-OL-paper-secC-q3b-art': [(89, 300, 410, 364)],
+    'technology-2013-OL-paper-secC-q4d-art': [(340, 606, 436, 662)],
+    'technology-2013-OL-paper-secC-q5b-art': [(296, 305, 322, 470)],
+})
+FIGURE_SHARED.update({
+    # 2(c): "The circuit at 2(b) above".
+    'technology-2013-OL-paper-secC-q2c-art': 'technology-2013-OL-paper-secC-q2b-art',
+    # 4(c): "the range of marmalades at 4(b) above".
+    'technology-2013-OL-paper-secC-q4c-art': 'technology-2013-OL-paper-secC-q4b-art',
+})
+LABEL_KEYS.update({
+    # 5(b)(iii): the ask's own words for the letters.
+    (2013, 'ol', 'C', 5, 'b'): [
+        {'letter': 'A', 'meaning': 'acrylic part A of the docking station (named in the ask)'},
+        {'letter': 'B', 'meaning': 'acrylic part B (named in the ask)'},
+        {'letter': 'C', 'meaning': 'acrylic part C (named in the ask)'}],
+})
+SOLUTIONS.update({
+    'technology-2013-OL-scheme-secA-q4': (4, (420, 89, 516, 176),
+        "The marking scheme's own symbol for 2013 OL Section A Q4(i), as the "
+        "State Examinations Commission printed it: a double-pole double-throw "
+        "switch, two switch arms linked by a dashed line, each able to touch "
+        "one of two contacts."),
+    'technology-2013-OL-scheme-secA-q7': (5, (335, 105, 478, 256),
+        "The marking scheme's own sketch for 2013 OL Section A Q7, as the State "
+        "Examinations Commission printed it: the footstool's end seen in the "
+        "direction of arrow A, an upright side panel with a hand slot at the "
+        "top, two small holes at each step and an arched cut-out at the foot."),
+    'technology-2013-OL-scheme-secB-q2b': (10, (345, 305, 480, 368),
+        "The marking scheme's own drawing for 2013 OL Section B 2(b)(ii), as the "
+        "State Examinations Commission printed it: an injection moulding "
+        "machine, a hopper feeding a heated barrel with a screw, a hydraulic "
+        "system behind it and the mould at the front."),
+    'technology-2013-OL-scheme-secB-q2c': (10, (118, 455, 415, 548),
+        "The marking scheme's own work breakdown structure for 2013 OL Section B "
+        "2(c)(i), as the State Examinations Commission printed it: Design PCB "
+        "then Populate/solder PCB; Design Base then Injection Mould Base; Design "
+        "Casing then Injection Mould Casing; all three leading to Assembly, then "
+        "Test."),
+    'technology-2013-OL-scheme-secC-q1a': (12, (440, 105, 550, 220),
+        "The marking scheme's own sketch for 2013 OL Section C 1(a)(i), as the "
+        "State Examinations Commission printed it: an 18 pin chip outline with a "
+        "notch at the top, an arrow labelled Pin number 1 pointing to the top "
+        "left pin beside the notch."),
+    'technology-2013-OL-scheme-secC-q1b': (12, (465, 500, 548, 668),
+        "The marking scheme's own modified flowchart for 2013 OL Section C "
+        "1(b)(ii): Start, LDR? looping "
+        "back on N, Motor On, then a decision Limit Switch looping back on N, "
+        "and on Y Motor Off."),
+})
+ASK_ONLY.update({
+    'technology-2013-OL-scheme-secA-q7',
+})
+LABEL_ZONES.setdefault((2013, 'ol'), []).extend([
+    (3, (450, 70, 535, 265)),      # Q1's logos reprinted, 1982 and 2009
+    (3, (85, 315, 230, 428)),      # Q2's yacht reprinted, Sail and Hull
+    (4, (418, 87, 518, 190)),      # Q4's symbol box and its caption
+    (5, (65, 115, 290, 265)),      # Q7's footstool reprinted, arrow A
+    (10, (478, 198, 570, 345)),    # 2(b)'s alarm reprinted, its labels
+    (10, (118, 455, 415, 548)),    # 2(c)'s work breakdown structure
+    (10, (458, 680, 560, 775)),    # 2(d)'s drilling picture, Water Table
+    (11, (448, 228, 568, 400)),    # 3(b)'s machine reprinted, its A
+    (11, (52, 462, 206, 580)),     # 3(c)'s see-saw reprinted, its labels
+    (12, (440, 105, 550, 220)),    # 1(a)'s pin sketch
+    (12, (370, 268, 570, 458)),    # 1(b)'s flowchart and blind reprinted
+    (12, (385, 500, 548, 688)),    # 1(b)(ii)'s flowchart and caption
+    (13, (440, 58, 585, 165)),     # 1(c)'s compressor reprinted
+    (13, (455, 400, 585, 528)),    # 1(d)'s robot reprinted, Work Envelope
+    (14, (130, 95, 490, 180)),     # 2(a)'s accessories reprinted, A B C
+    (14, (360, 280, 570, 432)),    # 2(b)'s circuit reprinted
+    (14, (390, 640, 525, 820)),    # 2(d)'s IC and balloon reprinted
+    (16, (430, 620, 570, 710)),    # 4(d)'s Kanban card reprinted
+    (17, (135, 85, 525, 172)),     # 5(a)'s pictures, captioned
+    (17, (385, 290, 575, 430)),    # 5(b)'s docking station, A B C
+    (17, (12, 505, 165, 595)),     # 5(c)'s soldered joints, labelled
+    (15, (89, 276, 424, 333)),     # 3(b)'s laptop specification, reprinted
+])
+MD_LINE_FIX[(2013, 'ol')] = [
+    # 5(b)(i): one answer broken across two lines, joined.
+    (r'^(M4: ISO Metric thread\u2013 a standardised screw)$', '\\1 thread system\u2013 nominal size M4 etc.'),
+    (r'^thread system\u2013 nominal size M4 etc\.$', ''),
+    # 2(d)(i): the "etc." closing the disadvantage, on a line of its own.
+    (r'^(Disadvantage: Possible health risks, contamination of water supply)$', r'\1 etc.'),
+    (r'^etc\.$', ''),
+]
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -3428,6 +3567,11 @@ ASK_STRIP = {
                                         r'\s+The main arm The pivot pin The link arm The can being crushed$'],
     (2013, 'hl', 'A', 14, None, None): [r'\s+Straps Part Material Property\b.*$'],
     (2013, 'hl', 'A', 2, None, None): [r'\s+\(i\)(?:\s+\(ii\))?$'],
+    # 2013 Ordinary 1(b): the flowchart's and the next part's picture's
+    # lettering, filed as the letter's stem; 4(d): the Kanban card's cells
+    # and the page footer.
+    (2013, 'ol', 'C', 1, 'b', None): [r'(?:^|\s+)Start N Blind LDR\?.*$'],
+    (2013, 'ol', 'C', 4, 'd', None): [r'\s+K\. Location Rack 2A\b.*$'],
     # 2013 Higher 4(b): the data table, which the crop carries, filed as stem.
     (2013, 'hl', 'C', 4, 'b', None): [r'\s+Day July 11th\b.*$'],
     # 2014 Ordinary 1(b): the flowchart's lettering, filed as the letter's stem.

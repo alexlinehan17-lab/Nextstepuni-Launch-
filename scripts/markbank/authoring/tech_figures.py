@@ -2033,6 +2033,113 @@ REVIEWED.update({
         'liquid.',
 })
 
+# 2013 Ordinary, each crop rendered and looked at.
+REVIEWED.update({
+    'technology-2013-OL-paper-secA-q1-art':
+        'Two library logos: a figure reading a book on a blue square, captioned '
+        '1982, and a figure at a laptop in a blue circle, captioned 2009.',
+    'technology-2013-OL-paper-secA-q2-art':
+        'Photograph of a racing yacht heeling in the sea, arrows labelled Sail '
+        'and Hull.',
+    'technology-2013-OL-paper-secA-q3-art':
+        'Aerial photograph of a rocket standing on its launch pad.',
+    'technology-2013-OL-paper-secA-q4-art':
+        'Photograph of a black slide switch with three pins underneath.',
+    'technology-2013-OL-paper-secA-q5-art':
+        'Photograph of a scroll saw on a bench with a dust hose and a red '
+        'stop button.',
+    'technology-2013-OL-paper-secA-q6-art':
+        "The Saorview logo, captioned Ireland's free digital television service.",
+    'technology-2013-OL-paper-secA-q7-art':
+        'A rendering of a red two-step footstool with an arrow labelled A '
+        'pointing at its side.',
+    'technology-2013-OL-paper-secA-q8-art':
+        'Photograph of a keyring torch with a small solar panel on top and '
+        'three LEDs shining.',
+    'technology-2013-OL-paper-secA-q9-art':
+        'Photograph of two cone-shaped toothed gears meshing at an angle.',
+    'technology-2013-OL-paper-secA-q10-art':
+        'A rendering of a blue folded acrylic phone holder with circular holes.',
+    'technology-2013-OL-paper-secA-q11-art':
+        'A square black and white QR code, three corner markers and a block pattern.',
+    'technology-2013-OL-paper-secA-q12-art':
+        'Line drawing of a jug-shaped electric kettle with a handle and a switch.',
+    'technology-2013-OL-paper-secB-q2a-art':
+        'Photograph of a heap of short cylindrical wood pellets.',
+    'technology-2013-OL-paper-secB-q2b-art':
+        'An exploded view of a carbon monoxide alarm: a cover labelled Casing, a '
+        'circuit board labelled PCB and a tray labelled Base.',
+    'technology-2013-OL-paper-secB-q2d-art':
+        'A diagram of a gas well: a drilling rig above ground and a pipe turning '
+        'sideways below a layer labelled Water Table, cracks spreading from it.',
+    'technology-2013-OL-paper-secB-q3a-art':
+        'Photograph of a tennis racket with a white and red frame.',
+    'technology-2013-OL-paper-secB-q3b-art':
+        'Photograph of an exercise machine with a padded seat and leg rollers, '
+        'an arrow labelled A pointing to its frame.',
+    'technology-2013-OL-paper-secB-q3c-art':
+        'Two children on a see-saw, labelled Child A and Child B, and the pivot '
+        'labelled Fulcrum.',
+    'technology-2013-OL-paper-secB-q3d-art':
+        'A cause and effect diagram: Causes Materials, Machinery used to '
+        'manufacture, People and Methods of assembly leading to the Effect, '
+        'Faulty exercise machine.',
+    'technology-2013-OL-paper-secC-q1a-art':
+        'An 18 pin PIC chip with each pin labelled.',
+    'technology-2013-OL-paper-secC-q1b-art':
+        'A flowchart: Start, LDR? looping back on N, Motor On, Wait 20, Motor '
+        'Off, Stop; beside it a photograph of a window blind, labelled Blind.',
+    'technology-2013-OL-paper-secC-q1c-art':
+        'Photograph of an air compressor with arrows labelled Electric Motor, '
+        'Pump and Reservoir, and below it the symbol of a pneumatic component, '
+        'a cylinder with a spring.',
+    'technology-2013-OL-paper-secC-q1d-art':
+        'A line drawing of a robot inside the outline of the space it can '
+        'reach, labelled Work Envelope.',
+    'technology-2013-OL-paper-secC-q2a-art':
+        'Photographs labelled A, B and C: a yellow box with two sockets, a small '
+        'solar panel with leads, and two coin-shaped cells.',
+    'technology-2013-OL-paper-secC-q2b-art':
+        'A circuit between +V and 0V: a push switch A, a variable resistor and a '
+        'resistor charging a capacitor B, feeding a pair of transistors that '
+        'drive a motor with a fan.',
+    'technology-2013-OL-paper-secC-q2d-art':
+        'An integrated circuit marked 4071 with its pins numbered, and an '
+        'enlarged balloon detail of one gate with pins 4, 5 and 6.',
+    'technology-2013-OL-paper-secC-q3a-art':
+        'Photograph of an Irish Rail train with a WiFi logo.',
+    'technology-2013-OL-paper-secC-q3b-art':
+        'A laptop advertisement: Hard Disk 640GB / 6GB RAM / Operating System '
+        'Windows 7, 64 Bit / WiFi Connectivity / Multi Card Reader / 4 USB Ports '
+        '/ Screen Resolution 1920x1080 Pixels / Blue Ray Disc Rewritable and DVD '
+        'Multi Drive, beside a photograph of the laptop.',
+    'technology-2013-OL-paper-secC-q3c-art':
+        'An orange button reading Online Booking with a hand cursor.',
+    'technology-2013-OL-paper-secC-q3d-art':
+        'A yellow sign reading Prevent Cyberbullying!',
+    'technology-2013-OL-paper-secC-q4a-art':
+        'Photograph of a blue five-door concept car, seen from the front.',
+    'technology-2013-OL-paper-secC-q4b-art':
+        'Photograph of four glass jars of orange and lemon marmalade.',
+    'technology-2013-OL-paper-secC-q4d-art':
+        'A box labelled Container with a card circled on its side, and the card '
+        'enlarged: Part Description Mirror-Left-Door, Part Number 2542, Qty 200, '
+        'Lead Time 1 week, Order Date 11/10, Supplier Ace Car Parts Ltd, Due '
+        'Date 18/10, Planner Mary K., Location Rack 2A.',
+    'technology-2013-OL-paper-secC-q5a-art':
+        'Photographs captioned Pottery vase, rain jacket and Toothbrush bristles.',
+    'technology-2013-OL-paper-secC-q5b-art':
+        'A rendering of a docking station for an MP3 player, two stacks of '
+        'acrylic shelves with arrows labelled A, B and C, and a photograph of a '
+        'metal tube captioned Aluminium tube insert.',
+    'technology-2013-OL-paper-secC-q5c-art':
+        'A diagram of two soldered joints on a board: GOOD JOINT (volcano shape), '
+        'shiny solder, and BAD JOINT (dry joint), dull solder, with copper tracks, '
+        'component, component lead and PCB or stripboard labelled.',
+    'technology-2013-OL-paper-secC-q5d-art':
+        'Photograph of a hand holding a Kindle e-book reader.',
+})
+
 REJECTED = {
     'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
     'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',
