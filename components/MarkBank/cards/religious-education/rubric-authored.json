@@ -1,6 +1,6 @@
 {
  "v": 1,
- "cardCount": 489,
+ "cardCount": 514,
  "cards": [
   {
    "id": "re-2026-hl-a-1-a",
@@ -74106,6 +74106,2841 @@
      15
     ],
     "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-a-1-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2017 OL Section A Q1(a)",
+   "topicId": "re-a",
+   "conceptId": "example-symbol-express-meaning-life-either",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe one example of how a symbol is used to express the meaning of life by either individuals or groups today.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the power of symbolic language by giving an accurate account of how either individuals or groups use a symbol to convey their understanding of the meaning of life in the world today.",
+    "points": [
+     "Individuals — e.g. the use of rings in a wedding ceremony symbolises that the individuals involved find meaning in their never ending relationship etc.",
+     "Groups — e.g. Religious believers use a symbol to express their response to divine revelation e.g. use of unleavened bread in the Seder Meal etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: If a candidate fails to give an account of how either individuals or groups use a symbol − Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     3
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-a-1-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2017 OL Section A Q1(b)",
+   "topicId": "re-a",
+   "conceptId": "human-search-meaning-life-reflected-main",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain how the human search for the meaning of life is reflected in the main features of one artefact that can be traced back to people who lived in an ancient society.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the human search for the meaning of life by giving an accurate account of the way that the human search for the meaning of life is expressed in the main elements of an object made by people in an ancient culture.",
+    "points": [
+     "Venus statuettes — the burial of these figurines that depicted fertile women with human remains indicates the hope of rebirth after death etc.",
+     "The aligning the burial mound in Newgrange Co. Meath to the sun at the winter solstice — people may have been expressing their hope that the sun would not be defeated by darkness and death etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: If a candidate gives an accurate account of how the human search for the meaning of life is expressed in an object made by people not associated with an ancient culture – Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     3
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-a-2-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2017 OL Section A Q2(a)",
+   "topicId": "re-a",
+   "conceptId": "example-polytheism-seen-beliefs-major-world",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline one example of how polytheism can be seen in the beliefs of a major world religion.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of polytheism by setting out accurate information on how belief in many gods can be seen in one major world religion.",
+    "points": [
+     "In Hinduism there is belief in many gods i.e. Brahma the creator God; Vishnu the God who preserves life; Shiva the God who destroys the world. This Hindu trinity represents the cycle of creation, preservation and destruction etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: If a candidate sets out accurate information on how belief in many gods can be seen in a tradition other than a major world religion – Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-a-2-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2017 OL Section A Q2(b)",
+   "topicId": "re-a",
+   "conceptId": "christianity-islam-judaism-polytheism-associated-founding",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "♦ CHRISTIANITY ♦ ISLAM ♦ JUDAISM Explain why polytheism is associated with the founding story of one of the above world religions.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of polytheism by giving one or more accurate reasons why belief in many gods is associated with the founding story of either Christianity or Islam or Judaism.",
+    "points": [
+     "Christianity — Jesus preached a monotheistic understanding of God to people who were familiar with a polytheistic culture e.g. The Curing of the Roman Officer’s Daughter etc.",
+     "Islam — Muhammad removed images of many gods from the Ka’ba and established Islam as a monotheistic religion etc.",
+     "Judaism — Moses’ Ten Commandments/Covenant with God reflects a context where people were worshipping many gods etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-a-3-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2017 OL Section A Q3(a)",
+   "topicId": "re-a",
+   "conceptId": "buddhism-christianity-hinduism-islam-judaism-understanding",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "♦ BUDDHISM ♦ CHRISTIANITY ♦ HINDUISM ♦ ISLAM ♦ JUDAISM Explain how the understanding of God/gods/the transcendent in one of the above world religions has implications for the moral values by which its members live today.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of religious moral values by giving an accurate account of the effect that the understanding of God/gods/the transcendent, in one of the world religions listed in the question, has on its members idea of what is right and wrong today.",
+    "points": [
+     "Buddhism — the example of bodhisattvas (people who achieved enlightenment but chose to reincarnate so as to help alleviate suffering in the world) can influence Buddhists to strive for compassion, wisdom and devotion to the teachings of the Buddha in their daily lives etc.",
+     "Christianity — the example of life, death and resurrection of Jesus of Nazareth believers idea of what is right and wrong etc.",
+     "Hinduism — the various gods are seen as manifestations of Brahman and believers try to live good lives to achieve Moksha – complete union and peace with a god etc.",
+     "Islam — belief in Allah, who is compassionate and merciful influences believers to also be compassionate especially to the poor and needy e.g. the Zakat etc.",
+     "Judaism — God is understood as all-powerful and a liberator who sets out his demand for faithfulness in the Covenant and the Decalogue; believers are expected to allow the world to evolve in the way that God would wish e.g. Thou shalt not kill etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     5
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-a-3-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2017 OL Section A Q3(b)",
+   "topicId": "re-a",
+   "conceptId": "values-major-world-religion-relate-values",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine how the values of a major world religion relate to values promoted within secular society today.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of values by looking closely at how the values put forward by a major world religion interact with those found in secular society today.",
+    "points": [
+     "Islam — the way Zakat, donating to charity each year, helps those who are needy within a community is mirrored in the work done by charitable organisations in secular society today who help those who live in poverty etc.",
+     "Christianity — the values placed on compassion, inclusion and care for the poor in Jesus’ teaching can be a challenge for the values of a secular culture where materialism and the accumulation of wealth is encouraged etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     5
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-b-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2017 OL Section B Q(a)",
+   "topicId": "re-b",
+   "conceptId": "corinth-philippi-thessalonica-everyday-life-like",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "• CORINTH • PHILIPPI • THESSALONICA Describe what everyday life was like for people living in one of the above places in Pre‐Christian times.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a first Christian community by giving an accurate account of what everyday life was like before Christianity became established in one of the places listed in the question.",
+    "points": [
+     "Corinth — a thriving economic city; large numbers of people travelled through the city etc.",
+     "Philippi — most of the people of the city were Gentiles (non-Jews); the small Jewish community were often discriminated against and persecuted etc.",
+     "Thessalonica — on a main trade route where traders and people of various cultures met and exchanged goods and views etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     6
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-b-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2017 OL Section B Q(b)",
+   "topicId": "re-b",
+   "conceptId": "ways-christians-adapt-lifestyle-when-christian",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline two ways that Christians had to adapt their lifestyle when a Christian community was first formed in the place that you have described in part a) above.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the first Christian communities by setting out accurate information on how the first Christians had to adapt their lives when a community was first formed in the place described in part a) of the question.",
+    "points": [
+     "Corinth — Christianity calls for love, sharing and unity all of which were difficult to live out in a society divided economically and culturally; the issue of eating meat caused problems within the community and the Early Christians had to adapt their views to function as a community etc.",
+     "Philippi — they had to adapt and overcome persecution from non-believing Gentiles; different views within their own community about adhering to Jewish laws etc.",
+     "Thessalonica — they had to adapt because of persecution within the city; they struggled to adapt their faith in the second coming of Jesus with their daily Christian living etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 15,
+    "gridHead": "15Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "15 > 13",
+      "marks": [
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "12 > 11",
+      "marks": [
+       11,
+       12
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "8 > 6",
+      "marks": [
+       6,
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 2",
+      "marks": [
+       2,
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     6
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-b-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2017 OL Section B Q(c)",
+   "topicId": "re-b",
+   "conceptId": "essenes-pharisees-sadducees-zealots-way-groups",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "• ESSENES • PHARISEES • SADDUCEES • ZEALOTS Compare the way in which two of the above groups responded to Roman rule in Palestine at the time of Jesus of Nazareth.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of Palestine at the time of Jesus by giving an accurate account of a similarity and/or difference in the way that two of the groups listed in the question reacted to Roman control of Palestine at the time of Jesus of Nazareth.",
+    "points": [
+     "Neither the Pharisees nor the Sadducees were in favour of Roman control; both groups believed that the people of Israel should have their own leader and follow the laws of the Covenant etc.",
+     "The Essenes retreated to the desert and would not interact with Roman rule. Whereas the Zealots used violence against the Romans to free the Jewish people of foreign rule etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "30 > 26",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "25 > 21",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "16 > 12",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "11 > 8",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 3",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2 > 0",
+      "marks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     6,
+     7
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-c-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2017 OL Section C Q(b)",
+   "topicId": "re-c",
+   "conceptId": "influence-primal-religion-seen-major-world",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain how the influence of primal religion can be seen in a major world religion that you have studied.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of religious belief by giving an accurate account of how the influence of primal religion features in a major world religion.",
+    "points": [
+     "Hinduism — The belief of primal religion in particular gods controlling specific aspects of nature (i.e. rain, crops, and thunder) can be seen in the Hindu belief that various gods are associated with different aspects of life etc.",
+     "Christianity — St. Patrick’s adapted Pre-Christian primal religious practices to the celebration of the Christian faith e.g. Croagh Patrick pilgrimage etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "30 > 26",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "25 > 21",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "16 > 12",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "11 > 8",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 3",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2 > 0",
+      "marks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "directions": [
+     "Note: If a candidate sets out accurate information on how primal religion features in a tradition other than a major world religion – Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     7,
+     8
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-c-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2017 OL Section C Q(c)",
+   "topicId": "re-c",
+   "conceptId": "choose-world-religion-world-religion-christianity",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Choose one world religion from List A and one world religion from List B below: List A: ◆ CHRISTIANITY ◆ JUDAISM List B: ◆ BUDDHISM ◆ HINDUISM ◆ ISLAM Compare how the human person is viewed in the teaching of each of the world religions that you have chosen above.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of major world religions by giving an accurate account of the similarities and/or differences in the understandings of the human person found in the teaching of one major world religion from list A and one major world religion from list B in the question.",
+    "points": [
+     "Christianity and Buddhism have a similar understanding of the human person in that for both believers are expected to follow the example of their founder and practise compassion; both Judaism and Islam believe that humans must be faithful, obedient and loyal to one God etc.",
+     "Hinduism and Christianity differ in their understanding of the human person in that within Hinduism the person is understood as having to go through a cycle of rebirth before he/she can reach a state of perfection or complete union with the one supreme Brahman; whereas within Christianity the person is understood as achieving salvation through following the example of Jesus Christ etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "30 > 26",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "25 > 21",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "16 > 12",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "11 > 8",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 3",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2 > 0",
+      "marks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     8
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-d-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2017 OL Section D Q(a)",
+   "topicId": "re-d",
+   "conceptId": "jesus-taught-his-followers-idea-right",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline what Jesus taught his followers about the idea of ‘right relationship’ in his preaching.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of Christian morality by setting out accurate information on Jesus’ preaching about living in ‘right relationship’.",
+    "points": [
+     "Jesus summarizes the Law in the Sermon on the Mount/Plain: ‘do to others as you would have them do to you; for this is the law and the prophets’ etc.",
+     "Jesus preached that living a life of love would ultimately bring about the Reign of God etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     8,
+     9
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-d-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2017 OL Section D Q(b)",
+   "topicId": "re-d",
+   "conceptId": "buddhism-hinduism-islam-judaism-choose-world",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "◆ BUDDHISM ◆ HINDUISM ◆ ISLAM ◆ JUDAISM Choose two of the above world religions and outline what is taught by each as a principle of right and wrong.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of non-Christian perspectives on morality by setting out accurate information on a basic ethical standard or judgment of right behaviour in two of the world religions listed in the question.",
+    "points": [
+     "Buddhism — the ‘Five Precepts’ state that people are not to harm living creatures; not to take what is not given etc.",
+     "Hinduism — a basic principle is to avoid intentional injury to any being e.g. ‘This is the sum of duty; do nothing to others that you would not have them do to you’ etc.",
+     "Islam — the ‘Five Pillars of Islam’ refer to a duty of almsgiving i.e. give a proportion of one's wealth to the needy in the community (Zakat) etc.",
+     "Judaism — the Torah prescribes various specific duties to the poor etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 15,
+    "gridHead": "15Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "15 > 13",
+      "marks": [
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "12 > 11",
+      "marks": [
+       11,
+       12
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "8 > 6",
+      "marks": [
+       6,
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 2",
+      "marks": [
+       2,
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     9
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-d-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2017 OL Section D Q(c)",
+   "topicId": "re-d",
+   "conceptId": "capital-punishment-child-labour-slavery-there",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "• CAPITAL PUNISHMENT • CHILD LABOUR • SLAVERY Examine how there has been a change in thinking since the Enlightenment about what is right and wrong on one of the issues listed above.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of morality by looking closely at the way that the understanding of what is right and wrong on one of the issues listed in the question has changed since the Enlightenment.",
+    "points": [
+     "CAPITAL PUNISHMENT — Scientific Method emphasises using evidence e.g. research showing that capital punishment did not act as a deterrent changed people’s views about its use etc.",
+     "CHILD LABOUR — the Enlightenment ideas about human rights led to a new understanding of the rights of children e.g. limits were placed on the types of work children could do etc.",
+     "SLAVERY — the ideas about equality that emerged during the Enlightenment led to the understanding that every person’s freedom has to be respected; slavery came to be understood as morally wrong etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "30 > 26",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "25 > 21",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "16 > 12",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "11 > 8",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 3",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2 > 0",
+      "marks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     9
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-e-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2017 OL Section E Q(a)",
+   "topicId": "re-e",
+   "conceptId": "biology-philosophy-psychology-sociology-influenced-changing",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "• BIOLOGY • PHILOSOPHY • PSYCHOLOGY • SOCIOLOGY Outline how one of the above has influenced the changing roles of men and women in society today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of gender and society by setting out accurate information on one way that Biology or Philosophy or Psychology or Sociology has influenced a change in the position of men and women in society today.",
+    "points": [
+     "BIOLOGY — changing roles of men as hunter-gatherers and women in child rearing etc.",
+     "PHILOSOPHY — in answering the question ‘what does it mean to be human?’ philosophy considers what it means to be male or female raising issues around equality etc.",
+     "PSYCHOLOGY — new psychological testing focusing on women as well as men has found that women develop differently to men etc.",
+     "SOCIOLOGY — research has shown that people are influenced by the environment in which they learn to socialise with others; the change in gender roles today has facilitated more partnership between the sexes etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     10
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-e-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2017 OL Section E Q(b)(i)",
+   "topicId": "re-e",
+   "conceptId": "her-key-insights-actions",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Her key insights/actions.",
+   "stem": "• FOUNDERS & REFORMERS OF RELIGIOUS ORDERS • RELIGIOUS WRITERS • SOCIAL REFORMERS • SPIRITUAL THINKERS Choose one woman in any of the above categories and outline her life story using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the contribution of a woman to a religious tradition by setting out accurate information on the key insights/actions seen in the life story of one woman from any of the categories listed in the question.",
+    "points": [
+     "FOUNDERS OF RELIGIOUS ORDERS e.g. Nano Nagle was outraged by the treatment of the poor in Ireland and her life was dedicated to helping the poor of her time through education and founding a religious order etc.",
+     "RELIGIOUS WRITERS e.g. Teresa of Avila’s insight into the benefits of silent prayer helped her to develop contemplation as a form of prayer which she outlined in her religious writings - The Book of Life, The Interior Castle and The Way of Perfection which are regarded as among the greatest spiritual reflections in the Christian tradition etc.",
+     "SOCIAL REFORMERS e.g. Dorothy Day always saw God as the centre of her life. She established homes for the poor and she lived in solidarity with them etc.",
+     "SPIRITUAL THINKERS e.g. Catherine of Siena tended the sick and worked for the conversion of sinners; she encouraged the people of her day to think about God etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     10,
+     11
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-e-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2017 OL Section E Q(b)(ii)",
+   "topicId": "re-e",
+   "conceptId": "her-faith-commitment",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Her faith/commitment.",
+   "stem": "• FOUNDERS & REFORMERS OF RELIGIOUS ORDERS • RELIGIOUS WRITERS • SOCIAL REFORMERS • SPIRITUAL THINKERS Choose one woman in any of the above categories and outline her life story using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the contribution of a woman to a religious tradition by setting out accurate information on how faith/commitment can be seen in the life story of one woman from any of the categories listed in the question.",
+    "points": [
+     "FOUNDERS OF RELIGIOUS ORDERS e.g. Nano Nagle had a strong Catholic faith and she was inspired by Jesus’s commitment to helping the poor and oppressed, her life was committed to educating the poor of her native Cork etc.",
+     "RELIGIOUS WRITERS e.g. Teresa of Avila was deeply committed to a life of prayer; founded an Discalced Carmelite order; established houses for woman and two houses for men; canonised in 1622 and was the first woman to became a doctor of the Catholic Church etc.",
+     "SOCIAL REFORMERS e.g. Dorothy Day was deeply committed to living to a religious life despite the difficulties she faced, she lived her life in solidarity with the poor and the marginalised in society etc.",
+     "SPIRITUAL THINKERS e.g. Catherine of Siena believed she had been instructed by Christ to reform, evangelise, and to comfort the poor, sick and condemned and she remained committed to this throughout her life etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     11
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-f-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "F",
+   "questionRef": "2017 OL Section F Q(a)",
+   "topicId": "re-f",
+   "conceptId": "discrimination-ireland-poverty-ireland-world-hunger",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "• DISCRIMINATION IN IRELAND • POVERTY IN IRELAND • WORLD HUNGER Outline how the teaching of a major world religion encourages its members to address the causes of one of the above issues.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a religious perspective on justice by setting out accurate information on how the teaching of a major world religion encourages its members to tackle the causes of either discrimination in Ireland or poverty in Ireland or world hunger.",
+    "points": [
+     "The Eightfold Path encourages Buddhists to work for social justice as it encourages people to think and act in ways that are fair and compassionate etc.",
+     "Zakat can be seen as involving the redistributing of wealth and encourages followers of Islam to tackle the causes of world hunger/poverty in Ireland/discrimination in Ireland etc.",
+     "Jesus’ teaching on the Kingdom of God encourages Christians to tackle the causes of world hunger etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     11,
+     12
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-f-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "F",
+   "questionRef": "2017 OL Section F Q(b)",
+   "topicId": "re-f",
+   "conceptId": "teaching-major-world-religion-reflected-key",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain how the teaching of a major world religion is reflected in two key principles of the ‘Just War’ theory.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of a religious perspective on violence by giving an accurate account of how two key principles of the ‘Just War’ theory are connected to the teaching of a major world religion.",
+    "points": [
+     "Just cause — the principle that war must only be entered into if there is a just cause (the protection of innocent people etc.) is reflected in the religious teaching of Islam where a Jihad (holy war) is allowed to defend the name of Islam etc.",
+     "Right intention — Jesus teaching on helping those who are oppressed or suffering is reflected in the principle of the ‘Just War’ theory that promoting justice for the innocent and oppressed is the ‘right intention’ for going to war etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     12
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-g-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "G",
+   "questionRef": "2017 OL Section G Q(a)(i)",
+   "topicId": "re-g",
+   "conceptId": "way-particular-calendar-time-season-marked",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe the way that a particular calendar time or season is marked as sacred by members in one of the above world religions.",
+   "stem": "Different world religions have particular times of year or seasons that they regard as sacred. ♦ BUDDHISM ♦ CHRISTIANITY ♦ HINDUISM ♦ ISLAM ♦ JUDAISM",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show understanding of sacredness by giving an accurate account of the way that a time or season is marked as sacred in one of the major world religions listed in the question.",
+    "points": [
+     "Buddhism — Wesak Day is marked by processions, representations of events from Buddha’s life, flower shrines are built, incense is burnt, offerings are made etc.",
+     "Christianity — Easter is marked by Christians gather for religious services between Holy Saturday and Easter Sunday e.g. Stations of the Cross, Eucharist etc.",
+     "Hinduism — Diwali is marked by the lighting of lamps, fireworks and offering prayers to the goddess of wealth, fertility and prosperity etc.",
+     "Islam — Ramadan is a time of fasting during sunlight where followers of Islam make an extra effort to pray and read the Qur’an etc.",
+     "Judaism — Passover recalls the story of the Israelites escape from slavery in Egypt and is marked by a Seder meal with symbolic foods that symbolise the story etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     12,
+     13
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-g-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "G",
+   "questionRef": "2017 OL Section G Q(a)(ii)",
+   "topicId": "re-g",
+   "conceptId": "beliefs-world-religion-reflected-way-members",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain how the beliefs of a world religion are reflected in the way members mark the sacred time or season that you have described in part a)i above .",
+   "stem": "Different world religions have particular times of year or seasons that they regard as sacred. ♦ BUDDHISM ♦ CHRISTIANITY ♦ HINDUISM ♦ ISLAM ♦ JUDAISM",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show understanding of ritual and worship by giving an accurate account of how one or more beliefs of a world religion can be seen in the way that members mark the sacred time or season described in part a)i of the question.",
+    "points": [
+     "Buddhism — Wesak expresses the belief in the enlightenment of the Buddha; people go to the Temples to make offerings to him and Buddhist monks lead the meditations and give sermons on the Buddha’s enlightenment and teaching etc.",
+     "Christianity — the belief that Jesus rose from the dead is celebrated in Easter ceremonies; lighting the Paschal Candle symbolises Jesus’ victory over death etc.",
+     "Hinduism — at Diwali, the lighting of lamps signifies goodness and the victory of Lord Rama of light over darkness, good over evil etc.",
+     "Islam — during Ramadan fasting is undertaken to so that believers can focus completely on Allah etc.",
+     "Judaism — Passover celebrates the Hebrew belief that God liberated his people and believers recall the events of the Exodus through the celebration of the Seder Meal etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     13
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-g-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "G",
+   "questionRef": "2017 OL Section G Q(b)",
+   "topicId": "re-g",
+   "conceptId": "sacred-text-meditation-technique-prayer-members",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine how sacred text is used as a meditation technique in prayer by the members of two major world religions.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of meditation as a type of prayer by looking closely at the use of sacred text by the members of two major world religions as a way of promoting deep thought or reflection in communicating with God/gods/the divine.",
+    "points": [
+     "Christianity — meditation is often associated with prayer or scripture study; the early Christian monastic practice of reading the Bible slowly; thoughtful reading and reflection on sacred texts; Christians also use scripture passages as the basis for a mantra — a syllable or series of words repeated in order to support meditation etc.",
+     "Hinduism — the Vedas were believed to contain certain verses that held special powers that can bring the mind into a meditative state for example the Shanti mantra is used at the start of prayer as it expresses a desire to be granted clear thinking etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     13,
+     14
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-h-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2017 OL Section H Q(a)",
+   "topicId": "re-h",
+   "conceptId": "influence-bible-seen-example-either-art",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Profile how the influence of the Bible can be seen in one example of either art or music.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the Bible as living classic by accurately tracing the way that the Bible has influenced either one piece of art or music.",
+    "points": [
+     "Art — Church mosaics; Irish High Crosses; biblical themes are common in art in Europe e.g. Leonardo Da Vinci’s Last Supper etc.",
+     "Music — composers have written works inspired by the Bible; the Bible inspired popular musicals e.g. Joseph and the Amazing Technicolor Dream Coat etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     14
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-h-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2017 OL Section H Q(b)(i)",
+   "topicId": "re-h",
+   "conceptId": "circumstances-parables-listed-first-told-jesus",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe the circumstances in which three of the parables listed above were first told by Jesus to his disciples.",
+   "stem": "• THE LABOURERS IN THE VINEYARD (MATTHEW 20:1‐16) • THE SOWER (MATTHEW 13:1‐9) • THE TEN WEDDING ATTENDANTS (MATTHEW 25:1‐13) • THE UNJUST STEWARD (LUKE 16:1‐13)",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of parable as a literary genre found in the Bible by giving an accurate account of the setting in which three of the parables listed in the question were first told by Jesus to his disciples.",
+    "points": [
+     "THE LABOURERS IN THE VINEYARD — tells of a householder who hires workers for different amounts of time but pays them all the same; it a story of generous giving that was originally told to Jesus’ disciples etc.",
+     "THE SOWER — this parable was told by Jesus while sitting in a boat on the lake teaching his disciples who were discouraged by the lack of success of their preaching etc.",
+     "THE TEN WEDDING ATTENDANTS — set in the Last Judgement, Jesus is urging his disciples to prepare for the appearance of God in their lives and generated an attitude of alertness to the coming of God etc.",
+     "THE UNJUST STEWARD — this parable was first told to the disciples, in the hearing of the Pharisees, encouraging them to be responsible and faithful etc."
+    ],
+    "openList": false,
+    "answers": 3,
+    "answerMax": 10,
+    "gridHead": "10Mx3",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     14,
+     15
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-ol-h-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2017 OL Section H Q(b)(ii)",
+   "topicId": "re-h",
+   "conceptId": "parables-listed-influence-early-christian-communities",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline how two of the parables listed above had an influence on Early Christian communities.",
+   "stem": "• THE LABOURERS IN THE VINEYARD (MATTHEW 20:1‐16) • THE SOWER (MATTHEW 13:1‐9) • THE TEN WEDDING ATTENDANTS (MATTHEW 25:1‐13) • THE UNJUST STEWARD (LUKE 16:1‐13)",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of parable as a literary genre found in the bible by setting out accurate information on how two of the parables listed in the question influenced an Early Christian community.",
+    "points": [
+     "THE LABOURERS IN THE VINEYARD — for the Early Christian communities the parable may have been seen to defend God’s freedom to extend salvation to whomever he chooses; God loves all and rewards all equally; the parable challenges discrimination between people etc.",
+     "THE SOWER — this parable influenced the Early Christian communities by encouraging them to withstand the trials and tribulations that may affect them etc.",
+     "THE TEN WEDDING ATTENDANTS — the message for the Early Christian communities in this parable is that they must be prepared for the Lord’s return etc.",
+     "THE UNJUST STEWARD — the Early Christian communities were urged to make prudent use of material possessions; the importance of faithfulness and responsibility were emphasised the Early Christians etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 15,
+    "gridHead": "15Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "15 > 13",
+      "marks": [
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "12 > 11",
+      "marks": [
+       11,
+       12
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "8 > 6",
+      "marks": [
+       6,
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 2",
+      "marks": [
+       2,
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     15
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
    }
   }
  ]
