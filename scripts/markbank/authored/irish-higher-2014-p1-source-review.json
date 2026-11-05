@@ -1,0 +1,199 @@
+{
+  "year": 2014,
+  "level": "higher",
+  "paperFileid": "LC001ALP100IV.pdf",
+  "schemeFileid": "LC001ALP000IV.pdf",
+  "paperSha256": "ae10d72e0e780ecae2cc666eac9fb6b35d4a3a01b885deddb46927e5c32244fd",
+  "schemeSha256": "b7b4d9da51f4bbbbeffc853a5457b799c54fe4294e7f9d983a7ec9c355187a4a",
+  "reviewDate": "2026-11-05",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    31
+  ],
+  "schemeScope": "Combined Paper 1 and Paper 2 scheme. PDF 1–2 cover and note; 3 listening tariffs and the section-level language deduction; 4–7 listening transcript (never shown to students); 7–12 listening answers (from “Cuid A ( 18 marc)” on PDF 7); 12 the cover-mark lines and the composition marking; 13–15 Stíl/Ábhar bands, Cumas Gaeilge criteria (with the off-title pro-rata note) and the 80-mark table; 31 modified marking (SMM). PDF 16–30 are Paper 2; 32 empty.",
+  "reviewMethod": "Every paper page and every applicable scheme page read in the text layer and checked against the printed page; every symbol-font span of the scheme audited against the rendered page; each listening prompt, scheme slice and composition line is asserted against the PDFs by the builder.",
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2014/LC001ZLP017IV.mp3",
+    "verified": "2026-11-05",
+    "sha256": "7f1fbb1e67eef8ad725729cc3db8568d4772c33e5278dd34d4b47e811c87e19c",
+    "seconds": 1458.286,
+    "note": "The SEC archive serves one 2014 listening recording (LC001ZLP017IV.mp3, HTTP 200 on 2026-11-05, 35,000,623 bytes, 192 kbps, 1,458.3 s), the file name the archive uses for the shared Higher and Ordinary test. The 2014 scheme transcript (PDF 4–7) is headed “Triail Chluastuisceana Téipscript”; its sections (Fógra 1–2, Comhrá 1–2, Píosa 1–2) are the ones this paper asks about (Fógra 1: Raidió na Gaeltachta, a secretary post at Ollscoil Luimnigh). No other year’s recording is used."
+  },
+  "selectionDecisions": [
+    {
+      "page": 1,
+      "raw": "Freagair gach cuid - A, B, C - sa fhreagarleabhar seo.",
+      "decision": "Required answers; no finite task menu."
+    },
+    {
+      "page": 1,
+      "raw": "Caithfidh do chuid freagraí uile sa triail seo a bheith i nGaeilge, ach amháin nuair nach gá sin.",
+      "decision": "Required answers; no finite task menu."
+    },
+    {
+      "page": 1,
+      "raw": "Nuair a bheidh Cuid I, an Chluastuiscint, críochnaithe agat lean ar aghaidh agus freagair Cuid II,",
+      "decision": "Order of work (Cuid I, then Cuid II): both parts required; not a selection."
+    },
+    {
+      "page": 2,
+      "raw": "Cloisfidh tú dhá fhógra raidió sa chuid seo. Cloisfidh tú gach fógra díobh faoi dhó. Beidh sos ann leis na freagraí",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 2,
+      "raw": "Luaigh dhá cháilíocht atá riachtanach don phost seo.",
+      "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes. The scheme prices (i) and (ii) at 2 + 2 (Fógra a hAon Ceist 2)."
+    },
+    {
+      "page": 2,
+      "raw": "Luaigh slí amháin le heolas a fháil faoin bpost seo.",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 2,
+      "raw": "Luaigh rud amháin a bheidh ar an gclár speisialta ar leathuair tar éis a sé.",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 3,
+      "raw": "Cloisfidh tú dhá chomhrá sa chuid seo. Cloisfidh tú gach comhrá díobh faoi dhó. Cloisfidh tú an comhrá ó thosach",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 3,
+      "raw": "deireadh an chéad uair. Ansin cloisfidh tú ina dhá mhír é. Beidh sos ann leis na freagraí a scríobh tar éis gach míre",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh dhá rud a deir Pól faoina chuid laethanta san ollscoil i mbliana.",
+      "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes. The scheme prices (i) and (ii) at 2 + 2 (Comhrá a hAon, An Chéad Mhír, Ceist 2)."
+    },
+    {
+      "page": 3,
+      "raw": "Luaigh rud amháin a deir Áine faoi na ceisteanna a chuir an scrúdaitheoir.",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 4,
+      "raw": "Scríobh síos pointe amháin a luann Orla faoi dhéagóirí na laethanta seo.",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 4,
+      "raw": "Luaigh dhá imeacht a chuirtí ar siúl ag am lóin Dé Máirt agus Déardaoin.",
+      "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes. The scheme prices (i) and (ii) at 2 + 2 (Comhrá a Dó, An Dara Mír, Ceist 1)."
+    },
+    {
+      "page": 4,
+      "raw": "Scríobh síos rud amháin nach mbíodh cead ag na scoláirí a thabhairt isteach sa cheaintín",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 4,
+      "raw": "Luaigh ábhar amháin atá sa nuachtlitir a tugadh do gach scoláire roimh shaoire an tsamhraidh.",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 5,
+      "raw": "Cloisfidh tú dhá phíosa nuachta sa chuid seo. Cloisfidh tú gach píosa díobh faoi dhó. Beidh sos ann leis na freagraí",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 5,
+      "raw": "Luaigh pointe amháin eolais faoi na hoibrithe a bhíonn ag obair leis an stáisiún raidió seo.",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 5,
+      "raw": "2. Luaigh pointe amháin eolais faoin damáiste a rinne an tíofún in 2013.",
+      "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 5,
+      "raw": "Ainmnigh dhá imeacht a d’eagraigh na mic léinn chun airgead a bhailiú.",
+      "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes. The scheme prices (i) and (ii) at 2 + 2 (Píosa a Dó Ceist 3)."
+    },
+    {
+      "page": 6,
+      "raw": "Ní mór ceangal cinnte leanúnach a bheith ann idir an teideal a roghnaítear agus",
+      "decision": "Instruction to keep the chosen title connected; the selection itself is classified on the title lines."
+    },
+    {
+      "page": 7,
+      "raw": "Freagair do rogha CEANN AMHÁIN de A, B nó C anseo thíos.",
+      "decision": "Closed choose-one of A, B, C; with the printed titles this gives nine whole 100-mark title cards: A(a)–(e), B(a)–(b), C(a)–(b)."
+    },
+    {
+      "page": 7,
+      "raw": "Nóta: Ní gá níos mó ná 500-600 focal nó mar sin a scríobh i gcás ar bith.",
+      "decision": "Length guidance (500–600 words), not a selection."
+    },
+    {
+      "page": 7,
+      "raw": "A  AISTE nó ALT NUACHTÁIN / IRISE  100 marc",
+      "decision": "AISTE nó ALT is a writing-form choice inside one response (same Stíl/Ábhar/Gaeilge marking); not a separate card. Each printed title A(a)–(e) is its own card."
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh AISTE NÓ ALT NUACHTÁIN / IRISE ar CHEANN AMHÁIN de na hábhair seo.",
+      "decision": "AISTE nó ALT is a writing-form choice inside one response (same Stíl/Ábhar/Gaeilge marking); not a separate card. Each printed title A(a)–(e) is its own card."
+    },
+    {
+      "page": 7,
+      "raw": "Ceap SCÉAL a mbeadh do rogha CEANN AMHÁIN díobh seo oiriúnach mar theideal air.",
+      "decision": "Closed choose-one of A, B, C; with the printed titles this gives nine whole 100-mark title cards: A(a)–(e), B(a)–(b), C(a)–(b). Two titles (a)–(b) for B."
+    },
+    {
+      "page": 7,
+      "raw": "Freagair do rogha CEANN AMHÁIN díobh seo.",
+      "decision": "Closed choose-one of A, B, C; with the printed titles this gives nine whole 100-mark title cards: A(a)–(e), B(a)–(b), C(a)–(b). C(a) or C(b)."
+    },
+    {
+      "page": 7,
+      "raw": "(a) Scríobh an chaint a dhéanfá i ndíospóireacht scoile ar son an rúin seo a leanas nó ina aghaidh:",
+      "decision": "Stance for or against the motion is the argument direction inside one speech, marked identically; not a separate card."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Listening: “Luaigh dhá cháilíocht …”, “Luaigh dhá rud …”, “Luaigh dhá imeacht …” and “Ainmnigh dhá imeacht …” each ask for two points at 2 + 2; the scheme lists the accepted wording for each. These are answer keys for one task, not task routes.",
+    "Card unit for listening: one card per printed segment (Fógra, Mír, Píosa), as the reviewed 2016–2026 components, because the Bank plays one recording section as one exercise; every printed question is a separate criterion at its published 2 or 2 + 2 tariff (26 questions, 60 marks).",
+    "Composition: A–C is a closed choose-one; each of the nine printed titles is its own whole 100-mark card. AISTE nó ALT (form) and the debate stance (ar son nó ina aghaidh) stay inside one response.",
+    "The modified marking scheme changes assessment for eligible candidates, not the printed tasks."
+  ],
+  "sourceFindings": [
+    "Paper 1 = 160: Cuid I listening 60 (Cuid A 18 = Fógra 1 10 (four questions, Ceist 2 at 2 + 2) + Fógra 2 8 (four questions); Cuid B 28 = Comhrá 1 14 (Mír 1 8, Ceist 2 at 2 + 2; Mír 2 6) + Comhrá 2 14 (Mír 1 6; Mír 2 8, Ceist 1 at 2 + 2); Cuid C 14 = Píosa 1 6 + Píosa 2 8 (Ceist 3 at 2 + 2)), every question 2 marks or 2 + 2; Cuid II composition 100 (choose one of A, B, C).",
+    "Layout: Paper 1 is the answer booklet for Cuid I. The cover (PDF 1) carries the instructions and the examiner’s totals box; Cuid A is on paper page 2, B on 3–4, C on 5; the composition Treoracha are on page 6 and the choice, length note and titles on page 7; page 8 is blank.",
+    "Listening language: “Bainfear ó 0 go 3 ar chaighdeán na Gaeilge” is printed only on scheme PDF 3; it is one section-level deduction, stated in each card note without being applied. The listening answer key (PDF 7–12) runs from “Cuid A ( 18 marc) Fógra a hAon ( 10 marc)” on PDF 7, after the end of the transcript, to the cover-mark lines on PDF 12 (“Léirigh na marcanna mar seo a leanas ar chlúdach na Cluastuisceana:”); 2014 prints no annotation-symbol table.",
+    "Partial answers the key prices: Fógra a hAon Ceist 1 “Rúnaí = 1 mharc”, Ceist 2 single words at 1 mark, Ceist 3(a) “9 – 5.30 = 1 mharc + 1 mharc”; Comhrá a Dó Mír 1 Ceist 2 “An club sláinte agus aclaíochta = 1 mharc + 1 mharc”; Comhrá a Dó Mír 2 Ceist 1 each activity “= 1 mharc + 1 mharc”, its singular “= 0 + 1 mharc”. Each such criterion allows every mark from 0 to its tariff. Answers the key refuses are printed “= 0” (“Meitheamh = 0”, “Seó = 0”).",
+    "Composition: 2014 prints no S1–S4 grades and no page of reductions for a short attempt. The Stíl criterion carries the Stíl text only; the off-title pro-rata note is part of the Cumas Gaeilge text on PDF 14. The printed score boxes that open PDF 13 (“Stíl (5) = Ábhar (15) = Gaeilge (80) = CII (100) =”) are cut. The 80-mark table (PDF 15) ends at N/G ard 4-7 and N/G íseal 0-3.",
+    "Glyphs, read from the font of every symbol span and the rendered page: the Cumas Gaeilge bullets on scheme PDF 14 (11) and the SMM list on PDF 31 (4) are SymbolMT code 0x78, which the text layer returns as “x” and the page draws as a bullet; the builder reads them as “•”. PDF 3’s cover tariffs use SymbolMT 0x75 (“u”, drawn ×: “2 mharc × 5”); no card reads PDF 3’s table. Paper page 7 prints the A box heading with a SymbolMT dash (U+F02D) that sits only in the raw selection-decision line, never in a card."
+  ],
+  "remainingWork": []
+}
