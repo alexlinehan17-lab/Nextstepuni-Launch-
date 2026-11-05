@@ -1365,7 +1365,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secB-q1-art.png",
-          "srcHash": "33526e3fef0410189967c882b2ee1f28",
+          "srcHash": "934cf4d2e5eefbb8e63f6e6da127d1f6",
           "alt": "Question B-1 as printed. A photograph of a Doritos tortilla-chip carton based on a waisted hexagonal prism, beside Fig. B-1: an incomplete dimetric projection by the axonometric axes method, with axes X, Y and Z drawn in magenta and green from the origin o through the isosceles triangle abc, a 115 degree angle marked at o, the developed elevation at the left, the developed plan of the hexagon below, and the partly drawn axonometric of the carton at the top right dimensioned 20, 40, 20 and 120.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1390,7 +1390,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secB-q1-art.png",
-          "srcHash": "33526e3fef0410189967c882b2ee1f28",
+          "srcHash": "934cf4d2e5eefbb8e63f6e6da127d1f6",
           "alt": "Question B-1 as printed. A photograph of a Doritos tortilla-chip carton based on a waisted hexagonal prism, beside Fig. B-1: an incomplete dimetric projection by the axonometric axes method, with axes X, Y and Z drawn in magenta and green from the origin o through the isosceles triangle abc, a 115 degree angle marked at o, the developed elevation at the left, the developed plan of the hexagon below, and the partly drawn axonometric of the carton at the top right dimensioned 20, 40, 20 and 120.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1413,7 +1413,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secB-q1-art.png",
-          "srcHash": "33526e3fef0410189967c882b2ee1f28",
+          "srcHash": "934cf4d2e5eefbb8e63f6e6da127d1f6",
           "alt": "Question B-1 as printed. A photograph of a Doritos tortilla-chip carton based on a waisted hexagonal prism, beside Fig. B-1: an incomplete dimetric projection by the axonometric axes method, with axes X, Y and Z drawn in magenta and green from the origin o through the isosceles triangle abc, a 115 degree angle marked at o, the developed elevation at the left, the developed plan of the hexagon below, and the partly drawn axonometric of the carton at the top right dimensioned 20, 40, 20 and 120.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1439,7 +1439,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secB-q1-art.png",
-          "srcHash": "33526e3fef0410189967c882b2ee1f28",
+          "srcHash": "934cf4d2e5eefbb8e63f6e6da127d1f6",
           "alt": "Question B-1 as printed. A photograph of a Doritos tortilla-chip carton based on a waisted hexagonal prism, beside Fig. B-1: an incomplete dimetric projection by the axonometric axes method, with axes X, Y and Z drawn in magenta and green from the origin o through the isosceles triangle abc, a 115 degree angle marked at o, the developed elevation at the left, the developed plan of the hexagon below, and the partly drawn axonometric of the carton at the top right dimensioned 20, 40, 20 and 120.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1534,7 +1534,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secB-q3-art.png",
-          "srcHash": "0e08b0472e8140e5f44195f72e5c4319",
+          "srcHash": "65106c10cec4b2e81546194fea9efe5f",
           "alt": "Question B-3 as printed. A photograph of the glazed Pilo Hotel facade, beside Fig. B-3: above the XY line the elevation of two intersecting planar surfaces A and B with the line PQ crossing them, dimensioned 20 and 40; below, the plan of the same surfaces constructed on a green 70 by 70 square grid, with P and Q marked and a separate X1Y1 line drawn to the right.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1559,7 +1559,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secB-q3-art.png",
-          "srcHash": "0e08b0472e8140e5f44195f72e5c4319",
+          "srcHash": "65106c10cec4b2e81546194fea9efe5f",
           "alt": "Question B-3 as printed. A photograph of the glazed Pilo Hotel facade, beside Fig. B-3: above the XY line the elevation of two intersecting planar surfaces A and B with the line PQ crossing them, dimensioned 20 and 40; below, the plan of the same surfaces constructed on a green 70 by 70 square grid, with P and Q marked and a separate X1Y1 line drawn to the right.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1582,7 +1582,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secB-q3-art.png",
-          "srcHash": "0e08b0472e8140e5f44195f72e5c4319",
+          "srcHash": "65106c10cec4b2e81546194fea9efe5f",
           "alt": "Question B-3 as printed. A photograph of the glazed Pilo Hotel facade, beside Fig. B-3: above the XY line the elevation of two intersecting planar surfaces A and B with the line PQ crossing them, dimensioned 20 and 40; below, the plan of the same surfaces constructed on a green 70 by 70 square grid, with P and Q marked and a separate X1Y1 line drawn to the right.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1605,7 +1605,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secB-q3-art.png",
-          "srcHash": "0e08b0472e8140e5f44195f72e5c4319",
+          "srcHash": "65106c10cec4b2e81546194fea9efe5f",
           "alt": "Question B-3 as printed. A photograph of the glazed Pilo Hotel facade, beside Fig. B-3: above the XY line the elevation of two intersecting planar surfaces A and B with the line PQ crossing them, dimensioned 20 and 40; below, the plan of the same surfaces constructed on a green 70 by 70 square grid, with P and Q marked and a separate X1Y1 line drawn to the right.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1627,7 +1627,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q1-art.png",
-          "srcHash": "f33d2a39ff3279357a531fdad01e2e16",
+          "srcHash": "1bd5c47c3a90e75bcf5108ad56535304",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a motocross rider; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1649,7 +1649,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q1-art.png",
-          "srcHash": "f33d2a39ff3279357a531fdad01e2e16",
+          "srcHash": "1bd5c47c3a90e75bcf5108ad56535304",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a motocross rider; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1671,7 +1671,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q1-art.png",
-          "srcHash": "f33d2a39ff3279357a531fdad01e2e16",
+          "srcHash": "1bd5c47c3a90e75bcf5108ad56535304",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a motocross rider; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1694,7 +1694,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q1-art.png",
-          "srcHash": "f33d2a39ff3279357a531fdad01e2e16",
+          "srcHash": "1bd5c47c3a90e75bcf5108ad56535304",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a motocross rider; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1717,7 +1717,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q1-art.png",
-          "srcHash": "f33d2a39ff3279357a531fdad01e2e16",
+          "srcHash": "1bd5c47c3a90e75bcf5108ad56535304",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a motocross rider; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1744,7 +1744,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q1-art.png",
-          "srcHash": "f33d2a39ff3279357a531fdad01e2e16",
+          "srcHash": "1bd5c47c3a90e75bcf5108ad56535304",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a motocross rider; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1769,7 +1769,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q2-art.png",
-          "srcHash": "267a0ca1445a72873d975ed2e9a351a9",
+          "srcHash": "3d98324fd0f8d288c1b3cd1eedb6e096",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a slatted timber garden shade structure, beside Fig. C-2: above the XY line, at the left the elevation showing the parabolic curve DEF with vertex E under the overhead line PQ, dimensioned 3m, 3m, 5m, 8m, 6m and 2m, and at the right the outline end view with the generating parabola ABC drawn as a magenta dashed curve of 10m span and 8m rise; below, the incomplete plan of the structure with the point R and the line PQ, dimensioned 10m, 2m and 4m.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1793,7 +1793,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q2-art.png",
-          "srcHash": "267a0ca1445a72873d975ed2e9a351a9",
+          "srcHash": "3d98324fd0f8d288c1b3cd1eedb6e096",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a slatted timber garden shade structure, beside Fig. C-2: above the XY line, at the left the elevation showing the parabolic curve DEF with vertex E under the overhead line PQ, dimensioned 3m, 3m, 5m, 8m, 6m and 2m, and at the right the outline end view with the generating parabola ABC drawn as a magenta dashed curve of 10m span and 8m rise; below, the incomplete plan of the structure with the point R and the line PQ, dimensioned 10m, 2m and 4m.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1819,7 +1819,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q2-art.png",
-          "srcHash": "267a0ca1445a72873d975ed2e9a351a9",
+          "srcHash": "3d98324fd0f8d288c1b3cd1eedb6e096",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a slatted timber garden shade structure, beside Fig. C-2: above the XY line, at the left the elevation showing the parabolic curve DEF with vertex E under the overhead line PQ, dimensioned 3m, 3m, 5m, 8m, 6m and 2m, and at the right the outline end view with the generating parabola ABC drawn as a magenta dashed curve of 10m span and 8m rise; below, the incomplete plan of the structure with the point R and the line PQ, dimensioned 10m, 2m and 4m.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1842,7 +1842,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q2-art.png",
-          "srcHash": "267a0ca1445a72873d975ed2e9a351a9",
+          "srcHash": "3d98324fd0f8d288c1b3cd1eedb6e096",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a slatted timber garden shade structure, beside Fig. C-2: above the XY line, at the left the elevation showing the parabolic curve DEF with vertex E under the overhead line PQ, dimensioned 3m, 3m, 5m, 8m, 6m and 2m, and at the right the outline end view with the generating parabola ABC drawn as a magenta dashed curve of 10m span and 8m rise; below, the incomplete plan of the structure with the point R and the line PQ, dimensioned 10m, 2m and 4m.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1866,7 +1866,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q3-art.png",
-          "srcHash": "3b59dd5c06d828723d4b4db9a3da5ccc",
+          "srcHash": "958719db18f48916deb612c1681a155e",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of the faceted glass Louis Vuitton store in Singapore, beside Fig. C-3: above the XY line the elevation and the end view of a model of part of the building showing the planar surfaces lettered A, B and C, dimensioned 2m, 7.5m, 2.5m, 3.5m, 6m and 3.5m; below, the plan of the same model with surfaces A and B lettered and a magenta line across it, dimensioned 1m, 2m, 3m, 2.5m and 6m.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1891,7 +1891,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q3-art.png",
-          "srcHash": "3b59dd5c06d828723d4b4db9a3da5ccc",
+          "srcHash": "958719db18f48916deb612c1681a155e",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of the faceted glass Louis Vuitton store in Singapore, beside Fig. C-3: above the XY line the elevation and the end view of a model of part of the building showing the planar surfaces lettered A, B and C, dimensioned 2m, 7.5m, 2.5m, 3.5m, 6m and 3.5m; below, the plan of the same model with surfaces A and B lettered and a magenta line across it, dimensioned 1m, 2m, 3m, 2.5m and 6m.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1914,7 +1914,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q3-art.png",
-          "srcHash": "3b59dd5c06d828723d4b4db9a3da5ccc",
+          "srcHash": "958719db18f48916deb612c1681a155e",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of the faceted glass Louis Vuitton store in Singapore, beside Fig. C-3: above the XY line the elevation and the end view of a model of part of the building showing the planar surfaces lettered A, B and C, dimensioned 2m, 7.5m, 2.5m, 3.5m, 6m and 3.5m; below, the plan of the same model with surfaces A and B lettered and a magenta line across it, dimensioned 1m, 2m, 3m, 2.5m and 6m.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1938,7 +1938,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q3-art.png",
-          "srcHash": "3b59dd5c06d828723d4b4db9a3da5ccc",
+          "srcHash": "958719db18f48916deb612c1681a155e",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of the faceted glass Louis Vuitton store in Singapore, beside Fig. C-3: above the XY line the elevation and the end view of a model of part of the building showing the planar surfaces lettered A, B and C, dimensioned 2m, 7.5m, 2.5m, 3.5m, 6m and 3.5m; below, the plan of the same model with surfaces A and B lettered and a magenta line across it, dimensioned 1m, 2m, 3m, 2.5m and 6m.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1964,7 +1964,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q4-art.png",
-          "srcHash": "c05bd1aeb62ee494ca53a5938b1d4402",
+          "srcHash": "1a59ba0a4f337b18b3edc23fb9340aaf",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) prints a photograph of a wooden cam-and-follower toy with four rainbow lolly figures and the displacement data as text, with no drawing. Part (b) prints a photograph of a modern penny-farthing bicycle beside Fig. C-4(b): a circle of radius R350 divided by twelve green spokes at 30 degree intervals, a black reflector point marked on one spoke 220 above the horizontal line AB on which the wheel rolls, and an orange arrow showing clockwise rotation.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -1989,7 +1989,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q4-art.png",
-          "srcHash": "c05bd1aeb62ee494ca53a5938b1d4402",
+          "srcHash": "1a59ba0a4f337b18b3edc23fb9340aaf",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) prints a photograph of a wooden cam-and-follower toy with four rainbow lolly figures and the displacement data as text, with no drawing. Part (b) prints a photograph of a modern penny-farthing bicycle beside Fig. C-4(b): a circle of radius R350 divided by twelve green spokes at 30 degree intervals, a black reflector point marked on one spoke 220 above the horizontal line AB on which the wheel rolls, and an orange arrow showing clockwise rotation.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -2011,7 +2011,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q5-art.png",
-          "srcHash": "4c78070c0696cf24c55ef28c8d8e5685",
+          "srcHash": "67376ae23008967063e622196b5a2e77",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a manual coffee grinder, beside Fig. C-5: a full sheet of dimensioned orthographic detail drawings of the thirteen numbered components -- the semicircular frame, base plate, hopper, grinding discs, friction cones, spindles, bushes and handle -- with the section line A-A marked on the frame, hatched sections in green, and the two parts-list tables naming each numbered part and its quantity.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level — © State Examinations Commission"
@@ -2397,7 +2397,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secB-q3-art.png",
-          "srcHash": "8a1589024e118288e11722ad58a3d309",
+          "srcHash": "89fc73a8b441df5501e50b0a4803c92b",
           "alt": "Question B-3 as printed. A photograph of a stone pyramid monument to deceased members of the Irish Defence Forces, a small pictorial view of the same pyramid with a green flag beside it, and Fig. B-3: above the XY line the elevation of the pyramid 3.6m high with a 30 degree true shape of the flag drawn 0.9m at the top left; below it the square plan 3.36m across divided into the bays 0.42, 0.42, 0.42, 0.42, 0.42, 0.42, 0.42 and 0.21, with corner A at the front, a 60 degree line from A and the spectator point S marked in magenta.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2421,7 +2421,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secB-q3-art.png",
-          "srcHash": "8a1589024e118288e11722ad58a3d309",
+          "srcHash": "89fc73a8b441df5501e50b0a4803c92b",
           "alt": "Question B-3 as printed. A photograph of a stone pyramid monument to deceased members of the Irish Defence Forces, a small pictorial view of the same pyramid with a green flag beside it, and Fig. B-3: above the XY line the elevation of the pyramid 3.6m high with a 30 degree true shape of the flag drawn 0.9m at the top left; below it the square plan 3.36m across divided into the bays 0.42, 0.42, 0.42, 0.42, 0.42, 0.42, 0.42 and 0.21, with corner A at the front, a 60 degree line from A and the spectator point S marked in magenta.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2443,7 +2443,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q1-art.png",
-          "srcHash": "e680ce431f28172224c0eb2120c6a20b",
+          "srcHash": "acdc23c50b35a25c6306a8d0fde940dc",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text, and two photographs of footgolf being played on a course; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2465,7 +2465,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q1-art.png",
-          "srcHash": "e680ce431f28172224c0eb2120c6a20b",
+          "srcHash": "acdc23c50b35a25c6306a8d0fde940dc",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text, and two photographs of footgolf being played on a course; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2488,7 +2488,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q1-art.png",
-          "srcHash": "e680ce431f28172224c0eb2120c6a20b",
+          "srcHash": "acdc23c50b35a25c6306a8d0fde940dc",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text, and two photographs of footgolf being played on a course; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2512,7 +2512,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q1-art.png",
-          "srcHash": "e680ce431f28172224c0eb2120c6a20b",
+          "srcHash": "acdc23c50b35a25c6306a8d0fde940dc",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text, and two photographs of footgolf being played on a course; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2535,7 +2535,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q1-art.png",
-          "srcHash": "e680ce431f28172224c0eb2120c6a20b",
+          "srcHash": "acdc23c50b35a25c6306a8d0fde940dc",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text, and two photographs of footgolf being played on a course; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2557,7 +2557,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q2-art.png",
-          "srcHash": "b9a8aac3dd2079e5260443483420ecd1",
+          "srcHash": "5cce47cf6f2b1524dfaf652c0f5b5805",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of the waisted air traffic control tower at Newcastle airport, beside Fig. C-2: above the XY line the elevation of a model of the tower, a hyperboloid of revolution between truncated cones, with the double hyperbola branches LMN and L1M1N1, their vertices M and M1, the green asymptotes AB and CD crossing at Q, the point S and the flight path PQ, dimensioned 20m, 3m, 3.5m, 6m, 12m and 6m; below it the plan as concentric circles of Ø10m, Ø16.8m, Ø20m and Ø24m with P and Q marked.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2580,7 +2580,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q2-art.png",
-          "srcHash": "b9a8aac3dd2079e5260443483420ecd1",
+          "srcHash": "5cce47cf6f2b1524dfaf652c0f5b5805",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of the waisted air traffic control tower at Newcastle airport, beside Fig. C-2: above the XY line the elevation of a model of the tower, a hyperboloid of revolution between truncated cones, with the double hyperbola branches LMN and L1M1N1, their vertices M and M1, the green asymptotes AB and CD crossing at Q, the point S and the flight path PQ, dimensioned 20m, 3m, 3.5m, 6m, 12m and 6m; below it the plan as concentric circles of Ø10m, Ø16.8m, Ø20m and Ø24m with P and Q marked.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2604,7 +2604,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q2-art.png",
-          "srcHash": "b9a8aac3dd2079e5260443483420ecd1",
+          "srcHash": "5cce47cf6f2b1524dfaf652c0f5b5805",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of the waisted air traffic control tower at Newcastle airport, beside Fig. C-2: above the XY line the elevation of a model of the tower, a hyperboloid of revolution between truncated cones, with the double hyperbola branches LMN and L1M1N1, their vertices M and M1, the green asymptotes AB and CD crossing at Q, the point S and the flight path PQ, dimensioned 20m, 3m, 3.5m, 6m, 12m and 6m; below it the plan as concentric circles of Ø10m, Ø16.8m, Ø20m and Ø24m with P and Q marked.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2628,7 +2628,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q3-art.png",
-          "srcHash": "383737c581f64b951f6369b4ff04ac8a",
+          "srcHash": "895cf8d64ee5d68197273ce89cc71e09",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a blue faceted watch, and a coloured pictorial view of the same faceted solid with the surfaces A, B and C lettered, beside Fig. C-3: above the XY line the elevation and the tilted end view of the watch with surfaces A, B and C lettered and dimensioned 15, 5, 10, 8, 7 and 15 at a 60 degree angle; below, the octagonal plan dimensioned 8, 7, 10 and 5; and at the right the partial surface development of surfaces A, B and C with the circular watch face on C, dimensioned 10, 10, 10 and 4.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2653,7 +2653,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q3-art.png",
-          "srcHash": "383737c581f64b951f6369b4ff04ac8a",
+          "srcHash": "895cf8d64ee5d68197273ce89cc71e09",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a blue faceted watch, and a coloured pictorial view of the same faceted solid with the surfaces A, B and C lettered, beside Fig. C-3: above the XY line the elevation and the tilted end view of the watch with surfaces A, B and C lettered and dimensioned 15, 5, 10, 8, 7 and 15 at a 60 degree angle; below, the octagonal plan dimensioned 8, 7, 10 and 5; and at the right the partial surface development of surfaces A, B and C with the circular watch face on C, dimensioned 10, 10, 10 and 4.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2677,7 +2677,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q3-art.png",
-          "srcHash": "383737c581f64b951f6369b4ff04ac8a",
+          "srcHash": "895cf8d64ee5d68197273ce89cc71e09",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a blue faceted watch, and a coloured pictorial view of the same faceted solid with the surfaces A, B and C lettered, beside Fig. C-3: above the XY line the elevation and the tilted end view of the watch with surfaces A, B and C lettered and dimensioned 15, 5, 10, 8, 7 and 15 at a 60 degree angle; below, the octagonal plan dimensioned 8, 7, 10 and 5; and at the right the partial surface development of surfaces A, B and C with the circular watch face on C, dimensioned 10, 10, 10 and 4.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2701,7 +2701,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q3-art.png",
-          "srcHash": "383737c581f64b951f6369b4ff04ac8a",
+          "srcHash": "895cf8d64ee5d68197273ce89cc71e09",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a blue faceted watch, and a coloured pictorial view of the same faceted solid with the surfaces A, B and C lettered, beside Fig. C-3: above the XY line the elevation and the tilted end view of the watch with surfaces A, B and C lettered and dimensioned 15, 5, 10, 8, 7 and 15 at a 60 degree angle; below, the octagonal plan dimensioned 8, 7, 10 and 5; and at the right the partial surface development of surfaces A, B and C with the circular watch face on C, dimensioned 10, 10, 10 and 4.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2722,7 +2722,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q4-art.png",
-          "srcHash": "7ff4b1a87ec216eeb004844b6e8a4679",
+          "srcHash": "427c1f465d13f5e3000f5a4271bb8726",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a rendered blue radial plate cam and Fig. C-4(a): the given cam profile drawn about a Ø20 camshaft with an R100 radius, a 12 rise, the 90, 180 and 270 degree positions marked, a 40 dimension at the foot and a blue arrow for clockwise rotation, with the knife-edge follower above. Part (b) shows a photograph of a wooden toy digger and Fig. C-4(b): a line diagram of the wheel of Ø40 on the line AB, the arm SR dimensioned 44 and 10, the bucket PQT dimensioned 56, 26, 40, 70, 31 and 15 with a 120 degree angle at T, and blue arrows for the clockwise rotation and the direction of travel.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2747,7 +2747,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q4-art.png",
-          "srcHash": "7ff4b1a87ec216eeb004844b6e8a4679",
+          "srcHash": "427c1f465d13f5e3000f5a4271bb8726",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a rendered blue radial plate cam and Fig. C-4(a): the given cam profile drawn about a Ø20 camshaft with an R100 radius, a 12 rise, the 90, 180 and 270 degree positions marked, a 40 dimension at the foot and a blue arrow for clockwise rotation, with the knife-edge follower above. Part (b) shows a photograph of a wooden toy digger and Fig. C-4(b): a line diagram of the wheel of Ø40 on the line AB, the arm SR dimensioned 44 and 10, the bucket PQT dimensioned 56, 26, 40, 70, 31 and 15 with a 120 degree angle at T, and blue arrows for the clockwise rotation and the direction of travel.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2769,7 +2769,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q5-art.png",
-          "srcHash": "f130a16c6314975a85be41121c8fffae",
+          "srcHash": "dd022f7973612105fefe8d1f6b054d67",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a bicycle phone holder, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower bracket, top bracket, swivel mount, swivel arm, swivel arm spindle, phone holder body, cam lever lock and cam lever spindle -- with the section line A-A marked across the top bracket and the phone holder body, hatched sections in green, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2792,7 +2792,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q5-art.png",
-          "srcHash": "f130a16c6314975a85be41121c8fffae",
+          "srcHash": "dd022f7973612105fefe8d1f6b054d67",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a bicycle phone holder, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower bracket, top bracket, swivel mount, swivel arm, swivel arm spindle, phone holder body, cam lever lock and cam lever spindle -- with the section line A-A marked across the top bracket and the phone holder body, hatched sections in green, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2816,7 +2816,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q5-art.png",
-          "srcHash": "f130a16c6314975a85be41121c8fffae",
+          "srcHash": "dd022f7973612105fefe8d1f6b054d67",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a bicycle phone holder, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower bracket, top bracket, swivel mount, swivel arm, swivel arm spindle, phone holder body, cam lever lock and cam lever spindle -- with the section line A-A marked across the top bracket and the phone holder body, hatched sections in green, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2839,7 +2839,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q5-art.png",
-          "srcHash": "f130a16c6314975a85be41121c8fffae",
+          "srcHash": "dd022f7973612105fefe8d1f6b054d67",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a bicycle phone holder, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower bracket, top bracket, swivel mount, swivel arm, swivel arm spindle, phone holder body, cam lever lock and cam lever spindle -- with the section line A-A marked across the top bracket and the phone holder body, hatched sections in green, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2863,7 +2863,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q5-art.png",
-          "srcHash": "f130a16c6314975a85be41121c8fffae",
+          "srcHash": "dd022f7973612105fefe8d1f6b054d67",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a bicycle phone holder, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower bracket, top bracket, swivel mount, swivel arm, swivel arm spindle, phone holder body, cam lever lock and cam lever spindle -- with the section line A-A marked across the top bracket and the phone holder body, hatched sections in green, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2886,7 +2886,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q5-art.png",
-          "srcHash": "f130a16c6314975a85be41121c8fffae",
+          "srcHash": "dd022f7973612105fefe8d1f6b054d67",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a bicycle phone holder, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower bracket, top bracket, swivel mount, swivel arm, swivel arm spindle, phone holder body, cam lever lock and cam lever spindle -- with the section line A-A marked across the top bracket and the phone holder body, hatched sections in green, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2910,7 +2910,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q5-art.png",
-          "srcHash": "f130a16c6314975a85be41121c8fffae",
+          "srcHash": "dd022f7973612105fefe8d1f6b054d67",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a bicycle phone holder, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower bracket, top bracket, swivel mount, swivel arm, swivel arm spindle, phone holder body, cam lever lock and cam lever spindle -- with the section line A-A marked across the top bracket and the phone holder body, hatched sections in green, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -2932,7 +2932,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q5-art.png",
-          "srcHash": "f130a16c6314975a85be41121c8fffae",
+          "srcHash": "dd022f7973612105fefe8d1f6b054d67",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a bicycle phone holder, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower bracket, top bracket, swivel mount, swivel arm, swivel arm spindle, phone holder body, cam lever lock and cam lever spindle -- with the section line A-A marked across the top bracket and the phone holder body, hatched sections in green, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level — © State Examinations Commission"
@@ -3150,7 +3150,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secB-q1-art.png",
-          "srcHash": "76f4749278a4eca47813d15f897f5c03",
+          "srcHash": "6b7cac70cddb47a777378b73bac0a8d6",
           "alt": "Question B-1 as printed. A night photograph of the parabolic-arch pedestrian bridge in Newport, Wales, and a grey pictorial view of a model of it, beside Fig. B-1: above the XY line the elevation, a parabola ABC with vertex B rising 70 over a span of 190 with 20 abutments and a 15 deck, ruled with vertical members, and the end view at the right, 80 wide with 70 degree splayed sides; below, the plan showing the two arches curving in towards the middle.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3177,7 +3177,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secB-q1-art.png",
-          "srcHash": "76f4749278a4eca47813d15f897f5c03",
+          "srcHash": "6b7cac70cddb47a777378b73bac0a8d6",
           "alt": "Question B-1 as printed. A night photograph of the parabolic-arch pedestrian bridge in Newport, Wales, and a grey pictorial view of a model of it, beside Fig. B-1: above the XY line the elevation, a parabola ABC with vertex B rising 70 over a span of 190 with 20 abutments and a 15 deck, ruled with vertical members, and the end view at the right, 80 wide with 70 degree splayed sides; below, the plan showing the two arches curving in towards the middle.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3201,7 +3201,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secB-q1-art.png",
-          "srcHash": "76f4749278a4eca47813d15f897f5c03",
+          "srcHash": "6b7cac70cddb47a777378b73bac0a8d6",
           "alt": "Question B-1 as printed. A night photograph of the parabolic-arch pedestrian bridge in Newport, Wales, and a grey pictorial view of a model of it, beside Fig. B-1: above the XY line the elevation, a parabola ABC with vertex B rising 70 over a span of 190 with 20 abutments and a 15 deck, ruled with vertical members, and the end view at the right, 80 wide with 70 degree splayed sides; below, the plan showing the two arches curving in towards the middle.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3224,7 +3224,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secB-q2-art.png",
-          "srcHash": "4d4107bf2fae06ac5fa2a4f03b94e4bc",
+          "srcHash": "da7a43b2116ed07ddb720a104dd8dad4",
           "alt": "Question B-2 as printed. A photograph of a faceted car showroom in Qatar, beside Fig. B-2: above the XY line the elevation of four intersecting triangular planes with the points A, B, C, D, E and F lettered; below it the corresponding plan of the same points; and to the right a table of coordinates, A 145-10-70, B 130-45-40, C 180-55-30, D 100-60-20, E 145-90-10 and F with two of its three values given as question marks.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3249,7 +3249,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secB-q2-art.png",
-          "srcHash": "4d4107bf2fae06ac5fa2a4f03b94e4bc",
+          "srcHash": "da7a43b2116ed07ddb720a104dd8dad4",
           "alt": "Question B-2 as printed. A photograph of a faceted car showroom in Qatar, beside Fig. B-2: above the XY line the elevation of four intersecting triangular planes with the points A, B, C, D, E and F lettered; below it the corresponding plan of the same points; and to the right a table of coordinates, A 145-10-70, B 130-45-40, C 180-55-30, D 100-60-20, E 145-90-10 and F with two of its three values given as question marks.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3273,7 +3273,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secB-q2-art.png",
-          "srcHash": "4d4107bf2fae06ac5fa2a4f03b94e4bc",
+          "srcHash": "da7a43b2116ed07ddb720a104dd8dad4",
           "alt": "Question B-2 as printed. A photograph of a faceted car showroom in Qatar, beside Fig. B-2: above the XY line the elevation of four intersecting triangular planes with the points A, B, C, D, E and F lettered; below it the corresponding plan of the same points; and to the right a table of coordinates, A 145-10-70, B 130-45-40, C 180-55-30, D 100-60-20, E 145-90-10 and F with two of its three values given as question marks.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3298,7 +3298,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secB-q2-art.png",
-          "srcHash": "4d4107bf2fae06ac5fa2a4f03b94e4bc",
+          "srcHash": "da7a43b2116ed07ddb720a104dd8dad4",
           "alt": "Question B-2 as printed. A photograph of a faceted car showroom in Qatar, beside Fig. B-2: above the XY line the elevation of four intersecting triangular planes with the points A, B, C, D, E and F lettered; below it the corresponding plan of the same points; and to the right a table of coordinates, A 145-10-70, B 130-45-40, C 180-55-30, D 100-60-20, E 145-90-10 and F with two of its three values given as question marks.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3322,7 +3322,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secB-q3-art.png",
-          "srcHash": "5921a9ba72f8c008f45129b229fa1130",
+          "srcHash": "8fc63c075cb773739451f0d5518ec754",
           "alt": "Question B-3 as printed. A photograph of a blue table-tennis table with curved red legs, and a purple pictorial view of the same table, beside Fig. B-3: an incomplete trimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 110 degree angle marked, the scalene triangle abc with the base divided 50 and 40, magenta construction arcs, the end view at the left with an R50 arc dimensioned 10, 25 and 25, and the elevation at the right dimensioned 70, 10 and 50.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3344,7 +3344,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secB-q3-art.png",
-          "srcHash": "5921a9ba72f8c008f45129b229fa1130",
+          "srcHash": "8fc63c075cb773739451f0d5518ec754",
           "alt": "Question B-3 as printed. A photograph of a blue table-tennis table with curved red legs, and a purple pictorial view of the same table, beside Fig. B-3: an incomplete trimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 110 degree angle marked, the scalene triangle abc with the base divided 50 and 40, magenta construction arcs, the end view at the left with an R50 arc dimensioned 10, 25 and 25, and the elevation at the right dimensioned 70, 10 and 50.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3367,7 +3367,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secB-q3-art.png",
-          "srcHash": "5921a9ba72f8c008f45129b229fa1130",
+          "srcHash": "8fc63c075cb773739451f0d5518ec754",
           "alt": "Question B-3 as printed. A photograph of a blue table-tennis table with curved red legs, and a purple pictorial view of the same table, beside Fig. B-3: an incomplete trimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 110 degree angle marked, the scalene triangle abc with the base divided 50 and 40, magenta construction arcs, the end view at the left with an R50 arc dimensioned 10, 25 and 25, and the elevation at the right dimensioned 70, 10 and 50.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3390,7 +3390,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q1-art.png",
-          "srcHash": "3620b1139d7069be3f70a0300584253f",
+          "srcHash": "771959fc56c8c1e2af65c9ae90d1ca78",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of kayakers on a white-water river; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3413,7 +3413,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q1-art.png",
-          "srcHash": "3620b1139d7069be3f70a0300584253f",
+          "srcHash": "771959fc56c8c1e2af65c9ae90d1ca78",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of kayakers on a white-water river; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3436,7 +3436,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q1-art.png",
-          "srcHash": "3620b1139d7069be3f70a0300584253f",
+          "srcHash": "771959fc56c8c1e2af65c9ae90d1ca78",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of kayakers on a white-water river; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3460,7 +3460,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q1-art.png",
-          "srcHash": "3620b1139d7069be3f70a0300584253f",
+          "srcHash": "771959fc56c8c1e2af65c9ae90d1ca78",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of kayakers on a white-water river; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3484,7 +3484,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q1-art.png",
-          "srcHash": "3620b1139d7069be3f70a0300584253f",
+          "srcHash": "771959fc56c8c1e2af65c9ae90d1ca78",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of kayakers on a white-water river; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3510,7 +3510,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q1-art.png",
-          "srcHash": "3620b1139d7069be3f70a0300584253f",
+          "srcHash": "771959fc56c8c1e2af65c9ae90d1ca78",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of kayakers on a white-water river; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3536,7 +3536,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q2-art.png",
-          "srcHash": "2281062b05399b31c2ad4b61419f9c1d",
+          "srcHash": "2d4512a80fda6a2320d9fc05f49bef7d",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of the saddle-shaped white roof of the Volkswagen test track pavilion, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid roof, a sagging curve from A through B and D to C and on to P, ruled with green elements, dimensioned 16m, 12m and 3m; below it the plan, an ellipse with a 42m major and 22m minor axis, its surface ruled with two green families of elements and magenta diagonals, with A, B, C, D and P marked and the divisions 18m, 3m, 15m and 6m along the major axis.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3563,7 +3563,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q2-art.png",
-          "srcHash": "2281062b05399b31c2ad4b61419f9c1d",
+          "srcHash": "2d4512a80fda6a2320d9fc05f49bef7d",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of the saddle-shaped white roof of the Volkswagen test track pavilion, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid roof, a sagging curve from A through B and D to C and on to P, ruled with green elements, dimensioned 16m, 12m and 3m; below it the plan, an ellipse with a 42m major and 22m minor axis, its surface ruled with two green families of elements and magenta diagonals, with A, B, C, D and P marked and the divisions 18m, 3m, 15m and 6m along the major axis.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3588,7 +3588,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q2-art.png",
-          "srcHash": "2281062b05399b31c2ad4b61419f9c1d",
+          "srcHash": "2d4512a80fda6a2320d9fc05f49bef7d",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of the saddle-shaped white roof of the Volkswagen test track pavilion, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid roof, a sagging curve from A through B and D to C and on to P, ruled with green elements, dimensioned 16m, 12m and 3m; below it the plan, an ellipse with a 42m major and 22m minor axis, its surface ruled with two green families of elements and magenta diagonals, with A, B, C, D and P marked and the divisions 18m, 3m, 15m and 6m along the major axis.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3611,7 +3611,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q3-art.png",
-          "srcHash": "5e167e47e8cf4ac501486bceb0804080",
+          "srcHash": "1ccc0e3f3900c01713808a81f188d587",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of the windscreen panels on the nose of an aeroplane, and a coloured pictorial view of the same faceted band of panels, beside Fig. C-3: above the XY line the elevation of the surfaces A, B and C dimensioned 15, 48, 12 and 20, with the green wiper blade PQ on surface A; below it the plan of the four surfaces A, B, C and D swept round in a shallow V, dimensioned 12, 10, 30, 20, 15, 10, 30 and 32 vertically and 16, 44, 20, 10, 30 and 10 across, with P and Q marked.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3636,7 +3636,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q3-art.png",
-          "srcHash": "5e167e47e8cf4ac501486bceb0804080",
+          "srcHash": "1ccc0e3f3900c01713808a81f188d587",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of the windscreen panels on the nose of an aeroplane, and a coloured pictorial view of the same faceted band of panels, beside Fig. C-3: above the XY line the elevation of the surfaces A, B and C dimensioned 15, 48, 12 and 20, with the green wiper blade PQ on surface A; below it the plan of the four surfaces A, B, C and D swept round in a shallow V, dimensioned 12, 10, 30, 20, 15, 10, 30 and 32 vertically and 16, 44, 20, 10, 30 and 10 across, with P and Q marked.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3660,7 +3660,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q3-art.png",
-          "srcHash": "5e167e47e8cf4ac501486bceb0804080",
+          "srcHash": "1ccc0e3f3900c01713808a81f188d587",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of the windscreen panels on the nose of an aeroplane, and a coloured pictorial view of the same faceted band of panels, beside Fig. C-3: above the XY line the elevation of the surfaces A, B and C dimensioned 15, 48, 12 and 20, with the green wiper blade PQ on surface A; below it the plan of the four surfaces A, B, C and D swept round in a shallow V, dimensioned 12, 10, 30, 20, 15, 10, 30 and 32 vertically and 16, 44, 20, 10, 30 and 10 across, with P and Q marked.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3683,7 +3683,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q3-art.png",
-          "srcHash": "5e167e47e8cf4ac501486bceb0804080",
+          "srcHash": "1ccc0e3f3900c01713808a81f188d587",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of the windscreen panels on the nose of an aeroplane, and a coloured pictorial view of the same faceted band of panels, beside Fig. C-3: above the XY line the elevation of the surfaces A, B and C dimensioned 15, 48, 12 and 20, with the green wiper blade PQ on surface A; below it the plan of the four surfaces A, B, C and D swept round in a shallow V, dimensioned 12, 10, 30, 20, 15, 10, 30 and 32 vertically and 16, 44, 20, 10, 30 and 10 across, with P and Q marked.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3705,7 +3705,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q4-art.png",
-          "srcHash": "05b8aade91eacc7b44d79f8041cdda84",
+          "srcHash": "da5e16f392e68dfdd4a9fa8d4d80f5f7",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a blue skip lorry and Fig. C-4(a): the outline of the lorry with the hydraulic arm AB at 44 degrees, its extended position AB1 at 150 degrees anticlockwise, radii 90 and 122 marked, the green skip outline with the point C on it dimensioned 36, 10, 30, 43 and 55 degrees, a Ø36 wheel and the ground line LL1 with 155 and 25 divisions. Part (b) shows a photograph of a multi-cam timer and Fig. C-4(b): the profile of one cam about a Ø4 shaft with R16 and R14 radii, a 6 rise, a 30 degree division, the 0, 90, 180 and 270 degree positions marked, and a blue arrow for anticlockwise rotation.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3726,7 +3726,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q4-art.png",
-          "srcHash": "05b8aade91eacc7b44d79f8041cdda84",
+          "srcHash": "da5e16f392e68dfdd4a9fa8d4d80f5f7",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a blue skip lorry and Fig. C-4(a): the outline of the lorry with the hydraulic arm AB at 44 degrees, its extended position AB1 at 150 degrees anticlockwise, radii 90 and 122 marked, the green skip outline with the point C on it dimensioned 36, 10, 30, 43 and 55 degrees, a Ø36 wheel and the ground line LL1 with 155 and 25 divisions. Part (b) shows a photograph of a multi-cam timer and Fig. C-4(b): the profile of one cam about a Ø4 shaft with R16 and R14 radii, a 6 rise, a 30 degree division, the 0, 90, 180 and 270 degree positions marked, and a blue arrow for anticlockwise rotation.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3748,7 +3748,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q5-art.png",
-          "srcHash": "2acd000ca2e815d0a753c01c668ca59d",
+          "srcHash": "455ebf245053fed905c3a1617cb80bfe",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a black GoPro handlebar clamp, beside Fig. C-5: dimensioned orthographic detail drawings of the twelve numbered components -- main body, clamping jaw, jaw pivot pin, clamp coupling, M8 stud, washer, jaw clamping nut, camera swivel, M6 x 40 bolt, swivel clamping nut, GoPro lock nut and M6 x 24 stud -- with the section line A-A marked vertically on the main body, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3773,7 +3773,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q5-art.png",
-          "srcHash": "2acd000ca2e815d0a753c01c668ca59d",
+          "srcHash": "455ebf245053fed905c3a1617cb80bfe",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a black GoPro handlebar clamp, beside Fig. C-5: dimensioned orthographic detail drawings of the twelve numbered components -- main body, clamping jaw, jaw pivot pin, clamp coupling, M8 stud, washer, jaw clamping nut, camera swivel, M6 x 40 bolt, swivel clamping nut, GoPro lock nut and M6 x 24 stud -- with the section line A-A marked vertically on the main body, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3798,7 +3798,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q5-art.png",
-          "srcHash": "2acd000ca2e815d0a753c01c668ca59d",
+          "srcHash": "455ebf245053fed905c3a1617cb80bfe",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a black GoPro handlebar clamp, beside Fig. C-5: dimensioned orthographic detail drawings of the twelve numbered components -- main body, clamping jaw, jaw pivot pin, clamp coupling, M8 stud, washer, jaw clamping nut, camera swivel, M6 x 40 bolt, swivel clamping nut, GoPro lock nut and M6 x 24 stud -- with the section line A-A marked vertically on the main body, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3821,7 +3821,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q5-art.png",
-          "srcHash": "2acd000ca2e815d0a753c01c668ca59d",
+          "srcHash": "455ebf245053fed905c3a1617cb80bfe",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a black GoPro handlebar clamp, beside Fig. C-5: dimensioned orthographic detail drawings of the twelve numbered components -- main body, clamping jaw, jaw pivot pin, clamp coupling, M8 stud, washer, jaw clamping nut, camera swivel, M6 x 40 bolt, swivel clamping nut, GoPro lock nut and M6 x 24 stud -- with the section line A-A marked vertically on the main body, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3844,7 +3844,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q5-art.png",
-          "srcHash": "2acd000ca2e815d0a753c01c668ca59d",
+          "srcHash": "455ebf245053fed905c3a1617cb80bfe",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a black GoPro handlebar clamp, beside Fig. C-5: dimensioned orthographic detail drawings of the twelve numbered components -- main body, clamping jaw, jaw pivot pin, clamp coupling, M8 stud, washer, jaw clamping nut, camera swivel, M6 x 40 bolt, swivel clamping nut, GoPro lock nut and M6 x 24 stud -- with the section line A-A marked vertically on the main body, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3867,7 +3867,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q5-art.png",
-          "srcHash": "2acd000ca2e815d0a753c01c668ca59d",
+          "srcHash": "455ebf245053fed905c3a1617cb80bfe",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a black GoPro handlebar clamp, beside Fig. C-5: dimensioned orthographic detail drawings of the twelve numbered components -- main body, clamping jaw, jaw pivot pin, clamp coupling, M8 stud, washer, jaw clamping nut, camera swivel, M6 x 40 bolt, swivel clamping nut, GoPro lock nut and M6 x 24 stud -- with the section line A-A marked vertically on the main body, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3890,7 +3890,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q5-art.png",
-          "srcHash": "2acd000ca2e815d0a753c01c668ca59d",
+          "srcHash": "455ebf245053fed905c3a1617cb80bfe",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a black GoPro handlebar clamp, beside Fig. C-5: dimensioned orthographic detail drawings of the twelve numbered components -- main body, clamping jaw, jaw pivot pin, clamp coupling, M8 stud, washer, jaw clamping nut, camera swivel, M6 x 40 bolt, swivel clamping nut, GoPro lock nut and M6 x 24 stud -- with the section line A-A marked vertically on the main body, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -3912,7 +3912,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q5-art.png",
-          "srcHash": "2acd000ca2e815d0a753c01c668ca59d",
+          "srcHash": "455ebf245053fed905c3a1617cb80bfe",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a black GoPro handlebar clamp, beside Fig. C-5: dimensioned orthographic detail drawings of the twelve numbered components -- main body, clamping jaw, jaw pivot pin, clamp coupling, M8 stud, washer, jaw clamping nut, camera swivel, M6 x 40 bolt, swivel clamping nut, GoPro lock nut and M6 x 24 stud -- with the section line A-A marked vertically on the main body, and a parts-list table naming each part with a quantity of one.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level — © State Examinations Commission"
@@ -4267,7 +4267,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secB-q3-art.png",
-          "srcHash": "e9594957abc8445340a0384dcd5e68ce",
+          "srcHash": "194fe35ad6a1e0ea4527e79b0325c77b",
           "alt": "Question B-3 as printed. A photograph of a Microsoft Surface Pro tablet on its kickstand, beside Fig. B-3: above the XY line the elevation of the touchscreen ABCD as a parallelogram with the hinge line FG drawn broken across it, dimensioned 60 and 60 at the right and 140 at the left; below it the plan of the same touchscreen ABCD as a rectangle 240 by 60 plus 60, set at an angle, with F and G marked and a 35 degree angle drawn at B.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4291,7 +4291,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secB-q3-art.png",
-          "srcHash": "e9594957abc8445340a0384dcd5e68ce",
+          "srcHash": "194fe35ad6a1e0ea4527e79b0325c77b",
           "alt": "Question B-3 as printed. A photograph of a Microsoft Surface Pro tablet on its kickstand, beside Fig. B-3: above the XY line the elevation of the touchscreen ABCD as a parallelogram with the hinge line FG drawn broken across it, dimensioned 60 and 60 at the right and 140 at the left; below it the plan of the same touchscreen ABCD as a rectangle 240 by 60 plus 60, set at an angle, with F and G marked and a 35 degree angle drawn at B.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4316,7 +4316,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secB-q3-art.png",
-          "srcHash": "e9594957abc8445340a0384dcd5e68ce",
+          "srcHash": "194fe35ad6a1e0ea4527e79b0325c77b",
           "alt": "Question B-3 as printed. A photograph of a Microsoft Surface Pro tablet on its kickstand, beside Fig. B-3: above the XY line the elevation of the touchscreen ABCD as a parallelogram with the hinge line FG drawn broken across it, dimensioned 60 and 60 at the right and 140 at the left; below it the plan of the same touchscreen ABCD as a rectangle 240 by 60 plus 60, set at an angle, with F and G marked and a 35 degree angle drawn at B.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4340,7 +4340,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secB-q3-art.png",
-          "srcHash": "e9594957abc8445340a0384dcd5e68ce",
+          "srcHash": "194fe35ad6a1e0ea4527e79b0325c77b",
           "alt": "Question B-3 as printed. A photograph of a Microsoft Surface Pro tablet on its kickstand, beside Fig. B-3: above the XY line the elevation of the touchscreen ABCD as a parallelogram with the hinge line FG drawn broken across it, dimensioned 60 and 60 at the right and 140 at the left; below it the plan of the same touchscreen ABCD as a rectangle 240 by 60 plus 60, set at an angle, with F and G marked and a 35 degree angle drawn at B.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4363,7 +4363,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q1-art.png",
-          "srcHash": "0c4d5f05c19f0e01cbca38feb45b9a85",
+          "srcHash": "025897b5fd83ae7adb0ae00113ace917",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of two cyclists on a lakeside greenway; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4386,7 +4386,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q1-art.png",
-          "srcHash": "0c4d5f05c19f0e01cbca38feb45b9a85",
+          "srcHash": "025897b5fd83ae7adb0ae00113ace917",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of two cyclists on a lakeside greenway; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4409,7 +4409,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q1-art.png",
-          "srcHash": "0c4d5f05c19f0e01cbca38feb45b9a85",
+          "srcHash": "025897b5fd83ae7adb0ae00113ace917",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of two cyclists on a lakeside greenway; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4433,7 +4433,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q1-art.png",
-          "srcHash": "0c4d5f05c19f0e01cbca38feb45b9a85",
+          "srcHash": "025897b5fd83ae7adb0ae00113ace917",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of two cyclists on a lakeside greenway; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4459,7 +4459,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q1-art.png",
-          "srcHash": "0c4d5f05c19f0e01cbca38feb45b9a85",
+          "srcHash": "025897b5fd83ae7adb0ae00113ace917",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of two cyclists on a lakeside greenway; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4482,7 +4482,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q1-art.png",
-          "srcHash": "0c4d5f05c19f0e01cbca38feb45b9a85",
+          "srcHash": "025897b5fd83ae7adb0ae00113ace917",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of two cyclists on a lakeside greenway; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4509,7 +4509,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q2-art.png",
-          "srcHash": "0081937a8245b831875655294ea46445",
+          "srcHash": "037de3d39a6eb3c13082e100e013035c",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a dark ceramic tea light holder with a waisted profile, beside Fig. C-2: above the XY line the elevation, a hyperboloid of revolution whose sides curve in to a waist, dimensioned 20, 60 and 80 in height, with the arched vertical opening drawn at the foot and the blue broken outline of the generating cone at the top; below it the plan, concentric circles of Ø100 and Ø50 with the opening set 30 from the centre and a magenta arc across the front.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4534,7 +4534,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q2-art.png",
-          "srcHash": "0081937a8245b831875655294ea46445",
+          "srcHash": "037de3d39a6eb3c13082e100e013035c",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a dark ceramic tea light holder with a waisted profile, beside Fig. C-2: above the XY line the elevation, a hyperboloid of revolution whose sides curve in to a waist, dimensioned 20, 60 and 80 in height, with the arched vertical opening drawn at the foot and the blue broken outline of the generating cone at the top; below it the plan, concentric circles of Ø100 and Ø50 with the opening set 30 from the centre and a magenta arc across the front.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4557,7 +4557,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q2-art.png",
-          "srcHash": "0081937a8245b831875655294ea46445",
+          "srcHash": "037de3d39a6eb3c13082e100e013035c",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a dark ceramic tea light holder with a waisted profile, beside Fig. C-2: above the XY line the elevation, a hyperboloid of revolution whose sides curve in to a waist, dimensioned 20, 60 and 80 in height, with the arched vertical opening drawn at the foot and the blue broken outline of the generating cone at the top; below it the plan, concentric circles of Ø100 and Ø50 with the opening set 30 from the centre and a magenta arc across the front.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4580,7 +4580,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q3-art.png",
-          "srcHash": "367b7fa35caec0ad98b2d26e7ce64f2f",
+          "srcHash": "8413d90d959a0cec26d868dbfeaa321f",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of an indoor climbing wall, and a grey pictorial view of the same faceted wall with surfaces B and C and the points P and Q lettered, beside Fig. C-3: above the XY line the elevation of the surfaces A, B and C, a wide trapezium 7m high dimensioned 2.5m, 5m, 5m and 2.5m across, with P at the top right and Q at the foot of the centre line; below it the plan of the same three surfaces dimensioned 4m and 2m deep, with a red path drawn from P down to Q.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4605,7 +4605,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q3-art.png",
-          "srcHash": "367b7fa35caec0ad98b2d26e7ce64f2f",
+          "srcHash": "8413d90d959a0cec26d868dbfeaa321f",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of an indoor climbing wall, and a grey pictorial view of the same faceted wall with surfaces B and C and the points P and Q lettered, beside Fig. C-3: above the XY line the elevation of the surfaces A, B and C, a wide trapezium 7m high dimensioned 2.5m, 5m, 5m and 2.5m across, with P at the top right and Q at the foot of the centre line; below it the plan of the same three surfaces dimensioned 4m and 2m deep, with a red path drawn from P down to Q.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4629,7 +4629,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q3-art.png",
-          "srcHash": "367b7fa35caec0ad98b2d26e7ce64f2f",
+          "srcHash": "8413d90d959a0cec26d868dbfeaa321f",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of an indoor climbing wall, and a grey pictorial view of the same faceted wall with surfaces B and C and the points P and Q lettered, beside Fig. C-3: above the XY line the elevation of the surfaces A, B and C, a wide trapezium 7m high dimensioned 2.5m, 5m, 5m and 2.5m across, with P at the top right and Q at the foot of the centre line; below it the plan of the same three surfaces dimensioned 4m and 2m deep, with a red path drawn from P down to Q.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4653,7 +4653,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q3-art.png",
-          "srcHash": "367b7fa35caec0ad98b2d26e7ce64f2f",
+          "srcHash": "8413d90d959a0cec26d868dbfeaa321f",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of an indoor climbing wall, and a grey pictorial view of the same faceted wall with surfaces B and C and the points P and Q lettered, beside Fig. C-3: above the XY line the elevation of the surfaces A, B and C, a wide trapezium 7m high dimensioned 2.5m, 5m, 5m and 2.5m across, with P at the top right and Q at the foot of the centre line; below it the plan of the same three surfaces dimensioned 4m and 2m deep, with a red path drawn from P down to Q.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4674,7 +4674,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q4-art.png",
-          "srcHash": "d3d1c8e842c4442bc9f0afca25476348",
+          "srcHash": "45807fb97616d8982b3ae1e17205b247",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a child's toy train and Fig. C-4(a): the given cam displacement diagram, a curve rising 42 over the first 180 degrees and falling to 360, dimensioned 120 across with 60, 30 and 30 divisions, an R40 radius and a 30 fall. Part (b) shows a photograph of a wall-mounted can crusher and Fig. C-4(b): a line diagram of the mechanism with the hatched wall upright, the points A, B, C and D marked, the crushing platform labelled, a 30 degree angle at C, and dimensions 20, 26, 260, 200, 76, 30, 80, 10, 20, 20 and 90.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4701,7 +4701,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q4-art.png",
-          "srcHash": "d3d1c8e842c4442bc9f0afca25476348",
+          "srcHash": "45807fb97616d8982b3ae1e17205b247",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a child's toy train and Fig. C-4(a): the given cam displacement diagram, a curve rising 42 over the first 180 degrees and falling to 360, dimensioned 120 across with 60, 30 and 30 divisions, an R40 radius and a 30 fall. Part (b) shows a photograph of a wall-mounted can crusher and Fig. C-4(b): a line diagram of the mechanism with the hatched wall upright, the points A, B, C and D marked, the crushing platform labelled, a 30 degree angle at C, and dimensions 20, 26, 260, 200, 76, 30, 80, 10, 20, 20 and 90.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4723,7 +4723,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q5-art.png",
-          "srcHash": "6b30ce10f3783956ac19deed007446f5",
+          "srcHash": "a9e957baa66bc093f8509afc584b279a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a rotating fly-tying vice with a fishing fly held in it, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower jaw spindle, base, clamping jaw, vertical spindle, vice pivot, rotating boss, securing screw and dowel -- with the section line A-A marked vertically on the base, and a parts-list table naming each part with quantities of one, except three securing screws.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4748,7 +4748,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q5-art.png",
-          "srcHash": "6b30ce10f3783956ac19deed007446f5",
+          "srcHash": "a9e957baa66bc093f8509afc584b279a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a rotating fly-tying vice with a fishing fly held in it, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower jaw spindle, base, clamping jaw, vertical spindle, vice pivot, rotating boss, securing screw and dowel -- with the section line A-A marked vertically on the base, and a parts-list table naming each part with quantities of one, except three securing screws.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4771,7 +4771,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q5-art.png",
-          "srcHash": "6b30ce10f3783956ac19deed007446f5",
+          "srcHash": "a9e957baa66bc093f8509afc584b279a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a rotating fly-tying vice with a fishing fly held in it, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower jaw spindle, base, clamping jaw, vertical spindle, vice pivot, rotating boss, securing screw and dowel -- with the section line A-A marked vertically on the base, and a parts-list table naming each part with quantities of one, except three securing screws.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4794,7 +4794,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q5-art.png",
-          "srcHash": "6b30ce10f3783956ac19deed007446f5",
+          "srcHash": "a9e957baa66bc093f8509afc584b279a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a rotating fly-tying vice with a fishing fly held in it, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower jaw spindle, base, clamping jaw, vertical spindle, vice pivot, rotating boss, securing screw and dowel -- with the section line A-A marked vertically on the base, and a parts-list table naming each part with quantities of one, except three securing screws.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4817,7 +4817,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q5-art.png",
-          "srcHash": "6b30ce10f3783956ac19deed007446f5",
+          "srcHash": "a9e957baa66bc093f8509afc584b279a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a rotating fly-tying vice with a fishing fly held in it, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower jaw spindle, base, clamping jaw, vertical spindle, vice pivot, rotating boss, securing screw and dowel -- with the section line A-A marked vertically on the base, and a parts-list table naming each part with quantities of one, except three securing screws.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4840,7 +4840,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q5-art.png",
-          "srcHash": "6b30ce10f3783956ac19deed007446f5",
+          "srcHash": "a9e957baa66bc093f8509afc584b279a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a rotating fly-tying vice with a fishing fly held in it, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower jaw spindle, base, clamping jaw, vertical spindle, vice pivot, rotating boss, securing screw and dowel -- with the section line A-A marked vertically on the base, and a parts-list table naming each part with quantities of one, except three securing screws.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4864,7 +4864,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q5-art.png",
-          "srcHash": "6b30ce10f3783956ac19deed007446f5",
+          "srcHash": "a9e957baa66bc093f8509afc584b279a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a rotating fly-tying vice with a fishing fly held in it, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower jaw spindle, base, clamping jaw, vertical spindle, vice pivot, rotating boss, securing screw and dowel -- with the section line A-A marked vertically on the base, and a parts-list table naming each part with quantities of one, except three securing screws.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4887,7 +4887,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q5-art.png",
-          "srcHash": "6b30ce10f3783956ac19deed007446f5",
+          "srcHash": "a9e957baa66bc093f8509afc584b279a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a rotating fly-tying vice with a fishing fly held in it, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower jaw spindle, base, clamping jaw, vertical spindle, vice pivot, rotating boss, securing screw and dowel -- with the section line A-A marked vertically on the base, and a parts-list table naming each part with quantities of one, except three securing screws.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -4909,7 +4909,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q5-art.png",
-          "srcHash": "6b30ce10f3783956ac19deed007446f5",
+          "srcHash": "a9e957baa66bc093f8509afc584b279a",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a rotating fly-tying vice with a fishing fly held in it, beside Fig. C-5: dimensioned orthographic detail drawings of the eight numbered components -- lower jaw spindle, base, clamping jaw, vertical spindle, vice pivot, rotating boss, securing screw and dowel -- with the section line A-A marked vertically on the base, and a parts-list table naming each part with quantities of one, except three securing screws.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level — © State Examinations Commission"
@@ -5128,7 +5128,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secB-q1-art.png",
-          "srcHash": "15c2d25b948450c887ca1c2c1715c44b",
+          "srcHash": "432e49946b79768183c72e640bf1affb",
           "alt": "Question B-1 as printed. A rendered 3D view of a desk lamp made of a purple triangular prism intersecting a blue pentagonal prism, casting light on a wooden desk, beside Fig. B-1: above the XY line the incomplete elevation, the pentagonal prism upright dimensioned 220 and 30 high on a 20 plus 30 base with a 40 degree inclined triangular prism 160 high and 80 across at its top end; below it the plan, 88 deep and 120 long, showing the two prisms crossing, with a blue line of intersection drawn at the junction.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5150,7 +5150,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secB-q1-art.png",
-          "srcHash": "15c2d25b948450c887ca1c2c1715c44b",
+          "srcHash": "432e49946b79768183c72e640bf1affb",
           "alt": "Question B-1 as printed. A rendered 3D view of a desk lamp made of a purple triangular prism intersecting a blue pentagonal prism, casting light on a wooden desk, beside Fig. B-1: above the XY line the incomplete elevation, the pentagonal prism upright dimensioned 220 and 30 high on a 20 plus 30 base with a 40 degree inclined triangular prism 160 high and 80 across at its top end; below it the plan, 88 deep and 120 long, showing the two prisms crossing, with a blue line of intersection drawn at the junction.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5175,7 +5175,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secB-q2-art.png",
-          "srcHash": "ae841ff81cce80992e3fdd11621ae9aa",
+          "srcHash": "15c0f31c4de1f567c398a17d395e49f4",
           "alt": "Question B-2 as printed. A photograph of the angular glazed Glasshouse hotel in Sligo, beside Fig. B-2: above the XY line the elevation of two intersecting planar surfaces ABCD and BCEF, a pentagon-like outline with B at the apex, dimensioned 60 and 35 plus 50 high, the equal edges tick-marked in magenta; below it the plan of the same surfaces set at an angle, with a 25 degree angle at the top, a 75 degree angle at C, and dimensions 55, 30 and 50.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5200,7 +5200,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secB-q2-art.png",
-          "srcHash": "ae841ff81cce80992e3fdd11621ae9aa",
+          "srcHash": "15c0f31c4de1f567c398a17d395e49f4",
           "alt": "Question B-2 as printed. A photograph of the angular glazed Glasshouse hotel in Sligo, beside Fig. B-2: above the XY line the elevation of two intersecting planar surfaces ABCD and BCEF, a pentagon-like outline with B at the apex, dimensioned 60 and 35 plus 50 high, the equal edges tick-marked in magenta; below it the plan of the same surfaces set at an angle, with a 25 degree angle at the top, a 75 degree angle at C, and dimensions 55, 30 and 50.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5226,7 +5226,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secB-q2-art.png",
-          "srcHash": "ae841ff81cce80992e3fdd11621ae9aa",
+          "srcHash": "15c0f31c4de1f567c398a17d395e49f4",
           "alt": "Question B-2 as printed. A photograph of the angular glazed Glasshouse hotel in Sligo, beside Fig. B-2: above the XY line the elevation of two intersecting planar surfaces ABCD and BCEF, a pentagon-like outline with B at the apex, dimensioned 60 and 35 plus 50 high, the equal edges tick-marked in magenta; below it the plan of the same surfaces set at an angle, with a 25 degree angle at the top, a 75 degree angle at C, and dimensions 55, 30 and 50.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5251,7 +5251,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secB-q2-art.png",
-          "srcHash": "ae841ff81cce80992e3fdd11621ae9aa",
+          "srcHash": "15c0f31c4de1f567c398a17d395e49f4",
           "alt": "Question B-2 as printed. A photograph of the angular glazed Glasshouse hotel in Sligo, beside Fig. B-2: above the XY line the elevation of two intersecting planar surfaces ABCD and BCEF, a pentagon-like outline with B at the apex, dimensioned 60 and 35 plus 50 high, the equal edges tick-marked in magenta; below it the plan of the same surfaces set at an angle, with a 25 degree angle at the top, a 75 degree angle at C, and dimensions 55, 30 and 50.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5274,7 +5274,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secB-q3-art.png",
-          "srcHash": "40b4ab37a7c704873cd9131cf66637bf",
+          "srcHash": "7db1ac286f588de1c68431097996dbc6",
           "alt": "Question B-3 as printed. A photograph of an Applegreen circular outdoor dining pod, and a green-and-white pictorial view of the same pod, beside Fig. B-3: an incomplete dimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 115 degree angle marked, the isosceles triangle abc with a 130 base, magenta construction arcs, the end elevation at the left showing the R50 circular frame with the benches and table dimensioned 16, 16 and 27, and the plan below set at an angle and dimensioned 78.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5299,7 +5299,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secB-q3-art.png",
-          "srcHash": "40b4ab37a7c704873cd9131cf66637bf",
+          "srcHash": "7db1ac286f588de1c68431097996dbc6",
           "alt": "Question B-3 as printed. A photograph of an Applegreen circular outdoor dining pod, and a green-and-white pictorial view of the same pod, beside Fig. B-3: an incomplete dimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 115 degree angle marked, the isosceles triangle abc with a 130 base, magenta construction arcs, the end elevation at the left showing the R50 circular frame with the benches and table dimensioned 16, 16 and 27, and the plan below set at an angle and dimensioned 78.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5321,7 +5321,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secB-q3-art.png",
-          "srcHash": "40b4ab37a7c704873cd9131cf66637bf",
+          "srcHash": "7db1ac286f588de1c68431097996dbc6",
           "alt": "Question B-3 as printed. A photograph of an Applegreen circular outdoor dining pod, and a green-and-white pictorial view of the same pod, beside Fig. B-3: an incomplete dimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 115 degree angle marked, the isosceles triangle abc with a 130 base, magenta construction arcs, the end elevation at the left showing the R50 circular frame with the benches and table dimensioned 16, 16 and 27, and the plan below set at an angle and dimensioned 78.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5343,7 +5343,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
-          "srcHash": "99b2d8aabe013dd4fac7b9be93738088",
+          "srcHash": "8028f4cef8d7287d985903560f627027",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a red triangular shade canopy over a playground; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5365,7 +5365,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
-          "srcHash": "99b2d8aabe013dd4fac7b9be93738088",
+          "srcHash": "8028f4cef8d7287d985903560f627027",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a red triangular shade canopy over a playground; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5387,7 +5387,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
-          "srcHash": "99b2d8aabe013dd4fac7b9be93738088",
+          "srcHash": "8028f4cef8d7287d985903560f627027",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a red triangular shade canopy over a playground; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5409,7 +5409,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
-          "srcHash": "99b2d8aabe013dd4fac7b9be93738088",
+          "srcHash": "8028f4cef8d7287d985903560f627027",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a red triangular shade canopy over a playground; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5432,7 +5432,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
-          "srcHash": "99b2d8aabe013dd4fac7b9be93738088",
+          "srcHash": "8028f4cef8d7287d985903560f627027",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a red triangular shade canopy over a playground; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5455,7 +5455,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
-          "srcHash": "99b2d8aabe013dd4fac7b9be93738088",
+          "srcHash": "8028f4cef8d7287d985903560f627027",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a red triangular shade canopy over a playground; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5480,7 +5480,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
-          "srcHash": "99b2d8aabe013dd4fac7b9be93738088",
+          "srcHash": "8028f4cef8d7287d985903560f627027",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a red triangular shade canopy over a playground; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5505,7 +5505,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q2-art.png",
-          "srcHash": "b60521d4f2bec8483236dbc22e5529a4",
+          "srcHash": "d7a7d6a92c045b03fe04e567e2a859f7",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a curved-roof glamping tent at dusk, beside Fig. C-2: above the XY line the elevation showing the parabolic curve EBD with its vertex B, dimensioned 11m and 22m across, and at the right the end view of the generating parabola ABC drawn as a blue broken curve 20m across and 16m high with vertex B; below it the plan, a pointed oval through A, B, C, D and E ruled with blue generators.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5529,7 +5529,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q2-art.png",
-          "srcHash": "b60521d4f2bec8483236dbc22e5529a4",
+          "srcHash": "d7a7d6a92c045b03fe04e567e2a859f7",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a curved-roof glamping tent at dusk, beside Fig. C-2: above the XY line the elevation showing the parabolic curve EBD with its vertex B, dimensioned 11m and 22m across, and at the right the end view of the generating parabola ABC drawn as a blue broken curve 20m across and 16m high with vertex B; below it the plan, a pointed oval through A, B, C, D and E ruled with blue generators.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5551,7 +5551,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q2-art.png",
-          "srcHash": "b60521d4f2bec8483236dbc22e5529a4",
+          "srcHash": "d7a7d6a92c045b03fe04e567e2a859f7",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a curved-roof glamping tent at dusk, beside Fig. C-2: above the XY line the elevation showing the parabolic curve EBD with its vertex B, dimensioned 11m and 22m across, and at the right the end view of the generating parabola ABC drawn as a blue broken curve 20m across and 16m high with vertex B; below it the plan, a pointed oval through A, B, C, D and E ruled with blue generators.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5575,7 +5575,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q2-art.png",
-          "srcHash": "b60521d4f2bec8483236dbc22e5529a4",
+          "srcHash": "d7a7d6a92c045b03fe04e567e2a859f7",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a curved-roof glamping tent at dusk, beside Fig. C-2: above the XY line the elevation showing the parabolic curve EBD with its vertex B, dimensioned 11m and 22m across, and at the right the end view of the generating parabola ABC drawn as a blue broken curve 20m across and 16m high with vertex B; below it the plan, a pointed oval through A, B, C, D and E ruled with blue generators.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5597,7 +5597,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q3-art.png",
-          "srcHash": "034614b8b09b2ed581316ccedfef0d5d",
+          "srcHash": "ac3efdf5bd9e9685d530ab556fd6beda",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a dipping cone holding chips and ketchup, and a grey pictorial view of the same cone, beside Fig. C-3: above the XY line the elevation of the truncated cone A on its splayed foot, dimensioned Ø108 across the top, 100 and 20 high, with a 30 degree truncation at the top right and a magenta apex construction below; below it the plan, concentric circles with Ø60 and Ø28 marked and a blue outer ellipse.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5623,7 +5623,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q3-art.png",
-          "srcHash": "034614b8b09b2ed581316ccedfef0d5d",
+          "srcHash": "ac3efdf5bd9e9685d530ab556fd6beda",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a dipping cone holding chips and ketchup, and a grey pictorial view of the same cone, beside Fig. C-3: above the XY line the elevation of the truncated cone A on its splayed foot, dimensioned Ø108 across the top, 100 and 20 high, with a 30 degree truncation at the top right and a magenta apex construction below; below it the plan, concentric circles with Ø60 and Ø28 marked and a blue outer ellipse.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5645,7 +5645,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q3-art.png",
-          "srcHash": "034614b8b09b2ed581316ccedfef0d5d",
+          "srcHash": "ac3efdf5bd9e9685d530ab556fd6beda",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a dipping cone holding chips and ketchup, and a grey pictorial view of the same cone, beside Fig. C-3: above the XY line the elevation of the truncated cone A on its splayed foot, dimensioned Ø108 across the top, 100 and 20 high, with a 30 degree truncation at the top right and a magenta apex construction below; below it the plan, concentric circles with Ø60 and Ø28 marked and a blue outer ellipse.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5668,7 +5668,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q3-art.png",
-          "srcHash": "034614b8b09b2ed581316ccedfef0d5d",
+          "srcHash": "ac3efdf5bd9e9685d530ab556fd6beda",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a dipping cone holding chips and ketchup, and a grey pictorial view of the same cone, beside Fig. C-3: above the XY line the elevation of the truncated cone A on its splayed foot, dimensioned Ø108 across the top, 100 and 20 high, with a 30 degree truncation at the top right and a magenta apex construction below; below it the plan, concentric circles with Ø60 and Ø28 marked and a blue outer ellipse.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5694,7 +5694,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q4-art.png",
-          "srcHash": "b1d0f00c78a066b05b9a49cfcea2af85",
+          "srcHash": "13d3825061743bf66b4aed90ee713a5d",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of an orange folding car-park barrier and Fig. C-4(a): a line diagram of the barrier with the grey post 30 wide and 75 high, the arm AB of 75 and the arm BC of 65 lying horizontal, with A, B and C marked and a 15 dimension. Part (b) shows a photograph of a cylindrical energy storage tower in Heidelberg and Fig. C-4(b): above the XY line the elevation of the tower, Ø70 wide and 105 high, with A at the foot right and B at 80 on the left; below it the plan, a circle with A and B set 30 degrees either side of the vertical centre line.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5716,7 +5716,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q4-art.png",
-          "srcHash": "b1d0f00c78a066b05b9a49cfcea2af85",
+          "srcHash": "13d3825061743bf66b4aed90ee713a5d",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of an orange folding car-park barrier and Fig. C-4(a): a line diagram of the barrier with the grey post 30 wide and 75 high, the arm AB of 75 and the arm BC of 65 lying horizontal, with A, B and C marked and a 15 dimension. Part (b) shows a photograph of a cylindrical energy storage tower in Heidelberg and Fig. C-4(b): above the XY line the elevation of the tower, Ø70 wide and 105 high, with A at the foot right and B at 80 on the left; below it the plan, a circle with A and B set 30 degrees either side of the vertical centre line.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -5738,7 +5738,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q5-art.png",
-          "srcHash": "5fa3d0ddb910529f9644cd5e9729b664",
+          "srcHash": "55a301377c40dae65739cf25b4ea2240",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a blue rivet punch with a black handle, beside Fig. C-5: dimensioned orthographic detail drawings of the seven numbered components -- main body, handle, punch, lower support, pin, spring and M6 x 20 set screw -- with the section line A-A drawn across the foot of the main body, and a parts-list table naming each part with a quantity of one, the set screw noted as not shown.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level — © State Examinations Commission"
@@ -6051,7 +6051,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secB-q2-art.png",
-          "srcHash": "175fccdd2d759f5204fe654236defcd3",
+          "srcHash": "dd7def57eb928a6381ddd6925adba031",
           "alt": "Question B-2 as printed. A photograph of a cardboard salad box with an oval clear window, beside Fig. B-2: the surface development of the box laid flat, a central rectangle 110 by 80 carrying a large ellipse with its major axis R to S and the point P marked on the curve, dimensioned 90 and 35 across and 20 down, with four flared side panels dimensioned 80, 42, 50, 42 and 15, 80, 15, and magenta arcs at the corners.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6077,7 +6077,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secB-q2-art.png",
-          "srcHash": "175fccdd2d759f5204fe654236defcd3",
+          "srcHash": "dd7def57eb928a6381ddd6925adba031",
           "alt": "Question B-2 as printed. A photograph of a cardboard salad box with an oval clear window, beside Fig. B-2: the surface development of the box laid flat, a central rectangle 110 by 80 carrying a large ellipse with its major axis R to S and the point P marked on the curve, dimensioned 90 and 35 across and 20 down, with four flared side panels dimensioned 80, 42, 50, 42 and 15, 80, 15, and magenta arcs at the corners.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6099,7 +6099,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secB-q2-art.png",
-          "srcHash": "175fccdd2d759f5204fe654236defcd3",
+          "srcHash": "dd7def57eb928a6381ddd6925adba031",
           "alt": "Question B-2 as printed. A photograph of a cardboard salad box with an oval clear window, beside Fig. B-2: the surface development of the box laid flat, a central rectangle 110 by 80 carrying a large ellipse with its major axis R to S and the point P marked on the curve, dimensioned 90 and 35 across and 20 down, with four flared side panels dimensioned 80, 42, 50, 42 and 15, 80, 15, and magenta arcs at the corners.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6123,7 +6123,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secB-q3-art.png",
-          "srcHash": "3866b0d271e7e65920621850ad799c0f",
+          "srcHash": "99534d5831bddbaf34365f8283a9a75a",
           "alt": "Question B-3 as printed. A photograph of the V-sphere spherical puzzle game in its box, a second photograph of the sphere alone, and a line pictorial view of the stand with the sphere above it, beside Fig. B-3: an incomplete trimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 110 degree angle marked, the scalene triangle abc with the base divided 65 and 50, magenta construction arcs, the end view at the right showing the R35 sphere above the tapered stand dimensioned 55 and 75, and the plan below, a 70 by 100 rectangle carrying an R25 circle.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6148,7 +6148,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secB-q3-art.png",
-          "srcHash": "3866b0d271e7e65920621850ad799c0f",
+          "srcHash": "99534d5831bddbaf34365f8283a9a75a",
           "alt": "Question B-3 as printed. A photograph of the V-sphere spherical puzzle game in its box, a second photograph of the sphere alone, and a line pictorial view of the stand with the sphere above it, beside Fig. B-3: an incomplete trimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 110 degree angle marked, the scalene triangle abc with the base divided 65 and 50, magenta construction arcs, the end view at the right showing the R35 sphere above the tapered stand dimensioned 55 and 75, and the plan below, a 70 by 100 rectangle carrying an R25 circle.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6170,7 +6170,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secB-q3-art.png",
-          "srcHash": "3866b0d271e7e65920621850ad799c0f",
+          "srcHash": "99534d5831bddbaf34365f8283a9a75a",
           "alt": "Question B-3 as printed. A photograph of the V-sphere spherical puzzle game in its box, a second photograph of the sphere alone, and a line pictorial view of the stand with the sphere above it, beside Fig. B-3: an incomplete trimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 110 degree angle marked, the scalene triangle abc with the base divided 65 and 50, magenta construction arcs, the end view at the right showing the R35 sphere above the tapered stand dimensioned 55 and 75, and the plan below, a 70 by 100 rectangle carrying an R25 circle.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6192,7 +6192,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secB-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secB-q3-art.png",
-          "srcHash": "3866b0d271e7e65920621850ad799c0f",
+          "srcHash": "99534d5831bddbaf34365f8283a9a75a",
           "alt": "Question B-3 as printed. A photograph of the V-sphere spherical puzzle game in its box, a second photograph of the sphere alone, and a line pictorial view of the stand with the sphere above it, beside Fig. B-3: an incomplete trimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 110 degree angle marked, the scalene triangle abc with the base divided 65 and 50, magenta construction arcs, the end view at the right showing the R35 sphere above the tapered stand dimensioned 55 and 75, and the plan below, a 70 by 100 rectangle carrying an R25 circle.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6214,7 +6214,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
-          "srcHash": "b2dbc089c82ede9cb4c5594efbe470ac",
+          "srcHash": "bf0fdd610369473fada36e085a545f43",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a raft on a white-water rafting course; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6236,7 +6236,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
-          "srcHash": "b2dbc089c82ede9cb4c5594efbe470ac",
+          "srcHash": "bf0fdd610369473fada36e085a545f43",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a raft on a white-water rafting course; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6258,7 +6258,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
-          "srcHash": "b2dbc089c82ede9cb4c5594efbe470ac",
+          "srcHash": "bf0fdd610369473fada36e085a545f43",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a raft on a white-water rafting course; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6282,7 +6282,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
-          "srcHash": "b2dbc089c82ede9cb4c5594efbe470ac",
+          "srcHash": "bf0fdd610369473fada36e085a545f43",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a raft on a white-water rafting course; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6305,7 +6305,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
-          "srcHash": "b2dbc089c82ede9cb4c5594efbe470ac",
+          "srcHash": "bf0fdd610369473fada36e085a545f43",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a raft on a white-water rafting course; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6329,7 +6329,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
-          "srcHash": "b2dbc089c82ede9cb4c5594efbe470ac",
+          "srcHash": "bf0fdd610369473fada36e085a545f43",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a raft on a white-water rafting course; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6352,7 +6352,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
-          "srcHash": "b2dbc089c82ede9cb4c5594efbe470ac",
+          "srcHash": "bf0fdd610369473fada36e085a545f43",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a raft on a white-water rafting course; the contour map the question is answered on is printed on the back page of the Section A booklet and is not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6376,7 +6376,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q2-art.png",
-          "srcHash": "c5426e3194388cf38dd9010f624cfc65",
+          "srcHash": "ba8ca14bd37bb1d5021104068c8fd0ce",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a golfer hitting into a domed practice net, beside Fig. C-2: at the left the elevation, an R750 arched outline 1000 and 550 high and 1100 wide, with the hyperbolic paraboloid surface ABCD drawn inside it as a blue diamond through A at the top, D and B at the sides and C at the foot, ruled with green elements; at the right the end view with A at the top, D and B coincident, C at the lower right and the point P at the left on the XY line, dimensioned 300, 300, 450 and 200.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6399,7 +6399,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q2-art.png",
-          "srcHash": "c5426e3194388cf38dd9010f624cfc65",
+          "srcHash": "ba8ca14bd37bb1d5021104068c8fd0ce",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a golfer hitting into a domed practice net, beside Fig. C-2: at the left the elevation, an R750 arched outline 1000 and 550 high and 1100 wide, with the hyperbolic paraboloid surface ABCD drawn inside it as a blue diamond through A at the top, D and B at the sides and C at the foot, ruled with green elements; at the right the end view with A at the top, D and B coincident, C at the lower right and the point P at the left on the XY line, dimensioned 300, 300, 450 and 200.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6425,7 +6425,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q2-art.png",
-          "srcHash": "c5426e3194388cf38dd9010f624cfc65",
+          "srcHash": "ba8ca14bd37bb1d5021104068c8fd0ce",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a golfer hitting into a domed practice net, beside Fig. C-2: at the left the elevation, an R750 arched outline 1000 and 550 high and 1100 wide, with the hyperbolic paraboloid surface ABCD drawn inside it as a blue diamond through A at the top, D and B at the sides and C at the foot, ruled with green elements; at the right the end view with A at the top, D and B coincident, C at the lower right and the point P at the left on the XY line, dimensioned 300, 300, 450 and 200.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6450,7 +6450,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q2-art.png",
-          "srcHash": "c5426e3194388cf38dd9010f624cfc65",
+          "srcHash": "ba8ca14bd37bb1d5021104068c8fd0ce",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a golfer hitting into a domed practice net, beside Fig. C-2: at the left the elevation, an R750 arched outline 1000 and 550 high and 1100 wide, with the hyperbolic paraboloid surface ABCD drawn inside it as a blue diamond through A at the top, D and B at the sides and C at the foot, ruled with green elements; at the right the end view with A at the top, D and B coincident, C at the lower right and the point P at the left on the XY line, dimensioned 300, 300, 450 and 200.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6476,7 +6476,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q3-art.png",
-          "srcHash": "6a54531dbbdbd4eced7b18becf7c68c4",
+          "srcHash": "fc68a2fd987028551b2d4036d05afc89",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a grey chiminea stove burning on a patio, beside Fig. C-3: above the XY line the elevation with the Ø200 chimney 300 high over the conical surface A 120 deep and the cylindrical surface B 640 high carrying an arched opening 640 wide drawn with an R radius, and three splayed legs 320 long reaching the XY line, with 100, 400 and 370 dimensions at the right; below it the plan, concentric circles of Ø840 and Ø700 with the three legs set at 120 degrees.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6502,7 +6502,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q3-art.png",
-          "srcHash": "6a54531dbbdbd4eced7b18becf7c68c4",
+          "srcHash": "fc68a2fd987028551b2d4036d05afc89",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a grey chiminea stove burning on a patio, beside Fig. C-3: above the XY line the elevation with the Ø200 chimney 300 high over the conical surface A 120 deep and the cylindrical surface B 640 high carrying an arched opening 640 wide drawn with an R radius, and three splayed legs 320 long reaching the XY line, with 100, 400 and 370 dimensions at the right; below it the plan, concentric circles of Ø840 and Ø700 with the three legs set at 120 degrees.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6528,7 +6528,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q3-art.png",
-          "srcHash": "6a54531dbbdbd4eced7b18becf7c68c4",
+          "srcHash": "fc68a2fd987028551b2d4036d05afc89",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a grey chiminea stove burning on a patio, beside Fig. C-3: above the XY line the elevation with the Ø200 chimney 300 high over the conical surface A 120 deep and the cylindrical surface B 640 high carrying an arched opening 640 wide drawn with an R radius, and three splayed legs 320 long reaching the XY line, with 100, 400 and 370 dimensions at the right; below it the plan, concentric circles of Ø840 and Ø700 with the three legs set at 120 degrees.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6551,7 +6551,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q3-art.png",
-          "srcHash": "6a54531dbbdbd4eced7b18becf7c68c4",
+          "srcHash": "fc68a2fd987028551b2d4036d05afc89",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a grey chiminea stove burning on a patio, beside Fig. C-3: above the XY line the elevation with the Ø200 chimney 300 high over the conical surface A 120 deep and the cylindrical surface B 640 high carrying an arched opening 640 wide drawn with an R radius, and three splayed legs 320 long reaching the XY line, with 100, 400 and 370 dimensions at the right; below it the plan, concentric circles of Ø840 and Ø700 with the three legs set at 120 degrees.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6577,7 +6577,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q4-art.png",
-          "srcHash": "7c7e8e4e4cacbb857eae7627acd5dc57",
+          "srcHash": "d1dd7d2c9575722f3f58ffcdafca3a86",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of the Melkwegbruk cycle and pedestrian arch bridge and Fig. C-4(a): the circle C of R27 with the point P on its lower edge, resting on the arc PA of R130 which sweeps from P round to A, with 60 degree and 45 degree angles marked at the arc's centre and a red arrow showing the direction of roll. Part (b) shows a photograph of a spiral galaxy and Fig. C-4(b): a line diagram with O at the origin, A on the horizontal axis 20 from O, B above at 60 degrees with a 28 height, and C far out on the horizontal axis.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6604,7 +6604,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q4-art.png",
-          "srcHash": "7c7e8e4e4cacbb857eae7627acd5dc57",
+          "srcHash": "d1dd7d2c9575722f3f58ffcdafca3a86",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of the Melkwegbruk cycle and pedestrian arch bridge and Fig. C-4(a): the circle C of R27 with the point P on its lower edge, resting on the arc PA of R130 which sweeps from P round to A, with 60 degree and 45 degree angles marked at the arc's centre and a red arrow showing the direction of roll. Part (b) shows a photograph of a spiral galaxy and Fig. C-4(b): a line diagram with O at the origin, A on the horizontal axis 20 from O, B above at 60 degrees with a 28 height, and C far out on the horizontal axis.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -6626,7 +6626,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q5-art.png",
-          "srcHash": "32224cf1edca2b5ef58ce7d6a1f91892",
+          "srcHash": "472878559ed14233de8ad27aaedeb9b8",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a blue clothes line winch, beside Fig. C-5: dimensioned orthographic detail drawings of the nine numbered components -- main body, pawl, axle bolt, M6 x 20 set screw, ratchet pulley, M6 plain nut, pin, handle and washer -- with the section line A-A drawn vertically through the ratchet pulley, and a parts-list table naming each part with quantities of one, except two set screws and two washers.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level — © State Examinations Commission"
@@ -7081,7 +7081,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q1-art.png",
-          "srcHash": "2a89fb16a82cfc7dd946f768559355e4",
+          "srcHash": "eb30b70428985b48ff6bbb0edc313793",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of the N22 Macroom bypass in county Cork; the contour map and the borehole diagram the question is answered on are printed on the back page of the Section A booklet and are not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7105,7 +7105,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q1-art.png",
-          "srcHash": "2a89fb16a82cfc7dd946f768559355e4",
+          "srcHash": "eb30b70428985b48ff6bbb0edc313793",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of the N22 Macroom bypass in county Cork; the contour map and the borehole diagram the question is answered on are printed on the back page of the Section A booklet and are not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7129,7 +7129,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q1-art.png",
-          "srcHash": "2a89fb16a82cfc7dd946f768559355e4",
+          "srcHash": "eb30b70428985b48ff6bbb0edc313793",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of the N22 Macroom bypass in county Cork; the contour map and the borehole diagram the question is answered on are printed on the back page of the Section A booklet and are not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7155,7 +7155,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q1-art.png",
-          "srcHash": "2a89fb16a82cfc7dd946f768559355e4",
+          "srcHash": "eb30b70428985b48ff6bbb0edc313793",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and an aerial photograph of the N22 Macroom bypass in county Cork; the contour map and the borehole diagram the question is answered on are printed on the back page of the Section A booklet and are not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7177,7 +7177,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q2-art.png",
-          "srcHash": "030d63528e838513416f9460965ebfda",
+          "srcHash": "c91d578071289ea83f490a72bcb12202",
           "alt": "Question C-2, Structural Forms, as printed. Photographs of the rugby player Dan Carter and a green rubber kicking tee, beside Fig. C-2: above the XY line the elevation at the left, a waisted hyperboloid of revolution with an elliptical mouth drawn on top, and the end view at the right showing the same waisted outline with a 30 degree tangent line marked and the blue broken outline of the generating cone above, dimensioned 55; below it the plan, an outer circle of Ø104 with an inner circle of Ø50 set off centre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7203,7 +7203,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q2-art.png",
-          "srcHash": "030d63528e838513416f9460965ebfda",
+          "srcHash": "c91d578071289ea83f490a72bcb12202",
           "alt": "Question C-2, Structural Forms, as printed. Photographs of the rugby player Dan Carter and a green rubber kicking tee, beside Fig. C-2: above the XY line the elevation at the left, a waisted hyperboloid of revolution with an elliptical mouth drawn on top, and the end view at the right showing the same waisted outline with a 30 degree tangent line marked and the blue broken outline of the generating cone above, dimensioned 55; below it the plan, an outer circle of Ø104 with an inner circle of Ø50 set off centre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7226,7 +7226,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q2-art.png",
-          "srcHash": "030d63528e838513416f9460965ebfda",
+          "srcHash": "c91d578071289ea83f490a72bcb12202",
           "alt": "Question C-2, Structural Forms, as printed. Photographs of the rugby player Dan Carter and a green rubber kicking tee, beside Fig. C-2: above the XY line the elevation at the left, a waisted hyperboloid of revolution with an elliptical mouth drawn on top, and the end view at the right showing the same waisted outline with a 30 degree tangent line marked and the blue broken outline of the generating cone above, dimensioned 55; below it the plan, an outer circle of Ø104 with an inner circle of Ø50 set off centre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7248,7 +7248,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q3-art.png",
-          "srcHash": "a48211d0c3db004c050e099d0a631df4",
+          "srcHash": "908c562f8e7d5b5e79526e89959b6558",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a lilac mocha coffee jug beside a glass of coffee, and a pictorial view of the same jug, beside Fig. C-3: above the XY line the elevation, an octagonal-pyramid lid over an octagonal body and a truncated conical base, with the surfaces A and B lettered at the top and C on the base, dimensioned 20, 10, 15, 40, 30 and 50, with magenta construction lines; below it the plan, a regular octagon with magenta diagonals and a broken circle inside it, the handle projecting at the right dimensioned 16 and 22, and the base 36 across.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7273,7 +7273,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q3-art.png",
-          "srcHash": "a48211d0c3db004c050e099d0a631df4",
+          "srcHash": "908c562f8e7d5b5e79526e89959b6558",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a lilac mocha coffee jug beside a glass of coffee, and a pictorial view of the same jug, beside Fig. C-3: above the XY line the elevation, an octagonal-pyramid lid over an octagonal body and a truncated conical base, with the surfaces A and B lettered at the top and C on the base, dimensioned 20, 10, 15, 40, 30 and 50, with magenta construction lines; below it the plan, a regular octagon with magenta diagonals and a broken circle inside it, the handle projecting at the right dimensioned 16 and 22, and the base 36 across.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7299,7 +7299,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q3-art.png",
-          "srcHash": "a48211d0c3db004c050e099d0a631df4",
+          "srcHash": "908c562f8e7d5b5e79526e89959b6558",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a lilac mocha coffee jug beside a glass of coffee, and a pictorial view of the same jug, beside Fig. C-3: above the XY line the elevation, an octagonal-pyramid lid over an octagonal body and a truncated conical base, with the surfaces A and B lettered at the top and C on the base, dimensioned 20, 10, 15, 40, 30 and 50, with magenta construction lines; below it the plan, a regular octagon with magenta diagonals and a broken circle inside it, the handle projecting at the right dimensioned 16 and 22, and the base 36 across.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7323,7 +7323,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q3-art.png",
-          "srcHash": "a48211d0c3db004c050e099d0a631df4",
+          "srcHash": "908c562f8e7d5b5e79526e89959b6558",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a lilac mocha coffee jug beside a glass of coffee, and a pictorial view of the same jug, beside Fig. C-3: above the XY line the elevation, an octagonal-pyramid lid over an octagonal body and a truncated conical base, with the surfaces A and B lettered at the top and C on the base, dimensioned 20, 10, 15, 40, 30 and 50, with magenta construction lines; below it the plan, a regular octagon with magenta diagonals and a broken circle inside it, the handle projecting at the right dimensioned 16 and 22, and the base 36 across.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7344,7 +7344,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q4-art.png",
-          "srcHash": "1bea1ec9ae414cf1643f64f4d26a5d51",
+          "srcHash": "e3a0ed006fccec3eb8e078f99e276794",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a green wooden pull-along frog toy and prints the cam displacement data as text, with no drawing. Part (b) shows a photograph of an elliptical cross trainer and Fig. C-4: a line diagram with the arm AC 125 long standing at 84 degrees to the hatched floor with B on it 40 from A, the crank circle of Ø80 about E at the right dimensioned 35, 15 and 10, the point D at its foot, the point P at the midpoint of CD, and the base dimensioned 54, 145 and 30.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7371,7 +7371,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q4-art.png",
-          "srcHash": "1bea1ec9ae414cf1643f64f4d26a5d51",
+          "srcHash": "e3a0ed006fccec3eb8e078f99e276794",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a green wooden pull-along frog toy and prints the cam displacement data as text, with no drawing. Part (b) shows a photograph of an elliptical cross trainer and Fig. C-4: a line diagram with the arm AC 125 long standing at 84 degrees to the hatched floor with B on it 40 from A, the crank circle of Ø80 about E at the right dimensioned 35, 15 and 10, the point D at its foot, the point P at the midpoint of CD, and the base dimensioned 54, 145 and 30.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7393,7 +7393,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q5-art.png",
-          "srcHash": "2a09720d7d10c2222908b2e463272f31",
+          "srcHash": "c66992da254848e8633dffe4724788d8",
           "alt": "Question C-5, Assemblies, as printed. A rendered 3D view of a blue potato chip maker with the portion X of the handle arrowed, beside Fig. C-5: dimensioned orthographic detail drawings of the nine numbered components -- sliding plunger, end cutter, end cap, handle, link arm, plunger guide bar, potato guide bar, M4 x 16 set screw and washer -- with the section line A-A drawn vertically on the sliding plunger, and a parts-list table giving quantities of one for the first five parts, four guide bars of each kind, eleven set screws and eight washers.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level — © State Examinations Commission"
@@ -7611,7 +7611,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secB-q1-art.png",
-          "srcHash": "4f8b166190416bc4df2e61215f46b8a1",
+          "srcHash": "77fb94b01f85e5ef41b75e21dd1565c0",
           "alt": "Question B-1 as printed. A photograph of a wooden ice bath with timber steps, and a pictorial view of the same tub with the step riser S arrowed, beside Fig. B-1: an incomplete trimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 110 degree angle marked, the scalene triangle abc with its base divided 50 and 65, magenta construction arcs, the elevation at the upper left showing the tub with the step face lettered S, dimensioned 55, 20 and 20, and the plan below, the Ø90 and Ø70 circles of the tub with the steps set against them, dimensioned 64, 17 and 17.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -7637,7 +7637,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secB-q1-art.png",
-          "srcHash": "4f8b166190416bc4df2e61215f46b8a1",
+          "srcHash": "77fb94b01f85e5ef41b75e21dd1565c0",
           "alt": "Question B-1 as printed. A photograph of a wooden ice bath with timber steps, and a pictorial view of the same tub with the step riser S arrowed, beside Fig. B-1: an incomplete trimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 110 degree angle marked, the scalene triangle abc with its base divided 50 and 65, magenta construction arcs, the elevation at the upper left showing the tub with the step face lettered S, dimensioned 55, 20 and 20, and the plan below, the Ø90 and Ø70 circles of the tub with the steps set against them, dimensioned 64, 17 and 17.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -7664,7 +7664,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secB-q1-art.png",
-          "srcHash": "4f8b166190416bc4df2e61215f46b8a1",
+          "srcHash": "77fb94b01f85e5ef41b75e21dd1565c0",
           "alt": "Question B-1 as printed. A photograph of a wooden ice bath with timber steps, and a pictorial view of the same tub with the step riser S arrowed, beside Fig. B-1: an incomplete trimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 110 degree angle marked, the scalene triangle abc with its base divided 50 and 65, magenta construction arcs, the elevation at the upper left showing the tub with the step face lettered S, dimensioned 55, 20 and 20, and the plan below, the Ø90 and Ø70 circles of the tub with the steps set against them, dimensioned 64, 17 and 17.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -7688,7 +7688,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secB-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secB-q1-art.png",
-          "srcHash": "4f8b166190416bc4df2e61215f46b8a1",
+          "srcHash": "77fb94b01f85e5ef41b75e21dd1565c0",
           "alt": "Question B-1 as printed. A photograph of a wooden ice bath with timber steps, and a pictorial view of the same tub with the step riser S arrowed, beside Fig. B-1: an incomplete trimetric projection by the axonometric axes method, with the axes X, Y and Z in blue from the origin o, a 110 degree angle marked, the scalene triangle abc with its base divided 50 and 65, magenta construction arcs, the elevation at the upper left showing the tub with the step face lettered S, dimensioned 55, 20 and 20, and the plan below, the Ø90 and Ø70 circles of the tub with the steps set against them, dimensioned 64, 17 and 17.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -7711,7 +7711,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secB-q2-art.png",
-          "srcHash": "568c0a3dd20a98730c21445d6ad9d6ef",
+          "srcHash": "c8235d2b21720022261010372850b8a8",
           "alt": "Question B-2 as printed. A photograph of a pop-up golf chipping net with a red target ring, and a line pictorial view of the same net with the frames A and B lettered, beside Fig. B-2: above the XY line the auxiliary elevation on X1Y1 with the oblique plane's horizontal trace HT at 40 degrees and its vertical trace rising to V, and the two elliptical frames drawn on it; below it the plan, the Ø900 base frame A as a circle with the target net B drawn across it, a 60 degree angle at T on the XY line, a 120 dimension and the trace running down to H.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -7733,7 +7733,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secB-q2-art.png",
-          "srcHash": "568c0a3dd20a98730c21445d6ad9d6ef",
+          "srcHash": "c8235d2b21720022261010372850b8a8",
           "alt": "Question B-2 as printed. A photograph of a pop-up golf chipping net with a red target ring, and a line pictorial view of the same net with the frames A and B lettered, beside Fig. B-2: above the XY line the auxiliary elevation on X1Y1 with the oblique plane's horizontal trace HT at 40 degrees and its vertical trace rising to V, and the two elliptical frames drawn on it; below it the plan, the Ø900 base frame A as a circle with the target net B drawn across it, a 60 degree angle at T on the XY line, a 120 dimension and the trace running down to H.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -7760,7 +7760,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secB-q2-art.png",
-          "srcHash": "568c0a3dd20a98730c21445d6ad9d6ef",
+          "srcHash": "c8235d2b21720022261010372850b8a8",
           "alt": "Question B-2 as printed. A photograph of a pop-up golf chipping net with a red target ring, and a line pictorial view of the same net with the frames A and B lettered, beside Fig. B-2: above the XY line the auxiliary elevation on X1Y1 with the oblique plane's horizontal trace HT at 40 degrees and its vertical trace rising to V, and the two elliptical frames drawn on it; below it the plan, the Ø900 base frame A as a circle with the target net B drawn across it, a 60 degree angle at T on the XY line, a 120 dimension and the trace running down to H.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -7783,7 +7783,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secB-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secB-q2-art.png",
-          "srcHash": "568c0a3dd20a98730c21445d6ad9d6ef",
+          "srcHash": "c8235d2b21720022261010372850b8a8",
           "alt": "Question B-2 as printed. A photograph of a pop-up golf chipping net with a red target ring, and a line pictorial view of the same net with the frames A and B lettered, beside Fig. B-2: above the XY line the auxiliary elevation on X1Y1 with the oblique plane's horizontal trace HT at 40 degrees and its vertical trace rising to V, and the two elliptical frames drawn on it; below it the plan, the Ø900 base frame A as a circle with the target net B drawn across it, a 60 degree angle at T on the XY line, a 120 dimension and the trace running down to H.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -7904,7 +7904,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q1-art.png",
-          "srcHash": "e5428c47580b350bd983d04fb6457093",
+          "srcHash": "8e80ccdf9e62332ebd9a33970932c718",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a helipad on the lawn in front of a house; the contour map and the borehole diagram the question is answered on are printed on the back page of the Section A booklet and are not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -7928,7 +7928,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q1-art.png",
-          "srcHash": "e5428c47580b350bd983d04fb6457093",
+          "srcHash": "8e80ccdf9e62332ebd9a33970932c718",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a helipad on the lawn in front of a house; the contour map and the borehole diagram the question is answered on are printed on the back page of the Section A booklet and are not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -7951,7 +7951,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q1-art.png",
-          "srcHash": "e5428c47580b350bd983d04fb6457093",
+          "srcHash": "8e80ccdf9e62332ebd9a33970932c718",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a helipad on the lawn in front of a house; the contour map and the borehole diagram the question is answered on are printed on the back page of the Section A booklet and are not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -7974,7 +7974,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q1-art.png",
-          "srcHash": "e5428c47580b350bd983d04fb6457093",
+          "srcHash": "8e80ccdf9e62332ebd9a33970932c718",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a helipad on the lawn in front of a house; the contour map and the borehole diagram the question is answered on are printed on the back page of the Section A booklet and are not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8000,7 +8000,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q1-art.png",
-          "srcHash": "e5428c47580b350bd983d04fb6457093",
+          "srcHash": "8e80ccdf9e62332ebd9a33970932c718",
           "alt": "Question C-1, Geologic Geometry, as printed. The Applied Graphics option banner, the question text and a photograph of a helipad on the lawn in front of a house; the contour map and the borehole diagram the question is answered on are printed on the back page of the Section A booklet and are not part of this page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8024,7 +8024,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q2-art.png",
-          "srcHash": "37b1d715dd6ee006c494f5e54a477b21",
+          "srcHash": "5155c32736dc2d51cdd51aeca17b70c3",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a black office saddle stool on a gas lift, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid seat, a deep sagging curve rising from A at the left to C at the right with D and B coincident at the low point, ruled with green and blue elements and dimensioned 100, 100 and 40; below it the plan, a Ø280 circle carrying the blue diamond ABCD with the magenta line BD, ruled with green elements and dimensioned 110, 110 and 90.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8048,7 +8048,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q2-art.png",
-          "srcHash": "37b1d715dd6ee006c494f5e54a477b21",
+          "srcHash": "5155c32736dc2d51cdd51aeca17b70c3",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a black office saddle stool on a gas lift, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid seat, a deep sagging curve rising from A at the left to C at the right with D and B coincident at the low point, ruled with green and blue elements and dimensioned 100, 100 and 40; below it the plan, a Ø280 circle carrying the blue diamond ABCD with the magenta line BD, ruled with green elements and dimensioned 110, 110 and 90.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8073,7 +8073,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q2-art.png",
-          "srcHash": "37b1d715dd6ee006c494f5e54a477b21",
+          "srcHash": "5155c32736dc2d51cdd51aeca17b70c3",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a black office saddle stool on a gas lift, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid seat, a deep sagging curve rising from A at the left to C at the right with D and B coincident at the low point, ruled with green and blue elements and dimensioned 100, 100 and 40; below it the plan, a Ø280 circle carrying the blue diamond ABCD with the magenta line BD, ruled with green elements and dimensioned 110, 110 and 90.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8098,7 +8098,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q2-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q2-art.png",
-          "srcHash": "37b1d715dd6ee006c494f5e54a477b21",
+          "srcHash": "5155c32736dc2d51cdd51aeca17b70c3",
           "alt": "Question C-2, Structural Forms, as printed. A photograph of a black office saddle stool on a gas lift, beside Fig. C-2: above the XY line the elevation of the hyperbolic paraboloid seat, a deep sagging curve rising from A at the left to C at the right with D and B coincident at the low point, ruled with green and blue elements and dimensioned 100, 100 and 40; below it the plan, a Ø280 circle carrying the blue diamond ABCD with the magenta line BD, ruled with green elements and dimensioned 110, 110 and 90.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8121,7 +8121,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q3-art.png",
-          "srcHash": "d1f720a0911fb2e56d2e1d4684075818",
+          "srcHash": "02de86a20426a38b942340c03193c842",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a red Vitra cone chair by Verner Panton, beside Fig. C-3: above the XY line the elevation of the truncated cone, 500 high to the seat and 650 above it, with the curved back surface A cut by an R900 arc at 45 degrees and a 150 seat width, the blue outline of the full cone behind it and the magenta apex construction below the XY line; below, the plan, the Ø1000 blue circle of the cone with the seat and back drawn inside it and a Ø160 centre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8143,7 +8143,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q3-art.png",
-          "srcHash": "d1f720a0911fb2e56d2e1d4684075818",
+          "srcHash": "02de86a20426a38b942340c03193c842",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a red Vitra cone chair by Verner Panton, beside Fig. C-3: above the XY line the elevation of the truncated cone, 500 high to the seat and 650 above it, with the curved back surface A cut by an R900 arc at 45 degrees and a 150 seat width, the blue outline of the full cone behind it and the magenta apex construction below the XY line; below, the plan, the Ø1000 blue circle of the cone with the seat and back drawn inside it and a Ø160 centre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8165,7 +8165,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q3-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q3-art.png",
-          "srcHash": "d1f720a0911fb2e56d2e1d4684075818",
+          "srcHash": "02de86a20426a38b942340c03193c842",
           "alt": "Question C-3, Surface Geometry, as printed. A photograph of a red Vitra cone chair by Verner Panton, beside Fig. C-3: above the XY line the elevation of the truncated cone, 500 high to the seat and 650 above it, with the curved back surface A cut by an R900 arc at 45 degrees and a 150 seat width, the blue outline of the full cone behind it and the magenta apex construction below the XY line; below, the plan, the Ø1000 blue circle of the cone with the seat and back drawn inside it and a Ø160 centre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8186,7 +8186,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q4-art.png",
-          "srcHash": "660382c57916124f8f8c252c3e7c39a5",
+          "srcHash": "dd3846479ce72bffeb924a47abab05fd",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a green Verderflex peristaltic pump and prints the cam displacement data as text, with no drawing. Part (b) shows a photograph of a hand drawing with a spirograph, beside Fig. C-4: the circle C of R35 with the point P inside it 20 from the left, resting inside the arc AB of R135 which sweeps from A round to B, with 30 degree and 50 degree angles marked at the arc's centre and a red arrow showing the direction of roll.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8212,7 +8212,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q4-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q4-art.png",
-          "srcHash": "660382c57916124f8f8c252c3e7c39a5",
+          "srcHash": "dd3846479ce72bffeb924a47abab05fd",
           "alt": "Question C-4, Dynamic Mechanisms, as printed. Part (a) shows a photograph of a green Verderflex peristaltic pump and prints the cam displacement data as text, with no drawing. Part (b) shows a photograph of a hand drawing with a spirograph, beside Fig. C-4: the circle C of R35 with the point P inside it 20 from the left, resting inside the arc AB of R135 which sweeps from A round to B, with 30 degree and 50 degree angles marked at the arc's centre and a red arrow showing the direction of roll.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8234,7 +8234,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q5-art.png",
-          "srcHash": "e19c2f13def384291124d63255c9cd27",
+          "srcHash": "6e80faebfc2db38878868176af0f81d6",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a blue lever nut-cracker with walnuts, the two jaw edges arrowed X, beside Fig. C-5: dimensioned orthographic detail drawings of the eleven numbered components -- main body, adjustable jaw guide, sliding jaw guide, link arm, lever arm, adjustable jaw, sliding jaw, M3 x 14 set screw, M3 plain nut, M4 x 14 set screw and M4 plain nut -- with the section line A-A drawn across the main body, and a parts-list table giving the quantity of each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8257,7 +8257,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q5-art.png",
-          "srcHash": "e19c2f13def384291124d63255c9cd27",
+          "srcHash": "6e80faebfc2db38878868176af0f81d6",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a blue lever nut-cracker with walnuts, the two jaw edges arrowed X, beside Fig. C-5: dimensioned orthographic detail drawings of the eleven numbered components -- main body, adjustable jaw guide, sliding jaw guide, link arm, lever arm, adjustable jaw, sliding jaw, M3 x 14 set screw, M3 plain nut, M4 x 14 set screw and M4 plain nut -- with the section line A-A drawn across the main body, and a parts-list table giving the quantity of each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8280,7 +8280,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q5-art.png",
-          "srcHash": "e19c2f13def384291124d63255c9cd27",
+          "srcHash": "6e80faebfc2db38878868176af0f81d6",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a blue lever nut-cracker with walnuts, the two jaw edges arrowed X, beside Fig. C-5: dimensioned orthographic detail drawings of the eleven numbered components -- main body, adjustable jaw guide, sliding jaw guide, link arm, lever arm, adjustable jaw, sliding jaw, M3 x 14 set screw, M3 plain nut, M4 x 14 set screw and M4 plain nut -- with the section line A-A drawn across the main body, and a parts-list table giving the quantity of each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8303,7 +8303,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q5-art.png",
-          "srcHash": "e19c2f13def384291124d63255c9cd27",
+          "srcHash": "6e80faebfc2db38878868176af0f81d6",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a blue lever nut-cracker with walnuts, the two jaw edges arrowed X, beside Fig. C-5: dimensioned orthographic detail drawings of the eleven numbered components -- main body, adjustable jaw guide, sliding jaw guide, link arm, lever arm, adjustable jaw, sliding jaw, M3 x 14 set screw, M3 plain nut, M4 x 14 set screw and M4 plain nut -- with the section line A-A drawn across the main body, and a parts-list table giving the quantity of each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8325,7 +8325,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q5-art.png",
-          "srcHash": "e19c2f13def384291124d63255c9cd27",
+          "srcHash": "6e80faebfc2db38878868176af0f81d6",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a blue lever nut-cracker with walnuts, the two jaw edges arrowed X, beside Fig. C-5: dimensioned orthographic detail drawings of the eleven numbered components -- main body, adjustable jaw guide, sliding jaw guide, link arm, lever arm, adjustable jaw, sliding jaw, M3 x 14 set screw, M3 plain nut, M4 x 14 set screw and M4 plain nut -- with the section line A-A drawn across the main body, and a parts-list table giving the quantity of each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8347,7 +8347,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q5-art.png",
-          "srcHash": "e19c2f13def384291124d63255c9cd27",
+          "srcHash": "6e80faebfc2db38878868176af0f81d6",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a blue lever nut-cracker with walnuts, the two jaw edges arrowed X, beside Fig. C-5: dimensioned orthographic detail drawings of the eleven numbered components -- main body, adjustable jaw guide, sliding jaw guide, link arm, lever arm, adjustable jaw, sliding jaw, M3 x 14 set screw, M3 plain nut, M4 x 14 set screw and M4 plain nut -- with the section line A-A drawn across the main body, and a parts-list table giving the quantity of each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8369,7 +8369,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q5-art.png",
-          "srcHash": "e19c2f13def384291124d63255c9cd27",
+          "srcHash": "6e80faebfc2db38878868176af0f81d6",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a blue lever nut-cracker with walnuts, the two jaw edges arrowed X, beside Fig. C-5: dimensioned orthographic detail drawings of the eleven numbered components -- main body, adjustable jaw guide, sliding jaw guide, link arm, lever arm, adjustable jaw, sliding jaw, M3 x 14 set screw, M3 plain nut, M4 x 14 set screw and M4 plain nut -- with the section line A-A drawn across the main body, and a parts-list table giving the quantity of each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8392,7 +8392,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q5-art.png",
-          "srcHash": "e19c2f13def384291124d63255c9cd27",
+          "srcHash": "6e80faebfc2db38878868176af0f81d6",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a blue lever nut-cracker with walnuts, the two jaw edges arrowed X, beside Fig. C-5: dimensioned orthographic detail drawings of the eleven numbered components -- main body, adjustable jaw guide, sliding jaw guide, link arm, lever arm, adjustable jaw, sliding jaw, M3 x 14 set screw, M3 plain nut, M4 x 14 set screw and M4 plain nut -- with the section line A-A drawn across the main body, and a parts-list table giving the quantity of each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8414,7 +8414,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q5-art.png",
-          "srcHash": "e19c2f13def384291124d63255c9cd27",
+          "srcHash": "6e80faebfc2db38878868176af0f81d6",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a blue lever nut-cracker with walnuts, the two jaw edges arrowed X, beside Fig. C-5: dimensioned orthographic detail drawings of the eleven numbered components -- main body, adjustable jaw guide, sliding jaw guide, link arm, lever arm, adjustable jaw, sliding jaw, M3 x 14 set screw, M3 plain nut, M4 x 14 set screw and M4 plain nut -- with the section line A-A drawn across the main body, and a parts-list table giving the quantity of each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8436,7 +8436,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q5-art.png",
-          "srcHash": "e19c2f13def384291124d63255c9cd27",
+          "srcHash": "6e80faebfc2db38878868176af0f81d6",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a blue lever nut-cracker with walnuts, the two jaw edges arrowed X, beside Fig. C-5: dimensioned orthographic detail drawings of the eleven numbered components -- main body, adjustable jaw guide, sliding jaw guide, link arm, lever arm, adjustable jaw, sliding jaw, M3 x 14 set screw, M3 plain nut, M4 x 14 set screw and M4 plain nut -- with the section line A-A drawn across the main body, and a parts-list table giving the quantity of each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
@@ -8458,7 +8458,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q5-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q5-art.png",
-          "srcHash": "e19c2f13def384291124d63255c9cd27",
+          "srcHash": "6e80faebfc2db38878868176af0f81d6",
           "alt": "Question C-5, Assemblies, as printed. A photograph of a blue lever nut-cracker with walnuts, the two jaw edges arrowed X, beside Fig. C-5: dimensioned orthographic detail drawings of the eleven numbered components -- main body, adjustable jaw guide, sliding jaw guide, link arm, lever arm, adjustable jaw, sliding jaw, M3 x 14 set screw, M3 plain nut, M4 x 14 set screw and M4 plain nut -- with the section line A-A drawn across the main body, and a parts-list table giving the quantity of each.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level — © State Examinations Commission"
