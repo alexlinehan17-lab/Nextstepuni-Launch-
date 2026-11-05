@@ -34,6 +34,14 @@ import higher2016P1 from '../components/MarkBank/cards/irish/higher-2016-p1-auth
 import higher2016P2 from '../components/MarkBank/cards/irish/higher-2016-p2-authored.json';
 import ordinary2016P1 from '../components/MarkBank/cards/irish/ordinary-2016-p1-authored.json';
 import ordinary2016P2 from '../components/MarkBank/cards/irish/ordinary-2016-p2-authored.json';
+import higher2015P1 from '../components/MarkBank/cards/irish/higher-2015-p1-authored.json';
+import higher2015P2 from '../components/MarkBank/cards/irish/higher-2015-p2-authored.json';
+import ordinary2015P1 from '../components/MarkBank/cards/irish/ordinary-2015-p1-authored.json';
+import ordinary2015P2 from '../components/MarkBank/cards/irish/ordinary-2015-p2-authored.json';
+import higher2014P1 from '../components/MarkBank/cards/irish/higher-2014-p1-authored.json';
+import higher2014P2 from '../components/MarkBank/cards/irish/higher-2014-p2-authored.json';
+import ordinary2014P1 from '../components/MarkBank/cards/irish/ordinary-2014-p1-authored.json';
+import ordinary2014P2 from '../components/MarkBank/cards/irish/ordinary-2014-p2-authored.json';
 import ordinary2022P1 from '../scripts/markbank/authored/irish-ordinary-2022-p1-component-review.json';
 import ordinary2022P2 from '../components/MarkBank/cards/irish/ordinary-2022-p2-authored.json';
 import higher2022P2 from '../components/MarkBank/cards/irish/higher-2022-p2-authored.json';
@@ -79,6 +87,10 @@ const PAPER_ONE = [
   { review: ordinary2017P1.review, year: 2017, fileid: 'LC001GLP100IV.pdf', segments: 6, questions: 20, titles: 9, perTitle: 50 },
   { review: higher2016P1.review, year: 2016, fileid: 'LC001ALP100IV.pdf', segments: 8, questions: 25, titles: 9, perTitle: 100 },
   { review: ordinary2016P1.review, year: 2016, fileid: 'LC001GLP100IV.pdf', segments: 6, questions: 19, titles: 9, perTitle: 50 },
+  { review: higher2015P1.review, year: 2015, fileid: 'LC001ALP100IV.pdf', segments: 8, questions: 27, titles: 9, perTitle: 100 },
+  { review: ordinary2015P1.review, year: 2015, fileid: 'LC001GLP100IV.pdf', segments: 6, questions: 20, titles: 9, perTitle: 50 },
+  { review: higher2014P1.review, year: 2014, fileid: 'LC001ALP100IV.pdf', segments: 8, questions: 26, titles: 9, perTitle: 100 },
+  { review: ordinary2014P1.review, year: 2014, fileid: 'LC001GLP100IV.pdf', segments: 6, questions: 20, titles: 9, perTitle: 50 },
 ];
 
 describe('Irish archive review: Paper 1 (listening and composition)', () => {
@@ -164,6 +176,10 @@ const NEW_PAPER_TWO = [
   { file: ordinary2017P2, fileid: 'LC001GLP200IV.pdf', cards: 60, readingWhole: 10 },
   { file: higher2016P2, fileid: 'LC001ALP200IV.pdf', cards: 64, readingWhole: 12 },
   { file: ordinary2016P2, fileid: 'LC001GLP200IV.pdf', cards: 54, readingWhole: 10 },
+  { file: higher2015P2, fileid: 'LC001ALP200IV.pdf', cards: 63, readingWhole: 12 },
+  { file: ordinary2015P2, fileid: 'LC001GLP200IV.pdf', cards: 48, readingWhole: 10 },
+  { file: higher2014P2, fileid: 'LC001ALP200IV.pdf', cards: 60, readingWhole: 12 },
+  { file: ordinary2014P2, fileid: 'LC001GLP200IV.pdf', cards: 53, readingWhole: 10 },
 ];
 
 describe('Irish archive review: new Paper 2 cards', () => {

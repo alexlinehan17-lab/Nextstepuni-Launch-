@@ -283,7 +283,7 @@ def build():
                 # scheme's content guidance, and the Cumas Gaeilge definitions, the Nóta and the 40-mark table go with Gaeilge.
                 criteria=[criterion('tasc', 'An Tasc', 2, [c['tariffs']], permitted=[0, 2]),
                           criterion('abhar', 'An tÁbhar', 8, [c['content']]),
-                          criterion('gaeilge', 'An Cumas Gaeilge', 40, [c['cumas'] + ' ' + c['nota'], c['table40'],
+                          criterion('gaeilge', 'An Cumas Gaeilge', 40, [c['cumas'], c['nota'], c['table40'],
                                     'Scéim Mharcála Mhodhnaithe (scheme PDF 29–30): eligible candidates are assessed on named grammar features (bands 34–40 … 0–3); spelling is not counted.'])],
                 markingGuideNote=f'Whole 50-mark composition: Tasc 2, Ábhar 8, Cumas Gaeilge 40. The {YEAR} scheme prints the 40-mark table (scheme PDF 12) '
                                  'and, for modified marking, the bands 34–40 … 0–3 (PDF 30), so the Cumas Gaeilge award can take any value from 0 to 40. '

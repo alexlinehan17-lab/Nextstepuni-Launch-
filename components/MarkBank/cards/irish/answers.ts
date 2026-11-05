@@ -58,17 +58,28 @@ const TOKEN = new RegExp(String.raw`=\s*${MARC}((?:\s*\+\s*\d+\s*m?h?arc\b)*)` +
   String.raw`|\{([^}]*)\}` +
   String.raw`|${MARC}\s*\+\s*${MARC}(?:\s*=\s*\d+\s*m?h?arc\b)?` +
   String.raw`|(?<![=+:{\d])\b${MARC}`, 'g');
-/** "(dhá phointe eolais anseo = 2 mharc + 1 mharc = 3 mharc)" inside an answer. */
-const NOTE = /\(([^()]*=\s*\d+\s*m?h?arc[^()]*)\)/g;
+/** "(dhá phointe eolais anseo = 2 mharc + 1 mharc = 3 mharc)" inside an answer, and "( “craiceann geal” fágtha ar lár san
+ *  abairt = 0)" (2014 Higher A 2(b)(ii)): what an answer is worth without a word, at a bare 0. */
+const NOTE = /\(([^()]*=\s*(?:\d+\s*m?h?arc|0(?=\s*\)))[^()]*)\)/g;
 /** "An chéad phointe eolais atá ceart", "an dara húsáid atá ceart", and the first rule as 2017 Ordinary Reading B 3(b) prints
  *  it, "Fáth amháin atá ceart = 3 mharc; an dara fáth atá ceart = 2 mharc". */
 const RULE = /^(?:(?:an\s+)?(?:chéad|dara|tríú|ceathrú)\s.*\s|[A-ZÁÉÍÓÚa-záéíóú]+ amháin atá\s)(?:ceart|cheart)$/i;
 /** "Aon dá cheann de na rudaí ón liosta thíos = 3 mharc + 2 mharc", "2 cheann ón liosta = 3 mharc + 2 mharc" (2017 Ordinary
- *  Reading A 2(a), A 5(b), B 5(b)): how the list after it is priced, a rule, never an answer. */
-const LIST_RULE = /^(?:Aon\s+)?(?:dá|dhá|\d+)\s+cheann\b[^•=]*\bliosta\b/i;
+ *  Reading A 2(a), A 5(b), B 5(b)), "Dhá phíosa eolais ag teastáil = 3 mharc + 2 mharc" (2014 Ordinary Reading A 3(b)): how the
+ *  list after it is priced, a rule, never an answer. */
+const LIST_RULE = /^(?:Aon\s+)?(?:dá|dhá|\d+)\s+cheann\b[^•=]*\bliosta\b|^Dhá (?:phointe|phíosa) eolais ag teastáil$/i;
+/** "2 phointe ag teastáil = 3 mharc + 2 mharc", "Dhá chúis = 3 mharc + 2 mharc" (2015 Ordinary Reading A 3(a), A 5(a)): how many
+ *  points the part wants and how they are priced, a rule as LIST_RULE's line is, never an answer. */
+const COUNT_RULE = /^(?:dá|dhá|\d+)\s+(?:phointe(?:\s+ag teastáil)?|chúis)$/i;
+/** "Gan ach cúis cheart amháin luaite, bronn 3 mharc uirthi.", "Ceann amháin den dá rud (leictreachas nó teas) i gceart, bronn 2
+ *  mharc air" (2015 Ordinary Reading A 4(a), A 5(a); Cluastuiscint Comhrá 1): what a partial answer earns, said as an instruction
+ *  to the examiner after the answers, a direction as "(Má fhágtar … is fiú 3 mharc an freagra.)" is (2017 Ordinary A 3(b)).
+ *  "Bronn 3 mharc ar an gcéad phointe atá ceart agus 2 mharc ar an dara pointe atá ceart" (A 3(a)): the ladder said again. */
+const AWARD_RULE = /(?<=^|\s)(?:(?:Gan ach|Ceann amháin)\s[^•=]*?,\s*bronn\s+\d+\s*m?h?arc\s+(?:air|uirthi)\b\.?|Bronn\s+\d+\s*m?h?arc ar an gcéad [^•=+]*?(?:ceart|cheart)\s+agus\s+\d+\s*m?h?arc ar an dara [^•=+]*?(?:ceart|cheart)\b\.?)/gi;
 /** "Dhá phointe eolais as an liosta seo = 3 mharc + 2 mharc = 5 mharc", "Na pointí seo a leanas:" (2016 Ordinary): the scheme's
- *  heading over a list of accepted points, not one of them. */
-const DIRECTION = /^(?:Bainfear\b|Glacfar\b|Ní mór\b|Gearrfar\b|Tabharfar\b|Tá .* mharc ag gabháil\b|Dhá (?:phointe|phíosa) eolais as an liosta seo\b|Na pointí seo a leanas\b)/i;
+ *  heading over a list of accepted points, not one of them. So are "Dhá cheann as na critéir seo a leanas:", "Rud amháin as na
+ *  rudaí seo a leanas:" and "An dá phointe eolais seo:" (2015 Higher A 3(a), A 3(b)(i), B 2(a)). */
+const DIRECTION = /^(?:Bainfear\b|Glacfar\b|Ní mór\b|Gearrfar\b|Tabharfar\b|Tá .* mharc ag gabháil\b|Dhá (?:phointe|phíosa) eolais as an liosta seo\b|Na pointí seo a leanas\b|[^•=]{1,60}\bseo a leanas:$|An dá phointe eolais seo:$|Dhá rud as na rudaí seo a leanas\b|Dhá phíosa eolais as na pointí seo a leanas\b|Dhá phíosa eolais$|Rud amháin as na rudaí seo a leanas\b)/i;
 /** Where the lifted excerpt runs on into the scheme's next section. */
 const FURNITURE = /^(?:Eolas\s*\(|Iomlán|Móriomlán|Cuid [ABC]\b|I gcás\b|\d+ Roinn\b|An Tasc\b|An tÁbhar\b|Marcanna\b|An Mharcáil\b)/i;
 const PROMPT = /^(?:An (?:Chéad|Dara|Tríú) Mhír\s*)?(?:\d+\.\s|\(?[a-z]\)\s|\((?:i|ii|iii|iv)\)\s)/i;
@@ -97,9 +108,10 @@ const SECTION_SUMMARY = /^(?:Freagair Léamhthuiscint|Tá Ceist \d+\s*[–-]\s*\
 /** "(Is leor aon trí cinn as na ceithre cinn: …)", "(Ní mór ‘…’ a bheith sa fhreagra chun an dara marc a
  *  ghnóthú)", "(Tá gá le ‘conradh’ … a lua sa fhreagra chun an dá mharc a bhronnadh.)", "(Má fhágtar ainmfhocal nó aidiacht
  *  amháin ar lár is fiú 3 mharc an freagra.)" (2017 Ordinary Reading A 3(b)), "(Tá an dá rud - … ag teastáil chun 5 mharc a bhronnadh
- *  ar an bhfreagra.)" (2016 Ordinary B 5(a)) after an answer: how much of it suffices, what it must contain or what it is worth
+ *  ar an bhfreagra.)" (2016 Ordinary B 5(a)), "(Tá an dara habairt inghlactha mar phointe eolais má bhíonn an chéad phointe leis. …)"
+ *  (2015 Higher B 2(a)) after an answer: how much of it suffices, what it must contain or what it is worth
  *  without a word, a direction. */
-const SUFFICES = /\((?:Is leor|aon|Ní mór|Tá gá le|Má fhágtar|Tá an dá rud)\s[^()]*(?:\([^()]*\)[^()]*)*\)/g;
+const SUFFICES = /\((?:Is leor|aon|Ní mór|Tá gá le|Má fhágtar|Tá an dá rud|Tá an dara habairt)\s[^()]*(?:\([^()]*\)[^()]*)*\)/g;
 /** "… nó áitiúla = 1 mharc (gan ‘in 2024’ sa fhreagra)", "… = 2 mharc (Gan ainmneacha an dá thír luaite, …)": the qualifier is the condition of the answer it
  *  follows, as "= 0 marc (gá le cáiliú)" (2018 Higher B 1(b)(ii)) is. It stays on that row, as a second slice:
  *  "… nó áitiúla: (gan ‘in 2024’ sa fhreagra) · 1m". */
@@ -153,7 +165,38 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   // A split printed before the brace, "(Dhá bhealach: 2 mharc + 1 mharc) {3 mharc}", is the brace's own split.
   text = text.replace(/\((Dhá\s[^():]*):\s*(\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)+)\)\s*\{\s*(\d+\s*m?h?arc\b)\s*\}/g,
     (_, label: string, split: string, total: string) => `(${label}) {${total}: ${split}}`);
+  // "(Alt 1) 3 mharc: 2 mharc + 1 mharc" (2014 Higher A 1(a)): the brace "{3 mharc: 2 mharc + 1 mharc}" printed without its
+  // braces, read as the brace where the split adds up to the total.
+  text = text.replace(/(?<!\{\s*)\b(\d+)\s*(m?h?arc):\s*(\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)+)/g, (whole: string, total: string, unit: string, split: string) =>
+    ([...split.matchAll(/\d+/g)].reduce((sum, m) => sum + Number(m[0]), 0) === Number(total) ? `{${total} ${unit}: ${split}}` : whole));
+  // "(2 mharc) (2 cheist dhomhanda) {1 mharc + 1 mharc}" and "{2 mharc} (2 phointe eolais) {1 mharc + 1 mharc}" (2015 Higher
+  // A 1(b)(ii), A 5(b)(i)): the part's tariff, a note on what it asks for, then how the tariff splits. One brace with its split;
+  // the note is a direction, so the prompt stays the printed line it ends ("… (Alt 1)").
+  text = text.replace(/[({]\s*(\d+)\s*(m?h?arc\b)\s*[)}]\s*(\([^()]*\))\s*\{\s*(\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)+)\s*\}/g,
+    (whole: string, total: string, unit: string, note: string, split: string) => {
+      if ([...split.matchAll(/\d+/g)].reduce((sum, m) => sum + Number(m[0]), 0) !== Number(total)) return whole;
+      directions.push(tidy(note));
+      return `{${total} ${unit}: ${split}}`;
+    });
+  // "(b) Cén dáta a bheidh an clár nua ag tosú? An dara lá déag de Bhealtaine = 2 mharc 2 mharc 12 Bealtaine = 2 mharc …" (2015
+  // Higher Fógra a hAon 1(b)): the question's tariff, printed in the margin beside its first answer, is read after that answer.
+  text = text.replace(/\?\s+([^•=?]{1,80}?=\s*\d+\s*m?h?arc\b)\s+(\d+\s*m?h?arc\b)(?!\s*[+=])/g, (_, answer: string, tariff: string) => `? ${tariff} ${answer}`);
   text = text.replace(BRACKETED_ANSWER, (_, price: string, answer: string, own: string) => `${price} ${answer.trim()} ${own}`);
+  // "Cén t-ainm a bheidh ar an gclár speisialta …? Sacar an Lae = 3 mharc 3 mharc" (2014 Ordinary Fógra a Dó 1(b)): the question
+  // fills its printed line, so its tariff sits at the right of the answer's line, after the answer's own price. A bare tariff
+  // printed straight after an answer's price and ending that answer is the question's: it is read before the answer.
+  text = text.replace(/(\?)\s+([^?•=]{1,120}?=\s*\d+\s*m?h?arc\b)\s+(\d+\s*m?h?arc\b)(?=\s*$)/, '$1 $3 $2');
+  // "061 92917 3 mharc 061 (1 mharc) + 92917 (2 mharc)" (2014 Ordinary Fógra a hAon, the grid's fourth row): under an answer, its
+  // parts at their own prices, adding up to the answer's. Each part is one more answer at its price.
+  text = text.replace(/(\d+)\s*(m?h?arc\b)\s+([^()•=+?]{1,40}?)\s*\((\d+)\s*m?h?arc\)\s*\+\s*([^()•=+?]{1,40}?)\s*\((\d+)\s*m?h?arc\)(?=\s*$)/,
+    (whole: string, price: string, unit: string, first: string, firstPrice: string, second: string, secondPrice: string) =>
+      (Number(firstPrice) + Number(secondPrice) === Number(price)
+        ? `${price} ${unit} • ${first.trim()} = ${firstPrice} mharc • ${second.trim()} = ${secondPrice} mharc` : whole));
+  // "Dhá ábhar = 3 mharc + 2 mharc An chéad ábhar atá cruinn = 3 mharc; an dara hábhar = 2 mharc", "An chéad scoil atá cruinn =
+  // 3 mharc; an dara scoil luaite agus cruinn = 2 mharc" (2014 Ordinary Reading A 3(a), A 2(b)): how a two-point answer is priced,
+  // over answers that each give both points at the part's tariff. A direction, as the 2016 sentence form of the ladder is.
+  text = text.replace(/(?:\bDhá\s[^=•;]{1,30}?=\s*3\s*mharc\s*\+\s*2\s*mharc\s+)?\bAn chéad\s[^=•;]{1,40}?\satá cruinn\s*=\s*3\s*mharc;\s*an dara\s[^=•;]{1,40}?=\s*2\s*mharc\b/g,
+    rule => { directions.push(tidy(rule)); return ' '; });
   // A refused answer the scheme prints at a bare 0 ("Deireadh Fómhair = 0"; the grid's "T-léine 3 mharc Léine 0", 2016 Ordinary):
   // an answer at 0 marks, as "= 0 marc (gá le cáiliú)" is.
   text = text.replace(/=\s*0(?=\s*(?:•|$))/g, '= 0 marc').replace(/(\d\s*m?h?arc\s+[^•=?\d]{1,40}?)\s+0(?=\s*(?:•|$))/g, '$1 0 marc');
@@ -162,11 +205,15 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   text = text.replace(/\b\d+\s*m?h?arc ar an gcéad [^+=•]+\+\s*\d+\s*m?h?arc ar an dara [^+=•]+=\s*\d+\s*m?h?arc\b/g, rule => { directions.push(tidy(rule)); return ' '; });
   text = text.replace(/(=\s*\d+\s*m?h?arc\b)\s+nó\s+\d+\s*m?h?arc\b/g, '$1');
   text = text.replace(SUFFICES, note => { directions.push(tidy(note)); return ' '; });
+  text = text.replace(AWARD_RULE, rule => { directions.push(tidy(rule)); return ' '; });
   text = text.replace(/\s+/g, ' ').trim().replace(HEADER, '');
   text = text.replace(NOTE, (_, note: string) => { directions.push(tidy(note)); return ' '; });
   text = text.replace(LANGUAGE_RULE, rule => { directions.push(tidy(rule)); return ' '; });
   const leak = LEAK.exec(text);
   if (leak) text = text.slice(0, leak.index);
+  // "Tuairim (2) ► 2 mharc T = Cúis 1 (2 mharc) + Sampla 1 (3 mharc) ► 5 mharc …" (2015 Higher 6(b)) prices what the answer must
+  // do, with the examiner's boxes between the prices: the tariff reader's grammar (tariffs.ts ARROW), never an answer list.
+  if (text.includes('►')) return { ok: false, reason: 'arrow-priced tariff' };
 
   // A reading excerpt can run on into the next question: stop at its number.
   const own = /Ceist (\d+)/.exec(source.questionRef);
@@ -213,6 +260,9 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     if (!current) return 'answer before any sub-question';
     let answers = 0;
     for (const [index, item] of items.entries()) {
+      // "• Gearrann obair Foodcloud … = 2 mharc nó • Faigheann na bochtáin cabhair riachtanach = 2 mharc" (2015 Higher A 4(b)(ii)):
+      // the word between two answers, not one.
+      if (item === 'nó') continue;
       if (RULE.test(item)) {
         directions.push(item);
         // "5 mharc An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc" (2018 Ordinary
@@ -250,7 +300,7 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
       // "Aon dá cheann … ón liosta … = 3 mharc + 2 mharc": the list's rule, a direction; its price is the part's ladder where the
       // part has none yet and the price adds up to the part's tariff, and the listed answers after it are claimed by count.
       const listed = splitBullets(segment);
-      if (current && plus && LIST_RULE.test(listed.lead) && listed.bullets.length === 0) {
+      if (current && plus && (LIST_RULE.test(listed.lead) || COUNT_RULE.test(listed.lead)) && listed.bullets.length === 0) {
         directions.push(listed.lead);
         const terms = [Number(answer), ...[...plus.matchAll(/\d+/g)].map(m => Number(m[0]))];
         if (!current.ladder && terms.reduce((a, b) => a + b, 0) === current.tariff) current.ladder = cumulative(terms);
@@ -266,6 +316,14 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
       if (numbers.length === 0) return { ok: false, reason: 'empty brace tariff' };
       const { lead, bullets } = splitBullets(segment);
       if (bullets.length && current) bullets.forEach(bullet => { if (RULE.test(bullet)) directions.push(bullet); else current!.rows.push({ text: bullet }); });
+      // "{3 mharc} Dhá phointe eolais = {2 mharc + 1 mharc}" (2014 Higher A 4(a)): the open part's tariff, then how it divides
+      // under its own label: the part's ladder; the label is a direction.
+      if (current && !current.ladder && current.rows.length === 0 && brace.includes('+') && /=$/.test(lead)
+        && numbers.reduce((a, b) => a + b, 0) === current.tariff) {
+        current.ladder = cumulative(numbers);
+        directions.push(tidy(lead.replace(/\s*=$/, '')));
+        continue;
+      }
       // "{3 mharc: 2 mharc + 1 mharc}" and "{2 mharc = 1 mharc + 1 mharc}": the
       // tariff, then how it splits; "{6 mharc + 6 mharc}": two answers.
       if (numbers.length > 2 && numbers.slice(1).reduce((a, b) => a + b, 0) === numbers[0]) open(lead, numbers[0], cumulative(numbers.slice(1)));
@@ -282,7 +340,16 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
       // restates the open part's ladder.
       if (!lead && current?.ladder && current.ladder.join() === cumulative(terms).join()) continue;
       // "5 mharc 3 mharc + 2 mharc = 5 mharc" (2016 Ordinary B 4(a)): the open part's tariff, then how it divides: its ladder.
-      if (!lead && current && !current.ladder && current.rows.length === 0 && terms[0] !== terms[1] && terms[0] + terms[1] === current.tariff) {
+      // "2 mharc 1 mharc + 1 mharc" (2015 Higher Comhrá a Dó 2) divides it into equal halves, which the answers' own prices carry.
+      if (!lead && current && !current.ladder && current.rows.length === 0 && terms[0] + terms[1] === current.tariff) {
+        if (terms[0] !== terms[1]) current.ladder = cumulative(terms);
+        continue;
+      }
+      // "Dhá scil as na cinn seo a leanas: 3 mharc + 2 mharc" (2014 Ordinary Reading B 4(a)): the heading over the list of accepted
+      // points, its price the open part's ladder; the points listed after it are claimed by count.
+      if (lead && /^Dhá\s[^•=:]{1,30}\bas na cinn seo a leanas:?$/i.test(lead) && current && !current.ladder && current.rows.length === 0
+        && terms[0] + terms[1] === current.tariff) {
+        directions.push(lead);
         current.ladder = cumulative(terms);
         continue;
       }
@@ -302,8 +369,15 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     if (DIRECTION.test(lead)) { directions.push(lead); continue; }
     const { lead: head, bullets } = splitBullets(segment);
     if (bullets.length && current) bullets.forEach(bullet => { if (RULE.test(bullet)) directions.push(bullet); else current!.rows.push({ text: bullet }); });
-    if (/\?$/.test(head) || PROMPT.test(head)) { open(head, tariff); continue; }
     const question = head.lastIndexOf('?');
+    // "1. (a) Cén t-ainm atá ar an stáisiún raidió atá luaite san fhógra? Raidió Fáilte 2 mharc" (2015 Higher Fógra a hAon): a
+    // numbered question and its one answer before the tariff, as the Ordinary grid prints them.
+    if (PROMPT.test(head) && question > 0 && /^[A-ZÁÉÍÓÚ]/.test(tidy(head.slice(question + 1))) && !/[.?]$/.test(head)) {
+      open(tidy(head.slice(0, question + 1)), tariff);
+      current!.rows.push({ text: tidy(head.slice(question + 1)), marks: tariff });
+      continue;
+    }
+    if (/\?$/.test(head) || PROMPT.test(head)) { open(head, tariff); continue; }
     if (question >= 0) {
       open(tidy(head.slice(0, question + 1)), tariff);
       current!.rows.push({ text: tidy(head.slice(question + 1)), marks: tariff });
@@ -327,11 +401,25 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   if (!stopped) {
     const tail = text.slice(pos);
     const { lead, bullets } = splitBullets(tail);
+    // Under a heading such as "Rud amháin as na rudaí seo a leanas:" (2015 Higher A 3(b)(i)) every bullet is an accepted answer,
+    // however long ("• Éisteann na Comhairleoirí le díospóireachtaí (na dtoscairí óga)").
+    const listed = /\bseo a leanas:$/.test(lead);
     for (const item of lead ? [lead, ...bullets] : bullets) {
       if (!current) break;
       if (FURNITURE.test(item)) break;
-      if (RULE.test(item) || DIRECTION.test(item)) directions.push(item);
-      else if (/^[A-ZÁÉÍÓÚ]/.test(item) && !/[=]/.test(item) && !current.ladder && current.rows.length > 0 && item.length > 60) directions.push(item);
+      if (RULE.test(item) || DIRECTION.test(item)) { directions.push(item); continue; }
+      // "• Gearrann obair Foodcloud … = 2 mharc nó • Faigheann na bochtáin …" (2015 Higher A 4(b)(ii)): the word between two
+      // answers, not one.
+      if (item === 'nó') continue;
+      // "Tá trí mharc ar fáil as dhá mhír ghramadaí a aithint; … Sampla d’ainmfhocal … = …Átha; … Sampla de bhriathar … = Tá; Is"
+      // (2015 Higher 6(a)): under a ladder, the rule and then one sample answer for each item the ladder counts.
+      const pieces = current.ladder ? item.split(/\s(?=Sampla\b)/) : [item];
+      if (pieces.length > 1) {
+        if (!/^Sampla\b/.test(pieces[0])) directions.push(tidy(pieces.shift()!));
+        pieces.forEach(piece => current!.rows.push({ text: tidy(piece) }));
+        continue;
+      }
+      if (!listed && /^[A-ZÁÉÍÓÚ]/.test(item) && !/[=]/.test(item) && !current.ladder && current.rows.length > 0 && item.length > 60) directions.push(item);
       else current.rows.push({ text: item });
     }
   }
