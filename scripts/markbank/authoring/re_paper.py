@@ -120,10 +120,18 @@ QUESTION = re.compile(r'^(?:QUESTION|Question)\s+(\d)\.?\s*(.*)$')
 # 2021 sets its romans "i." and "ii." with a full stop and no bracket, where
 # every other year sets "(i)". Reading only the bracketed form lost five asks
 # in 2021 Ordinary — every roman in Sections E, H, I and J.
+# A roman may also END its line: 2020 Higher prints "a) i." alone, with the
+# ask set below a picture, and reading the roman only when text followed it
+# filed (a)(i)'s ask under (a) and lost it.
 MARKER = re.compile(
     r'^(?:\(([a-h])\)|([a-h])\))\s*'
-    r'(?:\((i{1,3}|iv|v)\)|(i{1,3}|iv|v)\.(?=\s))?\s*')
-ROMAN_ONLY = re.compile(r'^(?:\((i{1,3}|iv|v)\)|(i{1,3}|iv|v)\.(?=\s))\s*')
+    r'(?:\((i{1,3}|iv|v)\)|(i{1,3}|iv|v)\.(?=\s|$))?\s*')
+ROMAN_ONLY = re.compile(r'^(?:\((i{1,3}|iv|v)\)|(i{1,3}|iv|v)\.(?=\s|$))\s*')
+# A picture credit set in the margin on the same baseline as a part marker:
+# 2018 Ordinary prints "(Source: www.Bible.ca)" beside "b) Explain how one
+# archaeological discovery ...", and the line then opened with the credit,
+# so the marker after it was never read and Section H lost its (b).
+LEADING_CREDIT = re.compile(r'^\((?:Source|Adapted from)\b[^)]*\)\s+(?=(?:\(?[a-h]\))\s)', re.I)
 
 # The tariff the PAPER prints beside an ask: "(20)", "(40 marks)", "(80)".
 # Read to cross-check the scheme, never to price a card on its own.
@@ -145,7 +153,7 @@ def _lines(path):
     with pymupdf.open(path) as doc:
         for pno in range(doc.page_count):
             rows = []
-            for x0, y0, x1, y1, word, *_ in doc[pno].get_text('words'):
+            for x0, y0, x1, y1, word, *_ in _words(doc[pno]):
                 word = word.translate(GLYPHS)
                 if not word.strip():
                     continue
@@ -160,6 +168,63 @@ def _lines(path):
             for x0, text in _merge_option_columns(ordered):
                 yield pno, x0, text
 
+
+
+def _words(page):
+    """The page's words, as get_text('words') gives them -- except on a page
+    printed in vertical STRIPS.
+
+    Five papers (2011 Higher pages 2-5, 2011 Ordinary 2 and 4, 2014 Higher 5,
+    2015 Higher 2-5, 2015 Ordinary 2 and 5) are set as narrow side-by-side
+    strips, and a glyph that straddles a strip edge is drawn in BOTH strips at
+    the same origin. The text layer then cuts every word at the edges and
+    repeats the letter there -- "Outlin ne how the Sop phists" -- so no part
+    marker or section head survives, and the census saw 5 asks of 2011
+    Higher's 20. On such a page the words are rebuilt from the glyphs: each
+    glyph once per origin, grouped on its baseline and split at a space or a
+    gap. A page with no glyph drawn twice keeps the text layer's own words,
+    so every other paper reads exactly as before."""
+    chars, seen, doubled = [], {}, False
+    for block in page.get_text('rawdict')['blocks']:
+        for line in block.get('lines', []):
+            for span in line['spans']:
+                for ch in span['chars']:
+                    # the second drawing lands within a tenth of a point of the
+                    # first (318.60 against 318.66 for 2011 Higher's
+                    # "contributed"), so origins are matched, not rounded
+                    xs = seen.setdefault((ch['c'], round(ch['origin'][1])), [])
+                    if any(abs(x - ch['origin'][0]) < 0.5 for x in xs):
+                        doubled = doubled or bool(ch['c'].strip())
+                        continue
+                    xs.append(ch['origin'][0])
+                    chars.append(ch)
+    if not doubled:
+        return page.get_text('words')
+    rows = []
+    for ch in sorted(chars, key=lambda c: (c['origin'][1], c['origin'][0])):
+        for row in rows:
+            if abs(row[0] - ch['origin'][1]) <= 1.0:
+                row[1].append(ch)
+                break
+        else:
+            rows.append([ch['origin'][1], [ch]])
+    words = []
+    for _y, row in rows:
+        cur, last = [], None
+        for ch in sorted(row, key=lambda c: c['origin'][0]):
+            gap = last is not None and ch['bbox'][0] - last['bbox'][2] > 1.5
+            if not ch['c'].strip() or gap:
+                if cur:
+                    words.append(cur)
+                cur = [] if not ch['c'].strip() else [ch]
+            else:
+                cur.append(ch)
+            last = ch
+        if cur:
+            words.append(cur)
+    return [(min(c['bbox'][0] for c in w), min(c['bbox'][1] for c in w),
+             max(c['bbox'][2] for c in w), max(c['bbox'][3] for c in w),
+             ''.join(c['c'] for c in w)) for w in words]
 
 
 BULLET_TOKEN = re.compile(r'^[\u2022\u25c6\u25cf\u25aa\u25a0]')
@@ -273,22 +338,37 @@ class RePaper:
                 self.asks[cur] = (self.asks.get(cur, '') + ' ' + text).strip()
             buf = []
 
+        def close_section():
+            # A section that prints ONE unlettered question -- 2011 Higher's
+            # Section J, "Discuss the impact of each of the above images of
+            # God ... (80 marks)" -- opens no part marker, so its whole ask
+            # was held as a stem with nothing to stem, and the census lost it.
+            # Such a section is one ask, addressed by the section alone.
+            if (section is not None and section != 'A' and pending_stem
+                    and not any(k[0] == section for k in self.asks)):
+                text = ' '.join(' '.join(pending_stem).split())
+                if PAPER_MARKS.search(text) or ANY_MARKS.search(text):
+                    self.asks[(section, None, None, None)] = text
+
         for _pno, _x, raw in _lines(self.path):
-            line = ' '.join(raw.split())
+            line = LEADING_CREDIT.sub('', ' '.join(raw.split()))
             if not line:
                 continue
             if END_OF_MATERIAL.match(line):
+                close_section()
                 break
             if FURNITURE.match(line):
                 continue
             if UNIT.match(line):
                 flush()
+                close_section()
                 cur, q, letter, roman = None, None, None, None
                 pending_stem = []
                 continue
             m = SECTION.match(line)
             if m:
                 flush()
+                close_section()
                 section, q, letter, roman, cur = m.group(1), None, None, None, None
                 title = ANY_MARKS.sub('', m.group(2)).strip()
                 if title:
@@ -336,6 +416,7 @@ class RePaper:
                 continue
             buf.append(line)
         flush()
+        close_section()
         self._finish()
 
     def _finish(self):
@@ -381,6 +462,8 @@ class RePaper:
     # -- the address a card cites -------------------------------------------
     def ref(self, key):
         section, q, letter, roman = key
+        if q is None and letter is None and roman is None:
+            return f'{self.year} {self.level.upper()} Section {section}'
         head = f'{self.year} {self.level.upper()} Section {section} Q'
         if q is not None:
             head += str(q)
