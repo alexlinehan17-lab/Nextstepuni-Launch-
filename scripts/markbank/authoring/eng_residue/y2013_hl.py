@@ -96,7 +96,7 @@ CROPS = {
         doc='scheme', page=6, rect=(330, 322, 578, 412), solution=True, ref='2013 HL Q1(k)'),
     # Q1(p)'s efficiency formula, a stacked fraction the text layer flattens.
     'engineering-2013-HL-scheme-q1p-sol': dict(
-        doc='scheme', page=7, rect=(100, 265.5, 430, 296), solution=True, ref='2013 HL Q1(p)'),
+        doc='scheme', page=7, rect=(100, 265.5, 430, 293.6), solution=True, ref='2013 HL Q1(p)'),
     'engineering-2013-HL-scheme-q2b-sol': dict(
         doc='scheme', page=9, rect=(100, 355, 500, 600), solution=True, ref='2013 HL Q2(b)'),
     'engineering-2013-HL-scheme-q2bi-sol': dict(
