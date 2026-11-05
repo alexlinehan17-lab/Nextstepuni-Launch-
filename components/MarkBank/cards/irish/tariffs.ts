@@ -198,20 +198,29 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   let open: Draft | undefined;
   let loose: IrishAnswerRow[] = [];
   let loosePrompt: string | undefined;
+  let looseSamples: string[] = [];
   const closeLoose = (tariff: number, prompt: string | undefined): boolean => {
     const sum = loose.reduce((acc, row) => acc + row.marks, 0);
     if (loose.length === 0 || sum !== tariff) return false;
-    parts.push({ prompt, tariff, rows: loose, samples: [] });
+    // The sample list printed under rows that close against the criterion ("Ábhair imní: Alt 2 An Ghaeilge …", 2014 Higher B
+    // 6(b)) stays with them (coordinator ruling 2, batch 6), unless one of its items welds in a printed heading ("…
+    // Níorbh fhiú Bliain Eorpach na hÓige a bheith ann Pointí eolais féideartha", 2023 Higher B 6(b)): then none does.
+    parts.push({ prompt, tariff, rows: loose, samples: looseSamples.some(sample => SAMPLES.test(sample)) ? [] : looseSamples });
     loose = [];
+    looseSamples = [];
     return true;
   };
   for (const [segmentIndex, segment] of segments.entries()) {
     let body = segment;
     const samples: string[] = [];
+    // "… le samplaí mura bhfuil tuairim luaite faoin eagraíocht." (2015 Higher A 6(b)): the word inside a sentence, not a list's
+    // heading; what follows it is never a sample list for rows that close against the criterion.
+    let samplesInSentence = false;
     // A sample list runs to the end of the segment, unless a priced phrase follows it ("An mothúchán is láidre = 1 mharc
     // Samplaí: Brón, … bród… Dhá shampla = 4 mharc + 4 mharc Freagraí Samplacha: …", 2016 Ordinary 3A(b)(iii)): then the list
     // ends where the phrase begins, and the phrase and what follows it are read on.
     for (let sampleMark = SAMPLES.exec(body); sampleMark; sampleMark = SAMPLES.exec(body)) {
+      if (!samples.length && /\ble\s$/.test(body.slice(0, sampleMark.index))) samplesInSentence = true;
       const after = body.slice(sampleMark.index + sampleMark[0].length);
       const resume = SAMPLES_RESUME.exec(after);
       if (!resume) {
@@ -496,6 +505,7 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       }
     }
     if (samples.length && open) open.samples.push(...samples);
+    else if (samples.length && loose.length && !samplesInSentence) looseSamples.push(...samples);
   }
   if (loose.length) {
     // Rows under no printed tariff: the criterion's own remainder, if they add up to it.
