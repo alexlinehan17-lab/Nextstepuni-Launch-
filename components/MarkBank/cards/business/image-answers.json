@@ -1,0 +1,103 @@
+{
+  "reviewedAt": "2026-10-28",
+  "reviewer": "Codex visual source and browser review; no human sign-off claimed",
+  "cards": {
+    "bus-2010-ol-s2-q3ai": {
+      "page": 14,
+      "region": [
+        0.205,
+        0.12,
+        0.79,
+        0.31
+      ],
+      "schemeFileid": "LC033GLP000EV",
+      "sourceSha256": "ac5bc2fed8c2d9f688983584ab64ab7350fb70f826f7cf5694a17b45cee58457",
+      "reviewedPages": [
+        5,
+        14
+      ],
+      "finding": "Four bars, all date labels, the thousands scale and the chart title are intact. Title 2 plus four bars at 2 marks."
+    },
+    "bus-2011-hl-s3-q7c-i": {
+      "page": 42,
+      "region": [
+        0.12,
+        0.14,
+        0.92,
+        0.7
+      ],
+      "schemeFileid": "LC033ALP000EV",
+      "sourceSha256": "744bb813d9c8f9a6dfe574072fc1752cdd18975d3a5172da6ad69cac1d5632e3",
+      "reviewedPages": [
+        12,
+        41,
+        42
+      ],
+      "finding": "All three lines, break-even point, forecast profit, margin of safety, title, axes and scales are intact. Published chart allocation totals 20; calculations-only cap remains in guidance."
+    },
+    "bus-2015-hl-s3-q4a-i": {
+      "page": 34,
+      "region": [
+        0.205,
+        0.125,
+        0.81,
+        0.675
+      ],
+      "schemeFileid": "LC033ALP000EV",
+      "sourceSha256": "5cc537842c29fedddbb3e1df6621262adf810a04aedaedcd6c69647616bb90c7",
+      "reviewedPages": [
+        9,
+        34
+      ],
+      "finding": "Both permitted charts remain visible, with all six months, values, titles and axes. One choice card retains the 12-mark allocation."
+    },
+    "bus-2020-hl-s3-q4b-i": {
+      "page": 47,
+      "region": [
+        0.29,
+        0.16,
+        0.78,
+        0.355
+      ],
+      "schemeFileid": "LC033ALP000EV",
+      "sourceSha256": "ff8717f2979ea9fcffef65e1457a6844846c06d0647d30b8940c968991cd02a9",
+      "reviewedPages": [
+        10,
+        47
+      ],
+      "finding": "The focused original diagram retains the managing director, all three departments, their employees and every connecting line. The 3,3,2,2 allocation remains on the supporting page and in the controls; the source does not bind those unequal awards to named boxes."
+    },
+    "bus-2025-hl-s1-q1": {
+      "page": 12,
+      "region": [
+        0.355,
+        0.239,
+        0.585,
+        0.285
+      ],
+      "schemeFileid": "LC033ALP000EV",
+      "sourceSha256": "8e3735a5c8a289493b81aaca13219d1a83b436c5142afd6ffb96cdbeef041d57",
+      "reviewedPages": [
+        5,
+        12
+      ],
+      "finding": "The image key is 1 D, 2 E, 3 A, 4 C, 5 F. The cumulative 0,3,5,7,9,10 marking control agrees with the published sequence."
+    },
+    "bus-2025-ol-s1-q9": {
+      "page": 10,
+      "region": [
+        0.15,
+        0.25,
+        0.785,
+        0.576
+      ],
+      "schemeFileid": "LC033GLP000EV",
+      "sourceSha256": "836d29b0b2b3c8e632d3379cd9c982a00da7458f6559d68bf9387516b1b5b2c2",
+      "reviewedPages": [
+        4,
+        10
+      ],
+      "finding": "All department boxes, both project teams, staff boxes and dotted reporting lines remain intact. The 2+2, 1+1 and 2+1+1 groups agree with the existing controls."
+    }
+  }
+}

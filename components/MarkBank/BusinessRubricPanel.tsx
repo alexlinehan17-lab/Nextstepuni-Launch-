@@ -50,6 +50,7 @@ export default function BusinessRubricPanel({ card, scores, onScore }: Props) {
           kind: 'source-text', label: 'OFFICIAL MARKING SCHEME',
           title: `${card.questionRef} · answers and allocation`,
           pages: rubric.schemePages,
+          regions: rubric.schemeRegions,
           attribution: card.schemeCitation,
           presentationNote: 'Read the published possible responses and mark allocation, then compare them with your own answer.',
         }}
