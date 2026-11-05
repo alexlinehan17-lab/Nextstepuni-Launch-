@@ -28,15 +28,15 @@
     "referenceAnomalyAssociations": 2,
     "matchedLocalCardLinks": 742,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 4039,
-    "distinctStudentFacingQuestions": 4039,
+    "localPhysicalMappings": 4058,
+    "distinctStudentFacingQuestions": 4058,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 3353,
+    "retainedLocalQuestions": 3372,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 3753,
+    "newlyAddedPhysicalMappings": 3772,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -16607,6 +16607,253 @@
       "n": "W-D",
       "topicIds": [
         "irish-ordinary-write-a-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-i",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-iii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-i",
+      "topicIds": [
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-C-i",
+      "topicIds": [
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-C-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-D-i",
+      "topicIds": [
+        "irish-ordinary-write-a-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-D-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-1",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-2",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-3",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-4",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-5",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-1",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-2",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-3",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-4",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-5",
+      "topicIds": [
+        "irish-ordinary-reading-comprehension"
       ],
       "provenance": "retained-local"
     },

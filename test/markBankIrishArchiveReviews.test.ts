@@ -55,6 +55,7 @@ import higher2012P1 from '../components/MarkBank/cards/irish/higher-2012-p1-auth
 import higher2012P2 from '../components/MarkBank/cards/irish/higher-2012-p2-authored.json';
 import ordinary2012P1 from '../components/MarkBank/cards/irish/ordinary-2012-p1-authored.json';
 import ordinary2012P2 from '../components/MarkBank/cards/irish/ordinary-2012-p2-authored.json';
+import ordinary2011P1 from '../components/MarkBank/cards/irish/ordinary-2011-p1-authored.json';
 import ordinary2011Aural from '../components/MarkBank/cards/irish/ordinary-2011-aural-authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
@@ -104,6 +105,7 @@ const PAPER_ONE = [
   { review: ordinary2013P1.review, year: 2013, fileid: 'LC001GLP100IV.pdf', segments: 6, questions: 20, titles: 9, perTitle: 50 },
   { review: higher2012P1.review, year: 2012, fileid: 'LC001ALP100IV.pdf', segments: 8, questions: 28, titles: 9, perTitle: 100 },
   { review: ordinary2012P1.review, year: 2012, fileid: 'LC001GLP100IV.pdf', segments: 6, questions: 20, titles: 9, perTitle: 50 },
+  { file: ordinary2011P1, fileid: 'LC001GLP100IV.pdf', cards: 19, readingWhole: 10 },
 ];
 
 describe('Irish archive review: Paper 1 (listening and composition)', () => {
@@ -206,6 +208,7 @@ describe('Irish archive review: Paper 2 (reading and literature)', () => {
 });
 
 // New Paper 2 cards (2020 has no legacy cards): every card is the file's own, carded from the reviewed paper and scheme.
+// 2010-2011 Paper 1 (composition and reading) has the same shape: its reading is carded as Paper 2's is from 2012.
 const NEW_PAPER_TWO = [
   { file: higher2020P2, fileid: 'LC001ALP200IV.pdf', cards: 78, readingWhole: 12 },
   { file: ordinary2020P2, fileid: 'LC001GLP200IV.pdf', cards: 52, readingWhole: 10 },
