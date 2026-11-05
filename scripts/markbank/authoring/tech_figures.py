@@ -2488,6 +2488,167 @@ REVIEWED.update({
         ' longest.',
 })
 
+# 2011 Ordinary, each crop rendered and looked at.
+REVIEWED.update({
+    'technology-2011-OL-paper-secA-q1-art':
+        'Photograph of a black and silver mobile phone branded Anycall, its '
+        'screen lit, a round silver navigation pad below it between green and red'
+        ' call keys.',
+    'technology-2011-OL-paper-secA-q2-art':
+        'Photograph of two workers in hi-vis vests pouring wet concrete from a '
+        'chute onto a grid of steel mesh laid on the ground, a lorry and fencing '
+        'behind them.',
+    'technology-2011-OL-paper-secA-q3-art':
+        'A truth table headed Switch A, Switch B and Light Bulb, its first row '
+        'printed 0, 0, 0 and three empty rows below; and a drawing of a hall '
+        'stairway with a light at the top, labelled Light bulb, and a switch at '
+        'the top and at the bottom of the stairs, labelled Light switches.',
+    'technology-2011-OL-paper-secA-q4-art':
+        '3D rendering of a storage unit: curved yellow upright panels pierced '
+        'with round holes, standing on a curved blue base, an arrow labelled A '
+        'pointing at the unit from its lower left.',
+    'technology-2011-OL-paper-secA-q5-art':
+        'Cutaway rendering of the Chilean rescue pod: a tall silver cylindrical '
+        'capsule with a tapered base, a mesh door panel swung open on its left '
+        'and its inside showing orange and red panels above green cylinders.',
+    'technology-2011-OL-paper-secA-q6-art':
+        'Two lever diagrams, each a green beam with a black load block, a red '
+        'force arrow and a blue triangle under the beam. A: the triangle under '
+        'the right-hand end, the block in the middle, the arrow pushing up at the'
+        ' left-hand end. B: the triangle near the middle, the block at the right-'
+        'hand end, the arrow pushing down at the left-hand end.',
+    'technology-2011-OL-paper-secA-q7-art':
+        'A sample Bord Gáis Energy electricity bill headed your electricity bill,'
+        ' addressed to Mr Sam Sample, with a meter readings table, a list of '
+        'charges and an Invoice Total of 150.82.',
+    'technology-2011-OL-paper-secA-q8-art':
+        'Photograph of five thin, see-through acrylic sheets fanned out one above'
+        ' another, their edges glowing.',
+    'technology-2011-OL-paper-secA-q9-art':
+        'A label inside a thin black frame: the words working with the Carbon '
+        'Trust above a bold black C-shaped mark with an arrow shape inside it, '
+        'the figure 100g beside it and CO2 below.',
+    'technology-2011-OL-paper-secA-q10-art':
+        '3D rendering of a green acrylic iPhone holder: a flat upright back plate'
+        ' with a shaped side piece standing out from it at right angles, the side'
+        ' piece cut with a round hole and curved notches.',
+    'technology-2011-OL-paper-secA-q11-art':
+        'Photograph of two meshing steel gear parts: a horizontal shaft with '
+        'angled ridges running round it across the top, engaged with the teeth of'
+        ' a large round gear with a keyed centre hole below; the letter A is '
+        'printed at the left.',
+    'technology-2011-OL-paper-secA-q12-art':
+        'Exploded line drawing of an assembly: a round domed base with a threaded'
+        ' boss at its centre, and above it, spaced out on a vertical line, a '
+        'small nut, a washer and a short cylindrical cap.',
+    'technology-2011-OL-paper-secB-q2a-art':
+        'Photograph of the Faraday induction torch: a clear tube with a black '
+        'grip and black end caps, a copper coil visible inside, a double-headed '
+        'red arrow and the words SHAKE to CHARGE printed beneath it.',
+    'technology-2011-OL-paper-secB-q2b-art':
+        'A circuit symbol: two parallel plates between two leads, the left plate '
+        'an open white rectangle marked + and the right plate filled solid black.',
+    'technology-2011-OL-paper-secB-q2c-art':
+        'Gantt chart, months Jan to Jun across the top and 1st Task to 5th Task '
+        'down the left, each task a coloured horizontal bar, the bars starting '
+        'later from top to bottom, the 2nd and 3rd overlapping in time.',
+    'technology-2011-OL-paper-secB-q2d-art':
+        'Photograph of an offshore wind farm: rows of tall white three-bladed '
+        'wind turbines standing in grey-blue sea, fading into the distance, a '
+        'white wake in the foreground.',
+    'technology-2011-OL-paper-secB-q3a-art':
+        'Rendering of the moisture sensor: a green box-shaped housing with a red '
+        'ON/OFF button, a pattern of small holes and a red light on top, MOISTURE'
+        ' DETECTOR printed on its sloping front and two long brass probes '
+        'sticking out; arrows label the Housing and the LED.',
+    'technology-2011-OL-paper-secB-q3b-art':
+        'Incomplete circuit diagram: a battery on the left, a switch on the top '
+        'rail, a resistor above an LED on the first branch, and a transistor on '
+        'the right whose base is fed through a resistor; gaps are marked A on the'
+        ' middle branch above the base resistor, B below it down to the bottom '
+        'rail, and C between the top rail and the transistor.',
+    'technology-2011-OL-paper-secB-q3c-art':
+        'Photographs of an iPod nano in a clear purple case printed with a '
+        'swirling pattern, seen from the front with its screen menu and click '
+        'wheel, and from the back with the word iPod showing through.',
+    'technology-2011-OL-paper-secB-q3d-art':
+        'A yellow triangular warning sign with a thick black border and a black '
+        'exclamation mark.',
+    'technology-2011-OL-paper-secC-q1a-art':
+        'Photograph of Fluke, a white, rounded, torpedo-shaped diving robot with '
+        'a camera lens in its nose, against a dark blue background.',
+    'technology-2011-OL-paper-secC-q1b-art':
+        'Photograph of a black robotic humanoid arm reaching up to the right from'
+        ' a mount at its elbow; an orange line labelled 0.3M runs from the elbow '
+        'to the hand, and an arrow labelled 30 N points at the hand.',
+    'technology-2011-OL-paper-secC-q1c-art':
+        'The start of a flowchart: a green rounded box labelled Start, with an '
+        'arrow leading down from it.',
+    'technology-2011-OL-paper-secC-q1d-art':
+        "Photograph of a dentist's drill head against a dark background, a fine "
+        'lit spray at its tip; and a pneumatic symbol labelled A: a square box '
+        'with a line through it, holding two parallel paths, the upper two '
+        'inward-curving arcs crossed by a diagonal arrow, the lower a small '
+        'circle against a V-shaped seat.',
+    'technology-2011-OL-paper-secC-q2a-art':
+        'Photograph of a model railroad level crossing: a short section of track '
+        'on a black base, a red and white striped barrier arm and a warning light'
+        ' post on each side.',
+    'technology-2011-OL-paper-secC-q2b-art':
+        'Circuit diagram: a 6V rail along the top through a switch and a 0V rail '
+        'along the bottom; a variable resistor above a push switch, their '
+        'junction feeding a resistor into the base of transistor B; above the '
+        'transistor a relay coil with component A connected across it; on the '
+        "right, terminals 0V and 12V wired through the relay's two changeover "
+        'contacts, joined by a dashed line, to a motor M.',
+    'technology-2011-OL-paper-secC-q2c-art':
+        'Photograph of a small black 555 timer chip with bent silver legs, '
+        "LM555CN and a maker's logo printed on its top.",
+    'technology-2011-OL-paper-secC-q2d-art':
+        'Photograph of a black plastic socket with two rows of four holes and '
+        'metal pins underneath, captioned Socket.',
+    'technology-2011-OL-paper-secC-q3a-art':
+        'Photograph of an HP desktop computer: a slim black and silver tower, a '
+        'flat-screen monitor, a keyboard and a mouse.',
+    'technology-2011-OL-paper-secC-q3b-art':
+        'Image of a sinister grinning yellow face with a red cape rising out of a'
+        ' laptop against a purple and gold sky, a FOTOSEARCH watermark across it.',
+    'technology-2011-OL-paper-secC-q3c-art':
+        'Photograph of the inside of a network cabinet crowded with tangled red, '
+        'green and yellow cables plugged into a panel.',
+    'technology-2011-OL-paper-secC-q3d-art':
+        'Photograph of a silver and black Kodak digital camera with a large zoom '
+        'lens.',
+    'technology-2011-OL-paper-secC-q4a-art':
+        'Photograph of a folded copy of the Irish Independent newspaper, FREE '
+        'FLIGHTS on its front, and a photograph of an offshore oil rig standing '
+        'on yellow legs in the sea.',
+    'technology-2011-OL-paper-secC-q4b-art':
+        'Bar chart of reasons for poor reviews, five green bars labelled '
+        'Expensive, Location, Quality of food, Slow service and Staff unfriendly '
+        'against a Quantity axis from 0 to 12, with a blue line of cumulative '
+        'percentage on a right-hand axis from 0% to 120%; a legend reads Quantity'
+        ' and Cumu. %.',
+    'technology-2011-OL-paper-secC-q4c-art':
+        'The SuperValu logo: the word SuperValu in white on a dark red panel, '
+        'with the line Real Food, Real People.',
+    'technology-2011-OL-paper-secC-q4d-art':
+        'Photograph of a blue Toyota concept car, a rounded hatchback with a long'
+        ' glass roof and HYBRID on its front, on a pale studio background.',
+    'technology-2011-OL-paper-secC-q5a-art':
+        'Table with columns Product, Material Classification and Material: Kite, '
+        'Fabric, blank; Jewellery, blank, Gold; Kitchen Table, Hardwood, blank; '
+        'Washing up Liquid Bottle, blank, Polyethylene.',
+    'technology-2011-OL-paper-secC-q5b-art':
+        '3D graphic of a modern chair: a one-piece curved red seat shell on four '
+        'thin silver legs joined by cross rails, a grey shadow beneath it.',
+    'technology-2011-OL-paper-secC-q5d-art':
+        'Photographs of the parts of an artificial hip joint, a polished metal '
+        'ball on a tapered stem beside smaller parts; and an URGENT RECALL NOTICE'
+        ' from DePuy beside a blue X-ray-style image of a hip, the joint marked '
+        'in red.',
+})
+
 REJECTED = {
     'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
     'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',

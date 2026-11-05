@@ -195,6 +195,126 @@
   ]
  },
  {
+  "file": "technology-2011-OL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two lever diagrams, each a green beam with a black load block, a red force arrow and a blue triangle under the beam. A: the triangle under the right-hand end, the block in the middle, the arrow pushing up at the left-hand end. B: the triangle near the middle, the block at the right-hand end, the arrow pushing down at the left-hand end.",
+  "questionRef": "2011 OL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   362,
+   580,
+   524,
+   772
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "3D rendering of a green acrylic iPhone holder: a flat upright back plate with a shaped side piece standing out from it at right angles, the side piece cut with a round hole and curved notches.",
+  "questionRef": "2011 OL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   372,
+   103,
+   525,
+   283
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of two meshing steel gear parts: a horizontal shaft with angled ridges running round it across the top, engaged with the teeth of a large round gear with a keyed centre hole below; the letter A is printed at the left.",
+  "questionRef": "2011 OL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   372,
+   353,
+   523,
+   508
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Exploded line drawing of an assembly: a round domed base with a threaded boss at its centre, and above it, spaced out on a vertical line, a small nut, a washer and a short cylindrical cap.",
+  "questionRef": "2011 OL Section A Q12",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   101,
+   562,
+   260,
+   777
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit symbol: two parallel plates between two leads, the left plate an open white rectangle marked + and the right plate filled solid black.",
+  "questionRef": "2011 OL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   476,
+   232,
+   542,
+   270
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Incomplete circuit diagram: a battery on the left, a switch on the top rail, a resistor above an LED on the first branch, and a transistor on the right whose base is fed through a resistor; gaps are marked A on the middle branch above the base resistor, B below it down to the bottom rail, and C between the top rail and the transistor.",
+  "questionRef": "2011 OL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   389,
+   318,
+   564,
+   436
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a black robotic humanoid arm reaching up to the right from a mount at its elbow; an orange line labelled 0.3M runs from the elbow to the hand, and an arrow labelled 30 N points at the hand.",
+  "questionRef": "2011 OL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   30,
+   259,
+   152,
+   400
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q5a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Table with columns Product, Material Classification and Material: Kite, Fabric, blank; Jewellery, blank, Gold; Kitchen Table, Hardwood, blank; Washing up Liquid Bottle, blank, Polyethylene.",
+  "questionRef": "2011 OL Section C Q5(a)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   104,
+   127,
+   508,
+   230
+  ]
+ },
+ {
   "file": "technology-2012-HL-paper-secA-q6-art.png",
   "kind": "figure",
   "truncated": false,
@@ -10740,6 +10860,471 @@
   ]
  },
  {
+  "file": "technology-2011-OL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a black and silver mobile phone branded Anycall, its screen lit, a round silver navigation pad below it between green and red call keys.",
+  "questionRef": "2011 OL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   393,
+   78,
+   531,
+   197
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of two workers in hi-vis vests pouring wet concrete from a chute onto a grid of steel mesh laid on the ground, a lorry and fencing behind them.",
+  "questionRef": "2011 OL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   90,
+   316,
+   225,
+   418
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A truth table headed Switch A, Switch B and Light Bulb, its first row printed 0, 0, 0 and three empty rows below; and a drawing of a hall stairway with a light at the top, labelled Light bulb, and a switch at the top and at the bottom of the stairs, labelled Light switches.",
+  "questionRef": "2011 OL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   88,
+   570,
+   521,
+   775
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "3D rendering of a storage unit: curved yellow upright panels pierced with round holes, standing on a curved blue base, an arrow labelled A pointing at the unit from its lower left.",
+  "questionRef": "2011 OL Section A Q4",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   88,
+   69,
+   248,
+   224
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Cutaway rendering of the Chilean rescue pod: a tall silver cylindrical capsule with a tapered base, a mesh door panel swung open on its left and its inside showing orange and red panels above green cylinders.",
+  "questionRef": "2011 OL Section A Q5",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   414,
+   316,
+   519,
+   528
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A sample Bord Gáis Energy electricity bill headed your electricity bill, addressed to Mr Sam Sample, with a meter readings table, a list of charges and an Invoice Total of 150.82.",
+  "questionRef": "2011 OL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   84,
+   84,
+   230,
+   274
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of five thin, see-through acrylic sheets fanned out one above another, their edges glowing.",
+  "questionRef": "2011 OL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   378,
+   362,
+   530,
+   519
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A label inside a thin black frame: the words working with the Carbon Trust above a bold black C-shaped mark with an arrow shape inside it, the figure 100g beside it and CO2 below.",
+  "questionRef": "2011 OL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   409,
+   580,
+   531,
+   730
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secB-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the Faraday induction torch: a clear tube with a black grip and black end caps, a copper coil visible inside, a double-headed red arrow and the words SHAKE to CHARGE printed beneath it.",
+  "questionRef": "2011 OL Section B Q2(a)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   25,
+   128,
+   158,
+   218
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secB-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Gantt chart, months Jan to Jun across the top and 1st Task to 5th Task down the left, each task a coloured horizontal bar, the bars starting later from top to bottom, the 2nd and 3rd overlapping in time.",
+  "questionRef": "2011 OL Section B Q2(c)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   388,
+   490,
+   561,
+   595
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secB-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an offshore wind farm: rows of tall white three-bladed wind turbines standing in grey-blue sea, fading into the distance, a white wake in the foreground.",
+  "questionRef": "2011 OL Section B Q2(d)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   36,
+   676,
+   146,
+   793
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secB-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendering of the moisture sensor: a green box-shaped housing with a red ON/OFF button, a pattern of small holes and a red light on top, MOISTURE DETECTOR printed on its sloping front and two long brass probes sticking out; arrows label the Housing and the LED.",
+  "questionRef": "2011 OL Section B Q3(a)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   325,
+   56,
+   576,
+   246
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secB-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of an iPod nano in a clear purple case printed with a swirling pattern, seen from the front with its screen menu and click wheel, and from the back with the word iPod showing through.",
+  "questionRef": "2011 OL Section B Q3(c)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   396,
+   524,
+   500,
+   620
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secB-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A yellow triangular warning sign with a thick black border and a black exclamation mark.",
+  "questionRef": "2011 OL Section B Q3(d)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   56,
+   708,
+   145,
+   786
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q1a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of Fluke, a white, rounded, torpedo-shaped diving robot with a camera lens in its nose, against a dark blue background.",
+  "questionRef": "2011 OL Section C Q1(a)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   456,
+   84,
+   570,
+   167
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The start of a flowchart: a green rounded box labelled Start, with an arrow leading down from it.",
+  "questionRef": "2011 OL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   100,
+   516,
+   183,
+   573
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a dentist's drill head against a dark background, a fine lit spray at its tip; and a pneumatic symbol labelled A: a square box with a line through it, holding two parallel paths, the upper two inward-curving arcs crossed by a diagonal arrow, the lower a small circle against a V-shaped seat.",
+  "questionRef": "2011 OL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   248,
+   633,
+   541,
+   760
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a model railroad level crossing: a short section of track on a black base, a red and white striped barrier arm and a warning light post on each side.",
+  "questionRef": "2011 OL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   441,
+   70,
+   568,
+   171
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit diagram: a 6V rail along the top through a switch and a 0V rail along the bottom; a variable resistor above a push switch, their junction feeding a resistor into the base of transistor B; above the transistor a relay coil with component A connected across it; on the right, terminals 0V and 12V wired through the relay's two changeover contacts, joined by a dashed line, to a motor M.",
+  "questionRef": "2011 OL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   304,
+   244,
+   562,
+   445
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a small black 555 timer chip with bent silver legs, LM555CN and a maker's logo printed on its top.",
+  "questionRef": "2011 OL Section C Q2(c)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   56,
+   509,
+   126,
+   582
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a black plastic socket with two rows of four holes and metal pins underneath, captioned Socket.",
+  "questionRef": "2011 OL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   434,
+   721,
+   541,
+   787
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an HP desktop computer: a slim black and silver tower, a flat-screen monitor, a keyboard and a mouse.",
+  "questionRef": "2011 OL Section C Q3(a)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   449,
+   56,
+   584,
+   150
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Image of a sinister grinning yellow face with a red cape rising out of a laptop against a purple and gold sky, a FOTOSEARCH watermark across it.",
+  "questionRef": "2011 OL Section C Q3(b)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   68,
+   214,
+   172,
+   352
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the inside of a network cabinet crowded with tangled red, green and yellow cables plugged into a panel.",
+  "questionRef": "2011 OL Section C Q3(c)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   441,
+   410,
+   559,
+   499
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a silver and black Kodak digital camera with a large zoom lens.",
+  "questionRef": "2011 OL Section C Q3(d)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   70,
+   651,
+   197,
+   769
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q4a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a folded copy of the Irish Independent newspaper, FREE FLIGHTS on its front, and a photograph of an offshore oil rig standing on yellow legs in the sea.",
+  "questionRef": "2011 OL Section C Q4(a)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   379,
+   109,
+   548,
+   186
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Bar chart of reasons for poor reviews, five green bars labelled Expensive, Location, Quality of food, Slow service and Staff unfriendly against a Quantity axis from 0 to 12, with a blue line of cumulative percentage on a right-hand axis from 0% to 120%; a legend reads Quantity and Cumu. %.",
+  "questionRef": "2011 OL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   367,
+   231,
+   584,
+   381
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The SuperValu logo: the word SuperValu in white on a dark red panel, with the line Real Food, Real People.",
+  "questionRef": "2011 OL Section C Q4(c)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   30,
+   506,
+   165,
+   569
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a blue Toyota concept car, a rounded hatchback with a long glass roof and HYBRID on its front, on a pale studio background.",
+  "questionRef": "2011 OL Section C Q4(d)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   419,
+   671,
+   555,
+   774
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "3D graphic of a modern chair: a one-piece curved red seat shell on four thin silver legs joined by cross rails, a grey shadow beneath it.",
+  "questionRef": "2011 OL Section C Q5(b)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   401,
+   311,
+   540,
+   450
+  ]
+ },
+ {
+  "file": "technology-2011-OL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of the parts of an artificial hip joint, a polished metal ball on a tapered stem beside smaller parts; and an URGENT RECALL NOTICE from DePuy beside a blue X-ray-style image of a hip, the joint marked in red.",
+  "questionRef": "2011 OL Section C Q5(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   42,
+   637,
+   146,
+   790
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -13975,5 +14560,101 @@
   "description": "The marking scheme's own sketch for 2011 HL Section C 5(b)(ii), as the State Examinations Commission printed it: an injection moulding machine, labelled feeder hopper, heaters, screw moves to push polymer into mould, mould, tie bar and water cooling channels.",
   "solution": true,
   "questionRef": "2011 HL Section C Q5(b)"
+ },
+ {
+  "file": "technology-2011-OL-scheme-secA-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer for 2011 OL Section A Q3, as the State Examinations Commission printed it: the OR gate symbol drawn in the answer box, captioned OR gate, and the completed truth table, Switch A, Switch B, Light Bulb: 0 0 0, 0 1 1, 1 0 1, 1 1 1.",
+  "solution": true,
+  "questionRef": "2011 OL Section A Q3"
+ },
+ {
+  "file": "technology-2011-OL-scheme-secA-q4.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own 2D sketch for 2011 OL Section A Q4, as the State Examinations Commission printed it: the storage unit seen in the direction of arrow A, two tall outer sides joined across the top by a shallow curve, two thin upright dividers between them, a rail across the bottom and a wider base plate beneath.",
+  "solution": true,
+  "questionRef": "2011 OL Section A Q4"
+ },
+ {
+  "file": "technology-2011-OL-scheme-secB-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2011 OL Section B 2(b)(ii), as the State Examinations Commission printed it: an electrolytic capacitor, a purple cylinder printed dubilier 470uF(M)35V, with two wire legs, the longer one marked + and the shorter one marked -.",
+  "solution": true,
+  "questionRef": "2011 OL Section B Q2(b)"
+ },
+ {
+  "file": "technology-2011-OL-scheme-secB-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own drawings for 2011 OL Section B 3(b), as the State Examinations Commission printed them: (i) the surface development of the housing, a central rectangle with a side panel on each of its four edges and a narrow glue flap on the right, the fold lines drawn as chain lines; (iii) the moisture sensor circuit completed, A a Variable Resistor above the base resistor's junction, B the Probes below it down to 0V, and C a Buzzer between the top rail and the transistor's collector.",
+  "solution": true,
+  "questionRef": "2011 OL Section B Q3(b)"
+ },
+ {
+  "file": "technology-2011-OL-scheme-secB-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own Work Breakdown Structure for 2011 OL Section B 3(d)(i), as the State Examinations Commission printed it: Make Mould to Vacuum Form to Housing; Cut Bars to Thread Bars to Probes; Populate components to Solder Circuit to Circuit; Housing, Probes and Circuit all joined to Assembly.",
+  "solution": true,
+  "questionRef": "2011 OL Section B Q3(d)"
+ },
+ {
+  "file": "technology-2011-OL-scheme-secC-q1c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own flowchart for 2011 OL Section C 1(c)(ii), as the State Examinations Commission printed it: Start, LED on, Wait 3, LED off, Wait 2, with a line from the bottom back up to LED on.",
+  "solution": true,
+  "questionRef": "2011 OL Section C Q1(c)"
+ },
+ {
+  "file": "technology-2011-OL-scheme-secC-q2a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2011 OL Section C 2(a)(i), as the State Examinations Commission printed it: a black microswitch limit switch with a metal lever along its top and three terminals below, labelled NC, NO and CO.",
+  "solution": true,
+  "questionRef": "2011 OL Section C Q2(a)"
+ },
+ {
+  "file": "technology-2011-OL-scheme-secC-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own redrawn motor section for 2011 OL Section C 2(b)(iii), as the State Examinations Commission printed it: the relay's two changeover contacts, linked by a dashed line to the relay coil, feeding the motor M, with an alarm buzzer wired across the motor's two leads, in parallel with it.",
+  "solution": true,
+  "questionRef": "2011 OL Section C Q2(b)"
+ },
+ {
+  "file": "technology-2011-OL-scheme-secC-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2011 OL Section C 2(c)(ii), as the State Examinations Commission printed it: the 555 chip drawn as a box, pins 1 to 4 down its left side labelled GROUND, TRIGGER, OUTPUT and RESET, and pins 8 to 5 down its right side labelled +Vcc, DISCHARGE, THRESHOLD and CONTROL VOLTAGE.",
+  "solution": true,
+  "questionRef": "2011 OL Section C Q2(c)"
+ },
+ {
+  "file": "technology-2011-OL-scheme-secC-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2011 OL Section C 3(c)(i), as the State Examinations Commission printed it: a star network, desktop computers, laptops, a server and a printer arranged in a ring, each joined by its own cable to one central box.",
+  "solution": true,
+  "questionRef": "2011 OL Section C Q3(c)"
+ },
+ {
+  "file": "technology-2011-OL-scheme-secC-q5a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own completed table for 2011 OL Section C 5(a)(i), as the State Examinations Commission printed it, columns Product, Material Classification, Material: Kite, Fabric, Polyester, Nylon; Jewellery, Non-Ferrous metal, Gold; Kitchen Table, Hardwood, Oak; Washing up Liquid Bottle, Thermoplastic, Polyethylene.",
+  "solution": true,
+  "questionRef": "2011 OL Section C Q5(a)"
+ },
+ {
+  "file": "technology-2011-OL-scheme-secC-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own diagram for 2011 OL Section C 5(b)(ii), as the State Examinations Commission printed it: an injection moulding machine in section, granules in a yellow hopper dropping into a barrel with a screw, the plastic turning orange and red as it is heated and forced into a two-part mould holding a red shell, an OPEN arrow under the mould and the finished shell released at the right; leader lines numbered 1 to 6 point at the parts, with no key printed.",
+  "solution": true,
+  "questionRef": "2011 OL Section C Q5(b)"
  }
 ]

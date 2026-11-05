@@ -328,6 +328,14 @@ TOPIC_OVERRIDES = {
     'tech-2013-ol-b2c': 'tech-core-project',       # work breakdown structure, Gantt chart
     'tech-2013-ol-b3a': 'tech-core-materials',     # modern materials in sports equipment
     'tech-2013-ol-b3d': 'tech-core-project',       # cause and effect diagram (quality)
+    # 2011 Ordinary.
+    'tech-2011-ol-a2': 'tech-core-materials',      # concrete, a composite
+    'tech-2011-ol-a3': 'tech-core-energy',         # OR gate, truth table
+    'tech-2011-ol-a5': 'tech-core-design',         # design questions for the rescue pod
+    'tech-2011-ol-b2a': 'tech-core-materials',     # the torch body's material
+    'tech-2011-ol-b3a': 'tech-core-materials',     # vacuum formed housing, shell structure
+    'tech-2011-ol-b3c': 'tech-core-graphics',      # text and logos on the housing
+    'tech-2011-ol-b3d': 'tech-core-project',       # WBS, health and safety
     # 2011 Higher.
     'tech-2011-hl-a2': 'tech-core-materials',      # workshop safety, MDF and soldering
     'tech-2011-hl-a6-i': 'tech-core-materials',    # smart materials

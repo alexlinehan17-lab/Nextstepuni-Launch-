@@ -1820,6 +1820,12 @@ LISTED_STEPS = {
     # 2011 Higher Q3, scheme page 4: the technology named, then two
     # advantages, one per line.
     (2011, 'hl', 'A', 3, None, None),
+    # 2011 Ordinary Q2 and Q10, scheme pages 4 and 7: the products and the
+    # four steps, one per line.
+    (2011, 'ol', 'A', 2, None, None),
+    (2011, 'ol', 'A', 10, None, None),
+    # Q6, scheme page 5: each graphic's class and example, one per line.
+    (2011, 'ol', 'A', 6, None, None),
 }
 
 # Scheme lines that reuse the ask's own words and are nonetheless a marking
@@ -1829,6 +1835,10 @@ KEEP_LINES = {
     # 2013 Higher Q15, scheme page 9: the two criteria the sketch is marked
     # on, "Pictorial View" and "Two suitable graphic techniques".
     (2013, 'hl', 'A', 15, None, None): ('Pictorial View',),
+    # 2011 Ordinary Q6, scheme page 5: graphic A's class; Option 5(b)(i),
+    # page 14: the seat's material, under the ask's own bullet.
+    (2011, 'ol', 'A', 6, None, None): ('A: Class 2',),
+    (2011, 'ol', 'C', 5, 'b', None): ('\u2022 the seat - Polypropylene',),
 }
 
 # Scheme answers the printed scheme leaves unfinished, mid-sentence, each read
@@ -3125,6 +3135,24 @@ MD_LINE_FIX[(2011, 'hl')] = [
     (r'^from under These can be hidden$', 'These can be hidden under the mouse \u2018feet\u2019.'),
     (r'^the mouse under the mouse \u2018feet\u2019\.$', ''),
 ]
+MD_LINE_FIX[(2011, 'ol')] = [
+    # Q2(i) and Q10: an answer broken across lines, joined.
+    (r'^(to form a versatile strong building material \(Sand/)$', '\\1 Cement /Gravel).'),
+    (r'^Cement /Gravel\)\.$', ''),
+    (r'^(4: File /Sand/Polish edges/)$', '\\1 Glue using Liquid Solvent Cement etc.'),
+    (r'^Glue using Liquid Solvent Cement etc\.$', ''),
+    # 2(c)(i): the question's bullets and the answers beside them, welded line
+    # by line; and the ask, reprinted after the answers.
+    (r'^\u2022\uf020? staying within budget (Satisfying the brief: meeting specifications)$', '\\1'),
+    (r'^\u2022 meeting deadlines\. (Staying within budget: Cost considerations)$', '\\1'),
+    (r'^Describe two of the objectives outlined above\.$', ''),
+    # Option 2(a)(i) and 4(b)(ii): the scheme's own reprints of the ask,
+    # worded apart from the paper ("Limits switches", "raised by"); the heads stay.
+    (r'^\(i\) Limits switches could be used to stop the barrier when$', '(i)'),
+    (r'^it reaches its horizontal and vertical limits\.$', ''),
+    (r'^Identify the two most critical issues raised by the$', ''),
+    (r'^reviewers\.$', ''),
+]
 MD_LINE_FIX[(2014, 'hl')] = [
     # 1(a)(ii): two columns of notes welded line by line; each column's
     # words, in order, on a line of its own.
@@ -4050,6 +4078,153 @@ LABEL_ZONES.setdefault((2011, 'hl'), []).extend([
     (23, (55, 455, 300, 615)),  # 5(d)'s bar chart reprinted
 ])
 
+# 2011 Ordinary. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    'technology-2011-OL-paper-secA-q1-art': ('014', 1, (393, 78, 531, 197)),
+    'technology-2011-OL-paper-secA-q2-art': ('014', 1, (90, 316, 225, 418)),
+    'technology-2011-OL-paper-secA-q3-art': ('014', 1, (88, 570, 521, 775)),
+    'technology-2011-OL-paper-secA-q4-art': ('014', 2, (88, 69, 248, 224)),
+    'technology-2011-OL-paper-secA-q5-art': ('014', 2, (414, 316, 519, 528)),
+    'technology-2011-OL-paper-secA-q6-art': ('014', 2, (362, 580, 524, 772)),
+    'technology-2011-OL-paper-secA-q7-art': ('014', 3, (84, 84, 230, 274)),
+    'technology-2011-OL-paper-secA-q8-art': ('014', 3, (378, 362, 530, 519)),
+    'technology-2011-OL-paper-secA-q9-art': ('014', 3, (409, 580, 531, 730)),
+    'technology-2011-OL-paper-secA-q10-art': ('014', 4, (372, 103, 525, 283)),
+    'technology-2011-OL-paper-secA-q11-art': ('014', 4, (372, 353, 523, 508)),
+    'technology-2011-OL-paper-secA-q12-art': ('014', 4, (101, 562, 260, 777)),
+    'technology-2011-OL-paper-secB-q2a-art': ('015', 1, (25, 128, 158, 218)),
+    'technology-2011-OL-paper-secB-q2b-art': ('015', 1, (476, 232, 542, 270)),
+    'technology-2011-OL-paper-secB-q2c-art': ('015', 1, (388, 490, 561, 595)),
+    'technology-2011-OL-paper-secB-q2d-art': ('015', 1, (36, 676, 146, 793)),
+    'technology-2011-OL-paper-secB-q3a-art': ('015', 2, (325, 56, 576, 246)),
+    'technology-2011-OL-paper-secB-q3b-art': ('015', 2, (389, 318, 564, 436)),
+    'technology-2011-OL-paper-secB-q3c-art': ('015', 2, (396, 524, 500, 620)),
+    'technology-2011-OL-paper-secB-q3d-art': ('015', 2, (56, 708, 145, 786)),
+    'technology-2011-OL-paper-secC-q1a-art': ('015', 3, (456, 84, 570, 167)),
+    'technology-2011-OL-paper-secC-q1b-art': ('015', 3, (30, 259, 152, 400)),
+    'technology-2011-OL-paper-secC-q1c-art': ('015', 3, (100, 516, 183, 573)),
+    'technology-2011-OL-paper-secC-q1d-art': ('015', 3, (248, 633, 541, 760)),
+    'technology-2011-OL-paper-secC-q2a-art': ('015', 4, (441, 70, 568, 171)),
+    'technology-2011-OL-paper-secC-q2b-art': ('015', 4, (304, 244, 562, 445)),
+    'technology-2011-OL-paper-secC-q2c-art': ('015', 4, (56, 509, 126, 582)),
+    'technology-2011-OL-paper-secC-q2d-art': ('015', 4, (434, 721, 541, 787)),
+    'technology-2011-OL-paper-secC-q3a-art': ('015', 5, (449, 56, 584, 150)),
+    'technology-2011-OL-paper-secC-q3b-art': ('015', 5, (68, 214, 172, 352)),
+    'technology-2011-OL-paper-secC-q3c-art': ('015', 5, (441, 410, 559, 499)),
+    'technology-2011-OL-paper-secC-q3d-art': ('015', 5, (70, 651, 197, 769)),
+    'technology-2011-OL-paper-secC-q4a-art': ('015', 6, (379, 109, 548, 186)),
+    'technology-2011-OL-paper-secC-q4b-art': ('015', 6, (367, 231, 584, 381)),
+    'technology-2011-OL-paper-secC-q4c-art': ('015', 6, (30, 506, 165, 569)),
+    'technology-2011-OL-paper-secC-q4d-art': ('015', 6, (419, 671, 555, 774)),
+    'technology-2011-OL-paper-secC-q5a-art': ('015', 7, (104, 127, 508, 230)),
+    'technology-2011-OL-paper-secC-q5b-art': ('015', 7, (401, 311, 540, 450)),
+    'technology-2011-OL-paper-secC-q5d-art': ('015', 7, (42, 637, 146, 790)),
+})
+WHITEOUT.update({
+    'technology-2011-OL-paper-secA-q3-art': [(86, 568, 381, 668)],
+    'technology-2011-OL-paper-secC-q1d-art': [(246, 631, 452, 718)],
+    'technology-2011-OL-paper-secB-q3a-art': [(324, 149, 338, 165), (324, 187, 383, 203)],
+    'technology-2011-OL-scheme-secA-q3': [(84, 568, 266, 616), (84, 649, 286, 668)],
+    'technology-2011-OL-paper-secA-q10-art': [(517, 276, 526, 286)],
+})
+SOLUTIONS.update({
+    'technology-2011-OL-scheme-secA-q3': (3, (86, 570, 359, 774),
+        "The marking scheme's own answer for 2011 OL Section A Q3, as the State "
+        'Examinations Commission printed it: the OR gate symbol drawn in the '
+        'answer box, captioned OR gate, and the completed truth table, Switch A, '
+        'Switch B, Light Bulb: 0 0 0, 0 1 1, 1 0 1, 1 1 1.'),
+    'technology-2011-OL-scheme-secA-q4': (4, (259, 104, 375, 207),
+        "The marking scheme's own 2D sketch for 2011 OL Section A Q4, as the "
+        'State Examinations Commission printed it: the storage unit seen in the '
+        'direction of arrow A, two tall outer sides joined across the top by a '
+        'shallow curve, two thin upright dividers between them, a rail across the'
+        ' bottom and a wider base plate beneath.'),
+    'technology-2011-OL-scheme-secB-q2b': (8, (417, 278, 567, 327),
+        "The marking scheme's own picture for 2011 OL Section B 2(b)(ii), as the "
+        'State Examinations Commission printed it: an electrolytic capacitor, a '
+        'purple cylinder printed dubilier 470uF(M)35V, with two wire legs, the '
+        'longer one marked + and the shorter one marked -.'),
+    'technology-2011-OL-scheme-secB-q3b': (9, (389, 245, 578, 462),
+        "The marking scheme's own drawings for 2011 OL Section B 3(b), as the "
+        'State Examinations Commission printed them: (i) the surface development '
+        'of the housing, a central rectangle with a side panel on each of its '
+        'four edges and a narrow glue flap on the right, the fold lines drawn as '
+        'chain lines; (iii) the moisture sensor circuit completed, A a Variable '
+        "Resistor above the base resistor's junction, B the Probes below it down "
+        "to 0V, and C a Buzzer between the top rail and the transistor's "
+        'collector.'),
+    'technology-2011-OL-scheme-secB-q3d': (9, (389, 630, 569, 694),
+        "The marking scheme's own Work Breakdown Structure for 2011 OL Section B "
+        '3(d)(i), as the State Examinations Commission printed it: Make Mould to '
+        'Vacuum Form to Housing; Cut Bars to Thread Bars to Probes; Populate '
+        'components to Solder Circuit to Circuit; Housing, Probes and Circuit all'
+        ' joined to Assembly.'),
+    'technology-2011-OL-scheme-secC-q1c': (10, (452, 482, 560, 615),
+        "The marking scheme's own flowchart for 2011 OL Section C 1(c)(ii), as "
+        'the State Examinations Commission printed it: Start, LED on, Wait 3, LED'
+        ' off, Wait 2, with a line from the bottom back up to LED on.'),
+    'technology-2011-OL-scheme-secC-q2a': (11, (378, 73, 474, 150),
+        "The marking scheme's own picture for 2011 OL Section C 2(a)(i), as the "
+        'State Examinations Commission printed it: a black microswitch limit '
+        'switch with a metal lever along its top and three terminals below, '
+        'labelled NC, NO and CO.'),
+    'technology-2011-OL-scheme-secC-q2b': (11, (403, 242, 578, 447),
+        "The marking scheme's own redrawn motor section for 2011 OL Section C "
+        "2(b)(iii), as the State Examinations Commission printed it: the relay's "
+        'two changeover contacts, linked by a dashed line to the relay coil, '
+        "feeding the motor M, with an alarm buzzer wired across the motor's two "
+        'leads, in parallel with it.'),
+    'technology-2011-OL-scheme-secC-q2c': (11, (396, 556, 510, 634),
+        "The marking scheme's own sketch for 2011 OL Section C 2(c)(ii), as the "
+        'State Examinations Commission printed it: the 555 chip drawn as a box, '
+        'pins 1 to 4 down its left side labelled GROUND, TRIGGER, OUTPUT and '
+        'RESET, and pins 8 to 5 down its right side labelled +Vcc, DISCHARGE, '
+        'THRESHOLD and CONTROL VOLTAGE.'),
+    'technology-2011-OL-scheme-secC-q3c': (12, (474, 477, 567, 557),
+        "The marking scheme's own sketch for 2011 OL Section C 3(c)(i), as the "
+        'State Examinations Commission printed it: a star network, desktop '
+        'computers, laptops, a server and a printer arranged in a ring, each '
+        'joined by its own cable to one central box.'),
+    'technology-2011-OL-scheme-secC-q5a': (14, (128, 114, 504, 223),
+        "The marking scheme's own completed table for 2011 OL Section C 5(a)(i), "
+        'as the State Examinations Commission printed it, columns Product, '
+        'Material Classification, Material: Kite, Fabric, Polyester, Nylon; '
+        'Jewellery, Non-Ferrous metal, Gold; Kitchen Table, Hardwood, Oak; '
+        'Washing up Liquid Bottle, Thermoplastic, Polyethylene.'),
+    'technology-2011-OL-scheme-secC-q5b': (14, (429, 361, 550, 425),
+        "The marking scheme's own diagram for 2011 OL Section C 5(b)(ii), as the "
+        'State Examinations Commission printed it: an injection moulding machine '
+        'in section, granules in a yellow hopper dropping into a barrel with a '
+        'screw, the plastic turning orange and red as it is heated and forced '
+        'into a two-part mould holding a red shell, an OPEN arrow under the mould'
+        ' and the finished shell released at the right; leader lines numbered 1 '
+        'to 6 point at the parts, with no key printed.'),
+})
+ASK_ONLY.update({
+    'technology-2011-OL-scheme-secA-q3',
+})
+# Q3: the crop's left half is the reprinted ask, blanked; only the gate and
+# the table are lettering, so the ask stays in the text the pairing reads.
+SOLUTION_NOT_ZONE.update({
+    'technology-2011-OL-scheme-secA-q3',
+})
+FIGURE_SHARED.update({
+    'technology-2011-OL-paper-secC-q5c-art': 'technology-2011-OL-paper-secC-q5b-art',
+})
+LABEL_ZONES.setdefault((2011, 'ol'), []).extend([
+    (3, (286, 570, 360, 650)),  # Q3's OR gate and caption
+    (3, (84, 672, 262, 772)),   # Q3's truth table
+    (3, (386, 571, 521, 713)),
+    (4, (88, 69, 248, 225)),
+    (4, (352, 575, 522, 755)),
+    (6, (372, 352, 523, 509)),
+    (8, (14, 131, 150, 218)),
+    (8, (420, 520, 563, 606)),
+    (9, (390, 59, 577, 225)),
+    (10, (25, 278, 111, 382)),
+    (10, (83, 735, 152, 796)),
+])
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -4087,6 +4262,12 @@ ASK_ZONES = {
 # pattern: (year, level, section, q, letter, roman) -> [regex, ...]. Each one
 # was read off the rendered page.
 ASK_STRIP = {
+    # 2011 Ordinary: answer-box labels and the arrow letter in the asks.
+    (2011, 'ol', 'A', 3, None, None): [r'\s+Light bulb OR gate$'],
+    (2011, 'ol', 'A', 4, None, None): [r'^A\s+'],
+    (2011, 'ol', 'A', 6, None, None): [r' A: B:(?= Give)'],
+    (2011, 'ol', 'A', 7, None, None): [r' kWh:(?= On a monthly)'],
+    (2011, 'ol', 'A', 11, None, None): [r' A:(?= Outline)', r' A(?= Give)', r'\s+\u2014+$'],
     # 2011 Higher: answer-box labels and picture lettering read into asks and
     # stems.
     (2011, 'hl', 'A', 1, None, None): [r'\s+\(i\)$'],

@@ -458,8 +458,10 @@ def reflow(points, scheme_norm=''):
             # output- with increased data-transfer speeds...", "charging - can
             # carry more power" (2019 Ordinary 3(b)(ii)) -- open points of their
             # own, whatever case they start in.
-            num = re.match(r'(\d)\.\s', text)
-            own_point = bool((num and re.match(rf'{int(num.group(1)) - 1}\.\s', prev))
+            # ("1: Mark out shape...", 2011 Ordinary Q10, numbers its steps
+            # with a colon.)
+            num = re.match(r'(\d)[.:]\s', text)
+            own_point = bool((num and re.match(rf'{int(num.group(1)) - 1}[.:]\s', prev))
                              # the dash set hard against the term, or one word
                              # and a spaced hyphen: a dash with space before it
                              # is the sentence's own ("inserted when cool – it").
