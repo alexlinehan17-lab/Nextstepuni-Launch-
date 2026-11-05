@@ -745,6 +745,13 @@ def _unweld(block, anchors):
 # level) -> {file name: pages}; strip_set_lines() reads those pages instead.
 STRIP_SET_PAGES = {
     ('biology', 2011, 'ol'): {'2011-ol-paper.pdf': (11, 12, 13)},
+    # 2013 OL Engineering page 5 sets Q6(b) and Q6(c)'s lead-in, "(c) A
+    # turning process used on a centre lathe is shown below.", in ONE text
+    # block that starts above Q6(b)'s four photograph captions, so the
+    # captions "(i) (ii) (iii) (iv)" were read after (c) and filed as (c)'s
+    # romans (census Q6(c)(iv), a part the paper does not print). Read line by
+    # line, top to bottom, the captions fall under (b) where they are printed.
+    ('engineering', 2013, 'ol'): {'2013-ol-paper.pdf': (5,)},
 }
 
 

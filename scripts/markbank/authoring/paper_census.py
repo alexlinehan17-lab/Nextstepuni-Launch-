@@ -709,6 +709,16 @@ SHORT_ASKS = {
     ('engineering', 2013, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism photographs, '
                                                    'under "Name and describe the operation of any one of the mechanisms '
                                                    'shown."'),
+    # 2013 OL, each opened on its page (2026-11-05).
+    ('engineering', 2013, 'ol', 'Q2(a)(ii)'): ('Brass,', 'p3: the alloy "(ii) Brass," in "(i) Stainless steel, (ii) '
+                                                        'Brass, (iii) High speed steel, (iv) Bronze." under "Select any '
+                                                        'three of the metal alloys listed below"'),
+    **{('engineering', 2013, 'ol', f'Q6(b)({r})'): ('', f'p5: the caption "({r})" under the {n} of four lathe-part '
+                                                       'photographs, under "Name any three of the lathe parts shown and '
+                                                       'give one use for each part named."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2013, 'ol', 'Q5(c)(i)'): ('DVDs,', 'p4: the item "(i) DVDs," in "(i) DVDs, (ii) Mobile phones." under '
+                                                       '"Name a plastic used in the manufacture of each of the following:"'),
     # 2015 OL, each opened on its page (2026-11-04).
     **{('engineering', 2015, 'ol', f'Q2(a)({r})'): ('', f'p3: the caption "({r})" over the {n} of three furnace drawings, '
                                                        'under "Name each of the furnaces shown."')
@@ -800,11 +810,11 @@ SHORT_ASKS = {
 
 # A paper whose question marks add up to a different total from its sitting's
 # other years because its FORMAT differs, each total checked on the paper's
-# own question heads. Engineering Ordinary 2014-2019 print Question 1 at
+# own question heads. Engineering Ordinary 2013-2019 print Question 1 at
 # "(65 marks)" and Questions 2-7 at "(45 marks)" (335), where 2021 on print
 # seven questions at 50 (350). The checksum stands down only while the reader
 # sums exactly the printed total.
-PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2014, 2015, 2016, 2017, 2018, 2019)}
+PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2013, 2014, 2015, 2016, 2017, 2018, 2019)}
 
 
 def short_ask_ok(subject, year, level, flag):
@@ -1043,12 +1053,12 @@ TRAILING_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?
 # question's first: 2015 OL Engineering page 3 reads "(d) Name the metals used
 # to produce each of the alloys listed below: (i) Brass, (ii) Solder. Question
 # 3. (45 marks) (a) Explain any two of the following: ..." as one block, and
-# page 4 the same for Question 5; 2014 OL does it for Questions 3 and 5 as
+# page 4 the same for Question 5; 2013 and 2014 OL do it for Questions 3 and 5 as
 # well. Neither head was ever at a block start, both 45s were dropped, and each
 # paper summed to 245 over five questions where it prints 335 over seven.
 # Every head in such a block is read, with the tariff printed straight after
 # it. Keyed by sitting, read for those sittings alone.
-INLINE_HEAD_MARKS = {('engineering', 2014, 'ol'), ('engineering', 2015, 'ol')}
+INLINE_HEAD_MARKS = {('engineering', y, 'ol') for y in (2013, 2014, 2015)}
 INLINE_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?\)', re.I)
 
 
@@ -4044,7 +4054,7 @@ def census_subject(subject):
     for p in papers:
         # A paper in PRINTED_TOTALS has a format of its own, its total checked
         # on its own heads, so it is no evidence about the other years': with
-        # Engineering Ordinary 2014-2019 at 335 and 2021-2026 at 350, counting
+        # Engineering Ordinary 2013-2019 at 335 and 2021-2026 at 350, counting
         # them made the mode a six-six tie, and the tie flagged every 350 paper.
         if p.get('marksSum') and \
                 (subject, p['year'], p['level']) not in PRINTED_TOTALS:
