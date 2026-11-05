@@ -338,19 +338,43 @@ def named_parts(text, marks):
     return [(w.split()[-1], int(n)) for w, n in found]
 
 
-def step_row(row_id, step):
+# A step that names another step by its roman: "Draw plan of horizontal section
+# (identified at (xi)) on AEFG", "Use of points established at (xii) & (xiii)".
+CITES_ROMAN = re.compile(r'\((?:x{0,2}(?:ix|iv|v?i{0,3}))\)')
+
+
+def numbered(steps):
+    """Do this unit's steps need the scheme's own romans to be told apart?
+
+    Where a step cites another by its roman, or the scheme prints the same step
+    twice under no heading (2017 Higher C-4(b) prints "Draw required locus" as
+    (xv) and (xix), once per 60° movement), a step's words alone cannot say
+    which one it is. The roman is printed beside every step in the scheme, so
+    it is lifted with the step's words, and only in such units.
+    """
+    texts = [s.text for s in steps]
+    return (len(set(texts)) != len(texts)
+            or any(CITES_ROMAN.search(t.replace('()', '')) for t in texts))
+
+
+def shown(step, with_roman):
+    return f'({step.roman}) {step.text}' if with_roman else step.text
+
+
+def step_row(row_id, step, with_roman=False):
     """One step as a claim row: a point, or stepped where the step prints parts."""
     named = named_parts(step.text, step.marks)
     if named:
-        return {'id': row_id, 'kind': 'criterion', 'verbatim': step.text,
+        return {'id': row_id, 'kind': 'criterion', 'verbatim': shown(step, with_roman),
                 'marks': step.marks, 'permittedMarks': [0, step.marks],
                 'parts': [{'id': name.lower(), 'verbatim': name, 'marks': n,
                            'permittedMarks': [0, n]} for name, n in named]}
     ladder = sub_ladder(step.text, step.marks)
     if ladder:
-        return {'id': row_id, 'kind': 'criterion', 'verbatim': step.text,
+        return {'id': row_id, 'kind': 'criterion',
+                'verbatim': shown(step, with_roman),
                 'marks': step.marks, 'permittedMarks': ladder}
-    return {'id': row_id, 'kind': 'point', 'verbatim': step.text,
+    return {'id': row_id, 'kind': 'point', 'verbatim': shown(step, with_roman),
             'marks': step.marks}
 
 
@@ -387,24 +411,27 @@ def step_rows(card_id, title, steps, extra=()):
     """
     tail = [{'id': '', 'kind': 'point', 'verbatim': s.text, 'marks': s.marks,
              'contextNote': PRESENTATION_NOTE} for s in extra]
+    with_roman = numbered(steps)
     if len(steps) + len(tail) <= MAX_ROWS:
-        rows = [step_row(f'{card_id}-r{i}', s) for i, s in enumerate(steps, 1)]
+        rows = [step_row(f'{card_id}-r{i}', s, with_roman)
+                for i, s in enumerate(steps, 1)]
     else:
-        rows = [_parts_row(card_id, title, steps)]
+        rows = [_parts_row(card_id, title, steps, with_roman)]
     for row in tail:
         row['id'] = f'{card_id}-r{len(rows) + 1}'
         rows.append(row)
     return rows
 
 
-def _parts_row(card_id, title, steps):
+def _parts_row(card_id, title, steps, with_roman=False):
     total = sum(s.marks for s in steps)
     return {
         'id': f'{card_id}-r1', 'kind': 'criterion', 'verbatim': title,
         'marks': total, 'permittedMarks': [0, total],
         'contextNote': 'The scheme prices this drawing step by step: award '
                        'each step you drew its own marks.',
-        'parts': [{'id': f'step-{i}', 'verbatim': s.text, 'marks': s.marks,
+        'parts': [{'id': f'step-{i}', 'verbatim': shown(s, with_roman),
+                   'marks': s.marks,
                    'permittedMarks': step_ladder(s)}
                   for i, s in enumerate(steps, 1)],
     }
@@ -540,8 +567,19 @@ def split_by_groups(unit):
     """
     groups = []
     for step in unit.steps:
+        # A step printed before the unit's first heading belongs to the whole
+        # unit, not to either section of it: 2016 Higher C-1(a) opens with
+        # "(i) Measure required 10mm distances perp. to pool edge" above its
+        # Embankment and Cutting headings. It is a piece of its own, under the
+        # unit's own printed title. After a heading, an unheaded step still
+        # refuses: nothing printed says where it belongs.
         if not step.group:
-            return None
+            if groups and groups[-1][0] != unit.title:
+                return None
+            if not groups:
+                groups.append((unit.title, []))
+            groups[-1][1].append(step)
+            continue
         if not groups or groups[-1][0] != step.group:
             groups.append((step.group, []))
         groups[-1][1].append(step)
@@ -681,6 +719,11 @@ def author(bind_figures=True):
                 pieces = [(None, unit.marks, unit.steps)]
                 if len(unit.steps) > MAX_STEPS_SHOWN or repeats(unit):
                     split = split_by_groups(unit)
+                    # A step printed twice under no heading at all is told
+                    # apart by its roman, which step_rows then shows.
+                    if not split and len(unit.steps) <= MAX_STEPS_SHOWN \
+                            and numbered(unit.steps):
+                        split = pieces
                     if not split:
                         note('the scheme states the same priced step twice, '
                              'or more than '

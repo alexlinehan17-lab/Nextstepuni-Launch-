@@ -1033,31 +1033,31 @@
    {
     "id": "dcg-2018-hl-b3d-r1",
     "kind": "point",
-    "verbatim": "Draw (and use) horizontal section through C in elevation",
+    "verbatim": "(xi) Draw (and use) horizontal section through C in elevation",
     "marks": 2
    },
    {
     "id": "dcg-2018-hl-b3d-r2",
     "kind": "point",
-    "verbatim": "Draw plan of horizontal section (identified at (xi)) on AEFG",
+    "verbatim": "(xii) Draw plan of horizontal section (identified at (xi)) on AEFG",
     "marks": 1
    },
    {
     "id": "dcg-2018-hl-b3d-r3",
     "kind": "point",
-    "verbatim": "Drawing 55mm arc with centre C, to locate ‘h’ in plan",
+    "verbatim": "(xiii) Drawing 55mm arc with centre C, to locate ‘h’ in plan",
     "marks": 1
    },
    {
     "id": "dcg-2018-hl-b3d-r4",
     "kind": "point",
-    "verbatim": "Draw line ‘Ch’ in plan and elevation",
+    "verbatim": "(xiv) Draw line ‘Ch’ in plan and elevation",
     "marks": 1
    },
    {
     "id": "dcg-2018-hl-b3d-r5",
     "kind": "point",
-    "verbatim": "Drawing and indicating required angle",
+    "verbatim": "(xv) Drawing and indicating required angle",
     "marks": 1
    }
   ],
@@ -26320,25 +26320,25 @@
    {
     "id": "dcg-2025-hl-c1a-2-r1",
     "kind": "point",
-    "verbatim": "Draw parallel lines at 5 mm intervals (to corner)",
+    "verbatim": "(iii) Draw parallel lines at 5 mm intervals (to corner)",
     "marks": 4
    },
    {
     "id": "dcg-2025-hl-c1a-2-r2",
     "kind": "point",
-    "verbatim": "Identify intersections with contours and draw curve",
+    "verbatim": "(iv) Identify intersections with contours and draw curve",
     "marks": 4
    },
    {
     "id": "dcg-2025-hl-c1a-2-r3",
     "kind": "point",
-    "verbatim": "Draw parallel lines at 5 mm intervals (from corner to B)",
+    "verbatim": "(v) Draw parallel lines at 5 mm intervals (from corner to B)",
     "marks": 4
    },
    {
     "id": "dcg-2025-hl-c1a-2-r4",
     "kind": "point",
-    "verbatim": "Identify intersections with contours and draw curve",
+    "verbatim": "(vi) Identify intersections with contours and draw curve",
     "marks": 4
    }
   ],
@@ -27095,37 +27095,37 @@
    {
     "id": "dcg-2025-hl-c4b-r1",
     "kind": "point",
-    "verbatim": "Draw the given diagram (Points A, B, C, D, E, & P)",
+    "verbatim": "(xi) Draw the given diagram (Points A, B, C, D, E, & P)",
     "marks": 8
    },
    {
     "id": "dcg-2025-hl-c4b-r2",
     "kind": "point",
-    "verbatim": "Division of circle into equal parts (12 minimum)",
+    "verbatim": "(xii) Division of circle into equal parts (12 minimum)",
     "marks": 3
    },
    {
     "id": "dcg-2025-hl-c4b-r3",
     "kind": "point",
-    "verbatim": "Draw arc with centre B and radius BC",
+    "verbatim": "(xiii) Draw arc with centre B and radius BC",
     "marks": 3
    },
    {
     "id": "dcg-2025-hl-c4b-r4",
     "kind": "point",
-    "verbatim": "Use of points established at (xii) & arc at (xiii) to determine points on locus",
+    "verbatim": "(xiv) Use of points established at (xii) & arc at (xiii) to determine points on locus",
     "marks": 6
    },
    {
     "id": "dcg-2025-hl-c4b-r5",
     "kind": "point",
-    "verbatim": "Establish turning points of the locus",
+    "verbatim": "(xv) Establish turning points of the locus",
     "marks": 2
    },
    {
     "id": "dcg-2025-hl-c4b-r6",
     "kind": "point",
-    "verbatim": "Draw required locus",
+    "verbatim": "(xvi) Draw required locus",
     "marks": 3
    }
   ],
@@ -29887,25 +29887,25 @@
    {
     "id": "dcg-2026-hl-c1a-2-r1",
     "kind": "point",
-    "verbatim": "Draw parallel arcs at 10 mm intervals",
+    "verbatim": "(iii) Draw parallel arcs at 10 mm intervals",
     "marks": 4
    },
    {
     "id": "dcg-2026-hl-c1a-2-r2",
     "kind": "point",
-    "verbatim": "Identify intersections with contours and draw curve",
+    "verbatim": "(iv) Identify intersections with contours and draw curve",
     "marks": 4
    },
    {
     "id": "dcg-2026-hl-c1a-2-r3",
     "kind": "point",
-    "verbatim": "Draw parallel lines at 10 mm intervals",
+    "verbatim": "(v) Draw parallel lines at 10 mm intervals",
     "marks": 4
    },
    {
     "id": "dcg-2026-hl-c1a-2-r4",
     "kind": "point",
-    "verbatim": "Identify intersections with contours and draw curve",
+    "verbatim": "(vi) Identify intersections with contours and draw curve",
     "marks": 4
    }
   ],
