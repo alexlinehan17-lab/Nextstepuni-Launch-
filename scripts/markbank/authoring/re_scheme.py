@@ -34,8 +34,12 @@ evidence", "clearly relevant" and "no major errors(s)" as things a student is
 supposed to have written. This parser stops dead at the first grid line and
 asserts, in audit(), that no shipped point contains grid vocabulary.
 
-Three head grammars across five years, all read here:
+Four head grammars, all read here:
 
+    2018-2020     "A 1 a) i. How do I decide ... part of life? 20M"
+                  the question text follows the marker ON the head line (or
+                  starts on the next), tariff at the END of the question text;
+                  many asks print the criteria with no points of reference
     2021          "A 1 a)"            tariff at the END of the question text
     2022          "Section A Question 1 (a)"          likewise
     2023-2025     "Question 1 (a) (i) 20M"            tariff ON the head
@@ -140,8 +144,9 @@ def parse_tariff(text):
 _TAR = r'\d{1,3}\s*(?:M\s*[x×]\s*\d|[x×]\s*\d\s*M|M)'
 # 2026 sets the trailing tariff in brackets: "...of his time in Palestine.
 # (10M x 2)", "...religion in Ireland today. (20M x2)".
+# 2020 Higher H(b)(ii) closes its tariff with a full stop: "...traditions. 20M."
 TRAILING_TARIFF = re.compile(
-    rf'(?:\s|(?<=[.?!:]))(\(?(?:{_TAR})(?:\s*/\s*(?:{_TAR}))?\)?)\s*$', re.I)
+    rf'(?:\s|(?<=[.?!:]))(\(?(?:{_TAR})(?:\s*/\s*(?:{_TAR}))?\)?)\.?\s*$', re.I)
 
 LEAD = re.compile(r'^An excellent (?:answer|coursework)\b')
 MC_HEADING = re.compile(r'^Marking\s+Crit\w*\s+and\s+points\s+of\s+reference', re.I)
@@ -252,7 +257,7 @@ class ReScheme:
             if not m:
                 continue
             tail = (m.group(11) or '').strip()
-            if tail and parse_tariff(tail) is None:
+            if tail and parse_tariff(tail) is None and not self._text_head(m):
                 continue
             # A head names itself: it carries the word Question or Section, or
             # its own section letter, or a question number. A BARE marker line
@@ -272,6 +277,14 @@ class ReScheme:
             roman = roman.lower() or None
             out.append((i, sec, q, letter, roman, tail))
         return out
+
+    def _text_head(self, m):
+        """2018-2020 print the question text on the head line itself ("A 1 a)
+        i. How do I decide ..."), so a text tail is allowed there -- and only
+        on a marker naming its own section letter with a ")"-closed part
+        letter, the full printed address. The band grids of those years open
+        their rows with bullets, never with a marker."""
+        return self.year <= 2020 and bool(m.group(3)) and bool(m.group(6))
 
     def _read(self):
         heads = self._heads()
@@ -300,6 +313,8 @@ class ReScheme:
         # to write a card — the paper's own wording is what a student read.
         cue_lines = [l for l in block[:start]
                      if l and not PAGE.match(l) and not MC_HEADING.match(l)]
+        if tail and parse_tariff(tail) is None:
+            cue_lines = [tail] + cue_lines      # 2018-2020: the text starts on the head line
         cue = ' '.join(' '.join(cue_lines).split())
 
         total = notation = None
@@ -387,7 +402,9 @@ class ReScheme:
         # A bullet that is only the scheme's escape hatch, however it is
         # spelled ("Etc.", "etc."), is not an answer.
         joined = [p for p in joined if not re.fullmatch(r'Etc\.?', p, re.I)]
-        if not joined:
+        if not joined and not (self.year <= 2020 and lead):
+            # 2018-2020 often print the criteria alone, with no points of
+            # reference under them: the card then carries the criteria only.
             return 'no marking points under the criteria heading'
         return Ask(section=sec, q=q, letter=letter, roman=roman,
                    total=total, notation=notation, cue=cue, lead=lead,

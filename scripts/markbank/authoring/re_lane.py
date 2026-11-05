@@ -89,6 +89,20 @@ class LaneError(Exception):
     pass
 
 
+# Asks held for the coordinator's ruling: a printed grid shape the card cannot
+# carry as it stands. A held ask gets no card (it stays open in the ledger)
+# until it is ruled on; nothing is guessed in the meantime.
+HOLD = {
+    # 2019 Higher I(b)(i), 10M: the printed ranges overlap -- 9-10, 6-8, 4-5,
+    # 3-4, 2-3, 1-2, 0-1 -- so 1, 2, 3 and 4 each sit in two bands.
+    (2019, 'hl', ('I', None, 'b', 'i')): 'the printed ranges overlap',
+    # 2018 Higher B(a)(i), 5Mx4: one range cell, "1 [arrow] 0", is printed
+    # beside WEAK, VERY WEAK and NO GRADE together.
+    (2018, 'hl', ('B', None, 'a', 'i')): 'one range cell printed over three bands',
+}
+HELD = []
+
+
 HEAD_TIMES = []        # asks whose "x 2" is read off the ask's head, not the grid
 
 HEAD_TARIFF = re.compile(r'(\d{1,3})\s*M\s*(?:[x×]\s*(\d))?', re.I)
@@ -106,6 +120,8 @@ def head_tariffs(notation):
 # through build-deck's repair, so the lane applies it, and refuses any glyph
 # in the broken range the map cannot read.
 GLYPHMAP = json.load(open(os.path.join(HERE, 'glyphmap.json'), encoding='utf8'))
+# this subject's own two, settled by crop (re_paper._glyphs says where each is)
+GLYPHMAP.update(json.load(open(os.path.join(HERE, 'glyphmap-religious-education.json'), encoding='utf8')))
 BROKEN = re.compile(r'[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]')
 REAL = re.compile(r'[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF'
                   r'\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D62-\u1D6A\u1F00-\u1FFF]')
@@ -190,6 +206,8 @@ class Grid:
         # every marks row the grid prints, (head, per, times, printed ranges):
         # 2022 prints a "40 Marks" row AND a "20 Marks x2" row under one grid
         self.rows = rows or [(head, per, times, [b.printed for b in bands])]
+        self.row_grid = self.beside_x2 = False
+        self.problem = None             # a printed shape the card cannot carry yet: the ask stops
 
     def use(self, k):
         self.head, self.per, self.times, printed = self.rows[k]
@@ -314,15 +332,103 @@ STRATEGY = 'lines_strict'
 class _Table:
     """A table's box and rows, read once: a later find_tables() call on the
     same page invalidates the earlier result's cells (2026 Higher p20's grid
-    read back EMPTY after the page-wide table above it was re-read)."""
-    def __init__(self, bbox, rows):
+    read back EMPTY after the page-wide table above it was re-read). `cells`
+    keeps every row's cell boxes, unfiltered, with `texts` beside them."""
+    def __init__(self, bbox, rows, cells=None, texts=None):
         self.bbox, self.rows = tuple(bbox), rows
+        self.cells, self.texts = cells or [], texts or []
 
 
 def _read(page, clip=None):
     found = page.find_tables(clip=clip, strategy=STRATEGY).tables if clip is not None \
         else page.find_tables(strategy=STRATEGY).tables
-    return [_Table(t.bbox, _rows(t)) for t in found]
+    out = []
+    for t in found:
+        texts = [[_cell(c) for c in row] for row in t.extract()]
+        cells = [[tuple(c) if c else None for c in row.cells] for row in t.rows]
+        out.append(_Table(t.bbox, [r for r in texts if any(r)], cells, texts))
+    return out
+
+
+# ── the row grid (2018-2020) ────────────────────────────────────────────────
+# 2018-2020 print each ask's grid a band to a ROW: two bulleted descriptor
+# columns in one ruled cell, the band's label, its range ("• substantial
+# evidence of MC  • no major error(s)  EXCELLENT  17 - 20"). No marks head is
+# printed; a two-answer ask's grid has "x2" printed beside its top range.
+ROW_BULLETS = '•●\uf0b7\uf06c'
+
+
+def _is_row_grid(texts):
+    """Every row a band label then its range. A range cell the scheme sets
+    over several bands (2018 Higher B(a)(i): "1 ↑ 0" beside WEAK, VERY WEAK and
+    NO GRADE) leaves the rows below it blank: the grid is still read, and the
+    ask stops for a ruling."""
+    rows = [r for r in texts if any(r)]
+    return len(rows) >= 4 and all(len(r) >= 3 and BAND_LABEL.match(r[-2] or '') for r in rows) \
+        and bool(_marks_of(rows[0][-1]))
+
+
+def _bullet_items(page, rect):
+    """A descriptor cell's bullets, read down each printed column in turn: the
+    cell sets two columns of bullets side by side, and reading it by line
+    would interleave them."""
+    words = [w for w in page.get_text('words', clip=pymupdf.Rect(rect))]
+    starts = []
+    for x in sorted(round(w[0]) for w in words if w[4] and w[4][0] in ROW_BULLETS):
+        if not starts or x - starts[-1] > 20:
+            starts.append(x)
+    if not starts:
+        return []
+    columns = [[] for _ in starts]
+    for w in words:
+        k = max([i for i, x in enumerate(starts) if w[0] >= x - 3] or [0])
+        columns[k].append(w)
+    items = []
+    for col in columns:
+        # lines by the words' middles, then each line left to right: a bullet
+        # sits a fraction of a point off its text's baseline (510.7 against
+        # 510.5), and sorting on a rounded top put it after its own words
+        lines = []
+        for w in sorted(col, key=lambda w: (w[1] + w[3]) / 2):
+            mid = (w[1] + w[3]) / 2
+            if lines and abs(mid - lines[-1][0]) < 4:
+                lines[-1][1].append(w)
+            else:
+                lines.append([mid, [w]])
+        text = _cell('\n'.join(' '.join(w[4] for w in sorted(ws_, key=lambda w: w[0])) for _, ws_ in lines))
+        items.extend(ws(x) for x in re.split(f'[{ROW_BULLETS}]', text) if ws(x))
+    return items
+
+
+def _row_grid(page, pno, table, year, level):
+    rows = [(r, c) for r, c in zip(table.texts, table.cells) if any(r)]
+    bands = []
+    for text, cells in rows:
+        label, printed = text[-2], text[-1]
+        descriptor = []
+        for box in cells[:-2]:
+            if box is not None:
+                descriptor.extend(_bullet_items(page, box))
+        if not descriptor:
+            raise LaneError(f'{year} {level} p{pno + 1}: a row-grid band with no bulleted descriptors: {text}')
+        bands.append(Band(label, printed, _marks_of(printed), descriptor))
+    x0, y0, x1, y1 = table.bbox
+    beside = ' '.join(w[4] for w in page.get_text('words', clip=pymupdf.Rect(x1, y0 - 2, page.rect.width, y1)))
+    per = max(m for b in bands for m in (b.marks or []))
+    grid = Grid(pno + 1, y0, None, per, 1, bands)
+    grid.row_grid = True
+    unread = [(b.label, b.printed) for b in bands if not b.marks]
+    if unread:
+        grid.problem = f'band ranges not one per band as printed: {unread}'
+    else:
+        marks = sorted(m for b in bands for m in b.marks)
+        if marks != list(range(per + 1)):
+            grid.problem = ('the printed ranges overlap or leave a gap: '
+                            + ', '.join(f'{b.label} {b.printed}' for b in bands))
+    grid.beside_x2 = bool(re.fullmatch(r'\s*[xX×]\s*2\s*', beside))
+    if beside.strip() and not grid.beside_x2:
+        raise LaneError(f'{year} {level} p{pno + 1}: {beside!r} printed beside a row grid')
+    return grid
 
 
 def _page_tables(page):
@@ -357,6 +463,12 @@ def read_grids(year, level):
                 continue
             if _rotated(page, table.bbox):
                 continue                 # the shared grid printed sideways: read_shared_grid
+            if _is_row_grid(table.texts):
+                grid = _row_grid(page, pno, table, year, level)
+                if not grid.problem and 0 not in grid.bands[-1].marks:
+                    raise LaneError(f'{year} {level} p{pno + 1}: a row grid that stops above 0: {grid}')
+                out.append(grid)
+                continue
             rows = table.rows
             start = next((i for i, r in enumerate(rows) if _is_band_header(r)), None)
             if start is None:
@@ -607,7 +719,10 @@ def shipped_cards():
     return out
 
 
-def build_sitting(year, level, shipped=None):
+def build_sitting(year, level, shipped=None, survey=None):
+    """The sitting's cards. With `survey` (a list), an ask that stops is noted
+    there and left out, so every stop in a sitting can be seen at once; a
+    build never passes it."""
     shipped = shipped_cards() if shipped is None else shipped
     P = RePaper(year, level)
     S = ReScheme(year, level)
@@ -624,125 +739,150 @@ def build_sitting(year, level, shipped=None):
         raise LaneError(f'{year} {level}: {len(grids)} band grids for {len(asks)} asks: {grids}')
     pages = md_page_of(S)
     cards = []
+    def one(n, ask):
+            key = ask.key
+            where = f'{year} {level} {question_ref(year, level, key)}'
+            head_page = pages[ask.line]
+            next_page = pages[asks[n + 1].line] if n + 1 < len(asks) else 10 ** 3
+            shared_note = None
+            if shared is not None:
+                grid, shared_note, block_end = shared_grid_for(S, asks, n, shared, where)
+                last_page = pages[block_end]
+            else:
+                grid = grids[n]
+                if not head_page <= grid.page <= next_page:
+                    raise LaneError(f'{where}: its grid is on p{grid.page}, outside its block '
+                                    f'(p{head_page}-{next_page})')
+                last_page = grid.last
+            # A row grid prints no marks head: its top range is the per-answer
+            # tariff, and the ask's head says how many answers ("20Mx2"); an "x2"
+            # printed beside the grid must agree.
+            if grid.problem:
+                raise LaneError(f'{where}: STOP: {grid.problem}')
+            if grid.row_grid:
+                named = [t for t in head_tariffs(ask.notation) if t[0] == grid.per]
+                if len(named) != 1:
+                    raise LaneError(f'{where}: STOP: the row grid tops out at {grid.per}; head {ask.notation!r}')
+                grid.times = named[0][1]
+                if grid.beside_x2 and grid.times != 2:
+                    raise LaneError(f'{where}: "x2" beside the grid, head {ask.notation!r}')
+                grid.head = ask.notation
+            # A grid printing two marks rows is two printed ways of marking the
+            # answer: the card's own way is the row its head names first, and the
+            # other row rides along as `otherWay` for the student to pick.
+            other_way = None
+            if len(grid.rows) > 1:
+                if len(grid.rows) != 2:
+                    raise LaneError(f'{where}: {len(grid.rows)} marks rows in one grid: {grid.rows}')
+                named = head_tariffs(ask.notation)
+                if not named:
+                    raise LaneError(f'{where}: two marks rows and a head {ask.notation!r} naming neither')
+                pick = [k for k, r in enumerate(grid.rows) if (r[1], r[2]) == named[0]]
+                if len(pick) != 1:
+                    raise LaneError(f'{where}: the head\'s {named[0]} matches {len(pick)} of the grid\'s '
+                                    f'marks rows {[r[:3] for r in grid.rows]}')
+                grid.use(pick[0])
+                head, per, times, printed = grid.rows[1 - pick[0]]
+                marks = sorted(m for p in printed for m in _marks_of(p))
+                if marks != list(range(per + 1)) or per * times != ask.total:
+                    raise LaneError(f'{where}: the other marks row {head!r} covers {marks}, {per}x{times}')
+                other_way = {'gridHead': head, 'answers': times, 'answerMax': per,
+                             'bands': [{'printed': p, 'marks': _marks_of(p)} for p in printed]}
+            problem = grid_problem(grid)
+            if problem:
+                raise LaneError(f'{where}: {grid}: {problem}')
+            # A grid whose marks cell omits the "x 2" its own ask's head prints
+            # (2024 Ordinary B(a): head "(20M x 2)", grid "20 Marks", "Code MC
+            # x 2" above it) is the per-answer grid of a two-answer ask: the
+            # scheme says so on the head, so the head's multiplier is read.
+            if (grid.times == 1 and grid.per * 2 == ask.total
+                    and re.search(r'[x×]\s*2', ask.notation or '', re.I)):
+                grid.times = 2
+                HEAD_TIMES.append(where)
+            total = grid.per * grid.times
+            paper_marks = P.marks.get(key)
+            note = DISAGREE.get((year, level, key))
+            if total != ask.total or (paper_marks is not None and paper_marks != total):
+                if not note:
+                    raise LaneError(f'{where}: grid {grid.head!r} = {total}, scheme head {ask.notation!r} = '
+                                    f'{ask.total}, paper ({paper_marks})')
+            question = P.asks[key]
+            stem = P.stem(key)
+            cid = card_id(year, level, key)
+            old = shipped.get(cid)
+            topic = old['topicId'] if old else topic_for(key[0])
+            if not topic:
+                raise LaneError(f'{where}: section {key[0]} is not a syllabus section')
+            if not ask.lead:
+                raise LaneError(f'{where}: the scheme prints no "An excellent answer" criteria')
+            ceilings, directions = split_notes(ask.notes, grid.times, where)
+            if other_way and ceilings:
+                raise LaneError(f'{where}: STOP: a ceiling on a grid with two marks rows')
+            for c in ceilings:
+                if not 0 < c['max'] < grid.per:
+                    raise LaneError(f'{where}: ceiling {c} not inside the answer\'s {grid.per}')
+            rubric = {
+                'system': 'religious-education',
+                'criteria': ask.lead,
+                'points': ask.points,
+                'openList': bool(ask.open_list),
+                'answers': grid.times,
+                'answerMax': grid.per,
+                'gridHead': grid.head,
+                'bands': [b.as_json() for b in grid.bands],
+            }
+            if other_way:
+                rubric['otherWay'] = other_way
+            if ceilings:
+                rubric['ceilings'] = ceilings
+            rubric['directions'] = directions
+            rubric['markingGuideNote'] = ''.join(n + ' ' for n in (note, shared_note) if n) + \
+                (MARKING_GUIDE_WAYS if other_way else MARKING_GUIDE_X if grid.times > 1 else MARKING_GUIDE)
+            rubric['schemePages'] = sorted({head_page, grid.page} | set(range(head_page, last_page + 1)))
+            rubric['schemeFileid'] = f'LC223{LEVEL_LETTER[level]}LP000EV.pdf'
+            card = {
+                'id': cid, 'subjectId': SUBJECT, 'source': 'sec', 'kind': 'rubric',
+                'year': year, 'level': LEVEL_WORD[level], 'section': key[0],
+                'questionRef': question_ref(year, level, key),
+                'topicId': topic,
+                'conceptId': old['conceptId'] if old else concept_for(question),
+                'paperFileid': f'LC223{LEVEL_LETTER[level]}LP000EV',
+                'questionText': question,
+            }
+            if old and old.get('stem'):
+                card['stem'] = old['stem']
+            elif stem and len(stem) >= 20:
+                card['stem'] = stem
+            card.update({
+                'totalMarks': total,
+                'specVersion': SPEC_VERSION,
+                'schemeCitation': (f'Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education '
+                                   f'{year} {LEVEL_WORD[level].title()} Level — © State Examinations Commission.'),
+                'qa': {'gates': ['verbatim', 'tariff', 'band-grid'], 'humanReviewedBy': 'agent-verified',
+                       'humanReviewedAt': REVIEWED_AT},
+                'rubric': rubric,
+            })
+            card = repair_all(card, where)
+            if old and old['questionText'] != card['questionText']:
+                raise LaneError(f'{where}: the shipped card\'s question differs from the paper reading')
+            words = LIGATURE_WORDS.get(SUBJECT, {})
+            flat = json.dumps(card, ensure_ascii=False)
+            hit = next((w for w in words if re.search(rf'(?<![\w]){re.escape(w)}(?![\w])', flat)), None)
+            if hit:
+                raise LaneError(f'{where}: misread ligature {hit!r} (printed {words[hit]!r})')
+            return card
+
     for n, ask in enumerate(asks):
-        key = ask.key
-        where = f'{year} {level} {question_ref(year, level, key)}'
-        head_page = pages[ask.line]
-        next_page = pages[asks[n + 1].line] if n + 1 < len(asks) else 10 ** 3
-        shared_note = None
-        if shared is not None:
-            grid, shared_note, block_end = shared_grid_for(S, asks, n, shared, where)
-            last_page = pages[block_end]
-        else:
-            grid = grids[n]
-            if not head_page <= grid.page <= next_page:
-                raise LaneError(f'{where}: its grid is on p{grid.page}, outside its block '
-                                f'(p{head_page}-{next_page})')
-            last_page = grid.last
-        # A grid printing two marks rows is two printed ways of marking the
-        # answer: the card's own way is the row its head names first, and the
-        # other row rides along as `otherWay` for the student to pick.
-        other_way = None
-        if len(grid.rows) > 1:
-            if len(grid.rows) != 2:
-                raise LaneError(f'{where}: {len(grid.rows)} marks rows in one grid: {grid.rows}')
-            named = head_tariffs(ask.notation)
-            if not named:
-                raise LaneError(f'{where}: two marks rows and a head {ask.notation!r} naming neither')
-            pick = [k for k, r in enumerate(grid.rows) if (r[1], r[2]) == named[0]]
-            if len(pick) != 1:
-                raise LaneError(f'{where}: the head\'s {named[0]} matches {len(pick)} of the grid\'s '
-                                f'marks rows {[r[:3] for r in grid.rows]}')
-            grid.use(pick[0])
-            head, per, times, printed = grid.rows[1 - pick[0]]
-            marks = sorted(m for p in printed for m in _marks_of(p))
-            if marks != list(range(per + 1)) or per * times != ask.total:
-                raise LaneError(f'{where}: the other marks row {head!r} covers {marks}, {per}x{times}')
-            other_way = {'gridHead': head, 'answers': times, 'answerMax': per,
-                         'bands': [{'printed': p, 'marks': _marks_of(p)} for p in printed]}
-        problem = grid_problem(grid)
-        if problem:
-            raise LaneError(f'{where}: {grid}: {problem}')
-        # A grid whose marks cell omits the "x 2" its own ask's head prints
-        # (2024 Ordinary B(a): head "(20M x 2)", grid "20 Marks", "Code MC
-        # x 2" above it) is the per-answer grid of a two-answer ask: the
-        # scheme says so on the head, so the head's multiplier is read.
-        if (grid.times == 1 and grid.per * 2 == ask.total
-                and re.search(r'[x×]\s*2', ask.notation or '', re.I)):
-            grid.times = 2
-            HEAD_TIMES.append(where)
-        total = grid.per * grid.times
-        paper_marks = P.marks.get(key)
-        note = DISAGREE.get((year, level, key))
-        if total != ask.total or (paper_marks is not None and paper_marks != total):
-            if not note:
-                raise LaneError(f'{where}: grid {grid.head!r} = {total}, scheme head {ask.notation!r} = '
-                                f'{ask.total}, paper ({paper_marks})')
-        question = P.asks[key]
-        stem = P.stem(key)
-        cid = card_id(year, level, key)
-        old = shipped.get(cid)
-        topic = old['topicId'] if old else topic_for(key[0])
-        if not topic:
-            raise LaneError(f'{where}: section {key[0]} is not a syllabus section')
-        if not ask.lead:
-            raise LaneError(f'{where}: the scheme prints no "An excellent answer" criteria')
-        ceilings, directions = split_notes(ask.notes, grid.times, where)
-        if other_way and ceilings:
-            raise LaneError(f'{where}: STOP: a ceiling on a grid with two marks rows')
-        for c in ceilings:
-            if not 0 < c['max'] < grid.per:
-                raise LaneError(f'{where}: ceiling {c} not inside the answer\'s {grid.per}')
-        rubric = {
-            'system': 'religious-education',
-            'criteria': ask.lead,
-            'points': ask.points,
-            'openList': bool(ask.open_list),
-            'answers': grid.times,
-            'answerMax': grid.per,
-            'gridHead': grid.head,
-            'bands': [b.as_json() for b in grid.bands],
-        }
-        if other_way:
-            rubric['otherWay'] = other_way
-        if ceilings:
-            rubric['ceilings'] = ceilings
-        rubric['directions'] = directions
-        rubric['markingGuideNote'] = ''.join(n + ' ' for n in (note, shared_note) if n) + \
-            (MARKING_GUIDE_WAYS if other_way else MARKING_GUIDE_X if grid.times > 1 else MARKING_GUIDE)
-        rubric['schemePages'] = sorted({head_page, grid.page} | set(range(head_page, last_page + 1)))
-        rubric['schemeFileid'] = f'LC223{LEVEL_LETTER[level]}LP000EV.pdf'
-        card = {
-            'id': cid, 'subjectId': SUBJECT, 'source': 'sec', 'kind': 'rubric',
-            'year': year, 'level': LEVEL_WORD[level], 'section': key[0],
-            'questionRef': question_ref(year, level, key),
-            'topicId': topic,
-            'conceptId': old['conceptId'] if old else concept_for(question),
-            'paperFileid': f'LC223{LEVEL_LETTER[level]}LP000EV',
-            'questionText': question,
-        }
-        if old and old.get('stem'):
-            card['stem'] = old['stem']
-        elif stem and len(stem) >= 20:
-            card['stem'] = stem
-        card.update({
-            'totalMarks': total,
-            'specVersion': SPEC_VERSION,
-            'schemeCitation': (f'Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education '
-                               f'{year} {LEVEL_WORD[level].title()} Level — © State Examinations Commission.'),
-            'qa': {'gates': ['verbatim', 'tariff', 'band-grid'], 'humanReviewedBy': 'agent-verified',
-                   'humanReviewedAt': REVIEWED_AT},
-            'rubric': rubric,
-        })
-        card = repair_all(card, where)
-        if old and old['questionText'] != card['questionText']:
-            raise LaneError(f'{where}: the shipped card\'s question differs from the paper reading')
-        words = LIGATURE_WORDS.get(SUBJECT, {})
-        flat = json.dumps(card, ensure_ascii=False)
-        hit = next((w for w in words if re.search(rf'(?<![\w]){re.escape(w)}(?![\w])', flat)), None)
-        if hit:
-            raise LaneError(f'{where}: misread ligature {hit!r} (printed {words[hit]!r})')
-        cards.append(card)
+        if (year, level, ask.key) in HOLD:
+            HELD.append(f'{year} {level} {question_ref(year, level, ask.key)}: {HOLD[(year, level, ask.key)]}')
+            continue
+        if survey is not None:
+            try:
+                cards.append(one(n, ask))
+            except LaneError as e:
+                survey.append(str(e))
+            continue
+        cards.append(one(n, ask))
     return cards
 
 
@@ -819,6 +959,8 @@ def main(argv):
               f'{ceil} ceilings, {sum(c["totalMarks"] for c in cards)} marks')
         for where in HEAD_TIMES:
             print(f'   x 2 read off the head: {where}')
+        for where in HELD:
+            print(f'   HELD for a ruling: {where}')
     elif cmd == 'show':
         for c in cards:
             r = c['rubric']

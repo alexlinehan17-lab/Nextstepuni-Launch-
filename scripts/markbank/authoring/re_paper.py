@@ -34,6 +34,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 import pymupdf
 
@@ -51,6 +52,16 @@ def _glyphs():
     Religious Education's papers set their option bullets in Wingdings, which
     reaches the text layer as U+F06C. Left alone it is an unreadable glyph that
     build-deck refuses; glyphmap.json maps it to a real bullet.
+
+    glyphmap-religious-education.json holds this subject's own two, each
+    settled by cropping the glyph and looking at it, and each found nowhere
+    else in the subject's 62 papers and schemes:
+      U+01B5 -- 2020 Higher's paper, Cambria, drawn with NO width over the
+                letter before it: the acute of "CÉLI DÉ". It maps to the
+                combining acute, and the word is then composed (NFC).
+      U+F8E7 -- 2019 Ordinary's scheme, SymbolMT: a long rule, the dash before
+                "Consult your Advising Examiner" that every other Note prints
+                as "—".
     """
     table = {}
     for name in ('glyphmap.json', 'glyphmap-religious-education.json'):
@@ -72,7 +83,7 @@ FURNITURE = re.compile(
     r'|State Examinations Commission'
     r'|Higher Level|Ordinary Level|Higher level|Ordinary level'
     r'|Total Marks\b|Page \d|\d{1,3}$'
-    r'|There is no examination material on this page'
+    r'|There is no examination material on this page|Blank Page$'
     r'|Do not hand up this question paper'
     r'|This document will not be returned'
     r'|Acknowledgements?\b|Copyright notice'
@@ -126,12 +137,18 @@ QUESTION = re.compile(r'^(?:QUESTION|Question)\s+(\d)\.?\s*(.*)$')
 MARKER = re.compile(
     r'^(?:\(([a-h])\)|([a-h])\))\s*'
     r'(?:\((i{1,3}|iv|v)\)|(i{1,3}|iv|v)\.(?=\s|$))?\s*')
+BARE_MARKER = re.compile(r'(?:\(([a-h])\)|([a-h])\))\s*(?:\((i{1,3}|iv|v)\)|(i{1,3}|iv|v)\.)?')
 ROMAN_ONLY = re.compile(r'^(?:\((i{1,3}|iv|v)\)|(i{1,3}|iv|v)\.(?=\s|$))\s*')
 # A picture credit set in the margin on the same baseline as a part marker:
 # 2018 Ordinary prints "(Source: www.Bible.ca)" beside "b) Explain how one
 # archaeological discovery ...", and the line then opened with the credit,
 # so the marker after it was never read and Section H lost its (b).
-LEADING_CREDIT = re.compile(r'^\((?:Source|Adapted from)\b[^)]*\)\s+(?=(?:\(?[a-h]\))\s)', re.I)
+# The same margin credit beside ANY line is cut the same way: 2018 Ordinary
+# prints "(Source: www.paulocoelhoblog.com)" beside the second line of A3(b)
+# and 2018 Higher "(Source: www.bobhaa.com)" beside A1(a)'s "(40 marks)", and
+# the credit at the head of the line made the whole line page furniture, so
+# A3(b) lost its last line and A1(a) its printed marks.
+LEADING_CREDIT = re.compile(r'^\((?:Source|Adapted from)\b[^)]*\)\s+(?=\S)', re.I)
 
 # The tariff the PAPER prints beside an ask: "(20)", "(40 marks)", "(80)".
 # Read to cross-check the scheme, never to price a card on its own.
@@ -139,6 +156,36 @@ PAPER_MARKS = re.compile(r'\((\d{2})(?:\s*marks?)?\)\s*$')
 ANY_MARKS = re.compile(r'\((\d{2})(?:\s*marks?)?\)')
 
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v']
+
+
+# The faith symbols the SEC sets around a picture -- a cross, the Star of
+# David, the crescent, Om, the wheel of dharma (2019 Ordinary J(a), 2022
+# Ordinary C) -- are Wingdings glyphs, so they reach the text layer and the
+# baseline grouping pulls them into the ask beside them ("... JUDAISM
+# \uf05c Explain how ..."). They are clipart, never text.
+CLIPART = set('\uf054\uf055\uf056\uf057\uf058\uf059\uf05a\uf05b\uf05c\uf05d')
+
+
+def _without_margin_credits(words):
+    """The page's words less any picture credit set in the RIGHT margin over two
+    lines ("(Source: Adapted from" / "Softkey Multimedia Inc.)", 2018 Ordinary
+    I(b)). Beside a line of the ask, the baseline grouping would interleave its
+    two lines into the ask's words ("... Saint Patrick. Softkey (Source:
+    Multimedia Adapted from Inc.)"), which no regex can take back out. A credit
+    closed on its own line is left to SOURCE_CREDIT, as before."""
+    words = list(words)
+    drop = set()
+    for i, (x0, y0, x1, y1, w, *_r) in enumerate(words):
+        if x0 < 380 or not re.match(r'\((?:Source|Adapted)', w):
+            continue
+        mid = (y0 + y1) / 2
+        first = [j for j, v in enumerate(words) if v[0] >= x0 - 3 and abs((v[1] + v[3]) / 2 - mid) < 3]
+        if any(words[j][4].endswith(')') for j in first):
+            continue
+        second = [j for j, v in enumerate(words) if v[0] >= x0 - 3 and 5 < (v[1] + v[3]) / 2 - mid < 15]
+        if second and words[max(second, key=lambda j: words[j][0])][4].endswith(')'):
+            drop.update(first + second)
+    return [v for j, v in enumerate(words) if j not in drop]
 
 
 def _lines(path):
@@ -153,8 +200,12 @@ def _lines(path):
     with pymupdf.open(path) as doc:
         for pno in range(doc.page_count):
             rows = []
-            for x0, y0, x1, y1, word, *_ in _words(doc[pno]):
+            for x0, y0, x1, y1, word, *_ in _without_margin_credits(_words(doc[pno])):
+                if word.strip() and all(ch in CLIPART for ch in word.strip()):
+                    continue
                 word = word.translate(GLYPHS)
+                if '\u0301' in word:
+                    word = unicodedata.normalize('NFC', word)
                 if not word.strip():
                     continue
                 mid = (y0 + y1) / 2
@@ -164,8 +215,33 @@ def _lines(path):
                         break
                 else:
                     rows.append({'mid': mid, 'w': [(x0, x1, word)]})
-            ordered = [sorted(row['w']) for row in sorted(rows, key=lambda r: r['mid'])]
+            rows = sorted(rows, key=lambda r: r['mid'])
+            # A caption set beside a BARE part marker, a few points above its
+            # baseline (2020 Higher A1(a)(i): the thought bubble "How do I
+            # decide what is good or evil?" beside "a) i.", 10pt higher), is
+            # the first line of that part's ask, not the end of what precedes
+            # the marker.
+            for k in range(1, len(rows)):
+                cur, prev = rows[k], rows[k - 1]
+                text = ' '.join(w for _x0, _x1, w in sorted(cur['w']))
+                if (BARE_MARKER.fullmatch(text) and cur['mid'] - prev['mid'] < 12
+                        and min(x0 for x0, _x1, _w in prev['w']) > max(x1 for _x0, x1, _w in cur['w']) + 60):
+                    rows[k - 1], rows[k] = cur, prev
+            ordered = [sorted(row['w']) for row in rows]
+            credit = None
             for x0, text in _merge_option_columns(ordered):
+                # a picture's question marks are clipart, never text
+                if re.fullmatch(r'[?!]+', text.strip()):
+                    continue
+                # a picture credit run over two lines: "(Source: Adapted from"
+                # / "Softkey Multimedia Inc.)" -- the second line is credit too
+                if credit is not None:
+                    if abs(x0 - credit) < 15 and text.rstrip().endswith(')') and '(' not in text:
+                        credit = None
+                        continue
+                    credit = None
+                if re.match(r'^\((?:Source|Adapted from)\b[^)]*$', text.strip(), re.I):
+                    credit = x0
                 yield pno, x0, text
 
 
@@ -234,6 +310,74 @@ BULLET_TOKEN = re.compile(r'^[\u2022\u25c6\u25cf\u25aa\u25a0]')
 COLUMN_GAP = 18.0
 
 
+def _groups(ws):
+    """A line's words in the groups the page prints, split at column gaps."""
+    groups = []
+    for j, (x0, x1, w) in enumerate(ws):
+        if j and x0 - ws[j - 1][1] < COLUMN_GAP:
+            groups[-1][1] = x1
+            groups[-1][2].append(w)
+        else:
+            groups.append([x0, x1, [w]])
+    return groups
+
+
+def _stacked_options(rows, i):
+    """An option table set as a row of BULLETS alone, each label stacked under
+    its bullet on the lines below (2020 Higher H(a): four bullets, then "THE
+    GOSPEL" four times, then "OF JOHN  OF LUKE  OF MARK  OF MATTHEW"). Read
+    down each column: "• THE GOSPEL OF JOHN • THE GOSPEL OF LUKE ...". Only
+    when every following line breaks into exactly one group per bullet, each
+    centred under its own bullet; anything else is left as printed."""
+    ws = rows[i]
+    lead = []
+    k = 0
+    if ws and MARKER.match(ws[0][2] + ' '):
+        while k < len(ws) and not BULLET_TOKEN.match(ws[k][2]):
+            lead.append(ws[k][2])
+            k += 1
+    bullets = ws[k:]
+    if len(bullets) < 2 or not all(BULLET_TOKEN.fullmatch(w) for _x0, _x1, w in bullets):
+        return None
+    centres = [(x0 + x1) / 2 for x0, x1, _w in bullets]
+    half = min(b - a for a, b in zip(centres, centres[1:])) / 2
+    labels = [[] for _ in centres]
+    used = []
+
+    def columns_of(row):
+        """Each group's column, or None unless the line breaks into one group
+        per bullet, each under its own bullet, left to right. Centred labels
+        of unequal length drift too far for anything looser (2017 Ordinary
+        H(b) is left as printed for that reason)."""
+        groups = _groups(row)
+        if len(groups) != len(centres):
+            return None
+        homes = []
+        for g0, g1, _w in groups:
+            c = min(range(len(centres)), key=lambda c: abs(centres[c] - (g0 + g1) / 2))
+            if abs(centres[c] - (g0 + g1) / 2) > half:
+                return None
+            homes.append(c)
+        if homes != sorted(set(homes)):
+            return None
+        return list(zip(homes, groups))
+
+    j = i + 1
+    while j < len(rows) and j <= i + 5:
+        cols = columns_of(rows[j])
+        if cols is None:
+            break
+        for c, (_g0, _g1, words) in cols:
+            labels[c].extend(words)
+        used.append(j)
+        j += 1
+    # every label row read, and every column given a label: or nothing at all
+    if not used or not all(labels) or (j < len(rows) and len(_groups(rows[j])) >= 2):
+        return None
+    items = [f'{bullets[c][2]} ' + ' '.join(labels[c]) for c in range(len(centres))]
+    return ' '.join(lead + items), used
+
+
 def _merge_option_columns(rows):
     """Read a two-line option TABLE down its columns, not across its rows.
 
@@ -259,6 +403,12 @@ def _merge_option_columns(rows):
     skip = set()
     for i, ws in enumerate(rows):
         if i in skip:
+            continue
+        stacked = _stacked_options(rows, i)
+        if stacked is not None:
+            text, used = stacked
+            skip.update(used)
+            out.append((ws[0][0], text))
             continue
         cols = [x0 for x0, _x1, w in ws if BULLET_TOKEN.match(w)]
         merged = None
