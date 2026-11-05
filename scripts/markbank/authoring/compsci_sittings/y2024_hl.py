@@ -17,7 +17,7 @@ reads as a bold N followed by a bold 2 (the superscript is lost); the scheme's
 text is the solution crop, where it reads as printed. Q16(b)'s rubric is read
 from the cells of scheme page 29.
 """
-from compsci_lane import (C, P, Pair, S, T, anyn, crit, crop, ladder, pt, stack)  # noqa: F401
+from compsci_lane import (C, G, GAt, P, Pair, S, T, anyn, crit, crop, ladder, pt, stack)  # noqa: F401
 
 BOOKS = ('038', 18, (55, 139, 517, 282))
 LISTING14 = ('038', 16, (56, 74, 541, 236))
@@ -563,10 +563,11 @@ CARDS = [
                   'flowchart and the answer all or nothing; now 5 / 3 / 1 with the scheme\'s text '
                   'as printed',
          why='p17: what O(n squared) means for compare operations; the scheme answers it, 5 / 3 / '
-             '1; its N squared is set in a font whose superscript the text layer loses, so the '
-             'scheme\'s text is also the solution crop',
-         stem=Q14C, ask=P(17, 'The bubble sort algorithm has O(', 'number of compare operations performed.'),
-         rows=[crit(S(19, 'In a list of size N the bubble sort algorithm performs N passes.', 'increase by a factor of four.'),
+             '1; the paper\'s O(n squared) and the scheme\'s N squared are set in a maths font '
+             'whose exponents the text layer flattens ("O(n2)") or reads as Oriya, so the ask and '
+             'the answer are both read by glyph id (paper p17, scheme p19)',
+         stem=Q14C, ask=GAt('038', 17, (110, 370, 560, 405)),
+         rows=[crit(G(19, 'In a list of size N the bubble sort algorithm performs N passes.', 'increase by a factor of four.'),
                     5, [1, 3],
                     note=[S(19, 'Very good explanation - clear understanding demonstrated 5 marks'),
                           S(20, 'Good explanation - clear information', 'Fair explanation - limited understanding 1 mark')])]),

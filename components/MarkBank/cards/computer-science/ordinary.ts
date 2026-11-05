@@ -4440,7 +4440,8 @@ export const CARDS: SecCard[] = [
     questionText: "Name two computer-related careers and for each, list two activities that the person would undertake.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "Software Developer o Writing and testing code for applications. o Collaborating with teams to design software solutions.", marks: 6, accepts: ["Web Developer o Building and maintaining websites. o Ensuring websites are optimized for performance and usability.","Data Analyst o Analysing datasets to extract meaningful insights. o Creating visualisations and reports to present findings.","Cybersecurity Analyst o Monitoring systems for security breaches. o Implementing measures to protect sensitive data.","IT Support Specialist o Troubleshooting hardware and software issues for users. o Installing and configuring computer systems.","Network Administrator o Managing and maintaining computer networks. o Ensuring network security and performance.","Game Developer o Designing and programming video games. o Testing games for bugs and optimizing gameplay.","UX/UI Designer o Creating wireframes and prototypes for software or websites. o Conducting user testing to improve product usability."], contextNote: "For each: Valid name 1 mark Each valid activity 1 mark (max 2)", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "r-1", kind: "anyN", verbatim: "Valid name 1 mark", marks: null, contextNote: "For each: Valid name 1 mark Each valid activity 1 mark (max 2)", group: {"claimMax":2,"perOption":1,"options":["Software Developer","Web Developer","Data Analyst","Cybersecurity Analyst","IT Support Specialist","Network Administrator","Game Developer","UX/UI Designer"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Each valid activity 1 mark (max 2)", marks: null, group: {"claimMax":4,"perOption":1,"options":["Software Developer — Writing and testing code for applications.","Software Developer — Collaborating with teams to design software solutions.","Web Developer — Building and maintaining websites.","Web Developer — Ensuring websites are optimized for performance and usability.","Data Analyst — Analysing datasets to extract meaningful insights.","Data Analyst — Creating visualisations and reports to present findings.","Cybersecurity Analyst — Monitoring systems for security breaches.","Cybersecurity Analyst — Implementing measures to protect sensitive data.","IT Support Specialist — Troubleshooting hardware and software issues for users.","IT Support Specialist — Installing and configuring computer systems.","Network Administrator — Managing and maintaining computer networks.","Network Administrator — Ensuring network security and performance.","Game Developer — Designing and programming video games.","Game Developer — Testing games for bugs and optimizing gameplay.","UX/UI Designer — Creating wireframes and prototypes for software or websites.","UX/UI Designer — Conducting user testing to improve product usability."]} },
     ],
   } as SecCard,
   {
@@ -4952,8 +4953,8 @@ export const CARDS: SecCard[] = [
     questionText: "State the output of each of the following logic gates for the inputs given.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1", marks: 3, contextNote: "Both correct 6 marks One correct 3 marks" },
-    { id: "r-2", kind: "point", verbatim: "0", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "1", marks: 3, contextNote: "First gate in the figure. Both correct 6 marks One correct 3 marks" },
+    { id: "r-2", kind: "point", verbatim: "0", marks: 3, contextNote: "Second gate in the figure." },
     ],
     questionFigure: {
           "candId": "computer-science-2021-OL-paper-q15b-gates",

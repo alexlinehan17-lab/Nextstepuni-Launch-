@@ -314,9 +314,9 @@ CARDS = [
          rows=[crit(S(6, '4B'), 5, [1, 3], note=S(6, 'Correct 5 marks', 'Response with some merit 1 mark'))]),
     dict(key=(8, None, None), topic='cs-2-2', qfigure='q8-passes', figure='s-q8', total=5,
          why='p7: complete passes 2 to 4 of a bubble sort; the scheme draws the completed '
-             'diagram, 1 mark a step',
+             'diagram, 1 mark a step, so the check row steps 1 a step under the drawing',
          ask=P(7, 'The diagram below sets out the operation of the bubble sort algorithm', 'only need to fill in the numbers.'),
-         rows=[ask_row()]),
+         rows=[ask_row([1, 2, 3, 4], note=S(7, 'Each correct step 1 mark'))]),
     dict(key=(9, None, None), topic='cs-2-4', qfigure='q9-data', total=5,
          why='p7: three problems with the race data; the scheme lists eight, 2 + 2 + 1',
          ask=P(7, 'The data set below shows the raw data', 'problems with the data in the data set.'),
@@ -425,9 +425,10 @@ CARDS = [
          rows=[pt(S(12, 'S1 1 1 S1'), 1, note=S(12, 'Each correct row 1 mark', '(rows can be in any order)')),
                pt(S(12, 'S1 B 0 S2'), 1)]),
     dict(key=(14, 'b', 'iii'), topic='cs-1-2', qfigure='q14-tape', figure='s-q14b-iii', total=4,
-         why='p17: trace 10110B on the tape; the scheme draws the completed tape, 1 a row',
+         why='p17: trace 10110B on the tape; the scheme draws the completed tape, 1 a row, so the '
+             'check row steps 1 a row under the drawing',
          stem=Q14B, ask=P(17, 'Starting from an initial state of S1', 'The first two rows have been completed for you.'),
-         rows=[ask_row()]),
+         rows=[ask_row([1, 2, 3], note=S(13, 'Each correct row 1 mark'))]),
     dict(key=(14, 'c', None), topic='cs-1-2', total=8,
          why='p18: positive and negative effects of AI; the scheme lists six of each, two of '
              'each at 2 / 1',

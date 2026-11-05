@@ -21,7 +21,7 @@ the deck's six-row cap) gives way to a card per part.
 Q15(b)(i)'s answers, a 1 and a 0, are printed beside the scheme's gate
 drawing and read from it by position.
 """
-from compsci_lane import (At, C, P, Pair, S, T, anyn, crit, crop, ladder, ofpart, pt, stack)  # noqa: F401
+from compsci_lane import (At, C, FigurePointer, P, Pair, S, T, anyn, crit, crop, ladder, ofpart, pt, stack)  # noqa: F401
 
 WITHDRAWN = {'cs-2021-ol-q15': 'cs-2021-ol-q15-b-i', 'cs-2021-ol-q16': 'cs-2021-ol-q16-a-i'}
 
@@ -338,11 +338,13 @@ CARDS = [
     dict(key=(15, 'b', 'i'), topic='cs-2-3', qfigure='q15b-gates', figure='s-q15b-i', total=6,
          printed=S(13, 'Both correct 6 marks'),
          why='p18: the outputs of a NOT and an AND gate; the scheme prints 1 and 0 beside its '
-             'drawing (read by position), both 6, one 3. Split out of the withdrawn whole-question '
-             'card cs-2021-ol-q15',
+             'drawing (read by position), both 6, one 3. Its drawing is an image, so no label for '
+             'either gate can be lifted: each value\'s note points at its gate in the figure, '
+             'top to bottom. Split out of the withdrawn whole-question card cs-2021-ol-q15',
          ask=P(18, 'State the output of each of the following logic gates for the inputs given.'),
-         rows=[pt(At('scheme', 13, (330, 309, 342, 329)), 3, note=S(13, 'Both correct 6 marks', 'One correct 3 marks')),
-               pt(At('scheme', 13, (325, 412, 338, 433)), 3)]),
+         rows=[pt(At('scheme', 13, (330, 309, 342, 329)), 3,
+                  note=[FigurePointer(1, 'gate'), S(13, 'Both correct 6 marks', 'One correct 3 marks')]),
+               pt(At('scheme', 13, (325, 412, 338, 433)), 3, note=FigurePointer(2, 'gate'))]),
     dict(key=(15, 'b', 'ii'), topic='cs-2-3', qfigure='q15b-fig7', total=4,
          replaces='batch 1b: no answer rows (an empty card); the specification figure sat on the '
                   'answer side',

@@ -165,6 +165,34 @@ class At:
         self.doc, self.page, self.rect = doc, page, rect
 
 
+class GAt(At):
+    """The text printed inside one rectangle of a page, READ BY GLYPH ID
+    (read_glyph_line): a question whose maths the text layer misreads -- 2024
+    HL Q14(c)(ii) prints "O(n²)" and the text layer reads the exponent as an
+    Oriya letter. `rect` is (x0, y0, x1, y1) in PDF points; a glyph belongs to
+    it by its baseline origin. `breaks` sets each bulleted line on a line of
+    its own (read_glyph_line), for a question whose list has sub-bullets."""
+    def __init__(self, doc, page, rect, breaks=False):
+        super().__init__(doc, page, rect)
+        self.breaks = breaks
+
+
+class FigurePointer:
+    """Where in the scheme's figure a bare value is printed: "First gate in the
+    figure." The one text on a card that is not lifted, so it carries no exam
+    content -- no question, no answer, no gate name -- only a place in the
+    figure, in words fixed here. Allowed in a row's note and nowhere else
+    (coordinator, 5 Nov: 2021 OL Q15(b)(i)'s answers "1" and "0" sit beside
+    the scheme's image of two gates, which prints no label for either)."""
+    ORDINALS = ('First', 'Second', 'Third', 'Fourth')
+    NOUNS = ('gate',)
+
+    def __init__(self, n, noun):
+        if not 1 <= n <= len(self.ORDINALS) or noun not in self.NOUNS:
+            raise LaneError(f'FigurePointer({n}, {noun!r}): not a fixed pointer')
+        self.text = f'{self.ORDINALS[n - 1]} {noun} in the figure.'
+
+
 class Pair:
     """A menu option that names its heading: "Validation examples (x 2) — Range
     check: ...". Both halves are lifted; build-deck traces each half on its own,
@@ -231,9 +259,15 @@ def ofpart(label, row):
     return row
 
 
-def ask_row():
-    """The scheme answers with a drawing and prints no words to claim."""
-    return {'kind': 'ask'}
+def ask_row(steps=None, note=None):
+    """The scheme answers with a drawing and prints no words to claim.
+
+    Where the scheme prices the drawing by its parts -- "Each correct pass 1
+    mark" -- the check row is stepped at that price (coordinator, 5 Nov): a
+    criterion whose steps are the printed per-part totals below the whole
+    (`steps`, as crit's) and whose note is the printed price; the drawing
+    stays the answer."""
+    return {'kind': 'ask', 'steps': steps, 'note': note}
 
 
 def unprinted(note):
@@ -292,14 +326,23 @@ class Sitting:
                 self._page_text[key] = ws(fold(d[page - 1].get_text()))
         return self._page_text[key]
 
-    def lift(self, item):
-        """Resolve a Lift, a list of Lifts (joined by a space), or None."""
+    def lift(self, item, note=False):
+        """Resolve a Lift, a list of Lifts (joined by a space), or None. A
+        FigurePointer resolves only in a note."""
         if item is None:
             return None
         if isinstance(item, (list, tuple)):
-            return ' '.join(self.lift(i) for i in item)
+            return ' '.join(self.lift(i, note) for i in item)
+        if isinstance(item, FigurePointer):
+            if not note:
+                raise LaneError(f'{self.year} {self.level}: a figure pointer belongs in a note')
+            return item.text
         if isinstance(item, Pair):
             return f'{self.lift(item.label)} — {self.lift(item.value)}'
+        if isinstance(item, GAt):
+            x0, y0, x1, y1 = item.rect
+            return read_glyph_line(self.docs[item.doc][item.page - 1], y0, y1, x0, x1,
+                                   breaks=item.breaks)
         if isinstance(item, At):
             d = self.docs[item.doc]
             out = ws(d[item.page - 1].get_textbox(pymupdf.Rect(*item.rect)))
@@ -395,14 +438,19 @@ def _blocks(md):
     return md.rstrip('\n') + '\n', cells, glyphs
 
 
-# CambriaMath glyph ids whose reading is SETTLED, each by a sighting where the
+# Maths glyph ids whose reading is SETTLED, each by a sighting where the
 # text layer reads it sanely and the maths confirms it (scheme pages scanned
 # with get_texttrace(); scripts/markbank/derive_glyphs.py's method, applied to
 # the one font the lane needs). The same font's text layer reads some of
 # these ids as another digit elsewhere, which is the fault being repaired.
+# Word embeds the maths glyphs under either name, CambriaMath or Cambria, and
+# the ids are one set: 2023 HL scheme p19 draws "log" as 1812/1815/1807 and its
+# subscript 2 as 2779 under the name Cambria, the ids settled below under
+# CambriaMath on 2021 HL p4, and every id added on 5 Nov reads the same under
+# both names across the corpus (counts below are corpus-wide, both names).
 #   2778 '1', 2779 '2', 2780 '3', 2781 '4': 2021 HL scheme p4, "2^4 = 1.." and
 #       "log2 8 = 3" (2780 is the 3, 2781 the exponent 4); 2779 is also read
-#       '2' on 2020 HL p6.
+#       '2' on 2020 HL p6, 2023 HL p19 and 2024 HL p19.
 #   2784 '7': 2020 HL scheme p6, the exponent of "2^7".
 #   2785 '8': 2021 HL scheme p4, "log2 8 = 3"; 2020 HL p6's text layer reads
 #       the same id as '1' in "128".
@@ -411,57 +459,150 @@ def _blocks(md):
 #   1812 'l', 1815 'o', 1807 'g': the bold maths letters of "log" (2021 HL
 #       p4, "log2 8 = 3"), read so in 2017 LC021ALP000EV p16 (1812), 2014
 #       LC022ALP000EV p8 (1815, 1807); 2021 HL p4 reads all three as 'l'.
-#   (tools: a scan of every corpus scheme's CambriaMath glyph ids, 5 Nov.)
+#   2170 'N', 2171 'O': bold italic N and O, 2023 HL p19 "O(log2 N)" and 2024
+#       HL p19 "N2 - N"; read so every time they are read at all (22 and 24
+#       sightings, first 2017 LC021ALP000EV p16 and 2019 LB830CLP000EV p6).
+#   2196 'n', 2194 'l', 2197 'o', 2189 'g': bold italic n and "log", 2025 HL
+#       p17 "O(n log n)"; read so 131, 42, 25 and 20 times, and on that page.
+#   1866 'n': italic n, 2024 HL paper p17 "O(n2)"; read so 1,927 times.
+#   2870 '2': the script-size 2 Word sets as an exponent, 2024 HL paper p17
+#       "O(n2)", whose text layer reads it as Oriya U+0B36; read '2' 5,441
+#       times (first 2014 LC022ALP000EV p5).
+#   3398 '-' (minus), 3400 'x' (times), 3404 '=', 4666 '(', 4667 ')': the
+#       operators and brackets the text layer files under Malayalam and
+#       Ethiopic code points (U+0D46, U+0D48, U+0D4C, U+123A, U+123B); read so
+#       12,743, 5,319, 30,613, 13,209 and 13,645 times.
+#   Every line read with the ids added on 5 Nov (2022-2025 HL schemes, 2024 HL
+#   paper p17) was rendered at 200 dpi and read against the page.
+#   (tools: a scan of every corpus scheme's Cambria glyph ids, 5 Nov.)
 LANE_GIDS = {('CambriaMath', 2778): '1', ('CambriaMath', 2779): '2', ('CambriaMath', 2780): '3',
              ('CambriaMath', 2781): '4', ('CambriaMath', 2783): '6', ('CambriaMath', 2784): '7',
              ('CambriaMath', 2785): '8', ('CambriaMath', 1812): 'l', ('CambriaMath', 1815): 'o',
-             ('CambriaMath', 1807): 'g'}
+             ('CambriaMath', 1807): 'g', ('CambriaMath', 2170): 'N', ('CambriaMath', 2171): 'O',
+             ('CambriaMath', 2196): 'n', ('CambriaMath', 2194): 'l', ('CambriaMath', 2197): 'o',
+             ('CambriaMath', 2189): 'g', ('CambriaMath', 1866): 'n', ('CambriaMath', 2870): '2',
+             ('CambriaMath', 3398): '−', ('CambriaMath', 3400): '×',
+             ('CambriaMath', 3404): '=', ('CambriaMath', 4666): '(', ('CambriaMath', 4667): ')'}
+MATHS_FONTS = ('Cambria', 'CambriaMath')
 SUPERSCRIPT = str.maketrans('0123456789', '⁰¹²³⁴⁵⁶⁷⁸⁹')
 SUBSCRIPT = str.maketrans('0123456789', '₀₁₂₃₄₅₆₇₈₉')
 
 
-def read_glyph_line(page, y0, y1):
-    """One printed line, read from the glyph trace rather than the text layer.
+def _glyph_reading(family, gid, codepoint):
+    """What one drawn glyph says. A maths-font glyph is read by its id; any
+    maths-font glyph outside plain Latin whose id is not settled stops the
+    read rather than guess. Every other font's text layer is trusted, with
+    the lane's code-point folds."""
+    if family in MATHS_FONTS:
+        if ('CambriaMath', gid) in LANE_GIDS:
+            return LANE_GIDS[('CambriaMath', gid)]
+        if codepoint > 0x7e:
+            raise LaneError(f'{family} glyph {gid} ({chr(codepoint)!r}) has no settled reading')
+    return fold(chr(codepoint))
 
-    Each maths glyph is drawn twice (the second copy has glyph id -1 at the
-    same origin) and its digits are mis-mapped, so the trace is read once per
-    real glyph, CambriaMath digits by LANE_GIDS, and a digit set smaller and
-    raised (or lowered) against the line is written as a superscript (or
-    subscript). A gap wider than 2 pt between spans is a space."""
-    spans = [t for t in page.get_texttrace() if y0 <= t['bbox'][1] and t['bbox'][3] <= y1]
-    if not spans:
-        raise LaneError(f'no glyphs drawn between y {y0} and {y1}')
-    base = max(spans, key=lambda t: t['size'])
-    base_y = base['chars'][0][2][1]
-    out, last_x = '', None
-    for t in spans:
-        fam = re.sub(r'^[A-Z]{6}\+', '', t['font']).split('-')[0].split(',')[0]
+
+def read_glyph_line(page, y0, y1, x0=None, x1=None, breaks=False):
+    """The text printed inside one rectangle, read from the glyph trace rather
+    than the text layer: one printed line, or several read in order.
+
+    Each maths glyph may be drawn twice (the second copy has glyph id -1 at the
+    same origin), and the maths font's text layer mis-maps digits, operators
+    and brackets, so the trace is read once per real glyph and maths glyphs by
+    LANE_GIDS. Printed lines are the baselines of the full-size glyphs; a
+    digit set smaller than its line and raised (or lowered) against that
+    baseline is written as a superscript (or subscript) -- O(n²), log₂ N -- and
+    anything else set small stops the read. A gap wider than 2 pt between two
+    glyphs is a space. Lines join with a space, except that a line ending in a
+    hyphen joins the next line's lower-case word directly ("reverse-sorted").
+
+    A list's second-level bullet is Word's Courier New "o", which the text
+    layer reads as the letter o ("arise: o Who owns the data? o Can the
+    data..."). A Courier New "o" that opens a printed line and stands apart
+    from the word after it is that bullet, and is not read as a letter. With
+    `breaks` (a question, which the app sets line by line), every bulleted
+    line opens a line of its own -- a sub-bullet with no marker, a bullet
+    with its "•" -- as does the first line after a list that starts left of
+    the list's text; without it (a marking-scheme row, set as one run of
+    text) the lines simply follow one another."""
+    glyphs = []
+    for t in page.get_texttrace():
+        family = re.sub(r'^[A-Z]{6}\+', '', t['font']).split('-')[0].split(',')[0]
+        # one trace span can run over several printed lines, so each glyph is
+        # placed by its own baseline origin and box, never by its span's box
         for ch in t['chars']:
-            if ch[1] < 0:
+            if ch[1] < 0 or not y0 <= ch[2][1] <= y1:
                 continue
+            if x0 is not None and not (x0 <= ch[3][0] and ch[3][2] <= x1):
+                continue
+            glyphs.append((family, t['size'], ch))
+    if not glyphs:
+        raise LaneError(f'no glyphs drawn between y {y0} and {y1}')
+    full = 0.85 * max(size for _, size, _ in glyphs)
+    bases = []
+    for y in sorted(ch[2][1] for _, size, ch in glyphs if size >= full):
+        if not bases or y - bases[-1][-1] > 2:
+            bases.append([y])
+        else:
+            bases[-1].append(y)
+    bases = [sum(b) / len(b) for b in bases]
+    lines = [[] for _ in bases]
+    for g in glyphs:
+        lines[min(range(len(bases)), key=lambda i: abs(g[2][2][1] - bases[i]))].append(g)
+    out = []
+    list_indent = None
+    for base_y, line in zip(bases, lines):
+        line = sorted(line, key=lambda g: g[2][2][0])
+        inked = [g for g in line if chr(g[2][0]).strip()]
+        if not inked:
+            continue
+        opens = None
+        first = inked[0]
+        if first[0].startswith('CourierNew') and chr(first[2][0]) == 'o' and len(inked) > 1 \
+                and inked[1][2][3][0] - first[2][3][2] > 2:
+            opens = 'sub'
+            line = [g for g in line if g is not first]
+        elif fold(chr(first[2][0])) == '\u2022':
+            opens = 'bullet'
+        start_x = inked[1][2][3][0] if opens and len(inked) > 1 else first[2][3][0]
+        text, last_x = '', None
+        for family, size, ch in line:
             x, y = ch[2]
-            c = chr(ch[0])
-            if fam == 'CambriaMath' and 0x1D400 <= ch[0] <= 0x1D7FF:
-                if (fam, ch[1]) not in LANE_GIDS:
-                    raise LaneError(f'CambriaMath glyph {ch[1]} ({c!r}) has no settled reading')
-                c = LANE_GIDS[(fam, ch[1])]
-                if t['size'] < 0.85 * base['size'] and c.isdigit():
-                    c = c.translate(SUPERSCRIPT if y < base_y - 1 else SUBSCRIPT)
-            if last_x is not None and x - last_x > 2 and not out.endswith(' ') and c != ' ':
-                out += ' '
-            out += c
-            last_x = x + (ch[3][2] - ch[3][0] if len(ch) > 3 else 0)
-    return ws(out)
+            c = _glyph_reading(family, ch[1], ch[0])
+            if size < full and c.strip():
+                if not c.isdigit() or abs(y - base_y) <= 1:
+                    raise LaneError(f'{c!r} set small at ({x:.1f}, {y:.1f}) is neither an '
+                                    f'exponent nor a subscript digit')
+                c = c.translate(SUPERSCRIPT if y < base_y else SUBSCRIPT)
+            if last_x is not None and x - last_x > 2 and not text.endswith(' ') and c != ' ':
+                text += ' '
+            text += c
+            last_x = x + (ch[3][2] - ch[3][0])
+        text = ws(text)
+        ended = list_indent is not None and not opens and start_x < list_indent - 3
+        if opens:
+            list_indent = start_x
+        elif ended:
+            list_indent = None
+        if out and out[-1].endswith('-') and text[:1].islower():
+            out[-1] += text
+        elif out and breaks and (opens or ended):
+            out.append('\n' + text)
+        else:
+            out.append(text)
+    if breaks:
+        return '\n'.join(ws(p) for p in ' '.join(out).split('\n'))
+    return ws(' '.join(out))
 
 
-def append_glyphs(year, level, page, y0, y1):
-    """Append one scheme line, read by glyph id, to the scheme .md's glyph block
-    (replacing that page's entry): the text the provenance gate compares a
-    G() option against. Append-only, as append_cells."""
+def append_glyphs(year, level, page, y0, y1, x0=None, x1=None):
+    """Append the scheme text inside one rectangle, read by glyph id, to the
+    scheme .md's glyph block (as a new line of that page's entry): the text
+    the provenance gate compares a G() row against. Append-only, as
+    append_cells."""
     path = os.path.join(SCHEMES, f'{year}-{level}.md')
     flat, cells, glyphs = _blocks(open(path, encoding='utf8').read())
     doc = pymupdf.open(os.path.join(SCHEMES, f'{year}-{level}.pdf'))
-    line = read_glyph_line(doc[page - 1], y0, y1)
+    line = read_glyph_line(doc[page - 1], y0, y1, x0, x1)
     entries = dict(re.findall(r'<!-- compsci:glyphs page (\d+) -->\n(.*?)\n(?=<!--)', glyphs, re.S))
     have = entries.get(str(page), '')
     if line not in have.split('\n'):
@@ -555,7 +696,14 @@ def build_row(sitting, spec, i, question_text, where):
         return {'id': rid, 'kind': 'criterion', 'verbatim': UNPRINTED_ANSWER, 'marks': None,
                 'unprinted': True, 'contextNote': sitting.lift(spec['note'])}
     if kind == 'ask':
-        return {'id': rid, 'kind': 'point', 'verbatim': question_text, 'marks': None, 'ask': True}
+        if spec.get('steps') is None:
+            return {'id': rid, 'kind': 'point', 'verbatim': question_text, 'marks': None, 'ask': True}
+        row = {'id': rid, 'kind': 'criterion', 'verbatim': question_text, 'marks': None,
+               'permittedMarks': [0] + list(spec['steps']), 'ask': True}
+        if spec.get('note') is None:
+            raise LaneError(f'{where}: a stepped check row quotes the scheme\'s per-part price')
+        row['contextNote'] = check_note(where, sitting.lift(spec['note'], note=True))
+        return row
     if kind == 'anyN':
         options = [sitting.lift(o) for o in spec['options']]
         for o in options:
@@ -576,7 +724,7 @@ def build_row(sitting, spec, i, question_text, where):
             row['openList'] = True
         note = [n for n in (spec.get('note'), spec.get('instruction')) if n is not None]
         if note:
-            row['contextNote'] = check_note(where, ' '.join(sitting.lift(n) for n in note))
+            row['contextNote'] = check_note(where, ' '.join(sitting.lift(n, note=True) for n in note))
         if spec.get('route'):
             row['route'] = spec['route']
         return row
@@ -600,7 +748,7 @@ def build_row(sitting, spec, i, question_text, where):
             row['accepts'] = options[1:]
         note = [n for n in (spec.get('head'), spec.get('instruction'), spec.get('note')) if n is not None]
         if note:
-            row['contextNote'] = check_note(where, ' '.join(sitting.lift(n) for n in note))
+            row['contextNote'] = check_note(where, ' '.join(sitting.lift(n, note=True) for n in note))
         if spec.get('route'):
             row['route'] = spec['route']
         return row
@@ -630,7 +778,7 @@ def build_row(sitting, spec, i, question_text, where):
             raise LaneError(f'{where}: criterion steps {steps} are not ascending')
         row['permittedMarks'] = steps
     if spec.get('note'):
-        row['contextNote'] = check_note(where, sitting.lift(spec['note']))
+        row['contextNote'] = check_note(where, sitting.lift(spec['note'], note=True))
     if spec.get('route'):
         row['route'] = spec['route']
     return row
@@ -707,6 +855,11 @@ def build_card(sitting, mod, entry, figures):
                                     f'{" on route " + name if name else ""}, the tariff is {total}')
     if any(r.get('ask') for r in rows) and len(rows) == 1:
         rows[0]['marks'] = total
+        if 'permittedMarks' in rows[0]:
+            steps = rows[0]['permittedMarks'] + [total]
+            if steps != sorted(set(steps)):
+                raise LaneError(f'{where}: check-row steps {steps} are not ascending')
+            rows[0]['permittedMarks'] = steps
     if any(r.get('unprinted') for r in rows):
         rows[0]['marks'] = total
     card = {
@@ -1047,7 +1200,8 @@ def main(argv):
         for old, new in write_aliases(int(argv[2]), argv[3]).items():
             print(f'{old} -> {new}')
     elif cmd == 'glyphs':
-        print(append_glyphs(int(argv[2]), argv[3], int(argv[4]), float(argv[5]), float(argv[6])))
+        xs = [float(x) for x in argv[7:9]] if len(argv) > 8 else [None, None]
+        print(append_glyphs(int(argv[2]), argv[3], int(argv[4]), float(argv[5]), float(argv[6]), *xs))
     elif cmd == 'cells':
         n = append_cells(int(argv[2]), argv[3], [int(x) for x in argv[4].split(',')])
         print(f'{n} lines in the cells block')

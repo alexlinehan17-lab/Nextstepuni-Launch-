@@ -3246,7 +3246,7 @@
    {
     "id": "r-1",
     "kind": "criterion",
-    "verbatim": "Worst case is O(n2) – list in reverse order. For each of the n elements there are n comparisons required to make the insertion at the correct positon. AND • Average case is also O(n2) / best case is O(n) – list is already sorted so no there is need to execute inner loop.",
+    "verbatim": "Worst case is O(n²) – list in reverse order. For each of the n elements there are n comparisons required to make the insertion at the correct positon. AND Average case is also O(n²) / best case is O(n) – list is already sorted so no there is need to execute inner loop.",
     "marks": 5,
     "permittedMarks": [
      0,
@@ -4958,7 +4958,7 @@
      "Screen magnifier - software that provides enlarged screen content for visual impairments",
      "Sip-and-puff - device that allows users to enter commands into a computer system via mouth"
     ],
-    "contextNote": "Accept any other relevant examples and explanations such as, o Large monitors. o Alternative types of keyboard and mouse (e.g. on-screen keyboards, keyboard with modifications, etc.). o Accessibility tools built into popular OS, browsers, and application software (e.g. software to adjust screen colours, font characteristics, magnification applications, keyboard filters, etc.). o Computers with voice output. o Word prediction software. o Adapted pointing/input devices (e.g. gesture devices, eyeball tracking devices, chin pointing devices etc.). o Wands and sticks. o Joysticks. o Trackballs. o Touch screens. For each correctly identified type of technology 1 mark For each technology: Very good description - clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks"
+    "contextNote": "Accept any other relevant examples and explanations such as, Large monitors. Alternative types of keyboard and mouse (e.g. on-screen keyboards, keyboard with modifications, etc.). Accessibility tools built into popular OS, browsers, and application software (e.g. software to adjust screen colours, font characteristics, magnification applications, keyboard filters, etc.). Computers with voice output. Word prediction software. Adapted pointing/input devices (e.g. gesture devices, eyeball tracking devices, chin pointing devices etc.). Wands and sticks. Joysticks. Trackballs. Touch screens. For each correctly identified type of technology 1 mark For each technology: Very good description - clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks"
    }
   ],
   "stem": "The National Hub Network is an initiative set up by the Irish Government to allow people across Ireland to work closer to home through providing digital working hubs with modern facilities and high-speed internet connections. There are over 260 working hub locations spread across Ireland with over 4000 desks available. Many of these hubs have been set up in rural and remote areas."
@@ -5074,7 +5074,7 @@
    {
     "id": "r-2",
     "kind": "criterion",
-    "verbatim": "Privacy (data protection risks – questions such as the following arise: o Who owns the data? o Can the data be retained and, if so, for how long? o What can the data be used for?",
+    "verbatim": "Privacy (data protection risks – questions such as the following arise: Who owns the data? Can the data be retained and, if so, for how long? What can the data be used for?",
     "marks": 6,
     "permittedMarks": [
      0,
@@ -5487,7 +5487,7 @@
    {
     "id": "r-2",
     "kind": "criterion",
-    "verbatim": "Binary Search O(1) 𝑶(𝐥𝐨𝐠𝟐 𝑵)",
+    "verbatim": "Binary Search O(1) O(log₂ N)",
     "marks": 2,
     "permittedMarks": [
      0,
@@ -5950,7 +5950,7 @@
   "subjectId": "computer-science",
   "section": "C",
   "questionRef": "2023 HL Q16(b)",
-  "questionText": "Implement a number guessing game in Python. The game requires the user to guess a random number between 1 and 100 and they are awarded points based on how close they get to the number. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. The game should proceed according to the following sequence: • The user’s score is set to zero. • At the start of every new round the computer generates a random number between 1 and 100. This is the secret number that the user is trying to guess. • The user is then prompted to enter a guess as shown below. Enter your guess: • Calculate the difference between the secret number and the user guess. • The numbers are then displayed in a meaningful message on a single line as shown below. Secret number is 55. You guessed 50. Difference is 5. • The numbers are compared and the score is updated according the following rules: o If the user’s guess and the secret number are the same then the score is increased by 100 and the message \"JACKPOT!!! You score 100 points\" is displayed. o If the user’s guess is within 20 (either side) of the secret number the user’s score is increased by 20 and the message \"You score 20 points\" is displayed. o If the user’s guess is more than 30 away from the secret number the user’s score is decreased by 30 and the message \"You lose 30 points\" is displayed. • At the end of each round the score is displayed and user is prompted with the message “Play again? (Y/N):” • The game ends when the user enters anything other than the single letter ‘Y’.",
+  "questionText": "Implement a number guessing game in Python. The game requires the user to guess a random number between 1 and 100 and they are awarded points based on how close they get to the number. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. The game should proceed according to the following sequence:\n• The user’s score is set to zero.\n• At the start of every new round the computer generates a random number between 1 and 100. This is the secret number that the user is trying to guess.\n• The user is then prompted to enter a guess as shown below. Enter your guess:\n• Calculate the difference between the secret number and the user guess.\n• The numbers are then displayed in a meaningful message on a single line as shown below. Secret number is 55. You guessed 50. Difference is 5.\n• The numbers are compared and the score is updated according the following rules:\nIf the user’s guess and the secret number are the same then the score is increased by 100 and the message \"JACKPOT!!! You score 100 points\" is displayed.\nIf the user’s guess is within 20 (either side) of the secret number the user’s score is increased by 20 and the message \"You score 20 points\" is displayed.\nIf the user’s guess is more than 30 away from the secret number the user’s score is decreased by 30 and the message \"You lose 30 points\" is displayed.\n• At the end of each round the score is displayed and user is prompted with the message “Play again? (Y/N):”\n• The game ends when the user enters anything other than the single letter ‘Y’.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6308,7 +6308,7 @@
    {
     "id": "r-3",
     "kind": "criterion",
-    "verbatim": "(b) — String slicing: o Step 5 of the algorithm slices the first two characters of the first_name. o Step 6 of the algorithm slices characters from positon 4 to 7 inclusive. Assuming ddmmyyyy format, this extracts the 4-digit year of birth from the date of birth.",
+    "verbatim": "(b) — String slicing: Step 5 of the algorithm slices the first two characters of the first_name. Step 6 of the algorithm slices characters from positon 4 to 7 inclusive. Assuming ddmmyyyy format, this extracts the 4-digit year of birth from the date of birth.",
     "marks": 2,
     "permittedMarks": [
      0,
@@ -6320,7 +6320,7 @@
    {
     "id": "r-4",
     "kind": "criterion",
-    "verbatim": "(b) — String concatenation: o Step 7 of the algorithm concatenates the 2 characters from the first name followed by the surname followed by the 4 digit year of birth to determine the username.",
+    "verbatim": "(b) — String concatenation: Step 7 of the algorithm concatenates the 2 characters from the first name followed by the surname followed by the 4 digit year of birth to determine the username.",
     "marks": 2,
     "permittedMarks": [
      0,
@@ -8577,13 +8577,13 @@
  {
   "id": "cs-2024-hl-q14-c-ii",
   "topicId": "cs-2-2",
-  "conceptId": "bubble-sort-algorithm-has-o-best",
+  "conceptId": "bubble-sort-algorithm-has-o-n",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
   "section": "B",
   "questionRef": "2024 HL Q14(c)(ii)",
-  "questionText": "The bubble sort algorithm has O(𝑛ଶ) best and worst case time complexity. Explain what this means in terms of the number of compare operations performed.",
+  "questionText": "The bubble sort algorithm has O(n²) best and worst case time complexity. Explain what this means in terms of the number of compare operations performed.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -8592,7 +8592,7 @@
    {
     "id": "r-1",
     "kind": "criterion",
-    "verbatim": "In a list of size N the bubble sort algorithm performs N passes. On each pass it will perform N-1 compare operations. This gives a total of 𝑵𝟐 −𝑵 operations. For large N this is approximately the same as 𝑵𝟐. Hence we write O(𝑵𝟐). • The best-case scenario is when the input list is already sorted. The worst-case scenario is when the input list is in reverse order. In both scenarios bubble sort will also carry out the same number of comparisons. • As the number of elements increases the number of compare operations increases quadratically (by a power of 2). For example, the number of compare operations carried out by a bubble sort algorithm on a list of size 5 would be of the order of 25. If you double the size of the input list, the number of compare operations could increase by a factor of four.",
+    "verbatim": "In a list of size N the bubble sort algorithm performs N passes. On each pass it will perform N-1 compare operations. This gives a total of N² − N operations. For large N this is approximately the same as N². Hence we write O(N²). • The best-case scenario is when the input list is already sorted. The worst-case scenario is when the input list is in reverse order. In both scenarios bubble sort will also carry out the same number of comparisons. • As the number of elements increases the number of compare operations increases quadratically (by a power of 2). For example, the number of compare operations carried out by a bubble sort algorithm on a list of size 5 would be of the order of 25. If you double the size of the input list, the number of compare operations could increase by a factor of four.",
     "marks": 5,
     "permittedMarks": [
      0,
@@ -11515,7 +11515,7 @@
    {
     "id": "r-1",
     "kind": "criterion",
-    "verbatim": "Best case: — each pivot divides the list evenly into two halves. This results in a balanced recursion tree with about 𝒍𝒐𝒈 𝒏 levels. At each level, the algorithm processes all n elements once during partitioning, so the total work done across all levels is 𝒏 ൈ 𝒍𝒐𝒈 𝒏.",
+    "verbatim": "Best case: — The best-case time complexity of quicksort is O(n log n) because, in this scenario, each pivot divides the list evenly into two halves. This results in a balanced recursion tree with about log n levels. At each level, the algorithm processes all n elements once during partitioning, so the total work done across all levels is n × log n.",
     "marks": 2,
     "permittedMarks": [
      0,
@@ -11527,7 +11527,7 @@
    {
     "id": "r-2",
     "kind": "criterion",
-    "verbatim": "Worst case: — This happens when the pivot repeatedly creates very unbalanced splits, such as when it is always the smallest or largest element in the list. Instead of dividing the list in half, one sub list ends up with n - 1 elements and the other with 0, creating a recursion tree with n levels.",
+    "verbatim": "Worst case: — The worst-case time complexity of quicksort is O(n²). This happens when the pivot repeatedly creates very unbalanced splits, such as when it is always the smallest or largest element in the list. Instead of dividing the list in half, one sub list ends up with n - 1 elements and the other with 0, creating a recursion tree with n levels. Since the algorithm still processes n elements at each level, the total number of operations becomes n × n = O(n²). This makes quicksort inefficient in the worst case, especially on already sorted or reverse-sorted lists if no precautions are taken.",
     "marks": 2,
     "permittedMarks": [
      0,
@@ -11999,7 +11999,7 @@
   "subjectId": "computer-science",
   "section": "C",
   "questionRef": "2025 HL Q16(b)",
-  "questionText": "Write a Python program to find the median of a list of zero or more values. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should meet the following requirements: • Initialise a list of integers. • Display the list. • Sort the list. • Display the sorted list. • Determine the median by examining the list length. o Odd: The number of elements divided by 2 will have a remainder of 1. In this case the median is the element at the middle position of the sorted list. o Even: The number of elements divided by 2 will have no remainder. In this case the median is the mean of the two middle elements in the sorted list. • Display the median. • Display an error message if the list is empty. Note: 1. You may not make use of the statistics.median(), numpy.median() or any other Python library median function in your solution. You must write the code to calculate the median yourself. 2. You should test that your program works with an even and odd number of values. 3. You should test that your program works with an empty list.",
+  "questionText": "Write a Python program to find the median of a list of zero or more values. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should meet the following requirements:\n• Initialise a list of integers.\n• Display the list.\n• Sort the list.\n• Display the sorted list.\n• Determine the median by examining the list length.\nOdd: The number of elements divided by 2 will have a remainder of 1. In this case the median is the element at the middle position of the sorted list.\nEven: The number of elements divided by 2 will have no remainder. In this case the median is the mean of the two middle elements in the sorted list.\n• Display the median.\n• Display an error message if the list is empty.\nNote: 1. You may not make use of the statistics.median(), numpy.median() or any other Python library median function in your solution. You must write the code to calculate the median yourself. 2. You should test that your program works with an even and odd number of values. 3. You should test that your program works with an empty list.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -20629,10 +20629,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "The diagram below sets out the operation of the bubble sort algorithm to sort the list of integers [8, 5, 9, 7, 6]. The algorithm works by scanning over the data in four passes. The diagram is complete for pass 1 and started for pass 2. Complete the diagram for passes 2, 3 and 4. You only need to fill in the numbers.",
     "marks": 5,
-    "ask": true
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "ask": true,
+    "contextNote": "Each correct step 1 mark"
    }
   ],
   "figureKey": "computer-science-2020-HL-scheme-q8",
@@ -21203,10 +21212,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Starting from an initial state of S1 and an input of 10110B, as shown on the tape diagram below, show how the Turing Machine produces an output of 101100. In your answer you should trace the computation clearly by showing the contents of the tape at the end of each state transition. You should complete the tape and the current state for each row. You can assume that the read/write head is moved one place to the right at the end of each step. The first two rows have been completed for you.",
     "marks": 4,
-    "ask": true
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "ask": true,
+    "contextNote": "Each correct row 1 mark"
    }
   ],
   "stem": "Alan Turing is widely regarded as one of the founders of computer science because of his work on the development of the Turing Machine and the Turing Test. The illustration below depicts a Finite State Machine which, for a particular Turing Machine, defines two states, S1 and S2, and three transitions. Study the illustration and answer the questions that follow.",
@@ -22095,28 +22112,52 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "criterion",
-    "verbatim": "Software Developer o Writing and testing code for applications. o Collaborating with teams to design software solutions.",
-    "marks": 6,
-    "permittedMarks": [
-     0,
-     1,
-     2,
-     3,
-     4,
-     5,
-     6
-    ],
-    "accepts": [
-     "Web Developer o Building and maintaining websites. o Ensuring websites are optimized for performance and usability.",
-     "Data Analyst o Analysing datasets to extract meaningful insights. o Creating visualisations and reports to present findings.",
-     "Cybersecurity Analyst o Monitoring systems for security breaches. o Implementing measures to protect sensitive data.",
-     "IT Support Specialist o Troubleshooting hardware and software issues for users. o Installing and configuring computer systems.",
-     "Network Administrator o Managing and maintaining computer networks. o Ensuring network security and performance.",
-     "Game Developer o Designing and programming video games. o Testing games for bugs and optimizing gameplay.",
-     "UX/UI Designer o Creating wireframes and prototypes for software or websites. o Conducting user testing to improve product usability."
-    ],
+    "kind": "anyN",
+    "verbatim": "Valid name 1 mark",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Software Developer",
+      "Web Developer",
+      "Data Analyst",
+      "Cybersecurity Analyst",
+      "IT Support Specialist",
+      "Network Administrator",
+      "Game Developer",
+      "UX/UI Designer"
+     ]
+    },
     "contextNote": "For each: Valid name 1 mark Each valid activity 1 mark (max 2)"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Each valid activity 1 mark (max 2)",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "Software Developer — Writing and testing code for applications.",
+      "Software Developer — Collaborating with teams to design software solutions.",
+      "Web Developer — Building and maintaining websites.",
+      "Web Developer — Ensuring websites are optimized for performance and usability.",
+      "Data Analyst — Analysing datasets to extract meaningful insights.",
+      "Data Analyst — Creating visualisations and reports to present findings.",
+      "Cybersecurity Analyst — Monitoring systems for security breaches.",
+      "Cybersecurity Analyst — Implementing measures to protect sensitive data.",
+      "IT Support Specialist — Troubleshooting hardware and software issues for users.",
+      "IT Support Specialist — Installing and configuring computer systems.",
+      "Network Administrator — Managing and maintaining computer networks.",
+      "Network Administrator — Ensuring network security and performance.",
+      "Game Developer — Designing and programming video games.",
+      "Game Developer — Testing games for bugs and optimizing gameplay.",
+      "UX/UI Designer — Creating wireframes and prototypes for software or websites.",
+      "UX/UI Designer — Conducting user testing to improve product usability."
+     ]
+    }
    }
   ]
  },
@@ -22334,10 +22375,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Apply the algorithm to sort the list of integers [15, 28, 14, 21] showing the state of both lists after each pass of the algorithm. Pass #1 has been completed for you. You only need to fill in the numbers for passes 2, 3 and 4.",
     "marks": 3,
-    "ask": true
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "ask": true,
+    "contextNote": "Each correct pass 1 mark"
    }
   ],
   "stem": "A simplified version of the selection sort algorithm involves the use of two lists called list1 and list2. At the start of the algorithm the elements in list1 are unsorted, and list2 is empty as shown. At the end of the algorithm list1 is empty, and list2 contains the elements that were in list1 at the start, now sorted in ascending order. The algorithm is described by the following pseudo-code:",
@@ -22362,10 +22410,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Fill in the empty boxes below to complete passes 3, 4, 5 and 6 of the insertion sort.",
     "marks": 4,
-    "ask": true
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "ask": true,
+    "contextNote": "Each correct pass 1 mark"
    }
   ],
   "stem": "A bookshelf is partially sorted, in alphabetic order, using the insertion sort algorithm as shown in Figure 4 below.",
@@ -22838,13 +22894,14 @@
     "kind": "point",
     "verbatim": "1",
     "marks": 3,
-    "contextNote": "Both correct 6 marks One correct 3 marks"
+    "contextNote": "First gate in the figure. Both correct 6 marks One correct 3 marks"
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "0",
-    "marks": 3
+    "marks": 3,
+    "contextNote": "Second gate in the figure."
    }
   ],
   "figureKey": "computer-science-2021-OL-scheme-q15b-i",

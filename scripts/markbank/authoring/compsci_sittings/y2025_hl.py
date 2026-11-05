@@ -26,7 +26,7 @@ line among the answers that is not an answer ("Any other valid ...") is its
 instruction. Q10's two-column table (examples beside limitations) is read from
 the cells block of scheme page 8, Q16(b)'s rubric from the cells of page 27.
 """
-from compsci_lane import (C, P, S, T, anyn, crit, crop, ladder, pt, stack)  # noqa: F401
+from compsci_lane import (C, G, GAt, P, S, T, anyn, crit, crop, ladder, pt, stack)  # noqa: F401
 
 CROPS = {
     'q3-table': crop('038', 4, (88, 359, 507, 474), ref='2025 HL Q3',
@@ -534,15 +534,15 @@ CARDS = [
                   '"Best case:" worth 4; now Figure 4, each case at 2 / 1, and the scheme\'s '
                   'answer as printed',
          why='p16: best and worst-case complexity from Figure 4; the scheme answers each, 2 / 1; '
-             'its O(n log n) and O(n squared) are set in a font whose brackets the text layer '
-             'cannot read, so each row lifts the explanation around them and the scheme\'s text '
-             'is the solution crop',
+             'its O(n log n) and O(n squared) are set in a maths font whose brackets, operators '
+             'and exponent the text layer cannot read, so each case is read by glyph id (scheme '
+             'p17) and lifted whole',
          stem=Q14C, ask=P(16, 'Referring to Figure 4 below', 'quicksort algorithm.'),
-         rows=[crit(S(17, 'each pivot divides the list evenly into two halves.', 'all levels is 𝒏 ൈ 𝒍𝒐𝒈 𝒏.'), 2, [1],
+         rows=[crit(G(17, 'The best-case time complexity of quicksort', 'all levels is n × log n.'), 2, [1],
                     head=S(17, 'Best case:'),
                     note=S(17, 'For each case (best and worst):', 'Fair explanation – limited understanding 1 mark')),
-               crit(S(17, 'This happens when the pivot repeatedly creates very unbalanced splits',
-                      'creating a recursion tree with n levels.'), 2, [1], head=S(17, 'Worst case:'))]),
+               crit(G(17, 'The worst-case time complexity of quicksort', 'if no precautions are taken.'),
+                    2, [1], head=S(17, 'Worst case:'))]),
     dict(key=(15, 'a', 'i'), topic='cs-3-3', qfigure='q15-fig0', total=1,
          replaces='batch 1b: the stem was the dataset as text, the dataset the answer figure, '
                   'and the row "Output variable:"; now the model\'s stem, Figure 5 beside the '
@@ -722,7 +722,7 @@ CARDS = [
              'rubric of four criteria at high / moderate / low (cells of scheme p27): inputs 5 / '
              '4 / 3, logic 10 / 7 / 5, outputs 5 / 4 / 3, standards 10 / 7 / 5',
          stem=C(8, 'The median of a list of values is the middle value', 'then dividing the result by two.'),
-         ask=C(8, 'Write a Python program to find the median', 'works with an empty list.'),
+         ask=GAt('040', 8, (80, 322, 560, 655), breaks=True),
          rows=[crit(T(27, 'Initial list of integers correctly initialised', 'use of assignment statements'),
                     5, [3, 4], head=T(27, 'Inputs'),
                     note=[T(27, 'High level of achievement All of the following', 'correctly and efficiently'),

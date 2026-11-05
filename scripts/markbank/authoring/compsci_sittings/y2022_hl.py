@@ -22,7 +22,7 @@ Section C's A-5 scale is "0, 5" in the scheme's own scale table (page 3), so
 (i) and (iv) are all or nothing; (ii), (iii) are B-5 (0, 2, 3, 5), (v), (vi)
 B-10 (0, 3, 7, 10) and (vii) C-10 (0, 3, 5, 8, 10).
 """
-from compsci_lane import (C, P, Pair, S, T, anyn, ask_row, crit, crop, ladder, ofpart, pt, stack)  # noqa: F401
+from compsci_lane import (C, G, P, Pair, S, T, anyn, ask_row, crit, crop, ladder, ofpart, pt, stack)  # noqa: F401
 
 WITHDRAWN = {'cs-2022-hl-q14': 'cs-2022-hl-q14-a-i'}
 
@@ -481,10 +481,11 @@ CARDS = [
                      S(14, 'Accept terms and conditions?')], 1, 1, head=S(14, 'Boolean'))]),
     dict(key=(14, 'a', 'i'), topic='cs-2-2', qfigure='q14a-i', figure='s-q14a-i', total=3,
          why='p16-17: fill in passes 2 to 4 of the two-list selection sort; the scheme draws the '
-             'three states, 1 a pass. Split out of the withdrawn whole-question card cs-2022-hl-q14',
+             'three states, 1 a pass, so the check row steps 1 a pass under the drawing. Split out '
+             'of the withdrawn whole-question card cs-2022-hl-q14',
          stem=Q14A_STEM,
          ask=P(16, 'Apply the algorithm to sort the list of integers', 'fill in the numbers for passes 2, 3 and 4.'),
-         rows=[ask_row()]),
+         rows=[ask_row([1, 2], note=S(14, 'Each correct pass 1 mark'))]),
     dict(key=(14, 'a', 'ii'), topic='cs-2-2', qfigure='q14a-algo', total=2,
          replaces='batch 1b: the stem was cut at "1." of the pseudo-code and the lists were '
                   'lost; the figure carried the ask and sat on the answer side',
@@ -527,11 +528,12 @@ CARDS = [
                           S(15, 'Very good description - clear understanding demonstrated 3 marks',
                             'Fair description - limited understanding 1 mark', nth=2)])]),
     dict(key=(14, 'b', 'i'), topic='cs-2-2', qfigure='q14b-i', figure='s-q14b-i', total=4,
-         why='p19: fill in passes 3 to 6 of the insertion sort; the scheme draws them, 1 a pass. '
-             'Split out of the withdrawn whole-question card cs-2022-hl-q14',
+         why='p19: fill in passes 3 to 6 of the insertion sort; the scheme draws them, 1 a pass, '
+             'so the check row steps 1 a pass under the drawing. Split out of the withdrawn '
+             'whole-question card cs-2022-hl-q14',
          stem=P(19, 'A bookshelf is partially sorted, in alphabetic order', 'as shown in Figure 4 below.'),
          ask=P(19, 'Fill in the empty boxes below to complete passes 3, 4, 5 and 6 of the insertion sort.'),
-         rows=[ask_row()]),
+         rows=[ask_row([1, 2, 3], note=S(15, 'Each correct pass 1 mark'))]),
     dict(key=(14, 'b', 'ii'), topic='cs-2-2', total=4,
          replaces='batch 1b: the answer was 2 and "Pseudocode / flowchart / code are also '
                   'acceptable." another row of 2; the stem was "Figure 4 This question continues '
@@ -557,10 +559,11 @@ CARDS = [
     dict(key=(14, 'b', 'iv'), topic='cs-2-2', total=5,
          replaces='batch 1b: the answer was cut and all or nothing at 5 against a 5 / 3 / 1 '
                   'scale; Q14(a)\'s figure sat on the answer side',
-         why='p20: insertion sort in Big O; the scheme answers it, 5 / 3 / 1 (the text layer '
-             'reads O(n squared) as "O(n2)")',
+         why='p20: insertion sort in Big O; the scheme answers it, 5 / 3 / 1; the text layer '
+             'reads O(n squared) as "O(n2)", so the answer is read by glyph id (scheme p16), '
+             'which sees the 2 set small and raised',
          ask=P(20, '"Big O" notation is used to describe the complexity', 'using "Big O" notation.'),
-         rows=[crit(S(16, 'Worst case is O(n2) – list in reverse order.', 'no there is need to execute inner loop.'),
+         rows=[crit(G(16, 'Worst case is O(n²) – list in reverse order.', 'no there is need to execute inner loop.'),
                     5, [1, 3],
                     note=S(16, 'Very good discussion - clear understanding demonstrated 5 marks',
                            'Fair discussion - limited understanding 1 mark'))]),

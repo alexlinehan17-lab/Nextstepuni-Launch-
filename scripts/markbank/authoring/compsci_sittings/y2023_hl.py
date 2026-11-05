@@ -24,7 +24,7 @@ carry the paper's prose, and q16-figure the prose above the listing, so those
 questions have crops of their own. Q16(b)'s rubric is read from the cells of
 scheme page 26.
 """
-from compsci_lane import (C, P, Pair, S, T, anyn, crit, crop, ladder, ofpart, pt, stack, unprinted)  # noqa: F401
+from compsci_lane import (C, G, GAt, P, Pair, S, T, anyn, crit, crop, ladder, ofpart, pt, stack, unprinted)  # noqa: F401
 
 LISTING16 = ('040', 4, (60, 441, 568, 721))
 
@@ -333,9 +333,9 @@ CARDS = [
                                        note=S(10, 'Note: No marks awarded for actual names',
                                               'Each correct response (1 input and 1 output) 1 mark'))),
                ofpart(P(10, '(a)'), pt(S(10, 'Valid output: username.'), 1)),
-               ofpart(P(10, '(b)'), crit(S(10, 'String slicing: o Step 5 of the algorithm', 'year of birth from the date of birth.'),
+               ofpart(P(10, '(b)'), crit(G(10, 'String slicing: Step 5 of the algorithm', 'year of birth from the date of birth.'),
                                          2, [1], note=S(10, 'For each explanation:', 'Fair explanation - limited understanding 1 mark'))),
-               ofpart(P(10, '(b)'), crit(S(10, 'String concatenation: o Step 7 of the algorithm', 'to determine the username.'),
+               ofpart(P(10, '(b)'), crit(G(10, 'String concatenation: Step 7 of the algorithm', 'to determine the username.'),
                                          2, [1]))]),
     dict(key=(12, None, None), topic='cs-1-3', qfigure='q12-fig0', total=6,
          replaces='batch 1b: the SDLC figure was the answer figure and the reasons and testing '
@@ -406,7 +406,7 @@ CARDS = [
                        S(13, 'Screen magnifier - software that provides', 'for visual impairments'),
                        S(13, 'Sip-and-puff - device that allows users', 'computer system via mouth')],
                       [[1, 2, 3, 4], [1, 2, 3, 4]],
-                      instruction=S(13, 'Accept any other relevant examples and explanations such as,', 'o Touch screens.'),
+                      instruction=G(13, 'Accept any other relevant examples and explanations such as,', 'Touch screens.'),
                       note=S(13, 'For each correctly identified type of technology 1 mark',
                              'Fair description – limited understanding 2 marks'))]),
     dict(key=(13, 'b', 'i'), topic='cs-1-1', qfigure='q13b-fig8', total=2,
@@ -450,7 +450,7 @@ CARDS = [
                        S(14, 'Control measures can be put in place', 'GDPR can protect privacy.')], [[2, 3], [2, 3]],
                       head=S(14, 'For', nth=2), instruction=S(14, 'Accept any other reasonable positive argument.'),
                       note=S(15, 'For each argument:', 'Fair argument - limited understanding 2 marks')),
-               ladder([S(14, 'Privacy (data protection risks', 'What can the data be used for?'),
+               ladder([G(14, 'Privacy (data protection risks', 'What can the data be used for?'),
                        S(15, 'Potential errors leading to mistaken identities.'),
                        S(15, 'Bias. For example, if system is trained', 'in other types of systems, discrimination).')],
                       [[2, 3], [2, 3]], head=S(14, 'Against'),
@@ -591,10 +591,12 @@ CARDS = [
                   'blanks (linear worst, binary best and worst) at 1 each with the scheme\'s table; '
                   'topic Algorithms',
          why='p18: complete the best and worst cases; the scheme prints O(N) for linear worst and '
-             'O(1) and O(log2 N) for binary, each 1; filed under Algorithms, not Computer systems',
+             'O(1) and O(log2 N) for binary, each 1; filed under Algorithms, not Computer systems; '
+             'the binary row is read by glyph id (scheme p19), whose O(log2 N) the text layer '
+             'reads in maths letters with its subscript flattened',
          stem=Q15A, ask=P(18, 'Complete the table below to show the best and worst case', 'size of the input is N.'),
          rows=[pt(S(19, 'Linear Search O(1) O(N)'), 1, note=S(19, 'Each correct response 1 mark', nth=1)),
-               crit(S(19, 'Binary Search O(1) 𝑶(𝐥𝐨𝐠𝟐 𝑵)'), 2, [1])]),
+               crit(G(19, 'Binary Search O(1) O(log₂ N)'), 2, [1])]),
     dict(key=(15, 'a', 'v'), topic='cs-2-2', total=3,
          replaces='batch 1b: an unrelated table was attached and the answer, cut mid-sentence, was '
                   'all or nothing; now the whole answer at 3 / 2',
@@ -719,7 +721,7 @@ CARDS = [
          why='040 p8-9: write the points-scoring guessing game; the scheme prints a possible '
              'solution and a rubric of four criteria at high / moderate / low (cells of scheme '
              'p26): standards 5 / 4 / 3, inputs 5 / 4 / 3, logic 10 / 7 / 5, outputs 10 / 7 / 5',
-         ask=C(8, 'Implement a number guessing game in Python.', 'other than the single letter ‘Y’.'),
+         ask=GAt('040', 8, (95, 185, 560, 680), breaks=True),
          rows=[crit(T(26, 'Program executes correctly with no syntax or runtime errors', 'Meaningful variable/function names'),
                     5, [3, 4], head=T(26, 'Programming Standards'),
                     note=[T(26, 'High level of achievement All of the following', 'correctly and efficiently'),
