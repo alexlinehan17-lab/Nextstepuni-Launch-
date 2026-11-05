@@ -4081,7 +4081,8 @@
     "id": "r-4",
     "kind": "point",
     "verbatim": "print(a/b) 0.5",
-    "marks": 1
+    "marks": 1,
+    "contextNote": "Note: ½ is not a correct answer for print(a/b)"
    },
    {
     "id": "r-5",
@@ -4188,7 +4189,7 @@
    {
     "id": "r-1",
     "kind": "criterion",
-    "verbatim": "Primary storage is contained within the device (RAM and ROM). It is often known as internal memory. Secondary storage can be connected to the device USB, hard- drive.",
+    "verbatim": "Primary storage is contained within the device (RAM and ROM). It is often known as internal memory. Secondary storage can be connected to the device USB, hard-drive.",
     "marks": 5,
     "permittedMarks": [
      0,
@@ -4199,7 +4200,7 @@
      5
     ],
     "accepts": [
-     "Primary storage can be volatile and non-volatile. Secondary storage is always non- volatile storage.",
+     "Primary storage can be volatile and non-volatile. Secondary storage is always non-volatile storage.",
      "Secondary storage has slower access times than primary storage",
      "Primary storage is usually more expensive than secondary storage."
     ],
@@ -6152,7 +6153,7 @@
     "accepts": [
      "Command line interface (CLI) - provides a method of interaction that is non-graphical, called the command line interface (CLI). This is a text-only service with feedback from the OS appearing in text. Using a CLI requires knowledge of the commands available on a particular machine.",
      "Menu driven interfaces - user can select from a number of options, then typically only move up, down, back & forward. Often used in menus for food, tickets etc.",
-     "Touch user interface - this is a type of interaction between a user and a computer- based device. This interaction is by doing a physical touch on the screen and the computer responds to this touch interaction.",
+     "Touch user interface - this is a type of interaction between a user and a computer-based device. This interaction is by doing a physical touch on the screen and the computer responds to this touch interaction.",
      "Natural Language interface (NLI) / Voice user interfaces (VUI) - these allow the user to interact with a system through voice or speech commands. Virtual assistants, such as Siri, Google Assistant, and Alexa, are examples of these type of interfaces."
     ],
     "contextNote": "(b) Any other acceptable response such as virtual reality (VR)/augmented reality (AR) and form based interfaces. Name: Type of user interface correctly named 1 mark Description: Very good description - clear understanding demonstrated 2 marks Fair description - limited understanding 1 mark"
@@ -6372,7 +6373,7 @@
    {
     "id": "r-2",
     "kind": "criterion",
-    "verbatim": "(b) — Functional testing tests whether the system meets its requirements whereas non- functional testing tests how well those requirements are met e.g. performance, usability, reliability, scalability and other non-functional aspects of the software system • Functional testing should be carried out before non-functional testing. • Examples of functional testing include unit testing, smoke testing, integration testing, white box testing, black box testing, user acceptance testing and regression testing. • Examples of non-functional testing include performance testing, stress testing, installation testing, usability testing, security testing, penetration testing and compatibility testing.",
+    "verbatim": "(b) — Functional testing tests whether the system meets its requirements whereas non-functional testing tests how well those requirements are met e.g. performance, usability, reliability, scalability and other non-functional aspects of the software system • Functional testing should be carried out before non-functional testing. • Examples of functional testing include unit testing, smoke testing, integration testing, white box testing, black box testing, user acceptance testing and regression testing. • Examples of non-functional testing include performance testing, stress testing, installation testing, usability testing, security testing, penetration testing and compatibility testing.",
     "marks": 4,
     "permittedMarks": [
      0,
@@ -6790,7 +6791,7 @@
     "contextNote": "Other relevant end users can be accepted as long as an explanation given End user identified 2 marks"
    }
   ],
-  "stem": "RTÉ Player was first launched in 2009 as a web browser- based application to allow people living in Ireland to catch up on TV shows. Over the years, there have been several updates and newer versions released, such as an app for Apple and Android devices. Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved."
+  "stem": "RTÉ Player was first launched in 2009 as a web browser-based application to allow people living in Ireland to catch up on TV shows. Over the years, there have been several updates and newer versions released, such as an app for Apple and Android devices. Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved."
  },
  {
   "id": "cs-2023-ol-q14-a-ii",
@@ -6834,7 +6835,7 @@
     "contextNote": "Accept any relevant role and description. Note: Where two separate roles are considered equivalent/to have the same meaning, marks are awarded for the best response only. Zero is awarded for the other response. Apply marks for each (2) role: Valid role identified 1 mark Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks"
    }
   ],
-  "stem": "RTÉ Player was first launched in 2009 as a web browser- based application to allow people living in Ireland to catch up on TV shows. Over the years, there have been several updates and newer versions released, such as an app for Apple and Android devices. Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved."
+  "stem": "RTÉ Player was first launched in 2009 as a web browser-based application to allow people living in Ireland to catch up on TV shows. Over the years, there have been several updates and newer versions released, such as an app for Apple and Android devices. Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved."
  },
  {
   "id": "cs-2023-ol-q14-b-i",
@@ -6886,7 +6887,7 @@
     "contextNote": "Accept any other valid tasks that take place within the document stage. Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 mark"
    }
   ],
-  "stem": "RTÉ Player was first launched in 2009 as a web browser- based application to allow people living in Ireland to catch up on TV shows. Over the years, there have been several updates and newer versions released, such as an app for Apple and Android devices. Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. The diagram, in Figure 5 below, shows a typical software development lifecycle.",
+  "stem": "RTÉ Player was first launched in 2009 as a web browser-based application to allow people living in Ireland to catch up on TV shows. Over the years, there have been several updates and newer versions released, such as an app for Apple and Android devices. Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. The diagram, in Figure 5 below, shows a typical software development lifecycle.",
   "questionFigureKey": "computer-science-2023-OL-paper-q14-fig0",
   "questionFigureIncludesPrompt": false
  },
@@ -6927,7 +6928,7 @@
     "contextNote": "Each (2) valid advantage 3 marks"
    }
   ],
-  "stem": "RTÉ Player was first launched in 2009 as a web browser- based application to allow people living in Ireland to catch up on TV shows. Over the years, there have been several updates and newer versions released, such as an app for Apple and Android devices. Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. The diagram, in Figure 5 below, shows a typical software development lifecycle.",
+  "stem": "RTÉ Player was first launched in 2009 as a web browser-based application to allow people living in Ireland to catch up on TV shows. Over the years, there have been several updates and newer versions released, such as an app for Apple and Android devices. Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. The diagram, in Figure 5 below, shows a typical software development lifecycle.",
   "questionFigureKey": "computer-science-2023-OL-paper-q14-fig0",
   "questionFigureIncludesPrompt": false
  },
@@ -6962,7 +6963,7 @@
     "contextNote": "Very good explanation - clear understanding demonstrated 6 marks Fair explanation - limited understanding 4 marks"
    }
   ],
-  "stem": "RTÉ Player was first launched in 2009 as a web browser- based application to allow people living in Ireland to catch up on TV shows. Over the years, there have been several updates and newer versions released, such as an app for Apple and Android devices. Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. As part of the development of the new app it is planned to conduct testing."
+  "stem": "RTÉ Player was first launched in 2009 as a web browser-based application to allow people living in Ireland to catch up on TV shows. Over the years, there have been several updates and newer versions released, such as an app for Apple and Android devices. Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. As part of the development of the new app it is planned to conduct testing."
  },
  {
   "id": "cs-2023-ol-q14-c-ii",
@@ -7018,7 +7019,7 @@
     "contextNote": "Valid disadvantage 3 marks"
    }
   ],
-  "stem": "RTÉ Player was first launched in 2009 as a web browser- based application to allow people living in Ireland to catch up on TV shows. Over the years, there have been several updates and newer versions released, such as an app for Apple and Android devices. Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. As part of the development of the new app it is planned to conduct testing."
+  "stem": "RTÉ Player was first launched in 2009 as a web browser-based application to allow people living in Ireland to catch up on TV shows. Over the years, there have been several updates and newer versions released, such as an app for Apple and Android devices. Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. As part of the development of the new app it is planned to conduct testing."
  },
  {
   "id": "cs-2023-ol-q15-a-i",
@@ -11211,7 +11212,7 @@
     "accepts": [
      "Voice Recognition Software: This technology can allow users with mobility impairments to interact with the DRS system by speaking commands, such as \"return container\" or \"check balance,\" without needing to use a keyboard or mouse.",
      "Braille Display: For users who are blind or have severe vision impairment, a Braille display can provide tactile feedback of the system's text, allowing them to read information like instructions or container details in Braille.",
-     "Simplified User Interface: A simplified interface with larger buttons, clearer fonts, and high- contrast colours can assist users with cognitive disabilities or low vision in navigating the DRS system more easily."
+     "Simplified User Interface: A simplified interface with larger buttons, clearer fonts, and high-contrast colours can assist users with cognitive disabilities or low vision in navigating the DRS system more easily."
     ],
     "contextNote": "Any other valid assistive technology for a visually impaired user. For each assistive technology correctly identified 1 mark For each explanation: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
    }
@@ -12164,9 +12165,9 @@
      6
     ],
     "accepts": [
-     "Social Isolation: As these devices become more immersive, there's a risk that people may spend too much time in virtual worlds, leading to social isolation. This could affect face- to-face interactions and weaken real-world relationships.",
+     "Social Isolation: As these devices become more immersive, there's a risk that people may spend too much time in virtual worlds, leading to social isolation. This could affect face-to-face interactions and weaken real-world relationships.",
      "Addiction and Overuse: The immersive nature of devices like the Apple Vision Pro may lead to addiction or overuse, where individuals spend excessive amounts of time in virtual environments, potentially affecting their health, sleep, and productivity.",
-     "Digital Divide: As advanced technology becomes more widespread, there may be concerns about accessibility and inequality. Not everyone can afford or access these high-tech devices, which could widen the gap between those who have access to cutting- edge technology and those who don't.",
+     "Digital Divide: As advanced technology becomes more widespread, there may be concerns about accessibility and inequality. Not everyone can afford or access these high-tech devices, which could widen the gap between those who have access to cutting-edge technology and those who don't.",
      "Impact on Mental Health: Constant exposure to augmented reality (AR) or virtual reality (VR) environments may affect users' perception of reality, potentially leading to mental health issues such as anxiety, disconnection from the real world, or a distorted sense of self."
     ],
     "contextNote": "Accept any other valid answers. For each explanation: Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks"
@@ -12660,7 +12661,7 @@
      8
     ],
     "accepts": [
-     "Braille: Adding Braille next to each button and on product labels helps blind or low- vision users identify items and make selections.",
+     "Braille: Adding Braille next to each button and on product labels helps blind or low-vision users identify items and make selections.",
      "Audio: A voice-guided system could provide instructions, item names, and prices, which is helpful for visually impaired users.",
      "Height Position: A height-adjustable interface or lower panel allows both standing users and those in wheelchairs to access the machine comfortably.",
      "Touchscreen: A touchscreen interface with an accessibility mode that enlarges text, adds voice assistance, or reduces complexity for users with cognitive disabilities.",
@@ -12757,7 +12758,7 @@
      "Alternative Text for Images: Provides descriptive text for images, enabling users with visual impairments to understand visual content through screen readers.",
      "Voice Command Navigation: Lets users control and navigate the application using voice commands for hands-free accessibility.",
      "Multilingual Support: Offers content and navigation in multiple languages to accommodate a diverse range of users.",
-     "Simplified Interface with Large Buttons: Features a user-friendly layout with large, easy- to-tap buttons for users with motor impairments or limited dexterity.",
+     "Simplified Interface with Large Buttons: Features a user-friendly layout with large, easy-to-tap buttons for users with motor impairments or limited dexterity.",
      "Closed Captions for Audio/Video Content: Displays on-screen text for spoken words and sound effects in audio or video, aiding users who are deaf or hard of hearing."
     ],
     "contextNote": "Accept other valid technologies that have been described. For each: Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks"
@@ -16333,9 +16334,9 @@
      "options": [
       "Embedded systems do one specific task, while general-purpose computers can do many tasks.",
       "Embedded systems run one fixed program, but general-purpose computers let users install lots of software.",
-      "Embedded systems use limited hardware (small memory, low power), while general- purpose computers have powerful processors and lots of RAM.",
+      "Embedded systems use limited hardware (small memory, low power), while general-purpose computers have powerful processors and lots of RAM.",
       "Embedded systems often have little or no user interface, while general-purpose computers have full interfaces like keyboards, touchscreens, and operating systems.",
-      "Embedded systems are built into another device (e.g., microwave, car), but general- purpose computers work as standalone machines.",
+      "Embedded systems are built into another device (e.g., microwave, car), but general-purpose computers work as standalone machines.",
       "Embedded systems must respond in real time, while general-purpose computers do not always need strict timing.",
       "Embedded systems are usually cheaper and smaller, while general-purpose computers are larger and more expensive.",
       "Any other valid advantage."
@@ -17049,7 +17050,7 @@
      "Analyst: Identifies and collaborates with stakeholders to identify and document the system requirements, develops system use cases.",
      "Designer: Designs the application e.g. pseudo-code, flowcharts, data flow diagrams, wireframes, implements prototypes, database design, produces design documents",
      "Software developer: Writes the application code, implementation, unit testing, debugging.",
-     "Software tester: Tests the application code – unit test, system test, functional/non- functional testing, documents and tracks test results and status/progress.",
+     "Software tester: Tests the application code – unit test, system test, functional/non-functional testing, documents and tracks test results and status/progress.",
      "UI/UX Designer: Create a user-friendly user interface for the application.",
      "IT Support Technician: Provides ongoing technical support to resolve any technical issues faced by users of the system."
     ],

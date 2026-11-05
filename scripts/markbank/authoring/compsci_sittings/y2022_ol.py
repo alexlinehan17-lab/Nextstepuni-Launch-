@@ -25,7 +25,7 @@ as two Oriya digits; the note is not lifted.
 Figure 11 (Q15(c)) is printed turned on its side, and its crop shows it as
 printed.
 """
-from compsci_lane import (At, C, P, Pair, S, anyn, crit, crop, ladder, ofpart, pt, stack)  # noqa: F401
+from compsci_lane import (At, C, G, P, Pair, S, anyn, crit, crop, ladder, ofpart, pt, stack)  # noqa: F401
 
 FIG8 = ('038', 10, (54, 130, 551, 296))
 
@@ -140,11 +140,13 @@ CARDS = [
     dict(key=(1, None, None), topic='cs-2-2', qfigure='q1-table', total=5,
          replaces='batch 1b: the five results were lost (no answer rows); the figure was cut '
                   'through its Result column and sat on the answer side',
-         why='p3: the result of five print statements; the scheme prints each, 1 mark',
+         why='p3: the result of five print statements; the scheme prints each, 1 mark, and notes '
+             'that one half is not a correct answer for a/b (a stacked fraction, read by glyph id '
+             'on scheme p4)',
          ask=P(3, 'Given the following variable declarations', 'in the table below.'),
          rows=[pt(S(4, 'print(a+b) 6'), 1, note=S(4, 'Each correct item 1 mark')),
                pt(S(4, 'print(b-a) 2'), 1), pt(S(4, 'print(a*b) 8'), 1),
-               pt(S(4, 'print(a/b) 0.5'), 1), pt(S(4, 'print(a==b) FALSE'), 1)]),
+               pt(S(4, 'print(a/b) 0.5'), 1, note=G(4, 'Note: ½ is not a correct answer for print(a/b)')), pt(S(4, 'print(a==b) FALSE'), 1)]),
     dict(key=(2, None, None), topic='cs-3-3', qfigure='q2-fig1', total=5,
          why='p3: two reasons a computer model helps; the scheme lists five, first 3 / 1 and '
              'second 2 / 1',
@@ -326,8 +328,8 @@ CARDS = [
              'first 3 / 1 and second 2 / 1',
          stem=P(12, 'Data in computers is typically stored in primary or secondary storage.'),
          ask=P(12, 'Describe two differences between primary and secondary storage in computers.'),
-         rows=[ladder([S(11, 'Primary storage is contained within the device', 'USB, hard- drive.'),
-                       S(11, 'Primary storage can be volatile and non-volatile.', 'non- volatile storage.'),
+         rows=[ladder([S(11, 'Primary storage is contained within the device', 'USB, hard-drive.'),
+                       S(11, 'Primary storage can be volatile and non-volatile.', 'non-volatile storage.'),
                        S(11, 'Secondary storage has slower access times than primary storage'),
                        S(11, 'Primary storage is usually more expensive than secondary storage.')], [[1, 3], [1, 2]],
                       head=S(11, 'Any two of the above or similar:'),

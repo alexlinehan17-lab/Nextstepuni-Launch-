@@ -105,6 +105,13 @@ def ws(text):
     return ' '.join(str(text).split())
 
 
+def rejoin(text):
+    """A hyphenated word broken where the hyphen ends a printed line --
+    "hard-" over "drive" -- read as the one word it is, hyphen kept
+    ("hard-drive"), not as "hard- drive" (coordinator, 5 Nov)."""
+    return re.sub(r'(?<=[A-Za-z0-9])-[ \t]*\n[ \t]*(?=[A-Za-z0-9])', '-', text)
+
+
 def norm(text):
     """build-deck's normalise(): lower case, letters and digits only."""
     t = str(text).lower()
@@ -290,7 +297,7 @@ class Sitting:
         flat = re.split(f'{re.escape(CELLS_START)}|{re.escape(GLYPHS_START)}', md)[0]
         self.md_pages = {}
         for m in re.finditer(r'^## Page (\d+)\n(.*?)(?=^## Page \d+\n|\Z)', flat, re.S | re.M):
-            self.md_pages[int(m.group(1))] = ws(fold(m.group(2)))
+            self.md_pages[int(m.group(1))] = ws(rejoin(fold(m.group(2))))
         self.cell_pages = {}
         for m in re.finditer(r'<!-- compsci:cells page (\d+) -->\n(.*?)(?=<!-- compsci:cells|\Z)',
                              md, re.S):
@@ -323,7 +330,7 @@ class Sitting:
                 d = self.docs.get(doc)
                 if d is None:
                     raise LaneError(f'{self.year} {self.level}: no {doc} booklet on disk')
-                self._page_text[key] = ws(fold(d[page - 1].get_text()))
+                self._page_text[key] = ws(rejoin(fold(d[page - 1].get_text())))
         return self._page_text[key]
 
     def lift(self, item, note=False):
@@ -468,6 +475,9 @@ def _blocks(md):
 #   2870 '2': the script-size 2 Word sets as an exponent, 2024 HL paper p17
 #       "O(n2)", whose text layer reads it as Oriya U+0B36; read '2' 5,441
 #       times (first 2014 LC022ALP000EV p5).
+#   2869 '1': the script-size 1, 2022 OL scheme p4's stacked "1 over 2", read
+#       as Oriya U+0B35 there; read '1' 3,756 times (first 2014 LC022ALP000EV
+#       p5), where 2871 and 2872 read '3' and '4'.
 #   3398 '-' (minus), 3400 'x' (times), 3404 '=', 4666 '(', 4667 ')': the
 #       operators and brackets the text layer files under Malayalam and
 #       Ethiopic code points (U+0D46, U+0D48, U+0D4C, U+123A, U+123B); read so
@@ -480,7 +490,7 @@ LANE_GIDS = {('CambriaMath', 2778): '1', ('CambriaMath', 2779): '2', ('CambriaMa
              ('CambriaMath', 2785): '8', ('CambriaMath', 1812): 'l', ('CambriaMath', 1815): 'o',
              ('CambriaMath', 1807): 'g', ('CambriaMath', 2170): 'N', ('CambriaMath', 2171): 'O',
              ('CambriaMath', 2196): 'n', ('CambriaMath', 2194): 'l', ('CambriaMath', 2197): 'o',
-             ('CambriaMath', 2189): 'g', ('CambriaMath', 1866): 'n', ('CambriaMath', 2870): '2',
+             ('CambriaMath', 2189): 'g', ('CambriaMath', 1866): 'n', ('CambriaMath', 2869): '1', ('CambriaMath', 2870): '2',
              ('CambriaMath', 3398): '−', ('CambriaMath', 3400): '×',
              ('CambriaMath', 3404): '=', ('CambriaMath', 4666): '(', ('CambriaMath', 4667): ')'}
 MATHS_FONTS = ('Cambria', 'CambriaMath')
@@ -499,6 +509,54 @@ def _glyph_reading(family, gid, codepoint):
         if codepoint > 0x7e:
             raise LaneError(f'{family} glyph {gid} ({chr(codepoint)!r}) has no settled reading')
     return fold(chr(codepoint))
+
+
+VULGAR = {('1', '2'): '\u00bd', ('1', '4'): '\u00bc', ('3', '4'): '\u00be',
+          ('1', '3'): '\u2153', ('2', '3'): '\u2154'}
+
+
+def _stacked_fractions(page, items, base_y):
+    """A stacked fraction -- small digits raised over small digits lowered,
+    at the same place on the line, with a rule drawn between them (2022 OL
+    scheme p4's "1 over 2 is not a correct answer for print(a/b)") -- read as
+    one fraction: the vulgar fraction where Unicode has one, else numerator
+    over denominator with the fraction slash. Without the rule the digits are
+    left to be read as an exponent and a subscript."""
+    def runs(sel):
+        out = []
+        for it in sorted(sel, key=lambda i: i['box'][0]):
+            if out and it['box'][0] - out[-1][-1]['box'][2] < 1.5:
+                out[-1].append(it)
+            else:
+                out.append([it])
+        return out
+    digits = [i for i in items if i['small'] and i['c'].isdigit()]
+    ups = runs([i for i in digits if i['y'] < base_y - 1])
+    downs = runs([i for i in digits if i['y'] > base_y + 1])
+    if not ups or not downs:
+        return items
+    rules = [d['rect'] for d in page.get_drawings() if d['rect'].height < 2.5]
+    used, made = set(), []
+    for up in ups:
+        ux0, ux1 = up[0]['box'][0], up[-1]['box'][2]
+        for down in downs:
+            dx0, dx1 = down[0]['box'][0], down[-1]['box'][2]
+            if min(ux1, dx1) - max(ux0, dx0) <= 0:
+                continue
+            top, bottom = max(i['box'][3] for i in up), min(i['box'][1] for i in down)
+            if not any(r.y0 >= top - 3 and r.y1 <= bottom + 3
+                       and min(r.x1, ux1, dx1) - max(r.x0, ux0, dx0) > 0 for r in rules):
+                continue
+            num, den = ''.join(i['c'] for i in up), ''.join(i['c'] for i in down)
+            frac = VULGAR.get((num, den)) or (num.translate(SUPERSCRIPT) + '\u2044'
+                                             + den.translate(SUBSCRIPT))
+            x0 = min(ux0, dx0)
+            made.append({'x': x0, 'y': base_y, 'box': (x0, 0, max(ux1, dx1), 0), 'c': frac,
+                         'small': False})
+            used.update(id(i) for i in up + down)
+    if not made:
+        return items
+    return sorted([i for i in items if id(i) not in used] + made, key=lambda i: i['x'])
 
 
 def read_glyph_line(page, y0, y1, x0=None, x1=None, breaks=False):
@@ -564,11 +622,16 @@ def read_glyph_line(page, y0, y1, x0=None, x1=None, breaks=False):
         elif fold(chr(first[2][0])) == '\u2022':
             opens = 'bullet'
         start_x = inked[1][2][3][0] if opens and len(inked) > 1 else first[2][3][0]
-        text, last_x = '', None
+        items = []
         for family, size, ch in line:
-            x, y = ch[2]
             c = _glyph_reading(family, ch[1], ch[0])
-            if size < full and c.strip():
+            items.append({'x': ch[2][0], 'y': ch[2][1], 'box': ch[3], 'c': c,
+                          'small': size < full and bool(c.strip())})
+        items = _stacked_fractions(page, items, base_y)
+        text, last_x = '', None
+        for it in items:
+            x, y, c = it['x'], it['y'], it['c']
+            if it['small']:
                 if not c.isdigit() or abs(y - base_y) <= 1:
                     raise LaneError(f'{c!r} set small at ({x:.1f}, {y:.1f}) is neither an '
                                     f'exponent nor a subscript digit')
@@ -576,7 +639,7 @@ def read_glyph_line(page, y0, y1, x0=None, x1=None, breaks=False):
             if last_x is not None and x - last_x > 2 and not text.endswith(' ') and c != ' ':
                 text += ' '
             text += c
-            last_x = x + (ch[3][2] - ch[3][0])
+            last_x = it['box'][2]
         text = ws(text)
         ended = list_indent is not None and not opens and start_x < list_indent - 3
         if opens:
