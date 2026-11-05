@@ -63,6 +63,7 @@ from eng_topics import topic_for, concept_for               # noqa: E402
 import cardlint                                             # noqa: E402
 import eng_lists                                            # noqa: E402
 import eng_residue                                          # noqa: E402
+import eng_deferred                                         # noqa: E402
 
 MAX_ROWS = 12
 
@@ -659,7 +660,15 @@ def main():
     verdicts = []
     examples = collections.defaultdict(list)
 
-    for (year, level, _), leaves in sorted(idx.items()):
+    # June's sittings, then each deferred one (keyed 'Deferred' by
+    # paper_census.census_engineering_deferred), which is read and carded as a
+    # sitting of its own under the level token '<level>-deferred'
+    # (eng_deferred): its own paper and scheme, its own ids and citations.
+    for (year, level, paper), leaves in sorted(
+            idx.items(), key=lambda kv: (kv[0][0], kv[0][1], kv[0][2] or '')):
+        deferred = paper == 'Deferred'
+        if deferred:
+            level = level + eng_deferred.SUFFIX
         # A sitting is authored once its scheme has been extracted to the
         # markdown the provenance gate reads; until then it stays open in the
         # ledger rather than stopping every other sitting. The census now
@@ -669,7 +678,8 @@ def main():
                 ROOT, 'examiner-reports', 'engineering', 'schemes',
                 f'{year}-{level}.md')):
             continue
-        A = Author('engineering', year, level)
+        A = (eng_deferred.DeferredAuthor(year, level) if deferred
+             else Author('engineering', year, level))
         # The SAME scheme instance lib.card builds the card from, so that what
         # this loop resolves and selects with `use` is the list the card is
         # made of -- including which branch of an OR a key is answered from.

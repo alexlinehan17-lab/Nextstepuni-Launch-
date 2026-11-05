@@ -53,7 +53,9 @@ PASS = ('use', 'marks', 'tariff', 'total', 'row_kind', 'notation', 'ladder',
 
 
 def module(year, level):
-    name = f'eng_residue.y{year}_{level}'
+    # A deferred sitting's level token is '<level>-deferred' (eng_deferred);
+    # its module is y<year>_<level>_deferred.py.
+    name = f'eng_residue.y{year}_{level}'.replace('-', '_')
     try:
         return importlib.import_module(name)
     except ModuleNotFoundError as exc:

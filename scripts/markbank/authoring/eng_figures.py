@@ -685,7 +685,12 @@ def worklist():
     import cardlint
     out = []
     idx = R.leaf_index(census_subject('engineering'))
-    for (year, level, _), leaves in sorted(idx.items()):
+    for (year, level, paper), leaves in sorted(
+            idx.items(), key=lambda kv: (kv[0][0], kv[0][1], kv[0][2] or '')):
+        # A deferred sitting's pictures are cut by hand in its eng_residue
+        # module; June's paper is not its paper.
+        if paper == 'Deferred':
+            continue
         # A sitting whose scheme has not been extracted yet has nothing to
         # card, and its Author cannot be built (eng_all skips it the same way).
         if not os.path.exists(os.path.join(ROOT, 'examiner-reports', 'engineering',

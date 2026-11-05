@@ -162,7 +162,11 @@ def main():
     if not crops:
         print('no crops for this sitting')
         return 0
-    stem = f'engineering-{args.year}-{args.level.upper()}-'
+    # A deferred sitting's crops are named as Economics names its own:
+    # 'engineering-2022-HL-deferred-...'.
+    lv = args.level
+    stem = (f'engineering-{args.year}-{lv[:-len("-deferred")].upper()}-deferred-'
+            if lv.endswith('-deferred') else f'engineering-{args.year}-{lv.upper()}-')
     for name, spec in crops.items():
         if not name.startswith(stem):
             raise SystemExit(f'{name}: a {args.year} {args.level} crop is named {stem}...')

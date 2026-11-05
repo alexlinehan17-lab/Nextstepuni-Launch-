@@ -103,6 +103,14 @@ export const paperEntry = (subjectId, year, level) =>
     .find(e => e.year === year && e.level === level
       && e.lang === (subjectId === 'irish' ? 'iv' : 'ev'));
 
+/** The SEC's DEFERRED sitting of one subject, year and level (from 2022), in
+ *  English: its own index entry, listed after June's and marked
+ *  `sitting: "deferred"`. Engineering asks for it here (Economics and History
+ *  do too, on their lane branches). */
+export const deferredPaperEntry = (subjectId, year, level) =>
+  (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])
+    .find(e => e.year === year && e.level === level && e.lang === 'ev' && e.sitting === 'deferred');
+
 /**
  * The sections a paper's label covers: "Section A&B" -> {A, B}, "Section 2 & 3"
  * -> {2, 3}.

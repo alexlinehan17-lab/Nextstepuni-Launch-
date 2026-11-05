@@ -1407,8 +1407,8 @@ def census_agri_legacy(year, level):
     return parts, dict(texts), [path]
 
 
-def census_merged(subject, year, level, component=None):
-    P = PP.Paper(subject, year, level, component=component)
+def census_merged(subject, year, level, component=None, *, files=None):
+    P = PP.Paper(subject, year, level, component=component, files=files)
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
@@ -4153,7 +4153,43 @@ def census_subject(subject):
                     'type': 'marks-checksum',
                     'where': f"{p['year']} {p['level']} {p.get('paper') or ''}",
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
+    if subject == 'engineering':
+        papers.extend(census_engineering_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+# The SEC's deferred Engineering sittings in the archive: 2022 and 2023 Higher
+# (deferredexams/ and deferredmarkingschemes/ hold LC027ALP000EV for both years;
+# 2023's paper also in Irish, LC027ALP000IV, which is deferred with every Irish
+# version; no Ordinary, nothing for 2024-2025).
+ENG_DEFERRED_PAPERS = ((2022, 'hl', 'LC027ALP000EV'), (2023, 'hl', 'LC027ALP000EV'))
+
+
+def census_engineering_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Each deferred Engineering sitting (ENG_DEFERRED_PAPERS) is a paper of its
+    own, keyed 'Deferred' as Economics keys its own (census_economics_deferred
+    on claude/economics-lane-20261104, bb793c616), History its (c1306cc45) and
+    Physics and Home Economics theirs (codex/home-economics-continuation-
+    20261101), so a deferred ask never lands on a June leaf with the same
+    address. The checksum is not run on it.
+    """
+    papers = []
+    for year, level, fileid in ENG_DEFERRED_PAPERS:
+        pdf = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'{fileid}.pdf')
+        parts, texts, _ = census_merged('engineering', year, level, files=[pdf])
+        leaves = leaves_of(parts)
+        flags = [f for f in continuity_flags(parts, texts, 'engineering')
+                 if not short_ask_ok('engineering', year, level, f)]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'engineering'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
 
 
 def report(result):

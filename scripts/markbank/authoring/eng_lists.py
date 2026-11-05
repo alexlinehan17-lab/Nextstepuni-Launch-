@@ -44,6 +44,15 @@ sys.path.insert(0, DIR)
 import eng_lift                                              # noqa: E402
 
 LEVEL = {'higher': 'hl', 'ordinary': 'ol'}
+
+
+def sitting(card):
+    """(year, level token) of the papers a card was lifted from: a deferred
+    card's ('eng-2022-hl-deferred-...') are its own sitting's (eng_deferred)."""
+    level = LEVEL[card['level']]
+    if re.match(r'^eng-\d{4}-(?:hl|ol)-deferred-', card['id']):
+        level += '-deferred'
+    return card['year'], level
 ROMAN = re.compile(r'^\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)$')
 LETTER = re.compile(r'^\([a-z]\)$')
 GAP = 20          # pt: a gap this wide ends a printed run of words
@@ -204,7 +213,7 @@ def vertical_lists(cards):
     """Set each card's runs-together vertical lists on their lines. -> [ids]"""
     changed = []
     for c in cards:
-        lists = paper_lists(c['year'], LEVEL[c['level']])
+        lists = paper_lists(*sitting(c))
         text = c.get('questionText') or ''
         new = text
         for _, items, _ in lists:
@@ -276,13 +285,13 @@ def _texts(row):
 def table_cells(cards):
     """Join each listed table row's two cells with " — ". -> [ids]"""
     changed, used = [], set()
-    present = {(c['year'], LEVEL[c['level']]) for c in cards}
+    present = {sitting(c) for c in cards}
     rows = {k: v for k, v in CELL_ROWS.items() if k[:2] in present}
     for (year, level, page, base), _why in rows.items():
         left, right = cell_pair(year, level, page, base)
         pat = re.compile(re.escape(left) + r'\s+' + re.escape(right))
         for c in cards:
-            if c['year'] != year or LEVEL[c['level']] != level:
+            if sitting(c) != (year, level):
                 continue
             hit = False
             for row in c['rows']:
@@ -369,7 +378,7 @@ def degree_signs(cards):
         blob = json.dumps(c, ensure_ascii=False)
         if not _DEG_TEXT.search(blob):
             continue
-        proven = raised_degrees(c['year'], LEVEL[c['level']])
+        proven = raised_degrees(*sitting(c))
         if not proven:
             continue
         hit = False

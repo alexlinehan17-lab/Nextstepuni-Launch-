@@ -290,15 +290,15 @@
   "engineering": {
     "cards": 2113,
     "contentHash": "2693c78c04485e3a",
-    "coveragePct": 100.0,
+    "coveragePct": 93.7,
     "covered": 2631,
     "excluded": 0,
-    "leaves": 2631,
-    "open": 0,
+    "leaves": 2807,
+    "open": 176,
     "orphans": 0,
     "papers": {
-      "count": 60,
-      "hash": "0c22181e07eb9ca3"
+      "count": 62,
+      "hash": "2aec42953a94588e"
     },
     "refsHash": "8eb3b32fb01eb391"
   },

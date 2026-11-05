@@ -26,7 +26,7 @@ import { execFileSync } from 'node:child_process';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor } from './paperIndex.mjs';
+import { resolvePaperFileid, resolveCompanionFileid, corpusSubjectFor, deferredPaperEntry } from './paperIndex.mjs';
 import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
@@ -624,8 +624,20 @@ const LEVELS = ['higher', 'ordinary', 'common'];
 const LEVEL_TOKEN = { higher: 'hl', ordinary: 'ol', common: 'cl' };
 const LEVEL_WORD = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' };
 
+/* A card from the SEC's DEFERRED sitting ("eng-2022-hl-deferred-q1-a", cited
+ * "... — Deferred sitting"): its own paper, scheme and index entry. Economics
+ * marks its deferred cards the same way on claude/economics-lane-20261104
+ * (37d63037c, this form), History on claude/history-lane-20261104 (c1306cc45),
+ * and Physics, Home Economics and Maths theirs on codex/home-economics-
+ * continuation-20261101. No other subject's id matches, so every other deck
+ * builds exactly as before. */
+const DEFERRED_ID = { engineering: /^eng-\d{4}-(?:hl|ol)-deferred-/ };
+const deferredCard = (subjectId, card) =>
+  Boolean(DEFERRED_ID[subjectId]?.test(String(card?.id ?? '')));
+
 function schemeFor(subjectId, card) {
-  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}`;
+  const deferred = deferredCard(subjectId, card);
+  const stem = `${card.year ?? 2025}-${LEVEL_TOKEN[card.level ?? 'higher'] ?? 'hl'}${deferred ? '-deferred' : ''}`;
   const file = resolve(ROOT, 'examiner-reports', subjectId, 'schemes', `${stem}.md`);
   if (!schemeCache.has(file)) {
     const raw = existsSync(file) ? readFileSync(file, 'utf8') : '';
@@ -1016,7 +1028,7 @@ for (const raw of rawCards) {
       ...(!Array.isArray(binding) && binding.sourceFileid
         ? { sourceFileid: binding.sourceFileid }
         : {}),
-      attribution: `SEC ${SUBJECT.title} ${card.year} ${LEVEL_WORD[card.level] ?? 'Higher'} Level examination paper — © State Examinations Commission.`,
+      attribution: `SEC ${SUBJECT.title} ${card.year} ${LEVEL_WORD[card.level] ?? 'Higher'} Level ${deferredCard(SUBJECT_ID, card) ? 'deferred ' : ''}examination paper — © State Examinations Commission.`,
       presentationNote: sourceKind === 'source-text'
         ? 'Read the exact source as it appeared in the examination paper, then answer the concise prompt above.'
         : 'Open the exact examination page to use its published chart, table, photograph or diagram.',
@@ -1632,15 +1644,17 @@ for (const c of cards) {
   /* History is examined in two FIELDS OF STUDY, printed as separate papers a
    * candidate chooses between, and Paper Trail indexes them as two subjects.
    * corpusSubjectFor reads the field out of the citation; see paperIndex.mjs. */
-  const fileid = resolvePaperFileid(
-    corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
+  const deferredEntry = deferredCard(SUBJECT_ID, c) ? deferredPaperEntry(SUBJECT_ID, year, level) : null;
+  const fileid = deferredEntry
+    ? String(deferredEntry.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/i, '') || null
+    : resolvePaperFileid(corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
   out.push({ id: c.id, level, code: `  {
     ...base,${c.qa ? ` qa: ${JSON.stringify(c.qa)},` : ''}${c.curriculumNodeIds ? `\n    ...examCardCurriculum(${q(SUBJECT_ID)}, ${year}, ${JSON.stringify(c.curriculumNodeIds)}),` : ''} kind: ${q(labelKey ? 'diagram' : 'question')},
     year: ${year}, level: ${q(level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
-    schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level — © State Examinations Commission.`)},
+    schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level${deferredEntry ? ', deferred examination' : ''} — © State Examinations Commission.`)},
     id: ${q(c.id)}, topicId: ${q(c.topicId)},${c.additionalTopicIds?.length ? ` additionalTopicIds: ${JSON.stringify(c.additionalTopicIds)},` : ''} conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},
