@@ -289,9 +289,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     };
     for (const { card, criteria } of irishCards) for (const criterion of criteria) if (criterion.allocation) checkAllocation(card, criterion);
     const unstructured = (criteria: typeof irishCards[number]['criteria']) => criteria.some(criterion => priced(criterion) && !criterion.allocation);
-    expect(exact).toHaveLength(1423);
+    expect(exact).toHaveLength(1459);
     const structured = exact.filter(({ criteria }) => !unstructured(criteria));
-    expect(structured).toHaveLength(1423);
+    expect(structured).toHaveLength(1459);
 
     // Nothing listening or reading is still prose. The archive review cuts one criterion per printed part, so the five
     // cards that had no rows on main have them: the 2022 Higher Fógra a hAon (tariff lines the text layer broke),
@@ -306,7 +306,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     // "Dhá phointe eolais = 4 mharc + 4 mharc", "Tréith 1 = 13 mharc" under a band table) and
     // tariffs.ts cuts that into rows and steps; the sample points stay a list under each part.
     const literature = irishCards.filter(({ card }) => /Prose|Poetry|Literature|Prós|Filíocht|Litríocht/.test(card.questionRef));
-    expect(literature).toHaveLength(552);
+    expect(literature).toHaveLength(562);
     // Every literature option's priced parts cut into rows. The last, 2025 Ordinary 3A(a)(i) (rowless on main), cuts
     // its "(2 mharc) Freagraí: …" sub-question list like its practice cards (cards/irish/factory.ts, freagraiAllocation).
     expect(literature.filter(({ criteria }) => unstructured(criteria)).map(({ card }) => card.id).sort()).toEqual([]);

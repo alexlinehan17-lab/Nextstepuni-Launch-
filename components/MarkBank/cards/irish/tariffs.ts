@@ -687,8 +687,16 @@ const subsetSums = (terms: number[]) => [...terms.reduce((sums, term) => new Set
  *  A printed price is claimable at every level (coordinator, batch 5: no floor). A row with steps or under a ladder is
  *  never touched; nothing is read from outside the criterion's own guidance. Nothing else steps a row (coordinator
  *  correction, batch 6: a step the scheme does not print is never inferred). */
-export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[]): IrishAllocation => {
+export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[], section: string[] = []): IrishAllocation => {
   const text = guidance.join(' ').replace(/\s+/g, ' ');
+  // The examiner's ready reckoner, where the scheme says it governs the answers: "Moltar do scrúdaitheoirí … úsáid a bhaint as
+  // an réríomhaire (cf lch 25) agus iad ag teacht ar chinneadh faoi cad is fiú freagra" (2012 Higher, PDF 25 note 3, for the
+  // answers to Ceisteanna 2-4) over "Grádú Marcála sna Ceisteanna … GRÁD 200 160 … 18 … GRÁD 17 16 … 5" (PDF 26). Read from the
+  // card's own section (its criteria), as printed for it: a row priced at one of the table's totals, its criterion's largest,
+  // is judged in single marks (coordinator ruling 2, batch 5: a table the scheme links to the answers is a printed scale).
+  const sectionText = section.join(' ').replace(/\s+/g, ' ');
+  const reckoner = new Set(/úsáid a bhaint as an réríomhaire/.test(sectionText)
+    ? [...sectionText.matchAll(/GRÁD((?:\s+\d+)+)\s+A\b/g)].flatMap(match => match[1].trim().split(/\s+/).map(Number)) : []);
   const counts = new Map<number, number[]>();
   for (const match of text.matchAll(/(\S+)\s+phointe eolais ag teastáil(?: anseo)?:?\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais/gi)) {
     const count = WORDS[match[1].toLowerCase()] ?? Number(match[1]);
@@ -753,7 +761,7 @@ export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[
       return split.every(part => bands.has(part)) ? range(row.marks) : subsetSums(split);
     }
     if (bands.has(row.marks)) return range(row.marks);
-    return judged.has(row.marks) && row.marks === largest ? range(row.marks) : undefined;
+    return (judged.has(row.marks) || reckoner.has(row.marks)) && row.marks === largest ? range(row.marks) : undefined;
   };
   return {
     ...allocation,
