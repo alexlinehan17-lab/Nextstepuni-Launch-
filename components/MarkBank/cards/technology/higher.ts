@@ -3841,7 +3841,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Packaging and transport. (ii) Seasonal production of food.",
     tariffModel: {"kind":"questionTotal","notation":"(2+2+2 marks)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Packaging must be able to withstand long transport trips and keep food fresh.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Packaging must be able to withstand long transport trips and keep food fresh.", marks: null, contextNote: "The scheme prints (2+2+2 marks) for these parts together and does not say which part each mark is for, so they are assessed as a whole.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Transport costs use energy, refrigeration and fuel to move food from source to customer.", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "Increased carbon footprint, etc.", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "Seasonal production reduces carbon footprint by only using food that is in season/ not refrigerated or transported long distances, less preservatives required, etc.", marks: null, openList: true },
@@ -7294,7 +7294,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Socially engineered malware. (ii) Phishing. (iii) Unpatched software.",
     tariffModel: {"kind":"questionTotal","notation":"(3+3 marks)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "SEM is an attack that tricks users (often by appealing to the user) into downloading and installing malicious software that compromises the security of their system.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "SEM is an attack that tricks users (often by appealing to the user) into downloading and installing malicious software that compromises the security of their system.", marks: null, contextNote: "The scheme prints (3+3 marks) for these parts together and does not say which part each mark is for, so they are assessed as a whole.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Attempting to gain sensitive information such as usernames, passwords and credit card details by targeting content relevant to the user.", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "Operating systems and software develop vulnerabilities with extensive use, these vulnerabilities are rectified with patches. Unpatched software does not have these protections.", marks: null, openList: true },
     ],
@@ -19278,7 +19278,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Give a reason for using a frame structure for this roof. (ii) Suggest two advantages of using wood for the frame.",
     tariffModel: {"kind":"questionTotal","notation":"(6 marks, 2 +2 + 2)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "It gives inherent strength to the structure to resist external forces.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "It gives inherent strength to the structure to resist external forces.", marks: null, contextNote: "The scheme prints (6 marks, 2 +2 + 2) for these parts together and does not say which part each mark is for, so they are assessed as a whole.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Cover materials can be replaced without removing the entire roof.", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "• Gives a natural material appearance and texture", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "• Has a thermal insulation property", marks: null, openList: true },

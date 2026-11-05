@@ -2295,7 +2295,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Give two advantages of using electrically powered cars instead of using petrol powered cars. (ii) Explain what is meant by a hybrid car.",
     tariffModel: {"kind":"questionTotal","notation":"(3+3+2 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1. Environmentally friendly/Less reliance on fossil fuels.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "1. Environmentally friendly/Less reliance on fossil fuels.", marks: null, contextNote: "The scheme prints (3+3+2 marks) for these parts together and does not say which part each mark is for, so they are assessed as a whole.", openList: true },
     { id: "r-2", kind: "point", verbatim: "2. Cheaper running costs, etc.", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "This is a car that uses two or more power sources to move itself. Typically it involves combining an internal combustion engine and one or more electrical motors.", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "Hybrid cars can achieve greater fuel economy and release less emissions into the atmosphere etc.", marks: null, openList: true },
@@ -3797,7 +3797,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Suggest two health benefits for a person who uses a smart device such as an activity tracker. (ii) Explain the abbreviation GPS.",
     tariffModel: {"kind":"questionTotal","notation":"(2+2+4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Improve fitness, monitor heart rate, monitor loss in calories, track performance on an ongoing basis, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Improve fitness, monitor heart rate, monitor loss in calories, track performance on an ongoing basis, etc.", marks: null, contextNote: "The scheme prints (2+2+4 marks) for these parts together and does not say which part each mark is for, so they are assessed as a whole.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Global Positioning System.", marks: null, openList: true },
     ],
     questionFigure: {
@@ -4090,7 +4090,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Name the machine shown. (ii) Give two specific safety precautions which should be observed when using this machine.",
     tariffModel: {"kind":"questionTotal","notation":"(4+2+2 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Scroll Saw.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Scroll Saw.", marks: null, contextNote: "The scheme prints (4+2+2 marks) for these parts together and does not say which part each mark is for, so they are assessed as a whole.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Make sure the guard is down, wear eye goggles, no loose clothing, etc.", marks: null, openList: true },
     ],
     questionFigure: {
@@ -4114,7 +4114,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) In the box provided, sketch the profile (cross-section) of one steel beam used in frame structures. (ii) Name one permanent and one semi-permanent joint used to assemble beam structures.",
     tariffModel: {"kind":"questionTotal","notation":"(4+2+2 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Permanent joint: Welded joint.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Permanent joint: Welded joint.", marks: null, contextNote: "The scheme prints (4+2+2 marks) for these parts together and does not say which part each mark is for, so they are assessed as a whole.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Semi-Permanent Joint: Nut and bolt joint, etc.", marks: null, openList: true },
     ],
     figure: {
@@ -5573,7 +5573,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Give two benefits of using this smart technology. (ii) A householder purchases 1000 litres of kerosene for home heating at 60 cent/litre. If this fuel lasts for six months, calculate the average cost of this energy per month.",
     tariffModel: {"kind":"questionTotal","notation":"(2+2+4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Heating can be activated while a person is not at home, user friendly, heating can be adjusted instantly as weather temperatures change, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Heating can be activated while a person is not at home, user friendly, heating can be adjusted instantly as weather temperatures change, etc.", marks: null, contextNote: "The scheme prints (2+2+4 marks) for these parts together and does not say which part each mark is for, so they are assessed as a whole.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Cost of energy/month: 1000 × 0.60 = €600 ÷ 6 = €100 per month", marks: null, openList: true },
     ],
     questionFigure: {
@@ -5675,7 +5675,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) State the meaning of each safety sign. (ii) What colour is usually associated with an emergency exit sign?",
     tariffModel: {"kind":"questionTotal","notation":"(2+2+2+2 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A: Safety helmet must be worn B: Electrical hazard C: No running allowed", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "A: Safety helmet must be worn B: Electrical hazard C: No running allowed", marks: null, contextNote: "The scheme prints (2+2+2+2 marks) for these parts together and does not say which part each mark is for, so they are assessed as a whole.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Green.", marks: null, openList: true },
     ],
     questionFigure: {
@@ -5776,7 +5776,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Outline one advantage of using a WBS. (ii) In the WBS shown, name the predecessor(s) of the tasks D and E.",
     tariffModel: {"kind":"questionTotal","notation":"(4+2+1+1 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Visual understanding of tasks to be completed, tasks are sequenced, problems can be identified, etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Visual understanding of tasks to be completed, tasks are sequenced, problems can be identified, etc.", marks: null, contextNote: "The scheme prints (4+2+1+1 marks) for these parts together and does not say which part each mark is for, so they are assessed as a whole.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Predecessors of task D: A.", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "Predecessors of task E: B,C.", marks: null, openList: true },
     ],

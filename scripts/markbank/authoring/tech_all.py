@@ -1277,6 +1277,19 @@ def author(bind_figures=True):
                         note('the scheme answer named as breaking off was not found', question)
                         continue
                     hit[0]['contextNote'] = BREAKS_OFF_NOTE
+                if model['kind'] == 'questionTotal' and roman is None and block.terms \
+                        and len([k for k in covered if k[3]]) > 1 and rows:
+                    # A card for several printed asks whose scheme prints one
+                    # split for them all ("(2+2+4 marks)" over two romans):
+                    # the split is the scheme's, but which mark is for which
+                    # part is not, so the card is assessed as a whole. The
+                    # student sees why on the first row, since card-level
+                    # notes never ship (build-deck strips them).
+                    split = (f'The scheme prints {block.notation.strip()} for these '
+                             'parts together and does not say which part each mark '
+                             'is for, so they are assessed as a whole.')
+                    rows[0]['contextNote'] = ' '.join(
+                        t for t in (split, rows[0].get('contextNote')) if t)
                 model = dict(model, notation=block.notation)
 
                 note_text = (f'The scheme prints {block.notation!r} for '
