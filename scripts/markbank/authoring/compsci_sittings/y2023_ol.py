@@ -22,7 +22,7 @@ explanation 5 / 2, for the benefit and for the danger), with no example
 technology; the card carries those criteria as the components the student
 places marks on, in the scheme's own words.
 """
-from compsci_lane import (C, P, S, T, Pair, anyn, crit, crop, ladder, pt, stack)  # noqa: F401
+from compsci_lane import (C, P, Pair, S, T, anyn, crit, crop, ladder, ofpart, pt, stack)  # noqa: F401
 
 CROPS = {
     'q1-table': crop('038', 3, (126, 183, 456, 483), ref='2023 OL Q1',
@@ -144,13 +144,13 @@ CARDS = [
              'computer and an embedded system, three answers on a 4 / 2 ladder; (b) one '
              'embedded system at home, any valid example 2',
          ask=P(3, '(a) Describe the main difference', 'you might find in your home.'),
-         rows=[ladder([S(4, 'General-purpose computers can have many uses', 'limited or specific number of uses'),
+         rows=[ofpart(P(3, '(a)'), ladder([S(4, 'General-purpose computers can have many uses', 'limited or specific number of uses'),
                        S(4, 'General-purpose computers can be easily reprogrammed', 'can’t easily be upgraded'),
                        S(4, 'General-purpose computers are generally higher cost', 'relatively low cost')], [[2, 4]],
                       note=S(4, 'Good description – clear understanding demonstrated 4 marks',
-                             'Fair description – limited understanding 2 mark')),
-               pt(S(4, 'Examples of Embedded Systems can be any digital device', 'dish washers, etc.'), 2,
-                  note=S(4, 'Do not accept Micro:bit, Raspberry Pi as valid examples', 'Valid example 2 marks'))]),
+                             'Fair description – limited understanding 2 mark'))),
+               ofpart(P(3, '(b)'), pt(S(4, 'Examples of Embedded Systems can be any digital device', 'dish washers, etc.'), 2,
+                  note=S(4, 'Do not accept Micro:bit, Raspberry Pi as valid examples', 'Valid example 2 marks')))]),
     dict(key=(3, None, None), topic='cs-2-2', figure='s-q3', total=6,
          why='p4: an averaging algorithm in pseudocode or a flowchart; the scheme gives both and '
              'prices input 2/1, average 2/1, output 1 and logical order 1',
@@ -209,12 +209,12 @@ CARDS = [
              'Algorithms (searching), not Computer systems',
          stem=Q8_STEM,
          ask=P(6, '(a) If a binary search algorithm', 'divide and conquer” method?'),
-         rows=[pt(S(7, 'Dara'), 2, note=S(7, 'Correct answer 2 marks')),
-               ladder([S(7, 'Binary search looks at the middle item', 'nothing left to search.'),
+         rows=[ofpart(P(6, '(a)'), pt(S(7, 'Dara'), 2, note=S(7, 'Correct answer 2 marks'))),
+               ofpart(P(6, '(b)'), ladder([S(7, 'Binary search looks at the middle item', 'nothing left to search.'),
                        S(7, 'Binary search works by dividing the list into two halves', 'repeating this process.')],
                       [[2, 4]],
                       note=S(7, 'Good explanation – clear understanding demonstrated 4 marks',
-                             'Fair explanation – limited understanding 2 mark'))]),
+                             'Fair explanation – limited understanding 2 mark')))]),
     dict(key=(9, None, None), topic='cs-2-4', qfigure='q9-table', total=6,
          why='p7: discrete or continuous for six examples; the scheme prints each, 1 mark',
          ask=P(7, 'Numeric data can be categorised as either discrete data or continuous data.',
@@ -241,12 +241,12 @@ CARDS = [
              'shipped crop of the 17-line listing was opened and is complete',
          stem=Q11_STEM,
          ask=P(8, '(a) What is the output of the program if the user enters 19', 'in line 1 of the code?'),
-         rows=[pt(S(8, 'Not Graded'), 2, note=S(8, 'Correct answer 2 marks')),
-               pt(S(8, 'Distinction'), 2),
-               ladder([S(8, 'Converts (casts) the text entered to an integer'),
+         rows=[ofpart(P(8, '(a)'), pt(S(8, 'Not Graded'), 2, note=S(8, 'Correct answer 2 marks'))),
+               ofpart(P(8, '(b)'), pt(S(8, 'Distinction'), 2)),
+               ofpart(P(8, '(c)'), ladder([S(8, 'Converts (casts) the text entered to an integer'),
                        S(8, 'Ensures that the datatype of the variable percentage will be an integer')], [[1, 2]],
                       note=S(8, 'Good explanation – clear understanding demonstrated 2 marks',
-                             'Fair explanation – limited understanding 1 mark'))]),
+                             'Fair explanation – limited understanding 1 mark')))]),
     dict(key=(12, None, None), topic='cs-2-3', total=6,
          replaces='batch 1b: one example was the only answer, all or nothing at 6; the other '
                   'three and the accepted list were lost',

@@ -23,7 +23,7 @@ Q15(a)(i): cs_scheme reads 8 for this part, but the scheme prints "(i) 9 (3, 3,
 3) marks" and (a) as 15 (9, 6); the tariff is quoted. Q16(b)'s rubric is read
 from the cells of scheme page 23.
 """
-from compsci_lane import (C, P, Pair, S, T, anyn, crit, crop, ladder, pt, stack, unprinted)  # noqa: F401
+from compsci_lane import (C, P, Pair, S, T, anyn, crit, crop, ladder, ofpart, pt, stack, unprinted)  # noqa: F401
 
 WITHDRAWN = {'cs-2025-ol-q13': 'cs-2025-ol-q13-a-ii',
              'cs-2025-ol-q14': 'cs-2025-ol-q14-c',
@@ -180,15 +180,15 @@ CARDS = [
          why='p4: whole question (no part cards): (a) match three bases, each correct item 1; '
              '(b) why binary, the scheme lists four and accepts any relevant, 3 / 2',
          ask=P(4, '(a) Choose the appropriate number system', 'rather than the decimal number system.'),
-         rows=[pt(S(5, '2 Binary'), 1, note=S(5, 'Each correct item 1 mark')),
-               pt(S(5, '10 Decimal'), 1), pt(S(5, '16 Hexadecimal'), 1),
-               ladder([S(5, 'Simplicity for Hardware:', 'on (1) and off (0).'),
+         rows=[ofpart(P(4, '(a)'), pt(S(5, '2 Binary'), 1, note=S(5, 'Each correct item 1 mark'))),
+               ofpart(P(4, '(a)'), pt(S(5, '10 Decimal'), 1)), ofpart(P(4, '(a)'), pt(S(5, '16 Hexadecimal'), 1)),
+               ofpart(P(4, '(b)'), ladder([S(5, 'Simplicity for Hardware:', 'on (1) and off (0).'),
                        S(5, 'Reliability: Using just two states', 'errors or misinterpretations.'),
                        S(5, 'Efficiency in Processing:', 'only needs to handle two states.'),
                        S(5, 'Compatibility with Logic:', 'decision-making in computers.')], [[2, 3]],
                       instruction=S(5, 'Accept any relevant answers given.'),
                       note=S(5, 'Good description – clear understanding demonstrated 3 marks',
-                             'Fair description – limited understanding 2 marks'))]),
+                             'Fair description – limited understanding 2 marks')))]),
     dict(key=(4, None, None), topic='cs-2-3', total=6,
          replaces='batch 1b: one answer was the only row, all or nothing; now any one of the '
                   'scheme\'s five at 6 / 4 / 2',
@@ -232,16 +232,16 @@ CARDS = [
              'lists eight, each 1; (b) define abstraction, 4 / 2',
          stem=P(6, 'Abstraction is used in maps', 'read them with more ease.'),
          ask=P(6, '(a) List two ways in which abstraction', 'in relation to computer science?'),
-         rows=[anyn([S(7, 'Removing unnecessary details such as buildings, trees etc'), S(7, 'Simplified roads'),
+         rows=[ofpart(P(6, '(a)'), anyn([S(7, 'Removing unnecessary details such as buildings, trees etc'), S(7, 'Simplified roads'),
                      S(7, 'Simplified river'), S(7, 'Simplified railway line'), S(7, 'Green areas'),
                      S(7, 'Text labels on street names / road numbers'), S(7, 'Symbols for bus stops'),
                      S(7, 'Place names for important buildings')], 2, 1,
                     head=S(7, 'Simplified items on the map are considered forms of abstraction such as:'),
                     instruction=S(7, 'Accept any other valid forms of validation given'),
-                    note=S(7, 'Each correct item 1 mark', nth=1)),
-               crit(S(7, 'Abstraction means simplifying complex systems', 'hiding the unnecessary ones.'), 4, [2],
+                    note=S(7, 'Each correct item 1 mark', nth=1))),
+               ofpart(P(6, '(b)'), crit(S(7, 'Abstraction means simplifying complex systems', 'hiding the unnecessary ones.'), 4, [2],
                     note=S(7, 'Good description – clear understanding demonstrated 4 marks',
-                           'Fair description – limited understanding 2 marks'))]),
+                           'Fair description – limited understanding 2 marks')))]),
     dict(key=(8, None, None), topic='cs-2-3', qfigure='q8-fig2', total=6,
          replaces='batch 1b: the two answers were unpriced rows and Figure 2 was missing; now '
                   'each component 3 / 2, on the question\'s printed total, with Figure 2',
@@ -249,9 +249,9 @@ CARDS = [
              'the scheme answers each, 3 / 2',
          stem=P(7, 'Jeremy is building a desktop computer', 'components of a desktop computer:'),
          ask=P(7, '(i) Central Processing Unit (CPU) (ii) Input devices'),
-         rows=[crit(S(7, 'CPU: The CPU (Central Processing Unit)', 'processing inside a computer'), 3, [2],
-                    note=S(7, 'For each: Good description', 'Fair description – limited understanding 2 marks')),
-               crit(S(7, 'Input Devices: Input devices are components', 'into a computer system.'), 3, [2])]),
+         rows=[ofpart(P(7, '(i)'), crit(S(7, 'CPU: The CPU (Central Processing Unit)', 'processing inside a computer'), 3, [2],
+                    note=S(7, 'For each: Good description', 'Fair description – limited understanding 2 marks'))),
+               ofpart(P(7, '(ii)'), crit(S(7, 'Input Devices: Input devices are components', 'into a computer system.'), 3, [2]))]),
     dict(key=(9, None, None), topic='cs-2-3', qfigure='q9-table', total=6,
          why='p7: six statements true or false; the scheme lists the answers in order, 1 each',
          ask=P(7, 'State whether each of the following statements is true or false', 'in the appropriate box.'),

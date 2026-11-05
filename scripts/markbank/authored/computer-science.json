@@ -3472,7 +3472,7 @@
     "accepts": [
      "Called volatile because entire contents are cleared when the computer is switched off."
     ],
-    "contextNote": "Very good description - clear understanding demonstrated 3 marks Fair description - limited understanding 1 mark"
+    "contextNote": "(a) Very good description - clear understanding demonstrated 3 marks Fair description - limited understanding 1 mark"
    },
    {
     "id": "r-2",
@@ -3492,7 +3492,7 @@
      ]
     },
     "openList": true,
-    "contextNote": "1 marks for each difference clearly described"
+    "contextNote": "(b) 1 marks for each difference clearly described"
    }
   ],
   "stem": "Registers and RAM are both types of volatile memory."
@@ -3527,12 +3527,12 @@
      "A transistor is the fundamental building block of gates, logic circuits (adders, multiplexors etc.), integrated circuits and microprocessors.",
      "Transistors are used to represent binary 1’s and 0’s."
     ],
-    "contextNote": "For each term: Very good explanation - clear understanding demonstrated 2 marks Fair explanation - limited understanding 1 mark"
+    "contextNote": "(a) For each term: Very good explanation - clear understanding demonstrated 2 marks Fair explanation - limited understanding 1 mark"
    },
    {
     "id": "r-2",
     "kind": "criterion",
-    "verbatim": "Integrated Circuit — An integrated circuit (chip) is an electronic component that contains multiple discrete components combined together into logic circuits on a single silicon board.",
+    "verbatim": "(a) Integrated Circuit — An integrated circuit (chip) is an electronic component that contains multiple discrete components combined together into logic circuits on a single silicon board.",
     "marks": 2,
     "permittedMarks": [
      0,
@@ -3543,7 +3543,7 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "There is a physical limitation to the number of transistors that can fit on a single chip.",
+    "verbatim": "(b) — There is a physical limitation to the number of transistors that can fit on a single chip.",
     "marks": 1,
     "contextNote": "Full correct response 1 mark"
    }
@@ -3568,7 +3568,7 @@
    {
     "id": "r-1",
     "kind": "criterion",
-    "verbatim": "A B C A AND (B OR C) — 0 1 0 0 0 1 1 0 1 0 0 0 1 0 1 1 1 1 0 1 1 1 1 1",
+    "verbatim": "(a) A B C A AND (B OR C) — 0 1 0 0 0 1 1 0 1 0 0 0 1 0 1 1 1 1 0 1 1 1 1 1",
     "marks": 2,
     "permittedMarks": [
      0,
@@ -3580,7 +3580,7 @@
    {
     "id": "r-2",
     "kind": "criterion",
-    "verbatim": "Gates combined correctly as above",
+    "verbatim": "(b) — Gates combined correctly as above",
     "marks": 3,
     "permittedMarks": [
      0,
@@ -3614,7 +3614,7 @@
    {
     "id": "r-1",
     "kind": "criterion",
-    "verbatim": "Ransomware is a type of malicious software (malware) that threatens to publish or blocks access to data or a computer system, usually by encrypting it, until the victim pays a ransom fee to the attacker. In many cases, the ransom demand comes with a deadline. If the victim doesn’t pay in time, the data is gone forever or the ransom increases.",
+    "verbatim": "(a) — Ransomware is a type of malicious software (malware) that threatens to publish or blocks access to data or a computer system, usually by encrypting it, until the victim pays a ransom fee to the attacker. In many cases, the ransom demand comes with a deadline. If the victim doesn’t pay in time, the data is gone forever or the ransom increases.",
     "marks": 3,
     "permittedMarks": [
      0,
@@ -3642,7 +3642,7 @@
      ]
     },
     "openList": true,
-    "contextNote": "Each correct response 1 mark"
+    "contextNote": "(b) Each correct response 1 mark"
    }
   ],
   "stem": "On 14 May 2021, the Health Service Executive (HSE) of Ireland suffered a major ransomware cyberattack which caused all of its IT systems nationwide to be shut down."
@@ -3684,12 +3684,12 @@
      ]
     },
     "openList": true,
-    "contextNote": "Each correct response 1 mark"
+    "contextNote": "(a) Each correct response 1 mark"
    },
    {
     "id": "r-2",
     "kind": "criterion",
-    "verbatim": "If the data on which the algorithm makes its decision contains bias, the algorithm’s output will also be biased.",
+    "verbatim": "(b) — If the data on which the algorithm makes its decision contains bias, the algorithm’s output will also be biased.",
     "marks": 3,
     "permittedMarks": [
      0,
@@ -3718,7 +3718,7 @@
    {
     "id": "r-1",
     "kind": "criterion",
-    "verbatim": "The minimum number of weighings to find the fake coin is 2 as follows: Place a group of 3 coins on each pan (weighing 1). If they weigh the same the fake is among the other 2 (so the fake can be found by placing each of the other 2 on the pans – weighing 2). If they don’t weigh the same choose 2 of the coins from the 3 on the heavier side of the pan. Weigh these two coins (weighing 2). If they are both the same the 3rd coin is the fake. If they don’t weigh the same the heavier coin will be evident from the pan.",
+    "verbatim": "(a) — The minimum number of weighings to find the fake coin is 2 as follows: Place a group of 3 coins on each pan (weighing 1). If they weigh the same the fake is among the other 2 (so the fake can be found by placing each of the other 2 on the pans – weighing 2). If they don’t weigh the same choose 2 of the coins from the 3 on the heavier side of the pan. Weigh these two coins (weighing 2). If they are both the same the 3rd coin is the fake. If they don’t weigh the same the heavier coin will be evident from the pan.",
     "marks": 3,
     "permittedMarks": [
      0,
@@ -3731,7 +3731,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "By ignoring irrelevant details such as coin colour, size and value",
+    "verbatim": "(b) — By ignoring irrelevant details such as coin colour, size and value",
     "marks": 2,
     "contextNote": "Very good description - clear understanding demonstrated 2 marks"
    }
@@ -6695,12 +6695,12 @@
      "General-purpose computers can be easily reprogrammed, embedded systems can’t easily be upgraded",
      "General-purpose computers are generally higher cost, embedded systems are relatively low cost"
     ],
-    "contextNote": "Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 2 mark"
+    "contextNote": "(a) Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 2 mark"
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Examples of Embedded Systems can be any digital device created for specific tasks – these include domestic appliances such as washing machines, dish washers, etc.",
+    "verbatim": "(b) — Examples of Embedded Systems can be any digital device created for specific tasks – these include domestic appliances such as washing machines, dish washers, etc.",
     "marks": 2,
     "contextNote": "Do not accept Micro:bit, Raspberry Pi as valid examples Valid example 2 marks"
    }
@@ -6724,7 +6724,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Dara",
+    "verbatim": "(a) — Dara",
     "marks": 2,
     "contextNote": "Correct answer 2 marks"
    },
@@ -6741,7 +6741,7 @@
     "accepts": [
      "Binary search works by dividing the list into two halves, eliminating one half and conquering the other half by repeating this process."
     ],
-    "contextNote": "Good explanation – clear understanding demonstrated 4 marks Fair explanation – limited understanding 2 mark"
+    "contextNote": "(b) Good explanation – clear understanding demonstrated 4 marks Fair explanation – limited understanding 2 mark"
    }
   ],
   "stem": "Below is a sorted list of student names. Ava Cara Chan Dara Julie Kevin Senan"
@@ -6764,14 +6764,14 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Not Graded",
+    "verbatim": "(a) — Not Graded",
     "marks": 2,
     "contextNote": "Correct answer 2 marks"
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Distinction",
+    "verbatim": "(b) — Distinction",
     "marks": 2
    },
    {
@@ -6787,7 +6787,7 @@
     "accepts": [
      "Ensures that the datatype of the variable percentage will be an integer"
     ],
-    "contextNote": "Good explanation – clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
+    "contextNote": "(c) Good explanation – clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
    }
   ],
   "stem": "The Python code below is being used to calculate a Junior Cycle grade descriptor from a percentage. Examine the code carefully and answer the questions below.",
@@ -11616,20 +11616,20 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "2 Binary",
+    "verbatim": "(a) — 2 Binary",
     "marks": 1,
     "contextNote": "Each correct item 1 mark"
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "10 Decimal",
+    "verbatim": "(a) — 10 Decimal",
     "marks": 1
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "16 Hexadecimal",
+    "verbatim": "(a) — 16 Hexadecimal",
     "marks": 1
    },
    {
@@ -11647,7 +11647,7 @@
      "Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.",
      "Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers."
     ],
-    "contextNote": "Accept any relevant answers given. Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks"
+    "contextNote": "(b) Accept any relevant answers given. Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks"
    }
   ],
   "questionFigureKey": "computer-science-2025-OL-paper-q3-fig0",
@@ -11688,12 +11688,12 @@
      ]
     },
     "openList": true,
-    "contextNote": "Each correct item 1 mark Accept any other valid forms of validation given"
+    "contextNote": "(a) Each correct item 1 mark Accept any other valid forms of validation given"
    },
    {
     "id": "r-2",
     "kind": "criterion",
-    "verbatim": "Abstraction means simplifying complex systems by focusing only on the important details and hiding the unnecessary ones.",
+    "verbatim": "(b) — Abstraction means simplifying complex systems by focusing only on the important details and hiding the unnecessary ones.",
     "marks": 4,
     "permittedMarks": [
      0,
@@ -11725,7 +11725,7 @@
    {
     "id": "r-1",
     "kind": "criterion",
-    "verbatim": "CPU: The CPU (Central Processing Unit) is often referred to as the \"brain\" of the computer. It's the main component that performs most of the processing inside a computer",
+    "verbatim": "(i) — CPU: The CPU (Central Processing Unit) is often referred to as the \"brain\" of the computer. It's the main component that performs most of the processing inside a computer",
     "marks": 3,
     "permittedMarks": [
      0,
@@ -11737,7 +11737,7 @@
    {
     "id": "r-2",
     "kind": "criterion",
-    "verbatim": "Input Devices: Input devices are components used to enter data, instructions, or signals into a computer system.",
+    "verbatim": "(ii) — Input Devices: Input devices are components used to enter data, instructions, or signals into a computer system.",
     "marks": 3,
     "permittedMarks": [
      0,

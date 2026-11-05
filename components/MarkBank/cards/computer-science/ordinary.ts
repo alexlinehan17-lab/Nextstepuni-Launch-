@@ -1249,8 +1249,8 @@ export const CARDS: SecCard[] = [
     questionText: "(a) Describe the main difference between a general-purpose computer and an embedded system. (b) Name one example of an embedded system you might find in your home.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "General-purpose computers can have many uses, embedded systems have a limited or specific number of uses", marks: 4, accepts: ["General-purpose computers can be easily reprogrammed, embedded systems can’t easily be upgraded","General-purpose computers are generally higher cost, embedded systems are relatively low cost"], contextNote: "Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 2 mark", permittedMarks: [0,2,4] },
-    { id: "r-2", kind: "point", verbatim: "Examples of Embedded Systems can be any digital device created for specific tasks – these include domestic appliances such as washing machines, dish washers, etc.", marks: 2, contextNote: "Do not accept Micro:bit, Raspberry Pi as valid examples Valid example 2 marks" },
+    { id: "r-1", kind: "criterion", verbatim: "General-purpose computers can have many uses, embedded systems have a limited or specific number of uses", marks: 4, accepts: ["General-purpose computers can be easily reprogrammed, embedded systems can’t easily be upgraded","General-purpose computers are generally higher cost, embedded systems are relatively low cost"], contextNote: "(a) Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 2 mark", permittedMarks: [0,2,4] },
+    { id: "r-2", kind: "point", verbatim: "(b) — Examples of Embedded Systems can be any digital device created for specific tasks – these include domestic appliances such as washing machines, dish washers, etc.", marks: 2, contextNote: "Do not accept Micro:bit, Raspberry Pi as valid examples Valid example 2 marks" },
     ],
   } as SecCard,
   {
@@ -1264,8 +1264,8 @@ export const CARDS: SecCard[] = [
     questionText: "(a) If a binary search algorithm is used to search for the name “Chan” what name will first be identified as the Mid (middle) item? (b) Why is the binary search algorithm sometimes referred to as a “divide and conquer” method?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Dara", marks: 2, contextNote: "Correct answer 2 marks" },
-    { id: "r-2", kind: "criterion", verbatim: "Binary search looks at the middle item of a list & checks if that Is the item it is searching for. If the item is not found it then it splits the list in half, meaning there are less items to search. This process is repeated until item is found or there is nothing left to search.", marks: 4, accepts: ["Binary search works by dividing the list into two halves, eliminating one half and conquering the other half by repeating this process."], contextNote: "Good explanation – clear understanding demonstrated 4 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,4] },
+    { id: "r-1", kind: "point", verbatim: "(a) — Dara", marks: 2, contextNote: "Correct answer 2 marks" },
+    { id: "r-2", kind: "criterion", verbatim: "Binary search looks at the middle item of a list & checks if that Is the item it is searching for. If the item is not found it then it splits the list in half, meaning there are less items to search. This process is repeated until item is found or there is nothing left to search.", marks: 4, accepts: ["Binary search works by dividing the list into two halves, eliminating one half and conquering the other half by repeating this process."], contextNote: "(b) Good explanation – clear understanding demonstrated 4 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,4] },
     ],
   } as SecCard,
   {
@@ -1279,9 +1279,9 @@ export const CARDS: SecCard[] = [
     questionText: "(a) What is the output of the program if the user enters 19 when asked for the number of marks? (b) What is the output of the program if the user makes a mistake and enters 110 when asked for the number of marks? (c) What is the purpose of the int function in line 1 of the code?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Not Graded", marks: 2, contextNote: "Correct answer 2 marks" },
-    { id: "r-2", kind: "point", verbatim: "Distinction", marks: 2 },
-    { id: "r-3", kind: "criterion", verbatim: "Converts (casts) the text entered to an integer", marks: 2, accepts: ["Ensures that the datatype of the variable percentage will be an integer"], contextNote: "Good explanation – clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark", permittedMarks: [0,1,2] },
+    { id: "r-1", kind: "point", verbatim: "(a) — Not Graded", marks: 2, contextNote: "Correct answer 2 marks" },
+    { id: "r-2", kind: "point", verbatim: "(b) — Distinction", marks: 2 },
+    { id: "r-3", kind: "criterion", verbatim: "Converts (casts) the text entered to an integer", marks: 2, accepts: ["Ensures that the datatype of the variable percentage will be an integer"], contextNote: "(c) Good explanation – clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark", permittedMarks: [0,1,2] },
     ],
     questionFigure: {
           "candId": "computer-science-2023-OL-paper-q11-code0",
@@ -2495,10 +2495,10 @@ export const CARDS: SecCard[] = [
     questionText: "(a) Choose the appropriate number system from the list below and place it in Column B to match the correct base value in Column A. Hexadecimal Binary Decimal (b) Explain why computers use the binary number system rather than the decimal number system.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "2 Binary", marks: 1, contextNote: "Each correct item 1 mark" },
-    { id: "r-2", kind: "point", verbatim: "10 Decimal", marks: 1 },
-    { id: "r-3", kind: "point", verbatim: "16 Hexadecimal", marks: 1 },
-    { id: "r-4", kind: "criterion", verbatim: "Simplicity for Hardware: Computers use electrical circuits, which have two states: on (1) and off (0).", marks: 3, accepts: ["Reliability: Using just two states (1 and 0) reduces the chance of errors or misinterpretations.","Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.","Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers."], contextNote: "Accept any relevant answers given. Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3] },
+    { id: "r-1", kind: "point", verbatim: "(a) — 2 Binary", marks: 1, contextNote: "Each correct item 1 mark" },
+    { id: "r-2", kind: "point", verbatim: "(a) — 10 Decimal", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "(a) — 16 Hexadecimal", marks: 1 },
+    { id: "r-4", kind: "criterion", verbatim: "Simplicity for Hardware: Computers use electrical circuits, which have two states: on (1) and off (0).", marks: 3, accepts: ["Reliability: Using just two states (1 and 0) reduces the chance of errors or misinterpretations.","Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.","Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers."], contextNote: "(b) Accept any relevant answers given. Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3] },
     ],
     questionFigure: {
           "candId": "computer-science-2025-OL-paper-q3-fig0",
@@ -2521,8 +2521,8 @@ export const CARDS: SecCard[] = [
     questionText: "(a) List two ways in which abstraction has been used in the map in Figure 1. (b) What is meant by the term ‘abstraction’ in relation to computer science?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Simplified items on the map are considered forms of abstraction such as:", marks: null, contextNote: "Each correct item 1 mark Accept any other valid forms of validation given", openList: true, group: {"claimMax":2,"perOption":1,"options":["Removing unnecessary details such as buildings, trees etc","Simplified roads","Simplified river","Simplified railway line","Green areas","Text labels on street names / road numbers","Symbols for bus stops","Place names for important buildings"]} },
-    { id: "r-2", kind: "criterion", verbatim: "Abstraction means simplifying complex systems by focusing only on the important details and hiding the unnecessary ones.", marks: 4, contextNote: "Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,4] },
+    { id: "r-1", kind: "anyN", verbatim: "Simplified items on the map are considered forms of abstraction such as:", marks: null, contextNote: "(a) Each correct item 1 mark Accept any other valid forms of validation given", openList: true, group: {"claimMax":2,"perOption":1,"options":["Removing unnecessary details such as buildings, trees etc","Simplified roads","Simplified river","Simplified railway line","Green areas","Text labels on street names / road numbers","Symbols for bus stops","Place names for important buildings"]} },
+    { id: "r-2", kind: "criterion", verbatim: "(b) — Abstraction means simplifying complex systems by focusing only on the important details and hiding the unnecessary ones.", marks: 4, contextNote: "Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,4] },
     ],
     questionFigure: {
           "candId": "computer-science-2025-OL-paper-q7-fig0",
@@ -2545,8 +2545,8 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Central Processing Unit (CPU) (ii) Input devices",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "CPU: The CPU (Central Processing Unit) is often referred to as the \"brain\" of the computer. It's the main component that performs most of the processing inside a computer", marks: 3, contextNote: "For each: Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3] },
-    { id: "r-2", kind: "criterion", verbatim: "Input Devices: Input devices are components used to enter data, instructions, or signals into a computer system.", marks: 3, permittedMarks: [0,2,3] },
+    { id: "r-1", kind: "criterion", verbatim: "(i) — CPU: The CPU (Central Processing Unit) is often referred to as the \"brain\" of the computer. It's the main component that performs most of the processing inside a computer", marks: 3, contextNote: "For each: Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3] },
+    { id: "r-2", kind: "criterion", verbatim: "(ii) — Input Devices: Input devices are components used to enter data, instructions, or signals into a computer system.", marks: 3, permittedMarks: [0,2,3] },
     ],
     questionFigure: {
           "candId": "computer-science-2025-OL-paper-q8-fig2",
