@@ -23,6 +23,7 @@
  */
 import type { IrishAllocation, IrishAnswerPart, IrishAnswerRow } from '../../../../types/markBank';
 import type { IrishAnswerResult, IrishAnswerSource } from './answers';
+import { parseIrishAnswers } from './answers';
 
 const MARC = String.raw`(\d+)\s*m?h?arc\b`;
 const SUM = String.raw`((?:\s*\+\s*\d+\s*m?h?arc\b)*)`;
@@ -33,6 +34,15 @@ const OPENER = new RegExp(String.raw`\(\s*${MARC}\s*\)|\{\s*${MARC}(?::\s*((?:\d
 /** A priced phrase: "X = 13 mharc", "X = 4 mharc + 4 mharc", "Pointe eolais 1 = Plé … = 5 mharc". */
 const PRICED = new RegExp(String.raw`([^•¶\n]{2,400}?)\s*=\s*${MARC}${SUM}(?!\s*(?:ar|an|ceann)\b)`, 'g');
 const SAMPLES = /\b(?:Freagraí samplacha|Pointí eolais féideartha|(?<!\bas\s)Samplaí|Freagra samplach|Sampla cruinn:)\s*:?\s*/i;
+/** Where a sample list ends because a split-priced phrase follows it: "Samplaí: Brón, … bród… Dhá shampla = 4 mharc + 4 mharc".
+ *  Only a split ("a + b"), and never a verse reference, which stays inside its sample list whatever its price ("… gheal…
+ *  Véarsa a haon, Línte 3 + 4 = 2 mharc", 2018 Ordinary 3A(a)(i); "… maidí rámha… Véarsa a ceathair, Línte 1 - 7 = 2 mharc +
+ *  2 mharc", 2017 Ordinary 3A(b)(i)(c)). */
+const SAMPLES_RESUME = /…\s+(?=(?!Véarsa\b)[A-ZÁÉÍÓÚ][^•¶=…]{0,60}=\s*\d+\s*m?h?arc\s*\+\s*\d+\s*m?h?arc\b)/;
+/** "Cén uair a bhíonn an spailpín … i véarsa a haon? 2 mharc Freagraí Samplacha: Go moch ar maidin = 2 mharc … Go moch = 1 mharc"
+ *  (2016 Ordinary 3A(b)(i)): a question's bare price, then its answers each at its own price under the heading: an answer key
+ *  of alternatives, which the answer reader cuts (cards/irish/answers.ts). The heading is not an answer's text. */
+const ANSWER_KEY = /([?.])\s+(\d+\s*m?h?arc\b)\s+Freagraí [Ss]amplacha:\s*(?=[^•¶=]{1,120}?=\s*\d+\s*m?h?arc\b)/g;
 const BAND_TABLE = /\bCatagóir\b[\s\S]*?Lag\/An-lag[^•]*?\d+\s*-\s*\d+(?:\s+\d+\s*-\s*\d+)*/;
 /** "Dhá cheann le freagairt-an ceann is fearr a mharcáil as 13 mharc agus an ceann eile a mharcáil as 12 mharc" (2016 Higher
  *  2A, 2B): what the scheme marks "out of N" (a mharcáil as N), from the clause's start. "a mheas as N" (the Gaeilge
@@ -94,6 +104,9 @@ const SECTION_SUMMARY = /^(?:Freagair Léamhthuiscint|Tá Ceist \d+\s*[–-]\s*\
 
 /** The guidance of one criterion as parts of rows, or the reason it cannot be. */
 export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): IrishAnswerResult {
+  if (source.guidance.some(line => new RegExp(ANSWER_KEY.source).test(line))) {
+    return parseIrishAnswers({ ...source, guidance: source.guidance.map(line => line.replace(ANSWER_KEY, '$1 $2 ')) });
+  }
   const directions: string[] = [];
   let text = source.guidance.filter((line, index) => index === 0 || !SECTION_SUMMARY.test(line.trim())).join(' ').replace(/[\uf0a7\uf0b7\u25aa\u2022]/g, ' • ').replace(/\s+/g, ' ').trim();
   text = text.replace(DEDUCTION, rule => { directions.push(tidy(rule)); return ' ¶ '; });
@@ -131,11 +144,20 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   };
   for (const [segmentIndex, segment] of segments.entries()) {
     let body = segment;
-    let samples: string[] = [];
-    const sampleMark = SAMPLES.exec(body);
-    if (sampleMark) {
-      samples = body.slice(sampleMark.index + sampleMark[0].length).split(/[•¶]/).map(tidy).filter(Boolean);
-      body = body.slice(0, sampleMark.index);
+    const samples: string[] = [];
+    // A sample list runs to the end of the segment, unless a priced phrase follows it ("An mothúchán is láidre = 1 mharc
+    // Samplaí: Brón, … bród… Dhá shampla = 4 mharc + 4 mharc Freagraí Samplacha: …", 2016 Ordinary 3A(b)(iii)): then the list
+    // ends where the phrase begins, and the phrase and what follows it are read on.
+    for (let sampleMark = SAMPLES.exec(body); sampleMark; sampleMark = SAMPLES.exec(body)) {
+      const after = body.slice(sampleMark.index + sampleMark[0].length);
+      const resume = SAMPLES_RESUME.exec(after);
+      if (!resume) {
+        samples.push(...after.split(/[•¶]/).map(tidy).filter(Boolean));
+        body = body.slice(0, sampleMark.index);
+        break;
+      }
+      samples.push(...after.slice(0, resume.index + 1).split(/[•¶]/).map(tidy).filter(Boolean));
+      body = `${body.slice(0, sampleMark.index)} ${after.slice(resume.index + resume[0].length)}`;
     }
     const tokens: Token[] = [];
     for (const match of body.matchAll(OPENER)) {
