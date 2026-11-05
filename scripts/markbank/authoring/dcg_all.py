@@ -80,9 +80,6 @@ AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', f'{SUBJECT}.jso
 # Higher B-3(c) classified as Rotation for the words "true length", inside a
 # question the Atlas files, rightly, under Intersecting Planes. Applied to every
 # sitting since November 2026, when it moved 77 of the 2019-2026 cards.
-# The sittings whose cards carry a lettered parent's own words (ask_text).
-PARENT_TEXT_BEFORE = 2019
-
 ATLAS_TAGS = os.path.join(ROOT, 'scripts', 'paper-trail', 'topic-tags', 'tags',
                           'design-and-communication-graphics.json')
 
@@ -238,23 +235,10 @@ def _squash(text):
     return re.sub(r'[^a-z0-9]+', '', (text or '').lower())
 
 
-def ask_text(covered, texts, parent, letter_text=None):
-    """The paper's own wording for every ask one card covers, in order.
-
-    `letter_text(letter)` is the lettered parent's own words, set before the
-    first roman printed under it. 2018 Higher C-4(a) states the mechanism there
-    -- "Crank OA, which is 48mm long ... AB and CB are both 110mm long" -- and
-    its romans only say what to draw; without the parent the card asked for a
-    locus of a mechanism it never described.
-    """
+def ask_text(covered, texts, parent):
+    """The paper's own wording for every ask one card covers, in order."""
     parts = []
-    opened = set()
     for key in covered:
-        if letter_text and key[3] and key[2] not in opened:
-            opened.add(key[2])
-            own = ' '.join((letter_text(key[2]) or '').split())
-            if own:
-                parts.append(own)
         text = ' '.join((texts.get(key) or '').split())
         if not text:
             continue
@@ -264,6 +248,24 @@ def ask_text(covered, texts, parent, letter_text=None):
     if not joined:
         joined = ' '.join((parent or '').split())
     return PARTS_LIST.sub('', joined).strip()
+
+
+def parent_words(P, section, q, covered):
+    """The lettered parts' own words, for a card that covers romans under them.
+
+    A letter that opens romans often states the data the romans work from:
+    2018 Higher C-4(a) describes the mechanism there -- "Crank OA, which is
+    48mm long ... AB and CB are both 110mm long" -- and its romans only say
+    what to draw, so a card without the letter's words asks for the locus of
+    a mechanism it never described. Lifted into the card's STEM, in order, once
+    per letter. 26 cards needed it in November 2026.
+    """
+    out = []
+    for letter in dict.fromkeys(k[2] for k in covered if k[2] and k[3]):
+        own = ' '.join((P.parent_text(section, q, letter) or '').split())
+        if own:
+            out.append(own)
+    return out
 
 
 def card_id(year, level, section, q, covered, ordinal, many):
@@ -599,10 +601,8 @@ def author(bind_figures=True):
                          unit.title)
                     continue
 
-                question = ask_text(
-                    covered, texts, P.parent_text(section, q, covered[0][2]),
-                    (lambda lt: P.parent_text(section, q, lt))
-                    if year < PARENT_TEXT_BEFORE else None)
+                question = ask_text(covered, texts,
+                                    P.parent_text(section, q, covered[0][2]))
                 if len(question) < 12:
                     note('the paper prints no ask at this address', unit.title)
                     continue
@@ -618,7 +618,8 @@ def author(bind_figures=True):
                         continue
                     pieces = split
 
-                stem = ' '.join((qq['stem'] or '').split())
+                stem = ' '.join([' '.join((qq['stem'] or '').split())]
+                                + parent_words(P, section, q, covered)).strip()
                 # A question the paper asks WHOLE has no ask of its own: its
                 # leaf text IS the stem, so the card would print the same
                 # paragraph twice, once above the other.
