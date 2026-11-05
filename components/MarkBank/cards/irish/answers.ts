@@ -290,8 +290,31 @@ const parseUnitReading = (text: string, total: number): IrishAnswerResult | unde
 };
 
 /** Cut one criterion's exact guidance into parts and rows, or say why not. */
+/** "Fógra 1: 3 marc × 4 = 12 marc" (2012 Ordinary, scheme PDF 4–5): a listening section's printed tariff. */
+const SECTION_TARIFF = /^(?:Fógra|Comhrá|Píosa) \d: (\d+) m?h?arc × (\d+) = (\d+) m?h?arc$/;
+/** "1. (a) Cad as do thuismitheoirí Evanne Ní Choileáin (b) Dhá scoil ar fhreastail sí orthu = 10 marc" (2012 Ordinary reading,
+ *  scheme PDF 9; B 2 prints "= 10 mar"): what a question asks, restated, and one price for the whole question. */
+const RESTATED_QUESTION = /^\d+\.\s+([^=•]+?)\s*=\s*(\d+)\s*(?:m?h?arc|mar)$/;
+
 export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult {
   const directions: string[] = [];
+  // The 2012 Ordinary scheme prints no listening or reading key. A listening criterion that carries its printed question and its
+  // section's tariff alone, or a reading question that carries the scheme's restatement of it and its one price, is one part at
+  // that price with its own words as the row, claimed whole: the scheme prints no answer to claim beyond it, and no partial.
+  if (source.guidance.length === 2 && LISTENING.test(source.questionRef)) {
+    const question = tidy(source.guidance[0]);
+    const tariff = SECTION_TARIFF.exec(source.guidance[1].trim());
+    if (tariff && Number(tariff[1]) === source.totalMarks && Number(tariff[1]) * Number(tariff[2]) === Number(tariff[3])
+      && !/\d+\s*m?h?arc\b/.test(question) && printedQuestion(source.questionText, question)) {
+      return { ok: true, allocation: { parts: [{ id: 'p1', prompt: question, tariff: source.totalMarks,
+        rows: [{ id: 'r1', text: question, marks: source.totalMarks }] }], directions: [] } };
+    }
+  }
+  const restated = source.guidance.length === 1 && /Léamhthuiscint/.test(source.questionRef) ? RESTATED_QUESTION.exec(source.guidance[0].trim()) : null;
+  if (restated && Number(restated[2]) === source.totalMarks) {
+    return { ok: true, allocation: { parts: [{ id: 'p1', tariff: source.totalMarks,
+      rows: [{ id: 'r1', text: tidy(restated[1]), marks: source.totalMarks }] }], directions: [] } };
+  }
   const ownLines = source.guidance.filter((line, index) => {
     if (index === 0) return true;
     if (SECTION_SUMMARY.test(line.trim())) return false;

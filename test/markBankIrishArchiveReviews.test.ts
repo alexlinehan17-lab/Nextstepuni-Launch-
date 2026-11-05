@@ -53,6 +53,7 @@ import ordinary2013P1 from '../components/MarkBank/cards/irish/ordinary-2013-p1-
 import ordinary2013P2 from '../components/MarkBank/cards/irish/ordinary-2013-p2-authored.json';
 import higher2012P1 from '../components/MarkBank/cards/irish/higher-2012-p1-authored.json';
 import higher2012P2 from '../components/MarkBank/cards/irish/higher-2012-p2-authored.json';
+import ordinary2012P1 from '../components/MarkBank/cards/irish/ordinary-2012-p1-authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import { irishMarks } from '../components/MarkBank/SessionScreen';
@@ -100,6 +101,7 @@ const PAPER_ONE = [
   { review: higher2013P1.review, year: 2013, fileid: 'LC001ALP100IV.pdf', segments: 8, questions: 30, titles: 9, perTitle: 100 },
   { review: ordinary2013P1.review, year: 2013, fileid: 'LC001GLP100IV.pdf', segments: 6, questions: 20, titles: 9, perTitle: 50 },
   { review: higher2012P1.review, year: 2012, fileid: 'LC001ALP100IV.pdf', segments: 8, questions: 28, titles: 9, perTitle: 100 },
+  { review: ordinary2012P1.review, year: 2012, fileid: 'LC001GLP100IV.pdf', segments: 6, questions: 20, titles: 9, perTitle: 50 },
 ];
 
 describe('Irish archive review: Paper 1 (listening and composition)', () => {

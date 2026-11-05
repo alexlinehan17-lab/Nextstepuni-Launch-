@@ -148,6 +148,28 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   if (titleAsk && Number(titleAsk[2]) === source.totalMarks) {
     return { ok: true, allocation: { parts: [{ id: 'p1', tariff: source.totalMarks, rows: [{ id: 'r1', text: titleAsk[1], marks: source.totalMarks }] }], directions: [] } };
   }
+  // "(i) (a) Cad as don ainmhí seo? (Géibheann thíos) (b) Cá bhfuil an t-ainmhí anois, dar leat? (c) … (d) … (8 marc)" (2012
+  // Ordinary 3A(i)): printed questions (a)–(d) that the scheme prices only together, with nothing else printed: one sub-question,
+  // its questions the prompt and the row, claimed whole.
+  const shared = /^\(\s*(?:i|ii|iii|iv|v)\s*\)\s*(\(a\)\s[^=•¶]*?)\s*\(\s*(\d+)\s*m?h?arc\s*\)$/.exec(text);
+  if (shared && Number(shared[2]) === source.totalMarks && !/\d+\s*m?h?arc\b/.test(shared[1])) {
+    const questions = shared[1].split(/\s(?=\([b-f]\)\s)/);
+    if (questions.length >= 2 && questions.every((question, index) => question.startsWith(`(${'abcdef'[index]}) `) && /\?(?:\s*\([^()]*\))?$/.test(question.trim()))) {
+      const asked = tidy(shared[1]);
+      return { ok: true, allocation: { parts: [{ id: 'p1', prompt: asked, tariff: source.totalMarks, rows: [{ id: 'r1', text: asked, marks: source.totalMarks }] }], directions: [] } };
+    }
+  }
+  // "6 phointe eolais. ( 5 mharc ar an gcéad phointe + 5 phointe eile ar 4 mharc an ceann)." and "4 phointe eolais. (7 marc ar an
+  // gcéad phointe + 6 mharc an ceann ar trí phointe eile)." (2012 Ordinary 2A(a), 2A(b)): the points the answer needs, the first at
+  // its own price and each of the rest at theirs. Where the counts agree it reads as that row's split ("6 phointe eolais = 5 mharc
+  // + 4 mharc + …"): one row in the scheme's words, one step a point ([0, 5, 9, 13, 17, 21, 25]).
+  text = text.replace(/(\d+)\s*phointe eolais\.\s*\(\s*(\d+)\s*(m?h?arc) ar an gcéad phointe\s*\+\s*(?:(\S+)\s+phointe eile ar (\d+)\s*m?h?arc an ceann|(\d+)\s*m?h?arc an ceann ar (\S+)\s+phointe eile)\s*\)\.?/gi,
+    (whole: string, count: string, first: string, unit: string, restA?: string, eachA?: string, eachB?: string, restB?: string) => {
+      const restWord = (restA ?? restB)!;
+      const rest = WORDS[restWord.toLowerCase()] ?? Number(restWord);
+      if (!rest || 1 + rest !== Number(count)) return whole;
+      return `${count} phointe eolais = ` + [Number(first), ...Array(rest).fill(Number(eachA ?? eachB))].map(value => `${value} ${unit}`).join(' + ');
+    });
   // "Tréith 1 ( 2 mharc) + Sampla 1 ( 4 mharc) ► 6 mharc" (2014 Higher A and B 6(b)): one half's split, each piece priced in
   // brackets and their total after the arrow. Where the pieces add up to it, it reads as the split "Tréith 1 = 2 mharc + Sampla 1
   // = 4 mharc" (2016's "Aidhm a lua = 2 mharc + Forbairt = 4 mharc"); the total is the half's own, which the slots carry.
@@ -205,6 +227,9 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   text = text.replace(/\b\d+\s+phointe eolais ag teastáil(?=\s+\d+\s+[A-ZÁÉÍÓÚ])/g, note => { directions.push(tidy(note)); return ' ¶ '; });
   // A note the scheme sets in brackets ("(Is leor dhá phointe eolais.)") leaves its brackets behind: they go with it.
   text = text.replace(/\(\s*¶\s*\)/g, ' ¶ ');
+  // "Cuir fáthanna le do fhreagra. (Is leor dhá fháth) (7 marc)" (2012 Ordinary 3B): a bracketed note printed with no full stop
+  // inside it runs to the part's price and takes its own close; its opening bracket goes with it.
+  text = text.replace(/\(\s*¶(?=\s*\(\s*\d+\s*m?h?arc\s*\))/g, ' ¶ ');
   // A note that closes a bracket the prompt opened ("(Bíodh an freagra i d’fhocail féin. Is leor 60 focal.)", Higher 6(b) in
   // 2014, 2015 and 2019) leaves the bracket's close behind: it closes the prompt, never a direction of its own.
   text = text.replace(/(\([^()¶]*?[^\s(¶])\s*¶\s*\)/g, '$1) ¶ ');
