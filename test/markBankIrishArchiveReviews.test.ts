@@ -176,7 +176,7 @@ const NEW_PAPER_TWO = [
   { file: ordinary2017P2, fileid: 'LC001GLP200IV.pdf', cards: 60, readingWhole: 10 },
   { file: higher2016P2, fileid: 'LC001ALP200IV.pdf', cards: 64, readingWhole: 12 },
   { file: ordinary2016P2, fileid: 'LC001GLP200IV.pdf', cards: 54, readingWhole: 10 },
-  { file: higher2015P2, fileid: 'LC001ALP200IV.pdf', cards: 63, readingWhole: 12 },
+  { file: higher2015P2, fileid: 'LC001ALP200IV.pdf', cards: 64, readingWhole: 12 },
   { file: ordinary2015P2, fileid: 'LC001GLP200IV.pdf', cards: 48, readingWhole: 10 },
   { file: higher2014P2, fileid: 'LC001ALP200IV.pdf', cards: 60, readingWhole: 12 },
   { file: ordinary2014P2, fileid: 'LC001GLP200IV.pdf', cards: 53, readingWhole: 10 },

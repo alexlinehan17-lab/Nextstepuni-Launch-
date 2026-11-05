@@ -18,8 +18,8 @@ count only with the opinion or the genre, so each 6(b) stays one part.
 
 2015's literature is 2018's shape: 2A prints two prescribed texts (the film Cáca Milis or the
 play An Lasair Choille: a card each, as their Atlas headings differ) under one shared Treoir,
-2B one optional film-or-play question (one card carrying both printed alternatives, the film
-priced Tréithe agus Léiriú 25, the play Príomhthéama 2 + Forbairt 23), one prescribed poem
+2B one optional film-or-play question (a card per alternative, as the scheme marks them differently:
+the film Tréithe agus Léiriú 25, the play Príomhthéama 2 + Forbairt 23), one prescribed poem
 (3A Colscaradh), one optional modern poem (3B) and six Q4 options (4F Colmáin); each is one
 card with its printed sub-questions as criteria and one shared 5-mark Gaeilge award. The
 scheme prints no band tables: each prose and poetry answer ends at the examiner's note “Ní mór
@@ -326,34 +326,44 @@ def build():
         add(key, slug, ref, prompt, topic, [8], [24, 29],
             [criterion('eolas', 'Eolas', 25, [treoir2a, m['grading']], 'indicative'), gaeilge()],
             LIT_REQUIREMENTS, prose_note, source=('Prós', ref.split(' · ', 1)[1], [8]), stem=stem2a)
-    # 2B: one card carries both printed alternatives (an optional film or an optional play under one Atlas heading).
+    # 2B: the optional film and the optional play are two printed alternatives the scheme marks differently (the film
+    # "Tréithe agus Léiriú (25)", the play "Príomhthéama (2) = Forbairt (23)"), so each is a card (coordinator ruling,
+    # batch 6; BRIEF rule 5), both under the one optional-prose Atlas heading.
     stem2b = head2 + '\n2B. Prós Roghnach\nNíl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.'
-    prompt2b = ('Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.\n\n'
-                'Maidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, cad iad tréithe an phríomhcharachtair (na príomhphearsan) sa scannán? '
-                'Déan plé ar an léiriú a dhéantar ar na tréithe sin ó thús deireadh an scannáin.\n'
-                'Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)\n\nnó\n\n'
-                'Maidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, cad é príomhthéama an dráma sin? '
-                'Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dráma.\n'
-                'Ní mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)')
-    for line in [*stem2b.splitlines(), *prompt2b.splitlines()]:
+    choice_line = 'Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.'
+    film_q = ('Maidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, cad iad tréithe an phríomhcharachtair (na príomhphearsan) sa scannán? '
+              'Déan plé ar an léiriú a dhéantar ar na tréithe sin ó thús deireadh an scannáin.\n'
+              'Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)')
+    play_q = ('Maidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, cad é príomhthéama an dráma sin? '
+              'Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dráma.\n'
+              'Ní mór teideal an dráma sin, mar aon le hainm an scríbhneora, a scríobh síos go cruinn. (30 marc)')
+    for line in [*stem2b.splitlines(), choice_line, *film_q.splitlines(), 'nó', *play_q.splitlines()]:
         if line:
             assert in_order(line, texts[7]), ('P-2B', line)
     # The scheme reprints each alternative (on the card already); its marking text is the panel and note after each:
-    # the film "Tréithe agus Léiriú (25)" with its one-trait cap (PDF 24–25), the play "Príomhthéama (2) = Forbairt (23)".
+    # the film "Tréithe agus Léiriú (25)" with its one-trait cap (PDF 24–25), the play "Príomhthéama (2) = Forbairt (23)",
+    # then the examiner's note closing Ceist 2B ("… an marc ar eolas as 25 marc …"), which governs either alternative.
     question2b = s.chunk('2B. Prós Roghnach', 'Tréithe agus Léiriú (25)', s.page(24))[0] + ' ' + s.chunk('nó Maidir leis an dráma roghnach', 'Príomhthéama (2) =', s.page(25))[0]
-    assert all(in_order(re.sub(r'\s*\(30 marc\)$', '', line), question2b) for line in prompt2b.splitlines() if line and line != 'nó'), 'P-2B scheme reprint differs from the paper'
-    # The scheme's own choice line leads: one Eolas judgement for whichever alternative is answered.
-    choice2b = s.chunk('Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.', 'Maidir leis an scannán roghnach', s.page(24))[0]
+    assert all(in_order(re.sub(r'\s*\(30 marc\)$', '', line), question2b) for line in [*film_q.splitlines(), *play_q.splitlines()]), 'P-2B scheme reprint differs from the paper'
+    choice2b = s.chunk(choice_line, 'Maidir leis an scannán roghnach', s.page(24))[0]
     film, fpages = s.chunk('Tréithe agus Léiriú (25)', 'nó Maidir leis an dráma roghnach', s.page(24))
-    play, ppages = s.chunk('Príomhthéama (2) = Forbairt (23)', 'Eolas (25) = Gaeilge (5) =', s.page(25))
-    assert choice2b == prompt2b.splitlines()[0] and fpages == [24, 25] and film.endswith('marcáil an t-eolas as 14 mharc.')
-    assert ppages == [25] and play.endswith('a thaispeáint sa fhreagarleabhar.')
-    add('P-2B', 'prose-2b', 'Prós 2B · Scannán nó dráma roghnach', prompt2b, 'irish-4-7', [8], [24, 25, 29],
-        [criterion('eolas', 'Eolas', 25, [choice2b, film, play, m['grading']], 'indicative'), gaeilge()], LIT_REQUIREMENTS,
-        'One complete SEC response: Eolas 25 and a single shared 5-mark Gaeilge award; the film and the play are two printed alternatives of one route. '
-        'The scheme prices the film as Tréithe agus Léiriú 25 (Eolas out of 14 where only one trait is discussed and illustrated) and the play as '
-        'Príomhthéama 2 + Forbairt 23; its general grading table (PDF 29) converts a grade to a mark.',
-        source=('Prós', 'Scannán nó dráma roghnach', [8]), stem=stem2b)
+    play, ppages = s.chunk('Príomhthéama (2) = Forbairt (23)', 'Ní mór don Scrúdaitheoir an marc ar eolas', s.page(25))
+    note2b, npages = s.chunk('Ní mór don Scrúdaitheoir an marc ar eolas', 'Eolas (25) = Gaeilge (5) =', s.page(25))
+    assert choice2b == choice_line and fpages == [24, 25] and film.endswith('marcáil an t-eolas as 14 mharc.')
+    assert ppages == [25] and play == 'Príomhthéama (2) = Forbairt (23) =', play
+    assert npages == [25] and note2b.endswith('a thaispeáint sa fhreagarleabhar.')
+    add('P-2B-scannan', 'prose-2b-scannan', 'Prós 2B · Scannán roghnach', choice_line + '\n\n' + film_q, 'irish-4-7', [8], [24, 25, 29],
+        [criterion('eolas', 'Eolas', 25, [choice2b, film, note2b, m['grading']], 'indicative'), gaeilge()], LIT_REQUIREMENTS,
+        'One complete SEC response: Eolas 25 and a single shared 5-mark Gaeilge award. The scheme prices the optional film as Tréithe agus '
+        'Léiriú 25, with Eolas out of 14 where only one trait is discussed and illustrated; the play, the other printed alternative of 2B, '
+        'is priced differently and has its own card. Its general grading table (PDF 29) converts a grade to a mark.',
+        source=('Prós', 'Scannán roghnach', [8]), stem=stem2b)
+    add('P-2B-drama', 'prose-2b-drama', 'Prós 2B · Dráma roghnach', choice_line + '\n\n' + play_q, 'irish-4-7', [8], [25, 29],
+        [criterion('eolas', 'Eolas', 25, [choice2b, play, note2b, m['grading']], 'indicative'), gaeilge()], LIT_REQUIREMENTS,
+        'One complete SEC response: Eolas 25 and a single shared 5-mark Gaeilge award. The scheme prices the optional play as Príomhthéama 2 '
+        '+ Forbairt 23; the film, the other printed alternative of 2B, is priced differently and has its own card. Its general grading table '
+        '(PDF 29) converts a grade to a mark.',
+        source=('Prós', 'Dráma roghnach', [8]), stem=stem2b)
 
     poems = [
         ('F-3A', 'poetry-3a', 'Filíocht 3A · Colscaradh', 'irish-5-5', '3A. Filíocht Ainmnithe (i)', 26, head3 + '\n3A. Filíocht Ainmnithe', [
@@ -423,8 +433,8 @@ def build():
 
     reading = [c for c in cards if '-reading-' in c['id']]
     literature = [c for c in cards if '-reading-' not in c['id']]
-    assert len(reading) == 52 and len(literature) == 11, (len(reading), len(literature))
-    assert len({c['id'] for c in cards}) == len(cards) == 63 and len({c['atlasQuestionId'] for c in cards}) == 63
+    assert len(reading) == 52 and len(literature) == 12, (len(reading), len(literature))
+    assert len({c['id'] for c in cards}) == len(cards) == 64 and len({c['atlasQuestionId'] for c in cards}) == 64
     assert sum(c['totalMarks'] for c in cards if re.fullmatch(r'R-[AB]-\d', c['atlasQuestionId'])) == 100
     for card in cards:
         assert sum(c['maxMarks'] for c in card['criteria']) == card['totalMarks'], card['id']
@@ -442,7 +452,7 @@ def build():
                   examStructure=dict(readingA=50, readingB=50, prose=30, poetry=30, additionalLiterature=40, total=200),
                   nonPoolDecisions=sr['nonPoolDecisions'], openIssues=[], caveats=sr['sourceFindings'],
                   boundaries='12 whole reading questions with 34 published parts and 6 independent one-mark answer slots; '
-                             '2 prescribed prose routes (2A Cáca Milis or An Lasair Choille), 1 optional film-or-play route (2B), 2 poetry and 6 additional-literature routes.')
+                             '2 prescribed prose routes (2A Cáca Milis or An Lasair Choille), 2 optional prose routes (2B scannán or dráma), 2 poetry and 6 additional-literature routes.')
     return dict(review=review, cards=cards)
 
 

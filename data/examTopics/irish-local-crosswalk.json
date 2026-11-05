@@ -28,15 +28,15 @@
     "referenceAnomalyAssociations": 2,
     "matchedLocalCardLinks": 742,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 3782,
-    "distinctStudentFacingQuestions": 3782,
+    "localPhysicalMappings": 3783,
+    "distinctStudentFacingQuestions": 3783,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 3096,
+    "retainedLocalQuestions": 3097,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 3496,
+    "newlyAddedPhysicalMappings": 3497,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -24016,7 +24016,20 @@
       "fileid": "LC001ALP200IV.pdf",
       "paperKey": "p2",
       "kind": "p2",
-      "n": "P-2B",
+      "n": "P-2B-scannan",
+      "topicIds": [
+        "irish-higher-studied-prose-pros-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2015,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-drama",
       "topicIds": [
         "irish-higher-studied-prose-pros-roghnach"
       ],

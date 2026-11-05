@@ -309,6 +309,30 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
         counted.steps = cumulative(Array(count).fill(each));
       }
     }
+    // "Príomhthéama (2) = Forbairt (23) =" (2015 Higher 2B, the play): the scheme's score boxes, each part of the answer at its
+    // printed price, where nothing else in the text is priced. The boxes that add up to the criterion are its rows ("Tréithe
+    // agus Léiriú (25) = Gaeilge (5) =", the film: the Gaeilge box is the other criterion's). The examiner's "an marc ar eolas
+    // as 25 marc" judges the criterion out of its marks, every mark from 0: its judged row, the largest, steps in single marks.
+    if (tokens.length === 0 && !parts.length && !loose.length && !bands.length) {
+      const boxes = [...body.matchAll(/([A-ZÁÉÍÓÚ][^()=¶.]*?)\s*\((\d+)\)\s*=(?=\s|$)/g)];
+      const taken: RegExpMatchArray[] = [];
+      let boxed = 0;
+      for (const box of boxes) {
+        if (boxed >= source.totalMarks) break;
+        taken.push(box);
+        boxed += Number(box[2]);
+      }
+      const judgedOutOf = /an t-eolas a mharcáil as (\d+) marc|an marc ar eolas as (\d+) marc/.exec(source.guidance.join(' '));
+      if (taken.length && boxed === source.totalMarks) {
+        const largest = Math.max(...taken.map(box => Number(box[2])));
+        const judged = Number(judgedOutOf?.[1] ?? judgedOutOf?.[2]) === source.totalMarks;
+        for (const box of taken) {
+          const marks = Number(box[2]);
+          tokens.push({ kind: 'row', text: tidy(box[1]), marks, ...(judged && marks === largest && marks > 1 ? { steps: range(marks) } : {}),
+            at: box.index!, end: box.index! + box[0].length });
+        }
+      }
+    }
     // Where nothing else in the text is priced and no band table prices it, each thing marked "out of N" is a judged row at N
     // in single marks (MARK_AS).
     if (tokens.length === 0 && !parts.length && !loose.length && !bands.length) {
