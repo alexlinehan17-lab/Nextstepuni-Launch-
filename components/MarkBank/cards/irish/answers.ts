@@ -58,8 +58,9 @@ const TOKEN = new RegExp(String.raw`=\s*${MARC}((?:\s*\+\s*\d+\s*m?h?arc\b)*)` +
   String.raw`|\{([^}]*)\}` +
   String.raw`|${MARC}\s*\+\s*${MARC}(?:\s*=\s*\d+\s*m?h?arc\b)?` +
   String.raw`|(?<![=+:{\d])\b${MARC}`, 'g');
-/** "(dhá phointe eolais anseo = 2 mharc + 1 mharc = 3 mharc)" inside an answer. */
-const NOTE = /\(([^()]*=\s*\d+\s*m?h?arc[^()]*)\)/g;
+/** "(dhá phointe eolais anseo = 2 mharc + 1 mharc = 3 mharc)" inside an answer, and "( “craiceann geal” fágtha ar lár san
+ *  abairt = 0)" (2014 Higher A 2(b)(ii)): what an answer is worth without a word, at a bare 0. */
+const NOTE = /\(([^()]*=\s*(?:\d+\s*m?h?arc|0(?=\s*\)))[^()]*)\)/g;
 /** "An chéad phointe eolais atá ceart", "an dara húsáid atá ceart", and the first rule as 2017 Ordinary Reading B 3(b) prints
  *  it, "Fáth amháin atá ceart = 3 mharc; an dara fáth atá ceart = 2 mharc". */
 const RULE = /^(?:(?:an\s+)?(?:chéad|dara|tríú|ceathrú)\s.*\s|[A-ZÁÉÍÓÚa-záéíóú]+ amháin atá\s)(?:ceart|cheart)$/i;
@@ -163,6 +164,10 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   // A split printed before the brace, "(Dhá bhealach: 2 mharc + 1 mharc) {3 mharc}", is the brace's own split.
   text = text.replace(/\((Dhá\s[^():]*):\s*(\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)+)\)\s*\{\s*(\d+\s*m?h?arc\b)\s*\}/g,
     (_, label: string, split: string, total: string) => `(${label}) {${total}: ${split}}`);
+  // "(Alt 1) 3 mharc: 2 mharc + 1 mharc" (2014 Higher A 1(a)): the brace "{3 mharc: 2 mharc + 1 mharc}" printed without its
+  // braces, read as the brace where the split adds up to the total.
+  text = text.replace(/(?<!\{\s*)\b(\d+)\s*(m?h?arc):\s*(\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)+)/g, (whole: string, total: string, unit: string, split: string) =>
+    ([...split.matchAll(/\d+/g)].reduce((sum, m) => sum + Number(m[0]), 0) === Number(total) ? `{${total} ${unit}: ${split}}` : whole));
   // "(2 mharc) (2 cheist dhomhanda) {1 mharc + 1 mharc}" and "{2 mharc} (2 phointe eolais) {1 mharc + 1 mharc}" (2015 Higher
   // A 1(b)(ii), A 5(b)(i)): the part's tariff, a note on what it asks for, then how the tariff splits. One brace with its split;
   // the note is a direction, so the prompt stays the printed line it ends ("… (Alt 1)").
@@ -295,6 +300,14 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
       if (numbers.length === 0) return { ok: false, reason: 'empty brace tariff' };
       const { lead, bullets } = splitBullets(segment);
       if (bullets.length && current) bullets.forEach(bullet => { if (RULE.test(bullet)) directions.push(bullet); else current!.rows.push({ text: bullet }); });
+      // "{3 mharc} Dhá phointe eolais = {2 mharc + 1 mharc}" (2014 Higher A 4(a)): the open part's tariff, then how it divides
+      // under its own label: the part's ladder; the label is a direction.
+      if (current && !current.ladder && current.rows.length === 0 && brace.includes('+') && /=$/.test(lead)
+        && numbers.reduce((a, b) => a + b, 0) === current.tariff) {
+        current.ladder = cumulative(numbers);
+        directions.push(tidy(lead.replace(/\s*=$/, '')));
+        continue;
+      }
       // "{3 mharc: 2 mharc + 1 mharc}" and "{2 mharc = 1 mharc + 1 mharc}": the
       // tariff, then how it splits; "{6 mharc + 6 mharc}": two answers.
       if (numbers.length > 2 && numbers.slice(1).reduce((a, b) => a + b, 0) === numbers[0]) open(lead, numbers[0], cumulative(numbers.slice(1)));

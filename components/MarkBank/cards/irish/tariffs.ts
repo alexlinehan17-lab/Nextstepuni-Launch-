@@ -33,7 +33,8 @@ const SUB = /(?<=^|\s)(?:\d\.\s*)?(?:\(?[a-f]\)\s*)?\((?:i|ii|iii|iv|v)\)\s|(?<=
 const OPENER = new RegExp(String.raw`\(\s*${MARC}\s*\)|\{\s*${MARC}(?::\s*((?:\d+\s*m?h?arc\b\s*\+?\s*)+))?${SUM}\s*\}|(?<=^|\s)Eolas\s*=\s*${MARC}${SUM}`, 'g');
 /** A priced phrase: "X = 13 mharc", "X = 4 mharc + 4 mharc", "Pointe eolais 1 = Plé … = 5 mharc". */
 const PRICED = new RegExp(String.raw`([^•¶\n]{2,400}?)\s*=\s*${MARC}${SUM}(?!\s*(?:ar|an|ceann)\b)`, 'g');
-const SAMPLES = /\b(?:Freagraí samplacha|Pointí eolais féideartha|(?<!\bas\s)Samplaí|Freagra samplach|Sampla cruinn:)\s*:?\s*/i;
+/** "Tréithe samplacha:" and "Ábhair imní:" (2014 Higher A and B 6(b)) head their lists as "Samplaí" does. */
+const SAMPLES = /(?:\b(?:Freagraí samplacha|Pointí eolais féideartha|(?<!\bas\s)Samplaí|Freagra samplach|Sampla cruinn:|Tréithe samplacha)|(?<![A-Za-zÁÉÍÓÚáéíóú])Ábhair imní(?=:))\s*:?\s*/i;
 /** Where a sample list ends because a split-priced phrase follows it: "Samplaí: Brón, … bród… Dhá shampla = 4 mharc + 4 mharc", or a
  *  numbered point's price: "Samplaí : Doicheall, … teannas… Pointe eolais 1 = 3 mharc" (2015 Higher 4F(iii)).
  *  Only a split ("a + b"), and never a verse reference, which stays inside its sample list whatever its price ("… gheal…
@@ -48,7 +49,7 @@ const BAND_TABLE = /\bCatagóir\b[\s\S]*?Lag\/An-lag[^•]*?\d+\s*-\s*\d+(?:\s+\
 /** "Dhá cheann le freagairt-an ceann is fearr a mharcáil as 13 mharc agus an ceann eile a mharcáil as 12 mharc" (2016 Higher
  *  2A, 2B): what the scheme marks "out of N" (a mharcáil as N), from the clause's start. "a mheas as N" (the Gaeilge
  *  assessment) is not read, nor "an t-eolas a mharcáil as N" (Ceist 4A–E), which the Ceist 4 rule prices. */
-const MARK_AS = /(?:^|\bagus\s+|[.;:]\s+|-(?=an\s))((?:an|na)\s[^.;:]*?)\s+a mharcáil as (\d+)\s*m?h?arc\b/gi;
+const MARK_AS = /(?:^|\bagus\s+|[.;:]\s+|-\s?(?=an\s))((?:an|na)\s[^.;:]*?)\s+a mharcáil as (\d+)\s*m?h?arc\b/gi;
 /** "5 phointe eolais ag teastáil (5 mharc an ceann ar an gcéad trí phointe eolais + 4 mharc an ceann ar an dá phointe eolais eile)",
  *  also printed with a full stop before the bracket closes ("… ar na trí phointe eolais eile.)", 2017 Ordinary 2B(a)).
  *  The counts are words with fadas ("dá", "trí"), so they are read as \S+: a \w+ never matched them. */
@@ -139,6 +140,13 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   }
   const directions: string[] = [];
   let text = source.guidance.filter((line, index) => index === 0 || !SECTION_SUMMARY.test(line.trim())).join(' ').replace(/[\uf0a7\uf0b7\u25aa\u2022]/g, ' • ').replace(/\s+/g, ' ').trim();
+  // "Tréith 1 ( 2 mharc) + Sampla 1 ( 4 mharc) ► 6 mharc" (2014 Higher A and B 6(b)): one half's split, each piece priced in
+  // brackets and their total after the arrow. Where the pieces add up to it, it reads as the split "Tréith 1 = 2 mharc + Sampla 1
+  // = 4 mharc" (2016's "Aidhm a lua = 2 mharc + Forbairt = 4 mharc"); the total is the half's own, which the slots carry.
+  // Not where the examiner's box follows the arrow ("► 5 mharc T1 (2) + S1 (3) =", 2015 Higher B 6(b)): the "►" reader prices those.
+  text = text.replace(/\(\s*(\d+)\s*(m?h?arc)\s*\)\s*\+\s*([^•¶►()+=]{1,60}?)\s*\(\s*(\d+)\s*(m?h?arc)\s*\)\s*►\s*(\d+)\s*m?h?arc\b(?!\s*[A-ZÁÉÍÓÚ]\d*\s*\(\s*\d+\s*\))/g,
+    (whole: string, first: string, unit: string, label: string, second: string, unit2: string, total: string) =>
+      (Number(first) + Number(second) === Number(total) ? `= ${first} ${unit} + ${label} = ${second} ${unit2}` : whole));
   if (text.includes('►')) {
     text = text.replace(ARROW, (whole: string, first: string, a: string, unitA: string | undefined, second: string | undefined, b: string | undefined,
       unitB: string | undefined, total: string, unit: string) => {
@@ -163,6 +171,8 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   text = text.replace(LIFTED_LINES, note => { directions.push(tidy(note)); return ' ¶ '; });
   // A note the scheme sets in brackets ("(Is leor dhá phointe eolais.)") leaves its brackets behind: they go with it.
   text = text.replace(/\(\s*¶\s*\)/g, ' ¶ ');
+  // "Treoir: Ní mór …" whose note went to the directions leaves its heading behind: it goes with it.
+  text = text.replace(/\bTreoir:\s*¶/g, ' ¶ ');
   text = text.replace(/\s+/g, ' ');
 
   // One pass over the sub-question markers: each segment is a prompt, then its openers and priced phrases in print order.
