@@ -83,7 +83,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "The surface of the steel object is heated to 850oC with an oxy-acetylene flame and quenched quickly. This creates a hard outside layer as the heated austenite structure changes to hard martensite. The depth of hardening depends on the rate of heating.",
+    "verbatim": "The surface of the steel object is heated to 850°C with an oxy-acetylene flame and quenched quickly. This creates a hard outside layer as the heated austenite structure changes to hard martensite. The depth of hardening depends on the rate of heating.",
     "marks": 12
    }
   ],
@@ -1157,7 +1157,7 @@
      "perOption": 8,
      "options": [
       "Annealing is carried out to a metal as soft as possible, it also improves ductility, refines grain size and minimises internal stresses. Annealing essentially involves: • heating slowly to the required temperature, • holding at that temperature for long enough to enable the internal changes to take place and • cooling slowly. When the temperature is reached the steel is “soaked” to ensure uniform heating and cooling is controlled by reducing the temperature of the furnace gradually. If possible, the object to be annealed is allowed to cool by turning off the furnace making it as soft as possible.",
-      "Normalising Heating steel to about 40oC above upper critical temperature, holding at this temperature and cooling in air. Grain structure and size refined, internal stresses are relieved and improved mechanical properties are consequences of normalising.",
+      "Normalising Heating steel to about 40°C above upper critical temperature, holding at this temperature and cooling in air. Grain structure and size refined, internal stresses are relieved and improved mechanical properties are consequences of normalising.",
       "Carburising is a surface hardening process that increases the carbon content of the surface layers. In pack carburising, the object is placed in a furnace surrounded with a carbon-rich compound. The carbon will diffuse into the surface layers at a temperature above the upper critical point. The depth of penetration of carbon into the surface depends on the temperature and length of time in the furnace. The pack carburising process is time consuming and makes some objects prone to cracking. Grain refining is necessary. After pack carburising, the component may be immersed in a salt bath to allow for uniform surface heating."
      ]
     }
@@ -1255,7 +1255,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "a reaction that occurs in the solid state when solid austenite changes to solid pearlite. It happens at 723oC for the iron carbon alloy with 0.83% carbon.",
+    "verbatim": "a reaction that occurs in the solid state when solid austenite changes to solid pearlite. It happens at 723°C for the iron carbon alloy with 0.83% carbon.",
     "marks": 2
    },
    {
@@ -1267,7 +1267,7 @@
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "A liquid to solid change occurs at this point. It happens at 1140oC for the iron carbon alloy with 4.3% carbon. Liquid steel changes to solid austenite and cementite.",
+    "verbatim": "A liquid to solid change occurs at this point. It happens at 1140°C for the iron carbon alloy with 4.3% carbon. Liquid steel changes to solid austenite and cementite.",
     "marks": 2
    }
   ],
@@ -1901,7 +1901,7 @@
     ]
    }
   ],
-  "notes": "The scheme prints '2 + 2'. The scheme answers in a table, a column for thermoplastics and one for thermosetting plastics; each row here is a column's head and its cell, joined."
+  "notes": "The scheme prints '2 + 2' under the two columns of properties, read here as one property from each column, 2 each. The scheme answers in a table, a column for thermoplastics and one for thermosetting plastics; each row here is a column's head and its cell, joined."
  },
  {
   "id": "eng-2012-hl-q6-c",
@@ -5429,7 +5429,7 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "temperature - 723oC",
+    "verbatim": "temperature - 723°C",
     "marks": null
    }
   ],
@@ -8091,7 +8091,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Normalising: Heating steel to about 40oC above upper critical temperature, holding at this temperature and cooling in air. Grain structure and size refined, internal stresses are relieved and improved mechanical properties are consequences of normalising.",
+    "verbatim": "Normalising: Heating steel to about 40°C above upper critical temperature, holding at this temperature and cooling in air. Grain structure and size refined, internal stresses are relieved and improved mechanical properties are consequences of normalising.",
     "marks": 8
    }
   ]
@@ -10053,7 +10053,7 @@
    {
     "id": "r-1",
     "kind": "anyN",
-    "verbatim": "Neutral flame: A balanced proportion of oxygen and acetylene. Maximum combustion as all carbon from the acetylene is used. Has a working temperature of up to 3300°C. The most extensively used flame for oxy-acetylene welding. Oxidising flame: Contains excess oxygen. Has a working temperature of up to 3500°C. Used to weld copper and brass, it would oxidise steel. Flame appears smaller. Carburising flame: Contains excess acetylene. It has a working temperature of 3150oC. Used to weld aluminium and alloy steel where it gives protection against oxidation. Flame is bigger with the distinctive acetylene feather.",
+    "verbatim": "Neutral flame: A balanced proportion of oxygen and acetylene. Maximum combustion as all carbon from the acetylene is used. Has a working temperature of up to 3300°C. The most extensively used flame for oxy-acetylene welding. Oxidising flame: Contains excess oxygen. Has a working temperature of up to 3500°C. Used to weld copper and brass, it would oxidise steel. Flame appears smaller. Carburising flame: Contains excess acetylene. It has a working temperature of 3150°C. Used to weld aluminium and alloy steel where it gives protection against oxidation. Flame is bigger with the distinctive acetylene feather.",
     "marks": 8,
     "route": "a"
    },
@@ -12342,7 +12342,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "It has a working temperature of 3150oC",
+    "verbatim": "It has a working temperature of 3150°C",
     "marks": null
    },
    {
@@ -12913,7 +12913,7 @@
     "marks": null
    }
   ],
-  "notes": "The scheme prints '(Any two) 3 + 2'.",
+  "notes": "The scheme prints '(Any two) 3 + 2', and after the methods: 'These methods will prevent the oxygen in the air attacking the metal surface.'",
   "questionFigureKey": "engineering-2015-HL-paper-q1l-art",
   "questionFigureIncludesPrompt": false
  },
@@ -13451,13 +13451,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Name: Eutectoid point Phase change: solid austenite changes to solid pearlite Composition: 0.83% carbon Temperature: 723oC",
+    "verbatim": "Name: Eutectoid point Phase change: solid austenite changes to solid pearlite Composition: 0.83% carbon Temperature: 723°C",
     "marks": 5
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Name: Eutectic point Phase change: Liquid to solid Composition: 4.3% carbon Temperature: 1147oC",
+    "verbatim": "Name: Eutectic point Phase change: Liquid to solid Composition: 4.3% carbon Temperature: 1147°C",
     "marks": 5
    }
   ],
@@ -26888,7 +26888,7 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Carburising flame: Contains excess acetylene. It has a working temperature of 3150oC. Used to weld aluminium and alloy steel where it gives protection against oxidation. Flame is bigger with the distinctive acetylene feather.",
+    "verbatim": "Carburising flame: Contains excess acetylene. It has a working temperature of 3150°C. Used to weld aluminium and alloy steel where it gives protection against oxidation. Flame is bigger with the distinctive acetylene feather.",
     "marks": null
    }
   ],
@@ -46431,7 +46431,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "E = This is a single-phase liquid of 4.3% carbon at the eutectic temperature 1147 oC which converts into solid austenite and cementite.",
+    "verbatim": "E = This is a single-phase liquid of 4.3% carbon at the eutectic temperature 1147 °C which converts into solid austenite and cementite.",
     "marks": 3
    }
   ],
@@ -46462,7 +46462,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Pearlite is a BCC microstructure that forms during the eutectoid transformation of austenite and consists of alternating layers of ferrite and cementite. It forms at temperatures below the eutectoid temperature of 723 oC with a carbon content around the eutectoid composition.",
+    "verbatim": "Pearlite is a BCC microstructure that forms during the eutectoid transformation of austenite and consists of alternating layers of ferrite and cementite. It forms at temperatures below the eutectoid temperature of 723 °C with a carbon content around the eutectoid composition.",
     "marks": null
    }
   ],

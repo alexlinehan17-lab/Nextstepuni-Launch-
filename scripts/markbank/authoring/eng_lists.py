@@ -24,7 +24,16 @@ drops or moves a word: each only restores a piece of LAYOUT the page prints.
   its value (build-deck.mjs traces each half of an option, the value of a
   row). Keyed by page and printed baseline: the words are read off the page,
   never typed here, and an entry no card uses stops the build.
+
+* degree_signs -- the SEC sets a temperature's degree mark as a raised small
+  letter "o" ("40" then a superscript "o" then "C"), and the text layer reports
+  the letter: "40oC". Where the PDF's own glyph data proves the raise -- the
+  "o" is a span of its own, flagged superscript or set smaller and above its
+  digits' baseline, between a number and a C or F -- the card reads "40°C".
+  Only a temperature the sitting's paper or scheme prints that way is changed;
+  a letter o the page sets on the line stays a letter.
 """
+import json
 import os
 import re
 import sys
@@ -303,17 +312,109 @@ def table_cells(cards):
     return changed
 
 
+# ------------------------------------------------------------- degrees ---
+
+_DEG_TEXT = re.compile(r'(\d+)( ?)o([CF])\b')
+_PROVEN = {}
+
+
+def raised_degrees(year, level):
+    """{"40oC", "1147 oC", ...}: temperatures this sitting's paper or scheme
+    prints with a RAISED o, read off the glyph spans."""
+    key = (year, level)
+    if key in _PROVEN:
+        return _PROVEN[key]
+    found = set()
+    for doc in ('paper', 'scheme'):
+        try:
+            pdf = eng_lift._doc(year, level, doc)
+        except Exception:
+            continue
+        for page in pdf:
+            for block in page.get_text('dict')['blocks']:
+                for line in block.get('lines', []):
+                    spans = line['spans']
+                    for i in range(1, len(spans) - 1):
+                        s, prev, nxt = spans[i], spans[i - 1], spans[i + 1]
+                        if s['text'].strip() != 'o':
+                            continue
+                        num = re.search(r'(\d+)\s*$', prev['text'])
+                        unit = re.match(r'\s*([CF])', nxt['text'])
+                        if not num or not unit:
+                            continue
+                        raised = bool(s['flags'] & 1) or (
+                            s['size'] <= 0.8 * prev['size']
+                            and prev['origin'][1] - s['origin'][1] >= 1.5)
+                        if not raised:
+                            continue
+                        sep = ' ' if (prev['text'].endswith(' ') or s['text'].startswith(' ')) else ''
+                        found.add(f'{num.group(1)}{sep}o{unit.group(1)}')
+    _PROVEN[key] = found
+    return found
+
+
+def _deg(text, proven):
+    return _DEG_TEXT.sub(lambda m: (f'{m.group(1)}{m.group(2)}°{m.group(3)}'
+                                    if m.group(0) in proven else m.group(0)), text)
+
+
+def degree_signs(cards):
+    """A proven raised o after a temperature read as the degree sign. -> [ids]"""
+    changed = []
+    for c in cards:
+        blob = json.dumps(c, ensure_ascii=False)
+        if not _DEG_TEXT.search(blob):
+            continue
+        proven = raised_degrees(c['year'], LEVEL[c['level']])
+        if not proven:
+            continue
+        hit = False
+        for k in ('questionText', 'stem', 'notes'):
+            if isinstance(c.get(k), str):
+                new = _deg(c[k], proven)
+                hit |= new != c[k]
+                c[k] = new
+        for row in c.get('rows', []):
+            for field, i in _texts(row):
+                if field == 'verbatim':
+                    old = row['verbatim']
+                elif field == 'accepts':
+                    old = row['accepts'][i]
+                else:
+                    old = row['group']['options'][i]
+                new = _deg(old, proven)
+                if new != old:
+                    hit = True
+                    if field == 'verbatim':
+                        row['verbatim'] = new
+                    elif field == 'accepts':
+                        row['accepts'][i] = new
+                    else:
+                        row['group']['options'][i] = new
+        for lab in c.get('labelKey') or []:
+            if isinstance(lab.get('meaning'), str):
+                new = _deg(lab['meaning'], proven)
+                hit |= new != lab['meaning']
+                lab['meaning'] = new
+        if hit:
+            changed.append(c['id'])
+    return changed
+
+
 if __name__ == '__main__':
-    import json
     path = os.path.join(eng_lift.ROOT, 'scripts', 'markbank', 'authored', 'engineering.json')
     cards = json.load(open(path, encoding='utf-8'))
     before = {c['id']: json.dumps(c, ensure_ascii=False) for c in cards}
     v = vertical_lists(cards)
     t = table_cells(cards)
+    g = degree_signs(cards)
+    for i in g:
+        print(f'DEGREE {i}')
     for c in cards:
         if c['id'] in v:
             print(f'LIST  {c["id"]}: {c["questionText"]!r}')
     for c in cards:
         if c['id'] in t:
             print(f'CELLS {c["id"]}')
-    print(f'{len(v)} cards set lists on lines; {len(t)} cards joined table cells')
+    print(f'{len(v)} cards set lists on lines; {len(t)} cards joined table cells; '
+          f'{len(g)} cards read a raised o as a degree sign')

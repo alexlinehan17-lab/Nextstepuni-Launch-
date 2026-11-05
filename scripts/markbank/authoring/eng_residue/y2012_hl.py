@@ -585,7 +585,8 @@ CARDS = [
                   cells(_TSP, S(17, 355, 518, 535, 532.5)), cells(_TSP, S(17, 355, 532.5, 535, 561)),
                   cells(_TSP, S(17, 355, 561, 535, 577))]],
          row_kind='anyN', group=[(1, 2), (1, 2)], marks=[2, 2], tariff='fixed', total=4,
-         notes="The scheme prints '2 + 2'. " + _TB6),
+         notes="The scheme prints '2 + 2' under the two columns of properties, read here as one "
+               "property from each column, 2 each. " + _TB6),
     dict(key=(6, 'c', None),
          replaces=NEW + 'split the GRP answer into two options, cut blow moulding off at its '
                         'first sentence and took "(Any three) 6 + 6 + 6" for an option',

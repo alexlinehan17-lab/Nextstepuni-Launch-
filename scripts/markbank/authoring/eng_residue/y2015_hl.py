@@ -241,7 +241,8 @@ CARDS = [
                  S(6, 256, 554, 332, 575)],
          tariff='orderedSplit', notation='3 + 2', ladder=5, total=5,
          question_figure='engineering-2015-HL-paper-q1l-art',
-         notes="The scheme prints '(Any two) 3 + 2'."),
+         notes="The scheme prints '(Any two) 3 + 2', and after the methods: '"
+               + join(S(6, 354, 556, 550, 572), S(6, 70, 572, 255, 588)) + "'"),
     # ---- Question 1, Section B ("Answer all of the following") -------------
     dict(key=(1, 'n', None),
          why='Section B. Scheme p7 bullets seven benefits; "(Any two) 5 + 5".',

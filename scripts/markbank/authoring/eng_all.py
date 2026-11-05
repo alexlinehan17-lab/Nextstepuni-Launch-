@@ -1084,6 +1084,7 @@ def main():
     # Line breaks and a " — " between cells only; every word stays the page's.
     eng_lists.vertical_lists(cards)
     eng_lists.table_cells(cards)
+    eng_lists.degree_signs(cards)
 
     if args.verdicts:
         with open(args.verdicts, 'w', encoding='utf-8') as fh:
