@@ -150,6 +150,141 @@
   ]
  },
  {
+  "file": "technology-2017-OL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a pillar drill table mechanism: a toothed bar up the column, lettered A, and a blue crank handle.",
+  "questionRef": "2017 OL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   364,
+   588,
+   521,
+   697
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a silver hand dryer, with an arrow lettered A pointing at its side.",
+  "questionRef": "2017 OL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   94,
+   101,
+   268,
+   282
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A work breakdown structure: Start leads to tasks A, B and C; A leads to D, then F and H; B and C lead to E, then G; H and G lead to Finish.",
+  "questionRef": "2017 OL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   325,
+   344,
+   532,
+   426
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing in pictorial view of a plastering trowel: a flat rectangular blade with a curved handle along its centre.",
+  "questionRef": "2017 OL Section A Q12",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   194,
+   594,
+   436,
+   764
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an orange and black neck piece, an arrow to its outer casing labelled Outer Shell.",
+  "questionRef": "2017 OL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   408,
+   250,
+   554,
+   360
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit between +V and 0V: a variable resistor, an On/Off switch and a capacitor lettered X feeding a transistor that switches a buzzer.",
+  "questionRef": "2017 OL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   60,
+   265,
+   232,
+   402
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a long black electric sliding gate closed across an entrance, its motor housing at the side.",
+  "questionRef": "2017 OL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   420,
+   214,
+   550,
+   296
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendering of a robotic arm inside a shaded cylinder labelled Work Envelope.",
+  "questionRef": "2017 OL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   412,
+   634,
+   549,
+   778
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The ISO logo: the letters ISO in white across a globe, on a blue square.",
+  "questionRef": "2017 OL Section C Q5(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   54,
+   674,
+   165,
+   776
+  ]
+ },
+ {
   "file": "technology-2018-HL-paper-secA-q5-art.png",
   "kind": "figure",
   "truncated": false,
@@ -5370,6 +5505,441 @@
   ]
  },
  {
+  "file": "technology-2017-OL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Graphic of figures at an emergency exit door, one in a wheelchair and one crawling, with a long vertical bar on the door labelled Handle.",
+  "questionRef": "2017 OL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   376,
+   76,
+   530,
+   201
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Graphic of a wall-mounted heating controller linked to a phone, a mobile and a laptop.",
+  "questionRef": "2017 OL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   393,
+   311,
+   528,
+   417
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a small white and green portable washing machine, closed and open, with an arrow lettered A to its outer body.",
+  "questionRef": "2017 OL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   378,
+   601,
+   533,
+   701
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a light dependent resistor with its two legs, labelled LDR.",
+  "questionRef": "2017 OL Section A Q4",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   83,
+   106,
+   205,
+   198
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Three safety signs: a head wearing a helmet in white on a blue disc; a lightning arrow in a yellow triangle; a running figure on a red prohibition disc.",
+  "questionRef": "2017 OL Section A Q5",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   110,
+   358,
+   502,
+   448
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a red tin of liquid solvent cement.",
+  "questionRef": "2017 OL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   460,
+   590,
+   528,
+   711
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Graphic of a fishing rod hooking a bank card out of a tablet screen.",
+  "questionRef": "2017 OL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   395,
+   76,
+   524,
+   163
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A green wheelbarrow, and under it a lever diagram: a beam with the load L pressing down between the fulcrum F at one end and the effort E at the other.",
+  "questionRef": "2017 OL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   71,
+   372,
+   218,
+   513
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secB-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a woman wearing a yellow neck scarf device, and a close-up of the yellow and black neck piece.",
+  "questionRef": "2017 OL Section B Q2(a)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   349,
+   56,
+   550,
+   220
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secB-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of three USB cable ends labelled Micro-USB, Mini-USB and USB.",
+  "questionRef": "2017 OL Section B Q2(c)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   399,
+   455,
+   564,
+   541
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secB-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The CE mark: the letters C and E in bold black curves on white.",
+  "questionRef": "2017 OL Section B Q2(d)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   421,
+   660,
+   539,
+   746
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secB-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a toy wooden sports utility vehicle with orange parts and black wheels, its base labelled Base A, and beneath it the kit of parts it is assembled from.",
+  "questionRef": "2017 OL Section B Q3(a)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   405,
+   22,
+   560,
+   225
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secB-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the chain and sprocket drive on an all-terrain vehicle.",
+  "questionRef": "2017 OL Section B Q3(c)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   423,
+   484,
+   548,
+   605
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secB-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendering of an all-terrain vehicle frame with its wheels and red suspension units.",
+  "questionRef": "2017 OL Section B Q3(d)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   389,
+   644,
+   548,
+   759
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q1a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a laptop showing a flowchart program, a cable and a PIC project board.",
+  "questionRef": "2017 OL Section C Q1(a)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   428,
+   57,
+   549,
+   181
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a pneumatic nail gun fixing a board, its yellow air hose behind.",
+  "questionRef": "2017 OL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   55,
+   529,
+   189,
+   617
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an outdoor floodlight with a motion sensor beneath it.",
+  "questionRef": "2017 OL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   46,
+   108,
+   155,
+   235
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a hand opening a window, and a logic circuit: Window (Window open = 1) and Keypad (Alarm On = 1) feed gate X, whose output feeds gate Y to the Alarm, Y latched by a push-to-break switch in its feedback loop.",
+  "questionRef": "2017 OL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   333,
+   262,
+   556,
+   418
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of an LED with two legs, labelled LED, and a black piezo buzzer with red and black wires, labelled Mini-Siren.",
+  "questionRef": "2017 OL Section C Q2(c)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   383,
+   489,
+   554,
+   607
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a boy at a computer rubbing his eyes.",
+  "questionRef": "2017 OL Section C Q3(a)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   420,
+   63,
+   540,
+   183
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a teacher drawing on an interactive whiteboard.",
+  "questionRef": "2017 OL Section C Q3(b)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   43,
+   236,
+   206,
+   380
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of hands using an online banking login screen on a tablet.",
+  "questionRef": "2017 OL Section C Q3(c)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   396,
+   473,
+   541,
+   562
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a tablet computer showing its start screen.",
+  "questionRef": "2017 OL Section C Q3(d)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   48,
+   667,
+   185,
+   772
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q4a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A round green and yellow logo reading The Sandwich Shop around a drawing of a sandwich.",
+  "questionRef": "2017 OL Section C Q4(a)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   49,
+   93,
+   151,
+   187
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a sandwich being made at a counter, captioned Made-to-order sandwich, and of a sandwich in a plastic pack.",
+  "questionRef": "2017 OL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   425,
+   208,
+   538,
+   410
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A cause and effect diagram, Cause on the left and Effect on the right, with branches Equipment, Process, Staff, Ingredients, Environment and Management leading to Poor Quality Bread.",
+  "questionRef": "2017 OL Section C Q4(c)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   55,
+   510,
+   256,
+   625
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q5a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a desk lamp with a black metal shade on a jointed plywood frame shaped like a sitting dog.",
+  "questionRef": "2017 OL Section C Q5(a)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   425,
+   73,
+   545,
+   197
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Close-up photograph of the desk lamp: its black shade on the jointed plywood frame.",
+  "questionRef": "2017 OL Section C Q5(b)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   55,
+   273,
+   202,
+   407
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q5c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Three steps of blow moulding: Step 1, a tube of plastic hanging in an open mould; Step 2, air blown in, arrows pushing outward; Step 3, the formed bottle.",
+  "questionRef": "2017 OL Section C Q5(c)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   357,
+   474,
+   558,
+   586
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -5607,6 +6177,36 @@
    646,
    300,
    684
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secB-q3c-ii-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A large sprocket labelled Driven joined by a chain to a small sprocket labelled Driver.",
+  "questionRef": "2017 OL Section B Q3(c)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   46,
+   528,
+   166,
+   612
+  ]
+ },
+ {
+  "file": "technology-2017-OL-paper-secC-q1b-i-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The flowchart printed for completion: Start, Button? (N loops back), Motor Forward, Micro-Switch? (N loops back), Motor Stop, and an arrow continuing down.",
+  "questionRef": "2017 OL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   43,
+   249,
+   120,
+   432
   ]
  },
  {
@@ -7320,5 +7920,53 @@
   "description": "The marking scheme's own graph for 2017 HL Section C 4(d)(ii), as the State Examinations Commission printed it: Cost against Quantity to 1000, the Solid panels line starting at 500 euro and rising more steeply than the Stiffened panels line starting at 1000 euro, crossing at a quantity of 500, marked BEQ = 500.",
   "solution": true,
   "questionRef": "2017 HL Section C Q4(d)(ii)"
+ },
+ {
+  "file": "technology-2017-OL-scheme-secA-q4-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2017 OL Section A Q4(i), as the State Examinations Commission printed it: the circuit symbol for an LDR, a resistor in a circle with two arrows pointing in at it.",
+  "solution": true,
+  "questionRef": "2017 OL Section A Q4(i)"
+ },
+ {
+  "file": "technology-2017-OL-scheme-secA-q7.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2017 OL Section A Q7, as the State Examinations Commission printed it: an outline side view of the hand dryer, its curved slot open at the top.",
+  "solution": true,
+  "questionRef": "2017 OL Section A Q7"
+ },
+ {
+  "file": "technology-2017-OL-scheme-secB-q2b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2017 OL Section B 2(b)(iii), as the State Examinations Commission printed it: a vacuum former in section, a heater above a thermoplastic sheet, the mould on the platen beneath it and the air drawn out at the bottom.",
+  "solution": true,
+  "questionRef": "2017 OL Section B Q2(b)(iii)"
+ },
+ {
+  "file": "technology-2017-OL-scheme-secC-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own flowchart for 2017 OL Section C 1(b), as the State Examinations Commission printed it: Start, Button? (N loops back), Motor Forward, Micro-Switch? (N loops back), Motor Stop, Wait 20, Motor Reverse, Micro-Switch? (N loops back), Motor Stop, Wait 2, and a line from the end back to the start.",
+  "solution": true,
+  "questionRef": "2017 OL Section C Q1(b)(i)"
+ },
+ {
+  "file": "technology-2017-OL-scheme-secC-q1c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2017 OL Section C 1(c)(ii), as the State Examinations Commission printed it: the symbol for a single acting actuator, a cylinder with its piston and rod and a return spring.",
+  "solution": true,
+  "questionRef": "2017 OL Section C Q1(c)(ii)"
+ },
+ {
+  "file": "technology-2017-OL-scheme-secC-q2d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own circuit for 2017 OL Section C 2(d)(ii), as the State Examinations Commission printed it: the mini-siren between +V and 0V with a voltmeter V connected across it.",
+  "solution": true,
+  "questionRef": "2017 OL Section C Q2(d)(ii)"
  }
 ]

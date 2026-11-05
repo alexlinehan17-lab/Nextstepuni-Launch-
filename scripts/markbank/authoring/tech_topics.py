@@ -207,6 +207,21 @@ TOPIC_OVERRIDES = {
     'tech-2017-hl-b3c-ii': 'tech-core-materials',  # a light yet durable casing
     'tech-2017-hl-b3d-i': 'tech-core-project',     # quality characteristics
     'tech-2017-hl-b3d-ii': 'tech-core-project',    # work breakdown structure
+    # 2017 Ordinary.
+    'tech-2017-ol-a1': 'tech-core-design',         # an accessible door handle
+    'tech-2017-ol-a2': 'tech-core-ict',            # remote heating control
+    'tech-2017-ol-a3': 'tech-core-materials',      # a portable washing machine
+    'tech-2017-ol-a5': 'tech-core-materials',      # safety signs
+    'tech-2017-ol-a8': 'tech-core-project',        # work breakdown structure
+    'tech-2017-ol-b2a-ii': 'tech-core-ict',        # wearable technologies
+    'tech-2017-ol-b2b-i': 'tech-core-materials',   # a plastic outer shell
+    'tech-2017-ol-b2b-ii': 'tech-core-materials',
+    'tech-2017-ol-b2b-iii': 'tech-core-materials', # vacuum forming
+    'tech-2017-ol-b2d-i': 'tech-core-project',     # the CE mark (quality)
+    'tech-2017-ol-b3a-i': 'tech-core-materials',   # hardwood for the base
+    'tech-2017-ol-b3a-ii': 'tech-core-materials',  # self-assembly products
+    'tech-2017-ol-b3d-i': 'tech-core-project',     # problem-solving tools
+    'tech-2017-ol-b3d-ii': 'tech-core-materials',  # tubular materials
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]

@@ -988,6 +988,129 @@ REVIEWED.update({
         'https://www.rugbyworldcup.com/supporters.',
 })
 
+# 2017 Ordinary (Technology lane, 4 November 2026).
+REVIEWED.update({
+    'technology-2017-OL-paper-secA-q1-art':
+        'Graphic of figures at an emergency exit door, one in a wheelchair and '
+        'one crawling, with a long vertical bar on the door labelled Handle.',
+    'technology-2017-OL-paper-secA-q2-art':
+        'Graphic of a wall-mounted heating controller linked to a phone, a '
+        'mobile and a laptop.',
+    'technology-2017-OL-paper-secA-q3-art':
+        'Photographs of a small white and green portable washing machine, closed '
+        'and open, with an arrow lettered A to its outer body.',
+    'technology-2017-OL-paper-secA-q4-art':
+        'Photograph of a light dependent resistor with its two legs, labelled '
+        'LDR.',
+    'technology-2017-OL-paper-secA-q5-art':
+        'Three safety signs: a head wearing a helmet in white on a blue disc; a '
+        'lightning arrow in a yellow triangle; a running figure on a red '
+        'prohibition disc.',
+    'technology-2017-OL-paper-secA-q6-art':
+        'Photograph of a pillar drill table mechanism: a toothed bar up the '
+        'column, lettered A, and a blue crank handle.',
+    'technology-2017-OL-paper-secA-q7-art':
+        'Photograph of a silver hand dryer, with an arrow lettered A pointing '
+        'at its side.',
+    'technology-2017-OL-paper-secA-q8-art':
+        'A work breakdown structure: Start leads to tasks A, B and C; A leads '
+        'to D, then F and H; B and C lead to E, then G; H and G lead to Finish.',
+    'technology-2017-OL-paper-secA-q9-art':
+        'Photograph of a red tin of liquid solvent cement.',
+    'technology-2017-OL-paper-secA-q10-art':
+        'Graphic of a fishing rod hooking a bank card out of a tablet screen.',
+    'technology-2017-OL-paper-secA-q11-art':
+        'A green wheelbarrow, and under it a lever diagram: a beam with the '
+        'load L pressing down between the fulcrum F at one end and the effort '
+        'E at the other.',
+    'technology-2017-OL-paper-secA-q12-art':
+        'Line drawing in pictorial view of a plastering trowel: a flat '
+        'rectangular blade with a curved handle along its centre.',
+    'technology-2017-OL-paper-secB-q2a-art':
+        'Photograph of a woman wearing a yellow neck scarf device, and a '
+        'close-up of the yellow and black neck piece.',
+    'technology-2017-OL-paper-secB-q2b-art':
+        'Photograph of an orange and black neck piece, an arrow to its outer '
+        'casing labelled Outer Shell.',
+    'technology-2017-OL-paper-secB-q2c-art':
+        'Photograph of three USB cable ends labelled Micro-USB, Mini-USB and '
+        'USB.',
+    'technology-2017-OL-paper-secB-q2d-art':
+        'The CE mark: the letters C and E in bold black curves on white.',
+    'technology-2017-OL-paper-secB-q3a-art':
+        'Photograph of a toy wooden sports utility vehicle with orange parts '
+        'and black wheels, its base labelled Base A, and beneath it the kit of '
+        'parts it is assembled from.',
+    'technology-2017-OL-paper-secB-q3b-art':
+        'Circuit between +V and 0V: a variable resistor, an On/Off switch and '
+        'a capacitor lettered X feeding a transistor that switches a buzzer.',
+    'technology-2017-OL-paper-secB-q3c-art':
+        'Photograph of the chain and sprocket drive on an all-terrain vehicle.',
+    'technology-2017-OL-paper-secB-q3c-ii-art':
+        'A large sprocket labelled Driven joined by a chain to a small '
+        'sprocket labelled Driver.',
+    'technology-2017-OL-paper-secB-q3d-art':
+        'Rendering of an all-terrain vehicle frame with its wheels and red '
+        'suspension units.',
+    'technology-2017-OL-paper-secC-q1a-art':
+        'Photograph of a laptop showing a flowchart program, a cable and a PIC '
+        'project board.',
+    'technology-2017-OL-paper-secC-q1b-art':
+        'Photograph of a long black electric sliding gate closed across an '
+        'entrance, its motor housing at the side.',
+    'technology-2017-OL-paper-secC-q1b-i-art':
+        'The flowchart printed for completion: Start, Button? (N loops back), '
+        'Motor Forward, Micro-Switch? (N loops back), Motor Stop, and an arrow '
+        'continuing down.',
+    'technology-2017-OL-paper-secC-q1c-art':
+        'Photograph of a pneumatic nail gun fixing a board, its yellow air hose '
+        'behind.',
+    'technology-2017-OL-paper-secC-q1d-art':
+        'Rendering of a robotic arm inside a shaded cylinder labelled Work '
+        'Envelope.',
+    'technology-2017-OL-paper-secC-q2a-art':
+        'Photograph of an outdoor floodlight with a motion sensor beneath it.',
+    'technology-2017-OL-paper-secC-q2b-art':
+        'A photograph of a hand opening a window, and a logic circuit: Window '
+        '(Window open = 1) and Keypad (Alarm On = 1) feed gate X, whose output '
+        'feeds gate Y to the Alarm, Y latched by a push-to-break switch in its '
+        'feedback loop.',
+    'technology-2017-OL-paper-secC-q2c-art':
+        'Photographs of an LED with two legs, labelled LED, and a black piezo '
+        'buzzer with red and black wires, labelled Mini-Siren.',
+    'technology-2017-OL-paper-secC-q3a-art':
+        'Photograph of a boy at a computer rubbing his eyes.',
+    'technology-2017-OL-paper-secC-q3b-art':
+        'Photograph of a teacher drawing on an interactive whiteboard.',
+    'technology-2017-OL-paper-secC-q3c-art':
+        'Photograph of hands using an online banking login screen on a tablet.',
+    'technology-2017-OL-paper-secC-q3d-art':
+        'Photograph of a tablet computer showing its start screen.',
+    'technology-2017-OL-paper-secC-q4a-art':
+        'A round green and yellow logo reading The Sandwich Shop around a '
+        'drawing of a sandwich.',
+    'technology-2017-OL-paper-secC-q4b-art':
+        'Photographs of a sandwich being made at a counter, captioned '
+        'Made-to-order sandwich, and of a sandwich in a plastic pack.',
+    'technology-2017-OL-paper-secC-q4c-art':
+        'A cause and effect diagram, Cause on the left and Effect on the right, '
+        'with branches Equipment, Process, Staff, Ingredients, Environment and '
+        'Management leading to Poor Quality Bread.',
+    'technology-2017-OL-paper-secC-q5a-art':
+        'Photograph of a desk lamp with a black metal shade on a jointed '
+        'plywood frame shaped like a sitting dog.',
+    'technology-2017-OL-paper-secC-q5b-art':
+        'Close-up photograph of the desk lamp: its black shade on the jointed '
+        'plywood frame.',
+    'technology-2017-OL-paper-secC-q5c-art':
+        'Three steps of blow moulding: Step 1, a tube of plastic hanging in an '
+        'open mould; Step 2, air blown in, arrows pushing outward; Step 3, the '
+        'formed bottle.',
+    'technology-2017-OL-paper-secC-q5d-art':
+        'The ISO logo: the letters ISO in white across a globe, on a blue '
+        'square.',
+})
+
 # 2017 Higher (Technology lane, 4 November 2026).
 REVIEWED.update({
     'technology-2017-HL-paper-secA-q2-art':

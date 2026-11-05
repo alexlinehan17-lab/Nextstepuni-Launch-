@@ -1335,7 +1335,7 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
     : cards.length;
 const technologyAdditions = {
   higher: [TECHNOLOGY_HIGHER, 253, 'b5e96f50e82ea1e32ff7ab20218ea17a051e984252898880cf7d7b15bb4e4b20'],
-  ordinary: [TECHNOLOGY_ORDINARY, 165, '54f22f0e94ff33f5975bbb16ba0d4595684d1d9479c3b981005ddea2f1a0f20d'],
+  ordinary: [TECHNOLOGY_ORDINARY, 244, '98c59acb526337d5a895be5bb57cef40cd04968f49d27fa6f874871f6e5f79b3'],
 } as const;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
@@ -1355,7 +1355,8 @@ describe('Mark Bank card preservation', () => {
     // Added sitting by sitting, each a card per printed ask the census reads
     // (reconcile.py technology): 2019 Higher 84, 2019 Ordinary 83, 2018 Higher 85
     // (83 cards: Q8 is a printed choice, one card for its three terms), 2018 Ordinary 82,
-    // 2017 Higher 86.
+    // 2017 Higher 86, 2017 Ordinary 82 (79 cards: Q2, Q5 and Q8 print tariffs
+    // that are not one term per roman, so each is one card).
     const additions = cards.map(card => card.id).filter(isTechnologyAdded);
     expect(additions).toHaveLength(count);
     expect(additions.filter(id => id in CARD_ID_ALIASES)).toEqual([]);

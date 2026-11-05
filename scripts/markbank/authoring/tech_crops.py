@@ -1775,6 +1775,13 @@ LABEL_ZONES.setdefault((2018, 'hl'), []).extend([
     (18, (390, 696, 426, 712)),
 ])
 
+# Answer lines a scheme prints after the tariff that closes their block,
+# before the next head: (year, level) -> lines, exactly as extracted.
+LATE_ANSWER_LINES = {
+    (2017, 'ol'): ('Cloud storage, USB flash drives, DVDs/CDs, etc.', 'Green.',
+                   'assembly techniques, safety elements, testing, etc.'),
+}
+
 # Scheme lines inside a drawing's rectangle that are NOT its lettering and
 # must stay in the .md: (year, level, scheme page index) -> lines. 2018
 # Ordinary 1(b) prints no (ii) ask; its only (ii) is the heading "(ii)
@@ -2070,6 +2077,135 @@ LABEL_KEYS.update({
         {'letter': 'D', 'meaning': 'Continuous production'}],
 })
 
+# 2017 Ordinary. PAPER pictures each stem or ask points at ("The graphic
+# shows", "the component A shown", "the flowchart shown").
+BY_EYE.update({
+    'technology-2017-OL-paper-secA-q1-art': ('014', 1, (376, 76, 530, 201)),
+    'technology-2017-OL-paper-secA-q2-art': ('014', 1, (393, 311, 528, 417)),
+    'technology-2017-OL-paper-secA-q3-art': ('014', 1, (378, 601, 533, 701)),
+    'technology-2017-OL-paper-secA-q4-art': ('014', 2, (83, 106, 205, 198)),
+    'technology-2017-OL-paper-secA-q5-art': ('014', 2, (110, 358, 502, 448)),
+    'technology-2017-OL-paper-secA-q6-art': ('014', 2, (364, 588, 521, 697)),
+    # The hand dryer and its arrow A, without the answer box.
+    'technology-2017-OL-paper-secA-q7-art': ('014', 3, (94, 101, 268, 282)),
+    'technology-2017-OL-paper-secA-q8-art': ('014', 3, (325, 344, 532, 426)),
+    'technology-2017-OL-paper-secA-q9-art': ('014', 3, (460, 590, 528, 711)),
+    'technology-2017-OL-paper-secA-q10-art': ('014', 4, (395, 76, 524, 163)),
+    # The wheelbarrow and the lever diagram of its forces, L, F and E.
+    'technology-2017-OL-paper-secA-q11-art': ('014', 4, (71, 372, 218, 513)),
+    'technology-2017-OL-paper-secA-q12-art': ('014', 4, (194, 594, 436, 764)),
+    'technology-2017-OL-paper-secB-q2a-art': ('015', 1, (349, 56, 550, 220)),
+    'technology-2017-OL-paper-secB-q2b-art': ('015', 1, (408, 250, 554, 360)),
+    'technology-2017-OL-paper-secB-q2c-art': ('015', 1, (399, 455, 564, 541)),
+    'technology-2017-OL-paper-secB-q2d-art': ('015', 1, (421, 660, 539, 746)),
+    'technology-2017-OL-paper-secB-q3a-art': ('015', 2, (405, 22, 560, 225)),
+    'technology-2017-OL-paper-secB-q3b-art': ('015', 2, (60, 265, 232, 402)),
+    'technology-2017-OL-paper-secB-q3c-art': ('015', 2, (423, 484, 548, 605)),
+    # (ii)'s driver and driven sprockets.
+    'technology-2017-OL-paper-secB-q3c-ii-art': ('015', 2, (46, 528, 166, 612)),
+    'technology-2017-OL-paper-secB-q3d-art': ('015', 2, (389, 644, 548, 759)),
+    'technology-2017-OL-paper-secC-q1a-art': ('015', 3, (428, 57, 549, 181)),
+    # The gate photograph, and the start of the flowchart (i) completes.
+    'technology-2017-OL-paper-secC-q1b-art': ('015', 3, (420, 214, 550, 296)),
+    'technology-2017-OL-paper-secC-q1b-i-art': ('015', 3, (43, 249, 120, 432)),
+    'technology-2017-OL-paper-secC-q1c-art': ('015', 3, (55, 529, 189, 617)),
+    'technology-2017-OL-paper-secC-q1d-art': ('015', 3, (412, 634, 549, 778)),
+    'technology-2017-OL-paper-secC-q2a-art': ('015', 4, (46, 108, 155, 235)),
+    'technology-2017-OL-paper-secC-q2b-art': ('015', 4, (333, 262, 556, 418)),
+    'technology-2017-OL-paper-secC-q2c-art': ('015', 4, (383, 489, 554, 607)),
+    'technology-2017-OL-paper-secC-q3a-art': ('015', 5, (420, 63, 540, 183)),
+    'technology-2017-OL-paper-secC-q3b-art': ('015', 5, (43, 236, 206, 380)),
+    'technology-2017-OL-paper-secC-q3c-art': ('015', 5, (396, 473, 541, 562)),
+    'technology-2017-OL-paper-secC-q3d-art': ('015', 5, (48, 667, 185, 772)),
+    'technology-2017-OL-paper-secC-q4a-art': ('015', 6, (49, 93, 151, 187)),
+    'technology-2017-OL-paper-secC-q4b-art': ('015', 6, (425, 208, 538, 410)),
+    'technology-2017-OL-paper-secC-q4c-art': ('015', 6, (55, 510, 256, 625)),
+    'technology-2017-OL-paper-secC-q5a-art': ('015', 7, (425, 73, 545, 197)),
+    'technology-2017-OL-paper-secC-q5b-art': ('015', 7, (55, 273, 202, 407)),
+    'technology-2017-OL-paper-secC-q5c-art': ('015', 7, (357, 474, 558, 586)),
+    'technology-2017-OL-paper-secC-q5d-art': ('015', 7, (54, 674, 165, 776)),
+})
+WHITEOUT.update({
+    'technology-2017-OL-paper-secB-q2a-art': [(328, 84, 400, 146), (288, 172, 354, 190)],
+    'technology-2017-OL-paper-secA-q4-art': [(166, 110, 206, 160)],
+    'technology-2017-OL-paper-secB-q3c-ii-art': [(150, 528, 167, 545)],
+    'technology-2017-OL-paper-secC-q2b-art': [(321, 262, 456, 292)],
+    'technology-2017-OL-paper-secC-q1b-i-art': [(121, 250, 140, 430)],
+    'technology-2017-OL-scheme-secC-q2d-ii': [(486, 775, 560, 791)],
+})
+FIGURE_SHARED.update({
+    # 5(d)(ii): "the desk lamp shown at 5(a) above".
+    'technology-2017-OL-paper-secC-q5d-ii-art': 'technology-2017-OL-paper-secC-q5a-art',
+    # 2(d): "The mini-siren shown in 2(c) above".
+    'technology-2017-OL-paper-secC-q2d-art': 'technology-2017-OL-paper-secC-q2c-art',
+})
+SOLUTIONS.update({
+    'technology-2017-OL-scheme-secA-q4-i': (4, (424, 106, 520, 196),
+        "The marking scheme's own answer to 2017 OL Section A Q4(i), as the "
+        "State Examinations Commission printed it: the circuit symbol for an "
+        "LDR, a resistor in a circle with two arrows pointing in at it."),
+    'technology-2017-OL-scheme-secA-q7': (5, (328, 122, 394, 262),
+        "The marking scheme's own sketch for 2017 OL Section A Q7, as the State "
+        "Examinations Commission printed it: an outline side view of the hand "
+        "dryer, its curved slot open at the top."),
+    'technology-2017-OL-scheme-secB-q2b-iii': (9, (386, 318, 552, 424),
+        "The marking scheme's own sketch for 2017 OL Section B 2(b)(iii), as "
+        "the State Examinations Commission printed it: a vacuum former in "
+        "section, a heater above a thermoplastic sheet, the mould on the "
+        "platen beneath it and the air drawn out at the bottom."),
+    'technology-2017-OL-scheme-secC-q1b-i': (11, (472, 440, 562, 786),
+        "The marking scheme's own flowchart for 2017 OL Section C 1(b), as the "
+        "State Examinations Commission printed it: Start, Button? (N loops "
+        "back), Motor Forward, Micro-Switch? (N loops back), Motor Stop, Wait "
+        "20, Motor Reverse, Micro-Switch? (N loops back), Motor Stop, Wait 2, "
+        "and a line from the end back to the start."),
+    'technology-2017-OL-scheme-secC-q1c-ii': (12, (279, 235, 408, 295),
+        "The marking scheme's own answer to 2017 OL Section C 1(c)(ii), as the "
+        "State Examinations Commission printed it: the symbol for a single "
+        "acting actuator, a cylinder with its piston and rod and a return "
+        "spring."),
+    'technology-2017-OL-scheme-secC-q2d-ii': (13, (430, 690, 522, 795),
+        "The marking scheme's own circuit for 2017 OL Section C 2(d)(ii), as "
+        "the State Examinations Commission printed it: the mini-siren between "
+        "+V and 0V with a voltmeter V connected across it."),
+})
+SOLUTION_SHARED.update({
+    # (ii)'s answer is the loop and Wait 2 in the same flowchart; the scheme
+    # points at it with an arrow.
+    'technology-2017-OL-scheme-secC-q1b-ii': 'technology-2017-OL-scheme-secC-q1b-i',
+})
+ASK_ONLY.update({
+    'technology-2017-OL-scheme-secA-q4-i',
+    'technology-2017-OL-scheme-secC-q1b-i',
+    'technology-2017-OL-scheme-secC-q1c-ii',
+})
+LABEL_ZONES.setdefault((2017, 'ol'), []).extend([
+    (4, (424, 106, 520, 196)),     # Q4's LDR symbol box
+    (5, (328, 122, 394, 262)),     # Q7's sketch
+    (5, (325, 345, 530, 420)),     # Q8's WBS, reprinted
+    (6, (70, 370, 220, 515)),      # Q11's wheelbarrow and lever, F L E
+    (9, (386, 318, 552, 424)),     # 2(b)'s vacuum-forming diagram
+    (9, (436, 70, 552, 180)),      # 2(a)'s pictures
+    (10, (76, 238, 202, 334)),     # 3(b)'s circuit, X, On/Off, +V/0V
+    (10, (460, 50, 565, 178)),     # 3(a)'s SUV and Self-Assembly caption
+    (11, (472, 440, 562, 786)),    # 1(b)'s flowchart
+    (12, (278, 235, 408, 296)),    # 1(c)(ii)'s actuator symbol
+    (13, (410, 320, 560, 370)),    # 2(b)'s logic circuit, reprinted
+    (13, (430, 690, 522, 795)),    # 2(d)(ii)'s circuit
+    (15, (40, 88, 112, 170)),      # 4(a)'s logo and its "EST. 2017"
+    (16, (135, 550, 515, 690)),    # 5(b)(iii)'s sample CAD / CAM pictures
+    (3, (392, 598, 540, 690)),     # Q3's washing machine and its A
+    (13, (428, 466, 562, 560)),    # 2(c)'s LED and Mini-Siren, reprinted
+    (15, (486, 205, 568, 362)),    # 4(b)'s sandwich pictures and captions
+])
+LABEL_KEYS.update({
+    (2017, 'ol', 'A', 6, None): [{'letter': 'A', 'meaning': 'Rack'}],
+    (2017, 'ol', 'B', 3, 'b'): [{'letter': 'X', 'meaning': 'Polarised Capacitor'}],
+    (2017, 'ol', 'C', 2, 'b'): [
+        {'letter': 'X', 'meaning': 'AND gate'},
+        {'letter': 'Y', 'meaning': 'OR gate'}],
+})
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -2114,6 +2250,17 @@ ASK_STRIP = {
     # 2017 Higher Q11: "Value: ____", "Lowest: ____", "Highest: ____".
     (2017, 'hl', 'A', 11, None, 'i'): [r'\s+Value:(?=\s)'],
     (2017, 'hl', 'A', 11, None, 'ii'): [r'\s+Lowest:\s+Highest:$'],
+    # 2017 Ordinary Q1: the picture's "Handle" label and the box label
+    # "Advantage:", read into the ask.
+    (2017, 'ol', 'A', 1, None, None): [r'\s+Handle(?=\s+Give\b)', r'\s+Advantage:(?=\s+State\b)'],
+    # 2017 Ordinary Q8: the WBS's letters and the box labels, at the end of
+    # the stem.
+    (2017, 'ol', 'A', 8, None, None): [r'\s+A D F H Advantage: Start Finish B G E C Task D: Task E:$'],
+    # 2017 Ordinary 1(b): the printed start of the flowchart, read onto the
+    # end of the letter's stem (the crop carries it).
+    (2017, 'ol', 'C', 1, 'b', 'i'): [r'(?:^|\s+)Start Button\? N Y Motor Forward Micro- Switch\?(?: N Y Motor Stop)?$'],
+    (2017, 'ol', 'C', 1, 'b', 'ii'): [r'(?:^|\s+)Start Button\? N Y Motor Forward Micro- Switch\?(?: N Y Motor Stop)?$'],
+    (2017, 'ol', 'C', 1, 'b', 'iii'): [r'(?:^|\s+)Start Button\? N Y Motor Forward Micro- Switch\?(?: N Y Motor Stop)?$'],
 }
 
 # Romans whose instruction (or list) is printed after their own line, which

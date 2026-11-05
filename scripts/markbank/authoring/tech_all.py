@@ -786,7 +786,7 @@ def author(bind_figures=True):
                 # question, "...in cities. 1. 2. State two advantages..."
                 # (2018 Ordinary Q2): a run of two or more, after a closed
                 # sentence and before a capital, is the answer lines' numbers.
-                ask = re.sub(r'(?<=[.?!])(?:\s+\d\.){2,}(?=\s+[A-Z])', '', ask)
+                ask = re.sub(r'(?<=[.?!])(?:\s+\d\.){2,}(?=\s+[A-Z(])', '', ask)
                 # A tail the paper prints that no text layer reads in order:
                 # tech_crops.ASK_TAILS, each looked at on its page.
                 tail = TC.ASK_TAILS.get((year, level, section, q, letter, roman))
@@ -873,6 +873,8 @@ def author(bind_figures=True):
                     # ("Time: ____ People: ____"), which 2021 Ordinary Q6 prints
                     # between its stem and its romans.
                     piece = clean(BLANK_RULE.sub(' ', piece))
+                    for pattern in TC.ASK_STRIP.get((year, level, section, q, letter, roman), ()):
+                        piece = re.sub(pattern, '', piece).strip()
                     if tail_move and piece.endswith(tail_move[1]):
                         piece = piece[:-len(tail_move[1])].rstrip()
                     piece = re.sub(r'(?:\s*\b[A-Z][a-z]{1,12}:\s*)+$', '', piece).strip()

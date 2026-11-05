@@ -603,6 +603,7 @@ def _join_gutter_markers(blocks):
     blocks = [_tail_marker_first(b) for b in blocks]
 
     def _pair(i, b, slack):
+        hits = []
         for j in list(range(i + 1, min(i + 4, len(blocks)))) + \
                 list(range(i - 1, max(i - 4, -1), -1)):
             o = blocks[j]
@@ -618,10 +619,18 @@ def _join_gutter_markers(blocks):
                 continue
             # Same line, give or take a leading-height's slack.
             if abs(o[1] - b[1]) <= 14 or (b[1] <= o[3] and o[1] <= b[3]):
-                partner[i] = j
-                used.add(j)
-                return True
-        return False
+                hits.append(j)
+        if not hits:
+            return False
+        # Of the blocks that qualify, the one whose top is level with the
+        # marker's: 2017 Ordinary sets "5." at y=321 beside its stem block
+        # (y=316) and above the (i) block (y=337), which the marker's own box
+        # also overlaps; taking the first that qualified welded "5." to (i)
+        # and filed the stem under Question 4(ii).
+        j = min(hits, key=lambda k: (abs(blocks[k][1] - b[1]), hits.index(k)))
+        partner[i] = j
+        used.add(j)
+        return True
 
     for i, b in enumerate(blocks):
         text = ' '.join(b[4].split())

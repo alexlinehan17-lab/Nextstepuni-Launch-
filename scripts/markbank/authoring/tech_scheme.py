@@ -426,6 +426,16 @@ class TechScheme:
                     and re.match(rf'{int(nm.group(1)) - 1}\.\s', last_closed[0].lines[-1][1]):
                 last_closed[0].lines.append((last_closed[0].lines[-1][0], text))
                 continue
+            # An answer the scheme prints BELOW the tariff it closes on:
+            # 2017 Ordinary 3(d)(ii) ends "...for data storage. (10 Marks,
+            # 6+4)" and its answer sits on the next line, above the page
+            # footer, where it opened Option 4 and swallowed 4(a). Named
+            # line by line in tech_crops.LATE_ANSWER_LINES, each read off
+            # the page.
+            if not lines and head_q is None and last_closed and last_closed[0].lines \
+                    and text in TC.LATE_ANSWER_LINES.get((self.year, self.level), ()):
+                last_closed[0].lines.append((last_closed[0].lines[-1][0], text))
+                continue
 
             rh = ROMAN_HEAD.match(text)
             while rh and ROMAN_HEAD.match(text[rh.end():]):
