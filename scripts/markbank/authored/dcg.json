@@ -2324,9 +2324,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(10)"
+   "notation": "(12)"
   },
-  "totalMarks": 10,
+  "totalMarks": 12,
   "rows": [
    {
     "id": "dcg-2018-ol-a1a-r1",
@@ -2351,6 +2351,13 @@
     "kind": "point",
     "verbatim": "Complete curve",
     "marks": 3
+   },
+   {
+    "id": "dcg-2018-ol-a1a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Ellipse' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -2435,9 +2442,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(11)"
+   "notation": "(13)"
   },
-  "totalMarks": 11,
+  "totalMarks": 13,
   "rows": [
    {
     "id": "dcg-2018-ol-a2a-r1",
@@ -2456,6 +2463,13 @@
     "kind": "point",
     "verbatim": "Draw plan of cylinder … (incl. hidden detail)",
     "marks": 4
+   },
+   {
+    "id": "dcg-2018-ol-a2a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Cylinder' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -2523,9 +2537,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(18)"
+   "notation": "(20)"
   },
-  "totalMarks": 18,
+  "totalMarks": 20,
   "rows": [
    {
     "id": "dcg-2018-ol-a3-r1",
@@ -2556,6 +2570,13 @@
     "kind": "point",
     "verbatim": "Complete perspective",
     "marks": 4
+   },
+   {
+    "id": "dcg-2018-ol-a3-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Perspective of Bridge' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -2576,9 +2597,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(15)"
+   "notation": "(17)"
   },
-  "totalMarks": 15,
+  "totalMarks": 17,
   "rows": [
    {
     "id": "dcg-2018-ol-a4a-r1",
@@ -2603,6 +2624,13 @@
     "kind": "point",
     "verbatim": "Complete end view….(incl. hidden detail)",
     "marks": 2
+   },
+   {
+    "id": "dcg-2018-ol-a4a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'End View' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -2664,9 +2692,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(18)"
+   "notation": "(22)"
   },
-  "totalMarks": 18,
+  "totalMarks": 22,
   "rows": [
    {
     "id": "dcg-2018-ol-b1a-r1",
@@ -2685,6 +2713,13 @@
     "kind": "point",
     "verbatim": "Complete bay window",
     "marks": 5
+   },
+   {
+    "id": "dcg-2018-ol-b1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -2799,9 +2834,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(33)"
+   "notation": "(37)"
   },
-  "totalMarks": 33,
+  "totalMarks": 37,
   "rows": [
    {
     "id": "dcg-2018-ol-b2a-r1",
@@ -2905,6 +2940,13 @@
       ]
      }
     ]
+   },
+   {
+    "id": "dcg-2018-ol-b2a-r2",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Plan and Elevation' and prices it at 33. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -2972,9 +3014,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(5)"
+   "notation": "(9)"
   },
-  "totalMarks": 5,
+  "totalMarks": 9,
   "rows": [
    {
     "id": "dcg-2018-ol-b3a-r1",
@@ -2987,6 +3029,13 @@
     "kind": "point",
     "verbatim": "Draw X, Y and Z axes",
     "marks": 2
+   },
+   {
+    "id": "dcg-2018-ol-b3a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Initial setup' and prices it at 5. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -3172,9 +3221,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(19)"
+   "notation": "(23)"
   },
-  "totalMarks": 19,
+  "totalMarks": 23,
   "rows": [
    {
     "id": "dcg-2018-ol-c1a-r1",
@@ -3193,6 +3242,13 @@
     "kind": "point",
     "verbatim": "Draw outline of profile",
     "marks": 8
+   },
+   {
+    "id": "dcg-2018-ol-c1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Profile' and prices it at 19. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -3307,45 +3363,83 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(16)"
+   "notation": "(20)"
   },
-  "totalMarks": 16,
+  "totalMarks": 20,
   "rows": [
    {
     "id": "dcg-2018-ol-c2a-r1",
-    "kind": "point",
-    "verbatim": "Draw base of structure",
-    "marks": 3
+    "kind": "criterion",
+    "verbatim": "Elevation",
+    "marks": 16,
+    "permittedMarks": [
+     0,
+     16
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Draw base of structure",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Draw inner stand section",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Division of RHS for parabola",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Draw right hand curve",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Locate points on LHS for parabola",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Draw curve on left side",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
    },
    {
     "id": "dcg-2018-ol-c2a-r2",
     "kind": "point",
-    "verbatim": "Draw inner stand section",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2018-ol-c2a-r3",
-    "kind": "point",
-    "verbatim": "Division of RHS for parabola",
-    "marks": 4
-   },
-   {
-    "id": "dcg-2018-ol-c2a-r4",
-    "kind": "point",
-    "verbatim": "Draw right hand curve",
-    "marks": 2
-   },
-   {
-    "id": "dcg-2018-ol-c2a-r5",
-    "kind": "point",
-    "verbatim": "Locate points on LHS for parabola",
-    "marks": 2
-   },
-   {
-    "id": "dcg-2018-ol-c2a-r6",
-    "kind": "point",
-    "verbatim": "Draw curve on left side",
-    "marks": 2
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -3512,9 +3606,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(24)"
+   "notation": "(28)"
   },
-  "totalMarks": 24,
+  "totalMarks": 28,
   "rows": [
    {
     "id": "dcg-2018-ol-c3a-r1",
@@ -3545,6 +3639,13 @@
     "kind": "point",
     "verbatim": "Complete the plan",
     "marks": 4
+   },
+   {
+    "id": "dcg-2018-ol-c3a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and Plan' and prices it at 24. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -3699,9 +3800,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(21)"
+   "notation": "(25)"
   },
-  "totalMarks": 21,
+  "totalMarks": 25,
   "rows": [
    {
     "id": "dcg-2018-ol-c4a-r1",
@@ -3778,6 +3879,13 @@
       ]
      }
     ]
+   },
+   {
+    "id": "dcg-2018-ol-c4a-r2",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Helix' and prices it at 21. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -3906,9 +4014,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(11)"
+   "notation": "(15)"
   },
-  "totalMarks": 11,
+  "totalMarks": 15,
   "rows": [
    {
     "id": "dcg-2018-ol-c5-1-r1",
@@ -3921,6 +4029,13 @@
     "kind": "point",
     "verbatim": "Use of Section View",
     "marks": 3
+   },
+   {
+    "id": "dcg-2018-ol-c5-1-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Assembly' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -6005,9 +6120,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(4)"
+   "notation": "(6)"
   },
-  "totalMarks": 4,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "dcg-2019-ol-a1a-r1",
@@ -6020,6 +6135,13 @@
     "kind": "point",
     "verbatim": "Draw sphere A",
     "marks": 2
+   },
+   {
+    "id": "dcg-2019-ol-a1a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Plan of sphere A' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -6128,9 +6250,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(18)"
+   "notation": "(20)"
   },
-  "totalMarks": 18,
+  "totalMarks": 20,
   "rows": [
    {
     "id": "dcg-2019-ol-a2-r1",
@@ -6161,6 +6283,13 @@
     "kind": "point",
     "verbatim": "Complete perspective",
     "marks": 1
+   },
+   {
+    "id": "dcg-2019-ol-a2-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Perspective' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -6181,9 +6310,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(11)"
+   "notation": "(13)"
   },
-  "totalMarks": 11,
+  "totalMarks": 13,
   "rows": [
    {
     "id": "dcg-2019-ol-a3a-r1",
@@ -6208,6 +6337,13 @@
     "kind": "point",
     "verbatim": "Identify remaining points on LHS",
     "marks": 2
+   },
+   {
+    "id": "dcg-2019-ol-a3a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Points on left hand side' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -6292,9 +6428,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(14)"
+   "notation": "(16)"
   },
-  "totalMarks": 14,
+  "totalMarks": 16,
   "rows": [
    {
     "id": "dcg-2019-ol-a4a-r1",
@@ -6307,6 +6443,13 @@
     "kind": "point",
     "verbatim": "Complete the drawing of the inner surface",
     "marks": 8
+   },
+   {
+    "id": "dcg-2019-ol-a4a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Drawing inner surface' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -6368,9 +6511,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(20)"
+   "notation": "(24)"
   },
-  "totalMarks": 20,
+  "totalMarks": 24,
   "rows": [
    {
     "id": "dcg-2019-ol-b1-r1",
@@ -6395,6 +6538,13 @@
     "kind": "point",
     "verbatim": "Complete the plan as given",
     "marks": 2
+   },
+   {
+    "id": "dcg-2019-ol-b1-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Given Elevation and Plan' and prices it at 20. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -6544,9 +6694,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(5)"
+   "notation": "(9)"
   },
-  "totalMarks": 5,
+  "totalMarks": 9,
   "rows": [
    {
     "id": "dcg-2019-ol-b2a-r1",
@@ -6559,6 +6709,13 @@
     "kind": "point",
     "verbatim": "Draw X, Y and Z axes",
     "marks": 2
+   },
+   {
+    "id": "dcg-2019-ol-b2a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Initial setup' and prices it at 5. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -6744,9 +6901,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(16)"
+   "notation": "(20)"
   },
-  "totalMarks": 16,
+  "totalMarks": 20,
   "rows": [
    {
     "id": "dcg-2019-ol-b3a-r1",
@@ -6765,6 +6922,13 @@
     "kind": "point",
     "verbatim": "Complete structure",
     "marks": 6
+   },
+   {
+    "id": "dcg-2019-ol-b3a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Plan' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -6879,9 +7043,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(30)"
+   "notation": "(34)"
   },
-  "totalMarks": 30,
+  "totalMarks": 34,
   "rows": [
    {
     "id": "dcg-2019-ol-c1a-r1",
@@ -6900,6 +7064,13 @@
     "kind": "point",
     "verbatim": "Draw the profile",
     "marks": 10
+   },
+   {
+    "id": "dcg-2019-ol-c1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Profile' and prices it at 30. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -7002,9 +7173,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(25)"
+   "notation": "(29)"
   },
-  "totalMarks": 25,
+  "totalMarks": 29,
   "rows": [
    {
     "id": "dcg-2019-ol-c2a-r1",
@@ -7035,6 +7206,13 @@
     "kind": "point",
     "verbatim": "Completion of elevation (curve and hidden detail)",
     "marks": 2
+   },
+   {
+    "id": "dcg-2019-ol-c2a-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and Plan' and prices it at 25. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -7102,9 +7280,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(23)"
+   "notation": "(27)"
   },
-  "totalMarks": 23,
+  "totalMarks": 27,
   "rows": [
    {
     "id": "dcg-2019-ol-c3a-r1",
@@ -7135,6 +7313,13 @@
     "kind": "point",
     "verbatim": "Complete plan",
     "marks": 4
+   },
+   {
+    "id": "dcg-2019-ol-c3a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and Plan' and prices it at 23. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -7298,9 +7483,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(22)"
+   "notation": "(26)"
   },
-  "totalMarks": 22,
+  "totalMarks": 26,
   "rows": [
    {
     "id": "dcg-2019-ol-c4a-r1",
@@ -7386,6 +7571,13 @@
       ]
      }
     ]
+   },
+   {
+    "id": "dcg-2019-ol-c4a-r2",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Displacement Diagram' and prices it at 22. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -7465,9 +7657,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(11)"
+   "notation": "(15)"
   },
-  "totalMarks": 11,
+  "totalMarks": 15,
   "rows": [
    {
     "id": "dcg-2019-ol-c5-1-r1",
@@ -7480,6 +7672,13 @@
     "kind": "point",
     "verbatim": "Use of Section View",
     "marks": 3
+   },
+   {
+    "id": "dcg-2019-ol-c5-1-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 4,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Assembly' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -11626,9 +11825,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(11)"
+   "notation": "(13)"
   },
-  "totalMarks": 11,
+  "totalMarks": 13,
   "rows": [
    {
     "id": "dcg-2021-ol-a1a-r1",
@@ -11653,6 +11852,13 @@
     "kind": "point",
     "verbatim": "Identify remaining points on RHS",
     "marks": 2
+   },
+   {
+    "id": "dcg-2021-ol-a1a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Points on right hand side' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -11737,9 +11943,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(12)"
+   "notation": "(14)"
   },
-  "totalMarks": 12,
+  "totalMarks": 14,
   "rows": [
    {
     "id": "dcg-2021-ol-a2a-r1",
@@ -11752,6 +11958,13 @@
     "kind": "point",
     "verbatim": "Draw tangential arc C",
     "marks": 6
+   },
+   {
+    "id": "dcg-2021-ol-a2a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Top arc' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -11807,9 +12020,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(18)"
+   "notation": "(20)"
   },
-  "totalMarks": 18,
+  "totalMarks": 20,
   "rows": [
    {
     "id": "dcg-2021-ol-a3-r1",
@@ -11840,6 +12053,13 @@
     "kind": "point",
     "verbatim": "Complete top of bench",
     "marks": 6
+   },
+   {
+    "id": "dcg-2021-ol-a3-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Perspective' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -11860,9 +12080,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(10)"
+   "notation": "(12)"
   },
-  "totalMarks": 10,
+  "totalMarks": 12,
   "rows": [
    {
     "id": "dcg-2021-ol-a4a-r1",
@@ -11881,6 +12101,13 @@
     "kind": "point",
     "verbatim": "Draw elevation of cylinder",
     "marks": 4
+   },
+   {
+    "id": "dcg-2021-ol-a4a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Cylinder B in elevation' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -11942,9 +12169,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(22)"
+   "notation": "(27)"
   },
-  "totalMarks": 22,
+  "totalMarks": 27,
   "rows": [
    {
     "id": "dcg-2021-ol-b1a-r1",
@@ -11963,6 +12190,13 @@
     "kind": "point",
     "verbatim": "Draw the plan of the main structure",
     "marks": 8
+   },
+   {
+    "id": "dcg-2021-ol-b1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and plan of kennel' and prices it at 22. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -12071,9 +12305,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(7)"
+   "notation": "(12)"
   },
-  "totalMarks": 7,
+  "totalMarks": 12,
   "rows": [
    {
     "id": "dcg-2021-ol-b2a-r1",
@@ -12086,6 +12320,13 @@
     "kind": "point",
     "verbatim": "Draw X, Y and Z axes",
     "marks": 3
+   },
+   {
+    "id": "dcg-2021-ol-b2a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Initial setup' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -12277,9 +12518,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(25)"
+   "notation": "(30)"
   },
-  "totalMarks": 25,
+  "totalMarks": 30,
   "rows": [
    {
     "id": "dcg-2021-ol-b3-r1",
@@ -12304,6 +12545,13 @@
     "kind": "point",
     "verbatim": "Complete the plan as given",
     "marks": 5
+   },
+   {
+    "id": "dcg-2021-ol-b3-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Given Elevation and Plan' and prices it at 25. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -12453,9 +12701,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(37)"
+   "notation": "(42)"
   },
-  "totalMarks": 37,
+  "totalMarks": 42,
   "rows": [
    {
     "id": "dcg-2021-ol-c1a-r1",
@@ -12474,6 +12722,13 @@
     "kind": "point",
     "verbatim": "Draw the profile",
     "marks": 13
+   },
+   {
+    "id": "dcg-2021-ol-c1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Profile' and prices it at 37. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -12576,9 +12831,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(33)"
+   "notation": "(38)"
   },
-  "totalMarks": 33,
+  "totalMarks": 38,
   "rows": [
    {
     "id": "dcg-2021-ol-c2a-r1",
@@ -12609,6 +12864,13 @@
     "kind": "point",
     "verbatim": "Completion of plan (curve and hidden detail)",
     "marks": 3
+   },
+   {
+    "id": "dcg-2021-ol-c2a-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and Plan' and prices it at 33. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -12676,9 +12938,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(26)"
+   "notation": "(31)"
   },
-  "totalMarks": 26,
+  "totalMarks": 31,
   "rows": [
    {
     "id": "dcg-2021-ol-c3a-r1",
@@ -12703,6 +12965,13 @@
     "kind": "point",
     "verbatim": "Complete plan",
     "marks": 4
+   },
+   {
+    "id": "dcg-2021-ol-c3a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and plan' and prices it at 26. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -12866,9 +13135,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(29)"
+   "notation": "(34)"
   },
-  "totalMarks": 29,
+  "totalMarks": 34,
   "rows": [
    {
     "id": "dcg-2021-ol-c4a-r1",
@@ -12945,6 +13214,13 @@
       ]
      }
     ]
+   },
+   {
+    "id": "dcg-2021-ol-c4a-r2",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Displacement Diagram' and prices it at 29. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -13024,9 +13300,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(15)"
+   "notation": "(20)"
   },
-  "totalMarks": 15,
+  "totalMarks": 20,
   "rows": [
    {
     "id": "dcg-2021-ol-c5-1-r1",
@@ -13039,6 +13315,13 @@
     "kind": "point",
     "verbatim": "Draw a Section View",
     "marks": 4
+   },
+   {
+    "id": "dcg-2021-ol-c5-1-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Assembly' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -15196,9 +15479,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(18)"
+   "notation": "(20)"
   },
-  "totalMarks": 18,
+  "totalMarks": 20,
   "rows": [
    {
     "id": "dcg-2022-ol-a1-r1",
@@ -15229,6 +15512,13 @@
     "kind": "point",
     "verbatim": "Complete bunker division",
     "marks": 6
+   },
+   {
+    "id": "dcg-2022-ol-a1-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Perspective' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -15249,9 +15539,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(11)"
+   "notation": "(13)"
   },
-  "totalMarks": 11,
+  "totalMarks": 13,
   "rows": [
    {
     "id": "dcg-2022-ol-a2a-r1",
@@ -15276,6 +15566,13 @@
     "kind": "point",
     "verbatim": "Identify remaining points on LHS",
     "marks": 2
+   },
+   {
+    "id": "dcg-2022-ol-a2a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Points on left hand side' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -15360,9 +15657,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(15)"
+   "notation": "(17)"
   },
-  "totalMarks": 15,
+  "totalMarks": 17,
   "rows": [
    {
     "id": "dcg-2022-ol-a3a-r1",
@@ -15387,6 +15684,13 @@
     "kind": "point",
     "verbatim": "Draw sphere C",
     "marks": 6
+   },
+   {
+    "id": "dcg-2022-ol-a3a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Plan of sphere C' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -15442,9 +15746,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(8)"
+   "notation": "(10)"
   },
-  "totalMarks": 8,
+  "totalMarks": 10,
   "rows": [
    {
     "id": "dcg-2022-ol-a4a-r1",
@@ -15457,6 +15761,13 @@
     "kind": "point",
     "verbatim": "Complete the elevation",
     "marks": 6
+   },
+   {
+    "id": "dcg-2022-ol-a4a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -15518,9 +15829,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(7)"
+   "notation": "(12)"
   },
-  "totalMarks": 7,
+  "totalMarks": 12,
   "rows": [
    {
     "id": "dcg-2022-ol-b1a-r1",
@@ -15533,6 +15844,13 @@
     "kind": "point",
     "verbatim": "Draw X, Y and Z axes",
     "marks": 3
+   },
+   {
+    "id": "dcg-2022-ol-b1a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Initial setup' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -15724,9 +16042,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(25)"
+   "notation": "(30)"
   },
-  "totalMarks": 25,
+  "totalMarks": 30,
   "rows": [
    {
     "id": "dcg-2022-ol-b2a-r1",
@@ -15751,6 +16069,13 @@
     "kind": "point",
     "verbatim": "Complete the plan as given",
     "marks": 5
+   },
+   {
+    "id": "dcg-2022-ol-b2a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Given Elevation and Plan' and prices it at 25. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -15906,9 +16231,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(18)"
+   "notation": "(23)"
   },
-  "totalMarks": 18,
+  "totalMarks": 23,
   "rows": [
    {
     "id": "dcg-2022-ol-b3a-r1",
@@ -15927,6 +16252,13 @@
     "kind": "point",
     "verbatim": "Complete elevation",
     "marks": 8
+   },
+   {
+    "id": "dcg-2022-ol-b3a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Draw elevation of the birdhouse' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -16041,9 +16373,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(28)"
+   "notation": "(33)"
   },
-  "totalMarks": 28,
+  "totalMarks": 33,
   "rows": [
    {
     "id": "dcg-2022-ol-c1a-r1",
@@ -16062,6 +16394,13 @@
     "kind": "point",
     "verbatim": "Draw the profile",
     "marks": 10
+   },
+   {
+    "id": "dcg-2022-ol-c1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Profile' and prices it at 28. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -16141,9 +16480,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(32)"
+   "notation": "(37)"
   },
-  "totalMarks": 32,
+  "totalMarks": 37,
   "rows": [
    {
     "id": "dcg-2022-ol-c2a-r1",
@@ -16174,6 +16513,13 @@
     "kind": "point",
     "verbatim": "Completion of elevation (vertical legs)",
     "marks": 4
+   },
+   {
+    "id": "dcg-2022-ol-c2a-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and Plan' and prices it at 32. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -16241,9 +16587,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(26)"
+   "notation": "(31)"
   },
-  "totalMarks": 26,
+  "totalMarks": 31,
   "rows": [
    {
     "id": "dcg-2022-ol-c3a-r1",
@@ -16268,6 +16614,13 @@
     "kind": "point",
     "verbatim": "Complete plan",
     "marks": 8
+   },
+   {
+    "id": "dcg-2022-ol-c3a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and plan' and prices it at 26. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -16422,9 +16775,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(29)"
+   "notation": "(34)"
   },
-  "totalMarks": 29,
+  "totalMarks": 34,
   "rows": [
    {
     "id": "dcg-2022-ol-c4a-r1",
@@ -16510,6 +16863,13 @@
       ]
      }
     ]
+   },
+   {
+    "id": "dcg-2022-ol-c4a-r2",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Displacement Diagram' and prices it at 29. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -16629,15 +16989,22 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(8)"
+   "notation": "(13)"
   },
-  "totalMarks": 8,
+  "totalMarks": 13,
   "rows": [
    {
     "id": "dcg-2022-ol-c5-1-r1",
     "kind": "point",
     "verbatim": "Relative positioning of components",
     "marks": 8
+   },
+   {
+    "id": "dcg-2022-ol-c5-1-r2",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Assembly' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -18820,9 +19187,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(10)"
+   "notation": "(12)"
   },
-  "totalMarks": 10,
+  "totalMarks": 12,
   "rows": [
    {
     "id": "dcg-2023-ol-a1a-r1",
@@ -18841,6 +19208,13 @@
     "kind": "point",
     "verbatim": "Locate additional points",
     "marks": 6
+   },
+   {
+    "id": "dcg-2023-ol-a1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Locate points' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -18919,9 +19293,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(18)"
+   "notation": "(20)"
   },
-  "totalMarks": 18,
+  "totalMarks": 20,
   "rows": [
    {
     "id": "dcg-2023-ol-a2-r1",
@@ -18946,6 +19320,13 @@
     "kind": "point",
     "verbatim": "Complete the LHS sloping surface",
     "marks": 5
+   },
+   {
+    "id": "dcg-2023-ol-a2-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Perspective' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -18966,9 +19347,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(8)"
+   "notation": "(10)"
   },
-  "totalMarks": 8,
+  "totalMarks": 10,
   "rows": [
    {
     "id": "dcg-2023-ol-a3a-r1",
@@ -18987,6 +19368,13 @@
     "kind": "point",
     "verbatim": "Draw sphere C",
     "marks": 2
+   },
+   {
+    "id": "dcg-2023-ol-a3a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Sphere C' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -19060,9 +19448,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(5)"
+   "notation": "(7)"
   },
-  "totalMarks": 5,
+  "totalMarks": 7,
   "rows": [
    {
     "id": "dcg-2023-ol-a4a-r1",
@@ -19075,6 +19463,13 @@
     "kind": "point",
     "verbatim": "Complete elevation",
     "marks": 3
+   },
+   {
+    "id": "dcg-2023-ol-a4a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation' and prices it at 5. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -19148,9 +19543,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(24)"
+   "notation": "(29)"
   },
-  "totalMarks": 24,
+  "totalMarks": 29,
   "rows": [
    {
     "id": "dcg-2023-ol-b1a-r1",
@@ -19169,6 +19564,13 @@
     "kind": "point",
     "verbatim": "Complete elevation",
     "marks": 1
+   },
+   {
+    "id": "dcg-2023-ol-b1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation' and prices it at 24. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -19277,9 +19679,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(24)"
+   "notation": "(29)"
   },
-  "totalMarks": 24,
+  "totalMarks": 29,
   "rows": [
    {
     "id": "dcg-2023-ol-b2a-r1",
@@ -19304,6 +19706,13 @@
     "kind": "point",
     "verbatim": "Complete the plan as given",
     "marks": 4
+   },
+   {
+    "id": "dcg-2023-ol-b2a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Given elevation and plan' and prices it at 24. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -19470,9 +19879,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(7)"
+   "notation": "(12)"
   },
-  "totalMarks": 7,
+  "totalMarks": 12,
   "rows": [
    {
     "id": "dcg-2023-ol-b3a-r1",
@@ -19485,6 +19894,13 @@
     "kind": "point",
     "verbatim": "Draw X, Y and Z axes",
     "marks": 3
+   },
+   {
+    "id": "dcg-2023-ol-b3a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Initial setup' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -19712,9 +20128,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(35)"
+   "notation": "(40)"
   },
-  "totalMarks": 35,
+  "totalMarks": 40,
   "rows": [
    {
     "id": "dcg-2023-ol-c1a-r1",
@@ -19733,6 +20149,13 @@
     "kind": "point",
     "verbatim": "Draw the profile",
     "marks": 12
+   },
+   {
+    "id": "dcg-2023-ol-c1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Profile' and prices it at 35. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -19794,9 +20217,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(33)"
+   "notation": "(38)"
   },
-  "totalMarks": 33,
+  "totalMarks": 38,
   "rows": [
    {
     "id": "dcg-2023-ol-c2a-r1",
@@ -19827,6 +20250,13 @@
     "kind": "point",
     "verbatim": "Completion of elevation (curve and hidden detail)",
     "marks": 3
+   },
+   {
+    "id": "dcg-2023-ol-c2a-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and Plan' and prices it at 33. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -19894,9 +20324,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(26)"
+   "notation": "(31)"
   },
-  "totalMarks": 26,
+  "totalMarks": 31,
   "rows": [
    {
     "id": "dcg-2023-ol-c3a-r1",
@@ -19909,6 +20339,13 @@
     "kind": "point",
     "verbatim": "Draw end view",
     "marks": 14
+   },
+   {
+    "id": "dcg-2023-ol-c3a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and end view' and prices it at 26. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -20023,45 +20460,83 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(26)"
+   "notation": "(31)"
   },
-  "totalMarks": 26,
+  "totalMarks": 31,
   "rows": [
    {
     "id": "dcg-2023-ol-c4a-r1",
-    "kind": "point",
-    "verbatim": "Set up given elevation and plan (incl. points A & B)",
-    "marks": 10
+    "kind": "criterion",
+    "verbatim": "Helix",
+    "marks": 26,
+    "permittedMarks": [
+     0,
+     26
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Set up given elevation and plan (incl. points A & B)",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       10
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Division of circle in plan",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Projections from plan",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Draw horizontal divisions in elevation",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Locate points on helix",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Draw helix in elevation",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
    },
    {
     "id": "dcg-2023-ol-c4a-r2",
     "kind": "point",
-    "verbatim": "Division of circle in plan",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2023-ol-c4a-r3",
-    "kind": "point",
-    "verbatim": "Projections from plan",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2023-ol-c4a-r4",
-    "kind": "point",
-    "verbatim": "Draw horizontal divisions in elevation",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2023-ol-c4a-r5",
-    "kind": "point",
-    "verbatim": "Locate points on helix",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2023-ol-c4a-r6",
-    "kind": "point",
-    "verbatim": "Draw helix in elevation",
-    "marks": 4
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Helix' and prices it at 26. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -20181,9 +20656,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(14)"
+   "notation": "(19)"
   },
-  "totalMarks": 14,
+  "totalMarks": 19,
   "rows": [
    {
     "id": "dcg-2023-ol-c5-1-r1",
@@ -20196,6 +20671,13 @@
     "kind": "point",
     "verbatim": "Use of Section view",
     "marks": 4
+   },
+   {
+    "id": "dcg-2023-ol-c5-1-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Assembly' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -22369,9 +22851,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(11)"
+   "notation": "(13)"
   },
-  "totalMarks": 11,
+  "totalMarks": 13,
   "rows": [
    {
     "id": "dcg-2024-ol-a1a-r1",
@@ -22396,6 +22878,13 @@
     "kind": "point",
     "verbatim": "Identify remaining points on RHS",
     "marks": 2
+   },
+   {
+    "id": "dcg-2024-ol-a1a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Points on right hand side' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -22480,9 +22969,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(18)"
+   "notation": "(20)"
   },
-  "totalMarks": 18,
+  "totalMarks": 20,
   "rows": [
    {
     "id": "dcg-2024-ol-a2-r1",
@@ -22507,6 +22996,13 @@
     "kind": "point",
     "verbatim": "Complete the top surface",
     "marks": 4
+   },
+   {
+    "id": "dcg-2024-ol-a2-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Perspective' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -22527,9 +23023,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(12)"
+   "notation": "(14)"
   },
-  "totalMarks": 12,
+  "totalMarks": 14,
   "rows": [
    {
     "id": "dcg-2024-ol-a3a-r1",
@@ -22548,6 +23044,13 @@
     "kind": "point",
     "verbatim": "Draw surface",
     "marks": 6
+   },
+   {
+    "id": "dcg-2024-ol-a3a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Plan' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -22603,9 +23106,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(16)"
+   "notation": "(18)"
   },
-  "totalMarks": 16,
+  "totalMarks": 18,
   "rows": [
    {
     "id": "dcg-2024-ol-a4a-r1",
@@ -22630,6 +23133,13 @@
     "kind": "point",
     "verbatim": "Draw R70 arc",
     "marks": 2
+   },
+   {
+    "id": "dcg-2024-ol-a4a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Left hand side' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -22679,9 +23189,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(20)"
+   "notation": "(25)"
   },
-  "totalMarks": 20,
+  "totalMarks": 25,
   "rows": [
    {
     "id": "dcg-2024-ol-b1a-r1",
@@ -22694,6 +23204,13 @@
     "kind": "point",
     "verbatim": "Draw top",
     "marks": 10
+   },
+   {
+    "id": "dcg-2024-ol-b1a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation' and prices it at 20. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -22802,9 +23319,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(6)"
+   "notation": "(11)"
   },
-  "totalMarks": 6,
+  "totalMarks": 11,
   "rows": [
    {
     "id": "dcg-2024-ol-b2a-r1",
@@ -22817,6 +23334,13 @@
     "kind": "point",
     "verbatim": "Draw X, Y and Z axes",
     "marks": 3
+   },
+   {
+    "id": "dcg-2024-ol-b2a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Initial setup' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -22978,9 +23502,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(24)"
+   "notation": "(29)"
   },
-  "totalMarks": 24,
+  "totalMarks": 29,
   "rows": [
    {
     "id": "dcg-2024-ol-b3a-r1",
@@ -22999,6 +23523,13 @@
     "kind": "point",
     "verbatim": "Draw the elevation as given",
     "marks": 12
+   },
+   {
+    "id": "dcg-2024-ol-b3a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Given plan & elevation' and prices it at 24. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -23125,9 +23656,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(37)"
+   "notation": "(42)"
   },
-  "totalMarks": 37,
+  "totalMarks": 42,
   "rows": [
    {
     "id": "dcg-2024-ol-c1a-r1",
@@ -23146,6 +23677,13 @@
     "kind": "point",
     "verbatim": "Draw the profile",
     "marks": 13
+   },
+   {
+    "id": "dcg-2024-ol-c1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Profile' and prices it at 37. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -23248,9 +23786,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(27)"
+   "notation": "(32)"
   },
-  "totalMarks": 27,
+  "totalMarks": 32,
   "rows": [
    {
     "id": "dcg-2024-ol-c2a-r1",
@@ -23275,6 +23813,13 @@
     "kind": "point",
     "verbatim": "Twelve elements",
     "marks": 6
+   },
+   {
+    "id": "dcg-2024-ol-c2a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Plan' and prices it at 27. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -23371,9 +23916,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(28)"
+   "notation": "(33)"
   },
-  "totalMarks": 28,
+  "totalMarks": 33,
   "rows": [
    {
     "id": "dcg-2024-ol-c3a-r1",
@@ -23392,6 +23937,13 @@
     "kind": "point",
     "verbatim": "Draw the elevation",
     "marks": 12
+   },
+   {
+    "id": "dcg-2024-ol-c3a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and plan' and prices it at 28. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -23500,45 +24052,83 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(26)"
+   "notation": "(31)"
   },
-  "totalMarks": 26,
+  "totalMarks": 31,
   "rows": [
    {
     "id": "dcg-2024-ol-c4a-r1",
-    "kind": "point",
-    "verbatim": "Set up line diagram (O, A, B & C)",
-    "marks": 10
+    "kind": "criterion",
+    "verbatim": "Link mechanism",
+    "marks": 26,
+    "permittedMarks": [
+     0,
+     26
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Set up line diagram (O, A, B & C)",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       10
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Draw circle about O",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Division of circle",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Arm AC in rotated positions",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Points on locus",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Draw locus",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
    },
    {
     "id": "dcg-2024-ol-c4a-r2",
     "kind": "point",
-    "verbatim": "Draw circle about O",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2024-ol-c4a-r3",
-    "kind": "point",
-    "verbatim": "Division of circle",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2024-ol-c4a-r4",
-    "kind": "point",
-    "verbatim": "Arm AC in rotated positions",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2024-ol-c4a-r5",
-    "kind": "point",
-    "verbatim": "Points on locus",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2024-ol-c4a-r6",
-    "kind": "point",
-    "verbatim": "Draw locus",
-    "marks": 4
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Link mechanism' and prices it at 26. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -23667,9 +24257,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(14)"
+   "notation": "(19)"
   },
-  "totalMarks": 14,
+  "totalMarks": 19,
   "rows": [
    {
     "id": "dcg-2024-ol-c5-1-r1",
@@ -23682,6 +24272,13 @@
     "kind": "point",
     "verbatim": "Draw Section",
     "marks": 4
+   },
+   {
+    "id": "dcg-2024-ol-c5-1-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Assembly' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -25820,9 +26417,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(18)"
+   "notation": "(20)"
   },
-  "totalMarks": 18,
+  "totalMarks": 20,
   "rows": [
    {
     "id": "dcg-2025-ol-a1-r1",
@@ -25847,6 +26444,13 @@
     "kind": "point",
     "verbatim": "Complete the top surface",
     "marks": 3
+   },
+   {
+    "id": "dcg-2025-ol-a1-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Perspective' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -25867,9 +26471,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(10)"
+   "notation": "(12)"
   },
-  "totalMarks": 10,
+  "totalMarks": 12,
   "rows": [
    {
     "id": "dcg-2025-ol-a2a-r1",
@@ -25888,6 +26492,13 @@
     "kind": "point",
     "verbatim": "Locate additional points",
     "marks": 6
+   },
+   {
+    "id": "dcg-2025-ol-a2a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Locate points' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -25966,9 +26577,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(16)"
+   "notation": "(18)"
   },
-  "totalMarks": 16,
+  "totalMarks": 18,
   "rows": [
    {
     "id": "dcg-2025-ol-a3-1-r1",
@@ -25987,6 +26598,13 @@
     "kind": "point",
     "verbatim": "Draw door",
     "marks": 6
+   },
+   {
+    "id": "dcg-2025-ol-a3-1-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Rotation of door' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -26036,15 +26654,22 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(4)"
+   "notation": "(6)"
   },
-  "totalMarks": 4,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "dcg-2025-ol-a4a-r1",
     "kind": "point",
     "verbatim": "Draw R10 mm circle",
     "marks": 4
+   },
+   {
+    "id": "dcg-2025-ol-a4a-r2",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Radius 10 mm circle' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -26112,9 +26737,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(27)"
+   "notation": "(32)"
   },
-  "totalMarks": 27,
+  "totalMarks": 32,
   "rows": [
    {
     "id": "dcg-2025-ol-b1a-r1",
@@ -26133,6 +26758,13 @@
     "kind": "point",
     "verbatim": "Draw the elevation as given",
     "marks": 10
+   },
+   {
+    "id": "dcg-2025-ol-b1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Given plan & elevation' and prices it at 27. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -26259,9 +26891,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(6)"
+   "notation": "(11)"
   },
-  "totalMarks": 6,
+  "totalMarks": 11,
   "rows": [
    {
     "id": "dcg-2025-ol-b2a-r1",
@@ -26274,6 +26906,13 @@
     "kind": "point",
     "verbatim": "Draw X, Y, and Z axes",
     "marks": 3
+   },
+   {
+    "id": "dcg-2025-ol-b2a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Initial setup' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -26441,9 +27080,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(18)"
+   "notation": "(23)"
   },
-  "totalMarks": 18,
+  "totalMarks": 23,
   "rows": [
    {
     "id": "dcg-2025-ol-b3a-r1",
@@ -26456,6 +27095,13 @@
     "kind": "point",
     "verbatim": "Draw top",
     "marks": 6
+   },
+   {
+    "id": "dcg-2025-ol-b3a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -26564,9 +27210,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(35)"
+   "notation": "(40)"
   },
-  "totalMarks": 35,
+  "totalMarks": 40,
   "rows": [
    {
     "id": "dcg-2025-ol-c1a-r1",
@@ -26585,6 +27231,13 @@
     "kind": "point",
     "verbatim": "Draw the profile",
     "marks": 12
+   },
+   {
+    "id": "dcg-2025-ol-c1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Profile' and prices it at 35. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -26646,9 +27299,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(37)"
+   "notation": "(42)"
   },
-  "totalMarks": 37,
+  "totalMarks": 42,
   "rows": [
    {
     "id": "dcg-2025-ol-c2-r1",
@@ -26679,6 +27332,13 @@
     "kind": "point",
     "verbatim": "Completion of elevation (curve and hidden detail)",
     "marks": 5
+   },
+   {
+    "id": "dcg-2025-ol-c2-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and Plan' and prices it at 37. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -26746,9 +27406,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(30)"
+   "notation": "(35)"
   },
-  "totalMarks": 30,
+  "totalMarks": 35,
   "rows": [
    {
     "id": "dcg-2025-ol-c3a-r1",
@@ -26767,6 +27427,13 @@
     "kind": "point",
     "verbatim": "Draw the inner detail in elevation",
     "marks": 12
+   },
+   {
+    "id": "dcg-2025-ol-c3a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and plan' and prices it at 30. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -26875,45 +27542,83 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(26)"
+   "notation": "(31)"
   },
-  "totalMarks": 26,
+  "totalMarks": 31,
   "rows": [
    {
     "id": "dcg-2025-ol-c4a-r1",
-    "kind": "point",
-    "verbatim": "Set up given elevation and plan (incl. points A & B)",
-    "marks": 10
+    "kind": "criterion",
+    "verbatim": "Helix",
+    "marks": 26,
+    "permittedMarks": [
+     0,
+     26
+    ],
+    "contextNote": "The scheme prices this drawing step by step: award each step you drew its own marks.",
+    "parts": [
+     {
+      "id": "step-1",
+      "verbatim": "Set up given elevation and plan (incl. points A & B)",
+      "marks": 10,
+      "permittedMarks": [
+       0,
+       10
+      ]
+     },
+     {
+      "id": "step-2",
+      "verbatim": "Division of circle in plan",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-3",
+      "verbatim": "Projections from plan",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-4",
+      "verbatim": "Draw horizontal divisions in elevation",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-5",
+      "verbatim": "Locate points on helix",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       3
+      ]
+     },
+     {
+      "id": "step-6",
+      "verbatim": "Draw helix in elevation",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ]
+     }
+    ]
    },
    {
     "id": "dcg-2025-ol-c4a-r2",
     "kind": "point",
-    "verbatim": "Division of circle in plan",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2025-ol-c4a-r3",
-    "kind": "point",
-    "verbatim": "Projections from plan",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2025-ol-c4a-r4",
-    "kind": "point",
-    "verbatim": "Draw horizontal divisions in elevation",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2025-ol-c4a-r5",
-    "kind": "point",
-    "verbatim": "Locate points on helix",
-    "marks": 3
-   },
-   {
-    "id": "dcg-2025-ol-c4a-r6",
-    "kind": "point",
-    "verbatim": "Draw helix in elevation",
-    "marks": 4
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Helix' and prices it at 26. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -27033,9 +27738,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(14)"
+   "notation": "(19)"
   },
-  "totalMarks": 14,
+  "totalMarks": 19,
   "rows": [
    {
     "id": "dcg-2025-ol-c5-1-r1",
@@ -27048,6 +27753,13 @@
     "kind": "point",
     "verbatim": "Draw Section",
     "marks": 4
+   },
+   {
+    "id": "dcg-2025-ol-c5-1-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Assembly' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -29338,9 +30050,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(11)"
+   "notation": "(13)"
   },
-  "totalMarks": 11,
+  "totalMarks": 13,
   "rows": [
    {
     "id": "dcg-2026-ol-a1a-r1",
@@ -29365,6 +30077,13 @@
     "kind": "point",
     "verbatim": "Identify remaining points on RHS",
     "marks": 2
+   },
+   {
+    "id": "dcg-2026-ol-a1a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Points on right hand side' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -29449,15 +30168,22 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(3)"
+   "notation": "(5)"
   },
-  "totalMarks": 3,
+  "totalMarks": 5,
   "rows": [
    {
     "id": "dcg-2026-ol-a2a-r1",
     "kind": "point",
     "verbatim": "Draw R18 circle",
     "marks": 3
+   },
+   {
+    "id": "dcg-2026-ol-a2a-r2",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Radius 18 circle' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -29525,9 +30251,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(6)"
+   "notation": "(8)"
   },
-  "totalMarks": 6,
+  "totalMarks": 8,
   "rows": [
    {
     "id": "dcg-2026-ol-a3a-r1",
@@ -29546,6 +30272,13 @@
     "kind": "point",
     "verbatim": "Complete the plan",
     "marks": 2
+   },
+   {
+    "id": "dcg-2026-ol-a3a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Plan' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -29607,9 +30340,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(18)"
+   "notation": "(20)"
   },
-  "totalMarks": 18,
+  "totalMarks": 20,
   "rows": [
    {
     "id": "dcg-2026-ol-a4-r1",
@@ -29640,6 +30373,13 @@
     "kind": "point",
     "verbatim": "Complete the top surface",
     "marks": 3
+   },
+   {
+    "id": "dcg-2026-ol-a4-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 2,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Perspective' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -29660,9 +30400,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(18)"
+   "notation": "(23)"
   },
-  "totalMarks": 18,
+  "totalMarks": 23,
   "rows": [
    {
     "id": "dcg-2026-ol-b1a-r1",
@@ -29675,6 +30415,13 @@
     "kind": "point",
     "verbatim": "Draw inner details",
     "marks": 4
+   },
+   {
+    "id": "dcg-2026-ol-b1a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -29783,9 +30530,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(6)"
+   "notation": "(11)"
   },
-  "totalMarks": 6,
+  "totalMarks": 11,
   "rows": [
    {
     "id": "dcg-2026-ol-b2a-r1",
@@ -29798,6 +30545,13 @@
     "kind": "point",
     "verbatim": "Draw X, Y and Z axes",
     "marks": 3
+   },
+   {
+    "id": "dcg-2026-ol-b2a-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Initial setup' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -29965,9 +30719,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(23)"
+   "notation": "(28)"
   },
-  "totalMarks": 23,
+  "totalMarks": 28,
   "rows": [
    {
     "id": "dcg-2026-ol-b3a-r1",
@@ -29986,6 +30740,13 @@
     "kind": "point",
     "verbatim": "Draw the elevation as given",
     "marks": 10
+   },
+   {
+    "id": "dcg-2026-ol-b3a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Given plan & elevation' and prices it at 23. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -30106,9 +30867,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(37)"
+   "notation": "(42)"
   },
-  "totalMarks": 37,
+  "totalMarks": 42,
   "rows": [
    {
     "id": "dcg-2026-ol-c1a-r1",
@@ -30127,6 +30888,13 @@
     "kind": "point",
     "verbatim": "Draw the profile",
     "marks": 13
+   },
+   {
+    "id": "dcg-2026-ol-c1a-r4",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Profile' and prices it at 37. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -30229,9 +30997,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(27)"
+   "notation": "(32)"
   },
-  "totalMarks": 27,
+  "totalMarks": 32,
   "rows": [
    {
     "id": "dcg-2026-ol-c2a-r1",
@@ -30262,6 +31030,13 @@
     "kind": "point",
     "verbatim": "Twelve elements",
     "marks": 6
+   },
+   {
+    "id": "dcg-2026-ol-c2a-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Plan' and prices it at 27. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -30364,9 +31139,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(26)"
+   "notation": "(31)"
   },
-  "totalMarks": 26,
+  "totalMarks": 31,
   "rows": [
    {
     "id": "dcg-2026-ol-c3a-r1",
@@ -30391,6 +31166,13 @@
     "kind": "point",
     "verbatim": "Complete the end view",
     "marks": 7
+   },
+   {
+    "id": "dcg-2026-ol-c3a-r5",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Elevation and End view' and prices it at 26. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -30499,9 +31281,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(26)"
+   "notation": "(31)"
   },
-  "totalMarks": 26,
+  "totalMarks": 31,
   "rows": [
    {
     "id": "dcg-2026-ol-c4a-r1",
@@ -30532,6 +31314,13 @@
     "kind": "point",
     "verbatim": "Draw locus",
     "marks": 4
+   },
+   {
+    "id": "dcg-2026-ol-c4a-r6",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Locus of a point' and prices it at 26. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -30660,9 +31449,9 @@
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "(14)"
+   "notation": "(19)"
   },
-  "totalMarks": 14,
+  "totalMarks": 19,
   "rows": [
    {
     "id": "dcg-2026-ol-c5-1-r1",
@@ -30675,6 +31464,13 @@
     "kind": "point",
     "verbatim": "Draw Section",
     "marks": 4
+   },
+   {
+    "id": "dcg-2026-ol-c5-1-r3",
+    "kind": "point",
+    "verbatim": "Presentation",
+    "marks": 5,
+    "contextNote": "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing."
    }
   ],
   "notes": "The scheme heads this 'Assembly' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."

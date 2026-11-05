@@ -38,12 +38,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2018 OL Section A Q1(a)",
     stem: "The 3D graphic below shows the proposed design for the new children’s hospital in Dublin. It consists of an ellipse and two inner circular arcs. The drawing on the right shows the major and minor circles for the ellipse. Portions of the ellipse and of the inner arcs are also shown.",
     questionText: "Locate the remaining points on the ellipse and draw the curve.",
-    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
     { id: "dcg-2018-ol-a1a-r1", kind: "point", verbatim: "Appropriate use of given major and minor axes", marks: 1 },
     { id: "dcg-2018-ol-a1a-r2", kind: "point", verbatim: "Required constructions for additional points", marks: 2 },
     { id: "dcg-2018-ol-a1a-r3", kind: "point", verbatim: "Locate required additional points", marks: 4 },
     { id: "dcg-2018-ol-a1a-r4", kind: "point", verbatim: "Complete curve", marks: 3 },
+    { id: "dcg-2018-ol-a1a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secA-q1-art",
@@ -108,11 +109,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2018 OL Section A Q2(a)",
     stem: "Three stone containers for growing flowers are shown in the 3D graphic below. The containers are in the form of geometrical objects which are in contact as shown. The drawing on the right shows the elevation and partially completed plan of the objects. The arrangement consists of a cylinder, a truncated cone and a hemisphere.",
     questionText: "Draw the plan of the cylinder B.",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
     { id: "dcg-2018-ol-a2a-r1", kind: "point", verbatim: "Projection from centre in elevation", marks: 3 },
     { id: "dcg-2018-ol-a2a-r2", kind: "point", verbatim: "Locate centre in plan", marks: 4 },
     { id: "dcg-2018-ol-a2a-r3", kind: "point", verbatim: "Draw plan of cylinder … (incl. hidden detail)", marks: 4 },
+    { id: "dcg-2018-ol-a2a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secA-q2-art",
@@ -156,13 +158,14 @@ export const CARDS: SecCard[] = [
     id: "dcg-2018-ol-a3", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2018 OL Section A Q3",
     questionText: "The image below shows the Mary McAleese Boyne Valley Bridge, a suspension bridge across the river Boyne in County Meath. The drawing on the right shows the plan and a partially completed perspective view of the concrete tower part of the bridge. Complete the perspective drawing of the bridge tower.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
     { id: "dcg-2018-ol-a3-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points", marks: 2 },
     { id: "dcg-2018-ol-a3-r2", kind: "point", verbatim: "Projections from plan", marks: 2 },
     { id: "dcg-2018-ol-a3-r3", kind: "point", verbatim: "Complete right leg of tower", marks: 8 },
     { id: "dcg-2018-ol-a3-r4", kind: "point", verbatim: "Complete left leg of tower", marks: 2 },
     { id: "dcg-2018-ol-a3-r5", kind: "point", verbatim: "Complete perspective", marks: 4 },
+    { id: "dcg-2018-ol-a3-r6", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secA-q3-art",
@@ -182,12 +185,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2018 OL Section A Q4(a)",
     stem: "The image below shows a concertina. The instrument is hexagonal in cross-section. The plan, elevation and the partially completed end view of the instrument are also shown.",
     questionText: "Complete the end view.",
-    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"(17)"}, totalMarks: 17,
     rows: [
     { id: "dcg-2018-ol-a4a-r1", kind: "point", verbatim: "Projections from plan", marks: 8 },
     { id: "dcg-2018-ol-a4a-r2", kind: "point", verbatim: "Points defined in end view", marks: 3 },
     { id: "dcg-2018-ol-a4a-r3", kind: "point", verbatim: "Complete visible end", marks: 2 },
     { id: "dcg-2018-ol-a4a-r4", kind: "point", verbatim: "Complete end view….(incl. hidden detail)", marks: 2 },
+    { id: "dcg-2018-ol-a4a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secA-q4-art",
@@ -231,11 +235,12 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2018 OL Section B Q1(a)",
     stem: "The graphic on the right shows a portion of a house and a bay window. Fig. B-1 below shows an isometric view of a similar structure.",
     questionText: "Draw the elevation of the complete structure looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(22)"}, totalMarks: 22,
     rows: [
     { id: "dcg-2018-ol-b1a-r1", kind: "point", verbatim: "Draw wall of house", marks: 8 },
     { id: "dcg-2018-ol-b1a-r2", kind: "point", verbatim: "Outline of bay window", marks: 5 },
     { id: "dcg-2018-ol-b1a-r3", kind: "point", verbatim: "Complete bay window", marks: 5 },
+    { id: "dcg-2018-ol-b1a-r4", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secB-q1-art",
@@ -305,9 +310,10 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2018 OL Section B Q2(a)",
     stem: "The 3D graphic on the right shows a climbing pole from a children’s playground. It consists of a central rectangular pillar with horizontal steps attached. Fig. B-2 below shows the plan and incomplete elevation of a portion of the arrangement. A section through the horizontal step is also shown.",
     questionText: "Draw the given plan and the completed elevation, showing all lines of interpenetration.",
-    tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
+    tariffModel: {"kind":"fixed","notation":"(37)"}, totalMarks: 37,
     rows: [
     { id: "dcg-2018-ol-b2a-r1", kind: "criterion", verbatim: "Plan and Elevation", marks: 33, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,33], parts: [{"id":"step-1","verbatim":"Draw plan of pillar as given","marks":6,"permittedMarks":[0,6]},{"id":"step-2","verbatim":"Draw the plan of step as given","marks":5,"permittedMarks":[0,5]},{"id":"step-3","verbatim":"Draw the elevation of the pillar as given","marks":4,"permittedMarks":[0,4]},{"id":"step-4","verbatim":"Draw the elevation of the step as given","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Projections from LHS of plan","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Locate points on LHS in elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"Complete LHS of elevation","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Projections from RHS of plan","marks":2,"permittedMarks":[0,2]},{"id":"step-9","verbatim":"Locate points on RHS in elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-10","verbatim":"Complete RHS of elevation","marks":3,"permittedMarks":[0,3]}] },
+    { id: "dcg-2018-ol-b2a-r2", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secB-q2-art",
@@ -352,10 +358,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2018 OL Section B Q3(a)",
     stem: "The graphic on the right shows a clock. Fig. B-3 below shows an incomplete isometric projection of a similar clock. The elevation and plan of the clock are also shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
     { id: "dcg-2018-ol-b3a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 3 },
     { id: "dcg-2018-ol-b3a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 2 },
+    { id: "dcg-2018-ol-b3a-r3", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secB-q3-art",
@@ -454,11 +461,12 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 OL Section C Q1(a)",
     stem: "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the drawing supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
+    tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
     { id: "dcg-2018-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 6 },
     { id: "dcg-2018-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 5 },
     { id: "dcg-2018-ol-c1a-r3", kind: "point", verbatim: "Draw outline of profile", marks: 8 },
+    { id: "dcg-2018-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q1-art",
@@ -528,14 +536,10 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 OL Section C Q2(a)",
     stem: "The image on the right shows the newly opened Crossrail train station in London’s docklands area. The structure is based on a parabola and has been shaped as shown. Fig. C-2 below shows the plan, elevation and end view of a model of the front part of the station. A 3D view of the model is also given.",
     questionText: "Draw the given elevation. The vertex of the parabolic curve ABC is located at B.",
-    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2018-ol-c2a-r1", kind: "point", verbatim: "Draw base of structure", marks: 3 },
-    { id: "dcg-2018-ol-c2a-r2", kind: "point", verbatim: "Draw inner stand section", marks: 3 },
-    { id: "dcg-2018-ol-c2a-r3", kind: "point", verbatim: "Division of RHS for parabola", marks: 4 },
-    { id: "dcg-2018-ol-c2a-r4", kind: "point", verbatim: "Draw right hand curve", marks: 2 },
-    { id: "dcg-2018-ol-c2a-r5", kind: "point", verbatim: "Locate points on LHS for parabola", marks: 2 },
-    { id: "dcg-2018-ol-c2a-r6", kind: "point", verbatim: "Draw curve on left side", marks: 2 },
+    { id: "dcg-2018-ol-c2a-r1", kind: "criterion", verbatim: "Elevation", marks: 16, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,16], parts: [{"id":"step-1","verbatim":"Draw base of structure","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"Draw inner stand section","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Division of RHS for parabola","marks":4,"permittedMarks":[0,4]},{"id":"step-4","verbatim":"Draw right hand curve","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Locate points on LHS for parabola","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Draw curve on left side","marks":2,"permittedMarks":[0,2]}] },
+    { id: "dcg-2018-ol-c2a-r2", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q2-art",
@@ -602,12 +606,13 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 OL Section C Q3(a)",
     stem: "The graphic on the right shows a lady carrying a handbag. The projections of the bag are shown in Fig. C-3 below.",
     questionText: "Draw the given views of the bag, showing clearly how the centre of the arc is located.",
-    tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
+    tariffModel: {"kind":"fixed","notation":"(28)"}, totalMarks: 28,
     rows: [
     { id: "dcg-2018-ol-c3a-r1", kind: "point", verbatim: "Draw straight lines in elevation", marks: 10 },
     { id: "dcg-2018-ol-c3a-r2", kind: "criterion", verbatim: "Determine centre and draw arc ……(1,2)", marks: 3, permittedMarks: [0,1,2,3] },
     { id: "dcg-2018-ol-c3a-r3", kind: "point", verbatim: "Draw the outline plan", marks: 7 },
     { id: "dcg-2018-ol-c3a-r4", kind: "point", verbatim: "Complete the plan", marks: 4 },
+    { id: "dcg-2018-ol-c3a-r5", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q3-art",
@@ -672,9 +677,10 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 OL Section C Q4(a)",
     stem: "The graphic below shows various images of the Orbit Tower which is located in London’s Olympic Village. At over 100m in height, it is the UK’s tallest sculpture and also incorporates the world’s longest, fastest and tallest tunnel slide. Part of the slide is in the form of a cylindrical helix as shown.",
     questionText: "Fig. C-4(a) on the right shows the projections of a cylinder and a portion of such a helix. (i) Draw the given plan and elevation of the cylinder. (ii) Complete the projections of a regular helix which moves in a clockwise direction about the cylinder, from point A at the base, to point B at the top, in one revolution.",
-    tariffModel: {"kind":"fixed","notation":"(21)"}, totalMarks: 21,
+    tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
     rows: [
     { id: "dcg-2018-ol-c4a-r1", kind: "criterion", verbatim: "Helix", marks: 21, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,21], parts: [{"id":"step-1","verbatim":"Draw circle in plan","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"Draw outline elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Division of plan","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Draw horizontal divisions in elevation","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Complete projections from plan of helix","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Locate points in elevation","marks":5,"permittedMarks":[0,5]},{"id":"step-7","verbatim":"Draw helix in elevation","marks":3,"permittedMarks":[0,3]}] },
+    { id: "dcg-2018-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q4-art",
@@ -716,10 +722,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2018 OL Section C Q5 — Assembly",
     stem: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
     questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
     { id: "dcg-2018-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 8 },
     { id: "dcg-2018-ol-c5-1-r2", kind: "point", verbatim: "Use of Section View", marks: 3 },
+    { id: "dcg-2018-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q5-art",
@@ -854,10 +861,11 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2019 OL Section A Q1(a)",
     stem: "The 3D graphic below shows a modern sculpture in the grounds of Trinity College, Dublin. It consists of a series of spheres which are in contact as shown. The entire structure rests on a square base. The drawing on the right shows the incomplete projections of the three lower spheres, centrally positioned on the square base.",
     questionText: "Draw the plan of sphere A.",
-    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
     { id: "dcg-2019-ol-a1a-r1", kind: "point", verbatim: "Centre in plan", marks: 2 },
     { id: "dcg-2019-ol-a1a-r2", kind: "point", verbatim: "Draw sphere A", marks: 2 },
+    { id: "dcg-2019-ol-a1a-r3", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q1-art",
@@ -925,13 +933,14 @@ export const CARDS: SecCard[] = [
     id: "dcg-2019-ol-a2", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2019 OL Section A Q2",
     questionText: "The image below shows a coffee machine. The drawing on the right shows the plan and the partially completed perspective view of the main body of a similar coffee machine. Complete the perspective drawing.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
     { id: "dcg-2019-ol-a2-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points", marks: 5 },
     { id: "dcg-2019-ol-a2-r2", kind: "point", verbatim: "Projections from plan", marks: 2 },
     { id: "dcg-2019-ol-a2-r3", kind: "point", verbatim: "Complete base section", marks: 7 },
     { id: "dcg-2019-ol-a2-r4", kind: "point", verbatim: "Complete top section", marks: 3 },
     { id: "dcg-2019-ol-a2-r5", kind: "point", verbatim: "Complete perspective", marks: 1 },
+    { id: "dcg-2019-ol-a2-r6", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q2-art",
@@ -951,12 +960,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2019 OL Section A Q3(a)",
     stem: "The images below show a cutter which is part of a paper punch. The cutter appears as a parabola in elevation. The drawing shows the outline elevation of the cutter. A portion of the left hand side of the parabola, which is inscribed in rectangle ABCD is shown. V is the vertex of the parabola.",
     questionText: "Locate the remaining points on the left hand side of the parabola.",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
     { id: "dcg-2019-ol-a3a-r1", kind: "point", verbatim: "Division of vertical line", marks: 5 },
     { id: "dcg-2019-ol-a3a-r2", kind: "point", verbatim: "Complete division of top line", marks: 2 },
     { id: "dcg-2019-ol-a3a-r3", kind: "point", verbatim: "Construction lines (2 sets)", marks: 2 },
     { id: "dcg-2019-ol-a3a-r4", kind: "point", verbatim: "Identify remaining points on LHS", marks: 2 },
+    { id: "dcg-2019-ol-a3a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q3-art",
@@ -1021,10 +1031,11 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2019 OL Section A Q4(a)",
     stem: "The image below shows an artist’s impression of a structure in the ‘Centre Parcs’ holiday resort, currently under construction in county Longford. The drawing on the right shows the outline of a similar structure. The design of the structure is based on lines and tangential arcs. The structure has a uniform thickness. A small portion of the inner parallel surface is also shown.",
     questionText: "Complete the drawing of the inner surface of the structure.",
-    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
     { id: "dcg-2019-ol-a4a-r1", kind: "point", verbatim: "Mark the correct thickness of the structure", marks: 6 },
     { id: "dcg-2019-ol-a4a-r2", kind: "point", verbatim: "Complete the drawing of the inner surface", marks: 8 },
+    { id: "dcg-2019-ol-a4a-r3", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secA-q4-art",
@@ -1068,12 +1079,13 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2019 OL Section B Q1(a), (b)",
     stem: "The 3D graphic on the right shows a piece of equipment from a children’s play area. It consists of a shaped main structure with a crawl tunnel passing through it. Fig. B-1 below shows the elevation and incomplete plan of a model of the structure. The outline profile of the tunnel is also shown on the left below.",
     questionText: "Using the information provided in the 3D graphic and in Fig. B-1, draw the elevation and the incomplete plan of the structure as given. Complete the plan showing all lines of interpenetration.",
-    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
     rows: [
     { id: "dcg-2019-ol-b1-r1", kind: "point", verbatim: "Draw the outline elevation as given", marks: 10 },
     { id: "dcg-2019-ol-b1-r2", kind: "point", verbatim: "Complete the elevation", marks: 4 },
     { id: "dcg-2019-ol-b1-r3", kind: "point", verbatim: "Draw the outline of the plan as given", marks: 4 },
     { id: "dcg-2019-ol-b1-r4", kind: "point", verbatim: "Complete the plan as given", marks: 2 },
+    { id: "dcg-2019-ol-b1-r5", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q1-art",
@@ -1166,10 +1178,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2019 OL Section B Q2(a)",
     stem: "The graphic on the right shows a candle holder and a candle. Fig. B-2 below shows an incomplete isometric projection of a similar candle holder. The elevation and plan of the holder are also shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y and Z.",
-    tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed","notation":"(9)"}, totalMarks: 9,
     rows: [
     { id: "dcg-2019-ol-b2a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 3 },
     { id: "dcg-2019-ol-b2a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 2 },
+    { id: "dcg-2019-ol-b2a-r3", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q2-art",
@@ -1268,11 +1281,12 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2019 OL Section B Q3(a)",
     stem: "The graphic on the right shows steps and portion of a wall. Fig. B-3 below shows an isometric view of a similar structure.",
     questionText: "Draw the elevation of the complete structure looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
     { id: "dcg-2019-ol-b3a-r1", kind: "point", verbatim: "Draw wall", marks: 4 },
     { id: "dcg-2019-ol-b3a-r2", kind: "point", verbatim: "Outline of steps", marks: 6 },
     { id: "dcg-2019-ol-b3a-r3", kind: "point", verbatim: "Complete structure", marks: 6 },
+    { id: "dcg-2019-ol-b3a-r4", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secB-q3-art",
@@ -1342,11 +1356,12 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 OL Section C Q1(a)",
     stem: "The image on the right shows an aerial view of an open mine. A portion of a similar mine area is represented on the accompanying map, located on the back page of Section A. The map shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(30)"}, totalMarks: 30,
+    tariffModel: {"kind":"fixed","notation":"(34)"}, totalMarks: 34,
     rows: [
     { id: "dcg-2019-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 12 },
     { id: "dcg-2019-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 8 },
     { id: "dcg-2019-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 10 },
+    { id: "dcg-2019-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q1-art",
@@ -1414,13 +1429,14 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 OL Section C Q2(a)",
     stem: "The image on the right shows a wooden watch face. The top surface of the watch face is a hyperbolic paraboloid. The watch face is a square in plan.",
     questionText: "Draw the given plan and elevation of the hyperbolic paraboloid surface of the watch.",
-    tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
+    tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
     { id: "dcg-2019-ol-c2a-r1", kind: "point", verbatim: "Outline of surface ABCD in plan", marks: 6 },
     { id: "dcg-2019-ol-c2a-r2", kind: "point", verbatim: "Elements in plan (incl. division)", marks: 6 },
     { id: "dcg-2019-ol-c2a-r3", kind: "point", verbatim: "Outline of surface in elevation", marks: 6 },
     { id: "dcg-2019-ol-c2a-r4", kind: "point", verbatim: "Elements in elevation (incl. division or proj.)", marks: 5 },
     { id: "dcg-2019-ol-c2a-r5", kind: "point", verbatim: "Completion of elevation (curve and hidden detail)", marks: 2 },
+    { id: "dcg-2019-ol-c2a-r6", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q2-art",
@@ -1465,12 +1481,13 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 OL Section C Q3(a)",
     stem: "The graphic on the right shows a measuring tape and a storage box for the tape. The projections of the storage box are shown in Fig. C-3 below.",
     questionText: "Draw the given views of the storage box, showing clearly how you located the centre of the 40mm arc.",
-    tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
+    tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
     rows: [
     { id: "dcg-2019-ol-c3a-r1", kind: "point", verbatim: "Draw straight edges in elevation", marks: 10 },
     { id: "dcg-2019-ol-c3a-r2", kind: "criterion", verbatim: "Determine centre and draw arc ……(1,2)", marks: 3, permittedMarks: [0,1,2,3] },
     { id: "dcg-2019-ol-c3a-r3", kind: "point", verbatim: "Draw outline plan", marks: 6 },
     { id: "dcg-2019-ol-c3a-r4", kind: "point", verbatim: "Complete plan", marks: 4 },
+    { id: "dcg-2019-ol-c3a-r5", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q3-art",
@@ -1535,9 +1552,10 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 OL Section C Q4(a)",
     stem: "Cams, cranks and pistons are parts of the engine of a motorbike.",
     questionText: "The graphic shows an enlarged view of a cam from a motorbike engine. A cam, similar to the one shown, imparts the following motion to an inline knife-edge follower: to 30° Dwell 30° to 120° Rise 70mm with uniform velocity 120° to 180° Fall 14mm with uniform velocity 180° to 360° Fall 56mm with simple harmonic motion. Draw the displacement diagram for the cam. Note: It is not necessary to draw the cam profile. (In the displacement diagram, use a distance of 15mm to represent each 30° interval.)",
-    tariffModel: {"kind":"fixed","notation":"(22)"}, totalMarks: 22,
+    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
     rows: [
     { id: "dcg-2019-ol-c4a-r1", kind: "criterion", verbatim: "Displacement Diagram", marks: 22, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,22], parts: [{"id":"step-1","verbatim":"360° division (widths on displacement diagram)","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Correct use of 70mm height","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Establish follower position at 0°, 30°, 120°, 180° and 360°","marks":5,"permittedMarks":[0,5]},{"id":"step-4","verbatim":"0° to 30°, Dwell","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"30° to 120°, Rise 70mm with Uniform Velocity","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"120° to 180°, Fall 14mm with Uniform Velocity","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"180° to 360°, Simple Harmonic Motion (SHM) construction","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Complete Displacement Diagram","marks":3,"permittedMarks":[0,3]}] },
+    { id: "dcg-2019-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q4-art",
@@ -1584,10 +1602,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2019 OL Section C Q5 — Assembly",
     stem: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.) Part Name Qty. Base Upright Branch Cap",
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
     { id: "dcg-2019-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 8 },
     { id: "dcg-2019-ol-c5-1-r2", kind: "point", verbatim: "Use of Section View", marks: 3 },
+    { id: "dcg-2019-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q5-art",
@@ -1722,12 +1741,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Section A Q1(a)",
     stem: "The image below shows a bee hive hut which is situated on the side of the M1 motorway near Drogheda, Co. Louth. The outline of the structure is a parabola. The drawing on the right shows a portion of a similar parabola, which is inscribed in rectangle ABCD. V is the vertex of the curve.",
     questionText: "Locate the remaining points on the right hand side of the parabola.",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
     { id: "dcg-2021-ol-a1a-r1", kind: "point", verbatim: "Complete division of line CD", marks: 4 },
     { id: "dcg-2021-ol-a1a-r2", kind: "point", verbatim: "Complete division of line VC", marks: 3 },
     { id: "dcg-2021-ol-a1a-r3", kind: "point", verbatim: "Construction lines (2 sets)", marks: 2 },
     { id: "dcg-2021-ol-a1a-r4", kind: "point", verbatim: "Identify remaining points on RHS", marks: 2 },
+    { id: "dcg-2021-ol-a1a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secA-q1-art",
@@ -1792,10 +1812,11 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Section A Q2(a)",
     stem: "The image below shows a bridge in Fitzgerald Park, Cork. The symmetrically designed structure includes tangential arcs A, B, and C which have the same radius. The drawing on the right shows a partially completed view of the structure.",
     questionText: "Complete the upper section of the bridge by drawing arc C tangential to the given arcs A and B. Show clearly how the centre point for arc C is located.",
-    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
     { id: "dcg-2021-ol-a2a-r1", kind: "point", verbatim: "Locate centre for arc C", marks: 6 },
     { id: "dcg-2021-ol-a2a-r2", kind: "point", verbatim: "Draw tangential arc C", marks: 6 },
+    { id: "dcg-2021-ol-a2a-r3", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secA-q2-art",
@@ -1837,13 +1858,14 @@ export const CARDS: SecCard[] = [
     id: "dcg-2021-ol-a3", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2021 OL Section A Q3",
     questionText: "The image below shows a garden bench. The drawing shows the plan and a partially completed perspective view of a similar bench. Complete the perspective drawing.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
     { id: "dcg-2021-ol-a3-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points (5 lines)", marks: 5 },
     { id: "dcg-2021-ol-a3-r2", kind: "point", verbatim: "Projections from plan or radiated lines", marks: 2 },
     { id: "dcg-2021-ol-a3-r3", kind: "point", verbatim: "Complete the front face", marks: 3 },
     { id: "dcg-2021-ol-a3-r4", kind: "point", verbatim: "Complete the legs", marks: 2 },
     { id: "dcg-2021-ol-a3-r5", kind: "point", verbatim: "Complete top of bench", marks: 6 },
+    { id: "dcg-2021-ol-a3-r6", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secA-q3-art",
@@ -1863,11 +1885,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 OL Section A Q4(a)",
     stem: "The 3D graphic below shows a selection of personal care products in geometrical form. The objects rest on a dressing table and are in contact as shown. The arrangement consists of a truncated cone A, a cylinder B and a hemisphere C. The drawing on the right shows the partially completed elevation and plan of the objects.",
     questionText: "Draw the elevation of the cylinder B.",
-    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
     { id: "dcg-2021-ol-a4a-r1", kind: "point", verbatim: "Projection from centre in plan", marks: 2 },
     { id: "dcg-2021-ol-a4a-r2", kind: "point", verbatim: "Locate centre in elevation", marks: 4 },
     { id: "dcg-2021-ol-a4a-r3", kind: "point", verbatim: "Draw elevation of cylinder", marks: 4 },
+    { id: "dcg-2021-ol-a4a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secA-q4-art",
@@ -1911,11 +1934,12 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q1(a)",
     stem: "and Section C on drawing paper. The 3D graphic on the right shows a dog kennel with the door in the open position. Fig. B-1 below shows an isometric view of a similar kennel.",
     questionText: "Draw the elevation of the kennel looking in the direction of the arrow and project the plan.",
-    tariffModel: {"kind":"fixed","notation":"(22)"}, totalMarks: 22,
+    tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
     rows: [
     { id: "dcg-2021-ol-b1a-r1", kind: "point", verbatim: "Draw the outline elevation of main structure", marks: 9 },
     { id: "dcg-2021-ol-b1a-r2", kind: "point", verbatim: "Draw the square door opening", marks: 5 },
     { id: "dcg-2021-ol-b1a-r3", kind: "point", verbatim: "Draw the plan of the main structure", marks: 8 },
+    { id: "dcg-2021-ol-b1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q1-art",
@@ -1984,10 +2008,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q2(a)",
     stem: "The image on the right shows a lifebuoy and its box. Fig. B-2 below shows the axonometric axes and an incomplete isometric projection of a similar box. A 3D graphic is also given. The elevation and plan of the box are also shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
     { id: "dcg-2021-ol-b2a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 4 },
     { id: "dcg-2021-ol-b2a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 3 },
+    { id: "dcg-2021-ol-b2a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q2-art",
@@ -2087,12 +2112,13 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2021 OL Section B Q3(a), (b)",
     stem: "The 3D graphic on the right shows a model of a structure from a crazy-golf park. The design is based on the shape of a car body, through which a tunnel has been created. Fig. B-3 below shows the elevation and incomplete plan of the structure. The outline profile of the tunnel is also shown.",
     questionText: "Draw the given elevation and incomplete plan of the structure. Complete the plan, showing all lines of interpenetration between the tunnel and both ends of the structure.",
-    tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
+    tariffModel: {"kind":"fixed","notation":"(30)"}, totalMarks: 30,
     rows: [
     { id: "dcg-2021-ol-b3-r1", kind: "point", verbatim: "Draw the outline elevation as given", marks: 10 },
     { id: "dcg-2021-ol-b3-r2", kind: "point", verbatim: "Complete the elevation", marks: 4 },
     { id: "dcg-2021-ol-b3-r3", kind: "point", verbatim: "Draw the outline plan as given", marks: 6 },
     { id: "dcg-2021-ol-b3-r4", kind: "point", verbatim: "Complete the plan as given", marks: 5 },
+    { id: "dcg-2021-ol-b3-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secB-q3-art",
@@ -2185,11 +2211,12 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q1(a)",
     stem: "and Section C on drawing paper. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(37)"}, totalMarks: 37,
+    tariffModel: {"kind":"fixed","notation":"(42)"}, totalMarks: 42,
     rows: [
     { id: "dcg-2021-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 13 },
     { id: "dcg-2021-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 11 },
     { id: "dcg-2021-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 13 },
+    { id: "dcg-2021-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q1-art",
@@ -2257,13 +2284,14 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q2(a)",
     stem: "The image on the right shows a climbing frame from a children’s playground. It contains a series of hyperbolic paraboloid surfaces. Fig. C-2 below shows the projections of a similar hyperbolic paraboloid surface.",
     questionText: "Draw the elevation and plan of the given hyperbolic paraboloid surface.",
-    tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
+    tariffModel: {"kind":"fixed","notation":"(38)"}, totalMarks: 38,
     rows: [
     { id: "dcg-2021-ol-c2a-r1", kind: "point", verbatim: "Outline of surface ABCD in elevation", marks: 8 },
     { id: "dcg-2021-ol-c2a-r2", kind: "point", verbatim: "Elements in elevation (incl. division)", marks: 7 },
     { id: "dcg-2021-ol-c2a-r3", kind: "point", verbatim: "Outline of surface in plan", marks: 8 },
     { id: "dcg-2021-ol-c2a-r4", kind: "point", verbatim: "Elements in plan (incl. division or proj.)", marks: 7 },
     { id: "dcg-2021-ol-c2a-r5", kind: "point", verbatim: "Completion of plan (curve and hidden detail)", marks: 3 },
+    { id: "dcg-2021-ol-c2a-r6", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q2-art",
@@ -2308,12 +2336,13 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q3(a)",
     stem: "The image on the right shows a ‘Magnum’ ice cream and a wrapper. The projections of a similar wrapper are shown in Fig. C-3 below.",
     questionText: "Draw the given elevation and plan of the wrapper. Show clearly how the points of contact are located in the elevation.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
     { id: "dcg-2021-ol-c3a-r1", kind: "point", verbatim: "Draw the elevation", marks: 12 },
     { id: "dcg-2021-ol-c3a-r2", kind: "point", verbatim: "Show contact points", marks: 3 },
     { id: "dcg-2021-ol-c3a-r3", kind: "point", verbatim: "Draw outline plan", marks: 7 },
     { id: "dcg-2021-ol-c3a-r4", kind: "point", verbatim: "Complete plan", marks: 4 },
+    { id: "dcg-2021-ol-c3a-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q3-art",
@@ -2378,9 +2407,10 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q4(a)",
     stem: "A cam, as shown, is often used as part of a sewing machine.",
     questionText: "Draw the displacement diagram for a cam which imparts the following motion to an inline knife edge follower: to 90° Rise 60mm with uniform velocity 90° to 180° Dwell 180° to 360° Fall 60mm with uniform acceleration and retardation. (In the displacement diagram, use a distance of 15mm to represent each 30° interval.) Note: It is not necessary to draw the cam profile.",
-    tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
+    tariffModel: {"kind":"fixed","notation":"(34)"}, totalMarks: 34,
     rows: [
     { id: "dcg-2021-ol-c4a-r1", kind: "criterion", verbatim: "Displacement Diagram", marks: 29, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,29], parts: [{"id":"step-1","verbatim":"360° division (widths on displacement diagram)","marks":5,"permittedMarks":[0,5]},{"id":"step-2","verbatim":"Correct use of 60mm height","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Establish follower position at 0°, 90°, 180° and 360°","marks":7,"permittedMarks":[0,7]},{"id":"step-4","verbatim":"0° to 90°, Rise 60mm with Uniform Velocity","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"90° to 180°, Dwell","marks":4,"permittedMarks":[0,4]},{"id":"step-6","verbatim":"180° to 360°, Fall 60mm with UAR construction","marks":4,"permittedMarks":[0,4]},{"id":"step-7","verbatim":"Complete Displacement Diagram","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2021-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q4-art",
@@ -2427,10 +2457,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2021 OL Section C Q5 — Assembly",
     stem: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.) Part Name Qty. Main Body Handle Roller",
     questionText: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.)",
-    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
     { id: "dcg-2021-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 11 },
     { id: "dcg-2021-ol-c5-1-r2", kind: "point", verbatim: "Draw a Section View", marks: 4 },
+    { id: "dcg-2021-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q5-art",
@@ -2543,13 +2574,14 @@ export const CARDS: SecCard[] = [
     id: "dcg-2022-ol-a1", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2022 OL Section A Q1",
     questionText: "The image below shows a storage bunker. The drawing shows the plan and a partially completed perspective view of a similar storage bunker. Complete the perspective drawing.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
     { id: "dcg-2022-ol-a1-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points (3 lines)", marks: 3 },
     { id: "dcg-2022-ol-a1-r2", kind: "point", verbatim: "Complete the bunker outline", marks: 6 },
     { id: "dcg-2022-ol-a1-r3", kind: "point", verbatim: "Projections from plan or radiated lines", marks: 2 },
     { id: "dcg-2022-ol-a1-r4", kind: "point", verbatim: "Radiate line to correct vanishing point for bunker division", marks: 1 },
     { id: "dcg-2022-ol-a1-r5", kind: "point", verbatim: "Complete bunker division", marks: 6 },
+    { id: "dcg-2022-ol-a1-r6", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secA-q1-art",
@@ -2569,12 +2601,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Section A Q2(a)",
     stem: "The image below shows the Wembley arch that supports the roof of the football stadium. The arch is in the shape of a parabola. The drawing on the right shows a portion of a similar parabola, which is inscribed in rectangle ABCD. V is the vertex of the parabola.",
     questionText: "Locate the remaining points on the left hand side of the parabola.",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
     { id: "dcg-2022-ol-a2a-r1", kind: "point", verbatim: "Complete division of line AB", marks: 4 },
     { id: "dcg-2022-ol-a2a-r2", kind: "point", verbatim: "Complete division of line BV", marks: 3 },
     { id: "dcg-2022-ol-a2a-r3", kind: "point", verbatim: "Construction lines (2 sets)", marks: 2 },
     { id: "dcg-2022-ol-a2a-r4", kind: "point", verbatim: "Identify remaining points on LHS", marks: 2 },
+    { id: "dcg-2022-ol-a2a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secA-q2-art",
@@ -2639,12 +2672,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Section A Q3(a)",
     stem: "The image below shows a set of inflatable geometric shapes for a children’s outdoor play area. The arrangement includes a cone A, cylinder B and sphere C which are in mutual contact. The drawing on the right shows the elevation and partially completed plan of the three solids.",
     questionText: "Draw the plan of the sphere C.",
-    tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"(17)"}, totalMarks: 17,
     rows: [
     { id: "dcg-2022-ol-a3a-r1", kind: "point", verbatim: "Constructions in elevation", marks: 4 },
     { id: "dcg-2022-ol-a3a-r2", kind: "point", verbatim: "Projections to plan", marks: 2 },
     { id: "dcg-2022-ol-a3a-r3", kind: "point", verbatim: "Locate centre point in plan", marks: 3 },
     { id: "dcg-2022-ol-a3a-r4", kind: "point", verbatim: "Draw sphere C", marks: 6 },
+    { id: "dcg-2022-ol-a3a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secA-q3-art",
@@ -2687,10 +2721,11 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Section A Q4(a)",
     stem: "The image below shows a ring box with the lid opened through 90⁰. The plan, partially completed elevation and partially completed end view of the box with the lid in the open position are also shown.",
     questionText: "Complete the elevation.",
-    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
     { id: "dcg-2022-ol-a4a-r1", kind: "point", verbatim: "Projections from plan", marks: 2 },
     { id: "dcg-2022-ol-a4a-r2", kind: "point", verbatim: "Complete the elevation", marks: 6 },
+    { id: "dcg-2022-ol-a4a-r3", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secA-q4-art",
@@ -2734,10 +2769,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2022 OL Section B Q1(a)",
     stem: "and Section C on drawing paper. The image on the right shows a Tesla charging station. Fig B-1 below shows an incomplete isometric projection of a similar charging station. The elevation and plan of the station are also shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
     { id: "dcg-2022-ol-b1a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 4 },
     { id: "dcg-2022-ol-b1a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 3 },
+    { id: "dcg-2022-ol-b1a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q1-art",
@@ -2837,12 +2873,13 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2022 OL Section B Q2(a)",
     stem: "The image on the right shows a BMX freestyler at the 2020 Olympic Games. The BMX course consisted of a number of ramp structures. Fig. B-2 below shows the elevation and incomplete plan of a similar BMX ramp structure. The outline profile of a second ramp is also shown on the right below. A 3D graphic is also given.",
     questionText: "Draw the given elevation and incomplete plan of the structure.",
-    tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
+    tariffModel: {"kind":"fixed","notation":"(30)"}, totalMarks: 30,
     rows: [
     { id: "dcg-2022-ol-b2a-r1", kind: "point", verbatim: "Draw the outline elevation as given", marks: 10 },
     { id: "dcg-2022-ol-b2a-r2", kind: "point", verbatim: "Complete the elevation", marks: 4 },
     { id: "dcg-2022-ol-b2a-r3", kind: "point", verbatim: "Draw the outline plan as given", marks: 6 },
     { id: "dcg-2022-ol-b2a-r4", kind: "point", verbatim: "Complete the plan as given", marks: 5 },
+    { id: "dcg-2022-ol-b2a-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q2-art",
@@ -2936,11 +2973,12 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2022 OL Section B Q3(a)",
     stem: "The 3D graphic on the right shows a birdhouse. Fig. B-3 below shows an isometric view of the birdhouse. Note: The hole is not required to be drawn.",
     questionText: "Draw the elevation of the birdhouse looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
     { id: "dcg-2022-ol-b3a-r1", kind: "point", verbatim: "Draw base of birdhouse", marks: 6 },
     { id: "dcg-2022-ol-b3a-r2", kind: "point", verbatim: "Outline of top", marks: 4 },
     { id: "dcg-2022-ol-b3a-r3", kind: "point", verbatim: "Complete elevation", marks: 8 },
+    { id: "dcg-2022-ol-b3a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secB-q3-art",
@@ -3010,11 +3048,12 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2022 OL Section C Q1(a)",
     stem: "and Section C on drawing paper. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(28)"}, totalMarks: 28,
+    tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
     rows: [
     { id: "dcg-2022-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 10 },
     { id: "dcg-2022-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 8 },
     { id: "dcg-2022-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 10 },
+    { id: "dcg-2022-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q1-art",
@@ -3061,13 +3100,14 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2022 OL Section C Q2(a)",
     stem: "The image on the right shows a beach art structure at a holiday destination. The top of the structure consists of a hyperbolic paraboloid. The structure appears as a square in plan. Fig. C-2 below shows the projections of a similar hyperbolic paraboloid.",
     questionText: "Draw the plan and elevation of the given structure.",
-    tariffModel: {"kind":"fixed","notation":"(32)"}, totalMarks: 32,
+    tariffModel: {"kind":"fixed","notation":"(37)"}, totalMarks: 37,
     rows: [
     { id: "dcg-2022-ol-c2a-r1", kind: "point", verbatim: "Outline of surface ABCD in plan", marks: 8 },
     { id: "dcg-2022-ol-c2a-r2", kind: "point", verbatim: "Elements in plan (incl. division)", marks: 6 },
     { id: "dcg-2022-ol-c2a-r3", kind: "point", verbatim: "Outline of surface in elevation", marks: 8 },
     { id: "dcg-2022-ol-c2a-r4", kind: "point", verbatim: "Elements in elevation (incl. division or proj.)", marks: 6 },
     { id: "dcg-2022-ol-c2a-r5", kind: "point", verbatim: "Completion of elevation (vertical legs)", marks: 4 },
+    { id: "dcg-2022-ol-c2a-r6", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q2-art",
@@ -3112,12 +3152,13 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2022 OL Section C Q3(a)",
     stem: "The image on the right shows a digger bucket. The projections of a similar digger bucket are shown in Fig. C-3 below. All teeth are equal in width.",
     questionText: "Draw the given plan and elevation of the digger bucket.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
     { id: "dcg-2022-ol-c3a-r1", kind: "point", verbatim: "Draw straight edges in elevation", marks: 8 },
     { id: "dcg-2022-ol-c3a-r2", kind: "point", verbatim: "Determine centre and draw semi-circle", marks: 4 },
     { id: "dcg-2022-ol-c3a-r3", kind: "point", verbatim: "Draw outline plan", marks: 6 },
     { id: "dcg-2022-ol-c3a-r4", kind: "point", verbatim: "Complete plan", marks: 8 },
+    { id: "dcg-2022-ol-c3a-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q3-art",
@@ -3181,9 +3222,10 @@ export const CARDS: SecCard[] = [
     id: "dcg-2022-ol-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2022 OL Section C Q4(a)",
     questionText: "A cam mechanism is a profiled shape (similar to the one shown on the right) mounted on a shaft that is used to convert rotary motion into linear motion. Draw the displacement diagram for a cam which imparts the following motion to an inline knife edge follower: 90⁰ Rise 70mm with uniform velocity 90⁰ 120⁰ Dwell 120⁰ 180⁰ Fall 20mm with uniform velocity 180⁰ 360⁰ Fall 50mm with simple harmonic motion. (In the displacement diagram, use a distance of 15mm to represent each 30⁰ interval.) Note: It is not necessary to draw the cam profile.",
-    tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
+    tariffModel: {"kind":"fixed","notation":"(34)"}, totalMarks: 34,
     rows: [
     { id: "dcg-2022-ol-c4a-r1", kind: "criterion", verbatim: "Displacement Diagram", marks: 29, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,29], parts: [{"id":"step-1","verbatim":"360⁰ division (widths on displacement diagram)","marks":5,"permittedMarks":[0,5]},{"id":"step-2","verbatim":"Correct use of 70mm height","marks":1,"permittedMarks":[0,1]},{"id":"step-3","verbatim":"Establish follower position at 0⁰, 90⁰, 120°, 180⁰ and 360⁰","marks":7,"permittedMarks":[0,7]},{"id":"step-4","verbatim":"0⁰ to 90⁰, Rise 70mm with Uniform Velocity","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"90⁰ to 120⁰, Dwell","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"120⁰ to 180⁰, Fall 20mm with Uniform Velocity","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"180⁰ to 360⁰, Fall 50mm with Simple Harmonic Motion","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Complete Displacement Diagram","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2022-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q4-art",
@@ -3224,9 +3266,10 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2022 OL Section C Q5 — Assembly",
     stem: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity. Part Name Qty. Main Body Lid Base",
     questionText: "Stove-top coffee pots are a very popular method of brewing coffee at home. Details of a stove-top coffee pot are given in Fig. C-5 below. A parts list and 3D graphic of the coffee pot are also shown. Draw the elevation of the assembled coffee pot. Note: Any omitted dimensions may be estimated. Unnecessary dimensions and hidden detail have been omitted for clarity.",
-    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
     { id: "dcg-2022-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 8 },
+    { id: "dcg-2022-ol-c5-1-r2", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q5-art",
@@ -3319,11 +3362,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Section A Q1(a)",
     stem: "The image below shows an elliptical pool table from a science museum. The top of the pool table consists of an ellipse and an outer frame. The drawing on the right shows the outer frame and the major and minor circles of the ellipse. A portion of the ellipse is also shown.",
     questionText: "Locate the remaining points on the ellipse.",
-    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
     { id: "dcg-2023-ol-a1a-r1", kind: "point", verbatim: "Appropriate use of given major and minor axis", marks: 1 },
     { id: "dcg-2023-ol-a1a-r2", kind: "point", verbatim: "Required construction for additional points", marks: 3 },
     { id: "dcg-2023-ol-a1a-r3", kind: "point", verbatim: "Locate additional points", marks: 6 },
+    { id: "dcg-2023-ol-a1a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secA-q1-art",
@@ -3386,12 +3430,13 @@ export const CARDS: SecCard[] = [
     id: "dcg-2023-ol-a2", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2023 OL Section A Q2",
     questionText: "The image below shows a sun lounger. The drawing shows the plan and partially completed perspective view of a similar sun lounger. Complete the perspective drawing of the sun lounger.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
     { id: "dcg-2023-ol-a2-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points", marks: 6 },
     { id: "dcg-2023-ol-a2-r2", kind: "point", verbatim: "Complete front RHS surface", marks: 3 },
     { id: "dcg-2023-ol-a2-r3", kind: "point", verbatim: "Complete the top", marks: 4 },
     { id: "dcg-2023-ol-a2-r4", kind: "point", verbatim: "Complete the LHS sloping surface", marks: 5 },
+    { id: "dcg-2023-ol-a2-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secA-q2-art",
@@ -3411,11 +3456,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Section A Q3(a)",
     stem: "The image below shows three tennis balls and a cylindrical container A which are in mutual contact. The drawing on the right shows the partially completed elevation and plan of similar solids. The spherical tennis balls B, C, and D are all of the same diameter.",
     questionText: "Draw the elevation of sphere C.",
-    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
     { id: "dcg-2023-ol-a3a-r1", kind: "point", verbatim: "Project centre from plan", marks: 3 },
     { id: "dcg-2023-ol-a3a-r2", kind: "point", verbatim: "Locate centre height in elevation", marks: 3 },
     { id: "dcg-2023-ol-a3a-r3", kind: "point", verbatim: "Draw sphere C", marks: 2 },
+    { id: "dcg-2023-ol-a3a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secA-q3-art",
@@ -3461,10 +3507,11 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Section A Q4(a)",
     stem: "The image below shows a caution sign. The drawing on the right shows the plan, partially completed elevation and partially completed end view of a similar sign.",
     questionText: "Complete the elevation.",
-    tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
     { id: "dcg-2023-ol-a4a-r1", kind: "point", verbatim: "Projection from plan to elevation", marks: 2 },
     { id: "dcg-2023-ol-a4a-r2", kind: "point", verbatim: "Complete elevation", marks: 3 },
+    { id: "dcg-2023-ol-a4a-r3", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secA-q4-art",
@@ -3510,11 +3557,12 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2023 OL Section B Q1(a)",
     stem: "The image on the right shows an outdoor play area in the shape of a boat. Fig. B-1 below shows an isometric view of a similar boat.",
     questionText: "Draw an elevation of the boat looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
+    tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
     { id: "dcg-2023-ol-b1a-r1", kind: "point", verbatim: "Draw base", marks: 13 },
     { id: "dcg-2023-ol-b1a-r2", kind: "point", verbatim: "Draw top", marks: 10 },
     { id: "dcg-2023-ol-b1a-r3", kind: "point", verbatim: "Complete elevation", marks: 1 },
+    { id: "dcg-2023-ol-b1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q1-art",
@@ -3583,12 +3631,13 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2023 OL Section B Q2(a)",
     stem: "The image on the right shows a modern A-frame house. The house consists of an equilateral triangular prism which is intersected by a second triangular prism. Fig. B-2 below shows the elevation and incomplete plan of a similar house. The outline profile of the second intersecting prism is also shown on the right below. A 3D graphic is also given.",
     questionText: "Draw the given elevation and incomplete plan of the house.",
-    tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
+    tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
     { id: "dcg-2023-ol-b2a-r1", kind: "point", verbatim: "Draw the outline elevation as given", marks: 7 },
     { id: "dcg-2023-ol-b2a-r2", kind: "point", verbatim: "Complete the elevation", marks: 3 },
     { id: "dcg-2023-ol-b2a-r3", kind: "point", verbatim: "Draw the outline plan as given", marks: 10 },
     { id: "dcg-2023-ol-b2a-r4", kind: "point", verbatim: "Complete the plan as given", marks: 4 },
+    { id: "dcg-2023-ol-b2a-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q2-art",
@@ -3655,10 +3704,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2023 OL Section B Q3(a)",
     stem: "The image on the right shows a wooden arbor bench. Fig. B-3 below shows an incomplete isometric projection of a similar arbor bench. A 3D graphic is also given. The elevation and plan of the arbor bench are shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
     { id: "dcg-2023-ol-b3a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 4 },
     { id: "dcg-2023-ol-b3a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 3 },
+    { id: "dcg-2023-ol-b3a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q3-art",
@@ -3756,11 +3806,12 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q1(a)",
     stem: "The image on the right shows a section of roadway which required cuttings to accommodate it. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(35)"}, totalMarks: 35,
+    tariffModel: {"kind":"fixed","notation":"(40)"}, totalMarks: 40,
     rows: [
     { id: "dcg-2023-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 13 },
     { id: "dcg-2023-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 10 },
     { id: "dcg-2023-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 12 },
+    { id: "dcg-2023-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q1-art",
@@ -3804,13 +3855,14 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q2(a)",
     stem: "The image on the right shows a seating area on a beach which has a canopy based on a hyperbolic paraboloid. Fig. C-2 below shows the projections of a similar hyperbolic paraboloid surface.",
     questionText: "Draw the plan and elevation of the given hyperbolic paraboloid surface.",
-    tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
+    tariffModel: {"kind":"fixed","notation":"(38)"}, totalMarks: 38,
     rows: [
     { id: "dcg-2023-ol-c2a-r1", kind: "point", verbatim: "Outline of surface ABCD in plan", marks: 8 },
     { id: "dcg-2023-ol-c2a-r2", kind: "point", verbatim: "Elements in plan (incl. division)", marks: 7 },
     { id: "dcg-2023-ol-c2a-r3", kind: "point", verbatim: "Outline of surface ABCD in elevation", marks: 8 },
     { id: "dcg-2023-ol-c2a-r4", kind: "point", verbatim: "Elements in elevation (incl. division or proj.)", marks: 7 },
     { id: "dcg-2023-ol-c2a-r5", kind: "point", verbatim: "Completion of elevation (curve and hidden detail)", marks: 3 },
+    { id: "dcg-2023-ol-c2a-r6", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q2-art",
@@ -3855,10 +3907,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q3(a)",
     stem: "The image on the right shows a storage box for BIC biros. The projections of a similar storage box are shown in Fig. C-3 below. A 3D graphic is also given.",
     questionText: "Draw the given elevation and end view of the storage box.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
     { id: "dcg-2023-ol-c3a-r1", kind: "point", verbatim: "Draw the elevation", marks: 12 },
     { id: "dcg-2023-ol-c3a-r2", kind: "point", verbatim: "Draw end view", marks: 14 },
+    { id: "dcg-2023-ol-c3a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q3-art",
@@ -3927,14 +3980,10 @@ export const CARDS: SecCard[] = [
     id: "dcg-2023-ol-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2023 OL Section C Q4(a)",
     questionText: "(i) Draw the given elevation and plan of the tower. (ii) Complete the projections of the helix which moves in a clockwise direction from point A on the base to point B in one revolution.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
-    { id: "dcg-2023-ol-c4a-r1", kind: "point", verbatim: "Set up given elevation and plan (incl. points A & B)", marks: 10 },
-    { id: "dcg-2023-ol-c4a-r2", kind: "point", verbatim: "Division of circle in plan", marks: 3 },
-    { id: "dcg-2023-ol-c4a-r3", kind: "point", verbatim: "Projections from plan", marks: 3 },
-    { id: "dcg-2023-ol-c4a-r4", kind: "point", verbatim: "Draw horizontal divisions in elevation", marks: 3 },
-    { id: "dcg-2023-ol-c4a-r5", kind: "point", verbatim: "Locate points on helix", marks: 3 },
-    { id: "dcg-2023-ol-c4a-r6", kind: "point", verbatim: "Draw helix in elevation", marks: 4 },
+    { id: "dcg-2023-ol-c4a-r1", kind: "criterion", verbatim: "Helix", marks: 26, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,26], parts: [{"id":"step-1","verbatim":"Set up given elevation and plan (incl. points A & B)","marks":10,"permittedMarks":[0,10]},{"id":"step-2","verbatim":"Division of circle in plan","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Projections from plan","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Draw horizontal divisions in elevation","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Locate points on helix","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw helix in elevation","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2023-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q4-art",
@@ -3975,10 +4024,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2023 OL Section C Q5 — Assembly",
     stem: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Base Holder Lamp Top",
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
-    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
     { id: "dcg-2023-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 10 },
     { id: "dcg-2023-ol-c5-1-r2", kind: "point", verbatim: "Use of Section view", marks: 4 },
+    { id: "dcg-2023-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q5-art",
@@ -4111,12 +4161,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Section A Q1(a)",
     stem: "The image below shows the Gateway Arch monument located in the United States. The monument is in the shape of a parabola. The drawing on the right shows a portion of a similar parabola, which is inscribed in the rectangle ABCD. V is the vertex of the parabola.",
     questionText: "Locate the remaining points on the right hand side of the parabola.",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
     { id: "dcg-2024-ol-a1a-r1", kind: "point", verbatim: "Complete division of line CD", marks: 4 },
     { id: "dcg-2024-ol-a1a-r2", kind: "point", verbatim: "Complete division of line CV", marks: 3 },
     { id: "dcg-2024-ol-a1a-r3", kind: "point", verbatim: "Construction lines (2 sets)", marks: 2 },
     { id: "dcg-2024-ol-a1a-r4", kind: "point", verbatim: "Identify remaining points on RHS", marks: 2 },
+    { id: "dcg-2024-ol-a1a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secA-q1-art",
@@ -4180,12 +4231,13 @@ export const CARDS: SecCard[] = [
     id: "dcg-2024-ol-a2", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2024 OL Section A Q2",
     questionText: "The image below shows a USB flash drive. The drawing shows the plan and partially completed perspective view of a similar flash drive. Complete the perspective drawing of the flash drive.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
     { id: "dcg-2024-ol-a2-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points", marks: 4 },
     { id: "dcg-2024-ol-a2-r2", kind: "point", verbatim: "Complete front RHS", marks: 6 },
     { id: "dcg-2024-ol-a2-r3", kind: "point", verbatim: "Complete the LHS", marks: 4 },
     { id: "dcg-2024-ol-a2-r4", kind: "point", verbatim: "Complete the top surface", marks: 4 },
+    { id: "dcg-2024-ol-a2-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secA-q2-art",
@@ -4205,11 +4257,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Section A Q3(a)",
     stem: "The image below shows a set of shakers. One shaker is based on a rectangular based pyramid which has been cut at the top. The drawing on the right shows the completed elevation, partially completed plan and partially completed end view of a similar pyramid.",
     questionText: "Complete the plan to show the cut surface.",
-    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
     { id: "dcg-2024-ol-a3a-r1", kind: "point", verbatim: "Projections from elevation", marks: 3 },
     { id: "dcg-2024-ol-a3a-r2", kind: "point", verbatim: "Locate points in plan", marks: 3 },
     { id: "dcg-2024-ol-a3a-r3", kind: "point", verbatim: "Draw surface", marks: 6 },
+    { id: "dcg-2024-ol-a3a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secA-q3-art",
@@ -4252,12 +4305,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Section A Q4(a)",
     stem: "The image below shows the Google Maps icon, which includes a location pin. The location pin is symmetrical. The drawing on the right shows a partially completed drawing of the pin.",
     questionText: "Complete the left hand side of the pin.",
-    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
     { id: "dcg-2024-ol-a4a-r1", kind: "point", verbatim: "Draw R30 arc", marks: 5 },
     { id: "dcg-2024-ol-a4a-r2", kind: "point", verbatim: "Draw R15 arc", marks: 5 },
     { id: "dcg-2024-ol-a4a-r3", kind: "point", verbatim: "Locate centre of R70 arc", marks: 4 },
     { id: "dcg-2024-ol-a4a-r4", kind: "point", verbatim: "Draw R70 arc", marks: 2 },
+    { id: "dcg-2024-ol-a4a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secA-q4-art",
@@ -4299,10 +4353,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2024 OL Section B Q1(a)",
     stem: "The image on the right shows an indoor electronic garden. Fig. B-1 below shows an isometric view of a similar indoor garden. A 3D graphic is also given.",
     questionText: "Draw an elevation of the indoor garden looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
     rows: [
     { id: "dcg-2024-ol-b1a-r1", kind: "point", verbatim: "Draw base", marks: 10 },
     { id: "dcg-2024-ol-b1a-r2", kind: "point", verbatim: "Draw top", marks: 10 },
+    { id: "dcg-2024-ol-b1a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q1-art",
@@ -4371,10 +4426,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2024 OL Section B Q2(a)",
     stem: "The image on the right shows a bridge on the Waterford Greenway. Fig. B-2 below shows an incomplete isometric projection of a portion of a similar bridge. A 3D graphic is also given. The elevation and plan of the bridge are shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
     { id: "dcg-2024-ol-b2a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 3 },
     { id: "dcg-2024-ol-b2a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 3 },
+    { id: "dcg-2024-ol-b2a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q2-art",
@@ -4469,11 +4525,12 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2024 OL Section B Q3(a)",
     stem: "The image on the right shows the Céide Fields visitor center in Co. Mayo. The building is based on a square based pyramid which is set into the landscape. Fig. B-3 below shows the elevation and incomplete plan of a similar building. The outline profile of the entrance is shown on the left below. A 3D graphic is also given.",
     questionText: "Draw the given elevation and incomplete plan of the building.",
-    tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
+    tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
     { id: "dcg-2024-ol-b3a-r1", kind: "point", verbatim: "Draw the outline plan as given", marks: 9 },
     { id: "dcg-2024-ol-b3a-r2", kind: "point", verbatim: "Projections from plan", marks: 3 },
     { id: "dcg-2024-ol-b3a-r3", kind: "point", verbatim: "Draw the elevation as given", marks: 12 },
+    { id: "dcg-2024-ol-b3a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secB-q3-art",
@@ -4545,11 +4602,12 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2024 OL Section C Q1(a)",
     stem: "The image on the right shows an open mine in operation. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(37)"}, totalMarks: 37,
+    tariffModel: {"kind":"fixed","notation":"(42)"}, totalMarks: 42,
     rows: [
     { id: "dcg-2024-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 13 },
     { id: "dcg-2024-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 11 },
     { id: "dcg-2024-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 13 },
+    { id: "dcg-2024-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q1-art",
@@ -4617,12 +4675,13 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2024 OL Section C Q2(a)",
     stem: "The image on the right shows a 3D printed pencil holder. The shape of the pencil holder is based on a hyperboloid of revolution which is formed by straight line elements. Fig. C-2 below shows the plan and elevation of a similar hyperboloid of revolution constructed using 12 equally spaced elements.",
     questionText: "Draw the two given circles in plan and locate 12 equally spaced points on the circumference of the inner circle as shown. Draw the 12 elements tangential to the inner circle at these points.",
-    tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
+    tariffModel: {"kind":"fixed","notation":"(32)"}, totalMarks: 32,
     rows: [
     { id: "dcg-2024-ol-c2a-r1", kind: "point", verbatim: "Draw outer circle", marks: 8 },
     { id: "dcg-2024-ol-c2a-r2", kind: "point", verbatim: "Draw inner circle", marks: 8 },
     { id: "dcg-2024-ol-c2a-r3", kind: "point", verbatim: "Division of inner circle", marks: 5 },
     { id: "dcg-2024-ol-c2a-r4", kind: "point", verbatim: "Twelve elements", marks: 6 },
+    { id: "dcg-2024-ol-c2a-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q2-art",
@@ -4689,11 +4748,12 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2024 OL Section C Q3(a)",
     stem: "The image on the right shows a car tissue box. The projections of a similar tissue box are shown in Fig. C-3 below.",
     questionText: "Draw the given elevation and plan of the tissue box.",
-    tariffModel: {"kind":"fixed","notation":"(28)"}, totalMarks: 28,
+    tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
     rows: [
     { id: "dcg-2024-ol-c3a-r1", kind: "point", verbatim: "Draw the outline of the plan", marks: 10 },
     { id: "dcg-2024-ol-c3a-r2", kind: "point", verbatim: "Draw the opening in plan", marks: 6 },
     { id: "dcg-2024-ol-c3a-r3", kind: "point", verbatim: "Draw the elevation", marks: 12 },
+    { id: "dcg-2024-ol-c3a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q3-art",
@@ -4761,14 +4821,10 @@ export const CARDS: SecCard[] = [
     id: "dcg-2024-ol-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2024 OL Section C Q4(a)",
     questionText: "(i) Draw the given diagram. (ii) Plot the locus of point B for this movement.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
-    { id: "dcg-2024-ol-c4a-r1", kind: "point", verbatim: "Set up line diagram (O, A, B & C)", marks: 10 },
-    { id: "dcg-2024-ol-c4a-r2", kind: "point", verbatim: "Draw circle about O", marks: 3 },
-    { id: "dcg-2024-ol-c4a-r3", kind: "point", verbatim: "Division of circle", marks: 3 },
-    { id: "dcg-2024-ol-c4a-r4", kind: "point", verbatim: "Arm AC in rotated positions", marks: 3 },
-    { id: "dcg-2024-ol-c4a-r5", kind: "point", verbatim: "Points on locus", marks: 3 },
-    { id: "dcg-2024-ol-c4a-r6", kind: "point", verbatim: "Draw locus", marks: 4 },
+    { id: "dcg-2024-ol-c4a-r1", kind: "criterion", verbatim: "Link mechanism", marks: 26, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,26], parts: [{"id":"step-1","verbatim":"Set up line diagram (O, A, B & C)","marks":10,"permittedMarks":[0,10]},{"id":"step-2","verbatim":"Draw circle about O","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Division of circle","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Arm AC in rotated positions","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Points on locus","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw locus","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2024-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q4-art",
@@ -4809,10 +4865,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2024 OL Section C Q5 — Assembly",
     stem: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.) Part Name Qty. Top Lamp Pole Solar panel",
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
-    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
     { id: "dcg-2024-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 10 },
     { id: "dcg-2024-ol-c5-1-r2", kind: "point", verbatim: "Draw Section", marks: 4 },
+    { id: "dcg-2024-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q5-art",
@@ -4944,12 +5001,13 @@ export const CARDS: SecCard[] = [
     id: "dcg-2025-ol-a1", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2025 OL Section A Q1",
     questionText: "The graphic below shows a television unit. The drawing shows the plan and partially completed perspective view of a similar television unit. Complete the perspective drawing of the television unit.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
     { id: "dcg-2025-ol-a1-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points", marks: 4 },
     { id: "dcg-2025-ol-a1-r2", kind: "point", verbatim: "Complete front RHS", marks: 5 },
     { id: "dcg-2025-ol-a1-r3", kind: "point", verbatim: "Complete the LHS", marks: 6 },
     { id: "dcg-2025-ol-a1-r4", kind: "point", verbatim: "Complete the top surface", marks: 3 },
+    { id: "dcg-2025-ol-a1-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secA-q1-art",
@@ -4969,11 +5027,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Section A Q2(a)",
     stem: "The image below shows an elliptical outdoor seat. The plan of the seat consists of an inner and outer ellipse. The drawing on the right shows the inner ellipse and the major and minor circles of the outer ellipse. A portion of the outer ellipse is also shown.",
     questionText: "Locate the remaining points on the outer ellipse.",
-    tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"(12)"}, totalMarks: 12,
     rows: [
     { id: "dcg-2025-ol-a2a-r1", kind: "point", verbatim: "Appropriate use of given major and minor axis", marks: 1 },
     { id: "dcg-2025-ol-a2a-r2", kind: "point", verbatim: "Required construction for additional points", marks: 3 },
     { id: "dcg-2025-ol-a2a-r3", kind: "point", verbatim: "Locate additional points", marks: 6 },
+    { id: "dcg-2025-ol-a2a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secA-q2-art",
@@ -5036,11 +5095,12 @@ export const CARDS: SecCard[] = [
     id: "dcg-2025-ol-a3-1", topicId: "design-and-communication-graphics-0-13", conceptId: "dcg-0-13",
     section: "A", questionRef: "2025 OL Section A Q3 — Rotation of door",
     questionText: "The image below shows a round baler. The baler releases bales by opening and closing the rear door. The drawing below shows the elevation of a similar baler with the rear door in the fully open position. The rear door rotates downward, about point P, until point A reaches A1. Complete the elevation to show the door in the fully closed position.",
-    tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
     rows: [
     { id: "dcg-2025-ol-a3-1-r1", kind: "point", verbatim: "Rotation of points", marks: 4 },
     { id: "dcg-2025-ol-a3-1-r2", kind: "point", verbatim: "Locate points", marks: 6 },
     { id: "dcg-2025-ol-a3-1-r3", kind: "point", verbatim: "Draw door", marks: 6 },
+    { id: "dcg-2025-ol-a3-1-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secA-q3-art",
@@ -5081,9 +5141,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Section A Q4(a)",
     stem: "The image below shows the Nintendo Switch logo. The outline of the logo is symmetrical. Shown below on the right is a partially completed drawing of the logo.",
     questionText: "Draw a circle of radius 10 mm at point P.",
-    tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
+    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
     { id: "dcg-2025-ol-a4a-r1", kind: "point", verbatim: "Draw R10 mm circle", marks: 4 },
+    { id: "dcg-2025-ol-a4a-r2", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secA-q4-art",
@@ -5128,11 +5189,12 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Section B Q1(a)",
     stem: "The image on the right shows a modern house. The design of the house consists of three intersecting structures. Fig. B-1 below shows the elevation and incomplete plan of a similar house. The outline profile of the central structure is shown on the right below. A 3D graphic is also given.",
     questionText: "Draw the given elevation and incomplete plan of the house.",
-    tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
+    tariffModel: {"kind":"fixed","notation":"(32)"}, totalMarks: 32,
     rows: [
     { id: "dcg-2025-ol-b1a-r1", kind: "point", verbatim: "Draw the outline plan as given", marks: 14 },
     { id: "dcg-2025-ol-b1a-r2", kind: "point", verbatim: "Projections from plan", marks: 3 },
     { id: "dcg-2025-ol-b1a-r3", kind: "point", verbatim: "Draw the elevation as given", marks: 10 },
+    { id: "dcg-2025-ol-b1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q1-art",
@@ -5204,10 +5266,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Section B Q2(a)",
     stem: "The image on the right shows a sports dugout. Fig. B-2 below shows an incomplete isometric projection of a similar dugout. A 3D graphic is also given. The elevation and plan of the dugout are shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
     { id: "dcg-2025-ol-b2a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 3 },
     { id: "dcg-2025-ol-b2a-r2", kind: "point", verbatim: "Draw X, Y, and Z axes", marks: 3 },
+    { id: "dcg-2025-ol-b2a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q2-art",
@@ -5303,10 +5366,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Section B Q3(a)",
     stem: "The image on the right shows a popular arcade game. Fig. B-3 below shows an isometric view of a similar arcade game. A 3D graphic is also given.",
     questionText: "Draw an elevation of the arcade game looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
     { id: "dcg-2025-ol-b3a-r1", kind: "point", verbatim: "Draw base", marks: 12 },
     { id: "dcg-2025-ol-b3a-r2", kind: "point", verbatim: "Draw top", marks: 6 },
+    { id: "dcg-2025-ol-b3a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secB-q3-art",
@@ -5375,11 +5439,12 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C Q1(a)",
     stem: "The image on the right shows a country road which required cuttings to accommodate it. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(35)"}, totalMarks: 35,
+    tariffModel: {"kind":"fixed","notation":"(40)"}, totalMarks: 40,
     rows: [
     { id: "dcg-2025-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 13 },
     { id: "dcg-2025-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 10 },
     { id: "dcg-2025-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 12 },
+    { id: "dcg-2025-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q1-art",
@@ -5423,13 +5488,14 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C Q2(a), (b)",
     stem: "The image on the right shows pieces from the HyperTiles game. The game is made up of various forms of hyperbolic paraboloid pieces. Fig. C-2 below shows the plan and elevation of a similar hyperbolic paraboloid piece which is square in plan.",
     questionText: "Draw the given plan of the hyperbolic paraboloid piece. Project an elevation from the plan.",
-    tariffModel: {"kind":"fixed","notation":"(37)"}, totalMarks: 37,
+    tariffModel: {"kind":"fixed","notation":"(42)"}, totalMarks: 42,
     rows: [
     { id: "dcg-2025-ol-c2-r1", kind: "point", verbatim: "Outline of surface ABCD in plan", marks: 10 },
     { id: "dcg-2025-ol-c2-r2", kind: "point", verbatim: "Elements in plan (incl. division)", marks: 6 },
     { id: "dcg-2025-ol-c2-r3", kind: "point", verbatim: "Outline of surface ABCD in elevation", marks: 10 },
     { id: "dcg-2025-ol-c2-r4", kind: "point", verbatim: "Elements in elevation (incl. division or proj.)", marks: 6 },
     { id: "dcg-2025-ol-c2-r5", kind: "point", verbatim: "Completion of elevation (curve and hidden detail)", marks: 5 },
+    { id: "dcg-2025-ol-c2-r6", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q2-art",
@@ -5474,11 +5540,12 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C Q3(a)",
     stem: "The image on the right shows an electric car charging station. A 3D graphic of a similar charging station is also shown. The projections of a similar charging station are shown in Fig. C-3 below.",
     questionText: "Draw the given elevation and plan of the charging station.",
-    tariffModel: {"kind":"fixed","notation":"(30)"}, totalMarks: 30,
+    tariffModel: {"kind":"fixed","notation":"(35)"}, totalMarks: 35,
     rows: [
     { id: "dcg-2025-ol-c3a-r1", kind: "point", verbatim: "Draw the outline of the plan", marks: 6 },
     { id: "dcg-2025-ol-c3a-r2", kind: "point", verbatim: "Draw the outline elevation", marks: 12 },
     { id: "dcg-2025-ol-c3a-r3", kind: "point", verbatim: "Draw the inner detail in elevation", marks: 12 },
+    { id: "dcg-2025-ol-c3a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q3-art",
@@ -5546,14 +5613,10 @@ export const CARDS: SecCard[] = [
     id: "dcg-2025-ol-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2025 OL Section C Q4(a)",
     questionText: "(i) Draw the given elevation and plan. (ii) Complete the projections of the helix which moves in a clockwise direction from point A on the base to point B in one revolution.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
-    { id: "dcg-2025-ol-c4a-r1", kind: "point", verbatim: "Set up given elevation and plan (incl. points A & B)", marks: 10 },
-    { id: "dcg-2025-ol-c4a-r2", kind: "point", verbatim: "Division of circle in plan", marks: 3 },
-    { id: "dcg-2025-ol-c4a-r3", kind: "point", verbatim: "Projections from plan", marks: 3 },
-    { id: "dcg-2025-ol-c4a-r4", kind: "point", verbatim: "Draw horizontal divisions in elevation", marks: 3 },
-    { id: "dcg-2025-ol-c4a-r5", kind: "point", verbatim: "Locate points on helix", marks: 3 },
-    { id: "dcg-2025-ol-c4a-r6", kind: "point", verbatim: "Draw helix in elevation", marks: 4 },
+    { id: "dcg-2025-ol-c4a-r1", kind: "criterion", verbatim: "Helix", marks: 26, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,26], parts: [{"id":"step-1","verbatim":"Set up given elevation and plan (incl. points A & B)","marks":10,"permittedMarks":[0,10]},{"id":"step-2","verbatim":"Division of circle in plan","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Projections from plan","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Draw horizontal divisions in elevation","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Locate points on helix","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw helix in elevation","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2025-ol-c4a-r2", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q4-art",
@@ -5594,10 +5657,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C Q5 — Assembly",
     stem: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Camera Stem Base SD Card",
     questionText: "The image on the right shows a wireless camera. Details of a similar wireless camera are shown in Fig. C-5 below. A parts list and a 3D graphic of the camera are also shown. Draw the sectional end view A-A of the assembled camera. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
-    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
     { id: "dcg-2025-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 10 },
     { id: "dcg-2025-ol-c5-1-r2", kind: "point", verbatim: "Draw Section", marks: 4 },
+    { id: "dcg-2025-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q5-art",
@@ -5731,12 +5795,13 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2026 OL Section A Q1(a)",
     stem: "The image below shows a building from Montserrat in Spain. The building is in the shape of a parabola. The drawing on the right shows a portion of a similar parabola, which is inscribed in rectangle ABCD. V is the vertex of the parabola.",
     questionText: "Locate the remaining points on the right hand side of the parabola.",
-    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
+    tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
     { id: "dcg-2026-ol-a1a-r1", kind: "point", verbatim: "Complete division of line CD", marks: 4 },
     { id: "dcg-2026-ol-a1a-r2", kind: "point", verbatim: "Complete division of line CV", marks: 3 },
     { id: "dcg-2026-ol-a1a-r3", kind: "point", verbatim: "Construction lines (2 sets)", marks: 2 },
     { id: "dcg-2026-ol-a1a-r4", kind: "point", verbatim: "Identify remaining points on RHS", marks: 2 },
+    { id: "dcg-2026-ol-a1a-r5", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secA-q1-art",
@@ -5801,9 +5866,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2026 OL Section A Q2(a)",
     stem: "The image below shows a disco lights projector. The elevation of the projector is symmetrical. Shown below on the right is a partially completed elevation of the projector.",
     questionText: "Draw a circle radius 18 mm at point P.",
-    tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"(5)"}, totalMarks: 5,
     rows: [
     { id: "dcg-2026-ol-a2a-r1", kind: "point", verbatim: "Draw R18 circle", marks: 3 },
+    { id: "dcg-2026-ol-a2a-r2", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secA-q2-art",
@@ -5848,11 +5914,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2026 OL Section A Q3(a)",
     stem: "The image below shows an award winning building in Clontarf, Dublin. The drawing on the right below shows an auxiliary elevation, partially completed plan, and partially completed elevation of a similar building.",
     questionText: "Complete the plan.",
-    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
     { id: "dcg-2026-ol-a3a-r1", kind: "point", verbatim: "Projection from auxiliary", marks: 2 },
     { id: "dcg-2026-ol-a3a-r2", kind: "point", verbatim: "Locate points in plan", marks: 2 },
     { id: "dcg-2026-ol-a3a-r3", kind: "point", verbatim: "Complete the plan", marks: 2 },
+    { id: "dcg-2026-ol-a3a-r4", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secA-q3-art",
@@ -5895,13 +5962,14 @@ export const CARDS: SecCard[] = [
     id: "dcg-2026-ol-a4", topicId: "design-and-communication-graphics-0-3", conceptId: "dcg-0-3",
     section: "A", questionRef: "2026 OL Section A Q4",
     questionText: "The image below shows a sofa. The drawing on the right shows the plan and a partially completed perspective view of a similar sofa. Complete the perspective view.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
     { id: "dcg-2026-ol-a4-r1", kind: "point", verbatim: "Radiate lines to correct vanishing points", marks: 3 },
     { id: "dcg-2026-ol-a4-r2", kind: "point", verbatim: "Complete the base surface", marks: 5 },
     { id: "dcg-2026-ol-a4-r3", kind: "point", verbatim: "Complete the seat surface", marks: 3 },
     { id: "dcg-2026-ol-a4-r4", kind: "point", verbatim: "Complete the back surface", marks: 4 },
     { id: "dcg-2026-ol-a4-r5", kind: "point", verbatim: "Complete the top surface", marks: 3 },
+    { id: "dcg-2026-ol-a4-r6", kind: "point", verbatim: "Presentation", marks: 2, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secA-q4-art",
@@ -5921,10 +5989,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2026 OL Section B Q1(a)",
     stem: "The image on the right shows a card terminal machine. Fig. B-1 below shows an isometric view of a similar card machine. A 3D graphic is also given.",
     questionText: "Draw an elevation of the card machine looking in the direction of the arrow.",
-    tariffModel: {"kind":"fixed","notation":"(18)"}, totalMarks: 18,
+    tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
     { id: "dcg-2026-ol-b1a-r1", kind: "point", verbatim: "Draw outline", marks: 14 },
     { id: "dcg-2026-ol-b1a-r2", kind: "point", verbatim: "Draw inner details", marks: 4 },
+    { id: "dcg-2026-ol-b1a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q1-art",
@@ -5993,10 +6062,11 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2026 OL Section B Q2(a)",
     stem: "The image on the right shows a greenhouse. Fig. B-2 below shows an incomplete isometric projection of a similar greenhouse. A 3D graphic is also given. The elevation and plan of the greenhouse are shown in their required positions.",
     questionText: "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
-    tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
     { id: "dcg-2026-ol-b2a-r1", kind: "point", verbatim: "Draw equilateral triangle", marks: 3 },
     { id: "dcg-2026-ol-b2a-r2", kind: "point", verbatim: "Draw X, Y and Z axes", marks: 3 },
+    { id: "dcg-2026-ol-b2a-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q2-art",
@@ -6092,11 +6162,12 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2026 OL Section B Q3(a)",
     stem: "The image on the right shows a skate park in Castlebar, Co. Mayo. The park consists of a number of skating ramps. Fig. B-3 below shows the elevation and incomplete plan of a similar skating ramp. A 3D graphic is also given.",
     questionText: "Draw the given elevation and incomplete plan of the ramp.",
-    tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
+    tariffModel: {"kind":"fixed","notation":"(28)"}, totalMarks: 28,
     rows: [
     { id: "dcg-2026-ol-b3a-r1", kind: "point", verbatim: "Draw the outline plan as given", marks: 10 },
     { id: "dcg-2026-ol-b3a-r2", kind: "point", verbatim: "Projections from plan", marks: 3 },
     { id: "dcg-2026-ol-b3a-r3", kind: "point", verbatim: "Draw the elevation as given", marks: 10 },
+    { id: "dcg-2026-ol-b3a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secB-q3-art",
@@ -6167,11 +6238,12 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2026 OL Section C Q1(a)",
     stem: "The image on the right shows a mining process. The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
     questionText: "On the map supplied, draw a vertical section (profile) on the line AB.",
-    tariffModel: {"kind":"fixed","notation":"(37)"}, totalMarks: 37,
+    tariffModel: {"kind":"fixed","notation":"(42)"}, totalMarks: 42,
     rows: [
     { id: "dcg-2026-ol-c1a-r1", kind: "point", verbatim: "Measure heights and draw horizontal lines", marks: 13 },
     { id: "dcg-2026-ol-c1a-r2", kind: "point", verbatim: "Projections from intersections between line AB and contours", marks: 11 },
     { id: "dcg-2026-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 13 },
+    { id: "dcg-2026-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q1-art",
@@ -6239,13 +6311,14 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2026 OL Section C Q2(a)",
     stem: "The image on the right shows a kitchen table. The table is based on a hyperboloid of revolution which is formed by straight line elements. Fig. C-2 below shows the plan and elevation of a similar table. The hyperboloid of revolution is constructed using 12 equally spaced elements.",
     questionText: "Draw the given plan. Locate 12 equally spaced points on the circumference of the inner circle and draw the 12 elements tangential to the circle at these points as shown.",
-    tariffModel: {"kind":"fixed","notation":"(27)"}, totalMarks: 27,
+    tariffModel: {"kind":"fixed","notation":"(32)"}, totalMarks: 32,
     rows: [
     { id: "dcg-2026-ol-c2a-r1", kind: "point", verbatim: "Draw the table top", marks: 4 },
     { id: "dcg-2026-ol-c2a-r2", kind: "point", verbatim: "Draw outer circle", marks: 6 },
     { id: "dcg-2026-ol-c2a-r3", kind: "point", verbatim: "Draw inner circle", marks: 6 },
     { id: "dcg-2026-ol-c2a-r4", kind: "point", verbatim: "Division of inner circle", marks: 5 },
     { id: "dcg-2026-ol-c2a-r5", kind: "point", verbatim: "Twelve elements", marks: 6 },
+    { id: "dcg-2026-ol-c2a-r6", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q2-art",
@@ -6313,12 +6386,13 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2026 OL Section C Q3(a)",
     stem: "The image on the right shows a pencil case. The projections of a similar pencil case are shown in Fig. C-3 below. A 3D graphic is also given.",
     questionText: "Draw the given elevation and end view of the pencil case.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
     { id: "dcg-2026-ol-c3a-r1", kind: "point", verbatim: "Draw the elevation", marks: 8 },
     { id: "dcg-2026-ol-c3a-r2", kind: "point", verbatim: "Draw the edges of the end view", marks: 6 },
     { id: "dcg-2026-ol-c3a-r3", kind: "point", verbatim: "Establish centre and draw arc", marks: 5 },
     { id: "dcg-2026-ol-c3a-r4", kind: "point", verbatim: "Complete the end view", marks: 7 },
+    { id: "dcg-2026-ol-c3a-r5", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q3-art",
@@ -6386,13 +6460,14 @@ export const CARDS: SecCard[] = [
     id: "dcg-2026-ol-c4a", topicId: "design-and-communication-graphics-2-0", conceptId: "dcg-2-0",
     section: "C", questionRef: "2026 OL Section C Q4(a)",
     questionText: "(i) Draw the given diagram. (ii) The circle C rolls clockwise along the line AB until the point P reaches the line AB. Draw the locus of point P for this movement.",
-    tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
+    tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
     { id: "dcg-2026-ol-c4a-r1", kind: "point", verbatim: "Set up given diagram (A, B, C & P)", marks: 10 },
     { id: "dcg-2026-ol-c4a-r2", kind: "point", verbatim: "Division of circle", marks: 4 },
     { id: "dcg-2026-ol-c4a-r3", kind: "point", verbatim: "Correct widths on line AB", marks: 4 },
     { id: "dcg-2026-ol-c4a-r4", kind: "point", verbatim: "Points on locus", marks: 4 },
     { id: "dcg-2026-ol-c4a-r5", kind: "point", verbatim: "Draw locus", marks: 4 },
+    { id: "dcg-2026-ol-c4a-r6", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q4-art",
@@ -6433,10 +6508,11 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2026 OL Section C Q5 — Assembly",
     stem: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated. Part Name Qty. Body Lid Handle Divider",
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
-    tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
+    tariffModel: {"kind":"fixed","notation":"(19)"}, totalMarks: 19,
     rows: [
     { id: "dcg-2026-ol-c5-1-r1", kind: "point", verbatim: "Relative positioning of components", marks: 10 },
     { id: "dcg-2026-ol-c5-1-r2", kind: "point", verbatim: "Draw Section", marks: 4 },
+    { id: "dcg-2026-ol-c5-1-r3", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q5-art",

@@ -70,6 +70,30 @@ describe('DCG step scoring', () => {
     expect(wrong).toEqual([]);
   });
 
+  it("adds each question's cards up to the tariff its paper prints", () => {
+    // The covers: "All questions in Section A carry 20 marks"; Sections B and C
+    // 45 a question to 2020, 60 from 2021. Ordinary Presentation is priced on
+    // the whole question, so it is a row on the question's first card.
+    const tariff = (year: number, section: string) => (section === 'A' ? 20 : year <= 2020 ? 45 : 60);
+    const totals = new Map<string, { year: number; section: string; sum: number; cards: SecCard[] }>();
+    for (const card of cards) {
+      const [, year, level, section, q] = card.questionRef.match(/^(\d{4}) (HL|OL) Section ([ABC]) Q(\d)/)!;
+      const key = `${year} ${level} ${section}-${q}`;
+      const t = totals.get(key) ?? { year: Number(year), section, sum: 0, cards: [] };
+      t.sum += card.totalMarks;
+      t.cards.push(card);
+      totals.set(key, t);
+    }
+    const wrong: string[] = [];
+    for (const [key, t] of totals) {
+      if (t.sum !== tariff(t.year, t.section)) wrong.push(`${key}: cards add to ${t.sum}`);
+      const presentation = t.cards.flatMap((c, i) => rowsOf(c).filter(r => r.verbatim === 'Presentation').map(() => i));
+      const want = key.includes(' OL ') ? [0] : [];
+      if (JSON.stringify(presentation) !== JSON.stringify(want)) wrong.push(`${key}: Presentation on cards ${presentation}`);
+    }
+    expect(wrong).toEqual([]);
+  });
+
   it('scores every step alone at its own price, and the whole card at its total', () => {
     const wrong: string[] = [];
     for (const card of cards) {

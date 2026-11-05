@@ -360,7 +360,13 @@ def step_ladder(step):
     return sub_ladder(step.text, step.marks) or [0, step.marks]
 
 
-def step_rows(card_id, title, steps):
+PRESENTATION = re.compile(r'^Presentation\b', re.I)
+PRESENTATION_NOTE = ('The scheme prices Presentation on the whole question, '
+                     'not on one part: claim it once, here, for the finished '
+                     'drawing.')
+
+
+def step_rows(card_id, title, steps, extra=()):
     """The scheme's priced steps as claim rows, each at its own printed marks.
 
     A DCG drawing is priced as a run of construction steps, every one of them
@@ -377,10 +383,21 @@ def step_rows(card_id, title, steps):
     Construction Studies prices its named components in, and the same claim,
     since a part scores what is placed on it and nothing else.
     """
-    if len(steps) <= MAX_ROWS:
-        return [step_row(f'{card_id}-r{i}', s) for i, s in enumerate(steps, 1)]
+    tail = [{'id': '', 'kind': 'point', 'verbatim': s.text, 'marks': s.marks,
+             'contextNote': PRESENTATION_NOTE} for s in extra]
+    if len(steps) + len(tail) <= MAX_ROWS:
+        rows = [step_row(f'{card_id}-r{i}', s) for i, s in enumerate(steps, 1)]
+    else:
+        rows = [_parts_row(card_id, title, steps)]
+    for row in tail:
+        row['id'] = f'{card_id}-r{len(rows) + 1}'
+        rows.append(row)
+    return rows
+
+
+def _parts_row(card_id, title, steps):
     total = sum(s.marks for s in steps)
-    return [{
+    return {
         'id': f'{card_id}-r1', 'kind': 'criterion', 'verbatim': title,
         'marks': total, 'permittedMarks': [0, total],
         'contextNote': 'The scheme prices this drawing step by step: award '
@@ -388,7 +405,7 @@ def step_rows(card_id, title, steps):
         'parts': [{'id': f'step-{i}', 'verbatim': s.text, 'marks': s.marks,
                    'permittedMarks': step_ladder(s)}
                   for i, s in enumerate(steps, 1)],
-    }]
+    }
 
 
 # ----------------------------------------------------------------- figures
@@ -498,13 +515,23 @@ def author(bind_figures=True):
             # A step the scheme prices on the QUESTION rather than on any of
             # its parts. Every Ordinary question ends with one -- a
             # presentation mark for the finished drawing, printed as the next
-            # roman in the run after the last part's last step -- and there is
-            # no ask on the paper to put it on: attaching it to a part would
-            # state a tariff against that part that the SEC never printed.
-            # Named and counted rather than dropped in silence, so the ledger
-            # says what is not on a card and why.
+            # roman in the run after the last part's last step. There is no
+            # ask on the paper to price it against, so it is not folded into
+            # any part's tariff: it is its own row on the question's first
+            # card, saying so (PRESENTATION_NOTE), and that card's total grows
+            # by exactly the printed mark, so the question's cards add up to
+            # the question.
+            # Presentation is the one such step every Ordinary question prints,
+            # and it is a printed price, so it is claimable: a row on the
+            # question's FIRST card, saying the scheme prices it on the whole
+            # question. Any other question-level step stays a named refusal.
+            presentation = [step for step in (
+                S.questions[qkey].trailer if qkey in S.questions else [])
+                if PRESENTATION.match(step.text)]
             for step in (S.questions[qkey].trailer if qkey in S.questions
                          else []):
+                if step in presentation:
+                    continue
                 reason = ('the scheme prices this step on the QUESTION, '
                           'under no part the paper asks')
                 refused[reason] += 1
@@ -532,6 +559,7 @@ def author(bind_figures=True):
                 card_id(year, level, section, q, cov, 1, False)
                 for _u, cov in pairing)
 
+            question_carded = False
             for index, (unit, covered) in enumerate(pairing, 1):
                 ref = ref_for(year, level, section, q, covered, leaves)
                 base = card_id(year, level, section, q, covered, 1, False)
@@ -639,7 +667,10 @@ def author(bind_figures=True):
                         piece_ref = f'{ref} — {title}'
                     if label:
                         piece_id = f'{cid}-{piece_no}'
-                    rows = step_rows(piece_id, title, steps)
+                    extra = presentation if not question_carded else []
+                    question_carded = True
+                    rows = step_rows(piece_id, title, steps, extra)
+                    marks += sum(s.marks for s in extra)
                     cards.append({
                         'id': piece_id,
                         'topicId': topic,
@@ -659,7 +690,7 @@ def author(bind_figures=True):
                         'totalMarks': marks,
                         'rows': rows,
                         'notes': (f'The scheme heads this {title!r} and prices '
-                                  f'it at {marks}. '
+                                  f'it at {marks - sum(s.marks for s in extra)}. '
                                   'Construction lines must be shown on all '
                                   'solutions, and the scheme notes that other '
                                   'valid solutions are acceptable and are '
