@@ -1037,6 +1037,66 @@ export interface PoliticsRubric {
   schemeFileid: string;
 }
 
+/** One band of a Religious Education grid, as the scheme prints it: "EXCELLENT"
+ *  at 20-17, with the grid's cells for that band where it prints any. */
+export interface ReligiousEducationBand {
+  /** "EXCELLENT", "Very Good", "NO GRADE"; a label the scheme sets over several
+   *  ranges (2010's "Weak" over 7-5, 4-2 and 1-0) is repeated on each. */
+  label: string;
+  /** The band's range as printed: "20-17", "34 - 40", "7". */
+  printed: string;
+  /** Every mark the band permits, low to high. */
+  marks: number[];
+  /** The grid's cells for this band, verbatim, each with its criterion where
+   *  the grid names one ("Relevance: clearly relevant"); absent where the
+   *  scheme prints labels and ranges only (2010-2014). */
+  descriptor?: string[];
+}
+
+/** A ceiling a question's Note prints for an answer that does less than it
+ *  asks: "If a candidate gives an accurate account ... mark on its merits -
+ *  Max 10 marks." */
+export interface ReligiousEducationCeiling {
+  /** The Note's own words for when it applies, verbatim. */
+  when: string;
+  max: number;
+}
+
+/**
+ * A Religious Education answer, marked the way the SEC marks every RE ask from
+ * 2010 to 2026: placed on ONE printed band grid (one grid per answer where the
+ * scheme prints "20 Marks x2"). The scheme's points of reference are examples
+ * ("e.g.", "Possible Points") and carry no marks of their own, so they show as
+ * an indicative list, never as rows to claim. Every string here is the
+ * scheme's own except `markingGuideNote`.
+ *
+ * Scoring (religiousEducationScoring.ts): each answer is one mark inside one
+ * band; a ceiling the student ticks caps each answer at its max.
+ */
+export interface ReligiousEducationRubric {
+  system: 'religious-education';
+  /** "An excellent answer will show ..." -- the Marking Criteria, verbatim. */
+  criteria: string;
+  /** The points of reference, verbatim, without the closing "Etc.". */
+  points: string[];
+  /** The scheme ends its list with "Etc.": not exhaustive. */
+  openList: boolean;
+  /** 1, or 2 where the grid prints "x2". */
+  answers: number;
+  /** The grid's total for ONE answer: `answers * answerMax` is the card. */
+  answerMax: number;
+  /** The grid's own marks heading, as printed: "10 Marks x2", "40M". */
+  gridHead: string;
+  /** High to low, as printed. */
+  bands: ReligiousEducationBand[];
+  ceilings?: ReligiousEducationCeiling[];
+  /** The scheme's other Notes for this ask, verbatim. */
+  directions: string[];
+  markingGuideNote: string;
+  schemePages: number[];
+  schemeFileid: string;
+}
+
 /** PE mixes exact allocations, descending tariffs and quality bands. The
  * original scheme remains available after reveal, including answer diagrams
  * and tick tables which must not be flattened into a guessed text answer. */
@@ -1241,7 +1301,7 @@ export interface FrenchRubric {
   practiceNotes?: string[];
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric;
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric | ReligiousEducationRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -1481,6 +1541,19 @@ export function rowPartsReconcile(row: MarkRow): boolean {
 
 export function tariffReconciles(card: SecCard): boolean {
   if (isRubricCard(card)) {
+    if (card.rubric.system === 'religious-education') {
+      // One grid per answer: its bands cover 0..answerMax, each mark once,
+      // and the answers make the card's printed total.
+      const { bands, answers, answerMax, ceilings, schemePages, schemeFileid } = card.rubric;
+      const marks = bands.flatMap(band => band.marks).sort((a, b) => a - b);
+      return Boolean(schemeFileid)
+        && schemePages.length > 0 && schemePages.every(page => Number.isInteger(page) && page > 0)
+        && Number.isInteger(answers) && answers >= 1 && answers * answerMax === card.totalMarks
+        && bands.length > 1 && bands.every(band => band.marks.length > 0 && band.label.trim() && band.printed.trim())
+        && marks.length === answerMax + 1 && marks.every((mark, index) => mark === index)
+        && (ceilings ?? []).every(ceiling => ceiling.when.trim()
+          && Number.isInteger(ceiling.max) && ceiling.max > 0 && ceiling.max < answerMax);
+    }
     if (card.rubric.system === 'politics') {
       const { criteria, schemePages, schemeFileid } = card.rubric;
       return Boolean(schemeFileid)
