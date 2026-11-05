@@ -768,10 +768,18 @@ def publish_crops(sitting, mod, write=True, only=None):
     os.makedirs(FIG_DIR if write else PREVIEW, exist_ok=True)
     out = []
     word = 'Higher' if sitting.level == 'hl' else 'Ordinary'
+    # build-deck reads figures-computer-science.json OVER figures.json and drops
+    # a card whose crop no longer matches the md5 pinned there: those curated
+    # crops are reused as they are, never re-rendered under the same key.
+    curated_path = os.path.join(ROOT, 'components', 'MarkBank', f'figures-{SUBJECT}.json')
+    curated = json.load(open(curated_path, encoding='utf8')) if os.path.exists(curated_path) else {}
     for name, spec in getattr(mod, 'CROPS', {}).items():
         if only and name not in only:
             continue
         key = figure_key(sitting.year, sitting.level, name)
+        if write and key in curated:
+            raise LaneError(f'{key} is a curated crop (figures-{SUBJECT}.json); name the new crop '
+                            f'differently or reuse the curated one without a CROPS entry')
         pix = render_crop(sitting, spec)
         path = os.path.join(FIG_DIR, f'{key}.png')
         if write:

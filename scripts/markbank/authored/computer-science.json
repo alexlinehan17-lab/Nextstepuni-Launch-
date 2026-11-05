@@ -2248,7 +2248,7 @@
  {
   "id": "cs-2022-hl-q1",
   "topicId": "cs-2-2",
-  "conceptId": "output-following-python-program-1-def",
+  "conceptId": "output-python-program",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -2262,24 +2262,33 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Output",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "5 6 15 5 6",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "Each correct response in the correct order 1 mark"
    }
   ],
-  "stem": "What is the output of the following Python program?",
-  "figureKey": "computer-science-2022-HL-paper-q1-code0"
+  "questionFigureKey": "computer-science-2022-HL-paper-q1-code0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q6",
   "topicId": "cs-2-3",
-  "conceptId": "figure-2-shows-example-client-server",
+  "conceptId": "2-shows-example-client-server-model",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
   "section": "A",
   "questionRef": "2022 HL Q6",
-  "questionText": "Figure 2 shows an example of the client-server model of computing. Figure 2 Explain the client-server model of computing. In your answer you should make reference to the terms included in Figure 2.",
+  "questionText": "Figure 2 shows an example of the client-server model of computing. Explain the client-server model of computing. In your answer you should make reference to the terms included in Figure 2.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -2287,13 +2296,20 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "A web client sends a browser request to a web server. This browser request is then processed by the web server which responds by sending the result back to the client in the form of a server response.",
-    "marks": 5
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     5
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 5 marks Good explanation - clear information, lacking demonstration of full understanding 3 marks Fair explanation - limited understanding 1 mark"
    }
   ],
-  "stem": "Figure 2 shows an example of the client-server model of computing. Figure 2 Explain the client-server model of computing. In your answer you should make reference to the terms included in Figure 2.",
-  "figureKey": "computer-science-2022-HL-paper-q6-fig0"
+  "questionFigureKey": "computer-science-2022-HL-paper-q6-fig0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q8",
@@ -2312,23 +2328,40 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Cost (advantage)",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Cost (advantage) — No need to for one-off up-front capital costs.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "accepts": [
+     "Cost (advantage) — No need for upgrading/replacements costs.",
+     "Cost (disadvantage) — Costs are ongoing (pay-as-you-go) which could work out more expensive in the long run.",
+     "Cost (disadvantage) — Ongoing costs to cloud service provider to keep software and hardware up-to-date",
+     "Environment (advantage) — Economy of scale meaning that cloud providers can offer shared services more efficiently thereby reducing carbon footprint.",
+     "Environment (advantage) — Many cloud companies generate their own energy (and supply to grid)",
+     "Environment (advantage) — Less paper.",
+     "Environment (disadvantage) — Owing to its success there is a greater demand for cloud services – thus increasing the energy demand and greater carbon footprint."
+    ],
+    "contextNote": "Award 3 marks for better of cost or environment as follows: 2 marks for better of advantage/disadvantage as follows: Very good description - clear understanding demonstrated 2 marks Fair description - limited understanding 1 mark 1 mark for other advantage/disadvantage (within the same heading) Very good description - clear understanding demonstrated 1 mark Award 2 marks for other heading (i.e. cost/environment) as follows: 1 mark for advantage Very good description - clear understanding demonstrated 1 mark 1 mark for disadvantage Very good description - clear understanding demonstrated 1 mark"
    }
-  ],
-  "stem": "Cloud computing has been described as the third wave of the digital revolution. Outline one advantage and one disadvantage of cloud computing under the headings of both cost and impact on the environment."
+  ]
  },
  {
   "id": "cs-2022-hl-q12",
   "topicId": "cs-2-3",
-  "conceptId": "transition-diagram-particular-turing-machine-shown",
+  "conceptId": "transition-diagram-particular-turing-machine-3",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
   "section": "A",
   "questionRef": "2022 HL Q12",
-  "questionText": "The state transition diagram for a particular Turing machine is shown in Figure 3 below. Trace the computation of the Turing machine by filling in the blanks in the diagram below. The read/write head is currently reading a 0. You can assume that the read/write head is moved one place to the right at the end of each step.",
+  "questionText": "The state transition diagram for a particular Turing machine is shown in Figure 3 below. The initial state is S0 and the initial tape contents is the binary number 0110 followed by a blank, represented by ‘B’. The final state is S3. Trace the computation of the Turing machine by filling in the blanks in the diagram below. The read/write head is currently reading a 0. You can assume that the read/write head is moved one place to the right at the end of each step.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -2336,13 +2369,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Three or more correct tapes",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Full correct response",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     5
+    ],
+    "contextNote": "Full correct response 5 marks Three or more correct tapes 3 marks Two correct tapes 2 marks One correct tape 1 mark"
    }
   ],
-  "stem": "The state transition diagram for a particular Turing machine is shown in Figure 3 below. Trace the computation of the Turing machine by filling in the blanks in the diagram below. The read/write head is currently reading a 0. You can assume that the read/write head is moved one place to the right at the end of each step. Figure 3 Section B Long Questions 30 marks",
-  "figureKey": "computer-science-2022-HL-paper-q12-figure"
+  "figureKey": "computer-science-2022-HL-scheme-q12",
+  "questionFigureKey": "computer-science-2022-HL-paper-q12-tm",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q13-a-i",
@@ -2361,23 +2403,23 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "An information system (IS) is the software used to help organise and analyse",
-    "marks": 1
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "business data and streamline the day to day (transactional) operation of a business.",
-    "marks": 1
+    "kind": "criterion",
+    "verbatim": "An information system (IS) is the software used to help organise and analyse business data and streamline the day to day (transactional) operation of a business.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 2 marks Fair description - limited understanding 1 mark"
    }
   ],
-  "stem": "This question continues on the next page. This question continues on the next page."
+  "stem": "K-9 Kennels is a small dog boarding business whose aim is to meet the needs of dog owners who often have difficulty in finding a safe and reliable place to leave their pets. Since it was established, owners John and Mary Chewit have worked tirelessly to grow the business, and in addition to boarding it now offers a range of other services including grooming, massage and training. Mary and John realise that they need an information system and have appointed the software company you work for to design and develop the system. An initial meeting has been arranged and your manager has asked you to attend."
  },
  {
   "id": "cs-2022-hl-q13-a-ii",
   "topicId": "cs-2-4",
-  "conceptId": "provide-two-examples-how-information-system",
+  "conceptId": "provide-examples-information-system-could-benefit",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -2391,17 +2433,30 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Improve operational efficiencies – an IS could be used to handle bookings and payments automatically, database could be used to organise and manage information about relevant entities such as dogs, customers or staff.",
-    "marks": 2
+    "kind": "anyN",
+    "verbatim": "Provide two examples of how an information system could benefit K-9 Kennels.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Improve operational efficiencies – an IS could be used to handle bookings and payments automatically, database could be used to organise and manage information about relevant entities such as dogs, customers or staff.",
+      "Information could be used to improve decision making and strategic planning.",
+      "Improve customer service – as system should be available 24/7. An IS would make it easier for customers to learn more about K-9 kennels.",
+      "Cost reductions (increase in profits).",
+      "Any valid example of a benefit for K-9 kennels."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each unique valid/correct example 1 mark"
    }
   ],
-  "stem": "This question continues on the next page. This question continues on the next page."
+  "stem": "K-9 Kennels is a small dog boarding business whose aim is to meet the needs of dog owners who often have difficulty in finding a safe and reliable place to leave their pets. Since it was established, owners John and Mary Chewit have worked tirelessly to grow the business, and in addition to boarding it now offers a range of other services including grooming, massage and training. Mary and John realise that they need an information system and have appointed the software company you work for to design and develop the system. An initial meeting has been arranged and your manager has asked you to attend."
  },
  {
   "id": "cs-2022-hl-q13-a-iii",
-  "topicId": "cs-2-3",
-  "conceptId": "identify-two-key-stakeholders-their-respective",
+  "topicId": "cs-1-3",
+  "conceptId": "key-stakeholders-their-respective-roles-relation",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -2415,17 +2470,31 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Stakeholder Role",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "Dog owners / general public / customers — end-users",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "accepts": [
+     "K9-Kennels / John and Mary and their employees — client / project sponsor Users of the system",
+     "Software company including any relevant job title e.g. project manager / analyst / designer / programmer / tester etc. — Any relevant description"
+    ],
+    "contextNote": "For each correctly identified stakeholder 1 mark For each stakeholder role: Very good description - clear understanding demonstrated 2 marks Fair description – limited understanding 1 mark"
    }
   ],
-  "stem": "This question continues on the next page. This question continues on the next page."
+  "stem": "K-9 Kennels is a small dog boarding business whose aim is to meet the needs of dog owners who often have difficulty in finding a safe and reliable place to leave their pets. Since it was established, owners John and Mary Chewit have worked tirelessly to grow the business, and in addition to boarding it now offers a range of other services including grooming, massage and training. Mary and John realise that they need an information system and have appointed the software company you work for to design and develop the system. An initial meeting has been arranged and your manager has asked you to attend."
  },
  {
   "id": "cs-2022-hl-q13-a-iv",
-  "topicId": "cs-2-3",
-  "conceptId": "outline-briefly-two-topics-relating-project",
+  "topicId": "cs-1-3",
+  "conceptId": "briefly-topics-relating-project-anticipate-will",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -2439,12 +2508,26 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "K-9’s existing business services and the systems (hardware, software etc.) in place to support them.",
-    "marks": 2
+    "kind": "anyN",
+    "verbatim": "Outline briefly two topics relating to the project which you anticipate will be discussed at the initial meeting.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "K-9’s existing business services and the systems (hardware, software etc.) in place to support them.",
+      "Customer requirements.",
+      "Project feasibility (cost-benefit analysis).",
+      "Contract / Memorandum Of Understanding (MOU).",
+      "Project plan (e.g. deliverables, key milestones, schedule etc.).",
+      "Any relevant topic."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each topic: Good description - clear understanding demonstrated 1 marks"
    }
   ],
-  "stem": "This question continues on the next page. This question continues on the next page."
+  "stem": "K-9 Kennels is a small dog boarding business whose aim is to meet the needs of dog owners who often have difficulty in finding a safe and reliable place to leave their pets. Since it was established, owners John and Mary Chewit have worked tirelessly to grow the business, and in addition to boarding it now offers a range of other services including grooming, massage and training. Mary and John realise that they need an information system and have appointed the software company you work for to design and develop the system. An initial meeting has been arranged and your manager has asked you to attend."
  },
  {
   "id": "cs-2022-hl-q13-a-v",
@@ -2463,17 +2546,35 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Reasons for choosing Web App",
-    "marks": 4
+    "kind": "criterion",
+    "verbatim": "Reasons for choosing Web App — Accessibility.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "accepts": [
+     "Reasons for choosing Web App — Ease of updates.",
+     "Reasons for choosing Web App — Better discovery on search engines. (SEO).",
+     "Reasons for choosing Web App — Cost-effective development.",
+     "Reasons for choosing Web App — Faster speed to market.",
+     "Reasons for choosing Mobile App — Speed and performance.",
+     "Reasons for choosing Mobile App — Ability to send push notifications.",
+     "Reasons for choosing Mobile App — Improved user experience.",
+     "Reasons for choosing Mobile App — Offline access."
+    ],
+    "contextNote": "Any valid reason. For each reason: Very good description - clear understanding demonstrated 2 marks Fair description - limited understanding 1 mark"
    }
   ],
-  "stem": "This question continues on the next page. This question continues on the next page."
+  "stem": "K-9 Kennels is a small dog boarding business whose aim is to meet the needs of dog owners who often have difficulty in finding a safe and reliable place to leave their pets. Since it was established, owners John and Mary Chewit have worked tirelessly to grow the business, and in addition to boarding it now offers a range of other services including grooming, massage and training. Mary and John realise that they need an information system and have appointed the software company you work for to design and develop the system. An initial meeting has been arranged and your manager has asked you to attend."
  },
  {
   "id": "cs-2022-hl-q13-a-vi",
-  "topicId": "cs-2-3",
-  "conceptId": "why-choice-software-development-process-important",
+  "topicId": "cs-1-3",
+  "conceptId": "choice-software-development-process-important-when",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -2487,17 +2588,23 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "The choice of software development process/methodology (e.g. waterfall, agile etc.) is",
-    "marks": 3
+    "kind": "criterion",
+    "verbatim": "The choice of software development process/methodology (e.g. waterfall, agile etc.) is important as it enables a project to provide better estimates, deliver stable systems, keep the customer informed, create a clear understanding of the task ahead, and identify pitfalls earlier, allowing for ample time to make adjustments.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 3 marks Fair explanation - limited understanding 1 mark"
    }
   ],
-  "stem": "This question continues on the next page. This question continues on the next page."
+  "stem": "K-9 Kennels is a small dog boarding business whose aim is to meet the needs of dog owners who often have difficulty in finding a safe and reliable place to leave their pets. Since it was established, owners John and Mary Chewit have worked tirelessly to grow the business, and in addition to boarding it now offers a range of other services including grooming, massage and training. Mary and John realise that they need an information system and have appointed the software company you work for to design and develop the system. An initial meeting has been arranged and your manager has asked you to attend."
  },
  {
   "id": "cs-2022-hl-q13-b-ii",
   "topicId": "cs-1-3",
-  "conceptId": "describe-two-user-centred-design-features",
+  "conceptId": "user-centred-design-features-would-use",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -2511,17 +2618,33 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "User-centred design features – involving the user throughout the design process",
-    "marks": 2
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Consistent page layout e.g. navigation at top/side of every page, footer content the same on every page.",
+      "Good balance of content and white space.",
+      "Good contrast between text and background.",
+      "Use of consistent font – size, colour, formatting.",
+      "Visited links change in appearance.",
+      "Good use of basic design principles - repetition, contrast, proximity, alignment.",
+      "Responsive design – works on different device sizes and in different browsers.",
+      "Any valid feature."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each user-centred design feature: Good description - clear understanding demonstrated 1 marks"
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "K-9 Kennels is a small dog boarding business whose aim is to meet the needs of dog owners who often have difficulty in finding a safe and reliable place to leave their pets. Since it was established, owners John and Mary Chewit have worked tirelessly to grow the business, and in addition to boarding it now offers a range of other services including grooming, massage and training. Some weeks after the initial meeting John and Mary contact your company to request that an online store be included as part of the system. The store will be made up of two pages – a shop page and a checkout page."
  },
  {
   "id": "cs-2022-hl-q13-b-iii",
-  "topicId": "cs-2-3",
-  "conceptId": "two-differences-between-wireframes-prototypes",
+  "topicId": "cs-1-3",
+  "conceptId": "differences-between-wireframes-prototypes",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -2535,12 +2658,29 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Wireframe",
-    "marks": 2
+    "kind": "anyN",
+    "verbatim": "State two differences between wireframes and prototypes.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Wireframe — A wireframe is a sketch of diagram of a webpage that shows the overall structure of the page (i.e. elements such as navigation menu, headings, images, content area and footer).",
+      "Wireframe — Wireframes are drawn during the design stage of the design process.",
+      "Wireframe — Wireframes are low-fidelity visual representations of some aspect of a system.",
+      "Wireframe — Wireframes do not contain real content (when the content is added they may need to change).",
+      "Wireframe — Wireframes are relatively quick to develop and change.",
+      "Wireframe — Wireframes are relatively cheap.",
+      "Prototype — A prototype is a ‘trimmed down’ working version of the system (or some aspect of the system) used for demonstration and evaluation purposes.",
+      "Prototype — Prototypes are developed in the implementation (create) stage of the design process",
+      "Prototype — A prototype is software whereas wireframes are sketches (digital or hand-drawn) – they are relatively costly to develop.",
+      "Prototype — Prototypes provide a mid to high fidelity visual representation of the system ‘look and feel’. They take colours, content and branding into account and also allow users to engage/experience the system (button clicks etc.)."
+     ]
+    },
+    "contextNote": "For each difference 1 mark"
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "K-9 Kennels is a small dog boarding business whose aim is to meet the needs of dog owners who often have difficulty in finding a safe and reliable place to leave their pets. Since it was established, owners John and Mary Chewit have worked tirelessly to grow the business, and in addition to boarding it now offers a range of other services including grooming, massage and training. Some weeks after the initial meeting John and Mary contact your company to request that an online store be included as part of the system. The store will be made up of two pages – a shop page and a checkout page."
  },
  {
   "id": "cs-2022-hl-q13-b-iv",
@@ -2560,11 +2700,33 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "String",
-    "marks": 3
+    "verbatim": "String — Customer name, address, contact details, product details",
+    "marks": 1,
+    "contextNote": "For each valid/correct example 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Integer — Quantity ordered, credit card number, CCV, phone number",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Boolean",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Delivery address same as customer address?",
+      "Receive product promotions, updates, mailing list etc.",
+      "Accept terms and conditions?"
+     ]
+    }
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "K-9 Kennels is a small dog boarding business whose aim is to meet the needs of dog owners who often have difficulty in finding a safe and reliable place to leave their pets. Since it was established, owners John and Mary Chewit have worked tirelessly to grow the business, and in addition to boarding it now offers a range of other services including grooming, massage and training. Some weeks after the initial meeting John and Mary contact your company to request that an online store be included as part of the system. The store will be made up of two pages – a shop page and a checkout page."
  },
  {
   "id": "cs-2022-hl-q14-a-ii",
@@ -2585,15 +2747,17 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Select the largest (instead of the smallest) element from list 1 and move it to list2",
-    "marks": 2
+    "marks": 2,
+    "contextNote": "Any valid response. Good description - clear understanding demonstrated 2 marks"
    }
   ],
-  "stem": "At the end of the algorithm list1 is empty, and list2 contains the elements that were in list1 at the start, now sorted in ascending order. The algorithm is described by the following pseudo-code: 1. Let N be the number of elements in list1 2. Initialise an empty list of length N – call this list2 3. Repeat N times: 4. Select the smallest (minimum) element from list1 5. Move the smallest element from list1 to list2 6. Stop Initial State State after Pass #1 This question continues on the next page. State after Pass #2 State after Pass #3 State after Pass #4 This question continues on the next page. This question continues on the next page.",
-  "figureKey": "computer-science-2022-HL-paper-q14-figure"
+  "stem": "A simplified version of the selection sort algorithm involves the use of two lists called list1 and list2. At the start of the algorithm the elements in list1 are unsorted, and list2 is empty as shown. At the end of the algorithm list1 is empty, and list2 contains the elements that were in list1 at the start, now sorted in ascending order. The algorithm is described by the following pseudo-code:",
+  "questionFigureKey": "computer-science-2022-HL-paper-q14a-algo",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q14-a-iii",
-  "topicId": "cs-2-3",
+  "topicId": "cs-2-2",
   "conceptId": "step-4-algorithm-says-select-smallest",
   "level": "higher",
   "year": 2022,
@@ -2608,13 +2772,20 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Initialise the minimum to be the first element in the list. Then, working/walk across the list compare each element to the minimum element so far. If the current element is less than the minimum element so far then let it be the new minimum. Continue in this manner until the end of the list is reached.",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ],
+    "contextNote": "Pseudocode / flowchart / code are also acceptable Very good description - clear understanding demonstrated 3 marks Fair description - limited understanding/use of built in functions 1 mark"
    }
   ],
-  "stem": "At the end of the algorithm list1 is empty, and list2 contains the elements that were in list1 at the start, now sorted in ascending order. The algorithm is described by the following pseudo-code: 1. Let N be the number of elements in list1 2. Initialise an empty list of length N – call this list2 3. Repeat N times: 4. Select the smallest (minimum) element from list1 5. Move the smallest element from list1 to list2 6. Stop Initial State State after Pass #1 This question continues on the next page. State after Pass #2 State after Pass #3 State after Pass #4 This question continues on the next page. This question continues on the next page.",
-  "figureKey": "computer-science-2022-HL-paper-q14-figure"
+  "stem": "A simplified version of the selection sort algorithm involves the use of two lists called list1 and list2. At the start of the algorithm the elements in list1 are unsorted, and list2 is empty as shown. At the end of the algorithm list1 is empty, and list2 contains the elements that were in list1 at the start, now sorted in ascending order. The algorithm is described by the following pseudo-code:",
+  "questionFigureKey": "computer-science-2022-HL-paper-q14a-algo",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q14-a-iv",
@@ -2633,18 +2804,29 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "The same element would always be copied.",
-    "marks": 2
+    "kind": "anyN",
+    "verbatim": "Why would the algorithm not work if this step said to copy the smallest element from list1 to list2?",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "The same element would always be copied.",
+      "list1 will remain unchanged.",
+      "This would result in an infinite loop."
+     ]
+    },
+    "contextNote": "Very good explanation - clear understanding demonstrated 2 marks"
    }
   ],
-  "stem": "At the end of the algorithm list1 is empty, and list2 contains the elements that were in list1 at the start, now sorted in ascending order. The algorithm is described by the following pseudo-code: 1. Let N be the number of elements in list1 2. Initialise an empty list of length N – call this list2 3. Repeat N times: 4. Select the smallest (minimum) element from list1 5. Move the smallest element from list1 to list2 6. Stop Initial State State after Pass #1 This question continues on the next page. State after Pass #2 State after Pass #3 State after Pass #4 This question continues on the next page. This question continues on the next page.",
-  "figureKey": "computer-science-2022-HL-paper-q14-figure"
+  "stem": "A simplified version of the selection sort algorithm involves the use of two lists called list1 and list2. At the start of the algorithm the elements in list1 are unsorted, and list2 is empty as shown. At the end of the algorithm list1 is empty, and list2 contains the elements that were in list1 at the start, now sorted in ascending order. The algorithm is described by the following pseudo-code:",
+  "questionFigureKey": "computer-science-2022-HL-paper-q14a-algo",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q14-a-v",
-  "topicId": "cs-2-3",
-  "conceptId": "algorithm-relies-two-lists-complete-sort",
+  "topicId": "cs-2-2",
+  "conceptId": "algorithm-relies-lists-complete-sort-selection",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -2658,18 +2840,25 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "The selection sort algorithm works by passing across every element in the list to sort (from left to right). The element being passed over is called the current element. For each current element the algorithm looks for the minimum (smallest) element to its right. This minimum element is selected and swapped with the current element. The algorithm then moves on to the next element.",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ],
+    "contextNote": "Pseudocode / flowchart / code are also acceptable. Very good description - clear understanding demonstrated 3 marks Fair description - limited understanding 1 mark"
    }
   ],
-  "stem": "At the end of the algorithm list1 is empty, and list2 contains the elements that were in list1 at the start, now sorted in ascending order. The algorithm is described by the following pseudo-code: 1. Let N be the number of elements in list1 2. Initialise an empty list of length N – call this list2 3. Repeat N times: 4. Select the smallest (minimum) element from list1 5. Move the smallest element from list1 to list2 6. Stop Initial State State after Pass #1 This question continues on the next page. State after Pass #2 State after Pass #3 State after Pass #4 This question continues on the next page. This question continues on the next page.",
-  "figureKey": "computer-science-2022-HL-paper-q14-figure"
+  "stem": "A simplified version of the selection sort algorithm involves the use of two lists called list1 and list2. At the start of the algorithm the elements in list1 are unsorted, and list2 is empty as shown. At the end of the algorithm list1 is empty, and list2 contains the elements that were in list1 at the start, now sorted in ascending order. The algorithm is described by the following pseudo-code:",
+  "questionFigureKey": "computer-science-2022-HL-paper-q14a-algo",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q14-b-ii",
   "topicId": "cs-2-2",
-  "conceptId": "how-insertion-sort-algorithm-works",
+  "conceptId": "insertion-sort-algorithm-works",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -2683,24 +2872,23 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "The insertion sort works by passing across each element in the list starting from the second element. At the start, the first element is considered sorted and all elements to its right are considered unsorted. On each pass the first element in the unsorted list is inserted into the sorted list at its correct position.",
-    "marks": 2
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Pseudocode / flowchart / code are also acceptable.",
-    "marks": 2
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     4
+    ],
+    "contextNote": "Pseudocode / flowchart / code are also acceptable. Very good explanation - clear understanding demonstrated 4 marks Good explanation - clear information, lacking demonstration of full understanding 2 marks Fair explanation - limited understanding 1 mark"
    }
-  ],
-  "stem": "Figure 4 This question continues on the next page.",
-  "figureKey": "computer-science-2022-HL-paper-q14-figure"
+  ]
  },
  {
   "id": "cs-2022-hl-q14-b-iii",
   "topicId": "cs-2-2",
-  "conceptId": "list-already-reversed-would-be-considered",
+  "conceptId": "list-already-reversed-would-considered-good",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -2714,18 +2902,31 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "A list that is already sorted.",
-    "marks": 4
+    "kind": "anyN",
+    "verbatim": "Describe two other test cases that could be used to test the insertion sort algorithm.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "A list that is already sorted.",
+      "A list where all the values are the same.",
+      "A list with only two distinct values.",
+      "A list where all the values are different.",
+      "A list with just one element – list size 1.",
+      "An empty list – list size zero.",
+      "Any valid test case."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each unique test case: Very good description - clear understanding demonstrated 2 marks"
    }
-  ],
-  "stem": "Figure 4 This question continues on the next page.",
-  "figureKey": "computer-science-2022-HL-paper-q14-figure"
+  ]
  },
  {
   "id": "cs-2022-hl-q14-b-iv",
   "topicId": "cs-2-2",
-  "conceptId": "big-o-notation-used-describe-complexity",
+  "conceptId": "big-o-notation-complexity-algorithm-discuss",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -2739,13 +2940,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Worst case is O(n2) – list in reverse order. For each of the n elements there are n comparisons required to make the insertion at the correct positon. AND",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Worst case is O(n2) – list in reverse order. For each of the n elements there are n comparisons required to make the insertion at the correct positon. AND • Average case is also O(n2) / best case is O(n) – list is already sorted so no there is need to execute inner loop.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     5
+    ],
+    "contextNote": "Very good discussion - clear understanding demonstrated 5 marks Good discussion - clear information, lacking demonstration of full understanding 3 marks Fair discussion - limited understanding 1 mark"
    }
-  ],
-  "stem": "Figure 4 This question continues on the next page.",
-  "figureKey": "computer-science-2022-HL-paper-q14-figure"
+  ]
  },
  {
   "id": "cs-2022-hl-q15-a",
@@ -2764,12 +2970,19 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Step 1. 1x10=10",
-    "marks": 3
+    "kind": "criterion",
+    "verbatim": "Step 1. 1x10=10 0x9=0 2x8=16 0x7=0 0x6=0 4x5=20 1x4=4 1x3=3 0x2=0 2x1=2 Step 2. 10+16+20+4+3+2=55 Step 3. 55/11=5 remainder 0 Step 4. Remainder = 0 => ISBN is valid",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Full correct response 3 marks Two or three correct steps 2 marks Any correct step 1 mark"
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "A check digit is a single digit number used to verify numbers such as barcodes, credit cards and International Standard Book Numbers (ISBNs), thereby helping to prevent data entry errors. Check digits usually appear as the rightmost digit (position 1) of a number. For example, the check digit of the ISBN number, 1020041102 highlighted here is 2. The general procedure used to verify ISBN numbers is as follows: Step 1: Multiply each digit in the number by its own digit position. Step 2: Add the 10 results together. Step 3: Divide the total by 11. Step 4: If the remainder is zero the ISBN number is deemed to be valid."
  },
  {
   "id": "cs-2022-hl-q15-b-i",
@@ -2788,12 +3001,27 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Make code more readable / understandable for self / others.",
-    "marks": 2
+    "kind": "anyN",
+    "verbatim": "State two reasons why programmers use comments.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Make code more readable / understandable for self / others.",
+      "To enable programmer to isolate a part of the code for testing.",
+      "Comments when used as doc strings can become part of the system documentation.",
+      "Comments can contain information about the author, date, version log etc.",
+      "Any reasonable use for comments should be accepted."
+     ]
+    },
+    "openList": true,
+    "contextNote": "Each unique correct response 1 mark"
    }
   ],
-  "stem": "1 # A program to determine a check digit for a number 2 isbn = \"102004110\" 3 total = 0 4 for i in range(10, 1, -1): 5 total = total + int(isbn[10-i]) * i 6 7 check_digit = 11 - (total % 11) 8 print(\"The check digit for\", isbn, \"is\", check_digit) This question continues on the next page."
+  "stem": "A check digit is a single digit number used to verify numbers such as barcodes, credit cards and International Standard Book Numbers (ISBNs), thereby helping to prevent data entry errors. Check digits usually appear as the rightmost digit (position 1) of a number. For example, the check digit of the ISBN number, 1020041102 highlighted here is 2. The general procedure used to verify ISBN numbers is as follows: Step 1: Multiply each digit in the number by its own digit position. Step 2: Add the 10 results together. Step 3: Divide the total by 11. Step 4: If the remainder is zero the ISBN number is deemed to be valid. Given a 9-digit number, the Python program below can be used to find the number’s check digit, that will be used as the 10th digit.",
+  "questionFigureKey": "computer-science-2022-HL-paper-q15b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q15-b-ii",
@@ -2812,12 +3040,71 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Variable.",
-    "marks": 4
+    "marks": 2,
+    "parts": [
+     {
+      "id": "p-1",
+      "verbatim": "A variable is a placeholder for data that can change as a program runs. • A named entity that has a value. • A reference to a memory/storage location. • A parameter is a special kind of variable.",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p-2",
+      "verbatim": "Examples from code: isbn, total, i, check_digit",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "For each term: Good description - clear understanding demonstrated 1 mark Valid example 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Datatype",
+    "marks": 2,
+    "parts": [
+     {
+      "id": "p-1",
+      "verbatim": "A category of data that can be held in a variable. • A restriction on the values that can be stored in a variable.",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     },
+     {
+      "id": "p-2",
+      "verbatim": "Examples from code: isbn is a string, total, i and check_digit are all integers",
+      "marks": 1,
+      "permittedMarks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
    }
   ],
-  "stem": "1 # A program to determine a check digit for a number 2 isbn = \"102004110\" 3 total = 0 4 for i in range(10, 1, -1): 5 total = total + int(isbn[10-i]) * i 6 7 check_digit = 11 - (total % 11) 8 print(\"The check digit for\", isbn, \"is\", check_digit) This question continues on the next page."
+  "stem": "A check digit is a single digit number used to verify numbers such as barcodes, credit cards and International Standard Book Numbers (ISBNs), thereby helping to prevent data entry errors. Check digits usually appear as the rightmost digit (position 1) of a number. For example, the check digit of the ISBN number, 1020041102 highlighted here is 2. The general procedure used to verify ISBN numbers is as follows: Step 1: Multiply each digit in the number by its own digit position. Step 2: Add the 10 results together. Step 3: Divide the total by 11. Step 4: If the remainder is zero the ISBN number is deemed to be valid. Given a 9-digit number, the Python program below can be used to find the number’s check digit, that will be used as the 10th digit.",
+  "questionFigureKey": "computer-science-2022-HL-paper-q15b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q15-b-iii",
@@ -2836,12 +3123,20 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "int converts (casts) the string representation of each character of the isbn to an integer. This happens on each iteration of the loop. This is done so that the digit can be multiplied (integer multiplication) by its position.",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 3 marks Fair description - limited understanding 1 mark"
    }
   ],
-  "stem": "1 # A program to determine a check digit for a number 2 isbn = \"102004110\" 3 total = 0 4 for i in range(10, 1, -1): 5 total = total + int(isbn[10-i]) * i 6 7 check_digit = 11 - (total % 11) 8 print(\"The check digit for\", isbn, \"is\", check_digit) This question continues on the next page."
+  "stem": "A check digit is a single digit number used to verify numbers such as barcodes, credit cards and International Standard Book Numbers (ISBNs), thereby helping to prevent data entry errors. Check digits usually appear as the rightmost digit (position 1) of a number. For example, the check digit of the ISBN number, 1020041102 highlighted here is 2. The general procedure used to verify ISBN numbers is as follows: Step 1: Multiply each digit in the number by its own digit position. Step 2: Add the 10 results together. Step 3: Divide the total by 11. Step 4: If the remainder is zero the ISBN number is deemed to be valid. Given a 9-digit number, the Python program below can be used to find the number’s check digit, that will be used as the 10th digit.",
+  "questionFigureKey": "computer-science-2022-HL-paper-q15b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q15-b-iv",
@@ -2860,17 +3155,29 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "As a loop counter / iterating variable",
-    "marks": 2
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "accepts": [
+     "As an index into the list, isbn (to retrieve the next digit) / As a means of scanning the digits from left to right",
+     "As the digit position"
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 2 marks Fair description - limited understanding 1 mark"
    }
   ],
-  "stem": "1 # A program to determine a check digit for a number 2 isbn = \"102004110\" 3 total = 0 4 for i in range(10, 1, -1): 5 total = total + int(isbn[10-i]) * i 6 7 check_digit = 11 - (total % 11) 8 print(\"The check digit for\", isbn, \"is\", check_digit) This question continues on the next page."
+  "stem": "A check digit is a single digit number used to verify numbers such as barcodes, credit cards and International Standard Book Numbers (ISBNs), thereby helping to prevent data entry errors. Check digits usually appear as the rightmost digit (position 1) of a number. For example, the check digit of the ISBN number, 1020041102 highlighted here is 2. The general procedure used to verify ISBN numbers is as follows: Step 1: Multiply each digit in the number by its own digit position. Step 2: Add the 10 results together. Step 3: Divide the total by 11. Step 4: If the remainder is zero the ISBN number is deemed to be valid. Given a 9-digit number, the Python program below can be used to find the number’s check digit, that will be used as the 10th digit.",
+  "questionFigureKey": "computer-science-2022-HL-paper-q15b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q15-c-i",
   "topicId": "cs-2-2",
-  "conceptId": "complete-trace-table-below-show-changing",
+  "conceptId": "complete-trace-table-show-changing-states",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -2884,12 +3191,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "i digit total isbn",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "7 0 27 102 8 2 43 10 9 0 43 1 10 1 53 0",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     5
+    ],
+    "contextNote": "Full correct answer 5 marks Two or more correct rows/cols 3 marks Any one correct row/col 1 mark"
    }
   ],
-  "stem": "1 # A program to determine a check digit for a number 2 isbn = 102004110 3 isbn1 = isbn 4 total = 0 5 for i in range(2, 11): 6 digit = isbn % 10 7 total = total + digit*i 8 isbn = isbn//10 9 10 check_digit = 11 - (total % 11) 11 print(\"The check digit for\", isbn1, \"is\", check_digit) i digit total isbn 0 102004110 2 0 0 10200411 3 1 3 1020041 4 1 7 102004 5 4 27 10200 6 0 27 1020 7 8 9 10 This question continues on the next page. % // Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question Space for extra work. Indicate clearly the number and part of the question Acknowledgements Images Image on page 4: https://www.forbes.com/profile/gordon-moore/ Image on page 5: https://www.indiamart.com/proddetail/automatic-garage-door-18064248973.html Image on page 10: https://www.beeculture.com/catch-the-buzz-why-vegans-avoid-honey/ Image on page 12: https://www.startupdonut.co.uk/start-up-business-ideas/types-of-business/how-to-start-up-a- boarding-kennel Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 25 May Morning 9:30 – 11:00 2022L219A2EL 2022. M110C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 25 May Morning 11:30 – 12:30 50 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 50 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of the question. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your file onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 50 marks"
+  "stem": "A check digit is a single digit number used to verify numbers such as barcodes, credit cards and International Standard Book Numbers (ISBNs), thereby helping to prevent data entry errors. Check digits usually appear as the rightmost digit (position 1) of a number. For example, the check digit of the ISBN number, 1020041102 highlighted here is 2. The general procedure used to verify ISBN numbers is as follows: Step 1: Multiply each digit in the number by its own digit position. Step 2: Add the 10 results together. Step 3: Divide the total by 11. Step 4: If the remainder is zero the ISBN number is deemed to be valid. The Python program below shows an alternative implementation.",
+  "figureKey": "computer-science-2022-HL-scheme-q15c-i",
+  "questionFigureKey": "computer-science-2022-HL-paper-q15c-table",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q15-c-ii",
@@ -2908,12 +3225,20 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "isbn1 is used to store the original isbn as the value of isbn is changed",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 3 marks Fair description - limited understanding 1 mark"
    }
   ],
-  "stem": "1 # A program to determine a check digit for a number 2 isbn = 102004110 3 isbn1 = isbn 4 total = 0 5 for i in range(2, 11): 6 digit = isbn % 10 7 total = total + digit*i 8 isbn = isbn//10 9 10 check_digit = 11 - (total % 11) 11 print(\"The check digit for\", isbn1, \"is\", check_digit) i digit total isbn 0 102004110 2 0 0 10200411 3 1 3 1020041 4 1 7 102004 5 4 27 10200 6 0 27 1020 7 8 9 10 This question continues on the next page. % // Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question Space for extra work. Indicate clearly the number and part of the question Acknowledgements Images Image on page 4: https://www.forbes.com/profile/gordon-moore/ Image on page 5: https://www.indiamart.com/proddetail/automatic-garage-door-18064248973.html Image on page 10: https://www.beeculture.com/catch-the-buzz-why-vegans-avoid-honey/ Image on page 12: https://www.startupdonut.co.uk/start-up-business-ideas/types-of-business/how-to-start-up-a- boarding-kennel Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 25 May Morning 9:30 – 11:00 2022L219A2EL 2022. M110C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 25 May Morning 11:30 – 12:30 50 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 50 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of the question. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your file onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 50 marks"
+  "stem": "A check digit is a single digit number used to verify numbers such as barcodes, credit cards and International Standard Book Numbers (ISBNs), thereby helping to prevent data entry errors. Check digits usually appear as the rightmost digit (position 1) of a number. For example, the check digit of the ISBN number, 1020041102 highlighted here is 2. The general procedure used to verify ISBN numbers is as follows: Step 1: Multiply each digit in the number by its own digit position. Step 2: Add the 10 results together. Step 3: Divide the total by 11. Step 4: If the remainder is zero the ISBN number is deemed to be valid. The Python program below shows an alternative implementation.",
+  "questionFigureKey": "computer-science-2022-HL-paper-q15c-listing",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q15-c-iii",
@@ -2934,27 +3259,30 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "% is the modulus/remainder operator. It returns the remainder when one number is divided by another e.g. 9%4 -> 1",
-    "marks": 1
+    "marks": 1,
+    "contextNote": "For each operator: Good description - clear understanding demonstrated 1 mark"
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "// is the floor division operator. It returns the result of a division rounded down to the next smallest whole number e.g. 9//4 -> 2 For each operator:",
+    "verbatim": "// is the floor division operator. It returns the result of a division rounded down to the next smallest whole number e.g. 9//4 -> 2",
     "marks": 1
    }
   ],
-  "stem": "1 # A program to determine a check digit for a number 2 isbn = 102004110 3 isbn1 = isbn 4 total = 0 5 for i in range(2, 11): 6 digit = isbn % 10 7 total = total + digit*i 8 isbn = isbn//10 9 10 check_digit = 11 - (total % 11) 11 print(\"The check digit for\", isbn1, \"is\", check_digit) i digit total isbn 0 102004110 2 0 0 10200411 3 1 3 1020041 4 1 7 102004 5 4 27 10200 6 0 27 1020 7 8 9 10 This question continues on the next page. % // Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question Space for extra work. Indicate clearly the number and part of the question Acknowledgements Images Image on page 4: https://www.forbes.com/profile/gordon-moore/ Image on page 5: https://www.indiamart.com/proddetail/automatic-garage-door-18064248973.html Image on page 10: https://www.beeculture.com/catch-the-buzz-why-vegans-avoid-honey/ Image on page 12: https://www.startupdonut.co.uk/start-up-business-ideas/types-of-business/how-to-start-up-a- boarding-kennel Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 25 May Morning 9:30 – 11:00 2022L219A2EL 2022. M110C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 25 May Morning 11:30 – 12:30 50 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 50 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of the question. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your file onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 50 marks"
+  "stem": "A check digit is a single digit number used to verify numbers such as barcodes, credit cards and International Standard Book Numbers (ISBNs), thereby helping to prevent data entry errors. Check digits usually appear as the rightmost digit (position 1) of a number. For example, the check digit of the ISBN number, 1020041102 highlighted here is 2. The general procedure used to verify ISBN numbers is as follows: Step 1: Multiply each digit in the number by its own digit position. Step 2: Add the 10 results together. Step 3: Divide the total by 11. Step 4: If the remainder is zero the ISBN number is deemed to be valid. The Python program below shows an alternative implementation.",
+  "questionFigureKey": "computer-science-2022-HL-paper-q15c-listing",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q16-a-ii",
   "topicId": "cs-2-2",
-  "conceptId": "insert-new-line-code-end-program",
+  "conceptId": "insert-new-line-code-at-end",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2022 HL Q16(a)(ii)",
-  "questionText": "Insert a new line of code at the end of the program to display the list of dice frequencies.",
+  "questionText": "Insert a new line of code at the end of the program to display the list of dice frequencies. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -2962,24 +3290,33 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Correct implementation using solution above or similar but with syntax error.",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     5
+    ],
+    "contextNote": "(ii) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Almost correct response • Correct implementation using solution above or similar but with syntax error. • Correct output displayed but spread over more than a single line. • Correct output displayed in the wrong position. 2 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
-  "figureKey": "computer-science-2022-HL-paper-q16-figure"
+  "stem": "The program simulates the rolling of a die 100 times. The result of each roll (throw) is stored in a variable called throw_result. Each of the 100 results are appended to a list called results as they are generated. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies.",
+  "figureKey": "computer-science-2022-HL-scheme-q16a-ii",
+  "questionFigureKey": "computer-science-2022-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q16-a-iii",
   "topicId": "cs-2-2",
-  "conceptId": "complete-code-calculate-frequencies-numbers-three",
+  "conceptId": "complete-code-calculate-frequencies-numbers-four",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2022 HL Q16(a)(iii)",
-  "questionText": "Complete the code to calculate the frequencies for the numbers three, four, five and six.",
+  "questionText": "Complete the code to calculate the frequencies for the numbers three, four, five and six. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -2987,24 +3324,33 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "error or ‘off by one’ index error.",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     5
+    ],
+    "contextNote": "(iii) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Almost correct response Correct implementation using solution above or similar but with syntax error or ‘off by one’ index error. 2 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
-  "figureKey": "computer-science-2022-HL-paper-q16-figure"
+  "stem": "The program simulates the rolling of a die 100 times. The result of each roll (throw) is stored in a variable called throw_result. Each of the 100 results are appended to a list called results as they are generated. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies.",
+  "figureKey": "computer-science-2022-HL-scheme-q16a-iii",
+  "questionFigureKey": "computer-science-2022-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q16-a-v",
   "topicId": "cs-2-2",
-  "conceptId": "extend-program-display-frequency-each-number",
+  "conceptId": "extend-program-display-frequency-number-tabular",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2022 HL Q16(a)(v)",
-  "questionText": "Extend the program to display the frequency of each number in a tabular format as shown in the sample output here.",
+  "questionText": "Extend the program to display the frequency of each number in a tabular format as shown in the sample output here. Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -3012,13 +3358,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Actual frequency values displayed correctly and any 2 of:",
-    "marks": 10
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     7,
+     10
+    ],
+    "contextNote": "(v) 10 marks (B-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 7 marks Almost correct response Actual frequency values displayed correctly and any 2 of: • First header row displayed correctly. • Second header row displayed correctly. • Correct column alignment. • Dice values displayed correctly. 3 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
-  "figureKey": "computer-science-2022-HL-paper-q16-figure"
+  "stem": "The program simulates the rolling of a die 100 times. The result of each roll (throw) is stored in a variable called throw_result. Each of the 100 results are appended to a list called results as they are generated. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies.",
+  "figureKey": "computer-science-2022-HL-scheme-q16a-v",
+  "questionFigureKey": "computer-science-2022-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q16-a-vi",
@@ -3027,9 +3382,9 @@
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2022 HL Q16(a)(vi)",
-  "questionText": "Extend the program so that it determines and displays the number that was rolled most often along with its frequency. For example, in the output below the number five was rolled most often (25 times). You can ignore the possibility of ties.",
+  "questionText": "Extend the program so that it determines and displays the number that was rolled most often along with its frequency. For example, in the output below the number five was rolled most often (25 times). You can ignore the possibility of ties. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times)",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -3037,24 +3392,33 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Most frequent value determined but not correctly displayed.",
-    "marks": 10
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     7,
+     10
+    ],
+    "contextNote": "(vi) 10 marks (B-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 7 marks Almost correct response • Most frequent value determined but not correctly displayed. • Minor error in code to determine the most frequent value. • Minor error in code to display the number that was rolled most often. 3 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
-  "figureKey": "computer-science-2022-HL-paper-q16-figure"
+  "stem": "The program simulates the rolling of a die 100 times. The result of each roll (throw) is stored in a variable called throw_result. Each of the 100 results are appended to a list called results as they are generated. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies.",
+  "figureKey": "computer-science-2022-HL-scheme-q16a-vi",
+  "questionFigureKey": "computer-science-2022-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q16-a-vii",
-  "topicId": "cs-2-3",
+  "topicId": "cs-2-2",
   "conceptId": "extend-program-display-horizontal-bar-chart",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2022 HL Q16(a)(vii)",
-  "questionText": "Extend the program to display a horizontal bar chart of the frequencies.",
+  "questionText": "Extend the program to display a horizontal bar chart of the frequencies. The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** **********",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -3062,18 +3426,28 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Separate newline for each row",
-    "marks": 10
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     8,
+     10
+    ],
+    "contextNote": "(vii) 10 marks (C-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 8 marks Almost correct response Correct solution structure but problem with newline e.g. • Separate newline for each row • No blank lines between rows 5 marks Response about half-right Correct solution structure but incorrect number of asterisks 3 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
-  "figureKey": "computer-science-2022-HL-paper-q16-figure"
+  "stem": "The program simulates the rolling of a die 100 times. The result of each roll (throw) is stored in a variable called throw_result. Each of the 100 results are appended to a list called results as they are generated. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies.",
+  "figureKey": "computer-science-2022-HL-scheme-q16a-vii",
+  "questionFigureKey": "computer-science-2022-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q2",
   "topicId": "cs-2-3",
-  "conceptId": "volatile-memory-b-describe-two-differences",
+  "conceptId": "volatile-memory-b-differences-between-registers",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -3081,57 +3455,44 @@
   "questionRef": "2022 HL Q2",
   "questionText": "(a) What is volatile memory? (b) Describe two differences between registers and RAM.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "A type of memory used to store data/programs when the computer is switched on/running.",
-    "marks": null
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ],
+    "accepts": [
+     "Called volatile because entire contents are cleared when the computer is switched off."
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 3 marks Fair description - limited understanding 1 mark"
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "Called volatile because entire contents are cleared when the computer is switched off.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Physical location. Registers are located inside (part of) the CPU – RAM is not physically as close to the CPU.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Access time/speeds. Contents of registers can be accessed much faster by CPU than contents of RAM.",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Cost. Registers are more expensive than RAM (per byte).",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Capacity. Registers hold less than RAM (because of cost).",
-    "marks": null
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Material. Made from different materials.",
-    "marks": null
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Any other valid difference. 1 marks for each difference clearly described",
-    "marks": null
+    "kind": "anyN",
+    "verbatim": "Describe two differences between registers and RAM.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Physical location. Registers are located inside (part of) the CPU – RAM is not physically as close to the CPU.",
+      "Access time/speeds. Contents of registers can be accessed much faster by CPU than contents of RAM.",
+      "Cost. Registers are more expensive than RAM (per byte).",
+      "Capacity. Registers hold less than RAM (because of cost).",
+      "Material. Made from different materials.",
+      "Any other valid difference."
+     ]
+    },
+    "openList": true,
+    "contextNote": "1 marks for each difference clearly described"
    }
   ],
   "stem": "Registers and RAM are both types of volatile memory."
@@ -3139,7 +3500,7 @@
  {
   "id": "cs-2022-hl-q3",
   "topicId": "cs-2-3",
-  "conceptId": "terms-transistor-integrated-circuit-b-one",
+  "conceptId": "terms-transistor-integrated-circuit-b-reason",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -3147,51 +3508,44 @@
   "questionRef": "2022 HL Q3",
   "questionText": "(a) Explain the terms transistor and integrated circuit. (b) State one reason why Moore’s Law might not remain accurate in the future.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Transistor",
-    "marks": null
+    "kind": "criterion",
+    "verbatim": "Transistor — A transistor is type of electronic switch.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "accepts": [
+     "A transistor is a semiconductor device used to amplify or switch electronic signals and electrical power. It is composed of semiconductor material usually with at least three terminals for connection to an external circuit.",
+     "A transistor is the fundamental building block of gates, logic circuits (adders, multiplexors etc.), integrated circuits and microprocessors.",
+     "Transistors are used to represent binary 1’s and 0’s."
+    ],
+    "contextNote": "For each term: Very good explanation - clear understanding demonstrated 2 marks Fair explanation - limited understanding 1 mark"
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "A transistor is type of electronic switch.",
-    "marks": null
+    "kind": "criterion",
+    "verbatim": "Integrated Circuit — An integrated circuit (chip) is an electronic component that contains multiple discrete components combined together into logic circuits on a single silicon board.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "A transistor is a semiconductor device used to amplify or switch electronic signals and electrical power. It is composed of semiconductor material usually with at least three terminals for connection to an external circuit.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "A transistor is the fundamental building block of gates, logic circuits (adders, multiplexors etc.), integrated circuits and microprocessors.",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Transistors are used to represent binary 1’s and 0’s. Integrated Circuit",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "An integrated circuit (chip) is an electronic component that contains multiple discrete components combined together into logic circuits on a single silicon board. For each term:",
-    "marks": null
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
     "verbatim": "There is a physical limitation to the number of transistors that can fit on a single chip.",
-    "marks": null
+    "marks": 1,
+    "contextNote": "Full correct response 1 mark"
    }
   ],
   "stem": "In 1965 Gordon Moore, co-founder of Intel Corporation, predicted that the number of transistors on an integrated circuit will approximately double every two years. This prediction became known as Moore’s Law and has turned out to be very accurate to the present day."
@@ -3207,90 +3561,45 @@
   "questionRef": "2022 HL Q4",
   "questionText": "(a) Complete the truth table for the logical statement A AND (B OR C). (b) Use the relevant gate symbols to draw the circuit diagram for this system.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "A B C A AND (B OR C)",
-    "marks": null
+    "kind": "criterion",
+    "verbatim": "A B C A AND (B OR C) — 0 1 0 0 0 1 1 0 1 0 0 0 1 0 1 1 1 1 0 1 1 1 1 1",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Every value correct 2 marks 3 (or more) correct values 1 mark"
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "0 0 0 0",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "0 0 1 0",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "0 1 0 0",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "0 1 1 0",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "1 0 0 0",
-    "marks": null
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "1 0 1 1",
-    "marks": null
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "1 1 0 1",
-    "marks": null
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "1 1 1 1",
-    "marks": null
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "3 (or more) correct values",
-    "marks": null
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Gates combined correctly as above",
-    "marks": null
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "Use of AND and OR gates with either input correctly labelled",
-    "marks": null
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Gates combined correctly as above 3 marks Use of AND and OR gates with either input correctly labelled 2 marks Use of AND or OR gates with either inputs correctly labelled 1 mark"
    }
   ],
   "stem": "An automatic garage door has three inputs: - A, the master ON/OFF switch - B, a sensor on the left hand side - C, a sensor on the right hand side Once the master switch has been set ON, either sensor can trigger the door. This scenario can be represented by the logical statement: A AND (B OR C).",
-  "figureKey": "computer-science-2022-HL-paper-q4-fig0"
+  "figureKey": "computer-science-2022-HL-scheme-q4",
+  "questionFigureKey": "computer-science-2022-HL-paper-q4-fig0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2022-hl-q7",
   "topicId": "cs-2-3",
-  "conceptId": "term-ransomware-b-two-measures-individuals",
+  "conceptId": "term-ransomware-b-measures-individuals-companies",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -3298,57 +3607,42 @@
   "questionRef": "2022 HL Q7",
   "questionText": "(a) Explain the term ransomware. (b) State two measures individuals or companies can take to reduce the risk of a cyberattack.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Ransomware is a type of malicious software (malware) that threatens to publish or blocks access to data or a computer system, usually by encrypting it, until the victim pays a ransom fee to the attacker. In many cases, the ransom demand comes with a deadline. If the victim doesn’t pay in time, the data is gone forever or the ransom increases.",
-    "marks": null
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 3 marks Fair description - limited understanding 1 mark"
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "Company policy and procedures (people controls).",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Password policies.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Anti-virus software.",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Security systems (e.g. firewall, VPN).",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Encryption.",
-    "marks": null
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Cloud (security services may be better than local organisations).",
-    "marks": null
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Any acceptable measure. Each correct response",
-    "marks": null
+    "kind": "anyN",
+    "verbatim": "State two measures individuals or companies can take to reduce the risk of a cyberattack.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Company policy and procedures (people controls).",
+      "Password policies.",
+      "Anti-virus software.",
+      "Security systems (e.g. firewall, VPN).",
+      "Encryption.",
+      "Cloud (security services may be better than local organisations).",
+      "Any acceptable measure."
+     ]
+    },
+    "openList": true,
+    "contextNote": "Each correct response 1 mark"
    }
   ],
   "stem": "On 14 May 2021, the Health Service Executive (HSE) of Ireland suffered a major ransomware cyberattack which caused all of its IT systems nationwide to be shut down."
@@ -3356,7 +3650,7 @@
  {
   "id": "cs-2022-hl-q9",
   "topicId": "cs-2-2",
-  "conceptId": "provide-two-examples-how-machine-learning",
+  "conceptId": "provide-examples-machine-learning-can-benefit",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -3364,82 +3658,52 @@
   "questionRef": "2022 HL Q9",
   "questionText": "(a) Provide two examples of how machine learning can be used to benefit society. (b) Outline briefly the issue of ‘bias’ in relation to machine learning.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Self-driving vehicles – safety/more accessible.",
-    "marks": null
+    "kind": "anyN",
+    "verbatim": "Provide two examples of how machine learning can be used to benefit society.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Self-driving vehicles – safety/more accessible.",
+      "Healthcare – early detection of chronic illnesses, modelling disease spread etc.",
+      "Entertainment – music/concert/movie/book recommender systems etc.",
+      "Online shopping – product recommender systems, ads etc.",
+      "Facial recognition in home/business security systems.",
+      "Environmental protection.",
+      "Fairer justice systems.",
+      "Arts – music/literature.",
+      "Education.",
+      "Any valid example of how machine learning can be used to benefit society."
+     ]
+    },
+    "openList": true,
+    "contextNote": "Each correct response 1 mark"
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "Healthcare – early detection of chronic illnesses, modelling disease spread etc.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Entertainment – music/concert/movie/book recommender systems etc.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Online shopping – product recommender systems, ads etc.",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Facial recognition in home/business security systems.",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Environmental protection.",
-    "marks": null
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Fairer justice systems.",
-    "marks": null
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Arts – music/literature.",
-    "marks": null
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Education.",
-    "marks": null
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "Any valid example of how machine learning can be used to benefit society. Each correct response",
-    "marks": null
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "If the data on which the algorithm makes its decision contains bias, the algorithm’s output will also be biased.",
-    "marks": null
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ],
+    "contextNote": "Very good description - clear understanding demonstrated 3 marks Fair description - limited understanding 1 mark"
    }
   ]
  },
  {
   "id": "cs-2022-hl-q10",
   "topicId": "cs-2-1",
-  "conceptId": "way-fake-coin-can-be-found",
+  "conceptId": "way-fake-coin-can-found-minimum",
   "level": "higher",
   "year": 2022,
   "subjectId": "computer-science",
@@ -3447,108 +3711,32 @@
   "questionRef": "2022 HL Q10",
   "questionText": "(a) Explain a way that the fake coin can be found in the minimum number of weighings. (b) Outline briefly your use of abstraction to tackle this problem.",
   "tariffModel": {
-   "kind": "questionTotal"
+   "kind": "fixed"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "By ignoring irrelevant details such as coin colour, size and value",
-    "marks": null
-   }
-  ],
-  "stem": "You have eight coins and a two pan scales. Both the coins and the scales are gold plated and the diameter and circumference of all the coins are exactly the same. The coins are worth €2 each, a total of €16. - seven of the coins are genuine and weigh the same amount. - one of the coins is fake and is heavier than the others."
- },
- {
-  "id": "cs-2022-hl-q14",
-  "topicId": "cs-2-3",
-  "conceptId": "simplified-version-selection-sort-algorithm-involves",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "computer-science",
-  "section": "B",
-  "questionRef": "2022 HL Q14",
-  "questionText": "(i) Apply the algorithm to sort the list of integers [15, 28, 14, 21] showing the state of both lists after each pass of the algorithm. Pass #1 has been completed for you. You only need to fill in the numbers for passes 2, 3 and 4. (ii) The algorithm sorts the list in ascending order. What changes would you need to make to the algorithm so that it sorts the list in descending order? (iii) Step 4 of the algorithm says to select the smallest (minimum) element from list1. Outline a method to find the smallest element in any list. (iv) Step 5 of the algorithm says to move the smallest element from list1 to list2. Why would the algorithm not work if this step said to copy the smallest element from list1 to list2? (v) The algorithm relies on two lists to complete the sort. Describe a selection sort algorithm that would sort a list ‘in place’ i.e. without the need for a second list. (a) is empty as shown. (i) Fill in the empty boxes below to complete passes 3, 4, 5 and 6 of the insertion sort. (ii) Explain how the insertion sort algorithm works. (iii) A list that is already reversed would be considered a good test case for the insertion sort algorithm. Describe two other test cases that could be used to test the insertion sort algorithm. (iv) \"Big O\" notation is used to describe the complexity of an algorithm. Discuss the algorithmic complexity of the insertion sort algorithm using \"Big O\" notation. (b) A bookshelf is partially sorted, in alphabetic order, using the insertion sort algorithm as shown in Figure 4 below.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 30,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Select the largest (instead of the smallest) element from list 1 and move it to list2",
-    "marks": null
+    "kind": "criterion",
+    "verbatim": "The minimum number of weighings to find the fake coin is 2 as follows: Place a group of 3 coins on each pan (weighing 1). If they weigh the same the fake is among the other 2 (so the fake can be found by placing each of the other 2 on the pans – weighing 2). If they don’t weigh the same choose 2 of the coins from the 3 on the heavier side of the pan. Weigh these two coins (weighing 2). If they are both the same the 3rd coin is the fake. If they don’t weigh the same the heavier coin will be evident from the pan.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "contextNote": "Valid solution (2 weighings) 3 marks Valid solution (3 or more weighings) 2 marks Reasonable attempt 1 mark"
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Initialise the minimum to be the first element in the list. Then, working/walk across the list compare each element to the minimum element so far. If the current element is less than the minimum element so far then let it be the new minimum. Continue in this manner until the end of the list is reached.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Pseudocode / flowchart / code are also acceptable",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "The same element would always be copied.",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "list1 will remain unchanged.",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "This would result in an infinite loop.",
-    "marks": null
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "The selection sort algorithm works by passing across every element in the list to sort (from left to right). The element being passed over is called the current element. For each current element the algorithm looks for the minimum (smallest) element to its right. This minimum element is selected and swapped with the current element. The algorithm then moves on to the next element.",
-    "marks": null
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Pseudocode / flowchart / code are also acceptable.",
-    "marks": null
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "The insertion sort works by passing across each element in the list starting from the second element. At the start, the first element is considered sorted and all elements to its right are considered unsorted. On each pass the first element in the unsorted list is inserted into the sorted list at its correct position.",
-    "marks": null
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "Pseudocode / flowchart / code are also acceptable.",
-    "marks": null
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "A list that is already sorted.",
-    "marks": null
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "A list where all the values are the same.",
-    "marks": null
+    "verbatim": "By ignoring irrelevant details such as coin colour, size and value",
+    "marks": 2,
+    "contextNote": "Very good description - clear understanding demonstrated 2 marks"
    }
   ],
-  "figureKey": "computer-science-2022-HL-paper-q14-figure"
+  "stem": "You have eight coins and a two pan scales. Both the coins and the scales are gold plated and the diameter and circumference of all the coins are exactly the same. The coins are worth €2 each, a total of €16. - seven of the coins are genuine and weigh the same amount. - one of the coins is fake and is heavier than the others."
  },
  {
   "id": "cs-2022-ol-q1",
@@ -17422,21 +17610,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Provide an example of one type of data entry error a check digit could be used to prevent.",
-    "marks": null,
-    "group": {
-     "claimMax": 1,
-     "perOption": 2,
-     "options": [
-      "letter/digit errors, such as l → 1 or O → 0",
-      "single digit errors, such as 1 → 2",
-      "transposition errors, such as 12 → 21",
-      "twin errors, such as 11 → 22",
-      "jump transpositions errors, such as 132 → 231",
-      "jump twin errors, such as 131 → 232"
-     ]
-    },
+    "kind": "criterion",
+    "verbatim": "letter/digit errors, such as l → 1 or O → 0",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "accepts": [
+     "single digit errors, such as 1 → 2",
+     "transposition errors, such as 12 → 21",
+     "twin errors, such as 11 → 22",
+     "jump transpositions errors, such as 132 → 231",
+     "jump twin errors, such as 131 → 232"
+    ],
     "contextNote": "Very good description - clear understanding demonstrated 2 marks Fair description - limited understanding 1 mark"
    }
   ]
@@ -17464,9 +17652,9 @@
     "contextNote": "(i) 5 marks (A-5 scale) 5 marks Correct response Correct implementation using solution above or similar."
    }
   ],
-  "stem": "The program simulates the rolling of a die 100 times.",
+  "stem": "The program simulates the rolling of a die 100 times. The result of each roll (throw) is stored in a variable called throw_result. Each of the 100 results are appended to a list called results as they are generated. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies.",
   "figureKey": "computer-science-2022-HL-scheme-q16a-i",
-  "questionFigureKey": "computer-science-2022-HL-paper-q16-figure",
+  "questionFigureKey": "computer-science-2022-HL-paper-q16a-code",
   "questionFigureIncludesPrompt": false
  },
  {
@@ -17492,9 +17680,9 @@
     "contextNote": "(iv) 5 marks (A-5 scale) 5 marks Correct response Correct implementation using solution above or similar."
    }
   ],
-  "stem": "The program simulates the rolling of a die 100 times.",
+  "stem": "The program simulates the rolling of a die 100 times. The result of each roll (throw) is stored in a variable called throw_result. Each of the 100 results are appended to a list called results as they are generated. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies.",
   "figureKey": "computer-science-2022-HL-scheme-q16a-iv",
-  "questionFigureKey": "computer-science-2022-HL-paper-q16-figure",
+  "questionFigureKey": "computer-science-2022-HL-paper-q16a-code",
   "questionFigureIncludesPrompt": false
  },
  {
@@ -20645,6 +20833,62 @@
   ],
   "stem": "A museum has an information point, such as that shown in Figure 7, to inform visitors about the museum’s art collection. There is only one information point at the entrance to the museum and it provides users with images and text about the artwork. However, there have been a number of complaints relating to the user experience, particularly in how the information from the information point is delivered to users. You are part of a design team working on redeveloping the visitor information point so that it allows users to access the information using an app on their own smart device. The diagram in Figure 8 below illustrates the typical stages in a software development design process.",
   "questionFigureKey": "computer-science-2025-OL-paper-q15-figs",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-hl-q14-a-i",
+  "topicId": "cs-2-2",
+  "conceptId": "apply-algorithm-sort-list-integers-15",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 HL Q14(a)(i)",
+  "questionText": "Apply the algorithm to sort the list of integers [15, 28, 14, 21] showing the state of both lists after each pass of the algorithm. Pass #1 has been completed for you. You only need to fill in the numbers for passes 2, 3 and 4.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Apply the algorithm to sort the list of integers [15, 28, 14, 21] showing the state of both lists after each pass of the algorithm. Pass #1 has been completed for you. You only need to fill in the numbers for passes 2, 3 and 4.",
+    "marks": 3,
+    "ask": true
+   }
+  ],
+  "stem": "A simplified version of the selection sort algorithm involves the use of two lists called list1 and list2. At the start of the algorithm the elements in list1 are unsorted, and list2 is empty as shown. At the end of the algorithm list1 is empty, and list2 contains the elements that were in list1 at the start, now sorted in ascending order. The algorithm is described by the following pseudo-code:",
+  "figureKey": "computer-science-2022-HL-scheme-q14a-i",
+  "questionFigureKey": "computer-science-2022-HL-paper-q14a-i",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2022-hl-q14-b-i",
+  "topicId": "cs-2-2",
+  "conceptId": "fill-empty-boxes-complete-passes-3",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 HL Q14(b)(i)",
+  "questionText": "Fill in the empty boxes below to complete passes 3, 4, 5 and 6 of the insertion sort.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Fill in the empty boxes below to complete passes 3, 4, 5 and 6 of the insertion sort.",
+    "marks": 4,
+    "ask": true
+   }
+  ],
+  "stem": "A bookshelf is partially sorted, in alphabetic order, using the insertion sort algorithm as shown in Figure 4 below.",
+  "figureKey": "computer-science-2022-HL-scheme-q14b-i",
+  "questionFigureKey": "computer-science-2022-HL-paper-q14b-i",
   "questionFigureIncludesPrompt": false
  }
 ]

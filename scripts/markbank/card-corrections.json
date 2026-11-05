@@ -921,27 +921,6 @@
     "figureKey": "computer-science-2023-HL-paper-q10-figure"
    }
   },
-  "cs-2022-hl-q15-c-i": {
-   "reason": "The trace-table task depended on code and a partially completed table which the parser had flattened together with end-of-booklet furniture. The inspected official combined crop now carries both in their published layout.",
-   "set": {
-    "stem": null,
-    "figureKey": "computer-science-2022-HL-paper-q15c-trace"
-   }
-  },
-  "cs-2022-hl-q15-c-ii": {
-   "reason": "The question asks about isbn1 in the preceding program. The inspected official program crop replaces the parser's code-and-booklet text dump.",
-   "set": {
-    "stem": null,
-    "figureKey": "computer-science-2022-HL-paper-q15c-code"
-   }
-  },
-  "cs-2022-hl-q15-c-iii": {
-   "reason": "The operator question depends on the preceding program. The inspected official program crop replaces the parser's code-and-booklet text dump.",
-   "set": {
-    "stem": null,
-    "figureKey": "computer-science-2022-HL-paper-q15c-code"
-   }
-  },
   "cs-2022-ol-q16": {
    "reason": "The whole programming task is intentionally grouped with one shared source-code crop, but the parser also flattened that code into the prompt after the seven asks. The prompt now keeps every printed ask and description once, in paper order, while the inspected crop carries the code.",
    "set": {
