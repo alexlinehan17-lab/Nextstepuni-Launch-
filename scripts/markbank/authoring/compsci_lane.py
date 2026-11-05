@@ -406,10 +406,16 @@ def _blocks(md):
 #   2784 '7': 2020 HL scheme p6, the exponent of "2^7".
 #   2785 '8': 2021 HL scheme p4, "log2 8 = 3"; 2020 HL p6's text layer reads
 #       the same id as '1' in "128".
-# 2783 has no sane sighting (2021 HL p4 reads it '1' in "16") and stays
-# unresolved: a line that needs it is refused.
+#   2783 '6': read '6' 265 times across the corpus schemes (first sighting
+#       2014 LC022ALP000EV p5); 2021 HL p4's text layer reads it '1' in "16".
+#   1812 'l', 1815 'o', 1807 'g': the bold maths letters of "log" (2021 HL
+#       p4, "log2 8 = 3"), read so in 2017 LC021ALP000EV p16 (1812), 2014
+#       LC022ALP000EV p8 (1815, 1807); 2021 HL p4 reads all three as 'l'.
+#   (tools: a scan of every corpus scheme's CambriaMath glyph ids, 5 Nov.)
 LANE_GIDS = {('CambriaMath', 2778): '1', ('CambriaMath', 2779): '2', ('CambriaMath', 2780): '3',
-             ('CambriaMath', 2781): '4', ('CambriaMath', 2784): '7', ('CambriaMath', 2785): '8'}
+             ('CambriaMath', 2781): '4', ('CambriaMath', 2783): '6', ('CambriaMath', 2784): '7',
+             ('CambriaMath', 2785): '8', ('CambriaMath', 1812): 'l', ('CambriaMath', 1815): 'o',
+             ('CambriaMath', 1807): 'g'}
 SUPERSCRIPT = str.maketrans('0123456789', '⁰¹²³⁴⁵⁶⁷⁸⁹')
 SUBSCRIPT = str.maketrans('0123456789', '₀₁₂₃₄₅₆₇₈₉')
 
@@ -439,7 +445,7 @@ def read_glyph_line(page, y0, y1):
                 if (fam, ch[1]) not in LANE_GIDS:
                     raise LaneError(f'CambriaMath glyph {ch[1]} ({c!r}) has no settled reading')
                 c = LANE_GIDS[(fam, ch[1])]
-                if t['size'] < 0.85 * base['size']:
+                if t['size'] < 0.85 * base['size'] and c.isdigit():
                     c = c.translate(SUPERSCRIPT if y < base_y - 1 else SUBSCRIPT)
             if last_x is not None and x - last_x > 2 and not out.endswith(' ') and c != ' ':
                 out += ' '
@@ -457,7 +463,9 @@ def append_glyphs(year, level, page, y0, y1):
     doc = pymupdf.open(os.path.join(SCHEMES, f'{year}-{level}.pdf'))
     line = read_glyph_line(doc[page - 1], y0, y1)
     entries = dict(re.findall(r'<!-- compsci:glyphs page (\d+) -->\n(.*?)\n(?=<!--)', glyphs, re.S))
-    entries[str(page)] = line
+    have = entries.get(str(page), '')
+    if line not in have.split('\n'):
+        entries[str(page)] = (have + '\n' + line).strip('\n')
     block = [GLYPHS_START] + [x for k in sorted(entries, key=int)
                               for x in (f'<!-- compsci:glyphs page {k} -->', entries[k])] + [GLYPHS_END]
     with open(path, 'w', encoding='utf8') as fh:

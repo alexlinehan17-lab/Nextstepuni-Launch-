@@ -921,19 +921,6 @@
     "figureKey": "computer-science-2023-HL-paper-q10-figure"
    }
   },
-  "cs-2021-hl-q14-b-iv": {
-   "reason": "The table parser stopped the marking point at a wrapped line and left doubled mathematical-letter glyphs. The complete SEC strategy is restored; the shared glyph repair renders the variables once.",
-   "set": {
-    "rows": [
-     {
-      "id": "r-1",
-      "kind": "point",
-      "verbatim": "A winning strategy from state (𝒏𝒏, 𝒎𝒎) where 𝒏𝒏≠𝒎𝒎 would be to even the piles. Leave (n, n) or (m, m). For 𝒎𝒎> 𝒏𝒏 this means take 𝒎𝒎−𝒏𝒏 matchsticks. For 𝒎𝒎< 𝒏𝒏 take 𝒏𝒏−𝒎𝒎 matchsticks.",
-      "marks": 2
-     }
-    ]
-   }
-  },
   "cs-2023-hl-q14-a-v": {
    "reason": "The task asks for two CPU-performance factors at 3 marks each. The scheme's examples are a bounded open choice pool, not six required 1-mark rows.",
    "set": {
