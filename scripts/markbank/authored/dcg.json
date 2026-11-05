@@ -260,7 +260,7 @@
       "Draw support cable joining P to F",
       "Construction to determine tangent at P",
       "Draw required tangent at P",
-      "Draw second support cable at 25o to correct tangent as required"
+      "Draw second support cable at 25° to correct tangent as required"
      ],
      "perOptionSteps": [
       2,
@@ -1591,7 +1591,7 @@
    {
     "id": "dcg-2018-hl-c3d-r1",
     "kind": "anyN",
-    "verbatim": "X1Y1 inclined at 60o as shown",
+    "verbatim": "X1Y1 inclined at 60° as shown",
     "marks": 3,
     "openList": true,
     "contextNote": "The scheme prices this drawing step by step: 1, 1, 1 — 3 marks in all, in the order the scheme sets them out.",
@@ -1599,7 +1599,7 @@
      "claimMax": 3,
      "perOption": 1,
      "options": [
-      "X1Y1 inclined at 60o as shown",
+      "X1Y1 inclined at 60° as shown",
       "Edge view of surface D to determine inclination to HP",
       "Construction to determine true shape of surface D"
      ]
@@ -2806,7 +2806,7 @@
       "Semicircle in elevation",
       "Draw elevation in the correct position",
       "Projections to set up plan",
-      "Semicircle in plan (or 45o lines)",
+      "Semicircle in plan (or 45° lines)",
       "Draw plan in the correct position"
      ],
      "perOptionSteps": [
@@ -3132,7 +3132,7 @@
      "options": [
       "Draw base of structure",
       "Draw roof section",
-      "Construction to locate 90o angle",
+      "Construction to locate 90° angle",
       "Complete the end view"
      ],
      "perOptionSteps": [
@@ -3405,7 +3405,7 @@
    {
     "id": "dcg-2018-ol-c4b-r1",
     "kind": "anyN",
-    "verbatim": "360o division (widths on displacement diagram.)",
+    "verbatim": "360° division (widths on displacement diagram.)",
     "marks": 20,
     "openList": true,
     "contextNote": "The scheme prices this drawing step by step: 2, 2, 2, 3, 2, 2, 4, 3 — 20 marks in all, in the order the scheme sets them out.",
@@ -3413,13 +3413,13 @@
      "claimMax": 8,
      "perOption": 2,
      "options": [
-      "360o division (widths on displacement diagram.)",
+      "360° division (widths on displacement diagram.)",
       "Correct use of 70mm height",
-      "Establish follower position at 0o, 120o, 180o and 360o",
-      "0o to 120o, Uniform Velocity",
-      "120o to 180o, Dwell",
-      "180o, vertical fall 22mm",
-      "180o to 360o, Uniform Acceleration and Retardation (UAR)",
+      "Establish follower position at 0°, 120°, 180° and 360°",
+      "0° to 120°, Uniform Velocity",
+      "120° to 180°, Dwell",
+      "180°, vertical fall 22mm",
+      "180° to 360°, Uniform Acceleration and Retardation (UAR)",
       "Complete displacement diagram (freehand curve)"
      ],
      "perOptionSteps": [

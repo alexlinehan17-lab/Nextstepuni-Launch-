@@ -347,7 +347,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation and plan positioned as shown.",
     tariffModel: {"kind":"fixed","notation":"(10)"}, totalMarks: 10,
     rows: [
-    { id: "dcg-2018-ol-b3b-r1", kind: "anyN", verbatim: "Projections to set up elevation", marks: 10, contextNote: "The scheme prices this drawing step by step: 2, 1, 2, 2, 1, 2 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":2,"options":["Projections to set up elevation","Semicircle in elevation","Draw elevation in the correct position","Projections to set up plan","Semicircle in plan (or 45o lines)","Draw plan in the correct position"],"perOptionSteps":[2,1,2,2,1,2]} },
+    { id: "dcg-2018-ol-b3b-r1", kind: "anyN", verbatim: "Projections to set up elevation", marks: 10, contextNote: "The scheme prices this drawing step by step: 2, 1, 2, 2, 1, 2 — 10 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":6,"perOption":2,"options":["Projections to set up elevation","Semicircle in elevation","Draw elevation in the correct position","Projections to set up plan","Semicircle in plan (or 45° lines)","Draw plan in the correct position"],"perOptionSteps":[2,1,2,2,1,2]} },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secB-q3-art",
@@ -501,7 +501,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the given end view.",
     tariffModel: {"kind":"fixed","notation":"(11)"}, totalMarks: 11,
     rows: [
-    { id: "dcg-2018-ol-c2b-r1", kind: "anyN", verbatim: "Draw base of structure", marks: 11, contextNote: "The scheme prices this drawing step by step: 3, 3, 2, 3 — 11 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Draw base of structure","Draw roof section","Construction to locate 90o angle","Complete the end view"],"perOptionSteps":[3,3,2,3]} },
+    { id: "dcg-2018-ol-c2b-r1", kind: "anyN", verbatim: "Draw base of structure", marks: 11, contextNote: "The scheme prices this drawing step by step: 3, 3, 2, 3 — 11 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Draw base of structure","Draw roof section","Construction to locate 90° angle","Complete the end view"],"perOptionSteps":[3,3,2,3]} },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q2-art",
@@ -633,7 +633,7 @@ export const CARDS: SecCard[] = [
     questionText: "A cam is used as part of the braking system for an elevator, which is located in the central tower of the sculpture. Draw the displacement diagram for a cam which imparts the following motion to an inline knife edge follower: to 120° Rise 70mm with uniform velocity 120° to 180° Dwell 180° Vertical fall of 22mm 180° to 360° Fall 48mm with uniform acceleration and retardation. (In the displacement diagram, use a distance of 15mm to represent each 30° interval.) Note: It is not necessary to draw the cam profile.",
     tariffModel: {"kind":"fixed","notation":"(20)"}, totalMarks: 20,
     rows: [
-    { id: "dcg-2018-ol-c4b-r1", kind: "anyN", verbatim: "360o division (widths on displacement diagram.)", marks: 20, contextNote: "The scheme prices this drawing step by step: 2, 2, 2, 3, 2, 2, 4, 3 — 20 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":8,"perOption":2,"options":["360o division (widths on displacement diagram.)","Correct use of 70mm height","Establish follower position at 0o, 120o, 180o and 360o","0o to 120o, Uniform Velocity","120o to 180o, Dwell","180o, vertical fall 22mm","180o to 360o, Uniform Acceleration and Retardation (UAR)","Complete displacement diagram (freehand curve)"],"perOptionSteps":[2,2,2,3,2,2,4,3]} },
+    { id: "dcg-2018-ol-c4b-r1", kind: "anyN", verbatim: "360° division (widths on displacement diagram.)", marks: 20, contextNote: "The scheme prices this drawing step by step: 2, 2, 2, 3, 2, 2, 4, 3 — 20 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":8,"perOption":2,"options":["360° division (widths on displacement diagram.)","Correct use of 70mm height","Establish follower position at 0°, 120°, 180° and 360°","0° to 120°, Uniform Velocity","120° to 180°, Dwell","180°, vertical fall 22mm","180° to 360°, Uniform Acceleration and Retardation (UAR)","Complete displacement diagram (freehand curve)"],"perOptionSteps":[2,2,2,3,2,2,4,3]} },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q4-art",

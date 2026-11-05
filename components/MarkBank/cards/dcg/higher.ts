@@ -150,7 +150,7 @@ export const CARDS: SecCard[] = [
     questionText: "F is the focal point of the parabola. The point P is anchored to the bridge surface (axis) by two cable stays. The line PF is one cable. The second cable is inclined at 25° to a tangent at P. Construct the tangent at point P and draw both cables.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2018-hl-a3b-r1", kind: "anyN", verbatim: "Draw support cable joining P to F", marks: 6, contextNote: "The scheme prices this drawing step by step: 2, 2, 1, 1 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Draw support cable joining P to F","Construction to determine tangent at P","Draw required tangent at P","Draw second support cable at 25o to correct tangent as required"],"perOptionSteps":[2,2,1,1]} },
+    { id: "dcg-2018-hl-a3b-r1", kind: "anyN", verbatim: "Draw support cable joining P to F", marks: 6, contextNote: "The scheme prices this drawing step by step: 2, 2, 1, 1 — 6 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Draw support cable joining P to F","Construction to determine tangent at P","Draw required tangent at P","Draw second support cable at 25° to correct tangent as required"],"perOptionSteps":[2,2,1,1]} },
     ],
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secA-q3-art",
@@ -802,7 +802,7 @@ export const CARDS: SecCard[] = [
     questionText: "Determine the true inclination of the surface D to the horizontal plane. Hence, or otherwise, determine the true shape of surface D.",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
-    { id: "dcg-2018-hl-c3d-r1", kind: "anyN", verbatim: "X1Y1 inclined at 60o as shown", marks: 3, contextNote: "The scheme prices this drawing step by step: 1, 1, 1 — 3 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":1,"options":["X1Y1 inclined at 60o as shown","Edge view of surface D to determine inclination to HP","Construction to determine true shape of surface D"]} },
+    { id: "dcg-2018-hl-c3d-r1", kind: "anyN", verbatim: "X1Y1 inclined at 60° as shown", marks: 3, contextNote: "The scheme prices this drawing step by step: 1, 1, 1 — 3 marks in all, in the order the scheme sets them out.", openList: true, group: {"claimMax":3,"perOption":1,"options":["X1Y1 inclined at 60° as shown","Edge view of surface D to determine inclination to HP","Construction to determine true shape of surface D"]} },
     ],
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secC-q3-art",
