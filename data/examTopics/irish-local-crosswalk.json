@@ -28,15 +28,15 @@
     "referenceAnomalyAssociations": 2,
     "matchedLocalCardLinks": 742,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 4102,
-    "distinctStudentFacingQuestions": 4102,
+    "localPhysicalMappings": 4141,
+    "distinctStudentFacingQuestions": 4141,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 3416,
+    "retainedLocalQuestions": 3455,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 3816,
+    "newlyAddedPhysicalMappings": 3855,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -15202,6 +15202,516 @@
       "n": "W-D",
       "topicIds": [
         "irish-higher-write-a-debate"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-a",
+      "topicIds": [
+        "irish-higher-write-a-newsmagazine-article",
+        "irish-higher-write-an-essay"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-b",
+      "topicIds": [
+        "irish-higher-write-a-newsmagazine-article",
+        "irish-higher-write-an-essay"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-c",
+      "topicIds": [
+        "irish-higher-write-a-newsmagazine-article",
+        "irish-higher-write-an-essay"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-a",
+      "topicIds": [
+        "irish-higher-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-b",
+      "topicIds": [
+        "irish-higher-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-C-a",
+      "topicIds": [
+        "irish-higher-write-a-newsmagazine-article"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-C-b",
+      "topicIds": [
+        "irish-higher-write-a-newsmagazine-article"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-D-a",
+      "topicIds": [
+        "irish-higher-write-a-debate"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-D-b",
+      "topicIds": [
+        "irish-higher-write-a-debate"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-1-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-1-b",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-2-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-2-b",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-3-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-3-b",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-4-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-4-b",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-5-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-5-b",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-1",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-2",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-3",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-4",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-A-5",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-1-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-1-b",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-2-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-2-b",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-3-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-3-b",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-4-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-4-b",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-5-a",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-5-b",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-1",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-2",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-3",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-4",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "R-B-5",
+      "topicIds": [
+        "irish-higher-reading-comprehension"
       ],
       "provenance": "retained-local"
     },

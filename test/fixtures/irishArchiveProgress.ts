@@ -7,10 +7,10 @@
  * per-title cards give; the per-year tests import these instead of each pinning its own copy.
  */
 /** Papers in scripts/markbank/authored/irish-archive-inventory.json still pending a full review. */
-export const PAPERS_PENDING_FULL_REVIEW = 9;
+export const PAPERS_PENDING_FULL_REVIEW = 8;
 /** Irish Topic Atlas entries (data/examTopics/irish-local-crosswalk.json summary). */
-export const IRISH_ATLAS = { questions: 4102, retainedLocalQuestions: 3416, newlyAddedPhysicalMappings: 3816 } as const;
+export const IRISH_ATLAS = { questions: 4141, retainedLocalQuestions: 3455, newlyAddedPhysicalMappings: 3855 } as const;
 /** Irish entries in HOSTED_ANSWER_OVERRIDES (components/PaperTrail/vaultResolve.ts): reviewed papers' hosted answer maps. */
-export const IRISH_ANSWER_OVERRIDES = 82;
+export const IRISH_ANSWER_OVERRIDES = 83;
 /** Cards the archive inventory indexes (Higher, Ordinary and Foundation). */
-export const IRISH_INDEXED_CARDS = 3375;
+export const IRISH_INDEXED_CARDS = 3414;

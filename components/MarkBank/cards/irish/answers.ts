@@ -377,7 +377,7 @@ const parseSplitReading = (source: IrishAnswerSource): IrishAnswerResult | undef
     const price = SPLIT_PRICE.exec(line);
     if (price) {
       const marks = Number(price[6]);
-      const text = tidy(line.slice(0, price.index) + (price[5] ? `: ${price[5]}` : '') + (price[7] ? ` ${price[7]}` : ''));
+      const text = tidy(line.slice(0, price.index) + (price[5] ? `: ${price[5]}` : '') + (price[7] ? `: ${price[7]}` : ''));
       if (price[3] !== undefined && Number(price[3]) + Number(price[4]) !== marks) return { ok: false, reason: 'split price does not add up' };
       if (price[1] !== undefined && Number(price[1]) - Number(price[2]) !== marks) return { ok: false, reason: 'deduction does not add up' };
       if (marks > term.tariff) return { ok: false, reason: 'row above its term' };
