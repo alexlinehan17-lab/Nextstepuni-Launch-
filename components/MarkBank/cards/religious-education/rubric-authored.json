@@ -1,6 +1,6 @@
 {
  "v": 1,
- "cardCount": 28,
+ "cardCount": 57,
  "cards": [
   {
    "id": "re-2026-hl-a-1-a",
@@ -4069,6 +4069,4203 @@
      31
     ],
     "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-a-1-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2026 OL Section A Q1(a)(i)",
+   "topicId": "re-a",
+   "conceptId": "philosophical-idea-put-forward-plato-ancient",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline one philosophical idea put forward by Plato in ancient Greece.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of philosophical thought in ancient Greece by setting out accurate information on one idea put forward by Plato in ancient Greece e.g.",
+    "points": [
+     "Plato believed humans were exposed to two worlds at once i.e. the world of the senses and the world of unchanging ideas. For Plato reality is in the realm of ideas as he believed the physical world and everything perceived through the senses is ever changing and unreliable etc.",
+     "Plato believed that the human body is subject to change and therefore not ‘real’. The soul remains constant and unchanging and therefore ‘real’ – a dualist understanding of the person etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20 Marks",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of one idea put forward by Plato in ancient Greece: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – setting out information: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of one idea put forward by Plato in ancient Greece: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – setting out information: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of one idea put forward by Plato in ancient Greece: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – setting out information: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of one idea put forward by Plato in ancient Greece: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – setting out information: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of one idea put forward by Plato in ancient Greece: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – setting out information: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of one idea put forward by Plato in ancient Greece: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – setting out information: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-a-1-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2026 OL Section A Q1(a)(ii)",
+   "topicId": "re-a",
+   "conceptId": "idea-put-forward-plato-played-role",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe how an idea put forward by Plato played a role in the development of philosophy.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of philosophical thought in ancient Greece by giving an accurate account of how one of Plato’s philosophical ideas had an influence on the development of philosophy e.g.",
+    "points": [
+     "Plato’s philosophical idea about the nature of reality inspired his student Aristotle to develop his idea on the Theory of Forms, etc.",
+     "Plato’s philosophical understanding of dualism influenced philosophers such as Descartes who developed the view that the mind/soul and matter are distinct realities etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20 Marks",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of how one of Plato’s philosophical ideas played a role in the development of philosophy: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving an accurate account: Excellent account",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of how one of Plato’s philosophical ideas played a role in the development of philosophy: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving an accurate account: very good account",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of how one of Plato’s philosophical ideas played a role in the development of philosophy: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving an accurate account: good account",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of how one of Plato’s philosophical ideas played a role in the development of philosophy: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving an accurate account: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of how one of Plato’s philosophical ideas played a role in the development of philosophy: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – giving an accurate account: little account",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of how one of Plato’s philosophical ideas played a role in the development of philosophy: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving an accurate account: very little/ no account",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     5
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-a-1-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2026 OL Section A Q1(b)",
+   "topicId": "re-a",
+   "conceptId": "finding-goal-purpose-life-challenging-people",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Finding the goal and purpose of life can be challenging for people today. Explain two ways that living in the world today can make it difficult for people to find the goal and purpose of life.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the search for meaning by giving an accurate account of two reasons why living in the world today could make it difficult to find the goal and purpose of life e.g.",
+    "points": [
+     "Life today can make it difficult to find the goal and purpose of life because consumerism encourages people to focus on wealth and possessions rather than finding deeper meaning etc.",
+     "Social Media today can create pressure to compare ourselves with others, making it harder to develop a clear sense of identity and purpose etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of reasons why living in the world today could make it difficult to find the goal and purpose of life: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving an accurate account: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of reasons why living in the world today could make it difficult to find the goal and purpose of life: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving an accurate account: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of reasons why living in the world today could make it difficult to find the goal and purpose of life: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving an accurate account: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of reasons why living in the world today could make it difficult to find the goal and purpose of life: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving an accurate account: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of reasons why living in the world today could make it difficult to find the goal and purpose of life: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – giving an accurate account: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of reasons why living in the world today could make it difficult to find the goal and purpose of life: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving an accurate account: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     6
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-a-2-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2026 OL Section A Q2(a)",
+   "topicId": "re-a",
+   "conceptId": "religious-beliefs-people-who-lived-ancient",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Profile how the religious beliefs of people who lived in an ancient society can be seen in an example from each of the following: ● Rites of Initiation ● Sacred Art/Artefacts",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the search for meaning in ancient societies by accurately tracing how the religious beliefs of people who lived in an ancient society can be seen in an example from each of the religious behaviours listed in the question e.g.",
+    "points": [
+     "Rites of Initiation – The initiation ceremonies of Ancient Egypt, such as the training of priests in temple rituals, show the religious belief that special knowledge and purification were needed to communicate with the gods etc.",
+     "Sacred Art/Artefact – The Venus of Willendorf statuette shows the religious belief of Palaeolithic people that fertility and successful reproduction were sacred and essential for survival etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of how the religious beliefs of people who lived in an ancient society can be seen in an example from each of the religious behaviours listed in the question: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – accuratel y tracing: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of how the religious beliefs of people who lived in an ancient society can be seen in an example from each of the religious behaviours listed in the question: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – accuratel y tracing: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of how the religious beliefs of people who lived in an ancient society can be seen in an example from each of the religious behaviours listed in the question: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – accuratel y tracing: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of how the religious beliefs of people who lived in an ancient society can be seen in an example from each of the religious behaviours listed in the question: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – accuratel y tracing: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of how the religious beliefs of people who lived in an ancient society can be seen in an example from each of the religious behaviours listed in the question: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – accuratel y tracing: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of how the religious beliefs of people who lived in an ancient society can be seen in an example from each of the religious behaviours listed in the question: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – accuratel y tracing: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     7
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-a-2-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2026 OL Section A Q2(b)",
+   "topicId": "re-a",
+   "conceptId": "examples-sense-sacred-seen-important-lives",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe two examples of how a sense of the sacred can be seen as important in the lives of people today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of spirituality in contemporary culture by giving an accurate account of two examples of how a sense of the ‘sacred’, a connection to what is holy, spiritual or beyond ordinary human experience, could be seen as important in the lives of people today e.g.",
+    "points": [
+     "A sense of the sacred can be seen as important to people today because it could help people find a deeper purpose in life beyond material possessions and everyday concerns etc.",
+     "A sense of the sacred can be seen as important to people today as practices such as prayer, meditation, or pilgrimage can provide time for reflection, and help people to understand themselves and their place in the world etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of how a sense of the ‘sacred’ could be seen as important in the lives of people today: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving an accurate account: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of how a sense of the ‘sacred’ could be seen as important in the lives of people today: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving an accurate account: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of how a sense of the ‘sacred’ could be seen as important in the lives of people today: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving an accurate account: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of how a sense of the ‘sacred’ could be seen as important in the lives of people today: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving an accurate account: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of how a sense of the ‘sacred’ could be seen as important in the lives of people today: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – giving an accurate account: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of how a sense of the ‘sacred’ could be seen as important in the lives of people today: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving an accurate account: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     8
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-a-3-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2026 OL Section A Q3(a)",
+   "topicId": "re-a",
+   "conceptId": "similarity-difference-understanding-god-found-religions",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline a similarity and a difference in the understanding of God found in two of the following religions: ● Christianity ● Islam ● Judaism",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the concept of God/the divine by setting out accurate information on a similarity and a difference in the understanding of God found in two of the religions listed in the question e.g.",
+    "points": [
+     "Christianity, Islam and Judaism show belief in one God who is seen as all powerful, the creator of all things and merciful etc.",
+     "Central to the Christian understanding of God is the holy trinity, that God is three beings in one, the Father, Son and Holy Spirit which is different to Judaism where Yahweh is understood as a single entity etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of understanding of God found in two of the religions listed in the question: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – setting out accurate information on a similarity and a differ ence: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of understanding of God found in two of the religions listed in the question: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – setting out accurate information on a similarity and a differ ence: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of understanding of God found in two of the religions listed in the question: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – setting out accurate information on a similarity and a differ ence: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of understanding of God found in two of the religions listed in the question: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – setting out accurate information on a similarity and a differ ence: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of understanding of God found in two of the religions listed in the question: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – setting out accurate information on a similarity and a differ ence: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of understanding of God found in two of the religions listed in the question: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – setting out accurate information on a similarity and a differ ence: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     9
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-a-3-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2026 OL Section A Q3(b)",
+   "topicId": "re-a",
+   "conceptId": "understanding-god-gods-transcendent-found-teaching",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine how the understanding of God/gods/the transcendent found in the teaching of one of the following religions influences its members to act in a moral way: ● Buddhism ● Christianity ● Hinduism ● Islam ● Judaism",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the relationship between religious faith and ethical behaviour by looking closely at how the understanding of God/gods/the transcendent, found in one religion listed in the question, influences its members to behave in an ethical manner e.g.",
+    "points": [
+     "Buddhism – the understanding of the Buddha as the ‘Enlightened One’ influences how Buddhists practice the Eightfold Path e.g. practice right action, intention, etc.",
+     "Christianity – the understanding of God as loving and forgiving influences members to ‘love your neighbour as yourself’ etc.",
+     "Hinduism – the belief in various gods as manifestations of Brahman influences Hindus to observe the Law of Karma etc.",
+     "Islam – the belief in Allah as compassionate and merciful influences believers to also be compassionate especially to the poor and needy, e.g. practice Zakat etc.",
+     "Judaism – the belief in one all-powerful God is influences Jews to uphold the first three commandments of the Decalogue etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40 Marks",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of how the understanding of God/gods/the transcendent, found in one religion listed in the question, influences its members to behave in an ethical manner: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) –looking close ly at: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of how the understanding of God/gods/the transcendent, found in one religion listed in the question, influences its members to behave in an ethical manner: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) –looking close ly at: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of how the understanding of God/gods/the transcendent, found in one religion listed in the question, influences its members to behave in an ethical manner: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) –looking close ly at: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of how the understanding of God/gods/the transcendent, found in one religion listed in the question, influences its members to behave in an ethical manner: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) –looking close ly at: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of how the understanding of God/gods/the transcendent, found in one religion listed in the question, influences its members to behave in an ethical manner: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) –looking close ly at: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of how the understanding of God/gods/the transcendent, found in one religion listed in the question, influences its members to behave in an ethical manner: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) –looking close ly at: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     10
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-b-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2026 OL Section B Q(a)",
+   "topicId": "re-b",
+   "conceptId": "reason-returning-original-teaching-jesus-important",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain the reason why returning to the original teaching of Jesus was important for two of the following movements: ● Céli Dé ● Early 19th century Protestantism ● Liberation Theology ● Luther ● The Mendicant Orders ● The Second Vatican Council",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an ability to recognise moments of adaption and reform in the Christian tradition by giving an accurate account of the reason(s) why returning to the original message of Jesus was important in the development of two of the movements listed in the question e.g.",
+    "points": [
+     "Céili Dé - Sought to return to Jesus’ message to show devotion to God and to ensure prayer was prioritised over material goods and other worldly distractions; they believed it was important to emphasise ascetism and strict adherence to early Christian practices etc.",
+     "The Mendicant orders - sought to return to Jesus original vision because they believed it was important to devote their lives to care for the poor by taking a vow of poverty and rejecting material goods, etc.",
+     "Luther’s reforms - Luther rejected the emergence of elites and prioritised deep devotion to God as they believed it was the only path to salvation etc.",
+     "The evangelical movement in early 19th century Protestantism - sought to revive the original teachings of Jesus as they believed in the importance of forgiveness and atoning for one’s own sins through personal conversion, biblical authority, and social reform, etc.",
+     "The Second Vatican Council - called for ‘aggiornamento’ to modernise the church and bring it into the 20th century. They believed it was important there was involvement from the laity and greater interaction with other faiths to make the church more inclusive and closer to Jesus original teachings etc.",
+     "Liberation Theology - echoed Jesus’s calls for justice and equal treatment of the poor in modern society."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of why returning to the original message of Jesus was important in the development of two of the movements listed in the question: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) –giving an accurate account of the reasons why: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of why returning to the original message of Jesus was important in the development of two of the movements listed in the question: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) –giving an accurate account of the reasons why: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of why returning to the original message of Jesus was important in the development of two of the movements listed in the question: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) –giving an accurate account of the reasons why: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of why returning to the original message of Jesus was important in the development of two of the movements listed in the question: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) –giving an accurate account of the reasons why: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of why returning to the original message of Jesus was important in the development of two of the movements listed in the question: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) –giving an accurate account of the reasons why: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of why returning to the original message of Jesus was important in the development of two of the movements listed in the question: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) –giving an accurate account of the reasons why: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     11
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-b-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2026 OL Section B Q(b)",
+   "topicId": "re-b",
+   "conceptId": "evaluate-evidence-existence-jesus-nazareth-found",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Evaluate the evidence for the existence of Jesus of Nazareth found in two of the sources listed below: ● An Evangelist – Matthew, Mark, Luke or John ● Josephus ● Saint Paul",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the sources of evidence for Jesus of Nazareth by examining different perspectives and accurately judging the reliability of the evidence for the existence of Jesus found in two of the sources listed in the question e.g.",
+    "points": [
+     "Mark – his Gospel is considered the earliest Gospel and provides detailed accounts of Jesus’ life, however as it was written by a believer rather than an eyewitness it is not considered to be a fully reliable historical source etc.",
+     "John – his Gospel presents strong evidence for Jesus’ existence through detailed teachings and events, but its highly theological focus may reduce its historical reliability etc.",
+     "Josephus – Josephus provides important non-Christian evidence for Jesus’ existence as a historian; his evidence for the existence of Jesus is considered to be more reliable etc.",
+     "St. Paul – Paul’s letters are early evidence for Jesus existence, but because he wrote from faith rather than as a historian, his evidence is valuable yet not considered fully historically reliable etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of judging the reliability of the evidence for the existence of Jesus found in two of the sources listed in the question: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – examining different perspectives and accurately judging: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of judging the reliability of the evidence for the existence of Jesus found in two of the sources listed in the question: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – examining different perspectives and accurately judging: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of judging the reliability of the evidence for the existence of Jesus found in two of the sources listed in the question: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – examining different perspectives and accurately judging: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of judging the reliability of the evidence for the existence of Jesus found in two of the sources listed in the question: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – examining different perspectives and accurately judging: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of judging the reliability of the evidence for the existence of Jesus found in two of the sources listed in the question: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – examining different perspectives and accurately judging: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of judging the reliability of the evidence for the existence of Jesus found in two of the sources listed in the question: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – examining different perspectives and accurately judging: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     12
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-b-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2026 OL Section B Q(c)",
+   "topicId": "re-b",
+   "conceptId": "impact-resurrection-jesus-first-disciples-relation",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Discuss the impact of the resurrection of Jesus on the first disciples in relation to two of the following: ● A new understanding of Jesus ● Awareness of Community ● Sense of Mission",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of Jesus of Nazareth by examining and drawing accurate conclusions about the impact of Jesus’ resurrection on the first disciples in relation to two of the aspects listed in the question e.g.",
+    "points": [
+     "A new understanding of Jesus - After the resurrection the disciples’ understanding of Jesus was starting to change; they used new titles for Jesus to express their belief in him as Lord; Mediator; Son of God etc.",
+     "Awareness of Community - The resurrection transformed the disciples into a united community who realised that faith in the risen Jesus was strengthened when shared, etc.",
+     "Sense of Mission - Jesus’ risen presence gave his disciples strength to go forth to all people spreading the ‘Good News’ of Jesus as mediator between God and humanity etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of the impact of Jesus’ resurrection on the first disciples in relation to two of the aspects listed in the question: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – examining and drawing accurate co nclusions: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of the impact of Jesus’ resurrection on the first disciples in relation to two of the aspects listed in the question: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – examining and drawing accurate co nclusions: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of the impact of Jesus’ resurrection on the first disciples in relation to two of the aspects listed in the question: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – examining and drawing accurate co nclusions: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of the impact of Jesus’ resurrection on the first disciples in relation to two of the aspects listed in the question: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – examining and drawing accurate co nclusions: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of the impact of Jesus’ resurrection on the first disciples in relation to two of the aspects listed in the question: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – examining and drawing accurate co nclusions: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of the impact of Jesus’ resurrection on the first disciples in relation to two of the aspects listed in the question: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – examining and drawing accurate co nclusions: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     13
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-c-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2026 OL Section C Q(a)",
+   "topicId": "re-c",
+   "conceptId": "most-recent-2022-census-shows-increase",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "The most recent 2022 Census shows an increase in the number of religions found in Ireland today. Describe two other trends found in religion in Ireland today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of trends in religion by giving an accurate account of two recent developments within religion in Ireland other than that given in the question e.g.",
+    "points": [
+     "Secularisation – the referendum on same sex marriage and abortion have shown that people are less influenced by religious teachings on moral issues etc.",
+     "Inter-faith dialogue – the growth of religious traditions in Ireland in recent years has increased the need for respect and tolerance between members of different faiths etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of two recent developments within religion in Ireland other than that given in the question: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving an accurate account: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of two recent developments within religion in Ireland other than that given in the question: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving an accurate account: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of two recent developments within religion in Ireland other than that given in the question: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving an accurate account: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of two recent developments within religion in Ireland other than that given in the question: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving an accurate account: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of two recent developments within religion in Ireland other than that given in the question: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – giving an accurate account: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of two recent developments within religion in Ireland other than that given in the question: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving an accurate account: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     14
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-c-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2026 OL Section C Q(b)",
+   "topicId": "re-c",
+   "conceptId": "choose-religion-religion-christianity-judaism-buddhism",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Choose one religion from List A and one religion from list B below: List A: ● Christianity ● Judaism List B: ● Buddhism ● Hinduism ● Islam Compare the way the founding story is recalled in a ceremony or festival by members today in each of the religions you have chosen.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of world religions by giving an accurate account of a similarity and/or difference in the way a religious festival recalls an event from the founding story in one religion from List A and one religion from List B e.g.",
+    "points": [
+     "Similarity – during the celebration of Hanukah in Judaism candles are lit on a menorah to recall the rededication of the Temple which is similar to the celebration of Diwali in Hinduism where candles and lamps are lit to celebrate the return of Ram and Sita and the victory of goodness etc.",
+     "Difference – during Wesak in Buddhism the birth, life and enlightenment of the Buddha is recalled through bathing statues of the Buddha with water which is different to the festival of Eid-ul-Adha in Islam where the sacrifice of Abraham is recalled through the eating of a lamb etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of the way a religious festival recalls an event from the founding story in one religion from List A and one religion from List B: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – an accurate account of a similarity and/or d ifference: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of the way a religious festival recalls an event from the founding story in one religion from List A and one religion from List B: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – an accurate account of a similarity and/or d ifference: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of the way a religious festival recalls an event from the founding story in one religion from List A and one religion from List B: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – an accurate account of a similarity and/or d ifference: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of the way a religious festival recalls an event from the founding story in one religion from List A and one religion from List B: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – an accurate account of a similarity and/or d ifference: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of the way a religious festival recalls an event from the founding story in one religion from List A and one religion from List B: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – an accurate account of a similarity and/or d ifference: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of the way a religious festival recalls an event from the founding story in one religion from List A and one religion from List B: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – an accurate account of a similarity and/or d ifference: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     15
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-c-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2026 OL Section C Q(c)",
+   "topicId": "re-c",
+   "conceptId": "community-play-important-role-members-today",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine how community can play an important role for members today in two of the following religions: ● Buddhism ● Christianity ● Hinduism ● Islam ● Judaism",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of major world religions by looking closely at how being part of a community can play an important role important for members within two of the religions listed in the question e.g.",
+    "points": [
+     "Buddhism - The Sangha, community of monks, nuns and lay followers support each person’s path to enlightenment etc.",
+     "Christianity - Christians believe they form one spiritual body through faith in Christ; community expresses love and service etc.",
+     "Hinduism - community helps Hindus live out dharma through shared worship, festivals, etc.",
+     "Islam - Muslims see themselves as part of a global Ummah united in submission to Allah etc.",
+     "Judaism - Jews see themselves as part of a covenant with God as a people not just as individuals etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of how being part of a community can play an important role important for members within two of the religions listed in the question.: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – looking close ly at: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of how being part of a community can play an important role important for members within two of the religions listed in the question.: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – looking close ly at: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of how being part of a community can play an important role important for members within two of the religions listed in the question.: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – looking close ly at: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of how being part of a community can play an important role important for members within two of the religions listed in the question.: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – looking close ly at: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of how being part of a community can play an important role important for members within two of the religions listed in the question.: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – looking close ly at: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of how being part of a community can play an important role important for members within two of the religions listed in the question.: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – looking close ly at: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     16
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-d-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2026 OL Section D Q(a)",
+   "topicId": "re-d",
+   "conceptId": "understanding-right-wrong-put-forward-theories",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline the understanding of what is right and wrong that is put forward in two of the following theories: ● Deontological Ethics ● Hedonism ● Natural Law ● Teleological Ethics ● Utilitarianism ● Virtue Ethics",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of moral theories by setting out accurate information on the understanding of what is right and wrong that is expressed in two of the moral philosophies/theories listed in the question e.g.",
+    "points": [
+     "Deontological ethics –what is right is fulfilling one’s moral duty and obeying objective moral laws; what is wrong is acting against those duties or laws etc.",
+     "Hedonism – what is right is whatever brings the greatest pleasure or happiness; what is wrong is whatever causes pain or reduces pleasure etc.",
+     "Natural law –what is right is acting in accordance with human nature and the moral law discoverable through reason; what is wrong is acting against human nature or the natural moral law etc.",
+     "Teleological ethics –what is right is whatever helps a person achieve their ultimate purpose or end (telos); what is wrong is whatever prevents or frustrates that purpose etc.",
+     "Utilitarianism – what is right is whatever produces the greatest happiness for the greatest number; what is wrong is whatever results in less overall happiness or greater suffering etc.",
+     "Virtue ethics – what is right is acting in ways that reflect good moral virtues such as courage, honesty and justice; what is wrong is acting in ways that display vices or poor moral character etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of the understanding of what is right and wrong that is expressed in two of the moral philosophies/theories listed in the question: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – setting out accurate inform ation: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of the understanding of what is right and wrong that is expressed in two of the moral philosophies/theories listed in the question: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – setting out accurate inform ation: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of the understanding of what is right and wrong that is expressed in two of the moral philosophies/theories listed in the question: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – setting out accurate inform ation: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of the understanding of what is right and wrong that is expressed in two of the moral philosophies/theories listed in the question: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – setting out accurate inform ation: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of the understanding of what is right and wrong that is expressed in two of the moral philosophies/theories listed in the question: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – setting out accurate inform ation: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of the understanding of what is right and wrong that is expressed in two of the moral philosophies/theories listed in the question: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – setting out accurate inform ation: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     17
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-d-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2026 OL Section D Q(b)",
+   "topicId": "re-d",
+   "conceptId": "morally-mature-person-approach-deciding-right",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine how a morally mature person would approach deciding what is right and wrong on one of the following issues: ● Crime & Punishment ● Medical Ethics ● Politics & Economics ● Relationships & Sexuality ● Violence & War",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of moral maturity by looking closely at how a morally mature person would approach decision making about what is right and wrong in relation to one of the issues listed in the question e.g.",
+    "points": [
+     "Crime and Punishment – a morally mature person would consider whether a law promotes justice and serves the common good before deciding if it is right or wrong to obey it etc.",
+     "Medical ethics – a morally mature person would consult moral codes, the teaching of moral authorities etc. in deciding whether or not to allow the termination of a person’s life so as to prevent further suffering etc.",
+     "Politics and Economics – an altruistic person would work towards balancing individual rights with the common good etc.",
+     "Relationships and Sexuality – a morally mature person would work towards promoting respect for the equality of all people etc.",
+     "Violence and War – a morally mature person would consider the consequences involved in deciding whether or not war/violence can ever be justified etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40 Marks",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of how a morally mature person would approach decision making about what is right and wrong in relation to one of the issues listed in the question: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – looking closely at: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of how a morally mature person would approach decision making about what is right and wrong in relation to one of the issues listed in the question: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – looking closely at: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of how a morally mature person would approach decision making about what is right and wrong in relation to one of the issues listed in the question: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – looking closely at: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of how a morally mature person would approach decision making about what is right and wrong in relation to one of the issues listed in the question: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – looking closely at: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of how a morally mature person would approach decision making about what is right and wrong in relation to one of the issues listed in the question: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – looking closely at: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of how a morally mature person would approach decision making about what is right and wrong in relation to one of the issues listed in the question: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – looking closely at: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     18
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-d-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2026 OL Section D Q(c)",
+   "topicId": "re-d",
+   "conceptId": "example-people-who-lived-ancient-civilisations",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe an example of how people who lived in each of the following ancient civilisations were concerned about moral issues: ● The Hebrews ● The Romans",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of morality as a human phenomenon by giving an accurate account of an example of how people in each of the ancient civilisations listed in the question were concerned with questions of what is right and wrong e.g.",
+    "points": [
+     "The Hebrews – were concerned about the moral issue of remaining faithful to God despite foreign occupation, believing obedience to God’s covenant was more important than loyalty to earthly rulers etc.",
+     "The Romans –were concerned about the morality of war, with Cicero arguing that only wars fought for a just cause were morally justified, while wars motivated by conquest or glory were considered unjust etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of how people in each of the ancient civilisations were concerned with questions of what is right and wrong: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving an accurate account: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of how people in each of the ancient civilisations were concerned with questions of what is right and wrong: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving an accurate account: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of how people in each of the ancient civilisations were concerned with questions of what is right and wrong: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving an accurate account: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of how people in each of the ancient civilisations were concerned with questions of what is right and wrong: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving an accurate account: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of how people in each of the ancient civilisations were concerned with questions of what is right and wrong: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – giving an accurate account: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of how people in each of the ancient civilisations were concerned with questions of what is right and wrong: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving an accurate account: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     19
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-e-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2026 OL Section E Q(a)",
+   "topicId": "re-e",
+   "conceptId": "impact-changing-roles-men-women-society",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe the impact on the changing roles of men and women in society today gained from two of following: ● Biology ● Philosophy ● Psychology ● Sociology",
+   "totalMarks": 80,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of gender in society by giving an accurate account of the influence that two of the branches of learning listed in the question have had on changes in the position of men and women in society today. e.g.",
+    "points": [
+     "Biology – purposes differentials in establishing the differences between men and women i.e. genes and chromosomes, brain function, sex organs, etc. Biology continues to impact the roles of men and women in society as women still carry the physical demands pregnancy and childbirth affecting career timing, wage gaps, etc.",
+     "Philosophy – considers what it means to be a human being; be that a man or woman. Recent philosophy has considered the role of equality in the relationship between the sexes and encouraged men and women to take on equal roles in the workplace and home etc.",
+     "Psychology – testing found at least four differences between the sexes i.e. verbal; mathematical; visual- spatial abilities; aggression and the variations within each gender are greater than the differences between genders; this has highlighted that abilities are based on individuality rather than gender etc.",
+     "Sociology – research has found that gender roles are influenced by social contexts, thus traditional view of gender roles are being challenged e.g. stay at home dad etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 40,
+    "gridHead": "40 Marks x2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of the influence that two of the branches of learning listed in the question have on changes in the position of men and women in society today: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving an accurate account: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of the influence that two of the branches of learning listed in the question have on changes in the position of men and women in society today: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving an accurate account: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of the influence that two of the branches of learning listed in the question have on changes in the position of men and women in society today: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving an accurate account: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of the influence that two of the branches of learning listed in the question have on changes in the position of men and women in society today: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving an accurate account: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of the influence that two of the branches of learning listed in the question have on changes in the position of men and women in society today: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – giving an accurate account: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of the influence that two of the branches of learning listed in the question have on changes in the position of men and women in society today: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving an accurate account: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     20
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-e-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2026 OL Section E Q(b)(i)",
+   "topicId": "re-e",
+   "conceptId": "role-played-men-women-today-religions",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine the role played by men and women today in two of the following religions: ● Buddhism ● Christianity ● Hinduism ● Islam ●Judaism",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the roles of women and men in major world religions by looking closely at the role played by women and men in two of the world religions listed in the question e.g.",
+    "points": [
+     "Buddhism - traditionally men were seen as spiritual leaders but in many modern traditions women serve as teachers and leaders in the Buddhist faith etc.",
+     "Christianity - Christian denominations such as Anglicans and Methodists allow females to lead faith services while in Roman Catholicism men hold the main leadership roles, etc.",
+     "Hinduism - women hold an increasingly prominent role within the Hindu faith. Traditionally seen as homemakers, many women now hold roles as significant gurus and prayer leaders alongside men, etc",
+     "Islam – the Quran states that men and women can become Imams, however cultural practice has seen men primarily take the role of Imam etc.",
+     "Judaism - primary roles within the faith are given to male leaders in orthodox synagogues. In conservative and reform synagogues the role of women has been elevated with the recognition of women as prayer leaders and rabbis, etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of the role played by men and women in two of the world religions listed in the question: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – looking closely at: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of the role played by men and women in two of the world religions listed in the question: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – looking closely at: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of the role played by men and women in two of the world religions listed in the question: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – looking closely at: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of the role played by men and women in two of the world religions listed in the question: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – looking closely at: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of the role played by men and women in two of the world religions listed in the question: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – looking closely at: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of the role played by men and women in two of the world religions listed in the question: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – looking closely at: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     21
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-e-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2026 OL Section E Q(b)(ii)",
+   "topicId": "re-e",
+   "conceptId": "choose-woman-categories-she-contributed-development",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Choose one woman from any of the categories below and profile how she contributed to the development of her religious tradition: ● Founders & Reformers of Religious Orders ● Religious Writers ● Social Reformers ● Spiritual Thinkers",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the contribution of women to the development of religious traditions by accurately tracing how the work of one woman from a category listed in the question played a role in the development of her religious tradition e.g.",
+    "points": [
+     "Founder/Reformer of Religious Orders - Nano Nagel provided Catholic education to the poor and founded the Presentation Order, etc.",
+     "Religious Writers – Dorothy Day lived her life in solidarity with the poor; Dorothy helped to set up the ‘The Catholic Worker’ newspaper which continues to be published and influenced the liberation theology movement within Christianity etc.",
+     "Social Reformer - Edwina Gately responded to her compassion for others and developed her religious tradition by living according to the characteristics of the Kingdom of God. Edwina engaged in humanitarian service sending lay Christian volunteers to assist people in need globally, etc.",
+     "Spiritual Thinkers – Teresa of Avila developed contemplation as a form of prayer in her religious tradition etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40 Marks",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of how the work of one woman from a category listed in the question played a role in the development of her religious tradition: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – accurately tracing: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of how the work of one woman from a category listed in the question played a role in the development of her religious tradition: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – accurately tracing: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of how the work of one woman from a category listed in the question played a role in the development of her religious tradition: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – accurately tracing: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of how the work of one woman from a category listed in the question played a role in the development of her religious tradition: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – accurately tracing: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of how the work of one woman from a category listed in the question played a role in the development of her religious tradition: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – accurately tracing: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of how the work of one woman from a category listed in the question played a role in the development of her religious tradition: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – accurately tracing: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     22
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-f-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "F",
+   "questionRef": "2026 OL Section F Q(a)(i)",
+   "topicId": "re-f",
+   "conceptId": "ideas-put-forward-commentator-religion-environment",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline two ideas put forward by a commentator on religion and the environment about the need to care for the earth.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of religion and the environment by setting out accurate information on two ideas put forward by a commentator on religion and the environment about the need to care for the earth e.g.",
+    "points": [
+     "Thomas Berry – put forward the idea that people are becoming alienated from nature and need to re- learn that if one part of God’s creation is destroyed, the rest also suffers etc; he also said that humanity’s ‘Great Work’ in our era is to move from a destructive, industrial society to one that lives in harmony with Earth’s systems etc.",
+     "Fr. Séan McDonagh – outlines the causes and consequences of human activity in polluting rivers, lakes, seas and calls on Christians to see water as living for example in Baptism etc; he emphasised that ecological issues and social justice are inseparable, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of two ideas put forward by a commentator on religion and the environment about the need to care for the earth: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – Setting out accurate information: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of two ideas put forward by a commentator on religion and the environment about the need to care for the earth: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Setting out accurate information: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of two ideas put forward by a commentator on religion and the environment about the need to care for the earth: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Setting out accurate information: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of two ideas put forward by a commentator on religion and the environment about the need to care for the earth: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Setting out accurate information: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of two ideas put forward by a commentator on religion and the environment about the need to care for the earth: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Setting out accurate information: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of two ideas put forward by a commentator on religion and the environment about the need to care for the earth: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Setting out accurate information: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     23
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-f-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "F",
+   "questionRef": "2026 OL Section F Q(a)(ii)",
+   "topicId": "re-f",
+   "conceptId": "cultural-economic-political-social-structural-causes",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "● Cultural ● Economic ● Political ● Social Profile how two of the above structural causes have contributed to one of the following issues in society: ● Discrimination in Ireland ● Poverty in Ireland ● World Hunger",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show and understanding of social analysis by accurately tracing evidence of how two of the structures listed in the question could contribute to either discrimination in Ireland or poverty in Ireland or world hunger e.g.",
+    "points": [
+     "Cultural structures could influence who and what is valued by people and so, for example, the media could contribute to discrimination in Ireland if stereotypes are not challenged etc.",
+     "Economic structures may determine who has access to and control of resources, wealth and work and so could contribute to world hunger as poor countries in the developing world do not have equal access to resources etc.",
+     "Political structures can shape the decision-making processes of a nation or a group and so may contribute to world hunger as government policy determines the ways in which resources are distributed etc.",
+     "Social structures can limit the contact people have with those whose circumstances are different to their own; This could contribute to poverty in Ireland as people may not be aware of the need for action on poverty etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of how two of the structures listed in the question could contribute to either discrimination in Ireland or poverty in Ireland or world hunger: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – accurately tracing: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of how two of the structures listed in the question could contribute to either discrimination in Ireland or poverty in Ireland or world hunger: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – accurately tracing: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of how two of the structures listed in the question could contribute to either discrimination in Ireland or poverty in Ireland or world hunger: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – accurately tracing: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of how two of the structures listed in the question could contribute to either discrimination in Ireland or poverty in Ireland or world hunger: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – accurately tracing: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of how two of the structures listed in the question could contribute to either discrimination in Ireland or poverty in Ireland or world hunger: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – accurately tracing: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of how two of the structures listed in the question could contribute to either discrimination in Ireland or poverty in Ireland or world hunger: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – accurately tracing: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     24
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-f-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "F",
+   "questionRef": "2026 OL Section F Q(b)",
+   "topicId": "re-f",
+   "conceptId": "teaching-major-world-religion-seen-key",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe how the teaching of a major world religion can be seen in two key principles of the ‘Just War’ theory.",
+   "totalMarks": 80,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of religious perspectives on violence by giving an accurate account of how two key principles of the ‘Just War’ theory are reflected in the teaching of a major world religion e.g.",
+    "points": [
+     "Just cause – the principle that war must only be entered into if there is a just cause (the protection of innocent people etc.) is seen in the religious teaching of Islam where a Jihad (holy war) is allowed to defend the name of Islam etc.",
+     "Right intention – Jesus teaching on helping those who are oppressed or suffering is seen in the principle of the ‘Just War’ theory that promoting justice for the innocent and oppressed is the ‘right intention’ for going to war etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 40,
+    "gridHead": "40 Marks x2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of how two key principles of the ‘Just War’ theory are reflected in the teaching of a major world religion: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving an accurate account: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of how two key principles of the ‘Just War’ theory are reflected in the teaching of a major world religion: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving an accurate account: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of how two key principles of the ‘Just War’ theory are reflected in the teaching of a major world religion: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving an accurate account: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of how two key principles of the ‘Just War’ theory are reflected in the teaching of a major world religion: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving an accurate account: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of how two key principles of the ‘Just War’ theory are reflected in the teaching of a major world religion: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – giving an accurate account: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of how two key principles of the ‘Just War’ theory are reflected in the teaching of a major world religion: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving an accurate account: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     25
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-g-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "G",
+   "questionRef": "2026 OL Section G Q(a)(i)",
+   "topicId": "re-g",
+   "conceptId": "importance-role-reflection-plays-religious-experience",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain the importance of the role reflection plays in the religious experience of young people today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the nature of religious experience by giving an accurate account of the reasons why deep thought on a spiritual idea is significant for young people today. e.g.",
+    "points": [
+     "Reflection has importance in a young person’s life as it can lead to deep thought about a person’s relationship with the divine etc.",
+     "Reflection provides an opportunity for young people to identify virtues they wish to cultivate such as patience, kindness, etc which may help them align with their religious/spiritual values etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40 Marks",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of why deep thought on a spiritual idea is significance for young people today: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving accurate account of the reasons: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of why deep thought on a spiritual idea is significance for young people today: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving accurate account of the reasons: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of why deep thought on a spiritual idea is significance for young people today: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving accurate account of the reasons: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "16 - 21",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of why deep thought on a spiritual idea is significance for young people today: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving accurate account of the reasons: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "10 - 15",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of why deep thought on a spiritual idea is significance for young people today: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – giving accurate account of the reasons: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of why deep thought on a spiritual idea is significance for young people today: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving accurate account of the reasons: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     26
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-g-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "G",
+   "questionRef": "2026 OL Section G Q(a)(ii)",
+   "topicId": "re-g",
+   "conceptId": "role-symbol-plays-way-sacrament-celebrated",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine the role that symbol plays in the way ‘sacrament’ is celebrated within two Christian denominations.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of sacrament in two Christian traditions by looking closely at the role that symbolic objects/ or actions play in the way ‘sacrament’ is celebrated within two Christian denominations e.g.",
+    "points": [
+     "Roman Catholicism: The Sacrament of Baptism – initiation into the Christian faith is symbolised by the blessing with water, anointing with oil, use of white garment, lighting a candle, etc.",
+     "Anglicanism: Anglican Communion – bread represents the body of Christ broken for humanity, wine represents the blood of Christ shed for the forgiveness of sins, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of the role that symbolic objects/ or actions play in the way ‘sacrament’ is celebrated within two Christian denominations: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – looking closely at: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of the role that symbolic objects/ or actions play in the way ‘sacrament’ is celebrated within two Christian denominations: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – looking closely at: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of the role that symbolic objects/ or actions play in the way ‘sacrament’ is celebrated within two Christian denominations: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – looking closely at: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of the role that symbolic objects/ or actions play in the way ‘sacrament’ is celebrated within two Christian denominations: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – looking closely at: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of the role that symbolic objects/ or actions play in the way ‘sacrament’ is celebrated within two Christian denominations: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – looking closely at: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of the role that symbolic objects/ or actions play in the way ‘sacrament’ is celebrated within two Christian denominations: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – looking closely at: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     27
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-g-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "G",
+   "questionRef": "2026 OL Section G Q(b)",
+   "topicId": "re-g",
+   "conceptId": "religious-belief-expressed-through-features-mark",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe how religious belief is expressed through the features that mark a space as sacred in two of the following religions: ● Buddhism ● Christianity ● Hinduism ● Islam ●Judaism",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an awareness of contexts for prayer by giving an accurate account of how religious belief is expressed through the features that identify a space as being sacred in two of the religions listed in the question e.g.",
+    "points": [
+     "Buddhism: Vihara – The statue of the Buddha reflects the belief that the Buddha attained enlightenment and that by following his teachings believers can also strive to attain enlightenment etc.",
+     "Christianity: The Church – the tabernacle contains the Eucharist which reflects the belief that the Holy Communion represents the body of Christ etc.",
+     "Hinduism: The Temple – The garbhagriha is where the statue of the gods or goddesses are kept which reflects the belief that various deities are all representations of the supreme god Brahman etc.",
+     "Islam: - The Mosque: The Mihrab points in the direction of Mecca which reflects the belief that Muslims must face the holy city of Mecca when they pray etc.",
+     "Judaism: - Synagogue – The Ner Tamid is perpetual light that reflects the unending Covenant with God etc"
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of how religious belief is expressed through the features that identify a space as being sacred in two of the religions listed in the question: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving an accurate account: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of how religious belief is expressed through the features that identify a space as being sacred in two of the religions listed in the question: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving an accurate account: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of how religious belief is expressed through the features that identify a space as being sacred in two of the religions listed in the question: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving an accurate account: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of how religious belief is expressed through the features that identify a space as being sacred in two of the religions listed in the question: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving an accurate account: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of how religious belief is expressed through the features that identify a space as being sacred in two of the religions listed in the question: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – giving an accurate account: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of how religious belief is expressed through the features that identify a space as being sacred in two of the religions listed in the question: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving an accurate account: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The paper prints 80 marks for this part; its marking scheme marks it as two answers at 20 marks each, which is what the grid below shows. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     28
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-h-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2026 OL Section H Q(a)(i)",
+   "topicId": "re-h",
+   "conceptId": "examples-bible-influence-famous-speeches-universal",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe two examples of how the Bible has had an influence on one of the following: ● Famous Speeches ● The Universal Declaration of Human Rights",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the Bible as a classical text by giving an accurate account of how the influence of the Bible can be seen in one example from a famous speech or the Universal Declaration of Human Rights e.g.",
+    "points": [
+     "The first article from the Universal Declaration of Human Rights recognises the ‘inherent dignity’ and the ‘equal and inalienable rights’ of every human being which echoes the book of Genesis where it states that humanity is made ‘in the image and likeness of God’ etc.",
+     "Martin Luther King’s famous speech ‘I have a dream’ was spoken by him in prophetic tones and influenced by Isaiah’s dream of a new Exodus etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of how the influence of the Bible can be seen in one example from a famous speech or the Universal Declaration of Human Rights: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving an accurate account: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of how the influence of the Bible can be seen in one example from a famous speech or the Universal Declaration of Human Rights: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving an accurate account: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of how the influence of the Bible can be seen in one example from a famous speech or the Universal Declaration of Human Rights: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving an accurate account: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of how the influence of the Bible can be seen in one example from a famous speech or the Universal Declaration of Human Rights: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving an accurate account: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of how the influence of the Bible can be seen in one example from a famous speech or the Universal Declaration of Human Rights: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – giving an accurate account: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of how the influence of the Bible can be seen in one example from a famous speech or the Universal Declaration of Human Rights: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving an accurate account: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers"
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     29
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-h-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2026 OL Section H Q(a)(ii)",
+   "topicId": "re-h",
+   "conceptId": "evangelist-his-community-influenced-gospels-came",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Profile how the evangelist and his community influenced how two of the following Gospels came to be written: ● The Gospel of John ● The Gospel of Luke ● The Gospel of Mark ● The Gospel of Matthew",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of how the Bible came to be written by accurately tracing how the evangelists and their communities affected the way two of the Gospels listed in the question came to be written e.g.",
+    "points": [
+     "The Gospel of Matthew was written for Jewish Christians communities focusing on the relationship between Jesus and Jewish traditions etc.",
+     "The Gospel of Mark was written for Christians suffering persecution in Rome, focusing on Jesus as an active healer and miracle worker who cared for all etc.",
+     "The Gospel of Luke was written for non-Jewish converts to Christianity focusing on how Jesus welcomed gentiles and Jews, emphasising the need for mercy and compassion etc.",
+     "The Gospel of John was written for both Jewish and Gentile Christians focusing on the divinity of Jesus highlighting his nature as God in human form etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of how the evangelists and their communities affected the way two of the Gospels listed in the question came to be written: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – accuratel y tracing: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of how the evangelists and their communities affected the way two of the Gospels listed in the question came to be written: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – accuratel y tracing: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of how the evangelists and their communities affected the way two of the Gospels listed in the question came to be written: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – accuratel y tracing: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of how the evangelists and their communities affected the way two of the Gospels listed in the question came to be written: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – accuratel y tracing: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of how the evangelists and their communities affected the way two of the Gospels listed in the question came to be written: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – accuratel y tracing: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of how the evangelists and their communities affected the way two of the Gospels listed in the question came to be written: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – accuratel y tracing: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     30
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-h-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2026 OL Section H Q(b)(i)",
+   "topicId": "re-h",
+   "conceptId": "impact-parables-followers-jesus-time-when",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Profile the impact that two of the following parables had on the followers of Jesus at the time when he first told them: ● The Labourers in the Vineyard. Matthew 20:1-16 ● The Sower. Matthew 13:1-9 ● The Ten Wedding Attendants. Matthew 25:1-13 ● The Unjust steward. Luke 16:1-13",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show a knowledge of parable as a literary genre found in the Bible by accurately tracing how two of the parables listed in the question influenced the followers of Jesus at the time when he first told them e.g.",
+    "points": [
+     "The Labourers in the Vineyard- for the Early Christian communities the parable may have been seen to defend God’s freedom to extend salvation to whomever he chooses; God loves all and rewards all equally; the parable challenges discrimination between people etc.",
+     "The Sower- this parable influenced the Early Christian communities by encouraging them to withstand the trials and tribulations that may affect them etc.",
+     "The Ten Wedding Attendants- the message for the Early Christian communities in this parable is that they must be prepared for the Lord’s return etc.",
+     "The Unjust Steward- the Early Christian communities were urged to make prudent use of material possessions; the importance of faithfulness and responsibility were emphasised to the Early Christians etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of how two of the parables listed in the question influenced the followers of Jesus at the time when he first told them: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – accurately tracing: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of how two of the parables listed in the question influenced the followers of Jesus at the time when he first told them: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – accurately tracing: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of how two of the parables listed in the question influenced the followers of Jesus at the time when he first told them: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – accurately tracing: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of how two of the parables listed in the question influenced the followers of Jesus at the time when he first told them: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – accurately tracing: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of how two of the parables listed in the question influenced the followers of Jesus at the time when he first told them: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – accurately tracing: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of how two of the parables listed in the question influenced the followers of Jesus at the time when he first told them: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – accurately tracing: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers"
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     31
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2026-ol-h-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2026,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2026 OL Section H Q(b)(ii)",
+   "topicId": "re-h",
+   "conceptId": "implications-parables-christians-today",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Discuss the implications that two of the above parables may have on Christians today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2026 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of parable as a literary genre found in the Bible by examining different perspectives and drawing accurate conclusions on the relevance of two of the parables listed in the question for Christians today e.g.",
+    "points": [
+     "The Labourers in the Vineyard-The parable reminds modern readers that God’s grace does not comply with contemporary societal norms; Instead of comparison with others Christians are called to appreciate what they have etc.",
+     "The Sower-In an era of information overload this parable may urge modern readers to prioritise spiritual growth over modern distractions etc.",
+     "The Ten Wedding Attendants-This parable emphasises the importance of being prepared. In a busy world filled with distractions Christians today may be reminded to prioritise preparing their hearts for the coming of Christ etc.",
+     "The Unjust Steward- In this parable Jesus reminds Christians that they cannot serve both God and money. Christians today may be encouraged to invest in one another as opposed to financial gain etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of the implications of two of the parables listed in the question on Christians today: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – examining different perspectives and drawing accurate conclusions: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of the implications of two of the parables listed in the question on Christians today: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – examining different perspectives and drawing accurate conclusions: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of the implications of two of the parables listed in the question on Christians today: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – examining different perspectives and drawing accurate conclusions: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of the implications of two of the parables listed in the question on Christians today: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – examining different perspectives and drawing accurate conclusions: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of the implications of two of the parables listed in the question on Christians today: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – examining different perspectives and drawing accurate conclusions: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "WEAK - VERY WEAK - NO GRADE",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of the implications of two of the parables listed in the question on Christians today: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – examining different perspectives and drawing accurate conclusions: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers"
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     32
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
    }
   }
  ]
