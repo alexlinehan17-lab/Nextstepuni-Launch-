@@ -309,10 +309,19 @@ const parseUnitReading = (text: string, total: number): IrishAnswerResult | unde
  *  Read only where the first line is a restated part ending at its split, or a term's own heading; anything else is not this
  *  key. Nothing is added: rows, samples and directions are the key's lines as printed. */
 /** The restated part: its words to its tariff, then the split ("(Alt 2)" is not always restated; A 3(b) prints no tariff). */
-const SPLIT_PART = /^\d\s*\(\s*[ab]\s*\)\s*(.+?)\s*(?:\(\s*(\d)\s*mharc\s*\)\s*(.*))?$/;
+const SPLIT_PART = /^\d\s*\(\s*[ab]\s*\)\s*(.+?)\s*(?:\(\s*(\d)\s*m?h?arc\s*\)\s*(.*))?$/;
 const SPLIT_TERMS = /^(?:Pointe amháin\s*)?\(\s*(\d)\s*\+\s*(\d)(?:\s*\+\s*(\d))?\s*\)(?:\s*\((Eachtra)\s*\+\s*(Míniú)\s*\+\s*Ionramháil\s*\))?$/;
-const SPLIT_PLAIN = /^\(?\s*(\d)\s*mharc\s*\)?\s*gan ionramháil\s*\)?$/;
+const SPLIT_PLAIN = /^\(?\s*(\d)\s*m?h?arc\s*\)?\s*gan ionramháil\s*\)?$/;
 const SPLIT_PAIR = /^\(\s*(\d)\s*\+\s*(\d)\s*\)\s*gan ionramháil\.?$/;
+/** The 2010 Higher key (scheme PDF 7–13) prints a split with no Ionramháil mark three ways: "(2 phíosa eolais gan ionramháil)
+ *  (2 + 2)", "(2 + 2) (Gan ionramháil)" and "(2 + 2 gan ionramháil)", two points at 2 each; and once (2B 2(a)) "(2 + 1) (Gan
+ *  ionramháil)", a split whose terms it does not name. Two equal terms are two points, each quoted answer one point at its
+ *  term; two unequal terms are one answer at their sum that steps at the first, as the key splits it. Under two points the key
+ *  notes a sentence "(2 phíosa eolais san abairt seo)": that sentence alone gives both, stepped one point at a time. */
+const SPLIT_UNMANIPULATED = /^(?:\(\s*2 phíosa eolais gan ionramháil\s*\)\s*\(\s*(\d)\s*\+\s*(\d)\s*\)|\(\s*(\d)\s*\+\s*(\d)\s*\)\s*\(\s*Gan ionramháil\s*\)|\(\s*(\d)\s*\+\s*(\d)\s*gan ionramháil\s*\))$/;
+const SPLIT_COUNT = /\s*\(2 phíosa eolais san abairt seo\)$/;
+/** A point the key gives only in other words, numbered as its quotations are: "(i) D’éirigh an t-údar níos tanaí …". */
+const SPLIT_NUMBERED = /^\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x|xi|xii)\)\s/;
 const SPLIT_HEADS: [RegExp, (match: RegExpExecArray) => { prompt: string; tariff: number; steps?: number[] }][] = [
   [/^(Dhá thréith)\s*=\s*(\d)\s*\+\s*(\d)\s*\(gan ionramháil\)$/, match => ({ prompt: match[1], tariff: Number(match[2]) + Number(match[3]),
     steps: [0, Number(match[2]), Number(match[2]) + Number(match[3])] })],
@@ -329,13 +338,14 @@ const parseSplitReading = (source: IrishAnswerSource): IrishAnswerResult | undef
   const lines = source.guidance.map(line => line.replace(/\s+/g, ' ').trim());
   const part = SPLIT_PART.exec(lines[0]);
   let prompt: string | undefined;
-  let term: { tariff: number; ladder?: number[]; steps?: number[]; ionramhail?: boolean } | undefined;
+  let term: { tariff: number; ladder?: number[]; steps?: number[]; ionramhail?: boolean; point?: number } | undefined;
   let first = 1;
   if (part) {
     prompt = tidy(part[1]);
     const spec = (part[3] ?? '').trim();
     const terms = SPLIT_TERMS.exec(spec);
     const plain = SPLIT_PLAIN.exec(spec);
+    const unmanipulated = SPLIT_UNMANIPULATED.exec(spec);
     const printed = part[2] ? Number(part[2]) : undefined;
     const head = lines[1] !== undefined ? SPLIT_HEADS.map(([rule, read]) => { const m = rule.exec(lines[1]); return m && read(m); }).find(Boolean) : undefined;
     if (head) {
@@ -353,6 +363,10 @@ const parseSplitReading = (source: IrishAnswerSource): IrishAnswerResult | undef
     } else if (plain) {
       if (printed !== undefined && Number(plain[1]) !== printed) return { ok: false, reason: 'split does not add up to the part' };
       term = { tariff: Number(plain[1]) };
+    } else if (unmanipulated) {
+      const [a, b] = unmanipulated.slice(1).filter(Boolean).map(Number);
+      if (printed === undefined || a + b !== printed) return { ok: false, reason: 'split does not add up to the part' };
+      term = a === b ? { tariff: a + b, point: a } : { tariff: a + b, steps: [0, a, a + b] };
     } else return undefined;
   } else {
     const head = SPLIT_HEADS.map(([rule, read]) => { const m = rule.exec(lines[0]); return m && read(m); }).find(Boolean);
@@ -390,6 +404,11 @@ const parseSplitReading = (source: IrishAnswerSource): IrishAnswerResult | undef
       else items.push({ row: { id: '', text: tidy(line.replace(SPLIT_ZERO, '')), marks: 0 } });
       continue;
     }
+    const count = SPLIT_COUNT.exec(line);
+    if (count && term.point !== undefined && line.includes('“')) {
+      items.push({ row: { id: '', text: tidy(line), marks: term.tariff, steps: [0, term.point, term.tariff] } });
+      continue;
+    }
     const points = SPLIT_POINTS.exec(line);
     if (/\d\s*m?h?arc\b|=/.test(points ? line.slice(0, points.index) : line)) return { ok: false, reason: `unread price: ${line.slice(0, 40)}` };
     if (points) {
@@ -409,19 +428,72 @@ const parseSplitReading = (source: IrishAnswerSource): IrishAnswerResult | undef
     if (quoted) return { ok: false, reason: 'unpriced answers beside priced points' };
     delete term.ladder;
   }
+  // 2A 5(b) (2010, scheme PDF 10) quotes one sentence for its two points and numbers the points only in other words, "(i)
+  // D’éirigh an t-údar níos tanaí …", "(ii) Mhothaigh sé …": where the quotations are fewer than the ladder's rungs, the
+  // numbered points are its rows and the quotation their sample.
+  const numbered = items.filter(item => 'sample' in item && SPLIT_NUMBERED.test(item.sample)).length;
+  const pointsAsRows = term.ladder !== undefined && !priced.length && items.filter(item => 'quoted' in item).length < term.ladder.length
+    && numbered >= term.ladder.length;
   const rows: IrishAnswerRow[] = [];
   const samples: string[] = [];
   for (const item of items) {
     if ('row' in item) rows.push(item.row);
+    else if (pointsAsRows && 'sample' in item && SPLIT_NUMBERED.test(item.sample)) rows.push({ id: '', text: item.sample, marks: 0 });
+    else if (pointsAsRows && 'quoted' in item) samples.push(item.quoted);
     else if ('sample' in item || components) samples.push('sample' in item ? item.sample : item.quoted);
-    else rows.push({ id: '', text: item.quoted, marks: term.ladder ? 0 : term.tariff, ...(term.steps ? { steps: term.steps } : {}) });
+    else rows.push({ id: '', text: item.quoted, marks: term.ladder ? 0 : term.point ?? term.tariff, ...(term.steps ? { steps: term.steps } : {}) });
   }
   if (!rows.length) return { ok: false, reason: 'no answers' };
-  if (!term.ladder && !components && !rows.some(row => row.steps) && Math.max(...rows.map(row => row.marks)) < term.tariff) {
+  const points = term.point !== undefined && rows.filter(row => row.marks === term.point).length * term.point >= term.tariff;
+  if (!term.ladder && !components && !points && !rows.some(row => row.steps) && Math.max(...rows.map(row => row.marks)) < term.tariff) {
     return { ok: false, reason: 'tariff not reachable' };
   }
   return { ok: true, allocation: { parts: [{ id: 'p1', ...(prompt ? { prompt } : {}), tariff: term.tariff, ...(term.ladder ? { ladder: term.ladder } : {}),
     rows: rows.map((row, index) => ({ ...row, id: `r${index + 1}` })), ...(samples.length ? { samples } : {}) }], directions } };
+};
+
+/** The 2010 Higher listening key (scheme PDF 20–25) restates each question after its printed number, then prints its answers as
+ *  bullets priced with the unit "m": "1 (a) Cén cumann atá ag eagrú na siúlóide seo? • Cumann Ailse na hÉireann = 2m • Ailse =
+ *  1m." Each priced answer is a row at its price, a refused one at 0 ("• Cártaí leis féin = 0m"). A bullet can print two answers
+ *  at their prices ("Idirbhliain = 2m / Eatramhach = 2m", "Searmanas = 2m cuimhneacháin = 2m"), each a row; an answer and its
+ *  qualifier each at a price ("Siopaí = 1m + cáiliú = 1m (de gach saghas)") are one row at their sum that steps through the
+ *  noun's price, as NOUN_AND_QUALIFIER reads the 2013 key's "Gálaí = 1m + cáiliú (móra)": "Siopaí: cáiliú: (de gach saghas)",
+ *  three slices of the print. A bracket printed after a price ("= 2m (cruinneas riachtanach)", "= 1m (ná glac le orr/oir.)")
+ *  is that answer's condition and stays on its row after a colon, as QUALIFIED_PRICE keeps one. Read only on a listening criterion with one guidance line, its question number and "?" or "."
+ *  before the first bullet, every bullet priced "= Nm" and no "marc" anywhere: no other key prints that shape. */
+const BULLET_PRICE = /=\s*(\d)\s*m\b\.?/g;
+const parseBulletListening = (source: IrishAnswerSource): IrishAnswerResult | undefined => {
+  if (!LISTENING.test(source.questionRef) || source.guidance.length !== 1) return undefined;
+  const text = source.guidance[0].replace(/\s+/g, ' ').trim();
+  if (/\d\s*m?h?arc\b/.test(text) || !/=\s*\d\s*m\b/.test(text)) return undefined;
+  const [lead, ...bullets] = text.split('•').map(piece => piece.trim());
+  if (!bullets.length || !ASKED.test(lead) || !/[?.]$/.test(lead)) return undefined;
+  const rows: { text: string; marks: number; steps?: number[] }[] = [];
+  for (const bullet of bullets) {
+    const prices = [...bullet.matchAll(BULLET_PRICE)];
+    if (!prices.length) return { ok: false, reason: 'unpriced bullet' };
+    let pos = 0;
+    for (const price of prices) {
+      const answer = tidy(tidy(bullet.slice(pos, price.index)).replace(/^\//, ''));
+      pos = price.index! + price[0].length;
+      const marks = Number(price[1]);
+      const last = rows[rows.length - 1];
+      if (/^\+\s*cáiliú$/.test(answer) && last && pos > price[0].length && !last.steps) {
+        rows[rows.length - 1] = { text: `${last.text}: ${tidy(answer.slice(1))}`, marks: last.marks + marks, steps: [0, last.marks, last.marks + marks] };
+        continue;
+      }
+      if (!answer || /^\(.*\)$/.test(answer) || answer.startsWith('+')) return { ok: false, reason: 'price without an answer' };
+      rows.push({ text: answer, marks });
+    }
+    const tail = tidy(bullet.slice(pos));
+    if (tail && !/^\(.*\)$/.test(tail)) return { ok: false, reason: `unpriced text after a price: ${tail.slice(0, 40)}` };
+    if (tail) rows[rows.length - 1].text += `: ${tail}`;
+  }
+  const max = Math.max(...rows.map(row => row.marks));
+  if (max > source.totalMarks) return { ok: false, reason: 'row above its tariff' };
+  if (max < source.totalMarks && rows.reduce((sum, row) => sum + row.marks, 0) < source.totalMarks) return { ok: false, reason: 'tariff not reachable' };
+  return { ok: true, allocation: { parts: [{ id: 'p1', prompt: tidy(lead), tariff: source.totalMarks,
+    rows: rows.map((row, index) => ({ id: `r${index + 1}`, text: row.text, marks: row.marks, ...(row.steps ? { steps: row.steps } : {}) })) }], directions: [] } };
 };
 
 /** Cut one criterion's exact guidance into parts and rows, or say why not. */
@@ -459,6 +531,8 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     const split = parseSplitReading(source);
     if (split) return split;
   }
+  const bulleted = parseBulletListening(source);
+  if (bulleted) return bulleted;
   const ownLines = source.guidance.filter((line, index) => {
     if (index === 0) return true;
     if (SECTION_SUMMARY.test(line.trim())) return false;

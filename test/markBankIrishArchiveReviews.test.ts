@@ -64,6 +64,7 @@ import ordinary2010P2 from '../components/MarkBank/cards/irish/ordinary-2010-p2-
 import ordinary2011Aural from '../components/MarkBank/cards/irish/ordinary-2011-aural-authored.json';
 import higher2011Aural from '../components/MarkBank/cards/irish/higher-2011-aural-authored.json';
 import ordinary2010Aural from '../components/MarkBank/cards/irish/ordinary-2010-aural-authored.json';
+import higher2010Aural from '../components/MarkBank/cards/irish/higher-2010-aural-authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import { irishMarks } from '../components/MarkBank/SessionScreen';
@@ -152,6 +153,7 @@ const AURAL = [
   { review: ordinary2011Aural.review, year: 2011, fileid: 'LC001GLPA00IV.pdf', segments: 9, questions: 34 },
   { review: higher2011Aural.review, year: 2011, fileid: 'LC001ALPA00IV.pdf', segments: 12, questions: 45 },
   { review: ordinary2010Aural.review, year: 2010, fileid: 'LC001GLPA00IV.pdf', segments: 9, questions: 34 },
+  { review: higher2010Aural.review, year: 2010, fileid: 'LC001ALPA00IV.pdf', segments: 12, questions: 45 },
 ];
 
 describe('Irish archive review: 2010-2011 aural papers', () => {
