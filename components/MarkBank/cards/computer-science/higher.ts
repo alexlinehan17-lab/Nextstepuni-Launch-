@@ -2578,20 +2578,29 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q1", topicId: "cs-2-3", conceptId: "logic-gates-have-one-or-more",
+    id: "cs-2024-hl-q1", topicId: "cs-2-3", conceptId: "logic-gates-have-more-inputs-single",
     section: "A", questionRef: "2024 HL Q1",
-    stem: "Logic gates have one or more inputs and a single output. For each logic gate in Column A in the table below enter the output, either 0 or 1, in Column B.",
     questionText: "Logic gates have one or more inputs and a single output. For each logic gate in Column A in the table below enter the output, either 0 or 1, in Column B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "1 0 0 1 0 0", marks: 6, contextNote: "Each correct response 1 mark", permittedMarks: [0,1,2,3,4,5,6] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-HL-paper-q1-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q1-fig0.png",
           "srcHash": "43b85da358760be46d687db9d0919fd5",
           "alt": "The table or diagram printed with 2024 HL Question 1, as the State Examinations Commission set it. It is labelled: Column A, Logic gate with input(s), Column B, Output (0 or 1).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q1",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q1.png",
+          "srcHash": "99cba4e597750334857abd31cf173bb5",
+          "alt": "The marking scheme's completed table for Question 1: the six logic gates of Column A with their outputs in Column B, AND with inputs 1 and 1 gives 1, AND with 0 and 1 gives 0, NOT with 1 gives 0, OR with 1 and 0 gives 1, OR with 0 and 0 gives 0, and NAND with 1 and 1 gives 0.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -2600,22 +2609,22 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q2", topicId: "cs-2-2", conceptId: "output-displayed-following-python-code-1",
+    id: "cs-2024-hl-q2", topicId: "cs-2-2", conceptId: "output-displayed-python-code",
     section: "A", questionRef: "2024 HL Q2",
-    stem: "What is the output displayed by the following Python code?",
     questionText: "What is the output displayed by the following Python code?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Answer: 27 30 33 36", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "Space between each value", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "Answer: 27 30 33 36", marks: 4, contextNote: "Each correct value in order (x 4) 1 mark", permittedMarks: [0,1,2,3,4] },
+    { id: "r-2", kind: "point", verbatim: "Space between each value", marks: 2 },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-HL-paper-q2-code0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q2-code0.png",
           "srcHash": "802f12849d31c77ea06e4420710b3e38",
           "alt": "The program printed with 2024 HL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 8 lines and begins: number = 27",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2625,12 +2634,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q3", topicId: "cs-2-3", conceptId: "express-decimal-number-121-8-bit",
     section: "A", questionRef: "2024 HL Q3",
-    stem: "Express the decimal number 121 as an 8-bit binary number.",
     questionText: "Express the decimal number 121 as an 8-bit binary number.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Answer: 0111 1001", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "For each calculation error deduct 2 marks", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "Answer: 0111 1001", marks: 6, contextNote: "Correct including leading zero 6 marks Correct without leading zero 5 marks For each calculation error deduct 2 marks Response with some merit 2 marks", permittedMarks: [0,2,3,4,5,6] },
     ],
   } as SecCard,
   {
@@ -2638,21 +2645,21 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q5", topicId: "cs-2-3", conceptId: "history-computer-hardware-marked-significant-milestones",
+    id: "cs-2024-hl-q5", topicId: "cs-1-2", conceptId: "history-computer-hardware-marked-significant-milestones",
     section: "A", questionRef: "2024 HL Q5",
-    stem: "The history of computer hardware is marked by significant milestones that have driven advancements in computing capabilities. Six key milestones between the 1930s and the 1980s are shown in Figure 3 below. Choose one of the milestones from Figure 3 and explain its significance. Figure 3",
     questionText: "The history of computer hardware is marked by significant milestones that have driven advancements in computing capabilities. Six key milestones between the 1930s and the 1980s are shown in Figure 3 below. Choose one of the milestones from Figure 3 and explain its significance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Turing Machines", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Turing Machines • First abstract model for computability • If something was computable it could be computer by a Turing Machine • They were used to prove that not everything was computable i.e. limits of computation", marks: 6, accepts: ["Transistors • Replaced bulky and less reliable vacuum tubes, enabling the development of smaller, faster, and more energy-efficient electronic devices. This laid the foundation for modern semiconductor technology.","Integrated Circuits • Integrated circuits are orders of magnitude smaller, faster, and less expensive than those constructed of discrete components, allowing a large transistor count.","ARPANET • Considered the forerunner or the internet – many of the protocols used by modern computer networks were developed for ARPANET","Microprocessors • The microprocessor enabled the integration of computing power on a small chip. This development led to the rapid advancement of personal computers and other electronic devices.","Personal Computers • Personal computers have revolutionised the way individuals work, learn, and connect with others. Their affordability made them much more accessible for people to use in their daily lives to access information, communication and productivity tools easily accessible to everyone."], contextNote: "Very good explanation - clear understanding demonstrated 6 marks Good explanation - clear information, lacking demonstration of full understanding 4 marks Fair explanation - limited understanding 2 mark", permittedMarks: [0,2,4,6] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q5-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q5-fig0.png",
-          "srcHash": "33290c12b8e0c9cf9cf9a5b1c6edd990",
-          "alt": "The table or diagram printed with 2024 HL Question 5, as the State Examinations Commission set it. It is labelled: Figure 3.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q5-fig3",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q5-fig3.png",
+          "srcHash": "273ef8ff0243e5e7a7dd47ea6df5a78b",
+          "alt": "Figure 3: a timeline from the 1930s to the 1980s with six milestones, Turing Machines (1930s), Transistors (1940s), Integrated Circuits (1950s), ARPANET (1960s), Microprocessors (1970s) and Personal Computers (1980s).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2662,11 +2669,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q6", topicId: "cs-2-5", conceptId: "consider-social-networking-mobile-application-designed",
     section: "A", questionRef: "2024 HL Q6",
-    stem: "Consider a social networking mobile application designed for teenagers. Provide one example of a unit test case and one example of a system test case that might be carried out during the development process.",
     questionText: "Consider a social networking mobile application designed for teenagers. Provide one example of a unit test case and one example of a system test case that might be carried out during the development process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Update user's profile picture.", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Update user's profile picture.", marks: 3, accepts: ["Posting content o messaging - sending /receiving messages, o image sharing","Connecting with friends","Displaying online status,","Privacy settings, work correctly (on their own)","Evaluate all execution paths (or as many as possible)"], contextNote: "Examples of Unit Test Cases Any other valid unit test case For unit test and system test example: Very good example - clear understanding demonstrated 3 marks Fair example – limited understanding 2 mark", permittedMarks: [0,2,3] },
+    { id: "r-2", kind: "criterion", verbatim: "End-to-end testing of entire application", marks: 3, accepts: ["Handles a realistic number of simultaneous users","Handles multiple chat sessions simultaneously","Ensures that system provides a user-friendly experience","Complies with privacy and security regulations."], contextNote: "Examples of System Test Cases Any other valid system test case For unit test and system test example: Very good example - clear understanding demonstrated 3 marks Fair example – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
   } as SecCard,
   {
@@ -2674,13 +2681,13 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q7", topicId: "cs-2-3", conceptId: "computing-technologies-continue-evolve-rapid-pace",
+    id: "cs-2024-hl-q7", topicId: "cs-1-2", conceptId: "computing-technologies-continue-evolve-at-rapid",
     section: "A", questionRef: "2024 HL Q7",
-    stem: "Computing technologies continue to evolve at a rapid pace. Some of the current emerging trends include: • Quantum Computing • Edge Computing • Internet of Things (IoT) • Biometric Authentication and • Blockchain Technology Pick any one of the above and briefly describe one potential advantage and one potential disadvantage it might have on society in the future.",
     questionText: "Computing technologies continue to evolve at a rapid pace. Some of the current emerging trends include: • Quantum Computing • Edge Computing • Internet of Things (IoT) • Biometric Authentication and • Blockchain Technology Pick any one of the above and briefly describe one potential advantage and one potential disadvantage it might have on society in the future.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Potential Advantages of Quantum Computing", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Potential Advantages of Quantum Computing — Speed - quantum computers have the potential to solve certain problems much faster than classical computers. This can lead to breakthroughs in fields such as cryptography, medicine, climate modelling etc.", marks: 3, accepts: ["Potential Advantages of Edge Computing — Faster response times - By processing data closer to where it is generated (at the edge of the network), edge computing reduces latency, which is critical for real-time applications such as autonomous vehicles, industrial automation, and remote healthcare.","Potential Advantages of Edge Computing — Improved Privacy and Security: Edge computing allows sensitive data to be processed locally, reducing the need to transmit large amounts of raw data. This can enhance privacy and security, as critical data stays closer to its source and is subject to fewer points of potential vulnerability.","Potential Advantages of the Internet of Things (IoT) — Improved Convenience and Efficiency: IoT enables smart homes, smart cities, and smart industries by connecting various devices and systems. This connectivity can lead to improved convenience in daily life. The fact that data is gathered and processed in real-time leads to improved efficiency in industrial processes.","Potential Advantages of Biometric Authentication — Enhanced Security - biometric authentication provides a high level of security by relying on unique biological characteristics such as fingerprints, facial features, or iris patterns. It is difficult for unauthorised individuals to replicate or forge these characteristics, making it a robust method of user authentication.","Potential Advantages of Biometric Authentication — Convenience and User-Friendly - biometric authentication is often more convenient for users compared to traditional methods like passwords or PINs. Users do not need to remember complex passwords, and the authentication process is typically quick and seamless, contributing to a positive user experience.","Potential advantages of Blockchain Technology: — Transparency and Security: Blockchain technology offers a decentralised and transparent way to record transactions, which can enhance security and trust in various systems, such as financial transactions, supply chain management, and voting systems as there is no single point of control or failure. Security is enhanced because once information is recorded on the blockchain, it is extremely difficult to alter due to the cryptographic principles used in the technology."], contextNote: "For each potential advantage Very good description - clear understanding of emerging trend demonstrated 3 marks Fair description – limited understanding of emerging trend 2 mark", permittedMarks: [0,2,3] },
+    { id: "r-2", kind: "criterion", verbatim: "Potential Disadvantages of Quantum Computing — Cost – quantum computers are expensive to develop and build and are very expensive to run and maintain.", marks: 3, accepts: ["Potential Disadvantages of Quantum Computing — The immense power of quantum computers could break current cryptographic algorithms, posing a significant risk to data security and privacy. Existing encryption methods may become obsolete, necessitating the development of new quantum-resistant cryptography","Potential Disadvantages of Edge Computing — Limited Processing Power and Storage - edge devices typically have less processing power and storage capacity compared to large, centralised servers. This limitation can constrain the types of computations that can be performed at the edge and may require careful resource management.","Potential Disadvantages of Edge Computing — Management Complexity and Scalability Challenges - edge computing introduces a more distributed architecture, leading to increased complexity in managing and maintaining a network of edge devices.","Potential Disadvantages of the Internet of Things (IoT) — Privacy Issues: IoT devices often collect sensitive personal data, and if not handled properly, there is a risk of unauthorised access or misuse. Striking a balance between the benefits of data collection and user privacy is a critical challenge.","Potential Disadvantages of the Internet of Things (IoT) — Security Concerns: IoT devices are often vulnerable to security breaches. The interconnected nature of these devices creates potential entry points for cyberattacks.","Potential Disadvantages of Biometric Authentication — Privacy Concerns - users may be hesitant to share such sensitive information as their own biometric data, fearing that it could be misused or compromised.","Potential Disadvantages of Biometric Authentication — Biometric Spoofing and False Positives - biometric systems are not immune to spoofing attacks where unauthorised users attempt to replicate biometric features to gain access.","Potential disadvantages of Blockchain Technology: — Privacy Concerns - while the transparency of blockchain is an advantage, it can also be a disadvantage. Because all transactions are recorded on a public ledger, it can be possible to trace transactions back to individuals.","Potential disadvantages of Blockchain Technology: — Energy Consumption - many blockchain networks require substantial computational power and energy consumption for mining and validating transactions. This has raised environmental and sustainability concerns."], contextNote: "For each potential disadvantage Very good description - clear understanding of emerging trend demonstrated 3 marks Fair description – limited understanding of emerging trend 2 mark", permittedMarks: [0,2,3] },
     ],
   } as SecCard,
   {
@@ -2688,13 +2695,13 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q8", topicId: "cs-2-3", conceptId: "ram-rom-two-types-primary-memory",
+    id: "cs-2024-hl-q8", topicId: "cs-2-3", conceptId: "ram-rom-types-primary-memory-store",
     section: "A", questionRef: "2024 HL Q8",
-    stem: "RAM and ROM are two types of primary memory used to store data. Provide one example of data that might be stored in RAM and one example of data that might be stored in ROM.",
     questionText: "RAM and ROM are two types of primary memory used to store data. Provide one example of data that might be stored in RAM and one example of data that might be stored in ROM.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Data in RAM", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "System Software e.g. operating system", marks: 3, accepts: ["Application Software e.g. office productivity software","Programs e.g. python programs and data e.g. documents","Any temporary data"], contextNote: "Data in RAM For each of RAM and ROM: Very good example - clear understanding demonstrated 3 marks Fair example – limited understanding 2 mark", permittedMarks: [0,2,3] },
+    { id: "r-2", kind: "criterion", verbatim: "Firmware – the software embedded into hardware devices", marks: 3, accepts: ["Basic Input Output System (BIOS) - essential for the computer's startup.","Bootstrap programs","System level configuration data","Any permanent data necessary for the device to operate"], contextNote: "Data in ROM For each of RAM and ROM: Very good example - clear understanding demonstrated 3 marks Fair example – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
   } as SecCard,
   {
@@ -2704,21 +2711,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q9", topicId: "cs-2-2", conceptId: "leap-year-year-contains-additional-day",
     section: "A", questionRef: "2024 HL Q9",
-    stem: "A leap year is a year that contains an additional day making it 366 days long instead of the usual Use the code to describe the two rules for determining whether a year is a leap year.",
-    questionText: "A leap year is a year that contains an additional day making it 366 days long instead of the usual Use the code to describe the two rules for determining whether a year is a leap year.",
+    questionText: "A leap year is a year that contains an additional day making it 366 days long instead of the usual 365 days. The Python function is_leap_year, shown below can be used to determine whether a year (denoted by the parameter y) is a leap year or not. Use the code to describe the two rules for determining whether a year is a leap year.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The two rules are:", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "If the year is evenly divisible by 400 it is a leap year e.g. 2000 was a leap year", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "If the year is evenly divisible by 4 and not 100 it is a leap year e.g. 2024 is but 2025 and 2100 are not For each rule:", marks: 2 },
+    { id: "r-1", kind: "criterion", verbatim: "If the year is evenly divisible by 400 it is a leap year e.g. 2000 was a leap year", marks: 3, contextNote: "For each rule: Very good description - clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3] },
+    { id: "r-2", kind: "criterion", verbatim: "If the year is evenly divisible by 4 and not 100 it is a leap year e.g. 2024 is but 2025 and 2100 are not", marks: 3, permittedMarks: [0,2,3] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q9-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q9-code0.png",
-          "srcHash": "56600a53a0e14ce013343e6b8aec9f60",
-          "alt": "The program printed with 2024 HL Question 9, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: 365 days. The Python function is_leap_year, shown below can be used to determine whether",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q9-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q9-code.png",
+          "srcHash": "5e4a32196d1808f9dac3b084ae13b965",
+          "alt": "The five-line Python function printed with Question 9: def is_leap_year(y):, if (y % 400 == 0) or ((y % 4 == 0) and (y % 100 != 0)): return True, else: return False.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2726,13 +2732,12 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q10", topicId: "cs-2-2", conceptId: "many-fast-food-restaurants-have-begun",
+    id: "cs-2024-hl-q10", topicId: "cs-1-2", conceptId: "many-fast-food-restaurants-have-begun",
     section: "A", questionRef: "2024 HL Q10",
-    stem: "Many fast-food restaurants have begun using interactive kiosks that allow customers to order food without having to go to a cashier. These kiosks have menu-driven interfaces. Name two principles of universal design and explain how these principles could be met in the design of such systems.",
     questionText: "Many fast-food restaurants have begun using interactive kiosks that allow customers to order food without having to go to a cashier. These kiosks have menu-driven interfaces. Name two principles of universal design and explain how these principles could be met in the design of such systems.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Equitable Use - by incorporating accessibility features such as adjustable font sizes, colour contrasts, and audio feedback the design can ensure that the interface is usable by people with varying abilities.", marks: 6, accepts: ["Flexibility in Use - this principle could be met by providing features that allows the users to interact with the system in different ways e.g. via touch screen or voice commands.","Simple and Intuitive Use - this can be achieved in the design by a straightforward and intuitive menu structure with easily understandable icons and labels. Avoid unnecessary complexity to make the interface user-friendly for individuals with different levels of experience.","Perceptible Information - the system should communicate necessary information effectively to the user, regardless of ambient conditions or the user's sensory abilities. For example, the menu and instructions on how to pay could be provided through multiple modalities, such as visual cues, text labels, and audio instructions, to cater to users with different sensory capabilities.","Tolerance for Error - this can be achieved by including features like confirmation dialogs, clear feedback messages, and the ability to review orders before finalising.","Low Physical Effort - the system should ensure that the touch interface is responsive to different levels of pressure, accommodating users with varying physical abilities. Consider alternative input methods for users who may have difficulty with touchscreens.","Size and Space for Approach and Use - the kiosks should be designed with varying heights to accommodate users of different statures or those using mobility aids. Ensure there's enough space for wheelchair users to approach and interact comfortably."], contextNote: "For each correctly named principle of universal design 1 mark For each explanation: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark", permittedMarks: [0,1,2,3,4,5,6] },
     ],
   } as SecCard,
   {
@@ -2740,21 +2745,22 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q11-a", topicId: "cs-2-2", conceptId: "apply-algorithm-shown-pseudo-code-below",
+    id: "cs-2024-hl-q11-a", topicId: "cs-2-2", conceptId: "apply-algorithm-pseudo-code-row-shapes",
     section: "A", questionRef: "2024 HL Q11(a)",
-    stem: "problem_solved ← FALSE LOOP until problem_solved IS TRUE square ← find the leftmost square triangle ← find the rightmost triangle IF position of square IS GREATER THAN position of triangle problem solved ← TRUE ELSE swap(square, triangle) Figure 4",
     questionText: "Apply the algorithm shown in pseudo code below to the row of shapes shown in Figure 4 and illustrate your answer in the boxes provided.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In Step 1 the algorithm has swapped the square from position 0 with the triangle in position 7.", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "In Step 1 the algorithm has swapped the square from position 0 with the triangle in position 7.", marks: 2, contextNote: "For each correct step 2 marks Response with some merit 2 marks" },
+    { id: "r-2", kind: "point", verbatim: "In Step 2 the algorithm has swapped the square from position 4 with the triangle in position 6. • This leaves a final state with all the triangles to the left of all the squares.", marks: 2 },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-HL-paper-q11-figure",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q11-figure.png",
           "srcHash": "19c3755b0d4049ad2aaf05ad475579a6",
           "alt": "The program and the table or diagram printed with 2024 HL Question 11, as the State Examinations Commission set it. The table or diagram is labelled: problem_solved ← FALSE, problem solved ← TRUE, ELSE, swap(square, triangle), Figure 4, Step 1:, Step 2:.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2762,20 +2768,21 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q11-b", topicId: "cs-2-2", conceptId: "algorithm-described-part-provides-general-solution",
+    id: "cs-2024-hl-q11-b", topicId: "cs-1-1", conceptId: "algorithm-described-part-provides-general-solution",
     section: "A", questionRef: "2024 HL Q11(b)",
     questionText: "The algorithm described in part (a) provides a general solution to the problem it solves. Explain what is meant by the phrase ‘a general solution’.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A general solution provides a broad approach that can be applied to different situations", marks: 2 },
+    { id: "r-1", kind: "criterion", verbatim: "A general solution provides a broad approach that can be applied to different situations", marks: 2, accepts: ["A general solution will always produce the correct output regardless of the input","The algorithm does not depend on the size of the input e.g. the number of squares and triangles."], contextNote: "Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark", permittedMarks: [0,1,2] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-HL-paper-q11-figure",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q11-figure.png",
           "srcHash": "19c3755b0d4049ad2aaf05ad475579a6",
           "alt": "The program and the table or diagram printed with 2024 HL Question 11, as the State Examinations Commission set it. The table or diagram is labelled: problem_solved ← FALSE, problem solved ← TRUE, ELSE, swap(square, triangle), Figure 4, Step 1:, Step 2:.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2783,21 +2790,21 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q12-a", topicId: "cs-1-2", conceptId: "meaning-quote-shown-figure-5-above",
+    id: "cs-2024-hl-q12-a", topicId: "cs-1-2", conceptId: "meaning-quote-5-above-relation-online",
     section: "A", questionRef: "2024 HL Q12(a)",
-    stem: "Figure 5",
     questionText: "Explain the meaning of the quote, shown in Figure 5 above, in relation to online applications.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The meaning of the quote is that when a service such as social media is free, the users become a commodity for these platforms, and their attention and data are the actual products that are monetised. As users interact with social media platforms, they generate valuable data (through their preferences, behaviours etc.). This data is then collected, analysed, and used to create targeted advertising or sold to third parties for various purposes, such as market research or influencing user behaviour.", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "The meaning of the quote is that when a service such as social media is free, the users become a commodity for these platforms, and their attention and data are the actual products that are monetised. As users interact with social media platforms, they generate valuable data (through their preferences, behaviours etc.). This data is then collected, analysed, and used to create targeted advertising or sold to third parties for various purposes, such as market research or influencing user behaviour.", marks: 3, accepts: ["The quote serves as a reminder that even though users may not be directly paying for the service with money, they are indirectly paying with their personal information and attention."], contextNote: "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-HL-paper-q12-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q12-fig0.png",
           "srcHash": "fc23af70fcd91510becdf651e9fd0068",
           "alt": "The table or diagram printed with 2024 HL Question 12, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2805,24 +2812,14 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q13-a-i", topicId: "cs-2-1", conceptId: "meant-term-artificial-intelligence",
+    id: "cs-2024-hl-q13-a-i", topicId: "cs-1-2", conceptId: "meant-term-artificial-intelligence",
     section: "B", questionRef: "2024 HL Q13(a)(i)",
-    stem: "This question continues on the next page.",
+    stem: "The term artificial intelligence (AI) was first used in 1955 by among others, American computer scientist John McCarthy who had an Irish father from Co. Kerry. Since then, other related terms such as narrow AI, artificial general intelligence (AGI) and generative AI have emerged.",
     questionText: "What is meant by the term ‘artificial intelligence’?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Artificial intelligence can be defined as the science and engineering of making intelligent computer programs capable of performing tasks that require subtleties of judgement, interpretation and generalisation that we associate with human intelligence.", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "The design and study of systems that appear to mimic intelligent behaviour", marks: 1 },
-    { id: "r-3", kind: "point", verbatim: "The theory and development of computer systems able to perform tasks that normally require human intelligence, such as visual perception, speech recognition, decision making and translation between languages.", marks: 1 },
+    { id: "r-1", kind: "criterion", verbatim: "Artificial intelligence can be defined as the science and engineering of making intelligent computer programs capable of performing tasks that require subtleties of judgement, interpretation and generalisation that we associate with human intelligence.", marks: 3, accepts: ["The design and study of systems that appear to mimic intelligent behaviour","The theory and development of computer systems able to perform tasks that normally require human intelligence, such as visual perception, speech recognition, decision making and translation between languages."], contextNote: "Any response that captures the essence of any of the following: Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q13-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
-          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
-          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2831,20 +2828,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q13-a-ii", topicId: "cs-1-2", conceptId: "distinguish-between-narrow-ai-artificial-general",
     section: "B", questionRef: "2024 HL Q13(a)(ii)",
-    stem: "This question continues on the next page.",
+    stem: "The term artificial intelligence (AI) was first used in 1955 by among others, American computer scientist John McCarthy who had an Irish father from Co. Kerry. Since then, other related terms such as narrow AI, artificial general intelligence (AGI) and generative AI have emerged.",
     questionText: "Distinguish between narrow AI and artificial general intelligence (AGI).",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Narrow AI: Refers to AI systems built to perform a single task but without any skills that can be transferred to other tasks.", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "Narrow AI: Refers to AI systems built to perform a single task but without any skills that can be transferred to other tasks. • Artificial General Intelligence (AGI) refers to AI systems that can autonomously solve a variety of complex problems in a variety of different domains and learn and adapt autonomously.", marks: 3, contextNote: "Very good distinction - clear understanding demonstrated 3 marks Fair distinction – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q13-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
-          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
-          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2853,63 +2842,48 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q13-a-iii", topicId: "cs-1-2", conceptId: "chatgpt-gemini-examples-generative-ai-applications",
     section: "B", questionRef: "2024 HL Q13(a)(iii)",
-    stem: "This question continues on the next page.",
+    stem: "The term artificial intelligence (AI) was first used in 1955 by among others, American computer scientist John McCarthy who had an Irish father from Co. Kerry. Since then, other related terms such as narrow AI, artificial general intelligence (AGI) and generative AI have emerged.",
     questionText: "ChatGPT and Gemini are examples of generative AI applications. Explain the term ‘generative AI’.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Generative AI is an Artificial Intelligence (AI) technology that automatically generates new/original content in response to prompts typed in by the user.", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "Generative AI is an Artificial Intelligence (AI) technology that automatically generates new/original content in response to prompts typed in by the user. • Generative AI should be used with caution as it is not always correct – a phenomena known as hallucination.", marks: 3, contextNote: "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q13-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
-          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
-          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q13-a-iv", topicId: "cs-2-3", conceptId: "two-types-output-can-be-produced",
+    id: "cs-2024-hl-q13-a-iv", topicId: "cs-1-2", conceptId: "types-output-can-produced-generative-ai",
     section: "B", questionRef: "2024 HL Q13(a)(iv)",
-    stem: "This question continues on the next page.",
+    stem: "The term artificial intelligence (AI) was first used in 1955 by among others, American computer scientist John McCarthy who had an Irish father from Co. Kerry. Since then, other related terms such as narrow AI, artificial general intelligence (AGI) and generative AI have emerged.",
     questionText: "Name two types of output that can be produced by generative AI.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 2 },
+    { id: "r-1", kind: "anyN", verbatim: "Any two from the following:", marks: null, contextNote: "For each correctly identified format 1 mark", openList: true, group: {"claimMax":2,"perOption":1,"options":["text (written in any natural language)","images (e.g. photographs, digital paintings and cartoons)","videos","music","software code","any reasonable format that could be produced by GenAI"]} },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q13-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
-          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
-          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q13-b-i", topicId: "cs-2-2", conceptId: "relation-computer-vision-do-percentages-shown",
+    id: "cs-2024-hl-q13-b-i", topicId: "cs-1-2", conceptId: "relation-computer-vision-do-percentages-5",
     section: "B", questionRef: "2024 HL Q13(b)(i)",
-    stem: "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
+    stem: "Computer vision is a field of AI that uses machine learning techniques to develop models capable of identifying objects in an image. Study the image shown in Figure 5 and answer the questions that follow.",
     questionText: "In relation to computer vision, what do the percentages shown in Figure 5 represent?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The percentages represent a level of confidence returned by the model that the image has been correctly classified as the associated label. For example, cat: 94% means that the algorithm is 94% confident that it has identified a cat on this part of the image.", marks: 2 },
+    { id: "r-1", kind: "criterion", verbatim: "The percentages represent a level of confidence returned by the model that the image has been correctly classified as the associated label. For example, cat: 94% means that the algorithm is 94% confident that it has identified a cat on this part of the image.", marks: 2, contextNote: "Very good explanation - clear understanding demonstrated 2 marks Fair explanation - limited understanding demonstrated 1 mark", permittedMarks: [0,1,2] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q13-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
-          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
-          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig5",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig5.png",
+          "srcHash": "61c15bde768543d5fa46ca37ff2c2ba2",
+          "alt": "Figure 5: a photograph of two kittens in a bucket, a puppy and a toy duck on grass, with a labelled box drawn around each object: cat: 94%, cat: 85%, dog: 97% and duck: 72%.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2917,21 +2891,22 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q13-b-ii", topicId: "cs-2-4", conceptId: "suggest-two-applications-type-technology-describe",
+    id: "cs-2024-hl-q13-b-ii", topicId: "cs-1-2", conceptId: "applications-type-technology-application-could-benefit",
     section: "B", questionRef: "2024 HL Q13(b)(ii)",
-    stem: "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
+    stem: "Computer vision is a field of AI that uses machine learning techniques to develop models capable of identifying objects in an image. Study the image shown in Figure 5 and answer the questions that follow.",
     questionText: "Suggest two applications for this type of technology and describe how each application could benefit society.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Computer vision can be used for early detection of diseases through medical imaging.", marks: 6, accepts: ["Computer vision technology can be used in self-driving cars (autonomous vehicles) to improve road safety by enabling vehicles to detect and respond dangers such as pedestrians, cyclists, other vehicles, animals etc, in real-time, reducing the risk of accidents.","Computer vision can be applied to eliminate the need for checkouts in supermarkets and other retail outlets thereby improving the shopping experience for customers and reducing the incidence of theft.","Computer vision can analyse aerial imagery to monitor crop health, detect diseases, and optimise irrigation. This helps farmers make informed decisions, increase crop yield, and reduce the use of pesticides and water.","Facial Recognition technology has the potential to enhances security by identifying and tracking individuals in public spaces, airports, and other high-security areas.","Computer vision can be used in robots to visually recognise and assemble complex products, enhancing efficiency and precision in manufacturing.","Computer vision can be used to monitor and track endangered species, helping conservationists protect wildlife and their habitats.","Augmented reality applications using computer vision can enhance interactive learning experiences, making education more engaging and accessible."], contextNote: "Any reasonable application of computer vision and associated benefit. For each correctly named application of computer vision technology 1 mark For each benefit: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark", permittedMarks: [0,1,2,3,4,5,6] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q13-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
-          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
-          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig5",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig5.png",
+          "srcHash": "61c15bde768543d5fa46ca37ff2c2ba2",
+          "alt": "Figure 5: a photograph of two kittens in a bucket, a puppy and a toy duck on grass, with a labelled box drawn around each object: cat: 94%, cat: 85%, dog: 97% and duck: 72%.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2939,22 +2914,23 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q13-b-iii", topicId: "cs-2-2", conceptId: "read-two-example-scenarios-below-each",
+    id: "cs-2024-hl-q13-b-iii", topicId: "cs-1-2", conceptId: "read-example-scenarios-whether-could-use",
     section: "B", questionRef: "2024 HL Q13(b)(iii)",
-    stem: "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
-    questionText: "Read the two example scenarios below and for each one, state whether it could use machine learning AI. Justify each answer.",
+    stem: "Computer vision is a field of AI that uses machine learning techniques to develop models capable of identifying objects in an image. Study the image shown in Figure 5 and answer the questions that follow.",
+    questionText: "Read the two example scenarios below and for each one, state whether it could use machine learning AI. Justify each answer. Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Scenario 1. An online streaming service that recommends films based on users’ viewing habits. o AI: The system could use machine learning algorithms to analyse user behaviour and make personalised suggestions, which would qualify it as AI. The service will use the viewing habits of the user, compare it to other users, and make a prediction of what the user would like to watch next. There are too many users of an online streaming service to be able to create rules for each user. o Not AI: Possible reasons include privacy concerns, limited data, resource constraints or preference for simplicity.", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "Scenario 2. An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. o AI (robotics): The automated lawnmower uses sensors to navigate, which involves some level of AI for obstacle avoidance and path planning. o Not AI: While it does employ sensors and automation, it typically relies on predefined rules (rather than machine learning techniques) to move around and avoid collisions. Automated lawnmowers typically don’t learn or adapt to their environment. Therefore, they are often categorised as robotics or automation rather than AI. For each justification (no marks for stating yes/no):", marks: 2 },
+    { id: "r-1", kind: "criterion", verbatim: "AI: The system could use machine learning algorithms to analyse user behaviour and make personalised suggestions, which would qualify it as AI. The service will use the viewing habits of the user, compare it to other users, and make a prediction of what the user would like to watch next. There are too many users of an online streaming service to be able to create rules for each user.", marks: 2, accepts: ["Not AI: Possible reasons include privacy concerns, limited data, resource constraints or preference for simplicity."], contextNote: "Scenario 1. An online streaming service that recommends films based on users’ viewing habits. For each justification (no marks for stating yes/no): Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark", permittedMarks: [0,1,2] },
+    { id: "r-2", kind: "criterion", verbatim: "AI (robotics): The automated lawnmower uses sensors to navigate, which involves some level of AI for obstacle avoidance and path planning.", marks: 2, accepts: ["Not AI: While it does employ sensors and automation, it typically relies on predefined rules (rather than machine learning techniques) to move around and avoid collisions. Automated lawnmowers typically don’t learn or adapt to their environment. Therefore, they are often categorised as robotics or automation rather than AI."], contextNote: "Scenario 2. An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. For each justification (no marks for stating yes/no): Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark", permittedMarks: [0,1,2] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q13-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
-          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
-          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig5",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig5.png",
+          "srcHash": "61c15bde768543d5fa46ca37ff2c2ba2",
+          "alt": "Figure 5: a photograph of two kittens in a bucket, a puppy and a toy duck on grass, with a labelled box drawn around each object: cat: 94%, cat: 85%, dog: 97% and duck: 72%.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2962,21 +2938,22 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q13-b-iv", topicId: "cs-2-2", conceptId: "recent-years-many-instances-bias-have",
+    id: "cs-2024-hl-q13-b-iv", topicId: "cs-1-2", conceptId: "recent-years-many-instances-bias-have",
     section: "B", questionRef: "2024 HL Q13(b)(iv)",
-    stem: "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
+    stem: "Computer vision is a field of AI that uses machine learning techniques to develop models capable of identifying objects in an image. Study the image shown in Figure 5 and answer the questions that follow.",
     questionText: "In recent years many instances of bias have been identified in computer vision applications. Explain one method that could be used to reduce bias in these applications.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Diversity of images used in training datasets – ensure that the training dataset is diverse enough to represent the target population", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "Diversity of images used in training datasets – ensure that the training dataset is diverse enough to represent the target population", marks: 3, accepts: ["Equality of representation of target population in training dataset- – ensure that the images used are representative of the target population","Size of training datasets – it is likely that larger datasets will result in more accurate models with less bias than models trained using smaller datasets.","Human in the loop e.g. ensure proper diversity of race, gender etc. in development team","Monitoring and Bias Auditing – continually monitor the training dataset to reflect changes in society and conduct bias audits to identify and address any biases that might have inadvertently crept in."], contextNote: "Any other reasonable method to reduce bias. Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q13-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
-          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
-          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig5",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig5.png",
+          "srcHash": "61c15bde768543d5fa46ca37ff2c2ba2",
+          "alt": "Figure 5: a photograph of two kittens in a bucket, a puppy and a toy duck on grass, with a labelled box drawn around each object: cat: 94%, cat: 85%, dog: 97% and duck: 72%.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2984,45 +2961,37 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q13-c", topicId: "cs-2-3", conceptId: "2023-open-letter-published-future-life",
+    id: "cs-2024-hl-q13-c", topicId: "cs-1-2", conceptId: "2023-open-letter-published-future-life",
     section: "B", questionRef: "2024 HL Q13(c)",
-    stem: "In 2023 an open letter published by the Future of Life Institute requested all AI labs to immediately pause for at least six months the training of very powerful AI systems. Interestingly, while the letter was signed by many well-known academics and industry leaders, there were many notable individuals and companies who did not publicly declare their support.",
-    questionText: "Discuss the reasons for some people supporting the initiative to pause training and others not supporting the initiative.",
+    questionText: "In 2023 an open letter published by the Future of Life Institute requested all AI labs to immediately pause for at least six months the training of very powerful AI systems. Interestingly, while the letter was signed by many well-known academics and industry leaders, there were many notable individuals and companies who did not publicly declare their support. Discuss the reasons for some people supporting the initiative to pause training and others not supporting the initiative.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-supporting", kind: "anyN", verbatim: "Up to two points supporting the initiative", marks: null, openList: true, group: {"claimMax":2,"perOption":3,"options":["Ethical concerns: time is needed to make sure that AI aligns with human values and doesn't compromise principles such as privacy, accountability, and fairness.","Jobs/Employment/Economy: the pace of current development of AI systems has the potential to put many jobs at risk and people out of work. Pausing development provides an opportunity to address the potential societal impact on employment and consider strategies such as reskilling and implementing policies to mitigate economic disparities.","Security Risks: Advanced AI systems, if developed without sufficient safeguards, pose potential security risks. Pausing development allows time to assess and address security concerns related to the misuse of AI, such as cyber threats, hacking, and the development of AI-driven weaponry.","Unintended Consequences: The complexity of advanced AI systems increases the risk of unintended consequences. Pausing development permits a more thorough evaluation of the potential risks and unintended outcomes, ensuring that AI is deployed responsibly and doesn't lead to unforeseen negative impacts on society.","Existential Threat: There are some who believe that the development of highly advanced AI systems (superintelligent AI) could potentially threaten the continued existence of humanity. A pause in AI would give more time to increase public awareness through open discussions about the risks and benefits of advanced AI."]} },
-    { id: "r-against", kind: "anyN", verbatim: "Up to two points against the initiative", marks: null, openList: true, group: {"claimMax":2,"perOption":3,"options":["Innovation and Progress: Continued development of advanced AI fosters innovation, leading to breakthroughs in various fields, including healthcare, education, and scientific research. Pausing development could impede progress and delay the benefits that AI can bring to society.","Societal Advancements: AI has the potential to address complex societal challenges, such as climate change, healthcare disparities, and resource management. Halting development may hinder the application of AI in finding solutions to pressing global issues.","Competitive Disadvantage: Countries and organisations are in a race to develop and adopt AI technologies. Pausing development may result in a competitive disadvantage, with nations that continue AI advancements gaining a lead in economic, military, and technological spheres.","Job Creation and Economic Growth: While AI may lead to job displacement in certain sectors, it also has the potential to create new jobs and stimulate economic growth. Pausing development could limit the positive economic impact of AI, affecting industries that could benefit from increased efficiency and innovation."]} },
+    { id: "r-1", kind: "criterion", verbatim: "Ethical concerns: time is needed to make sure that AI aligns with human values and doesn't compromise principles such as privacy, accountability, and fairness.", marks: 6, accepts: ["Jobs/Employment/Economy: the pace of current development of AI systems has the potential to put many jobs at risk and people out of work. Pausing development provides an opportunity to address the potential societal impact on employment and consider strategies such as reskilling and implementing policies to mitigate economic disparities.","Security Risks: Advanced AI systems, if developed without sufficient safeguards, pose potential security risks. Pausing development allows time to assess and address security concerns related to the misuse of AI, such as cyber threats, hacking, and the development of AI-driven weaponry.","Unintended Consequences: The complexity of advanced AI systems increases the risk of unintended consequences. Pausing development permits a more thorough evaluation of the potential risks and unintended outcomes, ensuring that AI is deployed responsibly and doesn't lead to unforeseen negative impacts on society.","Existential Threat: There are some who believe that the development of highly advanced AI systems (superintelligent AI) could potentially threaten the continued existence of humanity. A pause in AI would give more time to increase public awareness through open discussions about the risks and benefits of advanced AI."], contextNote: "Points for supporting the initiative: Elaboration of any other reasonable point for pausing development of advanced AI systems For each separate point made for and against the initiative up to a maximum of two points each: Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,3,4,5,6] },
+    { id: "r-2", kind: "criterion", verbatim: "Innovation and Progress: Continued development of advanced AI fosters innovation, leading to breakthroughs in various fields, including healthcare, education, and scientific research. Pausing development could impede progress and delay the benefits that AI can bring to society.", marks: 6, accepts: ["Societal Advancements: AI has the potential to address complex societal challenges, such as climate change, healthcare disparities, and resource management. Halting development may hinder the application of AI in finding solutions to pressing global issues.","Competitive Disadvantage: Countries and organisations are in a race to develop and adopt AI technologies. Pausing development may result in a competitive disadvantage, with nations that continue AI advancements gaining a lead in economic, military, and technological spheres.","Job Creation and Economic Growth: While AI may lead to job displacement in certain sectors, it also has the potential to create new jobs and stimulate economic growth. Pausing development could limit the positive economic impact of AI, affecting industries that could benefit from increased efficiency and innovation."], contextNote: "Points against the initiative: Elaboration of any other reasonable point against pausing development of advanced AI systems For each separate point made for and against the initiative up to a maximum of two points each: Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,3,4,5,6] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q13-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
-          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
-          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q14-a-i", topicId: "cs-2-2", conceptId: "names-two-input-variables",
+    id: "cs-2024-hl-q14-a-i", topicId: "cs-2-2", conceptId: "names-input-variables",
     section: "B", questionRef: "2024 HL Q14(a)(i)",
-    stem: "Figure 6 This question continues on the next page.",
+    stem: "The flowchart, shown in Figure 6 below, describes an algorithm that reads two values, swaps them, and then displays their new values.",
     questionText: "State the names of the two input variables.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Input variable 1: a", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "Input variable 2: b Each correct response 1 mark", marks: 1 },
+    { id: "r-1", kind: "point", verbatim: "Input variable 1: a", marks: 1, contextNote: "Each correct response 1 mark" },
+    { id: "r-2", kind: "point", verbatim: "Input variable 2: b", marks: 1 },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-HL-paper-q14-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
           "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
           "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3032,19 +3001,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q14-a-ii", topicId: "cs-2-2", conceptId: "purpose-variable-t",
     section: "B", questionRef: "2024 HL Q14(a)(ii)",
-    stem: "Figure 6 This question continues on the next page.",
+    stem: "The flowchart, shown in Figure 6 below, describes an algorithm that reads two values, swaps them, and then displays their new values.",
     questionText: "Explain the purpose of the variable t.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "t is a temporary variable used to store the value of a", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "t is a temporary variable used to store the value of a • Without t, the contents of a would be lost when b is assigned to a", marks: 3, contextNote: "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-HL-paper-q14-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
           "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
           "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3052,21 +3022,23 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q14-a-iii", topicId: "cs-2-2", conceptId: "flowcharts-commonly-used-design-process-describe",
+    id: "cs-2024-hl-q14-a-iii", topicId: "cs-1-3", conceptId: "flowcharts-commonly-design-process-algorithms-advantage",
     section: "B", questionRef: "2024 HL Q14(a)(iii)",
-    stem: "Figure 6 This question continues on the next page.",
+    stem: "The flowchart, shown in Figure 6 below, describes an algorithm that reads two values, swaps them, and then displays their new values.",
     questionText: "Flowcharts are commonly used in the design process to describe algorithms. State one advantage and one disadvantage of using flowcharts.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Advantages", marks: 4 },
+    { id: "r-1", kind: "criterion", verbatim: "They are easier to understand than code (especially for non-programmers).", marks: 2, accepts: ["The visual representation of flowcharts clearly depicts the flow and logic of an algorithm.","They are independent of any programming language.","They are flexible tools used to represent algorithms during the design stage of the design process."], contextNote: "Advantages For each advantage/disadvantage Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark", permittedMarks: [0,1,2] },
+    { id: "r-2", kind: "criterion", verbatim: "They take a significant amount of time to develop.", marks: 2, accepts: ["They can become unwieldly for detailed and complex algorithms.","Lack of standards can lead to ambiguity and cause confusion."], contextNote: "Disadvantages For each advantage/disadvantage Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark", permittedMarks: [0,1,2] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-HL-paper-q14-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
           "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
           "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3076,19 +3048,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q14-b-i", topicId: "cs-2-2", conceptId: "data-type-variable-values",
     section: "B", questionRef: "2024 HL Q14(b)(i)",
-    stem: "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
+    stem: "The Python code below shows an implementation of the bubble sort algorithm.",
     questionText: "State the data type of the variable, values.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "the data type of the variable, values. Is a list (array)", marks: 1 },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q14-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
-          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
-          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q14b-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14b-code.png",
+          "srcHash": "ac886fa204f41520c9858dcb1ff496b4",
+          "alt": "The ten-line bubble sort program printed with Question 14(b): values = [50, 70, 30, 60, 20]; for i in range(len(values)): for j in range(len(values)-1): if values[j] > values[j+1], t = values[j+1], values[j+1] = values[j], values[j] = t; then print(\"OUTPUT:\", values).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3098,19 +3071,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q14-b-ii", topicId: "cs-2-4", conceptId: "index-element-70",
     section: "B", questionRef: "2024 HL Q14(b)(ii)",
-    stem: "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
+    stem: "The Python code below shows an implementation of the bubble sort algorithm.",
     questionText: "What is the index of the element 70?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "the index of the element 70 is 1", marks: 1 },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q14-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
-          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
-          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q14b-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14b-code.png",
+          "srcHash": "ac886fa204f41520c9858dcb1ff496b4",
+          "alt": "The ten-line bubble sort program printed with Question 14(b): values = [50, 70, 30, 60, 20]; for i in range(len(values)): for j in range(len(values)-1): if values[j] > values[j+1], t = values[j+1], values[j+1] = values[j], values[j] = t; then print(\"OUTPUT:\", values).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3120,19 +3094,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q14-b-iii", topicId: "cs-2-2", conceptId: "does-python-expression-len-values-return",
     section: "B", questionRef: "2024 HL Q14(b)(iii)",
-    stem: "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
+    stem: "The Python code below shows an implementation of the bubble sort algorithm.",
     questionText: "What does the Python expression len(values) return?",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "the Python expression, len(values) returns 5", marks: 1 },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q14-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
-          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
-          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q14b-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14b-code.png",
+          "srcHash": "ac886fa204f41520c9858dcb1ff496b4",
+          "alt": "The ten-line bubble sort program printed with Question 14(b): values = [50, 70, 30, 60, 20]; for i in range(len(values)): for j in range(len(values)-1): if values[j] > values[j+1], t = values[j+1], values[j+1] = values[j], values[j] = t; then print(\"OUTPUT:\", values).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3142,19 +3117,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q14-b-iv", topicId: "cs-2-4", conceptId: "does-slice-expression-values-2-4",
     section: "B", questionRef: "2024 HL Q14(b)(iv)",
-    stem: "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
+    stem: "The Python code below shows an implementation of the bubble sort algorithm.",
     questionText: "What does the slice expression values[2:4] return?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "the slice expression, values[2:4] returns the list, [30, 60]", marks: 2 },
+    { id: "r-1", kind: "criterion", verbatim: "the slice expression, values[2:4] returns the list, [30, 60]", marks: 2, contextNote: "Full correct response 2 marks Response with some merit 1 mark", permittedMarks: [0,1,2] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q14-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
-          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
-          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q14b-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14b-code.png",
+          "srcHash": "ac886fa204f41520c9858dcb1ff496b4",
+          "alt": "The ten-line bubble sort program printed with Question 14(b): values = [50, 70, 30, 60, 20]; for i in range(len(values)): for j in range(len(values)-1): if values[j] > values[j+1], t = values[j+1], values[j+1] = values[j], values[j] = t; then print(\"OUTPUT:\", values).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3162,21 +3138,22 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q14-b-v", topicId: "cs-2-4", conceptId: "why-expression-values-5-would-generate",
+    id: "cs-2024-hl-q14-b-v", topicId: "cs-2-4", conceptId: "expression-values-5-would-generate-runtime",
     section: "B", questionRef: "2024 HL Q14(b)(v)",
-    stem: "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
+    stem: "The Python code below shows an implementation of the bubble sort algorithm.",
     questionText: "Explain why the expression values[5] would generate a runtime error.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "the expression values[5] would generate a runtime error because the index 5 is out of bounds", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "the expression values[5] would generate a runtime error because the index 5 is out of bounds", marks: 3, contextNote: "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q14-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
-          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
-          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q14b-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14b-code.png",
+          "srcHash": "ac886fa204f41520c9858dcb1ff496b4",
+          "alt": "The ten-line bubble sort program printed with Question 14(b): values = [50, 70, 30, 60, 20]; for i in range(len(values)): for j in range(len(values)-1): if values[j] > values[j+1], t = values[j+1], values[j+1] = values[j], values[j] = t; then print(\"OUTPUT:\", values).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3184,21 +3161,23 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q14-b-vi", topicId: "cs-2-3", conceptId: "one-advantage-one-disadvantage-sorting-data",
+    id: "cs-2024-hl-q14-b-vi", topicId: "cs-2-2", conceptId: "advantage-disadvantage-sorting-data-set",
     section: "B", questionRef: "2024 HL Q14(b)(vi)",
-    stem: "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
+    stem: "The Python code below shows an implementation of the bubble sort algorithm.",
     questionText: "State one advantage and one disadvantage of sorting a data set.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Advantages", marks: 6 },
+    { id: "r-1", kind: "anyN", verbatim: "Advantages", marks: null, contextNote: "For each advantage/disadvantage Valid statement 3 marks", group: {"claimMax":1,"perOption":3,"options":["Binary search requires a dataset to be sorted","Sorted data can be more user friendly e.g. social media timeline sorted by date/time, product catalogue sorted by cost etc.","Sorted data can also make it easier for data analysis e.g. finding the median or quartiles of a set of data or identifying patterns/trends and outliers"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Disadvantages", marks: null, group: {"claimMax":1,"perOption":3,"options":["sorting algorithms can take time","sorting algorithms can consume valuable computational resources such as CPU and memory.","If a dataset is already sorted (or almost sorted) the time and resources spent on sorting may not provide significant benefits.","the efficiency of sorting algorithms can vary dramatically depending on the size of the input dataset, and the size of the dataset may not always be known in advance. This places a burden on designers/programmers to have a detailed understanding of the sorting algorithm being used and an awareness of the implications under all circumstances.","Once a dataset is sorted there is a cost to maintaining the dataset in a sorted state"]} },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q14-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
-          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
-          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q14b-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14b-code.png",
+          "srcHash": "ac886fa204f41520c9858dcb1ff496b4",
+          "alt": "The ten-line bubble sort program printed with Question 14(b): values = [50, 70, 30, 60, 20]; for i in range(len(values)): for j in range(len(values)-1): if values[j] > values[j+1], t = values[j+1], values[j+1] = values[j], values[j] = t; then print(\"OUTPUT:\", values).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3208,19 +3187,24 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q14-c-i", topicId: "cs-2-2", conceptId: "apply-bubble-sort-algorithm-sort-values",
     section: "B", questionRef: "2024 HL Q14(c)(i)",
-    stem: "Initial state of values: 50 70 30 60 20",
+    stem: "The Python code below shows an implementation of the bubble sort algorithm. The algorithm takes five passes to complete the bubble sort of the integers in values.",
     questionText: "Apply the bubble sort algorithm to sort values. Show the contents of values after each of the five passes.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Initial state of values: 50 70 30 60 20", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "After pass 1: 50 30 60 20 70", marks: 1, contextNote: "For each pass correctly completed 1 mark" },
+    { id: "r-2", kind: "point", verbatim: "After pass 2: 30 50 20 60 70", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "After pass 3: 30 20 50 60 70", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "After pass 4: 20 30 50 60 70", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "After pass 5: 20 30 50 60 70", marks: 1 },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q14-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
-          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
-          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q14b-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14b-code.png",
+          "srcHash": "ac886fa204f41520c9858dcb1ff496b4",
+          "alt": "The ten-line bubble sort program printed with Question 14(b): values = [50, 70, 30, 60, 20]; for i in range(len(values)): for j in range(len(values)-1): if values[j] > values[j+1], t = values[j+1], values[j+1] = values[j], values[j] = t; then print(\"OUTPUT:\", values).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3230,18 +3214,28 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q14-c-ii", topicId: "cs-2-2", conceptId: "bubble-sort-algorithm-has-o-best",
     section: "B", questionRef: "2024 HL Q14(c)(ii)",
-    stem: "Initial state of values: 50 70 30 60 20",
+    stem: "The Python code below shows an implementation of the bubble sort algorithm. The algorithm takes five passes to complete the bubble sort of the integers in values.",
     questionText: "The bubble sort algorithm has O(𝑛2) best and worst case time complexity. Explain what this means in terms of the number of compare operations performed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In a list of size N the bubble sort algorithm performs N passes. On each pass it will perform N-1 compare operations. This gives a total of 𝑵𝟐−𝑵 operations. For large N this is approximately the same as 𝑵𝟐. Hence we write O(𝑵𝟐).", marks: 5 },
+    { id: "r-1", kind: "criterion", verbatim: "In a list of size N the bubble sort algorithm performs N passes. On each pass it will perform N-1 compare operations. This gives a total of 𝑵𝟐 −𝑵 operations. For large N this is approximately the same as 𝑵𝟐. Hence we write O(𝑵𝟐). • The best-case scenario is when the input list is already sorted. The worst-case scenario is when the input list is in reverse order. In both scenarios bubble sort will also carry out the same number of comparisons. • As the number of elements increases the number of compare operations increases quadratically (by a power of 2). For example, the number of compare operations carried out by a bubble sort algorithm on a list of size 5 would be of the order of 25. If you double the size of the input list, the number of compare operations could increase by a factor of four.", marks: 5, contextNote: "Very good explanation - clear understanding demonstrated 5 marks Good explanation - clear information, lacking demonstration of full understanding 3 marks Fair explanation - limited understanding 1 mark", permittedMarks: [0,1,3,5] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q14-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
-          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
-          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q14b-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14b-code.png",
+          "srcHash": "ac886fa204f41520c9858dcb1ff496b4",
+          "alt": "The ten-line bubble sort program printed with Question 14(b): values = [50, 70, 30, 60, 20]; for i in range(len(values)): for j in range(len(values)-1): if values[j] > values[j+1], t = values[j+1], values[j+1] = values[j], values[j] = t; then print(\"OUTPUT:\", values).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q14c-ii",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q14c-ii.png",
+          "srcHash": "6021a9c389a34e87a2dfd47f8b4d14e6",
+          "alt": "The marking scheme's answer to Question 14(c)(ii): in a list of size N bubble sort performs N passes of N-1 compare operations, N squared minus N in total, approximately N squared for large N, hence O(N squared); the best case (already sorted) and worst case (reverse order) carry out the same number of comparisons; the compare operations grow quadratically, so doubling the list could multiply them by four.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -3250,20 +3244,30 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q14-c-iii", topicId: "cs-2-2", conceptId: "suggest-one-possible-improvement-could-be",
+    id: "cs-2024-hl-q14-c-iii", topicId: "cs-2-2", conceptId: "possible-improvement-could-made-algorithm-would",
     section: "B", questionRef: "2024 HL Q14(c)(iii)",
-    stem: "Initial state of values: 50 70 30 60 20",
+    stem: "The Python code below shows an implementation of the bubble sort algorithm. The algorithm takes five passes to complete the bubble sort of the integers in values.",
     questionText: "Suggest one possible improvement that could be made to the algorithm that would reduce either the number of comparisons or the number of swaps required to complete the sort.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhancement 1 (reducing size of list by 1 on each pass)", marks: 5 },
+    { id: "r-1", kind: "criterion", verbatim: "Enhancement 1 (reducing size of list by 1 on each pass) • On the 1st pass the largest item in the list is moved to the rightmost position • The 2nd pass moves the next largest item to the second last position • Each pass moves the largest item remaining to its correct position towards the end of the list • The standard algorithm continues to compare adjacent elements that are already sorted at the end (right) of the list even though they are already sorted. • The algorithm can be enhanced by preventing these unnecessary comparisons. • This can be achieved by reducing the number of adjacent compares by 1 on each pass as shown in the implementation below.", marks: 5, accepts: ["Enhancement 2 (halting if no swaps made during any pass) An alternative enhancement can be achieved by introducing a ‘flag’ to indicate whether a swap was needed on a particular pass. If no swap was performed the list is deemed to be sorted and the algorithm can end regardless of the number of passes complete e.g. if the initial list is sorted there won’t be any swaps on the 1st pass. Therefore, the algorithm can be terminated."], contextNote: "Very good explanation - clear understanding demonstrated 5 marks Good explanation - clear information, lacking demonstration of full understanding 3 marks Fair explanation - limited understanding 1 mark", permittedMarks: [0,1,3,5] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q14-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
-          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
-          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q14b-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14b-code.png",
+          "srcHash": "ac886fa204f41520c9858dcb1ff496b4",
+          "alt": "The ten-line bubble sort program printed with Question 14(b): values = [50, 70, 30, 60, 20]; for i in range(len(values)): for j in range(len(values)-1): if values[j] > values[j+1], t = values[j+1], values[j+1] = values[j], values[j] = t; then print(\"OUTPUT:\", values).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q14c-iii",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q14c-iii.png",
+          "srcHash": "a93870131c019f6c17030a090530f888",
+          "alt": "The marking scheme's two enhancements for Question 14(c)(iii). Enhancement 1 reduces the size of the list compared by 1 on each pass, with an implementation whose inner loop runs over range(len(L)-1-i). Enhancement 2 halts if no swaps are made during a pass, with an implementation that sets swap = False before each pass, True when a swap is made, and breaks out if swap is still False.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -3272,21 +3276,23 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q15-a-i", topicId: "cs-2-4", conceptId: "two-terms-database-record",
+    id: "cs-2024-hl-q15-a-i", topicId: "cs-2-4", conceptId: "terms-database-record",
     section: "B", questionRef: "2024 HL Q15(a)(i)",
-    stem: "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
+    stem: "Alex wants to keep track of her collection of Dr. Seuss books in a database. So far, she has managed to design a single table called BOOKS and enter the records shown below.",
     questionText: "Explain the two terms, ‘database’ and ‘record’.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Database", marks: 4 },
+    { id: "r-1", kind: "criterion", verbatim: "Database — A database is a collection of structured data organised in a way such that the data can be easily and efficiently retrieved and maintained (added to, changed/updated and deleted). • The data is organised into entities also known as tables which are structured sets of rows and columns. Each table typically correspond to a specific entity (person, place or thing) such as customer, country, order, product or book", marks: 2, contextNote: "For each term: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark", permittedMarks: [0,1,2] },
+    { id: "r-2", kind: "criterion", verbatim: "Record — Is a single row of data (also known as a tuple) • Each record contains a set of related elements or fields", marks: 2, permittedMarks: [0,1,2] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q15-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
-          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
-          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q15-books",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-books.png",
+          "srcHash": "ec31f259cda4138373454e4e85c8d69a",
+          "alt": "The BOOKS table printed with Question 15(a), fields book_id, title, year, cost, author, author_dob and on_loan: 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes; 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y; 3 Horton Hears a Who! 1954 euro 10 Doc Seus 02/03/1904 N; 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3294,21 +3300,23 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q15-a-ii", topicId: "cs-2-4", conceptId: "suggest-field-would-be-good-choice",
+    id: "cs-2024-hl-q15-a-ii", topicId: "cs-2-4", conceptId: "field-would-good-choice-primary-key",
     section: "B", questionRef: "2024 HL Q15(a)(ii)",
-    stem: "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
+    stem: "Alex wants to keep track of her collection of Dr. Seuss books in a database. So far, she has managed to design a single table called BOOKS and enter the records shown below.",
     questionText: "Suggest which field would be a good choice for the primary key for the BOOKS table. Justify your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Primary Key: book_id", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Primary Key: book_id", marks: 1, contextNote: "Primary Key correctly identified 1 mark" },
+    { id: "r-2", kind: "point", verbatim: "Justify: The value of book_id is guaranteed to be unique for each separate record", marks: 2, contextNote: "Justification: Very good justification – clear understanding demonstrated 2 marks" },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q15-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
-          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
-          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q15-books",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-books.png",
+          "srcHash": "ec31f259cda4138373454e4e85c8d69a",
+          "alt": "The BOOKS table printed with Question 15(a), fields book_id, title, year, cost, author, author_dob and on_loan: 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes; 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y; 3 Horton Hears a Who! 1954 euro 10 Doc Seus 02/03/1904 N; 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3316,21 +3324,22 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q15-a-iii", topicId: "cs-2-4", conceptId: "identify-any-two-data-inconsistencies-data",
+    id: "cs-2024-hl-q15-a-iii", topicId: "cs-2-4", conceptId: "data-inconsistencies-data-books-table",
     section: "B", questionRef: "2024 HL Q15(a)(iii)",
-    stem: "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
+    stem: "Alex wants to keep track of her collection of Dr. Seuss books in a database. So far, she has managed to design a single table called BOOKS and enter the records shown below.",
     questionText: "Identify any two data inconsistencies in the data shown in the BOOKS table.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 2 },
+    { id: "r-1", kind: "anyN", verbatim: "Any two from the following:", marks: null, contextNote: "Each correctly identified inconsistency 1 marks", group: {"claimMax":2,"perOption":1,"options":["The use of the euro symbol in the cost field in record number 3 is inconsistent with the way cost is specified in the other records i.e. €10 versus 6.95, 8.95 and 9.95","The name of the author in record number 3 is inconsistent with the names in the other records i.e. Doc Seus is inconsistent with Dr. Seuss","the format used in the author_dob field is dd/mm/yyyy in records 1 and 3. A different format is used in records 2 (mmm d, yyyy) and 4 (American, mm/dd/yyyy).","The values used in the on_loan field are inconsistent. Yes and Y are used to indicate that a books 1 and 2 are out on loan whereas N and No are used to indicate books with id values of 3 and 4 are not on loan."]} },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q15-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
-          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
-          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q15-books",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-books.png",
+          "srcHash": "ec31f259cda4138373454e4e85c8d69a",
+          "alt": "The BOOKS table printed with Question 15(a), fields book_id, title, year, cost, author, author_dob and on_loan: 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes; 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y; 3 Horton Hears a Who! 1954 euro 10 Doc Seus 02/03/1904 N; 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3340,19 +3349,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q15-a-iv", topicId: "cs-2-4", conceptId: "assuming-all-data-inconsistencies-fixed-enter",
     section: "B", questionRef: "2024 HL Q15(a)(iv)",
-    stem: "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
+    stem: "Alex wants to keep track of her collection of Dr. Seuss books in a database. So far, she has managed to design a single table called BOOKS and enter the records shown below.",
     questionText: "Assuming all data inconsistencies are fixed, enter the names of three fields from the BOOKS table in Column B that correspond to the data types shown in Column A.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Boolean on_loan", marks: 1, contextNote: "Note: The above table shows the only acceptable answers Each correct response 1 mark" },
+    { id: "r-2", kind: "point", verbatim: "String title, author, author_dob", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Real cost", marks: 1 },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q15-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
-          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
-          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q15a-iv",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15a-iv.png",
+          "srcHash": "37b97174192a40da1ada2cddd0089e39",
+          "alt": "The BOOKS table printed with Question 15(a) (book_id, title, year, cost, author, author_dob, on_loan, four records), above the table of part (iv): Column A, Data Type, lists Boolean, String and Real; Column B, Field Name, is blank.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3360,21 +3372,22 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q15-b-ii", topicId: "cs-3-1", conceptId: "identify-use-one-foreign-key-design",
+    id: "cs-2024-hl-q15-b-ii", topicId: "cs-3-1", conceptId: "use-foreign-key-design-7",
     section: "B", questionRef: "2024 HL Q15(b)(ii)",
-    stem: "Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024. • Amy borrowed How the Grinch Stole Christmas! on 1st May 2024. • Bill borrowed The Cat in the Hat on 18th May 2024. • Chloe borrowed Horton Hears a Who! 7 days ago. member_id book_id date_borrowed member_id member_name 1 Amy 3 2 20/05/2024 2 4 01/05/24 3 Chloe 2 1 MEMBERS LOANS Figure 7 This question continues on the next page.",
+    stem: "Alex has decided to build a relational database that could be used by a library and has created two new tables called MEMBERS and LOANS. The MEMBERS table is used to store the library members and LOANS will be used to keep track of the books that are taken out on loan. Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.",
     questionText: "Identify and explain the use of one foreign key from the design shown in Figure 7.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Possible answers are:", marks: 4 },
+    { id: "r-1", kind: "criterion", verbatim: "Foreign Key: member_id • Explanation: This links the LOANS table with the MEMBERS table", marks: 4, accepts: ["Foreign Key: book_id • Explanation: This links the LOANS table with the BOOKS table"], contextNote: "Foreign Key correctly identified 1 mark Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,1,2,3,4] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q15-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
-          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
-          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q15b-fig7",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15b-fig7.png",
+          "srcHash": "83c20bbef2f3d576745b0878cf70a60c",
+          "alt": "Figure 7: the MEMBERS table (member_id 1 Amy, 2 with its name blank, 3 Chloe) and the LOANS table (member_id, book_id, date_borrowed): 3, 2, 20/05/2024; a blank member_id, 4, 01/05/24; 2, 1 and a blank date; and a fourth row left blank.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3382,21 +3395,22 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q15-b-iii", topicId: "cs-2-4", conceptId: "how-design-shown-figure-7-removes",
+    id: "cs-2024-hl-q15-b-iii", topicId: "cs-2-4", conceptId: "design-7-removes-need-loan-field",
     section: "B", questionRef: "2024 HL Q15(b)(iii)",
-    stem: "Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024. • Amy borrowed How the Grinch Stole Christmas! on 1st May 2024. • Bill borrowed The Cat in the Hat on 18th May 2024. • Chloe borrowed Horton Hears a Who! 7 days ago. member_id book_id date_borrowed member_id member_name 1 Amy 3 2 20/05/2024 2 4 01/05/24 3 Chloe 2 1 MEMBERS LOANS Figure 7 This question continues on the next page.",
+    stem: "Alex has decided to build a relational database that could be used by a library and has created two new tables called MEMBERS and LOANS. The MEMBERS table is used to store the library members and LOANS will be used to keep track of the books that are taken out on loan. Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.",
     questionText: "Explain how the design shown in Figure 7 removes the need for the on_loan field from the BOOKS table.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The presence of a record in the LOANS table can be used to infer that a book is on loan. (Not only that, but the date the book was borrowed can also be looked up.) Therefore, there is no need to store this information in BOOKS.", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "The presence of a record in the LOANS table can be used to infer that a book is on loan. (Not only that, but the date the book was borrowed can also be looked up.) Therefore, there is no need to store this information in BOOKS.", marks: 3, contextNote: "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q15-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
-          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
-          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q15b-fig7",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15b-fig7.png",
+          "srcHash": "83c20bbef2f3d576745b0878cf70a60c",
+          "alt": "Figure 7: the MEMBERS table (member_id 1 Amy, 2 with its name blank, 3 Chloe) and the LOANS table (member_id, book_id, date_borrowed): 3, 2, 20/05/2024; a blank member_id, 4, 01/05/24; 2, 1 and a blank date; and a fourth row left blank.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3406,19 +3420,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q15-b-iv", topicId: "cs-2-4", conceptId: "relational-databases-reduce-amount-data-redundancy",
     section: "B", questionRef: "2024 HL Q15(b)(iv)",
-    stem: "Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024. • Amy borrowed How the Grinch Stole Christmas! on 1st May 2024. • Bill borrowed The Cat in the Hat on 18th May 2024. • Chloe borrowed Horton Hears a Who! 7 days ago. member_id book_id date_borrowed member_id member_name 1 Amy 3 2 20/05/2024 2 4 01/05/24 3 Chloe 2 1 MEMBERS LOANS Figure 7 This question continues on the next page.",
+    stem: "Alex has decided to build a relational database that could be used by a library and has created two new tables called MEMBERS and LOANS. The MEMBERS table is used to store the library members and LOANS will be used to keep track of the books that are taken out on loan. Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.",
     questionText: "Relational databases reduce the amount of data redundancy. Explain the term ‘data redundancy’.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Data redundancy refers to a situation where a single piece of data (or value) is stored in more than one place in a database. It usually occurs as a result of poor design and is considered bad practice as it can lead to data inconsistencies as well as inefficiency use of storage.", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "Data redundancy refers to a situation where a single piece of data (or value) is stored in more than one place in a database. It usually occurs as a result of poor design and is considered bad practice as it can lead to data inconsistencies as well as inefficiency use of storage.", marks: 3, contextNote: "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q15-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
-          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
-          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q15b-fig7",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15b-fig7.png",
+          "srcHash": "83c20bbef2f3d576745b0878cf70a60c",
+          "alt": "Figure 7: the MEMBERS table (member_id 1 Amy, 2 with its name blank, 3 Chloe) and the LOANS table (member_id, book_id, date_borrowed): 3, 2, 20/05/2024; a blank member_id, 4, 01/05/24; 2, 1 and a blank date; and a fourth row left blank.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3426,22 +3441,14 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q15-c-i", topicId: "cs-3-2", conceptId: "suggest-two-possible-hypotheses-alex-could",
+    id: "cs-2024-hl-q15-c-i", topicId: "cs-3-2", conceptId: "possible-hypotheses-alex-could-use-her",
     section: "B", questionRef: "2024 HL Q15(c)(i)",
-    stem: "Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image 1 on Page 6: https://technologyicalword.wordpress.com/emerging-technologies-in-computer-science/ Image 2 on Page 6: https://fossbytes.com/difference-between-ram-and-rom-memory/ Image on Page 7: https://www.forbes.com/sites/edrensi/2018/07/11/mcdonalds-says-goodbye-cashiers-hello-kiosks/ Image on Page 9: https://tech.co/digital-marketing/social-media-trends Image on Page 11: https://thebulletin.org/2023/08/convergence-artificial-intelligence-and-the-new-and-old-weapons- of-mass-destruction/ Image on Page 12: https://www.meathspca.com/get-involved.html Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219A2EL 2024. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
+    stem: "Alex is planning to use the database for a data analytics project. A data analytics project can be carried out in stages starting with a hypothesis.",
     questionText: "Suggest two possible hypotheses Alex could use her data analytics project to test.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two statements from the following:", marks: 4 },
+    { id: "r-1", kind: "criterion", verbatim: "The most/least popular book is X.", marks: 4, accepts: ["The most popular time/season to borrow books is Y","A particular user demographics (e.g. age, gender, location) prefer certain types of books.","Certain books (e.g. expensive books) are more likely to be returned on time than others.","Member A is more likely to return their books in time than member B","PR campaign results in an increase in borrowing of X%"], contextNote: "Any reasonable hypothesis presented as a statement. For each hypothesis: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark", permittedMarks: [0,1,2,3,4] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q15-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
-          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
-          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3450,198 +3457,268 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q15-c-ii", topicId: "cs-2-4", conceptId: "another-stage-typical-analytics-project-data",
     section: "B", questionRef: "2024 HL Q15(c)(ii)",
-    stem: "Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image 1 on Page 6: https://technologyicalword.wordpress.com/emerging-technologies-in-computer-science/ Image 2 on Page 6: https://fossbytes.com/difference-between-ram-and-rom-memory/ Image on Page 7: https://www.forbes.com/sites/edrensi/2018/07/11/mcdonalds-says-goodbye-cashiers-hello-kiosks/ Image on Page 9: https://tech.co/digital-marketing/social-media-trends Image on Page 11: https://thebulletin.org/2023/08/convergence-artificial-intelligence-and-the-new-and-old-weapons- of-mass-destruction/ Image on Page 12: https://www.meathspca.com/get-involved.html Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219A2EL 2024. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
+    stem: "Alex is planning to use the database for a data analytics project. A data analytics project can be carried out in stages starting with a hypothesis.",
     questionText: "Another stage in a typical analytics project is data cleaning. Name and describe two types of data errors that can be removed using data cleaning.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Missing Values: Data entries that are incomplete or entirely absent can be filled in with appropriate values or removed if they are not critical.", marks: 6, accepts: ["Duplicate Records: Repeated entries that skew analysis and statistics can be identified and eliminated to ensure each data point is unique.","Inconsistent Formatting: Variations in data formatting (e.g. date formats, capitalisation, unit measurements) can be standardised for consistency.","Outliers and Anomalies: Data points that deviate significantly from the norm can be investigated and corrected or removed if they are erroneous.","Incorrect Data Types: Values that are in the wrong format or type (e.g. text in a numerical field) can be converted to the correct type or corrected as needed.","Typographical Errors: Spelling mistakes, typographical errors, and other text inaccuracies can be corrected to ensure data consistency and accuracy.","Inconsistent Categories: Categorical data that uses different labels for the same category (e.g. \"Y\" vs. \"Yes\") can be standardised to unify the categories."], contextNote: "Any other relevant error e.g. Invalid entries - data that do not conform to the expected rules or ranges (e.g., negative ages, future dates for past events) can be identified and corrected or removed. For each type of error correctly identified 1 mark For each description: Very good description - clear understanding demonstrated 2 marks Fair description – limited understanding 1 mark", permittedMarks: [0,1,2,3,4,5,6] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q15-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
-          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
-          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC219ALP038EV",
+    paperFileid: "LC219ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q16-a-i", topicId: "cs-2-2", conceptId: "line-code-display-value-variable-random",
-    section: "B", questionRef: "2024 HL Q16(a)(i)",
-    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-    questionText: "Write a line of code to display the value of the variable random_fruit_1 in a message.",
+    id: "cs-2024-hl-q16-a-i", topicId: "cs-2-2", conceptId: "write-line-code-display-value-variable",
+    section: "C", questionRef: "2024 HL Q16(a)(i)",
+    stem: "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+    questionText: "Write a line of code to display the value of the variable random_fruit_1 in a message. When the program is run the output may now look as follows: Random Fruit 1: cherry",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 5, contextNote: "(i) 5 marks (C-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 2 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,2,3,5] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
-          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16a-code.png",
+          "srcHash": "ecbdf85c79055d04858f2dfd6db206e6",
+          "alt": "The seven-line program Question16_A.py as printed in the Section C booklet: two comment lines, from random import choice, fruits = ['apple', 'cherry', 'orange'], and random_fruit_1 = choice(fruits).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q16a-i",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q16a-i.png",
+          "srcHash": "0dc9000e2bdab7f701c13155c56b7b8d",
+          "alt": "Lines 9 and 10 of the marking scheme's possible solution: a comment for part (i), then print(\"Random Fruit 1:\",random_fruit_1) # (i).",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC219ALP038EV",
+    paperFileid: "LC219ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q16-a-ii", topicId: "cs-2-5", conceptId: "add-statements-initialise-two-new-variables",
-    section: "B", questionRef: "2024 HL Q16(a)(ii)",
-    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-    questionText: "Add statements to initialise two new variables with fruits chosen randomly from the list. You should also display the values of the variables which should be called random_fruit_2 and random_fruit_3.",
+    id: "cs-2024-hl-q16-a-ii", topicId: "cs-2-2", conceptId: "add-statements-initialise-new-variables-fruits",
+    section: "C", questionRef: "2024 HL Q16(a)(ii)",
+    stem: "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+    questionText: "Add statements to initialise two new variables with fruits chosen randomly from the list. You should also display the values of the variables which should be called random_fruit_2 and random_fruit_3. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 5, contextNote: "(ii) 5 marks (C-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 2 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,2,3,5] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
-          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16a-code.png",
+          "srcHash": "ecbdf85c79055d04858f2dfd6db206e6",
+          "alt": "The seven-line program Question16_A.py as printed in the Section C booklet: two comment lines, from random import choice, fruits = ['apple', 'cherry', 'orange'], and random_fruit_1 = choice(fruits).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q16a-ii",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q16a-ii.png",
+          "srcHash": "fcf274a444664c5bab7e6392ac4d9a83",
+          "alt": "Lines 12 to 17 of the marking scheme's possible solution: two comments for part (ii), then random_fruit_2 = choice(fruits) and random_fruit_3 = choice(fruits), each printed as Random Fruit 2: and Random Fruit 3:, every line marked # (ii).",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC219ALP038EV",
+    paperFileid: "LC219ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q16-a-iii", topicId: "cs-2-2", conceptId: "add-code-display-message-first-fruit",
-    section: "B", questionRef: "2024 HL Q16(a)(iii)",
-    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-    questionText: "Add code to display the message “First fruit is cherry” if the first random fruit is a cherry.",
+    section: "C", questionRef: "2024 HL Q16(a)(iii)",
+    stem: "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+    questionText: "Add code to display the message “First fruit is cherry” if the first random fruit is a cherry. When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 5, contextNote: "(iii) 5 marks (C-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 2 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,2,3,5] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
-          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16a-code.png",
+          "srcHash": "ecbdf85c79055d04858f2dfd6db206e6",
+          "alt": "The seven-line program Question16_A.py as printed in the Section C booklet: two comment lines, from random import choice, fruits = ['apple', 'cherry', 'orange'], and random_fruit_1 = choice(fruits).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q16a-iii",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q16a-iii.png",
+          "srcHash": "5cdc55f97daf3f17a2d7e84536c9c037",
+          "alt": "Lines 20 to 22 of the marking scheme's possible solution: a comment for part (iii), then if (random_fruit_1 == 'cherry'): print(\"FIRST FRUIT IS CHERRY\").",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC219ALP038EV",
+    paperFileid: "LC219ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q16-a-iv", topicId: "cs-2-2", conceptId: "add-code-display-message-first-pair",
-    section: "B", questionRef: "2024 HL Q16(a)(iv)",
-    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-    questionText: "Add code to display the message “First pair match” if the first two fruits are the same.",
+    section: "C", questionRef: "2024 HL Q16(a)(iv)",
+    stem: "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+    questionText: "Add code to display the message “First pair match” if the first two fruits are the same. When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any other reasonable attempt.", marks: 5 },
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 5, contextNote: "(iv) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,3,5] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
-          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16a-code.png",
+          "srcHash": "ecbdf85c79055d04858f2dfd6db206e6",
+          "alt": "The seven-line program Question16_A.py as printed in the Section C booklet: two comment lines, from random import choice, fruits = ['apple', 'cherry', 'orange'], and random_fruit_1 = choice(fruits).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q16a-iv",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q16a-iv.png",
+          "srcHash": "1326519f205b48a654003fcdcf0bc0ed",
+          "alt": "Lines 24 to 26 of the marking scheme's possible solution: a comment for part (iv), then if (random_fruit_1 == random_fruit_2): print(\"FIRST PAIR MATCH\").",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC219ALP038EV",
+    paperFileid: "LC219ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q16-a-v", topicId: "cs-2-2", conceptId: "add-code-display-message-first-pair",
-    section: "B", questionRef: "2024 HL Q16(a)(v)",
-    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-    questionText: "Add code to display the message “First pair are cherries” if the first two fruits are both cherries.",
+    section: "C", questionRef: "2024 HL Q16(a)(v)",
+    stem: "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+    questionText: "Add code to display the message “First pair are cherries” if the first two fruits are both cherries. When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any other reasonable attempt.", marks: 5 },
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 5, contextNote: "(v) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,3,5] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
-          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16a-code.png",
+          "srcHash": "ecbdf85c79055d04858f2dfd6db206e6",
+          "alt": "The seven-line program Question16_A.py as printed in the Section C booklet: two comment lines, from random import choice, fruits = ['apple', 'cherry', 'orange'], and random_fruit_1 = choice(fruits).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q16a-v",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q16a-v.png",
+          "srcHash": "63e0b44237434f6d5d125ffd519a19bb",
+          "alt": "Lines 28 to 30 of the marking scheme's possible solution: a comment for part (v), then if (random_fruit_1 == random_fruit_2) and (random_fruit_1 == 'cherry'): print(\"FIRST PAIR ARE CHERRIES \").",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC219ALP038EV",
+    paperFileid: "LC219ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q16-a-vi", topicId: "cs-2-2", conceptId: "add-code-display-message-matching-pair",
-    section: "B", questionRef: "2024 HL Q16(a)(vi)",
-    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-    questionText: "Add code to display the message “Matching pair” if any two fruits are the same.",
+    section: "C", questionRef: "2024 HL Q16(a)(vi)",
+    stem: "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+    questionText: "Add code to display the message “Matching pair” if any two fruits are the same. When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "10 marks Correct response", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "semantic error.", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "Response about half-right", marks: 2 },
-    { id: "r-4", kind: "point", verbatim: "syntax or semantic error.", marks: 2 },
-    { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 2 },
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 10, contextNote: "(vi) 10 marks (D-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 7 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 5 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error. 3 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,3,5,7,10] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
-          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16a-code.png",
+          "srcHash": "ecbdf85c79055d04858f2dfd6db206e6",
+          "alt": "The seven-line program Question16_A.py as printed in the Section C booklet: two comment lines, from random import choice, fruits = ['apple', 'cherry', 'orange'], and random_fruit_1 = choice(fruits).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q16a-vi",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q16a-vi.png",
+          "srcHash": "25096d3f071258dcd1231309c57330ab",
+          "alt": "Lines 32 to 34 of the marking scheme's possible solution: a comment for part (vi), then if any of random_fruit_1 == random_fruit_2, random_fruit_1 == random_fruit_3 or random_fruit_2 == random_fruit_3: print(\"MATCHING PAIR\").",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC219ALP038EV",
+    paperFileid: "LC219ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q16-a-vii", topicId: "cs-2-2", conceptId: "extend-program-loop-iterates-100-times",
-    section: "B", questionRef: "2024 HL Q16(a)(vii)",
-    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-    questionText: "Extend the program with a loop that iterates 100 times. The loop should generate a random fruit on each iteration. After the loop is executed, the program should display a count of the number of times each fruit was generated. There is no need to display the names of the 100 fruits.",
+    section: "C", questionRef: "2024 HL Q16(a)(vii)",
+    stem: "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+    questionText: "Extend the program with a loop that iterates 100 times. The loop should generate a random fruit on each iteration. After the loop is executed, the program should display a count of the number of times each fruit was generated. There is no need to display the names of the 100 fruits. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "15 marks Correct response", marks: 15 },
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 15, contextNote: "(vii) 15 marks (D-15 scale) 15 marks Correct response Correct implementation using solution above or similar. 12 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 8 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error. 5 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,5,8,12,15] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
-          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16a-code.png",
+          "srcHash": "ecbdf85c79055d04858f2dfd6db206e6",
+          "alt": "The seven-line program Question16_A.py as printed in the Section C booklet: two comment lines, from random import choice, fruits = ['apple', 'cherry', 'orange'], and random_fruit_1 = choice(fruits).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q16a-vii",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q16a-vii.png",
+          "srcHash": "be0018a89add3809df3b0a4488e9f435",
+          "alt": "Lines 36 to 46 of the marking scheme's possible solution, part (vii): comments restating the task, random_fruits = [], a loop for i in range(100) appending choice(fruits) to random_fruits, then a loop over the fruits printing each fruit with random_fruits.count of it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "higher",
-    paperFileid: "LC219ALP038EV",
+    paperFileid: "LC219ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q16-b", topicId: "cs-2-2", conceptId: "open-program-called-question16-b-py",
-    section: "B", questionRef: "2024 HL Q16(b)",
-    stem: "Enter your Examination Number in the space provided on line 2 in your Python file. Implement a simulation of a fruit machine in Python. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. The program should proceed according to the following sequence: • Initialise a list called fruits with three elements – apple, cherry and orange. • Display the initial list of fruits as shown. The initial list of fruits is: ['apple', 'cherry', 'orange'] • Prompt the user to enter an additional fruit, for example kiwi, pear or lemon and append the value entered to fruits. Enter an additional fruit: kiwi • Display the list of four fruits, for example: The list of four fruits is: ['apple', 'cherry', 'orange', 'kiwi'] • Prompt the user to nominate their winning fruit which must be in the above list. If the user enters a fruit that is not in fruits, the program should display an error message and prompt the user to nominate their winning fruit again. This should continue as long as the winning fruit entered is not in fruits. Nominate your winning fruit: cherry • Display the winning fruit, as show below. Nominate your winning fruit: cherry The winning fruit you selected is cherry • Write code to select three random fruits from fruits. Compare the selected fruits to the winning fruit entered earlier and keep going until all three fruits match the winning fruit. The program should keep a count of the number of tries taken and display this with a “Winner” message at the end, as shown below. Winner after 38 tries This question continues on the next page. Two example outputs are shown below. Sample output 1: The initial list of fruits is: ['apple', 'cherry', 'orange'] Enter an additional fruit: kiwi The list of 4 fruits is: ['apple', 'cherry', 'orange', 'kiwi'] Nominate your winning fruit: cherry The winning fruit you selected is cherry Winner after 38 tries Sample output 2: The initial list of fruits is: ['apple', 'cherry', 'orange'] Enter an additional fruit: kiwi The list of 4 random fruits is: ['apple', 'cherry', 'orange', 'kiwi'] Nominate your winning fruit: pear Error: winning fruit must be in the list Nominate your winning fruit: orange The winning fruit you selected is orange Winner after 27 tries Use the format CandidateNumberQuestion16_B.py to save your file. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on page 4: https://www.flaticon.com/free-icons/fruit-machine Image on page 7: https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/qEue9C6/videoblocks-slot-machine- wheels-three-3-cherries-jackpot-winner-3-d-animation_bkbn1fknu_thumbnail-1080_09.png This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 22 May Morning 11:30 – 12:30",
-    questionText: "Open the program called Question16_B.py from your device. This file contains only two comments, on lines 1 and 2. Before adding any code, you should save your working copy of the file using the format ExaminationNumberQuestion16_B.py. For example, you would save the file as 123456Question16_B.py if your Examination Number was 123456.",
+    id: "cs-2024-hl-q16-b", topicId: "cs-2-2", conceptId: "implement-simulation-fruit-machine-python-should",
+    section: "C", questionRef: "2024 HL Q16(b)",
+    questionText: "Implement a simulation of a fruit machine in Python. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. The program should proceed according to the following sequence: • Initialise a list called fruits with three elements – apple, cherry and orange. • Display the initial list of fruits as shown. The initial list of fruits is: ['apple', 'cherry', 'orange'] • Prompt the user to enter an additional fruit, for example kiwi, pear or lemon and append the value entered to fruits. Enter an additional fruit: kiwi • Display the list of four fruits, for example: The list of four fruits is: ['apple', 'cherry', 'orange', 'kiwi'] • Prompt the user to nominate their winning fruit which must be in the above list. If the user enters a fruit that is not in fruits, the program should display an error message and prompt the user to nominate their winning fruit again. This should continue as long as the winning fruit entered is not in fruits. Nominate your winning fruit: cherry • Display the winning fruit, as show below. Nominate your winning fruit: cherry The winning fruit you selected is cherry • Write code to select three random fruits from fruits. Compare the selected fruits to the winning fruit entered earlier and keep going until all three fruits match the winning fruit. The program should keep a count of the number of tries taken and display this with a “Winner” message at the end, as shown below. Winner after 38 tries",
     tariffModel: {"kind":"fixed"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 30 },
+    { id: "r-1", kind: "criterion", verbatim: "Programming Standards — Program executes correctly with no syntax or runtime errors • Program meets requirements • Program design is well explained with comments • Meaningful variable/function names", marks: 10, contextNote: "High level of achievement All of the following implemented correctly and efficiently Moderate level of achievement Reasonable attempt to implement at least two of each of the following Low level of achievement Poor attempt to complete any of the following", permittedMarks: [0,5,7,10] },
+    { id: "r-2", kind: "criterion", verbatim: "Program Inputs — Initial list of fruits correctly initialised • User correctly prompted to enter additional fruit and to nominate winning fruit • Program correctly generates three random fruits • Variable initialisation and use of assignment statements", marks: 5, permittedMarks: [0,3,4,5] },
+    { id: "r-3", kind: "criterion", verbatim: "Program Logic (Processing) — Additional fruit correctly appended to list of fruits • Logic to validate winning fruit • Logic to simulate fruit machine and maintain counter variable", marks: 10, permittedMarks: [0,5,7,10] },
+    { id: "r-4", kind: "criterion", verbatim: "Program Outputs — Initial list of fruits displayed • Extended list of four fruits displayed • Winning fruit correctly displayed • Winner! message correctly displayed with counter", marks: 5, permittedMarks: [0,3,4,5] },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
-          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
+    questionFigure: {
+          "candId": "computer-science-2024-HL-paper-q16b-output",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16b-output.png",
+          "srcHash": "77f8a6f5a69c52c73a1b41a53f51963a",
+          "alt": "The two sample outputs printed with Question 16(b). Sample output 1: the initial list ['apple', 'cherry', 'orange'], kiwi entered and the list of 4 fruits shown, cherry nominated, The winning fruit you selected is cherry, Winner after 38 tries. Sample output 2: kiwi added, pear nominated and refused with Error: winning fruit must be in the list, orange nominated, Winner after 27 tries.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-HL-scheme-q16b",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-scheme-q16b.png",
+          "srcHash": "a284337b6021e2d916d04b4cd97c5616",
+          "alt": "The marking scheme's 50-line possible solution for Question 16(b): the fruits list is initialised and printed; an additional fruit is read and appended and the list of 4 fruits printed; the winning fruit is read, and re-read with an error message while it is not in fruits, then printed; three random fruits are chosen and re-chosen in a while True loop, counting tries, until all three match the winning fruit; then print(\"JACKPOT! after\", count, \"tries\").",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -5834,7 +5911,7 @@ export const CARDS: SecCard[] = [
     questionText: "Provide one implication that the quote could have for your use of online applications.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Provide one implication that the quote could have for your use of online applications.", marks: null, contextNote: "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", group: {"claimMax":1,"perOption":3,"options":["Privacy - users often share personal information that becomes valuable for targeted advertising.","Manipulation of attention – excessive use of online platforms can lead to addictive usage patterns, foster a comparison culture which in turn can have a negative impact on mental health.","Responsible use - on a positive note, the quote can serve as an educational tool, promoting digital literacy and empowering users to make informed decisions about their online activities such as reading terms and conditions."]} },
+    { id: "r-1", kind: "criterion", verbatim: "Privacy - users often share personal information that becomes valuable for targeted advertising.", marks: 3, accepts: ["Manipulation of attention – excessive use of online platforms can lead to addictive usage patterns, foster a comparison culture which in turn can have a negative impact on mental health.","Responsible use - on a positive note, the quote can serve as an educational tool, promoting digital literacy and empowering users to make informed decisions about their online activities such as reading terms and conditions."], contextNote: "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
     questionFigure: {
           "candId": "computer-science-2024-HL-paper-q12-fig0",

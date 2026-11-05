@@ -6797,7 +6797,7 @@
  {
   "id": "cs-2024-hl-q1",
   "topicId": "cs-2-3",
-  "conceptId": "logic-gates-have-one-or-more",
+  "conceptId": "logic-gates-have-more-inputs-single",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -6811,18 +6811,29 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Column A Column B",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "1 0 0 1 0 0",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Each correct response 1 mark"
    }
   ],
-  "stem": "Logic gates have one or more inputs and a single output. For each logic gate in Column A in the table below enter the output, either 0 or 1, in Column B.",
-  "figureKey": "computer-science-2024-HL-paper-q1-fig0"
+  "figureKey": "computer-science-2024-HL-scheme-q1",
+  "questionFigureKey": "computer-science-2024-HL-paper-q1-fig0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q2",
   "topicId": "cs-2-2",
-  "conceptId": "output-displayed-following-python-code-1",
+  "conceptId": "output-displayed-python-code",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -6836,19 +6847,27 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Answer: 27 30 33 36",
-    "marks": 3
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Each correct value in order (x 4) 1 mark"
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "Space between each value",
-    "marks": 3
+    "marks": 2
    }
   ],
-  "stem": "What is the output displayed by the following Python code?",
-  "figureKey": "computer-science-2024-HL-paper-q2-code0"
+  "questionFigureKey": "computer-science-2024-HL-paper-q2-code0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q3",
@@ -6867,22 +6886,24 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Answer: 0111 1001",
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "For each calculation error deduct 2 marks",
-    "marks": 3
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "Correct including leading zero 6 marks Correct without leading zero 5 marks For each calculation error deduct 2 marks Response with some merit 2 marks"
    }
-  ],
-  "stem": "Express the decimal number 121 as an 8-bit binary number."
+  ]
  },
  {
   "id": "cs-2024-hl-q5",
-  "topicId": "cs-2-3",
+  "topicId": "cs-1-2",
   "conceptId": "history-computer-hardware-marked-significant-milestones",
   "level": "higher",
   "year": 2024,
@@ -6897,13 +6918,27 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Turing Machines",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "Turing Machines • First abstract model for computability • If something was computable it could be computer by a Turing Machine • They were used to prove that not everything was computable i.e. limits of computation",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "accepts": [
+     "Transistors • Replaced bulky and less reliable vacuum tubes, enabling the development of smaller, faster, and more energy-efficient electronic devices. This laid the foundation for modern semiconductor technology.",
+     "Integrated Circuits • Integrated circuits are orders of magnitude smaller, faster, and less expensive than those constructed of discrete components, allowing a large transistor count.",
+     "ARPANET • Considered the forerunner or the internet – many of the protocols used by modern computer networks were developed for ARPANET",
+     "Microprocessors • The microprocessor enabled the integration of computing power on a small chip. This development led to the rapid advancement of personal computers and other electronic devices.",
+     "Personal Computers • Personal computers have revolutionised the way individuals work, learn, and connect with others. Their affordability made them much more accessible for people to use in their daily lives to access information, communication and productivity tools easily accessible to everyone."
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 6 marks Good explanation - clear information, lacking demonstration of full understanding 4 marks Fair explanation - limited understanding 2 mark"
    }
   ],
-  "stem": "The history of computer hardware is marked by significant milestones that have driven advancements in computing capabilities. Six key milestones between the 1930s and the 1980s are shown in Figure 3 below. Choose one of the milestones from Figure 3 and explain its significance. Figure 3",
-  "figureKey": "computer-science-2024-HL-paper-q5-fig0"
+  "questionFigureKey": "computer-science-2024-HL-paper-q5-fig3",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q6",
@@ -6922,23 +6957,53 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Update user's profile picture.",
-    "marks": 6
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "Posting content o messaging - sending /receiving messages, o image sharing",
+     "Connecting with friends",
+     "Displaying online status,",
+     "Privacy settings, work correctly (on their own)",
+     "Evaluate all execution paths (or as many as possible)"
+    ],
+    "contextNote": "Examples of Unit Test Cases Any other valid unit test case For unit test and system test example: Very good example - clear understanding demonstrated 3 marks Fair example – limited understanding 2 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "End-to-end testing of entire application",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "Handles a realistic number of simultaneous users",
+     "Handles multiple chat sessions simultaneously",
+     "Ensures that system provides a user-friendly experience",
+     "Complies with privacy and security regulations."
+    ],
+    "contextNote": "Examples of System Test Cases Any other valid system test case For unit test and system test example: Very good example - clear understanding demonstrated 3 marks Fair example – limited understanding 2 mark"
    }
-  ],
-  "stem": "Consider a social networking mobile application designed for teenagers. Provide one example of a unit test case and one example of a system test case that might be carried out during the development process."
+  ]
  },
  {
   "id": "cs-2024-hl-q7",
-  "topicId": "cs-2-3",
-  "conceptId": "computing-technologies-continue-evolve-rapid-pace",
+  "topicId": "cs-1-2",
+  "conceptId": "computing-technologies-continue-evolve-at-rapid",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
   "section": "A",
   "questionRef": "2024 HL Q7",
-  "questionText": "Computing technologies continue to evolve at a rapid pace. Some of the current emerging trends include:  Quantum Computing  Edge Computing  Internet of Things (IoT)  Biometric Authentication and  Blockchain Technology Pick any one of the above and briefly describe one potential advantage and one potential disadvantage it might have on society in the future.",
+  "questionText": "Computing technologies continue to evolve at a rapid pace. Some of the current emerging trends include: • Quantum Computing • Edge Computing • Internet of Things (IoT) • Biometric Authentication and • Blockchain Technology Pick any one of the above and briefly describe one potential advantage and one potential disadvantage it might have on society in the future.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6946,17 +7011,53 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Potential Advantages of Quantum Computing",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "Potential Advantages of Quantum Computing — Speed - quantum computers have the potential to solve certain problems much faster than classical computers. This can lead to breakthroughs in fields such as cryptography, medicine, climate modelling etc.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "Potential Advantages of Edge Computing — Faster response times - By processing data closer to where it is generated (at the edge of the network), edge computing reduces latency, which is critical for real-time applications such as autonomous vehicles, industrial automation, and remote healthcare.",
+     "Potential Advantages of Edge Computing — Improved Privacy and Security: Edge computing allows sensitive data to be processed locally, reducing the need to transmit large amounts of raw data. This can enhance privacy and security, as critical data stays closer to its source and is subject to fewer points of potential vulnerability.",
+     "Potential Advantages of the Internet of Things (IoT) — Improved Convenience and Efficiency: IoT enables smart homes, smart cities, and smart industries by connecting various devices and systems. This connectivity can lead to improved convenience in daily life. The fact that data is gathered and processed in real-time leads to improved efficiency in industrial processes.",
+     "Potential Advantages of Biometric Authentication — Enhanced Security - biometric authentication provides a high level of security by relying on unique biological characteristics such as fingerprints, facial features, or iris patterns. It is difficult for unauthorised individuals to replicate or forge these characteristics, making it a robust method of user authentication.",
+     "Potential Advantages of Biometric Authentication — Convenience and User-Friendly - biometric authentication is often more convenient for users compared to traditional methods like passwords or PINs. Users do not need to remember complex passwords, and the authentication process is typically quick and seamless, contributing to a positive user experience.",
+     "Potential advantages of Blockchain Technology: — Transparency and Security: Blockchain technology offers a decentralised and transparent way to record transactions, which can enhance security and trust in various systems, such as financial transactions, supply chain management, and voting systems as there is no single point of control or failure. Security is enhanced because once information is recorded on the blockchain, it is extremely difficult to alter due to the cryptographic principles used in the technology."
+    ],
+    "contextNote": "For each potential advantage Very good description - clear understanding of emerging trend demonstrated 3 marks Fair description – limited understanding of emerging trend 2 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Potential Disadvantages of Quantum Computing — Cost – quantum computers are expensive to develop and build and are very expensive to run and maintain.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "Potential Disadvantages of Quantum Computing — The immense power of quantum computers could break current cryptographic algorithms, posing a significant risk to data security and privacy. Existing encryption methods may become obsolete, necessitating the development of new quantum-resistant cryptography",
+     "Potential Disadvantages of Edge Computing — Limited Processing Power and Storage - edge devices typically have less processing power and storage capacity compared to large, centralised servers. This limitation can constrain the types of computations that can be performed at the edge and may require careful resource management.",
+     "Potential Disadvantages of Edge Computing — Management Complexity and Scalability Challenges - edge computing introduces a more distributed architecture, leading to increased complexity in managing and maintaining a network of edge devices.",
+     "Potential Disadvantages of the Internet of Things (IoT) — Privacy Issues: IoT devices often collect sensitive personal data, and if not handled properly, there is a risk of unauthorised access or misuse. Striking a balance between the benefits of data collection and user privacy is a critical challenge.",
+     "Potential Disadvantages of the Internet of Things (IoT) — Security Concerns: IoT devices are often vulnerable to security breaches. The interconnected nature of these devices creates potential entry points for cyberattacks.",
+     "Potential Disadvantages of Biometric Authentication — Privacy Concerns - users may be hesitant to share such sensitive information as their own biometric data, fearing that it could be misused or compromised.",
+     "Potential Disadvantages of Biometric Authentication — Biometric Spoofing and False Positives - biometric systems are not immune to spoofing attacks where unauthorised users attempt to replicate biometric features to gain access.",
+     "Potential disadvantages of Blockchain Technology: — Privacy Concerns - while the transparency of blockchain is an advantage, it can also be a disadvantage. Because all transactions are recorded on a public ledger, it can be possible to trace transactions back to individuals.",
+     "Potential disadvantages of Blockchain Technology: — Energy Consumption - many blockchain networks require substantial computational power and energy consumption for mining and validating transactions. This has raised environmental and sustainability concerns."
+    ],
+    "contextNote": "For each potential disadvantage Very good description - clear understanding of emerging trend demonstrated 3 marks Fair description – limited understanding of emerging trend 2 mark"
    }
-  ],
-  "stem": "Computing technologies continue to evolve at a rapid pace. Some of the current emerging trends include:  Quantum Computing  Edge Computing  Internet of Things (IoT)  Biometric Authentication and  Blockchain Technology Pick any one of the above and briefly describe one potential advantage and one potential disadvantage it might have on society in the future."
+  ]
  },
  {
   "id": "cs-2024-hl-q8",
   "topicId": "cs-2-3",
-  "conceptId": "ram-rom-two-types-primary-memory",
+  "conceptId": "ram-rom-types-primary-memory-store",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -6970,12 +7071,40 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Data in RAM",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "System Software e.g. operating system",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "Application Software e.g. office productivity software",
+     "Programs e.g. python programs and data e.g. documents",
+     "Any temporary data"
+    ],
+    "contextNote": "Data in RAM For each of RAM and ROM: Very good example - clear understanding demonstrated 3 marks Fair example – limited understanding 2 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Firmware – the software embedded into hardware devices",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "Basic Input Output System (BIOS) - essential for the computer's startup.",
+     "Bootstrap programs",
+     "System level configuration data",
+     "Any permanent data necessary for the device to operate"
+    ],
+    "contextNote": "Data in ROM For each of RAM and ROM: Very good example - clear understanding demonstrated 3 marks Fair example – limited understanding 2 mark"
    }
-  ],
-  "stem": "RAM and ROM are two types of primary memory used to store data. Provide one example of data that might be stored in RAM and one example of data that might be stored in ROM."
+  ]
  },
  {
   "id": "cs-2024-hl-q9",
@@ -6986,7 +7115,7 @@
   "subjectId": "computer-science",
   "section": "A",
   "questionRef": "2024 HL Q9",
-  "questionText": "A leap year is a year that contains an additional day making it 366 days long instead of the usual Use the code to describe the two rules for determining whether a year is a leap year.",
+  "questionText": "A leap year is a year that contains an additional day making it 366 days long instead of the usual 365 days. The Python function is_leap_year, shown below can be used to determine whether a year (denoted by the parameter y) is a leap year or not. Use the code to describe the two rules for determining whether a year is a leap year.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6994,29 +7123,34 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "The two rules are:",
-    "marks": 2
+    "kind": "criterion",
+    "verbatim": "If the year is evenly divisible by 400 it is a leap year e.g. 2000 was a leap year",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "For each rule: Very good description - clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks"
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "If the year is evenly divisible by 400 it is a leap year e.g. 2000 was a leap year",
-    "marks": 2
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "If the year is evenly divisible by 4 and not 100 it is a leap year e.g. 2024 is but 2025 and 2100 are not For each rule:",
-    "marks": 2
+    "kind": "criterion",
+    "verbatim": "If the year is evenly divisible by 4 and not 100 it is a leap year e.g. 2024 is but 2025 and 2100 are not",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ]
    }
   ],
-  "stem": "A leap year is a year that contains an additional day making it 366 days long instead of the usual Use the code to describe the two rules for determining whether a year is a leap year.",
-  "figureKey": "computer-science-2024-HL-paper-q9-code0"
+  "questionFigureKey": "computer-science-2024-HL-paper-q9-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q10",
-  "topicId": "cs-2-2",
+  "topicId": "cs-1-2",
   "conceptId": "many-fast-food-restaurants-have-begun",
   "level": "higher",
   "year": 2024,
@@ -7031,17 +7165,34 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Any two from the following:",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "Equitable Use - by incorporating accessibility features such as adjustable font sizes, colour contrasts, and audio feedback the design can ensure that the interface is usable by people with varying abilities.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "accepts": [
+     "Flexibility in Use - this principle could be met by providing features that allows the users to interact with the system in different ways e.g. via touch screen or voice commands.",
+     "Simple and Intuitive Use - this can be achieved in the design by a straightforward and intuitive menu structure with easily understandable icons and labels. Avoid unnecessary complexity to make the interface user-friendly for individuals with different levels of experience.",
+     "Perceptible Information - the system should communicate necessary information effectively to the user, regardless of ambient conditions or the user's sensory abilities. For example, the menu and instructions on how to pay could be provided through multiple modalities, such as visual cues, text labels, and audio instructions, to cater to users with different sensory capabilities.",
+     "Tolerance for Error - this can be achieved by including features like confirmation dialogs, clear feedback messages, and the ability to review orders before finalising.",
+     "Low Physical Effort - the system should ensure that the touch interface is responsive to different levels of pressure, accommodating users with varying physical abilities. Consider alternative input methods for users who may have difficulty with touchscreens.",
+     "Size and Space for Approach and Use - the kiosks should be designed with varying heights to accommodate users of different statures or those using mobility aids. Ensure there's enough space for wheelchair users to approach and interact comfortably."
+    ],
+    "contextNote": "For each correctly named principle of universal design 1 mark For each explanation: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
    }
-  ],
-  "stem": "Many fast-food restaurants have begun using interactive kiosks that allow customers to order food without having to go to a cashier. These kiosks have menu-driven interfaces. Name two principles of universal design and explain how these principles could be met in the design of such systems."
+  ]
  },
  {
   "id": "cs-2024-hl-q11-a",
   "topicId": "cs-2-2",
-  "conceptId": "apply-algorithm-shown-pseudo-code-below",
+  "conceptId": "apply-algorithm-pseudo-code-row-shapes",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7057,15 +7208,22 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "In Step 1 the algorithm has swapped the square from position 0 with the triangle in position 7.",
-    "marks": 4
+    "marks": 2,
+    "contextNote": "For each correct step 2 marks Response with some merit 2 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "In Step 2 the algorithm has swapped the square from position 4 with the triangle in position 6. • This leaves a final state with all the triangles to the left of all the squares.",
+    "marks": 2
    }
   ],
-  "stem": "problem_solved  FALSE LOOP until problem_solved IS TRUE square  find the leftmost square triangle  find the rightmost triangle IF position of square IS GREATER THAN position of triangle problem solved  TRUE ELSE swap(square, triangle) Figure 4",
-  "figureKey": "computer-science-2024-HL-paper-q11-figure"
+  "questionFigureKey": "computer-science-2024-HL-paper-q11-figure",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q11-b",
-  "topicId": "cs-2-2",
+  "topicId": "cs-1-1",
   "conceptId": "algorithm-described-part-provides-general-solution",
   "level": "higher",
   "year": 2024,
@@ -7080,17 +7238,28 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "A general solution provides a broad approach that can be applied to different situations",
-    "marks": 2
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "accepts": [
+     "A general solution will always produce the correct output regardless of the input",
+     "The algorithm does not depend on the size of the input e.g. the number of squares and triangles."
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
    }
   ],
-  "figureKey": "computer-science-2024-HL-paper-q11-figure"
+  "questionFigureKey": "computer-science-2024-HL-paper-q11-figure",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q12-a",
   "topicId": "cs-1-2",
-  "conceptId": "meaning-quote-shown-figure-5-above",
+  "conceptId": "meaning-quote-5-above-relation-online",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7104,17 +7273,26 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "The meaning of the quote is that when a service such as social media is free, the users become a commodity for these platforms, and their attention and data are the actual products that are monetised. As users interact with social media platforms, they generate valuable data (through their preferences, behaviours etc.). This data is then collected, analysed, and used to create targeted advertising or sold to third parties for various purposes, such as market research or influencing user behaviour.",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "The quote serves as a reminder that even though users may not be directly paying for the service with money, they are indirectly paying with their personal information and attention."
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark"
    }
   ],
-  "stem": "Figure 5",
-  "figureKey": "computer-science-2024-HL-paper-q12-fig0"
+  "questionFigureKey": "computer-science-2024-HL-paper-q12-fig0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q13-a-i",
-  "topicId": "cs-2-1",
+  "topicId": "cs-1-2",
   "conceptId": "meant-term-artificial-intelligence",
   "level": "higher",
   "year": 2024,
@@ -7129,25 +7307,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Artificial intelligence can be defined as the science and engineering of making intelligent computer programs capable of performing tasks that require subtleties of judgement, interpretation and generalisation that we associate with human intelligence.",
-    "marks": 1
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "The design and study of systems that appear to mimic intelligent behaviour",
-    "marks": 1
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "The theory and development of computer systems able to perform tasks that normally require human intelligence, such as visual perception, speech recognition, decision making and translation between languages.",
-    "marks": 1
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "The design and study of systems that appear to mimic intelligent behaviour",
+     "The theory and development of computer systems able to perform tasks that normally require human intelligence, such as visual perception, speech recognition, decision making and translation between languages."
+    ],
+    "contextNote": "Any response that captures the essence of any of the following: Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark"
    }
   ],
-  "stem": "This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
+  "stem": "The term artificial intelligence (AI) was first used in 1955 by among others, American computer scientist John McCarthy who had an Irish father from Co. Kerry. Since then, other related terms such as narrow AI, artificial general intelligence (AGI) and generative AI have emerged."
  },
  {
   "id": "cs-2024-hl-q13-a-ii",
@@ -7166,13 +7341,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Narrow AI: Refers to AI systems built to perform a single task but without any skills that can be transferred to other tasks.",
-    "marks": 3
+    "kind": "criterion",
+    "verbatim": "Narrow AI: Refers to AI systems built to perform a single task but without any skills that can be transferred to other tasks. • Artificial General Intelligence (AGI) refers to AI systems that can autonomously solve a variety of complex problems in a variety of different domains and learn and adapt autonomously.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Very good distinction - clear understanding demonstrated 3 marks Fair distinction – limited understanding 2 mark"
    }
   ],
-  "stem": "This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
+  "stem": "The term artificial intelligence (AI) was first used in 1955 by among others, American computer scientist John McCarthy who had an Irish father from Co. Kerry. Since then, other related terms such as narrow AI, artificial general intelligence (AGI) and generative AI have emerged."
  },
  {
   "id": "cs-2024-hl-q13-a-iii",
@@ -7191,18 +7371,23 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Generative AI is an Artificial Intelligence (AI) technology that automatically generates new/original content in response to prompts typed in by the user.",
-    "marks": 3
+    "kind": "criterion",
+    "verbatim": "Generative AI is an Artificial Intelligence (AI) technology that automatically generates new/original content in response to prompts typed in by the user. • Generative AI should be used with caution as it is not always correct – a phenomena known as hallucination.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark"
    }
   ],
-  "stem": "This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
+  "stem": "The term artificial intelligence (AI) was first used in 1955 by among others, American computer scientist John McCarthy who had an Irish father from Co. Kerry. Since then, other related terms such as narrow AI, artificial general intelligence (AGI) and generative AI have emerged."
  },
  {
   "id": "cs-2024-hl-q13-a-iv",
-  "topicId": "cs-2-3",
-  "conceptId": "two-types-output-can-be-produced",
+  "topicId": "cs-1-2",
+  "conceptId": "types-output-can-produced-generative-ai",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7216,18 +7401,31 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "Any two from the following:",
-    "marks": 2
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "text (written in any natural language)",
+      "images (e.g. photographs, digital paintings and cartoons)",
+      "videos",
+      "music",
+      "software code",
+      "any reasonable format that could be produced by GenAI"
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each correctly identified format 1 mark"
    }
   ],
-  "stem": "This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
+  "stem": "The term artificial intelligence (AI) was first used in 1955 by among others, American computer scientist John McCarthy who had an Irish father from Co. Kerry. Since then, other related terms such as narrow AI, artificial general intelligence (AGI) and generative AI have emerged."
  },
  {
   "id": "cs-2024-hl-q13-b-i",
-  "topicId": "cs-2-2",
-  "conceptId": "relation-computer-vision-do-percentages-shown",
+  "topicId": "cs-1-2",
+  "conceptId": "relation-computer-vision-do-percentages-5",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7241,18 +7439,25 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "The percentages represent a level of confidence returned by the model that the image has been correctly classified as the associated label. For example, cat: 94% means that the algorithm is 94% confident that it has identified a cat on this part of the image.",
-    "marks": 2
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 2 marks Fair explanation - limited understanding demonstrated 1 mark"
    }
   ],
-  "stem": "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
+  "stem": "Computer vision is a field of AI that uses machine learning techniques to develop models capable of identifying objects in an image. Study the image shown in Figure 5 and answer the questions that follow.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q13-fig5",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q13-b-ii",
-  "topicId": "cs-2-4",
-  "conceptId": "suggest-two-applications-type-technology-describe",
+  "topicId": "cs-1-2",
+  "conceptId": "applications-type-technology-application-could-benefit",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7266,24 +7471,44 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Any two from the following:",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "Computer vision can be used for early detection of diseases through medical imaging.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "accepts": [
+     "Computer vision technology can be used in self-driving cars (autonomous vehicles) to improve road safety by enabling vehicles to detect and respond dangers such as pedestrians, cyclists, other vehicles, animals etc, in real-time, reducing the risk of accidents.",
+     "Computer vision can be applied to eliminate the need for checkouts in supermarkets and other retail outlets thereby improving the shopping experience for customers and reducing the incidence of theft.",
+     "Computer vision can analyse aerial imagery to monitor crop health, detect diseases, and optimise irrigation. This helps farmers make informed decisions, increase crop yield, and reduce the use of pesticides and water.",
+     "Facial Recognition technology has the potential to enhances security by identifying and tracking individuals in public spaces, airports, and other high-security areas.",
+     "Computer vision can be used in robots to visually recognise and assemble complex products, enhancing efficiency and precision in manufacturing.",
+     "Computer vision can be used to monitor and track endangered species, helping conservationists protect wildlife and their habitats.",
+     "Augmented reality applications using computer vision can enhance interactive learning experiences, making education more engaging and accessible."
+    ],
+    "contextNote": "Any reasonable application of computer vision and associated benefit. For each correctly named application of computer vision technology 1 mark For each benefit: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
    }
   ],
-  "stem": "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
+  "stem": "Computer vision is a field of AI that uses machine learning techniques to develop models capable of identifying objects in an image. Study the image shown in Figure 5 and answer the questions that follow.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q13-fig5",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q13-b-iii",
-  "topicId": "cs-2-2",
-  "conceptId": "read-two-example-scenarios-below-each",
+  "topicId": "cs-1-2",
+  "conceptId": "read-example-scenarios-whether-could-use",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
   "section": "B",
   "questionRef": "2024 HL Q13(b)(iii)",
-  "questionText": "Read the two example scenarios below and for each one, state whether it could use machine learning AI. Justify each answer.",
+  "questionText": "Read the two example scenarios below and for each one, state whether it could use machine learning AI. Justify each answer. Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -7291,23 +7516,42 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Scenario 1. An online streaming service that recommends films based on users’ viewing habits. o AI: The system could use machine learning algorithms to analyse user behaviour and make personalised suggestions, which would qualify it as AI. The service will use the viewing habits of the user, compare it to other users, and make a prediction of what the user would like to watch next. There are too many users of an online streaming service to be able to create rules for each user. o Not AI: Possible reasons include privacy concerns, limited data, resource constraints or preference for simplicity.",
-    "marks": 2
+    "kind": "criterion",
+    "verbatim": "AI: The system could use machine learning algorithms to analyse user behaviour and make personalised suggestions, which would qualify it as AI. The service will use the viewing habits of the user, compare it to other users, and make a prediction of what the user would like to watch next. There are too many users of an online streaming service to be able to create rules for each user.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "accepts": [
+     "Not AI: Possible reasons include privacy concerns, limited data, resource constraints or preference for simplicity."
+    ],
+    "contextNote": "Scenario 1. An online streaming service that recommends films based on users’ viewing habits. For each justification (no marks for stating yes/no): Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "Scenario 2. An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. o AI (robotics): The automated lawnmower uses sensors to navigate, which involves some level of AI for obstacle avoidance and path planning. o Not AI: While it does employ sensors and automation, it typically relies on predefined rules (rather than machine learning techniques) to move around and avoid collisions. Automated lawnmowers typically don’t learn or adapt to their environment. Therefore, they are often categorised as robotics or automation rather than AI. For each justification (no marks for stating yes/no):",
-    "marks": 2
+    "kind": "criterion",
+    "verbatim": "AI (robotics): The automated lawnmower uses sensors to navigate, which involves some level of AI for obstacle avoidance and path planning.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "accepts": [
+     "Not AI: While it does employ sensors and automation, it typically relies on predefined rules (rather than machine learning techniques) to move around and avoid collisions. Automated lawnmowers typically don’t learn or adapt to their environment. Therefore, they are often categorised as robotics or automation rather than AI."
+    ],
+    "contextNote": "Scenario 2. An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. For each justification (no marks for stating yes/no): Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
    }
   ],
-  "stem": "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
+  "stem": "Computer vision is a field of AI that uses machine learning techniques to develop models capable of identifying objects in an image. Study the image shown in Figure 5 and answer the questions that follow.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q13-fig5",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q13-b-iv",
-  "topicId": "cs-2-2",
+  "topicId": "cs-1-2",
   "conceptId": "recent-years-many-instances-bias-have",
   "level": "higher",
   "year": 2024,
@@ -7322,24 +7566,37 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Diversity of images used in training datasets – ensure that the training dataset is diverse enough to represent the target population",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "Equality of representation of target population in training dataset- – ensure that the images used are representative of the target population",
+     "Size of training datasets – it is likely that larger datasets will result in more accurate models with less bias than models trained using smaller datasets.",
+     "Human in the loop e.g. ensure proper diversity of race, gender etc. in development team",
+     "Monitoring and Bias Auditing – continually monitor the training dataset to reflect changes in society and conduct bias audits to identify and address any biases that might have inadvertently crept in."
+    ],
+    "contextNote": "Any other reasonable method to reduce bias. Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark"
    }
   ],
-  "stem": "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
+  "stem": "Computer vision is a field of AI that uses machine learning techniques to develop models capable of identifying objects in an image. Study the image shown in Figure 5 and answer the questions that follow.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q13-fig5",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q13-c",
-  "topicId": "cs-2-3",
+  "topicId": "cs-1-2",
   "conceptId": "2023-open-letter-published-future-life",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
   "section": "B",
   "questionRef": "2024 HL Q13(c)",
-  "questionText": "In 2023 an open letter published by the Future of Life Institute requested all AI labs to immediately pause for at least six months the training of very powerful AI systems. Interestingly, while the letter was signed by many well-known academics and industry leaders, there were many notable individuals and companies who did not publicly declare their support.",
+  "questionText": "In 2023 an open letter published by the Future of Life Institute requested all AI labs to immediately pause for at least six months the training of very powerful AI systems. Interestingly, while the letter was signed by many well-known academics and industry leaders, there were many notable individuals and companies who did not publicly declare their support. Discuss the reasons for some people supporting the initiative to pause training and others not supporting the initiative.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -7347,47 +7604,51 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Ethical concerns: time is needed to make sure that AI aligns with human values and doesn't compromise principles such as privacy, accountability, and fairness. // Jobs/Employment/Economy: the pace of current development of AI systems has the potential to put many jobs at risk and people out of work. Pausing development provides an opportunity to address the potential societal impact on employment and consider strategies such as reskilling and implementing policies to mitigate economic disparities. // Security Risks: Advanced AI systems, if developed without sufficient safeguards, pose potential security risks. Pausing development allows time to assess and address security concerns related to the misuse of AI, such as cyber threats, hacking, and the development of AI-driven weaponry. // Unintended Consequences: The complexity of advanced AI systems increases the risk of unintended consequences. Pausing development permits a more thorough evaluation of the potential risks and unintended outcomes, ensuring that AI is deployed responsibly and doesn't lead to unforeseen negative impacts on society. // Existential Threat: There are some who believe that the development of highly advanced AI systems (superintelligent AI) could potentially threaten the continued existence of humanity. A pause in AI would give more time to increase public awareness through open discussions about the risks and benefits of advanced AI.",
-    "marks": null,
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Ethical concerns: time is needed to make sure that AI aligns with human values and doesn't compromise principles such as privacy, accountability, and fairness.",
-      "Jobs/Employment/Economy: the pace of current development of AI systems has the potential to put many jobs at risk and people out of work. Pausing development provides an opportunity to address the potential societal impact on employment and consider strategies such as reskilling and implementing policies to mitigate economic disparities.",
-      "Security Risks: Advanced AI systems, if developed without sufficient safeguards, pose potential security risks. Pausing development allows time to assess and address security concerns related to the misuse of AI, such as cyber threats, hacking, and the development of AI-driven weaponry.",
-      "Unintended Consequences: The complexity of advanced AI systems increases the risk of unintended consequences. Pausing development permits a more thorough evaluation of the potential risks and unintended outcomes, ensuring that AI is deployed responsibly and doesn't lead to unforeseen negative impacts on society.",
-      "Existential Threat: There are some who believe that the development of highly advanced AI systems (superintelligent AI) could potentially threaten the continued existence of humanity. A pause in AI would give more time to increase public awareness through open discussions about the risks and benefits of advanced AI."
-     ]
-    },
-    "openList": true
+    "kind": "criterion",
+    "verbatim": "Ethical concerns: time is needed to make sure that AI aligns with human values and doesn't compromise principles such as privacy, accountability, and fairness.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "accepts": [
+     "Jobs/Employment/Economy: the pace of current development of AI systems has the potential to put many jobs at risk and people out of work. Pausing development provides an opportunity to address the potential societal impact on employment and consider strategies such as reskilling and implementing policies to mitigate economic disparities.",
+     "Security Risks: Advanced AI systems, if developed without sufficient safeguards, pose potential security risks. Pausing development allows time to assess and address security concerns related to the misuse of AI, such as cyber threats, hacking, and the development of AI-driven weaponry.",
+     "Unintended Consequences: The complexity of advanced AI systems increases the risk of unintended consequences. Pausing development permits a more thorough evaluation of the potential risks and unintended outcomes, ensuring that AI is deployed responsibly and doesn't lead to unforeseen negative impacts on society.",
+     "Existential Threat: There are some who believe that the development of highly advanced AI systems (superintelligent AI) could potentially threaten the continued existence of humanity. A pause in AI would give more time to increase public awareness through open discussions about the risks and benefits of advanced AI."
+    ],
+    "contextNote": "Points for supporting the initiative: Elaboration of any other reasonable point for pausing development of advanced AI systems For each separate point made for and against the initiative up to a maximum of two points each: Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark"
    },
    {
     "id": "r-2",
-    "kind": "anyN",
-    "verbatim": "Innovation and Progress: Continued development of advanced AI fosters innovation, leading to breakthroughs in various fields, including healthcare, education, and scientific research. Pausing development could impede progress and delay the benefits that AI can bring to society. // Societal Advancements: AI has the potential to address complex societal challenges, such as climate change, healthcare disparities, and resource management. Halting development may hinder the application of AI in finding solutions to pressing global issues. // Competitive Disadvantage: Countries and organisations are in a race to develop and adopt AI technologies. Pausing development may result in a competitive disadvantage, with nations that continue AI advancements gaining a lead in economic, military, and technological spheres. // Job Creation and Economic Growth: While AI may lead to job displacement in certain sectors, it also has the potential to create new jobs and stimulate economic growth. Pausing development could limit the positive economic impact of AI, affecting industries that could benefit from increased efficiency and innovation.",
-    "marks": null,
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Innovation and Progress: Continued development of advanced AI fosters innovation, leading to breakthroughs in various fields, including healthcare, education, and scientific research. Pausing development could impede progress and delay the benefits that AI can bring to society.",
-      "Societal Advancements: AI has the potential to address complex societal challenges, such as climate change, healthcare disparities, and resource management. Halting development may hinder the application of AI in finding solutions to pressing global issues.",
-      "Competitive Disadvantage: Countries and organisations are in a race to develop and adopt AI technologies. Pausing development may result in a competitive disadvantage, with nations that continue AI advancements gaining a lead in economic, military, and technological spheres.",
-      "Job Creation and Economic Growth: While AI may lead to job displacement in certain sectors, it also has the potential to create new jobs and stimulate economic growth. Pausing development could limit the positive economic impact of AI, affecting industries that could benefit from increased efficiency and innovation."
-     ]
-    },
-    "openList": true
+    "kind": "criterion",
+    "verbatim": "Innovation and Progress: Continued development of advanced AI fosters innovation, leading to breakthroughs in various fields, including healthcare, education, and scientific research. Pausing development could impede progress and delay the benefits that AI can bring to society.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "accepts": [
+     "Societal Advancements: AI has the potential to address complex societal challenges, such as climate change, healthcare disparities, and resource management. Halting development may hinder the application of AI in finding solutions to pressing global issues.",
+     "Competitive Disadvantage: Countries and organisations are in a race to develop and adopt AI technologies. Pausing development may result in a competitive disadvantage, with nations that continue AI advancements gaining a lead in economic, military, and technological spheres.",
+     "Job Creation and Economic Growth: While AI may lead to job displacement in certain sectors, it also has the potential to create new jobs and stimulate economic growth. Pausing development could limit the positive economic impact of AI, affecting industries that could benefit from increased efficiency and innovation."
+    ],
+    "contextNote": "Points against the initiative: Elaboration of any other reasonable point against pausing development of advanced AI systems For each separate point made for and against the initiative up to a maximum of two points each: Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark"
    }
-  ],
-  "stem": "Discuss the reasons for some people supporting the initiative to pause training and others not supporting the initiative.",
-  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
+  ]
  },
  {
   "id": "cs-2024-hl-q14-a-i",
   "topicId": "cs-2-2",
-  "conceptId": "names-two-input-variables",
+  "conceptId": "names-input-variables",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7403,17 +7664,19 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Input variable 1: a",
-    "marks": 1
+    "marks": 1,
+    "contextNote": "Each correct response 1 mark"
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Input variable 2: b Each correct response 1 mark",
+    "verbatim": "Input variable 2: b",
     "marks": 1
    }
   ],
-  "stem": "Figure 6 This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+  "stem": "The flowchart, shown in Figure 6 below, describes an algorithm that reads two values, swaps them, and then displays their new values.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q14-fig0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q14-a-ii",
@@ -7432,18 +7695,25 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "t is a temporary variable used to store the value of a",
-    "marks": 3
+    "kind": "criterion",
+    "verbatim": "t is a temporary variable used to store the value of a • Without t, the contents of a would be lost when b is assigned to a",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark"
    }
   ],
-  "stem": "Figure 6 This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+  "stem": "The flowchart, shown in Figure 6 below, describes an algorithm that reads two values, swaps them, and then displays their new values.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q14-fig0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q14-a-iii",
-  "topicId": "cs-2-2",
-  "conceptId": "flowcharts-commonly-used-design-process-describe",
+  "topicId": "cs-1-3",
+  "conceptId": "flowcharts-commonly-design-process-algorithms-advantage",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7457,13 +7727,41 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Advantages",
-    "marks": 4
+    "kind": "criterion",
+    "verbatim": "They are easier to understand than code (especially for non-programmers).",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "accepts": [
+     "The visual representation of flowcharts clearly depicts the flow and logic of an algorithm.",
+     "They are independent of any programming language.",
+     "They are flexible tools used to represent algorithms during the design stage of the design process."
+    ],
+    "contextNote": "Advantages For each advantage/disadvantage Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "They take a significant amount of time to develop.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "accepts": [
+     "They can become unwieldly for detailed and complex algorithms.",
+     "Lack of standards can lead to ambiguity and cause confusion."
+    ],
+    "contextNote": "Disadvantages For each advantage/disadvantage Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
    }
   ],
-  "stem": "Figure 6 This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+  "stem": "The flowchart, shown in Figure 6 below, describes an algorithm that reads two values, swaps them, and then displays their new values.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q14-fig0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q14-b-i",
@@ -7487,8 +7785,9 @@
     "marks": 1
    }
   ],
-  "stem": "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
-  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+  "stem": "The Python code below shows an implementation of the bubble sort algorithm.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q14b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q14-b-ii",
@@ -7512,8 +7811,9 @@
     "marks": 1
    }
   ],
-  "stem": "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
-  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+  "stem": "The Python code below shows an implementation of the bubble sort algorithm.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q14b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q14-b-iii",
@@ -7537,8 +7837,9 @@
     "marks": 1
    }
   ],
-  "stem": "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
-  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+  "stem": "The Python code below shows an implementation of the bubble sort algorithm.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q14b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q14-b-iv",
@@ -7557,18 +7858,25 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "the slice expression, values[2:4] returns the list, [30, 60]",
-    "marks": 2
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "Full correct response 2 marks Response with some merit 1 mark"
    }
   ],
-  "stem": "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
-  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+  "stem": "The Python code below shows an implementation of the bubble sort algorithm.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q14b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q14-b-v",
   "topicId": "cs-2-4",
-  "conceptId": "why-expression-values-5-would-generate",
+  "conceptId": "expression-values-5-would-generate-runtime",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7582,18 +7890,25 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "the expression values[5] would generate a runtime error because the index 5 is out of bounds",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark"
    }
   ],
-  "stem": "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
-  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+  "stem": "The Python code below shows an implementation of the bubble sort algorithm.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q14b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q14-b-vi",
-  "topicId": "cs-2-3",
-  "conceptId": "one-advantage-one-disadvantage-sorting-data",
+  "topicId": "cs-2-2",
+  "conceptId": "advantage-disadvantage-sorting-data-set",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7607,13 +7922,41 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "Advantages",
-    "marks": 6
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Binary search requires a dataset to be sorted",
+      "Sorted data can be more user friendly e.g. social media timeline sorted by date/time, product catalogue sorted by cost etc.",
+      "Sorted data can also make it easier for data analysis e.g. finding the median or quartiles of a set of data or identifying patterns/trends and outliers"
+     ]
+    },
+    "contextNote": "For each advantage/disadvantage Valid statement 3 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Disadvantages",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "sorting algorithms can take time",
+      "sorting algorithms can consume valuable computational resources such as CPU and memory.",
+      "If a dataset is already sorted (or almost sorted) the time and resources spent on sorting may not provide significant benefits.",
+      "the efficiency of sorting algorithms can vary dramatically depending on the size of the input dataset, and the size of the dataset may not always be known in advance. This places a burden on designers/programmers to have a detailed understanding of the sorting algorithm being used and an awareness of the implications under all circumstances.",
+      "Once a dataset is sorted there is a cost to maintaining the dataset in a sorted state"
+     ]
+    }
    }
   ],
-  "stem": "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
-  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+  "stem": "The Python code below shows an implementation of the bubble sort algorithm.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q14b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q14-c-i",
@@ -7633,12 +7976,38 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Initial state of values: 50 70 30 60 20",
-    "marks": 5
+    "verbatim": "After pass 1: 50 30 60 20 70",
+    "marks": 1,
+    "contextNote": "For each pass correctly completed 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "After pass 2: 30 50 20 60 70",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "After pass 3: 30 20 50 60 70",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "After pass 4: 20 30 50 60 70",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "After pass 5: 20 30 50 60 70",
+    "marks": 1
    }
   ],
-  "stem": "Initial state of values: 50 70 30 60 20",
-  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+  "stem": "The Python code below shows an implementation of the bubble sort algorithm. The algorithm takes five passes to complete the bubble sort of the integers in values.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q14b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q14-c-ii",
@@ -7657,18 +8026,27 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "In a list of size N the bubble sort algorithm performs N passes. On each pass it will perform N-1 compare operations. This gives a total of 𝑵𝟐െ𝑵 operations. For large N this is approximately the same as 𝑵𝟐. Hence we write O(𝑵𝟐).",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "In a list of size N the bubble sort algorithm performs N passes. On each pass it will perform N-1 compare operations. This gives a total of 𝑵𝟐 −𝑵 operations. For large N this is approximately the same as 𝑵𝟐. Hence we write O(𝑵𝟐). • The best-case scenario is when the input list is already sorted. The worst-case scenario is when the input list is in reverse order. In both scenarios bubble sort will also carry out the same number of comparisons. • As the number of elements increases the number of compare operations increases quadratically (by a power of 2). For example, the number of compare operations carried out by a bubble sort algorithm on a list of size 5 would be of the order of 25. If you double the size of the input list, the number of compare operations could increase by a factor of four.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     5
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 5 marks Good explanation - clear information, lacking demonstration of full understanding 3 marks Fair explanation - limited understanding 1 mark"
    }
   ],
-  "stem": "Initial state of values: 50 70 30 60 20",
-  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+  "stem": "The Python code below shows an implementation of the bubble sort algorithm. The algorithm takes five passes to complete the bubble sort of the integers in values.",
+  "figureKey": "computer-science-2024-HL-scheme-q14c-ii",
+  "questionFigureKey": "computer-science-2024-HL-paper-q14b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q14-c-iii",
   "topicId": "cs-2-2",
-  "conceptId": "suggest-one-possible-improvement-could-be",
+  "conceptId": "possible-improvement-could-made-algorithm-would",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7682,18 +8060,30 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Enhancement 1 (reducing size of list by 1 on each pass)",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Enhancement 1 (reducing size of list by 1 on each pass) • On the 1st pass the largest item in the list is moved to the rightmost position • The 2nd pass moves the next largest item to the second last position • Each pass moves the largest item remaining to its correct position towards the end of the list • The standard algorithm continues to compare adjacent elements that are already sorted at the end (right) of the list even though they are already sorted. • The algorithm can be enhanced by preventing these unnecessary comparisons. • This can be achieved by reducing the number of adjacent compares by 1 on each pass as shown in the implementation below.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     5
+    ],
+    "accepts": [
+     "Enhancement 2 (halting if no swaps made during any pass) An alternative enhancement can be achieved by introducing a ‘flag’ to indicate whether a swap was needed on a particular pass. If no swap was performed the list is deemed to be sorted and the algorithm can end regardless of the number of passes complete e.g. if the initial list is sorted there won’t be any swaps on the 1st pass. Therefore, the algorithm can be terminated."
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 5 marks Good explanation - clear information, lacking demonstration of full understanding 3 marks Fair explanation - limited understanding 1 mark"
    }
   ],
-  "stem": "Initial state of values: 50 70 30 60 20",
-  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+  "stem": "The Python code below shows an implementation of the bubble sort algorithm. The algorithm takes five passes to complete the bubble sort of the integers in values.",
+  "figureKey": "computer-science-2024-HL-scheme-q14c-iii",
+  "questionFigureKey": "computer-science-2024-HL-paper-q14b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q15-a-i",
   "topicId": "cs-2-4",
-  "conceptId": "two-terms-database-record",
+  "conceptId": "terms-database-record",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7707,18 +8097,36 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Database",
-    "marks": 4
+    "kind": "criterion",
+    "verbatim": "Database — A database is a collection of structured data organised in a way such that the data can be easily and efficiently retrieved and maintained (added to, changed/updated and deleted). • The data is organised into entities also known as tables which are structured sets of rows and columns. Each table typically correspond to a specific entity (person, place or thing) such as customer, country, order, product or book",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "For each term: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Record — Is a single row of data (also known as a tuple) • Each record contains a set of related elements or fields",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
    }
   ],
-  "stem": "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
-  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+  "stem": "Alex wants to keep track of her collection of Dr. Seuss books in a database. So far, she has managed to design a single table called BOOKS and enter the records shown below.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q15-books",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q15-a-ii",
   "topicId": "cs-2-4",
-  "conceptId": "suggest-field-would-be-good-choice",
+  "conceptId": "field-would-good-choice-primary-key",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7734,16 +8142,25 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Primary Key: book_id",
-    "marks": 3
+    "marks": 1,
+    "contextNote": "Primary Key correctly identified 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Justify: The value of book_id is guaranteed to be unique for each separate record",
+    "marks": 2,
+    "contextNote": "Justification: Very good justification – clear understanding demonstrated 2 marks"
    }
   ],
-  "stem": "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
-  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+  "stem": "Alex wants to keep track of her collection of Dr. Seuss books in a database. So far, she has managed to design a single table called BOOKS and enter the records shown below.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q15-books",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q15-a-iii",
   "topicId": "cs-2-4",
-  "conceptId": "identify-any-two-data-inconsistencies-data",
+  "conceptId": "data-inconsistencies-data-books-table",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7757,13 +8174,25 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "Any two from the following:",
-    "marks": 2
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "The use of the euro symbol in the cost field in record number 3 is inconsistent with the way cost is specified in the other records i.e. €10 versus 6.95, 8.95 and 9.95",
+      "The name of the author in record number 3 is inconsistent with the names in the other records i.e. Doc Seus is inconsistent with Dr. Seuss",
+      "the format used in the author_dob field is dd/mm/yyyy in records 1 and 3. A different format is used in records 2 (mmm d, yyyy) and 4 (American, mm/dd/yyyy).",
+      "The values used in the on_loan field are inconsistent. Yes and Y are used to indicate that a books 1 and 2 are out on loan whereas N and No are used to indicate books with id values of 3 and 4 are not on loan."
+     ]
+    },
+    "contextNote": "Each correctly identified inconsistency 1 marks"
    }
   ],
-  "stem": "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
-  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+  "stem": "Alex wants to keep track of her collection of Dr. Seuss books in a database. So far, she has managed to design a single table called BOOKS and enter the records shown below.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q15-books",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q15-a-iv",
@@ -7783,17 +8212,31 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Column A Column B",
-    "marks": 3
+    "verbatim": "Boolean on_loan",
+    "marks": 1,
+    "contextNote": "Note: The above table shows the only acceptable answers Each correct response 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "String title, author, author_dob",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Real cost",
+    "marks": 1
    }
   ],
-  "stem": "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
-  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+  "stem": "Alex wants to keep track of her collection of Dr. Seuss books in a database. So far, she has managed to design a single table called BOOKS and enter the records shown below.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q15a-iv",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q15-b-ii",
   "topicId": "cs-3-1",
-  "conceptId": "identify-use-one-foreign-key-design",
+  "conceptId": "use-foreign-key-design-7",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7807,18 +8250,30 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Possible answers are:",
-    "marks": 4
+    "kind": "criterion",
+    "verbatim": "Foreign Key: member_id • Explanation: This links the LOANS table with the MEMBERS table",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "accepts": [
+     "Foreign Key: book_id • Explanation: This links the LOANS table with the BOOKS table"
+    ],
+    "contextNote": "Foreign Key correctly identified 1 mark Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark"
    }
   ],
-  "stem": "Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.  Amy borrowed How the Grinch Stole Christmas! on 1st May 2024.  Bill borrowed The Cat in the Hat on 18th May 2024.  Chloe borrowed Horton Hears a Who! 7 days ago. member_id book_id date_borrowed member_id member_name 1 Amy 3 2 20/05/2024 2 4 01/05/24 3 Chloe 2 1 MEMBERS LOANS Figure 7 This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+  "stem": "Alex has decided to build a relational database that could be used by a library and has created two new tables called MEMBERS and LOANS. The MEMBERS table is used to store the library members and LOANS will be used to keep track of the books that are taken out on loan. Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q15b-fig7",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q15-b-iii",
   "topicId": "cs-2-4",
-  "conceptId": "how-design-shown-figure-7-removes",
+  "conceptId": "design-7-removes-need-loan-field",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7832,13 +8287,20 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "The presence of a record in the LOANS table can be used to infer that a book is on loan. (Not only that, but the date the book was borrowed can also be looked up.) Therefore, there is no need to store this information in BOOKS.",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark"
    }
   ],
-  "stem": "Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.  Amy borrowed How the Grinch Stole Christmas! on 1st May 2024.  Bill borrowed The Cat in the Hat on 18th May 2024.  Chloe borrowed Horton Hears a Who! 7 days ago. member_id book_id date_borrowed member_id member_name 1 Amy 3 2 20/05/2024 2 4 01/05/24 3 Chloe 2 1 MEMBERS LOANS Figure 7 This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+  "stem": "Alex has decided to build a relational database that could be used by a library and has created two new tables called MEMBERS and LOANS. The MEMBERS table is used to store the library members and LOANS will be used to keep track of the books that are taken out on loan. Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q15b-fig7",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q15-b-iv",
@@ -7857,18 +8319,25 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Data redundancy refers to a situation where a single piece of data (or value) is stored in more than one place in a database. It usually occurs as a result of poor design and is considered bad practice as it can lead to data inconsistencies as well as inefficiency use of storage.",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark"
    }
   ],
-  "stem": "Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.  Amy borrowed How the Grinch Stole Christmas! on 1st May 2024.  Bill borrowed The Cat in the Hat on 18th May 2024.  Chloe borrowed Horton Hears a Who! 7 days ago. member_id book_id date_borrowed member_id member_name 1 Amy 3 2 20/05/2024 2 4 01/05/24 3 Chloe 2 1 MEMBERS LOANS Figure 7 This question continues on the next page.",
-  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+  "stem": "Alex has decided to build a relational database that could be used by a library and has created two new tables called MEMBERS and LOANS. The MEMBERS table is used to store the library members and LOANS will be used to keep track of the books that are taken out on loan. Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.",
+  "questionFigureKey": "computer-science-2024-HL-paper-q15b-fig7",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q15-c-i",
   "topicId": "cs-3-2",
-  "conceptId": "suggest-two-possible-hypotheses-alex-could",
+  "conceptId": "possible-hypotheses-alex-could-use-her",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
@@ -7882,13 +8351,27 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Any two statements from the following:",
-    "marks": 4
+    "kind": "criterion",
+    "verbatim": "The most/least popular book is X.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "accepts": [
+     "The most popular time/season to borrow books is Y",
+     "A particular user demographics (e.g. age, gender, location) prefer certain types of books.",
+     "Certain books (e.g. expensive books) are more likely to be returned on time than others.",
+     "Member A is more likely to return their books in time than member B",
+     "PR campaign results in an increase in borrowing of X%"
+    ],
+    "contextNote": "Any reasonable hypothesis presented as a statement. For each hypothesis: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
    }
   ],
-  "stem": "Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image 1 on Page 6: https://technologyicalword.wordpress.com/emerging-technologies-in-computer-science/ Image 2 on Page 6: https://fossbytes.com/difference-between-ram-and-rom-memory/ Image on Page 7: https://www.forbes.com/sites/edrensi/2018/07/11/mcdonalds-says-goodbye-cashiers-hello-kiosks/ Image on Page 9: https://tech.co/digital-marketing/social-media-trends Image on Page 11: https://thebulletin.org/2023/08/convergence-artificial-intelligence-and-the-new-and-old-weapons- of-mass-destruction/ Image on Page 12: https://www.meathspca.com/get-involved.html Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219A2EL 2024. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
-  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+  "stem": "Alex is planning to use the database for a data analytics project. A data analytics project can be carried out in stages starting with a hypothesis."
  },
  {
   "id": "cs-2024-hl-q15-c-ii",
@@ -7907,24 +8390,41 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Any two from the following:",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "Missing Values: Data entries that are incomplete or entirely absent can be filled in with appropriate values or removed if they are not critical.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "accepts": [
+     "Duplicate Records: Repeated entries that skew analysis and statistics can be identified and eliminated to ensure each data point is unique.",
+     "Inconsistent Formatting: Variations in data formatting (e.g. date formats, capitalisation, unit measurements) can be standardised for consistency.",
+     "Outliers and Anomalies: Data points that deviate significantly from the norm can be investigated and corrected or removed if they are erroneous.",
+     "Incorrect Data Types: Values that are in the wrong format or type (e.g. text in a numerical field) can be converted to the correct type or corrected as needed.",
+     "Typographical Errors: Spelling mistakes, typographical errors, and other text inaccuracies can be corrected to ensure data consistency and accuracy.",
+     "Inconsistent Categories: Categorical data that uses different labels for the same category (e.g. \"Y\" vs. \"Yes\") can be standardised to unify the categories."
+    ],
+    "contextNote": "Any other relevant error e.g. Invalid entries - data that do not conform to the expected rules or ranges (e.g., negative ages, future dates for past events) can be identified and corrected or removed. For each type of error correctly identified 1 mark For each description: Very good description - clear understanding demonstrated 2 marks Fair description – limited understanding 1 mark"
    }
   ],
-  "stem": "Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image 1 on Page 6: https://technologyicalword.wordpress.com/emerging-technologies-in-computer-science/ Image 2 on Page 6: https://fossbytes.com/difference-between-ram-and-rom-memory/ Image on Page 7: https://www.forbes.com/sites/edrensi/2018/07/11/mcdonalds-says-goodbye-cashiers-hello-kiosks/ Image on Page 9: https://tech.co/digital-marketing/social-media-trends Image on Page 11: https://thebulletin.org/2023/08/convergence-artificial-intelligence-and-the-new-and-old-weapons- of-mass-destruction/ Image on Page 12: https://www.meathspca.com/get-involved.html Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219A2EL 2024. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
-  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+  "stem": "Alex is planning to use the database for a data analytics project. A data analytics project can be carried out in stages starting with a hypothesis."
  },
  {
   "id": "cs-2024-hl-q16-a-i",
   "topicId": "cs-2-2",
-  "conceptId": "line-code-display-value-variable-random",
+  "conceptId": "write-line-code-display-value-variable",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2024 HL Q16(a)(i)",
-  "questionText": "Write a line of code to display the value of the variable random_fruit_1 in a message.",
+  "questionText": "Write a line of code to display the value of the variable random_fruit_1 in a message. When the program is run the output may now look as follows: Random Fruit 1: cherry",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -7932,24 +8432,33 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "semantic error.",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     5
+    ],
+    "contextNote": "(i) 5 marks (C-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 2 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-  "figureKey": "computer-science-2024-HL-paper-q16-figure"
+  "stem": "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+  "figureKey": "computer-science-2024-HL-scheme-q16a-i",
+  "questionFigureKey": "computer-science-2024-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q16-a-ii",
-  "topicId": "cs-2-5",
-  "conceptId": "add-statements-initialise-two-new-variables",
+  "topicId": "cs-2-2",
+  "conceptId": "add-statements-initialise-new-variables-fruits",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2024 HL Q16(a)(ii)",
-  "questionText": "Add statements to initialise two new variables with fruits chosen randomly from the list. You should also display the values of the variables which should be called random_fruit_2 and random_fruit_3.",
+  "questionText": "Add statements to initialise two new variables with fruits chosen randomly from the list. You should also display the values of the variables which should be called random_fruit_2 and random_fruit_3. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -7957,13 +8466,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "semantic error.",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     5
+    ],
+    "contextNote": "(ii) 5 marks (C-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 2 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-  "figureKey": "computer-science-2024-HL-paper-q16-figure"
+  "stem": "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+  "figureKey": "computer-science-2024-HL-scheme-q16a-ii",
+  "questionFigureKey": "computer-science-2024-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q16-a-iii",
@@ -7972,9 +8490,9 @@
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2024 HL Q16(a)(iii)",
-  "questionText": "Add code to display the message “First fruit is cherry” if the first random fruit is a cherry.",
+  "questionText": "Add code to display the message “First fruit is cherry” if the first random fruit is a cherry. When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -7982,13 +8500,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "semantic error.",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     5
+    ],
+    "contextNote": "(iii) 5 marks (C-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 2 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-  "figureKey": "computer-science-2024-HL-paper-q16-figure"
+  "stem": "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+  "figureKey": "computer-science-2024-HL-scheme-q16a-iii",
+  "questionFigureKey": "computer-science-2024-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q16-a-iv",
@@ -7997,9 +8524,9 @@
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2024 HL Q16(a)(iv)",
-  "questionText": "Add code to display the message “First pair match” if the first two fruits are the same.",
+  "questionText": "Add code to display the message “First pair match” if the first two fruits are the same. When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -8007,13 +8534,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Any other reasonable attempt.",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "(iv) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-  "figureKey": "computer-science-2024-HL-paper-q16-figure"
+  "stem": "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+  "figureKey": "computer-science-2024-HL-scheme-q16a-iv",
+  "questionFigureKey": "computer-science-2024-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q16-a-v",
@@ -8022,9 +8557,9 @@
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2024 HL Q16(a)(v)",
-  "questionText": "Add code to display the message “First pair are cherries” if the first two fruits are both cherries.",
+  "questionText": "Add code to display the message “First pair are cherries” if the first two fruits are both cherries. When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -8032,13 +8567,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Any other reasonable attempt.",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "(v) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-  "figureKey": "computer-science-2024-HL-paper-q16-figure"
+  "stem": "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+  "figureKey": "computer-science-2024-HL-scheme-q16a-v",
+  "questionFigureKey": "computer-science-2024-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q16-a-vi",
@@ -8047,9 +8590,9 @@
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2024 HL Q16(a)(vi)",
-  "questionText": "Add code to display the message “Matching pair” if any two fruits are the same.",
+  "questionText": "Add code to display the message “Matching pair” if any two fruits are the same. When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -8057,37 +8600,23 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "10 marks Correct response",
-    "marks": 2
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "semantic error.",
-    "marks": 2
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Response about half-right",
-    "marks": 2
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "syntax or semantic error.",
-    "marks": 2
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Any other reasonable attempt.",
-    "marks": 2
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     7,
+     10
+    ],
+    "contextNote": "(vi) 10 marks (D-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 7 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 5 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error. 3 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-  "figureKey": "computer-science-2024-HL-paper-q16-figure"
+  "stem": "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+  "figureKey": "computer-science-2024-HL-scheme-q16a-vi",
+  "questionFigureKey": "computer-science-2024-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q16-a-vii",
@@ -8096,9 +8625,9 @@
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2024 HL Q16(a)(vii)",
-  "questionText": "Extend the program with a loop that iterates 100 times. The loop should generate a random fruit on each iteration. After the loop is executed, the program should display a count of the number of times each fruit was generated. There is no need to display the names of the 100 fruits.",
+  "questionText": "Extend the program with a loop that iterates 100 times. The loop should generate a random fruit on each iteration. After the loop is executed, the program should display a count of the number of times each fruit was generated. There is no need to display the names of the 100 fruits. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -8106,24 +8635,34 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "15 marks Correct response",
-    "marks": 15
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     5,
+     8,
+     12,
+     15
+    ],
+    "contextNote": "(vii) 15 marks (D-15 scale) 15 marks Correct response Correct implementation using solution above or similar. 12 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 8 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error. 5 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
-  "figureKey": "computer-science-2024-HL-paper-q16-figure"
+  "stem": "The program initialises a list called fruits with three elements – apple, cherry and orange. Line 7 of the program is an assignment statement in which a random fruit is selected from the list and assigned to the variable called random_fruit_1. The program does not display any output.",
+  "figureKey": "computer-science-2024-HL-scheme-q16a-vii",
+  "questionFigureKey": "computer-science-2024-HL-paper-q16a-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-hl-q16-b",
   "topicId": "cs-2-2",
-  "conceptId": "open-program-called-question16-b-py",
+  "conceptId": "implement-simulation-fruit-machine-python-should",
   "level": "higher",
   "year": 2024,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2024 HL Q16(b)",
-  "questionText": "Open the program called Question16_B.py from your device. This file contains only two comments, on lines 1 and 2. Before adding any code, you should save your working copy of the file using the format ExaminationNumberQuestion16_B.py. For example, you would save the file as 123456Question16_B.py if your Examination Number was 123456.",
+  "questionText": "Implement a simulation of a fruit machine in Python. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. The program should proceed according to the following sequence: • Initialise a list called fruits with three elements – apple, cherry and orange. • Display the initial list of fruits as shown. The initial list of fruits is: ['apple', 'cherry', 'orange'] • Prompt the user to enter an additional fruit, for example kiwi, pear or lemon and append the value entered to fruits. Enter an additional fruit: kiwi • Display the list of four fruits, for example: The list of four fruits is: ['apple', 'cherry', 'orange', 'kiwi'] • Prompt the user to nominate their winning fruit which must be in the above list. If the user enters a fruit that is not in fruits, the program should display an error message and prompt the user to nominate their winning fruit again. This should continue as long as the winning fruit entered is not in fruits. Nominate your winning fruit: cherry • Display the winning fruit, as show below. Nominate your winning fruit: cherry The winning fruit you selected is cherry • Write code to select three random fruits from fruits. Compare the selected fruits to the winning fruit entered earlier and keep going until all three fruits match the winning fruit. The program should keep a count of the number of tries taken and display this with a “Winner” message at the end, as shown below. Winner after 38 tries",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -8131,13 +8670,57 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Possible solution:",
-    "marks": 30
+    "kind": "criterion",
+    "verbatim": "Programming Standards — Program executes correctly with no syntax or runtime errors • Program meets requirements • Program design is well explained with comments • Meaningful variable/function names",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     7,
+     10
+    ],
+    "contextNote": "High level of achievement All of the following implemented correctly and efficiently Moderate level of achievement Reasonable attempt to implement at least two of each of the following Low level of achievement Poor attempt to complete any of the following"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Program Inputs — Initial list of fruits correctly initialised • User correctly prompted to enter additional fruit and to nominate winning fruit • Program correctly generates three random fruits • Variable initialisation and use of assignment statements",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "Program Logic (Processing) — Additional fruit correctly appended to list of fruits • Logic to validate winning fruit • Logic to simulate fruit machine and maintain counter variable",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     7,
+     10
+    ]
+   },
+   {
+    "id": "r-4",
+    "kind": "criterion",
+    "verbatim": "Program Outputs — Initial list of fruits displayed • Extended list of four fruits displayed • Winning fruit correctly displayed • Winner! message correctly displayed with counter",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     4,
+     5
+    ]
    }
   ],
-  "stem": "Enter your Examination Number in the space provided on line 2 in your Python file. Implement a simulation of a fruit machine in Python. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. The program should proceed according to the following sequence:  Initialise a list called fruits with three elements – apple, cherry and orange.  Display the initial list of fruits as shown. The initial list of fruits is: ['apple', 'cherry', 'orange']  Prompt the user to enter an additional fruit, for example kiwi, pear or lemon and append the value entered to fruits. Enter an additional fruit: kiwi  Display the list of four fruits, for example: The list of four fruits is: ['apple', 'cherry', 'orange', 'kiwi']  Prompt the user to nominate their winning fruit which must be in the above list. If the user enters a fruit that is not in fruits, the program should display an error message and prompt the user to nominate their winning fruit again. This should continue as long as the winning fruit entered is not in fruits. Nominate your winning fruit: cherry  Display the winning fruit, as show below. Nominate your winning fruit: cherry The winning fruit you selected is cherry  Write code to select three random fruits from fruits. Compare the selected fruits to the winning fruit entered earlier and keep going until all three fruits match the winning fruit. The program should keep a count of the number of tries taken and display this with a “Winner” message at the end, as shown below. Winner after 38 tries This question continues on the next page. Two example outputs are shown below. Sample output 1: The initial list of fruits is: ['apple', 'cherry', 'orange'] Enter an additional fruit: kiwi The list of 4 fruits is: ['apple', 'cherry', 'orange', 'kiwi'] Nominate your winning fruit: cherry The winning fruit you selected is cherry Winner after 38 tries Sample output 2: The initial list of fruits is: ['apple', 'cherry', 'orange'] Enter an additional fruit: kiwi The list of 4 random fruits is: ['apple', 'cherry', 'orange', 'kiwi'] Nominate your winning fruit: pear Error: winning fruit must be in the list Nominate your winning fruit: orange The winning fruit you selected is orange Winner after 27 tries Use the format CandidateNumberQuestion16_B.py to save your file. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on page 4: https://www.flaticon.com/free-icons/fruit-machine Image on page 7: https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/qEue9C6/videoblocks-slot-machine- wheels-three-3-cherries-jackpot-winner-3-d-animation_bkbn1fknu_thumbnail-1080_09.png This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 22 May Morning 11:30 – 12:30",
-  "figureKey": "computer-science-2024-HL-paper-q16-figure"
+  "figureKey": "computer-science-2024-HL-scheme-q16b",
+  "questionFigureKey": "computer-science-2024-HL-paper-q16b-output",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2024-ol-q1",
@@ -16440,18 +17023,18 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Provide one implication that the quote could have for your use of online applications.",
-    "marks": null,
-    "group": {
-     "claimMax": 1,
-     "perOption": 3,
-     "options": [
-      "Privacy - users often share personal information that becomes valuable for targeted advertising.",
-      "Manipulation of attention – excessive use of online platforms can lead to addictive usage patterns, foster a comparison culture which in turn can have a negative impact on mental health.",
-      "Responsible use - on a positive note, the quote can serve as an educational tool, promoting digital literacy and empowering users to make informed decisions about their online activities such as reading terms and conditions."
-     ]
-    },
+    "kind": "criterion",
+    "verbatim": "Privacy - users often share personal information that becomes valuable for targeted advertising.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "Manipulation of attention – excessive use of online platforms can lead to addictive usage patterns, foster a comparison culture which in turn can have a negative impact on mental health.",
+     "Responsible use - on a positive note, the quote can serve as an educational tool, promoting digital literacy and empowering users to make informed decisions about their online activities such as reading terms and conditions."
+    ],
     "contextNote": "Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 mark"
    }
   ],

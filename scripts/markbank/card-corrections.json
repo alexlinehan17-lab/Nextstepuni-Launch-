@@ -996,50 +996,6 @@
     ]
    }
   },
-  "cs-2024-hl-q13-c": {
-   "reason": "The paper asks for reasons on both sides of the AI-pause initiative, with up to two 3-mark points per side. The parser inverted the scenario and ask and turned headings, examples and tariff prose into twelve 1-mark rows.",
-   "set": {
-    "stem": "In 2023 an open letter published by the Future of Life Institute requested all AI labs to immediately pause for at least six months the training of very powerful AI systems. Interestingly, while the letter was signed by many well-known academics and industry leaders, there were many notable individuals and companies who did not publicly declare their support.",
-    "questionText": "Discuss the reasons for some people supporting the initiative to pause training and others not supporting the initiative.",
-    "rows": [
-     {
-      "id": "r-supporting",
-      "kind": "anyN",
-      "verbatim": "Up to two points supporting the initiative",
-      "marks": null,
-      "openList": true,
-      "group": {
-       "claimMax": 2,
-       "perOption": 3,
-       "options": [
-        "Ethical concerns: time is needed to make sure that AI aligns with human values and doesn't compromise principles such as privacy, accountability, and fairness.",
-        "Jobs/Employment/Economy: the pace of current development of AI systems has the potential to put many jobs at risk and people out of work. Pausing development provides an opportunity to address the potential societal impact on employment and consider strategies such as reskilling and implementing policies to mitigate economic disparities.",
-        "Security Risks: Advanced AI systems, if developed without sufficient safeguards, pose potential security risks. Pausing development allows time to assess and address security concerns related to the misuse of AI, such as cyber threats, hacking, and the development of AI-driven weaponry.",
-        "Unintended Consequences: The complexity of advanced AI systems increases the risk of unintended consequences. Pausing development permits a more thorough evaluation of the potential risks and unintended outcomes, ensuring that AI is deployed responsibly and doesn't lead to unforeseen negative impacts on society.",
-        "Existential Threat: There are some who believe that the development of highly advanced AI systems (superintelligent AI) could potentially threaten the continued existence of humanity. A pause in AI would give more time to increase public awareness through open discussions about the risks and benefits of advanced AI."
-       ]
-      }
-     },
-     {
-      "id": "r-against",
-      "kind": "anyN",
-      "verbatim": "Up to two points against the initiative",
-      "marks": null,
-      "openList": true,
-      "group": {
-       "claimMax": 2,
-       "perOption": 3,
-       "options": [
-        "Innovation and Progress: Continued development of advanced AI fosters innovation, leading to breakthroughs in various fields, including healthcare, education, and scientific research. Pausing development could impede progress and delay the benefits that AI can bring to society.",
-        "Societal Advancements: AI has the potential to address complex societal challenges, such as climate change, healthcare disparities, and resource management. Halting development may hinder the application of AI in finding solutions to pressing global issues.",
-        "Competitive Disadvantage: Countries and organisations are in a race to develop and adopt AI technologies. Pausing development may result in a competitive disadvantage, with nations that continue AI advancements gaining a lead in economic, military, and technological spheres.",
-        "Job Creation and Economic Growth: While AI may lead to job displacement in certain sectors, it also has the potential to create new jobs and stimulate economic growth. Pausing development could limit the positive economic impact of AI, affecting industries that could benefit from increased efficiency and innovation."
-       ]
-      }
-     }
-    ]
-   }
-  },
   "cs-2024-ol-q14-c": {
    "reason": "The scheme awards one holistic 6-mark discussion of a positive impact and one of a negative impact. Its examples are two answer pools, not twelve compulsory 1-mark rows.",
    "set": {
