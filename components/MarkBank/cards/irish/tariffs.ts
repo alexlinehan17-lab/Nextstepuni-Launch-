@@ -255,18 +255,16 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
     }
     // "5 phointe eolais agus 5 mharc ar gach pointe eolais" with nothing priced before it (2019 Ordinary 2A(b) An Lasair Choille,
     // whose key opens on the title alone, with no "(25 marc)"): the points' own words are the criterion's row, at the total
-    // they add to, in single marks (each point is 2 for the bare point + 3 for development); what precedes them is the prompt.
+    // they add to; what precedes them is the prompt. stepPrintedScales steps it at the totals the printed points make.
     const eachPoint = /(\d+)\s*phointe eolais agus (\d+)\s*m?h?arc ar gach pointe eolais/i.exec(body);
     if (eachPoint && tokens.length === 0 && !parts.length && !loose.length && Number(eachPoint[1]) * Number(eachPoint[2]) === source.totalMarks) {
-      tokens.push({ kind: 'row', text: tidy(eachPoint[0]), marks: source.totalMarks, steps: range(source.totalMarks),
-        at: eachPoint.index, end: eachPoint.index + eachPoint[0].length });
+      tokens.push({ kind: 'row', text: tidy(eachPoint[0]), marks: source.totalMarks, at: eachPoint.index, end: eachPoint.index + eachPoint[0].length });
     } else if (eachPoint && tokens.length === 0 && !parts.length && !loose.length && Number(eachPoint[1]) > 1 && Number(eachPoint[2]) === source.totalMarks) {
       // The same rule on a criterion worth one point (2014 Ordinary 2A(a) Hurlamaboc prints five points to cover and prices the
       // summary "5 phointe eolais agus 5 mharc ar gach pointe eolais"; each printed point is a criterion at 5): the rule's price
-      // of one point is the row, in single marks; the point's own words before it are the prompt.
+      // of one point is the row, stepped at its printed split where one is printed; the point's own words before it are the prompt.
       const one = /(\d+)\s*m?h?arc ar gach pointe eolais/i.exec(eachPoint[0])!;
-      tokens.push({ kind: 'row', text: tidy(one[0]), marks: source.totalMarks, steps: range(source.totalMarks),
-        at: eachPoint.index, end: eachPoint.index + eachPoint[0].length });
+      tokens.push({ kind: 'row', text: tidy(one[0]), marks: source.totalMarks, at: eachPoint.index, end: eachPoint.index + eachPoint[0].length });
     }
     // "(2 phointe eolais ar 4 mharc an ceann)" with nothing else priced (2014 Ordinary 3A(a)(ii)): the points the answer needs at
     // their own price, where they add up to the criterion's marks: one row in the scheme's words, one step a point ([0, 4, 8]).
@@ -550,8 +548,10 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       }
       if (part.ladder[part.ladder.length - 1] !== part.tariff) return { ok: false, reason: `ladder ends at ${part.ladder[part.ladder.length - 1]}, tariff is ${part.tariff}` };
     } else if (part.rows.length === 0) {
-      // A sub-question priced whole with nothing under it: its own words are the row, placed in steps.
-      part.rows.push({ id: '', text: part.prompt ?? 'Eolas', marks: part.tariff, steps: range(part.tariff) });
+      // A sub-question priced whole with nothing under it: its own words are the row, claimed whole. A step the scheme does
+      // not print is never inferred (coordinator correction, batch 6: "(2 mharc)" over sample answers is 0/2);
+      // stepPrintedScales steps the row where the criterion's own guidance prints a partial or a scale for it.
+      part.rows.push({ id: '', text: part.prompt ?? 'Eolas', marks: part.tariff });
     } else if (sum === 2 * part.tariff && part.rows.length % 2 === 0
       && part.rows.slice(0, part.rows.length / 2).every((row, i) => row.marks === part.rows[part.rows.length / 2 + i].marks)) {
       // The scheme prints the option's tariff twice, once per alternative text (scannán nó dráma): one set of rows.
@@ -594,8 +594,17 @@ const subsetSums = (terms: number[]) => [...terms.reduce((sums, term) => new Set
  *  - a band table headed by the row's marks whose printed values cover every mark from 0 ("Catagóir Marc as 7
  *    Sármhaith 6-7 … Lag/An-lag 0-2", "Catagóir An plé (23 marc) … 21-23 … 0-9", "Pointe eolais Marc as 6 Léiriú
  *    sármhaith 6 … Léiriú an-lag 0-1"): every mark.
+ *  - a bare point and its development priced apart, "2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt (5 mharc)",
+ *    "(5 mharc = 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)", for a row at their sum: the totals its parts make
+ *    ([0, 2, 3, 5]);
+ *  - points at a printed price each, "5 phointe eolais agus 5 mharc ar gach pointe eolais", for a row at their total: every
+ *    total the points can make, each point at the totals its own printed split makes where one is printed ([0, 2, 3, 4, …]),
+ *    otherwise one step a point;
+ *  - the examiner's judgement of the row out of its own marks, "an t-eolas a mharcáil as 35 marc", "an marc ar eolas as 25
+ *    marc", "Déan measúnú ar fhiúntas an eolais/an phlé as 18 marc": every mark, where the row is the criterion's largest.
  *  A printed price is claimable at every level (coordinator, batch 5: no floor). A row with steps or under a ladder is
- *  never touched; nothing is read from outside the criterion's own guidance. */
+ *  never touched; nothing is read from outside the criterion's own guidance. Nothing else steps a row (coordinator
+ *  correction, batch 6: a step the scheme does not print is never inferred). */
 export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[]): IrishAllocation => {
   const text = guidance.join(' ').replace(/\s+/g, ' ');
   const counts = new Map<number, number[]>();
@@ -605,7 +614,7 @@ export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[
     if (count > 1 && each > 0 && (WORDS[match[3].toLowerCase()] ?? Number(match[3])) === count) counts.set(count * each, cumulative(Array(count).fill(each)));
   }
   const bands = new Map<number, Set<number>>();
-  const headed = /(?:Catagóir\s+Marc as (\d+)(?!\s+Marc as)|Catagóir\s+(?:An plé|Plé|Eolas)\s*\((\d+)\s*m?h?arc\)|Pointe eolais Marc as (\d+)|Catagóir\s+Plé\s+(?=Marcanna))([\s\S]*?(?:Lag\/\s?An-lag|Léiriú an-lag)[^0-9]*?(?:\d+\s*[-–]\s*\d+|\d+(?:\s*,\s*\d+)*))/g;
+  const headed = /(?:Catagóir\s+Marc as (\d+)(?!\s+Marc as)|Catagóir\s+(?:An plé|Plé|Eolas|Cur síos)\s*\((\d+)\s*m?h?arc\)|Pointe eolais Marc as (\d+)|Catagóir\s+Plé\s+(?=Marcanna))([\s\S]*?(?:Lag\/\s?An-lag|Léiriú an-lag)[^0-9]*?(?:\d+\s*[-–]\s*\d+|\d+(?:\s*,\s*\d+)*))/g;
   for (const match of text.matchAll(headed)) {
     const values = bandValues(match[4].replace(/\([^)]*\)/g, ' '));
     // "Catagóir Plé Marcanna …" (2026) prints no price in its header: its top printed value is the price it scales.
@@ -635,14 +644,34 @@ export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[
     const price = new RegExp(String.raw`(?:^|\s)${row.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\s*=\s*(\d+\s*m?h?arc(?:\s*\+\s*\d+\s*m?h?arc)+)`).exec(text);
     return price ? price[1].match(/\d+/g)!.map(Number) : splitOf(row);
   };
+  const pointSplits = new Map<number, number[]>();
+  for (const match of text.matchAll(/(\d+)\s*m?h?arc ar lomphointe eolais\s*(?:agus|\+)\s*(\d+)\s*m?h?arc ar fhorbairt/gi)) {
+    pointSplits.set(Number(match[1]) + Number(match[2]), [Number(match[1]), Number(match[2])]);
+  }
+  const pointPrices = new Map<number, number[]>();
+  for (const match of text.matchAll(/(\d+)\s*phointe eolais agus (\d+)\s*m?h?arc ar gach pointe eolais/gi)) {
+    const [count, each] = [Number(match[1]), Number(match[2])];
+    const one = pointSplits.has(each) ? subsetSums(pointSplits.get(each)!) : [0, each];
+    let totals = [0];
+    for (let point = 0; point < count; point++) totals = [...new Set(totals.flatMap(total => one.map(value => total + value)))];
+    if (count > 1) pointPrices.set(count * each, totals.sort((a, b) => a - b));
+  }
+  const judged = new Set([...text.matchAll(/(?:an t-eolas a mharcáil|an marc ar eolas|marcáil an t-eolas|marcáiltear an t-eolas|an phlé sa fhreagra|fhiúntas an eolais\/an phlé|Blocmharcáil) as (\d+)\s*m?h?arc\b/gi)]
+    .map(match => Number(match[1])));
+  const largest = Math.max(0, ...allocation.parts.flatMap(part => part.rows.map(row => row.marks)));
   const stepsFor = (row: IrishAnswerRow): number[] | undefined => {
     const counted = counts.get(row.marks);
     if (counted) return counted;
+    const pointSplit = pointSplits.get(row.marks);
+    if (pointSplit) return subsetSums(pointSplit);
+    const pointPrice = pointPrices.get(row.marks);
+    if (pointPrice) return pointPrice;
     const split = splitOf(row);
     if (split && split.reduce((a, b) => a + b, 0) === row.marks) {
       return split.every(part => bands.has(part)) ? range(row.marks) : subsetSums(split);
     }
-    return bands.has(row.marks) ? range(row.marks) : undefined;
+    if (bands.has(row.marks)) return range(row.marks);
+    return judged.has(row.marks) && row.marks === largest ? range(row.marks) : undefined;
   };
   return {
     ...allocation,
