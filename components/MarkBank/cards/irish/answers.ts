@@ -168,6 +168,127 @@ const BRACKETED_ANSWER = /(=\s*\d+\s*m?h?arc\b)\s*\((?!\s*(?:Is leor|aon|Ní mó
 const letters = (value: string) => value.toLowerCase().replace(/[^a-záéíóú]+/g, '');
 const printedQuestion = (questionText: string, line: string) => letters(line).length > 12 && letters(questionText).includes(letters(line));
 
+/** The 2012 Higher reading key (scheme PDF 17–21) prints no tariff for most parts (its section rule prices each (a) at 3 and each
+ *  (b) question at 2) and its prices in a short unit, wherever the line ends: "An Peantatlan agus an Deacatlan =3m.", "… leis
+ *  féin=(3-1)=2m.", "“…” = (3-1 marc)", "“…” 3m", "“…”2m", "… S1= 1m", "“…”1+1m" (one answer giving both points), "T1 + S1 (5m) =",
+ *  "Má leantar … =(3-1) iomarcach.", "“…”(3-1m),freagra easnamhach." A part is read only where its text prints that unit
+ *  ("\d m") and no "= N mharc" price. Its prompt runs to the question's "?" (and its "(Alt N)" and printed "(N mharc)"), or, where
+ *  the scheme reprints the question without one, to the first quoted answer, bracket or printed tariff; each price closes the
+ *  answer before it. The examiner's rules are directions: "Ní fiú marc …", "Caithfidh …", "Ná cuir pionós faoi dhó …", "Léirithe
+ *  mar seo: C=2m …", "(glac le …)", "mion bhriseadh le léiriú mar seo"; a deduction for an answer not turned into the third person,
+ *  "(3-1m) mura bhfuil an 3ú pearsa ann.", "Gan an 3ú pearsa (2-1m)", is a direction too, and every answer at the part's tariff
+ *  steps through it (0/2/3, 0/1/2). "[Bronn 2 mharc ar an gcéad cheann atá ceart agus 1 mharc ar an dara ceann.]" and "Bronn 2m ar an
+ *  gcéad ceann …" ladder the two grammar answers (6(a)), each opened by its label ("Ainmfhocal …", "Briathar saor …"). Answers the
+ *  scheme prints with no price are each one answer at the part's tariff, split at their quotation marks; words printed after an
+ *  answer's price that continue its quotation ("“sláinte agus áilleacht an choirp “ 1+1m agus cosaint an dúlra.”") stay with it, after
+ *  a colon where the price was. */
+const UNIT_PRICE: [RegExp, (m: RegExpExecArray) => { marks: number; steps?: number[]; qualifier?: string } | undefined][] = [
+  [/=\s*\((\d)\s*-\s*(\d)\)\s*=\s*(\d)\s*m\b\.?/y, m => (Number(m[1]) - Number(m[2]) === Number(m[3]) ? { marks: Number(m[3]) } : undefined)],
+  [/=\s*\(\s*(\d)\s*-\s*(\d)\s*marc\s*\)\.?/y, m => ({ marks: Number(m[1]) - Number(m[2]) })],
+  [/=\s*\((\d)\s*-\s*(\d)\)\s*(iomarcach)\.?/y, m => ({ marks: Number(m[1]) - Number(m[2]), qualifier: m[3] })],
+  [/\((\d)\s*-\s*(\d)\s*m\)\s*,?\s*(freagra easnamhach)\.?/y, m => ({ marks: Number(m[1]) - Number(m[2]), qualifier: m[3] })],
+  [/\((\d)\s*-\s*(\d)\s*m\)\.?/y, m => ({ marks: Number(m[1]) - Number(m[2]) })],
+  [/(\d)\s*\+\s*(\d)\s*m\b\.?/y, m => ({ marks: Number(m[1]) + Number(m[2]), steps: [0, Number(m[1]), Number(m[1]) + Number(m[2])] })],
+  [/\((\d+)\s*m\)\s*=/y, m => ({ marks: Number(m[1]) })],
+  [/=?\s*(\d+)\s*m\b\.?/y, m => ({ marks: Number(m[1]) })],
+];
+const UNIT_RULES: [RegExp, 'direction' | 'deduction' | 'ladder'][] = [
+  [/\[Bronn (\d) mharc ar an gcéad cheann atá ceart agus (\d) mharc ar an dara ceann\.\]/, 'ladder'],
+  [/Bronn (\d)m ar an gcéad ceann atá ceart agus (\d)m ar an dara ceann\./, 'ladder'],
+  [/\((\d)\s*-\s*(\d)\s*m\)\s*(?:mura|muna)\s+bhfuil an 3ú pearsa ann\.?/, 'deduction'],
+  [/Gan an 3ú pearsa \((\d)\s*-\s*(\d)\s*m\)/, 'deduction'],
+  [/Ní fiú marc ar bith[^.]*\./, 'direction'],
+  [/Caithfidh [^.]*?(?:\.|\b0m\b)/, 'direction'],
+  [/Ná cuir pionós faoi dhó ar an bhfreagra céanna\./, 'direction'],
+  [/Léirithe mar seo:[^.]*\./, 'direction'],
+  [/\(glac le [^)]*\)/, 'direction'],
+  [/mion bhriseadh le léiriú mar seo,?/, 'direction'],
+];
+const parseUnitReading = (text: string, total: number): IrishAnswerResult | undefined => {
+  const directions: string[] = [];
+  const ladderTerms: number[] = [];
+  const deductions: [number, number][] = [];
+  let body = text;
+  for (const [rule, kind] of UNIT_RULES) {
+    for (let match = rule.exec(body); match; match = rule.exec(body)) {
+      directions.push(tidy(match[0]));
+      if (kind === 'ladder') ladderTerms.splice(0, ladderTerms.length, Number(match[1]), Number(match[2]));
+      if (kind === 'deduction') deductions.push([Number(match[1]), Number(match[2])]);
+      body = `${body.slice(0, match.index)} ${body.slice(match.index + match[0].length)}`;
+    }
+  }
+  body = body.replace(/\s+/g, ' ').trim();
+  // The prompt: after its printed label ("1 (b) (1) ", "6.(a) "), to the question's "?", or, where the scheme reprints the question
+  // without one, to the first quotation mark, bracket, tariff or grammar label.
+  const label = /^\d\s*\.?\s*\(\s*[a-b]\s*\)\s*(?:\(\s*\d\s*\)\s*)?/.exec(body);
+  if (!label) return { ok: false, reason: 'no part label' };
+  const asked = body.slice(label[0].length);
+  const question = asked.indexOf('?');
+  const firstAnswer = asked.search(/[“"[]|\(\d+\s*m?h?arc\)|\b\d+\s*m?h?arc\b|\(\d\)\s|(?<=\s)(?:Ainmfhocal|Briathar saor)\b/);
+  let cut = label[0].length + (question >= 0 ? question + 1 : firstAnswer);
+  if (question < 0 && firstAnswer <= 0) return { ok: false, reason: 'no prompt' };
+  const trailer = /^\s*(?:\(\s*Alt\s*\d+\s*\))?/.exec(body.slice(cut))!;
+  cut += trailer[0].length;
+  const prompt = tidy(body.slice(0, cut));
+  let rest = body.slice(cut);
+  // The part's printed tariff and its split ("(3 mharc)", "(2 mharc) (1+1) Dhá rud.", "(3 mharc)(2+1 marc)", "10 mharc,").
+  const printed = /^\s*\(?\s*(\d+)\s*m?h?arc\)?\s*,?/.exec(rest);
+  if (printed) {
+    if (Number(printed[1]) !== total) return { ok: false, reason: `printed tariff ${printed[1]}, criterion is ${total}` };
+    rest = rest.slice(printed[0].length);
+  }
+  const split = /^\s*\((\d)\s*\+\s*(\d)\s*(?:marc)?\)\s*(?:(Dhá rud\.))?/.exec(rest);
+  if (split) {
+    if (split[3]) directions.push(tidy(split[0]));
+    else if (!ladderTerms.length) ladderTerms.push(Number(split[1]), Number(split[2]));
+    rest = rest.slice(split[0].length);
+  }
+  const rows: { text: string; marks: number; steps?: number[] }[] = [];
+  if (ladderTerms.length) {
+    // Grammar: the two answers, each opened by its printed label, claimed in order.
+    if (ladderTerms[0] + ladderTerms[1] !== total) return { ok: false, reason: 'ladder does not reach the tariff' };
+    const answers = rest.split(/(?=\b(?:Ainmfhocal|Briathar saor)\b)/).map(tidy).filter(Boolean);
+    if (answers.length !== 2) return { ok: false, reason: 'grammar answers' };
+    answers.forEach(answer => rows.push({ text: answer, marks: 0 }));
+    return { ok: true, allocation: { parts: [{ id: 'p1', prompt, tariff: total, ladder: cumulative(ladderTerms),
+      rows: rows.map((row, index) => ({ id: `r${index + 1}`, text: row.text, marks: row.marks })) }], directions } };
+  }
+  let pos = 0;
+  while (pos < rest.length) {
+    let best: { at: number; end: number; price: { marks: number; steps?: number[]; qualifier?: string } } | undefined;
+    for (let at = pos; at < rest.length && !best; at++) {
+      for (const [pattern, read] of UNIT_PRICE) {
+        pattern.lastIndex = at;
+        const match = pattern.exec(rest);
+        const price = match && read(match);
+        if (match && price) { best = { at, end: at + match[0].length, price }; break; }
+      }
+    }
+    if (!best) break;
+    const answer = tidy(rest.slice(pos, best.at).replace(/=\s*$/, ''));
+    if (!answer) return { ok: false, reason: 'price without an answer' };
+    rows.push({ text: best.price.qualifier ? `${answer}: ${best.price.qualifier}` : answer, marks: best.price.marks,
+      ...(best.price.steps ? { steps: best.price.steps } : {}) });
+    pos = best.end;
+  }
+  const tail = tidy(rest.slice(pos));
+  if (tail && rows.length && /^[a-záéíóú]/.test(tail)) {
+    rows[rows.length - 1].text = `${rows[rows.length - 1].text}: ${tail}`;
+  } else if (tail) {
+    if (rows.length) return { ok: false, reason: `unpriced answers after priced ones: ${tail.slice(0, 40)}` };
+    tail.split(/(?<=”\.?)\s+(?=“)/).map(tidy).filter(Boolean).forEach(answer => rows.push({ text: answer, marks: total }));
+  }
+  if (!rows.length) return { ok: false, reason: 'no answers' };
+  const max = Math.max(...rows.map(row => row.marks));
+  if (max > total) return { ok: false, reason: 'row above its tariff' };
+  if (max < total && rows.filter(row => row.marks > 0).reduce((sum, row) => sum + row.marks, 0) < total) return { ok: false, reason: 'tariff not reachable' };
+  for (const [base, minus] of deductions) {
+    for (const row of rows) if (row.marks === base && base === total && !row.steps) row.steps = [0, base - minus, base];
+  }
+  return { ok: true, allocation: { parts: [{ id: 'p1', prompt, tariff: total,
+    rows: rows.map((row, index) => ({ id: `r${index + 1}`, text: row.text, marks: row.marks, ...(row.steps ? { steps: row.steps } : {}) })) }], directions } };
+};
+
 /** Cut one criterion's exact guidance into parts and rows, or say why not. */
 export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult {
   const directions: string[] = [];
@@ -180,6 +301,32 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   });
   // A SymbolMT bullet the builders have not yet repaired (U+F0B7) and a repaired one (•) cut alike.
   let text = ownLines.join(' ').split(BULLET).join(' • ').replace(/•/g, ' • ');
+  if (/Léamhthuiscint/.test(source.questionRef) && /\d\s*m\b/.test(text) && !/=\s*\d+\s*m?h?arc\b/.test(text)) {
+    const unit = parseUnitReading(text.replace(/\s+/g, ' ').trim(), source.totalMarks);
+    if (unit) {
+      if (unit.ok) unit.allocation.directions.unshift(...directions);
+      return unit;
+    }
+  }
+  const nounSteps: number[] = [];
+  // The 2012 Higher listening key (scheme PDF 7–12) prints its tariffs and prices with no unit: a question's tariff in brackets
+  // after it ("Cén scoil atá i gceist san fhógra seo? (2)", "… a bheith ag iarrthóirí. (2 + 2)"), each answer "= 2", "= 0",
+  // "=2", "= 2m", and an answer of two printed halves, "= 1 + 1" (a start and an end, 1 each) or "= 2 + 2" (both points of a
+  // two-point question), or "= 1 + 0" where only the first half is right. Read only on a listening criterion whose text prints
+  // no "marc" at all, as the priced forms it stands for; an answer of two halves steps through its first (0/1/2, 0/2/4), as
+  // the noun and its qualifier do. "= 1 + 09 go dtí 4.05 = 1 + 1" is "= 1 + 0" then the next answer, "9 go dtí 4.05", run
+  // together where the scheme lost a line break: every price it prints is one digit.
+  if (LISTENING.test(source.questionRef) && !/\d\s*m?h?arc\b/.test(text)) {
+    text = text
+      .replace(/([?.:])\s*\(\s*(\d)\s*\+\s*(\d)\s*\)/g, '$1 $2 mharc + $3 mharc')
+      .replace(/([?.:])\s*\(\s*(\d)\s*\)/g, '$1 $2 mharc')
+      .replace(/\s*=\s*(\d)\s*\+\s*(\d)/g, (_, first: string, second: string) => {
+        if (Number(second) === 0) return ` = ${first} mharc `;
+        nounSteps.push(Number(first));
+        return `${STEPPED} = ${Number(first) + Number(second)} mharc `;
+      })
+      .replace(/=\s*(\d)(?:m\b)?(?!\s*m?h?arc\b)(?![\d.,])/g, '= $1 mharc');
+  }
   text = text.replace(PRICED_PAIR, (_, first: string, firstPrice: string, second: string, secondPrice: string) =>
     `• ${first.trim()} = ${firstPrice} mharc • ${second.trim()} = ${secondPrice} mharc`);
   text = text.replace(DEFICIENT_PRICE, (_, price: string) => `: (easnamhach) = ${price} mharc`);
@@ -259,7 +406,6 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   // as a sentence, a direction. "X = 3 mharc nó 2 mharc" (A 3(b)): one point at 3 or 2 by its order, which the ladder carries.
   text = text.replace(/\b\d+\s*m?h?arc ar an gcéad [^+=•]+\+\s*\d+\s*m?h?arc ar an dara [^+=•]+=\s*\d+\s*m?h?arc\b/g, rule => { directions.push(tidy(rule)); return ' '; });
   text = text.replace(/(=\s*\d+\s*m?h?arc\b)\s+nó\s+\d+\s*m?h?arc\b/g, '$1');
-  const nounSteps: number[] = [];
   text = text.replace(NOUN_AND_QUALIFIER, (_, noun: string, first: string, qualifier: string, second: string) => {
     nounSteps.push(Number(first));
     return `${noun.trimEnd()}: ${qualifier}${STEPPED} = ${Number(first) + Number(second)} mharc`;

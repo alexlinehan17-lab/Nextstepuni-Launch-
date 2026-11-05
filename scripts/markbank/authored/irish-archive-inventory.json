@@ -28,14 +28,14 @@
       "higher",
       "ordinary"
     ],
-    "papersWithCards": 74,
-    "papersWithoutCards": 17,
-    "indexedCards": 3203,
+    "papersWithCards": 75,
+    "papersWithoutCards": 16,
+    "indexedCards": 3220,
     "orphanCardIds": [],
     "missingLocalPapers": [],
     "papersWithoutIndexedScheme": [],
     "missingLocalSchemes": [],
-    "papersPendingFullReview": 17,
+    "papersPendingFullReview": 16,
     "componentsWithSourceGaps": [
       "2010|foundation|LC001BLPA00IV.pdf"
     ]
@@ -8517,7 +8517,25 @@
         "pages": 28,
         "sha256": "890fe382628c17197ac926200f9aa46f63114852daf6eaad87242b482fafcd3f"
       },
-      "markBankCardIds": [],
+      "markBankCardIds": [
+        "irish-2012-hl-p1-listening-a-f1",
+        "irish-2012-hl-p1-listening-a-f2",
+        "irish-2012-hl-p1-listening-b-c1-first",
+        "irish-2012-hl-p1-listening-b-c1-second",
+        "irish-2012-hl-p1-listening-b-c2-first",
+        "irish-2012-hl-p1-listening-b-c2-second",
+        "irish-2012-hl-p1-listening-c-p1",
+        "irish-2012-hl-p1-listening-c-p2",
+        "irish-2012-hl-p1-composition-a-a",
+        "irish-2012-hl-p1-composition-a-b",
+        "irish-2012-hl-p1-composition-a-c",
+        "irish-2012-hl-p1-composition-b-a",
+        "irish-2012-hl-p1-composition-b-b",
+        "irish-2012-hl-p1-composition-c-a",
+        "irish-2012-hl-p1-composition-c-b",
+        "irish-2012-hl-p1-composition-d-a",
+        "irish-2012-hl-p1-composition-d-b"
+      ],
       "atlasQuestionIds": [
         "1",
         "2",
@@ -8526,12 +8544,29 @@
         "W-A",
         "W-B",
         "W-C",
-        "W-D"
+        "W-D",
+        "L-A-F1",
+        "L-A-F2",
+        "L-B-C1-M1",
+        "L-B-C1-M2",
+        "L-B-C2-M1",
+        "L-B-C2-M2",
+        "L-C-P1",
+        "L-C-P2",
+        "W-A-a",
+        "W-A-b",
+        "W-A-c",
+        "W-B-a",
+        "W-B-b",
+        "W-C-a",
+        "W-C-b",
+        "W-D-a",
+        "W-D-b"
       ],
-      "questionCoverage": "missing-from-mark-bank",
-      "fullVisualReview": "pending",
-      "partAndSelectionReconciliation": "pending",
-      "bankAtlasTaskParity": "pending"
+      "questionCoverage": "reviewed",
+      "fullVisualReview": "complete",
+      "partAndSelectionReconciliation": "complete",
+      "bankAtlasTaskParity": "complete"
     },
     {
       "key": "2012|higher|LC001ALP200IV.pdf",

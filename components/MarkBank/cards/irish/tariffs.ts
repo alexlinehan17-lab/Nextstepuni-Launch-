@@ -33,8 +33,9 @@ const SUB = /(?<=^|\s)(?:\d\.\s*)?(?:\(?[a-f]\)\s*)?\((?:i|ii|iii|iv|v)\)\s|(?<=
 const OPENER = new RegExp(String.raw`\(\s*${MARC}\s*\)|\{\s*${MARC}(?::\s*((?:\d+\s*m?h?arc\b\s*\+?\s*)+))?${SUM}\s*\}|(?<=^|\s)Eolas\s*=\s*${MARC}${SUM}`, 'g');
 /** A priced phrase: "X = 13 mharc", "X = 4 mharc + 4 mharc", "Pointe eolais 1 = Plé … = 5 mharc". */
 const PRICED = new RegExp(String.raw`([^•¶\n]{2,400}?)\s*=\s*${MARC}${SUM}(?!\s*(?:ar|an|ceann)\b)`, 'g');
-/** "Tréithe samplacha:" and "Ábhair imní:" (2014 Higher A and B 6(b)) head their lists as "Samplaí" does. */
-const SAMPLES = /(?:\b(?:Freagraí samplacha|Pointí eolais féideartha|(?<!\bas\s)(?<!\bag tabhairt\s)Samplaí|Freagra samplach|Sampla cruinn:|Tréithe samplacha)|(?<![A-Za-zÁÉÍÓÚáéíóú])Ábhair imní(?=:))\s*:?\s*/i;
+/** "Tréithe samplacha:" and "Ábhair imní:" (2014 Higher A and B 6(b)) head their lists as "Samplaí" does, and so does "B’fhéidir go
+ *  mbeadh rudaí mar seo luaite," (2012 Higher A 6(b)). */
+const SAMPLES = /(?:\b(?:Freagraí samplacha|Pointí eolais féideartha|(?<!\bas\s)(?<!\bag tabhairt\s)Samplaí|Freagra samplach|Sampla cruinn:|Tréithe samplacha|B’fhéidir go mbeadh rudaí mar seo luaite,)|(?<![A-Za-zÁÉÍÓÚáéíóú])Ábhair imní(?=:))\s*:?\s*/i;
 /** Where a sample list ends because a split-priced phrase follows it: "Samplaí: Brón, … bród… Dhá shampla = 4 mharc + 4 mharc", or a
  *  numbered point's price: "Samplaí : Doicheall, … teannas… Pointe eolais 1 = 3 mharc" (2015 Higher 4F(iii)).
  *  Only a split ("a + b"), and never a verse reference, which stays inside its sample list whatever its price ("… gheal…
@@ -190,6 +191,10 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       ? `{${total} ${unit}: ${first} mharc + ${second} mharc} ${list.split(';').map(item => item.trim()).filter(Boolean).map(item => `• ${item}`).join(' ')} ¶ `
       : whole));
   text = text.replace(NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
+  // "Mura luaitear ach ceann amhain marcáil an freagra as 8 marc. Más lom insint ón sliocht atá ann marcáil as 7 marc." (2012 Higher
+  // A 6(b)): what an answer naming one view, or retelling the passage, is marked out of: directions.
+  text = text.replace(/(?:Mura luaitear ach ceann amh[aá]in|Más lom insint ón sliocht atá ann) marcáil (?:an freagra )?as \d+ marc\./g,
+    note => { directions.push(tidy(note)); return ' ¶ '; });
   // "Treoir: Ní mór don iarrthóir …" (2015 Ordinary 2B(a)): the note went to the directions above; its heading is not a prompt.
   text = text.replace(/(?<=^|\s)Treoir:\s*(?=¶)/g, ' ');
   text = text.replace(SPLIT_NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
@@ -601,10 +606,12 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   // the row, as a sub-question priced whole with nothing under it. Only where nothing else priced it.
   // 2017 prints no band table for Ceist 4A–E either: its Ceist 4 Treoracha price them ("an t-eolas a mharcáil as 35 marc"). 2015
   // prints nothing else for 2A and 2B but the examiner's closing note ("Ní mór don Scrúdaitheoir an marc ar eolas as 25 marc …").
-  const treoirPrice = /an t-eolas a mharcáil as (\d+) marc|an marc ar eolas as (\d+) marc/.exec(source.guidance.join(' '));
+  // 2012 prints only the note after both prose questions: "Caithfidh an Scrúdaitheoir an marc as 25 (Ábhar) agus as 5 (Gaeilge) a
+  // thaispeáint" (Higher 2A, 2B).
+  const treoirPrice = /an t-eolas a mharcáil as (\d+) marc|an marc ar eolas as (\d+) marc|an marc as (\d+) \(Ábhar\)/.exec(source.guidance.join(' '));
   if (parts.length === 0 && !loose.length && loosePrompt
     && (bands.some(band => Number(/^Catagóir\s+Eolas\s*\((\d+)\s*m?h?arc\)/.exec(band)?.[1]) === source.totalMarks)
-      || Number(treoirPrice?.[1] ?? treoirPrice?.[2]) === source.totalMarks)) {
+      || Number(treoirPrice?.[1] ?? treoirPrice?.[2] ?? treoirPrice?.[3]) === source.totalMarks)) {
     parts.push({ prompt: loosePrompt, tariff: source.totalMarks, rows: [], samples: [] });
   }
   if (parts.length === 0) return { ok: false, reason: 'no priced sub-question' };
