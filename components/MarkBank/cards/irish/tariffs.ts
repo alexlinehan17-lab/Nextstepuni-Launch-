@@ -75,7 +75,7 @@ const LIFTED_LINES = /(?<=\bm?h?arc\s)Línte cuí(?=\s)[^•=¶]*?=\s*\d+\s*m?h?
 /** "Trí phointe eolais ag teastáil anseo: 2 mharc an ceann ar na trí phointe eolais": how a row divides, a direction. */
 const COUNT_NOTE = /\b(?:Dhá|Trí|Ceithre|Cúig|\d+)\s+phointe eolais ag teastáil(?: anseo)?:?\s*\d+\s*m?h?arc an ceann ar (?:an|na)[^•=(]*?(?=\s[A-ZÁÉÍÓÚ(]|$)/g;
 /** "5 mharc = 2 mharc ar lomphointe eolais + 3 mharc ar fhorbairt": how one point's marks divide, a direction. */
-const SPLIT_NOTE = /\b\d+\s*m?h?arc\s*=\s*\d+\s*m?h?arc\s+ar\s[^•]*?(?=\s(?:\d+\s*m?h?arc\s*=|\(|[A-ZÁÉÍÓÚ][^\s=]*(?:\s[^\s=]+){0,6}\s*=)|$)/g;
+const SPLIT_NOTE = /\b(?:\d+\s*m?h?arc\s*\/\s*)?\d+\s*m?h?arc\s*=\s*\d+\s*m?h?arc\s+ar\s[^•]*?(?=\s(?:\d+\s*m?h?arc\s*=|\(|[A-ZÁÉÍÓÚ][^\s=]*(?:\s[^\s=]+){0,6}\s*=)|$)/g;
 const FURNITURE = /\b(?:Léirigh mionbhriseadh na marcanna|Eolas\s*\(\d+\)\s*=\s*Gaeilge|E\s*\(\d+\)\s*=|An Mharcáil:|T\d\s*\(\d\)\s*\+\s*S\d|C\s*\d\s*\([A-B]\)\s*\(\d+\)\s*=)[\s\S]*$/;
 /** The band header the scheme prints under each sub-question without its ranges: "Catagóir Marc as 4 Sármhaith An-mhaith Maith Measartha Lag/An-lag". */
 const BAND_HEADER = /\bCatagóir Marc as \d+\s+Sármhaith\s+An-mhaith\s+Maith\s+Measartha\s+Lag\/An-lag(?:\s+\d+\s*-\s*\d+)*/g;
@@ -163,6 +163,25 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   const bands: string[] = [];
   text = text.replace(BAND_TABLE, table => { bands.push(tidy(table)); return ' ¶ '; });
   text = text.replace(NUMBERED_NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
+  // "Ní mór teideal an scannáin sin, mar aon le hainm an scríbhneora, a scríobh síos go soiléir Teideal an scannáin = 1 mharc"
+  // (2013 Ordinary 2B(a)): the title requirement printed without its full stop before the rows that price it. The requirement
+  // ends where its first row begins, as where the full stop is printed; the rows are never read into the note.
+  text = text.replace(/(\bNí mór teideal [^.•¶=]*?a scríobh síos go (?:soiléir|cruinn))\s+(?=Teideal\b[^.•¶=]{0,40}=\s*\d+\s*m?h?arc\b)/g, '$1 ¶ ');
+  // "(5 mharc ar an gceann is fearr + 4 mharc ar an gceann eile)" (2013 Ordinary 3A(a)(iii)): the better of the two answers the
+  // question asks for at the first price, the other at the second. Each is a row at its printed price, in the scheme's words.
+  text = text.replace(/\(\s*(\d+)\s*(m?h?arc) (ar )(an gceann is fearr) \+ (\d+)\s*(m?h?arc) (ar )(an gceann eile)\s*\)/g,
+    (_, best: string, unit: string, _ar: string, bestText: string, other: string, unit2: string, _ar2: string, otherText: string) =>
+      ` ¶ ${bestText} = ${best} ${unit} ¶ ${otherText} = ${other} ${unit2} ¶ `);
+  // "Mothú a lua=1 mharc + dhá fháth :3 mharc + 2 mharc" (2013 Ordinary 3B(b)(ii)): the reasons' price printed after a colon,
+  // read as "… + dhá fháth = 3 mharc + 2 mharc" is (2013 3A(b)(iii)).
+  text = text.replace(/(\bdhá fháth)\s*:\s*(?=\d+\s*m?h?arc\s*\+\s*\d+\s*m?h?arc\b)/g, '$1 = ');
+  // "(2 mharc) Cluain Meala; Tiobraid Árann; …; Margadh na saoire, aonach hireálta. (1 mharc + 1 mharc)" (2013 Ordinary
+  // 3A(b)(i)(b)): the accepted answers listed between the question's tariff and how it divides. The split is the part's ladder
+  // and each listed answer one of its rows, claimed in order; only where the split adds up to the tariff.
+  text = text.replace(/\(\s*(\d+)\s*(m?h?arc)\s*\)\s+([^•¶=(){};]+(?:;[^•¶=(){};]+)+?)\s*\(\s*(\d+)\s*m?h?arc\s*\+\s*(\d+)\s*m?h?arc\s*\)/g,
+    (whole: string, total: string, unit: string, list: string, first: string, second: string) => (Number(first) + Number(second) === Number(total)
+      ? `{${total} ${unit}: ${first} mharc + ${second} mharc} ${list.split(';').map(item => item.trim()).filter(Boolean).map(item => `• ${item}`).join(' ')} ¶ `
+      : whole));
   text = text.replace(NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
   // "Treoir: Ní mór don iarrthóir …" (2015 Ordinary 2B(a)): the note went to the directions above; its heading is not a prompt.
   text = text.replace(/(?<=^|\s)Treoir:\s*(?=¶)/g, ' ');
@@ -306,6 +325,14 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
     // "4 phointe eolais ag teastáil (5 mharc an ceann) = 20 marc" (2017 Ordinary 2B(b)): the price of each point, printed with
     // the row's price. The row keeps its printed count and steps one point at a time ([0, 5, 10, 15, 20]), only where the
     // points add up to the row's marks exactly.
+    // "Lomphointe + Forbairt= 2 phointe ar 4 mharc an ceann = 8 marc" (2013 Ordinary 3B(b)(i)): a row whose own words print the
+    // price of each of its points steps one point at a time ([0, 4, 8]), only where the points add up to the row's marks.
+    for (const token of tokens) {
+      const perPoint = token.kind === 'row' && !token.steps ? /(\d+)\s*phointe ar (\d+)\s*m?h?arc an ceann$/i.exec(token.text) : null;
+      if (token.kind === 'row' && perPoint && Number(perPoint[1]) > 1 && Number(perPoint[1]) * Number(perPoint[2]) === token.marks) {
+        token.steps = cumulative(Array(Number(perPoint[1])).fill(Number(perPoint[2])));
+      }
+    }
     const eachPrice = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann\s*\)(?=\s*=\s*\d+\s*m?h?arc\b)/i.exec(body);
     if (eachPrice) {
       const counted = tokens.find((token): token is Extract<Token, { kind: 'row' }> => token.kind === 'row' && !token.steps
@@ -368,6 +395,29 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
         at: shares.index, end: shares.index + shares[0].length });
     }
     tokens.sort((a, b) => a.at - b.at);
+    // "(ii) Roghnaigh dhá íomhá (phictiúr) … (8 marc) Íomhá / pictiúr a lua = 1 mharc Forbairt = 3 mharc 2 íomhá / phictiúr ar 4
+    // mharc an ceann" (2013 Ordinary 3B(a)(ii)): the rows price one of the things the question asks for, and the line after them
+    // how many it asks for at that price. Each row counts once per thing ([0, 1, 2], [0, 3, 6]), only where the rows add up to
+    // the price of one and the things to the part's tariff; the count line is a direction.
+    const things = /(?<=\bm?h?arc\s)(\d+)\s+[^=•¶()]{1,40}?\s+ar\s+(\d+)\s*m?h?arc an ceann\s*$/i.exec(body);
+    const thingRows = tokens.filter((token): token is Extract<Token, { kind: 'row' }> => token.kind === 'row');
+    const thingOpen = tokens.find(token => token.kind === 'open');
+    if (things && thingOpen && thingRows.length > 1 && thingRows.every(row => !row.steps && row.end <= things.index)
+      && thingRows.reduce((acc, row) => acc + row.marks, 0) === Number(things[2]) && Number(things[1]) * Number(things[2]) === thingOpen.tariff) {
+      const count = Number(things[1]);
+      for (const row of thingRows) { row.steps = cumulative(Array(count).fill(row.marks)); row.marks *= count; }
+      directions.push(tidy(things[0]));
+    }
+    // "(ii) Inis i d’fhocail féin, cén sórt saoil a bhí ag an spailpín? (Is leor dhá phointe eolais.) = (4 mharc +4 mharc)" (2013
+    // Ordinary 3A(b)(ii)): a split printed under the question with no words of its own, the note before it read as a direction.
+    // The sub-question's own words are the row, in the split's steps ([0, 4, 8]), only where nothing else prices it and the
+    // split adds up to the criterion.
+    const bareSplit = /^(.*[?.])\s*¶\s*=\s*(\d+)\s*m?h?arc\s*\+\s*(\d+)\s*m?h?arc\s*$/.exec(body);
+    if (bareSplit && tokens.length === 0 && !parts.length && !loose.length && Number(bareSplit[2]) + Number(bareSplit[3]) === source.totalMarks) {
+      const at = body.lastIndexOf('=');
+      tokens.push({ kind: 'row', text: stripMarker(bareSplit[1]), marks: source.totalMarks, steps: cumulative([Number(bareSplit[2]), Number(bareSplit[3])]),
+        at, end: body.length });
+    }
     // "Aidhm 1 + Forbairt = 6 mharc   Aidhm a lua = 2 mharc + Forbairt = 4 mharc" (2016 Higher A 6(b)): a priced line followed
     // straight away by a printed split ("… = 2 mharc + … = 4 mharc") that adds up to exactly its own price is the split's
     // heading, not one more answer: the split's rows stay and the heading goes to the directions.
@@ -559,7 +609,7 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
     if (part.ladder) {
       if (part.rows.length === 0) {
         // "{3 mharc: 2 mharc + 1 mharc}" over "Sampla de X: …" answers: the unpriced samples are the rows the ladder prices.
-        const answers = part.samples.length ? part.samples : (part.unpriced ?? '').split(/\s(?=Sampla\b)/).map(tidy).filter(Boolean);
+        const answers = part.samples.length ? part.samples : (part.unpriced ?? '').split(/\s(?=Sampla\b)|\s•\s/).map(tidy).filter(Boolean);
         if (!answers.length) return { ok: false, reason: 'ladder without rows' };
         part.rows = answers.map(answer => ({ id: '', text: answer, marks: 0 }));
         part.samples = [];

@@ -104,6 +104,8 @@ interface Draft { prompt?: string; tariff: number; ladder?: number[]; rows: { te
  *  Léamhthuiscint B. Tá Ceist 1 – 5 ar cómharc, 7 marc …") or the card's note on an order-dependent
  *  award, which the part's own tariff and ladder already show. None of their prices is this part's. */
 const PART_NOTE = /^Nóta:/;
+/** A listening card's criterion (its questionRef names the section): its key prints one answer line per question. */
+const LISTENING = /\bCluastuiscint\b/;
 const SECTION_SUMMARY = /^(?:Freagair Léamhthuiscint|Tá Ceist \d+\s*[–-]\s*\d+ ar cómharc|Order-dependent award)/;
 /** "(Is leor aon trí cinn as na ceithre cinn: …)", "(Ní mór ‘…’ a bheith sa fhreagra chun an dara marc a
  *  ghnóthú)", "(Tá gá le ‘conradh’ … a lua sa fhreagra chun an dá mharc a bhronnadh.)", "(Má fhágtar ainmfhocal nó aidiacht
@@ -304,6 +306,7 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     }
     return { lead, bullets: bullets.filter(Boolean) };
   };
+  let headedList = false;
   const addAnswers = (segment: string, marks: number | undefined, half?: number): string | undefined => {
     const { lead, bullets } = splitBullets(segment);
     const items = lead ? [lead, ...bullets] : bullets;
@@ -314,6 +317,21 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
       // the rules ladder it as they do under a printed tariff.
       const ruled = /^(.*(?:\(Alt \d+\)|\?))\s+((?:an\s+)?(?:chéad|dara)\s.*\s(?:ceart|cheart))$/i.exec(items[0]);
       if (ruled && PROMPT.test(ruled[1]) && marks !== undefined) { open(tidy(ruled[1]), source.totalMarks); items[0] = ruled[2]; }
+      // "1. (a) Cén cuairteoir tábhachtach …? (Alt 1) • an tUachtarán Kennedy … = 5 mharc" (2013 Ordinary reading): the question
+      // prints no tariff of its own, only its answers' prices. It opens at the criterion's marks and its bullets are its answers.
+      else if (lead && bullets.length && PROMPT.test(lead) && /\(Alt \d+\)$/.test(lead) && marks !== undefined) { open(lead, source.totalMarks); items.shift(); }
+      // "(b) Luaigh rud amháin a rinne sé mar Uachtarán agus rud amháin nár éirigh leis a dhéanamh. (Alt 4) Rud amháin a rinne sé mar
+      // Uachtarán • … = 3 mharc … Rud amháin nár éirigh leis a dhéanamh = 2 mharc • … = 2 mharc" (2013 Ordinary A 4(b)): one thing of
+      // each of two kinds, the key a headed list for each. The first heading opens a part at the price its answers print; the second
+      // heading prints its own price and opens the second part.
+      else {
+        const headed = /^(.*\(Alt \d+\))\s+(Rud amháin\s[^•=?]+)$/.exec(lead);
+        if (headed && PROMPT.test(headed[1]) && bullets.length && marks !== undefined && marks < source.totalMarks) {
+          open(tidy(headed[2]), marks);
+          headedList = true;
+          items.shift();
+        }
+      }
     }
     if (!current && marks !== undefined && marks <= source.totalMarks && /Cluastuiscint/.test(source.questionRef)) {
       // "1. Cad a seoladh aréir? Bliainiris = 2 mharc …" (2013 Higher Cluastuiscint, scheme PDF 8–11): the scheme prints no tariff
@@ -393,6 +411,8 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
         if (!current.ladder && terms.reduce((a, b) => a + b, 0) === current.tariff) current.ladder = cumulative(terms);
         continue;
       }
+      // The second heading of a headed pair, printed with its price ("Rud amháin nár éirigh leis a dhéanamh = 2 mharc"): its part.
+      if (headedList && current && /^Rud amháin\s[^•=?]+$/.test(tidy(segment))) { open(tidy(segment), marks); continue; }
       // The bullets before the priced one are its alternatives at the same price.
       // "= 1 mharc + 1 mharc": a price in two equal halves, which a question with no printed tariff takes as two points.
       const halves = [Number(answer), ...[...(plus ?? '').matchAll(/\d+/g)].map(m => Number(m[0]))];
@@ -465,6 +485,16 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
         directions.push(lead);
         continue;
       }
+      // "Breac síos dhá rannóg a bheidh sa chomórtas. (i) Ceol / Amhránaíocht / Scéalaíocht (ii) Rince / Drámaíocht / Mím 2 mharc +
+      // 1 mharc" and "2. Cén dá rud a deir Síle …? (i) fón (póca) (ii) raidió nó i-pod 2 mharc+1 mharc=3 mharc" (2013 Ordinary
+      // Fógra a hAon, Comhrá a Dó): a listening question, its two printed answer lines, then how its tariff divides: the ladder,
+      // the lines claimed in order (first correct 2, second 1).
+      const twoLines = /^(.*?[?.])\s+\(i\)\s+(.+?)\s+\(ii\)\s+(.+)$/.exec(lead);
+      if (!current && twoLines && LISTENING.test(source.questionRef) && terms[0] !== terms[1] && terms[0] + terms[1] === source.totalMarks) {
+        open(tidy(twoLines[1]), terms[0] + terms[1], cumulative(terms));
+        current!.rows.push({ text: `(i) ${tidy(twoLines[2])}` }, { text: `(ii) ${tidy(twoLines[3])}` });
+        continue;
+      }
       open(lead, terms[0] + terms[1], terms[0] === terms[1] ? undefined : cumulative(terms));
       continue;
     }
@@ -477,8 +507,13 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     if (bullets.length && current) bullets.forEach(bullet => { if (RULE.test(bullet)) directions.push(bullet); else current!.rows.push({ text: bullet }); });
     const question = head.lastIndexOf('?');
     // "1. (a) Cén t-ainm atá ar an stáisiún raidió atá luaite san fhógra? Raidió Fáilte 2 mharc" (2015 Higher Fógra a hAon): a
-    // numbered question and its one answer before the tariff, as the Ordinary grid prints them.
-    if (PROMPT.test(head) && question > 0 && /^[A-ZÁÉÍÓÚ]/.test(tidy(head.slice(question + 1))) && !/[.?]$/.test(head)) {
+    // numbered question and its one answer before the tariff, as the Ordinary grid prints them. A listening key's answer can open
+    // with a bracketed word, a figure or a small letter ("2. Cad a dhéanfaidh Seán anocht? (cúpla uair a chloig) staidéir 3 mharc",
+    // "1. Cé mhéad leathanach atá sa bhliainiris? 160 nó céad seasca 3 mharc", "2. Cá bhfuil an bhliainiris ar díol? siopaí leabhar
+    // ar fud an chontae 3 mharc", 2013 Ordinary).
+    const answered = tidy(head.slice(question + 1));
+    if (PROMPT.test(head) && question > 0 && !/[.?]$/.test(head)
+      && (/^[A-ZÁÉÍÓÚ]/.test(answered) || (LISTENING.test(source.questionRef) && /^[(\da-záéíóú€]/.test(answered) && !/^\(Alt\b/.test(answered)))) {
       open(tidy(head.slice(0, question + 1)), tariff);
       current!.rows.push({ text: tidy(head.slice(question + 1)), marks: tariff });
       continue;
@@ -531,7 +566,10 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
         pieces.forEach(piece => current!.rows.push({ text: tidy(piece) }));
         continue;
       }
-      if (!listed && /^[A-ZÁÉÍÓÚ]/.test(item) && !/[=]/.test(item) && !current.ladder && current.rows.length > 0 && item.length > 60) directions.push(item);
+      // "• “Bhuail sé lena ghaolta go léir i gContae Loch Garman.”" (2013 Ordinary A 2(a)): a quotation from the passage printed after
+      // the priced answers with no price of its own. The scheme prices no answer there: a note, never a claimable row.
+      if (!current.ladder && current.rows.length > 0 && current.rows.every(row => row.marks !== undefined) && /^“[^“”]+”\.?$/.test(item)) directions.push(item);
+      else if (!listed && /^[A-ZÁÉÍÓÚ]/.test(item) && !/[=]/.test(item) && !current.ladder && current.rows.length > 0 && item.length > 60) directions.push(item);
       else current.rows.push({ text: item });
     }
   }
