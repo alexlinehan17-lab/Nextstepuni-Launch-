@@ -159,6 +159,8 @@ DASH = '‐‑‒–—−●•-'
 # What opens a separate answer: one of the four dashes, or the scheme's own
 # "(1)" numbering, which 2021 Ordinary uses where the other years use dashes.
 ANSWER_START = re.compile(rf'^(?:[{DASH}]\s*|\(\s*\d{{1,2}}\s*\)\s+)')
+# A roman opening a line INSIDE a lettered part's body: one of its answers.
+ROMAN_ANSWER = re.compile(r'^\(\s*(?:i{1,3}|iv|v)\s*\)\s+')
 
 # An examiner instruction or a part-credit line, which the scheme prints in
 # square brackets: "[First correct answer=4m]", "[No marks awarded if extra
@@ -578,6 +580,18 @@ class EsScheme:
         # Read per token, that part became ('Q1', None, 'i') while the paper
         # printed it under (1, 'i'), and the ask went unbound.
         as_roman = heads[0][1] in ROMANS
+        if not as_roman and letter0 is None:
+            # Romans INSIDE a lettered part are its answers, not more parts:
+            # 2020 Ordinary prints "(b) (i) cheese" then "(ii) honey (3+2m)",
+            # two answers to one printed ask. A roman is a part of its own only
+            # as the ninth letter, straight after (h).
+            kept_heads = []
+            for i, tok, rest in heads:
+                if tok in ROMANS and kept_heads and not (
+                        tok == 'i' and kept_heads[-1][1] == 'h'):
+                    continue
+                kept_heads.append((i, tok, rest))
+            heads = kept_heads
 
         # The head's own decomposition prices the parts only when it has one
         # group per part. Anything else and each part is priced from the tariff
@@ -619,6 +633,9 @@ class EsScheme:
         kept, notes = _split_notes(body)
         if not kept and total is None:
             return None
+        # The romans a lettered part prints for its answers ("(i) cheese",
+        # "(ii) honey") open separate answers, exactly as a dash does.
+        kept = [ROMAN_ANSWER.sub('- ', k) for k in kept]
 
         # The part's own printed tariff. Read from every line, because the SEC
         # prices a part in two different places: once at the END of the whole

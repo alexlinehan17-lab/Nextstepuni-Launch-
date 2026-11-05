@@ -33,6 +33,644 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-1-a", topicId: "spanish-5-2", conceptId: "van-cientos-personas-himalaya-cada-ano",
+    section: "A", questionRef: "2020 OL Section A Q1(a)",
+    stem: "Lee este artículo sobre el alpinismo y contesta las preguntas en ESPAÑOL.",
+    questionText: "¿Por qué van cientos de personas al Himalaya cada año? (1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Para llegar a la cumbre del Everest", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Tocando el cielo con las manos — answer in Spanish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-1-b", topicId: "spanish-5-2", conceptId: "alberto-gano-record",
+    section: "A", questionRef: "2020 OL Section A Q1(b)",
+    stem: "Lee este artículo sobre el alpinismo y contesta las preguntas en ESPAÑOL.",
+    questionText: "Alberto ganó un récord. ¿De qué? (1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(de ser el) alpinista más joven en la cima del Everest, sin oxígeno artificial", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Tocando el cielo con las manos — answer in Spanish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-1-c", topicId: "spanish-5-2", conceptId: "cuantas-mujeres-espanolas-han-escalado-monte",
+    section: "A", questionRef: "2020 OL Section A Q1(c)",
+    stem: "Lee este artículo sobre el alpinismo y contesta las preguntas en ESPAÑOL.",
+    questionText: "¿Cuántas mujeres españolas han escalado el monte Everest? (2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tres", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Tocando el cielo con las manos — answer in Spanish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-1-d", topicId: "spanish-5-2", conceptId: "mas-seguro-subir-montana-mayo",
+    section: "A", questionRef: "2020 OL Section A Q1(d)",
+    stem: "Lee este artículo sobre el alpinismo y contesta las preguntas en ESPAÑOL.",
+    questionText: "¿Por qué es más seguro subir la montaña en mayo? (2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(porque normalmente) las temperaturas son más cálidas", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-2", kind: "point", verbatim: "los vientos más ligeros", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Tocando el cielo con las manos — answer in Spanish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-1-e", topicId: "spanish-5-2", conceptId: "son-ochomiles",
+    section: "A", questionRef: "2020 OL Section A Q1(e)",
+    stem: "Lee este artículo sobre el alpinismo y contesta las preguntas en ESPAÑOL.",
+    questionText: "¿Qué son los ‘ochomiles’? (3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(son) las catorce montañas más altas del mundo", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Tocando el cielo con las manos — answer in Spanish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-1-f", topicId: "spanish-5-2", conceptId: "grupos-charlas-edurne-pasaban",
+    section: "A", questionRef: "2020 OL Section A Q1(f)",
+    stem: "Lee este artículo sobre el alpinismo y contesta las preguntas en ESPAÑOL.",
+    questionText: "¿A qué grupos da charlas Edurne Pasabán? (3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "(Organizaciones) deportivas, culturales y educativas", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.” The scheme adds: “First correct answer = 2m”.", permittedMarks: [0,2,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Tocando el cielo con las manos — answer in Spanish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-1-g", topicId: "spanish-5-2", conceptId: "hacen-unos-ochocientos-alpinistas-cada-ano",
+    section: "A", questionRef: "2020 OL Section A Q1(g)",
+    stem: "Lee este artículo sobre el alpinismo y contesta las preguntas en ESPAÑOL.",
+    questionText: "¿Qué hacen unos ochocientos alpinistas cada año? (4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Intentan escalar la montaña de Everest", marks: 5, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Tocando el cielo con las manos — answer in Spanish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-1-h", topicId: "spanish-5-2", conceptId: "hay-problemas-existen-alpinistas-menciona-dos",
+    section: "A", questionRef: "2020 OL Section A Q1(h)",
+    stem: "Lee este artículo sobre el alpinismo y contesta las preguntas en ESPAÑOL.",
+    questionText: "Hay problemas que existen para los alpinistas. Menciona dos. (4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":5,"options":["la cantidad de personas (esperando subir la montaña)","(unas) colas muy largas","la falta de experiencia (de muchas personas)","(las toneladas de) basura"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Tocando el cielo con las manos — answer in Spanish",
+          "pages": [
+                2,
+                3
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-2-a", topicId: "spanish-5-2", conceptId: "qualities-good-chorizo",
+    section: "A", questionRef: "2020 OL Section A Q2(a)",
+    stem: "Read the following item and answer in ENGLISH the accompanying questions.",
+    questionText: "Name two qualities of a good chorizo.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["(quality of the) meat","colour","fat (content)","aroma/smell","texture","flavour"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "El mejor chorizo del mundo — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-2-b", topicId: "spanish-5-2", conceptId: "local-food-products-were-sale-during",
+    section: "A", questionRef: "2020 OL Section A Q2(b)",
+    stem: "Read the following item and answer in ENGLISH the accompanying questions.",
+    questionText: "What two local food products were on sale during the event?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "cheese", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-2", kind: "point", verbatim: "honey", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "El mejor chorizo del mundo — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-2-c", topicId: "spanish-5-2", conceptId: "took-place-saturday",
+    section: "A", questionRef: "2020 OL Section A Q2(c)",
+    stem: "Read the following item and answer in ENGLISH the accompanying questions.",
+    questionText: "What took place on Saturday? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "There were music groups", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-2", kind: "point", verbatim: "(a group of) women performing a traditional dance/jota", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "El mejor chorizo del mundo — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-2-d", topicId: "spanish-5-2", conceptId: "recommended-limit-amount-red-meat-spanish",
+    section: "A", questionRef: "2020 OL Section A Q2(d)",
+    stem: "Read the following item and answer in ENGLISH the accompanying questions.",
+    questionText: "Why is it recommended to limit the amount of red meat in the Spanish diet?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To lead a healthy life", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "El mejor chorizo del mundo — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-3-a", topicId: "spanish-5-2", conceptId: "when-exactly-did-earthquake-occur",
+    section: "A", questionRef: "2020 OL Section A Q3(a)",
+    stem: "Read the following item about an earthquake and answer in ENGLISH the accompanying questions.",
+    questionText: "When exactly did the earthquake occur?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Early Sunday morning", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un fuerte seísmo — answer in English",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-3-b", topicId: "spanish-5-2", conceptId: "impact-caused-earthquake",
+    section: "A", questionRef: "2020 OL Section A Q3(b)",
+    stem: "Read the following item about an earthquake and answer in ENGLISH the accompanying questions.",
+    questionText: "Give two details of the impact caused by the earthquake.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":5,"options":["one man was killed","dozens of people were injured","electricity cuts in different provinces","the destruction of (numerous) homes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un fuerte seísmo — answer in English",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-3-c", topicId: "spanish-5-2", conceptId: "did-president-visit-scene",
+    section: "A", questionRef: "2020 OL Section A Q3(c)",
+    stem: "Read the following item about an earthquake and answer in ENGLISH the accompanying questions.",
+    questionText: "Why did the President visit the scene? Give one detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":1,"perOption":5,"options":["to evaluate the condition of the road","to evaluate the collapsed bridge","to re-establish communication"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un fuerte seísmo — answer in English",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-4-a", topicId: "spanish-5-2", conceptId: "where-were-princesses-leonor-sofia-when",
+    section: "A", questionRef: "2020 OL Section A Q4(a)",
+    stem: "Read the following article about the ball game ‘Ga-Ga’ and answer in ENGLISH the accompanying questions.",
+    questionText: "Where were the princesses Leonor and Sofía when they spoke to the press?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In their summer home in Mallorca", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un juego para todas las edades — answer in English",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-4-b", topicId: "spanish-5-2", conceptId: "apart-from-sport-else-did-girls",
+    section: "A", questionRef: "2020 OL Section A Q4(b)",
+    stem: "Read the following article about the ball game ‘Ga-Ga’ and answer in ENGLISH the accompanying questions.",
+    questionText: "Apart from sport, what else did the girls do in the summer camp? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "they practised their English", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-2", kind: "point", verbatim: "they met children of other nationalities/of similar ages", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un juego para todas las edades — answer in English",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-4-c", topicId: "spanish-5-2", conceptId: "sports-did-leonor-particularly-like",
+    section: "A", questionRef: "2020 OL Section A Q4(c)",
+    stem: "Read the following article about the ball game ‘Ga-Ga’ and answer in ENGLISH the accompanying questions.",
+    questionText: "What two sports did Leonor particularly like?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "water-skiing", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-2", kind: "point", verbatim: "sailing", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un juego para todas las edades — answer in English",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-4-d", topicId: "spanish-5-2", conceptId: "need-play-game",
+    section: "A", questionRef: "2020 OL Section A Q4(d)",
+    stem: "Read the following article about the ball game ‘Ga-Ga’ and answer in ENGLISH the accompanying questions.",
+    questionText: "What do you need to play the game ‘Ga-Ga’?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a ball", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    { id: "r-2", kind: "point", verbatim: "a minimum of 5 people", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un juego para todas las edades — answer in English",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-4-e", topicId: "spanish-5-2", conceptId: "where-princesses-spending-rest-summer-holidays",
+    section: "A", questionRef: "2020 OL Section A Q4(e)",
+    stem: "Read the following article about the ball game ‘Ga-Ga’ and answer in ENGLISH the accompanying questions.",
+    questionText: "Where are the princesses spending the rest of the summer holidays? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":3,"options":["In Marivent Palace","outskirts of Palma, Mallorca","with their grandmother"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Un juego para todas las edades — answer in English",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-5-a", topicId: "spanish-5-2", conceptId: "organisation-named-21st-june-international-yoga",
+    section: "A", questionRef: "2020 OL Section A Q5(a)",
+    stem: "Read the following article about Yoga and answer in ENGLISH the accompanying questions.",
+    questionText: "What organisation named the 21st of June International Yoga Day?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The United Nations", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Una actividad sana — answer in English",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-5-b", topicId: "spanish-5-2", conceptId: "percentage-people-spain-say-practise-yoga",
+    section: "A", questionRef: "2020 OL Section A Q5(b)",
+    stem: "Read the following article about Yoga and answer in ENGLISH the accompanying questions.",
+    questionText: "What percentage of people in Spain say they practise yoga?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(more than) twelve (percent)", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Una actividad sana — answer in English",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-5-c", topicId: "spanish-5-2", conceptId: "yoga-good-mental-wellbeing",
+    section: "A", questionRef: "2020 OL Section A Q5(c)",
+    stem: "Read the following article about Yoga and answer in ENGLISH the accompanying questions.",
+    questionText: "Why is yoga said to be good for mental wellbeing? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":4,"options":["reduces stress","improves concentration","helps people who suffer from depression"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Una actividad sana — answer in English",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-5-d", topicId: "spanish-5-2", conceptId: "physical-benefits-yoga",
+    section: "A", questionRef: "2020 OL Section A Q5(d)",
+    stem: "Read the following article about Yoga and answer in ENGLISH the accompanying questions.",
+    questionText: "What are the physical benefits of yoga? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":4,"options":["increases flexibility","(helps with) weight loss","improves posture"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Una actividad sana — answer in English",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-5-e", topicId: "spanish-5-2", conceptId: "where-people-yoga-holidays",
+    section: "A", questionRef: "2020 OL Section A Q5(e)",
+    stem: "Read the following article about Yoga and answer in ENGLISH the accompanying questions.",
+    questionText: "Where do people go on yoga holidays? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":4,"options":["in the middle of nature","near the beach","in the mountains"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Una actividad sana — answer in English",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2020, level: "ordinary",
+    paperFileid: "LC012GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2020 Ordinary Level — © State Examinations Commission.",
+    id: "es-2020-ol-a-5-f", topicId: "spanish-5-2", conceptId: "besides-yoga-other-activities-can-yoga",
+    section: "A", questionRef: "2020 OL Section A Q5(f)",
+    stem: "Read the following article about Yoga and answer in ENGLISH the accompanying questions.",
+    questionText: "Besides yoga, what other activities can you do on yoga holidays? Give two details.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper.”", group: {"claimMax":2,"perOption":4,"options":["cultural visits","vegetarian cooking classes","swimming","hiking"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Una actividad sana — answer in English",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Spanish 2020 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "ordinary",
     paperFileid: "LC012GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2021 Ordinary Level — © State Examinations Commission.",

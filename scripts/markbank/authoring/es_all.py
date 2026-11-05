@@ -61,12 +61,12 @@ from es_topics import (topic_for, concept_for, answer_language,  # noqa: E402
 from paper_census import census_subject                        # noqa: E402
 
 SUBJECT = 'spanish'
-YEARS = (2021, 2022, 2023, 2024, 2025, 2026)
+YEARS = tuple(range(2010, 2027))
 LEVELS = ('hl', 'ol')
 # The sittings carded so far, one commit each. A sitting is added here only
 # once its cards have been read against the paper and the scheme.
 CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
-    (2026, 'hl'), (2026, 'ol'),
+    (2026, 'hl'), (2026, 'ol'), (2020, 'ol'),
 }
 # The 2021-2025 sittings shipped before this lane. Their cards keep the shapes
 # they shipped with until a reviewed change re-cuts them; every later sitting
@@ -164,6 +164,49 @@ def _task_line(region):
         if SAYS_SPANISH.search(s) or SAYS_ENGLISH.search(s):
             break
     return ' '.join(' '.join(out).split())
+
+
+def _old_instruction(region):
+    """A 2010-2020 question's own printed instruction, without its number.
+
+    The old papers head a comprehension "1. Lee este artículo sobre el
+    alpinismo y contesta las preguntas en ESPAÑOL. (50 marks)", where the 2021
+    layout prints "Question 1" on a line of its own; _task_line stops at the
+    numbered line and finds nothing. The head is read up to its marks.
+    """
+    out = []
+    for n, raw in enumerate(region.lead_lines[:3]):
+        line = re.sub(r'^\d\s*\.\s*', '', raw) if n == 0 else raw
+        cut = re.search(r'\(\s*\d{1,3}\s*marks?\s*\)', line, re.I)
+        if cut:
+            out.append(line[:cut.start()].strip())
+            break
+        out.append(line)
+    else:
+        return ''
+    return ' '.join(' '.join(out).split())
+
+
+def _old_region_lead(region, S, section, q):
+    """Name a 2010-2020 text by the title the PAPER prints above it.
+
+    The old papers set titles in mixed case ("Tocando el cielo con las
+    manos"), which the reader's capitals test does not take for a title. The
+    scheme prints the same title on its question head — "Question 1. Tocando el
+    cielo con las manos (50 marks)" — so the paper's line that equals it is the
+    title: the join is on what both documents print, and the words are the
+    paper's.
+    """
+    if region.title:
+        return
+    want = S.titles.get((section if section != 'A1a' else section, q))
+    if not want:
+        return
+    fold = lambda t: ' '.join(re.sub(r'[^\w ]', ' ', t.casefold()).split())
+    for line in region.lead_lines:
+        if fold(line) == fold(want):
+            region.title = line
+            return
 
 
 def _stem_text(block):
@@ -292,6 +335,9 @@ def _sitting(year, level, cards, refuse):
         stem_block = region.stems().get(q if section != 'A2' else letter)
         stem = _stem_text(stem_block) if stem_block else ''
         instruction = _task_line(region)
+        if P.old:
+            _old_region_lead(region, S, section, q)
+            instruction = instruction or _old_instruction(region)
         if not stem and level == 'ol':
             stem = instruction
         question = block.printed if block else text
