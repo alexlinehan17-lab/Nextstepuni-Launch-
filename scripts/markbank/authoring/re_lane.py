@@ -16,16 +16,23 @@ what an answer in the top band might say. So a card here is a
   the points     the scheme's points of reference, without its closing "Etc.";
   the grid       the scheme's band table, read cell by cell from the PDF with
                  find_tables(): each band's label, printed range and the grid's
-                 cells for that band, verbatim;
+                 cells for that band, verbatim. Where 2021 prints no grid under
+                 its questions, the one MC marking grid it prints sideways is
+                 read instead, and each question takes the column whose top
+                 range is its per-answer tariff (read_shared_grid);
   the Notes      a "... mark on its merits - Max 10 marks" clause is a ceiling
                  the student ticks; every other Note is a direction.
 
 Nothing is typed. The one string a card carries that the SEC did not print is
-`markingGuideNote`, which says how the grid is used.
+`markingGuideNote`, which says how the grid is used (and, where it applies,
+which of two printed marks rows the card follows, or which shared grid page
+its bands come from).
 
 The tariff is the scheme's grid head ("20 Marks x2"), checked against the
 ask's own head tariff and the paper's printed marks; any disagreement stops
 the build unless the sitting module records it (DISAGREE) with the evidence.
+A grid printing two marks rows ("40 Marks" and "20 Marks x2", 2022) is read
+on the row the ask's head names first.
 
 Cards land in components/MarkBank/cards/religious-education/rubric-authored.json
 (build-deck folds them into the deck), and a sitting built here leaves the
@@ -80,6 +87,32 @@ class LaneError(Exception):
 
 
 HEAD_TIMES = []        # asks whose "x 2" is read off the ask's head, not the grid
+
+HEAD_TARIFF = re.compile(r'(\d{1,3})\s*M\s*(?:[x×]\s*(\d))?', re.I)
+
+
+def head_tariffs(notation):
+    """(per answer, answers) for each tariff a scheme head prints, in printed
+    order: "40M/20Mx2" is [(40, 1), (20, 2)]."""
+    return [(int(m.group(1)), int(m.group(2) or 1)) for m in HEAD_TARIFF.finditer(notation or '')]
+
+
+def two_rows_note(grid, chosen, notation):
+    """Our note for a grid printing two marks rows: which row the card uses,
+    and the one it does not, both quoted from the grid."""
+    other = next(r for k, r in enumerate(grid.rows) if k != chosen)
+    both = len(head_tariffs(notation)) > 1
+    said = 'the tariff the scheme prints first for this question' if both \
+        else 'the tariff the scheme prints for this question'
+    printed = notation.strip().strip('()')
+    word = {2: 'two', 3: 'three'}
+    if grid.times == 1:
+        return (f'The marking scheme\'s grid also prints a "{other[0]}" row, for marking this answer as '
+                f'{word[other[2]]} parts at {other[1]} marks each. This card follows {said} ({printed}) and marks '
+                f'the answer whole, out of {grid.per}.')
+    return (f'The marking scheme\'s grid also prints a "{other[0]}" row, for marking this answer whole, '
+            f'out of {other[1]}. This card follows {said} ({printed}) and marks it as {word[grid.times]} answers '
+            f'at {grid.per} marks each.')
 
 
 # The subset fonts' broken text layer, repaired as build-deck repairs a point
@@ -166,8 +199,17 @@ class Band:
 
 
 class Grid:
-    def __init__(self, page, top, head, per, times, bands):
+    def __init__(self, page, top, head, per, times, bands, last=None, rows=None):
         self.page, self.top, self.head, self.per, self.times, self.bands = page, top, head, per, times, bands
+        self.last = last or page        # the page its last row is on (a grid the page break cuts)
+        # every marks row the grid prints, (head, per, times, printed ranges):
+        # 2022 prints a "40 Marks" row AND a "20 Marks x2" row under one grid
+        self.rows = rows or [(head, per, times, [b.printed for b in bands])]
+
+    def use(self, k):
+        self.head, self.per, self.times, printed = self.rows[k]
+        for b, p in zip(self.bands, printed):
+            b.printed, b.marks = p, _marks_of(p)
 
     def __repr__(self):
         return f'<Grid p{self.page} {self.head!r} {self.per}x{self.times} {len(self.bands)} bands>'
@@ -191,6 +233,11 @@ def _cell(text):
     lines = [l.strip() for l in str(text or '').split('\n') if l.strip()]
     out = ''
     for line in lines:
+        # a compound word the cell wraps AT its hyphen ("non-" / "violence",
+        # "decision-" / "making") is one printed word: rejoined, hyphen kept
+        if re.search(r'[A-Za-z][-\u2010]$', out) and line[:1].isalpha():
+            out += line
+            continue
         if out and VOCAB:
             left = re.search(r'([a-z]+)$', out)
             right = re.match(r'([a-z]+)', line)
@@ -210,8 +257,18 @@ def _rows(table):
     return [r for r in rows if any(r)]
 
 
+BAND_LABEL = re.compile(r'^[-/–\s]*(?:(?:EXCELLENT|VERY|GOOD|FAIR|WEAK|POOR|NO|GRADE)\s*[-/–]?\s*)+$', re.I)
+
+
 def _is_band_header(row):
-    return bool(row) and bool(BAND_WORD.search(' '.join(row[1:])))
+    """A grid's header row: every cell after the first is made of band label
+    words only (or blank under a label set over two columns). A descriptor
+    row can open with band WORDS too -- "Use of skill(s)": "Excellent",
+    "very good", "good", "some" -- and reading it as a header kept 2022
+    Ordinary C(b)'s continuation from joining its grid. A label the cell
+    wraps ("VERY" over "GOOD") is still band words."""
+    cells = [c for c in row[1:] if c]
+    return len(cells) >= 4 and all(BAND_LABEL.match(c) for c in cells)
 
 
 def _has_marks_row(rows):
@@ -219,16 +276,39 @@ def _has_marks_row(rows):
                sum(1 for c in r[1:] if c) >= 3 for r in rows[1:])
 
 
+def _is_marks(row):
+    cells = [c for c in row[1:] if c]
+    return len(cells) >= 3 and all(_marks_of(c) for c in cells)
+
+
 def _merge_fragments(rows):
-    """A cell whose text the table reader cut across two rows -- 2024
-    Ordinary's "Completely" over "& clearly relevant", one printed cell -- is
-    put back together: a row with no criterion of its own (first cell empty)
-    below the header joins the row under it when that row names a criterion,
-    and otherwise the row above."""
+    """A cell whose text the table reader cut across two rows is put back
+    together, one printed cell again:
+      - under the header, a row of band words only is the rest of a wrapped
+        label ("VERY" over "GOOD", 2022 Higher B(c)(ii)) and joins the header;
+      - a row with only its first cell is the rest of the criterion above it
+        ("Evidence of MC one ..." over "Saint Patrick during ...");
+      - a row with no criterion of its own joins the row below when that row
+        names a criterion ("Completely" over "& clearly relevant", 2024
+        Ordinary) -- unless the row below is the marks row, when it is the
+        rest of the row above ("some major" over "errors(s)", 2022 Ordinary)."""
     out = [rows[0]]
+    i = 1
+    while i < len(rows) and not rows[i][0] and _is_band_header(['x'] + rows[i][1:]) is False \
+            and all(not c or BAND_LABEL.match(c) for c in rows[i][1:]) and any(rows[i][1:]):
+        out[0] = [ws(f'{a} {b}') for a, b in zip(out[0], rows[i])]
+        i += 1
     pending = None
-    for row in rows[1:]:
-        if not row[0] and not all(_marks_of(c) for c in row[1:] if c):
+    for n in range(i, len(rows)):
+        row = rows[n]
+        if row[0] and not any(row[1:]) and len(out) > 1:
+            out[-1] = [ws(f'{out[-1][0]} {row[0]}')] + out[-1][1:]
+            continue
+        if not row[0] and not _is_marks(row):
+            nxt = rows[n + 1] if n + 1 < len(rows) else None
+            if (nxt is None or _is_marks(nxt)) and len(out) > 1 and pending is None:
+                out[-1] = [ws(f'{a} {b}') for a, b in zip(out[-1], row)]
+                continue
             pending = row if pending is None else [ws(f'{a} {b}') for a, b in zip(pending, row)]
             continue
         if pending is not None:
@@ -240,6 +320,12 @@ def _merge_fragments(rows):
     return out
 
 
+# Cells are the RULED cells: 'lines_strict' builds rows from the drawn rules
+# alone, so a cell whose text runs to two lines stays one cell. The default
+# also cuts rows at text lines ("Completely" over "& clearly relevant").
+STRATEGY = 'lines_strict'
+
+
 class _Table:
     """A table's box and rows, read once: a later find_tables() call on the
     same page invalidates the earlier result's cells (2026 Higher p20's grid
@@ -249,7 +335,8 @@ class _Table:
 
 
 def _read(page, clip=None):
-    found = page.find_tables(clip=clip).tables if clip is not None else page.find_tables().tables
+    found = page.find_tables(clip=clip, strategy=STRATEGY).tables if clip is not None \
+        else page.find_tables(strategy=STRATEGY).tables
     return [_Table(t.bbox, _rows(t)) for t in found]
 
 
@@ -283,11 +370,14 @@ def read_grids(year, level):
         for table in _page_tables(page):
             if (pno, round(table.bbox[1])) in taken:
                 continue
+            if _rotated(page, table.bbox):
+                continue                 # the shared grid printed sideways: read_shared_grid
             rows = table.rows
             start = next((i for i, r in enumerate(rows) if _is_band_header(r)), None)
             if start is None:
                 continue
             rows = rows[start:]          # prose the table reader swept in above the grid
+            last = pno + 1
             if re.search(r'Set\s+(?:Points|Ques)', ' '.join(rows[0])):
                 continue
             if not _has_marks_row(rows) and pno + 1 < doc.page_count:
@@ -299,7 +389,20 @@ def read_grids(year, level):
                 if cont and not _is_band_header(cont[0].rows[0]):
                     more = cont[0].rows
                     width = max(len(r) for r in rows + more)
-                    rows = [r + [''] * (width - len(r)) for r in rows] + [r + [''] * (width - len(r)) for r in more]
+                    rows = [r + [''] * (width - len(r)) for r in rows]
+                    more = [r + [''] * (width - len(r)) for r in more]
+                    # The break can cut a ROW, leaving its rest at the head of
+                    # the next page: with no criterion of its own (2022 Higher
+                    # C(a): "looking closely" under "very good"), or with the
+                    # rest of the criterion, which then opens in lower case
+                    # (2022 Ordinary G(b)(ii): "drawing accurate conclusions"
+                    # under "Use of skill(s) examining and"). Every criterion
+                    # the grids print opens with a capital.
+                    if more and (not more[0][0] or more[0][0][:1].islower()):
+                        rows[-1] = [ws(f'{a} {b}') for a, b in zip(rows[-1], more[0])]
+                        more = more[1:]
+                    rows = rows + more
+                    last = pno + 2
                     for t in _page_tables(nxt):
                         if t.bbox[1] <= cont[0].bbox[3] and t.bbox[3] >= cont[0].bbox[1]:
                             taken.add((pno + 1, round(t.bbox[1])))
@@ -314,30 +417,36 @@ def read_grids(year, level):
             labels = []
             for label in rows[0][1:]:
                 labels.append(label or (labels[-1] if labels else ''))
-            at = None
-            for i in range(len(rows) - 1, 0, -1):
-                cells = rows[i][1:]
-                if cells and all(_marks_of(c) for c in cells):
-                    at = i
-                    break
-            if at is None:
+            # The marks rows close the grid: every row whose cells all read as
+            # ranges. A grid can print two (2022: "40 Marks" for the answer
+            # whole, "20 Marks x2" for it in two), and a marks row is never a
+            # descriptor: the card takes the one its ask's head names.
+            marks_at = [i for i in range(1, len(rows))
+                        if rows[i][1:] and all(_marks_of(c) for c in rows[i][1:])]
+            if not marks_at:
                 raise LaneError(f'{year} {level} p{pno + 1}: a band grid with no marks row: {rows[-1]}')
-            head = rows[at][0]
-            nums = [int(n) for n in re.findall(r'\d+', head)]
-            times = 2 if re.search(r'x\s*2|×\s*2', head, re.I) else 1
-            per = nums[0] if nums else None
+            if marks_at != list(range(marks_at[0], len(rows))):
+                raise LaneError(f'{year} {level} p{pno + 1}: a descriptor row after a marks row: {rows}')
+            at = marks_at[0]
+            alts = []
+            for i in marks_at:
+                head = rows[i][0]
+                nums = [int(n) for n in re.findall(r'\d+', head)]
+                times = 2 if re.search(r'x\s*2|×\s*2', head, re.I) else 1
+                printed = rows[i][1:]
+                per = nums[0] if nums else max(m for p in printed for m in _marks_of(p))
+                alts.append((head, per, times, printed))
             bands = []
             for k, label in enumerate(labels):
-                printed = rows[at][k + 1]
                 descriptor = []
                 for r in rows[1:at]:
                     crit, cell = r[0], r[k + 1]
                     if cell:
                         descriptor.append(f'{crit}: {cell}' if crit else cell)
-                bands.append(Band(label, printed, _marks_of(printed), descriptor))
-            if per is None:
-                per = max(m for b in bands for m in b.marks)
-            out.append(Grid(pno + 1, table.bbox[1], head, per, times, bands))
+                bands.append(Band(label, '', None, descriptor))
+            grid = Grid(pno + 1, table.bbox[1], *alts[-1][:3], bands, last=last, rows=alts)
+            grid.use(len(alts) - 1)
+            out.append(grid)
     return out
 
 
@@ -346,6 +455,125 @@ def grid_problem(grid):
     if marks != list(range(grid.per + 1)):
         return f'bands cover {marks} not 0..{grid.per}'
     return None
+
+
+# ── the shared grid (2021) ──────────────────────────────────────────────────
+# 2021 prints no grid under its questions. Each question prints "Code MC" (or
+# "Code MCx2"), and ONE table, printed sideways on its own page, is the MC
+# marking grid: a row per band, the band's descriptors in two bulleted cells,
+# then one range column per tariff, with no heading over the columns. The
+# coordinator's ruling (5 Nov): each question takes the column whose top
+# range is its per-answer tariff; no match, or two, and the question stops.
+
+def _rotated(page, bbox):
+    """True when the text inside bbox runs down the page, not across it."""
+    across = down = 0
+    for b in page.get_text('dict', clip=pymupdf.Rect(bbox))['blocks']:
+        for line in b.get('lines', []):
+            if not line['spans'] or not ''.join(s['text'] for s in line['spans']).strip():
+                continue
+            if abs(line['dir'][0]) > 0.9:
+                across += 1
+            else:
+                down += 1
+    return down > across
+
+
+class SharedGrid:
+    def __init__(self, page, folio, labels, descriptors, columns):
+        self.page, self.folio = page, folio
+        self.labels, self.descriptors, self.columns = labels, descriptors, columns
+
+    def column(self, per):
+        """The printed ranges of the column whose top is `per`, or None."""
+        hits = [c for c in self.columns if c[0] == per]
+        if len(hits) != 1:
+            return None
+        return hits[0][1]
+
+
+BULLET = '\uf06c'      # the Wingdings bullet each descriptor opens with
+
+
+def read_shared_grid(year, level):
+    """The one sideways band grid of a scheme that prints none under its
+    questions, read cell by cell: the drawn rules give the cells (their rows
+    on the page are the grid's columns), and each cell's text is its lines in
+    reading order (text running down the page reads right to left)."""
+    doc = pymupdf.open(os.path.join(schemes_dir(), f'{year}-{level}.pdf'))
+    found = []
+    for pno, page in enumerate(doc):
+        for t in page.find_tables(strategy=STRATEGY).tables:
+            if not _rotated(page, t.bbox):
+                continue
+            lines = []
+            for b in page.get_text('dict', clip=pymupdf.Rect(t.bbox))['blocks']:
+                for line in b.get('lines', []):
+                    text = ''.join(s['text'] for s in line['spans'])
+                    if text.strip() and tuple(round(x, 2) for x in line['dir']) == (0.0, 1.0):
+                        lines.append((pymupdf.Rect(line['bbox']), text))
+            grid = []                       # the grid's columns, each a cell per band
+            merged = False
+            for row in t.rows:
+                cells = []
+                for c in row.cells:
+                    if c is None:
+                        merged = True
+                        cells.append([])
+                        continue
+                    rect = pymupdf.Rect(c)
+                    inside = [(r, x) for r, x in lines
+                              if rect.contains(pymupdf.Point((r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2))]
+                    inside.sort(key=lambda z: (-z[0].x1, z[0].y0))
+                    cells.append([x for _, x in inside])
+                grid.append(cells[::-1])        # the band read first is the rightmost
+            labels = [ws(' '.join(c)) for c in grid[0]]
+            if not all(BAND_LABEL.match(x) for x in labels) or len(labels) < 4:
+                continue                    # the coursework tables, also printed sideways
+            if merged:
+                raise LaneError(f'{year} {level} p{pno + 1}: a merged cell in the sideways grid')
+            descriptors = [[] for _ in labels]
+            columns = []
+            for col in grid[1:]:
+                texts = [ws(' '.join(c)) for c in col]
+                if all(_marks_of(x) for x in texts):
+                    top = max(m for x in texts for m in _marks_of(x))
+                    columns.append((top, texts))
+                    continue
+                if columns:
+                    raise LaneError(f'{year} {level} p{pno + 1}: a descriptor column after a range column')
+                for k, cell in enumerate(col):
+                    text = ws(' '.join(cell))
+                    if not text.startswith(BULLET):
+                        raise LaneError(f'{year} {level} p{pno + 1}: a descriptor cell without bullets: {text!r}')
+                    descriptors[k].extend(ws(x) for x in text.split(BULLET) if ws(x))
+            for top, texts in columns:
+                marks = sorted(m for x in texts for m in _marks_of(x))
+                if marks != list(range(top + 1)):
+                    raise LaneError(f'{year} {level} p{pno + 1}: the {top} column covers {marks}')
+            folio = next((ws(b[4]) for b in page.get_text('blocks')
+                          if re.fullmatch(r'\d{1,2}', ws(b[4])) and b[1] > page.rect.height - 80), None)
+            if folio is None:
+                raise LaneError(f'{year} {level} p{pno + 1}: no printed page number under the sideways grid')
+            found.append(SharedGrid(pno + 1, folio, labels, descriptors, columns))
+    if len(found) > 1:
+        raise LaneError(f'{year} {level}: {len(found)} sideways grids; one is expected')
+    return found[0] if found else None
+
+
+CODE_MC = re.compile(r'^Code\s+MC\s*(?:[x×]\s*(\d))?\s+in\b')
+
+
+def code_mc(scheme, ask, nxt):
+    """(N, line) for the one "Code MC" / "Code MCxN" line the ask's block
+    prints, or None."""
+    end = nxt.line if nxt is not None else len(scheme.lines)
+    hits = [(i, CODE_MC.match(scheme.lines[i].strip())) for i in range(ask.line, end)]
+    hits = [(i, m) for i, m in hits if m]
+    if len(hits) != 1:
+        return None
+    i, m = hits[0]
+    return int(m.group(1) or 1), i
 
 
 # ── Notes: ceilings and directions ──────────────────────────────────────────
@@ -406,18 +634,39 @@ def build_sitting(year, level, shipped=None):
         raise LaneError(f'{year} {level}: scheme asks {sorted(map(str, set(keys) ^ set(P.asks)))} '
                         f'do not pair with the paper')
     grids = read_grids(year, level)
-    if len(grids) != len(asks):
+    shared = read_shared_grid(year, level) if not grids else None
+    if shared is None and len(grids) != len(asks):
         raise LaneError(f'{year} {level}: {len(grids)} band grids for {len(asks)} asks: {grids}')
     pages = md_page_of(S)
     cards = []
-    for n, (ask, grid) in enumerate(zip(asks, grids)):
+    for n, ask in enumerate(asks):
         key = ask.key
         where = f'{year} {level} {question_ref(year, level, key)}'
         head_page = pages[ask.line]
         next_page = pages[asks[n + 1].line] if n + 1 < len(asks) else 10 ** 3
-        if not head_page <= grid.page <= next_page:
-            raise LaneError(f'{where}: its grid is on p{grid.page}, outside its block '
-                            f'(p{head_page}-{next_page})')
+        shared_note = None
+        if shared is not None:
+            grid, shared_note, block_end = shared_grid_for(S, asks, n, shared, where)
+            last_page = pages[block_end]
+        else:
+            grid = grids[n]
+            if not head_page <= grid.page <= next_page:
+                raise LaneError(f'{where}: its grid is on p{grid.page}, outside its block '
+                                f'(p{head_page}-{next_page})')
+            last_page = grid.last
+        alt_note = None
+        if len(grid.rows) > 1:
+            if len(grid.rows) != 2:
+                raise LaneError(f'{where}: {len(grid.rows)} marks rows in one grid: {grid.rows}')
+            named = head_tariffs(ask.notation)
+            if not named:
+                raise LaneError(f'{where}: two marks rows and a head {ask.notation!r} naming neither')
+            pick = [k for k, r in enumerate(grid.rows) if (r[1], r[2]) == named[0]]
+            if len(pick) != 1:
+                raise LaneError(f'{where}: the head\'s {named[0]} matches {len(pick)} of the grid\'s '
+                                f'marks rows {[r[:3] for r in grid.rows]}')
+            grid.use(pick[0])
+            alt_note = two_rows_note(grid, pick[0], ask.notation)
         problem = grid_problem(grid)
         if problem:
             raise LaneError(f'{where}: {grid}: {problem}')
@@ -462,8 +711,9 @@ def build_sitting(year, level, shipped=None):
         if ceilings:
             rubric['ceilings'] = ceilings
         rubric['directions'] = directions
-        rubric['markingGuideNote'] = (note + ' ' if note else '') + (MARKING_GUIDE_X if grid.times > 1 else MARKING_GUIDE)
-        rubric['schemePages'] = sorted({head_page, grid.page} | set(range(head_page, grid.page + 1)))
+        rubric['markingGuideNote'] = ''.join(n + ' ' for n in (note, alt_note, shared_note) if n) + \
+            (MARKING_GUIDE_X if grid.times > 1 else MARKING_GUIDE)
+        rubric['schemePages'] = sorted({head_page, grid.page} | set(range(head_page, last_page + 1)))
         rubric['schemeFileid'] = f'LC223{LEVEL_LETTER[level]}LP000EV.pdf'
         card = {
             'id': cid, 'subjectId': SUBJECT, 'source': 'sec', 'kind': 'rubric',
@@ -497,6 +747,35 @@ def build_sitting(year, level, shipped=None):
             raise LaneError(f'{where}: misread ligature {hit!r} (printed {words[hit]!r})')
         cards.append(card)
     return cards
+
+
+def shared_grid_for(S, asks, n, shared, where):
+    """The ask's bands off the shared grid: the column whose top range is the
+    ask's per-answer tariff, the one "Code MC" line its block prints agreeing
+    with the head on how many answers are marked. Returns the grid, the note
+    naming the source, and the md line the block ends on."""
+    ask = asks[n]
+    named = head_tariffs(ask.notation)
+    if len(named) != 1:
+        raise LaneError(f'{where}: STOP: head {ask.notation!r} names {len(named)} tariffs')
+    per, times = named[0]
+    if per * times != ask.total:
+        raise LaneError(f'{where}: head {ask.notation!r} reads {per}x{times}, total {ask.total}')
+    code = code_mc(S, ask, asks[n + 1] if n + 1 < len(asks) else None)
+    if code is None:
+        raise LaneError(f'{where}: STOP: the block prints no single "Code MC" line')
+    if code[0] != times:
+        raise LaneError(f'{where}: STOP: the block codes MC x{code[0]}, the head {ask.notation!r}')
+    printed = shared.column(per)
+    if printed is None:
+        tops = [c[0] for c in shared.columns]
+        raise LaneError(f'{where}: STOP: per-answer tariff {per} matches {tops.count(per)} of the '
+                        f'shared grid\'s columns (tops {tops})')
+    bands = [Band(label, p, _marks_of(p), list(desc))
+             for label, p, desc in zip(shared.labels, printed, shared.descriptors)]
+    grid = Grid(shared.page, 0, ask.notation, per, times, bands)
+    note = f'Bands from the scheme\'s MC marking grid (page {shared.folio}).'
+    return grid, note, code[1]
 
 
 def sittings_built():

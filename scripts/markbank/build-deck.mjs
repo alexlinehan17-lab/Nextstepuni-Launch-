@@ -848,8 +848,13 @@ const input = JSON.parse(readFileSync(cardsPath, 'utf8'));
 const rawCards = Array.isArray(input) ? input : (input.accepted ?? input.cards ?? []);
 
 /* The subject comes from the cards. Mixed input is a mistake, not a feature:
- * one run writes one subject's modules, so a stray card would vanish silently. */
-const subjectIds = [...new Set(rawCards.map(c => c.subjectId ?? 'biology'))];
+ * one run writes one subject's modules, so a stray card would vanish silently.
+ * Religious Education's point file empties once every shipped sitting is a
+ * band-grid card (rubric-authored.json), and that empty file is still its
+ * deck's input: the subject is then read off the file's own name. */
+const subjectIds = rawCards.length || !/\/religious-education\.json$/.test(cardsPath)
+  ? [...new Set(rawCards.map(c => c.subjectId ?? 'biology'))]
+  : ['religious-education'];
 if (subjectIds.length !== 1) {
   console.error(`cards span ${subjectIds.length} subjects (${subjectIds.join(', ')}) — build one subject at a time`);
   process.exit(1);
