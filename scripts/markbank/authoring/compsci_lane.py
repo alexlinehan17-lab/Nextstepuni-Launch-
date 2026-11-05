@@ -244,7 +244,7 @@ class Sitting:
         self.cell_pages = {}
         for m in re.finditer(r'<!-- compsci:cells page (\d+) -->\n(.*?)(?=<!-- compsci:cells|\Z)',
                              md, re.S):
-            self.cell_pages[int(m.group(1))] = ws(m.group(2).split(CELLS_END)[0])
+            self.cell_pages[int(m.group(1))] = ws(fold(m.group(2).split(CELLS_END)[0]))
         self.glyph_pages = {}
         for m in re.finditer(r'<!-- compsci:glyphs page (\d+) -->\n(.*?)(?=<!-- compsci:glyphs|<!-- /compsci:glyphs|\Z)',
                              md, re.S):

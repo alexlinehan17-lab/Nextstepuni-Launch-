@@ -56845,5 +56845,107 @@
   "year": 2020,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Computer Science 2020 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-paper-q1-table": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q1-table.png",
+  "md5": "44633bd53f033503d8181f4f60e01c07",
+  "alt": "The declarations printed with Question 1, a = 21 and b = 10, above a table whose Column A lists six print statements, print(a == b), print(b != a), print(a > b), print(b <= a), print(a == 10) and print(b != 21), and whose Column B, True or False, is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q1",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-paper-q5-fig1": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q5-fig1.png",
+  "md5": "a1a2f4fef5247a31883e72a8ce42d6cd",
+  "alt": "Figure 1: a street photograph of a woman cycling past a white car, with three labelled boxes drawn on it: Person around the cyclist, Bicycle around the bike and Car around the car.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q5",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-paper-q13a-table": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13a-table.png",
+  "md5": "e082e4e4757bf3950e4d3233a2a6aa6c",
+  "alt": "The table printed with Question 13(a)(i): Column A lists four definitions, a data structure that can store a collection of elements of the same data type, a character that represents a mathematical or logical action, a command for handling a decision, and a memory location that can store a value; Column B, Term, is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(a)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-paper-q13a-trace": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13a-trace.png",
+  "md5": "81158b98de7eb2c8eef91fec0bc79ce4",
+  "alt": "The six-line program printed with Question 13(a)(ii): i = 1, j = 10, while i < j: print(i), i = i + 1, j = j - 1. Below it, a trace table with columns i, j, while i < j and print(i) and rows 1 to 6; row 1 reads 1, 10, True, 1 and rows 2 to 6 are blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(a)(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-paper-q13b-fig4": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13b-fig4.png",
+  "md5": "3619ef7ac45adb417438c9b7ee54e86d",
+  "alt": "Figure 4: the flowchart of the charging cost algorithm. Start, then BatteryLevel = Check car battery charge; if BatteryLevel < 30% Cost = €5, otherwise if BatteryLevel < 70% Cost = €4, otherwise Cost = €3. Then Loyalty Card Presented?: Yes sets Cost = Cost - €1; both paths reach Print Cost, then End.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(b)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-paper-q16b-table": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16b-table.png",
+  "md5": "90adb1e98722763560dc6d8dc1ffa5c6",
+  "alt": "The table printed with Question 16(b), columns Condition and Output: temperature is less than 20, Too cold. Turn up heating.; temperature between 20 – 24, Temperature is just right.; temperature is more than 24, Too warm. Turn down heating.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q16(b)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-scheme-q4": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-scheme-q4.png",
+  "md5": "238086017048bbf99df6b9103dbed6c8",
+  "alt": "The marking scheme's two workings for Question 4: repeated division, 14/2 = 7 remainder 0, 7/2 = 3 remainder 1, 3/2 = 1 remainder 1, 1/2 = 0 remainder 1, Ans: 1110; or place values, 14 = 8 + 4 + 2 + 0 with the digits 1 1 1 0 beneath, Ans: 1110.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q4",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-scheme-q13a-ii": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-scheme-q13a-ii.png",
+  "md5": "971451100d02a6962ed5af5fa838aea4",
+  "alt": "The marking scheme's completed trace table for Question 13(a)(ii): row 1 1, 10, True, 1 as printed; row 2 2, 9, True, 2; row 3 3, 8, True, 3; row 4 4, 7, True, 4; row 5 5, 6, True, 5; row 6 6, 5, False, and 6 or blank under print(i).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(a)(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-scheme-q16b": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-scheme-q16b.png",
+  "md5": "99a56cac0eff6658d11daa1c91327426",
+  "alt": "The marking scheme's possible solution to Question 16(b), lines 1 to 19: a welcome message printed; temperature read with int(input()); then if temperature < 20 print Too cold. Turn up heating., elif temperature >= 20 and temperature <= 24 print Temperature is just right., else print Too warm. Turn down heating., each step explained by a comment.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q16(b)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
  }
 }
