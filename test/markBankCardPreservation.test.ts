@@ -806,9 +806,10 @@ const decks = [
    * 2019 Higher I(b)(i) and 2018 Higher B(a)(i), held for the overlapping-band ruling, added: 2 band-grid cards.
    * 2017 Higher, 21 band-grid cards, added.
    * 2017 Ordinary, 25 band-grid cards, added; C(a) held.
-   * 2016 Higher, 18 band-grid cards, added. */
+   * 2016 Higher, 18 band-grid cards, added.
+   * 2016 Ordinary, 20 band-grid cards, added; six held. */
   ['religious-education:higher', RE_HIGHER, 275, '6a35b3813d81c6dc9ff3b623938b418d9f2f29e5db741fc22b9a01fc1ba45f1c'],
-  ['religious-education:ordinary', RE_ORDINARY, 257, '608c318339632b4093585770ab5ade375ab4d29bf0e4663a529c323da8e397ae'],
+  ['religious-education:ordinary', RE_ORDINARY, 277, '67dff645185945005a0ea9fe336811717850485ebea4a4718b254f45097f44a8'],
   /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
    * replaced — it is a new subject and this is its first baseline. It ships
    * as ONE deck because the paper is common level: there is no Higher or
@@ -1498,6 +1499,7 @@ describe('Mark Bank card preservation', () => {
     // Religious Education 2017 Higher, 21 asks, 21 band-grid cards: 23,790.
     // Religious Education 2017 Ordinary, 26 asks, 25 band-grid cards (1 held): 23,815.
     // Religious Education 2016 Higher, 18 asks, 18 band-grid cards: 23,833.
+    // Religious Education 2016 Ordinary, 26 asks, 20 band-grid cards (6 held): 23,853.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1514,9 +1516,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_833 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_853 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_833 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_853 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
