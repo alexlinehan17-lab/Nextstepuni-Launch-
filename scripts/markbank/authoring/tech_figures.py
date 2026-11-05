@@ -2257,6 +2257,118 @@ REVIEWED.update({
         'with coloured edging.',
 })
 
+# 2012 Ordinary, each crop rendered and looked at.
+REVIEWED.update({
+    'technology-2012-OL-paper-secA-q1-art':
+        'Photograph of Steve Jobs speaking in front of a large white Apple '
+        'logo.',
+    'technology-2012-OL-paper-secA-q2-art':
+        'Exploded drawing of a smart card, its gold contact chip lifted above '
+        'the card.',
+    'technology-2012-OL-paper-secA-q3-art':
+        'Photograph of a white arched concrete footbridge across a rocky gorge,'
+        ' an arrow labelled A pointing at one of its sloping legs.',
+    'technology-2012-OL-paper-secA-q4-art':
+        'Photograph of a small round sensor with a zig-zag track on its face '
+        'and two long wire legs.',
+    'technology-2012-OL-paper-secA-q5-art':
+        'Photograph of four rechargeable AA batteries.',
+    'technology-2012-OL-paper-secA-q6-art':
+        'Photograph of a blue pen with a curved, shaped grip.',
+    'technology-2012-OL-paper-secA-q7-art':
+        '3D drawing of an arrow-shaped hazard warning light, orange on a yellow'
+        ' back plate with four screws, an arrow labelled A pointing at its left'
+        ' end.',
+    'technology-2012-OL-paper-secA-q8-art':
+        'Photograph of a hooded figure walking past a burning car.',
+    'technology-2012-OL-paper-secA-q9-art':
+        'The EPA logo: the letters epa under a swirl of green-blue lines.',
+    'technology-2012-OL-paper-secA-q10-art':
+        'Photograph of a stone-faced two-storey house with a slate roof.',
+    'technology-2012-OL-paper-secA-q11-art':
+        'Close-up photograph of brass clockwork gears, an arrow labelled A '
+        'pointing at one toothed wheel and the part held against it.',
+    'technology-2012-OL-paper-secA-q12-art':
+        'Line drawing of a cylindrical electric motor with a short shaft, drawn'
+        ' in outline only.',
+    'technology-2012-OL-paper-secB-q2a-art':
+        '3D drawing of a pencil holder: a bent green plastic part labelled A, '
+        'holding a pencil, fixed on a wooden base labelled B.',
+    'technology-2012-OL-paper-secB-q2b-art':
+        'Drawing of the corner of the wooden base with its top edge rounded, '
+        'and a Safety matters warning sign.',
+    'technology-2012-OL-paper-secB-q2c-art':
+        'A Gantt chart headed Task/Duration: Mark out base, Manufacture base, '
+        'Mark out holder, Manufacture holder and Project assembly, each shaded '
+        'in later columns.',
+    'technology-2012-OL-paper-secB-q2d-art':
+        'Screenshot of SolidWorks showing a 3D model of a threaded cylindrical '
+        'part.',
+    'technology-2012-OL-paper-secB-q3a-art':
+        'Rendering of a blue egg timer with a yellow dome and push buttons, an '
+        'arrow labelled A pointing at its moulded blue body.',
+    'technology-2012-OL-paper-secB-q3b-art':
+        'Circuit diagram between +V and -V: potentiometer C, a switch, '
+        'capacitor D marked +, a resistor to transistor B, and component A in '
+        'series with a resistor.',
+    'technology-2012-OL-paper-secB-q3c-art':
+        'Simulated printed circuit board for the timer, wired to a PP3 9V '
+        'battery and two push switches.',
+    'technology-2012-OL-paper-secB-q3d-art':
+        'Cause and effect diagram for a Faulty Torch, with the causes Switch?, '
+        'Bulb?, People? and Battery?',
+    'technology-2012-OL-paper-secC-q1b-art':
+        'Photograph of an 18-pin chip; below it, the given flowchart: Start, '
+        'then a decision Switch ? with a No exit to the left and a Yes exit '
+        'downwards.',
+    'technology-2012-OL-paper-secC-q1c-art':
+        'Photograph of the Quince robot, a tracked vehicle with an arm, '
+        'climbing a kerb.',
+    'technology-2012-OL-paper-secC-q1d-art':
+        'Three pneumatic circuit symbols labelled A, B and C.',
+    'technology-2012-OL-paper-secC-q2a-art':
+        'Photograph of an 8-pin 555 IC chip marked NE555N.',
+    'technology-2012-OL-paper-secC-q2b-art':
+        'Circuit diagram of a 555 IC between +V and 0V: a switch, a resistor, a'
+        ' variable resistor and capacitor B on the timing pins, the output '
+        'through resistor A to four light-emitting diodes in parallel.',
+    'technology-2012-OL-paper-secC-q2c-art':
+        'Photograph of cardboard boxes on a roller conveyor.',
+    'technology-2012-OL-paper-secC-q3a-art':
+        'Drawing of a desktop computer with monitor, tower, keyboard, mouse and'
+        ' a disc.',
+    'technology-2012-OL-paper-secC-q3b-art':
+        'Photograph of a graphics card labelled Memory, Processor Heatsink, '
+        'Processor Fan and Motherboard Connection.',
+    'technology-2012-OL-paper-secC-q3c-art':
+        'A cloud labelled CLOUD above a smartphone, a tablet and a laptop, '
+        'wireless signals between them.',
+    'technology-2012-OL-paper-secC-q3d-art':
+        'Photograph of a meeting room, people round a table with laptops facing'
+        ' two screens, one showing a man speaking.',
+    'technology-2012-OL-paper-secC-q4a-art':
+        'Photographs of a laptop computer and a three-tier wedding cake.',
+    'technology-2012-OL-paper-secC-q4b-art':
+        'Photograph of a decorated glass Coca-Cola bottle.',
+    'technology-2012-OL-paper-secC-q4c-art':
+        'Photograph of a heap of discarded computer equipment: monitors, a '
+        'keyboard, a tower and cables.',
+    'technology-2012-OL-paper-secC-q4d-art':
+        'Photograph of a red and black folding hair dryer.',
+    'technology-2012-OL-paper-secC-q5a-art':
+        'Photographs of a pair of pincers and a metal drinks can.',
+    'technology-2012-OL-paper-secC-q5b-art':
+        "Photograph of a Boeing 787 Dreamliner flying over Dublin Airport's "
+        'Terminal 2.',
+    'technology-2012-OL-paper-secC-q5c-art':
+        'Exploded drawing of an airliner, sections labelled A to E, and a '
+        'table: A Forward fuselage, USA; B Centre fuselage, Italy; C Wing, '
+        'Japan; D Wing Tip, South Korea; E Trailing Edge, Australia.',
+    'technology-2012-OL-paper-secC-q5d-art':
+        'Photograph of aircraft seat backs, an arrow pointing to the moulded '
+        'back of a headrest, captioned Back of headrest.',
+})
+
 REJECTED = {
     'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
     'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',

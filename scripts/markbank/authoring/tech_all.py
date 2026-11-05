@@ -54,7 +54,7 @@ from tech_topics import topic_for, topic_for_option, TOPIC_OVERRIDES  # noqa: E4
 import tech_crops as TC                                      # noqa: E402
 
 SUBJECT = 'technology'
-MAX_ROWS = 12
+MAX_ROWS = 16
 # Mirrors MAX_LONG_OPTION_ROWS / MAX_OPTION_ROWS in optionCap.mjs.
 CAP = {'A': 8, 'B': 16, 'C': 16}
 
@@ -952,9 +952,16 @@ def author(bind_figures=True):
                 # names every one of them.
                 pieces = []
                 lost_picture = not figure and points_at_print(question)
+                # tech_crops.STEM_JOIN: a sentence's last words that the census
+                # read as the letter's head because they open a line with a
+                # part reference ("2(a) above."); they go back on the stem
+                # sentence they end.
+                rejoin = TC.STEM_JOIN.get((year, level, section, q, letter))
                 for piece in stem_pieces(section, q, letter, roman, texts, stems, whole_letter):
                     if stem_owner and piece == letter_stem:
                         continue
+                    if rejoin and piece.endswith(' ' + rejoin):
+                        piece = piece[:-len(rejoin)].rstrip()
                     # The answerbook's ruled blanks and their fill-in labels
                     # ("Time: ____ People: ____"), which 2021 Ordinary Q6 prints
                     # between its stem and its romans.
@@ -972,6 +979,8 @@ def author(bind_figures=True):
                     piece = TC.strip_labels(piece, paper_labels)
                     piece = TRAILING_LABEL.sub('', piece).strip()
                     piece = re.sub(r'\s+OR\s*$', '', piece)
+                    if rejoin and piece and not re.search(r'[.?!:]$', piece):
+                        piece = f'{piece} {rejoin}'
                     # The answer lines' numbers, as the ask loses them above.
                     piece = re.sub(r'(?<=[.?!])(?:\s+\d\.){2,}(?=\s+[A-Z])', '', piece)
                     piece = re.sub(r'(?<=[.?!])(?<![Ff]ig\.)(?:\s+\d\.)+\s*$', '', piece)

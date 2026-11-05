@@ -1970,6 +1970,2151 @@
   "notes": "The scheme prints '(c) OR (d) - 14 marks' for this question."
  },
  {
+  "id": "tech-2012-ol-a1",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2012 OL Section A Q1(i), (ii)",
+  "questionText": "(i) Give two innovations attributed to Steve Jobs. (ii) Name one invention by Thomas Edison.",
+  "stem": "Steve Jobs (co-founder of Apple) has been described as a modern day Thomas Edison.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secA-q1-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1.iphone.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2.ipad/ipod etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Light bulb.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-a2",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2012 OL Section A Q2(i), (ii)",
+  "questionText": "(i) Give one use of smart cards. (ii) List two advantages of using smart cards.",
+  "stem": "Smart cards are commonly used in everyday life.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secA-q2-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bank Cards (credit/debit)/ golf handicap cards etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1.Personal details such as PPSN can be stored.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "2. They can be protected by using pin numbers etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-a3",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2012 OL Section A Q3(i), (ii)",
+  "questionText": "(i) Name a suitable material used to reinforce concrete. (ii) Name a force acting on element A of the bridge.",
+  "stem": "The Mizen Bridge is built using reinforced concrete.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secA-q3-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Steel/Iron/composites etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Compression.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-a4",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2012 OL Section A Q4(i), (ii)",
+  "questionText": "(i) The graphic shows an LDR sensor used in electronics. Write out in full the words represented by LDR. (ii) An LDR is a non-polarised electronic component. Explain what is meant by the term non-polarised.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secA-q4-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "LDR: Light Dependent Resistor.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "As there is no polarity (positive/negative) in the LDR, the legs can be connected either way in a circuit.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-a5",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2012 OL Section A Q5",
+  "questionText": "Name one energy conversion that takes place in a rechargeable battery. The use of rechargeable instead of disposable batteries is better for the environment. Outline two environmental benefits of using rechargeable batteries.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Chemical to electrical.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1. Reduction in the use of landfill sites.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "2. Less ground contamination etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-a6",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2012 OL Section A Q6",
+  "questionText": "The pen shown is ergonomically designed. Explain what is meant by the term ergonomics.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Designing equipment and devices with the human body in mind.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-a7",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2012 OL Section A Q7",
+  "questionText": "In the box provided, make a well proportioned 2D sketch of the hazard warning light when viewed in the direction of arrow A.",
+  "stem": "",
+  "figureKey": "technology-2012-OL-scheme-secA-q7",
+  "questionFigureKey": "technology-2012-OL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In the box provided, make a well proportioned 2D sketch of the hazard warning light when viewed in the direction of arrow A.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-a8",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2012 OL Section A Q8",
+  "questionText": "During the London riots of 2010, it was reported that inaccurate and inflammatory accounts of the events were posted on Social Media sites and that this may have led to further disturbances. Name two Social Media sites.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secA-q8-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Facebook.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Twitter etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-a9",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2012 OL Section A Q9",
+  "questionText": "Shown is the logo of the Enviromental Protection Agency (EPA). Outline the function of the EPA.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To protect the environment through its licensing, enforcement and monitoring of activities, e.g., Water Framework Directive etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-a10",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2012 OL Section A Q10",
+  "questionText": "List four items of work that should be included in a Work Breakdown Structure (WBS) for the building of a house.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Obtain planning permission",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Pour foundation",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Build walls",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4. Fit windows etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-a11",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2012 OL Section A Q11",
+  "questionText": "Name the gear arrangement shown at A. Give one everyday application of this gear arrangement.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Ratchet and Pawl.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Clocks/Hoists/Turnstiles etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-a12",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2012 OL Section A Q12",
+  "questionText": "Use two graphic techniques to enhance the graphic representation of the motor shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "All questions carry 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Rendering, Colour/Shading",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Shadow / Hatching etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints 'All questions carry 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-b2a",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2012 OL Section B Q2(a)(i), (ii)",
+  "questionText": "(i) Suggest a suitable thermoplastic and a suitable hardwood for the making of this project. (ii) Using simple annotated sketches, describe a suitable method of joining the plastic part (A) to the wooden base (B).",
+  "stem": "The 3D graphic shows a pencil holder designed by a student. The pencil holder is made from a thermoplastic and a hardwood.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secB-q2a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3mm Acrylic/Polypropylene, Beech/Teak etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Countersunk screws/Impact adhesive etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-b2b",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2012 OL Section B Q2(b)(i), (ii), (iii)",
+  "questionText": "(i) Describe how this rounded edge could be produced. Give two Health and Safety considerations that should be observed when carrying out this process. (ii) The hardwood base requires a surface finish to be applied. Name two appropriate surface finishes which could be used. (iii) Describe how the base should be prepared before the surface finish is applied.",
+  "stem": "The top edge of the wooden base has been rounded as shown.",
+  "figureKey": "technology-2012-OL-scheme-secB-q2b",
+  "questionFigureKey": "technology-2012-OL-paper-secB-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Machine Routered/Plane etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Eye protection/Ear protection/mask etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Danish oil/French Polish/Polyurethane varnish/Beeswax/Water based varnish etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Cracks/dents in the wood should be filled.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Use various grades of abrasive paper to smoothen the surface before applying the finish.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-b2c",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2012 OL Section B Q2(c)(i), (ii)",
+  "questionText": "(i) List two advantages of using Gantt charts. (ii) From the Gantt chart shown, suggest an appropriate time period to complete the pencil holder project.",
+  "stem": "Gantt charts are used to represent the phases and activities in the management of a project. Shown is a simple Gantt chart for the manufacture of the pencil holder at 2(a) above.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secB-q2c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tasks can be managed more effectively.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A chart can potentially identify scheduling difficulties.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "It identifies the dependencies of specific tasks etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Six periods",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 6 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-b2d",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2012 OL Section B Q2(d)(i), (ii)",
+  "questionText": "(i) Outline two benefits of using such software programs when undertaking project work. (ii) When a student completes a project it is desirable to include a digital image of that project in the design portfolio. Describe how this can be achieved.",
+  "stem": "Students can use CAD software programs such as SolidWorks when designing and manufacturing projects.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secB-q2d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Greater visual understanding of design related issues.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Drawings for manufacture can be printed.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "CNC router/Laser cutter can use CAD files for manufacture.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Take the image with a digital camera.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Save it to a specified folder on the computer using a USB cable.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Copy/paste the image into the relevant text document.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Edit/crop/resize the image as necessary etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 6 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-b3a",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2012 OL Section B Q3(a)(i), (ii)",
+  "questionText": "(i) Suggest a suitable material for the mould used to vacuum form part A. (ii) Describe using notes and annotated sketches how the mould could be produced.",
+  "stem": "The graphic shows a design for an egg timer. Part A of the project is produced by vacuum forming a sheet of High Impact Polystyrene (HIPS).",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secB-q3a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Softwood (Pine)/Hardwood (Teak)/ High density modelling foam etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The mould could be manufactured from a CAD file on a CNC router.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The mould could also be produced using hand tools/ a sanding machine etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-b3b",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2012 OL Section B Q3(b)(i), (ii), (iii)",
+  "questionText": "(i) Using the formulae and tables booklet or otherwise, name component A. (ii) Redraw transistor B in your answerbook and label the collector, base and emitter. (iii) Describe why potentiometer C is used in conjunction with capacitor D in this circuit.",
+  "stem": "The diagram shows a timer circuit for the above project.",
+  "figureKey": "technology-2012-OL-scheme-secB-q3b",
+  "questionFigureKey": "technology-2012-OL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 8 marks"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Light Emitting Diode (LED)",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To increase/decrease the time delay before the LED comes on. Generally, the larger the values of potentiometer C and capacitor D, the greater the time delay.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 8 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-b3c",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2012 OL Section B Q3(c)(i), (ii)",
+  "questionText": "(i) Name a software program that could be used in school to produce simulated circuit diagrams. (ii) Outline two advantages of using circuit simulation software when designing a circuit.",
+  "stem": "The graphic shows a simulated printed circuit board (PCB) similar to the above timer circuit.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secB-q3c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Circuit Wizard/Bright Sparks etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Circuits can be tested before they are made.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Simulations allow for a greater understanding of the operation of a circuit.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Cost of components is also available from some software packages etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 6 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-b3d",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2012 OL Section B Q3(d)(i), (ii)",
+  "questionText": "(i) Describe how human error could cause problems in the quality of a manufactured product. (ii) Suggest two potential consequences for a company which manufactures a batch of faulty products.",
+  "stem": "Cause and Effect Diagrams are used to identify the causes of quality related problems in products.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secB-q3d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 6 marks"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Poor assembly techniques/ Irregular quality inspections etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Loss in sales/return of faulty products/ negative publicity/ failure of business etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 6 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c1a",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q1(a)(i), (ii)",
+  "questionText": "(i) PICs can be programmed to carry out a range of tasks. Explain the terms ‘PIC’ and ‘programmed’. (ii) Give two examples of electronic devices that are controlled using PIC technology.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "PIC: Peripheral Interface Control",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Programmed: A flowchart (set of instructions) that can be downloaded to a PIC board etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Microwave/Washing machine/ Electronic toys etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c1b",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q1(b)(i), (ii), (iii)",
+  "questionText": "(i) Explain, using a simple diagram, how pin number 1 can be identified on this chip. (ii) This chip can use Analogue and Digital inputs. Give one analogue input and one digital input that could be used with a PIC. (iii) A battery powered LED is used as a light source inside a wardrobe. When a switch is activated the LED turns on for 20 seconds and then turns off automatically. Copy the given flowchart into your answerbook and complete it to represent the information above.",
+  "stem": "The graphic shows an 18-pin PIC chip.",
+  "figureKey": "technology-2012-OL-scheme-secC-q1b",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 20 marks"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A semi-circular groove on the chip identifies the top of the chip. A small circular indentation is placed next to pin no 1.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Analogue: Light/Sound/Heat sensor etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Digital: Push-to-make/Push-to-break switch etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 20 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c1c",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q1(c)(i), (ii)",
+  "questionText": "(i) Outline two advantages of the use of robots in these situations. (ii) The graphic shows the Quince robot which is designed to assist in gathering data from environmental disaster zones. Suggest two possible devices that could be incorporated into the Quince robot, to enable the collection of data.",
+  "stem": "Following the Japanese earthquake and tsunami of 2011, robots were deployed to aid rescue workers.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q1c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "They can be deployed in areas not safe for people to work in.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "They can access air voids where recue workers might not be able to access etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Sensors can detect air quality/contamination.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Cameras can provide live pictures to a remote location etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c1d",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q1(d)(i), (ii)",
+  "questionText": "(i) Give one everyday example of the use of pneumatics. Outline the advantages of using pneumatics in the example you have given. (ii) Name the three pneumatic components A, B and C shown below:",
+  "stem": "Pneumatics in Technology deals with the use of pressurised air to produce mechanical motion.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Air brakes for trucks/Buses, Production lines in factories, Dentists drill",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Air is safe, clean, inexpensive and readily available etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3/2 port valve",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Single acting spring return cylinder",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Shuttle/OR valve",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c2a",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q2(a)(i), (ii)",
+  "questionText": "(i) Outline the difference between monostable and astable. (ii) Give a simple use for each of the circuit states above.",
+  "stem": "The 555 IC shown can be configured in two states when building circuits. These states are monostable and astable.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Monostable: A mode in which a 555 IC produces a single pulse for a preset amount of time in response to an input.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Astable: A mode in which a 555 IC produces a string of on/off pulses at a preset frequency.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Monostable configuration: Timer circuit/Touch switches etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Astable configuration: Lamp flashers/Pulse generators etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c2b",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q2(b)(i), (ii), (iii)",
+  "questionText": "(i) Explain why LEDs are often used instead of bulbs in circuit building. (ii) Give the function of the resistor A in this circuit. (iii) Name the unit of capacitance. Explain why capacitor B is used in this circuit.",
+  "stem": "The circuit diagram shows a 555 IC in the astable state.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 20 marks"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Less current required/more energy efficient.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "More reliable than bulbs etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "To control the amount of current passing through the LEDs.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Protect LEDs etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Unit of Capacitance: The Farad.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Capacitor B in conjunction with the variable resistor provides the required time delay for the LEDs.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 20 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c2c",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q2(c)(i), (ii)",
+  "questionText": "(i) Suggest a suitable sensor that could be used to count the number of boxes moving along a conveyor belt. Give two reasons for your selection. (ii) A seven segment display is used to display the number of boxes which have been counted. Show, using a labelled sketch, the configuration on the seven segment display that would represent five boxes counted.",
+  "stem": "Sensors are widely used in the operation of conveyor systems.",
+  "figureKey": "technology-2012-OL-scheme-secC-q2c",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Infra red, Light sensor (LDR), Pressure sensor etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Any appropriate reason– accuracy of detection, reliability, cost etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c2d",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q2(d)(i), (ii)",
+  "questionText": "(i) Draw the symbol for an AND gate suitable for use in the conveyor system as outlined. (ii) In your answerbook, draw and complete the truth table for an AND gate.",
+  "stem": "The electronic circuit that controls a conveyor system uses logic gates to separate boxes into two categories, based on their weight and size.",
+  "figureKey": "technology-2012-OL-scheme-secC-q2d",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) Draw the symbol for an AND gate suitable for use in the conveyor system as outlined. (ii) In your answerbook, draw and complete the truth table for an AND gate.",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c3a",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q3(a)(i), (ii)",
+  "questionText": "(i) When describing computers, explain the difference between the terms Hardware and Software. (ii) Give two examples of each.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q3a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hardware refers to the physical components of a computer system.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Software refers to a set of programs that instruct a computer what to do and how to do it. There are two categories– systems and applications software.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Hardware: Power supply, motherboard, graphics card, mouse, printer, monitor etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Storage devices such as USB keys and external hard drives etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Software: Operating systems such as Windows 7, Vista, XP, Linux, Mac OSX etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Applications such as SolidWorks, Microsoft office, Adobe photoshop, anti-virus software, device drivers etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c3b",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q3(b)(i), (ii), (iii)",
+  "questionText": "(i) Give two functions of a graphics card. (ii) Explain the term pixel. (iii) Explain how pixels influence the image quality on a computer screen.",
+  "stem": "In a computer the graphics card is a specialised circuit board.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 20 marks"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It reduces the load on the CPU so that graphic information can be used.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "It allows for faster transfer of information.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "It allows the running of software such as Solidworks which has high graphic requirement.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "It acts as an interface between the computer and monitor.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "A pixel is a single point on a raster image. Each pixel has its own address which corresponds to its co ordinates.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "The quality of the image displayed on a computer screen is determined by the number of pixels used to form the image. The greater the screen resolution (no. of pixels used) the higher the quality of image. This will also increase the size of the file when saved.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 20 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c3c",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q3(c)(i), (ii)",
+  "questionText": "(i) Outline three advantages of cloud computing. (ii) Give one example of a phone app and outline how this app could enhance an aspect of our leisure time.",
+  "stem": "Cloud computing stores music, photographs and documents which can be accessed wirelessly from devices such as smartphones, laptops and netbooks.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q3c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Costs can be reduced by sharing resources and software applications.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "External storage will free up computers and increase operational speeds etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Secure remote access to files from any computer allows users to work way from home etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Any appropriate app and enhancement to leisure time, e.g. ‘viber’.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "This app allows its users to make free calls and texts to each other etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c3d",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q3(d)(i), (ii)",
+  "questionText": "(i) Give one advantage and one disadvantage of using video conferencing. (ii) Potential health risks can be associated with the regular use of computers. Give two potential risks and suggest how these risks could be reduced.",
+  "stem": "Multi-national companies all over the world use video conferencing.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q3d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Advantages: No need to travel long distances.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cuts company expenses.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "More environmentally friendly/reduced Carbon footprint.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Disadvantages: No personal touch.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Different time zones across the world.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Cost implications for initial purchase and maintenance of equipment/ staff training etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Repetitive strain injury.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Repeating same movements frequently.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Eye strain/headaches from screen glare.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Increase in weight due to a lack of mobility etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "Use furniture that is ergonomically designed with the user in mind, e.g, chair, desk, computer screen.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "Use screen filters and correct lighting.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-13",
+    "kind": "point",
+    "verbatim": "Wrist support /Regular breaks/Varying types of work etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c4a",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q4(a)(i), (ii)",
+  "questionText": "(i) Identify which product was made-to-order. (ii) Explain the difference between Made-to-Order and Assemble-to-Order.",
+  "stem": "The graphics show a laptop computer and a wedding cake. These products have been produced as Made-to-Order and Assemble-to-Order items.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q4a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The Wedding Cake.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Made-to-Order: This item is specifically designed and made to the requirements of the customer. This item could be once off or batch produced depending upon the needs of the customer. The order is complete in a minimum amount of time etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Assembled-to-Order: In this case, a base unit or module is produced onto which options can be added according to the specification of the customer. For example, a customer may choose a notebook machine and specify the operating system, hard drive, type of processor etc. The manufacturer then assembles the product for the customer etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c4b",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q4(b)(i), (ii), (iii)",
+  "questionText": "(i) Outline some of the key steps a manufacturer like Coca-Cola might undertake to ‘compete on cost’ with their market competitors. (ii) Other than competing on cost, outline one strategy Irish manufacturers could engage in to be more competitive in difficult economic times. (iii) Outline one element of team work that would be important in a task such as designing and producing the logo for the 2012 Olympics bottle shown.",
+  "stem": "Coca-Cola has become a highly competitive global brand by competing on cost in relation to the range of soft drinks it sells.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 20 marks"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Carry out market research on your target customers.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Source materials from competitive suppliers.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Reduce cost of labour.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Automate production methods.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Reduce overhead costs (building, electrical, heating) etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Market products using special offers/promotions.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Identify the strengths and weaknesses of the company– making improvements as required.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Identify the strengths of competitors.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Compete on quality and flexibility.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Focus on improving speed of production/service etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "Identify a team leader.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "Identify clear roles/responsibilities for each employee.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-13",
+    "kind": "point",
+    "verbatim": "Establish a set of goals/objectives.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-14",
+    "kind": "point",
+    "verbatim": "Work effectively together.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-15",
+    "kind": "point",
+    "verbatim": "Effective communication between design and production teams etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 20 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c4c",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q4(c)(i), (ii)",
+  "questionText": "(i) Suggest two reasons why a product might have a short life-cycle. (ii) Outline one negative environmental impact of a product with a short life-cycle and describe how the impact of such a product could be reduced.",
+  "stem": "Many electronic products are designed with a short life-cycle.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q4c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Products with short life cycles could require manufacturers to produce more products.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This in turn would increase the sales/profits for manufacturers.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Companies could also benefit from servicing and maintenance contracts.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Products with short life cycles also allow companies to keep up-to-date with emerging technologies etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Increased use of landfill sites.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Increase in carbon footprint of manufacturing companies.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Reduction in fossil fuels globally etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Recycle/Reuse components and parts.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Make products more reliable/longer life cycle.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Use alternative materials and more environmentally friendly production methods etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c4d",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q4(d)(i), (ii)",
+  "questionText": "(i) Outline two reasons why products should be tested before they are sold to consumers. (ii) Suggest two aspects of the hair dryer shown that could be tested to ensure that it meets the highest performance standards.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q4d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To ensure that products comply with the relevant manufacturing standards.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To ensure that they are safe to use.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "To identify how the quality of products might be improved.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "To maintain the reputation of manufacturers etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "The operation of the on/off switch.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "The operation of the fan/heating element.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Attaching accessories.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "The ergonomic design of the hair dryer etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c5a",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q5(a)(i), (ii)",
+  "questionText": "(i) Explain the difference between ferrous and non-ferrous metals. (ii) Name a suitable metal for the manufacture of each item.",
+  "stem": "The pincers and the drinks-can shown have been made using a ferrous and a non-ferrous metal respectively.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q5a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(a) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ferrous metals contain iron and therefore rust, e.g. mild steel.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Non-ferrous metals don’t contain iron and therefore don’t rust, e.g. Lead.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Pincers: Alloy steel/Forged steel.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Drinks-can: Aluminium/Aluminium alloy etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(a) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c5b",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q5(b)(i), (ii), (iii)",
+  "questionText": "(i) Explain the term ‘composite material’. (ii) Give two examples of composite materials. (iii) Give two advantages of using composite materials instead of aluminium in the construction of airplanes.",
+  "stem": "The new 787 Dreamliner jet, manufactured by Boeing, recently landed in Dublin as part of its world showcase tour. Composite materials are widely used in the manufacture of this highly efficient aircraft.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(b) - 20 marks"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Composite materials consist of two or more materials combined in such a way that the individual materials are easily distinguishable. The combination creates a superior and unique material.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Glass Reinforced Plastic (GRP), Concrete, Plywood, Carbon Fibre, Metal Matrix etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "High strength to weight ratio.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Do not suffer from metal fatigue and crack growth.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Lower maintenance costs.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Very smooth for curved surfaces therefore less drag and more aerodynamic etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(b) - 20 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c5c",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q5(c)(i), (ii)",
+  "questionText": "(i) Outline two reasons why various sections might be manufactured in different plants around the world. (ii) Permanent and semi-permanent joints are used in the manufacture of this aircraft. Name one permanent and one semi-permanent joint that might be used in its assembly.",
+  "stem": "Sections of this aircraft were manufactured in different parts of the world before being assembled in one location.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Different plants may specialise in constructing various sections– therefore the quality of manufacture would be of a higher standard.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cost– it may be cheaper to manufacture various sections in different plants.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Universal design/manufacturing techniques allows parts to be manufactured globally etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Permanent: Welded joint, adhesive joint etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Semi-permanent: Pop-rivet, machine screw assembly, lap/seam joint, knock-down assembly etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
+  "id": "tech-2012-ol-c5d",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2012,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2012 OL Section C Q5(d)(i), (ii)",
+  "questionText": "(i) Name a suitable plastic for use in an injection moulding machine. (ii) Describe, using notes and annotated sketches, the process of injection moulding.",
+  "stem": "The back of the headrest shown has been injection moulded.",
+  "figureKey": "technology-2012-OL-scheme-secC-q5d",
+  "questionFigureKey": "technology-2012-OL-paper-secC-q5d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(c) OR (d) - 10 marks"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ABS, Nylon, Polycarbonate, Polypropylene etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Plastic pellets/granules are fed into the hopper.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The heaters soften the plastic granules.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The Ram drives the screw auger which in turn forces the molten plastic into the mould.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Once the plastic cools the mould is opened to release the part manufactured etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(c) OR (d) - 10 marks' for this question."
+ },
+ {
   "id": "tech-2013-hl-a1",
   "topicId": "tech-core-materials",
   "conceptId": "core-materials",

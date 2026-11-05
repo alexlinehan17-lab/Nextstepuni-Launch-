@@ -328,6 +328,14 @@ TOPIC_OVERRIDES = {
     'tech-2013-ol-b2c': 'tech-core-project',       # work breakdown structure, Gantt chart
     'tech-2013-ol-b3a': 'tech-core-materials',     # modern materials in sports equipment
     'tech-2013-ol-b3d': 'tech-core-project',       # cause and effect diagram (quality)
+    # 2012 Ordinary.
+    'tech-2012-ol-a8': 'tech-core-ict',            # social media sites
+    'tech-2012-ol-a9': 'tech-core-materials',      # the EPA (environment)
+    'tech-2012-ol-a10': 'tech-core-project',       # work breakdown structure
+    'tech-2012-ol-b2a': 'tech-core-materials',     # thermoplastic, hardwood, joining
+    'tech-2012-ol-b2c': 'tech-core-project',       # Gantt chart
+    'tech-2012-ol-b3a': 'tech-core-materials',     # vacuum forming mould
+    'tech-2012-ol-b3d': 'tech-core-project',       # cause and effect diagram (quality)
     # 2012 Higher.
     'tech-2012-hl-a2': 'tech-core-materials',      # corrugated cardboard
     'tech-2012-hl-a4': 'tech-core-design',         # anthropometrics, a chrome finish

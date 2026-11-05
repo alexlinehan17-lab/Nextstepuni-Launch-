@@ -3069,6 +3069,34 @@ MD_LINE_FIX[(2012, 'hl')] = [
     (r'^\(ii\) \(a\) Draw a graph to show the costs of each method of engraving the medals\.$', '(ii)'),
     (r'^\(b\) Determine the BEQ from the graph or otherwise\.$', ''),
 ]
+MD_LINE_FIX[(2012, 'ol')] = [
+    # 3(a): the stem's last words, reprinted on a line of their own.
+    (r'^Polystyrene \(HIPS\)\.$', ''),
+    # 3(b)(iii) and 5(b)(ii), 5(c)(i), 3(c)(i): one answer broken before a
+    # capital or a lone "etc.", joined.
+    (r'^(comes on\. Generally, the larger the values of potentiometer)$',
+     '\\1 C and capacitor D, the greater the time delay.'),
+    (r'^C and capacitor D, the greater the time delay\.$', ''),
+    (r'^(Glass Reinforced Plastic \(GRP\), Concrete, Plywood,)$', '\\1 Carbon Fibre, Metal Matrix etc.'),
+    (r'^Carbon Fibre, Metal Matrix etc\.$', ''),
+    (r'^(Different plants may specialise in constructing various)$',
+     '\\1 sections\u2013 therefore the quality of manufacture would be of a higher standard.'),
+    (r'^sections\u2013 therefore the quality of manufacture would$', ''),
+    (r'^be of a higher standard\.$', ''),
+    (r'^(Secure remote access to files from any computer allows users to work way from home)$', '\\1 etc.'),
+    (r'^etc\.$', ''),
+    # 3(d)'s stem, printed above its head inside 3(c)'s answer.
+    (r'^Multi-national companies all over the world use video conferencing\.$', ''),
+    # 3(d)(ii) and 4(d)(ii): the scheme's own reprint of the ask, its verb
+    # changed from the paper's "Suggest"; the heads stay.
+    (r'^\(ii\) Identify two potential consequences for a company which manufactures a$', '(ii)'),
+    (r'^batch of faulty products\.$', ''),
+    (r'^\(ii\) Identify two aspects of the hair dryer shown that could be tested to ensure that it meets the highest$', '(ii)'),
+    (r'^performance standards\.$', ''),
+    # 1(d)(ii): the three names, one under each symbol, read as one line.
+    (r'^3/2 port valve Single acting spring return cylinder Shuttle/OR valve$',
+     '3/2 port valve\nSingle acting spring return cylinder\nShuttle/OR valve'),
+]
 MD_LINE_FIX[(2014, 'hl')] = [
     # 1(a)(ii): two columns of notes welded line by line; each column's
     # words, in order, on a line of its own.
@@ -3708,6 +3736,115 @@ LABEL_ZONES.setdefault((2012, 'hl'), []).extend([
     (19, (440, 515, 590, 560)),    # 5(c)'s sketch
 ])
 
+# 2012 Ordinary. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    'technology-2012-OL-paper-secA-q1-art': ('014', 1, (398, 114, 518, 234)),
+    'technology-2012-OL-paper-secA-q2-art': ('014', 1, (396, 318, 533, 441)),
+    'technology-2012-OL-paper-secA-q3-art': ('014', 1, (349, 601, 532, 737)),
+    'technology-2012-OL-paper-secA-q4-art': ('014', 2, (418, 78, 521, 264)),
+    'technology-2012-OL-paper-secA-q5-art': ('014', 2, (388, 311, 524, 434)),
+    'technology-2012-OL-paper-secA-q6-art': ('014', 2, (354, 579, 520, 722)),
+    'technology-2012-OL-paper-secA-q7-art': ('014', 3, (82, 60, 275, 211)),
+    'technology-2012-OL-paper-secA-q8-art': ('014', 3, (367, 324, 529, 495)),
+    'technology-2012-OL-paper-secA-q9-art': ('014', 3, (412, 558.5, 525, 636)),
+    'technology-2012-OL-paper-secA-q10-art': ('014', 4, (376, 129, 523, 228)),
+    'technology-2012-OL-paper-secA-q11-art': ('014', 4, (382, 339, 519, 495)),
+    'technology-2012-OL-paper-secA-q12-art': ('014', 4, (208, 600, 382, 752)),
+    'technology-2012-OL-paper-secB-q2a-art': ('015', 1, (400, 63, 562, 200)),
+    'technology-2012-OL-paper-secB-q2b-art': ('015', 1, (375, 216, 542, 323)),
+    'technology-2012-OL-paper-secB-q2c-art': ('015', 1, (85, 486, 286, 580)),
+    'technology-2012-OL-paper-secB-q2d-art': ('015', 1, (400, 652, 540, 759)),
+    'technology-2012-OL-paper-secB-q3a-art': ('015', 2, (388, 82, 566, 229)),
+    'technology-2012-OL-paper-secB-q3b-art': ('015', 2, (62, 256, 275, 404)),
+    'technology-2012-OL-paper-secB-q3c-art': ('015', 2, (416, 451, 563, 612)),
+    'technology-2012-OL-paper-secB-q3d-art': ('015', 2, (410, 645, 568, 710)),
+    # 1(b): the PIC chip and (iii)'s given flowchart, the asks between them blanked.
+    'technology-2012-OL-paper-secC-q1b-art': ('015', 3, (95, 165, 532, 432)),
+    'technology-2012-OL-paper-secC-q1c-art': ('015', 3, (412, 510, 550, 603)),
+    'technology-2012-OL-paper-secC-q1d-art': ('015', 3, (100, 718, 505, 790)),
+    'technology-2012-OL-paper-secC-q2a-art': ('015', 4, (480, 77, 575, 151)),
+    'technology-2012-OL-paper-secC-q2b-art': ('015', 4, (285, 205, 568, 382)),
+    'technology-2012-OL-paper-secC-q2c-art': ('015', 4, (55, 443, 132, 557)),
+    'technology-2012-OL-paper-secC-q3a-art': ('015', 5, (406, 55, 530, 177)),
+    'technology-2012-OL-paper-secC-q3b-art': ('015', 5, (361, 208, 532, 321)),
+    'technology-2012-OL-paper-secC-q3c-art': ('015', 5, (415, 397, 549, 505)),
+    'technology-2012-OL-paper-secC-q3d-art': ('015', 5, (398, 635, 558, 749)),
+    'technology-2012-OL-paper-secC-q4a-art': ('015', 6, (170, 94, 420, 186)),
+    'technology-2012-OL-paper-secC-q4b-art': ('015', 6, (23, 290, 133, 447)),
+    'technology-2012-OL-paper-secC-q4c-art': ('015', 6, (426, 473, 522, 578)),
+    'technology-2012-OL-paper-secC-q4d-art': ('015', 6, (444, 664, 560, 787)),
+    'technology-2012-OL-paper-secC-q5a-art': ('015', 7, (140, 87, 410, 195)),
+    'technology-2012-OL-paper-secC-q5b-art': ('015', 7, (87, 309, 251, 445)),
+    'technology-2012-OL-paper-secC-q5c-art': ('015', 7, (343, 452, 571, 657)),
+    'technology-2012-OL-paper-secC-q5d-art': ('015', 7, (445, 681, 558, 791)),
+})
+WHITEOUT.update({
+    'technology-2012-OL-paper-secA-q5-art': [(388, 380, 405, 424)],
+    'technology-2012-OL-paper-secA-q7-art': [(82, 68, 88, 92)],
+    'technology-2012-OL-paper-secA-q9-art': [(412, 630, 494, 640), (505, 555, 526, 568)],
+    'technology-2012-OL-paper-secB-q2b-art': [(375, 286, 447, 304)],
+    'technology-2012-OL-paper-secC-q1b-art': [(95, 190, 404, 273), (95, 273.5, 532, 292), (256, 312, 532, 395)],
+    'technology-2012-OL-paper-secC-q3c-art': [(415, 419, 440, 436)],
+})
+SOLUTIONS.update({
+    'technology-2012-OL-scheme-secA-q7': (5, (311, 98, 491, 216),
+        "The marking scheme's own 2D sketch for 2012 OL Section A Q7, as the "
+        "State Examinations Commission printed it: the hazard warning light "
+        "seen from arrow A, a double-headed orange arrow on a yellow outline "
+        "with four screws."),
+    'technology-2012-OL-scheme-secB-q2b': (9, (386, 403, 450, 467),
+        "The marking scheme's own picture beside its answer to 2012 OL Section B "
+        "2(b)(i), as the State Examinations Commission printed it: a router "
+        "cutter with a rounded profile beside a block of wood."),
+    'technology-2012-OL-scheme-secB-q3b': (11, (494, 308, 556, 380),
+        "The marking scheme's own answer to 2012 OL Section B 3(b)(ii), as the "
+        "State Examinations Commission printed it: the transistor symbol with "
+        "its legs labelled C, B and E."),
+    'technology-2012-OL-scheme-secC-q1b': (12, (98, 455, 218, 748),
+        "The marking scheme's own completed flowchart for 2012 OL Section C "
+        "1(b)(iii), as the State Examinations Commission printed it: Start, then "
+        "the decision Switch ? looping back on No; on Yes, LED on, Wait 20, LED "
+        "off, Stop."),
+    'technology-2012-OL-scheme-secC-q2c': (15, (140, 278, 355, 375),
+        "The marking scheme's own sketch for 2012 OL Section C 2(c)(ii), as the "
+        "State Examinations Commission printed it: a seven segment display, "
+        "captioned Seven Segment Display, and the segments lit to show 5, "
+        "captioned Number Five."),
+    'technology-2012-OL-scheme-secC-q2d': (15, (115, 503, 382, 750),
+        "The marking scheme's own answers for 2012 OL Section C 2(d), as the "
+        "State Examinations Commission printed them: (i) an AND gate symbol, "
+        "inputs Input A and Input B, output Output C; (ii) the AND gate truth "
+        "table, A B C: 0 0 0, 0 1 0, 1 0 0, 1 1 1."),
+    'technology-2012-OL-scheme-secC-q5d': (21, (55, 585, 270, 787),
+        "The marking scheme's own sketches for 2012 OL Section C 5(d)(ii), as the "
+        "State Examinations Commission printed them: an injection moulding "
+        "machine labelled Hopper, Heater, Screw, Ram, Hydraulic Fluid, Motor and "
+        "Mould, and a cutaway photograph of a moulding machine with its parts "
+        "labelled."),
+})
+ASK_ONLY.update({
+    'technology-2012-OL-scheme-secA-q7',
+    'technology-2012-OL-scheme-secC-q2d',
+})
+WHITEOUT.update({
+    'technology-2012-OL-scheme-secC-q2d': [(115, 586, 382, 610)],
+})
+LABEL_ZONES.setdefault((2012, 'ol'), []).extend([
+    (3, (349, 601, 532, 737)),     # Q3's bridge reprinted, A
+    (5, (105, 60, 275, 223)),      # Q7's warning light reprinted, A
+    (6, (382, 339, 519, 495)),     # Q11's gears reprinted, A
+    (9, (388, 78, 562, 216)),      # 2(a)'s pencil holder, A and B
+    (10, (55, 145, 262, 240)),     # 2(c)'s Gantt chart reprinted
+    (11, (446, 84, 572, 190)),     # 3(a)'s egg timer, A
+    (11, (38, 270, 246, 418)),     # 3(b)'s circuit reprinted
+    (11, (414, 676, 560, 735)),    # 3(d)'s cause and effect diagram
+    (12, (400, 262, 575, 350)),    # 1(b)(i)'s chip sketches, groove and pin 1
+    (13, (105, 612, 500, 684)),    # 1(d)'s three components, A B C
+    (14, (286, 409, 568, 586)),    # 2(b)'s circuit reprinted
+    (21, (372, 55, 568, 246)),     # 5(c)'s aircraft and its table
+    (21, (445, 443, 558, 553)),    # 5(d)'s headrest, its caption
+])
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -3745,6 +3882,11 @@ ASK_ZONES = {
 # pattern: (year, level, section, q, letter, roman) -> [regex, ...]. Each one
 # was read off the rendered page.
 ASK_STRIP = {
+    # 2012 Ordinary: answer-line numbers and labels, and Q7's arrow letter.
+    (2012, 'ol', 'A', 1, None, None): [r' 1 2(?= \(ii\))'],
+    (2012, 'ol', 'A', 7, None, None): [r'^A\s+'],
+    (2012, 'ol', 'A', 11, None, None): [r' A:(?= Give)'],
+    (2012, 'ol', 'C', 5, 'd', None): [r'(?:^|\s+)Back of headrest Page 8 of 8 Blank Page Blank Page$'],
     # 2017 Higher Q3: the walker's lead-in rule took the circuit's letters and
     # the box label "Function:" as a lead-in, and "Name:" closes the line.
     (2017, 'hl', 'A', 3, None, 'i'): [r'^A B Function:\s+', r'\s+Name:$'],
@@ -3834,6 +3976,14 @@ ASK_FROM_STEM = {
     # 3(b)(ii): its list of operators, * (asterisk), + (plus symbol), " "
     # (quotation marks), which (i) and (iii) were showing as their stem.
     (2017, 'hl', 'C', 3, 'b'): 'ii',
+}
+
+# The last words of a stem sentence that open a printed line with a part
+# reference, which the census reads as the letter's head: 2012 Ordinary 2(c)
+# prints "Shown is a simple Gantt chart for the manufacture of the pencil
+# holder at" / "2(a) above." (year, level, section, q, letter) -> the words.
+STEM_JOIN = {
+    (2012, 'ol', 'B', 2, 'c'): '2(a) above.',
 }
 
 # The tail of a question's stem that belongs to one roman's ask:

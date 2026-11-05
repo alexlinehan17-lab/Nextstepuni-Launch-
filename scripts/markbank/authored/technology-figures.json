@@ -120,6 +120,156 @@
   ]
  },
  {
+  "file": "technology-2012-OL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a blue pen with a curved, shaped grip.",
+  "questionRef": "2012 OL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   354,
+   579,
+   520,
+   722
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The EPA logo: the letters epa under a swirl of green-blue lines.",
+  "questionRef": "2012 OL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   412,
+   558.5,
+   525,
+   636
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Close-up photograph of brass clockwork gears, an arrow labelled A pointing at one toothed wheel and the part held against it.",
+  "questionRef": "2012 OL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   382,
+   339,
+   519,
+   495
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing of a cylindrical electric motor with a short shaft, drawn in outline only.",
+  "questionRef": "2012 OL Section A Q12",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   208,
+   600,
+   382,
+   752
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secB-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A Gantt chart headed Task/Duration: Mark out base, Manufacture base, Mark out holder, Manufacture holder and Project assembly, each shaded in later columns.",
+  "questionRef": "2012 OL Section B Q2(c)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   85,
+   486,
+   286,
+   580
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit diagram between +V and -V: potentiometer C, a switch, capacitor D marked +, a resistor to transistor B, and component A in series with a resistor.",
+  "questionRef": "2012 OL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   62,
+   256,
+   275,
+   404
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Three pneumatic circuit symbols labelled A, B and C.",
+  "questionRef": "2012 OL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   100,
+   718,
+   505,
+   790
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an 8-pin 555 IC chip marked NE555N.",
+  "questionRef": "2012 OL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   480,
+   77,
+   575,
+   151
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a decorated glass Coca-Cola bottle.",
+  "questionRef": "2012 OL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   23,
+   290,
+   133,
+   447
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a red and black folding hair dryer.",
+  "questionRef": "2012 OL Section C Q4(d)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   444,
+   664,
+   560,
+   787
+  ]
+ },
+ {
   "file": "technology-2013-HL-paper-secA-q2-art.png",
   "kind": "figure",
   "truncated": false,
@@ -9660,6 +9810,426 @@
   ]
  },
  {
+  "file": "technology-2012-OL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of Steve Jobs speaking in front of a large white Apple logo.",
+  "questionRef": "2012 OL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   398,
+   114,
+   518,
+   234
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Exploded drawing of a smart card, its gold contact chip lifted above the card.",
+  "questionRef": "2012 OL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   396,
+   318,
+   533,
+   441
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a white arched concrete footbridge across a rocky gorge, an arrow labelled A pointing at one of its sloping legs.",
+  "questionRef": "2012 OL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   349,
+   601,
+   532,
+   737
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a small round sensor with a zig-zag track on its face and two long wire legs.",
+  "questionRef": "2012 OL Section A Q4",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   418,
+   78,
+   521,
+   264
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of four rechargeable AA batteries.",
+  "questionRef": "2012 OL Section A Q5",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   388,
+   311,
+   524,
+   434
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "3D drawing of an arrow-shaped hazard warning light, orange on a yellow back plate with four screws, an arrow labelled A pointing at its left end.",
+  "questionRef": "2012 OL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   82,
+   60,
+   275,
+   211
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a hooded figure walking past a burning car.",
+  "questionRef": "2012 OL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   367,
+   324,
+   529,
+   495
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a stone-faced two-storey house with a slate roof.",
+  "questionRef": "2012 OL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   376,
+   129,
+   523,
+   228
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secB-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "3D drawing of a pencil holder: a bent green plastic part labelled A, holding a pencil, fixed on a wooden base labelled B.",
+  "questionRef": "2012 OL Section B Q2(a)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   400,
+   63,
+   562,
+   200
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of the corner of the wooden base with its top edge rounded, and a Safety matters warning sign.",
+  "questionRef": "2012 OL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   375,
+   216,
+   542,
+   323
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secB-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Screenshot of SolidWorks showing a 3D model of a threaded cylindrical part.",
+  "questionRef": "2012 OL Section B Q2(d)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   400,
+   652,
+   540,
+   759
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secB-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendering of a blue egg timer with a yellow dome and push buttons, an arrow labelled A pointing at its moulded blue body.",
+  "questionRef": "2012 OL Section B Q3(a)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   388,
+   82,
+   566,
+   229
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secB-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Simulated printed circuit board for the timer, wired to a PP3 9V battery and two push switches.",
+  "questionRef": "2012 OL Section B Q3(c)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   416,
+   451,
+   563,
+   612
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secB-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Cause and effect diagram for a Faulty Torch, with the causes Switch?, Bulb?, People? and Battery?",
+  "questionRef": "2012 OL Section B Q3(d)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   410,
+   645,
+   568,
+   710
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an 18-pin chip; below it, the given flowchart: Start, then a decision Switch ? with a No exit to the left and a Yes exit downwards.",
+  "questionRef": "2012 OL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   95,
+   165,
+   532,
+   432
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the Quince robot, a tracked vehicle with an arm, climbing a kerb.",
+  "questionRef": "2012 OL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   412,
+   510,
+   550,
+   603
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit diagram of a 555 IC between +V and 0V: a switch, a resistor, a variable resistor and capacitor B on the timing pins, the output through resistor A to four light-emitting diodes in parallel.",
+  "questionRef": "2012 OL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   285,
+   205,
+   568,
+   382
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of cardboard boxes on a roller conveyor.",
+  "questionRef": "2012 OL Section C Q2(c)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   55,
+   443,
+   132,
+   557
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of a desktop computer with monitor, tower, keyboard, mouse and a disc.",
+  "questionRef": "2012 OL Section C Q3(a)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   406,
+   55,
+   530,
+   177
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a graphics card labelled Memory, Processor Heatsink, Processor Fan and Motherboard Connection.",
+  "questionRef": "2012 OL Section C Q3(b)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   361,
+   208,
+   532,
+   321
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A cloud labelled CLOUD above a smartphone, a tablet and a laptop, wireless signals between them.",
+  "questionRef": "2012 OL Section C Q3(c)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   415,
+   397,
+   549,
+   505
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a meeting room, people round a table with laptops facing two screens, one showing a man speaking.",
+  "questionRef": "2012 OL Section C Q3(d)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   398,
+   635,
+   558,
+   749
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q4a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a laptop computer and a three-tier wedding cake.",
+  "questionRef": "2012 OL Section C Q4(a)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   170,
+   94,
+   420,
+   186
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a heap of discarded computer equipment: monitors, a keyboard, a tower and cables.",
+  "questionRef": "2012 OL Section C Q4(c)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   426,
+   473,
+   522,
+   578
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q5a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a pair of pincers and a metal drinks can.",
+  "questionRef": "2012 OL Section C Q5(a)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   140,
+   87,
+   410,
+   195
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a Boeing 787 Dreamliner flying over Dublin Airport's Terminal 2.",
+  "questionRef": "2012 OL Section C Q5(b)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   87,
+   309,
+   251,
+   445
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q5c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Exploded drawing of an airliner, sections labelled A to E, and a table: A Forward fuselage, USA; B Centre fuselage, Italy; C Wing, Japan; D Wing Tip, South Korea; E Trailing Edge, Australia.",
+  "questionRef": "2012 OL Section C Q5(c)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   343,
+   452,
+   571,
+   657
+  ]
+ },
+ {
+  "file": "technology-2012-OL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of aircraft seat backs, an arrow pointing to the moulded back of a headrest, captioned Back of headrest.",
+  "questionRef": "2012 OL Section C Q5(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   445,
+   681,
+   558,
+   791
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -12703,5 +13273,61 @@
   "description": "The marking scheme's own sketch for 2012 HL Section C 5(c)(ii), as the State Examinations Commission printed it: a plastic sheet drawn down over a mould on a vacuum forming table, an arrow showing the air drawn out underneath.",
   "solution": true,
   "questionRef": "2012 HL Section C Q5(c)"
+ },
+ {
+  "file": "technology-2012-OL-scheme-secA-q7.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own 2D sketch for 2012 OL Section A Q7, as the State Examinations Commission printed it: the hazard warning light seen from arrow A, a double-headed orange arrow on a yellow outline with four screws.",
+  "solution": true,
+  "questionRef": "2012 OL Section A Q7"
+ },
+ {
+  "file": "technology-2012-OL-scheme-secB-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture beside its answer to 2012 OL Section B 2(b)(i), as the State Examinations Commission printed it: a router cutter with a rounded profile beside a block of wood.",
+  "solution": true,
+  "questionRef": "2012 OL Section B Q2(b)"
+ },
+ {
+  "file": "technology-2012-OL-scheme-secB-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2012 OL Section B 3(b)(ii), as the State Examinations Commission printed it: the transistor symbol with its legs labelled C, B and E.",
+  "solution": true,
+  "questionRef": "2012 OL Section B Q3(b)"
+ },
+ {
+  "file": "technology-2012-OL-scheme-secC-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own completed flowchart for 2012 OL Section C 1(b)(iii), as the State Examinations Commission printed it: Start, then the decision Switch ? looping back on No; on Yes, LED on, Wait 20, LED off, Stop.",
+  "solution": true,
+  "questionRef": "2012 OL Section C Q1(b)"
+ },
+ {
+  "file": "technology-2012-OL-scheme-secC-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2012 OL Section C 2(c)(ii), as the State Examinations Commission printed it: a seven segment display, captioned Seven Segment Display, and the segments lit to show 5, captioned Number Five.",
+  "solution": true,
+  "questionRef": "2012 OL Section C Q2(c)"
+ },
+ {
+  "file": "technology-2012-OL-scheme-secC-q2d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answers for 2012 OL Section C 2(d), as the State Examinations Commission printed them: (i) an AND gate symbol, inputs Input A and Input B, output Output C; (ii) the AND gate truth table, A B C: 0 0 0, 0 1 0, 1 0 0, 1 1 1.",
+  "solution": true,
+  "questionRef": "2012 OL Section C Q2(d)"
+ },
+ {
+  "file": "technology-2012-OL-scheme-secC-q5d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketches for 2012 OL Section C 5(d)(ii), as the State Examinations Commission printed them: an injection moulding machine labelled Hopper, Heater, Screw, Ram, Hydraulic Fluid, Motor and Mould, and a cutaway photograph of a moulding machine with its parts labelled.",
+  "solution": true,
+  "questionRef": "2012 OL Section C Q5(d)"
  }
 ]
