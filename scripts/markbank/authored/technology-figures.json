@@ -1,5 +1,230 @@
 [
  {
+  "file": "technology-2013-HL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a child's bead maze toy: coloured beads on looped wires over two shaped bases.",
+  "questionRef": "2013 HL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   400,
+   338,
+   563,
+   489
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A gear train drawn as pitch circles: Gear A 40 teeth meshing with Gear B 20 teeth; Gear C 60 teeth on the same shaft as Gear B, meshing with Gear D 15 teeth.",
+  "questionRef": "2013 HL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   335,
+   255,
+   555,
+   372
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A mobile crane lifting a load marked 1000 N, with an arrow showing a lift of 6 m.",
+  "questionRef": "2013 HL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   360,
+   575,
+   558,
+   730
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Three yellow triangular safety signs: flames; a liquid dripping from test tubes onto a hand and a surface; a lightning bolt.",
+  "questionRef": "2013 HL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   108,
+   128,
+   498,
+   227
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a wall-mounted can crusher being used, and a diagram of it with parts labelled link arm, main arm, pivot pin and can.",
+  "questionRef": "2013 HL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   92,
+   474,
+   512,
+   620
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the Dublin Convention Centre, a building with a tilted glass drum at its front.",
+  "questionRef": "2013 HL Section A Q13",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   399,
+   457,
+   538,
+   559
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secA-q14-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a red schoolbag with its parts labelled Straps, Body and Fastener.",
+  "questionRef": "2013 HL Section A Q14",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   378,
+   122,
+   563,
+   322
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An exploded line drawing of a stool: the seat and two bent legs pulled apart along dotted lines, captioned Exploded view.",
+  "questionRef": "2013 HL Section A Q15",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   62,
+   552,
+   212,
+   678
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secB-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A logic circuit: switches A and B into an OR gate; B also through a NOT gate; the OR and NOT outputs into an AND gate giving C.",
+  "questionRef": "2013 HL Section B Q2(d)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   335,
+   680,
+   535,
+   768
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of an athlete on a hand-pedalled tricycle and of the tricycle, and a drawing of two sprockets joined by a chain, captioned drive-chain.",
+  "questionRef": "2013 HL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   77,
+   236,
+   480,
+   432
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A pneumatic circuit: a push-button valve captioned 5/2 Valve connected by two lines to a double-acting cylinder.",
+  "questionRef": "2013 HL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   143,
+   684,
+   476,
+   790
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A voltage divider between +6V and 0V: a light dependent resistor R1 above a fixed resistor R2 = 5600 ohms, with the output V taken between them.",
+  "questionRef": "2013 HL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   420,
+   222,
+   573,
+   372
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A garage alarm circuit: switches marked door and window feed a box marked Logic Gate, whose output drives a transistor switching a buzzer.",
+  "questionRef": "2013 HL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   46,
+   586,
+   300,
+   750
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A perceptual map: a vertical axis from Low Cost to Expensive crossing a horizontal axis from Economy to Performance, with A circled in the low cost, economy quarter and B in the expensive, performance quarter.",
+  "questionRef": "2013 HL Section C Q4(c)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   120,
+   208,
+   497,
+   368
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a door wedge, captioned Door wedge with siren is placed at the bottom of door to limit entry, and a red key fob, captioned Key fob alarm is activated by pressing button to emit a high-pitched sound.",
+  "questionRef": "2013 HL Section C Q5(b)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   60,
+   238,
+   563,
+   373
+  ]
+ },
+ {
   "file": "technology-2014-HL-paper-secA-q5-art.png",
   "kind": "figure",
   "truncated": false,
@@ -7995,6 +8220,306 @@
   ]
  },
  {
+  "file": "technology-2013-HL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Aerial photograph of a hydro-electric station on a wide river channel between fields.",
+  "questionRef": "2013 HL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   383,
+   140,
+   554,
+   252
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A rendering of a geodesic dome built from triangular frames.",
+  "questionRef": "2013 HL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   383,
+   614,
+   555,
+   751
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a yellow mining helmet with a lamp on the front.",
+  "questionRef": "2013 HL Section A Q4",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   425,
+   167,
+   551,
+   293
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an electric motor with a shaft at one end and a terminal box on top.",
+  "questionRef": "2013 HL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   398,
+   624,
+   540,
+   732
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a digital camera with a zoom lens.",
+  "questionRef": "2013 HL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   423,
+   94,
+   563,
+   196
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A process chart from Start to dress bear (15 mins) through three parallel lines: cut clothes (10 mins), sew clothes (10 mins), embroidery (10 mins); cut fur (10 mins), stuff/sew fur (30 mins); cut accessories (3 mins), sew accessories (10 mins).",
+  "questionRef": "2013 HL Section A Q12",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   88,
+   120,
+   512,
+   252
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secB-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a pack of Sugru mouldable glue.",
+  "questionRef": "2013 HL Section B Q2(a)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   494,
+   101,
+   569,
+   225
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Four photographs of Sugru in use: a moulded grip on a winder handle, on a hacksaw handle, as a phone stand, and on a tap handle.",
+  "questionRef": "2013 HL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   110,
+   264,
+   492,
+   340
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secB-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A drawing of a relay: a coil on an iron core, a pivoted armature and a pair of switch contacts, with arrows labelled A, B and C.",
+  "questionRef": "2013 HL Section B Q2(c)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   440,
+   508,
+   582,
+   624
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secB-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a skydiver in a pressure suit and helmet in free fall.",
+  "questionRef": "2013 HL Section B Q3(d)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   406,
+   625,
+   586,
+   747
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q1a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an orange robotic arm welding, sparks flying.",
+  "questionRef": "2013 HL Section C Q1(a)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   399,
+   89,
+   550,
+   188
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a white humanoid robot waving.",
+  "questionRef": "2013 HL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   459,
+   463,
+   540,
+   597
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an LED torch, and the note R = (Voltage - Vf) over If, written as a fraction.",
+  "questionRef": "2013 HL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   300,
+   97,
+   571,
+   212
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An illustration of a wireless router linked to two laptops and a phone.",
+  "questionRef": "2013 HL Section C Q3(b)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   434,
+   216,
+   592,
+   322
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a laptop on a cooling stand, arrows showing air flow.",
+  "questionRef": "2013 HL Section C Q3(c)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   438,
+   428,
+   578,
+   557
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q4a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of five smartphones standing in a row.",
+  "questionRef": "2013 HL Section C Q4(a)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   383,
+   132,
+   565,
+   313
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A data table, Day (July 11th to July 19th) and No. of defects (10, 8, 11, 10, 9, 10, 12), above pictures of a production line, a cereal box and a bowl of cornflakes.",
+  "questionRef": "2013 HL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   40,
+   383,
+   582,
+   548
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of croissants on a tray, tablet computers, and cars on an assembly line.",
+  "questionRef": "2013 HL Section C Q4(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   85,
+   606,
+   547,
+   736
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q5c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a blue vacuum-formed toy car body.",
+  "questionRef": "2013 HL Section C Q5(c)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   390,
+   478,
+   536,
+   570
+  ]
+ },
+ {
+  "file": "technology-2013-HL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of shredded plastic waste in a glass column above a yellow liquid.",
+  "questionRef": "2013 HL Section C Q5(d)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   355,
+   672,
+   541,
+   779
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -10766,5 +11291,117 @@
   "description": "The marking scheme's own sketch for 2014 OL Section C 5(a)(ii), as the State Examinations Commission printed it: a sheet of plywood with its layers stepped back, arrows showing the grain of alternate veneers at right angles.",
   "solution": true,
   "questionRef": "2014 OL Section C Q5(a)"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secA-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2013 HL Section A Q6, as the State Examinations Commission printed it: Input power = V x I = 240 x 12 = 2880 watts; Efficiency = Output power over Input power = 2400 over 2880 = 0.83 (written as stacked fractions) = 83%.",
+  "solution": true,
+  "questionRef": "2013 HL Section A Q6"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secA-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2013 HL Section A Q8(ii), as the State Examinations Commission printed it: Gear ratio = Driven over Driver = B x D over A x C = 20 x 15 over 40 x 60 = 1 over 8 (written as stacked fractions); Ratio = 1:8.",
+  "solution": true,
+  "questionRef": "2013 HL Section A Q8"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secA-q9.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2013 HL Section A Q9, as the State Examinations Commission printed it: Work = Force x Distance = 1000 x 6 = 6000 Joules; Power = Work over Time = 6000 over 5 (written as stacked fractions) = 1200 watts.",
+  "solution": true,
+  "questionRef": "2013 HL Section A Q9"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secA-q10.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2013 HL Section A Q10, as the State Examinations Commission printed it: the three signs above a table giving, for each, the Hazard (Flammable; Corrosive; Electrical) and Where used (Gas containers, Fuel tankers, etc.; Chemical bottles, Car batteries, etc.; Live electrical equipment in vicinity, Electrical boxes, etc.).",
+  "solution": true,
+  "questionRef": "2013 HL Section A Q10"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secB-q2d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own truth table for 2013 HL Section B 2(d)(ii), as the State Examinations Commission printed it, columns A, B, C: 0 0 gives 0; 1 0 gives 1; 0 1 gives 0; 1 1 gives 0.",
+  "solution": true,
+  "questionRef": "2013 HL Section B Q2(d)"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secB-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own photograph for 2013 HL Section B 3(b)(iii), as the State Examinations Commission printed it: a chain tensioner on a bicycle's rear hub, an arrow pointing to it.",
+  "solution": true,
+  "questionRef": "2013 HL Section B Q3(b)"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secB-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own photograph for 2013 HL Section B 3(c)(i), as the State Examinations Commission printed it: a spoked wheel's hub mounted on a fork with a quick-release skewer.",
+  "solution": true,
+  "questionRef": "2013 HL Section B Q3(c)"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secC-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own flowcharts for 2013 HL Section C 1(b)(ii), as the State Examinations Commission printed them: Start, LED/Buzzer Off, a decision Switch 1? looping back on No, Wait 2 min, then LED/Buzzer on, Wait 0.5 sec, LED/Buzzer off, Wait 0.5 sec, a decision Switch 2? looping back on No and returning to Start on Yes, with a Re-set check; beside it an alternative written with the program's own commands, captioned Alternative solution, etc.",
+  "solution": true,
+  "questionRef": "2013 HL Section C Q1(b)"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secC-q2a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2013 HL Section C 2(a)(ii), as the State Examinations Commission printed it: R = (Voltage - Vf) over If; R = (9-2) over 0.015 = 467 ohms, written as stacked fractions.",
+  "solution": true,
+  "questionRef": "2013 HL Section C Q2(a)"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secC-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answers for 2013 HL Section C 2(b)(i) and (ii), as the State Examinations Commission printed them: V = R2 over (R1 + R2) x 6V; (i) 5600 over (2000 + 5600) x 6 = 4.4V; (ii) 5600 over (20000 + 5600) x 6 = 1.3V; and the drawn circuit, the LDR and variable resistor and R1, R2 feeding an op-amp whose output drives a transistor and a relay switching a 12V lamp.",
+  "solution": true,
+  "questionRef": "2013 HL Section C Q2(b)"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secC-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2013 HL Section C 2(c)(i), as the State Examinations Commission printed it: a cutaway DC motor labelled armature, brushes and commutator, captioned Motor parts.",
+  "solution": true,
+  "questionRef": "2013 HL Section C Q2(c)"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secC-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2013 HL Section C 3(d)(ii), as the State Examinations Commission printed it: an analogue signal wave plotted as Amplitude against Time, sampled at evenly spaced vertical lines marked Sampling rate.",
+  "solution": true,
+  "questionRef": "2013 HL Section C Q3(d)"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secC-q4b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own control chart for 2013 HL Section C 4(b)(ii), as the State Examinations Commission printed it: UCL, Mean and LCL lines with the seven daily values plotted between them.",
+  "solution": true,
+  "questionRef": "2013 HL Section C Q4(b)"
+ },
+ {
+  "file": "technology-2013-HL-scheme-secC-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own drawing for 2013 HL Section C 5(b)(ii), as the State Examinations Commission printed it: an injection moulding machine labelled Hopper, Heater, Ram, Hydraulic Fluid, Motor, Screw and Mould.",
+  "solution": true,
+  "questionRef": "2013 HL Section C Q5(b)"
  }
 ]

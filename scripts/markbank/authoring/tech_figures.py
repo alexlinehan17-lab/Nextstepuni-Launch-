@@ -1927,6 +1927,112 @@ REVIEWED.update({
         'letters FSC.',
 })
 
+# 2013 Higher, each crop rendered and looked at.
+REVIEWED.update({
+    'technology-2013-HL-paper-secA-q1-art':
+        'Aerial photograph of a hydro-electric station on a wide river channel '
+        'between fields.',
+    'technology-2013-HL-paper-secA-q2-art':
+        'Photograph of a child\'s bead maze toy: coloured beads on looped wires '
+        'over two shaped bases.',
+    'technology-2013-HL-paper-secA-q3-art':
+        'A rendering of a geodesic dome built from triangular frames.',
+    'technology-2013-HL-paper-secA-q4-art':
+        'Photograph of a yellow mining helmet with a lamp on the front.',
+    'technology-2013-HL-paper-secA-q6-art':
+        'Photograph of an electric motor with a shaft at one end and a terminal '
+        'box on top.',
+    'technology-2013-HL-paper-secA-q7-art':
+        'Photograph of a digital camera with a zoom lens.',
+    'technology-2013-HL-paper-secA-q8-art':
+        'A gear train drawn as pitch circles: Gear A 40 teeth meshing with Gear B '
+        '20 teeth; Gear C 60 teeth on the same shaft as Gear B, meshing with '
+        'Gear D 15 teeth.',
+    'technology-2013-HL-paper-secA-q9-art':
+        'A mobile crane lifting a load marked 1000 N, with an arrow showing a '
+        'lift of 6 m.',
+    'technology-2013-HL-paper-secA-q10-art':
+        'Three yellow triangular safety signs: flames; a liquid dripping from '
+        'test tubes onto a hand and a surface; a lightning bolt.',
+    'technology-2013-HL-paper-secA-q11-art':
+        'Photographs of a wall-mounted can crusher being used, and a diagram of '
+        'it with parts labelled link arm, main arm, pivot pin and can.',
+    'technology-2013-HL-paper-secA-q12-art':
+        'A process chart from Start to dress bear (15 mins) through three '
+        'parallel lines: cut clothes (10 mins), sew clothes (10 mins), '
+        'embroidery (10 mins); cut fur (10 mins), stuff/sew fur (30 mins); cut '
+        'accessories (3 mins), sew accessories (10 mins).',
+    'technology-2013-HL-paper-secA-q13-art':
+        'Photograph of the Dublin Convention Centre, a building with a tilted '
+        'glass drum at its front.',
+    'technology-2013-HL-paper-secA-q14-art':
+        'Photograph of a red schoolbag with its parts labelled Straps, Body and '
+        'Fastener.',
+    'technology-2013-HL-paper-secA-q15-art':
+        'An exploded line drawing of a stool: the seat and two bent legs pulled '
+        'apart along dotted lines, captioned Exploded view.',
+    'technology-2013-HL-paper-secB-q2a-art':
+        'Photograph of a pack of Sugru mouldable glue.',
+    'technology-2013-HL-paper-secB-q2b-art':
+        'Four photographs of Sugru in use: a moulded grip on a winder handle, on '
+        'a hacksaw handle, as a phone stand, and on a tap handle.',
+    'technology-2013-HL-paper-secB-q2c-art':
+        'A drawing of a relay: a coil on an iron core, a pivoted armature and a '
+        'pair of switch contacts, with arrows labelled A, B and C.',
+    'technology-2013-HL-paper-secB-q2d-art':
+        'A logic circuit: switches A and B into an OR gate; B also through a NOT '
+        'gate; the OR and NOT outputs into an AND gate giving C.',
+    'technology-2013-HL-paper-secB-q3b-art':
+        'Photographs of an athlete on a hand-pedalled tricycle and of the '
+        'tricycle, and a drawing of two sprockets joined by a chain, captioned '
+        'drive-chain.',
+    'technology-2013-HL-paper-secB-q3d-art':
+        'Photograph of a skydiver in a pressure suit and helmet in free fall.',
+    'technology-2013-HL-paper-secC-q1a-art':
+        'Photograph of an orange robotic arm welding, sparks flying.',
+    'technology-2013-HL-paper-secC-q1c-art':
+        'Photograph of a white humanoid robot waving.',
+    'technology-2013-HL-paper-secC-q1d-art':
+        'A pneumatic circuit: a push-button valve captioned 5/2 Valve connected '
+        'by two lines to a double-acting cylinder.',
+    'technology-2013-HL-paper-secC-q2a-art':
+        'Photograph of an LED torch, and the note R = (Voltage - Vf) over If, '
+        'written as a fraction.',
+    'technology-2013-HL-paper-secC-q2b-art':
+        'A voltage divider between +6V and 0V: a light dependent resistor R1 '
+        'above a fixed resistor R2 = 5600 ohms, with the output V taken between '
+        'them.',
+    'technology-2013-HL-paper-secC-q2d-art':
+        'A garage alarm circuit: switches marked door and window feed a box '
+        'marked Logic Gate, whose output drives a transistor switching a buzzer.',
+    'technology-2013-HL-paper-secC-q3b-art':
+        'An illustration of a wireless router linked to two laptops and a phone.',
+    'technology-2013-HL-paper-secC-q3c-art':
+        'Photograph of a laptop on a cooling stand, arrows showing air flow.',
+    'technology-2013-HL-paper-secC-q4a-art':
+        'Photograph of five smartphones standing in a row.',
+    'technology-2013-HL-paper-secC-q4b-art':
+        'A data table, Day (July 11th to July 19th) and No. of defects (10, 8, '
+        '11, 10, 9, 10, 12), above pictures of a production line, a cereal box '
+        'and a bowl of cornflakes.',
+    'technology-2013-HL-paper-secC-q4c-art':
+        'A perceptual map: a vertical axis from Low Cost to Expensive crossing a '
+        'horizontal axis from Economy to Performance, with A circled in the low '
+        'cost, economy quarter and B in the expensive, performance quarter.',
+    'technology-2013-HL-paper-secC-q4d-art':
+        'Photographs of croissants on a tray, tablet computers, and cars on an '
+        'assembly line.',
+    'technology-2013-HL-paper-secC-q5b-art':
+        'Photographs of a door wedge, captioned Door wedge with siren is placed '
+        'at the bottom of door to limit entry, and a red key fob, captioned Key '
+        'fob alarm is activated by pressing button to emit a high-pitched sound.',
+    'technology-2013-HL-paper-secC-q5c-art':
+        'Photograph of a blue vacuum-formed toy car body.',
+    'technology-2013-HL-paper-secC-q5d-art':
+        'Photograph of shredded plastic waste in a glass column above a yellow '
+        'liquid.',
+})
+
 REJECTED = {
     'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
     'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',

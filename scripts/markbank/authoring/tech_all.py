@@ -1005,7 +1005,10 @@ def author(bind_figures=True):
                 # rather than answering it: 2021 Higher Q3 marks the term
                 # "'patched'" and heads its answer with the term again, which
                 # shipped as a row telling the student the question.
-                bare = SCHEME_NORM(f'{raw_ask} {question_label(covered)}')
+                # The paper's multiplication sign and the scheme's letter x are
+                # one character for the reprint test ("1280 \u00d7 800" / "1280 x
+                # 800", 2013 Higher 3(c)(ii)).
+                bare = SCHEME_NORM(f'{raw_ask} {question_label(covered)}'.replace('\u00d7', 'x'))
                 # The scheme reprints the stimulus too -- 2022 Higher Q9, Q13
                 # and Q14 open their blocks with the paper's own sentence --
                 # and a line that sits inside it is no answer either.
@@ -1039,9 +1042,15 @@ def author(bind_figures=True):
                 # opens as (ii) does, not as the ask's first word.
                 ask_starts = {t[0] for t in (_tokens(seg) for seg in
                               re.split(r'\((?:i{1,3}|iv|v)\)', ask)) if t}
+                unit_key = (year, level, section, q, letter, roman)
                 kept = [p for p in points
                         if p in numbered_list
-                        or (SCHEME_NORM(p) not in bare
+                        # A scheme heading that happens to reuse the ask's words
+                        # and is a marking point, named on the scheme page
+                        # (tech_crops.KEEP_LINES): 2013 Higher Q15's "Pictorial
+                        # View" over "Two suitable graphic techniques".
+                        or p in TC.KEEP_LINES.get(unit_key, ())
+                        or (SCHEME_NORM(p.replace('\u00d7', 'x')) not in bare
                             # ...nor with an article dropped: 2015 Ordinary
                             # Q11 reprints "Explain what is meant by terms AC
                             # and DC." for the paper's "by the terms". Only a

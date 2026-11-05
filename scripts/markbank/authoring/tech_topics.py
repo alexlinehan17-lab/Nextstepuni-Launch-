@@ -309,6 +309,14 @@ TOPIC_OVERRIDES = {
     'tech-2014-ol-b2c': 'tech-core-ict',           # GPS
     'tech-2014-ol-b3a': 'tech-core-materials',     # acrylic, battery access
     'tech-2014-ol-b3d': 'tech-core-energy',        # PCB and soldering
+    # 2013 Higher.
+    'tech-2013-hl-a2': 'tech-core-design',         # toy safety criteria
+    'tech-2013-hl-a3': 'tech-core-structures',     # geodesic domes
+    'tech-2013-hl-a4': 'tech-core-design',         # model making, simulation, CAD
+    'tech-2013-hl-a5': 'tech-core-design',         # market research
+    'tech-2013-hl-a12': 'tech-core-project',       # process time, productivity
+    'tech-2013-hl-a14': 'tech-core-materials',     # materials for the bag's parts
+    'tech-2013-hl-b2b': 'tech-core-design',        # sustainability, ergonomics, marketing
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]

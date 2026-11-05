@@ -1802,6 +1802,20 @@ LISTED_STEPS = {
     # 2014 Ordinary Q10, scheme page 7: "Design parts on CAD" ... "Assemble
     # /Test, etc." -- the four main steps the ask names, set as a list.
     (2014, 'ol', 'A', 10, None, None),
+    # 2013 Higher Q2, scheme page 4: the toy's safety criteria, one per line.
+    (2013, 'hl', 'A', 2, None, None),
+    # 2013 Higher Q11, scheme page 6: each labelled part and its force, one
+    # per line ("The main arm Bending force").
+    (2013, 'hl', 'A', 11, None, None),
+}
+
+# Scheme lines that reuse the ask's own words and are nonetheless a marking
+# point, each read on the scheme page: (year, level, section, q, letter,
+# roman) -> the lines. Without this the reprint test drops them.
+KEEP_LINES = {
+    # 2013 Higher Q15, scheme page 9: the two criteria the sketch is marked
+    # on, "Pictorial View" and "Two suitable graphic techniques".
+    (2013, 'hl', 'A', 15, None, None): ('Pictorial View',),
 }
 
 # Scheme answers the printed scheme leaves unfinished, mid-sentence, each read
@@ -3163,6 +3177,191 @@ LABEL_ZONES.setdefault((2014, 'ol'), []).extend([
     (15, (488, 308, 560, 412)),    # 5(b)'s scooter, its A
 ])
 
+# 2013 Higher. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    'technology-2013-HL-paper-secA-q1-art': ('014', 1, (383, 140, 554, 252)),
+    'technology-2013-HL-paper-secA-q2-art': ('014', 1, (400, 338, 563, 489)),
+    'technology-2013-HL-paper-secA-q3-art': ('014', 1, (383, 614, 555, 751)),
+    'technology-2013-HL-paper-secA-q4-art': ('014', 2, (425, 167, 551, 293)),
+    'technology-2013-HL-paper-secA-q6-art': ('014', 2, (398, 624, 540, 732)),
+    'technology-2013-HL-paper-secA-q7-art': ('014', 3, (423, 94, 563, 196)),
+    'technology-2013-HL-paper-secA-q8-art': ('014', 3, (335, 255, 555, 372)),
+    'technology-2013-HL-paper-secA-q9-art': ('014', 3, (360, 575, 558, 730)),
+    'technology-2013-HL-paper-secA-q10-art': ('014', 4, (108, 128, 498, 227)),
+    'technology-2013-HL-paper-secA-q11-art': ('014', 4, (92, 474, 512, 620)),
+    'technology-2013-HL-paper-secA-q12-art': ('014', 5, (88, 120, 512, 252)),
+    'technology-2013-HL-paper-secA-q13-art': ('014', 5, (399, 457, 538, 559)),
+    'technology-2013-HL-paper-secA-q14-art': ('014', 6, (378, 122, 563, 322)),
+    'technology-2013-HL-paper-secA-q15-art': ('014', 6, (62, 552, 212, 678)),
+    'technology-2013-HL-paper-secB-q2a-art': ('015', 1, (494, 101, 569, 225)),
+    'technology-2013-HL-paper-secB-q2b-art': ('015', 1, (110, 264, 492, 340)),
+    'technology-2013-HL-paper-secB-q2c-art': ('015', 1, (440, 508, 582, 624)),
+    'technology-2013-HL-paper-secB-q2d-art': ('015', 1, (335, 680, 535, 768)),
+    # 3(b): the hand cycle photographs and the drive-chain, the asks between
+    # them blanked.
+    'technology-2013-HL-paper-secB-q3b-art': ('015', 2, (77, 236, 480, 432)),
+    'technology-2013-HL-paper-secB-q3d-art': ('015', 2, (406, 625, 586, 747)),
+    'technology-2013-HL-paper-secC-q1a-art': ('015', 3, (399, 89, 550, 188)),
+    'technology-2013-HL-paper-secC-q1c-art': ('015', 3, (459, 463, 540, 597)),
+    'technology-2013-HL-paper-secC-q1d-art': ('015', 3, (143, 684, 476, 790)),
+    # 2(a): the torch and (ii)'s note, R = (Voltage - Vf) over If.
+    'technology-2013-HL-paper-secC-q2a-art': ('015', 4, (300, 97, 571, 212)),
+    'technology-2013-HL-paper-secC-q2b-art': ('015', 4, (420, 222, 573, 372)),
+    'technology-2013-HL-paper-secC-q2d-art': ('015', 4, (46, 586, 300, 750)),
+    'technology-2013-HL-paper-secC-q3b-art': ('015', 5, (434, 216, 592, 322)),
+    'technology-2013-HL-paper-secC-q3c-art': ('015', 5, (438, 428, 578, 557)),
+    'technology-2013-HL-paper-secC-q4a-art': ('015', 6, (383, 132, 565, 313)),
+    # 4(b): the data table and the production pictures under it.
+    'technology-2013-HL-paper-secC-q4b-art': ('015', 6, (40, 383, 582, 548)),
+    'technology-2013-HL-paper-secC-q4c-art': ('015', 7, (120, 208, 497, 368)),
+    'technology-2013-HL-paper-secC-q4d-art': ('015', 7, (85, 606, 547, 736)),
+    'technology-2013-HL-paper-secC-q5b-art': ('015', 8, (60, 238, 563, 373)),
+    'technology-2013-HL-paper-secC-q5c-art': ('015', 8, (390, 478, 536, 570)),
+    'technology-2013-HL-paper-secC-q5d-art': ('015', 8, (355, 672, 541, 779)),
+})
+WHITEOUT.update({
+    'technology-2013-HL-paper-secB-q3b-art': [(250, 318, 480, 435)],
+    # Q14's ask ends level with the bag's top label.
+    'technology-2013-HL-paper-secA-q14-art': [(378, 122, 420, 136)],
+    # 2(b)(i)'s ask ends level with R1.
+    'technology-2013-HL-paper-secC-q2b-art': [(420, 268, 452, 284)],
+    'technology-2013-HL-paper-secC-q5b-art': [(60, 358, 470, 373), (60, 238, 470, 272)],
+    'technology-2013-HL-paper-secC-q2a-art': [(300, 94, 472, 182), (472, 160, 571, 182)],
+    # 3(d)(ii)'s ask runs over the top of the scheme's sound-wave picture.
+    'technology-2013-HL-scheme-secC-q3d': [(452, 677, 545, 692)],
+})
+FIGURE_SHARED.update({
+    # 3(c): "the hand cycle shown above".
+    'technology-2013-HL-paper-secB-q3c-art': 'technology-2013-HL-paper-secB-q3b-art',
+})
+LABEL_KEYS.update({
+    # 2(c)(i): the scheme's own words for the relay's letters.
+    (2013, 'hl', 'B', 2, 'c'): [
+        {'letter': 'A', 'meaning': 'the armature'},
+        {'letter': 'B', 'meaning': 'the switch contacts'},
+        {'letter': 'C', 'meaning': 'the coil'}],
+})
+SOLUTIONS.update({
+    'technology-2013-HL-scheme-secA-q6': (4, (70, 630, 388, 757),
+        "The marking scheme's own answer to 2013 HL Section A Q6, as the State "
+        "Examinations Commission printed it: Input power = V x I = 240 x 12 = "
+        "2880 watts; Efficiency = Output power over Input power = 2400 over "
+        "2880 = 0.83 (written as stacked fractions) = 83%."),
+    'technology-2013-HL-scheme-secA-q8': (5, (60, 398, 534, 516),
+        "The marking scheme's own answer to 2013 HL Section A Q8(ii), as the "
+        "State Examinations Commission printed it: Gear ratio = Driven over "
+        "Driver = B x D over A x C = 20 x 15 over 40 x 60 = 1 over 8 (written as "
+        "stacked fractions); Ratio = 1:8."),
+    'technology-2013-HL-scheme-secA-q9': (5, (60, 580, 354, 754),
+        "The marking scheme's own answer to 2013 HL Section A Q9, as the State "
+        "Examinations Commission printed it: Work = Force x Distance = 1000 x 6 "
+        "= 6000 Joules; Power = Work over Time = 6000 over 5 (written as stacked "
+        "fractions) = 1200 watts."),
+    'technology-2013-HL-scheme-secA-q10': (6, (78, 128, 516, 365),
+        "The marking scheme's own answer to 2013 HL Section A Q10, as the State "
+        "Examinations Commission printed it: the three signs above a table "
+        "giving, for each, the Hazard (Flammable; Corrosive; Electrical) and "
+        "Where used (Gas containers, Fuel tankers, etc.; Chemical bottles, Car "
+        "batteries, etc.; Live electrical equipment in vicinity, Electrical "
+        "boxes, etc.)."),
+    'technology-2013-HL-scheme-secB-q2d': (11, (405, 649, 542, 750),
+        "The marking scheme's own truth table for 2013 HL Section B 2(d)(ii), as "
+        "the State Examinations Commission printed it, columns A, B, C: 0 0 "
+        "gives 0; 1 0 gives 1; 0 1 gives 0; 1 1 gives 0."),
+    'technology-2013-HL-scheme-secB-q3b': (12, (196, 318, 313, 409),
+        "The marking scheme's own photograph for 2013 HL Section B 3(b)(iii), as "
+        "the State Examinations Commission printed it: a chain tensioner on a "
+        "bicycle's rear hub, an arrow pointing to it."),
+    'technology-2013-HL-scheme-secB-q3c': (12, (127, 458, 246, 550),
+        "The marking scheme's own photograph for 2013 HL Section B 3(c)(i), as "
+        "the State Examinations Commission printed it: a spoked wheel's hub "
+        "mounted on a fork with a quick-release skewer."),
+    'technology-2013-HL-scheme-secC-q1b': (13, (30, 352, 545, 762),
+        "The marking scheme's own flowcharts for 2013 HL Section C 1(b)(ii), as "
+        "the State Examinations Commission printed them: Start, LED/Buzzer Off, "
+        "a decision Switch 1? looping back on No, Wait 2 min, then LED/Buzzer on, "
+        "Wait 0.5 sec, LED/Buzzer off, Wait 0.5 sec, a decision Switch 2? looping "
+        "back on No and returning to Start on Yes, with a Re-set check; beside it "
+        "an alternative written with the program's own commands, captioned "
+        "Alternative solution, etc."),
+    'technology-2013-HL-scheme-secC-q2a': (15, (90, 160, 350, 200),
+        "The marking scheme's own working for 2013 HL Section C 2(a)(ii), as the "
+        "State Examinations Commission printed it: R = (Voltage - Vf) over If; "
+        "R = (9-2) over 0.015 = 467 ohms, written as stacked fractions."),
+    'technology-2013-HL-scheme-secC-q2b': (15, (60, 242, 520, 412),
+        "The marking scheme's own answers for 2013 HL Section C 2(b)(i) and "
+        "(ii), as the State Examinations Commission printed them: V = R2 over "
+        "(R1 + R2) x 6V; (i) 5600 over (2000 + 5600) x 6 = 4.4V; (ii) 5600 over "
+        "(20000 + 5600) x 6 = 1.3V; and the drawn circuit, the LDR and variable "
+        "resistor and R1, R2 feeding an op-amp whose output drives a transistor "
+        "and a relay switching a 12V lamp."),
+    'technology-2013-HL-scheme-secC-q2c': (15, (440, 535, 578, 628),
+        "The marking scheme's own picture for 2013 HL Section C 2(c)(i), as the "
+        "State Examinations Commission printed it: a cutaway DC motor labelled "
+        "armature, brushes and commutator, captioned Motor parts."),
+    'technology-2013-HL-scheme-secC-q3d': (16, (394, 672, 563, 767),
+        "The marking scheme's own picture for 2013 HL Section C 3(d)(ii), as the "
+        "State Examinations Commission printed it: an analogue signal wave "
+        "plotted as Amplitude against Time, sampled at evenly spaced vertical "
+        "lines marked Sampling rate."),
+    'technology-2013-HL-scheme-secC-q4b': (17, (148, 572, 362, 672),
+        "The marking scheme's own control chart for 2013 HL Section C 4(b)(ii), "
+        "as the State Examinations Commission printed it: UCL, Mean and LCL "
+        "lines with the seven daily values plotted between them."),
+    'technology-2013-HL-scheme-secC-q5b': (19, (228, 428, 458, 548),
+        "The marking scheme's own drawing for 2013 HL Section C 5(b)(ii), as the "
+        "State Examinations Commission printed it: an injection moulding machine "
+        "labelled Hopper, Heater, Ram, Hydraulic Fluid, Motor, Screw and Mould."),
+})
+ASK_ONLY.update({
+    'technology-2013-HL-scheme-secA-q6',
+    'technology-2013-HL-scheme-secA-q9',
+    'technology-2013-HL-scheme-secA-q10',
+})
+SOLUTION_NOT_ZONE.add('technology-2013-HL-scheme-secC-q2b')
+# 3(d)(ii)'s ask runs across the top of its picture: the picture's lettering
+# comes off by a zone that starts below the ask's line.
+SOLUTION_NOT_ZONE.add('technology-2013-HL-scheme-secC-q3d')
+LABEL_ZONES.setdefault((2013, 'hl'), []).append((16, (394, 690, 563, 767)))
+LABEL_ZONES.setdefault((2013, 'hl'), []).extend([
+    (5, (335, 255, 555, 372)),     # Q8's gears reprinted
+    (5, (360, 575, 558, 730)),     # Q9's crane reprinted, 6 m and 1000 N
+    (6, (92, 474, 512, 620)),      # Q11's can crusher reprinted, its labels
+    (7, (88, 120, 512, 252)),      # Q12's process chart reprinted
+    (8, (378, 122, 563, 322)),     # Q14's bag reprinted, Straps Body Fastener
+    (8, (62, 552, 212, 695)),      # Q15's exploded view, captioned
+    (11, (440, 410, 580, 525)),    # 2(c)'s relay reprinted, A B C
+    (15, (90, 245, 520, 280)),     # 2(b)(i)'s calculations (the crop)
+    (15, (165, 300, 400, 410)),    # 2(b)(ii)'s circuit (the crop)
+    (17, (64, 380, 532, 425)),     # 4(b)'s data table reprinted
+    (19, (395, 662, 535, 780)),    # 5(b)(iii)'s push fitting, Part A and B
+])
+MD_LINE_FIX[(2013, 'hl')] = [
+    # Q12(i): the answer printed on the ask's line, moved under it; (ii)'s
+    # second sentence joined to its first, both the scheme's reprint.
+    (r'^(\(i\) Determine how long it takes to make one stuffed toy\?) (55 minutes)$', r'\1\n\2'),
+    (r'^Identify one area where it would be possible to produce bears at a faster rate\.$', ''),
+    (r'^(\(ii\) The manufacturing company wants to increase productivity in this process\.)$',
+     r'\1 Identify one area where it would be possible to produce bears at a faster rate.'),
+    # Q14: the answer table's header row.
+    (r'^Part Material Property$', ''),
+    # 2(d): (ii)'s head printed level with (i)'s first answer line, moved
+    # after (i)'s answers; the truth table's cells come off with the crop.
+    (r'^(2\(d\) \(i\) Conductors: Materials that will allow) \(ii\) Draw the truth table$', r'\1'),
+    (r'^(electrical current to flow though them, e\.g\. Silicon\.) 1 1 0$', r'\1\n(ii) Draw the truth table'),
+    # 2(b)(ii): the scheme's heading "Draw circuit" beside the drawn circuit.
+    (r'^\(ii\) Draw circuit$', '(ii)'),
+    # 2(b)(iii): one paragraph broken before capitals, joined.
+    (r'^(into the Op-Amp\. As light increases, the resistance of the LDR changes\. When the voltage into the)$',
+     r'\1 Op-Amp is higher than 3V, the output of the IC is turned on. The transistor can then switch on the 12V light circuit through the activation of the relay.'),
+    (r'^Op-Amp is higher than 3V, the output of the IC is turned on\. The transistor can then switch on the$', ''),
+    (r'^12V light circuit through the activation of the relay\.$', ''),
+    # 5(a)(i): "plywood, / MDF, Laminboard" joined.
+    (r'^(Wooden products generally produced from by-products of cutting timber e\.g\. plywood,)$',
+     r'\1 MDF, Laminboard, etc.'),
+    (r'^MDF, Laminboard, etc\.$', ''),
+]
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -3220,6 +3419,17 @@ ASK_STRIP = {
     (2016, 'ol', 'A', 3, None, None): [r'\s+1 2(?: Solar Paper®)?$'],
     # 2014 Ordinary Q9: (ii)'s answer label after the given formula.
     (2014, 'ol', 'A', 9, None, None): [r'\s+Current \(I\) =$'],
+    # 2013 Higher Q12(i): the answer line's unit after the ask.
+    (2013, 'hl', 'A', 12, None, None): [r'\s+minutes(?=\s+\(ii\))', r'\s+Start cut fur \(10 mins\)$'],
+    # 2013 Higher Q10, Q11, Q14: the answer tables' and boxes' labels, and the
+    # can crusher's lettering, read into the ask.
+    (2013, 'hl', 'A', 10, None, None): [r'\s+Hazard Hazard Hazard\b.*$'],
+    (2013, 'hl', 'A', 11, None, None): [r'\s+link arm main arm pivot pin can(?=\s+While)',
+                                        r'\s+The main arm The pivot pin The link arm The can being crushed$'],
+    (2013, 'hl', 'A', 14, None, None): [r'\s+Straps Part Material Property\b.*$'],
+    (2013, 'hl', 'A', 2, None, None): [r'\s+\(i\)(?:\s+\(ii\))?$'],
+    # 2013 Higher 4(b): the data table, which the crop carries, filed as stem.
+    (2013, 'hl', 'C', 4, 'b', None): [r'\s+Day July 11th\b.*$'],
     # 2014 Ordinary 1(b): the flowchart's lettering, filed as the letter's stem.
     (2014, 'ol', 'C', 1, 'b', None): [r'(?:^|\s+)N LDR\? Y Motor Up\b.*$'],
     # 2014 Higher Q6: the node's lettering, X and Y, and the answer lines'
