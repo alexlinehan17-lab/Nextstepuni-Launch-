@@ -1,6 +1,6 @@
 {
  "v": 1,
- "cardCount": 145,
+ "cardCount": 176,
  "cards": [
   {
    "id": "re-2026-hl-a-1-a",
@@ -21370,6 +21370,4528 @@
      25
     ],
     "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-a-1-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2024 OL Section A Q1(a)",
+   "topicId": "re-a",
+   "conceptId": "chance-talk-aristotle-his-ideas-help",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Imagine you have the chance to talk with Aristotle about how his ideas could help people today in their search to find the true meaning of life. From your knowledge of Aristotle’s ideas, suggest two points that he might talk about to help people searching for the meaning of life today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of philosophical thought in ancient Greece by setting out accurate information on how two ideas put forward by Aristotle could help people find meaning in life today e.g.",
+    "points": [
+     "Aristotle’s idea that knowledge begins with the senses but then moves to a broader understanding of its purpose could help people today to seek meaning beyond the physical, materialistic world, etc.",
+     "Aristotle’s idea about the nature of causation, where experiences are analysed based on the cause(s) of these experiences, could help young people today to reflect on the events of their lives, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC two ideas of Aristotle relating to finding meaning in life: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – Setting out information: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC two ideas of Aristotle relating to finding meaning in life: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Setting out information: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC two ideas of Aristotle relating to finding meaning in life: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Setting out information: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC two ideas of Aristotle relating to finding meaning in life: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Setting out information: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC two ideas of Aristotle relating to finding meaning in life: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Setting out information: little",
+       "Factual accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC two ideas of Aristotle relating to finding meaning in life: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Setting out information: very little/ no evidence",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-a-1-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2024 OL Section A Q1(b)",
+   "topicId": "re-a",
+   "conceptId": "reasons-person-lose-interest-searching-meaning",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain two reasons why a person could lose interest in searching for the meaning of life today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the search for meaning by giving an accurate account of two reasons why a person could lose interest in the search for the meaning of life today e.g.",
+    "points": [
+     "Consumerism – the consumerist and materialistic nature of life today could make people become uninterested in finding deeper meaning and value in life, etc.",
+     "The experience of illness, loneliness, unemployment or the experience of rejection in a relationship could cause indifference to finding meaning in life, etc.",
+     "Pessimism – recent events such as the Covid-19 Pandemic, conflicts and economic crisis could leave a person with a sense that life has no meaning, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC two reasons for loss of interest in search for the meaning of life: substantial evidence",
+       "Relevance: Completely & clearly relevant",
+       "Use of skill(s) – account of two reasons: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC two reasons for loss of interest in search for the meaning of life: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – account of two reasons: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC two reasons for loss of interest in search for the meaning of life: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – account of two reasons: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC two reasons for loss of interest in search for the meaning of life: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – account of two reasons: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC two reasons for loss of interest in search for the meaning of life: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – account of two reasons: little",
+       "Factual accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC two reasons for loss of interest in search for the meaning of life: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – account of two reasons: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     5
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-a-2-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2024 OL Section A Q2(a)",
+   "topicId": "re-a",
+   "conceptId": "idea-put-forward-person-associated-humanist",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Profile how an idea put forward by a person associated with the humanist tradition could influence an answer to a question about the meaning of life today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the development of humanism by accurately tracing how an answer to a question about the meaning of life today could be influenced by an idea put forward by a person associated with the humanist tradition e.g.",
+    "points": [
+     "Erasmus - idea that by respecting the dignity of the human person allows all humans to improve and excel could help a person to have confidence in their own ability to find meaning, etc.",
+     "Karl Marx - emphasised human agency, subjectivity and freedom for society and individuals to reach their full potential which could influence people to reject religious beliefs about life, etc.",
+     "Albert Camus - put forward the idea that people can live a meaningful life when the dignity of each individual is recognised and there is respect for human intelligence which could influence people today to believe that it is morally correct to live in a way where everyone is given equal opportunity in life, etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40 Marks",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of MC how humanist idea could influence an answer to a question about the meaning of life: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – tracing: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of MC how humanist idea could influence an answer to a question about the meaning of life: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – tracing: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of MC how humanist idea could influence an answer to a question about the meaning of life: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – tracing: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of MC how humanist idea could influence an answer to a question about the meaning of life: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – tracing: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of MC how humanist idea could influence an answer to a question about the meaning of life: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – tracing: little",
+       "Factual accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of MC how humanist idea could influence an answer to a question about the meaning of life: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – tracing: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     5,
+     6
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-a-2-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2024 OL Section A Q2(b)",
+   "topicId": "re-a",
+   "conceptId": "examples-polytheism-played-role-founding-story",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Using examples, examine how polytheism played a role in the founding story of two of the following religions: Christianity, Islam, Judaism.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the concepts of monotheism and polytheism by looking closely at how belief in many gods played a part in the formation of two monotheistic religions listed in the question e.g.",
+    "points": [
+     "Christianity – established at a time when Palestine was ruled by the Romans who held polytheistic beliefs; some first Christian communities were established in places associated with polytheistic practices i.e. Thessalonica, etc.",
+     "Islam – Muhammad established belief in one God Allah at a time when people in Mecca were worshipping many gods i.e. false idols at the Kaaba, etc.",
+     "Judaism – Abraham established a Covenant with Yahweh/YHWH committing the Jewish people to belief in only one God at a time when belief in many gods was evident i.e. Baal worship, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC how belief in many gods played part in two monotheistic religions: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – looking closely: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC how belief in many gods played part in two monotheistic religions: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – looking closely: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC how belief in many gods played part in two monotheistic religions: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – looking closely: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC how belief in many gods played part in two monotheistic religions: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – looking closely: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC how belief in many gods played part in two monotheistic religions: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – looking closely: little",
+       "Factual accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC how belief in many gods played part in two monotheistic religions: Very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – looking closely: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     6,
+     7
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-a-3-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2024 OL Section A Q3(a)",
+   "topicId": "re-a",
+   "conceptId": "explore-questions-human-suffering-expressed-today's",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explore how two questions about human suffering are expressed in today's art, literature, music or youth culture.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the search for the meaning of life by looking closely at two examples of how people asking questions about suffering in life are conveyed in today’s art, literature, music or youth culture e.g.",
+    "points": [
+     "Why do humans have to suffer? - addressed in ‘At eternity’s gate’ by Vincent Van Gogh, shows how suffering is an unavoidable part of the human condition, etc.",
+     "Why is there so much suffering in the world today? - addressed in the song ‘Where is the love’ by the Black Eyed Peas calls on people to treat each other in a more compassionate way, etc.",
+     "How can people overcome suffering? - explored in the ‘Harry Potter’ series of books by JK Rowling states that people can respond to suffering by acting for the good of others, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC questions about suffering in life are conveyed in today: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – looking closely: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC questions about suffering in life are conveyed in today: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – looking closely: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC questions about suffering in life are conveyed in today: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – looking closely: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC questions about suffering in life are conveyed in today: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – looking closely: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC questions about suffering in life are conveyed in today: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – looking closely: little",
+       "Factual accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC questions about suffering in life are conveyed in today: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – looking closely: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     7,
+     8
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-a-3-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2024 OL Section A Q3(b)(i)",
+   "topicId": "re-a",
+   "conceptId": "example-symbols-either-individuals-groups-express",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe one example of how symbols are used by either individuals or groups to express what is of meaning in their lives.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of symbolic language by giving an accurate account of one example of the way either individuals or groups use a specific symbol to express what is of meaning in their lives e.g.",
+    "points": [
+     "A Wedding Ring - used by individuals as a symbol that expresses never-ending love and commitment for each other, etc.",
+     "A Cross – has been used by Christians as a symbol of their belief in the death and resurrection of Jesus, etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20 Marks",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC how individuals/ groups use symbol to express meaning in life.: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC how individuals/ groups use symbol to express meaning in life.: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC how individuals/ groups use symbol to express meaning in life.: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC how individuals/ groups use symbol to express meaning in life.: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC how individuals/ groups use symbol to express meaning in life.: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – giving an accurate account: little",
+       "Factual accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC how individuals/ groups use symbol to express meaning in life.: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving an accurate account: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     8
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-a-3-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2024 OL Section A Q3(b)(ii)",
+   "topicId": "re-a",
+   "conceptId": "symbols-response-questions-meaning-life-either",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain why symbols are used in response to questions about the meaning of life by either individuals or groups today.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of symbolic language by giving an accurate account of one or more reasons why symbols are used in answer to questions about the meaning of life by either individuals or groups today e.g.",
+    "points": [
+     "Symbols are used by individuals and groups as they can express deep meaning and emotion that is often too difficult to put into words; a hug can express sympathy for a grieving person in a deeper way than words could, etc.",
+     "Symbols are used by individuals and groups as they can make abstract concepts easier to understand and express; making the sign of the cross to express belief in God in three forms, etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20 Marks",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC reasons symbols are used to answer questions about meaning of life: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving account of reason: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC reasons symbols are used to answer questions about meaning of life: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving account of reason: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC reasons symbols are used to answer questions about meaning of life: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving account of reason: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC reasons symbols are used to answer questions about meaning of life: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving account of reason: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC reasons symbols are used to answer questions about meaning of life: inadequate evidence",
+       "Relevance: Little relevance",
+       "Use of skill(s) – giving account of reason: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC reasons symbols are used to answer questions about meaning of life: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving account of reason: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     9
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-b-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2024 OL Section B Q(a)",
+   "topicId": "re-b",
+   "conceptId": "way-returning-original-teaching-jesus-nazareth",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline a way that returning to the original teaching of Jesus of Nazareth helped two of the following movements to rediscover the message of Jesus for themselves: ● Céli Dé ● Early 19th century Protestantism ● Liberation Theology ● Luther ● The Mendicant Orders ● The Second Vatican Council",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of adaptation and reform in the Christian tradition by setting out accurate information on a way that returning to the original teaching of Jesus helped two of the movements listed in the question to reignite their enthusiasm for the message of Jesus e.g.",
+    "points": [
+     "Céli Dé - focused on returning to the teaching of Jesus by re-emphasising the importance of prayer, labour, study and commitment to a distinctly Christian way of life so that they could try to act as Jesus did in any situation, etc.",
+     "Liberation Theology - set out to carry on the mission of Jesus by working to transform society so that all people could live in dignity and freedom, etc.",
+     "Luther’s Reforms - emphasised that true faith must be rooted in living in a way that allowed them to follow in the footsteps of Jesus and to live out his teaching in their actions, etc.",
+     "Evangelical Movement in early 19th Century Protestantism - emphasised the saving death of Jesus Christ on the cross and personal conversion leading to a change in the way believers live focusing on forgiving others and seeking repentance for any wrongdoing, etc.",
+     "The Mendicant Orders - developed an urban form of monastic life which was close to the lifestyle of Jesus as revealed in the Gospels i.e. members held no possessions but were allowed the right to beg which allowed them to follow the message of Jesus by being less materialistic, etc.",
+     "The Second Vatican Council - sought to re-discover the founding vision of Christianity while expressing its relevance in the modern world, etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC returning to teaching of Jesus helped two movements listed to reignite their enthusiasm for the message of Jesus: substantial evidence",
+       "Relevance: Completely & clearly relevant",
+       "Use of skill(s) – setting out accurate information: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC returning to teaching of Jesus helped two movements listed to reignite their enthusiasm for the message of Jesus: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – setting out accurate information: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC returning to teaching of Jesus helped two movements listed to reignite their enthusiasm for the message of Jesus: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – setting out accurate information: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC returning to teaching of Jesus helped two movements listed to reignite their enthusiasm for the message of Jesus: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – setting out accurate information: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC returning to teaching of Jesus helped two movements listed to reignite their enthusiasm for the message of Jesus: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – setting out accurate information: little",
+       "Factual Accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC returning to teaching of Jesus helped two movements listed to reignite their enthusiasm for the message of Jesus: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – setting out accurate information: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     10
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-b-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2024 OL Section B Q(b)(i)",
+   "topicId": "re-b",
+   "conceptId": "analyse-inspired-image-jesus-nazareth-presented",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Analyse what inspired the image of Jesus of Nazareth presented in an example from one of the following: art, film, literature or music.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of images of Jesus of Nazareth in contemporary culture by breaking down what motivated the image of Jesus that is presented in one example taken from either art or film or literature or music e.g.",
+    "points": [
+     "Art: Janet Mackenzie’s 'Jesus of the people' which presents an image of Jesus as an African American, a female, a peasant was inspired by the belief that Jesus is a saviour to all people including those often marginalised and discriminated against, etc.",
+     "Film: Mel Gibson’s 'The Passion of the Christ' presents an image of Jesus as a suffering Saviour who underwent great pain and torture to redeem others was inspired by Gibson’s faith that Jesus had saved him personally, etc.",
+     "Music: Van Morrison’s song 'No Religion' inspired by Jesus teaching of ‘love your neighbour’ presents an image of Jesus as a kind preacher, etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20 Marks",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC what motivated an image of Jesus: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – breaking down: Excellent",
+       "Factual Accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC what motivated an image of Jesus: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – breaking down: very good",
+       "Factual Accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC what motivated an image of Jesus: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – breaking down: good",
+       "Factual Accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC what motivated an image of Jesus: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – breaking down: some",
+       "Factual Accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC what motivated an image of Jesus: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – breaking down: little",
+       "Factual Accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC what motivated an image of Jesus: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – breaking down: very little/ no",
+       "Factual Accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     11
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-b-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2024 OL Section B Q(b)(ii)",
+   "topicId": "re-b",
+   "conceptId": "relevance-christians-today-understanding-jesus-nazareth",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine the relevance for Christians today of the understanding of Jesus of Nazareth referred to in part (b), (i) above.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of images of Jesus in contemporary culture by looking closely at how the understanding of Jesus referred to in part (b), (i) of the question could be relevant to people today e.g.",
+    "points": [
+     "Art: Janet Mackenzie’s 'Jesus of the people' which depicts Jesus as an African American, female, peasant could be relevant for Christians today to remind them all people should be included and valued in society today, etc.",
+     "Film: Mel Gibson’s 'The Passion of the Christ' presents Jesus as a suffering Saviour who underwent great pain and torture to redeem others; could be relevant for Christians today as it emphasises how Jesus overcame suffering which can inspire people today who have suffered during recent events such as the Covid-19 pandemic, etc.",
+     "Music: Van Morrison’s song 'No Religion' - calls on people to follow Jesus teaching on ‘love of neighbour’ in their way of life and suggests that people are not doing this, etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20 Marks",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC the relevance for Christians today of an understanding of Jesus: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – looking closely: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC the relevance for Christians today of an understanding of Jesus: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – looking closely: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC the relevance for Christians today of an understanding of Jesus: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – looking closely: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC the relevance for Christians today of an understanding of Jesus: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – looking closely: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC the relevance for Christians today of an understanding of Jesus: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – looking closely: little",
+       "Factual accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC the relevance for Christians today of an understanding of Jesus: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – looking closely: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     11,
+     12
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-b-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2024 OL Section B Q(c)",
+   "topicId": "re-b",
+   "conceptId": "example-members-christian-denomination-today-try",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe an example of how members of a Christian denomination today try to live out the teaching of Jesus in one of the following ways: ● Creating a just and inclusive society ● Responding to those who are dying ● Responding to violence, intolerance, sectarianism ● Sharing the earth’s resources ● Supporting Christian community life",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an awareness of how the Christian message is interpreted today by giving an accurate account of how the work of one Christian denomination today tries to carry on the mission of Jesus on one of the issues listed in the question e.g.",
+    "points": [
+     "Creating a just and inclusive society - Catholic Church; the work of Christian Aid in Ireland to create a world without poverty reflects Jesus mission as he reached out to the poor, etc.",
+     "Responding to those who are dying – the Anglican Church; the work of the hospice movement to allow those are dying to be treated with dignity carries on the mission of Jesus to be saviour to people, etc.",
+     "Responding to violence, intolerance, sectarianism - the work of the Corrymeela community in overcoming sectarianism in Northern Ireland carries on the mission of Jesus who taught peace, love of enemy and reaching out to the excluded, etc.",
+     "Sharing the earth's resource – Catholic Church; the work of Trocaire in the world today providing aid and financial support to people in need around the world carries on the mission of Jesus today to ensure that all people are treated equally, etc.",
+     "Supporting Christian community life– Church of Ireland; the work of the Church of Ireland today in ordaining men and women to the priesthood shows the inclusive nature of Jesus teaching and how all were welcome and valued in his community, etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40 Marks",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of MC - how one denomination today is trying to live out the message of Jesus: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – Giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of MC - how one denomination today is trying to live out the message of Jesus: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of MC - how one denomination today is trying to live out the message of Jesus: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of MC - how one denomination today is trying to live out the message of Jesus: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of MC - how one denomination today is trying to live out the message of Jesus: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Giving an accurate account: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of MC - how one denomination today is trying to live out the message of Jesus: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Giving an accurate account: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     12,
+     13
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-c-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2024 OL Section C Q(a)",
+   "topicId": "re-c",
+   "conceptId": "example-inter-faith-dialogue-helped-promote",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Using an example, explain how inter‐faith dialogue has helped to promote a good relationship between two of the following religions: ● Buddhism ● Christianity ● Hinduism ● Islam ● Judaism",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of inter-faith dialogue by giving an accurate example of how dialogue has created a respectful relationship between two of the religions listed in the question e.g.",
+    "points": [
+     "Christianity and Judaism − The Council of Christians and Jews works in areas of education, dialogue and social action which helps Christians and Jews to work side by side to build tolerance and respect between members of their faiths, etc.",
+     "The Assisi Day for Peace − Religious leaders from each of the five major world religions gather for a day of prayer etc. which encourages believers to respect others, co-operate and live peacefully in society, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC how inter-faith dialogue helped promote a good relationship between two religions listed: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC how inter-faith dialogue helped promote a good relationship between two religions listed: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC how inter-faith dialogue helped promote a good relationship between two religions listed: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC how inter-faith dialogue helped promote a good relationship between two religions listed: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC how inter-faith dialogue helped promote a good relationship between two religions listed: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – giving an accurate account: little",
+       "Factual accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC how inter-faith dialogue helped promote a good relationship between two religions listed: Very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – giving an accurate account: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     13,
+     14
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-c-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2024 OL Section C Q(b)",
+   "topicId": "re-c",
+   "conceptId": "examples-influence-religious-belief-seen-lifestyle",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe two examples of how the influence of religious belief can be seen in the lifestyle of believers today from one of the following: ● An African Traditional Religion ● A Chinese Religion ● A New Religious Movement ● Baha’i Faith ● Sikh Religion",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a new religious movement or other living tradition by giving an accurate account of two examples of how the way members live today reflects the religious beliefs of one of the groups listed in the question e.g.",
+    "points": [
+     "An African traditional religion – use masks, stones, drums as they represent the presence of different spirits and may offer protection against evil, etc.",
+     "A Chinese Religion – members to try live their lives in a virtuous way today as they believe in a divine will which influences all things, etc.",
+     "A New Religious Movement - Jehovah’s Witnesses' belief that God communicated his will through the Bible influences believer’s literal interpretation of the Bible and rejection of any practice not found in it, etc.",
+     "Baha’i faith – members today study all religious texts as they believe that the Baha’u’llah fulfils earlier prophecies, etc.",
+     "Sikh religion – members today perform three duties which are to bring God to mind, to work honestly and to practice charity as they believe this will show respect to God, etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of influence of religious belief in the lifestyle of believers: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – Giving accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of influence of religious belief in the lifestyle of believers: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Giving accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of influence of religious belief in the lifestyle of believers: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Giving accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of influence of religious belief in the lifestyle of believers: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Giving accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of influence of religious belief in the lifestyle of believers: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Giving accurate account: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of influence of religious belief in the lifestyle of believers: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Giving accurate account: very little/no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     14,
+     15
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-c-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2024 OL Section C Q(c)",
+   "topicId": "re-c",
+   "conceptId": "influence-primal-religion-seen-religious-practice",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline how the influence of primal religion can be seen in the religious practice of members today from two of the following religions: ● Buddhism ● Christianity ● Hinduism ● Islam ● Judaism",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of primal religion by setting out accurate information on how primal religion has influenced the religious practice of members in two religions listed in the question e.g.",
+    "points": [
+     "Buddhism – primal religions believed that religion encompassed every aspect of life which can be seen in 'right action' where Buddhists try to act in a moral way, etc.",
+     "Christianity – in primal religion the sacredness of certain objects and places was preserved by rules known as Tabu; in Christianity certain objects and places associated with worship are considered sacred - Tabernacle, etc.",
+     "Hinduism – primal religion's belief that certain objects or places could connect people with the gods; similar to Hinduism where believers worship in front of shrines associated with different deities, etc.",
+     "Islam – in primal religion the importance of mana or the power of the divine is stressed; similarly, in Islam belief in the authority of the Quran and submission to the will of Allah is emphasised, etc.",
+     "Judaism – in primal religion the Shaman has central importance in leading worship; similarly, in Judaism the Rabbi leads the communal worship in the synagogue, etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC - primal religion effect on religious practice in two religions listed: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) –setting out accurate information: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC - primal religion effect on religious practice in two religions listed: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) –setting out accurate information: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC - primal religion effect on religious practice in two religions listed: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) –setting out accurate information: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC - primal religion effect on religious practice in two religions listed: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) –setting out accurate information: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC - primal religion effect on religious practice in two religions listed: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) –setting out accurate information: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC - primal religion effect on religious practice in two religions listed: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) –setting out accurate information: very little/no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     15
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-d-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2024 OL Section D Q(a)",
+   "topicId": "re-d",
+   "conceptId": "media-peers-examples-influence-person-decision",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "● Media ● Peers Using examples, explain how each of the above could influence a person’s decision about what is right and wrong in a situation.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of moral development by giving an accurate account of how each of the sources listed in the question can play a part in moral decision making e.g.",
+    "points": [
+     "Media – TV programs can express values and convey particular understandings of right and wrong; display characters facing moral dilemmas and making moral decisions etc.",
+     "Peers – A person’s decision can be based on pleasing others e.g. Kohlberg’s Conventional Stage; friends could encourage a person to act with altruism in judging between right and wrong etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC - part media and peers play in decision about right and wrong in a situation: substantial evidence",
+       "Relevance: Completely & clearly relevant",
+       "Use of skill(s) – Giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC - part media and peers play in decision about right and wrong in a situation: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC - part media and peers play in decision about right and wrong in a situation: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC - part media and peers play in decision about right and wrong in a situation: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC - part media and peers play in decision about right and wrong in a situation: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Giving an accurate account: little",
+       "Factual accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC - part media and peers play in decision about right and wrong in a situation: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Giving an accurate account: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     16
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-d-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2024 OL Section D Q(b)",
+   "topicId": "re-d",
+   "conceptId": "virtues-such-courage-patience-truthfulness-etc",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Virtues such as courage, patience, truthfulness etc. have been described as qualities of character that prompt a person to do the right thing. Describe two examples of how ‘virtue’ can play a part in a person’s growth towards moral maturity.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of personal moral development by giving an accurate account of two examples of how virtue can play a role in a person’s growth towards moral maturity e.g.",
+    "points": [
+     "The virtue of honesty could play a role in a person’ s growth toward moral maturity through building a habit of acting in a morally correct way and always telling the truth in any situation regardless of the consequences for themselves, etc.",
+     "The virtue of compassion could play a role in a person’s growth toward moral maturity by being altruistic and influencing a person to act for the benefit of others, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "two examples of how virtue can play a role in a person’s growth towards moral maturity: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – Giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "two examples of how virtue can play a role in a person’s growth towards moral maturity: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "two examples of how virtue can play a role in a person’s growth towards moral maturity: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "two examples of how virtue can play a role in a person’s growth towards moral maturity: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "two examples of how virtue can play a role in a person’s growth towards moral maturity: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Giving an accurate account: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "two examples of how virtue can play a role in a person’s growth towards moral maturity: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Giving an accurate account: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     16,
+     17
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-d-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2024 OL Section D Q(c)",
+   "topicId": "re-d",
+   "conceptId": "examples-decision-right-wrong-issue-influenced",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Using examples, describe how a decision about what is right and wrong on an issue could be influenced by each of the following points of view: ● Fundamentalism ● Relativism",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of moral decision-making by giving an accurate account of how fundamentalism and relativism could influence a decision about what is right and wrong on a moral issue e.g.",
+    "points": [
+     "Fundamentalism – reference to all life being created by God in a sacred text could influence a person to care for the earth, etc.",
+     "Relativism – could influence a person to believe that abortion is morally acceptable if the life of the mother is at risk, etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC − how fundamentalism and relativism could influence decision on right and wrong about an issue.: substantial evidence",
+       "Relevance: Completely & clearly relevant",
+       "Use of skill(s) – Giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC − how fundamentalism and relativism could influence decision on right and wrong about an issue.: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC − how fundamentalism and relativism could influence decision on right and wrong about an issue.: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC − how fundamentalism and relativism could influence decision on right and wrong about an issue.: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC − how fundamentalism and relativism could influence decision on right and wrong about an issue.: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Giving an accurate account: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC − how fundamentalism and relativism could influence decision on right and wrong about an issue.: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Giving an accurate account: very little/no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     17
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-e-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2024 OL Section E Q(a)(i)",
+   "topicId": "re-e",
+   "conceptId": "her-key-insights-actions",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Her key insights/actions.",
+   "stem": "● Founders & Reformers of Religious Orders ● Religious Writers ● Social Reformers ● Spiritual Thinkers Choose one woman in any of the above categories and outline her life story using each of the following headings:",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the contribution of women to the development of religious traditions by setting out accurate information on the key insights/actions of one woman from a category listed in the question e.g.",
+    "points": [
+     "Founders & Reformers of Religious Orders e.g. Nano Nagle was outraged by the treatment of the poor in Ireland and her life was dedicated to helping the poor of her time through education and founding a religious order, etc.",
+     "Religious Writers e.g. Teresa of Avila’s insight into the benefits of silent prayer helped her to develop contemplation as a form of prayer which she outlined in her religious writings - The Book of Life, The Interior Castle and The Way of Perfection, etc.",
+     "Social Reformers e.g. Dorothy Day devoted her life to the poor, the oppressed and to women in need by setting up homes where she lived in solidarity with them, etc.",
+     "Spiritual Thinkers e.g. Hildegard of Bingen corresponded with bishops, popes and kings and spoke openly against corruption, etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40 Marks",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of MC insights/actions of one woman from category listed: substantial evidence",
+       "Relevance: Completely & clearly relevant",
+       "Use of skill(s) – Setting out accurate information: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of MC insights/actions of one woman from category listed: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Setting out accurate information: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of MC insights/actions of one woman from category listed: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Setting out accurate information: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of MC insights/actions of one woman from category listed: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Setting out accurate information: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of MC insights/actions of one woman from category listed: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Setting out accurate information: little",
+       "Factual accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of MC insights/actions of one woman from category listed: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Setting out accurate information: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     18
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-e-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2024 OL Section E Q(a)(ii)",
+   "topicId": "re-e",
+   "conceptId": "questions-raised-her-life-work-people",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Two questions raised by her life and work for people today.",
+   "stem": "● Founders & Reformers of Religious Orders ● Religious Writers ● Social Reformers ● Spiritual Thinkers Choose one woman in any of the above categories and outline her life story using each of the following headings:",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the contribution of women to the development of religious traditions by setting out accurate information on two questions raised by the work of one woman from a category listed in the question e.g.",
+    "points": [
+     "Founders & Reformers of Religious Orders e.g. Nano Nagle, founder of the Presentation Order, could raise questions about how to help the poor in society today, etc.",
+     "Religious Writers e.g. Teresa of Avila’s insight into the benefits of silent prayer helped her to develop contemplation as a form of prayer, could raise questions about the need for the busyness of life today and the need to take time to be silent, etc.",
+     "Social Reformers e.g. Dorothy Day could make people ask questions about how to live in solidarity with the poor and marginalised in society today, etc.",
+     "Spiritual Thinkers e.g. Hildegard of Bingen could make people today ask questions about corruption, etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC two questions raised by the work of one woman from a category listed in the question: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – Setting out accurate information: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC two questions raised by the work of one woman from a category listed in the question: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Setting out accurate information: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC two questions raised by the work of one woman from a category listed in the question: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Setting out accurate information: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC two questions raised by the work of one woman from a category listed in the question: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Setting out accurate information: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC two questions raised by the work of one woman from a category listed in the question: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Setting out accurate information: little",
+       "Factual accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC two questions raised by the work of one woman from a category listed in the question: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Setting out accurate information: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     18,
+     19
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-e-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2024 OL Section E Q(b)",
+   "topicId": "re-e",
+   "conceptId": "examples-woman-dealt-challenges-she-faced",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe two examples of how one woman dealt with the challenges she faced in the part she played in the story of salvation, outlined in either the Hebrew or Christian scriptures.",
+   "totalMarks": 80,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the role of women that is presented in the Hebrew or Christian scriptures by giving an accurate account of two examples of the way one woman responded to the challenges she faced in the story of salvation, outlined in either the Hebrew or Christian scriptures e.g.",
+    "points": [
+     "Hebrew Scriptures – Deborah guided the Jewish people at a time some were worshipping false idols; Deborah also dealt with the challenge of women not been viewed as equal to men by exercising authority and commanding the respect of the Jewish people etc.",
+     "Christian Scriptures – Mary Magdalene dealt with the challenge of being treated as inferior by showing commitment to her faith in Jesus; she was also chosen by Jesus to be the first witness to the resurrection and she spread this message to the disciples who initially failed to believe her etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 40,
+    "gridHead": "40 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of the way one woman responded to the challenges she faced in either the Christian or Hebrew scriptures: substantial evidence",
+       "Relevance: Completely & clearly relevant",
+       "Use of skill(s) – Giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of the way one woman responded to the challenges she faced in either the Christian or Hebrew scriptures: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of the way one woman responded to the challenges she faced in either the Christian or Hebrew scriptures: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of the way one woman responded to the challenges she faced in either the Christian or Hebrew scriptures: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of the way one woman responded to the challenges she faced in either the Christian or Hebrew scriptures: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Giving an accurate account: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of the way one woman responded to the challenges she faced in either the Christian or Hebrew scriptures: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Giving an accurate account: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     19,
+     20
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-h-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2024 OL Section H Q(a)(i)",
+   "topicId": "re-h",
+   "conceptId": "examples-oral-traditions-preserved-gospels",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Using examples, outline how oral traditions have been preserved in two of the above Gospels.",
+   "stem": "● The Gospel of John ● The Gospel of Luke ● The Gospel of Mark ● The Gospel of Matthew",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show familiarity with the Gospels by setting out accurate information, using examples, of how oral traditions have been maintained in two of the Gospels listed in the question e.g.",
+    "points": [
+     "Originally the word Gospel referred to an oral tradition of the ‘Good News’ of salvation preached by Jesus; the Gospel writers were afraid that the oral traditions would be lost unless they were preserved in written form, etc.",
+     "Gospel of Mark – In the writing of his Gospel, Mark preserved the oral testimony of Peter to ensure that it was not lost as a source of information on the teaching of Jesus, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC how oral traditions have been maintained in two of the Gospels listed: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – Setting out accurate information: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC how oral traditions have been maintained in two of the Gospels listed: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Setting out accurate information: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC how oral traditions have been maintained in two of the Gospels listed: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Setting out accurate information: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC how oral traditions have been maintained in two of the Gospels listed: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Setting out accurate information: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC how oral traditions have been maintained in two of the Gospels listed: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Setting out accurate information: little",
+       "Factual accuracy: many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC how oral traditions have been maintained in two of the Gospels listed: very little/no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Setting out accurate information: very little/no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     20,
+     21
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-h-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2024 OL Section H Q(a)(ii)",
+   "topicId": "re-h",
+   "conceptId": "reasons-oral-traditions-played-role-development",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain two reasons why oral traditions played a role in the development of the above Gospels.",
+   "stem": "● The Gospel of John ● The Gospel of Luke ● The Gospel of Mark ● The Gospel of Matthew",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show familiarity with the Gospels by giving an accurate account of two reasons why oral traditions played a part in the development of the Gospels listed in the question e.g.",
+    "points": [
+     "Gospel of Mark – did not use extensive written sources, instead relied on the oral accounts of eye witnesses, etc.",
+     "Gospel of Matthew – Matthew is said to have relied heavily on a collection of the oral testimony of Jesus, the Q document, as a key source, etc.",
+     "Gospel of Luke – Luke also used the ‘Q’ document, a collection of the oral testimony of Jesus as a source etc.",
+     "Gospels of John – John relied on eye witness testimony in his Gospel's development, etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC - two reasons why oral traditions played a part in the development of the Gospels: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – Giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC - two reasons why oral traditions played a part in the development of the Gospels: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC - two reasons why oral traditions played a part in the development of the Gospels: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC - two reasons why oral traditions played a part in the development of the Gospels: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC - two reasons why oral traditions played a part in the development of the Gospels: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Giving an accurate account: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC - two reasons why oral traditions played a part in the development of the Gospels: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Giving an accurate account: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     21
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-h-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2024 OL Section H Q(b)(i)",
+   "topicId": "re-h",
+   "conceptId": "examples-referred-storytelling-found-bible",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe two examples of what can be referred to as ‘storytelling’ that are found in the Bible.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of storytelling in the Bible by giving an accurate account of two examples of how storytelling can be seen in the Bible e.g.",
+    "points": [
+     "The book of Job is an example of storytelling as it was written as a dialogue between Job and three of his friends. It covers issues such as evil, human behaviour and the justice of God, etc.",
+     "The Parables of Jesus are examples of storytelling; told in a way that is easy to relate to and understand as they are based on everyday human experiences designed to highlight Gospel values, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of storytelling in the Bible: substantial evidence",
+       "Relevance: Completely & clearly relevant",
+       "Use of skill(s) –Giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of storytelling in the Bible: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) –Giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of storytelling in the Bible: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) –Giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of storytelling in the Bible: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) –Giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of storytelling in the Bible: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) –Giving an accurate account: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC two examples of storytelling in the Bible: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) –Giving an accurate account: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     22
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-h-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2024 OL Section H Q(b)(ii)",
+   "topicId": "re-h",
+   "conceptId": "reasons-examples-storytelling-found-bible-relevant",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain the reasons why two examples of storytelling, found in the Bible, are relevant for people today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of storytelling in the Bible by giving an accurate account of the reasons why two examples of storytelling in the bible could be relevant for people today e.g.",
+    "points": [
+     "The book of Job could be relevant for Christians today as they may face challenges and tests in their own lives and could be inspired by how Job overcame his challenges, etc.",
+     "The Parables of Jesus could be relevant for Christians today in helping them to remember to act as Jesus did when they face similar situations in their own lives, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC why two examples of storytelling in the Bible could be relevant for people today: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – Giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC why two examples of storytelling in the Bible could be relevant for people today: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC why two examples of storytelling in the Bible could be relevant for people today: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC why two examples of storytelling in the Bible could be relevant for people today: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC why two examples of storytelling in the Bible could be relevant for people today: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Giving an accurate account: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC why two examples of storytelling in the Bible could be relevant for people today: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Giving an accurate account: very little/no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     22,
+     23
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-i-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "I",
+   "questionRef": "2024 OL Section I Q(a)",
+   "topicId": "re-i",
+   "conceptId": "examples-reasons-pre-christian-practices-adapted",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Using examples, explain two reasons why Pre‐Christian practices were adapted during Saint Patrick’s mission in Ireland.",
+   "totalMarks": 80,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of Christianity in Ireland by giving an accurate account of two reasons why St Patrick adjusted Pre-Christian practices during his mission, using examples e.g.",
+    "points": [
+     "Patrick adopted many pre-existing religious practices - the climbing of Croagh Patrick, etc.",
+     "Patrick adopted Pre-Christian practices into Christianity as he felt this would be a more successful way to spread Christianity in Ireland - Celtic festivals were adapted to suit the Christian calendar, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 40,
+    "gridHead": "40 Marksx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of MC -two reasons why St Patrick adapted Pre-Christian practices: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – Giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of MC -two reasons why St Patrick adapted Pre-Christian practices: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of MC -two reasons why St Patrick adapted Pre-Christian practices: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of MC -two reasons why St Patrick adapted Pre-Christian practices: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of MC -two reasons why St Patrick adapted Pre-Christian practices: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Giving an accurate account: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of MC -two reasons why St Patrick adapted Pre-Christian practices: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Giving an accurate account: very little/no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     23
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-i-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "I",
+   "questionRef": "2024 OL Section I Q(b)(i)",
+   "topicId": "re-i",
+   "conceptId": "described-time-change-religion-within-ireland",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain why one of the above can be described as a time of change in religion within Ireland.",
+   "stem": "● Contemporary Ireland ● Monasticism ● Spirituality and Land ● Spirituality and Reform ● The Enlightenment",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the development of Christianity in Ireland by giving an accurate account of why one point in time, listed in the question, can be described as a time of change in religion within Ireland e.g.",
+    "points": [
+     "Contemporary Ireland − positive relationships between different Christian denominations, etc.",
+     "Monasticism − British and European monks arrived in Ireland and replaced the diocesan system with the first wave of Christian monasteries, etc.",
+     "Spirituality and Land − the connection between religious beliefs and the land in Pre- Christian Ireland - the Tuatha, etc.",
+     "Spirituality and Reform − the 8th century Céli Dé worked to ensure that priests were better educated, etc.",
+     "The Enlightenment − the Penal Laws stopped Catholics being educated and so many travelled abroad and brought back Enlightenment ideas, etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40 Marks",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of MC why one of the above times was a time of change in religion within Ireland: substantial evidence",
+       "Relevance: Completely & clearly relevant",
+       "Use of skill(s) – Giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of MC why one of the above times was a time of change in religion within Ireland: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of MC why one of the above times was a time of change in religion within Ireland: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of MC why one of the above times was a time of change in religion within Ireland: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of MC why one of the above times was a time of change in religion within Ireland: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Giving an accurate account: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of MC why one of the above times was a time of change in religion within Ireland: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Giving an accurate account: very little/ no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     24
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-i-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "I",
+   "questionRef": "2024 OL Section I Q(b)(ii)",
+   "topicId": "re-i",
+   "conceptId": "happened-during-moments-influenced-development-christianity",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine how what happened during one of the above moments influenced the development of Christianity in Ireland.",
+   "stem": "● Contemporary Ireland ● Monasticism ● Spirituality and Land ● Spirituality and Reform ● The Enlightenment",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of key moments in the development of Christianity in Ireland by looking closely at the effect that one key point in time had on the development of Christianity in Ireland e.g.",
+    "points": [
+     "Contemporary Ireland − ecumenical communities like Corrymeela have been influential in creating tolerance and respect between Christians, etc",
+     "Monasticism − monasteries became centres of study and learning; monks were responsible for creating great works of art − The Book of Kells; developed a form of Irish Christianity, etc.",
+     "Spirituality and Land − the penal laws linked land ownership and landlessness to religious identity, etc.",
+     "Spirituality and Reform − 8th century monasteries like Céili Dé stressed the importance of Anam Chara which led to the development of private confession, etc.",
+     "The Enlightenment − ideas such as liberty, equality and fraternity made people critical of the position of the Anglican Church; Belfast reading societies were set up and Catholics were free to join, etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40 Marks",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of MC -how one of the above moments influenced the development of Christianity in Ireland: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – Looking closely: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of MC -how one of the above moments influenced the development of Christianity in Ireland: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Looking closely: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of MC -how one of the above moments influenced the development of Christianity in Ireland: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Looking closely: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of MC -how one of the above moments influenced the development of Christianity in Ireland: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Looking closely: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of MC -how one of the above moments influenced the development of Christianity in Ireland: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Looking closely: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of MC -how one of the above moments influenced the development of Christianity in Ireland: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Looking closely: very little/no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     24,
+     25
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-j-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "J",
+   "questionRef": "2024 OL Section J Q(a)(i)",
+   "topicId": "re-j",
+   "conceptId": "ideas-put-forward-galileo-through-his",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline two ideas that were put forward by Galileo through his experiments and discoveries about the universe.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the relationship between science and religion by setting out accurate information on two ideas put forward by Galileo in his work about the universe e.g.",
+    "points": [
+     "Galileo’s observations and study of the surface of the moon led him to put forward the idea that the 'things of the heavens' were imperfect like earth and may be subject to the same laws of physics etc.",
+     "Galileo put forward the idea that the planets orbited the sun and not the earth etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC - two ideas about universe put forward by Galileo: substantial evidence",
+       "Relevance: Completely & clearly relevant",
+       "Use of skill(s) – setting out accurate information: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC - two ideas about universe put forward by Galileo: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – setting out accurate information: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC - two ideas about universe put forward by Galileo: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – setting out accurate information: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC - two ideas about universe put forward by Galileo: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – setting out accurate information: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC - two ideas about universe put forward by Galileo: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – setting out accurate information: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC - two ideas about universe put forward by Galileo: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – setting out accurate information: very little/no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     25,
+     26
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-j-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "J",
+   "questionRef": "2024 OL Section J Q(a)(ii)",
+   "topicId": "re-j",
+   "conceptId": "ways-idea-put-forward-galileo-influenced",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Trace two ways in which an idea put forward by Galileo influenced the relationship between science and religion.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the relationship between religion and science by accurately tracing two ways that an idea put forward by Galileo had an impact on the relationship between science and religion e.g.",
+    "points": [
+     "Galileo’s idea that the planets orbited the sun and not the earth caused tension between science and religion in that he went against the church teaching that the earth was at the centre of creation, etc.",
+     "Galileo’s idea that the heavens may be imperfect and subject to the laws of physics led to questions about the role and purpose of both science and religion and led scientists to the question the authority of the Bible, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC - two ways relationship between science and religion was influenced by an idea of Galileo: substantial evidence",
+       "Relevance: Completely & clearly relevant",
+       "Use of skill(s) – tracing: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC - two ways relationship between science and religion was influenced by an idea of Galileo: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – tracing: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC - two ways relationship between science and religion was influenced by an idea of Galileo: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – tracing: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC - two ways relationship between science and religion was influenced by an idea of Galileo: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – tracing: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC - two ways relationship between science and religion was influenced by an idea of Galileo: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – tracing: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC - two ways relationship between science and religion was influenced by an idea of Galileo: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – tracing: very little/no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     26
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-j-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "J",
+   "questionRef": "2024 OL Section J Q(b)(i)",
+   "topicId": "re-j",
+   "conceptId": "being-part-community-important-both-science",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain why being part of a community is important for both science and religion, referring to the advantages of objective and subjective investigation.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the theological and scientific enterprises by giving an accurate account of the reasons why being a part of a community is important for both science and religion referring to the merits of objective and subjective investigation e.g.",
+    "points": [
+     "Both science and religion are communal in nature as they both rely on the information that has been passed on through previous generations, etc.",
+     "Objective investigation is impartial and has value in relation to discovering the origins of the universe by focusing on what is factually measurable and discounting anything that cannot be objectively proven, etc.",
+     "Subjective investigation has value in answering questions as it could provide a personal motivation to discover new information, etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40 Marks",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 - 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "Evidence of MC - why community is important for science and religion & advantages of objective and subjective investigation: substantial evidence",
+       "Relevance: Completely & clearly relevant",
+       "Use of skill(s) – Giving an accurate account: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 - 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "Evidence of MC - why community is important for science and religion & advantages of objective and subjective investigation: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Giving an accurate account: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 - 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "Evidence of MC - why community is important for science and religion & advantages of objective and subjective investigation: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Giving an accurate account: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 - 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "Evidence of MC - why community is important for science and religion & advantages of objective and subjective investigation: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Giving an accurate account: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 - 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "Evidence of MC - why community is important for science and religion & advantages of objective and subjective investigation: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Giving an accurate account: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 - 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "Evidence of MC - why community is important for science and religion & advantages of objective and subjective investigation: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Giving an accurate account: very little/no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     27
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2024-ol-j-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2024,
+   "level": "ordinary",
+   "section": "J",
+   "questionRef": "2024 OL Section J Q(b)(ii)",
+   "topicId": "re-j",
+   "conceptId": "religion-science-share-questions-common-extent",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Religion and science share questions in common. Discuss the extent to which religion and science share an interest in two particular questions about life and living today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2024 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the theological and scientific enterprises by examining different perspectives and drawing accurate conclusions about the way science and religion share a common interest in two specific questions about life and living today e.g.",
+    "points": [
+     "What happens when we die? – science seeks to understand the physical process of death; religion seeks to understand what happens to the soul after death, etc.",
+     "Why should we protect the environment? Science seeks to understand the objective need to protect the environment to ensure the wellbeing of the planet and its people; religion addresses the responsibility of believers to protect the creation of God/gods/the divine, etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20 Marks x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 - 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "Evidence of MC - way science and religion share a common interest in two specific questions about life: substantial evidence",
+       "Relevance: completely & clearly relevant",
+       "Use of skill(s) – Examining perspectives and drawing conclusions: Excellent",
+       "Factual accuracy: no major errors(s)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 - 14",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "Evidence of MC - way science and religion share a common interest in two specific questions about life: very good evidence",
+       "Relevance: clearly relevant",
+       "Use of skill(s) – Examining perspectives and drawing conclusions: very good",
+       "Factual accuracy: very little errors(s)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 - 11",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "Evidence of MC - way science and religion share a common interest in two specific questions about life: good evidence",
+       "Relevance: generally relevant",
+       "Use of skill(s) – Examining perspectives and drawing conclusions: good",
+       "Factual accuracy: little major errors(s)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 - 8",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "Evidence of MC - way science and religion share a common interest in two specific questions about life: adequate evidence",
+       "Relevance: limited relevance",
+       "Use of skill(s) – Examining perspectives and drawing conclusions: some",
+       "Factual accuracy: some major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 - 5",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "Evidence of MC - way science and religion share a common interest in two specific questions about life: inadequate evidence",
+       "Relevance: little relevance",
+       "Use of skill(s) – Examining perspectives and drawing conclusions: little",
+       "Factual accuracy: Many major errors(s)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 – 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "Evidence of MC - way science and religion share a common interest in two specific questions about life: Very little/ no evidence",
+       "Relevance: Not relevant",
+       "Use of skill(s) – Examining perspectives and drawing conclusions: very little/no",
+       "Factual accuracy: substantial errors(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     27,
+     28
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
    }
   }
  ]
