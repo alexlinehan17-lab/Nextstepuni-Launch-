@@ -896,7 +896,9 @@ export function parsePrintedAlternatives(source: IrishAnswerSource): IrishAnswer
   }
   const rows: IrishAnswerRow[] = [];
   for (const piece of priced) {
-    const text = stripMarker(piece.replace(price, ' '));
+    // The price printed inside the alternative's words ("… (Dán seanaimseartha le bean.) = 11 marc (Teideal an dáin agus ainm an
+    // fhile.)") leaves two slices of the print: "…: (Teideal …)".
+    const text = stripMarker(piece.replace(new RegExp(String.raw`\s*:?\s*=\s*${source.totalMarks}\s*m?h?arc\b\s*`), ': ').replace(/:\s*$/, ''));
     if (!text) return { ok: false, reason: 'an alternative without words' };
     if (!rows.some(row => row.text.replace(/[.:;]+$/, '') === text.replace(/[.:;]+$/, ''))) rows.push({ id: `r${rows.length + 1}`, text, marks: source.totalMarks });
   }

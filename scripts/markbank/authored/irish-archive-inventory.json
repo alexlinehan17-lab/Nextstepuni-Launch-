@@ -28,14 +28,14 @@
       "higher",
       "ordinary"
     ],
-    "papersWithCards": 83,
-    "papersWithoutCards": 8,
-    "indexedCards": 3414,
+    "papersWithCards": 84,
+    "papersWithoutCards": 7,
+    "indexedCards": 3428,
     "orphanCardIds": [],
     "missingLocalPapers": [],
     "papersWithoutIndexedScheme": [],
     "missingLocalSchemes": [],
-    "papersPendingFullReview": 8,
+    "papersPendingFullReview": 7,
     "componentsWithSourceGaps": [
       "2010|foundation|LC001BLPA00IV.pdf"
     ]
@@ -9125,22 +9125,47 @@
         "pages": 28,
         "sha256": "b5f7c77e673759308a08e4a8cdef08000045789921a3c64278c739bb510783b0"
       },
-      "markBankCardIds": [],
+      "markBankCardIds": [
+        "irish-2011-hl-p2-prose-1a",
+        "irish-2011-hl-p2-prose-1b",
+        "irish-2011-hl-p2-extra-2a-a",
+        "irish-2011-hl-p2-extra-2a-b",
+        "irish-2011-hl-p2-extra-2b-a",
+        "irish-2011-hl-p2-extra-2b-b",
+        "irish-2011-hl-p2-extra-2c-a",
+        "irish-2011-hl-p2-extra-2c-b",
+        "irish-2011-hl-p2-extra-2d-a",
+        "irish-2011-hl-p2-extra-2d-b",
+        "irish-2011-hl-p2-poetry-3a",
+        "irish-2011-hl-p2-poetry-3b",
+        "irish-2011-hl-p2-poetry-3c",
+        "irish-2011-hl-p2-history-4"
+      ],
       "atlasQuestionIds": [
         "1",
         "2",
         "3",
         "4",
+        "X",
         "P-A",
         "P-B",
+        "X-2A-a",
+        "X-2A-b",
+        "X-2B-a",
+        "X-2B-b",
+        "X-2C-a",
+        "X-2C-b",
+        "X-2D-a",
+        "X-2D-b",
         "F-A",
         "F-B",
-        "X"
+        "F-C",
+        "X-4"
       ],
-      "questionCoverage": "missing-from-mark-bank",
-      "fullVisualReview": "pending",
-      "partAndSelectionReconciliation": "pending",
-      "bankAtlasTaskParity": "pending"
+      "questionCoverage": "reviewed",
+      "fullVisualReview": "complete",
+      "partAndSelectionReconciliation": "complete",
+      "bankAtlasTaskParity": "complete"
     },
     {
       "key": "2011|higher|LC001ALPA00IV.pdf",
