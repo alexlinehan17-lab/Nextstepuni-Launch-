@@ -212,8 +212,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
           // named by the scheme's own unit (2023 HL A 6(b) prices "Tréith 1/2", 2020 HL A 6(b) "Aidhm 1/2", 2016 HL B 6(b) "Pointe eolais 1/2", 2014 HL B 6(b) "Ábhar imní 1/2", 2013 HL A 6(b) "Fáth 1/2"). The 2020
           // Higher paper prints one question for each of 2A, 2B, 3A and 3B, so those routes carry no option letter.
           // 2010-2011 print the listening as its own paper (Triail Chluastuisceana: "2011 OL Cluastuiscint Cuid A · Fógra a Trí")
-          // and the literature as Prós/Filíocht Ainmnithe or Roghnach (a)/(b).
-          return !/^\d{4} (?:HL|OL) (?:Paper [12] |(?=Cluastuiscint ))(?:(?:Cluastuiscint )?Cuid [ABC] · (?:Fógra|Comhrá|Píosa) a (?:hAon|Dó|Trí)(?: · An (?:Chéad Mhír|Dara Mír))?(?: · Ceist [1-9](?:\([a-e]\))?)?|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6](?:\([ab]\)(?:\((?:i|ii)\))?)?(?: · (?:Pointe(?: eolais)?|Freagra|Léargas|Dúshlán|Sampla|Ceist|Cúis|Tréith|Aidhm|Ábhar imní|Fáth) [1-9])?|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\)|(?:Prós 2|Filíocht 3)[AB](?:\([a-c]\))? · .+|Litríocht 4[A-F](?: ·|\.) .+|(?:Prós|Filíocht) (?:Ainmnithe|Roghnach) \([ab]\)(?:\((?:i|ii)\))? · .+)$/.test(ref);
+          // and the literature as Prós/Filíocht Ainmnithe or Roghnach (a)/(b); Higher Paper 2 prints Ceist 1 Prós, Ceist 2 Próstéacs
+          // Breise (A-D), Ceist 3 Filíocht (A-C) and Ceist 4 Stair na Gaeilge.
+          return !/^\d{4} (?:HL|OL) (?:Paper [12] |(?=Cluastuiscint ))(?:(?:Cluastuiscint )?Cuid [ABC] · (?:Fógra|Comhrá|Píosa) a (?:hAon|Dó|Trí)(?: · An (?:Chéad Mhír|Dara Mír))?(?: · Ceist [1-9](?:\([a-e]\))?)?|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6](?:\([ab]\)(?:\((?:i|ii)\))?)?(?: · (?:Pointe(?: eolais)?|Freagra|Léargas|Dúshlán|Sampla|Ceist|Cúis|Tréith|Aidhm|Ábhar imní|Fáth) [1-9])?|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\)|(?:Prós [12]|Próstéacs 2|Filíocht 3)[A-D](?:\([a-c]\))? · .+|Stair na Gaeilge 4|Litríocht 4[A-F](?: ·|\.) .+|(?:Prós|Filíocht) (?:Ainmnithe|Roghnach) \([ab]\)(?:\((?:i|ii)\))? · .+)$/.test(ref);
         }
         if (subject === 'geography') {
           // Reviewed sittings cite the printed part: "Q2(ii)(a)", "Q5A(iii)", "Q8A(vii)";

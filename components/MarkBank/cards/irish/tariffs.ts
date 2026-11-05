@@ -462,6 +462,15 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       tokens.push({ kind: 'row', text: tidy(shares[0].replace(/\.$/, '')), marks: source.totalMarks, steps: cumulative(shared),
         at: shares.index, end: shares.index + shares[0].length });
     }
+    // "Dhá cheann le déanamh as (a), (b), (c), (d), (e), (f). 13 + 12 (Eolas) móide 5 marc ar an gCumas Gaeilge" (2011 Higher
+    // Ceist 4, Stair na Gaeilge): the two answers' Eolas printed as a split with nothing else priced. The sentence and its split
+    // are the criterion's row, stepped at the totals the split makes ([0, 12, 13, 25]), only where it adds up to the criterion.
+    const eolasSplit = /[^.•¶]*\.\s*(\d+)\s*\+\s*(\d+)\s*\(Eolas\)/.exec(body);
+    if (eolasSplit && !tokens.some(token => token.kind === 'row') && !parts.length && !loose.length
+      && Number(eolasSplit[1]) + Number(eolasSplit[2]) === source.totalMarks) {
+      tokens.push({ kind: 'row', text: tidy(eolasSplit[0]), marks: source.totalMarks,
+        steps: subsetSums([Number(eolasSplit[1]), Number(eolasSplit[2])]), at: eolasSplit.index, end: eolasSplit.index + eolasSplit[0].length });
+    }
     tokens.sort((a, b) => a.at - b.at);
     // "(ii) Roghnaigh dhá íomhá (phictiúr) … (8 marc) Íomhá / pictiúr a lua = 1 mharc Forbairt = 3 mharc 2 íomhá / phictiúr ar 4
     // mharc an ceann" (2013 Ordinary 3B(a)(ii)): the rows price one of the things the question asks for, and the line after them
@@ -871,7 +880,33 @@ export const closeBrackets = (allocation: IrishAllocation, guidance: string[]): 
   };
 };
 
+/** The scheme's printed alternatives for one sub-question, each restated and priced at the whole criterion, set apart by "Nó"
+ *  or printed on lines of their own (2011 Higher Páipéar II: "(An Bhean Óg) Ionramháil Ábhair = 22 marc Nó … (Coilleach
+ *  Ghleann Phádraig) Ionramháil Ábhair = 22 marc Nó … = 22 marc"; "(ii) An íomhá … (Jack) = 6 marc" over "(ii) An íomhá …
+ *  (Bímse Buan ar Buairt Gach Ló) = 6 marc"). They never add up: one part at the criterion's marks, each alternative's own
+ *  words a row claimed whole, and the one answered reaches the tariff. An alternative printed again in the same words ("Mínigh
+ *  na línte." for each poem) is one row, as an option printed twice is. Read only where the tariff reader finds no reading;
+ *  every alternative must carry exactly one price, the criterion's, and a line with no price is a direction. */
+export function parsePrintedAlternatives(source: IrishAnswerSource): IrishAnswerResult {
+  const price = new RegExp(String.raw`\s*=\s*${source.totalMarks}\s*m?h?arc\b`);
+  const pieces = source.guidance.flatMap(line => line.split(/(?:^|\s+)Nó\s+/)).map(piece => piece.replace(/\s+/g, ' ').trim()).filter(Boolean);
+  const priced = pieces.filter(piece => /\d+\s*m?h?arc\b/.test(piece));
+  if (priced.length < 2 || !priced.every(piece => (piece.match(/\d+\s*m?h?arc\b/g) ?? []).length === 1 && price.test(piece))) {
+    return { ok: false, reason: 'no printed alternatives' };
+  }
+  const rows: IrishAnswerRow[] = [];
+  for (const piece of priced) {
+    const text = stripMarker(piece.replace(price, ' '));
+    if (!text) return { ok: false, reason: 'an alternative without words' };
+    if (!rows.some(row => row.text.replace(/[.:;]+$/, '') === text.replace(/[.:;]+$/, ''))) rows.push({ id: `r${rows.length + 1}`, text, marks: source.totalMarks });
+  }
+  const directions = pieces.filter(piece => !priced.includes(piece)).map(tidy).filter(Boolean);
+  return { ok: true, allocation: { parts: [{ id: 'p1', tariff: source.totalMarks, rows }], directions } };
+}
+
 export function irishTariffsFor(source: IrishAnswerSource): IrishAllocation | undefined {
   const result = parseIrishTariffs(source);
-  return result.ok ? result.allocation : undefined;
+  if (result.ok) return result.allocation;
+  const alternatives = parsePrintedAlternatives(source);
+  return alternatives.ok ? alternatives.allocation : undefined;
 }

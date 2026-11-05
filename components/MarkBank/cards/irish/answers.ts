@@ -289,6 +289,141 @@ const parseUnitReading = (text: string, total: number): IrishAnswerResult | unde
     rows: rows.map((row, index) => ({ id: `r${index + 1}`, text: row.text, marks: row.marks, ...(row.steps ? { steps: row.steps } : {}) })) }], directions } };
 };
 
+/** The 2011 Higher reading key (Páipéar 1, scheme PDF 5–14) restates each part with its tariff and the split its marks take:
+ *  "1 (a) Cén taithí a bhí ag an údar ar an bPolainn? (Alt 1) (3 mharc) (2+1)" is Eolas 2 + Ionramháil 1 (its rule, PDF 5:
+ *  "Eolas + Ionramháil: 2 + 1 = 2 marc ar eolas cruinn + 1 marc ar ionramháil"), "(4 mharc) (2+1+1)" is P1 + P2 + Ionramháil
+ *  (PDF 6: "4 marc ar an bhfreagra: 2 marc + 1 marc + 1 marc P1 + P2 + Ionramháil"), "Pointe amháin(2+1)" one point and its
+ *  Ionramháil, "3 mharc gan ionramháil" one answer at 3, "(2+1+1) (Eachtra+Míniú+Ionramháil)" each term named. A reviewed card
+ *  prices each term as a criterion of its own and carries the restated part, then the key's lines for that term one to a line;
+ *  where the key heads a term itself ("Dhá thréith =1+1 (gan ionramháil)", "2 mharc gan ionramháil=céard is bun leis na
+ *  tréithe", "(Eachtra=2 mharc)", "Míniú = 1 mharc"), that heading prices the criterion. A line is:
+ *  - a note: wholly in brackets with no price ("(Cáiliú amháin ag teastáil …)"), or the key's heading or rule ("Dhá chuid san
+ *    eachtra:", "Míniú: Pointe eolais amháin = 2 mharc", "Gan an eachtra cheart …"): a direction;
+ *  - an answer priced where it is printed ("= 3 mharc", "= 3 - 1 = 2 mharc", "= 1 + 1 = 2 mharc", "= 0", a sentence of two
+ *    points "(Dhá phointe eolais san abairt seo = 2 + 1)"): a row at that price, stepped at its printed split;
+ *  - an answer quoted from the passage and not priced: a row at the term's price (on two points, a rung of the P1 + P2 ladder;
+ *    under "=1+1", stepped one trait at a time), unless rows printed beside it at prices add up to the term (2A 5(b)'s eachtra,
+ *    "= 1 mharc" + "= 1 mharc"): then it is the passage's own account of them, a sample;
+ *  - the same answer in other words, not quoted ("Chaith sé mí/tamall sa Pholainn …"): a sample;
+ *  - on the Ionramháil criterion, the rule "Is ionann “ionramháil” agus …" is its one row and the rules after it directions.
+ *  Read only where the first line is a restated part ending at its split, or a term's own heading; anything else is not this
+ *  key. Nothing is added: rows, samples and directions are the key's lines as printed. */
+/** The restated part: its words to its tariff, then the split ("(Alt 2)" is not always restated; A 3(b) prints no tariff). */
+const SPLIT_PART = /^\d\s*\(\s*[ab]\s*\)\s*(.+?)\s*(?:\(\s*(\d)\s*mharc\s*\)\s*(.*))?$/;
+const SPLIT_TERMS = /^(?:Pointe amháin\s*)?\(\s*(\d)\s*\+\s*(\d)(?:\s*\+\s*(\d))?\s*\)(?:\s*\((Eachtra)\s*\+\s*(Míniú)\s*\+\s*Ionramháil\s*\))?$/;
+const SPLIT_PLAIN = /^\(?\s*(\d)\s*mharc\s*\)?\s*gan ionramháil\s*\)?$/;
+const SPLIT_PAIR = /^\(\s*(\d)\s*\+\s*(\d)\s*\)\s*gan ionramháil\.?$/;
+const SPLIT_HEADS: [RegExp, (match: RegExpExecArray) => { prompt: string; tariff: number; steps?: number[] }][] = [
+  [/^(Dhá thréith)\s*=\s*(\d)\s*\+\s*(\d)\s*\(gan ionramháil\)$/, match => ({ prompt: match[1], tariff: Number(match[2]) + Number(match[3]),
+    steps: [0, Number(match[2]), Number(match[2]) + Number(match[3])] })],
+  [/^(\d)\s*mharc gan ionramháil\s*=\s*(.+)$/, match => ({ prompt: match[2], tariff: Number(match[1]) })],
+  [/^\((Eachtra|Míniú)\s*=\s*(\d)\s*mharc\)$/, match => ({ prompt: match[1], tariff: Number(match[2]) })],
+  [/^(Míniú)\s*=\s*(\d)\s*mharc$/, match => ({ prompt: match[1], tariff: Number(match[2]) })],
+];
+const SPLIT_NOTE = /^(?:\([^()=]*\)|Dhá chuid\s[^=]*:|Míniú:\s.*|Gan an\s.*)$/;
+const SPLIT_IONRAMHAIL = /^Is ionann “ionramháil”/;
+const SPLIT_PRICE = /\s*=\s*(?:(\d)\s*-\s*(\d)\s*=\s*|(\d)\s*\+\s*(\d)\s*=\s*|(pointe eolais amháin)\s*=\s*)?(\d)\s*mharc\b\.?\s*(\([^()]*\))?$/;
+const SPLIT_ZERO = /\s*=\s*0\.?$/;
+const SPLIT_POINTS = /\s*\(([^()]*=\s*(\d)\s*\+\s*(\d)\b[^()]*)\)$/;
+const parseSplitReading = (source: IrishAnswerSource): IrishAnswerResult | undefined => {
+  const lines = source.guidance.map(line => line.replace(/\s+/g, ' ').trim());
+  const part = SPLIT_PART.exec(lines[0]);
+  let prompt: string | undefined;
+  let term: { tariff: number; ladder?: number[]; steps?: number[]; ionramhail?: boolean } | undefined;
+  let first = 1;
+  if (part) {
+    prompt = tidy(part[1]);
+    const spec = (part[3] ?? '').trim();
+    const terms = SPLIT_TERMS.exec(spec);
+    const plain = SPLIT_PLAIN.exec(spec);
+    const printed = part[2] ? Number(part[2]) : undefined;
+    const head = lines[1] !== undefined ? SPLIT_HEADS.map(([rule, read]) => { const m = rule.exec(lines[1]); return m && read(m); }).find(Boolean) : undefined;
+    if (head) {
+      if (!SPLIT_PAIR.test(spec) && spec !== '') return { ok: false, reason: 'term heading under a split that names no terms' };
+      term = { tariff: head.tariff, ...(head.steps ? { steps: head.steps } : {}) };
+      first = 2;
+    } else if (terms) {
+      const values = [terms[1], terms[2], terms[3]].filter(Boolean).map(Number);
+      if (printed !== undefined && values.reduce((a, b) => a + b, 0) !== printed) return { ok: false, reason: 'split does not add up to the part' };
+      const ionramhail = lines.slice(1).some(line => SPLIT_IONRAMHAIL.test(line));
+      if (ionramhail) term = { tariff: values[values.length - 1], ionramhail: true };
+      else if (terms[4]) term = { tariff: values[0] };
+      else if (values.length === 3) term = { tariff: values[0] + values[1], ladder: [values[0], values[0] + values[1]] };
+      else term = { tariff: values[0] };
+    } else if (plain) {
+      if (printed !== undefined && Number(plain[1]) !== printed) return { ok: false, reason: 'split does not add up to the part' };
+      term = { tariff: Number(plain[1]) };
+    } else return undefined;
+  } else {
+    const head = SPLIT_HEADS.map(([rule, read]) => { const m = rule.exec(lines[0]); return m && read(m); }).find(Boolean);
+    if (!head) return undefined;
+    prompt = tidy(head.prompt);
+    term = { tariff: head.tariff, ...(head.steps ? { steps: head.steps } : {}) };
+  }
+  if (term.tariff !== source.totalMarks) return { ok: false, reason: `term ${term.tariff}, criterion is ${source.totalMarks}` };
+  const directions: string[] = [];
+  if (term.ionramhail) {
+    if (!SPLIT_IONRAMHAIL.test(lines[first] ?? '')) return { ok: false, reason: 'Ionramháil rule not first' };
+    return { ok: true, allocation: { parts: [{ id: 'p1', ...(prompt ? { prompt } : {}), tariff: term.tariff,
+      rows: [{ id: 'r1', text: tidy(lines[first]), marks: term.tariff }] }], directions: lines.slice(first + 1).map(tidy).filter(Boolean) } };
+  }
+  // The key's lines in print order: a priced answer is a row now; an unpriced quotation waits until the term's priced rows are
+  // known (a row, or a sample beside rows that are the term's components); an unpriced line in other words is a sample.
+  const items: ({ row: IrishAnswerRow } | { quoted: string } | { sample: string })[] = [];
+  for (const raw of lines.slice(first)) {
+    const line = /^\([^()]*=\s*0\)$/.test(raw) ? raw.slice(1, -1).trim() : raw;
+    if (SPLIT_IONRAMHAIL.test(line)) return { ok: false, reason: 'Ionramháil rule on an answer term' };
+    if (SPLIT_NOTE.test(line)) { directions.push(tidy(line)); continue; }
+    const price = SPLIT_PRICE.exec(line);
+    if (price) {
+      const marks = Number(price[6]);
+      const text = tidy(line.slice(0, price.index) + (price[5] ? `: ${price[5]}` : '') + (price[7] ? ` ${price[7]}` : ''));
+      if (price[3] !== undefined && Number(price[3]) + Number(price[4]) !== marks) return { ok: false, reason: 'split price does not add up' };
+      if (price[1] !== undefined && Number(price[1]) - Number(price[2]) !== marks) return { ok: false, reason: 'deduction does not add up' };
+      if (marks > term.tariff) return { ok: false, reason: 'row above its term' };
+      items.push({ row: { id: '', text, marks, ...(price[3] !== undefined ? { steps: [0, Number(price[3]), marks] } : {}) } });
+      continue;
+    }
+    if (SPLIT_ZERO.test(line)) {
+      // On a ladder an answer printed at 0 is never a rung: it is what the key refuses.
+      if (term.ladder) directions.push(tidy(line));
+      else items.push({ row: { id: '', text: tidy(line.replace(SPLIT_ZERO, '')), marks: 0 } });
+      continue;
+    }
+    const points = SPLIT_POINTS.exec(line);
+    if (/\d\s*m?h?arc\b|=/.test(points ? line.slice(0, points.index) : line)) return { ok: false, reason: `unread price: ${line.slice(0, 40)}` };
+    if (points) {
+      const [a, b] = [Number(points[2]), Number(points[3])];
+      if (a + b !== term.tariff || !term.ladder) return { ok: false, reason: 'two points outside a two-point term' };
+      items.push({ row: { id: '', text: tidy(line), marks: a + b, steps: [0, a, a + b] } });
+      continue;
+    }
+    items.push(line.includes('“') ? { quoted: tidy(line) } : { sample: tidy(line) });
+  }
+  const priced = items.flatMap(item => ('row' in item ? [item.row] : []));
+  const quoted = items.some(item => 'quoted' in item);
+  // Rows printed at prices that add up to the term, each below it, are its components (1 + 1 for an eachtra of two parts).
+  const components = priced.length > 1 && priced.reduce((sum, row) => sum + row.marks, 0) === term.tariff && priced.every(row => row.marks < term.tariff);
+  // Two-point sentences priced in the key ("= 2 + 1") are claimed at their own steps, never as rungs of the P1 + P2 ladder.
+  if (term.ladder && priced.some(row => row.marks > 0)) {
+    if (quoted) return { ok: false, reason: 'unpriced answers beside priced points' };
+    delete term.ladder;
+  }
+  const rows: IrishAnswerRow[] = [];
+  const samples: string[] = [];
+  for (const item of items) {
+    if ('row' in item) rows.push(item.row);
+    else if ('sample' in item || components) samples.push('sample' in item ? item.sample : item.quoted);
+    else rows.push({ id: '', text: item.quoted, marks: term.ladder ? 0 : term.tariff, ...(term.steps ? { steps: term.steps } : {}) });
+  }
+  if (!rows.length) return { ok: false, reason: 'no answers' };
+  if (!term.ladder && !components && !rows.some(row => row.steps) && Math.max(...rows.map(row => row.marks)) < term.tariff) {
+    return { ok: false, reason: 'tariff not reachable' };
+  }
+  return { ok: true, allocation: { parts: [{ id: 'p1', ...(prompt ? { prompt } : {}), tariff: term.tariff, ...(term.ladder ? { ladder: term.ladder } : {}),
+    rows: rows.map((row, index) => ({ ...row, id: `r${index + 1}` })), ...(samples.length ? { samples } : {}) }], directions } };
+};
+
 /** Cut one criterion's exact guidance into parts and rows, or say why not. */
 /** "Fógra 1: 3 marc × 4 = 12 marc" (2012 Ordinary, scheme PDF 4–5): a listening section's printed tariff. */
 const SECTION_TARIFF = /^(?:Fógra|Comhrá|Píosa) \d: (\d+) m?h?arc × (\d+) = (\d+) m?h?arc$/;
@@ -319,6 +454,10 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   if (restated && Number(restated[2]) === source.totalMarks) {
     return { ok: true, allocation: { parts: [{ id: 'p1', tariff: source.totalMarks,
       rows: [{ id: 'r1', text: tidy(restated[1]), marks: source.totalMarks }] }], directions: [] } };
+  }
+  if (/Léamhthuiscint/.test(source.questionRef)) {
+    const split = parseSplitReading(source);
+    if (split) return split;
   }
   const ownLines = source.guidance.filter((line, index) => {
     if (index === 0) return true;

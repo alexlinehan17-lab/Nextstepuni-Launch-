@@ -58,6 +58,7 @@ import ordinary2012P2 from '../components/MarkBank/cards/irish/ordinary-2012-p2-
 import ordinary2011P1 from '../components/MarkBank/cards/irish/ordinary-2011-p1-authored.json';
 import ordinary2011P2 from '../components/MarkBank/cards/irish/ordinary-2011-p2-authored.json';
 import ordinary2011Aural from '../components/MarkBank/cards/irish/ordinary-2011-aural-authored.json';
+import higher2011Aural from '../components/MarkBank/cards/irish/higher-2011-aural-authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import { irishMarks } from '../components/MarkBank/SessionScreen';
@@ -145,6 +146,7 @@ describe('Irish archive review: Paper 1 (listening and composition)', () => {
 // 2010-2011 print the listening as a paper of its own (Triail Chluastuisceana), with no composition on it.
 const AURAL = [
   { review: ordinary2011Aural.review, year: 2011, fileid: 'LC001GLPA00IV.pdf', segments: 9, questions: 34 },
+  { review: higher2011Aural.review, year: 2011, fileid: 'LC001ALPA00IV.pdf', segments: 12, questions: 45 },
 ];
 
 describe('Irish archive review: 2010-2011 aural papers', () => {

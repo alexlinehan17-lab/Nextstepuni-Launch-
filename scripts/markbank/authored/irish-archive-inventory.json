@@ -28,14 +28,14 @@
       "higher",
       "ordinary"
     ],
-    "papersWithCards": 81,
-    "papersWithoutCards": 10,
-    "indexedCards": 3363,
+    "papersWithCards": 82,
+    "papersWithoutCards": 9,
+    "indexedCards": 3375,
     "orphanCardIds": [],
     "missingLocalPapers": [],
     "papersWithoutIndexedScheme": [],
     "missingLocalSchemes": [],
-    "papersPendingFullReview": 10,
+    "papersPendingFullReview": 9,
     "componentsWithSourceGaps": [
       "2010|foundation|LC001BLPA00IV.pdf"
     ]
@@ -9080,16 +9080,41 @@
         "pages": 28,
         "sha256": "b5f7c77e673759308a08e4a8cdef08000045789921a3c64278c739bb510783b0"
       },
-      "markBankCardIds": [],
+      "markBankCardIds": [
+        "irish-2011-hl-aural-a-f1",
+        "irish-2011-hl-aural-a-f2",
+        "irish-2011-hl-aural-a-f3",
+        "irish-2011-hl-aural-b-c1-first",
+        "irish-2011-hl-aural-b-c1-second",
+        "irish-2011-hl-aural-b-c2-first",
+        "irish-2011-hl-aural-b-c2-second",
+        "irish-2011-hl-aural-b-c3-first",
+        "irish-2011-hl-aural-b-c3-second",
+        "irish-2011-hl-aural-c-p1",
+        "irish-2011-hl-aural-c-p2",
+        "irish-2011-hl-aural-c-p3"
+      ],
       "atlasQuestionIds": [
         "1",
         "2",
-        "3"
+        "3",
+        "L-A-F1",
+        "L-A-F2",
+        "L-A-F3",
+        "L-B-C1-M1",
+        "L-B-C1-M2",
+        "L-B-C2-M1",
+        "L-B-C2-M2",
+        "L-B-C3-M1",
+        "L-B-C3-M2",
+        "L-C-P1",
+        "L-C-P2",
+        "L-C-P3"
       ],
-      "questionCoverage": "missing-from-mark-bank",
-      "fullVisualReview": "pending",
-      "partAndSelectionReconciliation": "pending",
-      "bankAtlasTaskParity": "pending"
+      "questionCoverage": "reviewed",
+      "fullVisualReview": "complete",
+      "partAndSelectionReconciliation": "complete",
+      "bankAtlasTaskParity": "complete"
     },
     {
       "key": "2011|ordinary|LC001GLP100IV.pdf",

@@ -28,15 +28,15 @@
     "referenceAnomalyAssociations": 2,
     "matchedLocalCardLinks": 742,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 4090,
-    "distinctStudentFacingQuestions": 4090,
+    "localPhysicalMappings": 4102,
+    "distinctStudentFacingQuestions": 4102,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 3404,
+    "retainedLocalQuestions": 3416,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 3804,
+    "newlyAddedPhysicalMappings": 3816,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -15361,6 +15361,162 @@
         "irish-higher-aural-piosa-nuachta-news-pieces"
       ],
       "provenance": "reference"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALPA00IV.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "L-A-F1",
+      "topicIds": [
+        "irish-higher-aural-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALPA00IV.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "L-A-F2",
+      "topicIds": [
+        "irish-higher-aural-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALPA00IV.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "L-A-F3",
+      "topicIds": [
+        "irish-higher-aural-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALPA00IV.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "L-B-C1-M1",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALPA00IV.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "L-B-C1-M2",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALPA00IV.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "L-B-C2-M1",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALPA00IV.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "L-B-C2-M2",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALPA00IV.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "L-B-C3-M1",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALPA00IV.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "L-B-C3-M2",
+      "topicIds": [
+        "irish-higher-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALPA00IV.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "L-C-P1",
+      "topicIds": [
+        "irish-higher-aural-piosa-nuachta-news-pieces"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALPA00IV.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "L-C-P2",
+      "topicIds": [
+        "irish-higher-aural-piosa-nuachta-news-pieces"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2011,
+      "fileid": "LC001ALPA00IV.pdf",
+      "paperKey": "aural",
+      "kind": "aural",
+      "n": "L-C-P3",
+      "topicIds": [
+        "irish-higher-aural-piosa-nuachta-news-pieces"
+      ],
+      "provenance": "retained-local"
     },
     {
       "level": "foundation",
