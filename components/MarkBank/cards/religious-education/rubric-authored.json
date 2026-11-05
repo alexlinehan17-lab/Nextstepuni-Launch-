@@ -1,6 +1,6 @@
 {
  "v": 1,
- "cardCount": 651,
+ "cardCount": 671,
  "cards": [
   {
    "id": "re-2026-hl-a-1-a",
@@ -97815,6 +97815,2477 @@
      18
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-a-1-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2012 HL Section A Q1(a)",
+   "topicId": "re-a",
+   "conceptId": "plato-philosophical-ideas-nature-reality",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline one of Plato’s philosophical ideas about the nature of reality.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the search for meaning in philosophical thought by setting out accurate information on one idea from Plato’s philosophy about the nature of what is real.",
+    "points": [
+     "Plato believed humans were exposed to two worlds at once i.e. the world of the senses and the world of unchanging ideas. For Plato the physical world and everything perceived through the senses is ever changing, merely appearance and unreliable. True reality is in the realm of ideas etc.",
+     "Plato believed that the human body is subject to change and therefore not ‘real’. The soul remains constant and unchanging and therefore ‘real’ ― a dualistic understanding of the person etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-a-1-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2012 HL Section A Q1(b)",
+   "topicId": "re-a",
+   "conceptId": "since-ancient-times-people-expressed-religious",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Since ancient times people have expressed religious beliefs in different ways. Investigate how evidence of religious belief can be seen in one work of art/artefact from ancient times.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an awareness that from earliest times people have expressed the quest for meaning through a variety of meaning systems by looking closely at one work of art/artefact from ancient times and drawing accurate conclusions about how it shows evidence of religious belief.",
+    "points": [
+     "The large burial mound in Newgrange Co. Meath is covered by white quartz stones and granite. It is surrounded by large kerbstones, some decorated in the recurring patterned designs of megalithic art. The triple spiral carvings found on the stones may suggest a belief in the cycle of life, death and rebirth. Three large stones guard the entrance; the entrance itself has a roof-box. At the winter solstice the rays of sunlight pass through the roof-box and travel along the ascending passage to the inner chamber which may be associated with a religious belief in the power of the sun. In aligning the burial mound to the sun perhaps people were expressing hope that the sun and the natural rhythm of life which depended on it, would not be defeated by darkness and death. The use of Quartz may indicate that Newgrange was regarded as a sacred site etc.",
+     "Small female figurines known as Venus statuettes, have been found at various ancient sites across Europe. The figurines may represent a belief in fertility and rebirth etc.",
+     "Celtic artefacts which are decorated with birds may be associated with the belief that birds were spiritual messengers who brought communication from the spirit world etc.",
+     "Jupiter columns found in France and Germany dating back to Gallo-Roman times are often decorated with figures of Roman gods and of local Celtic gods etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [
+     "Note: If a candidate draws accurate conclusions about how religious belief is expressed in something other than a work of art/artefact from ancient times ― Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     5
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-a-2-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2012 HL Section A Q2(a)",
+   "topicId": "re-a",
+   "conceptId": "way-modern-scientific-theory-universe-began",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Examine the way in which one modern scientific theory about how the universe began could influence a person’s understanding of the meaning of life.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the cosmologies of modern science by looking closely at the way in which one modern cosmology could have an impact on a person’s understanding of the meaning of life.",
+    "points": [
+     "The Big Bang Theory ― Georges Lemaitre proposed the ‘hypothesis of the primeval atom’. This suggested that the universe expanded from a very small beginning, a nucleus, which had exploded and expanded rapidly about 15 billion years ago. This theory might challenge an understanding of life which sees God as creator etc. This theory might encourage people to search for the meaning of life since it suggests that people will find answers to the questions they ask about life etc.",
+     "The ‘Expanding Universe’ or the ‘Steady State’ Theory ― some scientists who had a problem with the idea that the universe had a beginning, proposed a theory that the universe always existed and that its expansion is constant. As the universe expands, new matter is created so that its density remains constant. This theory could influence a person’s understanding of the meaning of life as it appeals to those who argue that the universe always existed etc. This theory appeals to those who feel that the Big Bang Theory favoured a religious or theological interpretation of the origins of the universe etc.",
+     "The ‘Intelligent Design’ Theory ― This cosmology emerged from creationism and tries to fit science into pre-existing religious beliefs. This holds that there is a divine intelligence behind the creation of the universe since there are intelligent patterns in the way the universe works. Such a cosmology could influence a person’s understanding of the meaning of life in that it reinforces a literal understanding of Genesis and a religious understanding of the meaning of life. However the discovery of more random and less intelligent patterns may challenge the basis of this theory etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     6
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-a-2-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2012 HL Section A Q2(b)",
+   "topicId": "re-a",
+   "conceptId": "ideas-existence-god-presented-either-anselm",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Explain how the ideas about the existence of God presented by either Anselm or Aquinas have relevance for people of faith today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the traditional proofs for the existence of God by giving an accurate account of the way in which ideas about the existence of God, put forward by either Anselm or Aquinas, have relevance for people of faith today.",
+    "points": [
+     "Anselm argued from the idea that God is ‘A being than which none greater can be thought’ to the conclusion that since God exists in the mind then God must also exist in reality. This may have relevance for people of faith today in that it offers a logical framework for thinking about God etc.",
+     "Aquinas focused on how people encounter the world as intelligible, ordered, purposeful and beautiful. Yet the world does not possess within itself an explanation either for its existence or for its intelligibility or beauty. Aquinas argued that this paradox points towards the acceptance of God as the origin and goal of the world as it is experienced. This may have relevance for people today in the way it presents a number of different proofs for the existence of God etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [
+     "Note: If a candidate gives an account of the way in which ideas about the existence of God have relevance for people of faith today without accurate reference to either Anselm or Aquinas ― Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     7
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-b-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2012 HL Section B Q(a)",
+   "topicId": "re-b",
+   "conceptId": "evaluate-learnt-jesus-nazareth-writings-josephus",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Evaluate what can be learnt about Jesus of Nazareth from the writings of two of the following: • JOSEPHUS • SAINT PAUL • TACITUS",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the sources of evidence for Jesus of Nazareth by examining different perspectives and accurately judging what can be learnt about Jesus from the writings of two of the people listed in the question.",
+    "points": [
+     "Josephus was a Jewish historian who accepted both the historical reality of Jesus and the impact Jesus had on the people he met. Josephus considered Jesus central to disturbances during the reign of Pontius Pilate. He refers to Jesus as ‘... a wise man, a doer of wonderful works, a teacher ...’. Josephus writes as a Jew and as a historian who was part of the entourage of the Roman Emperor. He wrote about Jesus within 60 years of Jesus’ death. From this source it is evident that Jesus was a real man who lived at the time of Pontius Pilate. Josephus’ account supports the gospel accounts in so far as he refers to Jesus as a teacher and a doer of wonderful works etc.",
+     "St. Paul had a life-changing religious experience which led him to believe that Jesus was the Messiah. St. Paul writes from the stand point of faith in his letters to newly founded Christian communities where he gave guidance on living as a follower of Jesus. St. Paul began to write about Jesus before the gospels were written. His letter to the Thessalonians can be dated to 49-51 CE. Paul drew on the oral tradition that emerged from those who had personally known Jesus etc.",
+     "Tacitus was a roman historian who was born in 56 CE after the death of Jesus. He was hostile towards Christians. Tacitus said Christians got their name from Christ who was executed by the procurator Pontius Pilate in the reign of Tiberius. He refers to Christianity as ‘the pernicious superstition’. As a source of evidence he is authoritive in that he is hostile to Jesus, yet reports his execution. Tacitus referred to Jesus as the founder of a group known as Christians e.g. He wrote ‘Christus, the founder of the name, had undergone the death penalty … by sentence of … Pontius Pilate …’. From this non-religious source there is evidence that supports the gospel accounts that Jesus was killed by order of the Roman Governor etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     8
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-b-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2012 HL Section B Q(b)(i)",
+   "topicId": "re-b",
+   "conceptId": "understanding-jesus-found-today-example-art",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline the understanding of Jesus that can be found today in one example from any of the following: • ART • FILM • MUSIC",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an ability to recognise and identify an image of Jesus in contemporary culture by setting out accurate information on the way in which Jesus is understood in one example taken from either art or film or music today.",
+    "points": [
+     "Art e.g. Janet McKenzie’s painting ‘Jesus of the People’ was striking in that the model used was an African-American woman. This may suggest an understanding of Jesus as someone who stands with those who are marginalised; George Rouault’s images of Jesus show an understanding of Jesus being close to people who are marginalised and that people in such circumstances will not be defeated by poverty and oppression; Leonardo Da Vinci’s painting of ‘The Last Supper’ draws the viewer into the table-fellowship, displaying the inclusive nature of the ‘Kingdom of God’ as preached by Jesus etc.",
+     "Film e.g. Pier Paolo Pasolini’s ‘The Gospel According to Matthew’ presents an understanding of Jesus as an outcast, driven by anger at social injustice etc. Franco Zeffirelli’s ‘Jesus of Nazareth’ presents Jesus as serious, self-assured and deeply concerned for the poor and disadvantaged; Mel Gidson’s ‘The Passion of the Christ’ presents Jesus as a suffering Saviour who underwent great pain and torture in order to redeem others etc.",
+     "Music e.g. ‘Jesus Christ Superstar’ emphasises the humanity of Jesus and shows the ways in which he relates to those around him; Van Morrison’s song ‘No Religion’ quotes Jesus’ teaching of ‘love your neighbour…’ and ‘turn the other cheek…’ . The song seems to suggest that people today cannot follow such teaching; Karl Jenkins’ ‘The Armed Man A Mass for Peace’ draws on several sources. The image emerges from this piece of Jesus having relevance for all peoples and all times. Jenkins draws on liturgical music from the West and East as well as drawing from other world religions etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers where a candidate gives an accurate account of one understanding of Jesus that is expressed in modern art or film or music. without reference to a particular example."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     9
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-b-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2012 HL Section B Q(b)(ii)",
+   "topicId": "re-b",
+   "conceptId": "extent-understanding-jesus-outlined-part-true",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Assess the extent to which the understanding of Jesus outlined in part b)i above is true to the gospel accounts of the life of Jesus.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an ability to understand the importance of Jesus for Christians by drawing accurate conclusions about the evidence in the Christian gospels for the understanding of Jesus examined in part b)i of the question.",
+    "points": [
+     "Art e.g. painting Janet McKenzie’s painting ‘Jesus of the People’ shows an understanding of Jesus being close to people who are marginalised. This is similar to the understanding of Jesus in St. Luke’s Gospel which shows Jesus as someone who reaches out to the oppressed etc.",
+     "Film e.g. Pier Paolo Pasolini’s film ‘The Gospel According to Matthew’ presents an understanding of Jesus as a revolutionary, preaching a gospel of the poor to the poor. This understanding of Jesus can be seen in the characteristics of the ‘Kingdom of God’. In the gospels Jesus teaches that the ‘Kingdom of God’ is a place of equality rather than elites; a place of sharing as opposed to hoarding wealth; a place where peace and powerlessness are important values etc.",
+     "Music e.g. In ‘Jesus Christ Super Star’ Jesus is understood as someone who reaches out to everyone and faces those who oppose him with dignity and integrity. Jesus’ humanity can be seen across the four Gospels. The divinity of Jesus is more developed in the Gospel of St. John than it is in ‘Jesus Christ Super Star’ etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     10
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-c-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "C",
+   "questionRef": "2012 HL Section C Q(a)",
+   "topicId": "re-c",
+   "conceptId": "african-traditional-religion-new-religious-movement",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "❖ AFRICAN TRADITIONAL RELIGION ❖ A NEW RELIGIOUS MOVEMENT ❖ BAHA’I FAITH ❖ CHINESE RELIGION ❖ SIKH RELIGION Examine the influence of religious belief on the lifestyle of members in one of the above.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a religious tradition or religious movement by looking closely at the impact of religious belief on the lifestyle of members in either African Traditional Religion or A New Religious Movement or Baha’i Faith or Chinese Religion or Sikh Religion.",
+    "points": [
+     "African Traditional Religion ― the lifestyle of members can be influenced by the belief that medicine men or women are healers, diviners, priests. There is an expectation that members will marry because of the belief that marriage perpetuates life and blessings etc.",
+     "A New Religious Movement ― commitment to the community can encompass all aspects of life and influence the lifestyle of believers etc.",
+     "Baha’i Faith ― belief in the importance of prayer obliges members to pray every day and encourages people to meet often in each others’ homes for prayer etc.",
+     "Chinese Religion ― belief in the importance of the ancestors influences people to go to the family shrine or community temple to announce to the ancestors marriages, births, journeys and business plans etc.",
+     "Sikh Religion ― the lifestyle of members is influenced by the belief that there are three duties to uphold - to bring God to mind, to work honestly and to practise charity. The influence of religious belief can be seen in the way members are expected to meditate each morning etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     11
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-c-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "C",
+   "questionRef": "2012 HL Section C Q(b)(i)",
+   "topicId": "re-c",
+   "conceptId": "way-religious-belief-expressed-rite-birth",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Describe the way in which religious belief is expressed in a rite of birth/initiation associated with either Christianity or Judaism.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the main features of Christianity or Judaism by giving an accurate account of the way in which religious belief is expressed in symbolic words or ritual actions associated with birth/initiation in either Christianity or Judaism.",
+    "points": [
+     "Christianity e.g. Baptism – The use of water symbolises death and new life. As such the rite expresses the belief that Christians have a new life in Christ. The candle shows that Christians believe that Jesus is the light of the world. The white robe symbolises the Christian belief that God can forgive sins etc.",
+     "Christianity e.g. Confirmation – The use of the symbol of the dove to represent the Holy Spirit expresses the Christian belief in the Trinity etc.",
+     "Judaism e.g. Brit Milah – when a baby is 8 days old there is a special blessing ceremony and the child is named. Baby boys will also be circumcised as a symbol of belief in the Covenant etc.",
+     "Judaism e.g. Bar Mitzvah – marks the moment when a boy aged 13 years moves from being a child to being an adult. The various elements of the ceremony show belief in the importance of scripture and prayer in fulfilling the law of the Covenant. The boy is given a prayer shawl (Tallith) and small leather boxes which contain scripture passages (Tefillin) etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     12
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-c-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "C",
+   "questionRef": "2012 HL Section C Q(b)(ii)",
+   "topicId": "re-c",
+   "conceptId": "rite-birth-initiation-described-rite-birth",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Compare the rite of birth/initiation that you have described above with a rite of birth/initiation associated with one of the following world religions: ◆ BUDDHISM ◆ HINDUISM ◆ ISLAM",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the main features of two major world religions by accurately examining the similarities and/or differences between the rite of birth/initiation outlined in part b)i above, and a rite of birth/initiation in either Buddhism or Hinduism or Islam.",
+    "points": [
+     "Judaism and Hinduism e.g. Bar Mitzvah & Sacred Thread Ceremony – There are similar rituals in both ceremonies e.g. In Hinduism a sacred thread is placed from shoulder to waist on the young Hindu boy. This is similar to the wearing of the Tallith in the Bar Mitzvah ceremony. Both ceremonies mark the taking on of new responsibilities. Once the Sacred Thread ceremony has taken place a Hindu boy can perform Puja. Similarly once a Jewish boy is Bar Mitzvah he must observe Yom Kippur etc.",
+     "Christianity and Buddhism e.g. Baptism & Naming Ceremony – Candles and water are used as symbols during a Christian Baptism. The same symbols are used in the Naming Ceremony in Buddhism. However these symbols have a different meaning in the different ceremonies i.e. the Buddhist ritual action of dropping molten wax into a bowl of water symbolises the union of fire, air and water and the hope of similar harmony in the child’s life. In Christianity the candle and water symbolise a new life now that the baptised person ‘lives in Christ’ etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     13
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-d-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "D",
+   "questionRef": "2012 HL Section D Q(a)",
+   "topicId": "re-d",
+   "conceptId": "way-moral-failure-evident-example-structural",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Trace the way in which moral failure is evident in one example of structural injustice that you have studied.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of how moral failure has structural implications by accurately outlining one example of how wrong-doing can be seen where there is injustice within the official organised structures of a society.",
+    "points": [
+     "The moral failure of a society not acting in a way that treats all people as equals because of prejudice or discrimination, can be seen in the unjust structures of the apartheid system in South Africa not respecting the human rights of all etc.",
+     "The moral failure that results from a person’s greed can lead to the exploitation of people and official structures may be involved e.g. legalisation of slavery, child labour etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [
+     "Note: A candidate outlines one example of how wrong-doing can be seen in something other than injustice within the official organised structures of a society ― Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     14
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-d-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "D",
+   "questionRef": "2012 HL Section D Q(b)(i)",
+   "topicId": "re-d",
+   "conceptId": "morality-natural-human-phenomenon-investigate-way",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Morality is a natural human phenomenon. Investigate one way in which evidence for this statement can be seen in Ancient Greek civilization.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of morality as a human phenomenon by looking closely at one way in which evidence can be seen, in Ancient Greek civilization, that making decisions about what is right and wrong is a natural part of being human.",
+    "points": [
+     "The writings of Ancient Greek philosophers provide evidence that making decisions about what is right and wrong is part of the human condition e.g. Plato and Aristotle were concerned with ethics etc. The Cynics’ dominant concern was ethics etc.",
+     "Evidence that morality is a natural part of being human can be found in Greek myths e.g. the Pantheon of the gods embody specific moral values that were important i.e. loyalty, bravery, honour etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     15
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-d-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "D",
+   "questionRef": "2012 HL Section D Q(b)(ii)",
+   "topicId": "re-d",
+   "conceptId": "communal-values-found-charters-studied",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Compare the communal values found in two charters that you have studied.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the importance of communal values by accurately examining the similarities and/or differences between what is considered good, important or worthwhile in two documents which outline the privileges, rights and duties of members within a community.",
+    "points": [
+     "The two charters identify similar things as being good, important and worthwhile – family, safety, ownership etc. However they are different in that the UN declaration expresses these values as rights all people have. The Ten Commandments emphasise the responsibilities that apply to the ‘People of God’ etc. Both texts value the right to life but express this differently. The UN declaration identifies rights e.g. stating that everyone has the right to life, liberty and security of person. The Ten Commandments focus on a person’s duties to God and others e.g. ‘Do not kill’etc.",
+     "The documents differ in relation to religious belief. The first three of the Ten Commandments are religious in nature as they are the commandments of a faith community. The UN Declaration recognises freedom of thought, conscience and religion. Like the Ten Commnadments, the UN Declaration values freedom and but unlike the Ten Commandments it recognises diversity on matters of belief etc.",
+     "‘The Declaration Towards a Global Ethic’ identifies values that the Parliament of World Religions believe all people can share - freedom, justice and stewardship. ‘The Declaration of the Rights of Man and the Citizen’ which emerged during the French revolution identifies freedom and justice as core basic values etc.",
+     "The two texts are similar in that they both establish that people have responsibilities and duties towards each other i.e. ‘The Declaration Towards a Global Ethic’ recognises the duty to act justly and humanely. ‘The Declaration of the Rights of Man and the Citizen’ recognises the duty a person has to contribute to the community etc.",
+     "The two documents differ in that the ‘Declaration Towards a Global Ethic’ is voluntary and aspirational. It proposes communal values it hopes all people will consider good, important and worthwhile. The ‘Declaration on the Rights of Man and the Citizen’ had legal force, establishing what the Republic of France considered good, important and worthwhile etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: A candidate examines what is considered worthwhile within communities without reference to charters - Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     16
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-e",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "E",
+   "questionRef": "2012 HL Section E",
+   "topicId": "re-e",
+   "conceptId": "buddhism-christianity-hinduism-islam-judaism-way",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM Discuss the way in which either a feminist theology or a feminist spirituality has contributed to the participation of women in one of the above world religions.",
+   "totalMarks": 80,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of either feminist theologies or spiritualities by considering perspectives and drawing accurate conclusions about the way in which either a feminist theology or a feminist spirituality has contributed to the part played by women in one of the following world religions: Buddhism, Christianity, Hinduism, Islam, Judaism.",
+    "points": [
+     "Feminist theology in recognising and challenging a male bias in theology has furthered the participation of women in Christianity by re-examining the roles women had in the early Christian Church. This led to the increased participation of women in Christianity by opening the priesthood to women in the Anglican Communion etc. The work of feminist theologians such as Elizabeth Johnson has led to increased participation of women in Christianity due to a reassessment of the roles of women in Scripture etc.",
+     "A focus in feminist theology on ideas about the earth and our relationship to the environment can be seen in the way in which women in Islam are active in relation to environmental issues etc.",
+     "An emphasis in feminist spirituality on ritual that is participative, aesthetic and communitarian can be seen in the role of women in the Sabbath celebrations in Judaism etc.",
+     "The links within feminist spirituality between personal spiritual growth and social/ecclesial justice has contributed to the participation of women with instances of Buddhist nuns becoming engaged in social issues etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 80,
+    "gridHead": "80M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "80 > 68",
+      "marks": [
+       68,
+       69,
+       70,
+       71,
+       72,
+       73,
+       74,
+       75,
+       76,
+       77,
+       78,
+       79,
+       80
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "67 > 56",
+      "marks": [
+       56,
+       57,
+       58,
+       59,
+       60,
+       61,
+       62,
+       63,
+       64,
+       65,
+       66,
+       67
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "55 > 44",
+      "marks": [
+       44,
+       45,
+       46,
+       47,
+       48,
+       49,
+       50,
+       51,
+       52,
+       53,
+       54,
+       55
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "43 > 32",
+      "marks": [
+       32,
+       33,
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       43
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "31 > 20",
+      "marks": [
+       20,
+       21,
+       22,
+       23,
+       24,
+       25,
+       26,
+       27,
+       28,
+       29,
+       30,
+       31
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "19 > 8",
+      "marks": [
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       17,
+       18,
+       19
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers where a candidate considers perspectives and drawing accurate conclusions about the way in which a person associated with either feminist theology or feminist spirituality has contributed to the part played by women in one of the following world religions: Buddhism, Christianity, Hinduism, Islam, Judaism."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     17
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-f-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "F",
+   "questionRef": "2012 HL Section F Q(a)",
+   "topicId": "re-f",
+   "conceptId": "buddhism-christianity-hinduism-islam-judaism-influence",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM Examine the influence of the understanding of peace in one of the above world religions on the use of non-violence by its members.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of religious perspectives on peace by looking closely at how the understanding of peace in one of the above world religions listed in the question influences the use of non-violence in that world religion.",
+    "points": [
+     "Buddhism – ‘The Five Precepts’ teach that all life is precious and connected. Violence is to be avoided and therefore non-violence is a distinctive characteristic of a Buddhist lifestyle etc.",
+     "Christianity – Peace is one of the characteristics of the ‘Kingdom of God’ as preached by Jesus. The Sermon on the Mount specifically states that Jesus’ disciples should turn the other cheek; Rev. Martin Luther King worked to overcome racial discrimination by holding peaceful protests. Many people began to participate in peaceful protests, which led to racial integration etc.",
+     "Hinduism – ‘The Law of Karma’ means that Hindus have a respect for life and a moral imperative to respect it. Non-violence is a distinctive characteristic of the Hindu lifestyle; Mahatma Ghandi took the religious visions of peace in Hinduism and Buddhism, adopted the religious principle of Ahimsa (doing no harm) and turned it into a non-violent tool for mass action. He used it to work against racial discrimination and untouchability etc.",
+     "Islam – ‘The Pillar of Zakat’ and the concept of Khalifah mean that in Islam there is a duty to preserve the peace of Allah etc.",
+     "Judaism – In Judaism peace comes from the observance of the Covenant, which offers a template for a non-violent lifestyle e.g. ‘Thou shall not kill’ etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     18
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-f-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "F",
+   "questionRef": "2012 HL Section F Q(b)",
+   "topicId": "re-f",
+   "conceptId": "role-either-non-violence-lifestyle-non",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Discuss the role either non-violence as lifestyle or non-violence as protest could play in resolving one conflict situation that you have studied.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the process of conflict resolution by considering perspectives and drawing accurate conclusions about the part played by either non-violence as lifestyle or non-violence as protest in resolving one conflict situation.",
+    "points": [
+     "Conflict resolution refers to the process of resolving a dispute permanently by adequately addressing each side’s needs to the satisfaction of both. It takes up time and energy and involves: respect for the person; dialogue, the stating of each person’s point of view; focusing on the problem and searching for an agreement which will benefit both parties etc.",
+     "Non-violence as protest means protesting against an unjust situation but what is done must be done peacefully. The peaceful actions of the protestors are designed to reflect the justness of their cause e.g. a rally peacefully protesting or organising a petition against a war etc.",
+     "Non–violence as lifestyle is a way of life that implies a deep integration of ‘non- violence’ into one’s philosophy of life. Non-violence as lifestyle e.g. The Dalai Lama’s non-violent lifestyle can help to bring peace because people respect his integrity; The Amish Sect; Gordon Wilson’s efforts to bring peace and reconciliation in Northern Ireland etc.",
+     "Non-violence as lifestyle can overlap with non-violence as protest e.g. Oscar Romero who was bishop of El Salvador. His peaceful lifestyle became a protest against the violence and injustice he witnessed as he tried to help the oppressed people of El Salvador etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     19
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-g-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "G",
+   "questionRef": "2012 HL Section G Q(a)",
+   "topicId": "re-g",
+   "conceptId": "reflection-sacrament-experience-awe-role-play",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "● REFLECTION ● SACRAMENT ● THE EXPERIENCE OF AWE Discuss the role two of the above can play in the prayer life of people of faith today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a variety of prayer traditions and contexts by looking at different perspectives and drawing accurate conclusions about the part played by two of the following: reflection, sacrament, the experience of awe in the prayer life of people of faith today.",
+    "points": [
+     "Reflection refers to a person thinking in a deep way and as a result heightening his/her awareness of the realities of life. Reflection has importance in a person’s prayer life as it can lead to deep thought about a person’s relationship with the divine; this can lead to moments of doubt as well as moments of insight etc.",
+     "The experience of awe refers to the experience of encountering a deeper reality or the mystery of the divine etc. It can inspire a person to worship. People may turn to the rites and symbols of their faith to understand and/or express this experience etc.",
+     "Sacrament refers to the belief that physical things make invisible realities visible; the ritual actions and gestures, signs/symbols instituted by Christ to reveal a deeper reality called grace. Sacrament can have importance in a person’s prayer life because it recognises the presence of God in life and a sacramental celebration allows a person to experience the grace of God in a specific way etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20M x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     20
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-g-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "G",
+   "questionRef": "2012 HL Section G Q(b)",
+   "topicId": "re-g",
+   "conceptId": "spiritual-dimension-life-takes-expression-mystical",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline how the spiritual dimension of life takes expression in one mystical tradition that you have studied.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the characteristics of a mystical tradition by setting out accurate information on the process by which the spiritual dimension of life is evident in a mystical tradition.",
+    "points": [
+     "The spiritual dimension of life is evident in an inner journey undertaken by mystics which can involve prayer, contemplation, fasting as they strive for an immediate, personal encounter with the Absolute etc.",
+     "The spiritual dimension of life is evident in the tradition of reading the writing of mystics e.g. St. Theresa of Avila; St. John of the Cross etc.",
+     "The spiritual dimension of life is evident in four characteristics associated with mysticism:",
+     "Ineffable i.e. it is experiential – it is only through experience that it can be understood etc.",
+     "Noetic i.e. a person gains knowledge in a way that transcends the intellect. A mystic will ascribe such knowledge as coming from God etc.",
+     "Transitory i.e. it is not permanent. A mystical experience is one that does not last but can occur again. A mystic may believe that it is transitory because it is God who gives the mystical experience as a gift etc.",
+     "Passive i.e. a person cannot create a mystical experience. The source and origin of mystic experiences is understood as coming from the divine etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     21
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-h-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "H",
+   "questionRef": "2012 HL Section H Q(a)",
+   "topicId": "re-h",
+   "conceptId": "labourers-vineyard-matthew-unjust-steward-luke",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "• THE LABOURERS IN THE VINEYARD (Matthew 20:1-16) • THE UNJUST STEWARD (Luke 16:1-13) Examine the impact each of the above parables had on its original audience.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of key texts by looking closely at the impact that the parable of the Labourers in the Vineyard and the parable of the Unjust Steward had on their original audiences.",
+    "points": [
+     "The Labourers in the Vineyard (Matthew 20:1-16)",
+     "The way each labourer receives only the minimum wage may have had a strong impact on its original audience i.e. Jesus’ disciples/more general audience (Matthew 20:1). This would have made the audience think about compassion and sympathy for the poor etc.",
+     "The parable may have been seen to defend God's freedom to extend salvation to whomsoever God chooses ― God loves and rewards all equally etc.",
+     "The parable may have been understood as a challenge to the Pharisees to change their attitude towards sinners etc.",
+     "The Unjust Steward (Luke 16:1-13)",
+     "This is a parable about poverty and riches. It is told to the disciples (Luke 16:1) in the hearing of the Pharisees (Luke 15:2; 16:14) but was probably originally addressed to a general audience etc.",
+     "Demanding a cash interest on money lent was against Jewish law at the time. A way of getting around this was to seek interest in kind e.g. oil, corn or other goods. The steward would be lauded by the original audience for his talent and generosity in forgoing his share of the profits and the way he has at one stroke benefited his employer, his clients and himself etc.",
+     "Disciples are urged to make prudent use of material possessions. The original audience would have seen the parable as encouraging them to be responsible and faithful etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     22
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2012-hl-h-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2012,
+   "level": "higher",
+   "section": "H",
+   "questionRef": "2012 HL Section H Q(b)",
+   "topicId": "re-h",
+   "conceptId": "implications-christians-today-parables-listed-part",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Discuss the implications for Christians today of each of the parables listed in part a) above.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2012 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer show detailed knowledge of key texts by considering different perspectives and drawing accurate conclusions about the implications of the parable of the Labourers in the Vineyard and the parable of the Unjust Steward for Christians today.",
+    "points": [
+     "The Labourers in the Vineyard (Matthew 20:1-16)",
+     "Could be seen as teaching the limitless generosity of the householder and thus illustrating the generosity of God's love etc.",
+     "It shows that the ‘Kingdom of God’ is a place of equality not a place of elites. It emphasises sharing and love, over hoarding and distinctions etc.",
+     "The Unjust Steward ( Lk16:1-13)",
+     "The parable might surprise a modern audience. This would encourage them to think about perseverence and resourcefulness in living the Christian faith today etc.",
+     "It shows Christians today that each person has to take responsibility for their own faith etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note : A candidate only draws conclusions about the implications for Christians today of either the parable of the Labourers in the Vineyard or the parable of the Unjust Steward – Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     23
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
    }
   }
  ]
