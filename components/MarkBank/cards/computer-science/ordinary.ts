@@ -1298,21 +1298,23 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q1", topicId: "cs-2-2", conceptId: "output-following-python-program-box-below",
+    id: "cs-2024-ol-q1", topicId: "cs-2-2", conceptId: "output-python-program-box",
     section: "A", questionRef: "2024 OL Q1",
-    stem: "State the output from the following Python program in the box below.",
     questionText: "State the output from the following Python program in the box below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "12", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "12", marks: 2, contextNote: "Each correct item 2 marks Deduct 2 marks if answers presented on same line (12 27 3)" },
+    { id: "r-2", kind: "point", verbatim: "27", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "3 or 3.0", marks: 2 },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q1-code0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q1-code0.png",
           "srcHash": "546bd4fd5c41fcb8e72435ced241722c",
           "alt": "The program printed with 2024 OL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 6 lines and begins: 1 x = 9",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1322,12 +1324,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q4", topicId: "cs-2-3", conceptId: "http-stands-hypertext-transfer-protocol-http",
     section: "A", questionRef: "2024 OL Q4",
-    stem: "HTTP stands for Hypertext Transfer Protocol. HTTP is an important protocol in terms of networks and internet. Explain the purpose of this protocol.",
     questionText: "HTTP stands for Hypertext Transfer Protocol. HTTP is an important protocol in terms of networks and internet. Explain the purpose of this protocol.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enables the transfer of data over the internet, allowing users to access websites and other online resources.", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "HTTP is important for web browsers when reading HTML so that webpages can be displayed correctly.", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "Enables the transfer of data over the internet, allowing users to access websites and other online resources.", marks: 6, accepts: ["HTTP is important for web browsers when reading HTML so that webpages can be displayed correctly."], contextNote: "Very good explanation - clear understanding demonstrated 6 marks Good explanation - clear information, lacking full understanding 4 marks Fair explanation - limited understanding 2 marks", permittedMarks: [0,2,4,6] },
     ],
   } as SecCard,
   {
@@ -1335,20 +1335,29 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q6", topicId: "cs-2-3", conceptId: "three-different-logic-gates-inputs-shown",
+    id: "cs-2024-ol-q6", topicId: "cs-2-3", conceptId: "different-logic-gates-inputs-column-table",
     section: "A", questionRef: "2024 OL Q6",
-    stem: "Three different logic gates with inputs are shown in Column A in the table below. For each logic gate in Column A enter the output, either 0 or 1, in Column B.",
     questionText: "Three different logic gates with inputs are shown in Column A in the table below. For each logic gate in Column A enter the output, either 0 or 1, in Column B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "1 1 0", marks: 6, contextNote: "Each correct item 2 marks", permittedMarks: [0,2,4,6] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q6-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q6-fig0.png",
           "srcHash": "22b196c79e289133f6a055a6aef7dc3e",
           "alt": "The table or diagram printed with 2024 OL Question 6, as the State Examinations Commission set it. It is labelled: Column A, Logic Gate, Column B, Output (0 or 1).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-OL-scheme-q6",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q6.png",
+          "srcHash": "d79c4df426b78f6c2beb8972c57e5159",
+          "alt": "The marking scheme's completed table for Question 6: an AND gate with inputs 1 and 1 outputs 1, an OR gate with inputs 1 and 0 outputs 1, and a NOT gate with input 1 outputs 0.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -1359,11 +1368,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q7", topicId: "cs-1-3", conceptId: "jack-has-been-selected-project-manager",
     section: "A", questionRef: "2024 OL Q7",
-    stem: "Jack has been selected as a project manager for a school project where a group are creating a student wellbeing app. List three specific tasks that a project manager would be responsible for on this project.",
     questionText: "Jack has been selected as a project manager for a school project where a group are creating a student wellbeing app. List three specific tasks that a project manager would be responsible for on this project.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Coming up with a time line / time plan", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Coming up with a time line / time plan", marks: 6, accepts: ["Making decisions on the project","Leading the team","Delegating tasks","Identifying dependencies","Communicating/reporting to the team & stakeholders","Managing budgets/resources"], contextNote: "Accept any relevant tasks that could be carried out by a Project Manager Each valid task (clear) 2 marks Each valid task (fair attempt) 1 mark", permittedMarks: [0,1,2,3,4,5,6] },
     ],
   } as SecCard,
   {
@@ -1373,11 +1381,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q9", topicId: "cs-1-2", conceptId: "drones-example-computing-technology-can-have",
     section: "A", questionRef: "2024 OL Q9",
-    stem: "Drones are an example of a computing technology that can have a positive and negative impact on society. Explain one positive and one negative impact of drone technology on society.",
     questionText: "Drones are an example of a computing technology that can have a positive and negative impact on society. Explain one positive and one negative impact of drone technology on society.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Potential Positives:", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Fire & rescue services", marks: 3, accepts: ["Delivery of parcels/medical supplies to remote areas","Photography"], contextNote: "Potential Positives: Accept any other relevant positive impact For each (positive/negative): Good explanation – clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 marks", permittedMarks: [0,2,3] },
+    { id: "r-2", kind: "criterion", verbatim: "Disruption of public transport systems", marks: 3, accepts: ["Privacy of individuals and their property","Lethal weaponry (military/war)","Safety (e.g. airports)","Noise"], contextNote: "Potential Negatives: Accept any other relevant negative impact For each (positive/negative): Good explanation – clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 marks", permittedMarks: [0,2,3] },
     ],
   } as SecCard,
   {
@@ -1385,21 +1393,21 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q10", topicId: "cs-3-2", conceptId: "data-set-below-shows-raw-data",
+    id: "cs-2024-ol-q10", topicId: "cs-3-2", conceptId: "data-set-shows-raw-data-collected",
     section: "A", questionRef: "2024 OL Q10",
-    stem: "The data set below shows the raw data collected from a school survey on how teachers travel to work. You want to use this data as part of a computer science project. List three issues with the data in the data set.",
     questionText: "The data set below shows the raw data collected from a school survey on how teachers travel to work. You want to use this data as part of a computer science project. List three issues with the data in the data set.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name Distance (Km) Driver’s License (Y/N) Mode of Transport", marks: 6 },
+    { id: "r-1", kind: "anyN", verbatim: "List three issues with the data in the data set.", marks: null, contextNote: "Each valid issue 2 marks", group: {"claimMax":3,"perOption":2,"options":["Duplicate data for Mr. Murray","“yes” entered instead of Y/N","Blank entry for Mode of Transport for Ms. Jones","340 is unrealistic distance for Ms. Jones","-18 is negative distance value for Ms. O’Neill"]} },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q10-figure",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q10-figure.png",
           "srcHash": "80b261aee96bf1526cc920ebe5783bad",
           "alt": "The program and the table or diagram printed with 2024 OL Question 10, as the State Examinations Commission set it. The table or diagram is labelled: Name, Distance (Km), Driver’s License (Y/N), Mode of Transport, Mr. Murray, Y, Cycle, Mrs. Woods, Car, Mr. Murphy, Ms. Jones, N, Walk, Bn Uí Fhlanagáin.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1407,21 +1415,21 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q12", topicId: "cs-2-5", conceptId: "teacher-has-asked-you-design-website",
+    id: "cs-2024-ol-q12", topicId: "cs-2-5", conceptId: "teacher-has-asked-design-website-capture",
     section: "A", questionRef: "2024 OL Q12",
-    stem: "A teacher has asked you to design a website to capture information for a school trip. The teacher has provided you with the user interface mockup shown in Figure 3 below. Suggest three possible data validation methods that could be applied to the form to try and eliminate any input errors. Figure 3 Section B Long Questions 76 marks",
     questionText: "A teacher has asked you to design a website to capture information for a school trip. The teacher has provided you with the user interface mockup shown in Figure 3 below. Suggest three possible data validation methods that could be applied to the form to try and eliminate any input errors.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Student Name - presence check, character only", marks: 6 },
+    { id: "r-1", kind: "anyN", verbatim: "Suggest three possible data validation methods that could be applied to the form to try and eliminate any input errors.", marks: null, contextNote: "Each valid method 2 marks", group: {"claimMax":3,"perOption":2,"options":["Student Name - presence check, character only","Year Group - presence check, range check, numeric only, select menu, v","Contact Number - presence check, length check, valid Irish number, numbers only","Contact Email - presence check, format check (contains @ , .com, etc.)","Permission Slip - presence check, select menu (yes/no value only)"]} },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q12-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q12-fig0.png",
           "srcHash": "a828183627a6ebcdc4d397bc950141c3",
           "alt": "The table or diagram printed with 2024 OL Question 12, as the State Examinations Commission set it. It is labelled: Figure 3.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1431,21 +1439,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q13-a-i", topicId: "cs-2-2", conceptId: "b-both-variables-variable",
     section: "B", questionRef: "2024 OL Q13(a)(i)",
-    stem: "This question continues on the next page.",
+    stem: "The pseudo code below shows the step-by-step process that a machine follows. The machine is used in a medical lab to repeatedly shake bottles. The machine reads the program line by line. It always reads one line and then executes it immediately. If the line contains the command ‘go to X’, the machine jumps to line X and continues reading and executing.",
     questionText: "A and B are both variables. What is a variable?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A variable is a named location in computer’s memory used to store data", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "A declaration of a value that can be changed", marks: 1 },
-    { id: "r-3", kind: "point", verbatim: "A term used as a placeholder for a value that can change", marks: 1 },
+    { id: "r-1", kind: "criterion", verbatim: "A variable is a named location in computer’s memory used to store data", marks: 3, accepts: ["A declaration of a value that can be changed","A term used as a placeholder for a value that can change"], contextNote: "Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q13-code0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
           "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
           "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1455,19 +1462,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q13-a-ii", topicId: "cs-2-4", conceptId: "choose-suitable-data-types-variables-b",
     section: "B", questionRef: "2024 OL Q13(a)(ii)",
-    stem: "This question continues on the next page.",
+    stem: "The pseudo code below shows the step-by-step process that a machine follows. The machine is used in a medical lab to repeatedly shake bottles. The machine reads the program line by line. It always reads one line and then executes it immediately. If the line contains the command ‘go to X’, the machine jumps to line X and continues reading and executing.",
     questionText: "Choose suitable data types for the variables A and B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A – Int / Integer", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "A – Int / Integer", marks: 3, contextNote: "A correct 3 marks B correct 3 marks" },
+    { id: "r-2", kind: "point", verbatim: "B – Bool/ Boolean", marks: 3 },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q13-code0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
           "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
           "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1477,20 +1486,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q13-a-iii", topicId: "cs-2-2", conceptId: "lines-1-2-program-variables-initialised",
     section: "B", questionRef: "2024 OL Q13(a)(iii)",
-    stem: "This question continues on the next page.",
+    stem: "The pseudo code below shows the step-by-step process that a machine follows. The machine is used in a medical lab to repeatedly shake bottles. The machine reads the program line by line. It always reads one line and then executes it immediately. If the line contains the command ‘go to X’, the machine jumps to line X and continues reading and executing.",
     questionText: "In lines 1 and 2 in this program the variables are initialised. Explain the term “initialised” in relation to variables.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "An initialised variable is when a variable is given starting value", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "The initial value given to a variable the first time it is declared", marks: 1 },
+    { id: "r-1", kind: "criterion", verbatim: "An initialised variable is when a variable is given starting value", marks: 2, accepts: ["The initial value given to a variable the first time it is declared"], contextNote: "Good description – clear understanding demonstrated 2 marks Fair description – limited understanding 1 marks", permittedMarks: [0,1,2] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q13-code0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
           "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
           "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1500,19 +1509,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q13-a-iv", topicId: "cs-2-2", conceptId: "program-has-conditional-statement-line-number",
     section: "B", questionRef: "2024 OL Q13(a)(iv)",
-    stem: "This question continues on the next page.",
+    stem: "The pseudo code below shows the step-by-step process that a machine follows. The machine is used in a medical lab to repeatedly shake bottles. The machine reads the program line by line. It always reads one line and then executes it immediately. If the line contains the command ‘go to X’, the machine jumps to line X and continues reading and executing.",
     questionText: "This program has a conditional statement. On what line number is the conditional statement?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Line 5", marks: 4 },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q13-code0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
           "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
           "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1522,19 +1532,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q13-a-v", topicId: "cs-2-2", conceptId: "program-enters-infinite-loop-term-reference",
     section: "B", questionRef: "2024 OL Q13(a)(v)",
-    stem: "This question continues on the next page.",
+    stem: "The pseudo code below shows the step-by-step process that a machine follows. The machine is used in a medical lab to repeatedly shake bottles. The machine reads the program line by line. It always reads one line and then executes it immediately. If the line contains the command ‘go to X’, the machine jumps to line X and continues reading and executing.",
     questionText: "This program enters an “infinite loop”. Explain this term with reference to the code.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "On line 4 the programme jumps to line 7. On line 7 the programme adds 1 to 0, then", marks: 5 },
+    { id: "r-1", kind: "criterion", verbatim: "On line 4 the programme jumps to line 7. On line 7 the programme adds 1 to 0, then moves on to line 8. On line 8 the programme then jumps back to line 3 and adds 1 to 0, Next, the programme moves on to line 4 which means the code will continue to loop forever through these steps. Variable A will keep increasing but will not impact the loop.", marks: 5, contextNote: "Good description – clear understanding demonstrated 5 marks Fair description – limited understanding 3 marks", permittedMarks: [0,3,5] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q13-code0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
           "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
           "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1544,20 +1555,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q13-a-vi", topicId: "cs-2-2", conceptId: "infinite-loop-program-above-example-logic",
     section: "B", questionRef: "2024 OL Q13(a)(vi)",
-    stem: "This question continues on the next page.",
+    stem: "The pseudo code below shows the step-by-step process that a machine follows. The machine is used in a medical lab to repeatedly shake bottles. The machine reads the program line by line. It always reads one line and then executes it immediately. If the line contains the command ‘go to X’, the machine jumps to line X and continues reading and executing.",
     questionText: "The infinite loop in the program above is an example of a “logic error”. In programming, what is the difference between a logic error and a syntax error?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Syntax errors are mistakes in the code structure causing the program to fail during", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "compilation. Logical errors, on the other hand, are flaws in the program's logic that lead to", marks: 1 },
+    { id: "r-1", kind: "criterion", verbatim: "Syntax errors are mistakes in the code structure causing the program to fail during compilation. Logical errors, on the other hand, are flaws in the program's logic that lead to incorrect output or behaviour, even though the code compiles and runs successfully.", marks: 2, contextNote: "Good description – clear understanding demonstrated 2 marks Fair description – limited understanding 1 mark", permittedMarks: [0,1,2] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q13-code0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
           "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
           "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1565,44 +1576,36 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q13-b-i", topicId: "cs-2-3", conceptId: "why-would-programmer-use-linear-search",
+    id: "cs-2024-ol-q13-b-i", topicId: "cs-2-2", conceptId: "would-programmer-use-linear-search-find",
     section: "B", questionRef: "2024 OL Q13(b)(i)",
-    stem: "12 5 59 23 7 42 60 19 67 31 1 for each element in the list 2 if element equal target value then 3 return its index 4 if element is not found then 5 print “Value not found”",
+    stem: "The bottles are numbered and are stored electronically in a list. Below is the list of the bottle numbers. 12 5 59 23 7 42 60 19 67 31",
     questionText: "Why would a programmer use a linear search to find a specific bottle from this list?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The list in not in any sort of order, this means that a binary search will not work.", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "The list is short enough to justify the use of a linear search (no need to sort)", marks: 2 },
+    { id: "r-1", kind: "criterion", verbatim: "The list in not in any sort of order, this means that a binary search will not work.", marks: 4, accepts: ["The list is short enough to justify the use of a linear search (no need to sort)"], contextNote: "Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,4] },
     ],
-    figure: {
-          "candId": "computer-science-2024-OL-paper-q13-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
-          "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
-          "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q13-b-ii", topicId: "cs-2-2", conceptId: "following-pseudo-code-basic-implementation-linear",
+    id: "cs-2024-ol-q13-b-ii", topicId: "cs-2-2", conceptId: "pseudo-code-basic-implementation-linear-search",
     section: "B", questionRef: "2024 OL Q13(b)(ii)",
-    stem: "12 5 59 23 7 42 60 19 67 31 1 for each element in the list 2 if element equal target value then 3 return its index 4 if element is not found then 5 print “Value not found”",
+    stem: "The bottles are numbered and are stored electronically in a list. Below is the list of the bottle numbers. 12 5 59 23 7 42 60 19 67 31",
     questionText: "The following pseudo code is a basic implementation of a linear search. Demonstrate the steps to show how bottle number 23 would be found in the list of bottles using this pseudo code.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The code will check the first item in the list (12) and see if it matches the target item (23), these do not match so it will then move on to the next item in the list.", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "The code will check the first item in the list (12) and see if it matches the target item (23), these do not match so it will then move on to the next item in the list. • The code will compare 5 and 23, these do not match so it will move on to the next item in the list. • The code will compare 59 and 23, these do not match so it will move on to the next item in the list. • The 4th item in the list matches the target item so the index of 3 will be returned.", marks: 6, contextNote: "Very good - all steps demonstrated with correct index 6 marks Good - all steps demonstrated without incorrect index 4 marks Fair – limited knowledge of linear search demonstrated 2 marks", permittedMarks: [0,2,4,6] },
     ],
-    figure: {
-          "candId": "computer-science-2024-OL-paper-q13-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
-          "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
-          "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+    questionFigure: {
+          "candId": "computer-science-2024-OL-paper-q13b-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13b-code.png",
+          "srcHash": "120e24a51e08958f173e605ec3d54e17",
+          "alt": "The five-line linear search pseudo code printed with Question 13(b): for each element in the list, if element equal target value then return its index, if element is not found then print \"Value not found\".",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1610,13 +1613,13 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q14-a-i", topicId: "cs-1-2", conceptId: "list-three-other-examples-use-ai",
+    id: "cs-2024-ol-q14-a-i", topicId: "cs-1-2", conceptId: "list-other-examples-use-ai-our",
     section: "B", questionRef: "2024 OL Q14(a)(i)",
-    stem: "True False Artificial intelligence and machine learning are exactly the same thing. There are some jobs that could potentially be replaced by AI in the future. AI algorithms can make decisions based on patterns and data without being programmed for each single decision. AI always makes fair and unbiased decisions. AI technology is commonly used in self-driving vehicles to help them make decisions on the road.",
+    stem: "In April 2023, Snapchat began rolling out a new feature called My AI. This experimental artificial intelligence (AI) chatbot can carry out tasks including responding to queries, giving advice, and organising travel. This is an example of the increasing influence of AI in our daily lives.",
     questionText: "List three other examples of the use of AI in our day-to-day lives.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Virtual assistants like Siri, Alexa, Google Assistant", marks: 6 },
+    { id: "r-1", kind: "anyN", verbatim: "List three other examples of the use of AI in our day-to-day lives.", marks: null, contextNote: "Each correct item 2 marks Accept other relevant answers", openList: true, group: {"claimMax":3,"perOption":2,"options":["Virtual assistants like Siri, Alexa, Google Assistant","Recommendations: Online platforms such as Netflix, YouTube, Spotify and Amazon","Adverts on social media: like Facebook, Snapchat, Instagram and TikTok","Navigation Apps: like Google Maps","Facial recognition","Self-driving cars","Online chat bots","AI games: like QuickDraw, AlphaGo","Online services: like ChatGPT & Bing image generator"]} },
     ],
   } as SecCard,
   {
@@ -1624,13 +1627,17 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q14-a-ii", topicId: "cs-1-2", conceptId: "whether-each-following-statements-true-or",
+    id: "cs-2024-ol-q14-a-ii", topicId: "cs-1-2", conceptId: "whether-statements-true-false-putting-tick",
     section: "B", questionRef: "2024 OL Q14(a)(ii)",
-    stem: "True False Artificial intelligence and machine learning are exactly the same thing. There are some jobs that could potentially be replaced by AI in the future. AI algorithms can make decisions based on patterns and data without being programmed for each single decision. AI always makes fair and unbiased decisions. AI technology is commonly used in self-driving vehicles to help them make decisions on the road.",
+    stem: "In April 2023, Snapchat began rolling out a new feature called My AI. This experimental artificial intelligence (AI) chatbot can carry out tasks including responding to queries, giving advice, and organising travel. This is an example of the increasing influence of AI in our daily lives.",
     questionText: "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Artificial intelligence and machine learning are exactly the False", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Artificial intelligence and machine learning are exactly the same thing. — False", marks: 1, contextNote: "Each correct item 1 mark" },
+    { id: "r-2", kind: "point", verbatim: "There are some jobs that could potentially be replaced by AI in the future. — True", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "AI algorithms can make decisions based on patterns and data without being programmed for each single decision. — True", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "AI always makes fair and unbiased decisions. — False", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "AI technology is commonly used in self-driving vehicles to help them make decisions on the road. — True", marks: 1 },
     ],
   } as SecCard,
   {
@@ -1640,14 +1647,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q14-a-iii", topicId: "cs-1-2", conceptId: "artificial-intelligence-applications-such-my-ai",
     section: "B", questionRef: "2024 OL Q14(a)(iii)",
-    stem: "True False Artificial intelligence and machine learning are exactly the same thing. There are some jobs that could potentially be replaced by AI in the future. AI algorithms can make decisions based on patterns and data without being programmed for each single decision. AI always makes fair and unbiased decisions. AI technology is commonly used in self-driving vehicles to help them make decisions on the road.",
+    stem: "In April 2023, Snapchat began rolling out a new feature called My AI. This experimental artificial intelligence (AI) chatbot can carry out tasks including responding to queries, giving advice, and organising travel. This is an example of the increasing influence of AI in our daily lives.",
     questionText: "Artificial intelligence applications such as My AI and ChatGPT use machine learning models that have to be trained. Explain what it means to train a machine learning model.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Training a machine learning model is the process of teaching the model to recognise", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "patterns and make predictions or decisions based on large data sets.", marks: 1 },
-    { id: "r-3", kind: "point", verbatim: "Leaving Certificate 2024", marks: 1 },
-    { id: "r-4", kind: "point", verbatim: "Computer Science, Marking Scheme – Ordinary level", marks: 1 },
+    { id: "r-1", kind: "criterion", verbatim: "Training a machine learning model is the process of teaching the model to recognise patterns and make predictions or decisions based on large data sets.", marks: 4, contextNote: "Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,4] },
     ],
   } as SecCard,
   {
@@ -1655,13 +1659,13 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q14-b-i", topicId: "cs-1-2", conceptId: "universal-design-should-be-used-ensure",
+    id: "cs-2024-ol-q14-b-i", topicId: "cs-1-2", conceptId: "universal-design-should-ensure-good-level",
     section: "B", questionRef: "2024 OL Q14(b)(i)",
-    stem: "Aengus Cox, RTE, 30 April 2023 Explain one risk of My AI to children if it has not been properly tested. This question continues on the next page.",
+    stem: "In April 2023, Snapchat began rolling out a new feature called My AI. This experimental artificial intelligence (AI) chatbot can carry out tasks including responding to queries, giving advice, and organising travel. This is an example of the increasing influence of AI in our daily lives. When creating a piece of software, the quality of the user experience is an important design consideration.",
     questionText: "Universal design should be used to ensure a good level of user experience. Describe two principles of universal design that might be considered in the design of apps such as Snapchat’s My AI.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Equitable Use - The app is usable for people with different needs (language, visibility, text to speech)", marks: 4 },
+    { id: "r-1", kind: "criterion", verbatim: "Equitable Use - The app is usable for people with different needs (language, visibility, text to speech)", marks: 4, accepts: ["Flexibility in Use - The app can be changed for different preferences or needs (dark mode, kid's version)","Simple and Intuitive Use - The app is straight forward to use and has a help option","Perceptible Information - Making sure the information on the app is accessible through a number of different methods","Tolerance for Error - The app is designed to minimize the chance of errors","Low Physical Effort - The app is easy to use and not physically demanding","Size and Space for Approach and Use - The app can be used by any user in any environment"], contextNote: "For each principle: Good description – clear understanding demonstrated 2 marks Fair description – limited understanding 1 marks", permittedMarks: [0,1,2,3,4] },
     ],
   } as SecCard,
   {
@@ -1671,11 +1675,11 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q14-b-ii", topicId: "cs-1-2", conceptId: "article-rte-website-published-april-2023",
     section: "B", questionRef: "2024 OL Q14(b)(ii)",
-    stem: "Aengus Cox, RTE, 30 April 2023 Explain one risk of My AI to children if it has not been properly tested. This question continues on the next page.",
-    questionText: "An article on the RTE website, published in April 2023, began with the following: Safeguarding concerns over the introduction by Snapchat of its own artificial intelligence chatbot have been raised by CyberSafeKids, which claims the service has not been properly tested.",
+    stem: "In April 2023, Snapchat began rolling out a new feature called My AI. This experimental artificial intelligence (AI) chatbot can carry out tasks including responding to queries, giving advice, and organising travel. This is an example of the increasing influence of AI in our daily lives. When creating a piece of software, the quality of the user experience is an important design consideration.",
+    questionText: "An article on the RTE website, published in April 2023, began with the following: Safeguarding concerns over the introduction by Snapchat of its own artificial intelligence chatbot have been raised by CyberSafeKids, which claims the service has not been properly tested. Aengus Cox, RTE, 30 April 2023 Explain one risk of My AI to children if it has not been properly tested.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Safety risks - There might be flaws in the system that can be hacked", marks: 4 },
+    { id: "r-1", kind: "criterion", verbatim: "Safety risks - There might be flaws in the system that can be hacked", marks: 4, accepts: ["Privacy risks - Personal information might be shared","Content risks - Inappropriate content might be available on the app","Negative impact on well-being - The app might encourage bad life choices & decision making","Addictiveness - The app might be highly addictive for children"], contextNote: "Accept any appropriate answer given Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,4] },
     ],
   } as SecCard,
   {
@@ -1683,13 +1687,13 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q14-b-iii", topicId: "cs-2-4", conceptId: "snapchat-conducted-user-acceptance-testing-uat",
+    id: "cs-2024-ol-q14-b-iii", topicId: "cs-2-5", conceptId: "snapchat-conducted-user-acceptance-testing-uat",
     section: "B", questionRef: "2024 OL Q14(b)(iii)",
-    stem: "Aengus Cox, RTE, 30 April 2023 Explain one risk of My AI to children if it has not been properly tested. This question continues on the next page.",
+    stem: "In April 2023, Snapchat began rolling out a new feature called My AI. This experimental artificial intelligence (AI) chatbot can carry out tasks including responding to queries, giving advice, and organising travel. This is an example of the increasing influence of AI in our daily lives. When creating a piece of software, the quality of the user experience is an important design consideration.",
     questionText: "Snapchat conducted user acceptance testing (UAT) on My AI before its full release. Explain UAT?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "User Acceptance Testing (UAT) is the final stage of the development lifecycle where", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "User Acceptance Testing (UAT) is the final stage of the development lifecycle where the product is tested and used by those users that it was designed for. It validates that the product works in real-life scenarios.", marks: 3, contextNote: "Good explanation – clear understanding demonstrated 3 marks Fair explanation– limited understanding 2 marks", permittedMarks: [0,2,3] },
     ],
   } as SecCard,
   {
@@ -1697,14 +1701,14 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q14-c", topicId: "cs-1-2", conceptId: "september-2023-announced-teacher-based-assessment",
+    id: "cs-2024-ol-q14-c", topicId: "cs-1-2", conceptId: "september-2023-was-announced-teacher-based",
     section: "B", questionRef: "2024 OL Q14(c)",
     stem: "In April 2023, Snapchat began rolling out a new feature called My AI. This experimental artificial intelligence (AI) chatbot can carry out tasks including responding to queries, giving advice, and organising travel. This is an example of the increasing influence of AI in our daily lives.",
     questionText: "In September 2023, it was announced that teacher-based assessment of Leaving Certificate coursework would be postponed. The reason for this was due to “accelerated evolution and growth in generative AI\". Discuss the positive and negative impact that AI could have for students in school.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-positive", kind: "anyN", verbatim: "One positive impact of AI for students", marks: null, group: {"claimMax":1,"perOption":6,"options":["Personalised Learning","Access to resources","Assistance with homework","Enhanced accessibility","Spell check work","Suggest improvements on student work","Feedback on pieces of work","Generate study notes for students","Create study tips / custom study timetables"]} },
-    { id: "r-negative", kind: "anyN", verbatim: "One negative impact of AI for students", marks: null, group: {"claimMax":1,"perOption":6,"options":["Privacy concerns","Bias Issues","Overreliance on technology","Wrong information given","Using AI to complete work","AI to assist in tasks may reduce critical thinking skills","Lack of independent research & effort levels","Reduction of problem-solving skills and logical thinking skills"]} },
+    { id: "r-1", kind: "criterion", verbatim: "Personalised Learning", marks: 6, accepts: ["Access to resources","Assistance with homework","Enhanced accessibility Spell check work","Suggest improvements on student work","Feedback on pieces of work","Generate study notes for students","Create study tips / custom study timetables"], contextNote: "Positive impacts: For each (positive/negative): Very good discussion - clear understanding demonstrated 6 marks Fair discussion - limited understanding 4 marks", permittedMarks: [0,4,6] },
+    { id: "r-2", kind: "criterion", verbatim: "Privacy concerns", marks: 6, accepts: ["Bias Issues","Overreliance on technology","Wrong information given","Using AI to complete work","AI to assist in tasks may reduce critical thinking skills","Lack of independent research & effort levels","Reduction of problem-solving skills and logical thinking skills"], contextNote: "Negative impacts: For each (positive/negative): Very good discussion - clear understanding demonstrated 6 marks Fair discussion - limited understanding 4 marks", permittedMarks: [0,4,6] },
     ],
   } as SecCard,
   {
@@ -1712,26 +1716,14 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q15-a-i", topicId: "cs-1-1", conceptId: "provide-one-other-example-computer-simulation",
+    id: "cs-2024-ol-q15-a-i", topicId: "cs-3-3", conceptId: "provide-other-example-computer-simulation-benefit",
     section: "B", questionRef: "2024 OL Q15(a)(i)",
-    stem: "This question continues on the next page.",
+    stem: "The Met Éireann app allows the Irish public to keep up to date with weather conditions across Ireland. Weather forecasts are based on predictions which use models and simulations. The simulations allow the app to alert the public about dangers such as storms, floods and snow.",
     questionText: "Provide one other example of a computer simulation and state the benefit of using such a simulation.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Flight simulation", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "Natural disaster simulation", marks: 1 },
-    { id: "r-3", kind: "point", verbatim: "Simulating traffic flow", marks: 1 },
-    { id: "r-4", kind: "point", verbatim: "Simulating structural movements", marks: 1 },
-    { id: "r-5", kind: "point", verbatim: "Simulation of building evacuations", marks: 1 },
+    { id: "r-1", kind: "criterion", verbatim: "Flight simulation", marks: 5, accepts: ["Natural disaster simulation","Simulating traffic flow","Simulating structural movements","Simulation of building evacuations"], contextNote: "Accept any relevant example Relevant example 2 mark Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3,4,5] },
     ],
-    figure: {
-          "candId": "computer-science-2024-OL-paper-q15-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
-          "srcHash": "ec8e0b3d5b2ae421663ab65048bf1abb",
-          "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1740,20 +1732,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q15-a-ii", topicId: "cs-2-3", conceptId: "first-time-met-ireann-provided-weather",
     section: "B", questionRef: "2024 OL Q15(a)(ii)",
-    stem: "This question continues on the next page.",
+    stem: "The Met Éireann app allows the Irish public to keep up to date with weather conditions across Ireland. Weather forecasts are based on predictions which use models and simulations. The simulations allow the app to alert the public about dangers such as storms, floods and snow.",
     questionText: "The first time that Met Éireann provided weather forecasts for the public was in 1948. Name and explain two important computing developments that have taken place since then that allow us to be informed of weather information instantly.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Examples:", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Ethernet", marks: 6, accepts: ["World Wide Web","WiFi","GPS","Smart Phones / Apps"], contextNote: "Examples: Any valid computing development since 1948 For each development: Relevant example 1 mark Good description – clear understanding demonstrated 2 marks Fair description – limited understanding 1 mark", permittedMarks: [0,1,2,3,4,5,6] },
     ],
-    figure: {
-          "candId": "computer-science-2024-OL-paper-q15-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
-          "srcHash": "ec8e0b3d5b2ae421663ab65048bf1abb",
-          "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1762,19 +1746,24 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q15-b", topicId: "cs-2-4", conceptId: "design-phase-development-app-met-ireann",
     section: "B", questionRef: "2024 OL Q15(b)",
-    stem: "Column C Data type Rainfall Amount of rainfall in mm. Not a decimal number. Integer Column A Column B Description Name Temperature Should accept a decimal number Province Any one of the following: [Leinster, Munster, Connacht, Ulster] Wind speed Should not be a decimal number Issue weather warning Yes or No Weather description Written description of today’s weather e.g. It will be warm and sunny today",
+    stem: "The Met Éireann app allows the Irish public to keep up to date with weather conditions across Ireland. Weather forecasts are based on predictions which use models and simulations. The simulations allow the app to alert the public about dangers such as storms, floods and snow.",
     questionText: "In the design phase of the development of the app Met Éireann may have created a data table such as the one shown below. Fill in the missing data types in Column C in the table. The first row has been completed for you.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Column A Column B Column C", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Temperature Should accept a decimal number Float", marks: 1, contextNote: "Each correct item 1 mark" },
+    { id: "r-2", kind: "point", verbatim: "Province Any one of the following: [Leinster, Munster, Connacht, Ulster] List", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Wind speed Should not be a decimal number Integer", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "Issue weather warning Yes or No Boolean", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "Weather description Written description of today’s weather e.g. It will be warm and sunny today String", marks: 1 },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q15-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
           "srcHash": "ec8e0b3d5b2ae421663ab65048bf1abb",
           "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1784,19 +1773,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q15-c", topicId: "cs-1-2", conceptId: "when-designing-app-such-important-consider",
     section: "B", questionRef: "2024 OL Q15(c)",
+    stem: "The Met Éireann app allows the Irish public to keep up to date with weather conditions across Ireland. Weather forecasts are based on predictions which use models and simulations. The simulations allow the app to alert the public about dangers such as storms, floods and snow.",
     questionText: "When designing an app such as this it is important to consider ways to make the app more accessible. List three features that could be included to ensure increased accessibility for all users.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Screen reader compatibility", marks: 6 },
+    { id: "r-1", kind: "anyN", verbatim: "List three features that could be included to ensure increased accessibility for all users.", marks: null, contextNote: "Each correct item 2 marks (max 6 marks) Accept other relevant answers", openList: true, group: {"claimMax":3,"perOption":2,"options":["Screen reader compatibility","Translate language","Increase font size","Consistent layout","Good use of space","High contrast colours","Easy navigation","Search option","Help option","Frequently Asked Questions","Live chat"]} },
     ],
-    figure: {
-          "candId": "computer-science-2024-OL-paper-q15-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
-          "srcHash": "ec8e0b3d5b2ae421663ab65048bf1abb",
-          "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1805,19 +1787,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q15-d-i", topicId: "cs-2-2", conceptId: "based-information-create-algorithm-using-flowchart",
     section: "B", questionRef: "2024 OL Q15(d)(i)",
-    stem: "Yellow Wind Warning Orange Wind Warning Red Wind Warning Speed between 90 and 110km/h Speed between 111 and 130km/h Speed greater than 130km/h Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 7: https://aerosystemswest.com/product/asw-heavy-lift-quadcopter-industrial-drone/ Image 1 on page 8: https://makelearn.org/2019/02/07/exporting-microbit-sensor-data/ Image 2 on page 8: https://ie.farnell.com/raspberry-pi/rpi3-modbp/sbc-board-raspberry-pi-3-model/dp/2842228 Image on page 14: https://techcrunch.com/2023/04/24/snapchat-sees-spike-in-1-star-reviews-as-users-pan-the-my- ai-feature-calling-for-its-removal/ Texts Text on page 15: https://www.rte.ie/news/2023/0430/1380005-snapchat-ai/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219G2EL 2024. M109 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Ordinary Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Junior Cycle Final Examination 2019 previous page running Leaving Certificate – 2024 2 Computer Science, Section C – Ordinary level Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Leaving Certificate – 2024 3 Computer Science, Section C – Ordinary level Section C Programming 80 marks",
+    stem: "The Met Éireann app allows the Irish public to keep up to date with weather conditions across Ireland. Weather forecasts are based on predictions which use models and simulations. The simulations allow the app to alert the public about dangers such as storms, floods and snow. Met Éireann will issue a yellow, orange or red wind warning based on the criteria in the table below.",
     questionText: "Based on this information create an algorithm, using a flowchart or pseudo code, that will calculate if a warning should issue and if so what colour the warning should be.",
     tariffModel: {"kind":"fixed"}, totalMarks: 11,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "IF speed > 90 and speed < 110:", marks: 11 },
+    { id: "r-1", kind: "criterion", verbatim: "IF speed > 90 and speed < 110: RETURN Yellow Wind Warning", marks: 3, contextNote: "For each condition (3 possible): Correct implementation 3 marks Reasonable implementation 2 mark", permittedMarks: [0,2,3] },
+    { id: "r-2", kind: "criterion", verbatim: "ELIF speed > 111 and speed <130: RETURN Orange Wind Warning", marks: 3, permittedMarks: [0,2,3] },
+    { id: "r-3", kind: "criterion", verbatim: "ELIF speed > 130: RETURN Red Wind Warning", marks: 3, permittedMarks: [0,2,3] },
+    { id: "r-4", kind: "criterion", verbatim: "Overall pseudocode/flowchart appearance: — Very good (correct indentation/decision shapes, etc.)", marks: 2, contextNote: "Fair 1 mark", permittedMarks: [0,1,2] },
     ],
-    figure: {
-          "candId": "computer-science-2024-OL-paper-q15-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
-          "srcHash": "ec8e0b3d5b2ae421663ab65048bf1abb",
-          "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
+    questionFigure: {
+          "candId": "computer-science-2024-OL-paper-q15d-table",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15d-table.png",
+          "srcHash": "4e7f527fcf359f6eec0207992f9debe3",
+          "alt": "The wind warning table printed with Question 15(d): Yellow Wind Warning, speed between 90 and 110km/h; Orange Wind Warning, speed between 111 and 130km/h; Red Wind Warning, speed greater than 130km/h.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -1825,42 +1811,56 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q15-d-ii", topicId: "cs-2-2", conceptId: "following-best-set-data-values-test",
+    id: "cs-2024-ol-q15-d-ii", topicId: "cs-2-5", conceptId: "best-set-data-values-test-algorithm",
     section: "B", questionRef: "2024 OL Q15(d)(ii)",
-    stem: "Yellow Wind Warning Orange Wind Warning Red Wind Warning Speed between 90 and 110km/h Speed between 111 and 130km/h Speed greater than 130km/h Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 7: https://aerosystemswest.com/product/asw-heavy-lift-quadcopter-industrial-drone/ Image 1 on page 8: https://makelearn.org/2019/02/07/exporting-microbit-sensor-data/ Image 2 on page 8: https://ie.farnell.com/raspberry-pi/rpi3-modbp/sbc-board-raspberry-pi-3-model/dp/2842228 Image on page 14: https://techcrunch.com/2023/04/24/snapchat-sees-spike-in-1-star-reviews-as-users-pan-the-my- ai-feature-calling-for-its-removal/ Texts Text on page 15: https://www.rte.ie/news/2023/0430/1380005-snapchat-ai/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219G2EL 2024. M109 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Ordinary Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Junior Cycle Final Examination 2019 previous page running Leaving Certificate – 2024 2 Computer Science, Section C – Ordinary level Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Leaving Certificate – 2024 3 Computer Science, Section C – Ordinary level Section C Programming 80 marks",
+    stem: "The Met Éireann app allows the Irish public to keep up to date with weather conditions across Ireland. Weather forecasts are based on predictions which use models and simulations. The simulations allow the app to alert the public about dangers such as storms, floods and snow. Met Éireann will issue a yellow, orange or red wind warning based on the criteria in the table below.",
     questionText: "Which of the following is the best set of data values to test your algorithm with? Select your answer by putting a tick (✓) in the appropriate box. [89, 90, 100, 110, 111, 129, 130, 131] [20, 70, 80, 90, 95, 135, 145, 165] [19, 60, 65, 115, 116, 138, 139, 140] Justify your answer below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "[89, 90, 100, 110, 111, 129, 130, 131] ☑", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "[89, 90, 100, 110, 111, 129, 130, 131]", marks: 2, contextNote: "Correct answer 2 marks" },
+    { id: "r-2", kind: "criterion", verbatim: "This covers and tests all of the conditions / boundaries from the algorithm.", marks: 3, contextNote: "Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 mark", permittedMarks: [0,2,3] },
     ],
-    figure: {
-          "candId": "computer-science-2024-OL-paper-q15-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
-          "srcHash": "ec8e0b3d5b2ae421663ab65048bf1abb",
-          "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
+    questionFigure: {
+          "candId": "computer-science-2024-OL-paper-q15d-table",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15d-table.png",
+          "srcHash": "4e7f527fcf359f6eec0207992f9debe3",
+          "alt": "The wind warning table printed with Question 15(d): Yellow Wind Warning, speed between 90 and 110km/h; Orange Wind Warning, speed between 111 and 130km/h; Red Wind Warning, speed greater than 130km/h.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: "LC219GLP038EV",
+    paperFileid: "LC219GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q16-b", topicId: "cs-2-2", conceptId: "open-program-called-question16-b-py",
-    section: "B", questionRef: "2024 OL Q16(b)",
-    stem: "Before making any changes, you should use the format CandidateNumberQuestion16_B.py to save your file. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Enter your Examination Number in the space provided on Line 2. Implement a program that will help you to split a restaurant bill with your friends. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should do the following: • The program should display an output of “Split Bill Calculator” at the start. • The user can enter the total amount of the bill. • The user can enter the number of people that will be splitting the bill. • Divide the total amount of the bill by the number of people. The amount owed by each person should be printed with a suitable message. Split Bill Calculator How much is the bill?: 100 How many people?: 5 You each owe 20.0 Save your file using the format CandidateNumberQuestion16_B.py. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Leaving Certificate – 2024 6 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2024 7 Computer Science, Section C – Ordinary level Acknowledgements Images Image on page 4: https://static.aviva.io/content/dam/aviva-public/ie/articles/car/your-driving-licence-debunked- article-2.jpg Image on page 6: https://www.louisianafcu.org/articles/the-polite-persons-guide-to-splitting-the-bill Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. This document will not be returned to the State Examinations Commission. Leaving Certificate – Ordinary Level Computer Science – Section C Leaving Certificate – 2024 8 Computer Science, Section C – Ordinary level Wednesday 22 May Morning 11:30 – 12:30",
-    questionText: "Open the program called Question16_B.py from your device. This file only contains two comments on lines 1 and 2.",
+    id: "cs-2024-ol-q16-b", topicId: "cs-2-2", conceptId: "implement-program-will-help-split-restaurant",
+    section: "C", questionRef: "2024 OL Q16(b)",
+    questionText: "Implement a program that will help you to split a restaurant bill with your friends. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should do the following: • The program should display an output of “Split Bill Calculator” at the start. • The user can enter the total amount of the bill. • The user can enter the number of people that will be splitting the bill. • Divide the total amount of the bill by the number of people. The amount owed by each person should be printed with a suitable message.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 20 },
+    { id: "r-1", kind: "criterion", verbatim: "Programming Standards — Program executes with no syntax or runtime errors • Program meets requirements • Program design is well explained with comments • Meaningful variable names", marks: 5, contextNote: "High level of achievement All of the following implemented correctly and efficiently Moderate level of achievement Reasonable attempt to implement each of the following Low level of achievement Poor attempt to complete any of the following", permittedMarks: [0,2,3,5] },
+    { id: "r-2", kind: "criterion", verbatim: "Program Inputs — User correctly prompted to enter a bill amount as a float data type • User correctly prompted to enter number of people as an integer data type • Variable initialisation and use of assignment statements", marks: 5, permittedMarks: [0,2,3,5] },
+    { id: "r-3", kind: "criterion", verbatim: "Program Logic (Processing) — Programme divides total bill by the number of people", marks: 5, permittedMarks: [0,2,3,5] },
+    { id: "r-4", kind: "criterion", verbatim: "Program Outputs — Program outputs “Split Bill Calculator” at the start • Program outputs “You each owe” + owned amount correctly", marks: 5, permittedMarks: [0,2,3,5] },
     ],
-    figure: {
-          "candId": "computer-science-2024-OL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16-figure.png",
-          "srcHash": "245468b63981c1500f0c5218e6e03200",
-          "alt": "The program printed with 2024 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 21 lines and begins: # Question 16(a)",
+    questionFigure: {
+          "candId": "computer-science-2024-OL-paper-q16b-output",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16b-output.png",
+          "srcHash": "93b8c00157b9437736bff5b411d76751",
+          "alt": "The sample output printed with Question 16(b): Split Bill Calculator; How much is the bill?: 100; How many people?: 5; You each owe 20.0.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-OL-scheme-q16b",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q16b.png",
+          "srcHash": "8b786aade994265909ca8f0bafb7aafa",
+          "alt": "The marking scheme's 17-line possible solution for Question 16(b): print(\"Split Bill Calculator\"); myBill read as a float and numberOfPeople as an int; bill_per_person = myBill / numberOfPeople; then print(\"You each owe\", bill_per_person), each step commented.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -1869,14 +1869,14 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q2", topicId: "cs-2-3", conceptId: "largest-binary-number-can-be-represented",
+    id: "cs-2024-ol-q2", topicId: "cs-2-3", conceptId: "largest-binary-number-can-represented-nibble",
     section: "A", questionRef: "2024 OL Q2",
     stem: "In computer science four bits of binary data is known as a ‘nibble’.",
     questionText: "(a) What is the largest binary number that can be represented by a nibble? (b) Convert the binary number from part (a) above into a decimal value.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1111", marks: null },
-    { id: "r-2", kind: "point", verbatim: "15", marks: null },
+    { id: "r-1", kind: "point", verbatim: "(a) — 1111", marks: 2, contextNote: "Correct answer 2 marks" },
+    { id: "r-2", kind: "criterion", verbatim: "(b) — 15 (8+4+2+1)", marks: 4, contextNote: "Correct conversion of (a) 4 marks Half correct conversion of (a) 2 marks Some valid conversion 1 mark", permittedMarks: [0,1,2,4] },
     ],
   } as SecCard,
   {
@@ -1884,28 +1884,32 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q3", topicId: "cs-2-3", conceptId: "choose-appropriate-electronic-component-list-below",
+    id: "cs-2024-ol-q3", topicId: "cs-2-3", conceptId: "choose-appropriate-electronic-component-list-place",
     section: "A", questionRef: "2024 OL Q3",
     questionText: "(a) Choose the appropriate electronic component from the list below and place it in Column B to match the correct component image in Column A. Resistor Transistor Capacitor (b) Select any one of these electronic components and explain its purpose.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Component Image Component Name", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Capacitor", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Resistor", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Transistor", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Leaving Certificate 2024", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Computer Science, Marking Scheme – Ordinary level", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Resistor – Creates resistance to the flow of current. Creates a voltage difference.", marks: null },
-    { id: "r-9", kind: "point", verbatim: "Transistor – Amplifies or switches on or off current. Controls current or voltage flow.", marks: null },
-    { id: "r-10", kind: "point", verbatim: "Capacitor – Can build up and store energy. Can release large amounts of built up energy.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "(a) — Capacitor", marks: 1, contextNote: "Each correct item 1 mark" },
+    { id: "r-2", kind: "point", verbatim: "(a) — Resistor", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "(a) — Transistor", marks: 1 },
+    { id: "r-4", kind: "criterion", verbatim: "Resistor – Creates resistance to the flow of current. Creates a voltage difference.", marks: 3, accepts: ["Transistor – Amplifies or switches on or off current. Controls current or voltage flow.","Capacitor – Can build up and store energy. Can release large amounts of built up energy."], contextNote: "(b) Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q3-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q3-fig0.png",
           "srcHash": "8ed57202a38f791e84c9a4b33f582d36",
           "alt": "The table or diagram printed with 2024 OL Question 3, as the State Examinations Commission set it. It is labelled: Column A, Component Image, Column B, Component Name.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-OL-scheme-q3a",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q3a.png",
+          "srcHash": "fdac9049e6a6c10e873ce568343bea63",
+          "alt": "The marking scheme's completed table for Question 3(a): beside each component image its name, Capacitor, Resistor and Transistor, in that order.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -1914,55 +1918,23 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q8", topicId: "cs-2-4", conceptId: "why-int-function-used-lines-1",
+    id: "cs-2024-ol-q8", topicId: "cs-2-4", conceptId: "int-function-lines-1-2-b",
     section: "A", questionRef: "2024 OL Q8",
     stem: "Examine the incomplete Python program below and answer the questions that follow.",
     questionText: "(a) Why is the int function used in lines 1 and 2? (b) What is an appropriate print statement that could be entered in line 8?",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Casts the input to an integer", marks: null },
-    { id: "r-2", kind: "point", verbatim: "int sets the data type to an integer/ number/ whole number", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Numbers are equal / the same / match Valid print statement 3 marks", marks: null },
+    { id: "r-1", kind: "criterion", verbatim: "Casts the input to an integer", marks: 3, accepts: ["int sets the data type to an integer/ number/ whole number","Only allows a number to be entered"], contextNote: "(a) Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3] },
+    { id: "r-2", kind: "point", verbatim: "(b) — Numbers are equal / the same / match", marks: 3, contextNote: "Valid print statement 3 marks" },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2024-OL-paper-q8-code0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q8-code0.png",
           "srcHash": "786fcfa5aff5c5e5d2625f17b7e21157",
           "alt": "The program printed with 2024 OL Question 8, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: num1 = int(input(\"Enter first number: \"))",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "ordinary",
-    paperFileid: "LC219GLP038EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2024-ol-q16", topicId: "cs-2-2", conceptId: "open-program-called-question16-py-your",
-    section: "B", questionRef: "2024 OL Q16",
-    questionText: "(i) Modify the program so that it first prints out “Welcome to the driving licence eligibility checker” instead of “The program”. When the program is run the output should now look as follows: Welcome to the driving licence eligibility checker What age are you? (ii) Insert a comment in the code that explains what is happening on line 6. (iii) Print a message stating the age that the user entered. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What age are you? 17 You entered 17 You are entitled to apply for a driving licence. (iv) Currently the program will only output a message when the entered age is 17 or over. Change the program so that if an age less than 17 is entered a suitable message is output. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What age are you? 16 You entered 16 You are not entitled to apply for a driving licence. (v) Amend the program to ask for the user’s name. The name should be stored in an appropriate variable. The user’s name should be output along with the message about eligibility to apply for a licence. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What is your name? Sarah What age are you? 16 You entered 16 Sarah you are not entitled to apply for a driving licence. (vi) Update your program so that it outputs a message to the user based on the criteria in the table below. The output should continue to display the user name. The name Sarah is used in the examples below. (a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below. (b) Open the program called Question16_B.py from your device. This file only contains two comments on lines 1 and 2.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 80,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: null },
-    { id: "r-2", kind: "point", verbatim: "1 # Question 16(a)", marks: null },
-    { id: "r-3", kind: "point", verbatim: "2 # Examination Number:", marks: null },
-    { id: "r-4", kind: "point", verbatim: "3", marks: null },
-    { id: "r-5", kind: "point", verbatim: "4 print(\"Welcome to the driving licence eligibility checker\") #(i)", marks: null },
-    { id: "r-6", kind: "point", verbatim: "5", marks: null },
-    { id: "r-7", kind: "point", verbatim: "6 #(ii) user asked to input age and it is converted to an integer", marks: null },
-    { id: "r-8", kind: "point", verbatim: "7 age = int(input(\"What age are you? \"))", marks: null },
-    { id: "r-9", kind: "point", verbatim: "8 print(\"You entered\", age) #(iii)", marks: null },
-    { id: "r-10", kind: "point", verbatim: "9", marks: null },
-    { id: "r-11", kind: "point", verbatim: "10 name = input(\"Enter your name: \") #(v)", marks: null },
-    { id: "r-12", kind: "point", verbatim: "11", marks: null },
-    ],
-    figure: {
-          "candId": "computer-science-2024-OL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16-figure.png",
-          "srcHash": "245468b63981c1500f0c5218e6e03200",
-          "alt": "The program printed with 2024 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 21 lines and begins: # Question 16(a)",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3679,7 +3651,7 @@ export const CARDS: SecCard[] = [
     questionText: "There are three different ticket prices available for attending a concert. A full price adult ticket costs €20. Children under 16 receive a 20% discount. Anyone aged 16 to 21, who is also a student, receive a 10% discount. The flowchart for this algorithm is shown in Figure 1 below with some information missing. Select the appropriate letter from the flowchart and enter it in Column B in the table below to match it to the correct statement in Column A.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Flowchart Symbol Description Flowchart Place", marks: null, contextNote: "4 correct – 6 marks 3 correct – 5 marks 2 correct – 3 marks 1 correct – 2 mark", group: {"claimMax":4,"perOption":2,"options":["PRINT(price) D","Is age < 21 AND student = “yes”? A","price = price – (20% of price) B","price = price – (10% of price) C"],"perOptionSteps":[2,1,2,1]} },
+    { id: "r-1", kind: "anyN", verbatim: "Select the appropriate letter from the flowchart and enter it in Column B in the table below to match it to the correct statement in Column A.", marks: null, contextNote: "4 correct – 6 marks 3 correct – 5 marks 2 correct – 3 marks 1 correct – 2 mark", group: {"claimMax":4,"perOption":2,"options":["PRINT(price) D","Is age < 21 AND student = “yes”? A","price = price – (20% of price) B","price = price – (10% of price) C"],"perOptionSteps":[2,1,2,1]} },
     ],
     questionFigure: {
           "candId": "computer-science-2024-OL-paper-q5-flow",
@@ -3701,8 +3673,8 @@ export const CARDS: SecCard[] = [
     questionText: "Provide one example of a digital input and one example of an analogue input on an embedded system you have used, such as those shown in Figure 2.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Digital Inputs:", marks: null, contextNote: "For each (digital/analogue): Good example 3 marks Fair example 2 marks", openList: true, group: {"claimMax":1,"perOption":3,"options":["Button","On/ Off Switch","Shake","Pins","Accept any relevant digital input"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Analogue Inputs:", marks: null, contextNote: "For each (digital/analogue): Good example 3 marks Fair example 2 marks", openList: true, group: {"claimMax":1,"perOption":3,"options":["Accelerometer","Magnetometer","Temperature Sensor","Light Sensor","Moisture Sensor","Sound Sensor","Pressure Sensor","Distance Sensor","Accept any relevant analogue input"]} },
+    { id: "r-1", kind: "criterion", verbatim: "Button", marks: 3, accepts: ["On/ Off Switch","Shake","Pins"], contextNote: "Digital Inputs: Accept any relevant digital input For each (digital/analogue): Good example 3 marks Fair example 2 marks", permittedMarks: [0,2,3] },
+    { id: "r-2", kind: "criterion", verbatim: "Accelerometer", marks: 3, accepts: ["Magnetometer","Temperature Sensor","Light Sensor","Moisture Sensor","Sound Sensor","Pressure Sensor","Distance Sensor"], contextNote: "Analogue Inputs: Accept any relevant analogue input For each (digital/analogue): Good example 3 marks Fair example 2 marks", permittedMarks: [0,2,3] },
     ],
     questionFigure: {
           "candId": "computer-science-2024-OL-paper-q11-fig2",
@@ -4858,6 +4830,198 @@ export const CARDS: SecCard[] = [
           "srcHash": "d7539a53ff57b9603622dc79afa40a1e",
           "alt": "The marking scheme's possible solution to Question 16(a), lines 1 to 27: a comment # user enters first name; firstName and surname read with input; print(\"Hello\", firstName, surname, ...); the items 1 = Book, 2 = Ruler and 3 = Pen printed between two dashed lines; shoppingItem read with int(input()); then if / elif branches printing You bought a book, a ruler or a pen, and else printing Invalid choice. Goodbye.",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q16-a-i", topicId: "cs-2-2", conceptId: "modify-program-so-first-prints-out",
+    section: "C", questionRef: "2024 OL Q16(a)(i)",
+    stem: "The program below is the start of a program to check if a person is eligible for their driving licence. The code works by taking the user’s age as an input and checking if it meets a condition.",
+    questionText: "Modify the program so that it first prints out “Welcome to the driving licence eligibility checker” instead of “The program”. When the program is run the output should now look as follows: Welcome to the driving licence eligibility checker What age are you?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 10, contextNote: "(i) 10 marks (A-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 7 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,7,10] },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2024-OL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16a-code.png",
+          "srcHash": "1d34ecbf0c05f763056c102bd648fb82",
+          "alt": "The nine-line program Question16_A.py as printed in the Section C booklet: two comment lines, print(\"The program\"), age = int(input(\"What age are you? \")), and if (age >= 17): print(\"You are entitled to apply for a driving licence.\").",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-OL-scheme-q16a",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q16a.png",
+          "srcHash": "094eee867cd43357e37bf907c7cd1fa3",
+          "alt": "The marking scheme's 18-line possible solution for Question 16(a): print(\"Welcome to the driving licence eligibility checker\") #(i); a comment #(ii) explaining that the user is asked to input their age and it is converted to an integer; age read as an int; print(\"You entered\", age) #(iii); name = input(\"Enter your name: \") #(v); and #(vi) if age > 74 the three-year message, elif age < 17 #(iv) the not-entitled message, else the entitled message, each printed with the name.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q16-a-ii", topicId: "cs-2-2", conceptId: "insert-comment-code-explains-happening-line",
+    section: "C", questionRef: "2024 OL Q16(a)(ii)",
+    stem: "The program below is the start of a program to check if a person is eligible for their driving licence. The code works by taking the user’s age as an input and checking if it meets a condition.",
+    questionText: "Insert a comment in the code that explains what is happening on line 6.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 5, contextNote: "(ii) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Response about half-right Comment does not properly explain code 2 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,2,3,5] },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2024-OL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16a-code.png",
+          "srcHash": "1d34ecbf0c05f763056c102bd648fb82",
+          "alt": "The nine-line program Question16_A.py as printed in the Section C booklet: two comment lines, print(\"The program\"), age = int(input(\"What age are you? \")), and if (age >= 17): print(\"You are entitled to apply for a driving licence.\").",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-OL-scheme-q16a",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q16a.png",
+          "srcHash": "094eee867cd43357e37bf907c7cd1fa3",
+          "alt": "The marking scheme's 18-line possible solution for Question 16(a): print(\"Welcome to the driving licence eligibility checker\") #(i); a comment #(ii) explaining that the user is asked to input their age and it is converted to an integer; age read as an int; print(\"You entered\", age) #(iii); name = input(\"Enter your name: \") #(v); and #(vi) if age > 74 the three-year message, elif age < 17 #(iv) the not-entitled message, else the entitled message, each printed with the name.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q16-a-iii", topicId: "cs-2-2", conceptId: "print-message-stating-age-user-entered",
+    section: "C", questionRef: "2024 OL Q16(a)(iii)",
+    stem: "The program below is the start of a program to check if a person is eligible for their driving licence. The code works by taking the user’s age as an input and checking if it meets a condition.",
+    questionText: "Print a message stating the age that the user entered. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What age are you? 17 You entered 17 You are entitled to apply for a driving licence.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 10, contextNote: "(iii) 10 marks (C-10 scale)", permittedMarks: [0,3,5,7,10] },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2024-OL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16a-code.png",
+          "srcHash": "1d34ecbf0c05f763056c102bd648fb82",
+          "alt": "The nine-line program Question16_A.py as printed in the Section C booklet: two comment lines, print(\"The program\"), age = int(input(\"What age are you? \")), and if (age >= 17): print(\"You are entitled to apply for a driving licence.\").",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-OL-scheme-q16a",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q16a.png",
+          "srcHash": "094eee867cd43357e37bf907c7cd1fa3",
+          "alt": "The marking scheme's 18-line possible solution for Question 16(a): print(\"Welcome to the driving licence eligibility checker\") #(i); a comment #(ii) explaining that the user is asked to input their age and it is converted to an integer; age read as an int; print(\"You entered\", age) #(iii); name = input(\"Enter your name: \") #(v); and #(vi) if age > 74 the three-year message, elif age < 17 #(iv) the not-entitled message, else the entitled message, each printed with the name.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q16-a-iv", topicId: "cs-2-2", conceptId: "currently-program-will-only-output-message",
+    section: "C", questionRef: "2024 OL Q16(a)(iv)",
+    stem: "The program below is the start of a program to check if a person is eligible for their driving licence. The code works by taking the user’s age as an input and checking if it meets a condition.",
+    questionText: "Currently the program will only output a message when the entered age is 17 or over. Change the program so that if an age less than 17 is entered a suitable message is output. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What age are you? 16 You entered 16 You are not entitled to apply for a driving licence.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 15, contextNote: "(iv) 15 marks (C-15 scale) 15 marks Correct response Correct implementation using solution above or similar. 10 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 7 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error 3 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,3,7,10,15] },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2024-OL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16a-code.png",
+          "srcHash": "1d34ecbf0c05f763056c102bd648fb82",
+          "alt": "The nine-line program Question16_A.py as printed in the Section C booklet: two comment lines, print(\"The program\"), age = int(input(\"What age are you? \")), and if (age >= 17): print(\"You are entitled to apply for a driving licence.\").",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-OL-scheme-q16a",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q16a.png",
+          "srcHash": "094eee867cd43357e37bf907c7cd1fa3",
+          "alt": "The marking scheme's 18-line possible solution for Question 16(a): print(\"Welcome to the driving licence eligibility checker\") #(i); a comment #(ii) explaining that the user is asked to input their age and it is converted to an integer; age read as an int; print(\"You entered\", age) #(iii); name = input(\"Enter your name: \") #(v); and #(vi) if age > 74 the three-year message, elif age < 17 #(iv) the not-entitled message, else the entitled message, each printed with the name.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q16-a-v", topicId: "cs-2-2", conceptId: "amend-program-ask-user-s-should",
+    section: "C", questionRef: "2024 OL Q16(a)(v)",
+    stem: "The program below is the start of a program to check if a person is eligible for their driving licence. The code works by taking the user’s age as an input and checking if it meets a condition.",
+    questionText: "Amend the program to ask for the user’s name. The name should be stored in an appropriate variable. The user’s name should be output along with the message about eligibility to apply for a licence. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What is your name? Sarah What age are you? 16 You entered 16 Sarah you are not entitled to apply for a driving licence.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 10, contextNote: "(v) 10 marks (C-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 7 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 5 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error 3 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,3,5,7,10] },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2024-OL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16a-code.png",
+          "srcHash": "1d34ecbf0c05f763056c102bd648fb82",
+          "alt": "The nine-line program Question16_A.py as printed in the Section C booklet: two comment lines, print(\"The program\"), age = int(input(\"What age are you? \")), and if (age >= 17): print(\"You are entitled to apply for a driving licence.\").",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-OL-scheme-q16a",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q16a.png",
+          "srcHash": "094eee867cd43357e37bf907c7cd1fa3",
+          "alt": "The marking scheme's 18-line possible solution for Question 16(a): print(\"Welcome to the driving licence eligibility checker\") #(i); a comment #(ii) explaining that the user is asked to input their age and it is converted to an integer; age read as an int; print(\"You entered\", age) #(iii); name = input(\"Enter your name: \") #(v); and #(vi) if age > 74 the three-year message, elif age < 17 #(iv) the not-entitled message, else the entitled message, each printed with the name.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q16-a-vi", topicId: "cs-2-2", conceptId: "update-program-so-outputs-message-user",
+    section: "C", questionRef: "2024 OL Q16(a)(vi)",
+    stem: "The program below is the start of a program to check if a person is eligible for their driving licence. The code works by taking the user’s age as an input and checking if it meets a condition.",
+    questionText: "Update your program so that it outputs a message to the user based on the criteria in the table below. The output should continue to display the user name. The name Sarah is used in the examples below. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What is your name? Sarah What age are you? 75 You entered 75 Sarah you are entitled to apply for a three-year driving licence.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 10, contextNote: "(vi) 10 marks (C-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 7 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 5 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error 3 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,3,5,7,10] },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2024-OL-paper-q16a-vi",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16a-vi.png",
+          "srcHash": "428c8325b387cc6b6fa0f639127ab447",
+          "alt": "The nine-line program Question16_A.py (print(\"The program\"), age read as an int, and if age >= 17 the entitled message), above the table printed with part (vi): age less than 17, Sarah you are not entitled to apply for a driving licence; age between 17 and 74 inclusive, Sarah you are entitled to apply for a driving licence; age more than 74, Sarah you are entitled to apply for a three-year driving licence.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2024-OL-scheme-q16a",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q16a.png",
+          "srcHash": "094eee867cd43357e37bf907c7cd1fa3",
+          "alt": "The marking scheme's 18-line possible solution for Question 16(a): print(\"Welcome to the driving licence eligibility checker\") #(i); a comment #(ii) explaining that the user is asked to input their age and it is converted to an integer; age read as an int; print(\"You entered\", age) #(iii); name = input(\"Enter your name: \") #(v); and #(vi) if age > 74 the three-year message, elif age < 17 #(iv) the not-entitled message, else the entitled message, each printed with the name.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
     },

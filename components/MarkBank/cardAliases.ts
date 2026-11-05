@@ -79,6 +79,7 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "cs-2022-hl-q14": "cs-2022-hl-q14-a-i",
   "cs-2022-ol-q16": "cs-2022-ol-q16-a-i",
   "cs-2023-ol-q13": "cs-2023-ol-q13-b-i",
+  "cs-2024-ol-q16": "cs-2024-ol-q16-a-i",
   "cs-2025-ol-q13": "cs-2025-ol-q13-a-ii",
   "cs-2025-ol-q14": "cs-2025-ol-q14-c",
   "cs-2025-ol-q15": "cs-2025-ol-q15-b-i",

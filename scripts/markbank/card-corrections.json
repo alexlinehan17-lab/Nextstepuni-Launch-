@@ -982,54 +982,6 @@
      }
     ]
    }
-  },
-  "cs-2024-ol-q14-c": {
-   "reason": "The scheme awards one holistic 6-mark discussion of a positive impact and one of a negative impact. Its examples are two answer pools, not twelve compulsory 1-mark rows.",
-   "set": {
-    "rows": [
-     {
-      "id": "r-positive",
-      "kind": "anyN",
-      "verbatim": "One positive impact of AI for students",
-      "marks": null,
-      "group": {
-       "claimMax": 1,
-       "perOption": 6,
-       "options": [
-        "Personalised Learning",
-        "Access to resources",
-        "Assistance with homework",
-        "Enhanced accessibility",
-        "Spell check work",
-        "Suggest improvements on student work",
-        "Feedback on pieces of work",
-        "Generate study notes for students",
-        "Create study tips / custom study timetables"
-       ]
-      }
-     },
-     {
-      "id": "r-negative",
-      "kind": "anyN",
-      "verbatim": "One negative impact of AI for students",
-      "marks": null,
-      "group": {
-       "claimMax": 1,
-       "perOption": 6,
-       "options": [
-        "Privacy concerns",
-        "Bias Issues",
-        "Overreliance on technology",
-        "Wrong information given",
-        "Using AI to complete work",
-        "AI to assist in tasks may reduce critical thinking skills",
-        "Lack of independent research & effort levels",
-        "Reduction of problem-solving skills and logical thinking skills"
-       ]
-      }
-     }
-    ]
-   }
   }
  },
  "engineering": {

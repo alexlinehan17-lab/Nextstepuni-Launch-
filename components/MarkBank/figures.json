@@ -57926,5 +57926,108 @@
   "year": 2021,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2024-OL-scheme-q3a": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q3a.png",
+  "md5": "fdac9049e6a6c10e873ce568343bea63",
+  "alt": "The marking scheme's completed table for Question 3(a): beside each component image its name, Capacitor, Resistor and Transistor, in that order.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q3(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2024-OL-scheme-q6": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q6.png",
+  "md5": "d79c4df426b78f6c2beb8972c57e5159",
+  "alt": "The marking scheme's completed table for Question 6: an AND gate with inputs 1 and 1 outputs 1, an OR gate with inputs 1 and 0 outputs 1, and a NOT gate with input 1 outputs 0.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q6",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2024-OL-paper-q13b-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13b-code.png",
+  "md5": "120e24a51e08958f173e605ec3d54e17",
+  "alt": "The five-line linear search pseudo code printed with Question 13(b): for each element in the list, if element equal target value then return its index, if element is not found then print \"Value not found\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q13(b)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2024-OL-paper-q15d-table": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15d-table.png",
+  "md5": "4e7f527fcf359f6eec0207992f9debe3",
+  "alt": "The wind warning table printed with Question 15(d): Yellow Wind Warning, speed between 90 and 110km/h; Orange Wind Warning, speed between 111 and 130km/h; Red Wind Warning, speed greater than 130km/h.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q15(d)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2024-OL-paper-q16a-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16a-code.png",
+  "md5": "1d34ecbf0c05f763056c102bd648fb82",
+  "alt": "The nine-line program Question16_A.py as printed in the Section C booklet: two comment lines, print(\"The program\"), age = int(input(\"What age are you? \")), and if (age >= 17): print(\"You are entitled to apply for a driving licence.\").",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2024-OL-paper-q16a-vi": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16a-vi.png",
+  "md5": "428c8325b387cc6b6fa0f639127ab447",
+  "alt": "The nine-line program Question16_A.py (print(\"The program\"), age read as an int, and if age >= 17 the entitled message), above the table printed with part (vi): age less than 17, Sarah you are not entitled to apply for a driving licence; age between 17 and 74 inclusive, Sarah you are entitled to apply for a driving licence; age more than 74, Sarah you are entitled to apply for a three-year driving licence.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16(a)(vi)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2024-OL-scheme-q16a": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q16a.png",
+  "md5": "094eee867cd43357e37bf907c7cd1fa3",
+  "alt": "The marking scheme's 18-line possible solution for Question 16(a): print(\"Welcome to the driving licence eligibility checker\") #(i); a comment #(ii) explaining that the user is asked to input their age and it is converted to an integer; age read as an int; print(\"You entered\", age) #(iii); name = input(\"Enter your name: \") #(v); and #(vi) if age > 74 the three-year message, elif age < 17 #(iv) the not-entitled message, else the entitled message, each printed with the name.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2024-OL-paper-q16b-output": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16b-output.png",
+  "md5": "93b8c00157b9437736bff5b411d76751",
+  "alt": "The sample output printed with Question 16(b): Split Bill Calculator; How much is the bill?: 100; How many people?: 5; You each owe 20.0.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16(b)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2024-OL-scheme-q16b": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-scheme-q16b.png",
+  "md5": "8b786aade994265909ca8f0bafb7aafa",
+  "alt": "The marking scheme's 17-line possible solution for Question 16(b): print(\"Split Bill Calculator\"); myBill read as a float and numberOfPeople as an int; bill_per_person = myBill / numberOfPeople; then print(\"You each owe\", bill_per_person), each step commented.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16(b)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
  }
 }
