@@ -1,0 +1,299 @@
+{
+  "year": 2015,
+  "level": "higher",
+  "paperFileid": "LC001ALP200IV.pdf",
+  "schemeFileid": "LC001ALP000IV.pdf",
+  "paperSha256": "98586d0bcbe2999a84c68f3c4463eedebb862a40a130cd5de8b8fd03825d3caa",
+  "schemeSha256": "afb5cf50e6362a8d91a7d369fbac857375471192bab3fb53badbbc91c12e6fe1",
+  "reviewDate": "2026-11-05",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reviewedSchemePages": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "schemeScope": "Combined Paper 1 and Paper 2 scheme. PDF 16 reading marking instructions; 17–19 Léamhthuiscint A; 20–23 Léamhthuiscint B; 24 the literature Gaeilge note, 2A (both prescribed texts and their shared Treoir) and the 2B film alternative; 25 the film’s one-trait note and the 2B play alternative; 26–27 poetry 3A and 3B; 28 Ceist 4 Treoracha (4A–4E print no text of their own) and 4F; 29 the general grading table for every total, then modified marking (SMM). PDF 1–15 belong to Paper 1; 30–31 are blank and 32 empty.",
+  "reviewMethod": "Every paper page (1 cover, 2 a pointer to the instructions, 3 instructions, 11 the 4F poem Colmáin, 12 blank) and every applicable scheme page read in the text layer and checked against the printed page; each prompt and scheme slice is asserted against the PDFs by the builder.",
+  "selectionDecisions": [
+    {
+      "page": 3,
+      "raw": "FREAGAIR GACH CEIST (1, 2, 3 AGUS 4).",
+      "decision": "Paper structure (200 marks): every question is answered: Ceist 1 (Léamhthuiscint A and B, both compulsory), Ceist 2 Prós, Ceist 3 Filíocht and Ceist 4 Litríocht Bhreise."
+    },
+    {
+      "page": 3,
+      "raw": "Glacfar le freagraí i d’fhocail féin nó i bhfocail",
+      "decision": "Answer-language rule (own words or the passage’s words; 6(b) in the candidate’s own words), not a selection."
+    },
+    {
+      "page": 3,
+      "raw": "Ainmnithe (A) nó Roghnach (B)",
+      "decision": "Closed choice inside Ceist 2 (Prós) and inside Ceist 3 (Filíocht): prescribed (A) or optional (B); every route of each is carded."
+    },
+    {
+      "page": 4,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna a ghabhann leis.",
+      "decision": "Instruction to read the passage and answer every question with it; not a selection."
+    },
+    {
+      "page": 5,
+      "raw": "Luaigh dhá phointe eolais faoi na ceannairí óga a bhailigh le chéile ag comhdháil OYW",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3. (A 1(a), scheme “{3 mharc: 2 mharc + 1 mharc}”.)"
+    },
+    {
+      "page": 5,
+      "raw": "(ii) Scríobh síos dhá cheist dhomhanda a pléadh ag na comhdhálacha éagsúla. (Alt 1)",
+      "decision": "Two required answers inside one printed part, priced 1 mharc + 1 mharc: each answer is also a one-mark practice slot. (A 1(b)(ii))"
+    },
+    {
+      "page": 5,
+      "raw": "Scríobh síos dhá cheann de na critéir sin. (Alt 3)",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3. (A 3(a), second line of its printed question.)"
+    },
+    {
+      "page": 5,
+      "raw": "(i) Luaigh rud amháin a dhéanann na Comhairleoirí ag na comhdhálacha. (Alt 3)",
+      "decision": "One answer asked for inside one printed part, priced {2 mharc}; the scheme lists alternatives, any one of which earns the part. Not a selection. (A 3(b)(i), “Rud amháin as na rudaí seo a leanas”.)"
+    },
+    {
+      "page": 5,
+      "raw": "(ii) Scríobh síos toradh amháin a bhíonn ar obair Foodcloud. (Alt 4)",
+      "decision": "One answer asked for inside one printed part, priced {2 mharc}; the scheme lists alternatives, any one of which earns the part. Not a selection. (A 4(b)(ii), two printed results joined by “nó”, each = 2 mharc.)"
+    },
+    {
+      "page": 5,
+      "raw": "Luaigh dhá rud a dúirt Yeonmi Park faoin rialtas sa Chóiré Thuaidh le linn a hóige. (Alt 5)",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3. (A 5(a))"
+    },
+    {
+      "page": 5,
+      "raw": "Tabhair dhá chúis le do fhreagra agus bíodh sampla amháin as an sliocht mar thacaíocht",
+      "decision": "A 6(b): an opinion (2) and two reasons, each with one example from the passage (Cúis 2 + Sampla 3 = 5 each); the reasons are accepted only with an opinion stated, so the part stays one response with three criteria; own words required."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna a ghabhann leis.",
+      "decision": "Instruction to read the passage and answer every question with it; not a selection."
+    },
+    {
+      "page": 6,
+      "raw": "mílte rogha ag scinneadh tharam gan stad ar an",
+      "decision": "Source-text wording inside reading passage B (Cruachás na ndaoine gan dídean), not a candidate instruction."
+    },
+    {
+      "page": 6,
+      "raw": "i málaí codlata nó i mboscaí cairtchláir an oíche",
+      "decision": "Source-text wording inside reading passage B (Cruachás na ndaoine gan dídean), not a candidate instruction."
+    },
+    {
+      "page": 6,
+      "raw": "muintir, teipeann ar chleamhnas nó ar phósadh,",
+      "decision": "Source-text wording inside reading passage B (Cruachás na ndaoine gan dídean), not a candidate instruction."
+    },
+    {
+      "page": 6,
+      "raw": "chabhródh leis. Bíonn fadhbanna drugaí nó",
+      "decision": "Source-text wording inside reading passage B (Cruachás na ndaoine gan dídean), not a candidate instruction."
+    },
+    {
+      "page": 6,
+      "raw": "nó an cíos a íoc, agus tá dídean éigeandála de",
+      "decision": "Source-text wording inside reading passage B (Cruachás na ndaoine gan dídean), not a candidate instruction."
+    },
+    {
+      "page": 6,
+      "raw": "chúis amháin nó ar chúis eile. Is minic",
+      "decision": "Source-text wording inside reading passage B (Cruachás na ndaoine gan dídean), not a candidate instruction."
+    },
+    {
+      "page": 7,
+      "raw": "Tabhair dhá phointe eolais faoin gcéad Luan de mhí na Nollag. (Alt 1)",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3. (B 1(a))"
+    },
+    {
+      "page": 7,
+      "raw": "Scríobh síos dhá phointe eolais a bhí le fáil sa suirbhé a rinneadh oíche an 11 Samhain.",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3. (B 2(a))"
+    },
+    {
+      "page": 7,
+      "raw": "Luaigh dhá rud a tharlaíonn uaireanta sa teaghlach agus a fhágann duine gan dídean. (Alt 3)",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3. (B 3(a))"
+    },
+    {
+      "page": 7,
+      "raw": "Luaigh dhá cheann de na bealaí sin. (Alt 4)",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3. (B 4(a), second line of its printed question.)"
+    },
+    {
+      "page": 7,
+      "raw": "Luaigh rud amháin a deir an tAthair Peter McVerry faoi na hógánaigh. (Alt 4)",
+      "decision": "One answer asked for inside one printed part, priced {2 mharc}; the scheme lists alternatives, any one of which earns the part. Not a selection. (B 4(b)(ii))"
+    },
+    {
+      "page": 7,
+      "raw": "Luaigh dhá bheartas atá i straitéis an Rialtais a foilsíodh sa bhliain 2013. (Alt 5)",
+      "decision": "Two required answers inside one printed part, priced 2 mharc + 1 mharc (order-dependent): the part stays whole at 0/2/3. (B 5(a))"
+    },
+    {
+      "page": 7,
+      "raw": "Cén cineál (genre) scríbhneoireachta lena mbaineann an sliocht seo? Luaigh dhá thréith",
+      "decision": "B 6(b): the genre (2) and two of its traits, each with one example from the passage (Tréith 2 + Sampla 3 = 5 each); traits and examples are accepted only with the genre correctly named, so the part stays one response with three criteria; own words required."
+    },
+    {
+      "page": 7,
+      "raw": "a bhaineann leis an gcineál seo scríbhneoireachta. Aimsigh sampla amháin de gach ceann",
+      "decision": "B 6(b), second line: one example for each of the two traits, inside the same response; not a selection."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair Ceist 2A (Prós Ainmnithe) nó Ceist 2B (Prós Roghnach) thíos.",
+      "decision": "Closed choice: Q2A (Prós Ainmnithe) or Q2B (Prós Roghnach); every printed route of each is carded."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair an cheist thíos ar an scannán Cáca Milis nó ar an dráma An Lasair Choille.",
+      "decision": "Closed choice inside 2A between two prescribed texts, each with its own printed statement: a card each (P-2A-caca-milis, P-2A-an-lasair-choille), as their Atlas headings differ; the scheme prices both with one Treoir (Eolas 25 + Gaeilge 5)."
+    },
+    {
+      "page": 8,
+      "raw": "nó",
+      "decision": "The printed “nó” between the two 2A texts and between the two 2B alternatives; covered by the 2A and 2B decisions."
+    },
+    {
+      "page": 8,
+      "raw": "Prós Roghnach",
+      "decision": "Section heading (2B. Prós Roghnach), not a separate route."
+    },
+    {
+      "page": 8,
+      "raw": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid i bhfreagra ar an bPrós Roghnach.",
+      "decision": "Restriction on content, not a route."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.",
+      "decision": "Closed choice inside 2B between an optional film and an optional play: one card carries both printed alternatives (one Atlas heading, Prós: Ábhar Roghnach); the scheme prices the film Tréithe agus Léiriú 25 and the play Príomhthéama 2 + Forbairt 23, each with Gaeilge 5."
+    },
+    {
+      "page": 8,
+      "raw": "Maidir leis an scannán roghnach a ndearna tú staidéar air le linn do chúrsa, cad iad tréithe an",
+      "decision": "Optional film chosen by the candidate: open content inside the 2B route."
+    },
+    {
+      "page": 8,
+      "raw": "Maidir leis an dráma roghnach a ndearna tú staidéar air le linn do chúrsa, cad é príomhthéama",
+      "decision": "Optional play chosen by the candidate: open content inside the 2B route."
+    },
+    {
+      "page": 8,
+      "raw": "– PRÓS AINMNITHE nó PRÓS ROGHNACH – (30 marc)",
+      "decision": "Section footer / structure statement, not a separate route."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair Ceist 3A (Filíocht Ainmnithe) nó Ceist 3B (Filíocht Roghnach) thíos.",
+      "decision": "Closed choice: Q3A (Colscaradh) or Q3B (an optional modern poem): two whole 30-mark routes, each answering (i), (ii) and (iii)."
+    },
+    {
+      "page": 9,
+      "raw": "“Tá codarsnacht idir dhá thuiscint dhifriúla ar an bpósadh sa dán Colscaradh (thíos).”",
+      "decision": "3A(i): the statement to discuss (two understandings of marriage in the poem), inside one 15-mark part; not a selection."
+    },
+    {
+      "page": 9,
+      "raw": "Cad é an mothúchán is mó a mhúsclaíonn an dán seo ionat féin? (Is leor pointe amháin",
+      "decision": "Required content within the selected poem route (3A(ii) and 3B(ii)); “pointe amháin” is the minimum support, not a selection."
+    },
+    {
+      "page": 9,
+      "raw": "Filíocht Roghnach",
+      "decision": "Section heading (3B. Filíocht Roghnach), not a separate route."
+    },
+    {
+      "page": 9,
+      "raw": "Roghnach.",
+      "decision": "End of the printed restriction line (“… ar an bhFilíocht Roghnach.”), not a route."
+    },
+    {
+      "page": 9,
+      "raw": "Maidir le dán nua-aimseartha roghnach a ndearna tú staidéar air le linn do chúrsa,",
+      "decision": "Optional modern poem chosen by the candidate: open content inside one route."
+    },
+    {
+      "page": 9,
+      "raw": "– FILÍOCHT AINMNITHE nó FILÍOCHT ROGHNACH – (30 marc)",
+      "decision": "Section footer / structure statement, not a separate route."
+    },
+    {
+      "page": 10,
+      "raw": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F) thíos.",
+      "decision": "Closed choose-one of 4A–4F: six whole 40-mark routes."
+    },
+    {
+      "page": 10,
+      "raw": "“Ba iad an ceol agus an chaid (an pheil) an dá chaitheamh aimsire ab fhearr le Maidhc Dainín",
+      "decision": "Wording of the 4B statement to discuss, not a selection."
+    },
+    {
+      "page": 10,
+      "raw": "Freagair (i), (ii) agus (iii) thíos.",
+      "decision": "4F: all three parts required in one route."
+    },
+    {
+      "page": 10,
+      "raw": "Cén t-atmaisféar atá sa dán seo, dar leat? Is leor dhá phointe eolais.",
+      "decision": "4F(iii): name the atmosphere and two points inside one 10-mark part (scheme 2 + 3 + 3); not a selection."
+    },
+    {
+      "page": 11,
+      "raw": "leo siúd ar dhá chois a bhí ina thimpeall.",
+      "decision": "A line of the printed poem Colmáin, not a candidate instruction."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Reading (2015: Léamhthuiscint A and B both compulsory): all twelve questions of both passages are carded as whole questions; each printed part is also a practice card at its published tariff. A 1(b)(ii) and B 2(b)(i) (“{1 mharc + 1 mharc}”) and A 5(b)(i) (“{2 mharc} (2 phointe eolais) {1 mharc + 1 mharc}”) price two independent one-mark answers and expose one-mark slots; every (a) part of Q1–5 (2 mharc + 1 mharc) and both 6(a) stay whole as 0/2/3.",
+    "A 6(b) prices an opinion 2 and two reasons with an example each (Cúis 2 + Sampla 3 = 5, twice); B 6(b) the genre 2 and two traits with an example each (Tréith 2 + Sampla 3 = 5, twice). The 5s are accepted only with the opinion or the correctly named genre, so neither 6(b) is split into practice slots (the 2017 B 6(b) shape). Both must be in the candidate’s own words.",
+    "Single-answer parts allow only the mark values the scheme prints for them (0, the printed partials and the full tariff).",
+    "Prose: 2A prints two prescribed texts (the film Cáca Milis or the play An Lasair Choille), a card each as in 2018; 2B prints an optional film or an optional play, one card carrying both alternatives. Poetry 3A (Colscaradh) and 3B (an optional modern poem) and the six Q4 options are one card each; the optional text itself is open content chosen inside one route.",
+    "2B is one card for two printed alternatives the scheme prices differently (the film “Tréithe agus Léiriú (25)”, capped at 14 where one trait is discussed; the play “Príomhthéama (2) = Forbairt (23)”). Its Eolas criterion is one 25-mark judgement led by the scheme’s choice line, with both pricings in its guidance; a single criterion cannot carry alternative splits."
+  ],
+  "sourceFindings": [
+    "Paper 2 = 200: Ceist 1 Léamhthuiscint A 50 + B 50 (Q1–5 at 7 = (a) 3 + (b)(i) 2 + (b)(ii) 2; Q6 at 15 = (a) 3 + (b) 12); Ceist 2 Prós 30 (25 Eolas + 5 Gaeilge); Ceist 3 Filíocht 30 (25 + 5); Ceist 4 Litríocht Bhreise 40 (35 + 5).",
+    "General grade-to-mark table: PDF 29 (scheme page 27), “Grádú Marcála sna Ceisteanna”, after Ceist 4 and before modified marking. It prints grades A–D for every total from 200 down to 5 under the note “Den bhfíorthábhacht é go mbeifeá ag machnamh i ngráid agus i gcéatadáin le linn na marcála. (Féach an scéim ghrádaithe sa Cheapadóireacht ar lgh. 11-13.)”; it names no question and heads no section. Nothing ties it to a particular question beyond its position after Ceist 4 and its pointer to the composition grading; it is carried as printed on the literature cards (Gaeilge, and the judged Eolas criteria), never read for rows.",
+    "Literature: the scheme prints no band tables and no supporting notes for 2A (one Treoir for both texts, priced only by the closing note “Ní mór don Scrúdaitheoir an marc ar eolas as 25 marc …”), none for 4A–4E (the Ceist 4 Treoracha: “an t-eolas a mharcáil as 35 marc agus an Ghaeilge san iarracht a mheas as 5 mharc”).",
+    "2B prices its alternatives differently: the film “Tréithe agus Léiriú (25)” with “Mura bhfuil ach plé agus léiriú ar thréith amháin de chuid an phríomhcharachtair, marcáil an t-eolas as 14 mharc” (PDF 25), the play “Príomhthéama (2) = Forbairt (23)”.",
+    "Paper vs scheme: 3A and 3B print (i) 15, (ii) 6, (iii) 9 and the scheme assesses Eolas 13 (3B: 2 + 11), 5 (1 + 4) and 7 (1 + 2 + 2 + 2); 4F prints (i) 20, (ii) 10, (iii) 10 and the scheme assesses Eolas 19 (2 + 17), Míniú 8 and 8 (2 + 3 + 3); the remaining 5 is the shared Gaeilge award.",
+    "A 5(b)(i) prints two tariffs, “{2 mharc} (2 phointe eolais) {1 mharc + 1 mharc}”, over one answer carrying both points (“Léirigh na scannáin seo dóibh go raibh saol difriúil agus saoirse ann lasmuigh den Chóiré Thuaidh = 2 mharc”); carded as two one-mark slots.",
+    "Scheme misprints kept as printed in the guidance: A 1(a) answer “as gach cearn den domhain” (the passage: “domhan”); A 4(b)(i) reprint “Cén socrú ata déanta” (the paper: “atá”); B 1(b)(ii) reprint “tráchtáirí” and “(Alt1)” (the paper: “tráchtairí”, “(Alt 1)”); B 5(b)(ii)’s answers read “go bhfuilimid ag geallúint ‘cearta cothroma agus deiseanna cothroma’” where the passage prints “go bhfuilimid dílis d’aidhm Fhorógra na Poblachta a gheallann ‘cearta cothroma agus deiseanna cothroma’”; the Ceist 4 Treoracha read “usáid” (úsáid) and the heading “(A, B, C D, E nó F)” (a comma missing; the paper prints “(A, B, C, D, E nó F)”). The card questions are the paper’s.",
+    "The scheme’s bullets (SymbolMT U+F0B7) are read as “•”."
+  ],
+  "remainingWork": []
+}

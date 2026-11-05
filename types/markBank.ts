@@ -334,6 +334,18 @@ export interface CardAudioMaterial {
   presentationNote: string;
 }
 
+/** Examination levels Mark Bank decks are built at. 'common' is a level the
+ *  SEC prints for a subject examined at one level (LCVP); 'foundation' is the
+ *  third level of the subjects that set one (Irish). */
+export type MarkBankLevel = 'higher' | 'ordinary' | 'common' | 'foundation';
+
+export const MARK_BANK_LEVEL_LABELS: Record<MarkBankLevel, string> = {
+  higher: 'Higher', ordinary: 'Ordinary', common: 'Common', foundation: 'Foundation',
+};
+export const MARK_BANK_LEVEL_SHORT_LABELS: Record<MarkBankLevel, string> = {
+  higher: 'HL', ordinary: 'OL', common: 'CL', foundation: 'FL',
+};
+
 /** Fields every card shares, whatever its provenance. */
 interface CardBase {
   /** No dots: a dot is a Firestore field-path separator, and card ids are used as
@@ -348,7 +360,7 @@ interface CardBase {
    * would make every card cite a Higher Level paper that does not exist, and
    * would hide it from a student whose profile says anything else.
    */
-  level: 'higher' | 'ordinary' | 'common';
+  level: MarkBankLevel;
   /** PART-level curriculum id. A card may never inherit its parent question's
    *  tag — the alternative parts of one Section C question routinely span
    *  different topics, and inheriting would file bread mould under the
@@ -718,6 +730,8 @@ export interface IrishCriterion {
   label: string;
   /** Awards add to the mark; deductions are subtracted from it. */
   kind: 'award' | 'deduction';
+  /** A published penalty may reduce this award only, never another response. */
+  deductFrom?: string;
   maxMarks: number;
   permittedMarks: number[];
   guidanceKind: IrishGuidanceKind;

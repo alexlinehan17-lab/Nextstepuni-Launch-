@@ -1,0 +1,125 @@
+#!/usr/bin/env python3
+"""Rebuild irish-foundation-2010-source-review.json from the official paper (see _ledger.py).
+
+Generated from the review-time maker; AMENDMENTS and RECORDED carry the later, dated edits.
+Run with --check to verify the committed ledger is byte-identical. Run from any directory.
+"""
+import os
+import sys
+from pathlib import Path
+_REPO = Path(__file__).resolve().parents[4]
+os.chdir(_REPO)
+sys.path.insert(0, str(_REPO / 'scripts/markbank/authoring'))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _ledger import finish  # noqa: E402
+"""One-off writer for the reviewed 2010 Foundation source ledger (scratch, not committed).
+Every decision below was made from the rendered pages; raws are matched exactly, never guessed."""
+import json,re,sys
+from pathlib import Path
+ROOT=Path(str(_REPO))
+import fitz
+DIRECTIVE=re.compile(r'rogha|roghna|Freagair|Cuir tic|Ainmnigh|Luaigh|\bchoose\b|\beither\b|\bany\b|one of|\bnó\b|dhá phointe|trí phointe|dhá rud|dheartháir|dheirfiúr|dó / d[ií]|dó/di|Cuir ciorcal|dhá thagairt',re.I)
+clean=lambda t:re.sub(r'\s+',' ',t).strip()
+REQ='Required answers, no optional task selection.'
+PAIR='Choose 2 of A/B/C expands AB, AC, BC. All five questions in each selected passage are required.'
+ALL='Every question in the selected passage is required; no further task selection.'
+TEXT='Source-text conjunction inside the reading passage; not a candidate instruction.'
+WRITE='All Q4, Q5, Q6 required with one A/B choice in each; expand 2×4×2 = 16 full 120-mark products after the form-date selection.'
+LETTER='Open friend and flexible pronoun dó/di; one whole letter. Picture 2 requires three work points, which are required content, not a pool.'
+OPEN='Five school subjects and three sports are open required content, not an enumerated pool.'
+DATES='Closed interview pool 21 Iúil / 28 Iúil / 4 Lúnasa expands three whole 40-mark forms and their 16 full Q4/Q5/Q6 writing combinations.'
+AURAL='Separate listening paper: every answer required; tick/map instructions select the correct answer, not alternative tasks. Recorded only to keep the directive guard complete; the component itself is a source gap (official Foundation recording unavailable).'
+rules=[
+ (2,'FREAGAIR GACH CEIST',REQ),(3,'Freagair do rogha',PAIR),(6,'Freagair do rogha',PAIR),
+ (3,'Léigh an',ALL),(4,'Léigh an',ALL),(5,'Léigh an',ALL),(6,'Léigh an',ALL),(7,'Léigh an',ALL),(8,'Léigh na',ALL),
+ (4,'taispeántas nó ceolchoirm',TEXT),(6,'An giotár nó',TEXT),(6,'roghnaítear',TEXT),(7,'Eo nó thar',TEXT),
+ (9,'FREAGAIR GACH CEIST (4',WRITE),(10,'Freagair (a)',WRITE),(11,'NÓ',WRITE),(12,'Freagair (a)',WRITE),(13,'NÓ',WRITE),(14,'Freagair (a)',WRITE),(15,'NÓ',WRITE),
+ (12,'dó/di',LETTER),(12,'trí phointe',LETTER),(13,'Ainmnigh',OPEN),(13,'Luaigh',OPEN),(13,'Cuir tic',DATES)]
+decisions=[]
+for name in ['LC001BLP100IV.pdf','LC001BLPA00IV.pdf']:
+    d=fitz.open(ROOT/'paper-trail-corpus/exampapers/2010'/name)
+    for i,p in enumerate(d,1):
+        for line in p.get_text().splitlines():
+            raw=clean(line)
+            if not DIRECTIVE.search(raw):continue
+            if name.startswith('LC001BLPA'):dec=AURAL
+            else:
+                hits=[r for pg,key,r in rules if pg==i and key in raw]
+                assert len(set(hits))==1,(i,raw,hits)
+                dec=hits[0]
+            decisions.append(dict(paperFileid=name,page=i,raw=raw,decision=dec))
+assert len(decisions)==28,len(decisions)
+ledger=dict(
+ year=2010,level='foundation',paperFileids=['LC001BLP100IV.pdf','LC001BLPA00IV.pdf'],schemeFileid='LC001BLP000IV.pdf',
+ reviewDate='2026-10-11',status='written-reviewed; listening-source-gap',
+ componentStatus={'LC001BLP100IV.pdf':'reviewed','LC001BLPA00IV.pdf':'source-gap: official Foundation recording unavailable; no cards, transcript or substitute audio'},
+ fullPaperAndApplicableSchemeVisualSweep=True,
+ reviewedPaperPages={'LC001BLP100IV.pdf':list(range(1,17)),'LC001BLPA00IV.pdf':list(range(1,9))},
+ reviewedSchemePages=list(range(1,18)),
+ selectionDecisions=decisions,
+ audio=dict(status='source-gap',
+  expectedComponent='2010|foundation|LC001BLPA00IV.pdf',
+  checkedUrls=[
+   dict(url='https://www.examinations.ie/archive/exampapers/2010/LC001BLP017IV.mp3',result='HTTP 404 (2026-10-08)'),
+   dict(url='https://www.examinations.ie/archive/exampapers/2010/LC001BLPO17IV.mp3',result='HTTP 404 (2026-10-08)')],
+  secArchiveListing='The SEC 2010 Irish archive page lists one sound file only: LC001ZLP017IV.mp3, labelled “Sound File (IV)”. No Foundation (B) recording is listed. Saved copy: tmp/irish-audit/foundation2010/sec-archive.html.',
+  unverifiedCandidate=dict(url='https://www.examinations.ie/archive/exampapers/2010/LC001ZLP017IV.mp3',result='HTTP 200, 38,471,356 bytes (2026-10-08)',
+   decision='Not verified as the Foundation recording; never substituted. The Foundation listening paper asks different questions (Sorcha, Ciarán, Cluain Eois, mionmharatón, FÁS) from the Higher/Ordinary aural.'),
+  corroboration='St Munchin’s College Irish aural page labels the 2010 Foundation recording unavailable: https://stmunchinscollege.com/academics/leaving-cert-programme/irish/',
+  scheme='Scheme PDF 2 gives the full listening key: 22 parts, 180 marks; Q1–3 (a)/(b) 7 each; Q4, Q5 7 each; Q6–9 (a)/(b) 8 each; Q10–12 (a)/(b) 10 each; map answer bottom right.',
+  decision='The listening component stays pending with no Bank cards, no transcript and no substitute audio until the official Foundation recording is recovered.'),
+ nonPoolDecisions=[
+  'Multiple-choice distractors are candidate answers to one question, not independently valid task routes.',
+  'Notice picture prompts and all six reply details to Phil are compulsory; they are required headings, not alternatives. The supplied handwritten invitation (picture 2) is task context.',
+  'Letter: open friend and flexible dó/di; three work points in picture 2, one customer reference in picture 3 and two depicted activities in picture 4 are required content, and the scheme’s activity examples are illustrative, not a closed menu.',
+  'Form: five school subjects and three sports are open content; the three printed interview dates are a finite selection.',
+  'Story five-reference requirement and scheme example lists are not a choose-five finite menu. 2010 prints no fixed missing-reference penalty.',
+  'Story 6(b) picture captions (faoin tuath, marcach óg; ag tafann, geit; chabhraigh, stop; ar ais ar an gcapall, áthas) are vocabulary support, not a selection.',
+  'Reasonable-accommodation guidance (scheme PDF 17) changes marking for eligible candidates, not task selection.'],
+ sourceFindings=[
+  'Full visual sweep 2026-10-08, re-checked 2026-10-11: 16 written + 8 listening + 17 scheme pages, including covers and blank pages (written 16, aural 7–8 blank). Written 270 = 40 matching + 50 Q2 + 60 Q3 + 30 Q4 + 40 Q5 + 50 Q6; separate listening 180.',
+  '2010 raw PDF text is readable; no duplicate-glyph reconstruction is needed. Private-use tick/checkbox glyphs on PDF 13 (form) and aural PDF 2 are kept in the raw directive guard; the original PDFs are unchanged.',
+  'Matching key EHDGAFBJCI on written PDF 2 / scheme PDF 3, 10 × 4 marks.',
+  'Q2 BSL letter (PDF 3), Féile na hÉigse brochure (PDF 4), road-accident news (PDF 5): answers scheme PDF 3, 5 marks each. Q3 Cailín Ceolmhar article (PDF 6), Gráinne Mhaol extract (PDF 7), poem An Canaerí (PDF 8, four stanzas, 16 lines, cage and two bird illustrations): answers scheme PDF 4, 6 marks each.',
+  'Q3 special notes on scheme PDF 5: 3(a)(3) accepts Ceol traidisiúnta / traidisiúnta / the full sentence / an t-alt iomlán at 6; Ceol draíochta 6−2 = 4; Bosca ceoil and Ceol 0. 3(b)(2) accepts the chun dul ar bord loinge forms at 6, excess information 6−2. 3(c)(4) accepts Síol forms at 6; two lines 6−2 = 4; whole stanza 6−6 = 0. Permitted marks therefore [0, 4, 6], not 2011’s [0, 2, 4, 6].',
+  'Notice Q4(a) written PDF 10 / scheme PDF 7–9: layout 1 + pictures 6/9/3/3 + language 8 = 30. General −1 for an inappropriate tense (PDF 8). The paper numbers its panels 1, 2, an unnumbered photograph, 3; the scheme counts four pictures, so scheme Pictiúr 3 is the photograph and scheme Pictiúr 4 is the panel printed 3. Scheme PDF 9 asks “Cé a chuirfidh tús leis an rás?” where the paper says “turas”; original wording kept.',
+  'Reply Q4(b) written PDF 11 / scheme PDF 10–11: greeting 2 + reply attempt 1 + signature 1; six required details 3 each across pictures 1, 3, 4; language 8 = 30. Candidate is Helen (handwritten invitation in picture 2, signed Phil). Past-tense penalty −1 printed for picture 3/4 points.',
+  'Hardware-store letter Q5(a) written PDF 12 / scheme PDF 12–14: layout 6 (2+1+1+2), pictures 4/12/4/4, language 10 = 40. Picture 3 needs one customer reference; picture 4 needs two depicted activities, −1 for an activity not in the picture. Scheme PDF 13 picture-2 heading says “san óstán” although the paper and examples concern the Ollstór; original wording kept with an explicit notice.',
+  'K-Club form Q5(b) written PDF 13 / scheme PDF 14–15, Áine Bhreathnach, interview dates 21 Iúil / 28 Iúil / 4 Lúnasa. Fields 15 by the printed doubled column 30 ÷ 2, rounding up once (21 ÷ 2 = 10½ → 11). Published table conflict: undoubled birth-date row ½ vs doubled 2; undoubled column sums 14½ against printed 15. Both columns preserved; the explicit doubled method is used. Relevant paragraph /15, off-topic /5; 20 words → 50%, about 32 words → one-fifth reduction of the paragraph award only; language 10.',
+  'Stories Q6(a) beach day with Club Óige (written PDF 14 / scheme PDF 15–16) and Q6(b) cycling/horse incident (written PDF 15 / scheme PDF 16): communication 37 with proportional length adjustment, language 13. Five references required (6(b): one per picture plus one more). No fixed −5 missing-reference penalty and no four-point conversion table are printed. Reasonable accommodation on scheme PDF 17; no aural transcript in this scheme.'],
+ remainingWork=['Recover the official 2010 Foundation listening recording (LC001BLPA00IV component), then review and card its 22 parts; until then the component stays pending.'])
+LEDGER = ledger
+
+# Later, dated edits (see _ledger.py).
+AMENDMENTS = []
+RECORDED = {'runtimeVerification': {'date': '2026-10-11',
+                         'mobileViewport': [390, 844],
+                         'markBankRoutes': 19,
+                         'atlasRoutes': 17,
+                         'sourceReaderPagesMatchCards': True,
+                         'threeQuestionWritingPages': 3,
+                         'wholeWritingSchemePages': 11,
+                         'sourceImagesVisuallyVerified': True,
+                         'readerFocusRestored': True,
+                         'horizontalOverflow': False,
+                         'pdfDecoderErrors': [],
+                         'audio': 'Not applicable: the 2010 Foundation listening component is a source gap and ships no cards or audio.'}}
+KEY_ORDER = ['year',
+ 'level',
+ 'paperFileids',
+ 'schemeFileid',
+ 'reviewDate',
+ 'status',
+ 'componentStatus',
+ 'fullPaperAndApplicableSchemeVisualSweep',
+ 'reviewedPaperPages',
+ 'reviewedSchemePages',
+ 'selectionDecisions',
+ 'audio',
+ 'nonPoolDecisions',
+ 'sourceFindings',
+ 'remainingWork',
+ 'runtimeVerification']
+
+if __name__ == '__main__':
+    finish(LEDGER, 'irish-foundation-2010-source-review.json', AMENDMENTS, RECORDED, KEY_ORDER)

@@ -42,6 +42,8 @@ import { splitForEmphasis } from './questionEmphasis';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
 import {
+  MARK_BANK_LEVEL_LABELS,
+  MARK_BANK_LEVEL_SHORT_LABELS,
   groupMarks,
   isPointCard,
   isRubricCard,
@@ -49,6 +51,7 @@ import {
   rowId,
   type ArtRubric,
   type CardAudioMaterial,
+  type CardSourceMaterial,
   type GeographyCriterion,
   type GeographyRubric,
   type IrishCriterion,
@@ -502,8 +505,16 @@ export const irishScoreId = (criterionId: string) =>
  *  claimed rows; any other is worth the mark placed on it. */
 export function irishMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system !== 'irish') return 0;
-  const total = card.rubric.criteria.reduce((sum, criterion) => {
+  const criteria = card.rubric.criteria;
+  const total = criteria.reduce((sum, criterion) => {
     const value = irishCriterionMarks(criterion, scores);
+    // A published penalty that names its award reduces that award only, never below 0.
+    if (criterion.kind === 'deduction' && criterion.deductFrom) return sum;
+    if (criterion.kind === 'award') {
+      const penalty = criteria.filter(item => item.kind === 'deduction' && item.deductFrom === criterion.id)
+        .reduce((amount, item) => amount + irishCriterionMarks(item, scores), 0);
+      return sum + Math.max(0, value - penalty);
+    }
     return criterion.kind === 'deduction' ? sum - value : sum + value;
   }, 0);
   return Math.max(0, Math.min(card.totalMarks, total));
@@ -1249,6 +1260,10 @@ const IrishRubricPanel: React.FC<{
     if (criterion.guidanceKind === 'quality') return 'Published quality description';
     return 'Possible directions — not a checklist';
   };
+  // A listening sheet namespaces each card's criteria ("<card>/<criterion>") and labels them "<extract> · <box>":
+  // one run per extract, so the 2026 one-question cards of an announcement share its chip too.
+  const chipRun = (criterion: IrishCriterion) => (criterion.id.includes('/')
+    ? criterion.label.split(/\s+·\s+/).slice(0, -1).join(' · ') : '');
 
   const scoreControl = (criterion: IrishCriterion) => {
     const id = irishScoreId(criterion.id);
@@ -1265,6 +1280,7 @@ const IrishRubricPanel: React.FC<{
                 key={mark}
                 type="button"
                 aria-pressed={active}
+                aria-label={`Set ${criterion.label} to ${mark} marks`}
                 onClick={() => onScore(id, mark)}
                 style={{
                   minWidth: 34, height: 32, padding: '0 8px', borderRadius: 8,
@@ -1312,7 +1328,7 @@ const IrishRubricPanel: React.FC<{
               key={mark}
               type="button"
               onClick={() => onScore(id, mark)}
-              aria-label={`Set ${criterion.label} to ${mark}`}
+              aria-label={`Set ${criterion.label} to ${mark} marks`}
               style={{
                 border: 0, background: 'none', padding: '2px 0', color: LABEL,
                 font: `650 9.5px/1 ${MONO}`, cursor: 'pointer',
@@ -1382,7 +1398,7 @@ const IrishRubricPanel: React.FC<{
         </p>
 
         <div style={{ display: 'grid', gap: 10 }}>
-          {rubric.criteria.map(criterion => (
+          {rubric.criteria.map((criterion, index) => (
             <section key={criterion.id} style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}>
               <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
                 <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>
@@ -1392,13 +1408,17 @@ const IrishRubricPanel: React.FC<{
                   {criterion.kind === 'deduction' ? '0 to −' : '/ '}{criterion.maxMarks}
                 </span>
               </div>
-              <span style={{
-                display: 'inline-block', marginTop: 7, padding: '3px 6px', borderRadius: 5,
-                background: 'var(--mb-raised)', color: LABEL,
-                font: `750 8.5px/1.2 ${SANS}`, letterSpacing: '.075em', textTransform: 'uppercase',
-              }}>
-                {guidanceLabel(criterion)}
-              </span>
+              {/* One chip per run: an announcement's question boxes share one "Official answers" label. */}
+              {(index === 0 || guidanceLabel(rubric.criteria[index - 1]) !== guidanceLabel(criterion)
+                || chipRun(rubric.criteria[index - 1]) !== chipRun(criterion)) && (
+                <span style={{
+                  display: 'inline-block', marginTop: 7, padding: '3px 6px', borderRadius: 5,
+                  background: 'var(--mb-raised)', color: LABEL,
+                  font: `750 8.5px/1.2 ${SANS}`, letterSpacing: '.075em', textTransform: 'uppercase',
+                }}>
+                  {guidanceLabel(criterion)}
+                </span>
+              )}
               {criterion.allocation ? (
                 <div style={{ marginTop: 10 }}>
                   <IrishAllocationPanel
@@ -1974,7 +1994,9 @@ const listeningNumberedPrompts = (body: string): ListeningPromptGroup => {
   );
   const instruction = withInstruction?.[1].trim();
   const questionBlock = (withInstruction?.[2] ?? body).trim();
-  const questions = questionBlock.match(/[^?]+\?/g)?.map(question => question.trim()) ?? [];
+  // Each printed field ends at its "?", or at a "." where the paper prints a statement (2020 OL "Scríobh síos lá
+  // amháin … gach seachtain."), before the next field's capital.
+  const questions = questionBlock.split(/(?<=[?.])\s+(?=[A-ZÁÉÍÓÚ])/).map(question => question.trim()).filter(Boolean);
   return {
     instruction,
     prompts: (questions.length > 0 ? questions : [questionBlock]).map((text, index) => ({
@@ -2154,13 +2176,28 @@ const listeningCriterionId = (cardId: string, criterionId: string) =>
  * extracts which both use `eolas` can be placed independently on one screen.
  * This object is presentation-only; the commit path still writes every real id.
  */
-const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishListeningCard => {
+export const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishListeningCard => {
+  const shownDirections = new Set<string>();
   const first = cards[0];
+  const sourceDocuments = new Map<string, CardSourceMaterial>();
+  for (const card of cards) {
+    for (const source of [card.sourceMaterial, ...(card.additionalSourceMaterials ?? [])]) {
+      if (!source) continue;
+      const key = source.sourceFileid ?? card.paperFileid ?? '';
+      const existing = sourceDocuments.get(key);
+      sourceDocuments.set(key, { ...source,
+        pages: [...new Set([...(existing?.pages ?? []), ...source.pages])].sort((a, b) => a - b),
+      });
+    }
+  }
+  const sources = [...sourceDocuments.values()];
   const questionRef = sharedListeningLabel(cards.map(card => card.questionRef)) || first.questionRef;
   const audioLabel = sharedListeningLabel(cards.map(card => card.audioMaterial.label))
     || first.audioMaterial.label;
   return {
     ...first,
+    sourceMaterial: sources[0] ? { ...sources[0], label: audioLabel, title: first.audioMaterial.title } : undefined,
+    additionalSourceMaterials: sources.slice(1),
     questionRef,
     questionText: cards
       .map(card => `${listeningSectionLabel(card)}\n${card.questionText}`)
@@ -2178,7 +2215,11 @@ const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishListenin
       criteria: cards.flatMap(card => card.rubric.criteria.map(criterion => ({
         ...criterion,
         id: listeningCriterionId(card.id, criterion.id),
+        ...(criterion.deductFrom ? { deductFrom: listeningCriterionId(card.id, criterion.deductFrom) } : {}),
         label: `${listeningSectionLabel(card)} · ${criterion.label}`,
+        // The scheme's general note, repeated on every one-question card, is shown once on the sheet.
+        ...(criterion.allocation ? { allocation: { ...criterion.allocation,
+          directions: criterion.allocation.directions.filter(note => !shownDirections.has(note) && Boolean(shownDirections.add(note))) } } : {}),
       }))),
       markingGuideNote: [...new Set(cards.map(card => card.rubric.markingGuideNote))].join(' '),
     },
@@ -2618,8 +2659,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   if (!card || !assessmentCard) return null;
 
-  const levelLabel = assessmentCard.level === 'higher' ? 'HIGHER LEVEL'
-    : assessmentCard.level === 'common' ? 'COMMON LEVEL' : 'ORDINARY LEVEL';
+  const levelLabel = `${MARK_BANK_LEVEL_LABELS[assessmentCard.level].toUpperCase()} LEVEL`;
   const figure = 'figure' in assessmentCard ? assessmentCard.figure : undefined;
   const questionFigure = 'questionFigure' in assessmentCard ? assessmentCard.questionFigure : undefined;
   const printedQuestionReplacesText = Boolean(questionFigure && questionFigure.includesPrompt !== false);
@@ -2628,6 +2668,18 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     ...(sourceMaterial ? [sourceMaterial] : []),
     ...(assessmentCard.additionalSourceMaterials ?? []),
   ];
+  const sourceReaders = sourceMaterials.map((source, index) => {
+    const sourceFileid = source.sourceFileid ?? assessmentCard.paperFileid;
+    return sourceFileid ? (
+      <SourceMaterialReader
+        key={`${sourceFileid}-${source.label}-${index}`}
+        source={source}
+        subjectId={assessmentCard.subjectId}
+        year={assessmentCard.year}
+        paperFileid={sourceFileid}
+      />
+    ) : null;
+  });
   const audioMaterial = assessmentCard.audioMaterial;
   const labelKey = assessmentCard.kind === 'diagram' ? assessmentCard.labelKey : undefined;
 
@@ -2694,7 +2746,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             flexShrink: 1, minWidth: 0,
           }}>
             <span aria-hidden="true" style={{ display: 'inline-block', width: 7, height: 7, borderRadius: '50%', background: subjectColour, marginRight: 7 }} />
-            {subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : assessmentCard.level === 'common' ? 'CL' : 'OL'}
+            {subjectLabel} · {MARK_BANK_LEVEL_SHORT_LABELS[assessmentCard.level]}
           </span>
 
           <span style={{ flex: 1 }} />
@@ -2868,7 +2920,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em',
                 textTransform: 'uppercase', color: LABEL,
               }}>
-                {subjectLabel} · {levelLabel} · {assessmentCard.year} · {assessmentCard.questionRef.replace(/^\d{4}\s+(HL|OL)\s+/, '')}
+                {subjectLabel} · {levelLabel} · {assessmentCard.year} · {assessmentCard.questionRef.replace(/^\d{4}\s+(HL|OL|FL)\s+/, '')}
               </span>
               {/* Inverted chip: ink as the fill. The text must flip WITH it --
                   --mb-ink goes near-white in dark mode, so hard-coded white
@@ -2913,6 +2965,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             ) : audioMaterial ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
+                {sourceReaders}
                 <ListeningQuestionSet cards={listeningCards} />
               </>
             ) : assessmentCard.subjectId === 'french' && assessmentCard.questionChoices ? <>
@@ -2949,18 +3002,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             )}
 
             {paperLayout && assessmentCard.paperFileid && <a className="mb-original-paper" href={`/?view=innovation-zone&tool=paper-trail&subject=${encodeURIComponent(assessmentCard.subjectId)}&year=${assessmentCard.year}&level=${assessmentCard.level}&lang=ev&paper=${encodeURIComponent(assessmentCard.paperFileid.endsWith('.pdf')?assessmentCard.paperFileid:assessmentCard.paperFileid+'.pdf')}`} target="_blank" rel="noopener noreferrer">Open original paper ↗</a>}
-            {sourceMaterials.map((source, index) => {
-              const sourceFileid = source.sourceFileid ?? assessmentCard.paperFileid;
-              return sourceFileid ? (
-                <SourceMaterialReader
-                  key={`${sourceFileid}-${source.label}-${index}`}
-                  source={source}
-                  subjectId={assessmentCard.subjectId}
-                  year={assessmentCard.year}
-                  paperFileid={sourceFileid}
-                />
-              ) : null;
-            })}
+            {/* Irish listening cards show their readers beside the recording, above. */}
+            {!(audioMaterial && !printedQuestionReplacesText && assessmentCard.subjectId !== 'french') && sourceReaders}
 
             {answerVariants.length > 0 && (
               <fieldset style={{

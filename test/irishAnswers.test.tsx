@@ -23,18 +23,21 @@ const byId = (id: string): SecRubricCard => {
   if (!card) throw new Error(`no card ${id}`);
   return card;
 };
-const allocationOf = (id: string): IrishAllocation => {
-  const card = byId(id);
-  const allocation = card.rubric.system === 'irish' ? card.rubric.criteria[0].allocation : undefined;
-  if (!allocation) throw new Error(`${id} is not structured`);
-  return allocation;
-};
 const parts = (allocation: IrishAllocation) =>
   allocation.parts.map(part => [part.prompt, part.tariff, part.ladder, part.rows.map(row => [row.text, row.marks])]);
+// A reviewed listening card marks each printed question as its own criterion; its parts, read in printed order.
+const cardParts = (id: string) => {
+  const card = byId(id);
+  if (card.rubric.system !== 'irish') throw new Error(`${id} is not Irish`);
+  return card.rubric.criteria.flatMap(criterion => {
+    if (!criterion.allocation) throw new Error(`${id} ${criterion.id} is not structured`);
+    return parts(criterion.allocation);
+  });
+};
 
 describe('Irish scheme text becomes sub-questions and rows', () => {
   it('cuts a Higher listening fógra at its prices: prompt + tariff, answers at "= N mharc"', () => {
-    expect(parts(allocationOf('irish-2021-hl-p1-listening-a-f1'))).toEqual([
+    expect(cardParts('irish-2021-hl-p1-listening-a-f1')).toEqual([
       ['1. Cad atá á lorg ag Ollscoil na hÉireann, Gaillimh?', 2, undefined, [['Oifigeach Gaeilge', 2], ['Oifigeach', 1]]],
       ['2. Cén dualgas a bheidh ar an duine a cheapfar?', 2, undefined, [
         ['Imeachtaí a eagrú a chuirfidh an Ghaeilge chun cinn', 2], ['Imeachtaí a eagrú', 1],
@@ -48,8 +51,9 @@ describe('Irish scheme text becomes sub-questions and rows', () => {
   });
 
   it('reads an Ordinary grid where the answer comes before its tariff', () => {
-    expect(parts(allocationOf('irish-2021-ol-p1-listening-a-f1'))).toEqual([
-      ['Líon isteach an t-eolas atá á lorg sa ghreille anseo. Cén ollscoil a chuir amach an fógra seo?', 3, undefined,
+    expect(cardParts('irish-2021-ol-p1-listening-a-f1')).toEqual([
+      // Each grid question is its own criterion since the 2021 Ordinary review; the grid's lead-in is the card's question.
+      ['Cén ollscoil a chuir amach an fógra seo?', 3, undefined,
         [['(Ollscoil) na hÉireann, Gaillimh', 3], ['Gaillimh', 3], ['Éireann/Éirinn/Éire', 2]]],
       ['Cén cineál Gaeilge atá riachtanach don phost seo?', 3, undefined, [['Líofa', 3]]],
       ['Cén tuarastal a gheobhaidh an duine a cheapfar?', 3, undefined, [['€30,000', 3], ['Tríocha míle', 3], ['30,000', 3]]],
@@ -58,45 +62,58 @@ describe('Irish scheme text becomes sub-questions and rows', () => {
   });
 
   it('reads reading braces: "{3 mharc}" prices bullets, "3 mharc + 2 mharc = 5 mharc" is a ladder with rules as directions', () => {
-    const higher = allocationOf('irish-2021-hl-p2-reading-a-q1');
-    expect(higher.parts.map(part => [part.tariff, part.rows.length])).toEqual([[3, 2], [2, 4], [2, 2]]);
-    expect(higher.parts[0].rows[0]).toMatchObject({ marks: 3 });
-    const ordinary = allocationOf('irish-2021-ol-p2-reading-b-q1');
-    expect(ordinary.parts.map(part => [part.tariff, part.ladder, part.rows.length])).toEqual([[5, [3, 5], 2], [5, [3, 5], 4]]);
-    expect(ordinary.directions).toEqual([
+    // The 2021 Higher reading questions mark each printed part as its own criterion since their paper review.
+    const higher = byId('irish-2021-hl-p2-reading-a-q1');
+    const higherParts = (higher.rubric.system === 'irish' ? higher.rubric.criteria : []).flatMap(criterion => criterion.allocation?.parts ?? []);
+    expect(higherParts.map(part => [part.tariff, part.rows.length])).toEqual([[3, 2], [2, 4], [2, 2]]);
+    expect(higherParts[0].rows[0]).toMatchObject({ marks: 3 });
+    // The 2021 Ordinary reading questions too: each lettered part its own criterion, its 3 + 2 ladder and rules.
+    const ordinary = byId('irish-2021-ol-p2-reading-b-q1');
+    const ordinaryCriteria = ordinary.rubric.system === 'irish' ? ordinary.rubric.criteria : [];
+    expect(ordinaryCriteria.map(criterion => criterion.allocation!.parts.map(part => [part.tariff, part.ladder, part.rows.length])))
+      .toEqual([[[5, [3, 5], 2]], [[5, [3, 5], 4]]]);
+    expect(ordinaryCriteria.flatMap(criterion => criterion.allocation!.directions)).toEqual(expect.arrayContaining([
       'An chéad ghaisce atá ceart', 'an dara gaisce atá ceart', 'An chéad chúis mhórtais atá ceart', 'an dara cúis mhórtais atá ceart',
-    ]);
+    ]));
   });
 
-  it('keeps the language rule as a direction and stops where the excerpt runs into the next section', () => {
-    const allocation = allocationOf('irish-2022-hl-p1-listening-c-p2');
-    expect(allocation.directions).toEqual(['Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.']);
-    expect(allocation.parts).toHaveLength(3);
-    expect(allocation.parts.flatMap(part => part.rows).some(row => /Roinn ar an bpáipéar/.test(row.text))).toBe(false);
+  it('stops where the excerpt runs into the next section; the section-level language rule is the card note', () => {
+    // The 2022 Higher listening review gives each printed question its own criterion; the scheme's 0-3 deduction
+    // applies to the whole section once, so it is the card's note, never a row or a per-question direction.
+    const card = byId('irish-2022-hl-p1-listening-c-p2');
+    if (card.rubric.system !== 'irish') throw new Error('not irish');
+    expect(card.rubric.criteria.map(criterion => criterion.id)).toEqual(['q1', 'q2', 'q3']);
+    const rows = card.rubric.criteria.flatMap(criterion => criterion.allocation?.parts.flatMap(part => part.rows) ?? []);
+    expect(rows.length).toBeGreaterThan(0);
+    expect(rows.some(row => /Roinn ar an bpáipéar|Bainfear ó 0 go 3/.test(row.text))).toBe(false);
+    expect(card.rubric.markingGuideNote).toContain('Bainfear ó 0 go 3 ar chaighdeán na Gaeilge.');
   });
 
-  it('leaves alone an excerpt whose bullets the ladder prices unpriced; the Q6 composite tariff is read by tariffs.ts', () => {
-    // irish-2022-hl-p2-reading-a-q2 started mid-question until irish_excerpts.py re-cut it across its pages.
+  it('cuts an excerpt per printed part once its paper is reviewed; the Q6 composite tariff is read by tariffs.ts', () => {
+    // The 2021 Ordinary A Q2 had no rows on main: its whole-question excerpt priced unpriced bullets under one
+    // ladder. Reviewed, each part is its own criterion and cuts its own 3 + 2 ladder over the printed answers.
     const card = byId('irish-2021-ol-p2-reading-a-q2');
     if (card.rubric.system !== 'irish') throw new Error('not irish');
-    expect(card.rubric.criteria[0].allocation).toBeUndefined();
-    expect(parseIrishAnswers({ id: card.id, totalMarks: 10, questionRef: card.questionRef, questionText: card.questionText, guidance: card.rubric.criteria[0].guidance }).ok).toBe(false);
+    expect(card.rubric.criteria.map(criterion => [criterion.id, criterion.allocation?.parts.map(part => part.ladder)]))
+      .toEqual([['a', [[3, 5]]], ['b', [[3, 5]]]]);
+    expect(parseIrishAnswers({ id: card.id, totalMarks: 5, questionRef: card.questionRef, questionText: card.questionText, guidance: card.rubric.criteria[0].guidance }).ok).toBe(true);
+    // Since the 2021 Higher paper review, Q6 marks (a) and each 6(b) trait as its own criterion, each with rows.
     const q6 = byId('irish-2021-hl-p2-reading-a-q6');
     if (q6.rubric.system !== 'irish') throw new Error('not irish');
-    expect(q6.rubric.criteria[0].allocation?.parts.map(part => part.tariff)).toEqual([3, 12]);
+    expect(q6.rubric.criteria.map(criterion => [criterion.id, criterion.allocation?.parts.map(part => part.tariff)]))
+      .toEqual([['grammar', [3]], ['trait-1', [6]], ['trait-2', [6]]]);
   });
 });
 
 describe('Irish rows score', () => {
   it('adds the highest claims per sub-question up to its tariff, and ladders by rows ticked', () => {
+    // The 2021 Higher Fógra a hAon marks each printed question as its own criterion (q1, q2, q3), one part each.
     const card = byId('irish-2021-hl-p1-listening-a-f1');
-    const criterion = card.rubric.system === 'irish' ? card.rubric.criteria[0] : undefined;
-    if (!criterion) throw new Error('not irish');
-    const claim = (ids: [string, string][]) => Object.fromEntries(ids.map(([part, row]) => [irishRowScoreId(criterion.id, part, row), 1]));
-    expect(irishMarks(card, claim([['p1', 'r1']]))).toBe(2);
-    expect(irishMarks(card, claim([['p1', 'r2'], ['p2', 'r2']]))).toBe(2);
-    expect(irishMarks(card, claim([['p3', 'r1'], ['p3', 'r2'], ['p3', 'r3']]))).toBe(4);
-    expect(irishMarks(card, claim([['p1', 'r1'], ['p2', 'r1'], ['p3', 'r1'], ['p3', 'r4']]))).toBe(7);
+    const claim = (ids: [string, string][]) => Object.fromEntries(ids.map(([criterion, row]) => [irishRowScoreId(criterion, 'p1', row), 1]));
+    expect(irishMarks(card, claim([['q1', 'r1']]))).toBe(2);
+    expect(irishMarks(card, claim([['q1', 'r2'], ['q2', 'r2']]))).toBe(2);
+    expect(irishMarks(card, claim([['q3', 'r1'], ['q3', 'r2'], ['q3', 'r3']]))).toBe(4);
+    expect(irishMarks(card, claim([['q1', 'r1'], ['q2', 'r1'], ['q3', 'r1'], ['q3', 'r4']]))).toBe(7);
     const ladder = byId('irish-2021-ol-p2-reading-b-q1');
     const ladderCriterion = ladder.rubric.system === 'irish' ? ladder.rubric.criteria[0] : undefined;
     if (!ladderCriterion) throw new Error('not irish');

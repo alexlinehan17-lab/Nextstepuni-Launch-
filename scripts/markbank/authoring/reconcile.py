@@ -40,7 +40,7 @@ import sys
 import subprocess
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from paper_census import SUBJECTS, census_subject, key_label  # noqa: E402
+from paper_census import SUBJECTS, census_subject, irish_manifest_files, key_label  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -157,6 +157,12 @@ def shipped_cards(subject):
                 if published['cardCount'] != len(published['cards']):
                     raise AssertionError(f"english published {published['level']} manifest count is stale")
                 shipped += [(card['id'], card['questionRef']) for card in published['cards']]
+        if subject == 'irish':
+            # The reviewed paper components ship beside authored.json; the
+            # deck is all of them, so the ledger reads all of them.
+            for name in irish_manifest_files()[1:]:
+                more = json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8'))
+                shipped += [(card['id'], card['questionRef']) for card in more['cards']]
         return shipped
 
     out = []
@@ -765,8 +771,10 @@ def content_hash(subject):
             # Scheme lines the lifted block lost are restored from the PDF at load.
             names += ['corrections.ts', 'corrections.json']
         if subject == 'irish':
-            # Listening/reading answers and literature tariffs are cut into rows at load.
-            names += ['answers.ts', 'tariffs.ts']
+            # Every manifest factory.ts imports, so a card gutted inside a
+            # reviewed component file trips the pin too; listening/reading
+            # answers and literature tariffs are cut into rows at load.
+            names += [*irish_manifest_files()[1:], 'answers.ts', 'tariffs.ts']
         if subject == 'accounting':
             # The priced lines a student claims are lifted from the scheme PDF (acc_rows.py).
             names += ['rows.json']

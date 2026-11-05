@@ -1,0 +1,307 @@
+{
+  "year": 2018,
+  "level": "ordinary",
+  "paperFileid": "LC001GLP200IV.pdf",
+  "schemeFileid": "LC001GLP000IV.pdf",
+  "paperSha256": "197c9864592999a477854dfb25c157f451ebc33370d70b11c7c70f7cb14bbab6",
+  "schemeSha256": "53ed52f631d106673b1414040b0f9bae217434712b1c2984e2e03338f84f7ced",
+  "reviewDate": "2026-11-04",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "reviewedSchemePages": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "schemeScope": "Combined Ordinary scheme. PDF 13–15 Léamhthuiscint A (with the Paper 2 heading and note, and its mark boxes); 16–18 Léamhthuiscint B; 19–21 Prós Ainmnithe (2A); 22 Prós Roghnach (2B); 23–24 Filíocht Ainmnithe (3A); 25–26 Filíocht Roghnach (3B); 27 modified marking (SMM; 28 is its Paper 1 table). PDF 1–12 belong to Paper 1; 29–32 are blank.",
+  "reviewMethod": "Every paper page (1–3 cover and instructions, 4–7 the two reading passages, 8–12 literature) and every applicable scheme page read in the text layer and checked against the printed page; each prompt and scheme slice is asserted against the PDFs by the builder.",
+  "selectionDecisions": [
+    {
+      "page": 3,
+      "raw": "FREAGAIR GACH CEIST (1, 2 AGUS 3).",
+      "decision": "Paper structure: every question (Ceist 1, 2 and 3) is required; Ceist 2 and Ceist 3 each offer A or B (classified on pages 8 and 10)."
+    },
+    {
+      "page": 3,
+      "raw": "nó",
+      "decision": "Names the alternative section in the instructions box (A or B); the choice itself is classified on pages 8 and 10."
+    },
+    {
+      "page": 3,
+      "raw": "ROGHNACH (B) (lch 9)",
+      "decision": "Page guide naming where each optional section is printed; not a task."
+    },
+    {
+      "page": 3,
+      "raw": "ROGHNACH (B) (lch 12)",
+      "decision": "Page guide naming where each optional section is printed; not a task."
+    },
+    {
+      "page": 4,
+      "raw": "Freagair A agus B anseo.",
+      "decision": "Both reading passages and every question in each are required; each printed (a)/(b) part is its own 5-mark practice card beside the whole question."
+    },
+    {
+      "page": 4,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Required reading instruction: every question on the passage is answered; no selection."
+    },
+    {
+      "page": 4,
+      "raw": "anois. Bíonn rogha mhaith ábhar agus clár",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 5,
+      "raw": "1. (a) Scríobh síos dhá chúis a raibh blianta deacra ag muintir na hÉireann nuair a tharla an cúlú",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2); the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 5,
+      "raw": "(b) Scríobh síos dhá phíosa eolais faoi ‘Stripe’, an córas íocaíochta ar líne. (Alt 2)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2); the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 5,
+      "raw": "(b) Tabhair dhá bhealach ar féidir le scoláirí a dtallanna a fhorbairt taobh amuigh den seomra",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2); the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 5,
+      "raw": "(b) Tabhair dhá shampla d’úsáid na Gaeilge ar líne. (Alt 4)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2); the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 5,
+      "raw": "5. (a) Scríobh síos dhá cheann de na fadhbanna atá sa tír fós. (Alt 5)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2); the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an sliocht seo a leanas agus freagair na ceisteanna ar fad a ghabhann leis.",
+      "decision": "Required reading instruction: every question on the passage is answered; no selection."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Scríobh síos dhá phíosa eolais faoin rud neamhghnách a tharla do Chaitríona in oifig",
+      "decision": "Two required points inside one printed reading part priced first correct 3, second 2 (“An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc” under 5 mharc); the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 7,
+      "raw": "3. (a) Luaigh dhá chúis a raibh saol oibre Chaitríona i Meiriceá deacair. (Alt 3)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2); the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Tabhair dhá chúis ar bhuaigh Trump toghchán na huachtaránachta, de réir an chuntais",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2); the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 7,
+      "raw": "(b) Scríobh síos dhá rud a dhéanann Caitríona nuair a bhíonn am saor aici. (Alt 5)",
+      "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2); the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 8,
+      "raw": "PRÓS – AINMNITHE nó ROGHNACH (50 marc)",
+      "decision": "Boxed question heading naming both sections (A or B); the choice is classified on the next line."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair A (Prós Ainmnithe) nó B (Prós Roghnach).",
+      "decision": "Closed choose-one of two sections (A prescribed or B optional); each section’s printed questions are their own cards, and the instruction is each card’s task check. Choice is not a route: no combination cards."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair (a) agus (b) anseo.",
+      "decision": "Both printed questions of the section are required; each is its own 25-mark card with its own Gaeilge deduction."
+    },
+    {
+      "page": 8,
+      "raw": "Freagair na ceisteanna thíos faoin scéal béaloidis Oisín i dTír na nÓg.",
+      "decision": "Required: every printed sub-question of 2A(a) Oisín i dTír na nÓg; each is also a practice card."
+    },
+    {
+      "page": 8,
+      "raw": "Tabhair dhá rud a d’inis Niamh Chinn Óir d’Oisín faoi Thír na nÓg.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá rud = 3 mharc + 2 mharc”) and lists sample points as the answer key for one task."
+    },
+    {
+      "page": 8,
+      "raw": "Scríobh síos dhá rud a tharla chomh luath agus a shroich Niamh Chinn Óir agus Oisín",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá rud = 3 mharc + 2 mharc”) and lists sample points as the answer key for one task."
+    },
+    {
+      "page": 8,
+      "raw": "Luaigh dhá chúis ar mhaith le Naomh Pádraig Oisín a thabhairt leis ar a thurais ar fud",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá rud = 3 mharc + 2 mharc”) and lists sample points as the answer key for one task."
+    },
+    {
+      "page": 9,
+      "raw": "Níl cead aon ábhar a bhaineann le Prós Ainmnithe a úsáid sna freagraí ar an bPrós Roghnach.",
+      "decision": "Restriction on content, not a route; it is the section cards’ printed lead-in and is in their task checks."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair (a) agus (b) anseo.",
+      "decision": "Both printed questions of the section are required; each is its own 25-mark card with its own Gaeilge deduction."
+    },
+    {
+      "page": 9,
+      "raw": "Maidir le scéal béaloidis roghnach a ndearna tú staidéar air le linn do chúrsa, ainmnigh",
+      "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route."
+    },
+    {
+      "page": 9,
+      "raw": "Maidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, tabhair cuntas",
+      "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route."
+    },
+    {
+      "page": 9,
+      "raw": "B – PRÓS ROGHNACH –",
+      "decision": "Boxed section heading naming the section, not a separate route; it leads in to the section’s cards."
+    },
+    {
+      "page": 10,
+      "raw": "FILÍOCHT – AINMNITHE nó ROGHNACH (50 marc)",
+      "decision": "Boxed question heading naming both sections (A or B); the choice is classified on the next line."
+    },
+    {
+      "page": 10,
+      "raw": "Freagair A (Filíocht Ainmnithe) nó B (Filíocht Roghnach).",
+      "decision": "Closed choose-one of two sections (A prescribed or B optional); each section’s printed questions are their own cards, and the instruction is each card’s task check. Choice is not a route: no combination cards."
+    },
+    {
+      "page": 10,
+      "raw": "Freagair (a) agus (b) anseo.",
+      "decision": "Both printed questions of the section are required; each is its own 25-mark card with its own Gaeilge deduction."
+    },
+    {
+      "page": 10,
+      "raw": "(d) Scríobh síos rud amháin a deir an file faoi ghruaig an fhir.",
+      "decision": "One required answer: the fourth of the four printed questions inside 3A(a)(i) Mo ghrá-sa (idir lúibíní); the scheme prices it (2 mharc) and lists sample answers as the key for one task."
+    },
+    {
+      "page": 10,
+      "raw": "Scríobh síos an mothúchán is láidre sa dán, dar leat. Tabhair dhá shampla, i d’fhocail",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá rud = 3 mharc + 2 mharc”) and lists sample points as the answer key for one task."
+    },
+    {
+      "page": 10,
+      "raw": "An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá rud = 3 mharc + 2 mharc”) and lists sample points as the answer key for one task."
+    },
+    {
+      "page": 10,
+      "raw": "(nó ar chrann ar bith)",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
+      "page": 11,
+      "raw": "Tabhair dhá phointe eolais, i d’fhocail féin, faoin mothúchán sin sna línte 1‐8.",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá rud = 3 mharc + 2 mharc”) and lists sample points as the answer key for one task."
+    },
+    {
+      "page": 11,
+      "raw": "sna línte 9‐12 den dán. (Is leor dhá phointe eolais.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá rud = 3 mharc + 2 mharc”) and lists sample points as the answer key for one task."
+    },
+    {
+      "page": 11,
+      "raw": "(Is leor dhá phointe eolais i d’fhocail féin.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá rud = 3 mharc + 2 mharc”) and lists sample points as the answer key for one task."
+    },
+    {
+      "page": 12,
+      "raw": "B – FILÍOCHT ROGHNACH – (50 marc)",
+      "decision": "Boxed section heading naming the section, not a separate route; it leads in to the section’s cards."
+    },
+    {
+      "page": 12,
+      "raw": "Roghnach.",
+      "decision": "Last word of the printed restriction (“… ar an bhFilíocht Roghnach.”); restriction on content, not a route; it is the section cards’ printed lead-in and is in their task checks."
+    },
+    {
+      "page": 12,
+      "raw": "Freagair (a) agus (b) anseo.",
+      "decision": "Both printed questions of the section are required; each is its own 25-mark card with its own Gaeilge deduction."
+    },
+    {
+      "page": 12,
+      "raw": "Maidir le dán roghnach nua‐aimseartha amháin a ndearna tú staidéar air le linn do",
+      "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route."
+    },
+    {
+      "page": 12,
+      "raw": "chúrsa, scríobh síos príomhthéama an dáin sin, dar leat. Tabhair dhá phointe eolais,",
+      "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route."
+    },
+    {
+      "page": 12,
+      "raw": "Scríobh síos an mothúchán is láidre sa dán, dar leat. Tabhair dhá shampla den",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá rud = 3 mharc + 2 mharc”) and lists sample points as the answer key for one task."
+    },
+    {
+      "page": 12,
+      "raw": "An maith leat an dán seo? Cuir fáthanna le do fhreagra. (Is leor dhá fháth.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá rud = 3 mharc + 2 mharc”) and lists sample points as the answer key for one task."
+    },
+    {
+      "page": 12,
+      "raw": "(Is leor dhá phointe eolais.)",
+      "decision": "Two required points inside one printed literature sub-question; the scheme prices them together (e.g. “Dhá rud = 3 mharc + 2 mharc”) and lists sample points as the answer key for one task."
+    },
+    {
+      "page": 12,
+      "raw": "Cén t‐atmaisféar atá sa dán seo, dar leat? Scríobh síos dhá phointe eolais, i d’fhocail",
+      "decision": "Required content inside one optional question (open text chosen by the candidate); kept whole with its printed allocations, not a route."
+    }
+  ],
+  "nonPoolDecisions": [
+    "Reading: all ten questions are required; each printed (a)/(b) part is a 5-mark practice card beside the whole question. Two-point items (“3 mharc + 2 mharc”, or Reading B 1(b)’s “An chéad … = 3 mharc; an dara … = 2 mharc”) are order-dependent (first correct point 3, second 2) and stay whole at 0/3/5; single answers allow 0/5, or 0/3/5 where the scheme prints a 3-mark partial answer.",
+    "Reading language: “Gaeilge lochtach: 0 - 5 a bhaint den iomlán a gnóthaíodh” is one deduction from each 50-mark passage total; cards state it without applying it inside a part.",
+    "Prescribed prose (2A): (a) Oisín i dTír na nÓg prints five sub-questions the scheme prices at 5 each: the whole question is a 25-mark card and every sub-question is also a practice card. (b) Dís is one 25-mark question (five points at 2 + 3).",
+    "Prescribed poetry (3A): each poem is a whole 25-mark card with its printed tariffs ((a) Mo ghrá-sa (idir lúibíní): (i) 8, (ii) 9, (iii) 8; (b) Géibheann: (i) 9, (ii) 8, (iii) 8) and one 0–4 Gaeilge deduction; every printed sub-question is also a practice card. 3A(a)(i) prints four questions (a)–(d) at 2 each: the sub-question keeps 0/2/4/6/8 and each question is its own practice card.",
+    "Optional prose (2B) and optional poetry (3B) stay whole: the text is open content chosen by the candidate. 3B(b) asks for a modern poem not used in 3B(a).",
+    "Choice is not a route: Ceist 2 and Ceist 3 are each A or B; each printed question is one card carrying the printed choice and “Freagair (a) agus (b) anseo.”; no combination cards.",
+    "Literature language: “Gaeilge lochtach: 0-4 a bhaint den iomlán a gnóthaíodh” is one deduction from each 25-mark question, never inside one sub-question."
+  ],
+  "sourceFindings": [
+    "Paper 2 = 200: Ceist 1 reading 100 (A Éire an Lae Inniu 50, B Caitríona Perry: Craoltóir, Láithreoir agus Údar 50; ten questions at (a) 5 + (b) 5 each), Ceist 2 prose 50 (A Prós Ainmnithe: (a) Oisín i dTír na nÓg 25 + (b) Dís 25; or B Prós Roghnach: (a) scéal béaloidis 25 + (b) gearrscéal 25), Ceist 3 poetry 50 (A Filíocht Ainmnithe: (a) Mo ghrá-sa (idir lúibíní) 25 + (b) Géibheann 25; or B Filíocht Roghnach: (a) 25 + (b) 25).",
+    "The scheme’s text layer stores nine boxed headings with the page body (“CEIST 1 (A + B) - LÉAMHTHUISCINT - 100 marc”, “A – (50 marc)”, “B – (50 marc)”, the CEIST 2/3 and section boxes); the builder removes those exact strings (count pinned).",
+    "Each reading passage prints one note above Ceist 1 (“Nóta: Má tá dhá phointe eolais i gceist, tá 3 mharc ar an gcéad cheann atá ceart agus 2 mharc ar an dara ceann atá ceart.”), carried with every part’s key; the penalty note (“Nóta: Gearrfar pionós i ngeall ar iomarcaíocht. Léireofar an pionós …”) and the mark boxes close each passage, and the last part’s key ends before them.",
+    "Reading B Ceist 1(b) prices its two points under a bare “5 mharc” (“An chéad phíosa eolais atá ceart = 3 mharc; an dara píosa eolais atá ceart = 2 mharc”), without “3 mharc + 2 mharc =”; it is a 0/3/5 part like the other two-point parts.",
+    "Each literature answer ends with “[Gaeilge lochtach: 0-4 …]” (eight, all alike); the deduction is its own criterion. Unlike 2020, the 2018 scheme prints no “Léirigh mionbhriseadh na marcanna” mark-panel line.",
+    "2018 2B(b) (gearrscéal roghnach) prices its account as one block, “5 phointe eolais ag teastáil (5 mharc an ceann ar an gcéad trí phointe eolais + 4 mharc an ceann ar an dá phointe eolais eile) (23 marc)”, with no separate theme mark (2020’s 2B(a) had one); title 1 + author 1.",
+    "3A(a)(i) Mo ghrá-sa prints four questions (a)–(d), each “(2 mharc) Freagraí Samplacha: …” with the verse it draws on (“Véarsa a haon, Línte 3 + 4 = 2 mharc”).",
+    "The scheme’s Dís quotation prints “Toradh surbhé a deineadh”; the paper prints “Toradh suirbhé a deineadh”. The card’s question is the paper’s print; the scheme slice is lifted as printed.",
+    "The paper prints “‐” (U+2010) in “nua‐aimseartha”, “1‐8”, “t‐ainmhí” and “Mo ghrá‐sa”; cards print the ASCII hyphen, as the scheme does.",
+    "No 2018 Ordinary card existed before this review; the 53 cards are new."
+  ],
+  "remainingWork": []
+}

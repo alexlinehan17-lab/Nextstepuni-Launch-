@@ -37,7 +37,6 @@ import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geogra
 import { FRENCH_LISTENING_CARDS } from '../components/MarkBank/cards/french/listening';
 import { FRENCH_READING_CARDS } from '../components/MarkBank/cards/french/reading';
 import { FRENCH_CLOZE_CARDS } from '../components/MarkBank/cards/french/cloze';
-import irish from '../components/MarkBank/cards/irish/authored.json';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import politics from '../components/MarkBank/cards/politics-and-society/authored.json';
@@ -246,9 +245,13 @@ describe('answer clarity: priced answers are rows, not prose', () => {
 
   it('Irish: listening and reading answers are rows; what is still welded prose is pinned by shape', () => {
     const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9áéíóú’'-]+/g, '');
-    const exact = [...IRISH_HIGHER, ...IRISH_ORDINARY].filter(card =>
-      card.rubric.system === 'irish' && /Cluastuiscint|Léamhthuiscint/.test(card.questionRef));
-    const structured = exact.filter(card => card.rubric.system === 'irish' && card.rubric.criteria[0].allocation);
+    const irishCards = [...IRISH_HIGHER, ...IRISH_ORDINARY].flatMap(card => card.rubric.system === 'irish' ? [{ card, criteria: card.rubric.criteria }] : []);
+    // The 2026 Paper 1 question cards cite the extract itself ("Cuid A · Fógra a hAon · Ceist 1(a)").
+    const exact = irishCards.filter(({ card }) => /Cluastuiscint|Léamhthuiscint|Paper 1 Cuid [ABC] · (?:Fógra|Comhrá|Píosa)/.test(card.questionRef));
+    // A reviewed card keeps one criterion per printed question (the listening sheet's eight questions, a
+    // poem's (i), (ii) and (iii)), so every priced criterion is checked, not only the card's first.
+    const priced = (criterion: { guidanceKind: string; guidance: string[] }) =>
+      criterion.guidanceKind !== 'quality' && criterion.guidance.some(line => /\d+\s*m?h?arc\b/.test(line));
     // Every row, prompt, sample and direction is a slice of the scheme's guidance or the
     // paper's question; a row that carries the answer the scheme printed for it
     // ("Ainm an fhile: Caitlín Maude") is two slices.
@@ -282,44 +285,33 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         expect(lifted(note), `${card.id}: direction "${note.slice(0, 40)}" is not lifted`).toBe(true);
       }
     };
-    for (const card of structured) {
-      if (card.rubric.system !== 'irish') continue;
-      checkAllocation(card, card.rubric.criteria[0]);
-    }
-    expect(exact).toHaveLength(180);
-    // 136 before irish_excerpts.py re-cut the reading excerpts across their pages and
-    // tariffs.ts read the last question's composite tariff.
-    expect(structured).toHaveLength(173);
+    for (const { card, criteria } of irishCards) for (const criterion of criteria) if (criterion.allocation) checkAllocation(card, criterion);
+    const unstructured = (criteria: typeof irishCards[number]['criteria']) => criteria.some(criterion => priced(criterion) && !criterion.allocation);
+    expect(exact).toHaveLength(1321);
+    const structured = exact.filter(({ criteria }) => !unstructured(criteria));
+    expect(structured).toHaveLength(1321);
 
-    // What is still prose, pinned by id: four reading excerpts whose answers the
-    // scheme prices in a shape answers.ts does not read yet (unpriced bullets under
-    // a ladder, a section total inside the excerpt) and three listening extracts
-    // whose tariff lines the text layer broke. Fix one and take it off this list.
-    const fallback = exact.filter(card => card.rubric.system === 'irish' && !card.rubric.criteria[0].allocation);
-    expect(fallback.map(card => card.id).sort()).toEqual([
-      'irish-2021-ol-p2-reading-a-q2', 'irish-2021-ol-p2-reading-b-q5', 'irish-2022-hl-p1-listening-a-f1', 'irish-2022-hl-p2-reading-b-q1',
-      'irish-2022-hl-p2-reading-b-q5', 'irish-2023-ol-p1-listening-b-c2', 'irish-2024-ol-p1-listening-b-c1',
-    ]);
+    // Nothing listening or reading is still prose. The archive review cuts one criterion per printed part, so the five
+    // cards that had no rows on main have them: the 2022 Higher Fógra a hAon (tariff lines the text layer broke),
+    // 2022 Higher Léamhthuiscint B Q1 and Q5 (a price inside the qualifier's brackets, a split printed before the
+    // brace) and 2021 Ordinary A Q2 and B Q5 (unpriced bullets under one whole-question ladder). Every reviewed
+    // practice card carries the rows of its printed scheme.
+    // Fix one and take it off this list.
+    const fallback = exact.filter(({ criteria }) => unstructured(criteria));
+    expect(fallback.map(({ card }) => card.id).sort()).toEqual([]);
 
     // Literature: the Eolas criterion prices what the student must do ("Príomhthéama = 2 mharc",
     // "Dhá phointe eolais = 4 mharc + 4 mharc", "Tréith 1 = 13 mharc" under a band table) and
     // tariffs.ts cuts that into rows and steps; the sample points stay a list under each part.
-    const literature = [...IRISH_HIGHER, ...IRISH_ORDINARY].filter(card => card.rubric.system === 'irish' && /Prose|Poetry|Literature/.test(card.questionRef));
-    expect(literature).toHaveLength(130);
-    const eolas = literature.map(card => ({ card, criterion: card.rubric.system === 'irish' ? card.rubric.criteria.find(criterion => criterion.guidanceKind === 'indicative')! : undefined! }));
-    expect(eolas.filter(({ criterion }) => criterion.guidance.some(line => /\d+\s*m?h?arc/.test(line)))).toHaveLength(130);
-    const literatureStructured = eolas.filter(({ criterion }) => criterion.allocation);
-    for (const { card, criterion } of literatureStructured) checkAllocation(card, criterion);
-    expect(literatureStructured).toHaveLength(127);
-    // An option whose tariff summary the parser does not read yet, pinned by id.
-    expect(eolas.filter(({ criterion }) => !criterion.allocation).map(({ card }) => card.id).sort()).toEqual([
-      'irish-2022-hl-p2-poetry-3b-a', 'irish-2023-ol-p2-prose-2b-c', 'irish-2025-ol-p2-poetry-3a-a',
-    ]);
-    // Every other exact criterion (the 45 Ordinary composition "Tasc" 0/2
-    // tariffs) is already a button; the welded ones above are the residue.
-    const welded = cardsOf(irish).reduce((count, card) =>
-      count + (card.criteria ?? []).filter(criterion => criterion.guidanceKind === 'exact').length, 0)
-      - structured.length;
+    const literature = irishCards.filter(({ card }) => /Prose|Poetry|Literature|Prós|Filíocht|Litríocht/.test(card.questionRef));
+    expect(literature).toHaveLength(508);
+    // Every literature option's priced parts cut into rows. The last, 2025 Ordinary 3A(a)(i) (rowless on main), cuts
+    // its "(2 mharc) Freagraí: …" sub-question list like its practice cards (cards/irish/factory.ts, freagraiAllocation).
+    expect(literature.filter(({ criteria }) => unstructured(criteria)).map(({ card }) => card.id).sort()).toEqual([]);
+    // Every other exact criterion (the Ordinary composition "Tasc" 0/2 tariffs) is already a button;
+    // the welded ones are the exact criteria above that are still prose.
+    const welded = irishCards.flatMap(({ criteria }) => criteria)
+      .filter(criterion => criterion.guidanceKind === 'exact' && !criterion.allocation && priced(criterion)).length;
     expect(welded).toBeLessThanOrEqual(BASELINE.irishExactCriteria);
   });
 
@@ -787,7 +779,7 @@ describe('answer clarity: priced answers are rows, not prose', () => {
  *  number is the priced lines left in the 50 opinion cards above. */
 const BASELINE = {
   frenchReading: 1,
-  irishExactCriteria: 52,
+  irishExactCriteria: 23,
   physicalEducationLines: 0,
 };
 
