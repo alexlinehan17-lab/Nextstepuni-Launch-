@@ -54,6 +54,19 @@ def clean(year, level):
                 page = int(pm.group(1)) - 1
                 out.append(raw)
                 continue
+            # tech_crops.MD_LINE_FIX: a drawing's lettering the row rule
+            # cannot place (rotated, or welded onto prose), a tariff printed
+            # beside an answer's first line, a head set on its neighbour's
+            # line -- each one named, and each one only moves or removes.
+            fixed = raw
+            for pattern, repl in TC.MD_LINE_FIX.get((year, level), ()):
+                fixed = re.sub(pattern, repl, fixed)
+            if fixed != raw:
+                changes.append((page + 1, raw.strip(), fixed.strip()))
+                for part in fixed.split('\n'):
+                    if part.strip():
+                        out.append(part)
+                continue
             text = raw.strip()
             rects = TC.scheme_zones(year, level, page) if text else []
             if not rects or TARIFF.search(text) or BAND.search(text) \
@@ -64,9 +77,13 @@ def clean(year, level):
             if got is None or got == text:
                 out.append(raw)
                 continue
+            # The fixes once more on the stripped line, so a run over an
+            # already-cleaned .md does what a run over the raw one did.
+            for pattern, repl in TC.MD_LINE_FIX.get((year, level), ()):
+                got = re.sub(pattern, repl, got)
             changes.append((page + 1, text, got))
             if got:
-                out.append(got)
+                out.extend(part for part in got.split('\n') if part.strip())
     return '\n'.join(out), changes
 
 

@@ -222,6 +222,25 @@ TOPIC_OVERRIDES = {
     'tech-2017-ol-b3a-ii': 'tech-core-materials',  # self-assembly products
     'tech-2017-ol-b3d-i': 'tech-core-project',     # problem-solving tools
     'tech-2017-ol-b3d-ii': 'tech-core-materials',  # tubular materials
+    # 2016 Higher.
+    'tech-2016-hl-a2-i': 'tech-core-ict',          # infrared communication
+    'tech-2016-hl-a2-ii': 'tech-core-ict',
+    'tech-2016-hl-a3': 'tech-core-materials',      # food miles (sustainability)
+    'tech-2016-hl-a4-i': 'tech-core-ict',          # remote monitoring
+    'tech-2016-hl-a4-ii': 'tech-core-materials',   # hardness
+    'tech-2016-hl-a7-i': 'tech-core-materials',    # environmental impact of soldering
+    'tech-2016-hl-a7-ii': 'tech-core-materials',
+    'tech-2016-hl-a8': 'tech-core-project',        # product reliability (quality)
+    'tech-2016-hl-a14': 'tech-core-design',        # ergonomic features
+    'tech-2016-hl-b2a-i': 'tech-core-ict',         # telemedicine
+    'tech-2016-hl-b2a-ii': 'tech-core-ict',
+    'tech-2016-hl-b2b-i': 'tech-core-structures',  # motion of the prosthetic hand
+    'tech-2016-hl-b2b-ii': 'tech-core-structures',
+    'tech-2016-hl-b2b-iii': 'tech-core-materials', # material for the linkages
+    'tech-2016-hl-b2c-i': 'tech-core-structures',  # factor of safety
+    'tech-2016-hl-b3c-ii': 'tech-core-structures', # chain and belt drives
+    'tech-2016-hl-b3d-i': 'tech-core-project',     # Gantt chart
+    'tech-2016-hl-b3d-ii': 'tech-core-project',
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]

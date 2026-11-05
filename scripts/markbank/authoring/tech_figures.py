@@ -988,6 +988,67 @@ REVIEWED.update({
         'https://www.rugbyworldcup.com/supporters.',
 })
 
+# 2016 Higher (Technology lane, 5 November 2026).
+REVIEWED.update({
+    'technology-2016-HL-paper-secA-q6-art':
+        'A resistor with coloured bands, and a circuit: R1 in series with R2 '
+        '= 5 ohms and R3 = 20 ohms connected in parallel.',
+    'technology-2016-HL-paper-secA-q8-art':
+        "A 'bathtub' graph of Failure rate against Time: a high early failure "
+        'rate falling into a long flat middle and rising again at the end, '
+        'divided into Phase 1, 2 and 3.',
+    'technology-2016-HL-paper-secA-q9-art':
+        'Photograph of a testing machine: a red frame with a vertical plunger '
+        'resting on a cam on a shaft with gears.',
+    'technology-2016-HL-paper-secA-q10-i-art':
+        'Photograph of a hand on a bicycle handlebar squeezing the black brake '
+        'lever.',
+    'technology-2016-HL-paper-secA-q10-ii-art':
+        'Lever diagram: a beam with the fulcrum (an orange triangle) at the '
+        'right end, a Load of 300 N 20 mm from the fulcrum, and the Effort at '
+        'the left end 120 mm from the fulcrum.',
+    'technology-2016-HL-paper-secA-q13-art':
+        'Exploded rendering of a hairdryer: the nozzle, a mesh grille, the '
+        'heater core, the fan and motor housing with its rear grille, and the '
+        'handle with its switch and cable.',
+    'technology-2016-HL-paper-secA-q14-art':
+        'Photograph of a blue wind-up torch with a black folding crank handle, '
+        'a textured grip and a wrist strap.',
+    'technology-2016-HL-paper-secA-q15-art':
+        'Line drawing in pictorial view of a remote control with a round '
+        'four-way pad and a group of rounded buttons.',
+    'technology-2016-HL-paper-secB-q2b-art':
+        'Photograph of a prosthetic hand with jointed finger linkages, a double '
+        'arrow at the thumb and finger, and an arrow to the palm labelled '
+        'motors and battery housing.',
+    'technology-2016-HL-paper-secC-q1c-art':
+        'Rendering of a robot arm on an upright column, arrows showing it moving '
+        'up and down and its two arm sections turning.',
+    'technology-2016-HL-paper-secC-q1d-art':
+        'Drawing of a table tennis ball dispenser: a hopper of yellow balls, '
+        'labelled Table tennis balls, above a channel, with a horizontal '
+        'cylinder labelled Pneumatic actuator.',
+    'technology-2016-HL-paper-secC-q2b-art':
+        'An incomplete circuit between + and -: a variable resistor above an '
+        'LDR, and R1 above R2, feeding the two inputs of an op-amp whose output '
+        'goes through a resistor to an LED.',
+    'technology-2016-HL-paper-secC-q2c-art':
+        'A block diagram, Entry to De-bounce to Count to Display, with Reset '
+        'below Count, and a photograph of a digital counter display.',
+    'technology-2016-HL-paper-secC-q2d-art':
+        'A logic circuit: A into gate 1 giving X; B and C into gate 2 giving Y; '
+        'X and Y into gate 3 giving Z.',
+    'technology-2016-HL-paper-secC-q4b-art':
+        'A control chart: a line of readings wandering about the average '
+        'between dotted lines marked UCL above and LCL below, one late reading '
+        'above the UCL.',
+    'technology-2016-HL-paper-secC-q5b-art':
+        'A blue self-balancing scooter with arrows to its Pedal pads with '
+        'anti-slip surface and its Plastic housing, and a photograph labelled '
+        'Detail of the two-part metal chassis with an arrow to the Central '
+        'pivot.',
+})
+
 # 2017 Ordinary (Technology lane, 4 November 2026).
 REVIEWED.update({
     'technology-2017-OL-paper-secA-q1-art':
@@ -1462,6 +1523,7 @@ REJECTED = {
     'technology-2025-OL-paper-secA-q11-art': 'carries both asks and their answer boxes',
     'technology-2025-OL-paper-secA-q3-art': 'carries both asks and their answer boxes',
     'technology-2019-HL-paper-secC-q3d-art': 'the event logo, which no part asks about; (i) points at the URL box (by-eye rect)',
+    'technology-2016-HL-paper-secA-q10-art': "the cropper's whole-band cut; (i) and (ii) each point at their own picture (by-eye rects keyed by roman)",
     # Superseded by a by-eye rect of the whole circuit (tech_crops.BY_EYE).
     # 'technology-2021-HL-paper-secC-q2b-art': the 555 chip alone, no circuit
 }

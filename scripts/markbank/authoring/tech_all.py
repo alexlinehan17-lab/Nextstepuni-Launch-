@@ -154,6 +154,11 @@ def flattened_table(text):
     words = text.split()
     if len(words) < 8 or re.search(r'[.?!]', text):
         return False
+    # A lead-in that closes on its colon is a sentence, however long: "Analyse
+    # the environmental impact of manually soldering a circuit as part of a
+    # technology project in terms of:" (2016 Higher Q7) is no table.
+    if text.rstrip().endswith(':') and sum(1 for w in words if re.fullmatch(r'[a-z]{2,}', w)) >= 0.6 * len(words):
+        return False
     # Twelve words with no sentence among them is a table (the 2024 Higher
     # resistor colour code), however long its cells.
     return len(words) >= 12 or sum(1 for w in words if len(w) <= 3) >= 0.5 * len(words)
@@ -214,6 +219,9 @@ def clean_ask(text):
         text = text[:m.start()].strip()
 
 
+NUMBER = re.compile(r'\d[\d,.]*\d|\d')
+
+
 def _tokens(text):
     return re.findall(r"[a-z0-9']+", (text or '').lower())
 
@@ -237,12 +245,24 @@ def split_cue(lines, ask):
     as a reprint. Reading in order stops at the full stop instead.
     """
     ask_words = _tokens(ask)
+    ask_nums = {n.replace(',', '') for n in NUMBER.findall(ask or '')}
     cue, points, at = [], list(lines), 0
     while points and at < len(ask_words):
         line_words = _tokens(points[0])
         if not line_words:
             cue.append(points.pop(0))
             continue
+        # A line that takes one of the ask's figures and brings a new one is
+        # an answer, not the reprint: "A document of 196 KB 196,000 bytes."
+        # (2016 Higher 12(ii)) under the ask's "A document of 196 KB".
+        line_nums = {n.replace(',', '') for n in NUMBER.findall(points[0])}
+        if line_nums & ask_nums and line_nums - ask_nums:
+            break
+        # ...and a numbered answer list opens with "1." above a "2.": the
+        # scheme's ORDER of the ask's own items ("1. 100 kilobyte" over
+        # "2. 1 gigabyte", 2016 Higher 12(i)), not the reprint.
+        if re.match(r'1\.\s', points[0]) and len(points) > 1 and re.match(r'2\.\s', points[1]):
+            break
         pos, matched = at, 0
         for word in line_words:
             window = ask_words[pos:pos + 12]
@@ -944,8 +964,15 @@ def author(bind_figures=True):
                 # At any length: 2022 Ordinary 2(b)(iii) reprints its ask in
                 # 68 characters above the two-word answer "Suitable circuit.",
                 # and a length exemption kept the reprint and lost the answer.
+                # A numbered answer list ("1. 100 kilobyte", "2. 1 gigabyte",
+                # "3. 1 terabyte.") is the scheme's ORDER of the ask's own
+                # items (2016 Higher 12(i)), not a reprint of them.
+                numbered_list = [p for p in points if re.match(r'\d\.\s', p)]
+                numbered_list = numbered_list if (
+                    len(numbered_list) >= 2 and re.match(r'1\.\s', numbered_list[0])) else []
                 kept = [p for p in points
-                        if (SCHEME_NORM(p) not in bare
+                        if p in numbered_list
+                        or (SCHEME_NORM(p) not in bare
                             # A reprint that paraphrases by a word -- "Find a
                             # value of R2" for the paper's "Find the value of
                             # R2" -- is still the question, not an answer.
@@ -966,7 +993,13 @@ def author(bind_figures=True):
                             # the paper's "with reference to a specific example".
                             and not (p.rstrip().endswith(':')
                                      and len(SCHEME_WORDS(p)) >= 8
-                                     and cue_score(p, ask) >= 0.6))
+                                     and (cue_score(p, ask) >= 0.6
+                                          # ...or in the stem, where the paper
+                                          # set the lead-in above its romans:
+                                          # 2016 Higher Q3's "Analyse ... using
+                                          # the following headings:" for the
+                                          # paper's "under the following".
+                                          or cue_score(p, ' '.join(pieces)) >= 0.8)))
                         or p == backed_off]
                 # A priced block answers: where every line reads as a reprint,
                 # the last is the answer in the ask's own words. 2022 Ordinary

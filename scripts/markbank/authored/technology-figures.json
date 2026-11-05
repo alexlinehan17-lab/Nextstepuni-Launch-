@@ -1,5 +1,155 @@
 [
  {
+  "file": "technology-2016-HL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a testing machine: a red frame with a vertical plunger resting on a cam on a shaft with gears.",
+  "questionRef": "2016 HL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   397,
+   577,
+   559,
+   722
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Exploded rendering of a hairdryer: the nozzle, a mesh grille, the heater core, the fan and motor housing with its rear grille, and the handle with its switch and cable.",
+  "questionRef": "2016 HL Section A Q13",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   330,
+   487,
+   554,
+   707
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secA-q14-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a blue wind-up torch with a black folding crank handle, a textured grip and a wrist strap.",
+  "questionRef": "2016 HL Section A Q14",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   349,
+   114,
+   540,
+   274
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing in pictorial view of a remote control with a round four-way pad and a group of rounded buttons.",
+  "questionRef": "2016 HL Section A Q15",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   161,
+   477,
+   430,
+   718
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a prosthetic hand with jointed finger linkages, a double arrow at the thumb and finger, and an arrow to the palm labelled motors and battery housing.",
+  "questionRef": "2016 HL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   424,
+   255,
+   562,
+   430
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendering of a robot arm on an upright column, arrows showing it moving up and down and its two arm sections turning.",
+  "questionRef": "2016 HL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   418,
+   500,
+   565,
+   620
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An incomplete circuit between + and -: a variable resistor above an LDR, and R1 above R2, feeding the two inputs of an op-amp whose output goes through a resistor to an LED.",
+  "questionRef": "2016 HL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   352,
+   250,
+   565,
+   392
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A logic circuit: A into gate 1 giving X; B and C into gate 2 giving Y; X and Y into gate 3 giving Z.",
+  "questionRef": "2016 HL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   380,
+   690,
+   545,
+   770
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A control chart: a line of readings wandering about the average between dotted lines marked UCL above and LCL below, one late reading above the UCL.",
+  "questionRef": "2016 HL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   65,
+   455,
+   295,
+   615
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A blue self-balancing scooter with arrows to its Pedal pads with anti-slip surface and its Plastic housing, and a photograph labelled Detail of the two-part metal chassis with an arrow to the Central pivot.",
+  "questionRef": "2016 HL Section C Q5(b)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   90,
+   245,
+   568,
+   362
+  ]
+ },
+ {
   "file": "technology-2017-HL-paper-secA-q2-art.png",
   "kind": "figure",
   "truncated": false,
@@ -5940,6 +6090,66 @@
   ]
  },
  {
+  "file": "technology-2016-HL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A resistor with coloured bands, and a circuit: R1 in series with R2 = 5 ohms and R3 = 20 ohms connected in parallel.",
+  "questionRef": "2016 HL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   432,
+   566,
+   562,
+   770
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A 'bathtub' graph of Failure rate against Time: a high early failure rate falling into a long flat middle and rising again at the end, divided into Phase 1, 2 and 3.",
+  "questionRef": "2016 HL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   330,
+   320,
+   560,
+   432
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of a table tennis ball dispenser: a hopper of yellow balls, labelled Table tennis balls, above a channel, with a horizontal cylinder labelled Pneumatic actuator.",
+  "questionRef": "2016 HL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   388,
+   652,
+   578,
+   760
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secC-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A block diagram, Entry to De-bounce to Count to Display, with Reset below Count, and a photograph of a digital counter display.",
+  "questionRef": "2016 HL Section C Q2(c)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   58,
+   466,
+   560,
+   576
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -6207,6 +6417,36 @@
    249,
    120,
    432
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secA-q10-i-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a hand on a bicycle handlebar squeezing the black brake lever.",
+  "questionRef": "2016 HL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   393,
+   99,
+   549,
+   216
+  ]
+ },
+ {
+  "file": "technology-2016-HL-paper-secA-q10-ii-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Lever diagram: a beam with the fulcrum (an orange triangle) at the right end, a Load of 300 N 20 mm from the fulcrum, and the Effort at the left end 120 mm from the fulcrum.",
+  "questionRef": "2016 HL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   60,
+   228,
+   262,
+   345
   ]
  },
  {
@@ -7968,5 +8208,141 @@
   "description": "The marking scheme's own circuit for 2017 OL Section C 2(d)(ii), as the State Examinations Commission printed it: the mini-siren between +V and 0V with a voltmeter V connected across it.",
   "solution": true,
   "questionRef": "2017 OL Section C Q2(d)(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secA-q6-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2016 HL Section A Q6(ii), as the State Examinations Commission printed it: 1/Rt = 1/R2 + 1/R3 = 1/5 + 1/20, so Rt = 4 ohms; R1 = 24 - Rt = 24 - 4 = 20 ohms. Answer: R1 = 20 ohms.",
+  "solution": true,
+  "questionRef": "2016 HL Section A Q6(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secA-q9-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2016 HL Section A Q9(ii), as the State Examinations Commission printed it: a red snail cam on its shaft, labelled snail cam, its profile spiralling out to a single sharp drop.",
+  "solution": true,
+  "questionRef": "2016 HL Section A Q9(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secB-q2c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2016 HL Section B 2(c)(ii), as the State Examinations Commission printed it: a double pole double throw switch wired to reverse a motor M.",
+  "solution": true,
+  "questionRef": "2016 HL Section B Q2(c)(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secB-q3d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own Gantt chart for 2016 HL Section B 3(d)(ii), as the State Examinations Commission printed it: a time line from 0 to 70 hours with bars for Research, Ideas, Drawings and Source in turn, then Group 1 - car frame and Group 2 - car body running side by side, then Assemble.",
+  "solution": true,
+  "questionRef": "2016 HL Section B Q3(d)(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own flowchart for 2016 HL Section C 1(b)(i), as the State Examinations Commission printed it: Start, the decision Engine? (N loops back), Wait 2, the decision Driver? (Y loops back to the engine check), the decision Child? (N loops back), then Alarm on, Wait 1, Alarm off, Text and Alarm On, looping until reset.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q1(b)(i)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q1b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own modified flowchart for 2016 HL Section C 1(b)(iii), as the State Examinations Commission printed it: the same sequence with a third decision, Temp.?, beside Driver? and Child?, whose Y branch leads straight to Alarm On.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q1(b)(iii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q1c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2016 HL Section C 1(c)(ii), as the State Examinations Commission printed it: a SCARA arm on its base inside a kidney-shaped work envelope.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q1(c)(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q1d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own pneumatic circuit for 2016 HL Section C 1(d)(ii), as the State Examinations Commission printed it: a push button 3/2 valve feeding a single-acting cylinder through a unidirectional flow control valve.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q1(d)(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q2b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own redrawn circuit for 2016 HL Section C 2(b)(iii), as the State Examinations Commission printed it: the LDR and R1/R2 dividers feeding the op-amp, whose output drives a transistor that switches a relay; the relay's contacts close the 220V circuit of the motor that drives the pump.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q2(b)(iii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q2d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own truth table for 2016 HL Section C 2(d)(ii), as the State Examinations Commission printed it: columns A, B, C, X, Y and Z over all eight combinations of A, B and C.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q2(d)(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q4b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own annotated control chart for 2016 HL Section C 4(b)(ii), as the State Examinations Commission printed it: the reading above the UCL marked Out of Control, This reading is above the UCL; and the run of points above the average marked Rule of seven: At least 7 points in a row above the average is a predictor that the process may not remain in control.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q4(b)(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q4c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own graph for 2016 HL Section C 4(c)(i), as the State Examinations Commission printed it: Cost against Quantity to 800, the skilled line rising from zero more steeply than the automated line from 1000 euro, crossing at a quantity marked BEQ.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q4(c)(i)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q4c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2016 HL Section C 4(c)(ii), as the State Examinations Commission printed it: Break-even quantity (BEQ) = Set-up cost over (Manual cost/item - Automated cost/item) = 1000 over (2.5 - 0.1) = 417 units.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q4(c)(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q4d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own suggested facility layout for 2016 HL Section C 4(d)(ii), as the State Examinations Commission printed it: Materials feeding a long row of Circuits stations, then fewer Housing stations, then Labelling, then shipping.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q4(d)(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q5a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own diagram for 2016 HL Section C 5(a)(ii), as the State Examinations Commission printed it: sand falling from a hopper between a rubber wheel and a test sample held against it.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q5(a)(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q5b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own diagram for 2016 HL Section C 5(b)(ii), as the State Examinations Commission printed it: injection moulding, plastic from a hopper carried along a heated chamber by a screw turned by a motor, into a mould.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q5(b)(ii)"
+ },
+ {
+  "file": "technology-2016-HL-scheme-secC-q5b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own photographs for 2016 HL Section C 5(b)(iii), as the State Examinations Commission printed them: the two-part chassis joined at its centre, and a close-up of the joint, captioned Cylinder has splayed edges to prevent the two parts splitting.",
+  "solution": true,
+  "questionRef": "2016 HL Section C Q5(b)(iii)"
  }
 ]

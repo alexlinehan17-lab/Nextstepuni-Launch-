@@ -1782,6 +1782,38 @@ LATE_ANSWER_LINES = {
                    'assembly techniques, safety elements, testing, etc.'),
 }
 
+# Solution crops whose rectangle must not strip the scheme's text: one that
+# reaches over a roman head beside it (2016 Higher 1(b)(i)'s flowchart and
+# the "(ii)" printed level with its top). Label zones do the stripping.
+SOLUTION_NOT_ZONE = {
+    'technology-2016-HL-scheme-secC-q1b-i',
+}
+
+# Scheme .md line fixes that only move or remove printed lettering, applied
+# by tech_mdclean before the zones: (year, level) -> [(regex, replacement)].
+MD_LINE_FIX = {
+    (2016, 'hl'): [
+        # Q8: the bathtub graph's rotated axis title, welded onto Phase 2.
+        (r'^(A reasonably constant failure rate with only random failures\.) Failure rate$', r'\1'),
+        # 1(b): the two flowcharts' decision labels, a row on their own.
+        (r'^N N Temp\.\?$', ''),
+        # 2(d): (ii)'s head, printed level with (i)'s ask, goes after (i)'s
+        # answer; the truth table's digits beside "3. OR gate." come off.
+        (r'^(2\(d\) \(i\) Name the logic gates 1, 2 and 3 in the circuit shown\.) \(ii\) Draw truth table$',
+         r'\1'),
+        (r'^(3\. OR gate\.) 0 0 1 1 0 1$', r'\1\n(ii) Draw truth table'),
+        # 4(b)(iii): the tariff printed beside the answer's first line, moved
+        # below the answer it closes (the answer wraps on under it).
+        (r'^(Quality Assurance: This is the process or set of processes used to measure and) \(16 marks, 4\+6\+6\)$', r'\1'),
+        (r'^(quality of a product and focuses on defect prevention\.) (Page 8 of 10)$',
+         r'\1\n(16 marks, 4+6+6)\n\2'),
+        # 5(b)(iii): the ask's own wrap ("the pivot/swivel motion") broken
+        # round the photograph.
+        (r'^pivot/$', ''),
+        (r'^mo-$', ''),
+    ],
+}
+
 # Scheme lines inside a drawing's rectangle that are NOT its lettering and
 # must stay in the .md: (year, level, scheme page index) -> lines. 2018
 # Ordinary 1(b) prints no (ii) ask; its only (ii) is the heading "(ii)
@@ -2206,6 +2238,156 @@ LABEL_KEYS.update({
         {'letter': 'Y', 'meaning': 'OR gate'}],
 })
 
+# 2016 Higher. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    # The resistor and the R1/R2/R3 network (ii) is worked from.
+    'technology-2016-HL-paper-secA-q6-art': ('014', 2, (432, 566, 562, 770)),
+    # The bathtub graph and its phase numbers.
+    'technology-2016-HL-paper-secA-q8-art': ('014', 3, (330, 320, 560, 432)),
+    'technology-2016-HL-paper-secA-q9-art': ('014', 3, (397, 577, 559, 722)),
+    # 10(i)'s brake lever photograph, and (ii)'s lever diagram "shown below".
+    'technology-2016-HL-paper-secA-q10-i-art': ('014', 4, (393, 99, 549, 216)),
+    'technology-2016-HL-paper-secA-q10-ii-art': ('014', 4, (60, 228, 262, 345)),
+    'technology-2016-HL-paper-secA-q13-art': ('014', 5, (330, 487, 554, 707)),
+    'technology-2016-HL-paper-secA-q14-art': ('014', 6, (349, 114, 540, 274)),
+    'technology-2016-HL-paper-secA-q15-art': ('014', 6, (161, 477, 430, 718)),
+    'technology-2016-HL-paper-secB-q2b-art': ('015', 1, (424, 255, 562, 430)),
+    'technology-2016-HL-paper-secC-q1c-art': ('015', 3, (418, 500, 565, 620)),
+    'technology-2016-HL-paper-secC-q1d-art': ('015', 3, (388, 652, 578, 760)),
+    'technology-2016-HL-paper-secC-q2b-art': ('015', 4, (352, 250, 565, 392)),
+    'technology-2016-HL-paper-secC-q2c-art': ('015', 4, (58, 466, 560, 576)),
+    'technology-2016-HL-paper-secC-q2d-art': ('015', 4, (380, 690, 545, 770)),
+    'technology-2016-HL-paper-secC-q4b-art': ('015', 6, (65, 455, 295, 615)),
+    'technology-2016-HL-paper-secC-q5b-art': ('015', 8, (90, 245, 568, 362)),
+})
+WHITEOUT.update({
+    'technology-2016-HL-paper-secA-q6-art': [(430, 679, 440, 696)],
+    'technology-2016-HL-paper-secB-q2b-art': [(420, 261, 448, 290), (423, 337, 427, 353)],
+    'technology-2016-HL-paper-secC-q1d-art': [(388, 670, 392, 686), (388, 721, 426, 767)],
+    'technology-2016-HL-scheme-secC-q1b-i': [(232, 276, 262, 295)],
+    'technology-2016-HL-scheme-secC-q1b-iii': [(512, 636, 532, 652), (326, 636, 360, 652)],
+    'technology-2016-HL-scheme-secC-q1c-ii': [(228, 205, 362, 224)],
+    'technology-2016-HL-scheme-secC-q4c-ii': [(486, 275, 540, 290)],
+    'technology-2016-HL-scheme-secC-q5b-iii': [(250, 415, 300, 458)],
+})
+SOLUTIONS.update({
+    'technology-2016-HL-scheme-secA-q6-ii': (4, (90, 700, 370, 762),
+        "The marking scheme's own working for 2016 HL Section A Q6(ii), as the "
+        "State Examinations Commission printed it: 1/Rt = 1/R2 + 1/R3 = 1/5 + "
+        "1/20, so Rt = 4 ohms; R1 = 24 - Rt = 24 - 4 = 20 ohms. Answer: R1 = "
+        "20 ohms."),
+    'technology-2016-HL-scheme-secA-q9-ii': (5, (148, 655, 262, 762),
+        "The marking scheme's own sketch for 2016 HL Section A Q9(ii), as the "
+        "State Examinations Commission printed it: a red snail cam on its "
+        "shaft, labelled snail cam, its profile spiralling out to a single "
+        "sharp drop."),
+    'technology-2016-HL-scheme-secB-q2c-ii': (11, (440, 462, 548, 515),
+        "The marking scheme's own sketch for 2016 HL Section B 2(c)(ii), as "
+        "the State Examinations Commission printed it: a double pole double "
+        "throw switch wired to reverse a motor M."),
+    'technology-2016-HL-scheme-secB-q3d-ii': (12, (90, 603, 545, 765),
+        "The marking scheme's own Gantt chart for 2016 HL Section B 3(d)(ii), "
+        "as the State Examinations Commission printed it: a time line from 0 "
+        "to 70 hours with bars for Research, Ideas, Drawings and Source in "
+        "turn, then Group 1 - car frame and Group 2 - car body running side "
+        "by side, then Assemble."),
+    'technology-2016-HL-scheme-secC-q1b-i': (13, (92, 238, 262, 565),
+        "The marking scheme's own flowchart for 2016 HL Section C 1(b)(i), as "
+        "the State Examinations Commission printed it: Start, the decision "
+        "Engine? (N loops back), Wait 2, the decision Driver? (Y loops back to "
+        "the engine check), the decision Child? (N loops back), then Alarm on, "
+        "Wait 1, Alarm off, Text and Alarm On, looping until reset."),
+    'technology-2016-HL-scheme-secC-q1b-iii': (13, (328, 385, 570, 745),
+        "The marking scheme's own modified flowchart for 2016 HL Section C "
+        "1(b)(iii), as the State Examinations Commission printed it: the same "
+        "sequence with a third decision, Temp.?, beside Driver? and Child?, "
+        "whose Y branch leads straight to Alarm On."),
+    'technology-2016-HL-scheme-secC-q1c-ii': (14, (230, 208, 390, 295),
+        "The marking scheme's own sketch for 2016 HL Section C 1(c)(ii), as "
+        "the State Examinations Commission printed it: a SCARA arm on its base "
+        "inside a kidney-shaped work envelope."),
+    'technology-2016-HL-scheme-secC-q1d-ii': (14, (228, 422, 380, 522),
+        "The marking scheme's own pneumatic circuit for 2016 HL Section C "
+        "1(d)(ii), as the State Examinations Commission printed it: a push "
+        "button 3/2 valve feeding a single-acting cylinder through a "
+        "unidirectional flow control valve."),
+    'technology-2016-HL-scheme-secC-q2b-iii': (15, (200, 305, 560, 438),
+        "The marking scheme's own redrawn circuit for 2016 HL Section C "
+        "2(b)(iii), as the State Examinations Commission printed it: the LDR "
+        "and R1/R2 dividers feeding the op-amp, whose output drives a "
+        "transistor that switches a relay; the relay's contacts close the "
+        "220V circuit of the motor that drives the pump."),
+    'technology-2016-HL-scheme-secC-q2d-ii': (15, (435, 664, 542, 803),
+        "The marking scheme's own truth table for 2016 HL Section C 2(d)(ii), "
+        "as the State Examinations Commission printed it: columns A, B, C, X, "
+        "Y and Z over all eight combinations of A, B and C."),
+    'technology-2016-HL-scheme-secC-q4b-ii': (17, (110, 520, 560, 672),
+        "The marking scheme's own annotated control chart for 2016 HL Section "
+        "C 4(b)(ii), as the State Examinations Commission printed it: the "
+        "reading above the UCL marked Out of Control, This reading is above "
+        "the UCL; and the run of points above the average marked Rule of "
+        "seven: At least 7 points in a row above the average is a predictor "
+        "that the process may not remain in control."),
+    'technology-2016-HL-scheme-secC-q4c-i': (18, (178, 82, 510, 232),
+        "The marking scheme's own graph for 2016 HL Section C 4(c)(i), as the "
+        "State Examinations Commission printed it: Cost against Quantity to "
+        "800, the skilled line rising from zero more steeply than the "
+        "automated line from 1000 euro, crossing at a quantity marked BEQ."),
+    'technology-2016-HL-scheme-secC-q4c-ii': (18, (90, 253, 535, 284),
+        "The marking scheme's own working for 2016 HL Section C 4(c)(ii), as "
+        "the State Examinations Commission printed it: Break-even quantity "
+        "(BEQ) = Set-up cost over (Manual cost/item - Automated cost/item) = "
+        "1000 over (2.5 - 0.1) = 417 units."),
+    'technology-2016-HL-scheme-secC-q4d-ii': (18, (105, 588, 512, 758),
+        "The marking scheme's own suggested facility layout for 2016 HL "
+        "Section C 4(d)(ii), as the State Examinations Commission printed it: "
+        "Materials feeding a long row of Circuits stations, then fewer Housing "
+        "stations, then Labelling, then shipping."),
+    'technology-2016-HL-scheme-secC-q5a-ii': (19, (455, 124, 575, 222),
+        "The marking scheme's own diagram for 2016 HL Section C 5(a)(ii), as "
+        "the State Examinations Commission printed it: sand falling from a "
+        "hopper between a rubber wheel and a test sample held against it."),
+    'technology-2016-HL-scheme-secC-q5b-ii': (19, (392, 300, 560, 377),
+        "The marking scheme's own diagram for 2016 HL Section C 5(b)(ii), as "
+        "the State Examinations Commission printed it: injection moulding, "
+        "plastic from a hopper carried along a heated chamber by a screw "
+        "turned by a motor, into a mould."),
+    'technology-2016-HL-scheme-secC-q5b-iii': (19, (88, 408, 572, 480),
+        "The marking scheme's own photographs for 2016 HL Section C 5(b)(iii), "
+        "as the State Examinations Commission printed them: the two-part "
+        "chassis joined at its centre, and a close-up of the joint, captioned "
+        "Cylinder has splayed edges to prevent the two parts splitting."),
+})
+ASK_ONLY.update({
+    'technology-2016-HL-scheme-secA-q6-ii',
+    'technology-2016-HL-scheme-secA-q9-ii',
+    'technology-2016-HL-scheme-secB-q3d-ii',
+    'technology-2016-HL-scheme-secC-q1b-i',
+    'technology-2016-HL-scheme-secC-q1d-ii',
+    'technology-2016-HL-scheme-secC-q2b-iii',
+    'technology-2016-HL-scheme-secC-q2d-ii',
+    'technology-2016-HL-scheme-secC-q4b-ii',
+    'technology-2016-HL-scheme-secC-q4c-i',
+    'technology-2016-HL-scheme-secC-q4c-ii',
+    'technology-2016-HL-scheme-secC-q4d-ii',
+})
+LABEL_ZONES.setdefault((2016, 'hl'), []).extend([
+    (3, (380, 578, 575, 715)),     # Q3's food miles picture and caption
+    (4, (430, 560, 570, 752)),     # Q6's resistor network, reprinted
+    (5, (330, 318, 562, 437)),     # Q8's bathtub graph, reprinted
+    (6, (60, 228, 262, 345)),      # Q10(ii)'s lever diagram, reprinted
+    (13, (92, 238, 233, 330)),     # 1(b)(i)'s flowchart (clear of "(ii)")
+    (13, (92, 330, 262, 565)),
+    (13, (328, 385, 570, 745)),    # 1(b)(iii)'s flowchart
+    (15, (200, 305, 560, 438)),    # 2(b)(iii)'s circuit
+    (15, (88, 700, 245, 792)),     # 2(d)'s gates, reprinted
+    (17, (110, 520, 560, 672)),    # 4(b)'s annotated chart
+    (18, (178, 82, 510, 232)),     # 4(c)'s graph
+    (18, (352, 343, 545, 533)),    # 4(d)(i)'s two layout drawings
+    (19, (455, 110, 575, 222)),    # 5(a)(ii)'s test diagram
+    (19, (392, 296, 560, 377)),    # 5(b)(ii)'s moulding diagram
+])
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -2256,6 +2438,12 @@ ASK_STRIP = {
     # 2017 Ordinary Q8: the WBS's letters and the box labels, at the end of
     # the stem.
     (2017, 'ol', 'A', 8, None, None): [r'\s+A D F H Advantage: Start Finish B G E C Task D: Task E:$'],
+    # 2016 Higher 3(d): (ii)'s own last sentence, "Construct a Gantt chart
+    # for the project.", filed also as the letter's stem, which (i) showed.
+    (2016, 'hl', 'B', 3, 'd', 'i'): [r'^Construct a Gantt chart for the project\.$'],
+    # 2016 Higher Q3: the picture's caption "Average transport distance".
+    (2016, 'hl', 'A', 3, None, None): [r'\s+Average transport distance$'],
+    (2016, 'hl', 'A', 3, None, 'i'): [r'\s+Average transport distance$'],
     # 2017 Higher Q6: the "©" beside the company's logo, read onto the stem.
     (2017, 'hl', 'A', 6, None, 'i'): [r'\s+©$'],
     (2017, 'hl', 'A', 6, None, 'ii'): [r'\s+©$'],
@@ -2450,7 +2638,8 @@ def paper_labels(year, level, key):
 def scheme_zones(year, level, page):
     """Every solution crop and label zone on a scheme page."""
     rects = [rect for k, (p, rect, _d) in SOLUTIONS.items()
-             if parse_key(k)[:2] == (year, level) and p == page]
+             if parse_key(k)[:2] == (year, level) and p == page
+             and k not in SOLUTION_NOT_ZONE]
     rects += [rect for p, rect in LABEL_ZONES.get((year, level), []) if p == page]
     return rects
 
