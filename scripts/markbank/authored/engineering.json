@@ -58398,6 +58398,2914 @@
   "figureKey": "engineering-2023-HL-scheme-q9bv-sol"
  },
  {
+  "id": "eng-2023-hl-deferred-q1-a",
+  "topicId": "eng-3-14",
+  "conceptId": "any-benefits-using-smart-technology-household",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(a) — Deferred sitting",
+  "questionText": "Explain any two benefits of using smart technology in household systems.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reduce energy consumption",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Greater control of energy usage",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Reduce energy bills ….",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q1-b",
+  "topicId": "eng-2-13",
+  "conceptId": "use-prototyping-design-process",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(b) — Deferred sitting",
+  "questionText": "Outline the use of prototyping in the design process.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Prototyping can be used to generate a ‘mock-up’ or scaled model of the intended article prior to final design. Facilitates design changes, saves time and material prior to full scale manufacture.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q1-j",
+  "topicId": "eng-3-14",
+  "conceptId": "discuss-contribution-any-following-has-made",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(j) — Deferred sitting",
+  "questionText": "Discuss the contribution that any one of the following has made to technology: (i) Nick Holonyak (ii) Theodore Maiman (iii) Frank Whittle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Nick Holonyak: associated with inventing the LED.",
+    "marks": 5,
+    "accepts": [
+     "Theodore Maiman: American physicist credited with inventing the laser.",
+     "Frank Whittle: English aviation engineer who invented the turbojet engine."
+    ]
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints 'Any one @ 5'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q1-l",
+  "topicId": "eng-2-16",
+  "conceptId": "function-heatsink-electronic-devices",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(l) — Deferred sitting",
+  "questionText": "Explain the function of a heatsink in electronic devices.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A heatsink provides a reservoir or pathway to remove heat from temperature sensitive components. This allows for improved performance and extended component life.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q2-e-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "discuss-main-concerns-regarding-use-xr",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q2(e)(ii) — Deferred sitting",
+  "questionText": "Discuss the main concerns regarding the use of XR technology, with reference to the following: Ethics.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ethics: XR can impact on the principles of transparency, dignity and personal privacy of the user. The collection of data which can be recorded, processed and acted upon are some of the main issues for concern.",
+    "marks": 5
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q3-a-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "term-factor-safety-associated-structural-steel",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(a)(ii) — Deferred sitting",
+  "questionText": "Explain the term factor of safety associated with a structural steel wire rope used in zip-lining.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Factor of safety: a component is designed to withstand a greater load than the expected operational load. If the wire rope is expected to carry a load of 300 KN, the rope can be designed to carry 1800 KN giving it a factor of safety of 6.",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q4-a-i",
+  "topicId": "eng-2-13",
+  "conceptId": "benefit-forging-metal-components",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q4(a)(i) — Deferred sitting",
+  "questionText": "Explain one benefit of forging metal components.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Superior mechanical properties due to continuous grain flow",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Toughness",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Less brittle than castings ….",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q4-a-ii",
+  "topicId": "eng-2-13",
+  "conceptId": "identify-any-defects-may-occur-metal",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q4(a)(ii) — Deferred sitting",
+  "questionText": "Identify any two defects that may occur in the metal casting process.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5 + 5"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gas porosity (blowholes, open holes, pinholes)",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Shrinkage defects (cavity)",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Warping",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Cracks / tears",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Slag inclusion",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Swells",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Misrun …",
+    "marks": null
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q5-b-iii",
+  "topicId": "eng-1-3",
+  "conceptId": "solidification-process-starting-300-c-alloy",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q5(b)(iii) — Deferred sitting",
+  "questionText": "Describe the solidification process, starting at 300 °C, for the alloy containing 85% metal B.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "At 300 °C the alloy is fully liquid.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "As the temperature falls below the liquidus line, small nuclei form and continue to grow to form dendrites. A mixture of decreasing liquid and increasing solid exist (paste), until the solidification temperature of 175 °C is reached. Below this the alloy will be a solid composition of eutectic and pure metal B.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '4'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q6-b-i",
+  "topicId": "eng-2-10",
+  "conceptId": "any-integrated-safety-features-relation-oxy",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(b)(i) — Deferred sitting",
+  "questionText": "Name any three integrated safety features in relation to oxy-acetylene welding.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Main on/off valves on each gas cylinder",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Pressure regulators",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Flashback arrestors",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Colour coding of cylinders – maroon for acetylene / black for oxygen",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Braided hose pipes (colour coded)",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Left-hand and right-hand thread differentiation between two supply lines",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Brass fittings for all connections ….",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q6-b-iv",
+  "topicId": "eng-2-10",
+  "conceptId": "any-benefits-multi-run-weld",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(b)(iv) — Deferred sitting",
+  "questionText": "Explain any two benefits of a multi-run weld.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Creates a stronger weld",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Annealing effect on the weld",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Tougher less brittle weld …..",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q6-c-i",
+  "topicId": "eng-3-14",
+  "conceptId": "any-benefits-robotic-technology-farming",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(c)(i) — Deferred sitting",
+  "questionText": "Explain any two benefits of robotic technology in farming.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 4"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Improves efficiency",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reduction of labour-intensive work",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Allows more time for other work or recreation",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Less waste",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Improves safety – less risk of injuries",
+    "marks": null
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q6-c-ii",
+  "topicId": "eng-2-16",
+  "conceptId": "identify-electronic-devices-may-assist-automation",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(c)(ii) — Deferred sitting",
+  "questionText": "Identify two electronic devices that may assist in the automation of farm equipment.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 4"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "GPS technology",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Computers",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Temperature and moisture sensors – irrigation control",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Wifi enabled devices, cameras",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Drones",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Data loggers to gather information.",
+    "marks": null
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q7-a-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "identify-any-polymer-additives-may-be",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(a)(ii) — Deferred sitting",
+  "questionText": "Identify any two polymer additives that may be used in the manufacture of window frames.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pigments: to provide colour",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Stabilisers: to protect from the harmful effects of UV light",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Lubricants: to improve the surface finish",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Flame retardants: increases resistance to fire",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Plasticisers: can be used to improve flexibility.",
+    "marks": null
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q7-b-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "differentiate-between-terms-recycling-upcycling",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(b)(ii) — Deferred sitting",
+  "questionText": "Differentiate between the terms recycling and upcycling.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Recycling: involves the destruction of waste to create new products.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Upcycling: taking waste items in their current form to create something new.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q7-b-iii",
+  "topicId": "eng-1-9",
+  "conceptId": "function-plasticiser-polymer-manufacture",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(b)(iii) — Deferred sitting",
+  "questionText": "Describe the function of a plasticiser in polymer manufacture.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Plasticiser: additive mixed with the polymer to improve flexibility. Causes increased separation between the polymer chains thus weakening the secondary bonds.",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q7-c-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "term-bio-friendly-relation-polymers",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(c)(ii) — Deferred sitting",
+  "questionText": "Explain the term bio-friendly in relation to polymers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bio-friendly or biocompatible polymers are any polymer types that do not react negatively to contact with human tissue, internally or externally. They are compatible with human tissue and allow for stents and surgical implants to be placed in the body without causing inflammation, infection or rejection.",
+    "marks": 5
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q8-a-i",
+  "topicId": "eng-2-11",
+  "conceptId": "any-functions-cutting-fluid-surface-grinding",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(a)(i) — Deferred sitting",
+  "questionText": "Outline any two functions of a cutting fluid in the surface grinding process.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reduce tool wear",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reduce friction",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Improve surface finish",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Assist the removal of swarf from the cutting tool ….",
+    "marks": null
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q8-a-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "how-glazing-can-impact-performance-grinding",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(a)(ii) — Deferred sitting",
+  "questionText": "Describe how glazing can impact on the performance of a grinding wheel.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Glazing reduces the effectiveness of the grinding process as the surface of the wheel develops a smooth and shiny appearance, thus making it more difficult to cut the workpiece material. This fault is caused by inappropriate choice of grinding wheel for the material being ground.",
+    "marks": 4
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q8-a-iii",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-reasons-why-vibrations-may-occur",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(a)(iii) — Deferred sitting",
+  "questionText": "Identify two reasons why vibrations may occur in high speed machining.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Imbalanced rotating parts",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Wear in machine slides",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Bearing or spindle wear",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Workpiece improperly clamped or secured.",
+    "marks": null
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q8-b-i",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-factors-may-influence-quality-finish",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(b)(i) — Deferred sitting",
+  "questionText": "Identify two factors that may influence the quality of finish on a machined surface.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cutting speed",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Depth of cut",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Feed rate",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Type of material",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Cutting tool material/ quality",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Use of a cutting fluid or lubricant….",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q8-b-iv",
+  "topicId": "eng-2-11",
+  "conceptId": "use-fixed-steady-while-machining-lathe",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(b)(iv) — Deferred sitting",
+  "questionText": "Outline the use of a fixed steady while machining on a lathe.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The fixed steady provides support for lengthy work which needs an intermediate support to prevent whip or deflection. This is useful where long lengths of bar are being machined at either end and need to be securely supported.",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q9-b-ii",
+  "topicId": "eng-2-16",
+  "conceptId": "function-thermistor-electronic-circuit",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(b)(ii) — Deferred sitting",
+  "questionText": "Explain the function of a thermistor in an electronic circuit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Thermistors measure temperature in an electronic circuit. As the temperature changes in a device the resistance in the thermistor changes. This is recorded by the directly connected circuit and calibrated against the set temperature.",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q9-b-iv",
+  "topicId": "eng-2-10",
+  "conceptId": "function-transformer-mobile-phone-charger",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(b)(iv) — Deferred sitting",
+  "questionText": "Describe the function of a transformer in a mobile phone charger.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The function of a transformer in a mobile phone is to reduce the mains voltage of 220 V to a suitable working voltage of 4 to 6 volts, depending on the device. The principle is based on a turns ratio between the primary winding (from mains supply) and the secondary winding (output). If the secondary winding has half the turns of the primary, the output voltage will be half.",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q9-c-iii",
+  "topicId": "eng-2-16",
+  "conceptId": "benefits-using-printed-circuit-board",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(c)(iii) — Deferred sitting",
+  "questionText": "Outline two benefits of using a printed circuit board.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Small and compact",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Easy to replace",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Reliable",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Faster diagnosis and repair.",
+    "marks": null
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q1-c",
+  "topicId": "eng-3-7",
+  "conceptId": "identify-any-methods-preventing-corrosion-ferrous",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(c) — Deferred sitting",
+  "questionText": "Identify any two methods of preventing corrosion in ferrous metals.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Coating with non-ferrous metals - zinc, tin or other suitable metals",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Painting",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Plastic coating",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Greasing/oiling …",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '3 + 2'. Question 1 is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q1-d",
+  "topicId": "eng-1-4",
+  "conceptId": "term-eutectoid-point-relation-carbon-steel",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(d) — Deferred sitting",
+  "questionText": "Explain the term eutectoid point in relation to carbon steel.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Eutectoid point in carbon steel occurs at 0.83% carbon and 723° C.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'. Question 1 is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q1-e",
+  "topicId": "eng-2-16",
+  "conceptId": "battery-powered-bicycles-encourage-variety-users",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(e) — Deferred sitting",
+  "questionText": "Battery powered bicycles encourage a variety of users. Describe any two benefits of using battery technology for personal transport.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Allows people with limited mobility the opportunity to cycle",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Health benefits – cardiovascular, fitness, wellbeing.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Reduces emissions ….",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '3 + 2'. Question 1 is 'Any ten @ 5 marks each'.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q1e-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q1-f",
+  "topicId": "eng-2-10",
+  "conceptId": "term-dissolved-acetylene-relation-oxy-acetylene",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(f) — Deferred sitting",
+  "questionText": "Describe the term dissolved acetylene in relation to oxy-acetylene welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dissolved acetylene is the refilling of acetylene cylinders at low pressure. The acetylene is absorbed by a sponge-like material, acetone, which can absorb 25 times its own volume.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'. Question 1 is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q1-g",
+  "topicId": "eng-2-13",
+  "conceptId": "benefits-using-cam-technology-manufacturing",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(g) — Deferred sitting",
+  "questionText": "Outline two benefits of using CAM technology in manufacturing.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Designs are easily modified",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Speed of production",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Repeatability",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Accuracy ...",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '3 + 2'. Question 1 is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q1-h",
+  "topicId": "eng-2-15",
+  "conceptId": "function-spring-operation-hand-exercise-device",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(h) — Deferred sitting",
+  "questionText": "Explain the function of the spring in the operation of the hand exercise device shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The function of the tension spring is to create resistance to the compression of the pivot mechanism. Builds grip strength. Spring tension can be adjusted to alter the degree of resistance and allow device to return to its original position.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'. Question 1 is 'Any ten @ 5 marks each'.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q1h-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q1-i",
+  "topicId": "eng-2-16",
+  "conceptId": "function-capacitor-any-electrical-device",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(i) — Deferred sitting",
+  "questionText": "Describe the function of a capacitor in any electrical device.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The function of a capacitor is to store electrical energy. It can allow for a stable and consistent discharge.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'. Question 1 is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q1-k",
+  "topicId": "eng-1-9",
+  "conceptId": "suggest-suitable-manufacturing-process-lightweight-thermoplastic",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(k) — Deferred sitting",
+  "questionText": "Suggest a suitable manufacturing process for a lightweight thermoplastic football, as shown opposite.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Thermoplastic footballs can be manufactured by rotational moulding.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'. Question 1 is 'Any ten @ 5 marks each'.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q1k-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q1-m",
+  "topicId": "eng-3-14",
+  "conceptId": "properties-be-considered-when-selecting-suitable",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(m) — Deferred sitting",
+  "questionText": "State two properties to be considered when selecting suitable materials to manufacture a drone.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Toughness, to withstand impact",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "UV resistant material to withstand sunlight and weathering",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Lightweight",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Waterproof",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Durable …",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '3 + 2'. Question 1 is 'Any ten @ 5 marks each'.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q1m-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q2-a-i",
+  "topicId": "eng-3-14",
+  "conceptId": "term-extended-reality",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q2(a)(i) — Deferred sitting",
+  "questionText": "Explain the term Extended Reality.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Extended Reality is the umbrella term for technology that alters reality by adding digital elements to the physical or real-world environment through the use of computer technology or wearable technologies, as in Augmented Reality, Virtual Reality or Mixed Reality.",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints '5'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q2-a-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "identify-examples-how-technology-could-benefit",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q2(a)(ii) — Deferred sitting",
+  "questionText": "Identify two examples of how this technology could benefit the environment.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Entertainment and gaming",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Education and training",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Medical/surgical training",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Military – defence training",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Travel and tourism promotion",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Aviation training",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Real estate, sales and marketing …",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '3 + 2', and opens: 'Examples of Extended Reality include:'"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q2-b",
+  "topicId": "eng-3-14",
+  "conceptId": "operating-principle-any-following",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q2(b) — Deferred sitting",
+  "questionText": "Describe the operating principle of any two of the following:\n(i) Augmented reality (AR)\n(ii) Virtual reality (VR)\n(iii) Mixed reality (MR).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Augmented Reality (AR): Uses real world video AND images to impose computer generated imagery for a composite view. Typically AR uses phone or computer apps to generate this composite view. An examples is placing furniture or objects in an existing environment and modifying the size, colour, etc.",
+    "marks": 10,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Augmented Reality (AR): Uses real world video AND images to impose computer generated imagery for a composite view. Typically AR uses phone or computer apps to generate this composite view. An examples is placing furniture or objects in an existing environment and modifying the size, colour, etc.",
+      "Virtual Reality (VR): Uses a variety of technologies to create the feeling of being immersed in a virtual world. This environment with computer generated scenes and objects is perceived through a stereoscopic headset or helmet which tracks the viewpoint, head position and motion to allow interaction with a virtual environment. 3-D images can be rendered to enhance the immersive experience in addition to sensory feedback and interactivity.",
+      "Mixed Reality (MR): A combination or blending of the actual and virtual worlds allowing the user to experience natural and intuitive 3-D environmental interaction. A headset allows the user to view the real world but also enables objects to be placed and manipulated within the environment."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any two @ 5 + 5'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q2b-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q2-c",
+  "topicId": "eng-3-14",
+  "conceptId": "function-any-following-regard-extended-reality",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q2(c) — Deferred sitting",
+  "questionText": "Explain the function of any two of the following, with regard to Extended Reality (XR) technology:\n(i) Simultaneous Localisation and Mapping (SLAM)\n(ii) Haptic technology\n(iii) Graphics Processing Units (GPU’s).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Simultaneous Localization and mapping (SLAM): Refers to a group of algorithms that allows the mapping of the environment and simultaneous tracking of the user position within that environment. It can map unknown environments by calculating positions in 3-D using a combination and variety of sensors such as cameras, accelerometers, gyroscopes and Lidar. Used in both AR and VR applications.",
+    "marks": 10,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Simultaneous Localization and mapping (SLAM): Refers to a group of algorithms that allows the mapping of the environment and simultaneous tracking of the user position within that environment. It can map unknown environments by calculating positions in 3-D using a combination and variety of sensors such as cameras, accelerometers, gyroscopes and Lidar. Used in both AR and VR applications.",
+      "Haptic technology: This technology is used in video games and controllers to provide physical feedback generated from a VR or AR environment. It is achieved through the use of motors or other actuators, simulating vibration in hand-held controllers and full body haptic feedback in suits and gloves.",
+      "Graphics Processing Units (GPU’s): Advancements in speed, architecture and miniaturisation of graphic cards have enhanced the development and proliferation of XR technology. More powerful graphic cards enable a more realistic 3-D effect in generating two images per frame, one for each eye’s viewpoint. Frame rate speed is recommended at 90 fps, with appropriate refresh rate, as it needs to match the head movement of the user, thus preventing nausea."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any two @ 5 + 5'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q2-d",
+  "topicId": "eng-3-14",
+  "conceptId": "extended-reality-technology-has-range-applications",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q2(d) — Deferred sitting",
+  "questionText": "Extended Reality technology has a range of applications. Outline how this technology could benefit any two of the following:\n(i) Entertainment\n(ii) Industry\n(iii) Training\n(iv) Tourism.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Entertainment: Gaming is a popular application of XR technology where participants can play games and interact with the environment in a virtual world. VR gaming allows the player(s) to embody characters and experience content as if they were actually there. Pokéman Go and Netflix streaming are examples.",
+    "marks": 10,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Entertainment: Gaming is a popular application of XR technology where participants can play games and interact with the environment in a virtual world. VR gaming allows the player(s) to embody characters and experience content as if they were actually there. Pokéman Go and Netflix streaming are examples.",
+      "Industry: Many elements of industry such as design and manufacture employ XR technology to improve efficiency. Objects can be designed and experienced in 3-D as the process evolves, giving a sense of realism and the opportunity to amend and improve. Manufacturing applications include the facility to view, annotate remotely or guide the user through a diagnosis or a repair without the need to be physically present. Employees can be taught or upskilled through the use of AR or VR in processes like fabrication and welding.",
+      "Training: Valuable training environments can be simulated where the user gets to experience various tasks and immersed in a virtual environment without the fear of failure or risk to personal safety. Medical students can practice surgery and get graded on their proficiency and progress. Other examples include trade skills like plumbing, electrical, mechanical, military and aviation training. All can operate in a safe and controlled environment with precise feedback.",
+      "Tourism: Local, national and international tourism can be promoted using XR technology allowing the user to experience different travel destinations. Marketers can create a 360° video of the destination that the user can view or experience using immersive technology in the comfort of their own home."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any two @ 5 + 5'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q2-e-i",
+  "topicId": "eng-3-1",
+  "conceptId": "safety",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q2(e)(i) — Deferred sitting",
+  "questionText": "Discuss the main concerns regarding the use of XR technology, with reference to the following: Safety",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Safety: some users may experience motion sickness, dizziness, headache, seizures or other issues brought on by light flashes or patterns. Prolonged usage of XR equipment may cause sensory overload or “post–VR sadness” for certain users. Time-out breaks of 10 to 15 mins are recommended for each 30 mins of use.",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints '5'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q3-a-i",
+  "topicId": "eng-3-8",
+  "conceptId": "aid-diagram-s-principle-tensile-testing",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(a)(i) — Deferred sitting",
+  "questionText": "Describe, with the aid of a diagram(s), the principle of tensile testing to determine the suitability of a material for high tension applications.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A standardised test specimen is placed in an extensometer machine where a measured tensile Load/Stress is applied. The resultant extension is plotted on a Load/Extension or Stress/Strain diagram where the tensile strength of the material can be assessed.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The diagram above represents typical tensile test profiles for a variety of materials.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Very hard and brittle (red), high stress with only a limited degree of elasticity before failure. Results in a brittle fracture.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Tough material (green), elastic & plastic deformation, necking and failure. Results in a ductile fracture.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Very Ductile material (blue), a lot of plastic deformation under load before failure.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '10'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q3ai-sol",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q3a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q3-b-i",
+  "topicId": "eng-3-8",
+  "conceptId": "testing-device-shown-opposite",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(b)(i) — Deferred sitting",
+  "questionText": "Name the testing device shown opposite.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The testing device shown is an impact testing machine (Charpy of Izod).",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints '4'.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q3-b-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "principle-operation-any-test-carried-out",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(b)(ii) — Deferred sitting",
+  "questionText": "Describe the principle of operation for any test carried out on this machine.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Charpy test. The notched bar specimen is clamped horizontally with the notch facing the striker. The pendulum is released from a striking energy of 300 joules. The specimen is deformed or broken with the resultant follow through giving a numerical value for the toughness of the material.",
+    "marks": 8,
+    "accepts": [
+     "Izod test The notched bar specimen is clamped vertically with the notch facing the striker. The pendulum is released from a striking energy of 167 joules. The specimen is deformed or broken with the resultant follow through giving a numerical value for the toughness of the material."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '8', and opens: 'Two impact tests can be performed on this machine.'",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q3bii-sol",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q3-b-iii",
+  "topicId": "eng-3-8",
+  "conceptId": "differentiate-aid-diagram-s-between-ductile",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(b)(iii) — Deferred sitting",
+  "questionText": "Differentiate, with the aid of a diagram(s), between ductile fracture and brittle fracture in metal test specimens.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ductile fracture indicates a reduction in cross–section, known as necking, as a result of plastic deformation prior to fracture. It is also known as a cup and cone fracture.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Brittle fracture occurs with little or no plastic extension resulting in a clean break. They give little warning of failure before snapping. The harder the material, the cleaner the break.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q3biii-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q3-c-i",
+  "topicId": "eng-3-8",
+  "conceptId": "dye-penetrant-test-example-where-could",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(c)(i) — Deferred sitting",
+  "questionText": "Describe the dye penetrant test and give one example of where it could be used.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The penetrant dye test is used to detect surface flaws or cracks on material surfaces.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The surface is cleaned with a cleaning agent.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "After removing the cleaner the surface is sprayed with liquid penetrant dye and allowed to soak.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The dye is then cleaned from the surface",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "A developer is then applied, which will absorb the penetrant highlighting any surface cracks.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Another method is to use a UV light over the cleaned surface to highlight any cracks.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Spindle shaft in a gearbox",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Aircraft wings",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Weld joints in fabrication",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Surfaces that may be subject to fatigue.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q3ci-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q3-c-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "aid-suitable-diagram-how-connecting-rod",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(c)(ii) — Deferred sitting",
+  "questionText": "Explain, with the aid of a suitable diagram, how a connecting rod may be tested for internal flaws.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A suitable method of detecting internal flaws would be X-ray testing.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The radiation source releases electrons by heating the cathode to a high temperature. A high DC voltage speeds up the electrons which are aimed at the anode. The electrons penetrate the anode and the energy is given off as X-rays. The anode reflects the X-rays to the test piece where the difference in absorption, due to flaws or variations in thickness, is then recorded on the film underneath. Flaws or cavities will appear darker on the recording film as they do not absorb the radiation.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Other suitable methods include ultrasonic NDT and eddy current testing.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q3cii-sol",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q3cii-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q4-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "transformation-occurs-along-line-x-diagram",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q4(b)(i) — Deferred sitting",
+  "questionText": "Explain the transformation that occurs along line X, in the diagram above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Line X represents the upper critical temperature (UCT). This is where the steel is fully transformed from BCC to FCC and all of the carbon present is fully dissolved within the structure. Above this line, the steel is fully Austenite.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints '6'.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q4b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q4-b-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "identify-regions-b-c-shown",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q4(b)(ii) — Deferred sitting",
+  "questionText": "Identify the regions A, B and C shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Ferrite and Pearlite",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = Austenite",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C = Pearlite and Cementite",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints '2 + 2 + 2', for A, B and C in that order.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q4b-crop",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Ferrite and Pearlite",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Austenite",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Pearlite and Cementite",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q4-b-iii",
+  "topicId": "eng-2-6",
+  "conceptId": "how-1-2-carbon-steel-normalised",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q4(b)(iii) — Deferred sitting",
+  "questionText": "Explain how 1.2% carbon steel is normalised, with reference to:\n• temperature\n• cooling rate\n• effects on the steel.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Heating the steel to approximately 900° C (25 - 50° above the UCT).",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Soak at this temperature to ensure uniform heating.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Cool slowly in air.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "This reduces hardness, internal stresses and increases ductility.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6'.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q4b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q4-c-i",
+  "topicId": "eng-2-6",
+  "conceptId": "suitable-heat-treatment-process-reduce-wear",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q4(c)(i) — Deferred sitting",
+  "questionText": "Describe a suitable heat treatment process to reduce wear and damage to the ram surface, as shown opposite.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Induction hardening: The inductor coil carries high frequency currents which are induced on the surface of the component causing a rapid rise in temperature. The surface layer changes from BCC to FCC, facilitating the change to austenite. Water jets then cool the steel rapidly, transforming austenite to martensite. This leaves the outer surface hard and wear resistant while the inner core remains tough. The frequency of the current and duration of the heating determine the depth of hardening.",
+    "marks": 8,
+    "accepts": [
+     "Flame hardening: The surface of the component is heated to 900°C with an oxy-acetylene flame. The surface layer changes from BCC to FCC, allowing the change to austenite. Rapid cooling with the water jets transform the austenite to martensite creating a hard outer layer. The depth of hardness depends on the rate of heating."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '8' after the two processes, set either side of an 'OR'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q4c-sol",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q4c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q4-c-ii",
+  "topicId": "eng-2-6",
+  "conceptId": "suitable-method-measuring-furnace-temperature-heat",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q4(c)(ii) — Deferred sitting",
+  "questionText": "Explain one suitable method of measuring furnace temperature in heat treatment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Optical pyrometer: This method compares the intensity of light from the filament of a lamp with the colour from the furnace chamber. Current flow from the lamp is adjusted, using a variable resistor, to match the light from the furnace. There are three possible results: 1. Filament too bright, 2. Filament not bright enough, and 3. The filament matches the brightness from the furnace. When the filament matches or seems to “disappear”, the temperature of the filament matches that of the furnace and a reading can then be taken. Accuracy of the reading is somewhat reliant on the judgement of the operator.",
+    "marks": 8,
+    "accepts": [
+     "Thermocouple Pyrometer: Operates on the principle that two dissimilar metals, of equal length, will conduct heat at different speeds. The metals used are usually nickel-aluminium and nickel-chromium. They are joined together with a galvanometer which is placed at the cold junction. A rise in temperature at the hot junction (furnace) produces an electrical current which is recorded by the galvanometer, which is calibrated to read the accurate temperature of the furnace in °C. More accurate than the optical method."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '8' after the two pyrometers, set either side of an 'OR'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q4cii-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q5-a-i",
+  "topicId": "eng-1-3",
+  "conceptId": "identify-crystal-structures-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q5(a)(i) — Deferred sitting",
+  "questionText": "Identify the crystal structures A and B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A is a body centred cubic structure (BCC).",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B is a face centred cubic structure (FCC).",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints '3 + 3', for A and B in that order.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q5a-crop",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "body centred cubic structure (BCC).",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "face centred cubic structure (FCC).",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q5-a-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "identify-metal-each-structure",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q5(a)(ii) — Deferred sitting",
+  "questionText": "Identify one metal for each structure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "alpha iron",
+    "marks": 2,
+    "accepts": [
+     "tungsten",
+     "chromium",
+     "vanadium …"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "aluminium",
+    "marks": 2,
+    "accepts": [
+     "copper",
+     "nickel",
+     "gold",
+     "silver …"
+    ]
+   }
+  ],
+  "notes": "The scheme prints '2 + 2', for the body centred and the face centred cubic structure in that order.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q5a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q5-a-iii",
+  "topicId": "eng-1-3",
+  "conceptId": "term-allotropic-transformation",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q5(a)(iii) — Deferred sitting",
+  "questionText": "Explain the term allotropic transformation.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Allotropic transformation occurs when iron is heated and changes occur in the physical structure, as represented below.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Alpha iron (BCC) exists up to 910°C.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Gamma iron (FCC) exists between 910° C and 1390° C and experiences a proportionate decrease in volume.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Delta iron exists above 1390° C where the structure returns to a BCC form with a proportionate increase in volume.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q5aiii-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q5-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "draw-equilibrium-diagram-according-given-data",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q5(b)(i) — Deferred sitting",
+  "questionText": "The table shows solidification temperatures for various alloys of metal A and metal B. The melting point of metal A is 350 °C and the melting point of metal B is 300 °C. Using the graph paper supplied: Draw the equilibrium diagram according to the given data and label the liquidus and solidus lines.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The table shows solidification temperatures for various alloys of metal A and metal B. The melting point of metal A is 350 °C and the melting point of metal B is 300 °C. Using the graph paper supplied: Draw the equilibrium diagram according to the given data and label the liquidus and solidus lines.",
+    "marks": 10,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints 'Diagram 8' and 'Label 1 + 1'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q5bi-sol",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q5-b-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "alloy-containing-20-metal-b-determine",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q5(b)(ii) — Deferred sitting",
+  "questionText": "The table shows solidification temperatures for various alloys of metal A and metal B. The melting point of metal A is 350 °C and the melting point of metal B is 300 °C. Using the graph paper supplied: For the alloy containing 20% metal B, determine from the diagram the ratio of the phases at 250 °C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The table shows solidification temperatures for various alloys of metal A and metal B. The melting point of metal A is 350 °C and the melting point of metal B is 300 °C. Using the graph paper supplied: For the alloy containing 20% metal B, determine from the diagram the ratio of the phases at 250 °C.",
+    "marks": 4,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '4'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q5bii-sol",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q5b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q5-c",
+  "topicId": "eng-1-3",
+  "conceptId": "select-any-i-ii-or-iii",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q5(c) — Deferred sitting",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain:\n(i) vacancy and substitutional defects in metals.\n(ii) the benefits of anodising aluminium.\n(iii) age hardening in metals.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A vacancy defect occurs where an atom is missing from the normal crystal structure. It reduces the strength and conductivity of the metal. A substitutional defect occurs where a foreign atom occupies the space of the original atom in the crystal structure. They are usually larger in size and can cause some distortion and straining of the crystal lattice.",
+    "marks": 16,
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "A vacancy defect occurs where an atom is missing from the normal crystal structure. It reduces the strength and conductivity of the metal. A substitutional defect occurs where a foreign atom occupies the space of the original atom in the crystal structure. They are usually larger in size and can cause some distortion and straining of the crystal lattice.",
+      "Benefits of anodising aluminium: • Improves resistance to corrosion and discolouring • Excellent resistance to abrasion • Increases durability • Variety of colours – aesthetic qualities ….",
+      "Age hardening, also known as precipitation hardening, is a type of heat treatment that is used to impart strength to metals and their alloys. A common example is the aluminium and copper alloy – duralumin. It contains approximately 4% copper. The three stages of the process are: • Solution treatment: heating the metal to the desired temperature for a period of time (soaking). • Fast cooling: the alloy is quenched in water or oil. • Ageing: can be carried out at room temperature, or heated to accelerate the ageing process. Age hardening can be carried out on both ferrous and non-ferrous alloys."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints 'Any two @ 8 + 8'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q5c-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q6-a-i",
+  "topicId": "eng-2-10",
+  "conceptId": "suitable-resistance-welding-process-provide-seal",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(a)(i) — Deferred sitting",
+  "questionText": "Name a suitable resistance welding process to provide a seal for the stainless steel tank, shown opposite.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Resistance seam welding would be a suitable welding process for the stainless steel tank.",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints '4'.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q6a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q6-a-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "aid-diagram-s-principle-welding-process",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(a)(ii) — Deferred sitting",
+  "questionText": "Describe, with the aid of a diagram(s), the principle of the welding process named in 6(a)(i) above.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Two copper roller electrodes rotate to allow the material to move through the welder continuously",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Pressure is applied to the material",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Low voltage AC current is then applied through the electrodes",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Resistance to the passage of current causes a rapid rise in temperature at the interface of the metals",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Fusion occurs between the two metal components to form a weld joint",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Fusion can be continuous (for gas or liquid-tight seals) or intermittent depending on the timing of the current pulses. Welds can be spaced or overlapped depending on the application.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '12'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q6aii-sol",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q6a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q6-b-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "aid-diagram-s-principle-friction-welding",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(b)(ii) — Deferred sitting",
+  "questionText": "Describe, with the aid of a diagram(s), the principle of friction welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Friction welding is a solid-state fusion process that produces full contact, high quality joints. By rotating one work piece at high speed relative to another, a compressive axial force is applied. This generates sufficient temperature to cause the interface to plasticise and fuse.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6': each part answered earns 6.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q6bii-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q6-b-iii",
+  "topicId": "eng-2-16",
+  "conceptId": "operation-rectifier-manual-metal-arc-welding",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(b)(iii) — Deferred sitting",
+  "questionText": "Outline the operation of the rectifier in a manual metal arc welding circuit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A rectifier converts alternating current (AC) to direct current (DC) in a welding circuit. The AC input from the transformer is connected to a bridge rectifier circuit at points A and B. Four diodes: D1, D2, D3 and D4 are placed in a configuration to give a DC output through connections C and D.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6': each part answered earns 6.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q6biii-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q6-c",
+  "topicId": "eng-2-10",
+  "conceptId": "aid-diagram-s-principle-mig-welding",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(c) — Deferred sitting",
+  "questionText": "Describe, with the aid of a diagram(s), the principle of MIG welding, with reference to each of the following:\nEquipment\nElectrode type\nWeld pool protection\nApplication.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "MIG Welding: MIG welding is semi-automatic process that can be automated through the use of robotics. Equipment: A DC power source is used to provide variable electrical current to generate the required temperature for welding. The welding unit has a motorised wire feed unit to supply continuous electrode and inert gas through the flexible hosepipe leading to the welding gun. Electrode type: A spool of bare wire electrode is fed continuously to the welding gun. Composition and thickness can vary to suit the application. No slag is produced. Weld pool protection: The weld pool is protected from contamination by inert gas, fed from a pressure regulated cylinder through the hosepipe and distributed at the nozzle to the weld area. Typical inert gases; argon, nitrogen, carbon dioxide or helium. Application: light and heavy gauge mild steel is the most common. Can also be used to weld aluminium (AC), stainless steel and copper, with appropriate settings.",
+    "marks": 16
+   }
+  ],
+  "notes": "The scheme prints '16'. The paper sets two (c)s either side of an OR: MIG welding, \"16\", carded at the letter, and the farming robotics (c), whose (i) and (ii) are carded apart.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q6c-sol",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q6c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q7-a-i",
+  "topicId": "eng-1-9",
+  "conceptId": "aid-diagram-s-suitable-process-manufacture",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(a)(i) — Deferred sitting",
+  "questionText": "Describe, with the aid of a diagram(s), a suitable process to manufacture plastic window frames, as shown in the diagram opposite.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Plastic window frame profiles can be manufactured using the process of extrusion. Granulated thermoplastic polymer is fed into the barrel from a hopper. The turning screw moves the polymer forward. Heaters, wrapped around the barrel, melt the polymer to liquid. The molten polymer is pushed through the attached shaping die to give the required profile. Solid or hollow ribbed sections can be produced.",
+    "marks": 12
+   }
+  ],
+  "notes": "The scheme prints '12'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q7ai-sol",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q7a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q7-b-i",
+  "topicId": "eng-1-9",
+  "conceptId": "select-suitable-screen-protector-material-smart",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(b)(i) — Deferred sitting",
+  "questionText": "Select a suitable screen protector material for the smart watch shown opposite. Justify your selection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Polycarbonate",
+    "marks": 6,
+    "accepts": [
+     "Thermoplastic polyurethane (TPU)",
+     "Polyethylene terephthalate (PET)",
+     "Toughened Glass …"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6': each part answered earns 6. The scheme lists materials and prints no justification for them.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q7bi-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q7-b-iv",
+  "topicId": "eng-1-9",
+  "conceptId": "process-calendering",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(b)(iv) — Deferred sitting",
+  "questionText": "Explain the process of calendering.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calendering: This process involves feeding hot polymer through a series of heated rollers to profile the polymer to the correct thickness and texture. It is used to produce high-volume plastic film and sheet in flat, patterned or embossed form using PVC or other modified thermoplastics.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6': each part answered earns 6.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q7biv-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q7-b-v",
+  "topicId": "eng-1-9",
+  "conceptId": "desirable-properties-sports-water-bottle-shown",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(b)(v) — Deferred sitting",
+  "questionText": "Outline three desirable properties for the sports water bottle shown.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tough, impact resistant",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "UV resistant",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Friction surface for grip",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Durable",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6': each part answered earns 6.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q7bv-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q7-c-i",
+  "topicId": "eng-2-13",
+  "conceptId": "any-applications-3-d-printing-field",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(c)(i) — Deferred sitting",
+  "questionText": "Describe any two applications of 3-D printing in the field of medicine.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Prosthetic limbs can be personalised through 3-D printing.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Implants and stents may be 3-D printed.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Bio printing of tissues and organs",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Models for surgical preparation may be 3-D printed.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '3 + 3'."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q7-c-iii",
+  "topicId": "eng-1-9",
+  "conceptId": "differentiate-between-thermoplastics-thermosetting-plastics",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(c)(iii) — Deferred sitting",
+  "questionText": "Differentiate between thermoplastics and thermosetting plastics.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Thermoplastics • Structure of linear chains which are primary bonded • Secondary bonding between the linear chains • Temperature increase weakens the secondary bonds which allows the polymer to soften and bend • Can be reshaped continuously through the application of heat and pressure • When cooled, the shape will remain unless reheating occurs.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Thermosetting plastics • Structure of linear chains which are primary bonded • Cross-linking occurs between the linear chains during the curing process where the linear chains are primary bonded. • Creates a strong rigid structure that can not be reshaped with heat or pressure.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '5'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q7ciii-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q8-b-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "distinguish-between-terms-forming-generating",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(b)(ii) — Deferred sitting",
+  "questionText": "Distinguish between the terms forming and generating.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Forming involves the creation of a workpiece shape due to the profiled shape of the cutting tool. Will have full surface contact with the cutting tool profile shape. Common examples include form turning and drilling.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Generating refers to the creation of a workpiece due to the feed trajectory of a single point cutting tool, examples include straight turning, taper turning and profile milling.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6': each part answered earns 6.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q8bii-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q8-b-iii",
+  "topicId": "eng-2-11",
+  "conceptId": "difference-between-t-slot-cutter-dovetail",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(b)(iii) — Deferred sitting",
+  "questionText": "Explain the difference between a t-slot cutter and a dovetail cutter.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "T-slot cutters have a T shaped profile and are generally used for creating inverted T slots on machine tables and beds when fitted to a milling machine.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A dovetail cutter will machine an angled profile suitable for dovetail joints.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6': each part answered earns 6.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q8biii-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q8-b-v",
+  "topicId": "eng-2-11",
+  "conceptId": "aid-diagram-s-difference-between-rake",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(b)(v) — Deferred sitting",
+  "questionText": "Explain, with the aid of a diagram(s), the difference between a rake angle and a clearance angle on cutting tools.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Rake angle is the angle of the cutting face relative to the workpiece. The rake angle facilitates the lifting of the chip during cutting. A rake angle can be positive, negative or zero.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Clearance angle is formed to allow only one point of the cutting contact the workpiece.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6': each part answered earns 6.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q8bv-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q8-c",
+  "topicId": "eng-2-11",
+  "conceptId": "tungsten-carbide-inserts-commonly-used-milling",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(c) — Deferred sitting",
+  "questionText": "Tungsten carbide inserts are commonly used on milling cutters.\n(i) Outline two advantages of using carbide inserts for machining.\n(ii) Explain how tungsten carbide cutting inserts are manufactured.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.",
+    "marks": 8,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.",
+      "Long life and cost effective",
+      "Easily replaced, do not require sharpening"
+     ]
+    }
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "During the production of tungsten carbide cutting tool inserts, cobalt and tungsten powder are mixed with cemented carbide and pressed into shape. The process: Carbon black, tungsten metal and metal oxides are mixed and heated until the carbon bonds with the tungsten (carburises). Mix the tungsten carbide powder with wax and cobalt. This is mixed very thoroughly using a ball mill to give a final powder. This final powder is put in a mould and pressed to the desired shape. Heat (pre-sinter) the pressed, final powder enough so that is sticks together and shapes like soft chalk. Put the soft chalk pieces in a very hot, high pressure oven and sinter to 1600 °C where the powder cooks, shrinks and hardens to tungsten carbide.",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme prints '4 + 4' for (i) and '8' for (ii). The paper sets two (c)s either side of an OR: the carbide inserts (c), whose (i) \"4 + 4\" and (ii) \"8\" are carded together at the letter, and the CNC (c), whose (i) and (ii) are carded apart.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q8c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q8-c-i",
+  "topicId": "eng-2-16",
+  "conceptId": "advantages-using-carbide-inserts-machining-or",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(c)(i) — Deferred sitting",
+  "questionText": "Laser cutting technology is widely used in both schools and in industry. Using computer numerical control (CNC), they can perform precise movements. Explain why stepper motors are used to control the axial movements on a CNC machine.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Stepper motors provide a high degree of precision in their rotational movement with excellent speed control. They are strong and reliable, capable of repeatability with complex movements. They can work in a range of environments and require minimal maintenance.",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme prints '8'. The paper sets two (c)s either side of an OR: the carbide inserts (c), whose (i) \"4 + 4\" and (ii) \"8\" are carded together at the letter, and the CNC (c), whose (i) and (ii) are carded apart.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q8cor-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q8-c-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "how-tungsten-carbide-cutting-inserts-manufactured",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(c)(ii) — Deferred sitting",
+  "questionText": "Laser cutting technology is widely used in both schools and in industry. Using computer numerical control (CNC), they can perform precise movements. Outline two advantages of simulation technology in CNC machining.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 4"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Can detect and correct any errors or collisions in the CNC code",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Saves time and money by avoiding costly mistakes",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Preserves the integrity of the machine",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Reduces wastage of material ….",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '4 + 4'. The paper sets two (c)s either side of an OR: the carbide inserts (c), whose (i) \"4 + 4\" and (ii) \"8\" are carded together at the letter, and the CNC (c), whose (i) and (ii) are carded apart.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q8cor-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q9-a-i",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-s-suitable-mechanism-operate",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(a)(i) — Deferred sitting",
+  "questionText": "Describe, with aid of a diagram(s), a suitable mechanism to operate the jaws of the litter picker.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A pivoting arm is positioned to fulcrum through a fixed arm.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A pull cord is attached to the hand trigger device.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "As the cord is pulled, the pivoting arm moves upwards in the path of an arc, providing a clamping action.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The tension spring allows the pivoting arm to remain naturally open and ensures the pull cord is in tension.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Other solutions include: Twin gears with a double sided rack in the middle, moving laterally to pivot both gears which are attached to each arm, allowing them to clamp.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q9ai-sol",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q9a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q9-a-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "select-materials-suitable-manufacture-litter-picker",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(a)(ii) — Deferred sitting",
+  "questionText": "Select two materials suitable for the manufacture of the litter picker. Justify your selection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Aluminium for the frame – lightweight, easy to manufacture, corrosion resistant.",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Recycled polypropylene for the handle, trigger and jaws – lightweight, strong, variety of colours and good for the environment.",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints '4 + 4'.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q9a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q9-b-i",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-s-operation-double-acting",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(b)(i) — Deferred sitting",
+  "questionText": "Describe, with the aid of a diagram(s), the operation of a double-acting pneumatic cylinder.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Double-acting cylinders can apply force in both directions. When air is applied through port A, the cylinder retracts to the right and forces air out through port B. Reverse action occurs when air is forced inward through port B.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6': each part answered earns 6.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q9bi-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q9-b-iii",
+  "topicId": "eng-2-15",
+  "conceptId": "advantage-disadvantage-chain-drive-system",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(b)(iii) — Deferred sitting",
+  "questionText": "Outline one advantage and one disadvantage of a chain drive system.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Positive drive",
+    "marks": null,
+    "accepts": [
+     "Non-slip",
+     "High mechanical strength",
+     "Can be used over short or long distance"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Needs lubrication",
+    "marks": null,
+    "accepts": [
+     "Noisy",
+     "Can stretch",
+     "Requires housing or guarding."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6': each part answered earns 6."
+ },
+ {
+  "id": "eng-2023-hl-deferred-q9-b-v",
+  "topicId": "eng-2-15",
+  "conceptId": "identify-suitable-use-cam-follower-mechanism",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(b)(v) — Deferred sitting",
+  "questionText": "Identify a suitable use for a cam and follower mechanism.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Internal combustion engine – cam and follower to operate the valves.",
+    "marks": 6,
+    "accepts": [
+     "Cylindrical cam and follower to give vertical reciprocation on horizontal plane."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6': each part answered earns 6.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q9bv-sol"
+ },
+ {
+  "id": "eng-2023-hl-deferred-q9-c",
+  "topicId": "eng-2-15",
+  "conceptId": "ride-lawnmover-shown-opposite-features-number",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(c) — Deferred sitting",
+  "questionText": "The ride-on lawnmover shown opposite features a number of control and safety mechanisms.\n(i) Describe, with the aid of a diagram(s), a suitable steering mechanism to control the directional movement of the lawnmover.\n(ii) Explain the operation of any safety mechanism that could prevent the mower blades rotating when the operator is not seated.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Suitable steering mechanisms: Rack and Pinion/ linkage system: • Pinion is connected to the steering column and wheel. • As pinion rotates the rack will move left or right. • Track rods, connected through the ball joints, will move the stub axles on their pivot points, thus turning the wheels left or right. Linear actuated system: • Mechanical or hydraulic method of rotating the vertical axle by rack and pinion or linkage mechanism",
+    "marks": 10
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Safety mechanism for blade rotation - Pressure sensitive switching. A possible solution is to install a kill-switch, which cuts power to the mower when the operator is not seated. A push to make switch (PTM) is fitted under the rear of the seat. The seat bracket is pivoted at the front and supported at the rear by two compression springs. The seat can hinge forward. When the seat is in the downward position, no pressure is applied to the switch, due to the resistance of compression springs. When the operator is seated, enough pressure is applied to push the switch down, thus completing the circuit and allowing engagement of the blade drive. When the operator rises from the seat, the switch will cut-out, as the compression springs allow the switch to return to the off position.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints '10' for (i) and '6' for (ii). The paper sets two (c)s either side of an OR: the lawnmower (c), whose (i) \"10\" and (ii) \"6\" are carded together at the letter, and the circuit board (c), whose (i), (ii) and (iii) are carded apart.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q9c-sol",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q9c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-deferred-q9-c-i",
+  "topicId": "eng-2-16",
+  "conceptId": "aid-diagram-s-suitable-steering-mechanism",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(c)(i) — Deferred sitting",
+  "questionText": "The control unit shown below is an example of a printed circuit board with some common electronic components. Identify component X and component Y.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Component X is an integrated chip (IC).",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Component Y is a potentiometer.",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints '2 + 2', for X and Y in that order. The paper sets two (c)s either side of an OR: the lawnmower (c), whose (i) \"10\" and (ii) \"6\" are carded together at the letter, and the circuit board (c), whose (i), (ii) and (iii) are carded apart.",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q9cor-crop",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "integrated chip (IC).",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "potentiometer.",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2023-hl-deferred-q9-c-ii",
+  "topicId": "eng-2-16",
+  "conceptId": "operation-any-safety-mechanism-could-prevent",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(c)(ii) — Deferred sitting",
+  "questionText": "The control unit shown below is an example of a printed circuit board with some common electronic components. Explain the function of component X or Y.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "An integrated chip (X) can function as an amplifier, timer, counter, logic gate, microcontroller or microprocessor. They are the building blocks of modern electronic circuits.",
+    "marks": 6,
+    "accepts": [
+     "Potentiometer (Y) (rotary or linear) can manually adjust resistance in a circuit. Commonly used to control audio volume, motor speed and light intensity."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '6'. The paper sets two (c)s either side of an OR: the lawnmower (c), whose (i) \"10\" and (ii) \"6\" are carded together at the letter, and the circuit board (c), whose (i), (ii) and (iii) are carded apart.",
+  "figureKey": "engineering-2023-HL-deferred-scheme-q9cor-sol",
+  "questionFigureKey": "engineering-2023-HL-deferred-paper-q9cor-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
   "id": "eng-2023-ol-q1-a",
   "topicId": "eng-3-14",
   "conceptId": "application-remote-control-technology",
