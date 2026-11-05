@@ -480,10 +480,8 @@ const subsetSums = (terms: number[]) => [...terms.reduce((sums, term) => new Set
  *  - a band table headed by the row's marks whose printed values cover every mark from 0 ("Catagóir Marc as 7
  *    Sármhaith 6-7 … Lag/An-lag 0-2", "Catagóir An plé (23 marc) … 21-23 … 0-9", "Pointe eolais Marc as 6 Léiriú
  *    sármhaith 6 … Léiriú an-lag 0-1"): every mark.
- *  A row with steps or under a ladder is never touched; nothing is read from outside the criterion's own guidance. */
-/** The coordinator's batch-4 decision covers rows of 6 marks or more; 22 rows of 4-5 marks carry the same printed band
- *  tables ("Pointe amháin eolais = 4 mharc" under "Catagóir Marc as 4 …") and wait for a decision of their own. */
-const MIN_STEPPED = 6;
+ *  A printed price is claimable at every level (coordinator, batch 5: no floor). A row with steps or under a ladder is
+ *  never touched; nothing is read from outside the criterion's own guidance. */
 export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[]): IrishAllocation => {
   const text = guidance.join(' ').replace(/\s+/g, ' ');
   const counts = new Map<number, number[]>();
@@ -493,12 +491,24 @@ export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[
     if (count > 1 && each > 0 && (WORDS[match[3].toLowerCase()] ?? Number(match[3])) === count) counts.set(count * each, cumulative(Array(count).fill(each)));
   }
   const bands = new Map<number, Set<number>>();
-  const headed = /(?:Catagóir\s+Marc as (\d+)|Catagóir\s+(?:An plé|Plé|Eolas)\s*\((\d+)\s*m?h?arc\)|Pointe eolais Marc as (\d+)|Catagóir\s+Plé\s+(?=Marcanna))([\s\S]*?(?:Lag\/\s?An-lag|Léiriú an-lag)[^0-9]*?(?:\d+\s*[-–]\s*\d+|\d+(?:\s*,\s*\d+)*))/g;
+  const headed = /(?:Catagóir\s+Marc as (\d+)(?!\s+Marc as)|Catagóir\s+(?:An plé|Plé|Eolas)\s*\((\d+)\s*m?h?arc\)|Pointe eolais Marc as (\d+)|Catagóir\s+Plé\s+(?=Marcanna))([\s\S]*?(?:Lag\/\s?An-lag|Léiriú an-lag)[^0-9]*?(?:\d+\s*[-–]\s*\d+|\d+(?:\s*,\s*\d+)*))/g;
   for (const match of text.matchAll(headed)) {
     const values = bandValues(match[4].replace(/\([^)]*\)/g, ' '));
     // "Catagóir Plé Marcanna …" (2026) prints no price in its header: its top printed value is the price it scales.
     const top = Number(match[1] ?? match[2] ?? match[3] ?? Math.max(...values));
     if (covers(values, top) && Math.max(...values) === top) bands.set(top, values);
+  }
+  // A table with one column per point, "Catagóir Marc as 5 Marc as 4 Sármhaith 5 4 An-mhaith 4 3 … Lag/An-lag 0-1 0"
+  // (Higher 4F(iii), Pointe Eolais 1 and 2): each band's cells go to the columns in print order, and each column scales the
+  // row priced at its own header.
+  for (const match of text.matchAll(/Catagóir((?:\s+Marc as \d+){2,})\s+([\s\S]*?Lag\/\s?An-lag\s+(?:(?:\d+\s*[-–]\s*\d+|\d+(?:\s*,\s*\d+)*)\s*){2,})/g)) {
+    const tops = [...match[1].matchAll(/\d+/g)].map(top => Number(top[0]));
+    const cells = [...match[2].matchAll(/\d+\s*[-–]\s*\d+|\d+(?:\s*,\s*\d+)*/g)].map(cell => cell[0]);
+    if (cells.length % tops.length !== 0) continue;
+    tops.forEach((top, column) => {
+      const values = bandValues(cells.filter((_, index) => index % tops.length === column).join(' '));
+      if (covers(values, top) && Math.max(...values) === top) bands.set(top, values);
+    });
   }
   const splitOf = (row: IrishAnswerRow): number[] | undefined => {
     const at = text.indexOf(row.text.slice(0, 30));
@@ -520,7 +530,7 @@ export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[
     parts: allocation.parts.map(part => (part.ladder ? part : {
       ...part,
       rows: part.rows.map(row => {
-        if (row.steps || row.marks < MIN_STEPPED) return row;
+        if (row.steps || row.marks < 2) return row;
         const steps = stepsFor(row);
         return steps && steps.length > 2 ? { ...row, steps } : row;
       }),
