@@ -193,7 +193,7 @@ export const CARDS: SecCard[] = [
     questionText: "In the box provided, make a well proportioned 2D sketch of the bench shown when viewed in the direction of the arrow A.",
     tariffModel: {"kind":"fixed","notation":"(Very good sketch - 8 marks Fair sketch - 4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In the box provided, make a well proportioned 2D sketch of the bench shown when viewed in the direction of the arrow A.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    { id: "r-1", kind: "criterion", verbatim: "In the box provided, make a well proportioned 2D sketch of the bench shown when viewed in the direction of the arrow A.", marks: 8, contextNote: "(Very good sketch - 8 marks Fair sketch - 4 marks) The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", permittedMarks: [0,4,8], ask: true },
     ],
     questionFigure: {
           "candId": "technology-2015-OL-paper-secA-q7-art",
@@ -1647,14 +1647,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2015 OL Section C Q5(c)(ii)",
     stem: "The plastic slide at 5(b) above could be manufactured using rotational moulding. The main steps of the rotational moulding process are shown in the graphics below.",
     questionText: "Briefly describe the steps involved in rotational moulding as outlined in the graphics below.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "1. Mould Charging– Plastic powder is added into the mould.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "2. Heating– The mould is closed and heated.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "As the plastic softens, the mould begins to rotate.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "3. Cooling- The softened plastic takes the shape of the mould as it rotates. Once this process is complete, the cooling of the mould commences.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "4. Removal- Once the mould has cooled sufficiently, the moulded plastic component is removed, etc.", marks: null, openList: true },
-    { id: "r-6", kind: "point", verbatim: "(Very good description– 6 marks Fair description- 4 marks)", marks: null, openList: true },
+    { id: "r-1", kind: "criterion", verbatim: "1. Mould Charging– Plastic powder is added into the mould. 2. Heating– The mould is closed and heated. As the plastic softens, the mould begins to rotate. 3. Cooling- The softened plastic takes the shape of the mould as it rotates. Once this process is complete, the cooling of the mould commences. 4. Removal- Once the mould has cooled sufficiently, the moulded plastic component is removed, etc.", marks: 6, contextNote: "(Very good description– 6 marks Fair description- 4 marks)", permittedMarks: [0,4,6] },
     ],
     questionFigure: {
           "candId": "technology-2015-OL-paper-secC-q5c-art",
@@ -1698,13 +1693,9 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2015 OL Section C Q5(d)(ii)",
     stem: "The image shows a welded joint. Welding is a means of permanently joining two pieces of metal.",
     questionText: "Describe using notes and annotated sketches one semi-permanent joint.",
-    tariffModel: {"kind":"questionTotal","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"(10 Marks, 4+6)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Description of a relevant joint.", marks: null, openList: true },
-    { id: "r-2", kind: "point", verbatim: "Machine screw– Used to hold a plate to a cast housing, etc.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Stud– Used to secure machines to factory floors, etc.", marks: null, openList: true },
-    { id: "r-4", kind: "point", verbatim: "Grub screw– Used to lock gears onto shafts, etc.", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "(Very good description– 6 marks Fair description- 4 marks)", marks: null, openList: true },
+    { id: "r-1", kind: "criterion", verbatim: "Description of a relevant joint. Machine screw– Used to hold a plate to a cast housing, etc. Stud– Used to secure machines to factory floors, etc. Grub screw– Used to lock gears onto shafts, etc.", marks: 6, contextNote: "(Very good description– 6 marks Fair description- 4 marks)", permittedMarks: [0,4,6] },
     ],
     questionFigure: {
           "candId": "technology-2015-OL-paper-secC-q5d-art",
@@ -1904,7 +1895,7 @@ export const CARDS: SecCard[] = [
     questionText: "In the box provided, make a well proportioned 2D sketch of the chair shown when viewed in the direction of the arrow A.",
     tariffModel: {"kind":"fixed","notation":"(Very good sketch - 8 marks Fair sketch - 4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In the box provided, make a well proportioned 2D sketch of the chair shown when viewed in the direction of the arrow A.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    { id: "r-1", kind: "criterion", verbatim: "In the box provided, make a well proportioned 2D sketch of the chair shown when viewed in the direction of the arrow A.", marks: 8, contextNote: "(Very good sketch - 8 marks Fair sketch - 4 marks) The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", permittedMarks: [0,4,8], ask: true },
     ],
     questionFigure: {
           "candId": "technology-2016-OL-paper-secA-q7-art",
@@ -2246,7 +2237,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two consequences for a manufacturer when a product has to be recalled.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Loss in sales, damage to reputation, potential lawsuits taken against the", marks: 2, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Loss in sales, damage to reputation, potential lawsuits taken against the", marks: 2, contextNote: "The printed scheme breaks off here, mid-sentence.", openList: true },
     ],
     questionFigure: {
           "candId": "technology-2016-OL-paper-secB-q2b-art",
@@ -3420,7 +3411,7 @@ export const CARDS: SecCard[] = [
     questionText: "Some materials are prone to corrosion. Explain what is meant by the term corrosion.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "This is a natural process where materials such as metals are gradually destroyed by a chemical reaction with", marks: 4, openList: true },
+    { id: "r-1", kind: "point", verbatim: "This is a natural process where materials such as metals are gradually destroyed by a chemical reaction with", marks: 4, contextNote: "The printed scheme breaks off here, mid-sentence.", openList: true },
     ],
     questionFigure: {
           "candId": "technology-2016-OL-paper-secC-q5b-art",
@@ -3683,7 +3674,7 @@ export const CARDS: SecCard[] = [
     questionText: "In the box provided, make a well proportioned 2D sketch of the Dyson Air Blade hand dryer shown when viewed in the direction of the arrow A.",
     tariffModel: {"kind":"fixed","notation":"(Very good sketch - 8 marks Fair sketch - 4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In the box provided, make a well proportioned 2D sketch of the Dyson Air Blade hand dryer shown when viewed in the direction of the arrow A.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    { id: "r-1", kind: "criterion", verbatim: "In the box provided, make a well proportioned 2D sketch of the Dyson Air Blade hand dryer shown when viewed in the direction of the arrow A.", marks: 8, contextNote: "(Very good sketch - 8 marks Fair sketch - 4 marks) The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", permittedMarks: [0,4,8], ask: true },
     ],
     questionFigure: {
           "candId": "technology-2017-OL-paper-secA-q7-art",
@@ -5549,7 +5540,7 @@ export const CARDS: SecCard[] = [
     questionText: "In the box provided, make a well proportioned 2D sketch of the bench shown when viewed in the direction of the arrow A.",
     tariffModel: {"kind":"fixed","notation":"(Very good sketch - 8 marks Fair sketch - 4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 8, contextNote: "The scheme prints no drawing for this part, only how the sketch is marked: (Very good sketch - 8 marks Fair sketch - 4 marks)", unprinted: true },
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 8, contextNote: "The scheme prints no drawing for this part, only how the sketch is marked: (Very good sketch - 8 marks Fair sketch - 4 marks)", permittedMarks: [0,4,8], unprinted: true },
     ],
     questionFigure: {
           "candId": "technology-2018-OL-paper-secA-q7-art",
@@ -7243,7 +7234,7 @@ export const CARDS: SecCard[] = [
     questionText: "The image shows a push-car for a child, designed and manufactured by the Swiss designer Wolfgang Sirch. In the box provided, make a well proportioned 2D sketch of the push-car when viewed in the direction of arrow A.",
     tariffModel: {"kind":"fixed","notation":"(Very good sketch - 8 marks Fair sketch - 4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The image shows a push-car for a child, designed and manufactured by the Swiss designer Wolfgang Sirch. In the box provided, make a well proportioned 2D sketch of the push-car when viewed in the direction of arrow A.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    { id: "r-1", kind: "criterion", verbatim: "The image shows a push-car for a child, designed and manufactured by the Swiss designer Wolfgang Sirch. In the box provided, make a well proportioned 2D sketch of the push-car when viewed in the direction of arrow A.", marks: 8, contextNote: "(Very good sketch - 8 marks Fair sketch - 4 marks) The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", permittedMarks: [0,4,8], ask: true },
     ],
     questionFigure: {
           "candId": "technology-2019-OL-paper-secA-q7-art",
@@ -8975,9 +8966,9 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-a7", topicId: "tech-core-graphics", conceptId: "core-graphics",
     section: "A", questionRef: "2021 OL Section A Q7",
     questionText: "The image shows a wooden birdhouse. In the box provided, make a well-proportioned 2D sketch of the elevation looking in the direction of arrow A and the plan looking in the direction of arrow B.",
-    tariffModel: {"kind":"fixed","notation":"(Very good sketch - 8 marks, A Fair sketch - 4 marks)"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed","notation":"(Very good sketch - 8 marks, Fair sketch - 4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The image shows a wooden birdhouse. In the box provided, make a well-proportioned 2D sketch of the elevation looking in the direction of arrow A and the plan looking in the direction of arrow B.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    { id: "r-1", kind: "criterion", verbatim: "The image shows a wooden birdhouse. In the box provided, make a well-proportioned 2D sketch of the elevation looking in the direction of arrow A and the plan looking in the direction of arrow B.", marks: 8, contextNote: "(Very good sketch - 8 marks, Fair sketch - 4 marks) The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", permittedMarks: [0,4,8], ask: true },
     ],
     questionFigure: {
           "candId": "technology-2021-OL-paper-secA-q7-art",
@@ -10677,7 +10668,7 @@ export const CARDS: SecCard[] = [
     questionText: "The image shows a Stockholm toddler chair that can be used at two different heights, by simply turning it upside-down. In the box provided, make a well-proportioned 2D sketch of the chair when viewed in the direction of arrow A.",
     tariffModel: {"kind":"fixed","notation":"(Very good sketch- 8 marks, fair sketch 4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The image shows a Stockholm toddler chair that can be used at two different heights, by simply turning it upside-down. In the box provided, make a well-proportioned 2D sketch of the chair when viewed in the direction of arrow A.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    { id: "r-1", kind: "criterion", verbatim: "The image shows a Stockholm toddler chair that can be used at two different heights, by simply turning it upside-down. In the box provided, make a well-proportioned 2D sketch of the chair when viewed in the direction of arrow A.", marks: 8, contextNote: "(Very good sketch- 8 marks, fair sketch 4 marks) The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", permittedMarks: [0,4,8], ask: true },
     ],
     questionFigure: {
           "candId": "technology-2022-OL-paper-secA-q7-art",
@@ -14043,7 +14034,7 @@ export const CARDS: SecCard[] = [
     questionText: "The image shows a machine tool stand. In the box provided, make a well-proportioned 2D sketch of the stand when viewed in the direction of arrow A.",
     tariffModel: {"kind":"fixed","notation":"(Very good sketch- 8 marks, fair sketch 4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The image shows a machine tool stand. In the box provided, make a well-proportioned 2D sketch of the stand when viewed in the direction of arrow A.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    { id: "r-1", kind: "criterion", verbatim: "The image shows a machine tool stand. In the box provided, make a well-proportioned 2D sketch of the stand when viewed in the direction of arrow A.", marks: 8, contextNote: "(Very good sketch- 8 marks, fair sketch 4 marks) The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", permittedMarks: [0,4,8], ask: true },
     ],
     questionFigure: {
           "candId": "technology-2024-OL-paper-secA-q7-art",
@@ -15795,7 +15786,7 @@ export const CARDS: SecCard[] = [
     questionText: "The image shows a DC motor, a push-to-make switch, and a battery box connected to form a simple circuit. In the space provided, sketch a circuit diagram for this circuit.",
     tariffModel: {"kind":"fixed","notation":"(Very good diagram- 8 marks, good diagram- 6 marks, fair diagram- 4 marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The image shows a DC motor, a push-to-make switch, and a battery box connected to form a simple circuit. In the space provided, sketch a circuit diagram for this circuit.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    { id: "r-1", kind: "criterion", verbatim: "The image shows a DC motor, a push-to-make switch, and a battery box connected to form a simple circuit. In the space provided, sketch a circuit diagram for this circuit.", marks: 8, contextNote: "(Very good diagram- 8 marks, good diagram- 6 marks, fair diagram- 4 marks) The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", permittedMarks: [0,4,6,8], ask: true },
     ],
     questionFigure: {
           "candId": "technology-2025-OL-paper-secA-q9-art",
@@ -17193,7 +17184,7 @@ export const CARDS: SecCard[] = [
     questionText: "In the box provided, sketch a well-proportioned elevation of the three-tiered planter box when viewed in the direction of arrow A.",
     tariffModel: {"kind":"fixed","notation":"(8,6,4,2 Marks)"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In the box provided, sketch a well-proportioned elevation of the three-tiered planter box when viewed in the direction of arrow A.", marks: 8, contextNote: "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", openList: true, ask: true },
+    { id: "r-1", kind: "criterion", verbatim: "In the box provided, sketch a well-proportioned elevation of the three-tiered planter box when viewed in the direction of arrow A.", marks: 8, contextNote: "(8,6,4,2 Marks) The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.", permittedMarks: [0,2,4,6,8], ask: true },
     ],
     questionFigure: {
           "candId": "technology-2026-OL-paper-secA-q4-art",

@@ -628,6 +628,28 @@ def joined_ref(year, level, covered):
 
 ARTICLE = re.compile(r'\b(?:the|a|an)\b', re.I)
 
+# A quality band the scheme prints for a part: "(Very good sketch - 8 marks
+# Fair sketch - 4 marks)", "(Very good description- 6 marks Fair description- 4
+# marks)", or the bare ladder "(8,6,4,2 Marks)". It prices the answer in steps,
+# and the fair price must be claimable (Alex): the row takes every printed
+# value, with zero, and the band itself, lifted, as its note.
+BAND_NOTE = re.compile(
+    r'\(\s*very good\b[^()]*?\d{1,2}\s*marks?\b[^()]*?\bfair\b[^()]*?\d{1,2}\s*marks?\s*\)', re.I)
+BAND_LADDER = re.compile(r'\(\s*(\d{1,2}(?:\s*,\s*\d{1,2}){2,})\s*marks?\s*\)', re.I)
+
+
+def band_steps(text):
+    """The marks a printed band permits, with zero, ascending; [] if none."""
+    text = (text or '').strip()
+    if BAND_NOTE.fullmatch(text):
+        found = [int(n) for n in re.findall(r'(\d{1,2})\s*marks?\b', text, re.I)]
+    elif BAND_LADDER.fullmatch(text):
+        found = [int(n) for n in re.findall(r'\d{1,2}', text)]
+    else:
+        return []
+    return sorted({0, *found}) if found else []
+
+
 
 def _manifest():
     path = os.path.join(ROOT, 'components', 'MarkBank', 'figures.json')
@@ -708,6 +730,8 @@ ASK_ROW_NOTE = ("The scheme answers this part with a drawing its text cannot "
 # types/markBank.ts UNPRINTED_ANSWER: the one row a card may carry that is not
 # a slice of the scheme, for a printed ask whose scheme prints no answer.
 UNPRINTED_ANSWER = 'The scheme prints no answer for this part.'
+# The note on a row the printed scheme leaves unfinished (tech_crops.SCHEME_BREAKS_OFF).
+BREAKS_OFF_NOTE = 'The printed scheme breaks off here, mid-sentence.'
 FALLBACK_TOPIC = 'tech-core-design'
 
 
@@ -1067,6 +1091,19 @@ def author(bind_figures=True):
                     # shipped as its 8-mark answer.
                     points = []
                 points = [strip_ask_label(p, raw_ask) for p in points]
+                # A quality band printed UNDER the answer, inside a part the
+                # block's tariff prices (2015 Ordinary 5(c)(ii): "(Very good
+                # description- 6 marks Fair description- 4 marks)" over the
+                # steps of rotational moulding): not a row, and not dropped.
+                # The answer is one criterion row on the band's steps, with
+                # the band as its note.
+                band_note, band_marks = None, []
+                bands = [p for p in points if BAND_NOTE.fullmatch(p.strip())]
+                if len(bands) == 1 and len(points) > 1:
+                    found = band_steps(bands[0])
+                    if found and found[-1] == total:
+                        band_note, band_marks = bands[0].strip(), found
+                        points = [p for p in points if p is not bands[0]]
                 unprinted_note = TC.UNPRINTED.get((year, level, section, q, letter, roman))
                 ask_row = bool(solution and solution in TC.ASK_ONLY) or bool(unprinted_note)
                 if not ask_row and (not points or graphic_fragments(points)):
@@ -1152,6 +1189,12 @@ def author(bind_figures=True):
                              'marks': total, 'openList': True,
                              'contextNote': ASK_ROW_NOTE, 'ask': True}]
                     model = {'kind': 'fixed'}
+                elif band_note:
+                    trimmed = 0
+                    rows = [{'id': 'r-1', 'kind': 'criterion', 'verbatim': ' '.join(points),
+                             'marks': total, 'permittedMarks': band_marks,
+                             'contextNote': band_note}]
+                    model = {'kind': 'fixed'}
                 else:
                     trimmed = len(points) - min(len(points), CAP[section])
                     rows, model = rows_for(points, marks, total, CAP[section])
@@ -1159,6 +1202,27 @@ def author(bind_figures=True):
                     if model['kind'] == 'fixed' and shown != total:
                         note('the rows do not sum to the printed tariff', question)
                         continue
+                steps = band_steps(block.notation)
+                if steps and len(rows) == 1 and steps[-1] == total == rows[0]['marks'] \
+                        and (rows[0].get('ask') or rows[0].get('unprinted')):
+                    # A drawing priced by its quality band ("(Very good sketch -
+                    # 8 marks Fair sketch - 4 marks)"): the one row is a
+                    # criterion on the band's steps, so a fair sketch's 4 can
+                    # be claimed. An unprinted row already quotes the band.
+                    rows[0]['kind'] = 'criterion'
+                    rows[0]['permittedMarks'] = steps
+                    rows[0].pop('openList', None)
+                    if rows[0].get('ask'):
+                        rows[0]['contextNote'] = f'{block.notation.strip()} {ASK_ROW_NOTE}'
+                cut = TC.SCHEME_BREAKS_OFF.get((year, level, section, q, letter, roman))
+                if cut:
+                    # The printed scheme stops mid-sentence: the row is lifted
+                    # up to the break and says so, rather than finishing it.
+                    hit = [r for r in rows if r['verbatim'].endswith(cut)]
+                    if len(hit) != 1:
+                        note('the scheme answer named as breaking off was not found', question)
+                        continue
+                    hit[0]['contextNote'] = BREAKS_OFF_NOTE
                 model = dict(model, notation=block.notation)
 
                 note_text = (f'The scheme prints {block.notation!r} for '

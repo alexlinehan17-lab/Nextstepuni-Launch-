@@ -1795,6 +1795,18 @@ SOLUTION_NOT_ZONE = {
     'technology-2016-OL-scheme-secC-q4b-ii',
 }
 
+# Scheme answers the printed scheme leaves unfinished, mid-sentence, each read
+# off the scheme page: (year, level, section, q, letter, roman) -> the row's
+# closing words. The row is lifted up to the break and noted, never finished.
+SCHEME_BREAKS_OFF = {
+    # 2016 Ordinary 2(c)(ii), scheme page 9: "...potential lawsuits taken
+    # against the" and then the section's tariff lines.
+    (2016, 'ol', 'B', 2, 'c', 'ii'): 'potential lawsuits taken against the',
+    # 2016 Ordinary 5(c)(ii), scheme page 18: "...destroyed by a chemical
+    # reaction with" and then 5(d).
+    (2016, 'ol', 'C', 5, 'c', 'ii'): 'destroyed by a chemical reaction with',
+}
+
 # Scheme .md line fixes that only move or remove printed lettering, applied
 # by tech_mdclean before the zones: (year, level) -> [(regex, replacement)].
 MD_LINE_FIX = {
@@ -2668,6 +2680,10 @@ LABEL_ZONES.setdefault((2015, 'hl'), []).extend([
     (5, (40, 600, 300, 730)),      # Q9's gearbox reprinted, Input and Output
     (15, (347, 165, 586, 328)),    # 2(b)'s circuit lettering, clear of (ii)
 ])
+MD_LINE_FIX[(2021, 'ol')] = [
+    # Q7: the bench drawing's arrow letter A, read onto its band's second line.
+    (r'^A (Fair sketch - 4 marks\))$', r'\1'),
+]
 MD_LINE_FIX[(2015, 'hl')] = [
     # Q5: the three signs' meanings printed on one line, one per sign.
     (r'^(\(i\) Danger of slip) (\(ii\) Escape route) (\(iii\) No access)$', r'\1\n\2\n\3'),
