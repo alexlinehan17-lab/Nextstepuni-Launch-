@@ -64,7 +64,7 @@ LEVEL_TOKEN = {'higher': 'hl', 'ordinary': 'ol'}
 # cards, crops, paper link and Atlas question have been checked. A sitting not
 # yet admitted shows in the ledger as OPEN instead of vanishing behind a window.
 CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')}
-          | {(2018, 'hl')})
+          | {(2018, 'hl'), (2018, 'ol')})
 
 # Cards edited by hand after generation, kept exactly as shipped. #294 (27 Oct
 # 2026) cut 2023 Ordinary B-3(c)'s one 13-mark group into the scheme's four

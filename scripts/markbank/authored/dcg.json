@@ -2134,6 +2134,1561 @@
   "notes": "The scheme heads this 'Distance between parts 7 and 2' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
  },
  {
+  "id": "dcg-2018-ol-a1a",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q1(a)",
+  "questionText": "Locate the remaining points on the ellipse and draw the curve.",
+  "stem": "The 3D graphic below shows the proposed design for the new children’s hospital in Dublin. It consists of an ellipse and two inner circular arcs. The drawing on the right shows the major and minor circles for the ellipse. Portions of the ellipse and of the inner arcs are also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-a1a-r1",
+    "kind": "anyN",
+    "verbatim": "Appropriate use of given major and minor axes",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 1, 2, 4, 3 — 10 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "Appropriate use of given major and minor axes",
+      "Required constructions for additional points",
+      "Locate required additional points",
+      "Complete curve"
+     ],
+     "perOptionSteps": [
+      1,
+      2,
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Ellipse' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-a1b",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q1(b)",
+  "questionText": "Locate the focal points of the ellipse.",
+  "stem": "The 3D graphic below shows the proposed design for the new children’s hospital in Dublin. It consists of an ellipse and two inner circular arcs. The drawing on the right shows the major and minor circles for the ellipse. Portions of the ellipse and of the inner arcs are also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(5)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-a1b-r1",
+    "kind": "anyN",
+    "verbatim": "Locate required focal points",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 5 — 5 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Locate required focal points"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Focal points' and prices it at 5. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-a1c",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q1(c)",
+  "questionText": "Locate the centre point for the lower arc and complete the drawing.",
+  "stem": "The 3D graphic below shows the proposed design for the new children’s hospital in Dublin. It consists of an ellipse and two inner circular arcs. The drawing on the right shows the major and minor circles for the ellipse. Portions of the ellipse and of the inner arcs are also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-a1c-r1",
+    "kind": "anyN",
+    "verbatim": "Locate centre point",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 1 — 3 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Locate centre point",
+      "Draw remainder of second arc"
+     ],
+     "perOptionSteps": [
+      2,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Second arc' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-a2a",
+  "topicId": "design-and-communication-graphics-0-12",
+  "conceptId": "dcg-0-12",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q2(a)",
+  "questionText": "Draw the plan of the cylinder B.",
+  "stem": "Three stone containers for growing flowers are shown in the 3D graphic below. The containers are in the form of geometrical objects which are in contact as shown. The drawing on the right shows the elevation and partially completed plan of the objects. The arrangement consists of a cylinder, a truncated cone and a hemisphere.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(11)"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-a2a-r1",
+    "kind": "anyN",
+    "verbatim": "Projection from centre in elevation",
+    "marks": 11,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 3, 4, 4 — 11 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Projection from centre in elevation",
+      "Locate centre in plan",
+      "Draw plan of cylinder … (incl. hidden detail)"
+     ],
+     "perOptionSteps": [
+      3,
+      4,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Cylinder' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-a2b",
+  "topicId": "design-and-communication-graphics-0-12",
+  "conceptId": "dcg-0-12",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q2(b)",
+  "questionText": "Draw the plan of the hemisphere C.",
+  "stem": "Three stone containers for growing flowers are shown in the 3D graphic below. The containers are in the form of geometrical objects which are in contact as shown. The drawing on the right shows the elevation and partially completed plan of the objects. The arrangement consists of a cylinder, a truncated cone and a hemisphere.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(7)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-a2b-r1",
+    "kind": "anyN",
+    "verbatim": "Constructions in elevation",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 1, 2, 2, 2 — 7 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "Constructions in elevation",
+      "Projections to plan",
+      "Locate centre in plan",
+      "Draw hemisphere in plan ….(incl. hidden detail)"
+     ],
+     "perOptionSteps": [
+      1,
+      2,
+      2,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Hemisphere in plan' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-a3",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q3",
+  "questionText": "The image below shows the Mary McAleese Boyne Valley Bridge, a suspension bridge across the river Boyne in County Meath. The drawing on the right shows the plan and a partially completed perspective view of the concrete tower part of the bridge. Complete the perspective drawing of the bridge tower.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(18)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-a3-r1",
+    "kind": "anyN",
+    "verbatim": "Radiate lines to correct vanishing points",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 8, 2, 4 — 18 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "Radiate lines to correct vanishing points",
+      "Projections from plan",
+      "Complete right leg of tower",
+      "Complete left leg of tower",
+      "Complete perspective"
+     ],
+     "perOptionSteps": [
+      2,
+      2,
+      8,
+      2,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Perspective of Bridge' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-a4a",
+  "topicId": "design-and-communication-graphics-0-1",
+  "conceptId": "dcg-0-1",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q4(a)",
+  "questionText": "Complete the end view.",
+  "stem": "The image below shows a concertina. The instrument is hexagonal in cross-section. The plan, elevation and the partially completed end view of the instrument are also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(15)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-a4a-r1",
+    "kind": "anyN",
+    "verbatim": "Projections from plan",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 8, 3, 2, 2 — 15 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 8,
+     "options": [
+      "Projections from plan",
+      "Points defined in end view",
+      "Complete visible end",
+      "Complete end view….(incl. hidden detail)"
+     ],
+     "perOptionSteps": [
+      8,
+      3,
+      2,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'End View' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-a4b",
+  "topicId": "design-and-communication-graphics-0-1",
+  "conceptId": "dcg-0-1",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 OL Section A Q4(b)",
+  "questionText": "Draw the true shape of the end of the instrument.",
+  "stem": "The image below shows a concertina. The instrument is hexagonal in cross-section. The plan, elevation and the partially completed end view of the instrument are also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-a4b-r1",
+    "kind": "anyN",
+    "verbatim": "Apply correct length of edge",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 1, 1, 1 — 3 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "Apply correct length of edge",
+      "Use correct angles",
+      "Draw required true shape"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'True shape' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-b1a",
+  "topicId": "design-and-communication-graphics-0-1",
+  "conceptId": "dcg-0-1",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q1(a)",
+  "questionText": "Draw the elevation of the complete structure looking in the direction of the arrow.",
+  "stem": "The graphic on the right shows a portion of a house and a bay window. Fig. B-1 below shows an isometric view of a similar structure.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(18)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-b1a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw wall of house",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 8, 5, 5 — 18 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 8,
+     "options": [
+      "Draw wall of house",
+      "Outline of bay window",
+      "Complete bay window"
+     ],
+     "perOptionSteps": [
+      8,
+      5,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Elevation' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-b1b",
+  "topicId": "design-and-communication-graphics-0-1",
+  "conceptId": "dcg-0-1",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q1(b)",
+  "questionText": "Project a plan from the elevation.",
+  "stem": "The graphic on the right shows a portion of a house and a bay window. Fig. B-1 below shows an isometric view of a similar structure.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-b1b-r1",
+    "kind": "anyN",
+    "verbatim": "Plan of wall",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 5, 3, 2 — 10 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Plan of wall",
+      "Outline of bay window",
+      "Complete the plan"
+     ],
+     "perOptionSteps": [
+      5,
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Plan' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-b1c",
+  "topicId": "design-and-communication-graphics-0-1",
+  "conceptId": "dcg-0-1",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q1(c)",
+  "questionText": "Draw the auxiliary elevation of the structure, projected from the plan, which will include the true shape of surface A.",
+  "stem": "The graphic on the right shows a portion of a house and a bay window. Fig. B-1 below shows an isometric view of a similar structure.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(13)"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-b1c-r1",
+    "kind": "anyN",
+    "verbatim": "X1Y1 parallel to plan of surface A",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 1, 1, 3, 2, 6 — 13 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 1,
+     "options": [
+      "X1Y1 parallel to plan of surface A",
+      "Projections from plan",
+      "Transfer of heights from elevation",
+      "Draw surface A",
+      "Complete auxiliary elevation"
+     ],
+     "perOptionSteps": [
+      1,
+      1,
+      3,
+      2,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Auxiliary elevation' and prices it at 13. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-b2a",
+  "topicId": "design-and-communication-graphics-0-8",
+  "conceptId": "dcg-0-8",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(a)",
+  "questionText": "Draw the given plan and the completed elevation, showing all lines of interpenetration.",
+  "stem": "The 3D graphic on the right shows a climbing pole from a children’s playground. It consists of a central rectangular pillar with horizontal steps attached. Fig. B-2 below shows the plan and incomplete elevation of a portion of the arrangement. A section through the horizontal step is also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(33)"
+  },
+  "totalMarks": 33,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-b2a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw plan of pillar as given",
+    "marks": 33,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 6, 5, 4, 4, 2, 2, 3, 2, 2, 3 — 33 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 10,
+     "perOption": 6,
+     "options": [
+      "Draw plan of pillar as given",
+      "Draw the plan of step as given",
+      "Draw the elevation of the pillar as given",
+      "Draw the elevation of the step as given",
+      "Projections from LHS of plan",
+      "Locate points on LHS in elevation",
+      "Complete LHS of elevation",
+      "Projections from RHS of plan",
+      "Locate points on RHS in elevation",
+      "Complete RHS of elevation"
+     ],
+     "perOptionSteps": [
+      6,
+      5,
+      4,
+      4,
+      2,
+      2,
+      3,
+      2,
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and Elevation' and prices it at 33. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-b2b",
+  "topicId": "design-and-communication-graphics-0-8",
+  "conceptId": "dcg-0-8",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q2(b)",
+  "questionText": "Draw an end view of the structure.",
+  "stem": "The 3D graphic on the right shows a climbing pole from a children’s playground. It consists of a central rectangular pillar with horizontal steps attached. Fig. B-2 below shows the plan and incomplete elevation of a portion of the arrangement. A section through the horizontal step is also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-b2b-r1",
+    "kind": "anyN",
+    "verbatim": "Transfer of widths from plan",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 2, 2 — 8 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Transfer of widths from plan",
+      "Projection of heights from elevation",
+      "End view of pillar",
+      "Complete end view"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'End View' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-b3a",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(a)",
+  "questionText": "Draw the given equilateral triangle abc and the axonometric axes X, Y, and Z.",
+  "stem": "The graphic on the right shows a clock. Fig. B-3 below shows an incomplete isometric projection of a similar clock. The elevation and plan of the clock are also shown in their required positions.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(5)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-b3a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw equilateral triangle",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 3, 2 — 5 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Draw equilateral triangle",
+      "Draw X, Y and Z axes"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Initial setup' and prices it at 5. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-b3b",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(b)",
+  "questionText": "Draw the elevation and plan positioned as shown.",
+  "stem": "The graphic on the right shows a clock. Fig. B-3 below shows an incomplete isometric projection of a similar clock. The elevation and plan of the clock are also shown in their required positions.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-b3b-r1",
+    "kind": "anyN",
+    "verbatim": "Projections to set up elevation",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 1, 2, 2, 1, 2 — 10 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 2,
+     "options": [
+      "Projections to set up elevation",
+      "Semicircle in elevation",
+      "Draw elevation in the correct position",
+      "Projections to set up plan",
+      "Semicircle in plan (or 45o lines)",
+      "Draw plan in the correct position"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      2,
+      2,
+      1,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Elevation and Plan' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-b3c",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(c)",
+  "questionText": "Draw the axonometric projection of the main body of the clock.",
+  "stem": "The graphic on the right shows a clock. Fig. B-3 below shows an incomplete isometric projection of a similar clock. The elevation and plan of the clock are also shown in their required positions.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-b3c-r1",
+    "kind": "anyN",
+    "verbatim": "Projections from elevation",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 2, 2, 2 — 10 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "Projections from elevation",
+      "Projections from plan",
+      "Draw axonometric projection of right vertical surface",
+      "Draw axonometric projection of front face",
+      "Draw axonometric projection of the top surfaces"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Axonometric Projection of main body' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-b3d",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 OL Section B Q3(d)",
+  "questionText": "Draw the axonometric projection of the circular face of the clock.",
+  "stem": "The graphic on the right shows a clock. Fig. B-3 below shows an incomplete isometric projection of a similar clock. The elevation and plan of the clock are also shown in their required positions.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-b3d-r1",
+    "kind": "anyN",
+    "verbatim": "Divisions on circle in elevation",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 5, 5, 2, 2, 2 — 16 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 5,
+     "options": [
+      "Divisions on circle in elevation",
+      "Corresponding divisions in plan",
+      "Projections from circle in elevation",
+      "Projections from circle in plan",
+      "Draw axonometric projection of the circular face"
+     ],
+     "perOptionSteps": [
+      5,
+      5,
+      2,
+      2,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Axonometric Projection of circular clock face' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c1a",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q1(a)",
+  "questionText": "On the drawing supplied, draw a vertical section (profile) on the line AB.",
+  "stem": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(19)"
+  },
+  "totalMarks": 19,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c1a-r1",
+    "kind": "anyN",
+    "verbatim": "Measure heights and draw horizontal lines",
+    "marks": 19,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 6, 5, 8 — 19 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Measure heights and draw horizontal lines",
+      "Projections from intersections between line AB and contours",
+      "Draw outline of profile"
+     ],
+     "perOptionSteps": [
+      6,
+      5,
+      8
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Profile' and prices it at 19. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c1b",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q1(b)",
+  "questionText": "A vertical pylon is to be built at point A. On the profile, determine the minimum height of the pylon, if its top is to be visible from the ground at point B.",
+  "stem": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c1b-r1",
+    "kind": "anyN",
+    "verbatim": "Draw tangent from B to profile",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Draw tangent from B to profile",
+      "Draw pylon and indicate minimum height"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Vertical Pylon' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c1c",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q1(c)",
+  "questionText": "The image on the right shows a section of the new M17 motorway linking Galway and Clare. Earthworks were necessary to accommodate the roadway as shown. CD is the centreline of a roadway which is level at an altitude of 25m. Using side slopes of 1:1 for the cuttings and 1:2 for the embankments, complete the earthworks on the northern side, which are necessary to accommodate the roadway. (Note: The earthworks on the southern side of the roadway have already been completed.)",
+  "stem": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(18)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c1c-r1",
+    "kind": "anyN",
+    "verbatim": "Parallel lines at 5m intervals for cuttings",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 3, 3, 4, 3, 3, 2 — 18 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 3,
+     "options": [
+      "Parallel lines at 5m intervals for cuttings",
+      "Identify points on cutting curves",
+      "Draw cutting curves",
+      "Parallel lines at 10m intervals for embankment",
+      "Identify points on embankment curve",
+      "Draw embankment curve"
+     ],
+     "perOptionSteps": [
+      3,
+      3,
+      4,
+      3,
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Earthworks for roadway' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c2a",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q2(a)",
+  "questionText": "Draw the given elevation. The vertex of the parabolic curve ABC is located at B.",
+  "stem": "The image on the right shows the newly opened Crossrail train station in London’s docklands area. The structure is based on a parabola and has been shaped as shown. Fig. C-2 below shows the plan, elevation and end view of a model of the front part of the station. A 3D view of the model is also given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c2a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw base of structure",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 3, 3, 4, 2, 2, 2 — 16 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 3,
+     "options": [
+      "Draw base of structure",
+      "Draw inner stand section",
+      "Division of RHS for parabola",
+      "Draw right hand curve",
+      "Locate points on LHS for parabola",
+      "Draw curve on left side"
+     ],
+     "perOptionSteps": [
+      3,
+      3,
+      4,
+      2,
+      2,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Elevation' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c2b",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q2(b)",
+  "questionText": "Draw the given end view.",
+  "stem": "The image on the right shows the newly opened Crossrail train station in London’s docklands area. The structure is based on a parabola and has been shaped as shown. Fig. C-2 below shows the plan, elevation and end view of a model of the front part of the station. A 3D view of the model is also given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(11)"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c2b-r1",
+    "kind": "anyN",
+    "verbatim": "Draw base of structure",
+    "marks": 11,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 3, 3, 2, 3 — 11 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Draw base of structure",
+      "Draw roof section",
+      "Construction to locate 90o angle",
+      "Complete the end view"
+     ],
+     "perOptionSteps": [
+      3,
+      3,
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'End View' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c2c",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q2(c)",
+  "questionText": "Project the given plan, clearly showing how the points on the curve are located. (Note: Hidden detail is not required.)",
+  "stem": "The image on the right shows the newly opened Crossrail train station in London’s docklands area. The structure is based on a parabola and has been shaped as shown. Fig. C-2 below shows the plan, elevation and end view of a model of the front part of the station. A 3D view of the model is also given.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c2c-r1",
+    "kind": "anyN",
+    "verbatim": "Projections from elevation",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 2, 2, 2, 2, 2 — 14 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 7,
+     "perOption": 2,
+     "options": [
+      "Projections from elevation",
+      "Projections from end view",
+      "Draw rectangular base section",
+      "Locate extremities of curved section",
+      "Locate remaining points on curved section",
+      "Draw curve",
+      "Complete plan"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Plan of the structure' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c3a",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q3(a)",
+  "questionText": "Draw the given views of the bag, showing clearly how the centre of the arc is located.",
+  "stem": "The graphic on the right shows a lady carrying a handbag. The projections of the bag are shown in Fig. C-3 below.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(24)"
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c3a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw straight lines in elevation",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 10, 3, 7, 4 — 24 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 10,
+     "options": [
+      "Draw straight lines in elevation",
+      "Determine centre and draw arc ……(1,2)",
+      "Draw the outline plan",
+      "Complete the plan"
+     ],
+     "perOptionSteps": [
+      10,
+      3,
+      7,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Elevation and Plan' and prices it at 24. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c3b",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q3(b)",
+  "questionText": "Project an end view of the bag.",
+  "stem": "The graphic on the right shows a lady carrying a handbag. The projections of the bag are shown in Fig. C-3 below.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c3b-r1",
+    "kind": "anyN",
+    "verbatim": "Draw the outline",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 4, 4 — 8 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Draw the outline",
+      "Complete the end view"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'End View' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c3c",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q3(c)",
+  "questionText": "Draw a one-piece surface development of the bag (including the curved top surface). Ignore the handle for the purpose of your drawing.",
+  "stem": "The graphic on the right shows a lady carrying a handbag. The projections of the bag are shown in Fig. C-3 below.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c3c-r1",
+    "kind": "anyN",
+    "verbatim": "Appropriate layout of surface development",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 1, 2, 2, 1, 1, 1, 1 — 9 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 7,
+     "perOption": 1,
+     "options": [
+      "Appropriate layout of surface development",
+      "Development of bottom surface",
+      "Development of front and back surfaces",
+      "Development of two short inclined surfaces",
+      "Development of two long inclined surfaces",
+      "Division of arc",
+      "Development of curved surface"
+     ],
+     "perOptionSteps": [
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Surface Development' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c4a",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q4(a)",
+  "questionText": "Fig. C-4(a) on the right shows the projections of a cylinder and a portion of such a helix. (i) Draw the given plan and elevation of the cylinder. (ii) Complete the projections of a regular helix which moves in a clockwise direction about the cylinder, from point A at the base, to point B at the top, in one revolution.",
+  "stem": "The graphic below shows various images of the Orbit Tower which is located in London’s Olympic Village. At over 100m in height, it is the UK’s tallest sculpture and also incorporates the world’s longest, fastest and tallest tunnel slide. Part of the slide is in the form of a cylindrical helix as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(21)"
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c4a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw circle in plan",
+    "marks": 21,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 3, 2, 3, 3, 2, 5, 3 — 21 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 7,
+     "perOption": 3,
+     "options": [
+      "Draw circle in plan",
+      "Draw outline elevation",
+      "Division of plan",
+      "Draw horizontal divisions in elevation",
+      "Complete projections from plan of helix",
+      "Locate points in elevation",
+      "Draw helix in elevation"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      3,
+      3,
+      2,
+      5,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Helix' and prices it at 21. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c4b",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q4(b)",
+  "questionText": "A cam is used as part of the braking system for an elevator, which is located in the central tower of the sculpture. Draw the displacement diagram for a cam which imparts the following motion to an inline knife edge follower: to 120° Rise 70mm with uniform velocity 120° to 180° Dwell 180° Vertical fall of 22mm 180° to 360° Fall 48mm with uniform acceleration and retardation. (In the displacement diagram, use a distance of 15mm to represent each 30° interval.) Note: It is not necessary to draw the cam profile.",
+  "stem": "The graphic below shows various images of the Orbit Tower which is located in London’s Olympic Village. At over 100m in height, it is the UK’s tallest sculpture and also incorporates the world’s longest, fastest and tallest tunnel slide. Part of the slide is in the form of a cylindrical helix as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c4b-r1",
+    "kind": "anyN",
+    "verbatim": "360o division (widths on displacement diagram.)",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 2, 3, 2, 2, 4, 3 — 20 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 8,
+     "perOption": 2,
+     "options": [
+      "360o division (widths on displacement diagram.)",
+      "Correct use of 70mm height",
+      "Establish follower position at 0o, 120o, 180o and 360o",
+      "0o to 120o, Uniform Velocity",
+      "120o to 180o, Dwell",
+      "180o, vertical fall 22mm",
+      "180o to 360o, Uniform Acceleration and Retardation (UAR)",
+      "Complete displacement diagram (freehand curve)"
+     ],
+     "perOptionSteps": [
+      2,
+      2,
+      2,
+      3,
+      2,
+      2,
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Displacement diagram' and prices it at 20. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c5-1",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5 — Assembly",
+  "questionText": "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
+  "stem": "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(11)"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c5-1-r1",
+    "kind": "anyN",
+    "verbatim": "Relative positioning of components",
+    "marks": 11,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 8, 3 — 11 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Relative positioning of components",
+      "Use of Section View"
+     ],
+     "perOptionSteps": [
+      8,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Assembly' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c5-2",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5 — Main body",
+  "questionText": "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
+  "stem": "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c5-2-r1",
+    "kind": "anyN",
+    "verbatim": "Outline",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 5, 2, 2 — 9 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Outline",
+      "Holes",
+      "Side slots"
+     ],
+     "perOptionSteps": [
+      5,
+      2,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Main body' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c5-3",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5 — Nose Cone",
+  "questionText": "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
+  "stem": "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c5-3-r1",
+    "kind": "anyN",
+    "verbatim": "Upper section",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 4, 2 — 6 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Upper section",
+      "Spigot"
+     ],
+     "perOptionSteps": [
+      4,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Nose Cone' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c5-4",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5 — Thruster",
+  "questionText": "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
+  "stem": "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c5-4-r1",
+    "kind": "anyN",
+    "verbatim": "Lower section",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Lower section",
+      "Spigot"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Thruster' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c5-5",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5 — Wings",
+  "questionText": "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
+  "stem": "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c5-5-r1",
+    "kind": "anyN",
+    "verbatim": "Wing outlines",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 6, 2 — 8 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Wing outlines",
+      "Connectors"
+     ],
+     "perOptionSteps": [
+      6,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Wings' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-ol-c5-6",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 OL Section C Q5 — Drawing Completion",
+  "questionText": "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
+  "stem": "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.) Part Name Qty. Main body Nose cone Thruster Wing",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-OL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2018-ol-c5-6-r1",
+    "kind": "anyN",
+    "verbatim": "Hatching and Centrelines …(2,1)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 3 — 3 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Hatching and Centrelines …(2,1)"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Drawing Completion' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
   "id": "dcg-2019-hl-a1a",
   "topicId": "design-and-communication-graphics-0-11",
   "conceptId": "dcg-0-11",
