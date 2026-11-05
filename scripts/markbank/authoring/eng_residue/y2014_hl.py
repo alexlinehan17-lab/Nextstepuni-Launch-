@@ -390,7 +390,7 @@ CARDS = [
              'elements, each under its name; the 8 for the part is not split between the two '
              'asked for.',
          lifted=[S(11, 100, 346, 565, 390), S(11, 100, 388, 480, 404), S(11, 100, 402, 400, 418),
-                 S(11, 100, 416, 525, 446), S(11, 100, 444, 500, 475)],
+                 S(11, 100, 416, 525, 446), S(11, 100, 444, 545, 475)],
          tariff='questionTotal', total=8,
          notes="The scheme prints '(Any two) 8 + 8' for the two parts answered."),
     dict(key=(3, 'b', 'i'), topic='eng-1-3',

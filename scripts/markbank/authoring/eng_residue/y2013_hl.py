@@ -419,7 +419,7 @@ CARDS = [
              'between them.',
          topic='eng-1-3', stem=False,
          question_lift=P(7, *_B4, more=[(150, 442, 410, 461)]),
-         lifted=[S(13, 140, 84, 470, 99), S(13, 140, 98, 490, 127), S(13, 140, 126, 430, 155),
+         lifted=[S(13, 140, 84, 470, 99), S(13, 140, 98, 490, 127), S(13, 140, 126, 495, 155),
                  S(13, 140, 154, 380, 168), S(13, 140, 167, 290, 183)],
          tariff='questionTotal', total=6,
          question_figure='engineering-2013-HL-paper-q4b-crop',

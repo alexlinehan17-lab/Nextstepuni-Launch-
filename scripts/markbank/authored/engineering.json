@@ -1693,7 +1693,7 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Solidus line: the change from pasty to solid. Below the solidus alloy is cooling and solid. This is the end of solidification.",
+    "verbatim": "Solidus line: the change from pasty to solid. Below the solidus line, the alloy is cooling and solid. This is the end of solidification.",
     "marks": null
    },
    {
@@ -5595,7 +5595,7 @@
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "Manganese: Increases strength at high temperatures by eliminating the formation sulfides. Manganese also improves hardenability, ductility and wear resistance.",
+    "verbatim": "Manganese: Increases strength at high temperatures by eliminating the formation of iron sulfides. Manganese also improves hardenability, ductility and wear resistance.",
     "marks": null
    }
   ],
@@ -11525,13 +11525,13 @@
    {
     "id": "r-1",
     "kind": "anyN",
-    "verbatim": "Case hardening: Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part then heated to a cherry red and quenched, producing a hardened skin with a tough core.",
+    "verbatim": "Case hardening: Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.",
     "marks": 16,
     "group": {
      "claimMax": 2,
      "perOption": 8,
      "options": [
-      "Case hardening: Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part then heated to a cherry red and quenched, producing a hardened skin with a tough core.",
+      "Case hardening: Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.",
       "Annealing: Annealing is carried out to soften metal and to remove internal stresses. The metal is heated to the required temperature and allowed to cool down as slow as possible.",
       "Work hardening: Work hardening is the buildup of stresses inside a metal due to hammering or shaping a metal cold. When a metal is hammered or shaped when cold it can become hard and brittle. Some metals are prone to work hardening. Copper and aluminium are typical examples where hardness values can be increased by working on the metal when cold."
      ]

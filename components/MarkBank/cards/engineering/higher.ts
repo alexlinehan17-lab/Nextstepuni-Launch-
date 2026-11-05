@@ -996,7 +996,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Liquid: the two metals are soluble in each other in the liquid state.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Liquidus line: the change from fully liquid to pasty state. Above the liquidus line, the alloy is liquid. This is the beginning of solidification.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Solidus line: the change from pasty to solid. Below the solidus alloy is cooling and solid. This is the end of solidification.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Solidus line: the change from pasty to solid. Below the solidus line, the alloy is cooling and solid. This is the end of solidification.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Pasty: alloy is in liquid and solid form", marks: null },
     { id: "r-5", kind: "point", verbatim: "Solid: alloy is in solid form.", marks: null },
     ],
@@ -2295,7 +2295,7 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Cobalt: Improves strength at high temperatures and magnetic permeability.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Titanium: Improves both strength and corrosion resistance", marks: null },
     { id: "r-4", kind: "point", verbatim: "Tungsten: Produces stable carbides and refines grain size so as to increase hardness, particularly at high temperatures.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Manganese: Increases strength at high temperatures by eliminating the formation sulfides. Manganese also improves hardenability, ductility and wear resistance.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Manganese: Increases strength at high temperatures by eliminating the formation of iron sulfides. Manganese also improves hardenability, ductility and wear resistance.", marks: null },
     ],
   } as SecCard,
   {
