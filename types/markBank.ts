@@ -1101,6 +1101,10 @@ export interface ReligiousEducationRubric {
   gridHead: string;
   /** High to low, as printed. */
   bands: ReligiousEducationBand[];
+  /** The grid prints no 0 range (seven 2014-2016 Ordinary 10-mark grids print
+   *  Weak as "3  > 2  > 1"): its bands cover 1 to the maximum, and an answer
+   *  that earns nothing is simply left unplaced, which scores 0. */
+  noZero?: boolean;
   /** The grid's other marks row, where it prints two. The card's own
    *  answers/answerMax/gridHead/bands are the way its scheme head names first,
    *  and the student's default. */
@@ -1560,15 +1564,17 @@ export function tariffReconciles(card: SecCard): boolean {
     if (card.rubric.system === 'religious-education') {
       // One grid per answer: its bands cover 0..answerMax, and the answers
       // make the card's printed total.
-      const { bands, answers, answerMax, ceilings, schemePages, schemeFileid, otherWay } = card.rubric;
+      const { bands, answers, answerMax, ceilings, schemePages, schemeFileid, otherWay, noZero } = card.rubric;
       // Every mark from 0 to the maximum is printed in some band and none
       // outside it. A mark may sit in two bands where the scheme prints it so
-      // (overlapping ranges, or one range cell set beside several bands).
+      // (overlapping ranges, or one range cell set beside several bands). A
+      // grid that prints no 0 covers 1 to the maximum, and only such a grid.
       const covers = (ranges: Array<{ printed: string; marks: number[] }>, max: number) => {
         const marks = [...new Set(ranges.flatMap(band => band.marks))].sort((a, b) => a - b);
+        const first = noZero ? 1 : 0;
         return ranges.every(band => band.marks.length > 0 && band.printed.trim()
           && band.marks.every(mark => Number.isInteger(mark)))
-          && marks.length === max + 1 && marks.every((mark, index) => mark === index);
+          && marks.length === max + 1 - first && marks.every((mark, index) => mark === index + first);
       };
       return Boolean(schemeFileid)
         && schemePages.length > 0 && schemePages.every(page => Number.isInteger(page) && page > 0)

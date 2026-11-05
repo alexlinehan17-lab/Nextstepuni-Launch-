@@ -216,4 +216,37 @@ describe('Religious Education band grid', () => {
       expect(calls).toEqual([[reAnswerScoreId(0), 7]]);
     });
   });
+
+  describe('a grid that prints no 0', () => {
+    // 2016 Ordinary A2(a) prints Weak as "3  > 2  > 1": no band offers 0.
+    const noZeroBands = [
+      { label: 'Excellent', printed: '10 > 9', marks: [9, 10] },
+      { label: 'Very Good', printed: '8 > 7', marks: [7, 8] },
+      { label: 'Good', printed: '6', marks: [6] },
+      { label: 'Fair', printed: '5 > 4', marks: [4, 5] },
+      { label: 'Weak', printed: '3', marks: [3] },
+      { label: 'Weak', printed: '2', marks: [2] },
+      { label: 'Weak', printed: '1', marks: [1] },
+    ];
+    const noZeroRubric: ReligiousEducationRubric = {
+      ...rubric, answers: 1, answerMax: 10, gridHead: '10Mx2', bands: noZeroBands, ceilings: undefined, noZero: true,
+    };
+    const noZeroCard = { ...card, totalMarks: 10, rubric: noZeroRubric } as typeof card;
+
+    test('reconciles covering 1 to the maximum, and only when the card says the grid prints no 0', () => {
+      expect(tariffReconciles(noZeroCard)).toBe(true);
+      expect(tariffReconciles({ ...noZeroCard, rubric: { ...noZeroRubric, noZero: undefined } })).toBe(false);
+      const withZero = { ...noZeroRubric, bands: [...noZeroBands.slice(0, 6), { label: 'Weak', printed: '1 > 0', marks: [0, 1] }] };
+      expect(tariffReconciles({ ...noZeroCard, rubric: withZero })).toBe(false);
+      expect(tariffReconciles({ ...noZeroCard, rubric: { ...withZero, noZero: undefined } })).toBe(true);
+    });
+
+    test('an answer left unplaced scores 0, and no band offers 0', () => {
+      expect(religiousEducationMarks(noZeroCard, {})).toBe(0);
+      expect(religiousEducationMarks(noZeroCard, { [reAnswerScoreId(0)]: 1 })).toBe(1);
+      render(<ReligiousEducationRubricPanel card={noZeroCard} scores={{}} onScore={() => undefined} />);
+      expect(screen.queryByRole('button', { name: /Claim 0 marks/ })).toBeNull();
+      expect(screen.getByRole('button', { name: `Claim 1 marks for ${bandHeading('Weak', '1')}` })).toBeInTheDocument();
+    });
+  });
 });
