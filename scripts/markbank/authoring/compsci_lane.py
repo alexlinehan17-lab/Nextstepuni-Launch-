@@ -145,6 +145,12 @@ def T(page, start, end=None, nth=1, end_nth=1):
     return Lift('cells', page, start, end, nth, end_nth)
 
 
+def G(page, start, end=None, nth=1, end_nth=1):
+    """A slice of one scheme line READ BY GLYPH ID (see append_glyphs): a line
+    whose text layer misreads its maths digits."""
+    return Lift('glyphs', page, start, end, nth, end_nth)
+
+
 class At:
     """The text printed inside one rectangle of a page, read by position: a
     table cell holding a single character ("e", "R", "?") that no selector
@@ -179,11 +185,34 @@ def crit(text, marks, steps, note=None, head=None, route=None, parts=None):
             'note': note, 'head': head, 'route': route, 'parts': parts}
 
 
-def anyn(options, claim, each, head, note=None, open_list=False, steps=None, route=None):
+def anyn(options, claim, each, head, note=None, open_list=False, steps=None, route=None,
+         instruction=None):
     """A bounded choice: any `claim` of the scheme's `options`, `each` marks
-    apiece (or `steps`, a descending ladder the scheme prints)."""
+    apiece (or `steps`, a descending ladder the scheme prints).
+
+    `instruction` is a line the scheme prints among its answers that is not an
+    answer -- "Accept any relevant analogue input" -- lifted into the note,
+    never offered as an option (coordinator, 5 Nov). The list is then open."""
     return {'kind': 'anyN', 'options': options, 'claim': claim, 'each': each,
-            'head': head, 'note': note, 'open': open_list, 'steps': steps, 'route': route}
+            'head': head, 'note': note, 'open': open_list or instruction is not None,
+            'steps': steps, 'route': route, 'instruction': instruction}
+
+
+def ladder(options, items, head=None, note=None, instruction=None, route=None):
+    """A menu the scheme prices on a good/fair ladder: "Any one of the above
+    points: Good description 2 marks / Fair description 1 mark".
+
+    A priced answer is claimable (Alex's rule), and an anyN option is claimed
+    whole, so the fair price could not be. This is a criterion instead: its
+    text is the scheme's first option, `accepts` its other options -- the
+    alternatives the scheme prints -- and the marks are the printed steps.
+    `items` holds one ladder per answer the part asks for, each the printed
+    values above zero: [[1, 2]] for any one at 2 or 1, [[1, 2], [1, 2]] for any
+    two at 2 or 1 each; the row's steps are every total those answers can
+    make. `head` and `instruction` (a line that is not an answer, "Any other
+    valid reason") are lifted into the note before the scheme's ladder."""
+    return {'kind': 'ladder', 'options': options, 'items': items, 'head': head,
+            'note': note, 'instruction': instruction, 'route': route}
 
 
 def ask_row():
@@ -208,14 +237,18 @@ class Sitting:
         self.docs['scheme'] = pymupdf.open(spath) if os.path.exists(spath) else None
         md = open(os.path.join(SCHEMES, f'{year}-{level}.md'), encoding='utf8').read()
         self.md = md
-        flat = md.split(CELLS_START)[0]
+        flat = re.split(f'{re.escape(CELLS_START)}|{re.escape(GLYPHS_START)}', md)[0]
         self.md_pages = {}
         for m in re.finditer(r'^## Page (\d+)\n(.*?)(?=^## Page \d+\n|\Z)', flat, re.S | re.M):
             self.md_pages[int(m.group(1))] = ws(fold(m.group(2)))
         self.cell_pages = {}
         for m in re.finditer(r'<!-- compsci:cells page (\d+) -->\n(.*?)(?=<!-- compsci:cells|\Z)',
                              md, re.S):
-            self.cell_pages[int(m.group(1))] = ws(m.group(2).replace(CELLS_END, ''))
+            self.cell_pages[int(m.group(1))] = ws(m.group(2).split(CELLS_END)[0])
+        self.glyph_pages = {}
+        for m in re.finditer(r'<!-- compsci:glyphs page (\d+) -->\n(.*?)(?=<!-- compsci:glyphs|<!-- /compsci:glyphs|\Z)',
+                             md, re.S):
+            self.glyph_pages[int(m.group(1))] = ws(m.group(2))
         self.md_norm = comparable(md)
         self._page_text = {}
 
@@ -226,6 +259,11 @@ class Sitting:
                 if page not in self.md_pages:
                     raise LaneError(f'{self.year} {self.level}: scheme .md has no page {page}')
                 self._page_text[key] = self.md_pages[page]
+            elif doc == 'glyphs':
+                if page not in self.glyph_pages:
+                    raise LaneError(f'{self.year} {self.level}: no glyph-id line read for scheme '
+                                    f'page {page}; run glyphs')
+                self._page_text[key] = self.glyph_pages[page]
             elif doc == 'cells':
                 if page not in self.cell_pages:
                     raise LaneError(f'{self.year} {self.level}: no cells read for scheme page '
@@ -303,7 +341,8 @@ def append_cells(year, level, pages):
     not appended anywhere. Re-running replaces the block.
     """
     path = os.path.join(SCHEMES, f'{year}-{level}.md')
-    md = open(path, encoding='utf8').read().split(CELLS_START)[0].rstrip('\n') + '\n'
+    flat, _, glyphs = _blocks(open(path, encoding='utf8').read())
+    md = flat
     doc = pymupdf.open(os.path.join(SCHEMES, f'{year}-{level}.pdf'))
     out = [CELLS_START]
     for page in pages:
@@ -318,8 +357,96 @@ def append_cells(year, level, pages):
                         out.append(cell)
     out.append(CELLS_END)
     with open(path, 'w', encoding='utf8') as fh:
-        fh.write(md + '\n'.join(out) + '\n')
+        fh.write(md + '\n'.join(out) + '\n' + glyphs)
     return len(out)
+
+
+GLYPHS_START = '<!-- compsci:glyphs -->'
+GLYPHS_END = '<!-- /compsci:glyphs -->'
+
+
+def _blocks(md):
+    """The scheme .md as (flat extraction, cells block, glyph block), each
+    block ending in a newline, or '' where absent."""
+    def take(text, start, end):
+        if start not in text:
+            return text, ''
+        head, rest = text.split(start, 1)
+        body, tail = rest.split(end, 1)
+        return head + tail.lstrip('\n'), start + body + end + '\n'
+    md, glyphs = take(md, GLYPHS_START, GLYPHS_END)
+    md, cells = take(md, CELLS_START, CELLS_END)
+    return md.rstrip('\n') + '\n', cells, glyphs
+
+
+# CambriaMath glyph ids whose reading is SETTLED, each by a sighting where the
+# text layer reads it sanely and the maths confirms it (scheme pages scanned
+# with get_texttrace(); scripts/markbank/derive_glyphs.py's method, applied to
+# the one font the lane needs). The same font's text layer reads some of
+# these ids as another digit elsewhere, which is the fault being repaired.
+#   2778 '1', 2779 '2', 2780 '3', 2781 '4': 2021 HL scheme p4, "2^4 = 1.." and
+#       "log2 8 = 3" (2780 is the 3, 2781 the exponent 4); 2779 is also read
+#       '2' on 2020 HL p6.
+#   2784 '7': 2020 HL scheme p6, the exponent of "2^7".
+#   2785 '8': 2021 HL scheme p4, "log2 8 = 3"; 2020 HL p6's text layer reads
+#       the same id as '1' in "128".
+# 2783 has no sane sighting (2021 HL p4 reads it '1' in "16") and stays
+# unresolved: a line that needs it is refused.
+LANE_GIDS = {('CambriaMath', 2778): '1', ('CambriaMath', 2779): '2', ('CambriaMath', 2780): '3',
+             ('CambriaMath', 2781): '4', ('CambriaMath', 2784): '7', ('CambriaMath', 2785): '8'}
+SUPERSCRIPT = str.maketrans('0123456789', '⁰¹²³⁴⁵⁶⁷⁸⁹')
+SUBSCRIPT = str.maketrans('0123456789', '₀₁₂₃₄₅₆₇₈₉')
+
+
+def read_glyph_line(page, y0, y1):
+    """One printed line, read from the glyph trace rather than the text layer.
+
+    Each maths glyph is drawn twice (the second copy has glyph id -1 at the
+    same origin) and its digits are mis-mapped, so the trace is read once per
+    real glyph, CambriaMath digits by LANE_GIDS, and a digit set smaller and
+    raised (or lowered) against the line is written as a superscript (or
+    subscript). A gap wider than 2 pt between spans is a space."""
+    spans = [t for t in page.get_texttrace() if y0 <= t['bbox'][1] and t['bbox'][3] <= y1]
+    if not spans:
+        raise LaneError(f'no glyphs drawn between y {y0} and {y1}')
+    base = max(spans, key=lambda t: t['size'])
+    base_y = base['chars'][0][2][1]
+    out, last_x = '', None
+    for t in spans:
+        fam = re.sub(r'^[A-Z]{6}\+', '', t['font']).split('-')[0].split(',')[0]
+        for ch in t['chars']:
+            if ch[1] < 0:
+                continue
+            x, y = ch[2]
+            c = chr(ch[0])
+            if fam == 'CambriaMath' and 0x1D400 <= ch[0] <= 0x1D7FF:
+                if (fam, ch[1]) not in LANE_GIDS:
+                    raise LaneError(f'CambriaMath glyph {ch[1]} ({c!r}) has no settled reading')
+                c = LANE_GIDS[(fam, ch[1])]
+                if t['size'] < 0.85 * base['size']:
+                    c = c.translate(SUPERSCRIPT if y < base_y - 1 else SUBSCRIPT)
+            if last_x is not None and x - last_x > 2 and not out.endswith(' ') and c != ' ':
+                out += ' '
+            out += c
+            last_x = x + (ch[3][2] - ch[3][0] if len(ch) > 3 else 0)
+    return ws(out)
+
+
+def append_glyphs(year, level, page, y0, y1):
+    """Append one scheme line, read by glyph id, to the scheme .md's glyph block
+    (replacing that page's entry): the text the provenance gate compares a
+    G() option against. Append-only, as append_cells."""
+    path = os.path.join(SCHEMES, f'{year}-{level}.md')
+    flat, cells, glyphs = _blocks(open(path, encoding='utf8').read())
+    doc = pymupdf.open(os.path.join(SCHEMES, f'{year}-{level}.pdf'))
+    line = read_glyph_line(doc[page - 1], y0, y1)
+    entries = dict(re.findall(r'<!-- compsci:glyphs page (\d+) -->\n(.*?)\n(?=<!--)', glyphs, re.S))
+    entries[str(page)] = line
+    block = [GLYPHS_START] + [x for k in sorted(entries, key=int)
+                              for x in (f'<!-- compsci:glyphs page {k} -->', entries[k])] + [GLYPHS_END]
+    with open(path, 'w', encoding='utf8') as fh:
+        fh.write(flat + cells + '\n'.join(block) + '\n')
+    return line
 
 
 # build-deck's comparableScheme(), its first form: marks-only and label-only
@@ -398,8 +525,33 @@ def build_row(sitting, spec, i, question_text, where):
         row = {'id': rid, 'kind': 'anyN', 'verbatim': head, 'marks': None, 'group': group}
         if spec.get('open'):
             row['openList'] = True
-        if spec.get('note'):
-            row['contextNote'] = check_note(where, sitting.lift(spec['note']))
+        note = [n for n in (spec.get('note'), spec.get('instruction')) if n is not None]
+        if note:
+            row['contextNote'] = check_note(where, ' '.join(sitting.lift(n) for n in note))
+        if spec.get('route'):
+            row['route'] = spec['route']
+        return row
+    if kind == 'ladder':
+        options = [sitting.lift(o) for o in spec['options']]
+        for o in options:
+            halves = o.split(' — ')
+            if not traces(sitting, o) and not (
+                    len(halves) == 2 and all(traces(sitting, h) for h in halves)):
+                raise LaneError(f'{where}: option not in the scheme .md: {o[:70]!r}')
+        if not traces(sitting, options[0].split(' — ')[-1]):
+            raise LaneError(f'{where}: first option must trace on its own: {options[0][:70]!r}')
+        sums = {0}
+        for item in spec['items']:
+            if not item or list(item) != sorted(set(item)) or item[0] <= 0:
+                raise LaneError(f'{where}: ladder item {item} is not the printed values above zero')
+            sums = {a + b for a in sums for b in [0] + list(item)}
+        row = {'id': rid, 'kind': 'criterion', 'verbatim': options[0],
+               'marks': sum(item[-1] for item in spec['items']), 'permittedMarks': sorted(sums)}
+        if len(options) > 1:
+            row['accepts'] = options[1:]
+        note = [n for n in (spec.get('head'), spec.get('instruction'), spec.get('note')) if n is not None]
+        if note:
+            row['contextNote'] = check_note(where, ' '.join(sitting.lift(n) for n in note))
         if spec.get('route'):
             row['route'] = spec['route']
         return row
@@ -776,6 +928,8 @@ def main(argv):
         mod = module(year, level)
         for key, path, w, h in publish_crops(Sitting(year, level), mod, write=False, only=only):
             print(f'{key} {w}x{h} {path}')
+    elif cmd == 'glyphs':
+        print(append_glyphs(int(argv[2]), argv[3], int(argv[4]), float(argv[5]), float(argv[6])))
     elif cmd == 'cells':
         n = append_cells(int(argv[2]), argv[3], [int(x) for x in argv[4].split(',')])
         print(f'{n} lines in the cells block')

@@ -8,10 +8,15 @@ marks" under "3 + 2 marks"; each part is carded at its place in that sum,
 (a) 3 and (b) 2, with the scheme's rule quoted on the row.
 
 Q6(b)'s first limitation prints 2 to the power 7 = 128 in Cambria Math, whose
-text layer reads every digit there as a 1 or a doubled 2 and 7 (rawdict, scheme
-p6). The line is not lifted; the scheme's limitation list is the card's
-solution crop, so the student sees it as printed, and the four clean lines are
-the claimable options.
+text layer draws each digit twice and reads the 8 of 128 as a 1. The line is
+read by glyph id instead (compsci_lane.append_glyphs, the glyph block of
+2020-hl.md): every id it uses has a sane sighting, the 8's in 2021 HL scheme
+p4 ("log2 8 = 3"), so it is a claimable option like the rest.
+
+A menu the scheme prices on a good/fair ladder ("Any one of the above points:
+Good 2 / Fair 1") is a ladder() row, so the fair price is claimable; a line
+among the answers that is not an answer ("Any similar explanation.") is lifted
+into the note (coordinator, 5 Nov).
 
 Section C prints a level descriptor for every step of each scale (scheme
 pages 19-22, 25-27); each part's row is the scheme's "Correct implementation
@@ -19,7 +24,7 @@ using included solution or similar." on that scale's printed steps, with the
 descriptors as its note and the lines of the possible solution marked for that
 part as its solution crop.
 """
-from compsci_lane import (C, P, Pair, S, T, anyn, ask_row, crit, crop, pt, stack)  # noqa: F401
+from compsci_lane import (C, G, P, Pair, S, T, anyn, ask_row, crit, crop, ladder, pt, stack)  # noqa: F401
 
 CROPS = {
     'q1-table': crop('038', 3, (148, 185, 447, 388), ref='2020 HL Q1',
@@ -30,12 +35,6 @@ CROPS = {
                        alt='The half-adder circuit printed with Question 5: inputs A and B feed '
                            'an AND gate whose output is C, and two AND gates, each taking one '
                            'input through a NOT gate, feed an OR gate whose output is S.'),
-    's-q6b': crop('scheme', 6, (55, 460, 535, 556), ref='2020 HL Q6(b)', solution=True,
-                  alt='The marking scheme\'s limitations of ASCII for Question 6(b): 7 bits so '
-                      'only a maximum of 2 to the power 7 = 128 characters, 94 printable '
-                      '(accept 8 bits, max 256 characters); does not allow for emojis; does not '
-                      'support symbols from different languages; not enough symbols for '
-                      'languages with large character sets; and similar.'),
     'q7-binary': crop('038', 6, (245, 475, 350, 503), ref='2020 HL Q7',
                       alt='The 8-bit binary representation of the ASCII character K printed with '
                           'Question 7: 0100 1011.'),
@@ -247,13 +246,12 @@ CARDS = [
          why='p3: why choose the SSD; the scheme lists four reasons, 3 / 2 / 1',
          stem=Q2_STEM,
          ask=P(3, 'Assuming that neither cost nor capacity were issues', 'rather than the HDD.'),
-         rows=[anyn([S(4, 'SSD is smaller, faster, quieter'),
-                     S(4, 'SSD has no moving parts', 'better for transportation, etc.'),
-                     S(4, 'SSD is completely electronic - consumes less power'),
-                     S(4, 'SSD is safe from magnets')], 1, 3,
-                    head=P(3, 'Assuming that neither cost nor capacity were issues', 'rather than the HDD.'),
-                    note=S(4, 'Very good description - clear understanding demonstrated 3 marks',
-                           'Fair description - limited understanding 1 mark'))]),
+         rows=[ladder([S(4, 'SSD is smaller, faster, quieter'),
+                       S(4, 'SSD has no moving parts', 'better for transportation, etc.'),
+                       S(4, 'SSD is completely electronic - consumes less power'),
+                       S(4, 'SSD is safe from magnets')], [[1, 2, 3]],
+                      note=S(4, 'Very good description - clear understanding demonstrated 3 marks',
+                             'Fair description - limited understanding 1 mark'))]),
     dict(key=(3, None, None), topic='cs-2-3', total=5,
          why='p4: the purpose of the program counter; the scheme answers it, 5 / 3 / 1',
          ask=P(4, 'The program counter is a special register', 'purpose of the program counter.'),
@@ -264,10 +262,9 @@ CARDS = [
          why='p4: what a protocol is; the scheme gives two forms, any one, 2 / 1',
          stem=Q4_STEM,
          ask=P(4, 'When referring to World Wide Web infrastructure', 'the term protocol?'),
-         rows=[anyn([S(5, 'Rules and procedures for network communication or similar'),
-                     S(5, 'An agreed way to communicate between two computers/devices/processes')], 1, 2,
-                    head=S(5, 'Any one of the above points:'),
-                    note=S(5, 'Any one of the above points:', 'limited understanding 1 mark'))]),
+         rows=[ladder([S(5, 'Rules and procedures for network communication or similar'),
+                       S(5, 'An agreed way to communicate between two computers/devices/processes')], [[1, 2]],
+                      note=S(5, 'Any one of the above points:', 'limited understanding 1 mark'))]),
     dict(key=(4, 'b', None), topic='cs-2-3', total=3, printed=S(5, 'Question 4 2 + 3 marks'),
          why='p4: one protocol, named and its purpose; the scheme prices the name 1 and the '
              'purpose 2 / 1, and tables five protocols with their purposes',
@@ -275,14 +272,13 @@ CARDS = [
          ask=P(4, 'State the name and purpose of one such protocol.'),
          rows=[pt(S(5, 'HTTP, HTTPS, TCP, IP, VOIP, or similar', 'Others: Echo, finger, Gopher, POP3, DNS, UDP'), 1,
                   note=S(5, 'Name 1 mark')),
-               anyn([Pair(S(5, 'HTTP'), S(5, 'High level protocol used to support the exchange', '(typically HTML)')),
-                     Pair(S(5, 'HTTPS'), S(5, 'HTTP + added security layer / encryption-decryption')),
-                     Pair(S(5, 'TCP'), S(5, 'Low level protocol', 'orders at the destination')),
-                     Pair(S(5, 'IP'), S(5, 'Responsible for the routing of packets', 'inter-connected computers/devices')),
-                     Pair(S(5, 'VOIP'), S(5, 'The transmission of voice over IP'))], 1, 2, open_list=True,
-                    head=S(5, 'Protocol Purpose'),
-                    note=S(5, 'Purpose: Good description - clear information 2 marks',
-                           'limited understanding 1 mark'))]),
+               ladder([Pair(S(5, 'HTTP'), S(5, 'High level protocol used to support the exchange', '(typically HTML)')),
+                       Pair(S(5, 'HTTPS'), S(5, 'HTTP + added security layer / encryption-decryption')),
+                       Pair(S(5, 'TCP'), S(5, 'Low level protocol', 'orders at the destination')),
+                       Pair(S(5, 'IP'), S(5, 'Responsible for the routing of packets', 'inter-connected computers/devices')),
+                       Pair(S(5, 'VOIP'), S(5, 'The transmission of voice over IP'))], [[1, 2]],
+                      note=S(5, 'Purpose: Good description - clear information 2 marks',
+                             'limited understanding 1 mark'))]),
     dict(key=(5, 'a', None), topic='cs-2-3', qfigure='q5-circuit', total=3, printed=S(6, 'Question 5 3 + 2 marks'),
          why='p5: C when A and B are both 0; the scheme answers it, first correct 3',
          stem=Q5_STEM,
@@ -297,22 +293,21 @@ CARDS = [
          why='p6: why encoding standards matter; the scheme lists three, any one, 3 / 2',
          stem=Q6_STEM,
          ask=P(6, 'Why are encoding standards such as ASCII important?'),
-         rows=[anyn([S(6, 'Allows data to be encoded in a standard way'),
-                     S(6, 'Provides a means of representing data as information'),
-                     S(6, 'Allows for worldwide communication in electronic form or similar')], 1, 3,
-                    head=S(6, 'Any one of the above points:'),
-                    note=S(6, 'Any one of the above points:', 'limited understanding 2 mark'))]),
-    dict(key=(6, 'b', None), topic='cs-2-3', figure='s-q6b', total=2, printed=S(6, 'Question 6 3 + 2 marks'),
-         why='p6: one limitation of ASCII; the scheme lists five, 2 / 1; its first (2 to the 7 '
-             '= 128 characters) is unreadable in the text layer and is shown in the crop',
+         rows=[ladder([S(6, 'Allows data to be encoded in a standard way'),
+                       S(6, 'Provides a means of representing data as information'),
+                       S(6, 'Allows for worldwide communication in electronic form or similar')], [[2, 3]],
+                      note=S(6, 'Any one of the above points:', 'limited understanding 2 mark'))]),
+    dict(key=(6, 'b', None), topic='cs-2-3', total=2, printed=S(6, 'Question 6 3 + 2 marks'),
+         why='p6: one limitation of ASCII; the scheme lists four and "and similar", 2 / 1; its '
+             'first (2 to the 7 = 128 characters) is read by glyph id',
          stem=Q6_STEM,
          ask=P(6, 'State one limitation of ASCII.'),
-         rows=[anyn([S(6, 'Does not allow for emojis, etc'),
-                     S(6, 'Does not support symbols from different languages'),
-                     S(6, 'Not enough symbols to support certain languages with large character sets'),
-                     S(6, 'And similar')], 1, 2, open_list=True,
-                    head=S(6, 'Limitation:'),
-                    note=S(6, 'Good description - clear information 2 marks', 'limited understanding 1 mark'))]),
+         rows=[ladder([G(6, '7 bits so only max of', 'max 256 characters)'),
+                       S(6, 'Does not allow for emojis, etc'),
+                       S(6, 'Does not support symbols from different languages'),
+                       S(6, 'Not enough symbols to support certain languages with large character sets')], [[1, 2]],
+                      head=S(6, 'Limitation:'), instruction=S(6, 'And similar'),
+                      note=S(6, 'Good description - clear information 2 marks', 'limited understanding 1 mark'))]),
     dict(key=(7, None, None), topic='cs-2-3', qfigure='q7-binary', total=5,
          why='p6: the binary for K in hexadecimal; the scheme answers 4B, 5 / 3 / 1',
          ask=P(6, 'The 8', 'to hexadecimal notation.'),
@@ -342,11 +337,10 @@ CARDS = [
          why='p9: one way to fix the grade function; the scheme gives two and any similar, '
              '5 / 3 / 1',
          ask=P(9, 'The intention of the JavaScript function below', 'so that it works as intended.'),
-         rows=[anyn([S(8, 'Change 2nd if to else'), S(8, 'Rearrange code with correct example.'),
-                     S(8, 'Similar suitable answer.')], 1, 5, open_list=True,
-                    head=P(9, 'Outline one way in which the function could be modified', 'so that it works as intended.'),
-                    note=S(8, 'Very good description - clear understanding demonstrated 5 marks',
-                           'Fair description - limited understanding 1 mark'))]),
+         rows=[ladder([S(8, 'Change 2nd if to else'), S(8, 'Rearrange code with correct example.')], [[1, 3, 5]],
+                      instruction=S(8, 'Similar suitable answer.'),
+                      note=S(8, 'Very good description - clear understanding demonstrated 5 marks',
+                             'Fair description - limited understanding 1 mark'))]),
     dict(key=(12, None, None), topic='cs-1-1', qfigure='q12-graph', total=5,
          printed=S(8, 'Very good description - clear understanding demonstrated 5 marks', nth=2),
          tariff_note='Section A, twelve questions for 60 marks; the head prints no tariff, the '
@@ -354,11 +348,10 @@ CARDS = [
          why='p10: why heuristics suit the travelling salesperson problem; the scheme gives two '
              'answers, 5 / 3 / 1',
          ask=P(10, 'The travelling salesperson problem is commonly used', 'a problem such as this?'),
-         rows=[anyn([S(8, 'Heuristics will find the best approximate solution', 'The best actual solution or similar answer.'),
-                     S(8, 'Heuristics is a guess which can be based on previous experience or rule of thumb.')], 1, 5,
-                    head=P(10, 'Why would heuristics be considered a good approach to solving a problem such as this?'),
-                    note=S(8, 'Very good description - clear understanding demonstrated 5 marks',
-                           'Fair description - limited understanding 1 mark', nth=2))]),
+         rows=[ladder([S(8, 'Heuristics will find the best approximate solution', 'The best actual solution or similar answer.'),
+                       S(8, 'Heuristics is a guess which can be based on previous experience or rule of thumb.')], [[1, 3, 5]],
+                      note=S(8, 'Very good description - clear understanding demonstrated 5 marks',
+                             'Fair description - limited understanding 1 mark', nth=2))]),
     # ── Section B ──────────────────────────────────────────────────────────
     dict(key=(13, 'a', 'i'), topic='cs-2-2', qfigure='q13-code', total=2,
          why='p11: name the search algorithm; the scheme answers linear search, 2',
@@ -422,11 +415,10 @@ CARDS = [
     dict(key=(14, 'b', 'i'), topic='cs-1-2', qfigure='q14-fsm', total=2,
          why='p16: the significance of state S2; the scheme gives three and any similar, 2 / 1',
          stem=Q14B, ask=P(16, 'What is the significance of state S2?'),
-         rows=[anyn([S(12, 'S2 is the end/final/halt state.'), S(12, 'The FSM is finished computing.'),
-                     S(12, 'The problem is computable if it reaches this state (deterministic).'),
-                     S(12, 'Any similar explanation.')], 1, 2, open_list=True,
-                    head=P(16, 'What is the significance of state S2?'),
-                    note=S(12, 'Good explanation - clear information 2 marks', 'Fair explanation - limited understanding 1 mark'))]),
+         rows=[ladder([S(12, 'S2 is the end/final/halt state.'), S(12, 'The FSM is finished computing.'),
+                       S(12, 'The problem is computable if it reaches this state (deterministic).')], [[1, 2]],
+                      instruction=S(12, 'Any similar explanation.'),
+                      note=S(12, 'Good explanation - clear information 2 marks', 'Fair explanation - limited understanding 1 mark'))]),
     dict(key=(14, 'b', 'ii'), topic='cs-1-2', qfigure='q14-table', total=2,
          why='p16: the two blank rows of the transition table; the scheme prints them, 1 a row',
          stem=Q14B, ask=P(16, 'Complete the state transition table below', 'The first row has already been completed.'),
@@ -441,22 +433,21 @@ CARDS = [
              'each at 2 / 1',
          stem=P(18, 'In the mid', 'posed by artificial intelligence”.'),
          ask=P(18, 'Discuss the quotation above', 'negative effects of AI on society.'),
-         rows=[anyn([S(14, 'Positive impact on human life', 'predicting weather, etc.'),
-                     S(14, 'Improving daily life', 'shopping suggestions, etc.'),
-                     S(14, 'Analysing large datasets', 'that humans could not do.'),
-                     S(14, 'Always available, no emotional decisions, faster decisions, more accuracy.'),
-                     S(14, 'New inventions, solutions or ideas that humans may not think of.'),
-                     S(14, 'Any similar suitable answer.', nth=1)], 2, 2, open_list=True,
-                    head=S(14, 'Positives:'),
-                    note=S(14, 'Mark 2 best points for positive and 2 best points for negative.',
-                           'Fair description - limited understanding 1 marks')),
-               anyn([S(14, 'Data privacy issues and potential misuse', 'existing datasets.'),
-                     S(14, 'Ethical issues', 'drones in war.'),
-                     S(14, 'Unemployment', 'replace humans in jobs.'),
-                     S(14, 'No innovation or creativity', 'on which it is based.'),
-                     S(14, 'Risk of creating sentient machines that develop a conscience.'),
-                     S(14, 'Any similar suitable answer.', nth=2)], 2, 2, open_list=True,
-                    head=S(14, 'Negatives:'))]),
+         rows=[ladder([S(14, 'Positive impact on human life', 'predicting weather, etc.'),
+                       S(14, 'Improving daily life', 'shopping suggestions, etc.'),
+                       S(14, 'Analysing large datasets', 'that humans could not do.'),
+                       S(14, 'Always available, no emotional decisions, faster decisions, more accuracy.'),
+                       S(14, 'New inventions, solutions or ideas that humans may not think of.')], [[1, 2], [1, 2]],
+                      head=S(14, 'Positives:'), instruction=S(14, 'Any similar suitable answer.', nth=1),
+                      note=S(14, 'Mark 2 best points for positive and 2 best points for negative.',
+                             'Fair description - limited understanding 1 marks')),
+               ladder([S(14, 'Data privacy issues and potential misuse', 'existing datasets.'),
+                       S(14, 'Ethical issues', 'drones in war.'),
+                       S(14, 'Unemployment', 'replace humans in jobs.'),
+                       S(14, 'No innovation or creativity', 'on which it is based.'),
+                       S(14, 'Risk of creating sentient machines that develop a conscience.')], [[1, 2], [1, 2]],
+                      head=S(14, 'Negatives:'), instruction=S(14, 'Any similar suitable answer.', nth=2),
+                      note=S(14, 'For each of the 4 points', 'Fair description - limited understanding 1 marks'))]),
     dict(key=(15, 'a', None), topic='cs-1-3', total=4,
          why='p20: staged or iterative, with two reasons; the scheme gives example reasons for '
              'each, 2 / 1 a reason',
@@ -470,15 +461,14 @@ CARDS = [
              'for the role and 1 for each responsibility',
          stem=Q15_STEM,
          ask=P(21, 'As project manager one of your main tasks', 'responsibilities associated with that role.'),
-         rows=[anyn([Pair(T(15, 'Project Manager (Leader/Team Leader)'), T(15, 'Planning, monitoring, resourcing, communication')),
-                     Pair(T(15, 'Analyst'), T(15, 'Understands the problem and define the system scope')),
-                     Pair(T(15, 'Designer'), T(15, 'Creates a representation of the system using tools and algorithms')),
-                     Pair(T(15, 'Programmer / Developer / Coder / Software Engineer'),
-                          T(15, 'Implements design – writes the programs – unit test')),
-                     Pair(T(15, 'Testers/Testing'), T(15, 'Determines whether the system works as intended')),
-                     T(15, 'Any similar role')], 2, 4, open_list=True,
-                    head=S(15, 'Role Responsibilities'),
-                    note=S(15, 'For each role: Any relevant role 2 marks', '1 mark for each'))]),
+         rows=[ladder([Pair(T(15, 'Project Manager (Leader/Team Leader)'), T(15, 'Planning, monitoring, resourcing, communication')),
+                       Pair(T(15, 'Analyst'), T(15, 'Understands the problem and define the system scope')),
+                       Pair(T(15, 'Designer'), T(15, 'Creates a representation of the system using tools and algorithms')),
+                       Pair(T(15, 'Programmer / Developer / Coder / Software Engineer'),
+                            T(15, 'Implements design – writes the programs – unit test')),
+                       Pair(T(15, 'Testers/Testing'), T(15, 'Determines whether the system works as intended'))],
+                      [[1, 2, 3, 4], [1, 2, 3, 4]], instruction=T(15, 'Any similar role'),
+                      note=S(15, 'For each role: Any relevant role 2 marks', '1 mark for each'))]),
     dict(key=(15, 'c', 'i'), topic='cs-1-3', qfigure='q15-ui', total=6,
          why='p22: compare the two interfaces; the scheme prices the type of application 2 / 1 '
              'and two points of functionality 2 / 1 each',
@@ -488,14 +478,14 @@ CARDS = [
                     head=S(16, 'Type of application:'),
                     note=S(16, 'Good comparison - clear information, good understanding 2 marks',
                            'Fair comparison - limited understanding 1 mark')),
-               anyn([S(16, 'Social media integration (Facebook and Twitter).'),
-                     S(16, 'Ability to set and play at different levels', 'veteran level).'),
-                     S(16, 'A log of the result history', 'result of the most recent game).'),
-                     S(16, 'A display of the number of draws (ties).'),
-                     S(16, 'UI 1 is more user friendly', 'twice as many clicks).')], 2, 2,
-                    head=S(16, 'The basic functionality offered by both examples', 'the following additional functionality:'),
-                    note=S(16, 'Mark 2 best points for comparison of functionality.',
-                           'Fair comparison - limited understanding 1 mark'))]),
+               ladder([S(16, 'Social media integration (Facebook and Twitter).'),
+                       S(16, 'Ability to set and play at different levels', 'veteran level).'),
+                       S(16, 'A log of the result history', 'result of the most recent game).'),
+                       S(16, 'A display of the number of draws (ties).'),
+                       S(16, 'UI 1 is more user friendly', 'twice as many clicks).')], [[1, 2], [1, 2]],
+                      head=S(16, 'The basic functionality offered by both examples', 'the following additional functionality:'),
+                      note=S(16, 'Mark 2 best points for comparison of functionality.',
+                             'Fair comparison - limited understanding 1 mark'))]),
     dict(key=(15, 'c', 'ii'), topic='cs-1-2', total=2,
          why='p24: two examples of adaptive technology in the game; the scheme lists four, 1 each',
          stem=Q15_STEM,

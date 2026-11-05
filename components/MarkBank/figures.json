@@ -56477,18 +56477,6 @@
   "level": "higher",
   "attribution": "SEC Leaving Certificate Computer Science 2020 Higher Level — © State Examinations Commission"
  },
- "computer-science-2020-HL-scheme-q6b": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2020-HL-scheme-q6b.png",
-  "md5": "aa9abd3d09206bb1dfc0bec8f37f12e5",
-  "alt": "The marking scheme's limitations of ASCII for Question 6(b): 7 bits so only a maximum of 2 to the power 7 = 128 characters, 94 printable (accept 8 bits, max 256 characters); does not allow for emojis; does not support symbols from different languages; not enough symbols for languages with large character sets; and similar.",
-  "solution": true,
-  "lettersVisible": [],
-  "labelMeanings": [],
-  "questionRef": "2020 HL Q6(b)",
-  "year": 2020,
-  "level": "higher",
-  "attribution": "SEC Leaving Certificate Computer Science 2020 Higher Level — © State Examinations Commission"
- },
  "computer-science-2020-HL-paper-q7-binary": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2020-HL-paper-q7-binary.png",
   "md5": "f10ad9f2436dacbe9707331210424e07",
