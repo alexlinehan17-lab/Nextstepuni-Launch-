@@ -50,7 +50,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 import cardlint                                              # noqa: E402
 import paper_census as PC                                    # noqa: E402
 from tech_scheme import TechScheme, cue_score, normalise as SCHEME_NORM, _words as SCHEME_WORDS  # noqa: E402
-from tech_topics import topic_for, topic_for_option          # noqa: E402
+from tech_topics import topic_for, topic_for_option, TOPIC_OVERRIDES  # noqa: E402
 import tech_crops as TC                                      # noqa: E402
 
 SUBJECT = 'technology'
@@ -75,6 +75,10 @@ NOT_A_POINT = re.compile(
     # The choice rubric between parts: "Answer 2(c) or 2(d)".
     r'|answer\s+\d\([a-d]\)\s+(?:and|or)\s+\d\([a-d]\)'
     r'|[^.?!]{0,28}:)\s*$', re.I)
+
+# A scheme line that is nothing but a bulleted label: "• Rehabilitation from
+# injury:".
+BULLET_LABEL = re.compile(r'^[\u2022\u25aa\u25cf\u25e6]\s*[^:\u2022]{2,60}:$')
 
 # The examiner's closing remark on a list -- "Suggested elements, other
 # viable answers accepted." under 2026 Higher Q11's three -- is not a fourth
@@ -110,7 +114,12 @@ FOOTER = re.compile(
     # pages 3 and 5 and read onto the end of Q12's ask.
     r'|\s*page\s+running\s*$'
     r'|\s*Technology\s*[-–—]\s*(?:Higher|Ordinary)\s+Level.*$'
-    r'|\s*Please turn over\b.*$|\s*Do not write on this page\b.*$', re.I)
+    r'|\s*Please turn over\b.*$|\s*Do not write on this page\b.*$'
+    # The facing page's own notice, read onto the last question of the
+    # booklet (2017 Higher Q15).
+    r'|\s*Blank Page\s*$'
+    # The 2010-2018 Sections B/C booklet's page footer, "Page 7 of 9".
+    r'|\s*Page\s+\d+\s+of\s+\d+\s*$', re.I)
 
 # A cue too short to identify anything: "Modification:", "Calculation:".
 # An ask that names its subject only by pointing back at the stimulus:
@@ -157,6 +166,9 @@ CUE_FLOOR = 0.5
 
 def clean(text):
     text = FOOTER.sub('', ' '.join((text or '').split())).strip()
+    # A stray backtick the 2019 Higher scheme sets after 4(b)(iii)'s last
+    # line of working ("= €570,000 `"): it is no character of the answer.
+    text = re.sub(r'\s+`$', '', text)
     return ' '.join(text.split())
 
 
@@ -282,6 +294,11 @@ def strip_ask_label(point, ask):
     # cookie"); never a heading the ask merely ends with ("...Man, Machine,
     # Method." keeps its "Method:" row distinct from the other two).
     if bare == label or re.search(r':\s*' + re.escape(label) + r'$', bare):
+        # ...unless the ask closes on a RUN of labels ("Explain the terms:
+        # CAM: CNC:"): stripping the last would leave one row labelled and
+        # its sibling not.
+        if re.search(r':\s*[^:]{1,40}:\s*' + re.escape(label) + r'$', bare):
+            return point
         return m.group(2)
     return point
 
@@ -317,10 +334,20 @@ def graphic_fragments(points):
     # it, and the exception let three such cards through.
     if len(bullets) >= 2 and len(bullets) >= 0.6 * len(points):
         return False
+    # ...and so is a NUMBERED one, "1. Marking out of parts." / "2. Drilling."
+    # (2018 Ordinary Q9's four steps, priced "(4x2 marks)").
+    numbered = [p for p in points if re.match(r'\d\.\s+\S', p.lstrip())]
+    if len(numbered) >= 2 and len(numbered) >= 0.6 * len(points):
+        return False
     # "People: Unskilled, in-experienced" -- a heading and its answer on one
     # line, three of them under 2026 Higher Q11's fishbone. Short, never
     # closed, and each one states something.
-    labelled = [p for p in points if re.match(r'^[A-Z][A-Za-z /-]{1,24}:\s+\S', p)]
+    # 2019 Ordinary 2(c)(i) gives the Deming stages with a DASH for the colon --
+    # "Plan– identify problems", "Study- consider/examine the findings" -- the
+    # same heading-and-answer line.
+    labelled = [p for p in points
+                if re.match(r'^[A-Z][A-Za-z /-]{1,24}:\s+\S', p)
+                or re.match(r'^[A-Z][a-z]{1,24}\s?[\u2013\u2014-]\s+[a-z]', p)]
     if len(labelled) >= 0.5 * len(points):
         return False
     short = [p for p in points if len(p) < 46]
@@ -370,7 +397,14 @@ def reflow(points, scheme_norm=''):
             # three layouts, 2025 Higher 12). Longer and it is a sentence.
             heading = (prev.endswith(':') and len(prev) <= 40
                        and not re.search(r'[.?!]', prev) and not CALCULATION.search(text)
-                       and not EXAMINER_LEAD.match(prev) and not NOT_A_POINT.match(prev))
+                       and not EXAMINER_LEAD.match(prev)
+                       # A bulleted label is a heading at any length: the
+                       # short-colon rule below would otherwise throw away
+                       # "• Rehabilitation from injury:" (28 characters) as
+                       # no point while "• Professional athletics and
+                       # sports:" (35) joined its answer -- 2019 Higher 3(a)
+                       # shipped its first row without its lead.
+                       and (BULLET_LABEL.match(prev) or not NOT_A_POINT.match(prev)))
             if heading:
                 joined = f'{prev} {text}'
                 if not scheme_norm or SCHEME_NORM(joined) in scheme_norm:
@@ -383,7 +417,24 @@ def reflow(points, scheme_norm=''):
             steps = bool(CALCULATION.search(prev) and CALCULATION.search(text)
                          and not opens_lower
                          and not re.match(r'[=+\u00d7\u2212\u2013-]|x\s', text))
-            if unclosed and not steps and (opens_lower or not re.match(
+            # A line that stops on an article or a preposition is a sentence
+            # the PDF broke, whatever the next line opens with: 2019 Higher
+            # 2(d)(i) breaks "...and hence an" / "EMF is induced...", and the
+            # capital split one answer into two rows, the first cut mid-phrase.
+            dangling = unclosed and bool(CUT_SHORT.search(prev)
+                                         or re.search(r'\b(?:e\.g|i\.e)\.,?$', prev))
+            # A numbered answer, and a term with its dash-led gloss -- "video
+            # output- with increased data-transfer speeds...", "charging - can
+            # carry more power" (2019 Ordinary 3(b)(ii)) -- open points of their
+            # own, whatever case they start in.
+            num = re.match(r'(\d)\.\s', text)
+            own_point = bool((num and re.match(rf'{int(num.group(1)) - 1}\.\s', prev))
+                             # the dash set hard against the term, or one word
+                             # and a spaced hyphen: a dash with space before it
+                             # is the sentence's own ("inserted when cool – it").
+                             or re.match(r'[a-z][a-z ]{1,30}?[a-z][\u2013\u2014]\s+[a-z]', text)
+                             or re.match(r'[a-z]+\s-\s+[a-z]', text))
+            if unclosed and not steps and not own_point and (opens_lower or dangling or not re.match(
                     r'[A-Z\u2022\u2013-]', text)):
                 joined = f'{prev} {text}'
                 # And only where the JOIN is what the scheme prints. The two
@@ -622,6 +673,9 @@ def stem_pieces(section, q, letter, roman, texts, stems):
 
 ASK_ROW_NOTE = ("The scheme answers this part with a drawing its text cannot "
                 "carry; its own print is shown with the answer.")
+# types/markBank.ts UNPRINTED_ANSWER: the one row a card may carry that is not
+# a slice of the scheme, for a printed ask whose scheme prints no answer.
+UNPRINTED_ANSWER = 'The scheme prints no answer for this part.'
 FALLBACK_TOPIC = 'tech-core-design'
 
 
@@ -643,6 +697,12 @@ def author(bind_figures=True):
 
     for paper in census['papers']:
         year, level = paper['year'], paper['level']
+        if not os.path.exists(os.path.join(
+                ROOT, 'examiner-reports/technology/schemes', f'{year}-{level}.md')):
+            # A sitting the census reads but whose scheme has not been
+            # extracted yet is not carded at all: its asks stay OPEN in the
+            # ledger, which is where an uncarded sitting belongs.
+            continue
         # The full printed wording, not the census REPORT's copy of it: that
         # one is truncated to 160 characters for display, and a card built
         # from it ends a question mid-word. The keys are the same walk either
@@ -667,6 +727,22 @@ def author(bind_figures=True):
                                                             year, level):
                 covered = [k for k in covered if k in leaves] or covered
                 ask = clean_ask(joined_ask(covered, leaves))
+                # tech_crops.ASK_FROM_STEM: a roman whose instruction is printed
+                # after its data, below a picture, which the walker files as
+                # the letter's stem (2017 Higher 4(b)(iii)'s "Calculate the
+                # process capability index ... where: Cp = ...").
+                stem_owner = TC.ASK_FROM_STEM.get((year, level, section, q, letter))
+                letter_stem = clean(stems.get((section, q, letter)) or '')
+                if stem_owner and stem_owner == roman:
+                    ask = clean_ask(f'{ask} {letter_stem}')
+                # tech_crops.STEM_TAIL_TO_ASK: an answer box's labels that ARE
+                # the terms asked about ("Explain the terms: CAM: ____ CNC:
+                # ____", 2017 Higher Q14(i)), filed by the walker at the end
+                # of the question's stem. They join the one roman that asks
+                # about them, and come off the stem every roman shows.
+                tail_move = TC.STEM_TAIL_TO_ASK.get((year, level, section, q, letter))
+                if tail_move and tail_move[0] == roman:
+                    ask = clean_ask(f'{ask} {tail_move[1]}')
                 ref = joined_ref(year, level, covered)
 
                 def note(reason, ask_text=''):
@@ -691,6 +767,7 @@ def author(bind_figures=True):
                 for key in TC.BY_EYE:
                     if TC.parse_key(key)[:5] == (year, level, section, q, letter):
                         paper_labels |= TC.paper_labels(year, level, key)
+                paper_labels |= TC.ask_zone_words(year, level, section, q, letter, roman)
                 # The lettering printed inside that picture, which the paper's
                 # text layer welds onto the end of the ask: "...the circuit
                 # shown. Calculation: 40 Ω 10 Ω 10 Ω V 12V". The crop carries
@@ -701,6 +778,20 @@ def author(bind_figures=True):
                 raw_ask = ask
                 ask = TC.strip_labels(ask, paper_labels) or ask
                 ask = TRAILING_LABEL.sub('', ask).strip()
+                # The answer lines' own numbers, "1. ____ 2. ____", left after
+                # the ask's last sentence once their rules are gone (2019
+                # Ordinary Q3(ii), Q4(i), Q8, Q9).
+                ask = re.sub(r'(?<=[.?!])(?<![Ff]ig\.)(?:\s+\d\.)+\s*$', '', ask)
+                # ...and a run of them BETWEEN two asks of one unlettered
+                # question, "...in cities. 1. 2. State two advantages..."
+                # (2018 Ordinary Q2): a run of two or more, after a closed
+                # sentence and before a capital, is the answer lines' numbers.
+                ask = re.sub(r'(?<=[.?!])(?:\s+\d\.){2,}(?=\s+[A-Z(])', '', ask)
+                # A tail the paper prints that no text layer reads in order:
+                # tech_crops.ASK_TAILS, each looked at on its page.
+                tail = TC.ASK_TAILS.get((year, level, section, q, letter, roman))
+                if tail and ask.endswith(tail):
+                    ask = ask[:-len(tail)].rstrip()
                 # A picture's lone letter read after the ask's last sentence
                 # ("...direction of arrow A. A"), whether or not its crop is
                 # known: a question never ends in a capital on its own.
@@ -716,6 +807,14 @@ def author(bind_figures=True):
                     lm = re.search(r'(?:^|[.?!]\s+)([A-Z][^.?!:]{3,60}:)\s*(?:\S+\s*){0,40}$', lead_src)
                     if lm:
                         ask = f'{lm.group(1)} {ask}'
+
+                # tech_crops.ASK_STRIP: an answer box's own labels, set inside
+                # the ask's text ("Value:", "Lowest: Highest:"), and a lead-in
+                # the rule above misread, each measured on the page. Off the
+                # raw ask too, which decides whether a row's label is the ask's.
+                for pattern in TC.ASK_STRIP.get((year, level, section, q, letter, roman), ()):
+                    ask = re.sub(pattern, '', ask).strip()
+                    raw_ask = re.sub(pattern, '', raw_ask).strip()
 
                 del BACKED_OFF[:]
                 cue, points = split_cue([clean(l) for l in lines], ask)
@@ -768,14 +867,23 @@ def author(bind_figures=True):
                 pieces = []
                 lost_picture = not figure and points_at_print(question)
                 for piece in stem_pieces(section, q, letter, roman, texts, stems):
+                    if stem_owner and piece == letter_stem:
+                        continue
                     # The answerbook's ruled blanks and their fill-in labels
                     # ("Time: ____ People: ____"), which 2021 Ordinary Q6 prints
                     # between its stem and its romans.
                     piece = clean(BLANK_RULE.sub(' ', piece))
+                    for pattern in TC.ASK_STRIP.get((year, level, section, q, letter, roman), ()):
+                        piece = re.sub(pattern, '', piece).strip()
+                    if tail_move and piece.endswith(tail_move[1]):
+                        piece = piece[:-len(tail_move[1])].rstrip()
                     piece = re.sub(r'(?:\s*\b[A-Z][a-z]{1,12}:\s*)+$', '', piece).strip()
                     piece = TC.strip_labels(piece, paper_labels)
                     piece = TRAILING_LABEL.sub('', piece).strip()
                     piece = re.sub(r'\s+OR\s*$', '', piece)
+                    # The answer lines' numbers, as the ask loses them above.
+                    piece = re.sub(r'(?<=[.?!])(?:\s+\d\.){2,}(?=\s+[A-Z])', '', piece)
+                    piece = re.sub(r'(?<=[.?!])(?<![Ff]ig\.)(?:\s+\d\.)+\s*$', '', piece)
                     # A neighbouring figure's lone letter ("...in electronics. A")
                     # and a table the walker flattened ("Week 1 Week 2 ... Task D").
                     piece = re.sub(r'(?<=[.?!])\s+[A-Z]\s*$', '', piece)
@@ -827,7 +935,12 @@ def author(bind_figures=True):
                 # and a line that sits inside it is no answer either.
                 bare_stem = SCHEME_NORM(' '.join(pieces))
                 points = [p for p in points
-                          if not (len(SCHEME_WORDS(p)) >= 5 and SCHEME_NORM(p) in bare_stem)]
+                          if not (len(SCHEME_WORDS(p)) >= 5 and SCHEME_NORM(p) in bare_stem)
+                          # The stimulus's given data reprinted whole, "Assume
+                          # g = 9.81 m/s2" over 2019 Higher 11(i)'s working: a
+                          # line that opens "Assume" gives, it does not answer.
+                          and not (re.match(r'assume\b', p, re.I)
+                                   and SCHEME_NORM(p) in SCHEME_NORM(f'{bare_stem} {raw_ask}'))]
                 # At any length: 2022 Ordinary 2(b)(iii) reprints its ask in
                 # 68 characters above the two-word answer "Suitable circuit.",
                 # and a length exemption kept the reprint and lost the answer.
@@ -894,7 +1007,7 @@ def author(bind_figures=True):
                     # the reveal, with the ask as its one row -- Chemistry's
                     # rule for its dot-and-cross diagrams. Otherwise the part
                     # is refused, and the refusal is the cropper's worklist.
-                    if solution:
+                    if solution or (year, level, section, q, letter, roman) in TC.NO_DRAWING:
                         ask_row = True
                     elif not points:
                         note('the scheme states no marking point for this part', ask)
@@ -937,7 +1050,9 @@ def author(bind_figures=True):
                 if len(question) < 16 and len(show_stem) < 20:
                     note('the ask is too short to stand on its own', question)
                     continue
-                if CUT_SHORT.search(question):
+                if CUT_SHORT.search(question) and not re.search(r'\b[A-Z]\w*\s+[A-Z]$', question):
+                    # (A capital letter closing a name -- "Component A", 2017
+                    # Higher Q3(i) -- is a label, not the article "a".)
                     # The paper text stops mid-phrase -- "A PIC, like the one
                     # mentioned in" -- which is the reader losing the rest of
                     # the sentence, not a question. paper.suspect() flags the
@@ -946,7 +1061,20 @@ def author(bind_figures=True):
                     note('the paper text for this part is cut short', question)
                     continue
 
-                if ask_row:
+                if ask_row and not solution:
+                    # tech_crops.NO_DRAWING: a sketch whose scheme prints no
+                    # drawing, only the band it is marked on (2018 Ordinary
+                    # Q7's empty answer box). Every printed ask gets a card;
+                    # this one says the scheme prints no answer.
+                    trimmed = 0
+                    rows = [{'id': 'r-1', 'kind': 'criterion',
+                             'verbatim': UNPRINTED_ANSWER, 'marks': total,
+                             'contextNote': ('The scheme prints no drawing for this '
+                                             'part, only how the sketch is marked: '
+                                             f'{block.notation}'),
+                             'unprinted': True}]
+                    model = {'kind': 'fixed'}
+                elif ask_row:
                     trimmed = 0
                     rows = [{'id': 'r-1', 'kind': 'point', 'verbatim': question,
                              'marks': total, 'openList': True,
@@ -970,6 +1098,7 @@ def author(bind_figures=True):
                     note_text += (f' The scheme lists {len(points)} accepted '
                                   f'answers; the first {len(rows)} are shown.')
 
+                topic = TOPIC_OVERRIDES.get(card_id(year, level, section, q, letter, roman), topic)
                 card = {
                     'id': card_id(year, level, section, q, letter, roman),
                     'topicId': topic,

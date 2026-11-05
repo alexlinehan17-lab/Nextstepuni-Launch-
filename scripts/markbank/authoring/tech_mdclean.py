@@ -56,7 +56,8 @@ def clean(year, level):
                 continue
             text = raw.strip()
             rects = TC.scheme_zones(year, level, page) if text else []
-            if not rects or TARIFF.search(text) or BAND.search(text):
+            if not rects or TARIFF.search(text) or BAND.search(text) \
+                    or text in TC.MD_KEEP.get((year, level, page), ()):
                 out.append(raw)
                 continue
             got = TC.strip_row_labels(text, pdf, page, rects)

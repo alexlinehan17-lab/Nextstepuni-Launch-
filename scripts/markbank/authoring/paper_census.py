@@ -159,10 +159,16 @@ SUBJECTS = {
     # and 039 carries Section B (two core long questions) and Section C (five
     # options, one answered). The sections are named on the page, and each
     # section restarts its numbering at 1, so the census reads the sections.
-    # The window is a DECISION: 2021-2025 shipped first; the archive 2010-2020
-    # and 2026 are admitted one sitting at a time, as each is carded under the
-    # year lane (2026-10-28), so census, ledger and deck measure the same thing.
-    'technology': {'mode': 'sections', 'from': 2021, 'also': [[2026, 'hl'], [2026, 'ol'], [2020, 'hl']]},
+    # The window is the whole archive, 2010-2026 (the archive holds no 2020
+    # Ordinary paper). It was narrowed to the reviewed sittings while 2020
+    # Higher and 2021-2026 were carded (2026-10-28, #314), which hid about
+    # 1,650 printed asks of 2010-2019 from the ledger and the ratchet; every
+    # one of those sittings was then read against its rendered pages (hand
+    # counts of 2010 OL, 2011 HL, 2019 HL and 2019 OL agree leaf for leaf) and
+    # admitted on 4 November 2026, so an uncarded sitting now reads as OPEN.
+    # The -014- booklet is Section A; -015- (2010-2018) and -039- (2019-) are
+    # the same Sections B and C booklet under the SEC's two file ids.
+    'technology': {'mode': 'sections', 'from': 2010},
     # Religious Education restarts nothing and numbers almost nothing: three
     # UNITS hold ten lettered SECTIONS, and only Section A (Unit One) prints
     # "Question 1..3" at all. Sections B-J address their asks by part alone,
@@ -1260,6 +1266,16 @@ TECH_PAGE_FURNITURE = re.compile(
     r'Leaving Certificate|Please turn over|Do not write on this page', re.I)
 
 
+# Technology questions whose romans are CAPTIONS under a row of pictures, not
+# asks -- a layout fact about one printed page, so a table keyed like
+# MISPRINTS rather than a heuristic. 2012 Higher Q14 sets four safety signs
+# captioned "(i) Yellow - caution" ... "(iv) Green - positive action" and then
+# asks, unnumbered, "State the meaning of the signs shown at (i) and (ii)
+# above" and "Outline the importance of colour in safety sign design." The
+# question is one numbered ask; read as parts its captions were four.
+TECH_CAPTION_ROMANS = {(2012, 'hl', 'A', 14)}
+
+
 def census_sections(subject, year, level):
     """The section-restart walker: Business and Home Economics.
 
@@ -1322,7 +1338,12 @@ def census_sections(subject, year, level):
                               r'|\s+(?=\d{1,2}\.\s+\([a-z]\)\s+[A-Z])'
                               r'|(?<=\d)\s+(?=\d{1,2}\.\s+[A-Z][a-z]+\s)', block)
                       if subject == 'business' else [block])
-            for text in (part for chunk in chunks for part in PP.INLINE_QHEAD.split(chunk)):
+            # Technology's older Section A booklets set the next head straight
+            # after the last ruled answer line in one block: 2012 Higher reads
+            # "(ii) An electric motor ____ 8. A design for a wooden toy is
+            # shown.", and Question 8 was lost into Question 7(ii).
+            qsplit = PP.INLINE_QHEAD_AFTER_LINE if subject == 'technology' else PP.INLINE_QHEAD
+            for text in (part for chunk in chunks for part in qsplit.split(chunk)):
                 if subject == 'business':
                     # Roman labels beside empty ruled answer slots are not
                     # independent printed asks. Keep actual roman prose.
@@ -1484,10 +1505,17 @@ def census_sections(subject, year, level):
             # B 130 marks Answer Question 1...'), and following that listing
             # walked the tracker to C before the paper had begun, filing all
             # of Section A under C.
+            # Technology's older Ordinary papers (2010, 2011) set every
+            # Section A question as a single ask with no part markers, so the
+            # section holds STEMS and no parts at all -- and its Section B
+            # heading never opened, filing Questions 2 and 3 under Section A
+            # and losing Section B whole. A section holding a stem has begun.
             if sh.group(1) != section and (section is None
                                            or sh.group(1) > section) \
                     and (section is None
-                         or any(k[0] == section for k in parts)):
+                         or any(k[0] == section for k in parts)
+                         or (subject == 'technology'
+                             and any(k[0] == section for k in stems))):
                 section, q, letter, roman = sh.group(1), None, None, None
             # 'Section 2 Applied Business Question 80 marks' is one block —
             # the header AND the headless compulsory question it opens.
@@ -1559,6 +1587,17 @@ def census_sections(subject, year, level):
                 # Q1 under Q2. A part heading is not a question head.
                 if subject == 'business' and m and re.match(r'\d{1,2}\.\s+PART\s+\d\b', un):
                     m = None
+        if not m and q is None and subject == 'technology' and section \
+                and re.fullmatch(r'1\.?', text.strip()) \
+                and index + 1 < len(blocks) and blocks[index + 1] is not FILE_BREAK \
+                and PP._leading(blocks[index + 1])[:2] != (None, None):
+            # The first head of a Technology booklet set alone, "1." over
+            # "(i) Solder is an alloy...", as the 2010 and 2011 papers print
+            # it. The bare-number rule below opens only the NEXT number due,
+            # so with no question open yet Question 1 was lost whole and its
+            # parts keyed to no question at all.
+            q, letter, roman = 1, None, None
+            continue
         if not m and isinstance(q, int):
             # Business Section 1 sets some heads as a bare '6.' in a block of
             # its own, the ask following. Only the next number due, never one
@@ -1618,6 +1657,21 @@ def census_sections(subject, year, level):
         if u:
             text = f'({u.group(1).lower()}) ' + text[u.end():]
         fl, fr, rest = PP._leading(text)
+        if subject == 'technology' and fr and not fl \
+                and (year, level, section, q) in TECH_CAPTION_ROMANS:
+            # Romans the paper prints as picture CAPTIONS, read as parts.
+            stems.setdefault((section, q, letter), []).append(text)
+            continue
+        if subject == 'technology' and section in ('B', 'C') and fl and not fr \
+                and not rest.strip() and q is not None \
+                and not (letter and len(fl) == 1 and ord(fl) == ord(letter) + 1):
+            # Sections B and C head their parts "4(d)", so a bare "(a)"
+            # standing alone there that is not the NEXT letter due is a
+            # caption: 2011 Higher Option 4(d) labels its three capacity
+            # graphs "(a)", "(b)" and "(c)", and reading them as parts filed
+            # 4(d)(i) and (ii) under 4(c). The next letter due stays a head --
+            # 2010 Ordinary sets Option 1's third part as "1" and "(c)" apart.
+            continue
         if fl or fr:
             if fl:
                 letter, roman = fl, fr
@@ -1675,8 +1729,15 @@ def census_sections(subject, year, level):
             # A figure's caption ("Print head module"), its labels ("A D B
             # Motor") and a table's cells carry no sentence and stay out,
             # as does the page's own furniture.
+            # A roman whose own sentence is still open is being finished, not
+            # given data: 2019 Ordinary 3(b)(ii) wraps "...outlined at" /
+            # "3(b) above in relation to USB Type-C.", and that tail was also
+            # filed as the stem of (i) and (iii).
+            open_sentence = bool(parts[(section, q, letter, roman)]) and not re.search(
+                r'[.?!:]\s*$', parts[(section, q, letter, roman)][-1]) \
+                and bool(text[:1].islower() or re.match(r'\d{1,2}\s?\([a-d]\)', text))
             parts[(section, q, letter, roman)].append(text)
-            if not TECH_ASKS.match(text):
+            if not TECH_ASKS.match(text) and not open_sentence:
                 # Data printed under (i) -- "Option A - Use skilled labour
                 # to assemble: Cost: EUR 8.50 per unit" -- is what (ii)
                 # and (iii) calculate from as well, so it is the letter's
@@ -1701,6 +1762,24 @@ def census_sections(subject, year, level):
     # whole questions — the order matters, because a phantom part suppresses
     # adoption for its whole question.
     parts = {k: v for k, v in parts.items() if any(x.strip() for x in v)}
+    if subject == 'technology':
+        # A roman that OPENS on a ruled answer line -- "(ii) ________" -- is a
+        # numbered answer SLOT under "Outline three benefits ..." (2010 Higher
+        # Q3 and Q14, 2011 Higher Q1 and Q2), not an ask. The newer papers
+        # draw those rules as graphics and the slot is empty; the older ones
+        # set them as underscores, which kept the slot alive as a part and
+        # its question's single ask out of the census. What follows the rule
+        # under the slot is the question's own text -- 2011 Higher Q2 heads
+        # its second pair of slots "Soldering components onto a printed
+        # circuit board (PCB):" -- so it goes back to the question's stem.
+        rule = re.compile(r'[_.\s\u2026]*')
+        for k in [k for k in parts if k[-1] is not None]:
+            chunks = [x for x in parts[k] if x.strip()]
+            if chunks and rule.fullmatch(re.sub(r'^\(\s*[ivx]+\s*\)', '', chunks[0])):
+                rest = [x for x in chunks[1:] if not rule.fullmatch(x)]
+                if rest:
+                    stems.setdefault(k[:3], []).extend(rest)
+                del parts[k]
     scaffold_text = re.compile(
         r'^(?:(?:Question|Part|Start each question on a new page|SECTION'
         r'\s+\d|Section\s+\w|and Answerbook)\s*)+$')
@@ -3797,6 +3876,17 @@ def census_subject(subject):
             # Two sittings that disagree name no expectation: Technology 2020
             # Higher prints 128 and 2021 Higher 64, and a tie flagged 2021.
             if n < 2:
+                continue
+            # Technology prints no tariff on any question: Section A's rubric
+            # prices them all at once and Sections B and C print their totals
+            # on the heading. What marks_by_question finds is those heading
+            # totals glued to the last Section A question ("Section B - Core
+            # (48 marks)", plus Section C's 80 wherever the PDF splits the
+            # heading into its own block), so the "sum" measures the block
+            # layout of the cover, not the paper. Admitting 2010-2019 made 48
+            # the mode and flagged 2020 Higher (128) and the 2021 Covid
+            # papers (64, 24) for a difference in how a heading extracts.
+            if subject == 'technology':
                 continue
             if p['marksSum'] != want:
                 p['flags'].append({

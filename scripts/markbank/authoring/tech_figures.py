@@ -926,6 +926,511 @@ REVIEWED.update({
         "A close-up photograph of one corner of the coffee table, captioned 'Leg assembly': a dark steel bracket fixed under the corner of the timber top holds a large spoked cast wheel on an axle.",
 })
 
+# 2019 Higher (Technology lane, 4 November 2026).
+REVIEWED.update({
+    'technology-2019-HL-paper-secA-q2-art':
+        'Photograph of a hand writing beside an open silver laptop, a black '
+        'USB-C cable plugged into the side of the laptop and lying across the desk.',
+    'technology-2019-HL-paper-secA-q4-art':
+        'Cutaway rendering of a gearbox: a threaded shaft, labelled Part A is '
+        'attached to a motor, meshing with a toothed bronze gear on the output '
+        'shaft, labelled Gear B has 50 teeth.',
+    'technology-2019-HL-paper-secA-q5-art':
+        'Rendering of a student-built buggy: a flat chassis frame of coloured rods '
+        'and linkages carrying four chunky wheels on two axles, with a curved wire '
+        'roll bar over a round platform.',
+    'technology-2019-HL-paper-secA-q6-art':
+        'Drawing of an electronic component: a red wire coil on an iron core '
+        'connected to + and − terminals through a switch, a hinged L-shaped '
+        'arm above the core, and three upright contact strips beside it.',
+    'technology-2019-HL-paper-secA-q7-art':
+        'Product lifecycle graph: sales on the vertical axis against time, a '
+        'curve rising slowly, climbing steeply, levelling off and then falling, '
+        'divided by dashed lines into stages lettered A, B, C and D.',
+    'technology-2019-HL-paper-secA-q8-art':
+        'Photograph of a recumbent exercise bike with a console screen, a mesh '
+        'seat back and handles, its pedal labelled Pedal.',
+    'technology-2019-HL-paper-secA-q11-art':
+        'Drawing of a pulley system hanging from a beam: two fixed pulleys at '
+        'the top and a moving pulley below them carrying a 90 KG weight, the '
+        'rope ending in a downward pull F, with a 500 mm rise marked beside it.',
+    'technology-2019-HL-paper-secA-q13-art':
+        'Photograph of a stepper motor with a toothed belt running round the '
+        'pulley wheel on its shaft, the pulley ringed in red and linked to a '
+        'large empty red circle drawn for the sketch.',
+    'technology-2019-HL-paper-secA-q14-art':
+        'Circuit diagram: a 12 V supply with current IT through R1 = 6 Ω, then '
+        'two parallel branches to 0 V, one of R2 = 8 Ω in series with R3 = 4 Ω '
+        'and the other R4 = 12 Ω.',
+    'technology-2019-HL-paper-secA-q15-art':
+        'Outline line drawing of a USB flash drive in pictorial view, unshaded, '
+        'with a slide button on top and the metal connector at the front.',
+    'technology-2019-HL-paper-secB-q2b-art':
+        'Small drawing of a solar panel on a post, with curved blue arrows '
+        'showing it turning about a vertical axis and tilting about a horizontal one.',
+    'technology-2019-HL-paper-secB-q2b-iii-art':
+        'Graph of power output (0 to 100%) against time from 5:00 to 19:00: the '
+        'orange Tracked curve reaches full output early and holds it until late '
+        'afternoon, while the blue Fixed curve rises to a single peak around midday.',
+    'technology-2019-HL-paper-secB-q3b-art':
+        'Photograph of the treadmill belt mechanism opened up: a green belt of '
+        'jointed slats running over end rollers on a metal frame.',
+    'technology-2019-HL-paper-secC-q1c-art':
+        'Photograph of a silver double-acting pneumatic cylinder with its piston '
+        'rod extended and two air ports on the barrel.',
+    'technology-2019-HL-paper-secC-q3b-art':
+        'Network diagram of a small business LAN: an internet cloud, components '
+        'lettered A and B in line from it, a server, a component C joining rows '
+        'of networked computers, and a component D with wireless links to two '
+        'laptops.',
+    'technology-2019-HL-paper-secC-q3d-i-art':
+        'A browser address bar with a padlock symbol and the URL '
+        'https://www.rugbyworldcup.com/supporters.',
+})
+
+# 2017 Ordinary (Technology lane, 4 November 2026).
+REVIEWED.update({
+    'technology-2017-OL-paper-secA-q1-art':
+        'Graphic of figures at an emergency exit door, one in a wheelchair and '
+        'one crawling, with a long vertical bar on the door labelled Handle.',
+    'technology-2017-OL-paper-secA-q2-art':
+        'Graphic of a wall-mounted heating controller linked to a phone, a '
+        'mobile and a laptop.',
+    'technology-2017-OL-paper-secA-q3-art':
+        'Photographs of a small white and green portable washing machine, closed '
+        'and open, with an arrow lettered A to its outer body.',
+    'technology-2017-OL-paper-secA-q4-art':
+        'Photograph of a light dependent resistor with its two legs, labelled '
+        'LDR.',
+    'technology-2017-OL-paper-secA-q5-art':
+        'Three safety signs: a head wearing a helmet in white on a blue disc; a '
+        'lightning arrow in a yellow triangle; a running figure on a red '
+        'prohibition disc.',
+    'technology-2017-OL-paper-secA-q6-art':
+        'Photograph of a pillar drill table mechanism: a toothed bar up the '
+        'column, lettered A, and a blue crank handle.',
+    'technology-2017-OL-paper-secA-q7-art':
+        'Photograph of a silver hand dryer, with an arrow lettered A pointing '
+        'at its side.',
+    'technology-2017-OL-paper-secA-q8-art':
+        'A work breakdown structure: Start leads to tasks A, B and C; A leads '
+        'to D, then F and H; B and C lead to E, then G; H and G lead to Finish.',
+    'technology-2017-OL-paper-secA-q9-art':
+        'Photograph of a red tin of liquid solvent cement.',
+    'technology-2017-OL-paper-secA-q10-art':
+        'Graphic of a fishing rod hooking a bank card out of a tablet screen.',
+    'technology-2017-OL-paper-secA-q11-art':
+        'A green wheelbarrow, and under it a lever diagram: a beam with the '
+        'load L pressing down between the fulcrum F at one end and the effort '
+        'E at the other.',
+    'technology-2017-OL-paper-secA-q12-art':
+        'Line drawing in pictorial view of a plastering trowel: a flat '
+        'rectangular blade with a curved handle along its centre.',
+    'technology-2017-OL-paper-secB-q2a-art':
+        'Photograph of a woman wearing a yellow neck scarf device, and a '
+        'close-up of the yellow and black neck piece.',
+    'technology-2017-OL-paper-secB-q2b-art':
+        'Photograph of an orange and black neck piece, an arrow to its outer '
+        'casing labelled Outer Shell.',
+    'technology-2017-OL-paper-secB-q2c-art':
+        'Photograph of three USB cable ends labelled Micro-USB, Mini-USB and '
+        'USB.',
+    'technology-2017-OL-paper-secB-q2d-art':
+        'The CE mark: the letters C and E in bold black curves on white.',
+    'technology-2017-OL-paper-secB-q3a-art':
+        'Photograph of a toy wooden sports utility vehicle with orange parts '
+        'and black wheels, its base labelled Base A, and beneath it the kit of '
+        'parts it is assembled from.',
+    'technology-2017-OL-paper-secB-q3b-art':
+        'Circuit between +V and 0V: a variable resistor, an On/Off switch and '
+        'a capacitor lettered X feeding a transistor that switches a buzzer.',
+    'technology-2017-OL-paper-secB-q3c-art':
+        'Photograph of the chain and sprocket drive on an all-terrain vehicle.',
+    'technology-2017-OL-paper-secB-q3c-ii-art':
+        'A large sprocket labelled Driven joined by a chain to a small '
+        'sprocket labelled Driver.',
+    'technology-2017-OL-paper-secB-q3d-art':
+        'Rendering of an all-terrain vehicle frame with its wheels and red '
+        'suspension units.',
+    'technology-2017-OL-paper-secC-q1a-art':
+        'Photograph of a laptop showing a flowchart program, a cable and a PIC '
+        'project board.',
+    'technology-2017-OL-paper-secC-q1b-art':
+        'Photograph of a long black electric sliding gate closed across an '
+        'entrance, its motor housing at the side.',
+    'technology-2017-OL-paper-secC-q1b-i-art':
+        'The flowchart printed for completion: Start, Button? (N loops back), '
+        'Motor Forward, Micro-Switch? (N loops back), Motor Stop, and an arrow '
+        'continuing down.',
+    'technology-2017-OL-paper-secC-q1c-art':
+        'Photograph of a pneumatic nail gun fixing a board, its yellow air hose '
+        'behind.',
+    'technology-2017-OL-paper-secC-q1d-art':
+        'Rendering of a robotic arm inside a shaded cylinder labelled Work '
+        'Envelope.',
+    'technology-2017-OL-paper-secC-q2a-art':
+        'Photograph of an outdoor floodlight with a motion sensor beneath it.',
+    'technology-2017-OL-paper-secC-q2b-art':
+        'A photograph of a hand opening a window, and a logic circuit: Window '
+        '(Window open = 1) and Keypad (Alarm On = 1) feed gate X, whose output '
+        'feeds gate Y to the Alarm, Y latched by a push-to-break switch in its '
+        'feedback loop.',
+    'technology-2017-OL-paper-secC-q2c-art':
+        'Photographs of an LED with two legs, labelled LED, and a black piezo '
+        'buzzer with red and black wires, labelled Mini-Siren.',
+    'technology-2017-OL-paper-secC-q3a-art':
+        'Photograph of a boy at a computer rubbing his eyes.',
+    'technology-2017-OL-paper-secC-q3b-art':
+        'Photograph of a teacher drawing on an interactive whiteboard.',
+    'technology-2017-OL-paper-secC-q3c-art':
+        'Photograph of hands using an online banking login screen on a tablet.',
+    'technology-2017-OL-paper-secC-q3d-art':
+        'Photograph of a tablet computer showing its start screen.',
+    'technology-2017-OL-paper-secC-q4a-art':
+        'A round green and yellow logo reading The Sandwich Shop around a '
+        'drawing of a sandwich.',
+    'technology-2017-OL-paper-secC-q4b-art':
+        'Photographs of a sandwich being made at a counter, captioned '
+        'Made-to-order sandwich, and of a sandwich in a plastic pack.',
+    'technology-2017-OL-paper-secC-q4c-art':
+        'A cause and effect diagram, Cause on the left and Effect on the right, '
+        'with branches Equipment, Process, Staff, Ingredients, Environment and '
+        'Management leading to Poor Quality Bread.',
+    'technology-2017-OL-paper-secC-q5a-art':
+        'Photograph of a desk lamp with a black metal shade on a jointed '
+        'plywood frame shaped like a sitting dog.',
+    'technology-2017-OL-paper-secC-q5b-art':
+        'Close-up photograph of the desk lamp: its black shade on the jointed '
+        'plywood frame.',
+    'technology-2017-OL-paper-secC-q5c-art':
+        'Three steps of blow moulding: Step 1, a tube of plastic hanging in an '
+        'open mould; Step 2, air blown in, arrows pushing outward; Step 3, the '
+        'formed bottle.',
+    'technology-2017-OL-paper-secC-q5d-art':
+        'The ISO logo: the letters ISO in white across a globe, on a blue '
+        'square.',
+})
+
+# 2017 Higher (Technology lane, 4 November 2026).
+REVIEWED.update({
+    'technology-2017-HL-paper-secA-q2-art':
+        'A worm meshing with a worm wheel, beside a photograph of a white car '
+        'on a round showroom turntable.',
+    'technology-2017-HL-paper-secA-q3-art':
+        'Part of a circuit: a component lettered A connected across a coil '
+        'lettered B whose switch contacts lead off to the right, the coil '
+        'driven through a transistor with a base resistor.',
+    'technology-2017-HL-paper-secA-q8-art':
+        'Four safety signs lettered A to D: A, a white fire extinguisher and '
+        'flames on red; B, an exclamation mark in a yellow triangle; C, a white '
+        'cross on green; D, a white exclamation mark on a blue disc.',
+    'technology-2017-HL-paper-secA-q11-art':
+        'Two tables: the colour code (0 Black, 1 Brown, 2 Red, 3 Orange, 4 '
+        'Yellow, 5 Green, 6 Blue, 7 Violet, 8 Grey, 9 white) and the tolerance '
+        'code (1% Brown, 2% Red, 5% Gold, 10% Silver).',
+    'technology-2017-HL-paper-secA-q12-art':
+        'A small driving gear of 13 teeth meshing with a large gear of 52 '
+        'teeth, a second 13-tooth gear on the same shaft meshing with a second '
+        '52-tooth driven gear; a curved arrow shows the driving gear turning '
+        'anticlockwise. Labelled Driving Gear, Driven Gear, 13 Teeth and 52 '
+        'Teeth.',
+    'technology-2017-HL-paper-secA-q13-art':
+        'Line drawing in pictorial view of a curved smartwatch band with a '
+        'display panel.',
+    'technology-2017-HL-paper-secA-q15-art':
+        'Exploded view of a prototype mobile phone, its layers labelled Touch '
+        'screen, Solar charging layer, Display and Circuit.',
+    'technology-2017-HL-paper-secC-q1c-art':
+        'Photograph of a robot arm sorting through waste on a conveyor.',
+    'technology-2017-HL-paper-secC-q1d-art':
+        'Two pneumatic symbols: A, a valve with a ball between two inlets and '
+        'one outlet; B, a variable restrictor in parallel with a non-return '
+        'valve.',
+    'technology-2017-HL-paper-secC-q2a-art':
+        'Photograph of an analogue chess clock with two dials behind chess '
+        'pieces on a board.',
+    'technology-2017-HL-paper-secC-q2b-art':
+        'Incomplete circuit for a game timer: a 10 k resistor and a variable '
+        'resistor R1 above a 100 uF capacitor C1, a push switch, and a 555 IC '
+        'drawn as a box.',
+    'technology-2017-HL-paper-secC-q2c-art':
+        'A table of npn transistors and their current gain (BC107 100-450, '
+        'BFY51 40, TIP31 10-60, 2N3055 20-70), and Fig. 1: two transistors '
+        'connected together, with base current IB in and collector current IC.',
+    'technology-2017-HL-paper-secC-q2d-art':
+        'Photograph of a yellow electric cut-off saw on its base.',
+    'technology-2017-HL-paper-secC-q4c-art':
+        'The Product-Process Matrix: Volume of product (Low to High) against '
+        'Standardisation (Low to High), with four blocks stepping up from A at '
+        'low volume and standardisation through B and C to D at high.',
+    'technology-2017-HL-paper-secC-q4d-art':
+        'A table of costs: Solid panels, fixed costs 500 euro and variable costs '
+        '3 euro per unit; Stiffened panels, fixed costs 1000 euro and variable '
+        'costs 2 euro per unit.',
+    'technology-2017-HL-paper-secC-q4b-iii-art':
+        'The formula as printed: where Cp = Tolerance Range over 6 sigma.',
+    'technology-2017-HL-paper-secC-q5b-art':
+        'Photographs of a structure of curved glulam timber arches, and of a '
+        'timber roof whose beams meet at a joint labelled metal node.',
+    'technology-2017-HL-paper-secC-q5c-art':
+        'Exploded view of a panel: two blue outer sheets with an aluminium '
+        'honeycomb core between them.',
+})
+
+# 2018 Higher (Technology lane, 4 November 2026).
+REVIEWED.update({
+    'technology-2018-HL-paper-secA-q5-art':
+        'Photograph of a floor-standing bandsaw: a tall upright frame with a '
+        'table at waist height and control buttons on its side.',
+    'technology-2018-HL-paper-secA-q6-art':
+        'Circuit: a 500 ohm resistor in series with a 2 kilohm and a 3 kilohm '
+        'resistor connected in parallel.',
+    'technology-2018-HL-paper-secA-q7-art':
+        'Cutaway rendering of a gearbox: shafts carrying several gear wheels and '
+        'bearings inside an open casing.',
+    'technology-2018-HL-paper-secA-q11-art':
+        'Rendering of a cam-operated device: a toothed wheel on a black upright, '
+        'a part circled in red and lettered A at the top of the wheel, and a '
+        'linkage running down to a cam labelled Cam C.',
+    'technology-2018-HL-paper-secA-q12-art':
+        'Photograph of a rescue winch mounted above the door of a red '
+        'helicopter, an orange hook weight hanging from its cable.',
+    'technology-2018-HL-paper-secA-q13-art':
+        'Rendering of an eight-pin integrated circuit chip, printed NE555, '
+        'standing on its legs.',
+    'technology-2018-HL-paper-secA-q14-art':
+        'Photograph of a blue gearbox housing with its input shaft labelled '
+        'Input shaft A and output shaft labelled Output shaft B, and a close-up '
+        'of the input shaft labelled Metal key in groove.',
+    'technology-2018-HL-paper-secA-q15-art':
+        'Line drawing in pictorial view of a fire extinguisher: a cylinder with '
+        'a valve head, gauge, handle and nozzle.',
+    'technology-2018-HL-paper-secB-q2c-art':
+        'Graphic of a fleet of solar drones at different heights (30,000, 60,000 '
+        'and 90,000 ft marked), each beaming a green cone of coverage down onto '
+        'the houses and town below.',
+    'technology-2018-HL-paper-secB-q2d-art':
+        'Circuit of a solar engine: a solar cell, a component lettered A, an '
+        'IC, two transistors (one lettered B) and a motor M.',
+    'technology-2018-HL-paper-secC-q1c-art':
+        'Rendering of a gantry robot: a carriage running on rails along two '
+        'axes, with a vertical arm carrying the gripper.',
+    'technology-2018-HL-paper-secC-q2b-art':
+        'Circuit: an LDR above a 15 kilohm resistor gives point A, and a 20 '
+        'kilohm above a 30 kilohm resistor gives point B, the two feeding the '
+        'inputs of an op-amp between +6 V and 0 V, with output Vout.',
+    'technology-2018-HL-paper-secC-q2d-art':
+        'Diagram of a height check: Light 1 and Light 2 shine across to two '
+        'sensors, Light 1 at the maximum height, with a child walking between.',
+    'technology-2018-HL-paper-secC-q4b-iii-art':
+        'An empty cause and effect diagram leading to Problem, with the '
+        'headings Equipment, Materials, Personnel, Environmental, Methods and '
+        'Machines.',
+    'technology-2018-HL-paper-secC-q4c-art':
+        'Photograph of a fidget spinner, and a table of seven hole sizes in mm: '
+        '3D Printer 16.08, 16.04, 16.10, 15.90, 16.08, 16.04, 15.02, sigma = '
+        '.391; Laser Cutter 15.98, 15.96, 16.04, 16.03, 15.98, 16.02, 16.02, '
+        'sigma = .030.',
+    'technology-2018-HL-paper-secC-q4c-i-art':
+        'Photograph of a fidget spinner, the table of hole sizes in mm (3D '
+        'Printer 16.08, 16.04, 16.10, 15.90, 16.08, 16.04, 15.02, sigma = .391; '
+        'Laser Cutter 15.98, 15.96, 16.04, 16.03, 15.98, 16.02, 16.02, sigma = '
+        '.030), and the formula Cp = Tolerance Range over 6 sigma.',
+    'technology-2018-HL-paper-secC-q4d-art':
+        'Two graphs of sales against time in months: Graph A a smooth rise to a '
+        'gentle peak and slight fall; Graph B flat, then a sudden tall spike and '
+        'a steep fall.',
+})
+
+# 2018 Ordinary (Technology lane, 4 November 2026).
+REVIEWED.update({
+    'technology-2018-OL-paper-secA-q1-art':
+        'A round safety sign: a white outline of a full-body overall on a solid '
+        'blue disc.',
+    'technology-2018-OL-paper-secA-q2-art':
+        'Rendering of the CityTree: a tall upright panel covered in green moss, '
+        'set on a curved concrete base with a wooden bench.',
+    'technology-2018-OL-paper-secA-q4-art':
+        'Photograph of a black plastic case that holds four AA cells side by '
+        'side, with metal spring contacts at the ends.',
+    'technology-2018-OL-paper-secA-q7-art':
+        'Photograph of a wooden bench with crossed X-shaped legs joined by a '
+        'stretcher, and an arrow lettered A pointing at its end.',
+    'technology-2018-OL-paper-secA-q9-art':
+        'Photograph of a bingo machine: a clear blue spherical drum with a '
+        'crank handle, held between two uprights on a shaped wooden base, '
+        'labelled Drum and Wooden Stand.',
+    'technology-2018-OL-paper-secA-q10-art':
+        'Photograph of a motorway with a steel truss gantry bridge spanning it.',
+    'technology-2018-OL-paper-secA-q11-art':
+        'Drawing of a pear-shaped cam labelled Cam, with a roller follower '
+        'labelled Follower resting on top of it.',
+    'technology-2018-OL-paper-secA-q12-art':
+        'Line drawing in pictorial view of a dovetail halving joint: two '
+        'lengths of timber shown apart, one with the dovetail cut on its end '
+        'and the other with the matching housing.',
+    'technology-2018-OL-paper-secB-q2a-art':
+        'Photograph of two heavy-duty wheelbarrows, one with two wheels at the '
+        'front, with an arrow to the pan labelled Pan.',
+    'technology-2018-OL-paper-secB-q3a-art':
+        'Photograph of a desk lamp: a lime-green plastic base with storage '
+        'compartments and a curved metal pole holding a green shade, with '
+        'arrows labelled Metal and Plastic.',
+    'technology-2018-OL-paper-secB-q3b-art':
+        'Photograph of a rotary variable resistor with a slotted shaft and three '
+        'legs.',
+    'technology-2018-OL-paper-secB-q3c-art':
+        'Photograph of a yellow digital multimeter with a rotary selector dial, '
+        'a display and red and black probes.',
+    'technology-2018-OL-paper-secB-q3d-art':
+        'Photograph of a prototype desk lamp: an orange glowing shade inside a '
+        'white lattice shell on a small base.',
+    'technology-2018-OL-paper-secC-q1b-art':
+        'The start of a flowchart printed for completion: Start, then the '
+        'decision Alarm? with N looping back and Y continuing down.',
+    'technology-2018-OL-paper-secC-q1d-art':
+        'Photographs of a claw gripper on a coiled cable, labelled Mechanical '
+        'Gripper, and of a red claw machine full of soft toys.',
+    'technology-2018-OL-paper-secC-q2a-art':
+        'A resistor lettered R with four colour bands, beside two tables: the '
+        'colour code (0 Black, 1 Brown, 2 Red, 3 Orange, 4 Yellow, 5 Green, 6 '
+        'Blue, 7 Violet, 8 Grey, 9 White) and the tolerance code (1% Brown, 2% '
+        'Red, 5% Gold, 10% Silver).',
+    'technology-2018-OL-paper-secC-q2b-art':
+        'Circuit of a 555 timer in monostable mode between +V and 0V: two '
+        'resistors, a capacitor and a push switch on its inputs, and its output '
+        'driving, through a resistor, a transistor lettered A that switches a '
+        'buzzer.',
+    'technology-2018-OL-paper-secC-q2c-art':
+        'Pin diagram of a 14-pin chip holding four AND gates, pins numbered 1 '
+        'to 14, with GND at pin 7 and VCC at pin 14.',
+    'technology-2018-OL-paper-secC-q3c-art':
+        'Photograph of a red graphics card, with an arrow to its fan labelled '
+        'Fan.',
+    'technology-2018-OL-paper-secC-q4a-art':
+        'Three photographs captioned An oil painting, A sports club hat and '
+        'Drinks bottles.',
+    'technology-2018-OL-paper-secC-q4b-art':
+        'A process capability graph: a red bell curve of the process between '
+        'two vertical lines marked LSL and USL under the heading Design '
+        'Specifications, with the tails outside them labelled Defects.',
+    'technology-2018-OL-paper-secC-q5a-art':
+        'Four photographs captioned Safety Helmet, Hall Table, Cooking Pot and '
+        'Sports Sock.',
+    'technology-2018-OL-paper-secC-q5b-art':
+        'Photographs of a white folding bicycle, unfolded, and of a rider '
+        'carrying it folded in half.',
+})
+
+# 2019 Ordinary (Technology lane, 4 November 2026).
+REVIEWED.update({
+    # Pictures the 2019 stems point at, added after the batch browser check.
+    'technology-2019-OL-paper-secA-q1-art':
+        'A round safety sign: a white outline of a head wearing ear defenders '
+        'on a solid blue disc.',
+    'technology-2019-OL-paper-secA-q3-art':
+        'Photograph of a lamp: a clear acrylic sheet engraved with a cartoon '
+        'panda spinning a basketball, glowing purple above a black base.',
+    'technology-2019-OL-paper-secA-q7-art':
+        "Photograph of a child's push-car: an oval plywood seat over a lower "
+        'oval deck, a wooden handlebar and four grey wheels with red hubs, '
+        'with an arrow lettered A pointing at it from the lower right.',
+    'technology-2019-OL-paper-secA-q9-art':
+        'Photograph of a piece of furniture bent from one continuous sheet of '
+        'plywood: a flat top curving down into a side with a hand slot, with a '
+        'rack for magazines underneath.',
+    'technology-2019-OL-paper-secB-q2a-art':
+        'CAD rendering on a grid of a blue open rectangular case with fixing '
+        'lugs, beside a flat blue piece with a rectangular cut-out.',
+    'technology-2019-OL-paper-secC-q1b-art':
+        'Photograph of a cattle gate system: a steel overhead frame carrying a '
+        'gate across a pen of cows in a holding yard.',
+    'technology-2019-OL-paper-secC-q3b-art':
+        'Photograph of the end of a black cable with a USB Type-C plug.',
+    'technology-2019-OL-paper-secC-q4b-art':
+        'Diagram: grapes labelled Input, an arrow to a factory labelled '
+        'Transformation Process, an arrow to a wine bottle labelled Output, '
+        'and arrows running back labelled Customer Feedback across the top and '
+        'Performance Feedback across the bottom.',
+    'technology-2019-OL-paper-secC-q4c-art':
+        'Photograph of workers in a vineyard tipping a crate of dark grapes '
+        'into a large bin.',
+    'technology-2019-OL-paper-secC-q5c-ii-art':
+        'Photograph of a small dog fitted with a two-wheeled support '
+        'wheelchair strapped to its body, its hind legs resting on the frame.',
+    'technology-2019-OL-paper-secC-q5d-art':
+        'Photograph of a stack of chipboard panels, each faced with a '
+        'different wood-grain veneer, their cut edges showing the chipboard '
+        'core.',
+    'technology-2019-HL-paper-secC-q2b-art':
+        'Circuit diagram: resistors R1 and R2 and capacitor C in series '
+        'between a 12 V rail and a 0 V rail, wired to a 555 IC whose output '
+        'line ends unconnected.',
+    'technology-2019-HL-paper-secC-q4b-art':
+        'Picture of the electronic toy, a small blue robot with LED eyes, '
+        'beside a table: Cost of machinery €25,000; Cost of tooling €5,000; '
+        'Variable Costs €20 per unit; Sales Forecast 20,000 units.',
+    'technology-2019-OL-paper-secA-q6-art':
+        'Drawing of a mechanism of two parts: a grey toothed wheel lettered A '
+        'with a red arrow showing its direction of turning, and a small pivoted '
+        'catch lettered B resting against its teeth.',
+    'technology-2019-OL-paper-secA-q8-art':
+        'Photograph of a long outdoor walkway beside a flight of steps: a level '
+        'pale path with green edging strips and green handrails along both sides.',
+    'technology-2019-OL-paper-secA-q10-art':
+        'Photograph of a desktop computer system: a tower case, a flat-screen '
+        'monitor, a keyboard and a mouse.',
+    'technology-2019-OL-paper-secA-q11-art':
+        'Drawing of a series circuit: a battery, a striped resistor and an LED, '
+        'the LED leg marked + joined to the resistor and the leg marked − '
+        'returning to the battery.',
+    'technology-2019-OL-paper-secA-q12-art':
+        'Outline line drawing of a small rectangular table in pictorial view, '
+        'unshaded, with four square legs and a rail under the top.',
+    'technology-2019-OL-paper-secB-q2b-art':
+        'Circuit diagram: a battery and a switch feeding a variable resistor '
+        'above a component lettered A, the junction between them joined through '
+        'a resistor to the base of a transistor that switches a buzzer.',
+    'technology-2019-OL-paper-secC-q1d-art':
+        'Photograph of a surgical robot: several robotic arms holding slender '
+        'instruments over a patient model on an operating table.',
+    'technology-2019-OL-paper-secC-q2a-art':
+        'Photograph of a three-core electrical cable with its white outer sheath '
+        'stripped back to show blue, brown and green-and-yellow insulated wires '
+        'with bare copper ends.',
+    'technology-2019-OL-paper-secC-q2c-art':
+        'Photograph of a small cylindrical DC motor with its output shaft.',
+    'technology-2019-OL-paper-secC-q2c-ii-art':
+        'Model of a simple DC motor: a battery on a base board connected by '
+        'green wires to a wire loop that sits between the poles of a red '
+        'U-shaped magnet, with arrows showing the current.',
+    'technology-2019-OL-paper-secB-q3b-art':
+        'Photograph of a VR viewer made from coloured foam board: a red front '
+        'panel with two eye holes and a nose cut-out between lime-green sides, '
+        'a phone slotted in on top, and an arrow labelled A pointing at one side.',
+    'technology-2019-OL-paper-secB-q3c-art':
+        'Silhouette of a crane: a jib with a hook from which a cable labelled X '
+        'holds a yellow box marked Load.',
+    'technology-2019-OL-paper-secC-q1c-art':
+        'Two pneumatic symbols: a cylinder with a piston and rod, captioned '
+        'Double-acting cylinder, and a valve symbol with an adjustable restriction '
+        'and a non-return valve, captioned Throttle valve.',
+    'technology-2019-OL-paper-secC-q2b-art':
+        'Circuit diagram between +V and −V rails: a double-pole switch lettered A '
+        'feeding a motor M, with two push switches, one at the top and one '
+        'lettered B at the bottom.',
+    'technology-2019-OL-paper-secC-q2d-art':
+        'Logic circuit: inputs a and b enter gate X, whose output c joins input d '
+        'at gate Y, whose output is E.',
+    'technology-2019-OL-paper-secC-q5b-art':
+        'Photograph of a dog wheelchair with a moulded plastic saddle, aluminium '
+        'struts and two wheels, an arrow A pointing at a curved slotted metal '
+        'link, with an enlarged view of that link lettered A ringed in red.',
+    'technology-2019-OL-paper-secC-q4a-art':
+        'Photograph of a clear plastic punnet divided into three compartments '
+        'holding red, green and black grapes.',
+})
+
 # Looked at and turned down, with what is wrong with each.
 REJECTED = {
     'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
@@ -956,6 +1461,7 @@ REJECTED = {
     'technology-2025-OL-paper-secA-q1-art': 'carries both asks and their answer boxes',
     'technology-2025-OL-paper-secA-q11-art': 'carries both asks and their answer boxes',
     'technology-2025-OL-paper-secA-q3-art': 'carries both asks and their answer boxes',
+    'technology-2019-HL-paper-secC-q3d-art': 'the event logo, which no part asks about; (i) points at the URL box (by-eye rect)',
     # Superseded by a by-eye rect of the whole circuit (tech_crops.BY_EYE).
     # 'technology-2021-HL-paper-secC-q2b-art': the 555 chip alone, no circuit
 }

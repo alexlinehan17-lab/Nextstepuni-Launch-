@@ -236,6 +236,34 @@ describe('Technology exam-topic registry', () => {
     )).toContain('technology-ordinary-option-5-materials-technology');
   });
 
+  it('files every 2010-2019 option question on its own option page', () => {
+    // Section C prints Options 1-5 as Questions 1-5 in every sitting. Six of
+    // them were filed by content alone, so the option page never showed them.
+    const optionSlugs = {
+      higher: ['option-applied-control-systems', 'option-electronics-control',
+        'option-information-communications-technology', 'option-manufacturing-systems',
+        'option-materials-technology'],
+      ordinary: ['option-1-applied-control-systems', 'option-2-electronics-control',
+        'option-3-information-communications-technology', 'option-4-manufacturing-systems',
+        'option-5-materials-technology'],
+    } as const;
+    let checked = 0;
+    for (const paper of PAPER_TOPIC_TAGS) {
+      if (paper.subjectId !== 'technology' || paper.year >= 2020) continue;
+      for (const question of paper.q) {
+        const option = /^C([1-5])$/.exec(question.n);
+        if (!option) continue;
+        const level = paper.level as 'higher' | 'ordinary';
+        const topicId = `technology-${level}-${optionSlugs[level][Number(option[1]) - 1]}`;
+        expect(browseTopicIdsForQuestion(paper, question), `${paperIdentity(paper)} ${question.n}`)
+          .toContain(topicId);
+        checked += 1;
+      }
+    }
+    // 10 years x 2 levels x 2 editions x 5 options.
+    expect(checked).toBe(200);
+  });
+
   it('ships a finite paper crop and honest scheme boundary for all 1,356 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'technology');
     let schemeMaps = 0;
