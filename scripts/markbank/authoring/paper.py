@@ -342,8 +342,7 @@ _BARE_RUN = re.compile(r'^\([a-h]\)(?:\s+\([a-h]\))+$')
 #   2016 OL Q6(a)(iii); 2017 OL Q1(h)(i), Q7(c)(iii); 2018 OL Q2(a)(ii),
 #   Q7(c)(iii); 2019 OL Q6(a)(iii); 2026 OL Q2(d)(ii).
 # Left off where the split would put a caption somewhere the page does not:
-# 2011 OL prints Q6(a)'s four captions after (b) in its text layer, so the split
-# adds a (b)(iii); 2015 OL's Q1(h) captions would take over the letter (i) and
+# 2015 OL's Q1(h) captions would take over the letter (i) and
 # lose (i)-(m). 2012 and 2014 OL lose no caption romans. On the Higher papers it
 # moves other readings (Q8(a)(i)) and is never on.
 BARE_ROMAN_RUNS = {('engineering', y, 'ol') for y in (2010, 2013, 2016, 2017, 2018, 2019, 2026)}
@@ -352,6 +351,13 @@ BARE_ROMAN_RUNS = {('engineering', y, 'ol') for y in (2010, 2013, 2016, 2017, 20
 # drawing's caption, and Q6(a)(iii), the third lathe component's, both printed
 # on paper page 3 and page 5 (rendered and read 2026-11-04).
 BARE_ROMAN_RUNS.add(('engineering', 2015, 'ol'))
+# 2011 OL, switched on once STRIP_SET_PAGES reads its page 5 line by line
+# (below): that text layer printed Q6(a)'s four captions after (b), so the
+# split, alone, added a (b)(iii). Read in printed order the captions fall under
+# (a), and the split recovers Q2(a)(iii), the third furnace drawing's caption
+# on page 3, and Q6(a)(i)-(iv), the four work-holding photographs' (rendered
+# and read 2026-11-05).
+BARE_ROMAN_RUNS.add(('engineering', 2011, 'ol'))
 _BARE_ROMAN = r'\((?:i{1,3}|iv|vi{0,3}|ix|x)\)'
 _BARE_ROMAN_RUN = re.compile(rf'^{_BARE_ROMAN}(?:\s+{_BARE_ROMAN})+$')
 # Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
@@ -752,6 +758,11 @@ STRIP_SET_PAGES = {
     # romans (census Q6(c)(iv), a part the paper does not print). Read line by
     # line, top to bottom, the captions fall under (b) where they are printed.
     ('engineering', 2013, 'ol'): {'2013-ol-paper.pdf': (5,)},
+    # 2011 OL Engineering page 5 the same way: Q6(a)'s four photograph
+    # captions "(i) (ii) (iii) (iv)" sit in the text layer after (b), and were
+    # read as (b)'s romans (census Q6(b)(iv), a part the paper does not print,
+    # and roman-gap Q6(b)). Read line by line they fall under (a).
+    ('engineering', 2011, 'ol'): {'2011-ol-paper.pdf': (5,)},
 }
 
 
