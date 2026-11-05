@@ -679,7 +679,7 @@
   },
   "religious-education": {
     "cards": 288,
-    "contentHash": "674bdf82cd359c98",
+    "contentHash": "8b98a4db275becf1",
     "coveragePct": 36.6,
     "covered": 288,
     "excluded": 0,
@@ -690,7 +690,7 @@
       "count": 31,
       "hash": "138b8842e0c6dc51"
     },
-    "refsHash": "608205b9e7e5d4b8"
+    "refsHash": "aa1eb103469facf9"
   },
   "romanian": {
     "cards": 50,

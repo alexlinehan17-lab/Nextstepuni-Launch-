@@ -29,6 +29,15 @@ export function reAnswerValue(rubric: ReligiousEducationRubric, scores: Religiou
   return rubric.bands.some(band => band.marks.includes(value)) ? value : 0;
 }
 
+/** Whether the student has placed this answer at all. 0 is a mark the
+ *  bottom band permits, so "placed at 0" and "not placed" are told apart:
+ *  an unplaced answer is stored as -1 (or never stored). */
+export const reAnswerPlaced = (rubric: ReligiousEducationRubric, scores: ReligiousEducationScores, index: number): boolean => {
+  const value = scores[reAnswerScoreId(index)];
+  return value !== undefined && rubric.bands.some(band => band.marks.includes(value));
+};
+export const RE_UNPLACED = -1;
+
 /** What one answer scores: its placed mark, held under a ticked ceiling. */
 export function reAnswerMarks(rubric: ReligiousEducationRubric, scores: ReligiousEducationScores, index: number): number {
   const value = reAnswerValue(rubric, scores, index);

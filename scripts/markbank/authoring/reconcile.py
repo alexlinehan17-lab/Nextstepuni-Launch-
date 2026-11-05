@@ -190,6 +190,13 @@ def shipped_cards(subject):
             assert 'reviewed-card-correction' in by_id[cid]['qa']['gates'], f'Unaudited correction: {cid}'
         out = [(cid, by_id[cid]['questionRef'] if cid in by_id else ref) for cid, ref in out]
         out.extend((card['id'], card['questionRef']) for card in reviewed if card['id'] not in originals)
+    if subject == 'religious-education':
+        # The band-grid cards (re_lane.py) are data folded in by rubric.ts; a
+        # sitting rebuilt into them has left the literal point cards.
+        supplement = os.path.join(DECKS, subject, 'rubric-authored.json')
+        if os.path.exists(supplement):
+            out.extend((card['id'], card['questionRef'])
+                       for card in json.load(open(supplement, encoding='utf-8'))['cards'])
     if subject == 'business':
         supplement = os.path.join(DECKS, 'business', 'rubric-authored.json')
         if os.path.exists(supplement):
@@ -776,6 +783,9 @@ def content_hash(subject):
         # PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
         for name in (('factory.ts', 'reviewed.json', 'answers.ts') if subject == 'physical-education' else ('reviewed.ts', 'reviewed.json')):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+    if subject == 'religious-education' and os.path.exists(os.path.join(DECKS, subject, 'rubric-authored.json')):
+        for name in ('rubric-authored.json', 'rubric.ts'):
+            h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     if subject == 'business':
         # Reviewed rubric cards and printed routes are data, not literal cards.
         for name in ('rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts'):
@@ -824,7 +834,7 @@ def refs_hash(subject):
     cards = shipped_cards(subject)
     # Data-driven language decks may order their runtime cards independently
     # from the manifest. Coverage identity is the stable id/ref pair.
-    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting', 'business'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting', 'business', 'religious-education'):
         cards = sorted(cards)
     text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]

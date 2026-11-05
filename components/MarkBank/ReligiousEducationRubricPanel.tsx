@@ -14,7 +14,9 @@ import type { ReligiousEducationRubric, SecRubricCard } from '../../types/markBa
 import SourceMaterialReader from './SourceMaterialReader';
 import { ClaimDirections, ClaimRow, marksChip } from './ClaimRows';
 import {
+  RE_UNPLACED,
   reAnswerMarks,
+  reAnswerPlaced,
   reAnswerScoreId,
   reAnswerValue,
   reCeiling,
@@ -26,6 +28,14 @@ import {
 import './religious-education-rubric.css';
 
 export type { ReligiousEducationScoreId };
+
+/** "EXCELLENT · 34 – 40" with the range held together and to its label: the
+ *  label may wrap between its words ("VERY / GOOD · 28 – 33"), the printed
+ *  range never does ("EXCELLENT · 34 –" / "40" at desktop width was the
+ *  coordinator's nit). No-break spaces stand for the spaces and a word joiner
+ *  follows each dash, so the line cannot break inside the range. */
+export const bandHeading = (label: string, printed: string): string =>
+  `${label}\u00a0·\u00a0${printed.trim().replace(/\s+/g, '\u00a0').replace(/([-–—])/g, '$1\u2060')}`;
 
 export function religiousEducationMarks(card: SecRubricCard, scores: ReligiousEducationScores): number {
   if (card.rubric.system !== 'religious-education') return 0;
@@ -39,6 +49,7 @@ const Ladder: React.FC<{
   onScore: (id: ReligiousEducationScoreId, marks: number) => void;
 }> = ({ rubric, index, scores, onScore }) => {
   const value = reAnswerValue(rubric, scores, index);
+  const placed = reAnswerPlaced(rubric, scores, index);
   const ceiling = reCeiling(rubric, scores);
   const id = reAnswerScoreId(index);
   const label = rubric.answers > 1 ? `Answer ${index + 1} of ${rubric.answers}` : 'Your answer';
@@ -54,14 +65,14 @@ const Ladder: React.FC<{
         return (
           <div key={bandIndex} className="mb-re-band" data-above-ceiling={above}>
             <ClaimRow
-              text={`${band.label} · ${band.printed}`}
+              text={bandHeading(band.label, band.printed)}
               note={band.descriptor?.join(' · ')}
               steps={steps}
               disabled={above}
-              claimed={band.marks.includes(value) && value > 0}
-              value={value}
+              claimed={placed && band.marks.includes(value)}
+              value={placed ? value : RE_UNPLACED}
               onToggle={() => undefined}
-              onStep={step => onScore(id, value === step ? 0 : step)}
+              onStep={step => onScore(id, placed && value === step ? RE_UNPLACED : step)}
             />
           </div>
         );

@@ -9,7 +9,7 @@
 import { describe, expect, test } from 'vitest';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 
-import ReligiousEducationRubricPanel, { religiousEducationMarks } from '@/components/MarkBank/ReligiousEducationRubricPanel';
+import ReligiousEducationRubricPanel, { bandHeading, religiousEducationMarks } from '@/components/MarkBank/ReligiousEducationRubricPanel';
 import { reAnswerScoreId, reCeilingScoreId } from '@/components/MarkBank/religiousEducationScoring';
 import { tariffReconciles, type ReligiousEducationRubric, type SecRubricCard } from '@/types/markBank';
 
@@ -58,19 +58,36 @@ describe('Religious Education band grid', () => {
   test('the chosen mark is the pressed one with the tick; bands over a ticked ceiling are disabled', () => {
     render(<ReligiousEducationRubricPanel card={card} scores={{ [reAnswerScoreId(0)]: 9, [reCeilingScoreId]: 1 }} onScore={() => undefined} />);
     const first = screen.getByRole('region', { name: 'Answer 1 of 2' });
-    const chosen = within(first).getByRole('button', { name: 'Clear 9 marks for EXCELLENT · 10-8' });
+    const chosen = within(first).getByRole('button', { name: `Clear 9 marks for ${bandHeading('EXCELLENT', '10-8')}` });
     expect(chosen).toHaveAttribute('aria-pressed', 'true');
     expect(chosen.querySelector('svg')).not.toBeNull();
-    expect(within(first).getByRole('button', { name: 'Claim 7 marks for VERY GOOD · 7' })).toBeDisabled();
-    expect(within(first).getByRole('button', { name: 'Claim 4 marks for FAIR · 4' })).not.toBeDisabled();
+    expect(within(first).getByRole('button', { name: `Claim 7 marks for ${bandHeading('VERY GOOD', '7')}` })).toBeDisabled();
+    expect(within(first).getByRole('button', { name: `Claim 4 marks for ${bandHeading('FAIR', '4')}` })).not.toBeDisabled();
     expect(screen.getByText('5 / 20')).toBeInTheDocument();
+  });
+
+  test('a band heading holds its printed range together and to its label', () => {
+    const heading = bandHeading('EXCELLENT', '34 - 40');
+    expect(heading).toBe('EXCELLENT\u00a0·\u00a034\u00a0-\u2060\u00a040');
+    expect(heading).not.toMatch(/ /);
+    expect(bandHeading('VERY GOOD', '28 – 33')).toBe('VERY GOOD\u00a0·\u00a028\u00a0–\u2060\u00a033');
+  });
+
+  test('an answer not yet placed shows no chosen mark, and 0 is a mark it can be placed at', () => {
+    const { unmount } = render(<ReligiousEducationRubricPanel card={card} scores={{}} onScore={() => undefined} />);
+    const first = screen.getByRole('region', { name: 'Answer 1 of 2' });
+    expect(within(first).queryAllByRole('button', { pressed: true })).toHaveLength(0);
+    unmount();
+    render(<ReligiousEducationRubricPanel card={card} scores={{ [reAnswerScoreId(0)]: 0 }} onScore={() => undefined} />);
+    const placedAtZero = screen.getByRole('region', { name: 'Answer 1 of 2' });
+    expect(within(placedAtZero).getByRole('button', { name: `Clear 0 marks for ${bandHeading('POOR', '1-0')}` })).toHaveAttribute('aria-pressed', 'true');
   });
 
   test('placing a mark reports it under the answer it belongs to', () => {
     const calls: Array<[string, number]> = [];
     render(<ReligiousEducationRubricPanel card={card} scores={{}} onScore={(id, marks) => calls.push([id, marks])} />);
     const second = screen.getByRole('region', { name: 'Answer 2 of 2' });
-    fireEvent.click(within(second).getByRole('button', { name: 'Claim 6 marks for GOOD · 6-5' }));
+    fireEvent.click(within(second).getByRole('button', { name: `Claim 6 marks for ${bandHeading('GOOD', '6-5')}` }));
     expect(calls).toEqual([[reAnswerScoreId(1), 6]]);
   });
 });

@@ -64,13 +64,19 @@ def schemes_dir():
 # and is the examiner's word for which route is being marked, not part of the
 # address. Case varies: 2025 Higher prints "QUESTION B (c) (40M)" in capitals
 # and "Question I (C) (20M x2)" with a capital part letter.
+# 2026 adds three printings: the section letter set hard against its part
+# ("Question D(b) (20M x 2)", "Eb (ii) (40M)") and a part letter with no
+# bracket at all after the section letter ("Question E a (40Mx2)",
+# "Question E b (i) (20M X2)"). The bare letter is read only straight after a
+# section letter and before a space, so "a" or "b" inside prose never opens a
+# head.
 HEAD = re.compile(
     r'^(?:Or\s+)?'
     r'(?:(?:Section|SECTION)\s+([A-J])\b\s*)?'
     r'((?:Question|QUESTION)\s+)?'
-    r'(?:([A-J])\s+)?'
+    r'(?:([A-J])(?:\s+|(?=\(|[a-h]\b)))?'
     r'(\d)?\s*'
-    r'(?:\(([A-Ha-h])\)|([a-h])\))'
+    r'(?:\(([A-Ha-h])\)|([a-h])\)|(?<=[A-J])([a-h])(?=\s)|(?<=[A-J]\s)([a-h])(?=\s))'
     r'(?:\s*(?:\(([ivxIVX]{1,3})\)|([ivx]{1,3})\.))?'
     r'\s*(.*)$')
 
@@ -89,6 +95,11 @@ TARIFF_ONE = re.compile(r'^\(?(\d{1,3})\s*M\s*(?:[x×]\s*(\d))?\)?$', re.I)
 TARIFF_PRE = re.compile(r'^\(?(\d{1,3})\s*[x×]\s*(\d)\s*M\)?$', re.I)
 TARIFF_PAIR = re.compile(
     r'^\(?(\d{1,3})\s*M\)?\s*[/(]\s*(\d{1,3})\s*M\s*[x×]\s*(\d)\)?$', re.I)
+
+
+# 2026 Higher prints one head's tariff as the paper prints it, a bare "(40)"
+# with no M ("C (b) (40)"). Read on a HEAD only, where nothing else is printed.
+TARIFF_BARE = re.compile(r'^\((\d{2})\)$')
 
 
 def parse_tariff(text):
@@ -115,6 +126,9 @@ def parse_tariff(text):
     m = TARIFF_PRE.match(flat)
     if m:
         return int(m.group(1)) * int(m.group(2)), raw
+    m = TARIFF_BARE.match(flat)
+    if m:
+        return int(m.group(1)), raw
     return None
 
 
@@ -124,8 +138,10 @@ def parse_tariff(text):
 # have studied.40M" with the tariff welded to the full stop, and requiring a
 # space refused two asks whose tariff is on the page.
 _TAR = r'\d{1,3}\s*(?:M\s*[x×]\s*\d|[x×]\s*\d\s*M|M)'
+# 2026 sets the trailing tariff in brackets: "...of his time in Palestine.
+# (10M x 2)", "...religion in Ireland today. (20M x2)".
 TRAILING_TARIFF = re.compile(
-    rf'(?:\s|(?<=[.?!:]))((?:{_TAR})(?:\s*/\s*(?:{_TAR}))?)\s*$', re.I)
+    rf'(?:\s|(?<=[.?!:]))(\(?(?:{_TAR})(?:\s*/\s*(?:{_TAR}))?\)?)\s*$', re.I)
 
 LEAD = re.compile(r'^An excellent (?:answer|coursework)\b')
 MC_HEADING = re.compile(r'^Marking\s+Crit\w*\s+and\s+points\s+of\s+reference', re.I)
@@ -235,7 +251,7 @@ class ReScheme:
             m = HEAD.match(line)
             if not m:
                 continue
-            tail = (m.group(9) or '').strip()
+            tail = (m.group(11) or '').strip()
             if tail and parse_tariff(tail) is None:
                 continue
             # A head names itself: it carries the word Question or Section, or
@@ -245,12 +261,14 @@ class ReScheme:
             # it as a head handed F(a)(i) the grid's own text.
             if not (m.group(1) or m.group(2) or m.group(3) or m.group(4)):
                 continue
+            if (m.group(7) or m.group(8)) and not m.group(3):
+                continue
             sec = m.group(1) or m.group(3) or section
             if sec is None:
                 continue
             q = int(m.group(4)) if m.group(4) else None
-            letter = (m.group(5) or m.group(6)).lower()
-            roman = (m.group(7) or m.group(8) or '')
+            letter = (m.group(5) or m.group(6) or m.group(7) or m.group(8)).lower()
+            roman = (m.group(9) or m.group(10) or '')
             roman = roman.lower() or None
             out.append((i, sec, q, letter, roman, tail))
         return out

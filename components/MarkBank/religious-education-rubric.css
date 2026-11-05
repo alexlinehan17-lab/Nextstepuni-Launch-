@@ -28,3 +28,12 @@
 .mb-re-total { display: flex; justify-content: space-between; gap: 12px; border-top: 2px solid currentColor; padding-top: 14px; margin-top: 16px; }
 .mb-re-total strong { font-size: 20px; font-variant-numeric: tabular-nums; }
 .mb-re-note { color: var(--mb-muted); margin: 12px 0 0; font-size: 12px; }
+
+/* A band's heading never breaks inside its printed range ("EXCELLENT · 40-3" /
+   "4" was the shared row's anywhere-break at the 9em minimum): the heading
+   column keeps room for the longest one-word label and its range, and only
+   the label's own spaces may wrap. The descriptor below it still wraps freely. */
+@media (min-width: 481px) {
+  .mb-re-band .mb-claim-row--stepped { grid-template-columns: minmax(12.5em, 1fr) auto; }
+}
+.mb-re-band .mb-claim-text > span { overflow-wrap: normal; }
