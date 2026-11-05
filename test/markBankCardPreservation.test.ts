@@ -796,7 +796,8 @@ const decks = [
    * added and none replacing anything. Nothing in any other deck moved.
    * 2026-11-05: the RE lane builds a sitting at a time as band-grid cards (re_lane.py, rubric-authored.json), ids kept. 2026 Higher, 28 cards, added.
    * 2026 Ordinary, 29 band-grid cards, added.
-   * 2025 Higher's 28 point cards rebuilt as band-grid cards, ids kept; nothing withdrawn. */
+   * 2025 Higher's 28 point cards rebuilt as band-grid cards, ids kept; nothing withdrawn.
+   * 2025 Ordinary's 33 point cards rebuilt as band-grid cards, ids kept; nothing withdrawn. */
   ['religious-education:higher', RE_HIGHER, 163, 'd20f0a9298a571fa7bc188b0ea661f52220a1aa6de62bfcab893d4cce24440ff'],
   ['religious-education:ordinary', RE_ORDINARY, 182, '4d908f8435aecaca44ce9d4d217cd82200ace8518a99fc42ecaa739df1cb3c15'],
   /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
@@ -1478,6 +1479,7 @@ describe('Mark Bank card preservation', () => {
     // Religious Education 2026 Higher, 28 asks, 28 band-grid cards: 23,617.
     // Religious Education 2026 Ordinary, 29 asks, 29 band-grid cards: 23,646.
     // Religious Education 2025 Higher rebuilt in place, 28 ids kept: 23,646.
+    // Religious Education 2025 Ordinary rebuilt in place, 33 ids kept: 23,646.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
