@@ -621,6 +621,16 @@ REJECTED = {
     **{(2014, 'hl', 6, 'a', r): 'cuts off the label "casing for games controller"'
        for r in ('i', 'ii')},
     (2014, 'hl', 8, 'a', None): 'takes in the page\'s "(50 marks)"',
+    # 2011 Higher, looked at 2026-11-05 (the residue cuts each by eye):
+    (2011, 'hl', 1, 'm', None): 'takes in the page footer "Page 3 of 12"',
+    **{(2011, 'hl', 3, 'b', r): 'takes in the foot of (b)\'s own line over the diagram'
+       for r in ('i', 'ii')},
+    **{(2011, 'hl', 3, 'c', r): 'takes in the foot of (c)\'s own line over the readings'
+       for r in ('i', 'ii')},
+    (2011, 'hl', 4, 'c', None): 'takes in the foot of (c)\'s own line over the drawings',
+    **{(2011, 'hl', 7, 'c', r): 'takes in the foot of (c)\'s own line over the cutters'
+       for r in ('i', 'ii')},
+    (2011, 'hl', 8, 'a', None): 'cuts off the captions (i) and (ii) under the two mechanisms',
     # 2012 Higher, looked at 2026-11-05 (the residue cuts each by eye):
     **{(2012, 'hl', 1, 'o', r): 'cuts off the laser beam leaving the tube at C'
        for r in ('i', 'ii', 'iii')},

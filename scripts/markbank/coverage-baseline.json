@@ -288,19 +288,19 @@
     "refsHash": "02e4590c91471059"
   },
   "engineering": {
-    "cards": 1886,
-    "contentHash": "c44961769764ce03",
-    "coveragePct": 88.1,
-    "covered": 2314,
+    "cards": 1956,
+    "contentHash": "9b69e8b1879a40ce",
+    "coveragePct": 91.3,
+    "covered": 2399,
     "excluded": 0,
     "leaves": 2627,
-    "open": 313,
+    "open": 228,
     "orphans": 0,
     "papers": {
       "count": 60,
       "hash": "0c22181e07eb9ca3"
     },
-    "refsHash": "f47a548f1c0f2ddf"
+    "refsHash": "3acda7bf7e711006"
   },
   "english": {
     "cards": 2685,

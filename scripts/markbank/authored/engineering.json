@@ -1,5 +1,2215 @@
 [
  {
+  "id": "eng-2011-hl-q2-a-i",
+  "topicId": "eng-3-8",
+  "conceptId": "distinguish-between-metal-fatigue-metal-creep",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q2(a)(i)",
+  "questionText": "Distinguish between metal fatigue and metal creep.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Metal fatigue is failure due to on/off loading or cyclic stressing. Fatigue failure begins as a minute crack which grows under the action of fluctuating stress.",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Creep is the slow deformation of a material over time resulting from a constant force acting on the material. Creep is more likely to occur if materials are subjected to high temperatures.",
+    "marks": 4
+   }
+  ]
+ },
+ {
+  "id": "eng-2011-hl-q2-c-i",
+  "topicId": "eng-3-8",
+  "conceptId": "non-destructive-tests-ndts-generally-more",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q2(c)(i)",
+  "questionText": "Non-destructive tests (NDTs) are generally more expensive than other forms of metal testing. Explain two reasons for the use of NDTs in industry.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 4"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Manufacturing such as casting can be a costly process. NDT’s allow testing for quality yet will ensure that each acceptable component can be used.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "NDT’s may be used on each component.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The final product will not be destroyed in the testing process.",
+    "marks": null
+   }
+  ]
+ },
+ {
+  "id": "eng-2011-hl-q3-b-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "effect-cooling-0-4-carbon-steel",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q3(b)(ii)",
+  "questionText": "Outline the effect of cooling 0.4% carbon steel quickly from 900 ºC.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Rapid cooling results in the formation of martensite which has a hard needle- like structure giving a strong but brittle material. The distortion in the structure occurs because of the rapid quenching in hardening where excess carbon does not come out of solution.",
+    "marks": 8
+   }
+  ]
+ },
+ {
+  "id": "eng-2011-hl-q5-b-iii",
+  "topicId": "eng-2-10",
+  "conceptId": "why-tungsten-inert-gas-welding-suitable",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q5(b)(iii)",
+  "questionText": "Why is tungsten inert gas welding suitable for welding aluminium?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Aluminium oxidises very quickly when heated. This tenacious oxide layer is overcome with the use of an inert gas, such as argon, and the cathodic action of the arc on the work-piece. Aluminium can be welded successfully in this way by TIG welding.",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "eng-2011-hl-q6-b-iii",
+  "topicId": "eng-1-9",
+  "conceptId": "identify-component-produced-process",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q6(b)(iii)",
+  "questionText": "Identify one component produced by this process.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Component: pipes, gutters, curtain rail, etc.",
+    "marks": 4
+   }
+  ],
+  "questionFigureKey": "engineering-2011-HL-paper-q6bi-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q7-b-i",
+  "topicId": "eng-2-11",
+  "conceptId": "reasons-using-tungsten-carbide-cutting-tools",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q7(b)(i)",
+  "questionText": "Outline two reasons for using tungsten carbide cutting tools rather than high-speed steel cutting tools.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Experienced operators will ensure longer tool life.",
+    "marks": 6
+   }
+  ]
+ },
+ {
+  "id": "eng-2011-hl-q7-b-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "advantage-using-interchangeable-tool-inserts",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q7(b)(ii)",
+  "questionText": "Explain one advantage of using interchangeable tool inserts.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tools are not sharpened which is time consuming and dependent on the skill of the operator for effectiveness, inserts are replaced. Inserts can have a number of cutting edges integrated into their design.",
+    "marks": 4
+   }
+  ]
+ },
+ {
+  "id": "eng-2011-hl-q7-c-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "role-simulation-cnc-machining",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q7(c)(ii)",
+  "questionText": "Explain the role of simulation in CNC machining.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "CNC machine programmes allow the cutting of the workpiece to be simulated on the screen, this may identify inappropriate cutting actions before any material is machined.",
+    "marks": 4
+   }
+  ]
+ },
+ {
+  "id": "eng-2011-hl-q1-a",
+  "topicId": "eng-1-2",
+  "conceptId": "method-ore-dressing-shown-opposite",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(a)",
+  "questionText": "Describe the method of ore dressing shown opposite.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Magnetic separation: In the separation of ores that have magnetic properties, the ore is ground and passed over a rotating drum. The drum has a magnet inside it which holds the magnetic ore particles as the waste falls outside the screen. The ore held on the drum can be released or scraped off.",
+    "marks": 5
+   }
+  ],
+  "stem": "Section A – 50 Marks Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'. Section A is 'Any ten @ 5 marks each'.",
+  "questionFigureKey": "engineering-2011-HL-paper-q1a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q1-b",
+  "topicId": "eng-1-9",
+  "conceptId": "term-co-polymer",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(b)",
+  "questionText": "Explain the term co-polymer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Co-polymer: A polymer formed when two different mers are linked together in the same polymer chain. The new polymer may have a mixture of properties from both base mers. This enables the production of many different polymers with a big range of properties. An co-polymer example is the combination of ethylene and vinyl chloride.",
+    "marks": 5
+   }
+  ],
+  "stem": "Section A – 50 Marks Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'. Section A is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2011-hl-q1-c",
+  "topicId": "eng-3-7",
+  "conceptId": "identify-any-barrier-materials-may-be",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(c)",
+  "questionText": "Identify any three barrier materials that may be applied to mild steel to protect against corrosion.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2 + 2 + 1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Galvanising",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Spray painting",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Cladding with other metals eg copper, gold, etc",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Tin plating",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Plastic coating",
+    "marks": null
+   }
+  ],
+  "stem": "Section A – 50 Marks Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '(Any three) 2 + 2 +1'. Section A is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2011-hl-q1-d",
+  "topicId": "eng-3-1",
+  "conceptId": "factors-be-observed-safe-use-adhesives",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(d)",
+  "questionText": "Outline three factors to be observed in the safe use of adhesives.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2 + 2 + 1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Fume control and extraction of fumes",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Appropriate selection of adhesive materials",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Ensure that the area is well ventilated",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Wear gloves, eye protection, breathing apparatus, etc.",
+    "marks": null
+   }
+  ],
+  "stem": "Section A – 50 Marks Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '(Any three) 2 + 2 +1'. Section A is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2011-hl-q1-e",
+  "topicId": "eng-1-9",
+  "conceptId": "any-properties-polypropylene-make-suitable-material",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(e)",
+  "questionText": "Describe any two properties of polypropylene that make it suitable as a material in the manufacture of stacking chairs for schools and colleges.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Polypropylene has good impact strength,",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "it can be injection moulded,",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "it can be recycled,",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "it comes in a variety of colours, etc.",
+    "marks": null
+   }
+  ],
+  "stem": "Section A – 50 Marks Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '(Any two) 3 + 2'. Section A is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2011-hl-q1-f",
+  "topicId": "eng-1-2",
+  "conceptId": "differentiate-examples-between-electrical-insulator-electrical",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(f)",
+  "questionText": "Differentiate, with examples, between an electrical insulator and an electrical conductor.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Electrical insulators prevent current passing through them e.g. pvc electrical cabling.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Electrical conductors allow current to flow easily e.g. aluminium or copper.",
+    "marks": null
+   }
+  ],
+  "stem": "Section A – 50 Marks Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '3 + 2'. Section A is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2011-hl-q1-g",
+  "topicId": "eng-1-4",
+  "conceptId": "innovative-irish-designer-eileen-gray-designed",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(g)",
+  "questionText": "The innovative Irish designer, Eileen Gray, designed this table with a tubular steel frame. It is regarded as a design classic. Outline two reasons why tubular steel is a suitable material for this table.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tubular steel is has a good strength to weight ratio,",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "it can be fabricated into the curved shape effectively,",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "can be welded,",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "can be chrome plated, etc.",
+    "marks": null
+   }
+  ],
+  "stem": "Section A – 50 Marks Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '(Any two) 3 + 2'. Section A is 'Any ten @ 5 marks each'.",
+  "questionFigureKey": "engineering-2011-HL-paper-q1g-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q1-h",
+  "topicId": "eng-3-14",
+  "conceptId": "select-any-abbreviations-shown-their-meaning",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(h)",
+  "questionText": "Select any two of the abbreviations shown and explain their meaning: (i) LCD (ii) PCB (iii) HSS (iv) DPDT switch.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(i) Liquid crystal display",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(ii) Printed circuit board",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(iii) High speed steel",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "(iv) Double pole, double throw switch",
+    "marks": null
+   }
+  ],
+  "stem": "Section A – 50 Marks Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '(Any two) 3 + 2'. Section A is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2011-hl-q1-i",
+  "topicId": "eng-3-12",
+  "conceptId": "distinguish-between-clearance-fit-interference-fit",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(i)",
+  "questionText": "Distinguish between a clearance fit and an interference fit.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Clearance fit has the shaft made smaller than the part it fits into, there is a space to allow the parts to fit together easily.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Interference fit has the shaft made larger than the part it is intended to fit. The parts will have to be forced together.",
+    "marks": null
+   }
+  ],
+  "stem": "Section A – 50 Marks Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '3 + 2'. Section A is 'Any ten @ 5 marks each'.",
+  "figureKey": "engineering-2011-HL-scheme-q1i-sol"
+ },
+ {
+  "id": "eng-2011-hl-q1-j",
+  "topicId": "eng-3-14",
+  "conceptId": "contribution-did-any-following-make-technology",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(j)",
+  "questionText": "What contribution did any one of the following make to technology? (i) Trevor Baylis (ii) Charles Babbage (iii) Frank Whittle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "(i) Trevor Baylis: Born in 1937, English inventor is best known for his wind-up radio which uses a clockwork action that powers the radio. It was intended as a communication tool for the people of Africa to raise awareness of issues such as AIDS. A solar-powered version has been developed. He has set up an agency to support other inventors.",
+    "marks": 5,
+    "accepts": [
+     "(ii) Charles Babbage: English mathematician who designed the analytical engine, a mechanical computing device for performing different calculations according to a programme input on punched cards. This prototype device embodies many of the principles that digital computers are based on.",
+     "(iii) Frank Whittle: This British engineer patented the basic design for the turbojet engine in 1930. The principles of his jet engine were used in British, German and American aircraft during the World War II."
+    ]
+   }
+  ],
+  "stem": "Section A – 50 Marks Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '(Any one) 5'. Section A is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2011-hl-q1-k",
+  "topicId": "eng-2-15",
+  "conceptId": "identify-any-pneumatic-components-illustrated",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(k)",
+  "questionText": "Identify any one of the pneumatic components illustrated.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "(i) single acting pneumatic cylinder",
+    "marks": 5,
+    "accepts": [
+     "(ii) pressure regulator with gauge"
+    ]
+   }
+  ],
+  "stem": "Section A – 50 Marks Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '(Any one) 5'. Section A is 'Any ten @ 5 marks each'.",
+  "questionFigureKey": "engineering-2011-HL-paper-q1k-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q1-l",
+  "topicId": "eng-2-10",
+  "conceptId": "use-flashback-arrestors-oxy-acetylene-welding",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(l)",
+  "questionText": "Describe the use of flashback arrestors in oxy-acetylene welding equipment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Flashback arrestor are used to prevent the flame travelling back down through the hose into the cylinder, this will prevent the gas cylinder igniting.",
+    "marks": 5
+   }
+  ],
+  "stem": "Section A – 50 Marks Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'. Section A is 'Any ten @ 5 marks each'."
+ },
+ {
+  "id": "eng-2011-hl-q1-m",
+  "topicId": "eng-2-13",
+  "conceptId": "compare-properties-thread-machined-i-properties",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(m)",
+  "questionText": "Compare the properties of the thread machined at (i) and the properties of the thread rolled at (ii) shown below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The machined thread has the profile of the thread cut out of the blank material, the thread may be prone to weakness if subjected to excessive force. Rolling creates the thread profile by forming the metal into shape, this increases the strength of the thread.",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints '5'. Section A is 'Any ten @ 5 marks each'.",
+  "questionFigureKey": "engineering-2011-HL-paper-q1m-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q1-n-i",
+  "topicId": "eng-3-14",
+  "conceptId": "volume-waste-landfill",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(n)(i)",
+  "questionText": "The iconic design of the Spittelau incineration plant in Vienna as shown, is widely regarded as being both innovative and visually interesting. The following are some of the pollution concerns that need to be addressed in relation to incineration technology: Volume of waste for landfill; Briefly describe each of these pollution concerns.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The main purpose of incineration is to reduce the volume of waste going to landfill, less than 5% of the original waste weight remains after the process. This waste needs to be securely stored as there may be a high proportion of pollutants present. Some of the residue is non-toxic and can be used as a construction material.",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints '4 + 3 + 3', for (i), (ii) and (iii) in that order. Section B is \"Answer all of the following\".",
+  "questionFigureKey": "engineering-2011-HL-paper-q1ni-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q1-n-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "hazard-fly-ash",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(n)(ii)",
+  "questionText": "The iconic design of the Spittelau incineration plant in Vienna as shown, is widely regarded as being both innovative and visually interesting. The following are some of the pollution concerns that need to be addressed in relation to incineration technology: Hazard of ‘fly’ ash; Briefly describe each of these pollution concerns.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A proportion of the ash produced is in the form of very fine particles suspended in the exhaust gases, this must be treated carefully as it can contain high levels of toxic materials. ‘Fly’ ash residue must be stored in secure landfill to prevent release into the environment.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints '4 + 3 + 3', for (i), (ii) and (iii) in that order. Section B is \"Answer all of the following\".",
+  "questionFigureKey": "engineering-2011-HL-paper-q1ni-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q1-n-iii",
+  "topicId": "eng-3-14",
+  "conceptId": "impact-recycling-rates",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(n)(iii)",
+  "questionText": "The iconic design of the Spittelau incineration plant in Vienna as shown, is widely regarded as being both innovative and visually interesting. The following are some of the pollution concerns that need to be addressed in relation to incineration technology: Impact on recycling rates. Briefly describe each of these pollution concerns.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The incentive to pursue a recycling process can be reduced as most recyclable materials are valuable as a fuel for incineration. It can be more efficient to incinerate rather than recycle in terms of cost, energy use and transport. The cost of building incinerator plants is high, commercial plants can require a high volume of waste to remain viable. This can impact on recycling rates. Incineration plants can encourage the recycling of materials such as metals by burning away attached combustible materials. Ceramic materials produced can be recovered and used in construction.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints '4 + 3 + 3', for (i), (ii) and (iii) in that order. Section B is \"Answer all of the following\".",
+  "questionFigureKey": "engineering-2011-HL-paper-q1ni-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q1-o-i",
+  "topicId": "eng-3-14",
+  "conceptId": "ways-dioxins-may-affect-health-residents",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(o)(i)",
+  "questionText": "Dioxins are a group of 200 or so chlorinated organic compounds and are a by-product of incineration and backyard burning of domestic waste. Outline two ways that dioxins may affect the health of residents who live close to incineration plants.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dioxins can pollute the air this has a relatively small impact (less than 5%) on health issues. This more significant for workers and those that live close to incinerator plants.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Can enter the food chain and be poisonous to varying degrees depending on the health of the individual.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Prolonged exposure to low levels can cause cancers, liver problems and immune system problems.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Human intake is mainly through animal products in food.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Can cause abnormal physical development. Dioxins are chemically inert and tend to accumulate in the body without being broken down.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '3 + 3'. Section B is \"Answer all of the following\"."
+ },
+ {
+  "id": "eng-2011-hl-q1-o-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "how-production-dioxins-can-be-minimised",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(o)(ii)",
+  "questionText": "Dioxins are a group of 200 or so chlorinated organic compounds and are a by-product of incineration and backyard burning of domestic waste. Explain how the production of dioxins can be minimised.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dioxins can be released if combustion of organic materials is incomplete. It is critical that very high temperatures must be reached and maintained during incineration, the burning of rubbish and bonfires are main sources of dioxins as temperatures are not high enough.",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints '4'. Section B is \"Answer all of the following\"."
+ },
+ {
+  "id": "eng-2011-hl-q1-p",
+  "topicId": "eng-3-14",
+  "conceptId": "waste-incineration-technology-uses-combustion-process",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(p)",
+  "questionText": "Waste incineration technology uses the combustion process under controlled conditions to convert waste materials to inert gases and ash. Describe any three of the combustion elements outlined below:\nTemperature\nFuel\nTime\nOxygen.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 3 + 3"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Temperature For effective incineration, the ignition temperature varies with the type of material for combustion but normally reaches 800°C.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Fuel Not all materials will burn at incineration temperatures but materials such as paper, timber, food waste, fats, plastics and solvents combine to act as fuel for the process.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Time Temperature must be maintained for a period of time in order for combustion to be complete.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Oxygen. Carbon-based fuel combines with oxygen to convert to carbon dioxide with the release of heat. It is necessary to have enough oxygen to react in direct contact with all the fuel.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '4 + 3 + 3'. Section B is \"Answer all of the following\"."
+ },
+ {
+  "id": "eng-2011-hl-q1-q",
+  "topicId": "eng-3-14",
+  "conceptId": "principles-operation-moving-grate-incinerator-shown",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(q)",
+  "questionText": "Describe the principles of operation of the moving grate incinerator, as shown in the diagram. Make reference to waste input and the processing of incinerator products.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The moving grate incinerator: Typically used for incineration of municipal solid waste, the moving grate enables the movement of waste through the combustion chamber and allow a more efficient and complete combustion. Primary combustion air is supplied through the air from below at B, this aids combustion and cools the grate. Secondary air is blown at high speed over the grate. Bottom ash is collected at C. ‘Fly ash’ and exhaust gases are treated to remove pollutants and toxic particles.",
+    "marks": 10
+   }
+  ],
+  "notes": "The scheme prints '10'. Section B is \"Answer all of the following\".",
+  "questionFigureKey": "engineering-2011-HL-paper-q1q-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q1-r",
+  "topicId": "eng-3-14",
+  "conceptId": "any-following-d-b-c",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q1(r)",
+  "questionText": "Explain any two of the following:\n(i) The benefits of waste-to-energy (WtE/W2E) technologies;\n(ii) Some of the issues involved when locating incinerator plants;\n(iii) Incineration by the rotary kiln method.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The benefits of waste-to-energy (WtE/W2E) technologies: Incineration plants will burn waste, the energy released can be used to generate electricity, it is intended that planned incinerator plants in Ireland will export power onto the national grid. In some countries, energy is used in the form of heat for district heating grids. Tightly controlled waste incineration plants may have less toxic emissions than fossil fuel powered generating stations. Fossil fuels are a finite resource that will deplete and alternative fuel sources are necessary.",
+    "marks": 10,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "The benefits of waste-to-energy (WtE/W2E) technologies: Incineration plants will burn waste, the energy released can be used to generate electricity, it is intended that planned incinerator plants in Ireland will export power onto the national grid. In some countries, energy is used in the form of heat for district heating grids. Tightly controlled waste incineration plants may have less toxic emissions than fossil fuel powered generating stations. Fossil fuels are a finite resource that will deplete and alternative fuel sources are necessary.",
+      "Two reasons for difficulties in locating incinerator plants: • Fears over the release of dioxins, furans and other toxic emissions. • Increased heavy traffic to supply incineration plants. • Public attitude can devalue property located close to plants. • Some incinerators are visually undesirable - the Spittleau plant is an exception. • Prevention, waste minimisation, reuse and recycling should all be preferred as environmentally more desirable methods of controlling waste.",
+      "Incineration by the rotary kiln method: Solid and liquid waste generated by industry, including hazardous materials, can be incinerated by the rotary kiln method. The waste is fed in at A to the feeder and then to the rotating combustion chamber (B). The lifting and tumbling action exposes the waste to the flames supported by the burners and fans at C, this ensures effective combustion. Ashes at D and gases exhausted at E are further treated."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints '(Any two) 5 + 5'. Section B is \"Answer all of the following\".",
+  "figureKey": "engineering-2011-HL-scheme-q1r-sol"
+ },
+ {
+  "id": "eng-2011-hl-q2-a-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "compare-hardness-tests-represented-diagrams-b",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q2(a)(ii)",
+  "questionText": "Compare the two hardness tests represented in diagrams A and B, making reference to:\n• name of tests\n• method of measurement\n• test-material suitability.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name of test — Brinell hardness test. or Rockwell Ball test. — Vickers hardness test. or Knoop hardness test. or Rockwell Cone hardness test",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Method of measurement — Brinell test measures force used divided by area of indent. — Vickers and Knoop tests use different loads and measure the indentation.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Test material suitability — Used on relatively soft materials as the ball is prone to deformation. — Can be used on harder materials as the indentor is less likely to deform.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '10'. Its table is headed 'Hardness test A' and 'Hardness test B'; each row gives the heading, then A's cell, then B's.",
+  "figureKey": "engineering-2011-HL-scheme-q2aii-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q2a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q2-b",
+  "topicId": "eng-3-8",
+  "conceptId": "following-results-obtained-tensile-test-aluminium",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q2(b)",
+  "questionText": "The following results were obtained from a tensile test on an aluminium alloy. Using the graph paper supplied, plot the stress-strain graph and determine:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The following results were obtained from a tensile test on an aluminium alloy. Using the graph paper supplied, plot the stress-strain graph and determine:",
+    "marks": 10,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints 'Plot the graph:' and '10'.",
+  "figureKey": "engineering-2011-HL-scheme-q2b-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q2b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q2-b-i",
+  "topicId": "eng-3-8",
+  "conceptId": "young-s-modulus-elasticity-alloy-strain",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q2(b)(i)",
+  "questionText": "The following results were obtained from a tensile test on an aluminium alloy. Using the graph paper supplied, plot the stress-strain graph and determine: Young’s modulus of elasticity for the alloy;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The following results were obtained from a tensile test on an aluminium alloy. Using the graph paper supplied, plot the stress-strain graph and determine: Young’s modulus of elasticity for the alloy;",
+    "marks": 4,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '4'.",
+  "figureKey": "engineering-2011-HL-scheme-q2bi-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q2b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q2-b-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "0-1-proof-stress",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q2(b)(ii)",
+  "questionText": "The following results were obtained from a tensile test on an aluminium alloy. Using the graph paper supplied, plot the stress-strain graph and determine: The 0.1% proof stress.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "From the graph, 0.1% is at 1.0 (×1000) strain, proof stress is 325N/mm2",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints '2'.",
+  "figureKey": "engineering-2011-HL-scheme-q2b-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q2b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q2-c-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "aid-suitable-diagram-non-destructive-test",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q2(c)(ii)",
+  "questionText": "Describe, with the aid of a suitable diagram, one non-destructive test that uses ultrasonic principles as a method of flaw detection.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A quartz crystal is used to generate high frequency vibrations and passed over the material to be tested. If the material has internal defects, vibrations will be reflected back to the receiver and displayed on a screen. It is used to test thick components such as castings and forgings for defects. It is quick and has the ability to probe deeply without damaging the piece.",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "figureKey": "engineering-2011-HL-scheme-q2cii-sol"
+ },
+ {
+  "id": "eng-2011-hl-q3-a-i",
+  "topicId": "eng-2-6",
+  "conceptId": "aid-suitable-diagram-induction-hardening-process",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q3(a)(i)",
+  "questionText": "Describe, with the aid of a suitable diagram, the induction hardening process;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A coil carries high frequency currents which are induced on the surface of the component causing a rapid rise in temperature. This allows a change to austenite in the surface layers of the component. Water jets then cool the steel transforming the austenite to martensite. This leaves the outer surface hard. The frequency of the current determines the depth of heating and the depth of hardening.",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme prints '(Any two) 8 + 8': each part answered earns 8.",
+  "figureKey": "engineering-2011-HL-scheme-q3ai-sol"
+ },
+ {
+  "id": "eng-2011-hl-q3-a-ii",
+  "topicId": "eng-1-4",
+  "conceptId": "distinguish-between-properties-grey-cast-iron",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q3(a)(ii)",
+  "questionText": "Distinguish between the properties of grey cast iron and white cast iron;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Grey cast iron: Grey cast iron forms due to slow cooling where carbon is present as graphite flakes. It is soft, weak in tension, casts into intricate shapes and is easy to machine. It has self lubricating and vibration dampening properties making it suitable for casting machine and engine parts.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "White cast iron: White cast iron forms under quick cooling conditions. The carbon is present in the form of ferrite and cementite. White cast irons are hard and brittle.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '(Any two) 8 + 8': each part answered earns 8."
+ },
+ {
+  "id": "eng-2011-hl-q3-a-iii",
+  "topicId": "eng-2-6",
+  "conceptId": "function-stress-relieving-metals",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q3(a)(iii)",
+  "questionText": "Explain the function of stress relieving in metals.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Operations such as cold working, machining, welding, drawing, heading and extrusion are likely to induce stresses on the internal structures of metals. Stress relieving is a heat treatment process that reduces or eliminates these stresses without significant affecting other important properties.",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme prints '(Any two) 8 + 8': each part answered earns 8."
+ },
+ {
+  "id": "eng-2011-hl-q3-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "identify-regions-represented-1-2-3",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q3(b)(i)",
+  "questionText": "A simplified section of the iron-carbon equilibrium diagram is shown. Identify the regions represented at 1, 2, 3, 4 and 5.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 – Ferrite and austenite",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2 – Austenite",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3 – Austenite and cementite",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4 – Ferrite and pearlite",
+    "marks": 2
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "5 – Pearlite and cementite",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints '2 + 2 + 2 + 2 + 2'.",
+  "questionFigureKey": "engineering-2011-HL-paper-q3b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q3-c-i",
+  "topicId": "eng-2-6",
+  "conceptId": "pyrometer-its-function",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q3(c)(i)",
+  "questionText": "The diagrams shown below represent a series of readings from a pyrometer. Name this pyrometer and state its function.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: optical pyrometer / ‘disappearing filament’ pyrometer.",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Function: to determine the temperature of a furnace.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints '3 +3', for the name and the function in that order.",
+  "questionFigureKey": "engineering-2011-HL-paper-q3c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q3-c-ii",
+  "topicId": "eng-2-6",
+  "conceptId": "principle-operation-pyrometer-making-reference-diagrams",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q3(c)(ii)",
+  "questionText": "The diagrams shown below represent a series of readings from a pyrometer. Describe the principle of operation of the pyrometer, making reference to diagrams A, B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This pyrometer compares the intensity of light from the filament of a lamp. Current flow from the lamp can be adjusted, using a variable resistor, to match the light from the furnace – this is shown in diagram B. When the filament seems to ‘disappear’, a temperature reading can be taken. The reading in diagram A is too low and the reading in diagram C is too high.",
+    "marks": 10
+   }
+  ],
+  "notes": "The scheme prints '10'.",
+  "figureKey": "engineering-2011-HL-scheme-q3cii-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q3c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q4-a",
+  "topicId": "eng-1-3",
+  "conceptId": "any-following",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q4(a)",
+  "questionText": "Explain any two of the following:\n(i) Allotropy;\n(ii) Interstitial solid solution;\n(iii) The difference between amorphous structures and crystalline structures;\n(iv) The degree of brittleness in body-centred cubic (bcc) structures and the degree of brittleness in face-centred cubic (fcc) structures.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Allotropy: Allotropy is the ability of a material to exist in different forms. Allotropy of iron modifies the solubility of carbon which allows some steels to be hardened. The transformation from alpha iron (ferrite), which has a bcc crystal structure, to the fcc structure of gamma iron (austenite) is the basis for the hardening of steels. Up to 1.7% carbon can be accommodated in gamma iron. When carbon steel is cooled from the austenite state to ferrite, some carbon must come out of solution. A compound of iron and carbon called cementite is formed giving a hardness to carbon steel.",
+    "marks": 16,
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Allotropy: Allotropy is the ability of a material to exist in different forms. Allotropy of iron modifies the solubility of carbon which allows some steels to be hardened. The transformation from alpha iron (ferrite), which has a bcc crystal structure, to the fcc structure of gamma iron (austenite) is the basis for the hardening of steels. Up to 1.7% carbon can be accommodated in gamma iron. When carbon steel is cooled from the austenite state to ferrite, some carbon must come out of solution. A compound of iron and carbon called cementite is formed giving a hardness to carbon steel.",
+      "Interstitial solid solution: An atom from another element moves into the space between the atoms of the parent metal lattice. This causes compression of the surrounding atoms and will strengthen the material as it takes a higher stress to cause deformation.",
+      "Amorphous structures do not have a pattern in the arrangement of their atoms but are a more random structure. Pitch, glass and some plastics have this type of structure. Crystalline structures have atoms that are bonded together in a pattern that is repeated. Metals with bcc and fcc unit cells are examples of a crystalline structure.",
+      "Brittleness in bcc and fcc structures: In the bcc structure, the structure is arranged with an atom at the corner of a cube and an atom in the centre of the cube. This structure is associated with brittleness. In the fcc structure atoms are at the corners of a cube and a single atom in the centre of each face of the cube. Atoms are more tightly packed which allows metals to be more ductile"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints '(Any two) 8 + 8'.",
+  "figureKey": "engineering-2011-HL-scheme-q4a-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q4a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q4-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "draw-thermal-equilibrium-diagram-according-given",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q4(b)(i)",
+  "questionText": "The table shows the solidification temperatures for the various alloys of metal A and metal B. The melting point of metal A is 1083 ºC and the melting point of metal B is 1453 ºC. Using the graph paper supplied: Draw the thermal equilibrium diagram according to the given data;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The table shows the solidification temperatures for the various alloys of metal A and metal B. The melting point of metal A is 1083 ºC and the melting point of metal B is 1453 ºC. Using the graph paper supplied: Draw the thermal equilibrium diagram according to the given data;",
+    "marks": 10,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '10'.",
+  "figureKey": "engineering-2011-HL-scheme-q4bi-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q4b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q4-b-ii",
+  "topicId": "eng-1-3",
+  "conceptId": "label-main-features-diagram",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q4(b)(ii)",
+  "questionText": "The table shows the solidification temperatures for the various alloys of metal A and metal B. The melting point of metal A is 1083 ºC and the melting point of metal B is 1453 ºC. Using the graph paper supplied: Label the main features of the diagram;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Liquidus line, Solidus line, Liquid region, Solid region and Pasty region",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme prints '5'.",
+  "figureKey": "engineering-2011-HL-scheme-q4bi-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q4b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q4-b-iii",
+  "topicId": "eng-1-3",
+  "conceptId": "determine-diagram-ratio-phases-1250-c",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q4(b)(iii)",
+  "questionText": "The table shows the solidification temperatures for the various alloys of metal A and metal B. The melting point of metal A is 1083 ºC and the melting point of metal B is 1453 ºC. Using the graph paper supplied: Determine, from the diagram, the ratio of the phases at 1250 ºC for the alloy of 50% metal B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The table shows the solidification temperatures for the various alloys of metal A and metal B. The melting point of metal A is 1083 ºC and the melting point of metal B is 1453 ºC. Using the graph paper supplied: Determine, from the diagram, the ratio of the phases at 1250 ºC for the alloy of 50% metal B.",
+    "marks": 3,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '3'.",
+  "figureKey": "engineering-2011-HL-scheme-q4biii-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q4b-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q4-c",
+  "topicId": "eng-1-3",
+  "conceptId": "various-stages-solidification-metal-cools-x",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q4(c)",
+  "questionText": "Outline the various stages of solidification as a metal cools, from X to the crystal at Y, as shown below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The stages of crystal solidification of a metal from the liquid phase are known as dendritic growth. As the metal cools, solidification starts from cells and begin to grow to form a dendrite. These have a tree-like formation with branches reaching out in all directions. Grain boundaries with solid metal crystals are formed.",
+    "marks": 16
+   }
+  ],
+  "notes": "The scheme prints '16'.",
+  "figureKey": "engineering-2011-HL-scheme-q4c-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q4c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q5-a-i",
+  "topicId": "eng-2-10",
+  "conceptId": "principles-operation-mma-welding",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q5(a)(i)",
+  "questionText": "The process of manual metal arc welding (MMA) is illustrated. Describe the principles of operation of MMA welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Electricity is passed through an electrode which jumps between the electrode and the work piece. This causes an arc which produces great heat melting the consumable electrode and the work piece causing the edges to fuse together. The weld pool is protected from oxidation by the gasses produced by melting the chemicals on the electrode coating. This wire electrode also acts as a filler material to fill the gap between the two parts being joined. A slag is formed which protects the weld area from oxidation and minimises cracking of the weld as it allows the joint cool slowly. MMA welding is made more effective with the use of an adjustable transformer to allow for different thicknesses of steel to be welded. MMA welding has many operational uses such as repair work on construction steel.",
+    "marks": 10
+   }
+  ],
+  "notes": "The scheme prints '10'.",
+  "figureKey": "engineering-2011-HL-scheme-q5ai-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q5ai-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q5-a-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "identify-main-parts-b-c-mma",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q5(a)(ii)",
+  "questionText": "The process of manual metal arc welding (MMA) is illustrated. Identify the three main parts A, B and C of the MMA welding circuit shown and state the function of each part.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A – transformer: A step-down transformer is used to change the mains voltage from 220V to a suitable level (80-100V) for welding. This will provide the high current needed for welding. This type of transformer has more turns on the primary coil than the secondary coil and will induce alternating current (AC) at a lower voltage.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B – rectifier: The rectifier changes alternating current (AC) to direct current (DC). It consists of four diodes which allows two of the diodes to conduct on each half-cycle of the AC supply.",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C – capacitor: The capacitor is employed to provide a smooth supply of low voltage DC.",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints '2 + 2 + 2', for A, B and C in that order.",
+  "questionFigureKey": "engineering-2011-HL-paper-q5aii-crop",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "transformer:",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "rectifier:",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "capacitor:",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "eng-2011-hl-q5-b-i",
+  "topicId": "eng-3-1",
+  "conceptId": "important-safety-features-minimise-electrical-hazards",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q5(b)(i)",
+  "questionText": "Describe three important safety features that minimise electrical hazards associated with manual metal arc welding;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "MMA welding machines are protected from electrical surges.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Welding stations need to be free from dampness.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Cables and electrode holders are covered with plastic insulators.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Welding machines are earthed.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Power supplied can be adjusted to an appropriate level.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '(Any three) 6 + 6 + 6': each part answered earns 6."
+ },
+ {
+  "id": "eng-2011-hl-q5-b-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "methods-preventing-atmospheric-contamination-weld-area",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q5(b)(ii)",
+  "questionText": "Outline three methods of preventing atmospheric contamination of the weld area;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In manual metal arc welding (MMA), the flux electrode coating melts and gives off a gas to protect the weld from the surrounding air, a protective slag coating forms on top of the weld.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "In oxy-acetylene welding the flame protects the weld area.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "MIG and TIG welding use a gaseous shield to protect the weld area.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "SAW covers the weld area with a powdered flux.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '(Any three) 6 + 6 + 6': each part answered earns 6."
+ },
+ {
+  "id": "eng-2011-hl-q5-b-iv",
+  "topicId": "eng-2-10",
+  "conceptId": "function-dissolved-acetylene-oxy-acetylene-welding",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q5(b)(iv)",
+  "questionText": "Explain the function of dissolved acetylene in oxy-acetylene welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "If acetylene is compressed into a cylinder, it would explode under high pressure. Acetylene cylinders are packed with a porous material that is filled with acetone, this can absorb 25 times its own volume of acetylene. Dissolved acetylene is the name given to this form of acetylene fuel.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints '(Any three) 6 + 6 + 6': each part answered earns 6."
+ },
+ {
+  "id": "eng-2011-hl-q5-c",
+  "topicId": "eng-2-10",
+  "conceptId": "aid-suitable-diagram-main-features-following",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q5(c)",
+  "questionText": "Describe, with the aid of a suitable diagram, the main features of one of the following:\n(i) Seam resistance welding;\n(ii) Submerged arc welding (SAW).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Seam resistance welding: A form of resistance welding that uses copper roller electrodes to provide a continuous run of overlapping spot welds as the current is activated at set intervals. One of the electrodes may be driven by an electric motor. The workpiece is moved between the rollers and pulses of current are supplied. Each pulse is set to last long enough to produce a spot weld. The time interval is controlled so that these spots overlap by approx. 40% of their length along the seam.",
+    "marks": 16,
+    "accepts": [
+     "In submerged arc welding, a bare wire electrode is used. It is fed automatically from a spool and generates an electric arc to heat the metal. The flux, in powder form, is fed from a hopper to completely cover the joint and the tip of the electrode. The arc creates the heat to melt the joint, flux and electrode. A slag is formed to provide a protective coating for the weld. The excess flux powder can be collected and used again. Submerged arc welding is a fully automated process. Applications: used for large scale straight line welds such as steel reinforcing beams, shipbuilding and bridge construction."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '(Any one) 16'. The paper sets two (c)s either side of an OR: seam resistance or submerged arc welding, \"(Any one) 16\", carded at the letter, and the robotics (c), whose (i) and (ii) are carded apart.",
+  "figureKey": "engineering-2011-HL-scheme-q5c-sol"
+ },
+ {
+  "id": "eng-2011-hl-q5-c-i",
+  "topicId": "eng-3-14",
+  "conceptId": "seam-resistance-welding-or-robotic-control",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q5(c)(i)",
+  "questionText": "Explain the robotic control terms:\nwork envelope and\ndegree of freedom.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Work envelope: The volume of space in which a robot can operate is called the ‘Work Envelope’.",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Degree of freedom: A description of the ways in which a robot arm can move. A single joint will provide one degree of freedom. To provide a variety of degrees of freedom, different robotic joints can be used such as rotary (elbow, waist, etc.) or linear joints (sliding, etc.). The simple Carthesian robot shown has three degrees of freedom (x, y and z).",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints '4 + 4', for the work envelope and the degree of freedom in that order. The paper sets two (c)s either side of an OR: seam resistance or submerged arc welding, \"(Any one) 16\", carded at the letter, and the robotics (c), whose (i) and (ii) are carded apart.",
+  "figureKey": "engineering-2011-HL-scheme-q5cor-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q5cor-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q5-c-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "submerged-arc-welding-saw-or-advantage",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q5(c)(ii)",
+  "questionText": "Outline one advantage of the use of stepper motors rather than DC motors in robotic control.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Stepper motors can be precisely controlled to move in small increments, they may not ‘run-on’ when switched, high torque value, reliability, etc.",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme prints '8'. The paper sets two (c)s either side of an OR: seam resistance or submerged arc welding, \"(Any one) 16\", carded at the letter, and the robotics (c), whose (i) and (ii) are carded apart.",
+  "questionFigureKey": "engineering-2011-HL-paper-q5cor-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q6-a-i",
+  "topicId": "eng-1-9",
+  "conceptId": "aid-diagrams-addition-polymerisation-process",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q6(a)(i)",
+  "questionText": "Describe, with the aid of diagrams, the addition polymerisation process.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Polyethylene is produced by addition polymerisation. Long chainlike molecules are formed by the addition of large numbers of mers. The ethylene molecule (or mer) consists of a strong and a weak bond between the carbon atoms. A catalyst or a free radical, which has an unpaired electron in its outer shell, is released to the ethylene molecule. The weak bond is attached and one of its electrons is taken by the radical leaving the other free. Then that ethylene molecule behaves like a radical and the process is continuously repeated until termination takes place. Addition polymerisation contains bonds held together by weak van der Waals forces which can be overcome by heat or pressure.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints 'Description 5' and 'Diagram 5'.",
+  "figureKey": "engineering-2011-HL-scheme-q6ai-sol"
+ },
+ {
+  "id": "eng-2011-hl-q6-a-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "polymer-material-produced-addition-polymerisation",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q6(a)(ii)",
+  "questionText": "Name one polymer material produced by addition polymerisation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Polyethylene",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prints '4'."
+ },
+ {
+  "id": "eng-2011-hl-q6-b-i",
+  "topicId": "eng-1-9",
+  "conceptId": "process-principle-operation",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q6(b)(i)",
+  "questionText": "With reference to the polymer manufacturing process shown in the diagram, answer each of the following: Name the process and describe the principle of operation;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Extrusion",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Operation: The thermoplastic powder or granules are fed into the heated compartment from the hopper. The rotating screw moves the softening plastic along this compartment and exerts a pressure to force the plastic through a die. The die determines the extruded shape, which is then cooled in the chamber. The plastic length are supported and cut at the required length.",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme prints 'Name 4' and 'Operation 8'.",
+  "questionFigureKey": "engineering-2011-HL-paper-q6bi-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q6-b-ii",
+  "topicId": "eng-1-9",
+  "conceptId": "type-polymer-used-process",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q6(b)(ii)",
+  "questionText": "With reference to the polymer manufacturing process shown in the diagram, answer each of the following: State the type of polymer used in this process;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Thermoplastic such as PVC, acrylic, nylon, etc.",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme prints '2'.",
+  "questionFigureKey": "engineering-2011-HL-paper-q6bi-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q6-c",
+  "topicId": "eng-1-9",
+  "conceptId": "function-any-following-polymer-additives",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q6(c)",
+  "questionText": "Explain the function of any three of the following polymer additives:\n(i) Plasticiser;\n(ii) Filler;\n(iii) Lubricant;\n(iv) Stabiliser;\n(v) Pigment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Plasticiser: Plasticisers are added to polymers to improve their flexibility. They achieve this by altering the forces of attraction between molecules of the polymer.",
+    "marks": 18,
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Plasticiser: Plasticisers are added to polymers to improve their flexibility. They achieve this by altering the forces of attraction between molecules of the polymer.",
+      "Filler: These additives control the mechanical properties, such as material strength, of the polymer. They reduce the amount of expensive polymer used. Fillers such as chalk, wood flour and glass fibre can be used.",
+      "Lubricant: Lubricants make the polymer easier to mould. Various types of waxes are used in small amounts for this purpose.",
+      "Stabiliser: Help prevent the degradation effects that heat, ultra-violet light and other environmental conditions place on the polymer.",
+      "Pigment: Pigments have the function of giving colour to the polymer."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints '(Any three) 6 + 6 + 6'."
+ },
+ {
+  "id": "eng-2011-hl-q7-a-i",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-safety-precautions-reduce-formation-built",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q7(a)(i)",
+  "questionText": "Identify two safety precautions that reduce the formation of a built-up edge while turning on a centre lathe;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Use cutting fluids when machining.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Choose suitable cutting tools for each machining process.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Run the machine at the correct speed to prevent heat build-up.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Ensure that the machine is in good condition and not prone to excessive vibration.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Use the correct cutting feed for the material.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '(Any three) 6 + 6 + 6': each part answered earns 6."
+ },
+ {
+  "id": "eng-2011-hl-q7-a-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "distinguish-between-oblique-cutting-orthogonal-cutting",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q7(a)(ii)",
+  "questionText": "Distinguish between oblique cutting and orthogonal cutting;",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Orthogonal cutting has two forces, the tangential and axial force acting on the cutting tool.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Oblique cutting consists of a three force system. The radial force is caused by the plan approach angle on the cutting tool. As the radial force increases, the axial force decreases.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '(Any three) 6 + 6 + 6': each part answered earns 6."
+ },
+ {
+  "id": "eng-2011-hl-q7-a-iii",
+  "topicId": "eng-3-12",
+  "conceptId": "main-function-feeler-gauge",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q7(a)(iii)",
+  "questionText": "Explain one main function of a feeler gauge;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Used to gauge small gaps or spaces between components.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints '(Any three) 6 + 6 + 6': each part answered earns 6."
+ },
+ {
+  "id": "eng-2011-hl-q7-a-iv",
+  "topicId": "eng-2-11",
+  "conceptId": "main-features-morse-taper-sleeve",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q7(a)(iv)",
+  "questionText": "Describe the main features of a Morse taper sleeve;",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Morse taper shanks are used to fix components such as drills and centres in to machines, they come in a variety of sizes. To increase a morse taper size, a sleeve can be used.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints '(Any three) 6 + 6 + 6': each part answered earns 6."
+ },
+ {
+  "id": "eng-2011-hl-q7-a-v",
+  "topicId": "eng-2-11",
+  "conceptId": "function-reamer",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q7(a)(v)",
+  "questionText": "State the function of a reamer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Produce accurate holes with a good surface finish.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints '(Any three) 6 + 6 + 6': each part answered earns 6."
+ },
+ {
+  "id": "eng-2011-hl-q7-c",
+  "topicId": "eng-2-11",
+  "conceptId": "aid-diagrams-suitable-cutting-operation-each",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q7(c)",
+  "questionText": "Describe, with the aid of diagrams, a suitable cutting operation for each of the milling cutters shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Slot drill: The slot drill has cutting edges on the end and along the helical sides, this allows this cutter to cut into the metal like a drill as well as cut grooves and slots.",
+    "marks": 8
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Dovetail cutter: These cutters are used to cut dovetail profiles on slide-ways for machine parts.",
+    "marks": 8
+   }
+  ],
+  "notes": "The scheme prints '8 + 8', for (i) and (ii) in that order. The paper sets two (c)s either side of an OR: the two milling cutters, \"8 + 8\" and both asked, carded at the letter, and the CNC safety (c), whose (i) and (ii) are carded apart.",
+  "figureKey": "engineering-2011-HL-scheme-q7c-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q7c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q7-c-i",
+  "topicId": "eng-2-11",
+  "conceptId": "safety-features-integrated-into-design-cnc",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q7(c)(i)",
+  "questionText": "Describe three safety features integrated into the design of a CNC lathe or a CNC milling machine.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 4 + 4"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Machining area is covered with a large acrylic screen.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Emergency stop button is located prominently on the front of the machine.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Interlocking switches prevent the machine operating without guards in place.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Programme will alert to potential safety issues such as excessive cutting depth or feed rate.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '4 + 4 + 4'. The paper sets two (c)s either side of an OR: the two milling cutters, \"8 + 8\" and both asked, carded at the letter, and the CNC safety (c), whose (i) and (ii) are carded apart."
+ },
+ {
+  "id": "eng-2011-hl-q8-a",
+  "topicId": "eng-2-15",
+  "conceptId": "operation-any-mechanisms-shown",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q8(a)",
+  "questionText": "Name and describe the operation of any one of the mechanisms shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Bevel gears.",
+    "marks": 8,
+    "accepts": [
+     "Roller bearing."
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Allows motion from the output shaft to be transmitted at 90o to the input movement.",
+    "marks": 8,
+    "accepts": [
+     "Allows a shaft to rotate in the centre of the bearing while it is held in a machine or structure. This reduces friction, promotes free running of the shaft and reduces the build-up of heat. A roller bearing gives a greater area of contact than a ball bearing system, this allows greater loads to be carried. Tapered roller bearings can cope with radial and axial loads and are used for wheel bearings in most vehicles."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '(Any one) Name 8, Operation 8', for the mechanism chosen.",
+  "questionFigureKey": "engineering-2011-HL-paper-q8a-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q8-b",
+  "topicId": "eng-2-15",
+  "conceptId": "any-following",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q8(b)",
+  "questionText": "Explain any three of the following:\n(i) The advantages of using vee-pulley belts over flat belts;\n(ii) Chain and sprocket;\n(iii) Toggle mechanism;\n(iv) Light dependent resistor (LDR);\n(v) The functions of the electronic transistor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The advantages of using vee pulley belts over flat belts: Gives a greater area of contact with the pulley wheel. Provides a stronger grip. Reduces slip. Can drive larger forces.",
+    "marks": 18,
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "The advantages of using vee pulley belts over flat belts: Gives a greater area of contact with the pulley wheel. Provides a stronger grip. Reduces slip. Can drive larger forces.",
+      "Chain and sprocket: A chain is used to transmit motion from one toothed wheel to another. This eliminates slip and is in common use on bicycles and motor cycles. A chain and sprocket gives a strong drive.",
+      "Toggle mechanism: This linkage is widely used as a clamping mechanism, it is used in a ‘vice grips’ as it holds very firmly and is quick to use.",
+      "Light dependent resistor (LDR): An electronic sensing component that can be set up to sense the presence or absence of light.",
+      "The functions of the electronic transistor: Can be used as an electronic switch or an amplifier."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints '(Any three) 6 + 6 + 6'."
+ },
+ {
+  "id": "eng-2011-hl-q8-c",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-suitable-diagram-mechanism-control-steering",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q8(c)",
+  "questionText": "Describe, with the aid of a suitable diagram, a mechanism to control the steering of the go-kart shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "There are a variety of ways that go-karts can be steered including linkages. The steering wheel is connected to the pinion wheel by a column. The wheels are connected to the frame by an axle. The steering rack and tie bars form a linkage that keeps the wheels straight until the pinion drives the rack and moves the linkage to the left or right. The wheels can then turn in the same direction allowing the wheels to steer.",
+    "marks": 16
+   }
+  ],
+  "notes": "The scheme prints '16' and 'Suggested solution is based on the principle of the use of a rack and pinion steering, other viable solutions are acceptable.' The paper sets two (c)s either side of an OR: the go-kart's steering, \"16\", carded at the letter, and the relay (c), whose (i) and (ii) are carded apart.",
+  "figureKey": "engineering-2011-HL-scheme-q8c-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q8c-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q8-c-i",
+  "topicId": "eng-2-16",
+  "conceptId": "identify-component-shown",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q8(c)(i)",
+  "questionText": "The electronic component shown is commonly used as a switching device: Identify the component shown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Relay.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints '6'. The paper sets two (c)s either side of an OR: the go-kart's steering, \"16\", carded at the letter, and the relay (c), whose (i) and (ii) are carded apart.",
+  "questionFigureKey": "engineering-2011-HL-paper-q8cor-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2011-hl-q8-c-ii",
+  "topicId": "eng-2-16",
+  "conceptId": "operation-component-making-reference-coil-armature",
+  "level": "higher",
+  "year": 2011,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2011 HL Q8(c)(ii)",
+  "questionText": "The electronic component shown is commonly used as a switching device: Describe the operation of this component, making reference to the coil, armature and contacts.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The relay acts as a switching interface to allow low voltage circuits to drive much higher voltage circuits. When a small current is passed through the coil, it has a magnetising effect on the soft iron plate. As it is drawn to the coil, the linkage pivots and the contacts are closed. These contacts can be used to Relays are widely used to control many devices including higher voltage lights and motors.",
+    "marks": 10
+   }
+  ],
+  "notes": "The scheme prints '10'. The paper sets two (c)s either side of an OR: the go-kart's steering, \"16\", carded at the letter, and the relay (c), whose (i) and (ii) are carded apart.",
+  "figureKey": "engineering-2011-HL-scheme-q8cii-sol",
+  "questionFigureKey": "engineering-2011-HL-paper-q8cor-crop",
+  "questionFigureIncludesPrompt": false
+ },
+ {
   "id": "eng-2012-hl-q2-a-i",
   "topicId": "eng-3-8",
   "conceptId": "principle-operation-any-impact-test",

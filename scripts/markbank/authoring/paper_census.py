@@ -709,6 +709,15 @@ SHORT_ASKS = {
     ('engineering', 2013, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism photographs, '
                                                    'under "Name and describe the operation of any one of the mechanisms '
                                                    'shown."'),
+    # 2011 HL, each opened on its page (2026-11-05).
+    **{('engineering', 2011, 'hl', f'Q1(h)({r})'): (t, f'p3: the abbreviation "({r}) {t}" in "(i) LCD (ii) PCB (iii) HSS '
+                                                       '(iv) DPDT switch." under "Select any two of the abbreviations shown '
+                                                       'and explain their meaning:"')
+       for r, t in (('i', 'LCD'), ('ii', 'PCB'), ('iii', 'HSS'))},
+    **{('engineering', 2011, 'hl', f'Q1(k)({r})'): ('', f'p3: the caption "({r})" under the {n} of two pneumatic component '
+                                                       'photographs, under "Identify any one of the pneumatic components '
+                                                       'illustrated."')
+       for r, n in (('i', 'first'), ('ii', 'second'))},
     # 2012 HL, each opened on its page (2026-11-05).
     **{('engineering', 2012, 'hl', f'Q1(c)({r})'): ('', f'p3: the caption "({r})" under the {n} of three safety signs, '
                                                        'under "State the purpose of any two of the safety signs shown."')
