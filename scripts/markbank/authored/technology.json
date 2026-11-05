@@ -1,5 +1,2936 @@
 [
  {
+  "id": "tech-2015-hl-a1-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q1(i)",
+  "questionText": "Outline what is meant by sustainability.",
+  "stem": "Fairtrade® is an organised social movement with the stated goals of helping producers in developing countries to achieve better trading conditions and to promote sustainability.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Not being harmful to the environment or depleting natural resources for future generations, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a1-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q1(ii)",
+  "questionText": "Discuss why sales of Fairtrade® products have increased.",
+  "stem": "Fairtrade® is an organised social movement with the stated goals of helping producers in developing countries to achieve better trading conditions and to promote sustainability.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Increased social awareness by consumers, sustainability, highlighting the consequences for developing country producers, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a2-i",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q2(i)",
+  "questionText": "Suggest two aspects of the computer workstation that a design engineer would need to research when developing their design.",
+  "stem": "A client requires a computer workstation to be designed.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+2 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ergonomic analysis, materials selection, computer and screen dimensions, safety, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a2-ii",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q2(ii)",
+  "questionText": "In each case explain why it is necessary to carry out this research.",
+  "stem": "A client requires a computer workstation to be designed.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(4+2 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Explanation linked to the aspects identified in (i).",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To ensure ease of use/comfort for user, materials that have appropriate properties, Computer and screen dimensions need to be established to allow proportionate shape of finished product, Safe to use/stable, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a3",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q3",
+  "questionText": "On the 12th March 2014, the 25th anniversary of the World Wide Web was celebrated. The worldwide web has revolutionised the way we work, travel and communicate. Explain the meaning of the following terms: URL .html",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "URL Uniform Resource Locator. This acts as a reference for a resource on the internet and consists of a protocol identifier and resource name.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": ".html HyperText Markup Language. The standard language to create webpages.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-hl-a4",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q4",
+  "questionText": "Materials handling is the process of moving material from one place to another during the manufacturing process. Outline one advantage and one disadvantage of using robotic arms for materials handling.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Work carried out consistently and efficiently, heavy loads can easily be lifted, less manual input, speed, etc.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Each movement needs to be programmed, limited work envelope, set up cost, loss of manual handling jobs for employees, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-hl-a5",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q5",
+  "questionText": "State the meaning of each of the safety signs shown below:",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+2+2 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Danger of slip",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Escape route",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "No access",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+2+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-hl-a6-i",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q6(i)",
+  "questionText": "Explain the meaning of the term flatpack.",
+  "stem": "A leading retailer of home products sells items in flatpack form.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ready-to-assemble furniture is a form of furniture that requires customer assembly.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a6-ii",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q6(ii)",
+  "questionText": "Outline two advantages of flatpack products for a furniture retailer.",
+  "stem": "A leading retailer of home products sells items in flatpack form.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reduces storage space required for bulky furniture items, less likely to be damaged, reduces cost of furniture items, makes transport easier, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(2+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a7-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q7(i)",
+  "questionText": "What is meant by a conductive material?",
+  "stem": "Electronic circuits require the flow of electrical current for their operation.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A metal that allows current/heat to flow.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a7-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q7(ii)",
+  "questionText": "Name a material that can exhibit both insulating and conducting properties.",
+  "stem": "Electronic circuits require the flow of electrical current for their operation.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Semiconductors such as silicon, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a8-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q8(i)",
+  "questionText": "A study lamp is connected to a 12 volt power supply and is drawing a current of 3 amps. Calculate the power of the lamp.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Power = Current × Voltage = 3 × 12 = 36 watts",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a8-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q8(ii)",
+  "questionText": "An electrical heating element having a resistance of 24Ω is connected to a 240V supply for a period of 12 hours. Calculate the cost of the energy used if electrical energy costs 25 cents per kWh.",
+  "stem": "",
+  "figureKey": "technology-2015-HL-scheme-secA-q8-ii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An electrical heating element having a resistance of 24Ω is connected to a 240V supply for a period of 12 hours. Calculate the cost of the energy used if electrical energy costs 25 cents per kWh.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a9",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q9",
+  "questionText": "Shown is the internal layout of a gearbox. The number of teeth on each of the four gearwheels is also shown. If the input shaft speed is 800 rpm calculate the output shaft speed.",
+  "stem": "",
+  "figureKey": "technology-2015-HL-scheme-secA-q9",
+  "questionFigureKey": "technology-2015-HL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Shown is the internal layout of a gearbox. The number of teeth on each of the four gearwheels is also shown. If the input shaft speed is 800 rpm calculate the output shaft speed.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-hl-a10-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q10(i)",
+  "questionText": "Why might you place your phone in ultraviolet light?",
+  "stem": "PhoneSoap® is a device that bathes a mobile phone in ultraviolet rays. It was developed by Dan Barnes and Wesley LaPorte of Brigham Young University, Utah, USA.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ultra violet light will kill micro-organisms.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "It is commonly used as a sterilisation and disinfectant technique, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a10-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q10(ii)",
+  "questionText": "Suggest one other appliance that uses ultraviolet light.",
+  "stem": "PhoneSoap® is a device that bathes a mobile phone in ultraviolet rays. It was developed by Dan Barnes and Wesley LaPorte of Brigham Young University, Utah, USA.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Water decontamination, forensic analysis, air purification, medical treatment of skin conditions, sunbeds, disco lighting, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a11-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q11(i)",
+  "questionText": "Explain the terms: CNC CAM",
+  "stem": "A CNC router is an example of one element of a CAD/CAM system.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(4+2 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "CNC Computer Numerical Control",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "CAM Computer Aided Machining/Manufacturing",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a11-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q11(ii)",
+  "questionText": "Describe two advantages of using CNC machines in a manufacturing workshop.",
+  "stem": "A CNC router is an example of one element of a CAD/CAM system.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(4+2 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Speed of production particularly on large batches,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Accuracy of finished product,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "High quality finish, safety, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a12-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q12(i)",
+  "questionText": "Describe two reasons for changing the drill speed.",
+  "stem": "Shown is a pulley system on a pillar drill. This mechanism is used to change the speed of the drill.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(4+2 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Larger drill sizes will need to run at a lower speed for effective cutting and safety.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Different materials need speeds to cut efficiently, plastics will drill better at higher speeds than mild steel.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Excessive heat build-up will be avoided with the correct selection of drill speed.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The machine will be subjected to less vibration, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a12-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q12(ii)",
+  "questionText": "Outline two safety features integrated into a pillar drill.",
+  "stem": "Shown is a pulley system on a pillar drill. This mechanism is used to change the speed of the drill.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+2 marks)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Guarding on motor and gear or pulley mechanisms, quick braking of rotating chuck, chuck guarding with interlock guards on some machines, machine vices, emergency switch, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-a13",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q13",
+  "questionText": "Make well-proportioned freehand sketches of two principal orthographic views of the stepper motor shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secA-q13-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any two orthographic views (elevation, plan, either end view)",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-hl-a14",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q14",
+  "questionText": "Draw a work breakdown structure to show the steps required to populate a PCB board in a Technology Room having due regard to health and safety requirements.",
+  "stem": "",
+  "figureKey": "technology-2015-HL-scheme-secA-q14",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a work breakdown structure to show the steps required to populate a PCB board in a Technology Room having due regard to health and safety requirements.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-hl-a15",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 HL Section A Q15",
+  "questionText": "The graphic shows a vintage diving helmet made from metal and glass. Use two graphic techniques to enhance the representation of the helmet.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secA-q15-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3 marks)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Two distinct graphic techniques required",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-hl-b2a-i",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q2(a)(i)",
+  "questionText": "Outline two potential benefits of a self-driving car.",
+  "stem": "After many years of testing their computer-guided cars, Google has presented its self-driving car project.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks, 4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reduced human error, fewer accidents, driver free to perform another task, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b2a-ii",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q2(a)(ii)",
+  "questionText": "Suggest two reasons why it is it likely to take a number of years before self-driving cars become widely accepted.",
+  "stem": "After many years of testing their computer-guided cars, Google has presented its self-driving car project.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks, 4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Revolutionary technology needs a period of gaining acceptance, need for comprehensive testing, cost, full GPS mapping required, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b2b-i",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q2(b)(i)",
+  "questionText": "The Parksight 2.0® system is used to locate vacant parking spaces in congested cities and to relay this information to drivers. Suggest two technological systems that might contribute to this service.",
+  "stem": "The Internet of Things (IoT) is already a key concept in the automation of systems such as self-driving cars. These systems rely on electronic equipment and GPS to guide them safely without colliding with other road users or objects.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Global positioning systems, computer data analysis tools, real-time information transmission, cloud storage, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+2+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b2b-ii",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q2(b)(ii)",
+  "questionText": "Describe the function of the bumper radar system on a self-driving car.",
+  "stem": "The Internet of Things (IoT) is already a key concept in the automation of systems such as self-driving cars. These systems rely on electronic equipment and GPS to guide them safely without colliding with other road users or objects.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The cars use a mixture of 3D laser-mapping, GPS and radar to analyse road and parking conditions in order to avoid obstacles and hazards, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+2+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b2b-iii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q2(b)(iii)",
+  "questionText": "Identify two other electronic sensors that could be used in self-driving cars.",
+  "stem": "The Internet of Things (IoT) is already a key concept in the automation of systems such as self-driving cars. These systems rely on electronic equipment and GPS to guide them safely without colliding with other road users or objects.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Motion sensors, laser sensors, temperature sensors, sonar, light sensor, moisture sensor, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+2+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b2c-i",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q2(c)(i)",
+  "questionText": "Explain any two of these quality dimensions.",
+  "stem": "Self-driving cars must be of the highest quality to ensure the safety of passengers and of other road users. Conformance, durability and aesthetics are three of the dimensions used to describe the quality of an item.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Conformance is the ability of performance and physical characteristics to meet established standards.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Durability: Durability measures the length of a product’s life.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Aesthetics allow the user to judge how the product looks, feels, smells or tastes, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b2c-ii",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q2(c)(ii)",
+  "questionText": "Name a problem-solving technique that could be used to improve the quality of a manufacturing process.",
+  "stem": "Self-driving cars must be of the highest quality to ensure the safety of passengers and of other road users. Conformance, durability and aesthetics are three of the dimensions used to describe the quality of an item.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cause and effect diagrams, scatter diagrams, PDSA cycle, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b2d-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q2(d)(i)",
+  "questionText": "Describe, with annotated sketches, a mechanism used to steer the wheels of a motor vehicle.",
+  "stem": "The steering system in a self-driving car will require a means of moving the two front wheels at the same time and in the same direction.",
+  "figureKey": "technology-2015-HL-scheme-secB-q2d-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "E.g. A rack and pinion would allow the wheels to move via tie rods.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Any valid mechanism suggested.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b2d-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q2(d)(ii)",
+  "questionText": "The components of the steering mechanism are in constant movement while a car is driving. Suggest two methods of minimising the wear on such steering components.",
+  "stem": "The steering system in a self-driving car will require a means of moving the two front wheels at the same time and in the same direction.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lubrication between moving parts, use of nylon or brass bushings, bearings, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b3a-i",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q3(a)(i)",
+  "questionText": "Outline two technological advances which can contribute to the successful staging of large sporting events.",
+  "stem": "The Rugby World Cup 2015 will be held in England. The third largest event in world sport will reach a thrilling conclusion at Twickenham when the best teams compete for the Webb Ellis trophy.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks, 4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "On-line streaming of events, modern transport infrastructure, barcode scanners, video surveillance, electronic performance analysis, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b3a-ii",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q3(a)(ii)",
+  "questionText": "Outline two reasons why companies become major sponsors of sporting events like the Rugby World Cup.",
+  "stem": "The Rugby World Cup 2015 will be held in England. The third largest event in world sport will reach a thrilling conclusion at Twickenham when the best teams compete for the Webb Ellis trophy.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 marks, 4+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Association with excellence, positive human endeavour, global brand recognition, to boost sales, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 marks, 4+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b3b-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q3(b)(i)",
+  "questionText": "State the mechanical advantage of the pulley system shown.",
+  "stem": "Professional rugby players increase their body strength by a combination of field and gym work. The pulley system shown is used to lift a 20 kg weight on an exercise machine.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+3+3)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mechanical Advantage = 2:1",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+3+3)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b3b-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q3(b)(ii)",
+  "questionText": "Calculate the force required to lift the 20 kg load.",
+  "stem": "Professional rugby players increase their body strength by a combination of field and gym work. The pulley system shown is used to lift a 20 kg weight on an exercise machine.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+3+3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "20kg x 9.81m/s (G) = 196 N/ 2 = 98.1N (100N taking gravity =10m/s)",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+3+3)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b3b-iii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q3(b)(iii)",
+  "questionText": "If the weight is lifted 150 mm, calculate the distance the rope will have to be pulled.",
+  "stem": "Professional rugby players increase their body strength by a combination of field and gym work. The pulley system shown is used to lift a 20 kg weight on an exercise machine.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks, 4+3+3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "150mm x 2 (M.A.) = 300mm",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks, 4+3+3)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b3c-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q3(c)(i)",
+  "questionText": "Using annotated sketches, suggest a means of adjusting the tilt of the wheel and a means of locking it in the required position.",
+  "stem": "A ball launcher can be used during rugby training sessions to improve ball handling. It consists of two wheels rotating in opposite directions. One of the wheels can be tilted to vary the launch angle of the ball.",
+  "figureKey": "technology-2015-HL-scheme-secB-q3c-i",
+  "questionFigureKey": "technology-2015-HL-paper-secB-q3c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 marks, 4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The tilting of either or both wheels will alter the flight of the ball",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Worm and worm wheel could be used to tilt/lock the launcher.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Alternative locking methods- Wing Nut/Quick release clamp.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b3c-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q3(c)(ii)",
+  "questionText": "Describe how the two wheels could be made to rotate in opposite directions.",
+  "stem": "A ball launcher can be used during rugby training sessions to improve ball handling. It consists of two wheels rotating in opposite directions. One of the wheels can be tilted to vary the launch angle of the ball.",
+  "figureKey": "technology-2015-HL-scheme-secB-q3c-ii",
+  "questionFigureKey": "technology-2015-HL-paper-secB-q3c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Meshing gears will run in opposite directions, pulley system with crossed belt, two motors wired to operate in opposite directions to each other, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b3d-i",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q3(d)(i)",
+  "questionText": "Outline two ways in which computer technology could be used to improve player performance.",
+  "stem": "Computers have brought about many advances in sport and sports science.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Analysis of training data will identify weaknesses, computerised training machines will record data for optimum performance, wearable technology, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-b3d-ii",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 HL Section B Q3(d)(ii)",
+  "questionText": "TMO (Television Match Official) technology is used to assist in deciding if a score should be allowed or if a foul has been committed. It uses multiple cameras to provide video evidence. Describe two factors which influence the quality of recorded video images.",
+  "stem": "Computers have brought about many advances in sport and sports science.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 marks, 4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Recording device resolution, number and positioning of recording devices, adequate lighting, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c1a-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q1(a)(i)",
+  "questionText": "Identify two advantages of this increased use of automation in our homes.",
+  "stem": "Automation of the domestic environment has increased dramatically over the past decade.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Security systems are more complex and reliable, energy can be conserved with controlled switching, improved quality of life, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c1a-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q1(a)(ii)",
+  "questionText": "Suggest two sensor devices that provide information for domestic automation.",
+  "stem": "Automation of the domestic environment has increased dramatically over the past decade.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Motion sensor, LDR or light probe, thermistor or thermostat, moisture detector, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c1b-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q1(b)(i)",
+  "questionText": "Complete the flowchart of the simulation sequence.",
+  "stem": "A test model of a washing machine is shown. The manufacturer has decided to simulate the washing sequence using a programmable PIC. The following sequence is used: • the user presses the On/Off button to start the wash cycle; • the system checks that the door is shut; • if shut, the door locks; • the indicator LED goes ON; • the motor turns the drum for 30 seconds; • the indicator LED goes OFF; • the door unlocks; • the system waits for the next push of the On/Off button.",
+  "figureKey": "technology-2015-HL-scheme-secC-q1b-i",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q1b-i-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks,10+4+2)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Complete the flowchart of the simulation sequence.",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,10+4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c1b-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q1(b)(ii)",
+  "questionText": "Select a suitable type of motor for the rotating drum. Justify your choice.",
+  "stem": "A test model of a washing machine is shown. The manufacturer has decided to simulate the washing sequence using a programmable PIC. The following sequence is used: • the user presses the On/Off button to start the wash cycle; • the system checks that the door is shut; • if shut, the door locks; • the indicator LED goes ON; • the motor turns the drum for 30 seconds; • the indicator LED goes OFF; • the door unlocks; • the system waits for the next push of the On/Off button.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks,10+4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "DC motor– good torque, speed control, cost, etc.,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Stepper motor- it can be programmed to stop and start accurately, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,10+4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c1b-iii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q1(b)(iii)",
+  "questionText": "Suggest a suitable electromechanical method of operating the door lock.",
+  "stem": "A test model of a washing machine is shown. The manufacturer has decided to simulate the washing sequence using a programmable PIC. The following sequence is used: • the user presses the On/Off button to start the wash cycle; • the system checks that the door is shut; • if shut, the door locks; • the indicator LED goes ON; • the motor turns the drum for 30 seconds; • the indicator LED goes OFF; • the door unlocks; • the system waits for the next push of the On/Off button.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks,10+4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An electro-magnetic locking system, solenoid, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,10+4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c1c-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q1(c)(i)",
+  "questionText": "Suggest two benefits of robotic surgery.",
+  "stem": "The da Vinci SI robot has four robotic arms and seven degrees of freedom. It gives surgeons the ability to perform the most complex and delicate procedures. Each arm is controlled using servo motors with encoders.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Complex procedures can be carried out with accuracy, surgery cuts can be reduced in size, faster recovery, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c1c-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q1(c)(ii)",
+  "questionText": "Explain the terms degree of freedom and encoder.",
+  "stem": "The da Vinci SI robot has four robotic arms and seven degrees of freedom. It gives surgeons the ability to perform the most complex and delicate procedures. Each arm is controlled using servo motors with encoders.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Degree of freedom: the number of rotational joints in the robot.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Encoder: sensor attached to a rotating object to determine speed of movement and position, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c1d-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q1(d)(i)",
+  "questionText": "Name the circuit components that allow the time delay to operate.",
+  "stem": "The pneumatic circuit shown incorporates a time delay function.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reservoir and flow control valve.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c1d-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q1(d)(ii)",
+  "questionText": "Calculate the output force (F) if the cylinder has a radius of 20 mm and a pressure of 0.4 N/mm2. Note: Force = pressure × area",
+  "stem": "The pneumatic circuit shown incorporates a time delay function.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q1d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Force = Pressure × Area = 0.4 × (20² × 3.14 ) = 502.4N",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c2a-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q2(a)(i)",
+  "questionText": "State two advantages of using AMR technology in meter reading.",
+  "stem": "‘Irish Water’ has begun the controversial process of installing water meters countrywide. These meters use AMR technology (Automatic Meter Reading) and transmit information using Radio Frequency (RF) waves.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks,6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wireless reading of meters, accurate data collection, cost efficient, quicker, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks,6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c2a-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q2(a)(ii)",
+  "questionText": "Identify one other common use of radio wave technologies.",
+  "stem": "‘Irish Water’ has begun the controversial process of installing water meters countrywide. These meters use AMR technology (Automatic Meter Reading) and transmit information using Radio Frequency (RF) waves.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks,6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Remote control, radar, broadcasting sound, satellite navigation, WiFi, Bluetooth, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks,6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c2b-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q2(b)(i)",
+  "questionText": "Complete the circuit diagram in a monostable state. Include a buzzer as an output device.",
+  "stem": "An incomplete circuit diagram for a shower timer-unit is shown. The unit is to give an audible warning when a preset time has elapsed. This item is used to help consumers save water and energy.",
+  "figureKey": "technology-2015-HL-scheme-secC-q2b-i",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks,6+6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Complete the circuit diagram in a monostable state. Include a buzzer as an output device.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,6+6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c2b-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q2(b)(ii)",
+  "questionText": "Describe the operation of this circuit.",
+  "stem": "An incomplete circuit diagram for a shower timer-unit is shown. The unit is to give an audible warning when a preset time has elapsed. This item is used to help consumers save water and energy.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks,6+6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "When a voltage is applied to pin 2 by trigger, the 555 timer switches from its stable (low) state to its unstable (high) state. This state exists for a period of time controlled by the values of R and C.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "At the end of this period output 3 activates the transistor which in turns activates the buzzer, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,6+6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c2b-iii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q2(b)(iii)",
+  "questionText": "Outline how the circuit/components could be modified to increase the preset time.",
+  "stem": "An incomplete circuit diagram for a shower timer-unit is shown. The unit is to give an audible warning when a preset time has elapsed. This item is used to help consumers save water and energy.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks,6+6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Increase the values of R or C or both.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,6+6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c2c-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q2(c)(i)",
+  "questionText": "State the energy conversions that take place in a loudspeaker.",
+  "stem": "Loudspeakers are used in many multimedia devices.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Electrical to mechanical energy.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Mechanical to sound energy.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c2c-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q2(c)(ii)",
+  "questionText": "Describe, using notes and annotated sketches, the operation of a loudspeaker or a microphone.",
+  "stem": "Loudspeakers are used in many multimedia devices.",
+  "figureKey": "technology-2015-HL-scheme-secC-q2c-ii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "At the front of a loudspeaker, there is a fabric, plastic, paper, or lightweight metal cone (diaphragm-4 ). The outer part of the cone is fastened to the outer part of the loudspeaker's circular metal rim.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The inner part is fixed to an iron coil (voice coil-2) that sits just in front of a permanent magnet (1).",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "When you connect the loudspeaker to a stereo, electrical signals feed through the speaker cables into the coil. This turns the coil into a temporary magnet or electromagnet. As the electricity flows back and forth in the cables, the electromagnet either attracts or repels the permanent magnet. This moves the coil back and forward, pulling and pushing the loudspeaker cone. Sound is created.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The process is reversed for a microphone.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c2d-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q2(d)(i)",
+  "questionText": "Draw a Logic Gate circuit to activate the camera for the above conditions.",
+  "stem": "A bird feeding station includes a digital camera. The camera will be activated when a bird lands on the feeding station. The camera will activate during daylight hours only.",
+  "figureKey": "technology-2015-HL-scheme-secC-q2d-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a Logic Gate circuit to activate the camera for the above conditions.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c2d-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q2(d)(ii)",
+  "questionText": "Using notes and sketches, suggest an electro-mechanical means of detecting when a bird has landed on the table.",
+  "stem": "A bird feeding station includes a digital camera. The camera will be activated when a bird lands on the feeding station. The camera will activate during daylight hours only.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Eg. A microswitch attached to the table, LDR circuit to trigger mechanical output – appropriate sketch required.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c3a-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q3(a)(i)",
+  "questionText": "Describe briefly what is meant by a broadband connection.",
+  "stem": "The use of home broadband connections has made a significant impact on how people access entertainment sources including music, books and film.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks,6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A broadband connection allows high-speed internet access for end users, wide bandwidth data transmission with ability to transmit multiple signals and traffic types simultaneously, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks,6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c3a-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q3(a)(ii)",
+  "questionText": "Outline two advantages of using e-book readers rather than printed paper books.",
+  "stem": "The use of home broadband connections has made a significant impact on how people access entertainment sources including music, books and film.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks,6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Storage capacity, portability, edit text size, environmentally friendly, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks,6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c3b-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q3(b)(i)",
+  "questionText": "What is a computer motherboard?",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks,6+4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It combines and connects many of the crucial components of a computer, including the central processing unit (CPU), memory and connectors for input and output devices, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,6+4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c3b-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q3(b)(ii)",
+  "questionText": "Outline the function of the power supply in a computer.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks,6+4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Converts AC to DC, transforms 240V to lower voltages for disk drives and circuits, controls standby mode, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,6+4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c3b-iii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q3(b)(iii)",
+  "questionText": "Describe, with examples, each of the following elements of a computer motherboard: • chipset • expansion card slot • BIOS.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks,6+4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Chipset: This incorporates two sections. The North bridge allows communication between CPU, main memory and graphics card. It works at high speed to process a large amount of data every second. This processor also connects the South bridge with CPU. The South bridge facilitates the communication between the various components such as storage devices, USB ports, expansion slots, CMOS RAM and clock.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Expansion card slot: The expansion card slot allows for further functionality to be added to a computer. E.g, sound cards, memory cards and graphic cards etc. can be added using this slot.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "BIOS: (Basic input/output system)- the programme a computer uses to boot up once it is turned on. It also manages data flow between the operating system and attached devices such as the hard disk, video adapter, keyboard, mouse and printer, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,6+4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c3c-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q3(c)(i)",
+  "questionText": "Explain the following network-related terms: • network node • switch • router.",
+  "stem": "A computer network is a telecommunications network that allows computers to exchange data.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Network node: This is a connection point, either a redistribution point or an end point for data transmissions.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Switch: A computer networking device that connects devices together on a computer network by using packet switching to receive, process and forward data to the destination device.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Router: A networking device that forwards data packets and determines the best path for information to travel between computer networks.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c3c-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q3(c)(ii)",
+  "questionText": "Explain how data stored on a computer system or network can be backed up to prevent possible loss of valuable files.",
+  "stem": "A computer network is a telecommunications network that allows computers to exchange data.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Data is copied/archived using external hard drives, magnetic tapes, servers, CDs and cloud storage, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c3d-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q3(d)(i)",
+  "questionText": "Distinguish between a computer firewall, pop-up blocker and phishing filter as means of contributing to on-line security.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Computer firewall: software program or piece of hardware that helps screen out hackers, viruses and worms that try to reach your computer over the Internet.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Pop up blocker: software that disables advertising windows from appearing when using a computer",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Phishing filter: a tool to prevent the gathering of information such as passwords, usernames and banking details, often sought through false e-mailing.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c3d-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q3(d)(ii)",
+  "questionText": "State two advantages of using fibre optic cables instead of traditional copper cables for data communications.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Secure data transmission, immune to crosstalk and RF noise, signals travel further, speed, increase data transmission, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c4a-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q4(a)(i)",
+  "questionText": "Explain the terms perceptual mapping and reverse engineering.",
+  "stem": "A company plans to manufacture a portable computer device suitable for use in school as part of an initiative to reduce schoolbag weight and to increase IT use in education. The company has used techniques such as perceptual mapping and reverse engineering in their product planning and development.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks,6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Perceptual mapping: Marketing research technique in which consumer's views about similar products are traced or plotted (mapped) on a chart.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reverse engineering: Competitor products are dismantled and inspected with the best features incorporated into a new design, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks,6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c4a-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q4(a)(ii)",
+  "questionText": "The device is used for an average of 5 hours every day. During testing, the battery lasted for 5250 hours without failure. Recommend a suitable guarantee period for the battery. Justify your recommendation.",
+  "stem": "A company plans to manufacture a portable computer device suitable for use in school as part of an initiative to reduce schoolbag weight and to increase IT use in education. The company has used techniques such as perceptual mapping and reverse engineering in their product planning and development.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks,6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "5250/5 hrs per day = 1050 days.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1050/365 = 2.87 years.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A manufacturing guarantee period two and a half years could be recommended.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The guarantee needs to lapse before this time to minimise returns and still offer an attractive length of time.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks,6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c4b-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q4(b)(i)",
+  "questionText": "Calculate the values for the process mean and the range from the table above.",
+  "stem": "The table below shows the temperature (in degrees Celsius) of a heat treatment furnace at different times of the day.",
+  "figureKey": "technology-2015-HL-scheme-secC-q4b-i",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks,6+6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculate the values for the process mean and the range from the table above.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,6+6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c4b-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q4(b)(ii)",
+  "questionText": "Determine the upper control limit (UCL) and the lower control limit (LCL) for the process above and plot them on a suitable control chart (assume the standard deviation is 25°C).",
+  "stem": "The table below shows the temperature (in degrees Celsius) of a heat treatment furnace at different times of the day.",
+  "figureKey": "technology-2015-HL-scheme-secC-q4b-ii",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks,6+6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "UCL = mean + 3σ = 563 + 75 = 638",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "LCL = mean - 3σ = 563 - 75 = 488",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,6+6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c4b-iii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q4(b)(iii)",
+  "questionText": "Evaluate the chart to determine if the process is in a state of statistical control. Justify your answer.",
+  "stem": "The table below shows the temperature (in degrees Celsius) of a heat treatment furnace at different times of the day.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks,6+6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The process is in statistical control as the daily mean totals are between the UCL and LCL.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,6+6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c4c-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q4(c)(i)",
+  "questionText": "Draw a graph to show the costs of both the manual and automated systems for Full Steam Ahead.",
+  "stem": "‘Full Steam Ahead’ is a new business which offers an ironing service. Bags of unironed clothing are collected and are returned on hangers to customers. The cost to the business of manually ironing a bag of clothing is €20. Full Steam Ahead are considering automating the ironing process at a cost of €600 for the initial set-up cost and €5 per bag of clothing thereafter.",
+  "figureKey": "technology-2015-HL-scheme-secC-q4c-i",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw a graph to show the costs of both the manual and automated systems for Full Steam Ahead.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c4c-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q4(c)(ii)",
+  "questionText": "Analyse the graph to determine the most profitable method for both 30 bags and for 60 bags of clothing to be serviced by Full Steam Ahead. Justify your answer.",
+  "stem": "‘Full Steam Ahead’ is a new business which offers an ironing service. Bags of unironed clothing are collected and are returned on hangers to customers. The cost to the business of manually ironing a bag of clothing is €20. Full Steam Ahead are considering automating the ironing process at a cost of €600 for the initial set-up cost and €5 per bag of clothing thereafter.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "30 bags will be most cost effective using the manual system.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "60 bags will cost €1200 for the manual system but the automated system will cost €900.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Break Even Quantity (BEQ) = 40 bags",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c4d-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q4(d)(i)",
+  "questionText": "Explain the principles of both Kanban and JIT systems.",
+  "stem": "Kanban is a scheduling system for lean and Just-In-Time (JIT) production. Kanban was developed by Toyota as a system to improve and maintain a high level of production.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kanban: card system as a signal to replenish supply, it moves from one station to another, kanban cards contain information such as parts description, material(s), number, path from previous work station to next station, e.g. assembly of motor engine parts.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Just in Time: Suppliers are coordinated with the manufacturing company, products are delivered in line with market demand. This reduces the amount of stock stored with less materials, parts, tools and space used. Advantages include quick response to demand, less investment in storage, quick turnaround of products, increased workforce flexibility, reduces waste, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c4d-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q4(d)(ii)",
+  "questionText": "Electronic Kanban systems are increasing in popularity. Outline two advantages of e-Kanbans.",
+  "stem": "Kanban is a scheduling system for lean and Just-In-Time (JIT) production. Kanban was developed by Toyota as a system to improve and maintain a high level of production.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Eliminates the problem of lost cards, time used in card handling is minimal, provides an analysis of supplier efficiency, fewer mistakes and improved reliability in supplies, if a change occurs in the system/quanities/materials/etc. there is no need to reprint cards.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c5a-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q5(a)(i)",
+  "questionText": "Outline, with examples, two advantages of using composite materials.",
+  "stem": "Luas, the Dublin light railway system carries around 30 million passengers each year. A French company, Alstom, supply the tram carriages used by Luas. A range of materials including composites and glass are used in their production.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 marks,6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A composite material is a combination of two or more chemically distinct materials with improved properties.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Plastic laminates provide a waterproof layer on chipboard for kitchen counters, GRP is lightweight and strong, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks,6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c5a-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q5(a)(ii)",
+  "questionText": "Suggest two reasons for the extensive use of glass in the manufacture of Luas trams.",
+  "stem": "Luas, the Dublin light railway system carries around 30 million passengers each year. A French company, Alstom, supply the tram carriages used by Luas. A range of materials including composites and glass are used in their production.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 marks,6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Visibility for passengers, can be formed into curved shapes, security of passengers, light, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 marks,6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c5b-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q5(b)(i)",
+  "questionText": "Outline two reasons for cutting circular holes in the beams which support the roof sections.",
+  "stem": "Luas tram-stop shelters are manufactured in a variety of modular designs such as the one shown below.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16 marks,6+6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reduce the weight and material required without comprising the structural strength of the beam, interesting visual impact, air circulation, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,6+6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c5b-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q5(b)(ii)",
+  "questionText": "Explain, using notes and annotated sketches, a method of assembling the metal sections of the tram shelter.",
+  "stem": "Luas tram-stop shelters are manufactured in a variety of modular designs such as the one shown below.",
+  "figureKey": "technology-2015-HL-scheme-secC-q5b-ii",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks,6+6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The tram shelters can be made from stainless steel parts which have been welded together. Nut/bolts or screw fixtures could also be used in the assembly of sections, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Detailed annotated sketch required.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,6+6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c5b-iii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q5(b)(iii)",
+  "questionText": "Describe, using notes and annotated sketches, a method of securely fixing the glass panels to the shelter frame.",
+  "stem": "Luas tram-stop shelters are manufactured in a variety of modular designs such as the one shown below.",
+  "figureKey": "technology-2015-HL-scheme-secC-q5b-iii",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(16 marks,6+6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Eg. Bolts with rubber/plastic washers can be used to fix the glass in place.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The glass panel needs to be pre-drilled.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The glass is fitted in-between the washers.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(16 marks,6+6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c5c-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q5(c)(i)",
+  "questionText": "Identify two causes of environmental degradation of the shelter.",
+  "stem": "Careful consideration of potential environmental degradation of the tram shelter is critical to ensure a successful and long-lasting product.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Acid rain caused by traffic fumes, degradation by sun and weather conditions, dissimilar materials reacting with each other, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c5c-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q5(c)(ii)",
+  "questionText": "Outline the role of product design in ensuring the long service life of a tram shelter.",
+  "stem": "Careful consideration of potential environmental degradation of the tram shelter is critical to ensure a successful and long-lasting product.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Choice of suitable materials is critical, selection of joining techniques will prolong shelter life, surface finish, shape and design of shelter, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c5d-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q5(d)(i)",
+  "questionText": "Compare any two common types of bridge in terms of: • materials used • span.",
+  "stem": "A number of existing bridges were used and some others were constructed during the development phase of the Luas tramlines. The Ann Devlin Bridge is shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q5d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Suspension bridge: Steel cables sit on tall concrete towers and are secured on both sides, will be visually tall and are used for long spans, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Arched Bridge: Stone construction, small spans, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Beam Bridges: Reinforced concrete, medium spans, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-hl-c5d-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "higher",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 HL Section C Q5(d)(ii)",
+  "questionText": "Explain the term reinforced concrete.",
+  "stem": "A number of existing bridges were used and some others were constructed during the development phase of the Luas tramlines. The Ann Devlin Bridge is shown.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-HL-paper-secC-q5d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14 marks,8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reinforced concrete is a composite material in which concrete's relatively low tensile strength and ductility are counteracted by the inclusion of steel reinforcement bars having higher tensile strength and ductility.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(14 marks,8+6)' for this part."
+ },
+ {
   "id": "tech-2016-hl-a1-i",
   "topicId": "tech-core-ict",
   "conceptId": "core-ict",

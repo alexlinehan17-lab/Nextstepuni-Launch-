@@ -1588,6 +1588,60 @@ REVIEWED.update({
 })
 
 # Looked at and turned down, with what is wrong with each.
+# 2015 Higher, each crop rendered and looked at.
+REVIEWED.update({
+    'technology-2015-HL-paper-secA-q5-art':
+        'Three safety signs labelled (i), (ii) and (iii): a falling figure over '
+        'wavy lines in a yellow triangle; a running figure, an arrow and a '
+        'doorway in white on green; a hand and a figure under a red '
+        'prohibition disc.',
+    'technology-2015-HL-paper-secA-q9-art':
+        'The internal layout of a gearbox: an Input shaft carrying gear A (80 T), '
+        'meshing with gear B (40 T) on a lay shaft that also carries gear C '
+        '(90 T), which meshes with gear D (50 T) on the Output shaft.',
+    'technology-2015-HL-paper-secA-q12-art':
+        'A photograph of the open belt guard on top of a pillar drill, showing two '
+        'stepped pulleys joined by a belt.',
+    'technology-2015-HL-paper-secA-q13-art':
+        'A photograph of a stepper motor: a square-bodied motor with a round '
+        'shaft at the front and a connector on top.',
+    'technology-2015-HL-paper-secA-q15-art':
+        'A line drawing of a vintage diving helmet with a round front window, '
+        'two side windows, a top window and a collar with bolts.',
+    'technology-2015-HL-paper-secB-q3b-art':
+        'A pulley system: two pulleys, one above the other, with a rope over '
+        'them, an arrow on the free end of the rope, and a 20kg weight hanging '
+        'from the lower pulley.',
+    'technology-2015-HL-paper-secB-q3c-art':
+        'Photographs of a ball launcher: two wheels on a stand, then a strip of '
+        'four frames showing a rugby ball fed between the wheels and launched.',
+    'technology-2015-HL-paper-secC-q1b-art':
+        'A photograph of a wooden test model of a washing machine with its round '
+        'door open.',
+    'technology-2015-HL-paper-secC-q1b-i-art':
+        'The start of a flowchart as the paper prints it: a Start box above a '
+        'decision diamond labelled On/Off, with an arrow leaving its foot.',
+    'technology-2015-HL-paper-secC-q1d-art':
+        'A pneumatic circuit: a push-button valve at each side, a valve labelled '
+        '5/2 valve between them, a small valve symbol and a tank labelled '
+        'Reservoir in the dotted pilot line, and a cylinder whose rod end is '
+        'marked F.',
+    'technology-2015-HL-paper-secC-q2b-art':
+        'An incomplete circuit diagram between +V and 0V rails: a 555 IC with '
+        'pins 4 and 8 to +V and pin 1 to 0V, a resistor R from +V to pins 7 and '
+        '6, a capacitor C from there to 0V, a capacitor from pin 5 to 0V, and '
+        'short open leads at pins 2 and 3.',
+    'technology-2015-HL-paper-secC-q4b-art':
+        'A table of furnace temperatures in degrees Celsius for Monday to Friday, '
+        'with columns Morning, Midday, Evening and Daily Mean.',
+    'technology-2015-HL-paper-secC-q5b-art':
+        'A photograph of a modular tram-stop shelter: metal beams with circular '
+        'holes supporting a glass roof, and glass side panels.',
+    'technology-2015-HL-paper-secC-q5d-art':
+        'A photograph of the Ann Devlin Bridge, a low road bridge over a canal '
+        'with a Luas tram crossing it.',
+})
+
 REJECTED = {
     'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
     'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',

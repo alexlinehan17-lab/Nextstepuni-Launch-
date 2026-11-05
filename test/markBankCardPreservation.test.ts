@@ -1334,7 +1334,7 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
     : name.startsWith('chemistry:') ? cards.filter(card => !chemistryAdded.has(card.id)).length
     : cards.length;
 const technologyAdditions = {
-  higher: [TECHNOLOGY_HIGHER, 340, '21bc9fb9493c971d8101427003dda21a7ef58ef7989aa236418760a1e48eeefe'],
+  higher: [TECHNOLOGY_HIGHER, 426, '586532cf46c422d543277fd221c5ec0754bc5e6bd0e21df2d310075bc37badda'],
   ordinary: [TECHNOLOGY_ORDINARY, 323, 'fc88c986a6424d142ed0820711f80a827adae7a040a3591b58c1d9d8dd14245a'],
 } as const;
 const peAdditions = {

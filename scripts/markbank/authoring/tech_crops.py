@@ -2548,6 +2548,145 @@ LABEL_ZONES.setdefault((2016, 'ol'), []).extend([
     (16, (55, 285, 435, 425)),     # 5(b)'s racks and their labels
 ])
 
+# 2015 Higher. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    # Q5's three safety signs with the (i), (ii), (iii) printed under them.
+    'technology-2015-HL-paper-secA-q5-art': ('014', 2, (70, 384, 525, 498)),
+    'technology-2015-HL-paper-secA-q9-art': ('014', 3, (42, 580, 298, 730)),
+    'technology-2015-HL-paper-secA-q12-art': ('014', 5, (332, 117, 560, 270)),
+    'technology-2015-HL-paper-secA-q13-art': ('014', 5, (46, 542, 180, 677)),
+    'technology-2015-HL-paper-secA-q15-art': ('014', 6, (200, 499, 395, 767)),
+    'technology-2015-HL-paper-secB-q3b-art': ('015', 2, (488, 203, 586, 379)),
+    'technology-2015-HL-paper-secB-q3c-art': ('015', 2, (60, 436, 568, 555)),
+    'technology-2015-HL-paper-secC-q1b-art': ('015', 3, (32, 293, 139, 393)),
+    # 1(b)(i) completes the flowchart whose start the paper prints.
+    'technology-2015-HL-paper-secC-q1b-i-art': ('015', 3, (486, 256, 566, 362)),
+    'technology-2015-HL-paper-secC-q1d-art': ('015', 3, (376, 668, 570, 790)),
+    'technology-2015-HL-paper-secC-q2b-art': ('015', 4, (388, 192, 560, 378)),
+    'technology-2015-HL-paper-secC-q4b-art': ('015', 6, (92, 470, 376, 586)),
+    'technology-2015-HL-paper-secC-q5b-art': ('015', 8, (406, 261, 581, 407)),
+    'technology-2015-HL-paper-secC-q5d-art': ('015', 8, (361, 617, 561, 751)),
+})
+
+# 2015 Higher. The scheme's own drawn answers and worked fractions.
+SOLUTIONS.update({
+    'technology-2015-HL-scheme-secA-q8-ii': (5, (220, 419, 532, 500),
+        "The marking scheme's own answer to 2015 HL Section A Q8(ii), as the "
+        "State Examinations Commission printed it: a boxed calculation headed "
+        "'Calculation:'. Current = Voltage over Resistance = 240 over 24 = "
+        "10Amps (written as stacked fractions). Power = Current x Voltage = "
+        "10 x 240 = 2.4kW. Energy cost = 2.4 x 12 x 0.25 = 7.20 euro."),
+    'technology-2015-HL-scheme-secA-q9': (5, (304, 605, 470, 668),
+        "The marking scheme's own answer to 2015 HL Section A Q9, as the State "
+        "Examinations Commission printed it: Output speed = 800 x 80 over 40 x "
+        "90 over 50 (written as stacked fractions), = 2880 rpm."),
+    'technology-2015-HL-scheme-secA-q14': (8, (80, 192, 520, 284),
+        "The marking scheme's own work breakdown structure for 2015 HL Section A "
+        "Q14, as the State Examinations Commission printed it: Identify "
+        "Components leads to Place components in PCB; Heat soldering iron leads "
+        "to Tin soldering iron; both lead to Solder components, which leads to "
+        "Finish PCB."),
+    'technology-2015-HL-scheme-secB-q2d-i': (11, (417, 658, 526, 719),
+        "The marking scheme's own picture for 2015 HL Section B 2(d)(i), as the "
+        "State Examinations Commission printed it: a cutaway of a rack and "
+        "pinion steering unit, lettered To Tire, Pinion Gear, To Steering Wheel "
+        "and Rack, with arrows showing the rack's movement."),
+    'technology-2015-HL-scheme-secB-q3c-i': (12, (138, 383, 396, 466),
+        "The marking scheme's own pictures for 2015 HL Section B 3(c)(i), as the "
+        "State Examinations Commission printed them: a photograph of the ball "
+        "launcher's two wheels with an arrow to the tilted wheel, and a drawing "
+        "of a worm and worm wheel with an arrow to the worm."),
+    'technology-2015-HL-scheme-secB-q3c-ii': (12, (91, 525, 214, 593),
+        "The marking scheme's own sketch for 2015 HL Section B 3(c)(ii), as the "
+        "State Examinations Commission printed it: two meshing gear wheels side "
+        "by side, a curved arrow on each showing them turning in opposite "
+        "directions."),
+    'technology-2015-HL-scheme-secC-q1b-i': (13, (395, 312, 548, 715),
+        "The marking scheme's own flowchart for 2015 HL Section C 1(b)(i), as "
+        "the State Examinations Commission printed it: Start; a decision On/Off? "
+        "looping back on N; on Y a decision Door shut? looping back on N; on Y "
+        "Door lock, LED on, Motor On, Wait 30, Motor Off, LED off, Door unlock, "
+        "then a line back to above On/Off?."),
+    'technology-2015-HL-scheme-secC-q2b-i': (15, (326, 165, 586, 328),
+        "The marking scheme's own completed circuit for 2015 HL Section C "
+        "2(b)(i), as the State Examinations Commission printed it: the 555 "
+        "monostable with R and C on pins 7 and 6, pin 2 held high by a resistor "
+        "and taken low by a push switch, pin 5 to a capacitor, and output pin 3 "
+        "through a resistor to the base of a transistor switching a buzzer."),
+    'technology-2015-HL-scheme-secC-q2c-ii': (15, (433, 366, 546, 519),
+        "The marking scheme's own picture for 2015 HL Section C 2(c)(ii), as the "
+        "State Examinations Commission printed it: a cutaway of a loudspeaker "
+        "with its parts numbered 1 to 4, the numbers the scheme's notes use."),
+    'technology-2015-HL-scheme-secC-q2d-i': (15, (170, 678, 392, 728),
+        "The marking scheme's own logic gate circuit for 2015 HL Section C "
+        "2(d)(i), as the State Examinations Commission printed it: an AND gate "
+        "with inputs Light sensor and Table switch and its output to Camera."),
+    'technology-2015-HL-scheme-secC-q4b-i': (17, (92, 378, 325, 450),
+        "The marking scheme's own answer to 2015 HL Section C 4(b)(i), as the "
+        "State Examinations Commission printed it: Process mean = "
+        "(537+509+607+565+596) over 5 = 563; Range = (30+38+22+60+10) over 5 = "
+        "32, each written as a stacked fraction."),
+    'technology-2015-HL-scheme-secC-q4b-ii': (17, (300, 492, 540, 680),
+        "The marking scheme's own control chart for 2015 HL Section C 4(b)(ii), "
+        "as the State Examinations Commission printed it: a vertical scale from "
+        "480 to 640, a UCL line near the top, a dashed Process Mean line, an LCL "
+        "line near the bottom, and the five daily means plotted as a line "
+        "between them."),
+    'technology-2015-HL-scheme-secC-q4c-i': (18, (150, 115, 535, 272),
+        "The marking scheme's own graph for 2015 HL Section C 4(c)(i), as the "
+        "State Examinations Commission printed it: cost against number of bags, "
+        "marked 30 bags and 60 bags; a Manual system line rising from zero and an "
+        "Automatic system line starting at 600 euro and rising more gently, the "
+        "two crossing between 30 and 60 bags."),
+    'technology-2015-HL-scheme-secC-q5b-ii': (19, (90, 302, 240, 347),
+        "The marking scheme's own photograph for 2015 HL Section C 5(b)(ii), as "
+        "the State Examinations Commission printed it: the shelter's metal "
+        "beams with circular holes, an arrow pointing to a joint."),
+    'technology-2015-HL-scheme-secC-q5b-iii': (19, (82, 410, 186, 477),
+        "The marking scheme's own photograph for 2015 HL Section C 5(b)(iii), "
+        "as the State Examinations Commission printed it: a round glass-panel "
+        "fixing, two discs clamped by a bolt with washers, an arrow pointing "
+        "between them."),
+})
+ASK_ONLY.update({
+    'technology-2015-HL-scheme-secA-q8-ii',
+    'technology-2015-HL-scheme-secA-q9',
+    'technology-2015-HL-scheme-secA-q14',
+    'technology-2015-HL-scheme-secC-q1b-i',
+    'technology-2015-HL-scheme-secC-q2b-i',
+    'technology-2015-HL-scheme-secC-q2d-i',
+    'technology-2015-HL-scheme-secC-q4b-i',
+    'technology-2015-HL-scheme-secC-q4c-i',
+})
+# 2(b)(i)'s circuit reaches left over the ends of (ii)'s answer lines.
+SOLUTION_NOT_ZONE.add('technology-2015-HL-scheme-secC-q2b-i')
+WHITEOUT.update({
+    'technology-2015-HL-scheme-secC-q2b-i': [(326, 230, 347, 264)],
+})
+LABEL_ZONES.setdefault((2015, 'hl'), []).extend([
+    (5, (40, 600, 300, 730)),      # Q9's gearbox reprinted, Input and Output
+    (15, (347, 165, 586, 328)),    # 2(b)'s circuit lettering, clear of (ii)
+])
+MD_LINE_FIX[(2015, 'hl')] = [
+    # Q5: the three signs' meanings printed on one line, one per sign.
+    (r'^(\(i\) Danger of slip) (\(ii\) Escape route) (\(iii\) No access)$', r'\1\n\2\n\3'),
+    # 3(c)(i): two notes set either side of the pictures, welded line by
+    # line; the right-hand note moves below the left-hand one.
+    (r'^(The tilting of either or) Worm and worm wheel could be$', r'\1'),
+    (r'^(both wheels will alter) used to tilt/lock the launcher\.$', r'\1'),
+    (r'^(the flight of the ball) Alternative locking methods-$',
+     r'\1\nWorm and worm wheel could be\nused to tilt/lock the launcher.'),
+    (r'^Alternative locking methods-$', ''),
+    (r'^(Wing Nut/Quick release clamp\.)$', r'Alternative locking methods- \1'),
+    # 3(b)(iii) and 3(c)(ii): one sentence broken before a capital, joined.
+    (r'^Chipset: This incorporates two sections\. The North bridge allows communication between$', ''),
+    (r'^(CPU, main memory and graphics card\. It works at high speed to process a large amount of)$',
+     r'Chipset: This incorporates two sections. The North bridge allows communication between \1'),
+    (r'^Data is copied/archived using external hard drives, magnetic tapes, servers,$', ''),
+    (r'^(CDs and cloud storage, etc\.)$',
+     r'Data is copied/archived using external hard drives, magnetic tapes, servers, \1'),
+]
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.

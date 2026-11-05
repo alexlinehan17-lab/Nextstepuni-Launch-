@@ -249,6 +249,29 @@ TOPIC_OVERRIDES = {
     'tech-2016-ol-b2c-i': 'tech-core-project',     # product recall (quality)
     'tech-2016-ol-b2c-ii': 'tech-core-project',
     'tech-2016-ol-b3b-ii': 'tech-core-structures', # mechanism to rotate the camera
+    # 2015 Higher.
+    'tech-2015-hl-a2-i': 'tech-core-design',       # researching a workstation design
+    'tech-2015-hl-a2-ii': 'tech-core-design',
+    'tech-2015-hl-a5': 'tech-core-materials',      # safety signs
+    'tech-2015-hl-a4': 'tech-core-materials',      # robotic materials handling
+    'tech-2015-hl-a11-i': 'tech-core-materials',   # CNC and CAM
+    'tech-2015-hl-a11-ii': 'tech-core-materials',
+    'tech-2015-hl-a14': 'tech-core-project',       # work breakdown structure
+    'tech-2015-hl-a12-ii': 'tech-core-materials',  # pillar drill safety features
+    'tech-2015-hl-b2a-i': 'tech-core-ict',         # self-driving cars
+    'tech-2015-hl-b2a-ii': 'tech-core-ict',
+    'tech-2015-hl-b2b-i': 'tech-core-ict',         # parking-space location systems
+    'tech-2015-hl-b2b-ii': 'tech-core-ict',        # bumper radar
+    'tech-2015-hl-b2c-i': 'tech-core-project',     # quality dimensions
+    'tech-2015-hl-b2c-ii': 'tech-core-project',    # problem-solving technique (quality)
+    'tech-2015-hl-b3a-i': 'tech-core-ict',         # technology staging sporting events
+    'tech-2015-hl-b3a-ii': 'tech-core-design',     # sponsorship (target market)
+    'tech-2015-hl-b3b-i': 'tech-core-structures',  # pulley system
+    'tech-2015-hl-b3b-ii': 'tech-core-structures',
+    'tech-2015-hl-b3b-iii': 'tech-core-structures',
+    'tech-2015-hl-b3c-i': 'tech-core-structures',  # tilting and locking mechanism
+    'tech-2015-hl-b3c-ii': 'tech-core-structures', # wheels turning in opposite directions
+    'tech-2015-hl-b3d-ii': 'tech-core-ict',        # video image quality
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]

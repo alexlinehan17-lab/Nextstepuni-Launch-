@@ -1,5 +1,110 @@
 [
  {
+  "file": "technology-2015-HL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Three safety signs labelled (i), (ii) and (iii): a falling figure over wavy lines in a yellow triangle; a running figure, an arrow and a doorway in white on green; a hand and a figure under a red prohibition disc.",
+  "questionRef": "2015 HL Section A Q5",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   70,
+   384,
+   525,
+   498
+  ]
+ },
+ {
+  "file": "technology-2015-HL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The internal layout of a gearbox: an Input shaft carrying gear A (80 T), meshing with gear B (40 T) on a lay shaft that also carries gear C (90 T), which meshes with gear D (50 T) on the Output shaft.",
+  "questionRef": "2015 HL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   42,
+   580,
+   298,
+   730
+  ]
+ },
+ {
+  "file": "technology-2015-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a stepper motor: a square-bodied motor with a round shaft at the front and a connector on top.",
+  "questionRef": "2015 HL Section A Q13",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   46,
+   542,
+   180,
+   677
+  ]
+ },
+ {
+  "file": "technology-2015-HL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A pulley system: two pulleys, one above the other, with a rope over them, an arrow on the free end of the rope, and a 20kg weight hanging from the lower pulley.",
+  "questionRef": "2015 HL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   488,
+   203,
+   586,
+   379
+  ]
+ },
+ {
+  "file": "technology-2015-HL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A pneumatic circuit: a push-button valve at each side, a valve labelled 5/2 valve between them, a small valve symbol and a tank labelled Reservoir in the dotted pilot line, and a cylinder whose rod end is marked F.",
+  "questionRef": "2015 HL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   376,
+   668,
+   570,
+   790
+  ]
+ },
+ {
+  "file": "technology-2015-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An incomplete circuit diagram between +V and 0V rails: a 555 IC with pins 4 and 8 to +V and pin 1 to 0V, a resistor R from +V to pins 7 and 6, a capacitor C from there to 0V, a capacitor from pin 5 to 0V, and short open leads at pins 2 and 3.",
+  "questionRef": "2015 HL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   388,
+   192,
+   560,
+   378
+  ]
+ },
+ {
+  "file": "technology-2015-HL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table of furnace temperatures in degrees Celsius for Monday to Friday, with columns Morning, Midday, Evening and Daily Mean.",
+  "questionRef": "2015 HL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   92,
+   470,
+   376,
+   586
+  ]
+ },
+ {
   "file": "technology-2016-HL-paper-secA-q9-art.png",
   "kind": "figure",
   "truncated": false,
@@ -6540,6 +6645,96 @@
   ]
  },
  {
+  "file": "technology-2015-HL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of the open belt guard on top of a pillar drill, showing two stepped pulleys joined by a belt.",
+  "questionRef": "2015 HL Section A Q12",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   332,
+   117,
+   560,
+   270
+  ]
+ },
+ {
+  "file": "technology-2015-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A line drawing of a vintage diving helmet with a round front window, two side windows, a top window and a collar with bolts.",
+  "questionRef": "2015 HL Section A Q15",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   200,
+   499,
+   395,
+   767
+  ]
+ },
+ {
+  "file": "technology-2015-HL-paper-secB-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a ball launcher: two wheels on a stand, then a strip of four frames showing a rugby ball fed between the wheels and launched.",
+  "questionRef": "2015 HL Section B Q3(c)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   60,
+   436,
+   568,
+   555
+  ]
+ },
+ {
+  "file": "technology-2015-HL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a wooden test model of a washing machine with its round door open.",
+  "questionRef": "2015 HL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   32,
+   293,
+   139,
+   393
+  ]
+ },
+ {
+  "file": "technology-2015-HL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a modular tram-stop shelter: metal beams with circular holes supporting a glass roof, and glass side panels.",
+  "questionRef": "2015 HL Section C Q5(b)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   406,
+   261,
+   581,
+   407
+  ]
+ },
+ {
+  "file": "technology-2015-HL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of the Ann Devlin Bridge, a low road bridge over a canal with a Luas tram crossing it.",
+  "questionRef": "2015 HL Section C Q5(d)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   361,
+   617,
+   561,
+   751
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -6867,6 +7062,21 @@
    692,
    560,
    800
+  ]
+ },
+ {
+  "file": "technology-2015-HL-paper-secC-q1b-i-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The start of a flowchart as the paper prints it: a Start box above a decision diamond labelled On/Off, with an arrow leaving its foot.",
+  "questionRef": "2015 HL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   486,
+   256,
+   566,
+   362
   ]
  },
  {
@@ -8860,5 +9070,125 @@
   "description": "The marking scheme's own picture for 2016 OL Section C 5(c)(i): a pop rivet and the joint it makes, captioned Pop rivet joint.",
   "solution": true,
   "questionRef": "2016 OL Section C Q5(c)(i)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secA-q8-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2015 HL Section A Q8(ii), as the State Examinations Commission printed it: a boxed calculation headed 'Calculation:'. Current = Voltage over Resistance = 240 over 24 = 10Amps (written as stacked fractions). Power = Current x Voltage = 10 x 240 = 2.4kW. Energy cost = 2.4 x 12 x 0.25 = 7.20 euro.",
+  "solution": true,
+  "questionRef": "2015 HL Section A Q8(ii)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secA-q9.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2015 HL Section A Q9, as the State Examinations Commission printed it: Output speed = 800 x 80 over 40 x 90 over 50 (written as stacked fractions), = 2880 rpm.",
+  "solution": true,
+  "questionRef": "2015 HL Section A Q9"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secA-q14.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own work breakdown structure for 2015 HL Section A Q14, as the State Examinations Commission printed it: Identify Components leads to Place components in PCB; Heat soldering iron leads to Tin soldering iron; both lead to Solder components, which leads to Finish PCB.",
+  "solution": true,
+  "questionRef": "2015 HL Section A Q14"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secB-q2d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2015 HL Section B 2(d)(i), as the State Examinations Commission printed it: a cutaway of a rack and pinion steering unit, lettered To Tire, Pinion Gear, To Steering Wheel and Rack, with arrows showing the rack's movement.",
+  "solution": true,
+  "questionRef": "2015 HL Section B Q2(d)(i)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secB-q3c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own pictures for 2015 HL Section B 3(c)(i), as the State Examinations Commission printed them: a photograph of the ball launcher's two wheels with an arrow to the tilted wheel, and a drawing of a worm and worm wheel with an arrow to the worm.",
+  "solution": true,
+  "questionRef": "2015 HL Section B Q3(c)(i)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secB-q3c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2015 HL Section B 3(c)(ii), as the State Examinations Commission printed it: two meshing gear wheels side by side, a curved arrow on each showing them turning in opposite directions.",
+  "solution": true,
+  "questionRef": "2015 HL Section B Q3(c)(ii)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secC-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own flowchart for 2015 HL Section C 1(b)(i), as the State Examinations Commission printed it: Start; a decision On/Off? looping back on N; on Y a decision Door shut? looping back on N; on Y Door lock, LED on, Motor On, Wait 30, Motor Off, LED off, Door unlock, then a line back to above On/Off?.",
+  "solution": true,
+  "questionRef": "2015 HL Section C Q1(b)(i)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secC-q2b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own completed circuit for 2015 HL Section C 2(b)(i), as the State Examinations Commission printed it: the 555 monostable with R and C on pins 7 and 6, pin 2 held high by a resistor and taken low by a push switch, pin 5 to a capacitor, and output pin 3 through a resistor to the base of a transistor switching a buzzer.",
+  "solution": true,
+  "questionRef": "2015 HL Section C Q2(b)(i)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secC-q2c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2015 HL Section C 2(c)(ii), as the State Examinations Commission printed it: a cutaway of a loudspeaker with its parts numbered 1 to 4, the numbers the scheme's notes use.",
+  "solution": true,
+  "questionRef": "2015 HL Section C Q2(c)(ii)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secC-q2d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own logic gate circuit for 2015 HL Section C 2(d)(i), as the State Examinations Commission printed it: an AND gate with inputs Light sensor and Table switch and its output to Camera.",
+  "solution": true,
+  "questionRef": "2015 HL Section C Q2(d)(i)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secC-q4b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2015 HL Section C 4(b)(i), as the State Examinations Commission printed it: Process mean = (537+509+607+565+596) over 5 = 563; Range = (30+38+22+60+10) over 5 = 32, each written as a stacked fraction.",
+  "solution": true,
+  "questionRef": "2015 HL Section C Q4(b)(i)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secC-q4b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own control chart for 2015 HL Section C 4(b)(ii), as the State Examinations Commission printed it: a vertical scale from 480 to 640, a UCL line near the top, a dashed Process Mean line, an LCL line near the bottom, and the five daily means plotted as a line between them.",
+  "solution": true,
+  "questionRef": "2015 HL Section C Q4(b)(ii)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secC-q4c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own graph for 2015 HL Section C 4(c)(i), as the State Examinations Commission printed it: cost against number of bags, marked 30 bags and 60 bags; a Manual system line rising from zero and an Automatic system line starting at 600 euro and rising more gently, the two crossing between 30 and 60 bags.",
+  "solution": true,
+  "questionRef": "2015 HL Section C Q4(c)(i)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secC-q5b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own photograph for 2015 HL Section C 5(b)(ii), as the State Examinations Commission printed it: the shelter's metal beams with circular holes, an arrow pointing to a joint.",
+  "solution": true,
+  "questionRef": "2015 HL Section C Q5(b)(ii)"
+ },
+ {
+  "file": "technology-2015-HL-scheme-secC-q5b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own photograph for 2015 HL Section C 5(b)(iii), as the State Examinations Commission printed it: a round glass-panel fixing, two discs clamped by a bolt with washers, an arrow pointing between them.",
+  "solution": true,
+  "questionRef": "2015 HL Section C Q5(b)(iii)"
  }
 ]
