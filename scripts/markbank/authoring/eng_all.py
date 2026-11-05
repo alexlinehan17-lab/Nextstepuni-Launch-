@@ -1096,6 +1096,9 @@ def main():
     eng_lists.vertical_lists(cards)
     eng_lists.table_cells(cards)
     eng_lists.degree_signs(cards)
+    # Alternatives the session would run together with "or" in one row: each
+    # its own option in a count-1 menu at the row's price.
+    eng_lists.alternative_menus(cards)
     # A card's notes never ship; what a student must see (an OR, the "12 + 12
     # + 11" price, a reading of the scheme, scheme text no row carries, a
     # misprint) goes on the row it qualifies, as the row's contextNote.

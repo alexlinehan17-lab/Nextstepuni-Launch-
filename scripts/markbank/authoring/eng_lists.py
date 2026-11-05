@@ -32,6 +32,20 @@ drops or moves a word: each only restores a piece of LAYOUT the page prints.
   digits' baseline, between a number and a C or F -- the card reads "40°C".
   Only a temperature the sitting's paper or scheme prints that way is changed;
   a letter o the page sets on the line stays a letter.
+
+* alternative_menus -- one marking point the scheme answers several ways
+  ("Ratchet and pawl ... / Micrometer ... / Lathe tailstock ...", any one of
+  them; a column's interchangeable properties) is an `alt` row whose
+  alternatives the session prints run together, joined with "or", in ONE
+  row. On a phone a student cannot find the answer they wrote in a
+  twelve-mark paragraph of three. Each alternative becomes an option of its
+  own in an any-N menu, the kind the any-N tariffs already use, claimed
+  once at the row's price: count 1, each option the row's marks. The
+  options are the row's own lifted strings, unchanged and in order; no
+  text is split. Not converted: a row on an OR route (the session commits a
+  route by a claimed row, not by a menu pick, so a menu would let the
+  branches mix) and a row the scheme prices only with its question (a menu
+  states a price per option).
 """
 import json
 import os
@@ -414,6 +428,33 @@ def degree_signs(cards):
     return changed
 
 
+def alternative_menus(cards):
+    """Each alt row with listed alternatives becomes a count-1 any-N menu."""
+    changed = []
+    for card in cards:
+        if card['tariffModel'].get('kind') != 'fixed':
+            continue
+        for i, row in enumerate(card['rows']):
+            accepts = row.get('accepts') or []
+            if row.get('kind') != 'alt' or not accepts or row.get('route') \
+                    or row.get('marks') is None:
+                continue
+            options = [row['verbatim']] + list(accepts)
+            if len(set(options)) != len(options):
+                raise SystemExit(f'alternative_menus {card["id"]} {row["id"]}: an alternative '
+                                 f'is listed twice')
+            menu = {'id': row['id'], 'kind': 'anyN', 'verbatim': options[0],
+                    'marks': row['marks'],
+                    'group': {'claimMax': 1, 'perOption': row['marks'], 'options': options}}
+            for key, value in row.items():
+                if key not in ('id', 'kind', 'verbatim', 'marks', 'accepts'):
+                    menu[key] = value
+            card['rows'][i] = menu
+            if card['id'] not in changed:
+                changed.append(card['id'])
+    return changed
+
+
 if __name__ == '__main__':
     path = os.path.join(eng_lift.ROOT, 'scripts', 'markbank', 'authored', 'engineering.json')
     cards = json.load(open(path, encoding='utf-8'))
@@ -421,6 +462,9 @@ if __name__ == '__main__':
     v = vertical_lists(cards)
     t = table_cells(cards)
     g = degree_signs(cards)
+    m = alternative_menus(cards)
+    for i in m:
+        print(f'MENU  {i}')
     for i in g:
         print(f'DEGREE {i}')
     for c in cards:
@@ -430,4 +474,5 @@ if __name__ == '__main__':
         if c['id'] in t:
             print(f'CELLS {c["id"]}')
     print(f'{len(v)} cards set lists on lines; {len(t)} cards joined table cells; '
-          f'{len(g)} cards read a raised o as a degree sign')
+          f'{len(g)} cards read a raised o as a degree sign; '
+          f'{len(m)} cards set alternatives as menus')
