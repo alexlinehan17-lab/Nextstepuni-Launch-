@@ -2140,6 +2140,123 @@ REVIEWED.update({
         'Photograph of a hand holding a Kindle e-book reader.',
 })
 
+# 2012 Higher, each crop rendered and looked at.
+REVIEWED.update({
+    'technology-2012-HL-paper-secA-q1-art':
+        'Photograph of a row of wind turbines on green land under a rainbow.',
+    'technology-2012-HL-paper-secA-q2-art':
+        'Two pieces of corrugated cardboard, shown in section with their wavy '
+        'inner layer.',
+    'technology-2012-HL-paper-secA-q3-art':
+        'Photograph of a sailing dinghy at sea with arrows labelled Sail, Mast '
+        'and Hull.',
+    'technology-2012-HL-paper-secA-q4-art':
+        'Photograph of a red armchair made of stacked rounded cushions on a '
+        'curved tubular metal base.',
+    'technology-2012-HL-paper-secA-q5-art':
+        'Photograph of a tower crane beside a tall building under construction.',
+    'technology-2012-HL-paper-secA-q6-art':
+        'A computer symbol: a trident shape, an arrow, a circle and a square on '
+        'three branches from a single stem ending in a dot.',
+    'technology-2012-HL-paper-secA-q8-art':
+        'Photograph of a wooden pull-along dog toy with pink ears, tail and '
+        'wheels and a pink pull cord.',
+    'technology-2012-HL-paper-secA-q9-art':
+        'A rendering of a supermarket checkout counter with a scanner and a '
+        'conveyor.',
+    'technology-2012-HL-paper-secA-q10-art':
+        'A yellow gantry crane on wheels, and its diagram: a beam on pillars A '
+        'and B with upward arrows, a load of 285 N hanging 1m from A and 2m from '
+        'B.',
+    'technology-2012-HL-paper-secA-q11-art':
+        'A voltage divider between +6V and 0V: an LDR above a resistor R = 1k '
+        'ohm, the output Vout taken between them.',
+    'technology-2012-HL-paper-secA-q12-art':
+        'Photograph of a ball bearing cut away to show its balls between an '
+        'inner and an outer ring.',
+    'technology-2012-HL-paper-secA-q13-art':
+        'Photograph of an open laptop computer, its screen and keyboard seen at an angle.',
+    'technology-2012-HL-paper-secA-q14-art':
+        'Four safety signs: (i) Yellow - caution, flames in a yellow triangle; '
+        '(ii) Blue - mandatory, a head wearing ear defenders on a blue disc; '
+        '(iii) Red - fire, an extinguisher and flames on red; (iv) Green - '
+        'positive action, a running figure, an arrow and a door on green.',
+    'technology-2012-HL-paper-secA-q15-art':
+        'Line drawing of a bicycle saddle with a section cut away to show its '
+        'padding.',
+    'technology-2012-HL-paper-secB-q2a-art':
+        'A rendering of a large oval stadium seen from above.',
+    'technology-2012-HL-paper-secB-q2b-art':
+        'A round green circuit board with LEDs, and three components pointed to '
+        'it labelled A (a round black component), B (a small cylinder) and C '
+        '(a square push button).',
+    'technology-2012-HL-paper-secB-q2c-art':
+        'A product life-cycle graph of Product Sales against Time: a curve '
+        'rising, peaking and falling, split by dashed lines into stages 1, 2, '
+        '3 and 4.',
+    'technology-2012-HL-paper-secB-q3a-art':
+        'A cutaway drawing of a hybrid car labelled Fuel Tank, Battery Pack, '
+        'Engine, Electronic control system and Electric Motor.',
+    'technology-2012-HL-paper-secB-q3b-art':
+        'A carburettor linkage: an accelerator pedal pivoted at B on a fixed '
+        'pivot, its foot end A, linked at C through a spring and a rod to a '
+        'lever on the carburettor with its own fixed pivot.',
+    'technology-2012-HL-paper-secB-q3c-art':
+        'Photograph of a sports car in a wind tunnel, smoke lines flowing over it.',
+    'technology-2012-HL-paper-secB-q3d-art':
+        'A drawing of an incomplete car steering system: a steering wheel on a '
+        'column above two front wheels joined by a bar.',
+    'technology-2012-HL-paper-secC-q1a-art':
+        'Photograph of a tracked robot with an arm and cameras.',
+    'technology-2012-HL-paper-secC-q1b-art':
+        'Photograph of a wall-mounted hand dryer with a slot for hands.',
+    'technology-2012-HL-paper-secC-q1c-art':
+        'A rendering of a gantry robot over a flat bed, its head moving on rails.',
+    'technology-2012-HL-paper-secC-q1d-art':
+        'Photograph of a machine pressing a tennis ball under a piston.',
+    'technology-2012-HL-paper-secC-q2a-art':
+        'The RSA logo, white letters on an orange square.',
+    'technology-2012-HL-paper-secC-q2b-art':
+        'An incomplete 555 astable circuit between 9V and 0V, R1, R2 and C1 on '
+        'its pins, output to two LEDs with a resistor R3 marked; beside it a red '
+        'triangular warning sign with a row of LEDs.',
+    'technology-2012-HL-paper-secC-q2c-art':
+        'A circuit between 6V and 0V: a component A across a relay coil in a '
+        'dotted box with switch contacts B on a 110V motor circuit, and a '
+        'transistor C with ammeters in its base (IB) and collector (IC) leads.',
+    'technology-2012-HL-paper-secC-q2d-art':
+        'A block diagram: inputs Power (1 = on, 0 = off), Night sensor X (1 = '
+        'light, 0 = dark) and Temperature Y (1 = cold, 0 = hot) into a Logic '
+        'circuit box, output Heater (1 = on, 0 = off).',
+    'technology-2012-HL-paper-secC-q3a-art':
+        'Photographs of two tablet computers, one on a stand.',
+    'technology-2012-HL-paper-secC-q3b-art':
+        'Photograph of the glowing ends of a bundle of optical fibres.',
+    'technology-2012-HL-paper-secC-q3c-art':
+        'Photograph of a computer motherboard with its slots, sockets and heat sink.',
+    'technology-2012-HL-paper-secC-q3d-art':
+        'Photograph of a laptop with a padlock and chain on it.',
+    'technology-2012-HL-paper-secC-q4a-art':
+        'Photograph of crushed and damaged cars piled together after a tsunami.',
+    'technology-2012-HL-paper-secC-q4b-art':
+        'Photographs of two bearings labelled A and B; below, two graphs, each '
+        'headed Design Specifications over Process: 1, a wide flat curve '
+        'spreading to the specification lines, and 2, a tall narrow curve well '
+        'inside them.',
+    'technology-2012-HL-paper-secC-q4d-art':
+        'Photographs of three gold medals, one engraved Engrave on the front or '
+        'back.',
+    'technology-2012-HL-paper-secC-q5b-art':
+        'Photographs of three wheelchairs: a manual chair, a powered chair and a '
+        'three-wheeled racing chair.',
+    'technology-2012-HL-paper-secC-q5c-art':
+        'Photograph of a powered wheelchair, the area round its wheel boxed in '
+        'red and enlarged, an arrow labelled Casing.',
+    'technology-2012-HL-paper-secC-q5d-art':
+        'Photograph of three messenger bags made from black inner tube rubber '
+        'with coloured edging.',
+})
+
 REJECTED = {
     'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
     'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',

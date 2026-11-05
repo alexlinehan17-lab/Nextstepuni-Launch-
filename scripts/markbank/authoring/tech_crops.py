@@ -1813,6 +1813,10 @@ LISTED_STEPS = {
     (2013, 'ol', 'A', 6, None, None),
     (2013, 'ol', 'A', 8, None, None),
     (2013, 'ol', 'A', 10, None, None),
+    # 2012 Higher Q1 and Q12, scheme pages 4 and 8: advantages, reasons and
+    # lubricants, one per line.
+    (2012, 'hl', 'A', 1, None, None),
+    (2012, 'hl', 'A', 12, None, None),
 }
 
 # Scheme lines that reuse the ask's own words and are nonetheless a marking
@@ -3038,6 +3042,33 @@ MD_LINE_FIX[(2014, 'ol')] = [
     (r'^Carbide, etc\.$',
      'or insulator depending on chemical or external conditions. Examples Germanium /Silicon Carbide, etc.'),
 ]
+MD_LINE_FIX[(2012, 'hl')] = [
+    # 3(a)(ii) and 1(c)(i): one answer broken before a capital, joined.
+    (r'^(Two significant advantages explained - Energy saving through reduced use of fossil fuels,)$',
+     r'\1 Switching between energy sources to boost power or conserve fuel, Environmentally friendly etc.'),
+    (r'^Switching between energy sources to boost power or conserve fuel, Environmentally friendly etc\.$', ''),
+    (r'^(Uses: ‘pick and place’ work, stacking sheet materials, application of adhesives,)$',
+     '\\1 CNC machines etc.'),
+    (r'^CNC machines etc\.$', ''),
+    # 1(b)(iii): the examiner's lead-in and the sketch's last label.
+    (r'^Suggested sketch with explanation needed:$', ''),
+    (r'^Light source$', ''),
+    (r'^eg IR or LED$', ''),
+    # 2(b)(ii): the circuit's pin numbers welded into "It ... changes"; the
+    # sentence's end, on the next two lines, joined back.
+    (r'^(its original stable state, used in timing circuits etc\. Astable: This is a system which has no stable state\. It) R2 6 3 2 1 5(?: 555 Timer LED)?$',
+     r'\1 changes from one state to the other all the time, used to flash lights etc.'),
+    (r'^changes from one state to the other all the time, used to flash$', ''),
+    (r'^lights etc\.(?: Capacitor)?$', ''),
+    # 2(d)(ii): its head, with the truth table's header welded on.
+    (r'^\(ii\) Identify sensing components for use at X and at Y\. Power Light Heat Heater$', '(ii)'),
+    # 4(b): the stem's data and (iii)'s ask, reprinted; 4(d)(ii): (a) and
+    # (b)'s asks, reprinted. The heads stay.
+    (r'^Manufacturer [AB]: standard deviation 0\.01[02]3$', ''),
+    (r'^\(iii\) Identify the graph which would best describe the Process Capability of each manufacturer\.$', '(iii)'),
+    (r'^\(ii\) \(a\) Draw a graph to show the costs of each method of engraving the medals\.$', '(ii)'),
+    (r'^\(b\) Determine the BEQ from the graph or otherwise\.$', ''),
+]
 MD_LINE_FIX[(2014, 'hl')] = [
     # 1(a)(ii): two columns of notes welded line by line; each column's
     # words, in order, on a line of its own.
@@ -3501,6 +3532,182 @@ MD_LINE_FIX[(2013, 'ol')] = [
     (r'^etc\.$', ''),
 ]
 
+# 2012 Higher. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    'technology-2012-HL-paper-secA-q1-art': ('014', 1, (393, 117, 563, 246)),
+    'technology-2012-HL-paper-secA-q2-art': ('014', 1, (446, 362, 566, 486)),
+    'technology-2012-HL-paper-secA-q3-art': ('014', 1, (380, 595, 569, 770)),
+    'technology-2012-HL-paper-secA-q4-art': ('014', 2, (432, 132, 552, 248)),
+    'technology-2012-HL-paper-secA-q5-art': ('014', 2, (428, 358, 548, 535)),
+    'technology-2012-HL-paper-secA-q6-art': ('014', 2, (451, 588, 533, 728)),
+    'technology-2012-HL-paper-secA-q8-art': ('014', 3, (38, 333, 172, 467)),
+    'technology-2012-HL-paper-secA-q9-art': ('014', 3, (351, 571, 558, 735)),
+    'technology-2012-HL-paper-secA-q10-art': ('014', 4, (65, 110, 515, 266)),
+    'technology-2012-HL-paper-secA-q11-art': ('014', 4, (48, 498, 190, 636)),
+    'technology-2012-HL-paper-secA-q12-art': ('014', 5, (83, 111, 204, 238)),
+    'technology-2012-HL-paper-secA-q13-art': ('014', 5, (383, 531, 552, 665)),
+    'technology-2012-HL-paper-secA-q14-art': ('014', 6, (55, 118, 535, 232)),
+    'technology-2012-HL-paper-secA-q15-art': ('014', 6, (144, 522, 493, 725)),
+    'technology-2012-HL-paper-secB-q2a-art': ('015', 1, (368, 132, 571, 240)),
+    'technology-2012-HL-paper-secB-q2b-art': ('015', 1, (390, 290, 576, 463)),
+    'technology-2012-HL-paper-secB-q2c-art': ('015', 1, (325, 526, 560, 645)),
+    'technology-2012-HL-paper-secB-q3a-art': ('015', 2, (425, 80, 575, 208)),
+    'technology-2012-HL-paper-secB-q3b-art': ('015', 2, (30, 262, 270, 398)),
+    'technology-2012-HL-paper-secB-q3c-art': ('015', 2, (406, 466, 563, 572)),
+    'technology-2012-HL-paper-secB-q3d-art': ('015', 2, (384, 658, 551, 734)),
+    'technology-2012-HL-paper-secC-q1a-art': ('015', 3, (491, 89, 572, 209)),
+    'technology-2012-HL-paper-secC-q1b-art': ('015', 3, (462, 247, 560, 366)),
+    'technology-2012-HL-paper-secC-q1c-art': ('015', 3, (417, 435, 574, 556)),
+    'technology-2012-HL-paper-secC-q1d-art': ('015', 3, (434, 611, 563, 776)),
+    'technology-2012-HL-paper-secC-q2a-art': ('015', 4, (521, 91, 569, 140)),
+    'technology-2012-HL-paper-secC-q2b-art': ('015', 4, (265, 205, 580, 365)),
+    'technology-2012-HL-paper-secC-q2c-art': ('015', 4, (365, 393, 582, 545)),
+    'technology-2012-HL-paper-secC-q2d-art': ('015', 4, (45, 612, 312, 785)),
+    'technology-2012-HL-paper-secC-q3a-art': ('015', 5, (378, 77, 558, 170)),
+    'technology-2012-HL-paper-secC-q3b-art': ('015', 5, (437, 218, 582, 315)),
+    'technology-2012-HL-paper-secC-q3c-art': ('015', 5, (386, 435, 580, 568)),
+    'technology-2012-HL-paper-secC-q3d-art': ('015', 5, (450, 673, 576, 758)),
+    'technology-2012-HL-paper-secC-q4a-art': ('015', 6, (162, 174, 418, 320)),
+    # 4(b): the two bearings, lettered A and B, and (iii)'s two graphs, the
+    # asks between them blanked.
+    'technology-2012-HL-paper-secC-q4b-art': ('015', 6, (95, 455, 570, 756)),
+    'technology-2012-HL-paper-secC-q4d-art': ('015', 7, (383, 569, 527, 640)),
+    'technology-2012-HL-paper-secC-q5b-art': ('015', 8, (105, 222, 486, 317)),
+    'technology-2012-HL-paper-secC-q5c-art': ('015', 8, (344, 423, 576, 602)),
+    'technology-2012-HL-paper-secC-q5d-art': ('015', 8, (381, 684, 560, 783)),
+})
+WHITEOUT.update({
+    'technology-2012-HL-paper-secC-q4b-art': [(95, 455, 420, 650), (95, 620, 570, 652),
+                                               (420, 588, 570, 620)],
+    'technology-2012-HL-paper-secA-q10-art': [(65, 100, 200, 114)],
+    'technology-2012-HL-paper-secA-q3-art': [(556, 750, 572, 772), (566, 621, 572, 772), (567.8, 595, 572, 621)],
+    'technology-2012-HL-paper-secC-q5b-art': [(105, 215, 236, 229)],
+})
+LABEL_KEYS.update({
+    (2012, 'hl', 'B', 2, 'b'): [
+        {'letter': 'A', 'meaning': 'Buzzer'},
+        {'letter': 'B', 'meaning': 'Capacitor'},
+        {'letter': 'C', 'meaning': 'PTM switch'}],
+    (2012, 'hl', 'C', 2, 'c'): [
+        {'letter': 'A', 'meaning': 'Diode'},
+        {'letter': 'B', 'meaning': 'Relay'},
+        {'letter': 'C', 'meaning': 'Transistor'}],
+})
+SOLUTIONS.update({
+    'technology-2012-HL-scheme-secA-q3': (3, (60, 612, 376, 738),
+        "The marking scheme's own table for 2012 HL Section A Q3, as the State "
+        "Examinations Commission printed it, columns Part, Material, Property: "
+        "Sail, Nylon/Canvas etc., Lightweight, colourful, strong, will not tear "
+        "easily etc.; Mast, Aluminium, Strong and lightweight in tubes; Hull, "
+        "Fibre glass, Impact resistant, moulds in one piece, waterproof etc."),
+    'technology-2012-HL-scheme-secA-q8': (5, (195, 336, 502, 448),
+        "The marking scheme's own work breakdown structure for 2012 HL Section A "
+        "Q8, as the State Examinations Commission printed it: Source materials "
+        "leads to Cut wooden body parts and to Make wheels and axles; Make wheels "
+        "and axles leads to Assemble wheel mechanism; Cut wooden body parts and "
+        "Assemble wheel mechanism lead to Paint and assemble toy."),
+    'technology-2012-HL-scheme-secA-q11': (6, (208, 593, 541, 722),
+        "The marking scheme's own answer to 2012 HL Section A Q11(ii), as the "
+        "State Examinations Commission printed it, in two boxes: Vout at 2000 "
+        "ohms, VOUT = R over (R + R1) x V, Vout = 2V; Vout at 3000 ohms, VOUT = R "
+        "over (R + R1) x V, Vout = 1.5V."),
+    'technology-2012-HL-scheme-secB-q3b': (12, (90, 347, 380, 388),
+        "The marking scheme's own answer to 2012 HL Section B 3(b)(iii), as the "
+        "State Examinations Commission printed it: Class 1 lever; Mechanical "
+        "Advantage = 165 over 55 (a stacked fraction) = 3."),
+    'technology-2012-HL-scheme-secB-q3d': (12, (336, 640, 600, 790),
+        "The marking scheme's own picture for 2012 HL Section B 3(d), as the "
+        "State Examinations Commission printed it: a car steering system, the "
+        "wheels joined through tie rods to a rack driven by a pinion on the "
+        "steering shaft, labelled Steer column, Steer shaft, Tie rod joints, "
+        "Tie rod, Rack and Pinion."),
+    'technology-2012-HL-scheme-secC-q1b': (13, (98, 470, 495, 765),
+        "The marking scheme's own answers for 2012 HL Section C 1(b), as the "
+        "State Examinations Commission printed them. (ii), a suggested "
+        "flowchart: Start, Pilot light ON (High), then a decision Turn On; on N "
+        "Fan OFF (Low) and back, on Y Fan ON (High) and back. (iii), a suggested "
+        "sketch: a light sensor eg LDR facing a light source eg IR or LED, with "
+        "a hand between them, captioned Hand blocks light."),
+    'technology-2012-HL-scheme-secC-q1c': (14, (195, 280, 320, 346),
+        "The marking scheme's own picture for 2012 HL Section C 1(c)(ii), as the "
+        "State Examinations Commission printed it: a disk encoder, a slotted disk "
+        "between a light source and photosensitive transistors."),
+    'technology-2012-HL-scheme-secC-q1d': (14, (172, 580, 415, 652),
+        "The marking scheme's own pneumatic circuit for 2012 HL Section C "
+        "1(d)(ii), as the State Examinations Commission printed it: a push-button "
+        "3/2 valve with ports 1, 2 and 3, a flow regulator, and a single-acting "
+        "cylinder with a spring return."),
+    'technology-2012-HL-scheme-secC-q2b': (15, (372, 178, 598, 342),
+        "The marking scheme's own completed astable circuit for 2012 HL Section C "
+        "2(b), as the State Examinations Commission printed it: a 555 timer "
+        "between 9V and 0V with Resistor R1, R2 and a Capacitor on pins 7, 6 and "
+        "2, pins 4 and 8 to 9V, and the output pin 3 driving two LEDs, each with "
+        "a resistor, R3 marked."),
+    'technology-2012-HL-scheme-secC-q2d': (15, (22, 594, 600, 768),
+        "The marking scheme's own logic circuit and truth table for 2012 HL "
+        "Section C 2(d)(i), as the State Examinations Commission printed them: "
+        "Night sensor through a NOT gate and with Temperature into an AND gate, "
+        "whose output with Power goes into a second AND gate giving Heater; the "
+        "table, Power, Light, Heat, Heater, gives Heater 1 only for Power 1, "
+        "Light 0, Heat 1."),
+    'technology-2012-HL-scheme-secC-q4b': (17, (85, 432, 600, 740),
+        "The marking scheme's own answers for 2012 HL Section C 4(b), as the "
+        "State Examinations Commission printed them: (i) A: Cp = Tolerance Range "
+        "over 6 sigma = (25.02 - 24.95) over 6(0.0103) = 1.13; B: (25.02 - 24.95) "
+        "over 6(0.0123) = 0.95, as stacked fractions; and (iii) the two graphs, "
+        "the wide curve 1 captioned Manufacturer B and the narrow curve 2 "
+        "captioned Manufacturer A."),
+    'technology-2012-HL-scheme-secC-q4d': (18, (90, 545, 532, 768),
+        "The marking scheme's own graph for 2012 HL Section C 4(d)(ii), as the "
+        "State Examinations Commission printed it: cost in euro (0 to 800) "
+        "against Quantity (200, 400, 600), a skilled line rising from 0 and an "
+        "unskilled line starting near 390, crossing at 600; and (b) BEQ = Setup "
+        "cost over (Manual cost/item - Automated cost/item) = 390 over (1.1 - "
+        "0.45) = 600 units."),
+    'technology-2012-HL-scheme-secC-q2c': (15, (90, 464, 300, 490),
+        "The marking scheme's own answer to 2012 HL Section C 2(c)(ii), as the "
+        "State Examinations Commission printed it: Gain = IC over IB = 90 over "
+        "0.6 = 150, written as stacked fractions."),
+    'technology-2012-HL-scheme-secC-q5c': (19, (444, 520, 586, 554),
+        "The marking scheme's own sketch for 2012 HL Section C 5(c)(ii), as the "
+        "State Examinations Commission printed it: a plastic sheet drawn down "
+        "over a mould on a vacuum forming table, an arrow showing the air drawn "
+        "out underneath."),
+})
+ASK_ONLY.update({
+    'technology-2012-HL-scheme-secA-q3',
+    'technology-2012-HL-scheme-secA-q8',
+})
+SOLUTION_NOT_ZONE.update({
+    'technology-2012-HL-scheme-secC-q4b',
+    'technology-2012-HL-scheme-secC-q4d',
+    'technology-2012-HL-scheme-secC-q1b',
+    'technology-2012-HL-scheme-secC-q2d',
+})
+WHITEOUT.update({
+    'technology-2012-HL-scheme-secC-q4b': [(85, 505, 600, 592)],
+    'technology-2012-HL-scheme-secC-q4d': [(90, 722, 532, 740), (90, 722, 146, 743)],
+    'technology-2012-HL-scheme-secC-q1b': [(98, 636, 495, 676), (98, 466, 182, 484)],
+    'technology-2012-HL-scheme-secC-q2b': [(370, 175, 382, 200), (370, 283, 379.5, 299)],
+    'technology-2012-HL-scheme-secC-q2d': [(22, 588, 380, 606)],
+})
+LABEL_ZONES.setdefault((2012, 'hl'), []).extend([
+    (3, (380, 595, 575, 772)),     # Q3's boat reprinted, Sail Mast Hull
+    (6, (60, 110, 525, 278)),      # Q10's crane reprinted
+    (6, (48, 495, 190, 640)),      # Q11's circuit reprinted
+    (12, (336, 640, 600, 790)),    # 3(d)'s steering picture
+    (13, (98, 470, 335, 625)),     # 1(b)(ii)'s flowchart
+    (13, (195, 676, 495, 765)),    # 1(b)(iii)'s sketch
+    (14, (172, 580, 415, 652)),    # 1(d)'s circuit
+    (15, (372, 178, 598, 342)),    # 2(b)'s circuit
+    (15, (22, 606, 600, 768)),     # 2(d)'s gates and truth table
+    (17, (85, 425, 600, 500)),     # 4(b)(i)'s fractions
+    (17, (85, 592, 600, 740)),     # 4(b)(iii)'s graphs
+    (18, (90, 545, 520, 720)),     # 4(d)'s graph
+    (18, (90, 738, 520, 760)),     # 4(d)'s BEQ fraction
+    (19, (440, 515, 590, 560)),    # 5(c)'s sketch
+])
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -3571,6 +3778,13 @@ ASK_STRIP = {
     # lettering, filed as the letter's stem; 4(d): the Kanban card's cells
     # and the page footer.
     (2013, 'ol', 'C', 1, 'b', None): [r'(?:^|\s+)Start N Blind LDR\?.*$'],
+    # 2012 Higher: answer-box labels and picture lettering read into the asks.
+    (2012, 'hl', 'A', 2, None, None): [r'\s+Advantage Disadvantage(?= Give)'],
+    (2012, 'hl', 'A', 3, None, None): [r'\s+Mast Sail Part Material Property$'],
+    (2012, 'hl', 'A', 5, None, None): [r'\s+\(i\) \(ii\) \(iii\)$'],
+    (2012, 'hl', 'A', 9, None, None): [r'\s+\(i\) \(ii\)$'],
+    (2012, 'hl', 'A', 11, None, None): [r'\s+\+6V LDR\b.*$'],
+    (2012, 'hl', 'A', 14, None, None): [r'\s+\(i\) \(ii\)(?= Outline)'],
     (2013, 'ol', 'C', 4, 'd', None): [r'\s+K\. Location Rack 2A\b.*$'],
     # 2013 Higher 4(b): the data table, which the crop carries, filed as stem.
     (2013, 'hl', 'C', 4, 'b', None): [r'\s+Day July 11th\b.*$'],

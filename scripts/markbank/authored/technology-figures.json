@@ -1,5 +1,125 @@
 [
  {
+  "file": "technology-2012-HL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A computer symbol: a trident shape, an arrow, a circle and a square on three branches from a single stem ending in a dot.",
+  "questionRef": "2012 HL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   451,
+   588,
+   533,
+   728
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a wooden pull-along dog toy with pink ears, tail and wheels and a pink pull cord.",
+  "questionRef": "2012 HL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   38,
+   333,
+   172,
+   467
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an open laptop computer, its screen and keyboard seen at an angle.",
+  "questionRef": "2012 HL Section A Q13",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   383,
+   531,
+   552,
+   665
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secA-q14-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Four safety signs: (i) Yellow - caution, flames in a yellow triangle; (ii) Blue - mandatory, a head wearing ear defenders on a blue disc; (iii) Red - fire, an extinguisher and flames on red; (iv) Green - positive action, a running figure, an arrow and a door on green.",
+  "questionRef": "2012 HL Section A Q14",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   55,
+   118,
+   535,
+   232
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing of a bicycle saddle with a section cut away to show its padding.",
+  "questionRef": "2012 HL Section A Q15",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   144,
+   522,
+   493,
+   725
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a wall-mounted hand dryer with a slot for hands.",
+  "questionRef": "2012 HL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   462,
+   247,
+   560,
+   366
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit between 6V and 0V: a component A across a relay coil in a dotted box with switch contacts B on a 110V motor circuit, and a transistor C with ammeters in its base (IB) and collector (IC) leads.",
+  "questionRef": "2012 HL Section C Q2(c)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   365,
+   393,
+   582,
+   545
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of two bearings labelled A and B; below, two graphs, each headed Design Specifications over Process: 1, a wide flat curve spreading to the specification lines, and 2, a tall narrow curve well inside them.",
+  "questionRef": "2012 HL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   95,
+   455,
+   570,
+   756
+  ]
+ },
+ {
   "file": "technology-2013-HL-paper-secA-q2-art.png",
   "kind": "figure",
   "truncated": false,
@@ -9075,6 +9195,471 @@
   ]
  },
  {
+  "file": "technology-2012-HL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a row of wind turbines on green land under a rainbow.",
+  "questionRef": "2012 HL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   393,
+   117,
+   563,
+   246
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two pieces of corrugated cardboard, shown in section with their wavy inner layer.",
+  "questionRef": "2012 HL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   446,
+   362,
+   566,
+   486
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a sailing dinghy at sea with arrows labelled Sail, Mast and Hull.",
+  "questionRef": "2012 HL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   380,
+   595,
+   569,
+   770
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a red armchair made of stacked rounded cushions on a curved tubular metal base.",
+  "questionRef": "2012 HL Section A Q4",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   432,
+   132,
+   552,
+   248
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a tower crane beside a tall building under construction.",
+  "questionRef": "2012 HL Section A Q5",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   428,
+   358,
+   548,
+   535
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A rendering of a supermarket checkout counter with a scanner and a conveyor.",
+  "questionRef": "2012 HL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   351,
+   571,
+   558,
+   735
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A yellow gantry crane on wheels, and its diagram: a beam on pillars A and B with upward arrows, a load of 285 N hanging 1m from A and 2m from B.",
+  "questionRef": "2012 HL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   65,
+   110,
+   515,
+   266
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A voltage divider between +6V and 0V: an LDR above a resistor R = 1k ohm, the output Vout taken between them.",
+  "questionRef": "2012 HL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   48,
+   498,
+   190,
+   636
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a ball bearing cut away to show its balls between an inner and an outer ring.",
+  "questionRef": "2012 HL Section A Q12",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   83,
+   111,
+   204,
+   238
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secB-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A rendering of a large oval stadium seen from above.",
+  "questionRef": "2012 HL Section B Q2(a)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   368,
+   132,
+   571,
+   240
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A round green circuit board with LEDs, and three components pointed to it labelled A (a round black component), B (a small cylinder) and C (a square push button).",
+  "questionRef": "2012 HL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   390,
+   290,
+   576,
+   463
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secB-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A product life-cycle graph of Product Sales against Time: a curve rising, peaking and falling, split by dashed lines into stages 1, 2, 3 and 4.",
+  "questionRef": "2012 HL Section B Q2(c)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   325,
+   526,
+   560,
+   645
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secB-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A cutaway drawing of a hybrid car labelled Fuel Tank, Battery Pack, Engine, Electronic control system and Electric Motor.",
+  "questionRef": "2012 HL Section B Q3(a)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   425,
+   80,
+   575,
+   208
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A carburettor linkage: an accelerator pedal pivoted at B on a fixed pivot, its foot end A, linked at C through a spring and a rod to a lever on the carburettor with its own fixed pivot.",
+  "questionRef": "2012 HL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   30,
+   262,
+   270,
+   398
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secB-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a sports car in a wind tunnel, smoke lines flowing over it.",
+  "questionRef": "2012 HL Section B Q3(c)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   406,
+   466,
+   563,
+   572
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secB-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A drawing of an incomplete car steering system: a steering wheel on a column above two front wheels joined by a bar.",
+  "questionRef": "2012 HL Section B Q3(d)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   384,
+   658,
+   551,
+   734
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q1a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a tracked robot with an arm and cameras.",
+  "questionRef": "2012 HL Section C Q1(a)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   491,
+   89,
+   572,
+   209
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A rendering of a gantry robot over a flat bed, its head moving on rails.",
+  "questionRef": "2012 HL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   417,
+   435,
+   574,
+   556
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a machine pressing a tennis ball under a piston.",
+  "questionRef": "2012 HL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   434,
+   611,
+   563,
+   776
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The RSA logo, white letters on an orange square.",
+  "questionRef": "2012 HL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   521,
+   91,
+   569,
+   140
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An incomplete 555 astable circuit between 9V and 0V, R1, R2 and C1 on its pins, output to two LEDs with a resistor R3 marked; beside it a red triangular warning sign with a row of LEDs.",
+  "questionRef": "2012 HL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   265,
+   205,
+   580,
+   365
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A block diagram: inputs Power (1 = on, 0 = off), Night sensor X (1 = light, 0 = dark) and Temperature Y (1 = cold, 0 = hot) into a Logic circuit box, output Heater (1 = on, 0 = off).",
+  "questionRef": "2012 HL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   45,
+   612,
+   312,
+   785
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of two tablet computers, one on a stand.",
+  "questionRef": "2012 HL Section C Q3(a)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   378,
+   77,
+   558,
+   170
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the glowing ends of a bundle of optical fibres.",
+  "questionRef": "2012 HL Section C Q3(b)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   437,
+   218,
+   582,
+   315
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a computer motherboard with its slots, sockets and heat sink.",
+  "questionRef": "2012 HL Section C Q3(c)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   386,
+   435,
+   580,
+   568
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a laptop with a padlock and chain on it.",
+  "questionRef": "2012 HL Section C Q3(d)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   450,
+   673,
+   576,
+   758
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q4a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of crushed and damaged cars piled together after a tsunami.",
+  "questionRef": "2012 HL Section C Q4(a)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   162,
+   174,
+   418,
+   320
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of three gold medals, one engraved Engrave on the front or back.",
+  "questionRef": "2012 HL Section C Q4(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   383,
+   569,
+   527,
+   640
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of three wheelchairs: a manual chair, a powered chair and a three-wheeled racing chair.",
+  "questionRef": "2012 HL Section C Q5(b)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   105,
+   222,
+   486,
+   317
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q5c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a powered wheelchair, the area round its wheel boxed in red and enlarged, an arrow labelled Casing.",
+  "questionRef": "2012 HL Section C Q5(c)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   344,
+   423,
+   576,
+   602
+  ]
+ },
+ {
+  "file": "technology-2012-HL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of three messenger bags made from black inner tube rubber with coloured edging.",
+  "questionRef": "2012 HL Section C Q5(d)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   381,
+   684,
+   560,
+   783
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -12006,5 +12591,117 @@
   "description": "The marking scheme's own modified flowchart for 2013 OL Section C 1(b)(ii): Start, LDR? looping back on N, Motor On, then a decision Limit Switch looping back on N, and on Y Motor Off.",
   "solution": true,
   "questionRef": "2013 OL Section C Q1(b)"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secA-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own table for 2012 HL Section A Q3, as the State Examinations Commission printed it, columns Part, Material, Property: Sail, Nylon/Canvas etc., Lightweight, colourful, strong, will not tear easily etc.; Mast, Aluminium, Strong and lightweight in tubes; Hull, Fibre glass, Impact resistant, moulds in one piece, waterproof etc.",
+  "solution": true,
+  "questionRef": "2012 HL Section A Q3"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secA-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own work breakdown structure for 2012 HL Section A Q8, as the State Examinations Commission printed it: Source materials leads to Cut wooden body parts and to Make wheels and axles; Make wheels and axles leads to Assemble wheel mechanism; Cut wooden body parts and Assemble wheel mechanism lead to Paint and assemble toy.",
+  "solution": true,
+  "questionRef": "2012 HL Section A Q8"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secA-q11.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2012 HL Section A Q11(ii), as the State Examinations Commission printed it, in two boxes: Vout at 2000 ohms, VOUT = R over (R + R1) x V, Vout = 2V; Vout at 3000 ohms, VOUT = R over (R + R1) x V, Vout = 1.5V.",
+  "solution": true,
+  "questionRef": "2012 HL Section A Q11"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secB-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2012 HL Section B 3(b)(iii), as the State Examinations Commission printed it: Class 1 lever; Mechanical Advantage = 165 over 55 (a stacked fraction) = 3.",
+  "solution": true,
+  "questionRef": "2012 HL Section B Q3(b)"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secB-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2012 HL Section B 3(d), as the State Examinations Commission printed it: a car steering system, the wheels joined through tie rods to a rack driven by a pinion on the steering shaft, labelled Steer column, Steer shaft, Tie rod joints, Tie rod, Rack and Pinion.",
+  "solution": true,
+  "questionRef": "2012 HL Section B Q3(d)"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secC-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answers for 2012 HL Section C 1(b), as the State Examinations Commission printed them. (ii), a suggested flowchart: Start, Pilot light ON (High), then a decision Turn On; on N Fan OFF (Low) and back, on Y Fan ON (High) and back. (iii), a suggested sketch: a light sensor eg LDR facing a light source eg IR or LED, with a hand between them, captioned Hand blocks light.",
+  "solution": true,
+  "questionRef": "2012 HL Section C Q1(b)"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secC-q1c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2012 HL Section C 1(c)(ii), as the State Examinations Commission printed it: a disk encoder, a slotted disk between a light source and photosensitive transistors.",
+  "solution": true,
+  "questionRef": "2012 HL Section C Q1(c)"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secC-q1d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own pneumatic circuit for 2012 HL Section C 1(d)(ii), as the State Examinations Commission printed it: a push-button 3/2 valve with ports 1, 2 and 3, a flow regulator, and a single-acting cylinder with a spring return.",
+  "solution": true,
+  "questionRef": "2012 HL Section C Q1(d)"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secC-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own completed astable circuit for 2012 HL Section C 2(b), as the State Examinations Commission printed it: a 555 timer between 9V and 0V with Resistor R1, R2 and a Capacitor on pins 7, 6 and 2, pins 4 and 8 to 9V, and the output pin 3 driving two LEDs, each with a resistor, R3 marked.",
+  "solution": true,
+  "questionRef": "2012 HL Section C Q2(b)"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secC-q2d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own logic circuit and truth table for 2012 HL Section C 2(d)(i), as the State Examinations Commission printed them: Night sensor through a NOT gate and with Temperature into an AND gate, whose output with Power goes into a second AND gate giving Heater; the table, Power, Light, Heat, Heater, gives Heater 1 only for Power 1, Light 0, Heat 1.",
+  "solution": true,
+  "questionRef": "2012 HL Section C Q2(d)"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secC-q4b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answers for 2012 HL Section C 4(b), as the State Examinations Commission printed them: (i) A: Cp = Tolerance Range over 6 sigma = (25.02 - 24.95) over 6(0.0103) = 1.13; B: (25.02 - 24.95) over 6(0.0123) = 0.95, as stacked fractions; and (iii) the two graphs, the wide curve 1 captioned Manufacturer B and the narrow curve 2 captioned Manufacturer A.",
+  "solution": true,
+  "questionRef": "2012 HL Section C Q4(b)"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secC-q4d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own graph for 2012 HL Section C 4(d)(ii), as the State Examinations Commission printed it: cost in euro (0 to 800) against Quantity (200, 400, 600), a skilled line rising from 0 and an unskilled line starting near 390, crossing at 600; and (b) BEQ = Setup cost over (Manual cost/item - Automated cost/item) = 390 over (1.1 - 0.45) = 600 units.",
+  "solution": true,
+  "questionRef": "2012 HL Section C Q4(d)"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secC-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2012 HL Section C 2(c)(ii), as the State Examinations Commission printed it: Gain = IC over IB = 90 over 0.6 = 150, written as stacked fractions.",
+  "solution": true,
+  "questionRef": "2012 HL Section C Q2(c)"
+ },
+ {
+  "file": "technology-2012-HL-scheme-secC-q5c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2012 HL Section C 5(c)(ii), as the State Examinations Commission printed it: a plastic sheet drawn down over a mould on a vacuum forming table, an arrow showing the air drawn out underneath.",
+  "solution": true,
+  "questionRef": "2012 HL Section C Q5(c)"
  }
 ]
