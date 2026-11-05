@@ -105,6 +105,126 @@
   ]
  },
  {
+  "file": "technology-2014-OL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A yellow triangular safety sign with a black border, showing black flames over a line.",
+  "questionRef": "2014 OL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   397,
+   586,
+   502,
+   682
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a hand writing with a stylus on a small screen pad connected by a cable.",
+  "questionRef": "2014 OL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   65,
+   604,
+   225,
+   719
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A rendering of a heat sensor fan: a blue fan on a curved green acrylic upright with circular holes, on a round yellow and green base.",
+  "questionRef": "2014 OL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   394,
+   67,
+   513,
+   278
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing of a gas cylinder with a valve and a handle on top.",
+  "questionRef": "2014 OL Section A Q12",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   247,
+   596,
+   368,
+   773
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit: a push switch and capacitor feed the base of a transistor through a resistor; the transistor switches an LED and its resistor; a battery supplies the circuit.",
+  "questionRef": "2014 OL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   358,
+   292,
+   572,
+   458
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q1a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a white and pink robotic toy dog with its remote control.",
+  "questionRef": "2014 OL Section C Q1(a)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   29,
+   116,
+   135,
+   212
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A flowchart: Start, LDR? (N loops back), Motor Up, Limit Switch? (N loops back), Motor Stop, Wait 5, Motor Down, Limit Switch? (N loops back), Motor Stop, Stop.",
+  "questionRef": "2014 OL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   470,
+   215,
+   548,
+   495
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A control chart with a UCL line at the top and an LCL line at the bottom, a dashed centre line, and a plotted line of samples, labelled Samples taken from the process.",
+  "questionRef": "2014 OL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   25,
+   246,
+   216,
+   336
+  ]
+ },
+ {
   "file": "technology-2015-HL-paper-secA-q5-art.png",
   "kind": "figure",
   "truncated": false,
@@ -7320,6 +7440,21 @@
   ]
  },
  {
+  "file": "technology-2014-HL-paper-secB-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the Mars rover camera system: a camera head and its electronics mounted on a small base plate.",
+  "questionRef": "2014 HL Section B Q3(c)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   412,
+   528,
+   555,
+   628
+  ]
+ },
+ {
   "file": "technology-2014-HL-paper-secC-q1b-art.png",
   "kind": "figure",
   "truncated": false,
@@ -7422,6 +7557,441 @@
    618,
    578,
    770
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of workers in hard hats and high-visibility vests working on a large pipe section in a field.",
+  "questionRef": "2014 OL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   381,
+   121,
+   529,
+   202
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph at night of a cable-stayed bridge, its two towers lit blue.",
+  "questionRef": "2014 OL Section A Q4",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   363,
+   133,
+   524,
+   228
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a clear plastic water bottle with a blue cap.",
+  "questionRef": "2014 OL Section A Q5",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   71,
+   357,
+   158,
+   466
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An exploded line drawing of a chair: the back and seat above, the frame pieces and legs separated below, and an arrow labelled A pointing at it from the lower left.",
+  "questionRef": "2014 OL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   355,
+   75,
+   515,
+   272
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an electric jig saw with its blade pointing down.",
+  "questionRef": "2014 OL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   387,
+   320,
+   526,
+   459
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A resistor colour code table, colour bars for the digits 0 to 9, and a resistor with four coloured bands.",
+  "questionRef": "2014 OL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   82,
+   584,
+   208,
+   712
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a clear plastic food container with a blue lid, holding two burgers.",
+  "questionRef": "2014 OL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   348,
+   372,
+   524,
+   503
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secB-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a cruise ship lying on its side in the water, with a crane vessel beside it.",
+  "questionRef": "2014 OL Section B Q2(a)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   403,
+   92,
+   560,
+   219
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A diagram of the salvage: the ship tilted against the shore with a box labelled Caisson on its side, and a steel frame under it labelled Platform.",
+  "questionRef": "2014 OL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   381,
+   270,
+   564,
+   398
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secB-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An illustration of a satellite with solar panels above the Earth.",
+  "questionRef": "2014 OL Section B Q2(c)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   42,
+   504,
+   166,
+   604
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secB-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of two cupped hands holding a green glass globe.",
+  "questionRef": "2014 OL Section B Q2(d)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   419,
+   659,
+   541,
+   781
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secB-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A rendering of a pizza-slice shaped timer made of stacked layers, with an arrow captioned Layers of 3 mm Acrylic.",
+  "questionRef": "2014 OL Section B Q3(a)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   391,
+   88,
+   572,
+   218
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secB-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a green printed circuit board, captioned PCB, and a copper stripboard, captioned Copper Stripboard.",
+  "questionRef": "2014 OL Section B Q3(d)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   92,
+   686,
+   512,
+   790
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a multi-rotor drone with a camera in flight.",
+  "questionRef": "2014 OL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   54,
+   545,
+   182,
+   631
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A cutaway drawing of a pneumatic valve, a push button at the left, a spring at the right, with arrows numbered 1 and 2 pointing to a port and to the spring.",
+  "questionRef": "2014 OL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   385,
+   705,
+   535,
+   795
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a small chip held between a finger and thumb.",
+  "questionRef": "2014 OL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   429,
+   77,
+   540,
+   173
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an eight-pin chip marked NE555N.",
+  "questionRef": "2014 OL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   446,
+   283,
+   550,
+   363
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a small yellow plastic gearbox motor.",
+  "questionRef": "2014 OL Section C Q2(c)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   55,
+   467,
+   178,
+   590
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit between +V and 0V: a resistor in series with a light emitting diode.",
+  "questionRef": "2014 OL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   100,
+   684,
+   200,
+   800
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A weather map of Europe on a globe, with city names and temperatures.",
+  "questionRef": "2014 OL Section C Q3(a)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   18,
+   87,
+   191,
+   189
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an eye close up behind a finger touching a glass screen.",
+  "questionRef": "2014 OL Section C Q3(b)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   436,
+   216,
+   557,
+   305
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A screenshot of a CAD export dialog: File name, Export type with a drop-down list of file formats, and Export, Cancel and Options buttons.",
+  "questionRef": "2014 OL Section C Q3(c)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   372,
+   455,
+   574,
+   530
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A blue wireless signal symbol: a dot under three arcs.",
+  "questionRef": "2014 OL Section C Q3(d)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   423,
+   645,
+   553,
+   766
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q4a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a kite surfer in the air and of a black and red water sports harness, captioned Water Sports Harness.",
+  "questionRef": "2014 OL Section C Q4(a)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   345,
+   37,
+   572,
+   192
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An organisational chart: Managing Director above four departments, Sales and Marketing, Production, Human Resources and Finance.",
+  "questionRef": "2014 OL Section C Q4(c)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   393,
+   445,
+   572,
+   525
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a team of people working at laptops around a table.",
+  "questionRef": "2014 OL Section C Q4(d)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   427,
+   623,
+   562,
+   697
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q5a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Three photographs captioned Engineered Wood - door panels, Medium Density Fibreboard - (MDF) furniture panels, and Oriented Strand Board - (OSB) flooring panels.",
+  "questionRef": "2014 OL Section C Q5(a)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   94,
+   78,
+   533,
+   203
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a child's folding scooter, with an arrow labelled A pointing to its base.",
+  "questionRef": "2014 OL Section C Q5(b)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   406,
+   282,
+   546,
+   513
+  ]
+ },
+ {
+  "file": "technology-2014-OL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The Forest Stewardship Council logo: a tree drawn as a tick over the letters FSC.",
+  "questionRef": "2014 OL Section C Q5(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   457,
+   658,
+   563,
+   787
   ]
  },
  {
@@ -10132,5 +10702,69 @@
   "description": "The marking scheme's own photograph for 2014 HL Section C 5(c)(i), as the State Examinations Commission printed it: a person reclining in the workstation chair, labelled Screen and Tilt backwards and raise foot position.",
   "solution": true,
   "questionRef": "2014 HL Section C Q5(c)"
+ },
+ {
+  "file": "technology-2014-OL-scheme-secA-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketches for 2014 OL Section A Q2, as the State Examinations Commission printed them: a drill gauge, a plate with two rows of holes of decreasing size, and a countersunk hole in section, a countersunk screw entering a hole with a tapered top.",
+  "solution": true,
+  "questionRef": "2014 OL Section A Q2"
+ },
+ {
+  "file": "technology-2014-OL-scheme-secA-q7.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2014 OL Section A Q7, as the State Examinations Commission printed it: the assembled chair seen from the side, a back rising from the seat and two splayed legs.",
+  "solution": true,
+  "questionRef": "2014 OL Section A Q7"
+ },
+ {
+  "file": "technology-2014-OL-scheme-secB-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own circuit for 2014 OL Section B 3(b), as the State Examinations Commission printed it: the given circuit with its components labelled LED, Transistor and Push-to-make switch, and a buzzer added in parallel with the LED.",
+  "solution": true,
+  "questionRef": "2014 OL Section B Q3(b)"
+ },
+ {
+  "file": "technology-2014-OL-scheme-secC-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own flowchart for 2014 OL Section C 1(b), as the State Examinations Commission printed it: the student's flowchart, Start, LDR?, Motor Up, Limit Switch?, Motor Stop, Wait 2, Motor Down, Limit Switch?, Motor Stop, with a line from the last Motor Stop back to above LDR?.",
+  "solution": true,
+  "questionRef": "2014 OL Section C Q1(b)"
+ },
+ {
+  "file": "technology-2014-OL-scheme-secC-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2014 OL Section C 2(c)(ii), as the State Examinations Commission printed it: a battery and a motor M wired through a double-pole double-throw switch whose cross-connected contacts reverse the motor.",
+  "solution": true,
+  "questionRef": "2014 OL Section C Q2(c)"
+ },
+ {
+  "file": "technology-2014-OL-scheme-secC-q2d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own diagram for 2014 OL Section C 2(d)(ii), as the State Examinations Commission printed it: the resistor and LED between +V and 0V, with a voltmeter V connected across the resistor.",
+  "solution": true,
+  "questionRef": "2014 OL Section C Q2(d)"
+ },
+ {
+  "file": "technology-2014-OL-scheme-secC-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2014 OL Section C 3(d)(ii), as the State Examinations Commission printed it: a home network, a wireless router linked to the internet through a cable modem, with computers, laptops, a games console, a fax and a printer around it.",
+  "solution": true,
+  "questionRef": "2014 OL Section C Q3(d)"
+ },
+ {
+  "file": "technology-2014-OL-scheme-secC-q5a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2014 OL Section C 5(a)(ii), as the State Examinations Commission printed it: a sheet of plywood with its layers stepped back, arrows showing the grain of alternate veneers at right angles.",
+  "solution": true,
+  "questionRef": "2014 OL Section C Q5(a)"
  }
 ]

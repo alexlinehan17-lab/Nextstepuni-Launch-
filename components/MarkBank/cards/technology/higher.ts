@@ -336,6 +336,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-b2a", topicId: "tech-core-design", conceptId: "core-design",
     section: "B", questionRef: "2014 HL Section B Q2(a)(i), (ii)",
+    stem: "The official emblem of the 2014 FIFA World Cup tournament is shown. It is central to the brand identity of the tournament.",
     questionText: "(i) State two reasons for creating an emblem for a large sporting event. (ii) Outline two ways in which ideas could be generated in order to develop a design for the emblem.",
     tariffModel: {"kind":"questionTotal","notation":"(a) - 8 marks"}, totalMarks: 8,
     rows: [
@@ -359,6 +360,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-b2b", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2014 HL Section B Q2(b)(i), (ii), (iii)",
+    stem: "Security at large scale events such as the World Cup is a major concern. Each stadium has entry turnstiles which use barcode, proximity or biometric readers to confirm the identity of those seeking access.",
     questionText: "(i) State two advantages of using barcodes. (ii) Explain the term ‘biometric’. (iii) Outline two Quality Attributes of an effective security system.",
     tariffModel: {"kind":"questionTotal","notation":"(b) - 10 marks"}, totalMarks: 10,
     rows: [
@@ -374,6 +376,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-b2c", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2014 HL Section B Q2(c)(i), (ii)",
+    stem: "Communication between referees and officials has become easier through the use of wireless communication systems which transmit sound at UHF in the range 450 – 470 Mhz.",
     questionText: "(i) Describe two pieces of hardware required for wireless communication. (ii) Outline two advantages of using a wireless communication system.",
     tariffModel: {"kind":"questionTotal","notation":"(c) OR (d) - 6 marks"}, totalMarks: 6,
     rows: [
@@ -389,6 +392,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-b2d", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2014 HL Section B Q2(d)(i), (ii)",
+    stem: "A shin guard or pad is an essential piece of equipment in sports such as football, camogie, hurling and soccer. These guards have a hard outer shell with a softer inner lining and are designed to protect the lower leg from impact.",
     questionText: "(i) List one property required of the material used to manufacture the outer shell and one property of the material used to manufacture the inner lining. (ii) Describe, using notes and annotated sketches, a method of fastening the shin guard in place during a match.",
     tariffModel: {"kind":"questionTotal","notation":"(c) OR (d) - 6 marks"}, totalMarks: 6,
     rows: [
@@ -414,6 +418,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-b3a", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2014 HL Section B Q3(a)(i), (ii)",
+    stem: "On August 6, 2012, the Mars rover ‘Curiosity’ landed safely having travelled over 560 million kilometres in less than a year. Radioisotope power systems are installed on the rover, using plutonium as fuel.",
     questionText: "(i) Suggest two reasons for using radioisotope power rather than solar power systems. (ii) Outline two technological benefits accruing to society from the science and engineering developed for space exploration.",
     tariffModel: {"kind":"questionTotal","notation":"(a) - 8 marks"}, totalMarks: 8,
     rows: [
@@ -428,6 +433,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-b3b", topicId: "tech-core-structures", conceptId: "core-structures",
     section: "B", questionRef: "2014 HL Section B Q3(b)(i), (ii), (iii)",
+    stem: "The rover has a robotic arm with a cross-shaped turret, which holds five devices. The turret can rotate through a 350° angle.",
     questionText: "(i) Name any two electronic devices that might be attached to the turret. (ii) A servo motor is used to move the robotic arm. From the data given below calculate the torque of the motor required to move the arm. Note: g = 9.8m/s2 (iii) Each wheel of the Mars rover is driven independently and designed to rotate with very little friction as this reduces power usage. Sketch and label a drive mechanism for the rover wheel and include a means of reducing friction as the wheel rotates.",
     tariffModel: {"kind":"questionTotal","notation":"(b) - 10 marks"}, totalMarks: 10,
     rows: [
@@ -462,6 +468,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-b3c", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "B", questionRef: "2014 HL Section B Q3(c)(i), (ii)",
+    stem: "The Mars rover sends spectra and true colour images to Earth using its on-board camera system (MastCam).",
     questionText: "(i) Compare bitmap and vector based images, making reference to quality and sharpness. (ii) Outline a process of editing to reduce the brightness of a photograph sent back from the Mars rover.",
     tariffModel: {"kind":"questionTotal","notation":"(c) OR (d) - 6 marks"}, totalMarks: 6,
     rows: [
@@ -470,6 +477,15 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Brightness, colour, contrast, etc. can be edited using photo-editing software.", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "Colour filtering allows for the selection of a % brightness which can brighten or darken a photo, etc.", marks: null, openList: true },
     ],
+    questionFigure: {
+          "candId": "technology-2014-HL-paper-secB-q3c-art",
+          "src": "/exam-figures/technology/markbank/technology-2014-HL-paper-secB-q3c-art.png",
+          "srcHash": "31f5dc8bb4feae75383cf3cb51cd0b87",
+          "alt": "Photograph of the Mars rover camera system: a camera head and its electronics mounted on a small base plate.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Technology 2014 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -478,6 +494,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-b3d", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2014 HL Section B Q3(d)(i), (ii)",
+    stem: "Correct material choice for the Mars rover was vital so that it could withstand the severe conditions encountered on Mars with temperatures ranging from 30° C in daytime to -50° C at night.",
     questionText: "(i) Distinguish clearly, with examples, between ceramic and composite materials. (ii) Describe a comparison test which could be used to inform the selection of materials capable of withstanding the extremes of temperature expected on Mars.",
     tariffModel: {"kind":"questionTotal","notation":"(c) OR (d) - 6 marks"}, totalMarks: 6,
     rows: [
@@ -493,6 +510,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-c1a", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2014 HL Section C Q1(a)(i), (ii)",
+    stem: "Many 3D printers are described as Cartesian (XYZ) printers. Printers produced by the award-winning Co. Louth company, Mcor Technologies®, use paper to build up three-dimensional printed models. The models produced are eco-friendly and suitable for rapid prototyping.",
     questionText: "(i) Outline the suitability of 3D printing for prototyping a mobile phone. (ii) Explain, using sketches, the terms polar coordinate system and cylindrical coordinate system.",
     tariffModel: {"kind":"questionTotal","notation":"(a) - 10 marks"}, totalMarks: 10,
     rows: [
@@ -517,6 +535,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-c1b", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2014 HL Section C Q1(b)(i), (ii)",
+    stem: "Air conditioning units are used to control temperature, humidity, air quality and air movement. A typical air conditioning unit is shown. • When the power is turned on, a red pilot light illuminates • The room temperature is then compared with the desired temperature • If the room temperature is too high or too low, the air conditioner fan runs until the desired temperature is achieved • A green light remains illuminated while the room is at the desired temperature.",
     questionText: "(i) Draw a flowchart for the operation of this air conditioning unit. (ii) Modify the flowchart to include an alert for the user if the motor in the air conditioning unit overheats.",
     tariffModel: {"kind":"fixed","notation":"(b) - 16 marks"}, totalMarks: 16,
     rows: [
@@ -548,6 +567,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-c1c", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2014 HL Section C Q1(c)(i), (ii)",
+    stem: "Ekso is a wearable robot or exoskeleton that enables people with lower-extremity paralysis or weakness to stand and walk. It is powered by two high-capacity lithium batteries which drive the hip and knee motors in proper sequence.",
     questionText: "(i) Ekso uses a closed-loop control system to maintain proper positioning of the exoskeleton. Outline the principles of a closed-loop system of control. (ii) Compare servo motors and stepper motors as sources of motive power.",
     tariffModel: {"kind":"questionTotal","notation":"(c) OR (d) - 14 marks"}, totalMarks: 14,
     rows: [
@@ -587,6 +607,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-c2a", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2014 HL Section C Q2(a)(i), (ii)",
+    stem: "Integrated circuits with semiconductor components are used to control electrical household devices.",
     questionText: "(i) Distinguish clearly, with examples, between conductor, insulator and semiconductor materials. (ii) An electrical heater with a resistance of 24 ohms is connected to a 240V supply for 12 hours. Calculate the cost of operation if electrical energy costs 25 cents per kWh.",
     tariffModel: {"kind":"questionTotal","notation":"(a) - 10 marks"}, totalMarks: 10,
     rows: [
@@ -610,6 +631,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-c2b", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2014 HL Section C Q2(b)(i), (ii), (iii)",
+    stem: "An ultrasonic pest deterrent device is shown. It uses a 555 timer to send out an ultrasonic sound at regular intervals to deter pests. It also incorporates a soft-glow nightlight.",
     questionText: "(i) The circuit shown is astable. Describe what is meant by an astable circuit. (ii) The soft-glow nightlight stays on continuously while the ultrasonic sound is emitted at intervals. Describe how the given circuit could be modified to achieve this. (iii) For the given circuit, if the value of C is 10μF, R1 is 10kΩ and R2 is 68kΩ calculate the frequency. Note: f = 1.44 / (2R2 + R1) × C",
     tariffModel: {"kind":"questionTotal","notation":"(b) - 16 marks"}, totalMarks: 16,
     rows: [
@@ -634,6 +656,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-c2c", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2014 HL Section C Q2(c)(i), (ii)",
+    stem: "DC motors are inexpensive and versatile and are used in many electrical appliances.",
     questionText: "(i) Name parts A, B and C of the DC motor shown. (ii) Describe one electrical and one mechanical method used to change the direction of rotation of a DC motor.",
     tariffModel: {"kind":"questionTotal","notation":"(c) OR (d) - 14 marks"}, totalMarks: 14,
     rows: [
@@ -672,6 +695,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-c2d", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2014 HL Section C Q2(d)(i), (ii)",
+    stem: "The weather station shown will activate an alarm when cold temperatures are detected at night. It also has an override switch to turn the unit off.",
     questionText: "(i) Draw a logic circuit to reflect the given truth table. (ii) Name any sensor which could be used in the weather station.",
     tariffModel: {"kind":"questionTotal","notation":"(c) OR (d) - 14 marks"}, totalMarks: 14,
     rows: [
@@ -735,6 +759,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-c3c", topicId: "tech-opt-ict", conceptId: "opt-ict",
     section: "C", questionRef: "2014 HL Section C Q3(c)(i), (ii)",
+    stem: "Software applications are key to effective use of ICT.",
     questionText: "(i) Describe the advantages and disadvantages for a company of using proprietary software rather than open source software. (ii) Word processing software allows font editing to enhance a document. For each of the following items of functionality, name a software package which includes that feature.",
     tariffModel: {"kind":"questionTotal","notation":"(c) OR (d) - 14 marks"}, totalMarks: 14,
     rows: [
@@ -779,6 +804,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-c4a", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2014 HL Section C Q4(a)(i), (ii)",
+    stem: "A new concept phone called Phonebloks is under development in which the phone is made up of detachable blocks. The design aims are to reduce e-waste and to allow upgrading or replacement of the modular blocks.",
     questionText: "(i) Outline what is meant by a modular approach to design. (ii) Explain the terms reverse engineering and feasibility study.",
     tariffModel: {"kind":"questionTotal","notation":"(a) - 10 marks"}, totalMarks: 10,
     rows: [
@@ -902,6 +928,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-c5b", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2014 HL Section C Q5(b)(i), (ii), (iii)",
+    stem: "An innovative design for a computer workstation is shown.",
     questionText: "(i) Suggest two reasons why the workstation frame is made from steel. (ii) The seat is made from four polypropylene parts. Outline a manufacturing process suitable for the production of these parts. (iii) Explain, using notes and annotated sketches, a method of attaching the adjustable screens to the steel frame.",
     tariffModel: {"kind":"questionTotal","notation":"(b) - 16 marks"}, totalMarks: 16,
     rows: [
@@ -970,6 +997,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2014 Higher Level — © State Examinations Commission.",
     id: "tech-2014-hl-c5d", topicId: "tech-opt-materials", conceptId: "opt-materials",
     section: "C", questionRef: "2014 HL Section C Q5(d)(i), (ii)",
+    stem: "The H-racer model car shown operates on 100% clean fuel produced by a miniature solar-powered hydrogen refuelling station, which converts water to hydrogen using energy captured from the sun.",
     questionText: "(i) Give two reasons for the development of technologies such as the hydrogen fuel cell. (ii) Outline the environmental impact of producing this model car, from the production of the initial polymers to end-of-life disposal.",
     tariffModel: {"kind":"questionTotal","notation":"(c) OR (d) - 14 marks"}, totalMarks: 14,
     rows: [

@@ -1779,6 +1779,9 @@ REVIEWED.update({
         'A robotic arm diagram: a Motor at the left end of a bar, a 2.5 kg mass '
         'at the right end, the two 1.1 m apart; beside it a photograph of the '
         'rover arm with its Turret labelled.',
+    'technology-2014-HL-paper-secB-q3c-art':
+        'Photograph of the Mars rover camera system: a camera head and its '
+        'electronics mounted on a small base plate.',
     'technology-2014-HL-paper-secC-q1b-art':
         'Photograph of a white wall-mounted air conditioning unit.',
     'technology-2014-HL-paper-secC-q2b-art':
@@ -1815,6 +1818,113 @@ REVIEWED.update({
     'technology-2014-HL-paper-secC-q5d-art':
         'Photograph of a model hydrogen car beside a small hydrogen refuelling '
         'station and a solar panel.',
+})
+
+# 2014 Ordinary, each crop rendered and looked at.
+REVIEWED.update({
+    'technology-2014-OL-paper-secA-q1-art':
+        'Photograph of workers in hard hats and high-visibility vests working on '
+        'a large pipe section in a field.',
+    'technology-2014-OL-paper-secA-q3-art':
+        'A yellow triangular safety sign with a black border, showing black '
+        'flames over a line.',
+    'technology-2014-OL-paper-secA-q4-art':
+        'Photograph at night of a cable-stayed bridge, its two towers lit blue.',
+    'technology-2014-OL-paper-secA-q5-art':
+        'Photograph of a clear plastic water bottle with a blue cap.',
+    'technology-2014-OL-paper-secA-q6-art':
+        'Photograph of a hand writing with a stylus on a small screen pad '
+        'connected by a cable.',
+    'technology-2014-OL-paper-secA-q7-art':
+        'An exploded line drawing of a chair: the back and seat above, the frame '
+        'pieces and legs separated below, and an arrow labelled A pointing at it '
+        'from the lower left.',
+    'technology-2014-OL-paper-secA-q8-art':
+        'Photograph of an electric jig saw with its blade pointing down.',
+    'technology-2014-OL-paper-secA-q9-art':
+        'A resistor colour code table, colour bars for the digits 0 to 9, and a '
+        'resistor with four coloured bands.',
+    'technology-2014-OL-paper-secA-q10-art':
+        'A rendering of a heat sensor fan: a blue fan on a curved green acrylic '
+        'upright with circular holes, on a round yellow and green base.',
+    'technology-2014-OL-paper-secA-q11-art':
+        'Photograph of a clear plastic food container with a blue lid, holding '
+        'two burgers.',
+    'technology-2014-OL-paper-secA-q12-art':
+        'Line drawing of a gas cylinder with a valve and a handle on top.',
+    'technology-2014-OL-paper-secB-q2a-art':
+        'Photograph of a cruise ship lying on its side in the water, with a '
+        'crane vessel beside it.',
+    'technology-2014-OL-paper-secB-q2b-art':
+        'A diagram of the salvage: the ship tilted against the shore with a box '
+        'labelled Caisson on its side, and a steel frame under it labelled '
+        'Platform.',
+    'technology-2014-OL-paper-secB-q2c-art':
+        'An illustration of a satellite with solar panels above the Earth.',
+    'technology-2014-OL-paper-secB-q2d-art':
+        'Photograph of two cupped hands holding a green glass globe.',
+    'technology-2014-OL-paper-secB-q3a-art':
+        'A rendering of a pizza-slice shaped timer made of stacked layers, with '
+        'an arrow captioned Layers of 3 mm Acrylic.',
+    'technology-2014-OL-paper-secB-q3b-art':
+        'A circuit: a push switch and capacitor feed the base of a transistor '
+        'through a resistor; the transistor switches an LED and its resistor; a '
+        'battery supplies the circuit.',
+    'technology-2014-OL-paper-secB-q3d-art':
+        'Photographs of a green printed circuit board, captioned PCB, and a '
+        'copper stripboard, captioned Copper Stripboard.',
+    'technology-2014-OL-paper-secC-q1a-art':
+        'Photograph of a white and pink robotic toy dog with its remote control.',
+    'technology-2014-OL-paper-secC-q1b-art':
+        'A flowchart: Start, LDR? '
+        '(N loops back), Motor Up, Limit Switch? (N loops back), Motor Stop, '
+        'Wait 5, Motor Down, Limit Switch? (N loops back), Motor Stop, Stop.',
+    'technology-2014-OL-paper-secC-q1c-art':
+        'Photograph of a multi-rotor drone with a camera in flight.',
+    'technology-2014-OL-paper-secC-q1d-art':
+        'A cutaway drawing of a pneumatic valve, a push button at the left, a '
+        'spring at the right, with arrows numbered 1 and 2 pointing to a port '
+        'and to the spring.',
+    'technology-2014-OL-paper-secC-q2a-art':
+        'Photograph of a small chip held between a finger and thumb.',
+    'technology-2014-OL-paper-secC-q2b-art':
+        'Photograph of an eight-pin chip marked NE555N.',
+    'technology-2014-OL-paper-secC-q2c-art':
+        'Photograph of a small yellow plastic gearbox motor.',
+    'technology-2014-OL-paper-secC-q2d-art':
+        'A circuit between +V and 0V: a resistor in series with a light emitting '
+        'diode.',
+    'technology-2014-OL-paper-secC-q3a-art':
+        'A weather map of Europe on a globe, with city names and temperatures.',
+    'technology-2014-OL-paper-secC-q3b-art':
+        'Photograph of an eye close up behind a finger touching a glass screen.',
+    'technology-2014-OL-paper-secC-q3c-art':
+        'A screenshot of a CAD export dialog: File name, Export type with a '
+        'drop-down list of file formats, and Export, Cancel and Options buttons.',
+    'technology-2014-OL-paper-secC-q3d-art':
+        'A blue wireless signal symbol: a dot under three arcs.',
+    'technology-2014-OL-paper-secC-q4a-art':
+        'Photographs of a kite surfer in the air and of a black and red water '
+        'sports harness, captioned Water Sports Harness.',
+    'technology-2014-OL-paper-secC-q4b-art':
+        'A control chart with a UCL line at the top and an LCL line at the '
+        'bottom, a dashed centre line, and a plotted line of samples, '
+        'labelled Samples taken from the process.',
+    'technology-2014-OL-paper-secC-q4c-art':
+        'An organisational chart: Managing Director above four departments, '
+        'Sales and Marketing, Production, Human Resources and Finance.',
+    'technology-2014-OL-paper-secC-q4d-art':
+        'Photograph of a team of people working at laptops around a table.',
+    'technology-2014-OL-paper-secC-q5a-art':
+        'Three photographs captioned Engineered Wood - door panels, Medium '
+        'Density Fibreboard - (MDF) furniture panels, and Oriented Strand Board '
+        '- (OSB) flooring panels.',
+    'technology-2014-OL-paper-secC-q5b-art':
+        "Photograph of a child's folding scooter, with an arrow labelled A "
+        'pointing to its base.',
+    'technology-2014-OL-paper-secC-q5d-art':
+        'The Forest Stewardship Council logo: a tree drawn as a tick over the '
+        'letters FSC.',
 })
 
 REJECTED = {

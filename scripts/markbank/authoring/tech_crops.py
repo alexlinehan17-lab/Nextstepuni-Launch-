@@ -1795,6 +1795,15 @@ SOLUTION_NOT_ZONE = {
     'technology-2016-OL-scheme-secC-q4b-ii',
 }
 
+# Answers the scheme prints as a column of short steps, one per line and no
+# full stops, that the drawing test would read as a flowchart's boxes: each
+# checked on the scheme page to be a list of steps in prose, not a drawing.
+LISTED_STEPS = {
+    # 2014 Ordinary Q10, scheme page 7: "Design parts on CAD" ... "Assemble
+    # /Test, etc." -- the four main steps the ask names, set as a list.
+    (2014, 'ol', 'A', 10, None, None),
+}
+
 # Scheme answers the printed scheme leaves unfinished, mid-sentence, each read
 # off the scheme page: (year, level, section, q, letter, roman) -> the row's
 # closing words. The row is lifted up to the break and noted, never finished.
@@ -2871,6 +2880,8 @@ BY_EYE.update({
     'technology-2014-HL-paper-secB-q2a-art': ('015', 1, (459, 68, 582, 226)),
     # 3(b): the arm's data diagram and the turret photograph.
     'technology-2014-HL-paper-secB-q3b-art': ('015', 2, (100, 268, 540, 405)),
+    # 3(c): the rover's MastCam camera system.
+    'technology-2014-HL-paper-secB-q3c-art': ('015', 2, (412, 528, 555, 628)),
     'technology-2014-HL-paper-secC-q1b-art': ('015', 3, (396, 283, 580, 390)),
     # 2(b): the deterrent device and its 555 circuit.
     'technology-2014-HL-paper-secC-q2b-art': ('015', 4, (195, 195, 565, 365)),
@@ -2996,6 +3007,17 @@ LABEL_ZONES.setdefault((2014, 'hl'), []).extend([
     (18, (385, 258, 565, 328)),    # 4(c)(ii)'s graphs reprinted
     (19, (345, 405, 575, 485)),    # 5(c)(i)'s photograph and labels
 ])
+MD_LINE_FIX[(2014, 'ol')] = [
+    # Q2: its head "2." printed on the ask's second line; the first line had
+    # closed Q1's block as an answer. The number moves to the front.
+    (r'^Drilling is an essential task in project manufacture\. In the boxes provided, draw well$', ''),
+    (r'^2\. (proportioned freehand sketches to explain the following terms associated with drilling\.)$',
+     r'2. Drilling is an essential task in project manufacture. In the boxes provided, draw well \1'),
+    # 2(a)(i): "Silicon Carbide" broken across the line, joined.
+    (r'^or insulator depending on chemical or external conditions\. Examples Germanium /Silicon$', ''),
+    (r'^Carbide, etc\.$',
+     'or insulator depending on chemical or external conditions. Examples Germanium /Silicon Carbide, etc.'),
+]
 MD_LINE_FIX[(2014, 'hl')] = [
     # 1(a)(ii): two columns of notes welded line by line; each column's
     # words, in order, on a line of its own.
@@ -3016,6 +3038,130 @@ MD_LINE_FIX[(2014, 'hl')] = [
     (r'^(specifications\u2013 most parts produced would pass an inspection test, etc\.)$',
      r'Capable process means that the normal distribution curve falls within the design \1'),
 ]
+
+# 2014 Ordinary. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    'technology-2014-OL-paper-secA-q1-art': ('014', 1, (381, 121, 529, 202)),
+    'technology-2014-OL-paper-secA-q3-art': ('014', 1, (397, 586, 502, 682)),
+    'technology-2014-OL-paper-secA-q4-art': ('014', 2, (363, 133, 524, 228)),
+    'technology-2014-OL-paper-secA-q5-art': ('014', 2, (71, 357, 158, 466)),
+    'technology-2014-OL-paper-secA-q6-art': ('014', 2, (65, 604, 225, 719)),
+    'technology-2014-OL-paper-secA-q7-art': ('014', 3, (355, 75, 515, 272)),
+    'technology-2014-OL-paper-secA-q8-art': ('014', 3, (387, 320, 526, 459)),
+    # Q9: the colour code table and the resistor R.
+    'technology-2014-OL-paper-secA-q9-art': ('014', 3, (82, 584, 208, 712)),
+    'technology-2014-OL-paper-secA-q10-art': ('014', 4, (394, 67, 513, 278)),
+    'technology-2014-OL-paper-secA-q11-art': ('014', 4, (348, 372, 524, 503)),
+    'technology-2014-OL-paper-secA-q12-art': ('014', 4, (247, 596, 368, 773)),
+    'technology-2014-OL-paper-secB-q2a-art': ('015', 1, (403, 92, 560, 219)),
+    'technology-2014-OL-paper-secB-q2b-art': ('015', 1, (381, 270, 564, 398)),
+    'technology-2014-OL-paper-secB-q2c-art': ('015', 1, (42, 504, 166, 604)),
+    'technology-2014-OL-paper-secB-q2d-art': ('015', 1, (419, 659, 541, 781)),
+    'technology-2014-OL-paper-secB-q3a-art': ('015', 2, (391, 88, 572, 218)),
+    'technology-2014-OL-paper-secB-q3b-art': ('015', 2, (358, 292, 572, 458)),
+    'technology-2014-OL-paper-secB-q3d-art': ('015', 2, (92, 686, 512, 790)),
+    'technology-2014-OL-paper-secC-q1a-art': ('015', 3, (29, 116, 135, 212)),
+    # 1(b): the student's flowchart, which (ii) and (iii) are asked about.
+    # The barrier photograph beside the stem is left out: set side by side
+    # with it, the flowchart was too small to read on a phone.
+    'technology-2014-OL-paper-secC-q1b-art': ('015', 3, (470, 215, 548, 495)),
+    'technology-2014-OL-paper-secC-q1c-art': ('015', 3, (54, 545, 182, 631)),
+    'technology-2014-OL-paper-secC-q1d-art': ('015', 3, (385, 705, 535, 795)),
+    'technology-2014-OL-paper-secC-q2a-art': ('015', 4, (429, 77, 540, 173)),
+    'technology-2014-OL-paper-secC-q2b-art': ('015', 4, (446, 283, 550, 363)),
+    'technology-2014-OL-paper-secC-q2c-art': ('015', 4, (55, 467, 178, 590)),
+    # 2(d)(ii)'s resistor and LED circuit.
+    'technology-2014-OL-paper-secC-q2d-art': ('015', 4, (100, 684, 200, 800)),
+    'technology-2014-OL-paper-secC-q3a-art': ('015', 5, (18, 87, 191, 189)),
+    'technology-2014-OL-paper-secC-q3b-art': ('015', 5, (436, 216, 557, 305)),
+    'technology-2014-OL-paper-secC-q3c-art': ('015', 5, (372, 455, 574, 530)),
+    'technology-2014-OL-paper-secC-q3d-art': ('015', 5, (423, 645, 553, 766)),
+    'technology-2014-OL-paper-secC-q4a-art': ('015', 6, (345, 37, 572, 192)),
+    'technology-2014-OL-paper-secC-q4b-art': ('015', 6, (25, 246, 216, 336)),
+    'technology-2014-OL-paper-secC-q4c-art': ('015', 6, (393, 445, 572, 525)),
+    'technology-2014-OL-paper-secC-q4d-art': ('015', 6, (427, 623, 562, 697)),
+    'technology-2014-OL-paper-secC-q5a-art': ('015', 7, (94, 78, 533, 203)),
+    'technology-2014-OL-paper-secC-q5b-art': ('015', 7, (406, 282, 546, 513)),
+    'technology-2014-OL-paper-secC-q5d-art': ('015', 7, (457, 658, 563, 787)),
+})
+WHITEOUT.update({
+    # Q7's ask ends level with the top of the chair.
+    'technology-2014-OL-paper-secA-q7-art': [(355, 75, 372, 100)],
+    # Q9's (i) and (ii) asks, printed right of the table.
+    'technology-2014-OL-paper-secA-q9-art': [(128, 586, 208, 606), (128, 676, 208, 712)],
+    # The end of 3(b)(iii)'s ask beside the switch.
+    'technology-2014-OL-paper-secB-q3b-art': [(358, 382, 378, 400)],
+    # 4(a)'s stem and asks, left of the harness pictures.
+    'technology-2014-OL-paper-secC-q4a-art': [(345, 37, 476, 150)],
+    # The end of 4(c)'s stem, "company.".
+    'technology-2014-OL-paper-secC-q4c-art': [(393, 445, 450, 466)],
+    # The end of 5(a)(ii)'s ask beside the plywood sketch.
+    'technology-2014-OL-scheme-secC-q5a': [(436, 211, 474, 240), (436, 240, 446, 252)],
+})
+FIGURE_SHARED.update({
+    # 3(c): "the pizza timer project", the 3(a) picture.
+    'technology-2014-OL-paper-secB-q3c-art': 'technology-2014-OL-paper-secB-q3a-art',
+    # 5(c): "the metal parts of the scooter" shown at 5(b).
+    'technology-2014-OL-paper-secC-q5c-art': 'technology-2014-OL-paper-secC-q5b-art',
+})
+SOLUTIONS.update({
+    'technology-2014-OL-scheme-secA-q2': (3, (190, 318, 352, 528),
+        "The marking scheme's own sketches for 2014 OL Section A Q2, as the "
+        "State Examinations Commission printed them: a drill gauge, a plate "
+        "with two rows of holes of decreasing size, and a countersunk hole in "
+        "section, a countersunk screw entering a hole with a tapered top."),
+    'technology-2014-OL-scheme-secA-q7': (5, (150, 125, 250, 262),
+        "The marking scheme's own sketch for 2014 OL Section A Q7, as the State "
+        "Examinations Commission printed it: the assembled chair seen from the "
+        "side, a back rising from the seat and two splayed legs."),
+    'technology-2014-OL-scheme-secB-q3b': (10, (395, 288, 550, 432),
+        "The marking scheme's own circuit for 2014 OL Section B 3(b), as the "
+        "State Examinations Commission printed it: the given circuit with its "
+        "components labelled LED, Transistor and Push-to-make switch, and a "
+        "buzzer added in parallel with the LED."),
+    'technology-2014-OL-scheme-secC-q1b': (11, (468, 228, 548, 482),
+        "The marking scheme's own flowchart for 2014 OL Section C 1(b), as the "
+        "State Examinations Commission printed it: the student's flowchart, "
+        "Start, LDR?, Motor Up, Limit Switch?, Motor Stop, Wait 2, Motor Down, "
+        "Limit Switch?, Motor Stop, with a line from the last Motor Stop back "
+        "to above LDR?."),
+    'technology-2014-OL-scheme-secC-q2c': (12, (372, 524, 542, 598),
+        "The marking scheme's own sketch for 2014 OL Section C 2(c)(ii), as the "
+        "State Examinations Commission printed it: a battery and a motor M "
+        "wired through a double-pole double-throw switch whose cross-connected "
+        "contacts reverse the motor."),
+    'technology-2014-OL-scheme-secC-q2d': (12, (78, 679, 192, 800),
+        "The marking scheme's own diagram for 2014 OL Section C 2(d)(ii), as the "
+        "State Examinations Commission printed it: the resistor and LED between "
+        "+V and 0V, with a voltmeter V connected across the resistor."),
+    'technology-2014-OL-scheme-secC-q3d': (13, (394, 686, 545, 795),
+        "The marking scheme's own picture for 2014 OL Section C 3(d)(ii), as the "
+        "State Examinations Commission printed it: a home network, a wireless "
+        "router linked to the internet through a cable modem, with computers, "
+        "laptops, a games console, a fax and a printer around it."),
+    'technology-2014-OL-scheme-secC-q5a': (15, (436, 211, 571, 289),
+        "The marking scheme's own sketch for 2014 OL Section C 5(a)(ii), as the "
+        "State Examinations Commission printed it: a sheet of plywood with its "
+        "layers stepped back, arrows showing the grain of alternate veneers at "
+        "right angles."),
+})
+ASK_ONLY.update({
+    'technology-2014-OL-scheme-secA-q2',
+    'technology-2014-OL-scheme-secA-q7',
+})
+LABEL_ZONES.setdefault((2014, 'ol'), []).extend([
+    (5, (352, 75, 515, 275)),      # Q7's chair reprinted, arrow A
+    (9, (395, 255, 565, 375)),     # 2(b)'s salvage diagram, Caisson, Platform
+    (10, (393, 88, 572, 222)),     # 3(a)'s pizza timer, its caption
+    (10, (90, 720, 560, 790)),     # 3(d)'s PCB and stripboard, captioned
+    (11, (450, 705, 552, 790)),    # 1(d)'s valve reprinted, 1 and 2
+    (13, (32, 105, 160, 182)),     # 3(a)'s weather map
+    (13, (381, 422, 554, 488)),    # 3(c)'s export dialog
+    (14, (25, 258, 170, 328)),     # 4(b)'s control chart
+    (14, (390, 420, 572, 515)),    # 4(c)'s organisational chart
+    (15, (118, 88, 483, 183)),     # 5(a)'s three boards, captioned
+    (15, (488, 308, 560, 412)),    # 5(b)'s scooter, its A
+])
 
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
@@ -3072,6 +3218,10 @@ ASK_STRIP = {
     (2016, 'hl', 'B', 3, 'd', 'i'): [r'^Construct a Gantt chart for the project\.$'],
     # 2016 Ordinary Q3: the answer lines' numbers "1 2" after the ask.
     (2016, 'ol', 'A', 3, None, None): [r'\s+1 2(?: Solar Paper®)?$'],
+    # 2014 Ordinary Q9: (ii)'s answer label after the given formula.
+    (2014, 'ol', 'A', 9, None, None): [r'\s+Current \(I\) =$'],
+    # 2014 Ordinary 1(b): the flowchart's lettering, filed as the letter's stem.
+    (2014, 'ol', 'C', 1, 'b', None): [r'(?:^|\s+)N LDR\? Y Motor Up\b.*$'],
     # 2014 Higher Q6: the node's lettering, X and Y, and the answer lines'
     # EST/LST labels, read after the stem.
     (2014, 'hl', 'A', 6, None, None): [r'\s+X EST EST Activity Name Duration LST LST Y X Y$'],

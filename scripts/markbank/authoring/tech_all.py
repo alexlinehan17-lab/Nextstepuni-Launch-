@@ -711,7 +711,7 @@ def solution_index():
     return figs
 
 
-def stem_pieces(section, q, letter, roman, texts, stems):
+def stem_pieces(section, q, letter, roman, texts, stems, whole_letter=False):
     """The stimulus printed above a part, in the order the paper prints it.
 
     The question's own introduction, then the lettered part's head sentence
@@ -725,7 +725,10 @@ def stem_pieces(section, q, letter, roman, texts, stems):
     pieces = []
     if letter:
         pieces.append(stems.get((section, q, None)) or '')
-    if letter and roman:
+    # ...and the same head above a card that covers every roman of its
+    # letter (2010-2014, priced only by letter): "The cruise ship Costa
+    # Concordia ran aground..." is 2014 Ordinary 2(a)'s stimulus.
+    if letter and (roman or whole_letter):
         pieces.append(texts.get((section, q, letter, None), ''))
     pieces.append(stems.get((section, q, letter)) or '')
     out = []
@@ -933,7 +936,8 @@ def author(bind_figures=True):
                 # names every one of them.
                 pieces = []
                 lost_picture = not figure and points_at_print(question)
-                for piece in stem_pieces(section, q, letter, roman, texts, stems):
+                whole_letter = roman is None and len([k for k in covered if k[3]]) > 1
+                for piece in stem_pieces(section, q, letter, roman, texts, stems, whole_letter):
                     if stem_owner and piece == letter_stem:
                         continue
                     # The answerbook's ruled blanks and their fill-in labels
@@ -1006,8 +1010,16 @@ def author(bind_figures=True):
                 # and Q14 open their blocks with the paper's own sentence --
                 # and a line that sits inside it is no answer either.
                 bare_stem = SCHEME_NORM(' '.join(pieces))
+                # ...and a whole SENTENCE of the stimulus at any length, closed
+                # as the paper closes it: "Silicon is a semiconductor." (2014
+                # Ordinary 2(a)), its stem's last sentence, set above (i).
+                stem_sentences = {SCHEME_NORM(t) for t in
+                                  re.split(r'(?<=[.?!])\s+', ' '.join(pieces)) if t}
                 points = [p for p in points
                           if not (len(SCHEME_WORDS(p)) >= 5 and SCHEME_NORM(p) in bare_stem)
+                          and not (p.rstrip().endswith(('.', '?', '!'))
+                                   and len(p.split()) >= 3
+                                   and SCHEME_NORM(p) in stem_sentences)
                           # The stimulus's given data reprinted whole, "Assume
                           # g = 9.81 m/s2" over 2019 Higher 11(i)'s working: a
                           # line that opens "Assume" gives, it does not answer.
@@ -1117,7 +1129,9 @@ def author(bind_figures=True):
                         points = [p for p in points if p is not bands[0]]
                 unprinted_note = TC.UNPRINTED.get((year, level, section, q, letter, roman))
                 ask_row = bool(solution and solution in TC.ASK_ONLY) or bool(unprinted_note)
-                if not ask_row and (not points or graphic_fragments(points)):
+                if not ask_row and (not points or (
+                        graphic_fragments(points)
+                        and (year, level, section, q, letter, roman) not in TC.LISTED_STEPS)):
                     # The answer is a DRAWING: the text layer holds nothing,
                     # or the words read off a flowchart's boxes and a truth
                     # table's rows, not one of which states anything. Where

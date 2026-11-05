@@ -298,6 +298,17 @@ TOPIC_OVERRIDES = {
     'tech-2014-hl-b2d': 'tech-core-materials',     # shin guard materials and fastening
     'tech-2014-hl-b3b': 'tech-core-structures',    # torque, drive mechanism
     'tech-2014-hl-b3c': 'tech-core-ict',           # bitmap and vector images
+    # 2014 Ordinary.
+    'tech-2014-ol-a1': 'tech-core-materials',      # a gas pipeline (environment)
+    'tech-2014-ol-a2': 'tech-core-graphics',       # sketches of drilling terms
+    'tech-2014-ol-a3': 'tech-core-materials',      # a safety sign, printing it
+    'tech-2014-ol-a8': 'tech-core-structures',     # reciprocating motion
+    'tech-2014-ol-a10': 'tech-core-materials',     # steps to manufacture the fan
+    'tech-2014-ol-a11': 'tech-core-project',       # cost of quality
+    'tech-2014-ol-b2b': 'tech-core-structures',    # caissons, platform, triangulation
+    'tech-2014-ol-b2c': 'tech-core-ict',           # GPS
+    'tech-2014-ol-b3a': 'tech-core-materials',     # acrylic, battery access
+    'tech-2014-ol-b3d': 'tech-core-energy',        # PCB and soldering
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]
