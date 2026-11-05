@@ -62,6 +62,13 @@ CROPS = {
     'engineering-2022-HL-scheme-q8cii-sol': dict(
         doc='scheme', page=26, rect=(85, 95, 270, 216), solution=True,
         ref='2022 HL Q8(c)(ii)'),
+    # Scheme p7: the two structures drawn and captioned beside Q1(b)'s answer.
+    'engineering-2022-HL-scheme-q1b-sol': dict(
+        doc='scheme', page=7, rect=(315, 300, 560, 393), solution=True, ref='2022 HL Q1(b)'),
+    # Scheme p24: the two interlocking guards photographed and captioned.
+    'engineering-2022-HL-scheme-q8bii-sol': dict(
+        doc='scheme', page=24, rect=(100, 592, 560, 763), solution=True,
+        ref='2022 HL Q8(b)(ii)'),
 }
 
 CARDS = [
@@ -156,6 +163,25 @@ CARDS = [
              '(a); scheme p27 lists three advantages for "4 + 4".',
          use=[0, 1, 2], tariff='orderedSplit', notation='4 + 4', ladder=8,
          question_figure='engineering-2022-HL-paper-q9a-crop'),
+    dict(key=(1, 'b', None),
+         replaces='the shipped card ran the two drawings\' captions, "Crystalline Structures '
+                  'Amorphous Structures", on at the end of the crystalline answer',
+         why='Scheme p7 describes each structure in its own paragraph beside two captioned '
+             'drawings, shown with the answer; "5" for the part.',
+         topic='eng-1-3',
+         lifted=[S(7, 70, 298, 300, 333), S(7, 70, 341, 300, 393)],
+         tariff='questionTotal', total=5,
+         figure='engineering-2022-HL-scheme-q1b-sol',
+         notes="The scheme prints '5'."),
+    dict(key=(8, 'b', 'ii'),
+         replaces='the shipped card\'s second row was the two photographs\' captions, '
+                  '"Pillar drilling machine interlocking guard Centre lathe interlocking guard"',
+         why='Scheme p24 describes the interlocking guard in one paragraph over two '
+             'captioned photographs, shown with the answer; "6 marks".',
+         topic='eng-3-1',
+         lifted=[S(24, 105, 509, 562, 593)], marks=[6], total=6,
+         figure='engineering-2022-HL-scheme-q8bii-sol',
+         notes="The scheme prints '6 marks'."),
 ]
 
 TOPICS = {

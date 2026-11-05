@@ -384,6 +384,15 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Jack Kilby Jack Kilby (1923 – 2005) was an American electrical engineer who took part in the realization of the first integrated circuit while working at Texas Instruments in 1958. He was awarded the Nobel Prize in physics in 2000. He is also the inventor of the handheld calculator and the thermal printer.", marks: 5, accepts: ["Marie Curie (1867 – 1934) was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity and discovered two elements - polonium and radium. She was the first woman to win a Nobel Prize and the only person to win in multiple sciences.","John Dunlop. John Dunlop (1840 – 1921) was a Scottish inventor who moved to Northern Ireland. He was one of the founders of a rubber company and is recognised for the development of the pneumatic tyre."] },
     ],
+    figure: {
+          "candId": "engineering-2014-HL-scheme-q1h-sol",
+          "src": "/exam-figures/engineering/markbank/engineering-2014-HL-scheme-q1h-sol.png",
+          "srcHash": "f172333d0340eee9e6ed72cf93b7d6a4",
+          "alt": "The marking scheme's printed answer for 2014 HL Q1(h), as the State Examinations Commission set it. It reads: Marie Curie Marie (1867 – 1934) was a Polish and naturalized-French physicist and Skáodowska-Curie chemist who conducted pioneering research on radioactivity and discovered two elements - polonium and radium. She was the first woman to win a Nobel Prize and the only person to win in multiple sciences..",
+          "attribution": "SEC Leaving Certificate Engineering 2014 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -504,7 +513,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2014 Higher Level — © State Examinations Commission.",
     id: "eng-2014-hl-q1-n", topicId: "eng-3-14", conceptId: "nuclear-power-plants-provide-some-energy",
     section: "A", questionRef: "2014 HL Q1(n)",
-    questionText: "Nuclear power plants provide some of the energy in many modern industrialised economies. Discuss this energy source with reference to: • Efficiency • Environmental impact.",
+    questionText: "Nuclear power plants provide some of the energy in many modern industrialised economies. Discuss this energy source with reference to:\n• Efficiency\n• Environmental impact.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Efficiency 1kg of uranium can produce heat equivalent to 2.7million tonnes of coal. It costs about the same as coal therefore, it is not expensive to make. It produces a small amount of waste, this does demand careful management. It is a reliable and stable source of energy and is not subject to fluctuations in price or demand. It is not an intermittent source unlike solar, wind or wave power etc..", marks: 5 },
@@ -605,7 +614,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2014 Higher Level — © State Examinations Commission.",
     id: "eng-2014-hl-q1-r", topicId: "eng-3-14", conceptId: "safety-primary-concern-design-construction-operation",
     section: "A", questionRef: "2014 HL Q1(r)",
-    questionText: "Safety is a primary concern in the design, construction and operation of any modern nuclear power plant. Describe how any two of the following contribute to overall safety: (i) Modern safety regulations; (ii) Containment building; (iii) Back-up power supply.",
+    questionText: "Safety is a primary concern in the design, construction and operation of any modern nuclear power plant. Describe how any two of the following contribute to overall safety:\n(i) Modern safety regulations;\n(ii) Containment building;\n(iii) Back-up power supply.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Modern safety regulations: • On site fully equipped fire-fighting teams and medical staff • Own armed police force • Consistent emphasis on safety • EPA checks on local area and produce • Vacuum Chambers - Trap irradiated steam leaks • Reinforced Concrete Reactors • Reinforced Concrete Flasks for Transporting waste 50ton flask contains 1ton waste • Gravity Activated Electro-Magnetic Control Rods - shutdown if loss of power • Injection of Coolant to inhibit reactions", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Modern safety regulations: • On site fully equipped fire-fighting teams and medical staff • Own armed police force • Consistent emphasis on safety • EPA checks on local area and produce • Vacuum Chambers - Trap irradiated steam leaks • Reinforced Concrete Reactors • Reinforced Concrete Flasks for Transporting waste 50ton flask contains 1ton waste • Gravity Activated Electro-Magnetic Control Rods - shutdown if loss of power • Injection of Coolant to inhibit reactions","Containment building: The containment building itself is typically an airtight steel structure enclosing the reactor normally sealed off from the outside atmosphere. The steel is either free-standing or attached to the concrete missile shield. It is designed to withstand the impact of a fully loaded passenger airliner without rupture.","Back-up power supply: These are a required feature in nuclear power plants. They are usually diesel powered generators which provide power for all control and cooling systems should the main power fail. They are typically installed in sets of three. The meltdown at Fukushima was caused by a failure of backup power when the room containing the diesel engines was flooded by the tsunami."]} },
@@ -730,7 +739,7 @@ export const CARDS: SecCard[] = [
     questionText: "The results shown below were obtained from a tensile test on a non-ferrous alloy. Using the graph paper supplied, plot the Stress-Strain diagram for the alloy and determine: The 0.1% proof stress.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "From the graph 332 N/mm2", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "From the graph — 332 N/mm2", marks: 4 },
     ],
     questionFigure: {
           "candId": "engineering-2014-HL-paper-q2b-crop",
@@ -1258,7 +1267,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2014 Higher Level — © State Examinations Commission.",
     id: "eng-2014-hl-q6-b", topicId: "eng-1-9", conceptId: "how-polymer-properties-may-be-enhanced",
     section: "A", questionRef: "2014 HL Q6(b)",
-    questionText: "Describe how polymer properties may be enhanced by any three of the following: (i) Plasticisers; (ii) Stabilisers; (iii) Glass or carbon fibre; (iv) Lamination.",
+    questionText: "Describe how polymer properties may be enhanced by any three of the following:\n(i) Plasticisers;\n(ii) Stabilisers;\n(iii) Glass or carbon fibre;\n(iv) Lamination.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Plasticisers are added to polymers to improve their flexibility. They achieve this by altering the forces of attraction between molecules of the polymer.", marks: 18, group: {"claimMax":3,"perOption":6,"options":["Plasticisers are added to polymers to improve their flexibility. They achieve this by altering the forces of attraction between molecules of the polymer.","Stabilisers help prevent the degradation effects that heat, ultra-violet light and other environmental conditions place on the polymer.","Glass or carbon fibre: The addition of glass or carbon fibre greatly increases the strength of plastic, commonly polyester resins are used. Boats and storage tanks are commonly made from these materials.","Lamination: Thin layers of materials bonded together. High strength plastics can be produced by layers of paper or cloth coated with resin being bonded together. Heat and pressure can be used."]} },
@@ -1330,7 +1339,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2014 Higher Level — © State Examinations Commission.",
     id: "eng-2014-hl-q7-c", topicId: "eng-2-11", conceptId: "answer-part-i-or-part-ii",
     section: "A", questionRef: "2014 HL Q7(c)",
-    questionText: "Answer part (i) or part (ii): (i) Describe, with the aid of suitable diagrams, each of the following: • a single point cutting tool • a multi-point cutting tool • an abrasive cutting tool. (ii) Describe how carbide cutting tools are manufactured and state two advantages of using carbide cutting tools.",
+    questionText: "Answer part (i) or part (ii): (i) Describe, with the aid of suitable diagrams, each of the following:\n• a single point cutting tool\n• a multi-point cutting tool\n• an abrasive cutting tool.\n(ii) Describe how carbide cutting tools are manufactured and state two advantages of using carbide cutting tools.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Single point cutting tool: Carbide insert cutting tool Multi-point cutting tool: Drill bit or milling cutter Abrasive cutting tool: Grinding machines", marks: 16, accepts: ["During the production of tungsten carbide cutting tool inserts, cobalt and tungsten powder are mixed with cemented carbide and pressed into shape. The process: • Carbon black, tungsten metal and metal oxides are mixed and heated until the carbon bonds with the tungsten (carburises). • Mix the tungsten carbide powder with wax and cobalt. • This is mixed very thoroughly using a ball mill to give you a final powder. • This final powder is put in a mould and pressed to the desired shape. • Heat (pre-sinter) the pressed, final powder enough so that is sticks together and shapes like soft chalk. • Put the soft chalk pieces in a very hot, high pressure, special atmosphere oven and do the final sinter where the powder cooks, shrinks and gets very hard , this is the final piece of tungsten carbide. Advantages of using carbide cutting tools: Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS. Experienced operators will ensure longer tool life. Tools are not sharpened which is time consuming and dependent on the skill of the operator for effectiveness, inserts are replaced. Inserts can have a number of cutting edges integrated into their design."] },
@@ -1435,7 +1444,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2014 Higher Level — © State Examinations Commission.",
     id: "eng-2014-hl-q8-b", topicId: "eng-2-15", conceptId: "any-following",
     section: "A", questionRef: "2014 HL Q8(b)",
-    questionText: "Describe any three of the following: (i) The differences in operation between a single-acting cylinder and a double-acting cylinder in pneumatic control. (ii) The operation and application of a rack and pinion system. (iii) One application of reciprocating motion. (iv) A toggle mechanism. (v) The function of idler gears.",
+    questionText: "Describe any three of the following:\n(i) The differences in operation between a single-acting cylinder and a double-acting cylinder in pneumatic control.\n(ii) The operation and application of a rack and pinion system.\n(iii) One application of reciprocating motion.\n(iv) A toggle mechanism.\n(v) The function of idler gears.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "A single acting cylinder is a pneumatic output device that requires compressed air to make the piston move. If the air is removed the piston will return. A double acting cylinder needs compressed air to move the piston but will stay in this position if the air is turned off. It needs air to return the piston to its original position.", marks: 18, group: {"claimMax":3,"perOption":6,"options":["A single acting cylinder is a pneumatic output device that requires compressed air to make the piston move. If the air is removed the piston will return. A double acting cylinder needs compressed air to move the piston but will stay in this position if the air is turned off. It needs air to return the piston to its original position.","Rack and pinion: In a rack and pinion mechanism, the rotational motion of the pinion is translated into the linear motion of the rack. Applications include steering racks in cars, drilling machine tables, carriage on lathe etc.","Reciprocating motion: Cutting with a saw, sliding door, piston in an engine, etc.","Toggle mechanism: This linkage is widely used as a clamping mechanism, it is used in a ‘vice grips’ as it holds very firmly and is quick to use.","Idler gears: An additional gear that is inserted between two other gears with the purpose of changing the direction of gear rotation. Idler gears do not have an influence on the gear ratio of the system. They allow the input gear and output gear shafts to rotate in the same direction."]} },
@@ -2011,7 +2020,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2015 Higher Level — © State Examinations Commission.",
     id: "eng-2015-hl-q1-q", topicId: "eng-2-15", conceptId: "modern-fuel-injection-systems-rely-multiple",
     section: "A", questionRef: "2015 HL Q1(q)",
-    questionText: "Modern fuel injection systems rely on multiple components and sensors. Describe briefly the function of any two of the following: (i) Throttle position sensor; (ii) Lambda sensor; (iii) Crankshaft position sensor; (iv) MAP sensor.",
+    questionText: "Modern fuel injection systems rely on multiple components and sensors. Describe briefly the function of any two of the following:\n(i) Throttle position sensor;\n(ii) Lambda sensor;\n(iii) Crankshaft position sensor;\n(iv) MAP sensor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Throttle position sensor This sensor monitors the throttle valve position, which determines how much air goes into the engine. The ECU can respond quickly to changes, increasing or decreasing the fuel rate as necessary.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Throttle position sensor This sensor monitors the throttle valve position, which determines how much air goes into the engine. The ECU can respond quickly to changes, increasing or decreasing the fuel rate as necessary.","Lambda sensor The exhaust gas oxygen sensor (EGO or O2), or lambda sensor, is the key sensor in the engine fuel control feedback loop. The computer uses the O2 sensor input to balance the fuel mixture, leaning the mixture when the sensor reads rich and richening the mixture when the sensor reads lean.","Crankshaft position sensor The crankshaft position sensor provides information on the speed and position of the crankshaft. This is used to determine firing order and cylinder recognition, timing and crank position, spark ignition timing and fuel injection timing.","MAP sensor The Manifold Absolute Pressure Sensor or MAP is located in the intake manifold. This sensor is used to measure manifold pressure which informs the ECU of the engine load, this information is needed to work out how much fuel to inject. In order to work out the air mass the ECU also needs to know the air temperature and the engine speed."]} },
@@ -2024,7 +2033,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2015 Higher Level — © State Examinations Commission.",
     id: "eng-2015-hl-q1-r", topicId: "eng-2-15", conceptId: "discuss-main-features-direct-injection-reference",
     section: "A", questionRef: "2015 HL Q1(r)",
-    questionText: "Discuss the main features of Direct Injection, with reference to: • Injection timing • Mixture formation (air : fuel ratio).",
+    questionText: "Discuss the main features of Direct Injection, with reference to:\n• Injection timing\n• Mixture formation (air : fuel ratio).",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Mixture formation The theoretical ideal ratio of 14.7 air to 1 part petrol is generally achieved with a homogenous mixture which can rise close to 20:1, this gives good economy and low emissions. Maximum torque and power are achieved at a richer ratio of around 12:1. Homogenous mixture has all the mixture volume at the same ratio. The mixture can be stratified where pockets of air : fuel mixture is created within the cylinder and surrounded by air, this gives a ratio of up to 40:1 with reduced fuel consumption and less power generated.", marks: 5 },
@@ -2185,7 +2194,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2015 Higher Level — © State Examinations Commission.",
     id: "eng-2015-hl-q3-b-ii", topicId: "eng-1-3", conceptId: "detail-point-x-point-y-reference",
     section: "A", questionRef: "2015 HL Q3(b)(ii)",
-    questionText: "Describe in detail point X and point Y, with reference to each of the following: • Phase change • Composition • Temperature.",
+    questionText: "Describe in detail point X and point Y, with reference to each of the following:\n• Phase change\n• Composition\n• Temperature.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Name: Eutectoid point Phase change: solid austenite changes to solid pearlite Composition: 0.83% carbon Temperature: 723oC", marks: 5 },
@@ -2208,7 +2217,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2015 Higher Level — © State Examinations Commission.",
     id: "eng-2015-hl-q3-c", topicId: "eng-2-6", conceptId: "select-any-following-distinguish-between",
     section: "A", questionRef: "2015 HL Q3(c)",
-    questionText: "Select any two of the following and distinguish between: (i) Optical pyrometer and thermocouple pyrometer; (ii) Induction hardening and flame hardening; (iii) Ferrite and pearlite; (iv) Soaking and water cooling in heat treatment.",
+    questionText: "Select any two of the following and distinguish between:\n(i) Optical pyrometer and thermocouple pyrometer;\n(ii) Induction hardening and flame hardening;\n(iii) Ferrite and pearlite;\n(iv) Soaking and water cooling in heat treatment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Optical pyrometer: this method compares the intensity of light from the filament of a lamp. Current flow from the lamp can be adjusted, using a variable resistor, to match the light from the furnace. When the filament seems to ‘disappear’, a temperature reading can be taken. Thermocouple Pyrometer: A galvanometer measures the electrical current generated by a rise in temperature of two dissimilar metals joined together. A temperature output is converted from the electrical units.", marks: 16, group: {"claimMax":2,"perOption":8,"options":["Optical pyrometer: this method compares the intensity of light from the filament of a lamp. Current flow from the lamp can be adjusted, using a variable resistor, to match the light from the furnace. When the filament seems to ‘disappear’, a temperature reading can be taken. Thermocouple Pyrometer: A galvanometer measures the electrical current generated by a rise in temperature of two dissimilar metals joined together. A temperature output is converted from the electrical units.","Induction hardening: A coil carries high frequency currents which are induced on the surface of the component causing a rapid rise in temperature. This allows a change to austenite in the surface layers of the component. Water jets then cool the steel transforming the austenite to martensite. This leaves the outer surface hard while the inner core is tough. The frequency of the current determines the depth of heating and the depth of hardening. Flame hardening: The surface of the steel object is heated to 850°C with an oxy-acetylene flame and quenched quickly. This creates a hard outside layer as the heated austenite structure changes to hard martensite. The depth of hardening depends on the rate of heating.","Ferrite is iron that contains less than 0.02% carbon dissolved in solution, it is almost pure iron. It has a body centred cubic structure. Pearlite is a mixture of alternate layers of ferrite and cementite. It is mostly ferrite and gives off a sheen similar to mother of pearl. Pearlite is formed at 0.83% carbon.","The holding of a metal at a suitable heat treatment temperature is called soaking. The object of heat treatment is to bring about changes in the properties of a metal. To accomplish this, the metal must be heated to a temperature at which structural changes will take place within the metal as the constituents go into solution. With such slow cooling, grain structure will be refined and internal stresses will be relieved. Quenching in water will result in an increase in hardness and brittleness with greater prospects of cracking or warping."]} },
@@ -2418,7 +2427,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2015 Higher Level — © State Examinations Commission.",
     id: "eng-2015-hl-q5-a-iv", topicId: "eng-2-10", conceptId: "suggest-suitable-method-protect-against-each",
     section: "A", questionRef: "2015 HL Q5(a)(iv)",
-    questionText: "Suggest a suitable method to protect against each of the following when welding: • Electric shock • Intense light from welding • Welding fumes.",
+    questionText: "Suggest a suitable method to protect against each of the following when welding:\n• Electric shock\n• Intense light from welding\n• Welding fumes.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Electric shock can be prevented by making sure all electrical connections are secure and insulated and that dampness is not an issue in the welding area. The correct size fuse and a proper earth should also be maintained.", marks: null },
@@ -2459,7 +2468,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe in detail the key principles of the welding process selected.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "MIG welding: A semi-automatic process. A consumable bare wire electrode is fed continuously into the weld pool area through the welding torch. An inert gas, such as Argon, creates a protective shield pool giving a fluxing action. The feed rate and flow rate of the gas are set by the operator. This allows the operator to guide the torch along the weld once the arc is generated between the electrode and the work. MIG welding does not produce a slag on the weld.", marks: 10 },
+    { id: "r-1", kind: "point", verbatim: "MIG welding: A semi-automatic process. A consumable bare wire electrode is fed continuously into the weld pool area through the welding torch. An inert gas, such as Argon, creates a protective shield around the weld pool giving a fluxing action. The feed rate and flow rate of the gas are set by the operator. This allows the operator to guide the torch along the weld once the arc is generated between the electrode and the work. MIG welding does not produce a slag on the weld.", marks: 10 },
     ],
     questionFigure: {
           "candId": "engineering-2015-HL-paper-q5bi-art",
@@ -2487,7 +2496,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2015 Higher Level — © State Examinations Commission.",
     id: "eng-2015-hl-q5-c", topicId: "eng-2-10", conceptId: "using-following-guidelines-compare-resistance-seam",
     section: "A", questionRef: "2015 HL Q5(c)",
-    questionText: "Using the following guidelines, compare resistance seam welding and resistance spot welding: • Electrode shape • Principle of operation • Weld joint • Application.",
+    questionText: "Using the following guidelines, compare resistance seam welding and resistance spot welding:\n• Electrode shape\n• Principle of operation\n• Weld joint\n• Application.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Resistance spot welding Electrode shape The electrode is in the shape of a round bar with tapered ends where it contacts the material.", marks: null },
@@ -2516,7 +2525,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2015 Higher Level — © State Examinations Commission.",
     id: "eng-2015-hl-q5-c-i", topicId: "eng-3-14", conceptId: "importance-each-following-relation-robocoaster-device",
     section: "A", questionRef: "2015 HL Q5(c)(i)",
-    questionText: "Explain the importance of each of the following in relation to the Robocoaster device shown opposite: • Degrees of freedom • Working envelope.",
+    questionText: "Explain the importance of each of the following in relation to the Robocoaster device shown opposite:\n• Degrees of freedom\n• Working envelope.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Degree of freedom A description of the number of axes the robot arm can move. A single joint will provide one degree of freedom. To provide a variety of degrees of freedom, different robotic joints can be used such as rotary or linear joints. The degrees of freedom will determine how the robocoaster will move and are normally programmed in a series of motions.", marks: 4 },
@@ -2624,7 +2633,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2015 Higher Level — © State Examinations Commission.",
     id: "eng-2015-hl-q6-b", topicId: "eng-1-9", conceptId: "select-any-following-distinguish-between",
     section: "A", questionRef: "2015 HL Q6(b)",
-    questionText: "Select any two of the following and distinguish between: (i) Amorphous and crystalline polymer; (ii) Natural and synthetic rubber; (iii) Foaming agents and fillers; (iv) Catalyst and inhibitor.",
+    questionText: "Select any two of the following and distinguish between:\n(i) Amorphous and crystalline polymer;\n(ii) Natural and synthetic rubber;\n(iii) Foaming agents and fillers;\n(iv) Catalyst and inhibitor.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Amorphous polymers do not have a pattern in the arrangement of their atoms but are a more random structure. Crystalline polymers have atoms that are bonded together in a pattern that is repeated.", marks: 16, group: {"claimMax":2,"perOption":8,"options":["Amorphous polymers do not have a pattern in the arrangement of their atoms but are a more random structure. Crystalline polymers have atoms that are bonded together in a pattern that is repeated.","Natural rubber is the sap from the rubber tree. It has folded polymer chains which are bonded by weak Van der Waals forces. It is both plastic and elastic. Synthetic rubber is rubber processed with sulphur to give cross-links between the folded chains, this is vulcanisation. A stronger bond which is more durable and less flexible than natural rubber is developed.","Foaming agents are substances which add bubbles to a polymer. They increase the bulk of the polymer making it lighter. Examples include sponges and buoyancy aids. Fillers: These additives control the mechanical properties, such as material strength, of the polymer. They reduce the amount of expensive polymer used. Fillers such as chalk, wood flour and glass fibre can be used.","Catalyst: These will speed up or slow down a chemical reaction, they are used to initiate the polymerisation process. Inhibitor: Prevent certain chemical combinations from happening or slow down reactions."]} },
@@ -2842,7 +2851,7 @@ export const CARDS: SecCard[] = [
     questionText: "A worm and worm wheel mechanism is used to tension the volleyball net shown opposite. Describe, with the aid of a diagram, how the worm and worm wheel mechanism shown may be operated to tension the net.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The worm and wheel mechanism will provide adjustment of net tightness. The tensioning handle will be attached to the worm mechanism with the gear wheel driving the net cord. As the handle is turned, the worm will rotate, this drives to gear wheel and tightens the net cord.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "The worm and wheel mechanism will provide precise adjustment of net tightness. The tensioning handle will be attached to the worm mechanism with the gear wheel driving the net cord. As the handle is turned, the worm will rotate, this drives to gear wheel and tightens the net cord.", marks: 8 },
     ],
     questionFigure: {
           "candId": "engineering-2015-HL-paper-q8a-crop",
@@ -2901,7 +2910,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2015 Higher Level — © State Examinations Commission.",
     id: "eng-2015-hl-q8-b", topicId: "eng-2-15", conceptId: "any-following",
     section: "A", questionRef: "2015 HL Q8(b)",
-    questionText: "Explain any three of the following: (i) The function of a thermostat; (ii) The advantages of roller bearings; (iii) One application of a DPDT switch; (iv) Two advantages of helical gears over spur gears; (v) The operation of a pneumatic double-acting cylinder.",
+    questionText: "Explain any three of the following:\n(i) The function of a thermostat;\n(ii) The advantages of roller bearings;\n(iii) One application of a DPDT switch;\n(iv) Two advantages of helical gears over spur gears;\n(v) The operation of a pneumatic double-acting cylinder.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "A thermostat is a component of a control system which senses the temperature of a system so that the system's temperature is maintained near a desired set-point. The thermostat does this by switching heating or cooling devices on or off, or regulating the flow of a heat transfer fluid as needed, to maintain the correct temperature.", marks: 18, group: {"claimMax":3,"perOption":6,"options":["A thermostat is a component of a control system which senses the temperature of a system so that the system's temperature is maintained near a desired set-point. The thermostat does this by switching heating or cooling devices on or off, or regulating the flow of a heat transfer fluid as needed, to maintain the correct temperature.","Advantages of roller bearings • Roller bearings typically have higher load capacity than ball bearings • Gives a smoother drive • Are generally easy to replace and maintain • Are designed in a range of sizes in both length and diameter • Tapered roller bearings support both radial and axial loads.","A Double Pole Double Throw switch may be used to turn a circuit on or off. DPDT switches are commonly used to operate a motor both forward and reverse.","The advantages of helical gears: • Allow a number of teeth to mesh at the same time providing a strong drive • Shafts need not be parallel for transferring power • Quieter in operation then straight spur gears.","A double acting cylinder needs compressed air to move the piston but will stay in this position if the air is turned off. It needs air to return the piston to its original position."]} },
@@ -3610,7 +3619,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Higher Level — © State Examinations Commission.",
     id: "eng-2016-hl-q1-r", topicId: "eng-2-13", conceptId: "any-following-relation-process-rapid-prototyping",
     section: "A", questionRef: "2016 HL Q1(r)",
-    questionText: "Describe any two of the following in relation to the process of Rapid Prototyping: (i) Dual extruder (ii) Additive process (iii) Support materials (iv) The environmental impact of using rapid prototyping techniques.",
+    questionText: "Describe any two of the following in relation to the process of Rapid Prototyping:\n(i) Dual extruder\n(ii) Additive process\n(iii) Support materials\n(iv) The environmental impact of using rapid prototyping techniques.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Dual extruder The dual extruder is a printing head which allows two types of material to be used at the same time. The second material can be used to assist in the manufacture of the object or add other colours to the object.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Dual extruder The dual extruder is a printing head which allows two types of material to be used at the same time. The second material can be used to assist in the manufacture of the object or add other colours to the object.","Additive process The principle that materials are added together, usually in layers, to make a product. This saves on material used in traditional manufacturing techniques where material is cut away to form an object.","Support materials During the printing of some objects it is necessary to use a second material to build up the model. Complex shapes can be created with inclusion of this removable support material.","The environmental impact of using rapid prototyping techniques: Excessive waste of print material is avoided Less expensive tooling is used Edits and mistakes are reduced producing a reduction in trial products Focus on recycled materials for printing."]} },
@@ -4455,7 +4464,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Higher Level — © State Examinations Commission.",
     id: "eng-2016-hl-q7-c", topicId: "eng-2-13", conceptId: "face-milling-cutter-shown-fitted-interchangeable",
     section: "A", questionRef: "2016 HL Q7(c)",
-    questionText: "Indicate whether CNC machining or manual machining is most suitable for each of the following applications. Justify your selection in each case: (i) The production of plumbing fittings; (ii) Customised pieces for a chess set; (iii) Repair of damaged alloy car wheels.",
+    questionText: "Indicate whether CNC machining or manual machining is most suitable for each of the following applications. Justify your selection in each case:\n(i) The production of plumbing fittings;\n(ii) Customised pieces for a chess set;\n(iii) Repair of damaged alloy car wheels.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "point", verbatim: "CNC machining as plumbing fittings are mass produced in high volume.", marks: 6 },
@@ -4533,7 +4542,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Higher Level — © State Examinations Commission.",
     id: "eng-2016-hl-q8-b", topicId: "eng-2-15", conceptId: "any-following",
     section: "A", questionRef: "2016 HL Q8(b)",
-    questionText: "Describe any three of the following: (i) A crank and slider mechanism; (ii) The advantages of a timing chain over a timing belt; (iii) The use of a reservoir in a pneumatic circuit; (iv) The function of a capacitor; (v) The use of an idler gear.",
+    questionText: "Describe any three of the following:\n(i) A crank and slider mechanism;\n(ii) The advantages of a timing chain over a timing belt;\n(iii) The use of a reservoir in a pneumatic circuit;\n(iv) The function of a capacitor;\n(v) The use of an idler gear.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The Crank and Slider mechanism is used to convert rotary motion into reciprocating motion. The crank rotates and the slider reciprocates due to a connecting rod between the crank and the slider. It is commonly found in standard engine designs, compressors and power hacksaws.", marks: 18, group: {"claimMax":3,"perOption":6,"options":["The Crank and Slider mechanism is used to convert rotary motion into reciprocating motion. The crank rotates and the slider reciprocates due to a connecting rod between the crank and the slider. It is commonly found in standard engine designs, compressors and power hacksaws.","Advantages of timing chain over a timing belt: The timing chain provides a stronger drive. The chain is less likely to slip. Although quieter and smoother in operation, the belt is more likely to break or stretch than the chain.","A reservoir is used to create a time delay in a pneumatic circuit, a larger reservoir will result in a longer time delay as it takes longer to fill with air.","A capacitor is a device that can store electrical charge.","Idler gears are used to change the direction of a gear train, it can ensure that driver and driven gears rotate in the same direction."]} },
@@ -4861,7 +4870,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Higher Level — © State Examinations Commission.",
     id: "eng-2017-hl-q7-b-ii", topicId: "eng-2-11", conceptId: "impact-cutting-fluids-metal-cutting-machines",
     section: "A", questionRef: "2017 HL Q7(b)(ii)",
-    questionText: "Describe the impact of cutting fluids on: • metal cutting machines and • metal cutting efficiency.",
+    questionText: "Describe the impact of cutting fluids on:\n• metal cutting machines and\n• metal cutting efficiency.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Metal cutting machines: prolong machine life, reduces vibration, maintains tool sharpness, etc.", marks: 4 },
@@ -5261,7 +5270,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Higher Level — © State Examinations Commission.",
     id: "eng-2017-hl-q1-q", topicId: "eng-3-14", conceptId: "detail-any-following-processes",
     section: "A", questionRef: "2017 HL Q1(q)",
-    questionText: "Describe in detail any one of the following processes: (i) Lead by nose; (ii) Teach pendant; (iii) Off-line programming.",
+    questionText: "Describe in detail any one of the following processes:\n(i) Lead by nose;\n(ii) Teach pendant;\n(iii) Off-line programming.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Lead by Nose: In this method, one user holds the robot's manipulator, while another person enters a command which de-energizes the robot causing it to go into limp. The user then moves the robot by hand to the required positions and/or along a required path while the software logs these positions into memory. The program can later run the robot to these positions or along the taught path. This technique is popular for tasks such as spray painting.", marks: 10, accepts: ["Teach Pendant: This is the most common method of programming robots. It is a hand-held device with push buttons/ joystick to control the robot movements and speed. The programmer can move each axis to create the desired path for the specific operation. They are fitted with a large emergency stop button and can be wired or wireless.","Off-Line Programming: This technique uses 3D software to graphically simulate the robotic movement around a cell or manufacturing line. The simulation process saves time in the design of robotic applications and increases the level of safety as potential problems can be addressed before the system is activated."] },
@@ -5274,7 +5283,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Higher Level — © State Examinations Commission.",
     id: "eng-2017-hl-q1-r", topicId: "eng-3-14", conceptId: "any-following-relation-robotic-control-motor",
     section: "A", questionRef: "2017 HL Q1(r)",
-    questionText: "Describe any two of the following in relation to robotic control in motor vehicle manufacture: (i) Closed loop control; (ii) Degrees of freedom; (iii) Working envelope; (iv) Any two safety features of a robotic system used in automobile manufacture.",
+    questionText: "Describe any two of the following in relation to robotic control in motor vehicle manufacture:\n(i) Closed loop control;\n(ii) Degrees of freedom;\n(iii) Working envelope;\n(iv) Any two safety features of a robotic system used in automobile manufacture.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Closed Loop Control: Used on servo motors. This facility allows feedback to the unit indicating the exact position of the motor shaft. Achieved with the use of an encoder which indicates actual position and compares with programmed. Adjustment then made if necessary. Result is a very high degree of accuracy.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Closed Loop Control: Used on servo motors. This facility allows feedback to the unit indicating the exact position of the motor shaft. Achieved with the use of an encoder which indicates actual position and compares with programmed. Adjustment then made if necessary. Result is a very high degree of accuracy.","Degrees of freedom: A description of the number of axes the robot arm can move. A single joint will provide one degree of freedom. The greater the range of movement, the greater the number of joints either linear or rotary or combinations. Cartesian robots have three degrees of freedom in the X, Y, Z axis which makes them ideal for pick and place tasks. Revolute / Polar type have more joints, 6 or more axes similar to the human arm – ideal for spraying and welding operations.","Working Envelope: This is the three-dimensional volume of space that a robot/arm/end effector will occupy in performing the task.","Safety features of a robotic system used in automobile manufacture Robots and human operators have traditionally been kept apart in case of collision, potentially causing serious injury. The working envelope is enclosed or screened-off in automated environments – no humans in the vicinity. If the area is entered accidently, sensors can effect a shutdown of the operation. Modern systems allow humans to work collaboratively by using sensitive robots that incorporate a variety of sensors that allow the operator to work hand in hand with the robot sharing the same workspace. Artificial intelligence includes force sensors and 2D/3D vision systems allowing them to see and feel, thus preventing collisions or injuries. Some will respond to voice command or can be gesture controlled. These robots can perform many of the complex tasks that are repetitive and can help to eliminate injuries such as R.S.I."]} },
@@ -5363,7 +5372,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Higher Level — © State Examinations Commission.",
     id: "eng-2017-hl-q2-b-ii", topicId: "eng-3-8", conceptId: "indicate-following-points-your-graph-load",
     section: "A", questionRef: "2017 HL Q2(b)(ii)",
-    questionText: "The results shown below were obtained from a tensile test on a carbon steel specimen of 12 mm diameter and 80 mm gauge length. Indicate the following points on your graph: • Elastic limit • Start of necking • Fracture point.",
+    questionText: "The results shown below were obtained from a tensile test on a carbon steel specimen of 12 mm diameter and 80 mm gauge length. Indicate the following points on your graph:\n• Elastic limit\n• Start of necking\n• Fracture point.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Elastic Limit", marks: 2 },
@@ -5660,7 +5669,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Higher Level — © State Examinations Commission.",
     id: "eng-2017-hl-q4-c", topicId: "eng-1-3", conceptId: "select-any-i-ii-or-iii",
     section: "A", questionRef: "2017 HL Q4(c)",
-    questionText: "Select any two from (i), (ii) or (iii) below and differentiate between the terms in each: (i) Amorphous solid structures and crystalline solid structures; (ii) Solvus and solidus; (iii) Body Centre Cubic (BCC) and Face Centre Cubic (FCC) structures.",
+    questionText: "Select any two from (i), (ii) or (iii) below and differentiate between the terms in each:\n(i) Amorphous solid structures and crystalline solid structures;\n(ii) Solvus and solidus;\n(iii) Body Centre Cubic (BCC) and Face Centre Cubic (FCC) structures.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Crystalline atoms are arranged in a pattern. Amorphous atoms are arranged randomly.", marks: 16, group: {"claimMax":2,"perOption":8,"options":["Crystalline atoms are arranged in a pattern. Amorphous atoms are arranged randomly.","A solvus line is the boundary between a solid solution solid and a eutectic alloy and is shown on the lead-tin diagram. A solidus line represents the end of solidification in an alloy.","BCC structures are generally harder and more brittle FCC structure materials are usually more ductile"]} },
@@ -5754,7 +5763,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Higher Level — © State Examinations Commission.",
     id: "eng-2017-hl-q5-c", topicId: "eng-2-10", conceptId: "aid-suitable-diagram-s-any-following",
     section: "A", questionRef: "2017 HL Q5(c)",
-    questionText: "Describe, with the aid of a suitable diagram(s), any one of the following: (i) The transformer-rectifier circuit used in manual metal arc welding. (ii) The essential differences between Metal Inert Gas (MIG) welding and Tungsten Inert Gas (TIG) welding.",
+    questionText: "Describe, with the aid of a suitable diagram(s), any one of the following:\n(i) The transformer-rectifier circuit used in manual metal arc welding.\n(ii) The essential differences between Metal Inert Gas (MIG) welding and Tungsten Inert Gas (TIG) welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "The transformer-rectifier circuit used in manual metal arc welding. A - Transformer: A step-down transformer is used to change the mains voltage from 220V to a suitable level (80-100V) for welding. This will provide the high current needed for welding. This type of transformer has more turns on the primary coil than the secondary coil and will induce alternating current (AC) at a lower voltage. B - Rectifier: The rectifier changes alternating current (AC) to direct current (DC). It consists of four diodes which allows two of the diodes to conduct on each half-cycle of the AC supply. C - Capacitor: The capacitor is employed to provide a smooth supply of low voltage DC.", marks: 16, accepts: ["MIG welding: A semi-automatic process. A consumable bare wire electrode is fed continuously into the weld pool area through the welding torch. An inert gas, such as Argon, creates a protective shield around the weld pool giving a fluxing action. The feed rate and flow rate of the gas are set by the operator. This allows the operator to guide the torch along the weld once the arc is generated between the electrode and the work. MIG welding does not produce a slag on the weld. Tungsten inert gas welding, TIG, TAGS. An arc is formed between the non-consumable electrode and the metal being welded. The inert gas shielded arc is used to flux the joint, argon is often used to prevent oxygen getting to the joint area. A stainless steel filler metal is added manually to the weld pool when necessary. A high frequency generator provides a path for the welding current."] },
@@ -5903,7 +5912,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Higher Level — © State Examinations Commission.",
     id: "eng-2017-hl-q6-c", topicId: "eng-1-9", conceptId: "any-following",
     section: "A", questionRef: "2017 HL Q6(c)",
-    questionText: "Describe any three of the following: (i) Calendering; (ii) Plastic pultrusion; (iii) Monomer; (iv) Catalyst; (v) Compression moulding.",
+    questionText: "Describe any three of the following:\n(i) Calendering;\n(ii) Plastic pultrusion;\n(iii) Monomer;\n(iv) Catalyst;\n(v) Compression moulding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Calendering Continuous lengths of sheets are produced in thermoplastics by calendering. The material passes through a series of heated rollers to gradually produce the desired thickness of material. These sheets may then be cut to size or collected in a roll.", marks: 18, group: {"claimMax":3,"perOption":6,"options":["Calendering Continuous lengths of sheets are produced in thermoplastics by calendering. The material passes through a series of heated rollers to gradually produce the desired thickness of material. These sheets may then be cut to size or collected in a roll.","Plastic Pultrusion: Plastic Pultrusion is similar to extrusion and is associated mainly with thermosetting polymers. In the standard Pultrusion process the reinforcement materials like fibers are impregnated with resin, possibly followed by a separate preforming system, and pulled through a heated stationary die where the resin undergoes polymerization. The impregnation is either done by pulling the reinforcement through a bath or by injecting the resin into an injection chamber which typically is connected to the die. Many resin types may be used in Pultrusion including polyester, polyurethane, vinylester and epoxy. Resin provides the resistance to the environment, (i.e., the corrosion resistance, the UV resistance, the impact resistance, etc.) and the glass provides strength, in addition to safety from fire.","Monomer a molecule of a compound which can react with other molecules to form a polymer.","Catalyst will speed up or slow down a chemical reaction, they are used to initiate the polymerisation process.","Compression Moulding is suitable for thermosetting plastics. It uses a split mould formed to the shape of the object to be moulded. The combination of heat and pressure allows a measured amount of polymer to be shaped. The polymer can be in powder or ‘slug’ form. As the mould closes, the application of heat triggers the chemical reaction of ‘cross-linking’ and the object sets (curing). The mould is opened and the object is removed. These mouldings can have a high quality finish requiring only the removal of ‘flash’."]} },
@@ -6212,7 +6221,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Higher Level — © State Examinations Commission.",
     id: "eng-2018-hl-q5-c-i", topicId: "eng-3-14", conceptId: "following-terms-associated-robotic-lawn-mowers",
     section: "A", questionRef: "2018 HL Q5(c)(i)",
-    questionText: "Explain the following terms associated with robotic lawn mowers: • Self-docking; • Robotic sensors.",
+    questionText: "Explain the following terms associated with robotic lawn mowers:\n• Self-docking;\n• Robotic sensors.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Self-docking: When power is needed, the robotic lawnmower finds its way back to the charging station by using its sensors and GPS location technology.", marks: 4 },
@@ -6257,7 +6266,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Higher Level — © State Examinations Commission.",
     id: "eng-2018-hl-q6-a-ii", topicId: "eng-1-9", conceptId: "suitable-polymer-additive-used-improve-roof",
     section: "A", questionRef: "2018 HL Q6(a)(ii)",
-    questionText: "Outline a suitable polymer additive which is used to improve the roof box for each of the following: • to increase flexibility • to provide greater resistance to UV rays.",
+    questionText: "Outline a suitable polymer additive which is used to improve the roof box for each of the following:\n• to increase flexibility\n• to provide greater resistance to UV rays.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Plasticisers are added to make products softer and more flexible. Some plasticisers evaporate and tend to concentrate in an enclosed space; the \"new car smell\" is caused mostly by plasticisers evaporating from the car interior.", marks: 4 },
@@ -6302,7 +6311,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Higher Level — © State Examinations Commission.",
     id: "eng-2018-hl-q7-a-ii", topicId: "eng-2-11", conceptId: "impact-continuous-chip-formation-surface-finish",
     section: "A", questionRef: "2018 HL Q7(a)(ii)",
-    questionText: "Explain the impact of continuous chip formation on: • Surface finish • Automated machinery.",
+    questionText: "Explain the impact of continuous chip formation on:\n• Surface finish\n• Automated machinery.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A continuous chip will leave a smooth finish on soft ductile materials, such as aluminium or copper. Continuous chips are more likely to produce a stable cutting action which results in a good surface finish.", marks: 4 },
@@ -6782,7 +6791,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Higher Level — © State Examinations Commission.",
     id: "eng-2018-hl-q1-p", topicId: "eng-2-16", conceptId: "flight-control-system-includes-range-sensors",
     section: "A", questionRef: "2018 HL Q1(p)",
-    questionText: "The flight control system includes a range of sensors, mainly to achieve smooth and stable flight. Explain the function of any two of the following in relation to flight control: (i) Accelerometer; (ii) Gyroscope; (iii) Electronic speed controller.",
+    questionText: "The flight control system includes a range of sensors, mainly to achieve smooth and stable flight. Explain the function of any two of the following in relation to flight control:\n(i) Accelerometer;\n(ii) Gyroscope;\n(iii) Electronic speed controller.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Function of accelerometer An accelerometer sensor is designed to measure acceleration in the X, Y and Z axes. Inside this tiny sensor is a small system that bends when a momentum or gravity force is applied. The amount of bend has a proportional value of the output signal. These measurements detect small movements quickly, which is critical for in flight control.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Function of accelerometer An accelerometer sensor is designed to measure acceleration in the X, Y and Z axes. Inside this tiny sensor is a small system that bends when a momentum or gravity force is applied. The amount of bend has a proportional value of the output signal. These measurements detect small movements quickly, which is critical for in flight control.","Function of gyroscope The gyroscope deals with the rotational movements of pitch, roll and yaw. It measures angular velocity and orientation. This movement is converted into electrical signals that can be read by the inertial measurement unit (IMU) and used by the flight control system for stabilisation.","Function of electronic speed controller. The electronic speed controller is an electronic circuit that varies the speed and direction of each motor. It also acts as a dynamic brake to the motor system."]} },
@@ -6795,7 +6804,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Higher Level — © State Examinations Commission.",
     id: "eng-2018-hl-q1-q", topicId: "eng-3-14", conceptId: "drone-navigation-systems-normally-reliant-global",
     section: "A", questionRef: "2018 HL Q1(q)",
-    questionText: "Drone navigation systems are normally reliant on a Global Positioning System (GPS) for safe guidance. Describe briefly any two of the following in relation to navigation: (i) Trilateration; (ii) Autonomous flight; (iii) Auto return home; (iv) FPV flying.",
+    questionText: "Drone navigation systems are normally reliant on a Global Positioning System (GPS) for safe guidance. Describe briefly any two of the following in relation to navigation:\n(i) Trilateration;\n(ii) Autonomous flight;\n(iii) Auto return home;\n(iv) FPV flying.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Trilateration This process is used to pinpoint the exact location of the drone. Accurate navigation/guidance is dependent on the availability of at least three satellites. Each satellite transmits information about its position and time. The GPS receiver on the drone intercepts these signals and calculates the distance and time taken for the signal to travel from each satellite. Once calculated, the drone can pinpoint its location. Spheres are used to establish the distances as both the drone and satellite deal in 3D space.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Trilateration This process is used to pinpoint the exact location of the drone. Accurate navigation/guidance is dependent on the availability of at least three satellites. Each satellite transmits information about its position and time. The GPS receiver on the drone intercepts these signals and calculates the distance and time taken for the signal to travel from each satellite. Once calculated, the drone can pinpoint its location. Spheres are used to establish the distances as both the drone and satellite deal in 3D space.","Autonomous flight This is where the flight path is programmed with GPS co-ordinates or tracked to a signal and the drone then makes its way to the destination. Passenger drones are a good example where the co-ordinates are in-putted on the navigation screen before the drone takes off. On board sensors detect for obstacles to avoid collisions. Other examples are parcel delivery and air ambulance, which tracks emergency mobile calls and uses GPS to navigate to the exact location.","Auto return home One critical safety use of GPS is Auto Return Home. When a drone takes off, it saves the location. If the drone loses contact with the receiver, or the battery goes dangerously low, the drone will return back at its take off point.","FPV flying First-person view (FPV) is a method used to control a drone from the driver or pilot’s viewpoint. It allows the operator to see the drone in real time, control is viewed on a portable monitor rather than by sight. This means that the operator need not have to see the drone allowing the user to fly further and faster."]} },
@@ -6872,7 +6881,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Higher Level — © State Examinations Commission.",
     id: "eng-2018-hl-q2-b-ii", topicId: "eng-3-8", conceptId: "compare-graph-graph-c-reference-each",
     section: "A", questionRef: "2018 HL Q2(b)(ii)",
-    questionText: "The graphs A, B and C shown below were produced following tensile tests on three metals – copper, low carbon steel and stainless steel. Compare graph A and graph C with reference to each of the following: • the shape of the graph • material properties.",
+    questionText: "The graphs A, B and C shown below were produced following tensile tests on three metals – copper, low carbon steel and stainless steel. Compare graph A and graph C with reference to each of the following:\n• the shape of the graph\n• material properties.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Graph A has a relatively short elastic phase where it will return to its original shape and length with the removal of the strain. The metal has very ductile properties where it extends with a relatively small addition of force before fracture. It will stretch for a long time before necking and breaking. Metal A has low tensile strength yet is ductile.", marks: null },
@@ -7070,7 +7079,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Higher Level — © State Examinations Commission.",
     id: "eng-2018-hl-q3-b-iii", topicId: "eng-1-4", conceptId: "annealing-1-2-carbon-steel-under",
     section: "A", questionRef: "2018 HL Q3(b)(iii)",
-    questionText: "A simplified portion of the iron-carbon equilibrium diagram is shown. Describe the annealing of 1.2% carbon steel under the following headings: • Temperature • Cooling process • Effects on the steel.",
+    questionText: "A simplified portion of the iron-carbon equilibrium diagram is shown. Describe the annealing of 1.2% carbon steel under the following headings:\n• Temperature\n• Cooling process\n• Effects on the steel.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "For 1.2% steel the piece is heated 25°-50° above the LCT (approx. 800°C). It is then soaked at this temperature allowing the whole of the piece to be at the same temperature. It is then allowed to cool gradually in the furnace by reducing the temperature.", marks: null },
@@ -7093,7 +7102,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Higher Level — © State Examinations Commission.",
     id: "eng-2018-hl-q3-c", topicId: "eng-2-6", conceptId: "aid-diagram-s-method-measuring-furnace",
     section: "A", questionRef: "2018 HL Q3(c)",
-    questionText: "Describe, with the aid of a diagram(s), one method of measuring furnace temperature, using the following guidelines: • Equipment used • Principles of operation • Accuracy of results.",
+    questionText: "Describe, with the aid of a diagram(s), one method of measuring furnace temperature, using the following guidelines:\n• Equipment used\n• Principles of operation\n• Accuracy of results.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Thermocouple Pyrometer: Principle of operation: Two dissimilar metals are joined together with a galvanometer placed at the cold junction. A rise in temperature at the hot junction produces an electrical current which is recorded by the galvanometer. This galvanometer is calibrated to read in degrees of temperature rather than indicating electrical units. This is a very accurate way to measure furnace temperature.", marks: 16, accepts: ["Optical pyrometer: this method compares the intensity of light from the filament of a lamp. Current flow from the lamp can be adjusted, using a variable resistor, to match the light from the furnace. When the filament seems to ‘disappear’, a temperature reading can be taken. Accuracy will depend on the visual accuracy of the operator."] },
@@ -7263,7 +7272,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Higher Level — © State Examinations Commission.",
     id: "eng-2018-hl-q4-c", topicId: "eng-1-3", conceptId: "select-any-i-ii-or-iii",
     section: "A", questionRef: "2018 HL Q4(c)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between each term: (i) Partial solubility alloy and solid solution alloy; (ii) Work hardening and age hardening; (iii) Ductility in BCC structures and ductility in FCC structures.",
+    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between each term:\n(i) Partial solubility alloy and solid solution alloy;\n(ii) Work hardening and age hardening;\n(iii) Ductility in BCC structures and ductility in FCC structures.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Partial Solubility alloy: An alloy of two metals will dissolve in each other to a limited degree, the lead-tin alloy is an example. Solid solution alloy: When two metals are completely soluble in each other in both the liquid and solid states. When viewed under a microscope, a solid solution appears like a pure metal. Copper-nickel and iron-chromium are examples.", marks: 16, group: {"claimMax":2,"perOption":8,"options":["Partial Solubility alloy: An alloy of two metals will dissolve in each other to a limited degree, the lead-tin alloy is an example. Solid solution alloy: When two metals are completely soluble in each other in both the liquid and solid states. When viewed under a microscope, a solid solution appears like a pure metal. Copper-nickel and iron-chromium are examples.","Work hardening is the internal stressing of a material due to processes such as hammering, filing, drilling etc. Age hardening: Aluminium alloyed with copper and cooled from a high temperature will increase in hardness over time at room temperature. This is due to the precipitation of CuAl2. Age hardening is a feature of a range of alloys, especially non-ferrous combinations.","Ductility in BCC and FCC structures: In the BCC structure, the structure is arranged with an atom at the corner of a cube and an atom in the centre of the cube. This structure is associated with brittleness. In the FCC structure atoms are at the corners of a cube and a single atom in the centre of each face of the cube. Atoms are more tightly packed which allows metals to be more ductile."]} },
@@ -7338,7 +7347,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Higher Level — © State Examinations Commission.",
     id: "eng-2018-hl-q5-c", topicId: "eng-2-10", conceptId: "aid-suitable-diagrams-flame-types-associated",
     section: "A", questionRef: "2018 HL Q5(c)",
-    questionText: "Describe, with the aid of suitable diagrams, the three flame types associated with oxy-acetylene welding with reference to each of the following: • Constituents of each flame • Ratio of oxygen to acetylene gases in each flame • Temperature of each flame • Uses of each flame.",
+    questionText: "Describe, with the aid of suitable diagrams, the three flame types associated with oxy-acetylene welding with reference to each of the following:\n• Constituents of each flame\n• Ratio of oxygen to acetylene gases in each flame\n• Temperature of each flame\n• Uses of each flame.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Neutral flame: A balanced proportion of oxygen and acetylene. Maximum combustion as all carbon from the acetylene is used. Has a working temperature of up to 3300°C. The most extensively used flame for oxy-acetylene welding.", marks: null },
@@ -7398,7 +7407,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Higher Level — © State Examinations Commission.",
     id: "eng-2018-hl-q6-b", topicId: "eng-1-9", conceptId: "any-following",
     section: "A", questionRef: "2018 HL Q6(b)",
-    questionText: "Describe any three of the following: (i) Calendering; (ii) Addition polymerisation; (iii) Glass transition temperature; (iv) Van der Waal forces; (v) Rotational moulding.",
+    questionText: "Describe any three of the following:\n(i) Calendering;\n(ii) Addition polymerisation;\n(iii) Glass transition temperature;\n(iv) Van der Waal forces;\n(v) Rotational moulding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Calendering: Continuous lengths of thermoplastic sheets are produced by calendering. The material passes through a series of heated rollers to gradually produce the desired thickness of material. These sheets may then be cut to size or collected in a roll.", marks: 18, group: {"claimMax":3,"perOption":6,"options":["Calendering: Continuous lengths of thermoplastic sheets are produced by calendering. The material passes through a series of heated rollers to gradually produce the desired thickness of material. These sheets may then be cut to size or collected in a roll.","Additional Polymerisation: Polyethylene is produced by addition polymerisation. Long chainlike molecules are formed by the addition of large numbers of mers. The ethylene molecule (or mer) consists of a strong and a weak bond between the carbon atoms. A catalyst or a free radical, which has an unpaired electron in its outer shell, is released to the ethylene molecule. The weak bond is attacked and one of its electrons is taken by the radical leaving the other free. Then that ethylene molecule behaves like a radical and the process is continuously repeated until termination takes place. Addition polymerisation contains bonds held together by weak van der Waals forces which can be overcome by heat or pressure.","Glass Transition Temperature: Glass transition temperature describes the temperature at which a solid glassy amorphous polymer changes to a rubbery, viscous polymer. It is engineered by altering the degree of branching or cross-linking in the polymer by the addition of plasticisers.","Van der waal forces: These are the bonding forces between polymer chains produced by addition polymerisation. They are weak, secondary covalent bonds that may be disrupted by heat or pressure.","Rotational Moulding Rotational Moulding involves a heated hollow mould which is filled with a charge of thermoplastic material. The charge is heated and softened and then slowly rotated (usually around two perpendicular axes) causing the softened material to disperse and stick to the walls of the mould. In order to maintain even thickness throughout the part, the mould continues to rotate at all times during the heating phase. Products that can be manufactured using rotational moulding include storage tanks, toys, bins and refuse containers, footballs, helmets and canoes."]} },
@@ -7487,7 +7496,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Higher Level — © State Examinations Commission.",
     id: "eng-2018-hl-q7-c-i", topicId: "eng-2-11", conceptId: "aid-diagram-s-differences-between-loading",
     section: "A", questionRef: "2018 HL Q7(c)(i)",
-    questionText: "Grinding wheels are subject to conditions such as loading and glazing which affects the cutting ability of the grinding wheel. Explain, with the aid of a diagram(s), the differences between loading and glazing of grinding wheels. OR In modern CNC systems, CAD software is used to define the dimensions of a part while CAM software is used to control the machine. Explain two of the following terms in relation to CNC technology: • Machine tool envelope • Software simulation • Closed loop control.",
+    questionText: "Grinding wheels are subject to conditions such as loading and glazing which affects the cutting ability of the grinding wheel. Explain, with the aid of a diagram(s), the differences between loading and glazing of grinding wheels. OR In modern CNC systems, CAD software is used to define the dimensions of a part while CAM software is used to control the machine. Explain two of the following terms in relation to CNC technology:\n• Machine tool envelope\n• Software simulation\n• Closed loop control.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Loading: a grinding wheel becomes loaded with small particles when grinding debris becomes trapped in the space between the abrasive grains and the wheel. This will cause overheating of the work piece. Glazing: the grinding wheel has a shiny appearance as the abrasive particles have lost their edge and failed to break away from the wheel. The grinding wheel will not cut effectively. These faults are caused by inappropriate choice of grinding wheel for the material being ground.", marks: 8, route: "a" },
@@ -7821,7 +7830,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Higher Level — © State Examinations Commission.",
     id: "eng-2019-hl-q5-c-i", topicId: "eng-3-14", conceptId: "discuss-impact-robotic-suit-following-areas",
     section: "A", questionRef: "2019 HL Q5(c)(i)",
-    questionText: "Discuss the impact of the robotic suit in the following areas: • Assisting a person with a disability • Rehabilitation due to injury.",
+    questionText: "Discuss the impact of the robotic suit in the following areas:\n• Assisting a person with a disability\n• Rehabilitation due to injury.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Assisting a person with a disability: can compensate for inactive or missing limbs, movement can be sensed and activated by robotic suit, etc.", marks: 4 },
@@ -7926,7 +7935,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Higher Level — © State Examinations Commission.",
     id: "eng-2019-hl-q7-a-i", topicId: "eng-2-11", conceptId: "how-use-cutting-fluids-impact-material",
     section: "A", questionRef: "2019 HL Q7(a)(i)",
-    questionText: "Explain how the use of cutting fluids impact on: • Material surface finish • Cutting tool life.",
+    questionText: "Explain how the use of cutting fluids impact on:\n• Material surface finish\n• Cutting tool life.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Material surface finish: reduces vibration, maintains tool sharpness, the reduction in heat improves surface finish, cutting fluids have a lubricating impact, etc.", marks: 4 },
@@ -8327,7 +8336,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Higher Level — © State Examinations Commission.",
     id: "eng-2019-hl-q1-o", topicId: "eng-3-14", conceptId: "scanning-probe-technology-central-development-nanomaterials",
     section: "A", questionRef: "2019 HL Q1(o)",
-    questionText: "Scanning probe technology is central to the development of nanomaterials. Outline, with the aid of a diagram(s), the operation of one of the following: (i) Atomic Force Microscope (AFM). (ii) Scanning Tunnelling Microscope (STM).",
+    questionText: "Scanning probe technology is central to the development of nanomaterials. Outline, with the aid of a diagram(s), the operation of one of the following:\n(i) Atomic Force Microscope (AFM).\n(ii) Scanning Tunnelling Microscope (STM).",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Atomic Force Microscope (AFM). The free end of the probing cantilever is attached with an atomically sharp tip which is then brought into contact with the surface. The sharper the tip, the better is the resolution. The extent of interactions between the surface and the tip is measured in terms of cantilever displacements. These deflections are monitored using a laser attached to the back of the cantilever, whose beam is detected on a segmented photodetector. A computer display may be created revealing the configuration of the molecules being imaged by the machine.", marks: 10, accepts: ["Scanning Tunneling Microscope (STM) The scanning tunneling microscope (STM) works by scanning a very sharp metal wire tip over a surface. In bringing the tip very close to the surface and applying an electrical voltage to the tip or sample, the surface can be imaged at an extremely small scale. The measuring of changes in current creates the image of the surface at the atomic level."] },
@@ -8349,7 +8358,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Higher Level — © State Examinations Commission.",
     id: "eng-2019-hl-q1-p", topicId: "eng-3-14", conceptId: "specific-applications-nanotechnologies-each-following-diagnosis",
     section: "A", questionRef: "2019 HL Q1(p)",
-    questionText: "Describe specific applications of nanotechnologies in each of the following: • Diagnosis of medical conditions • Delivery of drugs • Prevention of superbugs.",
+    questionText: "Describe specific applications of nanotechnologies in each of the following:\n• Diagnosis of medical conditions\n• Delivery of drugs\n• Prevention of superbugs.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Diagnosis of medical conditions: Every disease has a specific biomarker or genetic pattern that nanotechnology can be used to find. This can help doctors identify the disease and by using nanoparticles that bind to that specific tumour, find out where it is located and thus quickly decide on the correct treatment for the disease. This should lead to a less invasive, less painful, quicker and less traumatic experience for the patient.", marks: 4 },
@@ -8399,7 +8408,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Higher Level — © State Examinations Commission.",
     id: "eng-2019-hl-q1-r", topicId: "eng-3-14", conceptId: "how-nanotechnology-could-benefit-any-following",
     section: "A", questionRef: "2019 HL Q1(r)",
-    questionText: "Describe how nanotechnology could benefit any two of the following: (i) Electronics. (ii) Environmental protection. (iii) Clothing. (iv) Water purity.",
+    questionText: "Describe how nanotechnology could benefit any two of the following:\n(i) Electronics.\n(ii) Environmental protection.\n(iii) Clothing.\n(iv) Water purity.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Electronics Increasing the available power from a battery and decreasing the time required to recharge a battery. These benefits are achieved by coating the surface of an electrode with nanoparticles. This increases the surface area of the electrode thereby allowing more current to flow between the electrode and the chemicals inside the battery. This technique could increase the efficiency of hybrid vehicles by significantly reducing the weight of the batteries needed to provide adequate power. Nanotechnology research is currently working with existing battery materials to improve their effectiveness while also examining alternatives such as ultracapacitors to store charge more effectively. ‘Quantum dots’ nanotechnology create energy efficient LEDs in almost any colour, much closer to our eyes’ natural range than existing technology.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Electronics Increasing the available power from a battery and decreasing the time required to recharge a battery. These benefits are achieved by coating the surface of an electrode with nanoparticles. This increases the surface area of the electrode thereby allowing more current to flow between the electrode and the chemicals inside the battery. This technique could increase the efficiency of hybrid vehicles by significantly reducing the weight of the batteries needed to provide adequate power. Nanotechnology research is currently working with existing battery materials to improve their effectiveness while also examining alternatives such as ultracapacitors to store charge more effectively. ‘Quantum dots’ nanotechnology create energy efficient LEDs in almost any colour, much closer to our eyes’ natural range than existing technology.","Environmental protection. The ambition of nanomaterials in agriculture is to reduce the amount of spread chemicals, minimise nutrient losses in fertilization and increased yield through pest and nutrient management. Graphene surface coatings are developed to absorb and release energy like solar panels. Smart glass can alter reflective properties of glass to reduce energy use.","Clothing. Engineers in Shanghai Jiao Tong University, China have created a chemical coating that causes cotton materials to clean themselves of stains and remove odours when exposed to sunlight. The researchers say the treatment is cheap, nontoxic and ecologically friendly. This nanotechnology is also used in odour-free socks.","Water purity Portable water purifiers like the Lifesaver bottle can be used to collect any available water. Once the bottle is full, it is tightly closed and then pumped. The pressure that builds up by pumping will make the water to pass through a filter, purifying it. This bottle's interchangeable filter can purify up to 6,000 litres. It filters out objects bigger than 15 nm, including viruses, bacteria etc. 0.7 litres of water can be filtered in 20 seconds. Soldiers use this Lifesaver bottle for drinking water."]} },
@@ -8521,7 +8530,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Higher Level — © State Examinations Commission.",
     id: "eng-2019-hl-q2-c-i", topicId: "eng-3-8", conceptId: "application-each-following-methods-ndt-visual",
     section: "A", questionRef: "2019 HL Q2(c)(i)",
-    questionText: "Non-destructive testing (NDT) is critical in the design and maintenance of a wide range of components. Outline one application for each of the following methods of NDT: • Visual inspection • Dye penetrant testing • Magnetic particle testing • Eddy current testing.",
+    questionText: "Non-destructive testing (NDT) is critical in the design and maintenance of a wide range of components. Outline one application for each of the following methods of NDT:\n• Visual inspection\n• Dye penetrant testing\n• Magnetic particle testing\n• Eddy current testing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Visual inspection: sizeable surface defects.", marks: 2 },
@@ -8627,7 +8636,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Higher Level — © State Examinations Commission.",
     id: "eng-2019-hl-q3-c", topicId: "eng-2-6", conceptId: "compare-flame-hardening-induction-hardening-reference",
     section: "A", questionRef: "2019 HL Q3(c)",
-    questionText: "Compare flame hardening and induction hardening with reference to the following: • Equipment • Procedures • Quenching.",
+    questionText: "Compare flame hardening and induction hardening with reference to the following:\n• Equipment\n• Procedures\n• Quenching.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Induction hardening A coil carries high frequency currents which are induced on the surface of the component causing a rapid rise in temperature. This allows a change to austenite in the surface layers of the component. Water jets then cool the steel transforming the austenite to martensite. This leaves the outer surface hard while the inner core is tough. The frequency of the current determines the depth of heating and the depth of hardening.", marks: null },
@@ -8650,7 +8659,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Higher Level — © State Examinations Commission.",
     id: "eng-2019-hl-q4-a", topicId: "eng-1-3", conceptId: "select-any-i-ii-or-iii",
     section: "A", questionRef: "2019 HL Q4(a)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: (i) Cooling curve for an alloy and a cooling curve for a pure metal. (ii) Amorphous materials and crystalline materials. (iii) Eutectic point and eutectoid point.",
+    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each:\n(i) Cooling curve for an alloy and a cooling curve for a pure metal.\n(ii) Amorphous materials and crystalline materials.\n(iii) Eutectic point and eutectoid point.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "When the temperature of a cooling molten metal alloy is plotted against time, a cooling curve is formed.", marks: 16, group: {"claimMax":2,"perOption":8,"options":["When the temperature of a cooling molten metal alloy is plotted against time, a cooling curve is formed.","Crystalline solid structures Crystalline atoms are arranged in a pattern Amorphous solid structures Amorphous atoms are arranged randomly","Eutectic point is the point in a phase diagram indicating the chemical composition and temperature corresponding to the lowest melting point of a mixture of components. The eutectic point occurs at 4.3% carbon and 1147 °C. When the solution above the transformation point is solid, rather than liquid, a eutectoid transformation can occur. For instance, in the iron-carbon system, the austenite phase can undergo a eutectoid transformation to produce ferrite and cementite, often in lamellar structures such as pearlite. This eutectoid point occurs at 723 °C and 0.83% carbon."]} },
@@ -8840,7 +8849,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Higher Level — © State Examinations Commission.",
     id: "eng-2019-hl-q5-c", topicId: "eng-2-10", conceptId: "compare-aid-suitable-diagrams-resistance-spot",
     section: "A", questionRef: "2019 HL Q5(c)",
-    questionText: "Compare, with the aid of suitable diagrams, resistance spot welding and resistance seam welding, using the following headings: • Electrode shape • Welding procedure • Applications of each weld type • Safety considerations.",
+    questionText: "Compare, with the aid of suitable diagrams, resistance spot welding and resistance seam welding, using the following headings:\n• Electrode shape\n• Welding procedure\n• Applications of each weld type\n• Safety considerations.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Resistance spot welding Electrode shape: The electrode is in the shape of a round bar with tapered ends where it contacts the material.", marks: null },
@@ -9035,7 +9044,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Higher Level — © State Examinations Commission.",
     id: "eng-2019-hl-q7-c-i", topicId: "eng-2-11", conceptId: "how-tungsten-carbide-insert-tips-manufactured",
     section: "A", questionRef: "2019 HL Q7(c)(i)",
-    questionText: "Tungsten carbide is the material of choice in the manufacture of mining tips, drill bits and other cutting tools. Explain how tungsten carbide insert tips are manufactured. OR Computer Numerical Control (CNC) technology is to the forefront of precision engineering manufacture. Explain the following aspects of CNC technology: • Impact on productivity • Reliability.",
+    questionText: "Tungsten carbide is the material of choice in the manufacture of mining tips, drill bits and other cutting tools. Explain how tungsten carbide insert tips are manufactured. OR Computer Numerical Control (CNC) technology is to the forefront of precision engineering manufacture. Explain the following aspects of CNC technology:\n• Impact on productivity\n• Reliability.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "During the production of tungsten carbide cutting tool inserts, cobalt and tungsten powder are mixed with cemented carbide and pressed into shape. The process: Carbon black, tungsten metal and metal oxides are mixed and heated until the carbon bonds with the tungsten (carburises). Mix the tungsten carbide powder with wax and cobalt. This is mixed very thoroughly using a ball mill to give you a final powder. This final powder is put in a mould and pressed to the desired shape. Heat (pre-sinter) the pressed, final powder enough so that is sticks together and shapes like soft chalk. Put the soft chalk pieces in a very hot, high pressure, special atmosphere oven and do the final sinter where the powder cooks, shrinks and gets very hard, this is the final piece of tungsten carbide.", marks: 8, route: "a" },
@@ -9050,7 +9059,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Higher Level — © State Examinations Commission.",
     id: "eng-2019-hl-q7-c-ii", topicId: "eng-2-11", conceptId: "advantages-use-tungsten-carbide-insert-tips",
     section: "A", questionRef: "2019 HL Q7(c)(ii)",
-    questionText: "Tungsten carbide is the material of choice in the manufacture of mining tips, drill bits and other cutting tools. Outline two advantages of the use of tungsten carbide insert tips. OR Computer Numerical Control (CNC) technology is to the forefront of precision engineering manufacture. Describe the following CNC machining operations: • Automatic tool change • Test run.",
+    questionText: "Tungsten carbide is the material of choice in the manufacture of mining tips, drill bits and other cutting tools. Outline two advantages of the use of tungsten carbide insert tips. OR Computer Numerical Control (CNC) technology is to the forefront of precision engineering manufacture. Describe the following CNC machining operations:\n• Automatic tool change\n• Test run.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.", marks: 8, route: "a", group: {"claimMax":2,"perOption":4,"options":["Tungsten carbide tools will retain their cutting edge at high temperatures more effectively than HSS.","Experienced operators will ensure longer tool life.","Tools are not sharpened which is time consuming and dependent on the skill of the operator for effectiveness, inserts are replaced.","Inserts can have a number of cutting edges integrated into their design."]} },
@@ -9772,7 +9781,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2020 Higher Level — © State Examinations Commission.",
     id: "eng-2020-hl-q1-o", topicId: "eng-2-16", conceptId: "function-each-following-autonomous-vehicle-features",
     section: "A", questionRef: "2020 HL Q1(o)",
-    questionText: "Explain the function of each of the following autonomous vehicle features: (i) Radar sensor (ii) Camera (iii) LiDAR unit.",
+    questionText: "Explain the function of each of the following autonomous vehicle features:\n(i) Radar sensor\n(ii) Camera\n(iii) LiDAR unit.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Radar sensor Radar sensors use radio waves to sense objects. This gives radar the ability to measure velocities of surrounding objects directly and radar can work over long distances. Radar has been traditionally used for airplanes and battleships. Radar maintains functionality across all weather and lighting conditions.", marks: 4 },
@@ -9796,7 +9805,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2020 Higher Level — © State Examinations Commission.",
     id: "eng-2020-hl-q1-p", topicId: "eng-3-14", conceptId: "each-following-regard-efficient-safe-operation",
     section: "A", questionRef: "2020 HL Q1(p)",
-    questionText: "Describe each of the following with regard to the efficient and safe operation of autonomous vehicles: (i) Artificial intelligence (AI) (ii) Global Positioning Systems.",
+    questionText: "Describe each of the following with regard to the efficient and safe operation of autonomous vehicles:\n(i) Artificial intelligence (AI)\n(ii) Global Positioning Systems.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "AI is a major focus for autonomous vehicle testing and development. These vehicles are applying artificial intelligence, a collection of discrete technologies, in new and innovative ways. Deep learning, which mimics neuron activity, supports functions like voice and speech recognition, voice search, image recognition and processing, motion detection, and data analysis. Working together, these functions help the vehicles recognise pedestrian traffic, other vehicles on the road, and traffic signals, and adhere to mapped-out routes.", marks: 5 },
@@ -9810,7 +9819,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2020 Higher Level — © State Examinations Commission.",
     id: "eng-2020-hl-q1-q", topicId: "eng-3-14", conceptId: "designated-levels-vehicle-automation-exist-ranging",
     section: "A", questionRef: "2020 HL Q1(q)",
-    questionText: "Designated levels of Vehicle Automation exist, ranging from level 0 to level 5. Describe the main features of any two of the following: (i) Driver assistance (level 1) (ii) Conditional Automation (level 3) (iii) Full Automation (level 5).",
+    questionText: "Designated levels of Vehicle Automation exist, ranging from level 0 to level 5. Describe the main features of any two of the following:\n(i) Driver assistance (level 1)\n(ii) Conditional Automation (level 3)\n(iii) Full Automation (level 5).",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Level 1 – Driver assistance The vehicle is controlled by the driver with some assist features (steering or braking) integrated into the vehicle design. Self-parking and lane assistance features are incorporated into this level.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Level 1 – Driver assistance The vehicle is controlled by the driver with some assist features (steering or braking) integrated into the vehicle design. Self-parking and lane assistance features are incorporated into this level.","Level 3 – Conditional automation The vehicle can monitor its surroundings and control steering, acceleration and braking. The driver must be ready to take control of the vehicle when required.","Level 5 – Full automation No human control is necessary; vehicles may not have controls or steering wheel. The vehicle is fully automated and capable of performing all driving tasks whether there is a human or board or not."]} },
@@ -9823,7 +9832,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2020 Higher Level — © State Examinations Commission.",
     id: "eng-2020-hl-q1-r", topicId: "eng-3-14", conceptId: "how-autonomous-vehicle-technology-may-impact",
     section: "A", questionRef: "2020 HL Q1(r)",
-    questionText: "Describe how autonomous vehicle technology may impact on any two of the following: (i) Vehicle ownership (ii) Traffic management (iii) Environmental impact.",
+    questionText: "Describe how autonomous vehicle technology may impact on any two of the following:\n(i) Vehicle ownership\n(ii) Traffic management\n(iii) Environmental impact.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Vehicle ownership: The public may still want to own a car and will buy a self-driving one. But the total number of vehicles on the road is expected to fall by about half from its current level and by 2050 those vehicles will be split roughly equally between robotaxis and privately-owned autonomous vehicles. The robotaxis, being in almost constant use will account for many miles travelled. With fewer private vehicles needing to be parked, large areas of land currently used for parking are likely to be available for other uses, such as housing.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Vehicle ownership: The public may still want to own a car and will buy a self-driving one. But the total number of vehicles on the road is expected to fall by about half from its current level and by 2050 those vehicles will be split roughly equally between robotaxis and privately-owned autonomous vehicles. The robotaxis, being in almost constant use will account for many miles travelled. With fewer private vehicles needing to be parked, large areas of land currently used for parking are likely to be available for other uses, such as housing.","Traffic management: In addition to fewer traffic jams, having self-driving cars on the road can reduce the total fuel consumption of all the vehicles driving by 40%. Autonomous vehicles won't rid the world of gridlock, according to current research. While there will be fewer cars on the road overall, congestion may increase if commuters choose the new vehicles over public transportation. Autonomous trains and buses systems are in place or planned for implementation in many cities. The Danish metro is completely controlled by sensors and can be controlled remotely, if needed. Full size autonomous buses and taxis, such as the Toyota e-Palette, have been developed and used for large scale events. Autonomous vehicles are expected to park closer together increasing the number of cars in parking lots. Autonomous vehicles could, in principle, transform parking lots. When people park cars, they need space to open the doors and walk away, but driverless cars do not need such space. Car parks devoted to autonomous vehicles would not require elevators and staircases—the owners could simply be dropped off by the machines at the entrance or some other destination and let the vehicles park themselves.","Environmental impact: Ultimately, self-driving cars can have immense power to reduce emissions and make the environment a better place if their drivers choose to make it so. Autonomous vehicles are also programmed to operate in a more fuel-efficient manner. There will also be a reduction in noise pollution as a result of the use of electric powered vehicles."]} },
@@ -9860,7 +9869,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2020 Higher Level — © State Examinations Commission.",
     id: "eng-2020-hl-q2-a-ii", topicId: "eng-3-8", conceptId: "material-strength-may-be-partly-described",
     section: "A", questionRef: "2020 HL Q2(a)(ii)",
-    questionText: "Material strength may be partly described in terms of the following properties: • Compressive strength • Tensile strength • Shear strength. Describe each of these properties.",
+    questionText: "Material strength may be partly described in terms of the following properties:\n• Compressive strength\n• Tensile strength\n• Shear strength.\nDescribe each of these properties.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Compressive strength: Axial forces that push or press on an object.", marks: 2 },
@@ -9906,7 +9915,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2020 Higher Level — © State Examinations Commission.",
     id: "eng-2020-hl-q2-b-ii", topicId: "eng-3-8", conceptId: "indicate-each-following-regions-your-graph",
     section: "A", questionRef: "2020 HL Q2(b)(ii)",
-    questionText: "The results shown below were obtained from a tensile test on a non-ferrous alloy with a 10 mm diameter and 50 mm gauge length. Indicate each of the following regions on your graph: • Elastic region • Plastic region • Necking region.",
+    questionText: "The results shown below were obtained from a tensile test on a non-ferrous alloy with a 10 mm diameter and 50 mm gauge length. Indicate each of the following regions on your graph:\n• Elastic region\n• Plastic region\n• Necking region.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Elastic region,", marks: 2 },
@@ -9970,7 +9979,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2020 Higher Level — © State Examinations Commission.",
     id: "eng-2020-hl-q2-c", topicId: "eng-3-8", conceptId: "both-x-ray-ultrasonic-testing-materials",
     section: "A", questionRef: "2020 HL Q2(c)",
-    questionText: "Both X-Ray and Ultrasonic testing of materials are non-destructive tests (NDT) used to find internal flaws in aircraft engine components. Compare X-Ray NDT and Ultrasonic NDT under the following headings: • Equipment used • Method of operation • Safety considerations.",
+    questionText: "Both X-Ray and Ultrasonic testing of materials are non-destructive tests (NDT) used to find internal flaws in aircraft engine components. Compare X-Ray NDT and Ultrasonic NDT under the following headings:\n• Equipment used\n• Method of operation\n• Safety considerations.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "point", verbatim: "X-Ray NDT X-ray radiation penetrates materials and produces an internal photographic image of the test piece. Electrons are released by heating the cathode to high temperature. A high DC voltage speeds up the electrons which are aimed at the anode. The electrons penetrate the anode and the energy is given off as X-rays. The anode reflects the X-rays to the test piece and an image plate is used to capture the internal image. Any flaw or cavity in the test piece will appear dark on the image plate as the radiation will not be absorbed by the flaw.", marks: null },
@@ -10257,7 +10266,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2020 Higher Level — © State Examinations Commission.",
     id: "eng-2020-hl-q4-c", topicId: "eng-1-3", conceptId: "any-following",
     section: "A", questionRef: "2020 HL Q4(c)",
-    questionText: "Explain any two of the following: (i) The difference between substitutional solid solution and interstitial solid solution (ii) Metal macroscopic examination and metal microscopic examination (iii) The process of galvanising sheet steel.",
+    questionText: "Explain any two of the following:\n(i) The difference between substitutional solid solution and interstitial solid solution\n(ii) Metal macroscopic examination and metal microscopic examination\n(iii) The process of galvanising sheet steel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Substitutional Solid Solution the alloying atoms replace the parent atoms in the alloy. Interstitial Solid Solution the alloying atoms fit in between the parent atoms in the alloy.", marks: 16, group: {"claimMax":2,"perOption":8,"options":["Substitutional Solid Solution the alloying atoms replace the parent atoms in the alloy. Interstitial Solid Solution the alloying atoms fit in between the parent atoms in the alloy.","Metal macroscopic examination is a visual inspection process. Physical manufacturing defects can be detected by eye or low powered magnifying glass. Microscopic examination of metals allows for more detailed examination of grain size and some impurities. An optical microscope is used for this type of inspection.","Galvanising sheet steel Galvanising is the process of applying a protective zinc coating to steel or iron, to prevent rusting. The most common method is hot-dip galvanising, in which the sheets are submerged in a bath of molten hot zinc."]} },
@@ -10578,7 +10587,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2020 Higher Level — © State Examinations Commission.",
     id: "eng-2020-hl-q7-c-i-or", topicId: "eng-2-11", conceptId: "aid-diagrams-operations-used-making-camera",
     section: "A", questionRef: "2020 HL Q7(c)(i) — CNC technology",
-    questionText: "Manufacturing companies use CNC technology to mass produce musical instruments such as electric guitars. Explain each of the following in relation to CNC technology: • Machine tool calibration • Closed loop control.",
+    questionText: "Manufacturing companies use CNC technology to mass produce musical instruments such as electric guitars. Explain each of the following in relation to CNC technology:\n• Machine tool calibration\n• Closed loop control.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Machine Tool Calibration is the process of measuring, diagnosing and correcting the manufacturing error within your Machine Tool or CNC machine. Most large machine tools come directly from the manufacturer with a set of tolerances, calibration is the resetting of machines and tools to agreed dimensions for machining operations.", marks: 4 },
@@ -11094,7 +11103,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q2-c", topicId: "eng-3-14", conceptId: "any-following-relation-hybrid-vehicle-technology",
     section: "A", questionRef: "2021 HL Q2(c)",
-    questionText: "Describe any one of the following in relation to hybrid vehicle technology: (i) Regenerative braking; (ii) Electric traction motors.",
+    questionText: "Describe any one of the following in relation to hybrid vehicle technology:\n(i) Regenerative braking;\n(ii) Electric traction motors.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Braking friction in a petrol or diesel car works to slow the car down, generating heat and wearing away at the material on the pads and discs in the process. Regenerative braking is a way of taking the wasted energy from the process of slowing down a car and using it to recharge the car’s batteries. On a normal car, braking simply wastes energy - but with regenerative braking, some of the energy is able to be reused.", marks: 10, accepts: ["The electric motor in a hybrid or electric car runs in two directions - one to drive the wheels and move the car and the other to recharge the battery. When you lift your foot off the accelerator pedal and onto the brake, the motor swaps directions and starts to put energy back into the battery.","Electric traction motors are more efficient than internal combustion engines (ICE), with high power-to-weight ratios providing torque over a wide speed range.","The traction motor consists of two parts, a rotating armature and a fixed field. The fixed field consists of tightly wound coils of wire fitted inside the motor case. The armature is another set of coils wound round a central shaft. It is connected to the field through \"brushes\" which are spring-loaded contacts pressing against an extension of the armature called the commutator. The commutator collects all the terminations of the armature coils and distributes them in a circular pattern to allow the correct sequence of current flow."] },
@@ -11414,7 +11423,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q5-c", topicId: "eng-1-3", conceptId: "select-any-i-ii-or-iii",
     section: "A", questionRef: "2021 HL Q5(c)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: (i) Solid solution alloy and partial solubility alloy; (ii) Crystalline and amorphous solid structures; (iii) Eutectic and eutectoid transformations.",
+    questionText: "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each:\n(i) Solid solution alloy and partial solubility alloy;\n(ii) Crystalline and amorphous solid structures;\n(iii) Eutectic and eutectoid transformations.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "In a Solid Solution alloy, the two metals are completely soluble in each other in all three states. The solid solution can be substitutional or interstitial in nature.", marks: 16, group: {"claimMax":2,"perOption":8,"options":["In a Solid Solution alloy, the two metals are completely soluble in each other in all three states. The solid solution can be substitutional or interstitial in nature.","In a Partial Solubility alloy the two metals are completely soluble in the liquid phase.","Both metals are also soluble in each other (in a solid state) to a limited degree. This is denoted by the Solvus Lines.","Crystalline Structures - these structures have regular, geometric and repeating molecular patterns i.e. BCC, FCC CPH.","Amorphous Structures - these structures have irregular and non-geometric patterns.","Eutectic transformation is where the metal goes from a liquid state to a solid state without going through a pasty stage.","Eutectoid transformation is a solid to solid transformation of a metal such as steel at 0.83% carbon at 723°C."]} },
@@ -11528,7 +11537,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q6-c-i", topicId: "eng-3-14", conceptId: "following-terms-relation-robotic-assisted-surgery",
     section: "A", questionRef: "2021 HL Q6(c)(i)",
-    questionText: "Explain the following terms in relation to the robotic assisted surgery (RAS): • Degrees of freedom • Machine vision.",
+    questionText: "Explain the following terms in relation to the robotic assisted surgery (RAS):\n• Degrees of freedom\n• Machine vision.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Degrees of freedom: A description of the number of axes the robot arm can move.", marks: null },
@@ -11840,7 +11849,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q8-c-ii", topicId: "eng-2-11", conceptId: "method-securely-holding-ferrous-metals-during",
     section: "A", questionRef: "2021 HL Q8(c)(ii)",
-    questionText: "Outline one method of securely holding ferrous metals during the surface grinding process. OR Describe each of the following CNC terms: • Automatic tool change • Tool offsets.",
+    questionText: "Outline one method of securely holding ferrous metals during the surface grinding process. OR Describe each of the following CNC terms:\n• Automatic tool change\n• Tool offsets.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Used for holding ferromagnetic workpieces, a magnetic chuck consists of an accurately centred permanent magnet face.", marks: null },
@@ -12303,7 +12312,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2021-hl-q2-e", topicId: "eng-3-14", conceptId: "how-hybrid-vehicle-technology-may-impact",
     section: "A", questionRef: "2021 HL Q2(e)",
     stem: "Answer all of the following:",
-    questionText: "Describe how hybrid vehicle technology may impact on any two of the following: (i) Vehicle ownership; (ii) Environmental considerations; (iii) Vehicle maintenance.",
+    questionText: "Describe how hybrid vehicle technology may impact on any two of the following:\n(i) Vehicle ownership;\n(ii) Environmental considerations;\n(iii) Vehicle maintenance.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "People will still want to own a car and will buy a hybrid or electric one as a means to help the environment. The costs of hybrid vehicles can be prohibitive though. State grants and tax reliefs may assist people in buying hybrid vehicles. The total number of vehicles on the road is expected to fall by about half from its current level by 2050. With fewer private vehicles needing to be parked, vast areas of land currently wasted on parking will be available for other uses, such as housing.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["People will still want to own a car and will buy a hybrid or electric one as a means to help the environment. The costs of hybrid vehicles can be prohibitive though. State grants and tax reliefs may assist people in buying hybrid vehicles. The total number of vehicles on the road is expected to fall by about half from its current level by 2050. With fewer private vehicles needing to be parked, vast areas of land currently wasted on parking will be available for other uses, such as housing.","Ultimately, hybrid cars can have immense power to reduce emissions and make the environment a better place if their drivers choose to make it so. Hybrid vehicles operate in a more fuel-efficient manner. There will also be a reduction in noise pollution as a result of the use of hybrid powered vehicles in urban settings.","Hybrid vehicles can be expensive to maintain and service. Along with an internal combustion engine to service, battery packs and traction motors also need additional maintenance and service at regular intervals. Specialised mechanics capable of identifying issues with hybrid vehicles are needed also. Damage to hybrid vehicles, depending on the area of damage can lead to very expensive bills to make the car road worthy again."]} },
@@ -12327,21 +12336,6 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "Increased cognitive function and boosts brain health.", marks: null },
     { id: "r-6", kind: "point", verbatim: "Boosts immune system.", marks: null },
     { id: "r-7", kind: "point", verbatim: "Reduces “sick building syndrome”, etc.", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC027ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
-    id: "eng-2022-hl-q1-b", topicId: "eng-1-3", conceptId: "examples-difference-between-amorphous-structures-crystalline",
-    section: "A", questionRef: "2022 HL Q1(b)",
-    stem: "Give brief answers to any ten of the following:",
-    questionText: "Describe, with examples, the difference between amorphous structures and crystalline structures.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Amorphous Structures - these structures have irregular and non-geometric patterns. e.g. Acrylic.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Crystalline Structures - these structures have regular, geometric and repeating molecular patterns e.g. BCC, FCC CPH. Crystalline Structures Amorphous Structures", marks: null },
     ],
   } as SecCard,
   {
@@ -12475,7 +12469,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2022-hl-q2-b", topicId: "eng-3-14", conceptId: "artificial-intelligence-can-be-broadly-categorised",
     section: "A", questionRef: "2022 HL Q2(b)",
     stem: "Answer all of the following:",
-    questionText: "Artificial Intelligence can be broadly categorised in two forms. Describe the difference between: • Artificial Narrow Intelligence (weak AI) and, • Artificial General Intelligence (strong AI).",
+    questionText: "Artificial Intelligence can be broadly categorised in two forms. Describe the difference between:\n• Artificial Narrow Intelligence (weak AI) and,\n• Artificial General Intelligence (strong AI).",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Narrow artificial intelligence (weak AI) is a specific type of artificial intelligence in which a learning algorithm is designed to perform a single task, and any knowledge gained from performing that task will not automatically be applied to other tasks.", marks: null },
@@ -12490,7 +12484,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2022-hl-q2-c", topicId: "eng-3-14", conceptId: "any-following-terms-relation-artificial-intelligence",
     section: "A", questionRef: "2022 HL Q2(c)",
     stem: "Answer all of the following:",
-    questionText: "Explain any two of the following terms in relation to artificial intelligence and smart manufacturing: (i) Reactive machines; (ii) Limited memory; (iii) Theory of mind; (iv) Self-awareness.",
+    questionText: "Explain any two of the following terms in relation to artificial intelligence and smart manufacturing:\n(i) Reactive machines;\n(ii) Limited memory;\n(iii) Theory of mind;\n(iv) Self-awareness.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Reactive machines are basic in that they do not store “memories” or use past experiences to determine future actions. They simply perceive the world and react to it. IBM’s Deep Blue, which defeated chess grandmaster Kasporov, is a reactive machine that sees the pieces on a chess board and reacts to them. It cannot refer to any of its prior experiences, and cannot improve with practice.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Reactive machines are basic in that they do not store “memories” or use past experiences to determine future actions. They simply perceive the world and react to it. IBM’s Deep Blue, which defeated chess grandmaster Kasporov, is a reactive machine that sees the pieces on a chess board and reacts to them. It cannot refer to any of its prior experiences, and cannot improve with practice.","Limited Memory machines can retain data for a short period of time. While they can use this data for a specific period of time, they cannot add it to a library of their experiences. Many self-driving cars use Limited Memory technology: they store data such as the recent speed of nearby cars, the distance of such cars, the speed limit, and other information that can help them navigate roads.","Psychology tells us that people have thoughts, emotions, memories, and mental models that drive their behaviour. Theory of Mind researchers hope to build computers that imitate our mental models, by forming representations about the world, and about other agents and entities in it. One goal of these researchers is to build computers that relate to humans and perceive human intelligence and how people’s emotions are impacted by events and the environment. While plenty of computers use models, a computer with a “mind” does not yet exist.","Self-aware machines are the stuff of science fiction, though many AI enthusiasts believe them to be the ultimate goal of AI development. Even if a machine can operate as a person does, for example by preserving itself, predicting its own needs and demands, and relating to others as an equal, the question of whether a machines can become truly self-aware, or “conscious”, is best left for philosophers."]} },
@@ -12504,7 +12498,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2022-hl-q2-d", topicId: "eng-2-13", conceptId: "artificial-intelligence-offers-range-benefits-smart",
     section: "A", questionRef: "2022 HL Q2(d)",
     stem: "Answer all of the following:",
-    questionText: "Artificial intelligence offers a range of benefits in smart manufacturing processes. Explain any two of the following in relation to smart manufacturing: (i) Predictive maintenance; (ii) Supply chain management; (iii) Quality control.",
+    questionText: "Artificial intelligence offers a range of benefits in smart manufacturing processes. Explain any two of the following in relation to smart manufacturing:\n(i) Predictive maintenance;\n(ii) Supply chain management;\n(iii) Quality control.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Predictive maintenance utilises actual measured usage, operating conditions and equipment feedback to generate individualised predictions of impending issues.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Predictive maintenance utilises actual measured usage, operating conditions and equipment feedback to generate individualised predictions of impending issues.","Minimise the risk of failure: i.e. spot when something isn’t working and implement a fix before a failure;","Find existing relationships in data: i.e. examine available data, see where anomalies lie and predict parameters to change.","AI-lead supply chain optimisation software amplifies important decisions by using cognitive predictions and recommendations on optimal actions. This can help enhance overall supply chain performance. It also helps manufacturers with possible implications across various scenarios in terms of time, cost, and revenue.","The use of smart cameras and related AI-enabled software is helping manufacturers achieve improved quality inspection at speeds, latency, and costs beyond the capabilities of human inspectors."]} },
@@ -12518,7 +12512,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2022-hl-q2-e", topicId: "eng-3-14", conceptId: "artificial-intelligence-provides-both-benefits-concerns",
     section: "A", questionRef: "2022 HL Q2(e)",
     stem: "Answer all of the following:",
-    questionText: "Artificial intelligence provides both benefits and concerns for the business and manufacturing industries. Discuss each of the following in relation to artificial intelligence: • Economic benefits; • Ethical concerns.",
+    questionText: "Artificial intelligence provides both benefits and concerns for the business and manufacturing industries. Discuss each of the following in relation to artificial intelligence:\n• Economic benefits;\n• Ethical concerns.",
     tariffModel: {"kind":"orderedSplit","notation":"5 + 5"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Artificial Intelligence (AI) has been around for quite some time now and AI is increasingly becoming a part of our day-to-day lives. The scope for innovation and development in AI is enormous and it will continue changing the world in diverse ways in the future. Benefits of AI include:", marks: null },
@@ -12863,7 +12857,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q5-c", topicId: "eng-1-5", conceptId: "select-any-i-ii-or-iii",
     section: "A", questionRef: "2022 HL Q5(c)",
-    questionText: "Select any two from (i), (ii) or (iii) below and explain: (i) The impact of a dislocation in crystal structures. (ii) The possible corrosive effects of the environment on metal objects. (iii) The refining of aluminium in Ireland.",
+    questionText: "Select any two from (i), (ii) or (iii) below and explain:\n(i) The impact of a dislocation in crystal structures.\n(ii) The possible corrosive effects of the environment on metal objects.\n(iii) The refining of aluminium in Ireland.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Dislocations can move as far as grain boundaries under a shear stress. Fine grained metals are stronger, stiffer and harder than coarse grained metals.", marks: 16, group: {"claimMax":2,"perOption":8,"options":["Dislocations can move as far as grain boundaries under a shear stress. Fine grained metals are stronger, stiffer and harder than coarse grained metals.","Dislocations promote material malleability. The motion of dislocations allows slip deformation to occur.","Heat treatments can impact on dislocation density caused by cold working.","Ferrous metals (e.g. steel) may rust. This may cause early failure of steel products.","An oxide layer can form on some metals such as aluminium giving a dull colour.","Other metals may tarnish due to corrosion e,g. copper can turn a green colour.","The presence of water (especially acidic water) can initiate electrochemical reactions in some metals e.g. stainless steel or zinc are impacted by seawater.","Rusal Aughinish Alumina is the largest alumina refinery in Europe. In this refinery bauxite is refined into alumina."]} },
@@ -12972,7 +12966,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q6-c-i", topicId: "eng-2-10", conceptId: "how-weld-cracks-slag-inclusions-may",
     section: "A", questionRef: "2022 HL Q6(c)(i)",
-    questionText: "Outline how weld cracks and slag inclusions may form on a weld. OR Explain the following terms in relation to the autonomous mobile robots (AMR): • Automatic charging zones; • 24-hour remote monitoring.",
+    questionText: "Outline how weld cracks and slag inclusions may form on a weld. OR Explain the following terms in relation to the autonomous mobile robots (AMR):\n• Automatic charging zones;\n• 24-hour remote monitoring.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Slag is a residue of the flux coating in MMA welding, it may become trapped in the weld when adjacent weld beads are deposited with inadequate overlap resulting in a void or impurities trapped in the weld. Slag inclusions result from faulty welding technique or improper access to the joint.", marks: null },
@@ -13130,7 +13124,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q7-c-i", topicId: "eng-3-8", conceptId: "compare-glass-polycarbonate-suitable-materials-production",
     section: "A", questionRef: "2022 HL Q7(c)(i)",
-    questionText: "Compare glass and polycarbonate as suitable materials in the production of mobile phone screen protectors, making reference to: • impact resistance • transparency • hardness.",
+    questionText: "Compare glass and polycarbonate as suitable materials in the production of mobile phone screen protectors, making reference to:\n• impact resistance\n• transparency\n• hardness.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Glass is brittle so has low impact resistance, it is very transparent and is a hard material.", marks: null },
@@ -13208,20 +13202,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "The 3-jaw self-centring lathe chuck allows workpieces to be centred and held with high precision. It will quickly and easily hold round materials.", marks: null },
     { id: "r-2", kind: "point", verbatim: "4-jaw independent lathe chucks can hold square, round, and irregular-shaped workpieces.", marks: null },
     { id: "r-3", kind: "point", verbatim: "The 4-jaw independent lathe chucks can offer stronger grip on round stock. These chucks can turn work off-centre.", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC027ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
-    id: "eng-2022-hl-q8-b-ii", topicId: "eng-3-1", conceptId: "term-interlocking-guard-relation-engineering-machines",
-    section: "A", questionRef: "2022 HL Q8(b)(ii)",
-    questionText: "Describe the term interlocking guard in relation to engineering machines.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "An interlocking chuck guard is a safety device which kills the power going to the machine when the guard is in the open position. A micro switch is connected to the hinge point of the guard, and when the guard is opened, the micro switch will break the circuit and stop the machine from operating. Interlocking guards are common on centre lathes, pillar drilling machines, bandsaw machines, milling machines in the Engineering room.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Pillar drilling machine interlocking guard Centre lathe interlocking guard", marks: null },
     ],
   } as SecCard,
   {
@@ -13669,7 +13649,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q8-c-ii", topicId: "eng-2-11", conceptId: "aid-diagram-s-method-securely-clamping",
     section: "A", questionRef: "2022 HL Q8(c)(ii)",
-    questionText: "Describe, with the aid of diagram(s), a method of securely clamping metals in a horizontal bandsaw. OR Describe the following CNC terms: • Simulation; • Tool offsets.",
+    questionText: "Describe, with the aid of diagram(s), a method of securely clamping metals in a horizontal bandsaw. OR Describe the following CNC terms:\n• Simulation;\n• Tool offsets.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A traditional machine vice can be used with a horizontal bandsaw saw. A variety of clamping devices, including quick release and hydraulic clamps, can also be used as the workpiece usually needs to be held securely.", marks: null },
@@ -13709,6 +13689,52 @@ export const CARDS: SecCard[] = [
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission",
           "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
+    id: "eng-2022-hl-q1-b", topicId: "eng-1-3", conceptId: "examples-difference-between-amorphous-structures-crystalline",
+    section: "A", questionRef: "2022 HL Q1(b)",
+    stem: "Give brief answers to any ten of the following:",
+    questionText: "Describe, with examples, the difference between amorphous structures and crystalline structures.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Amorphous Structures - these structures have irregular and non-geometric patterns. e.g. Acrylic.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Crystalline Structures - these structures have regular, geometric and repeating molecular patterns e.g. BCC, FCC CPH.", marks: null },
+    ],
+    figure: {
+          "candId": "engineering-2022-HL-scheme-q1b-sol",
+          "src": "/exam-figures/engineering/markbank/engineering-2022-HL-scheme-q1b-sol.png",
+          "srcHash": "990f8fe09149209162cd8f3f27d7f81d",
+          "alt": "The marking scheme's printed answer for 2022 HL Q1(b), as the State Examinations Commission set it. It reads: Crystalline Structures Amorphous Structures.",
+          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
+    id: "eng-2022-hl-q8-b-ii", topicId: "eng-3-1", conceptId: "term-interlocking-guard-relation-engineering-machines",
+    section: "A", questionRef: "2022 HL Q8(b)(ii)",
+    questionText: "Describe the term interlocking guard in relation to engineering machines.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An interlocking chuck guard is a safety device which kills the power going to the machine when the guard is in the open position. A micro switch is connected to the hinge point of the guard, and when the guard is opened, the micro switch will break the circuit and stop the machine from operating. Interlocking guards are common on centre lathes, pillar drilling machines, bandsaw machines, milling machines in the Engineering room.", marks: 6 },
+    ],
+    figure: {
+          "candId": "engineering-2022-HL-scheme-q8bii-sol",
+          "src": "/exam-figures/engineering/markbank/engineering-2022-HL-scheme-q8bii-sol.png",
+          "srcHash": "adb309e39da69066557a5fa56de1cedb",
+          "alt": "The marking scheme's printed answer for 2022 HL Q8(b)(ii), as the State Examinations Commission set it. It reads: Micro switch Pillar drilling machine interlocking guard Centre lathe interlocking guard.",
+          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -13894,7 +13920,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2023-hl-q2-b", topicId: "eng-3-14", conceptId: "extended-reality-xr-encompasses-range-other",
     section: "A", questionRef: "2023 HL Q2(b)",
     stem: "Answer all of the following:",
-    questionText: "Extended Reality (XR) encompasses a range of other digital technologies. Explain each of the following types of Extended Reality: (i) Virtual Reality (VR). (ii) Augmented Reality (AR). (iii) Mixed Reality (MR).",
+    questionText: "Extended Reality (XR) encompasses a range of other digital technologies. Explain each of the following types of Extended Reality:\n(i) Virtual Reality (VR).\n(ii) Augmented Reality (AR).\n(iii) Mixed Reality (MR).",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Virtual Reality refers to the use of computer-generated simulations to create a fully immersive digital environment that completely replaces the real world. Users wear VR headsets that typically consist of a display screen and motion sensors. These headsets block out the real world and present a virtual environment that users can see and hear.", marks: 4 },
@@ -13930,7 +13956,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2023-hl-q2-d", topicId: "eng-3-14", conceptId: "any-following-real-applications-relation-extended",
     section: "A", questionRef: "2023 HL Q2(d)",
     stem: "Answer all of the following:",
-    questionText: "Describe any two of the following real applications in relation to Extended Reality (XR): (i) Gaming and entertainment. (ii) Vehicle design and development. (iii) Surgical applications and physiotherapy. (iv) Real estate property viewing.",
+    questionText: "Describe any two of the following real applications in relation to Extended Reality (XR):\n(i) Gaming and entertainment.\n(ii) Vehicle design and development.\n(iii) Surgical applications and physiotherapy.\n(iv) Real estate property viewing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Extended reality (XR) is transforming gaming and entertainment by providing immersive experiences that blend the virtual and real worlds. With virtual reality (VR), players can be fully immersed in realistic virtual environments, interacting with objects and characters.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Extended reality (XR) is transforming gaming and entertainment by providing immersive experiences that blend the virtual and real worlds. With virtual reality (VR), players can be fully immersed in realistic virtual environments, interacting with objects and characters.","Augmented reality (AR) overlays digital content onto the real world, enabling interactive gaming experiences in our physical surroundings. Mixed reality (MR) combines virtual and physical elements, creating seamless and interactive experiences. These XR technologies also extend to location-based entertainment, live streaming and gamified experiences, enriching the way we play games and consume entertainment content.","Extended reality (XR) is changing vehicle design and development by providing immersive and efficient tools for engineers and designers. Through virtual reality (VR), designers can create and evaluate vehicle prototypes in realistic virtual environments, allowing for quicker designs and cost savings. Augmented reality (AR) enables engineers to overlay digital information onto physical vehicles, aiding in assembly, maintenance and troubleshooting processes.","Surgeons can use virtual reality (VR) to plan complex procedures, visualise patient-specific anatomy and practice surgical techniques in a realistic virtual environment, leading to improved precision and reduced risks. In physiotherapy, augmented reality (AR) can assist therapists by guiding exercises, tracking progress and enhancing rehabilitation processes.","With virtual reality (VR), potential buyers can explore realistic 3D virtual tours of properties from anywhere, saving time and travel costs. Augmented reality (AR) allows users to overlay digital information, such as furniture placement or renovation possibilities, onto real-world spaces, enabling them to visualise and customise properties before making purchasing decisions."]} },
@@ -13944,7 +13970,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2023-hl-q2-e", topicId: "eng-3-14", conceptId: "while-xr-presents-many-creative-opportunities",
     section: "A", questionRef: "2023 HL Q2(e)",
     stem: "Answer all of the following:",
-    questionText: "While XR presents many creative opportunities, it has however a number of drawbacks. Discuss any two of the following drawbacks associated with Extended Reality (XR): (i) Privacy. (ii) Social engagement. (iii) Implementation costs.",
+    questionText: "While XR presents many creative opportunities, it has however a number of drawbacks. Discuss any two of the following drawbacks associated with Extended Reality (XR):\n(i) Privacy.\n(ii) Social engagement.\n(iii) Implementation costs.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "XR devices like virtual reality (VR) headsets and augmented reality (AR) glasses often capture and collect personal data, raising concerns about data privacy and security. XR experiences may involve the collection and processing of sensitive user information, such as biometric data, location data and behavioural patterns, these may lead to privacy breaches or unauthorised access. There is a risk of increased surveillance and the potential for invasion of personal space and privacy in both public and private settings.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["XR devices like virtual reality (VR) headsets and augmented reality (AR) glasses often capture and collect personal data, raising concerns about data privacy and security. XR experiences may involve the collection and processing of sensitive user information, such as biometric data, location data and behavioural patterns, these may lead to privacy breaches or unauthorised access. There is a risk of increased surveillance and the potential for invasion of personal space and privacy in both public and private settings.","Prolonged use of XR devices, such as virtual reality (VR) headsets, may isolate individuals from their physical surroundings and limit face-to-face interactions, potentially leading to a decrease in social connections. The immersive nature of XR experiences can make it challenging to maintain a healthy balance between virtual and real-world relationships resulting in a loss of social skills and decreased empathy. The potential for anonymity in XR environments may lead to online harassment, bullying or other negative social behaviours.","The initial investment required for high-quality XR devices, such as VR headsets or AR glasses, can be prohibitive for individuals with limited financial resources. The development and implementation of XR applications often involve specialised expertise and resources, leading to extra expenses. Maintaining and updating XR hardware and software can also have ongoing costs, making it a barrier for widespread adoption and accessibility."]} },
@@ -13970,7 +13996,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q3-a-ii", topicId: "eng-3-8", conceptId: "aid-diagram-s-vickers-hardness-test",
     section: "A", questionRef: "2023 HL Q3(a)(ii)",
-    questionText: "Describe, with the aid of a diagram(s), the Vickers Hardness test, with reference to: • indenter shape • test procedure • hardness calculation.",
+    questionText: "Describe, with the aid of a diagram(s), the Vickers Hardness test, with reference to:\n• indenter shape\n• test procedure\n• hardness calculation.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A hard metal point, called an indenter, is pressed into the surface of the material being tested with a measured force.", marks: null },
@@ -14801,22 +14827,6 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
-    id: "eng-2023-hl-q9-b-v", topicId: "eng-2-15", conceptId: "advantage-compound-gear-train-over-simple",
-    section: "A", questionRef: "2023 HL Q9(b)(v)",
-    questionText: "Outline one advantage of a compound gear train over a simple gear train.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A compound gear train can achieve a large reduction or large increase in gear ratio using gear sizes that are not excessively big.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "A simple gear train needs to have small gears driving large gears to achieve a significant reduction in speed. This impacts on the torque of the system.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Compound gears commonly use only two gear wheel sizes to achieve speed reduction, a series of these can be connected together.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Compound gear reduction 9:1 Simple gear reduction 3:1 (Any three) 6 + 6 + 6", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC027ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q9-c-i", topicId: "eng-2-15", conceptId: "aid-diagram-s-suitable-mechanism-folding",
     section: "A", questionRef: "2023 HL Q9(c)(i)",
     questionText: "Describe, with the aid of a diagram(s), a suitable mechanism for folding the scooter handle. OR Outline two advantages of using solar powered LED lights in an urban setting.",
@@ -15213,6 +15223,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
+    id: "eng-2023-hl-q9-b-v", topicId: "eng-2-15", conceptId: "advantage-compound-gear-train-over-simple",
+    section: "A", questionRef: "2023 HL Q9(b)(v)",
+    questionText: "Outline one advantage of a compound gear train over a simple gear train.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A compound gear train can achieve a large reduction or large increase in gear ratio using gear sizes that are not excessively big.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "A simple gear train needs to have small gears driving large gears to achieve a significant reduction in speed. This impacts on the torque of the system.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Compound gears commonly use only two gear wheel sizes to achieve speed reduction, a series of these can be connected together.", marks: null },
+    ],
+    figure: {
+          "candId": "engineering-2023-HL-scheme-q9bv-sol",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-scheme-q9bv-sol.png",
+          "srcHash": "d7e11465ef5a158e8a685eeca75ad4b3",
+          "alt": "The marking scheme's printed answer for 2023 HL Q9(b)(v), as the State Examinations Commission set it. It reads: Compound gear reduction 9:1 Simple gear reduction 3:1.",
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
@@ -15499,7 +15533,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q2-e", topicId: "eng-3-14", conceptId: "discuss-environmental-impact-any-following-regard",
     section: "A", questionRef: "2024 HL Q2(e)",
-    questionText: "Discuss the environmental impact of any two of the following with regard to container ship technology: (i) Ballast water management. (ii) Oil leakage. (iii) Emissions.",
+    questionText: "Discuss the environmental impact of any two of the following with regard to container ship technology:\n(i) Ballast water management.\n(ii) Oil leakage.\n(iii) Emissions.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Effective ballast water management is crucial for mitigating the environmental impact of container ships. While there are challenges associated with chemical use and energy consumption, the overall benefits of preventing invasive species and protecting water quality are important.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Effective ballast water management is crucial for mitigating the environmental impact of container ships. While there are challenges associated with chemical use and energy consumption, the overall benefits of preventing invasive species and protecting water quality are important.","Oil leakage from container ships poses significant immediate and long-term environmental threats including marine pollution, harm to marine life, habitat destruction and ecosystem disruption. However, through design improvements, maintenance practices, effective response plans and regulatory compliance, the risks and impacts of oil leakage can be significantly reduced.","Reducing emissions from the use of fossil fuels on container ships has predominantly positive environmental impacts such as mitigating climate change, improving air quality, and protecting ecosystems. However, it also presents challenges, such as the environmental impact of alternative fuel production and the energy requirements of emissions reduction technologies."]} },
@@ -16145,29 +16179,6 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
-    id: "eng-2024-hl-q8-a-i", topicId: "eng-2-11", conceptId: "aid-diagram-s-operations-used-making",
-    section: "A", questionRef: "2024 HL Q8(a)(i)",
-    questionText: "Describe, with the aid of a diagram(s), three operations used in making the torch casing on a centre lathe.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 9,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Parallel turning: reduces Facing: smooth finish Drilling holes. diameter of workpiece. on front face.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Boring / internal threading: Knurling: adding Grooving / parting-off: widening the hole and finger grips. creating the grooves and creating the thread. cutting to length.", marks: null },
-    ],
-    questionFigure: {
-          "candId": "engineering-2024-HL-paper-q8ai-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q8ai-art.png",
-          "srcHash": "c8b2624427f3b72471f5289d03543052",
-          "alt": "The table or diagram printed with 2024 HL Q8(a)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
-          "includesPrompt": false
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2024, level: "higher",
-    paperFileid: "LC027ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q8-a-ii", topicId: "eng-2-11", conceptId: "identify-factors-influence-material-surface-finish",
     section: "A", questionRef: "2024 HL Q8(a)(ii)",
     questionText: "Identify two factors that influence material surface finish when machining on a lathe.",
@@ -16583,7 +16594,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q3-b-iii", topicId: "eng-3-8", conceptId: "aid-diagram-s-following-terms-related",
     section: "A", questionRef: "2024 HL Q3(b)(iii)",
-    questionText: "Describe, with the aid of a diagram(s), the following terms related to tensile testing: • necking • cup and cone fracture.",
+    questionText: "Describe, with the aid of a diagram(s), the following terms related to tensile testing:\n• necking\n• cup and cone fracture.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Necking is a type of plastic deformation observed in ductile materials subjected to tensile stress. This is where the middle of the specimen is noticeably thinner than the rest of the specimen and with a little more stress the piece is going to fracture.", marks: 2 },
@@ -16712,7 +16723,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q7-a-iii", topicId: "eng-1-9", conceptId: "identify-suitable-polymer-additive-used-improve",
     section: "A", questionRef: "2024 HL Q7(a)(iii)",
-    questionText: "Identify a suitable polymer additive which is used to improve the properties of the hose pipe for each of the following: • increased flexibility • greater resistance to UV rays.",
+    questionText: "Identify a suitable polymer additive which is used to improve the properties of the hose pipe for each of the following:\n• increased flexibility\n• greater resistance to UV rays.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Plasticisers are added to improve the flexibility of the polymer material.", marks: 3 },
@@ -16751,6 +16762,37 @@ export const CARDS: SecCard[] = [
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
           "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q8-a-i", topicId: "eng-2-11", conceptId: "aid-diagram-s-operations-used-making",
+    section: "A", questionRef: "2024 HL Q8(a)(i)",
+    questionText: "Describe, with the aid of a diagram(s), three operations used in making the torch casing on a centre lathe.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Parallel turning: reduces diameter of workpiece.", marks: 9, group: {"claimMax":3,"perOption":3,"options":["Parallel turning: reduces diameter of workpiece.","Facing: smooth finish on front face.","Drilling holes.","Boring / internal threading: widening the hole and creating the thread.","Knurling: adding finger grips.","Grooving / parting-off: creating the grooves and cutting to length."]} },
+    ],
+    questionFigure: {
+          "candId": "engineering-2024-HL-paper-q8ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-paper-q8ai-art.png",
+          "srcHash": "c8b2624427f3b72471f5289d03543052",
+          "alt": "The table or diagram printed with 2024 HL Q8(a)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "engineering-2024-HL-scheme-q8ai-sol",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-HL-scheme-q8ai-sol.png",
+          "srcHash": "e720ab044bf229e3c80e70da8e6d0b03",
+          "alt": "The marking scheme's printed answer for 2024 HL Q8(a)(i), as the State Examinations Commission set it. It reads: Parallel turning: reduces Facing: smooth finish Drilling holes. diameter of workpiece. on front face. Boring / internal threading: Knurling: adding Grooving / parting-off: widening the hole and finger grips. creating the grooves and creating the thread. cutting to length..",
+          "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -17071,7 +17113,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q2-e", topicId: "eng-3-14", conceptId: "discuss-examples-challenges-any-following-aspects",
     section: "A", questionRef: "2025 HL Q2(e)",
-    questionText: "Discuss, with examples, the challenges of any two of the following aspects associated with the expansion of hydrogen technologies: (i) The production of green hydrogen. (ii) Energy storage. (iii) Safety concerns.",
+    questionText: "Discuss, with examples, the challenges of any two of the following aspects associated with the expansion of hydrogen technologies:\n(i) The production of green hydrogen.\n(ii) Energy storage.\n(iii) Safety concerns.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Green hydrogen is hydrogen produced using renewable energy sources without emitting carbon dioxide (CO₂). The most common method for producing green hydrogen is electrolysis, which splits water (H₂O) into hydrogen (H₂) and oxygen (O₂) using electricity from renewable sources like solar, wind, or hydro power.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Green hydrogen is hydrogen produced using renewable energy sources without emitting carbon dioxide (CO₂). The most common method for producing green hydrogen is electrolysis, which splits water (H₂O) into hydrogen (H₂) and oxygen (O₂) using electricity from renewable sources like solar, wind, or hydro power.","Hydrogen can store energy for long periods, balancing supply and demand in renewable energy systems. It can be produced when renewable energy is abundant (e.g. solar or wind power) and stored for use when energy demand is high, making it an effective solution for stabilising energy grids and providing backup power.","Hydrogen is highly flammable and burns with a flame that is nearly invisible.","The storage of hydrogen under high pressure requires strong, lightweight tanks.","Hydrogen can make metals brittle increasing the likelihood of cracking and pipe failure.","Leaks are difficult to detect as hydrogen in colourless and odourless."]} },
@@ -17231,7 +17273,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q4-b-iii", topicId: "eng-2-6", conceptId: "annealing-1-2-carbon-steel-under",
     section: "A", questionRef: "2025 HL Q4(b)(iii)",
-    questionText: "Describe the annealing of 1.2% carbon steel under the following headings: • Temperature • Cooling process • Effect on the steel.",
+    questionText: "Describe the annealing of 1.2% carbon steel under the following headings:\n• Temperature\n• Cooling process\n• Effect on the steel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(approx. 800°C). It is then soaked at this temperature allowing the whole of the piece to be at the same temperature. It is then allowed to cool gradually in the furnace by reducing the temperature. During full annealing new grains are formed and this is called recrystallisation and this makes the metal soft, improves ductility, refines the grain size and removes internal stresses.", marks: 8 },
@@ -17764,7 +17806,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q8-c-i", topicId: "eng-2-11", conceptId: "identify-metal-cutting-chips-shown-b",
     section: "A", questionRef: "2025 HL Q8(c)(i)",
-    questionText: "Identify the metal cutting chips shown at A and B and distinguish clearly between them with reference to material properties. OR Describe each of the following in relation to robotic CNC milling technology: • Stepper motors • Feedback sensors.",
+    questionText: "Identify the metal cutting chips shown at A and B and distinguish clearly between them with reference to material properties. OR Describe each of the following in relation to robotic CNC milling technology:\n• Stepper motors\n• Feedback sensors.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Continuous chips are formed during metal machining in long ribbons without breakage. This chip formation is characterised by high cutting speeds and minimum friction between tool face and metal on ductile materials such as mild steel and aluminium.", marks: null },
@@ -17895,20 +17937,6 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
-    id: "eng-2025-hl-q9-b-iv", topicId: "eng-2-15", conceptId: "operation-single-acting-pneumatic-cylinder",
-    section: "A", questionRef: "2025 HL Q9(b)(iv)",
-    questionText: "Describe the operation of a single acting pneumatic cylinder.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A single acting cylinder is a pneumatic output device that requires compressed air to make the piston move. If the air is removed the piston will return because of the spring.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Force of air moves ram No compressed air Compressed air applied", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC027ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q9-b-v", topicId: "eng-2-16", conceptId: "operation-capacitor",
     section: "A", questionRef: "2025 HL Q9(b)(v)",
     questionText: "Outline the operation of a capacitor.",
@@ -17948,7 +17976,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q3-b-i", topicId: "eng-3-8", conceptId: "using-graph-paper-supplied-plot-load",
     section: "A", questionRef: "2025 HL Q3(b)(i), (ii)",
-    questionText: "Using the graph paper supplied, plot the load-extension diagram for the alloy. Indicate each of the following points on your graph: • Elastic limit • Start of necking • Fracture point.",
+    questionText: "Using the graph paper supplied, plot the load-extension diagram for the alloy. Indicate each of the following points on your graph:\n• Elastic limit\n• Start of necking\n• Fracture point.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "criterion", verbatim: "Load-extension graph:", marks: 10 },
@@ -18226,6 +18254,28 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
+    id: "eng-2025-hl-q9-b-iv", topicId: "eng-2-15", conceptId: "operation-single-acting-pneumatic-cylinder",
+    section: "A", questionRef: "2025 HL Q9(b)(iv)",
+    questionText: "Describe the operation of a single acting pneumatic cylinder.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A single acting cylinder is a pneumatic output device that requires compressed air to make the piston move. If the air is removed the piston will return because of the spring.", marks: 6 },
+    ],
+    figure: {
+          "candId": "engineering-2025-HL-scheme-q9biv-sol",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-scheme-q9biv-sol.png",
+          "srcHash": "ce3b86e3440d32ec90eb263433a2570a",
+          "alt": "The marking scheme's printed answer for 2025 HL Q9(b)(iv), as the State Examinations Commission set it. It reads: Force of air moves ram No compressed air Compressed air applied.",
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2026, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2026 Higher Level — © State Examinations Commission.",
@@ -18423,7 +18473,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2026 Higher Level — © State Examinations Commission.",
     id: "eng-2026-hl-q3-a-ii", topicId: "eng-3-8", conceptId: "aid-diagram-s-vickers-hardness-test",
     section: "A", questionRef: "2026 HL Q3(a)(ii)",
-    questionText: "Describe, with the aid of a diagram(s), the Vickers hardness test, with reference to: • indenter shape • test procedure • hardness calculation.",
+    questionText: "Describe, with the aid of a diagram(s), the Vickers hardness test, with reference to:\n• indenter shape\n• test procedure\n• hardness calculation.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Vickers hardness test: A hard metal point, called an indenter, is pressed into the surface of the material being tested with a measured force. Softer materials will produce a deeper indentation. The test piece is considerably thicker than the indentation.", marks: null },
@@ -19686,7 +19736,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2026 Higher Level — © State Examinations Commission.",
     id: "eng-2026-hl-q6-c-ii-or", topicId: "eng-2-10", conceptId: "why-weld-cracks-or-incomplete-fusion",
     section: "A", questionRef: "2026 HL Q6(c)(ii) — robotic arms",
-    questionText: "The Dexai robotic arm shown is a collaborative robot used in commercial kitchens to automate food preparation tasks. Explain the following terms in relation to robotic arm control: • Working envelope • Degrees of freedom.",
+    questionText: "The Dexai robotic arm shown is a collaborative robot used in commercial kitchens to automate food preparation tasks. Explain the following terms in relation to robotic arm control:\n• Working envelope\n• Degrees of freedom.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Working envelope: Working envelope refers to the three-dimensional space within which a robotic arm can move and operate. It defines the maximum range or boundary that the robot can reach in all directions, based on its design, joint configuration and axis movement.", marks: 4 },
@@ -19810,7 +19860,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2026 Higher Level — © State Examinations Commission.",
     id: "eng-2026-hl-q8-c", topicId: "eng-2-11", conceptId: "face-milling-common-machining-process-or",
     section: "A", questionRef: "2026 HL Q8(c)",
-    questionText: "CNC machines have revolutionised engineering practices in recent decades. Describe each of the following CNC features: • G-code • Stepper motor • Leadscrew • Control panel.",
+    questionText: "CNC machines have revolutionised engineering practices in recent decades. Describe each of the following CNC features:\n• G-code\n• Stepper motor\n• Leadscrew\n• Control panel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
     { id: "r-1", kind: "point", verbatim: "G-code: Geometric code is the main programming language used to drive CNC machines. G-codes will direct tool paths, set feed rate and spindle rotation.", marks: 4 },
@@ -19852,7 +19902,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2026 Higher Level — © State Examinations Commission.",
     id: "eng-2026-hl-q8-c-ii", topicId: "eng-2-11", conceptId: "effects-cutting-fluids-material-surface-finish",
     section: "A", questionRef: "2026 HL Q8(c)(ii)",
-    questionText: "Face milling is a common machining process. Describe the effects of cutting fluids on: • Material surface finish • Cutting-tool life.",
+    questionText: "Face milling is a common machining process. Describe the effects of cutting fluids on:\n• Material surface finish\n• Cutting-tool life.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Material surface finish: Cutting fluids help cool and lubricate the cutting area, reducing friction and heat. This results in a smoother surface finish on the material.", marks: 4 },

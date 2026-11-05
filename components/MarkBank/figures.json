@@ -61850,5 +61850,89 @@
   "year": 2014,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Engineering 2014 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2014-HL-scheme-q1h-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2014-HL-scheme-q1h-sol.png",
+  "md5": "f172333d0340eee9e6ed72cf93b7d6a4",
+  "alt": "The marking scheme's printed answer for 2014 HL Q1(h), as the State Examinations Commission set it. It reads: Marie Curie Marie (1867 – 1934) was a Polish and naturalized-French physicist and Skáodowska-Curie chemist who conducted pioneering research on radioactivity and discovered two elements - polonium and radium. She was the first woman to win a Nobel Prize and the only person to win in multiple sciences..",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q1(h)",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2014 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-scheme-q1b-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-scheme-q1b-sol.png",
+  "md5": "990f8fe09149209162cd8f3f27d7f81d",
+  "alt": "The marking scheme's printed answer for 2022 HL Q1(b), as the State Examinations Commission set it. It reads: Crystalline Structures Amorphous Structures.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q1(b)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-HL-scheme-q8bii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-HL-scheme-q8bii-sol.png",
+  "md5": "adb309e39da69066557a5fa56de1cedb",
+  "alt": "The marking scheme's printed answer for 2022 HL Q8(b)(ii), as the State Examinations Commission set it. It reads: Micro switch Pillar drilling machine interlocking guard Centre lathe interlocking guard.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q8(b)(ii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2022-OL-scheme-q2b-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2022-OL-scheme-q2b-sol.png",
+  "md5": "1081e1c7aa1dc90e833d49d1a9b6a277",
+  "alt": "The marking scheme's printed answer for 2022 OL Q2(b), as the State Examinations Commission set it. It reads: Cupola furnace Basic oxygen furnace Blast furnace Furnace lid Carbon electrodes Back door Tapping for removing spout slag Charge Tilting rollers Electric Arc furnace.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q2(b)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Engineering 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "engineering-2023-HL-scheme-q9bv-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2023-HL-scheme-q9bv-sol.png",
+  "md5": "d7e11465ef5a158e8a685eeca75ad4b3",
+  "alt": "The marking scheme's printed answer for 2023 HL Q9(b)(v), as the State Examinations Commission set it. It reads: Compound gear reduction 9:1 Simple gear reduction 3:1.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q9(b)(v)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2024-HL-scheme-q8ai-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2024-HL-scheme-q8ai-sol.png",
+  "md5": "e720ab044bf229e3c80e70da8e6d0b03",
+  "alt": "The marking scheme's printed answer for 2024 HL Q8(a)(i), as the State Examinations Commission set it. It reads: Parallel turning: reduces Facing: smooth ﬁnish Drilling holes. diameter of workpiece. on front face. Boring / internal threading: Knurling: adding Grooving / parƟng-oﬀ: widening the hole and ﬁnger grips. creaƟng the grooves and creaƟng the thread. cuƫng to length..",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q8(a)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2025-HL-scheme-q9biv-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2025-HL-scheme-q9biv-sol.png",
+  "md5": "ce3b86e3440d32ec90eb263433a2570a",
+  "alt": "The marking scheme's printed answer for 2025 HL Q9(b)(iv), as the State Examinations Commission set it. It reads: Force of air moves ram No compressed air Compressed air applied.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q9(b)(iv)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
  }
 }

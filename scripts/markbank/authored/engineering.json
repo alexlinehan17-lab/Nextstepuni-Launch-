@@ -715,7 +715,8 @@
    }
   ],
   "stem": "Section A – 50 marks Give brief answers to any ten of the following:",
-  "notes": "The scheme prints '5'."
+  "notes": "The scheme prints '5'. The scheme's note on Marie Curie is shown as printed: the option for her is lifted from after her full name on the note's first line, which the scheme's text layer cannot read.",
+  "figureKey": "engineering-2014-HL-scheme-q1h-sol"
  },
  {
   "id": "eng-2014-hl-q1-i",
@@ -955,7 +956,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2014 HL Q1(n)",
-  "questionText": "Nuclear power plants provide some of the energy in many modern industrialised economies. Discuss this energy source with reference to: • Efficiency • Environmental impact.",
+  "questionText": "Nuclear power plants provide some of the energy in many modern industrialised economies. Discuss this energy source with reference to:\n• Efficiency\n• Environmental impact.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1153,7 +1154,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2014 HL Q1(r)",
-  "questionText": "Safety is a primary concern in the design, construction and operation of any modern nuclear power plant. Describe how any two of the following contribute to overall safety: (i) Modern safety regulations; (ii) Containment building; (iii) Back-up power supply.",
+  "questionText": "Safety is a primary concern in the design, construction and operation of any modern nuclear power plant. Describe how any two of the following contribute to overall safety:\n(i) Modern safety regulations;\n(ii) Containment building;\n(iii) Back-up power supply.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1349,7 +1350,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "From the graph 332 N/mm2",
+    "verbatim": "From the graph — 332 N/mm2",
     "marks": 4
    }
   ],
@@ -2143,7 +2144,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2014 HL Q6(b)",
-  "questionText": "Describe how polymer properties may be enhanced by any three of the following: (i) Plasticisers; (ii) Stabilisers; (iii) Glass or carbon fibre; (iv) Lamination.",
+  "questionText": "Describe how polymer properties may be enhanced by any three of the following:\n(i) Plasticisers;\n(ii) Stabilisers;\n(iii) Glass or carbon fibre;\n(iv) Lamination.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -2319,7 +2320,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2014 HL Q7(c)",
-  "questionText": "Answer part (i) or part (ii): (i) Describe, with the aid of suitable diagrams, each of the following: • a single point cutting tool • a multi-point cutting tool • an abrasive cutting tool. (ii) Describe how carbide cutting tools are manufactured and state two advantages of using carbide cutting tools.",
+  "questionText": "Answer part (i) or part (ii): (i) Describe, with the aid of suitable diagrams, each of the following:\n• a single point cutting tool\n• a multi-point cutting tool\n• an abrasive cutting tool.\n(ii) Describe how carbide cutting tools are manufactured and state two advantages of using carbide cutting tools.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -2474,7 +2475,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2014 HL Q8(b)",
-  "questionText": "Describe any three of the following: (i) The differences in operation between a single-acting cylinder and a double-acting cylinder in pneumatic control. (ii) The operation and application of a rack and pinion system. (iii) One application of reciprocating motion. (iv) A toggle mechanism. (v) The function of idler gears.",
+  "questionText": "Describe any three of the following:\n(i) The differences in operation between a single-acting cylinder and a double-acting cylinder in pneumatic control.\n(ii) The operation and application of a rack and pinion system.\n(iii) One application of reciprocating motion.\n(iv) A toggle mechanism.\n(v) The function of idler gears.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -3062,15 +3063,15 @@
    {
     "id": "r-1",
     "kind": "anyN",
-    "verbatim": "Cast iron Cupola furnace",
+    "verbatim": "Cast iron — Cupola furnace",
     "marks": 8,
     "group": {
      "claimMax": 2,
      "perOption": 4,
      "options": [
-      "Cast iron Cupola furnace",
-      "High carbon steel Electric arc furnace",
-      "Pig Iron Blast furnace"
+      "Cast iron — Cupola furnace",
+      "High carbon steel — Electric arc furnace",
+      "Pig Iron — Blast furnace"
      ]
     }
    }
@@ -3124,13 +3125,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Bronze Statutes / ornaments",
+    "verbatim": "Bronze — Statutes / ornaments",
     "marks": 4
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Brass Door handles / Wood screws",
+    "verbatim": "Brass — Door handles / Wood screws",
     "marks": 4
    }
   ],
@@ -3645,7 +3646,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2014 OL Q5(b)",
-  "questionText": "Describe, with the aid of a diagram, the operation of one of the following and identify a suitable application: (i) Strip heater; (ii) Plastic dip coating tank.",
+  "questionText": "Describe, with the aid of a diagram, the operation of one of the following and identify a suitable application:\n(i) Strip heater;\n(ii) Plastic dip coating tank.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -3731,13 +3732,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Cavity wall insulation Ploystyrene",
+    "verbatim": "Cavity wall insulation — Ploystyrene",
     "marks": 3
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Gear wheel Nylon",
+    "verbatim": "Gear wheel — Nylon",
     "marks": 3
    }
   ],
@@ -3956,7 +3957,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2014 OL Q7(b)",
-  "questionText": "A hole is produced in a brass plate to the dimensions shown. State the: (i) Nominal diameter of the hole; (ii) Smallest diameter of the hole; (iii) Largest diameter of the hole; (iv) Tolerance of the hole.",
+  "questionText": "A hole is produced in a brass plate to the dimensions shown. State the:\n(i) Nominal diameter of the hole;\n(ii) Smallest diameter of the hole;\n(iii) Largest diameter of the hole;\n(iv) Tolerance of the hole.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5104,7 +5105,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2015 HL Q1(q)",
-  "questionText": "Modern fuel injection systems rely on multiple components and sensors. Describe briefly the function of any two of the following: (i) Throttle position sensor; (ii) Lambda sensor; (iii) Crankshaft position sensor; (iv) MAP sensor.",
+  "questionText": "Modern fuel injection systems rely on multiple components and sensors. Describe briefly the function of any two of the following:\n(i) Throttle position sensor;\n(ii) Lambda sensor;\n(iii) Crankshaft position sensor;\n(iv) MAP sensor.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5138,7 +5139,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2015 HL Q1(r)",
-  "questionText": "Discuss the main features of Direct Injection, with reference to: • Injection timing • Mixture formation (air : fuel ratio).",
+  "questionText": "Discuss the main features of Direct Injection, with reference to:\n• Injection timing\n• Mixture formation (air : fuel ratio).",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5399,7 +5400,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2015 HL Q3(b)(ii)",
-  "questionText": "Describe in detail point X and point Y, with reference to each of the following: • Phase change • Composition • Temperature.",
+  "questionText": "Describe in detail point X and point Y, with reference to each of the following:\n• Phase change\n• Composition\n• Temperature.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5431,7 +5432,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2015 HL Q3(c)",
-  "questionText": "Select any two of the following and distinguish between: (i) Optical pyrometer and thermocouple pyrometer; (ii) Induction hardening and flame hardening; (iii) Ferrite and pearlite; (iv) Soaking and water cooling in heat treatment.",
+  "questionText": "Select any two of the following and distinguish between:\n(i) Optical pyrometer and thermocouple pyrometer;\n(ii) Induction hardening and flame hardening;\n(iii) Ferrite and pearlite;\n(iv) Soaking and water cooling in heat treatment.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5755,7 +5756,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2015 HL Q5(a)(iv)",
-  "questionText": "Suggest a suitable method to protect against each of the following when welding: • Electric shock • Intense light from welding • Welding fumes.",
+  "questionText": "Suggest a suitable method to protect against each of the following when welding:\n• Electric shock\n• Intense light from welding\n• Welding fumes.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -5837,7 +5838,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "MIG welding: A semi-automatic process. A consumable bare wire electrode is fed continuously into the weld pool area through the welding torch. An inert gas, such as Argon, creates a protective shield pool giving a fluxing action. The feed rate and flow rate of the gas are set by the operator. This allows the operator to guide the torch along the weld once the arc is generated between the electrode and the work. MIG welding does not produce a slag on the weld.",
+    "verbatim": "MIG welding: A semi-automatic process. A consumable bare wire electrode is fed continuously into the weld pool area through the welding torch. An inert gas, such as Argon, creates a protective shield around the weld pool giving a fluxing action. The feed rate and flow rate of the gas are set by the operator. This allows the operator to guide the torch along the weld once the arc is generated between the electrode and the work. MIG welding does not produce a slag on the weld.",
     "marks": 10
    }
   ],
@@ -5855,7 +5856,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2015 HL Q5(c)",
-  "questionText": "Using the following guidelines, compare resistance seam welding and resistance spot welding: • Electrode shape • Principle of operation • Weld joint • Application.",
+  "questionText": "Using the following guidelines, compare resistance seam welding and resistance spot welding:\n• Electrode shape\n• Principle of operation\n• Weld joint\n• Application.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -5922,7 +5923,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2015 HL Q5(c)(i)",
-  "questionText": "Explain the importance of each of the following in relation to the Robocoaster device shown opposite: • Degrees of freedom • Working envelope.",
+  "questionText": "Explain the importance of each of the following in relation to the Robocoaster device shown opposite:\n• Degrees of freedom\n• Working envelope.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6095,7 +6096,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2015 HL Q6(b)",
-  "questionText": "Select any two of the following and distinguish between: (i) Amorphous and crystalline polymer; (ii) Natural and synthetic rubber; (iii) Foaming agents and fillers; (iv) Catalyst and inhibitor.",
+  "questionText": "Select any two of the following and distinguish between:\n(i) Amorphous and crystalline polymer;\n(ii) Natural and synthetic rubber;\n(iii) Foaming agents and fillers;\n(iv) Catalyst and inhibitor.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6570,7 +6571,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "The worm and wheel mechanism will provide adjustment of net tightness. The tensioning handle will be attached to the worm mechanism with the gear wheel driving the net cord. As the handle is turned, the worm will rotate, this drives to gear wheel and tightens the net cord.",
+    "verbatim": "The worm and wheel mechanism will provide precise adjustment of net tightness. The tensioning handle will be attached to the worm mechanism with the gear wheel driving the net cord. As the handle is turned, the worm will rotate, this drives to gear wheel and tightens the net cord.",
     "marks": 8
    }
   ],
@@ -6615,7 +6616,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2015 HL Q8(b)",
-  "questionText": "Explain any three of the following: (i) The function of a thermostat; (ii) The advantages of roller bearings; (iii) One application of a DPDT switch; (iv) Two advantages of helical gears over spur gears; (v) The operation of a pneumatic double-acting cylinder.",
+  "questionText": "Explain any three of the following:\n(i) The function of a thermostat;\n(ii) The advantages of roller bearings;\n(iii) One application of a DPDT switch;\n(iv) Two advantages of helical gears over spur gears;\n(v) The operation of a pneumatic double-acting cylinder.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -7467,7 +7468,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2015 OL Q3(d)",
-  "questionText": "Outline the effects of using each of the following, when cooling metals during heat treatment: • Water • Oil. OR State two applications for robotics in the manufacturing industry.",
+  "questionText": "Outline the effects of using each of the following, when cooling metals during heat treatment:\n• Water\n• Oil.\nOR\nState two applications for robotics in the manufacturing industry.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -8139,7 +8140,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2015 OL Q7(b)",
-  "questionText": "A hole and shaft assembly are manufactured to the dimensions shown. State the: (i) Nominal diameter of the hole; (ii) Largest diameter of the hole; (iii) Smallest diameter of the shaft; (iv) The type of fit which will result from the assembly of the largest hole and the smallest shaft.",
+  "questionText": "A hole and shaft assembly are manufactured to the dimensions shown. State the:\n(i) Nominal diameter of the hole;\n(ii) Largest diameter of the hole;\n(iii) Smallest diameter of the shaft;\n(iv) The type of fit which will result from the assembly of the largest hole and the smallest shaft.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9501,7 +9502,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 HL Q1(r)",
-  "questionText": "Describe any two of the following in relation to the process of Rapid Prototyping: (i) Dual extruder (ii) Additive process (iii) Support materials (iv) The environmental impact of using rapid prototyping techniques.",
+  "questionText": "Describe any two of the following in relation to the process of Rapid Prototyping:\n(i) Dual extruder\n(ii) Additive process\n(iii) Support materials\n(iv) The environmental impact of using rapid prototyping techniques.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -10738,7 +10739,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 HL Q7(c)",
-  "questionText": "Indicate whether CNC machining or manual machining is most suitable for each of the following applications. Justify your selection in each case: (i) The production of plumbing fittings; (ii) Customised pieces for a chess set; (iii) Repair of damaged alloy car wheels.",
+  "questionText": "Indicate whether CNC machining or manual machining is most suitable for each of the following applications. Justify your selection in each case:\n(i) The production of plumbing fittings;\n(ii) Customised pieces for a chess set;\n(iii) Repair of damaged alloy car wheels.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -10834,7 +10835,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 HL Q8(b)",
-  "questionText": "Describe any three of the following: (i) A crank and slider mechanism; (ii) The advantages of a timing chain over a timing belt; (iii) The use of a reservoir in a pneumatic circuit; (iv) The function of a capacitor; (v) The use of an idler gear.",
+  "questionText": "Describe any three of the following:\n(i) A crank and slider mechanism;\n(ii) The advantages of a timing chain over a timing belt;\n(iii) The use of a reservoir in a pneumatic circuit;\n(iv) The function of a capacitor;\n(v) The use of an idler gear.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -11361,7 +11362,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 OL Q2(a)",
-  "questionText": "(i) Name a suitable material for each of the parts labelled on the trike buggy shown opposite. (ii) State one reason for the selection of each material.",
+  "questionText": "(i) Name a suitable material for each of the parts labelled on the trike buggy shown opposite.\n(ii) State one reason for the selection of each material.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -11408,19 +11409,19 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(i) Steel Basic oxygen furnace",
+    "verbatim": "(i) Steel — Basic oxygen furnace",
     "marks": 4
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "(ii) Pig iron Blast furnace",
+    "verbatim": "(ii) Pig iron — Blast furnace",
     "marks": 4
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "(iii) Cast iron Cupola furnace",
+    "verbatim": "(iii) Cast iron — Cupola furnace",
     "marks": 4
    }
   ],
@@ -11670,7 +11671,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 OL Q4(a)",
-  "questionText": "Describe each of the following oxy-acetylene flames: (i) Neutral flame (ii) Oxidising flame (iii) Carburising flame.",
+  "questionText": "Describe each of the following oxy-acetylene flames:\n(i) Neutral flame\n(ii) Oxidising flame\n(iii) Carburising flame.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -12346,7 +12347,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2016 OL Q7(b)",
-  "questionText": "A steel shaft is machined to the dimensions shown. State the: (i) Nominal diameter of the shaft; (ii) Minimum diameter of the shaft; (iii) Maximum diameter of the shaft; (iv) The tolerance on the shaft.",
+  "questionText": "A steel shaft is machined to the dimensions shown. State the:\n(i) Nominal diameter of the shaft;\n(ii) Minimum diameter of the shaft;\n(iii) Maximum diameter of the shaft;\n(iv) The tolerance on the shaft.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -13039,7 +13040,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 HL Q7(b)(ii)",
-  "questionText": "Describe the impact of cutting fluids on: • metal cutting machines and • metal cutting efficiency.",
+  "questionText": "Describe the impact of cutting fluids on:\n• metal cutting machines and\n• metal cutting efficiency.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -13853,7 +13854,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 HL Q1(q)",
-  "questionText": "Describe in detail any one of the following processes: (i) Lead by nose; (ii) Teach pendant; (iii) Off-line programming.",
+  "questionText": "Describe in detail any one of the following processes:\n(i) Lead by nose;\n(ii) Teach pendant;\n(iii) Off-line programming.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -13881,7 +13882,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 HL Q1(r)",
-  "questionText": "Describe any two of the following in relation to robotic control in motor vehicle manufacture: (i) Closed loop control; (ii) Degrees of freedom; (iii) Working envelope; (iv) Any two safety features of a robotic system used in automobile manufacture.",
+  "questionText": "Describe any two of the following in relation to robotic control in motor vehicle manufacture:\n(i) Closed loop control;\n(ii) Degrees of freedom;\n(iii) Working envelope;\n(iv) Any two safety features of a robotic system used in automobile manufacture.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -14003,7 +14004,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 HL Q2(b)(ii)",
-  "questionText": "The results shown below were obtained from a tensile test on a carbon steel specimen of 12 mm diameter and 80 mm gauge length. Indicate the following points on your graph: • Elastic limit • Start of necking • Fracture point.",
+  "questionText": "The results shown below were obtained from a tensile test on a carbon steel specimen of 12 mm diameter and 80 mm gauge length. Indicate the following points on your graph:\n• Elastic limit\n• Start of necking\n• Fracture point.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -14408,7 +14409,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 HL Q4(c)",
-  "questionText": "Select any two from (i), (ii) or (iii) below and differentiate between the terms in each: (i) Amorphous solid structures and crystalline solid structures; (ii) Solvus and solidus; (iii) Body Centre Cubic (BCC) and Face Centre Cubic (FCC) structures.",
+  "questionText": "Select any two from (i), (ii) or (iii) below and differentiate between the terms in each:\n(i) Amorphous solid structures and crystalline solid structures;\n(ii) Solvus and solidus;\n(iii) Body Centre Cubic (BCC) and Face Centre Cubic (FCC) structures.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -14555,7 +14556,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 HL Q5(c)",
-  "questionText": "Describe, with the aid of a suitable diagram(s), any one of the following: (i) The transformer-rectifier circuit used in manual metal arc welding. (ii) The essential differences between Metal Inert Gas (MIG) welding and Tungsten Inert Gas (TIG) welding.",
+  "questionText": "Describe, with the aid of a suitable diagram(s), any one of the following:\n(i) The transformer-rectifier circuit used in manual metal arc welding.\n(ii) The essential differences between Metal Inert Gas (MIG) welding and Tungsten Inert Gas (TIG) welding.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -14771,7 +14772,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 HL Q6(c)",
-  "questionText": "Describe any three of the following: (i) Calendering; (ii) Plastic pultrusion; (iii) Monomer; (iv) Catalyst; (v) Compression moulding.",
+  "questionText": "Describe any three of the following:\n(i) Calendering;\n(ii) Plastic pultrusion;\n(iii) Monomer;\n(iv) Catalyst;\n(v) Compression moulding.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -15502,7 +15503,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 OL Q2(a)(i)",
-  "questionText": "Name the metals produced from each of the furnaces listed below: • Blast furnace • Cupola furnace • Electric arc furnace.",
+  "questionText": "Name the metals produced from each of the furnaces listed below:\n• Blast furnace\n• Cupola furnace\n• Electric arc furnace.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -15643,7 +15644,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 OL Q2(c)",
-  "questionText": "Name the metal alloys produced from any two of the following combinations: (i) Copper and zinc; (ii) Lead and tin; (iii) Copper and tin.",
+  "questionText": "Name the metal alloys produced from any two of the following combinations:\n(i) Copper and zinc;\n(ii) Lead and tin;\n(iii) Copper and tin.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -15812,7 +15813,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 OL Q3(d)",
-  "questionText": "Explain any two of the following terms: (i) Malleability, (ii) Tensile strength, (iii) Work hardening. OR (i) State one advantage for the use of robotics in manufacturing. (ii) State one disadvantage for the use of robotics in manufacturing.",
+  "questionText": "Explain any two of the following terms: (i) Malleability, (ii) Tensile strength, (iii) Work hardening.\nOR\n(i) State one advantage for the use of robotics in manufacturing.\n(ii) State one disadvantage for the use of robotics in manufacturing.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -16229,7 +16230,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 OL Q5(b)",
-  "questionText": "Describe any three of the following terms associated with plastics: (i) Thermoplastic; (ii) Elastic memory; (iii) Thermosetting plastic; (iv) Plastic dip coating tank.",
+  "questionText": "Describe any three of the following terms associated with plastics:\n(i) Thermoplastic;\n(ii) Elastic memory;\n(iii) Thermosetting plastic;\n(iv) Plastic dip coating tank.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -16579,7 +16580,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2017 OL Q7(b)",
-  "questionText": "A hole and shaft assembly is manufactured to the dimensions shown. State the: (i) Nominal diameter of the shaft; (ii) Smallest diameter of the shaft; (iii) Largest diameter of the hole; (iv) The type of fit which will result from the assembly of the smallest shaft and the largest hole.",
+  "questionText": "A hole and shaft assembly is manufactured to the dimensions shown. State the:\n(i) Nominal diameter of the shaft;\n(ii) Smallest diameter of the shaft;\n(iii) Largest diameter of the hole;\n(iv) The type of fit which will result from the assembly of the smallest shaft and the largest hole.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -16980,7 +16981,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 HL Q5(c)(i)",
-  "questionText": "Explain the following terms associated with robotic lawn mowers: • Self-docking; • Robotic sensors.",
+  "questionText": "Explain the following terms associated with robotic lawn mowers:\n• Self-docking;\n• Robotic sensors.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -17036,7 +17037,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 HL Q6(a)(ii)",
-  "questionText": "Outline a suitable polymer additive which is used to improve the roof box for each of the following: • to increase flexibility • to provide greater resistance to UV rays.",
+  "questionText": "Outline a suitable polymer additive which is used to improve the roof box for each of the following:\n• to increase flexibility\n• to provide greater resistance to UV rays.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -17092,7 +17093,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 HL Q7(a)(ii)",
-  "questionText": "Explain the impact of continuous chip formation on: • Surface finish • Automated machinery.",
+  "questionText": "Explain the impact of continuous chip formation on:\n• Surface finish\n• Automated machinery.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -17995,7 +17996,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 HL Q1(p)",
-  "questionText": "The flight control system includes a range of sensors, mainly to achieve smooth and stable flight. Explain the function of any two of the following in relation to flight control: (i) Accelerometer; (ii) Gyroscope; (iii) Electronic speed controller.",
+  "questionText": "The flight control system includes a range of sensors, mainly to achieve smooth and stable flight. Explain the function of any two of the following in relation to flight control:\n(i) Accelerometer;\n(ii) Gyroscope;\n(iii) Electronic speed controller.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -18028,7 +18029,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 HL Q1(q)",
-  "questionText": "Drone navigation systems are normally reliant on a Global Positioning System (GPS) for safe guidance. Describe briefly any two of the following in relation to navigation: (i) Trilateration; (ii) Autonomous flight; (iii) Auto return home; (iv) FPV flying.",
+  "questionText": "Drone navigation systems are normally reliant on a Global Positioning System (GPS) for safe guidance. Describe briefly any two of the following in relation to navigation:\n(i) Trilateration;\n(ii) Autonomous flight;\n(iii) Auto return home;\n(iv) FPV flying.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -18209,7 +18210,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 HL Q2(b)(ii)",
-  "questionText": "The graphs A, B and C shown below were produced following tensile tests on three metals – copper, low carbon steel and stainless steel. Compare graph A and graph C with reference to each of the following: • the shape of the graph • material properties.",
+  "questionText": "The graphs A, B and C shown below were produced following tensile tests on three metals – copper, low carbon steel and stainless steel. Compare graph A and graph C with reference to each of the following:\n• the shape of the graph\n• material properties.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -18454,7 +18455,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 HL Q3(b)(iii)",
-  "questionText": "A simplified portion of the iron-carbon equilibrium diagram is shown. Describe the annealing of 1.2% carbon steel under the following headings: • Temperature • Cooling process • Effects on the steel.",
+  "questionText": "A simplified portion of the iron-carbon equilibrium diagram is shown. Describe the annealing of 1.2% carbon steel under the following headings:\n• Temperature\n• Cooling process\n• Effects on the steel.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -18486,7 +18487,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 HL Q3(c)",
-  "questionText": "Describe, with the aid of a diagram(s), one method of measuring furnace temperature, using the following guidelines: • Equipment used • Principles of operation • Accuracy of results.",
+  "questionText": "Describe, with the aid of a diagram(s), one method of measuring furnace temperature, using the following guidelines:\n• Equipment used\n• Principles of operation\n• Accuracy of results.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -18672,7 +18673,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 HL Q4(c)",
-  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between each term: (i) Partial solubility alloy and solid solution alloy; (ii) Work hardening and age hardening; (iii) Ductility in BCC structures and ductility in FCC structures.",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between each term:\n(i) Partial solubility alloy and solid solution alloy;\n(ii) Work hardening and age hardening;\n(iii) Ductility in BCC structures and ductility in FCC structures.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -18824,7 +18825,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 HL Q5(c)",
-  "questionText": "Describe, with the aid of suitable diagrams, the three flame types associated with oxy-acetylene welding with reference to each of the following: • Constituents of each flame • Ratio of oxygen to acetylene gases in each flame • Temperature of each flame • Uses of each flame.",
+  "questionText": "Describe, with the aid of suitable diagrams, the three flame types associated with oxy-acetylene welding with reference to each of the following:\n• Constituents of each flame\n• Ratio of oxygen to acetylene gases in each flame\n• Temperature of each flame\n• Uses of each flame.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -18918,7 +18919,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 HL Q6(b)",
-  "questionText": "Describe any three of the following: (i) Calendering; (ii) Addition polymerisation; (iii) Glass transition temperature; (iv) Van der Waal forces; (v) Rotational moulding.",
+  "questionText": "Describe any three of the following:\n(i) Calendering;\n(ii) Addition polymerisation;\n(iii) Glass transition temperature;\n(iv) Van der Waal forces;\n(v) Rotational moulding.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -19059,7 +19060,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 HL Q7(c)(i)",
-  "questionText": "Grinding wheels are subject to conditions such as loading and glazing which affects the cutting ability of the grinding wheel. Explain, with the aid of a diagram(s), the differences between loading and glazing of grinding wheels. OR In modern CNC systems, CAD software is used to define the dimensions of a part while CAM software is used to control the machine. Explain two of the following terms in relation to CNC technology: • Machine tool envelope • Software simulation • Closed loop control.",
+  "questionText": "Grinding wheels are subject to conditions such as loading and glazing which affects the cutting ability of the grinding wheel. Explain, with the aid of a diagram(s), the differences between loading and glazing of grinding wheels. OR In modern CNC systems, CAD software is used to define the dimensions of a part while CAM software is used to control the machine. Explain two of the following terms in relation to CNC technology:\n• Machine tool envelope\n• Software simulation\n• Closed loop control.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -19787,13 +19788,13 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "(ii) Name: Electrical arc furnace Function: Production of steel",
+    "verbatim": "(ii) Name: Electrical arc furnace — Function: Production of steel",
     "marks": 4
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "(iii) Name: Basic oxygen furnace Function: Production of steel",
+    "verbatim": "(iii) Name: Basic oxygen furnace — Function: Production of steel",
     "marks": 4
    }
   ],
@@ -20072,7 +20073,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 OL Q3(b)",
-  "questionText": "Describe the heat treatment processes used in each of the following cases: (i) To temper the point of a scriber. (ii) To case harden the point of a screwdriver.",
+  "questionText": "Describe the heat treatment processes used in each of the following cases:\n(i) To temper the point of a scriber.\n(ii) To case harden the point of a screwdriver.",
   "tariffModel": {
    "kind": "orderedSplit",
    "notation": "6 + 5"
@@ -20948,7 +20949,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2018 OL Q7(b)",
-  "questionText": "A hole and shaft are manufactured to the dimensions shown. State the: (i) Nominal diameter of the shaft; (ii) Largest diameter of the shaft; (iii) Smallest diameter of the hole; (iv) The type of fit which will result from the assembly of the largest shaft and the smallest hole.",
+  "questionText": "A hole and shaft are manufactured to the dimensions shown. State the:\n(i) Nominal diameter of the shaft;\n(ii) Largest diameter of the shaft;\n(iii) Smallest diameter of the hole;\n(iv) The type of fit which will result from the assembly of the largest shaft and the smallest hole.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -20975,7 +20976,7 @@
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "(iv) Type of fit. Interference fit",
+    "verbatim": "(iv) Type of fit. — Interference fit",
     "marks": 5
    }
   ],
@@ -21344,7 +21345,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 HL Q5(c)(i)",
-  "questionText": "Discuss the impact of the robotic suit in the following areas: • Assisting a person with a disability • Rehabilitation due to injury.",
+  "questionText": "Discuss the impact of the robotic suit in the following areas:\n• Assisting a person with a disability\n• Rehabilitation due to injury.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -21539,7 +21540,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 HL Q7(a)(i)",
-  "questionText": "Explain how the use of cutting fluids impact on: • Material surface finish • Cutting tool life.",
+  "questionText": "Explain how the use of cutting fluids impact on:\n• Material surface finish\n• Cutting tool life.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22239,7 +22240,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 HL Q1(o)",
-  "questionText": "Scanning probe technology is central to the development of nanomaterials. Outline, with the aid of a diagram(s), the operation of one of the following: (i) Atomic Force Microscope (AFM). (ii) Scanning Tunnelling Microscope (STM).",
+  "questionText": "Scanning probe technology is central to the development of nanomaterials. Outline, with the aid of a diagram(s), the operation of one of the following:\n(i) Atomic Force Microscope (AFM).\n(ii) Scanning Tunnelling Microscope (STM).",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22267,7 +22268,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 HL Q1(p)",
-  "questionText": "Describe specific applications of nanotechnologies in each of the following: • Diagnosis of medical conditions • Delivery of drugs • Prevention of superbugs.",
+  "questionText": "Describe specific applications of nanotechnologies in each of the following:\n• Diagnosis of medical conditions\n• Delivery of drugs\n• Prevention of superbugs.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22364,7 +22365,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 HL Q1(r)",
-  "questionText": "Describe how nanotechnology could benefit any two of the following: (i) Electronics. (ii) Environmental protection. (iii) Clothing. (iv) Water purity.",
+  "questionText": "Describe how nanotechnology could benefit any two of the following:\n(i) Electronics.\n(ii) Environmental protection.\n(iii) Clothing.\n(iv) Water purity.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22523,7 +22524,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 HL Q2(c)(i)",
-  "questionText": "Non-destructive testing (NDT) is critical in the design and maintenance of a wide range of components. Outline one application for each of the following methods of NDT: • Visual inspection • Dye penetrant testing • Magnetic particle testing • Eddy current testing.",
+  "questionText": "Non-destructive testing (NDT) is critical in the design and maintenance of a wide range of components. Outline one application for each of the following methods of NDT:\n• Visual inspection\n• Dye penetrant testing\n• Magnetic particle testing\n• Eddy current testing.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22692,7 +22693,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 HL Q3(c)",
-  "questionText": "Compare flame hardening and induction hardening with reference to the following: • Equipment • Procedures • Quenching.",
+  "questionText": "Compare flame hardening and induction hardening with reference to the following:\n• Equipment\n• Procedures\n• Quenching.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -22723,7 +22724,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 HL Q4(a)",
-  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: (i) Cooling curve for an alloy and a cooling curve for a pure metal. (ii) Amorphous materials and crystalline materials. (iii) Eutectic point and eutectoid point.",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each:\n(i) Cooling curve for an alloy and a cooling curve for a pure metal.\n(ii) Amorphous materials and crystalline materials.\n(iii) Eutectic point and eutectoid point.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -23000,7 +23001,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 HL Q5(c)",
-  "questionText": "Compare, with the aid of suitable diagrams, resistance spot welding and resistance seam welding, using the following headings: • Electrode shape • Welding procedure • Applications of each weld type • Safety considerations.",
+  "questionText": "Compare, with the aid of suitable diagrams, resistance spot welding and resistance seam welding, using the following headings:\n• Electrode shape\n• Welding procedure\n• Applications of each weld type\n• Safety considerations.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -23340,7 +23341,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 HL Q7(c)(i)",
-  "questionText": "Tungsten carbide is the material of choice in the manufacture of mining tips, drill bits and other cutting tools. Explain how tungsten carbide insert tips are manufactured. OR Computer Numerical Control (CNC) technology is to the forefront of precision engineering manufacture. Explain the following aspects of CNC technology: • Impact on productivity • Reliability.",
+  "questionText": "Tungsten carbide is the material of choice in the manufacture of mining tips, drill bits and other cutting tools. Explain how tungsten carbide insert tips are manufactured. OR Computer Numerical Control (CNC) technology is to the forefront of precision engineering manufacture. Explain the following aspects of CNC technology:\n• Impact on productivity\n• Reliability.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -23379,7 +23380,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 HL Q7(c)(ii)",
-  "questionText": "Tungsten carbide is the material of choice in the manufacture of mining tips, drill bits and other cutting tools. Outline two advantages of the use of tungsten carbide insert tips. OR Computer Numerical Control (CNC) technology is to the forefront of precision engineering manufacture. Describe the following CNC machining operations: • Automatic tool change • Test run.",
+  "questionText": "Tungsten carbide is the material of choice in the manufacture of mining tips, drill bits and other cutting tools. Outline two advantages of the use of tungsten carbide insert tips. OR Computer Numerical Control (CNC) technology is to the forefront of precision engineering manufacture. Describe the following CNC machining operations:\n• Automatic tool change\n• Test run.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -24051,7 +24052,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 OL Q2(a)",
-  "questionText": "Name the metals produced from each of the furnaces listed below: (i) Blast furnace; (ii) Basic oxygen furnace; (iii) Electric arc furnace.",
+  "questionText": "Name the metals produced from each of the furnaces listed below:\n(i) Blast furnace;\n(ii) Basic oxygen furnace;\n(iii) Electric arc furnace.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -24412,7 +24413,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 OL Q3(b)",
-  "questionText": "Describe each of the following with regard to heat treatment: (i) Quenching; (ii) Work hardening.",
+  "questionText": "Describe each of the following with regard to heat treatment:\n(i) Quenching;\n(ii) Work hardening.",
   "tariffModel": {
    "kind": "orderedSplit",
    "notation": "6 + 5"
@@ -24928,7 +24929,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 OL Q5(b)",
-  "questionText": "In relation to plastic technology, describe any two of the following: (i) Thermosetting plastic; (ii) Elastic memory; (iii) Thermoplastics.",
+  "questionText": "In relation to plastic technology, describe any two of the following:\n(i) Thermosetting plastic;\n(ii) Elastic memory;\n(iii) Thermoplastics.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -25245,7 +25246,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2019 OL Q7(b)",
-  "questionText": "A hole and shaft assembly is manufactured to the dimensions shown. State the: (i) Nominal diameter of the shaft; (ii) Largest diameter of the shaft; (iii) Smallest diameter of the hole; (iv) The tolerance of the hole.",
+  "questionText": "A hole and shaft assembly is manufactured to the dimensions shown. State the:\n(i) Nominal diameter of the shaft;\n(ii) Largest diameter of the shaft;\n(iii) Smallest diameter of the hole;\n(iv) The tolerance of the hole.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -26474,7 +26475,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2020 HL Q1(o)",
-  "questionText": "Explain the function of each of the following autonomous vehicle features: (i) Radar sensor (ii) Camera (iii) LiDAR unit.",
+  "questionText": "Explain the function of each of the following autonomous vehicle features:\n(i) Radar sensor\n(ii) Camera\n(iii) LiDAR unit.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -26512,7 +26513,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2020 HL Q1(p)",
-  "questionText": "Describe each of the following with regard to the efficient and safe operation of autonomous vehicles: (i) Artificial intelligence (AI) (ii) Global Positioning Systems.",
+  "questionText": "Describe each of the following with regard to the efficient and safe operation of autonomous vehicles:\n(i) Artificial intelligence (AI)\n(ii) Global Positioning Systems.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -26542,7 +26543,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2020 HL Q1(q)",
-  "questionText": "Designated levels of Vehicle Automation exist, ranging from level 0 to level 5. Describe the main features of any two of the following: (i) Driver assistance (level 1) (ii) Conditional Automation (level 3) (iii) Full Automation (level 5).",
+  "questionText": "Designated levels of Vehicle Automation exist, ranging from level 0 to level 5. Describe the main features of any two of the following:\n(i) Driver assistance (level 1)\n(ii) Conditional Automation (level 3)\n(iii) Full Automation (level 5).",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -26575,7 +26576,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2020 HL Q1(r)",
-  "questionText": "Describe how autonomous vehicle technology may impact on any two of the following: (i) Vehicle ownership (ii) Traffic management (iii) Environmental impact.",
+  "questionText": "Describe how autonomous vehicle technology may impact on any two of the following:\n(i) Vehicle ownership\n(ii) Traffic management\n(iii) Environmental impact.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -26645,7 +26646,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2020 HL Q2(a)(ii)",
-  "questionText": "Material strength may be partly described in terms of the following properties: • Compressive strength • Tensile strength • Shear strength. Describe each of these properties.",
+  "questionText": "Material strength may be partly described in terms of the following properties:\n• Compressive strength\n• Tensile strength\n• Shear strength.\nDescribe each of these properties.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -26710,7 +26711,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2020 HL Q2(b)(ii)",
-  "questionText": "The results shown below were obtained from a tensile test on a non-ferrous alloy with a 10 mm diameter and 50 mm gauge length. Indicate each of the following regions on your graph: • Elastic region • Plastic region • Necking region.",
+  "questionText": "The results shown below were obtained from a tensile test on a non-ferrous alloy with a 10 mm diameter and 50 mm gauge length. Indicate each of the following regions on your graph:\n• Elastic region\n• Plastic region\n• Necking region.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -26778,7 +26779,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2020 HL Q2(c)",
-  "questionText": "Both X-Ray and Ultrasonic testing of materials are non-destructive tests (NDT) used to find internal flaws in aircraft engine components. Compare X-Ray NDT and Ultrasonic NDT under the following headings: • Equipment used • Method of operation • Safety considerations.",
+  "questionText": "Both X-Ray and Ultrasonic testing of materials are non-destructive tests (NDT) used to find internal flaws in aircraft engine components. Compare X-Ray NDT and Ultrasonic NDT under the following headings:\n• Equipment used\n• Method of operation\n• Safety considerations.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -27219,7 +27220,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2020 HL Q4(c)",
-  "questionText": "Explain any two of the following: (i) The difference between substitutional solid solution and interstitial solid solution (ii) Metal macroscopic examination and metal microscopic examination (iii) The process of galvanising sheet steel.",
+  "questionText": "Explain any two of the following:\n(i) The difference between substitutional solid solution and interstitial solid solution\n(ii) Metal macroscopic examination and metal microscopic examination\n(iii) The process of galvanising sheet steel.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -27736,7 +27737,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2020 HL Q7(c)(i) — CNC technology",
-  "questionText": "Manufacturing companies use CNC technology to mass produce musical instruments such as electric guitars. Explain each of the following in relation to CNC technology: • Machine tool calibration • Closed loop control.",
+  "questionText": "Manufacturing companies use CNC technology to mass produce musical instruments such as electric guitars. Explain each of the following in relation to CNC technology:\n• Machine tool calibration\n• Closed loop control.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -28681,7 +28682,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2021 HL Q2(c)",
-  "questionText": "Describe any one of the following in relation to hybrid vehicle technology: (i) Regenerative braking; (ii) Electric traction motors.",
+  "questionText": "Describe any one of the following in relation to hybrid vehicle technology:\n(i) Regenerative braking;\n(ii) Electric traction motors.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -29255,7 +29256,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2021 HL Q5(c)",
-  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each: (i) Solid solution alloy and partial solubility alloy; (ii) Crystalline and amorphous solid structures; (iii) Eutectic and eutectoid transformations.",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain the difference between the terms in each:\n(i) Solid solution alloy and partial solubility alloy;\n(ii) Crystalline and amorphous solid structures;\n(iii) Eutectic and eutectoid transformations.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -29521,7 +29522,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2021 HL Q6(c)(i)",
-  "questionText": "Explain the following terms in relation to the robotic assisted surgery (RAS): • Degrees of freedom • Machine vision.",
+  "questionText": "Explain the following terms in relation to the robotic assisted surgery (RAS):\n• Degrees of freedom\n• Machine vision.",
   "tariffModel": {
    "kind": "orderedSplit",
    "notation": "4 + 4"
@@ -30210,7 +30211,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2021 HL Q8(c)(ii)",
-  "questionText": "Outline one method of securely holding ferrous metals during the surface grinding process. OR Describe each of the following CNC terms: • Automatic tool change • Tool offsets.",
+  "questionText": "Outline one method of securely holding ferrous metals during the surface grinding process. OR Describe each of the following CNC terms:\n• Automatic tool change\n• Tool offsets.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -31003,7 +31004,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2021 HL Q2(e)",
-  "questionText": "Describe how hybrid vehicle technology may impact on any two of the following: (i) Vehicle ownership; (ii) Environmental considerations; (iii) Vehicle maintenance.",
+  "questionText": "Describe how hybrid vehicle technology may impact on any two of the following:\n(i) Vehicle ownership;\n(ii) Environmental considerations;\n(iii) Vehicle maintenance.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -32188,13 +32189,13 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "B - Name: Blast furnace Function: Produces Pig iron",
+    "verbatim": "B - Name: Blast furnace — Function: Produces Pig iron",
     "marks": 5
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "C - Name: Electrical Arc furnace Function: Produces High grade steel",
+    "verbatim": "C - Name: Electrical Arc furnace — Function: Produces High grade steel",
     "marks": 5
    }
   ],
@@ -32945,37 +32946,6 @@
   "stem": "Give brief answers to any ten of the following:"
  },
  {
-  "id": "eng-2022-hl-q1-b",
-  "topicId": "eng-1-3",
-  "conceptId": "examples-difference-between-amorphous-structures-crystalline",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2022 HL Q1(b)",
-  "questionText": "Describe, with examples, the difference between amorphous structures and crystalline structures.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Amorphous Structures - these structures have irregular and non-geometric patterns. e.g. Acrylic.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Crystalline Structures - these structures have regular, geometric and repeating molecular patterns e.g. BCC, FCC CPH. Crystalline Structures Amorphous Structures",
-    "marks": null
-   }
-  ],
-  "stem": "Give brief answers to any ten of the following:",
-  "notes": "The scheme prints '5'."
- },
- {
   "id": "eng-2022-hl-q1-c",
   "topicId": "eng-3-12",
   "conceptId": "difference-between-clearance-fit-interference-fit",
@@ -33253,7 +33223,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 HL Q2(b)",
-  "questionText": "Artificial Intelligence can be broadly categorised in two forms. Describe the difference between: • Artificial Narrow Intelligence (weak AI) and, • Artificial General Intelligence (strong AI).",
+  "questionText": "Artificial Intelligence can be broadly categorised in two forms. Describe the difference between:\n• Artificial Narrow Intelligence (weak AI) and,\n• Artificial General Intelligence (strong AI).",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -33284,7 +33254,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 HL Q2(c)",
-  "questionText": "Explain any two of the following terms in relation to artificial intelligence and smart manufacturing: (i) Reactive machines; (ii) Limited memory; (iii) Theory of mind; (iv) Self-awareness.",
+  "questionText": "Explain any two of the following terms in relation to artificial intelligence and smart manufacturing:\n(i) Reactive machines;\n(ii) Limited memory;\n(iii) Theory of mind;\n(iv) Self-awareness.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -33319,7 +33289,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 HL Q2(d)",
-  "questionText": "Artificial intelligence offers a range of benefits in smart manufacturing processes. Explain any two of the following in relation to smart manufacturing: (i) Predictive maintenance; (ii) Supply chain management; (iii) Quality control.",
+  "questionText": "Artificial intelligence offers a range of benefits in smart manufacturing processes. Explain any two of the following in relation to smart manufacturing:\n(i) Predictive maintenance;\n(ii) Supply chain management;\n(iii) Quality control.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -33355,7 +33325,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 HL Q2(e)",
-  "questionText": "Artificial intelligence provides both benefits and concerns for the business and manufacturing industries. Discuss each of the following in relation to artificial intelligence: • Economic benefits; • Ethical concerns.",
+  "questionText": "Artificial intelligence provides both benefits and concerns for the business and manufacturing industries. Discuss each of the following in relation to artificial intelligence:\n• Economic benefits;\n• Ethical concerns.",
   "tariffModel": {
    "kind": "orderedSplit",
    "notation": "5 + 5"
@@ -34080,7 +34050,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 HL Q5(c)",
-  "questionText": "Select any two from (i), (ii) or (iii) below and explain: (i) The impact of a dislocation in crystal structures. (ii) The possible corrosive effects of the environment on metal objects. (iii) The refining of aluminium in Ireland.",
+  "questionText": "Select any two from (i), (ii) or (iii) below and explain:\n(i) The impact of a dislocation in crystal structures.\n(ii) The possible corrosive effects of the environment on metal objects.\n(iii) The refining of aluminium in Ireland.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -34369,7 +34339,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 HL Q6(c)(i)",
-  "questionText": "Outline how weld cracks and slag inclusions may form on a weld. OR Explain the following terms in relation to the autonomous mobile robots (AMR): • Automatic charging zones; • 24-hour remote monitoring.",
+  "questionText": "Outline how weld cracks and slag inclusions may form on a weld. OR Explain the following terms in relation to the autonomous mobile robots (AMR):\n• Automatic charging zones;\n• 24-hour remote monitoring.",
   "tariffModel": {
    "kind": "orderedSplit",
    "notation": "4 + 4"
@@ -34775,7 +34745,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 HL Q7(c)(i)",
-  "questionText": "Compare glass and polycarbonate as suitable materials in the production of mobile phone screen protectors, making reference to: • impact resistance • transparency • hardness.",
+  "questionText": "Compare glass and polycarbonate as suitable materials in the production of mobile phone screen protectors, making reference to:\n• impact resistance\n• transparency\n• hardness.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -34958,36 +34928,6 @@
     "id": "r-3",
     "kind": "point",
     "verbatim": "The 4-jaw independent lathe chucks can offer stronger grip on round stock. These chucks can turn work off-centre.",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '6 marks'."
- },
- {
-  "id": "eng-2022-hl-q8-b-ii",
-  "topicId": "eng-3-1",
-  "conceptId": "term-interlocking-guard-relation-engineering-machines",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2022 HL Q8(b)(ii)",
-  "questionText": "Describe the term interlocking guard in relation to engineering machines.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "An interlocking chuck guard is a safety device which kills the power going to the machine when the guard is in the open position. A micro switch is connected to the hinge point of the guard, and when the guard is opened, the micro switch will break the circuit and stop the machine from operating. Interlocking guards are common on centre lathes, pillar drilling machines, bandsaw machines, milling machines in the Engineering room.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Pillar drilling machine interlocking guard Centre lathe interlocking guard",
     "marks": null
    }
   ],
@@ -35750,7 +35690,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 HL Q8(c)(ii)",
-  "questionText": "Describe, with the aid of diagram(s), a method of securely clamping metals in a horizontal bandsaw. OR Describe the following CNC terms: • Simulation; • Tool offsets.",
+  "questionText": "Describe, with the aid of diagram(s), a method of securely clamping metals in a horizontal bandsaw. OR Describe the following CNC terms:\n• Simulation;\n• Tool offsets.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -35821,6 +35761,63 @@
   ],
   "questionFigureKey": "engineering-2022-HL-paper-q9a-crop",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2022-hl-q1-b",
+  "topicId": "eng-1-3",
+  "conceptId": "examples-difference-between-amorphous-structures-crystalline",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q1(b)",
+  "questionText": "Describe, with examples, the difference between amorphous structures and crystalline structures.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Amorphous Structures - these structures have irregular and non-geometric patterns. e.g. Acrylic.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Crystalline Structures - these structures have regular, geometric and repeating molecular patterns e.g. BCC, FCC CPH.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5'.",
+  "figureKey": "engineering-2022-HL-scheme-q1b-sol"
+ },
+ {
+  "id": "eng-2022-hl-q8-b-ii",
+  "topicId": "eng-3-1",
+  "conceptId": "term-interlocking-guard-relation-engineering-machines",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q8(b)(ii)",
+  "questionText": "Describe the term interlocking guard in relation to engineering machines.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An interlocking chuck guard is a safety device which kills the power going to the machine when the guard is in the open position. A micro switch is connected to the hinge point of the guard, and when the guard is opened, the micro switch will break the circuit and stop the machine from operating. Interlocking guards are common on centre lathes, pillar drilling machines, bandsaw machines, milling machines in the Engineering room.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints '6 marks'.",
+  "figureKey": "engineering-2022-HL-scheme-q8bii-sol"
  },
  {
   "id": "eng-2022-ol-q1-a",
@@ -36193,36 +36190,6 @@
   "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
  },
  {
-  "id": "eng-2022-ol-q2-b",
-  "topicId": "eng-1-4",
-  "conceptId": "aid-labelled-diagram-operation-furnace-you",
-  "level": "ordinary",
-  "year": 2022,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2022 OL Q2(b)",
-  "questionText": "Describe, with the aid of a labelled diagram, the operation of one furnace you have studied.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Pig iron and scrap steel or cast iron, together with carbon, coke & limestone provide the charge. Like the blast furnace, the cupola furnace is coke-fired with limestone acting as a flux to turn the impurities into slag.",
-    "marks": 12,
-    "accepts": [
-     "Iron ore, coke and limestone provide the charge and are fed in through the top of the furnace.",
-     "Cold scrap iron or steel make up Furnace lid Carbon electrodes most of the charge together with small amounts of lime and carbon.",
-     "The lime combines with impurities producing slag. When the correct composition of steel is achieved the slag is removed through the back Charge door. The furnace is then tilted forwarded on its rollers allowing the molten steel to flow out the tapping Tilting rollers spout.",
-     "Electric Arc furnace"
-    ]
-   }
-  ],
-  "notes": "The scheme prints 'One part @ 12 marks (12)'."
- },
- {
   "id": "eng-2022-ol-q2-d-i",
   "topicId": "eng-2-15",
   "conceptId": "advantage-using-belt-pulley-mechanism-drive",
@@ -36279,7 +36246,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 OL Q3(a)",
-  "questionText": "The head of a steel axe is annealed, normalised, and tempered during manufacture. Describe any two of the following processes: (i) Annealing; (ii) Normalising; (iii) Tempering.",
+  "questionText": "The head of a steel axe is annealed, normalised, and tempered during manufacture. Describe any two of the following processes:\n(i) Annealing;\n(ii) Normalising;\n(iii) Tempering.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -36621,7 +36588,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2022 OL Q5(b)",
-  "questionText": "In relation to plastic technology, describe any three of the following: (i) Thermosetting plastics; (ii) Thermoplastics; (iii) Fibreglass; (iv) Elastic memory.",
+  "questionText": "In relation to plastic technology, describe any three of the following:\n(i) Thermosetting plastics;\n(ii) Thermoplastics;\n(iii) Fibreglass;\n(iv) Elastic memory.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -37505,6 +37472,42 @@
   "questionFigureIncludesPrompt": false
  },
  {
+  "id": "eng-2022-ol-q2-b",
+  "topicId": "eng-1-4",
+  "conceptId": "aid-labelled-diagram-operation-furnace-you",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q2(b)",
+  "questionText": "Describe, with the aid of a labelled diagram, the operation of one furnace you have studied.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Cupola furnace Pig iron and scrap steel or cast iron, together with carbon, coke & limestone provide the charge. Like the blast furnace, the cupola furnace is coke-fired with limestone acting as a flux to turn the impurities into slag. Air is blown through the tuyeres helping the coke to burn, causing the charge to melt. The slag floats on top of the cast iron and is removed as required. The molten cast iron is tapped from the bottom of the furnace and cast into moulds of different shapes and sizes as required.",
+    "marks": 6,
+    "accepts": [
+     "Basic oxygen furnace The charge consists of scrap iron and steel together with lime and molten pig iron. Oxygen is blown at the surface of the molten charge from a water-cooled lance which is lowered through the mouth of the furnace. Impurities in the charge are oxidized and form a slag on the surface. At the end of the blow, the steel is poured off through a tapping hole followed by emptying the slag through the mouth of the furnace.",
+     "Blast furnace Iron ore, coke and limestone provide the charge and are fed in through the top of the furnace. As the coke burns, carbon monoxide is produced, and combines with the oxygen in the ore, leaving iron. The limestone combines with impurities to form slag. The molten iron falls to the bottom of the furnace where it is tapped off from time to time. The slag floats on top of the molten iron and is tapped off when necessary",
+     "Electric Arc furnace Cold scrap iron or steel make up most of the charge together with small amounts of lime and carbon. Heat for this furnace is produced by an electric arc created between carbon electrodes and the charge. The lime combines with impurities producing slag. When the correct composition of steel is achieved the slag is removed through the back door. The furnace is then tilted forwarded on its rollers allowing the molten steel to flow out the tapping spout."
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Labelled diagram",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints 'Describe Award 6 Marks' and 'Labelled diagram Award 6 Marks', 'Total (12) Marks', for the furnace chosen.",
+  "figureKey": "engineering-2022-OL-scheme-q2b-sol"
+ },
+ {
   "id": "eng-2023-hl-q1-a",
   "topicId": "eng-3-14",
   "conceptId": "advantage-disadvantage-smart-glasses",
@@ -37915,7 +37918,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 HL Q2(b)",
-  "questionText": "Extended Reality (XR) encompasses a range of other digital technologies. Explain each of the following types of Extended Reality: (i) Virtual Reality (VR). (ii) Augmented Reality (AR). (iii) Mixed Reality (MR).",
+  "questionText": "Extended Reality (XR) encompasses a range of other digital technologies. Explain each of the following types of Extended Reality:\n(i) Virtual Reality (VR).\n(ii) Augmented Reality (AR).\n(iii) Mixed Reality (MR).",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -38012,7 +38015,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 HL Q2(d)",
-  "questionText": "Describe any two of the following real applications in relation to Extended Reality (XR): (i) Gaming and entertainment. (ii) Vehicle design and development. (iii) Surgical applications and physiotherapy. (iv) Real estate property viewing.",
+  "questionText": "Describe any two of the following real applications in relation to Extended Reality (XR):\n(i) Gaming and entertainment.\n(ii) Vehicle design and development.\n(iii) Surgical applications and physiotherapy.\n(iv) Real estate property viewing.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -38048,7 +38051,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 HL Q2(e)",
-  "questionText": "While XR presents many creative opportunities, it has however a number of drawbacks. Discuss any two of the following drawbacks associated with Extended Reality (XR): (i) Privacy. (ii) Social engagement. (iii) Implementation costs.",
+  "questionText": "While XR presents many creative opportunities, it has however a number of drawbacks. Discuss any two of the following drawbacks associated with Extended Reality (XR):\n(i) Privacy.\n(ii) Social engagement.\n(iii) Implementation costs.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -38105,7 +38108,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 HL Q3(a)(ii)",
-  "questionText": "Describe, with the aid of a diagram(s), the Vickers Hardness test, with reference to: • indenter shape • test procedure • hardness calculation.",
+  "questionText": "Describe, with the aid of a diagram(s), the Vickers Hardness test, with reference to:\n• indenter shape\n• test procedure\n• hardness calculation.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -39806,48 +39809,6 @@
   "notes": "The scheme prints '6 marks'."
  },
  {
-  "id": "eng-2023-hl-q9-b-v",
-  "topicId": "eng-2-15",
-  "conceptId": "advantage-compound-gear-train-over-simple",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 HL Q9(b)(v)",
-  "questionText": "Outline one advantage of a compound gear train over a simple gear train.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A compound gear train can achieve a large reduction or large increase in gear ratio using gear sizes that are not excessively big.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "A simple gear train needs to have small gears driving large gears to achieve a significant reduction in speed. This impacts on the torque of the system.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Compound gears commonly use only two gear wheel sizes to achieve speed reduction, a series of these can be connected together.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Compound gear reduction 9:1 Simple gear reduction 3:1 (Any three) 6 + 6 + 6",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '6 marks'."
- },
- {
   "id": "eng-2023-hl-q9-c-i",
   "topicId": "eng-2-15",
   "conceptId": "aid-diagram-s-suitable-mechanism-folding",
@@ -40373,6 +40334,43 @@
   "notes": "The scheme prints '6 marks'.",
   "questionFigureKey": "engineering-2023-HL-paper-q9bii-crop",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2023-hl-q9-b-v",
+  "topicId": "eng-2-15",
+  "conceptId": "advantage-compound-gear-train-over-simple",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q9(b)(v)",
+  "questionText": "Outline one advantage of a compound gear train over a simple gear train.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A compound gear train can achieve a large reduction or large increase in gear ratio using gear sizes that are not excessively big.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A simple gear train needs to have small gears driving large gears to achieve a significant reduction in speed. This impacts on the torque of the system.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Compound gears commonly use only two gear wheel sizes to achieve speed reduction, a series of these can be connected together.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '(Any three) 6 + 6 + 6' for (b): each part answered earns 6.",
+  "figureKey": "engineering-2023-HL-scheme-q9bv-sol"
  },
  {
   "id": "eng-2023-ol-q1-a",
@@ -41249,7 +41247,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2023 OL Q5(b)",
-  "questionText": "In relation to plastic technology, describe any three of the following: (i) Elastic memory; (ii) Thermosetting plastics; (iii) Plastic dip coating; (iv) Thermoplastic.",
+  "questionText": "In relation to plastic technology, describe any three of the following:\n(i) Elastic memory;\n(ii) Thermosetting plastics;\n(iii) Plastic dip coating;\n(iv) Thermoplastic.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -42683,7 +42681,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2024 HL Q2(e)",
-  "questionText": "Discuss the environmental impact of any two of the following with regard to container ship technology: (i) Ballast water management. (ii) Oil leakage. (iii) Emissions.",
+  "questionText": "Discuss the environmental impact of any two of the following with regard to container ship technology:\n(i) Ballast water management.\n(ii) Oil leakage.\n(iii) Emissions.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -44010,38 +44008,6 @@
   ]
  },
  {
-  "id": "eng-2024-hl-q8-a-i",
-  "topicId": "eng-2-11",
-  "conceptId": "aid-diagram-s-operations-used-making",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2024 HL Q8(a)(i)",
-  "questionText": "Describe, with the aid of a diagram(s), three operations used in making the torch casing on a centre lathe.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 9,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Parallel turning: reduces Facing: smooth finish Drilling holes. diameter of workpiece. on front face.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Boring / internal threading: Knurling: adding Grooving / parting-off: widening the hole and finger grips. creating the grooves and creating the thread. cutting to length.",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '3 + 3 + 3'.",
-  "questionFigureKey": "engineering-2024-HL-paper-q8ai-art",
-  "questionFigureIncludesPrompt": false
- },
- {
   "id": "eng-2024-hl-q8-a-ii",
   "topicId": "eng-2-11",
   "conceptId": "identify-factors-influence-material-surface-finish",
@@ -44818,7 +44784,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2024 HL Q3(b)(iii)",
-  "questionText": "Describe, with the aid of a diagram(s), the following terms related to tensile testing: • necking • cup and cone fracture.",
+  "questionText": "Describe, with the aid of a diagram(s), the following terms related to tensile testing:\n• necking\n• cup and cone fracture.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -44954,7 +44920,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2024 HL Q7(a)(iii)",
-  "questionText": "Identify a suitable polymer additive which is used to improve the properties of the hose pipe for each of the following: • increased flexibility • greater resistance to UV rays.",
+  "questionText": "Identify a suitable polymer additive which is used to improve the properties of the hose pipe for each of the following:\n• increased flexibility\n• greater resistance to UV rays.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -45018,6 +44984,45 @@
   ],
   "notes": "The scheme prints '6 marks'.",
   "questionFigureKey": "engineering-2024-HL-paper-q9bii-art",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2024-hl-q8-a-i",
+  "topicId": "eng-2-11",
+  "conceptId": "aid-diagram-s-operations-used-making",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q8(a)(i)",
+  "questionText": "Describe, with the aid of a diagram(s), three operations used in making the torch casing on a centre lathe.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Parallel turning: reduces diameter of workpiece.",
+    "marks": 9,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Parallel turning: reduces diameter of workpiece.",
+      "Facing: smooth finish on front face.",
+      "Drilling holes.",
+      "Boring / internal threading: widening the hole and creating the thread.",
+      "Knurling: adding finger grips.",
+      "Grooving / parting-off: creating the grooves and cutting to length."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints '3 + 3 + 3'.",
+  "figureKey": "engineering-2024-HL-scheme-q8ai-sol",
+  "questionFigureKey": "engineering-2024-HL-paper-q8ai-art",
   "questionFigureIncludesPrompt": false
  },
  {
@@ -46110,7 +46115,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2024 OL Q3(b)",
-  "questionText": "The coil spring shown is annealed, hardened and tempered during the manufacturing process. Describe any two of the following heat treatment processes: (i) Annealing, (ii) Hardening, (iii) Tempering.",
+  "questionText": "The coil spring shown is annealed, hardened and tempered during the manufacturing process. Describe any two of the following heat treatment processes:\n(i) Annealing,\n(ii) Hardening,\n(iii) Tempering.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -46363,7 +46368,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2024 OL Q6(b)",
-  "questionText": "Explain any three of the following in relation to machining: (i) Rake angle, (ii) Chuck key, (iii) Depth of cut, (iv) Pilot hole.",
+  "questionText": "Explain any three of the following in relation to machining:\n(i) Rake angle,\n(ii) Chuck key,\n(iii) Depth of cut,\n(iv) Pilot hole.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -46580,7 +46585,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2024 OL Q7(b)",
-  "questionText": "A waste pipe and plug are machined to the dimensions shown below. State the: (i) Nominal diameter of the hole; (ii) Smallest diameter of the shaft; (iii) Largest diameter of the hole;",
+  "questionText": "A waste pipe and plug are machined to the dimensions shown below. State the:\n(i) Nominal diameter of the hole;\n(ii) Smallest diameter of the shaft;\n(iii) Largest diameter of the hole;",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -46669,14 +46674,14 @@
    {
     "id": "r-2",
     "kind": "anyN",
-    "verbatim": "(i) Vee block & clamp Used for holding round bars when drilling or marking out.",
+    "verbatim": "(i) Vee block & clamp — Used for holding round bars when drilling or marking out.",
     "marks": 9,
     "group": {
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "(i) Vee block & clamp Used for holding round bars when drilling or marking out.",
-      "(ii) Engineering Ruler Used for accurate measurement, and as a guide for marking out lines on material.",
+      "(i) Vee block & clamp — Used for holding round bars when drilling or marking out.",
+      "(ii) Engineering Ruler — Used for accurate measurement, and as a guide for marking out lines on material.",
       "(iii) Digital vernier callipers Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.",
       "(iv) Engineering protractor Use for checking or accurately marking out angles on material."
      ]
@@ -47476,7 +47481,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2025 HL Q2(e)",
-  "questionText": "Discuss, with examples, the challenges of any two of the following aspects associated with the expansion of hydrogen technologies: (i) The production of green hydrogen. (ii) Energy storage. (iii) Safety concerns.",
+  "questionText": "Discuss, with examples, the challenges of any two of the following aspects associated with the expansion of hydrogen technologies:\n(i) The production of green hydrogen.\n(ii) Energy storage.\n(iii) Safety concerns.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -47800,7 +47805,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2025 HL Q4(b)(iii)",
-  "questionText": "Describe the annealing of 1.2% carbon steel under the following headings: • Temperature • Cooling process • Effect on the steel.",
+  "questionText": "Describe the annealing of 1.2% carbon steel under the following headings:\n• Temperature\n• Cooling process\n• Effect on the steel.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -48947,7 +48952,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2025 HL Q8(c)(i)",
-  "questionText": "Identify the metal cutting chips shown at A and B and distinguish clearly between them with reference to material properties. OR Describe each of the following in relation to robotic CNC milling technology: • Stepper motors • Feedback sensors.",
+  "questionText": "Identify the metal cutting chips shown at A and B and distinguish clearly between them with reference to material properties. OR Describe each of the following in relation to robotic CNC milling technology:\n• Stepper motors\n• Feedback sensors.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -49201,36 +49206,6 @@
   "questionFigureIncludesPrompt": false
  },
  {
-  "id": "eng-2025-hl-q9-b-iv",
-  "topicId": "eng-2-15",
-  "conceptId": "operation-single-acting-pneumatic-cylinder",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2025 HL Q9(b)(iv)",
-  "questionText": "Describe the operation of a single acting pneumatic cylinder.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A single acting cylinder is a pneumatic output device that requires compressed air to make the piston move. If the air is removed the piston will return because of the spring.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Force of air moves ram No compressed air Compressed air applied",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '6 marks'."
- },
- {
   "id": "eng-2025-hl-q9-b-v",
   "topicId": "eng-2-16",
   "conceptId": "operation-capacitor",
@@ -49301,7 +49276,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2025 HL Q3(b)(i), (ii)",
-  "questionText": "Using the graph paper supplied, plot the load-extension diagram for the alloy. Indicate each of the following points on your graph: • Elastic limit • Start of necking • Fracture point.",
+  "questionText": "Using the graph paper supplied, plot the load-extension diagram for the alloy. Indicate each of the following points on your graph:\n• Elastic limit\n• Start of necking\n• Fracture point.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -49726,6 +49701,31 @@
   "notes": "The paper sets two (c)s either side of an OR; the scheme prints '8' for each (ii).",
   "questionFigureKey": "engineering-2025-HL-paper-q9c-crop",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "eng-2025-hl-q9-b-iv",
+  "topicId": "eng-2-15",
+  "conceptId": "operation-single-acting-pneumatic-cylinder",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q9(b)(iv)",
+  "questionText": "Describe the operation of a single acting pneumatic cylinder.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A single acting cylinder is a pneumatic output device that requires compressed air to make the piston move. If the air is removed the piston will return because of the spring.",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints '6 marks'.",
+  "figureKey": "engineering-2025-HL-scheme-q9biv-sol"
  },
  {
   "id": "eng-2025-ol-q1-a",
@@ -50192,7 +50192,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2025 OL Q5(b)",
-  "questionText": "In relation to plastic technology, describe any two of the following: (i) Thermosetting plastic, (ii) Laminating, (iii) Thermoplastic, (iv) Elastic memory.",
+  "questionText": "In relation to plastic technology, describe any two of the following:\n(i) Thermosetting plastic,\n(ii) Laminating,\n(iii) Thermoplastic,\n(iv) Elastic memory.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -50226,7 +50226,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2025 OL Q6(b)",
-  "questionText": "Explain any three of the following in relation to machining: (i) Cutting fluid, (ii) Clearance angle, (iii) Depth of cut, (iv) Swarf.",
+  "questionText": "Explain any three of the following in relation to machining:\n(i) Cutting fluid,\n(ii) Clearance angle,\n(iii) Depth of cut,\n(iv) Swarf.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -50739,7 +50739,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2025 OL Q3(a)",
-  "questionText": "Explain the reason why each of the following heat treatment processes are carried out: (i) Normalising, (ii) Hardening.",
+  "questionText": "Explain the reason why each of the following heat treatment processes are carried out:\n(i) Normalising,\n(ii) Hardening.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -50769,7 +50769,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2025 OL Q3(b)",
-  "questionText": "The blade of the concrete saw shown is annealed, tempered and quenched as part of the manufacturing process. Describe any two of the following processes: (i) Annealing, (ii) Tempering, (iii) Quenching.",
+  "questionText": "The blade of the concrete saw shown is annealed, tempered and quenched as part of the manufacturing process. Describe any two of the following processes:\n(i) Annealing,\n(ii) Tempering,\n(iii) Quenching.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -51968,7 +51968,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2026 HL Q3(a)(ii)",
-  "questionText": "Describe, with the aid of a diagram(s), the Vickers hardness test, with reference to: • indenter shape • test procedure • hardness calculation.",
+  "questionText": "Describe, with the aid of a diagram(s), the Vickers hardness test, with reference to:\n• indenter shape\n• test procedure\n• hardness calculation.",
   "tariffModel": {
    "kind": "questionTotal"
   },
@@ -54087,7 +54087,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2026 HL Q6(c)(ii) — robotic arms",
-  "questionText": "The Dexai robotic arm shown is a collaborative robot used in commercial kitchens to automate food preparation tasks. Explain the following terms in relation to robotic arm control: • Working envelope • Degrees of freedom.",
+  "questionText": "The Dexai robotic arm shown is a collaborative robot used in commercial kitchens to automate food preparation tasks. Explain the following terms in relation to robotic arm control:\n• Working envelope\n• Degrees of freedom.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -54298,7 +54298,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2026 HL Q8(c)",
-  "questionText": "CNC machines have revolutionised engineering practices in recent decades. Describe each of the following CNC features: • G-code • Stepper motor • Leadscrew • Control panel.",
+  "questionText": "CNC machines have revolutionised engineering practices in recent decades. Describe each of the following CNC features:\n• G-code\n• Stepper motor\n• Leadscrew\n• Control panel.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -54390,7 +54390,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2026 HL Q8(c)(ii)",
-  "questionText": "Face milling is a common machining process. Describe the effects of cutting fluids on: • Material surface finish • Cutting-tool life.",
+  "questionText": "Face milling is a common machining process. Describe the effects of cutting fluids on:\n• Material surface finish\n• Cutting-tool life.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -55489,7 +55489,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2026 OL Q3(c)",
-  "questionText": "Explain any two of the following heat treatment terms associated with the manufacturing of gears. (i) Normalising, (ii) Case hardening, (iii) Carbon content.",
+  "questionText": "Explain any two of the following heat treatment terms associated with the manufacturing of gears.\n(i) Normalising,\n(ii) Case hardening,\n(iii) Carbon content.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -55895,7 +55895,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2026 OL Q5(b)",
-  "questionText": "In relation to plastic technology, describe any two of the following: (i) Fibreglass, (ii) Biodegradable plastic, (iii) Thermoplastic, (iv) Elastic memory.",
+  "questionText": "In relation to plastic technology, describe any two of the following:\n(i) Fibreglass,\n(ii) Biodegradable plastic,\n(iii) Thermoplastic,\n(iv) Elastic memory.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -55987,7 +55987,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2026 OL Q6(b)",
-  "questionText": "Explain any three of the following in relation to machining: (i) Spindle speed, (ii) Swarf, (iii) Coolant, (iv) Feed.",
+  "questionText": "Explain any three of the following in relation to machining:\n(i) Spindle speed,\n(ii) Swarf,\n(iii) Coolant,\n(iv) Feed.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -56151,7 +56151,7 @@
   "subjectId": "engineering",
   "section": "A",
   "questionRef": "2026 OL Q7(a)",
-  "questionText": "Describe any two of the following terms in relation to limits and fits: (i) Interference fit, (ii) Lower limit, (iii) Clearance fit.",
+  "questionText": "Describe any two of the following terms in relation to limits and fits:\n(i) Interference fit,\n(ii) Lower limit,\n(iii) Clearance fit.",
   "tariffModel": {
    "kind": "fixed"
   },

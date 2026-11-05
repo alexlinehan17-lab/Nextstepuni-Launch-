@@ -497,11 +497,16 @@ CARDS = [
          question_figure='engineering-2015-HL-paper-q5bi-art',
          notes="The scheme prints '(Name) 3' and '(Reason) 3'."),
     dict(key=(5, 'b', 'ii'),
+         replaces='the automatic card (built once the full paragraph was recorded) left out '
+                  'the heading "MIG welding: A semi-automatic process." and the scheme\'s '
+                  'drawing of the set, and split the paragraph mid-sentence',
          why='Scheme p14 describes MIG welding beside a drawing of the set, shown with the '
-             'answer; "10". Three words of the drawing\'s labels sit under the picture in '
-             'the text layer and are left out with it.',
+             'answer; "10". The end of one line of the description, "around the weld", is '
+             'set under the drawing; it is in the text layer and lifted in its place, the '
+             'drawing\'s own labels left out.',
          topic='eng-2-10',
-         lifted=[S(14, 105, 584, 380, 732)], marks=[10], total=10,
+         lifted=[join(S(14, 105, 584, 380, 651), S(14, 465, 637, 548, 650),
+                      S(14, 105, 650, 380, 732))], marks=[10], total=10,
          question_figure='engineering-2015-HL-paper-q5bi-art',
          figure='engineering-2015-HL-scheme-q5bii-sol',
          notes="The scheme prints '10'."),
@@ -698,12 +703,14 @@ CARDS = [
     # ---- Question 8 --------------------------------------------------------
     dict(key=(8, 'a', 'i'),
          why='Scheme p21 describes the mechanism beside a labelled photograph, shown with '
-             'the answer; "8". One word of the text layer, "precise", sits under the '
-             'photograph and is left out with it. The question is lifted with (a)\'s '
+             'the answer; "8". The last word of its first line, "precise", is set under the '
+             'photograph; it is in the text layer and lifted in its place, the '
+             'photograph\'s own labels left out. The question is lifted with (a)\'s '
              'stimulus.',
          topic='eng-2-15', stem=False,
          question_lift=P(11, *_A8, more=[(145, 127, 395, 178)]),
-         lifted=[S(21, 106, 108, 345, 212)], marks=[8], total=8,
+         lifted=[join(S(21, 106, 108, 345, 127), S(21, 500, 116, 541, 124),
+                      S(21, 106, 127, 345, 212))], marks=[8], total=8,
          question_figure='engineering-2015-HL-paper-q8a-crop',
          figure='engineering-2015-HL-scheme-q8ai-sol',
          notes="The scheme prints '8'."),

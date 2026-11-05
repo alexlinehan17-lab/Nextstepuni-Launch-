@@ -59,6 +59,10 @@ CROPS = {
     'engineering-2024-HL-scheme-q6aii-sol': dict(
         doc='scheme', page=20, rect=(34, 160, 572, 381), solution=True,
         ref='2024 HL Q6(a)(ii)'),
+    # Scheme p25: the six lathe operations drawn and captioned, three a row.
+    'engineering-2024-HL-scheme-q8ai-sol': dict(
+        doc='scheme', parts=[(25, (88, 108, 520, 242)), (25, (88, 258, 520, 410))],
+        mask=[(90, 110, 107, 130)], solution=True, ref='2024 HL Q8(a)(i)'),
 }
 
 CARDS = [
@@ -170,6 +174,21 @@ CARDS = [
          tariff='questionTotal', total=6,
          question_figure='engineering-2024-HL-paper-q9bii-art',
          notes="The scheme prints '6 marks'."),
+    dict(key=(8, 'a', 'i'),
+         replaces='the shipped card read the scheme\'s table of six captioned drawings across '
+                  'its rows, "Parallel turning: reduces Facing: smooth finish Drilling holes. '
+                  'diameter of workpiece. on front face.", two rows for three operations',
+         why='Scheme p25 answers with six lathe operations, each a drawing over its '
+             'caption, shown with the answer; any three, "3 + 3 + 3". Each caption is '
+             'lifted by its own rectangle.',
+         topic='eng-2-11',
+         lifted=[[S(25, 90, 205, 240, 242), S(25, 240, 205, 380, 242),
+                  S(25, 385, 205, 470, 226), S(25, 90, 356, 245, 410),
+                  S(25, 250, 356, 375, 393), S(25, 378, 356, 505, 410)]],
+         row_kind='anyN', group=(3, 3), marks=[9], tariff='fixed', total=9,
+         question_figure='engineering-2024-HL-paper-q8ai-art',
+         figure='engineering-2024-HL-scheme-q8ai-sol',
+         notes="The scheme prints '3 + 3 + 3'."),
 ]
 
 TOPICS = {

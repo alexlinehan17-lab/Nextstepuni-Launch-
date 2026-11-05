@@ -61,6 +61,7 @@ from lib import (Author, Refused, COMMAND_WORD,          # noqa: E402
 from eng_scheme import EngScheme                            # noqa: E402
 from eng_topics import topic_for, concept_for               # noqa: E402
 import cardlint                                             # noqa: E402
+import eng_lists                                            # noqa: E402
 import eng_residue                                          # noqa: E402
 
 MAX_ROWS = 12
@@ -1077,6 +1078,12 @@ def main():
             checked=lambda key, y=year, lv=level: CHECKED.get((y, lv) + key),
             withdrawn=set(WITHDRAWN))
         cards.extend(A.cards)
+
+    # Layout the page prints and a one-line string loses: a list the paper
+    # sets down the page, one item a row, and a scheme table's two cells.
+    # Line breaks and a " — " between cells only; every word stays the page's.
+    eng_lists.vertical_lists(cards)
+    eng_lists.table_cells(cards)
 
     if args.verdicts:
         with open(args.verdicts, 'w', encoding='utf-8') as fh:

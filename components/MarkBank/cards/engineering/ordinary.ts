@@ -321,7 +321,7 @@ export const CARDS: SecCard[] = [
     questionText: "Select any two of the metals listed below, and in each case name a suitable furnace used in the production of the metal: Cast iron, High carbon steel, Pig iron.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Cast iron Cupola furnace", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Cast iron Cupola furnace","High carbon steel Electric arc furnace","Pig Iron Blast furnace"]} },
+    { id: "r-1", kind: "anyN", verbatim: "Cast iron — Cupola furnace", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Cast iron — Cupola furnace","High carbon steel — Electric arc furnace","Pig Iron — Blast furnace"]} },
     ],
   } as SecCard,
   {
@@ -356,8 +356,8 @@ export const CARDS: SecCard[] = [
     questionText: "Name any two metal alloys and state a suitable use for each.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Bronze Statutes / ornaments", marks: 4 },
-    { id: "r-2", kind: "point", verbatim: "Brass Door handles / Wood screws", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "Bronze — Statutes / ornaments", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "Brass — Door handles / Wood screws", marks: 4 },
     ],
   } as SecCard,
   {
@@ -638,7 +638,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2014 Ordinary Level — © State Examinations Commission.",
     id: "eng-2014-ol-q5-b", topicId: "eng-1-9", conceptId: "aid-diagram-operation-following-identify-suitable",
     section: "A", questionRef: "2014 OL Q5(b)",
-    questionText: "Describe, with the aid of a diagram, the operation of one of the following and identify a suitable application: (i) Strip heater; (ii) Plastic dip coating tank.",
+    questionText: "Describe, with the aid of a diagram, the operation of one of the following and identify a suitable application:\n(i) Strip heater;\n(ii) Plastic dip coating tank.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Strip heater Electricity is passed through a wire strip with high resistance. The electricity causes the wire strip to heat up. A sheet of plastic material is placed over the wire strip ensuring that it is not touching it. Once sufficiently softened, the plastic may be bent to the required shape and held until solidified.", marks: 9, route: "a" },
@@ -680,8 +680,8 @@ export const CARDS: SecCard[] = [
     questionText: "Name a plastic used in the manufacture of each of the following: (i) Cavity wall insulation, (ii) Gear wheel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Cavity wall insulation Ploystyrene", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "Gear wheel Nylon", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Cavity wall insulation — Ploystyrene", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Gear wheel — Nylon", marks: 3 },
     ],
   } as SecCard,
   {
@@ -818,7 +818,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2014 Ordinary Level — © State Examinations Commission.",
     id: "eng-2014-ol-q7-b", topicId: "eng-3-12", conceptId: "hole-produced-brass-plate-dimensions-shown",
     section: "A", questionRef: "2014 OL Q7(b)",
-    questionText: "A hole is produced in a brass plate to the dimensions shown. State the: (i) Nominal diameter of the hole; (ii) Smallest diameter of the hole; (iii) Largest diameter of the hole; (iv) Tolerance of the hole.",
+    questionText: "A hole is produced in a brass plate to the dimensions shown. State the:\n(i) Nominal diameter of the hole;\n(ii) Smallest diameter of the hole;\n(iii) Largest diameter of the hole;\n(iv) Tolerance of the hole.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(i) Nominal diameter of the hole: 43.00", marks: 5 },
@@ -1379,7 +1379,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2015 Ordinary Level — © State Examinations Commission.",
     id: "eng-2015-ol-q3-d", topicId: "eng-2-6", conceptId: "effects-using-each-following-when-cooling",
     section: "A", questionRef: "2015 OL Q3(d)",
-    questionText: "Outline the effects of using each of the following, when cooling metals during heat treatment: • Water • Oil. OR State two applications for robotics in the manufacturing industry.",
+    questionText: "Outline the effects of using each of the following, when cooling metals during heat treatment:\n• Water\n• Oil.\nOR\nState two applications for robotics in the manufacturing industry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Water causes the component to lose heat much quicker than if were quenched in oil. This results in the steel having an increased hardness. Care needs to be taken in its use as distortion can occur.", marks: 4, route: "a" },
@@ -1747,7 +1747,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2015 Ordinary Level — © State Examinations Commission.",
     id: "eng-2015-ol-q7-b", topicId: "eng-3-12", conceptId: "hole-shaft-assembly-manufactured-dimensions-shown",
     section: "A", questionRef: "2015 OL Q7(b)",
-    questionText: "A hole and shaft assembly are manufactured to the dimensions shown. State the: (i) Nominal diameter of the hole; (ii) Largest diameter of the hole; (iii) Smallest diameter of the shaft; (iv) The type of fit which will result from the assembly of the largest hole and the smallest shaft.",
+    questionText: "A hole and shaft assembly are manufactured to the dimensions shown. State the:\n(i) Nominal diameter of the hole;\n(ii) Largest diameter of the hole;\n(iii) Smallest diameter of the shaft;\n(iv) The type of fit which will result from the assembly of the largest hole and the smallest shaft.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Nominal diameter of the hole: 20", marks: 5 },
@@ -2072,7 +2072,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Ordinary Level — © State Examinations Commission.",
     id: "eng-2016-ol-q2-a", topicId: "eng-3-14", conceptId: "part",
     section: "A", questionRef: "2016 OL Q2(a)",
-    questionText: "(i) Name a suitable material for each of the parts labelled on the trike buggy shown opposite. (ii) State one reason for the selection of each material.",
+    questionText: "(i) Name a suitable material for each of the parts labelled on the trike buggy shown opposite.\n(ii) State one reason for the selection of each material.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Seat: Acrylic Easy to manufacture and bend into shape. Provides a good finish.", marks: 5 },
@@ -2099,9 +2099,9 @@ export const CARDS: SecCard[] = [
     questionText: "For each of the metals listed below, name a suitable furnace used in the production of the metal: (i) Steel (ii) Pig iron (iii) Cast iron.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(i) Steel Basic oxygen furnace", marks: 4 },
-    { id: "r-2", kind: "point", verbatim: "(ii) Pig iron Blast furnace", marks: 4 },
-    { id: "r-3", kind: "point", verbatim: "(iii) Cast iron Cupola furnace", marks: 4 },
+    { id: "r-1", kind: "point", verbatim: "(i) Steel — Basic oxygen furnace", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "(ii) Pig iron — Blast furnace", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "(iii) Cast iron — Cupola furnace", marks: 4 },
     ],
   } as SecCard,
   {
@@ -2228,7 +2228,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Ordinary Level — © State Examinations Commission.",
     id: "eng-2016-ol-q4-a", topicId: "eng-2-10", conceptId: "each-following-oxy-acetylene-flames",
     section: "A", questionRef: "2016 OL Q4(a)",
-    questionText: "Describe each of the following oxy-acetylene flames: (i) Neutral flame (ii) Oxidising flame (iii) Carburising flame.",
+    questionText: "Describe each of the following oxy-acetylene flames:\n(i) Neutral flame\n(ii) Oxidising flame\n(iii) Carburising flame.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Neutral flame A neutral flame has equal proportions of acetylene and oxygen. Can be identified by a rounded inner cone. The neutral flame is used for general welding.", marks: 4 },
@@ -2597,7 +2597,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2016 Ordinary Level — © State Examinations Commission.",
     id: "eng-2016-ol-q7-b", topicId: "eng-3-12", conceptId: "steel-shaft-machined-dimensions-shown",
     section: "A", questionRef: "2016 OL Q7(b)",
-    questionText: "A steel shaft is machined to the dimensions shown. State the: (i) Nominal diameter of the shaft; (ii) Minimum diameter of the shaft; (iii) Maximum diameter of the shaft; (iv) The tolerance on the shaft.",
+    questionText: "A steel shaft is machined to the dimensions shown. State the:\n(i) Nominal diameter of the shaft;\n(ii) Minimum diameter of the shaft;\n(iii) Maximum diameter of the shaft;\n(iv) The tolerance on the shaft.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(i) Nominal diameter of the shaft; 15.00 mm", marks: 5 },
@@ -2929,7 +2929,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Ordinary Level — © State Examinations Commission.",
     id: "eng-2017-ol-q2-a-i", topicId: "eng-1-4", conceptId: "metals-produced-each-furnaces-listed-below",
     section: "A", questionRef: "2017 OL Q2(a)(i)",
-    questionText: "Name the metals produced from each of the furnaces listed below: • Blast furnace • Cupola furnace • Electric arc furnace.",
+    questionText: "Name the metals produced from each of the furnaces listed below:\n• Blast furnace\n• Cupola furnace\n• Electric arc furnace.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Blast furnace: Pig iron", marks: 4 },
@@ -3014,7 +3014,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Ordinary Level — © State Examinations Commission.",
     id: "eng-2017-ol-q2-c", topicId: "eng-1-5", conceptId: "metal-alloys-produced-any-following-combinations",
     section: "A", questionRef: "2017 OL Q2(c)",
-    questionText: "Name the metal alloys produced from any two of the following combinations: (i) Copper and zinc; (ii) Lead and tin; (iii) Copper and tin.",
+    questionText: "Name the metal alloys produced from any two of the following combinations:\n(i) Copper and zinc;\n(ii) Lead and tin;\n(iii) Copper and tin.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Copper and Zinc: Brass", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Copper and Zinc: Brass","Lead and Tin: Solder","Copper and Tin: Bronze"]} },
@@ -3112,7 +3112,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Ordinary Level — © State Examinations Commission.",
     id: "eng-2017-ol-q3-d", topicId: "eng-3-8", conceptId: "any-following-terms",
     section: "A", questionRef: "2017 OL Q3(d)",
-    questionText: "Explain any two of the following terms: (i) Malleability, (ii) Tensile strength, (iii) Work hardening. OR (i) State one advantage for the use of robotics in manufacturing. (ii) State one disadvantage for the use of robotics in manufacturing.",
+    questionText: "Explain any two of the following terms: (i) Malleability, (ii) Tensile strength, (iii) Work hardening.\nOR\n(i) State one advantage for the use of robotics in manufacturing.\n(ii) State one disadvantage for the use of robotics in manufacturing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Malleability: Malleability is the ability of a material to be hammered / formed into a flat sheet without breaking.", marks: 8, route: "a", group: {"claimMax":2,"perOption":4,"options":["Malleability: Malleability is the ability of a material to be hammered / formed into a flat sheet without breaking.","Tensile strength: Tensile strength is the ability of a material to withstand being pulled apart or stretched.","Work hardening: When a metal is hammered or shaped when cold it becomes hard and brittle at the point where the cold - working occurs. Some metals are prone to work hardening, copper and aluminium are typical examples where hardness values can be increased by cold working."]} },
@@ -3333,7 +3333,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Ordinary Level — © State Examinations Commission.",
     id: "eng-2017-ol-q5-b", topicId: "eng-1-9", conceptId: "any-following-terms-associated-plastics",
     section: "A", questionRef: "2017 OL Q5(b)",
-    questionText: "Describe any three of the following terms associated with plastics: (i) Thermoplastic; (ii) Elastic memory; (iii) Thermosetting plastic; (iv) Plastic dip coating tank.",
+    questionText: "Describe any three of the following terms associated with plastics:\n(i) Thermoplastic;\n(ii) Elastic memory;\n(iii) Thermosetting plastic;\n(iv) Plastic dip coating tank.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Thermoplastic Thermoplastic is a plastic which can soften over and over again. Thermoplastic can also be recycled.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["Thermoplastic Thermoplastic is a plastic which can soften over and over again. Thermoplastic can also be recycled.","Elastic memory Elastic memory is where a thermoplastic product will return to its original manufactured state if heated a seconded time.","Thermosetting plastic Thermosetting plastic is a plastic which cannot be re-softened a second time. It is difficult to recycle a thermosetting plastic.","Plastic dip coating tank A plastic dip coating tank is a container which holds powered thermoplastic material. A metal piece is heated to approx.. 180⁰C and dipped into the power which needs to be aerated (fluidized). The plastic power sticks to the hot metal and melts forming a protective coating around the piece. The metal piece is removed and allowed to cool."]} },
@@ -3526,7 +3526,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2017 Ordinary Level — © State Examinations Commission.",
     id: "eng-2017-ol-q7-b", topicId: "eng-3-12", conceptId: "hole-shaft-assembly-manufactured-dimensions-shown",
     section: "A", questionRef: "2017 OL Q7(b)",
-    questionText: "A hole and shaft assembly is manufactured to the dimensions shown. State the: (i) Nominal diameter of the shaft; (ii) Smallest diameter of the shaft; (iii) Largest diameter of the hole; (iv) The type of fit which will result from the assembly of the smallest shaft and the largest hole.",
+    questionText: "A hole and shaft assembly is manufactured to the dimensions shown. State the:\n(i) Nominal diameter of the shaft;\n(ii) Smallest diameter of the shaft;\n(iii) Largest diameter of the hole;\n(iv) The type of fit which will result from the assembly of the smallest shaft and the largest hole.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(i) Nominal diameter of the shaft; 40.00 mm", marks: 5 },
@@ -3848,8 +3848,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(i) Name: Blast furnace Function: Production of pig iron", marks: 4 },
-    { id: "r-2", kind: "point", verbatim: "(ii) Name: Electrical arc furnace Function: Production of steel", marks: 4 },
-    { id: "r-3", kind: "point", verbatim: "(iii) Name: Basic oxygen furnace Function: Production of steel", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "(ii) Name: Electrical arc furnace — Function: Production of steel", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "(iii) Name: Basic oxygen furnace — Function: Production of steel", marks: 4 },
     ],
     questionFigure: {
           "candId": "engineering-2018-OL-paper-q2a-crop",
@@ -4041,7 +4041,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Ordinary Level — © State Examinations Commission.",
     id: "eng-2018-ol-q3-b", topicId: "eng-2-6", conceptId: "heat-treatment-processes-used-each-following",
     section: "A", questionRef: "2018 OL Q3(b)",
-    questionText: "Describe the heat treatment processes used in each of the following cases: (i) To temper the point of a scriber. (ii) To case harden the point of a screwdriver.",
+    questionText: "Describe the heat treatment processes used in each of the following cases:\n(i) To temper the point of a scriber.\n(ii) To case harden the point of a screwdriver.",
     tariffModel: {"kind":"orderedSplit","notation":"6 + 5"}, totalMarks: 11,
     rows: [
     { id: "r-1", kind: "point", verbatim: "To temper the point of a scriber: The point is cleaned and polished with emery paper. It is then heated away from the point to allow the colours to appear and run to the point. When the correct colour, light straw, appears at approx. 250⁰ to 350⁰C the point is quenched in cold water. This removes some of the hardness and increases toughness.", marks: null },
@@ -4535,13 +4535,13 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2018 Ordinary Level — © State Examinations Commission.",
     id: "eng-2018-ol-q7-b", topicId: "eng-3-12", conceptId: "hole-shaft-manufactured-dimensions-shown",
     section: "A", questionRef: "2018 OL Q7(b)",
-    questionText: "A hole and shaft are manufactured to the dimensions shown. State the: (i) Nominal diameter of the shaft; (ii) Largest diameter of the shaft; (iii) Smallest diameter of the hole; (iv) The type of fit which will result from the assembly of the largest shaft and the smallest hole.",
+    questionText: "A hole and shaft are manufactured to the dimensions shown. State the:\n(i) Nominal diameter of the shaft;\n(ii) Largest diameter of the shaft;\n(iii) Smallest diameter of the hole;\n(iv) The type of fit which will result from the assembly of the largest shaft and the smallest hole.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(i) Nominal diameter of the shaft: 20.00 mm", marks: 5 },
     { id: "r-2", kind: "point", verbatim: "(ii) Largest diameter of the shaft: 20.08 mm", marks: 5 },
     { id: "r-3", kind: "point", verbatim: "(iii) Smallest diameter of the hole: 19.95 mm", marks: 5 },
-    { id: "r-4", kind: "point", verbatim: "(iv) Type of fit. Interference fit", marks: 5 },
+    { id: "r-4", kind: "point", verbatim: "(iv) Type of fit. — Interference fit", marks: 5 },
     ],
     questionFigure: {
           "candId": "engineering-2018-OL-paper-q7b-crop",
@@ -4864,7 +4864,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Ordinary Level — © State Examinations Commission.",
     id: "eng-2019-ol-q2-a", topicId: "eng-1-4", conceptId: "metals-produced-each-furnaces-listed-below",
     section: "A", questionRef: "2019 OL Q2(a)",
-    questionText: "Name the metals produced from each of the furnaces listed below: (i) Blast furnace; (ii) Basic oxygen furnace; (iii) Electric arc furnace.",
+    questionText: "Name the metals produced from each of the furnaces listed below:\n(i) Blast furnace;\n(ii) Basic oxygen furnace;\n(iii) Electric arc furnace.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(i) Metal: Pig iron", marks: 3 },
@@ -5072,7 +5072,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Ordinary Level — © State Examinations Commission.",
     id: "eng-2019-ol-q3-b", topicId: "eng-2-6", conceptId: "each-following-regard-heat-treatment",
     section: "A", questionRef: "2019 OL Q3(b)",
-    questionText: "Describe each of the following with regard to heat treatment: (i) Quenching; (ii) Work hardening.",
+    questionText: "Describe each of the following with regard to heat treatment:\n(i) Quenching;\n(ii) Work hardening.",
     tariffModel: {"kind":"orderedSplit","notation":"6 + 5"}, totalMarks: 11,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Quenching is when a hot metal is cooled very quickly i.e. when a cherry red metal is moved about when dipped into cold water.", marks: null },
@@ -5332,7 +5332,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Ordinary Level — © State Examinations Commission.",
     id: "eng-2019-ol-q5-b", topicId: "eng-1-9", conceptId: "relation-plastic-technology-any-following",
     section: "A", questionRef: "2019 OL Q5(b)",
-    questionText: "In relation to plastic technology, describe any two of the following: (i) Thermosetting plastic; (ii) Elastic memory; (iii) Thermoplastics.",
+    questionText: "In relation to plastic technology, describe any two of the following:\n(i) Thermosetting plastic;\n(ii) Elastic memory;\n(iii) Thermoplastics.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Thermosetting plastic Remains hard even when exposed to further heat.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Thermosetting plastic Remains hard even when exposed to further heat.","Elastic memory This describes the ability of a plastic to return to it’s original shape after being formed. The plastic remembers it’s original shape and will return to this shape if heated i.e. it is a smart material.","Thermoplastic A thermoplastic can be softened and reformed many times. Thermoplastics are also suitable for recycling."]} },
@@ -5519,7 +5519,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2019 Ordinary Level — © State Examinations Commission.",
     id: "eng-2019-ol-q7-b", topicId: "eng-3-12", conceptId: "hole-shaft-assembly-manufactured-dimensions-shown",
     section: "A", questionRef: "2019 OL Q7(b)",
-    questionText: "A hole and shaft assembly is manufactured to the dimensions shown. State the: (i) Nominal diameter of the shaft; (ii) Largest diameter of the shaft; (iii) Smallest diameter of the hole; (iv) The tolerance of the hole.",
+    questionText: "A hole and shaft assembly is manufactured to the dimensions shown. State the:\n(i) Nominal diameter of the shaft;\n(ii) Largest diameter of the shaft;\n(iii) Smallest diameter of the hole;\n(iv) The tolerance of the hole.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
     { id: "r-1", kind: "point", verbatim: "(i) Nominal diameter of the shaft: 32.00 mm", marks: 5 },
@@ -6241,8 +6241,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A - Name: Basic Oxygen furnace Function: Produces steel", marks: 5 },
-    { id: "r-2", kind: "point", verbatim: "B - Name: Blast furnace Function: Produces Pig iron", marks: 5 },
-    { id: "r-3", kind: "point", verbatim: "C - Name: Electrical Arc furnace Function: Produces High grade steel", marks: 5 },
+    { id: "r-2", kind: "point", verbatim: "B - Name: Blast furnace — Function: Produces Pig iron", marks: 5 },
+    { id: "r-3", kind: "point", verbatim: "C - Name: Electrical Arc furnace — Function: Produces High grade steel", marks: 5 },
     ],
     figure: {
           "candId": "engineering-2021-OL-paper-q2a-crop",
@@ -6872,19 +6872,6 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2022-ol-q2-b", topicId: "eng-1-4", conceptId: "aid-labelled-diagram-operation-furnace-you",
-    section: "A", questionRef: "2022 OL Q2(b)",
-    questionText: "Describe, with the aid of a labelled diagram, the operation of one furnace you have studied.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "alt", verbatim: "Pig iron and scrap steel or cast iron, together with carbon, coke & limestone provide the charge. Like the blast furnace, the cupola furnace is coke-fired with limestone acting as a flux to turn the impurities into slag.", marks: 12, accepts: ["Iron ore, coke and limestone provide the charge and are fed in through the top of the furnace.","Cold scrap iron or steel make up Furnace lid Carbon electrodes most of the charge together with small amounts of lime and carbon.","The lime combines with impurities producing slag. When the correct composition of steel is achieved the slag is removed through the back Charge door. The furnace is then tilted forwarded on its rollers allowing the molten steel to flow out the tapping Tilting rollers spout.","Electric Arc furnace"] },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q2-d-i", topicId: "eng-2-15", conceptId: "advantage-using-belt-pulley-mechanism-drive",
     section: "A", questionRef: "2022 OL Q2(d)(i)",
     questionText: "State one advantage of using a belt and pulley mechanism in a drive system.",
@@ -6913,7 +6900,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q3-a", topicId: "eng-2-6", conceptId: "head-steel-axe-annealed-normalised-tempered",
     section: "A", questionRef: "2022 OL Q3(a)",
-    questionText: "The head of a steel axe is annealed, normalised, and tempered during manufacture. Describe any two of the following processes: (i) Annealing; (ii) Normalising; (iii) Tempering.",
+    questionText: "The head of a steel axe is annealed, normalised, and tempered during manufacture. Describe any two of the following processes:\n(i) Annealing;\n(ii) Normalising;\n(iii) Tempering.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.", marks: 14, group: {"claimMax":2,"perOption":7,"options":["Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.","Normalising is a heat treatment process that is used to make a metal more ductile and tough after processes such as thermal or mechanical hardening.","Normalising steel involves heating it to a temperature typically in the range of 830°-950°and then cooling in air. The heating and slow cooling changes the microstructure of the steel, altering its mechanical properties.","Tempering removes some of the hardness while increasing the toughness of a metal. It is achieved by heating the metal to a specific temperature which is determined by the colour of the metal. On heating, colours appear and when the correct colour is achieved i.e., light straw appears at approx. 250° - 350°, it is quenched in cold water."]} },
@@ -7079,7 +7066,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q5-b", topicId: "eng-1-9", conceptId: "relation-plastic-technology-any-following-thermosetting",
     section: "A", questionRef: "2022 OL Q5(b)",
-    questionText: "In relation to plastic technology, describe any three of the following: (i) Thermosetting plastics; (ii) Thermoplastics; (iii) Fibreglass; (iv) Elastic memory.",
+    questionText: "In relation to plastic technology, describe any three of the following:\n(i) Thermosetting plastics;\n(ii) Thermoplastics;\n(iii) Fibreglass;\n(iv) Elastic memory.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Thermosetting plastic is a plastic which remains hard when heated.", marks: 12, group: {"claimMax":3,"perOption":4,"options":["Thermosetting plastic is a plastic which remains hard when heated.","Thermoplastic is a plastic which softens when heated.","Fibreglass is a composite, made of woven glass fibres, held together with a polyester resin. The combination of materials forms an extremely strong and durable composite.","Elastic memory describes the ability of a plastic to return to it’s original shape after being formed. The plastic remembers it’s original shape and will return to this shape if heated i.e. it is a smart material."]} },
@@ -7614,6 +7601,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q2-b", topicId: "eng-1-4", conceptId: "aid-labelled-diagram-operation-furnace-you",
+    section: "A", questionRef: "2022 OL Q2(b)",
+    questionText: "Describe, with the aid of a labelled diagram, the operation of one furnace you have studied.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Cupola furnace Pig iron and scrap steel or cast iron, together with carbon, coke & limestone provide the charge. Like the blast furnace, the cupola furnace is coke-fired with limestone acting as a flux to turn the impurities into slag. Air is blown through the tuyeres helping the coke to burn, causing the charge to melt. The slag floats on top of the cast iron and is removed as required. The molten cast iron is tapped from the bottom of the furnace and cast into moulds of different shapes and sizes as required.", marks: 6, accepts: ["Basic oxygen furnace The charge consists of scrap iron and steel together with lime and molten pig iron. Oxygen is blown at the surface of the molten charge from a water-cooled lance which is lowered through the mouth of the furnace. Impurities in the charge are oxidized and form a slag on the surface. At the end of the blow, the steel is poured off through a tapping hole followed by emptying the slag through the mouth of the furnace.","Blast furnace Iron ore, coke and limestone provide the charge and are fed in through the top of the furnace. As the coke burns, carbon monoxide is produced, and combines with the oxygen in the ore, leaving iron. The limestone combines with impurities to form slag. The molten iron falls to the bottom of the furnace where it is tapped off from time to time. The slag floats on top of the molten iron and is tapped off when necessary","Electric Arc furnace Cold scrap iron or steel make up most of the charge together with small amounts of lime and carbon. Heat for this furnace is produced by an electric arc created between carbon electrodes and the charge. The lime combines with impurities producing slag. When the correct composition of steel is achieved the slag is removed through the back door. The furnace is then tilted forwarded on its rollers allowing the molten steel to flow out the tapping spout."] },
+    { id: "r-2", kind: "anyN", verbatim: "Labelled diagram", marks: 6 },
+    ],
+    figure: {
+          "candId": "engineering-2022-OL-scheme-q2b-sol",
+          "src": "/exam-figures/engineering/markbank/engineering-2022-OL-scheme-q2b-sol.png",
+          "srcHash": "1081e1c7aa1dc90e833d49d1a9b6a277",
+          "alt": "The marking scheme's printed answer for 2022 OL Q2(b), as the State Examinations Commission set it. It reads: Cupola furnace Basic oxygen furnace Blast furnace Furnace lid Carbon electrodes Back door Tapping for removing spout slag Charge Tilting rollers Electric Arc furnace.",
+          "attribution": "SEC Leaving Certificate Engineering 2022 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
@@ -8061,7 +8071,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q5-b", topicId: "eng-1-9", conceptId: "relation-plastic-technology-any-following-elastic",
     section: "A", questionRef: "2023 OL Q5(b)",
-    questionText: "In relation to plastic technology, describe any three of the following: (i) Elastic memory; (ii) Thermosetting plastics; (iii) Plastic dip coating; (iv) Thermoplastic.",
+    questionText: "In relation to plastic technology, describe any three of the following:\n(i) Elastic memory;\n(ii) Thermosetting plastics;\n(iii) Plastic dip coating;\n(iv) Thermoplastic.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated.", marks: 12, group: {"claimMax":3,"perOption":4,"options":["This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated.","Thermosetting plastic is a plastic which remains hard when heated.","Pre-heated items for coating are dipped into a tank of plastic powder which fuses and sticks to the product. The item is removed and allowed to cool causing the plastic to form a protective coating around the product.","Thermoplastic is a plastic which softens when heated. Thermoplastics can be recycled and used again."]} },
@@ -9088,7 +9098,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q3-b", topicId: "eng-2-6", conceptId: "coil-spring-shown-annealed-hardened-tempered",
     section: "A", questionRef: "2024 OL Q3(b)",
-    questionText: "The coil spring shown is annealed, hardened and tempered during the manufacturing process. Describe any two of the following heat treatment processes: (i) Annealing, (ii) Hardening, (iii) Tempering.",
+    questionText: "The coil spring shown is annealed, hardened and tempered during the manufacturing process. Describe any two of the following heat treatment processes:\n(i) Annealing,\n(ii) Hardening,\n(iii) Tempering.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Annealing: Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900°C and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increasing the ductility and malleability of a metal.", marks: 14, group: {"claimMax":2,"perOption":7,"options":["Annealing: Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900°C and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increasing the ductility and malleability of a metal.","Hardening: To harden a component made of high carbon steel, it is first heated to a cherry red colour, approx. 800°C / 900°C, or until it loses its magnetic properties. The steel is then immediately quenched in water or oil.","Tempering: Tempering removes some of the hardness while increasing the toughness of a metal. It is achieved by heating the metal to a specific temperature which is determined by the colour of the metal. On heating, colours appear and when the correct colour is achieved i.e., light straw appears at approx. 250° - 350°, it is quenched in cold water."]} },
@@ -9266,7 +9276,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q6-b", topicId: "eng-2-11", conceptId: "any-following-relation-machining-rake-angle",
     section: "A", questionRef: "2024 OL Q6(b)",
-    questionText: "Explain any three of the following in relation to machining: (i) Rake angle, (ii) Chuck key, (iii) Depth of cut, (iv) Pilot hole.",
+    questionText: "Explain any three of the following in relation to machining:\n(i) Rake angle,\n(ii) Chuck key,\n(iii) Depth of cut,\n(iv) Pilot hole.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Rake angle: The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["Rake angle: The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.","Chuck key: A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.","Dept of cut: This is the distance the cutting tool is moved into the workpiece when cutting.","Pilot hole: A pilot hole must be drilled before using a large drill. This keeps the large drill central as it guides the drill through the piece when drilling."]} },
@@ -9405,7 +9415,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q7-b", topicId: "eng-3-12", conceptId: "waste-pipe-plug-machined-dimensions-shown",
     section: "A", questionRef: "2024 OL Q7(b)",
-    questionText: "A waste pipe and plug are machined to the dimensions shown below. State the: (i) Nominal diameter of the hole; (ii) Smallest diameter of the shaft; (iii) Largest diameter of the hole;",
+    questionText: "A waste pipe and plug are machined to the dimensions shown below. State the:\n(i) Nominal diameter of the hole;\n(ii) Smallest diameter of the shaft;\n(iii) Largest diameter of the hole;",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Nominal diameter of the hole; 24.00 mm", marks: 5 },
@@ -9455,7 +9465,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "(i) Vee block & clamp", marks: 9, group: {"claimMax":3,"perOption":3,"options":["(i) Vee block & clamp","(ii) Engineering Ruler","(iii) Digital vernier callipers","(iv) Engineering protractor"]} },
-    { id: "r-2", kind: "anyN", verbatim: "(i) Vee block & clamp Used for holding round bars when drilling or marking out.", marks: 9, group: {"claimMax":3,"perOption":3,"options":["(i) Vee block & clamp Used for holding round bars when drilling or marking out.","(ii) Engineering Ruler Used for accurate measurement, and as a guide for marking out lines on material.","(iii) Digital vernier callipers Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.","(iv) Engineering protractor Use for checking or accurately marking out angles on material."]} },
+    { id: "r-2", kind: "anyN", verbatim: "(i) Vee block & clamp — Used for holding round bars when drilling or marking out.", marks: 9, group: {"claimMax":3,"perOption":3,"options":["(i) Vee block & clamp — Used for holding round bars when drilling or marking out.","(ii) Engineering Ruler — Used for accurate measurement, and as a guide for marking out lines on material.","(iii) Digital vernier callipers Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.","(iv) Engineering protractor Use for checking or accurately marking out angles on material."]} },
     ],
     questionFigure: {
           "candId": "engineering-2024-OL-paper-q7c-crop",
@@ -9753,7 +9763,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q5-b", topicId: "eng-1-9", conceptId: "relation-plastic-technology-any-following-thermosetting",
     section: "A", questionRef: "2025 OL Q5(b)",
-    questionText: "In relation to plastic technology, describe any two of the following: (i) Thermosetting plastic, (ii) Laminating, (iii) Thermoplastic, (iv) Elastic memory.",
+    questionText: "In relation to plastic technology, describe any two of the following:\n(i) Thermosetting plastic,\n(ii) Laminating,\n(iii) Thermoplastic,\n(iv) Elastic memory.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Thermosetting plastic is a plastic which remains hard when heated.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Thermosetting plastic is a plastic which remains hard when heated.","Laminating is a bonding process which produces a sheet material manufactured from multiple layers of paper with a top layer of plastic, usually 1.5 mm thick, with a decorative finish. It can be used in flat sheets or heat‐formed and bent and adhered to single curved base material. It is commonly referred to by the brand name \"Formica.\"","Thermoplastic is a plastic which softens when heated.","This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated."]} },
@@ -9766,7 +9776,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q6-b", topicId: "eng-2-11", conceptId: "any-following-relation-machining-cutting-fluid",
     section: "A", questionRef: "2025 OL Q6(b)",
-    questionText: "Explain any three of the following in relation to machining: (i) Cutting fluid, (ii) Clearance angle, (iii) Depth of cut, (iv) Swarf.",
+    questionText: "Explain any three of the following in relation to machining:\n(i) Cutting fluid,\n(ii) Clearance angle,\n(iii) Depth of cut,\n(iv) Swarf.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Cutting fluids are used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["Cutting fluids are used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.","Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts a piece. It provides clearance between the cutting tool face and the workpiece","This is the distance the cutting tool is moved into the workpiece when cutting","Swarf is the waste material produced when the chip is cut from a workpiece"]} },
@@ -10025,7 +10035,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q3-a", topicId: "eng-2-6", conceptId: "reason-why-each-following-heat-treatment",
     section: "A", questionRef: "2025 OL Q3(a)",
-    questionText: "Explain the reason why each of the following heat treatment processes are carried out: (i) Normalising, (ii) Hardening.",
+    questionText: "Explain the reason why each of the following heat treatment processes are carried out:\n(i) Normalising,\n(ii) Hardening.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Normalising is carried out to refine the structure of steel and to remove internal stresses caused by cold working such as hammering, rolling or bending. It is similar to the annealing of steel, except the cooling rate is much faster.", marks: 7 },
@@ -10039,7 +10049,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q3-b", topicId: "eng-2-6", conceptId: "blade-concrete-saw-shown-annealed-tempered",
     section: "A", questionRef: "2025 OL Q3(b)",
-    questionText: "The blade of the concrete saw shown is annealed, tempered and quenched as part of the manufacturing process. Describe any two of the following processes: (i) Annealing, (ii) Tempering, (iii) Quenching.",
+    questionText: "The blade of the concrete saw shown is annealed, tempered and quenched as part of the manufacturing process. Describe any two of the following processes:\n(i) Annealing,\n(ii) Tempering,\n(iii) Quenching.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.", marks: 14, group: {"claimMax":2,"perOption":7,"options":["Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.","Tempering is where a metal is heated to a suitable temperature, which is below the reddening temperature and then cooled in oil or water.","Quenching is when a metal is plunged into a cooling liquid such as water. Quenching cools the metal as fast as possible and ensures that any structural changes which have taken place during heating are not allowed to revert."]} },
@@ -11092,7 +11102,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2026 Ordinary Level — © State Examinations Commission.",
     id: "eng-2026-ol-q3-c", topicId: "eng-2-6", conceptId: "any-following-heat-treatment-terms-associated",
     section: "A", questionRef: "2026 OL Q3(c)",
-    questionText: "Explain any two of the following heat treatment terms associated with the manufacturing of gears. (i) Normalising, (ii) Case hardening, (iii) Carbon content.",
+    questionText: "Explain any two of the following heat treatment terms associated with the manufacturing of gears.\n(i) Normalising,\n(ii) Case hardening,\n(iii) Carbon content.",
     tariffModel: {"kind":"fixed"}, totalMarks: 14,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Normalising is carried out to refine the structure of steel and to remove internal stresses caused by cold working such as hammering, rolling or bending. It is similar to the annealing of steel, except the cooling rate is much faster.", marks: 14, group: {"claimMax":2,"perOption":7,"options":["Normalising is carried out to refine the structure of steel and to remove internal stresses caused by cold working such as hammering, rolling or bending. It is similar to the annealing of steel, except the cooling rate is much faster.","Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.","Carbon content refers to the percentage of carbon contained in steel. Low Carbon Stell contains 0.05% to 0.25% by weight of carbon. Medium Carbon steel contains 0.30% to 0.60% by weight of carbon High Carbon Steel contains 0.60% to 1.5% by weight of carbon."]} },
@@ -11293,7 +11303,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2026 Ordinary Level — © State Examinations Commission.",
     id: "eng-2026-ol-q5-b", topicId: "eng-1-9", conceptId: "relation-plastic-technology-any-following",
     section: "A", questionRef: "2026 OL Q5(b)",
-    questionText: "In relation to plastic technology, describe any two of the following: (i) Fibreglass, (ii) Biodegradable plastic, (iii) Thermoplastic, (iv) Elastic memory.",
+    questionText: "In relation to plastic technology, describe any two of the following:\n(i) Fibreglass,\n(ii) Biodegradable plastic,\n(iii) Thermoplastic,\n(iv) Elastic memory.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Fiberglass is a fibrous glass; a man-made material used for insulation or structural reinforcement (GRP). Fiberglass is often used with a thermoplastic resin to produce boat or canoe bodies.", marks: 10, group: {"claimMax":2,"perOption":5,"options":["Fiberglass is a fibrous glass; a man-made material used for insulation or structural reinforcement (GRP). Fiberglass is often used with a thermoplastic resin to produce boat or canoe bodies.","Biodegradable plastic Bridgeable plastics are designed to decompose through the action of microorganisms (bacteria, fungi) into water / carbon dioxide. Biodegradable plastics unlike conventional plastics can break down in months rather than centuries, often used in packaging, agricultural films and medical applications.","Thermoplastic can be heated and softened over and over again.","Elastic memory This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated."]} },
@@ -11328,7 +11338,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2026 Ordinary Level — © State Examinations Commission.",
     id: "eng-2026-ol-q6-b", topicId: "eng-2-11", conceptId: "any-following-relation-machining",
     section: "A", questionRef: "2026 OL Q6(b)",
-    questionText: "Explain any three of the following in relation to machining: (i) Spindle speed, (ii) Swarf, (iii) Coolant, (iv) Feed.",
+    questionText: "Explain any three of the following in relation to machining:\n(i) Spindle speed,\n(ii) Swarf,\n(iii) Coolant,\n(iv) Feed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Spindle speed is measured in revolutions per. minute (RPM) and is the number of times the spindle turns in one minute, how fast the spindle spins.", marks: 15, group: {"claimMax":3,"perOption":5,"options":["Spindle speed is measured in revolutions per. minute (RPM) and is the number of times the spindle turns in one minute, how fast the spindle spins.","Swarf is the waste material produced when the chip is cut from a workpiece.","Coolant is used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting area.","Feed refers to the rate at which a cutting tool advances into or along the surface of a workpiece."]} },
@@ -11414,7 +11424,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2026 Ordinary Level — © State Examinations Commission.",
     id: "eng-2026-ol-q7-a", topicId: "eng-3-12", conceptId: "any-following-terms-relation-limits-fits",
     section: "A", questionRef: "2026 OL Q7(a)",
-    questionText: "Describe any two of the following terms in relation to limits and fits: (i) Interference fit, (ii) Lower limit, (iii) Clearance fit.",
+    questionText: "Describe any two of the following terms in relation to limits and fits:\n(i) Interference fit,\n(ii) Lower limit,\n(iii) Clearance fit.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "An interference fit is achieved when the shaft is larger than the hole. A force is required to assemble the shaft and hole.", marks: 12, group: {"claimMax":2,"perOption":6,"options":["An interference fit is achieved when the shaft is larger than the hole. A force is required to assemble the shaft and hole.","Lower limit refers to the smallest size a component can be when working to a tolerance.","A clearance fit is achieved when the shaft is smaller than the hole. The shaft is a loose fit in the hole."]} },

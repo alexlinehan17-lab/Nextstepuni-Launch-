@@ -3,7 +3,7 @@
 Paper LC027GLP000EV; scheme pages as the PDF numbers them. Question 1 is
 answered any eight at six marks each (eng_scheme per_part).
 """
-from eng_lift import lift
+from eng_lift import join, lift
 
 Y, L = 2022, 'ol'
 
@@ -46,6 +46,12 @@ CROPS = {
     'engineering-2022-OL-paper-q7b-crop': dict(
         doc='paper', page=8, rect=(318, 274, 572, 422), mask=[(316, 285, 334, 382)],
         ref='2022 OL Q7(b)'),
+    # Scheme pp12-14: each furnace's labelled diagram over its name, the four a
+    # candidate may choose from.
+    'engineering-2022-OL-scheme-q2b-sol': dict(
+        doc='scheme', parts=[(12, (66, 515, 240, 706)), (13, (60, 132, 260, 353)),
+                             (13, (68, 480, 265, 728)), (14, (48, 104, 262, 322))],
+        layout='row', solution=True, ref='2022 OL Q2(b)'),
 }
 
 CARDS = [
@@ -187,6 +193,27 @@ CARDS = [
           ('ii', (138, 311, 330, 329), (312, 331)),
           ('iii', (138, 337, 330, 355), (330, 349)),
           ('iv', (138, 363, 330, 381), (345, 364)))],
+    dict(key=(2, 'b', None),
+         replaces='the shipped card\'s options were fragments: the cupola and blast furnaces '
+                  'cut to their first sentences, the basic oxygen furnace missing, the '
+                  'electric arc furnace split in three with its drawing\'s labels "Furnace '
+                  'lid Carbon electrodes" read into it and its caption an option of its own; '
+                  'and it priced the description at the part\'s 12 where the scheme prints 6 '
+                  'for the description and 6 for the labelled diagram',
+         why='"Any one": scheme pp12-14 describe four furnaces, each beside its labelled '
+             'diagram over the furnace\'s name, shown with the answer; "Describe Award 6 '
+             'Marks", "Labelled diagram Award 6 Marks". Each option is the name joined to '
+             'its description; the diagram row is the box\'s own heading.',
+         topic='eng-1-4',
+         lifted=[[join(S(12, 110, 689, 190, 705), S(12, 255, 489, 445, 714)),
+                  join(S(13, 130, 336, 240, 352), S(13, 264, 136, 447, 317)),
+                  join(S(13, 135, 711, 205, 727), S(13, 276, 507, 445, 718)),
+                  join(S(14, 130, 305, 230, 321), S(14, 265, 102, 447, 313))],
+                 S(12, 458, 491, 550, 506)],
+         row_kind='anyN', group=[(1, 6), None], marks=[6, 6], tariff='fixed', total=12,
+         figure='engineering-2022-OL-scheme-q2b-sol',
+         notes="The scheme prints 'Describe Award 6 Marks' and 'Labelled diagram Award 6 "
+               "Marks', 'Total (12) Marks', for the furnace chosen."),
 ]
 
 # Question 1 parts the scheme prices half and half, which the automatic author

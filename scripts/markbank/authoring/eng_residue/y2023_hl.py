@@ -56,6 +56,10 @@ CROPS = {
     'engineering-2023-HL-scheme-q5cii-sol': dict(
         doc='scheme', page=18, rect=(110, 470, 530, 568), solution=True,
         ref='2023 HL Q5(c)(ii)'),
+    # Scheme p27: the compound and simple gear trains drawn and captioned.
+    'engineering-2023-HL-scheme-q9bv-sol': dict(
+        doc='scheme', page=27, rect=(100, 512, 500, 632), solution=True,
+        ref='2023 HL Q9(b)(v)'),
 }
 
 CARDS = [
@@ -161,6 +165,18 @@ CARDS = [
          marks=[6], total=6,
          question_figure='engineering-2023-HL-paper-q9bii-crop',
          notes="The scheme prints '6 marks'."),
+    dict(key=(9, 'b', 'v'),
+         replaces='the shipped card\'s fourth row was the two drawings\' captions and the '
+                  'tariff printed under them, "Compound gear reduction 9:1 Simple gear '
+                  'reduction 3:1 (Any three) 6 + 6 + 6"',
+         why='Scheme p27 answers in three paragraphs over two captioned drawings, shown '
+             'with the answer; the part earns 6, "(Any three) 6 + 6 + 6" for (b).',
+         topic='eng-2-15',
+         lifted=[S(27, 105, 411, 545, 445), S(27, 105, 445, 545, 479),
+                 S(27, 105, 478, 545, 512)],
+         tariff='questionTotal', total=6,
+         figure='engineering-2023-HL-scheme-q9bv-sol',
+         notes="The scheme prints '(Any three) 6 + 6 + 6' for (b): each part answered earns 6."),
 ]
 
 TOPICS = {
