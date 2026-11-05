@@ -3937,13 +3937,12 @@ for (const [levelCode, yearOffset, n, topicIndexes] of technologyRuntime.questio
 // A Technology option question belongs on its option's page: Section C prints
 // Option 1 Applied Control Systems, 2 Electronics and Control, 3 ICT,
 // 4 Manufacturing Systems and 5 Materials Technology as Questions 1 to 5 in
-// every sitting 2010-2026, and every 2020-2026 option question but one is
-// filed under its option. The factual file-scoped headings file six older
-// ones by content alone (2014 Higher C2, 2015 Ordinary C1, 2017 Higher C4 and
-// C5, 2017 Ordinary C3, 2019 Ordinary C3), and an exact file match shadows the
-// question-level mapping, so a student revising that option never met them.
-// The option is added beside the reference's own headings, which stay. The
-// one shipped exception, 2026 Higher C3, is left for review.
+// every sitting 2010-2026. The factual file-scoped headings file seven of
+// them by content alone (2014 Higher C2, 2015 Ordinary C1, 2017 Higher C4 and
+// C5, 2017 Ordinary C3, 2019 Ordinary C3, 2026 Higher C3), and an exact file
+// match shadows the question-level mapping, so a student revising that option
+// never met them. The option is added beside the reference's own headings,
+// which stay, in every year.
 const TECHNOLOGY_OPTION_TOPICS: Record<PaperLevel, string[]> = {
   higher: [
     'technology-higher-option-applied-control-systems',
@@ -3960,10 +3959,9 @@ const TECHNOLOGY_OPTION_TOPICS: Record<PaperLevel, string[]> = {
     'technology-ordinary-option-5-materials-technology',
   ],
 } as Record<PaperLevel, string[]>;
-const TECHNOLOGY_OPTION_FILING_BEFORE = 2020;
 for (const reference of technologyPartReferences) {
   const option = /^C([1-5])$/.exec(reference.n);
-  if (!reference.fileid || !option || reference.year >= TECHNOLOGY_OPTION_FILING_BEFORE) continue;
+  if (!reference.fileid || !option) continue;
   const topicId = TECHNOLOGY_OPTION_TOPICS[reference.level][Number(option[1]) - 1];
   if (!TOPICS_BY_ID.has(topicId)) throw new Error(`Unknown Technology option topic: ${topicId}`);
   for (const fileid of new Set([

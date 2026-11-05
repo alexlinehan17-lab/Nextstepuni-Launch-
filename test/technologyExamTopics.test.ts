@@ -236,8 +236,8 @@ describe('Technology exam-topic registry', () => {
     )).toContain('technology-ordinary-option-5-materials-technology');
   });
 
-  it('files every 2010-2019 option question on its own option page', () => {
-    // Section C prints Options 1-5 as Questions 1-5 in every sitting. Six of
+  it('files every 2010-2026 option question on its own option page', () => {
+    // Section C prints Options 1-5 as Questions 1-5 in every sitting. Seven of
     // them were filed by content alone, so the option page never showed them.
     const optionSlugs = {
       higher: ['option-applied-control-systems', 'option-electronics-control',
@@ -249,7 +249,7 @@ describe('Technology exam-topic registry', () => {
     } as const;
     let checked = 0;
     for (const paper of PAPER_TOPIC_TAGS) {
-      if (paper.subjectId !== 'technology' || paper.year >= 2020) continue;
+      if (paper.subjectId !== 'technology') continue;
       for (const question of paper.q) {
         const option = /^C([1-5])$/.exec(question.n);
         if (!option) continue;
@@ -260,8 +260,10 @@ describe('Technology exam-topic registry', () => {
         checked += 1;
       }
     }
-    // 10 years x 2 levels x 2 editions x 5 options.
-    expect(checked).toBe(200);
+    // Every Section C question of every indexed Technology paper: 2010-2026,
+    // Higher and Ordinary, English and Irish editions, 5 options each
+    // (16 x 4 x 5 = 320), and 2020's single Higher sitting (2 x 5 = 10).
+    expect(checked).toBe(330);
   });
 
   it('ships a finite paper crop and honest scheme boundary for all 1,356 cards', () => {
