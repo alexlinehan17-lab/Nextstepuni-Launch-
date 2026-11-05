@@ -1064,6 +1064,16 @@ const ART_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2010: { higher: 58, ordinary: 57 },
 };
 const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED;
+/* Spanish keeps its 347 2021-2025 IDs frozen (204 Higher + 143 Ordinary, the
+ * identity hashes above). The languages lane (2026-11-05) cards every further
+ * sitting on top, one sitting per commit, pinned here per year and level and
+ * never folded into the frozen hashes. */
+const SPANISH_ADDED: Record<number, { higher: number; ordinary: number }> = {
+  2026: { higher: 43, ordinary: 0 },
+};
+const isSpanishAdded = (id: string) => /^es-\d{4}-/.test(id) && Number(id.slice(3, 7)) in SPANISH_ADDED;
+const spanishAddedTotal = Object.values(SPANISH_ADDED)
+  .reduce((sum, counts) => sum + counts.higher + counts.ordinary, 0);
 const artAdded = (level: 'higher' | 'ordinary') => Object.values(ART_ADDED)
   .reduce((sum, counts) => sum + counts[level], 0);
 
@@ -1277,6 +1287,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
     ];
   }
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
+  if (name.startsWith('spanish:')) return ids.filter(id => !isSpanishAdded(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [...ids.filter(id => !isBiologyAdded(id)), ...biologyAliasIds.filter(id => id.includes(level))];
@@ -1383,6 +1394,18 @@ describe('Mark Bank card preservation', () => {
       .toBe(true);
   });
 
+  it('adds each further Spanish sitting on top of the frozen 2021-2025 identity', () => {
+    const cards = [...SPANISH_HIGHER, ...SPANISH_ORDINARY];
+    for (const [year, counts] of Object.entries(SPANISH_ADDED)) {
+      const added = cards.filter(card => card.year === Number(year));
+      expect(added.filter(card => card.level === 'higher'), year).toHaveLength(counts.higher);
+      expect(added.filter(card => card.level === 'ordinary'), year).toHaveLength(counts.ordinary);
+      expect(added.every(card => card.id.startsWith(`es-${year}-`))).toBe(true);
+    }
+    expect(cards.filter(card => !isSpanishAdded(card.id)).every(card => card.year >= 2021 && card.year <= 2025))
+      .toBe(true);
+  });
+
   it('protects the complete current bank', () => {
     // 10,495 before this session, plus sixteen subjects carded in six waves:
     // Religious Education 288, LCVP 314, Technology 716, History 749,
@@ -1431,7 +1454,8 @@ describe('Mark Bank card preservation', () => {
     // 23,254 + 87 + 1 = 23,342. Then the whole-bank audit: 2024 HL B3(d)
     // split the same way (the scheme misprints its "(ii)" as "(iii)"): 23,343.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
-      name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
+      name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length
+        : name.startsWith('spanish:') ? cards.filter(card => isSpanishAdded(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
     // live non-additions plus its consolidated per-item cards, each an alias key.
     // Geography (2026-10-23) keeps its 754 frozen IDs the same way: its 3,492
@@ -1454,7 +1478,7 @@ describe('Mark Bank card preservation', () => {
         + geographyAdditionIds.size - geographyAliasedIds.length
         + englishAdditionIds.size - englishAliasIds.length
         + biologyAdditionIds.size - biologyAliasIds.length
-        + chemistryAdded.size - chemistryWithdrawnShipped.length);
+        + chemistryAdded.size - chemistryWithdrawnShipped.length + spanishAddedTotal);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

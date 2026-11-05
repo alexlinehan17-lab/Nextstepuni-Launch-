@@ -185,7 +185,8 @@ def _clean_old(rows, slot=OLD_SLOT):
     below it.
     """
     out = []
-    for pno, x, text in rows:
+    for text_row in rows:
+        pno, x, text = text_row
         had_leader = bool(LEADER.search(text))
         t = LEADER.sub(' ', text)
         if had_leader:
@@ -201,7 +202,7 @@ def _clean_old(rows, slot=OLD_SLOT):
             continue
         if OLD_FURNITURE.match(t):
             continue
-        out.append((pno, x, t))
+        out.append(Row(pno, x, t, getattr(text_row, 'y', None)))
     return out
 
 
@@ -238,6 +239,21 @@ ANSWER_LINES = re.compile(r'(?:\s*\d{1,2}\s*\.)+\s*$')
 # is therefore one of the three things the two documents are joined on.
 INSERT_SKIP = re.compile(r'^(?:SECTION\s+B|ROINN\s+B|Leaving Certificate|Spanish\s*[–-])',
                          re.I)
+
+
+class Row(tuple):
+    """(page, x, text) — one printed line — with its height on the page.
+
+    Still a 3-tuple wherever a line is unpacked; `y` (the line's middle as a
+    fraction of the page height) rides alongside it so a card can be placed on
+    the page where the paper printed it — which is how a card finds its Topic
+    Atlas question, whose anchor records the same position.
+    """
+
+    def __new__(cls, page, x, text, y=None):
+        obj = super().__new__(cls, (page, x, text))
+        obj.y = y
+        return obj
 
 
 def _dedup_words(page):
@@ -343,7 +359,8 @@ def _rows(path, page_from=0, page_to=None):
             for row in sorted(rows, key=lambda r: r['mid']):
                 words = sorted(row['w'])
                 text = ' '.join(w for _x, w in words)
-                out.append((pno, words[0][0], ' '.join(text.split())))
+                out.append(Row(pno, words[0][0], ' '.join(text.split()),
+                               row['mid'] / page.rect.height))
     return out
 
 

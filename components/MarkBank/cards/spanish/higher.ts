@@ -5036,4 +5036,1066 @@ export const CARDS: SecCard[] = [
           "sourceFileid": "LC012ALP015EV"
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1a-1-a", topicId: "spanish-7-0", conceptId: "vuelto",
+    section: "A", questionRef: "2026 HL Section A1a Q1(a)",
+    stem: "Busca en el pasaje y escribe en los espacios correspondientes las palabras o frases del texto que correspondan (más o menos) a las siguientes:",
+    questionText: "vuelto\n(lines 1-10)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "regresado", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Ana Alcolea: El medallón perdido — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1a-1-b", topicId: "spanish-7-0", conceptId: "sin-duda",
+    section: "A", questionRef: "2026 HL Section A1a Q1(b)",
+    stem: "Busca en el pasaje y escribe en los espacios correspondientes las palabras o frases del texto que correspondan (más o menos) a las siguientes:",
+    questionText: "sin duda (lines 11-19)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "seguramente", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Ana Alcolea: El medallón perdido — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1a-1-c", topicId: "spanish-7-0", conceptId: "permanecio",
+    section: "A", questionRef: "2026 HL Section A1a Q1(c)",
+    stem: "Busca en el pasaje y escribe en los espacios correspondientes las palabras o frases del texto que correspondan (más o menos) a las siguientes:",
+    questionText: "permaneció (lines 20-25)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "se quedó", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Ana Alcolea: El medallón perdido — answer in Spanish",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1a-2-a", topicId: "spanish-7-0", conceptId: "solo-ropas-habian-sido-repartidas-entre",
+    section: "A", questionRef: "2026 HL Section A1a Q2(a)",
+    stem: "Explain in ENGLISH the following phrases as they are used in the text.",
+    questionText: "… sólo sus ropas habían sido repartidas entre algunos hombres del poblado. (line 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "…only his clothes had been divided out among some of the men of the village", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Ana Alcolea: El medallón perdido — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1a-2-b", topicId: "spanish-7-0", conceptId: "sin-saber-muy-bien-significa-todo",
+    section: "A", questionRef: "2026 HL Section A1a Q2(b)",
+    stem: "Explain in ENGLISH the following phrases as they are used in the text.",
+    questionText: "… sin saber muy bien lo que significa todo el ritual. (line 11)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… without knowing very well what the whole ritual means …", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Ana Alcolea: El medallón perdido — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1a-2-c", topicId: "spanish-7-0", conceptId: "iba-ser-habitacion-durante-estancia-gabon",
+    section: "A", questionRef: "2026 HL Section A1a Q2(c)",
+    stem: "Explain in ENGLISH the following phrases as they are used in the text.",
+    questionText: "… iba a ser mi habitación durante mi estancia en Gabón, … (line 23)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… it was going to be my room during my stay in Gabon …", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Ana Alcolea: El medallón perdido — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1a-3", topicId: "spanish-7-0", conceptId: "benjamin-discovers-several-photographs-his-father",
+    section: "A", questionRef: "2026 HL Section A1a Q3",
+    questionText: "Benjamín discovers several photographs in his father’s bedroom.\nGive three details in English from the extract.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” The scheme adds: “First correct answer=4m”.", group: {"claimMax":3,"perOption":4,"options":["photos of his father’s childhood with his uncle and grandparents","a large photo of his father with the famous leopard","a photo of his father’s wedding to his mother","a photo of him as a baby in his father’s arms (throwing him into the air)","a photo of his First Communion"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Ana Alcolea: El medallón perdido — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1a-4", topicId: "spanish-7-0", conceptId: "benjamin-describes-contents-drawers-sees-them",
+    section: "A", questionRef: "2026 HL Section A1a Q4",
+    questionText: "Benjamín describes the contents of the drawers as he sees them now.\nGive three details in English from the extract.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” The scheme adds: “First correct answer=4m”.", group: {"claimMax":3,"perOption":4,"options":["they were almost empty","only a few/dispersed papers remained","letters from his mother","a letter from Benjamin with childhood writing","a drawing that he had done in school for Father’s Day"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Ana Alcolea: El medallón perdido — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1a-5", topicId: "spanish-7-0", conceptId: "benjamin-visit-gabon-journey-discovery-discuss",
+    section: "A", questionRef: "2026 HL Section A1a Q5",
+    questionText: "Benjamín’s visit to Gabon is a journey of discovery. Discuss.\nYou may not support your answer by reference to the extract. Answer in English on page 6.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 12, contextNote: "The scheme prints no answer for this ask. In its place it prints “Discussion on any three relevant points.” and “No marks awarded for answers supported by reference to the extract”, under the tariff “4 + 4 + 4m = 12 marks”. The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", permittedMarks: [0,4,8,12], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "Prescribed Literature: Ana Alcolea: El medallón perdido — answer in English",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1b-1-a", topicId: "spanish-5-0", conceptId: "mario-salcedo-unique",
+    section: "A", questionRef: "2026 HL Section A1b Q1(a)",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "How is Mario Salcedo unique? (para 1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He has been living on cruise ships for (more than) 25 years and he has no intention of changing his life(style)", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "SUPER MARIO: EL REY DE LOS CRUCEROS — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1b-1-b", topicId: "spanish-5-0", conceptId: "did-mario-life-change-1997",
+    section: "A", questionRef: "2026 HL Section A1b Q1(b)",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "How did Mario’s life change in 1997? (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He (decided that he) was fed up of suits/ties/airports and he left it all to create his own business", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "SUPER MARIO: EL REY DE LOS CRUCEROS — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1b-1-c", topicId: "spanish-5-0", conceptId: "besides-work-does-mario-daily-routine",
+    section: "A", questionRef: "2026 HL Section A1b Q1(c)",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "Besides work, what does Mario’s daily routine consist of? (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":2,"perOption":2,"options":["going for walks on the ship","tasting (quality) food","looking at the shows","chatting with the other passengers"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "SUPER MARIO: EL REY DE LOS CRUCEROS — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1b-1-d", topicId: "spanish-5-0", conceptId: "advantages-does-mario-say-his-lifestyle",
+    section: "A", questionRef: "2026 HL Section A1b Q1(d)",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "What advantages does Mario say his lifestyle has? (para 4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He doesn’t (have to) do (household) chores", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” The scheme adds: “2m”; “1+1m”." },
+    { id: "r-2", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, group: {"claimMax":2,"perOption":1,"options":["taking out the rubbish","sweeping the floors","cutting the grass"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "SUPER MARIO: EL REY DE LOS CRUCEROS — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1b-1-e", topicId: "spanish-5-0", conceptId: "difficulties-has-miguel-quevin-observed",
+    section: "A", questionRef: "2026 HL Section A1b Q1(e)",
+    stem: "Answer the following questions in ENGLISH.",
+    questionText: "What difficulties has Miguel Quevín observed? (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":2,"perOption":2,"options":["loss of balance","lack of concentration","tiredness","anxiety"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "SUPER MARIO: EL REY DE LOS CRUCEROS — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1b-2-a", topicId: "spanish-5-0", conceptId: "alegria-gente",
+    section: "A", questionRef: "2026 HL Section A1b Q2(a)",
+    stem: "Escribe en ESPAÑOL en los espacios correspondientes las palabras o frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+    questionText: "da alegría a la gente (1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "hace a las personas felices", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "SUPER MARIO: EL REY DE LOS CRUCEROS — answer in Spanish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1b-2-b", topicId: "spanish-5-0", conceptId: "alrededor",
+    section: "A", questionRef: "2026 HL Section A1b Q2(b)",
+    stem: "Escribe en ESPAÑOL en los espacios correspondientes las palabras o frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+    questionText: "alrededor de (4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "en torno a", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "SUPER MARIO: EL REY DE LOS CRUCEROS — answer in Spanish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1b-2-c", topicId: "spanish-5-0", conceptId: "personal",
+    section: "A", questionRef: "2026 HL Section A1b Q2(c)",
+    stem: "Escribe en ESPAÑOL en los espacios correspondientes las palabras o frases del texto que tengan el mismo sentido (más o menos) que las siguientes:",
+    questionText: "el personal (6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "la tripulación", marks: 4, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "SUPER MARIO: EL REY DE LOS CRUCEROS — answer in Spanish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1b-3-a", topicId: "spanish-5-0", conceptId: "empresa-financiera-situada",
+    section: "A", questionRef: "2026 HL Section A1b Q3(a)",
+    stem: "Explain in ENGLISH the meaning of the following in their context:",
+    questionText: "… en una empresa financiera situada en ... (para 2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… in a finance company situated in …", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "SUPER MARIO: EL REY DE LOS CRUCEROS — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1b-3-b", topicId: "spanish-5-0", conceptId: "mientras-sigue-trabajo-dirige-negocio",
+    section: "A", questionRef: "2026 HL Section A1b Q3(b)",
+    stem: "Explain in ENGLISH the meaning of the following in their context:",
+    questionText: "… mientras sigue con su trabajo y dirige su negocio … (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "… while he continues with his job and runs his business…", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "SUPER MARIO: EL REY DE LOS CRUCEROS — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1b-3-c", topicId: "spanish-5-0", conceptId: "tratan-como-realeza",
+    section: "A", questionRef: "2026 HL Section A1b Q3(c)",
+    stem: "Explain in ENGLISH the meaning of the following in their context:",
+    questionText: "… me tratan como a la realeza. (para 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "... they treat me like royalty", marks: 4, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "SUPER MARIO: EL REY DE LOS CRUCEROS — answer in English",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a1b-4", topicId: "spanish-5-0", conceptId: "conlleva-beneficios-puede-caminar",
+    section: "A", questionRef: "2026 HL Section A1b Q4",
+    stem: "Explica (o expresa de otro modo) en ESPAÑOL una de las frases siguientes:",
+    questionText: "(a) … conlleva beneficios... (para 1)\nO\n(b) … no puede caminar… (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 6, contextNote: "The scheme prints no answer for this ask. In its place it prints “Any mark from 0 to 6 may be awarded for this question. No marks for answers in English”, under the tariff “(6 marks)”. The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", permittedMarks: [0,1,2,3,4,5,6], unprinted: true },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "SUPER MARIO: EL REY DE LOS CRUCEROS — answer in Spanish",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a2-a-i", topicId: "spanish-5-1", conceptId: "debate-has-always-divided-spanish-people",
+    section: "A", questionRef: "2026 HL Section A2 Q(a)(i)",
+    questionText: "What debate has always divided Spanish people’s opinion?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Whether the Spanish/potato omelette should contain onion or not", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LA TORTILLA DE PATATA, ¿CON CEBOLLA O SIN CEBOLLA? — answer in English",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a2-a-ii", topicId: "spanish-5-1", conceptId: "according-pablo-lopez-can-this-dish",
+    section: "A", questionRef: "2026 HL Section A2 Q(a)(ii)",
+    questionText: "According to Pablo López, how can this dish be enjoyed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":4,"perOption":1,"options":["hot","cold","(as a) tapa","(a) main dish","(in a) sandwich"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LA TORTILLA DE PATATA, ¿CON CEBOLLA O SIN CEBOLLA? — answer in English",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a2-a-iii", topicId: "spanish-5-1", conceptId: "its-origins",
+    section: "A", questionRef: "2026 HL Section A2 Q(a)(iii)",
+    questionText: "What is said about its origins?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In the 18th century when it was a nutritious food for workers (in the fields)", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "LA TORTILLA DE PATATA, ¿CON CEBOLLA O SIN CEBOLLA? — answer in English",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a2-b-i", topicId: "spanish-5-1", conceptId: "isabel-allende-barbie-doll-wearing",
+    section: "A", questionRef: "2026 HL Section A2 Q(b)(i)",
+    questionText: "What is the Isabel Allende Barbie doll wearing?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.” The scheme adds: “First correct answer = 2m”.", group: {"claimMax":2,"perOption":2,"options":["a red dress","gold earrings","black/high-heeled shoes"],"perOptionSteps":[2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "ISABEL ALLENDE YA TIENE SU PROPIA BARBIE — answer in English",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a2-b-ii", topicId: "spanish-5-1", conceptId: "katya-echazarreta-famous",
+    section: "A", questionRef: "2026 HL Section A2 Q(b)(ii)",
+    questionText: "Why is Katya Echazarreta famous?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "She is the first Mexican woman to travel into space", marks: 3, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "ISABEL ALLENDE YA TIENE SU PROPIA BARBIE — answer in English",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-a2-b-iii", topicId: "spanish-5-1", conceptId: "according-allende-storytelling-important",
+    section: "A", questionRef: "2026 HL Section A2 Q(b)(iii)",
+    questionText: "According to Allende, why is storytelling important?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The answers the scheme accepts", marks: null, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”", group: {"claimMax":1,"perOption":4,"options":["We learn how to connect with others","(We learn) lessons about life"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "READING COMPREHENSION",
+          "title": "ISABEL ALLENDE YA TIENE SU PROPIA BARBIE — answer in English",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Read the text exactly as the examination printed it, then answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-1-a", topicId: "spanish-5-0", conceptId: "cantidad",
+    section: "B", questionRef: "2026 HL Section B Q1(a)",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "cantidad (1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "cifra", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-1-b", topicId: "spanish-5-0", conceptId: "habilidad-imprescindible",
+    section: "B", questionRef: "2026 HL Section B Q1(b)",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "habilidad imprescindible (2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "destreza necesaria", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-1-c", topicId: "spanish-5-0", conceptId: "frecuentemente",
+    section: "B", questionRef: "2026 HL Section B Q1(c)",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "frecuentemente (3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a menudo", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-1-d", topicId: "spanish-5-0", conceptId: "renunciar-objetivo",
+    section: "B", questionRef: "2026 HL Section B Q1(d)",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "renunciar al objetivo (4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "abandonar la ambición", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-1-e", topicId: "spanish-5-0", conceptId: "fuera-comun",
+    section: "B", questionRef: "2026 HL Section B Q1(e)",
+    stem: "Escribe las palabras o frases del texto que sean equivalentes (más o menos) a las siguientes:",
+    questionText: "fuera de lo común (5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "poco convencional", marks: 3, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-2-a", topicId: "spanish-5-0", conceptId: "aunque-trataba-evitarlo",
+    section: "B", questionRef: "2026 HL Section B Q2(a)",
+    stem: "Write in ENGLISH the meaning (in the context) of the following phrases:",
+    questionText: "Aunque yo trataba de evitarlo, ... (para 3)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Even though I tried to avoid it …", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-2-b", topicId: "spanish-5-0", conceptId: "importaba-quedar-ridiculo",
+    section: "B", questionRef: "2026 HL Section B Q2(b)",
+    stem: "Write in ENGLISH the meaning (in the context) of the following phrases:",
+    questionText: "… no le importaba quedar en ridículo. (para 5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "…he didn’t mind making a fool of himself", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-2-c", topicId: "spanish-5-0", conceptId: "luego-mediante-empleo-periodista",
+    section: "B", questionRef: "2026 HL Section B Q2(c)",
+    stem: "Write in ENGLISH the meaning (in the context) of the following phrases:",
+    questionText: "Luego, mediante su empleo de periodista, … (para 6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Later by way of his job as a journalist", marks: 5, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-3-a", topicId: "spanish-5-0", conceptId: "otro-lado",
+    section: "B", questionRef: "2026 HL Section B Q3(a)",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "por otro lado (1)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "en cambio", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-3-b", topicId: "spanish-5-0", conceptId: "ocasion",
+    section: "B", questionRef: "2026 HL Section B Q3(b)",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "ocasión (2)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "oportunidad", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-3-c", topicId: "spanish-5-0", conceptId: "conseguir",
+    section: "B", questionRef: "2026 HL Section B Q3(c)",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "conseguir (4)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "lograr", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-3-d", topicId: "spanish-5-0", conceptId: "errores",
+    section: "B", questionRef: "2026 HL Section B Q3(d)",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "errores (5)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "fallos", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-3-e", topicId: "spanish-5-0", conceptId: "carino",
+    section: "B", questionRef: "2026 HL Section B Q3(e)",
+    stem: "Busca en el texto una palabra o frase que tenga el mismo sentido (más o menos) que las siguientes:",
+    questionText: "cariño (6)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "simpatía", marks: 1, contextNote: "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in Spanish",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-4-a", topicId: "spanish-5-0", conceptId: "does-marina-torres-say-native-english",
+    section: "B", questionRef: "2026 HL Section B Q4(a)",
+    stem: "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+    questionText: "What does Marina Torres say about native English speakers?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "they have an obstacle learning another language", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-2", kind: "point", verbatim: "they find it hard to motivate themselves", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "(they tend to) be lazy", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-4-b", topicId: "spanish-5-0", conceptId: "according-experts-benefits-learning-languages",
+    section: "B", questionRef: "2026 HL Section B Q4(b)",
+    stem: "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+    questionText: "According to experts, what are the benefits of learning languages?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "it improves academic performance", marks: 2, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-2", kind: "point", verbatim: "it avoids future memory problems", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "it is like having a gym for the brain", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2026, level: "higher",
+    paperFileid: "LC012ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Spanish 2026 Higher Level — © State Examinations Commission.",
+    id: "es-2026-hl-b-4-c", topicId: "spanish-5-0", conceptId: "did-michael-robinson-explain-his-method",
+    section: "B", questionRef: "2026 HL Section B Q4(c)",
+    stem: "As a partial summary of the content of the article, write in ENGLISH (in the appropriate spaces) the information requested.",
+    questionText: "How did Michael Robinson explain his method for learning Spanish?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "he didn’t attend any classes", marks: 1, contextNote: "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper for full marks.”" },
+    { id: "r-2", kind: "point", verbatim: "he watched cartoons", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "he went out to parties", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "SECTION B — LOOSE SHEET",
+          "title": "¿VALE LA PENA ESTUDIAR UN SEGUNDO IDIOMA? — answer in English",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
+          "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer.",
+          "sourceFileid": "LC012ALP015EV"
+    },
+  } as SecCard,
 ];

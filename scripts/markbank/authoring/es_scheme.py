@@ -296,7 +296,7 @@ class Ask:
 
     __slots__ = ('section', 'q', 'letter', 'roman', 'title', 'terms', 'total',
                  'quota', 'options', 'points', 'notes', 'line', 'fault',
-                 'head_notation')
+                 'head_notation', 'lead_points')
 
     def __init__(self, **kw):
         for k in self.__slots__:
@@ -660,6 +660,12 @@ class EsScheme:
         elif own_terms is not None and sum(own_terms) != sum(terms):
             fault = (f'the question head prices this part {"+".join(map(str, terms))} '
                      f'and the part itself {"+".join(map(str, own_terms))}')
+        elif own_terms is not None and len(own_terms) > len(terms):
+            # The other way round: 2026 Higher heads its journalistic Q.1
+            # "4 + 4 + 4 + 4 + 4m" and closes part (c) "Two of: … (2+2m)". The
+            # part's own split is then the finer one, and it is what the
+            # examiner pays the two answers by.
+            terms = own_terms
         # The two agree on what the part is worth but not on how it is split —
         # Higher Q.5 heads itself "4 + 4 + 4 = 12 marks" and closes the ask
         # "(12m)". The head's split is the finer of the two and is what the
@@ -667,6 +673,27 @@ class EsScheme:
         # because the number that could be wrong on a card is the total.
         if terms is not None:
             total = sum(terms)
+
+        # A required answer printed AHEAD of a menu, each priced in its own
+        # square bracket: 2026 Higher journalistic Q.1(d) "He doesn't (have to)
+        # do (household) chores [2m] like" / "two of: [1+1m]" / three dashed
+        # chores, closed "(2+1+1m)". The bracket marks where the priced answer
+        # ends; what follows it ("like") introduces the menu.
+        lead_points = []
+        if terms and any(QUOTA.match(' '.join(k.split())) for k in kept):
+            quota_at = next(i for i, k in enumerate(kept)
+                            if QUOTA.match(' '.join(k.split())))
+            q_count = QUOTA_WORDS[QUOTA.match(' '.join(kept[quota_at].split()))
+                                  .group(1).lower()]
+            if len(terms) == q_count + 1 and quota_at == 1:
+                for raw in body[:2]:
+                    s_ = ' '.join((raw or '').split())
+                    m = re.match(r'^(.*?)\s*\[\s*(\d{1,2})\s*m(?:arks?)?\s*\]', s_, re.I)
+                    if (m and int(m.group(2)) == terms[0] and m.group(1).strip()
+                            and not ANSWER_START.match(s_)):
+                        lead_points = [(m.group(1).strip(), terms[0])]
+                        kept = kept[1:]
+                        break
 
         quota = None
         rest = []
@@ -728,7 +755,8 @@ class EsScheme:
         return Ask(section=section, q=q, letter=letter, roman=roman,
                    title=self.titles.get((section, q)), terms=terms, total=total,
                    quota=quota, options=options, points=points, notes=notes,
-                   line=line, fault=fault, head_notation=notation)
+                   line=line, fault=fault, head_notation=notation,
+                   lead_points=lead_points)
 
     # -- lookups ------------------------------------------------------------
     def ref(self, ask):

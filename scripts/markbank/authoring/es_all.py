@@ -61,8 +61,23 @@ from es_topics import (topic_for, concept_for, answer_language,  # noqa: E402
 from paper_census import census_subject                        # noqa: E402
 
 SUBJECT = 'spanish'
-YEARS = (2021, 2022, 2023, 2024, 2025)
+YEARS = (2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('hl', 'ol')
+# The sittings carded so far, one commit each. A sitting is added here only
+# once its cards have been read against the paper and the scheme.
+CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
+    (2026, 'hl'),
+}
+# The sittings whose "direction" asks (Higher A1a Q5, A1b Q4) are carded with
+# the scheme's own direction on an unprinted row. 2021-2025 still exclude them.
+DIRECTION_CARDED = {(2026, 'hl')}
+
+# The one row text a card may carry that is not a slice of the scheme, from
+# UNPRINTED_ANSWER in types/markBank.ts (build-deck.mjs refuses any other).
+UNPRINTED = 'The scheme prints no answer for this part.'
+# "[Any mark from 0 to 6 may be awarded for this question]": the scheme prints
+# every value from 0 to 6 as a mark the examiner may give.
+ANY_MARK = re.compile(r'\bAny mark from (\d{1,2}) to (\d{1,2})\b', re.I)
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 LEVEL_TITLE = {'hl': 'Higher', 'ol': 'Ordinary'}
 
@@ -214,7 +229,8 @@ def build():
 
     for year in YEARS:
         for level in LEVELS:
-            _sitting(year, level, cards, refuse)
+            if (year, level) in CARDED:
+                _sitting(year, level, cards, refuse)
     return cards, refused, examples, excluded
 
 
@@ -231,11 +247,14 @@ def _sitting(year, level, cards, refuse):
                f'{year} {level.upper()} Listening Comprehension Test, '
                f'Question {q}: {AUDIO_EVIDENCE}')
 
+    whole_carded = set()
     for key in sorted(leaves, key=lambda k: tuple(str(x) for x in k)):
         section, q, letter, roman = key
         text, token, block = leaves[key]
         ref = ref_for(year, level, section, q, letter, roman)
         region = P.regions[token]
+        if (section, q) in whole_carded:
+            continue
 
         if section in ('B', 'C') and (
                 key in grids or (section, q, None, None) in grids
@@ -276,6 +295,29 @@ def _sitting(year, level, cards, refuse):
         language = answer_language(question, stem, instruction)
         rule = S.unit_rules.get(CARD_SECTION.get(section, 'A'))
         rows = _rows_for(ask, language, rule)
+        if rows is None and (year, level) in DIRECTION_CARDED:
+            rows = _direction_rows(ask, language, rule)
+            if rows is not None and ask.key != key:
+                # The scheme prices the QUESTION, and the paper prints its
+                # parts as a choice — "Explica … una de las frases siguientes:
+                # (a) … O (b) …". A printed choice is one card, cited at the
+                # question the scheme priced; every part it prints goes on it.
+                whole_carded.add((section, q))
+                letter = roman = None
+                ref = ref_for(year, level, section, q, None, None)
+                parts = [(k, v) for k, v in sorted(leaves.items(),
+                                                   key=lambda kv: tuple(str(x) for x in kv[0]))
+                         if k[0] == section and k[1] == q]
+                pieces = []
+                for n, (k, (t, _tok, b)) in enumerate(parts):
+                    body = (b.printed if b else t).strip()
+                    # The paper prints the "O" between the two alternatives on
+                    # the first one's baseline; it goes on a line of its own.
+                    body = re.sub(r'\s+O$', '', body)
+                    if n:
+                        pieces.append('O')
+                    pieces.append(f'({k[2]}) {body}')
+                question = '\n'.join(pieces)
         if rows is None:
             refuse('the scheme states a direction to the examiner where the '
                    'answer would be, not an answer', ref,
@@ -321,7 +363,7 @@ def _sitting(year, level, cards, refuse):
             'rows': rows,
             'notes': (
                 f'The scheme prices this ask '
-                f'{"+".join(map(str, ask.terms or []))} marks; the paper prints '
+                f'{"+".join(map(str, ask.terms or [])) or ask.total} marks; the paper prints '
                 f'it on page {block.page + 1 if block else region.pages[0]} of '
                 f'the question booklet.'),
         }
@@ -331,6 +373,48 @@ def _sitting(year, level, cards, refuse):
         if source:
             card['sourceMaterial'] = source
         cards.append(card)
+
+
+def _direction_rows(ask, language, rule):
+    """The one unprinted row for an ask whose scheme prints a direction.
+
+    Higher A1a Q5 ("Discussion on any three relevant points", 4 + 4 + 4) and
+    A1b Q4 ("Any mark from 0 to 6 may be awarded for this question") are asks
+    the scheme prices without printing an answer. Every printed ask gets a card
+    (Alex, 2026-10-28): its one row says the scheme prints no answer, its note
+    quotes what the scheme prints instead, and the marks a student may place
+    themselves on are the values the scheme prints — every value from 0 to 6
+    where it says "Any mark from 0 to 6", and 0, 4, 8, 12 where it prices
+    three points at 4 each. Never a value it does not print.
+    """
+    if ask.total is None:
+        return None
+    printed = [t for t, _m in (ask.points or [])] + list(ask.notes or [])
+    if not printed:
+        return None
+    m = next((ANY_MARK.search(t) for t in printed if ANY_MARK.search(t)), None)
+    if m:
+        lo, hi = int(m.group(1)), int(m.group(2))
+        if (lo, hi) != (0, ask.total):
+            return None
+        steps = list(range(lo, hi + 1))
+    elif ask.terms and len(ask.terms) > 1 and len(set(ask.terms)) == 1:
+        steps = [0]
+        for t in ask.terms:
+            steps.append(steps[-1] + t)
+    else:
+        return None
+    if steps[-1] != ask.total:
+        return None
+    quoted = ' and '.join(f'“{t}”' for t in printed)
+    tariff = (ask.head_notation or '').strip()
+    note = f'The scheme prints no answer for this ask. In its place it prints {quoted}'
+    if tariff:
+        note += f', under the tariff “{tariff}”'
+    note += '. ' + language_note(language, rule)
+    return [{'id': 'r-1', 'kind': 'criterion', 'verbatim': UNPRINTED,
+             'marks': ask.total, 'unprinted': True, 'permittedMarks': steps,
+             'contextNote': note}]
 
 
 def _rows_for(ask, language, rule):
@@ -344,26 +428,35 @@ def _rows_for(ask, language, rule):
     if ask.quota:
         if not ask.options:
             return None
-        if len(ask.terms) != ask.quota:
+        lead = list(ask.lead_points or [])
+        terms = ask.terms[len(lead):]
+        if len(terms) != ask.quota:
             return ('the scheme asks for a number of answers its tariff does '
                     'not price')
         options = ask.options[:MAX_OPTIONS]
         if len(options) < ask.quota:
             return 'the scheme prices more answers than it states'
-        group = {'claimMax': ask.quota, 'perOption': ask.terms[0],
+        group = {'claimMax': ask.quota, 'perOption': terms[0],
                  'options': options}
-        if len(set(ask.terms)) > 1:
+        if len(set(terms)) > 1:
             # A descending tariff — "[First correct answer=4m]" then 3 and 3 —
             # is paid step by step, and perOptionSteps is the field the
             # renderer and the tariff gate both read.
-            group['perOptionSteps'] = list(ask.terms)
+            group['perOptionSteps'] = list(terms)
         contextNote = note
         if len(ask.options) > MAX_OPTIONS:
             contextNote += (f' The scheme lists {len(ask.options) - MAX_OPTIONS} '
                             f'further accepted answer(s) beyond the ones shown.')
-        return [{'id': 'r-1', 'kind': 'anyN',
+        # A required answer the scheme prices ahead of the menu is its own
+        # claim row, never one of the menu's options.
+        lead_rows = [{'id': f'r-{i}', 'kind': 'point', 'verbatim': text,
+                      'marks': marks, **({'contextNote': note} if i == 1 else {})}
+                     for i, (text, marks) in enumerate(lead, start=1)]
+        return lead_rows + [{'id': f'r-{len(lead) + 1}', 'kind': 'anyN',
                  'verbatim': 'The answers the scheme accepts',
-                 'marks': None, 'contextNote': contextNote, 'group': group}]
+                 'marks': None,
+                 **({'contextNote': contextNote} if not lead else {}),
+                 'group': group}]
     if not ask.points:
         return None
     if any(DIRECTION_ONLY.match(text) for text, _m in ask.points):
