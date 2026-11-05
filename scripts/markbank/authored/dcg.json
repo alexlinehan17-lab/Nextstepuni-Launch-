@@ -1,5 +1,2139 @@
 [
  {
+  "id": "dcg-2018-hl-a1a",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 HL Section A Q1(a)",
+  "questionText": "Complete the axonometric projection of the bike shelter.",
+  "stem": "The 3D graphic shows a bicycle shelter. The drawing shows an incomplete dimetric projection of a similar shelter using the axonometric axes method. The horizontal plane is also included.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-a1a-r1",
+    "kind": "anyN",
+    "verbatim": "Location of four points on right hand end in axonometric view",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 4, 3, 3, 4 — 14 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Location of four points on right hand end in axonometric view",
+      "Complete right hand end … (3 lines)",
+      "Complete roof structure … (3 lines)",
+      "Determine Back, Front & Top lines on inner dividers ... (1, 2, 1)"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Completion of axonometric of bicycle shelter' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-a1b",
+  "topicId": "design-and-communication-graphics-0-2",
+  "conceptId": "dcg-0-2",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 HL Section A Q1(b)",
+  "questionText": "A line joining Y to B represents the straight line path of a football. Show the point of impact of the ball with the glass roof in the axonometric view.",
+  "stem": "The 3D graphic shows a bicycle shelter. The drawing shows an incomplete dimetric projection of a similar shelter using the axonometric axes method. The horizontal plane is also included.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secA-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-a1b-r1",
+    "kind": "anyN",
+    "verbatim": "Join YB in elevation (XY plane) or axonometric view",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 2 — 6 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Join YB in elevation (XY plane) or axonometric view",
+      "Join YB in end view (YZ plane) or axonometric view",
+      "Location of required point of impact in axonometric view"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Determination of point of impact of ball with roof in axonometric view' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-a2a",
+  "topicId": "design-and-communication-graphics-0-9",
+  "conceptId": "dcg-0-9",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 HL Section A Q2(a)",
+  "questionText": "Determine the projections of the shortest horizontal line between the two skew lines.",
+  "stem": "The graphic below shows a group of fishermen. Two fishing rods are represented by the skew lines AB and CD on the right.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(18)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-a2a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw line from A parallel to CD (or C parallel to AB) in elevation",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 3, 2, 2, 2, 2, 3 — 18 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 8,
+     "perOption": 2,
+     "options": [
+      "Draw line from A parallel to CD (or C parallel to AB) in elevation",
+      "Draw line from A parallel to CD (or C parallel to AB) in plan",
+      "Determine plan of horizontal line on either plane",
+      "X1Y1 perpendicular to horizontal line (as located)",
+      "Projections of AB and CD on X1Y1",
+      "X2Y2 perpendicular to X1Y1 line",
+      "Projections of AB and CD on X2Y2",
+      "Projection of required shortest horizontal distance to plan and elevation"
+     ],
+     "perOptionSteps": [
+      2,
+      2,
+      3,
+      2,
+      2,
+      2,
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Shortest horizontal distance between skew lines' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-a2b",
+  "topicId": "design-and-communication-graphics-0-9",
+  "conceptId": "dcg-0-9",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 HL Section A Q2(b)",
+  "questionText": "Determine, and indicate the distance from this line to the horizontal plane.",
+  "stem": "The graphic below shows a group of fishermen. Two fishing rods are represented by the skew lines AB and CD on the right.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secA-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-a2b-r1",
+    "kind": "anyN",
+    "verbatim": "Identify distance as required",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2 — 2 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Identify distance as required"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Distance between SHL and Horizontal Plane' and prices it at 2. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-a3a",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 HL Section A Q3(a)",
+  "questionText": "The curved support pillar is based on a parabola which is inscribed in a rectangle. V is the vertex of the parabola and P is a point on the curve. Draw the parabola.",
+  "stem": "The image on the right shows the Salmon Weir Bridge over the river Moy in Co. Mayo. The drawing below shows an incomplete elevation of the bridge.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(14)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-a3a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw horizontal lines dividing rectangle into a number of equal parts",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 4, 4, 3, 3 — 14 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Draw horizontal lines dividing rectangle into a number of equal parts",
+      "Draw corresponding dividing lines radiating from V",
+      "Locate points on parabolic curve",
+      "Draw parabolic curve (Any = 2)"
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Draw Parabolic Curve' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-a3b",
+  "topicId": "design-and-communication-graphics-0-5",
+  "conceptId": "dcg-0-5",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 HL Section A Q3(b)",
+  "questionText": "F is the focal point of the parabola. The point P is anchored to the bridge surface (axis) by two cable stays. The line PF is one cable. The second cable is inclined at 25° to a tangent at P. Construct the tangent at point P and draw both cables.",
+  "stem": "The image on the right shows the Salmon Weir Bridge over the river Moy in Co. Mayo. The drawing below shows an incomplete elevation of the bridge.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secA-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-a3b-r1",
+    "kind": "anyN",
+    "verbatim": "Draw support cable joining P to F",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 1, 1 — 6 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Draw support cable joining P to F",
+      "Construction to determine tangent at P",
+      "Draw required tangent at P",
+      "Draw second support cable at 25o to correct tangent as required"
+     ],
+     "perOptionSteps": [
+      2,
+      2,
+      1,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Draw Support Cables' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-a4a",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 HL Section A Q4(a)",
+  "questionText": "Find the dihedral angle between the planes OAB and OAD.",
+  "stem": "The graphic shows a spidercam used for aerial coverage of sports events. It is supported by four cables. The drawing shows the projections of the cables.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(17)"
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-a4a-r1",
+    "kind": "anyN",
+    "verbatim": "X1Y1 parallel to OA",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 3, 4, 4, 4, 2 — 17 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 3,
+     "options": [
+      "X1Y1 parallel to OA",
+      "Projections of planes OAB and OAD on X1Y1",
+      "X2Y2 perpendicular to OA (in auxiliary view)",
+      "Projections of planes OAB and OAD (edge views) on X2Y2",
+      "Indicate required dihedral angle"
+     ],
+     "perOptionSteps": [
+      3,
+      4,
+      4,
+      4,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Dihedral angle between planes OAB and OAD' and prices it at 17. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-a4b",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "A",
+  "questionRef": "2018 HL Section A Q4(b)",
+  "questionText": "Determine the angle between the cables OA and OB.",
+  "stem": "The graphic shows a spidercam used for aerial coverage of sports events. It is supported by four cables. The drawing shows the projections of the cables.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secA-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-a4b-r1",
+    "kind": "anyN",
+    "verbatim": "Required construction to determine True Shape of triangle BOA",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 1 — 3 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Required construction to determine True Shape of triangle BOA",
+      "Identification of required true angle between cables OA and OB"
+     ],
+     "perOptionSteps": [
+      2,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Angle between lines OA and OB' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-b1a-1",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 HL Section B Q1(a) — Required Plan",
+  "questionText": "Draw the given plan and make a perspective drawing of the structure, given the following: The spectator point, S, is 20m from the corner A as shown The picture plane passes through the corner A The horizon line is 10m above the ground line The sloping lines on surface B are inclined at an angle of 20° to the horizontal plane. Use auxiliary vanishing points to determine the sloping lines on surface B in the perspective drawing.",
+  "stem": "The image on the right shows the new Poolbeg Incinerator in Dublin. Fig. B-1 shows the plan and elevation of a similar structure. A pictorial view of the structure is also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(15)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-b1a-1-r1",
+    "kind": "anyN",
+    "verbatim": "Draw outer portion of plan as given",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 6, 3, 6 — 15 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Draw outer portion of plan as given",
+      "Draw inner portion of plan as given",
+      "Plan of required Spectator Point, Picture Plane and Vanishing Points ….(2,2,2)"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Required Plan' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-b1a-2",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 HL Section B Q1(a) — Perspective Drawing of Structure",
+  "questionText": "Draw the given plan and make a perspective drawing of the structure, given the following: The spectator point, S, is 20m from the corner A as shown The picture plane passes through the corner A The horizon line is 10m above the ground line The sloping lines on surface B are inclined at an angle of 20° to the horizontal plane. Use auxiliary vanishing points to determine the sloping lines on surface B in the perspective drawing.",
+  "stem": "The image on the right shows the new Poolbeg Incinerator in Dublin. Fig. B-1 shows the plan and elevation of a similar structure. A pictorial view of the structure is also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(27)"
+  },
+  "totalMarks": 27,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-b1a-2-r1",
+    "kind": "anyN",
+    "verbatim": "Draw Ground Line and Horizon Line",
+    "marks": 27,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 2, 2, 3, 7, 4, 4, 1 — 27 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 9,
+     "perOption": 2,
+     "options": [
+      "Draw Ground Line and Horizon Line",
+      "Establish VP1 and VP2 in Perspective Drawing",
+      "Draw perspective of vertical edge at A",
+      "Draw rectangular ‘Front Face’ in Perspective Drawing",
+      "Draw base edge and locate vertical edge of end in Perspective Drawing",
+      "Use of AVP to complete sloping top of surface B",
+      "Complete perspective of upper rectangular face",
+      "Complete perspective of upper end face",
+      "Complete Perspective Drawing of structure …..(removal of inner detail)"
+     ],
+     "perOptionSteps": [
+      2,
+      2,
+      2,
+      2,
+      3,
+      7,
+      4,
+      4,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Perspective Drawing of Structure' and prices it at 27. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-b1b",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 HL Section B Q1(b)",
+  "questionText": "A vertical chimney is located at position C. It has a height of 20m. Draw the chimney in the perspective view.",
+  "stem": "The image on the right shows the new Poolbeg Incinerator in Dublin. Fig. B-1 shows the plan and elevation of a similar structure. A pictorial view of the structure is also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-b1b-r1",
+    "kind": "anyN",
+    "verbatim": "Project and use height to establish perspective of Chimney Stack",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2 — 2 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Project and use height to establish perspective of Chimney Stack"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Perspective of Chimney Stack' and prices it at 2. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-b1c",
+  "topicId": "design-and-communication-graphics-0-3",
+  "conceptId": "dcg-0-3",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 HL Section B Q1(c)",
+  "questionText": "Determine the angle of elevation when viewing the top of the chimney from point S.",
+  "stem": "The image on the right shows the new Poolbeg Incinerator in Dublin. Fig. B-1 shows the plan and elevation of a similar structure. A pictorial view of the structure is also shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secB-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(1)"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-b1c-r1",
+    "kind": "anyN",
+    "verbatim": "Determine the required angle of elevation",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 1 — 1 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Determine the required angle of elevation"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Angle of Elevation' and prices it at 1. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-b2a",
+  "topicId": "design-and-communication-graphics-0-7",
+  "conceptId": "dcg-0-7",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 HL Section B Q2(a)",
+  "questionText": "Draw the given development of the surfaces labelled 1, 2, 3, 4 and 5. Note: Position this view carefully to ensure that the entire answer fits on one drawing sheet.",
+  "stem": "The image shows a cardboard carry-box for a child’s novelty toy. A complete surface development of a similar box (without ‘glueing tabs’) is given in Fig. B-2 below. When the box is assembled, point C coincides with point C1 and point A coincides with point A1. AB is a straight line.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(5)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-b2a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw five required surfaces attached as shown in ‘Development View’",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 5 — 5 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Draw five required surfaces attached as shown in ‘Development View’"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Development of surfaces 1, 2, 3, 4 and 5' and prices it at 5. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-b2b",
+  "topicId": "design-and-communication-graphics-0-7",
+  "conceptId": "dcg-0-7",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 HL Section B Q2(b)",
+  "questionText": "On a separate diagram draw the orthographic projections, as follows, of those five surfaces, when the box has been assembled: An elevation in the direction of arrow X. An end view in the direction of arrow Y. A plan projected from the elevation.",
+  "stem": "The image shows a cardboard carry-box for a child’s novelty toy. A complete surface development of a similar box (without ‘glueing tabs’) is given in Fig. B-2 below. When the box is assembled, point C coincides with point C1 and point A coincides with point A1. AB is a straight line.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-b2b-r1",
+    "kind": "anyN",
+    "verbatim": "Elevation of required ‘cuboid’ in ‘orthographic view’",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 3, 3 — 8 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Elevation of required ‘cuboid’ in ‘orthographic view’",
+      "End View of required ‘cuboid’ (in correct relative position)",
+      "Plan of required ‘cuboid’ (in correct relative position)"
+     ],
+     "perOptionSteps": [
+      2,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Orthographic of Surfaces 1-5' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-b2c",
+  "topicId": "design-and-communication-graphics-0-7",
+  "conceptId": "dcg-0-7",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 HL Section B Q2(c)",
+  "questionText": "Draw surfaces 6, 7, 8 and 9 in your development and also in the elevation, end view and plan.",
+  "stem": "The image shows a cardboard carry-box for a child’s novelty toy. A complete surface development of a similar box (without ‘glueing tabs’) is given in Fig. B-2 below. When the box is assembled, point C coincides with point C1 and point A coincides with point A1. AB is a straight line.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(23)"
+  },
+  "totalMarks": 23,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-b2c-r1",
+    "kind": "anyN",
+    "verbatim": "Draw surfaces 6 and 7 in development view",
+    "marks": 23,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 4, 2, 4, 2, 3, 2, 3, 3 — 23 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 8,
+     "perOption": 4,
+     "options": [
+      "Draw surfaces 6 and 7 in development view",
+      "Draw surfaces 8 and 9 in development view",
+      "Locate edge through ‘e’ in end view, elevation and plan ….. (2,1,1)",
+      "Use of length ‘L’ to locate point ‘h’ (and mirror image) in elevation",
+      "Draw straight line sloping edges on surfaces 6 and 7 in end view and plan",
+      "Locate point ‘h’ in end view and plan",
+      "Determine intermediate point on curves in end view and plan",
+      "Draw curves in end view and plan .... (any = 2)"
+     ],
+     "perOptionSteps": [
+      4,
+      2,
+      4,
+      2,
+      3,
+      2,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Surfaces 6, 7, 8 and 9 in Development and Orthographic views' and prices it at 23. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-b2d",
+  "topicId": "design-and-communication-graphics-0-7",
+  "conceptId": "dcg-0-7",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 HL Section B Q2(d)",
+  "questionText": "Draw the remaining vertical ‘handle’ surfaces (10 and 11) in the elevation, end view and plan and hence complete your surface development. Note: Both surfaces (10 and 11) meet to form the vertical carry-handle.",
+  "stem": "The image shows a cardboard carry-box for a child’s novelty toy. A complete surface development of a similar box (without ‘glueing tabs’) is given in Fig. B-2 below. When the box is assembled, point C coincides with point C1 and point A coincides with point A1. AB is a straight line.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secB-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-b2d-r1",
+    "kind": "anyN",
+    "verbatim": "Draw top curve in elevation",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 1, 3, 3, 1, 1 — 9 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 1,
+     "options": [
+      "Draw top curve in elevation",
+      "Complete outline of surfaces 10 and 11 in development view",
+      "Draw ‘handle opening’ in elevation and in development view …(1,2)",
+      "Complete orthographic projection (incl. hidden detail)",
+      "Complete development view (incl. fold lines)"
+     ],
+     "perOptionSteps": [
+      1,
+      3,
+      3,
+      1,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Drawing ‘handle surfaces’ in elevation, end view and plan' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-b3a",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 HL Section B Q3(a)",
+  "questionText": "Draw the given elevation and plan of the intersecting planes ABC and ABDE.",
+  "stem": "The image on the right shows a piece of roadside sculpture, in the form of a steel hedgehog, which is located on the M11 in Co. Wexford. It comprises a series of planar surfaces, each carefully angled to allow for the run-off of rainwater. Fig. B-3 shows the plan and elevation of four such intersecting surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and G, defining the four planes, are also given. A: 145 --- 60 --- 45 B: 210 --- 35 --- 80 C: 155 --- 100 --- 75 D: 135 --- 10 --- 105 E: 100 --- 45 --- 60 G: 175 --- 125 --- 10",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-b3a-r1",
+    "kind": "anyN",
+    "verbatim": "Use given coordinates to draw projections of ABC",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 6, 4 — 10 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Use given coordinates to draw projections of ABC",
+      "Use given coordinates to draw projections of ABDE"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and Elevation of planes ABC and ABDE' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-b3b",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 HL Section B Q3(b)",
+  "questionText": "Determine the dihedral angle between the planes ABC and ABDE.",
+  "stem": "The image on the right shows a piece of roadside sculpture, in the form of a steel hedgehog, which is located on the M11 in Co. Wexford. It comprises a series of planar surfaces, each carefully angled to allow for the run-off of rainwater. Fig. B-3 shows the plan and elevation of four such intersecting surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and G, defining the four planes, are also given. A: 145 --- 60 --- 45 B: 210 --- 35 --- 80 C: 155 --- 100 --- 75 D: 135 --- 10 --- 105 E: 100 --- 45 --- 60 G: 175 --- 125 --- 10",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-b3b-r1",
+    "kind": "anyN",
+    "verbatim": "X1Y1 parallel to line of intersection AB",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 3, 3, 5, 5 — 16 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "X1Y1 parallel to line of intersection AB",
+      "Projection of planes and line of intersection on new X1Y1",
+      "New X2Y2 perpendicular to line of intersection AB",
+      "Projection of ABC and ABDE as lines and indicating dihedral angle"
+     ],
+     "perOptionSteps": [
+      3,
+      3,
+      5,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Dihedral Angle' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-b3c",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 HL Section B Q3(c)",
+  "questionText": "Draw the elevation and plan of point G and determine the distance between points G and B. The opposite edges AE and GF of the surface AEFG are parallel. Complete the elevation and plan of the surfaces AEFG and ACG.",
+  "stem": "The image on the right shows a piece of roadside sculpture, in the form of a steel hedgehog, which is located on the M11 in Co. Wexford. It comprises a series of planar surfaces, each carefully angled to allow for the run-off of rainwater. Fig. B-3 shows the plan and elevation of four such intersecting surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and G, defining the four planes, are also given. A: 145 --- 60 --- 45 B: 210 --- 35 --- 80 C: 155 --- 100 --- 75 D: 135 --- 10 --- 105 E: 100 --- 45 --- 60 G: 175 --- 125 --- 10",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(13)"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-b3c-r1",
+    "kind": "anyN",
+    "verbatim": "Locate point G in elevation and plan",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 4, 3, 4 — 13 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Locate point G in elevation and plan",
+      "Construction to determine true length between G and B",
+      "Draw projections of surface ACG (incl. hidden detail)",
+      "Use ‘parallel information’ to draw projections of surface AEFG"
+     ],
+     "perOptionSteps": [
+      2,
+      4,
+      3,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Projections of AEFG and ACG' and prices it at 13. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-b3d",
+  "topicId": "design-and-communication-graphics-0-11",
+  "conceptId": "dcg-0-11",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "B",
+  "questionRef": "2018 HL Section B Q3(d)",
+  "questionText": "Determine the projections of a horizontal line drawn from C which will touch the plane AEFG at a point which is 55mm from C. Hence determine and indicate, in degrees, the true angle between this horizontal line and the vertical plane.",
+  "stem": "The image on the right shows a piece of roadside sculpture, in the form of a steel hedgehog, which is located on the M11 in Co. Wexford. It comprises a series of planar surfaces, each carefully angled to allow for the run-off of rainwater. Fig. B-3 shows the plan and elevation of four such intersecting surfaces. The horizontal and vertical coordinates for points A, B, C, D, E and G, defining the four planes, are also given. A: 145 --- 60 --- 45 B: 210 --- 35 --- 80 C: 155 --- 100 --- 75 D: 135 --- 10 --- 105 E: 100 --- 45 --- 60 G: 175 --- 125 --- 10",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secB-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-b3d-r1",
+    "kind": "anyN",
+    "verbatim": "Draw (and use) horizontal section through C in elevation",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 1, 1, 1, 1 — 6 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "Draw (and use) horizontal section through C in elevation",
+      "Draw plan of horizontal section (identified at (xi)) on AEFG",
+      "Drawing 55mm arc with centre C, to locate ‘h’ in plan",
+      "Draw line ‘Ch’ in plan and elevation",
+      "Drawing and indicating required angle"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      1,
+      1,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Projections of 55mm Horizontal line from C and angle with VP' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c1a-1",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q1(a) — Earthworks between A and B (Level) - Embankment",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals. AD is the centreline of a proposed motorway. The motorway is widened between B and C to form a toll plaza as shown. The motorway has the following specifications: the portion from A to B is level at an altitude of 65m the portion from B to C is level at an altitude of 65m and is widened as shown the portion from C to D is rising uniformly at a rate of 1 in 15. Using side slopes of 1 in 1.5 for the cuttings and 1 in 2 for the embankments, complete the earthworks necessary to accommodate the motorway between A and D on the northern side. (You may ignore the southern side.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(7)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c1a-1-r1",
+    "kind": "anyN",
+    "verbatim": "Draw parallel lines at 10mm intervals",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 3, 4 — 7 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Draw parallel lines at 10mm intervals",
+      "Identify intersections with contours and draw curve …..(4×1)"
+     ],
+     "perOptionSteps": [
+      3,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Earthworks between A and B (Level) - Embankment' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c1a-2",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q1(a) — Earthworks between B and C (Level, Vertical Edge) - Cutting",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals. AD is the centreline of a proposed motorway. The motorway is widened between B and C to form a toll plaza as shown. The motorway has the following specifications: the portion from A to B is level at an altitude of 65m the portion from B to C is level at an altitude of 65m and is widened as shown the portion from C to D is rising uniformly at a rate of 1 in 15. Using side slopes of 1 in 1.5 for the cuttings and 1 in 2 for the embankments, complete the earthworks necessary to accommodate the motorway between A and D on the northern side. (You may ignore the southern side.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c1a-2-r1",
+    "kind": "anyN",
+    "verbatim": "Draw parallel lines at 7.5mm intervals",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Draw parallel lines at 7.5mm intervals",
+      "Identify intersections with contours and draw curve"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Earthworks between B and C (Level, Vertical Edge) - Cutting' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c1a-3",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q1(a) — Earthworks between B and C (Level, Horizontal Edge) - Cutting",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals. AD is the centreline of a proposed motorway. The motorway is widened between B and C to form a toll plaza as shown. The motorway has the following specifications: the portion from A to B is level at an altitude of 65m the portion from B to C is level at an altitude of 65m and is widened as shown the portion from C to D is rising uniformly at a rate of 1 in 15. Using side slopes of 1 in 1.5 for the cuttings and 1 in 2 for the embankments, complete the earthworks necessary to accommodate the motorway between A and D on the northern side. (You may ignore the southern side.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c1a-3-r1",
+    "kind": "anyN",
+    "verbatim": "Draw parallel lines at 7.5mm intervals",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Draw parallel lines at 7.5mm intervals",
+      "Draw curve"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Earthworks between B and C (Level, Horizontal Edge) - Cutting' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c1a-4",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q1(a) — Earthworks between B and C (Level, Sloping Edge) - Cutting",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals. AD is the centreline of a proposed motorway. The motorway is widened between B and C to form a toll plaza as shown. The motorway has the following specifications: the portion from A to B is level at an altitude of 65m the portion from B to C is level at an altitude of 65m and is widened as shown the portion from C to D is rising uniformly at a rate of 1 in 15. Using side slopes of 1 in 1.5 for the cuttings and 1 in 2 for the embankments, complete the earthworks necessary to accommodate the motorway between A and D on the northern side. (You may ignore the southern side.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c1a-4-r1",
+    "kind": "anyN",
+    "verbatim": "Draw parallel lines at 7.5mm intervals",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Draw parallel lines at 7.5mm intervals",
+      "Draw curve"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Earthworks between B and C (Level, Sloping Edge) - Cutting' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c1a-5",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q1(a) — Earthworks between C and D - Cutting",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals. AD is the centreline of a proposed motorway. The motorway is widened between B and C to form a toll plaza as shown. The motorway has the following specifications: the portion from A to B is level at an altitude of 65m the portion from B to C is level at an altitude of 65m and is widened as shown the portion from C to D is rising uniformly at a rate of 1 in 15. Using side slopes of 1 in 1.5 for the cuttings and 1 in 2 for the embankments, complete the earthworks necessary to accommodate the motorway between A and D on the northern side. (You may ignore the southern side.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c1a-5-r1",
+    "kind": "anyN",
+    "verbatim": "Draw required 7.5mm arc at C and draw tangent",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 2 — 6 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Draw required 7.5mm arc at C and draw tangent",
+      "Draw parallel lines at 7.5mm intervals",
+      "Identify endpoints and draw curve"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Earthworks between C and D - Cutting' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c1a-6",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q1(a) — Earthworks between C and D - Embankment",
+  "questionText": "The accompanying map, located on the back page of Section A, shows ground contours at five metre vertical intervals. AD is the centreline of a proposed motorway. The motorway is widened between B and C to form a toll plaza as shown. The motorway has the following specifications: the portion from A to B is level at an altitude of 65m the portion from B to C is level at an altitude of 65m and is widened as shown the portion from C to D is rising uniformly at a rate of 1 in 15. Using side slopes of 1 in 1.5 for the cuttings and 1 in 2 for the embankments, complete the earthworks necessary to accommodate the motorway between A and D on the northern side. (You may ignore the southern side.)",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c1a-6-r1",
+    "kind": "anyN",
+    "verbatim": "Draw required 10mm arc at correct position between C & D and draw tangent",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 2 — 6 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Draw required 10mm arc at correct position between C & D and draw tangent",
+      "Draw parallel lines at 10mm intervals",
+      "Identify intersections with contours and draw curve"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Earthworks between C and D - Embankment' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c1b",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q1(b)",
+  "questionText": "On the map, P, Q and R are three points on the surface of the earth. Vertical boreholes at these three points reveal a triangle on the top surface of a stratum of ore at altitudes of 45m, 60m and 35m respectively. (i) In the space provided at the top of the map, draw the elevation of the triangular portion of the top surface of the stratum. (ii) Draw the plan of the triangle and determine the strike and dip of the stratum. (iii) Determine, and indicate in metres, the length of the shortest skew borehole from R to the top surface of the stratum.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(13)"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c1b-r1",
+    "kind": "anyN",
+    "verbatim": "Establish points on top surface in elevation and draw required triangle",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 5, 3, 3, 2 — 13 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Establish points on top surface in elevation and draw required triangle",
+      "Draw required triangle in plan and establish Strike Line, S",
+      "Establish required Dip",
+      "Determine and indicate length of required shortest borehole from R"
+     ],
+     "perOptionSteps": [
+      5,
+      3,
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Strike and Dip of stratum and Borehole from R' and prices it at 13. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c1c",
+  "topicId": "design-and-communication-graphics-2-2",
+  "conceptId": "dcg-2-2",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q1(c)",
+  "questionText": "Determine, in plan, the line of intersection between the top surface of the stratum and the surface of the widened portion of the toll plaza.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q1-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(1)"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c1c-r1",
+    "kind": "anyN",
+    "verbatim": "Draw required line of intersection (incl. req. construction)",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 1 — 1 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Draw required line of intersection (incl. req. construction)"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Line of intersection between stratum and widened toll plaza' and prices it at 1. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c2a",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q2(a)",
+  "questionText": "Draw the given plan and elevation of the hyperbolic paraboloid ABCD, using the number of elements shown and include the projections of the walkway.",
+  "stem": "The graphic shows a footbridge near Liverpool which is based on a hyperbolic paraboloid. The projections of the bridge are given in Fig. C-2 below. The elements of the hyperbolic paraboloid surface ABCD are extended outwards to form the curved outline loop of the supporting steel structure.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(13)"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c2a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw ABCD in plan and elevation",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 6, 4, 3 — 13 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Draw ABCD in plan and elevation",
+      "Draw straight line elements in plan and elevation (incl. correct divisions)",
+      "Draw roadway edges in plan and elevation"
+     ],
+     "perOptionSteps": [
+      6,
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and elevation of hyperbolic paraboloid ABCD and walkway' and prices it at 13. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c2b",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q2(b)",
+  "questionText": "Curve ABC is a parabola in elevation with vertex at B. Draw the elevation of this parabola.",
+  "stem": "The graphic shows a footbridge near Liverpool which is based on a hyperbolic paraboloid. The projections of the bridge are given in Fig. C-2 below. The elements of the hyperbolic paraboloid surface ABCD are extended outwards to form the curved outline loop of the supporting steel structure.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(9)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c2b-r1",
+    "kind": "anyN",
+    "verbatim": "Establish required rectangular outline for curve ABC",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 4, 3 — 9 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Establish required rectangular outline for curve ABC",
+      "Construction to locate points on required parabola",
+      "Draw parabolic curve …… (Any = 1)"
+     ],
+     "perOptionSteps": [
+      2,
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Elevation of Parabola' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c2c",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q2(c)",
+  "questionText": "Project, from the elevation, the given plan of the curved outline loop and project an end view. Draw the walkway in the end view.",
+  "stem": "The graphic shows a footbridge near Liverpool which is based on a hyperbolic paraboloid. The projections of the bridge are given in Fig. C-2 below. The elements of the hyperbolic paraboloid surface ABCD are extended outwards to form the curved outline loop of the supporting steel structure.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c2c-r1",
+    "kind": "anyN",
+    "verbatim": "Extend elements to parabola in elevation",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 4, 3, 3, 3, 1 — 16 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 2,
+     "options": [
+      "Extend elements to parabola in elevation",
+      "Determine points on curve in plan",
+      "Draw outline loop in plan ……(Any = 1)",
+      "Determine points on curve (outline loop) in end view",
+      "Draw curve in end view ……(Any = 1)",
+      "Draw walkway in end view"
+     ],
+     "perOptionSteps": [
+      2,
+      4,
+      3,
+      3,
+      3,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Plan and End View of outline loop' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c2d",
+  "topicId": "design-and-communication-graphics-2-1",
+  "conceptId": "dcg-2-1",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q2(d)",
+  "questionText": "The line CE is a normal to the parabola at point C in elevation. Determine the focal point and the directrix of this parabola in elevation.",
+  "stem": "The graphic shows a footbridge near Liverpool which is based on a hyperbolic paraboloid. The projections of the bridge are given in Fig. C-2 below. The elements of the hyperbolic paraboloid surface ABCD are extended outwards to form the curved outline loop of the supporting steel structure.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q2-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(7)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c2d-r1",
+    "kind": "anyN",
+    "verbatim": "Draw ‘normal’ CE in elevation",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 3, 2 — 7 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Draw ‘normal’ CE in elevation",
+      "Construction to determine required focal point",
+      "Construction to determine required directrix"
+     ],
+     "perOptionSteps": [
+      2,
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Determine focal point and directrix of parabola' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c3a",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q3(a)",
+  "questionText": "Draw the plan and elevation of this terrarium and determine the dihedral angle between surfaces A and B.",
+  "stem": "A terrarium is a glass container for soil and plants as shown. Fig. C-3 shows the plan and elevation of two geometric terrariums. The terrarium on the left is based on a square-based pyramid and is shaped as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(24)"
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c3a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw plan as given",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 4, 6, 3, 3, 4, 4 — 24 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 4,
+     "options": [
+      "Draw plan as given",
+      "Draw elevation as given",
+      "X1Y1 parallel to line of intersection",
+      "Projection of planes and line of intersection on new X1Y1",
+      "New X2Y2 perpendicular to line of intersection",
+      "Projection of surfaces A and B as lines and indicating dihedral angle"
+     ],
+     "perOptionSteps": [
+      4,
+      6,
+      3,
+      3,
+      4,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Projections of left hand terrarium and dihedral angle between A and B' and prices it at 24. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c3b",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q3(b)",
+  "questionText": "Develop the surface C.",
+  "stem": "A terrarium is a glass container for soil and plants as shown. Fig. C-3 shows the plan and elevation of two geometric terrariums. The terrarium on the left is based on a square-based pyramid and is shaped as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c3b-r1",
+    "kind": "anyN",
+    "verbatim": "Construction to determine true shape",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 1, 2 — 3 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Construction to determine true shape",
+      "Draw required development"
+     ],
+     "perOptionSteps": [
+      1,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Development of Surface C' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c3c",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q3(c)",
+  "questionText": "The terrarium on the right is a cube which is tilted and shaped as shown. The outline plan is a regular hexagon of 150mm side. Draw the given plan of this terrarium and project the elevation.",
+  "stem": "A terrarium is a glass container for soil and plants as shown. Fig. C-3 shows the plan and elevation of two geometric terrariums. The terrarium on the left is based on a square-based pyramid and is shaped as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(15)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c3c-r1",
+    "kind": "anyN",
+    "verbatim": "Draw outer hexagon and diagonals in plan",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 4, 3, 4, 4 — 15 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Draw outer hexagon and diagonals in plan",
+      "Draw equilateral triangular base to complete plan",
+      "Use of semi-circle to determine orientation of cube in elevation",
+      "Complete elevation of terrarium"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      4,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Projections of right hand terrarium' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c3d",
+  "topicId": "design-and-communication-graphics-2-3",
+  "conceptId": "dcg-2-3",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q3(d)",
+  "questionText": "Determine the true inclination of the surface D to the horizontal plane. Hence, or otherwise, determine the true shape of surface D.",
+  "stem": "A terrarium is a glass container for soil and plants as shown. Fig. C-3 shows the plan and elevation of two geometric terrariums. The terrarium on the left is based on a square-based pyramid and is shaped as shown.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q3-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c3d-r1",
+    "kind": "anyN",
+    "verbatim": "X1Y1 inclined at 60o as shown",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 1, 1, 1 — 3 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 1,
+     "options": [
+      "X1Y1 inclined at 60o as shown",
+      "Edge view of surface D to determine inclination to HP",
+      "Construction to determine true shape of surface D"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Inclination and True Shape of surface D' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c4a",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q4(a)",
+  "questionText": "The graphic on the right shows a Fluid Agitator, as used when donating bodily fluids. Movement is generated by a link mechanism, which causes the tray to rock to-and-fro preventing coagulation of the fluid. The link mechanism is similar to the one shown in Fig. C-4 (a). Crank OA, which is 48mm long, rotates in an anti-clockwise direction about point O as shown. Link CB pivots about the fixed point C. AB and CB are both 110mm long and are pin-jointed at A and B. (i) Plot the locus of point P, which is the midpoint of link AB, for a full revolution of crank OA. (ii) Determine and indicate, in degrees, the maximum angle of rotation of link CB.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(24)"
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c4a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw lines OA, CB and AB (incl. point P) as required",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 5, 3, 2, 6, 3, 3, 2 — 24 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 7,
+     "perOption": 5,
+     "options": [
+      "Draw lines OA, CB and AB (incl. point P) as required",
+      "Division of circle (centre O) into equal parts (min. 12)",
+      "Draw circular arc about C (locus of B)",
+      "Determine link AB in all positions",
+      "Locate midpoint of AB in all positions",
+      "Draw required locus …(any = 1)",
+      "Construction to determine maximum rotation angle of link CB"
+     ],
+     "perOptionSteps": [
+      5,
+      3,
+      2,
+      6,
+      3,
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Locus of P' and prices it at 24. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c4b",
+  "topicId": "design-and-communication-graphics-2-0",
+  "conceptId": "dcg-2-0",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q4(b)",
+  "questionText": "The image of the ocean on the right shows an aerial view of a group of Humpback Whales engaged in a technique called ‘Bubble Net Fishing’. The whales start underneath the fish and entrap them by blowing a ‘net’ of bubbles, which move upwards in a Conical Archimedean Spiral, as shown in the 3D graphic. Fig C-4(b) on the left shows the projections of an inverted cone. An Archimedean Spiral moves clockwise from O to A in 1.5 revolutions, as shown in plan. (i) Draw the given plan of the spiral. (ii) Two portions of this Archimedean Spiral (helix) are shown in the elevation. Draw the complete elevation. (iii) Develop a portion of the surface of the inverted cone to determine the true shape of the curve between points A and B.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q4-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(21)"
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c4b-r1",
+    "kind": "anyN",
+    "verbatim": "Draw circular plan of inverted cone",
+    "marks": 21,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 3, 3, 2, 3, 3, 1, 2 — 21 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 9,
+     "perOption": 2,
+     "options": [
+      "Draw circular plan of inverted cone",
+      "Division into 12 equal parts",
+      "Division of radius into corresponding parts",
+      "Locate points and draw spiral",
+      "Draw elevation of inverted cone",
+      "Division into corresponding number of equal parts",
+      "Locate points and draw helix",
+      "Development of quarter of cone between A and B",
+      "Draw true shape of curve between A and B"
+     ],
+     "perOptionSteps": [
+      2,
+      2,
+      3,
+      3,
+      2,
+      3,
+      3,
+      1,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Archimedean Spiral/helix' and prices it at 21. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c5a-1",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q5(a) — Assembly",
+  "questionText": "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Swivel Arm raised at 15° to the horizontal plane, the Sliding Arm fully inserted and the top of the Upper Camera Mount horizontal. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required.",
+  "stem": "Details of a Security Camera Bracket, for mounting the two cameras shown, are given in Fig. C-5 below. The parts list for the bracket is also given together with a 3D view of its constituent parts.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c5a-1-r1",
+    "kind": "anyN",
+    "verbatim": "Relative positioning of components",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 6 — 6 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Relative positioning of components"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Assembly' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c5a-2",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q5(a) — Main Bracket",
+  "questionText": "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Swivel Arm raised at 15° to the horizontal plane, the Sliding Arm fully inserted and the top of the Upper Camera Mount horizontal. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required.",
+  "stem": "Details of a Security Camera Bracket, for mounting the two cameras shown, are given in Fig. C-5 below. The parts list for the bracket is also given together with a 3D view of its constituent parts.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c5a-2-r1",
+    "kind": "anyN",
+    "verbatim": "Outline of bracket",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 3, 4, 3 — 10 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Outline of bracket",
+      "Cylindrical details on top and bottom",
+      "Inner detail (fillets, shell and holes)"
+     ],
+     "perOptionSteps": [
+      3,
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Main Bracket' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c5a-3",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q5(a) — Glass Globe",
+  "questionText": "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Swivel Arm raised at 15° to the horizontal plane, the Sliding Arm fully inserted and the top of the Upper Camera Mount horizontal. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required.",
+  "stem": "Details of a Security Camera Bracket, for mounting the two cameras shown, are given in Fig. C-5 below. The parts list for the bracket is also given together with a 3D view of its constituent parts.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c5a-3-r1",
+    "kind": "anyN",
+    "verbatim": "Outline of globe",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 1 — 3 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Outline of globe",
+      "Inner detail"
+     ],
+     "perOptionSteps": [
+      2,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Glass Globe' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c5a-4",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q5(a) — Globe Retaining Ring",
+  "questionText": "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Swivel Arm raised at 15° to the horizontal plane, the Sliding Arm fully inserted and the top of the Upper Camera Mount horizontal. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required.",
+  "stem": "Details of a Security Camera Bracket, for mounting the two cameras shown, are given in Fig. C-5 below. The parts list for the bracket is also given together with a 3D view of its constituent parts.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c5a-4-r1",
+    "kind": "anyN",
+    "verbatim": "Retaining Ring",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2 — 2 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Retaining Ring"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Globe Retaining Ring' and prices it at 2. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c5a-5",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q5(a) — Top Swivel Mount",
+  "questionText": "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Swivel Arm raised at 15° to the horizontal plane, the Sliding Arm fully inserted and the top of the Upper Camera Mount horizontal. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required.",
+  "stem": "Details of a Security Camera Bracket, for mounting the two cameras shown, are given in Fig. C-5 below. The parts list for the bracket is also given together with a 3D view of its constituent parts.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(5)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c5a-5-r1",
+    "kind": "anyN",
+    "verbatim": "Cylindrical portion",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2, 1 — 5 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Cylindrical portion",
+      "Rectangular portion (flanges)",
+      "Cylindrical hole for pin"
+     ],
+     "perOptionSteps": [
+      2,
+      2,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Top Swivel Mount' and prices it at 5. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c5a-6",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q5(a) — Swivel Arm",
+  "questionText": "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Swivel Arm raised at 15° to the horizontal plane, the Sliding Arm fully inserted and the top of the Upper Camera Mount horizontal. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required.",
+  "stem": "Details of a Security Camera Bracket, for mounting the two cameras shown, are given in Fig. C-5 below. The parts list for the bracket is also given together with a 3D view of its constituent parts.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(5)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c5a-6-r1",
+    "kind": "anyN",
+    "verbatim": "Outline of Swivel Arm",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 3, 2 — 5 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Outline of Swivel Arm",
+      "Inner detail"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Swivel Arm' and prices it at 5. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c5a-7",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q5(a) — Sliding Arm",
+  "questionText": "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Swivel Arm raised at 15° to the horizontal plane, the Sliding Arm fully inserted and the top of the Upper Camera Mount horizontal. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required.",
+  "stem": "Details of a Security Camera Bracket, for mounting the two cameras shown, are given in Fig. C-5 below. The parts list for the bracket is also given together with a 3D view of its constituent parts.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c5a-7-r1",
+    "kind": "anyN",
+    "verbatim": "Square portion",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 1, 2 — 3 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Square portion",
+      "Upper cylindrical portion and connecting ‘bar’"
+     ],
+     "perOptionSteps": [
+      1,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Sliding Arm' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c5a-8",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q5(a) — Upper Camera Mount",
+  "questionText": "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Swivel Arm raised at 15° to the horizontal plane, the Sliding Arm fully inserted and the top of the Upper Camera Mount horizontal. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required.",
+  "stem": "Details of a Security Camera Bracket, for mounting the two cameras shown, are given in Fig. C-5 below. The parts list for the bracket is also given together with a 3D view of its constituent parts.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c5a-8-r1",
+    "kind": "anyN",
+    "verbatim": "Upper rectangle in horizontal position",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 2, 2 — 4 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Upper rectangle in horizontal position",
+      "Tangents and holes"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Upper Camera Mount' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c5a-9",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q5(a) — Drawing Completion",
+  "questionText": "Draw a full-size sectional elevation on A-A, showing the parts fully assembled, with the Swivel Arm raised at 15° to the horizontal plane, the Sliding Arm fully inserted and the top of the Upper Camera Mount horizontal. (Unless otherwise stated, fillets are 6mm and chamfers 1×1mm. Some dimensions have been removed for clarity and any omitted dimensions may be estimated.) Note: All assembly fits are loose, push or friction fit as required.",
+  "stem": "Details of a Security Camera Bracket, for mounting the two cameras shown, are given in Fig. C-5 below. The parts list for the bracket is also given together with a 3D view of its constituent parts.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c5a-9-r1",
+    "kind": "anyN",
+    "verbatim": "Presentation, hatching and centrelines",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 4 — 4 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Presentation, hatching and centrelines"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Drawing Completion' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
+  "id": "dcg-2018-hl-c5b",
+  "topicId": "design-and-communication-graphics-2-4",
+  "conceptId": "dcg-2-4",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "dcg",
+  "section": "C",
+  "questionRef": "2018 HL Section C Q5(b)",
+  "questionText": "On your drawing insert a dimension to show the vertical distance between the top of part 7 and the bottom of part 2. (Arrowheads, extension lines, text, etc. should be neatly included and appropriate spacing should be used, in keeping with drawing convention.)",
+  "stem": "Details of a Security Camera Bracket, for mounting the two cameras shown, are given in Fig. C-5 below. The parts list for the bracket is also given together with a 3D view of its constituent parts.",
+  "figureKey": "",
+  "questionFigureKey": "dcg-2018-HL-paper-secC-q5-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "dcg-2018-hl-c5b-r1",
+    "kind": "anyN",
+    "verbatim": "Determine and indicate required vertical distance",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this drawing step by step: 1, 2 — 3 marks in all, in the order the scheme sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Determine and indicate required vertical distance",
+      "Adherence to drawing convention for dimensioning as required"
+     ],
+     "perOptionSteps": [
+      1,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme heads this 'Distance between parts 7 and 2' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
+ },
+ {
   "id": "dcg-2019-hl-a1a",
   "topicId": "design-and-communication-graphics-0-11",
   "conceptId": "dcg-0-11",

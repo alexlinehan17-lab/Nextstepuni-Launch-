@@ -63,7 +63,8 @@ LEVEL_TOKEN = {'higher': 'hl', 'ordinary': 'ol'}
 # 2010-2026; the deck grows a sitting at a time, each admitted here once its
 # cards, crops, paper link and Atlas question have been checked. A sitting not
 # yet admitted shows in the ledger as OPEN instead of vanishing behind a window.
-CARDED = {(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')}
+CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')}
+          | {(2018, 'hl')})
 
 # Cards edited by hand after generation, kept exactly as shipped. #294 (27 Oct
 # 2026) cut 2023 Ordinary B-3(c)'s one 13-mark group into the scheme's four
@@ -234,10 +235,23 @@ def _squash(text):
     return re.sub(r'[^a-z0-9]+', '', (text or '').lower())
 
 
-def ask_text(covered, texts, parent):
-    """The paper's own wording for every ask one card covers, in order."""
+def ask_text(covered, texts, parent, letter_text=None):
+    """The paper's own wording for every ask one card covers, in order.
+
+    `letter_text(letter)` is the lettered parent's own words, set before the
+    first roman printed under it. 2018 Higher C-4(a) states the mechanism there
+    -- "Crank OA, which is 48mm long ... AB and CB are both 110mm long" -- and
+    its romans only say what to draw; without the parent the card asked for a
+    locus of a mechanism it never described.
+    """
     parts = []
+    opened = set()
     for key in covered:
+        if letter_text and key[3] and key[2] not in opened:
+            opened.add(key[2])
+            own = ' '.join((letter_text(key[2]) or '').split())
+            if own:
+                parts.append(own)
         text = ' '.join((texts.get(key) or '').split())
         if not text:
             continue
@@ -439,8 +453,10 @@ def author(bind_figures=True):
                          unit.title)
                     continue
 
-                question = ask_text(covered, texts,
-                                    P.parent_text(section, q, covered[0][2]))
+                question = ask_text(
+                    covered, texts, P.parent_text(section, q, covered[0][2]),
+                    (lambda lt: P.parent_text(section, q, lt))
+                    if year < ATLAS_TOPICS_BEFORE else None)
                 if len(question) < 12:
                     note('the paper prints no ask at this address', unit.title)
                     continue

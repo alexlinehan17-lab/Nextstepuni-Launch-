@@ -243,19 +243,19 @@
     "refsHash": "b8748a474c6a2507"
   },
   "dcg": {
-    "cards": 545,
-    "contentHash": "36de9f64f1b6b8b9",
-    "coveragePct": 46.8,
-    "covered": 478,
+    "cards": 593,
+    "contentHash": "aa74b368558f4c7a",
+    "coveragePct": 50.6,
+    "covered": 517,
     "excluded": 0,
     "leaves": 1021,
-    "open": 543,
+    "open": 504,
     "orphans": 0,
     "papers": {
       "count": 66,
       "hash": "9c8982e337e2c8b1"
     },
-    "refsHash": "f905271c383d21ea"
+    "refsHash": "c24901653da9cf18"
   },
   "dutch": {
     "cards": 42,
