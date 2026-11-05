@@ -1,6 +1,6 @@
 {
  "v": 1,
- "cardCount": 439,
+ "cardCount": 466,
  "cards": [
   {
    "id": "re-2026-hl-a-1-a",
@@ -67155,6 +67155,4194 @@
      20
     ],
     "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-a-1-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2018 OL Section A Q1(a)",
+   "topicId": "re-a",
+   "conceptId": "people-ancient-times-myths-express-religious",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "People in ancient times used myths to express their religious beliefs. Outline the story presented in one such myth associated with people who lived in ancient times.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of mythical thinking and identify traces of religion in earliest societies by setting out accurate information on the story presented in one myth about religious belief from ancient times.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: If a candidate sets out accurate information on the story presented in one myth about religious belief not associated with an ancient culture, or the distant past — Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-a-1-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2018 OL Section A Q1(b)",
+   "topicId": "re-a",
+   "conceptId": "understanding-god-gods-divine-seen-myth",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine the understanding of God/gods/the divine that can be seen in one myth from ancient times.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an ability to identify traces of religion in earliest societies by looking closely at the understanding of God/gods/the divine that can be seen in a myth from ancient times.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     5
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-a-2-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2018 OL Section A Q2(a)",
+   "topicId": "re-a",
+   "conceptId": "aristotle-alive-today-making-video-present",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Imagine Aristotle is alive today and making a video to present his ideas. Based on your knowledge of Aristotle’s thinking, outline one idea that he could present for people today.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the philosophical thought of ancient Greece by setting out accurate information on what was involved in one of Aristotle’s ideas that could be put forward today.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     5,
+     6
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-a-2-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2018 OL Section A Q2(b)",
+   "topicId": "re-a",
+   "conceptId": "aristotle-ideas-relevant-lives-people-today",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain how any one of Aristotle’s ideas could be relevant for the lives of people today.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the philosophical thought of ancient Greece by giving an accurate account of how one of Aristotle’s ideas could be relevant to the lives of people today.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     6
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-a-3-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2018 OL Section A Q3(a)",
+   "topicId": "re-a",
+   "conceptId": "example-interest-spirituality-seen-lives-people",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe one example of how an interest in spirituality can be seen in the lives of people today.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of spirituality in contemporary society by giving an accurate account of one example of how people today can find meaning beyond the ‘self’ and engage with the non-material aspects of life.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     7
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-a-3-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2018 OL Section A Q3(b)",
+   "topicId": "re-a",
+   "conceptId": "reason-way-some-people-live-society",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain one reason why the way some people live in society today can make it difficult for them to search for the meaning of life.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the search for meaning in contemporary contexts by giving an accurate account of a reason why the way some people live in society today can make it difficult for them to search for the meaning of life.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     7,
+     8
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-b-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2018 OL Section B Q(a)",
+   "topicId": "re-b",
+   "conceptId": "understanding-jesus-expressed-today-example-art",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline the understanding of Jesus that is expressed today in an example of one of the following: • ART • FILM • LITERATURE • MUSIC",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of images of Jesus by setting out accurate information on the understanding of Jesus that is presented in one example from art or film or literature or music.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     9
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-b-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2018 OL Section B Q(b)",
+   "topicId": "re-b",
+   "conceptId": "understanding-jesus-outlined-part-relevant-christians",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain why the understanding of Jesus that you have outlined in part a) above is relevant for Christians today.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of Jesus’ message by giving an accurate account of one or more reasons why the understanding of Jesus presented in part a) of the question is relevant for Christians today.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "26 - 30",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "21 - 25",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "12 - 16",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "8 - 11",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "3 - 7",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 2",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     9,
+     10
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-b-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2018 OL Section B Q(c)",
+   "topicId": "re-b",
+   "conceptId": "either-religious-secular-evidence-jesus-nazareth",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine how either religious or secular evidence about Jesus of Nazareth is provided in the writings of two of the following: ● AN EVANGELIST – MATTHEW OR MARK OR LUKE OR JOHN ● JOSEPHUS ● PLINY THE YOUNGER ● SAINT PAUL ● TACITUS",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of evidence about Jesus of Nazareth by looking closely at how two of the sources listed in the question provide either religious or secular evidence for the existence of Jesus.",
+    "points": [],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 15,
+    "gridHead": "15Mx2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "13 - 15",
+      "marks": [
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "11 - 12",
+      "marks": [
+       11,
+       12
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "6 - 7",
+      "marks": [
+       6,
+       7
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "4 - 5",
+      "marks": [
+       4,
+       5
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 3",
+      "marks": [
+       2,
+       3
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     10
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-c-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2018 OL Section C Q(a)",
+   "topicId": "re-c",
+   "conceptId": "way-religious-festival-celebrated-members-world",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe the way that a religious festival is celebrated by members of one of the following world religions: ◆ BUDDHISM ◆ HINDUISM ◆ ISLAM",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a major world religion by giving an accurate account of the way a time of religious importance is marked by members of one of the religions listed in the question.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     11
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-c-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2018 OL Section C Q(b)",
+   "topicId": "re-c",
+   "conceptId": "celebration-religious-festival-described-part-way",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Compare the celebration of the religious festival described in part a) above with the way a religious festival is celebrated in either Christianity or Judaism.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of major world religions by accurately identifying a similarity/difference between the celebration of a time of religious importance described in part a) of the question and the way a time of religious importance is marked in either Christianity or Judaism.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "26 - 30",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "21 - 25",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "12 - 16",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "8 - 11",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "3 - 7",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 2",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     11,
+     12
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-c-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2018 OL Section C Q(c)",
+   "topicId": "re-c",
+   "conceptId": "choose-world-religion-world-religion-christianity",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Choose one world religion from List A and one world religion from List B below: List A: ◆ CHRISTIANITY ◆ JUDAISM List B: ◆ BUDDHISM ◆ HINDUISM ◆ ISLAM Compare the way believers are organised in Ireland today within the world religions that you have chosen above.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the main features of two major world religions by accurately identifying a similarity/difference in the way members of one religion from List A and one religion from List B are organised at a local or national level.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "26 - 30",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "21 - 25",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "12 - 16",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "8 - 11",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "3 - 7",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 2",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     12
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-d-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2018 OL Section D Q(a)",
+   "topicId": "re-d",
+   "conceptId": "qualities-person-needs-make-morally-mature",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline two qualities that a person needs to have so that they can make morally mature decisions.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of moral growth and development by setting out accurate information on two characteristics associated with making morally mature decisions such as thinking of others; ethical principles etc.",
+    "points": [],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10Mx2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "9 - 10",
+      "marks": [
+       9,
+       10
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "7 - 8",
+      "marks": [
+       7,
+       8
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "6",
+      "marks": [
+       6
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "4 - 5",
+      "marks": [
+       4,
+       5
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "3",
+      "marks": [
+       3
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2",
+      "marks": [
+       2
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     13
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-d-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2018 OL Section D Q(b)",
+   "topicId": "re-d",
+   "conceptId": "example-person-inform-conscience-moral-issue",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe one example of how a person could inform their conscience on a moral issue by taking into account the teaching of a major world religion.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of conscience by giving an accurate account of one example of how the teaching of a major world religion could inform a person’s judgement of right and wrong on a moral issue.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "26 - 30",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "21 - 25",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "12 - 16",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "8 - 11",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "3 - 7",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 2",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     13,
+     14
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-d-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2018 OL Section D Q(c)",
+   "topicId": "re-d",
+   "conceptId": "involved-stages-moral-development-person-goes",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Profile what is involved in one of the stages of moral development that a person goes through from childhood to adulthood, which is put forward in a theory you studied.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of moral development by accurately tracing one aspect of what is involved in a stage of moral development from childhood to adulthood.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "26 - 30",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "21 - 25",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "12 - 16",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "8 - 11",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "3 - 7",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 2",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     14
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-e-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2018 OL Section E Q(a)",
+   "topicId": "re-e",
+   "conceptId": "connection-between-understanding-god-gods-transcendent",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Trace the connection between the understanding of God/gods/the transcendent and the role men and women have in one of the following world religions: ◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of gender in religious traditions today by accurately tracing the connection between gender roles and the understanding of God/gods/the transcendent in a major world religion listed in the question.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "34 - 40",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "28 - 33",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "22 - 27",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "16 - 21",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "10 - 15",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "4 - 9",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 3",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     15
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-e-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2018 OL Section E Q(b)(i)",
+   "topicId": "re-e",
+   "conceptId": "either-man-woman-whose-story-told",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline how either one man or woman, whose story is told in the Hebrew Scriptures, played a part in the salvation history of the Hebrew people.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of Hebrew salvation history by setting out accurate information on the part played by one Hebrew man or woman in Hebrew salvation history.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "34 - 40",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "28 - 33",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "22 - 27",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "16 - 21",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "10 - 15",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "4 - 9",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 3",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     15,
+     16
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-e-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2018 OL Section E Q(b)(ii)",
+   "topicId": "re-e",
+   "conceptId": "roles-men-women-played-early-christian",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe the roles men and women played in one Early Christian community portrayed in either the Acts of Apostles or the Letters of Saint Paul.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of an Early Christian community by giving an accurate account of the roles men and women had in one Early Christian community that is described in either the Acts of Apostles or the Letters of Saint Paul.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "34 - 40",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "28 - 33",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "22 - 27",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "16 - 21",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "10 - 15",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "4 - 9",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 3",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     16
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-e-b-iii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2018 OL Section E Q(b)(iii)",
+   "topicId": "re-e",
+   "conceptId": "influence-gospels-portray-mary-mother-jesus",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine the influence of how the Gospels portray Mary, the mother of Jesus, on the roles men and women play in one Christian denomination today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the portrayal of Mary in the Gospels by looking closely at the influence of the Gospel portrayal of Mary, the mother of Jesus, on the roles men and women play in one Christian denomination today.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "34 - 40",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "28 - 33",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "22 - 27",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "16 - 21",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "10 - 15",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "4 - 9",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 3",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     17
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-e-b-iv",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2018 OL Section E Q(b)(iv)",
+   "topicId": "re-e",
+   "conceptId": "either-empowerment-freedom-men-women-promoted",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe how either empowerment or freedom for men and women has been promoted by one Christian denomination today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of a religious perspective of empowerment or freedom by giving an accurate account of the way in which a Christian denomination either enables or promotes independence for men and women.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "34 - 40",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "28 - 33",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "22 - 27",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "16 - 21",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "10 - 15",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "4 - 9",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 3",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     17,
+     18
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-h-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2018 OL Section H Q(a)",
+   "topicId": "re-h",
+   "conceptId": "gospel-matthew-gospel-mark-gospel-luke",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "● THE GOSPEL OF MATTHEW ● THE GOSPEL OF MARK ● THE GOSPEL OF LUKE ● THE GOSPEL OF JOHN Outline what was involved in the oral and written stages in the development of one of the above Gospels.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show familiarity with the Gospels by setting out accurate information on the oral and written stages in the development of a Gospel listed in the question.",
+    "points": [],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     18
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-h-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2018 OL Section H Q(b)",
+   "topicId": "re-h",
+   "conceptId": "archaeological-discovery-influenced-understanding-bible-today",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain how one archaeological discovery has influenced the understanding of the Bible today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of how the Bible came to be written by giving one or more reasons that accurately account for how one archaeological discovery has influenced the understanding of the Bible today.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "34 - 40",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "28 - 33",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "22 - 27",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "16 - 21",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "10 - 15",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "4 - 9",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 3",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     19
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-i-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "I",
+   "questionRef": "2018 OL Section I Q(a)",
+   "topicId": "re-i",
+   "conceptId": "trends-seen-pattern-religious-belief-practice",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe two trends that can be seen in the pattern of religious belief and practice among people in Ireland today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the changing patterns of religious belief in Ireland by giving an accurate account of two trends found in the pattern of religious belief and practice among people in Ireland today.",
+    "points": [],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     19,
+     20
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-i-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "I",
+   "questionRef": "2018 OL Section I Q(b)",
+   "topicId": "re-i",
+   "conceptId": "ways-inculturation-played-part-development-christianity",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline two ways that inculturation played a part in the development of Christianity in Ireland at the time of Saint Patrick.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of Christianity in Ireland by setting out accurate information on two ways that adapting pre-existing religious practices contributed to the development of Christianity in Ireland at the time of Saint Patrick.",
+    "points": [],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     20
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-j-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "J",
+   "questionRef": "2018 OL Section J Q(a)",
+   "topicId": "re-j",
+   "conceptId": "understanding-creation-natural-world-found-major",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Profile the understanding of creation/the natural world that is found in one major world religion which you have studied.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a major world religion’s understanding of creation by accurately tracing the understanding of creation/the natural world found in one of the major world religions studied.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "26 - 30",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "21 - 25",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "12 - 16",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "8 - 11",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "3 - 7",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 2",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     21
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-j-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "J",
+   "questionRef": "2018 OL Section J Q(b)(i)",
+   "topicId": "re-j",
+   "conceptId": "main-ideas-evolution-put-forward-charles",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline one of the main ideas about evolution put forward by Charles Darwin.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show familiarity with key moments in the relationship between science and theology by setting out accurate information on one of the main ideas about evolution presented by Charles Darwin.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "14 - 16",
+      "marks": [
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "11 - 13",
+      "marks": [
+       11,
+       12,
+       13
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "8 - 10",
+      "marks": [
+       8,
+       9,
+       10
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "5 - 7",
+      "marks": [
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "2 - 4",
+      "marks": [
+       2,
+       3,
+       4
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     21,
+     22
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-ol-j-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "ordinary",
+   "section": "J",
+   "questionRef": "2018 OL Section J Q(b)(ii)",
+   "topicId": "re-j",
+   "conceptId": "members-major-world-religion-reacted-time",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe how the members of one major world religion reacted at the time, to the ideas Darwin put forward about evolution.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show familiarity with key moments in the relationship between science and theology by giving an accurate account of the reaction at the time, of members of one major world religion to one or more ideas Darwin put forward about evolution.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "26 - 30",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "21 - 25",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "17 - 20",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "12 - 16",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "8 - 11",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "3 - 7",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 2",
+      "marks": [
+       0,
+       1,
+       2
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     22
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
    }
   }
  ]
