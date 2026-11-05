@@ -10,7 +10,7 @@ import { describe, expect, test } from 'vitest';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 
 import ReligiousEducationRubricPanel, { bandHeading, religiousEducationMarks } from '@/components/MarkBank/ReligiousEducationRubricPanel';
-import { reAnswerScoreId, reCeilingScoreId } from '@/components/MarkBank/religiousEducationScoring';
+import { reAnswerScoreId, reCeilingScoreId, reWayScoreId } from '@/components/MarkBank/religiousEducationScoring';
 import { tariffReconciles, type ReligiousEducationRubric, type SecRubricCard } from '@/types/markBank';
 
 const bands = [
@@ -89,5 +89,73 @@ describe('Religious Education band grid', () => {
     const second = screen.getByRole('region', { name: 'Answer 2 of 2' });
     fireEvent.click(within(second).getByRole('button', { name: `Claim 6 marks for ${bandHeading('GOOD', '6-5')}` }));
     expect(calls).toEqual([[reAnswerScoreId(1), 6]]);
+  });
+
+  describe('a grid printing two marks rows', () => {
+    // 2022's shape: "40 Marks" for the answer whole, "20 Marks x2" for it in
+    // two, on the same band cells. The card's own way is the one its head
+    // names first; the student picks the way they wrote.
+    const whole = [
+      { label: 'EXCELLENT', printed: '40 - 34', marks: [34, 35, 36, 37, 38, 39, 40], descriptor: ['Relevance: completely & clearly relevant'] },
+      { label: 'GOOD', printed: '33 - 10', marks: Array.from({ length: 24 }, (_, i) => i + 10) },
+      { label: 'WEAK', printed: '9 - 0', marks: Array.from({ length: 10 }, (_, i) => i) },
+    ];
+    const twoWays: ReligiousEducationRubric = {
+      ...rubric, answers: 1, answerMax: 40, gridHead: '40 Marks', bands: whole, ceilings: undefined,
+      otherWay: {
+        gridHead: '20 Marksx2', answers: 2, answerMax: 20,
+        bands: [
+          { printed: '20 - 17', marks: [17, 18, 19, 20] },
+          { printed: '16 - 5', marks: Array.from({ length: 12 }, (_, i) => i + 5) },
+          { printed: '4 - 0', marks: [0, 1, 2, 3, 4] },
+        ],
+      },
+    };
+    const wayCard = { ...card, totalMarks: 40, rubric: twoWays } as typeof card;
+
+    test('the first-named way is chosen until the student picks the other, under the printed heads', () => {
+      const calls: Array<[string, number]> = [];
+      render(<ReligiousEducationRubricPanel card={wayCard} scores={{}} onScore={(id, marks) => calls.push([id, marks])} />);
+      const group = screen.getByRole('radiogroup', { name: 'Marks row' });
+      const [first, second] = within(group).getAllByRole('radio');
+      expect(first).toHaveAccessibleName(/^40 Marks/);
+      expect(second).toHaveAccessibleName(/^20 Marksx2/);
+      expect(first).toHaveAttribute('aria-checked', 'true');
+      expect(second).toHaveAttribute('aria-checked', 'false');
+      expect(screen.getByRole('region', { name: 'Your answer' })).toBeInTheDocument();
+      expect(screen.queryByRole('region', { name: 'Answer 1 of 2' })).toBeNull();
+      fireEvent.click(second);
+      expect(calls).toEqual([[reWayScoreId, 1]]);
+    });
+
+    test('the other way shows its own ladders at its own ranges, with the same band cells', () => {
+      render(<ReligiousEducationRubricPanel card={wayCard} scores={{ [reWayScoreId]: 1 }} onScore={() => undefined} />);
+      expect(within(screen.getByRole('radiogroup', { name: 'Marks row' })).getAllByRole('radio')[1]).toHaveAttribute('aria-checked', 'true');
+      const second = screen.getByRole('region', { name: 'Answer 2 of 2' });
+      expect(within(second).getByRole('button', { name: `Claim 20 marks for ${bandHeading('EXCELLENT', '20 - 17')}` })).toBeInTheDocument();
+      expect(within(second).getByText(/completely & clearly relevant/)).toBeInTheDocument();
+      expect(screen.queryByRole('region', { name: 'Your answer' })).toBeNull();
+    });
+
+    test('only the chosen way scores', () => {
+      const scores = {
+        [reAnswerScoreId(0)]: 36,
+        [reAnswerScoreId(0, 1)]: 18, [reAnswerScoreId(1, 1)]: 12,
+      };
+      expect(religiousEducationMarks(wayCard, scores)).toBe(36);
+      expect(religiousEducationMarks(wayCard, { ...scores, [reWayScoreId]: 1 })).toBe(30);
+      // a mark placed on the first way is not carried over to the other
+      expect(religiousEducationMarks(wayCard, { [reAnswerScoreId(0)]: 15, [reWayScoreId]: 1 })).toBe(0);
+    });
+
+    test('the other row must cover its own maximum and make the same total; it carries no ceiling', () => {
+      expect(tariffReconciles(wayCard)).toBe(true);
+      const short = { ...wayCard, rubric: { ...twoWays, otherWay: { ...twoWays.otherWay!, answers: 1 } } };
+      expect(tariffReconciles(short)).toBe(false);
+      const gap = { ...wayCard, rubric: { ...twoWays, otherWay: { ...twoWays.otherWay!, bands: twoWays.otherWay!.bands.slice(0, 2).concat([{ printed: '4 - 1', marks: [1, 2, 3, 4] }]) } } };
+      expect(tariffReconciles(gap)).toBe(false);
+      const capped = { ...wayCard, rubric: { ...twoWays, ceilings: [{ when: 'If a candidate', max: 10 }] } };
+      expect(tariffReconciles(capped)).toBe(false);
+    });
   });
 });

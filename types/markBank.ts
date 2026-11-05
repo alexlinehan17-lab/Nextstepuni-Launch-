@@ -1053,6 +1053,18 @@ export interface ReligiousEducationBand {
   descriptor?: string[];
 }
 
+/** A grid's second marks row (2022 prints "40 Marks" AND "20 Marks x2" under
+ *  one grid): the scheme's other way of marking the same answer, on the same
+ *  band cells. The student picks the way they wrote; only that way scores. */
+export interface ReligiousEducationWay {
+  /** The row's own head, as printed: "20 Marks x2". */
+  gridHead: string;
+  answers: number;
+  answerMax: number;
+  /** The row's range under each band, in the card's band order. */
+  bands: Array<{ printed: string; marks: number[] }>;
+}
+
 /** A ceiling a question's Note prints for an answer that does less than it
  *  asks: "If a candidate gives an accurate account ... mark on its merits -
  *  Max 10 marks." */
@@ -1089,6 +1101,10 @@ export interface ReligiousEducationRubric {
   gridHead: string;
   /** High to low, as printed. */
   bands: ReligiousEducationBand[];
+  /** The grid's other marks row, where it prints two. The card's own
+   *  answers/answerMax/gridHead/bands are the way its scheme head names first,
+   *  and the student's default. */
+  otherWay?: ReligiousEducationWay;
   ceilings?: ReligiousEducationCeiling[];
   /** The scheme's other Notes for this ask, verbatim. */
   directions: string[];
@@ -1544,13 +1560,23 @@ export function tariffReconciles(card: SecCard): boolean {
     if (card.rubric.system === 'religious-education') {
       // One grid per answer: its bands cover 0..answerMax, each mark once,
       // and the answers make the card's printed total.
-      const { bands, answers, answerMax, ceilings, schemePages, schemeFileid } = card.rubric;
-      const marks = bands.flatMap(band => band.marks).sort((a, b) => a - b);
+      const { bands, answers, answerMax, ceilings, schemePages, schemeFileid, otherWay } = card.rubric;
+      const covers = (ranges: Array<{ printed: string; marks: number[] }>, max: number) => {
+        const marks = ranges.flatMap(band => band.marks).sort((a, b) => a - b);
+        return ranges.every(band => band.marks.length > 0 && band.printed.trim())
+          && marks.length === max + 1 && marks.every((mark, index) => mark === index);
+      };
       return Boolean(schemeFileid)
         && schemePages.length > 0 && schemePages.every(page => Number.isInteger(page) && page > 0)
         && Number.isInteger(answers) && answers >= 1 && answers * answerMax === card.totalMarks
-        && bands.length > 1 && bands.every(band => band.marks.length > 0 && band.label.trim() && band.printed.trim())
-        && marks.length === answerMax + 1 && marks.every((mark, index) => mark === index)
+        && bands.length > 1 && bands.every(band => band.label.trim()) && covers(bands, answerMax)
+        // The other marks row is the same grid at other ranges: a band each,
+        // 0..its own maximum, the same printed total. A ceiling is written for
+        // one row's maximum, so a card with two ways carries none.
+        && (!otherWay || (Boolean(otherWay.gridHead.trim()) && otherWay.bands.length === bands.length
+          && Number.isInteger(otherWay.answers) && otherWay.answers >= 1
+          && otherWay.answers * otherWay.answerMax === card.totalMarks
+          && covers(otherWay.bands, otherWay.answerMax) && !(ceilings ?? []).length))
         && (ceilings ?? []).every(ceiling => ceiling.when.trim()
           && Number.isInteger(ceiling.max) && ceiling.max > 0 && ceiling.max < answerMax);
     }

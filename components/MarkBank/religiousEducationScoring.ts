@@ -4,15 +4,51 @@
  *
  * Scoring for a Religious Education card: each answer holds the one mark the
  * student placed on the scheme's band grid, and a ticked ceiling caps every
- * answer at its printed maximum.
+ * answer at its printed maximum. Where the grid prints two marks rows (one
+ * answer out of 40, or two answers out of 20), the student picks the way they
+ * wrote and only that way's placements score.
  */
-import type { ReligiousEducationRubric } from '../../types/markBank';
+import type { ReligiousEducationBand, ReligiousEducationRubric } from '../../types/markBank';
 
 export type ReligiousEducationScoreId = `re:${string}`;
 export type ReligiousEducationScores = Partial<Record<string, number>>;
 
-/** Answer `index` (0-based): the mark placed on its grid. */
-export const reAnswerScoreId = (index: number): ReligiousEducationScoreId => `re:answer:${index + 1}`;
+/** The way chosen: 0 for the card's own (first-named) marks row, 1 for its
+ *  other one. Absent means 0. */
+export const reWayScoreId: ReligiousEducationScoreId = 're:way';
+
+/** One way of marking the card: how many answers, each out of what, on which ranges. */
+export interface ReligiousEducationActiveWay {
+  way: 0 | 1;
+  gridHead: string;
+  answers: number;
+  answerMax: number;
+  bands: ReligiousEducationBand[];
+}
+
+/** The card's ways, its own first: one, or two where the grid prints two marks rows. */
+export function reWays(rubric: ReligiousEducationRubric): ReligiousEducationActiveWay[] {
+  const own: ReligiousEducationActiveWay = {
+    way: 0, gridHead: rubric.gridHead, answers: rubric.answers, answerMax: rubric.answerMax, bands: rubric.bands,
+  };
+  const other = rubric.otherWay;
+  if (!other) return [own];
+  return [own, {
+    way: 1, gridHead: other.gridHead, answers: other.answers, answerMax: other.answerMax,
+    bands: rubric.bands.map((band, index) => ({ ...band, printed: other.bands[index].printed, marks: other.bands[index].marks })),
+  }];
+}
+
+/** The way the student has chosen, or the card's own by default. */
+export function reWay(rubric: ReligiousEducationRubric, scores: ReligiousEducationScores): ReligiousEducationActiveWay {
+  const ways = reWays(rubric);
+  return ways[scores[reWayScoreId] === 1 ? ways.length - 1 : 0];
+}
+
+/** Answer `index` (0-based) on a way: the mark placed on its grid. Each way
+ *  keeps its own placements, so marks placed on the way not chosen never score. */
+export const reAnswerScoreId = (index: number, way: 0 | 1 = 0): ReligiousEducationScoreId =>
+  way === 1 ? `re:other:answer:${index + 1}` : `re:answer:${index + 1}`;
 /** The ceiling ticked, as its 1-based position in the rubric's ceilings; 0 for none. */
 export const reCeilingScoreId: ReligiousEducationScoreId = 're:ceiling';
 
@@ -23,18 +59,21 @@ export function reCeiling(rubric: ReligiousEducationRubric, scores: ReligiousEdu
   return ceiling ? ceiling.max : null;
 }
 
-/** The mark placed on one answer's grid: 0 unless it is a mark one of the bands permits. */
+/** The mark placed on one answer's grid, on the chosen way: 0 unless it is a
+ *  mark one of the bands permits. */
 export function reAnswerValue(rubric: ReligiousEducationRubric, scores: ReligiousEducationScores, index: number): number {
-  const value = scores[reAnswerScoreId(index)] ?? 0;
-  return rubric.bands.some(band => band.marks.includes(value)) ? value : 0;
+  const way = reWay(rubric, scores);
+  const value = scores[reAnswerScoreId(index, way.way)] ?? 0;
+  return way.bands.some(band => band.marks.includes(value)) ? value : 0;
 }
 
-/** Whether the student has placed this answer at all. 0 is a mark the
- *  bottom band permits, so "placed at 0" and "not placed" are told apart:
- *  an unplaced answer is stored as -1 (or never stored). */
+/** Whether the student has placed this answer at all, on the chosen way. 0
+ *  is a mark the bottom band permits, so "placed at 0" and "not placed" are
+ *  told apart: an unplaced answer is stored as -1 (or never stored). */
 export const reAnswerPlaced = (rubric: ReligiousEducationRubric, scores: ReligiousEducationScores, index: number): boolean => {
-  const value = scores[reAnswerScoreId(index)];
-  return value !== undefined && rubric.bands.some(band => band.marks.includes(value));
+  const way = reWay(rubric, scores);
+  const value = scores[reAnswerScoreId(index, way.way)];
+  return value !== undefined && way.bands.some(band => band.marks.includes(value));
 };
 export const RE_UNPLACED = -1;
 
@@ -47,6 +86,7 @@ export function reAnswerMarks(rubric: ReligiousEducationRubric, scores: Religiou
 
 export function religiousEducationRubricMarks(rubric: ReligiousEducationRubric, scores: ReligiousEducationScores, totalMarks: number): number {
   let total = 0;
-  for (let index = 0; index < rubric.answers; index += 1) total += reAnswerMarks(rubric, scores, index);
+  const { answers } = reWay(rubric, scores);
+  for (let index = 0; index < answers; index += 1) total += reAnswerMarks(rubric, scores, index);
   return Math.max(0, Math.min(totalMarks, total));
 }

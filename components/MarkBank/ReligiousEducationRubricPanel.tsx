@@ -7,7 +7,10 @@
  * bands, each band a row carrying its printed range, its grid descriptors and
  * one button per mark it permits. The points of reference are the scheme's
  * examples and show as an indicative list; a Note's ceiling is a row the
- * student ticks when it describes their answer.
+ * student ticks when it describes their answer. Where the grid prints two
+ * marks rows ("40 Marks" and "20 Marks x2"), the scheme marks the answer
+ * either way: the student picks the way they wrote, under the rows' own
+ * printed heads, and only that way scores.
  */
 import React from 'react';
 import type { ReligiousEducationRubric, SecRubricCard } from '../../types/markBank';
@@ -22,6 +25,10 @@ import {
   reCeiling,
   reCeilingScoreId,
   religiousEducationRubricMarks,
+  reWay,
+  reWayScoreId,
+  reWays,
+  type ReligiousEducationActiveWay,
   type ReligiousEducationScoreId,
   type ReligiousEducationScores,
 } from './religiousEducationScoring';
@@ -48,18 +55,19 @@ const Ladder: React.FC<{
   scores: ReligiousEducationScores;
   onScore: (id: ReligiousEducationScoreId, marks: number) => void;
 }> = ({ rubric, index, scores, onScore }) => {
+  const way = reWay(rubric, scores);
   const value = reAnswerValue(rubric, scores, index);
   const placed = reAnswerPlaced(rubric, scores, index);
   const ceiling = reCeiling(rubric, scores);
-  const id = reAnswerScoreId(index);
-  const label = rubric.answers > 1 ? `Answer ${index + 1} of ${rubric.answers}` : 'Your answer';
+  const id = reAnswerScoreId(index, way.way);
+  const label = way.answers > 1 ? `Answer ${index + 1} of ${way.answers}` : 'Your answer';
   return (
     <section className="mb-re-answer" aria-label={label}>
       <div className="mb-re-answer-head">
-        <h4><span>{label}</span><small>{rubric.gridHead}</small></h4>
-        <span className="mb-claim-chip">{marksChip(rubric.answerMax)}</span>
+        <h4><span>{label}</span><small>{way.gridHead}</small></h4>
+        <span className="mb-claim-chip">{marksChip(way.answerMax)}</span>
       </div>
-      {rubric.bands.map((band, bandIndex) => {
+      {way.bands.map((band, bandIndex) => {
         const above = ceiling !== null && Math.min(...band.marks) > ceiling;
         const steps = [...band.marks].sort((a, b) => b - a);
         return (
@@ -85,6 +93,51 @@ const Ladder: React.FC<{
   );
 };
 
+const WAY_COUNT = ['', 'One', 'Two', 'Three', 'Four', 'Five'];
+
+/** What a way marks, in our words under the row's printed head. */
+export const wayLine = (way: ReligiousEducationActiveWay): string => (way.answers > 1
+  ? `${WAY_COUNT[way.answers] ?? way.answers} answers, ${way.answerMax} marks each`
+  : `One answer, out of ${way.answerMax}`);
+
+/** The grid's two marks rows as a choice, each under its own printed head,
+ *  "or" between them as the scheme's routes are split; the chosen one is the
+ *  filled face. The card's own (first-named) row is chosen until the student
+ *  picks the other. */
+const WayChoice: React.FC<{
+  rubric: ReligiousEducationRubric;
+  scores: ReligiousEducationScores;
+  onScore: (id: ReligiousEducationScoreId, marks: number) => void;
+}> = ({ rubric, scores, onScore }) => {
+  const chosen = reWay(rubric, scores).way;
+  return (
+    <section className="mb-re-ways" aria-label="How the scheme marks this answer">
+      <p className="mb-re-ways-prompt">The scheme marks this answer two ways. Pick the way you wrote it: only that way scores.</p>
+      <div className="mb-re-ways-options" role="radiogroup" aria-label="Marks row">
+        {reWays(rubric).map((way, index) => (
+          <React.Fragment key={way.way}>
+            {index > 0 && <p className="mb-re-ways-or" aria-hidden="true"><span>or</span></p>}
+            <button
+              type="button"
+              role="radio"
+              aria-checked={chosen === way.way}
+              className="mb-re-way"
+              data-chosen={chosen === way.way}
+              onClick={() => { if (chosen !== way.way) onScore(reWayScoreId, way.way); }}
+            >
+              <span className="mb-re-way-dot" aria-hidden="true" />
+              <span className="mb-re-way-text">
+                <span>{way.gridHead}</span>
+                <small>{wayLine(way)}</small>
+              </span>
+            </button>
+          </React.Fragment>
+        ))}
+      </div>
+    </section>
+  );
+};
+
 const ReligiousEducationRubricPanel: React.FC<{
   card: SecRubricCard & { rubric: ReligiousEducationRubric };
   scores: ReligiousEducationScores;
@@ -92,10 +145,12 @@ const ReligiousEducationRubricPanel: React.FC<{
 }> = ({ card, scores, onScore }) => {
   const { rubric } = card;
   const ticked = scores[reCeilingScoreId] ?? 0;
+  const way = reWay(rubric, scores);
   return (
     <div className="mb-re-rubric">
       <p className="mb-re-eyebrow">SEC Religious Education marking scheme</p>
-      <h3>{rubric.answers > 1 ? 'Place each answer on the scheme’s bands.' : 'Place your answer on the scheme’s bands.'}</h3>
+      <h3>{way.answers > 1 ? 'Place each answer on the scheme’s bands.' : 'Place your answer on the scheme’s bands.'}</h3>
+      {rubric.otherWay && <WayChoice rubric={rubric} scores={scores} onScore={onScore} />}
       <p className="mb-re-criteria">{rubric.criteria}</p>
       <div className="mb-re-parts">
         {rubric.points.length > 0 && (
@@ -118,8 +173,8 @@ const ReligiousEducationRubricPanel: React.FC<{
             onToggle={() => onScore(reCeilingScoreId, ticked === index + 1 ? 0 : index + 1)}
           />
         ))}
-        {Array.from({ length: rubric.answers }, (_, index) => (
-          <Ladder key={index} rubric={rubric} index={index} scores={scores} onScore={onScore} />
+        {Array.from({ length: way.answers }, (_, index) => (
+          <Ladder key={`${way.way}:${index}`} rubric={rubric} index={index} scores={scores} onScore={onScore} />
         ))}
         <ClaimDirections notes={rubric.directions} />
       </div>
