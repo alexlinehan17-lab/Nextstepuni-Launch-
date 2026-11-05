@@ -1,6 +1,6 @@
 {
  "v": 1,
- "cardCount": 468,
+ "cardCount": 489,
  "cards": [
   {
    "id": "re-2026-hl-a-1-a",
@@ -71625,6 +71625,2487 @@
      22
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-a-1-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2017 HL Section A Q1(a)(i)",
+   "topicId": "re-a",
+   "conceptId": "key-person-humanist-tradition-approach-taken",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Name a key person in the humanist tradition and describe the approach taken by him/her to the human search for the meaning of life.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of a world view by accurately naming one key person in the humanist tradition and giving an accurate account of the approach taken by him/her to the search for the meaning of life.",
+    "points": [
+     "e.g. Sartre — humans define and create ourselves by the choices we make; when faced with an absurd world people must create their own meaning of life etc.",
+     "e.g. Marx — through using reason humans could be free to find meaning; people achieve happiness when the resources of society are shared equally amongst all the members etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     3
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-a-1-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2017 HL Section A Q1(a)(ii)",
+   "topicId": "re-a",
+   "conceptId": "human-search-meaning-life-seen-sacred",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline how the human search for the meaning of life can be seen in a sacred artefact associated with an ancient culture that you have studied.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the search for the meaning of life in an ancient society by setting out accurate information on how the search for the meaning of life can be seen in the way that an object, made by people in an ancient culture, was set apart for religious use.",
+    "points": [
+     "e.g. Celtic artefacts decorated with birds may be associated with the belief that birds were spiritual messengers who brought communication from the spirit world etc.",
+     "e.g. Newgrange Co. Meath may suggest a belief in the cycle of life, death and rebirth; aligning the burial mound to the sun at the winter solstice perhaps people were seeking hope that the sun would not be defeated by darkness and death etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: If a candidate sets out accurate information on how the search for the meaning of life can be seen in the way that an object, made by people not associated with an ancient culture, was set apart for religious use – Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     3
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-a-1-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2017 HL Section A Q1(b)",
+   "topicId": "re-a",
+   "conceptId": "examples-understanding-divine-revelation-different-major",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Describe two examples of how the understanding of divine revelation in different major world religions is reflected in the way believers treat their sacred texts.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of divine revelation by giving an accurate account of the way the will of God/gods/the divine made known in sacred texts is evident in how they are treated by believers in two major world religions.",
+    "points": [
+     "Christianity e.g. the Gospels recognise the role of Jesus’ life, death and resurrection in divine revelation; in the Liturgy of the Word the text is treated as the word of God etc.",
+     "Islam e.g. Allah’s revelation to Muhammad — the Qur’an etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-a-2-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2017 HL Section A Q2(a)",
+   "topicId": "re-a",
+   "conceptId": "people-express-ideas-god-different-ways",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "People express ideas about God in different ways: • ART • FILM • MUSIC Compare the understanding of God expressed in a modern image from one of the above with the understanding of God found in a long‐established image from a major world religion.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of images of God by giving an accurate account of a similarity and/or difference between the ideas about God expressed in a modern image from Art or Film or Music and the understanding of God found in a traditional image from one major world religion.",
+    "points": [
+     "ART e.g. Janice McKenzie’s 'Jesus of the people' — image of God as an African American woman is similar to a Jewish Biblical understanding of God as maternal which is expressed in the image of God as a comforting mother (Isaiah) etc.",
+     "FILM e.g. 'Bruce Almighty' — image of God as omnipotent, omniscient and endowed with magical powers is similar to the traditional image of God as the supreme being/creator found in accounts from the book of Genesis etc.",
+     "MUSIC e.g. Kanye West's song 'Jesus Walks' — image of God as one who cares for everyone is similar to the image of God from the Gospel accounts as caring for the marginalised and oppressed in society etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-a-2-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2017 HL Section A Q2(b)",
+   "topicId": "re-a",
+   "conceptId": "buddhism-christianity-hinduism-islam-judaism-connection",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM Profile the connection between the understanding of the transcendent/God and how the human person is understood in the teaching of two of the above world religions.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the religious values of major world religions by accurately tracing the relationship between the understanding of the transcendent/God and the understanding of the human person that is found in the teaching of two of the world religions listed in the question.",
+    "points": [
+     "BUDDHISM e.g. the transcendent — indefinable, non-personal, absolute source/dimension; the person — marked by suffering and pain that is caused by human desire, but has the potential to reach enlightenment and Nirvana; the person’s self-deliverance is achieved through the suppression of all forms of desire etc.",
+     "CHRISTIANITY e.g. God — creator of the universe; immanence and transcendence of God are fused in the person of Jesus Christ whose life, death and resurrection revealed God’s unconditional love for humanity; the person — the high point of creation, created in the image and likeness of God etc.",
+     "HINDUISM e.g. Brahman — supreme creator of the world who is made manifest throughout all of creation; the person — the goal of life is to be liberated from the temporal and temporary in order to achieve union with Brahman through knowledge, action, love and the fulfilment of duties and responsibilities; following the laws of Dharma will help achieve a better rebirth on the cycle of samsara and get closer to Moksha etc.",
+     "ISLAM e.g. Allah — one, all-powerful and merciful who encompasses all creation and communicated his will through the prophet Muhammad and the Qur’an; the person — created by God has a duty to live according to the Five Pillars etc.",
+     "JUDAISM e.g. God — all powerful creator, a liberating God who cares for his people and enters into a Covenant with them; human beings — understood as having a moral and spiritual nature that finds fulfilment in God etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     5
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-b-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2017 HL Section B Q(a)",
+   "topicId": "re-b",
+   "conceptId": "evangelist-matthew-mark-josephus-pliny-younger",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "• AN EVANGELIST (Matthew or Mark • JOSEPHUS • PLINY THE YOUNGER • SAINT PAUL • TACITUS or Luke or John) Compare the importance of the writings of two of the above as sources of historical evidence for the existence of Jesus of Nazareth.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the sources of evidence for Jesus of Nazareth by accurately identifying a similarity and/or difference between the significance of the writings of two of the above as historical sources for the existence of Jesus of Nazareth.",
+    "points": [
+     "JOSEPHUS — Jewish historian who accepted both the historical reality of Jesus and the impact that Jesus had on the people he met; similar to the writings of St. Paul in that he also drew on the oral tradition that emerged from those who had personally known Jesus etc.",
+     "TACITUS — Roman historian who said Christians got their name from Christ who was executed by the procurator Pontius Pilate; similar to Pliny the Younger who was a Roman imperial legate and writes about Jesus as a man who was crucified for causing a disturbance in the Roman Empire etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     6
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-b-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2017 HL Section B Q(b)",
+   "topicId": "re-b",
+   "conceptId": "particular-understanding-jesus-emphasised-christians-today",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline the particular understanding of Jesus that is emphasised for Christians today by two writers of books about Christology.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of trends in Christianity today by setting out accurate information on the particular understanding of Jesus that is highlighted for Christians today by two writers of books about the nature and person of Christ.",
+    "points": [
+     "Elizabeth Johnson – emphasises gender equality in her book ‘Waves of Renewal in Christianity’ which presents the idea that Christians can learn from Jesus in that he did not conform to the patriarchy of his time; Jesus treated women as equals etc.",
+     "Jurgen Moltmann — in his book ‘The Way of Jesus Christ’ emphasises Jesus’ total empathy with the suffering of humanity; hope in the Resurrection offers possibilities for change in this world; an eschatological future for people that is beyond human imagining etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: A candidate gives accurate information on a particular understanding of the nature and person of Jesus that is highlighted by writers today without making reference to two writers of books about Christology – Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     6,
+     7
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-c-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "C",
+   "questionRef": "2017 HL Section C Q(a)",
+   "topicId": "re-c",
+   "conceptId": "origins-implications-relationship-between-christianity-judaism",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Profile the origins and implications of the relationship between Christianity and Judaism using one of the following headings: • A CELEBRATING TRADITION • THE COMMUNITY OF BELIEVERS",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of Christianity and Judaism by accurately tracing the connection between Christianity and Judaism as either a celebrating tradition or community of believers.",
+    "points": [
+     "A CELEBRATING TRADITION e.g. Christianity and Judaism share some symbols and rituals e.g. the Christian Eucharist is rooted in the Jewish Passover as Jesus and his disciples were Jewish; both the Christian Eucharist and the Jewish Passover are memorial celebrations with symbols such as bread and wine etc.",
+     "THE COMMUNITY OF BELIEVERS e.g. in both Christianity and Judaism the community gathers on a set day of the week (Sabbath day) to worship; this tradition derives from the Decalogue/Ten Commandments etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     7
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-c-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "C",
+   "questionRef": "2017 HL Section C Q(b)",
+   "topicId": "re-c",
+   "conceptId": "buddhism-christianity-hinduism-islam-judaism-main",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM Examine the main forms and purpose of inter‐faith dialogue between two of the world religions listed above.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of inter-faith dialogue by looking closely at the main forms and aim of inter-faith dialogue between two of the world religions listed in the question.",
+    "points": [
+     "Interfaith dialogue can take place between individuals and communities e.g. a prayer service; the aim can be to increase mutual understanding and respect for other religious traditions, to nourish good relationships etc.",
+     "e.g. The Council of Christians and Jews — CCJ works in areas of education, dialogue and social action etc.",
+     "e.g. The Assisi Day for Peace — Religious leaders from all over the world gather for a day of prayer etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     7,
+     8
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-d-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "D",
+   "questionRef": "2017 HL Section D Q(a)",
+   "topicId": "re-d",
+   "conceptId": "hebrews-greeks-romans-moral-issue-caused",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "• THE HEBREWS • THE GREEKS • THE ROMANS Outline how a moral issue caused concern for the members of two of the above ancient civilisations.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of morality as a human phenomenon since ancient times by setting out accurate information on how one or more issues of right and wrong caused concern for people in two of the ancient civilisations listed in the question.",
+    "points": [
+     "THE HEBREWS e.g. freedom to devote their lives to the service of God e.g. Exodus experience etc.",
+     "THE GREEKS e.g. Socrates who was concerned with what makes a good life etc.",
+     "THE ROMANS e.g. war — Cicero in ‘De Officiis’ stated that wars undertaken without cause are unjust etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     8
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-d-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "D",
+   "questionRef": "2017 HL Section D Q(b)",
+   "topicId": "re-d",
+   "conceptId": "balance-between-personal-community-values-expressed",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Profile how a balance between personal and community values is expressed in two different charters that you have studied.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of personal and communal values by accurately tracing the way that individual and communal values are balanced in two different contracts or agreements that have been made between people.",
+    "points": [
+     "e.g. The Ten Commandments — the first three commandments refer to personal values to do with the believers' relationship with God; the remaining seven commandments stress the importance of community values etc.",
+     "e.g. The UN Declaration of Human Rights — every personal right within the charter carries with it a responsibility, this creates a balance between personal and community values etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     8,
+     9
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-e-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "E",
+   "questionRef": "2017 HL Section E Q(a)",
+   "topicId": "re-e",
+   "conceptId": "biology-philosophy-psychology-sociology-influence-changing",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "• BIOLOGY • PHILOSOPHY • PSYCHOLOGY • SOCIOLOGY Discuss the influence that two of the above have had on the changing roles of men and women in society today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of gender in contemporary society by examining and drawing accurate conclusions about the influence that two of the branches of learning listed in the question have on changes in the position of men and women in society today.",
+    "points": [
+     "BIOLOGY — proposes differentials in establishing the differences between men and women i.e. genes and chromosomes, brain functions, sex organs etc. these suggest that gender differences are apparent very soon after birth and before socialisation etc.",
+     "PHILOSOPHY — considers what it means to be a human being; be that a man or woman. Recent philosophy has given consideration to the role of equality in the relationship between the sexes and encouraged men and women to take on equal roles in the workplace and the home etc.",
+     "PSYCHOLOGY — testing found at least four differences between the sexes i.e. verbal; mathematical; visual-spatial abilities; aggression and the variations within each gender are greater than the differences between the genders; this has highlighted that abilities are based on individuality rather than gender etc.",
+     "SOCIOLOGY — research has found that gender roles are influenced by social contexts; ideas about gender are socially constructed; thus the traditional view of gender roles is being challenged e.g. stay at home dad etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     10
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-e-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "E",
+   "questionRef": "2017 HL Section E Q(b)",
+   "topicId": "re-e",
+   "conceptId": "founders-religious-orders-religious-writers-social",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "• FOUNDERS OF RELIGIOUS ORDERS • RELIGIOUS WRITERS • SOCIAL REFORMERS • SPIRITUAL THINKERS Compare how the work of two women, from different categories listed above, contributed to the development of their religious traditions.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the contribution of women to the development of religious traditions by accurately identifying a similarity and/or difference between how the work of two women, from different categories listed in the question, promoted the advancement of their religious traditions.",
+    "points": [
+     "e.g. Nano Nagle’s (founder of religious order) work ethic and commitment to key beliefs inspired others; the Presentation Order provided Catholic education to the poor etc. Similarly Edwina Gately (social reformer) responded to her compassion for others and developed her religious tradition by living according to the characteristics of the Kingdom of God, Edwina founded the ‘Volunteer Missionary Movement’ that continues to send lay Christian volunteers to help people in need around the world etc.",
+     "e.g. Mother Teresa (social reformer) lived her life following in the footsteps of Jesus, caring for the poor and marginalised in society, she set up the Missionaries of Charity and they continue her work today in India and elsewhere; similarly Dorothy Day (religious writer) lived her life in solidarity with the poor, the message of Jesus was always at the centre of her life and work; Dorothy helped to set up ‘The Catholic Worker’ newspaper which continues to be published and influenced the liberation theology movement within Christianity etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     10,
+     11
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-f-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "F",
+   "questionRef": "2017 HL Section F Q(a)",
+   "topicId": "re-f",
+   "conceptId": "eightfold-path-buddhism-judaeo-christian-vision",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "• THE EIGHTFOLD PATH OF BUDDHISM • THE JUDAEO‐CHRISTIAN VISION OF JUSTICE • THE FOUR VARNAS OF HINDUISM • THE ZAKAT OF ISLAM Explain how the religious beliefs expressed in two of the above could influence believers to work for justice today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a perspective on justice by giving an accurate account of how the religious beliefs in two of the perspectives listed in the question could influence believers to work for what is right and fair today.",
+    "points": [
+     "THE EIGHTFOLD PATH OF BUDDHISM — teaches right action etc.it encourages practicing positive qualities such as kindness and justice, which could help address the causes of injustice in the world today etc.",
+     "THE JUDAEO-CHRISTIAN VISION OF JUSTICE — the Hebrew and Christian scriptures show God relating to humanity with compassion, mercy and loving-kindness; this could influence believers to live out their religious values and treat others with respect and forgiveness as God has shown in salvation history etc.",
+     "THE FOUR VARNAS OF HINDUISM — obliges each person to follow the ethical principles of Hinduism in their own life according to the responsibilities and duties of their position/class in society, this could encourage a person to work for social justice etc.",
+     "THE ZAKAT OF ISLAM — the fourth pillar of Islam, almsgiving demanded by God for the sake of equality and justice; encourages thinking of others and an awareness of those who are less well-off etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     11,
+     12
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-f-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "F",
+   "questionRef": "2017 HL Section F Q(b)",
+   "topicId": "re-f",
+   "conceptId": "just-war-theory-shows-understanding-war",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Profile how the ‘Just War’ theory shows an understanding of war as evil and tries to balance this with the principle of self‐defence.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of a religious perspective on violence by accurately tracing how the ‘Just War’ theory shows an understanding of war as sinful and tries to balance this with the principle of self-defence.",
+    "points": [
+     "Just War theory as defined by Augustine — all wars are sinful but war is sometimes the lesser of two evils; it is only in the hope of preventing a greater evil and restoring justice that war is to be considered; war is sometimes necessary as a means of protecting the innocent and the defence of violated rights etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     12
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-g-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "G",
+   "questionRef": "2017 HL Section G Q(a)(i)",
+   "topicId": "re-g",
+   "conceptId": "origins-meditation-form-prayer",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "The origins of meditation as a form of prayer.",
+   "stem": "Outline the similarities and differences between Buddhist and Christian meditation using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of Buddhist and Christian meditation by setting out accurate information on the similarities and differences between the beginnings/ basis of meditation as a form of prayer in the Buddhist and Christian traditions.",
+    "points": [
+     "Christian meditation dates back to the early Monastic period, similarly Buddhist meditation has historical roots that can be traced back to the founding story and the life of Siddhartha Gautama etc.",
+     "Christian meditation originated as a means to help a person to enter a union with Christ, whereas in Buddhism the origins of meditation are traced to the Buddha’s enlightenment etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     12,
+     13
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-g-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "G",
+   "questionRef": "2017 HL Section G Q(a)(ii)",
+   "topicId": "re-g",
+   "conceptId": "meditation-techniques-worship",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Meditation techniques used in worship.",
+   "stem": "Outline the similarities and differences between Buddhist and Christian meditation using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of Buddhist and Christian meditation by setting out accurate information on the similarities and differences between the methods of meditation used in worship in the Buddhist and Christian traditions.",
+    "points": [
+     "Both Buddhists and Christians use mindfulness techniques; both use mantras, however in Buddhism believers may repeat the ‘Om’ mantra, whereas in Christianity believers may use a quote from the Bible etc.",
+     "Buddhist meditation is an experience of emptying from consciousness that which is not part of the quest etc. whereas Christian meditation is an experience of encounter with God etc.",
+     "In Buddhist meditation ‘right mindfulness’ and ‘right concentration’ are essential; similarly in Christianity all distractions must be omitted, one must calmly focus on the topic of prayer etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     13
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-g-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "G",
+   "questionRef": "2017 HL Section G Q(b)",
+   "topicId": "re-g",
+   "conceptId": "role-ritual-symbol-play-way-sacrament",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Examine the role that ritual and symbol play in the way ‘sacrament’ is celebrated within two Christian denominations.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of sacrament in two Christian traditions by looking closely at the role that symbolic actions and objects play in the way ‘sacrament’ is celebrated within two Christian denominations.",
+    "points": [
+     "e. g. Anglican Communion — in the Eucharist the words and actions of Jesus are repeated in response to Jesus’ command at the Last Supper ‘Do this in remembrance of me’ etc.",
+     "e. g. the Sacrament of Baptism — initiation into the Christian faith symbolised in the use of symbolic objects and actions e.g. blessing with water, anointing, use of a white garment, lighting a candle etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     13,
+     14
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-h-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "H",
+   "questionRef": "2017 HL Section H Q(a)(i)",
+   "topicId": "re-h",
+   "conceptId": "literary-genre-type",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "The literary genre/type.",
+   "stem": "• THE TRANSFIGURATION (Mark 9:2‐13) • THE SERMON ON THE PLAIN (Luke 6:20‐49) • THE PROLOGUE (John 1:1‐18) Compare two of the New Testament texts listed above using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of biblical texts by giving an accurate account of a similarity and/or difference between the literary genre/type of two of the New Testament texts listed in the question.",
+    "points": [
+     "THE PROLOGUE AND THE TRANSFIGURATION — The Prologue is preface to the Gospel of John and a summary of his faith in Jesus Christ; similarly the symbolism of the Transfiguration story provides a heavenly confirmation of Jesus’ identity etc.",
+     "THE PROLOGUE AND THE SERMON ON THE PLAIN — The Prologue is a hymn filled with symbolic language whereas the Sermon on the Plain is a sermon which opens with the Beatitudes and closes with short parables etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     14
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-h-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "H",
+   "questionRef": "2017 HL Section H Q(a)(ii)",
+   "topicId": "re-h",
+   "conceptId": "original-background-context",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "The original background/context.",
+   "stem": "• THE TRANSFIGURATION (Mark 9:2‐13) • THE SERMON ON THE PLAIN (Luke 6:20‐49) • THE PROLOGUE (John 1:1‐18) Compare two of the New Testament texts listed above using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of biblical texts by giving an accurate account of a similarity and/or difference between the original background/context of two of the New Testament texts listed in the question.",
+    "points": [
+     "THE PROLOGUE AND THE TRANSFIGURATION — The Transfiguration story is preceded by texts that highlight the disciples’ lack of understanding of Jesus’ identity; this is different to the Prologue which is a profound theological reflection on the person of Jesus Christ highlighting his mission etc.",
+     "THE SERMON ON THE PLAIN AND THE TRANSFIGURATION — The Sermon on the Plain is placed at the beginning of Jesus’ ministry, it is addressed to the disciples and delivered before the crowds who had brought their sick to Jesus to be healed; the Transfiguration provides a heavenly confirmation of Jesus’ identity and calls on the disciples to heed his words etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     14,
+     15
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2017-hl-h-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2017,
+   "level": "higher",
+   "section": "H",
+   "questionRef": "2017 HL Section H Q(b)",
+   "topicId": "re-h",
+   "conceptId": "role-redaction-criticism-plays-study-synoptic",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Profile the role that redaction criticism plays in the study of the Synoptic Gospels.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2017 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of how the Bible came to be written by accurately tracing how the part played by the editor or redactor contributes to the study of the Synoptic Gospels.",
+    "points": [
+     "By using the skills of editing, selection, inclusion and omission the synoptic writers highlighted their own understanding of Jesus through the use of pattern, sequence, alterations and emphasis etc.",
+     "e.g. as the Gospel of Matthew was written for an audience of Jewish converts it emphasises the fulfilment of the Jewish expectations of Christ etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     15
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
    }
   }
  ]
