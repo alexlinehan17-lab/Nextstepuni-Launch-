@@ -54,7 +54,6 @@ import dcg_topics as DT                                      # noqa: E402
 import paper_census as PC                                    # noqa: E402
 from dcg_scheme import (CUE_FLOOR, DcgScheme, cue_score,     # noqa: E402
                         has_scheme)
-from markbank_authoring import anyN                          # noqa: E402
 
 SUBJECT = 'dcg'
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
@@ -114,6 +113,10 @@ def atlas_address(section, q):
 # row may show. A unit longer than this is split by the scheme's OWN named
 # groups, which is the only division of it the SEC printed.
 MAX_STEPS_SHOWN = 16
+# MAX_ROWS in types/markBank.ts: the most REQUIRED rows a fixed-tariff card may
+# carry. test/markBankDeck.test.ts enforces it, with a debt list it says never
+# to grow.
+MAX_ROWS = 6
 
 # ------------------------------------------------------------------ pairing
 def pair(units, leaves, texts):
@@ -271,6 +274,39 @@ def card_id(year, level, section, q, covered, ordinal, many):
         tail += romans[0]
     base = f'dcg-{year}-{level}-{section.lower()}{q}{tail}'
     return f'{base}-{ordinal}' if many else base
+
+
+# -------------------------------------------------------------------- rows
+def step_rows(card_id, title, steps):
+    """The scheme's priced steps as claim rows, each at its own printed marks.
+
+    A DCG drawing is priced as a run of construction steps, every one of them
+    REQUIRED and each worth its own printed mark. They were carried as one
+    anyN group ("All 3 of these -- 1 then 2 then 5 marks"), and an anyN group
+    pays by HOW MANY options are ticked, in the order the marks are listed:
+    ticking only dcg-2019-hl-a1b's 5-mark step scored 1. A step is a point the
+    student either drew or did not, so it is a row of its own, claimed on its
+    own, scored at its own price.
+
+    Up to MAX_ROWS steps, one point row per step. Past it -- 57 of the deck's
+    units price seven to sixteen steps -- one criterion row whose PARTS are the
+    steps, each awarded on its own at 0 or its printed marks: the model
+    Construction Studies prices its named components in, and the same claim,
+    since a part scores what is placed on it and nothing else.
+    """
+    if len(steps) <= MAX_ROWS:
+        return [{'id': f'{card_id}-r{i}', 'kind': 'point', 'verbatim': s.text,
+                 'marks': s.marks} for i, s in enumerate(steps, 1)]
+    total = sum(s.marks for s in steps)
+    return [{
+        'id': f'{card_id}-r1', 'kind': 'criterion', 'verbatim': title,
+        'marks': total, 'permittedMarks': [0, total],
+        'contextNote': 'The scheme prices this drawing step by step: award '
+                       'each step you drew its own marks.',
+        'parts': [{'id': f'step-{i}', 'verbatim': s.text, 'marks': s.marks,
+                   'permittedMarks': [0, s.marks]}
+                  for i, s in enumerate(steps, 1)],
+    }]
 
 
 # ----------------------------------------------------------------- figures
@@ -521,14 +557,7 @@ def author(bind_figures=True):
                         piece_ref = f'{ref} — {title}'
                     if label:
                         piece_id = f'{cid}-{piece_no}'
-                    rows = [anyN(
-                        f'{piece_id}-r1', options[0], marks, len(options),
-                        step_marks[0], options,
-                        'The scheme prices this drawing step by step: '
-                        + ', '.join(str(m) for m in step_marks)
-                        + f' — {marks} marks in all, in the order the scheme '
-                          'sets them out.',
-                        steps=step_marks if len(set(step_marks)) > 1 else None)]
+                    rows = step_rows(piece_id, title, steps)
                     cards.append({
                         'id': piece_id,
                         'topicId': topic,
