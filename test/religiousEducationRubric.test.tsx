@@ -10,7 +10,7 @@ import { describe, expect, test } from 'vitest';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 
 import ReligiousEducationRubricPanel, { bandHeading, religiousEducationMarks } from '@/components/MarkBank/ReligiousEducationRubricPanel';
-import { reAnswerScoreId, reCeilingScoreId, reWayScoreId } from '@/components/MarkBank/religiousEducationScoring';
+import { reAnswerBandId, reAnswerScoreId, reCeilingScoreId, reWayScoreId } from '@/components/MarkBank/religiousEducationScoring';
 import { tariffReconciles, type ReligiousEducationRubric, type SecRubricCard } from '@/types/markBank';
 
 const bands = [
@@ -48,7 +48,7 @@ describe('Religious Education band grid', () => {
     expect(religiousEducationMarks(card, { [reAnswerScoreId(0)]: 9, [reAnswerScoreId(1)]: 3, [reCeilingScoreId]: 1 })).toBe(8);
   });
 
-  test('the grid must cover 0 to the answer maximum exactly once and make the card total', () => {
+  test('the grid must cover 0 to the answer maximum and make the card total', () => {
     expect(tariffReconciles(card)).toBe(true);
     expect(tariffReconciles({ ...card, totalMarks: 10 })).toBe(false);
     const gap = { ...card, rubric: { ...rubric, bands: bands.filter(band => band.label !== 'FAIR') } };
@@ -156,6 +156,64 @@ describe('Religious Education band grid', () => {
       expect(tariffReconciles(gap)).toBe(false);
       const capped = { ...wayCard, rubric: { ...twoWays, ceilings: [{ when: 'If a candidate', max: 10 }] } };
       expect(tariffReconciles(capped)).toBe(false);
+    });
+  });
+
+  describe('bands that print the same mark', () => {
+    // 2019 Higher I(b)(i) prints 9-10, 6-8, 4-5, 3-4, 2-3, 1-2, 0-1: 1 to 4
+    // each sit in two bands. The student places the answer in the band they
+    // judge it fits; the mark is what scores.
+    const overlapping = [
+      { label: 'EXCELLENT', printed: '9 - 10', marks: [9, 10] },
+      { label: 'VERY GOOD', printed: '6 - 8', marks: [6, 7, 8] },
+      { label: 'GOOD', printed: '4 - 5', marks: [4, 5] },
+      { label: 'FAIR', printed: '3 - 4', marks: [3, 4] },
+      { label: 'WEAK', printed: '2 - 3', marks: [2, 3] },
+      { label: 'VERY WEAK', printed: '1 - 2', marks: [1, 2] },
+      { label: 'NO GRADE', printed: '0 - 1', marks: [0, 1] },
+    ];
+    const overlapRubric: ReligiousEducationRubric = {
+      ...rubric, answers: 1, answerMax: 10, gridHead: '10M', bands: overlapping, ceilings: undefined,
+    };
+    const overlapCard = { ...card, totalMarks: 10, rubric: overlapRubric } as typeof card;
+    const good = bandHeading('GOOD', '4 - 5');
+    const fair = bandHeading('FAIR', '3 - 4');
+
+    test('the grid reconciles though a mark sits in two bands', () => {
+      expect(tariffReconciles(overlapCard)).toBe(true);
+    });
+
+    test('the same mark is placeable in either band, and the band is remembered', () => {
+      const calls: Array<[string, number]> = [];
+      render(<ReligiousEducationRubricPanel card={overlapCard} scores={{}} onScore={(id, marks) => calls.push([id, marks])} />);
+      fireEvent.click(screen.getByRole('button', { name: `Claim 4 marks for ${fair}` }));
+      fireEvent.click(screen.getByRole('button', { name: `Claim 4 marks for ${good}` }));
+      expect(calls).toEqual([
+        [reAnswerBandId(0), 3], [reAnswerScoreId(0), 4],
+        [reAnswerBandId(0), 2], [reAnswerScoreId(0), 4],
+      ]);
+    });
+
+    test('only the band it was placed in shows the mark as chosen, and it scores the same either way', () => {
+      const inFair = { [reAnswerScoreId(0)]: 4, [reAnswerBandId(0)]: 3 };
+      const { unmount } = render(<ReligiousEducationRubricPanel card={overlapCard} scores={inFair} onScore={() => undefined} />);
+      expect(screen.getByRole('button', { name: `Clear 4 marks for ${fair}` })).toHaveAttribute('aria-pressed', 'true');
+      expect(screen.getByRole('button', { name: `Claim 4 marks for ${good}` })).toHaveAttribute('aria-pressed', 'false');
+      expect(screen.getAllByRole('button', { pressed: true })).toHaveLength(1);
+      unmount();
+      const inGood = { [reAnswerScoreId(0)]: 4, [reAnswerBandId(0)]: 2 };
+      render(<ReligiousEducationRubricPanel card={overlapCard} scores={inGood} onScore={() => undefined} />);
+      expect(screen.getByRole('button', { name: `Clear 4 marks for ${good}` })).toHaveAttribute('aria-pressed', 'true');
+      expect(screen.getByRole('button', { name: `Claim 4 marks for ${fair}` })).toHaveAttribute('aria-pressed', 'false');
+      expect(religiousEducationMarks(overlapCard, inFair)).toBe(4);
+      expect(religiousEducationMarks(overlapCard, inGood)).toBe(4);
+    });
+
+    test('a mark printed in one band only needs no band of its own', () => {
+      const calls: Array<[string, number]> = [];
+      render(<ReligiousEducationRubricPanel card={overlapCard} scores={{}} onScore={(id, marks) => calls.push([id, marks])} />);
+      fireEvent.click(screen.getByRole('button', { name: `Claim 7 marks for ${bandHeading('VERY GOOD', '6 - 8')}` }));
+      expect(calls).toEqual([[reAnswerScoreId(0), 7]]);
     });
   });
 });

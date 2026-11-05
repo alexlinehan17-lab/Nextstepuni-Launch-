@@ -49,6 +49,13 @@ export function reWay(rubric: ReligiousEducationRubric, scores: ReligiousEducati
  *  keeps its own placements, so marks placed on the way not chosen never score. */
 export const reAnswerScoreId = (index: number, way: 0 | 1 = 0): ReligiousEducationScoreId =>
   way === 1 ? `re:other:answer:${index + 1}` : `re:answer:${index + 1}`;
+/** The band an answer was placed in, by its position on the ladder. Kept only
+ *  where the placed mark is printed in more than one band (2019 Higher
+ *  I(b)(i) prints 3-4 and 2-3; 2018 Higher B(a)(i) prints one "1 ↑ 0" cell
+ *  beside three bands): the mark scores either way, and the band the
+ *  student chose is the one that shows it. */
+export const reAnswerBandId = (index: number, way: 0 | 1 = 0): ReligiousEducationScoreId =>
+  `${reAnswerScoreId(index, way)}:band`;
 /** The ceiling ticked, as its 1-based position in the rubric's ceilings; 0 for none. */
 export const reCeilingScoreId: ReligiousEducationScoreId = 're:ceiling';
 
@@ -76,6 +83,19 @@ export const reAnswerPlaced = (rubric: ReligiousEducationRubric, scores: Religio
   return value !== undefined && way.bands.some(band => band.marks.includes(value));
 };
 export const RE_UNPLACED = -1;
+
+/** Where an answer's placed mark shows: the band it was placed in when that
+ *  band prints the mark, else the first band that prints it; -1 when the
+ *  answer is not placed. On a grid whose bands do not overlap this is simply
+ *  the one band holding the mark. */
+export function reAnswerBand(rubric: ReligiousEducationRubric, scores: ReligiousEducationScores, index: number): number {
+  if (!reAnswerPlaced(rubric, scores, index)) return -1;
+  const way = reWay(rubric, scores);
+  const value = reAnswerValue(rubric, scores, index);
+  const chosen = scores[reAnswerBandId(index, way.way)];
+  if (chosen !== undefined && way.bands[chosen]?.marks.includes(value)) return chosen;
+  return way.bands.findIndex(band => band.marks.includes(value));
+}
 
 /** What one answer scores: its placed mark, held under a ticked ceiling. */
 export function reAnswerMarks(rubric: ReligiousEducationRubric, scores: ReligiousEducationScores, index: number): number {

@@ -1558,12 +1558,16 @@ export function rowPartsReconcile(row: MarkRow): boolean {
 export function tariffReconciles(card: SecCard): boolean {
   if (isRubricCard(card)) {
     if (card.rubric.system === 'religious-education') {
-      // One grid per answer: its bands cover 0..answerMax, each mark once,
-      // and the answers make the card's printed total.
+      // One grid per answer: its bands cover 0..answerMax, and the answers
+      // make the card's printed total.
       const { bands, answers, answerMax, ceilings, schemePages, schemeFileid, otherWay } = card.rubric;
+      // Every mark from 0 to the maximum is printed in some band and none
+      // outside it. A mark may sit in two bands where the scheme prints it so
+      // (overlapping ranges, or one range cell set beside several bands).
       const covers = (ranges: Array<{ printed: string; marks: number[] }>, max: number) => {
-        const marks = ranges.flatMap(band => band.marks).sort((a, b) => a - b);
-        return ranges.every(band => band.marks.length > 0 && band.printed.trim())
+        const marks = [...new Set(ranges.flatMap(band => band.marks))].sort((a, b) => a - b);
+        return ranges.every(band => band.marks.length > 0 && band.printed.trim()
+          && band.marks.every(mark => Number.isInteger(mark)))
           && marks.length === max + 1 && marks.every((mark, index) => mark === index);
       };
       return Boolean(schemeFileid)

@@ -18,8 +18,9 @@ import SourceMaterialReader from './SourceMaterialReader';
 import { ClaimDirections, ClaimRow, marksChip } from './ClaimRows';
 import {
   RE_UNPLACED,
+  reAnswerBand,
+  reAnswerBandId,
   reAnswerMarks,
-  reAnswerPlaced,
   reAnswerScoreId,
   reAnswerValue,
   reCeiling,
@@ -57,7 +58,7 @@ const Ladder: React.FC<{
 }> = ({ rubric, index, scores, onScore }) => {
   const way = reWay(rubric, scores);
   const value = reAnswerValue(rubric, scores, index);
-  const placed = reAnswerPlaced(rubric, scores, index);
+  const placedBand = reAnswerBand(rubric, scores, index);
   const ceiling = reCeiling(rubric, scores);
   const id = reAnswerScoreId(index, way.way);
   const label = way.answers > 1 ? `Answer ${index + 1} of ${way.answers}` : 'Your answer';
@@ -70,6 +71,10 @@ const Ladder: React.FC<{
       {way.bands.map((band, bandIndex) => {
         const above = ceiling !== null && Math.min(...band.marks) > ceiling;
         const steps = [...band.marks].sort((a, b) => b - a);
+        // The placed mark shows in the band it was placed in, and only there:
+        // a grid can print the same mark in two bands (overlapping ranges, or
+        // one range cell set beside several bands).
+        const here = placedBand === bandIndex;
         return (
           <div key={bandIndex} className="mb-re-band" data-above-ceiling={above}>
             <ClaimRow
@@ -77,10 +82,20 @@ const Ladder: React.FC<{
               note={band.descriptor?.join(' · ')}
               steps={steps}
               disabled={above}
-              claimed={placed && band.marks.includes(value)}
-              value={placed ? value : RE_UNPLACED}
+              claimed={here}
+              value={here ? value : RE_UNPLACED}
               onToggle={() => undefined}
-              onStep={step => onScore(id, placed && value === step ? RE_UNPLACED : step)}
+              onStep={step => {
+                if (here && value === step) {
+                  onScore(id, RE_UNPLACED);
+                  return;
+                }
+                // which band, kept only where the mark is printed in more than one
+                if (way.bands.filter(other => other.marks.includes(step)).length > 1) {
+                  onScore(reAnswerBandId(index, way.way), bandIndex);
+                }
+                onScore(id, step);
+              }}
             />
           </div>
         );
