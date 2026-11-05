@@ -75,16 +75,16 @@ AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', f'{SUBJECT}.jso
 # The Topic Atlas files every printed question under the syllabus headings it
 # was verified against, question by question. A card must sit under a topic its
 # own Atlas question carries, or a student browsing that topic finds the
-# question and not the card. From the 2010-2018 sittings on, a card whose
-# classified topic is not one of its question's Atlas topics takes the
-# question's primary Atlas topic: 2018 Higher B-3(c) classified as Rotation
-# for the words "true length", inside a question the Atlas files, rightly,
-# under Intersecting Planes. The 2019-2026 cards predate this rule; 77 of them
-# (43 questions) disagree with their Atlas question and are left as shipped
-# until that is decided.
+# question and not the card. A card whose classified topic is not one of its
+# question's Atlas topics takes the question's primary Atlas topic: 2018
+# Higher B-3(c) classified as Rotation for the words "true length", inside a
+# question the Atlas files, rightly, under Intersecting Planes. Applied to every
+# sitting since November 2026, when it moved 77 of the 2019-2026 cards.
+# The sittings whose cards carry a lettered parent's own words (ask_text).
+PARENT_TEXT_BEFORE = 2019
+
 ATLAS_TAGS = os.path.join(ROOT, 'scripts', 'paper-trail', 'topic-tags', 'tags',
                           'design-and-communication-graphics.json')
-ATLAS_TOPICS_BEFORE = 2019
 
 
 @functools.lru_cache(maxsize=None)
@@ -602,7 +602,7 @@ def author(bind_figures=True):
                 question = ask_text(
                     covered, texts, P.parent_text(section, q, covered[0][2]),
                     (lambda lt: P.parent_text(section, q, lt))
-                    if year < ATLAS_TOPICS_BEFORE else None)
+                    if year < PARENT_TEXT_BEFORE else None)
                 if len(question) < 12:
                     note('the paper prints no ask at this address', unit.title)
                     continue
@@ -630,15 +630,14 @@ def author(bind_figures=True):
                 if topic is None:
                     note('files under no syllabus heading', why)
                     continue
-                if year < ATLAS_TOPICS_BEFORE:
-                    tags = atlas_topics().get(
-                        (year, LEVEL_WORD[level]) + atlas_address(section, q))
-                    if not tags:
-                        note('the Topic Atlas lists no question at this '
-                             'address', ref)
-                        continue
-                    if topic not in tags:
-                        topic = tags[0]
+                tags = atlas_topics().get(
+                    (year, LEVEL_WORD[level]) + atlas_address(section, q))
+                if not tags:
+                    note('the Topic Atlas lists no question at this '
+                         'address', ref)
+                    continue
+                if topic not in tags:
+                    topic = tags[0]
                 figure = figures.get((year, level, section, q))
                 if cardlint.NAMES_LETTERS.search(f'{stem} {question}') \
                         and not cardlint.INVITES_DRAWING.search(question):

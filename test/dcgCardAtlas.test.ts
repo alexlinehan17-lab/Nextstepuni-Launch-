@@ -87,12 +87,12 @@ describe('DCG cards in the Topic Atlas', () => {
     expect(missing).toEqual([]);
   });
 
-  it('files every 2010-2018 card under a topic its Atlas question carries', () => {
+  it('files every card under a topic its Atlas question carries', () => {
     const index = new Map<string, string[]>(tags.filter(p => p.lang === 'ev').flatMap(p => p.q.map(
       (q): [string, string[]] => [`${p.year}|${p.level}|${p.paperKey}|${q.n}`, [q.primary, ...(q.secondary ? [q.secondary] : [])]],
     )));
     const disagree: string[] = [];
-    for (const card of cards.filter(c => c.year < 2019)) {
+    for (const card of cards) {
       const [, section, q] = card.questionRef.match(/Section ([ABC]) Q(\d)/)!;
       const { paperKey, n } = atlasAddress(section, Number(q));
       const topics = index.get(`${card.year}|${card.level}|${paperKey}|${n}`) ?? [];
