@@ -1628,7 +1628,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2017 Ordinary Level — © State Examinations Commission.",
     id: "tech-2017-ol-c4c-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2017 OL Section C Q4(c)(i)",
-    stem: "Customers have complained that the quality of the sandwich bread is occasionally poor. To help resolve this issue, the sandwich company used a cause and effect diagram to identify possible causes of the problem. Cause Effect Staff Process Equipment Poor Quality Bread Management Environment Ingredients",
+    stem: "Customers have complained that the quality of the sandwich bread is occasionally poor. To help resolve this issue, the sandwich company used a cause and effect diagram to identify possible causes of the problem.",
     questionText: "Suggest how the equipment used and/or staff could be the primary cause for the poor quality of the sandwich bread.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -1651,7 +1651,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2017 Ordinary Level — © State Examinations Commission.",
     id: "tech-2017-ol-c4c-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2017 OL Section C Q4(c)(ii)",
-    stem: "Customers have complained that the quality of the sandwich bread is occasionally poor. To help resolve this issue, the sandwich company used a cause and effect diagram to identify possible causes of the problem. Cause Effect Staff Process Equipment Poor Quality Bread Management Environment Ingredients",
+    stem: "Customers have complained that the quality of the sandwich bread is occasionally poor. To help resolve this issue, the sandwich company used a cause and effect diagram to identify possible causes of the problem.",
     questionText: "Outline two benefits for a business which uses cause and effect diagrams to resolve quality related issues.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [
@@ -3211,7 +3211,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2018 Ordinary Level — © State Examinations Commission.",
     id: "tech-2018-ol-c4a-i", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2018 OL Section C Q4(a)(i)",
-    stem: "Manufacturers use different production processes to make products. The production process used often depends on the quantity of items to be made. An oil painting A sports club hat Drinks bottles",
+    stem: "Manufacturers use different production processes to make products. The production process used often depends on the quantity of items to be made.",
     questionText: "Name a suitable production process for any two of the items above.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 6,
     rows: [
@@ -3234,7 +3234,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2018 Ordinary Level — © State Examinations Commission.",
     id: "tech-2018-ol-c4a-ii", topicId: "tech-opt-manufacturing", conceptId: "opt-manufacturing",
     section: "C", questionRef: "2018 OL Section C Q4(a)(ii)",
-    stem: "Manufacturers use different production processes to make products. The production process used often depends on the quantity of items to be made. An oil painting A sports club hat Drinks bottles",
+    stem: "Manufacturers use different production processes to make products. The production process used often depends on the quantity of items to be made.",
     questionText: "Suggest two factors a manufacturer must consider when choosing the most appropriate production process to use for a new product.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6+4)"}, totalMarks: 4,
     rows: [

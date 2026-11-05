@@ -2256,6 +2256,16 @@ ASK_STRIP = {
     # 2017 Ordinary Q8: the WBS's letters and the box labels, at the end of
     # the stem.
     (2017, 'ol', 'A', 8, None, None): [r'\s+A D F H Advantage: Start Finish B G E C Task D: Task E:$'],
+    # 2017 Higher Q6: the "©" beside the company's logo, read onto the stem.
+    (2017, 'hl', 'A', 6, None, 'i'): [r'\s+©$'],
+    (2017, 'hl', 'A', 6, None, 'ii'): [r'\s+©$'],
+    # 2017 Ordinary 4(c): the cause and effect diagram's lettering (the crop
+    # carries it), read onto the stem.
+    (2017, 'ol', 'C', 4, 'c', 'i'): [r'(?:^|\s+)Cause Effect Staff Process Equipment Poor Quality Bread Management Environment Ingredients(?: OR)?$'],
+    (2017, 'ol', 'C', 4, 'c', 'ii'): [r'(?:^|\s+)Cause Effect Staff Process Equipment Poor Quality Bread Management Environment Ingredients(?: OR)?$'],
+    # 2018 Ordinary 4(a): the three pictures' captions.
+    (2018, 'ol', 'C', 4, 'a', 'i'): [r'(?:^|\s+)An oil painting A sports club hat Drinks bottles$'],
+    (2018, 'ol', 'C', 4, 'a', 'ii'): [r'(?:^|\s+)An oil painting A sports club hat Drinks bottles$'],
     # 2017 Ordinary 1(b): the printed start of the flowchart, read onto the
     # end of the letter's stem (the crop carries it).
     (2017, 'ol', 'C', 1, 'b', 'i'): [r'(?:^|\s+)Start Button\? N Y Motor Forward Micro- Switch\?(?: N Y Motor Stop)?$'],

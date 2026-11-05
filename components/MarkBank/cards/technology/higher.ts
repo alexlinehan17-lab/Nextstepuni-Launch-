@@ -221,7 +221,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2017 Higher Level — © State Examinations Commission.",
     id: "tech-2017-hl-a6-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "A", questionRef: "2017 HL Section A Q6(i)",
-    stem: "DOWN2EARTH materials are an Irish company specialising in sustainable food service packaging. Working alongside VEGWARE, they supply Ireland’s largest range of certified compostable products and packaging to a wide variety of businesses in the food, catering, and event sectors. ©",
+    stem: "DOWN2EARTH materials are an Irish company specialising in sustainable food service packaging. Working alongside VEGWARE, they supply Ireland’s largest range of certified compostable products and packaging to a wide variety of businesses in the food, catering, and event sectors.",
     questionText: "Give one example of a compostable consumer product.",
     tariffModel: {"kind":"fixed","notation":"(2+4 marks)"}, totalMarks: 2,
     rows: [
@@ -235,7 +235,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2017 Higher Level — © State Examinations Commission.",
     id: "tech-2017-hl-a6-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "A", questionRef: "2017 HL Section A Q6(ii)",
-    stem: "DOWN2EARTH materials are an Irish company specialising in sustainable food service packaging. Working alongside VEGWARE, they supply Ireland’s largest range of certified compostable products and packaging to a wide variety of businesses in the food, catering, and event sectors. ©",
+    stem: "DOWN2EARTH materials are an Irish company specialising in sustainable food service packaging. Working alongside VEGWARE, they supply Ireland’s largest range of certified compostable products and packaging to a wide variety of businesses in the food, catering, and event sectors.",
     questionText: "Outline two advantages of using compostable products.",
     tariffModel: {"kind":"fixed","notation":"(2+4 marks)"}, totalMarks: 4,
     rows: [
