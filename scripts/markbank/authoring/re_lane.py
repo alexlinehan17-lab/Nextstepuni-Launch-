@@ -33,6 +33,7 @@ point-card file (scripts/markbank/authored/religious-education.json) at the
 same time, so no ask is carded twice. Shipped ids are kept: the id is the
 same function of the address re_all.py used.
 """
+import collections
 import json
 import os
 import re
@@ -76,6 +77,9 @@ DISAGREE = {
 
 class LaneError(Exception):
     pass
+
+
+HEAD_TIMES = []        # asks whose "x 2" is read off the ask's head, not the grid
 
 
 # The subset fonts' broken text layer, repaired as build-deck repairs a point
@@ -178,24 +182,132 @@ def _marks_of(cell):
     return list(range(min(a, b), max(a, b) + 1))
 
 
+# Words the sitting's scheme prints, for rejoining a word a narrow grid cell
+# wraps WITHOUT a hyphen ("substanti" / "al errors(s)", 2023 Ordinary H(a)).
+VOCAB = collections.Counter()
+
+
+def _cell(text):
+    lines = [l.strip() for l in str(text or '').split('\n') if l.strip()]
+    out = ''
+    for line in lines:
+        if out and VOCAB:
+            left = re.search(r'([a-z]+)$', out)
+            right = re.match(r'([a-z]+)', line)
+            if left and right:
+                whole = left.group(1) + right.group(1)
+                # joined only when the whole word is printed more often than
+                # either fragment: the md carries the same wrap once or twice
+                if VOCAB[whole] > max(VOCAB[left.group(1)], VOCAB[right.group(1)]):
+                    out += line
+                    continue
+        out = f'{out} {line}' if out else line
+    return ws(out)
+
+
+def _rows(table):
+    rows = [[_cell(c) for c in row] for row in table.extract()]
+    return [r for r in rows if any(r)]
+
+
+def _is_band_header(row):
+    return bool(row) and bool(BAND_WORD.search(' '.join(row[1:])))
+
+
+def _has_marks_row(rows):
+    return any(r[1:] and all(_marks_of(c) for c in r[1:] if c) and any(r[1:]) and
+               sum(1 for c in r[1:] if c) >= 3 for r in rows[1:])
+
+
+def _merge_fragments(rows):
+    """A cell whose text the table reader cut across two rows -- 2024
+    Ordinary's "Completely" over "& clearly relevant", one printed cell -- is
+    put back together: a row with no criterion of its own (first cell empty)
+    below the header joins the row under it when that row names a criterion,
+    and otherwise the row above."""
+    out = [rows[0]]
+    pending = None
+    for row in rows[1:]:
+        if not row[0] and not all(_marks_of(c) for c in row[1:] if c):
+            pending = row if pending is None else [ws(f'{a} {b}') for a, b in zip(pending, row)]
+            continue
+        if pending is not None:
+            row = [ws(f'{a} {b}') if k else b for k, (a, b) in enumerate(zip(pending, row))]
+            pending = None
+        out.append(row)
+    if pending is not None:
+        out[-1] = [ws(f'{a} {b}') for a, b in zip(out[-1], pending)]
+    return out
+
+
+class _Table:
+    """A table's box and rows, read once: a later find_tables() call on the
+    same page invalidates the earlier result's cells (2026 Higher p20's grid
+    read back EMPTY after the page-wide table above it was re-read)."""
+    def __init__(self, bbox, rows):
+        self.bbox, self.rows = tuple(bbox), rows
+
+
+def _read(page, clip=None):
+    found = page.find_tables(clip=clip).tables if clip is not None else page.find_tables().tables
+    return [_Table(t.bbox, _rows(t)) for t in found]
+
+
+def _page_tables(page):
+    """The page's tables, with a page-wide layout table (2024 Ordinary sets
+    the prose above a grid and the grid in one table that spans the page,
+    offsetting every column by one) re-read inside the content columns."""
+    out = []
+    for table in _read(page):
+        if table.bbox[0] < 40 and table.bbox[2] > page.rect.width - 40:
+            out.extend(_read(page, pymupdf.Rect(60, table.bbox[1], page.rect.width - 40, table.bbox[3])))
+        else:
+            out.append(table)
+    return out
+
+
 def read_grids(year, level):
     """Every exam band grid in the scheme, in page order. A coursework grid
     (the journal's "Set Points" / "Set Questions" tables) is not an exam ask
-    and is skipped."""
+    and is skipped. A grid the page break cuts in two (2024: the header and
+    first rows at the foot of one page, the rest at the head of the next) is
+    read back as one, its continuation re-read inside the first part's
+    columns so a page-wide layout table above it cannot shift them."""
     doc = pymupdf.open(os.path.join(schemes_dir(), f'{year}-{level}.pdf'))
+    VOCAB.clear()
+    VOCAB.update(re.findall(r'[a-z]+', open(os.path.join(schemes_dir(), f'{year}-{level}.md'),
+                                         encoding='utf8').read().lower()))
     out = []
+    taken = set()                 # (page, rounded top) of continuations already read
     for pno, page in enumerate(doc):
-        for table in page.find_tables().tables:
-            rows = [[ws(c) for c in row] for row in table.extract()]
-            rows = [r for r in rows if any(r)]
-            if not rows or not BAND_WORD.search(' '.join(rows[0][1:])):
+        for table in _page_tables(page):
+            if (pno, round(table.bbox[1])) in taken:
                 continue
+            rows = table.rows
+            start = next((i for i, r in enumerate(rows) if _is_band_header(r)), None)
+            if start is None:
+                continue
+            rows = rows[start:]          # prose the table reader swept in above the grid
             if re.search(r'Set\s+(?:Points|Ques)', ' '.join(rows[0])):
                 continue
+            if not _has_marks_row(rows) and pno + 1 < doc.page_count:
+                x0, x1 = table.bbox[0], table.bbox[2]
+                nxt = doc[pno + 1]
+                cont = sorted(_read(nxt, pymupdf.Rect(x0 - 2, 0, x1 + 2, nxt.rect.height)),
+                              key=lambda t: t.bbox[1])
+                cont = [t for t in cont if t.rows]
+                if cont and not _is_band_header(cont[0].rows[0]):
+                    more = cont[0].rows
+                    width = max(len(r) for r in rows + more)
+                    rows = [r + [''] * (width - len(r)) for r in rows] + [r + [''] * (width - len(r)) for r in more]
+                    for t in _page_tables(nxt):
+                        if t.bbox[1] <= cont[0].bbox[3] and t.bbox[3] >= cont[0].bbox[1]:
+                            taken.add((pno + 1, round(t.bbox[1])))
             width = max(len(r) for r in rows)
             rows = [r + [''] * (width - len(r)) for r in rows]
             keep = [j for j in range(width) if any(r[j] for r in rows)]
             rows = [[r[j] for j in keep] for r in rows]
+            rows = _merge_fragments(rows)
             # A header the scheme sets over several range columns ("WEAK - VERY
             # WEAK - NO GRADE" over 7-5 and 4-0) leaves the later columns
             # blank: each range carries the label printed over it.
@@ -271,9 +383,15 @@ def md_page_of(scheme):
 
 
 def shipped_cards():
-    if not os.path.exists(POINT_JSON):
-        return {}
-    return {c['id']: c for c in json.load(open(POINT_JSON, encoding='utf8'))}
+    """Every RE card already shipped, by id: the point cards not yet rebuilt and
+    the band-grid cards already built, so a rebuild keeps topic, concept and
+    stem whichever deck the card is in."""
+    out = {}
+    if os.path.exists(POINT_JSON):
+        out.update({c['id']: c for c in json.load(open(POINT_JSON, encoding='utf8'))})
+    if os.path.exists(RUBRIC_JSON):
+        out.update({c['id']: c for c in json.load(open(RUBRIC_JSON, encoding='utf8'))['cards']})
+    return out
 
 
 def build_sitting(year, level, shipped=None):
@@ -303,6 +421,14 @@ def build_sitting(year, level, shipped=None):
         problem = grid_problem(grid)
         if problem:
             raise LaneError(f'{where}: {grid}: {problem}')
+        # A grid whose marks cell omits the "x 2" its own ask's head prints
+        # (2024 Ordinary B(a): head "(20M x 2)", grid "20 Marks", "Code MC
+        # x 2" above it) is the per-answer grid of a two-answer ask: the
+        # scheme says so on the head, so the head's multiplier is read.
+        if (grid.times == 1 and grid.per * 2 == ask.total
+                and re.search(r'[x×]\s*2', ask.notation or '', re.I)):
+            grid.times = 2
+            HEAD_TIMES.append(where)
         total = grid.per * grid.times
         paper_marks = P.marks.get(key)
         note = DISAGREE.get((year, level, key))
@@ -415,6 +541,8 @@ def main(argv):
         kept = sum(1 for c in cards if c['id'] in shipped_cards())
         print(f'{year} {level}: {len(cards)} cards ({kept} shipped ids kept), {x2} two-answer grids, '
               f'{ceil} ceilings, {sum(c["totalMarks"] for c in cards)} marks')
+        for where in HEAD_TIMES:
+            print(f'   x 2 read off the head: {where}')
     elif cmd == 'show':
         for c in cards:
             r = c['rubric']
