@@ -1049,22 +1049,6 @@
     ]
    }
   },
-  "cs-2023-ol-q4": {
-   "reason": "The scheme awards a six-mark holistic conversion answer with partial-credit bands; the parser incorrectly turned alternative workings and the word OR into six 1-mark claims. The complete required result is one all-or-nothing answer row.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "rows": [
-     {
-      "id": "r-answer",
-      "kind": "allOf",
-      "verbatim": "Ans: 1110",
-      "marks": 6
-     }
-    ]
-   }
-  },
   "cs-2024-hl-q13-c": {
    "reason": "The paper asks for reasons on both sides of the AI-pause initiative, with up to two 3-mark points per side. The parser inverted the scenario and ask and turned headings, examples and tariff prose into twelve 1-mark rows.",
    "set": {
@@ -1196,46 +1180,6 @@
       "kind": "allOf",
       "verbatim": "0 2 4 6 8 10",
       "marks": 6
-     }
-    ]
-   }
-  },
-  "cs-2025-hl-q11": {
-   "reason": "The scheme awards 3 marks for one advantage and 3 for one potential risk. The parser captured only the heading ‘Advantage’; both complete bounded answer pools are restored from the inspected scheme page.",
-   "set": {
-    "rows": [
-     {
-      "id": "r-advantage",
-      "kind": "anyN",
-      "verbatim": "One advantage of personalised political content",
-      "marks": null,
-      "openList": true,
-      "group": {
-       "claimMax": 1,
-       "perOption": 3,
-       "options": [
-        "Voters receive content relevant to their interests.",
-        "Helps voters make informed decisions.",
-        "Encourages greater engagement potentially leading to higher turnouts.",
-        "Political parties can focus their resources on reaching the right audience, saving time and money."
-       ]
-      }
-     },
-     {
-      "id": "r-risk",
-      "kind": "anyN",
-      "verbatim": "One potential risk of personalised political content",
-      "marks": null,
-      "openList": true,
-      "group": {
-       "claimMax": 1,
-       "perOption": 3,
-       "options": [
-        "Users may only see content that agrees with their views, limiting exposure to other perspectives (echo chambers/filter bubbles).",
-        "Algorithms may spread false or misleading information tailored to a user's preferences.",
-        "Privacy concerns."
-       ]
-      }
      }
     ]
    }

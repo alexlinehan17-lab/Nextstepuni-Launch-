@@ -905,7 +905,7 @@ export const CARDS: SecCard[] = [
     questionText: "Convert the decimal number 14 to a binary number.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-answer", kind: "allOf", verbatim: "Ans: 1110", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Ans: 1110", marks: 6, contextNote: "Correct answer 6 marks Half correct conversion 4 marks Any valid conversion 2 marks", permittedMarks: [0,2,4,6] },
     ],
     figure: {
           "candId": "computer-science-2023-OL-scheme-q4",

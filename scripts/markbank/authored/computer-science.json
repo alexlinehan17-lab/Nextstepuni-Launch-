@@ -8975,7 +8975,7 @@
  {
   "id": "cs-2025-hl-q1",
   "topicId": "cs-2-2",
-  "conceptId": "output-following-python-code-1-5",
+  "conceptId": "output-python-code",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -8990,12 +8990,43 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Output",
-    "marks": 6
+    "verbatim": "5",
+    "marks": 1,
+    "contextNote": "Each correct response in order 1 mark All correct values on 1 line 4 marks Any two correct values in the proper sequence 2 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "10",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "20",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "2",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "1",
+    "marks": 1
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 1
    }
   ],
-  "stem": "State the output of the following Python code.",
-  "figureKey": "computer-science-2025-HL-paper-q1-code0"
+  "questionFigureKey": "computer-science-2025-HL-paper-q1-code0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q2",
@@ -9014,17 +9045,33 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Memory Usage",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "Memory Usage — ASCII is a fixed width encoding system that uses 7 bits allowing for 128 unique characters, which makes it very memory-efficient for English text. Extended ASCII uses 8 bits and therefore supports a maximum of 256 characters. • Unicode may use 1 to 4 bytes per character, which can increase memory usage but allow over 1.1 million characters to be represented (including symbols from non-Roman character sets, mathematical symbols, emojis etc.).",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "For each feature: Very good explanation - clear understanding demonstrated 3 marks Fair explanation - limited understanding 2 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Compatibility — Unicode was designed to be backward compatible with ASCII (the first 128 characters in Unicode are identical to ASCII). • Unicode offers far greater compatibility than ASCII. Because it supports characters from all languages, it enables applications in different countries to communicate seamlessly with one another.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ]
    }
-  ],
-  "stem": "ASCII and Unicode are both examples of character encoding systems. Compare ASCII and Unicode under the headings, memory usage and compatibility."
+  ]
  },
  {
   "id": "cs-2025-hl-q4",
   "topicId": "cs-2-3",
-  "conceptId": "two-key-functions-operating-system-resource",
+  "conceptId": "key-functions-operating-system-resource-management",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9038,18 +9085,28 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Resource Management refers to how the operating system controls and coordinates the computer’s hardware resources such as CPU time, memory (RAM), secondary storage and input/output devices.",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "For each function: Very good explanation - clear understanding demonstrated 3 marks Fair explanation - limited understanding 2 mark"
    },
    {
     "id": "r-2",
-    "kind": "point",
-    "verbatim": "File management refers to how the operating system organises and keeps track of files on storage devices (like hard drives or USB drives) and ensures they can be created, accessed or modified when needed. For each function:",
-    "marks": 3
+    "kind": "criterion",
+    "verbatim": "File management refers to how the operating system organises and keeps track of files on storage devices (like hard drives or USB drives) and ensures they can be created, accessed or modified when needed.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ]
    }
-  ],
-  "stem": "Two key functions of an operating system are resource management and file management. Explain what is meant by the terms ‘resource management’ and ‘file management’."
+  ]
  },
  {
   "id": "cs-2025-hl-q5",
@@ -9060,7 +9117,7 @@
   "subjectId": "computer-science",
   "section": "A",
   "questionRef": "2025 HL Q5",
-  "questionText": "In web design, colours are often represented using a hexadecimal code which defines the red, green, and blue (RGB) components of the colour. For example, the hex colour #0A33F0 represents a shade of blue, where:  the first two characters (0A) represent the red component.  the next two characters (33) represent the green component.  the last two characters (F0) represent the blue component. Each component is represented in hexadecimal from 00 to FF (0 to 255 in decimal). Convert the hexadecimal colour #0A33F0 to its RGB decimal values.",
+  "questionText": "In web design, colours are often represented using a hexadecimal code which defines the red, green, and blue (RGB) components of the colour. For example, the hex colour #0A33F0 represents a shade of blue, where: • the first two characters (0A) represent the red component. • the next two characters (33) represent the green component. • the last two characters (F0) represent the blue component. Each component is represented in hexadecimal from 00 to FF (0 to 255 in decimal). Convert the hexadecimal colour #0A33F0 to its RGB decimal values.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9068,17 +9125,59 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Red: 0A in hex = 10 in decimal",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "Answer: RGB(10, 51, 240)",
+    "marks": 6,
+    "parts": [
+     {
+      "id": "p-1",
+      "verbatim": "Red:",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "p-2",
+      "verbatim": "Green:",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "p-3",
+      "verbatim": "Blue:",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "contextNote": "For each conversion: Correct response: 2 marks Response with some merit 1 mark"
    }
   ],
-  "stem": "In web design, colours are often represented using a hexadecimal code which defines the red, green, and blue (RGB) components of the colour. For example, the hex colour #0A33F0 represents a shade of blue, where:  the first two characters (0A) represent the red component.  the next two characters (33) represent the green component.  the last two characters (F0) represent the blue component. Each component is represented in hexadecimal from 00 to FF (0 to 255 in decimal). Convert the hexadecimal colour #0A33F0 to its RGB decimal values."
+  "figureKey": "computer-science-2025-HL-scheme-q5"
  },
  {
   "id": "cs-2025-hl-q6",
   "topicId": "cs-1-2",
-  "conceptId": "referring-quote-below-professor-timothy-miller",
+  "conceptId": "referring-quote-professor-timothy-miller-university",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9092,17 +9191,45 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Improved accuracy. AI systems can detect patterns that may be missed by human doctors, potentially leading to more accurate diagnoses.",
-    "marks": 6
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "Faster diagnosis. AI can quickly analyse medical images, test results, and patient records, reducing the time it takes to reach a diagnosis.",
+     "Early detection. AI can help identify diseases such as cancers or neurological conditions at an earlier stage thus improving the chances of successful treatment.",
+     "Reduced workload for doctors. By handling routine diagnostic tasks, AI allows medical professionals to focus on more complex or urgent cases.",
+     "Availability. AI systems can be available 24 hours a day 7 days a week making medical care more available to patients. They can also be used in areas with limited access to specialists."
+    ],
+    "contextNote": "Benefit: Any other valid benefit described. For each part: Very good description - clear understanding demonstrated 3 marks Fair description – limited understanding 2 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Lack of human judgement. AI cannot fully understand patient emotions which can be essential in making well-rounded clinical decisions.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "Possible lack of accuracy. If AI systems are trained on biased or incomplete data, they can produce inaccurate or unfair results, especially for underrepresented groups. Also, if new diseases emerge after the AI is trained, it might not have sufficient information to make a correct diagnosis.",
+     "Ethical concerns regarding patient privacy, data security and accountability. AI systems require access to large amounts of patient data, raising concerns about how this sensitive information is stored and used. Also, it can often be difficult to understand how AI systems arrive at a diagnosis, which can reduce trust and accountability.",
+     "High costs. Developing, and maintaining advanced AI systems can be expensive and require significant technical infrastructure and expertise."
+    ],
+    "contextNote": "Limitations Any other valid limitation described. For each part: Very good description - clear understanding demonstrated 3 marks Fair description – limited understanding 2 mark"
    }
-  ],
-  "stem": "Referring to the quote below from Professor Timothy Miller, University of Melbourne, describe one benefit and one limitation of using artificial intelligence (AI) in the area of medical diagnosis. Will a computer take your job? It’s predicted that computers could one day become smarter than humans, but we shouldn’t forget people power in the age of artificial intelligence."
+  ]
  },
  {
   "id": "cs-2025-hl-q7-a",
-  "topicId": "cs-2-3",
-  "conceptId": "each-search-algorithm",
+  "topicId": "cs-2-2",
+  "conceptId": "search-algorithm",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9118,7 +9245,8 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Algorithm 1: Linear search",
-    "marks": 1
+    "marks": 1,
+    "contextNote": "Each correct response: 1 mark"
    },
    {
     "id": "r-2",
@@ -9127,13 +9255,14 @@
     "marks": 1
    }
   ],
-  "stem": "A binary question is a question that has two possible answers – yes or no. The diagrams, in Figure 1 and Figure 2 below, describe how binary questions can be chained together to determine the outcome of tossing a six-sided dice. Two different search algorithms are illustrated. Figure 1: Algorithm 1 (tree depth = 5) Figure 2: Algorithm 2 (tree depth = 3)",
-  "figureKey": "computer-science-2025-HL-paper-q7-fig0"
+  "stem": "A binary question is a question that has two possible answers – yes or no. The diagrams, in Figure 1 and Figure 2 below, describe how binary questions can be chained together to determine the outcome of tossing a six-sided dice. Two different search algorithms are illustrated.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q7-figs",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q7-b",
-  "topicId": "cs-2-3",
-  "conceptId": "suggest-two-algorithms-most-efficient-justify",
+  "topicId": "cs-2-2",
+  "conceptId": "algorithms-most-efficient-justify-answer",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9147,24 +9276,28 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Linear search may be more efficient as there is no sort overhead. Also, target item will sometimes be the first item (or one of the first items) in the list. For relatively small lists this can be more efficient than a binary search. OR",
-    "marks": 2
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "In general, binary search is more efficient as at worst it just requires log(n) operations to complete its task. Linear search on the other hand requires O(n) operations.",
-    "marks": 2
+    "kind": "criterion",
+    "verbatim": "Linear search may be more efficient as there is no sort overhead. Also, target item will sometimes be the first item (or one of the first items) in the list. For relatively small lists this can be more efficient than a binary search.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "accepts": [
+     "In general, binary search is more efficient as at worst it just requires log(n) operations to complete its task. Linear search on the other hand requires O(n) operations."
+    ],
+    "contextNote": "Very good justification - clear understanding demonstrated 4 marks Fair justification – limited understanding 2 mark"
    }
   ],
-  "stem": "A binary question is a question that has two possible answers – yes or no. The diagrams, in Figure 1 and Figure 2 below, describe how binary questions can be chained together to determine the outcome of tossing a six-sided dice. Two different search algorithms are illustrated. Figure 1: Algorithm 1 (tree depth = 5) Figure 2: Algorithm 2 (tree depth = 3)",
-  "figureKey": "computer-science-2025-HL-paper-q7-fig0"
+  "stem": "A binary question is a question that has two possible answers – yes or no. The diagrams, in Figure 1 and Figure 2 below, describe how binary questions can be chained together to determine the outcome of tossing a six-sided dice. Two different search algorithms are illustrated.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q7-figs",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q9-a",
   "topicId": "cs-2-2",
-  "conceptId": "there-number-syntax-errors-code-identify",
+  "conceptId": "there-number-syntax-errors-code-these",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9178,18 +9311,31 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "Any two syntax errors from the following:",
-    "marks": 2
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "Line 1. Incorrect case - For instead of for",
+      "Line 3. Missing closing bracket",
+      "Line 5. Missing opening quote",
+      "Line 8. Missing colon after else",
+      "Line 9. Variable number is undefined"
+     ]
+    },
+    "contextNote": "Each syntax error 1 mark"
    }
   ],
-  "stem": "The intention of the Python code below is to scan through all integers from 1 to 20 inclusive and:  if the integer is evenly divisible by both 3 and 5, display the word FizzBuzz.  if the integer is evenly divisible by 3 and not divisible by 5 display the word Fizz.  if the integer is evenly divisible by 5 and not divisible by 3 display the word Buzz.",
-  "figureKey": "computer-science-2025-HL-paper-q9-code0"
+  "stem": "The intention of the Python code below is to scan through all integers from 1 to 20 inclusive and: • if the integer is evenly divisible by both 3 and 5, display the word FizzBuzz. • if the integer is evenly divisible by 3 and not divisible by 5 display the word Fizz. • if the integer is evenly divisible by 5 and not divisible by 3 display the word Buzz.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q9-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q10",
   "topicId": "cs-1-2",
-  "conceptId": "list-two-examples-how-computing-technology",
+  "conceptId": "list-examples-computing-technology-automate-processes",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9203,12 +9349,48 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Examples Limitations",
-    "marks": 6
+    "kind": "anyN",
+    "verbatim": "Any two from the following:",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Customer support chatbots",
+      "Online shopping recommendations",
+      "Self-driving cars",
+      "Medical diagnosis (or monitoring)",
+      "Smart home systems",
+      "Banking transactions (e.g. payments)",
+      "Payroll systems",
+      "School/college administration systems"
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each example 2 marks Any other valid example"
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Limitations",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "High development/maintenance cost",
+      "Job displacement",
+      "Errors in data can lead to mistakes in outcomes.",
+      "Security (vulnerable to cyberattacks)",
+      "Ethical concerns (e.g. privacy, fairness, accountability)",
+      "Limited human understanding",
+      "Any other valid limitation"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Limitation: Very good explanation - clear understanding demonstrated 2 marks"
    }
-  ],
-  "stem": "List two examples of how computing technology is used to automate processes. Outline one limitation of either example."
+  ]
  },
  {
   "id": "cs-2025-hl-q11",
@@ -9227,17 +9409,43 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Advantage",
-    "marks": 6
+    "kind": "criterion",
+    "verbatim": "Voters receive content relevant to their interests.",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "Helps voters make informed decisions.",
+     "Encourages greater engagement potentially leading to higher turnouts.",
+     "Political parties can focus their resources on reaching the right audience, saving time and money."
+    ],
+    "contextNote": "Advantage Any other valid advantage. For each advantage/disadvantage Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Users may only see content that agrees with their views, limiting exposure to other perspectives (echo chambers/filter bubbles).",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "accepts": [
+     "Algorithms may spread false or misleading information tailored to a user's preferences.",
+     "Privacy concerns."
+    ],
+    "contextNote": "Potential Risks Any other valid potential risk. For each advantage/disadvantage Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 marks"
    }
-  ],
-  "stem": "Social media platforms often use data from users to personalise content. Give one advantage and one potential risk of this approach in the context of political elections."
+  ]
  },
  {
   "id": "cs-2025-hl-q13-b-i",
-  "topicId": "cs-2-3",
-  "conceptId": "each-stakeholder-outline-one-goal-they",
+  "topicId": "cs-1-3",
+  "conceptId": "stakeholder-goal-they-may-want-system",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9252,16 +9460,37 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Store Staff",
-    "marks": 4
+    "verbatim": "Store Staff — Goal: To have a system that quickly registers returned bottles and updates stock. System should be reliable and easy to use. System should be highly/fully automated and software should give feedback on errors / alerts when something goes wrong - e.g. machine full. System should result in less waste.",
+    "marks": 1,
+    "contextNote": "For each goal Very good explanation - clear understanding demonstrated 1 mark For each benefit Very good explanation - clear understanding demonstrated 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Store Staff — Benefit To provide fast service to customers and reduce workload.",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Customer — Goal to be able to scan returned bottles and receive an immediate refund.",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Customer — Benefit is receipt of refund and contribution to cleaner environment.",
+    "marks": 1
    }
   ],
-  "stem": "Suggest two specific use cases of this component."
+  "stem": "The Deposit Return Scheme (DRS) was introduced in Ireland in February 2024. It is designed to encourage recycling and reduce litter. Under this scheme, when a consumer buys a drink in a container with the Re-turn logo they are charged a small refundable deposit. The cost of the deposit depends on the size of the container. Containers can be returned using a Reverse Vending Machine (RVM), such as that shown in Figure 3. The RVM issues a voucher that can be redeemed at the till against store purchases or for a cash deposit refund. You are tasked with designing a software application that supports the DRS for a retail environment. The application should manage all stages of the lifecycle of drink containers. You have identified store staff and customers as two key stakeholders in the system.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q13-fig3",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q13-b-ii",
   "topicId": "cs-1-3",
-  "conceptId": "one-other-stakeholder-system-once-goes",
+  "conceptId": "other-stakeholder-system-once-goes-live",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9275,23 +9504,40 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "Any from the following:",
-    "marks": 1
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 1,
+     "options": [
+      "Store manager",
+      "Government regulator",
+      "Administrator",
+      "Maintenance technician",
+      "Logistics manager",
+      "Environmental analyst",
+      "Any other valid stakeholder"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Valid stakeholder identified 1 mark"
    }
   ],
-  "stem": "Suggest two specific use cases of this component."
+  "stem": "The Deposit Return Scheme (DRS) was introduced in Ireland in February 2024. It is designed to encourage recycling and reduce litter. Under this scheme, when a consumer buys a drink in a container with the Re-turn logo they are charged a small refundable deposit. The cost of the deposit depends on the size of the container. Containers can be returned using a Reverse Vending Machine (RVM), such as that shown in Figure 3. The RVM issues a voucher that can be redeemed at the till against store purchases or for a cash deposit refund. You are tasked with designing a software application that supports the DRS for a retail environment. The application should manage all stages of the lifecycle of drink containers. You have identified store staff and customers as two key stakeholders in the system.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q13-fig3",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q13-b-iii",
   "topicId": "cs-2-4",
-  "conceptId": "you-have-identified-database-management-one",
+  "conceptId": "have-identified-database-management-key-system",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
   "section": "B",
   "questionRef": "2025 HL Q13(b)(iii)",
-  "questionText": "You have identified database management as one of the key system components.",
+  "questionText": "You have identified database management as one of the key system components. Suggest two specific use cases of this component.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9299,41 +9545,37 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Machine Details: This database would store machine details e.g. location, date installed, date last emptied, status etc.",
-    "marks": 1
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Container Tracking: This database system could use unique identifiers for each container to keep a track of when they enter the system and possibly a recycling or reuse status for each container.",
-    "marks": 1
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Finance Management: This database could be used to store deposit amounts paid by consumers and records the refunds given when containers are returned. It could be used to generate transaction and financial reports.",
-    "marks": 1
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Any other valid database management use case. For each use case suggested:",
-    "marks": 1
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "accepts": [
+     "Container Tracking: This database system could use unique identifiers for each container to keep a track of when they enter the system and possibly a recycling or reuse status for each container.",
+     "Finance Management: This database could be used to store deposit amounts paid by consumers and records the refunds given when containers are returned. It could be used to generate transaction and financial reports."
+    ],
+    "contextNote": "Any other valid database management use case. For each use case suggested: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
    }
   ],
-  "stem": "Suggest two specific use cases of this component."
+  "stem": "The Deposit Return Scheme (DRS) was introduced in Ireland in February 2024. It is designed to encourage recycling and reduce litter. Under this scheme, when a consumer buys a drink in a container with the Re-turn logo they are charged a small refundable deposit. The cost of the deposit depends on the size of the container. Containers can be returned using a Reverse Vending Machine (RVM), such as that shown in Figure 3. The RVM issues a voucher that can be redeemed at the till against store purchases or for a cash deposit refund. You are tasked with designing a software application that supports the DRS for a retail environment. The application should manage all stages of the lifecycle of drink containers. You have identified store staff and customers as two key stakeholders in the system.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q13-fig3",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q13-c-i",
-  "topicId": "cs-2-3",
-  "conceptId": "read-following-scenario-answer-question-follows",
+  "topicId": "cs-1-2",
+  "conceptId": "read-scenario-answer-question-follows-scenario",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
   "section": "B",
   "questionRef": "2025 HL Q13(c)(i)",
-  "questionText": "Read the following scenario and answer the question that follows.",
+  "questionText": "Read the following scenario and answer the question that follows. Scenario: A visually impaired user needs assistance in identifying containers and navigating the DRS application. Identify and explain two appropriate assistive technology solutions that could be used in the DRS system to enhance accessibility for this user.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9341,17 +9583,34 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Screen Reader: A screen reader can help visually impaired users by reading out text on the system interface, such as instructions or transaction details, so they can participate in the deposit return scheme.",
-    "marks": 6
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "accepts": [
+     "Voice Recognition Software: This technology can allow users with mobility impairments to interact with the DRS system by speaking commands, such as \"return container\" or \"check balance,\" without needing to use a keyboard or mouse.",
+     "Braille Display: For users who are blind or have severe vision impairment, a Braille display can provide tactile feedback of the system's text, allowing them to read information like instructions or container details in Braille.",
+     "Simplified User Interface: A simplified interface with larger buttons, clearer fonts, and high- contrast colours can assist users with cognitive disabilities or low vision in navigating the DRS system more easily."
+    ],
+    "contextNote": "Any other valid assistive technology for a visually impaired user. For each assistive technology correctly identified 1 mark For each explanation: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
    }
   ],
-  "stem": "Scenario: A visually impaired user needs assistance in identifying containers and navigating the DRS application. Identify and explain two appropriate assistive technology solutions that could be used in the DRS system to enhance accessibility for this user. This question continues on the next page."
+  "stem": "The Deposit Return Scheme (DRS) was introduced in Ireland in February 2024. It is designed to encourage recycling and reduce litter. Under this scheme, when a consumer buys a drink in a container with the Re-turn logo they are charged a small refundable deposit. The cost of the deposit depends on the size of the container. Containers can be returned using a Reverse Vending Machine (RVM), such as that shown in Figure 3. The RVM issues a voucher that can be redeemed at the till against store purchases or for a cash deposit refund. You are tasked with designing a software application that supports the DRS for a retail environment. The application should manage all stages of the lifecycle of drink containers. You are keen to adopt a user-centred approach to the design of the system and ensure that it provides an inclusive user experience for all users.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q13-fig3",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q13-c-ii",
-  "topicId": "cs-2-3",
-  "conceptId": "system-will-need-be-thoroughly-tested",
+  "topicId": "cs-2-5",
+  "conceptId": "system-will-need-thoroughly-tested-before",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9365,12 +9624,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Unit Testing: Focuses on testing individual components of a program carried out by developers as",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Unit Testing: Focuses on testing individual components of a program carried out by developers as they write their code. Functional Testing: Tests the overall functionality of the software, ensuring all features work together as expected from the user's perspective. It is usually done later in the development process.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     5
+    ],
+    "contextNote": "Very good distinction - clear understanding demonstrated 5 marks Good distinction - clear information, lacking demonstration of full understanding 3 marks Fair distinction – limited understanding 1 mark"
    }
   ],
-  "stem": "Scenario: A visually impaired user needs assistance in identifying containers and navigating the DRS application. Identify and explain two appropriate assistive technology solutions that could be used in the DRS system to enhance accessibility for this user. This question continues on the next page."
+  "stem": "The Deposit Return Scheme (DRS) was introduced in Ireland in February 2024. It is designed to encourage recycling and reduce litter. Under this scheme, when a consumer buys a drink in a container with the Re-turn logo they are charged a small refundable deposit. The cost of the deposit depends on the size of the container. Containers can be returned using a Reverse Vending Machine (RVM), such as that shown in Figure 3. The RVM issues a voucher that can be redeemed at the till against store purchases or for a cash deposit refund. You are tasked with designing a software application that supports the DRS for a retail environment. The application should manage all stages of the lifecycle of drink containers. You are keen to adopt a user-centred approach to the design of the system and ensure that it provides an inclusive user experience for all users.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q13-fig3",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q14-a-i",
@@ -9394,8 +9662,9 @@
     "marks": 2
    }
   ],
-  "stem": "a b 45 18 This question continues on the next page.",
-  "figureKey": "computer-science-2025-HL-paper-q14-code0"
+  "stem": "The Greatest Common Divisor (GCD) of two integers a and b is the largest number that divides into both with no remainder. One of the oldest and most famous algorithms was first described by Greek mathematician, Euclid, in his book of Elements written around 300BC. The code snippet below is an implementation of Euclid’s algorithm using subtraction to find the GCD of 45 and 18.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q14-code0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q14-a-ii",
@@ -9414,18 +9683,28 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "a b",
-    "marks": 4
+    "kind": "criterion",
+    "verbatim": "27 18 9 18 9 9",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "For each correct row 1 mark Full correct response 4 marks"
    }
   ],
-  "stem": "a b 45 18 This question continues on the next page.",
-  "figureKey": "computer-science-2025-HL-paper-q14-code0"
+  "stem": "The Greatest Common Divisor (GCD) of two integers a and b is the largest number that divides into both with no remainder. One of the oldest and most famous algorithms was first described by Greek mathematician, Euclid, in his book of Elements written around 300BC. The code snippet below is an implementation of Euclid’s algorithm using subtraction to find the GCD of 45 and 18.",
+  "figureKey": "computer-science-2025-HL-scheme-q14a-ii",
+  "questionFigureKey": "computer-science-2025-HL-paper-q14a-trace",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q14-b-i",
   "topicId": "cs-2-2",
-  "conceptId": "every-recursive-function-including-one-shown",
+  "conceptId": "every-recursive-function-including-here-has",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9439,18 +9718,36 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Base Case",
-    "marks": 4
+    "kind": "criterion",
+    "verbatim": "Base Case — the condition that stops the recursive function from calling itself indefinitely (or until a stack overflow error occurs). • Each recursive call works towards the base case decomposing the problem into simpler problems until the simplest version of the problem is reached. The answer to the simplest version of the problem is known e.g. recursive_gcd(a, 0) is a. • In the example code the condition b == 0 is the base case.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "For each case: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Recursive Case — the part of the function that calls itself to solve a simpler/smaller version of the problem. • eventually the recursive calls converge on the base case. • In the example code the recursive case is on line 6 i..e. recursive_gcd(b, a % b).",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
    }
   ],
-  "stem": "1 def recursive_gcd(a, b): 2 if b == 0: 3 return a 4 return recursive_gcd(b, a%b) 5 6 print(\"The GCD is\", recursive_gcd(45, 18))",
-  "figureKey": "computer-science-2025-HL-paper-q14-code0"
+  "stem": "The code below shows a recursive implementation to find the GCD of two integers.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q14b-code",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q14-b-iii",
   "topicId": "cs-2-3",
-  "conceptId": "given-choice-using-gcd-shown-part",
+  "conceptId": "given-choice-using-gcd-part-recursive",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9466,16 +9763,30 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "gcd",
-    "marks": 5
+    "marks": 1,
+    "contextNote": "Correct response: 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "The non-recursive solution is more suitable for finding the GCD of very large numbers on machines with limited RAM because it avoids the potentially high memory overhead of recursion (and the possibility of causing a stack overflow). • In a non-recursive solution memory usage remains constant, as the loop reuses the same variables regardless of the size of the numbers or the number of iterations. • In a recursive solution the memory usage grows with each recursive call as the call stack increases. For very large numbers this could exhaust the stack leading to a stack overflow error.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 4 marks Fair explanation - limited understanding 2 marks"
    }
   ],
-  "stem": "1 def recursive_gcd(a, b): 2 if b == 0: 3 return a 4 return recursive_gcd(b, a%b) 5 6 print(\"The GCD is\", recursive_gcd(45, 18))",
-  "figureKey": "computer-science-2025-HL-paper-q14-code0"
+  "stem": "The code below shows a recursive implementation to find the GCD of two integers.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q14-both",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q14-c-i",
   "topicId": "cs-2-2",
-  "conceptId": "given-unsorted-list-shown-below-pivot",
+  "conceptId": "given-unsorted-list-pivot-13-contents",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9490,23 +9801,25 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Left sub-list:",
-    "marks": 1
+    "verbatim": "Left sub-list: [10]",
+    "marks": 1,
+    "contextNote": "For each correct sub-list 1 mark"
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Right sub-list: [29, 14, 37] For each correct sub-list",
+    "verbatim": "Right sub-list: [29, 14, 37]",
     "marks": 1
    }
   ],
-  "stem": "29 10 14 37 13 This question continues on the next page. Figure 4",
-  "figureKey": "computer-science-2025-HL-paper-q14-code0"
+  "stem": "Quicksort is a widely used sorting algorithm developed by British computer scientist Tony Hoare in 1960. The algorithm itself is recursive and it uses a process called partitioning around a chosen pivot to achieve its objective. Quicksort is known for its efficiency and speed, especially in handling very long lists of data.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q14c-list",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q14-c-ii",
   "topicId": "cs-2-2",
-  "conceptId": "describe-next-steps-quicksort-would-take",
+  "conceptId": "next-steps-quicksort-would-take-order",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9520,18 +9833,24 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "After the first pass, quicksort continues by applying the same process to each sub-list created during partitioning. If a sub-list has only one element, it is already sorted. For larger sub-lists, a new pivot is chosen, and the list is divided into elements less than the pivot and elements greater than or equal to it. This divide-and-conquer approach is repeated recursively on each sub-list. Once all sub-lists are reduced to single elements, they are combined in order, resulting in a fully sorted list.",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "After the first pass, quicksort continues by applying the same process to each sub-list created during partitioning. If a sub-list has only one element, it is already sorted. For larger sub-lists, a new pivot is chosen, and the list is divided into elements less than the pivot and elements greater than or equal to it. This divide-and-conquer approach is repeated recursively on each sub-list. Once all sub-lists are reduced to single elements, they are combined in order, resulting in a fully sorted list. • Appropriate diagram.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     5
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 5 marks Good explanation - clear information, lacking demonstration of full understanding 3 marks Fair explanation - limited understanding 1 mark"
    }
   ],
-  "stem": "29 10 14 37 13 This question continues on the next page. Figure 4",
-  "figureKey": "computer-science-2025-HL-paper-q14-code0"
+  "stem": "Quicksort is a widely used sorting algorithm developed by British computer scientist Tony Hoare in 1960. The algorithm itself is recursive and it uses a process called partitioning around a chosen pivot to achieve its objective. Quicksort is known for its efficiency and speed, especially in handling very long lists of data."
  },
  {
   "id": "cs-2025-hl-q14-c-iii",
   "topicId": "cs-2-2",
-  "conceptId": "outline-two-common-strategies-used-when",
+  "conceptId": "common-strategies-when-selecting-pivot-quicksort",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9545,18 +9864,30 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "Pivot selection strategies",
-    "marks": 2
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "First element",
+      "Last element",
+      "Middle",
+      "Median of first, middle and last element",
+      "Median of medians",
+      "Random"
+     ]
+    },
+    "contextNote": "For each correct strategy 1 mark"
    }
   ],
-  "stem": "29 10 14 37 13 This question continues on the next page. Figure 4",
-  "figureKey": "computer-science-2025-HL-paper-q14-code0"
+  "stem": "Quicksort is a widely used sorting algorithm developed by British computer scientist Tony Hoare in 1960. The algorithm itself is recursive and it uses a process called partitioning around a chosen pivot to achieve its objective. Quicksort is known for its efficiency and speed, especially in handling very long lists of data."
  },
  {
   "id": "cs-2025-hl-q14-c-iv",
   "topicId": "cs-2-2",
-  "conceptId": "referring-figure-4-below-best-worst",
+  "conceptId": "referring-4-best-worst-case-time",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9570,17 +9901,36 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Best case:",
-    "marks": 4
+    "kind": "criterion",
+    "verbatim": "Best case: — each pivot divides the list evenly into two halves. This results in a balanced recursion tree with about 𝒍𝒐𝒈 𝒏 levels. At each level, the algorithm processes all n elements once during partitioning, so the total work done across all levels is 𝒏 ൈ 𝒍𝒐𝒈 𝒏.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "For each case (best and worst): Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Worst case: — This happens when the pivot repeatedly creates very unbalanced splits, such as when it is always the smallest or largest element in the list. Instead of dividing the list in half, one sub list ends up with n - 1 elements and the other with 0, creating a recursion tree with n levels.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
    }
   ],
-  "stem": "29 10 14 37 13 This question continues on the next page. Figure 4",
-  "figureKey": "computer-science-2025-HL-paper-q14-code0"
+  "stem": "Quicksort is a widely used sorting algorithm developed by British computer scientist Tony Hoare in 1960. The algorithm itself is recursive and it uses a process called partitioning around a chosen pivot to achieve its objective. Quicksort is known for its efficiency and speed, especially in handling very long lists of data.",
+  "figureKey": "computer-science-2025-HL-scheme-q14c-iv",
+  "questionFigureKey": "computer-science-2025-HL-paper-q14c-fig4",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q15-a-i",
-  "topicId": "cs-2-2",
+  "topicId": "cs-3-3",
   "conceptId": "output-variable-model",
   "level": "higher",
   "year": 2025,
@@ -9596,17 +9946,18 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Output variable:",
+    "verbatim": "TEST OUTCOME",
     "marks": 1
    }
   ],
-  "stem": "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID This question continues on the next page.",
-  "figureKey": "computer-science-2025-HL-paper-q15-fig0"
+  "stem": "Modelling and simulation are essential tools for understanding and solving complex real-world problems. These approaches often involve breaking down systems, identifying key components, and examining how changes can influence outcomes. Consider the dataset shown in Figure 5 below which is being used by a computer science student as part of her Applied Learning Task 3 (modelling and simulation) to model driving test outcomes.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q15-fig0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q15-a-iii",
-  "topicId": "cs-2-2",
-  "conceptId": "describe-two-patterns-you-can-identify",
+  "topicId": "cs-3-3",
+  "conceptId": "patterns-can-model",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9620,18 +9971,32 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "Any two from the following:",
-    "marks": 4
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Younger drivers (under 20) tend to have higher failure rates.",
+      "Drivers using automatic cars tend to pass, while manual transmission drivers have higher failure rates.",
+      "More experienced instructors are correlated with higher pass rates.",
+      "The number of females who pass is the same as the number of males who fail.",
+      "Any other valid pattern."
+     ]
+    },
+    "openList": true,
+    "contextNote": "For each pattern correctly identified 2 marks"
    }
   ],
-  "stem": "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID This question continues on the next page.",
-  "figureKey": "computer-science-2025-HL-paper-q15-fig0"
+  "stem": "Modelling and simulation are essential tools for understanding and solving complex real-world problems. These approaches often involve breaking down systems, identifying key components, and examining how changes can influence outcomes. Consider the dataset shown in Figure 5 below which is being used by a computer science student as part of her Applied Learning Task 3 (modelling and simulation) to model driving test outcomes.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q15-fig0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q15-a-iv",
-  "topicId": "cs-2-2",
-  "conceptId": "identify-two-additional-variables-could-be",
+  "topicId": "cs-3-3",
+  "conceptId": "additional-variables-could-enhance-driving-test",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9645,18 +10010,33 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "Any two from the following:",
-    "marks": 4
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Number of lessons.",
+      "Number of previous attempts.",
+      "Driving test time of day.",
+      "Weather conditions.",
+      "Familiarity with car.",
+      "Any other valid variable."
+     ]
+    },
+    "openList": true,
+    "contextNote": "Each variable correctly identified 2 marks"
    }
   ],
-  "stem": "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID This question continues on the next page.",
-  "figureKey": "computer-science-2025-HL-paper-q15-fig0"
+  "stem": "Modelling and simulation are essential tools for understanding and solving complex real-world problems. These approaches often involve breaking down systems, identifying key components, and examining how changes can influence outcomes. Consider the dataset shown in Figure 5 below which is being used by a computer science student as part of her Applied Learning Task 3 (modelling and simulation) to model driving test outcomes.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q15-fig0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q15-b-i",
-  "topicId": "cs-2-2",
-  "conceptId": "outline-one-limitation-one-benefit-modelling",
+  "topicId": "cs-3-3",
+  "conceptId": "limitation-benefit-modelling-simulation",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9670,18 +10050,45 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Limitations",
-    "marks": 4
+    "kind": "criterion",
+    "verbatim": "Models are abstractions that simplify complex systems. By design, they omit many details to focus on specific aspects of the system being studied. This makes them inherently \"wrong\" in representing the full complexity of reality.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "accepts": [
+     "Underlying assumptions of model may not always hold true.",
+     "Data limitations (e.g. bias, errors, size) can make models inaccurate.",
+     "Ethical concerns regarding privacy, security and accountability.",
+     "High development costs."
+    ],
+    "contextNote": "Limitations Any other valid limitation. For each part: Very good description - clear understanding demonstrated 2 marks Fair description – limited understanding 1 mark"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Models make complex systems easier to understand, identify patterns, relationships, and areas for intervention.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "accepts": [
+     "Models can provide valuable predictions within a defined scope.",
+     "Models help decision-makers weigh options and test scenarios in a controlled, low-risk environment e.g. a simulation of traffic flow can guide city planners in designing more efficient road systems."
+    ],
+    "contextNote": "Benefits Any other valid benefit. For each part: Very good description - clear understanding demonstrated 2 marks Fair description – limited understanding 1 mark"
    }
   ],
-  "stem": "\"All models are wrong, but some are useful\"",
-  "figureKey": "computer-science-2025-HL-paper-q15-fig0"
+  "stem": "Modelling and simulation are essential tools for understanding and solving complex real-world problems. These approaches often involve breaking down systems, identifying key components, and examining how changes can influence outcomes. The quote below is attributed to statistician George Box and is often cited in the context of modelling and simulation. It highlights the limitations of models while emphasising their practical value. \"All models are wrong, but some are useful\""
  },
  {
   "id": "cs-2025-hl-q15-b-ii",
-  "topicId": "cs-2-2",
-  "conceptId": "why-abstraction-important-when-developing-model",
+  "topicId": "cs-2-1",
+  "conceptId": "abstraction-important-when-developing-model",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9695,24 +10102,29 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Abstraction is important when developing a model because it allows us to focus on the most essential elements of a system while ignoring unnecessary details.",
-    "marks": 4
+    "kind": "criterion",
+    "verbatim": "Abstraction is important when developing a model because it allows us to focus on the most essential elements of a system while ignoring unnecessary details. • By simplifying complex systems, abstraction makes it easier to understand, analyse, and simulate the system's behaviour. • Without abstraction, models would become too complicated, difficult to interpret, and less effective in predicting outcomes or testing different scenarios.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "Very good explanation - clear understanding demonstrated 4 marks Fair explanation – limited understanding 2 marks"
    }
   ],
-  "stem": "\"All models are wrong, but some are useful\"",
-  "figureKey": "computer-science-2025-HL-paper-q15-fig0"
+  "stem": "Modelling and simulation are essential tools for understanding and solving complex real-world problems. These approaches often involve breaking down systems, identifying key components, and examining how changes can influence outcomes. The quote below is attributed to statistician George Box and is often cited in the context of modelling and simulation. It highlights the limitations of models while emphasising their practical value. \"All models are wrong, but some are useful\""
  },
  {
   "id": "cs-2025-hl-q15-b-iii",
-  "topicId": "cs-1-1",
-  "conceptId": "modelling-simulation-can-be-used-many",
+  "topicId": "cs-3-3",
+  "conceptId": "modelling-simulation-can-many-situations-address",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
   "section": "B",
   "questionRef": "2025 HL Q15(b)(iii)",
-  "questionText": "Modelling and simulation can be used in many situations to address a wide variety of problems. Some example areas where modelling and simulation can be used to improve outcomes include:  Education  Mental wellbeing  Environment  Traffic management Pick any two of the above areas and briefly describe how modelling could be used to address a problem and improve outcomes.",
+  "questionText": "Modelling and simulation can be used in many situations to address a wide variety of problems. Some example areas where modelling and simulation can be used to improve outcomes include: • Education • Mental wellbeing • Environment • Traffic management Pick any two of the above areas and briefly describe how modelling could be used to address a problem and improve outcomes.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9720,36 +10132,30 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Education: Modelling can be used to simulate different teaching methods or learning environments, helping educators identify the most effective approaches for improving student engagement and performance. For example, a model could simulate student interactions in a virtual classroom to optimise teaching strategies.",
-    "marks": 2
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Mental Wellbeing: Modelling mental wellbeing can involve simulating various factors like stress levels, social interactions, and lifestyle choices to predict outcomes and suggest personalised interventions. For instance, a model could help identify triggers for anxiety and recommend coping strategies, improving mental health management.",
-    "marks": 2
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Environment: Environmental models simulate natural systems, such as climate change or ecosystem dynamics, to predict future conditions. These simulations help in understanding the potential impacts of human activity, guiding policy decisions and strategies for sustainable resource management.",
-    "marks": 2
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Traffic Management: Traffic flow simulations can model the movement of vehicles in a city to identify congestion points and optimise traffic signal timings. This helps improve traffic efficiency, reduce delays, and lower accident rates, ultimately enhancing overall transportation systems. For each area:",
-    "marks": 2
+    "marks": 8,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6,
+     8
+    ],
+    "accepts": [
+     "Mental Wellbeing: Modelling mental wellbeing can involve simulating various factors like stress levels, social interactions, and lifestyle choices to predict outcomes and suggest personalised interventions. For instance, a model could help identify triggers for anxiety and recommend coping strategies, improving mental health management.",
+     "Environment: Environmental models simulate natural systems, such as climate change or ecosystem dynamics, to predict future conditions. These simulations help in understanding the potential impacts of human activity, guiding policy decisions and strategies for sustainable resource management.",
+     "Traffic Management: Traffic flow simulations can model the movement of vehicles in a city to identify congestion points and optimise traffic signal timings. This helps improve traffic efficiency, reduce delays, and lower accident rates, ultimately enhancing overall transportation systems."
+    ],
+    "contextNote": "For each area: Very good description - clear understanding demonstrated 4 marks Fair description – limited understanding 2 marks"
    }
   ],
-  "stem": "\"All models are wrong, but some are useful\"",
-  "figureKey": "computer-science-2025-HL-paper-q15-fig0"
+  "stem": "Modelling and simulation are essential tools for understanding and solving complex real-world problems. These approaches often involve breaking down systems, identifying key components, and examining how changes can influence outcomes."
  },
  {
   "id": "cs-2025-hl-q15-c-ii",
   "topicId": "cs-3-3",
-  "conceptId": "outline-one-emergent-behaviour-could-be",
+  "conceptId": "emergent-behaviour-could-revealed-simulation",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9763,18 +10169,28 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Any one from the following:",
-    "marks": 2
+    "kind": "criterion",
+    "verbatim": "Clusters of infection forming in areas with high interaction, like hallways.",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "accepts": [
+     "Clusters of infection associated with specific activity e.g. sports, musical etc.",
+     "Patterns showing higher infection rates among specific people/age groups (superspreaders).",
+     "Recovery can lead to patterns such as slowing transmission rates or the eventual end of an outbreak."
+    ],
+    "contextNote": "Any other valid emergent behaviour. Very good description - clear understanding demonstrated 2 marks Fair description – limited understanding 1 mark"
    }
   ],
-  "stem": "This question continues on the next page. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 4: https://girlswhocode.com/ Image on page 5: https://en.wikipedia.org/wiki/RGB_color_model Image on page 8: https://www.pdq.com/sysadmin-glossary/cpu/ Image on page 9: https://www.irishtimes.com/ireland/2024/04/23/what-is-your-experience-of-the-deposit-return- scheme/ Image on page 13: https://www.worldhistory.org/Euclid/ Image on page 15: https://en.wikipedia.org/wiki/Tony_Hoare Image on page 16:https://www.w3schools.com/dsa/dsa_timecomplexity_quicksort.php Image on page 18: https://en.wikipedia.org/wiki/George_E._P._Box Texts Text on page 5: https://pursuit.unimelb.edu.au/articles/will-a-computer-take-your-job Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 21 May Morning 9:30 – 11:00 2025L219A2EL 2025. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 21 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
-  "figureKey": "computer-science-2025-HL-paper-q15-fig0"
+  "stem": "Modelling and simulation are essential tools for understanding and solving complex real-world problems. These approaches often involve breaking down systems, identifying key components, and examining how changes can influence outcomes. A health agency wants to predict how an infectious disease might spread in a school and evaluate different containment strategies."
  },
  {
   "id": "cs-2025-hl-q15-c-iii",
   "topicId": "cs-3-3",
-  "conceptId": "suggest-one-strategy-health-agency-could",
+  "conceptId": "strategy-health-agency-could-test-model",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
@@ -9788,13 +10204,42 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "anyN",
     "verbatim": "Strategies - any one from the following:",
-    "marks": 6
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "Measures to reduce crowding e.g. social distancing/ staggered lunch breaks/quarantine.",
+      "Mask wearing.",
+      "Vaccination/booster campaigns.",
+      "Regular testing / contact tracing.",
+      "Increased hygiene.",
+      "Enhanced air ventilation systems.",
+      "Any other valid strategy."
+     ]
+    },
+    "openList": true,
+    "contextNote": "Correct strategy identified 2 marks"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Compare infection rates before and after the strategy.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "accepts": [
+     "Analyse the time it takes for the disease to stop spreading."
+    ],
+    "contextNote": "Measure success: For each response: Very good explanation - clear understanding demonstrated 4 marks Fair explanation – limited understanding 2 marks"
    }
   ],
-  "stem": "This question continues on the next page. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 4: https://girlswhocode.com/ Image on page 5: https://en.wikipedia.org/wiki/RGB_color_model Image on page 8: https://www.pdq.com/sysadmin-glossary/cpu/ Image on page 9: https://www.irishtimes.com/ireland/2024/04/23/what-is-your-experience-of-the-deposit-return- scheme/ Image on page 13: https://www.worldhistory.org/Euclid/ Image on page 15: https://en.wikipedia.org/wiki/Tony_Hoare Image on page 16:https://www.w3schools.com/dsa/dsa_timecomplexity_quicksort.php Image on page 18: https://en.wikipedia.org/wiki/George_E._P._Box Texts Text on page 5: https://pursuit.unimelb.edu.au/articles/will-a-computer-take-your-job Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 21 May Morning 9:30 – 11:00 2025L219A2EL 2025. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 21 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
-  "figureKey": "computer-science-2025-HL-paper-q15-fig0"
+  "stem": "Modelling and simulation are essential tools for understanding and solving complex real-world problems. These approaches often involve breaking down systems, identifying key components, and examining how changes can influence outcomes. A health agency wants to predict how an infectious disease might spread in a school and evaluate different containment strategies."
  },
  {
   "id": "cs-2025-hl-q16-a-ii",
@@ -9803,9 +10248,9 @@
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2025 HL Q16(a)(ii)",
-  "questionText": "Currently, the code divides the total by 9 to calculate the mean. Modify the code so that it divides the total by the number of elements in the results list, regardless of its size.",
+  "questionText": "Currently, the code divides the total by 9 to calculate the mean. Modify the code so that it divides the total by the number of elements in the results list, regardless of its size. When the program is run the output should remain the same: The mean percentage mark is 61.78",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9813,13 +10258,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Any other reasonable attempt.",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "(ii) 5 marks (B-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. 1 # Question 16 The for loop adds up the values in results and stores the answer in the variable called total. Line 24 of the program calculates the mean (average) of all the results by dividing total by 9. The mean is saved in the variable called arithmetic_mean. When the program is run it displays the following message: The mean percentage mark is 61.77777777777778 Make the following changes to the program: When the program is run the output should now look as follows: The mean percentage mark is 61.78 When the program is run the output should remain the same: The mean percentage mark is 61.78 Result Grade >= 80 Distinction >= 65 Upper Merit >= 50 Lower Merit >= 40 Pass < 40 Unsuccessful When the program is run the output should remain the same: The mean percentage mark is 61.78 This question continues on the next page. When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit Input: results = [39,32,62,88,51,62,64,81,77] Output: [51,62,64,81] Explanation: The sub-list [51,62,64,81] is the longest run of result increases. The value 77 breaks the sequence because it is less than its previous value, 81. When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit The lowest score is 32 The highest score is 88 The number of scores below 40 is 2 The number of scores between 50 and 79 inclusive is 5 The longest run of result increases is [51, 62, 64, 81] Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. This question continues on the next page.",
-  "figureKey": "computer-science-2025-HL-paper-q16-code0"
+  "stem": "Line 15 of the program initialises a list called results with nine values. Each value represents a percentage mark obtained by an individual student in nine class tests all in the same subject. The final percentage for the subject is calculated by averaging the nine results. The for loop adds up the values in results and stores the answer in the variable called total. Line 24 of the program calculates the mean (average) of all the results by dividing total by 9. The mean is saved in the variable called arithmetic_mean. When the program is run it displays the following message: The mean percentage mark is 61.77777777777778",
+  "figureKey": "computer-science-2025-HL-scheme-q16a-ii",
+  "questionFigureKey": "computer-science-2025-HL-paper-q16-code0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q16-a-iii",
@@ -9828,9 +10281,9 @@
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2025 HL Q16(a)(iii)",
-  "questionText": "Complete the function get_grade so that it sets the variable grade to the correct grade using the parameter result and the information provided in the table below.",
+  "questionText": "Complete the function get_grade so that it sets the variable grade to the correct grade using the parameter result and the information provided in the table below. Result Grade >= 80 Distinction >= 65 Upper Merit >= 50 Lower Merit >= 40 Pass < 40 Unsuccessful When the program is run the output should remain the same: The mean percentage mark is 61.78",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9838,13 +10291,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "semantic error.",
-    "marks": 5
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     5
+    ],
+    "contextNote": "(iii) 5 marks (C-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 2 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. 1 # Question 16 The for loop adds up the values in results and stores the answer in the variable called total. Line 24 of the program calculates the mean (average) of all the results by dividing total by 9. The mean is saved in the variable called arithmetic_mean. When the program is run it displays the following message: The mean percentage mark is 61.77777777777778 Make the following changes to the program: When the program is run the output should now look as follows: The mean percentage mark is 61.78 When the program is run the output should remain the same: The mean percentage mark is 61.78 Result Grade >= 80 Distinction >= 65 Upper Merit >= 50 Lower Merit >= 40 Pass < 40 Unsuccessful When the program is run the output should remain the same: The mean percentage mark is 61.78 This question continues on the next page. When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit Input: results = [39,32,62,88,51,62,64,81,77] Output: [51,62,64,81] Explanation: The sub-list [51,62,64,81] is the longest run of result increases. The value 77 breaks the sequence because it is less than its previous value, 81. When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit The lowest score is 32 The highest score is 88 The number of scores below 40 is 2 The number of scores between 50 and 79 inclusive is 5 The longest run of result increases is [51, 62, 64, 81] Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. This question continues on the next page.",
-  "figureKey": "computer-science-2025-HL-paper-q16-code0"
+  "stem": "Line 15 of the program initialises a list called results with nine values. Each value represents a percentage mark obtained by an individual student in nine class tests all in the same subject. The final percentage for the subject is calculated by averaging the nine results. The for loop adds up the values in results and stores the answer in the variable called total. Line 24 of the program calculates the mean (average) of all the results by dividing total by 9. The mean is saved in the variable called arithmetic_mean. When the program is run it displays the following message: The mean percentage mark is 61.77777777777778",
+  "figureKey": "computer-science-2025-HL-scheme-q16a-iii",
+  "questionFigureKey": "computer-science-2025-HL-paper-q16-code0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q16-a-iv",
@@ -9853,9 +10315,9 @@
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2025 HL Q16(a)(iv)",
-  "questionText": "Extend the program so that it calls the function get_grade and displays the grade in a message such as: The grade for the average result is [grade]. You will need to pass arithmetic_mean into the function.",
+  "questionText": "Extend the program so that it calls the function get_grade and displays the grade in a message such as: The grade for the average result is [grade]. You will need to pass arithmetic_mean into the function. When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9863,37 +10325,22 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "semantic error.",
-    "marks": 1
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Any other reasonable attempt.",
-    "marks": 1
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Leaving Certificate 2025",
-    "marks": 1
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Computer Science – Higher Level",
-    "marks": 1
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Marking Scheme",
-    "marks": 1
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     5
+    ],
+    "contextNote": "(iv) 5 marks (C-5 scale) 5 marks Correct response Correct implementation using solution above or similar. 3 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 2 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. 1 # Question 16 The for loop adds up the values in results and stores the answer in the variable called total. Line 24 of the program calculates the mean (average) of all the results by dividing total by 9. The mean is saved in the variable called arithmetic_mean. When the program is run it displays the following message: The mean percentage mark is 61.77777777777778 Make the following changes to the program: When the program is run the output should now look as follows: The mean percentage mark is 61.78 When the program is run the output should remain the same: The mean percentage mark is 61.78 Result Grade >= 80 Distinction >= 65 Upper Merit >= 50 Lower Merit >= 40 Pass < 40 Unsuccessful When the program is run the output should remain the same: The mean percentage mark is 61.78 This question continues on the next page. When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit Input: results = [39,32,62,88,51,62,64,81,77] Output: [51,62,64,81] Explanation: The sub-list [51,62,64,81] is the longest run of result increases. The value 77 breaks the sequence because it is less than its previous value, 81. When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit The lowest score is 32 The highest score is 88 The number of scores below 40 is 2 The number of scores between 50 and 79 inclusive is 5 The longest run of result increases is [51, 62, 64, 81] Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. This question continues on the next page.",
-  "figureKey": "computer-science-2025-HL-paper-q16-code0"
+  "stem": "Line 15 of the program initialises a list called results with nine values. Each value represents a percentage mark obtained by an individual student in nine class tests all in the same subject. The final percentage for the subject is calculated by averaging the nine results. The for loop adds up the values in results and stores the answer in the variable called total. Line 24 of the program calculates the mean (average) of all the results by dividing total by 9. The mean is saved in the variable called arithmetic_mean. When the program is run it displays the following message: The mean percentage mark is 61.77777777777778",
+  "figureKey": "computer-science-2025-HL-scheme-q16a-iv",
+  "questionFigureKey": "computer-science-2025-HL-paper-q16-code0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q16-a-vii",
@@ -9902,9 +10349,9 @@
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2025 HL Q16(a)(vii)",
-  "questionText": "Extend the program so that it determines and displays the longest run (sequence) of consecutive result increases.",
+  "questionText": "Extend the program so that it determines and displays the longest run (sequence) of consecutive result increases. Example: Input: results = [39,32,62,88,51,62,64,81,77] Output: [51,62,64,81] Explanation: The sub-list [51,62,64,81] is the longest run of result increases. The value 77 breaks the sequence because it is less than its previous value, 81. When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit The lowest score is 32 The highest score is 88 The number of scores below 40 is 2 The number of scores between 50 and 79 inclusive is 5 The longest run of result increases is [51, 62, 64, 81]",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9912,24 +10359,34 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "15 marks Correct response",
-    "marks": 15
+    "kind": "criterion",
+    "verbatim": "Correct implementation using solution above or similar.",
+    "marks": 15,
+    "permittedMarks": [
+     0,
+     3,
+     7,
+     10,
+     15
+    ],
+    "contextNote": "(vii) 15 marks (D-15 scale) 15 marks Correct response Correct implementation using solution above or similar. 10 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 7 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error. 3 marks Response with some merit Any other reasonable attempt."
    }
   ],
-  "stem": "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. 1 # Question 16 The for loop adds up the values in results and stores the answer in the variable called total. Line 24 of the program calculates the mean (average) of all the results by dividing total by 9. The mean is saved in the variable called arithmetic_mean. When the program is run it displays the following message: The mean percentage mark is 61.77777777777778 Make the following changes to the program: When the program is run the output should now look as follows: The mean percentage mark is 61.78 When the program is run the output should remain the same: The mean percentage mark is 61.78 Result Grade >= 80 Distinction >= 65 Upper Merit >= 50 Lower Merit >= 40 Pass < 40 Unsuccessful When the program is run the output should remain the same: The mean percentage mark is 61.78 This question continues on the next page. When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit Input: results = [39,32,62,88,51,62,64,81,77] Output: [51,62,64,81] Explanation: The sub-list [51,62,64,81] is the longest run of result increases. The value 77 breaks the sequence because it is less than its previous value, 81. When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit The lowest score is 32 The highest score is 88 The number of scores below 40 is 2 The number of scores between 50 and 79 inclusive is 5 The longest run of result increases is [51, 62, 64, 81] Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. This question continues on the next page.",
-  "figureKey": "computer-science-2025-HL-paper-q16-code0"
+  "stem": "Line 15 of the program initialises a list called results with nine values. Each value represents a percentage mark obtained by an individual student in nine class tests all in the same subject. The final percentage for the subject is calculated by averaging the nine results. The for loop adds up the values in results and stores the answer in the variable called total. Line 24 of the program calculates the mean (average) of all the results by dividing total by 9. The mean is saved in the variable called arithmetic_mean. When the program is run it displays the following message: The mean percentage mark is 61.77777777777778",
+  "figureKey": "computer-science-2025-HL-scheme-q16a-vii",
+  "questionFigureKey": "computer-science-2025-HL-paper-q16-code0",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q16-b",
   "topicId": "cs-2-2",
-  "conceptId": "open-program-called-question16-b-py",
+  "conceptId": "write-python-program-find-median-list",
   "level": "higher",
   "year": 2025,
   "subjectId": "computer-science",
-  "section": "B",
+  "section": "C",
   "questionRef": "2025 HL Q16(b)",
-  "questionText": "Open the program called Question16_B.py from your device. This file contains only two comments, on lines 1 and 2.",
+  "questionText": "Write a Python program to find the median of a list of zero or more values. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should meet the following requirements: • Initialise a list of integers. • Display the list. • Sort the list. • Display the sorted list. • Determine the median by examining the list length. o Odd: The number of elements divided by 2 will have a remainder of 1. In this case the median is the element at the middle position of the sorted list. o Even: The number of elements divided by 2 will have no remainder. In this case the median is the mean of the two middle elements in the sorted list. • Display the median. • Display an error message if the list is empty. Note: 1. You may not make use of the statistics.median(), numpy.median() or any other Python library median function in your solution. You must write the code to calculate the median yourself. 2. You should test that your program works with an even and odd number of values. 3. You should test that your program works with an empty list.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -9937,13 +10394,58 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Possible solution:",
-    "marks": 30
+    "kind": "criterion",
+    "verbatim": "Inputs — Initial list of integers correctly initialised • List sorted correctly • Variable initialisation and use of assignment statements",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "High level of achievement All of the following implemented correctly and efficiently Moderate level of achievement Reasonable attempt to implement at least two of each of the following Low level of achievement Poor attempt to complete any of the following"
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Program Logic (Processing) — Length of list calculated • Logic to test even/odd • Calculation of median (even) • Calculation of median (odd) • Logic to test empty list",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     7,
+     10
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "criterion",
+    "verbatim": "Program Outputs — Initial list of integers displayed • Sorted list of integers displayed • Median displayed • Error message displayed",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     4,
+     5
+    ]
+   },
+   {
+    "id": "r-4",
+    "kind": "criterion",
+    "verbatim": "Programming Standards — Program executes correctly with no syntax or runtime errors • Program meets requirements • Program design is well explained with comments • Meaningful variable/function names",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     5,
+     7,
+     10
+    ]
    }
   ],
-  "stem": "Before adding any code, you should save your working copy of the file using the format ExaminationNumberQuestion16_B.py. For example, you would save the file as 123456Question16_B.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The median of a list of values is the middle value in that list after it has been sorted in either ascending or descending order. If the number of values in the list is odd the median is the middle value. However, if the number of values in the list is even the median is found by calculating the mean of the two middle values i.e. by adding both middle values and then dividing the result by two. Write a Python program to find the median of a list of zero or more values. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should meet the following requirements:  Initialise a list of integers.  Display the list.  Sort the list.  Display the sorted list.  Determine the median by examining the list length. o Odd: The number of elements divided by 2 will have a remainder of 1. In this case the median is the element at the middle position of the sorted list. o Even: The number of elements divided by 2 will have no remainder. In this case the median is the mean of the two middle elements in the sorted list.  Display the median.  Display an error message if the list is empty. 1. You may not make use of the statistics.median(), numpy.median() or any other Python library median function in your solution. You must write the code to calculate the median yourself. 2. You should test that your program works with an even and odd number of values. 3. You should test that your program works with an empty list. Example outputs are shown on the next page. The initial list of values is: [27, 13, 32, 50, 16] The sorted list of values is: [13, 16, 27, 32, 50] The median is 27 Sample output 2: The initial list of values is: [27, 13, 32, 50, 16, 29] The sorted list of values is: [13, 16, 27, 29, 32, 50] The median is 28.0 Sample output 3: The initial list of values is: [] The list is empty. Cannot compute the median. Use the format CandidateNumberQuestion16_B.py to save your file. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 21 May Morning 11:30 – 12:30",
-  "figureKey": "computer-science-2025-HL-paper-q16-code0"
+  "stem": "The median of a list of values is the middle value in that list after it has been sorted in either ascending or descending order. If the number of values in the list is odd the median is the middle value. However, if the number of values in the list is even the median is found by calculating the mean of the two middle values i.e. by adding both middle values and then dividing the result by two.",
+  "figureKey": "computer-science-2025-HL-scheme-q16b",
+  "questionFigureKey": "computer-science-2025-HL-paper-q16b-output",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-ol-q2",
@@ -14895,21 +15397,25 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Identify and state the purpose of two CPU components.",
-    "marks": null,
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Arithmetic Logic Unit (ALU): Performs arithmetic operations (e.g., addition, subtraction) and logical operations (e.g., AND, OR, NOT) necessary for processing instructions.",
-      "Control Unit (CU): Directs and coordinates the activities of the CPU by fetching, decoding, and executing instructions from memory. It ensures all CPU components work together efficiently.",
-      "Registers: Provide small, high-speed storage locations within the CPU to temporarily hold data, instructions, or addresses during processing.",
-      "Cache: Stores frequently accessed data and instructions close to the CPU to reduce latency and improve processing speed.",
-      "Program Counter (PC): Keeps track of the memory address of the next instruction to be executed, ensuring the CPU processes instructions in the correct sequence.",
-      "Clock: Generates a consistent timing signal (or \"clock pulse\") that synchronizes the operations of the CPU. It ensures that instructions are executed in a controlled, sequential manner by determining the speed at which the CPU processes data."
-     ]
-    },
+    "kind": "criterion",
+    "verbatim": "Arithmetic Logic Unit (ALU): Performs arithmetic operations (e.g., addition, subtraction) and logical operations (e.g., AND, OR, NOT) necessary for processing instructions.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "accepts": [
+     "Control Unit (CU): Directs and coordinates the activities of the CPU by fetching, decoding, and executing instructions from memory. It ensures all CPU components work together efficiently.",
+     "Registers: Provide small, high-speed storage locations within the CPU to temporarily hold data, instructions, or addresses during processing.",
+     "Cache: Stores frequently accessed data and instructions close to the CPU to reduce latency and improve processing speed.",
+     "Program Counter (PC): Keeps track of the memory address of the next instruction to be executed, ensuring the CPU processes instructions in the correct sequence.",
+     "Clock: Generates a consistent timing signal (or \"clock pulse\") that synchronizes the operations of the CPU. It ensures that instructions are executed in a controlled, sequential manner by determining the speed at which the CPU processes data."
+    ],
     "contextNote": "For each correctly identified CPU component 1 mark For each purpose: Very good explanation - clear understanding demonstrated 2 marks Fair explanation – limited understanding 1 mark"
    }
   ]
@@ -14931,25 +15437,27 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Roles and Responsibilities:",
-    "marks": null,
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "System architect: Defines the overall structure of the application (system components, protocols, etc.), decides on technology stack, promotes technologies.",
-      "Analyst: Identifies and collaborates with stakeholders to identify and document the system requirements, develops system use cases.",
-      "Designer: Designs the application e.g. pseudo-code, flowcharts, data flow diagrams, wireframes, implements prototypes, database design, produces design documents",
-      "Software developer: Writes the application code, implementation, unit testing, debugging.",
-      "Software tester: Tests the application code – unit test, system test, functional/non- functional testing, documents and tracks test results and status/progress.",
-      "UI/UX Designer: Create a user-friendly user interface for the application.",
-      "IT Support Technician: Provides ongoing technical support to resolve any technical issues faced by users of the system.",
-      "Any other valid role and associated responsibilities."
-     ]
-    },
-    "openList": true,
-    "contextNote": "For each role correctly identified 1 mark For each responsibility: Good explanation - clear understanding demonstrated 1 mark"
+    "kind": "criterion",
+    "verbatim": "System architect: Defines the overall structure of the application (system components, protocols, etc.), decides on technology stack, promotes technologies.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "accepts": [
+     "Analyst: Identifies and collaborates with stakeholders to identify and document the system requirements, develops system use cases.",
+     "Designer: Designs the application e.g. pseudo-code, flowcharts, data flow diagrams, wireframes, implements prototypes, database design, produces design documents",
+     "Software developer: Writes the application code, implementation, unit testing, debugging.",
+     "Software tester: Tests the application code – unit test, system test, functional/non- functional testing, documents and tracks test results and status/progress.",
+     "UI/UX Designer: Create a user-friendly user interface for the application.",
+     "IT Support Technician: Provides ongoing technical support to resolve any technical issues faced by users of the system."
+    ],
+    "contextNote": "Any other valid role and associated responsibilities. For each role correctly identified 1 mark For each responsibility: Good explanation - clear understanding demonstrated 1 mark"
    }
   ],
   "stem": "The Deposit Return Scheme (DRS) was introduced in Ireland in February 2024. It is designed to encourage recycling and reduce litter. Under this scheme, when a consumer buys a drink in a container with the Re-turn logo they are charged a small refundable deposit. The cost of the deposit depends on the size of the container. Containers can be returned using a Reverse Vending Machine (RVM), such as that shown in Figure 3. The RVM issues a voucher that can be redeemed at the till against store purchases or for a cash deposit refund. You are tasked with designing a software application that supports the DRS for a retail environment. The application should manage all stages of the lifecycle of drink containers.",
@@ -15010,38 +15518,42 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Option 1: Waterfall/Staged",
-    "marks": null,
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "Highly structured, follows a sequence of phases e.g. analysis, design, implementation, deployment and maintenance.",
-      "Each phase must be completed before moving to the next, ensuring a structured and predictable process.",
-      "Comprehensive documentation such as requirements specifications, design plans, test cases.",
-      "Suitable for large projects when requirements are unlikely to change."
-     ]
-    },
-    "contextNote": "For each feature: Very good justification - clear understanding demonstrated 2 marks Fair justification – limited understanding 1 mark",
+    "kind": "criterion",
+    "verbatim": "Highly structured, follows a sequence of phases e.g. analysis, design, implementation, deployment and maintenance.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "accepts": [
+     "Each phase must be completed before moving to the next, ensuring a structured and predictable process.",
+     "Comprehensive documentation such as requirements specifications, design plans, test cases.",
+     "Suitable for large projects when requirements are unlikely to change."
+    ],
+    "contextNote": "Option 1: Waterfall/Staged For each feature: Very good justification - clear understanding demonstrated 2 marks Fair justification – limited understanding 1 mark",
     "route": "Option 1: Waterfall/Staged"
    },
    {
     "id": "r-2",
-    "kind": "anyN",
-    "verbatim": "Option 2: Agile/Iterative",
-    "marks": null,
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "Less structured/more flexible, breaks project into smaller iterations called sprints.",
-      "Functional components are delivered incrementally.",
-      "Customer collaboration throughout the project lifecycle.",
-      "Very responsive to dynamic/changing requirements."
-     ]
-    },
-    "contextNote": "For each feature: Very good justification - clear understanding demonstrated 2 marks Fair justification – limited understanding 1 mark",
+    "kind": "criterion",
+    "verbatim": "Less structured/more flexible, breaks project into smaller iterations called sprints.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "accepts": [
+     "Functional components are delivered incrementally.",
+     "Customer collaboration throughout the project lifecycle.",
+     "Very responsive to dynamic/changing requirements."
+    ],
+    "contextNote": "Option 2: Agile/Iterative For each feature: Very good justification - clear understanding demonstrated 2 marks Fair justification – limited understanding 1 mark",
     "route": "Option 2: Agile/Iterative"
    }
   ],
@@ -15066,26 +15578,29 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Any two of the following:",
-    "marks": null,
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Automated image recognition for bottle scanning.",
-      "Demand prediction for collection logistics.",
-      "Predictive maintenance for return machines.",
-      "Personalised incentives to engage users.",
-      "Data analysis (e.g. for environmental impact reporting).",
-      "Any other valid way AI could be used in the DRS application e.g. chatbot feature."
-     ]
-    },
-    "openList": true,
-    "contextNote": "For each suggestion Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 marks"
+    "kind": "criterion",
+    "verbatim": "Automated image recognition for bottle scanning.",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "accepts": [
+     "Demand prediction for collection logistics.",
+     "Predictive maintenance for return machines.",
+     "Personalised incentives to engage users.",
+     "Data analysis (e.g. for environmental impact reporting)."
+    ],
+    "contextNote": "Any other valid way AI could be used in the DRS application e.g. chatbot feature. For each suggestion Very good explanation - clear understanding demonstrated 3 marks Fair explanation – limited understanding 2 marks"
    }
   ],
-  "stem": "You have identified store staff and customers as two key stakeholders in the system."
+  "stem": "The Deposit Return Scheme (DRS) was introduced in Ireland in February 2024. It is designed to encourage recycling and reduce litter. Under this scheme, when a consumer buys a drink in a container with the Re-turn logo they are charged a small refundable deposit. The cost of the deposit depends on the size of the container. Containers can be returned using a Reverse Vending Machine (RVM), such as that shown in Figure 3. The RVM issues a voucher that can be redeemed at the till against store purchases or for a cash deposit refund. You are tasked with designing a software application that supports the DRS for a retail environment. The application should manage all stages of the lifecycle of drink containers. You have identified store staff and customers as two key stakeholders in the system.",
+  "questionFigureKey": "computer-science-2025-HL-paper-q13-fig3",
+  "questionFigureIncludesPrompt": false
  },
  {
   "id": "cs-2025-hl-q14-a-iii",
@@ -15104,17 +15619,17 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Explain why a for loop would not be suitable for this algorithm.",
-    "marks": null,
-    "group": {
-     "claimMax": 1,
-     "perOption": 4,
-     "options": [
-      "The number of iterations is not known in advance of running the algorithm.",
-      "The number of iterations required can vary depending on the arguments passed into the function gcd."
-     ]
-    },
+    "kind": "criterion",
+    "verbatim": "The number of iterations is not known in advance of running the algorithm.",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "accepts": [
+     "The number of iterations required can vary depending on the arguments passed into the function gcd."
+    ],
     "contextNote": "Very good explanation - clear understanding demonstrated 4 marks Fair explanation – limited understanding 2 marks"
    }
   ],
@@ -15231,7 +15746,7 @@
     "contextNote": "Very good description - clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks"
    }
   ],
-  "stem": "A health agency wants to predict how an infectious disease might spread in a school and evaluate different containment strategies."
+  "stem": "Modelling and simulation are essential tools for understanding and solving complex real-world problems. These approaches often involve breaking down systems, identifying key components, and examining how changes can influence outcomes. A health agency wants to predict how an infectious disease might spread in a school and evaluate different containment strategies."
  },
  {
   "id": "cs-2025-hl-q16-a-i",

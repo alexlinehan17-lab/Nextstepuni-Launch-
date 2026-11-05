@@ -460,9 +460,21 @@ LEADING_LABEL = re.compile(r'^\s*\(\s*(?:[ivx]{1,4}|[a-z]|\d{1,2})\s*\)\s+(?=\S)
 def comparable(md):
     raw = re.sub(r'⟨[^⟩]*⟩', ' ', md)
     raw = re.sub(r'^##\s*Page\s*\d+\s*$', ' ', raw, flags=re.M)
-    lines = [l for l in raw.split('\n') if not MARKS_ONLY.match(l) and not LABEL_ONLY.match(l)]
+    source = raw.split('\n')
+    lines = [l for l in source if not MARKS_ONLY.match(l) and not LABEL_ONLY.match(l)]
+    # schemeText.mjs's numericRuns: a run of two or more numeric-only lines
+    # can itself be the answer (2025 OL Q10's flowchart outputs 0, 2, 4, 6, 8,
+    # 10, one value per line), so each such run is a form of its own.
+    runs, run = [], []
+    for l in source + ['']:
+        if MARKS_ONLY.match(l):
+            run.append(l.strip())
+        else:
+            if len(run) >= 2:
+                runs.append(norm(' '.join(run)))
+            run = []
     return [norm(' '.join(lines)),
-            norm(' '.join(LEADING_LABEL.sub('', l) for l in lines))]
+            norm(' '.join(LEADING_LABEL.sub('', l) for l in lines))] + runs
 
 
 def traces(sitting, claim):
@@ -813,6 +825,7 @@ def build(targets):
     figures = json.load(open(FIGURES, encoding='utf8'))
     lane_ids = set()
     made = []
+    withdrawn = {}
     for year, level in targets:
         mod = module(year, level)
         if mod is None:
@@ -831,7 +844,16 @@ def build(targets):
             made.append((entry, card))
         if errors:
             raise LaneError('\n'.join(errors))
-    owned = _owned()
+        withdrawn.update(getattr(mod, 'WITHDRAWN', {}))
+    aliases = card_aliases()
+    for old, new in withdrawn.items():
+        if new not in lane_ids:
+            raise LaneError(f'{old}: withdrawn onto {new}, which no module entry makes')
+        if aliases.get(old) != new:
+            raise LaneError(f'{old}: withdrawn without the alias {old} -> {new} in '
+                            f'components/MarkBank/cardAliases.ts (run: aliases YEAR LEVEL)')
+    deck = [c for c in deck if c['id'] not in withdrawn]
+    owned = _owned() - set(withdrawn)
     by_id = {c['id']: i for i, c in enumerate(deck)}
     for entry, card in made:
         cid = card['id']
@@ -851,6 +873,38 @@ def build(targets):
 
 
 OWNED = os.path.join(DIR, 'compsci_sittings', 'owned.json')
+ALIASES = os.path.join(ROOT, 'components', 'MarkBank', 'cardAliases.ts')
+ALIAS_LINE = re.compile(r'^  "([^"]+)": "([^"]+)",$', re.M)
+
+
+def card_aliases():
+    return dict(ALIAS_LINE.findall(open(ALIASES, encoding='utf8').read()))
+
+
+def write_aliases(year, level):
+    """Add a module's WITHDRAWN ids to cardAliases.ts, each onto its successor.
+
+    A shipped whole-question card that duplicated part cards is withdrawn
+    (coordinator, 5 Nov): its review history is read by the question's first
+    new part card. Only Computer Science lines are added, in the file's own
+    sorted order; nothing else in the file changes."""
+    mod = module(year, level)
+    want = getattr(mod, 'WITHDRAWN', {})
+    text = open(ALIASES, encoding='utf8').read()
+    have = card_aliases()
+    lines = text.split('\n')
+    for old, new in sorted(want.items()):
+        if have.get(old) == new:
+            continue
+        if old in have:
+            raise LaneError(f'{old} is already aliased onto {have[old]}')
+        entry = f'  "{old}": "{new}",'
+        idx = [i for i, l in enumerate(lines) if ALIAS_LINE.match(l)]
+        after = [i for i in idx if ALIAS_LINE.match(lines[i]).group(1) > old]
+        lines.insert(after[0] if after else idx[-1] + 1, entry)
+    with open(ALIASES, 'w', encoding='utf8') as fh:
+        fh.write('\n'.join(lines))
+    return want
 
 
 def _owned():
@@ -928,6 +982,9 @@ def main(argv):
         mod = module(year, level)
         for key, path, w, h in publish_crops(Sitting(year, level), mod, write=False, only=only):
             print(f'{key} {w}x{h} {path}')
+    elif cmd == 'aliases':
+        for old, new in write_aliases(int(argv[2]), argv[3]).items():
+            print(f'{old} -> {new}')
     elif cmd == 'glyphs':
         print(append_glyphs(int(argv[2]), argv[3], int(argv[4]), float(argv[5]), float(argv[6])))
     elif cmd == 'cells':
