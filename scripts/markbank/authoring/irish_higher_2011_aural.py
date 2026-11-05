@@ -199,7 +199,7 @@ def build():
                          permittedMarks=[0, 2], guidanceKind='exact', tariffOnly=True, guidance=[question, line])
                     for n, question in questions]
         cards.append(dict(
-            id=f'irish-2011-hl-aural-{suffix}', year=2011, level='higher', paper=1, section='1',
+            id=f'irish-2011-hl-listening-{suffix}', year=2011, level='higher', paper=1, section='A',
             questionRef=f'2011 HL Cluastuiscint {ref}', questionText=' '.join(q for _, q in questions),
             totalMarks=2 * len(questions), topicId=topic, conceptId=f'irish-listening-{suffix}', paperFileid=FILE,
             schemeFileid=SCHEME_FILE, paperPage=page, schemePage=20, schemePages=[20], atlasQuestionId=key,

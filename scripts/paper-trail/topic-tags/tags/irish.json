@@ -17897,16 +17897,6 @@
     "paperKey": "p2",
     "q": [
       {
-        "n": "1",
-        "primary": "irish-3-0",
-        "secondary": "irish-3-1"
-      },
-      {
-        "n": "2",
-        "primary": "irish-4-7",
-        "secondary": "irish-7-0"
-      },
-      {
         "n": "P-A",
         "primary": "irish-4-7",
         "secondary": "irish-7-0"

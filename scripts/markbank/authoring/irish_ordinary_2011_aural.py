@@ -228,7 +228,7 @@ def build():
         # question's print place is its price.
         criteria = [criterion(cid, label, price, [prompt, tariff]) for (cid, label, prompt), price in zip(questions, prices)]
         cards.append(dict(
-            id=f'irish-{YEAR}-ol-listening-{suffix}', year=YEAR, level='ordinary', paper=1, section='1',
+            id=f'irish-{YEAR}-ol-listening-{suffix}', year=YEAR, level='ordinary', paper=1, section='A',
             questionRef=f'{YEAR} OL Cluastuiscint {ref}', questionText=SEGMENT_TEXT[key](questions),
             totalMarks=sum(c['maxMarks'] for c in criteria), topicId=topic, conceptId=f'irish-listening-{suffix}',
             paperPage=pages[0], schemePage=10, taskRequirements=LISTENING_REQUIREMENTS, criteria=criteria,

@@ -9185,18 +9185,18 @@
         "sha256": "b5f7c77e673759308a08e4a8cdef08000045789921a3c64278c739bb510783b0"
       },
       "markBankCardIds": [
-        "irish-2011-hl-aural-a-f1",
-        "irish-2011-hl-aural-a-f2",
-        "irish-2011-hl-aural-a-f3",
-        "irish-2011-hl-aural-b-c1-first",
-        "irish-2011-hl-aural-b-c1-second",
-        "irish-2011-hl-aural-b-c2-first",
-        "irish-2011-hl-aural-b-c2-second",
-        "irish-2011-hl-aural-b-c3-first",
-        "irish-2011-hl-aural-b-c3-second",
-        "irish-2011-hl-aural-c-p1",
-        "irish-2011-hl-aural-c-p2",
-        "irish-2011-hl-aural-c-p3"
+        "irish-2011-hl-listening-a-f1",
+        "irish-2011-hl-listening-a-f2",
+        "irish-2011-hl-listening-a-f3",
+        "irish-2011-hl-listening-b-c1-first",
+        "irish-2011-hl-listening-b-c1-second",
+        "irish-2011-hl-listening-b-c2-first",
+        "irish-2011-hl-listening-b-c2-second",
+        "irish-2011-hl-listening-b-c3-first",
+        "irish-2011-hl-listening-b-c3-second",
+        "irish-2011-hl-listening-c-p1",
+        "irish-2011-hl-listening-c-p2",
+        "irish-2011-hl-listening-c-p3"
       ],
       "atlasQuestionIds": [
         "1",
@@ -9340,8 +9340,6 @@
         "irish-2011-ol-p2-poetry-roghnach-b-ii"
       ],
       "atlasQuestionIds": [
-        "1",
-        "2",
         "P-A",
         "P-B",
         "F-A",

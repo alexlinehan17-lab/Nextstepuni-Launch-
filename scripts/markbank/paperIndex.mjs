@@ -255,6 +255,14 @@ export function resolvePaperFileid(subjectId, year, level, section) {
         : ['2', '3'].includes(section) ? stripPdf(written[0].doc?.f) : null;
     }
   }
+  // The 2010-2011 Higher and Ordinary Irish sittings also print their listening as a paper of its own (the
+  // Triail Chluastuisceana, indexed "Aural Paper") beside Paper One (composition and reading) and Paper Two:
+  // their aural cards file under section 'A', the other sections are the papers' own numbers. Only the exact
+  // indexed three, and only Irish, so no other structure inherits it.
+  if (subjectId === 'irish' && level !== 'foundation' && section === 'A') {
+    const aural = entry.papers.filter(p => /^Aural Paper$/i.test(p.label));
+    if (entry.papers.length === 3 && aural.length === 1) return stripPdf(aural[0].doc?.f);
+  }
   // Art's separate illustration booklet is indexed as a second "paper" even
   // though every written section lives in the document explicitly labelled
   // Exam Paper. Treating both documents as section candidates made every Art

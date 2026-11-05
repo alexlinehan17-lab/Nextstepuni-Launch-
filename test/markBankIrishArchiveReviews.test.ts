@@ -109,8 +109,6 @@ const PAPER_ONE = [
   { review: ordinary2013P1.review, year: 2013, fileid: 'LC001GLP100IV.pdf', segments: 6, questions: 20, titles: 9, perTitle: 50 },
   { review: higher2012P1.review, year: 2012, fileid: 'LC001ALP100IV.pdf', segments: 8, questions: 28, titles: 9, perTitle: 100 },
   { review: ordinary2012P1.review, year: 2012, fileid: 'LC001GLP100IV.pdf', segments: 6, questions: 20, titles: 9, perTitle: 50 },
-  { file: ordinary2011P1, fileid: 'LC001GLP100IV.pdf', cards: 19, readingWhole: 10 },
-  { file: higher2011P1, fileid: 'LC001ALP100IV.pdf', cards: 39, readingWhole: 10 },
 ];
 
 describe('Irish archive review: Paper 1 (listening and composition)', () => {
@@ -236,6 +234,8 @@ const NEW_PAPER_TWO = [
   { file: ordinary2012P2, fileid: 'LC001GLP200IV.pdf', cards: 24, readingWhole: 10 },
   { file: ordinary2011P2, fileid: 'LC001GLP200IV.pdf', cards: 30, readingWhole: 0 },
   { file: higher2011P2, fileid: 'LC001ALP200IV.pdf', cards: 14, readingWhole: 0 },
+  { file: ordinary2011P1, fileid: 'LC001GLP100IV.pdf', cards: 19, readingWhole: 10 },
+  { file: higher2011P1, fileid: 'LC001ALP100IV.pdf', cards: 39, readingWhole: 10 },
 ];
 
 describe('Irish archive review: new Paper 2 cards', () => {

@@ -413,7 +413,7 @@ def build():
             scheme_pages = sorted(set(spages) | ({5, 6} if any('IONR' in refs for *_, refs in crits) else set()))
             kind = split_kind(crits)
             label = f'{q}({p})'
-            card = add(id=f'irish-2011-hl-p1-reading-{letter.lower()}-q{q}-{p}', section='2', atlasQuestionId=f'R-{letter}-{q}-{p}',
+            card = add(id=f'irish-2011-hl-p1-reading-{letter.lower()}-q{q}-{p}', section='1', atlasQuestionId=f'R-{letter}-{q}-{p}',
                        questionRef=f'2011 HL Paper 1 Léamhthuiscint {letter} · Ceist {label}', questionText=f'{label} ' + prompt[4:],
                        totalMarks=sum(cr['maxMarks'] for cr in criteria), topicId=topic, conceptId=f'irish-hl-p1-reading-{letter.lower()}-q{q}-{p}',
                        schemePage=scheme_pages[0], schemePages=scheme_pages, reviewedPaperPages=pages, taskRequirements=READING_TASKS,
@@ -422,7 +422,7 @@ def build():
             by_question[q].append((p, prompt, card, kind))
         for q, parts in by_question.items():
             assert [p for p, *_ in parts] == ['a', 'b'], (letter, q)
-            add(id=f'irish-2011-hl-p1-reading-{letter.lower()}-q{q}', section='2', atlasQuestionId=f'R-{letter}-{q}',
+            add(id=f'irish-2011-hl-p1-reading-{letter.lower()}-q{q}', section='1', atlasQuestionId=f'R-{letter}-{q}',
                 questionRef=f'2011 HL Paper 1 Léamhthuiscint {letter} · Ceist {q}', questionText=f'{q} ' + ' '.join(prompt for _, prompt, _, _ in parts),
                 totalMarks=7, topicId=topic, conceptId=f'irish-hl-p1-reading-{letter.lower()}-q{q}',
                 schemePage=min(card['schemePage'] for _, _, card, _ in parts),

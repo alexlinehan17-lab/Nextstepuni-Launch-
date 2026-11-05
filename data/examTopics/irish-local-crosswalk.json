@@ -28,15 +28,15 @@
     "referenceAnomalyAssociations": 2,
     "matchedLocalCardLinks": 742,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 4151,
-    "distinctStudentFacingQuestions": 4151,
+    "localPhysicalMappings": 4149,
+    "distinctStudentFacingQuestions": 4149,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 3465,
+    "retainedLocalQuestions": 3463,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 3865,
+    "newlyAddedPhysicalMappings": 3863,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -17650,33 +17650,6 @@
       "n": "R-B-5",
       "topicIds": [
         "irish-ordinary-reading-comprehension"
-      ],
-      "provenance": "retained-local"
-    },
-    {
-      "level": "ordinary",
-      "lang": "iv",
-      "year": 2011,
-      "fileid": "LC001GLP200IV.pdf",
-      "paperKey": "p2",
-      "kind": "p2",
-      "n": "1",
-      "topicIds": [
-        "irish-ordinary-reading-comprehension"
-      ],
-      "provenance": "retained-local"
-    },
-    {
-      "level": "ordinary",
-      "lang": "iv",
-      "year": 2011,
-      "fileid": "LC001GLP200IV.pdf",
-      "paperKey": "p2",
-      "kind": "p2",
-      "n": "2",
-      "topicIds": [
-        "irish-ordinary-write-about-a-studied-folktale",
-        "irish-ordinary-write-about-a-studied-prose-optional"
       ],
       "provenance": "retained-local"
     },

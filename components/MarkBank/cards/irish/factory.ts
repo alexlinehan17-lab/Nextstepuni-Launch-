@@ -82,7 +82,8 @@ interface AuthoredIrishCard {
   year: number;
   level: IrishLevel;
   paper: 1 | 2;
-  section: '1' | '2';
+  /** The paper's number; 'A' for 2010-2011's separate aural paper (scripts/markbank/paperIndex.mjs). */
+  section: '1' | '2' | 'A';
   questionRef: string;
   /** The lead-in the paper prints before the question proper, e.g. 2B's "Níl cead aon ábhar …" restriction. */
   stem?: string;

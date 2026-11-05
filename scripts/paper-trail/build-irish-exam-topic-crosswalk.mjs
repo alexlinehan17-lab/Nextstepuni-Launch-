@@ -574,6 +574,9 @@ for (const paper of papers) {
         // A reviewed task written to the sidecar by an earlier run is re-added
         // by the reviewed-task pass with its own same-level topics.
         if (reviewedTaskKeys.has(paper.year + '|' + paper.fileid + '|' + n)) continue;
+        // 2010-2011 Ordinary Paper 2 maps print no numbered question: a numbered one read back is an answer-map parent the
+        // reviewed-task pass added, never an Atlas question.
+        if (paper.year <= 2011 && paper.level === 'ordinary') continue;
         let baseTopicIds;
         if (n === '1') baseTopicIds = [ids.reading];
         else if (n === '2') baseTopicIds = paper.level === 'higher' ? [H.prose] : [O.prose, O.folktale];
@@ -1190,7 +1193,9 @@ function rootReviewedTasks(paper, artifact, input) {
   // The storage sidecar read back on the next run already holds the literature anchors this
   // function added; rebuild them every run so the output does not depend on the last one.
   const own = new Set(artifact.q.map(q => q.n));
-  const entries = input.filter(q => !(numeric(q) && !own.has(q.n) && LITERATURE_PARENTS.some(item => item.label === q.label)));
+  // So does a 2010-2011 printed question this function added (the paper's own map has none of them), whatever its label.
+  const entries = input.filter(q => !(numeric(q) && !own.has(q.n)
+    && (LITERATURE_PARENTS.some(item => item.label === q.label) || (paper.year <= 2011 && paper.level !== 'foundation'))));
   const printed = () => entries.filter(numeric);
   const byLabel = test => printed().find(q => test.test(q.label ?? ''));
   const added = [];
@@ -1230,8 +1235,12 @@ function rootReviewedTasks(paper, artifact, input) {
   const PRE_2012 = paper.year <= 2011 && paper.level !== 'foundation' ? [
     ...(/P100IV\.pdf$/.test(paper.fileid) ? [{ prefix: 'W-', n: '1', label: 'Ceist 1 · Ceapadóireacht', section: 'W-A' },
       { prefix: 'R-', n: '2', label: 'Ceist 2 · Léamhthuiscint', section: 'R-A' }] : []),
-    ...(paper.level === 'ordinary' && /P200IV\.pdf$/.test(paper.fileid) ? [{ prefix: 'P-', n: '1', label: 'Ceist 1 · Prós', section: 'P-A' },
-      { prefix: 'F-', n: '2', label: 'Ceist 2 · Filíocht', section: 'F-A' }] : []),
+    // Ordinary Paper 2 prints each course's questions apart: "CEIST 1 – PRÓS AINMNITHE", "CEIST 2 – FILÍOCHT AINMNITHE", then
+    // "CEIST 1 – PRÓS ROGHNACH", "CEIST 2 – FILÍOCHT ROGHNACH" (2010 and 2011): four printed questions, numbered here in print order.
+    ...(paper.level === 'ordinary' && /P200IV\.pdf$/.test(paper.fileid) ? [{ prefix: 'P-A', n: '1', label: 'Ceist 1 · Prós Ainmnithe', section: 'P-A' },
+      { prefix: 'F-A', n: '2', label: 'Ceist 2 · Filíocht Ainmnithe', section: 'F-A' },
+      { prefix: 'P-B', n: '3', label: 'Ceist 1 · Prós Roghnach', section: 'P-B' },
+      { prefix: 'F-B', n: '4', label: 'Ceist 2 · Filíocht Roghnach', section: 'F-B' }] : []),
     // Higher Paper 2: Ceist 1 Prós, Ceist 2 Próstéacs Breise, Ceist 3 Filíocht, Ceist 4 Stair na Gaeilge (2010 and 2011).
     ...(paper.level === 'higher' && /P200IV\.pdf$/.test(paper.fileid) ? [{ prefix: 'P-', n: '1', label: 'Ceist 1 · Prós', section: 'P-A' },
       { prefix: 'X-2', n: '2', label: 'Ceist 2 · Próstéacs Breise', section: 'X' }, { prefix: 'F-', n: '3', label: 'Ceist 3 · Filíocht', section: 'F-A' },
@@ -1244,7 +1253,10 @@ function rootReviewedTasks(paper, artifact, input) {
     if (existing) return existing;
     const section = artifact.q.find(q => q.n === item.section);
     if (!section) throw new Error(`${paper.year} ${paper.fileid}: no ${item.section} section anchor for ${task.n}`);
-    const anchor = { n: item.n, label: item.label, pP: section.pP, pY: section.pY, region: [], mode: 'crop', conf: 1, printOrder: 0, children: [] };
+    // The 2010-2011 section anchors are page jumps, not always on the question's own page: the printed question starts on the
+    // first page its own tasks are printed on.
+    const first = Math.min(...entries.filter(q => q.n.startsWith(item.prefix) && q.paperRegion?.length).map(q => q.paperRegion[0].p));
+    const anchor = { n: item.n, label: item.label, pP: Number.isFinite(first) ? first : section.pP, pY: section.pY, region: [], mode: 'crop', conf: 1, printOrder: 0, children: [] };
     entries.push(anchor); added.push(anchor);
     return anchor;
   };
