@@ -140,6 +140,13 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   }
   const directions: string[] = [];
   let text = source.guidance.filter((line, index) => index === 0 || !SECTION_SUMMARY.test(line.trim())).join(' ').replace(/[\uf0a7\uf0b7\u25aa\u2022]/g, ' • ').replace(/\s+/g, ' ').trim();
+  // "Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go soiléir. (2 mharc)" alone (2012 and 2013 Ordinary
+  // 2B and 3B): the title line printed with its price and nothing under it is the ask that price is for, never a note: its own
+  // words are the row, claimed whole (the scheme prints no split).
+  const titleAsk = /^(Ní mór teideal [^=•¶()]*?\.)\s*\(\s*(\d+)\s*m?h?arc\s*\)$/.exec(text);
+  if (titleAsk && Number(titleAsk[2]) === source.totalMarks) {
+    return { ok: true, allocation: { parts: [{ id: 'p1', tariff: source.totalMarks, rows: [{ id: 'r1', text: titleAsk[1], marks: source.totalMarks }] }], directions: [] } };
+  }
   // "Tréith 1 ( 2 mharc) + Sampla 1 ( 4 mharc) ► 6 mharc" (2014 Higher A and B 6(b)): one half's split, each piece priced in
   // brackets and their total after the arrow. Where the pieces add up to it, it reads as the split "Tréith 1 = 2 mharc + Sampla 1
   // = 4 mharc" (2016's "Aidhm a lua = 2 mharc + Forbairt = 4 mharc"); the total is the half's own, which the slots carry.
@@ -770,6 +777,9 @@ export const closeBrackets = (allocation: IrishAllocation, guidance: string[]): 
   const count = (value: string, mark: string) => value.split(mark).length - 1;
   const close = (note: string) => {
     if (count(note, ')') === count(note, '(') + 1 && text.includes(`(${note}`)) return `(${note}`;
+    // "( 5 mharc= 2 mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)" (2013 Ordinary An Lasair Choille): the bracket printed
+    // with a space inside it.
+    if (count(note, ')') === count(note, '(') + 1 && text.includes(`( ${note}`)) return `(${note}`;
     if (count(note, '(') === count(note, ')') + 1 && text.includes(`${note})`)) return `${note})`;
     return note;
   };
