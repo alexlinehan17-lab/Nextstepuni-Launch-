@@ -35321,46 +35321,10 @@
   "alt": "The program printed with 2021 HL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 19 lines and begins: x = 3",
   "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
  },
- "computer-science-2021-HL-paper-q13-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q13-fig0.png",
-  "md5": "016b0b18f3e7196fcb1c3491439dc79c",
-  "alt": "The table or diagram printed with 2021 HL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4.",
-  "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
- },
- "computer-science-2021-HL-paper-q14-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
-  "md5": "54fe4567a51487225fdd3794399e5d81",
-  "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
-  "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
- },
- "computer-science-2021-HL-paper-q16-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-figure.png",
-  "md5": "b2d153d6f36fdc1ad60ace8a4e76febd",
-  "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 29 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
-  "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
- },
  "computer-science-2021-HL-paper-q4-code0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q4-code0.png",
   "md5": "0ec267fff651e2c85ff1527f8d86e444",
   "alt": "The program printed with 2021 HL Question 4, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: x = y",
-  "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
- },
- "computer-science-2021-HL-paper-q5-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q5-figure.png",
-  "md5": "a6ba4465e2a9c5fabc72f238cad14f3c",
-  "alt": "The table or diagram printed with 2021 HL Question 5, as the State Examinations Commission set it. It is labelled: Figure 1, total, count.",
-  "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
- },
- "computer-science-2021-HL-paper-q8-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q8-fig0.png",
-  "md5": "4683db5c6e56a94140f40254ed5eb800",
-  "alt": "The table or diagram printed with 2021 HL Question 8, as the State Examinations Commission set it. It is labelled: 1F44D.",
-  "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
- },
- "computer-science-2021-HL-paper-q9-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q9-fig0.png",
-  "md5": "78c41210bcb2e9961e3727e371d534c0",
-  "alt": "The table or diagram printed with 2021 HL Question 9, as the State Examinations Commission set it. It is labelled: Figure 3, Layer 1:, Explain:, Layer 2:.",
   "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
  },
  "computer-science-2022-HL-paper-q1-code0": {
@@ -35375,24 +35339,6 @@
   "alt": "The table or diagram printed with 2022 HL Question 6, as the State Examinations Commission set it. It is labelled: Figure 2.",
   "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
  },
- "computer-science-2022-HL-paper-q12-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q12-figure.png",
-  "md5": "345cfe73db767c7b439bc7ae520ac30e",
-  "alt": "The program and the table or diagram printed with 2022 HL Question 12, as the State Examinations Commission set it. The table or diagram is labelled: Figure 3.",
-  "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
- },
- "computer-science-2022-HL-paper-q14-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
-  "md5": "af107078c57e92f0fc5c19832d88bc4f",
-  "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
-  "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
- },
- "computer-science-2022-HL-paper-q16-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-figure.png",
-  "md5": "bbd1b84a8247bad4824dde09980e70b0",
-  "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 31 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
-  "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
- },
  "computer-science-2022-HL-paper-q4-fig0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q4-fig0.png",
   "md5": "2568c8d86c5b64deaace67fee62afa3a",
@@ -35405,28 +35351,10 @@
   "alt": "The table or diagram printed with 2023 HL Question 1, as the State Examinations Commission set it. It is labelled: Column A, Value, Column B, Data Type, Ciara, 083-1234567, 1.5, 1.7, 1.2, 0.9, 1.3, False, −99.99.",
   "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
  },
- "computer-science-2023-HL-paper-q13-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q13-fig0.png",
-  "md5": "759f41959e2d282c71642dae236190f1",
-  "alt": "The table or diagram printed with 2023 HL Question 13, as the State Examinations Commission set it. It is labelled: Technology 1:, Description:, Technology 2:, Figure 8.",
-  "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
- },
  "computer-science-2023-HL-paper-q15-fig0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q15-fig0.png",
   "md5": "58c281b828df0a409a80ce4a3974a5ce",
   "alt": "The table or diagram printed with 2023 HL Question 15, as the State Examinations Commission set it. It is labelled: Best Case, Worst Case, Linear Search, O(1), Binary Search.",
-  "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
- },
- "computer-science-2023-HL-paper-q16-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-figure.png",
-  "md5": "c57206f1ca3acbf1a5213b2d53350aa9",
-  "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
-  "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
- },
- "computer-science-2023-HL-paper-q3-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q3-figure.png",
-  "md5": "e149c2aee93d1586013b8cf1c0f6b511",
-  "alt": "The program and the table or diagram printed with 2023 HL Question 3, as the State Examinations Commission set it. The table or diagram is labelled: Figure 1, Figure 2.",
   "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
  },
  "computer-science-2023-HL-paper-q11-fig0": {
@@ -35453,18 +35381,6 @@
   "alt": "The program printed with 2024 HL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 8 lines and begins: number = 27",
   "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
  },
- "computer-science-2024-HL-paper-q5-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q5-fig0.png",
-  "md5": "33290c12b8e0c9cf9cf9a5b1c6edd990",
-  "alt": "The table or diagram printed with 2024 HL Question 5, as the State Examinations Commission set it. It is labelled: Figure 3.",
-  "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
- },
- "computer-science-2024-HL-paper-q9-code0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q9-code0.png",
-  "md5": "56600a53a0e14ce013343e6b8aec9f60",
-  "alt": "The program printed with 2024 HL Question 9, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: 365 days. The Python function is_leap_year, shown below can be used to determine whether",
-  "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
- },
  "computer-science-2024-HL-paper-q11-figure": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q11-figure.png",
   "md5": "19c3755b0d4049ad2aaf05ad475579a6",
@@ -35477,46 +35393,16 @@
   "alt": "The table or diagram printed with 2024 HL Question 12, as the State Examinations Commission set it. It is labelled: Figure 5.",
   "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
  },
- "computer-science-2024-HL-paper-q13-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
-  "md5": "67cf0a6f2a38eacf642137aa394ed343",
-  "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
-  "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
- },
  "computer-science-2024-HL-paper-q14-fig0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
   "md5": "78d566ae40bd1ebc30ccc959f1ce19ae",
   "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
   "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
  },
- "computer-science-2024-HL-paper-q15-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
-  "md5": "9c3edb90be84e97e4f75aabe07ab3523",
-  "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
-  "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
- },
- "computer-science-2024-HL-paper-q16-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
-  "md5": "dac2bb8e404cd4f9900cd33c89f0fecb",
-  "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
-  "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
- },
  "computer-science-2025-HL-paper-q1-code0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q1-code0.png",
   "md5": "f85f75831382924545914ad4ac382d13",
   "alt": "The program printed with 2025 HL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 21 lines and begins: a = 5",
-  "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
- },
- "computer-science-2025-HL-paper-q7-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q7-fig0.png",
-  "md5": "d195e9614ecac764ea8dc492c7739ef6",
-  "alt": "The table or diagram printed with 2025 HL Question 7, as the State Examinations Commission set it.",
-  "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
- },
- "computer-science-2025-HL-paper-q9-code0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q9-code0.png",
-  "md5": "09a0aa7aaeaac880ff045eb7282ebc8a",
-  "alt": "The program printed with 2025 HL Question 9, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 18 lines and begins: For i in range(1, 21):",
   "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
  },
  "computer-science-2025-HL-paper-q14-code0": {
@@ -35537,28 +35423,10 @@
   "alt": "The program printed with 2025 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 34 lines and begins: # Question 16 (a)",
   "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
  },
- "computer-science-2021-OL-paper-q5-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q5-fig0.png",
-  "md5": "342af652f5f9101a7b60a218bb7c1c2b",
-  "alt": "The table or diagram printed with 2021 OL Question 5, as the State Examinations Commission set it. It is labelled: technology., Figure 2.",
-  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2021-OL-paper-q7-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q7-fig0.png",
-  "md5": "8c6fdf032b963da9d4f8135417eff2af",
-  "alt": "The table or diagram printed with 2021 OL Question 7, as the State Examinations Commission set it. It is labelled: Figure 3.",
-  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
- },
  "computer-science-2021-OL-paper-q8-fig0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q8-fig0.png",
   "md5": "574a80234b57ce9298f231fac4c9826a",
   "alt": "The table or diagram printed with 2021 OL Question 8, as the State Examinations Commission set it.",
-  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2021-OL-paper-q13-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q13-fig0.png",
-  "md5": "1f71d5481e63ae348ba8444b07217bfc",
-  "alt": "The table or diagram printed with 2021 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4, Activity 1:, Activity 2:.",
   "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
  },
  "computer-science-2021-OL-paper-q15-fig0": {
@@ -35566,42 +35434,6 @@
   "md5": "573b6551e51c8d802cd71871fb57d349",
   "alt": "The table or diagram printed with 2021 OL Question 15, as the State Examinations Commission set it. It is labelled: ●, Intel Core i3 CPU, 2GB RAM Memory, Intel Integrated Graphics, Bluetooth 4.1, 2 x USB 3.1, 1 x USB 2.0,, HDMI, 10/100 Ethernet LAN Port, 4‐Cell Li‐ion Battery, Figure 6.",
   "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2021-OL-paper-q16-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q16-figure.png",
-  "md5": "829123f0f0e8f2c4e8733654f29eccf5",
-  "alt": "The program printed with 2021 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 19 lines and begins: # Question 16(a)",
-  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2022-OL-paper-q1-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q1-figure.png",
-  "md5": "c5e6788444fd0846eb2bc2e43b0a5f58",
-  "alt": "The program printed with 2022 OL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 8 lines and begins: a = 2",
-  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2022-OL-paper-q4-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q4-fig0.png",
-  "md5": "8e9f8ce35cb9b46c737a522c6e601dda",
-  "alt": "The table or diagram printed with 2022 OL Question 4, as the State Examinations Commission set it. It is labelled: Figure 4, • Motherboard, • Fan, • Memory, • Hard drive, • Video card, Component Name 2:, Description 2:, Component Name 3:, Description 3:, Component Name 1:, Description 1:.",
-  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2022-OL-paper-q13-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q13-figure.png",
-  "md5": "7b250b763c2e49723c55ec20927ad2bd",
-  "alt": "The table or diagram printed with 2022 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 9, First digit, Second digit, Third digit, Fourth digit, Answer:, First digit, Second digit, Third digit, Fourth digit.",
-  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2022-OL-paper-q15-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q15-fig0.png",
-  "md5": "fb64447f490526af1036cdc203a1847d",
-  "alt": "The table or diagram printed with 2022 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 10.",
-  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2022-OL-paper-q3-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q3-figure.png",
-  "md5": "761f6cd4e59c5439e2ac5e1af6f58602",
-  "alt": "The program and the table or diagram printed with 2022 OL Question 3, as the State Examinations Commission set it. The table or diagram is labelled: Start, Set all pins to off, Set pin 0 to on, Pause for 2 seconds, Set pin 0 to off, Set pin 1 to on, Set pin 1 to off, Set pin 2 to on, Figure 2, Figure 3.",
-  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
  },
  "computer-science-2022-OL-paper-q10-fig0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q10-fig0.png",
@@ -35615,40 +35447,10 @@
   "alt": "The program printed with 2022 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: # Question 16 (a)",
   "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
  },
- "computer-science-2023-OL-paper-q1-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q1-figure.png",
-  "md5": "3119a1ad5ba943b13fff4094c00b5e61",
-  "alt": "The program and the table or diagram printed with 2023 OL Question 1, as the State Examinations Commission set it. The table or diagram is labelled: a = 21, b = 10, Column A, print statement, Column B, True or False, print(a == b), print(b != a), print(a > b), print(b <= a), print(a == 10), print(b != 21).",
-  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2023-OL-paper-q5-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q5-fig0.png",
-  "md5": "dc955f673acf0713517d096b61faba86",
-  "alt": "The table or diagram printed with 2023 OL Question 5, as the State Examinations Commission set it. It is labelled: Figure 1.",
-  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2023-OL-paper-q7-fig0": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q7-fig0.png",
-  "md5": "ddcdf45dec60424999f84e57be7424e0",
-  "alt": "The table or diagram printed with 2023 OL Question 7, as the State Examinations Commission set it. It is labelled: Figure 2.",
-  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2023-OL-paper-q13-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-figure.png",
-  "md5": "2e907eae200af6eb7a48f033a2ef866c",
-  "alt": "The program and the table or diagram printed with 2023 OL Question 13, as the State Examinations Commission set it. The table or diagram is labelled: Column A, Definition, Column B, Term, same data type, i = 1, j = 10, while i < j:, print(i), i = i + 1, j = j - 1, while i < j, True.",
-  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
- },
  "computer-science-2023-OL-paper-q14-fig0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q14-fig0.png",
   "md5": "9d86a803f121b3afdd226f55f05845dd",
   "alt": "The table or diagram printed with 2023 OL Question 14, as the State Examinations Commission set it. It is labelled: Figure 5.",
-  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2023-OL-paper-q16-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-figure.png",
-  "md5": "d6cfd575e44ba5694354c720e2e26310",
-  "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: # Question 16(a)",
   "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
  },
  "computer-science-2023-OL-paper-q11-code0": {
@@ -35693,12 +35495,6 @@
   "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
   "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
  },
- "computer-science-2024-OL-paper-q16-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16-figure.png",
-  "md5": "245468b63981c1500f0c5218e6e03200",
-  "alt": "The program printed with 2024 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 21 lines and begins: # Question 16(a)",
-  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
- },
  "computer-science-2024-OL-paper-q3-fig0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q3-fig0.png",
   "md5": "8ed57202a38f791e84c9a4b33f582d36",
@@ -35729,22 +35525,10 @@
   "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
   "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
  },
- "computer-science-2025-OL-paper-q14-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
-  "md5": "9b0a2cd2d20d991b738ce5aa5cc418b4",
-  "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
-  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
- },
  "computer-science-2025-OL-paper-q15-fig0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-fig0.png",
   "md5": "4238272fc9f653ff7e671861fe56f9d7",
   "alt": "The table or diagram printed with 2025 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 7.",
-  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
- },
- "computer-science-2025-OL-paper-q16-figure": {
-  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-figure.png",
-  "md5": "6c33a073caa3a4a87e96d90cdff326ed",
-  "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: # Question 16(a)",
   "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
  },
  "computer-science-2025-OL-paper-q3-fig0": {
