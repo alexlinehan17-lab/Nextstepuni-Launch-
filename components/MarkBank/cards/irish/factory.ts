@@ -41,8 +41,16 @@ import higher2018P1 from './higher-2018-p1-authored.json';
 import higher2018P2 from './higher-2018-p2-authored.json';
 import ordinary2018P1 from './ordinary-2018-p1-authored.json';
 import ordinary2018P2 from './ordinary-2018-p2-authored.json';
+import higher2017P1 from './higher-2017-p1-authored.json';
+import higher2017P2 from './higher-2017-p2-authored.json';
+import ordinary2017P1 from './ordinary-2017-p1-authored.json';
+import ordinary2017P2 from './ordinary-2017-p2-authored.json';
+import higher2016P1 from './higher-2016-p1-authored.json';
+import higher2016P2 from './higher-2016-p2-authored.json';
+import ordinary2016P1 from './ordinary-2016-p1-authored.json';
+import ordinary2016P2 from './ordinary-2016-p2-authored.json';
 import { irishAnswersFor, stepSingleAnswerLadders } from './answers';
-import { irishTariffsFor } from './tariffs';
+import { irishTariffsFor, stepPrintedScales } from './tariffs';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 
 type IrishLevel = 'higher' | 'ordinary';
@@ -75,7 +83,7 @@ interface AuthoredIrishCard {
 }
 
 // Paper-reviewed components ship as their own files beside the legacy census output.
-const DATA = [...authored.cards, ...higher2026P1.cards, ...higher2026P2.cards, ...ordinary2026P1.cards, ...ordinary2026P2.cards, ...higher2025P2.cards, ...ordinary2025P2.cards, ...ordinary2024P2.cards, ...higher2023P2.cards, ...ordinary2023P2.cards, ...ordinary2022P2.cards, ...higher2022P2.cards, ...higher2021P2.cards, ...ordinary2021P2.cards, ...higher2020P1.cards, ...higher2020P2.cards, ...ordinary2020P1.cards, ...ordinary2020P2.cards, ...higher2019P1.cards, ...higher2019P2.cards, ...ordinary2019P1.cards, ...ordinary2019P2.cards, ...higher2018P1.cards, ...higher2018P2.cards, ...ordinary2018P1.cards, ...ordinary2018P2.cards] as AuthoredIrishCard[];
+const DATA = [...authored.cards, ...higher2026P1.cards, ...higher2026P2.cards, ...ordinary2026P1.cards, ...ordinary2026P2.cards, ...higher2025P2.cards, ...ordinary2025P2.cards, ...ordinary2024P2.cards, ...higher2023P2.cards, ...ordinary2023P2.cards, ...ordinary2022P2.cards, ...higher2022P2.cards, ...higher2021P2.cards, ...ordinary2021P2.cards, ...higher2020P1.cards, ...higher2020P2.cards, ...ordinary2020P1.cards, ...ordinary2020P2.cards, ...higher2019P1.cards, ...higher2019P2.cards, ...ordinary2019P1.cards, ...ordinary2019P2.cards, ...higher2018P1.cards, ...higher2018P2.cards, ...ordinary2018P1.cards, ...ordinary2018P2.cards, ...higher2017P1.cards, ...higher2017P2.cards, ...ordinary2017P1.cards, ...ordinary2017P2.cards, ...higher2016P1.cards, ...higher2016P2.cards, ...ordinary2016P1.cards, ...ordinary2016P2.cards] as AuthoredIrishCard[];
 
 /** Listening and reading cards carry the scheme's exact answers; cut them
  *  into rows where the parts add up to the criterion (cards/irish/answers.ts).
@@ -175,7 +183,7 @@ const derivedFrom = (id: string): boolean => {
 const primaryAllocation = (card: AuthoredIrishCard, criterion: Criterion) => allocationFor(card, criterion) ?? siblingAllocation(card, criterion);
 const sameCriterion = (a: Criterion, b: Criterion) => a.id === b.id && a.maxMarks === b.maxMarks
   && a.guidance.length === b.guidance.length && a.guidance.every((line, index) => line === b.guidance[index]);
-const FREAGRAI = /^(.*?)\((\d+)\s*m?h?arc(?:\s*\+\s*(\d+)\s*m?h?arc)?\)\s*Freagraí(?: samplacha)?:\s*(.+)$/;
+const FREAGRAI = /^(.*?)\((\d+)\s*m?h?arc(?:\s*\+\s*(\d+)\s*m?h?arc)?\)\s*Freagraí(?: [Ss]amplacha)?:\s*(.+)$/;
 
 /** Rows for a derived practice card whose own criterion the readers cannot cut (it is a slot of a part, or the
  *  part alone), always from the same printed scheme and never added to:
@@ -235,7 +243,7 @@ const cloneCriteria = (card: AuthoredIrishCard): IrishCriterion[] =>
   card.criteria.map(criterion => {
     const found = primaryAllocation(card, criterion) ?? derivedAllocation(card, criterion)
       ?? (pricedAward(criterion) ? freagraiAllocation(criterion) : undefined);
-    const allocation = found && stepSingleAnswerLadders(found);
+    const allocation = found && stepPrintedScales(stepSingleAnswerLadders(found), criterion.guidance);
     return {
       ...criterion,
       permittedMarks: [...criterion.permittedMarks],

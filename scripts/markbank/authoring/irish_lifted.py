@@ -301,8 +301,39 @@ def written(card: dict) -> list[str]:
     return out
 
 
+# A poetry Plé band table ("Catagóir Plé (11 mharc) Marcanna Sármhaith … 10-11 … Lag/An-lag … 0-3", 2026 without
+# the "(11 mharc)"): the scheme prints it after the question's last part, so a builder that cuts parts in print order
+# leaves it on (ii) or (iii). Its header (or its top printed value) is the price of the one row it scales.
+PLE_BAND = re.compile(r'Catagóir Plé(?: \((\d+) mharc\))? Marcanna Sármhaith .*?Lag/An-lag Eolas an-bhearnach, '
+                      r'an-mhíchruinn agus an-lochtach (\d+)\s*-\s*(\d+)')
+
+
+def return_band_tables(card: dict) -> dict:
+    """Return a Plé band table to the criterion whose row it prices: where its host has no row at the table's price and
+    exactly one other criterion of the card does ("Plé … = 11 mharc"), the table moves there, as printed."""
+    def priced(criterion, marks):
+        return any(re.search(rf'=\s*{marks}\s*mh?arc\b', line) for line in criterion['guidance'])
+    for host in card['criteria']:
+        for index, line in enumerate(host['guidance']):
+            for table in list(PLE_BAND.finditer(line)):
+                tops = [int(v) for v in re.findall(r'(\d+)\s*-\s*(\d+)|(?<=\s)(\d+)(?=\s)', table.group(0)) for v in v if v]
+                marks = int(table.group(1)) if table.group(1) else max(tops)
+                if priced(host, marks):
+                    continue
+                homes = [c for c in card['criteria'] if c is not host and priced(c, marks)]
+                if len(homes) != 1:
+                    continue
+                host['guidance'][index] = re.sub(r'\s{2,}', ' ', line.replace(table.group(0), ' ')).strip()
+                homes[0]['guidance'].append(table.group(0))
+                line = host['guidance'][index]
+        host['guidance'] = [line for line in host['guidance'] if line.strip()]
+    return card
+
+
 def scheme_words(cards: list[dict]) -> list[dict]:
     printed_question(cards)
+    for card in cards:
+        return_band_tables(card)
     for card in cards:
         text = corpus(card['year'])
         notes: list[str] = []

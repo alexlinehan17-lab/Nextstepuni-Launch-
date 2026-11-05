@@ -303,6 +303,11 @@ def apply_legacy_review(cards):
     ii, _ = s.chunk('Eolas = 5 mharc Pointe amháin eolais = 5 mharc Mar phointe eolais', '(iii) Cé a chum an dán seo?', s.text.index('⟦38⟧'))
     assert ii.endswith('línte cuí an dáin.'), ii[-60:]
     route['criteria'][1]['guidance'] = [ii]
+    # 3B(a)(i): the scheme prints (i)'s Plé band table on PDF 38, after (iii) and the Gaeilge table; the route review
+    # stops (i) at its own text, so the table is returned to (i) here, as place_tables does for the other poetry cards.
+    ple = PLE_TABLE.search(s.text, s.text.index('⟦38⟧'), s.text.index('⟦39⟧'))
+    assert ple and '(11 mharc)' in ple.group(0) and 'Plé (11 mharc)' not in ' '.join(route['criteria'][0]['guidance']), 'PDF 38 Plé table'
+    route['criteria'][0]['guidance'].append(clean(ple.group(0)))
     # Two prose routes open their Eolas slice one word off the scheme's own option heading: An Lasair Choille keeps the
     # separator "nó" before its title, Hurlamaboc starts after "(b) Hurlamaboc". Each becomes the printed heading itself.
     for card_id, old, new in [('irish-2022-hl-p2-prose-2a-a-an-lasair-choille', ' nó An Lasair Choille Eolas = 25 marc', ' An Lasair Choille Eolas = 25 marc'),
