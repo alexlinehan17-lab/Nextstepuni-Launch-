@@ -19,6 +19,8 @@
  */
 
 import type { SecCard } from '../../../../types/markBank';
+import { rubricCardsForLevel } from './rubric';
+
 
 const base = {
   source: 'sec' as const,
@@ -2003,4 +2005,5 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Difference – Judaism’s understanding of creation differs to the Big Bang theory, put forward by science, in that Judaism attributes creation to a purposeful action of God whereas the Big Bang theory explains creation as a natural observable phenomenon without reference to a divine cause etc.", marks: null, openList: true },
     ],
   } as SecCard,
+  ...rubricCardsForLevel("higher"),
 ];

@@ -19,6 +19,8 @@
  */
 
 import type { SecCard } from '../../../../types/markBank';
+import { rubricCardsForLevel } from './rubric';
+
 
 const base = {
   source: 'sec' as const,
@@ -2322,4 +2324,5 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Darwin’s Theory of Evolution contradicted the Christian thought that humans were created in the image and likeness of God, this meant that human beings could no longer be seen as set apart, the masterpieces of God’s creation, but the product of chance and accidental forces etc.", marks: null, openList: true },
     ],
   } as SecCard,
+  ...rubricCardsForLevel("ordinary"),
 ];

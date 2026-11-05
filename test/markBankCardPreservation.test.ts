@@ -793,8 +793,9 @@ const decks = [
   ['engineering:ordinary', ENGINEERING_ORDINARY, 194, '4db6b2da1890e2bb262ee816e1bbb8d97e86ead5cb99531609170a75594a075b'],
   /* 2026-09-10: Religious Education, the sixteenth subject, lands complete —
    * 288 cards against the 288 asks its ten papers print, every one of them
-   * added and none replacing anything. Nothing in any other deck moved. */
-  ['religious-education:higher', RE_HIGHER, 135, '9a6117ccc7be90492858b10d071528bbfee33de42ec8a368c51d6e2c76c596f3'],
+   * added and none replacing anything. Nothing in any other deck moved.
+   * 2026-11-05: the RE lane builds a sitting at a time as band-grid cards (re_lane.py, rubric-authored.json), ids kept. 2026 Higher, 28 cards, added. */
+  ['religious-education:higher', RE_HIGHER, 163, 'd20f0a9298a571fa7bc188b0ea661f52220a1aa6de62bfcab893d4cce24440ff'],
   ['religious-education:ordinary', RE_ORDINARY, 153, 'ebad0ef90313b7b75bfb75aecca5c93c5372ee0745f58ffc407481bf74ee5569'],
   /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
    * replaced — it is a new subject and this is its first baseline. It ships
@@ -1472,6 +1473,7 @@ describe('Mark Bank card preservation', () => {
     // 2022 Ordinary Q16 split, -1 whole + 7 parts: 23,578.
     // 2024 Ordinary Q16 split, -1 whole + 6 parts: 23,583.
     // 2021 Ordinary splits, -2 whole + 8 parts: 23,589.
+    // Religious Education 2026 Higher, 28 asks, 28 band-grid cards: 23,617.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1488,9 +1490,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_589 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_617 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_589 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_617 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
