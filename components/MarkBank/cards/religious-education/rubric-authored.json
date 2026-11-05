@@ -1,6 +1,6 @@
 {
  "v": 1,
- "cardCount": 641,
+ "cardCount": 647,
  "cards": [
   {
    "id": "re-2026-hl-a-1-a",
@@ -80929,6 +80929,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -80938,6 +80944,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -80947,6 +80959,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -80956,6 +80974,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -80986,9 +81010,10 @@
      }
     ],
     "directions": [],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
-     3
+     3,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -81039,6 +81064,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -81048,6 +81079,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81057,6 +81094,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81066,6 +81109,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -81098,10 +81147,137 @@
     "directions": [
      "Note: A candidate giving an accurate account of one of Socrates’ ideas but does not make reference to the part it played in development of philosophy – Consult your Advising examiner. A candidate giving an accurate account of the development of philosophy but does not make reference to one of Socrates’ ideas – Consult your Advising Examiner."
     ],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
      3,
-     4
+     4,
+     21
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-ol-a-2-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2016 OL Section A Q2(a)",
+   "topicId": "re-a",
+   "conceptId": "different-images-god-reflect-different-understandings",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Different images of God reflect different understandings of God. Examine one traditional and one modern image of God, explaining the understanding of God suggested by each image.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show understanding of images of God by looking closely at one long established and one newly established image of God and the understanding of God suggested in each image.",
+    "points": [
+     "Traditional image of God as all-powerful e.g. in Judaism God is seen as creator, a powerful figure who could save his people from oppression which reflects the understanding that God looks after his people etc.",
+     "Modern image of God e.g. Art - Janet McKenzie’s ‘Jesus of the People’ portrays Jesus as a young African-American woman to show that God does not belong solely to any ethnic group or gender but is a God to all etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1",
+      "marks": [
+       1
+      ]
+     }
+    ],
+    "noZero": true,
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The scheme's grid prints no 0 range. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     4,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -81152,6 +81328,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -81161,6 +81343,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81170,6 +81358,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81179,6 +81373,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -81211,10 +81411,136 @@
     "directions": [
      "Note: Allow descriptive answers."
     ],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
      4,
-     5
+     5,
+     21
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-ol-a-3-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2016 OL Section A Q3(a)",
+   "topicId": "re-a",
+   "conceptId": "key-people-humanist-tradition-contributed-development",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Name two key people in the humanist tradition and describe how each contributed to the development of humanism.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the development of humanism by accurately identifying two key people in the humanist tradition and giving an accurate account of how each contributed to the development of humanism.",
+    "points": [
+     "Erasmus - advocated an attitude of scepticism i.e. question everything and then make a judgement which was later adopted and developed by René Descartes etc.",
+     "Karl Marx - emphasised human agency and subjectivity, rejecting religion and believing that human reasoning and consciousness were of the highest importance; contributed to the understanding of society by writing about the human struggle for freedom and need to reach full potential etc.",
+     "Albert Camus - taught that people can live a meaningful life; when the dignity of each individual is recognised and there is respect for human intelligence, then a meaningful society can be achieved etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1",
+      "marks": [
+       1
+      ]
+     }
+    ],
+    "noZero": true,
+    "directions": [],
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The scheme's grid prints no 0 range. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     5,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -81264,6 +81590,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -81273,6 +81605,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81282,6 +81620,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81291,6 +81635,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -81321,10 +81671,11 @@
      }
     ],
     "directions": [],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
      5,
-     6
+     6,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -81374,6 +81725,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -81383,6 +81740,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81392,6 +81755,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81401,6 +81770,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -81433,9 +81808,134 @@
     "directions": [
      "Note: Allow descriptive answers"
     ],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
-     7
+     7,
+     21
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-ol-b-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2016 OL Section B Q(b)",
+   "topicId": "re-b",
+   "conceptId": "ways-resurrection-jesus-influenced-first-disciples",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe two ways in which the resurrection of Jesus influenced the first disciples’ sense of mission.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the resurrection of Jesus by giving an accurate account of two ways that the resurrection of Jesus affected the first disciples’ sense of mission.",
+    "points": [
+     "The disciples’ understanding of Jesus’ teachings took on a new meaning as Jesus’ words were now known to be the word of God etc.",
+     "Gave the disciples an impetus to act, carrying out his command to make disciples of all people as they realised that Jesus was once again present with them etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1",
+      "marks": [
+       1
+      ]
+     }
+    ],
+    "noZero": true,
+    "directions": [],
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The scheme's grid prints no 0 range. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     7,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -81489,6 +81989,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -81498,6 +82004,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81507,6 +82019,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81516,6 +82034,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -81546,9 +82070,268 @@
      }
     ],
     "directions": [],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
-     8
+     8,
+     21
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-ol-c-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2016 OL Section C Q(a)",
+   "topicId": "re-c",
+   "conceptId": "choose-world-religions-world-religions-christianity",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Choose one of the world religions from List A and one of the world religions from List B below: List A: ◆ CHRISTIANITY ◆ JUDAISM List B: ◆ BUDDHISM ◆ HINDUISM ◆ ISLAM Describe one rite from each of the world religions that you have chosen above which marks a stage in the life of a believer.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of major world religions by giving an accurate account of the symbolic words and actions used to mark a stage in life by members of a world religion, from each of the lists given in the question.",
+    "points": [
+     "Christianity e.g. Baptism – the priest welcomes the child on behalf of the Christian community; the parents name the child and commit to raise him/her within the Christian faith; a baptismal candle is lit etc.",
+     "Buddhism e.g. naming ceremony during which molten wax is dropped into a bowl of water etc.",
+     "Hinduism e.g. a sacred thread is placed from shoulder to waist on the young Hindu boy etc.",
+     "Islam e.g. Aqiqah – the head of the seven day old child is shaven and the hair weighed to determine how much to donate to charity etc.",
+     "Judaism e.g. Brit Milah – when the child is eight days old a special blessing is said; a boy must be circumcised in accordance with the Torah etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1",
+      "marks": [
+       1
+      ]
+     }
+    ],
+    "noZero": true,
+    "directions": [
+     "Note: A candidate accurately describes one rite associated with a world religion from each of the lists given in the question but makes no reference to the symbolic words and actions that mark a stage in the life of a believer – Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The scheme's grid prints no 0 range. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     8,
+     9,
+     21
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-ol-c-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2016 OL Section C Q(b)",
+   "topicId": "re-c",
+   "conceptId": "meaning-rites-described-members-world-religions",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain the meaning of the rites that you have described above for the members of the world religions with which each is associated.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the main features of world religions by giving an accurate account of the meaning of the symbolic words and actions that mark a stage in the life of believers in each of the world religions described in part Ca) of the question.",
+    "points": [
+     "Christianity e.g. the oil of Catechumens used in Baptism is a symbol of protection from evil, strength and healing; water is a symbol that the child has entered a new life in Christianity and is cleansed of original sin; the lighting of the paschal candle symbolises the child sharing in the light of Christ etc.",
+     "Buddhism e.g. in the naming ceremony dropping molten wax into a bowl of water symbolises the union of fire, air and water and the hope of similar harmony in the child’s life etc.",
+     "Hinduism e.g. a sacred thread is placed on the shoulder of a Hindu boy to mark the taking on of new responsibilities as a Hindu boy can perform Puja etc.",
+     "Islam e.g. in the Aqiqah ceremony the sacrifice of an animal and the naming of the child are done in accordance with the teaching of Muhammad as a means of pledging the child to Allah etc.",
+     "Judaism e.g. Brit Milah – the ritual circumcision symbolises partnership with God and an entering into of the covenant etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1",
+      "marks": [
+       1
+      ]
+     }
+    ],
+    "noZero": true,
+    "directions": [],
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The scheme's grid prints no 0 range. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     9,
+     10,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -81604,6 +82387,12 @@
        38,
        39,
        40
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -81616,6 +82405,12 @@
        31,
        32,
        33
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81628,6 +82423,12 @@
        25,
        26,
        27
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81640,6 +82441,12 @@
        19,
        20,
        21
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -81678,9 +82485,136 @@
      }
     ],
     "directions": [],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
-     10
+     10,
+     21
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-ol-d-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2016 OL Section D Q(a)",
+   "topicId": "re-d",
+   "conceptId": "examples-modern-culture-show-thinking-morality",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe two examples from modern culture which show that thinking about morality is part of the natural human condition.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of morality as a natural human phenomenon by giving an accurate account of two examples from modern culture which show that that thinking about right and wrong is a concern common to all humans.",
+    "points": [
+     "e.g. the United Nations Declaration of Human Rights expresses common basic standards of right behaviour that allow all people to be treated with respect regardless of nationality, race, gender, religion etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10M x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     10,
+     11,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -81729,6 +82663,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -81738,6 +82678,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81747,6 +82693,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81756,6 +82708,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -81786,9 +82744,10 @@
      }
     ],
     "directions": [],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
-     11
+     11,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -81838,6 +82797,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -81847,6 +82812,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81856,6 +82827,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81865,6 +82842,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -81897,10 +82880,11 @@
     "directions": [
      "Note: Allow descriptive answers."
     ],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      11,
-     12
+     12,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -81952,6 +82936,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -81961,6 +82951,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81970,6 +82966,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -81979,6 +82981,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -82009,9 +83017,10 @@
      }
     ],
     "directions": [],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
-     13
+     13,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -82063,6 +83072,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -82072,6 +83087,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82081,6 +83102,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82090,6 +83117,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -82120,10 +83153,11 @@
      }
     ],
     "directions": [],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
      13,
-     14
+     14,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -82174,6 +83208,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -82183,6 +83223,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82192,6 +83238,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82201,6 +83253,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -82233,9 +83291,10 @@
     "directions": [
      "Note: Allow descriptive answers. A candidate accurately sets out information on two understandings of justice as listed in the question but makes no reference to their main strengths and weaknesses – Consult your Advising Examiner."
     ],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
-     14
+     14,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -82283,6 +83342,12 @@
       "marks": [
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -82291,6 +83356,12 @@
       "marks": [
        7,
        8
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82298,6 +83369,12 @@
       "printed": "6",
       "marks": [
        6
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82306,6 +83383,12 @@
       "marks": [
        4,
        5
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -82332,10 +83415,11 @@
      }
     ],
     "directions": [],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      14,
-     15
+     15,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -82385,6 +83469,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -82394,6 +83484,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82403,6 +83499,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82412,6 +83514,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -82444,9 +83552,10 @@
     "directions": [
      "Note: Allow descriptive answers."
     ],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
-     15
+     15,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -82497,6 +83606,12 @@
        18,
        19,
        20
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -82506,6 +83621,12 @@
        14,
        15,
        16
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82515,6 +83636,12 @@
        11,
        12,
        13
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82524,6 +83651,12 @@
        8,
        9,
        10
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -82556,10 +83689,11 @@
     "directions": [
      "Note: Allow descriptive answers i.e. an example which shows an understanding of sacrament and its relationship to ritual and symbol in two Christian denominations."
     ],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      15,
-     16
+     16,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -82612,6 +83746,12 @@
        38,
        39,
        40
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -82624,6 +83764,12 @@
        31,
        32,
        33
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82636,6 +83782,12 @@
        25,
        26,
        27
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82648,6 +83800,12 @@
        19,
        20,
        21
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -82688,10 +83846,11 @@
     "directions": [
      "Note: A candidate sets out accurate information on one Irish myth or Irish saga but makes no reference to how it expresses pre-Christian religious beliefs ― Consult your Advising Examiner."
     ],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
      16,
-     17
+     17,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -82744,6 +83903,12 @@
        38,
        39,
        40
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -82756,6 +83921,12 @@
        31,
        32,
        33
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82768,6 +83939,12 @@
        25,
        26,
        27
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82780,6 +83957,12 @@
        19,
        20,
        21
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -82818,9 +84001,10 @@
      }
     ],
     "directions": [],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
-     17
+     17,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -82873,6 +84057,12 @@
        38,
        39,
        40
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -82885,6 +84075,12 @@
        31,
        32,
        33
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82897,6 +84093,12 @@
        25,
        26,
        27
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -82909,6 +84111,12 @@
        19,
        20,
        21
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -82947,9 +84155,10 @@
      }
     ],
     "directions": [],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
-     17
+     17,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -83002,6 +84211,12 @@
        38,
        39,
        40
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -83014,6 +84229,12 @@
        31,
        32,
        33
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -83026,6 +84247,12 @@
        25,
        26,
        27
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -83038,6 +84265,12 @@
        19,
        20,
        21
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -83076,9 +84309,10 @@
      }
     ],
     "directions": [],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
-     18
+     18,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
@@ -83132,6 +84366,12 @@
        38,
        39,
        40
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: SUBSTANTIAL EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: COMPLETELY & CLEARLY RELEVANT",
+       "ACCURACY: NO MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): EXCELLENT USE OF SKILL(S)"
       ]
      },
      {
@@ -83144,6 +84384,12 @@
        31,
        32,
        33
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: VERY GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: CLEARLY RELEVANT",
+       "ACCURACY: VERY LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): VERY GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -83156,6 +84402,12 @@
        25,
        26,
        27
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: GOOD EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: GENERALLY RELEVANT",
+       "ACCURACY: LITTLE EVIDENCE OF MAJOR ERROR(S)",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): GOOD USE OF SKILL(S)"
       ]
      },
      {
@@ -83168,6 +84420,12 @@
        19,
        20,
        21
+      ],
+      "descriptor": [
+       "EVIDENCE IN ANSWER OF SYLLABUS AIMS/ OBJECTIVES/ OUTCOMES: ADEQUATE EVIDENCE",
+       "RELEVANCE OF ANSWER TO QUESTION: LIMITED RELEVANCE",
+       "ACCURACY: SOME MAJOR ERRORS",
+       "EVIDENCE OF ENGAGEMENT WITH THE SKILL(S): SOME USE OF SKILL(S)"
       ]
      },
      {
@@ -83208,10 +84466,11 @@
     "directions": [
      "Note: Allow descriptive answers where the candidate looks closely at one reaction to the ideas of Descartes."
     ],
-    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "Band descriptors from the scheme's Question Descriptor table (page 19). The table prints no ranges, so the three Weak bands carry none. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
     "schemePages": [
      18,
-     19
+     19,
+     21
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
    }
