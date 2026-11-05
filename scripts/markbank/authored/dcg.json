@@ -39,9 +39,16 @@
    },
    {
     "id": "dcg-2018-hl-a1a-r4",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Determine Back, Front & Top lines on inner dividers ... (1, 2, 1)",
-    "marks": 4
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
    }
   ],
   "notes": "The scheme heads this 'Completion of axonometric of bicycle shelter' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -264,9 +271,14 @@
    },
    {
     "id": "dcg-2018-hl-a3a-r4",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw parabolic curve (Any = 2)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Draw Parabolic Curve' and prices it at 14. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -440,9 +452,15 @@
    },
    {
     "id": "dcg-2018-hl-b1a-1-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Plan of required Spectator Point, Picture Plane and Vanishing Points ….(2,2,2)",
-    "marks": 6
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ]
    }
   ],
   "notes": "The scheme heads this 'Required Plan' and prices it at 15. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -747,6 +765,9 @@
       "marks": 4,
       "permittedMarks": [
        0,
+       1,
+       2,
+       3,
        4
       ]
      },
@@ -792,6 +813,7 @@
       "marks": 3,
       "permittedMarks": [
        0,
+       2,
        3
       ]
      }
@@ -834,9 +856,15 @@
    },
    {
     "id": "dcg-2018-hl-b2d-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw ‘handle opening’ in elevation and in development view …(1,2)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
    },
    {
     "id": "dcg-2018-hl-b2d-r4",
@@ -1063,9 +1091,16 @@
    },
    {
     "id": "dcg-2018-hl-c1a-1-r2",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Identify intersections with contours and draw curve …..(4×1)",
-    "marks": 4
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
    }
   ],
   "notes": "The scheme heads this 'Earthworks between A and B (Level) - Embankment' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -1408,9 +1443,14 @@
    },
    {
     "id": "dcg-2018-hl-c2b-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw parabolic curve …… (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Elevation of Parabola' and prices it at 9. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -1449,9 +1489,14 @@
    },
    {
     "id": "dcg-2018-hl-c2c-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw outline loop in plan ……(Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    },
    {
     "id": "dcg-2018-hl-c2c-r4",
@@ -1461,9 +1506,14 @@
    },
    {
     "id": "dcg-2018-hl-c2c-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw curve in end view ……(Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    },
    {
     "id": "dcg-2018-hl-c2c-r6",
@@ -1779,6 +1829,7 @@
       "marks": 3,
       "permittedMarks": [
        0,
+       1,
        3
       ]
      },
@@ -3473,9 +3524,15 @@
    },
    {
     "id": "dcg-2018-ol-c3a-r2",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Determine centre and draw arc ……(1,2)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
    },
    {
     "id": "dcg-2018-ol-c3a-r3",
@@ -4036,9 +4093,15 @@
   "rows": [
    {
     "id": "dcg-2018-ol-c5-6-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Hatching and Centrelines …(2,1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Drawing Completion' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -4176,9 +4239,15 @@
    },
    {
     "id": "dcg-2019-hl-a1b-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Determination and indication of required angle in plan … (1,4)",
-    "marks": 5
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     4,
+     5
+    ]
    }
   ],
   "notes": "The scheme heads this 'Determination of H.L. on surface ‘cdp’ and inclination to V.P' and prices it at 8. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -4223,9 +4292,14 @@
    },
    {
     "id": "dcg-2019-hl-a2a-r4",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw curve …. (any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Location of Vertex and additional points' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -4586,9 +4660,16 @@
   "rows": [
    {
     "id": "dcg-2019-hl-b1d-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Establish 4 other vertical rectangular surfaces ... (4 x 1)",
-    "marks": 4
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
    },
    {
     "id": "dcg-2019-hl-b1d-r2",
@@ -4651,9 +4732,14 @@
    },
    {
     "id": "dcg-2019-hl-b2a-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw Curve ... (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    },
    {
     "id": "dcg-2019-hl-b2a-r4",
@@ -4728,6 +4814,7 @@
       "marks": 3,
       "permittedMarks": [
        0,
+       1,
        3
       ]
      },
@@ -5222,9 +5309,15 @@
    },
    {
     "id": "dcg-2019-hl-c1b-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw required triangle PQR in elevation … (3×1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
    },
    {
     "id": "dcg-2019-hl-c1b-r6",
@@ -5269,9 +5362,14 @@
    },
    {
     "id": "dcg-2019-hl-c2a-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw parabolic curve in elevation …… (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    },
    {
     "id": "dcg-2019-hl-c2a-r4",
@@ -5316,9 +5414,14 @@
    },
    {
     "id": "dcg-2019-hl-c2b-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw parabolic curve …… (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'End view of generating Parabola' and prices it at 10. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -5357,9 +5460,14 @@
    },
    {
     "id": "dcg-2019-hl-c2c-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw correct curves on LHS in plan …… (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    },
    {
     "id": "dcg-2019-hl-c2c-r4",
@@ -5369,9 +5477,14 @@
    },
    {
     "id": "dcg-2019-hl-c2c-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw curve on RHS in plan …… (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Plan of structure' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -5433,9 +5546,17 @@
   "rows": [
    {
     "id": "dcg-2019-hl-c3a-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw elevation as given .. (5×1)",
-    "marks": 5
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
    },
    {
     "id": "dcg-2019-hl-c3a-r2",
@@ -5621,9 +5742,14 @@
    },
    {
     "id": "dcg-2019-hl-c4a-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw UAR curve … (any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    },
    {
     "id": "dcg-2019-hl-c4a-r6",
@@ -5680,9 +5806,14 @@
    },
    {
     "id": "dcg-2019-hl-c4b-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw required trochoid … (any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Trochoid' and prices it at 22. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -6983,9 +7114,15 @@
    },
    {
     "id": "dcg-2019-ol-c3a-r2",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Determine centre and draw arc ……(1,2)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
    },
    {
     "id": "dcg-2019-ol-c3a-r3",
@@ -7515,9 +7652,15 @@
   "rows": [
    {
     "id": "dcg-2019-ol-c5-6-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Hatching and Centrelines …(2,1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Drawing Completion' and prices it at 3. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -7773,9 +7916,14 @@
   "rows": [
    {
     "id": "dcg-2020-hl-a3b-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Required construction and draw normal ... (2, 2)",
-    "marks": 4
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ]
    }
   ],
   "notes": "The scheme heads this 'Normal' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -8156,9 +8304,17 @@
   "rows": [
    {
     "id": "dcg-2020-hl-b2c-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Projections of required horizontal line on ABC … (2,1,2)",
-    "marks": 5
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
    },
    {
     "id": "dcg-2020-hl-b2c-r2",
@@ -8286,6 +8442,8 @@
       "marks": 3,
       "permittedMarks": [
        0,
+       1,
+       2,
        3
       ]
      },
@@ -8304,6 +8462,9 @@
       "marks": 4,
       "permittedMarks": [
        0,
+       1,
+       2,
+       3,
        4
       ]
      },
@@ -8322,6 +8483,7 @@
       "marks": 4,
       "permittedMarks": [
        0,
+       2,
        4
       ]
      },
@@ -8688,6 +8850,7 @@
       "marks": 3,
       "permittedMarks": [
        0,
+       1,
        3
       ]
      },
@@ -9051,6 +9214,7 @@
       "marks": 2,
       "permittedMarks": [
        0,
+       1,
        2
       ]
      },
@@ -9114,9 +9278,14 @@
    },
    {
     "id": "dcg-2020-hl-c4b-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw required locus … (any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Locus of point T' and prices it at 22. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -9541,9 +9710,14 @@
    },
    {
     "id": "dcg-2021-hl-a2a-r4",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw curve …. (any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Location of vertex, additional points and draw curve' and prices it at 17. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -9814,6 +9988,7 @@
       "marks": 3,
       "permittedMarks": [
        0,
+       1,
        3
       ]
      },
@@ -9892,9 +10067,14 @@
    },
    {
     "id": "dcg-2021-hl-b1b-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw Curves ... (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    },
    {
     "id": "dcg-2021-hl-b1b-r4",
@@ -10150,15 +10330,27 @@
   "rows": [
    {
     "id": "dcg-2021-hl-b3a-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw axonometric axes Y and Z orientated as shown (1,1)",
-    "marks": 2
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
    },
    {
     "id": "dcg-2021-hl-b3a-r2",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw scalene triangle ‘abc’ (2,1,1)",
-    "marks": 4
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
    },
    {
     "id": "dcg-2021-hl-b3a-r3",
@@ -10242,6 +10434,7 @@
       "marks": 4,
       "permittedMarks": [
        0,
+       2,
        4
       ]
      },
@@ -10595,9 +10788,14 @@
    },
    {
     "id": "dcg-2021-hl-c2a-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw elliptical curve in plan …… (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    },
    {
     "id": "dcg-2021-hl-c2a-r4",
@@ -10660,15 +10858,25 @@
    },
    {
     "id": "dcg-2021-hl-c2b-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw lower curve in elevation …… (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    },
    {
     "id": "dcg-2021-hl-c2b-r6",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw upper curve in elevation…… (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Draw required elevation of structure' and prices it at 22. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -10713,9 +10921,14 @@
    },
    {
     "id": "dcg-2021-hl-c2c-r4",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw required curvature …… (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Surface curvature along vertical cutting plane containing B and D' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -10951,6 +11164,7 @@
       "marks": 3,
       "permittedMarks": [
        0,
+       1,
        3
       ]
      },
@@ -11086,6 +11300,7 @@
       "marks": 3,
       "permittedMarks": [
        0,
+       1,
        3
       ]
      },
@@ -12973,9 +13188,15 @@
   "rows": [
    {
     "id": "dcg-2021-ol-c5-5-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Hatching and Centrelines … (3,1)",
-    "marks": 4
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     4
+    ]
    }
   ],
   "notes": "The scheme heads this 'Drawing Completion' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -13163,9 +13384,14 @@
    },
    {
     "id": "dcg-2022-hl-a2a-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw curve (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Construction of Parabola' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -13192,9 +13418,14 @@
   "rows": [
    {
     "id": "dcg-2022-hl-a2b-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Required construction and draw tangent … (2, 2)",
-    "marks": 4
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ]
    }
   ],
   "notes": "The scheme heads this 'Tangent' and prices it at 4. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -13485,9 +13716,17 @@
   "rows": [
    {
     "id": "dcg-2022-hl-b1c-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Projections of horizontal line on EFG … (2, 1, 2)",
-    "marks": 5
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
    },
    {
     "id": "dcg-2022-hl-b1c-r2",
@@ -13617,6 +13856,7 @@
       "marks": 4,
       "permittedMarks": [
        0,
+       2,
        4
       ]
      },
@@ -13635,6 +13875,10 @@
       "marks": 5,
       "permittedMarks": [
        0,
+       1,
+       2,
+       3,
+       4,
        5
       ]
      },
@@ -13653,6 +13897,7 @@
       "marks": 6,
       "permittedMarks": [
        0,
+       3,
        6
       ]
      },
@@ -14159,9 +14404,14 @@
    },
    {
     "id": "dcg-2022-hl-c2a-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw hyperbolic curves …. (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    },
    {
     "id": "dcg-2022-hl-c2a-r6",
@@ -14212,9 +14462,14 @@
    },
    {
     "id": "dcg-2022-hl-c2b-r4",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw curve …. (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Vertical Opening' and prices it at 16. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -14473,6 +14728,7 @@
       "marks": 2,
       "permittedMarks": [
        0,
+       1,
        2
       ]
      },
@@ -16561,9 +16817,14 @@
    },
    {
     "id": "dcg-2023-hl-a1a-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw the curve in elevation ……. (Any = 1)",
-    "marks": 2
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
    }
   ],
   "notes": "The scheme heads this 'Complete the elevation' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -16690,9 +16951,14 @@
    },
    {
     "id": "dcg-2023-hl-a2b-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw curve …. (any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Draw the hyperbola' and prices it at 11. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -17305,9 +17571,15 @@
   "rows": [
    {
     "id": "dcg-2023-hl-b3a-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw axonometric axes X, Y, and Z orientated as shown (1,1,1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3
+    ]
    },
    {
     "id": "dcg-2023-hl-b3a-r2",
@@ -17420,6 +17692,7 @@
       "marks": 5,
       "permittedMarks": [
        0,
+       1,
        5
       ]
      },
@@ -18045,9 +18318,14 @@
    },
    {
     "id": "dcg-2023-hl-c3b-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw the curve in plan …… (Any = 1)",
-    "marks": 4
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     4
+    ]
    }
   ],
   "notes": "The scheme heads this 'Project the plan of the dipping cone' and prices it at 21. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -18179,9 +18457,14 @@
    },
    {
     "id": "dcg-2023-hl-c3d-r2",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw the focal sphere …… (Any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Elevation of one focal sphere' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -18232,9 +18515,14 @@
    },
    {
     "id": "dcg-2023-hl-c4a-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw required locus (any = 1)",
-    "marks": 4
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     4
+    ]
    }
   ],
   "notes": "The scheme heads this 'Line Diagram and Combined Movement' and prices it at 29. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -18312,6 +18600,12 @@
       "marks": 7,
       "permittedMarks": [
        0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
        7
       ]
      },
@@ -18321,6 +18615,7 @@
       "marks": 3,
       "permittedMarks": [
        0,
+       1,
        3
       ]
      },
@@ -19280,9 +19575,6 @@
     "marks": 4,
     "permittedMarks": [
      0,
-     1,
-     2,
-     3,
      4
     ],
     "parts": [
@@ -19292,7 +19584,6 @@
       "marks": 2,
       "permittedMarks": [
        0,
-       1,
        2
       ]
      },
@@ -19302,7 +19593,6 @@
       "marks": 2,
       "permittedMarks": [
        0,
-       1,
        2
       ]
      }
@@ -19310,39 +19600,21 @@
    },
    {
     "id": "dcg-2023-ol-b3c-r2",
-    "kind": "criterion",
+    "kind": "point",
     "verbatim": "Axonometric projection of front surface",
-    "marks": 3,
-    "permittedMarks": [
-     0,
-     1,
-     2,
-     3
-    ]
+    "marks": 3
    },
    {
     "id": "dcg-2023-ol-b3c-r3",
-    "kind": "criterion",
+    "kind": "point",
     "verbatim": "Axonometric projection side surface",
-    "marks": 2,
-    "permittedMarks": [
-     0,
-     1,
-     2
-    ]
+    "marks": 2
    },
    {
     "id": "dcg-2023-ol-b3c-r4",
-    "kind": "criterion",
+    "kind": "point",
     "verbatim": "Axonometric projection of roof",
-    "marks": 4,
-    "permittedMarks": [
-     0,
-     1,
-     2,
-     3,
-     4
-    ]
+    "marks": 4
    }
   ],
   "notes": "The scheme heads this 'Axonometric Projection of Outline' and prices it at 13. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -19381,9 +19653,33 @@
    },
    {
     "id": "dcg-2023-ol-b3d-r3",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Projections from elevation (2) and plan (2)",
-    "marks": 4
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "parts": [
+     {
+      "id": "elevation",
+      "verbatim": "elevation",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     },
+     {
+      "id": "plan",
+      "verbatim": "plan",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       2
+      ]
+     }
+    ]
    },
    {
     "id": "dcg-2023-ol-b3d-r4",
@@ -20060,9 +20356,17 @@
   "rows": [
    {
     "id": "dcg-2023-ol-c5-6-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Hidden detail, Hatching and Centrelines … (3,3,1)",
-    "marks": 7
+    "marks": 7,
+    "permittedMarks": [
+     0,
+     1,
+     3,
+     4,
+     6,
+     7
+    ]
    }
   ],
   "notes": "The scheme heads this 'Drawing Completion' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -20731,9 +21035,14 @@
    },
    {
     "id": "dcg-2024-hl-b2b-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw elliptical curve ………(any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Draw the elliptical plastic window' and prices it at 18. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -20802,6 +21111,7 @@
       "marks": 2,
       "permittedMarks": [
        0,
+       1,
        2
       ]
      },
@@ -20838,6 +21148,7 @@
       "marks": 2,
       "permittedMarks": [
        0,
+       1,
        2
       ]
      },
@@ -20877,9 +21188,14 @@
   "rows": [
    {
     "id": "dcg-2024-hl-b3a-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw axonometric axes X and Y orientated as shown (1,1)",
-    "marks": 2
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ]
    },
    {
     "id": "dcg-2024-hl-b3a-r2",
@@ -21007,6 +21323,7 @@
       "marks": 2,
       "permittedMarks": [
        0,
+       1,
        2
       ]
      },
@@ -21025,6 +21342,7 @@
       "marks": 2,
       "permittedMarks": [
        0,
+       1,
        2
       ]
      },
@@ -21474,9 +21792,14 @@
    },
    {
     "id": "dcg-2024-hl-c2c-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw required curve AP …….. (any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Complete end view by extending elements' and prices it at 20. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -21521,9 +21844,14 @@
    },
    {
     "id": "dcg-2024-hl-c2d-r4",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw required curvature ………(any = 1)",
-    "marks": 3
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     1,
+     3
+    ]
    }
   ],
   "notes": "The scheme heads this 'Curvature of the surface through points D and B' and prices it at 12. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -21768,9 +22096,14 @@
    },
    {
     "id": "dcg-2024-hl-c4a-r5",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw required epicycloid ……(any = 1)",
-    "marks": 4
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     4
+    ]
    }
   ],
   "notes": "The scheme heads this 'Plot the epicycloid' and prices it at 32. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -21827,9 +22160,14 @@
    },
    {
     "id": "dcg-2024-hl-c4b-r6",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Draw required Archimedean spiral …… (any = 1)",
-    "marks": 4
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     4
+    ]
    }
   ],
   "notes": "The scheme heads this 'Archimedean spiral of a spiral galaxy' and prices it at 28. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -21916,6 +22254,7 @@
       "marks": 2,
       "permittedMarks": [
        0,
+       1,
        2
       ]
      },
@@ -23503,9 +23842,19 @@
   "rows": [
    {
     "id": "dcg-2024-ol-c5-6-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Hidden detail, Hatching and Centrelines … (4,2,1)",
-    "marks": 7
+    "marks": 7,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
    }
   ],
   "notes": "The scheme heads this 'Drawing Completion' and prices it at 7. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."
@@ -30480,9 +30829,15 @@
   "rows": [
    {
     "id": "dcg-2026-ol-c5-6-r1",
-    "kind": "point",
+    "kind": "criterion",
     "verbatim": "Hatching and Centrelines … (5,1)",
-    "marks": 6
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     1,
+     5,
+     6
+    ]
    }
   ],
   "notes": "The scheme heads this 'Drawing Completion' and prices it at 6. Construction lines must be shown on all solutions, and the scheme notes that other valid solutions are acceptable and are marked accordingly."

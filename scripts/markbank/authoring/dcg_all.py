@@ -65,11 +65,11 @@ LEVEL_TOKEN = {'higher': 'hl', 'ordinary': 'ol'}
 CARDED = ({(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')}
           | {(2018, 'hl'), (2018, 'ol')})
 
-# Cards edited by hand after generation, kept exactly as shipped. #294 (27 Oct
-# 2026) cut 2023 Ordinary B-3(c)'s one 13-mark group into the scheme's four
-# priced lines, the first carrying its own printed split, "elevation (2) and
-# plan (2)", as parts. Regenerated, the card would lose that edit.
-SHIPPED_EDITS = ('dcg-2023-ol-b3c',)
+# Cards edited by hand after generation, kept exactly as shipped. None since
+# November 2026: #294 had cut 2023 Ordinary B-3(c) into its four priced lines
+# by hand, with "elevation (2) and plan (2)" as parts, and step_row() now
+# builds exactly that from the scheme for every card.
+SHIPPED_EDITS = ()
 AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', f'{SUBJECT}.json')
 
 # The Topic Atlas files every printed question under the syllabus headings it
@@ -277,6 +277,89 @@ def card_id(year, level, section, q, covered, ordinal, many):
 
 
 # -------------------------------------------------------------------- rows
+# A step the scheme prices in parts, inside its own words. Three printed forms,
+# and nothing else is read as a price: "(2,2,2)" (and "(1, 2, 1)", "(3x1,2)",
+# "(4 or 1,1,1,1)"), "(4×1)", and "(Any = 1)" -- any curve earns 1, the
+# correct one the step's full marks. "(3 lines)" and "(12 min.)" are not
+# prices: a token that is not a number or a count of marks refuses the whole.
+SUB_PRICE = re.compile(r'\(([^()]*\d[^()]*)\)')
+ANY_PRICE = re.compile(r'^\s*any\s*=?\s*(\d{1,2})\s*$', re.I)
+COUNT = re.compile(r'^(\d{1,2})\s*[x×X]\s*(\d{1,2})$')
+# "Projections from elevation (2) and plan (2)": the step names its parts.
+NAMED_PRICE = re.compile(r"([A-Za-z][A-Za-z'’ -]*?)\s*\((\d{1,2})\)")
+
+
+def _subset_sums(values):
+    sums = {0}
+    for v in values:
+        sums |= {s + v for s in sums}
+    return sums
+
+
+def sub_ladder(text, marks):
+    """The marks a step can earn at the values printed inside it, or None.
+
+    Every reachable total of the printed parts and nothing between them: a
+    step priced "(2,2,2)" earns 0, 2, 4 or 6, never 3. Refused, and left a
+    single claim, wherever the printed parts do not add up to the step's own
+    printed mark -- 2024 Higher A-4 prints "(1,2)" against a 2-mark step.
+    """
+    for m in reversed(SUB_PRICE.findall(text)):
+        inner = m.strip()
+        a = ANY_PRICE.match(inner)
+        if a:
+            k = int(a.group(1))
+            return [0, k, marks] if 0 < k < marks else None
+        reach = set()
+        for route in re.split(r'\s+or\s+', inner):
+            values = []
+            for token in re.split(r'\s*[,&+]\s*', route.strip()):
+                c = COUNT.match(token)
+                if c:
+                    values += [int(c.group(2))] * int(c.group(1))
+                elif token.isdigit():
+                    values.append(int(token))
+                else:
+                    return None
+            if sum(values) != marks:
+                return None
+            reach |= _subset_sums(values)
+        return sorted(reach) if len(reach) > 2 else None
+    return None
+
+
+def named_parts(text, marks):
+    """[(name, marks)] where the step prices its own named parts, or None."""
+    found = NAMED_PRICE.findall(text)
+    if len(found) < 2 or sum(int(n) for _w, n in found) != marks:
+        return None
+    return [(w.split()[-1], int(n)) for w, n in found]
+
+
+def step_row(row_id, step):
+    """One step as a claim row: a point, or stepped where the step prints parts."""
+    named = named_parts(step.text, step.marks)
+    if named:
+        return {'id': row_id, 'kind': 'criterion', 'verbatim': step.text,
+                'marks': step.marks, 'permittedMarks': [0, step.marks],
+                'parts': [{'id': name.lower(), 'verbatim': name, 'marks': n,
+                           'permittedMarks': [0, n]} for name, n in named]}
+    ladder = sub_ladder(step.text, step.marks)
+    if ladder:
+        return {'id': row_id, 'kind': 'criterion', 'verbatim': step.text,
+                'marks': step.marks, 'permittedMarks': ladder}
+    return {'id': row_id, 'kind': 'point', 'verbatim': step.text,
+            'marks': step.marks}
+
+
+def step_ladder(step):
+    """A step's own steps when it is one PART of a long unit's row."""
+    named = named_parts(step.text, step.marks)
+    if named:
+        return sorted(_subset_sums([n for _w, n in named]))
+    return sub_ladder(step.text, step.marks) or [0, step.marks]
+
+
 def step_rows(card_id, title, steps):
     """The scheme's priced steps as claim rows, each at its own printed marks.
 
@@ -295,8 +378,7 @@ def step_rows(card_id, title, steps):
     since a part scores what is placed on it and nothing else.
     """
     if len(steps) <= MAX_ROWS:
-        return [{'id': f'{card_id}-r{i}', 'kind': 'point', 'verbatim': s.text,
-                 'marks': s.marks} for i, s in enumerate(steps, 1)]
+        return [step_row(f'{card_id}-r{i}', s) for i, s in enumerate(steps, 1)]
     total = sum(s.marks for s in steps)
     return [{
         'id': f'{card_id}-r1', 'kind': 'criterion', 'verbatim': title,
@@ -304,7 +386,7 @@ def step_rows(card_id, title, steps):
         'contextNote': 'The scheme prices this drawing step by step: award '
                        'each step you drew its own marks.',
         'parts': [{'id': f'step-{i}', 'verbatim': s.text, 'marks': s.marks,
-                   'permittedMarks': [0, s.marks]}
+                   'permittedMarks': step_ladder(s)}
                   for i, s in enumerate(steps, 1)],
     }]
 

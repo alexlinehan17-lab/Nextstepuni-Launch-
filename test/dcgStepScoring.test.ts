@@ -48,6 +48,28 @@ describe('DCG step scoring', () => {
     expect(cards.flatMap(c => rowsOf(c).filter(r => r.kind === 'anyN').map(r => r.id))).toEqual([]);
   });
 
+  it('pays a step priced in parts at exactly the values the scheme prints', () => {
+    // 2018 HL B-1(a): "Plan of required Spectator Point, Picture Plane and
+    // Vanishing Points ….(2,2,2)" is worth 0, 2, 4 or 6 -- never 3.
+    const card = cards.find(c => c.id === 'dcg-2018-hl-b1a-1')!;
+    const row = rowsOf(card).find(r => /\(2,2,2\)/.test(r.verbatim))!;
+    expect(row.permittedMarks).toEqual([0, 2, 4, 6]);
+    expect(marksClaimed(card, { [row.id]: 4 })).toBe(4);
+    expect(marksClaimed(card, { [row.id]: 3 })).toBe(0);
+    const wrong: string[] = [];
+    for (const c of cards) {
+      for (const r of rowsOf(c)) {
+        const ladders: Array<[string, number[]]> = r.parts
+          ? r.parts.map(p => [partClaimId(r.id, p.id), p.permittedMarks] as [string, number[]])
+          : r.permittedMarks ? [[r.id, r.permittedMarks]] : [];
+        for (const [id, ladder] of ladders) {
+          for (const v of ladder) if (marksClaimed(c, { [id]: v }) !== v) wrong.push(`${c.id} ${id}: ${v}`);
+        }
+      }
+    }
+    expect(wrong).toEqual([]);
+  });
+
   it('scores every step alone at its own price, and the whole card at its total', () => {
     const wrong: string[] = [];
     for (const card of cards) {

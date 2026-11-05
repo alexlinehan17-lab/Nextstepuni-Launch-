@@ -605,7 +605,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
     rows: [
     { id: "dcg-2018-ol-c3a-r1", kind: "point", verbatim: "Draw straight lines in elevation", marks: 10 },
-    { id: "dcg-2018-ol-c3a-r2", kind: "point", verbatim: "Determine centre and draw arc ……(1,2)", marks: 3 },
+    { id: "dcg-2018-ol-c3a-r2", kind: "criterion", verbatim: "Determine centre and draw arc ……(1,2)", marks: 3, permittedMarks: [0,1,2,3] },
     { id: "dcg-2018-ol-c3a-r3", kind: "point", verbatim: "Draw the outline plan", marks: 7 },
     { id: "dcg-2018-ol-c3a-r4", kind: "point", verbatim: "Complete the plan", marks: 4 },
     ],
@@ -834,7 +834,7 @@ export const CARDS: SecCard[] = [
     questionText: "Children enjoy playing with toys relating to space exploration. Details of a toy spaceship are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled spaceship. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
-    { id: "dcg-2018-ol-c5-6-r1", kind: "point", verbatim: "Hatching and Centrelines …(2,1)", marks: 3 },
+    { id: "dcg-2018-ol-c5-6-r1", kind: "criterion", verbatim: "Hatching and Centrelines …(2,1)", marks: 3, permittedMarks: [0,1,2,3] },
     ],
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q5-art",
@@ -1468,7 +1468,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
     { id: "dcg-2019-ol-c3a-r1", kind: "point", verbatim: "Draw straight edges in elevation", marks: 10 },
-    { id: "dcg-2019-ol-c3a-r2", kind: "point", verbatim: "Determine centre and draw arc ……(1,2)", marks: 3 },
+    { id: "dcg-2019-ol-c3a-r2", kind: "criterion", verbatim: "Determine centre and draw arc ……(1,2)", marks: 3, permittedMarks: [0,1,2,3] },
     { id: "dcg-2019-ol-c3a-r3", kind: "point", verbatim: "Draw outline plan", marks: 6 },
     { id: "dcg-2019-ol-c3a-r4", kind: "point", verbatim: "Complete plan", marks: 4 },
     ],
@@ -1702,7 +1702,7 @@ export const CARDS: SecCard[] = [
     questionText: "Mug trees are a very convenient method of storing a number of mugs neatly. Details of a mug tree are given in Fig. C-5 below. A parts list and a 3D graphic of the parts are also shown. Draw the sectional elevation A-A of the assembled mug tree. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(3)"}, totalMarks: 3,
     rows: [
-    { id: "dcg-2019-ol-c5-6-r1", kind: "point", verbatim: "Hatching and Centrelines …(2,1)", marks: 3 },
+    { id: "dcg-2019-ol-c5-6-r1", kind: "criterion", verbatim: "Hatching and Centrelines …(2,1)", marks: 3, permittedMarks: [0,1,2,3] },
     ],
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q5-art",
@@ -2524,7 +2524,7 @@ export const CARDS: SecCard[] = [
     questionText: "Paint rollers similar to the one shown are used in home decoration. Details of the paint roller are given in Fig. C-5 below. A parts list and a 3D graphic of the roller are also shown. Draw the sectional elevation A-A of the assembled paint roller. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2021-ol-c5-5-r1", kind: "point", verbatim: "Hatching and Centrelines … (3,1)", marks: 4 },
+    { id: "dcg-2021-ol-c5-5-r1", kind: "criterion", verbatim: "Hatching and Centrelines … (3,1)", marks: 4, permittedMarks: [0,1,3,4] },
     ],
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q5-art",
@@ -3707,10 +3707,10 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric projection of the outline of the arbor bench.",
     tariffModel: {"kind":"fixed","notation":"(13)"}, totalMarks: 13,
     rows: [
-    { id: "dcg-2023-ol-b3c-r1", kind: "criterion", verbatim: "Projections from elevation (2) and plan (2)", marks: 4, permittedMarks: [0,1,2,3,4], parts: [{"id":"elevation","verbatim":"elevation","marks":2,"permittedMarks":[0,1,2]},{"id":"plan","verbatim":"plan","marks":2,"permittedMarks":[0,1,2]}] },
-    { id: "dcg-2023-ol-b3c-r2", kind: "criterion", verbatim: "Axonometric projection of front surface", marks: 3, permittedMarks: [0,1,2,3] },
-    { id: "dcg-2023-ol-b3c-r3", kind: "criterion", verbatim: "Axonometric projection side surface", marks: 2, permittedMarks: [0,1,2] },
-    { id: "dcg-2023-ol-b3c-r4", kind: "criterion", verbatim: "Axonometric projection of roof", marks: 4, permittedMarks: [0,1,2,3,4] },
+    { id: "dcg-2023-ol-b3c-r1", kind: "criterion", verbatim: "Projections from elevation (2) and plan (2)", marks: 4, permittedMarks: [0,4], parts: [{"id":"elevation","verbatim":"elevation","marks":2,"permittedMarks":[0,2]},{"id":"plan","verbatim":"plan","marks":2,"permittedMarks":[0,2]}] },
+    { id: "dcg-2023-ol-b3c-r2", kind: "point", verbatim: "Axonometric projection of front surface", marks: 3 },
+    { id: "dcg-2023-ol-b3c-r3", kind: "point", verbatim: "Axonometric projection side surface", marks: 2 },
+    { id: "dcg-2023-ol-b3c-r4", kind: "point", verbatim: "Axonometric projection of roof", marks: 4 },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secB-q3-art",
@@ -3734,7 +3734,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2023-ol-b3d-r1", kind: "point", verbatim: "Divisions on semi-circle in elevation", marks: 4 },
     { id: "dcg-2023-ol-b3d-r2", kind: "point", verbatim: "Corresponding divisions in plan", marks: 4 },
-    { id: "dcg-2023-ol-b3d-r3", kind: "point", verbatim: "Projections from elevation (2) and plan (2)", marks: 4 },
+    { id: "dcg-2023-ol-b3d-r3", kind: "criterion", verbatim: "Projections from elevation (2) and plan (2)", marks: 4, permittedMarks: [0,4], parts: [{"id":"elevation","verbatim":"elevation","marks":2,"permittedMarks":[0,2]},{"id":"plan","verbatim":"plan","marks":2,"permittedMarks":[0,2]}] },
     { id: "dcg-2023-ol-b3d-r4", kind: "point", verbatim: "Draw semi-circular curve and front opening", marks: 5 },
     { id: "dcg-2023-ol-b3d-r5", kind: "point", verbatim: "Complete internal seat", marks: 5 },
     ],
@@ -4091,7 +4091,7 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a lava lamp which is often a colourful feature in a young person’s room. Details of a similar lava lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the lava lamp are also shown. Draw the sectional elevation A-A of the assembled lava lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
-    { id: "dcg-2023-ol-c5-6-r1", kind: "point", verbatim: "Hidden detail, Hatching and Centrelines … (3,3,1)", marks: 7 },
+    { id: "dcg-2023-ol-c5-6-r1", kind: "criterion", verbatim: "Hidden detail, Hatching and Centrelines … (3,3,1)", marks: 7, permittedMarks: [0,1,3,4,6,7] },
     ],
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q5-art",
@@ -4925,7 +4925,7 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a number of solar lamps which can be used to illuminate pathways. Details of a similar solar lamp are shown in Fig. C-5 below. A parts list and a 3D graphic of the solar lamp are also shown. Draw the sectional elevation A-A of the assembled solar lamp. (Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
-    { id: "dcg-2024-ol-c5-6-r1", kind: "point", verbatim: "Hidden detail, Hatching and Centrelines … (4,2,1)", marks: 7 },
+    { id: "dcg-2024-ol-c5-6-r1", kind: "criterion", verbatim: "Hidden detail, Hatching and Centrelines … (4,2,1)", marks: 7, permittedMarks: [0,1,2,3,4,5,6,7] },
     ],
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q5-art",
@@ -6548,7 +6548,7 @@ export const CARDS: SecCard[] = [
     questionText: "The image on the right shows a cool box. Details of a similar cool box are shown in Fig. C-5 below. A parts list and a 3D graphic of the cool box are also shown. Draw the sectional elevation A-A of the assembled cool box with the handle in a vertical position. Note: Unless otherwise stated all fillets are radius 5 mm; any omitted dimensions may be estimated.",
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
-    { id: "dcg-2026-ol-c5-6-r1", kind: "point", verbatim: "Hatching and Centrelines … (5,1)", marks: 6 },
+    { id: "dcg-2026-ol-c5-6-r1", kind: "criterion", verbatim: "Hatching and Centrelines … (5,1)", marks: 6, permittedMarks: [0,1,5,6] },
     ],
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q5-art",

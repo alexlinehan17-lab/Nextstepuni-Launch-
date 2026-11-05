@@ -43,7 +43,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2018-hl-a1a-r1", kind: "point", verbatim: "Location of four points on right hand end in axonometric view", marks: 4 },
     { id: "dcg-2018-hl-a1a-r2", kind: "point", verbatim: "Complete right hand end … (3 lines)", marks: 3 },
     { id: "dcg-2018-hl-a1a-r3", kind: "point", verbatim: "Complete roof structure … (3 lines)", marks: 3 },
-    { id: "dcg-2018-hl-a1a-r4", kind: "point", verbatim: "Determine Back, Front & Top lines on inner dividers ... (1, 2, 1)", marks: 4 },
+    { id: "dcg-2018-hl-a1a-r4", kind: "criterion", verbatim: "Determine Back, Front & Top lines on inner dividers ... (1, 2, 1)", marks: 4, permittedMarks: [0,1,2,3,4] },
     ],
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secA-q1-art",
@@ -136,7 +136,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2018-hl-a3a-r1", kind: "point", verbatim: "Draw horizontal lines dividing rectangle into a number of equal parts", marks: 4 },
     { id: "dcg-2018-hl-a3a-r2", kind: "point", verbatim: "Draw corresponding dividing lines radiating from V", marks: 4 },
     { id: "dcg-2018-hl-a3a-r3", kind: "point", verbatim: "Locate points on parabolic curve", marks: 3 },
-    { id: "dcg-2018-hl-a3a-r4", kind: "point", verbatim: "Draw parabolic curve (Any = 2)", marks: 3 },
+    { id: "dcg-2018-hl-a3a-r4", kind: "criterion", verbatim: "Draw parabolic curve (Any = 2)", marks: 3, permittedMarks: [0,2,3] },
     ],
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secA-q3-art",
@@ -234,7 +234,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2018-hl-b1a-1-r1", kind: "point", verbatim: "Draw outer portion of plan as given", marks: 6 },
     { id: "dcg-2018-hl-b1a-1-r2", kind: "point", verbatim: "Draw inner portion of plan as given", marks: 3 },
-    { id: "dcg-2018-hl-b1a-1-r3", kind: "point", verbatim: "Plan of required Spectator Point, Picture Plane and Vanishing Points ….(2,2,2)", marks: 6 },
+    { id: "dcg-2018-hl-b1a-1-r3", kind: "criterion", verbatim: "Plan of required Spectator Point, Picture Plane and Vanishing Points ….(2,2,2)", marks: 6, permittedMarks: [0,2,4,6] },
     ],
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secB-q1-art",
@@ -368,7 +368,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw surfaces 6, 7, 8 and 9 in your development and also in the elevation, end view and plan.",
     tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
-    { id: "dcg-2018-hl-b2c-r1", kind: "criterion", verbatim: "Surfaces 6, 7, 8 and 9 in Development and Orthographic views", marks: 23, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,23], parts: [{"id":"step-1","verbatim":"Draw surfaces 6 and 7 in development view","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Draw surfaces 8 and 9 in development view","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Locate edge through ‘e’ in end view, elevation and plan ….. (2,1,1)","marks":4,"permittedMarks":[0,4]},{"id":"step-4","verbatim":"Use of length ‘L’ to locate point ‘h’ (and mirror image) in elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Draw straight line sloping edges on surfaces 6 and 7 in end view and plan","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Locate point ‘h’ in end view and plan","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"Determine intermediate point on curves in end view and plan","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Draw curves in end view and plan .... (any = 2)","marks":3,"permittedMarks":[0,3]}] },
+    { id: "dcg-2018-hl-b2c-r1", kind: "criterion", verbatim: "Surfaces 6, 7, 8 and 9 in Development and Orthographic views", marks: 23, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,23], parts: [{"id":"step-1","verbatim":"Draw surfaces 6 and 7 in development view","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Draw surfaces 8 and 9 in development view","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Locate edge through ‘e’ in end view, elevation and plan ….. (2,1,1)","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"step-4","verbatim":"Use of length ‘L’ to locate point ‘h’ (and mirror image) in elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Draw straight line sloping edges on surfaces 6 and 7 in end view and plan","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Locate point ‘h’ in end view and plan","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"Determine intermediate point on curves in end view and plan","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Draw curves in end view and plan .... (any = 2)","marks":3,"permittedMarks":[0,2,3]}] },
     ],
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secB-q2-art",
@@ -392,7 +392,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2018-hl-b2d-r1", kind: "point", verbatim: "Draw top curve in elevation", marks: 1 },
     { id: "dcg-2018-hl-b2d-r2", kind: "point", verbatim: "Complete outline of surfaces 10 and 11 in development view", marks: 3 },
-    { id: "dcg-2018-hl-b2d-r3", kind: "point", verbatim: "Draw ‘handle opening’ in elevation and in development view …(1,2)", marks: 3 },
+    { id: "dcg-2018-hl-b2d-r3", kind: "criterion", verbatim: "Draw ‘handle opening’ in elevation and in development view …(1,2)", marks: 3, permittedMarks: [0,1,2,3] },
     { id: "dcg-2018-hl-b2d-r4", kind: "point", verbatim: "Complete orthographic projection (incl. hidden detail)", marks: 1 },
     { id: "dcg-2018-hl-b2d-r5", kind: "point", verbatim: "Complete development view (incl. fold lines)", marks: 1 },
     ],
@@ -515,7 +515,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"(7)"}, totalMarks: 7,
     rows: [
     { id: "dcg-2018-hl-c1a-1-r1", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 3 },
-    { id: "dcg-2018-hl-c1a-1-r2", kind: "point", verbatim: "Identify intersections with contours and draw curve …..(4×1)", marks: 4 },
+    { id: "dcg-2018-hl-c1a-1-r2", kind: "criterion", verbatim: "Identify intersections with contours and draw curve …..(4×1)", marks: 4, permittedMarks: [0,1,2,3,4] },
     ],
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secC-q1-art",
@@ -720,7 +720,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2018-hl-c2b-r1", kind: "point", verbatim: "Establish required rectangular outline for curve ABC", marks: 2 },
     { id: "dcg-2018-hl-c2b-r2", kind: "point", verbatim: "Construction to locate points on required parabola", marks: 4 },
-    { id: "dcg-2018-hl-c2b-r3", kind: "point", verbatim: "Draw parabolic curve …… (Any = 1)", marks: 3 },
+    { id: "dcg-2018-hl-c2b-r3", kind: "criterion", verbatim: "Draw parabolic curve …… (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secC-q2-art",
@@ -744,9 +744,9 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2018-hl-c2c-r1", kind: "point", verbatim: "Extend elements to parabola in elevation", marks: 2 },
     { id: "dcg-2018-hl-c2c-r2", kind: "point", verbatim: "Determine points on curve in plan", marks: 4 },
-    { id: "dcg-2018-hl-c2c-r3", kind: "point", verbatim: "Draw outline loop in plan ……(Any = 1)", marks: 3 },
+    { id: "dcg-2018-hl-c2c-r3", kind: "criterion", verbatim: "Draw outline loop in plan ……(Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     { id: "dcg-2018-hl-c2c-r4", kind: "point", verbatim: "Determine points on curve (outline loop) in end view", marks: 3 },
-    { id: "dcg-2018-hl-c2c-r5", kind: "point", verbatim: "Draw curve in end view ……(Any = 1)", marks: 3 },
+    { id: "dcg-2018-hl-c2c-r5", kind: "criterion", verbatim: "Draw curve in end view ……(Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     { id: "dcg-2018-hl-c2c-r6", kind: "point", verbatim: "Draw walkway in end view", marks: 1 },
     ],
     questionFigure: {
@@ -891,7 +891,7 @@ export const CARDS: SecCard[] = [
     questionText: "The graphic on the right shows a Fluid Agitator, as used when donating bodily fluids. Movement is generated by a link mechanism, which causes the tray to rock to-and-fro preventing coagulation of the fluid. The link mechanism is similar to the one shown in Fig. C-4 (a). Crank OA, which is 48mm long, rotates in an anti-clockwise direction about point O as shown. Link CB pivots about the fixed point C. AB and CB are both 110mm long and are pin-jointed at A and B. (i) Plot the locus of point P, which is the midpoint of link AB, for a full revolution of crank OA. (ii) Determine and indicate, in degrees, the maximum angle of rotation of link CB.",
     tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
     rows: [
-    { id: "dcg-2018-hl-c4a-r1", kind: "criterion", verbatim: "Locus of P", marks: 24, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,24], parts: [{"id":"step-1","verbatim":"Draw lines OA, CB and AB (incl. point P) as required","marks":5,"permittedMarks":[0,5]},{"id":"step-2","verbatim":"Division of circle (centre O) into equal parts (min. 12)","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Draw circular arc about C (locus of B)","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Determine link AB in all positions","marks":6,"permittedMarks":[0,6]},{"id":"step-5","verbatim":"Locate midpoint of AB in all positions","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw required locus …(any = 1)","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"Construction to determine maximum rotation angle of link CB","marks":2,"permittedMarks":[0,2]}] },
+    { id: "dcg-2018-hl-c4a-r1", kind: "criterion", verbatim: "Locus of P", marks: 24, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,24], parts: [{"id":"step-1","verbatim":"Draw lines OA, CB and AB (incl. point P) as required","marks":5,"permittedMarks":[0,5]},{"id":"step-2","verbatim":"Division of circle (centre O) into equal parts (min. 12)","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Draw circular arc about C (locus of B)","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Determine link AB in all positions","marks":6,"permittedMarks":[0,6]},{"id":"step-5","verbatim":"Locate midpoint of AB in all positions","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw required locus …(any = 1)","marks":3,"permittedMarks":[0,1,3]},{"id":"step-7","verbatim":"Construction to determine maximum rotation angle of link CB","marks":2,"permittedMarks":[0,2]}] },
     ],
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secC-q4-art",
@@ -1187,7 +1187,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2019-hl-a1b-r1", kind: "point", verbatim: "Draw required Horizontal Line in elevation", marks: 1 },
     { id: "dcg-2019-hl-a1b-r2", kind: "point", verbatim: "Draw required Horizontal Line in plan", marks: 2 },
-    { id: "dcg-2019-hl-a1b-r3", kind: "point", verbatim: "Determination and indication of required angle in plan … (1,4)", marks: 5 },
+    { id: "dcg-2019-hl-a1b-r3", kind: "criterion", verbatim: "Determination and indication of required angle in plan … (1,4)", marks: 5, permittedMarks: [0,1,4,5] },
     ],
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secA-q1-art",
@@ -1212,7 +1212,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-hl-a2a-r1", kind: "point", verbatim: "Location of vertex", marks: 3 },
     { id: "dcg-2019-hl-a2a-r2", kind: "point", verbatim: "Location of 3 points outside Latus Rectum", marks: 6 },
     { id: "dcg-2019-hl-a2a-r3", kind: "point", verbatim: "Location of 2 points inside Latus Rectum", marks: 4 },
-    { id: "dcg-2019-hl-a2a-r4", kind: "point", verbatim: "Draw curve …. (any = 1)", marks: 3 },
+    { id: "dcg-2019-hl-a2a-r4", kind: "criterion", verbatim: "Draw curve …. (any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secA-q2-art",
@@ -1427,7 +1427,7 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the remainder of the package in the axonometric projection.",
     tariffModel: {"kind":"fixed","notation":"(21)"}, totalMarks: 21,
     rows: [
-    { id: "dcg-2019-hl-b1d-r1", kind: "point", verbatim: "Establish 4 other vertical rectangular surfaces ... (4 x 1)", marks: 4 },
+    { id: "dcg-2019-hl-b1d-r1", kind: "criterion", verbatim: "Establish 4 other vertical rectangular surfaces ... (4 x 1)", marks: 4, permittedMarks: [0,1,2,3,4] },
     { id: "dcg-2019-hl-b1d-r2", kind: "point", verbatim: "Draw 4 inclined connecting lines on RHS of package in axon. projection", marks: 2 },
     { id: "dcg-2019-hl-b1d-r3", kind: "point", verbatim: "Establish extreme midpoint on LHS in axon. projection", marks: 5 },
     { id: "dcg-2019-hl-b1d-r4", kind: "point", verbatim: "Complete middle section of axon. projection", marks: 7 },
@@ -1455,7 +1455,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2019-hl-b2a-r1", kind: "point", verbatim: "Establish required rectangular outline for curve ABC", marks: 3 },
     { id: "dcg-2019-hl-b2a-r2", kind: "point", verbatim: "Construction to locate points on parabola ABC in elevation", marks: 7 },
-    { id: "dcg-2019-hl-b2a-r3", kind: "point", verbatim: "Draw Curve ... (Any = 1)", marks: 3 },
+    { id: "dcg-2019-hl-b2a-r3", kind: "criterion", verbatim: "Draw Curve ... (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     { id: "dcg-2019-hl-b2a-r4", kind: "point", verbatim: "Vertical ‘tension cables’", marks: 3 },
     ],
     questionFigure: {
@@ -1478,7 +1478,7 @@ export const CARDS: SecCard[] = [
     questionText: "The curves DEF and PQS in plan are branches of a double hyperbola. The vertices are at E and Q. The construction for the portion DE of one branch is shown. HLG is a straight line. Draw the given plan.",
     tariffModel: {"kind":"fixed","notation":"(24)"}, totalMarks: 24,
     rows: [
-    { id: "dcg-2019-hl-b2b-r1", kind: "criterion", verbatim: "Draw given plan", marks: 24, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,24], parts: [{"id":"step-1","verbatim":"Establish required rectangular outline for curve DEF","marks":2,"permittedMarks":[0,2]},{"id":"step-2","verbatim":"Construction to determine points on upper half of LH hyperbola as given","marks":4,"permittedMarks":[0,4]},{"id":"step-3","verbatim":"Mirror to lower half","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Draw Curve ... (Any = 1)","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Mirror curve to RHS","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Draw Curve","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"Draw central roadway (incl hidden detail)","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Draw Line GH and three corresponding lines","marks":3,"permittedMarks":[0,3]},{"id":"step-9","verbatim":"Construction to establish centres for arcs","marks":2,"permittedMarks":[0,2]},{"id":"step-10","verbatim":"Draw required arcs and complete plan","marks":2,"permittedMarks":[0,2]}] },
+    { id: "dcg-2019-hl-b2b-r1", kind: "criterion", verbatim: "Draw given plan", marks: 24, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,24], parts: [{"id":"step-1","verbatim":"Establish required rectangular outline for curve DEF","marks":2,"permittedMarks":[0,2]},{"id":"step-2","verbatim":"Construction to determine points on upper half of LH hyperbola as given","marks":4,"permittedMarks":[0,4]},{"id":"step-3","verbatim":"Mirror to lower half","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Draw Curve ... (Any = 1)","marks":3,"permittedMarks":[0,1,3]},{"id":"step-5","verbatim":"Mirror curve to RHS","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Draw Curve","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"Draw central roadway (incl hidden detail)","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Draw Line GH and three corresponding lines","marks":3,"permittedMarks":[0,3]},{"id":"step-9","verbatim":"Construction to establish centres for arcs","marks":2,"permittedMarks":[0,2]},{"id":"step-10","verbatim":"Draw required arcs and complete plan","marks":2,"permittedMarks":[0,2]}] },
     ],
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secB-q2-art",
@@ -1734,7 +1734,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-hl-c1b-r2", kind: "point", verbatim: "Locate points Q and R in auxiliary view", marks: 2 },
     { id: "dcg-2019-hl-c1b-r3", kind: "point", verbatim: "Establish required dip angle", marks: 3 },
     { id: "dcg-2019-hl-c1b-r4", kind: "point", verbatim: "Locate height of point P", marks: 3 },
-    { id: "dcg-2019-hl-c1b-r5", kind: "point", verbatim: "Draw required triangle PQR in elevation … (3×1)", marks: 3 },
+    { id: "dcg-2019-hl-c1b-r5", kind: "criterion", verbatim: "Draw required triangle PQR in elevation … (3×1)", marks: 3, permittedMarks: [0,1,2,3] },
     { id: "dcg-2019-hl-c1b-r6", kind: "point", verbatim: "Determine the true angle between the line PR and the strike line S", marks: 2 },
     ],
     questionFigure: {
@@ -1759,7 +1759,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2019-hl-c2a-r1", kind: "point", verbatim: "Draw required rectangle for construction of parabola in elevation", marks: 4 },
     { id: "dcg-2019-hl-c2a-r2", kind: "point", verbatim: "Required construction to determine points on parabola in elevation", marks: 4 },
-    { id: "dcg-2019-hl-c2a-r3", kind: "point", verbatim: "Draw parabolic curve in elevation …… (Any = 1)", marks: 3 },
+    { id: "dcg-2019-hl-c2a-r3", kind: "criterion", verbatim: "Draw parabolic curve in elevation …… (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     { id: "dcg-2019-hl-c2a-r4", kind: "point", verbatim: "Completion of elevation", marks: 2 },
     ],
     questionFigure: {
@@ -1784,7 +1784,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2019-hl-c2b-r1", kind: "point", verbatim: "Establish required rectangular outline for curve ABC", marks: 3 },
     { id: "dcg-2019-hl-c2b-r2", kind: "point", verbatim: "Construction to locate points on required parabola", marks: 4 },
-    { id: "dcg-2019-hl-c2b-r3", kind: "point", verbatim: "Draw parabolic curve …… (Any = 1)", marks: 3 },
+    { id: "dcg-2019-hl-c2b-r3", kind: "criterion", verbatim: "Draw parabolic curve …… (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q2-art",
@@ -1808,9 +1808,9 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2019-hl-c2c-r1", kind: "point", verbatim: "Locate points D, F, A & C", marks: 4 },
     { id: "dcg-2019-hl-c2c-r2", kind: "point", verbatim: "Establish widths on curves on LHS in plan", marks: 6 },
-    { id: "dcg-2019-hl-c2c-r3", kind: "point", verbatim: "Draw correct curves on LHS in plan …… (Any = 1)", marks: 3 },
+    { id: "dcg-2019-hl-c2c-r3", kind: "criterion", verbatim: "Draw correct curves on LHS in plan …… (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     { id: "dcg-2019-hl-c2c-r4", kind: "point", verbatim: "Establish widths on curve on RHS in plan", marks: 2 },
-    { id: "dcg-2019-hl-c2c-r5", kind: "point", verbatim: "Draw curve on RHS in plan …… (Any = 1)", marks: 3 },
+    { id: "dcg-2019-hl-c2c-r5", kind: "criterion", verbatim: "Draw curve on RHS in plan …… (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q2-art",
@@ -1855,7 +1855,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the given elevation, plan and end view.",
     tariffModel: {"kind":"fixed","notation":"(15)"}, totalMarks: 15,
     rows: [
-    { id: "dcg-2019-hl-c3a-r1", kind: "point", verbatim: "Draw elevation as given .. (5×1)", marks: 5 },
+    { id: "dcg-2019-hl-c3a-r1", kind: "criterion", verbatim: "Draw elevation as given .. (5×1)", marks: 5, permittedMarks: [0,1,2,3,4,5] },
     { id: "dcg-2019-hl-c3a-r2", kind: "point", verbatim: "Draw plan as given", marks: 5 },
     { id: "dcg-2019-hl-c3a-r3", kind: "point", verbatim: "Draw end view as given", marks: 5 },
     ],
@@ -1954,7 +1954,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-hl-c4a-r2", kind: "point", verbatim: "Establish 90mm height at 60° interval and draw UV line", marks: 3 },
     { id: "dcg-2019-hl-c4a-r3", kind: "point", verbatim: "Draw correct horizontal ‘Dwell’ line", marks: 2 },
     { id: "dcg-2019-hl-c4a-r4", kind: "point", verbatim: "Construction to determine U.A.R. (min. 7 incl. end points) to 30mm", marks: 9 },
-    { id: "dcg-2019-hl-c4a-r5", kind: "point", verbatim: "Draw UAR curve … (any = 1)", marks: 3 },
+    { id: "dcg-2019-hl-c4a-r5", kind: "criterion", verbatim: "Draw UAR curve … (any = 1)", marks: 3, permittedMarks: [0,1,3] },
     { id: "dcg-2019-hl-c4a-r6", kind: "point", verbatim: "Draw required UV line to 360°", marks: 3 },
     ],
     questionFigure: {
@@ -1980,7 +1980,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-hl-c4b-r2", kind: "point", verbatim: "Draw 30º line to contain reflector in starting position", marks: 2 },
     { id: "dcg-2019-hl-c4b-r3", kind: "point", verbatim: "Locate reflector in correct position", marks: 2 },
     { id: "dcg-2019-hl-c4b-r4", kind: "point", verbatim: "Locate 12 points on curve (incl. 2 turning points)", marks: 12 },
-    { id: "dcg-2019-hl-c4b-r5", kind: "point", verbatim: "Draw required trochoid … (any = 1)", marks: 3 },
+    { id: "dcg-2019-hl-c4b-r5", kind: "criterion", verbatim: "Draw required trochoid … (any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q4-art",
@@ -2148,7 +2148,7 @@ export const CARDS: SecCard[] = [
     questionText: "Construct a normal to the curve at the point P.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2020-hl-a3b-r1", kind: "point", verbatim: "Required construction and draw normal ... (2, 2)", marks: 4 },
+    { id: "dcg-2020-hl-a3b-r1", kind: "criterion", verbatim: "Required construction and draw normal ... (2, 2)", marks: 4, permittedMarks: [0,2,4] },
     ],
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secA-q3-art",
@@ -2336,7 +2336,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Determine the angle of inclination of the plane ABC to the horizontal plane. (ii) Determine the true shape of the plane ABC.",
     tariffModel: {"kind":"fixed","notation":"(14)"}, totalMarks: 14,
     rows: [
-    { id: "dcg-2020-hl-b2c-r1", kind: "point", verbatim: "Projections of required horizontal line on ABC … (2,1,2)", marks: 5 },
+    { id: "dcg-2020-hl-b2c-r1", kind: "criterion", verbatim: "Projections of required horizontal line on ABC … (2,1,2)", marks: 5, permittedMarks: [0,1,2,3,4,5] },
     { id: "dcg-2020-hl-b2c-r2", kind: "point", verbatim: "X1Y1 perpendicular to plan of correct horizontal line", marks: 2 },
     { id: "dcg-2020-hl-b2c-r3", kind: "point", verbatim: "Projection of plane ABC to auxiliary view and indication of true inclination", marks: 3 },
     { id: "dcg-2020-hl-b2c-r4", kind: "point", verbatim: "Determine true shape of ABC", marks: 4 },
@@ -2388,7 +2388,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the given plan and make a perspective drawing of the structure given the following: The spectator point S, is 3.3m from corner A The picture plane is touching corner A The horizon line is 3.0m above the ground line.",
     tariffModel: {"kind":"fixed","notation":"(40)"}, totalMarks: 40,
     rows: [
-    { id: "dcg-2020-hl-b3a-r1", kind: "criterion", verbatim: "Perspective of Structure", marks: 40, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,40], parts: [{"id":"step-1","verbatim":"Draw the given plan of structure","marks":8,"permittedMarks":[0,8]},{"id":"step-2","verbatim":"Position spectator and plan of picture plane (1, 2)","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Plan of vanishing points","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Ground line, horizon line, vanishing points in elevation (1, 1, 2)","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Projection lines from plan to spectator","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Perspective of base lines of structure .... (2x2)","marks":4,"permittedMarks":[0,4]},{"id":"step-7","verbatim":"Measure and apply height of top vertex of pyramid","marks":4,"permittedMarks":[0,4]},{"id":"step-8","verbatim":"Complete outline of pyramid","marks":3,"permittedMarks":[0,3]},{"id":"step-9","verbatim":"Perspective of inclined lines on pyramid","marks":4,"permittedMarks":[0,4]},{"id":"step-10","verbatim":"Perspective of horizontal lines on pyramid","marks":6,"permittedMarks":[0,6]}] },
+    { id: "dcg-2020-hl-b3a-r1", kind: "criterion", verbatim: "Perspective of Structure", marks: 40, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,40], parts: [{"id":"step-1","verbatim":"Draw the given plan of structure","marks":8,"permittedMarks":[0,8]},{"id":"step-2","verbatim":"Position spectator and plan of picture plane (1, 2)","marks":3,"permittedMarks":[0,1,2,3]},{"id":"step-3","verbatim":"Plan of vanishing points","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Ground line, horizon line, vanishing points in elevation (1, 1, 2)","marks":4,"permittedMarks":[0,1,2,3,4]},{"id":"step-5","verbatim":"Projection lines from plan to spectator","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Perspective of base lines of structure .... (2x2)","marks":4,"permittedMarks":[0,2,4]},{"id":"step-7","verbatim":"Measure and apply height of top vertex of pyramid","marks":4,"permittedMarks":[0,4]},{"id":"step-8","verbatim":"Complete outline of pyramid","marks":3,"permittedMarks":[0,3]},{"id":"step-9","verbatim":"Perspective of inclined lines on pyramid","marks":4,"permittedMarks":[0,4]},{"id":"step-10","verbatim":"Perspective of horizontal lines on pyramid","marks":6,"permittedMarks":[0,6]}] },
     ],
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secB-q3-art",
@@ -2548,7 +2548,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the given plan and elevation.",
     tariffModel: {"kind":"fixed","notation":"(29)"}, totalMarks: 29,
     rows: [
-    { id: "dcg-2020-hl-c2a-r1", kind: "criterion", verbatim: "Draw required projections of hyperboloid of revolution structure", marks: 29, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,29], parts: [{"id":"step-1","verbatim":"Draw elevation and plan of ‘bottom’ cone","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Location of ‘throat’ circle in plan and elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-3","verbatim":"Location of asymptotes","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Construction to determine points on one branch of hyperbola in elevation","marks":8,"permittedMarks":[0,8]},{"id":"step-5","verbatim":"Determination of points on second branch in elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-6","verbatim":"Draw hyperbolic curves …. (Any = 1)","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"Draw elevation and plan of two ‘top’ cones","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2020-hl-c2a-r1", kind: "criterion", verbatim: "Draw required projections of hyperboloid of revolution structure", marks: 29, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,29], parts: [{"id":"step-1","verbatim":"Draw elevation and plan of ‘bottom’ cone","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Location of ‘throat’ circle in plan and elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-3","verbatim":"Location of asymptotes","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Construction to determine points on one branch of hyperbola in elevation","marks":8,"permittedMarks":[0,8]},{"id":"step-5","verbatim":"Determination of points on second branch in elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-6","verbatim":"Draw hyperbolic curves …. (Any = 1)","marks":3,"permittedMarks":[0,1,3]},{"id":"step-7","verbatim":"Draw elevation and plan of two ‘top’ cones","marks":4,"permittedMarks":[0,4]}] },
     ],
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q2-art",
@@ -2713,7 +2713,7 @@ export const CARDS: SecCard[] = [
     questionText: "The 3D graphic shows a radial plate cam. Fig C-4(a) shows the details of a similar cam. The cam rotates in a clockwise direction and has a ø20mm camshaft. Draw the cam profile and the displacement diagram given the following data: to 90° Rise as shown in the diagram 90° to 180° Dwell as shown in the diagram 180° to 360° Return to initial position with Simple Harmonic Motion. In the displacement diagram, use a distance of 12mm to represent each 30° interval.",
     tariffModel: {"kind":"fixed","notation":"(23)"}, totalMarks: 23,
     rows: [
-    { id: "dcg-2020-hl-c4a-r1", kind: "criterion", verbatim: "Can Profile and Displacement Diagram", marks: 23, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,23], parts: [{"id":"step-1","verbatim":"Draw camshaft and two circular arcs","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"Divide circle into 12 equal parts","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Horizontal divisions at 12mm as required on displacement diagram","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Transfer of heights to displacement diagram","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Establish height at 90° interval and draw ‘Rise’ curve","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw correct horizontal ‘Dwell’ line","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"Construction to determine S.H.M. (min. 7 incl. end points)","marks":5,"permittedMarks":[0,5]},{"id":"step-8","verbatim":"Draw SHM curve … (any = 1)","marks":2,"permittedMarks":[0,2]},{"id":"step-9","verbatim":"Complete cam profile","marks":3,"permittedMarks":[0,3]}] },
+    { id: "dcg-2020-hl-c4a-r1", kind: "criterion", verbatim: "Can Profile and Displacement Diagram", marks: 23, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,23], parts: [{"id":"step-1","verbatim":"Draw camshaft and two circular arcs","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"Divide circle into 12 equal parts","marks":2,"permittedMarks":[0,2]},{"id":"step-3","verbatim":"Horizontal divisions at 12mm as required on displacement diagram","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Transfer of heights to displacement diagram","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Establish height at 90° interval and draw ‘Rise’ curve","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw correct horizontal ‘Dwell’ line","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"Construction to determine S.H.M. (min. 7 incl. end points)","marks":5,"permittedMarks":[0,5]},{"id":"step-8","verbatim":"Draw SHM curve … (any = 1)","marks":2,"permittedMarks":[0,1,2]},{"id":"step-9","verbatim":"Complete cam profile","marks":3,"permittedMarks":[0,3]}] },
     ],
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q4-art",
@@ -2738,7 +2738,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2020-hl-c4b-r2", kind: "point", verbatim: "Divide wheel into 30° intervals", marks: 2 },
     { id: "dcg-2020-hl-c4b-r3", kind: "point", verbatim: "Corresponding divisions stepped horizontally", marks: 3 },
     { id: "dcg-2020-hl-c4b-r4", kind: "point", verbatim: "Locate points on locus", marks: 6 },
-    { id: "dcg-2020-hl-c4b-r5", kind: "point", verbatim: "Draw required locus … (any = 1)", marks: 3 },
+    { id: "dcg-2020-hl-c4b-r5", kind: "criterion", verbatim: "Draw required locus … (any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q4-art",
@@ -2998,7 +2998,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2021-hl-a2a-r1", kind: "point", verbatim: "Location of vertex", marks: 4 },
     { id: "dcg-2021-hl-a2a-r2", kind: "point", verbatim: "Location of 2 points outside latus rectum", marks: 4 },
     { id: "dcg-2021-hl-a2a-r3", kind: "point", verbatim: "Location of 3 points inside latus rectum", marks: 6 },
-    { id: "dcg-2021-hl-a2a-r4", kind: "point", verbatim: "Draw curve …. (any = 1)", marks: 3 },
+    { id: "dcg-2021-hl-a2a-r4", kind: "criterion", verbatim: "Draw curve …. (any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secA-q2-art",
@@ -3141,7 +3141,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the given elevation and end view of the bridge.",
     tariffModel: {"kind":"fixed","notation":"(33)"}, totalMarks: 33,
     rows: [
-    { id: "dcg-2021-hl-b1a-r1", kind: "criterion", verbatim: "Elevation and End View as given", marks: 33, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,33], parts: [{"id":"step-1","verbatim":"Establish required rectangular outline of supports and for curve ABC","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Construction to locate points on parabola ABC in elevation","marks":10,"permittedMarks":[0,10]},{"id":"step-3","verbatim":"Draw Curve ... (Any = 1)","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Draw base of bridge and vertical ‘tension cables’","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Complete bridge supports","marks":4,"permittedMarks":[0,4]},{"id":"step-6","verbatim":"Draw outline of End View","marks":4,"permittedMarks":[0,4]},{"id":"step-7","verbatim":"Completion of End View (including ‘cross members)","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2021-hl-b1a-r1", kind: "criterion", verbatim: "Elevation and End View as given", marks: 33, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,33], parts: [{"id":"step-1","verbatim":"Establish required rectangular outline of supports and for curve ABC","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Construction to locate points on parabola ABC in elevation","marks":10,"permittedMarks":[0,10]},{"id":"step-3","verbatim":"Draw Curve ... (Any = 1)","marks":3,"permittedMarks":[0,1,3]},{"id":"step-4","verbatim":"Draw base of bridge and vertical ‘tension cables’","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Complete bridge supports","marks":4,"permittedMarks":[0,4]},{"id":"step-6","verbatim":"Draw outline of End View","marks":4,"permittedMarks":[0,4]},{"id":"step-7","verbatim":"Completion of End View (including ‘cross members)","marks":4,"permittedMarks":[0,4]}] },
     ],
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secB-q1-art",
@@ -3165,7 +3165,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2021-hl-b1b-r1", kind: "point", verbatim: "Projections to determine points on upper parabolic curve as given", marks: 5 },
     { id: "dcg-2021-hl-b1b-r2", kind: "point", verbatim: "Mirror to lower curve", marks: 3 },
-    { id: "dcg-2021-hl-b1b-r3", kind: "point", verbatim: "Draw Curves ... (Any = 1)", marks: 3 },
+    { id: "dcg-2021-hl-b1b-r3", kind: "criterion", verbatim: "Draw Curves ... (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     { id: "dcg-2021-hl-b1b-r4", kind: "point", verbatim: "Draw base of bridge, ‘tension cables’ and ‘cross members’", marks: 3 },
     { id: "dcg-2021-hl-b1b-r5", kind: "point", verbatim: "Projections to determine bridge supports", marks: 4 },
     { id: "dcg-2021-hl-b1b-r6", kind: "point", verbatim: "Complete bridge supports", marks: 2 },
@@ -3311,8 +3311,8 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric axes X, Y and Z and the scalene triangle abc.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2021-hl-b3a-r1", kind: "point", verbatim: "Draw axonometric axes Y and Z orientated as shown (1,1)", marks: 2 },
-    { id: "dcg-2021-hl-b3a-r2", kind: "point", verbatim: "Draw scalene triangle ‘abc’ (2,1,1)", marks: 4 },
+    { id: "dcg-2021-hl-b3a-r1", kind: "criterion", verbatim: "Draw axonometric axes Y and Z orientated as shown (1,1)", marks: 2, permittedMarks: [0,1,2] },
+    { id: "dcg-2021-hl-b3a-r2", kind: "criterion", verbatim: "Draw scalene triangle ‘abc’ (2,1,1)", marks: 4, permittedMarks: [0,1,2,3,4] },
     { id: "dcg-2021-hl-b3a-r3", kind: "point", verbatim: "Draw X axis", marks: 2 },
     ],
     questionFigure: {
@@ -3335,7 +3335,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation and end view, orientated as shown, and complete the trimetric projection.",
     tariffModel: {"kind":"fixed","notation":"(44)"}, totalMarks: 44,
     rows: [
-    { id: "dcg-2021-hl-b3b-r1", kind: "criterion", verbatim: "Draw Elevation, End View and Trimetric Projection", marks: 44, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,44], parts: [{"id":"step-1","verbatim":"Correct development of XY plane in required orientation","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Draw elevation as given","marks":4,"permittedMarks":[0,4]},{"id":"step-3","verbatim":"Correct development of YZ plane in required orientation","marks":4,"permittedMarks":[0,4]},{"id":"step-4","verbatim":"Draw end view as given","marks":6,"permittedMarks":[0,6]},{"id":"step-5","verbatim":"Projections from elevation and end view (2,2)","marks":4,"permittedMarks":[0,4]},{"id":"step-6","verbatim":"Draw axonometric of table top and net","marks":5,"permittedMarks":[0,5]},{"id":"step-7","verbatim":"Determine points on curves in axonometric view","marks":8,"permittedMarks":[0,8]},{"id":"step-8","verbatim":"Draw curves","marks":5,"permittedMarks":[0,5]},{"id":"step-9","verbatim":"Draw table top supports","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2021-hl-b3b-r1", kind: "criterion", verbatim: "Draw Elevation, End View and Trimetric Projection", marks: 44, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,44], parts: [{"id":"step-1","verbatim":"Correct development of XY plane in required orientation","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Draw elevation as given","marks":4,"permittedMarks":[0,4]},{"id":"step-3","verbatim":"Correct development of YZ plane in required orientation","marks":4,"permittedMarks":[0,4]},{"id":"step-4","verbatim":"Draw end view as given","marks":6,"permittedMarks":[0,6]},{"id":"step-5","verbatim":"Projections from elevation and end view (2,2)","marks":4,"permittedMarks":[0,2,4]},{"id":"step-6","verbatim":"Draw axonometric of table top and net","marks":5,"permittedMarks":[0,5]},{"id":"step-7","verbatim":"Determine points on curves in axonometric view","marks":8,"permittedMarks":[0,8]},{"id":"step-8","verbatim":"Draw curves","marks":5,"permittedMarks":[0,5]},{"id":"step-9","verbatim":"Draw table top supports","marks":4,"permittedMarks":[0,4]}] },
     ],
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secB-q3-art",
@@ -3525,7 +3525,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2021-hl-c2a-r1", kind: "point", verbatim: "Establish major and minor axis of ellipse", marks: 4 },
     { id: "dcg-2021-hl-c2a-r2", kind: "point", verbatim: "Construction to determine points on ellipse", marks: 8 },
-    { id: "dcg-2021-hl-c2a-r3", kind: "point", verbatim: "Draw elliptical curve in plan …… (Any = 1)", marks: 3 },
+    { id: "dcg-2021-hl-c2a-r3", kind: "criterion", verbatim: "Draw elliptical curve in plan …… (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     { id: "dcg-2021-hl-c2a-r4", kind: "point", verbatim: "Draw plan of outline elements (parallelogram ABCD)", marks: 5 },
     { id: "dcg-2021-hl-c2a-r5", kind: "point", verbatim: "Draw inner elements extended in both directions", marks: 6 },
     ],
@@ -3553,8 +3553,8 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2021-hl-c2b-r2", kind: "point", verbatim: "Draw inner elements in elevation", marks: 3 },
     { id: "dcg-2021-hl-c2b-r3", kind: "point", verbatim: "Construction to determine lower curve in elevation", marks: 6 },
     { id: "dcg-2021-hl-c2b-r4", kind: "point", verbatim: "Construction to determine point P in elevation", marks: 4 },
-    { id: "dcg-2021-hl-c2b-r5", kind: "point", verbatim: "Draw lower curve in elevation …… (Any = 1)", marks: 3 },
-    { id: "dcg-2021-hl-c2b-r6", kind: "point", verbatim: "Draw upper curve in elevation…… (Any = 1)", marks: 3 },
+    { id: "dcg-2021-hl-c2b-r5", kind: "criterion", verbatim: "Draw lower curve in elevation …… (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
+    { id: "dcg-2021-hl-c2b-r6", kind: "criterion", verbatim: "Draw upper curve in elevation…… (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q2-art",
@@ -3579,7 +3579,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2021-hl-c2c-r1", kind: "point", verbatim: "Line joining B and D in plan", marks: 2 },
     { id: "dcg-2021-hl-c2c-r2", kind: "point", verbatim: "Projections from intersections with elements in plan to auxiliary or end view", marks: 3 },
     { id: "dcg-2021-hl-c2c-r3", kind: "point", verbatim: "Establish heights in auxiliary or end view", marks: 4 },
-    { id: "dcg-2021-hl-c2c-r4", kind: "point", verbatim: "Draw required curvature …… (Any = 1)", marks: 3 },
+    { id: "dcg-2021-hl-c2c-r4", kind: "criterion", verbatim: "Draw required curvature …… (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q2-art",
@@ -3695,7 +3695,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Draw the given outline of the lorry and plot the portion of the Archimedean spiral between B and B1. The spiral has an initial radius of 90mm at AB and a radius of 122mm at AB1. (ii) Plot the locus of point C, on the skip, for the combined movement until the base of the skip rests on the ground LL1. The base of the skip remains horizontal throughout this movement.",
     tariffModel: {"kind":"fixed","notation":"(30)"}, totalMarks: 30,
     rows: [
-    { id: "dcg-2021-hl-c4a-r1", kind: "criterion", verbatim: "Determine portion of Archimedean Spiral and Locus of Point C", marks: 30, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,30], parts: [{"id":"step-1","verbatim":"Draw outline as given (LL1, Wheel, Arm AB and Skip)","marks":7,"permittedMarks":[0,7]},{"id":"step-2","verbatim":"Draw the line AB1","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Establish min of 5 angular divisions lines (30°)","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Establish corresponding intermediate radii on angular division lines","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Draw Archimedean spiral through required points… (Any = 1)","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw line BC","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"Determine points on locus of C","marks":5,"permittedMarks":[0,5]},{"id":"step-8","verbatim":"Draw required locus","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2021-hl-c4a-r1", kind: "criterion", verbatim: "Determine portion of Archimedean Spiral and Locus of Point C", marks: 30, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,30], parts: [{"id":"step-1","verbatim":"Draw outline as given (LL1, Wheel, Arm AB and Skip)","marks":7,"permittedMarks":[0,7]},{"id":"step-2","verbatim":"Draw the line AB1","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Establish min of 5 angular divisions lines (30°)","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Establish corresponding intermediate radii on angular division lines","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Draw Archimedean spiral through required points… (Any = 1)","marks":3,"permittedMarks":[0,1,3]},{"id":"step-6","verbatim":"Draw line BC","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"Determine points on locus of C","marks":5,"permittedMarks":[0,5]},{"id":"step-8","verbatim":"Draw required locus","marks":4,"permittedMarks":[0,4]}] },
     ],
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q4-art",
@@ -3716,7 +3716,7 @@ export const CARDS: SecCard[] = [
     questionText: "The graphic on the right shows a cam timer. This device is used in the automation industry to control repetitive operations. A series of cams, arranged on a shaft, are driven by a motor. Fig C-4(b) shows the details of one such cam. The cam rotates in an anti-clockwise direction and has an inline knife-edge follower. Draw the cam profile and the displacement diagram given the following data: 0° to 180° Rise as shown in the diagram 180° to 270° Fall as shown in the diagram 270° to 360° Fall with simple harmonic motion. (In the displacement diagram, use a distance of 15mm to represent each 30° interval.) Scale 5:1",
     tariffModel: {"kind":"fixed","notation":"(30)"}, totalMarks: 30,
     rows: [
-    { id: "dcg-2021-hl-c4b-r1", kind: "criterion", verbatim: "Cam Profile and Displacement Diagram", marks: 30, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,30], parts: [{"id":"step-1","verbatim":"Draw camshaft, two circular arcs and line as given","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"Divide circle into 12 equal parts","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Horizontal divisions at 15mm and vertical lines on displacement diagram","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Establish heights in displacement diagram from 0° to 180°","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Draw ‘Rise’ curve","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Draw correct ‘Fall’ and ‘Dwell’","marks":5,"permittedMarks":[0,5]},{"id":"step-7","verbatim":"Construction to determine S.H.M (min. 7 incl. end points)","marks":4,"permittedMarks":[0,4]},{"id":"step-8","verbatim":"Draw S.H.M. curve … (any = 1)","marks":3,"permittedMarks":[0,3]},{"id":"step-9","verbatim":"Complete cam profile","marks":3,"permittedMarks":[0,3]}] },
+    { id: "dcg-2021-hl-c4b-r1", kind: "criterion", verbatim: "Cam Profile and Displacement Diagram", marks: 30, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,30], parts: [{"id":"step-1","verbatim":"Draw camshaft, two circular arcs and line as given","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"Divide circle into 12 equal parts","marks":3,"permittedMarks":[0,3]},{"id":"step-3","verbatim":"Horizontal divisions at 15mm and vertical lines on displacement diagram","marks":3,"permittedMarks":[0,3]},{"id":"step-4","verbatim":"Establish heights in displacement diagram from 0° to 180°","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Draw ‘Rise’ curve","marks":2,"permittedMarks":[0,2]},{"id":"step-6","verbatim":"Draw correct ‘Fall’ and ‘Dwell’","marks":5,"permittedMarks":[0,5]},{"id":"step-7","verbatim":"Construction to determine S.H.M (min. 7 incl. end points)","marks":4,"permittedMarks":[0,4]},{"id":"step-8","verbatim":"Draw S.H.M. curve … (any = 1)","marks":3,"permittedMarks":[0,1,3]},{"id":"step-9","verbatim":"Complete cam profile","marks":3,"permittedMarks":[0,3]}] },
     ],
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q4-art",
@@ -3972,7 +3972,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2022-hl-a2a-r2", kind: "point", verbatim: "Location of vertex", marks: 3 },
     { id: "dcg-2022-hl-a2a-r3", kind: "point", verbatim: "Location of points on and above latus rectum", marks: 2 },
     { id: "dcg-2022-hl-a2a-r4", kind: "point", verbatim: "Location of points below latus rectum", marks: 6 },
-    { id: "dcg-2022-hl-a2a-r5", kind: "point", verbatim: "Draw curve (Any = 1)", marks: 3 },
+    { id: "dcg-2022-hl-a2a-r5", kind: "criterion", verbatim: "Draw curve (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secA-q2-art",
@@ -3994,7 +3994,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw a tangent to the curve at point Q.",
     tariffModel: {"kind":"fixed","notation":"(4)"}, totalMarks: 4,
     rows: [
-    { id: "dcg-2022-hl-a2b-r1", kind: "point", verbatim: "Required construction and draw tangent … (2, 2)", marks: 4 },
+    { id: "dcg-2022-hl-a2b-r1", kind: "criterion", verbatim: "Required construction and draw tangent … (2, 2)", marks: 4, permittedMarks: [0,2,4] },
     ],
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secA-q2-art",
@@ -4163,7 +4163,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the elevation and plan of a horizontal line on the surface EFG and project an auxiliary elevation which will show an edge view of the plane EFG. Indicate the angle of inclination of the plane EFG to the horizontal plane.",
     tariffModel: {"kind":"fixed","notation":"(16)"}, totalMarks: 16,
     rows: [
-    { id: "dcg-2022-hl-b1c-r1", kind: "point", verbatim: "Projections of horizontal line on EFG … (2, 1, 2)", marks: 5 },
+    { id: "dcg-2022-hl-b1c-r1", kind: "criterion", verbatim: "Projections of horizontal line on EFG … (2, 1, 2)", marks: 5, permittedMarks: [0,1,2,3,4,5] },
     { id: "dcg-2022-hl-b1c-r2", kind: "point", verbatim: "X1Y1 perpendicular to plan of correct horizontal line", marks: 3 },
     { id: "dcg-2022-hl-b1c-r3", kind: "point", verbatim: "Projection of plane EFG to auxiliary view", marks: 5 },
     { id: "dcg-2022-hl-b1c-r4", kind: "point", verbatim: "Indication of true inclination of EFG to horizontal plane", marks: 3 },
@@ -4234,7 +4234,7 @@ export const CARDS: SecCard[] = [
     questionText: "Make a perspective drawing of the coffee-dock given the following: The spectator point S, is 16m from point A The picture plane is touching point A The horizon line is 7m above the ground line. Use an auxiliary vanishing point to determine the surfaces B and C in the perspective drawing.",
     tariffModel: {"kind":"fixed","notation":"(48)"}, totalMarks: 48,
     rows: [
-    { id: "dcg-2022-hl-b2b-r1", kind: "criterion", verbatim: "Perspective of Structure", marks: 48, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,48], parts: [{"id":"step-1","verbatim":"Position spectator and plan of picture plane (2, 2)","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Plan of vanishing points","marks":4,"permittedMarks":[0,4]},{"id":"step-3","verbatim":"Ground line, horizon line, vanishing points in elevation (1, 2, 2)","marks":5,"permittedMarks":[0,5]},{"id":"step-4","verbatim":"Establish corner A in perspective view","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Perspective of base lines of structure .... (2×3)","marks":6,"permittedMarks":[0,6]},{"id":"step-6","verbatim":"Apply height of 70mm and complete the three vertical surfaces","marks":6,"permittedMarks":[0,6]},{"id":"step-7","verbatim":"Apply height of 25mm and complete perspective of horizontal shelf","marks":5,"permittedMarks":[0,5]},{"id":"step-8","verbatim":"Apply height of 10mm and complete perspective of opening","marks":4,"permittedMarks":[0,4]},{"id":"step-9","verbatim":"Use of AVP to complete sloping surface C","marks":5,"permittedMarks":[0,5]},{"id":"step-10","verbatim":"Use of AVP to complete sloping surface B","marks":4,"permittedMarks":[0,4]},{"id":"step-11","verbatim":"Complete perspective drawing of structure","marks":3,"permittedMarks":[0,3]}] },
+    { id: "dcg-2022-hl-b2b-r1", kind: "criterion", verbatim: "Perspective of Structure", marks: 48, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,48], parts: [{"id":"step-1","verbatim":"Position spectator and plan of picture plane (2, 2)","marks":4,"permittedMarks":[0,2,4]},{"id":"step-2","verbatim":"Plan of vanishing points","marks":4,"permittedMarks":[0,4]},{"id":"step-3","verbatim":"Ground line, horizon line, vanishing points in elevation (1, 2, 2)","marks":5,"permittedMarks":[0,1,2,3,4,5]},{"id":"step-4","verbatim":"Establish corner A in perspective view","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Perspective of base lines of structure .... (2×3)","marks":6,"permittedMarks":[0,3,6]},{"id":"step-6","verbatim":"Apply height of 70mm and complete the three vertical surfaces","marks":6,"permittedMarks":[0,6]},{"id":"step-7","verbatim":"Apply height of 25mm and complete perspective of horizontal shelf","marks":5,"permittedMarks":[0,5]},{"id":"step-8","verbatim":"Apply height of 10mm and complete perspective of opening","marks":4,"permittedMarks":[0,4]},{"id":"step-9","verbatim":"Use of AVP to complete sloping surface C","marks":5,"permittedMarks":[0,5]},{"id":"step-10","verbatim":"Use of AVP to complete sloping surface B","marks":4,"permittedMarks":[0,4]},{"id":"step-11","verbatim":"Complete perspective drawing of structure","marks":3,"permittedMarks":[0,3]}] },
     ],
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secB-q2-art",
@@ -4498,7 +4498,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2022-hl-c2a-r2", kind: "point", verbatim: "Location of ‘throat’ circle in plan and elevation", marks: 6 },
     { id: "dcg-2022-hl-c2a-r3", kind: "point", verbatim: "Construction to determine points on one branch of hyperbola in elevation", marks: 10 },
     { id: "dcg-2022-hl-c2a-r4", kind: "point", verbatim: "Determination of points on second branch in elevation", marks: 6 },
-    { id: "dcg-2022-hl-c2a-r5", kind: "point", verbatim: "Draw hyperbolic curves …. (Any = 1)", marks: 3 },
+    { id: "dcg-2022-hl-c2a-r5", kind: "criterion", verbatim: "Draw hyperbolic curves …. (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     { id: "dcg-2022-hl-c2a-r6", kind: "point", verbatim: "Completion of elevation and plan", marks: 5 },
     ],
     questionFigure: {
@@ -4524,7 +4524,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2022-hl-c2b-r1", kind: "point", verbatim: "Draw vertical opening in plan", marks: 4 },
     { id: "dcg-2022-hl-c2b-r2", kind: "point", verbatim: "Determine end points on curve in elevation", marks: 4 },
     { id: "dcg-2022-hl-c2b-r3", kind: "point", verbatim: "Determine additional points in elevation (min 5 including the vertex)", marks: 5 },
-    { id: "dcg-2022-hl-c2b-r4", kind: "point", verbatim: "Draw curve …. (Any = 1)", marks: 3 },
+    { id: "dcg-2022-hl-c2b-r4", kind: "criterion", verbatim: "Draw curve …. (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q2-art",
@@ -4664,7 +4664,7 @@ export const CARDS: SecCard[] = [
     questionText: "The graphic on the right shows a child’s toy train. The toy train has a cam attached to the front axle which causes the smoke stack to rise and fall, through an inline roller follower, as the train moves forward. The cam displacement diagram is shown in Fig C-4(a). Draw the given displacement diagram and determine the cam profile to impart the following motion on a diameter 12mm inline roller follower. 0⁰ to 180⁰ uniform acceleration and retardation rise of 42mm 180⁰ to 360⁰ fall as shown in the displacement diagram. The cam rotates in an anticlockwise direction. The nearest approach of the roller centre to the cam centre is 40mm.",
     tariffModel: {"kind":"fixed","notation":"(35)"}, totalMarks: 35,
     rows: [
-    { id: "dcg-2022-hl-c4a-r1", kind: "criterion", verbatim: "Displacement Diagram and Cam Profile", marks: 35, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,35], parts: [{"id":"step-1","verbatim":"Locate cam displacement at 0⁰, 180⁰, 270⁰ and 360⁰","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Construction to determine U.A.R. (min. 7 incl. end points)","marks":7,"permittedMarks":[0,7]},{"id":"step-3","verbatim":"Draw U.A.R. Curve … (any = 1)","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Draw ‘Fall’ 180⁰ to 270⁰ on displacement diagram","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Draw ‘Fall’ 270⁰ to 360⁰ on displacement diagram","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Establish correct centre of cam profile","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"Draw 30⁰ divisions through cam centre","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Transfer of heights from displacement diagram to cam profile","marks":6,"permittedMarks":[0,6]},{"id":"step-9","verbatim":"Draw rollers on 30⁰ division lines","marks":3,"permittedMarks":[0,3]},{"id":"step-10","verbatim":"Complete cam profile","marks":4,"permittedMarks":[0,4]}] },
+    { id: "dcg-2022-hl-c4a-r1", kind: "criterion", verbatim: "Displacement Diagram and Cam Profile", marks: 35, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,35], parts: [{"id":"step-1","verbatim":"Locate cam displacement at 0⁰, 180⁰, 270⁰ and 360⁰","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Construction to determine U.A.R. (min. 7 incl. end points)","marks":7,"permittedMarks":[0,7]},{"id":"step-3","verbatim":"Draw U.A.R. Curve … (any = 1)","marks":2,"permittedMarks":[0,1,2]},{"id":"step-4","verbatim":"Draw ‘Fall’ 180⁰ to 270⁰ on displacement diagram","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Draw ‘Fall’ 270⁰ to 360⁰ on displacement diagram","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Establish correct centre of cam profile","marks":1,"permittedMarks":[0,1]},{"id":"step-7","verbatim":"Draw 30⁰ divisions through cam centre","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Transfer of heights from displacement diagram to cam profile","marks":6,"permittedMarks":[0,6]},{"id":"step-9","verbatim":"Draw rollers on 30⁰ division lines","marks":3,"permittedMarks":[0,3]},{"id":"step-10","verbatim":"Complete cam profile","marks":4,"permittedMarks":[0,4]}] },
     ],
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q4-art",
@@ -4924,7 +4924,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-hl-a1a-r2", kind: "point", verbatim: "Locate points in the end view", marks: 2 },
     { id: "dcg-2023-hl-a1a-r3", kind: "point", verbatim: "Projection of points from ellipse in plan to the elevation", marks: 2 },
     { id: "dcg-2023-hl-a1a-r4", kind: "point", verbatim: "Locate points on the curve in the elevation", marks: 3 },
-    { id: "dcg-2023-hl-a1a-r5", kind: "point", verbatim: "Draw the curve in elevation ……. (Any = 1)", marks: 2 },
+    { id: "dcg-2023-hl-a1a-r5", kind: "criterion", verbatim: "Draw the curve in elevation ……. (Any = 1)", marks: 2, permittedMarks: [0,1,2] },
     ],
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secA-q1-art",
@@ -4997,7 +4997,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2023-hl-a2b-r1", kind: "point", verbatim: "Location of 3 points below latus rectum", marks: 4 },
     { id: "dcg-2023-hl-a2b-r2", kind: "point", verbatim: "Location of 3 points above latus rectum", marks: 4 },
-    { id: "dcg-2023-hl-a2b-r3", kind: "point", verbatim: "Draw curve …. (any = 1)", marks: 3 },
+    { id: "dcg-2023-hl-a2b-r3", kind: "criterion", verbatim: "Draw curve …. (any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secA-q2-art",
@@ -5262,7 +5262,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric axes X, Y, and Z and the isosceles triangle abc.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2023-hl-b3a-r1", kind: "point", verbatim: "Draw axonometric axes X, Y, and Z orientated as shown (1,1,1)", marks: 3 },
+    { id: "dcg-2023-hl-b3a-r1", kind: "criterion", verbatim: "Draw axonometric axes X, Y, and Z orientated as shown (1,1,1)", marks: 3, permittedMarks: [0,1,2,3] },
     { id: "dcg-2023-hl-b3a-r2", kind: "point", verbatim: "Draw isosceles triangle abc", marks: 5 },
     ],
     questionFigure: {
@@ -5310,7 +5310,7 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the dimetric projection of the pod.",
     tariffModel: {"kind":"fixed","notation":"(34)"}, totalMarks: 34,
     rows: [
-    { id: "dcg-2023-hl-b3c-r1", kind: "criterion", verbatim: "Complete the dimetric projection of the pod", marks: 34, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,34], parts: [{"id":"step-1","verbatim":"Projections from end elevation and plan","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"Determine points on curves in axonometric view","marks":8,"permittedMarks":[0,8]},{"id":"step-3","verbatim":"Draw curves …….(Any = 1)","marks":5,"permittedMarks":[0,5]},{"id":"step-4","verbatim":"Draw the pod floor","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Draw the seat ends","marks":4,"permittedMarks":[0,4]},{"id":"step-6","verbatim":"Draw table support and tabletop end","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"Draw division between glass and solid cover","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Complete table top and seats","marks":5,"permittedMarks":[0,5]}] },
+    { id: "dcg-2023-hl-b3c-r1", kind: "criterion", verbatim: "Complete the dimetric projection of the pod", marks: 34, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,34], parts: [{"id":"step-1","verbatim":"Projections from end elevation and plan","marks":3,"permittedMarks":[0,3]},{"id":"step-2","verbatim":"Determine points on curves in axonometric view","marks":8,"permittedMarks":[0,8]},{"id":"step-3","verbatim":"Draw curves …….(Any = 1)","marks":5,"permittedMarks":[0,1,5]},{"id":"step-4","verbatim":"Draw the pod floor","marks":3,"permittedMarks":[0,3]},{"id":"step-5","verbatim":"Draw the seat ends","marks":4,"permittedMarks":[0,4]},{"id":"step-6","verbatim":"Draw table support and tabletop end","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"Draw division between glass and solid cover","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Complete table top and seats","marks":5,"permittedMarks":[0,5]}] },
     ],
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secB-q3-art",
@@ -5611,7 +5611,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-hl-c3b-r2", kind: "point", verbatim: "Establish generators of the cone in plan", marks: 3 },
     { id: "dcg-2023-hl-c3b-r3", kind: "point", verbatim: "Draw the generators in elevation", marks: 3 },
     { id: "dcg-2023-hl-c3b-r4", kind: "point", verbatim: "Establish points on curve in plan", marks: 8 },
-    { id: "dcg-2023-hl-c3b-r5", kind: "point", verbatim: "Draw the curve in plan …… (Any = 1)", marks: 4 },
+    { id: "dcg-2023-hl-c3b-r5", kind: "criterion", verbatim: "Draw the curve in plan …… (Any = 1)", marks: 4, permittedMarks: [0,1,4] },
     ],
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q3-art",
@@ -5656,7 +5656,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"(6)"}, totalMarks: 6,
     rows: [
     { id: "dcg-2023-hl-c3d-r1", kind: "point", verbatim: "Determine centre point for focal sphere", marks: 3 },
-    { id: "dcg-2023-hl-c3d-r2", kind: "point", verbatim: "Draw the focal sphere …… (Any = 1)", marks: 3 },
+    { id: "dcg-2023-hl-c3d-r2", kind: "criterion", verbatim: "Draw the focal sphere …… (Any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q3-art",
@@ -5681,7 +5681,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-hl-c4a-r2", kind: "point", verbatim: "Draw arc AB for one quarter of a revolution", marks: 4 },
     { id: "dcg-2023-hl-c4a-r3", kind: "point", verbatim: "Establish min of 5 angular division lines (15°) to locate B for each movement", marks: 5 },
     { id: "dcg-2023-hl-c4a-r4", kind: "point", verbatim: "Locate corresponding C for each movement", marks: 8 },
-    { id: "dcg-2023-hl-c4a-r5", kind: "point", verbatim: "Draw required locus (any = 1)", marks: 4 },
+    { id: "dcg-2023-hl-c4a-r5", kind: "criterion", verbatim: "Draw required locus (any = 1)", marks: 4, permittedMarks: [0,1,4] },
     ],
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q4-art",
@@ -5702,7 +5702,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Draw the given plan and elevation of the tower. (ii) Determine the projections of the helical walkway between A and B in elevation. (iii) Determine the position where the helical walkway will reach the top of the tower when extended.",
     tariffModel: {"kind":"fixed","notation":"(31)"}, totalMarks: 31,
     rows: [
-    { id: "dcg-2023-hl-c4b-r1", kind: "criterion", verbatim: "Helical Walkway", marks: 31, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,31], parts: [{"id":"step-1","verbatim":"Draw outline plan and elevation of cylinder","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Locate points A and B in elevation and plan","marks":6,"permittedMarks":[0,6]},{"id":"step-3","verbatim":"30° divisions in plan","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Corresponding division of height between A and B in elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Determine points on helix (min 7, incl. “turning” points) ..... (7×1)","marks":7,"permittedMarks":[0,7]},{"id":"step-6","verbatim":"Draw required helix…. (any = 1)","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"Construction to locate further points above B","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Draw helix extension to locate required point","marks":2,"permittedMarks":[0,2]}] },
+    { id: "dcg-2023-hl-c4b-r1", kind: "criterion", verbatim: "Helical Walkway", marks: 31, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,31], parts: [{"id":"step-1","verbatim":"Draw outline plan and elevation of cylinder","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Locate points A and B in elevation and plan","marks":6,"permittedMarks":[0,6]},{"id":"step-3","verbatim":"30° divisions in plan","marks":2,"permittedMarks":[0,2]},{"id":"step-4","verbatim":"Corresponding division of height between A and B in elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-5","verbatim":"Determine points on helix (min 7, incl. “turning” points) ..... (7×1)","marks":7,"permittedMarks":[0,1,2,3,4,5,6,7]},{"id":"step-6","verbatim":"Draw required helix…. (any = 1)","marks":3,"permittedMarks":[0,1,3]},{"id":"step-7","verbatim":"Construction to locate further points above B","marks":3,"permittedMarks":[0,3]},{"id":"step-8","verbatim":"Draw helix extension to locate required point","marks":2,"permittedMarks":[0,2]}] },
     ],
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q4-art",
@@ -6063,7 +6063,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-hl-b2b-r2", kind: "point", verbatim: "Locate point P", marks: 2 },
     { id: "dcg-2024-hl-b2b-r3", kind: "point", verbatim: "Determine the length of the minor axis of the ellipse", marks: 3 },
     { id: "dcg-2024-hl-b2b-r4", kind: "point", verbatim: "Construction to determine points on ellipse", marks: 8 },
-    { id: "dcg-2024-hl-b2b-r5", kind: "point", verbatim: "Draw elliptical curve ………(any = 1)", marks: 3 },
+    { id: "dcg-2024-hl-b2b-r5", kind: "criterion", verbatim: "Draw elliptical curve ………(any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secB-q2-art",
@@ -6085,7 +6085,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) An elevation in the direction of the arrow. (ii) A plan projected from the elevation. Include all hidden detail.",
     tariffModel: {"kind":"fixed","notation":"(26)"}, totalMarks: 26,
     rows: [
-    { id: "dcg-2024-hl-b2c-r1", kind: "criterion", verbatim: "Draw elevation and plan of salad box", marks: 26, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,26], parts: [{"id":"step-1","verbatim":"Determine the height of the box in elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-2","verbatim":"Draw outline of elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-3","verbatim":"Determine points on elliptical curve in elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-4","verbatim":"Draw elevation curve ……(any = 1)","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Draw outline of the plan","marks":6,"permittedMarks":[0,6]},{"id":"step-6","verbatim":"Draw the elliptical curve on top surface in plan","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"Determine points on elliptical curve on front surface in plan","marks":2,"permittedMarks":[0,2]},{"id":"step-8","verbatim":"Draw curve in plan ……(any = 1)","marks":2,"permittedMarks":[0,2]},{"id":"step-9","verbatim":"Hidden detail","marks":1,"permittedMarks":[0,1]}] },
+    { id: "dcg-2024-hl-b2c-r1", kind: "criterion", verbatim: "Draw elevation and plan of salad box", marks: 26, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,26], parts: [{"id":"step-1","verbatim":"Determine the height of the box in elevation","marks":2,"permittedMarks":[0,2]},{"id":"step-2","verbatim":"Draw outline of elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-3","verbatim":"Determine points on elliptical curve in elevation","marks":4,"permittedMarks":[0,4]},{"id":"step-4","verbatim":"Draw elevation curve ……(any = 1)","marks":2,"permittedMarks":[0,1,2]},{"id":"step-5","verbatim":"Draw outline of the plan","marks":6,"permittedMarks":[0,6]},{"id":"step-6","verbatim":"Draw the elliptical curve on top surface in plan","marks":3,"permittedMarks":[0,3]},{"id":"step-7","verbatim":"Determine points on elliptical curve on front surface in plan","marks":2,"permittedMarks":[0,2]},{"id":"step-8","verbatim":"Draw curve in plan ……(any = 1)","marks":2,"permittedMarks":[0,1,2]},{"id":"step-9","verbatim":"Hidden detail","marks":1,"permittedMarks":[0,1]}] },
     ],
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secB-q2-art",
@@ -6107,7 +6107,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the axonometric axes X, Y, and Z and the scalene triangle abc.",
     tariffModel: {"kind":"fixed","notation":"(8)"}, totalMarks: 8,
     rows: [
-    { id: "dcg-2024-hl-b3a-r1", kind: "point", verbatim: "Draw axonometric axes X and Y orientated as shown (1,1)", marks: 2 },
+    { id: "dcg-2024-hl-b3a-r1", kind: "criterion", verbatim: "Draw axonometric axes X and Y orientated as shown (1,1)", marks: 2, permittedMarks: [0,1,2] },
     { id: "dcg-2024-hl-b3a-r2", kind: "point", verbatim: "Draw scalene triangle abc", marks: 4 },
     { id: "dcg-2024-hl-b3a-r3", kind: "point", verbatim: "Draw Z axis", marks: 2 },
     ],
@@ -6156,7 +6156,7 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the trimetric projection of the puzzle stand.",
     tariffModel: {"kind":"fixed","notation":"(25)"}, totalMarks: 25,
     rows: [
-    { id: "dcg-2024-hl-b3c-r1", kind: "criterion", verbatim: "Complete the trimetric projection of the puzzle stand", marks: 25, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,25], parts: [{"id":"step-1","verbatim":"Projections from end elevation and plan","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Draw axonometric of triangular prism","marks":7,"permittedMarks":[0,7]},{"id":"step-3","verbatim":"Determine points on top circular curve in axonometric view","marks":5,"permittedMarks":[0,5]},{"id":"step-4","verbatim":"Draw top circular curve …….(Any = 1)","marks":2,"permittedMarks":[0,2]},{"id":"step-5","verbatim":"Determine points on curve of intersection with inclined surface","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw curved line of intersection …….(Any = 1)","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"Complete cylindrical holder","marks":2,"permittedMarks":[0,2]}] },
+    { id: "dcg-2024-hl-b3c-r1", kind: "criterion", verbatim: "Complete the trimetric projection of the puzzle stand", marks: 25, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,25], parts: [{"id":"step-1","verbatim":"Projections from end elevation and plan","marks":4,"permittedMarks":[0,4]},{"id":"step-2","verbatim":"Draw axonometric of triangular prism","marks":7,"permittedMarks":[0,7]},{"id":"step-3","verbatim":"Determine points on top circular curve in axonometric view","marks":5,"permittedMarks":[0,5]},{"id":"step-4","verbatim":"Draw top circular curve …….(Any = 1)","marks":2,"permittedMarks":[0,1,2]},{"id":"step-5","verbatim":"Determine points on curve of intersection with inclined surface","marks":3,"permittedMarks":[0,3]},{"id":"step-6","verbatim":"Draw curved line of intersection …….(Any = 1)","marks":2,"permittedMarks":[0,1,2]},{"id":"step-7","verbatim":"Complete cylindrical holder","marks":2,"permittedMarks":[0,2]}] },
     ],
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secB-q3-art",
@@ -6411,7 +6411,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-hl-c2c-r2", kind: "point", verbatim: "Establish points in end view by extending elements", marks: 8 },
     { id: "dcg-2024-hl-c2c-r3", kind: "point", verbatim: "Construction to determine point P", marks: 2 },
     { id: "dcg-2024-hl-c2c-r4", kind: "point", verbatim: "Construction to determine an intermediate point in end view", marks: 3 },
-    { id: "dcg-2024-hl-c2c-r5", kind: "point", verbatim: "Draw required curve AP …….. (any = 1)", marks: 3 },
+    { id: "dcg-2024-hl-c2c-r5", kind: "criterion", verbatim: "Draw required curve AP …….. (any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q2-art",
@@ -6436,7 +6436,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-hl-c2d-r1", kind: "point", verbatim: "Use of line joining B and D in elevation", marks: 2 },
     { id: "dcg-2024-hl-c2d-r2", kind: "point", verbatim: "Projections from intersections with elements in elevation to plan", marks: 3 },
     { id: "dcg-2024-hl-c2d-r3", kind: "point", verbatim: "Establish widths in plan", marks: 4 },
-    { id: "dcg-2024-hl-c2d-r4", kind: "point", verbatim: "Draw required curvature ………(any = 1)", marks: 3 },
+    { id: "dcg-2024-hl-c2d-r4", kind: "criterion", verbatim: "Draw required curvature ………(any = 1)", marks: 3, permittedMarks: [0,1,3] },
     ],
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q2-art",
@@ -6562,7 +6562,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-hl-c4a-r2", kind: "point", verbatim: "Divide the circle C into a number of equal parts (12 min.)", marks: 4 },
     { id: "dcg-2024-hl-c4a-r3", kind: "point", verbatim: "Divide the arc PA into a corresponding equal number of parts", marks: 6 },
     { id: "dcg-2024-hl-c4a-r4", kind: "point", verbatim: "Locate points on the locus as the circle rolls along the arc", marks: 12 },
-    { id: "dcg-2024-hl-c4a-r5", kind: "point", verbatim: "Draw required epicycloid ……(any = 1)", marks: 4 },
+    { id: "dcg-2024-hl-c4a-r5", kind: "criterion", verbatim: "Draw required epicycloid ……(any = 1)", marks: 4, permittedMarks: [0,1,4] },
     ],
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q4-art",
@@ -6588,7 +6588,7 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-hl-c4b-r3", kind: "point", verbatim: "Stepping of radius vector length to determine point C", marks: 4 },
     { id: "dcg-2024-hl-c4b-r4", kind: "point", verbatim: "Establish 12 equal divisions (30° divisions)", marks: 4 },
     { id: "dcg-2024-hl-c4b-r5", kind: "point", verbatim: "Establish corresponding intermediate radii on angular divisions", marks: 8 },
-    { id: "dcg-2024-hl-c4b-r6", kind: "point", verbatim: "Draw required Archimedean spiral …… (any = 1)", marks: 4 },
+    { id: "dcg-2024-hl-c4b-r6", kind: "criterion", verbatim: "Draw required Archimedean spiral …… (any = 1)", marks: 4, permittedMarks: [0,1,4] },
     ],
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q4-art",
@@ -6610,7 +6610,7 @@ export const CARDS: SecCard[] = [
     questionText: "The 3D graphic on the right shows a clothes line winch. The details of the winch are given in Fig. C-5 below. The parts list is also given in a table. Draw a sectional elevation on A-A, showing the parts fully assembled, with the handle in the vertical position as shown. (Note: Any omitted dimensions may be estimated.)",
     tariffModel: {"kind":"fixed","notation":"(60)"}, totalMarks: 60,
     rows: [
-    { id: "dcg-2024-hl-c5-r1", kind: "criterion", verbatim: "Sectional elevation", marks: 60, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,60], parts: [{"id":"step-1","verbatim":"Relative positioning of main components","marks":6,"permittedMarks":[0,6]},{"id":"step-2","verbatim":"Complete outline of main body","marks":8,"permittedMarks":[0,8]},{"id":"step-3","verbatim":"Inner detail of the main body","marks":4,"permittedMarks":[0,4]},{"id":"step-4","verbatim":"Outline of the pulley","marks":6,"permittedMarks":[0,6]},{"id":"step-5","verbatim":"Inner detail of the pulley","marks":6,"permittedMarks":[0,6]},{"id":"step-6","verbatim":"Outline of two washers on axle (1,1)","marks":2,"permittedMarks":[0,2]},{"id":"step-7","verbatim":"Required detail of the axle bolt","marks":4,"permittedMarks":[0,4]},{"id":"step-8","verbatim":"Outline of the pin in axle","marks":2,"permittedMarks":[0,2]},{"id":"step-9","verbatim":"Outline of vertical arm of handle","marks":4,"permittedMarks":[0,4]},{"id":"step-10","verbatim":"Inner detail","marks":2,"permittedMarks":[0,2]},{"id":"step-11","verbatim":"Horizontal handle","marks":2,"permittedMarks":[0,2]},{"id":"step-12","verbatim":"Representation of the pawl","marks":3,"permittedMarks":[0,3]},{"id":"step-13","verbatim":"Representation of the set screw in axle","marks":2,"permittedMarks":[0,2]},{"id":"step-14","verbatim":"Representation of the set screw in pawl","marks":2,"permittedMarks":[0,2]},{"id":"step-15","verbatim":"Representation of the nut","marks":1,"permittedMarks":[0,1]},{"id":"step-16","verbatim":"Presentation, hatching and centrelines","marks":6,"permittedMarks":[0,6]}] },
+    { id: "dcg-2024-hl-c5-r1", kind: "criterion", verbatim: "Sectional elevation", marks: 60, contextNote: "The scheme prices this drawing step by step: award each step you drew its own marks.", permittedMarks: [0,60], parts: [{"id":"step-1","verbatim":"Relative positioning of main components","marks":6,"permittedMarks":[0,6]},{"id":"step-2","verbatim":"Complete outline of main body","marks":8,"permittedMarks":[0,8]},{"id":"step-3","verbatim":"Inner detail of the main body","marks":4,"permittedMarks":[0,4]},{"id":"step-4","verbatim":"Outline of the pulley","marks":6,"permittedMarks":[0,6]},{"id":"step-5","verbatim":"Inner detail of the pulley","marks":6,"permittedMarks":[0,6]},{"id":"step-6","verbatim":"Outline of two washers on axle (1,1)","marks":2,"permittedMarks":[0,1,2]},{"id":"step-7","verbatim":"Required detail of the axle bolt","marks":4,"permittedMarks":[0,4]},{"id":"step-8","verbatim":"Outline of the pin in axle","marks":2,"permittedMarks":[0,2]},{"id":"step-9","verbatim":"Outline of vertical arm of handle","marks":4,"permittedMarks":[0,4]},{"id":"step-10","verbatim":"Inner detail","marks":2,"permittedMarks":[0,2]},{"id":"step-11","verbatim":"Horizontal handle","marks":2,"permittedMarks":[0,2]},{"id":"step-12","verbatim":"Representation of the pawl","marks":3,"permittedMarks":[0,3]},{"id":"step-13","verbatim":"Representation of the set screw in axle","marks":2,"permittedMarks":[0,2]},{"id":"step-14","verbatim":"Representation of the set screw in pawl","marks":2,"permittedMarks":[0,2]},{"id":"step-15","verbatim":"Representation of the nut","marks":1,"permittedMarks":[0,1]},{"id":"step-16","verbatim":"Presentation, hatching and centrelines","marks":6,"permittedMarks":[0,6]}] },
     ],
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q5-art",
