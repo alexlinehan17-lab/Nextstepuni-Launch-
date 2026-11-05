@@ -34,11 +34,12 @@ const OPENER = new RegExp(String.raw`\(\s*${MARC}\s*\)|\{\s*${MARC}(?::\s*((?:\d
 /** A priced phrase: "X = 13 mharc", "X = 4 mharc + 4 mharc", "Pointe eolais 1 = Plé … = 5 mharc". */
 const PRICED = new RegExp(String.raw`([^•¶\n]{2,400}?)\s*=\s*${MARC}${SUM}(?!\s*(?:ar|an|ceann)\b)`, 'g');
 const SAMPLES = /\b(?:Freagraí samplacha|Pointí eolais féideartha|(?<!\bas\s)Samplaí|Freagra samplach|Sampla cruinn:)\s*:?\s*/i;
-/** Where a sample list ends because a split-priced phrase follows it: "Samplaí: Brón, … bród… Dhá shampla = 4 mharc + 4 mharc".
+/** Where a sample list ends because a split-priced phrase follows it: "Samplaí: Brón, … bród… Dhá shampla = 4 mharc + 4 mharc", or a
+ *  numbered point's price: "Samplaí : Doicheall, … teannas… Pointe eolais 1 = 3 mharc" (2015 Higher 4F(iii)).
  *  Only a split ("a + b"), and never a verse reference, which stays inside its sample list whatever its price ("… gheal…
  *  Véarsa a haon, Línte 3 + 4 = 2 mharc", 2018 Ordinary 3A(a)(i); "… maidí rámha… Véarsa a ceathair, Línte 1 - 7 = 2 mharc +
  *  2 mharc", 2017 Ordinary 3A(b)(i)(c)). */
-const SAMPLES_RESUME = /…\s+(?=(?!Véarsa\b)[A-ZÁÉÍÓÚ][^•¶=…]{0,60}=\s*\d+\s*m?h?arc\s*\+\s*\d+\s*m?h?arc\b)/;
+const SAMPLES_RESUME = /…\s+(?=(?!Véarsa\b)[A-ZÁÉÍÓÚ][^•¶=…]{0,60}=\s*\d+\s*m?h?arc\s*\+\s*\d+\s*m?h?arc\b|Pointe eolais \d+\s*=\s*\d+\s*m?h?arc\b)/;
 /** "Cén uair a bhíonn an spailpín … i véarsa a haon? 2 mharc Freagraí Samplacha: Go moch ar maidin = 2 mharc … Go moch = 1 mharc"
  *  (2016 Ordinary 3A(b)(i)): a question's bare price, then its answers each at its own price under the heading: an answer key
  *  of alternatives, which the answer reader cuts (cards/irish/answers.ts). The heading is not an answer's text. */
@@ -54,6 +55,12 @@ const MARK_AS = /(?:^|\bagus\s+|[.;:]\s+|-(?=an\s))((?:an|na)\s[^.;:]*?)\s+a mha
 const LADDER = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann ar an g?c?[ée]ad\s+(\S+)\s+phointe eolais(?:\s*\+\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais eile)?\.?\s*\)/i;
 const NOTE = /(?<=^|\s|\()(?:Nóta:|Ní mór(?=\s)|Is leor(?=\s)|Caithfidh(?=\s)|Bainfear(?=\s)|Gearrfar(?=\s)|Glacfar(?=\s)|Tabharfar(?=\s)|Mura mbíonn(?=\s)|Cuir lúibíní(?=\s)|Dá bharr sin(?=\s)|Gan tréith(?=\s)|Tá [^\s]+ mharc ag gabháil(?=\s)|Sampla cruinn gan(?=\s)|Is samplaí de fhreagraí(?=\s)|Léirigh na marcanna(?=\s)|Ag bun(?=\s))[^•{}¶]*?(?:[.?!](?=\s|\)|$)|(?=\s\(?(?:i|ii|iii|iv|v)\)\s|\sNóta:|\sTreoir:|\s•|\s¶|\s\(\d+\s*m?h?arc\)|\s\{\d|$))/g;
 const DEDUCTION = /\[Gaeilge lochtach:[^\]]*\]/g;
+/** 2015 Higher 6(b) prices each part with an arrow: "Tuairim (2) ► 2 mharc", "Cúis 1 (2 mharc) + Sampla 1 (3 mharc) ► 5 mharc".
+ *  Each named piece is a row at its bracketed price, where the pieces add up to the arrow's. */
+const ARROW = /([A-ZÁÉÍÓÚ][^\s•¶=►(){}.:;?!]*(?:\s[^\s•¶=►(){}.:;?!]+){0,3}?)\s*\((\d+)(?:\s*(m?h?arc))?\)(?:\s*\+\s*([A-ZÁÉÍÓÚ][^\s•¶=►(){}.:;?!]*(?:\s[^\s•¶=►(){}.:;?!]+){0,3}?)\s*\((\d+)\s*(m?h?arc)\))?\s*►\s*(\d+)\s*(m?h?arc)\b/g;
+/** The examiner's box printed after each of those prices ("T =", "C (1) + S (1) =", "C(2) =", "T1 (2) + S1 (3) ="): the marking
+ *  panel, never the scheme's text. Read only where the arrows are. */
+const ARROW_BOX = /(?<=\bm?h?arc)\s+[A-Z]\d?\s*(?:\(\s*\d+\s*\))?(?:\s*\+\s*[A-Z]\d?\s*\(\s*\d+\s*\))*\s*=(?=\s|$)/g;
 /** "Línte cuí ón dán gan rian an iarrthóra orthu = 2 mharc + 2 mharc" printed straight after a price, with no "Nóta:" before it
  *  (2017 Ordinary 3A(b)(iii)): what lines lifted without the candidate's own words earn instead, a direction as its "Nóta:"
  *  form is, never a row. */
@@ -109,6 +116,13 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   }
   const directions: string[] = [];
   let text = source.guidance.filter((line, index) => index === 0 || !SECTION_SUMMARY.test(line.trim())).join(' ').replace(/[\uf0a7\uf0b7\u25aa\u2022]/g, ' • ').replace(/\s+/g, ' ').trim();
+  if (text.includes('►')) {
+    text = text.replace(ARROW, (whole: string, first: string, a: string, unitA: string | undefined, second: string | undefined, b: string | undefined,
+      unitB: string | undefined, total: string, unit: string) => {
+      if (Number(a) + Number(b ?? 0) !== Number(total)) return whole;
+      return second ? `${first} = ${a} ${unitA ?? unit} ${second} = ${b} ${unitB}` : `${first} = ${total} ${unit}`;
+    }).replace(ARROW_BOX, ' ');
+  }
   text = text.replace(DEDUCTION, rule => { directions.push(tidy(rule)); return ' ¶ '; });
   text = text.replace(GAEILGE_TABLE, ' ¶ ');
   text = text.replace(BAND_HEADER, ' ¶ ');
@@ -413,11 +427,12 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   // A criterion whose only printed price is its band table's header (2018 Higher Ceist 4A–E and 2B print no "Eolas = 35 marc"
   // of their own; "Catagóir Eolas (35 marc) Gaeilge (5 mharc)" prices them): one judgement over the criterion, its own words
   // the row, as a sub-question priced whole with nothing under it. Only where nothing else priced it.
-  // 2017 prints no band table for Ceist 4A–E either: its Ceist 4 Treoracha price them ("an t-eolas a mharcáil as 35 marc").
-  const treoirPrice = /an t-eolas a mharcáil as (\d+) marc/.exec(source.guidance.join(' '));
+  // 2017 prints no band table for Ceist 4A–E either: its Ceist 4 Treoracha price them ("an t-eolas a mharcáil as 35 marc"). 2015
+  // prints nothing else for 2A and 2B but the examiner's closing note ("Ní mór don Scrúdaitheoir an marc ar eolas as 25 marc …").
+  const treoirPrice = /an t-eolas a mharcáil as (\d+) marc|an marc ar eolas as (\d+) marc/.exec(source.guidance.join(' '));
   if (parts.length === 0 && !loose.length && loosePrompt
     && (bands.some(band => Number(/^Catagóir\s+Eolas\s*\((\d+)\s*m?h?arc\)/.exec(band)?.[1]) === source.totalMarks)
-      || Number(treoirPrice?.[1]) === source.totalMarks)) {
+      || Number(treoirPrice?.[1] ?? treoirPrice?.[2]) === source.totalMarks)) {
     parts.push({ prompt: loosePrompt, tariff: source.totalMarks, rows: [], samples: [] });
   }
   if (parts.length === 0) return { ok: false, reason: 'no priced sub-question' };
