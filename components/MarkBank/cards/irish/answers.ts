@@ -65,8 +65,9 @@ const NOTE = /\(([^()]*=\s*(?:\d+\s*m?h?arc|0(?=\s*\)))[^()]*)\)/g;
  *  it, "Fáth amháin atá ceart = 3 mharc; an dara fáth atá ceart = 2 mharc". */
 const RULE = /^(?:(?:an\s+)?(?:chéad|dara|tríú|ceathrú)\s.*\s|[A-ZÁÉÍÓÚa-záéíóú]+ amháin atá\s)(?:ceart|cheart)$/i;
 /** "Aon dá cheann de na rudaí ón liosta thíos = 3 mharc + 2 mharc", "2 cheann ón liosta = 3 mharc + 2 mharc" (2017 Ordinary
- *  Reading A 2(a), A 5(b), B 5(b)): how the list after it is priced, a rule, never an answer. */
-const LIST_RULE = /^(?:Aon\s+)?(?:dá|dhá|\d+)\s+cheann\b[^•=]*\bliosta\b/i;
+ *  Reading A 2(a), A 5(b), B 5(b)), "Dhá phíosa eolais ag teastáil = 3 mharc + 2 mharc" (2014 Ordinary Reading A 3(b)): how the
+ *  list after it is priced, a rule, never an answer. */
+const LIST_RULE = /^(?:Aon\s+)?(?:dá|dhá|\d+)\s+cheann\b[^•=]*\bliosta\b|^Dhá (?:phointe|phíosa) eolais ag teastáil$/i;
 /** "2 phointe ag teastáil = 3 mharc + 2 mharc", "Dhá chúis = 3 mharc + 2 mharc" (2015 Ordinary Reading A 3(a), A 5(a)): how many
  *  points the part wants and how they are priced, a rule as LIST_RULE's line is, never an answer. */
 const COUNT_RULE = /^(?:dá|dhá|\d+)\s+(?:phointe(?:\s+ag teastáil)?|chúis)$/i;
@@ -78,7 +79,7 @@ const AWARD_RULE = /(?<=^|\s)(?:(?:Gan ach|Ceann amháin)\s[^•=]*?,\s*bronn\s+
 /** "Dhá phointe eolais as an liosta seo = 3 mharc + 2 mharc = 5 mharc", "Na pointí seo a leanas:" (2016 Ordinary): the scheme's
  *  heading over a list of accepted points, not one of them. So are "Dhá cheann as na critéir seo a leanas:", "Rud amháin as na
  *  rudaí seo a leanas:" and "An dá phointe eolais seo:" (2015 Higher A 3(a), A 3(b)(i), B 2(a)). */
-const DIRECTION = /^(?:Bainfear\b|Glacfar\b|Ní mór\b|Gearrfar\b|Tabharfar\b|Tá .* mharc ag gabháil\b|Dhá (?:phointe|phíosa) eolais as an liosta seo\b|Na pointí seo a leanas\b|[^•=]{1,60}\bseo a leanas:$|An dá phointe eolais seo:$|Dhá rud as na rudaí seo a leanas\b|Dhá phíosa eolais as na pointí seo a leanas\b)/i;
+const DIRECTION = /^(?:Bainfear\b|Glacfar\b|Ní mór\b|Gearrfar\b|Tabharfar\b|Tá .* mharc ag gabháil\b|Dhá (?:phointe|phíosa) eolais as an liosta seo\b|Na pointí seo a leanas\b|[^•=]{1,60}\bseo a leanas:$|An dá phointe eolais seo:$|Dhá rud as na rudaí seo a leanas\b|Dhá phíosa eolais as na pointí seo a leanas\b|Dhá phíosa eolais$|Rud amháin as na rudaí seo a leanas\b)/i;
 /** Where the lifted excerpt runs on into the scheme's next section. */
 const FURNITURE = /^(?:Eolas\s*\(|Iomlán|Móriomlán|Cuid [ABC]\b|I gcás\b|\d+ Roinn\b|An Tasc\b|An tÁbhar\b|Marcanna\b|An Mharcáil\b)/i;
 const PROMPT = /^(?:An (?:Chéad|Dara|Tríú) Mhír\s*)?(?:\d+\.\s|\(?[a-z]\)\s|\((?:i|ii|iii|iv)\)\s)/i;
@@ -181,6 +182,21 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   // Higher Fógra a hAon 1(b)): the question's tariff, printed in the margin beside its first answer, is read after that answer.
   text = text.replace(/\?\s+([^•=?]{1,80}?=\s*\d+\s*m?h?arc\b)\s+(\d+\s*m?h?arc\b)(?!\s*[+=])/g, (_, answer: string, tariff: string) => `? ${tariff} ${answer}`);
   text = text.replace(BRACKETED_ANSWER, (_, price: string, answer: string, own: string) => `${price} ${answer.trim()} ${own}`);
+  // "Cén t-ainm a bheidh ar an gclár speisialta …? Sacar an Lae = 3 mharc 3 mharc" (2014 Ordinary Fógra a Dó 1(b)): the question
+  // fills its printed line, so its tariff sits at the right of the answer's line, after the answer's own price. A bare tariff
+  // printed straight after an answer's price and ending that answer is the question's: it is read before the answer.
+  text = text.replace(/(\?)\s+([^?•=]{1,120}?=\s*\d+\s*m?h?arc\b)\s+(\d+\s*m?h?arc\b)(?=\s*$)/, '$1 $3 $2');
+  // "061 92917 3 mharc 061 (1 mharc) + 92917 (2 mharc)" (2014 Ordinary Fógra a hAon, the grid's fourth row): under an answer, its
+  // parts at their own prices, adding up to the answer's. Each part is one more answer at its price.
+  text = text.replace(/(\d+)\s*(m?h?arc\b)\s+([^()•=+?]{1,40}?)\s*\((\d+)\s*m?h?arc\)\s*\+\s*([^()•=+?]{1,40}?)\s*\((\d+)\s*m?h?arc\)(?=\s*$)/,
+    (whole: string, price: string, unit: string, first: string, firstPrice: string, second: string, secondPrice: string) =>
+      (Number(firstPrice) + Number(secondPrice) === Number(price)
+        ? `${price} ${unit} • ${first.trim()} = ${firstPrice} mharc • ${second.trim()} = ${secondPrice} mharc` : whole));
+  // "Dhá ábhar = 3 mharc + 2 mharc An chéad ábhar atá cruinn = 3 mharc; an dara hábhar = 2 mharc", "An chéad scoil atá cruinn =
+  // 3 mharc; an dara scoil luaite agus cruinn = 2 mharc" (2014 Ordinary Reading A 3(a), A 2(b)): how a two-point answer is priced,
+  // over answers that each give both points at the part's tariff. A direction, as the 2016 sentence form of the ladder is.
+  text = text.replace(/(?:\bDhá\s[^=•;]{1,30}?=\s*3\s*mharc\s*\+\s*2\s*mharc\s+)?\bAn chéad\s[^=•;]{1,40}?\satá cruinn\s*=\s*3\s*mharc;\s*an dara\s[^=•;]{1,40}?=\s*2\s*mharc\b/g,
+    rule => { directions.push(tidy(rule)); return ' '; });
   // A refused answer the scheme prints at a bare 0 ("Deireadh Fómhair = 0"; the grid's "T-léine 3 mharc Léine 0", 2016 Ordinary):
   // an answer at 0 marks, as "= 0 marc (gá le cáiliú)" is.
   text = text.replace(/=\s*0(?=\s*(?:•|$))/g, '= 0 marc').replace(/(\d\s*m?h?arc\s+[^•=?\d]{1,40}?)\s+0(?=\s*(?:•|$))/g, '$1 0 marc');
@@ -327,6 +343,14 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
       // "2 mharc 1 mharc + 1 mharc" (2015 Higher Comhrá a Dó 2) divides it into equal halves, which the answers' own prices carry.
       if (!lead && current && !current.ladder && current.rows.length === 0 && terms[0] + terms[1] === current.tariff) {
         if (terms[0] !== terms[1]) current.ladder = cumulative(terms);
+        continue;
+      }
+      // "Dhá scil as na cinn seo a leanas: 3 mharc + 2 mharc" (2014 Ordinary Reading B 4(a)): the heading over the list of accepted
+      // points, its price the open part's ladder; the points listed after it are claimed by count.
+      if (lead && /^Dhá\s[^•=:]{1,30}\bas na cinn seo a leanas:?$/i.test(lead) && current && !current.ladder && current.rows.length === 0
+        && terms[0] + terms[1] === current.tariff) {
+        directions.push(lead);
+        current.ladder = cumulative(terms);
         continue;
       }
       if (lead && !PROMPT.test(lead) && !/[?.]$/.test(lead) && current) {
