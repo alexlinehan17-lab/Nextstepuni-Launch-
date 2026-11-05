@@ -148,7 +148,7 @@ const CLOSING_PRICE = /(?<=[•}][^•={}]*?)(?<!\(\s*\d+\s*m?h?arc\s*\)[^•={}
  *  brace "{3 mharc: 2 mharc + 1 mharc}" where the split adds up to the tariff. */
 /** "{2 mharc} (pointe amháin)", "{3 mharc, 2 mharc +1 mharc } ( Iolra atá i gceist = 2 phointe)" (2013 Higher Léamhthuiscint A
  *  3(b)(ii), 5(a)): what the part asks for, printed after its tariff instead of before it ("(Alt 1) (pointe amháin) {2mharc}",
- *  A 1(b)(i)). It is read before the tariff, with the sub-question it qualifies. */
+ *  A 1(b)(i)). It is a direction: the sub-question's prompt stays the printed line it ends ("… (Alt 3)"). */
 const BRACE_NOTE = /(\{[^{}]*\})\s*(\(\s*(?:[Pp]ointe amháin|Iolra atá i gceist\s*=\s*\d+\s*phointe)\s*\))/g;
 /** "• gan Twitter a úsáid. (2 mharc+1 mharc)" (2013 Higher Léamhthuiscint A 1(a)): the part's split said again in brackets after
  *  its last answer. The brackets go; the split is read as the bare sum it restates. */
@@ -182,7 +182,7 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     `• ${first.trim()} = ${firstPrice} mharc • ${second.trim()} = ${secondPrice} mharc`);
   text = text.replace(DEFICIENT_PRICE, (_, price: string) => `: (easnamhach) = ${price} mharc`);
   text = text.replace(CLOSING_PRICE, (_, price: string) => ` = ${price} mharc`);
-  text = text.replace(BRACE_NOTE, '$2 $1');
+  text = text.replace(BRACE_NOTE, (_, brace: string, note: string) => { directions.push(tidy(note)); return brace; });
   text = text.replace(BRACKETED_SPLIT, ' $1 ');
   text = text.replace(BRACKETED_TARIFF, (whole: string, total: string, unit: string, split: string) =>
     ([...split.matchAll(/\d+/g)].reduce((sum, m) => sum + Number(m[0]), 0) === Number(total) ? `{${total} ${unit}: ${split}}` : whole));
