@@ -1,6 +1,6 @@
 {
  "v": 1,
- "cardCount": 740,
+ "cardCount": 759,
  "cards": [
   {
    "id": "re-2026-hl-a-1-a",
@@ -108635,6 +108635,2392 @@
      27
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-a-1-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2010 HL Section A Q1(a)",
+   "topicId": "re-a",
+   "conceptId": "aristotle-alive-today-came-speak-school",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Imagine that Aristotle was alive today and came to speak in your school about his ideas. Based on your knowledge of the philosophical thinking of Aristotle outline two ideas that you think he might talk about.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the philosophical thought of ancient Greece by setting out accurate information on two of the main philosophical ideas of Aristotle.",
+    "points": [
+     "Aristotle’s idea of form and matter recognised both the essence of something (what makes something unique e.g. ‘treeness’) and its outward appearance (the physical characteristics it exhibits e.g. ‘oak tree’) etc.",
+     "Aristotle's teaching on the soul was that every living thing possesses a psyche (soul). The person’s soul enables him/her to reach his/her true potential, which for Aristotle, is happiness etc.",
+     "Aristotle’s theory of causation explains a substance in terms of its matter (material cause), its form or essence (formal cause), its parentage (efficient cause), and its purpose (final cause) etc.",
+     "Aristotle’s idea that people have two ways of knowing – through the senses initially and then through the intellect etc.",
+     "Aristotle's teachings on ethics - Virtue is defined as excellence in fulfilling one's proper task or purpose. A person becomes virtuous by doing virtuous things. The chief moral concern for Aristotle, therefore, was living a virtuous life etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20M x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-a-1-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2010 HL Section A Q1(b)",
+   "topicId": "re-a",
+   "conceptId": "investigate-aristotle-philosophical-ideas-shows-keen",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Investigate how any one of Aristotle’s philosophical ideas shows a keen reflection on the world as he experienced it.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the philosophical thought of ancient Greece by accurately examining and drawing conclusions about the way in which any one of Aristotle’s philosophical ideas shows a sharp insight into the world as Aristotle experienced it.",
+    "points": [
+     "Aristotle’s desire to know the ultimate cause and nature of reality shows that Aristotle reflected on the world as he experienced it etc.",
+     "Aristotle’s idea regarding the relationship between the intellect and the senses shows that he reflected keenly on Plato’s theory of ideas and related these to his own experience of the world etc.",
+     "Aristotle’s systematic analysis of the nature of causation shows a keen reflection on the change and permanence he saw in the world around him since he saw four categories of causation: material, formal, efficient and final etc.",
+     "Aristotle’s ideas about potency and act show a keen reflection on the world around him because these ideas answer questions about why and how the world and people came to be etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     5
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-a-2-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2010 HL Section A Q2(a)(i)",
+   "topicId": "re-a",
+   "conceptId": "other-examples-questions-search-meaning-life",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Describe two other examples of how questions about the search for the meaning of life can be seen in today’s culture.",
+   "stem": "“What’s wrong with the world …?” – Black Eyed Peas This line from a song is an example of a person searching for meaning and value in the world.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the search for meaning and values in contemporary contexts by giving an accurate account of two other examples of how questions about the search for the meaning of life can be seen in contemporary culture.",
+    "points": [
+     "Another example of how questions about the search for the meaning of life can be seen in today’s culture comes from the same song. The title asks, “Where is the love?” This shows that the songwriter is questioning whether there is love in the world and whether people can “practise what [they] preach” etc.",
+     "The religious practice of people can show that people ask questions about the meaning of life e.g. Christianity - baptism answers questions about the existence of God, good and evil etc.",
+     "Questions about the search for the meaning of life can be seen in film e.g. The Breakfast Club, The Truman Show or Dead Poets’ Society show people questioning which values are important and what choices will make life meaningful etc.",
+     "Questions about the search for meaning in life can be seen in Art. e.g. questions about the experience of suffering can be seen in Picasso’s Guernica – a painting that raises questions about the horror and suffering of war etc.",
+     "Questions about the meaning of good and evil can be seen in literature e.g. Sophie’s World by J. Gaarder; Patrick Kavanagh’s The Great Hunger; Man’s Search for Meaning by Viktor E. Frankl; An Evil Cradling by Brian Keenan; Audacity To Believe by Sheila Cassidy etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10M x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers where the candidate gives an accurate account of how questions about the search for the meaning of life can be seen generally in contemporary or classical art, literature, music, or youth culture."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     6
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-a-2-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2010 HL Section A Q2(a)(ii)",
+   "topicId": "re-a",
+   "conceptId": "factors-block-person-searching-meaning-life",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline two factors that could block a person from searching for the meaning of life in society today.",
+   "stem": "“What’s wrong with the world …?” – Black Eyed Peas This line from a song is an example of a person searching for meaning and value in the world.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of factors which block the search for meaning and values in contemporary contexts by setting out accurate information on two factors in society today that could block a person from searching for the meaning of life.",
+    "points": [
+     "Basic human need for survival e.g. need for food etc. not being met could preoccupy the person’s attention etc.",
+     "Consumerist reasoning e.g. where success is measured in material or monetary terms leaves little room for the relational, spiritual or ethical dimensions to human happiness etc.",
+     "Fast pace of life may not allow time for critical reflection etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10M x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     7
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-a-2-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2010 HL Section A Q2(b)",
+   "topicId": "re-a",
+   "conceptId": "religious-behaviour-seen-rite-associated-ancient",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Examine how religious behaviour can be seen in one rite associated with an ancient society that you have studied.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an awareness that from earliest times, human beings expressed their response to the quest for meaning in a variety of spiritualities, symbolic languages and meaning systems by looking closely at the way in which religious belief is evident in one rite or type of rite associated with an ancient society.",
+    "points": [
+     "Religious behaviour can be seen in rites associated with an ancient society through the use of -",
+     "Objects or articles that symbolically referred to the divine etc.",
+     "Actions or gestures that may have been a response to or a calling on the divine etc. o e.g. Burial rites e.g. Newgrange, Knowth and Dowth - passage graves reveal evidence of religious and spiritual behaviour in ancient Ireland etc.",
+     "Religious behaviour can be seen in a rite associated with an ancient society in the way that a rite may express ideas about -",
+     "The nature and power of the transcendent / God / Gods etc.",
+     "Another reality or existence such as an afterlife etc. o e.g. The native American vision quest etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [
+     "Note: • Allow descriptive answers. • Where a candidate looks closely at the way in which religious belief is evident in one rite or type of rite not associated with an ancient society – Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     8
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-b-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2010 HL Section B Q(a)(i)",
+   "topicId": "re-b",
+   "conceptId": "ways-jewish-religious-authorities-time-jesus",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline two ways in which the Jewish religious authorities at the time of Jesus were threatened by his teaching.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the religious context in Palestine at the time of Jesus by setting out accurate information on two ways in which the Jewish religious authorities were threatened by Jesus’ teaching.",
+    "points": [
+     "The Jewish religious authorities may have been threatened by Jesus because of his attitude towards Sabbath laws and customs. He challenged the place the Law had assumed, where external conformity had led to people being forgotten etc.",
+     "The Jewish authorities despised sinners. When Jesus deliberately welcomed sinners his teaching was seen as a threat to the authority of the religious leaders etc.",
+     "The Pharisees accuse Jesus of blasphemy because he forgives the paralysed man’s sins. The Pharisees condemned the sinner and saw his illness as just punishment for wrongdoing etc.",
+     "Jesus used parables to teach people that the Kingdom of God was actually drawing near right now. In the parable of the Good Samaritan, Jesus told his audience that a priest and a Levite ignored a stricken traveller. Jesus’ teaching through the parables could be perceived as an attack on the character of the Jewish authorities etc.",
+     "In Matthew 6:1-18, Jesus spoke of the three pillars of Jewish morality - giving alms, praying and fasting. He said these things should be done in secret, not so that they may be seen and praised by others, as is the case with the hypocrites. The Jewish religious authorities may have believed this to be an insult directed at them etc.",
+     "The Jewish religious authorities were threatened because the title ‘Messiah’ was used in reference to Jesus etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10M x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     9
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-b-a-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2010 HL Section B Q(a)(ii)",
+   "topicId": "re-b",
+   "conceptId": "reasons-roman-political-authorities-palestine-threatened",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Explain two reasons why the Roman political authorities in Palestine were threatened by the teaching of Jesus.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the religious context in Palestine at the time of Jesus by giving an account of two accurate reasons why the Roman political authorities in Palestine were threatened by Jesus’ teaching.",
+    "points": [
+     "The Romans would have been threatened by hearing Jesus teaching about the Kingdom of God and Jesus being described as a saviour or Messiah. They would have looked on Jesus as a possible political liberator attempting to set up a new kingdom etc.",
+     "Wealth, power and glory were the measure of the Roman individual. Jesus taught detachment from wealth and possessions and that power lay in the service of others. Jesus challenged those in power and the nature of power itself. The official Roman charge against Jesus was that of leading a revolt against the state etc.",
+     "Jesus’ teaching threatened the Roman authorities in Palestine indirectly. Pilate’s position may have been threatened if he had failed to execute someone whom the Sanhedrin claimed was a threat to Roman rule in Palestine etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10M x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     10
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-b-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2010 HL Section B Q(b)",
+   "topicId": "re-b",
+   "conceptId": "corinth-philippi-thessalonica-problems-faced-early",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "● CORINTH ● PHILIPPI ● THESSALONICA Examine the problems faced by the early Christians in one of the above places when the Christian community was becoming established there.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show a familiarity with the characteristics of one of the first Christian Communities by looking closely at the problems faced by one of the Christian communities listed in the question as it was becoming established.",
+    "points": [
+     "They welcomed other visions of Christianity and competed with one another for spiritual prestige. People gave more importance to some gifts of the Spirit at the expense of others (1Cor 12-13) etc.",
+     "The unity of the community was being threatened by actions and attitudes they didn’t seem to even notice such as sexual immorality, disorderly gatherings and idols etc. Some people in the community had difficulty in adapting to Christian sexual morality (1Cor 5:1); there was disagreement as to whether they were free to eat the meat offered to idols (1Cor 8:1) etc.",
+     "Paul’s second letter to the Corinthians refers to opposition to Paul from Jewish Christians who attacked his apostolic authority (2Cor 11:3). The community in Corinth, which had to decide between Paul and his rivals, tended to adopt the criteria by which their pagan contemporaries judged religious figures e.g. eloquence, power to work miracles etc.",
+     "There were serious divisions in the community. The people of the community came from different backgrounds and different factions began to emerge (1Cor 3:3). There were disputes (1Cor 6:1) etc.",
+     "A lack of leadership within the community led to disorder (1Cor 14:26). Issues of leadership and authority were important as they tried to create a structure for the community that could deal with factions as well as questions and queries about the Resurrection etc.",
+     "The community was faced with considerable antagonism from their fellow citizens etc.",
+     "There were internal divisions and arguments within the community (Phil 4:2) etc.",
+     "There was disagreement as to whether they should follow Jewish traditions or rituals (Phil 3:3) etc.",
+     "Different teachers visited the community and people became confused (Phil 1:12) etc. Thessalonica -",
+     "The community was living in a hostile environment. Many non-Christians were hostile and made life difficult for the community (1Thess 1:6) etc.",
+     "They lacked hope in the face of the painful experience of the death of some of their members. There was some misunderstanding of the faith among the community particularly about the fate of those who had died (1Thess 4:13) etc.",
+     "The idleness of some in the community was bringing hardship to others. Some in the community expected the Parousia/second coming to be imminent and therefore they questioned the need to work or plan for the future (1Thess 4-5) etc.",
+     "Some people in the community had difficulty in adapting to Christian values (1Thess 4:3) etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     11,
+     12
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-c-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "C",
+   "questionRef": "2010 HL Section C Q(a)",
+   "topicId": "re-c",
+   "conceptId": "buddhism-christianity-hinduism-islam-judaism-origins",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM Profile the origins of inter-faith dialogue in two of the major world religions listed above.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an appreciation of the significance of inter-faith dialogue by accurately tracing the origins of dialogue in two of the major world religions listed in the question.",
+    "points": [
+     "Some inter-faith dialogue has its origins in historic events e.g. Buddhism/Christianity/Hinduism/Islam/Judaism all had speakers at the first World Parliament of Religions in Chicago in 1893 etc.",
+     "Some inter-faith dialogue originates in particular initiatives that promote dialogue between different faiths i.e. a discussion or exchange of ideas and opinions, especially with a view to resolving conflict or achieving agreement etc.",
+     "Some inter-faith dialogue has its roots in significant gestures/leaders. Gandhi reached out across the religious divide. He showed reverence towards the sacred texts of other faith traditions and quoted from them. Pope John Paul II made significant progress in reaching out to other world religions e.g. 1985 he referred to Catholics and followers of Islam as “brothers and sisters in the faith of Abraham”; 1986 at the synagogue in Rome he spoke of Jews as ‘our beloved elder brothers' etc.",
+     "Some inter-faith dialogue has its roots in ecumenism. The World Council of Churches, formed in 1948, had representatives from many major Christian denominations. Dialogue between Christian denominations has led to dialogue between Christianity and other religions etc.",
+     "Those engaged in contemporary inter-faith dialogue sometimes trace the origin of inter- faith dialogue to the sacred texts of religions e.g. Islam reference is made to Sura 5:48; Hindus consider the message of Rig-Veda 1.164.46 etc.",
+     "Some inter-faith dialogue originated in response to historical events e.g. the anti- Semitism that contributed to the Holocaust led to greater dialogue between Christianity and Judaism etc.",
+     "Some inter-faith dialogue has political/social origins e.g. Multi-faith societies like India have encouraged inter-faith dialogue especially between Christianity, Hinduism and Islam etc.",
+     "Some inter-faith dialogue has cultural origins e.g. as more people travelled in the Far East, people became more curious about Buddhism. The practise of meditation as a form of relaxation and prayer has encouraged communities of faith to explore the prayer traditions of other religions etc.",
+     "Some inter-faith dialogue has theological origins e.g. Inter-faith dialogue progressed after Vatican II issued Nostra Aetate etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20M x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     13
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-c-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "C",
+   "questionRef": "2010 HL Section C Q(b)",
+   "topicId": "re-c",
+   "conceptId": "results-2006-irish-census-show-members",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "The results of the 2006 Irish Census show that members of a variety of different religions are living in Ireland. Compare the range of different religions that exist in Ireland today with the range of religions in another part of Europe.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the distribution of the major religious traditions and of trends within those traditions by giving an accurate account of the similarities and/or differences between the variety of religious traditions that exist in Ireland today and those that exist in another part of Europe.",
+    "points": [
+     "The 2006 census shows the range of religious affiliation in Ireland with the Christian Churches having the largest number of members followed by Islam etc. This is similar to the percentage range of religious affiliation found in France etc.",
+     "There are some differences between Ireland and other parts of Europe e.g. Hinduism has a greater number of followers in Britain etc.",
+     "The range of religions in Ireland appears to have been influenced by factors such as economic growth etc. The range of religions in Britain appears to have been influenced by factors such as colonial links etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Where a candidate gives an account of a religious tradition that exists in Ireland and/or Europe today – Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     14
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-d-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "D",
+   "questionRef": "2010 HL Section D Q(a)",
+   "topicId": "re-d",
+   "conceptId": "family-friends-media-influence-development-morally",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "● FAMILY ● FRIENDS ● MEDIA Discuss the influence of two of the above on the development of a morally mature person.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of moral maturity by accurately examining and drawing conclusions about the influence of two of the factors listed in the question on the development of a morally mature person.",
+    "points": [
+     "Family / Friends / Media – what is valued will probably also be important to the person e.g. at Kohlberg’s Conventional Stage a person’s values are based on pleasing others etc.",
+     "Family / Friends / Media – the example they give could encourage the person to act with altruism in judging between right and wrong etc.",
+     "Family / Friends / Media – may educate a person about actions and consequences that would be evident in deciding what is right or wrong in a situation etc.",
+     "Family /Friends / Media – may help to inform conscience in deciding what is right or wrong in a situation etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20M x 2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers that show the influence of two of the above factors on how a person would act with altruism in judging between right and wrong."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     15
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-d-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "D",
+   "questionRef": "2010 HL Section D Q(b)",
+   "topicId": "re-d",
+   "conceptId": "jesus-preaching-law-love-influences-members",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Examine how Jesus’ preaching on ‘the law of love’ influences members in one Christian denomination that you have studied.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show a familiarity with the ethical dimensions of the teachings of Jesus of Nazareth by looking closely at the process by which Jesus’ preaching on ‘the law of love’ influences members in one Christian denomination.",
+    "points": [
+     "The law of love teaches love of God and love of neighbour. Jesus is recovering the original spirit of morality by presenting the Law of Love. The influence of this can be seen in the charitable work of members of a Christian denomination e.g. The Salvation Army etc.",
+     "Jesus summarizes the law of love in the Sermon on the Mount. This could guide members of a Christian denomination in deciding what is right or wrong about the way in which they relate with others e.g. The Religious Society of Friends etc.",
+     "All of Jesus' moral teaching is concentrated in one command: the love of God and the love of neighbour e.g. Jesus washing his disciples’ feet in John 13:34-35. This might influence a Christian denomination to work in the service of others e.g. Christian Aid works on behalf of several Christian denominations etc.",
+     "In the gospel accounts, Jesus repeatedly reiterates the love-commandment and places it at the heart of the religious and moral response, which he asks of his disciples. This could influence Christians to express religious belief in their way of life etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     16
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-f-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "F",
+   "questionRef": "2010 HL Section F Q(a)",
+   "topicId": "re-f",
+   "conceptId": "personal-violence-structural-violence-meant-term",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "● PERSONAL VIOLENCE ● STRUCTURAL VIOLENCE Describe what is meant by one of the term listed above and outline how someone might attempt to justify this form of violence.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a form of violence by giving an accurate account of the meaning of the term ‘personal violence’ or ‘structural violence’ and setting out accurate information on how someone might attempt to justify this form of violence.",
+    "points": [
+     "Personal violence – refers to people harming or injuring other people, emotionally or physically. Attempts to justify personal violence might include:",
+     "A person may use violence to get control of another person who would otherwise pose a risk to themselves / others etc.",
+     "A person may use violence to punish another for an action deemed unjust etc.",
+     "One hungry person may use violence towards another who has lots of food and may justify it as an issue of survival etc.",
+     "Protecting personal rights or national rights (e.g. to security) are reasons sometimes given to legitimise this form of violence etc.",
+     "Structural violence - violence that is built in to the structures of a society, which can harm people e.g. the harm done by the laws or procedures or systems of a country which deprive people of their basic human rights. Attempts to justify structural violence might include:",
+     "It is necessary to makes life better for the majority etc.",
+     "It may secure a particular way of life etc.",
+     "It is the fault of the people who are affected adversely etc.",
+     "It may be necessary for security reasons etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     17
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-f-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "F",
+   "questionRef": "2010 HL Section F Q(b)",
+   "topicId": "re-f",
+   "conceptId": "way-violence-viewed-major-world-religion",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Profile the way in which violence is viewed by one major world religion that you have studied.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of religious perspectives on violence by tracing the development of the way in which violence is viewed by a major world religion.",
+    "points": [
+     "Buddhism - Buddha’s moral and ethical teachings denounce violence. Violence is connected to what the Buddhists call the ‘Three Poisons’ - greed, hatred and delusion. Some Buddhists allow for the limited use of violence under certain precise conditions etc.",
+     "Christianity - Non-violence is at the heart of the teaching of Jesus. Christians are called to love like God, with a love that reaches out even to one’s enemies and therefore with a love that never engages in violence. In the Just War theory some Christians will allow violence but only under certain precise conditions etc.",
+     "Hinduism - The Bhagavad-Gita equates anger, pride, arrogance, cruelty, slaying of enemies and hatred as demonical qualities in contrast to the divine qualities of harmlessness, absence of anger, peace, compassion, forgiveness and absence of malice. Ahimsa (non-violence) is regarded as the most important virtue. However the Rig Veda does set out rules for the conduct of soldiers in war etc.",
+     "Islam - Islam’s belief is that religion essentially opposes violence. People should act with love, mercy and forgiveness. Islam allows war for ‘noble’ motives and outlines those conditions to be observed in a just war etc.",
+     "Judaism - At the root of Judaism is a God who created each and every person and each person must be respected accordingly. Judaism recognises that war should only be waged for reasons of justice etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     18
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-g-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "G",
+   "questionRef": "2010 HL Section G Q(a)",
+   "topicId": "re-g",
+   "conceptId": "buddhism-christianity-hinduism-islam-judaism-all",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM All religions regard certain times or seasons as sacred. Compare the features that mark a time or season as sacred in two of the major world religions listed above.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show awareness of how ritual and worship play an important part in the lives of people by giving an accurate account of the similarities and/or differences in the features that mark a time or season as sacred in two of the major world religions listed in the question.",
+    "points": [
+     "Historical features may identify a time as sacred in two of the world religions e.g. Judaism - Passover marks the escape from slavery in Egypt. At Passover a special meal or Seder is celebrated with symbolic foods etc. In Buddhism the birth of Buddha is celebrated on Wesak Day by processions, representations of events from Buddha’s life, flower shrines are built, incense is burnt, offerings are made etc.",
+     "Social features may identify a time as sacred in two of the world religions e.g. Diwali is a festival of light in honour of Rama and Lakshmi. It celebrates order and prosperity. It is a time when friends and family visit each other. Diwali is marked by the lighting of lamps and lights and fireworks. Gifts are exchanged and special Diwali food is shared and eaten etc. In Islam people mark Id al-fitr in ways that are similar to Diwali in that people exchange gifts with friends and family. Offerings are made to the poor. It is different in that it is not specifically a festival of light etc.",
+     "Theological features may identify a time as sacred in two of the world religions e.g. Easter Sunday celebrates the resurrection of Jesus and is marked by an empty tomb as a symbol of the Resurrection etc. Chocolate eggs symbolising new life are given as gifts etc. Ramadan is also a time of intense devotion that was instructed by Allah in the Qur'an. It is different to Easter in that it is a time of fasting that is undertaken to focus the mind completely on Allah as the source of all reality etc.",
+     "Symbolic features may mark a time in a person’s life as sacred e.g. Wearing a white robe for Baptism can be compared to wearing a prayer shawl for Bar Mitzvah etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     19
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-g-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "G",
+   "questionRef": "2010 HL Section G Q(b)",
+   "topicId": "re-g",
+   "conceptId": "christians-things-world-transparent-them-through",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "For Christians the things of this world are so transparent that in them and through them they know God’s presence. Discuss this statement with reference to the meaning of sacrament in two Christian denominations that you have studied.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of sacrament in the Christian tradition by examining the statement and drawing conclusions about the meaning of sacrament in two Christian denominations.",
+    "points": [
+     "The sacraments are religious rituals belonging to the Christian tradition whereby those participating can celebrate an identity that is determined by the life, death and resurrection of Jesus Christ. Sacraments use word and symbol to reveal a deeper reality called grace. Thus sacramental symbols not only reveal a deeper reality but also participate in that reality etc.",
+     "Sacraments are understood as signs/symbols instituted by Christ to reveal a deeper reality called grace. Grace can be viewed as a special encounter with God. Denominational differences occur in the way sacraments may be a promise of grace, a sign of grace and a means of grace. Denominational differences also occur as to what is considered a sacrament etc.",
+     "In the Roman Catholic tradition, the seven sacraments are understood as an encounter with Christ. By the action of Christ and the power of the Holy Spirit the sacraments make present what they signify. The seven sacraments are central to the life and religious experience of Roman Catholics as it is believed that they were instituted by Christ and for this reason they are a guarantee of grace etc.",
+     "In the Anglican Communion a sacrament is ‘an outward and visible sign of an inward and spiritual grace given to us, ordained by Christ himself, as a means whereby we receive the same, and as a pledge to assure us thereof’. God’s action through the sacraments is stressed but there is also a stress on the importance of faith within the individual. There are two sacraments: Baptism and Eucharist and five sacramental ministries of grace. Other Protestant denominations have two sacraments, Baptism and Eucharist, as these are the two that are clearly instituted by Jesus Christ in the Gospels etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20M x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     20
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "I",
+   "questionRef": "2010 HL Section I",
+   "topicId": "re-i",
+   "conceptId": "after-saint-patrick-early-irish-christianity",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "After Saint Patrick early Irish Christianity developed in many distinctive ways. Profile two ways in which Irish Christianity developed in the centuries immediately after the time of Saint Patrick.",
+   "totalMarks": 80,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an appreciation of the religious heritage in Ireland by tracing two ways in which Irish Christianity developed in the centuries immediately after the time of Saint Patrick.",
+    "points": [
+     "The emergence of the monastic system - the first monasteries were set up in places like Clonmacnoise and Glendalough. In a rural land such as Ireland these monasteries were almost like towns. They contributed immensely to the development of Christianity in Ireland after the coming of St. Patrick etc.",
+     "Monastic art - the monks made copies of the great biblical texts, especially the gospels. The biblical message could be easily understood and would remain with the viewer long afterwards. This was significant to the development of Christianity in Ireland because it emphasised the importance of the Word of God etc.",
+     "High crosses became symbols of Christianity in Celtic Ireland – they developed into works of art depicting various biblical scenes. They were an imaginative way to teach the story of Christianity to those who could not read the stories for themselves etc.",
+     "The writing of special books called the ‘Penitentials.’ These books contributed to Christianity in Ireland and Europe by bringing about a different form of the sacrament of Reconciliation to that of the early Church where penance was performed in public, once in a lifetime and included heavy penalties. It developed into a ‘private’ form of penance, where the penitents confessed their sins to the priest, who then imposed a penance set out for the particular offence. Penance could be repeated and did not include harsh penalties. As a result confession became much more accessible etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 40,
+    "gridHead": "40M x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     21
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-j-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "J",
+   "questionRef": "2010 HL Section J Q(a)",
+   "topicId": "re-j",
+   "conceptId": "debate-origins-life-earth-unites-theologians",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "The debate about the origins of life on earth is one that unites theologians and scientists. Discuss this statement making reference to the similarities and differences in the approach taken by religion and science to the debate about the origins of life on earth.",
+   "totalMarks": 80,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the theological and scientific enterprises by examining the debate about the origins of life on earth and drawing accurate conclusions in relation to the similarities and/or differences in the approach taken by religion and science.",
+    "points": [
+     "Theologians and scientists may share a similar motivation as they investigate origins. Human interest in origins is driven by the need to understand who we are in terms of a vision that binds society together etc.",
+     "The search for origins contains two questions common to science and religion:",
+     "Beginnings - an account of the past e.g. the origins of universe given by cosmology and the religious doctrine of creation etc.",
+     "Meaning - the question of purpose and destiny, a meaningful or meaningless universe, the ending of the world and future destiny etc.",
+     "Cosmology, though it is a scientific theory about the origins of the cosmos, inevitably raises questions about the meaning and value of human life and so it is at the heart of issues concerning science and religion etc. Religious stories of creation give a sacred cosmology that portrays basic relationships between God, human life and the world of nature etc.",
+     "Those working in science have found that their research has prompted questions of a religious nature e.g. Robert Jastrow etc. Those working in theology have found that their research has prompted questions of a scientific nature e.g. John F. Haught etc.",
+     "Creation stories are told, not as a scientific picture of beginnings, but as a response to the need to understand human life within a larger context of meaning and order e.g. Genesis etc. However the Big Bang theory and other cosmologies are about the mechanisms by which the world came into being etc.",
+     "Scientific discussions about the origin of the universe allow a purely materialist/reductionist view of the meaning of life. Scientific method, based on observation and experiment in the material universe, can neither deny nor affirm the existence of a creator God etc. However religious discussions can give rise to spiritual questions etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 80,
+    "gridHead": "80",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "80 > 68",
+      "marks": [
+       68,
+       69,
+       70,
+       71,
+       72,
+       73,
+       74,
+       75,
+       76,
+       77,
+       78,
+       79,
+       80
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "67 > 56",
+      "marks": [
+       56,
+       57,
+       58,
+       59,
+       60,
+       61,
+       62,
+       63,
+       64,
+       65,
+       66,
+       67
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "55 > 44",
+      "marks": [
+       44,
+       45,
+       46,
+       47,
+       48,
+       49,
+       50,
+       51,
+       52,
+       53,
+       54,
+       55
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "43 > 32",
+      "marks": [
+       32,
+       33,
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       43
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "31 > 20",
+      "marks": [
+       20,
+       21,
+       22,
+       23,
+       24,
+       25,
+       26,
+       27,
+       28,
+       29,
+       30,
+       31
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "19 > 8",
+      "marks": [
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       17,
+       18,
+       19
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     22
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2010-hl-j-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2010,
+   "level": "higher",
+   "section": "J",
+   "questionRef": "2010 HL Section J Q(b)",
+   "topicId": "re-j",
+   "conceptId": "beginning-human-life-prolonging-human-life",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "● THE BEGINNING OF HUMAN LIFE ● THE PROLONGING OF HUMAN LIFE ● THE ENDING OF HUMAN LIFE Discuss the ethical issues that arise in science and religion in relation to two of the above.",
+   "totalMarks": 80,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2010 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the theological and scientific enterprises by accurately examining and drawing conclusions about the ethical issues that arise in science and religion in relation to two of the following - the beginning of life, the prolonging of life or the ending of life.",
+    "points": [
+     "The beginning of life poses ethical issues for religion and science because of the power of science to transform the world and because religion places importance on the concept of divine purpose in creating life etc.",
+     "Ethical issues facing science and religion include:",
+     "Questions regarding what might become of the universe and the obligations this places on the human race etc.",
+     "Scientific discoveries regarding how human life began raise issues regarding how such knowledge is used e.g. the development of new medical treatments etc.",
+     "How scientists should approach religious belief and how theologians respond to science etc.",
+     "Reproductive technologies raise issues such as whether they should be used; who is entitled to avail of them; what constitutes human life and at what point in embryonic/foetal development are human rights protected etc.",
+     "Religion and science face ethical issues because of medical advances in the prolonging of life. The general moral principle is that medical treatment should 'prolong life, not the process of dying.' There are two possible situations: 1. With modern technology such as respirators, people can be kept alive for extended periods of time when, without the technology, they would certainly die. In this situation, it is clear that the machinery is prolonging the process of dying. 2. When there is some hope that the person may pull out of the decline if kept on the machinery and in the end, make some kind of recovery. In this case, the medical treatment plays a part in genuinely prolonging life. Ethical issues are raised for religion and science in judging between these two situations etc.",
+     "Ethical issues facing science and religion include –",
+     "What treatments constitute prolonging death / preserving life e.g. is feeding through a tube medical treatment?",
+     "How do we decide and define ‘death’ e.g. is someone in a 'persistent (or permanent) vegetative condition' dead?",
+     "How should finite medical resources be spent? Who is entitled to treatment? Who has the right to decide whether treatment is to be withheld? Etc.",
+     "Ethical issues facing science and religion include:",
+     "What constitutes a good death?",
+     "Is such a death an entitlement or a right?",
+     "Do people have a right to die and if they do is such a right absolute?",
+     "How should finite medical resources be allocated?",
+     "Who decides the moment of death?",
+     "Are there circumstances under which people should be obliged to help someone die?",
+     "How might eugenics be avoided? Etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 40,
+    "gridHead": "40M x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     23,
+     24
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
    }
   }
  ]
