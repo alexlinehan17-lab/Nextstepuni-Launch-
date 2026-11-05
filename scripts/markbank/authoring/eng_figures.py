@@ -621,6 +621,16 @@ REJECTED = {
     **{(2014, 'hl', 6, 'a', r): 'cuts off the label "casing for games controller"'
        for r in ('i', 'ii')},
     (2014, 'hl', 8, 'a', None): 'takes in the page\'s "(50 marks)"',
+    # 2013 Higher, looked at 2026-11-05 (the residue cuts each by eye):
+    (2013, 'hl', 1, 'm', None): 'takes in the page footer "Page 3 of 12" and cuts off A',
+    **{(2013, 'hl', 1, 'o', r): 'cuts off the zones A and B'
+       for r in ('i', 'ii')},
+    **{(2013, 'hl', 2, 'c', r): 'the eddy current drawing is (c)(ii)\'s alone; cut by eye '
+                                'for it'
+       for r in ('i', 'ii')},
+    **{(2013, 'hl', 3, 'b', r): 'cuts off the carbon axis, its values and the temperature '
+                                'axis title'
+       for r in ('i', 'ii')},
     # 2015 Higher, looked at 2026-11-04 (the residue cuts each by eye):
     **{(2015, 'hl', 2, 'b', r): 'cuts off the stress axis, its values and the fractured '
                                 'specimen at C'

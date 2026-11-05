@@ -698,6 +698,17 @@ SHORT_ASKS = {
                                                        'application of each instrument named."; the OR branch\'s (c) '
                                                        'captions only (i) to (iii)')
        for r, n in (('i', 'first'), ('ii', 'second'), ('iv', 'fourth'))},
+    # 2013 HL, each opened on its page (2026-11-05).
+    **{('engineering', 2013, 'hl', f'Q1(b)({r})'): ('', f'p3: the caption "({r})" under the {n} of three safety signs, '
+                                                       'under "State the purpose of any two of the safety signs shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    **{('engineering', 2013, 'hl', f'Q1(l)({r})'): (t, f'p3: the abbreviation "({r}) {t}" in "(i) IC (ii) LCD (iii) GRP '
+                                                       '(iv) CAM." under "Explain the meaning of any two of the following '
+                                                       'abbreviations:"')
+       for r, t in (('i', 'IC'), ('ii', 'LCD'), ('iii', 'GRP'), ('iv', 'CAM.'))},
+    ('engineering', 2013, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism photographs, '
+                                                   'under "Name and describe the operation of any one of the mechanisms '
+                                                   'shown."'),
     # 2015 OL, each opened on its page (2026-11-04).
     **{('engineering', 2015, 'ol', f'Q2(a)({r})'): ('', f'p3: the caption "({r})" over the {n} of three furnace drawings, '
                                                        'under "Name each of the furnaces shown."')

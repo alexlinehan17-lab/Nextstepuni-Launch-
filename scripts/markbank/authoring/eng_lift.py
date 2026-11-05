@@ -142,8 +142,13 @@ def lift(year, level, doc, page, rect, *, bullet=True, more=(), items=()):
         return Lift('\n'.join([text] + lines),
                     (year, level, doc, page, tuple(rect), tuple(map(tuple, more)),
                      ('items',) + tuple(map(tuple, items))))
-    return Lift(text, (year, level, doc, page, tuple(rect))
-                if not more else (year, level, doc, page, tuple(rect), tuple(map(tuple, more))))
+    obj = Lift(text, (year, level, doc, page, tuple(rect))
+               if not more else (year, level, doc, page, tuple(rect), tuple(map(tuple, more))))
+    # A piece that opens on a printed bullet and keeps it (bullet=False) --
+    # the first item of a list carried over a page break -- is recorded with
+    # a "•" after its rectangle, so `check` lifts it again the same way.
+    obj.keeps_bullet = not bullet
+    return obj
 
 
 def join(*parts):
@@ -208,6 +213,7 @@ def record(year, level):
             raise SystemExit(f'{lf[:40]!r}: a scheme row is one rectangle a page')
         seen.add(str(lf))
         where = ' + '.join(f'p{pc.source[3]} [{", ".join(f"{v:g}" for v in pc.source[4])}]'
+                           + ('•' if getattr(pc, 'keeps_bullet', False) else '')
                            for pc in pieces)
         lines.append(f'{where} {lf}')
     md = os.path.join(BASE, 'schemes', f'{year}-{level}.md')
@@ -231,9 +237,10 @@ def check(year, level):
     for line in (m.group(1).splitlines() if m else []):
         if not line.strip():
             continue
-        g = _re.match(r'^((?:p\d+ \[[^\]]+\](?: \+ )?)+) (.*)$', line)
-        pieces = [lift(year, level, 'scheme', int(pg), [float(v) for v in r.split(',')])
-                  for pg, r in _re.findall(r'p(\d+) \[([^\]]+)\]', g.group(1))]
+        g = _re.match(r'^((?:p\d+ \[[^\]]+\]•?(?: \+ )?)+) (.*)$', line)
+        pieces = [lift(year, level, 'scheme', int(pg), [float(v) for v in r.split(',')],
+                       bullet=not kept)
+                  for pg, r, kept in _re.findall(r'p(\d+) \[([^\]]+)\](•?)', g.group(1))]
         again = pieces[0] if len(pieces) == 1 else join(*pieces)
         if str(again) != g.group(2):
             bad += 1

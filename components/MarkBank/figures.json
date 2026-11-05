@@ -61934,5 +61934,369 @@
   "year": 2025,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q1b-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q1b-art.png",
+  "md5": "95249c1bb1e221cbb9d7311c08308e7e",
+  "alt": "The table or diagram printed with 2013 HL Q1(b), as the State Examinations Commission set it. It reads: (i), (ii), (iii).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q1(b)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q4cii-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q4cii-art.png",
+  "md5": "764e8e6db799f96f2ded2db23e013b1f",
+  "alt": "The table or diagram printed with 2013 HL Q4(c)(ii), as the State Examinations Commission set it. It reads: Cooling curve, Equilibrium diagram, Time 0 20 100 (% Ni), Temperature, Temperature, 20% Ni.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q4(c)(ii)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q8a-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q8a-art.png",
+  "md5": "b513e7be6a776da64208a9f5a4e49d91",
+  "alt": "The table or diagram printed with 2013 HL Q8(a), as the State Examinations Commission set it. It reads: (i), (ii).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q8(a)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q1f-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q1f-crop.png",
+  "md5": "f229810c3bb67a2063b925de2392553a",
+  "alt": "The table or diagram printed with 2013 HL Q1(f), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q1(f)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q1m-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q1m-crop.png",
+  "md5": "0ae5aed6e1a64afb9f985d44b59b5bf3",
+  "alt": "The table or diagram printed with 2013 HL Q1(m), as the State Examinations Commission set it. It reads: A.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q1(m)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q1o-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q1o-crop.png",
+  "md5": "9e19ba6e395fe06c64497eb180aacaf0",
+  "alt": "The table or diagram printed with 2013 HL Q1(o), as the State Examinations Commission set it. It reads: C B A.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q1(o)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q1q-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q1q-crop.png",
+  "md5": "9d971b579147e6f724f7e4ab2caeb99f",
+  "alt": "The table or diagram printed with 2013 HL Q1(q), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q1(q)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q2b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q2b-crop.png",
+  "md5": "9ace9b28133c93d5ce770ca7001e92a2",
+  "alt": "The table or diagram printed with 2013 HL Q2(b), as the State Examinations Commission set it. It reads: Load (kN) 15 25 40 60 80 100 107 108 105 96 Extension (mm) 0.06 0.10 0.16 0.26 0.38 0.65 0.90 1.00 1.20 1.40.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q2(b)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q2cii-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q2cii-crop.png",
+  "md5": "7bf5d3ecac991bf34a5a1b839b6bdf6c",
+  "alt": "The table or diagram printed with 2013 HL Q2(c)(ii), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q2(c)(ii)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q3a-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q3a-art.png",
+  "md5": "39645ff65c555fa2a08ed04242d7975e",
+  "alt": "The table or diagram printed with 2013 HL Q3(a), as the State Examinations Commission set it. It reads: The table below describes heat treatments which have been applied to each of the medium-carbon steel screwdrivers A and B. Screwdriver A Heat to 900ºC and allow to cool slowly Screwdriver B Heat to 900ºC and quench in cold water.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q3(a)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q3b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q3b-crop.png",
+  "md5": "eb10a06e02ab4c4d7049b3a10d405aa4",
+  "alt": "The table or diagram printed with 2013 HL Q3(b), as the State Examinations Commission set it. It reads: A B ºC 800 X Temperature 400 C D 0 % Carbon 1 2 3.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q3(b)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q4b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q4b-crop.png",
+  "md5": "799b667bbc8b427c047ab07fde7ff53c",
+  "alt": "The table or diagram printed with 2013 HL Q4(b), as the State Examinations Commission set it. It reads: % of metal B in alloy 0 20 40 60 80 100 Start of solidification (˚C) 270 400 492 552 603 630 End of solidification (˚C) 270 280 318 368 449 630.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q4(b)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q5b-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q5b-art.png",
+  "md5": "dd63512adc9783ec221ffb0268b5bbab",
+  "alt": "The table or diagram printed with 2013 HL Q5(b), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q5(b)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q5ci-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q5ci-crop.png",
+  "md5": "9d8f770292e9a13577c2e788136b9c8e",
+  "alt": "The table or diagram printed with 2013 HL Q5(c), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q5(c)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q6a-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q6a-art.png",
+  "md5": "6c17bac9ba259ad837104e890faa9fa2",
+  "alt": "The table or diagram printed with 2013 HL Q6(a), as the State Examinations Commission set it. It reads: split mould drive motor A B.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q6(a)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q6c-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q6c-crop.png",
+  "md5": "1d083ff02b0fe5e859cd2139ea27395b",
+  "alt": "The table or diagram printed with 2013 HL Q6(c), as the State Examinations Commission set it. It reads: X Y.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q6(c)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q7b-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q7b-crop.png",
+  "md5": "cd059e87d8569d950491b8cce9fe18d8",
+  "alt": "The table or diagram printed with 2013 HL Q7(b), as the State Examinations Commission set it. It reads: A B Surface grinding a steel machine slide. Sharpening a cutting tool on a bench grinder..",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q7(b)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q8c-crop": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q8c-crop.png",
+  "md5": "0c1a19db6fad43b223bef09648c0266e",
+  "alt": "The table or diagram printed with 2013 HL Q8(c), as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q8(c)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-paper-q8ci-art": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-paper-q8ci-art.png",
+  "md5": "889992dcfaf0c5bf90b36606c890aff7",
+  "alt": "The table or diagram printed with 2013 HL Q8(c)(i), as the State Examinations Commission set it. It reads: A 120V 12V IC.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q8(c)(i)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-scheme-q1k-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-scheme-q1k-sol.png",
+  "md5": "a20f52e3ce9cadf832d1c9844d6dd8b9",
+  "alt": "The marking scheme's printed answer for 2013 HL Q1(k), as the State Examinations Commission set it. It reads: bright inner cone Acetylene feather envelope.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q1(k)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-scheme-q1p-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-scheme-q1p-sol.png",
+  "md5": "ffa049def95c576f7dfcd2ede898fa74",
+  "alt": "The marking scheme's printed answer for 2013 HL Q1(p), as the State Examinations Commission set it. It reads: Stirling engine efficiency = Desired output of engine x 100 Required input of engine 1.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q1(p)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-scheme-q2b-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-scheme-q2b-sol.png",
+  "md5": "d590b05269dac09f35dec2a945eb1dd6",
+  "alt": "The marking scheme's printed answer for 2013 HL Q2(b), as the State Examinations Commission set it. It reads: Draw graph 120 100 88 80 (kN) 60 Load 40 20 0.05 0.25 0.5 0.75 1.0 1.25 Extension (mm).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q2(b)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-scheme-q2bi-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-scheme-q2bi-sol.png",
+  "md5": "a1b66b6b16e7b8755ed6cf98a190472a",
+  "alt": "The marking scheme's printed answer for 2013 HL Q2(b)(i), as the State Examinations Commission set it. It reads: (i) U.T.S. = Max. Load = 108 = 1.38kN/mm2 C.S.A π x 52.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q2(b)(i)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-scheme-q2bii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-scheme-q2bii-sol.png",
+  "md5": "0c20932df15632ad9f33406dc1b62bce",
+  "alt": "The marking scheme's printed answer for 2013 HL Q2(b)(ii), as the State Examinations Commission set it. It reads: (ii) 0.1% proof stress 0.1% of 50mm = 0.05mm Proof load = 88kN 0.1% proof stress = Proof Load = 88 = 1.12kN/mm2 C.S.A π x 52.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q2(b)(ii)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-scheme-q3ciii-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-scheme-q3ciii-sol.png",
+  "md5": "54d2b4b211a2a1819049bababfeaf08f",
+  "alt": "The marking scheme's printed answer for 2013 HL Q3(c)(iii), as the State Examinations Commission set it. It reads: A B C.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q3(c)(iii)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-scheme-q4b-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-scheme-q4b-sol.png",
+  "md5": "b1e307450de42e839f8d1a1b3547792b",
+  "alt": "The marking scheme's printed answer for 2013 HL Q4(b), as the State Examinations Commission set it. It reads: Liquid 600 ºC Liquidus line X Y 450 Pasty – Solid 400 and Liquid Solidus line Temperature 200 Solid 0 20 40 60 80 100 % of metal B in alloy.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q4(b)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-scheme-q5c-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-scheme-q5c-sol.png",
+  "md5": "e0b009e338269afe3f62c28604c6157b",
+  "alt": "The marking scheme's printed answer for 2013 HL Q5(c), as the State Examinations Commission set it. It reads: electrode.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q5(c)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-scheme-q7bi-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-scheme-q7bi-sol.png",
+  "md5": "788ca127705e32307e5d029c26cc99ef",
+  "alt": "The marking scheme's printed answer for 2013 HL Q7(b)(i), as the State Examinations Commission set it. It reads: grinding wheel workpiece on magnetic chuck table.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q7(b)(i)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-scheme-q7c-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-scheme-q7c-sol.png",
+  "md5": "5d90d14083285b7f02bfc0bf0fd79f35",
+  "alt": "The marking scheme's printed answer for 2013 HL Q7(c), as the State Examinations Commission set it. It reads: Workpiece spacers Workpiece.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q7(c)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
+ },
+ "engineering-2013-HL-scheme-q8c-sol": {
+  "src": "/exam-figures/engineering/markbank/engineering-2013-HL-scheme-q8c-sol.png",
+  "md5": "0730ac4e7997f6a247bafcec3be12ee4",
+  "alt": "The marking scheme's printed answer for 2013 HL Q8(c), as the State Examinations Commission set it.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q8(c)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Engineering 2013 Higher Level — © State Examinations Commission"
  }
 }
