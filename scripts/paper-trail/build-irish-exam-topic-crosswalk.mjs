@@ -30,7 +30,7 @@ const RUNTIME_PATH = path.join(ROOT, 'data/examTopics/irish-runtime.json');
 const CURRICULUM_PATH = path.join(ROOT, 'data/examTopics/irish-curriculum-crosswalk.json');
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
-const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json', 'ordinary-2026-p2-authored.json', 'higher-2025-p2-authored.json', 'ordinary-2025-p2-authored.json', 'ordinary-2024-p2-authored.json', 'higher-2023-p2-authored.json', 'ordinary-2023-p2-authored.json', 'ordinary-2022-p2-authored.json', 'higher-2022-p2-authored.json', 'higher-2021-p2-authored.json', 'ordinary-2021-p2-authored.json', 'higher-2020-p1-authored.json', 'higher-2020-p2-authored.json', 'ordinary-2020-p1-authored.json', 'ordinary-2020-p2-authored.json', 'higher-2019-p1-authored.json', 'higher-2019-p2-authored.json', 'ordinary-2019-p1-authored.json', 'ordinary-2019-p2-authored.json', 'higher-2018-p1-authored.json', 'higher-2018-p2-authored.json', 'ordinary-2018-p1-authored.json', 'ordinary-2018-p2-authored.json', 'higher-2017-p1-authored.json', 'higher-2017-p2-authored.json', 'ordinary-2017-p1-authored.json', 'ordinary-2017-p2-authored.json', 'higher-2016-p1-authored.json', 'higher-2016-p2-authored.json', 'ordinary-2016-p1-authored.json', 'ordinary-2016-p2-authored.json', 'higher-2015-p1-authored.json', 'higher-2015-p2-authored.json', 'ordinary-2015-p1-authored.json', 'ordinary-2015-p2-authored.json', 'higher-2014-p1-authored.json', 'higher-2014-p2-authored.json', 'ordinary-2014-p1-authored.json', 'ordinary-2014-p2-authored.json', 'higher-2013-p1-authored.json', 'higher-2013-p2-authored.json', 'ordinary-2013-p1-authored.json', 'ordinary-2013-p2-authored.json', 'higher-2012-p1-authored.json', 'higher-2012-p2-authored.json', 'ordinary-2012-p1-authored.json', 'ordinary-2012-p2-authored.json']
+const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json', 'ordinary-2026-p2-authored.json', 'higher-2025-p2-authored.json', 'ordinary-2025-p2-authored.json', 'ordinary-2024-p2-authored.json', 'higher-2023-p2-authored.json', 'ordinary-2023-p2-authored.json', 'ordinary-2022-p2-authored.json', 'higher-2022-p2-authored.json', 'higher-2021-p2-authored.json', 'ordinary-2021-p2-authored.json', 'higher-2020-p1-authored.json', 'higher-2020-p2-authored.json', 'ordinary-2020-p1-authored.json', 'ordinary-2020-p2-authored.json', 'higher-2019-p1-authored.json', 'higher-2019-p2-authored.json', 'ordinary-2019-p1-authored.json', 'ordinary-2019-p2-authored.json', 'higher-2018-p1-authored.json', 'higher-2018-p2-authored.json', 'ordinary-2018-p1-authored.json', 'ordinary-2018-p2-authored.json', 'higher-2017-p1-authored.json', 'higher-2017-p2-authored.json', 'ordinary-2017-p1-authored.json', 'ordinary-2017-p2-authored.json', 'higher-2016-p1-authored.json', 'higher-2016-p2-authored.json', 'ordinary-2016-p1-authored.json', 'ordinary-2016-p2-authored.json', 'higher-2015-p1-authored.json', 'higher-2015-p2-authored.json', 'ordinary-2015-p1-authored.json', 'ordinary-2015-p2-authored.json', 'higher-2014-p1-authored.json', 'higher-2014-p2-authored.json', 'ordinary-2014-p1-authored.json', 'ordinary-2014-p2-authored.json', 'higher-2013-p1-authored.json', 'higher-2013-p2-authored.json', 'ordinary-2013-p1-authored.json', 'ordinary-2013-p2-authored.json', 'higher-2012-p1-authored.json', 'higher-2012-p2-authored.json', 'ordinary-2012-p1-authored.json', 'ordinary-2012-p2-authored.json', 'ordinary-2011-aural-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards)
   .filter(card => card.reviewedAt && card.atlasQuestionId);
 const reviewedTaskKeys = new Set(reviewedHigherTasks.map(card => card.year + '|' + card.paperFileid + '.pdf|' + card.atlasQuestionId));
@@ -212,9 +212,9 @@ setCurriculum(H.prose, ['irish-4-7', 'irish-7-0']);
 // Reuse the reviewed cards' existing canonical nodes; this archive shelf does
 // not define a second syllabus or relabel prescribed works as optional prose.
 setCurriculum(H.prescribedProse, [...new Set(reviewedHigherTasks
-  .filter(card => card.level === 'higher' && /^P-2A(?:-|$)/.test(card.atlasQuestionId)).map(card => card.topicId))].sort());
+  .filter(card => card.level === 'higher' && /^P-2?A(?:-|$)/.test(card.atlasQuestionId)).map(card => card.topicId))].sort());
 setCurriculum(H.prescribedPoetry, [...new Set(reviewedHigherTasks
-  .filter(card => card.level === 'higher' && /^F-3A(?:-|$)/.test(card.atlasQuestionId)).map(card => card.topicId))].sort());
+  .filter(card => card.level === 'higher' && /^F-3?A(?:-|$)/.test(card.atlasQuestionId)).map(card => card.topicId))].sort());
 setCurriculum(H.debate, ['irish-2-4', 'irish-2-5']);
 setCurriculum(H.article, ['irish-2-1']);
 setCurriculum(H.story, ['irish-2-3']);
@@ -235,9 +235,9 @@ setCurriculum(O.folktale, ['irish-4-7', 'irish-7-1']);
 setCurriculum(O.poetry, ['irish-5-6', 'irish-7-0']);
 setCurriculum(O.prose, ['irish-4-7', 'irish-7-0']);
 setCurriculum(O.prescribedProse, [...new Set(reviewedHigherTasks
-  .filter(card => card.level === 'ordinary' && /^P-2A(?:-|$)/.test(card.atlasQuestionId)).flatMap(card => [card.topicId, ...(card.additionalTopicIds ?? [])]))].sort());
+  .filter(card => card.level === 'ordinary' && /^P-2?A(?:-|$)/.test(card.atlasQuestionId)).flatMap(card => [card.topicId, ...(card.additionalTopicIds ?? [])]))].sort());
 setCurriculum(O.prescribedPoetry, [...new Set(reviewedHigherTasks
-  .filter(card => card.level === 'ordinary' && /^F-3A(?:-|$)/.test(card.atlasQuestionId)).flatMap(card => [card.topicId, ...(card.additionalTopicIds ?? [])]))].sort());
+  .filter(card => card.level === 'ordinary' && /^F-3?A(?:-|$)/.test(card.atlasQuestionId)).flatMap(card => [card.topicId, ...(card.additionalTopicIds ?? [])]))].sort());
 setCurriculum(F.form, ['irish-9-0']);
 setCurriculum(F.match, ['irish-9-1']);
 for (const id of [F.brochure, F.extract, F.letterReading, F.news, F.poem]) {
@@ -777,21 +777,23 @@ for (const card of reviewedHigherTasks) {
   // 2012 Higher prints its articles as a section of their own (Ceapadóireacht C, irish-2-1): the article shelf.
   // A two-composition selection covers every member's writing form.
   const paperOneIds = card.memberCardIds ? [card.topicId, ...(card.additionalTopicIds ?? [])] : [card.topicId];
-  const baseTopicIds = card.paper === 1
+  // 2010-2011 print the reading on Paper 1 (their listening is a paper of its own): it goes to the reading shelf, as Paper 2's
+  // does from 2012; their prescribed prose and poetry are keyed P-A and F-A (2012 on: P-2A, F-3A).
+  const baseTopicIds = card.paper === 1 && !card.id.includes('-reading-')
     ? [...new Set(paperOneIds.flatMap(id => paperOneTopics[id] ?? (id === 'irish-2-2' ? [] : (() => { throw new Error('Unmapped reviewed Paper 1 topic: ' + card.id + ' ' + id); })())))]
     : card.level === 'ordinary'
     // Ordinary Paper 2: reading, prescribed prose/poetry shelves, optional prose/poetry.
     ? [card.id.includes('-reading-') ? O.reading
-      : /^F-3A(?:-|$)/.test(card.atlasQuestionId) ? O.prescribedPoetry
-      : /^P-2A(?:-|$)/.test(card.atlasQuestionId) ? O.prescribedProse
+      : /^F-3?A(?:-|$)/.test(card.atlasQuestionId) ? O.prescribedPoetry
+      : /^P-2?A(?:-|$)/.test(card.atlasQuestionId) ? O.prescribedProse
       : card.atlasQuestionId.startsWith('P-') ? O.prose : O.poetry]
     : card.id.includes('-reading-')
     ? card.topicId === 'irish-3-3' ? [H.grammar]
       : (card.additionalTopicIds ?? []).includes('irish-3-3') ? [H.reading,H.grammar] : [H.reading]
     : card.atlasQuestionId === 'X-4F' ? [H.extraPoetry,H.historic]
     : [card.atlasQuestionId.startsWith('X-') ? H.historic
-      : /^F-3A(?:-|$)/.test(card.atlasQuestionId) ? H.prescribedPoetry
-      : /^P-2A(?:-|$)/.test(card.atlasQuestionId) ? H.prescribedProse
+      : /^F-3?A(?:-|$)/.test(card.atlasQuestionId) ? H.prescribedPoetry
+      : /^P-2?A(?:-|$)/.test(card.atlasQuestionId) ? H.prescribedProse
       : card.atlasQuestionId.startsWith('P-') ? H.prose : H.poetry];
   if (existing?.baseline) {
     // Frozen reading identities/tags remain. The additive regions restore the
@@ -806,7 +808,7 @@ for (const card of reviewedHigherTasks) {
   if (existing) paper.q.splice(paper.q.indexOf(existing), 1);
   addQuestion(paper, {
     n: card.atlasQuestionId,
-    label: card.questionRef.replace(/^\d{4} [HO]L Paper [12] /, ''),
+    label: card.questionRef.replace(/^\d{4} [HO]L (?:Paper [12] )?/, ''),
     baseTopicIds,
     anchor: { pP: card.reviewedPaperPages[0], pY: [0, 1],
       paperRegion: card.reviewedPaperPages.map(p => ({ p, r: [0, 0, 1, 1] })),

@@ -139,6 +139,23 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   if (source.guidance.some(line => new RegExp(ANSWER_KEY.source).test(line))) {
     return parseIrishAnswers({ ...source, guidance: source.guidance.map(line => line.replace(ANSWER_KEY, '$1 $2 ')) });
   }
+  // "(i) Cuntas gairid … luaite. 9 + 9 = 18 marc" NÓ "(ii) Cuntas gairid ar dhá phearsa … = 9 marc × 2 = 18 marc" (2011 Ordinary
+  // Prós Roghnach (b)), and the film's and the play's title lines (2011 Ordinary Prós Roghnach (a)): alternatives the scheme marks
+  // alike, carried on one card with the scheme's own "NÓ" between them. Each is read on its own at the criterion's marks, and its
+  // rows are the one part's alternatives, any one of them claimed; nothing is read where an alternative does not read whole.
+  const alternatives = source.guidance.reduce<string[][]>((runs, line) => (line.trim() === 'NÓ' ? [...runs, []]
+    : [...runs.slice(0, -1), [...runs[runs.length - 1], line]]), [[]]);
+  if (alternatives.length > 1) {
+    const allocations = alternatives.flatMap(lines => {
+      const result = lines.length ? parseIrishTariffs({ ...source, guidance: lines }) : undefined;
+      return result?.ok && result.allocation.parts.length === 1 && result.allocation.parts[0].tariff === source.totalMarks ? [result.allocation] : [];
+    });
+    if (allocations.length !== alternatives.length) return { ok: false, reason: 'an alternative does not read whole' };
+    const notes = allocations.flatMap(allocation => [allocation.parts[0].prompt ?? '', ...allocation.directions]).filter(Boolean);
+    return { ok: true, allocation: { parts: [{ id: 'p1', tariff: source.totalMarks,
+      rows: allocations.flatMap(allocation => allocation.parts[0].rows).map((row, index) => ({ ...row, id: `r${index + 1}` })) }],
+    directions: notes.filter((note, index) => notes.indexOf(note) === index) } };
+  }
   const directions: string[] = [];
   let text = source.guidance.filter((line, index) => index === 0 || !SECTION_SUMMARY.test(line.trim())).join(' ').replace(/[\uf0a7\uf0b7\u25aa\u2022]/g, ' • ').replace(/\s+/g, ' ').trim();
   // "Ní mór teideal an dáin sin, mar aon le hainm an fhile, a scríobh síos go soiléir. (2 mharc)" alone (2012 and 2013 Ordinary
@@ -149,10 +166,11 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
     return { ok: true, allocation: { parts: [{ id: 'p1', tariff: source.totalMarks, rows: [{ id: 'r1', text: titleAsk[1], marks: source.totalMarks }] }], directions: [] } };
   }
   // "(i) (a) Cad as don ainmhí seo? (Géibheann thíos) (b) Cá bhfuil an t-ainmhí anois, dar leat? (c) … (d) … (8 marc)" (2012
-  // Ordinary 3A(i)): printed questions (a)–(d) that the scheme prices only together, with nothing else printed: one sub-question,
-  // its questions the prompt and the row, claimed whole.
-  const shared = /^\(\s*(?:i|ii|iii|iv|v)\s*\)\s*(\(a\)\s[^=•¶]*?)\s*\(\s*(\d+)\s*m?h?arc\s*\)$/.exec(text);
-  if (shared && Number(shared[2]) === source.totalMarks && !/\d+\s*m?h?arc\b/.test(shared[1])) {
+  // Ordinary 3A(i)), "(i) (a) Cár shuigh an ghealt ar an mbus? (Gealt?) (b) … (d) … = 8 marc" (2011 Ordinary Filíocht Ainmnithe
+  // (a)): printed questions (a)–(d) that the scheme prices only together, with nothing else printed: one sub-question, its
+  // questions the prompt and the row, claimed whole.
+  const shared = /^\(\s*(?:i|ii|iii|iv|v)\s*\)\s*(\(a\)\s[^=•¶]*?)\s*(?:\(\s*(\d+)\s*m?h?arc\s*\)|=\s*(\d+)\s*m?h?arc)$/.exec(text);
+  if (shared && Number(shared[2] ?? shared[3]) === source.totalMarks && !/\d+\s*m?h?arc\b/.test(shared[1])) {
     const questions = shared[1].split(/\s(?=\([b-f]\)\s)/);
     if (questions.length >= 2 && questions.every((question, index) => question.startsWith(`(${'abcdef'[index]}) `) && /\?(?:\s*\([^()]*\))?$/.test(question.trim()))) {
       const asked = tidy(shared[1]);
@@ -205,6 +223,19 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   // "Mothú a lua=1 mharc + dhá fháth :3 mharc + 2 mharc" (2013 Ordinary 3B(b)(ii)): the reasons' price printed after a colon,
   // read as "… + dhá fháth = 3 mharc + 2 mharc" is (2013 3A(b)(iii)).
   text = text.replace(/(\bdhá fháth)\s*:\s*(?=\d+\s*m?h?arc\s*\+\s*\d+\s*m?h?arc\b)/g, '$1 = ');
+  // "Dhá fháth. = 4 marc × 2 = 8 marc", "Dhá fháth. 3 marc ×2 = 6 marc", "(10 marc × 2) = 20 marc" (2011 Ordinary Páipéar II): a
+  // price per thing times the things the question asks for. Where the product is the printed total it reads as that row's split
+  // ("= 4 marc + 4 marc"), one step a thing.
+  text = text.replace(/(?:=\s*)?\(?\s*(\d+)\s*(m?h?arc)\s*×\s*(\d+)\s*\)?\s*=\s*(\d+)\s*m?h?arc\b/g,
+    (whole: string, each: string, unit: string, times: string, total: string) => (Number(each) * Number(times) === Number(total) && Number(times) > 1
+      ? `= ${Array(Number(times)).fill(`${each} ${unit}`).join(' + ')}` : whole));
+  // "Cur síos gairid air 3 + 3 = 6 marc", "… luaite. 2 + 9 + 9 = 20marc", "(9 + 9) = 18 marc" (2011 Ordinary Páipéar II): the
+  // row's split printed without a unit before its total. Where the addends make the total it reads as "= 3 marc + 3 marc".
+  text = text.replace(/(?<=[A-Za-zÁÉÍÓÚáéíóú.?]\s*)\(?\s*(\d+)((?:\s*\+\s*\d+)+)\s*\)?\s*=\s*(\d+)\s*(m?h?arc)\b/g,
+    (whole: string, first: string, more: string, total: string, unit: string) => {
+      const values = [Number(first), ...more.match(/\d+/g)!.map(Number)];
+      return values.reduce((acc, value) => acc + value, 0) === Number(total) ? `= ${values.map(value => `${value} ${unit}`).join(' + ')}` : whole;
+    });
   // "(2 mharc) Cluain Meala; Tiobraid Árann; …; Margadh na saoire, aonach hireálta. (1 mharc + 1 mharc)" (2013 Ordinary
   // 3A(b)(i)(b)): the accepted answers listed between the question's tariff and how it divides. The split is the part's ladder
   // and each listed answer one of its rows, claimed in order; only where the split adds up to the tariff.

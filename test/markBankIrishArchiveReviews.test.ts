@@ -55,6 +55,7 @@ import higher2012P1 from '../components/MarkBank/cards/irish/higher-2012-p1-auth
 import higher2012P2 from '../components/MarkBank/cards/irish/higher-2012-p2-authored.json';
 import ordinary2012P1 from '../components/MarkBank/cards/irish/ordinary-2012-p1-authored.json';
 import ordinary2012P2 from '../components/MarkBank/cards/irish/ordinary-2012-p2-authored.json';
+import ordinary2011Aural from '../components/MarkBank/cards/irish/ordinary-2011-aural-authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import { irishMarks } from '../components/MarkBank/SessionScreen';
@@ -134,6 +135,34 @@ describe('Irish archive review: Paper 1 (listening and composition)', () => {
       expect(row).toMatchObject({ fullVisualReview: 'complete', bankAtlasTaskParity: 'complete', partAndSelectionReconciliation: 'complete' });
       const mapped = new Set(answerMap(paper.year, paper.fileid).q.map(q => q.n));
       for (const n of ['1', '2', '3', '4']) expect(mapped.has(n), n).toBe(true);
+    });
+  }
+});
+
+// 2010-2011 print the listening as a paper of its own (Triail Chluastuisceana), with no composition on it.
+const AURAL = [
+  { review: ordinary2011Aural.review, year: 2011, fileid: 'LC001GLPA00IV.pdf', segments: 9, questions: 34 },
+];
+
+describe('Irish archive review: 2010-2011 aural papers', () => {
+  for (const paper of AURAL) {
+    it(`${paper.year} ${paper.review.level} ${paper.fileid}: ${paper.questions} printed questions, each carded`, () => {
+      const { review } = paper;
+      expect(review.listeningSegmentCardIds).toHaveLength(paper.segments);
+      expect(review.printedListeningQuestions).toBe(paper.questions);
+      const segments = review.listeningSegmentCardIds.map(card);
+      expect(segments.flatMap(criteria)).toHaveLength(paper.questions);
+      expect(segments.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(review.examStructure.listening);
+      for (const c of segments) {
+        for (const criterion of criteria(c)) expect(criterion.allocation, `${c.id} ${criterion.id}`).toBeDefined();
+        expect(irishMarks(c, irishFullScores(c)), c.id).toBe(c.totalMarks);
+      }
+      for (const id of review.cardIds) expect(shown(card(id)), id).not.toMatch(OURS);
+      const row = inventory.papers.find(p => p.key === `${paper.year}|${review.level}|${paper.fileid}`)!;
+      expect(row.markBankCardIds.slice().sort()).toEqual([...review.cardIds].sort());
+      expect(row).toMatchObject({ fullVisualReview: 'complete', bankAtlasTaskParity: 'complete', partAndSelectionReconciliation: 'complete' });
+      const mapped = new Set(answerMap(paper.year, paper.fileid).q.map(q => q.n));
+      for (const n of ['1', '2', '3']) expect(mapped.has(n), n).toBe(true);
     });
   }
 });

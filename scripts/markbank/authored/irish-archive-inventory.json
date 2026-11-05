@@ -28,14 +28,14 @@
       "higher",
       "ordinary"
     ],
-    "papersWithCards": 78,
-    "papersWithoutCards": 13,
-    "indexedCards": 3305,
+    "papersWithCards": 79,
+    "papersWithoutCards": 12,
+    "indexedCards": 3314,
     "orphanCardIds": [],
     "missingLocalPapers": [],
     "papersWithoutIndexedScheme": [],
     "missingLocalSchemes": [],
-    "papersPendingFullReview": 13,
+    "papersPendingFullReview": 12,
     "componentsWithSourceGaps": [
       "2010|foundation|LC001BLPA00IV.pdf"
     ]
@@ -9168,16 +9168,35 @@
         "pages": 12,
         "sha256": "6e73ff5b1d21c777f7d39b3731cb7d7e6b0156fe6043c00f4fea9291032e0ad3"
       },
-      "markBankCardIds": [],
+      "markBankCardIds": [
+        "irish-2011-ol-listening-a-f1",
+        "irish-2011-ol-listening-a-f2",
+        "irish-2011-ol-listening-a-f3",
+        "irish-2011-ol-listening-b-c1",
+        "irish-2011-ol-listening-b-c2",
+        "irish-2011-ol-listening-b-c3",
+        "irish-2011-ol-listening-c-p1",
+        "irish-2011-ol-listening-c-p2",
+        "irish-2011-ol-listening-c-p3"
+      ],
       "atlasQuestionIds": [
         "1",
         "2",
-        "3"
+        "3",
+        "L-A-F1",
+        "L-A-F2",
+        "L-A-F3",
+        "L-B-C1",
+        "L-B-C2",
+        "L-B-C3",
+        "L-C-P1",
+        "L-C-P2",
+        "L-C-P3"
       ],
-      "questionCoverage": "missing-from-mark-bank",
-      "fullVisualReview": "pending",
-      "partAndSelectionReconciliation": "pending",
-      "bankAtlasTaskParity": "pending"
+      "questionCoverage": "reviewed",
+      "fullVisualReview": "complete",
+      "partAndSelectionReconciliation": "complete",
+      "bankAtlasTaskParity": "complete"
     },
     {
       "key": "2011|foundation|LC001BLP100IV.pdf",

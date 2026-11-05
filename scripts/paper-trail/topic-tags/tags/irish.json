@@ -17624,6 +17624,42 @@
         "n": "3",
         "primary": "irish-1-2",
         "secondary": "irish-1-3"
+      },
+      {
+        "n": "L-A-F1",
+        "primary": "irish-1-0"
+      },
+      {
+        "n": "L-A-F2",
+        "primary": "irish-1-0"
+      },
+      {
+        "n": "L-A-F3",
+        "primary": "irish-1-0"
+      },
+      {
+        "n": "L-B-C1",
+        "primary": "irish-1-1"
+      },
+      {
+        "n": "L-B-C2",
+        "primary": "irish-1-1"
+      },
+      {
+        "n": "L-B-C3",
+        "primary": "irish-1-1"
+      },
+      {
+        "n": "L-C-P1",
+        "primary": "irish-1-2"
+      },
+      {
+        "n": "L-C-P2",
+        "primary": "irish-1-2"
+      },
+      {
+        "n": "L-C-P3",
+        "primary": "irish-1-2"
       }
     ]
   },
