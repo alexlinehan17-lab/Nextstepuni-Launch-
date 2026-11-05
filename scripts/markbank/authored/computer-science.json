@@ -6514,64 +6514,6 @@
   "questionFigureIncludesPrompt": false
  },
  {
-  "id": "cs-2023-ol-q13",
-  "topicId": "cs-2-2",
-  "conceptId": "i-cost-will-printed-when-customer",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "computer-science",
-  "section": "B",
-  "questionRef": "2023 OL Q13",
-  "questionText": "(i) What cost will be printed when a customer has a car battery with a charge of 25% and no loyalty card? (ii) What cost will be printed when a customer has a car battery with a charge of 50% and a loyalty card? (iii) What cost will be printed when a customer has a car battery with a charge of 80% and no loyalty card? (iv) What is the lowest possible cost that this algorithm can print? (c) Three cars arrive at an electric vehicle charging point location. There are two charge stations so only two cars can be charged at the same time. None of the three electric vehicle’s batteries have any charge. It takes one hour to fully charge each electric vehicle but this does not need to be done all in one go. Note: you do not need to account for time taken to change which car is being charged. (i) What is the shortest time needed to fully recharge the three electric vehicles? Show your workings below.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 18,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "(i) €5",
-    "marks": 3,
-    "contextNote": "Correct answer 3 marks"
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "(ii) €3",
-    "marks": 3
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "(iii) €3",
-    "marks": 3
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "(iv) €2",
-    "marks": 3
-   },
-   {
-    "id": "r-5",
-    "kind": "criterion",
-    "verbatim": "Car 1 & 2 charge for 30 minutes - total running time 30 minutes Car 2 comes out and Car 3 enters - total running time 30 minutes After 30 minutes Car 2 replaces Car 1 - total running time 60 minutes (Car 1 full) After 30 minutes Car 2 & Car 3 full - total running time 90 minutes Ans: 1.5 hours (90 minutes)",
-    "marks": 6,
-    "permittedMarks": [
-     0,
-     2,
-     4,
-     6
-    ],
-    "contextNote": "Correct answer with workings 6 marks Correct answer only 4 marks Work of merit 2 marks"
-   }
-  ],
-  "stem": "A public electric car charging point uses an algorithm to work out the cost for a customer to charge their car battery to 100%. Regular customers with loyalty cards get a discount. Examine the flowchart for the algorithm, shown in Figure 4 below, and answer the questions that follow.",
-  "questionFigureKey": "computer-science-2023-OL-paper-q13b-fig4",
-  "questionFigureIncludesPrompt": false
- },
- {
   "id": "cs-2024-hl-q1",
   "topicId": "cs-2-3",
   "conceptId": "logic-gates-have-one-or-more",
@@ -20317,5 +20259,144 @@
   "figureKey": "computer-science-2020-HL-scheme-q16b-v",
   "questionFigureKey": "computer-science-2020-HL-paper-q16b-code",
   "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-ol-q13-b-i",
+  "topicId": "cs-2-2",
+  "conceptId": "cost-will-printed-when-customer-has",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 OL Q13(b)(i)",
+  "questionText": "What cost will be printed when a customer has a car battery with a charge of 25% and no loyalty card?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€5",
+    "marks": 3,
+    "contextNote": "Correct answer 3 marks"
+   }
+  ],
+  "stem": "A public electric car charging point uses an algorithm to work out the cost for a customer to charge their car battery to 100%. Regular customers with loyalty cards get a discount. Examine the flowchart for the algorithm, shown in Figure 4 below, and answer the questions that follow.",
+  "questionFigureKey": "computer-science-2023-OL-paper-q13b-fig4",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-ol-q13-b-ii",
+  "topicId": "cs-2-2",
+  "conceptId": "cost-will-printed-when-customer-has",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 OL Q13(b)(ii)",
+  "questionText": "What cost will be printed when a customer has a car battery with a charge of 50% and a loyalty card?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€3",
+    "marks": 3,
+    "contextNote": "Correct answer 3 marks"
+   }
+  ],
+  "stem": "A public electric car charging point uses an algorithm to work out the cost for a customer to charge their car battery to 100%. Regular customers with loyalty cards get a discount. Examine the flowchart for the algorithm, shown in Figure 4 below, and answer the questions that follow.",
+  "questionFigureKey": "computer-science-2023-OL-paper-q13b-fig4",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-ol-q13-b-iii",
+  "topicId": "cs-2-2",
+  "conceptId": "cost-will-printed-when-customer-has",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 OL Q13(b)(iii)",
+  "questionText": "What cost will be printed when a customer has a car battery with a charge of 80% and no loyalty card?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€3",
+    "marks": 3,
+    "contextNote": "Correct answer 3 marks"
+   }
+  ],
+  "stem": "A public electric car charging point uses an algorithm to work out the cost for a customer to charge their car battery to 100%. Regular customers with loyalty cards get a discount. Examine the flowchart for the algorithm, shown in Figure 4 below, and answer the questions that follow.",
+  "questionFigureKey": "computer-science-2023-OL-paper-q13b-fig4",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-ol-q13-b-iv",
+  "topicId": "cs-2-2",
+  "conceptId": "lowest-possible-cost-algorithm-can-print",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 OL Q13(b)(iv)",
+  "questionText": "What is the lowest possible cost that this algorithm can print?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€2",
+    "marks": 3,
+    "contextNote": "Correct answer 3 marks"
+   }
+  ],
+  "stem": "A public electric car charging point uses an algorithm to work out the cost for a customer to charge their car battery to 100%. Regular customers with loyalty cards get a discount. Examine the flowchart for the algorithm, shown in Figure 4 below, and answer the questions that follow.",
+  "questionFigureKey": "computer-science-2023-OL-paper-q13b-fig4",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "cs-2023-ol-q13-c-i",
+  "topicId": "cs-2-2",
+  "conceptId": "shortest-time-needed-fully-recharge-electric",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 OL Q13(c)(i)",
+  "questionText": "What is the shortest time needed to fully recharge the three electric vehicles? Show your workings below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Car 1 & 2 charge for 30 minutes - total running time 30 minutes Car 2 comes out and Car 3 enters - total running time 30 minutes After 30 minutes Car 2 replaces Car 1 - total running time 60 minutes (Car 1 full) After 30 minutes Car 2 & Car 3 full - total running time 90 minutes Ans: 1.5 hours (90 minutes)",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     2,
+     4,
+     6
+    ],
+    "contextNote": "Correct answer with workings 6 marks Correct answer only 4 marks Work of merit 2 marks"
+   }
+  ],
+  "stem": "Three cars arrive at an electric vehicle charging point location. There are two charge stations so only two cars can be charged at the same time. None of the three electric vehicle’s batteries have any charge. It takes one hour to fully charge each electric vehicle but this does not need to be done all in one go. Note: you do not need to account for time taken to change which car is being charged."
  }
 ]

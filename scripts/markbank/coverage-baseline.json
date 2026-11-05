@@ -168,8 +168,8 @@
     "refsHash": "d22e9502e212efb6"
   },
   "computer-science": {
-    "cards": 558,
-    "contentHash": "736c55aa02f2f1eb",
+    "cards": 562,
+    "contentHash": "bcca55feadc6b8a3",
     "coveragePct": 100.0,
     "covered": 620,
     "excluded": 0,
@@ -180,7 +180,7 @@
       "count": 26,
       "hash": "73a50648a2aeefe2"
     },
-    "refsHash": "9f489207ee027090"
+    "refsHash": "abd1772e4acc6c54"
   },
   "construction-studies": {
     "cards": 1261,

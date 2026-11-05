@@ -750,9 +750,10 @@ const decks = [
    * 2022 Ordinary, the 16 asks the August cards missed: 189 -> 205.
    * 2021 Higher, the 9 asks the August cards missed: 293 -> 302.
    * 2021 Ordinary, the 4 asks the August cards missed: 205 -> 209.
-   * 2020 Higher, every printed ask (the bank held none): 302 -> 349. */
+   * 2020 Higher, every printed ask (the bank held none): 302 -> 349.
+   * 2023 Ordinary Q13 split (coordinator, 5 Nov): cs-2023-ol-q13, a card for all of Q13 beside its part cards, withdrawn and aliased onto cs-2023-ol-q13-b-i; (b)(i)-(iv) and (c)(i) carded: 209 -> 213. */
   ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 349, 'b07d7a033083b872f285eb38351e896537910b26eea9163f3545bd385eb049b5'],
-  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 209, '0b23541a2ef2edb043a521588cbd0309767b660022d1eccba3e1eb042b6983b8'],
+  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 213, '3ab27385128843b632c47f24d00053e48fc6c8799d81a56132666e136c6bcd00'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
   /* 2026-09-11: five agents, one per sitting, worked Engineering's open asks
@@ -1460,6 +1461,7 @@ describe('Mark Bank card preservation', () => {
     // 2021 Higher residue, 9 asks, 9 cards: 23,514.
     // 2021 Ordinary residue, 4 asks, 4 cards: 23,518.
     // 2020 Higher, 47 asks, 47 cards: 23,565.
+    // 2023 Ordinary Q13 split, -1 whole + 5 parts: 23,569.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1476,9 +1478,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_565 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_569 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_565 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_569 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
@@ -1837,9 +1839,14 @@ describe('Mark Bank card preservation', () => {
     // carded as (i) and (ii) with the old id reading its progress from (i).
     const technologyAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('tech-'));
     expect(technologyAliasIds).toEqual(['tech-2022-ol-c2d', 'tech-2024-hl-b3d']);
+    // ...and the Computer Science batch 1b splits (cs- keys, coordinator 5 Nov): a
+    // shipped card for a whole question beside that question's part cards is
+    // withdrawn onto the question's first new part card.
+    const computerScienceAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('cs-'));
+    expect(computerScienceAliasIds).toEqual(['cs-2023-ol-q13']);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
-      + chemistryAuditAliases.length + technologyAliasIds.length);
+      + chemistryAuditAliases.length + technologyAliasIds.length + computerScienceAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -1897,8 +1904,9 @@ describe('Mark Bank card preservation', () => {
     // withdrew, now alias keys: net 0), and its audit aliased eighteen
     // pre-audit ids the base build never shipped (+18).
     // Technology is a new subject, outside this tally; its alias key is not
-    // one of these cards.
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length - technologyAliasIds.length).toBe(9_768 + 18);
+    // one of these cards. Nor are Computer Science's (a new subject too).
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length - technologyAliasIds.length
+      - computerScienceAliasIds.length).toBe(9_768 + 18);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {

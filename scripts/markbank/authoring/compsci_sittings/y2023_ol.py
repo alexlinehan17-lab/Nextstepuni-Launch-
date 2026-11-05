@@ -7,9 +7,10 @@ and Section C pages 4-7, and scheme pages 4-21 were opened.
 
 cs-2023-ol-q2, -q8 and -q11 are shipped as whole questions (Q2(a)+(b),
 Q8(a)+(b), Q11(a)-(c)); each keeps that unit and carries every part's
-answer. cs-2023-ol-q13 is shipped as the whole of Q13 but its parts (a)(i),
-(a)(ii) and (c)(ii) have cards of their own; it holds the five asks no other
-card holds, (b)(i)-(iv) and (c)(i), at their printed 12 and 6.
+answer. cs-2023-ol-q13 was shipped as the whole of Q13 alongside part cards for
+(a)(i), (a)(ii) and (c)(ii); it is withdrawn (aliased onto cs-2023-ol-q13-b-i)
+and (b)(i)-(iv) and (c)(i) have cards of their own, so each printed ask has
+exactly one card (coordinator, 5 Nov).
 
 Q13(a)(i)'s table and Q16(b)'s rubric are read from the scheme's table cells
 (pages 10 and 21, compsci_lane.append_cells): the flat text welds the first
@@ -120,6 +121,10 @@ CORRECT = 'Correct implementation using solution above or similar.'
 RUBRIC = [T(21, 'High level of achievement All of the following', 'correctly and efficiently'),
           T(21, 'Moderate level of achievement Reasonable attempt', 'each of the following'),
           T(21, 'Low level of achievement Poor attempt to complete any of the following')]
+
+Q13B_STEM = P(11, 'A public electric car charging point', 'answer the questions that follow.')
+Q13B_TARIFF = S(11, '(b) 12 (3, 3, 3, 3) marks')
+WITHDRAWN = {'cs-2023-ol-q13': 'cs-2023-ol-q13-b-i'}
 
 CARDS = [
     # ── Section A ──────────────────────────────────────────────────────────
@@ -285,23 +290,31 @@ CARDS = [
                     note=S(10, 'Fully correct row 2 marks', 'Row with 2 or more correct items 1 mark')),
                crit(S(10, '3 3 8 True 3'), 2, [1]), crit(S(10, '4 4 7 True 4'), 2, [1]),
                crit(S(10, '5 5 6 True 5'), 2, [1]), crit(S(10, '6 6 5 False 6 or blank'), 2, [1])]),
-    dict(key=(13, None, None), topic='cs-2-2', qfigure='q13b-fig4', total=18,
-         printed=[S(11, '(b) 12 (3, 3, 3, 3) marks'), S(11, '(i) 6 marks')],
-         tariff_note='Q13 prints 38 (14, 12, 12); this card holds (b), 12 (3, 3, 3, 3), and '
-                     '(c)(i), 6 of (c)\'s 12 (6, 6) -- (a)(i), (a)(ii) and (c)(ii) have cards of '
-                     'their own',
-         replaces='batch 1b: shipped as all of Q13 with (a)\'s table and trace as unpriced rows, '
-                  'duplicating three other cards, while the asks it alone covers -- (b)(i)-(iv) '
-                  'and (c)(i) -- had no answer on it',
-         why='p11-12: shipped as the whole of Q13, which covers (b)(i)-(iv) and (c)(i) for the '
-             'census. (b) four costs from the Figure 4 flowchart, 3 each; (c)(i) the shortest '
-             'charging time with workings, 6 / 4 / 2',
-         stem=P(11, 'A public electric car charging point', 'answer the questions that follow.'),
-         ask=[P(11, '(i) What cost will be printed', 'this algorithm can print?'),
-              P(12, '(c) Three cars arrive at an electric vehicle', 'Show your workings below.')],
-         rows=[pt(S(11, '(i) €5'), 3, note=S(11, 'Correct answer 3 marks')),
-               pt(S(11, '(ii) €3'), 3), pt(S(11, '(iii) €3'), 3), pt(S(11, '(iv) €2'), 3),
-               crit(S(11, 'Car 1 & 2 charge for 30 minutes', 'Ans: 1.5 hours (90 minutes)'), 6, [2, 4],
+    # Q13(b)(i)-(iv) and (c)(i): shipped inside cs-2023-ol-q13, a card for all of Q13 that
+    # duplicated the part cards of (a)(i), (a)(ii) and (c)(ii); split per the coordinator's
+    # ruling of 5 Nov and the whole id withdrawn onto (b)(i) (WITHDRAWN below).
+    dict(key=(13, 'b', 'i'), topic='cs-2-2', qfigure='q13b-fig4', total=3, printed=Q13B_TARIFF,
+         why='p11: the cost for a 25% battery and no loyalty card, from Figure 4; the scheme '
+             'answers it, 3',
+         stem=Q13B_STEM, ask=P(11, 'What cost will be printed when a customer has a car battery with a charge of 25%', 'no loyalty card?'),
+         rows=[pt(S(11, '€5'), 3, note=S(11, 'Correct answer 3 marks'))]),
+    dict(key=(13, 'b', 'ii'), topic='cs-2-2', qfigure='q13b-fig4', total=3, printed=Q13B_TARIFF,
+         why='p11: the cost for a 50% battery and a loyalty card; the scheme answers it, 3',
+         stem=Q13B_STEM, ask=P(11, 'What cost will be printed when a customer has a car battery with a charge of 50%', 'a loyalty card?'),
+         rows=[pt(S(11, '€3', nth=1), 3, note=S(11, 'Correct answer 3 marks'))]),
+    dict(key=(13, 'b', 'iii'), topic='cs-2-2', qfigure='q13b-fig4', total=3, printed=Q13B_TARIFF,
+         why='p11: the cost for an 80% battery and no loyalty card; the scheme answers it, 3',
+         stem=Q13B_STEM, ask=P(11, 'What cost will be printed when a customer has a car battery with a charge of 80%', 'no loyalty card?'),
+         rows=[pt(S(11, '€3', nth=2), 3, note=S(11, 'Correct answer 3 marks'))]),
+    dict(key=(13, 'b', 'iv'), topic='cs-2-2', qfigure='q13b-fig4', total=3, printed=Q13B_TARIFF,
+         why='p11: the lowest cost the algorithm can print; the scheme answers it, 3',
+         stem=Q13B_STEM, ask=P(11, 'What is the lowest possible cost that this algorithm can print?'),
+         rows=[pt(S(11, '€2'), 3, note=S(11, 'Correct answer 3 marks'))]),
+    dict(key=(13, 'c', 'i'), topic='cs-2-2', total=6, printed=S(11, '(i) 6 marks'),
+         why='p12: the shortest time to charge three cars on two stations; the scheme works it '
+             'and prices answer with workings 6, answer only 4, work of merit 2',
+         stem=Q13C_STEM, ask=P(12, 'What is the shortest time needed to fully recharge', 'Show your workings below.'),
+         rows=[crit(S(11, 'Car 1 & 2 charge for 30 minutes', 'Ans: 1.5 hours (90 minutes)'), 6, [2, 4],
                     note=S(11, 'Correct answer with workings 6 marks', 'Work of merit 2 marks'))]),
     dict(key=(13, 'c', 'ii'), topic='cs-2-1', total=6,
          replaces='batch 1b: the stem was the bare caption "Figure 5"; name and explanation were '
