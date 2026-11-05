@@ -612,9 +612,22 @@ def reconcile_subject(subject, census=None):
         if not ref:
             unparsed.append({'id': cid, 'ref': refstr})
             continue
+        deferred = None
+        if subject == 'engineering':
+            # A deferred sitting is its own census paper, 'Deferred', and its
+            # card says so twice: the id ("eng-2022-hl-deferred-...") and the
+            # citation ("... — Deferred sitting"). The two must agree. The same
+            # rule as Economics (bb793c616), History (c1306cc45) and Physics and
+            # Home Economics on codex/home-economics-continuation-20261101.
+            deferred = bool(re.match(r'^eng-\d{4}-(?:hl|ol)-deferred-', cid))
+            if deferred != (' — Deferred sitting' in refstr):
+                unparsed.append({'id': cid, 'ref': refstr})
+                continue
+            ref['paper'] = 'Deferred' if deferred else None
         candidates = [k for k in idx
                       if k[0] == ref['year'] and k[1] == ref['level']
-                      and (ref['paper'] is None or k[2] == ref['paper'])]
+                      and ((k[2] == 'Deferred') == deferred if deferred is not None
+                           else ref['paper'] is None or k[2] == ref['paper'])]
         hit = False
         for pk in candidates:
             got = match_leaves(ref, idx[pk], sections_mode)

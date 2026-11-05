@@ -1018,6 +1018,8 @@ const decks = [
   ['accounting:ordinary', ACCOUNTING_ORDINARY, 644, '0a35e37e0360979df909459b44024d1a62b749b268594b214bf620ebaf18db86'],
 ] as const;
 
+// [count, idHash] of eng_residue/additions.json, re-pinned as each sitting lands.
+const ENGINEERING_ADDITIONS = [1715, 'c1ec971168a80aeb0ede9e80cded118f1e330946232b46c222b750ca3fbc5501'] as const;
 const idHash = (ids: readonly string[]) => createHash('sha256')
   .update([...ids].sort().join('\n'))
   .digest('hex');
@@ -1081,6 +1083,13 @@ const businessAdditionIds = new Set([
   ...businessReviewed.cards,
   ...expandBusinessRoutePools(businessRoutePools.pools),
 ].map(card => card.id).filter(id => !businessOriginalIds.has(id)));
+// Engineering lane (2026-11-04 on): the 554 pre-lane cards stay frozen in the
+// deck pins; each sitting's added cards are listed in the lane's ledger
+// (scripts/markbank/authoring/eng_residue/additions.json) and counted on top,
+// pinned by their own count and hash below. Cards a sitting rebuilds under
+// their own ids are not additions and stay in the frozen hash.
+const engineeringAdditionIds = new Set<string>((JSON.parse(readFileSync(resolve(__dirname, '..',
+  'scripts/markbank/authoring/eng_residue/additions.json'), 'utf8')) as { ids: string[] }).ids);
 // Keep the original French count/hash frozen. Reviewed additions have their own
 // source-and-route audit in frenchWriting.test.ts; never rebaseline missing IDs.
 const frenchAdditionIds = new Set([
@@ -1277,6 +1286,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
     ];
   }
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
+  if (name.startsWith('engineering:')) return ids.filter(id => !engineeringAdditionIds.has(id));
   if (name.startsWith('biology:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [...ids.filter(id => !isBiologyAdded(id)), ...biologyAliasIds.filter(id => id.includes(level))];
@@ -1339,6 +1349,50 @@ describe('Mark Bank card preservation', () => {
     expect(new Set(frozen).size, `${name}: duplicate frozen card IDs`).toBe(count);
     expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
     expect(idHash(frozen), `${name}: a card ID was removed or replaced`).toBe(hash);
+  });
+
+  it('pins the Engineering lane additions beside the frozen set', () => {
+    // One line per sitting, as each lands (eng_residue/<sitting>.py says why
+    // every card exists; rebuilt cards keep their ids and are not listed).
+    //   2021 HL: +9 (554 -> 563); q2-d-ii, q3-b-iii, q5-b-i, q5-b-iii, q7-c-i rebuilt in place
+    //   2021 OL: +18 (563 -> 581); q1-i, q3-d, q3-d-i, q3-d-ii, q7-a-i, q7-c-ii rebuilt in place
+    //   2022 HL: +10 (581 -> 591); q3-b-i rebuilt in place
+    //   2022 OL: +17 (591 -> 608; two more than its 15 open asks: Q3(d)'s OR branch carded per roman); q3-d, q3-d-i rebuilt in place
+    //   2023 HL: +12 (608 -> 620); q3-b-i, q3-b-ii, q3-b-iii rebuilt in place
+    //   2023 OL: +9 (620 -> 629); q2-c-ii, q3-d-i, q3-d-ii, q5-a-ii, q6-c-i, q7-b-i, q7-b-iv rebuilt in place
+    //   2024 HL: +9 (629 -> 638); q7-a-iii, q9-b-ii rebuilt in place
+    //   2024 OL: +16 (638 -> 654; Q6(c)(ii)/(iii)'s CNC branch carded apart, priced differently); q1-k, q2-b-iii, q2-c-ii, q3-a, q5-a-ii, q6-a, q6-b, q6-c-ii, q6-c-iii, q7-a-i, q7-b, q7-b-iv rebuilt in place
+    //   2025 HL: +10 (654 -> 664; Q3(b)(i) and (ii) on one card, one graph answering both); q3-b-iii rebuilt in place
+    //   2025 OL: +24 (664 -> 688); eng-2025-ol-q2-c-i stays withdrawn, its successor is q2-c-i-v2; q1-l, q2-c-ii, q3-a, q4-c-i, q4-c-iv, q5-a-i, q5-d, q6-c-i, q6-c-iii rebuilt in place
+    //   2026 HL: +89 (688 -> 777; the sitting's first cards; Q6(c)'s robotic-arm branch carded apart, priced differently)
+    //   2026 OL: +60 (777 -> 837; the sitting's first cards; Q7(c)'s PCB branch carded apart, priced differently)
+    //   2020 HL: +78 (837 -> 915; the sitting's first cards; Q1 Section B (n)-(r) newly in the census; Q7(c)'s CNC branch carded apart, priced differently)
+    //   2019 HL: +75 (915 -> 990)
+    //   2019 OL: +53 (990 -> 1043)
+    //   2018 HL: +76 (1043 -> 1119)
+    //   2018 OL: +54 (1119 -> 1173)
+    //   2017 HL: +76 (1173 -> 1249)
+    //   2017 OL: +50 (1249 -> 1299)
+    //   2016 HL: +73 (1299 -> 1372)
+    //   2016 OL: +48 (1372 -> 1420)
+    //   2015 HL: +66
+    //   2015 OL: +49
+    //   2014 HL: +70
+    //   2014 OL: +46
+    //   2013 HL: +72
+    //   2013 OL: +46
+    //   2012 HL: +72
+    //   2012 OL: +45
+    //   2011 HL: +70
+    //   2011 OL: +46
+    //   2010 HL: +69
+    //   2010 OL: +42
+    //   2022 HL deferred: +74
+    //   2023 HL deferred: +82
+    const live = new Set([...ENGINEERING_HIGHER, ...ENGINEERING_ORDINARY].map(card => card.id));
+    for (const id of engineeringAdditionIds) expect(live.has(id), `missing Engineering addition ${id}`).toBe(true);
+    expect(engineeringAdditionIds.size).toBe(ENGINEERING_ADDITIONS[0]);
+    expect(idHash([...engineeringAdditionIds])).toBe(ENGINEERING_ADDITIONS[1]);
   });
 
   it.each(Object.entries(peAdditions))('pins the reviewed Physical Education %s additions beside the frozen set', (_, [cards, count, hash]) => {
@@ -1431,7 +1485,8 @@ describe('Mark Bank card preservation', () => {
     // 23,254 + 87 + 1 = 23,342. Then the whole-bank audit: 2024 HL B3(d)
     // split the same way (the scheme misprints its "(ii)" as "(iii)"): 23,343.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
-      name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
+      name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length
+        : name.startsWith('engineering:') ? cards.filter(card => engineeringAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
     // live non-additions plus its consolidated per-item cards, each an alias key.
     // Geography (2026-10-23) keeps its 754 frozen IDs the same way: its 3,492
@@ -1454,7 +1509,8 @@ describe('Mark Bank card preservation', () => {
         + geographyAdditionIds.size - geographyAliasedIds.length
         + englishAdditionIds.size - englishAliasIds.length
         + biologyAdditionIds.size - biologyAliasIds.length
-        + chemistryAdded.size - chemistryWithdrawnShipped.length);
+        + chemistryAdded.size - chemistryWithdrawnShipped.length
+        + engineeringAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
