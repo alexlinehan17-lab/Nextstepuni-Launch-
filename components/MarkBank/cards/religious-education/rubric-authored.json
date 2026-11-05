@@ -1,6 +1,6 @@
 {
  "v": 1,
- "cardCount": 514,
+ "cardCount": 532,
  "cards": [
   {
    "id": "re-2026-hl-a-1-a",
@@ -76941,6 +76941,2227 @@
      15
     ],
     "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-a-1-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2016 HL Section A Q1(a)",
+   "topicId": "re-a",
+   "conceptId": "people-often-express-search-meaning-life",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "People often express their search for the meaning of life using different symbols. Referring to two examples that you have studied, explain why people often use symbols to express their search for the meaning of life.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the use of symbolic language in response to the search for meaning by giving an accurate account of the reasons why symbols are used in two examples of people searching for the meaning of life.",
+    "points": [
+     "Symbols can express people’s hopes, fears and expectations about suffering and mortality; e.g. Pandora’s Box in the Myth of Prometheus offers an explanation as to why people suffer etc.",
+     "Symbols can engage the full person and express answers to questions about good and evil e.g. the symbolism of Baptism may speak to the intellect, imagination, emotions of those who take part; the water symbolises a new life of goodness etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: A candidate gives an accurate account of the reasons why people search for the meaning of life but makes no reference to the use of symbols — Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     3
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-a-1-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2016 HL Section A Q1(b)",
+   "topicId": "re-a",
+   "conceptId": "example-monotheistic-understanding-god-developed-context",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Profile one example of how a monotheistic understanding of God developed in a context where polytheism was widespread.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of monotheism and polytheism by tracing one example of the way in which a monotheistic understanding of God developed in a situation where people were living in a polytheistic culture.",
+    "points": [
+     "e.g. Christianity was founded at a time when Palestine was ruled by the Romans who held polytheistic beliefs. Within this context Jesus preached a monotheistic understanding of God; Jesus shared his vision of the Kingdom of God with those who were familiar with a polytheistic culture — Jesus curing of the Roman Officer’s servant etc.",
+     "e.g. At the time of Muhammad the people of Mecca worshipped many gods; Muhammad and a small group of followers left for Medina and clearly established Islam as a monotheistic religion etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     3,
+     4
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-a-2-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2016 HL Section A Q2(a)",
+   "topicId": "re-a",
+   "conceptId": "did-god-create-world-modern-scientific",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Did God create the world? Explain how a modern scientific theory about how the universe began could influence a person’s response to the question above.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an ability to engage with the great questions in life by giving an accurate account of the way in which a modern scientific theory about how the universe began could influence a person’s response to the question — Did God create the world?",
+    "points": [
+     "The Big Bang Theory — Georges Lemaitre proposed the ‘hypothesis of the primeval atom’ — the universe expanded from a very small beginning, a nucleus, which had exploded and expanded rapidly; this might challenge an understanding of life where God is seen as creator as the universe is understood as having exploded out of nothing; it could also influence people to think of God as a first cause, the uncreated Creator etc.",
+     "The ‘Expanding Universe’ or the ‘Steady State’ Theory — some scientists proposed a theory that the universe always existed and that its expansion is constant; as the universe expands new matter is created so that its density remains constant; this could appeal to those who favour a religious or theological interpretation of the origins of the universe etc.",
+     "The ‘Intelligent Design’ Theory — This cosmology holds that there is a divine intelligence behind the creation of the universe since there are intelligent patterns in the way the universe works; this reinforces a literal understanding of Genesis and a religious understanding of the creation of the universe etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [
+     "Note: A candidate gives an accurate account of what could influence a person’s response to the question (Did God create the world?) but makes no explicit reference to a modern scientific theory about how the universe began — Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-a-2-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "A",
+   "questionRef": "2016 HL Section A Q2(b)",
+   "topicId": "re-a",
+   "conceptId": "taking-part-debate-where-people-discussing",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Imagine that you are taking part in a debate where people are discussing questions about the meaning of life. Examine how such questions would be addressed from two of the following points of view: ● AGNOSTICISM ● REDUCTIONISM ● SECULAR HUMANISM",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the characteristics of non-religious world views by looking closely at the way in which two of the non-religious views listed in the question could influence a person’s response to the search for the meaning of life.",
+    "points": [
+     "Agnosticism – one cannot know that God exists; use reason and science when engaging in the search for the meaning of life; disregard non-rational approaches to the search for meaning etc.",
+     "Reductionism – break things down to their smallest constituent parts in order to find what is true; look to methodical, scientific knowledge to answer questions about the meaning of life; disregard religion as non-material and therefore a non-reliable source in searching for the meaning of life etc.",
+     "Secular Humanism — The humanist idea of using reason and science to answer questions of meaning could encourage people to think for themselves and apply what they learn from science to the great questions of life e.g. Albert Camus urged people to pursue justice and solidarity as he believed that when the dignity of each individual was recognised and there was respect for human intelligence, then a meaningful society could be achieved etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers. A candidate looks closely at two of the non-religious views listed in the question but makes no explicit reference to the influence of each view on a person’s response to the search for the meaning of life — Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     5
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-b-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2016 HL Section B Q(a)",
+   "topicId": "re-b",
+   "conceptId": "inspires-understanding-jesus-portrayed-images-jesus",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Examine what inspires the understanding of Jesus that is portrayed in two images of Jesus found in any of the following: ● ART ● FILM ● LITERATURE ● MUSIC",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of images of Jesus by looking closely at what influenced two ways in which Jesus is portrayed in any of the following: art, film, literature or music.",
+    "points": [
+     "Art e.g. Jesus is presented in ‘Jesus of the People’ (Janet McKenzie) as wearing black and white robes with a circle behind his head suggestive of a halo; inspired by the artist wanting to present Jesus as someone not bound by divisions of race or gender etc.",
+     "Film e.g. in ‘The Passion of the Christ’ (Mel Gibson) Jesus is portrayed as the suffering servant; inspired by Gospel accounts of suffering and redemption in the final hours of Jesus’s life etc.",
+     "Literature e.g. in ‘Street Corner Christ’ (Patrick Kavanagh) Jesus is presented as a beggar selling ballads; inspired by Gospel accounts of how Jesus was opposed by many of the religious leaders of his time; Jesus is presented as a person who is poor and powerless but who enriches people in a spiritual way etc.",
+     "Music e.g. in ‘No Religion’ (Van Morrison) Jesus is portrayed as a saviour who presented people with difficult and challenging ideals; inspired by Jesus’ teaching in the Sermon on the Mount etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20M x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow answers where a candidate looks closely at what influenced two ways in which Jesus is portrayed in any of the following: art, film, literature or music."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     6
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-b-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2016 HL Section B Q(b)",
+   "topicId": "re-b",
+   "conceptId": "choose-early-christian-communities-listed-lifestyle",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Choose one of the Early Christian communities listed below and profile how the lifestyle of its members was influenced by their understanding of Jesus and the meaning of his life. ● CORINTH ● PHILIPPI ● THESSALONICA",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a first Christian community by accurately tracing the influence of the meaning of Jesus’ life on the lifestyle of members in one of the early Christian communities listed in the question.",
+    "points": [
+     "Corinth — their understanding of Jesus as the Son of God made them wonder about their engagement with non-Christian religious practices e.g. eating meat offered to pagan idols; Jesus’ teaching that people should be concerned with love for others fostered a sense of repentance, forgiveness and reconciliation in the community and influenced them to give to the poor and help the community in Jerusalem etc.",
+     "Philippi — their understanding of Jesus as Jewish and the way he showed people how to live according to the Kingdom of God led to disagreement as to whether they should follow Jewish traditions or rituals etc.",
+     "Thessalonica — their understanding of Jesus as the Christ led some to expect the Parousia/return of Jesus to be imminent, therefore they questioned the need to work or plan for the future etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     6,
+     7
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-c-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "C",
+   "questionRef": "2016 HL Section C Q(a)",
+   "topicId": "re-c",
+   "conceptId": "authority-structured-community-believers-world-religions",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Examine how authority is structured for the community of believers in two of the following world religions: ◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of authority in two world religions by looking closely at the way in which the guidance and direction of the community of believers is organised in two of the world religions listed in the question.",
+    "points": [
+     "Buddhism — there is no central authority and emphasis is placed on the authority of experience rather than position; Buddhist monks teach and give example, they mediate and officiate at rituals; a Sangha will have a head monk or abbot but there are very few structures outside the Sangha etc.",
+     "Christianity — at a local level usually the structure of the community revolves around a parish and diocese; the organisation of the parish is culturally and denominationally determined e.g. parishes in the Roman Catholic tradition are organised by the clergy who may engage the help of the laity, authority remains with the bishop, through the clergy in a hierarchical structure etc.",
+     "Hinduism — There is no central teaching authority in Hinduism; each individual finds his/her own path of worship and belief, according to their ability and personality; it is not necessary for a Hindu to worship at a temple, although this is more common in the celebration of important religious festivals; adherence to social conventions and structures is regarded as important etc.",
+     "Islam — The community is central to Islam and there is no hierarchical authority or body in Islam; all followers of Islam are equal before Allah and Sharia law governs the life of the community as a system of law based on the Qur’an and the Hadiths; the community organises itself around the mosque where prayers are led by the imam etc.",
+     "Judaism — Community is central and there is no hierarchical structure within Judaism; the community organises itself around the synagogue where the rabbi’s authority is based on scholarly learning; the congregation elects the rabbi etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20M x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     7,
+     8
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-c-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "C",
+   "questionRef": "2016 HL Section C Q(b)",
+   "topicId": "re-c",
+   "conceptId": "choose-world-religions-listed-religious-ceremony",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Choose two of the world religions listed below and compare how a religious ceremony every year marks an important event from each of their founding stories. ◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of two world religions by accurately identifying a similarity and/or difference in religious rituals that annually mark a significant event in the founding stories of two of the world religions listed in the question.",
+    "points": [
+     "Hinduism & Judaism e.g. on the 25th of the ninth month of the Jewish calendar the Hanukkah/Chanukah menorah is lit to recall the rededication of the Temple by the Maccabees; in Hinduism every year after the last harvest lamps are lit to mark the festival of Divali — celebrate the return of Rama and Sita and the victory of goodness etc.",
+     "Buddhism & Christianity e.g. the birth of the Buddha may be marked by religious rituals at the temple; offerings of flowers, food and candles may be made; in December every year Christians mark the birth of Jesus by attending religious services, Christmas religious rituals may include the blessing of gifts that will be given to charity etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     8
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-d-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "D",
+   "questionRef": "2016 HL Section D Q(a)",
+   "topicId": "re-d",
+   "conceptId": "jesus-preaching-law-love-right-relationship",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Profile how Jesus’ preaching on the law of love and right relationship can be seen today in the teaching of a Christian denomination about a moral issue.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of religious perspectives on morality by accurately tracing the way in which Jesus’ teaching about the law of love and right relationship can be seen in the teaching of a Christian denomination about what is right and wrong on an issue today.",
+    "points": [
+     "e.g. Roman Catholicism — Caritas in Veritate (2009); e.g. Church of Ireland — the work of The Social Justice and Theology sub-committee, reflects Jesus’ preaching on the law of love and right relationship (love of God and love of neighbour) in their teaching regarding the imperative to work for social justice by doing charitable work and helping others in need etc.",
+     "Jesus’ preaching on the law of love and right relationship is summarised in ‘do to others as you would have them do to you’, which is seen in Jesus’ forgiveness of those who persecuted him; these teachings have influenced the teaching of the Roman Catholic Church and the Anglican Church on the importance of ecumenism i.e. denominations work to eliminate sectarianism and to come to a closer understanding of religious belief and practice etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [
+     "Note: A candidate accurately outlines Jesus’ teaching about the Law of Love and Right Relationship but fails to trace it to the teaching of a Christian denomination about an issue today — Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     8,
+     9
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-d-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "D",
+   "questionRef": "2016 HL Section D Q(b)",
+   "topicId": "re-d",
+   "conceptId": "moral-theorist-studied-involved-his-her",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Name one moral theorist that you have studied and outline what is involved in his/her theory of moral development from childhood to adulthood.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of moral development by accurately identifying a moral theorist and setting out accurate information on what he/she stated regarding the stages of moral development from childhood to adulthood.",
+    "points": [
+     "Piaget: Children – morality tends to be understood as rules imposed by others; as children become more aware of others (by the age of 10) moral judgements include an awareness of the intentions of others etc.",
+     "Kohlberg: Pre-Conventional stage – morality is at first determined by avoiding punishment; motivated by rewards; Conventional stage – morality is determined by wanting to avoid disapproval; wishing to avoid criticism from authority; Post- Conventional stage – established moral codes are understood and respected; judgments are motivated by personal moral values etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [
+     "Note: A candidate sets out information on stages of moral development but does not accurately identify the name of the moral theorist with whom this work is associated — Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     9
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-f-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "F",
+   "questionRef": "2016 HL Section F Q(a)",
+   "topicId": "re-f",
+   "conceptId": "islam-world-religions-buddhism-judaism-teachings",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "ISLAM ― World Religions: BUDDHISM ― JUDAISM ― Teachings: THE FIVE VICEREGENT OF SABBATH, SCHMITTAH PRECEPTS THE EARTH & JUBILEE Outline what is involved in the teachings of two of the world religions listed above, referring to how each impacts on the lifestyle of believers.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the teaching of major religious traditions by setting out accurate information on how the teachings listed in the question of two world religions influence the lifestyle of their members.",
+    "points": [
+     "Buddhism – The Five Precepts teach that all life is precious and connected therefore it should be cared for and protected; this impacts on the lifestyle of believers e.g. many Buddhists practise this by being vegetarian etc.",
+     "Islam – According to Islamic law, the elements of nature are the common property of every creature therefore ‘Viceregent of the earth’ is the sacred duty that Allah has ascribed to the human race which impacts on the lifestyle of believers etc.",
+     "Judaism – The understanding of Sabbath, Schmittah and Jubilee show an appreciation that the earth belongs to God and the produce of the land is for the benefit of the community; this impacts on the lifestyle of believers e.g. Jewish farmers take care of the fertility of the land by regularly setting aside land as fallow etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20M x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     10
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-f-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "F",
+   "questionRef": "2016 HL Section F Q(b)",
+   "topicId": "re-f",
+   "conceptId": "effectiveness-non-violence-lifestyle-non-violence",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Discuss the effectiveness of non-violence as lifestyle and non-violence as protest in bringing peace to one conflict situation that you have studied.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of visions of peace by looking closely and drawing accurate conclusions regarding both non–violence as lifestyle and non-violence as protest, in bringing peace to a conflict situation.",
+    "points": [
+     "Conflict resolution refers to the process of resolving a dispute permanently by adequately addressing each side’s needs to the satisfaction of both; non-violence as protest involves peacefully objecting to an unjust situation; the peaceful actions of the protestors are designed to reflect the justness of their cause e.g. a rally peacefully protesting or organising a petition against a war etc.",
+     "Non–violence as lifestyle is a way of life that implies a deep integration of ‘non-violence’ into one’s philosophy of life e.g. Gandhi used a non-violent lifestyle in resolving conflict in India as he believed that non-violence was the only way that those who were responsibile for injustice would see the error of their ways; the peaceful lifestyle of Oscar Romero bishop of El Salvador, became a protest against the violence and injustice he witnessed as he tried to help the oppressed people of El Salvador etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20M x2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     10,
+     11
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-g-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "G",
+   "questionRef": "2016 HL Section G Q(a)",
+   "topicId": "re-g",
+   "conceptId": "hermitage-pilgrimage-poustinia-retreat-development-contemplative",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "• HERMITAGE • PILGRIMAGE • POUSTINIA • RETREAT Profile the development of two of the above contemplative practices, from the way in which each began to the way in which each is practised today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the prayer traditions by accurately tracing the way in which two of the contemplative traditions listed in the question changed from their origins to their contemporary form.",
+    "points": [
+     "Hermitage — a hermit is a person who lives in seclusion to seek God in solitude; by the end of the third century those who wanted to pursue a contemplative life, separated from all distractions, moved to the desert to live alone e.g. the hermitage sites at Glendalough and the Skellig Islands show how contemplatives lived the life of a hermit within the safety of the monastery; the appeal of hermitage for people today can be seen in the number of people who visit hermitage sites in places like Glendalough and St. Aidans in Ferns for a short period of time etc.",
+     "Pilgrimage — a journey undertaken for religious reasons to a sacred site; archaeological evidence suggests that Croagh Patrick was a place of pilgrimage in pre-Christian times; linked to the contemplative tradition in that it can be a penitential act; pilgrimage has developed from being a long and arduous journey that was often penitential in origin, to a popular activity to facilitate personal and spiritual development e.g. the Camino, the annual Reek Sunday pilgrimage to Croagh Patrick etc.",
+     "Poustinia — an expression of hermitage as it is the Russian word for ‘desert’; its origins are in the Middle-East where the practice arose of moving to the desert to lead a contemplative life, living alone and separated from all distractions; a place to seek God and to open one's heart to God; Catherine de Hueck Doherty developed the tradition in a modern setting by providing simple accommodation for people etc.",
+     "Retreat — a period of separation from normal routine and activity to focus on spirituality, prayer and meditation; the practice of Christian retreat has its origins in the Gospel account of how Jesus went into the wilderness after his baptism; later Lent became a time of retreat for monks; after Vatican II, lay people were encouraged to engage in retreat to practise the contemplative life etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 20,
+    "gridHead": "20Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     11,
+     12
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-g-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "G",
+   "questionRef": "2016 HL Section G Q(b)",
+   "topicId": "re-g",
+   "conceptId": "role-mystical-form-prayer-plays-major",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Discuss the role a mystical form of prayer plays in a major world religion today, making reference to the work of one mystic that you have studied.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a key figure in a mystical tradition by looking closely and drawing accurate conclusions about the role of mystical prayer in a world religion and how that may be associated with the work of one mystic.",
+    "points": [
+     "The spiritual dimension of life is evident in the inner journey undertaken by mystics which can involve prayer, contemplation, fasting as they strive for an immediate, personal encounter with the absolute; the spiritual dimension of life is evident in four characteristics associated with mysticism: o Ineffable i.e. it is experiential – it is only through experience that it can be understood etc. o Noetic i.e. a person gains knowledge in a way that transcends the intellect; a mystic will ascribe such knowledge as coming from God etc. o Transitory i.e. it is not permanent; a mystical experience is one that does not last but can occur again. A mystic may believe that it is transitory because it is God who gives the mystical experience as a gift etc. o Passive i.e. a person cannot create a mystical experience; the source and origin of mystic experiences is understood as coming from the divine etc. One of the roles such a form of prayer has in a world religion is that it deepens the faith of members by engaging the whole person in the spiritual dimension of life etc.",
+     "Christianity e.g. Thomas Merton — Cistercian monk whose spiritual autobiography ‘The Seven Story Mountain’ contributed to the faith of others through his spiritual guidance and insights; e.g. Teresa of Avila — Carmelite nun who had experiences such as levitations, visions and spiritual rapture; John of the Cross helped her in setting up a monastery at Avila; introduced reforms to the Carmelite order and was the first to catalogue stages in mystic experience etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     12,
+     13
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-i-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "I",
+   "questionRef": "2016 HL Section I Q(a)",
+   "topicId": "re-i",
+   "conceptId": "example-either-local-national-archaeological-evidence",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline one example of either local or national archaeological evidence of religious belief and practice in Pre-Christian Ireland.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show familiarity with evidence of the ancient origins of religions in Ireland by setting out accurate information on religious beliefs and practice evident in one example of archaeology from Pre-Christian Ireland.",
+    "points": [
+     "Holy wells e.g. water is viewed as life-giving and wells were probably places of worship of local deities; the Celts of fifth century Ireland had holy places associated with springs, wells and rivers; many place names derived from ‘Tobar’ (well) mark these sites etc.",
+     "e. g. Newgrange — aligned to the winter solstice which may be associated with a belief that the gods controlled the sun; the presence of cremated human ash in Newgrange suggests that the site may be associated with rituals that focused on the afterlife etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Exellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     13
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-i-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "I",
+   "questionRef": "2016 HL Section I Q(b)",
+   "topicId": "re-i",
+   "conceptId": "changing-pattern-religious-belief-europe-today",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Examine the changing pattern of religious belief in Europe today, making reference to the influence of secularisation and secularism.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of patterns of change in religious belief by looking closely at the changing pattern of religious belief in Europe and referring to how secularisation and secularism may have influenced such patterns.",
+    "points": [
+     "Surveys show that in many parts of Europe religion is seen as a private matter e.g. EVS, Red C poll, Y2K etc. show the number of active committed Christians has declined, with rural attendances at religious service higher than those in urban areas; however rates of religious belief and practice are still higher in Ireland than in other parts of Europe etc.",
+     "People throughout Europe mark key moments in life with religious rituals; e.g. 60% of initiation rites; 70% of first marriages and 80% of funerals are celebrated in church; the pattern of religious belief in Ireland is similar to other European countries that have been traditionally Roman Catholic e.g. Poland and Malta etc.; many people in Ireland today pray daily and regularly participate in liturgies; Ireland is different to former communist European countries in rates of religious affiliation e.g. 1999 - 2000 the Czech Republic had a disaffiliation rate of over 60% / Ireland’s rate was 9% (EVS) etc.",
+     "The tendency to see religion as a private matter may contribute to secularisation as religion moves out of the public sphere e.g. not allocating public holidays to days of religious significance etc.",
+     "The secularism of the communist era held the view that religion should not have any influence in society and fewer people may participate in traditional religious practices where such a policy exists etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     13,
+     14
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-j-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "J",
+   "questionRef": "2016 HL Section J Q(a)",
+   "topicId": "re-j",
+   "conceptId": "impact-descartes-ideas-relationship-between-religion",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Examine the impact that any one of Descartes’ ideas had on the relationship between religion and science.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show familiarity with a key moment in the relationship between science and theology by looking closely at the influence of one of Descartes’ ideas on the relationship between religion and science.",
+    "points": [
+     "Descartes’ idea about the separation of mind from body and that human reason was the way to find truth, led to the view that ideas about God were no longer important in the world (the disappearance of God); some religious leaders became critical of science, seeing it as completely God-less and irreligious; some scientists disregarded religion as not having any merit as an academic discipline etc.",
+     "Descartes’ idea that scepticism was the only way to be certain of anything led people to doubt everything and encouraged a drive for a systematic scientific approach to understanding the world, where people looked to science alone in order to solve the mysteries of life etc.",
+     "Descartes inaugurated the ‘Age of Reason’ which was characterised by a self-belief that by the power of the mind alone the secrets of the world could be unlocked; the relationship between religion and science became strained as people began to see themselves as ‘masters of the fish of the sea, the birds of heaven and all living animals on the earth’ instead of seeing themselves as protectors etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     14
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2016-hl-j-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2016,
+   "level": "higher",
+   "section": "J",
+   "questionRef": "2016 HL Section J Q(b)",
+   "topicId": "re-j",
+   "conceptId": "religious-reaction-there-darwin-ideas-when",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Profile one religious reaction that there was to Darwin’s ideas when his theory of evolution was first published.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2016 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of religion and science by accurately tracing one religious reaction that occurred to Darwin’s theory of evolution when it was first published.",
+    "points": [
+     "Many churchmen of the time in the Church of England saw no necessary conflict between evolution and Christian faith as they held the view that evolution emphasised the immanence of God; the Anglican churchman Charles Kingsley suggested that it was noble of God to create creatures capable of self-development; Kingsley maintained that this theory of evolution allows people to think of God as more deeply involved in nature than previous scientific thought had allowed etc.",
+     "Some religious leaders e.g. Bishop Wilberforce, responded negatively to Darwin’s ideas because the idea of evolution from more primitive forms of life seems to contradict the doctrine of people being created in the image and likeness of God; the Oxford debate between the Bishop of Oxford, Samuel Wilberforce, and T. H. Huxley typified an adversarial relationship between religion and science etc.",
+     "Fundamentalist and evangelical Protestantism found it offensive to suggest that all forms of life descend by way of gradual modification over the course of time from a common ancestor; this evolutionary picture of nature conflicts with the literalist reading of scripture and seemed to contradict the doctrine of people being created in the image and likeness of God etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     15
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
    }
   }
  ]
