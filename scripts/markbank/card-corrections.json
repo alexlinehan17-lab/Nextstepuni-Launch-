@@ -921,12 +921,6 @@
     "figureKey": "computer-science-2023-HL-paper-q10-figure"
    }
   },
-  "cs-2022-ol-q16": {
-   "reason": "The whole programming task is intentionally grouped with one shared source-code crop, but the parser also flattened that code into the prompt after the seven asks. The prompt now keeps every printed ask and description once, in paper order, while the inspected crop carries the code.",
-   "set": {
-    "questionText": "(a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below. The program above is to simulate an automated shop. The aim of the program is to accept the name of the user and then to ask the user to choose what item they would like to buy. The user will select the number of the item they wish to buy and the program outputs a message confirming the item they chose. (i) Insert a comment in an appropriate place to say “user enters first name”. (ii) Amend the program to ask for and accept the user's surname. Store the user’s surname in a variable called surname. (iii) Amend the program so that the user’s first name and their surname are printed when they are asked to select their item. (iv) Amend the program so that the items 2 = Ruler and 3 = Pen appear in the shopping list under the item 1 = Book. (v) Amend the program so that a dashed line appears above and below the available items. (vi) Amend the program so that the correct message is printed if the user purchases a ruler or pen. (vii) Amend the program to deal with invalid number entries. If the user enters any number other than the numbers 1, 2 or 3 they should be presented with an error message."
-   }
-  },
   "cs-2021-hl-q14-b-iv": {
    "reason": "The table parser stopped the marking point at a wrapped line and left doubled mathematical-letter glyphs. The complete SEC strategy is restored; the shared glyph repair renders the variables once.",
    "set": {
@@ -936,32 +930,6 @@
       "kind": "point",
       "verbatim": "A winning strategy from state (𝒏𝒏, 𝒎𝒎) where 𝒏𝒏≠𝒎𝒎 would be to even the piles. Leave (n, n) or (m, m). For 𝒎𝒎> 𝒏𝒏 this means take 𝒎𝒎−𝒏𝒏 matchsticks. For 𝒎𝒎< 𝒏𝒏 take 𝒏𝒏−𝒎𝒎 matchsticks.",
       "marks": 2
-     }
-    ]
-   }
-  },
-  "cs-2022-ol-q15-c-ii": {
-   "reason": "The task asks for any three improvements at 2 marks each. Six scheme examples are a bounded choice pool, not six required 1-mark rows.",
-   "set": {
-    "rows": [
-     {
-      "id": "r-improvements",
-      "kind": "anyN",
-      "verbatim": "Any three website-design improvements",
-      "marks": null,
-      "openList": true,
-      "group": {
-       "claimMax": 3,
-       "perOption": 2,
-       "options": [
-        "Spread content across all the webpage",
-        "Be more consistent with text size.",
-        "Use more colours that complement each other.",
-        "Make the website more accessible.",
-        "Add in a navigation bar with links",
-        "Place search bar in more prominent place on the site."
-       ]
-      }
      }
     ]
    }

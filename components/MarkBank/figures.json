@@ -57430,5 +57430,73 @@
   "year": 2022,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q1-table": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q1-table.png",
+  "md5": "e09ccae99f7ab9cd12036f688c48428c",
+  "alt": "The declarations printed with Question 1, a = 2 and b = 4, above a table whose print statement column lists print(a+b), print(b-a), print(a*b), print(a/b) and print(a==b), and whose Result column is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q1",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q3-figs": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q3-figs.png",
+  "md5": "f70dc051201fdef89e569cf266561411",
+  "alt": "Figure 2, the pseudocode: Start; Set all pins to off; Set pin 0 to on; Pause for 2 seconds; Set pin 0 to off; Set pin 1 to on; Pause for 2 seconds; Set pin 1 to off; Set pin 2 to on. Below it, Figure 3: a Micro:bit with a green LED wired to pin 0, a yellow LED to pin 1 and a red LED to pin 2, each returning to GND.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q3",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q4-fig4": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q4-fig4.png",
+  "md5": "849871e422b5dcd2480855afa906ea5d",
+  "alt": "Figure 4: a photograph of an open desktop computer case showing its motherboard, fans, cards and drive bays.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q4",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-paper-q15-fig11": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q15-fig11.png",
+  "md5": "db56407cb0808b38f0a4bb3c5a42d2b9",
+  "alt": "Figure 11, turned upright (the paper prints it on its side): a screenshot of the website www.irishwrecksonline.net, A Diver's Guide to the Ship Wrecks around Ireland, with a green map of Ireland in the centre, small text in several colours, and a column of menu buttons on a blue background.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q15(c)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-scheme-q14c": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-scheme-q14c.png",
+  "md5": "75de241506568bdf64bc7036af59db9d",
+  "alt": "The marking scheme's example solution to Question 14(c), a decision tree: Student name, then Is student in 6th year?. One branch asks Does Student have parental permission, ending in Permission to leave or No Permission; the other asks Does student have a sibling in 6th year, ending in No Permission or in the parental permission question with the same two outcomes.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(c)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2022-OL-scheme-q16": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-scheme-q16.png",
+  "md5": "d7539a53ff57b9603622dc79afa40a1e",
+  "alt": "The marking scheme's possible solution to Question 16(a), lines 1 to 27: a comment # user enters first name; firstName and surname read with input; print(\"Hello\", firstName, surname, ...); the items 1 = Book, 2 = Ruler and 3 = Pen printed between two dashed lines; shoppingItem read with int(input()); then if / elif branches printing You bought a book, a ruler or a pen, and else printing Invalid choice. Goodbye.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q16(a)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission"
  }
 }

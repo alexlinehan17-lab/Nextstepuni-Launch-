@@ -86,8 +86,13 @@ class LaneError(SystemExit):
 #   U+F02D  Symbol 0x2D, a dash bullet: 2020 HL Section C p7 (part (b)'s two
 #           differences), rendered at 200 dpi and looked at; folded to a
 #           hyphen as glyphmap.json already reads it.
+#   U+123A, U+123B, U+0D4D  Cambria's maths brackets and not-equals sign,
+#           filed under Ethiopic and Malayalam code points: 2021 HL paper p22
+#           (Q14(b)(iv) "state (n, m), where n != m", (v) "(n, n, n)"),
+#           rendered at 170 dpi and looked at; folded to '(', ')' and U+2260.
 LANE_GLYPHS = {'\uf0e0': '\u2192', '\uf0b7': '\u2022', '\uf0fc': '\u2713', '\uf04a': '\u263a',
-               '\u0d45': '+', '\u0d46': '\u2212', '\uf0a7': '\u2022', '\uf02d': '-'}
+               '\u0d45': '+', '\u0d46': '\u2212', '\uf0a7': '\u2022', '\uf02d': '-',
+               '\u123a': '(', '\u123b': ')', '\u0d4d': '\u2260'}
 
 
 def fold(text):
@@ -213,6 +218,17 @@ def ladder(options, items, head=None, note=None, instruction=None, route=None):
     valid reason") are lifted into the note before the scheme's ladder."""
     return {'kind': 'ladder', 'options': options, 'items': items, 'head': head,
             'note': note, 'instruction': instruction, 'route': route}
+
+
+def ofpart(label, row):
+    """Tie a row of a whole-question card to its printed part (coordinator,
+    5 Nov: a short question with parts stays one card, but each row must show
+    which part it answers). `label` is the part's printed label lifted from
+    the paper, P(page, '(a)'): it heads the row's text (a point or criterion)
+    or its note (a menu, whose header is not its text)."""
+    row = dict(row)
+    row['part'] = label
+    return row
 
 
 def ask_row():
@@ -512,6 +528,19 @@ def doc_for(q):
 
 
 def build_row(sitting, spec, i, question_text, where):
+    if spec.get('part') is not None:
+        label = sitting.lift(spec['part'])
+        if not re.fullmatch(r'\([a-z]\)|\([ivx]+\)', label):
+            raise LaneError(f'{where}: part label {label!r} is not a printed (a)/(i) label')
+        spec = dict(spec)
+        del spec['part']
+        row = build_row(sitting, spec, i, question_text, where)
+        if row['kind'] in ('anyN',) or spec['kind'] == 'ladder':
+            row['contextNote'] = f"{label} {row.get('contextNote', '')}".strip()
+        else:
+            row['verbatim'] = f"{label} {row['verbatim']}" if ' — ' in row['verbatim'] \
+                else f"{label} — {row['verbatim']}"
+        return row
     rid = f'r-{i + 1}'
     kind = spec['kind']
     if kind == 'unprinted':
@@ -725,10 +754,13 @@ def figure_key(year, level, name):
     return f'{SUBJECT}-{year}-{level.upper()}-paper-{name}'
 
 
-def crop(doc, page, rect, alt, ref, solution=False):
+def crop(doc, page, rect, alt, ref, solution=False, rotate=0):
     """One printed region: `doc` '038'/'040'/'scheme', one-based `page`, `rect`
-    in PDF points (x0, y0, x1, y1), measured on the page and opened before use."""
-    return {'parts': [(doc, page, rect)], 'alt': alt, 'ref': ref, 'solution': solution}
+    in PDF points (x0, y0, x1, y1), measured on the page and opened before use.
+    `rotate` (degrees) turns a figure the paper prints on its side upright
+    (2022 OL Figure 11: rotate=90)."""
+    return {'parts': [(doc, page, rect)], 'alt': alt, 'ref': ref, 'solution': solution,
+            'rotate': rotate}
 
 
 def stack(parts, alt, ref, solution=False):
@@ -748,7 +780,10 @@ def render_crop(sitting, spec):
         d = sitting.docs['scheme' if doc == 'scheme' else doc]
         page = d[pageno - 1]
         clip = pymupdf.Rect(*rect) & page.rect
-        pixes.append(page.get_pixmap(matrix=pymupdf.Matrix(SCALE, SCALE), clip=clip, alpha=False))
+        matrix = pymupdf.Matrix(SCALE, SCALE)
+        if spec.get('rotate'):
+            matrix = matrix.prerotate(spec['rotate'])
+        pixes.append(page.get_pixmap(matrix=matrix, clip=clip, alpha=False))
     if len(pixes) == 1:
         return pixes[0]
     width = max(p.width for p in pixes)
