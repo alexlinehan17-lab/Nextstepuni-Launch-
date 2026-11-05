@@ -150,6 +150,186 @@
   ]
  },
  {
+  "file": "technology-2016-OL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a child's chair cut from two dark panels with round holes, joined by a wooden seat and a yellow horned backrest, with an arrow lettered A pointing at its side.",
+  "questionRef": "2016 OL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   95,
+   105,
+   270,
+   280
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of two toothed wheels, a small one and a large one, joined by a loop of roller chain.",
+  "questionRef": "2016 OL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   342,
+   597,
+   530,
+   711
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a blue bench-top machine with a C-shaped arm over a round cutting table, a clear guard and a hold-down foot.",
+  "questionRef": "2016 OL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   354,
+   90,
+   530,
+   266
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing in pictorial view of a claw hammer.",
+  "questionRef": "2016 OL Section A Q12",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   218,
+   601,
+   397,
+   777
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A robotic arm holding its hand out, the load of 25 N at the hand and the distance 0.35 m from the elbow to the hand marked below it.",
+  "questionRef": "2016 OL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   362,
+   470,
+   575,
+   560
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a black plug-in power adapter, front and side, with a yellow voltage selector dial.",
+  "questionRef": "2016 OL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   305,
+   78,
+   542,
+   230
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit: a switch, a variable resistor and a sensor position lettered A feeding a transistor through a resistor; the transistor switches a relay with a protective diode, and the relay contacts switch a motor M on a separate battery.",
+  "questionRef": "2016 OL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   45,
+   252,
+   290,
+   422
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A logic circuit, inputs A and B into gate X giving C, and C into gate Y giving D; beside it a truth table with columns A, B, C and D, A and B filled in (00, 01, 10, 11) and C and D blank.",
+  "questionRef": "2016 OL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   412,
+   636,
+   560,
+   790
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q4a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a packet of crisps and of a bronze statue of a sports player.",
+  "questionRef": "2016 OL Section C Q4(a)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   374,
+   100,
+   540,
+   216
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table of the percentage of customers giving each reason: Overpriced 50, Wait time 30, Unfriendly staff 9, Food not fresh 7, Too noisy 4.",
+  "questionRef": "2016 OL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   100,
+   248,
+   505,
+   302
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q5a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a round wooden bowl turned from a single piece of timber.",
+  "questionRef": "2016 OL Section C Q5(a)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   54,
+   110,
+   199,
+   193
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a pack of brightly coloured baby feeding spoons.",
+  "questionRef": "2016 OL Section C Q5(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   422,
+   625,
+   555,
+   809
+  ]
+ },
+ {
   "file": "technology-2017-HL-paper-secA-q2-art.png",
   "kind": "figure",
   "truncated": false,
@@ -6150,6 +6330,216 @@
   ]
  },
  {
+  "file": "technology-2016-OL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of an orange wristband activity tracker, one showing its digital display.",
+  "questionRef": "2016 OL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   352,
+   102,
+   534,
+   210
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a bike rack carved like a giant wooden comb, lying on a pavement with bicycles parked in its teeth.",
+  "questionRef": "2016 OL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   88,
+   323,
+   267,
+   445
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a folding Solar Paper charger, two panels of solar cells on a table, connected by a cable to a smart phone, with an arrow to the panels labelled Solar Paper.",
+  "questionRef": "2016 OL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   370,
+   572,
+   535,
+   728
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of the inside of a 3-pin plug: the three coloured wires screwed to the pins, the cable grip, and an arrow lettered A to the fuse.",
+  "questionRef": "2016 OL Section A Q4",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   82,
+   110,
+   229,
+   270
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a bicycle whose frame is a white 3D-printed lattice, with bright green tyres.",
+  "questionRef": "2016 OL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   363,
+   624,
+   527,
+   745
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a green LED mounted on a printed circuit board beside a chip and resistors.",
+  "questionRef": "2016 OL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   368,
+   317,
+   526,
+   416
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a green pet water and food dispenser: a base lettered A, a water container lettered B on an upright column lettered C, and a food bowl.",
+  "questionRef": "2016 OL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   370,
+   210,
+   575,
+   412
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secB-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a model aeroplane made from card.",
+  "questionRef": "2016 OL Section B Q2(d)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   402,
+   662,
+   564,
+   778
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a white drone with a camera attached beneath it, and an enlarged view of the camera on its rotating mount.",
+  "questionRef": "2016 OL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   52,
+   268,
+   242,
+   436
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q1a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a purple furry toy with large ears and eyes.",
+  "questionRef": "2016 OL Section C Q1(a)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   432,
+   98,
+   552,
+   218
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a grey jointed robotic arm on a round base, with a gripper at its end.",
+  "questionRef": "2016 OL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   54,
+   258,
+   185,
+   414
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two resistors, 200 ohms and 100 ohms, connected in parallel between +V and 0V.",
+  "questionRef": "2016 OL Section C Q2(c)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   440,
+   478,
+   560,
+   582
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A perceptual map: a vertical axis from Low Quality to High Quality crossing a horizontal axis from Low Price to High Price, with five products plotted as dots and a New Product? label in the high quality, low price quarter.",
+  "questionRef": "2016 OL Section C Q4(c)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   42,
+   460,
+   236,
+   596
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two magazine racks: a Metal Rack of scrolled black bars with its Main body and Leg labelled, and a red bent-acrylic Plastic Rack with a slot lettered A and its outline shown as Detail of slot A.",
+  "questionRef": "2016 OL Section C Q5(b)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   40,
+   228,
+   580,
+   374
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -6447,6 +6837,36 @@
    228,
    262,
    345
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q1d-i-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two drawings headed Shuttle Valve, each a ball in a horizontal pipe between inlets marked Source 1 and Source 2, with an outlet marked Out below: in the first the ball is pushed to the right, in the second to the left.",
+  "questionRef": "2016 OL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   268,
+   592,
+   575,
+   688
+  ]
+ },
+ {
+  "file": "technology-2016-OL-paper-secC-q1d-ii-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a small black air compressor with a pressure gauge and a car-socket plug.",
+  "questionRef": "2016 OL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   452,
+   692,
+   560,
+   800
   ]
  },
  {
@@ -8344,5 +8764,101 @@
   "description": "The marking scheme's own photographs for 2016 HL Section C 5(b)(iii), as the State Examinations Commission printed them: the two-part chassis joined at its centre, and a close-up of the joint, captioned Cylinder has splayed edges to prevent the two parts splitting.",
   "solution": true,
   "questionRef": "2016 HL Section C Q5(b)(iii)"
+ },
+ {
+  "file": "technology-2016-OL-scheme-secA-q7.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2016 OL Section A Q7, as the State Examinations Commission printed it: an outline side view of the chair, a tall rounded shape with the round hole near its top, the seat edge and the angled backrest.",
+  "solution": true,
+  "questionRef": "2016 OL Section A Q7"
+ },
+ {
+  "file": "technology-2016-OL-scheme-secA-q11.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2016 OL Section A Q11(i), as the State Examinations Commission printed it: the I-shaped profile of a universal beam.",
+  "solution": true,
+  "questionRef": "2016 OL Section A Q11"
+ },
+ {
+  "file": "technology-2016-OL-scheme-secB-q2b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own circuit for 2016 OL Section B 2(b)(iii), as the State Examinations Commission printed it: a battery, a switch, an LDR and a variable resistor as a potential divider driving a transistor through a base resistor, the transistor switching a lamp.",
+  "solution": true,
+  "questionRef": "2016 OL Section B Q2(b)(iii)"
+ },
+ {
+  "file": "technology-2016-OL-scheme-secC-q1a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own flowchart for 2016 OL Section C 1(a)(i), as the State Examinations Commission printed it: Start, the decision Switch? (N loops back), Tune, Lights on, Wait 10, Lights off, Stop.",
+  "solution": true,
+  "questionRef": "2016 OL Section C Q1(a)(i)"
+ },
+ {
+  "file": "technology-2016-OL-scheme-secC-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2016 OL Section C 1(b)(i): an orange robot arm on a round base, curved arrows at its joints.",
+  "solution": true,
+  "questionRef": "2016 OL Section C Q1(b)(i)"
+ },
+ {
+  "file": "technology-2016-OL-scheme-secC-q1d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own symbol for 2016 OL Section C 1(d)(i): the pneumatic shuttle valve, a ball between two inlets with an outlet at the top.",
+  "solution": true,
+  "questionRef": "2016 OL Section C Q1(d)(i)"
+ },
+ {
+  "file": "technology-2016-OL-scheme-secC-q2b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own redrawn circuit for 2016 OL Section C 2(b)(ii), as the State Examinations Commission printed it: the fan circuit with a thermistor, marked with its temperature symbol, at A.",
+  "solution": true,
+  "questionRef": "2016 OL Section C Q2(b)(ii)"
+ },
+ {
+  "file": "technology-2016-OL-scheme-secC-q2d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own truth table for 2016 OL Section C 2(d)(ii): columns A, B, C and D over the four combinations of A and B.",
+  "solution": true,
+  "questionRef": "2016 OL Section C Q2(d)(ii)"
+ },
+ {
+  "file": "technology-2016-OL-scheme-secC-q4b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own Pareto chart for 2016 OL Section C 4(b)(i), as the State Examinations Commission printed it: bars for Overpriced, Wait time, Unfriendly staff, Food not fresh and Too Noisy in falling order, against Cumulative Percent (%) from 0 to 100, with the cumulative curve rising through 50, 80, 89, 96 and 100 and a dashed line at 80.",
+  "solution": true,
+  "questionRef": "2016 OL Section C Q4(b)(i)"
+ },
+ {
+  "file": "technology-2016-OL-scheme-secC-q4b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer for 2016 OL Section C 4(b)(ii), as the State Examinations Commission printed it: the table with a Cumulative Percent (%) row added (50, 80, 89, 96, 100), and the cumulative curve plotted on the Pareto chart.",
+  "solution": true,
+  "questionRef": "2016 OL Section C Q4(b)(ii)"
+ },
+ {
+  "file": "technology-2016-OL-scheme-secC-q5b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2016 OL Section C 5(b)(ii): a row of overlapping drilled holes forming the slot.",
+  "solution": true,
+  "questionRef": "2016 OL Section C Q5(b)(ii)"
+ },
+ {
+  "file": "technology-2016-OL-scheme-secC-q5c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2016 OL Section C 5(c)(i): a pop rivet and the joint it makes, captioned Pop rivet joint.",
+  "solution": true,
+  "questionRef": "2016 OL Section C Q5(c)(i)"
  }
 ]

@@ -988,6 +988,101 @@ REVIEWED.update({
         'https://www.rugbyworldcup.com/supporters.',
 })
 
+# 2016 Ordinary (Technology lane, 5 November 2026).
+REVIEWED.update({
+    'technology-2016-OL-paper-secA-q1-art':
+        'Photographs of an orange wristband activity tracker, one showing its '
+        'digital display.',
+    'technology-2016-OL-paper-secA-q2-art':
+        'Photograph of a bike rack carved like a giant wooden comb, lying on a '
+        'pavement with bicycles parked in its teeth.',
+    'technology-2016-OL-paper-secA-q4-art':
+        'Drawing of the inside of a 3-pin plug: the three coloured wires '
+        'screwed to the pins, the cable grip, and an arrow lettered A to the '
+        'fuse.',
+    'technology-2016-OL-paper-secA-q6-art':
+        'Photograph of a bicycle whose frame is a white 3D-printed lattice, '
+        'with bright green tyres.',
+    'technology-2016-OL-paper-secA-q7-art':
+        'Photograph of a child\'s chair cut from two dark panels with round '
+        'holes, joined by a wooden seat and a yellow horned backrest, with an '
+        'arrow lettered A pointing at its side.',
+    'technology-2016-OL-paper-secA-q8-art':
+        'Photograph of a green LED mounted on a printed circuit board beside a '
+        'chip and resistors.',
+    'technology-2016-OL-paper-secA-q9-art':
+        'Photograph of two toothed wheels, a small one and a large one, joined '
+        'by a loop of roller chain.',
+    'technology-2016-OL-paper-secA-q10-art':
+        'Photograph of a blue bench-top machine with a C-shaped arm over a '
+        'round cutting table, a clear guard and a hold-down foot.',
+    'technology-2016-OL-paper-secA-q12-art':
+        'Line drawing in pictorial view of a claw hammer.',
+    'technology-2016-OL-paper-secB-q2b-art':
+        'Photograph of a green pet water and food dispenser: a base lettered A, '
+        'a water container lettered B on an upright column lettered C, and a '
+        'food bowl.',
+    'technology-2016-OL-paper-secB-q2d-art':
+        'Photograph of a model aeroplane made from card.',
+    'technology-2016-OL-paper-secB-q3b-art':
+        'Photograph of a white drone with a camera attached beneath it, and an '
+        'enlarged view of the camera on its rotating mount.',
+    'technology-2016-OL-paper-secC-q1a-art':
+        'Photograph of a purple furry toy with large ears and eyes.',
+    'technology-2016-OL-paper-secC-q1b-art':
+        'Photograph of a grey jointed robotic arm on a round base, with a '
+        'gripper at its end.',
+    'technology-2016-OL-paper-secC-q1c-art':
+        'A robotic arm holding its hand out, the load of 25 N at the hand and '
+        'the distance 0.35 m from the elbow to the hand marked below it.',
+    'technology-2016-OL-paper-secC-q1d-i-art':
+        'Two drawings headed Shuttle Valve, each a ball in a horizontal pipe '
+        'between inlets marked Source 1 and Source 2, with an outlet marked Out '
+        'below: in the first the ball is pushed to the right, in the second to '
+        'the left.',
+    'technology-2016-OL-paper-secC-q1d-ii-art':
+        'Photograph of a small black air compressor with a pressure gauge and a '
+        'car-socket plug.',
+    'technology-2016-OL-paper-secC-q2a-art':
+        'Photographs of a black plug-in power adapter, front and side, with a '
+        'yellow voltage selector dial.',
+    'technology-2016-OL-paper-secC-q2b-art':
+        'Circuit: a switch, a variable resistor and a sensor position lettered A '
+        'feeding a transistor through a resistor; the transistor switches a '
+        'relay with a protective diode, and the relay contacts switch a motor M '
+        'on a separate battery.',
+    'technology-2016-OL-paper-secC-q2c-art':
+        'Two resistors, 200 ohms and 100 ohms, connected in parallel between +V '
+        'and 0V.',
+    'technology-2016-OL-paper-secC-q2d-art':
+        'A logic circuit, inputs A and B into gate X giving C, and C into gate Y '
+        'giving D; beside it a truth table with columns A, B, C and D, A and B '
+        'filled in (00, 01, 10, 11) and C and D blank.',
+    'technology-2016-OL-paper-secC-q4a-art':
+        'Photographs of a packet of crisps and of a bronze statue of a sports '
+        'player.',
+    'technology-2016-OL-paper-secA-q3-art':
+        'A photograph of a folding Solar Paper charger, two panels of solar '
+        'cells on a table, connected by a cable to a smart phone, with an arrow '
+        'to the panels labelled Solar Paper.',
+    'technology-2016-OL-paper-secC-q4b-art':
+        'A table of the percentage of customers giving each reason: Overpriced '
+        '50, Wait time 30, Unfriendly staff 9, Food not fresh 7, Too noisy 4.',
+    'technology-2016-OL-paper-secC-q4c-art':
+        'A perceptual map: a vertical axis from Low Quality to High Quality '
+        'crossing a horizontal axis from Low Price to High Price, with five '
+        'products plotted as dots and a New Product? label in the high quality, '
+        'low price quarter.',
+    'technology-2016-OL-paper-secC-q5a-art':
+        'Photograph of a round wooden bowl turned from a single piece of timber.',
+    'technology-2016-OL-paper-secC-q5b-art':
+        'Two magazine racks: a Metal Rack of scrolled black bars with its Main '
+        'body and Leg labelled, and a red bent-acrylic Plastic Rack with a slot '
+        'lettered A and its outline shown as Detail of slot A.',
+    'technology-2016-OL-paper-secC-q5d-art':
+        'Photograph of a pack of brightly coloured baby feeding spoons.',
+})
+
 # 2016 Higher (Technology lane, 5 November 2026).
 REVIEWED.update({
     'technology-2016-HL-paper-secA-q6-art':
@@ -1524,6 +1619,7 @@ REJECTED = {
     'technology-2025-OL-paper-secA-q3-art': 'carries both asks and their answer boxes',
     'technology-2019-HL-paper-secC-q3d-art': 'the event logo, which no part asks about; (i) points at the URL box (by-eye rect)',
     'technology-2016-HL-paper-secA-q10-art': "the cropper's whole-band cut; (i) and (ii) each point at their own picture (by-eye rects keyed by roman)",
+    'technology-2016-OL-paper-secB-q2a-art': "the cropper's cut of 2(a)'s band; 2(a) points at the dispenser printed at 2(b) (FIGURE_SHARED)",
     # Superseded by a by-eye rect of the whole circuit (tech_crops.BY_EYE).
     # 'technology-2021-HL-paper-secC-q2b-art': the 555 chip alone, no circuit
 }

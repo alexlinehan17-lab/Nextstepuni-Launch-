@@ -575,6 +575,15 @@ def block_units(block, leaves, year, level):
         # parts "(i)" and "(iii)" for the paper's (i) and (ii) -- and the
         # block prints as many as the paper does: read them in printed order.
         remap = dict(zip(romans, paper))
+    # A roman the scheme omits altogether -- no head, no answer (2016 Ordinary
+    # 1(a)(ii)) -- while its split still prices it: tech_crops.UNPRINTED
+    # names it, and the split is read over the paper's romans in order.
+    missing = [r for r in paper if r not in romans
+               and (year, level, section, q, letter, r) in TC.UNPRINTED]
+    if romans and missing and not remap and set(romans) | set(missing) == set(paper) \
+            and len(block.terms) == len(paper):
+        return [(r, block.part_lines(r) if r in romans else [], block.terms[i],
+                 [(section, q, letter, r)]) for i, r in enumerate(paper)]
     if romans and all(block.marks_for(r) is not None for r in romans) \
             and all((section, q, letter, remap.get(r, r)) in leaves for r in romans):
         out = []
@@ -898,6 +907,11 @@ def author(bind_figures=True):
                     if tail_move and piece.endswith(tail_move[1]):
                         piece = piece[:-len(tail_move[1])].rstrip()
                     piece = re.sub(r'(?:\s*\b[A-Z][a-z]{1,12}:\s*)+$', '', piece).strip()
+                    # The paper's "OR" between two optional parts closes the
+                    # piece AFTER a picture's lettering (2016 Ordinary 4(c):
+                    # "...Low Price High Price Low Quality OR"), and a trailing
+                    # word that is not lettering stops the strip; it comes off first.
+                    piece = re.sub(r'\s+OR\s*$', '', piece)
                     piece = TC.strip_labels(piece, paper_labels)
                     piece = TRAILING_LABEL.sub('', piece).strip()
                     piece = re.sub(r'\s+OR\s*$', '', piece)
@@ -970,6 +984,11 @@ def author(bind_figures=True):
                 numbered_list = [p for p in points if re.match(r'\d\.\s', p)]
                 numbered_list = numbered_list if (
                     len(numbered_list) >= 2 and re.match(r'1\.\s', numbered_list[0])) else []
+                # Where each roman starts: a whole-block card's ask joins them
+                # as "(i) Name ... (ii) Give ...", and a reprint of (ii)
+                # opens as (ii) does, not as the ask's first word.
+                ask_starts = {t[0] for t in (_tokens(seg) for seg in
+                              re.split(r'\((?:i{1,3}|iv|v)\)', ask)) if t}
                 kept = [p for p in points
                         if p in numbered_list
                         or (SCHEME_NORM(p) not in bare
@@ -984,7 +1003,14 @@ def author(bind_figures=True):
                             # word of its ask and is the answer.
                             and not (len(SCHEME_WORDS(p)) >= 6
                                      and cue_score(p, ask) >= 0.85
-                                     and _tokens(p)[:1] == _tokens(ask)[:1])
+                                     and _tokens(p)[:1]
+                                     and _tokens(p)[0] in ask_starts)
+                            # ...and the stimulus reprinted by a word -- "the
+                            # frame structures of buildings" for the paper's
+                            # "structure" (2016 Ordinary Q11).
+                            and not (len(SCHEME_WORDS(p)) >= 6 and pieces
+                                     and cue_score(p, ' '.join(pieces)) >= 0.85
+                                     and _tokens(p)[:1] == _tokens(' '.join(pieces))[:1])
                             # ...and a lead-in that ends in a colon needs
                             # only most of its words in the ask: "Describe,
                             # with specific examples, each of the following
@@ -1030,7 +1056,8 @@ def author(bind_figures=True):
                     # shipped as its 8-mark answer.
                     points = []
                 points = [strip_ask_label(p, raw_ask) for p in points]
-                ask_row = bool(solution and solution in TC.ASK_ONLY)
+                unprinted_note = TC.UNPRINTED.get((year, level, section, q, letter, roman))
+                ask_row = bool(solution and solution in TC.ASK_ONLY) or bool(unprinted_note)
                 if not ask_row and (not points or graphic_fragments(points)):
                     # The answer is a DRAWING: the text layer holds nothing,
                     # or the words read off a flowchart's boxes and a truth
@@ -1102,9 +1129,10 @@ def author(bind_figures=True):
                     trimmed = 0
                     rows = [{'id': 'r-1', 'kind': 'criterion',
                              'verbatim': UNPRINTED_ANSWER, 'marks': total,
-                             'contextNote': ('The scheme prints no drawing for this '
-                                             'part, only how the sketch is marked: '
-                                             f'{block.notation}'),
+                             'contextNote': (unprinted_note
+                                             or ('The scheme prints no drawing for this '
+                                                 'part, only how the sketch is marked: '
+                                                 f'{block.notation}')),
                              'unprinted': True}]
                     model = {'kind': 'fixed'}
                 elif ask_row:

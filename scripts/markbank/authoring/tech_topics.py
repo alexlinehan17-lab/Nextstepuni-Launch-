@@ -241,6 +241,14 @@ TOPIC_OVERRIDES = {
     'tech-2016-hl-b3c-ii': 'tech-core-structures', # chain and belt drives
     'tech-2016-hl-b3d-i': 'tech-core-project',     # Gantt chart
     'tech-2016-hl-b3d-ii': 'tech-core-project',
+    # 2016 Ordinary.
+    'tech-2016-ol-a5-i': 'tech-core-project',      # Gantt chart
+    'tech-2016-ol-a5-ii': 'tech-core-project',
+    'tech-2016-ol-a6': 'tech-core-materials',      # 3D printing a prototype
+    'tech-2016-ol-b2a-ii': 'tech-core-structures', # mechanism to adjust the container's height
+    'tech-2016-ol-b2c-i': 'tech-core-project',     # product recall (quality)
+    'tech-2016-ol-b2c-ii': 'tech-core-project',
+    'tech-2016-ol-b3b-ii': 'tech-core-structures', # mechanism to rotate the camera
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]

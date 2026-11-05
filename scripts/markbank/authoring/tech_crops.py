@@ -1778,6 +1778,8 @@ LABEL_ZONES.setdefault((2018, 'hl'), []).extend([
 # Answer lines a scheme prints after the tariff that closes their block,
 # before the next head: (year, level) -> lines, exactly as extracted.
 LATE_ANSWER_LINES = {
+    (2016, 'ol'): ('TMO in rugby, hawk eye in GAA, flight simulation of golf balls, etc.',
+                   'Semi-Permanent Joint: Nut and bolt joint, etc.'),
     (2017, 'ol'): ('Cloud storage, USB flash drives, DVDs/CDs, etc.', 'Green.',
                    'assembly techniques, safety elements, testing, etc.'),
 }
@@ -1787,6 +1789,9 @@ LATE_ANSWER_LINES = {
 # the "(ii)" printed level with its top). Label zones do the stripping.
 SOLUTION_NOT_ZONE = {
     'technology-2016-HL-scheme-secC-q1b-i',
+    # 2016 Ordinary 4(b)(ii): its crop spans the table, the (i)/(ii) heads
+    # and the chart; the table and chart zones strip the lettering.
+    'technology-2016-OL-scheme-secC-q4b-ii',
 }
 
 # Scheme .md line fixes that only move or remove printed lettering, applied
@@ -1812,6 +1817,13 @@ MD_LINE_FIX = {
         (r'^pivot/$', ''),
         (r'^mo-$', ''),
     ],
+    (2016, 'ol'): [
+        # 4(b)(iii): its head is printed after the block's tariff; the
+        # tariff moves below it.
+        (r'^\(20 Marks, 8\+6\+6\)$', ''),
+        (r'^(\(iii\) From the graph, determine the two main reasons for customer complaints\.)$',
+         r'\1\n(20 Marks, 8+6+6)'),
+    ],
 }
 
 # Scheme lines inside a drawing's rectangle that are NOT its lettering and
@@ -1827,6 +1839,23 @@ MD_KEEP = {
 # (its band is the tariff): the card is the ask at that tariff, told so.
 NO_DRAWING = {
     (2018, 'ol', 'A', 7, None, None),
+}
+
+# Printed asks whose scheme prints the question and no answer at all, each
+# checked on the scheme page: the card's one row is the shared unprinted row
+# (types/markBank.ts UNPRINTED_ANSWER) at the part's printed tariff, with
+# this note. (year, level, section, q, letter, roman) -> note.
+UNPRINTED = {
+    (2016, 'ol', 'C', 1, 'a', 'ii'):
+        'The marking scheme prints no answer, and no head, for this part (page '
+        '4: the (10 Marks, 6+4) block holds (i) alone); it is marked out of 4.',
+    (2016, 'ol', 'C', 5, 'a', 'ii'):
+        'The marking scheme prints this part\'s question and no answer under it '
+        '(page 10); it is marked out of 4.',
+    (2016, 'ol', 'C', 4, 'b', 'iii'):
+        'The marking scheme prints this part\'s question after the tariff and no '
+        'answer for it (page 8); its Pareto chart is shown for (i) and (ii). It '
+        'is marked out of 6.',
 }
 
 # 2018 Ordinary. PAPER pictures each stem or ask points at.
@@ -2388,6 +2417,137 @@ LABEL_ZONES.setdefault((2016, 'hl'), []).extend([
     (19, (392, 296, 560, 377)),    # 5(b)(ii)'s moulding diagram
 ])
 
+# 2016 Ordinary. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    'technology-2016-OL-paper-secA-q1-art': ('014', 1, (352, 102, 534, 210)),
+    'technology-2016-OL-paper-secA-q2-art': ('014', 1, (88, 323, 267, 445)),
+    'technology-2016-OL-paper-secA-q3-art': ('014', 1, (370, 572, 535, 728)),
+    'technology-2016-OL-paper-secA-q4-art': ('014', 2, (82, 110, 229, 270)),
+    'technology-2016-OL-paper-secA-q6-art': ('014', 2, (363, 624, 527, 745)),
+    'technology-2016-OL-paper-secA-q7-art': ('014', 3, (95, 105, 270, 280)),
+    'technology-2016-OL-paper-secA-q8-art': ('014', 3, (368, 317, 526, 416)),
+    'technology-2016-OL-paper-secA-q9-art': ('014', 3, (342, 597, 530, 711)),
+    'technology-2016-OL-paper-secA-q10-art': ('014', 4, (354, 90, 530, 266)),
+    'technology-2016-OL-paper-secA-q12-art': ('014', 4, (218, 601, 397, 777)),
+    'technology-2016-OL-paper-secB-q2b-art': ('015', 1, (370, 210, 575, 412)),
+    'technology-2016-OL-paper-secB-q2d-art': ('015', 1, (402, 662, 564, 778)),
+    'technology-2016-OL-paper-secB-q3b-art': ('015', 2, (52, 268, 242, 436)),
+    'technology-2016-OL-paper-secC-q1a-art': ('015', 3, (432, 98, 552, 218)),
+    'technology-2016-OL-paper-secC-q1b-art': ('015', 3, (54, 258, 185, 414)),
+    'technology-2016-OL-paper-secC-q1c-art': ('015', 3, (362, 470, 575, 560)),
+    'technology-2016-OL-paper-secC-q1d-i-art': ('015', 3, (268, 592, 575, 688)),
+    'technology-2016-OL-paper-secC-q1d-ii-art': ('015', 3, (452, 692, 560, 800)),
+    'technology-2016-OL-paper-secC-q2a-art': ('015', 4, (305, 78, 542, 230)),
+    'technology-2016-OL-paper-secC-q2b-art': ('015', 4, (45, 252, 290, 422)),
+    'technology-2016-OL-paper-secC-q2c-art': ('015', 4, (440, 478, 560, 582)),
+    'technology-2016-OL-paper-secC-q2d-art': ('015', 4, (412, 636, 560, 790)),
+    'technology-2016-OL-paper-secC-q4a-art': ('015', 6, (374, 100, 540, 216)),
+    'technology-2016-OL-paper-secC-q4b-art': ('015', 6, (100, 248, 505, 302)),
+    'technology-2016-OL-paper-secC-q4c-art': ('015', 6, (42, 460, 236, 596)),
+    'technology-2016-OL-paper-secC-q5a-art': ('015', 7, (54, 110, 199, 193)),
+    'technology-2016-OL-paper-secC-q5b-art': ('015', 7, (40, 228, 580, 374)),
+    'technology-2016-OL-paper-secC-q5d-art': ('015', 7, (422, 625, 555, 809)),
+})
+WHITEOUT.update({
+    'technology-2016-OL-paper-secB-q2b-art': [(370, 202, 446, 218)],
+    # Q9's (ii) ask runs in under the chain's bottom-left corner.
+    'technology-2016-OL-paper-secA-q9-art': [(342, 697, 392, 712)],
+    # 2(a)(i)'s ask ends level with the adapter's plug.
+    'technology-2016-OL-paper-secC-q2a-art': [(305, 78, 385, 106)],
+    # The last letter of (ii)'s "cumulative" at the chart's top-left.
+    'technology-2016-OL-scheme-secC-q4b-i': [(194, 486, 207, 495)],
+    'technology-2016-OL-scheme-secC-q4b-ii': [(88, 452, 515, 470), (88, 478, 203, 507), (395, 478, 515, 495)],
+})
+FIGURE_SHARED.update({
+    # 2(a): "The image at 2(b) below"; 2(c): "similar to the one shown at
+    # 2(b) above"; 5(c): "the metal magazine rack in 5(b) above".
+    'technology-2016-OL-paper-secB-q2a-art': 'technology-2016-OL-paper-secB-q2b-art',
+    'technology-2016-OL-paper-secB-q2c-art': 'technology-2016-OL-paper-secB-q2b-art',
+    'technology-2016-OL-paper-secC-q5c-art': 'technology-2016-OL-paper-secC-q5b-art',
+})
+SOLUTIONS.update({
+    'technology-2016-OL-scheme-secA-q7': (5, (370, 128, 455, 225),
+        "The marking scheme's own sketch for 2016 OL Section A Q7, as the State "
+        "Examinations Commission printed it: an outline side view of the chair, "
+        "a tall rounded shape with the round hole near its top, the seat edge "
+        "and the angled backrest."),
+    # Q11 is one card ("(4+2+2)" over two romans): (i)'s sketch with (ii)'s rows.
+    'technology-2016-OL-scheme-secA-q11': (6, (417, 338, 522, 436),
+        "The marking scheme's own sketch for 2016 OL Section A Q11(i), as the "
+        "State Examinations Commission printed it: the I-shaped profile of a "
+        "universal beam."),
+    'technology-2016-OL-scheme-secB-q2b-iii': (8, (288, 318, 415, 428),
+        "The marking scheme's own circuit for 2016 OL Section B 2(b)(iii), as "
+        "the State Examinations Commission printed it: a battery, a switch, an "
+        "LDR and a variable resistor as a potential divider driving a "
+        "transistor through a base resistor, the transistor switching a lamp."),
+    'technology-2016-OL-scheme-secC-q1a-i': (10, (120, 185, 205, 440),
+        "The marking scheme's own flowchart for 2016 OL Section C 1(a)(i), as "
+        "the State Examinations Commission printed it: Start, the decision "
+        "Switch? (N loops back), Tune, Lights on, Wait 10, Lights off, Stop."),
+    'technology-2016-OL-scheme-secC-q1b-i': (10, (458, 540, 545, 615),
+        "The marking scheme's own sketch for 2016 OL Section C 1(b)(i): an "
+        "orange robot arm on a round base, curved arrows at its joints."),
+    'technology-2016-OL-scheme-secC-q1d-i': (11, (418, 415, 550, 482),
+        "The marking scheme's own symbol for 2016 OL Section C 1(d)(i): the "
+        "pneumatic shuttle valve, a ball between two inlets with an outlet at "
+        "the top."),
+    'technology-2016-OL-scheme-secC-q2b-ii': (12, (45, 243, 290, 427),
+        "The marking scheme's own redrawn circuit for 2016 OL Section C "
+        "2(b)(ii), as the State Examinations Commission printed it: the fan "
+        "circuit with a thermistor, marked with its temperature symbol, at A."),
+    'technology-2016-OL-scheme-secC-q2d-ii': (12, (417, 691, 540, 786),
+        "The marking scheme's own truth table for 2016 OL Section C 2(d)(ii): "
+        "columns A, B, C and D over the four combinations of A and B."),
+    'technology-2016-OL-scheme-secC-q4b-i': (14, (194, 486, 395, 712),
+        "The marking scheme's own Pareto chart for 2016 OL Section C 4(b)(i), "
+        "as the State Examinations Commission printed it: bars for Overpriced, "
+        "Wait time, Unfriendly staff, Food not fresh and Too Noisy in falling "
+        "order, against Cumulative Percent (%) from 0 to 100, with the "
+        "cumulative curve rising through 50, 80, 89, 96 and 100 and a dashed "
+        "line at 80."),
+    'technology-2016-OL-scheme-secC-q4b-ii': (14, (95, 352, 505, 712),
+        "The marking scheme's own answer for 2016 OL Section C 4(b)(ii), as the "
+        "State Examinations Commission printed it: the table with a Cumulative "
+        "Percent (%) row added (50, 80, 89, 96, 100), and the cumulative "
+        "curve plotted on the Pareto chart."),
+    'technology-2016-OL-scheme-secC-q5b-ii': (16, (425, 519, 552, 585),
+        "The marking scheme's own sketch for 2016 OL Section C 5(b)(ii): a "
+        "row of overlapping drilled holes forming the slot."),
+    'technology-2016-OL-scheme-secC-q5c-i': (17, (280, 172, 430, 214),
+        "The marking scheme's own picture for 2016 OL Section C 5(c)(i): a "
+        "pop rivet and the joint it makes, captioned Pop rivet joint."),
+})
+ASK_ONLY.update({
+    'technology-2016-OL-scheme-secB-q2b-iii',
+    'technology-2016-OL-scheme-secC-q1a-i',
+    'technology-2016-OL-scheme-secC-q2b-ii',
+    'technology-2016-OL-scheme-secC-q2d-ii',
+    'technology-2016-OL-scheme-secC-q4b-i',
+    'technology-2016-OL-scheme-secC-q4b-ii',
+})
+LABEL_KEYS.update({
+    (2016, 'ol', 'C', 2, 'd'): [
+        {'letter': 'X', 'meaning': 'AND gate'},
+        {'letter': 'Y', 'meaning': 'NOT gate'}],
+})
+LABEL_ZONES.setdefault((2016, 'ol'), []).extend([
+    (3, (400, 575, 545, 730)),     # Q3's Solar Paper picture and label
+    (4, (82, 110, 232, 270)),      # Q4's plug and its A
+    (8, (427, 215, 560, 368)),     # 2(b)'s dispenser, A/B/C
+    (8, (288, 318, 415, 428)),     # 2(b)(iii)'s circuit
+    (10, (120, 185, 205, 440)),    # 1(a)'s flowchart
+    (11, (45, 355, 252, 420)),     # 1(d)'s reprinted valve pictures
+    (11, (350, 212, 535, 296)),    # 1(c)'s arm, 25N and 0.35m
+    (12, (444, 468, 545, 570)),    # 2(c)'s resistors
+    (12, (414, 639, 550, 686)),    # 2(d)'s gates
+    (12, (45, 243, 290, 427)),     # 2(b)'s circuit
+    (14, (95, 352, 505, 448)),     # 4(b)'s table
+    (14, (194, 486, 395, 712)),    # 4(b)'s chart
+    (15, (44, 133, 236, 258)),     # 4(c)'s perceptual map
+    (16, (55, 285, 435, 425)),     # 5(b)'s racks and their labels
+])
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -2441,6 +2601,8 @@ ASK_STRIP = {
     # 2016 Higher 3(d): (ii)'s own last sentence, "Construct a Gantt chart
     # for the project.", filed also as the letter's stem, which (i) showed.
     (2016, 'hl', 'B', 3, 'd', 'i'): [r'^Construct a Gantt chart for the project\.$'],
+    # 2016 Ordinary Q3: the answer lines' numbers "1 2" after the ask.
+    (2016, 'ol', 'A', 3, None, None): [r'\s+1 2(?: Solar Paper®)?$'],
     # 2016 Higher Q3: the picture's caption "Average transport distance".
     (2016, 'hl', 'A', 3, None, None): [r'\s+Average transport distance$'],
     (2016, 'hl', 'A', 3, None, 'i'): [r'\s+Average transport distance$'],
