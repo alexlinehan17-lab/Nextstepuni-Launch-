@@ -410,6 +410,77 @@ def _parts_row(card_id, title, steps):
     }
 
 
+# ------------------------------------------------------------ source material
+# Section C's Geologic Geometry question is answered ON a contour map that the
+# SEC prints on the back page of the SECTION A booklet, not with the question:
+# "This Contour Map is part of Section C and should only be used for the
+# answering of the Geologic Geometry Option". The question crop cannot show
+# it, so every C-1 card carries that page as source material, opened in the
+# official page reader from the Section A booklet (resolved by build-deck from
+# its Paper Trail label, never typed).
+# Matched across the line breaks and double spaces some years print in it.
+CONTOUR_CAPTION = re.compile(r'This\s+Contour\s+Map\s+is\s+part\s+of\s+Section\s+C', re.I)
+
+
+# The map is printed SIDEWAYS: its caption runs down a portrait page, and the
+# reader turns the page by this much, clockwise, to set it upright. Read from
+# the caption's own text direction, less any /Rotate the page already carries
+# (2013's booklets set /Rotate 270 and need nothing more).
+UPRIGHT = {(0, 1): 270, (0, -1): 90, (1, 0): 0, (-1, 0): 180}
+
+
+@functools.lru_cache(maxsize=None)
+def contour_map_page(year, level):
+    """(one-based page, clockwise turn) of the contour map in the Section A
+    booklet, or None."""
+    import pymupdf
+    P = DP.load(year, level, SUBJECT)
+    for path in P.files:
+        with pymupdf.open(path) as doc:
+            prints_a = any(DP.QHEAD.match(r[3]) and r[3].startswith('A')
+                           for page in doc for r in DP.rows(page))
+            if not prints_a:
+                continue
+            pages = [i for i, page in enumerate(doc)
+                     if CONTOUR_CAPTION.search(page.get_text())]
+            if len(pages) != 1:
+                continue
+            page = doc[pages[0]]
+            dirs = {tuple(round(v) for v in line['dir'])
+                    for block in page.get_text('dict')['blocks']
+                    for line in block.get('lines', [])
+                    if CONTOUR_CAPTION.search(' '.join(
+                        ''.join(sp['text'] for sp in line['spans']).split())
+                        + ' is part of Section C')
+                    or 'Contour Map' in ''.join(sp['text'] for sp in line['spans'])}
+            if len(dirs) != 1 or next(iter(dirs)) not in UPRIGHT:
+                return None
+            return pages[0] + 1, (UPRIGHT[next(iter(dirs))] - page.rotation) % 360
+    return None
+
+
+def contour_map(year, level):
+    found = contour_map_page(year, level)
+    if found is None:
+        return None
+    page, turn = found
+    word = 'Higher' if level == 'hl' else 'Ordinary'
+    return {
+        'kind': 'source-illustration',
+        'label': 'Contour Map',
+        'title': 'The contour map for Question C-1, on the back page of the '
+                 'Section A booklet',
+        'pages': [page],
+        **({'pageRotations': {str(page): turn}} if turn else {}),
+        'sourceLabel': 'Section A',
+        'attribution': f'SEC Leaving Certificate Design and Communication '
+                       f'Graphics {year} {word} Level, Section A — © State '
+                       f'Examinations Commission.',
+        'presentationNote': 'The back page of the Section A booklet, exactly '
+                            'as it was printed for the examination.',
+    }
+
+
 # ----------------------------------------------------------------- figures
 def figure_index():
     """The inspected question crops, keyed by the question they were cut FOR.
@@ -689,6 +760,9 @@ def author(bind_figures=True):
                                         'notation': f'({marks})'},
                         'totalMarks': marks,
                         'rows': rows,
+                        **({'sourceMaterial': contour_map(year, level)}
+                           if section == 'C' and qq['option'] == 'Geologic Geometry'
+                           and contour_map(year, level) else {}),
                         'notes': (f'The scheme heads this {title!r} and prices '
                                   f'it at {marks - sum(s.marks for s in extra)}. '
                                   'Construction lines must be shown on all '

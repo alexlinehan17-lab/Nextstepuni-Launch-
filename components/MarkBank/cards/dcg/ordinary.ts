@@ -468,6 +468,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2018-ol-c1a-r3", kind: "point", verbatim: "Draw outline of profile", marks: 8 },
     { id: "dcg-2018-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q1-art.png",
@@ -491,6 +505,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2018-ol-c1b-r1", kind: "point", verbatim: "Draw tangent from B to profile", marks: 2 },
     { id: "dcg-2018-ol-c1b-r2", kind: "point", verbatim: "Draw pylon and indicate minimum height", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q1-art.png",
@@ -518,6 +546,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2018-ol-c1c-r5", kind: "point", verbatim: "Identify points on embankment curve", marks: 3 },
     { id: "dcg-2018-ol-c1c-r6", kind: "point", verbatim: "Draw embankment curve", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2018-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-OL-paper-secC-q1-art.png",
@@ -1363,6 +1405,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 10 },
     { id: "dcg-2019-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 4, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q1-art.png",
@@ -1386,6 +1442,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-ol-c1b-r1", kind: "point", verbatim: "Plan of triangle CDE", marks: 4 },
     { id: "dcg-2019-ol-c1b-r2", kind: "point", verbatim: "Elevation of triangle CDE", marks: 1 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q1-art.png",
@@ -1411,6 +1481,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-ol-c1c-r3", kind: "point", verbatim: "Viewing direction for dip", marks: 2 },
     { id: "dcg-2019-ol-c1c-r4", kind: "point", verbatim: "Determine dip (2 heights, edge view)", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2019-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-OL-paper-secC-q1-art.png",
@@ -2218,6 +2302,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2021-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 13 },
     { id: "dcg-2021-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q1-art.png",
@@ -2241,6 +2339,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2021-ol-c1b-r1", kind: "point", verbatim: "Plan of triangle CDE", marks: 5 },
     { id: "dcg-2021-ol-c1b-r2", kind: "point", verbatim: "Elevation of triangle CDE", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q1-art.png",
@@ -2266,6 +2378,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2021-ol-c1c-r3", kind: "point", verbatim: "Viewing direction for dip", marks: 3 },
     { id: "dcg-2021-ol-c1c-r4", kind: "point", verbatim: "Determine dip (2 heights, edge view)", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2021-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-OL-paper-secC-q1-art.png",
@@ -3055,6 +3181,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2022-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 10 },
     { id: "dcg-2022-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q1-art.png",
@@ -3082,6 +3222,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2022-ol-c1b-r5", kind: "point", verbatim: "Identify points on cutting curve", marks: 5 },
     { id: "dcg-2022-ol-c1b-r6", kind: "point", verbatim: "Draw cutting curves", marks: 5 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2022-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-OL-paper-secC-q1-art.png",
@@ -3814,6 +3968,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 12 },
     { id: "dcg-2023-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q1-art.png",
@@ -3838,6 +4006,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-ol-c1b-r2", kind: "point", verbatim: "Identify points on cutting curve", marks: 8 },
     { id: "dcg-2023-ol-c1b-r3", kind: "point", verbatim: "Draw cutting curve", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2023-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-OL-paper-secC-q1-art.png",
@@ -4611,6 +4793,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 13 },
     { id: "dcg-2024-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q1-art.png",
@@ -4634,6 +4830,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-ol-c1b-r1", kind: "point", verbatim: "Plan of CDE", marks: 3 },
     { id: "dcg-2024-ol-c1b-r2", kind: "point", verbatim: "Elevation of CDE", marks: 5 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q1-art.png",
@@ -4659,6 +4869,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-ol-c1c-r3", kind: "point", verbatim: "Viewing direction for dip", marks: 4 },
     { id: "dcg-2024-ol-c1c-r4", kind: "point", verbatim: "Determine dip (2 heights, edge view)", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-OL-paper-secC-q1-art.png",
@@ -5449,6 +5673,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2025-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 12 },
     { id: "dcg-2025-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q1-art.png",
@@ -5473,6 +5711,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2025-ol-c1b-r2", kind: "point", verbatim: "Identify points on cutting curve", marks: 8 },
     { id: "dcg-2025-ol-c1b-r3", kind: "point", verbatim: "Draw cutting curve", marks: 6 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2025-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-OL-paper-secC-q1-art.png",
@@ -6249,6 +6501,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2026-ol-c1a-r3", kind: "point", verbatim: "Draw the profile", marks: 13 },
     { id: "dcg-2026-ol-c1a-r4", kind: "point", verbatim: "Presentation", marks: 5, contextNote: "The scheme prices Presentation on the whole question, not on one part: claim it once, here, for the finished drawing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q1-art.png",
@@ -6272,6 +6538,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2026-ol-c1b-r1", kind: "point", verbatim: "Plan of CDE", marks: 3 },
     { id: "dcg-2026-ol-c1b-r2", kind: "point", verbatim: "Elevation of CDE", marks: 5 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q1-art.png",
@@ -6297,6 +6577,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2026-ol-c1c-r3", kind: "point", verbatim: "Viewing direction for dip", marks: 4 },
     { id: "dcg-2026-ol-c1c-r4", kind: "point", verbatim: "Determine dip (2 heights, edge view)", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Ordinary Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562GLP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2026-OL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-OL-paper-secC-q1-art.png",

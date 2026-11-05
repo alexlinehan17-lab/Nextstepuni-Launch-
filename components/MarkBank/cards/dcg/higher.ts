@@ -517,6 +517,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2018-hl-c1a-1-r1", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 3 },
     { id: "dcg-2018-hl-c1a-1-r2", kind: "criterion", verbatim: "Identify intersections with contours and draw curve …..(4×1)", marks: 4, permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-HL-paper-secC-q1-art.png",
@@ -539,6 +553,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2018-hl-c1a-2-r1", kind: "point", verbatim: "Draw parallel lines at 7.5mm intervals", marks: 2 },
     { id: "dcg-2018-hl-c1a-2-r2", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-HL-paper-secC-q1-art.png",
@@ -561,6 +589,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2018-hl-c1a-3-r1", kind: "point", verbatim: "Draw parallel lines at 7.5mm intervals", marks: 2 },
     { id: "dcg-2018-hl-c1a-3-r2", kind: "point", verbatim: "Draw curve", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-HL-paper-secC-q1-art.png",
@@ -583,6 +625,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2018-hl-c1a-4-r1", kind: "point", verbatim: "Draw parallel lines at 7.5mm intervals", marks: 2 },
     { id: "dcg-2018-hl-c1a-4-r2", kind: "point", verbatim: "Draw curve", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-HL-paper-secC-q1-art.png",
@@ -606,6 +662,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2018-hl-c1a-5-r2", kind: "point", verbatim: "Draw parallel lines at 7.5mm intervals", marks: 2 },
     { id: "dcg-2018-hl-c1a-5-r3", kind: "point", verbatim: "Identify endpoints and draw curve", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-HL-paper-secC-q1-art.png",
@@ -629,6 +699,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2018-hl-c1a-6-r2", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 2 },
     { id: "dcg-2018-hl-c1a-6-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-HL-paper-secC-q1-art.png",
@@ -654,6 +738,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2018-hl-c1b-r3", kind: "point", verbatim: "Establish required Dip", marks: 3 },
     { id: "dcg-2018-hl-c1b-r4", kind: "point", verbatim: "Determine and indicate length of required shortest borehole from R", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-HL-paper-secC-q1-art.png",
@@ -675,6 +773,20 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "dcg-2018-hl-c1c-r1", kind: "point", verbatim: "Draw required line of intersection (incl. req. construction)", marks: 1 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2018 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2018-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2018-HL-paper-secC-q1-art.png",
@@ -1624,6 +1736,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-hl-c1a-1-r1", kind: "point", verbatim: "Draw parallel arcs at 10mm intervals", marks: 4 },
     { id: "dcg-2019-hl-c1a-1-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q1-art.png",
@@ -1646,6 +1772,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-hl-c1a-2-r1", kind: "point", verbatim: "Draw parallel arcs at 5mm intervals", marks: 4 },
     { id: "dcg-2019-hl-c1a-2-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q1-art.png",
@@ -1668,6 +1808,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-hl-c1a-3-r1", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 4 },
     { id: "dcg-2019-hl-c1a-3-r2", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q1-art.png",
@@ -1691,6 +1845,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-hl-c1a-4-r2", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 2 },
     { id: "dcg-2019-hl-c1a-4-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q1-art.png",
@@ -1714,6 +1882,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-hl-c1a-5-r2", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 1 },
     { id: "dcg-2019-hl-c1a-5-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 1 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q1-art.png",
@@ -1741,6 +1923,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2019-hl-c1b-r5", kind: "criterion", verbatim: "Draw required triangle PQR in elevation … (3×1)", marks: 3, permittedMarks: [0,1,2,3] },
     { id: "dcg-2019-hl-c1b-r6", kind: "point", verbatim: "Determine the true angle between the line PR and the strike line S", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2019 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2019-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2019-HL-paper-secC-q1-art.png",
@@ -2440,6 +2636,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2020-hl-c1a-1-r1", kind: "point", verbatim: "Draw parallel arcs at 7.5mm intervals", marks: 3 },
     { id: "dcg-2020-hl-c1a-1-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q1-art.png",
@@ -2462,6 +2672,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2020-hl-c1a-2-r1", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 3 },
     { id: "dcg-2020-hl-c1a-2-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q1-art.png",
@@ -2485,6 +2709,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2020-hl-c1a-3-r2", kind: "point", verbatim: "Draw parallel lines at 7.5mm intervals", marks: 2 },
     { id: "dcg-2020-hl-c1a-3-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q1-art.png",
@@ -2509,6 +2747,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2020-hl-c1b-r3", kind: "point", verbatim: "Draw parabola", marks: 3 },
     { id: "dcg-2020-hl-c1b-r4", kind: "point", verbatim: "Determine impact point", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q1-art.png",
@@ -2532,6 +2784,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2020-hl-c1c-r2", kind: "point", verbatim: "X1Y1 line perpendicular to ‘strike’", marks: 2 },
     { id: "dcg-2020-hl-c1c-r3", kind: "point", verbatim: "Establish required dip and thickness", marks: 7 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2020 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2020-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2020-HL-paper-secC-q1-art.png",
@@ -3387,6 +3653,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2021-hl-c1a-1-r1", kind: "point", verbatim: "Draw parallel arcs at 7.5mm intervals", marks: 5 },
     { id: "dcg-2021-hl-c1a-1-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q1-art.png",
@@ -3410,6 +3690,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2021-hl-c1a-2-r1", kind: "point", verbatim: "Draw parallel arcs at 10mm intervals", marks: 5 },
     { id: "dcg-2021-hl-c1a-2-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q1-art.png",
@@ -3433,6 +3727,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2021-hl-c1a-3-r1", kind: "point", verbatim: "Draw a parallel line at 10mm interval", marks: 3 },
     { id: "dcg-2021-hl-c1a-3-r2", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 1 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q1-art.png",
@@ -3457,6 +3765,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2021-hl-c1a-4-r2", kind: "point", verbatim: "Draw parallel lines at 7.5mm intervals", marks: 5 },
     { id: "dcg-2021-hl-c1a-4-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q1-art.png",
@@ -3481,6 +3803,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2021-hl-c1a-5-r2", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 3 },
     { id: "dcg-2021-hl-c1a-5-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 1 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q1-art.png",
@@ -3507,6 +3843,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2021-hl-c1b-r4", kind: "point", verbatim: "Establish Dip Angle", marks: 4 },
     { id: "dcg-2021-hl-c1b-r5", kind: "point", verbatim: "Determine thickness of Stratum", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2021 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2021-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2021-HL-paper-secC-q1-art.png",
@@ -4360,6 +4710,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2022-hl-c1a-1-r1", kind: "point", verbatim: "Draw parallel lines at 7.5mm intervals", marks: 5 },
     { id: "dcg-2022-hl-c1a-1-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q1-art.png",
@@ -4383,6 +4747,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2022-hl-c1a-2-r1", kind: "point", verbatim: "Draw parallel lines at 7.5mm intervals", marks: 5 },
     { id: "dcg-2022-hl-c1a-2-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q1-art.png",
@@ -4406,6 +4784,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2022-hl-c1a-3-r1", kind: "point", verbatim: "Draw parallel lines at 5mm intervals", marks: 5 },
     { id: "dcg-2022-hl-c1a-3-r2", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q1-art.png",
@@ -4430,6 +4822,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2022-hl-c1a-4-r2", kind: "point", verbatim: "Draw parallel lines at 7.5mm intervals", marks: 5 },
     { id: "dcg-2022-hl-c1a-4-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q1-art.png",
@@ -4456,6 +4862,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2022-hl-c1b-r4", kind: "point", verbatim: "Draw level right hand portion of profile", marks: 3 },
     { id: "dcg-2022-hl-c1b-r5", kind: "point", verbatim: "Draw middle straight line portion of profile", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q1-art.png",
@@ -4479,6 +4899,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2022-hl-c1c-r1", kind: "point", verbatim: "Locate point F and draw tangent to profile", marks: 4 },
     { id: "dcg-2022-hl-c1c-r2", kind: "point", verbatim: "Determination and indication of required height", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2022 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2022-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2022-HL-paper-secC-q1-art.png",
@@ -5340,6 +5774,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-hl-c1a-1-r1", kind: "point", verbatim: "Draw parallel lines at 10 mm intervals", marks: 4 },
     { id: "dcg-2023-hl-c1a-1-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
@@ -5362,6 +5810,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-hl-c1a-2-r1", kind: "point", verbatim: "Draw parallel lines at 7.5 mm intervals", marks: 4 },
     { id: "dcg-2023-hl-c1a-2-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
@@ -5384,6 +5846,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-hl-c1a-3-r1", kind: "point", verbatim: "Draw parallel arcs at 7.5 mm interval", marks: 3 },
     { id: "dcg-2023-hl-c1a-3-r2", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
@@ -5406,6 +5882,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-hl-c1a-4-r1", kind: "point", verbatim: "Draw parallel arcs at 10 mm interval", marks: 3 },
     { id: "dcg-2023-hl-c1a-4-r2", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
@@ -5429,6 +5919,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-hl-c1a-5-r2", kind: "point", verbatim: "Draw parallel lines at 7.5mm intervals", marks: 3 },
     { id: "dcg-2023-hl-c1a-5-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
@@ -5452,6 +5956,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-hl-c1a-6-r2", kind: "point", verbatim: "Draw parallel lines at 10mm intervals", marks: 3 },
     { id: "dcg-2023-hl-c1a-6-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
@@ -5477,6 +5995,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2023-hl-c1b-r3", kind: "point", verbatim: "Determine Strike line", marks: 4 },
     { id: "dcg-2023-hl-c1b-r4", kind: "point", verbatim: "Establish Dip Angle", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2023 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2023-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2023-HL-paper-secC-q1-art.png",
@@ -6211,6 +6743,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-hl-c1a-1-r1", kind: "point", verbatim: "Draw parallel lines at 7.5 mm intervals", marks: 4 },
     { id: "dcg-2024-hl-c1a-1-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
@@ -6233,6 +6779,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-hl-c1a-2-r1", kind: "point", verbatim: "Draw parallel lines at 10 mm intervals", marks: 4 },
     { id: "dcg-2024-hl-c1a-2-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
@@ -6255,6 +6815,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-hl-c1a-3-r1", kind: "point", verbatim: "Draw parallel arcs at 10 mm interval", marks: 3 },
     { id: "dcg-2024-hl-c1a-3-r2", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
@@ -6279,6 +6853,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-hl-c1a-4-r3", kind: "point", verbatim: "Draw parallel lines at 10 mm intervals", marks: 3 },
     { id: "dcg-2024-hl-c1a-4-r4", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
@@ -6302,6 +6890,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-hl-c1a-5-r2", kind: "point", verbatim: "Draw parallel lines at 7.5 mm intervals", marks: 2 },
     { id: "dcg-2024-hl-c1a-5-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
@@ -6326,6 +6928,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-hl-c1b-r3", kind: "point", verbatim: "Draw curved profile through contours", marks: 4 },
     { id: "dcg-2024-hl-c1b-r4", kind: "point", verbatim: "Draw intersection with course cuttings and level rafting course", marks: 5 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
@@ -6349,6 +6965,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2024-hl-c1c-r2", kind: "point", verbatim: "Draw circle radius 10 m above highest position and draw tangent", marks: 4 },
     { id: "dcg-2024-hl-c1c-r3", kind: "point", verbatim: "Determine and indicate required height for pole at F", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2024 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2024-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2024-HL-paper-secC-q1-art.png",
@@ -7078,6 +7708,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2025-hl-c1a-1-r1", kind: "point", verbatim: "Draw parallel lines at 7.5 mm intervals", marks: 4 },
     { id: "dcg-2025-hl-c1a-1-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q1-art.png",
@@ -7102,6 +7746,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2025-hl-c1a-2-r3", kind: "point", verbatim: "Draw parallel lines at 5 mm intervals (from corner to B)", marks: 4 },
     { id: "dcg-2025-hl-c1a-2-r4", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q1-art.png",
@@ -7126,6 +7784,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2025-hl-c1a-3-r3", kind: "point", verbatim: "Draw parallel lines at 7.5 mm intervals", marks: 4 },
     { id: "dcg-2025-hl-c1a-3-r4", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q1-art.png",
@@ -7152,6 +7824,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2025-hl-c1b-r5", kind: "point", verbatim: "X1Y1 line perpendicular to strike line", marks: 3 },
     { id: "dcg-2025-hl-c1b-r6", kind: "point", verbatim: "Establish required dip angle and thickness of stratum", marks: 8 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2025 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2025-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2025-HL-paper-secC-q1-art.png",
@@ -7901,6 +8587,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2026-hl-c1a-1-r1", kind: "point", verbatim: "Draw parallel arcs at 7.5 mm intervals", marks: 4 },
     { id: "dcg-2026-hl-c1a-1-r2", kind: "point", verbatim: "Identify intersections with contours and draw curves", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q1-art.png",
@@ -7925,6 +8625,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2026-hl-c1a-2-r3", kind: "point", verbatim: "Draw parallel lines at 10 mm intervals", marks: 4 },
     { id: "dcg-2026-hl-c1a-2-r4", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q1-art.png",
@@ -7948,6 +8662,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2026-hl-c1a-3-r2", kind: "point", verbatim: "Draw parallel lines at 7.5 mm intervals", marks: 4 },
     { id: "dcg-2026-hl-c1a-3-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q1-art.png",
@@ -7971,6 +8699,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2026-hl-c1a-4-r2", kind: "point", verbatim: "Draw parallel lines at 10 mm intervals", marks: 2 },
     { id: "dcg-2026-hl-c1a-4-r3", kind: "point", verbatim: "Identify intersections with contours and draw curve", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q1-art.png",
@@ -7997,6 +8739,20 @@ export const CARDS: SecCard[] = [
     { id: "dcg-2026-hl-c1b-r4", kind: "point", verbatim: "Determine the strike line", marks: 3 },
     { id: "dcg-2026-hl-c1b-r5", kind: "point", verbatim: "Establish dip angle", marks: 5 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "Contour Map",
+          "title": "The contour map for Question C-1, on the back page of the Section A booklet",
+          "pages": [
+                3
+          ],
+          "pageRotations": {
+                "3": 270
+          },
+          "attribution": "SEC Leaving Certificate Design and Communication Graphics 2026 Higher Level, Section A — © State Examinations Commission.",
+          "presentationNote": "The back page of the Section A booklet, exactly as it was printed for the examination.",
+          "sourceFileid": "LC562ALP014EV"
+    },
     questionFigure: {
           "candId": "dcg-2026-HL-paper-secC-q1-art",
           "src": "/exam-figures/dcg/markbank/dcg-2026-HL-paper-secC-q1-art.png",

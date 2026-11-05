@@ -61,6 +61,27 @@ describe('DCG booklets', () => {
   });
 });
 
+describe('DCG Geologic Geometry carries its contour map', () => {
+  it('opens the back page of the Section A booklet on every C-1 card, and on no other', () => {
+    // "This Contour Map is part of Section C and should only be used for the
+    // answering of the Geologic Geometry Option": printed on page 3 of the
+    // Section A booklet in every sitting, never with the question itself.
+    const wrong: string[] = [];
+    for (const card of cards) {
+      const source = card.sourceMaterial;
+      const isC1 = /Section C Q1\b/.test(card.questionRef);
+      if (!isC1) { if (source) wrong.push(`${card.id}: unexpected source`); continue; }
+      const booklet = tags.find(p => p.lang === 'ev' && p.year === card.year && p.level === card.level && p.paperKey === 'section-a');
+      if (!source || source.kind !== 'source-illustration' || JSON.stringify(source.pages) !== '[3]'
+          || `${source.sourceFileid}.pdf` !== booklet?.fileid) {
+        wrong.push(`${card.id}: ${JSON.stringify(source)}`);
+      }
+    }
+    expect(wrong).toEqual([]);
+    expect(cards.filter(c => c.sourceMaterial).length).toBe(75);
+  });
+});
+
 describe('DCG cards in the Topic Atlas', () => {
   it('reads a printed section and question off every card', () => {
     for (const card of cards) {

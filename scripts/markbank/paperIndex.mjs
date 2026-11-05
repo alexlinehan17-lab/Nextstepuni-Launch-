@@ -220,6 +220,10 @@ export function resolveCompanionFileid(subjectId, year, level, label) {
   const entry = paperEntry(subjectId, year, level);
   const want = String(label ?? '').trim().toLowerCase();
   if (!want || !entry?.papers?.length) return null;
+  // DCG's Section A booklet carries the contour map Section C's Geologic
+  // Geometry cards open. Its label is wrong in 2011 (see dcgBookletFor), so it
+  // is found by what it prints, as resolvePaperFileid finds it.
+  if (subjectId === 'dcg' && want === 'section a') return dcgBookletFor(entry, 'A');
   const hits = entry.papers.filter(p => String(p.label).trim().toLowerCase() === want);
   if (hits.length === 1) return stripPdf(hits[0].doc?.f);
   // The labels could not name one document. Where the file ids can — one
