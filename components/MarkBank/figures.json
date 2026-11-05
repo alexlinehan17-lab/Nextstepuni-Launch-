@@ -57109,5 +57109,118 @@
   "year": 2025,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q8-fig2": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q8-fig2.png",
+  "md5": "db734621841303e60f168525a844ff42",
+  "alt": "Figure 2, printed with Question 8: a photograph of the inside of a desktop computer case, showing the motherboard with its processor, the power supply and a drive cage.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q8",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q14-items": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-items.png",
+  "md5": "e35fda3dfcc711c3e1b6044834962cfb",
+  "alt": "The table printed with Question 14 (item code, item name, price in euro: A1 Water, flavoured 1.5; A2 Water 1.2; B1 Oreos 2.5; C1 Crisps, Salt & Vinegar 2; C2 Crisps, Cheese & Onion 2) beside Figure 6, a drawing of a vending machine stocked with snacks.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q14a-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14a-code.png",
+  "md5": "dd1b57f6359393f25cb45005af90464a",
+  "alt": "The item table and Figure 6 printed with Question 14 (A1 Water, flavoured 1.5; A2 Water 1.2; B1 Oreos 2.5; C1 Crisps, Salt & Vinegar 2; C2 Crisps, Cheese & Onion 2; a drawing of a vending machine), above the five-line program of part (a): if money >= price: dispenseItem, giveChange(money - price), else: print(\"Error – not enough money inserted\").",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q14b-plan": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14b-plan.png",
+  "md5": "c732f151b970392b6dfd87dc0f83ea6d",
+  "alt": "The item table and Figure 6 printed with Question 14 (A1 Water, flavoured 1.5; A2 Water 1.2; B1 Oreos 2.5; C1 Crisps, Salt & Vinegar 2; C2 Crisps, Cheese & Onion 2; a drawing of a vending machine), above the test plan of part (b)(ii), columns Code entered, Money inserted and Expected result: B1, 3, Oreos dispensed, 0.50 euro change given; a blank code, 1.2, Water dispensed, no change given; C1, a blank amount, Error – not enough money inserted; C2, 0.75 and a blank result.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14(b)(ii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-scheme-q14b-ii": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-scheme-q14b-ii.png",
+  "md5": "b90e89b5bb99bbcc77d722ff90343f35",
+  "alt": "The marking scheme's completed test plan for Question 14(b)(ii): B1, 3, Oreos served, 0.50 euro change given; A2, 1.2, Water served, no change given; C1, <2, Error – not enough money inserted; C2, 0.75, Error – not enough money inserted. The three answers (A2, <2 and the C2 result) are printed in red.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14(b)(ii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-scheme-q14c": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-scheme-q14c.png",
+  "md5": "0e9bb9cb322e397e0e9a01db93da038e",
+  "alt": "The marking scheme's answer to Question 14(c). Pseudocode: START; User inserts money and enters item code; IF stock is less than 1: Prompt user to enter another code; IF stock is less than 3: (Dispense item) Send Email to head office; ELSE: (stock must be 1 or more) Dispense item; STOP. Beside it, a flowchart: Start; INPUT amount and item code; Stock < 1? No/False leads to Dispense Item, Yes/True to INPUT item another code and then Stock < 3?, whose Yes/True leads to Send Email to order more stock and whose No/False joins the line from Dispense Item; Stop.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14(c)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q15-figs": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-figs.png",
+  "md5": "27fc084ba8ef4554d3c1121ea9979884",
+  "alt": "Figure 7, a photograph of a museum information point, a touchscreen table showing images of artwork, above Figure 8, a row of arrows for the stages INVESTIGATE, PLAN, DESIGN, CREATE, EVALUATE and DOCUMENT, with an ITERATE arrow looping back from EVALUATE to PLAN.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q15(b)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q16a-vi": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16a-vi.png",
+  "md5": "45a75cd1b20f0132cb9a908296acc3e8",
+  "alt": "The eleven-line program Question16_A.py (print(\"The program\"), length read as a float, width = 20, area = length * width, the area printed), above the table printed with part (vi): cost more than 1000, You are entitled to a 10% discount; cost between 100 and 1000 inclusive, You are not entitled to a 10% discount; cost less than 100, Sorry, job is too small.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q16(a)(vi)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q16b-output": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16b-output.png",
+  "md5": "b8fabe0ce9ad6d7f2c9262a9e7b5c112",
+  "alt": "The sample output printed with Question 16(b): Tile Cost Calculator; How much do the tiles cost per square metre? 19.75; How many rooms do you want to tile? 3; then for Room 1, Room 2 and Room 3 the width and length entered (12 and 8, 9 and 6, 8.5 and 6.5); The total cost is EUR 4053.69.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q16(b)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-scheme-q16b": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-scheme-q16b.png",
+  "md5": "cc5488aa5ca15a549baa44654dcfbbbd",
+  "alt": "The marking scheme's 32-line possible solution for Question 16(b): print \"Tile Cost Calculator\"; cost_per_sq_metre read as a float and num_rooms as an int; total_cost = 0.0; for x in range(num_rooms) the room number is printed, the width and length are read as floats, room_cost = width * length * cost_per_sq_metre is added to total_cost; then print(\"The total cost is EUR\", round(total_cost,2)).",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q16(b)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
  }
 }

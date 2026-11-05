@@ -751,9 +751,10 @@ const decks = [
    * 2021 Higher, the 9 asks the August cards missed: 293 -> 302.
    * 2021 Ordinary, the 4 asks the August cards missed: 205 -> 209.
    * 2020 Higher, every printed ask (the bank held none): 302 -> 349.
-   * 2023 Ordinary Q13 split (coordinator, 5 Nov): cs-2023-ol-q13, a card for all of Q13 beside its part cards, withdrawn and aliased onto cs-2023-ol-q13-b-i; (b)(i)-(iv) and (c)(i) carded: 209 -> 213. */
+   * 2023 Ordinary Q13 split (coordinator, 5 Nov): cs-2023-ol-q13, a card for all of Q13 beside its part cards, withdrawn and aliased onto cs-2023-ol-q13-b-i; (b)(i)-(iv) and (c)(i) carded: 209 -> 213.
+   * 2025 Ordinary re-authored (batch 1b); its whole-question cards cs-2025-ol-q13, -q14 and -q15 split per the coordinator's ruling of 5 Nov and withdrawn onto -q13-a-ii, -q14-c and -q15-b-i: 213 -> 215. */
   ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 349, 'b07d7a033083b872f285eb38351e896537910b26eea9163f3545bd385eb049b5'],
-  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 213, '3ab27385128843b632c47f24d00053e48fc6c8799d81a56132666e136c6bcd00'],
+  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 215, '491192e1f852b8d1f1648d55166dc8f7ad2ea7cf159d247de97dfec1432f1347'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
   /* 2026-09-11: five agents, one per sitting, worked Engineering's open asks
@@ -1462,6 +1463,7 @@ describe('Mark Bank card preservation', () => {
     // 2021 Ordinary residue, 4 asks, 4 cards: 23,518.
     // 2020 Higher, 47 asks, 47 cards: 23,565.
     // 2023 Ordinary Q13 split, -1 whole + 5 parts: 23,569.
+    // 2025 Ordinary splits, -3 whole + 5 parts: 23,571.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1478,9 +1480,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_569 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_571 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_569 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_571 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
@@ -1843,7 +1845,7 @@ describe('Mark Bank card preservation', () => {
     // shipped card for a whole question beside that question's part cards is
     // withdrawn onto the question's first new part card.
     const computerScienceAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('cs-'));
-    expect(computerScienceAliasIds).toEqual(['cs-2023-ol-q13']);
+    expect(computerScienceAliasIds).toEqual(['cs-2023-ol-q13', 'cs-2025-ol-q13', 'cs-2025-ol-q14', 'cs-2025-ol-q15']);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
       + chemistryAuditAliases.length + technologyAliasIds.length + computerScienceAliasIds.length);

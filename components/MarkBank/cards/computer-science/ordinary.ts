@@ -2020,13 +2020,12 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q2", topicId: "cs-2-3", conceptId: "common-people-store-files-cloud-two",
+    id: "cs-2025-ol-q2", topicId: "cs-2-3", conceptId: "common-people-store-files-cloud-reasons",
     section: "A", questionRef: "2025 OL Q2",
-    stem: "It is common for people to store files in the cloud. State two reasons why you might want to use cloud storage rather than local storage.",
     questionText: "It is common for people to store files in the cloud. State two reasons why you might want to use cloud storage rather than local storage.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-reasons", kind: "anyN", verbatim: "Any two reasons for using cloud storage", marks: null, openList: true, group: {"claimMax":2,"perOption":3,"options":["Accessibility: Cloud storage allows you to access your files from anywhere with an internet connection.","Backup and Security: Files stored in the cloud are often automatically backed up and protected with advanced security measures.","File Sharing and Collaboration: Cloud storage makes it easy to share files and collaborate with others.","Automatic Updates: Cloud storage services often come with automatic software updates and maintenance.","Disaster Recovery: In case of a local hardware failure (e.g., a damaged hard drive), cloud storage ensures that your files remain safe and recoverable.","Cost Efficiency: With cloud storage, you only pay for the storage you use, avoiding the upfront cost of purchasing external hard drives or other local storage devices."]} },
+    { id: "r-1", kind: "criterion", verbatim: "Accessibility: Cloud storage allows you to access your files from anywhere with an internet connection.", marks: 6, accepts: ["Backup and Security: Files stored in the cloud are often automatically backed up and protected with advanced security measures.","File Sharing and Collaboration: Cloud storage makes it easy to share files and collaborate with others.","Automatic Updates: Cloud storage services often come with automatic software updates and maintenance.","Disaster Recovery: In case of a local hardware failure (e.g., a damaged hard drive), cloud storage ensures that your files remain safe and recoverable.","Cost Efficiency: With cloud storage, you only pay for the storage you use, avoiding the upfront cost of purchasing external hard drives or other local storage devices."], contextNote: "Accept any relevant answers given. For each reason: Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3,4,5,6] },
     ],
   } as SecCard,
   {
@@ -2036,11 +2035,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "cs-2025-ol-q4", topicId: "cs-2-3", conceptId: "unicode-has-largely-replaced-ascii-worldwide",
     section: "A", questionRef: "2025 OL Q4",
-    stem: "Unicode has largely replaced ASCII worldwide as the encoding method for character sets. Suggest one reason for this.",
     questionText: "Unicode has largely replaced ASCII worldwide as the encoding method for character sets. Suggest one reason for this.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Unicode supports a wide range of characters from many languages, whereas ASCII is limited to English characters. This makes Unicode essential for international communication and content.", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Unicode supports a wide range of characters from many languages, whereas ASCII is limited to English characters. This makes Unicode essential for international communication and content.", marks: 6, accepts: ["ASCII can only represent 128 characters, whereas Unicode can represent over a million, allowing for complex symbols, emoji, and special characters used.","Unicode allows for new characters to be added over time, which allows new symbols/ characters to be added in future.","Unicode provides a universal standard for character encoding, making it easier for different systems and platforms to communicate and display text consistently without compatibility issues.","Modern software and web applications are designed to work with Unicode, enabling better integration and support across a wide range of applications."], contextNote: "Accept any relevant answer provided. Very good explanation - clear understanding demonstrated 6 marks Good explanation - clear information, lacking full understanding 4 marks Fair explanation - limited understanding 2 marks", permittedMarks: [0,2,4,6] },
     ],
   } as SecCard,
   {
@@ -2048,13 +2046,12 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q6", topicId: "cs-2-4", conceptId: "apple-vision-pro-new-augmented-reality",
+    id: "cs-2025-ol-q6", topicId: "cs-1-2", conceptId: "apple-vision-pro-new-augmented-reality",
     section: "A", questionRef: "2025 OL Q6",
-    stem: "The Apple Vision Pro is a new augmented reality (AR) headset that blends the digital world with the real world. It allows users to interact with virtual objects, play games, and work in a fully immersive digital environment. As technology such as Apple Vision Pro becomes more advanced and popular, it raises social and ethical concerns. Outline two such concerns that this device may raise.",
     questionText: "The Apple Vision Pro is a new augmented reality (AR) headset that blends the digital world with the real world. It allows users to interact with virtual objects, play games, and work in a fully immersive digital environment. As technology such as Apple Vision Pro becomes more advanced and popular, it raises social and ethical concerns. Outline two such concerns that this device may raise.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Privacy Issues: Devices like the Apple Vision Pro, which use advanced cameras and sensors, could collect large amounts of personal data.", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Privacy Issues: Devices like the Apple Vision Pro, which use advanced cameras and sensors, could collect large amounts of personal data.", marks: 6, accepts: ["Social Isolation: As these devices become more immersive, there's a risk that people may spend too much time in virtual worlds, leading to social isolation. This could affect face- to-face interactions and weaken real-world relationships.","Addiction and Overuse: The immersive nature of devices like the Apple Vision Pro may lead to addiction or overuse, where individuals spend excessive amounts of time in virtual environments, potentially affecting their health, sleep, and productivity.","Digital Divide: As advanced technology becomes more widespread, there may be concerns about accessibility and inequality. Not everyone can afford or access these high-tech devices, which could widen the gap between those who have access to cutting- edge technology and those who don't.","Impact on Mental Health: Constant exposure to augmented reality (AR) or virtual reality (VR) environments may affect users' perception of reality, potentially leading to mental health issues such as anxiety, disconnection from the real world, or a distorted sense of self."], contextNote: "Accept any other valid answers. For each explanation: Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3,4,5,6] },
     ],
   } as SecCard,
   {
@@ -2062,21 +2059,21 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q10", topicId: "cs-2-2", conceptId: "flowchart-figure-3-below-representation-algorithm",
+    id: "cs-2025-ol-q10", topicId: "cs-2-2", conceptId: "flowchart-3-representation-algorithm-examine-flowchart",
     section: "A", questionRef: "2025 OL Q10",
-    stem: "The flowchart, in Figure 3 below, is a representation of an algorithm. Examine the flowchart and answer the question that follows. Figure 3 Calculate the output of the algorithm.",
     questionText: "The flowchart, in Figure 3 below, is a representation of an algorithm. Examine the flowchart and answer the question that follows. Calculate the output of the algorithm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-output", kind: "allOf", verbatim: "0 2 4 6 8 10", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "0 2 4 6 8 10", marks: 6, contextNote: "Fully correct 6 marks Almost correct response 4 marks Any valid response 2 marks", permittedMarks: [0,2,4,6] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2025-OL-paper-q10-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q10-fig0.png",
           "srcHash": "01cdece4153fc3d34f8a6c462420d48e",
           "alt": "The table or diagram printed with 2025 OL Question 10, as the State Examinations Commission set it. It is labelled: Figure 3.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2084,21 +2081,21 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q12", topicId: "cs-2-2", conceptId: "piece-python-code-displayed-below-1",
+    id: "cs-2025-ol-q12", topicId: "cs-2-2", conceptId: "piece-python-code-displayed-when-code",
     section: "A", questionRef: "2025 OL Q12",
-    stem: "A piece of Python code is displayed below. When the code is run in an integrated development environment (IDE), it produces the following error: TypeError: can only concatenate string (not \"integer\") to string Explain why this error has occurred and how it could be fixed. Section B Long Questions 76 marks",
     questionText: "A piece of Python code is displayed below. When the code is run in an integrated development environment (IDE), it produces the following error: TypeError: can only concatenate string (not \"integer\") to string Explain why this error has occurred and how it could be fixed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "This error has occurred as the code is trying to add a string and an integer which will result in an error. This could be resolved by defining myNum as an integer rather than a string or converting the datatype of the myNum to an integer.", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "This error has occurred as the code is trying to add a string and an integer which will result in an error. This could be resolved by defining myNum as an integer rather than a string or converting the datatype of the myNum to an integer.", marks: 6, contextNote: "Any valid response Very good explanation - clear understanding demonstrated 6 marks Good explanation - clear information, lacking full understanding 4 marks Fair explanation - limited understanding 2 marks", permittedMarks: [0,2,4,6] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2025-OL-paper-q12-code0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q12-code0.png",
           "srcHash": "fd8263f8b1e91eac7685ee7e8cc5d3f5",
           "alt": "The program printed with 2025 OL Question 12, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 6 lines and begins: myNum = \"6\"",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2106,22 +2103,14 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q13-a-i", topicId: "cs-2-3", conceptId: "list-three-other-important-computing-developments",
+    id: "cs-2025-ol-q13-a-i", topicId: "cs-2-3", conceptId: "list-other-important-computing-developments-have",
     section: "B", questionRef: "2025 OL Q13(a)(i)",
-    stem: "Figure 4",
+    stem: "The development of the world’s first computer, ENIAC (electronic numerical integrator and computer) in 1945, is a major milestone in computing.",
     questionText: "List three other important computing developments that have taken place in the last 100 years.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The development of the Turing Machine", marks: 6 },
+    { id: "r-1", kind: "anyN", verbatim: "List three other important computing developments that have taken place in the last 100 years.", marks: null, contextNote: "Each valid answer 2 marks Accept other relevant answers", openList: true, group: {"claimMax":3,"perOption":2,"options":["The development of the Turing Machine","The development of algorithms and software e.g. search/sort algorithms, programming language compilers","The invention of the internet","The development of the personal computer (PC)","The advancement of artificial intelligence (AI)","The creation of the World Wide Web","The development of mobile phones and smartphones","The rise of cloud computing","The expansion of wireless networking (wi-fi and 5g)","The creation of graphical user interfaces (GUIs)","The invention of the microprocessor","The rise of blockchain and cryptocurrencies"]} },
     ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q13-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
-          "srcHash": "4ad354f56f8a3afaf07b421737668d08",
-          "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
-          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2130,20 +2119,12 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "cs-2025-ol-q13-a-iii", topicId: "cs-2-3", conceptId: "artificial-intelligence-machine-learning-major-trends",
     section: "B", questionRef: "2025 OL Q13(a)(iii)",
-    stem: "Figure 4",
+    stem: "The development of the world’s first computer, ENIAC (electronic numerical integrator and computer) in 1945, is a major milestone in computing.",
     questionText: "Artificial intelligence and machine learning are major trends in computing that have emerged over the last decade. Name and explain one other emerging trend in computing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Quantum computing: uses qubits, instead of binary, to solve complex problems much faster than classical computers, with applications in cryptography, drug discovery, etc.", marks: 4 },
+    { id: "r-1", kind: "criterion", verbatim: "Quantum computing: uses qubits, instead of binary, to solve complex problems much faster than classical computers, with applications in cryptography, drug discovery, etc.", marks: 4, accepts: ["Edge Computing: processes data closer to the source (e.g., IoT devices) rather than relying on centralised cloud servers, improving real-time processing for applications like smart cities and autonomous vehicles.","Self-Driving Cars: Cars that use sensors and software to drive themselves without needing a human driver.","Smart Homes: Homes that use technology to control lights, security, and appliances with apps or voice commands.","3D Printing: Printers that can create physical objects layer by layer, like toys, tools, and even houses.","Blockchain: A secure way to store data that makes things like digital money (cryptocurrencies) safer.","Extended Reality (XR): enhances digital interactions by blending the physical and virtual worlds, benefiting gaming, training, and remote collaboration.","Robotics: Robots that can do things humans do, like help in factories, explore space, or assist in hospitals.","Wearable Tech: Devices like smartwatches or fitness trackers that track your health and activity.","Drones: Flying devices used for taking photos, delivering packages, and exploring areas."], contextNote: "Accept any other valid answer Valid name 1 mark Very good explanation - clear understanding demonstrated 3 marks Fair explanation - limited understanding 2 marks", permittedMarks: [0,1,2,3,4] },
     ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q13-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
-          "srcHash": "4ad354f56f8a3afaf07b421737668d08",
-          "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
-          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2152,19 +2133,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "cs-2025-ol-q13-b-i", topicId: "cs-2-3", conceptId: "purpose-application-hardware-layers",
     section: "B", questionRef: "2025 OL Q13(b)(i)",
-    stem: "Figure 5 This question continues on the next page.",
+    stem: "Modern computer systems consist of the four layers shown in Figure 5 below.",
     questionText: "Explain the purpose of the application and hardware layers.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Application Layer: This is to provide the programs and apps that people use to do specific tasks", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Application Layer: This is to provide the programs and apps that people use to do specific tasks on a computer or device. This includes things like web browsers, email clients, and games. It’s what we directly interact with.", marks: 3, contextNote: "For each: Good explanation – clear understanding demonstrated 3 marks Fair description – limited understanding 2 mark", permittedMarks: [0,2,3] },
+    { id: "r-2", kind: "criterion", verbatim: "Hardware Layer: The purpose of the hardware layer is to provide the physical parts of a computer, like the processor, memory, and storage. These components make it possible for all the software to run and do tasks.", marks: 3, permittedMarks: [0,2,3] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2025-OL-paper-q13-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
           "srcHash": "4ad354f56f8a3afaf07b421737668d08",
           "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2174,19 +2157,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "cs-2025-ol-q13-b-ii", topicId: "cs-2-3", conceptId: "apple-ios-microsoft-windows-android-os",
     section: "B", questionRef: "2025 OL Q13(b)(ii)",
-    stem: "Figure 5 This question continues on the next page.",
+    stem: "Modern computer systems consist of the four layers shown in Figure 5 below.",
     questionText: "Apple iOS, Microsoft Windows, and Android OS are all examples of operating systems. List three functions of an operating system.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Managing Hardware", marks: 6 },
+    { id: "r-1", kind: "anyN", verbatim: "List three functions of an operating system.", marks: null, contextNote: "Each valid answer 2 marks Accept other correct functions of the OS", openList: true, group: {"claimMax":3,"perOption":2,"options":["Managing Hardware","Managing Resources","Provides a User Interface","Running / Managing Applications","File Management","Memory Management","Security/ Access control","Device Management","Multitasking"]} },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2025-OL-paper-q13-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
           "srcHash": "4ad354f56f8a3afaf07b421737668d08",
           "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2196,19 +2180,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "cs-2025-ol-q13-b-iii", topicId: "cs-2-3", conceptId: "enhancement-computers-over-last-few-decades",
     section: "B", questionRef: "2025 OL Q13(b)(iii)",
-    stem: "Figure 5 This question continues on the next page.",
+    stem: "Modern computer systems consist of the four layers shown in Figure 5 below.",
     questionText: "The enhancement of computers over the last few decades has allowed for the development of specific-purpose computers such as embedded systems. Describe two examples of embedded systems in our everyday lives.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Washing Machines – Controls washing cycles, temperature, and spin speeds.", marks: 4 },
+    { id: "r-1", kind: "criterion", verbatim: "Washing Machines – Controls washing cycles, temperature, and spin speeds.", marks: 4, accepts: ["Microwave Ovens – Manages cooking time, power levels, and sensors for even heating.","Smartphones – Operates touchscreens, cameras, and battery management.","Cars – Includes systems for anti-lock brakes (ABS), airbags, and GPS navigation.","Smart TVs – Allows internet connection, streaming, and app functionality.","Fitness Trackers – Monitors heart rate, steps, and sleep patterns.","Home Security Systems – Controls cameras, alarms, and motion sensors for safety.","Digital Cameras – Manages photo capture, storage, and image processing.","Printers – Manages paper feeding, ink usage, and printing tasks.","Thermostats – Controls home heating and cooling based on temperature settings."], contextNote: "Accept any other correct answer. For each: Good description – clear understanding demonstrated 2 marks Fair description / name only – limited understanding 1 mark", permittedMarks: [0,1,2,3,4] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2025-OL-paper-q13-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
           "srcHash": "4ad354f56f8a3afaf07b421737668d08",
           "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2218,19 +2203,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "cs-2025-ol-q14-a-i", topicId: "cs-2-2", conceptId: "line-1-code-has-conditional-statement",
     section: "B", questionRef: "2025 OL Q14(a)(i)",
-    stem: "This question continues on the next page.",
+    stem: "A vending machine, such as that in Figure 6, has the following options available for users. Customers deposit coins into the vending machine and input the two-character item code (for example, A2 for water) for their desired selection. If the customer has deposited enough funds, the vending machine dispenses the chosen item and returns any necessary change. A section of the Python code for the vending machine program is shown below.",
     questionText: "Line 1 of the code has a conditional statement. Explain the purpose of this conditional statement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "It is to check that the user has entered enough money to buy the selected item", marks: 5 },
+    { id: "r-1", kind: "criterion", verbatim: "It is to check that the user has entered enough money to buy the selected item", marks: 5, contextNote: "Good explanation – clear understanding demonstrated 5 marks Fair description – limited understanding 3 marks", permittedMarks: [0,3,5] },
     ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q14-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
-          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
-          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q14a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14a-code.png",
+          "srcHash": "dd1b57f6359393f25cb45005af90464a",
+          "alt": "The item table and Figure 6 printed with Question 14 (A1 Water, flavoured 1.5; A2 Water 1.2; B1 Oreos 2.5; C1 Crisps, Salt & Vinegar 2; C2 Crisps, Cheese & Onion 2; a drawing of a vending machine), above the five-line program of part (a): if money >= price: dispenseItem, giveChange(money - price), else: print(\"Error – not enough money inserted\").",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2240,19 +2226,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "cs-2025-ol-q14-a-ii", topicId: "cs-2-2", conceptId: "suitable-data-type-variable-price",
     section: "B", questionRef: "2025 OL Q14(a)(ii)",
-    stem: "This question continues on the next page.",
+    stem: "A vending machine, such as that in Figure 6, has the following options available for users. Customers deposit coins into the vending machine and input the two-character item code (for example, A2 for water) for their desired selection. If the customer has deposited enough funds, the vending machine dispenses the chosen item and returns any necessary change. A section of the Python code for the vending machine program is shown below.",
     questionText: "State a suitable data type for the variable price.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "float", marks: 1 },
     ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q14-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
-          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
-          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q14a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14a-code.png",
+          "srcHash": "dd1b57f6359393f25cb45005af90464a",
+          "alt": "The item table and Figure 6 printed with Question 14 (A1 Water, flavoured 1.5; A2 Water 1.2; B1 Oreos 2.5; C1 Crisps, Salt & Vinegar 2; C2 Crisps, Cheese & Onion 2; a drawing of a vending machine), above the five-line program of part (a): if money >= price: dispenseItem, giveChange(money - price), else: print(\"Error – not enough money inserted\").",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2260,21 +2247,22 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q14-b-i", topicId: "cs-2-5", conceptId: "describe-unit-test-should-take-place",
+    id: "cs-2025-ol-q14-b-i", topicId: "cs-2-5", conceptId: "unit-test-should-take-place-vending",
     section: "B", questionRef: "2025 OL Q14(b)(i)",
-    stem: "Code entered Money inserted (€) Expected result B1 3 Oreos dispensed, €0.50 change given 1.2 Water dispensed, no change given C1 Error – not enough money inserted C2 0.75",
+    stem: "A vending machine, such as that in Figure 6, has the following options available for users. Customers deposit coins into the vending machine and input the two-character item code (for example, A2 for water) for their desired selection. If the customer has deposited enough funds, the vending machine dispenses the chosen item and returns any necessary change. The vending machine needs to be tested before it is released.",
     questionText: "Describe a unit test that should take place for the vending machine.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Verify that selecting a specific snack (e.g., \"A1\") correctly identifies the item", marks: 4 },
+    { id: "r-1", kind: "criterion", verbatim: "Verify that selecting a specific snack (e.g., \"A1\") correctly identifies the item", marks: 4, accepts: ["Check if the vending machine accepts and processes a specific amount of money (e.g., €1.50) for a €1.50 snack.","Check that the vending machine dispenses the correct change if too much money is entered","Check that the card facility for payment is working","Check that the vending machine doesn’t allow an item to be selected if it is sold out","Check that the cancel button returns funds"], contextNote: "Any similar valid response Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,4] },
     ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q14-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
-          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
-          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q14-items",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-items.png",
+          "srcHash": "e35fda3dfcc711c3e1b6044834962cfb",
+          "alt": "The table printed with Question 14 (item code, item name, price in euro: A1 Water, flavoured 1.5; A2 Water 1.2; B1 Oreos 2.5; C1 Crisps, Salt & Vinegar 2; C2 Crisps, Cheese & Onion 2) beside Figure 6, a drawing of a vending machine stocked with snacks.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2282,20 +2270,32 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q14-b-ii", topicId: "cs-2-2", conceptId: "table-below-shows-test-plan-vending",
+    id: "cs-2025-ol-q14-b-ii", topicId: "cs-2-5", conceptId: "table-shows-test-plan-vending-machine",
     section: "B", questionRef: "2025 OL Q14(b)(ii)",
-    stem: "Code entered Money inserted (€) Expected result B1 3 Oreos dispensed, €0.50 change given 1.2 Water dispensed, no change given C1 Error – not enough money inserted C2 0.75",
+    stem: "A vending machine, such as that in Figure 6, has the following options available for users. Customers deposit coins into the vending machine and input the two-character item code (for example, A2 for water) for their desired selection. If the customer has deposited enough funds, the vending machine dispenses the chosen item and returns any necessary change. The vending machine needs to be tested before it is released.",
     questionText: "The table below shows a test plan for the vending machine. Some of the entries have been left blank. Complete the test plan by filling in the correct information in the blank spaces.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Code Entered Money Inserted (€) Expected Result", marks: 9 },
+    { id: "r-1", kind: "point", verbatim: "A2 1.2 Water served, no change given", marks: 3, contextNote: "Each correct item 3 marks" },
+    { id: "r-2", kind: "point", verbatim: "C1 <2 Error – not enough money inserted", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "C2 0.75 Error – not enough money inserted", marks: 3 },
     ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q14-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
-          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
-          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q14b-plan",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14b-plan.png",
+          "srcHash": "c732f151b970392b6dfd87dc0f83ea6d",
+          "alt": "The item table and Figure 6 printed with Question 14 (A1 Water, flavoured 1.5; A2 Water 1.2; B1 Oreos 2.5; C1 Crisps, Salt & Vinegar 2; C2 Crisps, Cheese & Onion 2; a drawing of a vending machine), above the test plan of part (b)(ii), columns Code entered, Money inserted and Expected result: B1, 3, Oreos dispensed, 0.50 euro change given; a blank code, 1.2, Water dispensed, no change given; C1, a blank amount, Error – not enough money inserted; C2, 0.75 and a blank result.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2025-OL-scheme-q14b-ii",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-scheme-q14b-ii.png",
+          "srcHash": "b90e89b5bb99bbcc77d722ff90343f35",
+          "alt": "The marking scheme's completed test plan for Question 14(b)(ii): B1, 3, Oreos served, 0.50 euro change given; A2, 1.2, Water served, no change given; C1, <2, Error – not enough money inserted; C2, 0.75, Error – not enough money inserted. The three answers (A2, <2 and the C2 result) are printed in red.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -2304,21 +2304,22 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q14-b-iii", topicId: "cs-2-3", conceptId: "stage-software-testing-other-than-unit",
+    id: "cs-2025-ol-q14-b-iii", topicId: "cs-2-5", conceptId: "stage-software-testing-other-than-unit",
     section: "B", questionRef: "2025 OL Q14(b)(iii)",
-    stem: "Code entered Money inserted (€) Expected result B1 3 Oreos dispensed, €0.50 change given 1.2 Water dispensed, no change given C1 Error – not enough money inserted C2 0.75",
+    stem: "A vending machine, such as that in Figure 6, has the following options available for users. Customers deposit coins into the vending machine and input the two-character item code (for example, A2 for water) for their desired selection. If the customer has deposited enough funds, the vending machine dispenses the chosen item and returns any necessary change. The vending machine needs to be tested before it is released.",
     questionText: "Name and explain a stage of software testing, other than unit testing, that should take place to ensure the vending machine works as intended when it is released.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Functional Testing. Functional testing checks whether the software performs its intended functions correctly. For example, testing that the vending machine dispenses water when the correct amount of money is inserted and the code button is entered.", marks: 3 },
+    { id: "r-1", kind: "criterion", verbatim: "Functional Testing. Functional testing checks whether the software performs its intended functions correctly. For example, testing that the vending machine dispenses water when the correct amount of money is inserted and the code button is entered.", marks: 3, accepts: ["Non-Functional Testing. Non-functional testing evaluates aspects like performance, usability, or reliability rather than specific behaviours. For example, testing how quickly the vending machine responds after the code is entered or how many users it can serve in an hour.","System Testing. System testing involves evaluating the complete and integrated system to ensure it meets the specified requirements. For example, testing the vending machine as a whole- powering it on, selecting a product, paying, and receiving the item - to confirm everything works together seamlessly.","User Acceptance Testing (UAT). This type of testing is done by the end users to verify the system meets their needs and is ready for real-world use. For example, a customer tests the vending machine in a real-world setting to confirm it operates as expected and is easy to use.","Alpha testing. This the first round of testing done by the developers of the software, usually inside the company. The goal is to find bugs or problems before the software is shared with people outside the company. It helps make sure everything works as expected.","Beta testing. This happens after alpha testing. It’s done by a group of real users outside the company who try the software in real-world situations. This helps catch any issues that the developers might have missed."], contextNote: "Any other valid stage of software testing is acceptable Valid name 1 mark Good description – clear understanding demonstrated 2 marks Fair description – limited understanding 1 mark", permittedMarks: [0,1,2,3] },
     ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q14-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
-          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
-          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q14-items",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-items.png",
+          "srcHash": "e35fda3dfcc711c3e1b6044834962cfb",
+          "alt": "The table printed with Question 14 (item code, item name, price in euro: A1 Water, flavoured 1.5; A2 Water 1.2; B1 Oreos 2.5; C1 Crisps, Salt & Vinegar 2; C2 Crisps, Cheese & Onion 2) beside Figure 6, a drawing of a vending machine stocked with snacks.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2326,21 +2327,22 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q14-b-iv", topicId: "cs-2-2", conceptId: "describe-two-design-features-could-be",
+    id: "cs-2025-ol-q14-b-iv", topicId: "cs-1-2", conceptId: "design-features-could-incorporated-into-vending",
     section: "B", questionRef: "2025 OL Q14(b)(iv)",
-    stem: "Code entered Money inserted (€) Expected result B1 3 Oreos dispensed, €0.50 change given 1.2 Water dispensed, no change given C1 Error – not enough money inserted C2 0.75",
+    stem: "A vending machine, such as that in Figure 6, has the following options available for users. Customers deposit coins into the vending machine and input the two-character item code (for example, A2 for water) for their desired selection. If the customer has deposited enough funds, the vending machine dispenses the chosen item and returns any necessary change. The vending machine needs to be tested before it is released.",
     questionText: "Describe two design features that could be incorporated into the vending machine to make it accessible to as many different types of users as possible.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Large Buttons: Easily readable buttons with high-contrast colours and tactile feedback can help users with visual impairments.", marks: 8 },
+    { id: "r-1", kind: "criterion", verbatim: "Large Buttons: Easily readable buttons with high-contrast colours and tactile feedback can help users with visual impairments.", marks: 8, accepts: ["Braille: Adding Braille next to each button and on product labels helps blind or low- vision users identify items and make selections.","Audio: A voice-guided system could provide instructions, item names, and prices, which is helpful for visually impaired users.","Height Position: A height-adjustable interface or lower panel allows both standing users and those in wheelchairs to access the machine comfortably.","Touchscreen: A touchscreen interface with an accessibility mode that enlarges text, adds voice assistance, or reduces complexity for users with cognitive disabilities.","Multi-Language Support: Providing instructions in multiple languages accommodates users who may not speak the primary language displayed on the machine."], contextNote: "Any other valid design feature For each: Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,4,6,8] },
     ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q14-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
-          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
-          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q14-items",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-items.png",
+          "srcHash": "e35fda3dfcc711c3e1b6044834962cfb",
+          "alt": "The table printed with Question 14 (item code, item name, price in euro: A1 Water, flavoured 1.5; A2 Water 1.2; B1 Oreos 2.5; C1 Crisps, Salt & Vinegar 2; C2 Crisps, Cheese & Onion 2) beside Figure 6, a drawing of a vending machine stocked with snacks.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2348,21 +2350,22 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q15-a-i", topicId: "cs-2-3", conceptId: "identify-three-potential-stakeholders-app-each",
+    id: "cs-2025-ol-q15-a-i", topicId: "cs-1-3", conceptId: "potential-stakeholders-app-stakeholder-requirement-they",
     section: "B", questionRef: "2025 OL Q15(a)(i)",
-    stem: "Figure 7",
+    stem: "A museum has an information point, such as that shown in Figure 7, to inform visitors about the museum’s art collection. There is only one information point at the entrance to the museum and it provides users with images and text about the artwork. However, there have been a number of complaints relating to the user experience, particularly in how the information from the information point is delivered to users. You are part of a design team working on redeveloping the visitor information point so that it allows users to access the information using an app on their own smart device.",
     questionText: "Identify three potential stakeholders for this app. For each stakeholder, identify one requirement they have for the app.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Museum Visitors", marks: 8 },
+    { id: "r-1", kind: "criterion", verbatim: "Museum Visitors Requirement: Easy access to detailed information about artwork to enhance their experience as they explore the museum.", marks: 9, accepts: ["Museum Staff Requirement: A user-friendly way to update and manage the content to keep the app information current and relevant.","Museum Administrators Requirement: Analytics tracking to monitor app usage and gather visitor insights.","Tour Guides Requirement: The app should allow syncing or scheduling of guided tour content so it complements live tours without conflicting information.","External Sponsors or Partners (e.g. cultural institutions, art donors) Requirement: The app should include space to acknowledge sponsors or partners through branded content or dedicated sections.","Project Manager Requirement: Ensure the app development stays on schedule and within budget, coordinating between stakeholders and managing risks and resources effectively.","Team Leader (e.g., Lead Developer or Design Lead) Requirement: Oversee technical or design quality, ensuring that the app meets functional, usability, and performance standards set by the project goals.","UX Designer Requirement: Ensure the app interface is intuitive and user-friendly, using consistent navigation patterns and accessible design principles.","Software Developer Requirement: Develop the app using a scalable architecture with clean, maintainable code that supports both Android and iOS platforms.","IT Support Staff Requirement: The app must be designed to integrate smoothly with the museum's existing IT infrastructure and be easy to deploy and troubleshoot."], contextNote: "Any other valid stakeholder and requirement For each: Valid stakeholder 1 mark Valid requirement 2 marks", permittedMarks: [0,1,2,3,4,5,6,7,8,9] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2025-OL-paper-q15-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-fig0.png",
           "srcHash": "4238272fc9f653ff7e671861fe56f9d7",
           "alt": "The table or diagram printed with 2025 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 7.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2370,21 +2373,22 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q15-a-ii", topicId: "cs-2-2", conceptId: "describe-two-adaptive-or-assistive-technology",
+    id: "cs-2025-ol-q15-a-ii", topicId: "cs-1-2", conceptId: "adaptive-assistive-technology-features-design-team",
     section: "B", questionRef: "2025 OL Q15(a)(ii)",
-    stem: "Figure 7",
+    stem: "A museum has an information point, such as that shown in Figure 7, to inform visitors about the museum’s art collection. There is only one information point at the entrance to the museum and it provides users with images and text about the artwork. However, there have been a number of complaints relating to the user experience, particularly in how the information from the information point is delivered to users. You are part of a design team working on redeveloping the visitor information point so that it allows users to access the information using an app on their own smart device.",
     questionText: "Describe two adaptive or assistive technology features that the design team should focus on for the project.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Screen Reader Compatibility: Ensures the content can be read aloud by screen readers, allowing visually impaired users to navigate and consume information effectively.", marks: 6 },
+    { id: "r-1", kind: "criterion", verbatim: "Screen Reader Compatibility: Ensures the content can be read aloud by screen readers, allowing visually impaired users to navigate and consume information effectively.", marks: 6, accepts: ["Text-to-Speech Option: Converts written text into spoken words, enabling users to listen to content instead of reading it.","Adjustable Text Size and Contrast: Allows users to customize text size and colour contrast for better readability and visual comfort.","Alternative Text for Images: Provides descriptive text for images, enabling users with visual impairments to understand visual content through screen readers.","Voice Command Navigation: Lets users control and navigate the application using voice commands for hands-free accessibility.","Multilingual Support: Offers content and navigation in multiple languages to accommodate a diverse range of users.","Simplified Interface with Large Buttons: Features a user-friendly layout with large, easy- to-tap buttons for users with motor impairments or limited dexterity.","Closed Captions for Audio/Video Content: Displays on-screen text for spoken words and sound effects in audio or video, aiding users who are deaf or hard of hearing."], contextNote: "Accept other valid technologies that have been described. For each: Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3,4,5,6] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2025-OL-paper-q15-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-fig0.png",
           "srcHash": "4238272fc9f653ff7e671861fe56f9d7",
           "alt": "The table or diagram printed with 2025 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 7.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2392,21 +2396,22 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q15-c-i", topicId: "cs-2-4", conceptId: "describe-one-benefit-including-technology",
+    id: "cs-2025-ol-q15-c-i", topicId: "cs-2-4", conceptId: "benefit-including-technology",
     section: "B", questionRef: "2025 OL Q15(c)(i)",
-    stem: "Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 5: https://www.apple.com/newsroom/2024/01/apple-vision-pro-available-in-the-us-on-february-2/ Image on page 7: https://commons.wikimedia.org/wiki/File: Partially_dismantled_Acer_ITX_Computer_case_ with_proprietary_deep_itx_motherboard_-_top_view.jpg Image on page 10: https://www.flickr.com/photos/kirbyurner/3660521353 Image on page 13: https://emojis.sh/emoji/vending-machine-with-candy-inside-lX7fCG4kfd Image on page 16: https://www.blackboxav.co.uk/project_tag/interactive-kiosk/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Sections A & B Wednesday 21 May Morning 9:30 – 11:00 2025L219G2EL 2025. M109 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Ordinary Level Wednesday 21 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Junior Cycle Final Examination 2019 previous page running Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly and when you complete each question part. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved all of your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Leaving Certificate – 2025 2 Computer Science, Section C – Ordinary level Leaving Certificate – 2025 3 Computer Science, Section C – Ordinary level Section C Programming 80 marks",
+    stem: "A museum has an information point, such as that shown in Figure 7, to inform visitors about the museum’s art collection. There is only one information point at the entrance to the museum and it provides users with images and text about the artwork. However, there have been a number of complaints relating to the user experience, particularly in how the information from the information point is delivered to users. You are part of a design team working on redeveloping the visitor information point so that it allows users to access the information using an app on their own smart device. One of the designers wants to build location tracking into the app to see exactly where visitors go in the museum.",
     questionText: "Describe one benefit of including this technology.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Enhanced navigation: users can easily locate exhibits, galleries, toilets, and other amenities within the museum, reducing confusion and improving their overall experience.", marks: 5 },
+    { id: "r-1", kind: "criterion", verbatim: "Enhanced navigation: users can easily locate exhibits, galleries, toilets, and other amenities within the museum, reducing confusion and improving their overall experience.", marks: 5, accepts: ["Personalised tours: the app can provide tailored suggestions and curated routes based on a user's location and preferences, creating a more engaging and interactive visit.","Contextual information: location tracking can trigger location-based content, such as detailed descriptions, audio guides, or videos, when patrons approach specific exhibits or landmarks.","Crowd management: museums can monitor visitor flow in real time, identifying congested areas and suggesting alternative routes to enhance comfort, security and safety.","Interactive experiences: location-based games, scavenger hunts, or augmented reality features can be integrated to make the museum experience more dynamic and fun.","Accessibility support: the app can guide users with mobility challenges to accessible pathways, lifts, or seating areas based on their location.","Visitor insights: location data provides valuable analytics on visitor behaviour, helping museums understand popular areas, optimise layouts, and plan future exhibits."], contextNote: "Any other valid benefit Good description – clear understanding demonstrated 5 marks Fair description – limited understanding 4 marks", permittedMarks: [0,4,5] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2025-OL-paper-q15-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-fig0.png",
           "srcHash": "4238272fc9f653ff7e671861fe56f9d7",
           "alt": "The table or diagram printed with 2025 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 7.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2414,90 +2419,119 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q15-c-ii", topicId: "cs-1-2", conceptId: "describe-one-ethical-concern-including-technology",
+    id: "cs-2025-ol-q15-c-ii", topicId: "cs-1-2", conceptId: "ethical-concern-including-technology",
     section: "B", questionRef: "2025 OL Q15(c)(ii)",
-    stem: "Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 5: https://www.apple.com/newsroom/2024/01/apple-vision-pro-available-in-the-us-on-february-2/ Image on page 7: https://commons.wikimedia.org/wiki/File: Partially_dismantled_Acer_ITX_Computer_case_ with_proprietary_deep_itx_motherboard_-_top_view.jpg Image on page 10: https://www.flickr.com/photos/kirbyurner/3660521353 Image on page 13: https://emojis.sh/emoji/vending-machine-with-candy-inside-lX7fCG4kfd Image on page 16: https://www.blackboxav.co.uk/project_tag/interactive-kiosk/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Sections A & B Wednesday 21 May Morning 9:30 – 11:00 2025L219G2EL 2025. M109 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Ordinary Level Wednesday 21 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Junior Cycle Final Examination 2019 previous page running Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly and when you complete each question part. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved all of your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Leaving Certificate – 2025 2 Computer Science, Section C – Ordinary level Leaving Certificate – 2025 3 Computer Science, Section C – Ordinary level Section C Programming 80 marks",
+    stem: "A museum has an information point, such as that shown in Figure 7, to inform visitors about the museum’s art collection. There is only one information point at the entrance to the museum and it provides users with images and text about the artwork. However, there have been a number of complaints relating to the user experience, particularly in how the information from the information point is delivered to users. You are part of a design team working on redeveloping the visitor information point so that it allows users to access the information using an app on their own smart device. One of the designers wants to build location tracking into the app to see exactly where visitors go in the museum.",
     questionText: "Describe one ethical concern of including this technology.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Privacy and data collection: collecting location data may raise concerns about how users' location information is stored, used, and shared.", marks: 4 },
+    { id: "r-1", kind: "criterion", verbatim: "Privacy and data collection: collecting location data may raise concerns about how users' location information is stored, used, and shared.", marks: 4, accepts: ["Data security: there’s a risk of sensitive location data being hacked or leaked, potentially compromising user privacy.","Informed consent (GDPR): users need to be fully informed about what data is being collected, why, and how it will be used, with clear opt-in and opt-out options.","Surveillance concerns: location tracking could be perceived as invasive, leading to discomfort or mistrust among visitors.","Digital divide: visitors without smartphones, location-enabled devices, or the technical skills to use such features may feel excluded or disadvantaged.","Bias in recommendations: algorithms might unintentionally prioritise certain exhibits, reinforcing biases or limiting exposure to less popular but equally important displays.","Dependence on technology: over-reliance on technology could reduce users’ sense of discovery or engagement with the physical environment.","Misuse by third parties: If location data is shared with third parties (e.g., advertisers or analytics firms), it could lead to unintended or unethical applications of the data.","Impact on children: if the app is used by children, special care must be taken to protect their location data and ensure parental consent is obtained."], contextNote: "Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 3 marks", permittedMarks: [0,3,4] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2025-OL-paper-q15-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-fig0.png",
           "srcHash": "4238272fc9f653ff7e671861fe56f9d7",
           "alt": "The table or diagram printed with 2025 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 7.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC219GLP038EV",
+    paperFileid: "LC219GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q16-a-v", topicId: "cs-2-2", conceptId: "total-cost-tiling-floor-can-be",
-    section: "B", questionRef: "2025 OL Q16(a)(v)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your examination number was 123456. Enter your examination number in the space provided on line 2 in your Python file. The program below is the start of a program to help floor tilers calculate the total cost of tiles. The program allows the user to enter the length of a room and then calculates and outputs the total area of the floor. Make the following changes to the program: Leaving Certificate – 2025 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2025 6 Computer Science, Section C – Ordinary level",
-    questionText: "The total cost for tiling the floor can be found by multiplying the cost per square metre by the area of the floor. Modify the program to print out the total cost in an appropriate sentence. When the program is run the output may now look as follows: What length is the room?: 5 What width is the room?: 6 You entered a length of: 5.0 metres You entered a width of: 6.0 metres The area of the floor is: 30.0 The cost per square metre is: 15 The total cost is: 450.0 This question continues on the next page.",
+    id: "cs-2025-ol-q16-a-v", topicId: "cs-2-2", conceptId: "total-cost-tiling-floor-can-found",
+    section: "C", questionRef: "2025 OL Q16(a)(v)",
+    stem: "The program below is the start of a program to help floor tilers calculate the total cost of tiles. The program allows the user to enter the length of a room and then calculates and outputs the total area of the floor.",
+    questionText: "The total cost for tiling the floor can be found by multiplying the cost per square metre by the area of the floor. Modify the program to print out the total cost in an appropriate sentence. When the program is run the output may now look as follows: What length is the room?: 5 What width is the room?: 6 You entered a length of: 5.0 metres You entered a width of: 6.0 metres The area of the floor is: 30.0 The cost per square metre is: 15 The total cost is: 450.0",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "10 marks Correct response", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "semantic error.", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "Response about half-right", marks: 2 },
-    { id: "r-4", kind: "point", verbatim: "syntax or semantic error.", marks: 2 },
-    { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 2 },
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 10, contextNote: "(v) 10 marks (C-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 8 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 5 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error. 3 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,3,5,8,10] },
     ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-figure.png",
-          "srcHash": "6c33a073caa3a4a87e96d90cdff326ed",
-          "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: # Question 16(a)",
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q16a-code",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16a-code.png",
+          "srcHash": "1ca11eb5b380ea9e4a9710d89373afd5",
+          "alt": "The eleven-line program Question16_A.py as printed in the Section C booklet: two comment lines, print(\"The program\"), length = float(input(\"What length is the room?: \")), width = 20, area = length * width, and print(\"The area of the floor is:\", area).",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2025-OL-scheme-q16a",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-scheme-q16a.png",
+          "srcHash": "af878682143d87ec5fd9a3afa469d037",
+          "alt": "The marking scheme's possible solution to Question 16(a), lines 1 to 27: print(\"Welcome to the Tilers Mate\") marked (i); the width read with float(input()) marked (iii); cost_per_square_metre = 15 marked (iv); the length and width printed in metres, marked (ii) and (iii); the cost per square metre printed, (iv); the total cost calculated and printed, (v); and the discount messages for totals over 1000, from 100 to 1000, and below 100, (vi).",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC219GLP038EV",
+    paperFileid: "LC219GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "cs-2025-ol-q16-a-vi", topicId: "cs-2-2", conceptId: "if-total-cost-greater-than-1000",
-    section: "B", questionRef: "2025 OL Q16(a)(vi)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your examination number was 123456. Enter your examination number in the space provided on line 2 in your Python file. The program below is the start of a program to help floor tilers calculate the total cost of tiles. The program allows the user to enter the length of a room and then calculates and outputs the total area of the floor. Make the following changes to the program: Leaving Certificate – 2025 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2025 6 Computer Science, Section C – Ordinary level",
-    questionText: "If the total cost is greater than 1000 then a discount will apply. However, if the total cost is less than 100 then the tiler will not take on the job. Modify the program to output a message based on the following table: Condition Output Cost is more than 1000 You are entitled to a 10% discount Cost is between 100 and 1000 inclusive You are not entitled to a 10% discount Cost is less than 100 Sorry, job is too small When the program is run the output may now look as follows: What length is the room?: 5 What width is the room?: 6 You entered a length of: 5.0 metres You entered a width of: 6.0 metres The area of the floor is: 30.0 The cost per square metre is: 15 The total cost is: 450.0 You are not entitled to a 10% discount Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your examination number was 123456.",
+    section: "C", questionRef: "2025 OL Q16(a)(vi)",
+    stem: "The program below is the start of a program to help floor tilers calculate the total cost of tiles. The program allows the user to enter the length of a room and then calculates and outputs the total area of the floor.",
+    questionText: "If the total cost is greater than 1000 then a discount will apply. However, if the total cost is less than 100 then the tiler will not take on the job. Modify the program to output a message based on the following table: When the program is run the output may now look as follows: What length is the room?: 5 What width is the room?: 6 You entered a length of: 5.0 metres You entered a width of: 6.0 metres The area of the floor is: 30.0 The cost per square metre is: 15 The total cost is: 450.0 You are not entitled to a 10% discount",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "10 marks Correct response", marks: 10 },
+    { id: "r-1", kind: "criterion", verbatim: "Correct implementation using solution above or similar.", marks: 10, contextNote: "(vi) 10 marks (C-10 scale) 10 marks Correct response Correct implementation using solution above or similar. 8 marks Almost correct response Correct implementation using solution above or similar but with minor syntax or semantic error. 5 marks Response about half-right Partially correct implementation using solution above or similar but with significant syntax or semantic error. 3 marks Response with some merit Any other reasonable attempt.", permittedMarks: [0,3,5,8,10] },
     ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-figure.png",
-          "srcHash": "6c33a073caa3a4a87e96d90cdff326ed",
-          "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: # Question 16(a)",
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q16a-vi",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16a-vi.png",
+          "srcHash": "45a75cd1b20f0132cb9a908296acc3e8",
+          "alt": "The eleven-line program Question16_A.py (print(\"The program\"), length read as a float, width = 20, area = length * width, the area printed), above the table printed with part (vi): cost more than 1000, You are entitled to a 10% discount; cost between 100 and 1000 inclusive, You are not entitled to a 10% discount; cost less than 100, Sorry, job is too small.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2025-OL-scheme-q16a",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-scheme-q16a.png",
+          "srcHash": "af878682143d87ec5fd9a3afa469d037",
+          "alt": "The marking scheme's possible solution to Question 16(a), lines 1 to 27: print(\"Welcome to the Tilers Mate\") marked (i); the width read with float(input()) marked (iii); cost_per_square_metre = 15 marked (iv); the length and width printed in metres, marked (ii) and (iii); the cost per square metre printed, (iv); the total cost calculated and printed, (v); and the discount messages for totals over 1000, from 100 to 1000, and below 100, (vi).",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: "LC219GLP038EV",
+    paperFileid: "LC219GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q16-b", topicId: "cs-2-2", conceptId: "open-program-called-question16-b-py",
-    section: "B", questionRef: "2025 OL Q16(b)",
-    stem: "Before making any changes, you should use the format ExaminationNumberQuestion16_B.py to save your file. For example, you would save the file as 123456Question16_B.py if your examination number was 123456. Enter your examination number in the space provided on line 2. Write a Python program that will calculate the total cost of tiles for a new house. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should meet the following requirements: 1. A message should be printed to the screen stating the following: “Tile Cost Calculator” 2. The user should be asked to enter the price of tiles per square metre. This amount can be a decimal number. 3. The user should be asked for the number of rooms to be tiled. 4. For each room, the number of the room should be printed and the user should be asked to enter the length and width of the room. The length and width can be a decimal number. 5. The total cost of the tiles should be printed to the screen. The amount should be rounded to 2 decimal places. Tile Cost Calculator How much do the tiles cost per square metre? 19.75 How many rooms do you want to tile? 3 Room 1 What width is the room?: 12 What length is the room?: 8 Room 2 What width is the room?: 9 What length is the room?: 6 Room 3 What width is the room?: 8.5 What length is the room?: 6.5 The total cost is EUR 4053.69 Save your file using the format ExaminationNumberQuestion16_B.py. For example, you would save the file as 123456Question16_B.py if your examination number was 123456. Leaving Certificate – 2025 7 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2025 8 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2025 9 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2025 10 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2025 11 Computer Science, Section C – Ordinary level Acknowledgements Images Image on page 4: https://picryl.com/media/worker-tile-tiler-industry-craft-2acc00 Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Section C Leaving Certificate – 2025 12 Computer Science, Section C – Ordinary level Wednesday 21 May Morning 11:30 – 12:30",
-    questionText: "Open the program called Question16_B.py from your device. This file contains two comments on lines 1 and 2.",
+    id: "cs-2025-ol-q16-b", topicId: "cs-2-2", conceptId: "write-python-program-will-calculate-total",
+    section: "C", questionRef: "2025 OL Q16(b)",
+    questionText: "Write a Python program that will calculate the total cost of tiles for a new house. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should meet the following requirements: 1. A message should be printed to the screen stating the following: “Tile Cost Calculator” 2. The user should be asked to enter the price of tiles per square metre. This amount can be a decimal number. 3. The user should be asked for the number of rooms to be tiled. 4. For each room, the number of the room should be printed and the user should be asked to enter the length and width of the room. The length and width can be a decimal number. 5. The total cost of the tiles should be printed to the screen. The amount should be rounded to 2 decimal places.",
     tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 20 },
+    { id: "r-1", kind: "criterion", verbatim: "Program Inputs — User correctly prompted to enter each of the following and stored as the correct data type: • cost of tiles (float) • number of rooms (int) • length (float) • width (float) • Variable initialisation and use of assignment statements", marks: 5, contextNote: "High level of achievement All of the following implemented correctly and efficiently Moderate level of achievement Reasonable attempt to implement at least two of each of the following Low level of achievement Poor attempt to complete any of the following", permittedMarks: [0,3,4,5] },
+    { id: "r-2", kind: "criterion", verbatim: "Program Logic (Processing) — Program loops through correct number of rooms • Program calculates the individual room cost • Program correctly increments the total cost in a variable • Total cost rounded to 2 decimal places", marks: 5, permittedMarks: [0,3,4,5] },
+    { id: "r-3", kind: "criterion", verbatim: "Program Outputs — Program outputs “Tile Cost Calculator” at the start • Program outputs the room number correctly for each room • Program outputs the total amount in the correct format", marks: 5, permittedMarks: [0,3,4,5] },
+    { id: "r-4", kind: "criterion", verbatim: "Programming Standards — Program executes correctly with no syntax or runtime errors • Program meets requirements • Program design is well explained with comments • Meaningful variable/function names", marks: 5, permittedMarks: [0,3,4,5] },
     ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q16-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-figure.png",
-          "srcHash": "6c33a073caa3a4a87e96d90cdff326ed",
-          "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: # Question 16(a)",
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q16b-output",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16b-output.png",
+          "srcHash": "b8fabe0ce9ad6d7f2c9262a9e7b5c112",
+          "alt": "The sample output printed with Question 16(b): Tile Cost Calculator; How much do the tiles cost per square metre? 19.75; How many rooms do you want to tile? 3; then for Room 1, Room 2 and Room 3 the width and length entered (12 and 8, 9 and 6, 8.5 and 6.5); The total cost is EUR 4053.69.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2025-OL-scheme-q16b",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-scheme-q16b.png",
+          "srcHash": "cc5488aa5ca15a549baa44654dcfbbbd",
+          "alt": "The marking scheme's 32-line possible solution for Question 16(b): print \"Tile Cost Calculator\"; cost_per_sq_metre read as a float and num_rooms as an int; total_cost = 0.0; for x in range(num_rooms) the room number is printed, the width and length are read as floats, room_cost = width * length * cost_per_sq_metre is added to total_cost; then print(\"The total cost is EUR\", round(total_cost,2)).",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -2506,28 +2540,24 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q3", topicId: "cs-2-3", conceptId: "choose-appropriate-number-system-list-below",
+    id: "cs-2025-ol-q3", topicId: "cs-2-3", conceptId: "choose-appropriate-number-system-list-place",
     section: "A", questionRef: "2025 OL Q3",
-    questionText: "(a) Choose the appropriate number system from the list below and place it in Column B to match the correct base value in Column A. (b) Explain why computers use the binary number system rather than the decimal number system.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    questionText: "(a) Choose the appropriate number system from the list below and place it in Column B to match the correct base value in Column A. Hexadecimal Binary Decimal (b) Explain why computers use the binary number system rather than the decimal number system.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Base Value Number system", marks: null },
-    { id: "r-3", kind: "point", verbatim: "2 Binary", marks: null },
-    { id: "r-4", kind: "point", verbatim: "10 Decimal", marks: null },
-    { id: "r-5", kind: "point", verbatim: "16 Hexadecimal", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Simplicity for Hardware: Computers use electrical circuits, which have two states: on (1) and off (0).", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Reliability: Using just two states (1 and 0) reduces the chance of errors or misinterpretations.", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.", marks: null },
-    { id: "r-9", kind: "point", verbatim: "Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "2 Binary", marks: 1, contextNote: "Each correct item 1 mark" },
+    { id: "r-2", kind: "point", verbatim: "10 Decimal", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "16 Hexadecimal", marks: 1 },
+    { id: "r-4", kind: "criterion", verbatim: "Simplicity for Hardware: Computers use electrical circuits, which have two states: on (1) and off (0).", marks: 3, accepts: ["Reliability: Using just two states (1 and 0) reduces the chance of errors or misinterpretations.","Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.","Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers."], contextNote: "Accept any relevant answers given. Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2025-OL-paper-q3-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q3-fig0.png",
           "srcHash": "6b8a475bb57bbb7dd154f9a6825c3765",
           "alt": "The table or diagram printed with 2025 OL Question 3, as the State Examinations Commission set it. It is labelled: Column A, Base value, Column B, Number system.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2535,31 +2565,23 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q7", topicId: "cs-2-1", conceptId: "list-two-ways-abstraction-has-been",
+    id: "cs-2025-ol-q7", topicId: "cs-2-1", conceptId: "list-ways-abstraction-has-been-map",
     section: "A", questionRef: "2025 OL Q7",
-    stem: "Abstraction is used in maps, such as that in Figure 1 below, to help users read them with more ease. Figure 1",
+    stem: "Abstraction is used in maps, such as that in Figure 1 below, to help users read them with more ease.",
     questionText: "(a) List two ways in which abstraction has been used in the map in Figure 1. (b) What is meant by the term ‘abstraction’ in relation to computer science?",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Simplified items on the map are considered forms of abstraction such as:", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Removing unnecessary details such as buildings, trees etc", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Simplified roads", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Simplified river", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Simplified railway line", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Green areas", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Text labels on street names / road numbers", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Symbols for bus stops", marks: null },
-    { id: "r-9", kind: "point", verbatim: "Place names for important buildings", marks: null },
-    { id: "r-10", kind: "point", verbatim: "Abstraction means simplifying complex systems by focusing only on the important details and", marks: null },
-    { id: "r-11", kind: "point", verbatim: "hiding the unnecessary ones.", marks: null },
+    { id: "r-1", kind: "anyN", verbatim: "Simplified items on the map are considered forms of abstraction such as:", marks: null, contextNote: "Each correct item 1 mark Accept any other valid forms of validation given", openList: true, group: {"claimMax":2,"perOption":1,"options":["Removing unnecessary details such as buildings, trees etc","Simplified roads","Simplified river","Simplified railway line","Green areas","Text labels on street names / road numbers","Symbols for bus stops","Place names for important buildings"]} },
+    { id: "r-2", kind: "criterion", verbatim: "Abstraction means simplifying complex systems by focusing only on the important details and hiding the unnecessary ones.", marks: 4, contextNote: "Good description – clear understanding demonstrated 4 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,4] },
     ],
-    figure: {
+    questionFigure: {
           "candId": "computer-science-2025-OL-paper-q7-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q7-fig0.png",
           "srcHash": "c45667c3432393528c280d39e05c8c8a",
           "alt": "The table or diagram printed with 2025 OL Question 7, as the State Examinations Commission set it. It is labelled: Figure 1.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -2570,108 +2592,20 @@ export const CARDS: SecCard[] = [
     id: "cs-2025-ol-q8", topicId: "cs-2-3", conceptId: "i-central-processing-unit-cpu-ii",
     section: "A", questionRef: "2025 OL Q8",
     stem: "Jeremy is building a desktop computer, such as that in Figure 2, using various pieces of hardware. Outline the purpose of the following components of a desktop computer:",
-    questionText: "(i) Central Processing Unit (CPU) (ii) Input devices Figure 2",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    questionText: "(i) Central Processing Unit (CPU) (ii) Input devices",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "CPU: The CPU (Central Processing Unit) is often referred to as the \"brain\" of the computer. It's the main component that performs most of the processing inside a computer", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Input Devices: Input devices are components used to enter data, instructions, or signals into a computer system. For each:", marks: null },
+    { id: "r-1", kind: "criterion", verbatim: "CPU: The CPU (Central Processing Unit) is often referred to as the \"brain\" of the computer. It's the main component that performs most of the processing inside a computer", marks: 3, contextNote: "For each: Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3] },
+    { id: "r-2", kind: "criterion", verbatim: "Input Devices: Input devices are components used to enter data, instructions, or signals into a computer system.", marks: 3, permittedMarks: [0,2,3] },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC219GLP038EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q13", topicId: "cs-2-3", conceptId: "development-world-s-first-computer-eniac",
-    section: "B", questionRef: "2025 OL Q13",
-    questionText: "(i) List three other important computing developments that have taken place in the last 100 years. (ii) Choose one of the developments from part (i) and explain its importance. (iii) Artificial intelligence and machine learning are major trends in computing that have emerged over the last decade. Name and explain one other emerging trend in computing. (a) The development of the world’s first computer, ENIAC (electronic numerical integrator and computer) in 1945, is a major milestone in computing. (i) Explain the purpose of the application and hardware layers. (ii) Apple iOS, Microsoft Windows, and Android OS are all examples of operating systems. List three functions of an operating system. (iii) The enhancement of computers over the last few decades has allowed for the development of specific-purpose computers such as embedded systems. Describe two examples of embedded systems in our everyday lives. (b) Modern computer systems consist of the four layers shown in Figure 5 below. (c) Name two computer-related careers and for each, list two activities that the person would undertake.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 38,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "The development of the Turing Machine", marks: null },
-    { id: "r-2", kind: "point", verbatim: "The development of algorithms and software e.g. search/sort algorithms, programming language compilers", marks: null },
-    { id: "r-3", kind: "point", verbatim: "The invention of the internet", marks: null },
-    { id: "r-4", kind: "point", verbatim: "The development of the personal computer (PC)", marks: null },
-    { id: "r-5", kind: "point", verbatim: "The advancement of artificial intelligence (AI)", marks: null },
-    { id: "r-6", kind: "point", verbatim: "The creation of the World Wide Web", marks: null },
-    { id: "r-7", kind: "point", verbatim: "The development of mobile phones and smartphones", marks: null },
-    { id: "r-8", kind: "point", verbatim: "The rise of cloud computing", marks: null },
-    { id: "r-9", kind: "point", verbatim: "The expansion of wireless networking (wi-fi and 5g)", marks: null },
-    { id: "r-10", kind: "point", verbatim: "The creation of graphical user interfaces (GUIs)", marks: null },
-    { id: "r-11", kind: "point", verbatim: "The invention of the microprocessor", marks: null },
-    { id: "r-12", kind: "point", verbatim: "The rise of blockchain and cryptocurrencies", marks: null },
-    ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q13-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
-          "srcHash": "4ad354f56f8a3afaf07b421737668d08",
-          "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q8-fig2",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q8-fig2.png",
+          "srcHash": "db734621841303e60f168525a844ff42",
+          "alt": "Figure 2, printed with Question 8: a photograph of the inside of a desktop computer case, showing the motherboard with its processor, the power supply and a drive cage.",
+          "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC219GLP038EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q14", topicId: "cs-2-3", conceptId: "section-python-code-vending-machine-program",
-    section: "B", questionRef: "2025 OL Q14",
-    stem: "A vending machine, such as that in Figure 6, has the following options available for users. C2 Crisps, Cheese & Onion 2 Customers deposit coins into the vending machine and input the two-character item code (for example, A2 for water) for their desired selection. If the customer has deposited enough funds, the vending machine dispenses the chosen item and returns any necessary change.",
-    questionText: "(i) Line 1 of the code has a conditional statement. Explain the purpose of this conditional statement. (ii) State a suitable data type for the variable price. (a) A section of the Python code for the vending machine program is shown below. (i) Describe a unit test that should take place for the vending machine. (ii) The table below shows a test plan for the vending machine. Some of the entries have been left blank. Complete the test plan by filling in the correct information in the blank spaces. (iii) Name and explain a stage of software testing, other than unit testing, that should take place to ensure the vending machine works as intended when it is released. (iv) Describe two design features that could be incorporated into the vending machine to make it accessible to as many different types of users as possible. (b) The vending machine needs to be tested before it is released. (c) When the user inserts the correct amount of money and enters the code of an item, the vending machine will perform a number of checks. Create an algorithm or flowchart to describe the process outlined in the following bullet points: • The vending machine checks if there are any of that particular item available. • If there are any items available, one is dispensed to the user. • If there are no items available, the user is asked to enter another code. • If there are less than three of that particular item remaining a message is sent to head office to order more stock for the vending machine.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 38,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "It is to check that the user has entered enough money to buy the selected item", marks: null },
-    { id: "r-2", kind: "point", verbatim: "float", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Verify that selecting a specific snack (e.g., \"A1\") correctly identifies the item", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Check if the vending machine accepts and processes a specific amount of money (e.g., €1.50) for a €1.50 snack.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Check that the vending machine dispenses the correct change if too much money is entered", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Check that the card facility for payment is working", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Check that the vending machine doesn’t allow an item to be selected if it is sold out", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Code Entered Money Inserted (€) Expected Result", marks: null },
-    { id: "r-9", kind: "point", verbatim: "B1 3 Oreos served, €0.50 change given", marks: null },
-    { id: "r-10", kind: "point", verbatim: "A2 1.2 Water served, no change given", marks: null },
-    { id: "r-11", kind: "point", verbatim: "C1 <2 Error – not enough money inserted", marks: null },
-    { id: "r-12", kind: "point", verbatim: "C2 0.75 Error – not enough money inserted", marks: null },
-    ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q14-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
-          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
-          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
-          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC219GLP038EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "cs-2025-ol-q15", topicId: "cs-2-3", conceptId: "museum-has-information-point-such-shown",
-    section: "B", questionRef: "2025 OL Q15",
-    questionText: "(i) Identify three potential stakeholders for this app. For each stakeholder, identify one requirement they have for the app. (ii) Describe two adaptive or assistive technology features that the design team should focus on for the project. (a) A museum has an information point, such as that shown in Figure 7, to inform visitors about the museum’s art collection. There is only one information point at the entrance to the museum and it provides users with images and text about the artwork. However, there have been a number of complaints relating to the user experience, particularly in how the information from the information point is delivered to users. You are part of a design team working on redeveloping the visitor information point so that it allows users to access the information using an app on their own smart device. (i) Outline one activity that your team will undertake at each of the four stages listed in the answer box below. (ii) One of the team has suggested using a staged software development process rather than the iterative development process shown in Figure 8. Put forward two arguments for retaining the iterative development process. (b) The diagram in Figure 8 below illustrates the typical stages in a software development design process. (i) Describe one benefit of including this technology. (ii) Describe one ethical concern of including this technology. (c) One of the designers wants to build location tracking into the app to see exactly where visitors go in the museum.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 38,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Museum Visitors", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Requirement: Easy access to detailed information about artwork to enhance their experience as", marks: null },
-    { id: "r-3", kind: "point", verbatim: "they explore the museum.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "Museum Staff", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Requirement: A user-friendly way to update and manage the content to keep the app", marks: null },
-    { id: "r-6", kind: "point", verbatim: "information current and relevant.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "Museum Administrators", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Requirement: Analytics tracking to monitor app usage and gather visitor insights.", marks: null },
-    { id: "r-9", kind: "point", verbatim: "Tour Guides", marks: null },
-    { id: "r-10", kind: "point", verbatim: "Requirement: The app should allow syncing or scheduling of guided tour content so it", marks: null },
-    { id: "r-11", kind: "point", verbatim: "complements live tours without conflicting information.", marks: null },
-    { id: "r-12", kind: "point", verbatim: "External Sponsors or Partners (e.g. cultural institutions, art donors)", marks: null },
-    ],
-    figure: {
-          "candId": "computer-science-2025-OL-paper-q15-fig0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-fig0.png",
-          "srcHash": "4238272fc9f653ff7e671861fe56f9d7",
-          "alt": "The table or diagram printed with 2025 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 7.",
-          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -3596,7 +3530,7 @@ export const CARDS: SecCard[] = [
     questionText: "There are a number of variable declarations in the Python program below. Choose the appropriate Python data type from the list below and place it in Column B to match the variable from the Python program in Column A. integer float bool list string",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Column A Column B Variable Python Data Type", marks: null, contextNote: "All correct 6 marks or Each correct item 1 mark", group: {"claimMax":5,"perOption":1,"options":["name string","age integer","student bool","exam_marks list","average_mark float"],"perOptionSteps":[1,1,1,1,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "Choose the appropriate Python data type from the list below and place it in Column B to match the variable from the Python program in Column A.", marks: null, contextNote: "All correct 6 marks or Each correct item 1 mark", group: {"claimMax":5,"perOption":1,"options":["name string","age integer","student bool","exam_marks list","average_mark float"],"perOptionSteps":[1,1,1,1,2]} },
     ],
     questionFigure: {
           "candId": "computer-science-2025-OL-paper-q5-code",
@@ -3645,7 +3579,7 @@ export const CARDS: SecCard[] = [
     questionText: "A selection sort (simple sort), which repeatedly selects the smallest unsorted number, is to be used to sort the list of numbers below into ascending order. Use the boxes below to show the state of the list after each swap. The initial state and the final state of the list have been completed. List = [13, 54, 4, 81, 92, 26]",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Question 11 Initial state 13 54 4 81 92 26", marks: null, contextNote: "All rows correct 6 marks 3 rows correct 4 marks 2 rows correct 3 marks 1 row correct 2 marks", group: {"claimMax":4,"perOption":2,"options":["Swap 1 4 54 13 81 92 26","Swap 2 4 13 54 81 92 26","Swap 3 4 13 26 81 92 54","Swap 4 4 13 26 54 92 81"],"perOptionSteps":[2,1,1,2]} },
+    { id: "r-1", kind: "anyN", verbatim: "Initial state 13 54 4 81 92 26", marks: null, contextNote: "All rows correct 6 marks 3 rows correct 4 marks 2 rows correct 3 marks 1 row correct 2 marks", group: {"claimMax":4,"perOption":2,"options":["Swap 1 4 54 13 81 92 26","Swap 2 4 13 54 81 92 26","Swap 3 4 13 26 81 92 54","Swap 4 4 13 26 54 92 81"],"perOptionSteps":[2,1,1,2]} },
     ],
     questionFigure: {
           "candId": "computer-science-2025-OL-paper-q11-boxes",
@@ -4634,5 +4568,115 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "criterion", verbatim: "Car 1 & 2 charge for 30 minutes - total running time 30 minutes Car 2 comes out and Car 3 enters - total running time 30 minutes After 30 minutes Car 2 replaces Car 1 - total running time 60 minutes (Car 1 full) After 30 minutes Car 2 & Car 3 full - total running time 90 minutes Ans: 1.5 hours (90 minutes)", marks: 6, contextNote: "Correct answer with workings 6 marks Correct answer only 4 marks Work of merit 2 marks", permittedMarks: [0,2,4,6] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2025-ol-q13-a-ii", topicId: "cs-2-3", conceptId: "choose-developments-part-i-importance",
+    section: "B", questionRef: "2025 OL Q13(a)(ii)",
+    stem: "The development of the world’s first computer, ENIAC (electronic numerical integrator and computer) in 1945, is a major milestone in computing.",
+    questionText: "Choose one of the developments from part (i) and explain its importance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "The scheme prints no answer for this part.", marks: 6, contextNote: "Candidates can select any one of the three developments they have listed above. Very good explanation - clear understanding demonstrated 6 marks Fair explanation - limited understanding 3 marks", unprinted: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2025-ol-q13-c", topicId: "cs-1-2", conceptId: "computer-related-careers-list-activities-person",
+    section: "B", questionRef: "2025 OL Q13(c)",
+    questionText: "Name two computer-related careers and for each, list two activities that the person would undertake.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Software Developer o Writing and testing code for applications. o Collaborating with teams to design software solutions.", marks: 6, accepts: ["Web Developer o Building and maintaining websites. o Ensuring websites are optimized for performance and usability.","Data Analyst o Analysing datasets to extract meaningful insights. o Creating visualisations and reports to present findings.","Cybersecurity Analyst o Monitoring systems for security breaches. o Implementing measures to protect sensitive data.","IT Support Specialist o Troubleshooting hardware and software issues for users. o Installing and configuring computer systems.","Network Administrator o Managing and maintaining computer networks. o Ensuring network security and performance.","Game Developer o Designing and programming video games. o Testing games for bugs and optimizing gameplay.","UX/UI Designer o Creating wireframes and prototypes for software or websites. o Conducting user testing to improve product usability."], contextNote: "For each: Valid name 1 mark Each valid activity 1 mark (max 2)", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2025-ol-q14-c", topicId: "cs-2-2", conceptId: "when-user-inserts-correct-amount-money",
+    section: "B", questionRef: "2025 OL Q14(c)",
+    stem: "A vending machine, such as that in Figure 6, has the following options available for users. Customers deposit coins into the vending machine and input the two-character item code (for example, A2 for water) for their desired selection. If the customer has deposited enough funds, the vending machine dispenses the chosen item and returns any necessary change.",
+    questionText: "When the user inserts the correct amount of money and enters the code of an item, the vending machine will perform a number of checks. Create an algorithm or flowchart to describe the process outlined in the following bullet points: • The vending machine checks if there are any of that particular item available. • If there are any items available, one is dispensed to the user. • If there are no items available, the user is asked to enter another code. • If there are less than three of that particular item remaining a message is sent to head office to order more stock for the vending machine.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correctly deals with condition to check if any items available", marks: 3, contextNote: "Reasonable attempt at condition to check if any items available 2 marks", permittedMarks: [0,2,3] },
+    { id: "r-2", kind: "criterion", verbatim: "Correctly deals with condition to send email where stock is less than 3", marks: 3, contextNote: "Reasonable attempt at condition to send email where stock is less than 3 2 marks", permittedMarks: [0,2,3] },
+    { id: "r-3", kind: "criterion", verbatim: "Good overall coherence of flowchart/pseudocode", marks: 2, contextNote: "Fair overall coherence of flowchart/pseudocode 1 marks", permittedMarks: [0,1,2] },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q14-items",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-items.png",
+          "srcHash": "e35fda3dfcc711c3e1b6044834962cfb",
+          "alt": "The table printed with Question 14 (item code, item name, price in euro: A1 Water, flavoured 1.5; A2 Water 1.2; B1 Oreos 2.5; C1 Crisps, Salt & Vinegar 2; C2 Crisps, Cheese & Onion 2) beside Figure 6, a drawing of a vending machine stocked with snacks.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+    figure: {
+          "candId": "computer-science-2025-OL-scheme-q14c",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-scheme-q14c.png",
+          "srcHash": "0e9bb9cb322e397e0e9a01db93da038e",
+          "alt": "The marking scheme's answer to Question 14(c). Pseudocode: START; User inserts money and enters item code; IF stock is less than 1: Prompt user to enter another code; IF stock is less than 3: (Dispense item) Send Email to head office; ELSE: (stock must be 1 or more) Dispense item; STOP. Beside it, a flowchart: Start; INPUT amount and item code; Stock < 1? No/False leads to Dispense Item, Yes/True to INPUT item another code and then Stock < 3?, whose Yes/True leads to Send Email to order more stock and whose No/False joins the line from Dispense Item; Stop.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2025-ol-q15-b-i", topicId: "cs-1-3", conceptId: "activity-team-will-undertake-at-four",
+    section: "B", questionRef: "2025 OL Q15(b)(i)",
+    stem: "A museum has an information point, such as that shown in Figure 7, to inform visitors about the museum’s art collection. There is only one information point at the entrance to the museum and it provides users with images and text about the artwork. However, there have been a number of complaints relating to the user experience, particularly in how the information from the information point is delivered to users. You are part of a design team working on redeveloping the visitor information point so that it allows users to access the information using an app on their own smart device. The diagram in Figure 8 below illustrates the typical stages in a software development design process.",
+    questionText: "Outline one activity that your team will undertake at each of the four stages listed in the answer box below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Investigate:", marks: null, contextNote: "For each: Valid activity 2 marks", openList: true, group: {"claimMax":1,"perOption":2,"options":["Identify stakeholders","Gather requirements","Conduct market research","Define project objectives","Review current similar products","Any other valid activity"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Plan:", marks: null, openList: true, group: {"claimMax":1,"perOption":2,"options":["Setout timeline","Setout milestones","Gather requirements","Assign roles & tasks","Create project plan","Any other valid activity"]} },
+    { id: "r-3", kind: "anyN", verbatim: "Evaluate:", marks: null, openList: true, group: {"claimMax":1,"perOption":2,"options":["Quality assurance","Test results","User feedback","Review success criteria","Areas for improvement","Any other valid activity"]} },
+    { id: "r-4", kind: "anyN", verbatim: "Document:", marks: null, openList: true, group: {"claimMax":1,"perOption":2,"options":["Create user guide","Create FAQa","Installation / Setup guide","Troubleshooting support","Project review","Any other valid activity"]} },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q15-figs",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-figs.png",
+          "srcHash": "27fc084ba8ef4554d3c1121ea9979884",
+          "alt": "Figure 7, a photograph of a museum information point, a touchscreen table showing images of artwork, above Figure 8, a row of arrows for the stages INVESTIGATE, PLAN, DESIGN, CREATE, EVALUATE and DOCUMENT, with an ITERATE arrow looping back from EVALUATE to PLAN.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2025-ol-q15-b-ii", topicId: "cs-1-3", conceptId: "team-has-suggested-using-staged-software",
+    section: "B", questionRef: "2025 OL Q15(b)(ii)",
+    stem: "A museum has an information point, such as that shown in Figure 7, to inform visitors about the museum’s art collection. There is only one information point at the entrance to the museum and it provides users with images and text about the artwork. However, there have been a number of complaints relating to the user experience, particularly in how the information from the information point is delivered to users. You are part of a design team working on redeveloping the visitor information point so that it allows users to access the information using an app on their own smart device. The diagram in Figure 8 below illustrates the typical stages in a software development design process.",
+    questionText: "One of the team has suggested using a staged software development process rather than the iterative development process shown in Figure 8. Put forward two arguments for retaining the iterative development process.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Flexibility and adaptability: iterative development allows for continuous feedback and adjustments, making it easier to accommodate changing user requirements and business needs, reducing the risk of delivering an unsuitable product.", marks: 6, accepts: ["Early detection of issues: by testing in small cycles, bugs and design flaws are identified and resolved early, minimising the risk of costly fixes or major failures later in development.","User involvement and satisfaction: regular user feedback ensures the final product meets expectations, improves usability, and increases stakeholder satisfaction by involving them throughout the development process.","Risk management: breaking the project into smaller, manageable stages reduces overall risk, allowing developers to address technical and design challenges before they become major problems.","Improved quality and performance: continuous refinement and testing in each iteration enhance system stability, optimise performance, and lead to a more reliable and user-friendly product.","Encourages collaboration: developers, testers, and stakeholders work closely together throughout the process, fostering transparency, reducing misunderstandings, and ensuring alignment with project goals.","Better cost and time management: prioritising and refining features based on feedback helps avoid wasted effort, prevents unnecessary expenses, and reduces the likelihood of project overruns."], contextNote: "For each argument: Good description – clear understanding demonstrated 3 marks Fair description – limited understanding 2 marks", permittedMarks: [0,2,3,4,5,6] },
+    ],
+    questionFigure: {
+          "candId": "computer-science-2025-OL-paper-q15-figs",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-figs.png",
+          "srcHash": "27fc084ba8ef4554d3c1121ea9979884",
+          "alt": "Figure 7, a photograph of a museum information point, a touchscreen table showing images of artwork, above Figure 8, a row of arrows for the stages INVESTIGATE, PLAN, DESIGN, CREATE, EVALUATE and DOCUMENT, with an ITERATE arrow looping back from EVALUATE to PLAN.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "includesPrompt": false
+    },
   } as SecCard,
 ];

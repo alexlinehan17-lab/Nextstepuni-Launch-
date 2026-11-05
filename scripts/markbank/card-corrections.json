@@ -1140,49 +1140,6 @@
      }
     ]
    }
-  },
-  "cs-2025-ol-q2": {
-   "reason": "The task asks for two cloud-storage reasons, each worth 3 marks. Six scheme examples are a bounded open pool, not six required 1-mark rows.",
-   "set": {
-    "rows": [
-     {
-      "id": "r-reasons",
-      "kind": "anyN",
-      "verbatim": "Any two reasons for using cloud storage",
-      "marks": null,
-      "openList": true,
-      "group": {
-       "claimMax": 2,
-       "perOption": 3,
-       "options": [
-        "Accessibility: Cloud storage allows you to access your files from anywhere with an internet connection.",
-        "Backup and Security: Files stored in the cloud are often automatically backed up and protected with advanced security measures.",
-        "File Sharing and Collaboration: Cloud storage makes it easy to share files and collaborate with others.",
-        "Automatic Updates: Cloud storage services often come with automatic software updates and maintenance.",
-        "Disaster Recovery: In case of a local hardware failure (e.g., a damaged hard drive), cloud storage ensures that your files remain safe and recoverable.",
-        "Cost Efficiency: With cloud storage, you only pay for the storage you use, avoiding the upfront cost of purchasing external hard drives or other local storage devices."
-       ]
-      }
-     }
-    ]
-   }
-  },
-  "cs-2025-ol-q10": {
-   "reason": "The flowchart has one six-mark output sequence with holistic partial-credit bands. The parser incorrectly made each printed output value a separate 1-mark claim.",
-   "set": {
-    "tariffModel": {
-     "kind": "fixed"
-    },
-    "questionText": "The flowchart, in Figure 3 below, is a representation of an algorithm. Examine the flowchart and answer the question that follows. Calculate the output of the algorithm.",
-    "rows": [
-     {
-      "id": "r-output",
-      "kind": "allOf",
-      "verbatim": "0 2 4 6 8 10",
-      "marks": 6
-     }
-    ]
-   }
   }
  },
  "engineering": {
