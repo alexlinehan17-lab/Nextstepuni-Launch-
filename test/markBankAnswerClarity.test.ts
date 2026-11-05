@@ -276,7 +276,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
         // A ladder prices how many are right; tariff rows add up to the sub-question; an answer list
         // (listening and reading) prices each alternative, so its best row is what counts.
         if (part.ladder) expect(part.ladder.at(-1), card.id).toBe(part.tariff);
-        else if (part.rows.some(row => row.steps) || part.rows.reduce((sum, row) => sum + row.marks, 0) === part.tariff) expect(part.rows.reduce((sum, row) => sum + row.marks, 0), `${card.id}: rows of a sub-question add to its tariff`).toBe(part.tariff);
+        // A stepped row that is a whole answer on its own ("Gálaí: cáiliú (móra)" 0/1/2 of 2, 2013 Higher listening) is one
+        // more alternative in an answer list, not a component of the tariff.
+        else if (part.rows.some(row => row.steps && row.marks < part.tariff) || part.rows.reduce((sum, row) => sum + row.marks, 0) === part.tariff) expect(part.rows.reduce((sum, row) => sum + row.marks, 0), `${card.id}: rows of a sub-question add to its tariff`).toBe(part.tariff);
         else expect(Math.max(...part.rows.map(row => row.marks)), card.id).toBeGreaterThan(0);
         total += part.tariff;
       }
@@ -287,9 +289,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     };
     for (const { card, criteria } of irishCards) for (const criterion of criteria) if (criterion.allocation) checkAllocation(card, criterion);
     const unstructured = (criteria: typeof irishCards[number]['criteria']) => criteria.some(criterion => priced(criterion) && !criterion.allocation);
-    expect(exact).toHaveLength(1321);
+    expect(exact).toHaveLength(1329);
     const structured = exact.filter(({ criteria }) => !unstructured(criteria));
-    expect(structured).toHaveLength(1321);
+    expect(structured).toHaveLength(1329);
 
     // Nothing listening or reading is still prose. The archive review cuts one criterion per printed part, so the five
     // cards that had no rows on main have them: the 2022 Higher Fógra a hAon (tariff lines the text layer broke),

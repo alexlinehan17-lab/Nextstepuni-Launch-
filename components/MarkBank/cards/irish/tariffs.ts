@@ -34,7 +34,7 @@ const OPENER = new RegExp(String.raw`\(\s*${MARC}\s*\)|\{\s*${MARC}(?::\s*((?:\d
 /** A priced phrase: "X = 13 mharc", "X = 4 mharc + 4 mharc", "Pointe eolais 1 = Plé … = 5 mharc". */
 const PRICED = new RegExp(String.raw`([^•¶\n]{2,400}?)\s*=\s*${MARC}${SUM}(?!\s*(?:ar|an|ceann)\b)`, 'g');
 /** "Tréithe samplacha:" and "Ábhair imní:" (2014 Higher A and B 6(b)) head their lists as "Samplaí" does. */
-const SAMPLES = /(?:\b(?:Freagraí samplacha|Pointí eolais féideartha|(?<!\bas\s)Samplaí|Freagra samplach|Sampla cruinn:|Tréithe samplacha)|(?<![A-Za-zÁÉÍÓÚáéíóú])Ábhair imní(?=:))\s*:?\s*/i;
+const SAMPLES = /(?:\b(?:Freagraí samplacha|Pointí eolais féideartha|(?<!\bas\s)(?<!\bag tabhairt\s)Samplaí|Freagra samplach|Sampla cruinn:|Tréithe samplacha)|(?<![A-Za-zÁÉÍÓÚáéíóú])Ábhair imní(?=:))\s*:?\s*/i;
 /** Where a sample list ends because a split-priced phrase follows it: "Samplaí: Brón, … bród… Dhá shampla = 4 mharc + 4 mharc", or a
  *  numbered point's price: "Samplaí : Doicheall, … teannas… Pointe eolais 1 = 3 mharc" (2015 Higher 4F(iii)).
  *  Only a split ("a + b"), and never a verse reference, which stays inside its sample list whatever its price ("… gheal…
@@ -350,6 +350,14 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
         const at = match.index! + match[0].indexOf(match[1]);
         tokens.push({ kind: 'row', text: tidy(match[1]), marks: Number(match[2]), steps: range(Number(match[2])), at, end: match.index! + match[0].length });
       }
+    }
+    // "(6 mharc) Pointe amháin eolais a mharcáil as 5 mharc" (2013 Higher 3A(ii)): the paper's tariff for the part, then the one
+    // point the scheme marks out of the criterion's own marks. It is a judged row at those marks in single marks, as MARK_AS reads
+    // "an … a mharcáil as N" where nothing else is priced.
+    const pointAs = /\bPointe amháin eolais a mharcáil as (\d+)\s*m?h?arc\b/.exec(body);
+    if (pointAs && Number(pointAs[1]) === source.totalMarks && !tokens.some(token => token.kind === 'row')) {
+      tokens.push({ kind: 'row', text: 'Pointe amháin eolais', marks: source.totalMarks, steps: range(source.totalMarks),
+        at: pointAs.index, end: pointAs.index + pointAs[0].length });
     }
     // The 2015 point shares with nothing else priced: the priced sentence is the criterion's row, in its points' steps
     // ([0, 7, 14, 21, 23, 25]), only where the points add up to the criterion exactly.
