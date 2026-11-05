@@ -800,8 +800,9 @@ const decks = [
    * 2025 Ordinary's 33 point cards rebuilt as band-grid cards, ids kept; nothing withdrawn.
    * 2020 Higher, 25 band-grid cards, added.
    * 2019 Higher, 24 band-grid cards, added; I(b)(i) held for a ruling, no card.
-   * 2019 Ordinary, 23 band-grid cards, added. */
-  ['religious-education:higher', RE_HIGHER, 212, '8a507546843d84c9e850bfeea4868b372e465b61bd4a977c5c8be9516faa9ef3'],
+   * 2019 Ordinary, 23 band-grid cards, added.
+   * 2018 Higher, 22 band-grid cards, added; B(a)(i) held for a ruling, no card. */
+  ['religious-education:higher', RE_HIGHER, 234, '79339090fdfa48c6999afabc66c9867a70fb22156dd66363ca5593491558b3c1'],
   ['religious-education:ordinary', RE_ORDINARY, 205, '6299292f7f4dc77694448b2bafe7e09a0c3adbd887487f5a217f1390172270cc'],
   /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
    * replaced — it is a new subject and this is its first baseline. It ships
@@ -1486,6 +1487,7 @@ describe('Mark Bank card preservation', () => {
     // Religious Education 2020 Higher, 25 asks, 25 band-grid cards: 23,671.
     // Religious Education 2019 Higher, 25 asks, 24 band-grid cards (I(b)(i) held): 23,695.
     // Religious Education 2019 Ordinary, 23 asks, 23 band-grid cards: 23,718.
+    // Religious Education 2018 Higher, 23 asks, 22 band-grid cards (B(a)(i) held): 23,740.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1502,9 +1504,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_718 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_740 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_718 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_740 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
