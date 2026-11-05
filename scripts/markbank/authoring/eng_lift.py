@@ -168,6 +168,27 @@ def join(*parts):
     return obj
 
 
+def cells(*parts):
+    """One table row the scheme prints as cells side by side, as its cells.
+
+    The text layer runs a row's cells together ("Charpy Test Izod Test"), and
+    a cell that wraps runs into its neighbour line by line. Each piece is a
+    Lift of ONE cell -- a row's cells in turn, or a column's head and a cell
+    under it -- and the row reads them joined with " — ", the table's rule set
+    as a dash: layout, not words. `record` writes the pieces with " — "
+    between them, and `check` lifts each again and joins them the same way.
+    """
+    if len(parts) < 2 or not all(hasattr(p, 'source') and not hasattr(p, 'parts')
+                                 for p in parts):
+        raise ValueError('cells takes two or more single-page lifts')
+    if len({p.source[:3] for p in parts}) != 1:
+        raise ValueError('cells reads one document')
+    obj = Lift(' — '.join(parts), ('cells',) + tuple(p.source for p in parts))
+    obj.parts = parts
+    obj.sep = ' — '
+    return obj
+
+
 START = '<!-- markbank:eng-lifts -->'
 END = '<!-- /markbank:eng-lifts -->'
 
@@ -212,7 +233,7 @@ def record(year, level):
         if any(len(pc.source) > 5 for pc in pieces):
             raise SystemExit(f'{lf[:40]!r}: a scheme row is one rectangle a page')
         seen.add(str(lf))
-        where = ' + '.join(f'p{pc.source[3]} [{", ".join(f"{v:g}" for v in pc.source[4])}]'
+        where = getattr(lf, 'sep', ' + ').join(f'p{pc.source[3]} [{", ".join(f"{v:g}" for v in pc.source[4])}]'
                            + ('•' if getattr(pc, 'keeps_bullet', False) else '')
                            for pc in pieces)
         lines.append(f'{where} {lf}')
@@ -237,11 +258,12 @@ def check(year, level):
     for line in (m.group(1).splitlines() if m else []):
         if not line.strip():
             continue
-        g = _re.match(r'^((?:p\d+ \[[^\]]+\]•?(?: \+ )?)+) (.*)$', line)
+        g = _re.match(r'^((?:p\d+ \[[^\]]+\]•?(?: \+ | — )?)+) (.*)$', line)
         pieces = [lift(year, level, 'scheme', int(pg), [float(v) for v in r.split(',')],
                        bullet=not kept)
                   for pg, r, kept in _re.findall(r'p(\d+) \[([^\]]+)\](•?)', g.group(1))]
-        again = pieces[0] if len(pieces) == 1 else join(*pieces)
+        glue = cells if '] — p' in g.group(1) or ']• — p' in g.group(1) else join
+        again = pieces[0] if len(pieces) == 1 else glue(*pieces)
         if str(again) != g.group(2):
             bad += 1
             print(f'MISMATCH {g.group(1)}: {g.group(2)[:60]!r} != {again[:60]!r}')

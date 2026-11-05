@@ -709,6 +709,20 @@ SHORT_ASKS = {
     ('engineering', 2013, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism photographs, '
                                                    'under "Name and describe the operation of any one of the mechanisms '
                                                    'shown."'),
+    # 2012 HL, each opened on its page (2026-11-05).
+    **{('engineering', 2012, 'hl', f'Q1(c)({r})'): ('', f'p3: the caption "({r})" under the {n} of three safety signs, '
+                                                       'under "State the purpose of any two of the safety signs shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    **{('engineering', 2012, 'hl', f'Q1(j)({r})'): (t, f'p3: the abbreviation "({r}) {t}" in "(i) ISP (ii) LDR (iii) RAM '
+                                                       '(iv) CAD." under "Explain the meaning of any two of the following '
+                                                       'abbreviations:"')
+       for r, t in (('i', 'ISP'), ('ii', 'LDR'), ('iii', 'RAM'), ('iv', 'CAD.'))},
+    ('engineering', 2012, 'hl', 'Q6(c)(iv)'): ('GRP;', 'p9: the term "(iv) GRP;" in the list "(i) Elastomer; (ii) Catalyst; '
+                                                      '(iii) Blow moulding; (iv) GRP; (v) Laminate." under "Explain in '
+                                                      'detail any three of the following:"'),
+    ('engineering', 2012, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism photographs, '
+                                                   'under "Name and describe the operation of any one of the mechanisms '
+                                                   'shown."'),
     # 2013 OL, each opened on its page (2026-11-05).
     ('engineering', 2013, 'ol', 'Q2(a)(ii)'): ('Brass,', 'p3: the alloy "(ii) Brass," in "(i) Stainless steel, (ii) '
                                                         'Brass, (iii) High speed steel, (iv) Bronze." under "Select any '
