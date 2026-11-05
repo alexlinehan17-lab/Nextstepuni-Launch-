@@ -811,7 +811,8 @@ const decks = [
    * 2015 Higher, 23 band-grid cards, added; B(a)(ii) held.
    * 2015 Ordinary, 26 band-grid cards, added.
    * 2014 Higher, 19 band-grid cards, added.
-   * 2014 Ordinary, 20 band-grid cards, added; three held. */
+   * 2014 Ordinary, 20 band-grid cards, added; three held.
+   * 2017 Higher re-read with the Question Descriptor table; ids kept. */
   ['religious-education:higher', RE_HIGHER, 317, '55cbb3b8359cbfce9ea5ef1efa7fb53f0cc6eaf54d9b34a7768391afbbf655b5'],
   ['religious-education:ordinary', RE_ORDINARY, 323, 'f1e3d4630a0589c5fa674a5a9e89c79760e691c74e5f70a7f7e7ffcba9913380'],
   /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
@@ -1508,6 +1509,7 @@ describe('Mark Bank card preservation', () => {
     // Religious Education 2015 Ordinary, 26 asks, 26 band-grid cards: 23,902.
     // Religious Education 2014 Higher, 19 asks, 19 band-grid cards: 23,921.
     // Religious Education 2014 Ordinary, 23 asks, 20 band-grid cards (3 held): 23,941.
+    // Religious Education 2017 Higher re-read, 21 ids kept: 23,941.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
