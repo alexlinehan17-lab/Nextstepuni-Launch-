@@ -1,6 +1,6 @@
 {
  "v": 1,
- "cardCount": 466,
+ "cardCount": 468,
  "cards": [
   {
    "id": "re-2026-hl-a-1-a",
@@ -59594,6 +59594,151 @@
    }
   },
   {
+   "id": "re-2019-hl-i-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2019,
+   "level": "higher",
+   "section": "I",
+   "questionRef": "2019 HL Section I Q(b)(i)",
+   "topicId": "re-i",
+   "conceptId": "difference-between-secularism-secularisation",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Explain the difference between secularism and secularisation.",
+   "totalMarks": 10,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2019 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of secular movements in Ireland today by giving an accurate account of the difference between the philosophical position that society should not be influenced by religion and the decline of religiosity.",
+    "points": [],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 10,
+    "gridHead": "10M",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "9 - 10",
+      "marks": [
+       9,
+       10
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "6 - 8",
+      "marks": [
+       6,
+       7,
+       8
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "4 - 5",
+      "marks": [
+       4,
+       5
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "3 - 4",
+      "marks": [
+       3,
+       4
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "2 - 3",
+      "marks": [
+       2,
+       3
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "1 - 2",
+      "marks": [
+       1,
+       2
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "0 - 1",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow descriptive answers."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     16,
+     17
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
    "id": "re-2019-hl-i-b-ii",
    "subjectId": "religious-education",
    "source": "sec",
@@ -64390,6 +64535,143 @@
     "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      6
+    ],
+    "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2018-hl-b-a-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2018,
+   "level": "higher",
+   "section": "B",
+   "questionRef": "2018 HL Section B Q(a)(i)",
+   "topicId": "re-b",
+   "conceptId": "four-key-points-kingdom-god-emphasised",
+   "paperFileid": "LC223ALP000EV",
+   "questionText": "Outline four key points about the Kingdom of God that were emphasised by Jesus of Nazareth in his preaching.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2018 Higher Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the teachings of Jesus by setting out accurate information on four key features of the Kingdom of God that Jesus highlighted in his words or actions.",
+    "points": [],
+    "openList": false,
+    "answers": 4,
+    "answerMax": 5,
+    "gridHead": "5Mx4",
+    "bands": [
+     {
+      "label": "EXCELLENT",
+      "printed": "5",
+      "marks": [
+       5
+      ],
+      "descriptor": [
+       "substantial evidence of MC",
+       "completely & clearly relevant",
+       "no major error(s)",
+       "excellent use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY GOOD",
+      "printed": "4",
+      "marks": [
+       4
+      ],
+      "descriptor": [
+       "very good evidence of MC",
+       "clearly relevant",
+       "very little evidence of major error(s)",
+       "very good use of skill(s)"
+      ]
+     },
+     {
+      "label": "GOOD",
+      "printed": "3",
+      "marks": [
+       3
+      ],
+      "descriptor": [
+       "good evidence of MC",
+       "generally relevant",
+       "little evidence of major error(s)",
+       "good use of skill(s)"
+      ]
+     },
+     {
+      "label": "FAIR",
+      "printed": "2",
+      "marks": [
+       2
+      ],
+      "descriptor": [
+       "adequate evidence of MC",
+       "limited relevance",
+       "some major error(s)",
+       "some use of skill(s)"
+      ]
+     },
+     {
+      "label": "WEAK",
+      "printed": "1 ↑ 0",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "inadequate evidence of MC",
+       "little relevance",
+       "many major error(s)",
+       "little use of skill(s)"
+      ]
+     },
+     {
+      "label": "VERY WEAK",
+      "printed": "1 ↑ 0",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "little evidence of MC",
+       "very little relevance",
+       "very many major error(s)",
+       "very little use of skill(s)"
+      ]
+     },
+     {
+      "label": "NO GRADE",
+      "printed": "1 ↑ 0",
+      "marks": [
+       0,
+       1
+      ],
+      "descriptor": [
+       "very little/no evidence of MC",
+       "no relevance",
+       "substantial error(s)",
+       "no use of skill(s)"
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     7
     ],
     "schemeFileid": "LC223ALP000EV.pdf"
    }

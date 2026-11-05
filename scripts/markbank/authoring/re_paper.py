@@ -62,6 +62,8 @@ def _glyphs():
       U+F8E7 -- 2019 Ordinary's scheme, SymbolMT: a long rule, the dash before
                 "Consult your Advising Examiner" that every other Note prints
                 as "—".
+      U+F0E1 -- 2018 Higher's scheme, Wingdings: the upward arrow in the one
+                range cell B(a)(i) sets beside three bands, "1 ↑ 0".
     """
     table = {}
     for name in ('glyphmap.json', 'glyphmap-religious-education.json'):

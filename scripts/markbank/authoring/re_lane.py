@@ -93,12 +93,10 @@ class LaneError(Exception):
 # carry as it stands. A held ask gets no card (it stays open in the ledger)
 # until it is ruled on; nothing is guessed in the meantime.
 HOLD = {
-    # 2019 Higher I(b)(i), 10M: the printed ranges overlap -- 9-10, 6-8, 4-5,
-    # 3-4, 2-3, 1-2, 0-1 -- so 1, 2, 3 and 4 each sit in two bands.
-    (2019, 'hl', ('I', None, 'b', 'i')): 'the printed ranges overlap',
-    # 2018 Higher B(a)(i), 5Mx4: one range cell, "1 [arrow] 0", is printed
-    # beside WEAK, VERY WEAK and NO GRADE together.
-    (2018, 'hl', ('B', None, 'a', 'i')): 'one range cell printed over three bands',
+    # (year, level, key): reason. Both asks once held here -- 2019 Higher
+    # I(b)(i)'s overlapping ranges and 2018 Higher B(a)(i)'s one range cell
+    # over three bands -- were ruled on 5 Nov: the bands stay as printed and
+    # the panel remembers which band a mark was placed in.
 }
 HELD = []
 
@@ -185,7 +183,8 @@ def question_ref(year, level, key):
 
 # ── the band grid ───────────────────────────────────────────────────────────
 BAND_WORD = re.compile(r'EXCELLENT|VERY\s*GOOD|GOOD|FAIR|WEAK|POOR|NO\s*GRADE', re.I)
-RANGE = re.compile(r'^\s*(\d{1,2})\s*(?:[-–—>]\s*(\d{1,2}))?\s*$')
+# "1 ↑ 0": 2018 Higher B(a)(i)'s one range cell beside three bands, 1 down to 0
+RANGE = re.compile(r'^\s*(\d{1,2})\s*(?:[-–—>↑]\s*(\d{1,2}))?\s*$')
 
 
 class Band:
@@ -403,8 +402,14 @@ def _bullet_items(page, rect):
 def _row_grid(page, pno, table, year, level):
     rows = [(r, c) for r, c in zip(table.texts, table.cells) if any(r)]
     bands = []
+    spanning = None                     # (printed, bottom) of a range cell set over several rows
     for text, cells in rows:
         label, printed = text[-2], text[-1]
+        printed = ''.join(GLYPHMAP.get(ch, ch) for ch in printed)
+        if cells[-1] is None and not printed and spanning and spanning[1] >= cells[0][3] - 1:
+            printed = spanning[0]       # this band shares the cell above it, as printed
+        elif cells[-1] is not None:
+            spanning = (printed, cells[-1][3])
         descriptor = []
         for box in cells[:-2]:
             if box is not None:
@@ -419,12 +424,9 @@ def _row_grid(page, pno, table, year, level):
     grid.row_grid = True
     unread = [(b.label, b.printed) for b in bands if not b.marks]
     if unread:
-        grid.problem = f'band ranges not one per band as printed: {unread}'
-    else:
-        marks = sorted(m for b in bands for m in b.marks)
-        if marks != list(range(per + 1)):
-            grid.problem = ('the printed ranges overlap or leave a gap: '
-                            + ', '.join(f'{b.label} {b.printed}' for b in bands))
+        grid.problem = f'band ranges not read: {unread}'
+    elif sorted({m for b in bands for m in b.marks}) != list(range(per + 1)):
+        grid.problem = 'the printed ranges leave a gap: ' + ', '.join(f'{b.label} {b.printed}' for b in bands)
     grid.beside_x2 = bool(re.fullmatch(r'\s*[xX×]\s*2\s*', beside))
     if beside.strip() and not grid.beside_x2:
         raise LaneError(f'{year} {level} p{pno + 1}: {beside!r} printed beside a row grid')
@@ -548,7 +550,11 @@ def read_grids(year, level):
 
 
 def grid_problem(grid):
-    marks = sorted(m for b in grid.bands for m in b.marks)
+    """Every mark 0..per printed in some band, none outside. A mark may sit in
+    two bands where the scheme prints it so (2019 Higher I(b)(i)'s 3-4 and
+    2-3; 2018 Higher B(a)(i)'s one "1 ↑ 0" cell beside three bands): the
+    student places the answer in the band they judge it fits."""
+    marks = sorted({m for b in grid.bands for m in b.marks})
     if marks != list(range(grid.per + 1)):
         return f'bands cover {marks} not 0..{grid.per}'
     return None
