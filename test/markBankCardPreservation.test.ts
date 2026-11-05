@@ -793,9 +793,41 @@ const decks = [
   ['engineering:ordinary', ENGINEERING_ORDINARY, 194, '4db6b2da1890e2bb262ee816e1bbb8d97e86ead5cb99531609170a75594a075b'],
   /* 2026-09-10: Religious Education, the sixteenth subject, lands complete —
    * 288 cards against the 288 asks its ten papers print, every one of them
-   * added and none replacing anything. Nothing in any other deck moved. */
-  ['religious-education:higher', RE_HIGHER, 135, '9a6117ccc7be90492858b10d071528bbfee33de42ec8a368c51d6e2c76c596f3'],
-  ['religious-education:ordinary', RE_ORDINARY, 153, 'ebad0ef90313b7b75bfb75aecca5c93c5372ee0745f58ffc407481bf74ee5569'],
+   * added and none replacing anything. Nothing in any other deck moved.
+   * 2026-11-05: the RE lane builds a sitting at a time as band-grid cards (re_lane.py, rubric-authored.json), ids kept. 2026 Higher, 28 cards, added.
+   * 2026 Ordinary, 29 band-grid cards, added.
+   * 2025 Higher's 28 point cards rebuilt as band-grid cards, ids kept; nothing withdrawn.
+   * 2025 Ordinary's 33 point cards rebuilt as band-grid cards, ids kept; nothing withdrawn.
+   * 2020 Higher, 25 band-grid cards, added.
+   * 2019 Higher, 24 band-grid cards, added; I(b)(i) held for a ruling, no card.
+   * 2019 Ordinary, 23 band-grid cards, added.
+   * 2018 Higher, 22 band-grid cards, added; B(a)(i) held for a ruling, no card.
+   * 2018 Ordinary, 27 band-grid cards, added.
+   * 2019 Higher I(b)(i) and 2018 Higher B(a)(i), held for the overlapping-band ruling, added: 2 band-grid cards.
+   * 2017 Higher, 21 band-grid cards, added.
+   * 2017 Ordinary, 25 band-grid cards, added; C(a) held.
+   * 2016 Higher, 18 band-grid cards, added.
+   * 2016 Ordinary, 20 band-grid cards, added; six held.
+   * 2015 Higher, 23 band-grid cards, added; B(a)(ii) held.
+   * 2015 Ordinary, 26 band-grid cards, added.
+   * 2014 Higher, 19 band-grid cards, added.
+   * 2014 Ordinary, 20 band-grid cards, added; three held.
+   * 2017 Higher re-read with the Question Descriptor table; ids kept.
+   * 2017 Ordinary C(a), held for the 10-mark ruling, added.
+   * 2016 Higher re-read with the Question Descriptor table; ids kept.
+   * 2016 Ordinary's six held 10-mark asks added.
+   * 2015 Higher B(a)(ii), held for the 10-mark ruling, added.
+   * 2015 Ordinary re-read with the Question Descriptor table; ids kept.
+   * 2014 Higher re-read with the Question Descriptor table; ids kept.
+   * 2014 Ordinary's three held 10-mark asks added.
+   * 2012 Higher, 20 band-grid cards, added.
+   * 2012 Ordinary, 25 band-grid cards, added.
+   * 2011 Higher, 20 band-grid cards, added.
+   * 2011 Ordinary, 24 band-grid cards, added.
+   * 2010 Higher, 19 band-grid cards, added.
+   * 2010 Ordinary, 27 band-grid cards, added; RE 786/786. */
+  ['religious-education:higher', RE_HIGHER, 377, 'e1ddd166820471f24d92b0f1dd503e76b88358236a711083e810180cd3039082'],
+  ['religious-education:ordinary', RE_ORDINARY, 409, '5636dcd4ddba13d3760eee5d50ba7075a5fc3df46bb4c2c6490ad6c0ead11da4'],
   /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
    * replaced — it is a new subject and this is its first baseline. It ships
    * as ONE deck because the paper is common level: there is no Higher or
@@ -1472,6 +1504,38 @@ describe('Mark Bank card preservation', () => {
     // 2022 Ordinary Q16 split, -1 whole + 7 parts: 23,578.
     // 2024 Ordinary Q16 split, -1 whole + 6 parts: 23,583.
     // 2021 Ordinary splits, -2 whole + 8 parts: 23,589.
+    // Religious Education 2026 Higher, 28 asks, 28 band-grid cards: 23,617.
+    // Religious Education 2026 Ordinary, 29 asks, 29 band-grid cards: 23,646.
+    // Religious Education 2025 Higher rebuilt in place, 28 ids kept: 23,646.
+    // Religious Education 2025 Ordinary rebuilt in place, 33 ids kept: 23,646.
+    // Religious Education 2020 Higher, 25 asks, 25 band-grid cards: 23,671.
+    // Religious Education 2019 Higher, 25 asks, 24 band-grid cards (I(b)(i) held): 23,695.
+    // Religious Education 2019 Ordinary, 23 asks, 23 band-grid cards: 23,718.
+    // Religious Education 2018 Higher, 23 asks, 22 band-grid cards (B(a)(i) held): 23,740.
+    // Religious Education 2018 Ordinary, 27 asks, 27 band-grid cards: 23,767.
+    // Religious Education 2019 HL I(b)(i) and 2018 HL B(a)(i), 2 band-grid cards: 23,769.
+    // Religious Education 2017 Higher, 21 asks, 21 band-grid cards: 23,790.
+    // Religious Education 2017 Ordinary, 26 asks, 25 band-grid cards (1 held): 23,815.
+    // Religious Education 2016 Higher, 18 asks, 18 band-grid cards: 23,833.
+    // Religious Education 2016 Ordinary, 26 asks, 20 band-grid cards (6 held): 23,853.
+    // Religious Education 2015 Higher, 24 asks, 23 band-grid cards (1 held): 23,876.
+    // Religious Education 2015 Ordinary, 26 asks, 26 band-grid cards: 23,902.
+    // Religious Education 2014 Higher, 19 asks, 19 band-grid cards: 23,921.
+    // Religious Education 2014 Ordinary, 23 asks, 20 band-grid cards (3 held): 23,941.
+    // Religious Education 2017 Higher re-read, 21 ids kept: 23,941.
+    // Religious Education 2017 Ordinary C(a) carded: 23,942.
+    // Religious Education 2016 Higher re-read, 18 ids kept: 23,942.
+    // Religious Education 2016 Ordinary, six held asks carded: 23,948.
+    // Religious Education 2015 Higher B(a)(ii) carded: 23,949.
+    // Religious Education 2015 Ordinary re-read, 26 ids kept: 23,949.
+    // Religious Education 2014 Higher re-read, 19 ids kept: 23,949.
+    // Religious Education 2014 Ordinary, three held asks carded: 23,952.
+    // Religious Education 2012 Higher, 20 asks, 20 band-grid cards: 23,972.
+    // Religious Education 2012 Ordinary, 25 asks, 25 band-grid cards: 23,997.
+    // Religious Education 2011 Higher, 20 asks, 20 band-grid cards: 24,017.
+    // Religious Education 2011 Ordinary, 24 asks, 24 band-grid cards: 24,041.
+    // Religious Education 2010 Higher, 19 asks, 19 band-grid cards: 24,060.
+    // Religious Education 2010 Ordinary, 27 asks, 27 band-grid cards: 24,087.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1488,9 +1552,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_589 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(24_087 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_589 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(24_087 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length

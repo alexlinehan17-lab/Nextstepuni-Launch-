@@ -169,7 +169,7 @@
   },
   "computer-science": {
     "cards": 582,
-    "contentHash": "72770e1101ef0f49",
+    "contentHash": "023d1dc407016e6e",
     "coveragePct": 100.0,
     "covered": 620,
     "excluded": 0,
@@ -678,19 +678,19 @@
     "refsHash": "c737847455bc4dc6"
   },
   "religious-education": {
-    "cards": 288,
-    "contentHash": "674bdf82cd359c98",
+    "cards": 786,
+    "contentHash": "50593cccbc5dc4bb",
     "coveragePct": 100.0,
-    "covered": 288,
+    "covered": 786,
     "excluded": 0,
-    "leaves": 288,
+    "leaves": 786,
     "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 10,
-      "hash": "df029832e957a46e"
+      "count": 31,
+      "hash": "138b8842e0c6dc51"
     },
-    "refsHash": "608205b9e7e5d4b8"
+    "refsHash": "3cd697c2c27583ae"
   },
   "romanian": {
     "cards": 50,

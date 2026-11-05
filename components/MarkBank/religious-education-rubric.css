@@ -1,0 +1,73 @@
+/* A Religious Education card's scheme: one band ladder per answer, built from
+   the shared claim rows (claim-rows.css gives the rows, chips and directions). */
+.mb-re-rubric { color: var(--mb-ink); font-size: 13px; line-height: 1.5; }
+.mb-re-rubric .mb-re-eyebrow { margin: 0; font-size: 10px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.mb-re-rubric h3 { font-family: Georgia, serif; font-size: 21px; line-height: 1.3; margin: 5px 0 10px; }
+.mb-re-criteria { margin: 0 0 12px; color: var(--mb-muted); font-size: 12.5px; }
+.mb-re-parts { display: grid; gap: 12px; }
+
+.mb-re-points { padding: 10px 12px; border-radius: 11px; background: var(--mb-raised); border: 1px solid var(--mb-border); }
+.mb-re-points strong { display: block; font: 700 10px/1.4 'DM Sans', system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--mb-ink-2); }
+.mb-re-points ul { margin: 6px 0; padding-left: 17px; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2); display: grid; gap: 3px; }
+.mb-re-points small { display: block; font: 400 11px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+
+.mb-re-answer { display: grid; gap: 7px; padding: 10px 10px 8px; border-radius: 11px; border: 1px solid var(--mb-border); }
+.mb-re-answer-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.mb-re-answer-head h4 { margin: 0; min-width: 0; display: grid; gap: 2px; font: 650 13px/1.35 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); }
+.mb-re-answer-head h4 small { font: 400 11.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-re-answer-total { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding-top: 2px; font: 600 10.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-re-answer-total strong { font: 750 13px/1 'Roboto Mono', ui-monospace, monospace; color: var(--mb-ink); font-variant-numeric: tabular-nums; }
+
+/* A band above a ticked ceiling cannot be placed on, and looks it: the row
+   recedes and its marks go muted, in both themes. */
+.mb-re-band[data-above-ceiling="true"] .mb-claim-row { opacity: .5; border-style: dashed; }
+.mb-re-band[data-above-ceiling="true"] .mb-claim-steps button:disabled {
+  cursor: default; background: transparent; border-style: dashed; color: var(--mb-muted); text-decoration: line-through;
+}
+
+.mb-re-total { display: flex; justify-content: space-between; gap: 12px; border-top: 2px solid currentColor; padding-top: 14px; margin-top: 16px; }
+.mb-re-total strong { font-size: 20px; font-variant-numeric: tabular-nums; }
+.mb-re-note { color: var(--mb-muted); margin: 12px 0 0; font-size: 12px; }
+
+/* A band's heading never breaks inside its printed range ("EXCELLENT · 40-3" /
+   "4" was the shared row's anywhere-break at the 9em minimum): the heading
+   column keeps room for the longest one-word label and its range, and only
+   the label's own spaces may wrap. The descriptor below it still wraps freely. */
+@media (min-width: 481px) {
+  .mb-re-band .mb-claim-row--stepped { grid-template-columns: minmax(12.5em, 1fr) auto; }
+}
+.mb-re-band .mb-claim-text > span { overflow-wrap: normal; }
+
+/* A grid printing two marks rows: the student picks the way they wrote. Each
+   way is a full-width button under the row's printed head, visibly a control
+   before it is touched (paper face, 1.5px edge); the chosen way is the
+   charcoal face Mark Bank uses for a claim, with a filled radio dot. "or"
+   between them is ruled like the scheme's answer routes. */
+.mb-re-ways { display: grid; gap: 8px; margin: 2px 0 14px; }
+.mb-re-ways-prompt { margin: 0; font: 600 12.5px/1.45 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); }
+.mb-re-ways-options { display: grid; gap: 0; }
+.mb-re-way {
+  width: 100%; text-align: left; display: grid; grid-template-columns: 18px minmax(0, 1fr); gap: 11px; align-items: center;
+  padding: 11px 13px; border-radius: 12px; cursor: pointer;
+  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink);
+  transition: background 160ms, border-color 160ms, color 160ms;
+}
+.mb-re-way:hover { border-color: var(--mb-ink-2); }
+.mb-re-way[data-chosen="true"] { border-color: var(--mb-claim); background: var(--mb-claim); color: var(--mb-on-claim); cursor: default; }
+.mb-re-way-dot {
+  width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid var(--mb-ink-2);
+  display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box;
+}
+.mb-re-way[data-chosen="true"] .mb-re-way-dot { border-color: var(--mb-on-claim); }
+.mb-re-way[data-chosen="true"] .mb-re-way-dot::after {
+  content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--mb-on-claim);
+}
+.mb-re-way-text { min-width: 0; display: grid; gap: 1px; }
+.mb-re-way-text > span { font: 700 14px/1.35 'DM Sans', system-ui, sans-serif; }
+.mb-re-way-text small { font: 400 11.5px/1.45 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-re-way[data-chosen="true"] .mb-re-way-text small { color: var(--mb-on-claim); opacity: .85; }
+.mb-re-ways-or {
+  display: flex; align-items: center; gap: 10px; margin: 7px 0;
+  font: 700 9.5px/1.5 'DM Sans', system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--mb-label);
+}
+.mb-re-ways-or::before, .mb-re-ways-or::after { content: ''; flex: 1; height: 1px; background: var(--mb-border); }

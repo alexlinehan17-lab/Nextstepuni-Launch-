@@ -1037,6 +1037,86 @@ export interface PoliticsRubric {
   schemeFileid: string;
 }
 
+/** One band of a Religious Education grid, as the scheme prints it: "EXCELLENT"
+ *  at 20-17, with the grid's cells for that band where it prints any. */
+export interface ReligiousEducationBand {
+  /** "EXCELLENT", "Very Good", "NO GRADE"; a label the scheme sets over several
+   *  ranges (2010's "Weak" over 7-5, 4-2 and 1-0) is repeated on each. */
+  label: string;
+  /** The band's range as printed: "20-17", "34 - 40", "7". */
+  printed: string;
+  /** Every mark the band permits, low to high. */
+  marks: number[];
+  /** The grid's cells for this band, verbatim, each with its criterion where
+   *  the grid names one ("Relevance: clearly relevant"); absent where the
+   *  scheme prints labels and ranges only (2010-2014). */
+  descriptor?: string[];
+}
+
+/** A grid's second marks row (2022 prints "40 Marks" AND "20 Marks x2" under
+ *  one grid): the scheme's other way of marking the same answer, on the same
+ *  band cells. The student picks the way they wrote; only that way scores. */
+export interface ReligiousEducationWay {
+  /** The row's own head, as printed: "20 Marks x2". */
+  gridHead: string;
+  answers: number;
+  answerMax: number;
+  /** The row's range under each band, in the card's band order. */
+  bands: Array<{ printed: string; marks: number[] }>;
+}
+
+/** A ceiling a question's Note prints for an answer that does less than it
+ *  asks: "If a candidate gives an accurate account ... mark on its merits -
+ *  Max 10 marks." */
+export interface ReligiousEducationCeiling {
+  /** The Note's own words for when it applies, verbatim. */
+  when: string;
+  max: number;
+}
+
+/**
+ * A Religious Education answer, marked the way the SEC marks every RE ask from
+ * 2010 to 2026: placed on ONE printed band grid (one grid per answer where the
+ * scheme prints "20 Marks x2"). The scheme's points of reference are examples
+ * ("e.g.", "Possible Points") and carry no marks of their own, so they show as
+ * an indicative list, never as rows to claim. Every string here is the
+ * scheme's own except `markingGuideNote`.
+ *
+ * Scoring (religiousEducationScoring.ts): each answer is one mark inside one
+ * band; a ceiling the student ticks caps each answer at its max.
+ */
+export interface ReligiousEducationRubric {
+  system: 'religious-education';
+  /** "An excellent answer will show ..." -- the Marking Criteria, verbatim. */
+  criteria: string;
+  /** The points of reference, verbatim, without the closing "Etc.". */
+  points: string[];
+  /** The scheme ends its list with "Etc.": not exhaustive. */
+  openList: boolean;
+  /** 1, or 2 where the grid prints "x2". */
+  answers: number;
+  /** The grid's total for ONE answer: `answers * answerMax` is the card. */
+  answerMax: number;
+  /** The grid's own marks heading, as printed: "10 Marks x2", "40M". */
+  gridHead: string;
+  /** High to low, as printed. */
+  bands: ReligiousEducationBand[];
+  /** The grid prints no 0 range (seven 2014-2016 Ordinary 10-mark grids print
+   *  Weak as "3  > 2  > 1"): its bands cover 1 to the maximum, and an answer
+   *  that earns nothing is simply left unplaced, which scores 0. */
+  noZero?: boolean;
+  /** The grid's other marks row, where it prints two. The card's own
+   *  answers/answerMax/gridHead/bands are the way its scheme head names first,
+   *  and the student's default. */
+  otherWay?: ReligiousEducationWay;
+  ceilings?: ReligiousEducationCeiling[];
+  /** The scheme's other Notes for this ask, verbatim. */
+  directions: string[];
+  markingGuideNote: string;
+  schemePages: number[];
+  schemeFileid: string;
+}
+
 /** PE mixes exact allocations, descending tariffs and quality bands. The
  * original scheme remains available after reveal, including answer diagrams
  * and tick tables which must not be flattened into a guessed text answer. */
@@ -1241,7 +1321,7 @@ export interface FrenchRubric {
   practiceNotes?: string[];
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric;
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric | ReligiousEducationRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -1481,6 +1561,35 @@ export function rowPartsReconcile(row: MarkRow): boolean {
 
 export function tariffReconciles(card: SecCard): boolean {
   if (isRubricCard(card)) {
+    if (card.rubric.system === 'religious-education') {
+      // One grid per answer: its bands cover 0..answerMax, and the answers
+      // make the card's printed total.
+      const { bands, answers, answerMax, ceilings, schemePages, schemeFileid, otherWay, noZero } = card.rubric;
+      // Every mark from 0 to the maximum is printed in some band and none
+      // outside it. A mark may sit in two bands where the scheme prints it so
+      // (overlapping ranges, or one range cell set beside several bands). A
+      // grid that prints no 0 covers 1 to the maximum, and only such a grid.
+      const covers = (ranges: Array<{ printed: string; marks: number[] }>, max: number) => {
+        const marks = [...new Set(ranges.flatMap(band => band.marks))].sort((a, b) => a - b);
+        const first = noZero ? 1 : 0;
+        return ranges.every(band => band.marks.length > 0 && band.printed.trim()
+          && band.marks.every(mark => Number.isInteger(mark)))
+          && marks.length === max + 1 - first && marks.every((mark, index) => mark === index + first);
+      };
+      return Boolean(schemeFileid)
+        && schemePages.length > 0 && schemePages.every(page => Number.isInteger(page) && page > 0)
+        && Number.isInteger(answers) && answers >= 1 && answers * answerMax === card.totalMarks
+        && bands.length > 1 && bands.every(band => band.label.trim()) && covers(bands, answerMax)
+        // The other marks row is the same grid at other ranges: a band each,
+        // 0..its own maximum, the same printed total. A ceiling is written for
+        // one row's maximum, so a card with two ways carries none.
+        && (!otherWay || (Boolean(otherWay.gridHead.trim()) && otherWay.bands.length === bands.length
+          && Number.isInteger(otherWay.answers) && otherWay.answers >= 1
+          && otherWay.answers * otherWay.answerMax === card.totalMarks
+          && covers(otherWay.bands, otherWay.answerMax) && !(ceilings ?? []).length))
+        && (ceilings ?? []).every(ceiling => ceiling.when.trim()
+          && Number.isInteger(ceiling.max) && ceiling.max > 0 && ceiling.max < answerMax);
+    }
     if (card.rubric.system === 'politics') {
       const { criteria, schemePages, schemeFileid } = card.rubric;
       return Boolean(schemeFileid)
