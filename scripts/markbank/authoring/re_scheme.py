@@ -85,6 +85,7 @@ HEAD = re.compile(
     r'\s*(.*)$')
 
 SECTION_HEAD = re.compile(r'^(?:SECTION|Section)\s+([A-J])\b')
+ROMAN_LINE = re.compile(r'^(i{1,3}|iv|v)\.\s+(\S.*)$')
 
 # The tariff, as the SEC writes it. Whitespace and case vary freely ("20Mx2",
 # "20M x 2", "(40 M)", "(20mx2)"); the shapes do not.
@@ -149,7 +150,12 @@ TRAILING_TARIFF = re.compile(
     rf'(?:\s|(?<=[.?!:]))(\(?(?:{_TAR})(?:\s*/\s*(?:{_TAR}))?\)?)\.?\s*$', re.I)
 
 LEAD = re.compile(r'^An excellent (?:answer|coursework)\b')
-MC_HEADING = re.compile(r'^Marking\s+Crit\w*\s+and\s+points\s+of\s+reference', re.I)
+# 2010-2017 head the points of reference "Possible Points": the lead-in stops
+# there. Read for those years only: 2025 Higher I(b) prints "Possible points:"
+# inside its lead-in, and its shipped card keeps the lead-in as it was read.
+POSSIBLE = re.compile(r'^Possible\s+Points\b', re.I)
+# 2010-2017 print the heading as "Marking Criteria" alone ("Marking Criteria.").
+MC_HEADING = re.compile(r'^Marking\s+Crit\w*(?:\s+and\s+points\s+of\s+reference|\s*[.:]?\s*$)', re.I)
 
 # Where the marking points STOP. Each of these opens the examiner's apparatus
 # rather than the answer.
@@ -168,8 +174,17 @@ NOTE = re.compile(r'^(?:Note|N\.B\.|Consult your Advising Examiner)\b', re.I)
 # the closing anchor "40Mx2" reads as page 40, and the tariff line 2021 prints
 # on its own was thrown away — four asks refused for having no tariff while
 # the tariff sat on the line above.
-PAGE = re.compile(r'^(?:##\s*Page\s*\d+\s*$|\d{1,3}\s*$|Leaving Certificate\b'
+PAGE = re.compile(r'^(?:##\s*Page\s*\d+\s*$|\d{1,3}\s*$|Page\s+\d{1,3}\s*$|Leaving Certificate\b'
                   r'|Religious Education\b|Coimisi|State Examinations)', re.I)
+
+# A sitting whose scheme draws its point bullet in a symbol font with no
+# Unicode, so the bullet reaches the text as another character at the head
+# of the line. Each settled by cropping the glyph: a round bullet.
+SITTING_BULLET = {
+    (2016, 'hl'): 'x',          # SymbolMT, 67 lines
+    (2014, 'hl'): '\x9a',       # Symbol, 73 lines
+    (2014, 'ol'): '\x9a',       # Symbol, 100 lines
+}
 
 BULLETS = '•●▪■'
 BULLET = re.compile(rf'^[{BULLETS}]\s*')
@@ -233,7 +248,13 @@ class ReScheme:
         self.year, self.level = year, level
         self.path = os.path.join(schemes_dir(), f'{year}-{level}.md')
         with open(self.path, encoding='utf-8') as fh:
-            self.lines = [l.strip() for l in fh.read().split('\n')]
+            # a glyph drawn with no Unicode reaches the text layer as a control
+            # character: 2016 Higher C(b) prints its tariff "40M\x03"
+            self.lines = [re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', ' ', l).strip()
+                          for l in fh.read().split('\n')]
+        glyph = SITTING_BULLET.get((year, level))
+        if glyph:
+            self.lines = [re.sub(rf'^{re.escape(glyph)}\s+', '• ', l) for l in self.lines]
         self.asks = []
         self.refused = []
         self._read()
@@ -253,8 +274,21 @@ class ReScheme:
             s = SECTION_HEAD.match(line)
             if s:
                 section = s.group(1)
-            m = HEAD.match(line)
+            m = HEAD.match(self._normalise(line, section))
             if not m:
+                # 2014-2017 set a part's romans as lines of their own under its
+                # stem: "G a) Outline ... headings:" / "i. The origins ... 20M"
+                # / ... / "ii. Meditation techniques ... 20M". Each roman is an
+                # ask of that part.
+                r = ROMAN_LINE.match(line) if self.year <= 2017 else None
+                # "i. AUTHORITATIVE SOURCE ii. PRIMARY OR SECONDARY SOURCE"
+                # (2014 Ordinary B(c)) lists the headings ONE answer is written
+                # under: a line naming two romans is not an ask
+                if r and re.search(r'\s(?:i{1,3}|iv|v)\.\s', r.group(2)):
+                    r = None
+                if r and out and out[-1][3] is not None:
+                    _i, sec, q, letter, _roman, _t = out[-1]
+                    out.append((i, sec, q, letter, r.group(1), r.group(2).strip()))
                 continue
             tail = (m.group(11) or '').strip()
             if tail and parse_tariff(tail) is None and not self._text_head(m):
@@ -278,6 +312,25 @@ class ReScheme:
             out.append((i, sec, q, letter, roman, tail))
         return out
 
+    def _normalise(self, line, section=None):
+        """2014-2017 print the same address four other ways; each is put in the
+        2018-2020 form before HEAD reads it:
+            "1 A 1 a) ..."  the UNIT number before the section letter (dropped)
+            "1 1 a) ..."    the unit and question number, no section letter
+                            (2017 Ordinary Section A: the section is the one
+                            the page is in)
+            "1 A2 b) ..."   the question number welded to the section (spaced)
+            "A 1 a i) ..."  the part letter bare and the roman bracketed
+                            (read as "A 1 a) i.")"""
+        if self.year > 2017:
+            return line
+        if section:
+            line = re.sub(r'^[123]\s+(\d)\s+(?=[a-h]\))', rf'{section} \1 ', line)
+        line = re.sub(r'^((?:Or\s+)?)[123]\s+(?=[A-J]\s?\d?\s*\(?[a-h][\s)])', r'\1', line)
+        line = re.sub(r'^((?:Or\s+)?[A-J])(\d)\s', r'\1 \2 ', line)
+        line = re.sub(r'^((?:Or\s+)?[A-J](?:\s\d)?\s)([a-h])\s+(i{1,3}|iv|v)\)', r'\1\2) \3.', line)
+        return line
+
     def _text_head(self, m):
         """2018-2020 print the question text on the head line itself ("A 1 a)
         i. How do I decide ..."), so a text tail is allowed there -- and only
@@ -288,16 +341,28 @@ class ReScheme:
 
     def _read(self):
         heads = self._heads()
+        stem_tariff = None
         for n, (i, sec, q, letter, roman, tail) in enumerate(heads):
             end = heads[n + 1][0] if n + 1 < len(heads) else len(self.lines)
             block = self.lines[i + 1:end]
-            ask = self._parse_block(sec, q, letter, roman, tail, block, i)
+            nxt = heads[n + 1] if n + 1 < len(heads) else None
+            # a part head that carries only the stem its romans share (or
+            # repeats a roman's stem before the roman's own line, 2015
+            # Ordinary H(b)(ii)); a tariff printed on it is its first roman's
+            # (2014 Higher G(a): "... using the following headings: 20M")
+            if nxt is not None and nxt[1:4] == (sec, q, letter) and nxt[4] and roman in (None, nxt[4]) \
+                    and not any(LEAD.match(l) or MC_HEADING.match(l) for l in block):
+                m = TRAILING_TARIFF.search(tail or '')
+                stem_tariff = m.group(1) if m and roman is None else None
+                continue
+            ask = self._parse_block(sec, q, letter, roman, tail, block, i, stem_tariff)
+            stem_tariff = None
             if isinstance(ask, str):
                 self.refused.append((sec, q, letter, roman, i, ask))
             else:
                 self.asks.append(ask)
 
-    def _parse_block(self, sec, q, letter, roman, tail, block, line_no):
+    def _parse_block(self, sec, q, letter, roman, tail, block, line_no, stem_tariff=None):
         # Where the answer starts: the lead-in paragraph, or failing that the
         # "Marking Criteria" heading. 2023 Ordinary Section G(c) prints the
         # lead-in and the bullets with NO heading above them, so anchoring on
@@ -322,6 +387,29 @@ class ReScheme:
             parsed = parse_tariff(tail)
             if parsed:
                 total, notation = parsed
+            elif self.year <= 2017:
+                # 2014 sets the tariff at the right end of the HEAD line, the
+                # question running on below it: "1 A 1 a) Profile how ... in
+                # two of the 40M" / "following: ..."
+                m = TRAILING_TARIFF.search(tail)
+                if m and parse_tariff(m.group(1).split('/')[0]):
+                    total, notation = parse_tariff(m.group(1).split('/')[0])[0], m.group(1).strip()
+                    cue_lines[0] = tail[:m.start()].strip()
+                    cue = ' '.join(' '.join(cue_lines).split())
+        if total is None and self.year <= 2017:
+            # 2014-2017 set the tariff at the right margin of whichever line
+            # it shares (2014 Ordinary D(c): "Discuss this statement ... 40M" /
+            # "a person's moral decision-making."): one line of the cue, and
+            # only one, may end with it
+            ends = [(j, m) for j, l in enumerate(cue_lines)
+                    for m in [TRAILING_TARIFF.search(l)] if m and parse_tariff(m.group(1).split('/')[0])]
+            if len(ends) == 1:
+                j, m = ends[0]
+                total, notation = parse_tariff(m.group(1).split('/')[0])[0], m.group(1).strip()
+                cue_lines[j] = cue_lines[j][:m.start()].strip()
+                cue = ' '.join(' '.join(cue_lines).split())
+            elif not ends and stem_tariff and parse_tariff(stem_tariff.split('/')[0]):
+                total, notation = parse_tariff(stem_tariff.split('/')[0])[0], stem_tariff.strip()
         if total is None:
             # 2021 and 2022 print the tariff at the end of the question text.
             m = TRAILING_TARIFF.search(cue)
@@ -392,7 +480,8 @@ class ReScheme:
             for line in block[lead_at:]:
                 if BULLET.match(line) or CODE_LINE.match(line) \
                         or GRID_HEAD.search(line) or GRID_ROW.search(line) \
-                        or NOTE.match(line) or line == first_point:
+                        or NOTE.match(line) or line == first_point \
+                        or (self.year <= 2017 and POSSIBLE.match(line)):
                     break
                 if line and not PAGE.match(line):
                     lead_lines.append(line)

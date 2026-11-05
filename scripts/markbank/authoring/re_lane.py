@@ -97,6 +97,21 @@ HOLD = {
     # I(b)(i)'s overlapping ranges and 2018 Higher B(a)(i)'s one range cell
     # over three bands -- were ruled on 5 Nov: the bands stay as printed and
     # the panel remembers which band a mark was placed in.
+    #
+    # The 10-mark grids of 2014-2017 print Weak's cell with arrows that point
+    # at nothing. Four still print every mark from 3 down to 0:
+    (2017, 'ol', ('C', None, 'a', None)): 'Weak printed "3 >  2 >  1 > 0"',
+    (2015, 'hl', ('B', None, 'a', 'ii')): 'Weak printed "3 >  2 >  1 > 0"',
+    (2016, 'ol', ('D', None, 'a', None)): 'Weak printed "> 3  > 2 >  1 > 0"',
+    (2014, 'ol', ('A', 2, 'a', None)): 'Weak printed "> 3  > 2  1 >0"',
+    # and seven print no 0 at all ("3  > 2  > 1"): no band offers 0 marks
+    (2016, 'ol', ('A', 2, 'a', None)): 'Weak printed "3  > 2  > 1": no 0',
+    (2016, 'ol', ('A', 3, 'a', None)): 'Weak printed "3  > 2  > 1": no 0',
+    (2016, 'ol', ('B', None, 'b', None)): 'Weak printed "3  > 2  > 1": no 0',
+    (2016, 'ol', ('C', None, 'a', None)): 'Weak printed "3  > 2  > 1": no 0',
+    (2016, 'ol', ('C', None, 'b', None)): 'Weak printed "3  > 2  > 1": no 0',
+    (2014, 'ol', ('A', 3, 'b', None)): 'Weak printed "3  > 2  > 1": no 0',
+    (2014, 'ol', ('B', None, 'b', None)): 'Weak printed "3  > 2  > 1": no 0',
 }
 HELD = []
 
@@ -119,22 +134,26 @@ def head_tariffs(notation):
 # in the broken range the map cannot read.
 GLYPHMAP = json.load(open(os.path.join(HERE, 'glyphmap.json'), encoding='utf8'))
 # this subject's own two, settled by crop (re_paper._glyphs says where each is)
-GLYPHMAP.update(json.load(open(os.path.join(HERE, 'glyphmap-religious-education.json'), encoding='utf8')))
+RE_GLYPHS = json.load(open(os.path.join(HERE, 'glyphmap-religious-education.json'), encoding='utf8'))
+GLYPHMAP.update(RE_GLYPHS)
 BROKEN = re.compile(r'[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]')
 REAL = re.compile(r'[\u0100-\u017F\u0218-\u021B\u02B0-\u02FF\u0302\u0305\u0307\u0308\u0370-\u03FF'
                   r'\u0400-\u04FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\u1D62-\u1D6A\u1F00-\u1FFF]')
 LIGATURE_CODEPOINTS = re.compile(r'[\u019E\u019F\u01A1\u01A9\u01AB\uFB00-\uFB06]')
+# a glyph with no Unicode at all (control and C1 code points: 2016's "\x8b" bullets)
+CONTROL = re.compile(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]')
 
 
 def repair(text, where):
-    out = ''.join(GLYPHMAP.get(ch, ch) if BROKEN.match(ch) else ch for ch in text)
+    out = ''.join(GLYPHMAP.get(ch, ch) if BROKEN.match(ch) or ch in RE_GLYPHS else ch for ch in text)
     # The same fonts' "tt" glyph read as ONE t leaves no odd code point:
     # "very litle errors". repair_ligature_words.py records every misread
     # form it found in this subject's papers and schemes with the word the
     # page prints, and that record is applied here, whole words only.
     for misread, printed in LIGATURE_WORDS.get(SUBJECT, {}).items():
         out = re.sub(rf'(?<![\w]){re.escape(misread)}(?![\w])', printed, out)
-    left = [ch for ch in out if (BROKEN.match(ch) and not REAL.match(ch)) or LIGATURE_CODEPOINTS.match(ch)]
+    left = [ch for ch in out if (BROKEN.match(ch) and not REAL.match(ch)) or LIGATURE_CODEPOINTS.match(ch)
+            or CONTROL.match(ch)]
     if left:
         raise LaneError(f'{where}: unreadable glyph(s) {left} in {out[:80]!r}')
     return out
@@ -259,7 +278,8 @@ def _rows(table):
     return [r for r in rows if any(r)]
 
 
-BAND_LABEL = re.compile(r'^[-/–\s]*(?:(?:EXCELLENT|VERY|GOOD|FAIR|WEAK|POOR|NO|GRADE)\s*[-/–]?\s*)+$', re.I)
+# "Exellent" is 2016 Higher I(a)'s own spelling, kept as printed.
+BAND_LABEL = re.compile(r'^[-/–\s]*(?:(?:EXCELLENT|EXELLENT|VERY|GOOD|FAIR|WEAK|POOR|NO|GRADE)\s*[-/–]?\s*)+$', re.I)
 
 
 def _is_band_header(row):
@@ -399,6 +419,69 @@ def _bullet_items(page, rect):
     return items
 
 
+# ── the label grid (2014-2017) ──────────────────────────────────────────────
+# 2014-2017 print a grid of LABELS and RANGES only: a header row (Excellent,
+# Very Good, Good, Fair, Weak, Marks) over one row of ranges written "20 > 17",
+# the last cell the marks head ("20Mx2"). "Weak" heads one ruled cell that
+# sets three ranges side by side ("7 > 5   4 > 2   1 > 0"): each range is a
+# band of its own under that label. No descriptors are printed, and none are
+# borrowed: these bands carry their label and range alone.
+# "20Mx2", "40M", and once a bare "40" (2017 Higher H(b))
+MARKS_HEAD = re.compile(r'^\(?\d{1,3}(?:\s*M|\s*$)', re.I)
+
+
+def _is_label_grid(texts):
+    rows = [r for r in texts if any(r)]
+    if len(rows) != 2 or len(rows[0]) < 4:
+        return False
+    head, ranges = rows
+    return (head[-1].strip().lower() == 'marks' and all(BAND_LABEL.match(c) for c in head[:-1] if c)
+            and bool(MARKS_HEAD.match(ranges[-1] or '')))
+
+
+def _cell_ranges(text):
+    """The ranges one ruled cell prints side by side, read as the scheme writes
+    them: a number, or a number "> " a number ("7 > 5  4 > 2  1 > 0" is three).
+    An arrow with no number on one side ("> 3", "3 >"), as some 10-mark grids
+    print, is returned as printed so the ask stops for a ruling."""
+    tokens = re.findall(r'\d+|>', ''.join(GLYPHMAP.get(ch, ch) for ch in text))
+    out, i = [], 0
+    while i < len(tokens):
+        if tokens[i] != '>' and i + 2 < len(tokens) and tokens[i + 1] == '>' and tokens[i + 2] != '>':
+            out.append(f'{tokens[i]} > {tokens[i + 2]}')
+            i += 3
+        elif tokens[i] != '>' and (i + 1 == len(tokens) or tokens[i + 1] != '>'):
+            out.append(tokens[i])
+            i += 1
+        else:
+            return [' '.join(tokens)]               # a dangling arrow: not read
+    return out
+
+
+def _label_grid(page, pno, table, year, level):
+    pairs = [(r, c) for r, c in zip(table.texts, table.cells) if any(r)]
+    (head, head_cells), (ranges, range_cells) = pairs
+    labels = []
+    for label in head[:-1]:
+        labels.append(label or (labels[-1] if labels else ''))
+    bands = []
+    for label, text, box in zip(labels, ranges[:-1], range_cells[:-1]):
+        for printed in _cell_ranges(text):
+            bands.append(Band(label, printed, _marks_of(printed), None))
+    marks_head = ranges[-1]
+    nums = [int(n) for n in re.findall(r'\d+', marks_head)]
+    m = re.search(r'[x×]\s*(\d)', marks_head, re.I)
+    times = int(m.group(1)) if m else 1
+    per = nums[0]
+    grid = Grid(pno + 1, table.bbox[1], marks_head, per, times, bands)
+    unread = [(b.label, b.printed) for b in bands if not b.marks]
+    if unread:
+        grid.problem = f'band ranges not read: {unread}'
+    elif sorted({m for b in bands for m in b.marks}) != list(range(per + 1)):
+        grid.problem = 'the printed ranges leave a gap: ' + ', '.join(f'{b.label} {b.printed}' for b in bands)
+    return grid
+
+
 def _row_grid(page, pno, table, year, level):
     rows = [(r, c) for r, c in zip(table.texts, table.cells) if any(r)]
     bands = []
@@ -465,6 +548,9 @@ def read_grids(year, level):
                 continue
             if _rotated(page, table.bbox):
                 continue                 # the shared grid printed sideways: read_shared_grid
+            if _is_label_grid(table.texts):
+                out.append(_label_grid(page, pno, table, year, level))
+                continue
             if _is_row_grid(table.texts):
                 grid = _row_grid(page, pno, table, year, level)
                 if not grid.problem and 0 not in grid.bands[-1].marks:
@@ -807,6 +893,13 @@ def build_sitting(year, level, shipped=None, survey=None):
                 HEAD_TIMES.append(where)
             total = grid.per * grid.times
             paper_marks = P.marks.get(key)
+            # A part split into romans prints its marks once, after the last
+            # roman, for the part: 2014 Higher G(a) "(40 marks)" under its
+            # (i) and (ii) at 20M each; 2015 Ordinary B(c) 30 for 15M + 15M.
+            if key[3] is not None and paper_marks is not None and paper_marks != total:
+                part = sum(a.total for a in asks if a.key[:3] == key[:3] and a.key[3] is not None)
+                if paper_marks == part:
+                    paper_marks = None
             note = DISAGREE.get((year, level, key))
             if total != ask.total or (paper_marks is not None and paper_marks != total):
                 if not note:

@@ -64,6 +64,13 @@ def _glyphs():
                 as "—".
       U+F0E1 -- 2018 Higher's scheme, Wingdings: the upward arrow in the one
                 range cell B(a)(i) sets beside three bands, "1 ↑ 0".
+      U+F0BE -- 2016-2017 schemes, SymbolMT: a long rule, the dash after a
+                point's subject ("Individuals — e.g. ..."): "—".
+      U+F074 -- 2017 Ordinary, Wingdings: the black diamond before an option, "♦".
+      U+F076 -- 2012-2016, Wingdings: the four-diamond bullet before an option, "❖".
+      U+0194 -- 2014-2016 schemes, Times New Roman: the round bullet, "●".
+      U+028A -- 2014 Higher's scheme, Times New Roman: a dash, "—".
+      U+007F -- 2016 Higher's scheme, SymbolMT: a long rule, "—".
     """
     table = {}
     for name in ('glyphmap.json', 'glyphmap-religious-education.json'):
@@ -329,8 +336,8 @@ def _stacked_options(rows, i):
     its bullet on the lines below (2020 Higher H(a): four bullets, then "THE
     GOSPEL" four times, then "OF JOHN  OF LUKE  OF MARK  OF MATTHEW"). Read
     down each column: "• THE GOSPEL OF JOHN • THE GOSPEL OF LUKE ...". Only
-    when every following line breaks into exactly one group per bullet, each
-    centred under its own bullet; anything else is left as printed."""
+    when every following line cuts into labels each centred under its own
+    bullet, and every bullet gets a label; anything else is left as printed."""
     ws = rows[i]
     lead = []
     k = 0
@@ -347,22 +354,31 @@ def _stacked_options(rows, i):
     used = []
 
     def columns_of(row):
-        """Each group's column, or None unless the line breaks into one group
-        per bullet, each under its own bullet, left to right. Centred labels
-        of unequal length drift too far for anything looser (2017 Ordinary
-        H(b) is left as printed for that reason)."""
-        groups = _groups(row)
-        if len(groups) != len(centres):
+        """The line cut into its labels, each under its own bullet, left to
+        right; or None. The labels are CENTRED under their bullets and narrow
+        columns sit only 6pt apart (2016 Ordinary B(c): "CÉLI LIBERATION
+        LUTHER'S THE EVANGELICAL MOVEMENT ..."), so labels are told apart by
+        the gaps between them (5pt or more) against the gaps inside a label
+        (4pt or less), and each label goes to a bullet its centre sits under,
+        in order, a line leaving some bullets without a word. A line of prose
+        has no such gap: it is one run, and is not a label line."""
+        words = sorted(row)
+        if len(words) < 2:
             return None
-        homes = []
-        for g0, g1, _w in groups:
-            c = min(range(len(centres)), key=lambda c: abs(centres[c] - (g0 + g1) / 2))
-            if abs(centres[c] - (g0 + g1) / 2) > half:
+        cuts = [j for j in range(1, len(words)) if words[j][0] - words[j - 1][1] >= 5]
+        if not cuts or any(words[j][0] - words[j - 1][1] > 4 for j in range(1, len(words)) if j not in cuts):
+            return None
+        bounds = list(zip([0] + cuts, cuts + [len(words)]))
+        runs = [((words[a][0] + words[b - 1][1]) / 2, [w for _x0, _x1, w in words[a:b]]) for a, b in bounds]
+        homes, c = [], 0
+        for mid, _w in runs:
+            options = [k for k in range(c, len(centres)) if abs(mid - centres[k]) <= half]
+            if not options:
                 return None
-            homes.append(c)
-        if homes != sorted(set(homes)):
-            return None
-        return list(zip(homes, groups))
+            k = min(options, key=lambda k: abs(mid - centres[k]))
+            homes.append(k)
+            c = k + 1
+        return [(k, (0, 0, w)) for k, (_mid, w) in zip(homes, runs)]
 
     j = i + 1
     while j < len(rows) and j <= i + 5:
@@ -374,7 +390,7 @@ def _stacked_options(rows, i):
         used.append(j)
         j += 1
     # every label row read, and every column given a label: or nothing at all
-    if not used or not all(labels) or (j < len(rows) and len(_groups(rows[j])) >= 2):
+    if not used or not all(labels) or (j < len(rows) and columns_of(rows[j]) is not None):
         return None
     items = [f'{bullets[c][2]} ' + ' '.join(labels[c]) for c in range(len(centres))]
     return ' '.join(lead + items), used
