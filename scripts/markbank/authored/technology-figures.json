@@ -105,6 +105,246 @@
   ]
  },
  {
+  "file": "technology-2015-OL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a folding multi-tool opened out, several tools folding out of its two handles, with a small inset photograph of a man holding one.",
+  "questionRef": "2015 OL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   366,
+   66,
+   530,
+   228
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A lever diagram: a beam on a triangular fulcrum, a downward force of 30N at the left end and a downward force F at the right end; 2M from the left end to the fulcrum and 5M from the fulcrum to the right end.",
+  "questionRef": "2015 OL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   360,
+   584,
+   515,
+   688
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a bench, a long wooden seat carried on two rectangular metal frames, with an arrow labelled A at the lower right pointing towards it.",
+  "questionRef": "2015 OL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   88,
+   105,
+   268,
+   258
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of two toothed wheels, a large one and a small one, joined by a loop of belt with teeth on its inner face.",
+  "questionRef": "2015 OL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   381,
+   599,
+   526,
+   745
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing in pictorial view of a pot with a lid, a knob handle on the lid and a handle on one side.",
+  "questionRef": "2015 OL Section A Q12",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   218,
+   604,
+   383,
+   752
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A moisture sensor circuit diagram: a battery, a switch, a pair of contacts labelled Probes, a variable resistor, and a transistor labelled Transistor switching an LED with its resistor.",
+  "questionRef": "2015 OL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   413,
+   225,
+   564,
+   358
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secB-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a T-shaped water pipe fitting: a black body with a blue screw-on nut at each of its three ends.",
+  "questionRef": "2015 OL Section B Q2(d)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   22,
+   669,
+   135,
+   751
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secB-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a yellow safety helmet with other protective equipment and a pair of gloves, captioned Protective Gloves with an arrow to the gloves.",
+  "questionRef": "2015 OL Section B Q3(a)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   453,
+   109,
+   579,
+   216
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a PTO shaft: a metal shaft inside an orange plastic guard, labelled PTO Shaft and Shaft guard.",
+  "questionRef": "2015 OL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   47,
+   272,
+   205,
+   384
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a spray gun: a pistol-grip gun with a metal paint cup underneath.",
+  "questionRef": "2015 OL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   454,
+   447,
+   572,
+   565
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram between +V and -V rails with two components labelled A and B, a motor M, and switches wired to reverse the motor.",
+  "questionRef": "2015 OL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   377,
+   276,
+   561,
+   396
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A logic circuit: input A into gate X giving C, and C with input B into gate Y giving D; below it a truth table with columns A, B, C and D, A and B filled in (00, 01, 10, 11) and C and D blank.",
+  "questionRef": "2015 OL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   205,
+   584,
+   524,
+   790
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of three cable connectors labelled A, B and C: a flat rectangular metal plug, a slim round plug with bands on its tip, and a wide flat gold-tipped plug on a black cable.",
+  "questionRef": "2015 OL Section C Q3(d)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   52,
+   630,
+   470,
+   718
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a red stand food mixer with a whisk lowered into a glass bowl.",
+  "questionRef": "2015 OL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   401,
+   213,
+   542,
+   368
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A graphic of Quantity against Time: a straight line rising towards Demand, with Capacity added in yellow steps that sit above the line.",
+  "questionRef": "2015 OL Section C Q4(c)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   38,
+   446,
+   186,
+   560
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a wooden garden playhouse with a green and yellow canopy roof, swings on an A-frame and a green plastic slide.",
+  "questionRef": "2015 OL Section C Q5(b)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   348,
+   261,
+   573,
+   418
+  ]
+ },
+ {
   "file": "technology-2016-HL-paper-secA-q9-art.png",
   "kind": "figure",
   "truncated": false,
@@ -6735,6 +6975,171 @@
   ]
  },
  {
+  "file": "technology-2015-OL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of six red LEDs, each a domed red head on two thin wire legs.",
+  "questionRef": "2015 OL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   95,
+   312,
+   232,
+   434
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secA-q5-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a green band saw on a stand, with an arrow labelled A pointing to the knob on its top.",
+  "questionRef": "2015 OL Section A Q5",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   64,
+   338,
+   188,
+   529
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a paper towel holder: a wooden back board with a metal rod on two metal brackets, shown empty and holding a roll of paper towel.",
+  "questionRef": "2015 OL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   372,
+   92,
+   518,
+   242
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a black laptop power adapter: a rectangular block with a coiled cable ending in a round plug.",
+  "questionRef": "2015 OL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   383,
+   338,
+   532,
+   487
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secB-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A CAD rendering of a PTO shaft: a grey shaft with a jointed coupling and a flange at each end.",
+  "questionRef": "2015 OL Section B Q3(c)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   404,
+   518,
+   541,
+   614
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q1a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a microcontroller chip with two rows of legs, beside an empty chip socket with matching holes.",
+  "questionRef": "2015 OL Section C Q1(a)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   448,
+   121,
+   582,
+   186
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The start of a flowchart as the paper prints it: Start, a decision Guard looping back on N, then on Y a decision Switch with an arrow leaving its foot.",
+  "questionRef": "2015 OL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   52,
+   255,
+   132,
+   372
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an orange excavator lifting scrap metal with a round magnet hung from its arm, labelled Electromagnet.",
+  "questionRef": "2015 OL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   54,
+   90,
+   192,
+   194
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q2c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a lever microswitch: a black body with a metal lever on top and three terminals labelled COM, NO and NC.",
+  "questionRef": "2015 OL Section C Q2(c)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   52,
+   450,
+   170,
+   571
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q5c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The four steps of rotational moulding drawn in a row: 1. Mould Charging (Powder in the Mould, on a Plate and Support Arm), 2. Heating (Heat arrows round the turning mould), 3. Cooling (Air/Water arrows round the turning mould), 4. Removal (the hollow moulding).",
+  "questionRef": "2015 OL Section C Q5(c)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   36,
+   545,
+   540,
+   677
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a welded joint where one round metal tube meets another, the weld bead around the joint.",
+  "questionRef": "2015 OL Section C Q5(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   442,
+   691,
+   535,
+   784
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -7077,6 +7482,51 @@
    256,
    566,
    362
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secB-q2b-iii-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a green plastic water butt on a stand beside a wooden fence.",
+  "questionRef": "2015 OL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   53,
+   314,
+   161,
+   427
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q1c-ii-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of a pneumatic component: a long rectangular body with a rod coming out of its right end; arrow A points to the lower left of the body and arrow B to the rod.",
+  "questionRef": "2015 OL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   202,
+   525,
+   350,
+   582
+  ]
+ },
+ {
+  "file": "technology-2015-OL-paper-secC-q2a-ii-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A circuit diagram: a 12V battery, a switch and a coil connected in a single loop.",
+  "questionRef": "2015 OL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   437,
+   154,
+   561,
+   210
   ]
  },
  {
@@ -9190,5 +9640,93 @@
   "description": "The marking scheme's own photograph for 2015 HL Section C 5(b)(iii), as the State Examinations Commission printed it: a round glass-panel fixing, two discs clamped by a bolt with washers, an arrow pointing between them.",
   "solution": true,
   "questionRef": "2015 HL Section C Q5(b)(iii)"
+ },
+ {
+  "file": "technology-2015-OL-scheme-secA-q7.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2015 OL Section A Q7, as the State Examinations Commission printed it: the bench seen in the direction of arrow A, a long thin rectangle for the seat crossed near each end by a tall thin upright rectangle for the frames.",
+  "solution": true,
+  "questionRef": "2015 OL Section A Q7"
+ },
+ {
+  "file": "technology-2015-OL-scheme-secB-q2b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2015 OL Section B 2(b)(ii), as the State Examinations Commission printed it: an NPN transistor symbol in a circle, with an arrow labelled Base pointing to the lead entering from the left.",
+  "solution": true,
+  "questionRef": "2015 OL Section B Q2(b)(ii)"
+ },
+ {
+  "file": "technology-2015-OL-scheme-secB-q3b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2015 OL Section B 3(b)(iii), as the State Examinations Commission printed it: a small blue gear meshing with a large green gear, each on its own red shaft.",
+  "solution": true,
+  "questionRef": "2015 OL Section B Q3(b)(iii)"
+ },
+ {
+  "file": "technology-2015-OL-scheme-secB-q3d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2015 OL Section B 3(d)(ii), as the State Examinations Commission printed it: a long green beam resting on two small yellow supports, one at each end, labelled Beam.",
+  "solution": true,
+  "questionRef": "2015 OL Section B Q3(d)(ii)"
+ },
+ {
+  "file": "technology-2015-OL-scheme-secC-q1b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own flowchart for 2015 OL Section C 1(b)(i), as the State Examinations Commission printed it: Start, then a decision Guard; on N to Motor Off, which loops back to above Guard; on Y a decision Switch, on N also to Motor Off; on Y Motor On, which loops back to above Guard.",
+  "solution": true,
+  "questionRef": "2015 OL Section C Q1(b)(i)"
+ },
+ {
+  "file": "technology-2015-OL-scheme-secC-q1b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own modified flowchart for 2015 OL Section C 1(b)(ii), as the State Examinations Commission printed it: Start, then a decision Guard; on N to Red LED On and on to Motor Off, which loops back to above Guard; on Y Red LED Off, then a decision Switch, on N to Motor Off; on Y Motor On, which loops back to above Guard.",
+  "solution": true,
+  "questionRef": "2015 OL Section C Q1(b)(ii)"
+ },
+ {
+  "file": "technology-2015-OL-scheme-secC-q2b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own redrawn circuit for 2015 OL Section C 2(b)(iii), as the State Examinations Commission printed it: the given motor circuit with a switch labelled SPST Switch added in the +V supply line.",
+  "solution": true,
+  "questionRef": "2015 OL Section C Q2(b)(iii)"
+ },
+ {
+  "file": "technology-2015-OL-scheme-secC-q2c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2015 OL Section C 2(c)(ii), as the State Examinations Commission printed it: a reed switch, two overlapping contacts labelled Reed contacts inside a capsule labelled Glass Tube, with a bar labelled Magnet beneath it.",
+  "solution": true,
+  "questionRef": "2015 OL Section C Q2(c)(ii)"
+ },
+ {
+  "file": "technology-2015-OL-scheme-secC-q2d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own completed truth table for 2015 OL Section C 2(d)(ii), as the State Examinations Commission printed it, columns A, B, C, D: 0 0 gives 1 1; 0 1 gives 1 1; 1 0 gives 0 0; 1 1 gives 0 1.",
+  "solution": true,
+  "questionRef": "2015 OL Section C Q2(d)(ii)"
+ },
+ {
+  "file": "technology-2015-OL-scheme-secC-q3b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2015 OL Section C 3(b)(iii), as the State Examinations Commission printed it: a small network, desktop computers, laptops and phones linked to a switch, a router and a server, with a firewall to the internet.",
+  "solution": true,
+  "questionRef": "2015 OL Section C Q3(b)(iii)"
+ },
+ {
+  "file": "technology-2015-OL-scheme-secC-q5d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketches for 2015 OL Section C 5(d)(ii), as the State Examinations Commission printed them: a Machine screw and a Stud, each shown in section holding a plate to a block, and a Grub screw with an arrow to its place in a gear's boss.",
+  "solution": true,
+  "questionRef": "2015 OL Section C Q5(d)(ii)"
  }
 ]

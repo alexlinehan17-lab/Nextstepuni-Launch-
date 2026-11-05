@@ -402,7 +402,16 @@ class TechScheme:
                 # Ordinary Q2(i) answers "1. Lower ongoing energy costs." /
                 # "2. Better for the environment", and that "2." re-opened
                 # Question 2 and threw its (i) away.
-                if m and last_q < int(m.group(1)) <= last_q + 3 \
+                # Nor the next item of a numbered answer list the open
+                # question has started: 2015 Ordinary Q1(i) answers "1. Long
+                # Nose Pliers." / "2. Scissors/Knife, etc.", and that "2."
+                # opened Question 2, so every later block took its
+                # neighbour's number. A list item numbered one less, which was
+                # itself no head, makes this line its successor.
+                list_next = bool(m and lines and head_q is not None
+                                 and int(m.group(1)) - 1 <= head_q
+                                 and re.match(rf'{int(m.group(1)) - 1}\.\s', lines[-1][1] or ''))
+                if m and not list_next and last_q < int(m.group(1)) <= last_q + 3 \
                         and (head_q is None or int(m.group(1)) > head_q):
                     if lines and head_q is not None and rubric_marks:
                         # The next head has arrived and this block was never

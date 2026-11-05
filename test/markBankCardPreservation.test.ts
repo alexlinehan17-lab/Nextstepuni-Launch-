@@ -1335,7 +1335,7 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
     : cards.length;
 const technologyAdditions = {
   higher: [TECHNOLOGY_HIGHER, 426, '586532cf46c422d543277fd221c5ec0754bc5e6bd0e21df2d310075bc37badda'],
-  ordinary: [TECHNOLOGY_ORDINARY, 323, 'fc88c986a6424d142ed0820711f80a827adae7a040a3591b58c1d9d8dd14245a'],
+  ordinary: [TECHNOLOGY_ORDINARY, 400, 'b26b0a687713b467bf53f6a9ab91f566cf52761ad5c6faad0da5e92d7c0ca68b'],
 } as const;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],

@@ -1642,6 +1642,111 @@ REVIEWED.update({
         'with a Luas tram crossing it.',
 })
 
+# 2015 Ordinary, each crop rendered and looked at.
+REVIEWED.update({
+    'technology-2015-OL-paper-secA-q1-art':
+        'Photograph of a folding multi-tool opened out, several tools folding '
+        'out of its two handles, with a small inset photograph of a man holding '
+        'one.',
+    'technology-2015-OL-paper-secA-q2-art':
+        'Photograph of six red LEDs, each a domed red head on two thin wire legs.',
+    'technology-2015-OL-paper-secA-q5-art':
+        'Photograph of a green band saw on a stand, with an arrow labelled A '
+        'pointing to the knob on its top.',
+    'technology-2015-OL-paper-secA-q6-art':
+        'A lever diagram: a beam on a triangular fulcrum, a downward force of '
+        '30N at the left end and a downward force F at the right end; 2M from '
+        'the left end to the fulcrum and 5M from the fulcrum to the right end.',
+    'technology-2015-OL-paper-secA-q7-art':
+        'Photograph of a bench, a long wooden seat carried on two rectangular '
+        'metal frames, with an arrow labelled A at the lower right pointing '
+        'towards it.',
+    'technology-2015-OL-paper-secA-q9-art':
+        'Drawing of two toothed wheels, a large one and a small one, joined by a '
+        'loop of belt with teeth on its inner face.',
+    'technology-2015-OL-paper-secA-q10-art':
+        'Photograph of a paper towel holder: a wooden back board with a metal '
+        'rod on two metal brackets, shown empty and holding a roll of paper '
+        'towel.',
+    'technology-2015-OL-paper-secA-q11-art':
+        'Photograph of a black laptop power adapter: a rectangular block with a '
+        'coiled cable ending in a round plug.',
+    'technology-2015-OL-paper-secA-q12-art':
+        'Line drawing in pictorial view of a pot with a lid, a knob handle on the '
+        'lid and a handle on one side.',
+    'technology-2015-OL-paper-secB-q2b-art':
+        'A moisture sensor circuit diagram: a battery, a switch, a pair of '
+        'contacts labelled Probes, a variable resistor, and a transistor '
+        'labelled Transistor switching an LED with its resistor.',
+    'technology-2015-OL-paper-secB-q2b-iii-art':
+        'Photograph of a green plastic water butt on a stand beside a wooden '
+        'fence.',
+    'technology-2015-OL-paper-secB-q2d-art':
+        'Photograph of a T-shaped water pipe fitting: a black body with a blue '
+        'screw-on nut at each of its three ends.',
+    'technology-2015-OL-paper-secB-q3a-art':
+        'Photograph of a yellow safety helmet with other protective equipment and '
+        'a pair of gloves, captioned Protective Gloves with an arrow to the '
+        'gloves.',
+    'technology-2015-OL-paper-secB-q3b-art':
+        'Photograph of a PTO shaft: a metal shaft inside an orange plastic guard, '
+        'labelled PTO Shaft and Shaft guard.',
+    'technology-2015-OL-paper-secB-q3c-art':
+        'A CAD rendering of a PTO shaft: a grey shaft with a jointed coupling and '
+        'a flange at each end.',
+    'technology-2015-OL-paper-secC-q1a-art':
+        'Photograph of a microcontroller chip with two rows of legs, beside an '
+        'empty chip socket with matching holes.',
+    'technology-2015-OL-paper-secC-q1b-art':
+        'The start of a flowchart as the paper prints it: Start, a decision '
+        'Guard looping back on N, then on Y a decision Switch with an arrow '
+        'leaving its foot.',
+    'technology-2015-OL-paper-secC-q1c-art':
+        'Photograph of a spray gun: a pistol-grip gun with a metal paint cup '
+        'underneath.',
+    'technology-2015-OL-paper-secC-q1c-ii-art':
+        'Drawing of a pneumatic component: a long rectangular body with a rod '
+        'coming out of its right end; arrow A points to the lower left of the '
+        'body and arrow B to the rod.',
+    'technology-2015-OL-paper-secC-q2a-art':
+        'Photograph of an orange excavator lifting scrap metal with a round '
+        'magnet hung from its arm, labelled Electromagnet.',
+    'technology-2015-OL-paper-secC-q2a-ii-art':
+        'A circuit diagram: a 12V battery, a switch and a coil connected in a '
+        'single loop.',
+    'technology-2015-OL-paper-secC-q2b-art':
+        'A circuit diagram between +V and -V rails with two components labelled '
+        'A and B, a motor M, and switches wired to reverse the motor.',
+    'technology-2015-OL-paper-secC-q2c-art':
+        'Photograph of a lever microswitch: a black body with a metal lever on '
+        'top and three terminals labelled COM, NO and NC.',
+    'technology-2015-OL-paper-secC-q2d-art':
+        'A logic circuit: input A into gate X giving C, and C with input B into '
+        'gate Y giving D; below it a truth table with columns A, B, C and D, A '
+        'and B filled in (00, 01, 10, 11) and C and D blank.',
+    'technology-2015-OL-paper-secC-q3d-art':
+        'Photographs of three cable connectors labelled A, B and C: a flat '
+        'rectangular metal plug, a slim round plug with bands on its tip, and a '
+        'wide flat gold-tipped plug on a black cable.',
+    'technology-2015-OL-paper-secC-q4b-art':
+        'Photograph of a red stand food mixer with a whisk lowered into a glass '
+        'bowl.',
+    'technology-2015-OL-paper-secC-q4c-art':
+        'A graphic of Quantity against Time: a straight line rising towards '
+        'Demand, with Capacity added in yellow steps that sit above the line.',
+    'technology-2015-OL-paper-secC-q5b-art':
+        'Photograph of a wooden garden playhouse with a green and yellow canopy '
+        'roof, swings on an A-frame and a green plastic slide.',
+    'technology-2015-OL-paper-secC-q5c-art':
+        'The four steps of rotational moulding drawn in a row: 1. Mould Charging '
+        '(Powder in the Mould, on a Plate and Support Arm), 2. Heating (Heat '
+        'arrows round the turning mould), 3. Cooling (Air/Water arrows round the '
+        'turning mould), 4. Removal (the hollow moulding).',
+    'technology-2015-OL-paper-secC-q5d-art':
+        'Photograph of a welded joint where one round metal tube meets another, '
+        'the weld bead around the joint.',
+})
+
 REJECTED = {
     'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
     'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',

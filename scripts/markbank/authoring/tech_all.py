@@ -626,6 +626,9 @@ def joined_ref(year, level, covered):
         f', ({r})' for r in romans[1:])
 
 
+ARTICLE = re.compile(r'\b(?:the|a|an)\b', re.I)
+
+
 def _manifest():
     path = os.path.join(ROOT, 'components', 'MarkBank', 'figures.json')
     if not os.path.exists(path):
@@ -992,6 +995,14 @@ def author(bind_figures=True):
                 kept = [p for p in points
                         if p in numbered_list
                         or (SCHEME_NORM(p) not in bare
+                            # ...nor with an article dropped: 2015 Ordinary
+                            # Q11 reprints "Explain what is meant by terms AC
+                            # and DC." for the paper's "by the terms". Only a
+                            # line that opens as one of the ask's romans does.
+                            and not (_tokens(p)[:1] and _tokens(p)[0] in ask_starts
+                                     and len(SCHEME_WORDS(p)) >= 4
+                                     and SCHEME_NORM(ARTICLE.sub(' ', p))
+                                     in SCHEME_NORM(ARTICLE.sub(' ', f'{raw_ask} {question_label(covered)}')))
                             # A reprint that paraphrases by a word -- "Find a
                             # value of R2" for the paper's "Find the value of
                             # R2" -- is still the question, not an answer.

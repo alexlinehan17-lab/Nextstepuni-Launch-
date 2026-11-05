@@ -272,6 +272,22 @@ TOPIC_OVERRIDES = {
     'tech-2015-hl-b3c-i': 'tech-core-structures',  # tilting and locking mechanism
     'tech-2015-hl-b3c-ii': 'tech-core-structures', # wheels turning in opposite directions
     'tech-2015-hl-b3d-ii': 'tech-core-ict',        # video image quality
+    # 2015 Ordinary.
+    'tech-2015-ol-a1': 'tech-core-design',         # a multi-tool meeting a user's needs
+    'tech-2015-ol-a5': 'tech-core-materials',      # band saw safety
+    'tech-2015-ol-a6': 'tech-core-structures',     # lever
+    'tech-2015-ol-a7': 'tech-core-graphics',       # 2D sketch of the bench
+    'tech-2015-ol-a9': 'tech-core-structures',     # toothed belt drive
+    'tech-2015-ol-a12': 'tech-core-graphics',      # graphic techniques
+    'tech-2015-ol-b2b-iii': 'tech-core-materials', # a casing and its fixing
+    'tech-2015-ol-b2d-i': 'tech-core-project',     # quality attributes
+    'tech-2015-ol-b2d-ii': 'tech-core-project',    # costs of improving quality
+    'tech-2015-ol-b3a-ii': 'tech-core-materials',  # material for protective gloves
+    'tech-2015-ol-b3b-i': 'tech-core-materials',   # the PTO guard (safety)
+    'tech-2015-ol-b3b-ii': 'tech-core-structures', # universal joints
+    'tech-2015-ol-b3b-iii': 'tech-core-structures',# speed reduction mechanism
+    'tech-2015-ol-b3c-i': 'tech-core-graphics',    # CAD
+    'tech-2015-ol-b3c-ii': 'tech-core-materials',  # CAM
 }
 
 ALL_TOPICS = [t for t, _ in CORE] + [OPTION_TOPIC[i] for i in sorted(OPTION_TOPIC)]

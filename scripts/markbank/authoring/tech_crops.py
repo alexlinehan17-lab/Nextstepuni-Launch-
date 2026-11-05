@@ -1780,6 +1780,7 @@ LABEL_ZONES.setdefault((2018, 'hl'), []).extend([
 LATE_ANSWER_LINES = {
     (2016, 'ol'): ('TMO in rugby, hawk eye in GAA, flight simulation of golf balls, etc.',
                    'Semi-Permanent Joint: Nut and bolt joint, etc.'),
+    (2015, 'ol'): ('F = 12N',),
     (2017, 'ol'): ('Cloud storage, USB flash drives, DVDs/CDs, etc.', 'Green.',
                    'assembly techniques, safety elements, testing, etc.'),
 }
@@ -2687,6 +2688,156 @@ MD_LINE_FIX[(2015, 'hl')] = [
      r'Data is copied/archived using external hard drives, magnetic tapes, servers, \1'),
 ]
 
+# 2015 Ordinary. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    'technology-2015-OL-paper-secA-q1-art': ('014', 1, (366, 66, 530, 228)),
+    'technology-2015-OL-paper-secA-q2-art': ('014', 1, (95, 312, 232, 434)),
+    'technology-2015-OL-paper-secA-q5-art': ('014', 2, (64, 338, 188, 529)),
+    'technology-2015-OL-paper-secA-q6-art': ('014', 2, (360, 584, 515, 688)),
+    'technology-2015-OL-paper-secA-q7-art': ('014', 3, (88, 105, 268, 258)),
+    'technology-2015-OL-paper-secA-q9-art': ('014', 3, (381, 599, 526, 745)),
+    'technology-2015-OL-paper-secA-q10-art': ('014', 4, (372, 92, 518, 242)),
+    'technology-2015-OL-paper-secA-q11-art': ('014', 4, (383, 338, 532, 487)),
+    'technology-2015-OL-paper-secA-q12-art': ('014', 4, (218, 604, 383, 752)),
+    'technology-2015-OL-paper-secB-q2b-art': ('015', 1, (413, 225, 564, 358)),
+    # 2(b)(iii)'s casing is for the water tank photographed beside it.
+    'technology-2015-OL-paper-secB-q2b-iii-art': ('015', 1, (53, 314, 161, 427)),
+    'technology-2015-OL-paper-secB-q2d-art': ('015', 1, (22, 669, 135, 751)),
+    'technology-2015-OL-paper-secB-q3a-art': ('015', 2, (453, 109, 579, 216)),
+    'technology-2015-OL-paper-secB-q3b-art': ('015', 2, (47, 272, 205, 384)),
+    'technology-2015-OL-paper-secB-q3c-art': ('015', 2, (404, 518, 541, 614)),
+    'technology-2015-OL-paper-secC-q1a-art': ('015', 3, (448, 121, 582, 186)),
+    # 1(b)(i) completes the flowchart the paper prints.
+    'technology-2015-OL-paper-secC-q1b-art': ('015', 3, (52, 255, 132, 372)),
+    'technology-2015-OL-paper-secC-q1c-art': ('015', 3, (454, 447, 572, 565)),
+    # 1(c)(ii): "the pneumatic component shown below", lettered A and B.
+    'technology-2015-OL-paper-secC-q1c-ii-art': ('015', 3, (202, 525, 350, 582)),
+    'technology-2015-OL-paper-secC-q2a-art': ('015', 4, (54, 90, 192, 194)),
+    # 2(a)(ii)'s 12V circuit.
+    'technology-2015-OL-paper-secC-q2a-ii-art': ('015', 4, (437, 154, 561, 210)),
+    'technology-2015-OL-paper-secC-q2b-art': ('015', 4, (377, 276, 561, 396)),
+    'technology-2015-OL-paper-secC-q2c-art': ('015', 4, (52, 450, 170, 571)),
+    # 2(d): the two gates (X, Y) and the truth table (ii) completes.
+    'technology-2015-OL-paper-secC-q2d-art': ('015', 4, (205, 584, 524, 790)),
+    'technology-2015-OL-paper-secC-q3d-art': ('015', 5, (52, 630, 470, 718)),
+    'technology-2015-OL-paper-secC-q4b-art': ('015', 6, (401, 213, 542, 368)),
+    'technology-2015-OL-paper-secC-q4c-art': ('015', 6, (38, 446, 186, 560)),
+    'technology-2015-OL-paper-secC-q5b-art': ('015', 7, (348, 261, 573, 418)),
+    # 5(c): the four rotational moulding steps "shown in the graphics below".
+    'technology-2015-OL-paper-secC-q5c-art': ('015', 7, (36, 545, 540, 677)),
+    'technology-2015-OL-paper-secC-q5d-art': ('015', 7, (442, 691, 535, 784)),
+})
+WHITEOUT.update({
+    # Q1's first line ends level with the small photograph.
+    'technology-2015-OL-paper-secA-q1-art': [(366, 66, 462, 86)],
+    # 2(d)'s stem and asks, printed left of the gates and above the table.
+    'technology-2015-OL-paper-secC-q2d-art': [(205, 584, 412, 684)],
+    # 4(c)'s (i) and (ii) begin level with the graphic's right edge.
+    'technology-2015-OL-paper-secC-q4c-art': [(174, 462, 186, 530)],
+})
+
+# 2015 Ordinary. The scheme's own drawn answers.
+SOLUTIONS.update({
+    'technology-2015-OL-scheme-secA-q7': (5, (312, 142, 492, 212),
+        "The marking scheme's own sketch for 2015 OL Section A Q7, as the State "
+        "Examinations Commission printed it: the bench seen in the direction of "
+        "arrow A, a long thin rectangle for the seat crossed near each end by a "
+        "tall thin upright rectangle for the frames."),
+    'technology-2015-OL-scheme-secB-q2b-ii': (9, (405, 280, 522, 330),
+        "The marking scheme's own answer to 2015 OL Section B 2(b)(ii), as the "
+        "State Examinations Commission printed it: an NPN transistor symbol in a "
+        "circle, with an arrow labelled Base pointing to the lead entering from "
+        "the left."),
+    'technology-2015-OL-scheme-secB-q3b-iii': (10, (300, 411, 384, 465),
+        "The marking scheme's own picture for 2015 OL Section B 3(b)(iii), as the "
+        "State Examinations Commission printed it: a small blue gear meshing with "
+        "a large green gear, each on its own red shaft."),
+    'technology-2015-OL-scheme-secB-q3d-ii': (10, (366, 714, 492, 780),
+        "The marking scheme's own sketch for 2015 OL Section B 3(d)(ii), as the "
+        "State Examinations Commission printed it: a long green beam resting on "
+        "two small yellow supports, one at each end, labelled Beam."),
+    'technology-2015-OL-scheme-secC-q1b-i': (11, (108, 486, 245, 664),
+        "The marking scheme's own flowchart for 2015 OL Section C 1(b)(i), as the "
+        "State Examinations Commission printed it: Start, then a decision Guard; "
+        "on N to Motor Off, which loops back to above Guard; on Y a decision "
+        "Switch, on N also to Motor Off; on Y Motor On, which loops back to "
+        "above Guard."),
+    'technology-2015-OL-scheme-secC-q1b-ii': (11, (355, 486, 540, 698),
+        "The marking scheme's own modified flowchart for 2015 OL Section C "
+        "1(b)(ii), as the State Examinations Commission printed it: Start, then "
+        "a decision Guard; on N to Red LED On and on to Motor Off, which loops "
+        "back to above Guard; on Y Red LED Off, then a decision Switch, on N to "
+        "Motor Off; on Y Motor On, which loops back to above Guard."),
+    'technology-2015-OL-scheme-secC-q2b-iii': (13, (380, 270, 553, 393),
+        "The marking scheme's own redrawn circuit for 2015 OL Section C 2(b)(iii), "
+        "as the State Examinations Commission printed it: the given motor "
+        "circuit with a switch labelled SPST Switch added in the +V supply line."),
+    'technology-2015-OL-scheme-secC-q2c-ii': (13, (460, 522, 556, 604),
+        "The marking scheme's own sketch for 2015 OL Section C 2(c)(ii), as the "
+        "State Examinations Commission printed it: a reed switch, two overlapping "
+        "contacts labelled Reed contacts inside a capsule labelled Glass Tube, "
+        "with a bar labelled Magnet beneath it."),
+    'technology-2015-OL-scheme-secC-q2d-ii': (13, (218, 697, 375, 796),
+        "The marking scheme's own completed truth table for 2015 OL Section C "
+        "2(d)(ii), as the State Examinations Commission printed it, columns A, B, "
+        "C, D: 0 0 gives 1 1; 0 1 gives 1 1; 1 0 gives 0 0; 1 1 gives 0 1."),
+    'technology-2015-OL-scheme-secC-q3b-iii': (14, (412, 325, 558, 420),
+        "The marking scheme's own picture for 2015 OL Section C 3(b)(iii), as the "
+        "State Examinations Commission printed it: a small network, desktop "
+        "computers, laptops and phones linked to a switch, a router and a "
+        "server, with a firewall to the internet."),
+    'technology-2015-OL-scheme-secC-q5d-ii': (17, (108, 596, 236, 776),
+        "The marking scheme's own sketches for 2015 OL Section C 5(d)(ii), as the "
+        "State Examinations Commission printed them: a Machine screw and a Stud, "
+        "each shown in section holding a plate to a block, and a Grub screw with "
+        "an arrow to its place in a gear's boss."),
+})
+ASK_ONLY.update({
+    'technology-2015-OL-scheme-secA-q7',
+    'technology-2015-OL-scheme-secB-q2b-ii',
+    'technology-2015-OL-scheme-secC-q1b-i',
+    'technology-2015-OL-scheme-secC-q1b-ii',
+    'technology-2015-OL-scheme-secC-q2b-iii',
+    'technology-2015-OL-scheme-secC-q2d-ii',
+})
+LABEL_KEYS.update({
+    # 1(c)(ii): the scheme's own words for the cylinder's letters.
+    (2015, 'ol', 'C', 1, 'c'): [
+        {'letter': 'A', 'meaning': 'Compressed Air Inlet'},
+        {'letter': 'B', 'meaning': 'Piston Rod'}],
+})
+# 3(d)(ii)'s beam is printed level with the end of its ask's line.
+SOLUTION_NOT_ZONE.add('technology-2015-OL-scheme-secB-q3d-ii')
+WHITEOUT.update({
+    'technology-2015-OL-scheme-secB-q3d-ii': [(366, 714, 432, 745)],
+})
+LABEL_ZONES.setdefault((2015, 'ol'), []).extend([
+    (4, (62, 340, 187, 532)),      # Q5's band saw reprinted, its arrow A
+    (4, (356, 583, 516, 686)),     # Q6's lever reprinted, 30N F 2M 5M
+    (5, (88, 105, 268, 258)),      # Q7's bench reprinted, its arrow A
+    (10, (452, 108, 580, 216)),    # 3(a)'s helmet and gloves, captioned
+    (10, (30, 290, 142, 372)),     # 3(b)'s PTO shaft, PTO Shaft and Shaft
+    (10, (436, 714, 492, 780)),    # 3(d)(ii)'s beam lettering, clear of its ask
+    (12, (250, 250, 380, 302)),    # 1(c)(ii)'s cylinder reprinted, A and B
+    (13, (34, 105, 155, 192)),     # 2(a)'s crane, Electromagnet
+    (13, (440, 76, 558, 128)),     # 2(a)(ii)'s 12V circuit reprinted
+    (13, (34, 296, 115, 386)),     # 2(b)'s garage roller door, captioned
+    (13, (40, 480, 144, 590)),     # 2(c)'s microswitch, COM NO NC
+    (13, (412, 620, 530, 692)),    # 2(d)'s gates reprinted, X Y A B C D
+    (14, (158, 646, 478, 712)),    # 3(d)'s connectors reprinted, A B C
+    (15, (18, 440, 162, 462)),     # 4(c)'s graphic: Demand
+    (15, (18, 462, 155, 562)),     # 4(c)'s graphic, clear of (i) and (ii)
+    (17, (52, 215, 264, 395)),     # 5(c)'s four moulding steps reprinted
+])
+
+MD_LINE_FIX[(2015, 'ol')] = [
+    # 3(d)(ii): one example broken before a capital, joined.
+    (r'^Any relevant use, e\.g\. a steel bridge,$', ''),
+    (r'^(Pre-cast concrete floor panels, etc\. \(6 Marks, 2\+4\))$',
+     r'Any relevant use, e.g. a steel bridge, \1'),
+    # 5(d)(ii): the Grub screw sketch's caption, read onto the band's line.
+    (r'^Grub screw (Fair description- 4 marks\) \(10 Marks, 4\+6\))$', r'\1'),
+]
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -2742,6 +2893,17 @@ ASK_STRIP = {
     (2016, 'hl', 'B', 3, 'd', 'i'): [r'^Construct a Gantt chart for the project\.$'],
     # 2016 Ordinary Q3: the answer lines' numbers "1 2" after the ask.
     (2016, 'ol', 'A', 3, None, None): [r'\s+1 2(?: Solar Paper®)?$'],
+    # 2015 Ordinary 5(a): (ii)'s two alloys, set beside the wheel photograph,
+    # read onto the letter's stem.
+    (2015, 'ol', 'C', 5, 'a', 'i'): [r'(?:^|\s+)1\. Bronze\. 2\. Solder\.$'],
+    # 2015 Ordinary 5(c)(ii): the four moulding steps' captions, which the
+    # crop carries, read after the ask.
+    (2015, 'ol', 'C', 5, 'c', 'ii'): [r'\s+1\. Mould Charging\b.*$'],
+    # 2015 Ordinary 2(b): the circuit's lettering and (iii)'s two items,
+    # read onto the letter's stem.
+    (2015, 'ol', 'B', 2, 'b', 'i'): [r'(?:^|\s+)Probes Transistor\b.*$'],
+    (2015, 'ol', 'B', 2, 'b', 'ii'): [r'(?:^|\s+)Probes Transistor\b.*$'],
+    (2015, 'ol', 'B', 2, 'b', 'iii'): [r'(?:^|\s+)Probes Transistor\b.*$'],
     # 2016 Higher Q3: the picture's caption "Average transport distance".
     (2016, 'hl', 'A', 3, None, None): [r'\s+Average transport distance$'],
     (2016, 'hl', 'A', 3, None, 'i'): [r'\s+Average transport distance$'],

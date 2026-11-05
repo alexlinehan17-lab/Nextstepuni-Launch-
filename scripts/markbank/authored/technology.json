@@ -2931,6 +2931,2714 @@
   "notes": "The scheme prints '(14 marks,8+6)' for this part."
  },
  {
+  "id": "tech-2015-ol-a1",
+  "topicId": "tech-core-design",
+  "conceptId": "core-design",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q1(i), (ii)",
+  "questionText": "(i) Name two tools contained in the multi-tool shown. (ii) Describe one situation where a multi-tool would meet the requirements of an individual.",
+  "stem": "The image shows a multi-tool marketed by survival specialist Bear Grylls.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secA-q1-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3+2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Long Nose Pliers.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Scissors/Knife, etc.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Emergency repairs to electrical equipment/Any appropriate situation, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-ol-a2",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q2(i), (ii)",
+  "questionText": "(i) The image shows red LEDs. Explain what is meant by the abbreviation LED. (ii) Outline two methods of determining the cathode of an LED.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secA-q2-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+2+2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "LED: Light Emitting Diode.",
+    "marks": 4,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1. Shorter Leg.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "2. Flat edge on the side of the LED.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+2+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-ol-a3",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q3(i), (ii)",
+  "questionText": "(i) List two advantages of using wind turbines. (ii) Name one energy conversion that takes place when wind turbines are generating electricity.",
+  "stem": "Wind turbines are used as a means of producing energy. They can be situated on land or at sea.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3+2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Renewable source of energy.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Availability of Wind/Minimal Pollution, etc.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Kinetic to mechanical/mechanical to electrical/mechanical to sound, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-ol-a4",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q4(i), (ii)",
+  "questionText": "(i) Name two devices that can print directly to a wireless printer. (ii) Give two benefits of using a laser printer instead of an inkjet printer.",
+  "stem": "Wireless printers have become very popular at home and at work.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4x2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Laptop computer.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Tablet/Smartphone, etc.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "1. Better quality printing.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "2. Print cartridges last longer, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4x2 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-ol-a5",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q5(i), (ii)",
+  "questionText": "(i) Give two safety precautions that should be observed when using a band saw. (ii) Explain the purpose of the tension adjuster on the band saw as indicated by the arrow A.",
+  "stem": "The image shows a band saw suitable for use in a Technology room.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secA-q5-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3+2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Wear goggles.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Use a guide stick/ Ear protection, etc.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "To allow the band saw blade to be fitted/adjusted/tensioned to cut effectively.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-ol-a6-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q6(i)",
+  "questionText": "Name the class of lever shown.",
+  "stem": "A diagram of a lever is shown opposite.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Class One lever.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-a6-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q6(ii)",
+  "questionText": "If a force of 30N is applied as shown in the diagram, calculate the force F required to balance the lever.",
+  "stem": "A diagram of a lever is shown opposite.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secA-q6-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Force (F): Force x Distance ( left side ) = Force x Distance ( right side ) 30N x 2m = F x 5m",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "F = 60Nm/5m",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "F = 12N",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-a7",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q7",
+  "questionText": "In the box provided, make a well proportioned 2D sketch of the bench shown when viewed in the direction of the arrow A.",
+  "stem": "",
+  "figureKey": "technology-2015-OL-scheme-secA-q7",
+  "questionFigureKey": "technology-2015-OL-paper-secA-q7-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(Very good sketch - 8 marks Fair sketch - 4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In the box provided, make a well proportioned 2D sketch of the bench shown when viewed in the direction of the arrow A.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(Very good sketch - 8 marks Fair sketch - 4 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-ol-a8",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q8(i), (ii)",
+  "questionText": "(i) Give two advantages of using electrically powered cars instead of using petrol powered cars. (ii) Explain what is meant by a hybrid car.",
+  "stem": "The ESB launched ‘The Great Electric Drive’ to promote greater use of electric cars in Ireland.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(3+3+2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Environmentally friendly/Less reliance on fossil fuels.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Cheaper running costs, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "This is a car that uses two or more power sources to move itself. Typically it involves combining an internal combustion engine and one or more electrical motors.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Hybrid cars can achieve greater fuel economy and release less emissions into the atmosphere etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-ol-a9-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q9(i)",
+  "questionText": "Name the mechanism shown.",
+  "stem": "The mechanism shown allows mechanical power and torque to be transmitted.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Toothed belt pulley system.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-a9-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q9(ii)",
+  "questionText": "Give one advantage of using this mechanism in a product.",
+  "stem": "The mechanism shown allows mechanical power and torque to be transmitted.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secA-q9-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reduced slippage with a toothed belt, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-a10",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q10(i), (ii)",
+  "questionText": "(i) Name a suitable softwood and a suitable metal which could be used to make the paper towel holder. (ii) Give two reasons for selecting your chosen metal.",
+  "stem": "The paper towel holder shown is manufactured from a softwood and a metal.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secA-q10-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4x2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Softwood: Pine.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Metal: Stainless Steel/Aluminium, etc.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "1. Strong.",
+    "marks": 2,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "2. Durable/ will not rust/ Appearance, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4x2 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-ol-a11",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q11(i), (ii)",
+  "questionText": "(i) Explain what is meant by the terms AC and DC. (ii) Current is measured in amps (A). Give the unit of measurement of Resistance.",
+  "stem": "The image shows a laptop transformer that converts AC to DC.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secA-q11-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(3+3+2 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "AC: Alternating Current.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "DC: Direct Current.",
+    "marks": 3,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Unit of Resistance: The Ohm (Ω)",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(3+3+2 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-ol-a12",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "A",
+  "questionRef": "2015 OL Section A Q12",
+  "questionText": "Use two graphic techniques to enhance the graphic representation of the pot shown.",
+  "stem": "",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secA-q12-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4+4 marks)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Rendering/colour/shading/ shadow/hatching etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(4+4 marks)' for this question."
+ },
+ {
+  "id": "tech-2015-ol-b2a-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q2(a)(i)",
+  "questionText": "Briefly describe two ways in which water usage in the home can be reduced.",
+  "stem": "The Irish Government intends to introduce domestic water charges for homes connected to public water systems and public wastewater services.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Use a shower instead of a bath, recycle water usage where possible, tap limiters etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b2a-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q2(a)(ii)",
+  "questionText": "Outline two benefits of conserving water.",
+  "stem": "The Irish Government intends to introduce domestic water charges for homes connected to public water systems and public wastewater services.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Less wastage is better for the environment, reduced water bill for consumers, reduced risk of reservoirs running dry in periods of hot weather etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b2b-i",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q2(b)(i)",
+  "questionText": "Name a suitable material for the probes and give one reason for selecting this material.",
+  "stem": "The image shows the circuit diagram for a moisture sensor circuit. The circuit is used in a water tank to activate a light emitting diode (LED) when the tank is full.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secB-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 2+2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Eg. Copper– A conductor of electricity, strong etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+2+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b2b-ii",
+  "topicId": "tech-core-energy",
+  "conceptId": "core-energy",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q2(b)(ii)",
+  "questionText": "Redraw the symbol for the transistor shown and label the base.",
+  "stem": "The image shows the circuit diagram for a moisture sensor circuit. The circuit is used in a water tank to activate a light emitting diode (LED) when the tank is full.",
+  "figureKey": "technology-2015-OL-scheme-secB-q2b-ii",
+  "questionFigureKey": "technology-2015-OL-paper-secB-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 2+2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Redraw the symbol for the transistor shown and label the base.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+2+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b2b-iii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q2(b)(iii)",
+  "questionText": "Suggest, using notes and annotated sketches: 1. A suitable casing to contain the moisture sensor circuit. 2. An appropriate method of attaching the casing to the water tank.",
+  "stem": "The image shows the circuit diagram for a moisture sensor circuit. The circuit is used in a water tank to activate a light emitting diode (LED) when the tank is full.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secB-q2b-iii-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(8 Marks, 2+2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any suitable casing- vacuum formed etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Screw, clip or hinge attachment etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+2+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b2c-i",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q2(c)(i)",
+  "questionText": "Give two advantages of using this technology to gather data.",
+  "stem": "The meters used by the company, Irish Water, feature Automatic Meter Reading (AMR) technology. This ‘drive-by’ technology allows for water meters to be read remotely.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 Marks, 4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Meters do not have to be opened, less time consuming,",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Greater accuracy in readings taken (less risk of human error) etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b2c-ii",
+  "topicId": "tech-core-ict",
+  "conceptId": "core-ict",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q2(c)(ii)",
+  "questionText": "Wireless technology is used in AMR. Using notes and sketches, briefly describe how a wireless transmission might work.",
+  "stem": "The meters used by the company, Irish Water, feature Automatic Meter Reading (AMR) technology. This ‘drive-by’ technology allows for water meters to be read remotely.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Transmitter and receiver units, use of radio signals etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b2d-i",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q2(d)(i)",
+  "questionText": "Suggest two features (quality attributes) of the fitting shown which would indicate that it is a product of high quality.",
+  "stem": "The image shows a compression fitting used for joining water pipes.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secB-q2d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Selection of materials, Design of the fitting, Manufacturing processes used etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b2d-ii",
+  "topicId": "tech-core-project",
+  "conceptId": "core-project",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q2(d)(ii)",
+  "questionText": "Give two costs associated with improving the quality of a public water system.",
+  "stem": "The image shows a compression fitting used for joining water pipes.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secB-q2d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Replace/Repair burst water pipes, water meter installation, water treatment plants etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b3a-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q3(a)(i)",
+  "questionText": "Briefly describe any two safety hazards found in a Technology workshop.",
+  "stem": "One role of the Health and Safety Authority (HSA) is to promote accident prevention through the use of Personal Protection Equipment (PPE) in work environments.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secB-q3a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pillar Drill– Rotating chuck/drill.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Soldering Iron– Hot tip when in use.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Sanding Machine– Face mask required to prevent dust inhalation, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b3a-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q3(a)(ii)",
+  "questionText": "Name a suitable material for the manufacture of the protective gloves shown. Give one reason to justify your selection.",
+  "stem": "One role of the Health and Safety Authority (HSA) is to promote accident prevention through the use of Personal Protection Equipment (PPE) in work environments.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secB-q3a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cotton– Strong and durable, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Alternative materials: leather, PVC/Latex etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b3b-i",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q3(b)(i)",
+  "questionText": "Outline the function of the plastic guard on the PTO shaft shown.",
+  "stem": "A Power Take Off (PTO) is a method of taking power from a running engine and transmitting it to a separate machine or attachment. PTO shafts are commonly used with agricultural machinery.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 2+3+3)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To protect individuals from serious injury, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+3+3)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b3b-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q3(b)(ii)",
+  "questionText": "The internal metal shaft contains a universal joint. Briefly describe an advantage of using universal joints.",
+  "stem": "A Power Take Off (PTO) is a method of taking power from a running engine and transmitting it to a separate machine or attachment. PTO shafts are commonly used with agricultural machinery.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 2+3+3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This joint offers a excellent range of movement, etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+3+3)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b3b-iii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q3(b)(iii)",
+  "questionText": "A power take off (PTO) shaft operates at 540 RPM (revolutions per minute), but a tractor engine operates at a higher RPM. Describe, using notes and sketches, a mechanism used to achieve speed reduction.",
+  "stem": "A Power Take Off (PTO) is a method of taking power from a running engine and transmitting it to a separate machine or attachment. PTO shafts are commonly used with agricultural machinery.",
+  "figureKey": "technology-2015-OL-scheme-secB-q3b-iii",
+  "questionFigureKey": "technology-2015-OL-paper-secB-q3b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(8 Marks, 2+3+3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A compound gear system/gearbox could be used to achieve the desired speed reduction etc.",
+    "marks": 3,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(8 Marks, 2+3+3)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b3c-i",
+  "topicId": "tech-core-graphics",
+  "conceptId": "core-graphics",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q3(c)(i)",
+  "questionText": "Give two reasons why CAD software is used to design components.",
+  "stem": "The graphic shows a PTO shaft drawn using a CAD program.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secB-q3c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 4+2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Accuracy, Visualisation, Speed, Print capabilities, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b3c-ii",
+  "topicId": "tech-core-materials",
+  "conceptId": "core-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q3(c)(ii)",
+  "questionText": "Explain what is meant by the term CAM.",
+  "stem": "The graphic shows a PTO shaft drawn using a CAD program.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secB-q3c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(6 Marks, 4+2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Computer Aided Manufacture.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Manufacturing involving machines such as a CNC router, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 4+2)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b3d-i",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q3(d)(i)",
+  "questionText": "Give one other example of a shell structure in an everyday product.",
+  "stem": "The guard of a PTO shaft is an example of a shell structure.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 2+4)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Body panels of a car, plastic toys, etc.",
+    "marks": 2,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-b3d-ii",
+  "topicId": "tech-core-structures",
+  "conceptId": "core-structures",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "B",
+  "questionRef": "2015 OL Section B Q3(d)(ii)",
+  "questionText": "Describe, using notes and sketches, what is meant by a beam structure. Give one example of where a beam structure is used.",
+  "stem": "The guard of a PTO shaft is an example of a shell structure.",
+  "figureKey": "technology-2015-OL-scheme-secB-q3d-ii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(6 Marks, 2+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any relevant use, e.g. a steel bridge, Pre-cast concrete floor panels, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(6 Marks, 2+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c1a-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q1(a)(i)",
+  "questionText": "Briefly describe the benefits of using an 18 pin microcontroller in terms of the inputs and outputs available to a student.",
+  "stem": "The images show a microcontroller chip and a chip socket used with printed circuit boards (PCBs).",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q1a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Greater number of input/output devices can be used compared to 14 pin and 8 pin PICs.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "18 pin microcontrollers also allow the use of servo and stepper motors.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "These microcontrollers also allow d.c. motor reversal to be used in student project work, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c1a-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q1(a)(ii)",
+  "questionText": "Give two reasons why chip sockets are used when soldering PCBs.",
+  "stem": "The images show a microcontroller chip and a chip socket used with printed circuit boards (PCBs).",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q1a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To protect the chip from heat damage during the soldering process.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To allow faulty chips to be replaced easily without the need to re-solder the PCB, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c1b-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q1(b)(i)",
+  "questionText": "Complete the given flowchart for the workshop lathe.",
+  "stem": "A student is asked to produce a flowchart for a workshop lathe. The safety guard must be in place and the switch must be pressed before the lathe will turn on.",
+  "figureKey": "technology-2015-OL-scheme-secC-q1b-i",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Complete the given flowchart for the workshop lathe.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c1b-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q1(b)(ii)",
+  "questionText": "Sketch a modification to the flowchart to include a red LED which lights when the safety guard is not in place.",
+  "stem": "A student is asked to produce a flowchart for a workshop lathe. The safety guard must be in place and the switch must be pressed before the lathe will turn on.",
+  "figureKey": "technology-2015-OL-scheme-secC-q1b-ii",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sketch a modification to the flowchart to include a red LED which lights when the safety guard is not in place.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c1b-iii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q1(b)(iii)",
+  "questionText": "Outline two advantages of using PICs instead of a conventional electronic circuit.",
+  "stem": "A student is asked to produce a flowchart for a workshop lathe. The safety guard must be in place and the switch must be pressed before the lathe will turn on.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q1b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The ability to re-program PICs makes them very versatile, less wiring required in PIC circuits compared to conventional electronic circuits, Using flow- charts allows the operation of a program to be followed logically, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c1c-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q1(c)(i)",
+  "questionText": "Explain what is meant by pneumatic power and give one other example of where it is used.",
+  "stem": "The image shows a heavy duty multi-purpose spray gun for paint. The spray gun uses pneumatic power.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q1c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pneumatic power uses compressed air to do work and effect mechanical motion.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Assembly line applications– drilling, clamping, ejecting, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c1c-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q1(c)(ii)",
+  "questionText": "Name the pneumatic component shown below. What is the function of the part labelled A and the part labelled B?",
+  "stem": "The image shows a heavy duty multi-purpose spray gun for paint. The spray gun uses pneumatic power.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q1c-ii-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Compressed Air Inlet",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Piston Rod",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Double acting cylinder.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A- Compressed Air Inlet B- Piston Rod",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The compressed air forces the piston rod out of the cylinder. The piston rod retracts when compressed air is forced through the inlet at the opposite end.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c1d-i",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q1(d)(i)",
+  "questionText": "Describe the main features of a humanoid robot.",
+  "stem": "Humanoid robots are being designed for work in the field of medicine.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A humanoid robot resembles the human body having a torso, a head, two arms and two feet. It may also have sound and vision sensors, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c1d-ii",
+  "topicId": "tech-opt-control",
+  "conceptId": "opt-control",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q1(d)(ii)",
+  "questionText": "List two advantages of using such robots in this area of work.",
+  "stem": "Humanoid robots are being designed for work in the field of medicine.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Accurate, reliable, the risk of human error is reduced, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c2a-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q2(a)(i)",
+  "questionText": "Describe how an electromagnet works.",
+  "stem": "The image shows a crane using an electromagnet to lift scrap metal.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q2a-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A coil is wrapped around an iron core and a current passed through it. This creates a magnetic field around the coiled wire, magnetising the metal as if it were a permanent magnet, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c2a-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q2(a)(ii)",
+  "questionText": "A circuit incorporating an electromagnet has a voltage of 12V and a current of 0.25 amps. Calculate the power used in the electromagnet. Note: Power = Current (I) × Voltage (V)",
+  "stem": "The image shows a crane using an electromagnet to lift scrap metal.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q2a-ii-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "P= 0.25 x 12 = 3W",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c2b-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q2(b)(i)",
+  "questionText": "Name components A and B in the circuit.",
+  "stem": "The circuit diagram shown allows forward and reverse control of a motor and also includes speed control. A student has incorporated this circuit into a model of a roller garage door.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+6+8)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A– Resistor, B– Transistor.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+6+8)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c2b-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q2(b)(ii)",
+  "questionText": "Briefly describe the operation of the circuit.",
+  "stem": "The circuit diagram shown allows forward and reverse control of a motor and also includes speed control. A student has incorporated this circuit into a model of a roller garage door.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+6+8)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The potentiometer controls the gain of the transistor. This allows for current to be increased/decreased to the motor controlling its speed as a result. The DPDT switch allows for motor reversal while the limit switches stop the motor when required, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+6+8)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c2b-iii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q2(b)(iii)",
+  "questionText": "Redraw the given circuit diagram to include a master on/off SPST switch to activate the circuit.",
+  "stem": "The circuit diagram shown allows forward and reverse control of a motor and also includes speed control. A student has incorporated this circuit into a model of a roller garage door.",
+  "figureKey": "technology-2015-OL-scheme-secC-q2b-iii",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q2b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+6+8)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Redraw the given circuit diagram to include a master on/off SPST switch to activate the circuit.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+6+8)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c2c-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q2(c)(i)",
+  "questionText": "Explain what is meant by the abbreviations COM, NO and NC.",
+  "stem": "The image shows a lever microswitch which is commonly used in electronic circuits.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "COM- Common, NO- Normally Open, NC- Normally Closed",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c2c-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q2(c)(ii)",
+  "questionText": "Using notes and annotated sketches, describe the operation of a reed switch.",
+  "stem": "The image shows a lever microswitch which is commonly used in electronic circuits.",
+  "figureKey": "technology-2015-OL-scheme-secC-q2c-ii",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q2c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "When a magnet is brought close to the glass tube, its magnetic field pulls the metal reeds together activating the switch.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The reeds open again once the magnet is removed, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c2d-i",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q2(d)(i)",
+  "questionText": "Name the logic gates shown at X and at Y.",
+  "stem": "The graphic shows a combination of two logic gates.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X- NOT gate Y- OR gate.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c2d-ii",
+  "topicId": "tech-opt-electronics",
+  "conceptId": "opt-electronics",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q2(d)(ii)",
+  "questionText": "In your answerbook, draw and complete the truth table for the combination of the logic gates shown.",
+  "stem": "The graphic shows a combination of two logic gates.",
+  "figureKey": "technology-2015-OL-scheme-secC-q2d-ii",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q2d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "In your answerbook, draw and complete the truth table for the combination of the logic gates shown.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c3a-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q3(a)(i)",
+  "questionText": "Outline two reasons why a tablet might be preferable to a laptop computer when performing simple ICT related tasks.",
+  "stem": "Many people have access to a range of ICT devices such as laptops and tablets in their homes.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "More lightweight/portable, more user friendly, speed, cost, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c3a-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q3(a)(ii)",
+  "questionText": "Computers generally perform more slowly over time. Suggest two ways to help ensure that a computer continues to operate optimally - quickly and reliably - throughout its life cycle.",
+  "stem": "Many people have access to a range of ICT devices such as laptops and tablets in their homes.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Clear cache on a regular basis, update systems software as required, remove unwanted files/programs as necessary, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c3b-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q3(b)(i)",
+  "questionText": "Give two advantages of using shared folders on a network.",
+  "stem": "Network computer systems allow for the use of shared folders. These folders may be accessed by several users on a network.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Different people can access common information/easier to transfer information, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c3b-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q3(b)(ii)",
+  "questionText": "Describe why some documents should be saved as read only files on a shared network.",
+  "stem": "Network computer systems allow for the use of shared folders. These folders may be accessed by several users on a network.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To prevent accidental or deliberate deletion of these files.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c3b-iii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q3(b)(iii)",
+  "questionText": "Using notes and annotated sketches, describe how a local area network (LAN) could be set up for a small business.",
+  "stem": "Network computer systems allow for the use of shared folders. These folders may be accessed by several users on a network.",
+  "figureKey": "technology-2015-OL-scheme-secC-q3b-iii",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "PCs/Laptops, server, switch, router, modem, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c3c-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q3(c)(i)",
+  "questionText": "Outline two reasons why malware might be created to spy on individuals or organisations.",
+  "stem": "In 2014 a computer bug known as ‘Regin’ was uncovered by a computer security company. This piece of malware had the potential to allow its creators to spy on companies and government agencies.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To access secure data such as financial records and personal details.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To find out what strategies are used by competitors to gain an advantage in the markets, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c3c-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q3(c)(ii)",
+  "questionText": "Suggest one initiative that a government could introduce to protect personal or corporate data.",
+  "stem": "In 2014 a computer bug known as ‘Regin’ was uncovered by a computer security company. This piece of malware had the potential to allow its creators to spy on companies and government agencies.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Promote an awareness campaign for greater internet security, incentivise the use Firewalls and Anti-Virus software, legislation, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c3d-i",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q3(d)(i)",
+  "questionText": "Name the connectors A, B and C.",
+  "stem": "The images A, B and C show cable connectors used to connect ICT devices.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q3d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A– USB, B– Stereo Jack , C– HDMI.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c3d-ii",
+  "topicId": "tech-opt-ict",
+  "conceptId": "opt-ict",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q3(d)(ii)",
+  "questionText": "Give an application for any two of the connectors shown above.",
+  "stem": "The images A, B and C show cable connectors used to connect ICT devices.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q3d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "USB– Mouse/Keyboard, Stereo Jack– Headphones, HDMI– Gaming Console/TV, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c4a-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q4(a)(i)",
+  "questionText": "Give two benefits for companies that use production lines to manufacture products.",
+  "stem": "Production lines have been in use since the last century. They are used by companies to facilitate the large scale manufacture of products.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Employees are highly skilled in doing specific tasks, reduced costs and time, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c4a-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q4(a)(ii)",
+  "questionText": "Suggest two products which are suitable for large-scale manufacture using production line methods.",
+  "stem": "Production lines have been in use since the last century. They are used by companies to facilitate the large scale manufacture of products.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Automobiles, computers, toys, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c4b-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q4(b)(i)",
+  "questionText": "Briefly describe the importance of testing when designing a product such as a food mixer.",
+  "stem": "The image shows a food mixer commonly used in food preparation.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Find faults, to meet safety standards, to improve manufacturing processes, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c4b-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q4(b)(ii)",
+  "questionText": "Suggest two aspects of the food mixer shown which could be tested to ensure that it meets performance related standards.",
+  "stem": "The image shows a food mixer commonly used in food preparation.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The variable speeds of the motor, the stability of the mixer when in use, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c4b-iii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q4(b)(iii)",
+  "questionText": "Describe the main steps you took when testing one aspect of your Leaving Certificate Technology project.",
+  "stem": "The image shows a food mixer commonly used in food preparation.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q4b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 8+6+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Description of a relevant test carried out on the project.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 8+6+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c4c-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q4(c)(i)",
+  "questionText": "Give two reasons why a manufacturer might increase, for a period of time, the quantity of a product it produces.",
+  "stem": "Capacity management is a process where a manufacturer closely monitors the demand for a product or service it offers.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q4c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To meet projected demands, lower cost of raw materials at a moment in time, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c4c-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q4(c)(ii)",
+  "questionText": "With reference to the graphic shown, briefly describe what is meant by the term ‘lead capacity’.",
+  "stem": "Capacity management is a process where a manufacturer closely monitors the demand for a product or service it offers.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q4c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A manufacturer increases production in anticipation of expected growth of a product. For example, a phone company increases the production of a new phone in expectation of a high demand for the phone once it goes on sale, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c4d-i",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q4(d)(i)",
+  "questionText": "Explain what is meant by the term ‘Just In Time’ manufacturing.",
+  "stem": "Just In Time (JIT) is a manufacturing strategy used by many companies across the world. There are many benefits for a company that uses this approach when manufacturing goods.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "JIT sets out to cut costs by reducing the amount of goods and materials a business holds in stock. Parts/components only arrive as required, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c4d-ii",
+  "topicId": "tech-opt-manufacturing",
+  "conceptId": "opt-manufacturing",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q4(d)(ii)",
+  "questionText": "Name one company that uses this manufacturing approach. Give one benefit for this company of using JIT manufacturing.",
+  "stem": "Just In Time (JIT) is a manufacturing strategy used by many companies across the world. There are many benefits for a company that uses this approach when manufacturing goods.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any relevant company, e.g. a Florist.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Flowers are only ordered from a wholesaler when a florist has a customers order, etc.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c5a-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q5(a)(i)",
+  "questionText": "Explain what is meant by the term ‘alloy’. Give one advantage of using metals in this form.",
+  "stem": "Metals are often used in the form of alloys. Many people purchase alloy wheels for their cars.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An Alloy is a mixture of two or more metals that is produced with specific properties in mind – e.g. strength, weight, appearance, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c5a-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q5(a)(ii)",
+  "questionText": "Name the metals used to produce each of the following alloys: 1. Bronze. 2. Solder.",
+  "stem": "Metals are often used in the form of alloys. Many people purchase alloy wheels for their cars.",
+  "figureKey": "",
+  "questionFigureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 6+4)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Bronze– Copper and Tin.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Solder– Lead and Tin.",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 6+4)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c5b-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q5(b)(i)",
+  "questionText": "Name a suitable wood for the manufacture of the frame of the playhouse.",
+  "stem": "The image shows a garden playhouse suitable for use by children. The playhouse is made using a range of materials.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Treated softwood, Teak or other naturally durable hardwood, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c5b-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q5(b)(ii)",
+  "questionText": "Using notes and annotated sketches, describe a suitable method of fixing the slide to the frame.",
+  "stem": "The image shows a garden playhouse suitable for use by children. The playhouse is made using a range of materials.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Assembly involving nuts and bolts or screws, clip on system, etc.",
+    "marks": 8,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c5b-iii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q5(b)(iii)",
+  "questionText": "Garden products must meet stringent safety standards before they are certified as being fit for sale. Briefly outline two safety features in the design of the playhouse shown.",
+  "stem": "The image shows a garden playhouse suitable for use by children. The playhouse is made using a range of materials.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q5b-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(20 Marks, 6+8+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Triangulated frame, rounded edges, appropriate fixtures used, etc.",
+    "marks": 6,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(20 Marks, 6+8+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c5c-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q5(c)(i)",
+  "questionText": "Give one suitable thermoplastic material that could be used to manufacture the slide using rotational moulding.",
+  "stem": "The plastic slide at 5(b) above could be manufactured using rotational moulding. The main steps of the rotational moulding process are shown in the graphics below.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Polyethylene, PVC, Nylon, ABS, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c5c-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q5(c)(ii)",
+  "questionText": "Briefly describe the steps involved in rotational moulding as outlined in the graphics below.",
+  "stem": "The plastic slide at 5(b) above could be manufactured using rotational moulding. The main steps of the rotational moulding process are shown in the graphics below.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q5c-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Mould Charging– Plastic powder is added into the mould.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Heating– The mould is closed and heated.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "As the plastic softens, the mould begins to rotate.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "3. Cooling- The softened plastic takes the shape of the mould as it rotates. Once this process is complete, the cooling of the mould commences.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "4. Removal- Once the mould has cooled sufficiently, the moulded plastic component is removed, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "(Very good description– 6 marks Fair description- 4 marks)",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c5d-i",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q5(d)(i)",
+  "questionText": "Name two other types of permanent joint.",
+  "stem": "The image shows a welded joint. Welding is a means of permanently joining two pieces of metal.",
+  "figureKey": "",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q5d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Brazed joint, soldered joint, adhesive joint, etc.",
+    "marks": 4,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
+  "id": "tech-2015-ol-c5d-ii",
+  "topicId": "tech-opt-materials",
+  "conceptId": "opt-materials",
+  "level": "ordinary",
+  "year": 2015,
+  "subjectId": "technology",
+  "section": "C",
+  "questionRef": "2015 OL Section C Q5(d)(ii)",
+  "questionText": "Describe using notes and annotated sketches one semi-permanent joint.",
+  "stem": "The image shows a welded joint. Welding is a means of permanently joining two pieces of metal.",
+  "figureKey": "technology-2015-OL-scheme-secC-q5d-ii",
+  "questionFigureKey": "technology-2015-OL-paper-secC-q5d-art",
+  "questionFigureIncludesPrompt": false,
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "(10 Marks, 4+6)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Description of a relevant joint.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Machine screw– Used to hold a plate to a cast housing, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Stud– Used to secure machines to factory floors, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Grub screw– Used to lock gears onto shafts, etc.",
+    "marks": null,
+    "openList": true
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "(Very good description– 6 marks Fair description- 4 marks)",
+    "marks": null,
+    "openList": true
+   }
+  ],
+  "notes": "The scheme prints '(10 Marks, 4+6)' for this part."
+ },
+ {
   "id": "tech-2016-hl-a1-i",
   "topicId": "tech-core-ict",
   "conceptId": "core-ict",
