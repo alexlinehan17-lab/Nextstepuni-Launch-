@@ -121,8 +121,11 @@ L_HEAD = re.compile(r'^(\d)\s*\.\s*(?:(?:Anuncio|Di[áa]logo|Descriptivo|'
                     r'El Tiempo|Una Noticia)\s*[-–—]\s*)?(.+?)\s*$', re.I)
 
 # A part of a question: "(a) …", "(i) …". Roman numerals only appear under
-# Higher Section A Question 2, where the paper prints (i), (ii), (iii).
-PART = re.compile(r'^\(\s*(i{1,3}|iv|v|[a-h])\s*\)\s*(.*)$', re.I)
+# Higher Section A Question 2, where the paper prints (i), (ii), (iii). Letters
+# run to (j): 2026 Ordinary Q1 prints ten parts, and its scheme answers "(j)
+# para ciudadanos argentinos y jubilados" on a line of its own, which a grammar
+# that stopped at (i) welded onto (i)'s answer.
+PART = re.compile(r'^\(\s*(i{1,3}|iv|v|[a-h]|j)\s*\)\s*(.*)$', re.I)
 
 # The tariff a part prints at the END of its own body: "(5m)", "(4+3+3m)",
 # "(2+2+2 marks)", "(3+3m)".
