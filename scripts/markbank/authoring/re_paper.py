@@ -71,6 +71,8 @@ def _glyphs():
       U+0194 -- 2014-2016 schemes, Times New Roman: the round bullet, "●".
       U+028A -- 2014 Higher's scheme, Times New Roman: a dash, "—".
       U+007F -- 2016 Higher's scheme, SymbolMT: a long rule, "—".
+      U+F098 -- 2010-2012, Wingdings 2: the large round bullet, "●".
+      U+F097 -- 2010-2011, Wingdings 2: the small round bullet, "•".
     """
     table = {}
     for name in ('glyphmap.json', 'glyphmap-religious-education.json'):
@@ -225,6 +227,23 @@ def _lines(path):
                 else:
                     rows.append({'mid': mid, 'w': [(x0, x1, word)]})
             rows = sorted(rows, key=lambda r: r['mid'])
+            # A superscript ordinal set on a line of its own a few points above
+            # its number ("TH" over "19", 2010 Ordinary B(b)'s "19TH CENTURY")
+            # joins the number it follows.
+            for row in list(rows):
+                if not all(re.fullmatch(r'(?:ST|ND|RD|TH|st|nd|rd|th)', w) for _x0, _x1, w in row['w']):
+                    continue
+                for x0, x1, w in list(row['w']):
+                    host = next(((other, k) for other in rows if other is not row and abs(other['mid'] - row['mid']) < 8
+                                 for k, (a0, a1, aw) in enumerate(other['w']) if aw.isdigit() and abs(x0 - a1) < 3), None)
+                    if host is None:
+                        break
+                    other, k = host
+                    a0, a1, aw = other['w'][k]
+                    other['w'][k] = (a0, x1, aw + w)
+                    row['w'].remove((x0, x1, w))
+                if not row['w']:
+                    rows.remove(row)
             # A caption set beside a BARE part marker, a few points above its
             # baseline (2020 Higher A1(a)(i): the thought bubble "How do I
             # decide what is good or evil?" beside "a) i.", 10pt higher), is
@@ -238,7 +257,17 @@ def _lines(path):
                     rows[k - 1], rows[k] = cur, prev
             ordered = [sorted(row['w']) for row in rows]
             credit = None
+            after_marks = False
             for x0, text in _merge_option_columns(ordered):
+                # 2010-2011 credit a picture after the marks, unbracketed:
+                # "(40 marks) Source: www.ime.gr", "Source:Softkey Multimedia
+                # Inc.", or a bare name at the right margin under the marks
+                # line ("Walter Hamilton Snark International")
+                text = re.sub(r'(\(\d{2}\s*marks?\))\s+Source\s*:.*$', r'\1', text)
+                if re.match(r'^Source\s*:', text.strip()) or (after_marks and x0 >= 380 and not MARKER.match(text)):
+                    after_marks = False
+                    continue
+                after_marks = bool(re.search(r'\(\d{2}\s*marks?\)\s*$', text))
                 # a picture's question marks are clipart, never text
                 if re.fullmatch(r'[?!]+', text.strip()):
                     continue
@@ -396,6 +425,34 @@ def _stacked_options(rows, i):
     return ' '.join(lead + items), used
 
 
+def _side_by_side_lists(rows, i):
+    """Two option lists printed side by side under their own headings (2011
+    Ordinary C(b): "List A" over Christianity and Judaism, "List B" over
+    Buddhism, Hinduism and Islam). Read across, each line pairs an item of
+    one list with an item of the other; read down, each list is whole:
+    "List A ◆ CHRISTIANITY (any denomination) ◆ JUDAISM List B ◆ BUDDHISM
+    ◆ HINDUISM ◆ ISLAM"."""
+    head = rows[i]
+    text = ' '.join(w for _x0, _x1, w in head)
+    if not re.fullmatch(r'(?:LIST|List)\s+A:?\s+(?:LIST|List)\s+B:?', text):
+        return None
+    split = (head[1][1] + head[2][0]) / 2 if len(head) >= 4 else None
+    if split is None:
+        return None
+    a_head = ' '.join(w for _x0, _x1, w in head[:2])
+    b_head = ' '.join(w for _x0, _x1, w in head[2:])
+    left, right, used = [], [], []
+    j = i + 1
+    while j < len(rows) and rows[j] and BULLET_TOKEN.match(rows[j][0][2]):
+        for x0, _x1, w in rows[j]:
+            (left if x0 < split else right).append(w)
+        used.append(j)
+        j += 1
+    if not used or not left or not right:
+        return None
+    return ' '.join([a_head] + left + [b_head] + right), used
+
+
 def _merge_option_columns(rows):
     """Read a two-line option TABLE down its columns, not across its rows.
 
@@ -422,6 +479,12 @@ def _merge_option_columns(rows):
     for i, ws in enumerate(rows):
         if i in skip:
             continue
+        lists = _side_by_side_lists(rows, i)
+        if lists is not None:
+            text, used = lists
+            skip.update(used)
+            out.append((ws[0][0], text))
+            continue
         stacked = _stacked_options(rows, i)
         if stacked is not None:
             text, used = stacked
@@ -430,44 +493,52 @@ def _merge_option_columns(rows):
             continue
         cols = [x0 for x0, _x1, w in ws if BULLET_TOKEN.match(w)]
         merged = None
-        if len(cols) >= 2 and i + 1 < len(rows):
-            nxt = rows[i + 1]
+        bounds = list(zip(cols, cols[1:] + [10 ** 6]))
+
+        def continues(nxt, first):
+            """Whether a line is the wrapped rest of the option labels above.
+            Split it into the GROUPS the page prints, on the white space
+            between columns. A wrapped option label is one such group and
+            lies wholly inside its own column; a line of running prose is a
+            single group that crosses every column start, which is what tells
+            the two apart. Alignment alone does not: a long sentence places a
+            word near every column by chance, and using that test shredded six
+            asks into "• Buddhism Explain how the • Christianity understanding
+            • Hinduism of God/gods/the ...". The FIRST wrapped line has to
+            break into two groups or more; the lines after it (2014 Higher
+            B(c)'s "EARLY 19TH CENTURY" / "PROTESTANTISM") may hold one."""
             words = [w for _x0, _x1, w in nxt]
-            # Split the continuation into the GROUPS the page prints, on the
-            # white space between columns. A wrapped option label is one such
-            # group and lies wholly inside its own column; a line of running
-            # prose is a single group that crosses every column start, which
-            # is what tells the two apart. Alignment alone does not: a long
-            # sentence places a word near every column by chance, and using
-            # that test shredded six asks into "• Buddhism Explain how the
-            # • Christianity understanding • Hinduism of God/gods/the ...".
             groups = []
             for j, (x0, x1, w) in enumerate(nxt):
                 if j and x0 - nxt[j - 1][1] < COLUMN_GAP:
                     groups[-1][1] = x1
                 else:
                     groups.append([x0, x1])
-            bounds = list(zip(cols, cols[1:] + [10 ** 6]))
-            fits = (len(groups) >= 2
+            fits = (len(groups) >= (2 if first else 1)
                     and all(any(lo - 14 <= g0 and g1 <= hi for lo, hi in bounds)
                             for g0, g1 in groups))
-            if (not any(BULLET_TOKEN.match(w) for w in words)
+            return (not any(BULLET_TOKEN.match(w) for w in words)
                     and len(words) <= 12
                     and not re.search(r'[.?!:]$', words[-1])
                     and nxt[0][0] >= cols[0] - 2
-                    and fits):
-                buckets = {c: [] for c in cols}
-                for x0, _x1, w in nxt:
+                    and fits)
+
+        if len(cols) >= 2 and i + 1 < len(rows) and continues(rows[i + 1], True):
+            buckets = {c: [] for c in cols}
+            j = i + 1
+            while j < len(rows) and j <= i + 4 and continues(rows[j], j == i + 1):
+                for x0, _x1, w in rows[j]:
                     home = max((c for c in cols if x0 >= c - 14), default=cols[0])
                     buckets[home].append(w)
-                pieces = []
-                for c in cols:
-                    ceiling = min([o for o in cols if o > c] + [10 ** 6])
-                    own = [w for x0, _x1, w in ws if c <= x0 < ceiling]
-                    pieces.append(' '.join(own + buckets[c]))
-                lead = [w for x0, _x1, w in ws if x0 < cols[0]]
-                merged = ' '.join(lead + pieces)
-                skip.add(i + 1)
+                skip.add(j)
+                j += 1
+            pieces = []
+            for c in cols:
+                ceiling = min([o for o in cols if o > c] + [10 ** 6])
+                own = [w for x0, _x1, w in ws if c <= x0 < ceiling]
+                pieces.append(' '.join(own + buckets[c]))
+            lead = [w for x0, _x1, w in ws if x0 < cols[0]]
+            merged = ' '.join(lead + pieces)
         out.append((ws[0][0], merged if merged is not None
                     else ' '.join(w for _x0, _x1, w in ws)))
     return out

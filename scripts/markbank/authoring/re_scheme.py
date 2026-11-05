@@ -107,6 +107,10 @@ TARIFF_PAIR = re.compile(
 TARIFF_BARE = re.compile(r'^\((\d{2})\)$')
 
 
+# 2010-2012's margin tariff: a bare number ending a line of the question.
+BARE_MARGIN = re.compile(r'(?:\s|^)(\d{2})\s*$')
+
+
 def parse_tariff(text):
     """(total, notation) for a printed tariff, or None. Never a guess.
 
@@ -255,6 +259,10 @@ class ReScheme:
         glyph = SITTING_BULLET.get((year, level))
         if glyph:
             self.lines = [re.sub(rf'^{re.escape(glyph)}\s+', '• ', l) for l in self.lines]
+        if year <= 2012:
+            # 2010-2012 set sub-points with a Courier "o" ("o Ineffable i.e.
+            # ...", "o Etc."): each is a point of its own, as printed
+            self.lines = [re.sub(r'^o\s+(?=[A-Z])', '• ', l) for l in self.lines]
         self.asks = []
         self.refused = []
         self._read()
@@ -269,12 +277,24 @@ class ReScheme:
         marker regex alone reads 153 of them as asks.
         """
         section = None
+        prev_section = False
         out = []
         for i, line in enumerate(self.lines):
             s = SECTION_HEAD.match(line)
             if s:
                 section = s.group(1)
             m = HEAD.match(self._normalise(line, section))
+            if not m and self.year <= 2012 and section and prev_section:
+                # a section that prints ONE ask, its head the section letter on
+                # the line under the section's heading: "3 E ♦ BUDDHISM ... 80",
+                # "J ● GOD OF THE GAPS ...", "I After Saint Patrick ..."
+                one = re.match(rf'^(?:[123]\s+)?{section}\s+(?![a-h]\))(\S.*)$', line)
+                if one:
+                    out.append((i, section, None, None, None, one.group(1).strip()))
+                    prev_section = False
+                    continue
+            if line:
+                prev_section = bool(s)
             if not m:
                 # 2014-2017 set a part's romans as lines of their own under its
                 # stem: "G a) Outline ... headings:" / "i. The origins ... 20M"
@@ -324,6 +344,19 @@ class ReScheme:
                             (read as "A 1 a) i.")"""
         if self.year > 2017:
             return line
+        if self.year <= 2012:
+            # 2010-2012 also print "1 1b)" (part letter welded to the
+            # question), "2 a)" (Section A's question with no unit or
+            # section), and "B a)i" / "2 a)ii" (a roman with no full stop)
+            line = re.sub(r'^([123]\s+\d)([a-h]\))', r'\1 \2', line)
+            line = re.sub(r'^((?:[123]\s+)?[A-J])([a-h]\))', r'\1 \2', line)      # "3 Fb)i"
+            if section and section != 'A':
+                # 2011 Ordinary prints Section I's (b) as "1 1 b)", Section A's
+                # numbering; outside Section A no question number is printed
+                line = re.sub(r'^[123]\s+\d\s+(?=[a-h]\))', f'{section} ', line)
+            if section == 'A':
+                line = re.sub(r'^(\d)\s+(?=[a-h]\))', r'A \1 ', line)
+            line = re.sub(r'^((?:[123]\s+)?(?:[A-J]\s+)?(?:\d\s+)?[a-h]\))\s*(i{1,3}|iv|v)(?=\s)', r'\1 \2.', line)
         if section:
             line = re.sub(r'^[123]\s+(\d)\s+(?=[a-h]\))', rf'{section} \1 ', line)
         line = re.sub(r'^((?:Or\s+)?)[123]\s+(?=[A-J]\s?\d?\s*\(?[a-h][\s)])', r'\1', line)
@@ -401,11 +434,30 @@ class ReScheme:
             # it shares (2014 Ordinary D(c): "Discuss this statement ... 40M" /
             # "a person's moral decision-making."): one line of the cue, and
             # only one, may end with it
-            ends = [(j, m) for j, l in enumerate(cue_lines)
-                    for m in [TRAILING_TARIFF.search(l)] if m and parse_tariff(m.group(1).split('/')[0])]
+            if self.year <= 2012:
+                # 2010-2012 print the part's marks as a bare number at the right
+                # margin with "Graded" beneath it: "... nature of reality. 40" /
+                # "Graded". "Graded" is the scheme's word, never the question's.
+                cue_lines = [re.sub(r'\s*\bGraded\b\s*', ' ', l).strip() for l in cue_lines]
+                cue_lines = [l for l in cue_lines if l]
+            def margin(line):
+                m = TRAILING_TARIFF.search(line)
+                if m and parse_tariff(m.group(1).split('/')[0]):
+                    return m, parse_tariff(m.group(1).split('/')[0])[0], m.group(1).strip()
+                m = BARE_MARGIN.search(line) if self.year <= 2012 else None
+                if m:
+                    return m, int(m.group(1)), m.group(1)
+                return None
+            ends = [(j, hit) for j, l in enumerate(cue_lines) for hit in [margin(l)] if hit]
+            # 2010-2012 stack the part's marks and their split down the margin:
+            # "40" / "(20Mx2)" / "Graded" -- one tariff printed twice
+            if (self.year <= 2012 and len(ends) == 2 and ends[1][0] == ends[0][0] + 1
+                    and ends[0][1][2].isdigit() and ends[0][1][1] == ends[1][1][1]):
+                (j0, (m0, total, n0)), (j1, (m1, _t, n1)) = ends
+                cue_lines[j1] = cue_lines[j1][:m1.start()].strip()
+                ends = [(j0, (m0, total, f'{n0} {n1}'))]
             if len(ends) == 1:
-                j, m = ends[0]
-                total, notation = parse_tariff(m.group(1).split('/')[0])[0], m.group(1).strip()
+                j, (m, total, notation) = ends[0]
                 cue_lines[j] = cue_lines[j][:m.start()].strip()
                 cue = ' '.join(' '.join(cue_lines).split())
             elif not ends and stem_tariff and parse_tariff(stem_tariff.split('/')[0]):

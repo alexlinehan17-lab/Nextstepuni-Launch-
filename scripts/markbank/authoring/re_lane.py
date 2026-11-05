@@ -102,6 +102,13 @@ HOLD = {
 }
 HELD = []
 
+# Built cards whose question text a census-reader fix has since corrected,
+# each checked against the page: an option table wrapped over several lines,
+# now read down its columns (2014 Higher B(b): "THE EVANGELICAL MOVEMENT OF
+# EARLY 19TH CENTURY PROTESTANTISM"; 2017 Higher B(a): "AN EVANGELIST
+# (Matthew or Mark or Luke or John)").
+QUESTION_FIXED = {'re-2014-hl-b-b', 're-2017-hl-b-a'}
+
 
 HEAD_TIMES = []        # asks whose "x 2" is read off the ask's head, not the grid
 
@@ -423,7 +430,9 @@ def _is_label_grid(texts):
     if len(rows) != 2 or len(rows[0]) < 4:
         return False
     head, ranges = rows
-    return (head[-1].strip().lower() == 'marks' and all(BAND_LABEL.match(c) for c in head[:-1] if c)
+    # the marks column heads "Marks", "Question Marks" (2010-2011) or "Marks 30"
+    return (re.fullmatch(r'(?:question\s+)?marks?(?:\s+\d{1,3})?', head[-1].strip().lower()) is not None
+            and all(BAND_LABEL.match(c) for c in head[:-1] if c)
             and bool(MARKS_HEAD.match(ranges[-1] or '')))
 
 
@@ -435,13 +444,16 @@ def _cell_ranges(text, page=None, box=None):
     cell is read by the ranges it sets apart on the page, each the numbers
     it prints: "3", "2", "1 > 0". A sub-range of more than two numbers is
     not read, and its ask stops."""
-    tokens = re.findall(r'\d+|>', ''.join(GLYPHMAP.get(ch, ch) for ch in text))
+    # 2010 writes its ranges with dashes ("20 - 17", "10 – 8"), and the dash
+    # printed is the one kept
+    tokens = re.findall(r'\d+|[>\-–—]', ''.join(GLYPHMAP.get(ch, ch) for ch in text))
+    arrow = lambda t: t in '>-–—'
     out, i = [], 0
     while i < len(tokens):
-        if tokens[i] != '>' and i + 2 < len(tokens) and tokens[i + 1] == '>' and tokens[i + 2] != '>':
-            out.append(f'{tokens[i]} > {tokens[i + 2]}')
+        if not arrow(tokens[i]) and i + 2 < len(tokens) and arrow(tokens[i + 1]) and not arrow(tokens[i + 2]):
+            out.append(f'{tokens[i]} {tokens[i + 1]} {tokens[i + 2]}')
             i += 3
-        elif tokens[i] != '>' and (i + 1 == len(tokens) or tokens[i + 1] != '>'):
+        elif not arrow(tokens[i]) and (i + 1 == len(tokens) or not arrow(tokens[i + 1])):
             out.append(tokens[i])
             i += 1
         else:
@@ -455,17 +467,17 @@ def _cell_ranges(text, page=None, box=None):
     # either neighbour points at nothing and is dropped.
     words = []
     for w in sorted(page.get_text('words', clip=pymupdf.Rect(box)), key=lambda w: w[0]):
-        for tok in re.findall(r'\d+|>', ''.join(GLYPHMAP.get(ch, ch) for ch in w[4])):
+        for tok in re.findall(r'\d+|[>\-–—]', ''.join(GLYPHMAP.get(ch, ch) for ch in w[4])):
             words.append((w[0], w[2], tok))
     out, i = [], 0
     while i < len(words):
         x0, x1, tok = words[i]
-        if tok == '>':
+        if arrow(tok):
             i += 1
             continue
-        if (i + 2 < len(words) and words[i + 1][2] == '>' and words[i + 2][2] != '>'
+        if (i + 2 < len(words) and arrow(words[i + 1][2]) and not arrow(words[i + 2][2])
                 and words[i + 1][0] - x1 <= 5 and words[i + 2][0] - words[i + 1][1] <= 5):
-            out.append(f'{tok} > {words[i + 2][2]}')
+            out.append(f'{tok} {words[i + 1][2]} {words[i + 2][2]}')
             i += 3
         else:
             out.append(tok)
@@ -543,7 +555,9 @@ def _page_tables(page):
     offsetting every column by one) re-read inside the content columns."""
     out = []
     for table in _read(page):
-        if table.bbox[0] < 40 and table.bbox[2] > page.rect.width - 40:
+        # 2010 Higher prints its label grids page-wide (31 to 565): a grid
+        # read whole is kept whole
+        if table.bbox[0] < 40 and table.bbox[2] > page.rect.width - 40 and not _is_label_grid(table.texts):
             out.extend(_read(page, pymupdf.Rect(60, table.bbox[1], page.rect.width - 40, table.bbox[3])))
         else:
             out.append(table)
@@ -1055,7 +1069,7 @@ def build_sitting(year, level, shipped=None, survey=None):
                 'rubric': rubric,
             })
             card = repair_all(card, where)
-            if old and old['questionText'] != card['questionText']:
+            if old and old['questionText'] != card['questionText'] and cid not in QUESTION_FIXED:
                 raise LaneError(f'{where}: the shipped card\'s question differs from the paper reading')
             words = LIGATURE_WORDS.get(SUBJECT, {})
             flat = json.dumps(card, ensure_ascii=False)
