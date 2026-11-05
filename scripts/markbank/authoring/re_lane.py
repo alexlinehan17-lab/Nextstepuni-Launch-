@@ -93,25 +93,12 @@ class LaneError(Exception):
 # carry as it stands. A held ask gets no card (it stays open in the ledger)
 # until it is ruled on; nothing is guessed in the meantime.
 HOLD = {
-    # (year, level, key): reason. Both asks once held here -- 2019 Higher
+    # (year, level, key): reason. Nothing is held. Ruled 5 Nov: 2019 Higher
     # I(b)(i)'s overlapping ranges and 2018 Higher B(a)(i)'s one range cell
-    # over three bands -- were ruled on 5 Nov: the bands stay as printed and
-    # the panel remembers which band a mark was placed in.
-    #
-    # The 10-mark grids of 2014-2017 print Weak's cell with arrows that point
-    # at nothing. Four still print every mark from 3 down to 0:
-    (2017, 'ol', ('C', None, 'a', None)): 'Weak printed "3 >  2 >  1 > 0"',
-    (2015, 'hl', ('B', None, 'a', 'ii')): 'Weak printed "3 >  2 >  1 > 0"',
-    (2016, 'ol', ('D', None, 'a', None)): 'Weak printed "> 3  > 2 >  1 > 0"',
-    (2014, 'ol', ('A', 2, 'a', None)): 'Weak printed "> 3  > 2  1 >0"',
-    # and seven print no 0 at all ("3  > 2  > 1"): no band offers 0 marks
-    (2016, 'ol', ('A', 2, 'a', None)): 'Weak printed "3  > 2  > 1": no 0',
-    (2016, 'ol', ('A', 3, 'a', None)): 'Weak printed "3  > 2  > 1": no 0',
-    (2016, 'ol', ('B', None, 'b', None)): 'Weak printed "3  > 2  > 1": no 0',
-    (2016, 'ol', ('C', None, 'a', None)): 'Weak printed "3  > 2  > 1": no 0',
-    (2016, 'ol', ('C', None, 'b', None)): 'Weak printed "3  > 2  > 1": no 0',
-    (2014, 'ol', ('A', 3, 'b', None)): 'Weak printed "3  > 2  > 1": no 0',
-    (2014, 'ol', ('B', None, 'b', None)): 'Weak printed "3  > 2  > 1": no 0',
+    # over three bands keep their bands as printed, the panel remembering the
+    # band a mark was placed in; the eleven 2014-2017 10-mark grids whose Weak
+    # cell prints arrows that point at nothing read as the ranges the cell
+    # sets apart, and the seven of them that print no 0 are carded without one.
 }
 HELD = []
 
@@ -226,6 +213,7 @@ class Grid:
         self.rows = rows or [(head, per, times, [b.printed for b in bands])]
         self.row_grid = self.beside_x2 = False
         self.problem = None             # a printed shape the card cannot carry yet: the ask stops
+        self.label_grid = self.no_zero = False
 
     def use(self, k):
         self.head, self.per, self.times, printed = self.rows[k]
@@ -439,11 +427,14 @@ def _is_label_grid(texts):
             and bool(MARKS_HEAD.match(ranges[-1] or '')))
 
 
-def _cell_ranges(text):
+def _cell_ranges(text, page=None, box=None):
     """The ranges one ruled cell prints side by side, read as the scheme writes
     them: a number, or a number "> " a number ("7 > 5  4 > 2  1 > 0" is three).
-    An arrow with no number on one side ("> 3", "3 >"), as some 10-mark grids
-    print, is returned as printed so the ask stops for a ruling."""
+    Some 10-mark grids print arrows that point at nothing ("3 >  2 >  1 > 0",
+    "> 3  > 2  1 >0"). Ruled 5 Nov: the arrows are typography, so the
+    cell is read by the ranges it sets apart on the page, each the numbers
+    it prints: "3", "2", "1 > 0". A sub-range of more than two numbers is
+    not read, and its ask stops."""
     tokens = re.findall(r'\d+|>', ''.join(GLYPHMAP.get(ch, ch) for ch in text))
     out, i = [], 0
     while i < len(tokens):
@@ -454,7 +445,31 @@ def _cell_ranges(text):
             out.append(tokens[i])
             i += 1
         else:
-            return [' '.join(tokens)]               # a dangling arrow: not read
+            break
+    else:
+        return out
+    if page is None or box is None:
+        return [' '.join(tokens)]
+    # By the page: a range is a number, an arrow and a number set close
+    # together (3pt either side, as "1 > 0"); an arrow standing apart from
+    # either neighbour points at nothing and is dropped.
+    words = []
+    for w in sorted(page.get_text('words', clip=pymupdf.Rect(box)), key=lambda w: w[0]):
+        for tok in re.findall(r'\d+|>', ''.join(GLYPHMAP.get(ch, ch) for ch in w[4])):
+            words.append((w[0], w[2], tok))
+    out, i = [], 0
+    while i < len(words):
+        x0, x1, tok = words[i]
+        if tok == '>':
+            i += 1
+            continue
+        if (i + 2 < len(words) and words[i + 1][2] == '>' and words[i + 2][2] != '>'
+                and words[i + 1][0] - x1 <= 5 and words[i + 2][0] - words[i + 1][1] <= 5):
+            out.append(f'{tok} > {words[i + 2][2]}')
+            i += 3
+        else:
+            out.append(tok)
+            i += 1
     return out
 
 
@@ -466,7 +481,7 @@ def _label_grid(page, pno, table, year, level):
         labels.append(label or (labels[-1] if labels else ''))
     bands = []
     for label, text, box in zip(labels, ranges[:-1], range_cells[:-1]):
-        for printed in _cell_ranges(text):
+        for printed in _cell_ranges(text, page, box):
             bands.append(Band(label, printed, _marks_of(printed), None))
     marks_head = ranges[-1]
     nums = [int(n) for n in re.findall(r'\d+', marks_head)]
@@ -474,10 +489,16 @@ def _label_grid(page, pno, table, year, level):
     times = int(m.group(1)) if m else 1
     per = nums[0]
     grid = Grid(pno + 1, table.bbox[1], marks_head, per, times, bands)
+    grid.label_grid = True
     unread = [(b.label, b.printed) for b in bands if not b.marks]
+    marks = sorted({m for b in bands for m in b.marks or []})
     if unread:
         grid.problem = f'band ranges not read: {unread}'
-    elif sorted({m for b in bands for m in b.marks}) != list(range(per + 1)):
+    elif marks == list(range(1, per + 1)):
+        # ruled 5 Nov: a grid that prints no 0 ("3  > 2  > 1") is carded as
+        # printed; an answer that earns nothing is simply left unplaced
+        grid.no_zero = True
+    elif marks != list(range(per + 1)):
         grid.problem = 'the printed ranges leave a gap: ' + ', '.join(f'{b.label} {b.printed}' for b in bands)
     return grid
 
@@ -641,7 +662,7 @@ def grid_problem(grid):
     2-3; 2018 Higher B(a)(i)'s one "1 ↑ 0" cell beside three bands): the
     student places the answer in the band they judge it fits."""
     marks = sorted({m for b in grid.bands for m in b.marks})
-    if marks != list(range(grid.per + 1)):
+    if marks != list(range(0 if not grid.no_zero else 1, grid.per + 1)):
         return f'bands cover {marks} not 0..{grid.per}'
     return None
 
@@ -750,6 +771,61 @@ def read_shared_grid(year, level):
     return found[0] if found else None
 
 
+# ── the Question Descriptor table (2014-2017) ───────────────────────────────
+# Each 2014-2017 scheme prints, sideways near its end, a "QUESTION DESCRIPTOR"
+# table: seven bands (EXCELLENT ... NO GRADE) by four criteria, captioned "In
+# relation to what is being assessed in the Higher Level Marking Criteria for
+# each question". The caption is the printed link to every question's grid,
+# so a grid band takes the table's descriptors by its printed label -- only
+# where that label names ONE band of the grid. The grids' "Weak" names three
+# ranges, and the table prints no ranges to tie them to its WEAK, VERY WEAK
+# and NO GRADE, so those bands keep label and range only (ruled 5 Nov).
+QD_CAPTION = re.compile(r'In relation to what is being assessed in the (?:Higher|Ordinary) Level '
+                        r'Marking Criteria for each question', re.I)
+
+
+def read_descriptor_table(year, level):
+    doc = pymupdf.open(os.path.join(schemes_dir(), f'{year}-{level}.pdf'))
+    for pno, page in enumerate(doc):
+        if not QD_CAPTION.search(ws(page.get_text())):
+            continue
+        for t in page.find_tables(strategy=STRATEGY).tables:
+            if not _rotated(page, t.bbox):
+                continue
+            lines = []
+            for b in page.get_text('dict', clip=pymupdf.Rect(t.bbox))['blocks']:
+                for line in b.get('lines', []):
+                    text = ''.join(s['text'] for s in line['spans'])
+                    if text.strip() and tuple(round(x, 2) for x in line['dir']) == (0.0, 1.0):
+                        lines.append((pymupdf.Rect(line['bbox']), text))
+            grid = []                   # the page's rows: the table's columns
+            for row in t.rows:
+                cells = []
+                for c in row.cells:
+                    rect = pymupdf.Rect(c) if c else None
+                    inside = [] if rect is None else sorted(
+                        [(r, x) for r, x in lines if rect.contains(pymupdf.Point((r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2))],
+                        key=lambda z: (-z[0].x1, z[0].y0))
+                    cells.append(ws(' '.join(x for _, x in inside)))
+                grid.append(cells)
+            width = len(grid[0])
+            table = [[grid[c][width - 1 - r] for c in range(len(grid))] for r in range(width)]
+            if not re.match(r'QUESTION\s+DESCRIPTOR', table[0][0] or '', re.I):
+                continue
+            labels = table[0][1:]
+            if any(re.search(r'\d', ' '.join(r[1:])) for r in table[1:]):
+                raise LaneError(f'{year} {level} p{pno + 1}: the descriptor table prints numbers; look again')
+            bands = {}
+            for k, label in enumerate(labels):
+                bands[label.upper()] = [f'{r[0]}: {r[k + 1]}' for r in table[1:] if r[k + 1]]
+            folio = next((m.group(1) for b in page.get_text('blocks')
+                          for m in [re.fullmatch(r'(?:Page\s+)?(\d{1,2})', ws(b[4]))] if m), None)
+            if folio is None:
+                raise LaneError(f'{year} {level} p{pno + 1}: no printed page number on the descriptor table')
+            return {'page': pno + 1, 'folio': folio, 'bands': bands}
+    return None
+
+
 CODE_MC = re.compile(r'^Code\s+MC\s*(?:[x×]\s*(\d))?\s+in\b')
 
 
@@ -826,6 +902,7 @@ def build_sitting(year, level, shipped=None, survey=None):
         raise LaneError(f'{year} {level}: scheme asks {sorted(map(str, set(keys) ^ set(P.asks)))} '
                         f'do not pair with the paper')
     grids = read_grids(year, level)
+    descriptors = read_descriptor_table(year, level) if any(g.label_grid for g in grids) else None
     shared = read_shared_grid(year, level) if not grids else None
     if shared is None and len(grids) != len(asks):
         raise LaneError(f'{year} {level}: {len(grids)} band grids for {len(asks)} asks: {grids}')
@@ -846,6 +923,18 @@ def build_sitting(year, level, shipped=None, survey=None):
                     raise LaneError(f'{where}: its grid is on p{grid.page}, outside its block '
                                     f'(p{head_page}-{next_page})')
                 last_page = grid.last
+            # A label grid's bands take the Question Descriptor table's cells by
+            # their printed label, where the label names one band of the grid.
+            desc_note = None
+            if grid.label_grid and descriptors:
+                counts = collections.Counter(b.label.upper() for b in grid.bands)
+                for b in grid.bands:
+                    if counts[b.label.upper()] == 1 and b.label.upper() in descriptors['bands']:
+                        b.descriptor = descriptors['bands'][b.label.upper()]
+                if any(b.descriptor for b in grid.bands):
+                    desc_note = (f"Band descriptors from the scheme's Question Descriptor table (page "
+                                 f"{descriptors['folio']}). The table prints no ranges, so the three Weak "
+                                 f"bands carry none.")
             # A row grid prints no marks head: its top range is the per-answer
             # tariff, and the ask's head says how many answers ("20Mx2"); an "x2"
             # printed beside the grid must agree.
@@ -932,12 +1021,16 @@ def build_sitting(year, level, shipped=None, survey=None):
             }
             if other_way:
                 rubric['otherWay'] = other_way
+            if grid.no_zero:
+                rubric['noZero'] = True
             if ceilings:
                 rubric['ceilings'] = ceilings
             rubric['directions'] = directions
-            rubric['markingGuideNote'] = ''.join(n + ' ' for n in (note, shared_note) if n) + \
+            zero_note = "The scheme's grid prints no 0 range." if grid.no_zero else None
+            rubric['markingGuideNote'] = ''.join(n + ' ' for n in (note, shared_note, desc_note, zero_note) if n) + \
                 (MARKING_GUIDE_WAYS if other_way else MARKING_GUIDE_X if grid.times > 1 else MARKING_GUIDE)
-            rubric['schemePages'] = sorted({head_page, grid.page} | set(range(head_page, last_page + 1)))
+            rubric['schemePages'] = sorted({head_page, grid.page} | set(range(head_page, last_page + 1))
+                                           | ({descriptors['page']} if desc_note else set()))
             rubric['schemeFileid'] = f'LC223{LEVEL_LETTER[level]}LP000EV.pdf'
             card = {
                 'id': cid, 'subjectId': SUBJECT, 'source': 'sec', 'kind': 'rubric',
