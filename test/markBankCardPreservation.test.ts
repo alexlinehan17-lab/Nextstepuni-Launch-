@@ -94,6 +94,7 @@ import ordinary2010P1 from '../components/MarkBank/cards/irish/ordinary-2010-p1-
 import ordinary2010P2 from '../components/MarkBank/cards/irish/ordinary-2010-p2-authored.json';
 import higher2010Aural from '../components/MarkBank/cards/irish/higher-2010-aural-authored.json';
 import higher2010P1 from '../components/MarkBank/cards/irish/higher-2010-p1-authored.json';
+import higher2010P2 from '../components/MarkBank/cards/irish/higher-2010-p2-authored.json';
 import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
@@ -246,6 +247,7 @@ const addedIrishRoutes = new Set([
   ...higher2011P2.cards.map(card => card.id),
   ...higher2010Aural.cards.map(card => card.id),
   ...higher2010P1.cards.map(card => card.id),
+  ...higher2010P2.cards.map(card => card.id),
 ]);
 
 // Paper-reviewed Ordinary additions are tracked the same way beside the frozen

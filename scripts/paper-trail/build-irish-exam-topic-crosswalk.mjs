@@ -30,7 +30,7 @@ const RUNTIME_PATH = path.join(ROOT, 'data/examTopics/irish-runtime.json');
 const CURRICULUM_PATH = path.join(ROOT, 'data/examTopics/irish-curriculum-crosswalk.json');
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
-const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json', 'ordinary-2026-p2-authored.json', 'higher-2025-p2-authored.json', 'ordinary-2025-p2-authored.json', 'ordinary-2024-p2-authored.json', 'higher-2023-p2-authored.json', 'ordinary-2023-p2-authored.json', 'ordinary-2022-p2-authored.json', 'higher-2022-p2-authored.json', 'higher-2021-p2-authored.json', 'ordinary-2021-p2-authored.json', 'higher-2020-p1-authored.json', 'higher-2020-p2-authored.json', 'ordinary-2020-p1-authored.json', 'ordinary-2020-p2-authored.json', 'higher-2019-p1-authored.json', 'higher-2019-p2-authored.json', 'ordinary-2019-p1-authored.json', 'ordinary-2019-p2-authored.json', 'higher-2018-p1-authored.json', 'higher-2018-p2-authored.json', 'ordinary-2018-p1-authored.json', 'ordinary-2018-p2-authored.json', 'higher-2017-p1-authored.json', 'higher-2017-p2-authored.json', 'ordinary-2017-p1-authored.json', 'ordinary-2017-p2-authored.json', 'higher-2016-p1-authored.json', 'higher-2016-p2-authored.json', 'ordinary-2016-p1-authored.json', 'ordinary-2016-p2-authored.json', 'higher-2015-p1-authored.json', 'higher-2015-p2-authored.json', 'ordinary-2015-p1-authored.json', 'ordinary-2015-p2-authored.json', 'higher-2014-p1-authored.json', 'higher-2014-p2-authored.json', 'ordinary-2014-p1-authored.json', 'ordinary-2014-p2-authored.json', 'higher-2013-p1-authored.json', 'higher-2013-p2-authored.json', 'ordinary-2013-p1-authored.json', 'ordinary-2013-p2-authored.json', 'higher-2012-p1-authored.json', 'higher-2012-p2-authored.json', 'ordinary-2012-p1-authored.json', 'ordinary-2012-p2-authored.json', 'ordinary-2011-aural-authored.json', 'ordinary-2011-p1-authored.json', 'ordinary-2011-p2-authored.json', 'higher-2011-aural-authored.json', 'higher-2011-p1-authored.json', 'higher-2011-p2-authored.json', 'ordinary-2010-aural-authored.json', 'ordinary-2010-p1-authored.json', 'ordinary-2010-p2-authored.json', 'higher-2010-aural-authored.json', 'higher-2010-p1-authored.json']
+const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json', 'ordinary-2026-p2-authored.json', 'higher-2025-p2-authored.json', 'ordinary-2025-p2-authored.json', 'ordinary-2024-p2-authored.json', 'higher-2023-p2-authored.json', 'ordinary-2023-p2-authored.json', 'ordinary-2022-p2-authored.json', 'higher-2022-p2-authored.json', 'higher-2021-p2-authored.json', 'ordinary-2021-p2-authored.json', 'higher-2020-p1-authored.json', 'higher-2020-p2-authored.json', 'ordinary-2020-p1-authored.json', 'ordinary-2020-p2-authored.json', 'higher-2019-p1-authored.json', 'higher-2019-p2-authored.json', 'ordinary-2019-p1-authored.json', 'ordinary-2019-p2-authored.json', 'higher-2018-p1-authored.json', 'higher-2018-p2-authored.json', 'ordinary-2018-p1-authored.json', 'ordinary-2018-p2-authored.json', 'higher-2017-p1-authored.json', 'higher-2017-p2-authored.json', 'ordinary-2017-p1-authored.json', 'ordinary-2017-p2-authored.json', 'higher-2016-p1-authored.json', 'higher-2016-p2-authored.json', 'ordinary-2016-p1-authored.json', 'ordinary-2016-p2-authored.json', 'higher-2015-p1-authored.json', 'higher-2015-p2-authored.json', 'ordinary-2015-p1-authored.json', 'ordinary-2015-p2-authored.json', 'higher-2014-p1-authored.json', 'higher-2014-p2-authored.json', 'ordinary-2014-p1-authored.json', 'ordinary-2014-p2-authored.json', 'higher-2013-p1-authored.json', 'higher-2013-p2-authored.json', 'ordinary-2013-p1-authored.json', 'ordinary-2013-p2-authored.json', 'higher-2012-p1-authored.json', 'higher-2012-p2-authored.json', 'ordinary-2012-p1-authored.json', 'ordinary-2012-p2-authored.json', 'ordinary-2011-aural-authored.json', 'ordinary-2011-p1-authored.json', 'ordinary-2011-p2-authored.json', 'higher-2011-aural-authored.json', 'higher-2011-p1-authored.json', 'higher-2011-p2-authored.json', 'ordinary-2010-aural-authored.json', 'ordinary-2010-p1-authored.json', 'ordinary-2010-p2-authored.json', 'higher-2010-aural-authored.json', 'higher-2010-p1-authored.json', 'higher-2010-p2-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards)
   .filter(card => card.reviewedAt && card.atlasQuestionId);
 const reviewedTaskKeys = new Set(reviewedHigherTasks.map(card => card.year + '|' + card.paperFileid + '.pdf|' + card.atlasQuestionId));
@@ -576,7 +576,7 @@ for (const paper of papers) {
         if (reviewedTaskKeys.has(paper.year + '|' + paper.fileid + '|' + n)) continue;
         // 2010-2011 Ordinary Paper 2 maps print no numbered question: a numbered one read back is an answer-map parent the
         // reviewed-task pass added, never an Atlas question.
-        if (paper.year <= 2011 && paper.level === 'ordinary') continue;
+        if (source.addedParent || (paper.year <= 2011 && paper.level === 'ordinary')) continue;
         let baseTopicIds;
         if (n === '1') baseTopicIds = [ids.reading];
         else if (n === '2') baseTopicIds = paper.level === 'higher' ? [H.prose] : [O.prose, O.folktale];
@@ -812,6 +812,9 @@ for (const card of reviewedHigherTasks) {
   addQuestion(paper, {
     n: card.atlasQuestionId,
     label: card.questionRef.replace(/^\d{4} [HO]L (?:Paper [12] )?/, ''),
+    // A reviewed card keyed as the paper's own section (2010-2011 Higher Paper 2's P-A, P-B, F-A, F-B) keeps the reference
+    // headings that section answered, as a reviewed Foundation task does.
+    referenceSlots: existing?.referenceSlots ?? [],
     baseTopicIds,
     anchor: { pP: card.reviewedPaperPages[0], pY: [0, 1],
       paperRegion: card.reviewedPaperPages.map(p => ({ p, r: [0, 0, 1, 1] })),
@@ -1194,8 +1197,8 @@ function rootReviewedTasks(paper, artifact, input) {
   // function added; rebuild them every run so the output does not depend on the last one.
   const own = new Set(artifact.q.map(q => q.n));
   // So does a 2010-2011 printed question this function added (the paper's own map has none of them), whatever its label.
-  const entries = input.filter(q => !(numeric(q) && !own.has(q.n)
-    && (LITERATURE_PARENTS.some(item => item.label === q.label) || (paper.year <= 2011 && paper.level !== 'foundation'))));
+  const entries = input.filter(q => !(numeric(q) && (q.addedParent || (!own.has(q.n)
+    && (LITERATURE_PARENTS.some(item => item.label === q.label) || (paper.year <= 2011 && paper.level !== 'foundation'))))));
   const printed = () => entries.filter(numeric);
   const byLabel = test => printed().find(q => test.test(q.label ?? ''));
   const added = [];
@@ -1256,7 +1259,8 @@ function rootReviewedTasks(paper, artifact, input) {
     // The 2010-2011 section anchors are page jumps, not always on the question's own page: the printed question starts on the
     // first page its own tasks are printed on.
     const first = Math.min(...entries.filter(q => q.n.startsWith(item.prefix) && q.paperRegion?.length).map(q => q.paperRegion[0].p));
-    const anchor = { n: item.n, label: item.label, pP: Number.isFinite(first) ? first : section.pP, pY: section.pY, region: [], mode: 'crop', conf: 1, printOrder: 0, children: [] };
+    // addedParent marks it as an answer-map parent rebuilt every run: never read back as one of the paper's own questions.
+    const anchor = { n: item.n, label: item.label, pP: Number.isFinite(first) ? first : section.pP, pY: section.pY, region: [], mode: 'crop', conf: 1, printOrder: 0, children: [], addedParent: true };
     entries.push(anchor); added.push(anchor);
     return anchor;
   };

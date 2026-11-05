@@ -28,14 +28,14 @@
       "higher",
       "ordinary"
     ],
-    "papersWithCards": 89,
-    "papersWithoutCards": 2,
-    "indexedCards": 3537,
+    "papersWithCards": 90,
+    "papersWithoutCards": 1,
+    "indexedCards": 3551,
     "orphanCardIds": [],
     "missingLocalPapers": [],
     "papersWithoutIndexedScheme": [],
     "missingLocalSchemes": [],
-    "papersPendingFullReview": 2,
+    "papersPendingFullReview": 1,
     "componentsWithSourceGaps": [
       "2010|foundation|LC001BLPA00IV.pdf"
     ]
@@ -9763,18 +9763,43 @@
         "pages": 32,
         "sha256": "e304dd29af73f46d972385ce1f625bce88a47a20010e63e2853c92ad3fbe0be5"
       },
-      "markBankCardIds": [],
+      "markBankCardIds": [
+        "irish-2010-hl-p2-prose-1a",
+        "irish-2010-hl-p2-prose-1b",
+        "irish-2010-hl-p2-extra-2a-a",
+        "irish-2010-hl-p2-extra-2a-b",
+        "irish-2010-hl-p2-extra-2b-a",
+        "irish-2010-hl-p2-extra-2b-b",
+        "irish-2010-hl-p2-extra-2c-a",
+        "irish-2010-hl-p2-extra-2c-b",
+        "irish-2010-hl-p2-extra-2d-a",
+        "irish-2010-hl-p2-extra-2d-b",
+        "irish-2010-hl-p2-poetry-3a",
+        "irish-2010-hl-p2-poetry-3b",
+        "irish-2010-hl-p2-poetry-3c",
+        "irish-2010-hl-p2-history-4"
+      ],
       "atlasQuestionIds": [
+        "X",
         "P-A",
         "P-B",
+        "X-2A-a",
+        "X-2A-b",
+        "X-2B-a",
+        "X-2B-b",
+        "X-2C-a",
+        "X-2C-b",
+        "X-2D-a",
+        "X-2D-b",
         "F-A",
         "F-B",
-        "X"
+        "F-C",
+        "X-4"
       ],
-      "questionCoverage": "missing-from-mark-bank",
-      "fullVisualReview": "pending",
-      "partAndSelectionReconciliation": "pending",
-      "bankAtlasTaskParity": "pending"
+      "questionCoverage": "reviewed",
+      "fullVisualReview": "complete",
+      "partAndSelectionReconciliation": "complete",
+      "bankAtlasTaskParity": "complete"
     },
     {
       "key": "2010|higher|LC001ALPA00IV.pdf",

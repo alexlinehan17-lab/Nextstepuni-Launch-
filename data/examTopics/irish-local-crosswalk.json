@@ -28,15 +28,15 @@
     "referenceAnomalyAssociations": 2,
     "matchedLocalCardLinks": 742,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 4258,
-    "distinctStudentFacingQuestions": 4258,
+    "localPhysicalMappings": 4268,
+    "distinctStudentFacingQuestions": 4268,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 3572,
+    "retainedLocalQuestions": 3582,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 3972,
+    "newlyAddedPhysicalMappings": 3982,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -14486,9 +14486,22 @@
       "fileid": "LC001ALP200IV.pdf",
       "paperKey": "p2",
       "kind": "p2",
+      "n": "X",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
       "n": "P-A",
       "topicIds": [
-        "irish-higher-studied-prose-pros-roghnach"
+        "irish-higher-prescribed-prose-archive"
       ],
       "provenance": "retained-local"
     },
@@ -14512,9 +14525,113 @@
       "fileid": "LC001ALP200IV.pdf",
       "paperKey": "p2",
       "kind": "p2",
+      "n": "X-2A-a",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-2A-b",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-2B-a",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-2B-b",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-2C-a",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-2C-b",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-2D-a",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-2D-b",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
       "n": "F-A",
       "topicIds": [
-        "irish-higher-studied-poetry-filiocht-roghnach"
+        "irish-higher-prescribed-poetry-archive"
       ],
       "provenance": "retained-local"
     },
@@ -14538,7 +14655,20 @@
       "fileid": "LC001ALP200IV.pdf",
       "paperKey": "p2",
       "kind": "p2",
-      "n": "X",
+      "n": "F-C",
+      "topicIds": [
+        "irish-higher-studied-poetry-filiocht-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2010,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4",
       "topicIds": [
         "irish-higher-historic-additional-literature"
       ],
