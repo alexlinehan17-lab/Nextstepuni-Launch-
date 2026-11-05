@@ -709,6 +709,19 @@ SHORT_ASKS = {
     ('engineering', 2013, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism photographs, '
                                                    'under "Name and describe the operation of any one of the mechanisms '
                                                    'shown."'),
+    # 2010 OL, each opened on its page (2026-11-05).
+    **{('engineering', 2010, 'ol', k): (t, w) for k, t, w in (
+        ('Q2(b)(iii)', 'Brass,', 'p3: the alloy "(iii) Brass," in "(i) Soft solder, (ii) Stainless steel, (iii) Brass, '
+                                 '(iv) Bronze." under "Select any three from the alloys listed below and state the '
+                                 'metals used to produce each:"'),
+        ('Q5(c)(iii)', 'PVC,', 'p4: the term "(iii) PVC," in "(i) Thermosetting plastic, (ii) Elastic memory, (iii) '
+                               'PVC, (iv) Former." under "Describe any three of the following terms associated with '
+                               'plastic technology:"'),
+        ('Q6(b)(ii)', 'Feed,', 'p5: the term "(ii) Feed," in "(i) Chuck key, (ii) Feed, (iii) Swarf, (iv) Clearance '
+                               'angle." under "Explain any three of the following in relation to machining:"'),
+        ('Q6(b)(iii)', 'Swarf,', 'p5: the term "(iii) Swarf," in "(i) Chuck key, (ii) Feed, (iii) Swarf, (iv) '
+                                 'Clearance angle." under "Explain any three of the following in relation to '
+                                 'machining:"'))},
     # 2010 HL, each opened on its page (2026-11-05).
     **{('engineering', 2010, 'hl', f'Q1(a)({r})'): ('', f'p3: the caption "({r})" under the {n} of three safety signs, '
                                                        'under "State the purpose of any two of the safety signs shown."')
@@ -872,12 +885,12 @@ SHORT_ASKS = {
 
 # A paper whose question marks add up to a different total from its sitting's
 # other years because its FORMAT differs, each total checked on the paper's
-# own question heads. Engineering Ordinary 2011-2019 print Question 1 at
+# own question heads. Engineering Ordinary 2010-2019 print Question 1 at
 # "(65 marks)" and Questions 2-7 at "(45 marks)" (335), where 2021 on print
 # seven questions at 50 (350). The checksum stands down only while the reader
 # sums exactly the printed total.
-PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2011, 2012, 2013, 2014, 2015, 2016, 2017,
-                                                           2018, 2019)}
+PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2010, 2011, 2012, 2013, 2014, 2015, 2016,
+                                                           2017, 2018, 2019)}
 
 
 def short_ask_ok(subject, year, level, flag):
@@ -1116,12 +1129,12 @@ TRAILING_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?
 # question's first: 2015 OL Engineering page 3 reads "(d) Name the metals used
 # to produce each of the alloys listed below: (i) Brass, (ii) Solder. Question
 # 3. (45 marks) (a) Explain any two of the following: ..." as one block, and
-# page 4 the same for Question 5; 2011, 2012, 2013 and 2014 OL do it for Questions 3 and 5 as
+# page 4 the same for Question 5; 2010, 2011, 2012, 2013 and 2014 OL do it for Questions 3 and 5 as
 # well. Neither head was ever at a block start, both 45s were dropped, and each
 # paper summed to 245 over five questions where it prints 335 over seven.
 # Every head in such a block is read, with the tariff printed straight after
 # it. Keyed by sitting, read for those sittings alone.
-INLINE_HEAD_MARKS = {('engineering', y, 'ol') for y in (2011, 2012, 2013, 2014, 2015)}
+INLINE_HEAD_MARKS = {('engineering', y, 'ol') for y in (2010, 2011, 2012, 2013, 2014, 2015)}
 INLINE_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?\)', re.I)
 
 

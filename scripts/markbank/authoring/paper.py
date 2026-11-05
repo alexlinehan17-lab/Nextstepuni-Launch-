@@ -763,6 +763,12 @@ STRIP_SET_PAGES = {
     # read as (b)'s romans (census Q6(b)(iv), a part the paper does not print,
     # and roman-gap Q6(b)). Read line by line they fall under (a).
     ('engineering', 2011, 'ol'): {'2011-ol-paper.pdf': (5,)},
+    # 2010 OL Engineering page 3: Question 3's head and (a) share one block
+    # with Question 2's (d), and (a)'s two romans "(i) soften copper ...;" and
+    # "(ii) reduce the hardness ..." sit inside it indented, where the reader
+    # does not split them (census Q3(a), one leaf for two asks). Read line by
+    # line they are (a)(i) and (a)(ii).
+    ('engineering', 2010, 'ol'): {'2010-ol-paper.pdf': (3,)},
 }
 
 
