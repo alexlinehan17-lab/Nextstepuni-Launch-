@@ -55,6 +55,12 @@ const MARK_AS = /(?:^|\bagus\s+|[.;:]\s+|-(?=an\s))((?:an|na)\s[^.;:]*?)\s+a mha
 const LADDER = /(\d+)\s*phointe eolais ag teastáil\s*\(\s*(\d+)\s*m?h?arc an ceann ar an g?c?[ée]ad\s+(\S+)\s+phointe eolais(?:\s*\+\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais eile)?\.?\s*\)/i;
 const NOTE = /(?<=^|\s|\()(?:Nóta:|Ní mór(?=\s)|Is leor(?=\s)|Caithfidh(?=\s)|Bainfear(?=\s)|Gearrfar(?=\s)|Glacfar(?=\s)|Tabharfar(?=\s)|Mura mbíonn(?=\s)|Cuir lúibíní(?=\s)|Dá bharr sin(?=\s)|Gan tréith(?=\s)|Tá [^\s]+ mharc ag gabháil(?=\s)|Sampla cruinn gan(?=\s)|Is samplaí de fhreagraí(?=\s)|Léirigh na marcanna(?=\s)|Ag bun(?=\s))[^•{}¶]*?(?:[.?!](?=\s|\)|$)|(?=\s\(?(?:i|ii|iii|iv|v)\)\s|\sNóta:|\sTreoir:|\s•|\s¶|\s\(\d+\s*m?h?arc\)|\s\{\d|$))/g;
 const DEDUCTION = /\[Gaeilge lochtach:[^\]]*\]/g;
+/** "Nóta: 1. Mura bhfuil an téama luaite … (3+3) 2. Téama luaite (2 mharc) agus … (2+2). 3. Gan an téama luaite … = 0" (2015
+ *  Ordinary 3A(a)(i)): a numbered note runs through its numbered items to the next sub-question; NOTE alone stops at "1.". */
+const NUMBERED_NOTE = /(?<=^|\s)Nóta:\s*1\.\s[^•{}¶]*?\s2\.\s[^•{}¶]*?(?=\s\(?(?:i|ii|iii|iv|v)\)\s|\s•|\s¶|$)/g;
+/** "Is maith / Ní maith = (1 mharc) + dhá fháth = (4 mharc + 4 mharc)" (2015 Ordinary 3A and 3B (iii)): a price printed in
+ *  brackets after its "=" is that phrase's price, not a sub-question's tariff. */
+const BRACKETED_PRICE = /=\s*\(\s*(\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)*)\s*\)/g;
 /** 2015 Higher 6(b) prices each part with an arrow: "Tuairim (2) ► 2 mharc", "Cúis 1 (2 mharc) + Sampla 1 (3 mharc) ► 5 mharc".
  *  Each named piece is a row at its bracketed price, where the pieces add up to the arrow's. */
 const ARROW = /([A-ZÁÉÍÓÚ][^\s•¶=►(){}.:;?!]*(?:\s[^\s•¶=►(){}.:;?!]+){0,3}?)\s*\((\d+)(?:\s*(m?h?arc))?\)(?:\s*\+\s*([A-ZÁÉÍÓÚ][^\s•¶=►(){}.:;?!]*(?:\s[^\s•¶=►(){}.:;?!]+){0,3}?)\s*\((\d+)\s*(m?h?arc)\))?\s*►\s*(\d+)\s*(m?h?arc)\b/g;
@@ -78,6 +84,11 @@ const POINT_BAND_HEADER = /\bCatagóir(?:\s+Pointe eolais \d+\s*\(\d+\s*m?h?arc\
 /** The Gaeilge criterion's descriptor table, printed after each Eolas table: "(5 mharc) Sárchumas … Cumas lag/an-lag … (gramadach, …)". */
 const GAEILGE_TABLE = /(?:Gaeilge\s*)?\(\d+\s*m?h?arc\)\s*Sárchumas[\s\S]*?Cumas lag\/an-lag[^.•(]*(?:\([^)]*\))?/g;
 const WORDS: Record<string, number> = { aon: 1, amháin: 1, dá: 2, dhá: 2, trí: 3, ceithre: 4, cúig: 5, sé: 6 };
+/** "5 phointe eolais: 7 marc an ceann ar thrí phointe eolais agus 2 mharc ar an dá cheann eile." (2015 Ordinary 2A) and "5 phointe
+ *  eolais: 7 marc ar an gcéad dá phointe eolais, 5 mharc ar an tríú pointe eolais agus 2 mharc ar an dá cheann eile." (2B): the
+ *  points the answer wants and each clause's price per point, read clause by clause (SHARE). */
+const POINT_SHARES = /(\d+)\s*phointe eolais:\s*([^.]*?\bcheann eile)\./i;
+const SHARE = /^(\d+)\s*m?h?arc (?:an ceann )?ar (?:an\s+)?(?:g?c[ée]ad\s+)?(?:(\S+)\s+(?:phointe eolais|cheann eile)|tríú pointe eolais)$/i;
 
 /** What `text` adds to an already placed row's `label` ("Ainm an fhile" → "Ainm an fhile = Caitlín Maude": "Caitlín
  *  Maude"), or undefined when it is not that row. Read past a séimhiú the scheme drops ("Ainm an file = …"). */
@@ -98,6 +109,18 @@ const cumulative = (values: number[]): number[] => {
   return out;
 };
 const range = (marks: number) => Array.from({ length: marks + 1 }, (_, index) => index);
+/** Each point's price in print order, or undefined unless every clause reads and the clauses count the printed number of points. */
+const pointShares = (match: RegExpExecArray): number[] | undefined => {
+  const values: number[] = [];
+  for (const clause of match[2].split(/,\s*|\s+agus\s+/)) {
+    const share = SHARE.exec(clause.trim());
+    if (!share) return undefined;
+    const count = share[2] === undefined ? 1 : WORDS[share[2].toLowerCase()] ?? WORDS[unlenite(share[2]).toLowerCase()];
+    if (!count) return undefined;
+    values.push(...Array(count).fill(Number(share[1])));
+  }
+  return values.length === Number(match[1]) ? values : undefined;
+};
 const stripMarker = (value: string) => tidy(value.replace(/^(?:\d\.\s*)?(?:\(?[a-f]\)\s*)?(?:\(\s*(?:i|ii|iii|iv|v)\s*\)\s*)?/, ''));
 
 interface Draft { prompt?: string; tariff: number; ladder?: number[]; rows: IrishAnswerRow[]; samples: string[]; unpriced?: string }
@@ -124,13 +147,17 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
     }).replace(ARROW_BOX, ' ');
   }
   text = text.replace(DEDUCTION, rule => { directions.push(tidy(rule)); return ' ¶ '; });
+  text = text.replace(BRACKETED_PRICE, '= $1');
   text = text.replace(GAEILGE_TABLE, ' ¶ ');
   text = text.replace(BAND_HEADER, ' ¶ ');
   text = text.replace(POINT_BAND_HEADER, ' ¶ ');
   text = text.replace(FURNITURE, ' ¶ ');
   const bands: string[] = [];
   text = text.replace(BAND_TABLE, table => { bands.push(tidy(table)); return ' ¶ '; });
+  text = text.replace(NUMBERED_NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
   text = text.replace(NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
+  // "Treoir: Ní mór don iarrthóir …" (2015 Ordinary 2B(a)): the note went to the directions above; its heading is not a prompt.
+  text = text.replace(/(?<=^|\s)Treoir:\s*(?=¶)/g, ' ');
   text = text.replace(SPLIT_NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
   text = text.replace(COUNT_NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
   text = text.replace(LIFTED_LINES, note => { directions.push(tidy(note)); return ' ¶ '; });
@@ -252,6 +279,14 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
         const at = match.index! + match[0].indexOf(match[1]);
         tokens.push({ kind: 'row', text: tidy(match[1]), marks: Number(match[2]), steps: range(Number(match[2])), at, end: match.index! + match[0].length });
       }
+    }
+    // The 2015 point shares with nothing else priced: the priced sentence is the criterion's row, in its points' steps
+    // ([0, 7, 14, 21, 23, 25]), only where the points add up to the criterion exactly.
+    const shares = POINT_SHARES.exec(body);
+    const shared = shares && !tokens.some(token => token.kind === 'row') ? pointShares(shares) : undefined;
+    if (shares && shared && shared.reduce((acc, value) => acc + value, 0) === source.totalMarks) {
+      tokens.push({ kind: 'row', text: tidy(shares[0].replace(/\.$/, '')), marks: source.totalMarks, steps: cumulative(shared),
+        at: shares.index, end: shares.index + shares[0].length });
     }
     tokens.sort((a, b) => a.at - b.at);
     // "Aidhm 1 + Forbairt = 6 mharc   Aidhm a lua = 2 mharc + Forbairt = 4 mharc" (2016 Higher A 6(b)): a priced line followed

@@ -66,10 +66,18 @@ const RULE = /^(?:(?:an\s+)?(?:chéad|dara|tríú|ceathrú)\s.*\s|[A-ZÁÉÍÓÚ
 /** "Aon dá cheann de na rudaí ón liosta thíos = 3 mharc + 2 mharc", "2 cheann ón liosta = 3 mharc + 2 mharc" (2017 Ordinary
  *  Reading A 2(a), A 5(b), B 5(b)): how the list after it is priced, a rule, never an answer. */
 const LIST_RULE = /^(?:Aon\s+)?(?:dá|dhá|\d+)\s+cheann\b[^•=]*\bliosta\b/i;
+/** "2 phointe ag teastáil = 3 mharc + 2 mharc", "Dhá chúis = 3 mharc + 2 mharc" (2015 Ordinary Reading A 3(a), A 5(a)): how many
+ *  points the part wants and how they are priced, a rule as LIST_RULE's line is, never an answer. */
+const COUNT_RULE = /^(?:dá|dhá|\d+)\s+(?:phointe(?:\s+ag teastáil)?|chúis)$/i;
+/** "Gan ach cúis cheart amháin luaite, bronn 3 mharc uirthi.", "Ceann amháin den dá rud (leictreachas nó teas) i gceart, bronn 2
+ *  mharc air" (2015 Ordinary Reading A 4(a), A 5(a); Cluastuiscint Comhrá 1): what a partial answer earns, said as an instruction
+ *  to the examiner after the answers, a direction as "(Má fhágtar … is fiú 3 mharc an freagra.)" is (2017 Ordinary A 3(b)).
+ *  "Bronn 3 mharc ar an gcéad phointe atá ceart agus 2 mharc ar an dara pointe atá ceart" (A 3(a)): the ladder said again. */
+const AWARD_RULE = /(?<=^|\s)(?:(?:Gan ach|Ceann amháin)\s[^•=]*?,\s*bronn\s+\d+\s*m?h?arc\s+(?:air|uirthi)\b\.?|Bronn\s+\d+\s*m?h?arc ar an gcéad [^•=+]*?(?:ceart|cheart)\s+agus\s+\d+\s*m?h?arc ar an dara [^•=+]*?(?:ceart|cheart)\b\.?)/gi;
 /** "Dhá phointe eolais as an liosta seo = 3 mharc + 2 mharc = 5 mharc", "Na pointí seo a leanas:" (2016 Ordinary): the scheme's
  *  heading over a list of accepted points, not one of them. So are "Dhá cheann as na critéir seo a leanas:", "Rud amháin as na
  *  rudaí seo a leanas:" and "An dá phointe eolais seo:" (2015 Higher A 3(a), A 3(b)(i), B 2(a)). */
-const DIRECTION = /^(?:Bainfear\b|Glacfar\b|Ní mór\b|Gearrfar\b|Tabharfar\b|Tá .* mharc ag gabháil\b|Dhá (?:phointe|phíosa) eolais as an liosta seo\b|Na pointí seo a leanas\b|[^•=]{1,60}\bseo a leanas:$|An dá phointe eolais seo:$)/i;
+const DIRECTION = /^(?:Bainfear\b|Glacfar\b|Ní mór\b|Gearrfar\b|Tabharfar\b|Tá .* mharc ag gabháil\b|Dhá (?:phointe|phíosa) eolais as an liosta seo\b|Na pointí seo a leanas\b|[^•=]{1,60}\bseo a leanas:$|An dá phointe eolais seo:$|Dhá rud as na rudaí seo a leanas\b|Dhá phíosa eolais as na pointí seo a leanas\b)/i;
 /** Where the lifted excerpt runs on into the scheme's next section. */
 const FURNITURE = /^(?:Eolas\s*\(|Iomlán|Móriomlán|Cuid [ABC]\b|I gcás\b|\d+ Roinn\b|An Tasc\b|An tÁbhar\b|Marcanna\b|An Mharcáil\b)/i;
 const PROMPT = /^(?:An (?:Chéad|Dara|Tríú) Mhír\s*)?(?:\d+\.\s|\(?[a-z]\)\s|\((?:i|ii|iii|iv)\)\s)/i;
@@ -176,6 +184,7 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
   text = text.replace(/\b\d+\s*m?h?arc ar an gcéad [^+=•]+\+\s*\d+\s*m?h?arc ar an dara [^+=•]+=\s*\d+\s*m?h?arc\b/g, rule => { directions.push(tidy(rule)); return ' '; });
   text = text.replace(/(=\s*\d+\s*m?h?arc\b)\s+nó\s+\d+\s*m?h?arc\b/g, '$1');
   text = text.replace(SUFFICES, note => { directions.push(tidy(note)); return ' '; });
+  text = text.replace(AWARD_RULE, rule => { directions.push(tidy(rule)); return ' '; });
   text = text.replace(/\s+/g, ' ').trim().replace(HEADER, '');
   text = text.replace(NOTE, (_, note: string) => { directions.push(tidy(note)); return ' '; });
   text = text.replace(LANGUAGE_RULE, rule => { directions.push(tidy(rule)); return ' '; });
@@ -270,7 +279,7 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
       // "Aon dá cheann … ón liosta … = 3 mharc + 2 mharc": the list's rule, a direction; its price is the part's ladder where the
       // part has none yet and the price adds up to the part's tariff, and the listed answers after it are claimed by count.
       const listed = splitBullets(segment);
-      if (current && plus && LIST_RULE.test(listed.lead) && listed.bullets.length === 0) {
+      if (current && plus && (LIST_RULE.test(listed.lead) || COUNT_RULE.test(listed.lead)) && listed.bullets.length === 0) {
         directions.push(listed.lead);
         const terms = [Number(answer), ...[...plus.matchAll(/\d+/g)].map(m => Number(m[0]))];
         if (!current.ladder && terms.reduce((a, b) => a + b, 0) === current.tariff) current.ladder = cumulative(terms);

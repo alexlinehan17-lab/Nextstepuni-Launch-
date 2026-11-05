@@ -28,14 +28,14 @@
       "higher",
       "ordinary"
     ],
-    "papersWithCards": 64,
-    "papersWithoutCards": 27,
-    "indexedCards": 2839,
+    "papersWithCards": 65,
+    "papersWithoutCards": 26,
+    "indexedCards": 2854,
     "orphanCardIds": [],
     "missingLocalPapers": [],
     "papersWithoutIndexedScheme": [],
     "missingLocalSchemes": [],
-    "papersPendingFullReview": 27,
+    "papersPendingFullReview": 26,
     "componentsWithSourceGaps": [
       "2010|foundation|LC001BLPA00IV.pdf"
     ]
@@ -6997,7 +6997,23 @@
         "pages": 24,
         "sha256": "48dda60cd9b804a0c7b41dc8e265a05835fff88c9e8dc8564f084fbfe173621d"
       },
-      "markBankCardIds": [],
+      "markBankCardIds": [
+        "irish-2015-ol-p1-listening-a-f1",
+        "irish-2015-ol-p1-listening-a-f2",
+        "irish-2015-ol-p1-listening-b-c1",
+        "irish-2015-ol-p1-listening-b-c2",
+        "irish-2015-ol-p1-listening-c-p1",
+        "irish-2015-ol-p1-listening-c-p2",
+        "irish-2015-ol-p1-composition-a-i",
+        "irish-2015-ol-p1-composition-a-ii",
+        "irish-2015-ol-p1-composition-a-iii",
+        "irish-2015-ol-p1-composition-b-i",
+        "irish-2015-ol-p1-composition-b-ii",
+        "irish-2015-ol-p1-composition-c-i",
+        "irish-2015-ol-p1-composition-c-ii",
+        "irish-2015-ol-p1-composition-d-i",
+        "irish-2015-ol-p1-composition-d-ii"
+      ],
       "atlasQuestionIds": [
         "1",
         "2",
@@ -7006,12 +7022,27 @@
         "W-A",
         "W-B",
         "W-C",
-        "W-D"
+        "W-D",
+        "L-A-F1",
+        "L-A-F2",
+        "L-B-C1",
+        "L-B-C2",
+        "L-C-P1",
+        "L-C-P2",
+        "W-A-i",
+        "W-A-ii",
+        "W-A-iii",
+        "W-B-i",
+        "W-B-ii",
+        "W-C-i",
+        "W-C-ii",
+        "W-D-i",
+        "W-D-ii"
       ],
-      "questionCoverage": "missing-from-mark-bank",
-      "fullVisualReview": "pending",
-      "partAndSelectionReconciliation": "pending",
-      "bankAtlasTaskParity": "pending"
+      "questionCoverage": "reviewed",
+      "fullVisualReview": "complete",
+      "partAndSelectionReconciliation": "complete",
+      "bankAtlasTaskParity": "complete"
     },
     {
       "key": "2015|ordinary|LC001GLP200IV.pdf",
