@@ -630,6 +630,11 @@ export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[
     const price = new RegExp(String.raw`^[^=]{0,200}?=\s*${row.marks}\s*m?h?arc\s*(?:=\s*|\(\s*)(\d+\s*m?h?arc(?:\s*\+\s*\d+\s*m?h?arc)+)`).exec(text.slice(at));
     return price ? price[1].match(/\d+/g)!.map(Number) : undefined;
   };
+  // "Dhá phointe eolais = 4 mharc + 4 mharc" (2025 Higher 4F(iii)): the split printed as the row's own price.
+  const pointsOf = (row: IrishAnswerRow): number[] | undefined => {
+    const price = new RegExp(String.raw`(?:^|\s)${row.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\s*=\s*(\d+\s*m?h?arc(?:\s*\+\s*\d+\s*m?h?arc)+)`).exec(text);
+    return price ? price[1].match(/\d+/g)!.map(Number) : splitOf(row);
+  };
   const stepsFor = (row: IrishAnswerRow): number[] | undefined => {
     const counted = counts.get(row.marks);
     if (counted) return counted;
@@ -644,6 +649,12 @@ export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[
     parts: allocation.parts.map(part => (part.ladder ? part : {
       ...part,
       rows: part.rows.map(row => {
+        // A row the scheme splits into points ("Dhá phointe eolais = 4 mharc + 4 mharc") steps a point at a time; where a band
+        // table prices each of those points in single marks ("Catagóir Marc as 4 Sármhaith 4 … Lag/An-lag 0", 2025 Higher
+        // 4F(iii)), it steps every mark.
+        const split = row.steps && bands.size ? pointsOf(row) : undefined;
+        if (row.steps && split && split.reduce((a, b) => a + b, 0) === row.marks && split.every(value => bands.has(value))
+          && row.steps.join() === cumulative(split).join()) return { ...row, steps: range(row.marks) };
         if (row.steps || row.marks < 2) return row;
         const steps = stepsFor(row);
         return steps && steps.length > 2 ? { ...row, steps } : row;

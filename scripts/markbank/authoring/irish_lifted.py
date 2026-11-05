@@ -308,14 +308,21 @@ PLE_BAND = re.compile(r'Catagóir Plé(?: \((\d+) mharc\))? Marcanna Sármhaith 
                       r'an-mhíchruinn agus an-lochtach (\d+)\s*-\s*(\d+)')
 
 
+# A per-point band table ("Catagóir Marc as 7 Sármhaith 6-7 An-mhaith 5 Maith 4 Measartha 3 Lag/An-lag 0-2", 2024 Higher 4F) is
+# printed after the question's last part like the Plé table, so it can land on (iii) while it prices (ii): its header is the
+# price of the one row it scales. Only a one-column table carrying its values (relift_band_tables puts back lost ones).
+MARC_BAND = re.compile(r'Catagóir Marc as (\d+)(?! Marc as) Sármhaith \d[^A-Za-z]*An-mhaith \d.*?Lag/An-lag (?:\d+\s*[-–]\s*\d+|\d+)')
+
+
 def return_band_tables(card: dict) -> dict:
-    """Return a Plé band table to the criterion whose row it prices: where its host has no row at the table's price and
-    exactly one other criterion of the card does ("Plé … = 11 mharc"), the table moves there, as printed."""
+    """Return a Plé or per-point band table to the criterion whose row it prices: where its host has no row at the table's
+    price and exactly one other criterion of the card does ("Plé … = 11 mharc", "Eolas = 7 marc"), the table moves there, as
+    printed."""
     def priced(criterion, marks):
         return any(re.search(rf'=\s*{marks}\s*mh?arc\b', line) for line in criterion['guidance'])
     for host in card['criteria']:
         for index, line in enumerate(host['guidance']):
-            for table in list(PLE_BAND.finditer(line)):
+            for table in [*PLE_BAND.finditer(line), *MARC_BAND.finditer(line)]:
                 tops = [int(v) for v in re.findall(r'(\d+)\s*-\s*(\d+)|(?<=\s)(\d+)(?=\s)', table.group(0)) for v in v if v]
                 marks = int(table.group(1)) if table.group(1) else max(tops)
                 if priced(host, marks):
@@ -330,9 +337,66 @@ def return_band_tables(card: dict) -> dict:
     return card
 
 
+# A band table priced per point ("Catagóir Marc as 5 Sármhaith 5 An-mhaith 4 Maith 3 Measartha 2 Lag/An-lag 0-1", Higher
+# poetry and 4F): each value sits on a line of its own in the scheme's text, and a lift that drops a bare one- or two-digit
+# line as a page number keeps the band names and loses their marks ("… Sármhaith An-mhaith Maith Measartha Lag/An-lag 0-1").
+TABLE_VALUES = re.compile(r'[\d\s,\-–]+')
+
+
+@lru_cache(maxsize=None)
+def scheme_tables(path: str) -> dict[str, frozenset[str]]:
+    """Each per-point band table the scheme prints, as a lift that drops bare numbers reads it, to the table as printed."""
+    import fitz
+    found: dict[str, set[str]] = {}
+    for page in fitz.open(path):
+        lines = [line.strip() for line in page.get_text().splitlines()]
+        index = 0
+        while index < len(lines):
+            if not lines[index].startswith('Marc as ') or (index and lines[index - 1].startswith('Marc as ')):
+                index += 1
+                continue
+            end = next((k for k in range(index, min(len(lines), index + 40)) if lines[k].startswith('Lag/An-lag')), None)
+            if end is None:
+                index += 1
+                continue
+            stop = end + 1
+            while stop < len(lines) and lines[stop] and TABLE_VALUES.fullmatch(lines[stop]):
+                stop += 1
+            region = [line for line in lines[index:stop] if line]
+            printed = ' '.join(' '.join(region).split())
+            dropped = ' '.join(' '.join(line for line in region if not re.fullmatch(r'\d{1,2}', line)).split())
+            if dropped != printed:
+                found.setdefault(dropped, set()).add(printed)
+            index = stop
+    return {key: frozenset(value) for key, value in found.items()}
+
+
+def relift_band_tables(card: dict) -> dict:
+    """Put back the marks a per-point band table lost in the lift, from the card's own scheme, where the scheme prints that
+    table one way only (coordinator ruling, batch 6). Nothing else in the guidance changes."""
+    # The legacy cards carry no scheme file id: each level's combined scheme is the one file the year prints for it.
+    fileid = card.get('schemeFileid') or {'higher': 'LC001ALP000IV', 'ordinary': 'LC001GLP000IV',
+                                          'foundation': 'LC001BLP000IV'}.get(card.get('level', ''), '')
+    fileid = fileid if not fileid or fileid.endswith('.pdf') else fileid + '.pdf'
+    path = os.path.join(ROOT, 'paper-trail-corpus', 'markingschemes', str(card.get('year')), fileid)
+    if not fileid or not os.path.exists(path):
+        return card
+    # Widest first, and never inside a wider table: "Marc as 4 Sármhaith An-mhaith …" is also the tail of the two-column
+    # "Marc as 5 Marc as 4 Sármhaith An-mhaith …".
+    tables = sorted(((dropped, next(iter(printed))) for dropped, printed in scheme_tables(path).items() if len(printed) == 1),
+                    key=lambda pair: -len(pair[0]))
+    for criterion in card['criteria']:
+        for index, line in enumerate(criterion['guidance']):
+            for dropped, printed in tables:
+                line = re.sub(r'(?<!Marc as \d )(?<!Marc as \d\d )' + re.escape(dropped) + r'(?![\d\-–])', lambda _: printed, line)
+            criterion['guidance'][index] = line
+    return card
+
+
 def scheme_words(cards: list[dict]) -> list[dict]:
     printed_question(cards)
     for card in cards:
+        relift_band_tables(card)
         return_band_tables(card)
     for card in cards:
         text = corpus(card['year'])
