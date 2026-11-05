@@ -12,7 +12,7 @@
  * polices it cannot drift apart.
  */
 
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -233,6 +233,37 @@ export function resolveCompanionFileid(subjectId, year, level, label) {
 }
 
 /**
+ * Design & Communication Graphics: the booklet that PRINTS a section.
+ *
+ * DCG is sat as two booklets under one scheme: Section A (SEC M81A/M80A, one
+ * A3 sheet, "A-1" to "A-4") and Sections B and C together (M81BC/M80BC,
+ * "B-1" to "C-5", its cover reading "Sections B and C (180 marks)"). The
+ * index's labels say so only from 2019, "Section A" and "Section B&C". In
+ * 2012-2018 the second booklet is labelled "Section B", in 2010 "Exam
+ * Paper", and 2011 carries the two labels the wrong way round: the SEC
+ * swapped its component codes that year, so 000 is Section A and 014 is
+ * Sections B and C. Read by label, every Section C card of 2010-2018 resolved
+ * to null and every Section A card of 2011 to the wrong booklet.
+ *
+ * So the booklet is identified by the questions it prints, read from its
+ * anchor file (public/paper-anchors/<year>/<fileid>.json, harvested from the
+ * booklet itself), and only where exactly ONE booklet of the sitting prints
+ * the section. dcg_paper.py identifies the booklets the same way for the
+ * census. Null otherwise, never a guess.
+ */
+const ANCHOR_DIR = resolve(ROOT, 'public', 'paper-anchors');
+function dcgBookletFor(entry, section) {
+  const prints = entry.papers.filter(p => {
+    const f = p.doc?.f;
+    const file = f ? resolve(ANCHOR_DIR, String(entry.year), `${f}.json`) : null;
+    if (!file || !existsSync(file)) return false;
+    const anchor = JSON.parse(readFileSync(file, 'utf8'));
+    return (anchor.q ?? []).some(q => String(q.label ?? '').startsWith(`${section}-`));
+  });
+  return prints.length === 1 ? stripPdf(prints[0].doc.f) : null;
+}
+
+/**
  * The file id of the QUESTION PAPER holding a card's section, or null.
  *
  * Null rather than a guess: a wrong id sends a student to the wrong document,
@@ -241,6 +272,7 @@ export function resolveCompanionFileid(subjectId, year, level, label) {
 export function resolvePaperFileid(subjectId, year, level, section) {
   const entry = paperEntry(subjectId, year, level);
   if (!entry?.papers?.length) return null;
+  if (subjectId === 'dcg') return dcgBookletFor(entry, section);
   // One paper for the year means there is nothing to choose between.
   if (entry.papers.length === 1) return stripPdf(entry.papers[0].doc?.f);
   // Art's separate illustration booklet is indexed as a second "paper" even

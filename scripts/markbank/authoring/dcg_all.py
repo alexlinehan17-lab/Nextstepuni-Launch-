@@ -2,7 +2,11 @@
 """Author every Design & Communication Graphics part the scheme prices.
 
     python3 scripts/markbank/authoring/dcg_all.py --report   # counts, refusals
-    python3 scripts/markbank/authoring/dcg_all.py > scripts/markbank/authored/dcg.json
+    python3 scripts/markbank/authoring/dcg_all.py --write    # authored/dcg.json
+
+--write, never a shell redirect: the generator reads the shipped file for the
+cards edited by hand after generation (SHIPPED_EDITS), and `> dcg.json`
+empties that file before the script can read it.
 
 WHAT A DCG CARD IS. The scheme prices one drawing as a numbered sequence of
 CONSTRUCTION STEPS, each with its own mark:
@@ -55,6 +59,56 @@ from markbank_authoring import anyN                          # noqa: E402
 SUBJECT = 'dcg'
 LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 LEVEL_TOKEN = {'higher': 'hl', 'ordinary': 'ol'}
+# The sittings this deck cards. The census reads every sitting on disk,
+# 2010-2026; the deck grows a sitting at a time, each admitted here once its
+# cards, crops, paper link and Atlas question have been checked. A sitting not
+# yet admitted shows in the ledger as OPEN instead of vanishing behind a window.
+CARDED = {(year, level) for year in range(2019, 2027) for level in ('hl', 'ol')}
+
+# Cards edited by hand after generation, kept exactly as shipped. #294 (27 Oct
+# 2026) cut 2023 Ordinary B-3(c)'s one 13-mark group into the scheme's four
+# priced lines, the first carrying its own printed split, "elevation (2) and
+# plan (2)", as parts. Regenerated, the card would lose that edit.
+SHIPPED_EDITS = ('dcg-2023-ol-b3c',)
+AUTHORED = os.path.join(ROOT, 'scripts', 'markbank', 'authored', f'{SUBJECT}.json')
+
+# The Topic Atlas files every printed question under the syllabus headings it
+# was verified against, question by question. A card must sit under a topic its
+# own Atlas question carries, or a student browsing that topic finds the
+# question and not the card. From the 2010-2018 sittings on, a card whose
+# classified topic is not one of its question's Atlas topics takes the
+# question's primary Atlas topic: 2018 Higher B-3(c) classified as Rotation
+# for the words "true length", inside a question the Atlas files, rightly,
+# under Intersecting Planes. The 2019-2026 cards predate this rule; 77 of them
+# (43 questions) disagree with their Atlas question and are left as shipped
+# until that is decided.
+ATLAS_TAGS = os.path.join(ROOT, 'scripts', 'paper-trail', 'topic-tags', 'tags',
+                          'design-and-communication-graphics.json')
+ATLAS_TOPICS_BEFORE = 2019
+
+
+@functools.lru_cache(maxsize=None)
+def atlas_topics():
+    """{(year, level word, paperKey, n): [primary, secondary...]} for EV papers."""
+    with open(ATLAS_TAGS, encoding='utf-8') as fh:
+        tags = json.load(fh)
+    out = {}
+    for paper in tags:
+        if paper['lang'] != 'ev':
+            continue
+        for q in paper['q']:
+            out[(paper['year'], paper['level'], paper['paperKey'], q['n'])] = \
+                [q['primary']] + ([q['secondary']] if q.get('secondary') else [])
+    return out
+
+
+def atlas_address(section, q):
+    """The Atlas's (paperKey, n) for a printed question: Section A is its own
+    booklet, numbered 1-4; Sections B and C share one, numbered 1-8."""
+    if section == 'A':
+        return 'section-a', str(q)
+    return 'single', str(q if section == 'B' else q + 3)
+
 # MAX_LONG_OPTION_ROWS in types/markBank.ts: the most options any one bounded
 # row may show. A unit longer than this is split by the scheme's OWN named
 # groups, which is the only division of it the SEC printed.
@@ -287,6 +341,10 @@ def author(bind_figures=True):
 
     for paper in census['papers']:
         year, level = paper['year'], paper['level']
+        if (year, level) not in CARDED:
+            refused['this sitting is censused and not yet carded'] += \
+                paper['leafCount']
+            continue
         P = DP.load(year, level, SUBJECT)
         leaves = {tuple(leaf['key']) for leaf in paper['leaves']}
         texts = {ask.key: ask.full_text for ask in P.asks()}
@@ -410,6 +468,15 @@ def author(bind_figures=True):
                 if topic is None:
                     note('files under no syllabus heading', why)
                     continue
+                if year < ATLAS_TOPICS_BEFORE:
+                    tags = atlas_topics().get(
+                        (year, LEVEL_WORD[level]) + atlas_address(section, q))
+                    if not tags:
+                        note('the Topic Atlas lists no question at this '
+                             'address', ref)
+                        continue
+                    if topic not in tags:
+                        topic = tags[0]
                 figure = figures.get((year, level, section, q))
                 if cardlint.NAMES_LETTERS.search(f'{stem} {question}') \
                         and not cardlint.INVITES_DRAWING.search(question):
@@ -481,6 +548,7 @@ def main():
     ap.add_argument('--report', action='store_true')
     ap.add_argument('--all', action='store_true')
     ap.add_argument('--verdicts')
+    ap.add_argument('--write', action='store_true')
     args = ap.parse_args()
 
     cards, refused, examples, verdicts, stats = author()
@@ -507,7 +575,24 @@ def main():
             for e in examples[reason][:80 if args.all else 3]:
                 print(f'            {e}')
         return 0
-    print(json.dumps(cards, ensure_ascii=False, indent=1))
+    with open(AUTHORED, encoding='utf-8') as fh:
+        text = fh.read()
+    if not text.strip():
+        raise SystemExit(f'{AUTHORED} is empty: run with --write, not a shell '
+                         'redirect, which empties the file before it is read')
+    shipped = {c['id']: c for c in json.loads(text)}
+    generated = {c['id'] for c in cards}
+    for cid in SHIPPED_EDITS:
+        assert cid in shipped and cid in generated, f'{cid}: not in both decks'
+    cards = [shipped[c['id']] if c['id'] in SHIPPED_EDITS else c
+             for c in cards]
+    out = json.dumps(cards, ensure_ascii=False, indent=1) + '\n'
+    if args.write:
+        with open(AUTHORED, 'w', encoding='utf-8') as fh:
+            fh.write(out)
+        print(f'wrote {len(cards)} cards to {AUTHORED}')
+    else:
+        sys.stdout.write(out)
     return 0
 
 
