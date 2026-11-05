@@ -289,9 +289,9 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     };
     for (const { card, criteria } of irishCards) for (const criterion of criteria) if (criterion.allocation) checkAllocation(card, criterion);
     const unstructured = (criteria: typeof irishCards[number]['criteria']) => criteria.some(criterion => priced(criterion) && !criterion.allocation);
-    expect(exact).toHaveLength(1536);
+    expect(exact).toHaveLength(1545);
     const structured = exact.filter(({ criteria }) => !unstructured(criteria));
-    expect(structured).toHaveLength(1536);
+    expect(structured).toHaveLength(1545);
 
     // Nothing listening or reading is still prose. The archive review cuts one criterion per printed part, so the five
     // cards that had no rows on main have them: the 2022 Higher Fógra a hAon (tariff lines the text layer broke),

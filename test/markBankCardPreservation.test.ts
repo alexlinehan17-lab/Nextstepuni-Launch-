@@ -89,6 +89,7 @@ import ordinary2011P2 from '../components/MarkBank/cards/irish/ordinary-2011-p2-
 import higher2011Aural from '../components/MarkBank/cards/irish/higher-2011-aural-authored.json';
 import higher2011P1 from '../components/MarkBank/cards/irish/higher-2011-p1-authored.json';
 import higher2011P2 from '../components/MarkBank/cards/irish/higher-2011-p2-authored.json';
+import ordinary2010Aural from '../components/MarkBank/cards/irish/ordinary-2010-aural-authored.json';
 import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
@@ -311,6 +312,7 @@ const addedIrishOrdinaryRoutes = new Set([
   ...ordinary2011Aural.cards.map(card => card.id),
   ...ordinary2011P1.cards.map(card => card.id),
   ...ordinary2011P2.cards.map(card => card.id),
+  ...ordinary2010Aural.cards.map(card => card.id),
 ]);
 
 const decks = [
