@@ -818,9 +818,10 @@ const decks = [
    * 2016 Ordinary's six held 10-mark asks added.
    * 2015 Higher B(a)(ii), held for the 10-mark ruling, added.
    * 2015 Ordinary re-read with the Question Descriptor table; ids kept.
-   * 2014 Higher re-read with the Question Descriptor table; ids kept. */
+   * 2014 Higher re-read with the Question Descriptor table; ids kept.
+   * 2014 Ordinary's three held 10-mark asks added. */
   ['religious-education:higher', RE_HIGHER, 318, '2dbdfa81a7b4743f3e510b311733300d157caa19ce2b8160014330078d2bc2d6'],
-  ['religious-education:ordinary', RE_ORDINARY, 330, '6a3c26abd92e1943204f7a81e366b6c92bf3f649cc48a8221e4adb00f81f88aa'],
+  ['religious-education:ordinary', RE_ORDINARY, 333, '431b968bd18ebcc16129ba951a44fb330db76e07299c625ae7a67a759369955e'],
   /* 2026-09-10: LCVP's Link Modules enrolled, 321 cards, NONE removed or
    * replaced — it is a new subject and this is its first baseline. It ships
    * as ONE deck because the paper is common level: there is no Higher or
@@ -1522,6 +1523,7 @@ describe('Mark Bank card preservation', () => {
     // Religious Education 2015 Higher B(a)(ii) carded: 23,949.
     // Religious Education 2015 Ordinary re-read, 26 ids kept: 23,949.
     // Religious Education 2014 Higher re-read, 19 ids kept: 23,949.
+    // Religious Education 2014 Ordinary, three held asks carded: 23,952.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1538,9 +1540,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_949 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_952 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_949 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_952 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
