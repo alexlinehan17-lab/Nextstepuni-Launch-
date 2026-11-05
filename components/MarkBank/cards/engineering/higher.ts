@@ -576,7 +576,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe briefly the nuclear fission process with reference to: the reactor fuel, the enrichment process and the exponential increase.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 3 + 3"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The nucleus of the Uranium 235 atom is bombarded with neutrons. The “U235” atom absorbs just one of these neutrons into its nucleus. This causes atomic mass to change, and it becomes a compound nucleus as it has added a neutron, it has now become enriched to U236.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "The nucleus of the Uranium 235 atom is bombarded with neutrons. The “U235” atom absorbs just one of these neutrons into its nucleus. This causes its atomic mass to change, and it becomes a compound nucleus as it has added a neutron, it has now become enriched to U236.", marks: null },
     { id: "r-2", kind: "point", verbatim: "The now highly unstable U236 atom becomes unable to maintain its structure, and the nucleus of the atom splits, forming two smaller atoms and releasing a huge amount of energy.", marks: null },
     { id: "r-3", kind: "point", verbatim: "As the Uranium 236 isotope splits, two other elements are formed - 56 protons and 141 neutrons form Barium and the other 36 protons and 92 of the neutrons form Krypton, 3 neutrons are also released during the fission.", marks: null },
     { id: "r-4", kind: "point", verbatim: "These 3 neutrons can then cause fission to occur in 3 more atoms which then allow the exponential increase to 9 atoms to 27 atoms and so on.", marks: null },

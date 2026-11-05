@@ -294,7 +294,7 @@ CARDS = [
              'drawing of it, shown with the answer; "4 + 3 + 3" over them, no paragraph '
              'priced apart, so an ordered split of the paragraphs.',
          topic='eng-3-14', stem=False,
-         lifted=[S(8, 66, 65, 450, 123), S(8, 66, 121, 455, 165), S(8, 66, 163, 455, 207),
+         lifted=[S(8, 66, 65, 460, 123), S(8, 66, 121, 455, 165), S(8, 66, 163, 455, 207),
                  S(8, 66, 205, 450, 236)],
          tariff='orderedSplit', notation='4 + 3 + 3', ladder=10, total=10,
          figure='engineering-2014-HL-scheme-q1p-sol',

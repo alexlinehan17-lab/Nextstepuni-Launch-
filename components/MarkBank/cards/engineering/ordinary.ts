@@ -177,7 +177,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The instrument shown is a vernier calipers (digital).", marks: null },
-    { id: "r-2", kind: "point", verbatim: "The vernier calipers is used for accurately measuring linear outside, inside or depth measurements i.e. diameters, hole sizes or the depth of drilled holes.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The vernier calipers is used for accurately measuring linear outside, inside or depth measurements i.e. shaft diameters, hole sizes or the depth of drilled holes.", marks: null },
     ],
     questionFigure: {
           "candId": "engineering-2014-OL-paper-q1h-crop",
@@ -1551,7 +1551,7 @@ export const CARDS: SecCard[] = [
     questionText: "The three items shown below are manufactured from plastic materials. Describe with the aid of a diagram, one of the manufacturing processes named in 5(a)(i).",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Vacuum forming: Vacuum forming is used to make articles from thermoplastic sheet. The sheet is clamped and a heater raises the temperature of the sheet until it becomes soft and flexible. The mould table is raised and air is from beneath the sheet allowing atmospheric pressure to push down, forcing the sheet to take up the shape of the mould. When the mould table is lowered the vacuumed formed sheet can be removed for finishing.", marks: 9, accepts: ["Blow Moulding: In blow moulding a heated thermoplastic tube called a parison is extruded between the two halves of a split mould. The mould closes around the parison and air is blown into it forcing the parison out against the wall of the mould. The component is allowed to cool before being removed from the opened mould.","Injection moulding: Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly. The mould opens and ejects the part."] },
+    { id: "r-1", kind: "alt", verbatim: "Vacuum forming: Vacuum forming is used to make articles from thermoplastic sheet. The sheet is clamped and a heater raises the temperature of the sheet until it becomes soft and flexible. The mould table is raised and air is removed from beneath the sheet allowing atmospheric pressure to push down, forcing the sheet to take up the shape of the mould. When the mould table is lowered the vacuumed formed sheet can be removed for finishing.", marks: 9, accepts: ["Blow Moulding: In blow moulding a heated thermoplastic tube called a parison is extruded between the two halves of a split mould. The mould closes around the parison and air is blown into it forcing the parison out against the wall of the mould. The component is allowed to cool before being removed from the opened mould.","Injection moulding: Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly. The mould opens and ejects the part."] },
     ],
     questionFigure: {
           "candId": "engineering-2015-OL-paper-q5a-crop",
