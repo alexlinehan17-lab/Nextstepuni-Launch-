@@ -716,12 +716,20 @@ export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[
   const text = guidance.join(' ').replace(/\s+/g, ' ');
   // The examiner's ready reckoner, where the scheme says it governs the answers: "Moltar do scrúdaitheoirí … úsáid a bhaint as
   // an réríomhaire (cf lch 25) agus iad ag teacht ar chinneadh faoi cad is fiú freagra" (2012 Higher, PDF 25 note 3, for the
-  // answers to Ceisteanna 2-4) over "Grádú Marcála sna Ceisteanna … GRÁD 200 160 … 18 … GRÁD 17 16 … 5" (PDF 26). Read from the
-  // card's own section (its criteria), as printed for it: a row priced at one of the table's totals, its criterion's largest,
-  // is judged in single marks (coordinator ruling 2, batch 5: a table the scheme links to the answers is a printed scale).
+  // answers to Ceisteanna 2-4) over "Grádú Marcála sna Ceisteanna … GRÁD 200 160 … 18 A 170 136 … D 80 64 … 8 GRÁD 17 16 … 5 …"
+  // (PDF 26). Read from the card's own section (its criteria), as printed for it: a row priced at one of the table's totals,
+  // its criterion's largest, steps at the marks the table prints for that total, its grades D, C, B and A, and the total
+  // (coordinator, batch 7: never every mark between them); a total with no column in the table is not stepped by it.
   const sectionText = section.join(' ').replace(/\s+/g, ' ');
-  const reckoner = new Set(/úsáid a bhaint as an réríomhaire/.test(sectionText)
-    ? [...sectionText.matchAll(/GRÁD((?:\s+\d+)+)\s+A\b/g)].flatMap(match => match[1].trim().split(/\s+/).map(Number)) : []);
+  const reckoner = new Map<number, number[]>();
+  if (/úsáid a bhaint as an réríomhaire/.test(sectionText)) {
+    for (const block of sectionText.matchAll(/GRÁD((?:\s+\d+)+)\s+A((?:\s+\d+)+)\s+B((?:\s+\d+)+)\s+C((?:\s+\d+)+)\s+D((?:\s+\d+)+)/g)) {
+      const [totals, ...grades] = block.slice(1, 6).map(cells => cells.trim().split(/\s+/).map(Number));
+      if (!grades.every(cells => cells.length >= totals.length)) continue;
+      totals.forEach((total, column) => reckoner.set(total,
+        [...new Set([0, ...grades.map(cells => cells[column]), total])].sort((a, b) => a - b)));
+    }
+  }
   const counts = new Map<number, number[]>();
   for (const match of text.matchAll(/(\S+)\s+phointe eolais ag teastáil(?: anseo)?:?\s*(\d+)\s*m?h?arc an ceann ar (?:an|na)\s+(\S+)\s+phointe eolais/gi)) {
     const count = WORDS[match[1].toLowerCase()] ?? Number(match[1]);
@@ -786,7 +794,8 @@ export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[
       return split.every(part => bands.has(part)) ? range(row.marks) : subsetSums(split);
     }
     if (bands.has(row.marks)) return range(row.marks);
-    return (judged.has(row.marks) || reckoner.has(row.marks)) && row.marks === largest ? range(row.marks) : undefined;
+    if (reckoner.has(row.marks) && row.marks === largest) return reckoner.get(row.marks);
+    return judged.has(row.marks) && row.marks === largest ? range(row.marks) : undefined;
   };
   return {
     ...allocation,
