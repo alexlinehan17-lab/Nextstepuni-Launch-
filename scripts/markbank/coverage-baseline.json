@@ -753,19 +753,19 @@
     "refsHash": "718ba95fb160a884"
   },
   "spanish": {
-    "cards": 390,
-    "contentHash": "ac40bfcb59fb7572",
-    "coveragePct": 31.5,
-    "covered": 391,
+    "cards": 420,
+    "contentHash": "f4e511ec17c71a96",
+    "coveragePct": 32.9,
+    "covered": 421,
     "excluded": 306,
     "leaves": 2212,
-    "open": 1515,
+    "open": 1485,
     "orphans": 0,
     "papers": {
       "count": 84,
       "hash": "8baadaedee0f39e2"
     },
-    "refsHash": "08689f023b51175b"
+    "refsHash": "d662b5893c1586ea"
   },
   "swedish": {
     "cards": 121,

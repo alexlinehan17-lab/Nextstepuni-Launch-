@@ -66,8 +66,12 @@ LEVELS = ('hl', 'ol')
 # The sittings carded so far, one commit each. A sitting is added here only
 # once its cards have been read against the paper and the scheme.
 CARDED = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS} | {
-    (2026, 'hl'),
+    (2026, 'hl'), (2026, 'ol'),
 }
+# The 2021-2025 sittings shipped before this lane. Their cards keep the shapes
+# they shipped with until a reviewed change re-cuts them; every later sitting
+# gets the claimable shapes below from its first commit.
+FROZEN_SHAPES = {(y, l) for y in (2021, 2022, 2023, 2024, 2025) for l in LEVELS}
 # The sittings whose "direction" asks (Higher A1a Q5, A1b Q4) are carded with
 # the scheme's own direction on an unprinted row. 2021-2025 still exclude them.
 DIRECTION_CARDED = {(2026, 'hl')}
@@ -294,7 +298,8 @@ def _sitting(year, level, cards, refuse):
 
         language = answer_language(question, stem, instruction)
         rule = S.unit_rules.get(CARD_SECTION.get(section, 'A'))
-        rows = _rows_for(ask, language, rule)
+        rows = _rows_for(ask, language, rule,
+                         stepped=(year, level) not in FROZEN_SHAPES)
         if rows is None and (year, level) in DIRECTION_CARDED:
             rows = _direction_rows(ask, language, rule)
             if rows is not None and ask.key != key:
@@ -417,7 +422,7 @@ def _direction_rows(ask, language, rule):
              'contextNote': note}]
 
 
-def _rows_for(ask, language, rule):
+def _rows_for(ask, language, rule, stepped=False):
     """The card's marking rows, or None (a direction) or a refusal string."""
     note = language_note(language, rule)
     if ask.notes:
@@ -461,13 +466,34 @@ def _rows_for(ask, language, rule):
         return None
     if any(DIRECTION_ONLY.match(text) for text, _m in ask.points):
         return None
-    if len(ask.points) > MAX_ROWS:
+    points = list(ask.points)
+    if stepped and len(points) == 1 and ask.terms and len(ask.terms) > 1:
+        text = points[0][0]
+        pieces = [p.strip() for p in text.split(';') if p.strip()]
+        if len(pieces) == len(ask.terms):
+            # Several answers on one printed line, each priced: "Water;
+            # electricity; toilets; showers (1+1+1+1m)". The semicolons are
+            # the scheme's own separators, so each answer is its own claim row.
+            points = list(zip(pieces, ask.terms))
+        else:
+            # ONE answer whose marks the scheme splits: "In the last ten years
+            # and especially during the pandemic (3+3m)". A student who had
+            # half of it earns half, so the row is placed at the values the
+            # scheme prints — 0, 3, 6 — never all-or-nothing, and never at a
+            # value it does not print.
+            steps = [0]
+            for t in ask.terms:
+                steps.append(steps[-1] + t)
+            return [{'id': 'r-1', 'kind': 'criterion', 'verbatim': text,
+                     'marks': ask.total, 'permittedMarks': steps,
+                     'contextNote': note}]
+    if len(points) > MAX_ROWS:
         return 'the scheme states more separate answers than one card may show'
-    if sum(m or 0 for _t, m in ask.points) != ask.total:
+    if sum(m or 0 for _t, m in points) != ask.total:
         return 'the scheme\'s answers do not add up to the tariff it prints'
     return [{'id': f'r-{i}', 'kind': 'point', 'verbatim': text, 'marks': marks,
              **({'contextNote': note} if i == 1 else {})}
-            for i, (text, marks) in enumerate(ask.points, start=1)]
+            for i, (text, marks) in enumerate(points, start=1)]
 
 
 # ---------------------------------------------------------------- report ----

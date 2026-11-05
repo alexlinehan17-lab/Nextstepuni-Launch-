@@ -15433,5 +15433,1216 @@
    "attribution": "SEC Spanish 2026 Higher Level examination — Section B text, printed on the loose sheet supplied with the paper. © State Examinations Commission.",
    "presentationNote": "The examination supplies this text on a separate loose sheet. Read it exactly as it was printed, then answer."
   }
+ },
+ {
+  "id": "es-2026-ol-a-1-a",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "donde-situada-estacion-tren-fin-mundo",
+  "questionRef": "2026 OL Section A Q1(a)",
+  "questionText": "¿Dónde está situada la estación de tren del Fin del Mundo? (párrafo 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "a ocho kilómetros del centro de la ciudad de Ushuaia",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Lee este artículo sobre el Tren del Fin del Mundo y contesta las preguntas en ESPAÑOL.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TREN DEL FIN DEL MUNDO — answer in Spanish",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-1-b",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "cuantos-dias-ano-funciona-tren",
+  "questionRef": "2026 OL Section A Q1(b)",
+  "questionText": "¿Cuántos días al año funciona el tren? (párrafo 1)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "los trescientos sesenta y cinco (días del año)",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Lee este artículo sobre el Tren del Fin del Mundo y contesta las preguntas en ESPAÑOL.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TREN DEL FIN DEL MUNDO — answer in Spanish",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-1-c",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "hizo-gobierno-argentino-1902",
+  "questionRef": "2026 OL Section A Q1(c)",
+  "questionText": "¿Qué hizo el gobierno argentino en 1902? (párrafo 2)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "construyó un ferrocarril conectando Ushuaia con Tierra del Fuego",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Lee este artículo sobre el Tren del Fin del Mundo y contesta las preguntas en ESPAÑOL.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TREN DEL FIN DEL MUNDO — answer in Spanish",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-1-d",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "cuales-son-materiales-construccion-transportaba-tren",
+  "questionRef": "2026 OL Section A Q1(d)",
+  "questionText": "¿Cuáles son los materiales de construcción que transportaba el tren? (párrafo 3)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "rocas, arena y leña",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Lee este artículo sobre el Tren del Fin del Mundo y contesta las preguntas en ESPAÑOL.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TREN DEL FIN DEL MUNDO — answer in Spanish",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-1-e",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "pueden-disfrutar-pasajeros-desde-grandes-ventanales",
+  "questionRef": "2026 OL Section A Q1(e)",
+  "questionText": "¿De qué pueden disfrutar los pasajeros desde los grandes ventanales del tren? (párrafo 4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "las vistas y la belleza del parque natural",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Lee este artículo sobre el Tren del Fin del Mundo y contesta las preguntas en ESPAÑOL.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TREN DEL FIN DEL MUNDO — answer in Spanish",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-1-f",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "lenguas-estan-audioguias",
+  "questionRef": "2026 OL Section A Q1(f)",
+  "questionText": "¿En qué lenguas están las audioguías? (párrafo 4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "español, portugués e inglés",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Lee este artículo sobre el Tren del Fin del Mundo y contesta las preguntas en ESPAÑOL.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TREN DEL FIN DEL MUNDO — answer in Spanish",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-1-g",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "reciben-pasajeros-vagones-premium",
+  "questionRef": "2026 OL Section A Q1(g)",
+  "questionText": "¿Qué reciben los pasajeros en los vagones Premium? (párrafo 4)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "comida, bebida y un regalo",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Lee este artículo sobre el Tren del Fin del Mundo y contesta las preguntas en ESPAÑOL.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TREN DEL FIN DEL MUNDO — answer in Spanish",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-1-h",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "estan-cerradas-mayoria-zonas-interes-invierno",
+  "questionRef": "2026 OL Section A Q1(h)",
+  "questionText": "¿Por qué están cerradas la mayoría de zonas de interés en invierno? (párrafo 5)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "por la nieve",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Lee este artículo sobre el Tren del Fin del Mundo y contesta las preguntas en ESPAÑOL.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TREN DEL FIN DEL MUNDO — answer in Spanish",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-1-i",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "donde-pueden-comprar-billetes",
+  "questionRef": "2026 OL Section A Q1(i)",
+  "questionText": "¿Dónde se pueden comprar los billetes? (párrafo 5)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "en la estación o en Internet",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Lee este artículo sobre el Tren del Fin del Mundo y contesta las preguntas en ESPAÑOL.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TREN DEL FIN DEL MUNDO — answer in Spanish",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-1-j",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "quienes-hay-descuento",
+  "questionRef": "2026 OL Section A Q1(j)",
+  "questionText": "¿Para quiénes hay descuento? (párrafo 5)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "para ciudadanos argentinos y jubilados",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in Spanish. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 5 of the question booklet.",
+  "stem": "Lee este artículo sobre el Tren del Fin del Mundo y contesta las preguntas en ESPAÑOL.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TREN DEL FIN DEL MUNDO — answer in Spanish",
+   "pages": [
+    4,
+    5
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-2-a",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "aim-project-being-proposed-bullfighting-academy",
+  "questionRef": "2026 OL Section A Q2(a)",
+  "questionText": "What is the aim of the project being proposed by the Bullfighting Academy?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Recognise the Spanish bull as a symbol of the country",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 6 of the question booklet.",
+  "stem": "Read about a sculpture of a bull and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TORO DE ESPAÑA — answer in English",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-2-b",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "has-happened-spain-since-1990",
+  "questionRef": "2026 OL Section A Q2(b)",
+  "questionText": "What has happened in Spain since 1990?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "More than 100 Spanish towns have not celebrated bullfighting",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 6 of the question booklet.",
+  "stem": "Read about a sculpture of a bull and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TORO DE ESPAÑA — answer in English",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-2-c",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "does-jorge-alvarez-say-monument",
+  "questionRef": "2026 OL Section A Q2(c)",
+  "questionText": "What does Jorge Álvarez say about the monument?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "it is going to attract thousands of tourists",
+      "it is going to generate local employment"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks; the paper prints it on page 6 of the question booklet.",
+  "stem": "Read about a sculpture of a bull and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TORO DE ESPAÑA — answer in English",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-2-d",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "facilities-mentioned",
+  "questionRef": "2026 OL Section A Q2(d)",
+  "questionText": "What facilities are mentioned?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bullfighting museum",
+    "marks": 3,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "souvenir shop",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "a play area for children",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices this ask 3+3+3 marks; the paper prints it on page 6 of the question booklet.",
+  "stem": "Read about a sculpture of a bull and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "EL TORO DE ESPAÑA — answer in English",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-3-a",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "this-shop-different-other-shops",
+  "questionRef": "2026 OL Section A Q3(a)",
+  "questionText": "Why is this shop different to other shops?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "When a customer buys a parcel there, they do not know what it contains",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 7 of the question booklet.",
+  "stem": "Read about a shop and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "LA TIENDA DE CAJAS SORPRESA — answer in English",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-3-b",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "price-parcels",
+  "questionRef": "2026 OL Section A Q3(b)",
+  "questionText": "What is said about the price of the parcels?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "twenty-four euros per kilo",
+      "it is calculated according to the weight"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 6 marks; the paper prints it on page 7 of the question booklet.",
+  "stem": "Read about a shop and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "LA TIENDA DE CAJAS SORPRESA — answer in English",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-3-c",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "does-juan-say-parcels-with-label",
+  "questionRef": "2026 OL Section A Q3(c)",
+  "questionText": "What does Juan say about parcels with the label ‘muy frágil’?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He never buys them because they can have something broken inside",
+    "marks": 5,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 5 marks; the paper prints it on page 7 of the question booklet.",
+  "stem": "Read about a shop and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "LA TIENDA DE CAJAS SORPRESA — answer in English",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-3-d",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "items-parcels-may-contain",
+  "questionRef": "2026 OL Section A Q3(d)",
+  "questionText": "Name the items the parcels may contain.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "a smartwatch",
+      "a designer bag",
+      "a bottle of shampoo"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the paper prints it on page 7 of the question booklet.",
+  "stem": "Read about a shop and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "LA TIENDA DE CAJAS SORPRESA — answer in English",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-4-a",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "where-madrid-goat-found",
+  "questionRef": "2026 OL Section A Q4(a)",
+  "questionText": "Where in Madrid was the goat found?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "on the balcony of a 5th floor apartment",
+      "in an apartment where nobody lives"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 4 marks; the paper prints it on page 8 of the question booklet.",
+  "stem": "Read about a rescued goat and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "LOS BOMBEROS RESCATAN A UNA CABRA — answer in English",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-4-b",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "goat-described",
+  "questionRef": "2026 OL Section A Q4(b)",
+  "questionText": "How is the goat described?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "adult",
+      "brown",
+      "with a white stripe on its head"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 3+3 marks; the paper prints it on page 8 of the question booklet.",
+  "stem": "Read about a rescued goat and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "LOS BOMBEROS RESCATAN A UNA CABRA — answer in English",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-4-c",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "did-firefighter-alfredo-garrido-say-goat",
+  "questionRef": "2026 OL Section A Q4(c)",
+  "questionText": "What did the firefighter Alfredo Garrido say about the goat?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "It was very nervous and very frightened",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     3,
+     5
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.” The scheme adds: “First correct answer = 3m”."
+   }
+  ],
+  "notes": "The scheme prices this ask 3+2 marks; the paper prints it on page 9 of the question booklet.",
+  "stem": "Read about a rescued goat and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "LOS BOMBEROS RESCATAN A UNA CABRA — answer in English",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-4-d",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "food-did-firefighters-goat",
+  "questionRef": "2026 OL Section A Q4(d)",
+  "questionText": "What food did the firefighters give the goat?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The answers the scheme accepts",
+    "marks": null,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "an apple",
+      "lettuce",
+      "a carrot"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prices this ask 3+3 marks; the paper prints it on page 9 of the question booklet.",
+  "stem": "Read about a rescued goat and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "LOS BOMBEROS RESCATAN A UNA CABRA — answer in English",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-4-e",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "did-police-bring-goat-veterinary-centre",
+  "questionRef": "2026 OL Section A Q4(e)",
+  "questionText": "Why did the Police bring the goat to the Veterinary Centre?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "To observe the animal and identify possible illnesses",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     2,
+     4
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 2+2 marks; the paper prints it on page 9 of the question booklet.",
+  "stem": "Read about a rescued goat and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "LOS BOMBEROS RESCATAN A UNA CABRA — answer in English",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-5-a",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "when-did-campervan-holidays-become-popular",
+  "questionRef": "2026 OL Section A Q5(a)",
+  "questionText": "When did campervan holidays become popular in Spain?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "In the last ten years and especially during the pandemic",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3+3 marks; the paper prints it on page 10 of the question booklet.",
+  "stem": "Read about campervan holidays in Spain and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "DE VACACIONES EN AUTOCARAVANA — answer in English",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-5-b",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "services-available-campervan-sites",
+  "questionRef": "2026 OL Section A Q5(b)",
+  "questionText": "What services are available in campervan sites?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Water",
+    "marks": 1,
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "electricity",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "toilets",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "showers",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this ask 1+1+1+1 marks; the paper prints it on page 11 of the question booklet.",
+  "stem": "Read about campervan holidays in Spain and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "DE VACACIONES EN AUTOCARAVANA — answer in English",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-5-c",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "campervan-holidays-spain-popular-with-foreign",
+  "questionRef": "2026 OL Section A Q5(c)",
+  "questionText": "Why are campervan holidays in Spain popular with foreign tourists?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "There is more freedom and you can go from one place to the other easily",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3+3 marks; the paper prints it on page 11 of the question booklet.",
+  "stem": "Read about campervan holidays in Spain and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "DE VACACIONES EN AUTOCARAVANA — answer in English",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-5-d",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "campervans-ideal-families",
+  "questionRef": "2026 OL Section A Q5(d)",
+  "questionText": "Mention why campervans are ideal for families.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Because of the flexibility they offer and because you can bring pets",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3+3 marks; the paper prints it on page 11 of the question booklet.",
+  "stem": "Read about campervan holidays in Spain and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "DE VACACIONES EN AUTOCARAVANA — answer in English",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-5-e",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "students-like-campervans",
+  "questionRef": "2026 OL Section A Q5(e)",
+  "questionText": "Why do students like campervans?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "They are looking for adventure and it is a cheaper way to travel",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3+3 marks; the paper prints it on page 11 of the question booklet.",
+  "stem": "Read about campervan holidays in Spain and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "DE VACACIONES EN AUTOCARAVANA — answer in English",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-5-f",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "explain-pensioners-fans-campervans",
+  "questionRef": "2026 OL Section A Q5(f)",
+  "questionText": "Explain why pensioners are fans of campervans.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "They can explore different destinations and spend many weeks away from home",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3+3 marks; the paper prints it on page 11 of the question booklet.",
+  "stem": "Read about campervan holidays in Spain and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "DE VACACIONES EN AUTOCARAVANA — answer in English",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
+ },
+ {
+  "id": "es-2026-ol-a-5-g",
+  "subjectId": "spanish",
+  "level": "ordinary",
+  "year": 2026,
+  "section": "A",
+  "topicId": "spanish-5-2",
+  "conceptId": "campervans-not-ideal-everyone",
+  "questionRef": "2026 OL Section A Q5(g)",
+  "questionText": "Why are campervans not ideal for everyone?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "The high cost of buying/renting and the lack of space in the vehicle",
+    "marks": 6,
+    "permittedMarks": [
+     0,
+     3,
+     6
+    ],
+    "contextNote": "The examination paper directs that this question be answered in English. The marking scheme states: “Questions must be answered in the language indicated on the examination paper. In Section A where a candidate answers in the incorrect language (i.e. Spanish instead of English/or vice versa), the following penalties will apply: If the entire question is answered in the incorrect language, mark as per marking scheme and award 50% of the marks achieved. Where one or more sub-parts of a question, but fewer than all are answered in the incorrect language award 0m for the ones answered in the wrong language. If questions are answered in both languages, marks should be awarded for the correct language as per the marking scheme and ignore the incorrect language.”"
+   }
+  ],
+  "notes": "The scheme prices this ask 3+3 marks; the paper prints it on page 11 of the question booklet.",
+  "stem": "Read about campervan holidays in Spain and answer the questions in English.",
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "READING COMPREHENSION",
+   "title": "DE VACACIONES EN AUTOCARAVANA — answer in English",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Spanish 2026 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Read the text exactly as the examination printed it, then answer."
+  }
  }
 ]
