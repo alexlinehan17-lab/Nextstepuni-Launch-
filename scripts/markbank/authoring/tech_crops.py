@@ -1817,6 +1817,9 @@ LISTED_STEPS = {
     # lubricants, one per line.
     (2012, 'hl', 'A', 1, None, None),
     (2012, 'hl', 'A', 12, None, None),
+    # 2011 Higher Q3, scheme page 4: the technology named, then two
+    # advantages, one per line.
+    (2011, 'hl', 'A', 3, None, None),
 }
 
 # Scheme lines that reuse the ask's own words and are nonetheless a marking
@@ -3097,6 +3100,31 @@ MD_LINE_FIX[(2012, 'ol')] = [
     (r'^3/2 port valve Single acting spring return cylinder Shuttle/OR valve$',
      '3/2 port valve\nSingle acting spring return cylinder\nShuttle/OR valve'),
 ]
+MD_LINE_FIX[(2011, 'hl')] = [
+    # Q14: the table's header and its first row, which the paper prints
+    # filled in as the example.
+    (r'^Component Name Identifying feature of component$', ''),
+    (r'^Diode The band on the casing indicates the cathode$', ''),
+    # Q15: the heading over its two marked criteria.
+    (r'^Assembly/Rendering$', ''),
+    # 2(b): the circuit's pin numbers on (i)'s last answer; (iii)'s values,
+    # reprinted above the working.
+    (r'^6 3 (Output: Buzzer)$', '\\1'),
+    (r'^R1 = 100K; R2 = 47K and C1 = 100\u00b5F$', ''),
+    # 4(d)(i): three columns of notes, one per graph, welded line by line;
+    # each column's words, in order, on a line of its own.
+    (r'^Average capacity: Lag capacity: Lead capacity:$',
+     'Average capacity: Capacity increases to coincide with the average expected demand.\n'
+     'Lag capacity: Capacity is expanded after a demand is identified.\n'
+     'Lead capacity: Capacity is increased to cater for expected growth in demand.'),
+    (r'^Capacity increases to coincide Capacity is expanded after a Capacity is increased to cater$', ''),
+    (r'^with the average expected demand is identified\. for expected growth in demand\.$', ''),
+    (r'^demand\.$', ''),
+    # 5(b)(iii): the two captions beside the photographs, welded line by line.
+    (r'^Screws fixed$', 'Screws fixed from under the mouse'),
+    (r'^from under These can be hidden$', 'These can be hidden under the mouse \u2018feet\u2019.'),
+    (r'^the mouse under the mouse \u2018feet\u2019\.$', ''),
+]
 MD_LINE_FIX[(2014, 'hl')] = [
     # 1(a)(ii): two columns of notes welded line by line; each column's
     # words, in order, on a line of its own.
@@ -3845,6 +3873,183 @@ LABEL_ZONES.setdefault((2012, 'ol'), []).extend([
     (21, (445, 443, 558, 553)),    # 5(d)'s headrest, its caption
 ])
 
+# 2011 Higher. PAPER pictures each stem or ask points at.
+BY_EYE.update({
+    'technology-2011-HL-paper-secA-q1-art': ('014', 1, (410, 126, 556, 236)),
+    'technology-2011-HL-paper-secA-q2-art': ('014', 1, (457, 317, 552, 401)),
+    'technology-2011-HL-paper-secA-q3-art': ('014', 1, (377, 593, 559, 726)),
+    'technology-2011-HL-paper-secA-q4-art': ('014', 2, (43, 111, 187, 255)),
+    'technology-2011-HL-paper-secA-q6-art': ('014', 2, (453, 596, 558, 742)),
+    'technology-2011-HL-paper-secA-q7-art': ('014', 3, (491, 62, 560, 203)),
+    'technology-2011-HL-paper-secA-q8-art': ('014', 3, (62, 277, 188, 402)),
+    'technology-2011-HL-paper-secA-q9-art': ('014', 3, (55, 510, 400, 635)),
+    'technology-2011-HL-paper-secA-q10-art': ('014', 4, (432, 278, 541, 387)),
+    'technology-2011-HL-paper-secA-q11-art': ('014', 4, (55, 533, 223, 690)),
+    'technology-2011-HL-paper-secA-q12-art': ('014', 5, (62, 124, 543, 409)),
+    'technology-2011-HL-paper-secA-q13-art': ('014', 5, (417, 491, 541, 631)),
+    'technology-2011-HL-paper-secA-q14-art': ('014', 6, (85, 132, 530, 425)),
+    'technology-2011-HL-paper-secA-q15-art': ('014', 6, (372, 542, 541, 691)),
+    'technology-2011-HL-paper-secB-q2a-art': ('015', 1, (123, 212, 495, 397)),
+    'technology-2011-HL-paper-secB-q2b-art': ('015', 1, (457, 401, 565, 535)),
+    'technology-2011-HL-paper-secB-q3a-art': ('015', 2, (140, 125, 410, 220)),
+    'technology-2011-HL-paper-secB-q3b-art': ('015', 2, (45, 265, 175, 385)),
+    'technology-2011-HL-paper-secB-q3c-art': ('015', 2, (430, 450, 559, 578)),
+    'technology-2011-HL-paper-secB-q3d-art': ('015', 2, (345, 618, 575, 742)),
+    'technology-2011-HL-paper-secC-q1b-art': ('015', 3, (330, 160, 545, 368)),
+    'technology-2011-HL-paper-secC-q1c-art': ('015', 3, (428, 402, 541, 533)),
+    'technology-2011-HL-paper-secC-q1d-art': ('015', 3, (50, 608, 590, 785)),
+    'technology-2011-HL-paper-secC-q2a-art': ('015', 4, (474, 34, 586, 136)),
+    'technology-2011-HL-paper-secC-q2b-art': ('015', 4, (28, 198, 560, 365)),
+    'technology-2011-HL-paper-secC-q2d-art': ('015', 4, (45, 555, 565, 772)),
+    'technology-2011-HL-paper-secC-q3c-art': ('015', 5, (401, 316, 567, 416)),
+    'technology-2011-HL-paper-secC-q3d-art': ('015', 5, (150, 560, 585, 787)),
+    'technology-2011-HL-paper-secC-q4a-art': ('015', 6, (455, 118, 579, 215)),
+    'technology-2011-HL-paper-secC-q4b-art': ('015', 6, (110, 415, 365, 690)),
+    'technology-2011-HL-paper-secC-q4c-art': ('015', 7, (90, 100, 552, 404)),
+    'technology-2011-HL-paper-secC-q4d-art': ('015', 7, (88, 545, 566, 677)),
+    'technology-2011-HL-paper-secC-q5b-art': ('015', 8, (480, 233, 583, 307)),
+    'technology-2011-HL-paper-secC-q5d-art': ('015', 8, (318, 610, 562, 773)),
+})
+WHITEOUT.update({
+    'technology-2011-HL-paper-secA-q9-art': [(95, 520, 400, 537)],
+    'technology-2011-HL-paper-secA-q12-art': [(60, 207, 545, 248), (60, 250, 545, 266), (60, 266, 450, 283), (60, 296, 145, 318)],
+    'technology-2011-HL-paper-secC-q1b-art': [(330, 160, 462, 262)],
+    'technology-2011-HL-paper-secC-q1d-art': [(30, 605, 478, 702)],
+    'technology-2011-HL-paper-secC-q2b-art': [(268, 198, 560, 216), (265, 262, 560, 336)],
+    'technology-2011-HL-paper-secC-q2d-art': [(318, 648, 522, 692), (45, 555, 435, 590)],
+    'technology-2011-HL-paper-secC-q3d-art': [(150, 672, 445, 740)],
+    'technology-2011-HL-paper-secC-q4b-art': [(110, 520, 365, 590)],
+    'technology-2011-HL-paper-secC-q4c-art': [(90, 234, 392, 252), (55, 272, 326, 291)],
+    'technology-2011-HL-scheme-secB-q3c': [(60, 275, 560, 295)],
+    'technology-2011-HL-scheme-secB-q3d': [(50, 585, 460, 603)],
+    'technology-2011-HL-scheme-secC-q1b': [(60, 600, 520, 618)],
+    'technology-2011-HL-scheme-secC-q2b': [(255, 438, 575, 453), (18, 562, 575, 595)],
+    'technology-2011-HL-scheme-secC-q2c': [(85, 138, 340, 152), (85, 236, 340, 268)],
+    'technology-2011-HL-scheme-secC-q2d': [(355, 476, 490, 520)],
+})
+SOLUTIONS.update({
+    'technology-2011-HL-scheme-secA-q8': (5, (160, 283, 470, 380),
+        "The marking scheme's own work breakdown structure for 2011 HL Section A "
+        'Q8, as the State Examinations Commission printed it: Source steel bars '
+        'and plastic leads to Cut steel bars, then File/Finish Bars, and to '
+        'Compile CNC, then CNC cutting of acrylic ends; both lead to Assemble '
+        'steel bars into acrylic.'),
+    'technology-2011-HL-scheme-secA-q12-i': (7, (65, 138, 565, 230),
+        "The marking scheme's own answer to 2011 HL Section A Q12(i), as the "
+        'State Examinations Commission printed it: the three items, A Class 2, B '
+        'Class 1, C Class 3.'),
+    'technology-2011-HL-scheme-secB-q2b': (10, (88, 486, 460, 662),
+        "The marking scheme's own sketches for 2011 HL Section B 2(b), as the "
+        'State Examinations Commission printed them: a tall cylindrical rescue '
+        'capsule in section and in plan, labelled Door entry and exit, and '
+        'Capsule must be capable of accommodating the tallest and broadest miner '
+        'inside it.'),
+    'technology-2011-HL-scheme-secB-q2c': (11, (89, 133, 195, 246),
+        "The marking scheme's own picture beside its answer to 2011 HL Section B "
+        '2(c)(i), as the State Examinations Commission printed it: a winch wheel '
+        'on a yellow frame lowering the rescue capsule into the shaft.'),
+    'technology-2011-HL-scheme-secB-q3a': (12, (309, 198, 577, 352),
+        "The marking scheme's own working for 2011 HL Section B 3(a)(ii), as the "
+        'State Examinations Commission printed it: R2, moments taken about R1: '
+        'Anti-clockwise moments = Clockwise moments; R2 x 10m = (20kN x 3m) + '
+        '(10kN x 6m); R2 x 10m = 60kNm + 60kNm; R2 = 120kNm over 10m; R2 = 12kN. '
+        'R1: R1 = Total downward forces - R2; R1 = 30kN - 12kN; R1 = 18kN.'),
+    'technology-2011-HL-scheme-secB-q3b': (12, (196, 490, 530, 600),
+        "The marking scheme's own sketch for 2011 HL Section B 3(b)(i), as the "
+        'State Examinations Commission printed it: a worm on a motor driving a '
+        'gear attached to the rotating camera stand, labelled Motor with '
+        'wormwheel, Gear attached to rotating camera stand, and Fixed base with '
+        'ball bearings to allow movement.'),
+    'technology-2011-HL-scheme-secB-q3c': (13, (80, 140, 560, 385),
+        "The marking scheme's own answers for 2011 HL Section B 3(c), as the "
+        'State Examinations Commission printed them: (i) a circuit diagram, a low'
+        ' voltage light sensing circuit with an LDR and a transistor switching a '
+        'relay, and a mains voltage floodlight circuit through the relay '
+        'contacts; (ii) Power = Voltage x Current, Power over Voltage = Current, '
+        '600W over 240V = Current, Current = 2.5A.'),
+    'technology-2011-HL-scheme-secB-q3d': (13, (50, 475, 460, 775),
+        "The marking scheme's own answers for 2011 HL Section B 3(d), as the "
+        'State Examinations Commission printed them: (i) a critical path diagram,'
+        ' Source and Mould leading to Vacuum, Trim and Assemble, each node with '
+        'its earliest and latest times; (ii) a Gantt chart over weeks 1 to 5: '
+        'Task A in week 1, Task B in weeks 1 and 2, Task C in week 3, Task D in '
+        'week 4, Task E in week 5.'),
+    'technology-2011-HL-scheme-secC-q1b': (14, (150, 333, 500, 672),
+        "The marking scheme's own flowcharts for 2011 HL Section C 1(b), as the "
+        'State Examinations Commission printed them: (i) Start, Switch on (No '
+        'loops back), a decision A = 8 (Yes to Stop), Barrier up, Wait 10 sec, '
+        'Barrier down, Wait 5 sec, Inc A and back; (ii) the A = 8 decision, Yes '
+        'to LED on.'),
+    'technology-2011-HL-scheme-secC-q1d': (15, (160, 678, 440, 752),
+        "The marking scheme's own pneumatic circuit for 2011 HL Section C "
+        '1(d)(ii), as the State Examinations Commission printed it: a push-button'
+        ' 3/2 valve with ports 1, 2 and 3, a flow regulator, and a single-acting '
+        'cylinder with a spring return.'),
+    'technology-2011-HL-scheme-secC-q2b': (16, (18, 341, 575, 682),
+        "The marking scheme's own answers for 2011 HL Section C 2(b), as the "
+        'State Examinations Commission printed them: the astable circuit redrawn,'
+        ' R1, R2 and C1 on a 555 IC driving a transistor and buzzer, with boxes '
+        'Input, Process and Output; the output waveform, a square wave between 9V'
+        ' and 0V with T1 on and T2 off; and f = 1.4 over (2R2 + R1) x C1 = 1.4 '
+        'over (2x47k + 100k) x 100uF, f = 0.07Hz.'),
+    'technology-2011-HL-scheme-secC-q2c': (17, (85, 138, 500, 342),
+        "The marking scheme's own diagrams for 2011 HL Section C 2(c), as the "
+        'State Examinations Commission printed them: (i) a DPDT relay circuit '
+        'reversing a DC motor; (ii) a gearbox of shafts and gear wheels.'),
+    'technology-2011-HL-scheme-secC-q2d': (17, (35, 438, 490, 732),
+        "The marking scheme's own answers for 2011 HL Section C 2(d), as the "
+        'State Examinations Commission printed them: (i) Safety guard and Heat '
+        'sensor each through a NOT gate into an AND gate, whose output with Power'
+        ' goes into a second AND gate driving Motor; (ii) the truth table, Power,'
+        ' Guard, Heat, Motor, Motor 1 only for Power 1, Guard 0, Heat 0.'),
+    'technology-2011-HL-scheme-secC-q3b': (18, (85, 538, 500, 722),
+        "The marking scheme's own sketches and notes for 2011 HL Section C "
+        '3(b)(iii), as the State Examinations Commission printed them: a ring of '
+        'computers, Ring topology: all workstations are connected in a closed '
+        'loop, data travels to next computer, gives equal access, if one computer'
+        ' fails the entire network is effected; and computers round a central '
+        'switch, Star topology: each workstation is connected to a central '
+        'switch, easy expansion, faults can be isolated to individual computers.'),
+    'technology-2011-HL-scheme-secC-q4a': (20, (88, 306, 322, 336),
+        "The marking scheme's own working for 2011 HL Section C 4(a)(iii), as the"
+        ' State Examinations Commission printed it: No. of days = 3000 hrs over '
+        '3hrs/day = 1000days = 2.74 years.'),
+    'technology-2011-HL-scheme-secC-q5a': (22, (346, 258, 476, 347),
+        "The marking scheme's own picture for 2011 HL Section C 5(a)(ii), as the "
+        'State Examinations Commission printed it: a metal tank with rods of the '
+        'sample materials through its side, for the test the notes beside it '
+        'describe.'),
+    'technology-2011-HL-scheme-secC-q5b': (22, (370, 497, 553, 593),
+        "The marking scheme's own sketch for 2011 HL Section C 5(b)(ii), as the "
+        'State Examinations Commission printed it: an injection moulding machine,'
+        ' labelled feeder hopper, heaters, screw moves to push polymer into '
+        'mould, mould, tie bar and water cooling channels.'),
+})
+ASK_ONLY.update({
+    'technology-2011-HL-scheme-secA-q12-i',
+    'technology-2011-HL-scheme-secB-q3c',
+    'technology-2011-HL-scheme-secB-q3d',
+    'technology-2011-HL-scheme-secC-q2d',
+})
+SOLUTION_NOT_ZONE.update({
+    'technology-2011-HL-scheme-secC-q2b',
+    'technology-2011-HL-scheme-secC-q2c',
+})
+LABEL_ZONES.setdefault((2011, 'hl'), []).extend([
+    (7, (440, 262, 565, 385)),  # Q12(ii)'s can crusher reprinted, 100N and 200 mm
+    (12, (40, 205, 292, 300)),  # 3(a)(ii)'s beam reprinted
+    (12, (40, 415, 178, 535)),  # 3(b)'s camera reprinted, A and B
+    (15, (470, 565, 590, 650)),  # 1(d)(ii)'s device reprinted, Blanks and Piston
+    (16, (18, 341, 290, 512)),  # 2(b)'s circuit, its labels and pin numbers
+    (16, (290, 350, 575, 372)),  # 2(b)'s Input Process Output boxes
+    (16, (270, 455, 530, 500)),  # 2(b)'s waveform, 9V 0V T1 T2
+    (16, (85, 625, 560, 660)),  # 2(b)'s frequency fraction
+    (19, (150, 440, 445, 525)),  # 3(d)'s sound quality table reprinted
+    (20, (380, 555, 580, 730)),  # 4(b)(ii)'s motor and Z table reprinted
+    (21, (90, 505, 560, 612)),  # 4(d)'s three graphs reprinted
+    (23, (55, 455, 300, 615)),  # 5(d)'s bar chart reprinted
+])
+
 # Printed words on a PAPER page that come off one part's ask and stem the way
 # a crop's own lettering does, for a part with no picture of its own to carry
 # them: an answer box's fill-in labels, a caption printed beside the prose.
@@ -3882,6 +4087,16 @@ ASK_ZONES = {
 # pattern: (year, level, section, q, letter, roman) -> [regex, ...]. Each one
 # was read off the rendered page.
 ASK_STRIP = {
+    # 2011 Higher: answer-box labels and picture lettering read into asks and
+    # stems.
+    (2011, 'hl', 'A', 1, None, None): [r'\s+\(i\)$'],
+    **{(2011, 'hl', 'A', 9, None, r): [r'(?:^|\s+)R1 - Red, Red, Red, Gold\. Value = R2 - Blue, Orange, Black, Gold\. Value = R3 - Green, White, Black, Gold\.(?:\s+Value\s*=)?$']
+       for r in ('i', 'ii', 'iii')},
+    (2011, 'hl', 'A', 11, None, None): [r'\s+Thermal conductivity Thermal insulation$'],
+    (2011, 'hl', 'A', 12, None, 'i'): [r'\s+A B C 100N 200 mm$', r'\s+Class Class Class$'],
+    (2011, 'hl', 'A', 12, None, 'ii'): [r'\s+A B C 100N 200 mm$'],
+    (2011, 'hl', 'C', 2, 'b', None): [r'\s+Input Output Process R1 9V 7 4 8 555 R2 6 3 2 1 5(?= R1 = 100K)',
+                                     r'\s+Where frequency = C1 1\.4 \(2R2 \+ R1\) \u00d7 C1$'],
     # 2012 Ordinary: answer-line numbers and labels, and Q7's arrow letter.
     (2012, 'ol', 'A', 1, None, None): [r' 1 2(?= \(ii\))'],
     (2012, 'ol', 'A', 7, None, None): [r'^A\s+'],

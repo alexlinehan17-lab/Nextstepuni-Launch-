@@ -66,6 +66,15 @@ TARIFF = re.compile(
     # best first. The part is worth the top mark; the steps are not a split.
     r'|\(\s*(?P<ladder>\d{1,2}(?:\s*,\s*\d{1,2}){2,})\s*' + _M + r'\s*\)', re.I)
 
+# 2011 Higher prints each Section A question's split with no word "marks" --
+# "(2 + 2 + 2)" on a line of its own, or closing the last answer ("CNC
+# router/Laser cutter etc. (4+ 2)") -- under the rubric's "All questions
+# carry 6 marks". Read only where TARIFF and BAND find nothing, and only on a
+# line of its own or after prose, so a formula's bracket ("= (12 x 40) / (10 +
+# 40 +10)", 2026 Higher) is never a price.
+BARE_SPLIT = re.compile(
+    r'(?:^|(?<=[A-Za-z.]\s))\(\s*(?P<bare>\d{1,2}(?:\s*\+\s*\d{1,2})+)\s*\)\s*$')
+
 # The Ordinary papers price a pure sketch question by QUALITY, not by content:
 # "(Very good sketch - 8 marks, good sketch - 6 marks, fair sketch - 4 marks)".
 # It is a printed tariff and it bounds the block, so it is read -- but it names
@@ -552,10 +561,15 @@ class TechScheme:
             # (4+4 marks)") as often as it has a line to itself.
             hit = TARIFF.search(text)
             band = None if hit else BAND.search(text)
-            if hit or band:
-                m = hit or band
-                total, terms = (_tariff(hit) if hit
-                                else (int(band.group(1)), []))
+            bare = None if (hit or band) else BARE_SPLIT.search(text)
+            if hit or band or bare:
+                m = hit or band or bare
+                if bare:
+                    terms = [int(x) for x in re.findall(r'\d+', bare.group('bare'))]
+                    total = sum(terms)
+                else:
+                    total, terms = (_tariff(hit) if hit
+                                    else (int(band.group(1)), []))
                 tail = (text[:m.start()] + ' ' + text[m.end():]).strip()
                 if not lines and not tail and total in SECTION_TOTALS and not terms:
                     continue            # a section or option heading's price

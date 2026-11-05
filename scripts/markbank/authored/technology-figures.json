@@ -1,5 +1,200 @@
 [
  {
+  "file": "technology-2011-HL-paper-secA-q6-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A room temperature indicator shaped like a teddy bear in a nightcap, holding a strip marked 17 to 29 in degrees C and F, one value highlighted.",
+  "questionRef": "2011 HL Section A Q6",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   453,
+   596,
+   558,
+   742
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secA-q7-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of a bicycle brake: a cable pulls up on two arms joined at a centre pivot, with blue brake pads at their lower ends.",
+  "questionRef": "2011 HL Section A Q7",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   491,
+   62,
+   560,
+   203
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secA-q8-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a CD holder: a red acrylic figure at each end joined by steel bars, CDs held between them.",
+  "questionRef": "2011 HL Section A Q8",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   62,
+   277,
+   188,
+   402
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secA-q11-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a soldering station: a soldering iron with a yellow handle in its holder, a control unit with a dial and a cleaning sponge.",
+  "questionRef": "2011 HL Section A Q11",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   55,
+   533,
+   223,
+   690
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secA-q12-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of three hand tools labelled A, B and C: a nutcracker, a pair of long-nose pliers and a pair of tweezers; and a can crusher, its lever 200 mm to the pivot with 100N at its end.",
+  "questionRef": "2011 HL Section A Q12",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   62,
+   124,
+   543,
+   409
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secA-q13-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a blue portable radio with a round speaker grille, control buttons and a telescopic aerial.",
+  "questionRef": "2011 HL Section A Q13",
+  "booklet": "014",
+  "page": 5,
+  "rect": [
+   417,
+   491,
+   541,
+   631
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secA-q15-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Line drawing of an exploded toy rocket: a body tube, a nose cone, a nozzle and three fins drawn apart.",
+  "questionRef": "2011 HL Section A Q15",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   372,
+   542,
+   541,
+   691
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q1c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a SCARA robot: a vertical column carrying a yellow two-jointed horizontal arm with a vertical tool shaft.",
+  "questionRef": "2011 HL Section C Q1(c)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   428,
+   402,
+   541,
+   533
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Circuit diagram of the warning device: a 9V supply and switch, R1, R2 and C1 on a 555 IC, its output through a resistor to a transistor driving an output device; boxes Input, Process and Output; and Where frequency = 1.4 over (2R2 + R1) x C1.",
+  "questionRef": "2011 HL Section C Q2(b)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   28,
+   198,
+   560,
+   365
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q2d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A scroll saw, and a block diagram: Power (1 = on, 0 = off), Safety guard (1 = not ready, 0 = ready) and Heat sensor (1 = too hot, 0 = accepted) into a Logic circuit driving Motor (1 = on, 0 = off).",
+  "questionRef": "2011 HL Section C Q2(d)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   45,
+   555,
+   565,
+   772
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table of three sound qualities: A, 8 kHz, 8 bits; B, 11.025 kHz, 8 bits; C, 44.1 kHz, 16 bits; and a photograph of a sound card.",
+  "questionRef": "2011 HL Section C Q3(d)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   150,
+   560,
+   585,
+   787
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q4b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Drawing of a DC motor, an arrow to Output shaft A, and a table, Confidence value for Z: 99%, 2.58; 95%, 1.96; 90%, 1.64; 80%, 1.28.",
+  "questionRef": "2011 HL Section C Q4(b)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   110,
+   415,
+   365,
+   690
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q4c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a car assembly line with robots and of finished cars, and two Kanban cards, one printed with part numbers and N762, the other a Product Line 1 KANBAN card with a barcode.",
+  "questionRef": "2011 HL Section C Q4(c)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   90,
+   100,
+   552,
+   404
+  ]
+ },
+ {
   "file": "technology-2012-HL-paper-secA-q6-art.png",
   "kind": "figure",
   "truncated": false,
@@ -10230,6 +10425,321 @@
   ]
  },
  {
+  "file": "technology-2011-HL-paper-secA-q1-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Rendering of a car park whose bays are roofed with rows of solar panels, a car parked beneath them.",
+  "questionRef": "2011 HL Section A Q1",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   410,
+   126,
+   556,
+   236
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secA-q2-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A yellow triangular warning sign with a black exclamation mark.",
+  "questionRef": "2011 HL Section A Q2",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   457,
+   317,
+   552,
+   401
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secA-q3-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Close-up photograph of a human eye with a targeting grid drawn over it and a bright red line meeting its centre.",
+  "questionRef": "2011 HL Section A Q3",
+  "booklet": "014",
+  "page": 1,
+  "rect": [
+   377,
+   593,
+   559,
+   726
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secA-q4-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the Salif lemon squeezer: a shiny ribbed pointed head standing on three long, thin curved legs.",
+  "questionRef": "2011 HL Section A Q4",
+  "booklet": "014",
+  "page": 2,
+  "rect": [
+   43,
+   111,
+   187,
+   255
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secA-q9-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A resistor colour code table, colours numbered 0 to 9, and three resistors: R1 - Red, Red, Red, Gold; R2 - Blue, Orange, Black, Gold; R3 - Green, White, Black, Gold.",
+  "questionRef": "2011 HL Section A Q9",
+  "booklet": "014",
+  "page": 3,
+  "rect": [
+   55,
+   510,
+   400,
+   635
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secA-q10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a computer desk with a curved metal frame, a glass top holding a monitor, a keyboard shelf and a tower unit.",
+  "questionRef": "2011 HL Section A Q10",
+  "booklet": "014",
+  "page": 4,
+  "rect": [
+   432,
+   278,
+   541,
+   387
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secA-q14-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table headed Component, Name and Identifying feature of component, with pictures of four electronic components; the first row is filled in: Diode, The band on the casing indicates the cathode.",
+  "questionRef": "2011 HL Section A Q14",
+  "booklet": "014",
+  "page": 6,
+  "rect": [
+   85,
+   132,
+   530,
+   425
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secB-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Graphic of the Chilean mine rescue: a cross-section of the mine with the rescue shaft down to the trapped miners refuge, and three stages, 1 Pilot hole, 2 Shaft widening and 3 Rescue capsule.",
+  "questionRef": "2011 HL Section B Q2(a)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   123,
+   212,
+   495,
+   397
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secB-q2b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the rescue capsule at the mine, a tall narrow white and red cage hanging from a crane, rescue workers beside it.",
+  "questionRef": "2011 HL Section B Q2(b)",
+  "booklet": "015",
+  "page": 1,
+  "rect": [
+   457,
+   401,
+   565,
+   535
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secB-q3a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Diagram of a beam 10m long on supports R1 and R2, loaded with 20kN at 3m and 10kN at 6m from R1.",
+  "questionRef": "2011 HL Section B Q3(a)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   140,
+   125,
+   410,
+   220
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secB-q3b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a surveillance camera on a turning base, a curved arrow A round the base and an arrow B at the camera head.",
+  "questionRef": "2011 HL Section B Q3(b)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   45,
+   265,
+   175,
+   385
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secB-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a white dome surveillance camera on a wall bracket.",
+  "questionRef": "2011 HL Section B Q3(c)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   430,
+   450,
+   559,
+   578
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secB-q3d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table of tasks with Time (weeks) and Depends on: A Source plastic for dome, 1, -; B Design and make mould, 2, -; C Vacuum form dome, 1, B; D Trim to size, 1, C; E Assemble housing, 1, D.",
+  "questionRef": "2011 HL Section B Q3(d)",
+  "booklet": "015",
+  "page": 2,
+  "rect": [
+   345,
+   618,
+   575,
+   742
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q1b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The incomplete program sequence: Start, a decision Switch on (No to the left, Yes down), Barrier up, Wait 10 sec, Barrier down, Wait 5 sec and an arrow leading on; beside it, a photograph of a car park barrier.",
+  "questionRef": "2011 HL Section C Q1(b)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   330,
+   160,
+   545,
+   368
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q1d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A stamping device whose piston pushes blanks along, labelled Blanks and Piston, and five pneumatic symbols labelled A to E to choose from.",
+  "questionRef": "2011 HL Section C Q1(d)",
+  "booklet": "015",
+  "page": 3,
+  "rect": [
+   50,
+   608,
+   590,
+   785
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q2a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of the WEEE man sculpture's head, built from discarded electrical goods and cables.",
+  "questionRef": "2011 HL Section C Q2(a)",
+  "booklet": "015",
+  "page": 4,
+  "rect": [
+   474,
+   34,
+   586,
+   136
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q3c-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a computer power supply unit with its fan, sockets and bundle of cables.",
+  "questionRef": "2011 HL Section C Q3(c)",
+  "booklet": "015",
+  "page": 5,
+  "rect": [
+   401,
+   316,
+   567,
+   416
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q4a-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of an office printer with its front open, showing four coloured cartridges.",
+  "questionRef": "2011 HL Section C Q4(a)",
+  "booklet": "015",
+  "page": 6,
+  "rect": [
+   455,
+   118,
+   579,
+   215
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q4d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Three graphs, (a), (b) and (c), each plotting Capacity and Demand as Quantity against Time, the capacity drawn as steps beside a rising demand line.",
+  "questionRef": "2011 HL Section C Q4(d)",
+  "booklet": "015",
+  "page": 7,
+  "rect": [
+   88,
+   545,
+   566,
+   677
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q5b-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photograph of a computer mouse with a dark glossy casing and a red trim line.",
+  "questionRef": "2011 HL Section C Q5(b)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   480,
+   233,
+   583,
+   307
+  ]
+ },
+ {
+  "file": "technology-2011-HL-paper-secC-q5d-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Bar chart of embodied energy (GJt-1), 0 to 200, for Aluminium, Copper, Polystyrene, Steel, Ceramics, MDF and Hardwood, the Aluminium bar the longest.",
+  "questionRef": "2011 HL Section C Q5(d)",
+  "booklet": "015",
+  "page": 8,
+  "rect": [
+   318,
+   610,
+   562,
+   773
+  ]
+ },
+ {
   "file": "technology-2026-OL-paper-secA-q6-ii-art.png",
   "kind": "figure",
   "truncated": false,
@@ -13329,5 +13839,141 @@
   "description": "The marking scheme's own sketches for 2012 OL Section C 5(d)(ii), as the State Examinations Commission printed them: an injection moulding machine labelled Hopper, Heater, Screw, Ram, Hydraulic Fluid, Motor and Mould, and a cutaway photograph of a moulding machine with its parts labelled.",
   "solution": true,
   "questionRef": "2012 OL Section C Q5(d)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secA-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own work breakdown structure for 2011 HL Section A Q8, as the State Examinations Commission printed it: Source steel bars and plastic leads to Cut steel bars, then File/Finish Bars, and to Compile CNC, then CNC cutting of acrylic ends; both lead to Assemble steel bars into acrylic.",
+  "solution": true,
+  "questionRef": "2011 HL Section A Q8"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secA-q12-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2011 HL Section A Q12(i), as the State Examinations Commission printed it: the three items, A Class 2, B Class 1, C Class 3.",
+  "solution": true,
+  "questionRef": "2011 HL Section A Q12(i)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secB-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketches for 2011 HL Section B 2(b), as the State Examinations Commission printed them: a tall cylindrical rescue capsule in section and in plan, labelled Door entry and exit, and Capsule must be capable of accommodating the tallest and broadest miner inside it.",
+  "solution": true,
+  "questionRef": "2011 HL Section B Q2(b)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secB-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture beside its answer to 2011 HL Section B 2(c)(i), as the State Examinations Commission printed it: a winch wheel on a yellow frame lowering the rescue capsule into the shaft.",
+  "solution": true,
+  "questionRef": "2011 HL Section B Q2(c)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secB-q3a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2011 HL Section B 3(a)(ii), as the State Examinations Commission printed it: R2, moments taken about R1: Anti-clockwise moments = Clockwise moments; R2 x 10m = (20kN x 3m) + (10kN x 6m); R2 x 10m = 60kNm + 60kNm; R2 = 120kNm over 10m; R2 = 12kN. R1: R1 = Total downward forces - R2; R1 = 30kN - 12kN; R1 = 18kN.",
+  "solution": true,
+  "questionRef": "2011 HL Section B Q3(a)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secB-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2011 HL Section B 3(b)(i), as the State Examinations Commission printed it: a worm on a motor driving a gear attached to the rotating camera stand, labelled Motor with wormwheel, Gear attached to rotating camera stand, and Fixed base with ball bearings to allow movement.",
+  "solution": true,
+  "questionRef": "2011 HL Section B Q3(b)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secB-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answers for 2011 HL Section B 3(c), as the State Examinations Commission printed them: (i) a circuit diagram, a low voltage light sensing circuit with an LDR and a transistor switching a relay, and a mains voltage floodlight circuit through the relay contacts; (ii) Power = Voltage x Current, Power over Voltage = Current, 600W over 240V = Current, Current = 2.5A.",
+  "solution": true,
+  "questionRef": "2011 HL Section B Q3(c)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secB-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answers for 2011 HL Section B 3(d), as the State Examinations Commission printed them: (i) a critical path diagram, Source and Mould leading to Vacuum, Trim and Assemble, each node with its earliest and latest times; (ii) a Gantt chart over weeks 1 to 5: Task A in week 1, Task B in weeks 1 and 2, Task C in week 3, Task D in week 4, Task E in week 5.",
+  "solution": true,
+  "questionRef": "2011 HL Section B Q3(d)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secC-q1b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own flowcharts for 2011 HL Section C 1(b), as the State Examinations Commission printed them: (i) Start, Switch on (No loops back), a decision A = 8 (Yes to Stop), Barrier up, Wait 10 sec, Barrier down, Wait 5 sec, Inc A and back; (ii) the A = 8 decision, Yes to LED on.",
+  "solution": true,
+  "questionRef": "2011 HL Section C Q1(b)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secC-q1d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own pneumatic circuit for 2011 HL Section C 1(d)(ii), as the State Examinations Commission printed it: a push-button 3/2 valve with ports 1, 2 and 3, a flow regulator, and a single-acting cylinder with a spring return.",
+  "solution": true,
+  "questionRef": "2011 HL Section C Q1(d)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secC-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answers for 2011 HL Section C 2(b), as the State Examinations Commission printed them: the astable circuit redrawn, R1, R2 and C1 on a 555 IC driving a transistor and buzzer, with boxes Input, Process and Output; the output waveform, a square wave between 9V and 0V with T1 on and T2 off; and f = 1.4 over (2R2 + R1) x C1 = 1.4 over (2x47k + 100k) x 100uF, f = 0.07Hz.",
+  "solution": true,
+  "questionRef": "2011 HL Section C Q2(b)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secC-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own diagrams for 2011 HL Section C 2(c), as the State Examinations Commission printed them: (i) a DPDT relay circuit reversing a DC motor; (ii) a gearbox of shafts and gear wheels.",
+  "solution": true,
+  "questionRef": "2011 HL Section C Q2(c)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secC-q2d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answers for 2011 HL Section C 2(d), as the State Examinations Commission printed them: (i) Safety guard and Heat sensor each through a NOT gate into an AND gate, whose output with Power goes into a second AND gate driving Motor; (ii) the truth table, Power, Guard, Heat, Motor, Motor 1 only for Power 1, Guard 0, Heat 0.",
+  "solution": true,
+  "questionRef": "2011 HL Section C Q2(d)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secC-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketches and notes for 2011 HL Section C 3(b)(iii), as the State Examinations Commission printed them: a ring of computers, Ring topology: all workstations are connected in a closed loop, data travels to next computer, gives equal access, if one computer fails the entire network is effected; and computers round a central switch, Star topology: each workstation is connected to a central switch, easy expansion, faults can be isolated to individual computers.",
+  "solution": true,
+  "questionRef": "2011 HL Section C Q3(b)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secC-q4a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own working for 2011 HL Section C 4(a)(iii), as the State Examinations Commission printed it: No. of days = 3000 hrs over 3hrs/day = 1000days = 2.74 years.",
+  "solution": true,
+  "questionRef": "2011 HL Section C Q4(a)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secC-q5a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own picture for 2011 HL Section C 5(a)(ii), as the State Examinations Commission printed it: a metal tank with rods of the sample materials through its side, for the test the notes beside it describe.",
+  "solution": true,
+  "questionRef": "2011 HL Section C Q5(a)"
+ },
+ {
+  "file": "technology-2011-HL-scheme-secC-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own sketch for 2011 HL Section C 5(b)(ii), as the State Examinations Commission printed it: an injection moulding machine, labelled feeder hopper, heaters, screw moves to push polymer into mould, mould, tie bar and water cooling channels.",
+  "solution": true,
+  "questionRef": "2011 HL Section C Q5(b)"
  }
 ]

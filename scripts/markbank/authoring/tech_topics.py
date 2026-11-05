@@ -328,6 +328,18 @@ TOPIC_OVERRIDES = {
     'tech-2013-ol-b2c': 'tech-core-project',       # work breakdown structure, Gantt chart
     'tech-2013-ol-b3a': 'tech-core-materials',     # modern materials in sports equipment
     'tech-2013-ol-b3d': 'tech-core-project',       # cause and effect diagram (quality)
+    # 2011 Higher.
+    'tech-2011-hl-a2': 'tech-core-materials',      # workshop safety, MDF and soldering
+    'tech-2011-hl-a6-i': 'tech-core-materials',    # smart materials
+    'tech-2011-hl-a6-ii': 'tech-core-materials',   # thermochromic indicator
+    'tech-2011-hl-a8': 'tech-core-project',        # work breakdown structure
+    'tech-2011-hl-a10': 'tech-core-design',        # ergonomics
+    'tech-2011-hl-a11': 'tech-core-materials',     # thermal properties of materials
+    'tech-2011-hl-b2a': 'tech-core-materials',     # mining, drilling a pilot hole
+    'tech-2011-hl-b2b': 'tech-core-design',        # rescue capsule design
+    'tech-2011-hl-b2d': 'tech-core-ict',           # satellite, internet, optical fibre
+    'tech-2011-hl-b3b': 'tech-core-structures',    # worm and wheel, tilt mechanism
+    'tech-2011-hl-b3d': 'tech-core-project',       # critical path, Gantt chart
     # 2012 Ordinary.
     'tech-2012-ol-a8': 'tech-core-ict',            # social media sites
     'tech-2012-ol-a9': 'tech-core-materials',      # the EPA (environment)

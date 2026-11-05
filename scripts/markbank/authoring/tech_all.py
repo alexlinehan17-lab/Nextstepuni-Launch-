@@ -1259,8 +1259,17 @@ def author(bind_figures=True):
                     # whole (2014 Higher 2(d): a drawn (i) and a worded (ii)
                     # at "(c) OR (d) - 14 marks"), never hands its total to a
                     # lone surviving row: that row answers one of the asks.
+                    # ...nor does a lone row take a total split by a bare
+                    # "(4+ 2)" (2011 Higher Q8: the WBS drawn, the method
+                    # worded): the split says the row is one of two. (Bare
+                    # splits only: the "(4+4 marks)" years were measured and
+                    # carded the other way, and they stay as shipped.)
+                    bare_split = bool(re.fullmatch(r'\(\s*\d{1,2}(?:\s*\+\s*\d{1,2})+\s*\)',
+                                                   (block.notation or '').strip()))
                     rows, model = rows_for(points, marks, total, CAP[section],
-                                           single_ask=len(covered) == 1)
+                                           single_ask=len(covered) == 1
+                                           and not (roman is None and bare_split
+                                                    and len(block.terms) > 1))
                     shown = sum(r['marks'] or 0 for r in rows)
                     if model['kind'] == 'fixed' and shown != total:
                         note('the rows do not sum to the printed tariff', question)

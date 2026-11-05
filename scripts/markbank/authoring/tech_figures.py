@@ -2369,6 +2369,125 @@ REVIEWED.update({
         'back of a headrest, captioned Back of headrest.',
 })
 
+# 2011 Higher, each crop rendered and looked at.
+REVIEWED.update({
+    'technology-2011-HL-paper-secA-q1-art':
+        'Rendering of a car park whose bays are roofed with rows of solar '
+        'panels, a car parked beneath them.',
+    'technology-2011-HL-paper-secA-q2-art':
+        'A yellow triangular warning sign with a black exclamation mark.',
+    'technology-2011-HL-paper-secA-q3-art':
+        'Close-up photograph of a human eye with a targeting grid drawn over it'
+        ' and a bright red line meeting its centre.',
+    'technology-2011-HL-paper-secA-q4-art':
+        'Photograph of the Salif lemon squeezer: a shiny ribbed pointed head '
+        'standing on three long, thin curved legs.',
+    'technology-2011-HL-paper-secA-q6-art':
+        'A room temperature indicator shaped like a teddy bear in a nightcap, '
+        'holding a strip marked 17 to 29 in degrees C and F, one value '
+        'highlighted.',
+    'technology-2011-HL-paper-secA-q7-art':
+        'Drawing of a bicycle brake: a cable pulls up on two arms joined at a '
+        'centre pivot, with blue brake pads at their lower ends.',
+    'technology-2011-HL-paper-secA-q8-art':
+        'Photograph of a CD holder: a red acrylic figure at each end joined by '
+        'steel bars, CDs held between them.',
+    'technology-2011-HL-paper-secA-q9-art':
+        'A resistor colour code table, colours numbered 0 to 9, and three '
+        'resistors: R1 - Red, Red, Red, Gold; R2 - Blue, Orange, Black, Gold; '
+        'R3 - Green, White, Black, Gold.',
+    'technology-2011-HL-paper-secA-q10-art':
+        'Photograph of a computer desk with a curved metal frame, a glass top '
+        'holding a monitor, a keyboard shelf and a tower unit.',
+    'technology-2011-HL-paper-secA-q11-art':
+        'Photograph of a soldering station: a soldering iron with a yellow '
+        'handle in its holder, a control unit with a dial and a cleaning '
+        'sponge.',
+    'technology-2011-HL-paper-secA-q12-art':
+        'Photographs of three hand tools labelled A, B and C: a nutcracker, a '
+        'pair of long-nose pliers and a pair of tweezers; and a can crusher, '
+        'its lever 200 mm to the pivot with 100N at its end.',
+    'technology-2011-HL-paper-secA-q13-art':
+        'Photograph of a blue portable radio with a round speaker grille, '
+        'control buttons and a telescopic aerial.',
+    'technology-2011-HL-paper-secA-q14-art':
+        'A table headed Component, Name and Identifying feature of component, '
+        'with pictures of four electronic components; the first row is filled '
+        'in: Diode, The band on the casing indicates the cathode.',
+    'technology-2011-HL-paper-secA-q15-art':
+        'Line drawing of an exploded toy rocket: a body tube, a nose cone, a '
+        'nozzle and three fins drawn apart.',
+    'technology-2011-HL-paper-secB-q2a-art':
+        'Graphic of the Chilean mine rescue: a cross-section of the mine with '
+        'the rescue shaft down to the trapped miners refuge, and three stages, '
+        '1 Pilot hole, 2 Shaft widening and 3 Rescue capsule.',
+    'technology-2011-HL-paper-secB-q2b-art':
+        'Photograph of the rescue capsule at the mine, a tall narrow white and '
+        'red cage hanging from a crane, rescue workers beside it.',
+    'technology-2011-HL-paper-secB-q3a-art':
+        'Diagram of a beam 10m long on supports R1 and R2, loaded with 20kN at '
+        '3m and 10kN at 6m from R1.',
+    'technology-2011-HL-paper-secB-q3b-art':
+        'Photograph of a surveillance camera on a turning base, a curved arrow '
+        'A round the base and an arrow B at the camera head.',
+    'technology-2011-HL-paper-secB-q3c-art':
+        'Photograph of a white dome surveillance camera on a wall bracket.',
+    'technology-2011-HL-paper-secB-q3d-art':
+        'A table of tasks with Time (weeks) and Depends on: A Source plastic '
+        'for dome, 1, -; B Design and make mould, 2, -; C Vacuum form dome, 1, '
+        'B; D Trim to size, 1, C; E Assemble housing, 1, D.',
+    'technology-2011-HL-paper-secC-q1b-art':
+        'The incomplete program sequence: Start, a decision Switch on (No to '
+        'the left, Yes down), Barrier up, Wait 10 sec, Barrier down, Wait 5 sec'
+        ' and an arrow leading on; beside it, a photograph of a car park '
+        'barrier.',
+    'technology-2011-HL-paper-secC-q1c-art':
+        'Photograph of a SCARA robot: a vertical column carrying a yellow two-'
+        'jointed horizontal arm with a vertical tool shaft.',
+    'technology-2011-HL-paper-secC-q1d-art':
+        'A stamping device whose piston pushes blanks along, labelled Blanks '
+        'and Piston, and five pneumatic symbols labelled A to E to choose from.',
+    'technology-2011-HL-paper-secC-q2a-art':
+        "Photograph of the WEEE man sculpture's head, built from discarded "
+        'electrical goods and cables.',
+    'technology-2011-HL-paper-secC-q2b-art':
+        'Circuit diagram of the warning device: a 9V supply and switch, R1, R2 '
+        'and C1 on a 555 IC, its output through a resistor to a transistor '
+        'driving an output device; boxes Input, Process and Output; and Where '
+        'frequency = 1.4 over (2R2 + R1) x C1.',
+    'technology-2011-HL-paper-secC-q2d-art':
+        'A scroll saw, and a block diagram: Power (1 = on, 0 = off), Safety '
+        'guard (1 = not ready, 0 = ready) and Heat sensor (1 = too hot, 0 = '
+        'accepted) into a Logic circuit driving Motor (1 = on, 0 = off).',
+    'technology-2011-HL-paper-secC-q3c-art':
+        'Photograph of a computer power supply unit with its fan, sockets and '
+        'bundle of cables.',
+    'technology-2011-HL-paper-secC-q3d-art':
+        'A table of three sound qualities: A, 8 kHz, 8 bits; B, 11.025 kHz, 8 '
+        'bits; C, 44.1 kHz, 16 bits; and a photograph of a sound card.',
+    'technology-2011-HL-paper-secC-q4a-art':
+        'Photograph of an office printer with its front open, showing four '
+        'coloured cartridges.',
+    'technology-2011-HL-paper-secC-q4b-art':
+        'Drawing of a DC motor, an arrow to Output shaft A, and a table, '
+        'Confidence value for Z: 99%, 2.58; 95%, 1.96; 90%, 1.64; 80%, 1.28.',
+    'technology-2011-HL-paper-secC-q4c-art':
+        'Photographs of a car assembly line with robots and of finished cars, '
+        'and two Kanban cards, one printed with part numbers and N762, the '
+        'other a Product Line 1 KANBAN card with a barcode.',
+    'technology-2011-HL-paper-secC-q4d-art':
+        'Three graphs, (a), (b) and (c), each plotting Capacity and Demand as '
+        'Quantity against Time, the capacity drawn as steps beside a rising '
+        'demand line.',
+    'technology-2011-HL-paper-secC-q5b-art':
+        'Photograph of a computer mouse with a dark glossy casing and a red '
+        'trim line.',
+    'technology-2011-HL-paper-secC-q5d-art':
+        'Bar chart of embodied energy (GJt-1), 0 to 200, for Aluminium, Copper,'
+        ' Polystyrene, Steel, Ceramics, MDF and Hardwood, the Aluminium bar the'
+        ' longest.',
+})
+
 REJECTED = {
     'technology-2021-OL-paper-secA-q11-art': 'an empty ruled answer box, not a picture',
     'technology-2023-HL-paper-secA-q7-art': 'a ruled answer line is clipped along the bottom edge',
