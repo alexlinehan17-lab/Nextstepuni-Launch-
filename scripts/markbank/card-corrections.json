@@ -899,21 +899,6 @@
   }
  },
  "computer-science": {
-  "cs-2021-ol-q4": {
-   "reason": "The printed prompt explicitly refers to Figure 1. The inspected crop now carries the official warehouse-drone image, while the duplicated parser stem is removed.",
-   "set": {
-    "stem": null,
-    "figureKey": "computer-science-2021-OL-paper-q4-figure"
-   }
-  },
-  "cs-2021-ol-q6": {
-   "reason": "The parser lost the actual ‘What is HTTP?’ line and all four tick-box choices. The prompt is restored verbatim and the inspected official choice layout is attached before reveal.",
-   "set": {
-    "stem": null,
-    "questionText": "(a) Answer the following question by putting a tick (✓) in the relevant box. Tick one box only. What is HTTP? (b) Describe one difference between the World Wide Web (WWW) and the Internet.",
-    "figureKey": "computer-science-2021-OL-paper-q6-figure"
-   }
-  },
   "cs-2023-hl-q10": {
    "reason": "The unsorted list was flattened into the prose stem. It is now shown through an inspected crop of Figure 5 and the stem retains only the printed explanatory context.",
    "set": {

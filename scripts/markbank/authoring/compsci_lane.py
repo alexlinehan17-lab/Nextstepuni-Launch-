@@ -871,9 +871,19 @@ def sittings():
     return out
 
 
+def figure_index():
+    """Every figure a card may name: figures.json, with the curated crops of
+    figures-computer-science.json read over it, as build-deck reads them."""
+    figures = json.load(open(FIGURES, encoding='utf8'))
+    curated = os.path.join(ROOT, 'components', 'MarkBank', f'figures-{SUBJECT}.json')
+    if os.path.exists(curated):
+        figures.update(json.load(open(curated, encoding='utf8')))
+    return figures
+
+
 def build(targets):
     deck = json.load(open(AUTHORED, encoding='utf8'))
-    figures = json.load(open(FIGURES, encoding='utf8'))
+    figures = figure_index()
     lane_ids = set()
     made = []
     withdrawn = {}

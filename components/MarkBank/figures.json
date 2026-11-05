@@ -58029,5 +58029,151 @@
   "year": 2024,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q4-fig1": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q4-fig1.png",
+  "md5": "62590ab2fd03fe40d291b8b01b768532",
+  "alt": "Figure 1: a photograph of a warehouse aisle between tall blue racks of boxes, with a fleet of small orange robots carrying goods along the floor.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q4",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q6-boxes": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q6-boxes.png",
+  "md5": "9fc42286bba5d705de42ca1c4d8ac88b",
+  "alt": "The four choices printed with Question 6(a) under What is HTTP?, each with an empty tick box: the language used to program web pages; the method for encoding data securely; the web browser; the protocol for transferring hypertext for webpages.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q6(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q5-fig2": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q5-fig2.png",
+  "md5": "e3516a1746122bdd08f85a5ce97013f3",
+  "alt": "Figure 2: a laptop, a phone and a desktop computer labelled Clients, joined through a cloud labelled Internet to a machine labelled Server.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q5",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q7-fig3": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q7-fig3.png",
+  "md5": "f1bd923f4d8449e2cc24f65e217d7135",
+  "alt": "Figure 3: a smooth wave labelled Analogue input beside a square wave labelled Digital input.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q7",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q13-fig4": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q13-fig4.png",
+  "md5": "b445ed3f80a603719bd9ef4d251056e5",
+  "alt": "Figure 4: an iterative design cycle drawn as arrows, Investigate, Plan, Design, Create, Evaluate and Document, with an Iterate arrow looping from Evaluate back to Plan.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q13(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q13-fig5": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q13-fig5.png",
+  "md5": "a251b2fbdb7a8695e9967d9cac88fe57",
+  "alt": "Figure 5: two screenshots of the COVID Tracker app. The first shows first and second dose vaccination counts, 371 cases and 24 deaths on 23rd March, and a bar chart of daily confirmed cases; the second shows the national picture, hospital and ICU figures for the last 24 hours, and tests completed and the positive rate for the last 7 days. Both have a tab bar: Updates, Vaccine Stats, COVID Check-In, Contact Tracing.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q13(c)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q15b-gates": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q15b-gates.png",
+  "md5": "588034d20c7b90d465667ff727945612",
+  "alt": "The two logic gates printed with Question 15(b)(i): a NOT gate with input 0, and an AND gate with inputs 0 and 1, each output on a blank line.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q15(b)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q15b-fig7": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q15b-fig7.png",
+  "md5": "93c384419978341821b3568a7ddd99f3",
+  "alt": "Figure 7: an OR gate with inputs A and B and output out. Below it, the truth table, INPUTS A and B reading 0 0, 0 1, 1 0 and 1 1, and the OUTPUTS column A OR B blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q15(b)(ii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q15c-fig8": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q15c-fig8.png",
+  "md5": "64e6e37e8533ca91b0eea52d3d971e48",
+  "alt": "Figure 8: four stacked layers of a computer system, from top to bottom User, Application, Operating System and Hardware, with arrows passing down and up between neighbouring layers.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q15(c)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-paper-q16a-code": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q16a-code.png",
+  "md5": "49e3e49e46bc332a6ecd65255b9d57d9",
+  "alt": "The nine-line program Question16_A.py as printed in the Section C booklet: two comment lines, pin = \"1579\", userTry = input(\"Enter PIN:\"), then if userTry == pin: print(\"Welcome\").",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q16(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-scheme-q2": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-scheme-q2.png",
+  "md5": "c3e53477892be78fe737d335aa48d7de",
+  "alt": "The marking scheme's working for Question 2: the digits 1 1 0 1 over the place values 2 to the powers 3, 2, 1 and 0, then 8 + 4 + 0 + 1 = 13.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q2",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-scheme-q15b-i": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-scheme-q15b-i.png",
+  "md5": "320843969192e67de81bb90410d4c806",
+  "alt": "The marking scheme's answers to Question 15(b)(i): the NOT gate with input 0 gives 1, and the AND gate with inputs 0 and 1 gives 0.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q15(b)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-OL-scheme-q16a": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-scheme-q16a.png",
+  "md5": "8bb83417a42f476452d2d14a6a98bb8c",
+  "alt": "The marking scheme's possible solution to Question 16(a), lines 1 to 20: pin = \"1579\"; loggedIn = False and failedAttempts = 0; while not loggedIn and (failedAttempts < 3): read userTry (with the comment #input command is asking the user for a PIN); if it equals pin print Welcome and set loggedIn = True, else print Incorrect PIN and add 1 to failedAttempts; after the loop, if failedAttempts >= 3 print You have entered the PIN incorrectly, failedAttempts, times.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q16(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission"
  }
 }

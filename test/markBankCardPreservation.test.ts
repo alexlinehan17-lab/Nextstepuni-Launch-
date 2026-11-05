@@ -755,9 +755,10 @@ const decks = [
    * 2025 Ordinary re-authored (batch 1b); its whole-question cards cs-2025-ol-q13, -q14 and -q15 split per the coordinator's ruling of 5 Nov and withdrawn onto -q13-a-ii, -q14-c and -q15-b-i: 213 -> 215.
    * 2022 Higher re-authored (batch 1b); its whole-question card cs-2022-hl-q14 split per the coordinator's ruling of 5 Nov and withdrawn onto -q14-a-i: 349 -> 350.
    * 2022 Ordinary re-authored (batch 1b); its Section C card cs-2022-ol-q16 (seven parts, over the six-row cap) split into Q16(a)(i)-(vii) and withdrawn onto -q16-a-i: 215 -> 221.
-   * 2024 Ordinary re-authored (batch 1b); its whole-question card cs-2024-ol-q16, beside cs-2024-ol-q16-b, split per the coordinator's ruling of 5 Nov into Q16(a)(i)-(vi) and withdrawn onto -q16-a-i: 221 -> 226. */
+   * 2024 Ordinary re-authored (batch 1b); its whole-question card cs-2024-ol-q16, beside cs-2024-ol-q16-b, split per the coordinator's ruling of 5 Nov into Q16(a)(i)-(vi) and withdrawn onto -q16-a-i: 221 -> 226.
+   * 2021 Ordinary re-authored (batch 1b); cs-2021-ol-q15 (whole Q15 beside its part cards) withdrawn onto -q15-b-i and cs-2021-ol-q16 (whole Section C, seven parts) onto -q16-a-i, per the coordinator's ruling of 5 Nov: 226 -> 232. */
   ['computer-science:higher', COMPUTER_SCIENCE_HIGHER, 350, '909b43be51e58055828602aafa0b8ee95b8735dbc7d18422b15f89a8374a4249'],
-  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 226, 'bacafd3d62aa1ece3a28c2872dedd9c031046fd8d10125c05aacc7325db303ef'],
+  ['computer-science:ordinary', COMPUTER_SCIENCE_ORDINARY, 232, '73a289b4847405f7c65dfc4fb6b2fa059345d43a855e4c87ad2910e3ebad1ba1'],
   /* Engineering landed after this test's previous update. Enrol it explicitly
    * so a later regeneration cannot silently omit or replace any of its cards. */
   /* 2026-09-11: five agents, one per sitting, worked Engineering's open asks
@@ -1470,6 +1471,7 @@ describe('Mark Bank card preservation', () => {
     // 2022 Higher split, -1 whole + 2 parts: 23,572.
     // 2022 Ordinary Q16 split, -1 whole + 7 parts: 23,578.
     // 2024 Ordinary Q16 split, -1 whole + 6 parts: 23,583.
+    // 2021 Ordinary splits, -2 whole + 8 parts: 23,589.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
@@ -1486,9 +1488,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(23_583 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(23_589 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(23_583 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(23_589 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length
@@ -1851,7 +1853,7 @@ describe('Mark Bank card preservation', () => {
     // shipped card for a whole question beside that question's part cards is
     // withdrawn onto the question's first new part card.
     const computerScienceAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('cs-'));
-    expect(computerScienceAliasIds).toEqual(['cs-2022-hl-q14', 'cs-2022-ol-q16', 'cs-2023-ol-q13', 'cs-2024-ol-q16', 'cs-2025-ol-q13', 'cs-2025-ol-q14', 'cs-2025-ol-q15']);
+    expect(computerScienceAliasIds).toEqual(['cs-2021-ol-q15', 'cs-2021-ol-q16', 'cs-2022-hl-q14', 'cs-2022-ol-q16', 'cs-2023-ol-q13', 'cs-2024-ol-q16', 'cs-2025-ol-q13', 'cs-2025-ol-q14', 'cs-2025-ol-q15']);
     expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
       + geographyAliasedIds.length + englishAliasIds.length + biologyAliasIds.length
       + chemistryAuditAliases.length + technologyAliasIds.length + computerScienceAliasIds.length);
