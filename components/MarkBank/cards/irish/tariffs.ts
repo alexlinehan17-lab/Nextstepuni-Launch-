@@ -169,11 +169,20 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   text = text.replace(SPLIT_NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
   text = text.replace(COUNT_NOTE, note => { directions.push(tidy(note)); return ' ¶ '; });
   text = text.replace(LIFTED_LINES, note => { directions.push(tidy(note)); return ' ¶ '; });
+  // "2 phointe eolais ag teastáil 2 Lomphointe = 2 mharc (1 mharc + 1 mharc) Forbairt = 5 mharc …" (2014 Ordinary 3B(a)(i)): how
+  // many points the answer needs, on its own line over the rows that price them, a direction.
+  text = text.replace(/\b\d+\s+phointe eolais ag teastáil(?=\s+\d+\s+[A-ZÁÉÍÓÚ])/g, note => { directions.push(tidy(note)); return ' ¶ '; });
   // A note the scheme sets in brackets ("(Is leor dhá phointe eolais.)") leaves its brackets behind: they go with it.
   text = text.replace(/\(\s*¶\s*\)/g, ' ¶ ');
   // "Treoir: Ní mór …" whose note went to the directions leaves its heading behind: it goes with it.
   text = text.replace(/\bTreoir:\s*¶/g, ' ¶ ');
   text = text.replace(/\s+/g, ' ');
+  // "Teideal an úrscéil = 1 mharc (2 mharc) Ainm an údair = 1 mharc" (2014 Ordinary 2B(a)): the subtotal printed at the right of
+  // the first row's line, before the last row it totals. Where the two rows add up to it, it is read after them, as printed
+  // elsewhere ("Teideal … = 1 mharc Ainm … = 1 mharc (2 mharc)").
+  text = text.replace(/(=\s*(\d+)\s*m?h?arc\b)\s*\((\d+)\s*(m?h?arc)\)\s+([^=•¶()]{1,40}?=\s*(\d+)\s*m?h?arc\b)(?=\s*(?:¶|$))/g,
+    (whole: string, price: string, first: string, total: string, unit: string, next: string, second: string) =>
+      (Number(first) + Number(second) === Number(total) ? `${price} ${next} (${total} ${unit})` : whole));
 
   // One pass over the sub-question markers: each segment is a prompt, then its openers and priced phrases in print order.
   const cuts = [0, ...[...text.matchAll(SUB)].map(match => match.index!)];
@@ -225,11 +234,14 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
       // The phrase is the last clause before its price; what was printed before it is a direction.
       const raw = body.slice(phraseStart, match.index! + match[1].length);
       // The alternatives are disjoint (a "(" is read by exactly one), so the scan is linear in the clause.
-      const boundary = raw.search(/[.:;!?)]\s+(?=[A-ZÁÉÍÓÚ(])(?:[^.:;!?(]|\([^)]*\)|\((?![^)]*\)))*$/);
+      // A clause may open with its count ("… sa dán. 2 Íomhá / 2 phictiúr a lua = 2 mharc", 2014 Ordinary 3B(a)(ii)).
+      const boundary = raw.search(/[.:;!?)]\s+(?=[A-ZÁÉÍÓÚ(]|\d+\s+[A-ZÁÉÍÓÚa-záéíóú])(?:[^.:;!?(]|\([^)]*\)|\((?![^)]*\)))*$/);
       const clause = boundary >= 0 ? raw.slice(boundary).replace(/^[.:;!?)]\s+/, '') : raw;
       if (clause.length < raw.length) directions.push(stripMarker(raw.slice(0, raw.length - clause.length)));
       let phrase = stripMarker(clause);
-      phrase = phrase.replace(/^[^A-Za-zÁÉÍÓÚáéíóú]+/, '');
+      // A count the phrase opens with is its own ("2 shampla = 8 marc (4 mharc + 4 mharc)", 2014 Ordinary 3B); other leading
+      // marks are not.
+      if (!/^\d+\s+[A-Za-zÁÉÍÓÚáéíóú]/.test(phrase)) phrase = phrase.replace(/^[^A-Za-zÁÉÍÓÚáéíóú]+/, '');
       if (!phrase || /^\d+\s*m?h?arc$/i.test(phrase)) continue;
       const first = Number(match[2]);
       const more = (match[3].match(/\d+/g) ?? []).map(Number);
@@ -245,6 +257,21 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
     if (eachPoint && tokens.length === 0 && !parts.length && !loose.length && Number(eachPoint[1]) * Number(eachPoint[2]) === source.totalMarks) {
       tokens.push({ kind: 'row', text: tidy(eachPoint[0]), marks: source.totalMarks, steps: range(source.totalMarks),
         at: eachPoint.index, end: eachPoint.index + eachPoint[0].length });
+    } else if (eachPoint && tokens.length === 0 && !parts.length && !loose.length && Number(eachPoint[1]) > 1 && Number(eachPoint[2]) === source.totalMarks) {
+      // The same rule on a criterion worth one point (2014 Ordinary 2A(a) Hurlamaboc prints five points to cover and prices the
+      // summary "5 phointe eolais agus 5 mharc ar gach pointe eolais"; each printed point is a criterion at 5): the rule's price
+      // of one point is the row, in single marks; the point's own words before it are the prompt.
+      const one = /(\d+)\s*m?h?arc ar gach pointe eolais/i.exec(eachPoint[0])!;
+      tokens.push({ kind: 'row', text: tidy(one[0]), marks: source.totalMarks, steps: range(source.totalMarks),
+        at: eachPoint.index, end: eachPoint.index + eachPoint[0].length });
+    }
+    // "(2 phointe eolais ar 4 mharc an ceann)" with nothing else priced (2014 Ordinary 3A(a)(ii)): the points the answer needs at
+    // their own price, where they add up to the criterion's marks: one row in the scheme's words, one step a point ([0, 4, 8]).
+    const bracketPoints = /\((\d+)\s*phointe eolais ar (\d+)\s*m?h?arc an ceann\)/i.exec(body);
+    if (bracketPoints && tokens.length === 0 && !parts.length && !loose.length && Number(bracketPoints[1]) > 1
+      && Number(bracketPoints[1]) * Number(bracketPoints[2]) === source.totalMarks) {
+      tokens.push({ kind: 'row', text: tidy(bracketPoints[0].slice(1, -1)), marks: source.totalMarks,
+        steps: cumulative(Array(Number(bracketPoints[1])).fill(Number(bracketPoints[2]))), at: bracketPoints.index, end: bracketPoints.index + bracketPoints[0].length });
     }
     // "Na heachtraí is mó a tharlaíonn don duine sin = 22 marc 5 phointe eolais ag teastáil (5 mharc an ceann ar an gcéad dhá
     // phointe eolais + 4 mharc an ceann ar na trí phointe eolais eile)" (Ordinary 2B, 2018-2026): the priced line names what
