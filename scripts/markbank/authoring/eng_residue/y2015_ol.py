@@ -285,7 +285,7 @@ CARDS = [
          why='A lead-in over three terms set as romans, "any two"; scheme p10 describes '
              'each under its name, "Any two descriptions: Award 2 @ 8 marks".',
          topic='eng-2-6',
-         lifted=[[join(S(10, 105, 385, 200, 405), S(10, 105, 401, 436, 518)),
+         lifted=[[join(S(10, 105, 385, 200, 405), S(10, 105, 401, 450, 518)),
                   join(S(10, 105, 526, 170, 546), S(10, 105, 539, 465, 587)),
                   join(S(10, 108, 595, 205, 615), S(10, 108, 608, 475, 683))]],
          row_kind='anyN', group=(2, 8), marks=[16], tariff='fixed', total=16,
@@ -404,7 +404,8 @@ CARDS = [
              'answer; "Process Award 9 Marks".',
          topic='eng-1-9', stem=False,
          question_lift=P(4, *_A5, more=[(118, 641, 550, 660)]),
-         lifted=[[join(S(13, 88, 590, 190, 610), S(13, 88, 604, 440, 694)),
+         lifted=[[join(S(13, 88, 590, 190, 610), S(13, 88, 604, 440, 637),
+                       S(13, 88, 634, 470, 694)),
                   join(S(14, 88, 68, 180, 88), S(14, 88, 82, 445, 158)),
                   join(S(14, 94, 247, 200, 267), S(14, 94, 261, 430, 310))]],
          row_kind='anyN', group=(1, 9), marks=[9], tariff='fixed', total=9,

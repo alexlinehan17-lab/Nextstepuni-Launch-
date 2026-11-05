@@ -194,12 +194,18 @@ const ROOT = resolve(__dirname, '..');
  */
 const comparable = (text: string) => comparableScheme(text);
 
-const schemeFor = (card: { year: number; level: string; subjectId: string }) =>
+// A card from the SEC's deferred sitting ("eng-2022-hl-deferred-...") traces
+// to that sitting's own scheme ("2022-hl-deferred.md"), as build-deck reads it.
+// Economics' branch marks its own the same way (claude/economics-lane-20261104).
+const deferredCard = (card: { id?: string; subjectId: string }) =>
+  card.subjectId === 'engineering' && /^eng-\d{4}-(?:hl|ol)-deferred-/.test(card.id ?? '');
+
+const schemeFor = (card: { id?: string; year: number; level: string; subjectId: string }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
-    `${card.year}-${card.level === 'higher' ? 'hl' : 'ol'}.md`);
+    `${card.year}-${card.level === 'higher' ? 'hl' : 'ol'}${deferredCard(card) ? '-deferred' : ''}.md`);
 
 const schemeCache = new Map<string, string>();
-const schemeText = (card: { year: number; level: string; subjectId: string }) => {
+const schemeText = (card: { id?: string; year: number; level: string; subjectId: string }) => {
   const path = schemeFor(card);
   if (!schemeCache.has(path)) {
     schemeCache.set(path, existsSync(path) ? comparable(readFileSync(path, 'utf8')) : '');
@@ -521,7 +527,7 @@ describe('every card points at the question paper it came from', () => {
       // papers under separate SEC subject codes; the citation names which,
       // and the corpus key follows it. Same helper the build uses.
       const entry = paperEntry(
-        corpusSubjectFor(card.subjectId, card.questionRef), card.year, card.level);
+        corpusSubjectFor(card.subjectId, card.questionRef), card.year, card.level, card.paperFileid);
       if (!entry) { bad.push(`${card.questionRef}: no ${card.subjectId} paper for ${card.year} ${card.level}`); continue; }
       const strip = (f?: string) => f?.replace(/\.pdf$/, '');
       const papers = entry.papers.map((p: { doc?: { f?: string } }) => strip(p.doc?.f));
@@ -535,10 +541,15 @@ describe('every card points at the question paper it came from', () => {
   });
 
   test('and at the paper holding its own section', async () => {
-    const { resolvePaperFileid, corpusSubjectFor } =
+    const { resolvePaperFileid, corpusSubjectFor, deferredPaperEntry } =
       await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
       .filter(c => {
+        if (deferredCard(c)) {
+          const deferred = deferredPaperEntry(c.subjectId, c.year, c.level);
+          return c.paperFileid !== null
+            && c.paperFileid !== String(deferred?.papers?.[0]?.doc?.f ?? '').replace(/\.pdf$/, '');
+        }
         // Maths uses A/B for marking-scheme tariff sections, while the source
         // documents are Paper 1 and Paper 2. Resolve from the explicit paper
         // number exactly as build-deck does; never reinterpret B as Paper 2.

@@ -61,7 +61,10 @@ from lib import (Author, Refused, COMMAND_WORD,          # noqa: E402
 from eng_scheme import EngScheme                            # noqa: E402
 from eng_topics import topic_for, concept_for               # noqa: E402
 import cardlint                                             # noqa: E402
+import eng_lists                                            # noqa: E402
+import eng_rownotes                                         # noqa: E402
 import eng_residue                                          # noqa: E402
+import eng_deferred                                         # noqa: E402
 
 MAX_ROWS = 12
 
@@ -658,7 +661,15 @@ def main():
     verdicts = []
     examples = collections.defaultdict(list)
 
-    for (year, level, _), leaves in sorted(idx.items()):
+    # June's sittings, then each deferred one (keyed 'Deferred' by
+    # paper_census.census_engineering_deferred), which is read and carded as a
+    # sitting of its own under the level token '<level>-deferred'
+    # (eng_deferred): its own paper and scheme, its own ids and citations.
+    for (year, level, paper), leaves in sorted(
+            idx.items(), key=lambda kv: (kv[0][0], kv[0][1], kv[0][2] or '')):
+        deferred = paper == 'Deferred'
+        if deferred:
+            level = level + eng_deferred.SUFFIX
         # A sitting is authored once its scheme has been extracted to the
         # markdown the provenance gate reads; until then it stays open in the
         # ledger rather than stopping every other sitting. The census now
@@ -668,7 +679,8 @@ def main():
                 ROOT, 'examiner-reports', 'engineering', 'schemes',
                 f'{year}-{level}.md')):
             continue
-        A = Author('engineering', year, level)
+        A = (eng_deferred.DeferredAuthor(year, level) if deferred
+             else Author('engineering', year, level))
         # The SAME scheme instance lib.card builds the card from, so that what
         # this loop resolves and selects with `use` is the list the card is
         # made of -- including which branch of an OR a key is answered from.
@@ -1077,6 +1089,20 @@ def main():
             checked=lambda key, y=year, lv=level: CHECKED.get((y, lv) + key),
             withdrawn=set(WITHDRAWN))
         cards.extend(A.cards)
+
+    # Layout the page prints and a one-line string loses: a list the paper
+    # sets down the page, one item a row, and a scheme table's two cells.
+    # Line breaks and a " — " between cells only; every word stays the page's.
+    eng_lists.vertical_lists(cards)
+    eng_lists.table_cells(cards)
+    eng_lists.degree_signs(cards)
+    # Alternatives the session would run together with "or" in one row: each
+    # its own option in a count-1 menu at the row's price.
+    eng_lists.alternative_menus(cards)
+    # A card's notes never ship; what a student must see (an OR, the "12 + 12
+    # + 11" price, a reading of the scheme, scheme text no row carries, a
+    # misprint) goes on the row it qualifies, as the row's contextNote.
+    eng_rownotes.promote(cards)
 
     if args.verdicts:
         with open(args.verdicts, 'w', encoding='utf-8') as fh:

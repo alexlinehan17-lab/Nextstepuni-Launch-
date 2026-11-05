@@ -93,6 +93,12 @@ CROPS = {
     'engineering-2014-HL-paper-q8cor-crop': dict(
         doc='paper', page=11, rect=(190, 622, 440, 795), ref='2014 HL Q8(c)'),
     # ---- scheme: the drawings the answers are given with -------------------
+    # Q1(h)'s note on Marie Curie as printed: the text layer misreads her
+    # surname on the note's first line, so the option is lifted from after it
+    # and the note itself is shown with the answer (scheme pp5-6).
+    'engineering-2014-HL-scheme-q1h-sol': dict(
+        doc='scheme', parts=[(5, (100, 716, 560, 763)), (6, (100, 64, 560, 96))],
+        solution=True, ref='2014 HL Q1(h)'),
     'engineering-2014-HL-scheme-q1l-sol': dict(
         doc='scheme', page=6, rect=(412, 437, 515, 477), image=True, solution=True,
         ref='2014 HL Q1(l)'),
@@ -197,16 +203,21 @@ CARDS = [
          notes="The scheme prints '5'."),
     dict(key=(1, 'h', None),
          why='A lead-in over three people set as romans, "any one"; scheme pp5-6 write a '
-             'note on each under the name, "5". The text layer reads Marie Curie\'s full '
-             'name on the note\'s first line as "Skáodowska" where the page prints '
-             '"Skłodowska", so that line is lifted from after the name.',
+             'note on each under the name, "5". The text layer cannot read Marie Curie\'s '
+             'surname on her note\'s first line (its "ł" has no Unicode in the font and '
+             'reaches the layer as "á"), so that option keeps only what the layer reads '
+             'correctly, lifted from after the name, and the note is shown as printed '
+             'with the answer.',
          topic='eng-3-14',
          lifted=[[join(S(5, 102, 646, 165, 662), S(5, 102, 660, 565, 718)),
                   join(S(5, 102, 716, 172, 733), S(5, 229, 730, 565, 746),
                        S(5, 102, 744, 565, 761), S(6, 102, 65, 555, 95)),
                   join(S(6, 102, 93, 180, 109), S(6, 102, 107, 560, 151))]],
          row_kind='anyN', group=(1, 5), marks=[5], tariff='fixed', total=5,
-         notes="The scheme prints '5'."),
+         figure='engineering-2014-HL-scheme-q1h-sol',
+         notes="The scheme prints '5'. The scheme's note on Marie Curie is shown as printed: "
+               "the option for her is lifted from after her full name on the note's first "
+               "line, which the scheme's text layer cannot read."),
     dict(key=(1, 'i', None),
          why='The hand is photographed beside (i); scheme p6 lists the reasons in one '
              'sentence, each lifted by its own word rectangle. "(Any two) 3 + 2".',
@@ -283,7 +294,7 @@ CARDS = [
              'drawing of it, shown with the answer; "4 + 3 + 3" over them, no paragraph '
              'priced apart, so an ordered split of the paragraphs.',
          topic='eng-3-14', stem=False,
-         lifted=[S(8, 66, 65, 450, 123), S(8, 66, 121, 455, 165), S(8, 66, 163, 455, 207),
+         lifted=[S(8, 66, 65, 460, 123), S(8, 66, 121, 455, 165), S(8, 66, 163, 455, 207),
                  S(8, 66, 205, 450, 236)],
          tariff='orderedSplit', notation='4 + 3 + 3', ladder=10, total=10,
          figure='engineering-2014-HL-scheme-q1p-sol',
@@ -379,7 +390,7 @@ CARDS = [
              'elements, each under its name; the 8 for the part is not split between the two '
              'asked for.',
          lifted=[S(11, 100, 346, 565, 390), S(11, 100, 388, 480, 404), S(11, 100, 402, 400, 418),
-                 S(11, 100, 416, 525, 446), S(11, 100, 444, 500, 475)],
+                 S(11, 100, 416, 525, 446), S(11, 100, 444, 545, 475)],
          tariff='questionTotal', total=8,
          notes="The scheme prints '(Any two) 8 + 8' for the two parts answered."),
     dict(key=(3, 'b', 'i'), topic='eng-1-3',

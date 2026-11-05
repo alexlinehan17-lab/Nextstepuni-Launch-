@@ -621,6 +621,47 @@ REJECTED = {
     **{(2014, 'hl', 6, 'a', r): 'cuts off the label "casing for games controller"'
        for r in ('i', 'ii')},
     (2014, 'hl', 8, 'a', None): 'takes in the page\'s "(50 marks)"',
+    # 2010 Higher, looked at 2026-11-05 (the residue cuts each by eye):
+    (2010, 'hl', 1, 'a', None): 'cuts the captions (i)-(iii) under the three signs in half',
+    (2010, 'hl', 1, 'm', None): 'takes in the page footer "Page 3 of 12"',
+    (2010, 'hl', 1, 'p', None): 'takes in the foot of (p)\'s own line over the picture',
+    **{(2010, 'hl', 2, 'a', r): 'takes in (ii)\'s own lines beside the drawing'
+       for r in ('i', 'ii')},
+    **{(2010, 'hl', 4, 'b', r): 'cuts off the temperature axis title'
+       for r in ('i', 'ii', 'iii')},
+    **{(2010, 'hl', 7, 'b', r): 'takes in the foot of (b)\'s own line over the chips'
+       for r in ('i', 'ii', 'iii')},
+    # 2011 Higher, looked at 2026-11-05 (the residue cuts each by eye):
+    (2011, 'hl', 1, 'm', None): 'takes in the page footer "Page 3 of 12"',
+    **{(2011, 'hl', 3, 'b', r): 'takes in the foot of (b)\'s own line over the diagram'
+       for r in ('i', 'ii')},
+    **{(2011, 'hl', 3, 'c', r): 'takes in the foot of (c)\'s own line over the readings'
+       for r in ('i', 'ii')},
+    (2011, 'hl', 4, 'c', None): 'takes in the foot of (c)\'s own line over the drawings',
+    **{(2011, 'hl', 7, 'c', r): 'takes in the foot of (c)\'s own line over the cutters'
+       for r in ('i', 'ii')},
+    (2011, 'hl', 8, 'a', None): 'cuts off the captions (i) and (ii) under the two mechanisms',
+    # 2012 Higher, looked at 2026-11-05 (the residue cuts each by eye):
+    **{(2012, 'hl', 1, 'o', r): 'cuts off the laser beam leaving the tube at C'
+       for r in ('i', 'ii', 'iii')},
+    **{(2012, 'hl', 3, 'c', r): 'cuts off the temperature axis title and the "% Carbon" axis'
+       for r in ('i', 'ii')},
+    **{(2012, 'hl', 4, 'c', r): 'cuts the two shear-force arrows off at its edges'
+       for r in ('i', 'ii')},
+    **{(2012, 'hl', 7, 'b', r): 'takes in the foot of the line "engineering system shown." over '
+                                'the picture'
+       for r in ('i', 'ii')},
+    (2012, 'hl', 8, 'a', None): 'cuts off the captions (i) and (ii) under the two mechanisms',
+    # 2013 Higher, looked at 2026-11-05 (the residue cuts each by eye):
+    (2013, 'hl', 1, 'm', None): 'takes in the page footer "Page 3 of 12" and cuts off A',
+    **{(2013, 'hl', 1, 'o', r): 'cuts off the zones A and B'
+       for r in ('i', 'ii')},
+    **{(2013, 'hl', 2, 'c', r): 'the eddy current drawing is (c)(ii)\'s alone; cut by eye '
+                                'for it'
+       for r in ('i', 'ii')},
+    **{(2013, 'hl', 3, 'b', r): 'cuts off the carbon axis, its values and the temperature '
+                                'axis title'
+       for r in ('i', 'ii')},
     # 2015 Higher, looked at 2026-11-04 (the residue cuts each by eye):
     **{(2015, 'hl', 2, 'b', r): 'cuts off the stress axis, its values and the fractured '
                                 'specimen at C'
@@ -644,7 +685,12 @@ def worklist():
     import cardlint
     out = []
     idx = R.leaf_index(census_subject('engineering'))
-    for (year, level, _), leaves in sorted(idx.items()):
+    for (year, level, paper), leaves in sorted(
+            idx.items(), key=lambda kv: (kv[0][0], kv[0][1], kv[0][2] or '')):
+        # A deferred sitting's pictures are cut by hand in its eng_residue
+        # module; June's paper is not its paper.
+        if paper == 'Deferred':
+            continue
         # A sitting whose scheme has not been extracted yet has nothing to
         # card, and its Author cannot be built (eng_all skips it the same way).
         if not os.path.exists(os.path.join(ROOT, 'examiner-reports', 'engineering',

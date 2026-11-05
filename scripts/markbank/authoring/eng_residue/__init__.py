@@ -24,6 +24,10 @@ A module holds:
   FOLDED {card id: why} -- an automatic card for ONE option of a printed list
          ("Explain any three of the following: ... (iv) Feed."), which the
          module's card for the list's letter carries instead.
+  SPLIT  {card id: why} -- the reverse: an automatic card at a LETTER over
+         romans that are questions of their own ("Answer any three of the
+         following:" over five separate asks, each priced at 6), which the
+         module cards roman by roman instead.
 
 A residue card the automatic author already builds is an error, not a merge:
 the entry is stale and must go, or the two would disagree about one id --
@@ -49,7 +53,9 @@ PASS = ('use', 'marks', 'tariff', 'total', 'row_kind', 'notation', 'ladder',
 
 
 def module(year, level):
-    name = f'eng_residue.y{year}_{level}'
+    # A deferred sitting's level token is '<level>-deferred' (eng_deferred);
+    # its module is y<year>_<level>_deferred.py.
+    name = f'eng_residue.y{year}_{level}'.replace('-', '_')
     try:
         return importlib.import_module(name)
     except ModuleNotFoundError as exc:
@@ -143,6 +149,18 @@ def build(A, year, level, built, figure_keys, topic_for_part, keeps_stem,
             raise SystemExit(f'eng_residue {year} {level} {cid}: only a card that '
                              f'never shipped is folded; say so ("never shipped: ...")')
         A.cards[:] = [c for c in A.cards if c['id'] != cid]
+    # A letter card the automatic author built over romans that are separate
+    # questions: dropped, and the module must card its romans. Never shipped
+    # only, as for FOLDED.
+    split = getattr(mod, 'SPLIT', {})
+    for cid, why in split.items():
+        if cid not in built or not why:
+            raise SystemExit(f'eng_residue {year} {level} {cid}: SPLIT entry for a '
+                             f'card the author does not build, or with no reason')
+        if not why.startswith('never shipped'):
+            raise SystemExit(f'eng_residue {year} {level} {cid}: only a card that '
+                             f'never shipped is split; say so ("never shipped: ...")')
+        A.cards[:] = [c for c in A.cards if c['id'] != cid]
     for entry in getattr(mod, 'CARDS', []):
         q, letter, roman = entry['key']
         cid = entry.get('id') or part_id(year, level, q, letter, roman)
@@ -205,6 +223,10 @@ def build(A, year, level, built, figure_keys, topic_for_part, keeps_stem,
         except Refused as exc:
             raise SystemExit(f'{where}: {exc}')
         made.append(cid)
+    for cid in split:
+        if not any(m.startswith(cid + '-') for m in made):
+            raise SystemExit(f'eng_residue {year} {level} {cid}: split, but the module '
+                             f'cards none of its romans')
     for cid in folded:
         letter_card = cid.rsplit('-', 1)[0]
         if letter_card not in made:

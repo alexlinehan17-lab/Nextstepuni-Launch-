@@ -21,9 +21,16 @@ interface AtlasReview {
   questions: Array<{ n: string; fileid: string; topicIds: string[] }>;
   cards: Array<{ cardId: string; markBankTopicId: string; questionNumber: string; atlasTopicIds: string[] }>;
   unchangedCards?: AtlasReview['cards'];
+  sitting?: 'main' | 'deferred';
 }
+// A review covers ONE sitting. The SEC's deferred sitting of a year is a paper
+// of its own, and its cards say so in their citation ("2022 HL Q1(a) —
+// Deferred sitting", ids "eng-2022-hl-deferred-..."), so a main-sitting review
+// scopes the year's June cards alone and a deferred review its deferred ones.
+const DEFERRED_REF = / — Deferred sitting$/;
 function cardsInReviewScope(deck: SecCard[], review: AtlasReview) {
-  return deck.filter(c => c.year === review.year);
+  const deferred = review.sitting === 'deferred';
+  return deck.filter(c => c.year === review.year && DEFERRED_REF.test(c.questionRef) === deferred);
 }
 const directory = path.resolve('scripts/markbank/atlas-reviews');
 const hasCorpus = fs.existsSync(path.resolve('paper-trail-corpus'));

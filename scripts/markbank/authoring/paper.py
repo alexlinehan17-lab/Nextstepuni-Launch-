@@ -342,8 +342,7 @@ _BARE_RUN = re.compile(r'^\([a-h]\)(?:\s+\([a-h]\))+$')
 #   2016 OL Q6(a)(iii); 2017 OL Q1(h)(i), Q7(c)(iii); 2018 OL Q2(a)(ii),
 #   Q7(c)(iii); 2019 OL Q6(a)(iii); 2026 OL Q2(d)(ii).
 # Left off where the split would put a caption somewhere the page does not:
-# 2011 OL prints Q6(a)'s four captions after (b) in its text layer, so the split
-# adds a (b)(iii); 2015 OL's Q1(h) captions would take over the letter (i) and
+# 2015 OL's Q1(h) captions would take over the letter (i) and
 # lose (i)-(m). 2012 and 2014 OL lose no caption romans. On the Higher papers it
 # moves other readings (Q8(a)(i)) and is never on.
 BARE_ROMAN_RUNS = {('engineering', y, 'ol') for y in (2010, 2013, 2016, 2017, 2018, 2019, 2026)}
@@ -352,6 +351,13 @@ BARE_ROMAN_RUNS = {('engineering', y, 'ol') for y in (2010, 2013, 2016, 2017, 20
 # drawing's caption, and Q6(a)(iii), the third lathe component's, both printed
 # on paper page 3 and page 5 (rendered and read 2026-11-04).
 BARE_ROMAN_RUNS.add(('engineering', 2015, 'ol'))
+# 2011 OL, switched on once STRIP_SET_PAGES reads its page 5 line by line
+# (below): that text layer printed Q6(a)'s four captions after (b), so the
+# split, alone, added a (b)(iii). Read in printed order the captions fall under
+# (a), and the split recovers Q2(a)(iii), the third furnace drawing's caption
+# on page 3, and Q6(a)(i)-(iv), the four work-holding photographs' (rendered
+# and read 2026-11-05).
+BARE_ROMAN_RUNS.add(('engineering', 2011, 'ol'))
 _BARE_ROMAN = r'\((?:i{1,3}|iv|vi{0,3}|ix|x)\)'
 _BARE_ROMAN_RUN = re.compile(rf'^{_BARE_ROMAN}(?:\s+{_BARE_ROMAN})+$')
 # Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
@@ -745,6 +751,24 @@ def _unweld(block, anchors):
 # level) -> {file name: pages}; strip_set_lines() reads those pages instead.
 STRIP_SET_PAGES = {
     ('biology', 2011, 'ol'): {'2011-ol-paper.pdf': (11, 12, 13)},
+    # 2013 OL Engineering page 5 sets Q6(b) and Q6(c)'s lead-in, "(c) A
+    # turning process used on a centre lathe is shown below.", in ONE text
+    # block that starts above Q6(b)'s four photograph captions, so the
+    # captions "(i) (ii) (iii) (iv)" were read after (c) and filed as (c)'s
+    # romans (census Q6(c)(iv), a part the paper does not print). Read line by
+    # line, top to bottom, the captions fall under (b) where they are printed.
+    ('engineering', 2013, 'ol'): {'2013-ol-paper.pdf': (5,)},
+    # 2011 OL Engineering page 5 the same way: Q6(a)'s four photograph
+    # captions "(i) (ii) (iii) (iv)" sit in the text layer after (b), and were
+    # read as (b)'s romans (census Q6(b)(iv), a part the paper does not print,
+    # and roman-gap Q6(b)). Read line by line they fall under (a).
+    ('engineering', 2011, 'ol'): {'2011-ol-paper.pdf': (5,)},
+    # 2010 OL Engineering page 3: Question 3's head and (a) share one block
+    # with Question 2's (d), and (a)'s two romans "(i) soften copper ...;" and
+    # "(ii) reduce the hardness ..." sit inside it indented, where the reader
+    # does not split them (census Q3(a), one leaf for two asks). Read line by
+    # line they are (a)(i) and (a)(ii).
+    ('engineering', 2010, 'ol'): {'2010-ol-paper.pdf': (3,)},
 }
 
 
@@ -897,7 +921,7 @@ def _leading(text, letters=None):
 class Paper:
     """One paper, indexed by question number and part path."""
 
-    def __init__(self, subject, year, level, component=None):
+    def __init__(self, subject, year, level, component=None, *, files=None):
         level = {'higher': 'hl', 'ordinary': 'ol'}.get(level, level)
         self.subject, self.year, self.level = subject, year, level
         self.component = component
@@ -911,7 +935,7 @@ class Paper:
         # every question number in the year.
         want = rf'{year}-{level}-{component}-paper\.pdf' if component else \
             rf'{year}-{level}(-\d+)?-paper\.pdf'
-        self.files = sorted(
+        self.files = list(files) if files is not None else sorted(
             os.path.join(root, f) for f in os.listdir(root)
             if re.fullmatch(want, f))
         if not self.files:

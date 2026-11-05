@@ -46,7 +46,14 @@ _DOCS = {}
 # p11 ("heated to 850?C", x 313-343, y 256-272). Cropped out of the page and
 # looked at, it is the degree ring; it is the only U+F0FB in the 60 Engineering
 # papers and schemes, so the repair can reach nothing else.
-ENG_GLYPHS = {'\u019e': 'tf', '\uf0fb': '\u00b0'}
+#
+# U+030A, COMBINING RING ABOVE: the 2022 Higher deferred scheme's Calibri sets
+# the degree sign as a ring over a no-break space, twice on p13 ("727  ̊C" at
+# x 294, y 137-149 and "1147  ̊C" at x 403, y 484-496). Rendered at 400 dpi it
+# is the degree ring. The only other U+030A in the 62 Engineering papers and
+# schemes is 2021 HL scheme p16's graph axis title "Temperature (  ̊C)", which
+# no lift reads; the deck refuses the bare glyph as a broken-font mark.
+ENG_GLYPHS = {'\u019e': 'tf', '\uf0fb': '\u00b0', '\u030a': '\u00b0'}
 
 
 def path_for(year, level, doc):
@@ -142,8 +149,13 @@ def lift(year, level, doc, page, rect, *, bullet=True, more=(), items=()):
         return Lift('\n'.join([text] + lines),
                     (year, level, doc, page, tuple(rect), tuple(map(tuple, more)),
                      ('items',) + tuple(map(tuple, items))))
-    return Lift(text, (year, level, doc, page, tuple(rect))
-                if not more else (year, level, doc, page, tuple(rect), tuple(map(tuple, more))))
+    obj = Lift(text, (year, level, doc, page, tuple(rect))
+               if not more else (year, level, doc, page, tuple(rect), tuple(map(tuple, more))))
+    # A piece that opens on a printed bullet and keeps it (bullet=False) --
+    # the first item of a list carried over a page break -- is recorded with
+    # a "•" after its rectangle, so `check` lifts it again the same way.
+    obj.keeps_bullet = not bullet
+    return obj
 
 
 def join(*parts):
@@ -160,6 +172,27 @@ def join(*parts):
         raise ValueError('join reads one document')
     obj = Lift(' '.join(parts), ('join',) + tuple(p.source for p in parts))
     obj.parts = parts
+    return obj
+
+
+def cells(*parts):
+    """One table row the scheme prints as cells side by side, as its cells.
+
+    The text layer runs a row's cells together ("Charpy Test Izod Test"), and
+    a cell that wraps runs into its neighbour line by line. Each piece is a
+    Lift of ONE cell -- a row's cells in turn, or a column's head and a cell
+    under it -- and the row reads them joined with " — ", the table's rule set
+    as a dash: layout, not words. `record` writes the pieces with " — "
+    between them, and `check` lifts each again and joins them the same way.
+    """
+    if len(parts) < 2 or not all(hasattr(p, 'source') and not hasattr(p, 'parts')
+                                 for p in parts):
+        raise ValueError('cells takes two or more single-page lifts')
+    if len({p.source[:3] for p in parts}) != 1:
+        raise ValueError('cells reads one document')
+    obj = Lift(' — '.join(parts), ('cells',) + tuple(p.source for p in parts))
+    obj.parts = parts
+    obj.sep = ' — '
     return obj
 
 
@@ -207,7 +240,8 @@ def record(year, level):
         if any(len(pc.source) > 5 for pc in pieces):
             raise SystemExit(f'{lf[:40]!r}: a scheme row is one rectangle a page')
         seen.add(str(lf))
-        where = ' + '.join(f'p{pc.source[3]} [{", ".join(f"{v:g}" for v in pc.source[4])}]'
+        where = getattr(lf, 'sep', ' + ').join(f'p{pc.source[3]} [{", ".join(f"{v:g}" for v in pc.source[4])}]'
+                           + ('•' if getattr(pc, 'keeps_bullet', False) else '')
                            for pc in pieces)
         lines.append(f'{where} {lf}')
     md = os.path.join(BASE, 'schemes', f'{year}-{level}.md')
@@ -231,10 +265,12 @@ def check(year, level):
     for line in (m.group(1).splitlines() if m else []):
         if not line.strip():
             continue
-        g = _re.match(r'^((?:p\d+ \[[^\]]+\](?: \+ )?)+) (.*)$', line)
-        pieces = [lift(year, level, 'scheme', int(pg), [float(v) for v in r.split(',')])
-                  for pg, r in _re.findall(r'p(\d+) \[([^\]]+)\]', g.group(1))]
-        again = pieces[0] if len(pieces) == 1 else join(*pieces)
+        g = _re.match(r'^((?:p\d+ \[[^\]]+\]•?(?: \+ | — )?)+) (.*)$', line)
+        pieces = [lift(year, level, 'scheme', int(pg), [float(v) for v in r.split(',')],
+                       bullet=not kept)
+                  for pg, r, kept in _re.findall(r'p(\d+) \[([^\]]+)\](•?)', g.group(1))]
+        glue = cells if '] — p' in g.group(1) or ']• — p' in g.group(1) else join
+        again = pieces[0] if len(pieces) == 1 else glue(*pieces)
         if str(again) != g.group(2):
             bad += 1
             print(f'MISMATCH {g.group(1)}: {g.group(2)[:60]!r} != {again[:60]!r}')

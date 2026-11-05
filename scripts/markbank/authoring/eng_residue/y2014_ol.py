@@ -168,7 +168,7 @@ CARDS = [
          topic='eng-3-12',
          question_lift=P(2, 60, 331, 430, 362),
          lifted=[S(5, 66, 672, 320, 690),
-                 join(S(5, 318, 672, 475, 690), S(5, 70, 685, 415, 701),
+                 join(S(5, 318, 672, 475, 690), S(5, 70, 685, 440, 701),
                       S(5, 70, 699, 315, 715))],
          tariff='orderedSplit', notation='3 + 2', ladder=5, total=5,
          question_figure='engineering-2014-OL-paper-q1h-crop',

@@ -698,6 +698,108 @@ SHORT_ASKS = {
                                                        'application of each instrument named."; the OR branch\'s (c) '
                                                        'captions only (i) to (iii)')
        for r, n in (('i', 'first'), ('ii', 'second'), ('iv', 'fourth'))},
+    # 2013 HL, each opened on its page (2026-11-05).
+    **{('engineering', 2013, 'hl', f'Q1(b)({r})'): ('', f'p3: the caption "({r})" under the {n} of three safety signs, '
+                                                       'under "State the purpose of any two of the safety signs shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    **{('engineering', 2013, 'hl', f'Q1(l)({r})'): (t, f'p3: the abbreviation "({r}) {t}" in "(i) IC (ii) LCD (iii) GRP '
+                                                       '(iv) CAM." under "Explain the meaning of any two of the following '
+                                                       'abbreviations:"')
+       for r, t in (('i', 'IC'), ('ii', 'LCD'), ('iii', 'GRP'), ('iv', 'CAM.'))},
+    ('engineering', 2013, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism photographs, '
+                                                   'under "Name and describe the operation of any one of the mechanisms '
+                                                   'shown."'),
+    # 2022 HL deferred sitting, opened on its page (2026-11-05): census_engineering_deferred
+    # reads it at the June key (2022, 'hl'), and June 2022 HL has no such flag.
+    ('engineering', 2022, 'hl', 'Q2(d)(i)'): ('Wi-Fi;', 'deferred paper p4: the term "(i) Wi-Fi;" in "(i) Wi-Fi; (ii) '
+                                                       'Industrial internet of things (IIoT); (iii) Sensor technology." '
+                                                       'under "Describe the function of any two of the following, with '
+                                                       'regard to smart manufacturing."'),
+    # 2010 OL, each opened on its page (2026-11-05).
+    **{('engineering', 2010, 'ol', k): (t, w) for k, t, w in (
+        ('Q2(b)(iii)', 'Brass,', 'p3: the alloy "(iii) Brass," in "(i) Soft solder, (ii) Stainless steel, (iii) Brass, '
+                                 '(iv) Bronze." under "Select any three from the alloys listed below and state the '
+                                 'metals used to produce each:"'),
+        ('Q5(c)(iii)', 'PVC,', 'p4: the term "(iii) PVC," in "(i) Thermosetting plastic, (ii) Elastic memory, (iii) '
+                               'PVC, (iv) Former." under "Describe any three of the following terms associated with '
+                               'plastic technology:"'),
+        ('Q6(b)(ii)', 'Feed,', 'p5: the term "(ii) Feed," in "(i) Chuck key, (ii) Feed, (iii) Swarf, (iv) Clearance '
+                               'angle." under "Explain any three of the following in relation to machining:"'),
+        ('Q6(b)(iii)', 'Swarf,', 'p5: the term "(iii) Swarf," in "(i) Chuck key, (ii) Feed, (iii) Swarf, (iv) '
+                                 'Clearance angle." under "Explain any three of the following in relation to '
+                                 'machining:"'))},
+    # 2010 HL, each opened on its page (2026-11-05).
+    **{('engineering', 2010, 'hl', f'Q1(a)({r})'): ('', f'p3: the caption "({r})" under the {n} of three safety signs, '
+                                                       'under "State the purpose of any two of the safety signs shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    ('engineering', 2010, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism pictures, '
+                                                   'under "Name and describe the operation of any one of the mechanisms '
+                                                   'shown:"'),
+    # 2011 HL, each opened on its page (2026-11-05).
+    **{('engineering', 2011, 'hl', f'Q1(h)({r})'): (t, f'p3: the abbreviation "({r}) {t}" in "(i) LCD (ii) PCB (iii) HSS '
+                                                       '(iv) DPDT switch." under "Select any two of the abbreviations shown '
+                                                       'and explain their meaning:"')
+       for r, t in (('i', 'LCD'), ('ii', 'PCB'), ('iii', 'HSS'))},
+    **{('engineering', 2011, 'hl', f'Q1(k)({r})'): ('', f'p3: the caption "({r})" under the {n} of two pneumatic component '
+                                                       'photographs, under "Identify any one of the pneumatic components '
+                                                       'illustrated."')
+       for r, n in (('i', 'first'), ('ii', 'second'))},
+    # 2012 HL, each opened on its page (2026-11-05).
+    **{('engineering', 2012, 'hl', f'Q1(c)({r})'): ('', f'p3: the caption "({r})" under the {n} of three safety signs, '
+                                                       'under "State the purpose of any two of the safety signs shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'))},
+    **{('engineering', 2012, 'hl', f'Q1(j)({r})'): (t, f'p3: the abbreviation "({r}) {t}" in "(i) ISP (ii) LDR (iii) RAM '
+                                                       '(iv) CAD." under "Explain the meaning of any two of the following '
+                                                       'abbreviations:"')
+       for r, t in (('i', 'ISP'), ('ii', 'LDR'), ('iii', 'RAM'), ('iv', 'CAD.'))},
+    ('engineering', 2012, 'hl', 'Q6(c)(iv)'): ('GRP;', 'p9: the term "(iv) GRP;" in the list "(i) Elastomer; (ii) Catalyst; '
+                                                      '(iii) Blow moulding; (iv) GRP; (v) Laminate." under "Explain in '
+                                                      'detail any three of the following:"'),
+    ('engineering', 2012, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism photographs, '
+                                                   'under "Name and describe the operation of any one of the mechanisms '
+                                                   'shown."'),
+    # 2011 OL, each opened on its page (2026-11-05).
+    **{('engineering', 2011, 'ol', f'Q2(a)({r})'): ('', f'p3: the caption "({r})" under the {n} of four furnace drawings, '
+                                                       'under "Name and state the functions of any three of the following '
+                                                       'furnaces."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2011, 'ol', 'Q2(c)(iii)'): ('Lead,', 'p3: the metal "(iii) Lead," in "(i) Aluminium, (ii) Cast iron, '
+                                                        '(iii) Lead, (iv) High-speed steel." under "Name suitable components '
+                                                        'manufactured from any three of the following metals:"'),
+    **{('engineering', 2011, 'ol', f'Q6(a)({r})'): ('', f'p5: the caption "({r})" under the {n} of four lathe work-holding '
+                                                       'photographs, under "Name any three of the lathe work-holding '
+                                                       'methods shown."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    **{('engineering', 2011, 'ol', f'Q7(c)({r})'): (t, f'p6: the component "({r}) {t}" in the OR branch\'s "(i) LED, (ii) '
+                                                       'Fixed resistor, (iii) Motor, (iv) Transistor." under "Draw the '
+                                                       'circuit symbols for any three of the following electronic '
+                                                       'components:"')
+       for r, t in (('i', 'LED,'), ('iii', 'Motor,'))},
+    # 2012 OL, each opened on its page (2026-11-05).
+    **{('engineering', 2012, 'ol', f'Q2(c)({r})'): (t, f'p3: the metal "({r}) {t}" in "(i) Stainless steel, (ii) Zinc, '
+                                                       '(iii) Tungsten, (iv) Lead." under "Select any three of the metals '
+                                                       'below and state if they are ferrous or non-ferrous:"')
+       for r, t in (('ii', 'Zinc,'), ('iv', 'Lead.'))},
+    ('engineering', 2012, 'ol', 'Q5(c)(iv)'): ('PVC.', 'p4: the term "(iv) PVC." in "(i) Thermosetting plastic, (ii) '
+                                                      'Elastic memory, (iii) Thermoplastic, (iv) PVC." under "Explain any '
+                                                      'three of the following terms used in plastic technology:"'),
+    ('engineering', 2012, 'ol', 'Q6(b)(iii)'): ('Feed,', 'p5: the term "(iii) Feed," in "(i) Cutting speed, (ii) Depth of '
+                                                        'cut, (iii) Feed, (iv) Clearance angle." under "Describe any three '
+                                                        'of the following in relation to machining:"'),
+    ('engineering', 2012, 'ol', 'Q7(c)(i)'): ('Bulb,', 'p6: the component "(i) Bulb," in the OR branch\'s "(i) Bulb, (ii) '
+                                                      'Battery, (iii) Switch, (iv) Variable resistor." under "Draw the '
+                                                      'circuit symbols for any three of the following electronic '
+                                                      'components:"'),
+    # 2013 OL, each opened on its page (2026-11-05).
+    ('engineering', 2013, 'ol', 'Q2(a)(ii)'): ('Brass,', 'p3: the alloy "(ii) Brass," in "(i) Stainless steel, (ii) '
+                                                        'Brass, (iii) High speed steel, (iv) Bronze." under "Select any '
+                                                        'three of the metal alloys listed below"'),
+    **{('engineering', 2013, 'ol', f'Q6(b)({r})'): ('', f'p5: the caption "({r})" under the {n} of four lathe-part '
+                                                       'photographs, under "Name any three of the lathe parts shown and '
+                                                       'give one use for each part named."')
+       for r, n in (('i', 'first'), ('ii', 'second'), ('iii', 'third'), ('iv', 'fourth'))},
+    ('engineering', 2013, 'ol', 'Q5(c)(i)'): ('DVDs,', 'p4: the item "(i) DVDs," in "(i) DVDs, (ii) Mobile phones." under '
+                                                       '"Name a plastic used in the manufacture of each of the following:"'),
     # 2015 OL, each opened on its page (2026-11-04).
     **{('engineering', 2015, 'ol', f'Q2(a)({r})'): ('', f'p3: the caption "({r})" over the {n} of three furnace drawings, '
                                                        'under "Name each of the furnaces shown."')
@@ -789,11 +891,12 @@ SHORT_ASKS = {
 
 # A paper whose question marks add up to a different total from its sitting's
 # other years because its FORMAT differs, each total checked on the paper's
-# own question heads. Engineering Ordinary 2014-2019 print Question 1 at
+# own question heads. Engineering Ordinary 2010-2019 print Question 1 at
 # "(65 marks)" and Questions 2-7 at "(45 marks)" (335), where 2021 on print
 # seven questions at 50 (350). The checksum stands down only while the reader
 # sums exactly the printed total.
-PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2014, 2015, 2016, 2017, 2018, 2019)}
+PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2010, 2011, 2012, 2013, 2014, 2015, 2016,
+                                                           2017, 2018, 2019)}
 
 
 def short_ask_ok(subject, year, level, flag):
@@ -1032,12 +1135,12 @@ TRAILING_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?
 # question's first: 2015 OL Engineering page 3 reads "(d) Name the metals used
 # to produce each of the alloys listed below: (i) Brass, (ii) Solder. Question
 # 3. (45 marks) (a) Explain any two of the following: ..." as one block, and
-# page 4 the same for Question 5; 2014 OL does it for Questions 3 and 5 as
+# page 4 the same for Question 5; 2010, 2011, 2012, 2013 and 2014 OL do it for Questions 3 and 5 as
 # well. Neither head was ever at a block start, both 45s were dropped, and each
 # paper summed to 245 over five questions where it prints 335 over seven.
 # Every head in such a block is read, with the tariff printed straight after
 # it. Keyed by sitting, read for those sittings alone.
-INLINE_HEAD_MARKS = {('engineering', 2014, 'ol'), ('engineering', 2015, 'ol')}
+INLINE_HEAD_MARKS = {('engineering', y, 'ol') for y in (2010, 2011, 2012, 2013, 2014, 2015)}
 INLINE_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?\)', re.I)
 
 
@@ -1310,8 +1413,8 @@ def census_agri_legacy(year, level):
     return parts, dict(texts), [path]
 
 
-def census_merged(subject, year, level, component=None):
-    P = PP.Paper(subject, year, level, component=component)
+def census_merged(subject, year, level, component=None, *, files=None):
+    P = PP.Paper(subject, year, level, component=component, files=files)
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
@@ -4033,7 +4136,7 @@ def census_subject(subject):
     for p in papers:
         # A paper in PRINTED_TOTALS has a format of its own, its total checked
         # on its own heads, so it is no evidence about the other years': with
-        # Engineering Ordinary 2014-2019 at 335 and 2021-2026 at 350, counting
+        # Engineering Ordinary 2013-2019 at 335 and 2021-2026 at 350, counting
         # them made the mode a six-six tie, and the tie flagged every 350 paper.
         if p.get('marksSum') and \
                 (subject, p['year'], p['level']) not in PRINTED_TOTALS:
@@ -4056,7 +4159,43 @@ def census_subject(subject):
                     'type': 'marks-checksum',
                     'where': f"{p['year']} {p['level']} {p.get('paper') or ''}",
                     'detail': f"marks sum {p['marksSum']}, other years say {want}"})
+    if subject == 'engineering':
+        papers.extend(census_engineering_deferred())
     return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+
+
+# The SEC's deferred Engineering sittings in the archive: 2022 and 2023 Higher
+# (deferredexams/ and deferredmarkingschemes/ hold LC027ALP000EV for both years;
+# 2023's paper also in Irish, LC027ALP000IV, which is deferred with every Irish
+# version; no Ordinary, nothing for 2024-2025).
+ENG_DEFERRED_PAPERS = ((2022, 'hl', 'LC027ALP000EV'), (2023, 'hl', 'LC027ALP000EV'))
+
+
+def census_engineering_deferred():
+    """Read deferred PDFs independently; never reuse main-sitting leaves.
+
+    Each deferred Engineering sitting (ENG_DEFERRED_PAPERS) is a paper of its
+    own, keyed 'Deferred' as Economics keys its own (census_economics_deferred
+    on claude/economics-lane-20261104, bb793c616), History its (c1306cc45) and
+    Physics and Home Economics theirs (codex/home-economics-continuation-
+    20261101), so a deferred ask never lands on a June leaf with the same
+    address. The checksum is not run on it.
+    """
+    papers = []
+    for year, level, fileid in ENG_DEFERRED_PAPERS:
+        pdf = os.path.join(ROOT, 'paper-trail-corpus', 'deferredexams', str(year), f'{fileid}.pdf')
+        parts, texts, _ = census_merged('engineering', year, level, files=[pdf])
+        leaves = leaves_of(parts)
+        flags = [f for f in continuity_flags(parts, texts, 'engineering')
+                 if not short_ask_ok('engineering', year, level, f)]
+        papers.append({
+            'year': year, 'level': level, 'paper': 'Deferred',
+            'leafCount': len(leaves),
+            'leaves': [{'key': list(k), 'label': key_label(k, 'engineering'),
+                        'text': texts.get(k, '')[:160]} for k in leaves],
+            'marksSum': None, 'marksQuestions': 0, 'flags': flags,
+        })
+    return papers
 
 
 def report(result):

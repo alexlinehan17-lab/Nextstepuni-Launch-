@@ -61,6 +61,10 @@ CROPS = {
     'engineering-2025-HL-scheme-q9ci-sol': dict(
         doc='scheme', page=30, rect=(330, 378, 535, 630), solution=True,
         ref='2025 HL Q9(c)(i)'),
+    # Scheme p30: the single acting cylinder drawn with and without air, labelled.
+    'engineering-2025-HL-scheme-q9biv-sol': dict(
+        doc='scheme', page=30, rect=(100, 124, 540, 206), solution=True,
+        ref='2025 HL Q9(b)(iv)'),
 }
 
 CARDS = [
@@ -180,6 +184,15 @@ CARDS = [
          question_figure='engineering-2025-HL-paper-q9c-crop',
          notes="The paper sets two (c)s either side of an OR; the scheme prints "
                "'8' for each (ii)."),
+    dict(key=(9, 'b', 'iv'),
+         replaces='the shipped card\'s second row was the drawing\'s label and captions, '
+                  '"Force of air moves ram No compressed air Compressed air applied"',
+         why='Scheme p30 answers in one paragraph over a labelled, captioned drawing, '
+             'shown with the answer; "6 marks".',
+         topic='eng-2-15',
+         lifted=[S(30, 80, 87, 545, 121)], marks=[6], total=6,
+         figure='engineering-2025-HL-scheme-q9biv-sol',
+         notes="The scheme prints '6 marks'."),
 ]
 
 TOPICS = {
