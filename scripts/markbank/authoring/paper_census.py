@@ -723,6 +723,21 @@ SHORT_ASKS = {
     ('engineering', 2012, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism photographs, '
                                                    'under "Name and describe the operation of any one of the mechanisms '
                                                    'shown."'),
+    # 2012 OL, each opened on its page (2026-11-05).
+    **{('engineering', 2012, 'ol', f'Q2(c)({r})'): (t, f'p3: the metal "({r}) {t}" in "(i) Stainless steel, (ii) Zinc, '
+                                                       '(iii) Tungsten, (iv) Lead." under "Select any three of the metals '
+                                                       'below and state if they are ferrous or non-ferrous:"')
+       for r, t in (('ii', 'Zinc,'), ('iv', 'Lead.'))},
+    ('engineering', 2012, 'ol', 'Q5(c)(iv)'): ('PVC.', 'p4: the term "(iv) PVC." in "(i) Thermosetting plastic, (ii) '
+                                                      'Elastic memory, (iii) Thermoplastic, (iv) PVC." under "Explain any '
+                                                      'three of the following terms used in plastic technology:"'),
+    ('engineering', 2012, 'ol', 'Q6(b)(iii)'): ('Feed,', 'p5: the term "(iii) Feed," in "(i) Cutting speed, (ii) Depth of '
+                                                        'cut, (iii) Feed, (iv) Clearance angle." under "Describe any three '
+                                                        'of the following in relation to machining:"'),
+    ('engineering', 2012, 'ol', 'Q7(c)(i)'): ('Bulb,', 'p6: the component "(i) Bulb," in the OR branch\'s "(i) Bulb, (ii) '
+                                                      'Battery, (iii) Switch, (iv) Variable resistor." under "Draw the '
+                                                      'circuit symbols for any three of the following electronic '
+                                                      'components:"'),
     # 2013 OL, each opened on its page (2026-11-05).
     ('engineering', 2013, 'ol', 'Q2(a)(ii)'): ('Brass,', 'p3: the alloy "(ii) Brass," in "(i) Stainless steel, (ii) '
                                                         'Brass, (iii) High speed steel, (iv) Bronze." under "Select any '
@@ -824,11 +839,12 @@ SHORT_ASKS = {
 
 # A paper whose question marks add up to a different total from its sitting's
 # other years because its FORMAT differs, each total checked on the paper's
-# own question heads. Engineering Ordinary 2013-2019 print Question 1 at
+# own question heads. Engineering Ordinary 2012-2019 print Question 1 at
 # "(65 marks)" and Questions 2-7 at "(45 marks)" (335), where 2021 on print
 # seven questions at 50 (350). The checksum stands down only while the reader
 # sums exactly the printed total.
-PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2013, 2014, 2015, 2016, 2017, 2018, 2019)}
+PRINTED_TOTALS = {('engineering', y, 'ol'): 335 for y in (2012, 2013, 2014, 2015, 2016, 2017, 2018,
+                                                           2019)}
 
 
 def short_ask_ok(subject, year, level, flag):
@@ -1067,12 +1083,12 @@ TRAILING_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?
 # question's first: 2015 OL Engineering page 3 reads "(d) Name the metals used
 # to produce each of the alloys listed below: (i) Brass, (ii) Solder. Question
 # 3. (45 marks) (a) Explain any two of the following: ..." as one block, and
-# page 4 the same for Question 5; 2013 and 2014 OL do it for Questions 3 and 5 as
+# page 4 the same for Question 5; 2012, 2013 and 2014 OL do it for Questions 3 and 5 as
 # well. Neither head was ever at a block start, both 45s were dropped, and each
 # paper summed to 245 over five questions where it prints 335 over seven.
 # Every head in such a block is read, with the tariff printed straight after
 # it. Keyed by sitting, read for those sittings alone.
-INLINE_HEAD_MARKS = {('engineering', y, 'ol') for y in (2013, 2014, 2015)}
+INLINE_HEAD_MARKS = {('engineering', y, 'ol') for y in (2012, 2013, 2014, 2015)}
 INLINE_HEAD = re.compile(r'\bQuestion\s+(\d{1,2})\.?\s*\(\s*(\d{1,3})\s*marks?\)', re.I)
 
 
