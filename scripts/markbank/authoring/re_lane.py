@@ -25,14 +25,14 @@ what an answer in the top band might say. So a card here is a
 
 Nothing is typed. The one string a card carries that the SEC did not print is
 `markingGuideNote`, which says how the grid is used (and, where it applies,
-which of two printed marks rows the card follows, or which shared grid page
-its bands come from).
+which shared grid page its bands come from).
 
 The tariff is the scheme's grid head ("20 Marks x2"), checked against the
 ask's own head tariff and the paper's printed marks; any disagreement stops
 the build unless the sitting module records it (DISAGREE) with the evidence.
-A grid printing two marks rows ("40 Marks" and "20 Marks x2", 2022) is read
-on the row the ask's head names first.
+A grid printing two marks rows ("40 Marks" and "20 Marks x2", 2022) is two
+ways of marking the answer: the card's own is the row the ask's head names
+first, the other is `otherWay`, and the student picks the one they wrote.
 
 Cards land in components/MarkBank/cards/religious-education/rubric-authored.json
 (build-deck folds them into the deck), and a sitting built here leaves the
@@ -69,6 +69,9 @@ MARKING_GUIDE = ('The SEC marks every Religious Education answer on its printed 
 MARKING_GUIDE_X = ('The SEC marks every Religious Education answer on its printed band grid, here '
                    'once for each answer. The points of reference are examples, not marks: place '
                    'each answer in one band.')
+MARKING_GUIDE_WAYS = ('The SEC marks every Religious Education answer on its printed band grid; this '
+                      'grid prints a marks row for each way of answering. The points of reference are '
+                      'examples, not marks: place each answer in one band.')
 
 # Where the paper's printed marks and the scheme's grid disagree, the card
 # follows the GRID (the instrument the examiner marks with) and says so in its
@@ -95,24 +98,6 @@ def head_tariffs(notation):
     """(per answer, answers) for each tariff a scheme head prints, in printed
     order: "40M/20Mx2" is [(40, 1), (20, 2)]."""
     return [(int(m.group(1)), int(m.group(2) or 1)) for m in HEAD_TARIFF.finditer(notation or '')]
-
-
-def two_rows_note(grid, chosen, notation):
-    """Our note for a grid printing two marks rows: which row the card uses,
-    and the one it does not, both quoted from the grid."""
-    other = next(r for k, r in enumerate(grid.rows) if k != chosen)
-    both = len(head_tariffs(notation)) > 1
-    said = 'the tariff the scheme prints first for this question' if both \
-        else 'the tariff the scheme prints for this question'
-    printed = notation.strip().strip('()')
-    word = {2: 'two', 3: 'three'}
-    if grid.times == 1:
-        return (f'The marking scheme\'s grid also prints a "{other[0]}" row, for marking this answer as '
-                f'{word[other[2]]} parts at {other[1]} marks each. This card follows {said} ({printed}) and marks '
-                f'the answer whole, out of {grid.per}.')
-    return (f'The marking scheme\'s grid also prints a "{other[0]}" row, for marking this answer whole, '
-            f'out of {other[1]}. This card follows {said} ({printed}) and marks it as {word[grid.times]} answers '
-            f'at {grid.per} marks each.')
 
 
 # The subset fonts' broken text layer, repaired as build-deck repairs a point
@@ -654,7 +639,10 @@ def build_sitting(year, level, shipped=None):
                 raise LaneError(f'{where}: its grid is on p{grid.page}, outside its block '
                                 f'(p{head_page}-{next_page})')
             last_page = grid.last
-        alt_note = None
+        # A grid printing two marks rows is two printed ways of marking the
+        # answer: the card's own way is the row its head names first, and the
+        # other row rides along as `otherWay` for the student to pick.
+        other_way = None
         if len(grid.rows) > 1:
             if len(grid.rows) != 2:
                 raise LaneError(f'{where}: {len(grid.rows)} marks rows in one grid: {grid.rows}')
@@ -666,7 +654,12 @@ def build_sitting(year, level, shipped=None):
                 raise LaneError(f'{where}: the head\'s {named[0]} matches {len(pick)} of the grid\'s '
                                 f'marks rows {[r[:3] for r in grid.rows]}')
             grid.use(pick[0])
-            alt_note = two_rows_note(grid, pick[0], ask.notation)
+            head, per, times, printed = grid.rows[1 - pick[0]]
+            marks = sorted(m for p in printed for m in _marks_of(p))
+            if marks != list(range(per + 1)) or per * times != ask.total:
+                raise LaneError(f'{where}: the other marks row {head!r} covers {marks}, {per}x{times}')
+            other_way = {'gridHead': head, 'answers': times, 'answerMax': per,
+                         'bands': [{'printed': p, 'marks': _marks_of(p)} for p in printed]}
         problem = grid_problem(grid)
         if problem:
             raise LaneError(f'{where}: {grid}: {problem}')
@@ -695,6 +688,8 @@ def build_sitting(year, level, shipped=None):
         if not ask.lead:
             raise LaneError(f'{where}: the scheme prints no "An excellent answer" criteria')
         ceilings, directions = split_notes(ask.notes, grid.times, where)
+        if other_way and ceilings:
+            raise LaneError(f'{where}: STOP: a ceiling on a grid with two marks rows')
         for c in ceilings:
             if not 0 < c['max'] < grid.per:
                 raise LaneError(f'{where}: ceiling {c} not inside the answer\'s {grid.per}')
@@ -708,11 +703,13 @@ def build_sitting(year, level, shipped=None):
             'gridHead': grid.head,
             'bands': [b.as_json() for b in grid.bands],
         }
+        if other_way:
+            rubric['otherWay'] = other_way
         if ceilings:
             rubric['ceilings'] = ceilings
         rubric['directions'] = directions
-        rubric['markingGuideNote'] = ''.join(n + ' ' for n in (note, alt_note, shared_note) if n) + \
-            (MARKING_GUIDE_X if grid.times > 1 else MARKING_GUIDE)
+        rubric['markingGuideNote'] = ''.join(n + ' ' for n in (note, shared_note) if n) + \
+            (MARKING_GUIDE_WAYS if other_way else MARKING_GUIDE_X if grid.times > 1 else MARKING_GUIDE)
         rubric['schemePages'] = sorted({head_page, grid.page} | set(range(head_page, last_page + 1)))
         rubric['schemeFileid'] = f'LC223{LEVEL_LETTER[level]}LP000EV.pdf'
         card = {

@@ -14559,10 +14559,68 @@
       ]
      }
     ],
+    "otherWay": {
+     "gridHead": "20 M x 2",
+     "answers": 2,
+     "answerMax": 20,
+     "bands": [
+      {
+       "printed": "20 - 17",
+       "marks": [
+        17,
+        18,
+        19,
+        20
+       ]
+      },
+      {
+       "printed": "16 - 14",
+       "marks": [
+        14,
+        15,
+        16
+       ]
+      },
+      {
+       "printed": "13 - 11",
+       "marks": [
+        11,
+        12,
+        13
+       ]
+      },
+      {
+       "printed": "10 – 8",
+       "marks": [
+        8,
+        9,
+        10
+       ]
+      },
+      {
+       "printed": "7 – 5",
+       "marks": [
+        5,
+        6,
+        7
+       ]
+      },
+      {
+       "printed": "4 – 0",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
     "directions": [
      "Note: If salvation/liberation is explained without reference to a difference in understanding consult your advising examiner."
     ],
-    "markingGuideNote": "The marking scheme's grid also prints a \"20 M x 2\" row, for marking this answer as two parts at 20 marks each. This card follows the tariff the scheme prints for this question (40M) and marks the answer whole, out of 40. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid; this grid prints a marks row for each way of answering. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      18
     ],
@@ -34781,10 +34839,68 @@
       ]
      }
     ],
+    "otherWay": {
+     "gridHead": "20 Marksx2",
+     "answers": 2,
+     "answerMax": 20,
+     "bands": [
+      {
+       "printed": "20 - 17",
+       "marks": [
+        17,
+        18,
+        19,
+        20
+       ]
+      },
+      {
+       "printed": "16 - 14",
+       "marks": [
+        14,
+        15,
+        16
+       ]
+      },
+      {
+       "printed": "13 - 11",
+       "marks": [
+        11,
+        12,
+        13
+       ]
+      },
+      {
+       "printed": "10 - 8",
+       "marks": [
+        8,
+        9,
+        10
+       ]
+      },
+      {
+       "printed": "7 - 5",
+       "marks": [
+        5,
+        6,
+        7
+       ]
+      },
+      {
+       "printed": "4 - 0",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
     "directions": [
      "Note: Allow implicit reference to one or more similarities and/or differences"
     ],
-    "markingGuideNote": "The marking scheme's grid also prints a \"20 Marksx2\" row, for marking this answer as two parts at 20 marks each. This card follows the tariff the scheme prints first for this question (40M/20Mx2) and marks the answer whole, out of 40. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid; this grid prints a marks row for each way of answering. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      4,
      5
@@ -35783,10 +35899,68 @@
       ]
      }
     ],
+    "otherWay": {
+     "gridHead": "20 Marks x2",
+     "answers": 2,
+     "answerMax": 20,
+     "bands": [
+      {
+       "printed": "20 - 17",
+       "marks": [
+        17,
+        18,
+        19,
+        20
+       ]
+      },
+      {
+       "printed": "16 - 14",
+       "marks": [
+        14,
+        15,
+        16
+       ]
+      },
+      {
+       "printed": "13 - 11",
+       "marks": [
+        11,
+        12,
+        13
+       ]
+      },
+      {
+       "printed": "10 - 8",
+       "marks": [
+        8,
+        9,
+        10
+       ]
+      },
+      {
+       "printed": "7 - 5",
+       "marks": [
+        5,
+        6,
+        7
+       ]
+      },
+      {
+       "printed": "4 - 0",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
     "directions": [
      "Note: Allow descriptive answers and implicit reference to individual people, the ‘sacred’ and ‘profane’."
     ],
-    "markingGuideNote": "The marking scheme's grid also prints a \"20 Marks x2\" row, for marking this answer as two parts at 20 marks each. This card follows the tariff the scheme prints first for this question (40M/20Mx2) and marks the answer whole, out of 40. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid; this grid prints a marks row for each way of answering. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      11,
      12
@@ -35945,10 +36119,68 @@
       ]
      }
     ],
+    "otherWay": {
+     "gridHead": "20 Marksx2",
+     "answers": 2,
+     "answerMax": 20,
+     "bands": [
+      {
+       "printed": "20 - 17",
+       "marks": [
+        17,
+        18,
+        19,
+        20
+       ]
+      },
+      {
+       "printed": "16 - 14",
+       "marks": [
+        14,
+        15,
+        16
+       ]
+      },
+      {
+       "printed": "13 - 11",
+       "marks": [
+        11,
+        12,
+        13
+       ]
+      },
+      {
+       "printed": "10 - 8",
+       "marks": [
+        8,
+        9,
+        10
+       ]
+      },
+      {
+       "printed": "7 - 5",
+       "marks": [
+        5,
+        6,
+        7
+       ]
+      },
+      {
+       "printed": "4 - 0",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
     "directions": [
      "Note: Allow implicit reference to one or more similarities/differences."
     ],
-    "markingGuideNote": "The marking scheme's grid also prints a \"20 Marksx2\" row, for marking this answer as two parts at 20 marks each. This card follows the tariff the scheme prints first for this question (40M/20Mx2) and marks the answer whole, out of 40. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid; this grid prints a marks row for each way of answering. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      12
     ],
@@ -37262,10 +37494,88 @@
       ]
      }
     ],
+    "otherWay": {
+     "gridHead": "40 Marks",
+     "answers": 1,
+     "answerMax": 40,
+     "bands": [
+      {
+       "printed": "40 - 34",
+       "marks": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+       ]
+      },
+      {
+       "printed": "33 - 28",
+       "marks": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+       ]
+      },
+      {
+       "printed": "27 - 22",
+       "marks": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+       ]
+      },
+      {
+       "printed": "21- 16",
+       "marks": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+       ]
+      },
+      {
+       "printed": "15 - 10",
+       "marks": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+       ]
+      },
+      {
+       "printed": "9 - 0",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+       ]
+      }
+     ]
+    },
     "directions": [
      "Note: Allow implicit reference to the religious and secular."
     ],
-    "markingGuideNote": "The marking scheme's grid also prints a \"40 Marks\" row, for marking this answer whole, out of 40. This card follows the tariff the scheme prints first for this question (20Mx2/40M) and marks it as two answers at 20 marks each. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid; this grid prints a marks row for each way of answering. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      21
     ],
@@ -38304,10 +38614,68 @@
       ]
      }
     ],
+    "otherWay": {
+     "gridHead": "20 Marks x2",
+     "answers": 2,
+     "answerMax": 20,
+     "bands": [
+      {
+       "printed": "20 - 17",
+       "marks": [
+        17,
+        18,
+        19,
+        20
+       ]
+      },
+      {
+       "printed": "16 - 14",
+       "marks": [
+        14,
+        15,
+        16
+       ]
+      },
+      {
+       "printed": "13 - 11",
+       "marks": [
+        11,
+        12,
+        13
+       ]
+      },
+      {
+       "printed": "10 - 8",
+       "marks": [
+        8,
+        9,
+        10
+       ]
+      },
+      {
+       "printed": "7 - 5",
+       "marks": [
+        5,
+        6,
+        7
+       ]
+      },
+      {
+       "printed": "4 - 0",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     ]
+    },
     "directions": [
      "Note: Allow implicit reference to one or more similarities and/or differences"
     ],
-    "markingGuideNote": "The marking scheme's grid also prints a \"20 Marks x2\" row, for marking this answer as two parts at 20 marks each. This card follows the tariff the scheme prints first for this question (40M/20Mx2) and marks the answer whole, out of 40. The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid; this grid prints a marks row for each way of answering. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      28
     ],
@@ -41113,10 +41481,88 @@
       ]
      }
     ],
+    "otherWay": {
+     "gridHead": "40 Marks",
+     "answers": 1,
+     "answerMax": 40,
+     "bands": [
+      {
+       "printed": "40 - 34",
+       "marks": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+       ]
+      },
+      {
+       "printed": "33 - 28",
+       "marks": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+       ]
+      },
+      {
+       "printed": "27 - 22",
+       "marks": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+       ]
+      },
+      {
+       "printed": "21 - 16",
+       "marks": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+       ]
+      },
+      {
+       "printed": "15 - 10",
+       "marks": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+       ]
+      },
+      {
+       "printed": "9 - 0",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+       ]
+      }
+     ]
+    },
     "directions": [
      "Note: Allow implicit reference to examples."
     ],
-    "markingGuideNote": "The marking scheme's grid also prints a \"40 Marks\" row, for marking this answer whole, out of 40. This card follows the tariff the scheme prints for this question (20Mx2) and marks it as two answers at 20 marks each. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid; this grid prints a marks row for each way of answering. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      19
     ],
@@ -41694,10 +42140,88 @@
       ]
      }
     ],
+    "otherWay": {
+     "gridHead": "40 Marks",
+     "answers": 1,
+     "answerMax": 40,
+     "bands": [
+      {
+       "printed": "40 - 34",
+       "marks": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+       ]
+      },
+      {
+       "printed": "33 - 28",
+       "marks": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+       ]
+      },
+      {
+       "printed": "27 - 22",
+       "marks": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+       ]
+      },
+      {
+       "printed": "21 - 16",
+       "marks": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+       ]
+      },
+      {
+       "printed": "15 - 10",
+       "marks": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+       ]
+      },
+      {
+       "printed": "9 - 0",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+       ]
+      }
+     ]
+    },
     "directions": [
      "Note: Allow implicit reference to Christian denominations"
     ],
-    "markingGuideNote": "The marking scheme's grid also prints a \"40 Marks\" row, for marking this answer whole, out of 40. This card follows the tariff the scheme prints first for this question (20MX2/40M) and marks it as two answers at 20 marks each. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid; this grid prints a marks row for each way of answering. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      22
     ],
@@ -43659,10 +44183,88 @@
       ]
      }
     ],
+    "otherWay": {
+     "gridHead": "40 Marks",
+     "answers": 1,
+     "answerMax": 40,
+     "bands": [
+      {
+       "printed": "40 - 34",
+       "marks": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+       ]
+      },
+      {
+       "printed": "33 - 28",
+       "marks": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+       ]
+      },
+      {
+       "printed": "27 - 22",
+       "marks": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+       ]
+      },
+      {
+       "printed": "21 - 16",
+       "marks": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+       ]
+      },
+      {
+       "printed": "15 - 10",
+       "marks": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+       ]
+      },
+      {
+       "printed": "9 - 0",
+       "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+       ]
+      }
+     ]
+    },
     "directions": [
      "Note: Allow descriptive answers with implicit reference to objective and subjective investigation."
     ],
-    "markingGuideNote": "The marking scheme's grid also prints a \"40 Marks\" row, for marking this answer whole, out of 40. This card follows the tariff the scheme prints first for this question (20Mx2/40M) and marks it as two answers at 20 marks each. The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid; this grid prints a marks row for each way of answering. The points of reference are examples, not marks: place each answer in one band.",
     "schemePages": [
      31,
      32
