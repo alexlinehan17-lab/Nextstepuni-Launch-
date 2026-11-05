@@ -46,7 +46,14 @@ _DOCS = {}
 # p11 ("heated to 850?C", x 313-343, y 256-272). Cropped out of the page and
 # looked at, it is the degree ring; it is the only U+F0FB in the 60 Engineering
 # papers and schemes, so the repair can reach nothing else.
-ENG_GLYPHS = {'\u019e': 'tf', '\uf0fb': '\u00b0'}
+#
+# U+030A, COMBINING RING ABOVE: the 2022 Higher deferred scheme's Calibri sets
+# the degree sign as a ring over a no-break space, twice on p13 ("727  ̊C" at
+# x 294, y 137-149 and "1147  ̊C" at x 403, y 484-496). Rendered at 400 dpi it
+# is the degree ring. The only other U+030A in the 62 Engineering papers and
+# schemes is 2021 HL scheme p16's graph axis title "Temperature (  ̊C)", which
+# no lift reads; the deck refuses the bare glyph as a broken-font mark.
+ENG_GLYPHS = {'\u019e': 'tf', '\uf0fb': '\u00b0', '\u030a': '\u00b0'}
 
 
 def path_for(year, level, doc):

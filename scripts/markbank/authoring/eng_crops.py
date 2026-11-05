@@ -178,8 +178,11 @@ def main():
             render(args.year, args.level, spec, os.path.join(args.review, f'{name}.png'))
             print(os.path.join(args.review, f'{name}.png'))
     if args.publish:
+        # bind-figures.mjs reads a crop from the <year>-<hl|ol> folder its name
+        # gives; a deferred crop's name ('...-2022-HL-deferred-...') gives June's
+        # folder, where its own name keeps it apart from June's crops.
         stage = os.path.join(ROOT, 'exam-papers', 'engineering', 'figures',
-                             f'{args.year}-{args.level}')
+                             f'{args.year}-{args.level.replace("-deferred", "")}')
         os.makedirs(stage, exist_ok=True)
         catalogue = []
         for name, spec in crops.items():

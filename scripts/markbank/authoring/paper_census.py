@@ -709,6 +709,12 @@ SHORT_ASKS = {
     ('engineering', 2013, 'hl', 'Q8(a)(ii)'): ('', 'p11: the caption "(ii)" under the second of two mechanism photographs, '
                                                    'under "Name and describe the operation of any one of the mechanisms '
                                                    'shown."'),
+    # 2022 HL deferred sitting, opened on its page (2026-11-05): census_engineering_deferred
+    # reads it at the June key (2022, 'hl'), and June 2022 HL has no such flag.
+    ('engineering', 2022, 'hl', 'Q2(d)(i)'): ('Wi-Fi;', 'deferred paper p4: the term "(i) Wi-Fi;" in "(i) Wi-Fi; (ii) '
+                                                       'Industrial internet of things (IIoT); (iii) Sensor technology." '
+                                                       'under "Describe the function of any two of the following, with '
+                                                       'regard to smart manufacturing."'),
     # 2010 OL, each opened on its page (2026-11-05).
     **{('engineering', 2010, 'ol', k): (t, w) for k, t, w in (
         ('Q2(b)(iii)', 'Brass,', 'p3: the alloy "(iii) Brass," in "(i) Soft solder, (ii) Stainless steel, (iii) Brass, '
