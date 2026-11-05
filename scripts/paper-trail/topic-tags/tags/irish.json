@@ -17657,6 +17657,16 @@
     "paperKey": "p2",
     "q": [
       {
+        "n": "1",
+        "primary": "irish-3-0",
+        "secondary": "irish-3-1"
+      },
+      {
+        "n": "2",
+        "primary": "irish-4-7",
+        "secondary": "irish-7-0"
+      },
+      {
         "n": "P-A",
         "primary": "irish-4-7",
         "secondary": "irish-7-0"
@@ -17675,6 +17685,126 @@
         "n": "F-B",
         "primary": "irish-5-6",
         "secondary": "irish-7-0"
+      },
+      {
+        "n": "P-A-a-1",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-A-a-1-i",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-A-a-1-ii",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-A-a-2",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-A-a-2-i",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-A-a-2-ii",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-A-a-3",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-A-a-3-i",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-A-a-3-ii",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-A-b-i",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-A-b-ii",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "F-A-a-1",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-A-a-1-i",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-A-a-1-ii",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-A-a-1-iii",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-A-a-1-iv",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-A-a-2",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-A-a-2-i",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-A-a-2-ii",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-A-a-2-iii",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-A-a-2-iv",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-A-b-i",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-A-b-ii",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "P-B-a-1",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-B-a-2",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-B-b",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "F-B-a-1",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-B-a-2",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-B-b-i",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-B-b-ii",
+        "primary": "irish-5-6"
       }
     ]
   },

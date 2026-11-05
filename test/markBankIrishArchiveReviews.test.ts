@@ -56,6 +56,7 @@ import higher2012P2 from '../components/MarkBank/cards/irish/higher-2012-p2-auth
 import ordinary2012P1 from '../components/MarkBank/cards/irish/ordinary-2012-p1-authored.json';
 import ordinary2012P2 from '../components/MarkBank/cards/irish/ordinary-2012-p2-authored.json';
 import ordinary2011P1 from '../components/MarkBank/cards/irish/ordinary-2011-p1-authored.json';
+import ordinary2011P2 from '../components/MarkBank/cards/irish/ordinary-2011-p2-authored.json';
 import ordinary2011Aural from '../components/MarkBank/cards/irish/ordinary-2011-aural-authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
@@ -228,6 +229,7 @@ const NEW_PAPER_TWO = [
   { file: ordinary2013P2, fileid: 'LC001GLP200IV.pdf', cards: 63, readingWhole: 10 },
   { file: higher2012P2, fileid: 'LC001ALP200IV.pdf', cards: 46, readingWhole: 12 },
   { file: ordinary2012P2, fileid: 'LC001GLP200IV.pdf', cards: 24, readingWhole: 10 },
+  { file: ordinary2011P2, fileid: 'LC001GLP200IV.pdf', cards: 30, readingWhole: 0 },
 ];
 
 describe('Irish archive review: new Paper 2 cards', () => {
