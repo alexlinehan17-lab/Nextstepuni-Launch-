@@ -58,7 +58,7 @@ import higher2014P2 from './higher-2014-p2-authored.json';
 import ordinary2014P1 from './ordinary-2014-p1-authored.json';
 import ordinary2014P2 from './ordinary-2014-p2-authored.json';
 import { irishAnswersFor, stepSingleAnswerLadders } from './answers';
-import { irishTariffsFor, stepPrintedScales } from './tariffs';
+import { closeBrackets, irishTariffsFor, stepPrintedScales } from './tariffs';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 
 type IrishLevel = 'higher' | 'ordinary';
@@ -251,7 +251,7 @@ const cloneCriteria = (card: AuthoredIrishCard): IrishCriterion[] =>
   card.criteria.map(criterion => {
     const found = primaryAllocation(card, criterion) ?? derivedAllocation(card, criterion)
       ?? (pricedAward(criterion) ? freagraiAllocation(criterion) : undefined);
-    const allocation = found && stepPrintedScales(stepSingleAnswerLadders(found), criterion.guidance);
+    const allocation = found && closeBrackets(stepPrintedScales(stepSingleAnswerLadders(found), criterion.guidance), criterion.guidance);
     return {
       ...criterion,
       permittedMarks: [...criterion.permittedMarks],

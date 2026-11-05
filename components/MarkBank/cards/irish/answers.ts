@@ -156,6 +156,20 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     const split = [...answer.matchAll(/\((\d+)\s*m?h?arc\)/g)].reduce((sum, m) => sum + Number(m[1]), 0);
     return split === Number(total) ? `${head}${answer.replace(/\((\d+)\s*(m?h?arc)\)/g, `($1${HELD}$2)`)} = ${total} mharc` : whole;
   });
+  // "{3 mharc: 2 mharc + 1 mharc} An chéad phointe eolais atá ceart = 2 mharc; … • Is rud ón am atá caite í a fhágtar le huacht
+  // againn (2 mharc) le tabhairt ar aghaidh do na glúine atá le teacht (1 mharc) • …" (2018 Higher B 1(a)): a laddered part's
+  // answer printing each of its points at its rung, in the ladder's order. Each point is one answer the ladder counts.
+  text = text.replace(/(\{(\d+)\s*m?h?arc:\s*(\d+\s*m?h?arc\b(?:\s*\+\s*\d+\s*m?h?arc\b)+)\s*\}[^•{}]*•\s*)((?:[^•=(){}]*\(\d+\s*m?h?arc\)){2,})(?=\s*•)/g,
+    (whole: string, head: string, _total: string, split: string, answer: string) => {
+      const rungs = [...split.matchAll(/\d+/g)].map(m => m[0]).join(' ');
+      const points = [...answer.matchAll(/([^()]*?)\s*\((\d+)\s*m?h?arc\)/g)];
+      return points.map(point => point[2]).join(' ') === rungs
+        ? `${head}${points.map(point => `${point[1].trim()} = ${point[2]} mharc`).join(' • ')} ` : whole;
+    });
+  // "• Ag breathnú roimhe/roimpi ar an Debs mar shampla ( ní mór don iarrthóir an t-athrú pearsan a dhéanamh (… pionós (-1 mharc)
+  // má fhágtar “romhat” sa fhreagra •" (2014 Higher B 1(a)): the examiner's note printed inside the answer's bullet, opened and
+  // never closed, is a direction, never a second answer; its opening bracket goes with it.
+  text = text.replace(/\(\s*(ní mór don iarrthóir\s[^•]*?)(?=\s*•)/g, (_, note: string) => { directions.push(tidy(note)); return ' '; });
   // A price printed inside the qualifier's brackets, "(gan aon cháiliú = 1 mharc)", reads as the qualified price above.
   text = text.replace(/\s*\((gan\s[^()=]*?)\s*(=\s*\d+\s*m?h?arc\b)\)/g, (_, qualifier: string, price: string) => `: (${qualifier}) ${price}`);
   // "(dhá cheann) {1 mharc + 1 mharc = 2 mharc}" (2017 Higher A 1(b)(i)): the brace prints its split before its total; it is
@@ -434,6 +448,9 @@ export function parseIrishAnswers(source: IrishAnswerSource): IrishAnswerResult 
     const unpriced = part.rows.filter(row => row.marks === undefined);
     if (part.ladder) {
       part.rows.forEach(row => { row.marks = row.marks ?? 0; });
+      // A ladder counts answers, so an answer the scheme prints again word for word (2018 Higher B 1(a), its first point on
+      // its own after both points) is the same answer: one row.
+      part.rows = part.rows.filter((row, rowIndex) => part.rows.findIndex(other => other.text === row.text) === rowIndex);
     } else if (unpriced.length === part.rows.length) {
       part.rows.forEach(row => { row.marks = part.tariff; });
     } else if (unpriced.length > 0) {

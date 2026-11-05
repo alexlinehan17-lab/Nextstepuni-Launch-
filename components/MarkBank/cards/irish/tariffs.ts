@@ -174,6 +174,9 @@ export function parseIrishTariffs(source: IrishAnswerSource, debug?: string[]): 
   text = text.replace(/\b\d+\s+phointe eolais ag teastáil(?=\s+\d+\s+[A-ZÁÉÍÓÚ])/g, note => { directions.push(tidy(note)); return ' ¶ '; });
   // A note the scheme sets in brackets ("(Is leor dhá phointe eolais.)") leaves its brackets behind: they go with it.
   text = text.replace(/\(\s*¶\s*\)/g, ' ¶ ');
+  // A note that closes a bracket the prompt opened ("(Bíodh an freagra i d’fhocail féin. Is leor 60 focal.)", Higher 6(b) in
+  // 2014, 2015 and 2019) leaves the bracket's close behind: it closes the prompt, never a direction of its own.
+  text = text.replace(/(\([^()¶]*?[^\s(¶])\s*¶\s*\)/g, '$1) ¶ ');
   // "Treoir: Ní mór …" whose note went to the directions leaves its heading behind: it goes with it.
   text = text.replace(/\bTreoir:\s*¶/g, ' ¶ ');
   text = text.replace(/\s+/g, ' ');
@@ -622,6 +625,27 @@ export const stepPrintedScales = (allocation: IrishAllocation, guidance: string[
         return steps && steps.length > 2 ? { ...row, steps } : row;
       }),
     })),
+  };
+};
+
+/** A note or prompt cut inside a bracket keeps the bracket the scheme prints round it, and never a half of one: a direction
+ *  missing the "(" the scheme prints straight before it ("Ní mór Ceist 6 (b) a fhreagairt … den scrúdpháipéar)", "5 mharc = 2
+ *  mharc ar lomphointe eolais agus 3 mharc ar fhorbairt.)") takes it back, as one missing the ")" printed straight after it
+ *  ("… tréithe an fhir.", 2023 Higher 3A(a)(i)) does; a prompt cut just after a "(" its note took ("… ionat féin? (", 2019
+ *  Higher 3B(ii)) drops it. Only from the criterion's own guidance; nothing else changes. */
+export const closeBrackets = (allocation: IrishAllocation, guidance: string[]): IrishAllocation => {
+  const text = guidance.join(' ').replace(/\s+/g, ' ');
+  const count = (value: string, mark: string) => value.split(mark).length - 1;
+  const close = (note: string) => {
+    if (count(note, ')') === count(note, '(') + 1 && text.includes(`(${note}`)) return `(${note}`;
+    if (count(note, '(') === count(note, ')') + 1 && text.includes(`${note})`)) return `${note})`;
+    return note;
+  };
+  return {
+    ...allocation,
+    parts: allocation.parts.map(part => (part.prompt && /\s\($/.test(part.prompt) && count(part.prompt, '(') > count(part.prompt, ')')
+      ? { ...part, prompt: part.prompt.replace(/\s\($/, '') } : part)),
+    directions: allocation.directions.map(close),
   };
 };
 
