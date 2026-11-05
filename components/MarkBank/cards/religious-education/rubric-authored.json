@@ -1,6 +1,6 @@
 {
  "v": 1,
- "cardCount": 575,
+ "cardCount": 601,
  "cards": [
   {
    "id": "re-2026-hl-a-1-a",
@@ -84405,6 +84405,3014 @@
      17
     ],
     "schemeFileid": "LC223ALP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-a-1-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2015 OL Section A Q1(a)",
+   "topicId": "re-a",
+   "conceptId": "way-experience-life-make-person-question",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Profile the way in which an experience in life could make a person question the meaning of life.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the search for the meaning of life by accurately tracing the way that an experience in life could challenge a person to question the meaning of life.",
+    "points": [
+     "Experience of suffering ― question why some people experience suffering; e.g. Is there any purpose to suffering? etc.",
+     "Experience of a death/birth etc.― question belief in life after death; e.g. What should be important in life? etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     3
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-a-1-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2015 OL Section A Q1(b)",
+   "topicId": "re-a",
+   "conceptId": "key-question-meaning-life-expressed-myth",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine how a key question about the meaning of life was expressed in a myth created by people who lived in ancient times.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the search for the meaning of life by looking closely at how one myth from an ancient culture expresses a key question about the meaning of life.",
+    "points": [
+     "The Epic of Gilgamesh e.g. questions about suffering and death etc.",
+     "The Myth of the Children of Lir e.g. questions about love and family etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     3
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-a-2-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2015 OL Section A Q2(a)",
+   "topicId": "re-a",
+   "conceptId": "plato-alive-today-writing-nature-reality",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Imagine that Plato was alive today and writing about the nature of reality. Based on your knowledge of Plato's ideas outline one point that you think he might make to people today about the nature of reality.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the philosophical thought of Ancient Greece by setting out accurate information on how one of Plato’s ideas about the nature of what is real, relates to people today.",
+    "points": [
+     "Plato’s idea that humans were exposed to two worlds at once i.e. the world of the senses and the world of unchanging ideas etc.",
+     "Plato’s idea that the physical world and everything perceived through the senses is ever changing and unreliable; true reality is in the realm of ideas; search for what is real rather than the superficial etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-a-2-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2015 OL Section A Q2(b)",
+   "topicId": "re-a",
+   "conceptId": "religious-interpretations-human-experience-expressed-different",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Religious interpretations of human experience are expressed in different ways. Outline an example of how religious belief is expressed in one of the following ways of interpreting human experience: • THE AESTHETIC • THE HOLY • THE POETIC",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of a religious interpretation of human experience by setting out accurate information on how one of the ways of looking at life listed in the question reflects religious belief.",
+    "points": [
+     "The Aesthetic/Poetic – an experience of ‘moving beyond’ the ordinary experiences of life through engaging with literature, music or art; beauty/power of nature may suggest the presence of God e.g. religious belief is expressed through music in the Psalms; art in the Book of Kells etc.",
+     "The Holy – experiences in life are interpreted as sacred/encounters with the divine; experiences of ritual and prayer can give expression to religious belief through the use of symbolic actions and gestures etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     4
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-a-3-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2015 OL Section A Q3(a)",
+   "topicId": "re-a",
+   "conceptId": "meant-term-divine-revelation'-major-world",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe what is meant by the term ‘divine revelation' in one major world religion that you have studied.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the concept of divine revelation within a major world religion by giving an accurate account of the way in which the nature of God/gods/the divine is made known in a major world religion.",
+    "points": [
+     "Buddhism – Some traditions revere Buddhas and Bodhisattvas as the embodiment of eternal spiritual qualities; others believe that since there is no God there cannot be divine revelation only self realization or enlightenment etc.",
+     "Christianity – God is revealed in a variety of ways e.g. scriptures; the life, death and resurrection of Jesus are understood as the high point of God’s revelation etc.",
+     "Hinduism – the gods are understood as different incarnations of Brahman; the divine is understood as present in all of creation; Brahman is revealed through the Vedas etc.",
+     "Islam – the Koran/Qur’an is understood as the revelation of Allah to Mohammad through the angel Gabriel; followers of Islam believe that the Koran/Qur’an contains the actual words of Allah etc.",
+     "Judaism – God is understood as revealed through creation and human experience throughout history; prophets play a crucial role in revealing the will of God etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     5
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-a-3-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "A",
+   "questionRef": "2015 OL Section A Q3(b)",
+   "topicId": "re-a",
+   "conceptId": "example-understanding-divine-revelation'-major-world",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline one example of how the understanding of ‘divine revelation' in a major world religion influences the religious practice of its members.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of divine revelation by setting out accurate information on how one religious practice is influenced by the understanding of divine revelation in a major world religion.",
+    "points": [
+     "Christianity ― reading the Bible and kissing the Gospels are expressions of honouring what is revealed etc.",
+     "Hinduism ― the worship of Hindu gods is influenced by the belief that each of the gods is a manifestation of Brahman etc.",
+     "Islam ― adherence to the teachings of the Koran/Qur’an reflects the understanding that it is the revealed will of Allah etc.",
+     "Judaism ― celebrating the Passover reflects the belief that God became and remains actively involved in the lives of the Jewish people etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     5
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-b-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2015 OL Section B Q(a)",
+   "topicId": "re-b",
+   "conceptId": "key-characteristics-kingdom-god-jesus-emphasised",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline two key characteristics of the Kingdom of God that Jesus emphasised in his preaching.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show familiarity with the teachings of Jesus by setting out accurate information on two key features of the Kingdom of God as preached by Jesus.",
+    "points": [
+     "Jesus emphasised inclusion as the alternative to the emergence of elites as a characteristic of the Kingdom of God e.g. in the parable of the Good Samaritan it is the Samaritan, not the Priest or Levite, who acts in an exemplary way etc.",
+     "Jesus taught that sharing rather than amassing wealth was a characteristic of the Kingdom of God e.g. the table-fellowship led Zaccheaus to return any money he had wrongly taken and promise to give half his belongings to the poor etc."
+    ],
+    "openList": true,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     6
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-b-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2015 OL Section B Q(b)",
+   "topicId": "re-b",
+   "conceptId": "impact-resurrection-jesus-first-christians-sense",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Examine the impact that the resurrection of Jesus had on the first Christians’ sense of community.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of Christianity by looking closely at the impact of the Resurrection of Jesus on the first Christians’ sense of community.",
+    "points": [
+     "A new awareness of their need to meet regularly together for prayer and the ‘breaking of the bread’ as Jesus had called on them to do at the Last Supper etc.",
+     "A new awareness of the importance of sharing what they had with each other and ensuring that nobody in the community was in need etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "30 > 26",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "25 > 21",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "16 > 12",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "11 > 8",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 3",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2 > 0",
+      "marks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     6
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-b-c-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2015 OL Section B Q(c)(i)",
+   "topicId": "re-b",
+   "conceptId": "first-christian-communities-came-established-location",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain how one of the first Christian communities came to be established in a location outside of Palestine.",
+   "totalMarks": 15,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of Christianity by giving an accurate account of how an early Christian Community came to be established outside of Palestine.",
+    "points": [
+     "Corinth ― Paul founded this Christian community on his second missionary journey in 51 CE; a seaport and capital of the Roman province of Achaia which attracted many different cultures and traditions; it had a thriving economic life because of the volume of trade and numbers of travellers crossing between the East and the West etc.",
+     "Philippi ― the first European Christian community was founded here by Paul; a city within the Roman province of Macedonia situated in north-eastern Greece populated by Greeks, Macedonians and small number of Jews etc.",
+     "Thessalonica ― founded by Paul during his second missionary journey in the Roman province of Macedonia; it attracted a cosmopolitan population; it was an important city economically, commercially and politically etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 15,
+    "gridHead": "15M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "15 > 13",
+      "marks": [
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "12 > 11",
+      "marks": [
+       11,
+       12
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "8 > 6",
+      "marks": [
+       6,
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 2",
+      "marks": [
+       2,
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     7
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-b-c-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "B",
+   "questionRef": "2015 OL Section B Q(c)(ii)",
+   "topicId": "re-b",
+   "conceptId": "first-christians-place-referred-part-dealt",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline how the first Christians in the place that you have referred to in part c)i. above, dealt with any problem they faced when establishing their community.",
+   "totalMarks": 15,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of Christianity by setting out accurate information on how the Christians in the place referred to in part c)i. of the question dealt with one problem that they faced in establishing their community.",
+    "points": [
+     "Corinth – the unity of the church was threatened by sexual immorality, disorderly gatherings and idols etc. Paul dealt with this problem by emphasising the priority of love as the authentic life in Christ and the church as the one body of Christ etc.",
+     "Philippi – the community was faced with considerable antagonism from their fellow citizens, Paul called upon them to be 'children of God without blemish in the midst of a crooked and perverse generation'; other problems were caused by their own internal divisions, self-seeking and pride; Paul proposed Jesus’ own way of life as their model etc.",
+     "Thessalonica – living in a hostile environment where many non-Christians made life difficult for the community; they lacked hope in the face of the death of members; there was some misunderstanding about the fate of those who had died etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 15,
+    "gridHead": "15M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "15 > 13",
+      "marks": [
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "12 > 11",
+      "marks": [
+       11,
+       12
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "8 > 6",
+      "marks": [
+       6,
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 2",
+      "marks": [
+       2,
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     7
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-c-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2015 OL Section C Q(a)",
+   "topicId": "re-c",
+   "conceptId": "inter-faith-dialogue-play-role-resolving",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain how inter-faith dialogue can play a role in resolving a conflict situation.",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an appreciation of inter-faith dialogue by giving an accurate account of the reasons why dialogue between different faiths could play a part in putting an end to a conflict situation.",
+    "points": [
+     "Discussion or exchange of ideas between people of different faiths can help resolve conflict e.g. inter-faith dialogue helped members of the Islamic and Hindu religions in Kashmir show tolerance and end conflict etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     8
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-c-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2015 OL Section C Q(b)",
+   "topicId": "re-c",
+   "conceptId": "origins-inter-faith-dialogue-between-major",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline the origins of inter-faith dialogue between two of the following major world religions: ◆ BUDDHISM ◆ CHRISTIANITY ◆ HINDUISM ◆ ISLAM ◆ JUDAISM",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an appreciation of inter-faith dialogue by setting out accurate information on the beginning of dialogue between two of the world religions listed in the question.",
+    "points": [
+     "Inter-faith dialogue can be traced back to historic events e.g. Buddhism/ Christianity/ Hinduism/ Islam / Judaism all had speakers at the first World Parliament of Religions in Chicago in 1893 etc.",
+     "Inter-faith dialogue can originate from the initiative of particular people e.g. Gandhi showed reverence towards the sacred texts of other faith traditions and quoted from them; Pope John Paul II in 1985 referred to Catholics and followers of Islam as ‘brothers and sisters in the faith of Abraham’; in1986 he spoke of Jews as ‘our beloved elder brothers' etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "30 > 26",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "25 > 21",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "16 > 12",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "11 > 8",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 3",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2 > 0",
+      "marks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     8
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-c-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "C",
+   "questionRef": "2015 OL Section C Q(c)",
+   "topicId": "re-c",
+   "conceptId": "origins-main-religious-practices-african-traditional",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Profile the origins and main religious practices of one of the following: ❖ AN AFRICAN TRADITIONAL RELIGION ❖ A CHINESE RELIGION ❖ A NEW RELIGIOUS MOVEMENT ❖ BAHA’I FAITH ❖ SIKH RELIGION",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a religion/new religious movement by accurately tracing the beginnings and main practices of a religion or a new religious movement listed in the question.",
+    "points": [
+     "African Traditional Religion: Origins ― beliefs and practices are usually handed down through oral tradition; ancient myths etc. Religious Practices – making offerings and speaking to God/gods through prayer, invocation, ritual, dance or singing; magic is used for protection against evil spirits etc.",
+     "A New Religious Movement: faith group, alternative to official institutional religion; claims to offers a religious vision of the world and to respond to fundamental questions of life e.g. International Society for Krishna Consciousness (ISKCON) Origins ― began in1944 when Bhaktivedanta Swami Prabhupada published his religious ideas; founded ISKCON in 1968; his teachings are based on Hindu philosophy and sacred text etc. Religious Practices – members become part of a new family and may live in an ISCKON temple or house; members follow strict dietary laws; dedicating their lives to Krishna and attracting others to his service etc.",
+     "The Bahá'í Faith: Originated in Iran in 1844 Ali Muhammad, a Shi’ite was its first religious leader; Mirza- Hoseyn’Ali Nuri took the title ‘Bahá‘u’lláh’ and announced in 1863 that he was the ‘Chosen One of God’ etc. Religious Practices – members study all religious texts to see how Baha‘u’llah fulfils earlier prophecies; work undertaken in the spirit of service to God and humanity is considered an act of worship; daily prayer is an obligation etc.",
+     "Chinese Religion e.g. Confucianism: Origins ― can be traced back to Confucius (551 ― 479 BCE) a teacher who founded a school of philosophy; his words were written down soon after his death etc. Religious Practices – being mindful of the divine will; living a life of virtue, loyalty to family and to the state is central to the teaching of Confucianism etc.",
+     "Sikh Religion: Origins – India in the 16th century CE; influenced by both Hinduism and Islam; Guru Nanek was the first guru whose teaching shaped the Sikh religion; Religious Practices – the three duties are to bring God to mind, to work honestly, to practice charity; each morning Sikhs bathe and meditate; they pray before evening; Sikhs believe that the sacred scriptures guides them through life; any suitably educated Sikh may lead the community worship in the temple etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "30 > 26",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "25 > 21",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "16 > 12",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "11 > 8",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 3",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2 > 0",
+      "marks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "directions": [
+     "Note: Allow one particular belief system if it is a particular example of the other living religions listed in the question."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     9
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-d-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2015 OL Section D Q(a)",
+   "topicId": "re-d",
+   "conceptId": "meant-terms-relation-moral-decision-making",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Describe what is meant by two of the following terms in relation to moral decision-making: • AMORAL • IMMORAL • MORAL IMMATURITY",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of moral decision-making by giving an accurate account of the meaning of two of the terms listed in the question in relation to moral decision-making.",
+    "points": [
+     "Amoral ― no sense/understanding of judging right and wrong in making a decision etc.",
+     "Immoral ― have an understanding of right and wrong but decide to do what he/she knows to be wrong etc.",
+     "Moral immaturity ― a person’s morality has not yet developed for social or personal reasons; can be bias e.g. they may not respect the property of others and decide that stealing is acceptable etc."
+    ],
+    "openList": false,
+    "answers": 2,
+    "answerMax": 10,
+    "gridHead": "10Mx2",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "10 > 9",
+      "marks": [
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "8 > 7",
+      "marks": [
+       7,
+       8
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "6",
+      "marks": [
+       6
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "5 > 4",
+      "marks": [
+       4,
+       5
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3",
+      "marks": [
+       3
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2",
+      "marks": [
+       2
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid, here once for each answer. The points of reference are examples, not marks: place each answer in one band.",
+    "schemePages": [
+     10
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-d-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2015 OL Section D Q(b)",
+   "topicId": "re-d",
+   "conceptId": "influence-person-growth-towards-moral-maturity",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Discuss the influence that one of the following can have on a person’s growth towards moral maturity: • CULTURE • MEDIA • RELIGION",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of moral maturity by examining one of the factors listed in the question and drawing accurate conclusions about its influence on the development of a morally mature person.",
+    "points": [
+     "What is presented as being of value can influence a person’s idea of what is right e.g. a person’s values are based on pleasing others etc.",
+     "Through observed/learnt behaviours – the example of others could encourage the person to think of the consequences for others when judging between right and wrong etc.",
+     "Culture/Religion/Media – may inform/educate a person about the consequences of actions which could influence a person in deciding what is right or wrong in a situation etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "30 > 26",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "25 > 21",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "16 > 12",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "11 > 8",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 3",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2 > 0",
+      "marks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     10
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-d-c",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "D",
+   "questionRef": "2015 OL Section D Q(c)",
+   "topicId": "re-d",
+   "conceptId": "moral-failure-involved-example-structural-injustice",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain how moral failure is involved in one example of structural injustice that you have studied.",
+   "totalMarks": 30,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of moral failure by giving an accurate account of the way in which a failure to act in a morally good way can be seen in one example of how a society is organised.",
+    "points": [
+     "Where the official organised structures in a society support something known to be wrong e.g. racism etc.",
+     "A society not acting in a way that treats all people as equals because of prejudice or discrimination e.g. the apartheid system in South Africa not respecting the human rights of all etc.",
+     "The moral failure that results from greed within a society can lead to the exploitation of people and official structures maybe involved e.g. slavery, child labour etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 30,
+    "gridHead": "30M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "30 > 26",
+      "marks": [
+       26,
+       27,
+       28,
+       29,
+       30
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "25 > 21",
+      "marks": [
+       21,
+       22,
+       23,
+       24,
+       25
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "16 > 12",
+      "marks": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "11 > 8",
+      "marks": [
+       8,
+       9,
+       10,
+       11
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 3",
+      "marks": [
+       3,
+       4,
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "2 > 0",
+      "marks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ],
+    "directions": [
+     "Note: A candidate outlines one example of how wrong-doing can be seen in something other than injustice within the official organised structures of a society ― Consult your Advising Examiner."
+    ],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     10,
+     11
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-e-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2015 OL Section E Q(a)",
+   "topicId": "re-e",
+   "conceptId": "contributed-understanding-gender-society-today-biology",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Explain how one of the following has contributed to the understanding of gender in society today: • BIOLOGY • PHILOSOPHY • PSYCHOLOGY • SOCIOLOGY",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of gender by giving an accurate account of the way in which one of the disciplines listed in the question has contributed to the understanding of gender in society today.",
+    "points": [
+     "Biology ― differences between men and women i.e. genes and chromosones; sex glands; sex hormones etc. suggest that gender differences are apparent after birth and before socialisation can have any significant influence etc.",
+     "Philosophy ― In answering the question ‘what does it mean to be human?’ philosophy considers what it means to be male or female etc.",
+     "Psychology ― psychological testing has found at least four differences between the sexes i.e. verbal; mathematical; visual-spatial abilities; aggression etc.",
+     "Sociology ― research has shown that people are influenced by the environment in which they learn to socialise with others; gender roles are influenced by social contexts etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     12
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-e-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2015 OL Section E Q(b)(i)",
+   "topicId": "re-e",
+   "conceptId": "impact-her-life-work-people-her",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "The impact of her life and work on the people of her day.",
+   "stem": "• FOUNDERS & REFORMERS OF RELIGIOUS ORDERS • RELIGIOUS WRITERS • SOCIAL REFORMERS • SPIRITUAL THINKERS Choose one woman, in any of the above categories and outline how she has contributed to a religious tradition using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show understanding of the contribution of a woman to a religious tradition by setting out accurate information on how the life and work of a woman, from any of the categories listed in the question, had an impact on the people of her day.",
+    "points": [
+     "Founders of Religious Orders e.g. Nano Nagle’s life and work helped the poor of her time seeking an education in that she opened schools in Ireland and founded a religious order that continued her work throughout the world etc.",
+     "Religious Writers e.g. Joyce Rupp’s writings on prayer helped the people of her time in their quest for a deeper spirituality etc.",
+     "Social Reformers e.g. for Dorothy Day, God was always at the centre of her life and work as she lived in solidarity with the poor and established homes etc.",
+     "Spiritual Thinkers e.g. Catherine of Siena tended the sick and worked for the conversion of sinners; she encouraged the people of her day to think about God in mystical ways using a language of love to speak of an intimacy with God etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     12,
+     13
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-e-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "E",
+   "questionRef": "2015 OL Section E Q(b)(ii)",
+   "topicId": "re-e",
+   "conceptId": "questions-raised-her-life-work-people",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Questions raised by her life and work for people today.",
+   "stem": "• FOUNDERS & REFORMERS OF RELIGIOUS ORDERS • RELIGIOUS WRITERS • SOCIAL REFORMERS • SPIRITUAL THINKERS Choose one woman, in any of the above categories and outline how she has contributed to a religious tradition using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the contribution of a woman to a religious tradition by setting out accurate information on two questions raised for people today by the life and work of a woman in any of the categories listed in the question.",
+    "points": [
+     "Founder of Religious Orders e.g. Nano Nagle’s ― could inspire people today to consider how to reach out to the poor living in slums etc.; how to show commitment to their religious beliefs etc.",
+     "Religious Writers e.g. Joyce Rupp writings ― could make people today reflect on prayer and ways of bringing the spiritual to their everyday lives etc.",
+     "Social Reformers e.g. Dorothy Day ― could make people today question how to live a deeply committed religious life amid the complexities of the modern world; how to live in solidarity with the poor and the marginalised in society today etc.",
+     "Spiritual Thinkers e.g. Catherine of Siena ― could make people today search for God and think about God in mystical ways etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     13
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-h-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2015 OL Section H Q(a)",
+   "topicId": "re-h",
+   "conceptId": "influence-bible-seen-example-constitutions-declarations",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Profile how the influence of the Bible can be seen in one example of any of the following: • CONSTITUTIONS/DECLARATIONS OF INDEPENDENCE • FAMOUS SPEECHES • THE UNIVERSAL DECLARATION OF HUMAN RIGHTS",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the Bible as a classic text by accurately tracing how the influence of the Bible can be seen in one example of any of the following: constitutions and declarations of independence or famous speeches or the universal declaration of human rights.",
+    "points": [
+     "e.g. American Declaration of Independence was influenced by prophetical and New Testament teaching on the rights of the individual ― in the words ‘all men are equal’ and ‘they are endowed by their creator with certain unalienable rights’ etc.",
+     "e.g. Martin Luther King famous speech ‘I have a Dream’ was spoken by him in prophetic tones and influenced by Isaiah’s dream of a new Exodus etc.",
+     "e.g. the first article from the Universal Declaration of Human Rights recognises the ‘inherent dignity and the ‘equal and inalienable rights’ of every human being has echoes of the influence of the Genesis statement that humanity is made ‘in the image and likeness of God’ and of Jesus’ Sermon on the Mount etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     14
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-h-b-i",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2015 OL Section H Q(b)(i)",
+   "topicId": "re-h",
+   "conceptId": "text-original-background-context",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "The text’s original background/context.",
+   "stem": "• HANNAH’S SONG OF THANKS (1 Samuel 2:1-10) • ISRAEL RESTORED (Isaiah 52:13-53:12) • THE TEN COMMANDMENTS (Exodus 20:1-21) Choose one of the above texts and examine its importance in the Hebrew Scriptures using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a key text from the Hebrew Scriptures by looking closely at the original background/context of one of the texts listed in the question.",
+    "points": [
+     "Hannah’s Song of Thanks ― the story of the birth of Samuel is the context for the Song of Hannah; originally composed in a different context and adapted for Hannah, a once barren woman who is praising God for being powerful yet on the side of the powerless, which would have comforted the Hebrew people when they were oppressed by the Philistines etc.",
+     "Israel Restored ― the fourth of a series of servant songs found in Deutero-Isaiah written to give hope and consolation to Jewish exiles in Babylon; written by a disciple of Isaiah; a poem which consists of a report framed by utterances of God which would have assured the Jewish people of their imminent liberation; its language and imagery recall the Psalms of lament; shows that the suffering of one can atone for the sins of the many etc.",
+     "The Ten Commandments ― Decalogue presented as divine words spoken to Moses they function as an expression of the obligations of God’s Covenant with the people of Israel at Sinai; the most general and comprehensive series of laws in the Hebrew Scriptures etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     14,
+     15
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-h-b-ii",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "H",
+   "questionRef": "2015 OL Section H Q(b)(ii)",
+   "topicId": "re-h",
+   "conceptId": "role-text-worship-today",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "The role of the text in worship today.",
+   "stem": "• HANNAH’S SONG OF THANKS (1 Samuel 2:1-10) • ISRAEL RESTORED (Isaiah 52:13-53:12) • THE TEN COMMANDMENTS (Exodus 20:1-21) Choose one of the above texts and examine its importance in the Hebrew Scriptures using each of the following headings:",
+   "totalMarks": 20,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of a key text from the Hebrew Scriptures by looking closely at the role one of the texts listed in the question plays in worship today.",
+    "points": [
+     "Hannah’s Song of Thanks – used in prayer etc.",
+     "Israel Restored – used in the Roman Catholic Church’s liturgies on Good Friday of Holy Week when the sufferings of Christ in his passion are the focus of worship etc.",
+     "The Ten Commandments ― synagogue motif; moral code etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 20,
+    "gridHead": "20M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "20 > 17",
+      "marks": [
+       17,
+       18,
+       19,
+       20
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "16 > 14",
+      "marks": [
+       14,
+       15,
+       16
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "13 > 11",
+      "marks": [
+       11,
+       12,
+       13
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "10 > 8",
+      "marks": [
+       8,
+       9,
+       10
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "7 > 5",
+      "marks": [
+       5,
+       6,
+       7
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "4 > 2",
+      "marks": [
+       2,
+       3,
+       4
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "1 > 0",
+      "marks": [
+       0,
+       1
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     15
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-i-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "I",
+   "questionRef": "2015 OL Section I Q(a)",
+   "topicId": "re-i",
+   "conceptId": "evidence-pre-christian-religious-belief-found",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline the evidence of pre-Christian religious belief that can be found in one place in Ireland today.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of pre-Christian Ireland by setting out accurate information on how evidence of pre-Christian religious belief can be seen in one place in Ireland today.",
+    "points": [
+     "Holy wells e.g. as water is viewed as life-giving, the Celts of fifth century Ireland had holy places associated with springs, wells and rivers where local deities were worshiped; many place names derived from ‘tobar’ (well) mark these sites etc.",
+     "Place-names that derive from ‘doire’ (oak-grove) identify places where local deities were worshiped; as trees are living they were be seen as uniting the heavens, the earth and the underworld and as being possessed by a spirit representing fertility, rebirth etc.",
+     "Burial sites because of their associations with death had religious implications in pre-Christian Ireland; burial mounds were regarded by the Celts as holy places e.g. Boyne Valley sites etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     16
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-i-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "I",
+   "questionRef": "2015 OL Section I Q(b)",
+   "topicId": "re-i",
+   "conceptId": "pattern-religious-practice-ireland-today-found",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Compare the pattern of religious practice in Ireland today with that found in another part of Europe.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show knowledge of the pattern of religious belief by giving an accurate account of a similarity and/or difference between the way religious belief is practised in Ireland and in another part of Europe today.",
+    "points": [
+     "People in Ireland and throughout Europe today mark key moments in life with religious rituals; e.g. 60% of initiation rites; 70% of first marriages and 80% of funerals are celebrated in church etc.",
+     "Pattern of religious practice in Ireland is similar to other countries that have been traditionally Roman Catholic e.g. Poland and Malta etc.; many people in Ireland today pray daily and regularly participate in liturgies etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     16
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-j-a",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "J",
+   "questionRef": "2015 OL Section J Q(a)",
+   "topicId": "re-j",
+   "conceptId": "examples-certain-questions-common-both-religion",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Using examples, explain how certain questions are common to both religion and science.",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the theological and scientific enterprises by setting out accurate information on two examples of how questions are common to both religion and science.",
+    "points": [
+     "Both science and theology operate out of a community of enquiry that is committed to the pursuit of truth; questioning plays an important role in their enquiries as science answers ‘how’ questions and religion answers ‘why’ questions; each community of enquiry is informed by the accumulated wisdom of the past etc.",
+     "Questions common to science and religion include questions about origins/beginnings – cosmology (study of the origin and evolving structure of the material universe, how it all began and what will become of it in the future) and the doctrine of creation (speaks of the universe as God’s creation) etc.",
+     "Questions common to science and religion include questions about conclusions/endings ― the destiny of the natural world and eschatology (religious teaching on the future of the world and God’s plan for the final destiny of human beings) etc."
+    ],
+    "openList": true,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     17
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
+   }
+  },
+  {
+   "id": "re-2015-ol-j-b",
+   "subjectId": "religious-education",
+   "source": "sec",
+   "kind": "rubric",
+   "year": 2015,
+   "level": "ordinary",
+   "section": "J",
+   "questionRef": "2015 OL Section J Q(b)",
+   "topicId": "re-j",
+   "conceptId": "concerns-religion-science-bring-current-debates",
+   "paperFileid": "LC223GLP000EV",
+   "questionText": "Outline the concerns that religion and science each bring to current debates on one of the following issues: • THE ORIGINS OF THE UNIVERSE • THE BEGINNINGS OF LIFE",
+   "totalMarks": 40,
+   "specVersion": "lc-religious-education-2003",
+   "schemeCitation": "Marking criteria, points and band grid quoted from the SEC marking scheme, Religious Education 2015 Ordinary Level — © State Examinations Commission.",
+   "qa": {
+    "gates": [
+     "verbatim",
+     "tariff",
+     "band-grid"
+    ],
+    "humanReviewedBy": "agent-verified",
+    "humanReviewedAt": "2026-11-05"
+   },
+   "rubric": {
+    "system": "religious-education",
+    "criteria": "An excellent answer will show an understanding of the connections between science and theology by setting out accurate information on the concerns that religion and science each bring to current debates on one of the topics listed in the question.",
+    "points": [
+     "The origins of the universe ― interest of theologians and scientists in origins is driven by the need to understand who we are; the insights of religion address concerns about the place of people within creation e.g. creationism; ecology of Teillard de Chardin; the insights of science address concerns about how the universe came to be and what may happen to the universe in the future e.g. Big Bang etc.",
+     "The beginnings of life ― the insights of religion approach questions from the point of view that the person exists in relationship with the divine; address concerns about medical ethics; the insights of science give facts about the embryonic stages of foetal development; address concerns about the nature of life as life begins; advances in science in recent times raise questions about human stewardship of creation, e.g. artificially created life, cloning, genetically modified life etc."
+    ],
+    "openList": false,
+    "answers": 1,
+    "answerMax": 40,
+    "gridHead": "40M",
+    "bands": [
+     {
+      "label": "Excellent",
+      "printed": "40 > 34",
+      "marks": [
+       34,
+       35,
+       36,
+       37,
+       38,
+       39,
+       40
+      ]
+     },
+     {
+      "label": "Very Good",
+      "printed": "33 > 28",
+      "marks": [
+       28,
+       29,
+       30,
+       31,
+       32,
+       33
+      ]
+     },
+     {
+      "label": "Good",
+      "printed": "27 > 22",
+      "marks": [
+       22,
+       23,
+       24,
+       25,
+       26,
+       27
+      ]
+     },
+     {
+      "label": "Fair",
+      "printed": "21 > 16",
+      "marks": [
+       16,
+       17,
+       18,
+       19,
+       20,
+       21
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "15 > 10",
+      "marks": [
+       10,
+       11,
+       12,
+       13,
+       14,
+       15
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "9 > 4",
+      "marks": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "label": "Weak",
+      "printed": "3 > 0",
+      "marks": [
+       0,
+       1,
+       2,
+       3
+      ]
+     }
+    ],
+    "directions": [],
+    "markingGuideNote": "The SEC marks every Religious Education answer on its printed band grid. The points of reference are examples, not marks: place the whole answer in one band.",
+    "schemePages": [
+     17
+    ],
+    "schemeFileid": "LC223GLP000EV.pdf"
    }
   }
  ]
