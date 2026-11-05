@@ -314,7 +314,10 @@ def table_cells(cards):
 
 # ------------------------------------------------------------- degrees ---
 
-_DEG_TEXT = re.compile(r'(\d+)( ?)o([CF])\b')
+# The o may stand apart from the unit too: 2010 HL scheme p11 sets "40 o C",
+# the o raised so far above its line that a lift reads it as a line of its
+# own and the residue joins it back between the number and the unit.
+_DEG_TEXT = re.compile(r'(\d+)( ?)o ?([CF])\b')
 _PROVEN = {}
 
 
@@ -355,7 +358,8 @@ def raised_degrees(year, level):
 
 def _deg(text, proven):
     return _DEG_TEXT.sub(lambda m: (f'{m.group(1)}{m.group(2)}°{m.group(3)}'
-                                    if m.group(0) in proven else m.group(0)), text)
+                                    if f'{m.group(1)}{m.group(2)}o{m.group(3)}' in proven
+                                    else m.group(0)), text)
 
 
 def degree_signs(cards):
