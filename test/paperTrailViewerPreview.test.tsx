@@ -3,7 +3,6 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { cleanup, render, screen, waitFor, fireEvent } from "@testing-library/react";
 import Lenis from "lenis";
 import Viewer from "../components/PaperTrail/Viewer";
-import { topicsForPaper } from "../components/PaperTrail/topics";
 vi.mock("../components/PaperTrail/pdfjsLoader", () => ({
   loadPdfjs: () => new Promise(() => {}),
 }));
@@ -28,12 +27,16 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 describe("Paper Trail previews", () => {
-  it("makes verified French audio available while the aural booklet loads", () => {
-    render(<Viewer title="2026 French listening" paper={paper}
-      topics={topicsForPaper('french', 2026, 'ordinary', 'ev', 'LC010GLPA00BV.pdf')!}
+  it.each([
+    ['french', 'LC010GLPA00BV.pdf', 'LC010CLP017EV.mp3'],
+    ['japanese', 'LC058ALPA00BV.pdf', 'LC058ZLP017BV.mp3'],
+    ['russian', 'LC099ALPA00BV.pdf', 'LC099ZLP017BV.mp3'],
+  ] as const)("makes verified %s audio available while the aural booklet loads", (subjectId, fileid, recording) => {
+    render(<Viewer title={`2026 ${subjectId} listening`} paper={paper}
+      topics={{ subjectId, year: 2026, level: subjectId === 'french' ? 'ordinary' : 'higher', lang: 'ev', fileid, paperKey: 'aural', q: [] }}
       onClose={() => {}} />);
     const player = screen.getByRole('dialog').querySelector('audio');
-    expect(player).toHaveAttribute('src', 'https://www.examinations.ie/archive/exampapers/2026/LC010CLP017EV.mp3');
+    expect(player).toHaveAttribute('src', `https://www.examinations.ie/archive/exampapers/2026/${recording}`);
     expect(player).toHaveAttribute('controls');
   });
   it("exempts the portalled viewer from the landing page scroll controller", () => {

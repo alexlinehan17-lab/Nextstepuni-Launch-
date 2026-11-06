@@ -90,8 +90,8 @@ import { captureZoomAnchor, restoreZoomAnchor, type ZoomAnchor } from './zoomAnc
 import MobileQuestionTools from './MobileQuestionTools';
 import { printedQuestionAnchors, questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
 import { isAnswerMap, mergePaperAnchorMetadata } from './vaultResolve';
-import { frenchAudioForPaper } from './frenchAudio';
-import FrenchPaperAudio from './FrenchPaperAudio';
+import { audioForPaper } from './paperRecording';
+import PaperAudio from './PaperAudio';
 // The chrome (top bar, Tools menu, page bar, status toasts) is Kobra; see the file.
 import './viewer-chrome.css';
 
@@ -223,7 +223,7 @@ const Viewer: React.FC<ViewerProps> = ({
   onClose,
   onPosition,
 }) => {
-  const audioSource = useMemo(() => topics ? frenchAudioForPaper(topics) : null, [topics]);
+  const audioSource = useMemo(() => topics ? audioForPaper(topics) : null, [topics]);
   const [side, setSide] = useState<Side>(initialSide === 'scheme' && scheme ? 'scheme' : 'paper');
   const [zoom, setZoom] = useState(1);
   const [epoch, setEpoch] = useState(0); // bumped on resize/rotation → canvases re-render
@@ -1357,7 +1357,7 @@ const Viewer: React.FC<ViewerProps> = ({
       </KobraScope>
 
       {audioSource && <div className="shrink-0 bg-white border-b border-zinc-200">
-        <div className="max-w-3xl mx-auto"><FrenchPaperAudio source={audioSource} /></div>
+        <div className="max-w-3xl mx-auto"><PaperAudio source={audioSource} /></div>
       </div>}
       <div className="pt-reader-workspace" data-split={inlineScheme || undefined}>
       {/* Body */}
