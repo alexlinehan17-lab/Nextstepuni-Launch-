@@ -77,6 +77,7 @@ import { CARDS as ITALIAN_HIGHER } from '../components/MarkBank/cards/italian/hi
 import { CARDS as ITALIAN_ORDINARY } from '../components/MarkBank/cards/italian/ordinary';
 import { CARDS as RUSSIAN_HIGHER } from '../components/MarkBank/cards/russian/higher';
 import { CARDS as RUSSIAN_ORDINARY } from '../components/MarkBank/cards/russian/ordinary';
+import russianReviewedSources from '../scripts/markbank/authoring/russian-reviewed-sources.json';
 import { CARDS as JAPANESE_HIGHER } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as JAPANESE_ORDINARY } from '../components/MarkBank/cards/japanese/ordinary';
 import { CARDS as POLISH_HIGHER } from '../components/MarkBank/cards/polish/higher';
@@ -855,7 +856,8 @@ const decks = [
    * pages of the question paper it was printed on; unlike them, fourteen of
    * its cards are answered in RUSSIAN rather than in English or Irish and say
    * so on their face. */
-  ['russian:higher', RUSSIAN_HIGHER, 83, '28a15e33be6d11b7077181773cc7611e2681f8c34c057fa8361077b386491392'],
+  // 2026 Higher adds46 source-reviewed tasks; all83 original Higher IDs remain.
+  ['russian:higher', RUSSIAN_HIGHER, 129, 'd6dd301e3aab209e0c35878583aba74fcffd253a241adf020ee49119ed562a6c'],
   ['russian:ordinary', RUSSIAN_ORDINARY, 116, '7a1246357f052dda6f3e337e5c05b1a7df6ce1ec213f8d3eb9cb648576fa8e49'],
   /* Japanese is the twenty-second subject and the first set in a non-Latin
    * script. Every card is new; none replaces anything. Two things are true of
@@ -1547,9 +1549,9 @@ describe('Mark Bank card preservation', () => {
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
-    ), 0)).toBe(22_970 + frenchAdditionIds.size + artNet);
+    ), 0)).toBe(22_970 + frenchAdditionIds.size + artNet + russianReviewedSources.length);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size
+      .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size + russianReviewedSources.length
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length
         + geographyAdditionIds.size - geographyAliasedIds.length

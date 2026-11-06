@@ -271,7 +271,9 @@ NOTE = re.compile(
     r'General\s*:|Segment\s+\d|Answer ONE\b|In the text\b|Indicate the case\b|'
     r'Supply the infinitive\b|Match the\b|Put the words\b|Insert the\b|'
     r'Three phrases\b|Two of the following\b|Sampla\b|Example\b|OR$|N[ÓO]\b)', re.I)
-PAGE = re.compile(r'^(?:##\s*Page\s*\d+\s*$|\d{1,3}\s*$)')
+PAGE = re.compile(r'^(?:##\s*Page\s*\d+\s*$|\d{1,3}\s*$|'
+                  r'Leaving Certificate\s*$|'
+                  r'(?:Leaving Certificate\s+)?Russian\s*[–—-]\s*(?:Higher|Ordinary) Level\s+\d+\s*$)')
 
 
 # The white space that separates two printed COLUMNS of a scheme table from
@@ -551,6 +553,11 @@ class RuScheme:
             if not groups:
                 continue
             line = ' '.join(groups)
+            # Page furniture must be discarded before both the reading walk
+            # and the task-table collector. In2026 this footer became a
+            # fictitious prompt/answer pair and displaced a19-word menu.
+            if PAGE.match(line):
+                continue
             if APPENDIX.match(line):
                 break
             if LISTENING.match(line):

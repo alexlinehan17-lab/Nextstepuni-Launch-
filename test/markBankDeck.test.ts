@@ -537,6 +537,7 @@ describe('every card points at the question paper it came from', () => {
   });
 
   test('and at the paper holding its own section', async () => {
+    const { audioQuestionPaperFileid } = await import('../scripts/markbank/audioMaterial.mjs');
     const { resolvePaperFileid, resolveIndexedPaperFileid, corpusSubjectFor } =
       await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
@@ -552,9 +553,9 @@ describe('every card points at the question paper it came from', () => {
           ? { paperFileid: c.sourceMaterial.sourceFileid, schemeFileid: c.mathematicsScale.schemeFileid }
           : c.subjectId === 'physics' ? reviewedPhysicsSource(c.id)
           : c.subjectId === 'home-economics' ? reviewedHomeEconomicsSource(c.id) : undefined;
-        const expected = source
+        const expected = audioQuestionPaperFileid(c, c.subjectId) ?? (source
           ? resolveIndexedPaperFileid(c.subjectId, c.year, c.level, source)
-          : resolvePaperFileid(corpusSubjectFor(c.subjectId, c.questionRef), c.year, c.level, sourceSection);
+          : resolvePaperFileid(corpusSubjectFor(c.subjectId, c.questionRef), c.year, c.level, sourceSection));
         return c.paperFileid !== null && c.paperFileid !== expected;
       })
       .map(c => `${c.questionRef} (Section ${c.section}) -> ${c.paperFileid}`);

@@ -1,0 +1,1230 @@
+{
+  "subject": "russian",
+  "reviewedAt": "2026-11-06",
+  "scope": "Available main English/bilingual written and aural papers, 2010–2026. No published deferred files located in the corpus or reachable listings; unavailable SEC archive listing prevents a stronger absence claim.",
+  "archiveInventory": {
+    "files": [
+      {
+        "archive": "exampapers",
+        "year": 2010,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "b31909e020b82ba2a6748f8b2ff59aa6bc5b0fc2c9351e7290d54c7e2215b475",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2010,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "f0477335bd426a87dfd0ee3dc933a4f05ec89b42b96aa0141d132e310b9a4376",
+        "pages": 16,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2010,
+        "fileid": "LC099ALPA00EV.pdf",
+        "sha256": "98d9cd466281c69324f32e244a4734d9075c880d3d3850859dcc301120be03db",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2010,
+        "fileid": "LC099ALPA00IV.pdf",
+        "sha256": "24b0bae043bd0c1b06c75248df12482e95c92105de28f7fb8555d0e7900328aa",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2010,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "8a4c29e76ab591c9d406b8cb3fcd57f57cbf7f4b178e32ea6c26614f1ac5502d",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2010,
+        "fileid": "LC099GLP000IV.pdf",
+        "sha256": "edaaa00c68dc8f4c10e1f1b4699ae611eb2fc0a961d688201e50e45748f1edbc",
+        "pages": 16,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2010,
+        "fileid": "LC099GLPA00EV.pdf",
+        "sha256": "0fb3329b722ebca3bcd74cd30fac7df55ed2b5ba7ab4d267d19a2af60f021844",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2010,
+        "fileid": "LC099GLPA00IV.pdf",
+        "sha256": "9bd2f9f3b2152e243ef7a5a9016c26e568b9c82960331ed5a02a696059adb638",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2011,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "282f90bd9437359bb15917f4254fbd1e2c79b07912d7211abc7272c0be0429d9",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2011,
+        "fileid": "LC099ALPA00EV.pdf",
+        "sha256": "d914563a421a1aeb5dcadcd0a70e5d0e0c4c2c538075452df12be1445645ee1d",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2011,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "66f722cae32f9fe493d4b0c6fc5c3ace6127e75d0ea70e588f14bd3af9c338b7",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2011,
+        "fileid": "LC099GLPA00EV.pdf",
+        "sha256": "714fb158cd3dbeeb8c556fb529881376db8154a1c6615ad8a3c8a4f4da8bb8ed",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2012,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "b7757711e6c73bd6f4d7648501364cb252d771bce02177a4c52893137c6ff04a",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2012,
+        "fileid": "LC099ALPA00EV.pdf",
+        "sha256": "6391789ba2e09bca4df17e74473f2355d32c0fa11516b9e824bebb82aad8efad",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2012,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "b6aba8df1ea656cf4efa1f1189ebfe6fb204c30969bc0a8d0645ddc3aadc9d61",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2012,
+        "fileid": "LC099GLPA00EV.pdf",
+        "sha256": "45db827722fbc93fcea8970edde10c6e30cd8011d343a33ffc2caedaf25d4fa6",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2013,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "36835056dd0dbc40697f132b2a00484df1118ece3f364a8263992dc1a3c4dbc0",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2013,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "36835056dd0dbc40697f132b2a00484df1118ece3f364a8263992dc1a3c4dbc0",
+        "pages": 16,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2013,
+        "fileid": "LC099ALPA00EV.pdf",
+        "sha256": "849f2d530c3a5d5cfc2667bff1f4b38be719483beab856f06d826b51b1640f02",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2013,
+        "fileid": "LC099ALPA00IV.pdf",
+        "sha256": "849f2d530c3a5d5cfc2667bff1f4b38be719483beab856f06d826b51b1640f02",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2013,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "48a29fa96259ea535913e07fde760949d91f854dacb10ae8a90cdb0eb9b18a07",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2013,
+        "fileid": "LC099GLPA00EV.pdf",
+        "sha256": "3aa28cebff239c2f82bdbf2d82e085112eaf1b8d514d0931e1d1bd37b8d79de2",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2013,
+        "fileid": "LC099GLPA00IV.pdf",
+        "sha256": "3aa28cebff239c2f82bdbf2d82e085112eaf1b8d514d0931e1d1bd37b8d79de2",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2014,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "2260a53d30344848d06148108aac814aa7b99616d68dddec815ce79604877b91",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2014,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "2260a53d30344848d06148108aac814aa7b99616d68dddec815ce79604877b91",
+        "pages": 16,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2014,
+        "fileid": "LC099ALPA00EV.pdf",
+        "sha256": "3cf21d1f34576eda4ce0b6bc126152ea7f8b289c105cd5e7e711774bf10f1f66",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2014,
+        "fileid": "LC099ALPA00IV.pdf",
+        "sha256": "3cf21d1f34576eda4ce0b6bc126152ea7f8b289c105cd5e7e711774bf10f1f66",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2014,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "fa8c43f85b8c65aa24a0989c22213a548c729106057965052908d8a887107eef",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2014,
+        "fileid": "LC099GLP000IV.pdf",
+        "sha256": "fa8c43f85b8c65aa24a0989c22213a548c729106057965052908d8a887107eef",
+        "pages": 20,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2014,
+        "fileid": "LC099GLPA00EV.pdf",
+        "sha256": "1e2b3340b53b7ecd8f8e2deeb9ff5ed3b96914f41f3c77aafe21e13f37468720",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2014,
+        "fileid": "LC099GLPA00IV.pdf",
+        "sha256": "1e2b3340b53b7ecd8f8e2deeb9ff5ed3b96914f41f3c77aafe21e13f37468720",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2015,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "119308b8b944f4a21dab09cf461ebb94c84cb4289458b38925634cc74ed45e66",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2015,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "119308b8b944f4a21dab09cf461ebb94c84cb4289458b38925634cc74ed45e66",
+        "pages": 16,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2015,
+        "fileid": "LC099ALPA00EV.pdf",
+        "sha256": "ffc5916d6a67988ce34ebc982b8d10c62e420e01593ae9c953008e0035439dbd",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2015,
+        "fileid": "LC099ALPA00IV.pdf",
+        "sha256": "ffc5916d6a67988ce34ebc982b8d10c62e420e01593ae9c953008e0035439dbd",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2015,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "6ac6846e912d21fb2bb26784c390da98e538e0ca6ec40aabfd43acf23025cd1f",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2015,
+        "fileid": "LC099GLP000IV.pdf",
+        "sha256": "6ac6846e912d21fb2bb26784c390da98e538e0ca6ec40aabfd43acf23025cd1f",
+        "pages": 20,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2015,
+        "fileid": "LC099GLPA00EV.pdf",
+        "sha256": "aef9d92ffb824252084ce34575e43d03ebe224d7840c9c5f27ca3f7732e24064",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2015,
+        "fileid": "LC099GLPA00IV.pdf",
+        "sha256": "aef9d92ffb824252084ce34575e43d03ebe224d7840c9c5f27ca3f7732e24064",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2016,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "37d0b278496335fe827bea49c8f89ccc1c77baa706815493557379e4466012d4",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2016,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "37d0b278496335fe827bea49c8f89ccc1c77baa706815493557379e4466012d4",
+        "pages": 16,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2016,
+        "fileid": "LC099ALPA00EV.pdf",
+        "sha256": "34402a6c1c8c769f9383e5c93d1c71b5b3e2fac9703ca8045ccb4c89491a623b",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2016,
+        "fileid": "LC099ALPA00IV.pdf",
+        "sha256": "34402a6c1c8c769f9383e5c93d1c71b5b3e2fac9703ca8045ccb4c89491a623b",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2016,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "c664fa1ab4abdf8fc3eaec74dbde93201a196141aba9deb2b04744d3d048c7f8",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2016,
+        "fileid": "LC099GLP000IV.pdf",
+        "sha256": "c664fa1ab4abdf8fc3eaec74dbde93201a196141aba9deb2b04744d3d048c7f8",
+        "pages": 20,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2016,
+        "fileid": "LC099GLPA00EV.pdf",
+        "sha256": "b40b68b3174a9a4191343d4b01a7dc257730fc3df790c5f48a00b65e6dfe7ee4",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2016,
+        "fileid": "LC099GLPA00IV.pdf",
+        "sha256": "b40b68b3174a9a4191343d4b01a7dc257730fc3df790c5f48a00b65e6dfe7ee4",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2017,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "f25024625e703cada8bdaf6f3acb2713be820b6d5e9e5ce640087fdcbcd65815",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2017,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "29eb7fee281649e81b4c4c21176c23d427483a5b4e3f26fd44e851d5d7aef77b",
+        "pages": 16,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2017,
+        "fileid": "LC099ALPA00EV.pdf",
+        "sha256": "d704a57c8d5b3bded04a8c0da5f3ebacbbea06968dcdb2db2c14f164d1ca262b",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2017,
+        "fileid": "LC099ALPA00IV.pdf",
+        "sha256": "d704a57c8d5b3bded04a8c0da5f3ebacbbea06968dcdb2db2c14f164d1ca262b",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2017,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "2b705ed6fdff983ac7effe1b4d3737fdaca5a1cd893f19b8b58946f544d713f6",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2017,
+        "fileid": "LC099GLP000IV.pdf",
+        "sha256": "2b705ed6fdff983ac7effe1b4d3737fdaca5a1cd893f19b8b58946f544d713f6",
+        "pages": 20,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2017,
+        "fileid": "LC099GLPA00EV.pdf",
+        "sha256": "98fbb84beb3eb52c85dc18ccca198dfb964a2b7727444aa42634a041f3bcdd61",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2017,
+        "fileid": "LC099GLPA00IV.pdf",
+        "sha256": "81370612104b3f50b8c324a5b06897abd9d01d4e8f9b57c7f5fd257dff84b4f7",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2018,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "d6687ec578dd821b52da934b60d69713a76c9d22bfe2740bc57572f335a35da7",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2018,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "d6687ec578dd821b52da934b60d69713a76c9d22bfe2740bc57572f335a35da7",
+        "pages": 16,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2018,
+        "fileid": "LC099ALPA00EV.pdf",
+        "sha256": "4168e975614c8d0dcdcf5399c36e2b28e91413519faf87f828974ce1043baf79",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2018,
+        "fileid": "LC099ALPA00IV.pdf",
+        "sha256": "4168e975614c8d0dcdcf5399c36e2b28e91413519faf87f828974ce1043baf79",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2018,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "ecdc14883748d1b8784886a5a8daa9215273c90f666d88a4750cf31958b4e018",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2018,
+        "fileid": "LC099GLP000IV.pdf",
+        "sha256": "ecdc14883748d1b8784886a5a8daa9215273c90f666d88a4750cf31958b4e018",
+        "pages": 20,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2018,
+        "fileid": "LC099GLPA00EV.pdf",
+        "sha256": "d5f944ddcacabec032c48ee1bfc130b4cdf60e96905e27376570afe5297d5c9c",
+        "pages": 8,
+        "language": "english"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2018,
+        "fileid": "LC099GLPA00IV.pdf",
+        "sha256": "d5f944ddcacabec032c48ee1bfc130b4cdf60e96905e27376570afe5297d5c9c",
+        "pages": 8,
+        "language": "irish"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2019,
+        "fileid": "LC099ALP000BV.pdf",
+        "sha256": "539997eea0823aaf3f93224cc764ec9904cb57ef8afbe3de2048c413e153ecc8",
+        "pages": 16,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2019,
+        "fileid": "LC099ALPA00BV.pdf",
+        "sha256": "b2353a68203d0fd57e2e1d1f78ece5b024db3f251308502c599100b990e2662e",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2019,
+        "fileid": "LC099GLP000BV.pdf",
+        "sha256": "41d32895142e7d84b407db7aba924b55c6f436cf04f8e5d42752008d52766857",
+        "pages": 20,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2019,
+        "fileid": "LC099GLPA00BV.pdf",
+        "sha256": "f0a5627680ab08fd5249384d34e2d95dd67eba058144feb7c6458ea1683f2dbb",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2020,
+        "fileid": "LC099ALP000BV.pdf",
+        "sha256": "29eb6fbdfe4d43b0f85912a87ba9589710417a5e39794c630f0ff70949c37251",
+        "pages": 16,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2020,
+        "fileid": "LC099ALPA00BV.pdf",
+        "sha256": "d9394291088173c4590d88db20bb6c5380dec243a2c50cebc37ea12c4d53e3a8",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2021,
+        "fileid": "LC099ALP000BV.pdf",
+        "sha256": "cc1ccca7e039ac3d38af858cdf842bd549c42183c392684f368e67cc952cca22",
+        "pages": 16,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2021,
+        "fileid": "LC099ALPA00BV.pdf",
+        "sha256": "b635aff4288709c732cc1cdc18e891ab13517d8ee21643f8578ff363266b5bf4",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2021,
+        "fileid": "LC099GLP000BV.pdf",
+        "sha256": "9f52fa220c7d5e407d32de63d657e8e43b822d782872c57b4e8f84b9b3c4f796",
+        "pages": 20,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2021,
+        "fileid": "LC099GLPA00BV.pdf",
+        "sha256": "bab6aad288773bf503848dc4e868b6c0c5dbac13ae118e4bc19e03f9ac0521c4",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2022,
+        "fileid": "LC099ALP000BV.pdf",
+        "sha256": "73b129f223b597be6e096ded274e54b6fbc43260ee0f0b4c356b9477e956b273",
+        "pages": 16,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2022,
+        "fileid": "LC099ALPA00BV.pdf",
+        "sha256": "86914ac9598814d8c89db30655a24271c4d5f97ddbfe1d0e976938d495f7bb6d",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2022,
+        "fileid": "LC099GLP000BV.pdf",
+        "sha256": "a706a1a3b4a1898ebe170609a5b699388178b8dd45461a60a546e4381b8882cd",
+        "pages": 20,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2022,
+        "fileid": "LC099GLPA00BV.pdf",
+        "sha256": "ed8dc696911237310a16ce4e7ed7bc2c16381aecf33ecc78fc976469119796fd",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2023,
+        "fileid": "LC099ALP000BV.pdf",
+        "sha256": "84c1b64263f16512a296609cc8e6725dccc9c1256ada024183e8f7b2cc29e5b4",
+        "pages": 16,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2023,
+        "fileid": "LC099ALPA00BV.pdf",
+        "sha256": "37f2bd651bc04a93dbd619085ba3eecb44e1976e21d224b87c677b7fdcb284b6",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2023,
+        "fileid": "LC099GLP000BV.pdf",
+        "sha256": "28b5a7cf5e15f3c2da6f6938f3b2f13abd888eab5dabd16f28b6966fb1e0e4ce",
+        "pages": 20,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2023,
+        "fileid": "LC099GLPA00BV.pdf",
+        "sha256": "a5ecc7cb74169bcd00d5bc69fe2ce083c96019f449d31515ada7041d2a298b32",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2024,
+        "fileid": "LC099ALP000BV.pdf",
+        "sha256": "c154f981d7a257665eb0a71e24e2246dc5e0e14431297819ff91017da79fc1c7",
+        "pages": 16,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2024,
+        "fileid": "LC099ALPA00BV.pdf",
+        "sha256": "98df8494df03f7ff48a5438d5202036813c4d9a7525d102ca75c9201c95a54c9",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2024,
+        "fileid": "LC099GLP000BV.pdf",
+        "sha256": "7ca7754d00496ebdc9ce022665c6eba8f7378bf7325d02d46ceab168f3761970",
+        "pages": 20,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2024,
+        "fileid": "LC099GLPA00BV.pdf",
+        "sha256": "9384428ab46b24725f66f30afafdfb22048b4507de24e6307eb2df4fe1ea547c",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2025,
+        "fileid": "LC099ALP000BV.pdf",
+        "sha256": "671650c672d92ab191f615700de4dfd7077835d86223a2e976a8818809c8d97f",
+        "pages": 16,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2025,
+        "fileid": "LC099ALPA00BV.pdf",
+        "sha256": "edcc2149eddeababbeb62a5e471c22de654b4fb74bbf671b2e12c0e5abb921fe",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2025,
+        "fileid": "LC099GLP000BV.pdf",
+        "sha256": "a32ab3a53c7d4b97e511656c01384558307700f6d4874dc34337f067c988acc4",
+        "pages": 20,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2025,
+        "fileid": "LC099GLPA00BV.pdf",
+        "sha256": "5621c29b27d2a9b226e8f239a058e24cebe90aa904f18d6bb4fcab31f7454a77",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2026,
+        "fileid": "LC099ALP000BV.pdf",
+        "sha256": "e9fd3cede429b88a1f530fe18a494af3e2cdeb98ba218c932c3d4a72fe147992",
+        "pages": 16,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2026,
+        "fileid": "LC099ALPA00BV.pdf",
+        "sha256": "c0c4ed2e47c5476de8d68179f90acf383c79d2648e77b7bc34589d32caeccb6d",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2026,
+        "fileid": "LC099GLP000BV.pdf",
+        "sha256": "118ab2d6814246c2a9f071945a888fd1ec7be42a46d2d9cf996a25703103f070",
+        "pages": 20,
+        "language": "bilingual"
+      },
+      {
+        "archive": "exampapers",
+        "year": 2026,
+        "fileid": "LC099GLPA00BV.pdf",
+        "sha256": "d6a8bb9334a155937d15c2287001e5e5e9bd0606993df7f449185cb3837df966",
+        "pages": 8,
+        "language": "bilingual"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2010,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "15607f22c24d4502dee8d28cd319711c880d27d06eac33b1da96fa6554a0672c",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2010,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "c60c07cd3d8fb2a005954763da9193ea71192e1da81eb061293b6310ecb93cc5",
+        "pages": 20,
+        "language": "irish"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2010,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "a9fa632484624a15aab956313b463260948d60ae1deaeb4f6344ef4dff2da67e",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2010,
+        "fileid": "LC099GLP000IV.pdf",
+        "sha256": "a254712fdc2ad8672a69dbddd03ea90e489469de1ae90219c50b350fc5561a24",
+        "pages": 13,
+        "language": "irish"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2011,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "0e0ba4dc7e9bffee7675b899d8380ed4102c50d5c0c84ffb7decf39362e5979e",
+        "pages": 24,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2011,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "e4160e18369177d720c75bfba145a13289b352affa583db0881a37b058df1716",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2012,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "eb369d55edcd65c40ace69eac2206c44ba545ddd0118658364537e5f9ac2e4fe",
+        "pages": 28,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2012,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "8dfb1ad867bbb88bbbaf13a5608bd0c0c9c94eae8a792f6f4104e13cb17d0071",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2013,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "b14c59425b38ee71743c5b59b119baad4071759692f069d143abc421b5ac4b6d",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2013,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "b119706ac3971f8ff78b64cf7a6d713d39bb72be0901d0e7c50367633aae0280",
+        "pages": 20,
+        "language": "irish"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2013,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "0aafd6dfe0224a50fd53f45934ebb0e32e9241b05ba51c2854e8b712a792a0be",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2013,
+        "fileid": "LC099GLP000IV.pdf",
+        "sha256": "42e0a0cbc08ba9d724a2fc4bacae1087fc29b85a84e2f84a7ef99d41904bcdb7",
+        "pages": 16,
+        "language": "irish"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2014,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "fb5cfc36f2f64fc1a8fc068bbad392ff99eb2ff5792c37267dfcabc0d0ad1f48",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2014,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "2becbf14807468566beb1b085a25193d6845d42af965ebc7a98b9772577c1e11",
+        "pages": 24,
+        "language": "irish"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2014,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "b3186b37ad28e970e617c4c9fc3710628400da21c59a2dd18e51f444799e2d3c",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2014,
+        "fileid": "LC099GLP000IV.pdf",
+        "sha256": "b9ab9fd1c0f07189fd11d2ddb319cecb9206bfcc43008c5d018871bf835bd7d1",
+        "pages": 16,
+        "language": "irish"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2015,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "210b81b664cfac3107aed4c750d839c70c82777d40b92c805f7f5db60d1c730c",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2015,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "13e8d26a9990e6699a2ad582991009f5907039e8b0811256e16c429c1ad6a0e6",
+        "pages": 24,
+        "language": "irish"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2015,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "6dab67571e6bf05778257e96590973615860ba212d718eb19742c73cfdf5ef88",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2015,
+        "fileid": "LC099GLP000IV.pdf",
+        "sha256": "d8c64724ac6fb0fa266f1bea73aa7f403cc61699c4fd558f02c92a3e438d66f1",
+        "pages": 16,
+        "language": "irish"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2016,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "ec7771b35c2c806b9e0f2cc8a35626cd3a8e85a9c991afc8089f4319decc19e4",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2016,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "513e35f0543276665c5d9fd6362cbbf47acb77910102c37a4e8b46206346bde1",
+        "pages": 20,
+        "language": "irish"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2016,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "4242b1be879b2ff9973f75aabf3135478afe1e59b098d2c694ff581d1ce84616",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2016,
+        "fileid": "LC099GLP000IV.pdf",
+        "sha256": "f30d47dff9317b9643e370c7c2567e134b60230ea985597180bbc3ff6a2d92a9",
+        "pages": 20,
+        "language": "irish"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2017,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "4436cf9e87767e3d7092bedbb38ad8818b731d232565d2d0fca1976621e95abd",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2017,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "27ccb0243cfcc6e793f3abfff15dab61fe0d7b2a575a624629770bf1d1fa447f",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2018,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "3a850731dfc2acd40b0df080a8910776105b541dee97dadaa94c353331a5360a",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2018,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "881e60f9835cd981b058ecdf5e09dcdaf0c956c93fba4975f5d25936826e4349",
+        "pages": 20,
+        "language": "irish"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2018,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "fcb24b1b07dc2d5369a4c27506485b2e0670f79dfdfb68b556efc289fac62bc3",
+        "pages": 16,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2019,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "ea686213de8d50b2b3d44fbb18b9d95226b181d01602e6540f09331f74eb5216",
+        "pages": 24,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2019,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "8622b34ca8c3a357141ced0ff917e9ebeea56e3f3783e86f3f1403d5e32a3237",
+        "pages": 20,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2020,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "7ac8daeec37224d7082fe61f3e6a6bf5c6c99429580bc25bfa5efd2ff888d55f",
+        "pages": 27,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2021,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "7339c36919457d79424b100fb782372daf99d8c790dbe26ca5d69900779d3b41",
+        "pages": 28,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2021,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "2a4833b1c9cda239dac9671a3a9a7a6bbdf2d93d5ab58954e928dc0c49f9bc14",
+        "pages": 24,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2022,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "7f539dcb7b70c18e30b1047e463426bd2715926ddfe16a6daa0a93b995907071",
+        "pages": 27,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2022,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "184ff292e15bf7702b94bdb4e7626d7bfb538bfb948bed4c85ae4efe01df7399",
+        "pages": 25,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2023,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "63933208c9846387f93bba3f48c13ec4d8821d7f3af1597998bcc8c531d983de",
+        "pages": 27,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2023,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "da5064b6da1f3906e010bf0ae0610add8100a8b00964149bb6d2ca97593e1b5b",
+        "pages": 25,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2024,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "3fd5f06ee6dbc78e1ef53bcaa1e1e6f9a6d822c6ee898a69f16ec34cf0aac999",
+        "pages": 28,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2024,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "ecba77fed2ef00afe4503bb1d4ed4b5ea0c5803a53727338592764406fbee44a",
+        "pages": 25,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2025,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "3c74de1d1d5d35a4e0e9ada2b5e7754446722444003f480a2bd876c90c27a52b",
+        "pages": 27,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2025,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "2da580d0bece12bce51802feedb9117cc96d0a28ba5a334d61cd93055f3104d3",
+        "pages": 26,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2026,
+        "fileid": "LC099ALP000EV.pdf",
+        "sha256": "e56810faf2cb2b34e30216c07b4ff771d1cc6f99b91fb6fcf1d47d045d8265be",
+        "pages": 30,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2026,
+        "fileid": "LC099ALP000IV.pdf",
+        "sha256": "3be173cb4c246e6321d0ae3ac4c7ab9080572d6698687e1f2c62ed75fa501d54",
+        "pages": 30,
+        "language": "irish"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2026,
+        "fileid": "LC099GLP000EV.pdf",
+        "sha256": "7fb47439b0e1322e592da32dc160f2f164a84c8ac4810d02b18e7a17d3d89047",
+        "pages": 29,
+        "language": "english"
+      },
+      {
+        "archive": "markingschemes",
+        "year": 2026,
+        "fileid": "LC099GLP000IV.pdf",
+        "sha256": "8559154bd562f5b1f445348062673d004f825deae4c25ac47e5bba5a233ba6f4",
+        "pages": 29,
+        "language": "irish"
+      }
+    ],
+    "mainEnglishOrBilingualPapers": 66,
+    "mainEnglishSchemes": 33,
+    "deferredFilesFound": 0,
+    "2020OrdinaryFilesFound": 0
+  },
+  "sittings": [
+    {
+      "year": 2026,
+      "level": "higher",
+      "sourceReview": "complete",
+      "browserQA": "pending—computer-use host unavailable; user actively uses native Chrome",
+      "writtenPagesReviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "auralPagesReviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesReviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "independentPracticeTasks": 46,
+      "printedWrittenMarks": 220,
+      "printedListeningMarks": 80,
+      "allAlternativePracticeMarks": 320,
+      "languageAwarenessChoiceAdjustment": 20,
+      "newCards": 46,
+      "correctedCards": 0,
+      "previousIdsPreserved": 199,
+      "diagnosedReaderIssues": [
+        "Scheme running footer became a false prompt/answer pair and contaminated answers.",
+        "Aural Irish footer and blank back-cover text appended to last questions.",
+        "Wrapped listening3(i). missing from legacy scheme reader; explicit source-reviewed extraction restores it.",
+        "Guided writing3(b) continues onp14; one whole40-mark choice pool includes allsix prompts.",
+        "Prior authoring truncated semantic pools at16 despite the runtime supporting25; all19winterwords retained.",
+        "Summary content8 plus discretionary2 retained; full-sizep7 confirms2marksperdetail.",
+        "Language-awareness instruction began halfway through its paragraph when single-linewording matching won; exact alternative heading restores fullpaperinstruction."
+      ],
+      "sourceDiscrepancies": [
+        {
+          "task": "ru-2026-hl-l4-1-i",
+          "schemePage": 21,
+          "transcriptPage": 27,
+          "description": "Answer list says 7th July 1939; Higher transcript p27 says 1 July 1939. Ordinary transcript p26 says 7 July 1939, matching both accepted answers. Published answer retained and discrepancy disclosed; recording not yet listened to for adjudication."
+        }
+      ],
+      "validation": {
+        "sourceSlicesVerified": 462,
+        "reviewedCardTests": 7,
+        "requiredPreservationCurriculumDeckAndReviewedTests": 239,
+        "russianCoverageTests": 3,
+        "repoTypecheck": "pass",
+        "targetedLint": "pass",
+        "productionBuild": "pass",
+        "deterministicRegenerations": 2,
+        "otherSubjectDecksAndAtlasRecords": "preserved",
+        "wholeBankCoverage": "Six pre-existing failures outside Russian: Home Economics and Maths counts; Business, Home Economics, Maths and Physics content hashes. Other subject baselines left unchanged."
+      }
+    }
+  ]
+}

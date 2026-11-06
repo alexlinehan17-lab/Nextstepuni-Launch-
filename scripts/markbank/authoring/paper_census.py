@@ -2474,6 +2474,14 @@ def census_ru(subject, year, level):
     for unit, item, roman, text in P.aural_asks():
         texts[(unit, item, None, roman)] = text
 
+    from ru_review_census import reviewed_keys
+    independently_reviewed = reviewed_keys(year, level)
+    if independently_reviewed is not None:
+        # Only the explicitly reviewed sitting changes. The denominator is
+        # the independent paper sweep, including the complete writing pool.
+        texts = {key: texts.get(key, P.unit_head.get(key[0], key[0]))
+                 for key in independently_reviewed}
+
     files = [P.path] + ([P.aural_path] if P.aural_path else [])
     return set(texts), texts, files, P, S, claimed
 
