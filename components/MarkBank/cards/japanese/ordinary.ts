@@ -26,6 +26,7 @@
  */
 
 import type { SecCard } from '../../../../types/markBank';
+import { withReviewedCards } from './reviewed';
 
 const base = {
   source: 'sec' as const,
@@ -34,7 +35,7 @@ const base = {
   qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
 };
 
-export const CARDS: SecCard[] = [
+export const CARDS: SecCard[] = withReviewedCards([
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
@@ -6182,4 +6183,4 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Read the printed material exactly as the examination set it, then answer. Answer in Japanese: the examination paper sets this ask in Japanese. All ten schemes print a half-marks penalty for answering in the wrong language. Where the examination paper prints a kana reading above a kanji (furigana), this card shows it in brackets after the kanji it belongs to — 秋葉原（あきはばら） — because a card is one line of text and the paper sets it on two."
     },
   } as SecCard,
-];
+], 'ordinary');

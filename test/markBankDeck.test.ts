@@ -28,6 +28,7 @@ import { comparableScheme, claimMatches, normalise } from '../scripts/markbank/s
 import { questionStandsAlone } from '../scripts/markbank/questionText.mjs';
 import { reviewedPhysicsSource } from '../scripts/markbank/physicsSources.mjs';
 import { reviewedHomeEconomicsSource } from '../scripts/markbank/homeEconomicsSources.mjs';
+import { audioQuestionPaperFileid } from '../scripts/markbank/audioMaterial.mjs';
 import { createHash } from 'node:crypto';
 
 import { STRANDS, CHEMISTRY_STRANDS, PHYSICS_STRANDS, ALL_TOPICS, SUBJECTS, BLOCKED_FIGURES, deckSize } from '../components/MarkBank/deck';

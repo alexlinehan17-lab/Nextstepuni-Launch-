@@ -966,7 +966,16 @@ for (const id of Object.keys(subjectSourceBindings)) {
 
 const appliedCorrections = [];
 const cards = [];
+// These two authored Japanese candidates were absent from the frozen served
+// deck. A later generic provenance improvement must not silently publish an
+// unreviewed older sitting during the 2026 source review. They remain OPEN in
+// the paper ledger until their 2021 Ordinary source review resolves them.
+const pendingJapaneseCandidates = new Set(['ja-2021-ol-2b-ii', 'ja-2021-ol-3a-4-iv']);
 for (const raw of rawCards) {
+  if (SUBJECT_ID === 'japanese' && pendingJapaneseCandidates.has(raw.id)) {
+    appliedCorrections.push(`${raw.id}: unshipped legacy candidate; awaiting its original-paper review`);
+    continue;
+  }
   if (repairedFrenchIds.has(raw.id)) {
     appliedCorrections.push(`${raw.id}: preserved in the visually reviewed reading deck`);
     continue;
@@ -1745,7 +1754,7 @@ if (businessRubrics.length) {
 // Subject-specific imports for the generated module. A subject with none gets
 // no line for them, so its module stays byte-identical to the one it had
 // before French and Applied Maths added theirs.
-const reviewedOverlaySubject = ['applied-maths', 'russian'].includes(SUBJECT_ID);
+const reviewedOverlaySubject = ['applied-maths', 'russian', 'japanese'].includes(SUBJECT_ID);
 const moduleImports = reviewedOverlaySubject ? "import { withReviewedCards } from './reviewed';"
   : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
     : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n" : '';

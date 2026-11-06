@@ -178,7 +178,7 @@ def shipped_cards(subject):
             for name in ('writing.json', 'reading.json', 'cloze.json', 'listening.json'):
                 data = json.load(open(os.path.join(DECKS, subject, name), encoding='utf-8'))
                 out.extend((card['id'], card['questionRef']) for card in data if card['level'] == level)
-    if subject in ('applied-maths', 'russian'):
+    if subject in ('applied-maths', 'russian', 'japanese'):
         # Mirror withReviewedCards: preserve literal identities, apply audited
         # corrections, then append newly reviewed tasks. CI imports the actual
         # runtime deck and pins these same identity/ref pairs.
@@ -817,7 +817,7 @@ def content_hash(subject):
             names += ['rows.json']
         for name in names:
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
-    if subject in ('physical-education', 'applied-maths', 'russian'):
+    if subject in ('physical-education', 'applied-maths', 'russian', 'japanese'):
         # PE's bands and rows are cut from the reviewed guidance at load (answers.ts).
         for name in (('factory.ts', 'reviewed.json', 'answers.ts') if subject == 'physical-education' else ('reviewed.ts', 'reviewed.json')):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
@@ -869,7 +869,7 @@ def refs_hash(subject):
     cards = shipped_cards(subject)
     # Data-driven language decks may order their runtime cards independently
     # from the manifest. Coverage identity is the stable id/ref pair.
-    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting', 'business', 'russian'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting', 'business', 'russian', 'japanese'):
         cards = sorted(cards)
     text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]
