@@ -1,4 +1,4 @@
-import type { LanguageWritingRubric, LanguageWritingCriterion, LanguageLimitCondition, LanguagePointsRubric, SecRubricCard } from '../../types/markBank';
+import type { LanguageWritingRubric, LanguageWritingCriterion, LanguageLimitCondition, LanguagePointsRubric, SecRubricCard, SecCardBase } from '../../types/markBank';
 
 export type LanguageScoreId = `language:${string}`;
 export type LanguageScores = Partial<Record<LanguageScoreId, number>>;
@@ -7,6 +7,9 @@ export const languageLengthId = (unit: 'words' | 'characters'): LanguageScoreId 
 export const languageFlagId = (id: string): LanguageScoreId => `language:flag:${id}`;
 export const languageGroupId = (id: string): LanguageScoreId => `language:group:${id}`;
 export const languageRowId = (group: string, row: string): LanguageScoreId => `language:row:${group}:${row}`;
+export const languageOtherLanguageId = (target: string): LanguageScoreId => `language:other-language:${target}`;
+export const languageCreditMultiplier = (rule: SecCardBase['answerLanguageRule'], scores: LanguageScores, target: string) =>
+  rule && scores[languageOtherLanguageId(target)] === 1 ? rule.otherLanguageMultiplier : 1;
 
 const selectedMark = (criterion: LanguageWritingCriterion, scores: LanguageScores) => {
   const mark = scores[languageScoreId(criterion.id)] ?? 0;
@@ -46,20 +49,23 @@ export function languageWritingMarks(rubric: LanguageWritingRubric, scores: Lang
     .reduce((sum, item) => sum + languageCriterionValue(rubric, item.id, scores), 0);
 }
 
-export function languagePointsMarks(rubric: LanguagePointsRubric, scores: LanguageScores): number {
+export function languagePointsMarks(rubric: LanguagePointsRubric, scores: LanguageScores, rule?: SecCardBase['answerLanguageRule']): number {
   // Selection is explicit even if every component of an option earned zero.
   // Defensive slicing also prevents stale or tampered state exceeding quota.
   const allocation = rubric.groups.filter(group => scores[languageGroupId(group.id)] === 1).slice(0, rubric.count)
     .reduce((total, group) => total + group.rows.map(row => {
       const selected = scores[languageRowId(group.id, row.id)] ?? 0;
-      return row.steps ? row.steps.includes(selected) ? selected : 0 : selected === 1 ? row.marks : 0;
-    }).sort((a, b) => b - a).slice(0, group.answerCount ?? group.rows.length).reduce((sum, mark) => sum + mark, 0), 0);
+      const earned = row.steps ? row.steps.includes(selected) ? selected : 0 : selected === 1 ? row.marks : 0;
+      return earned * languageCreditMultiplier(rule, scores, `row:${group.id}:${row.id}`);
+    }).sort((a, b) => b - a).slice(0, group.answerCount ?? group.rows.length).reduce((sum, mark) => sum + mark, 0)
+      + (group.criteria ? languageWritingMarks({ ...rubric, system: 'language-writing', criteria: group.criteria }, scores)
+        * languageCreditMultiplier(rule, scores, `group:${group.id}`) : 0), 0);
   return allocation + (rubric.criteria ? languageWritingMarks({ ...rubric, system: 'language-writing', criteria: rubric.criteria }, scores) : 0);
 }
 
 export function languageMarks(card: SecRubricCard, scores: LanguageScores): number {
   const rubric = card.rubric;
-  const marks = rubric.system === 'language-writing' ? languageWritingMarks(rubric, scores)
-    : rubric.system === 'language-points' ? languagePointsMarks(rubric, scores) : 0;
+  const marks = rubric.system === 'language-writing' ? languageWritingMarks(rubric, scores) * languageCreditMultiplier(card.answerLanguageRule, scores, 'response')
+    : rubric.system === 'language-points' ? languagePointsMarks(rubric, scores, card.answerLanguageRule) : 0;
   return Math.max(0, Math.min(card.totalMarks, marks));
 }

@@ -456,6 +456,9 @@ export interface SecCardBase extends CardBase {
   additionalSourceMaterials?: CardSourceMaterial[];
   /** Required listening recording, available on the question side. */
   audioMaterial?: CardAudioMaterial;
+  /** Apply only the verified sitting's explicit wrong-language rule, after
+   * earning marks under its unchanged source tariff. Never infer language. */
+  answerLanguageRule?: { otherLanguageMultiplier: 0 | 0.5; sourceText: string; schemePages: number[] };
   /** Verbatim from the QUESTION PAPER — not the scheme. Required, always. */
   questionText: string;
   /** Names a separately priced task within a shared printed instruction. */
@@ -1337,6 +1340,11 @@ export interface LanguagePointsRubric {
     /** Mutually exclusive complete/partial wordings within one semantic answer. */
     answerCount?: number;
     rows: Array<{ id: string; text: string; marks: number; steps?: number[] }>;
+    /** Independently placed content/expression for this selected response.
+     * IDs must be unique across all groups and whole-task criteria. Limits
+     * may reference this group's criteria; length/flag inputs are whole-task
+     * controls and are not supported inside an individual response. */
+    criteria?: LanguageWritingCriterion[];
   }>;
   markingGuideNote: string;
 }
@@ -1580,6 +1588,12 @@ export function rowPartsReconcile(row: MarkRow): boolean {
 }
 
 export function tariffReconciles(card: SecCard): boolean {
+  if (card.answerLanguageRule && (![0, 0.5].includes(card.answerLanguageRule.otherLanguageMultiplier)
+    || !card.answerLanguageRule.sourceText.trim() || !card.answerLanguageRule.schemePages.length
+    || !card.answerLanguageRule.schemePages.every(page => Number.isInteger(page) && page > 0))) return false;
+  if (card.answerLanguageRule && (isRubricCard(card)
+    ? !['language-writing', 'language-points'].includes(card.rubric.system)
+    : card.tariffModel.kind !== 'fixed' || !!card.mathematicsScale)) return false;
   if (isRubricCard(card)) {
     if (card.rubric.system === 'language-writing' || card.rubric.system === 'language-points') {
       const rubric = card.rubric;
@@ -1591,7 +1605,9 @@ export function tariffReconciles(card: SecCard): boolean {
       const validBands = (bands: LanguageBand[] | undefined, allowed: number[]) => {
         if (!bands) return true;
         const marks = bands.flatMap(band => band.marks);
-        return marks.length === allowed.length && new Set(marks).size === marks.length
+        // Some published grids start at1; zero remains the unclaimed state,
+        // without inventing a source band the scheme did not print.
+        return allowed.every(mark => mark === 0 || marks.includes(mark)) && new Set(marks).size === marks.length
           && marks.every(mark => allowed.includes(mark))
           && bands.every(band => band.label.trim() && band.guidance.length > 0);
       };
@@ -1619,12 +1635,18 @@ export function tariffReconciles(card: SecCard): boolean {
       if (rubric.system === 'language-writing') return criteria.length > 0 && criterionTotal === card.totalMarks;
       const { groups, count } = rubric;
       if (!Number.isInteger(count) || count < 1 || count > groups.length || new Set(groups.map(group => group.id)).size !== groups.length) return false;
-      if (!groups.every(group => group.id && group.label.trim() && group.rows.length > 0
+      const allCriterionIds = [...criteria, ...groups.flatMap(group => group.criteria ?? [])].map(criterion => criterion.id);
+      if (new Set(allCriterionIds).size !== allCriterionIds.length) return false;
+      const groupCriterionTotal = (group: typeof groups[number]) => (group.criteria ?? []).filter(criterion => criterion.kind !== 'deduction')
+        .reduce((sum, criterion) => sum + criterion.maxMarks, 0);
+      if (!groups.every(group => group.id && group.label.trim() && (group.rows.length > 0 || (group.criteria?.length ?? 0) > 0)
+        && (group.criteria ?? []).every(criterion => (criterion.limits ?? []).every(limit => limit.when.any.every(condition => 'criterionIds' in condition)))
+        && (!group.criteria || tariffReconciles({ ...card, totalMarks: groupCriterionTotal(group), rubric: { system: 'language-writing', criteria: group.criteria, taskRequirements: rubric.taskRequirements, markingGuideNote: rubric.markingGuideNote } }))
         && new Set(group.rows.map(row => row.id)).size === group.rows.length
         && (group.answerCount === undefined || (Number.isInteger(group.answerCount) && group.answerCount >= 1 && group.answerCount <= group.rows.length))
         && group.rows.every(row => row.id && row.text.trim() && Number.isInteger(row.marks) && row.marks > 0 && (!row.steps || validSteps(row.steps, row.marks))))) return false;
       const maxima = groups.map(group => group.rows.map(row => row.marks).sort((a, b) => b - a)
-        .slice(0, group.answerCount ?? group.rows.length).reduce((sum, mark) => sum + mark, 0)).sort((a, b) => b - a);
+        .slice(0, group.answerCount ?? group.rows.length).reduce((sum, mark) => sum + mark, 0) + groupCriterionTotal(group)).sort((a, b) => b - a);
       return maxima.slice(0, count).reduce((sum, mark) => sum + mark, 0) + criterionTotal === card.totalMarks;
     }
     if (card.rubric.system === 'politics') {
