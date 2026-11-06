@@ -6,6 +6,7 @@ import { CARDS as higher } from '../components/MarkBank/cards/japanese/higher';
 import { CARDS as ordinary } from '../components/MarkBank/cards/japanese/ordinary';
 import reviewed from '../components/MarkBank/cards/japanese/reviewed.json';
 import census from '../scripts/markbank/authoring/reviews/japanese-2026-hl-census.json';
+import review from '../scripts/markbank/authoring/reviews/japanese-2026-hl.json';
 import figures from '../components/MarkBank/figures-japanese.json';
 import { languageCriterionValue, languagePointsMarks, languageWritingMarks, type LanguageScores } from '../components/MarkBank/languageScoring';
 import { tariffReconciles, type LanguageWritingRubric, type LanguagePointsRubric } from '../types/markBank';
@@ -52,6 +53,17 @@ describe('Japanese 2026 Higher source review', () => {
     expect(ordinary).toHaveLength(261);
     expect(new Set([...higher, ...ordinary].map(card => card.id)).size).toBe(671);
     expect([...higher, ...ordinary].some(card => ['ja-2021-ol-2b-ii', 'ja-2021-ol-3a-4-iv'].includes(card.id))).toBe(false);
+  });
+
+  it('emits the verified half-credit convention only for this source-reviewed sitting', () => {
+    const source = review.selectors.find(selector => selector.document === 'scheme' && selector.page === 3 && selector.row === 11 && selector.group === 1)!;
+    const sourceText = source.text.normalize('NFKC');
+    expect(sourceText).toBe('Where answers are in the language other than specified, award half marks.');
+    for (const card of cards) {
+      expect(card.answerLanguageRule, card.id).toEqual({ otherLanguageMultiplier: 0.5, sourceText, schemePages: [3] });
+    }
+    expect(higher.filter(card => card.year !== 2026).some(card => card.answerLanguageRule)).toBe(false);
+    expect(ordinary.some(card => card.answerLanguageRule)).toBe(false);
   });
 
   it('retains full bilingual-line continuations, the translation and gift-table example', () => {

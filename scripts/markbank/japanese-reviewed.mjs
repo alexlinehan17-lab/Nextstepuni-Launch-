@@ -30,6 +30,15 @@ for (const name of readdirSync(reviewsDir).filter(name => /^japanese-\d{4}-(?:hl
   for (const original of review.cards) {
     const card = structuredClone(original);
     const evidence = card.sourceEvidence;
+    if (card.answerLanguageRule) {
+      const rule = card.answerLanguageRule;
+      const sourceBound = review.selectors.some(selector => selector.document === 'scheme'
+        && rule.schemePages.includes(selector.page) && selector.text === rule.sourceText);
+      if (![0, 0.5].includes(rule.otherLanguageMultiplier) || !sourceBound
+        || !rule.schemePages.every(page => evidence.generalSchemePages?.includes(page))) {
+        throw new Error(`${card.id}: answer-language rule is not bound to its reviewed scheme selector`);
+      }
+    }
     if (evidence.component === 'aural') {
       const recording = audio.find(record => record.year === card.year);
       if (!recording || recording.verification.status !== 'full-file-verified') throw new Error(`${card.id}: recording not fully verified`);
