@@ -122,6 +122,7 @@ def add(section, q, question, rows, topic, paper_pages, scheme_pages, suffix='',
             'schemeCitation': 'Marking points quoted from the SEC marking scheme, Japanese 2026 Higher Level — © State Examinations Commission.'}
     language_convention = cell('scheme', 3, 11, 1)
     card['sourceEvidence']['generalSchemePages'] = [3]
+    card['answerLanguageRule'] = {'otherLanguageMultiplier': 0.5, 'sourceText': language_convention, 'schemePages': [3]}
     if rubric:
         rubric['markingGuideNote'] += ' ' + language_convention
         card['rubric'] = rubric
