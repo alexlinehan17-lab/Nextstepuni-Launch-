@@ -104,6 +104,25 @@ describe('selected language writing responses and source-defined half credit', (
     expect(screen.queryByText(/half credit/)).not.toBeInTheDocument();
   });
 
+  it('adjusts a wholly wrong-language response once, including discretionary marks', () => {
+    // Synthetic summary fixture: a correct detail and a separate discretionary
+    // criterion. A mixed response can retain discretion; an explicitly wholly
+    // wrong-language response obeys the whole-answer rule.
+    const grouped: LanguagePointsRubric = { ...rubric, count: 1,
+      groups: [{ id: 'detail', label: 'Detail', rows: [{ id: 'answer', text: 'Fixture detail', marks: 2 }] }],
+      criteria: [{ id: 'discretion', label: 'Discretionary credit', maxMarks: 2, permittedMarks: [0, 1, 2], guidance: [] }],
+    };
+    const summary = { ...card, rubric: grouped, totalMarks: 4 };
+    const scores: LanguageScores = { 'language:group:detail': 1, 'language:row:detail:answer': 1,
+      'language:other-language:row:detail:answer': 1, 'language:discretion': 2 };
+    expect(languageMarks(summary, scores)).toBe(3);
+    expect(languageMarks(summary, { ...scores, 'language:other-language:response': 1 })).toBe(2);
+    const zeroRule = { ...summary, answerLanguageRule: { ...rule, otherLanguageMultiplier: 0 as const } };
+    expect(languageMarks(zeroRule, scores)).toBe(2);
+    expect(languageMarks(zeroRule, { ...scores, 'language:other-language:response': 1 })).toBe(0);
+    expect(languageMarks({ ...summary, answerLanguageRule: undefined }, { ...scores, 'language:other-language:response': 1 })).toBe(4);
+  });
+
   it('halves only the marked answer row, including named one-mark partial credit', () => {
     const grouped: LanguagePointsRubric = { ...rubric, count: 1, groups: [{ id: 'kanji', label: 'Kanji', rows: [
       { id: 'reading', text: 'Reading', marks: 1 }, { id: 'meaning', text: 'Meaning', marks: 2, steps: [0, 1, 2] },
@@ -140,6 +159,11 @@ describe('selected language writing responses and source-defined half credit', (
     fireEvent.click(screen.getByRole('button', { name: 'Set Question 1 expression to 4 marks' }));
     fireEvent.click(screen.getByRole('checkbox', { name: 'Response 1 answered in another language' }));
     expect(screen.getByText('4.5 / 50')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('checkbox', { name: 'All answers answered in another language' }));
+    expect(screen.getByText('4.5 / 50')).toBeInTheDocument();
+    expect(screen.getByRole('checkbox', { name: 'Response 1 answered in another language' })).toBeDisabled();
+    fireEvent.click(screen.getByRole('checkbox', { name: 'All answers answered in another language' }));
+    expect(screen.getByRole('checkbox', { name: 'Response 1 answered in another language' })).toBeEnabled();
     for (let q = 2; q <= 5; q++) fireEvent.click(screen.getByRole('button', { name: `Response ${q}` }));
     expect(screen.getByRole('button', { name: 'Response 6' })).toBeDisabled();
     expect(screen.getByText(rule.sourceText)).toBeInTheDocument();
