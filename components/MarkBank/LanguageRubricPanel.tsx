@@ -35,10 +35,10 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
       </section>;
   };
   const otherLanguageControl = (target: string, label: string, disabled = false) => card.answerLanguageRule && <label className="mb-language-flag">
-    <input type="checkbox" disabled={disabled} aria-label={`${label} answered in another language`}
+    <input type="checkbox" disabled={disabled || (target !== 'response' && scores[languageOtherLanguageId('response')] === 1)} aria-label={`${label} answered in another language`}
       checked={scores[languageOtherLanguageId(target)] === 1}
       onChange={event => onScore(languageOtherLanguageId(target), event.currentTarget.checked ? 1 : 0)} />
-    <span>This answer uses a language other than specified · {card.answerLanguageRule.otherLanguageMultiplier === 0 ? 'no credit' : 'half credit'}</span>
+    <span>{target === 'response' && rubric.system === 'language-points' ? 'All answers use' : 'This answer uses'} a language other than specified · {card.answerLanguageRule.otherLanguageMultiplier === 0 ? 'no credit' : 'half credit'}</span>
   </label>;
   return <div className="mb-language-rubric">
     <h3>Assess your response</h3>
@@ -57,6 +57,7 @@ export default function LanguageRubricPanel({ card, scores, onScore }: {
     {writingRubric.criteria.map(criterion => renderCriterion(criterion, writingRubric))}
     {rubric.system === 'language-writing' && otherLanguageControl('response', 'Response')}
     {rubric.system === 'language-points' && <>
+      {otherLanguageControl('response', 'All answers')}
       <p>Select the {rubric.count} items you answered, then claim each component.</p>
       {rubric.groups.map(group => {
         const selected = scores[languageGroupId(group.id)] === 1;
