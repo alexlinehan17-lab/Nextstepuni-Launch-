@@ -55297,5 +55297,162 @@
    }
   ],
   "notes": "Paper page 3 controls lettering. Scheme page 14 omits the calcium (b) label and mislabels cheese (b). Preserve the existing cheese identity and correct its displayed reference to (c)."
+ },
+ {
+  "id": "he-2025-hl-sc-q1aiii-effects",
+  "topicId": "home-economics-3-5",
+  "conceptId": "inadequate-ventilation-effects",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 HL Section C E1 Q1(a)(iii) — effects",
+  "questionText": "Outline the effects of inadequate ventilation in a kitchen/dining room.",
+  "stem": "The kitchen is regarded as the heart of the home.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 marks at the independent published boundary"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "effects",
+    "kind": "criterion",
+    "verbatim": "Effects of inadequate ventilation",
+    "marks": 9,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "contextNote": "Three effects, each graded 3:2:0. smells linger; condensation; mould growth; dampness; slippery floors; increase in room temperature; build-up of carbon dioxide; build-up of carbon monoxide; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Two equally weighted halves, so this is fixed with a row each. The question verb differs by half — explain for the principle, outline for the effects — and the principle half is where the marks are lost."
+ },
+ {
+  "id": "he-2025-hl-sc-q4aii-methods",
+  "topicId": "home-economics-0-9",
+  "conceptId": "meat-tenderising-methods",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 HL Section C Q4(a)(ii) — methods",
+  "questionText": "Describe four methods of tenderising meat.",
+  "stem": "Consumers in Ireland have access to high quality meat and meat products at price points that suit their budgets.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12 marks at the independent published boundary"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "methods",
+    "kind": "criterion",
+    "verbatim": "Methods of tenderising",
+    "marks": 12,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "contextNote": "Four methods, each graded 3:2:0. Correct hanging/action of lactic acid; mincing; pounding-meat hammer/piercing- knives; marinating; curing/brining; meat tenderisers; proteolytic enzymes; slow, moist methods of cooking; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 3,
+      "permittedMarks": [
+       0,
+       2,
+       3
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Fixed: the question sets two counts and the scheme prices them separately. The tenderising half is worth twice the toughness half."
  }
 ]

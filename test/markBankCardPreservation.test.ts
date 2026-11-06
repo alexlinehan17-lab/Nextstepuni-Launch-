@@ -1287,9 +1287,10 @@ const physicsAdditionIds = new Set([...PHYS_HIGHER, ...PHYS_ORDINARY]
 const physicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('phys-'));
 // Source-reviewed missing tasks. Keep the original 283/266 identity hashes
 // frozen; these additions must never disguise a removed older card.
-// Only this newly consolidated identity belongs to the frozen 283/266 set.
+// These newly consolidated identities belong to the frozen 283/266 set.
 // The older 22 he- aliases are already accounted for in the historical 158 aliases.
-const homeEconomicsAliasIds = ['he-2022-hl-sc-q1aii-properties'];
+const homeEconomicsAliasIds = ['he-2022-hl-sc-q1aii-properties',
+  'he-2025-hl-sb-q1b-mono', 'he-2025-hl-sb-q1b-poly', 'he-2025-hl-sb-q4b-features'];
 const homeEconomicsAdditionIds = new Set([
   // 2024 Ordinary: four independently reviewed published task boundaries. Frozen baseline unchanged.
   'he-2024-ol-sa-q2-source', 'he-2024-ol-sa-q4-methods', 'he-2024-ol-sb-q2a', 'he-2024-ol-sb-q2b',
@@ -1297,6 +1298,8 @@ const homeEconomicsAdditionIds = new Set([
   'he-2025-hl-sa-q3-sources',
   // 2025 Higher B2: independent risk task; existing calcium and cheese IDs retained.
   'he-2025-hl-sb-q2a-risk',
+  // 2025 Higher C: independent ventilation-effects and meat-tenderising tasks.
+  'he-2025-hl-sc-q1aiii-effects', 'he-2025-hl-sc-q4aii-methods',
   'he-2024-hl-sa-q2-sources', 'he-2024-hl-sb-q1d', 'he-2024-hl-sb-q4b', 'he-2024-hl-sc-q1ci-methods',
   'he-2021-ol-sa-q3-methods', 'he-2021-ol-sa-q10-payment', 'he-2021-ol-sa-q11-disposal', 'he-2021-ol-sa-q14',
   'he-2021-ol-sb-q1a', 'he-2021-ol-sb-q2b', 'he-2021-ol-sb-q3a', 'he-2021-ol-sb-q3b-storage',
@@ -1437,7 +1440,7 @@ describe('Mark Bank card preservation', () => {
   it('retains the reviewed Home Economics additions beside the frozen set', () => {
     const added = [...HOME_EC_HIGHER, ...HOME_EC_ORDINARY].filter(card => homeEconomicsAdditionIds.has(card.id));
     expect(added.map(card => card.id).sort()).toEqual([...homeEconomicsAdditionIds].sort());
-    expect(HOME_EC_HIGHER).toHaveLength(422);
+    expect(HOME_EC_HIGHER).toHaveLength(421);
     expect(HOME_EC_ORDINARY).toHaveLength(292);
   });
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {

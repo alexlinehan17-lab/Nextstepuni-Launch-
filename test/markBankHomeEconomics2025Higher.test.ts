@@ -8,6 +8,7 @@ import bcAnchors from '../scripts/paper-trail/answers/2025/LC098ALP039EV.pdf.jso
 import review from '../scripts/markbank/authoring/home-economics/2025-hl-main-review.json';
 import { browseTopicIdsForQuestion } from '../components/PaperTrail/topics';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
+import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 const get = (id: string) => {
   const c = CARDS.find(c => c.id === `he-2025-hl-${id}`);
   if (!c || c.kind !== 'question') throw new Error(id);
@@ -15,7 +16,51 @@ const get = (id: string) => {
 };
 const sitting = CARDS.filter(c => c.id.startsWith('he-2025-hl-sa-'));
 const b2 = CARDS.filter(c => c.id.startsWith('he-2025-hl-sb-q2'));
-describe('2025 Higher Home Economics Section A source review', () => {
+const all = CARDS.filter(c => c.id.startsWith('he-2025-hl-'));
+describe('2025 Higher Home Economics main-sitting source review', () => {
+  it('covers the independently reviewed whole sitting and every alternative at its printed tariff', () => {
+    expect(all.map(c => c.id).sort()).toEqual(review.tasks.map(t => t.id).sort());
+    expect(all).toHaveLength(61);
+    expect(all.reduce((sum, c) => sum + c.totalMarks, 0)).toBe(749);
+    for (const c of all) {
+      if (c.kind !== 'question') throw new Error(c.id);
+      expect(tariffReconciles(c), c.id).toBe(true);
+      for (const v of c.answerVariants ?? []) expect(tariffReconciles({ ...c, rows: v.rows }), `${c.id}/${v.id}`).toBe(true);
+    }
+  });
+  it('keeps the three fatty-acid headings and appliance study whole, with progress aliases', () => {
+    const acids = get('sb-q1b');
+    expect(acids.totalMarks).toBe(18);
+    expect(acids.rows.map(r => r.marks)).toEqual([4, 2, 4, 2, 4, 2]);
+    expect(acids.rows.filter(r => r.marks === 2).map(r => r.permittedMarks)).toEqual(Array(3).fill([0, 2]));
+    expect(acids.taskGroups?.map(g => g.marks)).toEqual([6, 6, 6]);
+    const appliance = get('sb-q4b-principle');
+    expect(appliance.totalMarks).toBe(22);
+    expect(appliance.rows.map(r => r.marks)).toEqual([1, 3, 3, 3, 6, 6]);
+    for (const [old, target] of [['sb-q1b-mono', 'sb-q1b'], ['sb-q1b-poly', 'sb-q1b'], ['sb-q4b-features', 'sb-q4b-principle']]) {
+      expect(CARDS.some(c => c.id === `he-2025-hl-${old}`)).toBe(false);
+      expect(CARD_ID_ALIASES[`he-2025-hl-${old}`]).toBe(`he-2025-hl-${target}`);
+    }
+  });
+  it('retains the complete chart, both outfits and the full source-specific bacteria table', () => {
+    const chart = get('sb-q1a');
+    for (const percentage of ['23%', '21%', '16%', '14%', '9%', '7%', '5%', '3%']) expect(chart.questionFigure?.alt).toContain(percentage);
+    expect(get('sc-q2ai').questionFigure?.src).toBe(get('sc-q2aii').questionFigure?.src);
+    expect(get('sc-q2ai').rows.map(r => r.marks)).toEqual([5, 5, 5]);
+    expect(get('sc-q2ai').rows[0].contextNote).toContain('does not assign five marks to each heading');
+    const bacteria = get('sb-q3a');
+    expect(bacteria.figure?.solution).toBe(true);
+    expect(bacteria.answerVariants?.map(v => v.label)).toEqual(['Salmonella', 'Listeria', 'E. coli', 'Clostridium botulinum', 'Staphylococcus aureus', 'Another valid bacterium']);
+    for (const v of bacteria.answerVariants ?? []) expect(v.rows.map(r => r.marks)).toEqual([2, 2, 4, 6, 4]);
+  });
+  it('splits independent ventilation and meat prompts without losing their original identities', () => {
+    expect([get('sc-q1aiii').totalMarks, get('sc-q1aiii-effects').totalMarks]).toEqual([9, 9]);
+    expect([get('sc-q4aii').totalMarks, get('sc-q4aii-methods').totalMarks]).toEqual([6, 12]);
+    expect(get('sc-q2bi').rows.map(r => r.marks)).toEqual([6, 9]);
+    for (const test of ['abrasion resistance', 'insulating properties', 'stretch and elasticity', 'crease resistance', 'washability', 'colourfast', 'absorbency', 'pilling and snagging', 'tearing resistance', 'resistance to water', 'flame resistance']) expect(get('sc-q2bi').rows[1].contextNote).toContain(test);
+    expect(get('sc-q3aiii').rows[0].permittedMarks).toEqual([0, 3]);
+    expect(get('sc-q4cii').rows.map(r => r.marks)).toEqual([6, 3, 6]);
+  });
   it('keeps all fifteen independently reviewed tasks and every answer-route tariff', () => {
     expect(sitting.map(c => c.id).sort()).toEqual(review.tasks.filter(t => t.section === 'A').map(t => t.id).sort());
     expect(sitting).toHaveLength(15);
@@ -88,10 +133,11 @@ describe('2025 Higher Home Economics Section A source review', () => {
     expect(calcium.rows[0].contextNote).toContain('Inhibit tannins');
     expect(calcium.rows[0].contextNote).toContain('phosphoric acid');
     expect(bcAnchors.q.find(q => q.n === '2')!.region.map(r => r.p)).toEqual([14]);
-    expect(bcAnchors.q.map(q => q.n)).toEqual(['1', '2', '3', '4', '5']);
+    expect(bcAnchors.q.map(q => q.n)).toEqual(['1', '2', '3', '4', '5', '6', '7', '8', '9']);
+    expect(bcAnchors.q.find(q => q.n === '9')!.region.map(r => r.p)).toEqual([27, 28, 29, 30]);
   });
-  it('maps each reviewed A/B2 card to its own Atlas question and canonical topic', () => {
-    for (const c of [...sitting, ...b2]) {
+  it('maps each reviewed card to its own Atlas question and canonical topic', () => {
+    for (const c of all) {
       const m = c.questionRef.match(/Section ([ABC]) (?:E\d )?Q(\d+)/)!;
       const file = m[1] === 'A' ? 'LC098ALP014EV.pdf' : 'LC098ALP039EV.pdf';
       const n = String(Number(m[2]) + (m[1] === 'C' ? 5 : 0));

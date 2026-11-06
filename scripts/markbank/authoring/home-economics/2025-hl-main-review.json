@@ -4,7 +4,7 @@
   "level": "higher",
   "sitting": "main",
   "language": "ev",
-  "status": "partial-review; all-source-pages-visually-reviewed; browser-QA-pending",
+  "status": "source-complete; all-source-pages-visually-reviewed; browser-QA-pending",
   "sources": {
     "examiner-reports/home-economics/papers/2025-hl-014-paper.pdf": {
       "sha256": "ba1c8a8406190cfdad6fa5a727477d06605d1f31c1bb9b3d309fa1ce6f39a779",
@@ -149,6 +149,258 @@
       "status": "source-reviewed",
       "section": "B2",
       "marks": 12
+    },
+    {
+      "id": "he-2025-hl-sb-q1a",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 20
+    },
+    {
+      "id": "he-2025-hl-sb-q1b",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 18
+    },
+    {
+      "id": "he-2025-hl-sb-q1c",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 12
+    },
+    {
+      "id": "he-2025-hl-sb-q1d",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 10
+    },
+    {
+      "id": "he-2025-hl-sb-q1e",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 20
+    },
+    {
+      "id": "he-2025-hl-sb-q3a",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 18
+    },
+    {
+      "id": "he-2025-hl-sb-q3b",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 20
+    },
+    {
+      "id": "he-2025-hl-sb-q3c",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 12
+    },
+    {
+      "id": "he-2025-hl-sb-q4a",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 16
+    },
+    {
+      "id": "he-2025-hl-sb-q4b-principle",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 22
+    },
+    {
+      "id": "he-2025-hl-sb-q4c",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 12
+    },
+    {
+      "id": "he-2025-hl-sb-q5a",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 20
+    },
+    {
+      "id": "he-2025-hl-sb-q5b",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 18
+    },
+    {
+      "id": "he-2025-hl-sb-q5c",
+      "status": "source-reviewed",
+      "section": "B-rest",
+      "marks": 12
+    },
+    {
+      "id": "he-2025-hl-sc-q1ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 16
+    },
+    {
+      "id": "he-2025-hl-sc-q1aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 16
+    },
+    {
+      "id": "he-2025-hl-sc-q1aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 9
+    },
+    {
+      "id": "he-2025-hl-sc-q1bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2025-hl-sc-q1bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2025-hl-sc-q1ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2025-hl-sc-q1cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2025-hl-sc-q2ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2025-hl-sc-q2aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 10
+    },
+    {
+      "id": "he-2025-hl-sc-q2bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2025-hl-sc-q2ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 9
+    },
+    {
+      "id": "he-2025-hl-sc-q2cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sc-q3ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2025-hl-sc-q3aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2025-hl-sc-q3aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2025-hl-sc-q3bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2025-hl-sc-q3bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2025-hl-sc-q3ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 18
+    },
+    {
+      "id": "he-2025-hl-sc-q3cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2025-hl-sc-q4ai",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 20
+    },
+    {
+      "id": "he-2025-hl-sc-q4aii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 6
+    },
+    {
+      "id": "he-2025-hl-sc-q4aiii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
+    },
+    {
+      "id": "he-2025-hl-sc-q4bi",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 16
+    },
+    {
+      "id": "he-2025-hl-sc-q4bii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 14
+    },
+    {
+      "id": "he-2025-hl-sc-q4ci",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2025-hl-sc-q4cii",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 15
+    },
+    {
+      "id": "he-2025-hl-sc-q1aiii-effects",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 9
+    },
+    {
+      "id": "he-2025-hl-sc-q4aii-methods",
+      "status": "source-reviewed",
+      "section": "C",
+      "marks": 12
     }
   ],
   "sectionAReview": {
@@ -173,16 +425,7 @@
     "addedTasks": 1,
     "otherCards": "All existing cards outside 2025 Higher Section A byte-identical; no live identity withdrawn."
   },
-  "remainingWork": [
-    "B2 source references corrected: existing calcium ID was under (a), cheese under (b); both identities are preserved at paper parts (b)/(c). Only independent osteoporosis-risk task added.",
-    "B2(a) description (6) and risk reasons (12) independently authored and reviewed.",
-    "C1(a)(iii) ventilation principle and effects have independent 9-mark tariffs; C4(a)(ii) toughness causes (6) and tenderising methods (12) are separate prompts.",
-    "Retain all 8 energy-chart categories and both blazer outfit photographs.",
-    "B3(a) full original bacterial table, all answer routes and accurate safety clarifications; B4(b) includes 1-mark appliance name in its 22-mark total.",
-    "C2(a)(i) printed three required headings and source outfit quota need careful combined presentation; C2(b) is one whole two-names/one-procedure choice response.",
-    "Review all B/C exact tariffs and all canonical Atlas links, then final source crops and validation.",
-    "B1(b) currently has three required fatty-acid headings as separate live cards; consolidate as one response with explicit progress aliases. B4(b) currently splits required refrigeration headings; preserve the 1-mark name in a whole 22-mark study with explicit progress alias."
-  ],
+  "remainingWork": [],
   "sectionASourceCropReview": {
     "status": "visually-checked",
     "paperSchemePairs": 14,
@@ -240,5 +483,136 @@
     "preservedLiveTasks": 3,
     "addedTasks": 1,
     "details": "Calcium was already authored under Q2(a), and cheese under Q2(b), following the scheme’s mislettering. Preserve both existing IDs; correct references to Q2(b)/(c). The only added identity is the separately priced 12-mark osteoporosis-risk task. All other cards unchanged."
+  },
+  "sectionB-restReview": {
+    "tasks": 14,
+    "marks": 230,
+    "sourceClarifications": {
+      "food-temperature": {
+        "source": "https://www.fsai.ie/consumer-advice/food-safety-and-hygiene/cooking-and-reheating",
+        "note": "Reheating guidance is 70°C or higher at the core, not the scheme’s above-100°C statement."
+      },
+      "food-storage": {
+        "source": "https://www.fsai.ie/consumer-advice/food-safety-and-hygiene/storage",
+        "note": "Thawed food may be frozen after thorough cooking; the scheme’s never-refreeze statement needs that distinction."
+      },
+      "botulism": {
+        "source": "https://www.who.int/news-room/fact-sheets/detail/botulism",
+        "note": "The scheme’s pH 4–6 wording is imprecise: C. botulinum does not grow below pH 4.6."
+      },
+      "fatty-acids": {
+        "source": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+        "note": "Distinguish essential fatty acids and research on health outcomes from the scheme’s blanket medical claims."
+      }
+    },
+    "selectionDecisions": "B1(b) is one required three-acid profile; B4(b) one required appliance study. Three withdrawn identities have direct progress aliases. Four sources from the eight-category chart remain one choice task. B3(a) remains one chosen bacterium with five complete source models and an open alternative. B5(b) keeps each function/support pair on its single printed six-mark ladder.",
+    "checked": "2026-11-06"
+  },
+  "sectionCReview": {
+    "tasks": 28,
+    "marks": 385,
+    "selectionDecisions": "Separate ventilation principle/effects (9/9) and meat toughness/tenderising (6/12). All required headings remain whole. Outfit evaluation follows the printed one-reference-per-outfit quota, without inventing a tariff per heading. Fabric testing stays one two-names/one-dependent-procedure response with all eleven models. Design principles, childcare and mortgage choices retain their dependent accounts.",
+    "checked": "2026-11-06"
+  },
+  "figures": {
+    "home-economics-2025-hl-sb-q1a-chart": {
+      "source": "examiner-reports/home-economics/papers/2025-hl-039-paper.pdf",
+      "page": 2,
+      "bounds": [
+        126,
+        192,
+        555,
+        429
+      ],
+      "alt": "Original 2024 survey chart: bread, potatoes, pasta, rice and grains 23%; sugar, drinks, biscuits and cakes 21%; others 16%; meat and meat products 14%; fruit and vegetables 9%; milk and yogurt 7%; breakfast cereals 5%; soups and sauces 3%. National Adult Nutrition Survey II, Summary Report, 2024 caption retained.",
+      "sha256": "c4cc6577c6548412b8c64b66d843f09457d11f50b441ede28043c97f166d1fa7"
+    },
+    "home-economics-2025-hl-sc-q2a-outfits": {
+      "source": "examiner-reports/home-economics/papers/2025-hl-039-paper.pdf",
+      "page": 6,
+      "bounds": [
+        152,
+        127,
+        475,
+        348
+      ],
+      "alt": "Both original blazer outfits: first, grey blazer, printed white T-shirt, blue wide-leg jeans, boots and yellow handbag; second, navy blazer, white top, dark trousers and trainers, with suitcase. Original picture-source caption retained.",
+      "sha256": "c1e9b24508ebf58c5330bcb7f59cfb59dafff22bce916ae19bf25b2740bf4166"
+    },
+    "home-economics-2025-hl-sb-q3a-scheme-table": {
+      "source": "paper-trail-corpus/markingschemes/2025/LC098ALP000EV.pdf",
+      "page": 15,
+      "bounds": [
+        30,
+        195,
+        576,
+        760
+      ],
+      "solution": true,
+      "alt": "Complete original marking table for Salmonella, Listeria, E. coli, Clostridium botulinum and Staphylococcus aureus, with sources, high-risk foods, growth factors and symptoms. The additional Clostridium perfringens and Campylobacter acceptance is retained below the table.",
+      "sha256": "0b69512ef2b7a0a87a0a60190c4428e25065e7849b2e5f85070dbdde6546d0fe"
+    }
+  },
+  "completedSourceReview": "2026-11-06",
+  "wholeSittingPreservation": {
+    "previousLiveTasks": 62,
+    "liveTasks": 61,
+    "preservedLiveIds": 59,
+    "addedIds": [
+      "he-2025-hl-sc-q1aiii-effects",
+      "he-2025-hl-sc-q4aii-methods"
+    ],
+    "progressAliases": {
+      "he-2025-hl-sb-q1b-mono": "he-2025-hl-sb-q1b",
+      "he-2025-hl-sb-q1b-poly": "he-2025-hl-sb-q1b",
+      "he-2025-hl-sb-q4b-features": "he-2025-hl-sb-q4b-principle"
+    },
+    "scopeCheck": "All other Higher card bodies, all Ordinary cards, other-subject corrections, and out-of-sitting runtime mappings unchanged from f857916ec28d39b16bc5d1de2f33a5e6bdd7d908. Original frozen identity hashes unchanged; direct aliases preserve the three consolidated identities."
+  },
+  "sectionBCSourceCropReview": {
+    "status": "visually-checked",
+    "paperSchemePairs": 9,
+    "paperPages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "schemePages": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "detail": "Final rendered B1–B5 and C1–C4 Atlas anchors visually checked against originals. Complete chart, both outfits with attribution, full bacterial table including final alternatives, all continued scheme guidance and Core Question 4 through page 30 are retained."
+  },
+  "validation": {
+    "requiredVitest": "244 tests across preservation, curriculum, deck and 2025 Higher source-review suites passed.",
+    "atlas": "2 Home Economics registry tests passed; all 61 cards checked against their canonical topics and original question anchors. Four restored Section C groups bring the subject to 566 physical question groups / 990 registry mappings.",
+    "mainTypecheck": "passed",
+    "scopedHomeEconomicsTestTypecheck": "passed",
+    "productionBuild": "passed",
+    "regeneration": "Two successive full B/C authoring, figure, deck, Atlas, topic-tag, showcase and landing-index regenerations were byte-identical across all 24 changed/generated data and figure files.",
+    "reconciliation": "2025 Higher: all 57 raw candidates covered, zero open. Whole subject: 713 cards, 682/1342 raw candidates covered, 660 open, zero orphans/unparsed/stale exclusions. Raw census remains diagnostic, not source-completeness proof.",
+    "browser": "Pending: browser host unavailable; native Chrome attempts interrupted by active user interaction. No live browser QA claimed."
   }
 }

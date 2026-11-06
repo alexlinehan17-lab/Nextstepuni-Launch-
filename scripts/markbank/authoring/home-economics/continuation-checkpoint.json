@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-01",
+  "date": "2026-11-06",
   "activeSubject": "home-economics",
   "scope": "English-language published exam papers, 2010–2026. Irish editions deferred.",
   "completedBeforeThisSubject": {
@@ -10,7 +10,7 @@
   "currentCounts": {
     "subject": "home-economics",
     "mode": "sections",
-    "cards": 714,
+    "cards": 713,
     "leaves": 1342,
     "covered": 682,
     "excluded": 0,
@@ -1037,10 +1037,10 @@
     "2023 Higher/Ordinary English main source reviews complete: 59/60 tasks. 2023 Higher deferred source review complete: 58 tasks, 749 offered practice marks, all mapped to Atlas. Browser QA pending.",
     "2022 Higher deferred source review complete: all 61 tasks (749 offered practice marks), 23 Atlas question groups, all 79 source pages independently swept. Browser QA pending.",
     "Live SEC inventory: English Home Economics deferred publications found for 2022/2023 Higher only; no subject listing for 2024/2025, and no 2026 deferred year offered. Absence is a publication finding, not proof no exam was sat.",
-    "2025 Higher: Section A (15 tasks) and B2 (4 tasks) complete. Existing calcium/cheese cards were mislettered, not missing; both IDs preserved and references corrected. Next B1 and B3–B5, then C; consolidate required fatty-acid and refrigerator headings with explicit progress aliases, restore all images and guidance, split independent ventilation effects and meat-tenderising tasks, and verify all Atlas mappings. Then 2025 Ordinary, 2026 and 2010–2020. Irish editions deferred.",
-    "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser connection remains unavailable; no browser QA claim."
+    "2025 Higher English main source review complete: 61 tasks, 749 offered practice marks, 23 paper/scheme Atlas groups. Required-heading consolidations preserve three old IDs through explicit aliases; two independent tasks restored. Continue with 2025 Ordinary, then 2026 and 2010–2020. Irish editions deferred.",
+    "Preserve prior card identities and progress, reconcile each verified batch, integrate locally and continue. Browser QA remains pending: browser host unavailable and native Chrome is in active use."
   ],
-  "coveragePolicy": "Raw census is diagnostic only: 660 open candidates and 37 flags are not an independent count of outstanding tasks. 2025 Higher raw asks are now 57/57 covered after the source-reference correction, but only A/B2 have completed detailed task authoring; do not claim the sitting or subject complete.",
+  "coveragePolicy": "Raw census is diagnostic only: 660 open candidates and 37 flags are not an independent count of outstanding tasks. 2025 Higher is source-complete after the independent 96-page sweep and detailed review of all 61 tasks; the whole Home Economics subject is still in progress.",
   "integratedBatches": [
     {
       "workCommit": "14e08691b",
@@ -1159,21 +1159,20 @@
     }
   ],
   "latestValidatedBatch": {
-    "scope": "2025 Higher B2: four tasks; existing calcium and cheese IDs corrected to paper references (b)/(c), independent osteoporosis risk task added, complete source guidance and canonical Atlas mapping",
-    "runtimeCards": 714,
-    "higher": 422,
+    "scope": "2025 Higher main complete: remaining 42 B/C tasks reviewed; all 61 sitting tasks and 23 Atlas groups complete. Three explicit progress aliases, two independent additions and three restored original figures.",
+    "runtimeCards": 713,
+    "higher": 421,
     "ordinary": 292,
     "sourceReview": "2025-hl-main-review.json",
     "validation": {
-      "requiredVitest": "240 tests across the three required preservation/curriculum/deck suites and the 2025 Higher regression suite passed.",
-      "atlas": "2 Home Economics registry tests passed; every reviewed A/B2 task checked against canonical topics.",
+      "requiredVitest": "244 tests across preservation, curriculum, deck and 2025 Higher source-review suites passed.",
+      "atlas": "2 Home Economics registry tests passed; all 61 cards checked against their canonical topics and original question anchors. Four restored Section C groups bring the subject to 566 physical question groups / 990 registry mappings.",
       "mainTypecheck": "passed",
       "scopedHomeEconomicsTestTypecheck": "passed",
       "productionBuild": "passed",
-      "regeneration": "20 modified/new task files regenerated identically except generic reference-builder generatedAt; all other JSON fields identical.",
-      "browser": "unavailable; browser QA pending",
-      "sourceCropReview": "Complete B2 paper/scheme pair visually checked; correct paper lettering controls all four tasks.",
-      "broaderCheck": "Broader finalStudyclixExamTopics test: 6 passed, 1 pre-existing Mathematics count assertion failed (expected 1632 logical topic mappings, received 2091). Mathematics runtime/crosswalk and that test are byte-identical to the pre-batch commit. Recorded for later reconciliation; no unrelated baseline change."
+      "regeneration": "Two successive full B/C authoring, figure, deck, Atlas, topic-tag, showcase and landing-index regenerations were byte-identical across all 24 changed/generated data and figure files.",
+      "reconciliation": "2025 Higher: all 57 raw candidates covered, zero open. Whole subject: 713 cards, 682/1342 raw candidates covered, 660 open, zero orphans/unparsed/stale exclusions. Raw census remains diagnostic, not source-completeness proof.",
+      "browser": "Pending: browser host unavailable; native Chrome attempts interrupted by active user interaction. No live browser QA claimed."
     }
   },
   "knownExistingValidationIssues": [

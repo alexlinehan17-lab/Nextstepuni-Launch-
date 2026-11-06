@@ -197,5 +197,27 @@
     "alt": "Both original sportswear outfits: a man in a white and dark jacket with a green shoulder stripe and dark tracksuit bottoms; a woman in a dark jacket, yellow top, dark leggings with a yellow stripe and bright trainers. The original Pinterest caption is retained.",
     "attribution": "SEC Home Economics 2024 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
     "sourceNote": "Original source crop, bounds [190, 132, 393, 305], rendered at 2×; visually checked. SHA256 7d345a91a3d526711e0c5dfdfb36eb121e297ef795eca5f904189864bf74686d."
+  },
+  "home-economics-2025-hl-sb-q1a-chart": {
+    "src": "/exam-figures/home-economics/home-economics-2025-hl-sb-q1a-chart.png",
+    "md5": "622bf81377a71211c968669656633398",
+    "alt": "Original 2024 survey chart: bread, potatoes, pasta, rice and grains 23%; sugar, drinks, biscuits and cakes 21%; others 16%; meat and meat products 14%; fruit and vegetables 9%; milk and yogurt 7%; breakfast cereals 5%; soups and sauces 3%. National Adult Nutrition Survey II, Summary Report, 2024 caption retained.",
+    "attribution": "SEC Home Economics 2025 Higher Level examination paper, page 2 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [126, 192, 555, 429], rendered at 2×. SHA256 c4cc6577c6548412b8c64b66d843f09457d11f50b441ede28043c97f166d1fa7."
+  },
+  "home-economics-2025-hl-sc-q2a-outfits": {
+    "src": "/exam-figures/home-economics/home-economics-2025-hl-sc-q2a-outfits.png",
+    "md5": "9f2126f7d10feed8430abe51d99a7ac2",
+    "alt": "Both original blazer outfits: first, grey blazer, printed white T-shirt, blue wide-leg jeans, boots and yellow handbag; second, navy blazer, white top, dark trousers and trainers, with suitcase. Original picture-source caption retained.",
+    "attribution": "SEC Home Economics 2025 Higher Level examination paper, page 6 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [152, 127, 475, 348], rendered at 2×. SHA256 c1e9b24508ebf58c5330bcb7f59cfb59dafff22bce916ae19bf25b2740bf4166."
+  },
+  "home-economics-2025-hl-sb-q3a-scheme-table": {
+    "src": "/exam-figures/home-economics/home-economics-2025-hl-sb-q3a-scheme-table.png",
+    "md5": "d5dccd5ffdd4ca6bc05fa22e961e4b9f",
+    "alt": "Complete original marking table for Salmonella, Listeria, E. coli, Clostridium botulinum and Staphylococcus aureus, with sources, high-risk foods, growth factors and symptoms. The additional Clostridium perfringens and Campylobacter acceptance is retained below the table.",
+    "attribution": "SEC Home Economics 2025 Higher Level marking scheme, page 15 — © State Examinations Commission.",
+    "sourceNote": "Original source crop, bounds [30, 195, 576, 760], rendered at 2×. SHA256 0b69512ef2b7a0a87a0a60190c4428e25065e7849b2e5f85070dbdde6546d0fe.",
+    "solution": true
   }
 }
