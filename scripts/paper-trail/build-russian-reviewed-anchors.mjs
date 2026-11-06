@@ -31,7 +31,7 @@ for (const fileid of new Set(sources.map(source => `${source.year}/${source.pape
   for(const task of tasks) {
     const card = cards.find(card=>card.id===task.id);
     const n = task.id.replace(/^ru-\d+-[a-z]+-/, '');
-    const question = {n,label:task.questionRef.replace(/^\d+ HL /,''),printOrder:map.q.length+1,
+    const question = {n,label:task.questionRef.replace(/^\d+ (?:HL|OL) /,''),printOrder:map.q.length+1,
       pP:(task.questionPages??task.paperPages)[0],pY:[0,1],paperRegion:task.paperPages.map(p=>({p,r:[0,0,1,1]})),
       region:task.schemePages.map(p=>({p,r:[0,0,1,1]})),mode:'pagejump',conf:1};
     const existing = map.q.find(row=>row.n===n);
@@ -41,7 +41,7 @@ for (const fileid of new Set(sources.map(source => `${source.year}/${source.pape
     const existingTag=tag.q.find(row=>row.n===n);
     if(existingTag)Object.assign(existingTag,questionTag);else tag.q.push(questionTag);
   }
-  map.maxCropPages=Math.max(3,...tasks.map(task=>Math.max(...task.paperPages)-Math.min(...task.paperPages)));
+  map.maxCropPages=Math.max(3,...tasks.map(task=>Math.max(...task.paperPages)-Math.min(...task.paperPages)+1));
   write(file,map);
   write(`public/paper-answers/${fileid}.json`,map);
   write(`public/paper-anchors/${fileid}.json`,map);

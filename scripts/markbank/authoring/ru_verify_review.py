@@ -14,7 +14,8 @@ def normal(text):
 
 def claims(card):
     if card['kind'] == 'question':
-        for row in card['rows']:
+        rows = [row for variant in card.get('answerVariants', []) for row in variant['rows']] or card['rows']
+        for row in rows:
             if row.get('group'):
                 for option in row['group']['options']:
                     yield from option.split(' — ')
@@ -36,8 +37,9 @@ def claims(card):
                 yield from band['guidance']
 
 
-def verify():
-    cards = json.loads((ROOT / 'scripts/markbank/authored/russian-reviewed.json').read_text())
+def verify(cards=None):
+    if cards is None:
+        cards = json.loads((ROOT / 'scripts/markbank/authored/russian-reviewed.json').read_text())
     failures = []
     count = 0
     for card in cards:
