@@ -248,7 +248,7 @@
    },
    {
     "n": "5",
-    "primary": "home-economics-0-2"
+    "primary": "home-economics-0-9"
    },
    {
     "n": "6",
@@ -256,8 +256,7 @@
    },
    {
     "n": "7",
-    "primary": "home-economics-0-3",
-    "secondary": "home-economics-0-9"
+    "primary": "home-economics-0-9"
    },
    {
     "n": "8",
@@ -269,8 +268,7 @@
    },
    {
     "n": "10",
-    "primary": "home-economics-1-5",
-    "secondary": "home-economics-1-3"
+    "primary": "home-economics-1-5"
    },
    {
     "n": "11",
@@ -300,13 +298,13 @@
   "q": [
    {
     "n": "1",
-    "primary": "home-economics-0-0",
-    "secondary": "home-economics-1-2"
+    "primary": "home-economics-0-1",
+    "secondary": "home-economics-0-10"
    },
    {
     "n": "2",
-    "primary": "home-economics-0-9",
-    "secondary": "home-economics-0-10"
+    "primary": "home-economics-0-10",
+    "secondary": "home-economics-0-2"
    },
    {
     "n": "3",
@@ -319,6 +317,26 @@
    {
     "n": "5",
     "primary": "home-economics-2-1"
+   },
+   {
+    "n": "6",
+    "primary": "home-economics-3-4",
+    "secondary": "home-economics-3-5"
+   },
+   {
+    "n": "7",
+    "primary": "home-economics-3-7",
+    "secondary": "home-economics-3-8"
+   },
+   {
+    "n": "8",
+    "primary": "home-economics-3-10",
+    "secondary": "home-economics-3-11"
+   },
+   {
+    "n": "9",
+    "primary": "home-economics-0-11",
+    "secondary": "home-economics-0-9"
    }
   ]
  },

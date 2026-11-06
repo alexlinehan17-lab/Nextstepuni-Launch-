@@ -55454,5 +55454,848 @@
    }
   ],
   "notes": "Fixed: the question sets two counts and the scheme prices them separately. The tenderising half is worth twice the toughness half."
+ },
+ {
+  "id": "he-2025-ol-sa-q2-source",
+  "topicId": "home-economics-0-5",
+  "conceptId": "protein-functions-and-sources-source",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q2 — source",
+  "questionText": "Name one dietary source of protein.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 source × 2 (2:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "source",
+    "kind": "criterion",
+    "verbatim": "dietary source",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     2
+    ],
+    "contextNote": "One source, graded 2:0. Complete examples: meat; fish; dairy products, milk, cheese, yoghurt; eggs; soya beans; cereals; nuts; lentils; seeds; etc."
+   }
+  ],
+  "notes": "The question has two asks priced separately — two functions at 2 marks each and one source at 2 marks — so it is carded as two best-of menus on one card, summing to the 6-mark tariff. The two menus grade differently (2:1:0 for functions, 2:0 for the source) and that difference is stated in each row's contextNote rather than collapsed.",
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2025-ol-sa-q10-benefit",
+  "topicId": "home-economics-1-5",
+  "conceptId": "renewable-energy-sources-and-benefits-benefit",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q10 — benefit",
+  "questionText": "Explain one benefit of renewable energy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 benefit × 2 (2:1:0)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "benefit",
+    "kind": "criterion",
+    "verbatim": "benefit",
+    "marks": 2,
+    "permittedMarks": [
+     0,
+     1,
+     2
+    ],
+    "contextNote": "One benefit, graded 2:1:0. Complete guidance: reduced carbon emissions; reduced air pollution; enhanced reliability; job creation; will not run out; environmentally friendly; cheaper; etc."
+   }
+  ],
+  "notes": "Two prompts in one question and 6 marks in total: 4 marks for two named renewable sources and 2 marks for one benefit. Note that the scheme's list of sources includes nuclear power, so it is credited here even though nuclear is not renewable in the strict scientific sense. For the benefit, keep the answer a benefit of using renewable energy (less CO2, cleaner air, it will not run out, jobs, lower running cost) rather than a description of how a wind turbine or solar panel works. Both lists end with 'etc.'",
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2025-ol-sa-q14",
+  "topicId": "home-economics-1-4",
+  "conceptId": "fabric-care-symbols",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q14",
+  "questionText": "What information does each of the following fabric care symbols convey to the consumer? (www.woolmark.com) (www.omo.com)",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 symbols × 3 (3:2:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "wash",
+    "kind": "criterion",
+    "verbatim": "hand wash only",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "First symbol, graded 3:2:0. Complete guidance: hand wash only; temperature for wool, delicate fabrics; etc."
+   },
+   {
+    "id": "iron",
+    "kind": "criterion",
+    "verbatim": "medium iron",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     2,
+     3
+    ],
+    "contextNote": "Second symbol, graded 3:2:0. Complete guidance: medium iron; temperature for wool, polyester mixtures; etc."
+   }
+  ],
+  "notes": "Any three different uses, 2 marks each. 'Different' is doing real work in this question — warmth and comfort sit very close together, as do decoration and aesthetics, so spread the three answers across distinct functions instead: cleaning (dishcloths, J-cloths), drying (tea towels, bath towels), insulating or keeping warm (curtains, blankets, oven gloves), protecting (aprons, tablecloths, ironing board covers), and decorating (cushion covers, curtains). The list ends with 'etc.', so other genuine household-textile uses score.",
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "questionFigureKey": "home-economics-2025-ol-sa-q14-care-symbols",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2025-ol-sb-q1a",
+  "topicId": "home-economics-0-1",
+  "conceptId": "convenience-soup-comparison",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2025 OL Section B Q1(a)",
+  "questionText": "Using the information presented in the table above, state which soup you would recommend for a consumer to buy. Give four reasons for your choice.",
+  "stem": "When purchasing convenience foods, consumers should choose wisely and consider nutritional value. The table below gives nutritional information per 100 g and the cost of two types of convenience vegetable soup. Soup A Cook-chill Soup B Canned (www.shop.supervalu.ie adapted) (www.pnp.co.za adapted) Energy (kcal) 27 kcal 32 kcal Protein 1.1 g 0.8 g Carbohydrates of which sugars 4.3 g 2.2 g 5.6 g 1.0 g Fibre 3.0 g 0.5 g Fat of which saturates 0.6 g 0.1 g 0.5 g 0.3 g Salt 0.2 g 0.8 g",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Name 4 (4:0) + 4 reasons × 5 (5:3:2:0)"
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "name",
+    "kind": "criterion",
+    "verbatim": "Soup A",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     4
+    ],
+    "contextNote": "Recommend this soup, graded 4:0."
+   },
+   {
+    "id": "reasons",
+    "kind": "criterion",
+    "verbatim": "Reasons",
+    "marks": 20,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     20
+    ],
+    "contextNote": "Four distinct reasons for the SAME selected soup, each graded 5:3:2:0. Use the original table. Source correction: A has LESS carbohydrate (4.3 g versus 5.6 g), contrary to the scheme’s “higher in carbohydrates” wording. Printed health claims are not guarantees that a soup prevents or treats a condition. Complete historical model: lower in kcal to prevent obesity; higher in protein for growth/repair; higher in carbohydrates for heat/energy; higher in sugar for energy; higher in fibre for digestion; lower in saturated fat to prevent obesity/CHD; lower in salt to prevent high blood pressure/stroke; easier to heat/consume; easy to store; easy to open; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-3",
+      "verbatim": "Point 3",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-4",
+      "verbatim": "Point 4",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Independent paper/scheme review: he_review_2025_ol_main_b.py.",
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "answerVariants": [
+   {
+    "id": "a",
+    "label": "Soup A",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Soup A",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "Recommend this soup, graded 4:0."
+     },
+     {
+      "id": "reasons",
+      "kind": "criterion",
+      "verbatim": "Reasons",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       17,
+       18,
+       20
+      ],
+      "contextNote": "Four distinct reasons for the SAME selected soup, each graded 5:3:2:0. Use the original table. Source correction: A has LESS carbohydrate (4.3 g versus 5.6 g), contrary to the scheme’s “higher in carbohydrates” wording. Printed health claims are not guarantees that a soup prevents or treats a condition. Complete historical model: lower in kcal to prevent obesity; higher in protein for growth/repair; higher in carbohydrates for heat/energy; higher in sugar for energy; higher in fibre for digestion; lower in saturated fat to prevent obesity/CHD; lower in salt to prevent high blood pressure/stroke; easier to heat/consume; easy to store; easy to open; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "b",
+    "label": "Soup B",
+    "rows": [
+     {
+      "id": "name",
+      "kind": "criterion",
+      "verbatim": "Soup B",
+      "marks": 4,
+      "permittedMarks": [
+       0,
+       4
+      ],
+      "contextNote": "Recommend this soup, graded 4:0."
+     },
+     {
+      "id": "reasons",
+      "kind": "criterion",
+      "verbatim": "Reasons",
+      "marks": 20,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+       14,
+       15,
+       16,
+       17,
+       18,
+       20
+      ],
+      "contextNote": "Four distinct reasons for the SAME selected soup, each graded 5:3:2:0. Use the original table. Source correction: A has LESS carbohydrate (4.3 g versus 5.6 g), contrary to the scheme’s “higher in carbohydrates” wording. Printed health claims are not guarantees that a soup prevents or treats a condition. Complete historical model: higher in kcal for energy; lower in protein for growth/repair; higher in carbohydrates for energy; lower in sugar, reduces risk of diabetes/dental decay; lower in fibre; lower in fat; higher in saturated fat; higher in salt for electrolyte balance; easy to open; longer shelf life; refrigeration not required; lower cost; etc.",
+      "parts": [
+       {
+        "id": "point-1",
+        "verbatim": "Point 1",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-2",
+        "verbatim": "Point 2",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-3",
+        "verbatim": "Point 3",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         5
+        ]
+       },
+       {
+        "id": "point-4",
+        "verbatim": "Point 4",
+        "marks": 5,
+        "permittedMarks": [
+         0,
+         2,
+         3,
+         5
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "questionFigureKey": "home-economics-2025-ol-sb-q1a-soups",
+  "questionFigureIncludesPrompt": false
+ },
+ {
+  "id": "he-2025-ol-sb-q2a",
+  "topicId": "home-economics-0-9",
+  "conceptId": "egg-nutritive-dietetic-value",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2025 OL Section B Q2(a)",
+  "questionText": "Give an account of (i) the nutritive value and (ii) dietetic value of eggs.",
+  "stem": "Eggs provide the body with essential nutrients.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Nutritive 1 + dietetic 1 + other 2, each 5 (5:4:3:2:0)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "nutritive",
+    "kind": "criterion",
+    "verbatim": "nutritive value",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "One nutritive point, graded 5:4:3:2:0. Complete guidance: HBV protein; saturated fat; lacks carbohydrates; vitamin B group; vitamin A; vitamin D; vitamin E; vitamin K; calcium; phosphorus; iron; sulphur; water; lacks vitamin C; etc."
+   },
+   {
+    "id": "dietetic",
+    "kind": "criterion",
+    "verbatim": "dietetic value",
+    "marks": 5,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5
+    ],
+    "contextNote": "One dietetic point, graded 5:4:3:2:0. Suitability depends on the individual and preparation. Complete guidance: excellent source of protein for growth and repair, valuable in diets of children, teenagers and pregnant women; low in kcal; versatile food; inexpensive; cook quickly; high in saturated fat and cholesterol; lacks carbohydrate, should be combines with foods rich in carbohydrate to have balance; lacks vitamin C; etc."
+   },
+   {
+    "id": "other",
+    "kind": "criterion",
+    "verbatim": "others points",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "contextNote": "Two further distinct points from either heading, each graded 5:4:3:2:0.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Independent paper/scheme review: he_review_2025_ol_main_b.py.",
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
+ },
+ {
+  "id": "he-2025-ol-sb-q2b",
+  "topicId": "home-economics-0-10",
+  "conceptId": "healthy-day-menu-eggs",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2025 OL Section B Q2(b)",
+  "questionText": "Set out a menu (3 meals), for one day, having regard to current healthy eating guidelines. Include eggs in one meal.",
+  "stem": "Eggs provide the body with essential nutrients.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 × (courses 2 × 2 (2:1:0) + beverage 1 (1:0)) + eggs 3 (3:0)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "courses-1",
+    "kind": "criterion",
+    "verbatim": "courses",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Breakfast: two suitable food courses, each graded 2:1:0. Published sample: Orange juice; Scrambled eggs on toast; Tea/coffee/water/milk",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "beverage-1",
+    "kind": "criterion",
+    "verbatim": "beverage",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Breakfast: one suitable beverage, graded 1:0."
+   },
+   {
+    "id": "courses-2",
+    "kind": "criterion",
+    "verbatim": "courses",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Lunch: two suitable food courses, each graded 2:1:0. Published sample: Quiche Lorraine and green salad; Strawberry yoghurt; Glass of milk/water",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "beverage-2",
+    "kind": "criterion",
+    "verbatim": "beverage",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Lunch: one suitable beverage, graded 1:0."
+   },
+   {
+    "id": "courses-3",
+    "kind": "criterion",
+    "verbatim": "courses",
+    "marks": 4,
+    "permittedMarks": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "contextNote": "Dinner: two suitable food courses, each graded 2:1:0. Published sample: Carrot and lentil soup with brown bread; Pasta carbonara; Glass of milk/water",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 2,
+      "permittedMarks": [
+       0,
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   {
+    "id": "beverage-3",
+    "kind": "criterion",
+    "verbatim": "beverage",
+    "marks": 1,
+    "permittedMarks": [
+     0,
+     1
+    ],
+    "contextNote": "Dinner: one suitable beverage, graded 1:0."
+   },
+   {
+    "id": "egg",
+    "kind": "criterion",
+    "verbatim": "egg component",
+    "marks": 3,
+    "permittedMarks": [
+     0,
+     3
+    ],
+    "contextNote": "Include eggs in one meal, graded 3:0. Use current healthy-eating guidelines in the paper’s 2025 context. The scheme’s “3 meals @ 6 marks” heading is resolved by its explicit detailed allocation: three 5-mark meals plus this 3-mark egg component, total 18; do not add 3 marks to an 18-mark meal total."
+   }
+  ],
+  "notes": "Independent paper/scheme review: he_review_2025_ol_main_b.py.",
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  },
+  "taskGroups": [
+   {
+    "sourceCardId": "he-2025-ol-sb-q2b-meal-1",
+    "label": "Breakfast",
+    "marks": 5,
+    "rowIds": [
+     "courses-1",
+     "beverage-1"
+    ]
+   },
+   {
+    "sourceCardId": "he-2025-ol-sb-q2b-meal-2",
+    "label": "Lunch",
+    "marks": 5,
+    "rowIds": [
+     "courses-2",
+     "beverage-2"
+    ]
+   },
+   {
+    "sourceCardId": "he-2025-ol-sb-q2b-meal-3",
+    "label": "Dinner",
+    "marks": 5,
+    "rowIds": [
+     "courses-3",
+     "beverage-3"
+    ]
+   },
+   {
+    "sourceCardId": "he-2025-ol-sb-q2b-eggs",
+    "label": "Egg component",
+    "marks": 3,
+    "rowIds": [
+     "egg"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "he-2025-ol-sc-q1cii-examples",
+  "topicId": "home-economics-3-4",
+  "conceptId": "texture-in-interior-design-examples",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "C",
+  "questionRef": "2025 OL Section C E1 Q1(c)(ii) — examples",
+  "questionText": "Give two examples of how texture may be used to enhance the interior design of a room.",
+  "stem": "Interior designers help people to create attractive and functional homes.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 examples × 5 (5:3:0)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "examples",
+    "kind": "criterion",
+    "verbatim": "examples",
+    "marks": 10,
+    "permittedMarks": [
+     0,
+     3,
+     5,
+     6,
+     8,
+     10
+    ],
+    "contextNote": "Two distinct applications of texture, each graded 5:3:0. Complete guidance: smooth textures: tiling; glass/mirrors; paint; stainless steel; etc. rough textures: carpeting; upholstery; brick; textured paints; wallpaper; warmth; comfort; etc.",
+    "parts": [
+     {
+      "id": "point-1",
+      "verbatim": "Point 1",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     },
+     {
+      "id": "point-2",
+      "verbatim": "Point 2",
+      "marks": 5,
+      "permittedMarks": [
+       0,
+       3,
+       5
+      ]
+     }
+    ]
+   }
+  ],
+  "notes": "Full independent paper/scheme review: he_review_2025_ol_main_c.py.",
+  "sourceMaterial": {
+   "kind": "source-question",
+   "label": "OFFICIAL QUESTION",
+   "title": "Source and question",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original examination page to review this task in context."
+  }
  }
 ]

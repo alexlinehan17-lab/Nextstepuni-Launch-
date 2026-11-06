@@ -787,13 +787,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q1", topicId: "home-economics-0-1", conceptId: "healthy-eating-guidelines",
     section: "A", questionRef: "2025 OL Section A Q1",
-    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nHigh salt intake is linked with high blood pressure\nUltra-processed foods are less healthy than fresh foods\nVitamin B and Vitamin C are fat soluble vitamins",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false. True False High salt intake is linked with high blood pressure Ultra-processed foods are less healthy than fresh foods Vitamin B and Vitamin C are fat soluble vitamins",
+    tariffModel: {"kind":"fixed","notation":"3 statements × 2 (2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "High salt intake is linked with high blood pressure", marks: 2, accepts: ["True"], contextNote: "Tick TRUE. Graded 2:0 — 2 marks for the correct column, 0 for the wrong one. There is no partial credit on a tick." },
-    { id: "r-2", kind: "point", verbatim: "Ultra-processed foods are less healthy than fresh foods", marks: 2, accepts: ["True"], contextNote: "Tick TRUE. Graded 2:0 — 2 marks for the correct column, 0 for the wrong one." },
-    { id: "r-3", kind: "point", verbatim: "Vitamin B and Vitamin C are fat soluble vitamins", marks: 2, accepts: ["False"], contextNote: "Tick FALSE — the B group and Vitamin C are water soluble. Graded 2:0 — 2 marks for the correct column, 0 for the wrong one." },
+    { id: "statement-1", kind: "criterion", verbatim: "High salt intake is linked with high blood pressure — True", marks: 2, contextNote: "Published answer: True. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "statement-2", kind: "criterion", verbatim: "Ultra-processed foods are less healthy than fresh foods — True", marks: 2, contextNote: "Published answer: True. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "statement-3", kind: "criterion", verbatim: "Vitamin B and Vitamin C are fat soluble vitamins — False", marks: 2, contextNote: "Published answer: False. Graded 2:0.", permittedMarks: [0,2] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -802,12 +812,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q2", topicId: "home-economics-0-5", conceptId: "protein-functions-and-sources",
     section: "A", questionRef: "2025 OL Section A Q2",
-    questionText: "State two biological functions of protein in the body.\n\nName one dietary source of protein.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 @ 2 marks (graded 2:1:0); 1 @ 2 marks (graded 2:0)","answer":3,"ofParts":null,"perPart":2}, totalMarks: 6,
+    questionText: "State two biological functions of protein in the body.",
+    tariffModel: {"kind":"fixed","notation":"2 functions × 2 (2:1:0)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "growth; repair of body cells; source of energy; manufacture of new cells; formation of muscle; skin; cell membranes; production of hormones; antibodies; enzymes; manufacture of blood plasma; etc.", marks: 4, contextNote: "Biological functions — claim any TWO at 2 marks each. Graded 2:1:0: a clearly stated function scores 2, a vague or half-stated one 1, an irrelevant one 0. In the scheme 'skin' and 'cell membranes' carry on from 'formation of', and 'antibodies' and 'enzymes' carry on from 'production of'. The list ends in 'etc.', so other valid biological functions of protein are also creditable.", openList: true, group: {"claimMax":2,"perOption":2,"options":["growth","repair of body cells","source of energy","manufacture of new cells","formation of muscle","skin","cell membranes","production of hormones","antibodies","enzymes","manufacture of blood plasma"]} },
-    { id: "r-2", kind: "anyN", verbatim: "meat; fish; dairy products, milk, cheese, yoghurt; eggs; soya beans; cereals; nuts; lentils; seeds; etc.", marks: 2, contextNote: "Dietary source — claim ONE only, at 2 marks. Graded 2:0, so a named source scores the full 2 or nothing; naming extra sources earns no more marks. The list ends in 'etc.', so any other genuine protein food is creditable.", openList: true, group: {"claimMax":1,"perOption":2,"options":["meat","fish","dairy products, milk, cheese, yoghurt","eggs","soya beans","cereals","nuts","lentils","seeds"]} },
+    { id: "functions", kind: "criterion", verbatim: "functions", marks: 4, contextNote: "Two functions, each graded 2:1:0. Complete guidance: growth; repair of body cells; source of energy; manufacture of new cells; formation of muscle; skin; cell membranes; production of hormones; antibodies; enzymes; manufacture of blood plasma; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -816,13 +835,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q3", topicId: "home-economics-0-9", conceptId: "fish-nutritional-value",
     section: "A", questionRef: "2025 OL Section A Q3",
-    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false.\n\nOily fish contains omega 3 fatty acids\nFish flesh is made up of short fibres called myomeres\nWhite fish is high in fat",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    questionText: "Indicate with a tick (✓) whether each of the following statements is true or false. True False Oily fish contains omega 3 fatty acids Fish flesh is made up of short fibres called myomeres White fish is high in fat",
+    tariffModel: {"kind":"fixed","notation":"3 statements × 2 (2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Oily fish contains omega 3 fatty acids", marks: 2, accepts: ["True"], contextNote: "Tick TRUE. Graded 2:0 — 2 marks for the correct column, 0 for the wrong one." },
-    { id: "r-2", kind: "point", verbatim: "Fish flesh is made up of short fibres called myomeres", marks: 2, accepts: ["True"], contextNote: "Tick TRUE — the short muscle blocks in fish flesh are myomeres, which is why fish cooks quickly. Graded 2:0." },
-    { id: "r-3", kind: "point", verbatim: "White fish is high in fat", marks: 2, accepts: ["False"], contextNote: "Tick FALSE — white fish is low in fat; the fat is stored in the liver rather than the flesh. Graded 2:0." },
+    { id: "statement-1", kind: "criterion", verbatim: "Oily fish contains omega 3 fatty acids — True", marks: 2, contextNote: "Published answer: True. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "statement-2", kind: "criterion", verbatim: "Fish flesh is made up of short fibres called myomeres — True", marks: 2, contextNote: "Published answer: True. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "statement-3", kind: "criterion", verbatim: "White fish is high in fat — False", marks: 2, contextNote: "Published answer: False. Graded 2:0.", permittedMarks: [0,2] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -831,13 +860,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q4", topicId: "home-economics-0-6", conceptId: "carbohydrate-functions-and-storage",
     section: "A", questionRef: "2025 OL Section A Q4",
-    questionText: "Using the terms listed below, complete the following in relation to carbohydrates.\n\ndietary fibre     liver     energy\n\nThe movement of food through the intestine is stimulated by ______________.\nGlucose releases heat and ______________.\nExcess carbohydrate is converted to glycogen and stored in the ______________ and muscles.",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    questionText: "Using the terms listed below, complete the following in relation to carbohydrates. dietary fibre liver energy The movement of food through the intestine is stimulated by ______________________. Glucose releases heat and ______________________. Excess carbohydrate is converted to glycogen and stored in the ______________________ and muscles.",
+    tariffModel: {"kind":"fixed","notation":"3 blanks × 2 (2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "dietary fibre", marks: 2, contextNote: "First blank — 'The movement of food through the intestine is stimulated by ______.' Graded 2:0: the right term from the list scores 2, anything else 0." },
-    { id: "r-2", kind: "point", verbatim: "energy", marks: 2, contextNote: "Second blank — 'Glucose releases heat and ______.' Graded 2:0." },
-    { id: "r-3", kind: "point", verbatim: "liver", marks: 2, contextNote: "Third blank — 'Excess carbohydrate is converted to glycogen and stored in the ______ and muscles.' Graded 2:0." },
+    { id: "movement", kind: "criterion", verbatim: "movement of food — dietary fibre", marks: 2, contextNote: "Correct completion: dietary fibre. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "glucose", kind: "criterion", verbatim: "Glucose releases heat — energy", marks: 2, contextNote: "Correct completion: energy. Graded 2:0.", permittedMarks: [0,2] },
+    { id: "storage", kind: "criterion", verbatim: "Excess carbohydrate — liver", marks: 2, contextNote: "Correct completion: liver. Graded 2:0.", permittedMarks: [0,2] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -847,10 +886,20 @@ export const CARDS: SecCard[] = [
     id: "he-2025-ol-sa-q5", topicId: "home-economics-0-9", conceptId: "effects-of-cooking-on-cereals",
     section: "A", questionRef: "2025 OL Section A Q5",
     questionText: "Outline two effects of cooking on rice.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 effects @ 3 marks (graded 3:2:0)","answer":2,"ofParts":6,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "moist heat causes the grains to swell, burst and absorb liquids; fibre softens; loss of vitamin B; gelatinisation occurs; colour changes; becomes digestible; etc.", marks: 6, contextNote: "Claim any TWO effects at 3 marks each. Graded 3:2:0 — note there is no 1: an effect that is outlined (said and briefly explained) scores the full 3, one that is merely named or only partly outlined scores 2, and an irrelevant answer scores 0. The command word is 'outline', so a bare noun such as 'gelatinisation' risks the 2 rather than the 3. The list ends in 'etc.', so other genuine effects of cooking on rice are creditable.", openList: true, group: {"claimMax":2,"perOption":3,"options":["moist heat causes the grains to swell, burst and absorb liquids","fibre softens","loss of vitamin B","gelatinisation occurs","colour changes","becomes digestible"]} },
+    { id: "points", kind: "criterion", verbatim: "effects", marks: 6, contextNote: "2 distinct points, each graded 3:2:0. Complete guidance: moist heat causes the grains to swell, burst and absorb liquids; fibre softens; loss of vitamin B; gelatinisation occurs; colour changes; becomes digestible; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -860,10 +909,20 @@ export const CARDS: SecCard[] = [
     id: "he-2025-ol-sa-q6", topicId: "home-economics-0-10", conceptId: "meal-planning-for-children",
     section: "A", questionRef: "2025 OL Section A Q6",
     questionText: "State three dietary guidelines that should be followed when preparing meals for pre-school children.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":9,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "eat regular meals; well balanced meals; easy to manage portion sizes; attractively presented; discourage fussy eating habits; encouraging kids to participate in preparation; reduce refined sugars; introduce new tastes/flavours one at a time; include fruit/vegetables; etc.", marks: 6, contextNote: "Claim any THREE guidelines at 2 marks each. Graded 2:1:0 — a clearly stated guideline scores 2, a vague or incomplete one 1, an irrelevant one 0. The command word is 'state', so a short phrase is enough; no explanation is required. The list ends in 'etc.', so other sound guidelines for feeding pre-school children are creditable.", openList: true, group: {"claimMax":3,"perOption":2,"options":["eat regular meals","well balanced meals","easy to manage portion sizes","attractively presented","discourage fussy eating habits","encouraging kids to participate in preparation","reduce refined sugars","introduce new tastes/flavours one at a time","include fruit/vegetables"]} },
+    { id: "points", kind: "criterion", verbatim: "guidelines", marks: 6, contextNote: "3 distinct points, each graded 2:1:0. Complete guidance: eat regular meals; well balanced meals; easy to manage portion sizes; attractively presented; discourage fussy eating habits; encouraging kids to participate in preparation; reduce refined sugars; introduce new tastes/flavours one at a time; include fruit/vegetables; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -872,13 +931,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q7", topicId: "home-economics-0-9", conceptId: "cheese-varieties-and-their-culinary-uses",
     section: "A", questionRef: "2025 OL Section A Q7",
-    questionText: "Using the examples of cheese below, name a cheese suitable for each dish.\ncheddar cheese slices cream cheese parmesan cheese",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":null,"perPart":2}, totalMarks: 6,
+    questionText: "Using the examples of cheese below, suggest a cheese suitable for each dish. cheddar cheese slices cream cheese parmesan cheese Dishes Example of cheese Pasta carbonara Lemon cheesecake Cheese sandwich",
+    tariffModel: {"kind":"fixed","notation":"3 matches × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "parmesan cheese", marks: 2, contextNote: "Pasta carbonara. 2 marks, graded 2:1:0 — the scheme allows 1 mark for an imprecise or incomplete naming of the right cheese and 0 for the wrong cheese or a blank." },
-    { id: "r-2", kind: "point", verbatim: "cream cheese", marks: 2, contextNote: "Lemon cheesecake. 2 marks, graded 2:1:0 — 1 mark for an imprecise or incomplete naming of the right cheese, 0 for the wrong cheese or a blank." },
-    { id: "r-3", kind: "point", verbatim: "cheddar cheese slices", marks: 2, accepts: ["cheddar cheese"], contextNote: "Cheese sandwich. 2 marks, graded 2:1:0 — 1 mark for an imprecise or incomplete naming of the right cheese, 0 for the wrong cheese or a blank." },
+    { id: "1", kind: "criterion", verbatim: "Pasta carbonara — parmesan cheese", marks: 2, contextNote: "Suitable cheese: parmesan cheese. Graded 2:1:0.", permittedMarks: [0,1,2] },
+    { id: "2", kind: "criterion", verbatim: "Lemon cheesecake — cream cheese", marks: 2, contextNote: "Suitable cheese: cream cheese. Graded 2:1:0.", permittedMarks: [0,1,2] },
+    { id: "3", kind: "criterion", verbatim: "Cheese sandwich — cheddar cheese slices", marks: 2, contextNote: "Suitable cheese: cheddar cheese slices. Graded 2:1:0.", permittedMarks: [0,1,2] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -888,10 +957,20 @@ export const CARDS: SecCard[] = [
     id: "he-2025-ol-sa-q8", topicId: "home-economics-1-2", conceptId: "food-labelling-consumer-benefits",
     section: "A", questionRef: "2025 OL Section A Q8",
     questionText: "Explain three benefits of food labelling for a consumer.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":14,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "helps to make an informed choice", marks: 6, contextNote: "Any three benefits, 2 marks each, graded 2:1:0 — the command word is 'Explain', so a benefit that is only named rather than developed is where the examiner drops to 1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["helps to make an informed choice","nutrients","allergens","additives","genetic modifications","ingredients in descending order of weight","net quantity","country of origin","use by date, best before date","instructions on cooking","instructions on storing","name and address of manufacturer","quality assurance e.g. Bord Bia mark","organic produce"]} },
+    { id: "points", kind: "criterion", verbatim: "benefits", marks: 6, contextNote: "3 distinct points, each graded 2:1:0. Complete guidance: helps to make an informed choice; information on: nutrients; allergens; additives; genetic modifications; etc. ingredients in descending order of weight; net quantity; country of origin; use by date, best before date; instructions on cooking; instructions on storing; name and address of manufacturer; quality assurance e.g. Bord Bia mark; organic produce; fair trade; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -900,13 +979,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q9", topicId: "home-economics-0-10", conceptId: "factors-influencing-family-meal-planning",
     section: "A", questionRef: "2025 OL Section A Q9",
-    questionText: "Explain how the following factors may influence family meal planning.\nMoney available\nTime available\nEquipment available",
-    tariffModel: {"kind":"fixed","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":null,"perPart":2}, totalMarks: 6,
+    questionText: "Explain how the following factors may influence family meal planning. Money available Time available Equipment available",
+    tariffModel: {"kind":"fixed","notation":"3 required factors × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "shop around for good value/special offers", marks: 2, accepts: ["when money is limited use finances wisely by purchasing cheaper protein foods","avoid impulse buying","less expensive foods can provide the same nutrition as more expensive ones"], contextNote: "Money available. 2 marks, graded 2:1:0 — 2 for an explanation that links money to a real meal-planning decision, 1 for a vague or undeveloped point. The scheme's list ends with 'etc.'", openList: true },
-    { id: "r-2", kind: "point", verbatim: "consider time to prepare, cook and serve food", marks: 2, accepts: ["select dishes that can be cooked in a short time","convenience foods can be used if time is limited"], contextNote: "Time available. 2 marks, graded 2:1:0 — 2 for an explanation that links time to how the meal is chosen or cooked, 1 for a vague or undeveloped point. The scheme's list ends with 'etc.'", openList: true },
-    { id: "r-3", kind: "point", verbatim: "check what equipment is available", marks: 2, accepts: ["use time saving equipment"], contextNote: "Equipment available. 2 marks, graded 2:1:0 — 2 for an explanation that links the kitchen equipment to what can realistically be cooked, 1 for a vague or undeveloped point. The scheme's list ends with 'etc.'", openList: true },
+    { id: "1", kind: "criterion", verbatim: "Money available", marks: 2, contextNote: "Explain this required factor, graded 2:1:0. Complete guidance: when money is limited use finances wisely by purchasing cheaper protein foods; shop around for good value/special offers; avoid impulse buying; less expensive foods can provide the same nutrition as more expensive ones; etc.", permittedMarks: [0,1,2] },
+    { id: "2", kind: "criterion", verbatim: "Time available", marks: 2, contextNote: "Explain this required factor, graded 2:1:0. Complete guidance: consider time to prepare, cook and serve food; select dishes that can be cooked in a short time; convenience foods can be used if time is limited; etc.", permittedMarks: [0,1,2] },
+    { id: "3", kind: "criterion", verbatim: "Equipment available", marks: 2, contextNote: "Explain this required factor, graded 2:1:0. Complete guidance: check what equipment is available; use time saving equipment; etc.", permittedMarks: [0,1,2] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -915,12 +1004,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q10", topicId: "home-economics-1-5", conceptId: "renewable-energy-sources-and-benefits",
     section: "A", questionRef: "2025 OL Section A Q10",
-    questionText: "Name two types / sources of renewable energy, and explain one benefit of renewable energy.",
-    tariffModel: {"kind":"fixed","notation":"2 @ 2 marks (graded 2:1:0); 1 @ 2 marks (graded 2:1:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    questionText: "Name two types / sources of renewable energy.",
+    tariffModel: {"kind":"fixed","notation":"2 sources × 2 (2:1:0)"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "solar energy", marks: 4, contextNote: "Two sources, 2 marks each, graded 2:1:0 — naming the source is enough here, no explanation is required. 4 marks in total from this list.", openList: true, group: {"claimMax":2,"perOption":2,"options":["solar energy","wind energy","hydroelectric power","geothermal","biomass/bioenergy","nuclear power","hydrogen","tidal energy"]} },
-    { id: "r-2", kind: "anyN", verbatim: "reduced carbon emissions", marks: 2, contextNote: "One benefit, 2 marks, graded 2:1:0 — the command is 'Explain', so develop the point rather than just listing it. 2 marks in total from this list.", openList: true, group: {"claimMax":1,"perOption":2,"options":["reduced carbon emissions","reduced air pollution","enhanced reliability","job creation","will not run out","environmentally friendly","cheaper"]} },
+    { id: "sources", kind: "criterion", verbatim: "sources", marks: 4, contextNote: "Two types/sources, each graded 2:1:0. Source clarification: nuclear power uses non-renewable fuel; hydrogen is an energy carrier and is only renewable when made using renewable sources. These two historical acceptances must not be taught as unqualified renewable sources. Complete historical wording: solar energy; wind energy; hydroelectric power; geothermal; biomass/bioenergy; nuclear power; hydrogen; tidal energy; etc.", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -930,10 +1028,20 @@ export const CARDS: SecCard[] = [
     id: "he-2025-ol-sa-q11", topicId: "home-economics-1-1", conceptId: "buying-goods-on-credit",
     section: "A", questionRef: "2025 OL Section A Q11",
     questionText: "State three factors to be considered when buying goods on credit.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":6,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "is it an essential purchase", marks: 6, contextNote: "Any three factors, 2 marks each, graded 2:1:0 — 'State' means a short point is enough, but it must be something you weigh up before signing the credit agreement.", openList: true, group: {"claimMax":3,"perOption":2,"options":["is it an essential purchase","interest rate charges","hidden fees","penalties for missing repayments","duration of repayments","when do you own the goods"]} },
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 6, contextNote: "3 distinct points, each graded 2:1:0. Complete guidance: is it an essential purchase; interest rate charges; hidden fees; penalties for missing repayments; duration of repayments; when do you own the goods; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -943,10 +1051,20 @@ export const CARDS: SecCard[] = [
     id: "he-2025-ol-sa-q12", topicId: "home-economics-1-4", conceptId: "uses-of-household-textiles",
     section: "A", questionRef: "2025 OL Section A Q12",
     questionText: "Outline three different uses of household textiles.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "washing", marks: 6, contextNote: "Any three uses, 2 marks each, graded 2:1:0 — the question says 'different', so the three must be genuinely separate uses.", openList: true, group: {"claimMax":3,"perOption":2,"options":["washing","drying","insulation","warmth","protection","decoration/aesthetics","fireproofing","comfort"]} },
+    { id: "points", kind: "criterion", verbatim: "uses", marks: 6, contextNote: "3 distinct points, each graded 2:1:0. Complete guidance: washing; drying; insulation; warmth; protection; decoration/aesthetics; fireproofing; comfort; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -956,10 +1074,20 @@ export const CARDS: SecCard[] = [
     id: "he-2025-ol-sa-q13", topicId: "home-economics-1-2", conceptId: "online-clothes-shopping-disadvantages",
     section: "A", questionRef: "2025 OL Section A Q13",
     questionText: "State three disadvantages of buying clothes online.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 @ 2 marks (graded 2:1:0)","answer":3,"ofParts":8,"perPart":2}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"3 points × 2 (2:1:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Any three of these disadvantages of buying clothes online", marks: null, contextNote: "Each of the three disadvantages carries 2 marks on a graded band 2:1:0 — one sliding value for one point, not two separate marks. The full 2 goes to a disadvantage that is clearly stated, 1 to one that is only vaguely or partly expressed, 0 to one that is wrong or is not a disadvantage of buying online. The command word is 'State', so naming the disadvantage is enough for the full 2 — no explanation is required.", openList: true, group: {"claimMax":3,"perOption":2,"options":["quality uncertainty","shipping problems","risk of fraud","cost of returning goods","faulty goods","impersonal shopping experience","delays in delivery","difficulty with refunds"]} },
+    { id: "points", kind: "criterion", verbatim: "disadvantages", marks: 6, contextNote: "3 distinct points, each graded 2:1:0. Complete guidance: quality uncertainty; shipping problems; risk of fraud; cost of returning goods; faulty goods; impersonal shopping experience; threat of digital scams; delays in delivery; difficulty with refunds; etc.", permittedMarks: [0,1,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]},{"id":"point-3","verbatim":"Point 3","marks":2,"permittedMarks":[0,1,2]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -968,14 +1096,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q1b", topicId: "home-economics-0-8", conceptId: "vitamin-c",
     section: "B", questionRef: "2025 OL Section B Q1(b)",
-    stem: "Eggs and Vitamin C: the question sets three headings.",
-    questionText: "Give an account of Vitamin C under each of the following headings: dietary sources; functions in the body; effect of deficiency.",
-    tariffModel: {"kind":"fixed","notation":"sources 3 @ 4 marks (graded 4:2:0); functions 2 @ 4 marks (graded 4:2:0); deficiency 1 @ 4 marks (graded 4:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
+    questionText: "Give an account of Vitamin C under each of the following headings:\n• dietary sources\n• functions in the body\n• effect of deficiency.",
+    tariffModel: {"kind":"fixed","notation":"Sources 3 × 4; functions 2 × 4; deficiency 1 × 4 (4:2:0)"}, totalMarks: 24,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Dietary sources", marks: 12, contextNote: "Three sources at 4 marks, graded 4:2:0 — half marks or nothing, so a named source with nothing said about it sits at 2. The scheme opens with \"accept any fruit/vegetable source\", which makes this the most forgiving 12 marks on the question: almost any fruit or vegetable earns the 2, and the other 2 comes from saying it is a good source.", openList: true, group: {"claimMax":3,"perOption":4,"options":["3 sources @ 4 marks (graded 4:2:0) accept any fruit/vegetable source","fruit/vegetable juices","fruit/vegetable smoothies","food supplements"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Functions in the body", marks: 8, contextNote: "Two functions at 4 marks. Note what counts as a function: forming collagen or assisting iron absorption is a function, whereas \"prevents scurvy\" is a deficiency effect and belongs in the third heading — using it here answers the wrong bullet.", openList: true, group: {"claimMax":2,"perOption":4,"options":["forms healthy gums","formation of collagen","promotes wound healing","assists in the absorption of iron","antioxidant","assists the immune system","maintenance of cartilage, bones, teeth","role in growth","brain health/cognitive function"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Effect of deficiency", marks: 4, contextNote: "One deficiency effect, 4 marks, graded 4:2:0. Only 4 marks are here, so a long list of deficiency signs earns no more than the first one properly explained.", openList: true, group: {"claimMax":1,"perOption":4,"options":["scurvy","weakened body tissue","slow wound healing","anaemia","increased susceptibility to illness"]} },
+    { id: "sources", kind: "criterion", verbatim: "dietary sources", marks: 12, contextNote: "Three sources, each graded 4:2:0. Complete guidance: accept any fruit/vegetable source; fruit/vegetable juices; fruit/vegetable smoothies; food supplements; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "functions", kind: "criterion", verbatim: "functions in the body", marks: 8, contextNote: "Two functions, each graded 4:2:0. Complete guidance: forms healthy gums; formation of collagen; promotes wound healing; assists in the absorption of iron; antioxidant; assists the immune system; maintenance of cartilage, bones, teeth; role in growth; brain health/cognitive function; etc.", permittedMarks: [0,2,4,6,8], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]}] },
+    { id: "deficiency", kind: "criterion", verbatim: "effect of deficiency", marks: 4, contextNote: "One deficiency effect, graded 4:2:0. Complete guidance: scurvy; weakened body tissue; slow wound healing; anaemia; increased susceptibility to illness; etc.", permittedMarks: [0,2,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -985,10 +1122,20 @@ export const CARDS: SecCard[] = [
     id: "he-2025-ol-sb-q1c", topicId: "home-economics-0-10", conceptId: "fruit-veg-in-teenage-diet",
     section: "B", questionRef: "2025 OL Section B Q1(c)",
     questionText: "Outline three different ways a teenager can include fruit and vegetables in their diet.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 ways @ 4 marks (graded 4:2:0)","answer":3,"ofParts":14,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Outline three different ways a teenager can include fruit and vegetables in their diet", marks: 12, contextNote: "Three ways at 4 marks, graded 4:2:0. The word doing the work is \"different\": three variations on the same idea — soups, sauces, blended sauces — read as one way, and the scheme's list is deliberately spread across meals and snacks. Naming the method is the 2; saying how it gets fruit or veg into the day is the other 2.", openList: true, group: {"claimMax":3,"perOption":4,"options":["soups","smoothies","desserts","baking","salads","sauces","snacks in lunch boxes","stir fry vegetables","grated into dishes","add to blended sauces","use frozen fruit purée","add to stews","vegetable crisps/wedges","add to breakfast cereals"]} },
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 12, contextNote: "3 distinct points, each graded 4:2:0. Complete source guidance: soups; smoothies; desserts; baking; salads; sauces; snacks in lunch boxes; stir fry vegetables; grated into dishes; add to blended sauces; use frozen fruit purée; add to stews; vegetable crisps/wedges; add to breakfast cereals; fruit coulis; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -998,9 +1145,9 @@ export const CARDS: SecCard[] = [
     id: "he-2025-ol-sb-q1d", topicId: "home-economics-1-2", conceptId: "convenience-food-selection",
     section: "B", questionRef: "2025 OL Section B Q1(d)",
     questionText: "Describe four factors consumers should consider when selecting convenience food products.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 factors @ 5 marks (graded 5:3:0)","answer":4,"ofParts":13,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Describe four factors consumers should consider when selecting convenience food products", marks: 20, contextNote: "Four factors at 5 marks, graded 5:3:0 — named is 3, described is 5, and nothing in between. \"Describe\" is the whole gap: \"cost\" is a 3, and what a consumer actually compares when weighing cost is the 5. The list runs well beyond nutrition, and allergens, storage instructions and food miles are the ones most often missed.", openList: true, group: {"claimMax":4,"perOption":5,"options":["nutritional content","calorie content","allergens","use by date, best before date","storage instructions","cost","packaging","resealable","sustainability","quantity","origin","food miles","organic"]} },
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete source guidance: nutritional content; calorie content; allergens; use by date, best before date; storage instructions; cost; packaging; resealable; sustainability; quantity; origin; food miles; organic; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -1022,10 +1169,20 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Section B Q2(c)",
     stem: "Eggs provide the body with essential nutrients.",
     questionText: "Outline the effects of heat on eggs.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 effects @ 4 marks (graded 4:2:0)","answer":3,"ofParts":7,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Outline the effects of heat on eggs", marks: 12, contextNote: "Three effects at 4 marks, graded 4:2:0. These are chemistry, not cookery: coagulation, curdling at high temperature, and the iron-sulphur reaction that greens the yolk are the three the scheme leads with. Naming the effect is 2; saying what heat does to the protein to cause it is the other 2.", openList: true, group: {"claimMax":3,"perOption":4,"options":["protein coagulates","high temperature causes curdling","white changes colour","loss of vitamin B","overcooking makes eggs rubbery/tough","kills bacteria","a reaction between iron and sulphur causes a green ring to form around yolk if overcooked"]} },
+    { id: "points", kind: "criterion", verbatim: "effects", marks: 12, contextNote: "3 distinct points, each graded 4:2:0. Complete source guidance: protein coagulates; high temperature causes curdling; white changes colour; loss of vitamin B; overcooking makes eggs rubbery/tough; kills bacteria; a reaction between iron and sulphur causes a green ring to form around yolk if overcooked; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1036,10 +1193,20 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Section B Q3(a)",
     stem: "Various factors impact food preservation and food spoilage.",
     questionText: "Describe three main causes of food spoilage.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 causes @ 5 marks (graded 5:3:0)","answer":3,"ofParts":4,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Describe three main causes of food spoilage", marks: 15, contextNote: "Three causes at 5 marks, graded 5:3:0. Naming the cause is 3 and describing how it spoils food is 5 — and each option carries its own examples for exactly that reason. Enzyme action is the one students most often leave at the name; the browning of a cut apple is the description that earns the extra 2.", openList: true, group: {"claimMax":3,"perOption":5,"options":["moisture loss: through skins of fruit and vegetables; etc.","enzyme action: ripening, changes in colour, texture, flavour; browning, apples, potatoes on exposure to air; etc.","microbial contamination: moulds; yeasts; bacteria; etc.","chemical contamination: pesticides; chemicals; etc. Accept: storage conditions that provide growth of microorganisms; etc."]} },
+    { id: "points", kind: "criterion", verbatim: "causes", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete source guidance: moisture loss: through skins of fruit and vegetables; etc. enzyme action: ripening, changes in colour, texture, flavour; browning, apples, potatoes on exposure to air; etc. microbial contamination: moulds; yeasts; bacteria; etc. chemical contamination: pesticides; chemicals; etc. Accept: storage conditions that provide growth of microorganisms; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1050,10 +1217,20 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Section B Q3(c)",
     stem: "Various factors impact food preservation and food spoilage.",
     questionText: "Discuss two advantages of food preservation.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 advantages @ 5 marks (graded 5:3:0)","answer":2,"ofParts":8,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"2 points × 5 (5:3:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss two advantages of food preservation", marks: 10, contextNote: "Only two advantages, at 5 marks each — so this is a short answer where each point has to be developed, not a list. Graded 5:3:0: naming the advantage is 3. \"Discuss\" wants the consequence, and the environmental and food-waste points are the two that most easily carry a sentence of development.", openList: true, group: {"claimMax":2,"perOption":5,"options":["minimises environmental footprint","makes food safer","reduces food waste","improves food quality","increases shelf life","food available out of season","perishable food can be transported","increases food variety"]} },
+    { id: "points", kind: "criterion", verbatim: "advantages", marks: 10, contextNote: "2 distinct points, each graded 5:3:0. Complete source guidance: minimises environmental footprint; makes food safer; reduces food waste; improves food quality; increases shelf life; food available out of season; perishable food can be transported; increases food variety; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1064,10 +1241,20 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Section B Q4(a)",
     stem: "Budgeting has become an ever more important household task.",
     questionText: "Discuss four advantages of budgeting.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 advantages @ 5 marks (graded 5:3:0)","answer":4,"ofParts":8,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss four advantages of budgeting", marks: 20, contextNote: "Four advantages at 5 marks, graded 5:3:0 — named is 3, discussed is 5. Several of these are close relatives (financial security, money for emergencies, covering unplanned events) and a marker will not pay twice for the same idea in different words, so spread the four across money management, debt, security and stress.", openList: true, group: {"claimMax":4,"perOption":5,"options":["develops good money management skills","identifies areas of overspending","reduces reliance on credit","provides financial security","reduces stress","covers unplanned events","good credit rating","money available for emergencies"]} },
+    { id: "points", kind: "criterion", verbatim: "advantages", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete source guidance: develops good money management skills; identifies areas of overspending; reduces reliance on credit; provides financial security; reduces stress; covers unplanned events; good credit rating; money available for emergencies; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1077,11 +1264,21 @@ export const CARDS: SecCard[] = [
     id: "he-2025-ol-sb-q4b", topicId: "home-economics-1-1", conceptId: "weekly-budget-plan",
     section: "B", questionRef: "2025 OL Section B Q4(b)",
     stem: "Budgeting has become an ever more important household task.",
-    questionText: "Set out a weekly budget plan for a family of two adults and two children with a net income of EUR 900 a week in total.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 points @ 4 marks (graded 4:2:0)","answer":5,"ofParts":10,"perPart":4}, totalMarks: 20,
+    questionText: "Set out a weekly budget plan for a family of two adults and two children with a net income of €900 a week in total.",
+    tariffModel: {"kind":"fixed","notation":"5 points × 4 (4:2:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Set out a weekly budget plan for a family of two adults and two children with a net income of EUR 900 a week", marks: 20, contextNote: "Five points at 4 marks, graded 4:2:0. This is a plan, not an essay: the scheme's own percentages are the answer, and a heading with a percentage against it earns the 4 where a heading alone earns 2. They total 100%, so the arithmetic has to work against the EUR 900 — a budget that does not add up loses marks the headings had already earned. \"Evaluate/review the budget regularly\" is a point in its own right and the one most often left off.", openList: true, group: {"claimMax":5,"perOption":4,"options":["procedure/plan","housing/rent/mortgage 25%","food 25%","household bills: lighting/heating/bin collection/phone /internet 15%","education 10% clothes 5%","leisure/entertainment 5%","savings 5%","health 5%","discretionary spending 5%","evaluate/review budget on a regular basis"]} },
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "5 distinct points, each graded 4:2:0. Complete source guidance: procedure/plan; housing/rent/mortgage 25%; food 25%; household bills: lighting/heating/bin collection/phone /internet 15%; education 10% clothes 5%; leisure/entertainment 5%; savings 5%; health 5%; discretionary spending 5%; evaluate/review budget on a regular basis; etc.", permittedMarks: [0,2,4,6,8,10,12,14,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]},{"id":"point-4","verbatim":"Point 4","marks":4,"permittedMarks":[0,2,4]},{"id":"point-5","verbatim":"Point 5","marks":4,"permittedMarks":[0,2,4]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1092,10 +1289,20 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Section B Q4(c)",
     stem: "Budgeting has become an ever more important household task.",
     questionText: "Outline the role of the Money Advice and Budgeting Service (MABS).",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 5 marks (graded 5:3:0)","answer":2,"ofParts":9,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"2 points × 5 (5:3:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Outline the role of the Money Advice and Budgeting Service (MABS)", marks: 10, contextNote: "Two points at 5 marks. The first mark most students have is that the service is free and independent; the second 5 needs something MABS actually does — negotiating with lenders, building a repayment schedule, personal insolvency advice. Naming the service back to the examiner earns nothing.", openList: true, group: {"claimMax":2,"perOption":5,"options":["free independent advice service","advises on coping with current debt problems","helps families develop money management skills, planning budgets and repayment schedules","advises on consumer finance products","advises on interest rates","mortgage debt resolution","negotiation with lenders","personal insolvency advice","income maximisation"]} },
+    { id: "points", kind: "criterion", verbatim: "points", marks: 10, contextNote: "2 distinct points, each graded 5:3:0. Complete source guidance: free independent advice service; advises on coping with current debt problems; helps families develop money management skills, planning budgets and repayment schedules; advises on consumer finance products; advises on interest rates; mortgage debt resolution; negotiation with lenders; personal insolvency advice; income maximisation; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1104,12 +1311,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q5a", topicId: "home-economics-2-1", conceptId: "marriage-customs-cultures",
     section: "B", questionRef: "2025 OL Section B Q5(a)",
-    stem: "A wedding is an important day in a couple's life.",
+    stem: "A wedding is an important day in a couple’s life.",
     questionText: "Describe four ways that marriage customs may differ between cultures.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 ways @ 5 marks (graded 5:3:0)","answer":4,"ofParts":12,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Describe four ways that marriage customs may differ between cultures", marks: 20, contextNote: "Four ways at 5 marks, graded 5:3:0. \"Differ between cultures\" is the requirement: naming a custom is 3, and contrasting how it varies from one culture to another is 5. An answer describing an Irish church wedding four times over scores 12 at best.", openList: true, group: {"claimMax":4,"perOption":5,"options":["arranged marriages","number of partners","type of: veils","rings","ceremony","clothing","throwing rice","location","registry office","civil ceremonies","same sex marriage","age of partners"]} },
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete source guidance: arranged marriages; number of partners; type of: veils; rings; ceremony; clothing; etc. throwing rice; location; registry office; civil ceremonies; same sex marriage; age of partners; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1118,12 +1335,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q5b", topicId: "home-economics-2-1", conceptId: "marriage-rights-responsibilities",
     section: "B", questionRef: "2025 OL Section B Q5(b)",
-    stem: "A wedding is an important day in a couple's life.",
+    stem: "A wedding is an important day in a couple’s life.",
     questionText: "Explain the rights and responsibilities of marriage partners.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 points @ 5 marks (graded 5:3:0)","answer":4,"ofParts":2,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Explain the rights and responsibilities of marriage partners", marks: 20, contextNote: "Four points at 5 marks. The question names both rights AND responsibilities, so an answer drawn entirely from one list is answering half the question. The clean test: a right is something you receive from the marriage, a responsibility is something you owe to it — inheritance is a right, providing for dependent children is a responsibility.", openList: true, group: {"claimMax":4,"perOption":5,"options":["to each other’s company","live together as partners","monogamous relationship","to be faithful/loyal to each other","consummate the marriage","spouses can inherit from each other","provide financial support for dependant partner/children","joint guardianship and responsibility for children","legal duty to provide for the needs of children","show commitment to marriage","positive communication"]} },
+    { id: "points", kind: "criterion", verbatim: "points", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete source guidance: Explain both rights and responsibilities. Four points are priced; the scheme does not impose a two-plus-two quota. These are historical examination examples, not a current legal checklist. Rights: to each other’s company; live together as partners; monogamous relationship; to be faithful/loyal to each other; consummate the marriage; spouses can inherit from each other; etc. Responsibilities: provide financial support for dependant partner/children; joint guardianship and responsibility for children; legal duty to provide for the needs of children; show commitment to marriage; positive communication; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1132,12 +1359,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q5c", topicId: "home-economics-2-1", conceptId: "pre-marriage-courses",
     section: "B", questionRef: "2025 OL Section B Q5(c)",
-    stem: "A wedding is an important day in a couple's life.",
+    stem: "A wedding is an important day in a couple’s life.",
     questionText: "Discuss how pre-marriage courses can help couples to prepare for marriage.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 5 marks (graded 5:3:0)","answer":2,"ofParts":8,"perPart":5}, totalMarks: 10,
+    tariffModel: {"kind":"fixed","notation":"2 points × 5 (5:3:0)"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Discuss how pre-marriage courses can help couples to prepare for marriage", marks: 10, contextNote: "Two points at 5 marks, so both need developing. The scheme names Accord as the provider, which is worth knowing, but the marks are for what a course does — surfacing expectations, agreeing roles, handling money and conflict — rather than for naming who runs it.", openList: true, group: {"claimMax":2,"perOption":5,"options":["provide information about expectations/reality of marriage commitment","discuss their vision of marriage/roles/responsibilities","give advice on finance","information on family planning","promote positive communication","manage conflict","encourage discussion on parenting issues","Accord/Marriage and Relationships Counselling Service provide marriage preparation courses"]} },
+    { id: "points", kind: "criterion", verbatim: "points", marks: 10, contextNote: "2 distinct points, each graded 5:3:0. Complete source guidance: provide information about expectations/reality of marriage commitment; discuss their vision of marriage/roles/responsibilities; give advice on finance; information on family planning; promote positive communication; manage conflict; encourage discussion on parenting issues; Accord/Marriage and Relationships Counselling Service provide marriage preparation courses; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1148,11 +1385,611 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Section B Q3(b)",
     stem: "Various factors impact food preservation and food spoilage.",
     questionText: "Name and give details of how one method of food preservation is carried out.",
-    tariffModel: {"kind":"fixed","notation":"name 1 point @ 5 marks (graded 5:3:0); method of preservation 4 points @ 5 marks (graded 5:3:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 25,
+    tariffModel: {"kind":"fixed","notation":"Name 5 + method 4 × 5 (5:3:0)"}, totalMarks: 25,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Name one method of food preservation", marks: 5, contextNote: "Naming the method is worth 5 on its own, graded 5:3:0 — a whole fifth of the question for one word, and the scheme's four families are broad enough that almost any named method lands. Name it precisely (jam making, not \"heat\"), because the four method marks below are then marked against the method you named.", openList: true, group: {"claimMax":1,"perOption":5,"options":["heat treatment: jam making; chutney making; pickling; smoking; canning; bottling; pasteurisation; sterilisation; etc.","chemical preservation: salting; smoking; pickling; etc.","drying: etc.","freezing: etc."]} },
-    { id: "r-2", kind: "anyN", verbatim: "Give details of how the method is carried out", marks: 20, contextNote: "Four points at 5 marks on the method NAMED above — the two rows are marked together, so steps borrowed from a different method do not pay. These are ordered processes and the scheme lists them in sequence: for jam, sterilising the jars comes before the fruit and setting point before potting. A step out of order describes a process that would not work.", openList: true, group: {"claimMax":4,"perOption":5,"options":["jam/chutney making: wash jars; sterilise jars; prepare fruit and vegetables according to type; use heavy based saucepan; simmer fruit to release pectin; add sugar; lemon juice can be added to increase acidity; boil until setting point is reached; test; skim; pot; seal; label; store; etc.","bottling/aseptic canning/in container canning: heat jars/cans of fruit/vegetables in a water bath; seal jars/cans when hot; forms a vacuum on cooling that creates a seal; label; store; etc.","drying: tie herbs into bundles; dry in a warm area; package; label; store; etc.","freezing: blanch according to type; put into moisture proof packaging; remove air; seal; label; freeze at -25°C; store -18°C; etc.","commercial freezing: flow; cryogenic; immersion; plate; blast; etc.","commercial drying: sun; hot air; roller; spray; AFD; etc."]} },
+    { id: "name", kind: "criterion", verbatim: "jam/chutney making", marks: 5, contextNote: "Name the chosen method, graded 5:3:0.", permittedMarks: [0,3,5] },
+    { id: "method", kind: "criterion", verbatim: "Method of preservation", marks: 20, contextNote: "Four details of the SAME method, each graded 5:3:0. Historical process descriptions are not validated domestic preservation recipes. Complete model: wash jars; sterilise jars; prepare fruit and vegetables according to type; use heavy based saucepan; simmer fruit to release pectin; add sugar; lemon juice can be added to increase acidity; boil until setting point is reached; test; skim; pot; seal; label; store; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    answerVariants: [
+          {
+                "id": "0",
+                "label": "jam/chutney making",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "jam/chutney making",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the chosen method, graded 5:3:0."
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "Method of preservation",
+                            "marks": 20,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  18,
+                                  20
+                            ],
+                            "contextNote": "Four details of the SAME method, each graded 5:3:0. Historical process descriptions are not validated domestic preservation recipes. Complete model: wash jars; sterilise jars; prepare fruit and vegetables according to type; use heavy based saucepan; simmer fruit to release pectin; add sugar; lemon juice can be added to increase acidity; boil until setting point is reached; test; skim; pot; seal; label; store; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "1",
+                "label": "bottling/aseptic canning/in container canning",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "bottling/aseptic canning/in container canning",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the chosen method, graded 5:3:0."
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "Method of preservation",
+                            "marks": 20,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  18,
+                                  20
+                            ],
+                            "contextNote": "Four details of the SAME method, each graded 5:3:0. Historical process descriptions are not validated domestic preservation recipes. Complete model: heat jars/cans of fruit/vegetables in a water bath; seal jars/cans when hot; forms a vacuum on cooling that creates a seal; label; store; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "2",
+                "label": "drying",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "drying",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the chosen method, graded 5:3:0."
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "Method of preservation",
+                            "marks": 20,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  18,
+                                  20
+                            ],
+                            "contextNote": "Four details of the SAME method, each graded 5:3:0. Historical process descriptions are not validated domestic preservation recipes. Complete model: tie herbs into bundles; dry in a warm area; package; label; store; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "3",
+                "label": "freezing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "freezing",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the chosen method, graded 5:3:0."
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "Method of preservation",
+                            "marks": 20,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  18,
+                                  20
+                            ],
+                            "contextNote": "Four details of the SAME method, each graded 5:3:0. Historical process descriptions are not validated domestic preservation recipes. Complete model: blanch according to type; put into moisture proof packaging; remove air; seal; label; freeze at -25°C; store -18°C; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "4",
+                "label": "commercial freezing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "commercial freezing",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the chosen method, graded 5:3:0."
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "Method of preservation",
+                            "marks": 20,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  18,
+                                  20
+                            ],
+                            "contextNote": "Four details of the SAME method, each graded 5:3:0. Historical process descriptions are not validated domestic preservation recipes. Complete model: flow; cryogenic; immersion; plate; blast; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "5",
+                "label": "commercial drying",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "commercial drying",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name the chosen method, graded 5:3:0."
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "Method of preservation",
+                            "marks": 20,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  18,
+                                  20
+                            ],
+                            "contextNote": "Four details of the SAME method, each graded 5:3:0. Historical process descriptions are not validated domestic preservation recipes. Complete model: sun; hot air; roller; spray; AFD; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another valid method",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 5,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5
+                            ],
+                            "contextNote": "Name another valid method, graded 5:3:0. Complete printed acceptance: heat treatment: jam making; chutney making; pickling; smoking; canning; bottling; pasteurisation; sterilisation; etc. chemical preservation: salting; smoking; pickling; etc. drying: etc. freezing: etc."
+                      },
+                      {
+                            "id": "method",
+                            "kind": "criterion",
+                            "verbatim": "Method of preservation",
+                            "marks": 20,
+                            "permittedMarks": [
+                                  0,
+                                  3,
+                                  5,
+                                  6,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  18,
+                                  20
+                            ],
+                            "contextNote": "Four accurate process details for that same method, each graded 5:3:0. No further developed model is printed; do not invent marking criteria.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4402,11 +5239,31 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1ai", topicId: "home-economics-3-6", conceptId: "methods-of-insulating-a-home",
     section: "C", questionRef: "2025 OL Section C E1 Q1(a)(i)",
+    stem: "The diagram below shows the average % heat loss from different areas of a poorly insulated home. (www.synergyfiles.com)",
     questionText: "Describe four methods of insulating a home.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 methods @ 5 marks (graded 5:3:0)","answer":4,"ofParts":12,"perPart":5}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"4 points × 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Methods of insulating a home", marks: 20, contextNote: "Four methods at 5 marks, graded 5:3:0 — there is no 4, so a method named without saying how it is fitted drops straight to 3. Describe, so each answer needs the material and where it goes. The scheme groups by location, so taking one from the attic, walls, windows and floors gives four that cannot be read as the same method twice.", openList: true, group: {"claimMax":4,"perOption":5,"options":["attic: blanket insulation: rolls of fibreglass, wool or mineral; laid between joists or fixed between roof rafters","loose fill: pellets of polystyrene or vermiculite poured in between joists","foam insulation: foam sprayed between roof and rafters","blown fibre insulation: glass, mineral or cellulose fibres are blown into the attic and sealed","walls: cavity walls: two layers of blocks, 5-10cm apart, air in the space acts as insulator; polystyrene sheets can be inserted at the building stage","internal solid walls: insulation sheets, dry lining applying insulating boards to the inside of external walls","external walls: sheets of insulating material applied to the outer surface of the wall and covered with a render to provide water resistance, a steel mesh is embedded in the render","windows: double or triple glaze: two/three sheets of glass with an air space between them, the space can be filled with an inert gas e.g. argon; low emissivity glass has an invisible coating that reduces heat transfer and reflects heat back into the room","curtains: heavy lined, fitted","floors: fill gaps in and around floorboards; fitted carpets with thick underlay","external: polystyrene with reinforced mesh, acrylic paint finish","hot water cylinder/pipes: permanently insulated cylinder; lagging jacket"]} },
+    { id: "points", kind: "criterion", verbatim: "methods", marks: 20, contextNote: "4 distinct points, each graded 5:3:0. Complete historical guidance: attic: blanket insulation: rolls of fibreglass, wool or mineral; laid between joists or fixed between roof rafters; etc. loose fill: pellets of polystyrene or vermiculite poured in between joists; etc. foam insulation: foam sprayed between roof and rafters; etc. blown fibre insulation: glass, mineral or cellulose fibres are blown into the attic and sealed; etc. walls: cavity walls: two layers of blocks, 5-10cm apart, air in the space acts as insulator; polystyrene sheets can be inserted at the building stage; polystyrene foam or beads are pumped into the cavity; etc. internal solid walls: insulation sheets, dry lining applying insulating boards to the inside of external walls; etc. external walls: sheets of insulating material applied to the outer surface of the wall and covered with a render to provide water resistance, a steel mesh is embedded in the render etc. windows: double or triple glaze: two/three sheets of glass with an air space between them, the space can be filled with an inert gas e.g. argon; low emissivity glass has an invisible coating that reduces heat transfer and reflects heat back into the room etc. curtains: heavy lined, fitted; etc. floors: fill gaps in and around floorboards; fitted carpets with thick underlay; etc. external: polystyrene with reinforced mesh, acrylic paint finish; etc. hot water cylinder/pipes: permanently insulated cylinder; lagging jacket; split foam sleeves on pipes; etc.", permittedMarks: [0,3,5,6,8,9,10,11,12,13,14,15,16,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sc-q1a-heat-loss",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q1a-heat-loss.png",
+          "srcHash": "c5e7cc93c868076268c579696a2f1168",
+          "alt": "Original house heat-loss diagram with the five printed percentages: 25%, 35%, 10%, 15% and 15% and the Synergy Files source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4415,11 +5272,31 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1aii", topicId: "home-economics-3-6", conceptId: "advantages-of-a-well-insulated-home",
     section: "C", questionRef: "2025 OL Section C E1 Q1(a)(ii)",
+    stem: "The diagram below shows the average % heat loss from different areas of a poorly insulated home. (www.synergyfiles.com)",
     questionText: "Discuss three advantages of a well-insulated home.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 advantages @ 5 marks (graded 5:3:0)","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Advantages of a well-insulated home", marks: 15, contextNote: "Three advantages at 5 marks, graded 5:3:0. Discuss, so each needs a consequence: lower bills because less heat escapes, fewer emissions because less fuel is burned. The BER rating point is the one most students miss and it is worth the same 5.", openList: true, group: {"claimMax":3,"perOption":5,"options":["reduces fuel/energy bills","creates warm/comfortable home","reduces noise levels","reduces heat loss","results in less CO₂ emissions","contributes to sustainable living","higher BER rating adds value to the house","reduces the use of energy resources e.g. fossil fuels"]} },
+    { id: "points", kind: "criterion", verbatim: "advantages", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: reduces fuel/energy bills; creates warm/comfortable home; reduces noise levels; reduces heat loss; results in less CO₂ emissions; contributes to sustainable living; higher BER rating adds value to the house; reduces the use of energy resources e.g. fossil fuels; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sc-q1a-heat-loss",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q1a-heat-loss.png",
+          "srcHash": "c5e7cc93c868076268c579696a2f1168",
+          "alt": "Original house heat-loss diagram with the five printed percentages: 25%, 35%, 10%, 15% and 15% and the Synergy Files source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4428,11 +5305,31 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1aiii", topicId: "home-economics-3-6", conceptId: "sustainable-practices-saving-energy",
     section: "C", questionRef: "2025 OL Section C E1 Q1(a)(iii)",
+    stem: "The diagram below shows the average % heat loss from different areas of a poorly insulated home. (www.synergyfiles.com)",
     questionText: "Suggest three different sustainable practices that save energy in the home.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 practices @ 5 marks (graded 5:3:0)","answer":3,"ofParts":14,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Sustainable practices that save energy in the home", marks: 15, contextNote: "Three practices at 5 marks, graded 5:3:0. The question says different, so three ways of using less electricity will read as one practice — spread across heating, appliances and lighting. Each needs a sentence on how it saves the energy.", openList: true, group: {"claimMax":3,"perOption":5,"options":["energy efficient appliances","do not leave appliances on standby","well insulated house","use timer","lower thermostats on heating/hot water systems","lag hot water cylinder and pipes","double/triple glazed /low emissivity windows","lining on curtains","solar energy","zone heating","use LED bulbs","use sensors on outside lights","consider night saver electricity","fix dripping taps"]} },
+    { id: "points", kind: "criterion", verbatim: "practices", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: energy efficient appliances; do not leave appliances on standby; well insulated house; use timer; lower thermostats on heating/hot water systems; lag hot water cylinder and pipes; double/triple glazed /low emissivity windows; lining on curtains; solar energy; zone heating; use LED bulbs; use sensors on outside lights; consider night saver electricity; fix dripping taps; installation of smart metre; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sc-q1a-heat-loss",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q1a-heat-loss.png",
+          "srcHash": "c5e7cc93c868076268c579696a2f1168",
+          "alt": "Original house heat-loss diagram with the five printed percentages: 25%, 35%, 10%, 15% and 15% and the Synergy Files source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 5 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4441,11 +5338,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1bi", topicId: "home-economics-3-5", conceptId: "electricity-delivery-into-the-home",
     section: "C", questionRef: "2025 OL Section C E1 Q1(b)(i)",
+    stem: "‘Electricity is an essential part of our daily lives.’ (www.cru.ie)",
     questionText: "Describe how electricity is delivered into the home.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 5 marks (graded 5:3:0)","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "How electricity is delivered into the home", marks: 15, contextNote: "Three points at 5 marks, graded 5:3:0. The scheme lists the route in order — generation, transformer, mains service cable, meter cabinet, fuse board, circuit breakers, circuits, sockets — so describing the journey in sequence gives three points without having to think of them separately.", openList: true, group: {"claimMax":3,"perOption":5,"options":["electricity generation","transformer","mains service cable","meter cabinet","consumer unit/main fuse board","circuit breakers","circuits","sockets"]} },
+    { id: "points", kind: "criterion", verbatim: "points", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: electricity generation; transformer; mains service cable; meter cabinet; consumer unit/main fuse board; circuit breakers; circuits; sockets; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4454,13 +5362,24 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1bii", topicId: "home-economics-3-5", conceptId: "electrical-terms-mcb-voltage-kwh",
     section: "C", questionRef: "2025 OL Section C E1 Q1(b)(ii)",
-    questionText: "Explain each of the following electrical terms: miniature circuit breakers; voltage; kilowatt per hour (kWh).",
-    tariffModel: {"kind":"fixed","notation":"1 point @ 5 marks (graded 5:3:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    stem: "‘Electricity is an essential part of our daily lives.’ (www.cru.ie)",
+    questionText: "Explain each of the following electrical terms:\n• miniature circuit breakers\n• voltage\n• kilowatt per hour (kWh).",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 1 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "miniature circuit breakers", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. Saying it is a safety device is 3; 5 needs what it actually does — trips to break the circuit on a fault or overload, and can be reset once the fault is fixed. The scheme accepts a labelled diagram here.", openList: true, group: {"claimMax":1,"perOption":5,"options":["safety feature","contain trip switches that interrupt the circuit and disconnect the current when a fault occurs, or the circuit is overloaded","trip switches can be reset when the fault has been rectified","MCBs contain RCDs providing additional protection"]} },
-    { id: "r-2", kind: "anyN", verbatim: "voltage", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. The Irish mains figure — 230 volts — is a marking point in its own right, so quote it.", openList: true, group: {"claimMax":1,"perOption":5,"options":["measure of electrical force/pressure necessary to drive the electric current along","Irish voltage is 230 volts"]} },
-    { id: "r-3", kind: "anyN", verbatim: "kilowatt per hour (kWh)", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. Two facts carry it: a kilowatt is 1000 watts, and a kWh is the electricity an appliance uses in one hour of operation. This is the unit the bill is charged in.", openList: true, group: {"claimMax":1,"perOption":5,"options":["kilowatt is a unit of electricity which equals a 1000 watt","a kWh is the amount of electricity used by an appliance per hour of operation"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Miniature circuit breaker", marks: 5, contextNote: "1 points under this required heading, each graded 5:3:0. Source clarification: an MCB interrupts overcurrent; an RCD detects leakage. An MCB does not inherently contain an RCD. Complete historical guidance: safety feature; contain trip switches that interrupt the circuit and disconnect the current when a fault occurs, or the circuit is overloaded; trip switches can be reset when the fault has been rectified; MCBs contain RCDs providing additional protection; accept labelled diagram; etc.", permittedMarks: [0,3,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "Voltage", marks: 5, contextNote: "1 points under this required heading, each graded 5:3:0. Complete historical guidance: measure of electrical force/pressure necessary to drive the electric current along; Irish voltage is 230 volts; etc.", permittedMarks: [0,3,5] },
+    { id: "heading-3", kind: "criterion", verbatim: "Kilowatt per hour (kWh)", marks: 5, contextNote: "1 points under this required heading, each graded 5:3:0. Source correction: the paper says “kilowatt per hour”, but kWh means kilowatt-hour, a unit of ENERGY. One kWh is the energy used at 1 kW for one hour; 1 kW is 1000 W of power. Complete historical guidance: kilowatt is a unit of electricity which equals a 1000 watt; a kWh is the amount of electricity used by an appliance per hour of operation; etc.", permittedMarks: [0,3,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4469,13 +5388,24 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1ci", topicId: "home-economics-3-4", conceptId: "interior-design-planning-factors",
     section: "C", questionRef: "2025 OL Section C E1 Q1(c)(i)",
-    questionText: "Discuss the importance of each of the following when planning the interior design of a home: family size and stage; cost; comfort.",
-    tariffModel: {"kind":"fixed","notation":"1 point @ 5 marks (graded 5:3:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    stem: "Interior designers help people to create attractive and functional homes.",
+    questionText: "Discuss the importance of each of the following when planning the interior design of a home:\n• family size and stage\n• cost\n• comfort.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 1 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "family size and stage", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. Tie the choice to the stage of the family — non-slip flooring and stain-resistant surfaces because there are young children, flexible design because the family will change.", openList: true, group: {"claimMax":1,"perOption":5,"options":["will influence the use of colour","texture","space","non-slip flooring","stain resistant surfaces","flexible to allow for change"]} },
-    { id: "r-2", kind: "anyN", verbatim: "cost", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. The scheme makes the point that a limited budget does not mean poor design, and it separates initial cost from maintenance cost — either distinction earns the full 5.", openList: true, group: {"claimMax":1,"perOption":5,"options":["money available","initial cost","maintenance cost","energy efficiency","cheaper furnishings can reduce cost","limited cost does not mean poor design"]} },
-    { id: "r-3", kind: "anyN", verbatim: "comfort", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. The longest list of the three, so this is the safest to answer: space, function of the room, ease of movement, heating and ventilation all count.", openList: true, group: {"claimMax":1,"perOption":5,"options":["space available","function of room","aspect of house/room","existing fixtures/fittings","personal choice","colour scheme","materials used","well laid out for ease of movement","area to work","area to relax","textures add comfort","heating","ventilation"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Family size and stage", marks: 5, contextNote: "1 points under this required heading, each graded 5:3:0. Complete historical guidance: will influence the use of colour; texture; space; non-slip flooring; stain resistant surfaces; flexible to allow for change; etc.", permittedMarks: [0,3,5] },
+    { id: "heading-2", kind: "criterion", verbatim: "Cost", marks: 5, contextNote: "1 points under this required heading, each graded 5:3:0. Complete historical guidance: money available; initial cost; maintenance cost; energy efficiency; cheaper furnishings can reduce cost; limited cost does not mean poor design; etc.", permittedMarks: [0,3,5] },
+    { id: "heading-3", kind: "criterion", verbatim: "Comfort", marks: 5, contextNote: "1 points under this required heading, each graded 5:3:0. Complete historical guidance: space available; function of room; aspect of house/room; existing fixtures/fittings; personal choice; colour scheme; materials used; well laid out for ease of movement; area to work; area to relax; textures add comfort; heating; ventilation; etc.", permittedMarks: [0,3,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4484,12 +5414,22 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1cii", topicId: "home-economics-3-4", conceptId: "texture-in-interior-design",
     section: "C", questionRef: "2025 OL Section C E1 Q1(c)(ii)",
-    questionText: "Explain the term ‘texture’, and give two examples of how texture may be used to enhance the interior design of a room.",
-    tariffModel: {"kind":"fixed","notation":"Texture 1 point @ 5 marks; 2 examples @ 5 marks (graded 5:3:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    stem: "Interior designers help people to create attractive and functional homes.",
+    questionText: "Explain the term ‘texture’.",
+    tariffModel: {"kind":"fixed","notation":"Definition 5 (5:3:0)"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "The term ‘texture’", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. Texture is the visual and tactile quality of a surface — say both, and that it adds depth, and the 5 is safe.", openList: true, group: {"claimMax":1,"perOption":5,"options":["visual quality of a surface","tactile/physical","adds depth"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Examples of texture used to enhance interior design", marks: 10, contextNote: "Two examples at 5 marks, graded 5:3:0 — ten of the fifteen marks. The scheme splits its list into smooth and rough textures, so one from each reads as two genuinely different examples. Name the surface and say what it does to the room.", openList: true, group: {"claimMax":2,"perOption":5,"options":["tiling","glass/mirrors","paint","stainless steel","carpeting","upholstery","brick","textured paints","wallpaper","warmth","comfort"]} },
+    { id: "texture", kind: "criterion", verbatim: "texture", marks: 5, contextNote: "Explain texture, graded 5:3:0. Complete guidance: visual quality of a surface; tactile/physical; adds depth; etc.", permittedMarks: [0,3,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4500,10 +5440,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C E2 Q2(b)(i)",
     stem: "A variety of fabric finishes can be applied to textiles.",
     questionText: "Explain why fabric finishes are used on fabric.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 reasons @ 3 marks (graded 3:2:0)","answer":2,"ofParts":9,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Why fabric finishes are used on fabric", marks: 6, contextNote: "Only two reasons at 3 marks — a six-mark part, so keep it short. Each reason is a problem the finish removes: creasing, shrinking, staining, catching fire.", openList: true, group: {"claimMax":2,"perOption":3,"options":["prevent creasing","prevent shrinkage","give a fabric desirable characteristic e.g. waterproofing","stain resistant","improve safety","flame resistant","flame retardant","improve wearing qualities","prevent loss of colour"]} },
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 6, contextNote: "2 distinct points, each graded 3:2:0. Complete historical guidance: prevent creasing; prevent shrinkage; give a fabric desirable characteristic e.g. waterproofing; stain resistant; improve safety; flame resistant; flame retardant; improve wearing qualities; prevent loss of colour; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4514,12 +5464,318 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C E2 Q2(b)(ii)",
     stem: "A variety of fabric finishes can be applied to textiles.",
     questionText: "Name and describe one fabric finish. Give one example of its use in textiles.",
-    tariffModel: {"kind":"fixed","notation":"Name 3 marks; description 1 point 3 marks; example 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"Name 3 + description 3 + example 3 (3:2:0)"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Fabric finishes", marks: 3, contextNote: "Name one finish, 3 marks, graded 3:2:0. All six in the scheme are equally creditable — pick the one whose effect and use you can state, because the other 6 marks follow from it.", openList: true, group: {"claimMax":1,"perOption":3,"options":["waterproofing","anti-static","stain resistant","crease resistant","mercerising","flame retardant"]} },
-    { id: "r-2", kind: "anyN", verbatim: "What the finish does", marks: 3, contextNote: "One description, 3 marks, graded 3:2:0, matching the finish you named. Each of the scheme's descriptions is a single clause about what the fabric can now do — that is the whole answer, not a paragraph.", openList: true, group: {"claimMax":1,"perOption":3,"options":["makes fabric water repellent","prevents fabric from clinging to the skin","makes fabrics easier to clean and keep clean","prevents fabrics from creasing, reducing the need for ironing","makes the fabric stronger and more absorbent","reduces the flammability of a fabric"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Example of its use in textiles", marks: 3, contextNote: "One example, 3 marks, graded 3:2:0. It must be a garment or household item, not a fabric: the scheme pairs waterproofing with a rain coat, flame retardant with children's night wear, mercerising with bed sheets.", openList: true, group: {"claimMax":1,"perOption":3,"options":["e.g. rain coat","e.g. evening wear","e.g. table cloth","e.g. linen skirt","e.g. bed sheets","e.g. children’s night wear"]} },
+    { id: "name", kind: "criterion", verbatim: "waterproofing", marks: 3, contextNote: "Name this finish, graded 3:2:0.", permittedMarks: [0,2,3] },
+    { id: "description", kind: "criterion", verbatim: "makes fabric water repellent;", marks: 3, contextNote: "Describe the SAME finish, graded 3:2:0.", permittedMarks: [0,2,3] },
+    { id: "example", kind: "criterion", verbatim: "rain coat; etc.", marks: 3, contextNote: "Give a use of the SAME finish, graded 3:2:0.", permittedMarks: [0,2,3] },
     ],
+    answerVariants: [
+          {
+                "id": "0",
+                "label": "waterproofing",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "waterproofing",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this finish, graded 3:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "makes fabric water repellent;",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe the SAME finish, graded 3:2:0."
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "rain coat; etc.",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Give a use of the SAME finish, graded 3:2:0."
+                      }
+                ]
+          },
+          {
+                "id": "1",
+                "label": "anti-static",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "anti-static",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this finish, graded 3:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "prevents fabric from clinging to the skin;",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe the SAME finish, graded 3:2:0."
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "evening wear; etc.",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Give a use of the SAME finish, graded 3:2:0."
+                      }
+                ]
+          },
+          {
+                "id": "2",
+                "label": "stain resistant",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "stain resistant",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this finish, graded 3:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "makes fabrics easier to clean and keep clean;",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe the SAME finish, graded 3:2:0."
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "table cloth; etc.",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Give a use of the SAME finish, graded 3:2:0."
+                      }
+                ]
+          },
+          {
+                "id": "3",
+                "label": "crease resistant",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "crease resistant",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this finish, graded 3:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "prevents fabrics from creasing, reducing the need for ironing;",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe the SAME finish, graded 3:2:0."
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "linen skirt; etc.",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Give a use of the SAME finish, graded 3:2:0."
+                      }
+                ]
+          },
+          {
+                "id": "4",
+                "label": "mercerising",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "mercerising",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this finish, graded 3:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "makes the fabric stronger and more absorbent;",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe the SAME finish, graded 3:2:0."
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "bed sheets; etc.",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Give a use of the SAME finish, graded 3:2:0."
+                      }
+                ]
+          },
+          {
+                "id": "5",
+                "label": "flame retardant",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "flame retardant",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name this finish, graded 3:2:0."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "reduces the flammability of a fabric;",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe the SAME finish, graded 3:2:0."
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "children’s night wear; etc.",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Give a use of the SAME finish, graded 3:2:0."
+                      }
+                ]
+          },
+          {
+                "id": "another",
+                "label": "Another valid finish",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Name",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Name another valid finish, graded 3:2:0. The choice is open."
+                      },
+                      {
+                            "id": "description",
+                            "kind": "criterion",
+                            "verbatim": "Description",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Describe that same finish accurately, graded 3:2:0. No further model is printed."
+                      },
+                      {
+                            "id": "example",
+                            "kind": "criterion",
+                            "verbatim": "Example",
+                            "marks": 3,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3
+                            ],
+                            "contextNote": "Give a matching textile use, graded 3:2:0."
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4530,10 +5786,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C E2 Q2(c)(i)",
     stem: "Sewing has become popular and trendy.",
     questionText: "Outline three factors to consider when selecting a commercial sewing pattern.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 factors @ 3 marks (graded 3:2:0)","answer":3,"ofParts":6,"perPart":3}, totalMarks: 9,
+    tariffModel: {"kind":"fixed","notation":"3 points × 3 (3:2:0)"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors to consider when selecting a commercial sewing pattern", marks: 9, contextNote: "Three factors at 3 marks, graded 3:2:0. The two measurement rules are the specific marks here and the scheme keeps them separate: hip measurement sizes skirts and trousers, chest measurement sizes dresses, shirts, coats and jackets.", openList: true, group: {"claimMax":3,"perOption":3,"options":["beginners should select easy to use/simple to sew ranges with few darts/seams","pattern size for skirts or pants is determined by hip measurement","dress, shirt, coat, jacket size is determined by chest size","personal preference","cost","zero waste pattern design"]} },
+    { id: "points", kind: "criterion", verbatim: "factors", marks: 9, contextNote: "3 distinct points, each graded 3:2:0. Complete historical guidance: beginners should select easy to use/simple to sew ranges with few darts/seams; pattern size for skirts or pants is determined by hip measurement; dress, shirt, coat, jacket size is determined by chest size; personal preference; cost; zero waste pattern design; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]},{"id":"point-3","verbatim":"Point 3","marks":3,"permittedMarks":[0,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4544,10 +5810,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C E2 Q2(c)(ii)",
     stem: "Sewing has become popular and trendy.",
     questionText: "State the importance of pressing a garment during construction.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 points @ 3 marks (graded 3:2:0)","answer":2,"ofParts":5,"perPart":3}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"2 points × 3 (3:2:0)"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Importance of pressing a garment during construction", marks: 6, contextNote: "Two points at 3 marks — the question says state, so a phrase each is enough. Pressing during construction is about the seams and darts, not about the finished look, and the scheme credits both.", openList: true, group: {"claimMax":2,"perOption":3,"options":["improves the overall appearance of clothes","removes creasing","necessary to emphasise darts","flattens seams","reduces puckering"]} },
+    { id: "points", kind: "criterion", verbatim: "points", marks: 6, contextNote: "2 distinct points, each graded 3:2:0. Complete historical guidance: improves the overall appearance of clothes; removes creasing; necessary to emphasise darts; flattens seams; reduces puckering; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4556,15 +5832,34 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q3ai", topicId: "home-economics-3-10", conceptId: "primary-school-education-in-ireland",
     section: "C", questionRef: "2025 OL Section C E3 Q3(a)(i)",
-    stem: "Child-centred education is a modern approach to curriculum.",
-    questionText: "Describe primary school education in Ireland. Refer to: age range of primary school children; choices / types of primary schools; curriculum offered.",
-    tariffModel: {"kind":"fixed","notation":"1 point @ 5 marks (graded 5:3:0) x 3, + 1 other point @ 5 marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    stem: "Child-centred education is a modern approach to curriculum. (www.logoleisurewear.com)",
+    questionText: "Describe primary school education in Ireland. Refer to:\n• age range of primary school children\n• choices / types of primary schools\n• curriculum offered.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 5 + other point 5 (5:3:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "age range of primary school children", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. This heading is pure fact and the numbers are the marks: enrolment from age 4, compulsory by 6, an eight-year cycle, finishing at 12.", openList: true, group: {"claimMax":1,"perOption":5,"options":["children can be enrolled at primary school from the age of 4 upwards","must start their formal education by the age of 6 years","the primary school cycle is 8 years long","finish primary school at 12/14 years"]} },
-    { id: "r-2", kind: "anyN", verbatim: "choices / types of primary schools", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. The scheme accepts thirteen school types, so this is the safest of the three headings — name types and say what distinguishes them.", openList: true, group: {"claimMax":1,"perOption":5,"options":["state funded primary","special schools","private primary","religious","non-denominational","multi-denominational","Educate Together","Gaelscoileanna","Montessori","Frobel","Steiner","single sex","home schooling"]} },
-    { id: "r-3", kind: "anyN", verbatim: "curriculum offered", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. Say what the curriculum is for, not what subjects exist: building self-esteem, literacy and numeracy, a broad learning experience.", openList: true, group: {"claimMax":1,"perOption":5,"options":["aims to build self-esteem","introduces the basic skills of literacy and numeracy","provides a broad learning experience","encourages a variety of approaches to teaching and learning","teaches a broad spectrum of subjects"]} },
-    { id: "r-4", kind: "anyN", verbatim: "One further point, from any of the three headings", marks: 5, contextNote: "The fourth point floats: the scheme reads three headings \"+ 1 other point @ 5 marks\", so add one more from whichever heading you know best.", openList: true, group: {"claimMax":1,"perOption":5,"options":["children can be enrolled at primary school from the age of 4 upwards","must start their formal education by the age of 6 years","the primary school cycle is 8 years long","finish primary school at 12/14 years","state funded primary","special schools","private primary","religious","non-denominational","multi-denominational","Educate Together","Gaelscoileanna","Montessori","Frobel"]} },
+    { id: "1", kind: "criterion", verbatim: "Age range of primary school children", marks: 5, contextNote: "One point under this required heading, graded 5:3:0. Historical 2025 examination context. Complete guidance: children can be enrolled at primary school from the age of 4 upwards; must start their formal education by the age of 6 years; the primary school cycle is 8 years long; finish primary school at 12/14 years; etc.", permittedMarks: [0,3,5] },
+    { id: "2", kind: "criterion", verbatim: "Choice / types of primary schools", marks: 5, contextNote: "One point under this required heading, graded 5:3:0. Historical 2025 examination context. Complete guidance: state funded primary; special schools; private primary; religious; non-denominational; multi-denominational; Educate Together; Gaelscoileanna; Montessori; Frobel; Steiner; single sex; home schooling; etc.", permittedMarks: [0,3,5] },
+    { id: "3", kind: "criterion", verbatim: "Curriculum offered", marks: 5, contextNote: "One point under this required heading, graded 5:3:0. Historical 2025 examination context. Complete guidance: aims to build self-esteem; introduces the basic skills of literacy and numeracy; provides a broad learning experience; encourages a variety of approaches to teaching and learning; teaches a broad spectrum of subjects; etc.", permittedMarks: [0,3,5] },
+    { id: "other", kind: "criterion", verbatim: "other point", marks: 5, contextNote: "One further distinct point under any of the three headings, graded 5:3:0.", permittedMarks: [0,3,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sc-q3a-classroom",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q3a-classroom.png",
+          "srcHash": "a1f3169ec4ed5a31d8e74fd5b1313518",
+          "alt": "Original classroom photograph with children and their teacher, with the Logo Leisurewear source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4572,13 +5867,33 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q3aii-name", topicId: "home-economics-3-10", conceptId: "education-initiatives-supporting-attendance",
-    section: "C", questionRef: "2025 OL Section C E3 Q3(a)(ii) - naming the initiative",
-    stem: "Child-centred education is a modern approach to curriculum.",
-    questionText: "Name one education initiative that helps to support school attendance.",
-    tariffModel: {"kind":"bestNofParts","notation":"Name 1 @ 5 marks (graded 5:3:0)","answer":1,"ofParts":14,"perPart":5}, totalMarks: 5,
+    section: "C", questionRef: "2025 OL Section C E3 Q3(a)(ii)",
+    stem: "Child-centred education is a modern approach to curriculum. (www.logoleisurewear.com)",
+    questionText: "Name and give details of one education initiative that helps to support school attendance.",
+    tariffModel: {"kind":"fixed","notation":"Name 5 + 2 details × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Education initiatives that support school attendance", marks: 5, contextNote: "Name one, 5 marks, graded 5:3:0. The scheme accepts a long list, and the ones tied directly to attendance rather than to attainment — the School Meals Scheme, School Transport, Home School Community Liaison, DEIS — are the easiest to then give details for.", openList: true, group: {"claimMax":1,"perOption":5,"options":["School Books Scheme Primary Schools","Schoolbooks Scheme Post Primary Schools","Primary School Transport Scheme","School Meals Scheme","SNA’s","NCSE","LCA","LCVP","Transition Year","JCSP","Home School Community Liaison Scheme","DEIS","NBSS","NEWB"]} },
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 5, contextNote: "Name one initiative, graded 5:3:0. All printed examples: School Books Scheme Primary Schools; Schoolbooks Scheme Post Primary Schools; Primary School Transport Scheme; School Meals Scheme; SNA’s; NCSE; LCA; LCVP; Transition Year; JCSP; Home School Community Liaison Scheme; DEIS; NBSS; NEWB; L2LP; BFL; VEP; TAP; DARE; RACE; traveller support; visiting teacher service; etc.", permittedMarks: [0,3,5] },
+    { id: "details", kind: "criterion", verbatim: "details", marks: 10, contextNote: "Give two accurate details of the SAME initiative supporting school attendance, each graded 5:3:0. The scheme publishes this criterion and ladder but no developed details; the name alone earns at most five marks.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sc-q3a-classroom",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q3a-classroom.png",
+          "srcHash": "a1f3169ec4ed5a31d8e74fd5b1313518",
+          "alt": "Original classroom photograph with children and their teacher, with the Logo Leisurewear source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4587,14 +5902,33 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q3aiii", topicId: "home-economics-3-10", conceptId: "education-and-child-development",
     section: "C", questionRef: "2025 OL Section C E3 Q3(a)(iii)",
-    stem: "Child-centred education is a modern approach to curriculum.",
+    stem: "Child-centred education is a modern approach to curriculum. (www.logoleisurewear.com)",
     questionText: "Discuss how education contributes to the social and physical development of children.",
-    tariffModel: {"kind":"fixed","notation":"3 points @ 5 marks (graded 5:3:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"Social 5 + physical 5 + other 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "social development", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. Social means learning to be with others — sharing, teamwork, friendships, respect for rules. The scheme also credits the primary/secondary and formal/informal socialisation terms, which are worth knowing by name.", openList: true, group: {"claimMax":1,"perOption":5,"options":["reinforces social skills taught at home","learn appropriate behaviour","primary/secondary socialisation","formal/informal socialisation","respect for authority","school rules","punctuality","ability to share","teamwork","develop self-confidence","building/maintaining friendships"]} },
-    { id: "r-2", kind: "anyN", verbatim: "physical development", marks: 5, contextNote: "One point, 5 marks, graded 5:3:0. The shorter of the two lists and the one students forget: hand-eye co-ordination, dexterity, speed, and extra-curricular activities.", openList: true, group: {"claimMax":1,"perOption":5,"options":["activities encourage hand-eye co-ordination","dexterity","speed","enhance cognition","help children concentrate","extra-curricular activities"]} },
-    { id: "r-3", kind: "anyN", verbatim: "One further point, from either heading", marks: 5, contextNote: "The scheme reads \"1 reference to social, 1 reference to physical, + 1 other point\", so the third comes from whichever list you can develop further.", openList: true, group: {"claimMax":1,"perOption":5,"options":["reinforces social skills taught at home","learn appropriate behaviour","primary/secondary socialisation","formal/informal socialisation","respect for authority","school rules","punctuality","ability to share","teamwork","develop self-confidence","building/maintaining friendships","activities encourage hand-eye co-ordination","dexterity","speed"]} },
+    { id: "social", kind: "criterion", verbatim: "social", marks: 5, contextNote: "One social-development point, graded 5:3:0. Complete guidance: reinforces social skills taught at home; learn appropriate behaviour; primary/secondary socialisation; formal/informal socialisation; respect for authority; school rules; punctuality; ability to share; teamwork; develop self-confidence; building/maintaining friendships; etc.", permittedMarks: [0,3,5] },
+    { id: "physical", kind: "criterion", verbatim: "physical", marks: 5, contextNote: "One physical-development point, graded 5:3:0. Complete guidance: activities encourage hand-eye co-ordination; dexterity; speed; enhance cognition; help children concentrate; extra-curricular activities; etc.", permittedMarks: [0,3,5] },
+    { id: "other", kind: "criterion", verbatim: "other point", marks: 5, contextNote: "One further distinct point from either heading, graded 5:3:0.", permittedMarks: [0,3,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sc-q3a-classroom",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q3a-classroom.png",
+          "srcHash": "a1f3169ec4ed5a31d8e74fd5b1313518",
+          "alt": "Original classroom photograph with children and their teacher, with the Logo Leisurewear source caption.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4605,10 +5939,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C E3 Q3(b)(i)",
     stem: "There are many childcare options available in Ireland to suit different family needs.",
     questionText: "Discuss three factors parents should consider when choosing a childcare option.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 points @ 5 marks (graded 5:3:0)","answer":3,"ofParts":13,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Factors to consider when choosing a childcare option", marks: 15, contextNote: "Three factors at 5 marks, graded 5:3:0 — no 4, so a factor named without a reason drops to 3. Say why each factor matters to the parent or the child, not just that it should be considered.", openList: true, group: {"claimMax":3,"perOption":5,"options":["cost","environment of childcare setting","age/needs of child","special needs of child","proximity to home/work","experience/qualification of staff","first aid training","after school care requirements","opening/closing hours","flexibility","school holidays","personal preferences","reliability"]} },
+    { id: "points", kind: "criterion", verbatim: "points", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: cost; environment of childcare setting; age/needs of child; special needs of child; proximity to home/work; experience/qualification of staff; first aid training; after school care requirements; opening/closing hours; flexibility; school holidays; personal preferences; reliability; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4616,13 +5960,24 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q3bii-name", topicId: "home-economics-3-11", conceptId: "state-supports-for-families-with-children",
-    section: "C", questionRef: "2025 OL Section C E3 Q3(b)(ii) - naming the support",
+    section: "C", questionRef: "2025 OL Section C E3 Q3(b)(ii)",
     stem: "There are many childcare options available in Ireland to suit different family needs.",
-    questionText: "Name one government / state support provided to families with children.",
-    tariffModel: {"kind":"bestNofParts","notation":"Name 1 @ 5 marks (graded 5:3:0)","answer":1,"ofParts":14,"perPart":5}, totalMarks: 5,
+    questionText: "Name and give details of one government / state support provided to families with children.",
+    tariffModel: {"kind":"fixed","notation":"Name 5 + 2 details × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Government / state supports for families with children", marks: 5, contextNote: "Name one, 5 marks, graded 5:3:0. Child Benefit, the Working Family Payment and the ECCE scheme are the three most detail-rich, so they are the best to name when the rest of the part asks what the support actually provides.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Back to School Supports: clothing and footwear allowance","School Books Scheme Primary Schools","Schoolbooks Scheme Post Primary Schools","Child Benefit","Working Family Payment","Early Childhood Care and Education Scheme (ECCE)","National Childcare Scheme (NCS)","Early Start Pre- School Programme","School Meals Programme","JCSP","LCA","LCVP","TY","HEAR"]} },
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 5, contextNote: "Name one support, graded 5:3:0. Historical 2025 examples: Back to School Supports: clothing and footwear allowance; School Books Scheme Primary Schools; Schoolbooks Scheme Post Primary Schools; etc. Child Benefit; Working Family Payment; Early Childhood Care and Education Scheme (ECCE); National Childcare Scheme (NCS); Early Start Pre- School Programme; School Meals Programme; JCSP; LCA; LCVP; TY; HEAR; DARE; RACE; social welfare payments/allowances; etc.", permittedMarks: [0,3,5] },
+    { id: "details", kind: "criterion", verbatim: "details", marks: 10, contextNote: "Give two accurate details of the SAME support, each graded 5:3:0. The scheme prints this criterion and ladder but no developed details; naming alone earns at most five marks.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4633,10 +5988,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C E3 Q3(c)(i)",
     stem: "10.6% of people in Ireland were at risk of poverty in 2023. (www.cso.ie)",
     questionText: "Discuss three reasons why people might be at risk of poverty.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 reasons @ 5 marks (graded 5:3:0)","answer":3,"ofParts":10,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Reasons why people might be at risk of poverty", marks: 15, contextNote: "Three reasons at 5 marks, graded 5:3:0. Housing cost and social housing shortage are two separate options, so both can be used. The cycle of poverty and the poverty trap are the two technical terms on the list and each is worth a full 5 if you explain it.", openList: true, group: {"claimMax":3,"perOption":5,"options":["increased cost of housing","shortage of social housing","large families experience greater costs and expenses","one-parent families/one income households","high rates of unemployment","social problems, alcohol/drugs/gambling","lack of education","low paid jobs","cycle of poverty","poverty trap"]} },
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: increased cost of housing; shortage of social housing; large families experience greater costs and expenses; one-parent families/one income households; high rates of unemployment; social problems, alcohol/drugs/gambling; lack of education; low paid jobs; cycle of poverty; poverty trap; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4647,10 +6012,20 @@ export const CARDS: SecCard[] = [
     section: "C", questionRef: "2025 OL Section C E3 Q3(c)(ii)",
     stem: "10.6% of people in Ireland were at risk of poverty in 2023. (www.cso.ie)",
     questionText: "Describe the effects of poverty on families with children.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 effects @ 5 marks (graded 5:3:0)","answer":3,"ofParts":10,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Effects of poverty on families with children", marks: 15, contextNote: "Three effects at 5 marks, graded 5:3:0. The scheme runs from the material (poor housing, poor nutrition, going without basics) to the social and emotional (exclusion, low self-esteem, anxiety) — take one from each end and they cannot be read as the same effect twice.", openList: true, group: {"claimMax":3,"perOption":5,"options":["poor housing conditions","illness","poor nutrition","low self-esteem","going without basic needs","missing out on fun activities","poor emotional wellbeing","being excluded from social activities","less extra-curricular activities","anxiety/mental health"]} },
+    { id: "points", kind: "criterion", verbatim: "effects", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: These are possible effects, not inevitable outcomes for a particular family. poor housing conditions; illness; poor nutrition; low self-esteem; going without basic needs; missing out on fun activities; poor emotional wellbeing; being excluded from social activities; less extra-curricular activities; anxiety/mental health; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4658,15 +6033,34 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4ai", topicId: "home-economics-0-9", conceptId: "nutritive-and-dietetic-value-of-yoghurt",
-    section: "C", questionRef: "2025 OL Section C Q4(a)(i) - Core",
-    stem: "‘Yoghurt continues to be a favourite product today.’ (www.glanbianutritionals.com)",
-    questionText: "Give an account of the nutritive value and the dietetic value of yoghurt.",
-    tariffModel: {"kind":"fixed","notation":"4 points @ 5 marks (graded 5:4:3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    section: "C", questionRef: "2025 OL Section C Q4(a)(i)",
+    stem: "‘Yogurt continues to be a favourite product today.’(www.glanbianutritionals.com) (www.feedthemwisely.com) (www.almy.com)",
+    questionText: "Give an account of (i) the nutritive value and (ii) the dietetic value of yoghurt.",
+    tariffModel: {"kind":"fixed","notation":"Nutritive 1 + dietetic 1 + other 2, each 5 (5:4:3:2:0)"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Nutritive value", marks: 5, contextNote: "One point, 5 marks, on a 5:4:3:2:0 ladder — the finest grading on the paper, so a partly-right answer still scores. Nutritive value means which nutrients are present and in what amount: HBV protein, calcium, lactose, 87% water. The two deficiencies, vitamin C and iron, are marking points too.", openList: true, group: {"claimMax":1,"perOption":5,"options":["HBV protein and repair","saturated fat","carbohydrates in the form of lactose/sucrose","contains vitamins A, vitamin B, vitamin D","excellent source of calcium","good source of phosphorus","traces of magnesium/potassium/sodium","contains 87% water","deficient in vitamin C","deficient in iron"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Dietetic value", marks: 5, contextNote: "One point, 5 marks, 5:4:3:2:0. Dietetic value is who the food suits and why — easy to digest, cheap, suits children, teenagers, pregnant women and older people. This is the half students merge into the first one and lose.", openList: true, group: {"claimMax":1,"perOption":5,"options":["HBV protein for growth and repair, valuable in diets of children, teenagers, pregnant women and elderly","saturated fat, provides heat","energy","carbohydrate in form of lactose/sucrose for energy","calcium/phosphorus for bones and teeth","versatile","used in both sweet and savoury dishes","easy to digest","can be fortified with vitamins and minerals","should be combined with foods rich in starch, fibre, iron to have balance in the diet","inexpensive","wide range of different types available to suit different diets, tastes and requirements","ideal snack food","used as alternative to cream in baking"]} },
-    { id: "r-3", kind: "anyN", verbatim: "Two further points, from either heading", marks: 10, contextNote: "The scheme reads \"1 reference to nutritive value, 1 reference to dietetic value, + 2 other points\", so half the marks float. Take both from whichever heading you know better.", openList: true, group: {"claimMax":2,"perOption":5,"options":["HBV protein and repair","saturated fat","carbohydrates in the form of lactose/sucrose","contains vitamins A, vitamin B, vitamin D","excellent source of calcium","good source of phosphorus","traces of magnesium/potassium/sodium","contains 87% water","deficient in vitamin C","deficient in iron","HBV protein for growth and repair, valuable in diets of children, teenagers, pregnant women and elderly","saturated fat, provides heat","energy","carbohydrate in form of lactose/sucrose for energy"]} },
+    { id: "nutritive", kind: "criterion", verbatim: "Nutritive value", marks: 5, contextNote: "One nutritive point, graded 5:4:3:2:0. Amounts depend on product composition and fortification. Complete guidance: HBV protein and repair; saturated fat; carbohydrates in the form of lactose/sucrose; contains vitamins A, vitamin B, vitamin D; excellent source of calcium; good source of phosphorus; traces of magnesium/potassium/sodium; contains 87% water; deficient in vitamin C; deficient in iron; etc.", permittedMarks: [0,2,3,4,5] },
+    { id: "dietetic", kind: "criterion", verbatim: "Dietetic value", marks: 5, contextNote: "One dietetic point, graded 5:4:3:2:0. Suitability depends on the individual and product. Complete guidance: HBV protein for growth and repair, valuable in diets of children, teenagers, pregnant women and elderly; saturated fat, provides heat; energy; carbohydrate in form of lactose/sucrose for energy; calcium/phosphorus for bones and teeth; versatile; used in both sweet and savoury dishes; easy to digest; can be fortified with vitamins and minerals; should be combined with foods rich in starch, fibre, iron to have balance in the diet; inexpensive; wide range of different types available to suit different diets, tastes and requirements; ideal snack food; used as alternative to cream in baking; aids digestion; etc.", permittedMarks: [0,2,3,4,5] },
+    { id: "other", kind: "criterion", verbatim: "other points", marks: 10, contextNote: "Two further distinct points from either heading, each graded 5:4:3:2:0.", permittedMarks: [0,2,3,4,5,6,7,8,9,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,2,3,4,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,2,3,4,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sc-q4a-yoghurt",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q4a-yoghurt.png",
+          "srcHash": "71b552657a12e3654fa93a702c9a92d4",
+          "alt": "Both original yoghurt photographs and their source captions: multiple retail tubs on the left and jars and small yoghurt pots on the right.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 8 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4674,15 +6068,34 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4aii", topicId: "home-economics-0-9", conceptId: "yoghurt-uses-buying-and-storing",
-    section: "C", questionRef: "2025 OL Section C Q4(a)(ii) - Core",
-    stem: "‘Yoghurt continues to be a favourite product today.’ (www.glanbianutritionals.com)",
-    questionText: "In relation to yoghurt describe each of the following: culinary uses; guidelines for buying; guidelines for storing.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 3 marks (graded 3:2:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    section: "C", questionRef: "2025 OL Section C Q4(a)(ii)",
+    stem: "‘Yogurt continues to be a favourite product today.’(www.glanbianutritionals.com) (www.feedthemwisely.com) (www.almy.com)",
+    questionText: "In relation to yoghurt describe each of the following:\n• culinary uses\n• guidelines for buying\n• guidelines for storing.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 3 (3:2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "culinary uses", marks: 6, contextNote: "Two uses at 3 marks, graded 3:2:0. Name the dish or the course, not just \"in cooking\" — desserts, salads, garnishing, or as an alternative to cream.", openList: true, group: {"claimMax":2,"perOption":3,"options":["on its own","as a drink","desserts","salads","garnishing","toppings e.g. moussaka","as an alternative to cream","with breakfast cereals"]} },
-    { id: "r-2", kind: "anyN", verbatim: "guidelines for buying", marks: 6, contextNote: "Two guidelines at 3 marks, graded 3:2:0. The dome-shaped lid is the specific one the scheme rewards — it means the yoghurt has fermented in the pot. Check the use-by date is the other reliable mark.", openList: true, group: {"claimMax":2,"perOption":3,"options":["buy from a clean hygienic shop","check use by date","do not buy if the lid is dome shaped","buy wisely/good value for money","check ingredients/allergens","country of origin"]} },
-    { id: "r-3", kind: "anyN", verbatim: "guidelines for storing", marks: 6, contextNote: "Two guidelines at 3 marks, graded 3:2:0. Refrigerate promptly, use in rotation, reseal with the original lid, use by the date. Short answers — do not over-write a 6-mark row.", openList: true, group: {"claimMax":2,"perOption":3,"options":["store in a refrigerator as soon as possible after buying","use in rotation","reseal after opening","use original lid to reseal","use by the use by date"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Culinary uses", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Complete historical guidance: on its own; as a drink; desserts; salads; garnishing; toppings e.g. moussaka; as an alternative to cream; with breakfast cereals; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Guidelines for buying", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Complete historical guidance: buy from a clean hygienic shop; check use by date; do not buy if the lid is dome shaped; buy wisely/good value for money; check ingredients/allergens; country of origin; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Guidelines for storing", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Complete historical guidance: store in a refrigerator as soon as possible after buying; use in rotation; reseal after opening; use original lid to reseal; use by the use by date; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sc-q4a-yoghurt",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q4a-yoghurt.png",
+          "srcHash": "71b552657a12e3654fa93a702c9a92d4",
+          "alt": "Both original yoghurt photographs and their source captions: multiple retail tubs on the left and jars and small yoghurt pots on the right.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 8 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4690,13 +6103,32 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4aiii", topicId: "home-economics-0-11", conceptId: "reasons-for-variety-of-yoghurt-products",
-    section: "C", questionRef: "2025 OL Section C Q4(a)(iii) - Core",
-    stem: "‘Yoghurt continues to be a favourite product today.’ (www.glanbianutritionals.com)",
-    questionText: "There is an increasing variety of yoghurt and yoghurt drinks available in Irish supermarkets. Give three reasons for this trend.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 reasons @ 4 marks (graded 4:2:0)","answer":3,"ofParts":9,"perPart":4}, totalMarks: 12,
+    section: "C", questionRef: "2025 OL Section C Q4(a)(iii)",
+    stem: "‘Yogurt continues to be a favourite product today.’(www.glanbianutritionals.com) (www.feedthemwisely.com) (www.almy.com)",
+    questionText: "There is an increasing variety of yogurt and yogurt drinks available in Irish supermarkets. Give three reasons for this trend.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 4 (4:2:0)"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Reasons for the increasing variety of yoghurt products", marks: 12, contextNote: "Three reasons at 4 marks, graded 4:2:0 — naming a product type is 2, saying which consumer it is aimed at takes it to 4. The scheme is really listing market segments: lactose free, sugar free, probiotic, added protein, soya.", openList: true, group: {"claimMax":3,"perOption":4,"options":["awareness of nutritional value","lactose free products","products with omega 3","sugar free options","variety of flavoured yoghurts","probiotic","containing plant stanol esters","added protein","soya"]} },
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 12, contextNote: "3 distinct points, each graded 4:2:0. Complete historical guidance: awareness of nutritional value; lactose free products; products with omega 3; sugar free options; variety of flavoured yoghurts; probiotic; containing plant stanol esters; added protein; soya; etc.", permittedMarks: [0,2,4,6,8,10,12], parts: [{"id":"point-1","verbatim":"Point 1","marks":4,"permittedMarks":[0,2,4]},{"id":"point-2","verbatim":"Point 2","marks":4,"permittedMarks":[0,2,4]},{"id":"point-3","verbatim":"Point 3","marks":4,"permittedMarks":[0,2,4]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sc-q4a-yoghurt",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q4a-yoghurt.png",
+          "srcHash": "71b552657a12e3654fa93a702c9a92d4",
+          "alt": "Both original yoghurt photographs and their source captions: multiple retail tubs on the left and jars and small yoghurt pots on the right.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 8 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4704,13 +6136,23 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4bi", topicId: "home-economics-1-1", conceptId: "importance-of-regular-saving",
-    section: "C", questionRef: "2025 OL Section C Q4(b)(i) - Core",
+    section: "C", questionRef: "2025 OL Section C Q4(b)(i)",
     stem: "‘Saving money is one of the key aspects of having a secure financial future.’ (www.iciciprulife.com)",
-    questionText: "Discuss three reasons why regular savings is important.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 reasons @ 5 marks (graded 5:3:0)","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
+    questionText: "Discuss three reasons why regular saving is important.",
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Reasons why regular saving is important", marks: 15, contextNote: "Three reasons at 5 marks, graded 5:3:0. Discuss, so each needs its consequence for the household — savings mean an emergency does not become a loan, and a record of saving is what a lender looks for later.", openList: true, group: {"claimMax":3,"perOption":5,"options":["reduce financial worries","give a feeling of security and independence","emergencies can be catered for","sets a good example for family members","avoids the necessity for loans/credit agreements","builds a sound financial reputation for the family","can earn interest if invested wisely","useful if planning for something"]} },
+    { id: "points", kind: "criterion", verbatim: "reasons", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: reduce financial worries; give a feeling of security and independence; emergencies can be catered for; sets a good example for family members; avoids the necessity for loans/credit agreements; builds a sound financial reputation for the family; can earn interest if invested wisely; useful if planning for something; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4718,14 +6160,25 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4bii-name-reasons", topicId: "home-economics-1-1", conceptId: "choosing-a-family-saving-scheme",
-    section: "C", questionRef: "2025 OL Section C Q4(b)(ii) - Core - naming the scheme and reasons",
+    section: "C", questionRef: "2025 OL Section C Q4(b)(ii)",
     stem: "‘Saving money is one of the key aspects of having a secure financial future.’ (www.iciciprulife.com)",
-    questionText: "Name one saving scheme suitable for a family. Give two reasons for your choice.",
-    tariffModel: {"kind":"fixed","notation":"Name 3 marks (graded 3:2:0); 2 reasons @ 3 marks (graded 3:2:0)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    questionText: "Name and give details of one saving scheme suitable for a family. Give two reasons for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Name 3 + 2 details × 3 + 2 reasons × 3 (3:2:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Saving schemes suitable for a family", marks: 3, contextNote: "Name one, 3 marks, graded 3:2:0. The scheme groups its options by provider — An Post, banks and building societies, credit unions — so naming the provider and the account type together is the safe answer.", openList: true, group: {"claimMax":1,"perOption":3,"options":["An Post: deposit account; instalment savings scheme; saving certificates; saving bonds","Banks & Building Societies: demand deposit accounts; notice accounts; special term accounts","Credit Union: demand deposit accounts; notice accounts"]} },
-    { id: "r-2", kind: "anyN", verbatim: "Reasons for the choice", marks: 6, contextNote: "Two reasons at 3 marks, graded 3:2:0. These are the practical comparisons between schemes: how easily you can get at the money, how safe it is, what interest it earns, whether it is taxed, and where and when you can call in.", openList: true, group: {"claimMax":2,"perOption":3,"options":["ease of access","security of savings","interest earned","tax payable","location","opening hours"]} },
+    { id: "name", kind: "criterion", verbatim: "Name", marks: 3, contextNote: "Name one saving scheme, graded 3:2:0. Complete historical examples: An Post: deposit account; instalment savings scheme; saving certificates; saving bonds; etc. Banks & Building Societies: demand deposit accounts; notice accounts; special term accounts; etc. Credit Union: demand deposit accounts; notice accounts; etc.", permittedMarks: [0,2,3] },
+    { id: "details", kind: "criterion", verbatim: "Details", marks: 6, contextNote: "Give two accurate details of the SAME saving scheme, each graded 3:2:0. The scheme prints this criterion and ladder but no developed details; do not omit these six marks.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "reasons", kind: "criterion", verbatim: "reasons", marks: 6, contextNote: "Give two reasons for choosing that same scheme, each graded 3:2:0. Historical examination context; terms vary by product. Complete guidance: ease of access; security of savings; interest earned; tax payable; location; opening hours; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4733,13 +6186,23 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4ci", topicId: "home-economics-2-1", conceptId: "dealing-with-teenager-parent-conflict",
-    section: "C", questionRef: "2025 OL Section C Q4(c)(i) - Core",
-    stem: "Conflict between generations often revolves around differences in core values and life experiences.",
+    section: "C", questionRef: "2025 OL Section C Q4(c)(i)",
+    stem: "Conflict between generations often revolves around differences in values and life experiences.",
     questionText: "Describe three ways of dealing with conflict between teenagers and parents.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 ways @ 5 marks (graded 5:3:0)","answer":3,"ofParts":10,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Ways of dealing with conflict between teenagers and parents", marks: 15, contextNote: "Three ways at 5 marks, graded 5:3:0. The scheme opens with \"do not ignore conflict\", which is the point most answers skip. Boundaries that everyone knows in advance, and compromise, are the two that are easiest to develop to a full 5.", openList: true, group: {"claimMax":3,"perOption":5,"options":["do not ignore conflict","create an atmosphere where people can talk to each other","sit down and listen to each other","appreciate honest and open dialogue","compromise","good communication avoids confrontation","important that everyone knows what is expected of them and where their boundaries lie","patience","empathy","appreciate both sides"]} },
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: do not ignore conflict; create an atmosphere where people can talk to each other; sit down and listen to each other; appreciate honest and open dialogue; compromise; good communication avoids confrontation; important that everyone knows what is expected of them and where their boundaries lie; patience; empathy; appreciate both sides; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4747,13 +6210,23 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4cii", topicId: "home-economics-2-3", conceptId: "grandparents-support-for-the-family",
-    section: "C", questionRef: "2025 OL Section C Q4(c)(ii) - Core",
-    stem: "Conflict between generations often revolves around differences in core values and life experiences.",
+    section: "C", questionRef: "2025 OL Section C Q4(c)(ii)",
+    stem: "Conflict between generations often revolves around differences in values and life experiences.",
     questionText: "Discuss three ways grandparents provide support for other family members.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 ways @ 5 marks (graded 5:3:0)","answer":3,"ofParts":9,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"3 points × 5 (5:3:0)"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Ways grandparents provide support for other family members", marks: 15, contextNote: "Three ways at 5 marks, graded 5:3:0. The scheme credits practical, financial and emotional support as separate categories, so one from each reads as three distinct ways. Passing on values between generations is the one worth naming explicitly.", openList: true, group: {"claimMax":3,"perOption":5,"options":["help their children out financially","help with child-minding","provide emotional support to their children and grandchildren","pass on values from one generation to the next","spend time with grandchildren helping out with homework","help with household tasks","collect grandchildren from school","advise","teach young people respect"]} },
+    { id: "points", kind: "criterion", verbatim: "ways", marks: 15, contextNote: "3 distinct points, each graded 5:3:0. Complete historical guidance: help their children out financially; help with child-minding; provide emotional support to their children and grandchildren; pass on values from one generation to the next; spend time with grandchildren helping out with homework; help with household tasks; collect grandchildren from school; advise; teach young people respect; etc.", permittedMarks: [0,3,5,6,8,9,10,11,13,15], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,3,5]}] },
     ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7489,21 +8962,32 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "suitability-of-outfits-for-an-occasion",
     section: "C", questionRef: "2025 OL Section C E2 Q2(a)(i)",
-    stem: "Special events require special occasion clothing.",
-    questionText: "Comment on the suitability of the outfits shown above for a winter wedding. Refer to: comfort; function; aesthetic appeal.",
-    tariffModel: {"kind":"fixed","notation":"2 points @ 3 marks (graded 3:2:0) x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    stem: "Special events require special occasion clothing. (www.argeninta.org.ar)",
+    questionText: "Comment on the suitability of the outfits shown above for a winter wedding. Refer to:\n• comfort\n• function\n• aesthetic appeal.",
+    tariffModel: {"kind":"fixed","notation":"3 required headings × 2 points × 3 (3:2:0)"}, totalMarks: 18,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "comfort", marks: 6, contextNote: "Two points at 3 marks, graded 3:2:0.", openList: true, group: {"claimMax":2,"perOption":3,"options":["flowing fabric is comfortable to wear","dress allows ease of movement","stretch fabric","cool cotton T-shirt","fitted jacket and trousers allow for ease of movement while maintaining shape","block heels"]} },
-    { id: "r-2", kind: "anyN", verbatim: "function", marks: 6, contextNote: "Two points at 3 marks, graded 3:2:0.", openList: true, group: {"claimMax":2,"perOption":3,"options":["slim leg trousers","short length in the jacket gives height","ease of movement","pockets","bag","flat shoes"]} },
-    { id: "r-3", kind: "anyN", verbatim: "aesthetic appeal", marks: 6, contextNote: "Two points at 3 marks, graded 3:2:0.", openList: true, group: {"claimMax":2,"perOption":3,"options":["elongated shape","colour and texture of fabric adds interest","contrasting colours","appeals to all age groups","colour combinations"]} },
+    { id: "heading-1", kind: "criterion", verbatim: "Comfort", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Complete historical guidance: flowing fabric is comfortable to wear; dress allows ease of movement; stretch fabric; cool cotton T-shirt; fitted jacket and trousers allow for ease of movement while maintaining shape; block heels; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-2", kind: "criterion", verbatim: "Function", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Complete historical guidance: slim leg trousers; short length in the jacket gives height; ease of movement; pockets; bag; flat shoes; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
+    { id: "heading-3", kind: "criterion", verbatim: "Aesthetic appeal", marks: 6, contextNote: "2 points under this required heading, each graded 3:2:0. Complete historical guidance: elongated shape; colour and texture of fabric adds interest; contrasting colours; appeals to all age groups; colour combinations; etc.", permittedMarks: [0,2,3,4,5,6], parts: [{"id":"point-1","verbatim":"Point 1","marks":3,"permittedMarks":[0,2,3]},{"id":"point-2","verbatim":"Point 2","marks":3,"permittedMarks":[0,2,3]}] },
     ],
-    figure: {
-          "candId": "home-economics-2025-ol-paper-p06-i0",
-          "src": "/exam-figures/home-economics/markbank/home-economics-2025-ol-paper-p06-i0.png",
-          "srcHash": "97a076c68a2b2e2128922766590275ab",
-          "alt": "Three colour photographs of special occasion clothing against a plain backdrop. LEFT: a woman in a black full-length jumpsuit with one bare shoulder and a single asymmetric ruffled strap, a fitted bodice and wide flowing palazzo legs, worn with black open-toe heeled sandals and both hands in the side pockets. CENTRE: a man in a charcoal grey two-piece suit worn over a black crew-neck top rather than a shirt, the jacket single-breasted and buttoned, with matching trousers and black leather lace-up shoes, one hand in his pocket. RIGHT: a woman in a navy floral-print midi dress with short cap sleeves, a square neckline, a fitted bodice and a pleated skirt falling below the knee, worn with flat black ballet pumps and holding a small dark clutch bag.",
-          "attribution": "SEC Leaving Certificate Home Economics 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sc-q2a-wedding-outfits",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q2a-wedding-outfits.png",
+          "srcHash": "b9bc022d9f1b514613a9eaade14264af",
+          "alt": "All three original wedding outfits in printed order: a black one-shoulder jumpsuit, a dark grey suit with black top, and a blue floral dress. Original image-source caption retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -7512,20 +8996,32 @@ export const CARDS: SecCard[] = [
     paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q2aii", topicId: "home-economics-3-8", conceptId: "accessorising-an-outfit",
-    section: "C", questionRef: "2025 OL Section C E2 Q2(a)(ii) - naming the accessory",
-    stem: "Special events require special occasion clothing.",
+    section: "C", questionRef: "2025 OL Section C E2 Q2(a)(ii)",
+    stem: "Special events require special occasion clothing. (www.argeninta.org.ar)",
     questionText: "Suggest one accessory you could add to enhance any one of the above outfits. Give one reason for your choice.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 accessory @ 3 marks (graded 3:0)","answer":1,"ofParts":9,"perPart":3}, totalMarks: 3,
+    tariffModel: {"kind":"fixed","notation":"Accessory 3 (3:0) + reason 4 (4:2:0)"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Accessories", marks: 3, contextNote: "Name one accessory, 3 marks, graded 3:0 — all-or-nothing.", openList: true, group: {"claimMax":1,"perOption":3,"options":["jewellery: earrings, bracelet, necklace, rings, watch","etc. add a shirt and tie","add a pocket square","belt","evening wear bag","hat","fascinator","hairband","scarf"]} },
+    { id: "accessory", kind: "criterion", verbatim: "accessory", marks: 3, contextNote: "Choose one accessory for one of the original outfits, graded 3:0. Complete examples: jewellery: earrings, bracelet, necklace, rings, watch; etc. add a shirt and tie; add a pocket square; belt; evening wear bag; hat; fascinator; hairband; scarf; etc.", permittedMarks: [0,3] },
+    { id: "reason", kind: "criterion", verbatim: "reason", marks: 4, contextNote: "Explain one reason for the SAME accessory and outfit, graded 4:2:0. The source gives the criterion and partial ladder but no developed model reason.", permittedMarks: [0,2,4] },
     ],
-    figure: {
-          "candId": "home-economics-2025-ol-paper-p06-i0",
-          "src": "/exam-figures/home-economics/markbank/home-economics-2025-ol-paper-p06-i0.png",
-          "srcHash": "97a076c68a2b2e2128922766590275ab",
-          "alt": "Three colour photographs of special occasion clothing against a plain backdrop. LEFT: a woman in a black full-length jumpsuit with one bare shoulder and a single asymmetric ruffled strap, a fitted bodice and wide flowing palazzo legs, worn with black open-toe heeled sandals and both hands in the side pockets. CENTRE: a man in a charcoal grey two-piece suit worn over a black crew-neck top rather than a shirt, the jacket single-breasted and buttoned, with matching trousers and black leather lace-up shoes, one hand in his pocket. RIGHT: a woman in a navy floral-print midi dress with short cap sleeves, a square neckline, a fitted bodice and a pleated skirt falling below the knee, worn with flat black ballet pumps and holding a small dark clutch bag.",
-          "attribution": "SEC Leaving Certificate Home Economics 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sc-q2a-wedding-outfits",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sc-q2a-wedding-outfits.png",
+          "srcHash": "b9bc022d9f1b514613a9eaade14264af",
+          "alt": "All three original wedding outfits in printed order: a black one-shoulder jumpsuit, a dark grey suit with black top, and a blue floral dress. Original image-source caption retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 6 — © State Examinations Commission.",
+          "includesPrompt": false
     },
   } as SecCard,
   {
@@ -9394,5 +10890,383 @@ export const CARDS: SecCard[] = [
     { id: "beverage-3", kind: "criterion", verbatim: "beverage", marks: 2, contextNote: "Dinner: one suitable beverage, graded 2:0, not 2:1:0. The paper asks for a whole day of three meals; no extra course earns another slot.", permittedMarks: [0,2] },
     ],
     taskGroups: [{"sourceCardId":"he-2024-ol-sb-q2b-meal-1","label":"Breakfast","marks":6,"rowIds":["courses-1","beverage-1"]},{"sourceCardId":"he-2024-ol-sb-q2b-meal-2","label":"Lunch","marks":6,"rowIds":["courses-2","beverage-2"]},{"sourceCardId":"he-2024-ol-sb-q2b-meal-3","label":"Dinner","marks":6,"rowIds":["courses-3","beverage-3"]}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "he-2025-ol-sa-q2-source", topicId: "home-economics-0-5", conceptId: "protein-functions-and-sources-source",
+    section: "A", questionRef: "2025 OL Section A Q2 — source",
+    questionText: "Name one dietary source of protein.",
+    tariffModel: {"kind":"fixed","notation":"1 source × 2 (2:0)"}, totalMarks: 2,
+    rows: [
+    { id: "source", kind: "criterion", verbatim: "dietary source", marks: 2, contextNote: "One source, graded 2:0. Complete examples: meat; fish; dairy products, milk, cheese, yoghurt; eggs; soya beans; cereals; nuts; lentils; seeds; etc.", permittedMarks: [0,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "he-2025-ol-sa-q10-benefit", topicId: "home-economics-1-5", conceptId: "renewable-energy-sources-and-benefits-benefit",
+    section: "A", questionRef: "2025 OL Section A Q10 — benefit",
+    questionText: "Explain one benefit of renewable energy.",
+    tariffModel: {"kind":"fixed","notation":"1 benefit × 2 (2:1:0)"}, totalMarks: 2,
+    rows: [
+    { id: "benefit", kind: "criterion", verbatim: "benefit", marks: 2, contextNote: "One benefit, graded 2:1:0. Complete guidance: reduced carbon emissions; reduced air pollution; enhanced reliability; job creation; will not run out; environmentally friendly; cheaper; etc.", permittedMarks: [0,1,2] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC098GLP014EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "he-2025-ol-sa-q14", topicId: "home-economics-1-4", conceptId: "fabric-care-symbols",
+    section: "A", questionRef: "2025 OL Section A Q14",
+    questionText: "What information does each of the following fabric care symbols convey to the consumer? (www.woolmark.com) (www.omo.com)",
+    tariffModel: {"kind":"fixed","notation":"2 symbols × 3 (3:2:0)"}, totalMarks: 6,
+    rows: [
+    { id: "wash", kind: "criterion", verbatim: "hand wash only", marks: 3, contextNote: "First symbol, graded 3:2:0. Complete guidance: hand wash only; temperature for wool, delicate fabrics; etc.", permittedMarks: [0,2,3] },
+    { id: "iron", kind: "criterion", verbatim: "medium iron", marks: 3, contextNote: "Second symbol, graded 3:2:0. Complete guidance: medium iron; temperature for wool, polyester mixtures; etc.", permittedMarks: [0,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sa-q14-care-symbols",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sa-q14-care-symbols.png",
+          "srcHash": "018e8ed4298c1db2d2f037e3de308c6f",
+          "alt": "Both original fabric-care symbols in printed order: hand in a wash tub, then an iron with two dots; original Woolmark and OMO source captions retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 7 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "he-2025-ol-sb-q1a", topicId: "home-economics-0-1", conceptId: "convenience-soup-comparison",
+    section: "B", questionRef: "2025 OL Section B Q1(a)",
+    stem: "When purchasing convenience foods, consumers should choose wisely and consider nutritional value. The table below gives nutritional information per 100 g and the cost of two types of convenience vegetable soup. Soup A Cook-chill Soup B Canned (www.shop.supervalu.ie adapted) (www.pnp.co.za adapted) Energy (kcal) 27 kcal 32 kcal Protein 1.1 g 0.8 g Carbohydrates of which sugars 4.3 g 2.2 g 5.6 g 1.0 g Fibre 3.0 g 0.5 g Fat of which saturates 0.6 g 0.1 g 0.5 g 0.3 g Salt 0.2 g 0.8 g",
+    questionText: "Using the information presented in the table above, state which soup you would recommend for a consumer to buy. Give four reasons for your choice.",
+    tariffModel: {"kind":"fixed","notation":"Name 4 (4:0) + 4 reasons × 5 (5:3:2:0)"}, totalMarks: 24,
+    rows: [
+    { id: "name", kind: "criterion", verbatim: "Soup A", marks: 4, contextNote: "Recommend this soup, graded 4:0.", permittedMarks: [0,4] },
+    { id: "reasons", kind: "criterion", verbatim: "Reasons", marks: 20, contextNote: "Four distinct reasons for the SAME selected soup, each graded 5:3:2:0. Use the original table. Source correction: A has LESS carbohydrate (4.3 g versus 5.6 g), contrary to the scheme’s “higher in carbohydrates” wording. Printed health claims are not guarantees that a soup prevents or treats a condition. Complete historical model: lower in kcal to prevent obesity; higher in protein for growth/repair; higher in carbohydrates for heat/energy; higher in sugar for energy; higher in fibre for digestion; lower in saturated fat to prevent obesity/CHD; lower in salt to prevent high blood pressure/stroke; easier to heat/consume; easy to store; easy to open; etc.", permittedMarks: [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,2,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,2,3,5]},{"id":"point-3","verbatim":"Point 3","marks":5,"permittedMarks":[0,2,3,5]},{"id":"point-4","verbatim":"Point 4","marks":5,"permittedMarks":[0,2,3,5]}] },
+    ],
+    answerVariants: [
+          {
+                "id": "a",
+                "label": "Soup A",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Soup A",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Recommend this soup, graded 4:0."
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons",
+                            "marks": 20,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  17,
+                                  18,
+                                  20
+                            ],
+                            "contextNote": "Four distinct reasons for the SAME selected soup, each graded 5:3:2:0. Use the original table. Source correction: A has LESS carbohydrate (4.3 g versus 5.6 g), contrary to the scheme’s “higher in carbohydrates” wording. Printed health claims are not guarantees that a soup prevents or treats a condition. Complete historical model: lower in kcal to prevent obesity; higher in protein for growth/repair; higher in carbohydrates for heat/energy; higher in sugar for energy; higher in fibre for digestion; lower in saturated fat to prevent obesity/CHD; lower in salt to prevent high blood pressure/stroke; easier to heat/consume; easy to store; easy to open; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          },
+          {
+                "id": "b",
+                "label": "Soup B",
+                "rows": [
+                      {
+                            "id": "name",
+                            "kind": "criterion",
+                            "verbatim": "Soup B",
+                            "marks": 4,
+                            "permittedMarks": [
+                                  0,
+                                  4
+                            ],
+                            "contextNote": "Recommend this soup, graded 4:0."
+                      },
+                      {
+                            "id": "reasons",
+                            "kind": "criterion",
+                            "verbatim": "Reasons",
+                            "marks": 20,
+                            "permittedMarks": [
+                                  0,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12,
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  17,
+                                  18,
+                                  20
+                            ],
+                            "contextNote": "Four distinct reasons for the SAME selected soup, each graded 5:3:2:0. Use the original table. Source correction: A has LESS carbohydrate (4.3 g versus 5.6 g), contrary to the scheme’s “higher in carbohydrates” wording. Printed health claims are not guarantees that a soup prevents or treats a condition. Complete historical model: higher in kcal for energy; lower in protein for growth/repair; higher in carbohydrates for energy; lower in sugar, reduces risk of diabetes/dental decay; lower in fibre; lower in fat; higher in saturated fat; higher in salt for electrolyte balance; easy to open; longer shelf life; refrigeration not required; lower cost; etc.",
+                            "parts": [
+                                  {
+                                        "id": "point-1",
+                                        "verbatim": "Point 1",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-2",
+                                        "verbatim": "Point 2",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-3",
+                                        "verbatim": "Point 3",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              5
+                                        ]
+                                  },
+                                  {
+                                        "id": "point-4",
+                                        "verbatim": "Point 4",
+                                        "marks": 5,
+                                        "permittedMarks": [
+                                              0,
+                                              2,
+                                              3,
+                                              5
+                                        ]
+                                  }
+                            ]
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+    questionFigure: {
+          "candId": "home-economics-2025-ol-sb-q1a-soups",
+          "src": "/exam-figures/home-economics/home-economics-2025-ol-sb-q1a-soups.png",
+          "srcHash": "034c0791f6abf970247103aa0c99ad16",
+          "alt": "Original comparison per 100 g. Soup A cook-chill costs €2.89; Soup B canned costs €2.00. A/B: energy 27/32 kcal, protein 1.1/0.8 g, carbohydrates 4.3/5.6 g, sugars 2.2/1.0 g, fibre 3.0/0.5 g, fat 0.6/0.5 g, saturates 0.1/0.3 g, salt 0.2/0.8 g. Both product images and source captions retained.",
+          "lettersVisible": [],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper, page 2 — © State Examinations Commission.",
+          "includesPrompt": false
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "he-2025-ol-sb-q2a", topicId: "home-economics-0-9", conceptId: "egg-nutritive-dietetic-value",
+    section: "B", questionRef: "2025 OL Section B Q2(a)",
+    stem: "Eggs provide the body with essential nutrients.",
+    questionText: "Give an account of (i) the nutritive value and (ii) dietetic value of eggs.",
+    tariffModel: {"kind":"fixed","notation":"Nutritive 1 + dietetic 1 + other 2, each 5 (5:4:3:2:0)"}, totalMarks: 20,
+    rows: [
+    { id: "nutritive", kind: "criterion", verbatim: "nutritive value", marks: 5, contextNote: "One nutritive point, graded 5:4:3:2:0. Complete guidance: HBV protein; saturated fat; lacks carbohydrates; vitamin B group; vitamin A; vitamin D; vitamin E; vitamin K; calcium; phosphorus; iron; sulphur; water; lacks vitamin C; etc.", permittedMarks: [0,2,3,4,5] },
+    { id: "dietetic", kind: "criterion", verbatim: "dietetic value", marks: 5, contextNote: "One dietetic point, graded 5:4:3:2:0. Suitability depends on the individual and preparation. Complete guidance: excellent source of protein for growth and repair, valuable in diets of children, teenagers and pregnant women; low in kcal; versatile food; inexpensive; cook quickly; high in saturated fat and cholesterol; lacks carbohydrate, should be combines with foods rich in carbohydrate to have balance; lacks vitamin C; etc.", permittedMarks: [0,2,3,4,5] },
+    { id: "other", kind: "criterion", verbatim: "others points", marks: 10, contextNote: "Two further distinct points from either heading, each graded 5:4:3:2:0.", permittedMarks: [0,2,3,4,5,6,7,8,9,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,2,3,4,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,2,3,4,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "he-2025-ol-sb-q2b", topicId: "home-economics-0-10", conceptId: "healthy-day-menu-eggs",
+    section: "B", questionRef: "2025 OL Section B Q2(b)",
+    stem: "Eggs provide the body with essential nutrients.",
+    questionText: "Set out a menu (3 meals), for one day, having regard to current healthy eating guidelines. Include eggs in one meal.",
+    tariffModel: {"kind":"fixed","notation":"3 × (courses 2 × 2 (2:1:0) + beverage 1 (1:0)) + eggs 3 (3:0)"}, totalMarks: 18,
+    rows: [
+    { id: "courses-1", kind: "criterion", verbatim: "courses", marks: 4, contextNote: "Breakfast: two suitable food courses, each graded 2:1:0. Published sample: Orange juice; Scrambled eggs on toast; Tea/coffee/water/milk", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "beverage-1", kind: "criterion", verbatim: "beverage", marks: 1, contextNote: "Breakfast: one suitable beverage, graded 1:0.", permittedMarks: [0,1] },
+    { id: "courses-2", kind: "criterion", verbatim: "courses", marks: 4, contextNote: "Lunch: two suitable food courses, each graded 2:1:0. Published sample: Quiche Lorraine and green salad; Strawberry yoghurt; Glass of milk/water", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "beverage-2", kind: "criterion", verbatim: "beverage", marks: 1, contextNote: "Lunch: one suitable beverage, graded 1:0.", permittedMarks: [0,1] },
+    { id: "courses-3", kind: "criterion", verbatim: "courses", marks: 4, contextNote: "Dinner: two suitable food courses, each graded 2:1:0. Published sample: Carrot and lentil soup with brown bread; Pasta carbonara; Glass of milk/water", permittedMarks: [0,1,2,3,4], parts: [{"id":"point-1","verbatim":"Point 1","marks":2,"permittedMarks":[0,1,2]},{"id":"point-2","verbatim":"Point 2","marks":2,"permittedMarks":[0,1,2]}] },
+    { id: "beverage-3", kind: "criterion", verbatim: "beverage", marks: 1, contextNote: "Dinner: one suitable beverage, graded 1:0.", permittedMarks: [0,1] },
+    { id: "egg", kind: "criterion", verbatim: "egg component", marks: 3, contextNote: "Include eggs in one meal, graded 3:0. Use current healthy-eating guidelines in the paper’s 2025 context. The scheme’s “3 meals @ 6 marks” heading is resolved by its explicit detailed allocation: three 5-mark meals plus this 3-mark egg component, total 18; do not add 3 marks to an 18-mark meal total.", permittedMarks: [0,3] },
+    ],
+    taskGroups: [{"sourceCardId":"he-2025-ol-sb-q2b-meal-1","label":"Breakfast","marks":5,"rowIds":["courses-1","beverage-1"]},{"sourceCardId":"he-2025-ol-sb-q2b-meal-2","label":"Lunch","marks":5,"rowIds":["courses-2","beverage-2"]},{"sourceCardId":"he-2025-ol-sb-q2b-meal-3","label":"Dinner","marks":5,"rowIds":["courses-3","beverage-3"]},{"sourceCardId":"he-2025-ol-sb-q2b-eggs","label":"Egg component","marks":3,"rowIds":["egg"]}],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC098GLP039EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "he-2025-ol-sc-q1cii-examples", topicId: "home-economics-3-4", conceptId: "texture-in-interior-design-examples",
+    section: "C", questionRef: "2025 OL Section C E1 Q1(c)(ii) — examples",
+    stem: "Interior designers help people to create attractive and functional homes.",
+    questionText: "Give two examples of how texture may be used to enhance the interior design of a room.",
+    tariffModel: {"kind":"fixed","notation":"2 examples × 5 (5:3:0)"}, totalMarks: 10,
+    rows: [
+    { id: "examples", kind: "criterion", verbatim: "examples", marks: 10, contextNote: "Two distinct applications of texture, each graded 5:3:0. Complete guidance: smooth textures: tiling; glass/mirrors; paint; stainless steel; etc. rough textures: carpeting; upholstery; brick; textured paints; wallpaper; warmth; comfort; etc.", permittedMarks: [0,3,5,6,8,10], parts: [{"id":"point-1","verbatim":"Point 1","marks":5,"permittedMarks":[0,3,5]},{"id":"point-2","verbatim":"Point 2","marks":5,"permittedMarks":[0,3,5]}] },
+    ],
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION",
+          "title": "Source and question",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Home Economics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original examination page to review this task in context."
+    },
   } as SecCard,
 ];
